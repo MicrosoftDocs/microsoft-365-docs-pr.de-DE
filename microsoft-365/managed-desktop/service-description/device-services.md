@@ -1,0 +1,45 @@
+---
+title: Microsoft Managed Desktop-Gerätedienste
+description: In diesem Thema werden Gerät Dienste und Einschränkung für Microsoft verwalteter Desktop.
+keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+ms.service: m365-md
+author: jdeckerms
+ms.localizationpriority: normal
+ms.date: 09/24/2018
+ms.openlocfilehash: 154f509d2de72c410f3f0bc5163959aadcd4049e
+ms.sourcegitcommit: 7488bd4f54692f26954a01593579355ff5bbbdef
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25851066"
+---
+# <a name="microsoft-managed-desktop-device-services"></a><span data-ttu-id="d0a5b-104">Microsoft Managed Desktop-Gerätedienste</span><span class="sxs-lookup"><span data-stu-id="d0a5b-104">Microsoft Managed Desktop device services</span></span>
+
+<span data-ttu-id="d0a5b-p101">In diesem Thema werden die Dienste und die Einschränkung für Microsoft verwalteter Desktop Geräte Service. Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p101">This topic lists the services and service limitation for Microsoft Managed Desktop devices. For more information</span></span> 
+
+## <a name="device-services"></a><span data-ttu-id="d0a5b-107">Gerät-Dienste</span><span class="sxs-lookup"><span data-stu-id="d0a5b-107">Device services</span></span>
+
+<span data-ttu-id="d0a5b-p102">Microsoft stellt diese Dienste für verwaltete Microsoft-Desktop-Geräte bereit. Weitere Informationen auf Programm-Geräten finden Sie unter [Microsoft verwalteter Desktop-Geräte](device-list.md)</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p102">Microsoft will provide these services for Microsoft Managed Desktop devices. For more information on program devices, see [Microsoft Managed Desktop devices](device-list.md)</span></span>
+
+ | 
+ --- | ---
+<span data-ttu-id="d0a5b-110">Unterstützung</span><span class="sxs-lookup"><span data-stu-id="d0a5b-110">Support</span></span> | <span data-ttu-id="d0a5b-111">Mitarbeiter des Supports beantwortet Fragen direkt im Zusammenhang mit Gerätefunktionalität und Problemdiagnose für die Geräte.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-111">Support agents will answer questions directly related to device functionality and diagnose device issues.</span></span>
+<span data-ttu-id="d0a5b-112">Ersatz</span><span class="sxs-lookup"><span data-stu-id="d0a5b-112">Replacement</span></span> | <span data-ttu-id="d0a5b-p103">Das Gerät wird nach einer durch Unterstützung Anforderung durch ein ähnliches Gerät ersetzt. Abdeckung Informationen hierzu finden Sie in die Gewährleistung Begriffe, die bei der Auswahl der Geräte ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p103">The device will be replaced with a similar device after a request is made through support. For coverage details, refer to the warranty terms chosen when selecting your devices.</span></span>
+<span data-ttu-id="d0a5b-115">Upgrade</span><span class="sxs-lookup"><span data-stu-id="d0a5b-115">Upgrade</span></span> | <span data-ttu-id="d0a5b-116">Geräte werden aktualisiert und ersetzt den Bestimmungen der Gewährleistung, die Sie auswählen.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-116">Devices are upgraded and replaced under the terms of the warranty that you select.</span></span>
+<span data-ttu-id="d0a5b-117">Inventar</span><span class="sxs-lookup"><span data-stu-id="d0a5b-117">Inventory</span></span> | <span data-ttu-id="d0a5b-118">Alle Geräte sind in verwalteten Desktops Verwaltungsportal von Microsoft für Inventar und Nachverfolgen der Status nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-118">All devices are tracked in the Microsoft Managed Desktop Admin portal for inventory and status tracking.</span></span>
+<span data-ttu-id="d0a5b-119">Gerät Lieferung</span><span class="sxs-lookup"><span data-stu-id="d0a5b-119">Device shipment</span></span> |   <span data-ttu-id="d0a5b-120">Geräte werden direkt an die zugewiesene Benutzer oder IT-Verteilungspunkt geliefert.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-120">Devices are shipped directly to the assigned user or IT distribution point.</span></span>
+<span data-ttu-id="d0a5b-121">Firmware / Treiber aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-121">Firmware / driver updates</span></span> | <span data-ttu-id="d0a5b-122">Firmware-Treiber-Updates werden bereitgestellt und für die Kompatibilität von Microsoft überwacht.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-122">Firmware/Driver updates are deployed and monitored for compatibility by Microsoft.</span></span> 
+<span data-ttu-id="d0a5b-123">Zubehör</span><span class="sxs-lookup"><span data-stu-id="d0a5b-123">Accessories</span></span> | <span data-ttu-id="d0a5b-p104">Zubehör, die dem Gerät im Lieferumfang von dieselben Dienste als Gerät selbst abgedeckt werden, aber Garantie abweichen. Verweisen Sie auf die Gewährleistung Begriffe, die bei der Auswahl der Geräte ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p104">Accessories that come with your device are covered by the same services as the device itself, but warranty terms may differ. Refer to the warranty terms chosen when selecting your devices.</span></span> 
+<span data-ttu-id="d0a5b-126">Geräteeinrichtung</span><span class="sxs-lookup"><span data-stu-id="d0a5b-126">Device setup</span></span>    | <span data-ttu-id="d0a5b-127">Geräte vor dem mit der aktuellen Version von Windows konfiguriert werden, und erhalten ihre apps und Konfigurationen über die Cloud.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-127">Devices will be pre-configured with the current version of Windows and receive their apps and configurations via the cloud.</span></span> 
+
+## <a name="device-service-limitations"></a><span data-ttu-id="d0a5b-128">Gerät-diensteinschränkungen</span><span class="sxs-lookup"><span data-stu-id="d0a5b-128">Device service limitations</span></span>
+
+<span data-ttu-id="d0a5b-129">Microsoft stellt Service für diese Elemente nicht bereit.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-129">Microsoft will not provide service for these items.</span></span>
+
+ | 
+ --- | ---
+<span data-ttu-id="d0a5b-130">Andere Zubehör</span><span class="sxs-lookup"><span data-stu-id="d0a5b-130">Other accessories</span></span> | <span data-ttu-id="d0a5b-131">Nur die im Lieferumfang des Geräts Zubehör werden unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-131">Only accessories shipped with the device are supported.</span></span>
+<span data-ttu-id="d0a5b-132">Personalisierung</span><span class="sxs-lookup"><span data-stu-id="d0a5b-132">Personalization</span></span> | <span data-ttu-id="d0a5b-p105">Geräte und Zubehör, die mit dem Dienst bereitgestellt werden kann nicht angepasst werden. Alle Geräte und Zubehör werden mit standard branding, Spezifikation und Farbkombinationen bereitgestellt. Anwendung und Richtlinien Konfigurationen werden über IT als Dienst verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p105">Devices and accessories provided with the service are unable to be customized. All devices and accessories are provided with standard branding, specification, and color combinations. Application deployment and policy configurations are handled through IT-as-a-Service.</span></span>
+<span data-ttu-id="d0a5b-136">„Reparieren“</span><span class="sxs-lookup"><span data-stu-id="d0a5b-136">Repair</span></span> | <span data-ttu-id="d0a5b-p106">Geräte werden nicht repariert. Ersatz-Geräte werden geliefert, wie oben beschrieben.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p106">Devices are not repaired. Replacement devices will be shipped as described above.</span></span>
+<span data-ttu-id="d0a5b-139">Wiederherstellung von Daten</span><span class="sxs-lookup"><span data-stu-id="d0a5b-139">Data recovery</span></span> | <span data-ttu-id="d0a5b-p107">Benutzer- und Team-Daten, einschließlich Personalisierung, werden in OneDrive für Unternehmen, mit nur Cachedaten lokal gespeichert. Daten auf dem Gerät Zentralspeicher System absichtlich gespeichert sind, muss Wiederherstellung von Daten versucht und vor der Rückgabe des Geräts an Microsoft abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-p107">User and team data, including personalization, is stored in OneDrive for Business, with only cache data residing locally. If data is intentionally stored on the device’s internal storage system, any data recovery must be attempted and completed prior to returning the device to Microsoft.</span></span>
+<span data-ttu-id="d0a5b-142">Geräteeinrichtung</span><span class="sxs-lookup"><span data-stu-id="d0a5b-142">Device setup</span></span> | <span data-ttu-id="d0a5b-143">Geräte werden an die Kundenadresse übermittelt werden müssen eingeschaltet und vom Kunden eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="d0a5b-143">Devices are delivered to the customer address, where they need to be powered on and set up by the customer.</span></span>

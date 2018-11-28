@@ -1,0 +1,273 @@
+---
+title: 'Phase 2: Beendigungskriterien für die Identitätsinfrastruktur'
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 03/13/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: ''
+description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für identitätsbasierte Dienste und Infrastrukturen erfüllt.
+ms.openlocfilehash: 6567c20c244802b0e1f347f96a53a56e14768aa0
+ms.sourcegitcommit: 42e4d280b562304335efc93787c89992504c5823
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26538692"
+---
+# <a name="phase-2-identity-infrastructure-exit-criteria"></a><span data-ttu-id="88d23-103">Phase 2: Beendigungskriterien für die Identitätsinfrastruktur</span><span class="sxs-lookup"><span data-stu-id="88d23-103">Phase 2: Identity infrastructure exit criteria</span></span>
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
+<span data-ttu-id="88d23-p101">Bevor Sie zu Phase 3 übergehen, stellen Sie sicher, dass Ihre Identitätsinfrastruktur diese Bedingungen erfüllt. Zusätzliche Empfehlungen für die Identitätsinfrastruktur finden Sie unter [Voraussetzungen](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites).</span><span class="sxs-lookup"><span data-stu-id="88d23-p101">Before you move on to Phase 3, make sure that your identity infrastructure meets these conditions. Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.</span></span>
+
+<a name="crit-identity-user-groups"></a>
+## <a name="required-all-users-groups-and-group-memberships-have-been-created"></a><span data-ttu-id="88d23-106">Erforderlich: Alle Benutzer, Gruppen und Gruppenmitgliedschaften wurden erstellt</span><span class="sxs-lookup"><span data-stu-id="88d23-106">Required: All users, groups, and group memberships have been created</span></span>
+
+<span data-ttu-id="88d23-107">Sie haben Benutzerkonten und Gruppen zu folgenden Zwecken erstellt:</span><span class="sxs-lookup"><span data-stu-id="88d23-107">You've created user accounts and groups so that:</span></span>
+
+- <span data-ttu-id="88d23-108">Mitarbeiter in Ihrer Organisation und die Lieferanten, Vertragsnehmer und Partner, die für oder mit Ihrer Organisation arbeiten, verfügen über ein entsprechendes Benutzerkonto in Azure Active Directory (AD).</span><span class="sxs-lookup"><span data-stu-id="88d23-108">Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure Active Directory (AD).</span></span>
+- <span data-ttu-id="88d23-109">Azure Active Directory-Gruppen und deren Mitglieder enthalten Benutzerkonten und andere Gruppen für verschiedene Zwecke, z. B. die Bereitstellung von Sicherheitseinstellungen für Microsoft Cloud Services, automatische Lizenzierung und weitere Verwendungsmöglichkeiten.</span><span class="sxs-lookup"><span data-stu-id="88d23-109">Azure AD groups and their members contain user accounts and other groups for various purposes, such as the provisioning of security settings for Microsoft cloud services, automatic licensing, and other uses.</span></span>
+
+<span data-ttu-id="88d23-110">Gegebenenfalls hilft Ihnen [Schritt 1](identity-plan-users-groups.md), diese Anforderung zu erfüllen.</span><span class="sxs-lookup"><span data-stu-id="88d23-110">If needed, [Step 1](identity-plan-users-groups.md) can help you meet this requirement.</span></span>
+
+<a name="crit-identity-sync"></a>
+## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a><span data-ttu-id="88d23-111">Erforderlich: Benutzer und Gruppen werden mit Azure AD synchronisiert</span><span class="sxs-lookup"><span data-stu-id="88d23-111">Required: Users and groups are synchronized with Azure AD</span></span>
+
+<span data-ttu-id="88d23-112">Wenn Sie einen vorhandenen lokalen Identitätsanbieter wie z. B. Windows Server Active Directory (AD) haben, haben Sie Azure AD Connect zum Synchronisieren von Benutzerkonten und Gruppen von Ihrem lokalen Identitätsanbieter mit Ihrem Azure AD-Mandanten verwendet.</span><span class="sxs-lookup"><span data-stu-id="88d23-112">If you have an existing on-premises identity provider, such as Windows Server Active Directory (AD), you have used Azure AD Connect to synchronize user accounts and groups from your on-premises identity provider to your Azure AD tenant.</span></span>
+
+<span data-ttu-id="88d23-113">Dank der Verzeichnissynchronisierung können sich Ihre Benutzer bei Office 365 und anderen Microsoft Cloud Services mit denselben Anmeldeinformationen anmelden, die sie zum Anmelden an ihren Computern und zum Zugriff auf lokale Ressourcen verwenden.</span><span class="sxs-lookup"><span data-stu-id="88d23-113">With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services using the same credentials that they use to sign in to their computers and access on-premises resources.</span></span>
+
+<span data-ttu-id="88d23-114">Gegebenenfalls hilft Ihnen [Schritt 7](identity-azure-ad-connect.md), diese Anforderung zu erfüllen.</span><span class="sxs-lookup"><span data-stu-id="88d23-114">If needed, [Step 7](identity-azure-ad-connect.md) can help you meet this requirement.</span></span>
+
+<span data-ttu-id="88d23-115">Wenn Sie diese Anforderung überspringen, haben Sie zwei Sätze von Benutzerkonten und Gruppen:</span><span class="sxs-lookup"><span data-stu-id="88d23-115">If you skip this requirement, you’ll have two sets of user accounts and groups:</span></span>
+
+- <span data-ttu-id="88d23-116">Benutzerkonten und Gruppen, die in Ihrem lokalen Identitätsanbieter vorhanden sind</span><span class="sxs-lookup"><span data-stu-id="88d23-116">User accounts and groups that exist in your on-premises identity provider</span></span>
+- <span data-ttu-id="88d23-117">Benutzerkonten und Gruppen, die in Ihrem Azure AD-Mandanten vorhanden sind</span><span class="sxs-lookup"><span data-stu-id="88d23-117">User accounts and groups that exist in your Azure AD tenant</span></span>
+
+<span data-ttu-id="88d23-p102">In diesem Zustand müssen die beiden Sätze von Benutzerkonten und Gruppen manuell von IT-Administratoren und Benutzern verwaltet werden. Dies führt zwangsläufig zu nicht synchronisierten Konten, deren Kennwörtern und Gruppen.</span><span class="sxs-lookup"><span data-stu-id="88d23-p102">In this state, the two sets of user accounts and groups must be manually maintained by both IT administrators and users. This will inevitably lead to unsynchronized accounts, their passwords, and groups.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-120">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-120">How to test</span></span>
+<span data-ttu-id="88d23-121">Um zu überprüfen, ob die Authentifizierung mit lokalen Anmeldeinformationen funktioniert, melden Sie sich mit Ihren lokalen Anmeldeinformationen beim Office 365 an.</span><span class="sxs-lookup"><span data-stu-id="88d23-121">To verify that authentication with on-premises credentials works correctly, sign in to the Office 365 portal with your on-premises credentials.</span></span>
+
+<span data-ttu-id="88d23-122">Führen Sie folgende Schritte aus, um zu überprüfen, ob die Verzeichnissynchronisierung ordnungsgemäß funktioniert:</span><span class="sxs-lookup"><span data-stu-id="88d23-122">To verify that directory synchronization is working correctly, do the following:</span></span>
+
+1.  <span data-ttu-id="88d23-123">Erstellen Sie eine neue Testgruppe in Windows Server AD.</span><span class="sxs-lookup"><span data-stu-id="88d23-123">Create a new test group in Windows Server AD.</span></span>
+2.  <span data-ttu-id="88d23-124">Warten Sie, bis die Synchronisierungszeit abgelaufen ist.</span><span class="sxs-lookup"><span data-stu-id="88d23-124">Wait for the synchronization time.</span></span>
+3.  <span data-ttu-id="88d23-125">Überprüfen Sie Ihren Azure AD-Mandanten, um sicherzustellen, dass der Name der neuen Testgruppe angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="88d23-125">Check your Azure AD tenant to verify that the new test group name appears.</span></span>
+
+<a name="crit-identity-global-admin"></a>
+## <a name="required-your-global-administrator-accounts-are-protected"></a><span data-ttu-id="88d23-126">Erforderlich: Ihre globalen Administratorkonten sind geschützt</span><span class="sxs-lookup"><span data-stu-id="88d23-126">Required: Your global administrator accounts are protected</span></span> 
+
+<span data-ttu-id="88d23-127">Sie haben [Ihre globalen Office 365-Administratorkonten geschützt](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560), um die Gefährdung von Anmeldeinformationen zu vermeiden, die zu Verstößen gegen ein Office 365-Abonnement führen kann.</span><span class="sxs-lookup"><span data-stu-id="88d23-127">You've [protected your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to avoid compromising credentials that can lead to breaches of an Office 365 subscription.</span></span>
+
+<span data-ttu-id="88d23-128">Wenn Sie diese Anforderung überspringen, können Ihre globalen Administratorkonten anfällig für Angriffe und Kompromittierung sein. Dadurch kann ein Angreifer systemweiten Zugriff auf Ihre Daten erhalten, um diese zu stehlen, zu zerstören oder für Lösegeldforderungen zu missbrauchen.</span><span class="sxs-lookup"><span data-stu-id="88d23-128">If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.</span></span>
+
+<span data-ttu-id="88d23-129">Gegebenenfalls hilft Ihnen [Schritt 2](identity-designate-protect-admin-accounts.md), diese Anforderung zu erfüllen.</span><span class="sxs-lookup"><span data-stu-id="88d23-129">If needed, [Step 2](identity-designate-protect-admin-accounts.md) can help you meet this requirement.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-130">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-130">How to test</span></span>
+
+<span data-ttu-id="88d23-131">Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Administratorkonten geschützt haben:</span><span class="sxs-lookup"><span data-stu-id="88d23-131">Use these steps to verify that you've protected your global administrator accounts:</span></span>
+
+1. <span data-ttu-id="88d23-p103">Führen Sie an der PowerShell-Eingabeaufforderung den folgenden Azure AD V2-Befehl aus. Nur die Liste der dedizierten globalen Administratorkonten sollte angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="88d23-p103">Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.</span></span>
+   ```
+   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+   ```
+2. <span data-ttu-id="88d23-p104">Melden Sie sich bei Office 365 mit jedem der Konten aus Schritt 1 an. Jede Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation anfordern.</span><span class="sxs-lookup"><span data-stu-id="88d23-p104">Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.</span></span>
+
+> [!Note]
+> <span data-ttu-id="88d23-136">Anweisungen zum Installieren des Azure AD V2 PowerShell-Moduls und zum Anmelden bei Office 365 finden Sie unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="88d23-136">See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in to Office 365.</span></span>
+
+<a name="crit-identity-custom-sign-in"></a>
+## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a><span data-ttu-id="88d23-137">Optional: Der Office 365-Anmeldebildschirm ist für Ihre Organisation personalisiert</span><span class="sxs-lookup"><span data-stu-id="88d23-137">Optional: The Office 365 sign-in screen is personalized for your organization</span></span>
+
+<span data-ttu-id="88d23-138">Sie haben entsprechend den Anweisungen unter [Hinzufügen eines Unternehmensbrandings zu den Anmelde- und Zugriffspanelseiten](http://aka.ms/aadpaddbranding) das Branding Ihrer Organisation auf der Anmeldeseite von Office 365 hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="88d23-138">You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.</span></span>
+
+<span data-ttu-id="88d23-139">Wenn Sie diese Option überspringen, sehen die Benutzer einen allgemeinen Office 365-Anmeldebildschirm und sind sich möglicherweise nicht sicher, dass sie sich auf der Website Ihrer Organisation anmelden.</span><span class="sxs-lookup"><span data-stu-id="88d23-139">If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.</span></span>
+
+<span data-ttu-id="88d23-140">Gegebenenfalls hilft Ihnen [Schritt 11](identity-customize-office-365-sign-in.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-140">If needed, [Step 11](identity-customize-office-365-sign-in.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-141">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-141">How to test</span></span>
+
+<span data-ttu-id="88d23-p105">Melden Sie sich mit Ihrem Benutzerkontonamen und der mehrstufigen Authentifizierung beim Office-Portal an. Ihre benutzerdefinierten Brandingelemente sollten auf der Anmeldeseite angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="88d23-p105">Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.</span></span>
+
+<a name="crit-identity-mfa"></a>
+## <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a><span data-ttu-id="88d23-144">Optional: Die mehrstufige Authentifizierung ist für Ihre Benutzer aktiviert</span><span class="sxs-lookup"><span data-stu-id="88d23-144">Optional: Multi-factor authentication is enabled for your users</span></span>
+
+<span data-ttu-id="88d23-145">Sie haben [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba) und [Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) verwendet, um die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Ihre Benutzerkonten zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="88d23-145">You used [Plan for multi-factor authentication for Office 365 Deployments](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba) and [Set up multi-factor authentication for Office 365 users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) to enable multifactor authentication (MFA) for your user accounts.</span></span>
+
+<span data-ttu-id="88d23-p106">Wenn Sie diese Option überspringen, sind die Benutzerkonten anfällig für eine Gefährdung der Anmeldeinformationen durch Cyberangriffe. Wenn das Kennwort eines Benutzerkontos manipuliert wurde, sind alle Ressourcen und Funktionen des Kontos, z. B. Administratorrollen, für den Angreifer verfügbar. Dadurch kann der Angreifer interne Dokumente und andere Daten kopieren, zerstören oder Lösegeld dafür verlangen.</span><span class="sxs-lookup"><span data-stu-id="88d23-p106">If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.</span></span>
+
+<span data-ttu-id="88d23-149">Gegebenenfalls hilft Ihnen [Schritt 5](identity-multi-factor-authentication.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-149">If needed, [Step 5](identity-multi-factor-authentication.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-150">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-150">How to test</span></span>
+
+1.  <span data-ttu-id="88d23-151">Erstellen Sie im Office 365-Verwaltungsportal ein Testbenutzerkonto, und weisen Sie ihm eine Lizenz zu.</span><span class="sxs-lookup"><span data-stu-id="88d23-151">Create a test user account in the Office 365 Admin portal and assign them a license.</span></span> 
+2.  <span data-ttu-id="88d23-152">Konfigurieren Sie die mehrstufige Authentifizierung für das Testbenutzerkonto mit der zusätzlichen Überprüfungsmethode, die Sie für tatsächliche Benutzerkonten verwenden, z. B. Senden einer Nachricht an Ihr Telefon.</span><span class="sxs-lookup"><span data-stu-id="88d23-152">Configure multi-factor authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a message to your phone.</span></span> 
+3.  <span data-ttu-id="88d23-153">Melden Sie sich mit dem Testbenutzerkonto am Office 365- oder Azure-Portal an.</span><span class="sxs-lookup"><span data-stu-id="88d23-153">Sign in to the Office 365 or Azure portal with the test user account.</span></span>
+4.  <span data-ttu-id="88d23-154">Vergewissern Sie sich, dass Sie von MFA zur Eingabe der zusätzlichen Überprüfungsinformationen aufgefordert werden und die Authentifizierung erfolgreich ist.</span><span class="sxs-lookup"><span data-stu-id="88d23-154">Verify that MFA prompts you for the additional verification information and results in a successful authentication.</span></span> 
+5.  <span data-ttu-id="88d23-155">Löschen Sie das Testbenutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-155">Delete the test user account.</span></span>
+
+<a name="crit-identity-sync-health"></a>
+## <a name="optional-directory-synchronization-is-monitored"></a><span data-ttu-id="88d23-156">Optional: Verzeichnissynchronisierung wird überwacht</span><span class="sxs-lookup"><span data-stu-id="88d23-156">Optional: Directory synchronization is monitored</span></span>
+
+<span data-ttu-id="88d23-157">Sie haben [Azure AD Connect Health für die Synchronisierung](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (für die Synchronisierung von Kennwörtern) oder [Azure AD Connect Health mit AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (für Verbundauthentifizierung) verwendet und Azure AD Connect Health bereitgestellt. Dazu gehört Folgendes:</span><span class="sxs-lookup"><span data-stu-id="88d23-157">You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:</span></span>
+
+- <span data-ttu-id="88d23-158">Installieren des Azure AD Connect Health-Agents auf jedem Ihrer lokalen Identitätsserver.</span><span class="sxs-lookup"><span data-stu-id="88d23-158">Installing the Azure AD Connect Health agent on each of your on-premises identity servers.</span></span>
+- <span data-ttu-id="88d23-159">Verwenden des Azure AD Connect Health-Portals zum Überwachen des Zustands der laufenden Synchronisierung.</span><span class="sxs-lookup"><span data-stu-id="88d23-159">Using the Azure AD Connect Health portal to monitor the state of the ongoing synchronization.</span></span>
+
+<span data-ttu-id="88d23-160">Wenn Sie diese Option überspringen, können Sie den Zustand Ihrer cloudbasierten Identitätsinfrastruktur genauer beurteilen.</span><span class="sxs-lookup"><span data-stu-id="88d23-160">If you skip this option, you can more accurately assess the state of your cloud-based identity infrastructure.</span></span>
+
+<span data-ttu-id="88d23-161">Gegebenenfalls hilft Ihnen [Schritt 8](identity-azure-ad-connect-health.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-161">If needed, [Step 8](identity-azure-ad-connect-health.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-162">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-162">How to test</span></span>
+<span data-ttu-id="88d23-163">Das Azure AD Connect Health-Portal zeigt den aktuellen und korrekten Zustand Ihrer lokalen Identitätsserver und der fortlaufenden Synchronisierung an.</span><span class="sxs-lookup"><span data-stu-id="88d23-163">The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.</span></span>
+
+<a name="crit-identity-pw-reset"></a>
+## <a name="optional-users-can-reset-their-own-passwords"></a><span data-ttu-id="88d23-164">Optional: Benutzer können ihre eigenen Kennwörter zurücksetzen</span><span class="sxs-lookup"><span data-stu-id="88d23-164">Optional: Users can reset their own passwords</span></span>
+
+<span data-ttu-id="88d23-165">Sie haben [Schnelle Bereitstellung der Self-Service-Kennwortzurücksetzung in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) verwendet, um die Kennwortzurücksetzung für die Benutzer zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="88d23-165">You've used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.</span></span>
+
+<span data-ttu-id="88d23-166">Wenn Sie diese Bedingung nicht erfüllen, sind Benutzer von Benutzerkontoadministratoren abhängig, um ihre Kennwörter zurückzusetzen, was zusätzlichen IT-Verwaltungsaufwand bedeutet.</span><span class="sxs-lookup"><span data-stu-id="88d23-166">If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.</span></span>
+
+<span data-ttu-id="88d23-167">Gegebenenfalls hilft Ihnen [Schritt 4](identity-password-reset.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-167">If needed, [Step 4](identity-password-reset.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-168">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-168">How to test</span></span>
+
+1. <span data-ttu-id="88d23-169">Erstellen Sie ein Testbenutzerkonto mit einem anfänglichen Kennwort.</span><span class="sxs-lookup"><span data-stu-id="88d23-169">Create a test user account with an initial password.</span></span>
+2. <span data-ttu-id="88d23-170">Führen Sie die Schritte in [Zulassen, dass Benutzer ihre eigenen Kennwörter in Office 365 zurücksetzen](https://support.office.com/article/Let-users-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a) aus, um das Kennwort für das Testbenutzerkonto zurückzusetzen.</span><span class="sxs-lookup"><span data-stu-id="88d23-170">Use the steps in [Let users reset their own passwords in Office 365](https://support.office.com/article/Let-users-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a) to reset the password on the test user account.</span></span>
+3. <span data-ttu-id="88d23-171">Melden Sie sich ab, und melden Sie sich dann mit dem zurückgesetzten Kennwort wieder am Testbenutzerkonto an.</span><span class="sxs-lookup"><span data-stu-id="88d23-171">Sign out and then sign in to the test user account using the reset password.</span></span>
+4. <span data-ttu-id="88d23-172">Löschen Sie das Testbenutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-172">Delete the test user account.</span></span>
+
+<a name="crit-identity-pw-writeback"></a>
+## <a name="optional-password-writeback-is-enabled-for-your-users"></a><span data-ttu-id="88d23-173">Optional: Kennwortrückschreiben ist für Ihre Benutzer aktiviert</span><span class="sxs-lookup"><span data-stu-id="88d23-173">Optional: Password writeback is enabled for your users</span></span>
+
+<span data-ttu-id="88d23-174">Sie haben die Anweisungen unter [Azure AD SSPR mit Kennwortrückschreiben](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) befolgt, um das Kennwortrückschreiben für den Azure AD-Mandanten Ihres Microsoft 365 Enterprise-Abonnements zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="88d23-174">You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.</span></span>
+
+<span data-ttu-id="88d23-175">Wenn Sie diese Option überspringen, müssen Benutzer, die nicht mit Ihrem lokalen Netzwerk verbunden sind, ihre Windows Server AD-Kennwörter über einen IT-Administrator zurücksetzen oder entsperren.</span><span class="sxs-lookup"><span data-stu-id="88d23-175">If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their Windows Server AD passwords through an IT administrator.</span></span>
+
+<span data-ttu-id="88d23-176">Gegebenenfalls hilft Ihnen [Schritt 9](identity-password-writeback.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-176">If needed, [Step 9](identity-password-writeback.md) can help you with this option.</span></span>
+
+>[!Note]
+><span data-ttu-id="88d23-177">Das Kennwortrückschreiben ist erforderlich für die vollständige Nutzung von Azure AD Identity Protection-Features, z. B. um zu verlangen, dass Benutzer ihre lokalen Kennwörter ändern, wenn Azure AD ein hohes Risiko einer Kontogefährdung erkannt hat.</span><span class="sxs-lookup"><span data-stu-id="88d23-177">Password writeback is required to fully utilize Azure AD Identity Protection features, such as requiring users to change their on-premises passwords when Azure AD has detected a high risk of account compromise.</span></span>
+>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-178">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-178">How to test</span></span>
+
+<span data-ttu-id="88d23-p107">Sie testen das Kennwortrückschreiben durch Ändern Ihres Kennworts in Office 365. Sie sollten mit Ihrem Konto und dem neuen Kennwort auf lokale Windows Server AD-Ressourcen zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="88d23-p107">You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Server AD resources.</span></span>
+
+1. <span data-ttu-id="88d23-181">Erstellen Sie in Ihrem lokalen Windows Server AD ein Testbenutzerkonto, lassen Sie Verzeichnissynchronisierung zu, und erteilen Sie dem Konto im Office 365-Verwaltungsportal eine Office 365-Lizenz.</span><span class="sxs-lookup"><span data-stu-id="88d23-181">Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Office 365 admin portal.</span></span>
+2. <span data-ttu-id="88d23-182">Melden Sie sich von einem Remotecomputer, der Ihrer lokalen Windows Server AD-Domäne angehört, mit den Anmeldeinformationen des Testbenutzerkontos beim Computer und beim Office-Portal an.</span><span class="sxs-lookup"><span data-stu-id="88d23-182">From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office 365 portal using the credentials of the test user account.</span></span>
+3. <span data-ttu-id="88d23-183">Wählen Sie **Einstellungen > Office 365-Einstellungen > Kennwort > Kennwort ändern**.</span><span class="sxs-lookup"><span data-stu-id="88d23-183">Select **Settings > Office 365 settings > Password > Change password**.</span></span>
+4. <span data-ttu-id="88d23-184">Geben Sie das aktuelle Kennwort ein, geben Sie ein neues Kennwort ein, und bestätigen Sie es dann.</span><span class="sxs-lookup"><span data-stu-id="88d23-184">Type the current password, type a new password, and then confirm it.</span></span>
+5. <span data-ttu-id="88d23-p108">Melden Sie sich vom Office-Portal und vom Remotecomputer ab, und melden Sie sich dann am Computer mit dem Testbenutzerkonto und dem neuen Kennwort an. Dies beweist, dass Sie das Kennwort eines lokalen Windows Server AD-Benutzerkontos mit dem Azure AD-Mandanten ändern konnten.</span><span class="sxs-lookup"><span data-stu-id="88d23-p108">Sign out of the Office 365 portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.</span></span>
+
+<a name="crit-identity-sso"></a>
+## <a name="optional-users-can-sign-in-using-single-sign-on"></a><span data-ttu-id="88d23-187">Optional: Benutzer können einmaliges Anmelden verwenden</span><span class="sxs-lookup"><span data-stu-id="88d23-187">Optional: Users can sign in using single sign-on</span></span>
+
+<span data-ttu-id="88d23-188">Sie haben [Azure AD Connect: Nahtloses einmaliges Anmelden](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) für Ihre Organisation aktiviert, um die Anmeldung von Benutzern bei cloudbasierten Anwendungen, z. B. Office 365, zu vereinfachen.</span><span class="sxs-lookup"><span data-stu-id="88d23-188">You enabled [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) for your organization to simplify how users sign in to cloud-based applications, such as Office 365.</span></span>
+
+<span data-ttu-id="88d23-189">Wenn Sie diese Option überspringen, werden die Benutzer möglicherweise zur Eingabe von Anmeldeinformationen aufgefordert, wenn sie auf zusätzliche Anwendungen zugreifen, die Azure AD verwenden.</span><span class="sxs-lookup"><span data-stu-id="88d23-189">If you skip this option, your users might be prompted to provide credentials when they access additional applications that use Azure AD.</span></span>
+
+<span data-ttu-id="88d23-190">Gegebenenfalls hilft Ihnen [Schritt 10](identity-single-sign-on.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-190">If needed, [Step 10](identity-single-sign-on.md) can help you with this option.</span></span>
+
+
+<a name="crit-identity-group-license"></a>
+## <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a><span data-ttu-id="88d23-191">Optional: Gruppenbasierte Lizenzierung für automatisches Zuweisen und Entfernen von Lizenzen zu Benutzerkonten basierend auf der Gruppenmitgliedschaft</span><span class="sxs-lookup"><span data-stu-id="88d23-191">Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership</span></span>
+
+<span data-ttu-id="88d23-192">Sie haben für die entsprechenden Azure AD-Sicherheitsgruppen [gruppenbasierte Lizenzierung aktiviert](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal), damit Lizenzen für Office 365 und EMS automatisch zugewiesen oder entfernt werden.</span><span class="sxs-lookup"><span data-stu-id="88d23-192">You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.</span></span>
+
+<span data-ttu-id="88d23-193">Wenn Sie diese Option überspringen, müssen Sie Folgendes manuell ausführen:</span><span class="sxs-lookup"><span data-stu-id="88d23-193">If you skip this option, you must manually:</span></span>
+
+- <span data-ttu-id="88d23-194">Zuweisen von Lizenzen für neue Benutzer, die Zugriff auf Office 365 und EMS haben sollen.</span><span class="sxs-lookup"><span data-stu-id="88d23-194">Assign licenses to new users whom you intend to have access to Office 365 and EMS.</span></span>
+- <span data-ttu-id="88d23-195">Entfernen von Lizenzen von Benutzern, die nicht mehr in Ihrer Organisation sind oder keinen Zugriff auf Office 365 und EMS haben sollen.</span><span class="sxs-lookup"><span data-stu-id="88d23-195">Remove licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.</span></span>
+
+<span data-ttu-id="88d23-196">Gegebenenfalls hilft Ihnen [Schritt 12](identity-group-based-licensing.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-196">If needed, [Step 12](identity-group-based-licensing.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-197">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-197">How to test</span></span>
+
+1. <span data-ttu-id="88d23-198">Erstellen Sie eine Testsicherheitsgruppe in Azure AD mit dem Azure-Portal, und konfigurieren Sie die gruppenbasierte Lizenzierung, um Office 365- und EMS-Lizenzen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="88d23-198">Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.</span></span>
+2. <span data-ttu-id="88d23-199">Erstellen Sie ein Testbenutzerkonto in Azure AD, und fügen Sie es der Testsicherheitsgruppe hinzu.</span><span class="sxs-lookup"><span data-stu-id="88d23-199">Create a test user account in Azure AD and add it to the test security group.</span></span>
+3. <span data-ttu-id="88d23-200">Untersuchen Sie die Eigenschaften des Benutzerkontos im Office 365-Verwaltungsportal, um zu überprüfen, ob dem Konto die Office 365- und EMS-Lizenzen zugewiesen wurden.</span><span class="sxs-lookup"><span data-stu-id="88d23-200">Examine the properties of the user account in the Office 365 admin portal to ensure that it was assigned the Office 365 and EMS licenses.</span></span>
+4. <span data-ttu-id="88d23-201">Entfernen Sie das Testbenutzerkonto aus der Testsicherheitsgruppe.</span><span class="sxs-lookup"><span data-stu-id="88d23-201">Remove the test user account from the test security group.</span></span>
+5. <span data-ttu-id="88d23-202">Untersuchen Sie die Eigenschaften des Benutzerkontos, um zu überprüfen, ob ihm die Office 365- und EMS-Lizenzen nicht mehr zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="88d23-202">Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.</span></span>
+6. <span data-ttu-id="88d23-203">Löschen Sie die Testsicherheitsgruppe und das Testbenutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-203">Delete the test security group and the test user account.</span></span>
+
+<a name="crit-identity-dyn-groups"></a>
+## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a><span data-ttu-id="88d23-204">Optional: Dynamische Gruppenmitgliedschaftseinstellungen fügen Benutzerkonten automatisch basierend auf Benutzerkontoattributen zu Gruppen hinzu</span><span class="sxs-lookup"><span data-stu-id="88d23-204">Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes</span></span>
+
+<span data-ttu-id="88d23-205">Sie haben den Satz von dynamischen Azure AD-Gruppen bestimmt und nach den Anweisungen in [Erstellen attributbasierter Regeln für dynamische Gruppenmitgliedschaft in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) die Gruppen und die Regeln erstellt, die den Satz von Benutzerkontoattributen und Werten für die Gruppenmitgliedschaft bestimmen.</span><span class="sxs-lookup"><span data-stu-id="88d23-205">You've determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.</span></span>
+
+<span data-ttu-id="88d23-p109">Wenn Sie diese Option überspringen, muss die Gruppenmitgliedschaft manuell vorgenommen werden, wenn neue Konten hinzugefügt oder Benutzerkontoattribute im Lauf der Zeit geändert werden. Wenn beispielsweise eine Person aus der Vertriebsabteilung in die Buchhaltung wechselt, müssen Sie Folgendes tun:</span><span class="sxs-lookup"><span data-stu-id="88d23-p109">If you skip this option, group membership must be done manually as new accounts are added or as user account attributes change over time. For example, if someone moves from the Sales department to the Accounting department, you must:</span></span>
+
+- <span data-ttu-id="88d23-208">Aktualisieren Sie den Wert des Attributs „Abteilung“ für dieses Benutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-208">Update the value of the Department attribute for that user account.</span></span>
+- <span data-ttu-id="88d23-209">Entfernen Sie es manuell aus der Gruppe „Vertrieb“.</span><span class="sxs-lookup"><span data-stu-id="88d23-209">Manually remove them from the Sales group.</span></span>
+- <span data-ttu-id="88d23-210">Fügen Sie es manuell der Gruppe „Buchhaltung“ hinzu.</span><span class="sxs-lookup"><span data-stu-id="88d23-210">Manually add them to the Accounting group.</span></span>
+
+<span data-ttu-id="88d23-211">Wenn die Gruppen „Vertrieb“ und „Buchhaltung“ dynamisch wären, müssten Sie nur den Wert „Abteilung“ für das Benutzerkonto ändern.</span><span class="sxs-lookup"><span data-stu-id="88d23-211">If the Sales and Accounting groups were dynamic, you would only have to change the user account’s Department value.</span></span>
+
+<span data-ttu-id="88d23-212">Gegebenenfalls hilft Ihnen [Schritt 15](identity-automatic-group-membership.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-212">If needed, [Step 15](identity-automatic-group-membership.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-213">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-213">How to test</span></span>
+
+1. <span data-ttu-id="88d23-214">Erstellen Sie eine dynamische Testgruppe in Azure AD mit dem Azure-Portal, und konfigurieren Sie eine Regel für den Abteilungswert „test1“.</span><span class="sxs-lookup"><span data-stu-id="88d23-214">Create a test dynamic group in Azure AD with the Azure portal and configure a rule for the Department equals “test1”.</span></span>
+2. <span data-ttu-id="88d23-215">Erstellen Sie ein Testbenutzerkonto in Azure AD, und legen Sie die Eigenschaft „Abteilung“ auf „test1“ fest.</span><span class="sxs-lookup"><span data-stu-id="88d23-215">Create a test user account in Azure AD and set the Department property to “test1”.</span></span>
+3. <span data-ttu-id="88d23-216">Untersuchen Sie die Eigenschaften des Benutzerkontos, um sicherzustellen, dass es ein Mitglied der dynamischen Testgruppe ist.</span><span class="sxs-lookup"><span data-stu-id="88d23-216">Examine the properties of the user account to ensure that it was made a member of the test dynamic group.</span></span>
+4. <span data-ttu-id="88d23-217">Ändern Sie den Wert der Eigenschaft „Abteilung“ für das Testbenutzerkonto in „test2“.</span><span class="sxs-lookup"><span data-stu-id="88d23-217">Change the value of the Department property for the test user account to “test2”.</span></span>
+5. <span data-ttu-id="88d23-218">Untersuchen Sie die Eigenschaften des Benutzerkontos, um sicherzustellen, dass es kein Mitglied der dynamischen Testgruppe mehr ist.</span><span class="sxs-lookup"><span data-stu-id="88d23-218">Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.</span></span>
+6. <span data-ttu-id="88d23-219">Löschen Sie die dynamische Testgruppe und das Testbenutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-219">Delete the test dynamic group and the test user account.</span></span>
+
+<a name="crit-identity-self-service-groups"></a>
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a><span data-ttu-id="88d23-220">Optional: Self-Service-Gruppenverwaltung ist für bestimmte Azure AD-Sicherheitsgruppen und Office 365-Gruppen aktiviert</span><span class="sxs-lookup"><span data-stu-id="88d23-220">Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups</span></span>
+
+<span data-ttu-id="88d23-221">Sie haben bestimmt, welche Gruppen für Self-Service-Verwaltung geeignet sind, deren Besitzer bezüglich des Workflows und der Verantwortlichkeiten der Gruppenverwaltung instruiert und für diese Gruppen [die Self-Service-Verwaltung in Azure AD eingerichtet](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).</span><span class="sxs-lookup"><span data-stu-id="88d23-221">You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.</span></span>
+
+<span data-ttu-id="88d23-222">Wenn Sie diese Option überspringen, müssen alle Verwaltungsaufgaben für Azure AD-Gruppen von IT-Administratoren erledigt werden.</span><span class="sxs-lookup"><span data-stu-id="88d23-222">If you skip this option, all Azure AD group management tasks must be done by IT administrators.</span></span>
+
+<span data-ttu-id="88d23-223">Gegebenenfalls hilft Ihnen [Schritt 14](identity-self-service-group-management.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-223">If needed, [Step 14](identity-self-service-group-management.md) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="88d23-224">Testen</span><span class="sxs-lookup"><span data-stu-id="88d23-224">How to test</span></span>
+1.  <span data-ttu-id="88d23-225">Erstellen Sie ein Testbenutzerkonto in Azure AD mit dem Azure-Portal.</span><span class="sxs-lookup"><span data-stu-id="88d23-225">Create a test user account in Azure AD with the Azure portal.</span></span>
+2.  <span data-ttu-id="88d23-226">Melden Sie sich wie beim Testbenutzerkonto an, und erstellen Sie eine Azure AD-Testsicherheitsgruppe.</span><span class="sxs-lookup"><span data-stu-id="88d23-226">Sign-in as with the test user account and create a test Azure AD security group.</span></span>
+3.  <span data-ttu-id="88d23-227">Melden Sie sich ab, und melden Sie sich dann mit Ihrem IT-Administratorkonto an.</span><span class="sxs-lookup"><span data-stu-id="88d23-227">Sign out and then sign-in with your IT administrator account.</span></span>
+4.  <span data-ttu-id="88d23-228">Konfigurieren Sie die Testsicherheitsgruppe für Self-Service-Verwaltung für das Testbenutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-228">Configure the test security group for self-service management for the test user account.</span></span>
+5.  <span data-ttu-id="88d23-229">Melden Sie sich ab, und melden Sie sich dann mit Ihrem Testbenutzerkonto an.</span><span class="sxs-lookup"><span data-stu-id="88d23-229">Sign out and then sign-in with your test user account.</span></span>
+6.  <span data-ttu-id="88d23-230">Verwenden Sie das Azure-Portal, um Mitglieder zu der Testsicherheitsgruppe hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="88d23-230">Use the Azure portal to add members to the test security group.</span></span>
+7.  <span data-ttu-id="88d23-231">Löschen Sie die Testsicherheitsgruppe und das Testbenutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="88d23-231">Delete the test security group and the test user account.</span></span>
+
+<a name="crit-identity-ident-prot"></a>
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise"></a><span data-ttu-id="88d23-232">Optional: Azure AD Identity Protection ist zum Schutz vor Gefährdung der Anmeldeinformationen aktiviert</span><span class="sxs-lookup"><span data-stu-id="88d23-232">Optional: Azure AD Identity Protection is enabled to protect against credential compromise</span></span>
+
+<span data-ttu-id="88d23-233">Sie haben Azure AD Identity Protection zu folgenden Zwecken aktiviert:</span><span class="sxs-lookup"><span data-stu-id="88d23-233">You've enabled Azure AD Identity Protection to:</span></span>
+
+- <span data-ttu-id="88d23-234">Beseitigen potenzieller Anfälligkeiten für Identitätsverletzungen</span><span class="sxs-lookup"><span data-stu-id="88d23-234">Address potential identity vulnerabilities.</span></span>
+- <span data-ttu-id="88d23-235">Erkennen möglicher Kompromittierungsversuche von Anmeldeinformationen</span><span class="sxs-lookup"><span data-stu-id="88d23-235">Detect possible credential compromise attempts.</span></span>
+- <span data-ttu-id="88d23-236">Untersuchen und Beheben laufender verdächtiger Identitätsvorfälle</span><span class="sxs-lookup"><span data-stu-id="88d23-236">Investigate and address ongoing suspicious identity incidents.</span></span>
+
+<span data-ttu-id="88d23-p110">Wenn Sie diese Option überspringen, sind Sie nicht in der Lage, Kompromittierungsversuche von Anmeldeinformationen zu erkennen oder automatisch zu verhindern bzw. identitätsbezogene Sicherheitsvorfälle zu untersuchen. Dies macht Ihr Unternehmen potenziell anfällig für eine erfolgreiche Kompromittierung von Anmeldeinformationen und die resultierende Bedrohung für vertrauliche Daten Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="88d23-p110">If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.</span></span>
+
+<span data-ttu-id="88d23-239">Gegebenenfalls hilft Ihnen [Schritt 6](identity-azure-ad-identity-protection.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-239">If needed, [Step 6](identity-azure-ad-identity-protection.md) can help you with this option.</span></span>
+
+<a name="crit-identity-pim"></a>
+## <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a><span data-ttu-id="88d23-240">Optional: Sie haben Privileged Identity Management zur Unterstützung einer bedarfsgesteuerten Zuweisung der globalen Administratorrolle eingerichtet</span><span class="sxs-lookup"><span data-stu-id="88d23-240">Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role</span></span>
+
+<span data-ttu-id="88d23-241">Sie haben nach den Anweisungen in [Konfigurieren von Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) PIM in Ihrem Azure AD-Mandanten aktiviert und Ihre globalen Administratorkonten als berechtigte Administratoren konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="88d23-241">You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.</span></span>
+
+<span data-ttu-id="88d23-242">Sie haben auch die Empfehlungen in [Schützen des privilegierten Zugriffs für hybride und Cloudbereitstellungen in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) befolgt, um eine Roadmap zu entwickeln, die den privilegierten Zugriff vor Cyberangriffen schützt.</span><span class="sxs-lookup"><span data-stu-id="88d23-242">You've also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.</span></span>
+
+<span data-ttu-id="88d23-243">Wenn Sie diese Option überspringen, sind Ihre globalen Administratorkonten ständigen Onlineangriffen ausgesetzt und können bei einer Gefährdung zulassen, dass ein Angreifer Ihre vertraulichen Informationen stiehlt, zerstört oder gegen Lösegeldforderungen sperrt.</span><span class="sxs-lookup"><span data-stu-id="88d23-243">If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.</span></span>
+
+<span data-ttu-id="88d23-244">Gegebenenfalls hilft Ihnen [Schritt 3](identity-azure-ad-identity-protection.md) bei dieser Option.</span><span class="sxs-lookup"><span data-stu-id="88d23-244">If needed, [Step 3](identity-azure-ad-identity-protection.md) can help you with this option.</span></span>
+
+
+## <a name="next-phase"></a><span data-ttu-id="88d23-245">Nächste Phase</span><span class="sxs-lookup"><span data-stu-id="88d23-245">Next phase</span></span>
+
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| <span data-ttu-id="88d23-246">Die nächste Phase im End-to-End-Bereitstellungsprozess für Microsoft 365 Enterprise ist [Windows 10 Enterprise](windows10-infrastructure.md).</span><span class="sxs-lookup"><span data-stu-id="88d23-246">Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Windows 10 Enterprise](windows10-infrastructure.md).</span></span> |
+
