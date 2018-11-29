@@ -1,9 +1,9 @@
 ---
 redirect_url: https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json
-ms.openlocfilehash: dcd4be33ecfe8a6bc4c59ed2a563ea3d270bd667
-ms.sourcegitcommit: 8d548d24769a7c5425ee45c5ec71a3fc1e5a0046
-ms.translationtype: HT
+ms.openlocfilehash: 5cd303e6258e634d906df8bb76d53239f047e1f1
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "23978596"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26868098"
 ---
