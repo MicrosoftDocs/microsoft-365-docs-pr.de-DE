@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
-ms.openlocfilehash: 1ec2a41ec0c4a24ebdaad4a333ac58490a0dd7f6
-ms.sourcegitcommit: 5959840f1e94b786858a1101a2c65c01f836e061
+ms.openlocfilehash: b8c4fd137e96bf96595e1670ea63655839ffc332
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341183"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26867564"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -97,7 +97,7 @@ ms.locfileid: "25341183"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Schulen der Benutzer</h3>
+                                                <h3>Schulen Ihrer Benutzer</h3>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Unternehmen Portal-app</a></p>
