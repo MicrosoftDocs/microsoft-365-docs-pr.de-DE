@@ -1,0 +1,96 @@
+---
+title: Richtlinien für die Datenverarbeitung mithilfe von Microsoft Professional Services
+description: Dieses Dokument enthält die Datenverarbeitung mit Informationen zu Professional Services, mit denen sie bestimmen, ob ein DPIA benötigt wird und was details enthalten.
+keywords: DPIA, Microsoft Professional Services Microsoft 365 Dokumentation, GDPR
+robots: NOINDEX,NOFOLLOW
+author: BrendaCarter
+ms.localizationpriority: high
+audience: itpro
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.author: bcarter
+manager: laurawi
+ms.collection: GDPR
+ms.openlocfilehash: 9e710c3b8ec0c467c36a675c2d76eabb3af1f0f6
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26867816"
+---
+# <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>Data Protection Auswirkungen Bewertung: Richtlinien für die Datenverarbeitung mithilfe von Microsoft Professional Services
+
+## <a name="introduction-to-microsoft-professional-services"></a>Einführung in Microsoft Professional Services
+
+Microsoft Professional Services umfasst eine vielfältige Gruppe von technischen konstruiert, Ingenieure, Berater und dedizierte um großartige auf geschäftskritischen bessere Ausrüstung Kunden von Microsoft-Supportmitarbeiter mehr und mehr erreichen. Hier erfahren Sie mehr über Microsoft Professional Services (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) und in den Abschnitt Microsoft Professional Services auf der Microsoft-Trust Center zugreifen, indem (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>).
+
+Microsoft Professional Services hat seine Verpflichtungen unter Allgemein Data Protection Regulierung (GDPR) ernsthaft. Die Informationen in diesem Dokument bietet Informationen dazu, wie Microsoft Support und consulting Dienstangebote, die Kunden unter GDPR bei der Vorbereitung von Data Protection Auswirkungen Bewertung (DPIAs) verwenden können.
+
+### <a name="introduction-to-dpias"></a>Einführung in die DPIAs
+
+Unter den allgemeinen Data Protection Regulierung (GDPR), werden Daten Controller benötigt, um Vorbereiten einer DPIA für die Verarbeitung von Operationen, die "wahrscheinlich ein hohes Risiko die Rechte und Grundfreiheiten natürlicher Personen auftreten." Es gibt keine Sicherheitsmechanismen in Microsoft Professional Services, die die Erstellung einer DPIA unbedingt benötigen, von einem Daten-Controller verwendet wird. Vielmehr werden gibt an, ob eine DPIA erforderlich ist abhängig von den Details und dem Kontext des Typs von Diensten und wie der Daten Controller professional Services verwendet werden.
+
+Der Zweck dieses Dokuments ist Datenverarbeitung mit Informationen zu Professional Services bereitstellen, mit denen sie bestimmen, ob ein DPIA benötigt wird, und wenn Ja, was enthalten details.
+
+## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Teil 1: Bestimmen, ob eine DPIA erforderlich ist
+
+Artikel 35 über die GDPR erfordert einen Domänencontroller Daten zum Erstellen einer Data Protection Auswirkungen Assessment "[w] hier ein Verarbeitung insbesondere mit neue Technologien und unter Berücksichtigung der Art, Umfang, Kontext und Zwecke der Verarbeitung, wahrscheinlich ist in einer hoch riskante die Rechte und Grundfreiheiten natürlicher Personen." Weitere festgelegt bestimmten Faktoren, die eine solche hoch riskante angeben würde, die in der folgenden Tabelle erläutert werden hin. Bei der Bestimmung, ob eine DPIA erforderlich ist, sollten ein Daten Controller diese Faktoren, zusammen mit anderen relevanten Faktoren, aufgrund der Daten Controller bestimmte Implementation(en) und Verwendung(en) Professional Services.
+
+***Tabelle 1: Risiko Faktoren und relevanten Informationen***
+
+<!--start table here NO HEADER -->
+
+|||
+|:-----|:-----|
+|**Risikofaktor**|**Relevante Informationen zu professionellen Services**|
+|Eine systematische und umfassende Bewertung der persönlichen Aspekte im Zusammenhang mit natürlichen Personen basierend auf der automatisierten Datenverarbeitung, einschließlich Profiling, und auf der Entscheidungen basieren, die hinsichtlich der natürlichen Person rechtliche Wirkung erzeugen oder sie auf ähnliche Weise betreffen;|Professional Services führt bestimmte Routine oder automatisierte Verarbeitung der Daten, z. B. Problembehebung Support (z. B. zur Unterstützung von Kunden bei Ihrem jeweiligen Computer breaks), Konto Migration und Analyse von Sicherheitsrisiken. Professional Services-Lösungen, ausgenommen Kunden Entwicklung abgedeckt im Hinweis weiter unten sind nicht für die Ausführung vorgesehen Verarbeitung auf welche Entscheidungen basieren, die rechtliche oder auf ähnliche Weise erhebliche Auswirkungen auf Personen zu erstellen.|
+|Die umfassende Verarbeitung[^1] von Daten besonderer Kategorien (personenbezogene Daten, die die ethnische Herkunft, politische, religiöse oder philosophische Überzeugungen, die Mitgliedschaft in einer Gewerkschaft offenlegen sowie die Verarbeitung von genetischen bzw. biometrischen Daten für Zwecke der zweifelsfreien Identifikation einer natürlichen Person, Daten zu Gesundheit, Sexualleben oder sexueller Orientierung einer natürlichen Person) oder von personenbezogenen Daten bezüglich Begehung von Straftaten und strafrechtlicher Verurteilungen.|Professional Services sind nicht für die direkte Verwendung in Arbeit genutzt werden, die die Verarbeitung spezieller Kategorien der persönlichen Daten benötigt außer den Hinweis unten abgedeckt Customer-Entwicklung.<p>Jedoch konnte ein Professional Services Solutions consulting verwenden, um bestimmte enumerierten Datenkategorien zu verarbeiten. Beispielsweise bietet Professional Services Gesundheitswesen Datenbankentwicklung die zum Verarbeiten von personal Health Bedingung zugeordneten Daten von einem Daten-Controller verwendet werden kann. Es ist Aufgabe der Domänencontroller zu bewerten und entweder einschränken oder diese Verwendung entsprechend zu dokumentieren.</p>|
+| Eine systematische Überwachung eines öffentlich zugänglichen Bereichs in großem Umfang
+|Professional Services nicht für die Verwendung in Arbeit genutzt werden, die erforderlich sind, oder diese Überwachung erleichtert, den Hinweis unten abgedeckt Ausschließen von Kunden-Entwicklung.<p>Wenn ein Professional Services zum Entwickeln von diesem Typ des Systems verwendet oder IT-Systeme zum Verarbeiten von Daten, die durch eine solche Überwachung als gesammelt verwendet wäre es der Verantwortung der Controller Daten, wie unten beschrieben.</p>|
+|||
+
+<!-- end of table -->
+  
+[Benutzerdefinierte Entwicklung Hinweis] Professional Services bietet ein breites Spektrum an consulting Lösungen. Ein konnte eine Lösung, die gemäß den oben genannten Kriterien einer Lösung mit hohem Risiko wäre, potenziell anfordern. Beispielsweise verlangen ein, dass Professional Services erstellen Sie eine Lösung zum Entwickeln ein Business Intelligence-Modul für die Beschäftigung Entscheidungen oder Anwendungen haben oder eine Lösung, die Benutzer nachverfolgen, spezialisierte Verwendung von künstliche beinhaltet Intelligence (AI) / Analytics und Verarbeitung besonderer Kategorien der persönlichen Daten.
+
+Zu Beginn einer kundenbindung hat Professional Services Prozesse zum Bewerten und Adresse mit hohem Risiko Lösungen, die es zur Bearbeitung gebeten werden kann. Im Rahmen dieser kann Professional Services Garantien aus der Controller Daten über die GDPR-Kompatibilität (z. B. Vertragsbedingungen), einen Plan für die Entwicklung einer DPIA oder anderen Kriterien (z. B. vereinbarten Betriebsrichtlinien) nach Bedarf eines Prozessors Daten unter der GDPR erfordern. Es ist jedoch unabhängig von der Microsoft Aktionen der Verantwortung der für die Verarbeitung der DPIA mit Input gegebenenfalls vom Prozessor, der die Daten des Kunden zu entwickeln.
+
+## <a name="part-2--contents-of-a-dpia"></a>Teil 2 – Inhalte einer DPIA
+
+Artikel 35(7) legt fest, dass eine Datenschutz-Folgenabschätzung die Zwecke der Verarbeitung und eine systematische Beschreibung der angestrebten Verarbeitung enthalten muss. Eine systematische Beschreibung einer vollständigen DPIA könnte Faktoren wie die Art der verarbeiteten Daten, die Speicherdauer der Daten, den Ort und das Übermittlungsziels der Daten und Informationen darüber, welche Dritten Zugriff auf die Daten haben könnten, enthalten. Außerdem muss die DPIA folgendes beinhalten:
+
+-   eine Bewertung der Notwendigkeit und Verhältnismäßigkeit in Bezug auf die Zwecke der Verarbeitung;
+
+-   eine Bewertung der Risiken, die Rechte und Grundfreiheiten natürlicher Personen; und
+
+-   die vorgesehenen Maßnahmen, um die Risiken, einschließlich Garantien, Sicherheitsmaßnahmen und Mechanismen zum Schutz personenbezogener Daten zu steuern und um die Einhaltung dieser Verordnung zu demonstrieren, wobei die Rechte und berechtigten Interessen der betroffenen Personen und anderer beteiligter Personen berücksichtigt werden.
+
+Die folgende Tabelle enthält Informationen zu Professional Services, die für jedes dieser Elemente relevant ist. In Teil 1 müssen Daten Controller die unten stehenden zusammen mit anderen relevanten Faktoren, im Kontext von bestimmten Implementation(en) der Controller und Verwendung(en) Professional Services Details berücksichtigen.
+
+***Tabelle 2 - Elemente des DPIA für relevante professionellen Services***
+
+<!--start table here -->
+
+|||
+|:-----|:-----|
+|**Elemente einer DPIA** |**Relevante Informationen zu professionellen Services**|
+|Zweck(e) der Verarbeitung|Die Zwecke der Verarbeitung von Daten mithilfe von Professional Services wird durch den Controller bestimmt, die implementiert, konfiguriert und verwendet sie.<p>Gemäß den [Microsoft Professional Services Data Protection Addendum](http://aka.ms/professionalservicesdpa) (MPSDPA) verarbeitet Microsoft, als ein Prozessor Daten, Unterstützung und Consulting Daten nur, um die angeforderten Dienste für unsere Kunden, der für die Verarbeitung bereitzustellen. Microsoft verwendet nicht die Unterstützung und Consulting Daten oder Informationen zu kommerziellen Zwecken Werbung oder ähnlichen abgeleitet.</p>|
+|Die Zwecke der Verarbeitung von Daten mithilfe von Professional Services wird durch den Controller bestimmt, die implementiert, konfiguriert und verwendet sie.|Gemäß den [Microsoft Professional Services Data Protection Addendum](http://aka.ms/professionalservicesdpa) (MPSDPA) verarbeitet Microsoft, als ein Prozessor Daten, Unterstützung und Consulting Daten nur, um die angeforderten Dienste für unsere Kunden, der für die Verarbeitung bereitzustellen. Microsoft verwendet nicht die Unterstützung und Consulting Daten oder Informationen zu kommerziellen Zwecken Werbung oder ähnlichen abgeleitet.|
+|Kategorien verarbeiteter personenbezogener Daten|Unterstützung und Beratung Daten bedeutet, dass alle Daten, einschließlich aller Text, Sound, Video, Bilddateien oder Software, die zur Verfügung stehen an Microsoft durch oder im Namen Customer (oder Kunden autorisiert Microsoft Online-Dienst erhältlich) über eine Zusammenarbeit mit Microsoft, um Professional Services oder Unterstützung erhalten. Dies kann über Telefon, Chat, E-mail oder Webformular gesammelten Informationen enthalten. Es kann Beschreibung von Problemen an Microsoft Supportprobleme, automatisierte Ratgeber zu beheben oder durch Zugreifen auf Kundensysteme mit Kunden Berechtigung Remote übertragenen Dateien enthalten.<p>Kundendaten und Supportdaten Kundenkontakt oder zur Abrechnung Daten enthält, wie Abonnementinformationen, und keinen Zahlungsdaten, welche Microsoft erfasst und in seine Kapazität als Controller Daten verarbeitet und dem liegt außerhalb des Bereichs dieses Dokuments.</p>|
+|Datenaufbewahrung
+|Microsoft behält Support- und Consulting Daten für die Dauer der Kundenprojekt sowie einen Aufbewahrungszeitraum, nachdem das Engagement nach Bedarf, um sicherzustellen, dass Qualität beendet und des Diensts Continuity. Beispielsweise ist nach dem Schließen der Daten von einer Supportanfrage, dass Daten in der Regel für einen bestimmten Zeitraum, um sicherzustellen, dass die Möglichkeit, die darauf verweisen, wenn das Problem erneut entsteht und die Groß-/Kleinschreibung wird erneut geöffnet beibehalten werden.<p>Wenn Professional Services unterstützt, wird die Dauer des Engagements definiert, wenn die Supportanfrage geschlossen wird. Wenn Professional Services consulting Services bereitstellt, wird die Dauer des Engagements häufig durch die Arbeit Reihenfolge definiert. In anderen Fällen wird die Dauer des Engagements durch die Verwaltung der Business Beziehung definiert. In allen Fällen werden Support- und Consulting Daten gelöscht oder zurückgegeben, auf Anforderung oder nach der Kunde Anweisungen unverzüglich mithilfe der Funktionen im Professional Services *Data Betreff Rechte Guide*beschrieben.</p>|
+|Speicherort und Übermittlung personenbezogener Daten|Aufgrund der Art der Professional Services, einschließlich die Notwendigkeit, rund um die Uhr Unterstützung bieten möglicherweise weltweit Daten übertragen werden. Eine Liste der Speicherorte, arbeitet Microsoft im steht auf Anforderung zur Verfügung. Consulting Services, möglicherweise Daten in Land gehalten werden, wenn in der Reihenfolge Arbeit zugestimmt haben.<p>Für persönliche Daten aus der Europäischen wirtschaftlichen Bereich und Schweiz, Microsoft sorgt dafür, dass die, die der überträgt werden persönliche Daten auf einer dritten Land oder eine internationale Organisation geeignete Garantien gemäß Artikel 46 der der GDPR. Zusätzlich zu Microsofts Zusagen unter Standardvertragsklauseln für Prozessoren und anderen Verträgen Modell gemäß der Beschreibung in der [MPSDPA](http://aka.ms/professionalservicesdpa)ist Microsoft zertifiziert der EU-USA und Schweiz-US Privacy Shield Frameworks und der Zusagen Sie bedeuten.|
+|Teilen von Daten mit Dritten|Microsoft teilt Daten mit dritten, die als untergeordnete Prozessoren zur Unterstützung von Funktionen wie Kunden und technischen Support, Wartung des Dienstes und anderer Vorgänge. Alle auf dem Microsoft Support- und Consulting Daten überträgt Auftragnehmer werden sich schriftlich mit Microsoft eingegeben haben, die keine schützenden weniger als den Data Protection Bedingungen die [MPSDPA](http://aka.ms/professionalservicesdpa)sind. Alle untergeordneten Drittanbieter--Prozessoren mit dem Support und Consulting Daten werden unter den [MPSDPA](http://aka.ms/professionalservicesdpa) freigegeben sind in der [Microsoft professionellen Support Auftragnehmer Liste](http://aka.ms/servicesapprovedsuppliers)enthalten.<p>Microsoft wird nicht Support- und Consulting Daten zu Polizei anzugeben, sofern durch das geltende Recht erforderlich. Wenn Polizei Microsoft mit einer Anforderung für Support- und Daten Consulting wendet, wird Microsoft versucht die Behörde, um diese Daten direkt von der Kunde anfordern umzuleiten. Falls Microsoft zur Unterstützung und Consulting Daten an Polizei weiterzugeben, Microsoft umgehend benachrichtigen der Kunde und eine Kopie des Bedarfs bereitstellen, es sei denn, dies gesetzlich untersagt.<p>Erhalt der anderen Drittanbieter-Anforderung für den Support und Consulting Daten benachrichtigt Microsoft umgehend der Kunde, es sei denn, die durch das geltende Recht verboten. Microsoft wird die Anforderung abgelehnt, es sei denn, gesetzlich verpflichtet sämtlicher. Wenn die Anforderung gültig ist, versucht Microsoft, dem dritten um anzufordern, die Daten direkt aus der Kunde umzuleiten.</p>|
+|Rechte betroffener Personen|Beim Betrieb als ein Prozessor stellt Microsoft zur Verfügung (Data Controller) Kunden die persönlichen Daten von der betroffenen Personen und die Möglichkeit, Daten Betreff Anforderungen erfüllen, wenn sie ihre Rechte unter der GDPR Übung. Wir gemacht, sodass in Übereinstimmung mit den Funktionen des Produkts und unsere Rolle als Prozessor. wenn wir eine Anforderung von Kundendaten kann eine oder mehrere der dessen Rechte unter der GDPR Übung erhalten wir den Daten unterliegen Stellen verlangen direkt zu Umleiten der  für die Verarbeitung.<p>Der *Professional Services Daten Betreff anfordern GDPR Dokumentation* enthält eine Beschreibung der wie der Kunden ihre Daten Betreff Rechte Verpflichtungen in Professional Services erfüllt werden kann.</p>|
+Eine Bewertung der Notwendigkeit und Verhältnismäßigkeit in Bezug auf die Zwecke|Eine solche Bewertung hängt vom Bedarf und dem Zweck der Verarbeitung des Datenverantwortlichen ab.<p>Bei der Verarbeitung von Microsoft durchgeführt wird, ist dieser Verarbeitung erforderlich und proportional zum Bereitstellen der Dienste für den Controller Daten. Microsoft verpflichtet sich dadurch in die [MPSDPA](http://aka.ms/professionalservicesdpa).</p>|
+|Eine Bewertung der Risiken für die Rechte und Freiheiten natürlicher Personen unterliegen|Die wichtigsten Risiken für die Rechte und Grundfreiheiten der betroffenen Personen von der Verwendung von Professional Services werden eine Funktion dafür, wie und in welchem Kontext der Daten Controller implementiert, konfiguriert und professional Services und alle Lösungen bereitgestellt von Professional verwendet werden Dienste.<p>Wie bei jedem Dienst unterliegen personenbezogene Daten, die im Dienst gespeichert werden, dem Risiko eines nicht autorisierten Zugriffs oder der nicht beabsichtigten Offenlegung. Die Maßnahmen, die Microsoft ergreift, um solche Risiken zu steuern, werden weiter unten genauer erläutert.</p>|
+| Die vorgesehenen Maßnahmen, um die Risiken, einschließlich Garantien, Sicherheitsmaßnahmen und Mechanismen zum Schutz personenbezogener Daten zu steuern und um die Einhaltung der DSGVO zu demonstrieren, wobei die Rechte und berechtigten Interessen der betroffenen Personen und anderer beteiligter Personen berücksichtigt werden<!--is this the correct ending? -->|Microsoft ist bestrebt, die Sicherheit von Kundeninformationen schützen. Nach Maßgabe von Artikel 32 des der GDPR wird Microsoft wurde implementiert und verwalten, und führen Sie die entsprechende technische und organisatorische Maßnahmen zur Unterstützung und Consulting Daten vor versehentlichen, autorisierte oder gesetzlich schützen Access, Offenlegung, Änderung, Verlust oder Vernichtung.<p>Außerdem hält Microsoft alle sonstigen DSGVO-Vorschriften ein, die für Datenverarbeiter gelten, einschließlich unter anderem Datenschutz-Folgenabschätzungen und Buchführung.</p>|
+|||
+
+<!-- end of table -->
+
+[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
+
+
+#### <a name="learn-more"></a>Weitere Informationen
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
