@@ -1,0 +1,5 @@
+- Intune ist so eingerichtet (einschließlich der Erstellung von Azure AD-Benutzern und -Gruppen), dass die Regeln Ihrer Organisation für Geräte angewendet werden.
+- Sie haben Geräte in Intune registriert, damit die Geräte die von Ihnen erstellten Richtlinien empfangen können.
+- Apps werden Geräten hinzugefügt, damit Ihre Benutzer Zugriff auf die Microsoft 365-Clouddienste Ihrer Organisation erhalten, z. B. Exchange Online und SharePoint Online.
+- Features und Einstellungen werden konfiguriert und mithilfe der erstellten Azure AD-Benutzer und -Gruppen auf Ihre Geräte angewendet. Dazu gehört möglicherweise das Aktivieren von Antiviren-Apps sowie das Einschränken bestimmter Apps.
+- Es sind Compliancerichtlinien vorhanden, damit für ein Gerät eine Firewall oder eine Kennwortlänge erforderlich ist. Wenn Geräte diese Richtlinien nicht erfüllen, greifen bedingte Zugriffsblöcke auf die Daten Ihrer Organisation zu.
