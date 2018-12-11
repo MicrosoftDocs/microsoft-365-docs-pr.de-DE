@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Wo finden Sie Hilfe und Support für die Bereitstellung Ihres modernen Desktops.
 ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 369f07db4e457334900314a2575f2f75cff5ce9c
+ms.sourcegitcommit: fec2c756121006069dc3e5b8dbd6c4abe7a3c63c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201619"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27214423"
 ---
 # <a name="find-help-for-your-modern-desktop-deployment"></a>Hilfe für die Bereitstellung Ihres modernen Desktops erhalten 
 

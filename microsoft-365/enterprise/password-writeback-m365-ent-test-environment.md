@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
 ms.openlocfilehash: 748ccaf8601d9e9564d176f2368e3cc71f926208
-ms.sourcegitcommit: 369f07db4e457334900314a2575f2f75cff5ce9c
+ms.sourcegitcommit: fec2c756121006069dc3e5b8dbd6c4abe7a3c63c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201609"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27214433"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
