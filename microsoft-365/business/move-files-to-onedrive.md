@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Hier erfahren Sie, um Ihre Dateien zu OneDrive zu verschieben.
 ms.openlocfilehash: bef14f1231e73cc6d70f3266913d2bde89447c0a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867821"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business

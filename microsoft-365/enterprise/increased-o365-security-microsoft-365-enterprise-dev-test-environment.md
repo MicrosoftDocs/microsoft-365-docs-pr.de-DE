@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie in diesem Test Lab Guide So aktivieren Sie zusätzliche Einstellungen von Office 365-Sicherheit Ihrer Umgebung für Microsoft 365 Enterprise.
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867826"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Erhöhte Sicherheit von Office 365 für die Microsoft 365 Enterprise-Testumgebung
@@ -46,7 +46,7 @@ In dieser Phase können Sie erhöhte Sicherheit für Office 365 für Ihre Umgebu
 
 Apps, die moderne Authentifizierung nicht unterstützen können nicht angewendet werden, also ein wichtiges Element der Schützen Ihres Microsoft-365-Abonnements und seine digitaler Objekte [Identität und Gerät zugreifen Konfigurationen](microsoft-365-policies-configurations.md) haben. 
 
-1. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
+1. Wechseln Sie zu der Office-Portal ([https://office.com](https://office.com)) und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
     
   - Wenn Sie die einfache Microsoft 365 Test-Umgebung verwenden, melden Sie sich von Ihrem lokalen Computer.
     
@@ -55,10 +55,10 @@ Apps, die moderne Authentifizierung nicht unterstützen können nicht angewendet
 2. Klicken Sie auf der Registerkarte **Microsoft 365 Administrationscenter** auf **Admin**.
 3. Klicken Sie auf der Registerkarte Neu **Microsoft 365 Administrationscenter** auf **Zentriert Admin > SharePoint**.
 4. Klicken Sie auf der Registerkarte Neu **SharePoint Administrationscenter** **Steuerung des Zugriffs**auf.
-5. Klicken Sie unter **Apps, die moderne Authentifizierung nicht unterstützen**, auf **Blockieren > OK**.
+5. Klicken Sie unter **Apps, die moderne Authentifizierung nicht unterstützen**klicken Sie auf **Blockieren**, und klicken Sie dann auf **OK**.
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren Sie die erweiterte Threat Protection (ATP) für SharePoint, OneDrive und Microsoft-Teams
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivieren Sie die erweiterte Schutz) für SharePoint, OneDrive für Unternehmen und die Microsoft-Teams
 
 Office 365 erweiterte Threat Protection (ATP) ist ein Feature von Exchange Online Protection (EOP), mit deren behalten Schadsoftware aus Ihrer e-Mails. Mit ATP Sie Richtlinien erstellen, in der Exchange-Verwaltungskonsole (EAC) oder die Sicherheit und Compliance Center, die sicherstellen, dass Ihre Benutzer greifen Sie auf nur Links oder Anlagen in e-Mails, die als nicht bösartige identifiziert werden. Weitere Informationen finden Sie unter [erweiterte Schutz für sichere Anlagen und sichere Links](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
 

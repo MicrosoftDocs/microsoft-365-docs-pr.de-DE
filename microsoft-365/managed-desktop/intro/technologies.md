@@ -3,14 +3,14 @@ title: Microsoft verwalteter Desktop Technologien
 description: In diesem Thema werden die Technologien und apps im Microsoft verwalteter Desktop verwendet.
 keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867764"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft verwalteter Desktop Technologien
@@ -38,7 +38,7 @@ Skype für Business Online Cloud Nebenstellenanlage | Dieses Feature ist über O
  |
  --- | ---
 Anmeldeinformationen Guard |  Microsoft verwalteter Desktop wird Anleitungen und Verwalten von Cloud-Aspekte dieses Features
-Gerät Guard (Windows Defender Anwendung Steuerelement)   | Microsoft verwalteten Desktops wird die Richtlinie zu erstellen. Kunden werden Signaturen verwalten.
+Gerät Guard (Windows Defender Anwendung Steuerelement) | Microsoft verwalteten Desktops wird die Richtlinie zu erstellen. Kunden werden Signaturen verwalten.
 AppLocker management |  Microsoft verwalteten Desktops wird die Richtlinie zu erstellen. Kunden werden Signaturen verwalten.
 Application Virtualization (App-V) |    Microsoft verwalteter Desktop unterstützt diese Art der Bereitstellung nicht, wie es auf Intune nicht unterstützt wird.
 Benutzer-Erlebnis Virtualisierung (UE-V) | Dies wird nicht mit Microsoft verwalteter Desktop verwalteten Geräten verwendet.

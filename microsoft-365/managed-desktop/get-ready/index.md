@@ -3,14 +3,14 @@ title: Vorbereiten auf die Registrierung in Microsoft Managed Desktop
 description: ''
 keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 06/06/2018
-ms.openlocfilehash: f7db2166fdfea8f99a6b01b6870861d3a2abf2d6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3de3621d8b2f132201af352756d9d2b63f7a2f51
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867729"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Vorbereiten auf die Registrierung in Microsoft Managed Desktop

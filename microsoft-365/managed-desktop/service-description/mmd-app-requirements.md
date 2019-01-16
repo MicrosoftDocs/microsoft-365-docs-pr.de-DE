@@ -5,12 +5,12 @@ keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 71952a8b073f002890cc95883e717aeb04c0cd68
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/08/2019
+ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867543"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft verwalteter Desktop-app-Anforderungen
@@ -33,14 +33,19 @@ Microsoft verwalteter Desktop verwendet Intune, Microsoft Store und Microsoft St
 
 Bestimmte Anwendungstypen dürfen nicht auf verwaltete Microsoft-Desktop-Geräten:
 - 3. Partei Antivirus, Sicherheit oder Audit-software
+- 3. Partei Webbrowser
 - Versionen von Microsoft Office, bevor Sie Office 365 Pro Plus
 - Anwendungen, die installieren oder andere 3. Software von Drittanbietern Verpacken
 
 ## <a name="restricted-app-behaviors"></a>Eingeschränkte app Verhaltensweisen
 
-Bestimmte Verhaltensweisen Anwendung werden entweder kann so stark beeinträchtigt bei Benutzererlebnis oder an Microsoft verwalteter Desktop Geräte ein Sicherheitsrisiko darstellen. Applikationen darf nicht die folgenden Verhaltensweisen oder Merkmale aufweisen: 
+Bestimmte Anwendung Verhaltensweisen werden so stark beeinträchtigt bei Benutzeroberfläche oder an Microsoft verwalteter Desktop Geräte ein Sicherheitsrisiko darstellen können. Applikationen darf nicht die folgenden Verhaltensweisen oder Merkmale aufweisen: 
+
+Benutzeroberfläche:
 - Installieren Sie Hintergrunddienste oder erzeugen langer Hintergrundprozesse
 - Hinzufügen von selbst zu den Windows-Startpfad
+
+Sicherheit:
 - Rufen Sie nicht dokumentierte Windows- oder Office-APIs oder internen Datenstrukturen Windows- oder Office übernehmen Abhängigkeiten
 - Fungieren Sie als app-Store oder über die integrierte Erweiterungsmanager
 - Der Endbenutzer Berechtigungen ausweiten

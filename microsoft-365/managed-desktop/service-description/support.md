@@ -5,17 +5,17 @@ keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
-ms.openlocfilehash: 7e551e51c3ea972f69c24bcb1994e13f0f7342f0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 11/7/2018
+ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867950"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Unterstützung für Microsoft Managed Desktop
 
-Microsoft verwalteter Desktop Geräte werden verwaltet werden und repariert oder von Microsoft bei Bedarf ersetzt. Microsoft stellt proaktive und reaktive Problemmanagement bereit. Microsoft verfolgt Vorfälle im Microsoft verwalteter Desktop Admin-Portal. Sie werden gemäß der [Definition des Schweregrads](#severity-definitions)eingeteilt. 
+Verwalteter Microsoft-Desktop-Geräte werden verwaltet werden und repariert oder von Microsoft gemäß den Anweisungen in Garantie Vereinbarung ersetzt. Microsoft stellt proaktive und reaktive Problemmanagement bereit. Microsoft verfolgt Vorfälle im Microsoft verwalteter Desktop Admin-Portal. Sie werden gemäß der [Definition des Schweregrads](../working-with-managed-desktop/admin-support.md#sev)eingeteilt.
 
 Kunden können Microsoft verwalteter Desktop Vorgänge für wenden Sie sich an:
 - Anfragen nach Informationen auf modernen Arbeitsplatz als Dienst Mandanten oder Konfiguration
@@ -39,10 +39,10 @@ Unterstützte Produkte:
 
 Ausführliche Informationen zu unterstützen:
 
-- Aktuell: Nordamerika und nur Großbritannien (24 x 7 x 365) 
+- Aktuell: Nordamerika, Großbritannien und nur Australien (24 x 7 x 365) 
 - Englisch ist die einzige unterstützte Sprache für Telefon- und Chat Gespräche mit Kunden 
 - Wir sind, eine Partnerschaft nicht ersetzen, Helpdesk Ihrer Firmen; Line-of-Business (LOB) apps, die Ressourcen des Umkreisnetzwerks usw. werden von den Helpdesk weiterhin behandelt. 
-- Verwalteter Desktop nicht-Microsoft-Geräte sind außerhalb des Gültigkeitsbereichs 
+- Microsoft verwalteten Geräten, die in Testgeräte anrufen und nicht - Microsoft verwalteter Desktop sind außerhalb des Gültigkeitsbereichs 
 
 ## <a name="hardware-replacement"></a>Austausch von Hardware
 

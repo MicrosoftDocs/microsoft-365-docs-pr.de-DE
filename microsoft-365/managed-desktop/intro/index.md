@@ -3,14 +3,14 @@ title: Wird von Microsoft verwalteten Desktops für Sie
 description: ''
 keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: e1ad05e09f4f21642169fd330e05c9eaefbcc493
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b99c860fe7075f2a9f4f76938bebabf28833bf0
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868078"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?

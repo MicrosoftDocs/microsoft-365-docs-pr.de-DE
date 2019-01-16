@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
 ms.openlocfilehash: 21a4198c688e1865a029f18ff3ceeb2155d419e4
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868093"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Schritt 1: Vorbereiten Ihrer Organisation auf Windows 10 Enterprise
@@ -42,9 +42,9 @@ Verwenden Sie den entsprechenden Wert in der nachfolgenden Tabelle, wenn Sie die
 | Ebene | Gesammelte Daten | Wert |
 |:--- |:--- |:--- |
 | Sicherheit | Nur Sicherheitsdaten. | 0 |
-| Standard | Sicherheitsdaten sowie grundlegende System- und Qualitätsdaten. | 1  |
-| Erweitert | Sicherheitsdaten, grundlegende System- und Qualitätsdaten, erweiterte Einblicke sowie erweiterte Zuverlässigkeitsdaten. | 2  |
-| Vollständig | Sicherheitsdaten, grundlegende System- und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3  |
+| Standard | Sicherheitsdaten sowie grundlegende System- und Qualitätsdaten. | 1 |
+| Erweitert | Sicherheitsdaten, grundlegende System- und Qualitätsdaten, erweiterte Einblicke sowie erweiterte Zuverlässigkeitsdaten. | 2 |
+| Vollständig | Sicherheitsdaten, grundlegende System- und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3 |
 
 Sie können die Diagnosedaten über eine der folgenden Methoden aktivieren:
 

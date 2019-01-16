@@ -3,14 +3,14 @@ title: Arbeiten mit Microsoft Managed Desktop
 description: ''
 keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 06/06/2018
-ms.openlocfilehash: 8a5f83967f2d311e1b212fbd2bf8487d4e93706a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b7ac8944235112ebd88bcbe4e35b971912b656e7
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868095"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Arbeiten mit Microsoft Managed Desktop

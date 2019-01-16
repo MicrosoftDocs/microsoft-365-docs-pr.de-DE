@@ -3,14 +3,14 @@ title: Hinzufügen von Admin-Kontakten Verwaltungsportal von Microsoft verwaltet
 description: Teilen Sie uns mit, die für die einzelnen Bereiche des Fokus wenden Sie sich an.
 keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 65dd8709c469826e2696015c13823c58eb10e342
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867738"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Hinzufügen von Admin-Kontakten in verwalteten Desktops Verwaltungsportal von Microsoft
@@ -25,11 +25,11 @@ Verwaltete Desktops Verwaltungsportal von Microsoft erfordert, dass Personen den
 - Abrechnungsadministrator
 - Dienstadministrator-Unterstützung
 
-Weitere Informationen zu diesen Rollen und Zuweisen dieser in Azure AD finden Sie unter [Rolle Administratorberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+Der globale Administrator muss demjenigen, der den Kunden in Microsoft verwalteter Desktop zu registrieren.  Alle fünf Rollen haben den gleichen Zugriff innerhalb der Verwaltungsportals zum Initiieren und Anzeigen von Aufgaben.  Weitere Informationen zum Zuweisen von Rollen in Azure Active Directory finden Sie unter [Rolle Administratorberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-focus-areas"></a>Kontakt Schwerpunkte Admin
 
-Admin Kontakte sollte die beste Person oder Gruppe, die Fragen beantworten und treffe für unterschiedliche Schwerpunkte kann. Diese Bereiche umfassen:
+Admin Kontakte sollte die beste Person oder Gruppe, die Fragen beantworten und treffe für unterschiedliche Schwerpunkte kann.  Microsoft verwalteten Desktops Operations kontaktiert diese Kontakte Admin für Fragen im Zusammenhang mit Supportanfragen durch den Kunden abgelegt.  Diese Kontakte Admin erhält Benachrichtigungen für Support Anforderung Updates und neuen Nachrichten.  Diese Bereiche umfassen:
 
 Fokusbereich | Bei Fragen zu
 --- | ---

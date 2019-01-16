@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Verwenden Sie diese Schritte, um globale Administratorkonten in Ihrer unternehmensumgebung Microsoft 365 Test zu schützen.
-ms.openlocfilehash: 233e2178b060df4950c340e034d5f51216fac8fb
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867582"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Schützen von Konten in Ihrer unternehmensumgebung Microsoft 365 Test globaler administrator
@@ -48,7 +48,7 @@ Wenn Sie in einer simulierten Enterprise globaler Administrator Kontoschutz test
 
 Erstellen Sie zunächst eine Richtlinie Office 365-Cloud-App-Sicherheit, um globaler Administrator Kontoaktivitäten überwachen und Senden von Benachrichtigungen an die e-Mail-Adresse des globalen Administratorkontos. 
 
-1. Melden Sie sich bei Office 365-Portal unter [http://portal.office.com](http://portal.office.com) mit Ihrer globalen Administratorkonto an.
+1. Melden Sie sich bei der Office-Portal unter [http://portal.office.com](http://portal.office.com) mit Ihrer globalen Administratorkonto an.
 2. Klicken Sie auf die Kachel " **Admin** ". Klicken Sie auf die Registerkarte **Office Admin Center** auf **Zentriert Admin > Sicherheit und Compliance**.
 3. Klicken Sie im linken Navigationsbereich auf **Warnungen > Erweiterte Warnungen verwalten**.
 4. Klicken Sie auf der Seite **Erweiterte Warnungen verwalten** auf **Office 365 Cloud App Security aktivieren**, und klicken Sie dann auf **Zu Office 365 Cloud App Security wechseln**.

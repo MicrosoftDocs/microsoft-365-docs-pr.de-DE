@@ -3,7 +3,7 @@ title: Klassifizierung von Daten für Ihr Unternehmen der Microsoft 365 test Env
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,16 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Lab Guide erstellen und Verwenden von Office 365 Etiketten auf Dokumente in Ihrer testumgebung Microsoft 365 Enterprise.
-ms.openlocfilehash: 718cf038d88f1431ec6ca6fce1554d4f44dc1cb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868173"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Klassifizierung von Daten für Ihr Unternehmen der Microsoft 365 test Environment.
 
-Mit den Anweisungen in diesem Artikel konfigurieren Sie mithilfe von Office 365 Bezeichnungen in Ihrer unternehmensumgebung Microsoft 365 Test Datenklassifikation.
+Mit den Anweisungen in diesem Artikel konfigurieren Sie mithilfe von Office 365 Aufbewahrung Bezeichnungen in Ihrer unternehmensumgebung Microsoft 365 Test Datenklassifikation.
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -39,17 +39,17 @@ Wenn Sie Office 365 Bezeichnungen in einer simulierten Enterprise konfigurieren 
 
 ## <a name="phase-2-create-office-365-labels"></a>Phase 2: Erstellen von Office 365-Bezeichnungen
 
-In dieser Phase erstellen Sie die Beschriftungen für unterschiedlichen Sicherheitsebenen für SharePoint Online Dokumente Ordner.
+In dieser Phase erstellen Sie die Beschriftungen für die verschiedenen Berechtigungsstufen Aufbewahrung für SharePoint Online Dokumente Ordner.
   
-1. Bei Bedarf eine private Instanz des Internetbrowsers verwenden, und melden Sie sich mit Ihrer globalen Administratorkonto an Office 365-Portal. Hilfe finden Sie unter [Where zur Anmeldung bei Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Falls erforderlich, verwenden Sie eine private Instanz des Internetbrowsers, und melden Sie sich das Office-Portal mit Ihrer globalen Administratorkonto an. Hilfe finden Sie unter [Where zur Anmeldung bei Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie auf der Registerkarte **Microsoft Office Home** auf die Kachel **Admin**.
     
 3. Klicken Sie auf der neuen Registerkarte **Office Admin Center** im Browser auf **Admin Center > Security &amp; Compliance**.
     
-4. Klicken Sie auf der neuen Registerkarte **Start - Security &amp; Compliance** im Browser auf **Klassifizierungen > Bezeichnungen**.
+4. Von der neuen **Home - Sicherheit &amp; Compliance** Registerkarte des Browsers, klicken Sie auf **Klassifikationen > Etiketten**. Aus der **Home > Etiketten** Bereich, klicken Sie auf der Registerkarte **Archivierung** .
     
-5. Klicken Sie im Bereich **Start > Bezeichnungen** auf **Bezeichnung erstellen**.
+5. Klicken Sie auf **eine Beschriftung erstellen**.
     
 6. Geben Sie im Bereich **Name für Bezeichnung** **Intern Öffentlich** ein, und klicken Sie dann auf **Weiter**.
     
@@ -83,13 +83,13 @@ In dieser Phase erstellen Sie die Beschriftungen für unterschiedlichen Sicherhe
 
 Beachten Sie, dass es ein paar Minuten für die Beschriftungen zu veröffentlichenden dauern kann.
 
-## <a name="phase-3-apply-office-365-labels-to-documents"></a>Phase 3: Office 365 Etiketten auf Dokumente anwenden
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Phase 3: Office 365 Aufbewahrung Etiketten auf Dokumente anwenden
 
 In dieser Phase ermitteln das Standardverhalten für die Beschriftung für Dateien im Ordner "Dokumente" einer SharePoint Online-Website und Manuelles Ändern der Beschriftung eines Dokuments.
 
 Erstellen Sie zunächst eine Sensitive-Ebene SharePoint Online-Teamwebsite:
   
-1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich mit einem Browser auf dem lokalen Computer an, in das Office-Portal mit Ihrem Konto globaler Administrator. Hilfe finden Sie unter [Where zur Anmeldung bei Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -109,7 +109,7 @@ Konfigurieren Sie anschließend den Dokumentenordner der Teamwebsite SensitiveFi
   
 1. Klicken Sie auf der Registerkarte **SensitiveFiles** Ihres Browsers auf **Dokumente**.
     
-2. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
+2. Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
     
 3. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
@@ -125,13 +125,13 @@ Im nächsten Schritt erstellen Sie ein neues Dokument auf der Website SensitiveF
     
 4. Klicken Sie auf das Word-Symbol neben dem Dateinamen **Document.docx** .
     
-5. Beachten Sie im rechten Bereich, in den Abschnitt **Eigenschaften** unter **Übernehmen Label**, dass das Dokument die Bezeichnung des **vertrauliche** automatisch angewendet wurde.
+5. Beachten Sie im rechten Bereich, in den Abschnitt **Eigenschaften** unter **Übernehmen Aufbewahrung Label**, dass das Dokument die Bezeichnung des **vertrauliche** automatisch angewendet wurde.
     
 6. Klicken Sie auf **alle zu bearbeiten**.
     
 7. Wählen Sie im Bereich **Document.docx** unter **Übernehmen Beschriftung**die **Streng vertraulich** Beschriftung, und klicken Sie dann auf **Speichern**.
 
-Finden Sie im Schritt [Configure Klassifizierung für Ihre Umgebung](data-classification-microsoft-365-enterprise-dev-test-environment.md) in der Phase **Information Protection** Informationen und Links zu Office 365 Bezeichnungen in der Produktion.
+Finden Sie im Schritt [Configure Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md) in der Phase **Information Protection** Informationen und Links zu Office 365 Aufbewahrung Bezeichnungen in der Produktion.
 
 ## <a name="next-step"></a>Nächster Schritt
 

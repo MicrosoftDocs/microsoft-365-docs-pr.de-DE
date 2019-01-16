@@ -14,10 +14,10 @@ ms.custom:
 - Ent_TLGs
 description: Konfigurieren von Azure AD-Schutz und analysieren Sie die aktuellen Konten in Ihrer testumgebung Microsoft 365 Enterprise.
 ms.openlocfilehash: 165667ad2122839336ef0790ab5661cff53ca32b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867643"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD-Schutz für Ihr Unternehmen der Microsoft 365 test Environment.

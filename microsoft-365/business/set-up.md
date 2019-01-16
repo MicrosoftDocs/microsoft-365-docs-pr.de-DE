@@ -21,10 +21,10 @@ search.appverid:
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Erfahren Sie, wie Microsoft 365 Business einrichten, indem Sie vier Schritte ausführen.
 ms.openlocfilehash: f57239b884bd2e186c0bc01973130a10fa4cfe84
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867565"
 ---
 # <a name="set-up-microsoft-365-business-by-using-the-setup-wizard"></a>Einrichten von Microsoft 365 Business mithilfe des Setup-Assistenten

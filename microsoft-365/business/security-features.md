@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informationen Sie zu den Sicherheitsfeatures, die im Lieferumfang von Microsoft 365 Business.
-ms.openlocfilehash: bfddb419dbe5db441741a73ecb49e3d52649e382
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867871"
 ---
 # <a name="microsoft-365-business-security-features"></a>Microsoft 365 Business Sicherheitsfeatures
@@ -130,11 +130,9 @@ Die Möglichkeit, die folgenden Einschränkungen gelten beim Senden von e-Mails 
 
 So überprüfen, dass per aktiviert ist:
 
-1. Melden Sie sich bei [Azure Active Directory-Verwaltungskonsole](https://portal.azure.com/).
+1. Melden Sie sich bei [Azure-Portal](https://portal.azure.com/).
 
-    Sie können auch Optimierung, suchen **Admin zentriert** \> **Azure Active Directory** im linken Navigationsbereich in der Verwaltungskonsole.
-
-2. Wählen Sie **alle Dienste** und Tyoe in *Azure Information Protection* in das **Feld Suchen**ein.
+2. Wählen Sie **alle Dienste** und Typ in *Azure Information Protection* in das **Feld Suchen**ein.
 
 3. Nachdem die Ergebnisse anzeigen möchten, klicken Sie auf den Anfang weiter, um den **Schutz von Azure Informationen** zu vereinfachen Favoriten und später einfach zu finden.
 
@@ -144,7 +142,7 @@ So überprüfen, dass per aktiviert ist:
 
 Zum Anzeigen und ändern, Etiketten den vorhandenen:
 
-1. Wählen Sie auf das Dashboard Azure Information Protection **Klassifikationen** \> ** Beschriftungen. <br/>![Standard Bezeichnungen für Azure Information Protection.](media/AIPLabels.png)
+1. Wählen Sie auf das Dashboard Azure Information Protection **Klassifikationen** \> **Beschriftungen**. <br/>![Standard Bezeichnungen für Azure Information Protection.](media/AIPLabels.png)
 
 2. Sie können eine beliebige Beschriftung zum Anzeigen von Optionen auswählen, können Sie den Anzeigenamen, Farben usw. ändern.
  
@@ -159,6 +157,16 @@ So installieren den Client per manuell:
 2. Sie können überprüfen, ob die Installation erfolgreich war, dass ein Word-Dokument anzeigen und sicherstellen, dass die Option **Protect** auf der Registerkarte **Start** verfügbar ist. <br/>![Schutzregisterkarte Dropdown-Liste in einem Word-Dokument.](media/Word_Protect.png)
 
 Weitere Informationen finden Sie unter [Installieren des Clients](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## <a name="go-to-intune-admin-center"></a>Navigieren Sie zum Intune Administrationscenter
+
+1. Melden Sie sich bei [Azure-Portal](https://portal.azure.com/).
+
+2. Wählen Sie **alle Dienste** , und geben im *Intune* in das **Feld Suchen**ein.
+
+3. Nachdem die Ergebnisse anzeigen möchten, klicken Sie auf den Anfang weiter, um **Microsoft Intune** zu vereinfachen Favoriten und später einfach zu finden.
+ 
+Intune können Sie registrieren und die Geräte Ihrer Organisation verwalten. Weitere Informationen finden Sie unter [Funktionen von Registrierungsmethode für Windows-Geräte](https://docs.microsoft.com/intune/enrollment-method-capabs) und die [Registrierungsoptionen für Geräte, die von Intune verwaltet werden](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
 
@@ -174,15 +182,4 @@ Ja, stehen diese Funktionen in allen Märkten, auf dem Microsoft 365 Business ve
     
     ![Wählen Sie im linken Navigationsbereich in der Verwaltungskonsole Microsoft 365 Admin Center aus.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Wählen Sie **Sicherheit &amp; Compliance** So wechseln zur Sicherheit &amp; Compliance Center. 
-    
- ### <a name="how-do-i-find-the-intune-admin-center"></a>Wie finde ich das Intune Administrationscenter?
-  
-  
-1. [Melden Sie sich bei Microsoft 365 Business](https://portal.microsoft.com/) mit Ihren Administratoranmeldeinformationen. 
-    
-2. Klicken Sie im linken Navigationsbereich **Admin zentriert** suchen und dieses erweitern. 
-    
-3. Wählen Sie **Intune** um Intune Admin Center zu wechseln. 
-    
-
+3. Wählen Sie **Sicherheit &amp; Compliance** So wechseln zur Sicherheit &amp; Compliance Center.

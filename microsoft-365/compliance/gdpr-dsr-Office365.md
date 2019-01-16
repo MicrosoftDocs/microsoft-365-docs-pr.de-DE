@@ -240,9 +240,9 @@ In diesem Beispiel werden E-Mail-Nachrichten zurückgegeben, die die angegebenen
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Arbeiten mit teilweise indizierten Elemente in der Inhaltssuche
 
-Teilweise indizierte Elemente (auch als *nicht indizierte Elemente*) sind Exchange Online-Postfachelemente und Dokumente in SharePoint Online- und OneDrive for Business-Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden, was bedeutet, dass Sie nicht mithilfe der Inhaltssuche durchsucht werden können. Die meisten E-Mail-Nachrichten und Websitedokumente werden erfolgreich indiziert, da sie innerhalb der [Indizierungsgrenzwerte für Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??) liegen. Die Gründe dafür, dass E-Mail-Nachrichten oder Dateien für die Suche nicht indiziert werden, umfassen folgende:
+Teilweise indizierte Elemente (auch als *nicht indizierte Elemente*) sind Exchange Online-Postfachelemente und Dokumente in SharePoint Online- und OneDrive for Business-Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden, was bedeutet, dass Sie nicht mithilfe der Inhaltssuche durchsucht werden können. Die meisten E-Mail-Nachrichten und Websitedokumente werden erfolgreich indiziert, da sie innerhalb der [Indizierungsgrenzwerte für Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??) liegen. Die Gründe dafür, dass E-Mail-Nachrichten oder Dateien für die Suche nicht indiziert werden, umfassen folgende:
 
--   Der Dateityp wird [für die Indizierung nicht erkannt oder nicht unterstützt](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??); in einigen Fällen wird der Dateityp für die Indizierung jedoch unterstützt, aber ein Indizierungsfehler ist für eine bestimmte Datei aufgetreten.
+-   Der Dateityp wird [für die Indizierung nicht erkannt oder nicht unterstützt](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??); in einigen Fällen wird der Dateityp für die Indizierung jedoch unterstützt, aber ein Indizierungsfehler ist für eine bestimmte Datei aufgetreten.
 
 -   E-Mail-Nachrichten verfügen über eine angefügte Datei ohne einen gültigen Handler, wie Bilddatei (dies ist die häufigste Ursache für teilweise indizierten E-Mail-Elemente).
 
@@ -250,7 +250,7 @@ Teilweise indizierte Elemente (auch als *nicht indizierte Elemente*) sind Exchan
 
 Es wird empfohlen, dass Sie mehr über teilweise indizierte Elemente in Erfahrung bringen, damit Sie bei der Beantwortung von Anforderungen betroffener Personen mit ihnen arbeiten können. Weitere Informationen finden Sie unter:
 
--   [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
+-   [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)
 
 -   [Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 

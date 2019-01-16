@@ -18,10 +18,10 @@ search.appverid:
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Informationen zum Verwalten von Microsoft 365 Business weiterführende Administratoraufgaben, mobile Geräte, Windows 10PCs und viele Aufgaben.
 ms.openlocfilehash: 280bff9f12a884e6a19e26feea5d8a339297a434
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867662"
 ---
 # <a name="manage-microsoft-365-business"></a>Verwalten von Microsoft 365 Business

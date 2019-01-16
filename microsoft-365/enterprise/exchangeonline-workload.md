@@ -11,11 +11,11 @@ ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 description: Führen Sie durch den Prozess der Planung, Rollout und den Wert der Exchange Online in Microsoft 365 Enterprise in Ihrer Organisation gesteuert.
-ms.openlocfilehash: 36b24290acd4467400eab86b4c2760ccad65deab
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868181"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Stellen Sie Exchange Online für Microsoft 365 Enterprise bereit
@@ -29,7 +29,7 @@ Wenn Sie mit Exchange Online sind, finden Sie unter [Microsoft Exchange Online](
 Die folgenden Phasen und Schritte führen Sie durch den Prozess von der Rolle von Exchange Online in Ihrer Organisation, Onboarding Ihrer Organisation zu Exchange Online über eine Reihe von schrittweisen Einführungen Entwurfsprozess und fördern der Verwendung von Exchange Online und seine der Wert für die Endbenutzer.
 
 >[!Note]
->Nur, nachdem Sie Ihre [Foundation-Infrastruktur](deploy-foundation-infrastructure.md) für Microsoft 365 Enterprise abgeschlossen haben, sollte diese Bereitstellung Anweisungen folgen.
+>Diese Anweisungen Bereitstellung sollte erst nach Abschluss der Microsoft 365 Foundation Unternehmensinfrastruktur [Phase 2-Identity](identity-infrastructure.md) folgen.
 >
 
 ## <a name="phase-1-envision"></a>Phase 1: Betrachten
@@ -38,7 +38,7 @@ In dieser Phase sammeln Sie die Personen für Ihre Bereitstellung von Exchange O
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Schritt 1: Sammeln der Mitglieder einer Exchange Online-Bereitstellung
 
-Für eine erfolgreiche Bereitstellung von Exchange Online auf der Microsoft 365 [Foundation-Infrastruktur](deploy-foundation-infrastructure.md)müssen Sie die richtigen Personen für Eingabe- und Feedback erhalten. Wichtige Personen gehören Entscheidungsträger, IT-Mitarbeiter wie konstruiert und Implementierer und Fürsprecher für die Endbenutzer. 
+Für eine erfolgreiche Bereitstellung von Exchange Online auf der Basis der Microsoft 365 Foundation Unternehmensinfrastruktur [Phase 2-Identität](identity-infrastructure.md) müssen Sie die richtigen Personen für Eingabe- und Feedback erhalten. Wichtige Personen gehören Entscheidungsträger, IT-Mitarbeiter wie konstruiert und Implementierer und Fürsprecher für die Endbenutzer. 
 
 Diese drei Gruppen stellen Sie sicher, dass Ihre Exchange Online Bereitstellung Aspekte das aufgelistet geschäftlichen Anforderungen, technische Aspekte der Migration von Postfächern und Sicherheit und umfasst, dass das Ergebnis etwas wird, die die meisten Benutzer verwenden.
 
@@ -74,7 +74,7 @@ Eine Liste mit Exchange Online Situationen, in denen der Anforderungen Ihrer Org
 
 In dieser Phase für den technischen Aspekten der Exchange Online-Bereitstellung planen und einführungsmethoden für ausgewählte Gruppen von Benutzern zu starten.
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a>Voraussetzungen: Konfiguration des Zugriffs durch Identität und Geräte
+### <a name="prerequisites-identity-and-device-access-configuration"></a>Voraussetzungen: Konfigurationen für den Identitäts- und Gerätezugriff
 
 Um Zugriff auf Exchange Online-Postfächer zu schützen, stellen Sie sicher, dass Sie die [Identität und Gerät RAS-Richtlinien](identity-access-policies.md) und die [empfohlene Richtlinien für den Exchange Online](secure-email-recommended-policies.md)konfiguriert haben.
 
@@ -86,7 +86,7 @@ Wenn Sie Ihre eigene Planung ausführen oder in Verbindung mit der schnelle, mü
 
 Verwenden Sie diese Ressourcen, um für den technischen Aspekten der Exchange Online-Rollout vorzubereiten: 
 
-- [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Office 365 e-Mail-Migration advisor](https://portal.office.com/onboarding/mailsetupadvisor#/) (muss bei Ihrem Office 365-Abonnement angemeldet sein)
 - [Zusammenarbeit in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Empfänger in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -165,7 +165,7 @@ Nach der Einführung der Exchange Online in der gesamten Organisation, müssen S
 Nachfolgend finden Sie einige Vorschläge:
 
 - Weitere Informationen zu allgemeinen bewährten Methoden für die Einführung von Clouddiensten finden Sie im [Office 365-Einführungsleitfaden](https://aka.ms/successfactors). 
-- Informationen zur Office 365-Dienstnutzung in Ihrer Organisation finden Sie unter [Office 365-Aktivitätsberichte](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263). Wenn Sie kein globaler Administrator für Office 365 für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
+- Informationen zur Office 365-Dienstnutzung in Ihrer Organisation finden Sie unter [Office 365-Aktivitätsberichte](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Wenn Sie kein globaler Administrator für Office 365 für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
 - Überwachen Sie Ihr Feedback Veranstaltungsort (einen öffentlichen Kanal in einem zentralen Teams Team- oder Yammer) Informationen zu Problemen und Feedback von Personen zu ihren Erfahrungen mit Exchange Online. Beheben Sie so schnell wie möglich, um zu verhindern, dass frustrierte Einzelpersonen und demonstrieren die Unterstützung für das Rollout Fragen und Probleme.
 - Identifizieren und Champions in jeder Gruppe Business Mentorenprogramme und markieren Sie ihre erreichten und bewährte Methoden, die mit Exchange Online. Entsprechend ihren Erfolge, für die Organisation Projekterfolg und Annahme anzeigen. Billigung durch technischen Leiter innerhalb einer Unternehmensgruppe kann einen starken Einfluss über Führungskräfte und Peers ausüben.
 
