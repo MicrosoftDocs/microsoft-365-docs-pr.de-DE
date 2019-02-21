@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051086"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122245"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurierbare Einstellungen – Microsoft Managed Desktop
 
@@ -64,7 +64,7 @@ Alle konfigurierbaren Einstellungen werden mithilfe des Microsoft Managed Deskto
 - **Verfolgen des Fortschritts** – Nachverfolgen des Status nach der Bereitstellung der Änderung. Der Status ändert sich **in in Bearbeitung**und wird dann **abgeschlossen**oder **fehlgeschlagen**. Wenn eine Bereitstellung fehlschlägt, wird automatisch eine Supportanforderung für Microsoft Managed Desktop-Vorgänge geöffnet, um das Problem zu untersuchen.  
 - **Siehe Version deployed** – jede bereitgestellte Änderung hat eine Versionsnummer.
 - **Änderungen rückgängig** machen – beim Rückgängigmachen einer Änderung wird die aktuelle Bereitstellung angehalten, und alle Ringe werden auf die letzten Änderungen zurückgesetzt, die für alle Ringe bereitgestellt wurden. Sie setzen zurück auf den Wert für die letzte bekanntermaßen gute Einstellung.
-- **Validatie cahnges** -nachdem die Bereitstellung abgeschlossen ist, überprüfen Sie, ob die Änderungen wie erwartet angewendet wurden.  
+- **Änderungen überprüfen** – nachdem die Bereitstellung abgeschlossen ist, überprüfen Sie, ob die Änderungen wie erwartet angewendet wurden.  
 
 Wenn eine Bereitstellung fehlgeschlagen ist oder Sie eine Änderung nicht rückgängig machen können, [Öffnen Sie eine Supportanfrage](admin-support.md) mit Microsoft Managed Desktop Operations. 
 
