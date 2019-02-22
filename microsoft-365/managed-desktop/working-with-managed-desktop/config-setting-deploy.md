@@ -5,13 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, Dokumentation, Depl
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
-ms.openlocfilehash: fd0e0750332fa8f650cfc4756f8eb108be2a71df
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.date: 2/17/2019
+ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
+ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051126"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175777"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -24,9 +24,9 @@ Dies sind die Statuen, die für jede Bereitstellung angezeigt werden.
 Status  | Erläuterung 
 --- | --- 
 Bereitstellen | Ihre Änderung wartet auf die Bereitstellung für diesen Ring.
-In Bearbeitung | Die Änderung wird auf Geräte in diesem Ring angewendet. 
-Vollständig | Die Änderung wird auf Geräte in diesem Ring angewendet. 
-Failed | Die Änderung ist bei 10 Prozent der Geräte im Ring fehlgeschlagen, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanforderung wird automatisch mit Microsoft Managed Desktop-Vorgängen geöffnet, um die Bereitstellung zu behandeln. 
+In Bearbeitung | Die Änderung wird auf aktive Geräte in diesem Ring angewendet. 
+Vollständig | Die Änderung, die für alle aktiven Geräte in diesem Ring abgeschlossen wurde. 
+Failed | Die Änderung ist bei 10 Prozent der aktiven Geräte im Ring fehlgeschlagen, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanforderung wird automatisch mit Microsoft Managed Desktop-Vorgängen geöffnet, um die Bereitstellung zu behandeln. 
 Zurückgesetzt | Die Änderung wurde auf die letzte Änderung zurückgesetzt, die erfolgreich für alle Bereitstellungs Ringe bereitgestellt wurde.
 
 ## <a name="deploy-changes"></a>Bereitstellen von Änderungen
