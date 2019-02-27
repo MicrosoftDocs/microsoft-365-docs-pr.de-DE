@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993226"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303640"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
@@ -106,11 +106,11 @@ Konfigurieren Sie als Nächstes Azure AD Connect auf APP1 für das Rückschreibe
 
 4. Wählen Sie auf der Seite **Weitere Aufgaben** die Option **Synchronisierungsoptionen anpassen** aus, und klicken Sie dann auf **Weiter**.
 
-5. Geben Sie auf der Seite **Mit Azure AD verbinden** die Kontoanmeldeinformationen für User1 ein, und klicken Sie dann auf **Weiter**.
+5. Geben Sie auf der Seite **Mit Azure AD verbinden** die Anmeldeinformationen für das globale Administratorkonto ein, und klicken Sie dann auf **Weiter**.
 
 6. Klicken sie auf den Seiten **Verzeichnisse verbinden** und **Domänen-/OE-Filterung** auf **Weiter**.
 
-7. Wählen Sie auf der Seite **Optionale Funktionen** die Option **Kennwortrückschreiben** aus, und klicken Sie auf „Weiter“. 
+7. Wählen Sie auf der Seite **Optionale Funktionen** die Option **Kennwortrückschreiben** aus, und klicken Sie auf **Weiter**. 
 
 8. Klicken Sie auf der Seite **Bereit zum Konfigurieren** auf **Konfigurieren** und warten Sie, bis der Vorgang abgeschlossen ist.
 
@@ -129,7 +129,7 @@ Diese Konfiguration besteht aus:
 - Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements mit der Windows Server AD-Domäne TESTLAB zu synchronisieren. 
 - Kennwortrückschreiben ist aktiviert, damit Benutzer ihre Kennwörter über Azure Active Directory ändern können, ohne mit dem vereinfachten Intranet verbunden sein zu müssen.
 
-Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-password-writeback.md) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren des Kennwortrückschreibens in der Produktion.
+Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-password-reset.md#identity-pw-writeback) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren des Kennwortrückschreibens in der Produktion.
 
 ## <a name="next-step"></a>Nächster Schritt
 
