@@ -6,21 +6,21 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/27/2019
-ms.openlocfilehash: 9ce6eca8ffcb243b819c22078c4729df4bc2881e
-ms.sourcegitcommit: e13dafb5d6004aaadd92333e5023ae09e713e3a4
+ms.openlocfilehash: d2b5fe34825d44e71a54a895c3de2455eeeeaee1
+ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313780"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340095"
 ---
 # <a name="get-started-using-microsoft-managed-desktop-devices"></a>Erste Schritte mit Microsoft Managed Desktop-Geräten
 
 Microsoft Managed Desktop-Geräte sind mit der aktuellen Version von Windows vorkonfiguriert. Konfigurationen und apps werden aus der Cloud installiert, sobald der Benutzer das Gerät eingerichtet hat. 
  
-Es gibt nur ein paar Schritte, die ein Benutzer während der Einrichtung ausführen muss, um mit seinem Gerät produktiv zu sein. Microsoft Managed Desktop empfiehlt *die Verwendung von erste Schritte mit Ihrem Geräte* Handbuch, das unten verknüpft ist. Dieses herunterladbare Handbuch enthält grundlegende Anweisungen zum Einrichten eines neuen Microsoft Managed Desktop-Geräts. Wir haben dieses Handbuch als Basis für IT-Administratoren entworfen. Verwenden Sie es, oder aktualisieren Sie es, um Schritte oder Informationen hinzuzufügen, die Ihren Benutzern helfen, Ihre Geräte einzurichten. 
+Es gibt nur ein paar Schritte, die ein Benutzer während der Einrichtung ausführen muss, um mit seinem Gerät produktiv zu sein. Microsoft Managed Desktop empfiehlt *die Verwendung von "erste Schritte mit Ihrem Geräte* Handbuch". Dieses herunterladbare Handbuch enthält grundlegende Anweisungen zum Einrichten eines neuen Microsoft Managed Desktop-Geräts. Wir haben dieses Handbuch als Basis für IT-Administratoren entworfen. Verwenden Sie es, oder aktualisieren Sie es, um Schritte oder Informationen hinzuzufügen, die Ihren Benutzern helfen, Ihre Geräte einzurichten. 
 
 ## <a name="get-started-guide"></a>Erste Schritte 
-Sie können [Microsoft Managed Desktop-erste Schritte mit Ihrem Gerät](https://www.microsoft.com/en-us/download/details.aspx?id=57918) herunterladen.
+Sie können den Leitfaden: [Microsoft Managed Desktop-erste Schritte mit Ihrem Gerät](https://www.microsoft.com/en-us/download/details.aspx?id=57918)herunterladen.
 
 ## <a name="what-should-i-update-in-the-get-started-guide"></a>Was sollte ich im Leitfaden "erste Schritte" aktualisieren?
 
