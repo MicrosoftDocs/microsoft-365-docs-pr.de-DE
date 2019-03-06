@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
-ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
-ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175777"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414168"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -21,11 +22,11 @@ Nachdem Sie Änderungen an den Einstellungskategorien vorgenommen und eine Berei
 
 Dies sind die Statuen, die für jede Bereitstellung angezeigt werden.
 
-Status  | Erläuterung 
+Status  | Erklärung 
 --- | --- 
 Bereitstellen | Ihre Änderung wartet auf die Bereitstellung für diesen Ring.
-In Bearbeitung | Die Änderung wird auf aktive Geräte in diesem Ring angewendet. 
-Vollständig | Die Änderung, die für alle aktiven Geräte in diesem Ring abgeschlossen wurde. 
+In Arbeit | Die Änderung wird auf aktive Geräte in diesem Ring angewendet. 
+Abschließen | Die Änderung, die für alle aktiven Geräte in diesem Ring abgeschlossen wurde. 
 Failed | Die Änderung ist bei 10 Prozent der aktiven Geräte im Ring fehlgeschlagen, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanforderung wird automatisch mit Microsoft Managed Desktop-Vorgängen geöffnet, um die Bereitstellung zu behandeln. 
 Zurückgesetzt | Die Änderung wurde auf die letzte Änderung zurückgesetzt, die erfolgreich für alle Bereitstellungs Ringe bereitgestellt wurde.
 

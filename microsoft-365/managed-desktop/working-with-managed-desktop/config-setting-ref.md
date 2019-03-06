@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 1f0301f8660fd7ff60bd347d0d7b88c629d79453
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051096"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414193"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -83,7 +84,7 @@ Diese bewährten Methoden helfen Kunden bei der Entscheidungsfindung bei der Mod
 4.  Geben Sie den HTTPS-Speicherort für Ihre Website Liste ein. 
 5.  Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen.
 
-## <a name="trusted-sites"></a>Vertrauenswürdige Websites
+## <a name="trusted-sites"></a>Vertrauenswürdige Sites
 
 Vertrauenswürdige Websites ermöglichen Ihnen das Anpassen von Sicherheitszonen oder die Verwendung einer Website für verschiedene Websites. Zu den Sicherheitszonen gehört Folgendes: 
 - Zone 1 – Zone für lokales Intranet

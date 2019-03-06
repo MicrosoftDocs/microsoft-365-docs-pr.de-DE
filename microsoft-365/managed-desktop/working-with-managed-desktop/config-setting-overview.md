@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
-ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: ea957d02484eac9a2e8b51f53d6e2c34f2b3d711
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30122245"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414183"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurierbare Einstellungen – Microsoft Managed Desktop
 
@@ -40,7 +41,7 @@ Dies sind die konfigurierbaren Einstellungskategorien, die Sie anpassen können:
 
 Jede Einstellungskategorie kann individuell angepasst und bereitgestellt werden. Sie können gleichzeitig Änderungen an mehreren Einstellungskategorien bereitstellen, aber Sie können jeweils nur eine Änderung in einer Einstellungskategorie bereitstellen.
 
-Beispiel:
+Der Parameter Parameters gibt einen oder mehrere Parameter für die Außerkraftsetzung an, die für die Kombination der Parameterwerte Component und Section verfügbar sind. Dieser Parameter verwendet die Syntax @("<parameter1>=<value1>","<parameter2>=<value2>"...).
 - Sie können gleichzeitig Änderungen an Desktophintergrundbild und vertrauenswürdigen Websites bereitstellen. 
 - Sie können nicht gleichzeitig zwei Bereitstellungen für Browser Startseiten bereitstellen. Die neueste Bereitstellung beendet frühere Bereitstellungen, die noch ausgeführt werden.
 
