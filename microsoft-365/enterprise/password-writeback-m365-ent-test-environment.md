@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 51ac9caf1cbc2edd979d9529301388a30981ee44
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.openlocfilehash: 6dada4734798d0e30b50e271520742f3b170ebaf
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340105"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573429"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
@@ -45,9 +45,9 @@ Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 
   
 ![Das simulierte Unternehmen mit Kennworthashsynchronisierung für die Testumgebung](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Diese Konfiguration besteht aus:  
+Diese Konfiguration besteht aus: 
   
-- Testversionen oder dauerhaften Abonnements von Office 365 E5 und EMS E5.
+- Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
 - Azure AD Connect wird auf APP1 ausgeführt, um die Active Directory-Domäne TESTLAB von Windows Server mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements zu synchronisieren.
 
@@ -124,7 +124,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration:
 
 Diese Konfiguration besteht aus: 
 
-- Testversionen oder dauerhaften Abonnements von Office 365 E5 und EMS E5 mit der registrieren DNS-Domäne „TESTLAB.\<Ihr Domänenname>.
+- Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5 mit der registrieren DNS-Domäne „TESTLAB.\<Ihr Domänenname>.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
 - Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements mit der Windows Server AD-Domäne TESTLAB zu synchronisieren. 
 - Kennwortrückschreiben ist aktiviert, damit Benutzer ihre Kennwörter über Azure Active Directory ändern können, ohne mit dem vereinfachten Intranet verbunden sein zu müssen.
