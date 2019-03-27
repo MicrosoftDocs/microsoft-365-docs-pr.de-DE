@@ -7,19 +7,19 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414193"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900274"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
 In diesem Thema werden die Einstellungskategorien aufgelistet, die Kunden mit Microsoft Managed Desktop konfigurieren können. Jede Einstellungskategorie enthält Informationen zu Anforderungen, bewährten Methoden und zum Anpassen der Einstellungskategorie. 
 
 ## <a name="desktop-background-picture"></a>Hintergrundbild des Desktops
-Sie können das Desktophintergrundbild für Microsoft Managed Desktop-Geräte in Ihrer Organisation anpassen. Sie können dies verwenden, um eine Unternehmensmarke oder ein Marketing anzuwenden. 
+Sie können das Desktophintergrundbild für Microsoft Managed Desktop-Geräte in Ihrer Organisation anpassen. Sie können dies verwenden, um eine Unternehmensmarke oder ein Marketingmaterial anzuwenden. 
 
 ### <a name="requirements"></a>Anforderungen
 
@@ -35,7 +35,7 @@ Diese Anforderungen müssen für ein Desktophintergrundbild erfüllt sein:
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Desktop Hintergrundbild**aus. 
 4. Geben Sie den Speicherort des Bilds ein, das Sie verwenden möchten. 
-5. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen. 
+5. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen. 
 
 ## <a name="browser-start-pages"></a>Browser-Startseiten
 Browser Startseiten werden in einzelnen Registerkarten geöffnet, wenn Ihre Benutzer Microsoft Edge starten. Wenn Sie Ihren Benutzern das Öffnen einer Reihe von Websites erleichtern möchten, die häufig verwendet werden, fügen Sie eine Browser-Startseite für jede Website hinzu. 
@@ -53,7 +53,7 @@ Sie müssen den vollqualifizierten Domänennamen (FQDN) für Intranet-oder Inter
 4. Wählen Sie **Startseite hinzufügen**aus.
 5. Geben Sie auf der **Seite Browser Start hinzufügen**die URL für die Website ein, die Sie verwenden möchten, und wählen Sie dann **Startseite hinzufügen**aus. 
 6. Wiederholen Sie die Schritte 1-5 für zusätzliche Browser Startseiten. 
-7. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen.
+7. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 ## <a name="enterprise-mode-site-list-location"></a>Speicherort der Website Liste für den Unternehmens Modus
 
@@ -82,7 +82,7 @@ Diese bewährten Methoden helfen Kunden bei der Entscheidungsfindung bei der Mod
 2.  Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3.  Wählen Sie unter **konfigurierbarer** Arbeitsbereich den Standort **Listenspeicherort des Unternehmens Modus**aus. 
 4.  Geben Sie den HTTPS-Speicherort für Ihre Website Liste ein. 
-5.  Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen.
+5.  Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 ## <a name="trusted-sites"></a>Vertrauenswürdige Sites
 
@@ -105,7 +105,7 @@ Geben Sie den vollqualifizierten Domänennamen (FQDN) für Intranet-oder Interne
 3. Wählen Sie in **konfigurierbarer** Arbeitsbereich **Vertrauenswürdige Sites**aus, und wählen Sie dann **vertrauenswürdige Website hinzufügen** 
 4. Geben Sie auf **vertrauenswürdige Website hinzufügen**die URL ein, wählen Sie eine Sicherheitszone aus, und wählen Sie dann **vertrauenswürdige Website hinzufügen**aus. 
 5. Wiederholen Sie die Schritte 1-4 für jede vertrauenswürdige Website, die Sie hinzufügen möchten. 
-6. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen.
+6. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 **So entfernen Sie eine vertrauenswürdige Website**
 
@@ -114,7 +114,7 @@ Geben Sie den vollqualifizierten Domänennamen (FQDN) für Intranet-oder Interne
 3. Wählen Sie in **konfigurierbarer** Arbeitsbereich **Vertrauenswürdige Sites**aus. 
 4. Wählen Sie die Website aus, die Sie löschen möchten, und wählen Sie dann **Löschen**aus. 
 5. Wiederholen Sie die Schritte 1-4 für jede vertrauenswürdige Website, die Sie löschen möchten. 
-6. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen.
+6. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 ## <a name="proxy"></a>Proxy
 Sie können Netzwerkproxyeinstellungen für Ihre Organisation verwalten. Fügen Sie Ihren Proxy Server und die Nummer der Portierung hinzu, und fügen Sie dann die Proxy Website-Ausnahmen hinzu. Microsoft Managed Desktop enthält eine Reihe von Standardproxy Ausnahmen, die für den Betrieb des Diensts erforderlich sind. Die standardmäßige Ausschlussliste kann nur vom Microsoft Managed Desktop-Dienst geändert werden.  Weitere Informationen finden Sie unter [Netzwerkkonfiguration für Microsoft Managed Desktop](../get-ready/network.md). 
@@ -140,7 +140,7 @@ Diese Anforderungen müssen für Ausnahmen von Proxyservern und Proxy Websites e
 4. Geben Sie die **Adresse** und die **Nummer** für den Proxy Server ein, und wählen Sie **Proxyausnahme hinzufügen**aus. 
 5. Geben Sie die URL einer gültigen HTTP-Website ein, und wählen Sie **Proxyausnahme hinzufügen**aus. 
 6. Wiederholen Sie die Schritte 1-5 für jede vertrauenswürdige Website, die Sie hinzufügen möchten. 
-7. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und auf dem testring bereitzustellen.
+7. Wählen Sie **bereitstellungSstufe** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md) 

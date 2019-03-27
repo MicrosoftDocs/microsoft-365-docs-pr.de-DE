@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea957d02484eac9a2e8b51f53d6e2c34f2b3d711
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414183"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900264"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurierbare Einstellungen – Microsoft Managed Desktop
 
@@ -20,7 +20,7 @@ Microsoft Managed Desktop stellt Einstellungen und Richtlinien bereit, die auf a
 
 Konfigurierbare Einstellungen in Microsoft Managed Desktop ermöglichen IT-Administratoren die Anpassung und Bereitstellung von Einstellungen, die für Ihre Organisation und Ihre geschäftlichen Anforderungen eindeutig sind. Diese Einstellungen gelten zusätzlich zu den Geräte Konfigurationseinstellungen und-Richtlinien, die von Microsoft Managed Desktop verwaltet werden.  
 
-Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf Ihre Microsoft Managed Desktop-Geräte in definierten Bereitstellungs Ringen angewendet. Dieser Vorgang ähnelt der Verwaltung von Änderungen an Geräte configuruation-Einstellungen und-Richtlinien, die vom Dienst definiert und verwaltet werden. Mit dem gleichen Prozess, den Microsoft Managed Desktop für die Bereitstellung von Änderungen verwendet, bewegen Sie Ihre Organisation weiterhin mit modernen IT-Verwaltungsmethoden.
+Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf Ihre Microsoft Managed Desktop-Geräte in definierten Bereitstellungsgruppen angewendet. Dieser Vorgang ähnelt der Verwaltung von Änderungen an Geräte configuruation-Einstellungen und-Richtlinien, die vom Dienst definiert und verwaltet werden. Mit dem gleichen Prozess, den Microsoft Managed Desktop für die Bereitstellung von Änderungen verwendet, bewegen Sie Ihre Organisation weiterhin mit modernen IT-Verwaltungsmethoden.
 
 ## <a name="when-to-use-configurable-settings"></a>Wann können konfigurierbare Einstellungen verwendet werden?
 
@@ -41,15 +41,15 @@ Dies sind die konfigurierbaren Einstellungskategorien, die Sie anpassen können:
 
 Jede Einstellungskategorie kann individuell angepasst und bereitgestellt werden. Sie können gleichzeitig Änderungen an mehreren Einstellungskategorien bereitstellen, aber Sie können jeweils nur eine Änderung in einer Einstellungskategorie bereitstellen.
 
-Der Parameter Parameters gibt einen oder mehrere Parameter für die Außerkraftsetzung an, die für die Kombination der Parameterwerte Component und Section verfügbar sind. Dieser Parameter verwendet die Syntax @("<parameter1>=<value1>","<parameter2>=<value2>"...).
+Beispiel:
 - Sie können gleichzeitig Änderungen an Desktophintergrundbild und vertrauenswürdigen Websites bereitstellen. 
 - Sie können nicht gleichzeitig zwei Bereitstellungen für Browser Startseiten bereitstellen. Die neueste Bereitstellung beendet frühere Bereitstellungen, die noch ausgeführt werden.
 
 ## <a name="configurable-setting-process"></a>Konfigurierbarer Einstellungsprozess
 
-Der Gesamtprozess sieht wie folgt aus. 
+Microsoft Managed Desktop empfiehlt Folgendes, wenn Sie konfigurierbare Einstellungen für Ihre Organisation verwenden:
 
-**Schritt 1 – planen** – erfahren Sie mehr über konfigurierbare Einstellungen, und entscheiden Sie, welche Einstellungskategorien Sie für Ihre Organisation konfigurieren möchten. Planen Sie die Kommunikation zu Ihren Benutzern, die ihren internen Change Management-Prozessen entspricht. Wenn Sie beispielsweise Browser Startseiten hinzufügen, sollten Sie Ihren Benutzern mitteilen, dass Sie nach der Bereitstellung einen neuen Satz Startseiten in Ihrem Browser haben.  
+**Schritt 1 – planen** – erfahren Sie mehr über konfigurierbare Einstellungen, und entscheiden Sie, welche Einstellungskategorien Sie für Ihre Organisation konfigurieren möchten. Erstellen Sie eine Zeitachse, wenn Sie erwarten, dass Änderungen für jede Gruppe bereitgestellt werden. Planen Sie die Kommunikation zu Ihren Benutzern, die ihren internen Change Management-Prozessen entspricht. Wenn Sie beispielsweise Browser Startseiten hinzufügen, sollten Sie Ihren Benutzern mitteilen, dass Sie nach der Bereitstellung einen neuen Satz Startseiten in Ihrem Browser haben.  
 
 **Schritt 2: Konfigurieren und bereit** stellen von Änderungen an konfigurierbaren Einstellungen im Microsoft Managed Desktop Admin Portal. Stufen Sie die Änderungen so ein, dass Sie bereit sind, bereitzustellen. Denken Sie daran, Ihre Benutzer über die Änderungen zu informieren und zu erfahren, wie die Änderungen ihre Geräteumgebung ändern.   
 
@@ -57,14 +57,14 @@ Sie konfigurieren und Stufen Änderungen im Microsoft Managed Desktop-Verwaltung
 
 **Schritt 3-kommunizieren von Änderungen** Informieren Sie Ihre Benutzer über bevorstehende Änderungen. Schließen Sie für jede Bereitstellung die Kommunikation ab, die Teil ihrer Change Management-Prozesse ist. Sie sollten jede Änderung klar kommunizieren, die Auswirkungen auf die Funktionsweise eines Benutzers hat oder was er auf seinen Geräten sieht.
 
-**Schritt 4: Bereitstellen von Änderungen** – Bereitstellen der Änderungen, beginnend mit dem testring. Der testring ermöglicht die Überprüfung und Behandlung von Problemen in einem Ring mit weniger Geräten, bevor Änderungen an größeren Gerätegruppen vorgenommen werden. Wenn Probleme auftreten, können Sie die Änderung rückgängig machen, die Einstellung aktualisieren und eine neue Bereitstellung inszenieren. Microsoft Managed Desktop empfiehlt, dass Sie den strukturierten Ansatz und die Bereitstellung für Ringe in dieser Reihenfolge befolgen: Test, First, fast und dann Broad.   
+**Schritt 4 – Bereitstellen von Änderungen** – stellen Sie Ihre Änderungen beginnend mit der Test Gruppe bereit. Die Test Gruppe ermöglicht die Überprüfung und Behandlung von Problemen in einer Gruppe mit weniger Geräten, bevor Änderungen an größeren Gerätegruppen bereitgestellt werden. Wenn Probleme auftreten, können Sie die Änderung rückgängig machen, die Einstellung aktualisieren und eine neue Bereitstellung inszenieren. Microsoft Managed Desktop empfiehlt, dass Sie den strukturierten Ansatz und die Bereitstellung in Gruppen in dieser Reihenfolge befolgen: Test, First, fast und dann Broad.   
 
 Alle konfigurierbaren Einstellungen werden mithilfe des Microsoft Managed Desktop admin Portals verwaltet. Weitere Informationen finden Sie unter [Deploy Changes](config-setting-deploy.md). 
 
 **Schritt 5-Nachverfolgen von Änderungen** – verfolgen Sie den Fortschritt für Ihre Änderungen am Bereitstellungsstatus. Für jede Einstellung können Sie Folgendes tun:
 - **Verfolgen des Fortschritts** – Nachverfolgen des Status nach der Bereitstellung der Änderung. Der Status ändert sich **in in Bearbeitung**und wird dann **abgeschlossen**oder **fehlgeschlagen**. Wenn eine Bereitstellung fehlschlägt, wird automatisch eine Supportanforderung für Microsoft Managed Desktop-Vorgänge geöffnet, um das Problem zu untersuchen.  
 - **Siehe Version deployed** – jede bereitgestellte Änderung hat eine Versionsnummer.
-- **Änderungen rückgängig** machen – beim Rückgängigmachen einer Änderung wird die aktuelle Bereitstellung angehalten, und alle Ringe werden auf die letzten Änderungen zurückgesetzt, die für alle Ringe bereitgestellt wurden. Sie setzen zurück auf den Wert für die letzte bekanntermaßen gute Einstellung.
+- **Änderungen rückgängig** machen – beim Rückgängigmachen einer Änderung wird die aktuelle Bereitstellung angehalten, und alle Gruppen werden auf die letzten Änderungen zurückgesetzt, die für alle Gruppen bereitgestellt wurden. Sie setzen zurück auf den Wert für die letzte bekanntermaßen gute Einstellung.
 - **Änderungen überprüfen** – nachdem die Bereitstellung abgeschlossen ist, überprüfen Sie, ob die Änderungen wie erwartet angewendet wurden.  
 
 Wenn eine Bereitstellung fehlgeschlagen ist oder Sie eine Änderung nicht rückgängig machen können, [Öffnen Sie eine Supportanfrage](admin-support.md) mit Microsoft Managed Desktop Operations. 
