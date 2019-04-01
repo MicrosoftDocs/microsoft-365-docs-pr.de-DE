@@ -1,5 +1,5 @@
 ---
-title: Hilfe für die Bereitstellung Ihres modernen Desktops erhalten
+title: Hilfe zur Bereitstellung von Windows 10 und Office 365 ProPlus
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Wo finden Sie Hilfe und Support für die Bereitstellung Ihres modernen Desktops.
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: Informationen dazu, wo Sie Hilfe und Support zur Bereitstellung von Windows 10 und Office 365 ProPlus finden.
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241968"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900254"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>Hilfe für die Bereitstellung Ihres modernen Desktops erhalten 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Hilfe zur Bereitstellung von Windows 10 und Office 365 ProPlus 
 
 Wenn Sie Ihre Windows 10-Bereitstellung mit Office 365 ProPlus planen, gibt es mehrere Optionen, um zusätzliche Hilfe von zertifizierten Microsoft-Partnern und von [Microsoft FastTrack](https://www.microsoft.com/fasttrack) zu erhalten.
 
-Nachfolgend finden Sie eine Übersicht der verfügbaren Dienste, ausgerichtet am Prozess [der Bereitstellung des modernen Desktops](http://www.aka.ms/howtoshift) für Windows 10, Office 365 ProPlus und Enterprise Mobility + Security mit bestehenden Partner- und FastTrack-Angeboten. In vielen Fällen sind diese Dienste in Ihrem qualifizierenden Abonnement für Microsoft 365, Office 365 oder Windows 10 Enterprise enthalten. Für partnergeführte Dienste, wie die Bewertung des modernen Desktops, bietet Microsoft als qualifizierende Organisation einen Gutschein für Dienste, die vom Partner ausgeführt werden. Einzelheiten zu den einzelnen Angeboten finden Sie unter den folgenden Links.
+Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopbereitstellungs](http://www.aka.ms/howtoshift)prozess für Windows 10, Office 365 ProPlus und Enterprise Mobility + Security mit vorhandenen Partnern und FastTrack-Angeboten ausgerichtet sind. In vielen Fällen sind diese Dienste in Ihr berechtigtem Abonnement von Microsoft 365, Office 365 oder Windows 10 Enterprise enthalten. Microsoft bietet als qualifizierende Organisation für von Partnern bereitgestellte Dienste, wie die Windows 10 -und Office 365 ProPlus-Desktopbewertung, einen Gutschein für vom Partner durchgeführte Dienste an. Details für die einzelnen Angebote finden Sie unter den folgenden Links.
 
 <br>
 
@@ -104,8 +104,8 @@ Treten Sie der [Microsoft Tech Community](https://techcommunity.microsoft.com) b
 
 ## <a name="related-resources"></a>**Verwandte Ressourcen**
 
-  - [Bereitstellungscenter für modernen Desktop](http://www.aka.ms/howtoshift)
+  - [Bereitstellungscenter für Desktop](http://www.aka.ms/howtoshift)
 
-  - [Videos zu Modern Desktop Deployment von Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Lab-Kit für moderne Desktop-Bereitstellung und -Verwaltung](https://aka.ms/howtoshiftlabs)
+  - [Lab-Kit für Desktopbereitstellung und verwaltung](https://aka.ms/howtoshiftlabs)
