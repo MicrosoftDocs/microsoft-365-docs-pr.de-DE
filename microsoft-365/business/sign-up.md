@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
-ms.openlocfilehash: ce12c872e8cc30ece9e59aaf8c5b5d7c86694df2
-ms.sourcegitcommit: bbb32d1601f87dc72bebd00fad36d760ca233cd7
+ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
+ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31477706"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31504081"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -41,13 +41,13 @@ Gehen Sie zu [Discover microsoft 365 Business Advantage](https://www.microsoft.c
 
     - **Username**: Geben Sie den Namen (als Alias bezeichnet) ein, den Sie für Ihre eigene geschäftliche e-Mail verwenden. Robert Young kann beispielsweise RobY oder RobYoung als Arbeits Alias verwenden.
     - **Ihr Unternehmen**: Geben Sie Ihren eindeutigen Firmennamen ein. Dies ist der Name, den Ihre Geschäftswebsite verwendet, wenn Sie einen haben, und ist auch der Name, den Sie nach dem @-Zeichen einfügen möchten, wenn Sie eine geschäftliche e-Mail erhalten. Dieser Name wird als Domäne bezeichnet. Wenn Ihr Unternehmen beispielsweise contoso Skis heißt, geben Sie ContosoSkis nach dem @-Zeichen ein.
-    - **Wählen Sie eine Domäne**aus: Wenn Sie bereits Ihren Domänennamen besitzen, wählen sie. onmicrosoft.com aus den Dropdown-Männern aus, und wir bitten Sie, Sie später einzurichten. Andernfalls ist es ganz einfach, einen Domänennamen zu erwerben, der Ihr Unternehmen repräsentiert. Wählen Sie dazu die gewünschte Domäne im Dropdownmenü aus. Beispielsweise kann Ihre vollständige e-Mail *Teresa@ContosoSkis.net*-Adresse sein. Wir informieren Sie sofort, wenn der Domänenname verfügbar ist. Wenn dies der Fall ist, werden die Kosten Ihrer Domäne zu den Kosten Ihres Microsoft 365 Business-Abonnements hinzugefügt. Die neue Domäne wird ebenfalls eingerichtet und kann in Microsoft 365 verwendet werden, wenn Sie Sie hier erwerben.
+    - **Wählen Sie eine Domäne**aus: Wenn Sie bereits Ihren Domänennamen besitzen, wählen sie. onmicrosoft.com aus den Dropdown-Männern aus, und wir bitten Sie, Sie später einzurichten. Andernfalls ist es ganz einfach, einen Domänennamen zu erwerben, der Ihr Unternehmen repräsentiert. Wählen Sie dazu die gewünschte Domäne im Dropdownmenü aus. Beispielsweise kann Ihre vollständige e-Mail *Teresa@ContosoSkis.net*-Adresse sein. Wir informieren Sie sofort, wenn der Domänenname verfügbar ist. Wenn dies der Fall ist, werden die Kosten Ihrer Domäne zu den Kosten Ihres Microsoft 365 Business-Abonnements hinzugefügt. Die neue Domäne wird ebenfalls eingerichtet und kann in Microsoft 365 verwendet werden, wenn Sie Sie hier erwerben. Informationen zu Domänen finden Sie unter [häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq).
     
     ![Screenshot der Seite "Benutzer-ID erstellen".](media/signinuserid.png)
 
 3. Füllen Sie die restlichen Felder aus, und wählen Sie **mein Konto erstellen**aus.
 4. Im **Beweis. Sie sind. Not'A. Robot.** Seite geben Sie eine Telefonnummer ein, um einen Code per Text oder Anruf zu empfangen, wählen Sie **Text Me** oder **rufen Sie mich**an, \> **** und geben Sie dann den Verifizierungscode ein.
-5. Klicken Sie auf der **Stelle, an der Sie diese** n ihrer Geschäftsadresse verwenden. Diese Informationen legen fest, welche Steuern Sie zahlen und welche Abonnements verfügbar sind. Weitere Informationen zu steuern finden Sie unter [welche Steuern werden mir in Rechnung gestellt?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+5. Geben Sie auf der Seite **wo wird diese verwendet werden** Ihre Geschäftsadresse ein. Diese Informationen legen fest, welche Steuern Sie zahlen und welche Abonnements verfügbar sind. Weitere Informationen zu steuern finden Sie unter [welche Steuern werden mir in Rechnung gestellt?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
 1. Klicken Sie auf **weiter**, überarbeiten Sie **** Ihre Bestellung, und wählen Sie dann erneut aus.
 1. Geben Sie auf der Seite wie soll die Bezahlung erfolgen, die Zahlungsdetails ein, und **legen**Sie dann die Bestellung **an** .
     Sie können dann zum [Admin Center](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) wechseln, um die [Einrichtung](set-up.md)abzuschließen.
