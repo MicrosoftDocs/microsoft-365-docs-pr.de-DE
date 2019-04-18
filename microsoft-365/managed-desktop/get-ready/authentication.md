@@ -6,16 +6,16 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2317a0581b356dadbde2042920ed2542f0e2203c
-ms.sourcegitcommit: 392b906e64d27366b47931e8285b625e5e2f884e
+ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31838166"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901209"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop
 
-In Microsoft Managed Desktop werden Geräte automatisch mit Azure Active Directory verbunden. Wenn Sie also ein lokales Active Directory verwenden, müssen Sie einige Dinge überprüfen, um sicherzustellen, dass mit Azure AD verbundene Geräte mit Ihrem lokalen Active Directory kommunizieren können. 
+In Microsoft Managed Desktop werden Geräte automatisch mit Azure Active Directory (Azure AD) verbunden. Wenn Sie also ein lokales Active Directory verwenden, müssen Sie einige Dinge überprüfen, um sicherzustellen, dass mit Azure AD verbundene Geräte mit Ihrem lokalen Active Directory kommunizieren können. 
 
 > [!NOTE]  
 > *Hybrid* Azure AD Join wird von Microsoft Managed Desktop nicht unterstützt.
@@ -30,22 +30,22 @@ In diesem Thema werden die Dinge erläutert, die Sie überprüfen müssen, um si
 
 ## <a name="single-sign-on-for-on-premises-resources"></a>Einmaliges Anmelden für lokale Ressourcen
 
-Einmaliges Anmelden (Single Sign-on, SSO) mithilfe von UPN und Kennwörtern ist auf Microsoft Managed Desktop-Geräten standardmäßig aktiviert. Ihre Benutzer können aber auch Windows Hello for Business verwenden, was einige zusätzliche Setupschritte erfordert. 
+Einmaliges Anmelden (Single Sign-on, SSO) mithilfe von UPN und Kennwort ist auf Microsoft-Desktop Geräten standardmäßig aktiviert. Ihre Benutzer können aber auch Windows Hello for Business verwenden, was einige zusätzliche Setupschritte erfordert. 
 
-### <a name="single-sign-on-by-using-upn-and-passwords"></a>Einmaliges Anmelden mithilfe von UPN und Kennwörtern
+### <a name="single-sign-on-by-using-upn-and-password"></a>Einmaliges Anmelden mithilfe von UPN und Kennwort
 
 In den meisten Organisationen können Benutzer mithilfe von SSO mithilfe von UPN und Kennwort auf verwalteten Desktop Geräten von Microsoft authentifizieren. Sie sollten jedoch Folgendes überprüfen, um sicherzustellen, dass dies funktioniert:
 
-- Vergewissern Sie sich, dass Azure Active Directory (AAD) Connect eingerichtet ist und einen lokalen Active Directory-Server mit Windows Server 2008 R2 oder höher verwendet.
-- Vergewissern Sie sich, dass AAD Connect eine unterstützte Version ausführt und diese drei Attribute mit Azure AD synchronisiert werden: 
+- Vergewissern Sie sich, dass Azure AD Connect eingerichtet ist und einen lokalen Active Directory-Server mit Windows Server 2008 R2 oder höher verwendet.
+- Vergewissern Sie sich, dass Azure AD Connect eine unterstützte Version ausführt und diese drei Attribute mit Azure AD synchronisiert werden: 
     - DNS-Domänenname des lokalen Active Directory (in dem sich die Endbenutzer befinden)
-    - NetBIOS von Ihrem lokalen Active Directory (in dem sich die Endbenutzer befinden)
+    - NetBIOS des lokalen Active Directory (in dem sich die Endbenutzer befinden)
     - SAM-Konto Name des Benutzers
 
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Einmaliges Anmelden mithilfe von Windows Hello for Business
 
-Microsoft Managed Desktop-Geräte bieten ihren Benutzern außerdem eine schnelle, kennwortlos-Erfahrung, indem Sie Windows Hello for Business verwenden. Um sicherzustellen, dass Windows Hello for Business funktioniert, ohne dass Ihre Benutzer UPN und Kennwörter bereitstellen müssen, besuchen Sie [configure Azure AD Joined Devices for on-premises Single-Sign on using Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) , um die Anforderungen zu überprüfen, und befolgen Sie dann die dort bereitgestellte Schritte.
+Microsoft Managed Desktop-Geräte bieten ihren Benutzern außerdem eine schnelle, kennwortlos-Erfahrung, indem Sie Windows Hello for Business verwenden. Wenn Sie sicherstellen möchten, dass Windows Hello for Business funktioniert, ohne dass Ihre Benutzer den entsprechenden UPN und das Kennwort angeben müssen, besuchen Sie [configure Azure AD Joined Devices for on-premises Single-Sign on using Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) , um die Anforderungen zu überprüfen und dann Führen Sie die dort aufgeführten Schritte aus.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Apps und Ressourcen, die die Authentifizierung verwenden
