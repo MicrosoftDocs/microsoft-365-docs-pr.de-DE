@@ -3,7 +3,7 @@ title: Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,32 +16,32 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 6dada4734798d0e30b50e271520742f3b170ebaf
-ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
+ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573429"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901219"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
-Mit dem Rückschreiben des Kennworts können Benutzer ihre Kennwörter über Azure Active Directory (Azure AD) aktualisieren, das dann in Ihre lokalen Active Directory Domain Services (AD DS) repliziert wird. Dank dem Kennwortrückschreiben müssen Benutzer ihre Kennwörter nicht über das lokale Windows Server AD aktualisieren, wo ihre ursprünglichen Benutzerkonten gespeichert sind. Dies ist für Roaming- oder Remote-Benutzer nützlich, die keine Remote-Zugriffsverbindung zum lokalen Netzwerk haben.
+Mit dem Rückschreiben des Kennworts können Benutzer ihre Kennwörter über Azure Active Directory (Azure AD) aktualisieren, das dann in Ihre lokalen Active Directory Domain Services (AD DS) repliziert wird. Dank dem Kennwortrückschreiben müssen Benutzer ihre Kennwörter nicht über das lokale Active Directory Domain Services (AD DS) aktualisieren, wo ihre ursprünglichen Benutzerkonten gespeichert sind. Dies ist für Roaming- oder Remote-Benutzer nützlich, die keine Remote-Zugriffsverbindung zum lokalen Netzwerk haben.
 
 Dieser Artikel beschreibt, wie Sie Ihre Microsoft 365-Testumgebung für das Kennwortrückschreiben konfigurieren.
 
 Die Einrichtung besteht aus zwei Phasen:
 
 1.  Erstellen Sie die simulierte Microsoft 365-Testunternehmensumgebung mit Kennworthashsynchronisierung.
-2.  Aktivieren Sie das Kennwortrückschreiben für die Windows Server AD-Domäne „TESTLAB“.
+2.  Aktivieren Sie das Kennwortrückschreiben für die AD DS-Domäne "TESTLAB".
     
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
+## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren von Kennworthashsynchronisierung und Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung
 
-Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Hier ist die resultierende Konfiguration.
+Befolgen Sie zuerst die Anweisungen unter [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md). Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ![Das simulierte Unternehmen mit Kennworthashsynchronisierung für die Testumgebung](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
@@ -49,9 +49,13 @@ Diese Konfiguration besteht aus:
   
 - Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
-- Azure AD Connect wird auf APP1 ausgeführt, um die Active Directory-Domäne TESTLAB von Windows Server mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements zu synchronisieren.
+- Azure AD Connect wird auf APP1 ausgeführt, um die AD DS-Domäne "TESTLAB" mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements zu synchronisieren.
 
-## <a name="phase-2-enable-password-writeback-for-the-testlab-windows-server-ad-domain"></a>Phase 2: Aktivieren Sie das Kennwortrückschreiben für die Windows Server AD-Domäne „TESTLAB“.
+Folgen Sie anschließend den Anweisungen unter [Phase 2 der Kennwortzurücksetzung](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset) der Testumgebungsanleitungen.
+
+Sie müssen das Zurücksetzen des Kennworts aktiviert haben, um das Kennwortrückschreiben verwenden zu können.
+
+## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Phase 2: Aktivieren des Kennwortrückschreibens für die AD DS-Domäne "TESTLAB"
 
 Konfigurieren Sie zuerst das Konto „User1“ mit der globalen Administratorrolle.
 
@@ -65,7 +69,7 @@ Konfigurieren Sie zuerst das Konto „User1“ mit der globalen Administratorrol
 
 5. Klicken Sie im Bereich **Benutzerrollen bearbeiten** für User1 auf **Globaler Administrator**. Klicken Sie auf **Speichern** und dann auf **Schließen**.
 
-Als Nächstes konfigurieren Sie das Konto „User1“ mit den Sicherheitseinstellungen, mit denen es Kennwörter im Auftrag von anderen Benutzern in der Windows Satz AD-Domäne „TESTLAB“ ändern kann.
+Als Nächstes konfigurieren Sie das Konto "User1" mit den Sicherheitseinstellungen, mit denen es Kennwörter im Auftrag von anderen Benutzern in der AD DS-Domäne "TESTLAB" ändern kann.
 
 1. Melden Sie sich über das [Azure-Portal](https://portal.azure.com) mit Ihrem globalen Administratorkonto an, und stellen Sie dann mit dem Konto „TESTLAB\User1“ eine Verbindung zu APP1 her.
 
@@ -126,7 +130,7 @@ Diese Konfiguration besteht aus:
 
 - Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5 mit der registrieren DNS-Domäne „TESTLAB.\<Ihr Domänenname>.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
-- Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements mit der Windows Server AD-Domäne TESTLAB zu synchronisieren. 
+- Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements mit der AD DS-Domäne "TESTLAB" zu synchronisieren. 
 - Kennwortrückschreiben ist aktiviert, damit Benutzer ihre Kennwörter über Azure Active Directory ändern können, ohne mit dem vereinfachten Intranet verbunden sein zu müssen.
 
 Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-password-reset.md#identity-pw-writeback) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren des Kennwortrückschreibens in der Produktion.
