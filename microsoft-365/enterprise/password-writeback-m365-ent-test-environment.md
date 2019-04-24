@@ -3,7 +3,7 @@ title: Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
-ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
+ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291450"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
@@ -39,9 +39,9 @@ Die Einrichtung besteht aus zwei Phasen:
 > [!TIP]
 > Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
-## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren von Kennworthashsynchronisierung und Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
-Befolgen Sie zuerst die Anweisungen unter [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md). Nachfolgend sehen Sie die daraus resultierende Konfiguration.
+Befolgen Sie zuerst die Anweisungen unter [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md). Hier ist die resultierende Konfiguration.
   
 ![Das simulierte Unternehmen mit Kennworthashsynchronisierung für die Testumgebung](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
@@ -50,10 +50,6 @@ Diese Konfiguration besteht aus:
 - Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
 - Azure AD Connect wird auf APP1 ausgeführt, um die AD DS-Domäne "TESTLAB" mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements zu synchronisieren.
-
-Folgen Sie anschließend den Anweisungen unter [Phase 2 der Kennwortzurücksetzung](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset) der Testumgebungsanleitungen.
-
-Sie müssen das Zurücksetzen des Kennworts aktiviert haben, um das Kennwortrückschreiben verwenden zu können.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Phase 2: Aktivieren des Kennwortrückschreibens für die AD DS-Domäne "TESTLAB"
 

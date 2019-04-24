@@ -1,57 +1,63 @@
 ---
-title: Netzwerkkonfiguration für Microsoft verwalteten Desktops
+title: Netzwerkkonfiguration für Microsoft Managed Desktop
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289100"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft verwalteten Desktops
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 
 <!--Proxy config -->
 
 
-## <a name="proxy-configuration"></a>Proxy-Konfiguration
+## <a name="proxy-configuration"></a>Proxy Konfiguration
 
-Microsoft verwalteter Desktop ist ein Cloud-Mitarbeiter-Dienst. Es ist ein Satz von Endpunkten, die die Microsoft verwalteter Desktop Services muss erreichen können. Wenn ein Proxy oder Firewall Kunden einrichten, können sie nur Netzwerkdatenverkehr von bestimmten Domänen aus Sicherheitsgründen. Dieser Abschnitt enthält die Endpunkte, die zulässig sein müssen. 
+Microsoft Managed Desktop ist ein Cloud-verwalteter Dienst. Es gibt eine Reihe von Endpunkten, die von Microsoft Managed Desktop Services erreicht werden müssen. In diesem Abschnitt werden die Endpunkte aufgelistet, die für die verschiedenen Aspekte des Microsoft Managed Desktop-Diensts zugelassen werden müssen. 
 
-### <a name="proxy-requirement"></a>Proxy-Anforderung
+Kunden können Ihr Netzwerk optimieren, indem Sie alle vertrauenswürdigen Microsoft 365-Netzwerkanforderungen direkt über Ihre Firewall/Ihren Proxy senden, um die Authentifizierung und alle zusätzlichen Überprüfungen oder Verarbeitungsvorgänge auf Paketebene zu umgehen. Dadurch werden die Wartezeit und die Kapazitätsanforderungen für Perimeter reduziert. 
 
-Der Proxy oder der Firewall muss TLS 1.2 unterstützen. Andernfalls müssen Sie möglicherweise Protokoll Erkennung deaktivieren.
+Zur Optimierung der Leistung für Cloud-basierte Microsoft-Desktop Dienste benötigen diese Endpunkte eine besondere Behandlung durch Kunden-Clientbrowser und die Geräte in Ihrem Edge-Netzwerk. Zu diesen Geräten gehört Firewalls, SSL-unterbrechungs-und-Überprüfung, Paket Inspektionsgeräte und Systeme zur Verhinderung von Datenverlust.
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Endpunkte zulässig - spezifische für Microsoft verwalteten Desktops
+### <a name="proxy-requirement"></a>Proxy Anforderung
 
-Diese URLs muss in der Liste der zugelassenen sein, damit Microsoft verwalteter Desktop-Geräte mit Microsoft Services kommunizieren können.
+Der Proxy oder die Firewall muss TLS 1,2 unterstützen. Andernfalls müssen Kunden die Protokollerkennung möglicherweise deaktivieren.
 
-Microsoft-Dienst  | Liste der zugelassenen URLs auf erforderlich 
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Zulässige endPunkte für Microsoft Managed Desktop
+
+Microsoft Managed Desktop verwendet das Azure-Portal, um die Webkonsole zu hosten. Die folgenden URLs in der nachstehenden Tabelle müssen in der Liste der zugelassenen Proxys und Firewalls stehen, damit Microsoft-verwaltete Desktop Geräte mit Microsoft-Diensten kommunizieren können.  
+
+Beachten Sie, dass die Microsoft Managed Desktop-URL unten für alles verwendet wird, was unser Dienst auf der Kunden-API ausführt. Kunden müssen sicherstellen, dass diese URL immer in Ihrem Unternehmensnetzwerk zugänglich ist.
+
+Microsoft-Dienst  | Für Zulassungsliste erforderliche URLs 
 --- | --- | ---
-Hilfe | \*. support.services.microsoft.com  <br>inprod.Support.Services.Microsoft.com  <br>supportchannels.Services.Microsoft.com  <br>Graph.Windows.NET  <br>Login.Windows.NET  <br>"Bemerkungen"-Mwaas-Services-customerapi.azurewebsites.net
-„Remotehilfe” | remoteassistance.Support.Services.Microsoft.com <br>Relay.Support.Services.Microsoft.com <br>channelwebsdks.azureedge.NET  <br>Web.Vortex.Data.Microsoft.com  <br>Gateway.ChannelServices.Microsoft.com <br>\*. Lync.com herzustellen
+Microsoft Managed Desktop | Prod-mwaas-Services-customerapi.azurewebsites.net
+Hilfe erhalten | \*. Support.Services.Microsoft.com  <br>inprod.Support.Services.Microsoft.com  <br>supportchannels.Services.Microsoft.com  <br>Graph.Windows.net  <br>Login.Windows.net  <br>Prod-mwaas-Services-customerapi.azurewebsites.net
+Schnell Hilfe | remoteassistance.Support.Services.Microsoft.com <br>Relay.Support.Services.Microsoft.com <br>channelwebsdks.azureedge.net  <br>Web.Vortex.Data.Microsoft.com  <br>Gateway.ChannelServices.Microsoft.com <br>\*. lync.com
+Microsoft-Support-und wiederHerstellungs-Assistent für Office 365 | \*. apibasic.Diagnostics.Office.com  <br>\*. API.Diagnostics.Office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>Zulässige - Endpunkte andere Microsoft-Produkte
+### <a name="endpoints-allowed---other-microsoft-products"></a>Zulässige endPunkte-andere Microsoft-Produkte
 
-Es gibt URLs aus verschiedenen Microsoft-Produkten, die in der Liste der zugelassenen sein, damit diese Microsoft Services Microsoft verwalteter Desktop Geräte kommunizieren können müssen. Verwenden Sie die Links, um die vollständige Liste für die einzelnen Produkte finden Sie unter. 
+Es gibt URLs aus verschiedenen Microsoft-Produkten, die in der Liste der zulässigen Elemente vorhanden sein müssen, damit Microsoft-verwaltete Desktop Geräte mit diesen Microsoft-Diensten kommunizieren können. Verwenden Sie die Links, um die vollständige Liste für jedes Produkt anzuzeigen. 
 
-Microsoft-Dienst | Dokumentation Quell - URLs, die auf dem Zulassungsliste
+Microsoft-Dienst | Dokumentationsquelle-für die Zulassungsliste erforderliche URLs
 --- | ---
-Windows Update für Business (WUfB) | [Windows Update für Firewall- und geschäftsanforderungen](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
-Delivery-Optimierung | [Windows Update-Proxy-Anforderungen](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
-Microsoft Store für Unternehmen | [Microsoft Store Zulassungsliste](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365-URLs und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) einschließlich \*. apibasic.diagnostics.office.com
-Azure Active Directory | [Hybrid Identity erforderlichen Ports und Protokolle](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) und [Active Directory und Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune Netzwerk konfigurationsanforderungen](https://docs.microsoft.com/intune/network-bandwidth-use)
-OneDrive for Business <br> | [Erforderliche Ports für die OneDrive und die URLs](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows-Defender erweiterte Threat Protection (ATP) | [Windows Defender ATP-Endpunkte](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
-SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
-Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Windows 10 Enterprise einschließlich Windows Update for Business | [Verwalten von Verbindungs Endpunkten für Windows 10, Version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+BereitstellungsOptimierung | [Konfigurieren der BereitstellungsOptimierung für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [Office 365-URL-und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | [Erforderliche hybride Identität Ports und Protokolle](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) sowie [Port Anforderungen für Active Directory und Active Directory-Domänendienste](https://aka.ms/AA26ygm) 
+Microsoft Intune | [InTune-Netzwerk Konfigurationsanforderungen](https://docs.microsoft.com/intune/network-bandwidth-use)
+Windows Defender Advanced Threat Protection (ATP) | [Windows Defender ATP-Endpunkte] (https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

@@ -1,42 +1,44 @@
 ---
 title: Unterstützung für Microsoft Managed Desktop
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/28/2018
-ms.openlocfilehash: fb92b7971a35e6fca093f9911fbf480f1b26e6e8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 3e48fdfc9708f0a1eb3b1cb0e5deb64d1a5ca748
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278226"
 ---
-# <a name="getting-help-for-end-users"></a>Abrufen von Hilfe für Endbenutzer
+# <a name="getting-help-for-end-users"></a>Hilfe für Endbenutzer
 
-Es gibt zwei Methoden, die Benutzer in Ihrer Organisation mit Microsoft verwalteter Desktop Geräten Hilfe erhalten können: **Hilfe** app oder Telefon. Beachten Sie, dass Geräte, die in den Test Ring außerhalb des Gültigkeitsbereichs für diese Endbenutzer-Support-Optionen. 
+Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Hilfe zu Ihren Microsoft Managed Desktop-Geräten erhalten: **Hilfe** -APP oder Telefon-Support. Beachten Sie, dass Geräte, die sich in der Testgruppe befinden, nicht mehr für diese Endbenutzer-Supportoptionen gelten. 
 
-## <a name="get-help-app"></a>Abrufen von Hilfe-app
+## <a name="get-help-app"></a>Hilfe-App abrufen
 
-Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Hilfe**, eine benutzerfreundliche Schnittstelle in der Endbenutzer-Gerät integriert.  
+Die bevorzugte Methode für die Unterstützung Ihrer Benutzer ist die **Hilfe**, eine benutzerfreundliche Oberfläche, die auf dem endbenutzergerät integriert ist.  
 
-![Hilfe](images/get-help.png)
+![Hilfe erhalten](images/get-help.png)
 
-Dies ist eine Anwendung, die auf allen Geräten von Microsoft verwalteten Desktops installiert ist und auf den Vorgangsbalken fixiert ist. 
+Hierbei handelt es sich um eine Anwendung, die auf allen verwalteten Desktop Geräten von Microsoft installiert ist und in der Taskleiste angeheftet ist. 
 
-- Endbenutzer können ein Rückruf an eine bereitgestellte Telefonnummer oder online chatten mit einem Servicemitarbeiter anfordern.
-- Anforderungen, die außerhalb von Microsoft verwalteter Desktop Support Bereich liegen werden an die lokale IT-Helpdesk telefonisch umgeleitet.  
+- Endbenutzer können einen Anruf zurück zu einer bereitgestellten Telefonnummer anfordern oder online mit einem Servicemitarbeiter chatten.
+- Anforderungen, die außerhalb des Bereichs des Microsoft Managed Desktop-Supports liegen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.  
 
 ## <a name="phone-support"></a>Telefonunterstützung
 
-Endbenutzer mit Microsoft verwalteter Desktop Geräte haben auch Zugriff auf gebührenfreien Telefonnummern, die sie anrufen können. Dadurch sollen verwendet werden, wenn Hilfe nicht zur Verfügung steht. Ist beispielsweise, wenn das Gerät oder das Gerät Anmeldung kann nicht unterbrochen. Es folgen die Telefonnummern für den Telefonsupport:
+Endbenutzer mit Microsoft Managed Desktop-Geräten haben auch Zugriff auf gebührenfreie Telefonnummern, die Sie anrufen können. Dies soll verwendet werden, wenn keine Hilfe verfügbar ist. Beispielsweise, wenn Sie sich nicht beim Gerät anmelden können oder das Gerät beschädigt ist. Hier sind die Telefonnummern für den Telefonsupport:
  
-- Vereinigte Staaten: +1 855 425 0216
-- Großbritannien: + 44 2076 601135
-- Australien: +61 180 037 0619
+
+- Vereinigte Staaten & Kanada (außer Quebec): + 1 855 425 0216
+- Vereinigtes Königreich: + 44 800 026 0698
+- Australien: + 61 180 037 0619
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- [Admin-Unterstützung für Microsoft verwalteter Desktop](admin-support.md). 
-- [Unterstützung für Microsoft verwalteten Desktops](../service-description/support.md).
+- [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
+- [Unterstützung für Microsoft Managed Desktop](../service-description/support.md).

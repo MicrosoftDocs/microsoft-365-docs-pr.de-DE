@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
-ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278318"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop
 

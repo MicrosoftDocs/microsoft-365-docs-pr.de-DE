@@ -1,56 +1,57 @@
 ---
-title: Reihenfolge von Geräten in Microsoft verwalteten Desktops
+title: Bestellen von Geräten in Microsoft Managed Desktop
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/25/2018
-ms.openlocfilehash: 75098621f505513f6855b08e9cd9816992e95a86
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 88efccaf3970f58281338e436edbb7110df2a7de
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289492"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Reihenfolge verwalteter Microsoft-Desktop-Geräte
+# <a name="order-microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte bestellen
 
-Microsoft ist eine kleine Einkaufswagen Erfahrung in den Vereinigten Staaten (USA), derzeit Pilotphase, wie unten beschrieben. Wenn Sie sich außerhalb der USA befinden oder Ihr Gerät Auftrag für mehr als 50 Geräte wird, empfehlen wir arbeiten mit einem unserer Partner genehmigte Gerät. Sie können sich an Ihren Microsoft-Konto Kontakt, um weitere Hilfe beim Einrichten einer Gerätepartnerschaft treten.
+Microsoft pilotiert derzeit ein kleines Einkaufserlebnis in den USA (USA), wie unten beschrieben. Wenn Sie sich außerhalb der USA befinden oder Ihre gerätereihenfolge für mehr als 50-Geräte gilt, empfehlen wir die Zusammenarbeit mit einem unserer autorisierten Geräte Partner. Weitere Informationen zum Einrichten einer Gerätepartnerschaft erhalten Sie bei Ihrem Microsoft-Konto Kontakt.
 
-Wie sollte ich Geräte für Microsoft verwalteter Desktop bestellen?
+Wie kann ich Geräte für Microsoft Managed Desktop bestellen?
 
   |   
  --- | ---
-Von innerhalb der USA Sortierung weniger als 50 Geräte | [Bei verwalteten Desktops Verwaltungsportal von Microsoft bestellen](https://aka.ms/mmdportal)
-Außerhalb der USA | Wenden Sie sich an Ihrem Microsoft Account team
-Mehr als 50 Geräte Sortierung | Wenden Sie sich an Ihrem Microsoft Account team
+Von innerhalb der Vereinigten Staaten, bestellen weniger als 50-Geräte | [Bestellung über das Microsoft Managed Desktop Admin Portal](https://aka.ms/mmdportal)
+Außerhalb der USA | Wenden Sie sich an Ihr Microsoft-Konto Team
+Bestellen von mehr als 50 Geräten | Wenden Sie sich an Ihr Microsoft-Konto Team
 
-## <a name="order-devices"></a>Anordnen von Geräten
-Verwenden Sie diese Anweisungen für Reihenfolge Geräte in den USA. Sie beginnen im Microsoft- **Desktop-Verwaltungsportal verwaltet**, aber Sie können die Käufe über **Microsoft Store für Business**. 
+## <a name="order-devices"></a>Geräte bestellen
+Verwenden Sie diese Anweisungen, um Geräte in den USA zu bestellen. Sie beginnen im Microsoft **Managed Desktop Admin-Portal**, aber Sie machen die Einkäufe über **Microsoft Store for Business**. 
 
- **Reihenfolge-Geräte**
- 1. Melden Sie sich bei [verwalteten Desktops Verwaltungsportal von Microsoft](https://aka.ms/mmdportal)
- 2. Wählen Sie auf Erste Schritte, klicken Sie unter Reihenfolge Geräte **Open Microsoft Store for Business Reihenfolge Geräte**.
+ **So bestellen Sie Geräte**
+ 1. Anmelden beim [Microsoft Managed Desktop Admin Portal](https://aka.ms/mmdportal)
+ 2. Wählen Sie auf erste Schritte unter Geräte bestellen **die Option Microsoft Store for Business zum Bestellen von Geräten öffnen**aus.
  
-    ![Erste Schritte, bestellen Sie Geräte](images/mmd-order-devices.png)
+    ![Erste Schritte, Reihenfolge der Geräte](images/mmd-order-devices.png)
     
-3. In Microsoft Store for Business können Sie Informationen zu Microsoft verwalteter Desktop und eine Vergleichstabelle der verfügbaren Geräte überprüfen. Klicken Sie auf **kaufen** , um ein Gerät auszuwählen. 
+3. In Microsoft Store for Business können Sie Informationen zu Microsoft Managed Desktop und eine Vergleichstabelle der verfügbaren Geräte lesen. Klicken Sie auf **kaufen** , um ein Gerät auszuwählen. 
 
-    ![Anmelden für Unternehmen, kaufen](images/msfb-buy.png)
+    ![Store for Business, kaufen](images/msfb-buy.png)
 
-4. Wählen Sie auf **das Gerät auswählen**das gewünschte Gerät. 
+4. Wählen Sie auf dem **Gerät**auswählen das gewünschte Gerät aus. 
 
-    ![Anmelden für Unternehmen, Gerät auswählen](images/msfb-pick-device.png)
+    ![Store for Business, Pick Device](images/msfb-pick-device.png)
 
-5. Wählen Sie auf **Features des Geräts auswählen**einen **Dienst planen**, geben Sie die Anzahl der Geräte und klicken Sie dann auf **zur Einkaufswagen hinzufügen**.
+5. Wählen Sie unter **Gerätefeatures**auswählen einen **Service Plan**aus, geben Sie die Anzahl der Geräte ein, und klicken Sie dann auf **in den Warenkorb**legen.
 
-6. Überprüfen Sie Ihre Einkaufswagen, und wählen Sie **Auschecken**oder **ein anderes Gerät hinzufügen**. 
+6. Überprüfung Sie Ihren Warenkorb, und wählen Sie dann **Checkout**aus, oder **fügen Sie ein weiteres Gerät hinzu**. 
 
-7. Fortzusetzen Sie den Checkout-Vorgang, überprüfen Sie Ihre Preise, akzeptieren Sie Lizenzierung Bedingungen und wählen Sie **anmelden und bestellen**. 
+7. Setzen Sie den Checkout-Prozess fort, überdenken Sie Ihre Preise, akzeptieren Sie Lizenzbedingungen, und wählen Sie **Signieren und bestellen**aus. 
 
-Geräte zum innerhalb von drei Tagen in der Regel gehören. 
+Geräte liefern in der Regel innerhalb von drei Tagen. 
 
-Wenn Sie die Reihenfolge Geräte fertig sind, können Sie die Geräte überprüfen, die Sie in [verwalteten Desktops Verwaltungsportal von Microsoft](https://aka.ms/mmdportal)bestellt. Wählen Sie unter **Inventar** **Geräte**. 
+Wenn Sie die Bestellung von Geräten abgeschlossen haben, können Sie die im [Microsoft Managed Desktop Admin Portal](https://aka.ms/mmdportal)bestellten Geräte überprüfen. Wählen Sie unter **Inventar**die Option **Geräte**aus. 
 
-Wenn Geräte eingehen, an Ihre Mitarbeiter verteilen. Es ist keine zusätzliche einrichten oder Konfiguration erforderlich. 
+Wenn Geräte ankommen, verteilen Sie Sie an Ihre Mitarbeiter. Es sind keine zusätzlichen Einstellungen erforderlich. 
 

@@ -1,6 +1,6 @@
 ---
-title: Schützen von Enterprise-Dokumenten mit Microsoft Office-Add-ins - Microsoft 365 Enterprise | Microsoft-Dokumente
-description: Beschreibt, wie WIP und Intune verwenden, um Enterprise-Daten in Dokumenten mit Office-Add-ins zu schützen.
+title: Schützen von Enterprise-Dokumenten mit Microsoft Office-Add-Ins-Microsoft 365 Enterprise | Microsoft-Dokumente
+description: Beschreibt die Verwendung von WIP und InTune zum Schutz von Unternehmensdaten in Dokumenten mit Office-Add-Ins.
 author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
@@ -10,11 +10,11 @@ ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
 ms.openlocfilehash: 6871f288a7e5849b147cbf0aedb056f84575f376
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290760"
 ---
 # <a name="use-wip-and-intune-to-protect-enterprise-data-in-documents-running-office-add-ins"></a>Verwenden von WIP und Intune zum Schutz von Unternehmensdaten in Dokumenten, in denen Office-Add-Ins ausgeführt werden
 Wenn Benutzer in einer Organisation Office-Add-Ins zur Interaktion mit Unternehmensdaten verwenden, entsteht dadurch das Risiko von Datenlecks. Zum Schutz von Unternehmensdaten bei der Ausführung von Office-Add-Ins können Sie Windows Information Protection (WIP) und Microsoft Intune verwenden.

@@ -10,7 +10,9 @@ f1_keywords:
 - BCS365_M365SetupBanner
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,113 +21,113 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Erfahren Sie, wie Microsoft 365 Business einrichten, indem Sie vier Schritte ausführen.
-ms.openlocfilehash: f57239b884bd2e186c0bc01973130a10fa4cfe84
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie, wie Sie Microsoft 365 Business einrichten, indem Sie vier Schritte ausführen.
+ms.openlocfilehash: a1c8a41c3e291983276280a063248bdd10a7f85a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283901"
 ---
 # <a name="set-up-microsoft-365-business-by-using-the-setup-wizard"></a>Einrichten von Microsoft 365 Business mithilfe des Setup-Assistenten
 
-Führen Sie die Schritte 1 bis 4 unten.
+Führen Sie die Schritte 1-4 unten aus.
   
 ### <a name="set-up-microsoft-365-business"></a>Einrichten von Microsoft 365 Business
 
-Sehen Sie sich ein Video über das Microsoft 365 Business einrichten, wenn Sie nicht über einen lokalen Active Directory verfügen:
+Sehen Sie sich ein Video zum Einrichten von Microsoft 365 Business an, wenn Sie nicht über ein lokales Active Directory verfügen:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2?autoplay=false]
   
-Die Installationsschritte enthalten Informationen für Installationen, die lokale Active Directory enthalten. Wenn Sie weiterhin auf die Domäne eingebundener Geräte zugreifen möchten, lesen Sie die folgenden Artikel für zwei neue Art und Weise aktivieren, und führen Sie die Schritte aus, bevor Sie den Setup-Assistenten ausführen:
+Die Schritte zum Einrichten von Setups beziehen sich auf die lokalen Active Directory-Installationen. Wenn Sie weiterhin auf Domänen verbundene Geräte zugreifen möchten, lesen Sie die folgenden Artikel, um dies zu ermöglichen, und führen Sie die Schritte aus, bevor Sie den Setup-Assistenten ausführen:
   
-- [Aktivieren Sie in die Domäne eingebundener Windows 10 Geräte von Microsoft 365 Business verwaltet werden](manage-windows-devices.md)
+- [Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden](manage-windows-devices.md)
     
-    -Dies ist die empfohlene Option.
+    -Dies ist die empfohlene Methode.
     
-- [Zugriff auf lokale Ressourcen von einem Azure AD gehörenden Gerät in Microsoft 365 Business](access-resources.md)
+- [Zugreifen auf lokale Ressourcen über ein Azure AD-verbundenes Gerät in Microsoft 365 Business](access-resources.md)
     
-### <a name="step-1-personalize-sign-in"></a>Schritt 1: Personalisieren Sie-Anmeldung
+### <a name="step-1-personalize-sign-in"></a>Schritt 1: Personalisieren der Anmeldung
 
-1. Melden Sie sich mit Ihren Anmeldeinformationen globaler Administrator [Microsoft 365 Business](https://portal.microsoft.com) an. Wählen Sie die Kachel " **Admin** ", fahren Sie mit der Verwaltungskonsole. 
+1. Melden Sie sich bei [Microsoft 365 Business](https://portal.microsoft.com) mit ihren globalen Administratoranmeldeinformationen an. Klicken Sie auf die Kachel **Admin**, um zum Admin Center zu wechseln. 
     
-2. Wählen Sie **Setup starten** (je nach Ihrem Status mangelndes **Weiter Setup** stattdessen) in der Verwaltungskonsole, um den Assistenten zu starten. 
+2. Wählen Sie **Setup starten** (abhängig von Ihrem Status wird möglicherweise stattdessen die Option **Setup weiter** angezeigt) im Admin Center, um den Assistenten zu starten. 
     
-3. Geben Sie den Domänennamen ein, den Sie (wie "contoso.com") verwenden möchten.
+3. Geben Sie den Domänennamen ein, den Sie verwenden möchten (wie contoso.com).
     
-    Fahren Sie fort, und geben Sie Ihre Domäne, auch wenn Sie es bei Verwendung von Azure Active Directory verbinden, beispielsweise überprüft haben. Die folgenden beiden Schritte gelten nicht für Sie, wenn Sie Azure AD-Verbindung verwendet, um Ihre Domäne zu überprüfen.
+    Gehen Sie vor, und geben Sie Ihre Domäne ein, auch wenn Sie dies bei der Verwendung von Azure AD Connect überprüft haben. Die folgenden beiden Schritte gelten nicht für Sie, wenn Sie Azure AD Connect zum Überprüfen Ihrer Domäne verwendet haben.
     
-4. Führen Sie die Schritte im Assistenten zum [Erstellen von DNS-Datensätze an alle DNS-Hostinganbieter für Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) , die überprüft, ob Sie die Domäne besitzen. 
+4. Führen Sie die Schritte im Assistenten aus, um [DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 zu erstellen](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) , der überprüft, ob Sie die Domäne besitzen. 
     
-    Sehen Sie ein Beispiel Video des [Video: Setup Office 365 in der neuen Verwaltungskonsole](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Beachten Sie, dass in diesem Video die Schritte zum Data Protection Microsoft 365 Business nicht enthalten ist.
+    Sie können sich ein Beispiel Video von [Video ansehen: Einrichten von Office 365 im neuen Admin Center](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Beachten Sie, dass dieses Video nicht die Datenschutz Schritte von Microsoft 365 Business umfasst.
     
-    ![Screenshot des Business Cloud Suite Setup-Assistenten.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
+    ![Screenshot des Setup-Assistenten für die Business Cloud Suite.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
   
 ### <a name="step-2-add-users-and-assign-licenses"></a>Schritt 2: Hinzufügen von Benutzern und Zuweisen von Lizenzen
 
-1. Sie können hier Benutzer hinzufügen, oder können Sie in der Verwaltungskonsole [Benutzer später hinzufügen](add-users-m365b.md) . 
+1. Sie können Benutzer hinzufügen, oder Sie können später im Admin Center [Benutzer hinzufügen](add-users-m365b.md) . 
     
-    Alle Benutzer, die Sie hinzufügen möchten automatisch Microsoft 365 Business Lizenz zugewiesen.
+    Allen Benutzern, die Sie hinzufügen, wird automatisch eine Microsoft 365 Business-Lizenz zugewiesen.
     
-2. Wenn das Microsoft 365 Business-Abonnement umfasst vorhandener Benutzer (beispielsweise, wenn Sie Azure AD-Connect verwendet), erhalten Sie eine Option zum Zuweisen von Lizenzen für diese jetzt. Fahren Sie fort, und fügen Sie Lizenzen für diese ebenfalls.
+2. Wenn Ihr Microsoft 365 Business-Abonnement über vorhandene Benutzer verfügt (beispielsweise, wenn Sie Azure AD Connect verwendet haben), erhalten Sie jetzt die Option, Ihnen Lizenzen zuzuweisen. Gehen Sie vor, und fügen Sie Lizenzen hinzu.
     
-3. Sie erhalten auch eine Option, um Anmeldeinformationen für die neue Benutzer freizugeben, die Sie hinzugefügt haben. Sie können auch auszudrucken, per e-Mail senden oder herunterladen.
+3. Außerdem erhalten Sie eine Option zum Freigeben von Anmeldeinformationen für die neuen Benutzer, die Sie hinzugefügt haben. Sie können auswählen, ob Sie Sie ausdrucken, per e-Mail versenden oder herunterladen möchten.
     
-4. Überspringen Sie migrieren von e-Mail-Nachrichten, und wählen Sie auf der Seite **Migration e-Mail-Nachrichten** **Weiter** . 
+4. Überspringen Sie die Migration von e-Mail-Nachrichten, und wählen Sie **weiter** auf Seite **e-Mails migrieren** . 
     
-    Wenn Sie aus einer anderen e-Mail-Anbieter verschieben und Ihre Daten später kopieren möchten, können Sie [e-Mail-Migration und Kontakte zu Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
+    Wenn Sie von einem anderen e-Mail-Anbieter wechseln und Ihre Daten später kopieren möchten, können Sie [e-Mails und Kontakte zu Office 365 migrieren](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
     
-    ![Screenshot des zwei neue Benutzer im Setup-Assistenten hinzugefügt](media/8f729967-5c65-4ceb-b737-18119db40564.png)
+    ![Screenshot von zwei neuen Benutzern, die im Setup-Assistenten hinzugefügt wurden](media/8f729967-5c65-4ceb-b737-18119db40564.png)
   
-### <a name="step-3-connect-your-domain"></a>Schritt 3: Verbinden Sie Ihrer Domäne
+### <a name="step-3-connect-your-domain"></a>Schritt 3: Verbinden Ihrer Domäne
 
 > [!NOTE]
-> Wenn Sie, verwenden Sie die Domäne .onmicrosoft möchten oder Azure AD-Verbindung verwendet, wird dieser Schritt nicht angezeigt. 
+> Wenn Sie die. onmicrosoft-Domäne oder Azure AD Connect verwendet haben, wird dieser Schritt nicht angezeigt. 
   
-Um-Dienste einrichten zu können, müssen Sie einige Datensätze an Ihrer DNS-Host oder Domäne Registrierungsstelle zu aktualisieren.
+Um Dienste einzurichten, müssen Sie einige Datensätze bei Ihrem DNS-Host oder Ihrer Domänenregistrierungsstelle aktualisieren.
   
-1. Der Setup-Assistent wird in der Regel erkennt die zu Ihrer Registrierungsstelle und bietet Ihnen eine Verknüpfung, eine schrittweise Anleitung zum Aktualisieren von Ihrer NS-Datensätzen auf der Website der Registrierungsstelle. Wenn dies nicht der Fall, [Änderung Namens-Server zum Einrichten von Office 365 mit jeder domänenregistrierungsstelle](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
+1. Der Setup-Assistent erkennt in der Regel Ihre Registrierungsstelle und gibt Ihnen einen Link zu Schritt-für-Schritt-Anweisungen zum Aktualisieren Ihrer NS-Einträge auf der Registrierungsstelle. Wenn dies nicht der Fall ist, [Ändern Sie die Namenserver, um Office 365 für eine beliebige Domänenregistrierungsstelle](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)einzurichten.
     
-2. E-Mail und andere Dienste werden für Sie eingerichtet werden
+2. E-Mails und andere Dienste werden für Sie eingerichtet.
     
 ### <a name="step-4-manage-devices-and-work-files"></a>Schritt 4: Verwalten von Geräten und Arbeitsdateien
 
-1. Seite festlegen auf die **Protect Arbeitsdateien auf Ihren mobilen Geräten** **Protect Arbeitsdateien bei verlorenen oder gestohlenen Geräten sind** und Einstellungen für **den Zugriff von Benutzern auf Office-Dateien auf mobilen Geräten verwalten** auf **aktiviert**. Sie können auch die einzelnen untergeordneten festlegen durch Klicken auf die Richtungspfeile neben jede Einstellung zugreifen.
+1. Schützen Sie auf der Seite **Arbeitsdateien auf Ihren mobilen Geräten schützen** sowohl **Arbeitsdateien bei Verlust oder Diebstahl von Geräten** , und verwalten Sie, **wie Benutzer auf Office-Dateien auf mobilen Geräte** Einstellungen auf **on**zugreifen. Sie können auch auf jede unter Einstellung zugreifen, indem Sie auf die Chevrons neben jeder Einstellung klicken.
   
-  Alle Ihre lizenzierten Benutzern Arbeitsdateien sind jetzt geschützt auf iOS und Android-Geräte, sobald sie [Installieren von Office-apps](set-up-mobile-devices.md) (und die Authentifizierung mit den Anmeldeinformationen ihres Microsoft 365 Business). 
+  Alle Arbeitsdateien ihrer lizenzierten Benutzer sind jetzt auf iOS-und Android-Geräten geschützt, sobald Sie [Office-Apps installieren](set-up-mobile-devices.md) (und sich mit ihren Microsoft 365 Business-Anmeldeinformationen authentifizieren). 
   
-  ![Screenshot des schützen Arbeitsdateien auf der Seite für mobile Geräte](media/3139a9aa-6228-4e74-8166-c6a886d7319f.PNG)
+  ![Screenshot von Schutz von Arbeitsdateien auf der Seite "Mobile Geräte"](media/3139a9aa-6228-4e74-8166-c6a886d7319f.PNG)
   
-2. Setzen Sie **Secure Windows 10 Geräte** Einstellung auf **aktiviert**, auf der Seite **Gerätekonfiguration Windows 10 festgelegt** .
+2. Legen Sie auf der Seite **Windows 10-Gerätekonfiguration festlegen** die Einstellung für **sichere Windows 10-Geräte** auf **ein**fest.
   
-   Sie können auch die einzelnen untergeordneten festlegen durch Klicken auf den Doppelpfeil daneben zugreifen.
+   Sie können auch auf jede unter Einstellung zugreifen, indem Sie auf das Chevron daneben klicken.
   
-3. Legen Sie die Einstellung für die **Installation von Office auf Windows 10 Geräte** auf **Ja** , wenn alle Benutzer verfügen über Windows 10 Computer und entweder keine vorhandenen Office installiert, oder Klick-und-Los-Office-Installationen. Wenn dies nicht der Fall ist, legen Sie diese Option auf **Nein**. Sie können später aus dem Administrationscenter [automatisch installieren von Office](auto-install-or-uninstall-office.md) , nachdem Sie auf dem Computer des Benutzers vorbereitet haben. Anweisungen finden Sie unter [Vorbereiten der Installation von Office-Client](prepare-for-office-client-deployment.md).
+3. Legen Sie die Einstellung **Office auf Windows 10-Geräten installieren** auf **Ja** fest, wenn alle Ihre Benutzer Windows 10-Computer und entweder keine vorhandenen Office-Installationen oder Klick-und-Los-Office-Installationen haben. Wenn dies nicht der Fall ist, legen Sie diese Option auf **Nein**fest. Sie können Office später im Admin Center [automatisch installieren](auto-install-or-uninstall-office.md) , nachdem Sie die Benutzer Computer vorbereitet haben. Anweisungen finden Sie unter [Prepare for Office Clientinstallation](prepare-for-office-client-deployment.md).
   
-    Sobald sie die lizenzierte Benutzer Arbeitsdateien auf Geräten mit Windows 10 projiziert werden für eine Microsoft 365 Business Azure AD-Domäne oder [Windows 10 auf einem neuen Computer installieren](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) , während gleichzeitig teilnehmen an der Microsoft 365 [Teilnehmen an ihrem Windows-10-Gerät](set-up-windows-devices.md) Business Azure AD-Domäne. 
+    Die Arbeitsdateien der lizenzierten Benutzer auf Windows 10-Geräten werden projiziert, sobald Sie [Ihr Windows 10-Gerät](set-up-windows-devices.md) mit einer Microsoft 365 Business Azure AD-Domäne verbinden oder [Windows 10 auf einem neuen Computer installieren](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) und gleichzeitig dem Microsoft 365 beitreten. Business Azure AD-Domäne. 
   
-4. Klicken Sie auf **Weiter** und Sie mit dem Setup fertig sind. 
+4. Klicken Sie auf **weiter** , und Sie sind mit Setup fertig. 
   
-    Lassen Sie uns Feedback an dieser Stelle zu helfen, der zu optimieren.
+    Bitte geben Sie uns Feedback in diesem Schritt, um die Erfahrung zu verbessern.
   
-    ![Screenshot von vorbereiten Windows 10 Geräte-Seite](media/bff701c1-48a3-44f4-aa95-9d959d57c85b.PNG)
+    ![Screenshot der Seite "Vorbereiten von Windows 10-Geräten"](media/bff701c1-48a3-44f4-aa95-9d959d57c85b.PNG)
   
 ## <a name="additional-security-settings"></a>Zusätzliche Sicherheitseinstellungen
 
-Zusätzlich zu den Sicherheit und Compliance-Einstellung im Setup-Assistenten können Sie auch die folgenden zusätzlichen Einstellungen einrichten:
+Zusätzlich zur Sicherheits-und Konformitäts Einstellung im Setup-Assistenten können Sie auch die folgenden zusätzlichen Einstellungen einrichten:
   
-- Einrichten von Schutz gegen unsichere Anlagen. **Erweiterte Schutz** (ATP) identifiziert schädlichem Inhalt und klicken Sie dann blockiert die Übermittlung von unsicheren Anlagen Schutz gegen Phishing-Methoden und Ransomware Infektionen. Zum Schutz der Anlage zu aktivieren, finden Sie unter [Einrichten von Richtlinien für Office 365 ATP sichere Anlagen](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775#setpolicy).
+- Einrichten des Schutzes vor unsicheren Anlagen. **Erweiterter Bedrohungsschutz** (ATP) identifiziert bösartige Inhalte und blockiert dann die Bereitstellung von unsicheren Anlagen und schützt Sie vor Phishing-Schemata und Ransomware-Infektionen. Informationen zum Aktivieren des Anlagenschutzes finden Sie unter [Einrichten von Office 365 ATP Safe Attachments Policies](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775#setpolicy).
     
-- Schützen Sie Ihre Umgebung aus, wenn Benutzer auf böswillige Links klicken. ATP untersucht Links in e-Mails an die Zeit, die ein Benutzer darauf klickt. Wenn eine Verknüpfung nicht sicher ist, wird der Benutzer gewarnt, nicht auf die Website zugreifen oder darüber informiert, dass die Website blockiert wurde. Dies bietet Schutz vor Phishing-Methoden. [Einrichten von Richtlinien für sichere Links zu Office 365 ATP](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) oder [Richten Sie sichere Links zu Office 365 ATP-Richtlinien](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
+- Schützen Sie Ihre Umgebung, wenn Benutzer auf böswillige Links klicken. ATP untersucht Links in e-Mails zu dem Zeitpunkt, zu dem ein Benutzer darauf klickt. Wenn ein Link unsicher ist, wird der Benutzer gewarnt, die Website nicht zu besuchen oder zu benachrichtigen, dass die Website blockiert wurde. Dies schützt vor Phishing-Schemata. Einrichten [von office 365 ATP Safe Links](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) Policies oder [einrichten von Office 365 ATP Safe Links Policies](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
     
-- Sie können den gesamten Inhalt des Postfachs einschließlich gelöschte Elemente durch die Bereitstellung der gesamte Postfach eines Benutzers auf **Rechtsstreitigkeiten halten**beibehalten. Anweisungen finden Sie unter 
-- [Einrichten von e-Mail-Archivierung mit Exchange Online-Archivierung](security-features.md#set-up-email-retention-with-exchange-online-archiving).
+- Sie können alle Postfachinhalte, einschließlich gelöschter Elemente, beibehalten, indem Sie für ein vollständiges Postfach des Benutzers einen **Rechtsstreit halten**. Weitere Informationen finden Sie unter 
+- [Einrichten der e-Mail-Aufbewahrung mit der Exchange Online-Archivierung](security-features.md#set-up-email-retention-with-exchange-online-archiving).
     
-- Einrichten von benutzerdefinierten **Aufbewahrungsrichtlinien**, beispielsweise für eine bestimmte Zeitspanne beibehalten oder Löschen von Inhalt dauerhaft am Ende des Aufbewahrungszeitraums. Sie können benutzerdefinierte Aufbewahrungsrichtlinien in die Sicherheit und Compliance Center, klicken Sie auf **Daten Governance** aktivieren \> **Aufbewahrung**, und folgen Sie den Schritten im Assistenten. Finden Sie weitere Informationen finden Sie unter [Overview of Aufbewahrungsrichtlinien](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+- Richten Sie angepasste **Aufbewahrungsrichtlinien**ein, um beispielsweise eine bestimmte Zeitdauer beizubehalten oder Inhalte dauerhaft am Ende des Aufbewahrungszeitraums zu löschen. Sie können angepasste Aufbewahrungsrichtlinien im Securities and Compliance Center aktivieren, zur **Aufbewahrung**von **Datenverwaltung** \> wechseln und dann die Schritte im Assistenten befolgen. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
     
 ## <a name="next-steps"></a>Nächste Schritte
 
-Für Benutzer, die ihre Lizenzen haben, ist im nächste Schritt richten Sie Geräte ein.<br/> Finden Sie unter [Einrichten von Windows-Geräte für Microsoft 365 Geschäftsbenutzer](set-up-windows-devices.md) und [Einrichten von mobilen Geräten für Microsoft 365 Geschäftsbenutzer](set-up-mobile-devices.md). <br/>Finden Sie unter [Verwalten von Microsoft 365 Business](manage.md) Richtlinien von Links zu Themen über das Gerät und app-Schutz festlegen und wie Sie Daten von Benutzer-Geräten zu entfernen. 
+Für die Benutzer, die über Ihre Lizenzen verfügen, besteht der nächste Schritt darin, Geräte einzurichten.<br/> Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für microsoft 365-Geschäftsbenutzer](set-up-windows-devices.md) und [Einrichten von mobilen geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md). <br/>Weitere Informationen finden Sie unter [Verwalten von Microsoft 365 Business](manage.md) für Links zu Themen zum Festlegen von Geräte-und App-Schutzrichtlinien und zum Entfernen von Daten von Benutzergeräten. 
   
 
 

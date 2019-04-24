@@ -1,66 +1,70 @@
 ---
-title: Handhabung von Updates in Microsoft Managed Desktop
-description: Microsoft verwalteter Desktop auf dem neuesten Stand ist ein Gleichgewicht Geschwindigkeit und Stabilität.
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+title: Behandlung von Updates in Microsoft Managed Desktop
+description: Microsoft Managed Desktop auf dem neuesten Stand zu halten, ist ein Gleichgewichtzwischen Geschwindigkeit und Stabilität.
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/09/2019
-ms.openlocfilehash: bee6381b0f2b7b1e2d929329c3cf628ab7657678
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 0dad909ce9e17f993de64ba39b08f388c71abb89
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278644"
 ---
-# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Handhabung von Updates in Microsoft Managed Desktop
+# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Behandlung von Updates in Microsoft Managed Desktop
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/update-rings); do not delete.-->
 
 <!--Update management -->
 
-Microsoft verwalteter Desktop verbindet auf allen Geräten mit einer modernen Cloud-basierte Infrastruktur. Nachhaltiger Schutz von Windows, Office, Treibern, Firmware und Microsoft Store für Business Application Updates auf dem aktuellen Stand ist ein Gleichgewicht Geschwindigkeit und Stabilität. Um sicherzustellen, dass OS klingelt Bereitstellung verwendet werden und Richtlinien auf sichere Weise eingeführt. 
+Microsoft Managed Desktop verbindet alle Geräte mit einer modernen Cloud-basierten Infrastruktur. Die Aktualität von Windows, Office, Treibern, Firmware und Microsoft Store for Business-Anwendungen ist ein Gleichgewichtzwischen Geschwindigkeit und Stabilität. Bereitstellungsgruppen werden verwendet, um sicherzustellen, dass Betriebssystem und Richtlinien auf sichere Weise eingeführt werden. 
 
-## <a name="update-groups"></a>Aktualisieren von Gruppen
+Von Microsoft veröffentlichte Updates sind kumulativ und können als Qualitäts-oder Feature-Updates kategorisiert werden.
+Weitere Informationen finden Sie unter [Windows Update for Business: Update Types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
-Microsoft verwaltete Desktops werden vier Azure Active Directory-Gruppen zum Verwalten von Updates verwendet:
+## <a name="update-groups"></a>Gruppen aktualisieren
 
-- Test: Nicht in der Produktion Geräte für die direkte Verwendung Änderungen vor dem Bereitstellen von Änderungen auf den Rest des Mandanten zu überprüfen. In diesem Ring Geräte sind außerhalb des Gültigkeitsbereichs für dokumentierte Endbenutzersupport. 
-- Erste: Anfangsphase an Software und enthält und Geräte Vorabversionen werden.
-- Fast: Priorisiert Geschwindigkeit über Stabilität. Nützlich für die Qualitätsprobleme erkennen, bevor sie die umfassende Gruppe angeboten werden. 
-- Umfassende: Letzte Gruppe sein, um Features und QoE-Updates verfügen. Diese Gruppe enthält die Mehrzahl der Benutzer in den Mandanten und aus diesem Grund bevorzugt Stabilität gegenüber Geschwindigkeit bei der Bereitstellung.
+Microsoft Managed Desktop verwendet vier Azure AD-Gruppen zum Verwalten von Updates:
 
-Updates von Microsoft sind kumulativ und als Qualität oder Feature Updates kategorisiert werden können. Weitere Informationen finden Sie unter [Windows Update: häufig gestellte Fragen zu](https://support.microsoft.com/help/12373/windows-update-faq). 
+- **Test**: wird verwendet, um Änderungen an Microsoft Managed Desktop-Richtlinien, Betriebssystemupdates, Funktions Aktualisierungen und andere Änderungen an den Mandanten zu überprüfen. In der Testgruppe dürfen sich keine Endbenutzer befinden. Die Testgruppe ist von allen gängigen SLAs und Endbenutzer Unterstützung ausgenommen. Diese Gruppe kann verwendet werden, um die Kompatibilität von Anwendungen mit neuen Richtlinien-oder Betriebssystemänderungen zu überprüfen.  
+- **Erstens**: enthält frühe Software Adopters und Geräte, die möglicherweise vorab Updates unterliegen. Geräte in dieser Gruppe können Ausfällen auftreten, wenn es Szenarien gibt, die während der Tests im testring nicht behandelt wurden.
+- **Fast**: priorisiert die Geschwindigkeit der Stabilität. Hilfreich, um Qualitätsprobleme zu erfassen, bevor Sie für die allgemeine Gruppe angeboten werden. Diese Gruppe dient als nächste Überprüfungsebene, ist aber im allgemeinen stabiler als die Test-und First-Gruppen. 
+- **Allgemein**: in der letzten Gruppe stehen Feature-und Qualitäts Updates zur Verfügung. Diese Gruppe enthält die Mehrzahl der Benutzer im Mandanten und begünstigt daher die Stabilität bei der Bereitstellung. Das Testen von apps sollte hier ausgeführt werden, da die Umgebung am stabilsten ist. 
 
-Wie aktualisieren Ablauf der inhaltsbereitstellung:
-- Microsoft verwalteten Desktops wird ein neues Feature oder Qualität Update gemäß den unten angegebenen Zeitplan bereitgestellt.
-- Während der Bereitstellung verwalteter Microsoft-Desktop-Monitore auf Anzeichen für Fehler oder Unterbrechung (basierend auf Telemetrie Signale und Unterstützung der Endbenutzer vom System). Wenn alle erkannt werden, ist die Bereitstellung für alle aktuellen und zukünftigen Gruppen sofort angehalten.
-    - Beispiel: Wenn ein Problem beim Bereitstellen eines Updates für die Qualität der ersten Gruppe ermittelt werden, werden klicken Sie dann Update-Bereitstellungen zur, umfassende und Fast alle angehalten, bis das Problem behoben wurde.
-    - Kompatibilitätsprobleme können durch Ablegen ein Ticket in verwalteten Desktops IT Verwaltungsportal von Microsoft gemeldet werden.
-- Feature und QoE-Updates werden unabhängig voneinander angehalten. Pause kann für 35 Tagen in der Standardeinstellung ist jedoch reduziert oder erweitert, je nachdem, ob das Problem behoben ist.
-- Nachdem die Gruppen nicht angehalten werden, werden nach dem folgenden Zeitplan Bereitstellung fortgesetzt.
-- Dieser Bereitstellungsprozess gilt für Features und Qualität Updates, obwohl die Zeitachse für die einzelnen variiert.
+Weitere Informationen zu Rollen und Verantwortlichkeiten bei diesen Bereitstellungsgruppen finden Sie unter [Microsoft Managed Desktop Roles and Responsibilities](../intro/roles-and-responsibilities.md)
+
+FunktionsWeise der Updatebereitstellung:
+- Microsoft Managed Desktop stellt ein neues Feature oder Qualitäts Update gemäß dem unten angegebenen Zeitplan bereit.
+- Während der Bereitstellung überwacht Microsoft Managed Desktop nach Anzeichen des Fehlers oder der Unterbrechung (basierend auf Diagnosedaten und Endbenutzer-Support System). Wenn alle erkannt werden, wird die Bereitstellung für alle aktuellen und zukünftigen Gruppen sofort angehalten.
+    - Beispiel: Wenn bei der Bereitstellungeines Qualitäts Updates für die erste Gruppe ein Problem erkannt wird, werden die Bereitstellungen zunächst auf "zuerst", "schnell" und "Allgemein" angehalten, bis das Problem behoben ist.
+    - Kompatibilitätsprobleme können gemeldet werden, indem Sie ein Ticket im Microsoft Managed Desktop IT Admin-Portal einreichen.
+- Feature-und Quality-Updates werden unabhängig voneinander angehalten. Die Pause ist in der Standardeinstellung für 35 Tage aktiviert, kann jedoch reduziert oder erweitert werden, je nachdem, ob das Problem behoben wurde.
+- Sobald die Gruppen UN-angehalten sind, wird die Bereitstellung gemäß dem unten aufgeführten Zeitplan fortgesetzt.
+- Dieser Bereitstellungsprozess gilt sowohl für Feature-als auch für Qualitäts Updates, obwohl die Zeitachse für jeden unterschiedlich ist.
 
 <table>
-<tr><th colspan="5">Einstellungen für die Bereitstellung von Updates</th></tr>
-<tr><th>Updatetyp</th><th>Testen</th><th>Erste</th><th>Schnelle</th><th>Umfassende</th></tr>
-<tr><td>Qualität Updates für Betriebssystem</td><td>0 Tagen</td><td>0 Tagen</td><td>0 Tagen</td><td>3 Tage</td></tr>
-<tr><td>Feature-Updates für Betriebssystem</td><td>0 Tagen</td><td>30 Tage</td><td>60 Tage</td><td>90 Tage</td></tr>
-<tr><td>Treiber-firmware</td><td colspan="4">Folgt den Zeitplan für die Qualität updates</td></tr>
-<tr><td>Antivirus-definition</td><td colspan="4">Mit jedem Scan aktualisiert</td></tr>
+<tr><th colspan="5">Bereitstellungseinstellungen aktualisieren</th></tr>
+<tr><th>Aktualisierungstyp</th><th>Testen</th><th>Erster</th><th>Schnell</th><th>Allgemein</th></tr>
+<tr><td>Qualitäts Updates für das Betriebssystem</td><td>0 Tage</td><td>0 Tage</td><td>0 Tage</td><td>3 Tage</td></tr>
+<tr><td>Funktions Aktualisierungen für das Betriebssystem</td><td>0 Tage</td><td>30 Tage</td><td>60 Tage</td><td>90 Tage</td></tr>
+<tr><td>Treiber/Firmware</td><td colspan="4">Folgt dem Zeitplan für Qualitäts Updates</td></tr>
+<tr><td>Antiviren-Definition</td><td colspan="4">Bei jeder Überprüfung aktualisiert</td></tr>
 </table>
 
-Diese Rückstellung Perioden dienen absichtlich hohe Sicherheit und Leistungsstandards für alle Benutzer zu gewährleisten. Darüber hinaus behält sich basierend auf Daten über alle Microsoft verwalteter Desktop-Geräte und die unterschiedlichem Umfang und die Auswirkungen von Updates gesammelt, Microsoft verwalteter Desktop Flexibilität, um die Länge der oben genannten Verzögerungen Perioden für einige oder alle Bereitstellungsgruppen auf eine Anzeige ändern hoc-Basis.
+Diese Verzögerungszeiträume sind absichtlich darauf ausgelegt, hohe Sicherheits-und Leistungsstandards für alle Benutzer sicherzustellen. Darüber hinaus behält sich Microsoft Managed Desktop aufgrund der Daten, die auf allen Microsoft-Desktopgeräten und dem unterschiedlichen Umfang und der Auswirkung von Updates erfasst werden, die Flexibilität, die Länge der obigen Zeiträume für alle Bereitstellungsgruppen in einer AD zu ändern. hoc-Basis.
 
-## <a name="windows-insider-program"></a>Windows-Insider-Programm
+## <a name="windows-insider-program"></a>Windows Insider-Programm
 
-Microsoft verwalteter Desktop unterstützt keine Geräte, die Teil des Windows-Insider-Programms sind. Die Windows-Insider-Anwendung wird verwendet, um die Vorabversion der Software Windows überprüfen und ist für Geräte nicht geschäftskritischen vorgesehen. Dies ist zwar eine wichtige Microsoft-Initiative, ist es nicht für die Bereitstellung in produktionsumgebungen vorgesehen. 
+Microsoft Managed Desktop unterstützt keine Geräte, die Teil des Windows Insider-Programms sind. Das Windows Insider-Programm dient zur Überprüfung der Vorabversionen von Windows-Software und ist für nicht-missionskritische Geräte vorgesehen. Obwohl dies eine wichtige Microsoft-Initiative ist, ist Sie nicht für eine allgemeine Bereitstellung in Produktionsumgebungen vorgesehen. 
 
-Alle Geräte mit Windows-Insider Builds gefunden werden in der Testgruppe gebracht werden und nicht für Update Service Level Agreements (SLAs.
+Alle Geräte, die mit Windows-Insider-Builds gefunden werden, werden in die Test Gruppe aufgenommen und nicht für SLAs (Service Level Agreements) aktualisiert.
 
 ## <a name="bandwidth-management"></a>Bandbreitenverwaltung
 
-Delivery-Optimierung wird für alle operating System und Treiber-Updates verwendet. Es wird die Download-Größe aus dem Dienst Windows Update (WU) von Updates von Kollegen innerhalb des Unternehmensnetzwerks Suchvorgänge minimiert.
+Die Bereitstellungsoptimierung wird für alle Betriebssystem-und Treiberupdates verwendet. Es minimiert die Downloadgröße vom Windows Update (WU)-Dienst, indem Aktualisierungen von Peers innerhalb des Unternehmensnetzwerks gesucht werden.
 
 

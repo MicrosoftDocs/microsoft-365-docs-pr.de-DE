@@ -4,17 +4,18 @@ description: Bietet eine ausführliche Anleitung zu den einzelnen Schritten, die
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-Dokumentation, Windows 10 Enterprise, Bereitstellung
 author: JoeDavies-MSFT
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 21a4198c688e1865a029f18ff3ceeb2155d419e4
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 9b09f21c71f578c45a71149cedfd67a8ea9104e6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289405"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Schritt 1: Vorbereiten Ihrer Organisation auf Windows 10 Enterprise
 
@@ -25,38 +26,37 @@ ms.locfileid: "26868093"
 Beachten Sie vor dem Upgrade Ihrer Geräte auf Windows 10 Enterprise Folgendes:
 
 - **Ihre Domänen müssen hinzugefügt und verifiziert werden** <br>Ein Abonnement von Microsoft 365 umfasst einen Standarddomänennamen, der auf „onmicrosoft.com“ endet (z. B. „contoso.onmicrosoft.com“). Die meisten Organisationen bevorzugen es jedoch, bereits vorhandene Domänen zu nutzen, sodass E-Mail-Adressen auf den eigenen Domänennamen enden (z. B. benutzername@contoso.com). Um Ihre eigene Domäne verwenden zu können, müssen Sie diese zu Microsoft 365 hinzufügen und nachweisen, dass Sie deren Besitzer sind. Wir empfehlen Ihnen, Ihre Domänen jetzt hinzuzufügen und zu bestätigen, sodass diese verfügbar sind, wenn Sie Microsoft 365-Dienste wie E-Mail und Skype for Business einrichten.
-- **Sie müssen zu diesem Zeitpunkt noch keine Benutzer hinzufügen.** <br>Um Microsoft 365-Dienste nutzen oder Microsoft 365-Produkte installieren zu können, müssen die Benutzer über Microsoft 365-Konten und entsprechende Produktlizenzen verfügen. Wie Sie Benutzer zu Microsoft 365 hinzufügen, hängt von der Anzahl der Benutzer und davon ab, ob Sie derzeit ein lokales Active Directory einsetzten. Wenn Sie derzeit kein Active Directory nutzen (oder dieses nicht mit Microsoft 365 synchronisieren möchten), können Sie Benutzer direkt zu Microsoft 365 hinzufügen und Lizenzen entweder einzeln oder gruppiert zuweisen.<br>Wenn Sie ein lokales Active Directory einsetzen, können Sie [dieses mit Microsoft 365 synchronisieren](identity-azure-ad-connect-health.md), um Benutzerkonten in Azure AD zu erstellen, dem Cloudverzeichnis von Microsoft 365. Anhand dieser Methode können Sie Konten sowohl für Benutzer als auch für Sicherheitsgruppen erstellen, die Sie zur Verwaltung von Berechtigungen für Ressourcen einsetzen (wie SharePoint Online-Websitesammlungen oder -Dokumente). Durch die Synchronisierung Ihres Active Directory mit Microsoft 365 werden den Benutzern keine Lizenzen zugewiesen.
-- **Sie müssen zu diesem Zeitpunkt noch keine Benutzerlizenzen vergeben.** <br>Damit die Benutzer Microsoft 365-Dienste nutzen oder Software vom Microsoft 365-Portal installieren können, benötigen sie Produktlizenzen. Als globaler Administrator oder Benutzerverwaltungsadministrator können Sie einzelne oder gruppierte Produktlizenzen direkt in Microsoft 365 vergeben. Zudem können Sie [die Gruppenlizenzierung](identity-group-based-licensing.md) nutzen, die Benutzern automatisch eine Lizenz zuweist, wenn diese einer bestimmten Gruppe hinzugefügt werden. 
+- **Sie müssen zu diesem Zeitpunkt noch keine Benutzer hinzufügen.** <br>Um Microsoft 365-Dienste nutzen oder Microsoft 365-Produkte installieren zu können, müssen die Benutzer über Microsoft 365-Konten und entsprechende Produktlizenzen verfügen. Wie Sie Benutzer zu Microsoft 365 hinzufügen, hängt von der Anzahl der Benutzer und davon ab, ob Sie derzeit ein lokales Active Directory einsetzten. Wenn Sie derzeit kein Active Directory nutzen (oder dieses nicht mit Microsoft 365 synchronisieren möchten), können Sie Benutzer direkt zu Microsoft 365 hinzufügen und Lizenzen entweder einzeln oder gruppiert zuweisen.<br>Wenn Sie ein lokales Active Directory einsetzen, können Sie [dieses mit Microsoft 365 synchronisieren](identity-azure-ad-connect.md#identity-sync), um Benutzerkonten in Azure AD zu erstellen, dem Cloudverzeichnis von Microsoft 365. Anhand dieser Methode können Sie Konten sowohl für Benutzer als auch für Sicherheitsgruppen erstellen, die Sie zur Verwaltung von Berechtigungen für Ressourcen einsetzen (wie SharePoint Online-Websitesammlungen oder -Dokumente). Durch die Synchronisierung Ihres Active Directory mit Microsoft 365 werden den Benutzern keine Lizenzen zugewiesen.
+- **Sie müssen zu diesem Zeitpunkt noch keine Benutzerlizenzen vergeben.** <br>Damit die Benutzer Microsoft 365-Dienste nutzen oder Software vom Microsoft 365-Portal installieren können, benötigen sie Produktlizenzen. Als globaler Administrator oder Benutzerverwaltungsadministrator können Sie einzelne oder gruppierte Produktlizenzen direkt in Microsoft 365 vergeben. Zudem können Sie [die Gruppenlizenzierung](identity-self-service-group-management.md#identity-group-license) nutzen, die Benutzern automatisch eine Lizenz zuweist, wenn diese einer bestimmten Gruppe hinzugefügt werden. 
 - **Sie installieren Office 365 ProPlus separat** <br>Beim Erwerb einer Microsoft 365-Lizenz wird Office 365 ProPlus nicht automatisch auf den Clientcomputern installiert. Weitere Einzelheiten finden Sie unter [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md). 
 
-## <a name="set-windows-diagnostics-data-level"></a>Windows-Diagnose Datenebene festlegen
+## <a name="set-windows-diagnostics-data-level"></a>Festlegen der Windows-Diagnosedaten Ebene
 
-Microsoft verwendet Diagnosedaten, um Windows-Geräte zu schützen, indem Malwaretrends und andere Bedrohungen identifiziert werden, und unterstützt uns zudem dabei, die Qualität von Windows- und Microsoft-Diensten zu verbessern. Sie müssen sicherstellen, dass die Standardstufe des Diagnosediensts an allen Endpunkten in Ihrer Organisation aktiviert ist. *Dieser Dienst ist standardmäßig aktiviert und auf „Erweitert“ eingestellt.* Es empfiehlt sich jedoch zu überprüfen und sicherzustellen, dass Sensordaten empfangen werden. Nehmen Richtlinien die Einstellungen von Stufen vor, werden die Einstellungen auf Geräteebene überschrieben. 
+Microsoft verwendet Diagnosedaten, um Windows-Geräte zu schützen, indem Malware Trends und andere Bedrohungen identifiziert und die Qualität von Windows-und Microsoft-Diensten verbessert werden. Sie müssen sicherstellen, dass der Diagnosedienst auf einem Minimum an Basis für alle Endpunkte in Ihrer Organisation aktiviert ist. *Standardmäßig ist dieser Dienst aktiviert und auf die erweiterte Stufe festgelegt.* Es empfiehlt sich jedoch, zu überprüfen und sicherzustellen, dass Sie Sensordaten empfangen. Durch das Festlegen von Ebenen über Richtlinien werden Einstellungen auf Geräteebene außer Kraft gesetzt. 
 
-**Windows 10-Betriebssystem-Diagnosedatenebenen**
+**Diagnosedaten Ebenen des Windows 10-Betriebssystems**
 
-Sie können die Standardeinstellungen des Betriebssystems Diagnosedaten mithilfe der Verwaltungstools verwenden, die Sie bereits, die wie Gruppenrichtlinien, MDM oder Bereitstellen von Windows verwenden konfigurieren. Sie können die Einstellungen mit dem Registrierungs-Editor auch manuell ändern. Festlegen der Diagnosedaten Level durch eine Richtlinie zur Verwaltung überschreibt alle geräteeinstellungen auf Poolebene.
+Sie können die Diagnosedaten Einstellungen für das Betriebssystem mithilfe der Verwaltungstools, die Sie bereits verwenden, wie Gruppenrichtlinien, MDM oder Windows-proversionierung konfigurieren. Sie können Ihre Einstellungen auch manuell mithilfe des Registrierungs-Editors ändern. Wenn Sie Ihre Diagnosedaten Ebenen über eine Verwaltungsrichtlinie festlegen, werden alle Einstellungen auf Geräteebene außer Kraft gesetzt.
 
-Verwenden Sie den entsprechenden Wert in der nachfolgenden Tabelle, wenn Sie die Verwaltungsrichtlinie konfigurieren.
+Verwenden Sie den entsprechenden Wert in der folgenden Tabelle, wenn Sie die Verwaltungsrichtlinie konfigurieren.
 
 | Ebene | Gesammelte Daten | Wert |
 |:--- |:--- |:--- |
 | Sicherheit | Nur Sicherheitsdaten. | 0 |
-| Standard | Sicherheitsdaten sowie grundlegende System- und Qualitätsdaten. | 1 |
-| Erweitert | Sicherheitsdaten, grundlegende System- und Qualitätsdaten, erweiterte Einblicke sowie erweiterte Zuverlässigkeitsdaten. | 2 |
-| Vollständig | Sicherheitsdaten, grundlegende System- und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3 |
+| Basic | Sicherheitsdaten und grundlegende System-und Qualitätsdaten. | 1 |
+| Erweiterte | Sicherheitsdaten, grundlegende System-und Qualitätsdaten sowie verbesserte Einblicke und erweiterte Zuverlässigkeitsdaten. | 2 |
+| Vollständig | Sicherheitsdaten, grundlegende System-und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3 |
 
-Sie können die Diagnosedaten über eine der folgenden Methoden aktivieren:
+Sie können Diagnosedaten über eine der folgenden Methoden aktivieren:
 
-* 
-  **Microsoft Intune** – Wenn Sie beabsichtigen, Intune zur Verwaltung Ihrer Geräte einzusetzen, können Sie eine Konfigurationsrichtlinie zur Aktivierung von Diagnosedaten erstellen, indem Sie die Systemrichtlinie <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> konfigurieren. Weitere Einzelheiten zum Einrichten der Konfigurationsrichtlinie finden Sie unter [Verwalten von Einstellungen und Eigenschaften auf Ihren Geräten mit Microsoft Intune-Richtlinien](https://aka.ms/intuneconfigpolicies).
-* **Registry-Editor** – Sie können den Registrierungs-Editor verwenden, um Diagnosedaten manuell auf jedem Gerät in Ihrer Organisation zu aktivieren. Alternativ können Sie ein Skript zur Bearbeitung der Registrierung programmieren. Wenn bereits eine Verwaltungsrichtlinie, wie z. B. eine Gruppenrichtlinie oder MDM, existiert, wird diese die Registrierungseinstellung überschreiben.
-* **Gruppenrichtlinien** - Wenn Sie nicht vorhaben, Geräte in Intune registrieren, können Sie ein Gruppenrichtlinienobjekt verwenden, zu Ihrer Organisation Diagnosedaten Level festgelegt.
-* **Eingabeaufforderung** – Sie können die Windows 10-Diagnosedaten und -dienste so einstellen, dass diese automatisch über die Eingabeaufforderung gestartet werden. Diese Methode eignet sich besonders, wenn Sie den Dienst auf einzelnen Geräten testen möchten. Ein automatisches Starten des Dienstes mittels dieser Eingabeaufforderung hat keine Konfiguration der Diagnosedatenebene zur Folge. Haben Sie anhand der Verwaltungstools noch keine Diagnosedatenebene konfiguriert, wird der Dienst auf der standardmäßigen Ebene „Erweitert“ ausgeführt.
+* **Microsoft InTune** – Wenn Sie InTune zur Verwaltung Ihrer Geräte verwenden möchten, können Sie eine Konfigurationsrichtlinie erstellen, um Diagnosedaten zu aktivieren, indem Sie die <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> -Systemrichtlinie konfigurieren. Weitere Informationen zum Einrichten von Konfigurationsrichtlinien finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft InTune-Richtlinien](https://aka.ms/intuneconfigpolicies).
+* **Registrierungs-Editor** -Sie können den Registrierungs-Editor verwenden, um Diagnosedaten auf jedem Gerät in Ihrer Organisation manuell zu aktivieren. Alternativ können Sie ein Skript schreiben, um die Registrierung zu bearbeiten. Wenn bereits eine Verwaltungsrichtlinie vorhanden ist, wie etwa Gruppenrichtlinien oder MDM, wird diese Registrierungseinstellung außer Kraft gesetzt.
+* **Gruppenrichtlinien** -Wenn Sie keine Geräte in InTune registrieren möchten, können Sie ein Gruppenrichtlinienobjekt verwenden, um die Diagnosedaten Ebene Ihrer Organisation festzulegen.
+* **Eingabeaufforderungen** : Sie können Windows 10 Diagnostics-Daten und-Dienst so konfigurieren, dass Sie automatisch mit der Eingabeaufforderungen beginnen. Diese Methode ist am besten geeignet, wenn Sie den Dienst auf nur wenigen Geräten testen. Wenn der Dienst automatisch mit diesem Befehl gestartet werden kann, wird die Diagnosedaten Ebene nicht konfiguriert. Wenn Sie keine Diagnosedaten Ebene mithilfe von Verwaltungstools konfiguriert haben, wird der Dienst mit der standardmäßigen erweiterten Stufe betrieben.
 
-Weitere Informationen zu Windows-Diagnosedaten und deren Aktivierung entsprechend der von Ihnen gewählten Methode finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
+Weitere Informationen zu Windows-Diagnosedaten und zu deren Aktivierung finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization) .
 
-Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step1) für diesen Schritt anschauen.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step1) für diesen Schritt betrachten.
 
 ## <a name="next-step"></a>Nächster Schritt
 

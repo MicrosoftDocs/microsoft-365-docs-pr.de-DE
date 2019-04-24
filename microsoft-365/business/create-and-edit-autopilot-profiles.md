@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Informationen Sie zum Erstellen, bearbeiten, löschen oder Entfernen von AutoPilot Profile. '
-ms.openlocfilehash: 4658a27e5f2c64a52f8a7d08b3fc13df5e239dc3
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Informationen zum Erstellen, bearbeiten, löschen oder Entfernen von autoPilot-Profilen. '
+ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277109"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Erstellen und Bearbeiten von AutoPilot-Profilen
 
@@ -32,11 +35,9 @@ ms.locfileid: "26867863"
 
 Ein Profil gilt für ein Gerät oder eine Gerätegruppe.
   
-1. Wählen Sie im Microsoft 365 Business Admin Center auf der Karte **Geräteaktionen** die Option **Windows mit AutoPilot bereitstellen**. 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. wählen sie im Microsoft 365 Business Admin center die option **geräte** \> **autopilot**aus.
   
-2. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile** \> **Profil erstellen**.
+2. Klicken Sie **** auf der Seite Autopilot auf die Register \> Karte **profile** **Profil erstellen**.
     
 3. Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, mit dem Sie es identifizieren können, z.B. Marketing. Aktivieren Sie die gewünschte Einstellung (weitere Informationen finden Sie unter [Informationen zu AutoPilot-Profileinstellungen](autopilot-profile-settings.md)), und wählen Sie **Speichern**.
     
@@ -48,7 +49,7 @@ Nachdem Sie ein Profil erstellt haben, können Sie es einem Gerät oder einer Gr
   
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**. 
     
-2. Klicken Sie auf das Kontrollkästchen neben den Namen eines Geräts und in der Systemsteuerung **Gerät** , wählen Sie aus der Dropdownliste **zugewiesene Profil** ein Profil \> **Speichern**.
+2. Click the check-box next to a device name and in the **Device** panel, choose a profile from the **Assigned profile** drop-down \> **Save**.
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -60,7 +61,7 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**. 
     
-2. Klicken Sie auf das Kontrollkästchen neben den Namen eines Geräts und im **Profil** Bereich aktualisieren, die verfügbaren Werte \> **Speichern**.
+2. Click the check-box next to a device name and in the **Profile** panel update any of the available settings \> **Save**.
     
     Wenn Sie dies tun, bevor ein Benutzer das Gerät mit dem Internet verbindet, wird das Profil auf den Setupvorgang angewendet.
     
@@ -68,7 +69,7 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**. 
     
-2. Klicken Sie auf das Kontrollkästchen neben dem Gerätenamen, und klicken Sie in der Systemsteuerung **Profil** auf **Profil löschen** \> **Speichern**.
+2. Click the check-box next to a device name and in the **Profile** panel click **Delete profile** \> **Save**.
     
     Wenn Sie ein Profil löschen, wird es von einem Gerät oder einer Gruppe von Geräten entfernt, denen es zugewiesen war.
     
@@ -76,5 +77,5 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**. 
     
-2. Klicken Sie auf das Kontrollkästchen neben den Namen eines Geräts und in der Systemsteuerung **Gerät** , wählen Sie **keine** aus der Dropdownliste **zugewiesene Profil** \> **Speichern**.
+2. Click the check-box next to a device name and in the **Device** panel, choose a **None** from the **Assigned profile** drop-down \> **Save**.
     

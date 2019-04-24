@@ -6,11 +6,11 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.openlocfilehash: 217418cfce66baa02b30ae7d8a01b938a1f2366e
-ms.sourcegitcommit: 7af6350fb5a6d37934c1b6bfdc38acd09b2d5d86
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31988431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289132"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Registrieren von Geräten in Microsoft Managed Desktop
 

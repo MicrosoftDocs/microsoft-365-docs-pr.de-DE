@@ -1,51 +1,52 @@
 ---
-title: Microsoft verwalteter Desktop Vorgänge und Überwachung
+title: Microsoft Managed Desktop-Vorgänge und-Überwachung
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 12/18/2018
-ms.openlocfilehash: 66945d44df150b5be9af9a9dfe52daa4d7468298
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 391c5cca9f1d440a806fa094633b50c3256c2a26
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291460"
 ---
-# <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft verwalteter Desktop Vorgänge und Überwachung
+# <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Desktop-Vorgänge und-Überwachung
 
 <!-- Operations and monitoring: -->
 
 
-## <a name="change-management"></a>Änderungsmanagement
+## <a name="change-management"></a>Änderungsverwaltung
 
-In einem Dienst anbietet, das Gleichgewicht Zuständigkeitsbereich z. B. Hardwarewartung und Sicherheit für Updates verschiebt an den Dienstanbieter (Microsoft) anstelle der Kunde (Sie). Allerdings müssen Sie dennoch, Drittanbieter-sicherstellen und benutzerdefiniertes Software funktioniert wie erwartet, wenn Updates eingeführt werden weiterhin.
+In einem Dienstangebot liegt die Verantwortlichkeit für Bereiche wie Wartung der Hardware und Sicherheitsupdates bei dem Dienstanbieter (Microsoft), und nicht bei dem Kunden (Ihnen). Allerdings müssen Sie sicherstellen, dass Drittanbieter-und benutzerdefinierte Software weiterhin wie erwartet funktioniert, wenn Updates ausgeführt werden.
 
-Für lokale-Produkte verantwortlich Ihrer Organisation für die Verwaltung von ändern.
+Für lokale Produkte übernimmt Ihre Organisation alle Verantwortung für die Verwaltung von Änderungen.
 
-### <a name="balance-of-responsibility"></a>Verteilen der Verantwortung
+### <a name="balance-of-responsibility"></a>Verantwortungs Ausgleich
 
-Responsibility | Microsoft verwalteter Desktop-Dienst | Microsoft-365-Clientsoftware | Lokale Clients und Server | 3. Partei und benutzerdefinierte software
+Responsibility | Microsoft Managed Desktop-Dienst | Microsoft 365-Client Software | Lokale Clients und Server | Drittanbieter-und benutzerdefinierte Software
 ----- | ----- | ----- | ----- | -----
-Bereitstellen neue Funktionalität | Microsoft | Microsoft | Beide | Kunde
-Testen neuer Features zum Sicherstellen der Qualität |  Microsoft | Microsoft | Beide | Kunde
-Kommunikation zu neuen Features | Beide | Beide | Beide | Kunde
-Integrieren von benutzerdefinierten Software | Beide | Beide | Kunde | Kunde
+Bereitstellen neue Funktionalität | Microsoft | Microsoft | In beide Richtungen | Kunde
+Testen neuer Features zum Sicherstellen der Qualität |  Microsoft | Microsoft | In beide Richtungen | Kunde
+Kommunikation zu neuen Features | In beide Richtungen | In beide Richtungen | In beide Richtungen | Kunde
+Integrieren von benutzerdefinierten Software | In beide Richtungen | In beide Richtungen | Kunde | Kunde
 Anwenden von Sicherheitsupdates | Microsoft | Microsoft | Kunde | Kunde
 Warten von Systemsoftware | Microsoft | Microsoft | Kunde | Kunde
 Paket für die Bereitstellung | Microsoft | Microsoft | Kunde | Kunde
 
 
-### <a name="change-process-overview"></a>Übersicht über den Upgradeprozess ändern
+### <a name="change-process-overview"></a>Änderungsprozess Übersicht
 
-Es folgt eine Zusammenfassung der wie der Prozess der Änderung von Microsoft und Kunden gemeinsam genutzt wird. 
+Im folgenden finden Sie eine Zusammenfassung der Freigabe des Änderungsprozesses zwischen Microsoft und Kunden. 
 
 
 
 <table>
-<tr><th></th><th><p>Die Rolle von Microsoft:</p></th><th><p>Rolle des Kunden:</p></th></tr>
-<tr><td>Vor einer Änderung</td><td><ul><li>Festlegen der Erwartungen an Dienständerungen</li><li>Benachrichtigen Sie Kunden 5 Tage im Voraus für Änderungen, die Administrator-Aktion erfordern.</li><li>Notruf Änderungen Anwenden einer Risikominderung vor benachrichtigen.</li></ul></td><td><ul><li>Verstehen der zu erwartenden Änderungen und Kommunikation</li><li>Lesen Microsoft verwalteten Desktops Nachrichtencenter regelmäßig.</li><li>Überprüfen und Aktualisieren interner Change Management-Prozesse</li><li>Verstehen Sie und überprüfen Sie der Kompatibilität mit Microsoft verwalteter Desktop Anforderungen. </li><li>Bestätigen Sie und genehmigen Sie, wenn erforderlich.</li></ul></td></tr><tr><td>Während einer Änderung</td><td><ul><li>Freigeben und monatliche Sicherheitsupdates und nicht sicherheitsrelevante Updates für Windows 10 und Office 365-Clients bereitstellen.</li><li>Signale Daten überwachen und Warteschlangen Auswirkungen unterstützen.</li></ul></td><td><ul><li>Überprüfen Sie der Microsoft Managed Desktop Message Center und alle zusätzlichen Informationen.</li><li>   Keine Aktion erforderlich, falls zutreffend, und Testen von Anwendungen.</li><li>Wenn ein Szenario Problembehebung aufgetreten ist, erstellen Sie eine Supportanfrage.</li></ul></td></tr><tr><td>Nach einer Änderung</td><td><ul><li>Sammeln von Feedback von Kunden zur Verbesserung der Einführung von zukünftigen Änderungen.</li><li>Signale Daten überwachen und Warteschlangen Auswirkungen unterstützen.</li></ul></td><td><ul><li>Arbeiten Sie mit Personen in Ihrer Organisation, um die Änderung zu übernehmen.</li><li>   Überprüfen Sie ändern und Annahme Verwaltungsprozesse für Verkaufschancen, Effizienz zu erhalten.</li><li>Geben Sie allgemeine Kommentare und bestimmte Feedback in das Verwaltungstool Feedback.</li><li>Schulen von Benutzern an den Windows-Hub Feedback und die Schaltfläche Smiley in Office-apps mit app-spezifischen Feedback geben möchten.</li></ul></td></tr>
+<tr><th></th><th><p>Rolle von Microsoft:</p></th><th><p>Rolle des Kunden:</p></th></tr>
+<tr><td>Vor einer Änderung</td><td><ul><li>Festlegen der Erwartungen an Dienständerungen</li><li>Informieren Sie die Kunden 5 Tage im Voraus über Änderungen, die eine Administratoraktion erfordern.</li><li>Wenden Sie bei Notfalländerungen eine Minderung vor der Benachrichtigung an.</li></ul></td><td><ul><li>Verstehen der zu erwartenden Änderungen und Kommunikation</li><li>Regelmäßiges Lesen des Microsoft Managed Desktop-Nachrichten Centers.</li><li>Überprüfen und Aktualisieren interner Change Management-Prozesse</li><li>Verstehen und Überprüfen der Einhaltung der Anforderungen von Microsoft Managed Desktop. </li><li>Bestätigen und genehmigen, falls erforderlich.</li></ul></td></tr><tr><td>Während einer Änderung</td><td><ul><li>Veröffentlichen Sie monatliche Sicherheits-und nicht sicherheitsrelevante Updates für Windows 10-und Office 365-Clients.</li><li>Überwachen von Datensignalen und unterstützen von Warteschlangen.</li></ul></td><td><ul><li>Überprüfen Sie das Microsoft Managed Desktop-Nachrichten Center, und überprüfen Sie zusätzliche Informationen.</li><li>   Führen Sie ggf. erforderliche Aktionen aus, und testen Sie Anwendungen.</li><li>Wenn ein Break/Fix-Szenario erlebt wird, erstellen Sie eine Support Anfrage.</li></ul></td></tr><tr><td>Nach einer Änderung</td><td><ul><li>Sammeln von Kundenfeedback zur Verbesserung der Einführung zukünftiger Änderungen.</li><li>Überwachen von Datensignalen und unterstützen von Warteschlangen.</li></ul></td><td><ul><li>Arbeiten Sie mit Personen in Ihrer Organisation zusammen, um die Änderung zu übernehmen.</li><li>   Überwachen von Change-und Adoptions Verwaltungsprozessen für Möglichkeiten zur Effizienzsteigerung.</li><li>Geben Sie Allgemeines Feedback und spezifisches Feedback im Tool zum Administrator Feedback.</li><li>Schulen Sie Benutzer, um App-spezifisches Feedback mithilfe des Windows Feedback-Hubs und der smile-Schaltfläche in Office-Apps bereitzustellen.</li></ul></td></tr>
 <table> 
 
 
@@ -55,62 +56,62 @@ Es folgt eine Zusammenfassung der wie der Prozess der Änderung von Microsoft un
 
 ### <a name="change-types"></a>Änderungstypen
 
-Es gibt verschiedene Arten von Änderungen, die mit dem Dienst in regelmäßigen Abständen vorgenommen werden. Hängt von der Kommunikationskanal für diese Änderungen und die Aktionen, denen Kunden für zuständig sind.
+Es gibt verschiedene Arten von Änderungen, die in regelmäßigen Abständen an dem Dienst vorgenommen werden. Der Kommunikationskanal für diese Änderungen und die Aktionen, für die Kunden verantwortlich sind, variieren.
 
-Nicht alle Änderungen haben die gleiche Auswirkung auf die Benutzer oder Aktion erforderlich. Geplante und einige ungeplante aufgrund ihrer Beschaffenheit einige (nicht sicherheitsrelevante Updates und Sicherheitsupdates sind nicht in der Regel geplant). Je nach Art der Änderung kann der Kommunikationskanal variieren. Die folgende Tabelle enthält die Arten von Änderungen, die Sie für den Dienst Microsoft verwalteter Desktop erwarten können.
+Nicht alle Änderungen wirken sich gleichermaßen auf die Benutzer aus und erfordern eine Aktion. Einige sind geplant und einige nicht geplant (nicht sicherheitsrelevante Updates und Sicherheitsupdates sind in der Regel nicht geplant). Je nach Art der Änderung kann der Kommunikationskanal variieren. In der folgenden Tabelle sind die Arten von Änderungen aufgeführt, die Sie für den Microsoft Managed Desktop-Dienst erwarten können.
 
-|   | Funktionalität |   Nicht sicherheitsrelevante Sicherheitsupdates |  Sicherheit
+|   | Funktionalität |   Nicht sicherheitsrelevante Updates |  Sicherheit
 --- | --- | --- | ---
-**Art der Änderung** | -Feature updates<br>-Neue Features und Anwendungen<br>-Veraltete features | Client-Hotfixes für Probleme | Sicherheitspatches
-**Voraus** | 5 Tage beachten, damit die Änderungen, die eine Aktion erfordern |    Nein, dies in der monatlichen Version enthalten   | Nein, dies in der monatlichen Version enthalten 
-**Kommunikationskanal** | -Nachrichtencenter<br>-E-Mail Benachrichtigung | -Nachrichtencenter<br>-E-Mail Benachrichtigung | -Nachrichtencenter<br>-E-Mail Benachrichtigung<br>-Sicherheitsbulletin oder CVE 
-**Erfordert Mandanten Administratoraktion** | Manchmal |  Nur selten |    Nur selten 
-**Typ der Aktion** | Ändern der Einstellungen | Kommunizieren der Änderungen an Benutzer | Ändern der Administratoreinstellungen     
-**Erfordert Tests** | Überprüfen von Geschäftsanwendungen, einschließlich RAS-Dienste |  Manchmal – Testen des Fix im Hinblick auf die Prozesse und Anpassungen |   Nur selten 
-**Beispiele für Änderung** | -Feature-Updates: IT-Admin-Portal vereinfacht Support Ticket einreichen und überprüfen<br>-Neue Features oder Applications: halb jährliche Version eines Updates Feature Windows 10 | Hotfixes basierend auf den von Kunden gemeldeten Fehlern |  
+**Art der Änderung** | -Feature-Updates<br>-Neue Features oder Anwendungen<br>-VerAltete Features | Client-Hotfixes für Probleme | Sicherheitspatches
+**Vorankündigung** | 5 Tage Hinweis für Änderungen, die eine Aktion erfordern |    Nein, diese sind in der monatlichen Freigabe enthalten.   | Nein, diese sind in der monatlichen Freigabe enthalten. 
+**Kommunikationskanal** | -Nachrichten Center<br>-E-Mail-Benachrichtigung | -Nachrichten Center<br>-E-Mail-Benachrichtigung | -Nachrichten Center<br>-E-Mail-Benachrichtigung
+**Erfordert mandantenadministrator Aktion** | Manchmal |  Nur selten |    Nur selten 
+**Aktionstyp** | Ändern der Einstellungen | Kommunizieren der Änderungen an Benutzer | Ändern der Administratoreinstellungen     
+**Tests erforderlich** | Überprüfen von Geschäftsanwendungen, einschließlich RAS-Diensten |  Manchmal – Testen des Fix im Hinblick auf die Prozesse und Anpassungen |   Nur selten 
+**Beispiele für Änderungen** | -Feature-Updates: vereinfachte Unterstützung des Support Tickets und der Überprüfungen durch das IT-Verwaltungs Portal<br>-Neue Features oder Anwendungen: halbjährliche Version eines Windows 10-Funktionsupdates | Hotfixes basierend auf den von Kunden gemeldeten Fehlern |  
 
 
-## <a name="standard-operating-procedures"></a>Standardverfahren
+## <a name="standard-operating-procedures"></a>Standard-Betriebsverfahren
 
-Der Dienst Microsoft verwalteter Desktop implementiert und von Microsoft betrieben wird in der Microsoft-Cloud-Instanz, in dem Sie andere administrativen Aktivitäten durchführen können. Microsoft ist verantwortlich für Microsoft Managed Desktop-spezifische Installation, Konfiguration und Vorgang. 
+Der Microsoft Managed Desktop-Dienst wird von Microsoft in Ihrer Microsoft-Cloud-Instanz implementiert und betrieben, in der Sie andere administrative Aktivitäten durchführen können. Microsoft ist ausschließlich für Microsoft Managed Desktop-spezifische Einrichtung, Konfiguration und Betrieb verantwortlich. 
 
-Für lokale-Produkte übernimmt alle die Verantwortung für die Verwaltung von Setup und Konfiguration und betriebliche Aktivitäten Ihrer Organisation.
+Für lokale Produkte übernimmt Ihre Organisation die gesamte Verantwortung für die Verwaltung von Setup sowie für Konfigurations-und Betriebsaktivitäten.
 
-Categories |    Wird von Microsoft | Kunden werden
+Kategorien |    Microsoft wird | Kunde wird
 --- | --- | ---
-Netzwerk (Proxy, Paketinspektion, VPN)  | Advise- und mit Kunden Minimieren von Risiken für Geschäftsbenutzer planen. | -Erstellen Sie eine Supportanfrage Anfordern von Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Nur gelten Sie eine Änderung sobald Microsoft verwalteten Desktops Operations bewertet und empfohlen hat.
-Dienstkonten |-Implementieren, sicher speichern und die Anmeldeinformationen verwalten.<br> -Kommunizieren Sie vor unbefugten Zugriffen oder Verwendung von diese Anmeldeinformationen an Ihr Team Sicherheitsoperationen. | -Erstellen Sie eine Supportanfrage Anfordern von Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Nur gelten Sie eine Änderung sobald Microsoft verwalteten Desktops Operations bewertet und empfohlen hat.<br>-Nicht weisen Sie Richtlinie, mehrstufige Authentifizierung, bedingten Zugriff oder Bereitstellung der Anwendung Microsoft verwalteten Desktops Dienstkonten.<br>-Nicht zurückzusetzen Sie das Kennwort, oder verwenden Sie die Anmeldeinformationen.<br>-Öffnen Sie eine Sev C Supportanfrage an Microsoft verwalteten Desktops Operations, wenn verdächtiger Aktivitäten Intune oder Azure Überwachungsprotokolle im Zusammenhang mit dieser Dienstkonten festgestellt wird.
-Device-Gruppen | -Implementieren und Verwalten der Mitgliedschaft der Geräte innerhalb von Microsoft verwalteten Desktops Gruppen.<br>-Verwenden Sie die Gruppen Microsoft verwalteter Desktop, um die Zuordnung und Freigabe von Konfiguration und Updates für Geräte verwalten. | -Erstellen Sie eine Supportanfrage Anfordern von Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Nur gelten Sie eine Änderung sobald Microsoft verwalteten Desktops Operations bewertet und empfohlen hat.<br>-Ändern Sie die Mitgliedschaft einer beliebigen Gruppe verwalteter Microsoft-Desktop nicht.<br>– Verwenden Sie nur die Gruppen, um im Unternehmen Zertifikate für Dienste wie VPN, Windows Hello für Business oder e-Mail-Verschlüsselung oder corporate Wi-Fi-Profilkonfiguration zuzuweisen.<br>-Co-Management wenn vorhanden ist, alle Microsoft verwalteter Desktop Gruppen explizit ausschließen, bei der Bereitstellung von Configuration Manager-Client.
-Policies |  -Implementieren und Verwalten der Microsoft verwalteter Desktop-Richtlinien, die den Konfigurationsstatus Geräte im Dienst steuern.<br>-Bereitstellung von Updates, auf die Richtlinie oder Windows inkrementell mit Device-Gruppen.<br> -Schließen Sie aus explizit für nicht - Microsoft verwalteter Desktop Gruppen. | -Erstellen Sie eine Supportanfrage Anfordern von Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Nur gelten Sie eine Änderung sobald Microsoft verwalteten Desktops Operations bewertet und empfohlen hat.<br>-Nicht bearbeiten, oder Geräte oder Benutzer nicht vom Microsoft verwalteter Desktop-Dienst verwaltet Microsoft verwalteter Desktop Richtlinien zuweisen.
-Windows Defender Advanced Threat Protection | Überwachung und die Überprüfung der Geräte innerhalb des Bereichs des Diensts Microsoft verwalteter Desktop. | -Erstellen Sie eine Supportanfrage Anfordern von Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Anwenden Sie eine Änderung nur, wenn Microsoft verwalteten Desktops Operations bewertet geraten und hat
-Microsoft Store für Unternehmen |  Konfigurieren und Verwalten des Windows-Autopilot Profils für den Dienst Microsoft verwalteter Desktop. | -Erstellen Sie eine Supportanfrage Anfordern von Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Nur gelten Sie eine Änderung sobald Microsoft verwalteten Desktops Operations bewertet und empfohlen hat.<br>-Ändern Sie die Konfiguration des Profils Microsoft verwalteten Desktops Windows Autopilot nicht oder zugeordneten Geräte hinzufügen/entfernen.
-Zertifikate | | -Erstellen Sie eine Supportanfrage 60 Tage, bevor Sie ein Zertifikat abläuft, wobei die Informationen für eine geplante konfigurationsänderung, einschließlich der Konfigurationsdetails, Bereich, Zeitplan und anderen relevanten Details für Microsoft um zu prüfen.<br>– Nur gelten Sie eine Änderung sobald Microsoft verwalteten Desktops Operations bewertet und empfohlen hat.<br>-Aktualisieren Sie alle Zertifikate, die für das Zertifikat, VPN-Profile, und Wi-Fi-Profile konfigurieren erforderlich sind.
+Netzwerk (Proxy, Paketprüfung, VPN)  | Beratung und Planung mit Kunden zur Minimierung des Risikos für geschäftliche Benutzer. | -Erstellen Sie eine Supportanfrage, in der Informationen zu einer geplanten Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderen relevanten Details, die von Microsoft überprüft werden müssen.<br>-Wenden Sie nur eine Änderung an, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben.
+Dienstkonten |-Implementieren, sicheres Speichern und Verwalten der Anmeldeinformationen.<br> -Kommunizieren Sie nicht autorisierten Zugriff oder die Verwendung dieser Anmeldeinformationen für Ihr Sicherheitsteam. | -Erstellen Sie eine Supportanfrage, in der Informationen zu einer geplanten Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderen relevanten Details, die von Microsoft überprüft werden müssen.<br>-Wenden Sie nur eine Änderung an, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben.<br>-Weisen Sie keine Richtlinie, mehrstufige Authentifizierung, bedingten Zugriff oder Anwendungsbereitstellung zu den Microsoft Managed Desktop-Dienstkonten zu.<br>-Das Kennwort nicht zurücksetzen oder die Anmeldeinformationen verwenden.<br>-Öffnen Sie eine SEV C-Supportanforderung für Microsoft Managed Desktop-Vorgänge, wenn in InTune-oder Azure-Überwachungsprotokollen, die sich auf diese Dienstkonten beziehen, verdächtige Aktivitäten beobachtet werden.
+Gerätegruppen | -Implementieren und Verwalten der Mitgliedschaft von Geräten in Microsoft Managed Desktop-Gruppen<br>-Verwenden Sie die Microsoft Managed Desktop-Gruppen, um die Zuweisung und Freigabe von Konfigurationen und Updates für Geräte zu verwalten. | -Erstellen Sie eine Supportanfrage, in der Informationen zu einer geplanten Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderen relevanten Details, die von Microsoft überprüft werden müssen.<br>-Wenden Sie nur eine Änderung an, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben.<br>-Die Mitgliedschaft in einer Gruppe von Microsoft-verwalteten Desktops wird nicht geändert.<br>-Verwenden Sie die Gruppen nur, um Unternehmenszertifikate für Dienste wie VPN, Windows Hello for Business oder e-Mail-Verschlüsselung oder die Firmen-WLAN-Profilkonfiguration zuzuweisen.<br>-Wenn die Co-Verwaltung vorhanden ist, schließen Sie bei der Bereitstellung des Configuration Manager-Clients explizit alle Microsoft Managed Desktop-Gruppen aus.
+Richtlinien |  -Implementieren und Verwalten der von Microsoft verwalteten Desktop Richtlinien, die den Konfigurationsstatus der Geräte innerhalb des Diensts steuern.<br>-Bereitstellen von Updates, in Richtlinien oder Windows, schrittweise Verwendung von Gerätegruppen.<br> – Explizites Ausschließen von Zielgruppen für nicht von Microsoft verwaltete Desktops. | -Erstellen Sie eine Supportanfrage, in der Informationen zu einer geplanten Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderen relevanten Details, die von Microsoft überprüft werden müssen.<br>-Wenden Sie nur eine Änderung an, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben.<br>-Nicht bearbeiten oder Zuweisen von Microsoft Managed Desktop-Richtlinien zu Geräten oder Benutzern, die nicht vom Microsoft Managed Desktop Service verwaltet werden.
+Windows Defender Advanced Threat Protection | Überwachen und untersuchen Sie Geräte innerhalb des Bereichs des Microsoft Managed Desktop-Diensts. | -Erstellen Sie eine Supportanfrage, in der Informationen zu einer geplanten Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderen relevanten Details, die von Microsoft überprüft werden müssen.<br>-Nur eine Änderung anwenden, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben
+Microsoft Store für Unternehmen |  Konfigurieren und verwalten Sie das Windows Autopilot-Profil für den Microsoft Managed Desktop-Dienst. | -Erstellen Sie eine Supportanfrage, in der Informationen zu einer geplanten Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderen relevanten Details, die von Microsoft überprüft werden müssen.<br>-Wenden Sie nur eine Änderung an, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben.<br>-Ändern Sie nicht die Konfiguration des Microsoft Managed Desktop-Windows Autopilot-Profils oder Hinzufügen/Entfernen von zugewiesenen Geräten.
+Zertifikate | | -Erstellen einer Supportanfrage 60 Tage vor Ablauf des Zertifikats, Anfordern von Informationen für eine geplante Konfigurationsänderung, einschließlich Konfigurationsdetails, Umfang, Zeitachsen und anderer relevanter Details, die von Microsoft überprüft werden müssen.<br>-Wenden Sie nur eine Änderung an, nachdem Microsoft Managed Desktop-Vorgänge bewertet und empfohlen haben.<br>-Aktualisieren Sie alle Zertifikate, die zum Konfigurieren von Zertifikat Profilen, VPN-Profilen und WLAN-Profilen erforderlich sind.
 
 
 
 
-## <a name="device-wipe-with-factory-reset"></a>Löschen des Geräts mit Herstellerstandard
+## <a name="device-wipe-with-factory-reset"></a>Gerätezurücksetzung mit Factory-Reset
 
-Verwaltete Desktops Betriebsteams ist möglich, eine Factory zurücksetzen auf Microsoft verwalteter Desktop verwalteten Geräten, die einem neuen Image versehen werden müssen. Dies ist hilfreich, wenn Sie ein Gerät an einem anderen Mitarbeiter erteilen müssen, oder wenn ein Mitarbeiter das Unternehmen verlässt. 
+Das Managed Desktop Operations-Team kann eine Factory-Zurücksetzung auf von Microsoft verwalteten Desktop-verwalteten Geräten durchführen, die neu abbildet werden müssen. Dies ist hilfreich, wenn Sie einem anderen Mitarbeiter ein Gerät zuweisen müssen oder wenn ein Mitarbeiter Ihr Unternehmen verlässt. 
 
 Es gibt einige Anforderungen:
 
-- Der Kunde mandantenadministrator muss eine Anforderung einreichen.
-- Wir brauchen den Computernamen für das Gerät
-- Benutzerkonto muss in Azure AD, bevor wir das Zurücksetzen gemacht werden
+- Der mandantenadministrator des Kunden muss eine Serviceanfrage übermitteln.
+- Wir benötigen den Computernamen für das Gerät.
+- Benutzerkonto muss in Azure AD vor dem Zurücksetzen
 
-Verwaltete Desktops Betriebsteams wird:
+Das Team für verwaltete Desktop Vorgänge wird Folgendes tun:
 
-- Der Name des Aufnahmegeräts in Intune nachschlagen
-- Senden Sie, dass die Factory Befehl auf das Gerät zurückzusetzen.
+- Nachschlagen des Gerätenamens in InTune
+- Senden des Factory-Reset-Befehls an das Gerät
 
 >[!NOTE]
->Entfernen Sie das Benutzerkonto nicht aus dem Azure Active Directory, bevor Sie auf den Herstellerstandard. Wenn der Benutzer in Azure Active Directory nicht ist, kann nicht Intune senden, dass die Factory Befehl auf dem Gerät zurückzusetzen. 
+>Entfernen Sie das Benutzerkonto nicht aus Azure AD, bevor Sie das Werk zurücksetzen. Wenn der Benutzer nicht in Azure AD ist, kann InTune den Factory-Reset-Befehl nicht an das Gerät senden. 
 
-Das Gerät wird in OOBE gestartet, und alle vorinstallierten Anwendungen und Einstellungen werden erneut angewendet werden. Dem Benutzer das Gerät muss Anfangssatz Informationen erneut bereitstellen. 
+Das Gerät wird in OOBE gestartet, und alle vorinstallierten Anwendungen und Einstellungen werden erneut angewendet. Der Benutzer des Geräts muss erneut die ersten Informationen einrichten. 
 
-Wenn das Gerät zurückgesetzt wurde, können Sie in Ihrer Organisation an einer anderen Person übergeben werden. Keines der vorherigen Benutzers Daten oder Enterprise-Daten werden auf dem Gerät. Der nächste Benutzer wird demselben Prozess durchlaufen, die die vorherige Person mit einer neuen Microsoft verwalteter Desktop Gerät haben.
+Wenn das Gerät zurückgesetzt wurde, können Sie es einer anderen Person in Ihrer Organisation übergeben. Keine der Daten des vorherigen Benutzers oder Enterprise-Daten befinden sich auf dem Gerät. Der nächste Benutzer wird den gleichen Prozess durchlaufen, den die vorherige Person mit einem neuen von Microsoft verwalteten Desktop Gerät ausgeführt hat.
 
-BitLocker ist eine wichtige Komponente der datensicherheit in diesem Prozess. BitLocker-Verschlüsselung bei Microsoft verwalteter Desktop Geräte bleibt Daten auf dem Laufwerk sichere auch nach Herstellerstandard zurücksetzen auf das Gerät angewendet wurde. Alle Daten, die auf dem Laufwerk wurde verfügbar mit dem nächsten Benutzer des Geräts nicht. Weitere Informationen finden Sie unter [Übersicht über die BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker ist ein wichtiger Bestandteil der Datensicherheit in diesem Prozess. Mit der BitLocker-Verschlüsselung auf verwalteten Desktop Geräten von Microsoft bleiben Daten auf dem Laufwerk auch nach dem Zurücksetzen der Factory auf dem Gerät sicher. Alle Daten auf dem Laufwerk stehen dem nächsten Benutzer des Geräts nicht zur Verfügung. Weitere Informationen finden Sie unter [BitLocker Overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
-Weitere Informationen finden Sie unter [Factory Zurücksetzen eines Geräts](https://docs.microsoft.com/intune/devices-wipe#factory-reset-a-device). 
+Weitere Informationen finden Sie unter [Factory Reset a Device](https://docs.microsoft.com/intune/devices-wipe#factory-reset-a-device). 

@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Informationen Sie zu standardmäßigen und andere Einstellungen in Microsoft 365 Business zum Sichern der Windows-10-Geräte verfügbar.
-ms.openlocfilehash: ebfe5f59e544b67e5a4f2ecd990031e9221ff8e5
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Hier finden Sie Informationen zu standardmäßigen und anderen Einstellungen in Microsoft 365 Business zur Sicherung von Windows 10-Geräten.
+ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285916"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
 
@@ -31,23 +34,21 @@ Schauen Sie sich ein Video mit Informationen zum Sichern von Windows 10-Geräten
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Melden Sie sich bei [Microsoft 365 Business](https://portal.office.com) mit globalen Administratoranmeldeinformationen an. 
+1. Melden Sie sich bei [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=837890) mit globalen Administratoranmeldeinformationen an. 
     
-2. Wählen Sie im Admin Center auf der Karte **Geräterichtlinien** die Option **Richtlinie hinzufügen** aus.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Richtlinien** \> **Hinzufügen**aus.
   
 3. Geben Sie im Bereich **Richtlinie hinzufügen** einen eindeutigen Namen für diese Richtlinie ein. 
     
 4. Wählen Sie unter **Richtlinientyp** die Option **Windows 10-Gerätekonfiguration** aus.
     
-5. Erweitern Sie **Windows-10-Geräten Secure** \> konfigurieren Sie die Einstellungen wie möchten Sie. Weitere Informationen finden Sie unter [Einstellungen verfügbar](protection-settings-for-windows-10-pcs.md#bkmk_availablesettings) . 
+5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](#available-settings) for more information. 
     
     Über den Link **Standardeinstellungen zurücksetzen** können Sie die Standardeinstellung jederzeit wiederherstellen. 
     
     ![Add policy pane with Windows 10 Device configuration selected](media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
-6. Als Nächstes entscheiden **erhalten, die diese Einstellungen?** Wenn Sie nicht, verwenden Sie die Standardeinstellung **alle Benutzer** Sicherheitsgruppe auswählen **ändern möchten**, suchen Sie nach der Sicherheitsgruppe, die diese Einstellungen erhalten \> **auswählen**.
+6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
     
 7. Wählen Sie schließlich **Fertig** aus, um die Richtlinie zu speichern, und weisen Sie sie Geräten zu. 
     

@@ -11,82 +11,74 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: 72dd50649dba9e290d50c2831557c06db3cb7586
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection:
+- M365-identity-device-management
+- M365-security-compliance
+ms.openlocfilehash: dde6da008f9a7b6457c9ed4a01d88a8ab284511d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290733"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinie Empfehlungen zum Sichern von SharePoint-Websites und Dateien
-In diesem Artikel wird die Implementierung der empfohlenen Identität und Gerätezugriffs Richtlinien zum Schutz von SharePoint Online und OneDrive für Unternehmen beschrieben. Diese Anleitung basiert auf [Allgemeine Identität und Gerät Richtlinien zugreifen](identity-access-policies.md). 
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinien Empfehlungen zum Sichern von SharePoint-Websites und-Dateien
+In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien implementieren, um SharePoint Online und OneDrive for Business zu schützen. Dieser Leitfadens basiert auf den allgemeinen [Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md). 
 
-Diese Empfehlungen sind auf drei verschiedene Ebenen der Sicherheit und Schutz für SharePoint-Dateien, die angewendet werden kann auf die Granularität von Ihren Anforderungen basieren: **Baseline**, **empfindlich**und **hochgradig regulierter**. Erfahren Sie mehr über diese Sicherheitskategorien und die empfohlenen Clientbetriebssysteme, die durch diesen Empfehlungen in der [Übersicht über die](microsoft-365-policies-configurations.md).
+Diese Empfehlungen basieren auf drei verschiedenen Sicherheits-und Schutzebenen für SharePoint-Dateien, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: **Basisrichtlinie**, **vertraulich**und **stark reguliert**. Weitere Informationen zu diesen Sicherheitsebenen und den empfohlenen Clientbetriebssystemen, auf die durch diese Empfehlungen verwiesen wird, finden Sie in der [Übersicht](microsoft-365-policies-configurations.md).
 
-Zusätzlich zu diese Anleitung unbedingt Konfigurieren von SharePoint-Websites mit dem richtigen Schutz, einschließlich der entsprechende Berechtigungen für Inhalte vertrauliche und hochgradig regulierter festlegen. Weitere Informationen zum Erstellen von Websites für die Baseline, empfindlich und hochgradig regulierter Schutz finden Sie unter [Secure SharePoint Online-Websites und Dateien](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
+Stellen Sie neben der Implementierung dieser Richtlinien sicher, dass Sie SharePoint-Websites mit der richtigen Menge an Schutz konfigurieren, einschließlich der Einstellung der entsprechenden Berechtigungen für vertrauliche und hochregulierte Inhalte. Weitere Informationen zum Erstellen von Websites für grundlegende, vertrauliche und hochgradig geregelte Schutzfunktionen finden Sie unter [Secure SharePoint Online Sites and Files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Aktualisieren allgemeine Richtlinien zum Einschließen von SharePoint- und OneDrive für Unternehmen
-Das folgende Diagramm veranschaulicht den Satz von empfohlenen Richtlinien für den Schutz von Dateien in SharePoint Online und OneDrive für Unternehmen. Es gibt an, welche Richtlinien aktualisiert oder zum Schutz für SharePoint Online und OneDrive for Business hinzufügen neu erstellt werden.
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Aktualisieren gängiger Richtlinien für SharePoint und OneDrive for Business
+Das folgende Diagramm veranschaulicht die empfohlenen Richtlinien für den Schutz von Dateien in SharePoint Online und OneDrive for Business. Er gibt an, welche Richtlinien aktualisiert oder neu erstellt werden sollen, um Schutz für SharePoint Online und OneDrive for Business hinzuzufügen.
 
 ![Zusammenfassung der Richtlinien für SharePoint Online und OneDrive](../images/identity-access-ruleset-sharepoint.png)
 
-Wenn Sie SharePoint Online eingeschlossen, wenn Sie die allgemeinen Richtlinien erstellt haben, müssen Sie nur die neuen Richtlinien erstellen. Beim Konfigurieren von Zugriffsregeln bedingte enthält SharePoint Online OneDrive für Unternehmen.
+Wenn Sie SharePoint Online bei der Erstellung der allgemeinen Richtlinien hinzugefügt haben, müssen Sie nur die neuen Richtlinien erstellen. Beim Konfigurieren von Regeln für den bedingten Zugriff umfasst SharePoint Online OneDrive for Business.
 
-Die neuen Richtlinien implementieren Geräteschutz für vertrauliche und hochgradig regulierter Inhalte durch Anwenden von bestimmten Access-Anforderungen auf SharePoint-Websites, die Sie angeben. 
+Die neuen Richtlinien implementieren Geräteschutz für vertrauliche und hochgradig regulierte Inhalte, indem bestimmte Zugriffsanforderungen auf von Ihnen angegebene SharePoint-Websites angewendet werden. 
 
-Die folgende Tabelle enthält die Richtlinien, die Sie entweder benötigen, um zu überprüfen und aktualisieren oder Erstellen einer neuen für SharePoint Online. Die allgemeinen Richtlinien link auf die entsprechende konfigurationsanweisungen im Artikel [Allgemeine Zugriffsrichtlinien Identität und Gerät](identity-access-policies.md) .
+In der folgenden Tabelle werden die Richtlinien aufgeführt, die Sie für SharePoint Online entweder überarbeiten und aktualisieren oder neu erstellen müssen. Die allgemeinen Richtlinien verweisen auf die zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md) .
 
 
-|Schutzebene|Policies|Weitere Informationen|
+|Schutzebene|Richtlinien|Weitere Informationen|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Erfordern Sie mehrstufiger Authentifizierung das, bei der Anmeldung Risiko *Mittel* oder *Hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einschließen von SharePoint Online bei der Zuweisung von Cloud-apps|
-|        |[Blockierung von Clients, die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einschließen von SharePoint Online bei der Zuweisung von Cloud-apps|
-|        |[Definieren von Richtlinien für die app-Schutz](identity-access-policies.md#define-app-protection-policies)|Achten Sie alle empfohlenen apps in der Liste apps enthalten sind. Achten Sie zum Aktualisieren der Richtlinie für jede Plattform (iOS, Android, Windows)|
-|        |[Kompatible PCs erfordern](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einschließen von SharePoint Online in der Liste der Cloud-apps|
-|        |[Verwenden Sie die app erzwungen Einschränkungen in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Fügen Sie diese neue Richtlinie hinzu. Dies weist Azure AD, verwenden Sie die Einstellungen in SharePoint Online angegeben. Diese Regel gilt für alle Benutzer, aber wirkt sich nur auf den Zugriff auf Websites in SharePoint Online-Richtlinien enthalten|
-|**Vertraulich**|[Erfordern Sie mehrstufiger Authentifizierung das, bei der Anmeldung Risiko *Niedrig*, *Mittel* oder *Hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einschließen von SharePoint Online in die Zuordnungen von Cloud-apps|
-|         |[Erfordern Sie kompatible PCs *und* mobile Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Einschließen von SharePoint Online in der Liste der Cloud-apps|
-||[SharePoint Online-Steuerelement Zugriffsrichtlinie](#sharepoint-online-access-control-policies): Browser nur Zugriff auf bestimmte SharePoint-Websites von nicht verwalteten Geräten zulassen|Dies verhindert, dass bearbeiten und Herunterladen von Dateien. Geben Sie Websites mithilfe von PowerShell|
-|**Streng geregelt**|[*Immer* erfordern mehrstufiger Authentifizierung das](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einschließen von SharePoint Online bei der Zuweisung von Cloud-apps|
-||[SharePoint Online-Steuerelement Zugriffsrichtlinie](#use-app-enforced-restrictions-in-sharepoint-online): blockieren Sie den Zugriff auf bestimmte SharePoint-Websites aus einer nicht verwalteten Geräten|Geben Sie Websites mithilfe von PowerShell|
+|**Basisplan**|[MFA erfordern, wenn das Anmelde Risiko *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
+|        |[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
+|        |[Definieren von App-Schutzrichtlinien](identity-access-policies.md#define-app-protection-policies)|Stellen Sie sicher, dass alle empfohlenen apps in der Liste der Apps enthalten sind. Achten Sie darauf, die Richtlinie für jede Plattform zu aktualisieren (iOS, Android, Windows)|
+|        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einbeziehen von SharePoint Online in die Liste der Cloud-apps|
+|        |[Verwenden von erzwungenen App-Einschränkungen in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Fügen Sie diese neue Richtlinie hinzu. Dies weist Azure AD an, die in SharePoint Online angegebenen Einstellungen zu verwenden. Diese Regel gilt für alle Benutzer, aber betrifft nur den Zugriff auf Websites, die in SharePoint Online-Zugriffsrichtlinien enthalten sind.|
+|**Vertraulich**|[MFA erfordern, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisungen von Cloud-apps|
+|         |[Erfordern kompatibler PCs *und* mobiler Geräte](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Einbeziehen von SharePoint Online in die Liste der Cloud-apps|
+||[Richtlinie für die SharePoint Online-Zugriffssteuerung](#sharepoint-online-access-control-policies): zulassen des Zugriffs auf bestimmte SharePoint-Websites auf nicht verwaltete Geräte durch den Browser|Dies verhindert das Bearbeiten und Herunterladen von Dateien. Verwenden von PowerShell zum Angeben von Websites|
+|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
+||[Richtlinie für die SharePoint Online-Zugriffssteuerung](#use-app-enforced-restrictions-in-sharepoint-online): Blockieren des Zugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten|Verwenden von PowerShell zum Angeben von Websites|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Verwenden Sie die app erzwungene Einschränkungen in SharePoint Online
-Wenn Sie zugreifen auf Steuerelemente in SharePoint Online zu implementieren, müssen Sie diese Richtlinie bedingten Zugriff in Azure AD anzuweisen, Azure AD, die Richtlinien zu erzwingen, die Sie in SharePoint Online konfigurieren erstellen. Diese Regel gilt für alle Benutzer, aber wirkt sich nur auf Zugriff auf die Websites, die von die Ihnen von PowerShell angegebenen, wenn Sie die Access-Steuerelemente in SharePoint Online erstellen.
+## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Verwenden von App-erzwungenen Einschränkungen in SharePoint Online
+Wenn Sie Zugriffssteuerungen in SharePoint Online implementieren, müssen Sie diese Richtlinie für den bedingten Zugriff in Azure AD erstellen, um Azure AD zu sagen, dass Sie die in SharePoint Online konfigurierten Richtlinien erzwingen. Diese Regel gilt für alle Benutzer, hat aber nur Auswirkungen auf den Zugriff auf die Websites, die Sie mithilfe von PowerShell angeben, wenn Sie die Zugriffssteuerung in SharePoint Online erstellen.
 
-So konfigurieren Sie diese Richtlinie finden Sie unter "Sperren oder beschränken Zugriff auf bestimmte SharePoint-Websitesammlungen oder OneDrive Konten" in diesem Artikel: [Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
+Informationen zum Konfigurieren dieser Richtlinie finden Sie unter "Sperren oder Einschränken des Zugriffs auf bestimmte SharePoint-Websitesammlungen oder OneDrive-Konten" in diesem Artikel: [Steuern des Zugriffs auf nicht verwaltete Geräte](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
 
 
-## <a name="sharepoint-online-access-control-policies"></a>SharePoint Online Zugriffsrichtlinien
-Microsoft empfiehlt, dass Sie Inhalte in SharePoint-Websites mit vertraulichen und hochgradig regulierter Inhalte mit Gerät zugreifen auf Steuerelemente zu schützen. Zu diesem Zweck erstellen eine Richtlinie, die Ebene der Schutz und die Websites, um den Schutz für anwenden angibt. 
-- Vertrauliche Websites: nur ein Browser-Zugriff erlauben. Dies verhindert, dass Benutzer bearbeiten und Herunterladen von Dateien.
-- Stark regulierter Websites: blockieren Sie den Zugriff von nicht verwalteten Geräten.
+## <a name="sharepoint-online-access-control-policies"></a>Richtlinien für die SharePoint Online-Zugriffssteuerung
+Microsoft empfiehlt, dass Sie Inhalte in SharePoint-Websites mit vertraulichen und hoch regulierten Inhalten mit Gerätezugriffs Steuerungen schützen. Hierzu erstellen Sie eine Richtlinie, die den Schutzgrad und die Websites angibt, auf die der Schutz angewendet werden soll. 
+- Vertrauliche Websites: Browser Zugriff zulassen. Dadurch wird verhindert, dass Benutzer Dateien bearbeiten und herunterladen.
+- Stark regulierte Websites: Blockieren des Zugriffs von nicht verwalteten Geräten aus.
 
-Finden Sie unter "Sperren oder beschränken Zugriff auf bestimmte SharePoint-Websitesammlungen oder OneDrive Konten" in diesem Artikel: [Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
+Weitere Informationen finden Sie unter "blockieren oder Einschränken des Zugriffs auf bestimmte SharePoint-Websitesammlungen oder OneDrive-Konten" in diesem Artikel: [Steuern des Zugriffs auf nicht verwaltete Geräte](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
 
-## <a name="how-these-policies-work-together"></a>Zusammenarbeit von dieser Richtlinien
-Es ist wichtig zu verstehen, dass SharePoint-Websiteberechtigungen geschäftlicher Bedarf für den Zugriff auf Websites in der Regel basieren. Diese Berechtigungen werden vom Websitebesitzer verwaltet und dynamisch angepasst werden können. Verwendung von SharePoint-Gerät Zugriffsrichtlinien Schutz auf diese Standorte, unabhängig davon, ob Benutzer eine Azure Active Directory-Gruppe zugewiesen sind sicher mit Basisplan von Groß-und Kleinschreibung oder stark regulierter Schutz. 
+## <a name="how-these-policies-work-together"></a>Zusammenarbeit dieser Richtlinien
+Es ist wichtig zu wissen, dass SharePoint-Websiteberechtigungen in der Regel auf geschäftliche Anforderungen für den Zugriff auf Websites basieren. Diese Berechtigungen werden von Websitebesitzern verwaltet und können sehr dynamisch sein. Die Verwendung von SharePoint-Gerätezugriffs Richtlinien stellt den Schutz dieser Websites sicher, unabhängig davon, ob Benutzer einer Azure AD-Gruppe zugewiesen sind, die mit dem Basisplan, dem vertraulichen oder dem hoch regulierten Schutz verknüpft ist. 
 
-Die folgende Abbildung enthält ein Beispiel, wie SharePoint Gerät Zugriffsrichtlinien Zugriff auf Websites schützen.
+Die folgende Abbildung zeigt ein Beispiel dafür, wie der Zugriff auf Websites durch SharePoint-Gerätezugriffs Richtlinien geschützt wird.
 
-![Wie SharePoint Gerät Zugriffsrichtlinien Websites schützen](../images/SharePoint-rules-scenario.png)
+![Schutz von Websites durch SharePoint-Gerätezugriffs Richtlinien](../images/SharePoint-rules-scenario.png)
 
 In der Abbildung sehen Sie Folgendes:
-- James bedingte Zugriffsrichtlinien Baseline-Schutz zugeordnet zugewiesen ist, aber er Zugriff gewährt werden kann auf SharePoint-Websites, die sensible oder stark regulierter Schutz zugeordnet. 
-- Wenn James greift auf eine sensible oder stark regulierter-Website, die er mit seinem PC gehört, wird seine Zugriff gewährt, solange seinem PC kompatibel ist.
-- Wenn James eine vertrauliche Website zugreift, die er Mitglied von seinem nicht verwalteten Telefon, was für geplante Benutzer zulässig ist ist, erhält er nur ein Browser-Zugriff auf die vertraulichen Website aufgrund der Gerät Zugriffsrichtlinie für diesen Standort konfiguriert. 
-- James greift auf einer stark regulierten Website er mit seinem nicht verwalteten Telefon gehört, wird er aufgrund der Richtlinie für diesen Standort konfiguriert blockiert werden. Er kann nur auf dieser Website mithilfe von seinem verwalteten und kompatible PC zugreifen.
+- James wird bedingten Zugriffsrichtlinien zugeordnet, die mit dem Basisschutz verbunden sind, aber er kann Zugriff auf SharePoint-Websites erhalten, die mit vertraulichen oder hoch regulierten Schutzfunktionen verbunden sind. 
+- Wenn James auf eine vertrauliche oder hochregulierte Website zugreift, in der er Mitglied der Verwendung seines PCs ist, wird sein Zugriff gewährt, solange sein PC kompatibel ist.
+- Wenn James auf eine vertrauliche Website zugreift, in der er sein nicht verwaltetes Telefon verwendet, das für Basisbenutzer zulässig ist, erhält er aufgrund der für diese Website konfigurierten Gerätezugriffs Richtlinie nur Browser Zugriff auf die vertrauliche Website. 
+- Wenn James auf eine stark regulierte Website zugreift, in der er Mitglied der Verwendung seines nicht verwalteten Telefons ist, wird er aufgrund der für diese Website konfigurierten Zugriffsrichtlinie blockiert. Er kann nur mit seinem verwalteten und kompatiblen PC auf diese Website zugreifen.
 
-
-<!---
-##Block access to content from unmanaged devices (SharePoint admin center)
-In the case of SharePoint Online, when a conditional access policy is applied to enforce Intune app protection policies, this might not apply to all applications that access SharePoint Online. Some applications, such as Exchange, have access to some SharePoint resources. For example, Exchange allows attaching SharePoint files by default. Conditional access policies applied to SharePoint Online will not restrict this access. 
-
-To ensure baseline protection is applied uniformly, regardless of which service is accessing SharePoint Online and OneDrive for Business, configure access controls directly in SharePoint admin center. We recommend you configure the following:
-- Block access from unmanaged devices. This includes devices that aren't compliant or joined to a domain. 
-- Block access from app that don't use modern authentication.
-
-See [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
--->
 
 
 

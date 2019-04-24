@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Hier erfahren Sie, wie Sie Windows-Geräte unter Windows 10 Pro für Microsoft 365 Geschäftsbenutzer einrichten. '
-ms.openlocfilehash: 482199b175c568bfae420619aa02024303894789
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business-Benutzer einrichten. '
+ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284331"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Einrichten von Windows-Geräten für Benutzer von Microsoft 365 Business
 
@@ -33,7 +36,7 @@ Wenn Sie Windows-Geräte unter Windows 7 Pro, Windows 8 Pro oder Windows 8.1 Pro
   
 Weitere Informationen zum Upgrade von Windows-Geräten auf Windows 10 Pro Creators Update erhalten Sie, indem Sie die Schritte in diesem Thema ausführen: [Aktualisieren von Windows-Geräten auf Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
-Ziehen Sie [Sicherstellen, dass das Gerät auf Windows 10 Business aktualisiert wurde](set-up-windows-devices.md#bkmk_verifywin10) zurate, um sich zu vergewissern, dass Sie über das Upgrade verfügen bzw. dass das Upgrade erfolgreich war. 
+Weitere Informationen finden Sie unter Überprüfen, ob das [Gerät mit Azure AD verbunden ist](#verify-the-device-is-connected-to-azure-ad) , um zu überprüfen, ob das Upgrade ausgeführt wurde. 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Verbinden von Windows 10-Geräten in Ihrer Organisation mit Azure AD
 
@@ -51,7 +54,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
     
 3. Beenden Sie die Windows 10-Geräteinstallation.
     
-   Sobald Sie fertig sind, wird der Benutzer in Ihrer Organisation mit Azure AD verbunden. Ziehen Sie zur Sicherheit [Sicherstellen, dass das Gerät mit Azure AD verbunden ist](set-up-windows-devices.md#bkmk_verifyaad) zurate. 
+   Sobald Sie fertig sind, wird der Benutzer in Ihrer Organisation mit Azure AD verbunden. Ziehen Sie zur Sicherheit [Sicherstellen, dass das Gerät mit Azure AD verbunden ist](#verify-the-device-is-connected-to-azure-ad) zurate. 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Geräte, die bereits eingerichtet wurden und Windows 10 Pro ausführen
 
@@ -73,13 +76,13 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
   
    ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. Geben Sie auf der Seite **Fangen Sie angemeldet** Ihr Konto arbeiten oder Schule \> **Weiter**.
+5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
-   Geben Sie auf der Seite **Kennwort eingeben** , Ihr Kennwort \> **Anmelden**.
+   On the **Enter password** page, enter your password \> **Sign in**.
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. Klicken Sie auf die ** sicherstellen, dass dies ist Ihre Organisation ** Seite, stellen Sie sicher, dass die Informationen korrekt sind, und klicken Sie auf **teilnehmen**.
+6. Vergewissern Sie sich auf der Seite Vergewissern Sie sich, dass **dies Ihre Organisation ist** , dass die Informationen richtig sind, und klicken Sie auf **beitreten**.
   
    Klicken Sie auf der Seite **Sie sind fertig!** auf **Fertig**.
   
@@ -87,7 +90,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
   
 Wenn Sie Dateien nach OneDrive for Business hochgeladen haben, synchronisieren Sie diese wieder. Wenn Sie ein Drittanbietertool zum Migrieren von Profil und Dateien verwendet haben, synchronisieren Sie diese auch in das neue Profil.
   
-## <a name="verify-the-device-is-connected-to-azure-ad"></a>Sicherstellen, dass das Gerät mit Azure AD verbunden ist
+## <a name="verify-the-device-is-connected-to-azure-ad"></a>Stellen Sie sicher, dass das Gerät mit Azure AD verbunden ist
 
 Um Ihren Synchronisierungsstatus zu überprüfen, klicken Sie auf der Seite **Auf Arbeits- oder Schulkonto zugreifen** unter **Einstellungen** in den Bereich **Verbunden mit** _ \<organization name\> _, um die Schaltflächen **Info** und **Trennen** verfügbar zu machen. Klicken Sie auf **Info**, um Ihren Synchronisierungsstatus abzurufen. 
   
@@ -107,7 +110,7 @@ Stellen Sie sicher, dass Ihre mit Azure AD verbundenen Windows 10-Geräte im Rah
     
     ![Verify that Windows edition is Windows 10 Business.](media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Informationen zum Einrichten von mobilen Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md). Informationen zum Festlegen von Richtlinien zum Schutz von Geräten oder Apps finden Sie unter [Verwalten von Microsoft 365 Business](manage.md).
   

@@ -4,13 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_ESPoliciesLM
 - ESPoliciesLM
 - BCS365_ESPoliciesLM
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: Informationen Sie zu Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen zum Schutz von Unternehmensdaten auf des Benutzers PDAs abzielen.
-ms.openlocfilehash: e52026ccc96e032bbccb7334992a447e14b2cc05
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informationen zu Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen abzielen, um Unternehmensdaten auf persönlichen Geräten des Benutzers zu schützen.
+ms.openlocfilehash: 11f0432b9e738841e6523dce436c534af41b827a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276785"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>So schützen die Richtlinien in Microsoft 365 Business Ihre Unternehmensdaten
 
@@ -39,6 +40,6 @@ Bei Android- und iOS-Geräten können Sie Anwendungsrichtlinien erstellen und be
   
 [Festlegen von Gerätekonfigurationen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md)
   
-[Festlegen von App-Schutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
+[Festlegen von App-Schutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
   
 

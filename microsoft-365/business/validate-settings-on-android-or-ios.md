@@ -1,5 +1,5 @@
 ---
-title: Überprüfen Sie die Einstellungen zum app-Schutz auf Android oder iOS-Geräten
+title: Überprüfen der APP-Schutzeinstellungen auf Android-oder iOS-Geräten
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 'Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.  '
-ms.openlocfilehash: 300f59e81a93cc3dfc03fd1d98891be1ac4f7795
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 5ab16d481bd11ec31a1387a7e94d8b08bb3e0abe
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287296"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Überprüfen Sie die Einstellungen zum app-Schutz auf Android oder iOS-Geräten
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Überprüfen der APP-Schutzeinstellungen auf Android-oder iOS-Geräten
 
-Führen Sie die Anweisungen in den Registerkarten, um Einstellungen zum app-Schutz auf Android oder iOS-Geräten zu überprüfen.
+Folgen Sie den Anweisungen auf den Registerkarten, um App-Schutzeinstellungen auf Android-oder iOS-Geräten zu überprüfen.
   
 ## <a name="androidtab"></a>[Android](#tab/)
   
@@ -132,7 +135,7 @@ Stellen Sie zuerst sicher, dass die Richtlinie auf die App angewendet wird, in d
   
 ### <a name="validate-require-a-pin-to-access-office-apps"></a>Überprüfen von "Für den Zugriff auf Office-Apps PIN anfordern"
 
-Wählen Sie im Bereich **Richtlinie bearbeiten** die Option **Bearbeiten** neben **Zugriffssteuerung für Office-Dokumente** aus, erweitern Sie **Benutzerzugriff auf Office-Dateien auf mobilen Geräten verwalten**, und stellen Sie sicher, dass **Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern** auf **Ein** festgelegt ist.
+Wählen Sie im Bereich **Richtlinie bearbeiten** neben **Zugriffssteuerung für Office-Dokumente** die Option **Bearbeiten** aus, erweitern Sie **Benutzerzugriff auf Office-Dateien auf mobilen Geräten verwalten**, und stellen Sie sicher, dass **Für den Zugriff auf Office-Apps PIN bzw. Fingerabdruck anfordern** auf **Ein** festgelegt ist.
   
 ![Make sure that the Require a PIN or fingerprint to acces Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   

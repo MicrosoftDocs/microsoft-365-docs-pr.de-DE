@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,41 +20,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
-description: Informationen Sie zum Erstellen, bearbeiten oder löschen eine Richtlinie zur Verwaltung von app und Arbeitsdateien auf Android oder iOS-Geräten zu schützen.
-ms.openlocfilehash: ed03227496120369b94bf2396974eebfd7798678
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informationen zum Erstellen, bearbeiten oder Löschen einer APP-Verwaltungsrichtlinie sowie zum Schutz von Arbeitsdateien auf Android-oder iOS-Geräten.
+ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277447"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte
 
 ## <a name="create-an-app-management-policy"></a>Erstellen einer App-Verwaltungsrichtlinie
 
-1. Melden Sie sich bei [Microsoft 365 Business](https://portal.office.com) mit globalen Administratoranmeldeinformationen an. 
+1. Melden Sie sich bei [Microsoft 365 Business Admin Center](https://go.microsoft.com/fwlink/p/?linkid=837890) mit globalen Administratoranmeldeinformationen an. 
     
-2. Wählen Sie im Admin Center auf der Karte **Geräterichtlinien** die Option **Richtlinie hinzufügen** aus.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. Wählen Sie im Admin Center **Geräte** \> **Richtlinien** \> **Hinzufügen**.
   
 3. Geben Sie im Bereich **Richtlinie hinzufügen** einen eindeutigen Namen für diese Richtlinie ein. 
     
 4. Wählen Sie unter **Richtlinientyp** eine der Optionen **Anwendungsverwaltung für Android** oder **Anwendungsverwaltung für iOS** aus - je nachdem, welchen Richtliniensatz Sie erstellen möchten. 
     
-5. Erweitern Sie **Protect Arbeitsdateien bei verlorenen oder gestohlenen Geräten sind** und **den Zugriff von Benutzern auf Office-Dateien auf mobilen Geräten verwalten** \> konfigurieren Sie die Einstellungen wie möchten Sie. Der **Zugriff von Benutzern auf Office-Dateien auf mobilen Geräten verwalten** ist standardmäßig **deaktiviert** , aber es wird empfohlen, dass Sie **es aktivieren** , und übernehmen Sie die Standardwerte. Weitere Informationen finden Sie unter [Einstellungen verfügbar](app-protection-settings-for-android-and-ios.md#bkmk_availablesettings) . 
+5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. Weitere Informationen finden Sie unter [Verfügbare Einstellungen](#available-settings) . 
     
     Mit dem Link **Standardeinstellungen zurücksetzen** können Sie jederzeit die Standardeinstellungen wiederherstellen. 
     
     ![Screenshot of Create a policy with Application management for Android selected](media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Als Nächstes entscheiden **erhalten, die diese Einstellungen?** Wenn Sie nicht die Standardsicherheitsgruppe für **Alle Benutzer** verwenden möchten, **Ändern**, wählen Sie die Sicherheitsgruppen, die diese Einstellungen erhalten \> **auswählen**.
+6. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     
 7. Wählen Sie schließlich **Fertig** aus, um die Richtlinie zu speichern, und weisen Sie sie Geräten zu. 
     
 ## <a name="edit-an-app-management-policy"></a>Bearbeiten einer App-Verwaltungsrichtlinie
 
-1. Wählen Sie auf der Karte **Richtlinien** **Richtlinie bearbeiten**.
+1. Wählen Sie auf der **Richtlinien** Karte **Richtlinie bearbeiten**aus.
     
 2. Wählen Sie im Bereich **Richtlinie bearbeiten** die Richtlinie aus, die Sie ändern möchten. 
     
@@ -63,7 +64,7 @@ ms.locfileid: "26868129"
 
 1. Wählen Sie auf der Registerkarte **Richtlinien** die Option **Richtlinie löschen** aus.
     
-2. Wählen Sie die Richtlinien, die Sie löschen möchten, im Bereich **Löschrichtlinie** \> **Wählen**und dann **bestätigen** , löschen die Richtlinie oder Richtlinien, die Sie ausgewählt haben. 
+2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
     
 ## <a name="available-settings"></a>Verfügbare Einstellungen
 
@@ -93,7 +94,7 @@ Mit den folgenden Einstellungen können Sie den Zugriff von Benutzern auf Office
 |PIN nach dieser Anzahl von fehlerhaften Anmeldeversuchen zurücksetzen  <br/> |Um zu verhindern, dass ein nicht autorisierter Benutzer eine PIN nach dem Zufallsprinzip errät, wird die PIN, die nach der angegebenen Anzahl von Fehlversuchen zurückgesetzt.  <br/> |
 |Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange ein Benutzer inaktiv sein kann, bevor er dazu aufgefordert wird, sich erneut anzumelden.  <br/> |
 |Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät empfänglicher für Schadsoftware werden kann. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
-|Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche Apps erlauben  <br/> |Wir lassen dies standardmäßig, jedoch ist die Einstellung **auf**der Benutzer konnte Informationen in einer Datei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert**ist, kann der Benutzer kann nicht zum Kopieren von Informationen aus einem Konto Arbeit in einer persönlichen app oder persönliches Konto verwendet.<br/> |
+|Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche Apps erlauben  <br/> |Dies ist standardmäßig zulässig, aber wenn die Einstellung **aktiviert**ist, kann der Benutzerinformationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert**ist, kann der Benutzer keine Informationen aus einem Arbeitskonto in eine persönliche APP oder ein persönliches Konto kopieren.  <br/> |
    
 
   

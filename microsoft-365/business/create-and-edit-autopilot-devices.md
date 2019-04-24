@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Erfahren Sie, wie Geräte mithilfe des AutoPilot in Microsoft 365 Business hochladen. Sie können ein Gerät oder eine Gruppe von Geräten ein Profil zuweisen.
-ms.openlocfilehash: cc1f81e9efd9b16e27b8abfbb0927d241535077e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie, wie Sie Geräte mit autoPilot in Microsoft 365 Business hochladen. Sie können einem Gerät oder einer Gruppe von Geräten ein Profil zuweisen.
+ms.openlocfilehash: fff2dbc6af45ef9d4189f23849d638172c19dfb2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277027"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Erstellen und Bearbeiten von AutoPilot-Geräten
 
@@ -37,16 +40,14 @@ Geräte müssen diese Anforderungen erfüllen:
 - Windows 10, Version 1703 oder höher.
     
 - Neue Geräte, die nicht auf der Windows-Willkommensseite angezeigt werden.
-    
-1. Wählen Sie im Microsoft 365 Business Admin Center auf der Karte **Geräteaktionen** die Option **Windows mit AutoPilot bereitstellen**. 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+
+1. wählen sie im Microsoft 365 Business Admin center die **** \> option devices autopilot **** \> **Add**aus.
   
-2. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte** \> **Geräte hinzufügen**.
+2. On the **Prepare Windows** page, choose the **Devices** tab \> **Add devices**.
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Navigieren Sie im Bereich **Geräte hinzufügen** zu einer [Liste der CSV-Datei](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) , die Sie vorbereitet haben \> **Speichern** \> **Schließen**.
+3. Navigieren Sie im Bereich **Geräte hinzufügen** zu einer [Gerätelisten-CSV-Datei](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) , die Sie \> in Vorbereitung **Speichern** \> **geschlossen**haben.
     
     Diese Informationen erhalten Sie von Ihrem Hardwareanbieter oder durch Verwendung des [PowerShell-Skripts Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), das eine CSV-Datei generiert. 
     

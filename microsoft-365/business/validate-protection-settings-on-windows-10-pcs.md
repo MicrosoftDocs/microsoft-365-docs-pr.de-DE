@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Erfahren Sie, wie Microsoft 365 Business app Protection Settings in Windows-10-Geräte zu überprüfen.
-ms.openlocfilehash: f00dd380103ad9498d77b0e8814bace3de168df4
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie, wie Sie Microsoft 365 Business-App-Schutzeinstellungen auf Windows 10-Geräten überprüfen.
+ms.openlocfilehash: 4f1f0993dff0ef8d3f6858a3749e063c7b5579c7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279964"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs
 
@@ -31,7 +34,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Überprüfen der Verbindungseinstellungen**
   
-1. Nachdem Sie die melden Sie sich mit Microsoft 365 Business Anmeldeinformationen und wie unter [Einrichten von Geräten für Microsoft 365 Geschäftsbenutzer Windows](set-up-windows-devices.md)Azure AD verbinden, wechseln Sie zur **Windows-Einstellungen** \> **Konten** \> **Access Arbeit "oder" School **. Wählen Sie **verbunden mit \<Mandantennamen\> Azure AD**, und klicken Sie dann auf **Info**.
+1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -61,7 +64,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
     
 2. Klicken Sie unter **Auf Arbeits- oder Schulkonto zugreifen** auf **Verbinden**.
     
-3. Geben Sie die Anmeldeinformationen für das Microsoft 365 Business in der **Richten Sie ein Arbeit oder Schule Konto Dialogfeld** \> **Anmelden**.
+3. Enter your Microsoft 365 Business credential into the **Set up a work or school account dialog** \> **Sign in**.
     
 4. Wählen Sie auf der Seite **Auf Arbeits- oder Schulkonto zugreifen** die Option **Geschäfts-, Schul- oder Unikonto** und dann **Informationen** aus.
     

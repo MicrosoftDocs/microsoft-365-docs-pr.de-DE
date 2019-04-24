@@ -8,7 +8,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: Hier erfahren Sie, wie Schutzfunktionen in Microsoft 365 Business Intune Einstellungen zugeordnet sind. Das Abonnement enthält keine Lizenz für Intune Einstellungen ändern.
-ms.openlocfilehash: 5ee5a457fe3f265dd37f6806ca8c11fe096718b6
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie, wie Schutzfunktionen in Microsoft 365 Business der InTune-Einstellungen zugeordnet werden. Das Abonnement bietet Ihnen eine Lizenz zum Ändern der InTune-Einstellungen.
+ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278553"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Zuordnung von Microsoft 365 Business-Schutzfunktionen zu Intune-Einstellungen
 
@@ -32,9 +35,9 @@ ms.locfileid: "26867829"
 
 In der folgenden Tabelle ist die Zuordnung von Android- und iOS-Einstellungen der Anwendungsschutzrichtlinie zu Intune-Einstellungen detailliert ausgeführt.
   
-Damit die Einstellung Intune ermittelt wird, während sich mit Ihren Microsoft 365 Business-Admin-Anmeldeinformationen angemeldet, wechseln Sie zur **Admin centers**und **Intune**.
+Um die Einstellung InTune zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu **Admin Center**und dann **InTune**.
   
- **Wichtig:** Ein Microsoft 365 Business-Abonnement enthält keine Lizenz für alle Intune Einstellungen ändern. Finden Sie unter [Einführung in die erste Schritte beim Intune.](https://docs.microsoft.com/intune/introduction-intune)
+ **Wichtig:** Ein Microsoft 365 Business-Abonnement bietet Ihnen eine Lizenz zum Ändern aller InTune-Einstellungen. Weitere Informationen finden Sie unter [Einführung in InTune.](https://docs.microsoft.com/intune/introduction-intune)
   
 Klicken Sie auf den Namen der Richtlinie, die Sie auswählen möchten, z. B. "Anwendungsrichtlinie für Android", und wählen Sie dann **Richtlinieneinstellungen** aus.
   
@@ -65,7 +68,7 @@ Unter **Benutzerzugriff auf Office-Dateien auf mobilen Geräten verwalten**
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Anwendungsschutzrichtlinie zu Intune-Einstellungen detailliert ausgeführt.
   
-Suchen das Intune Einstellung, während Sie sich mit Ihren Microsoft 365 Business-Admin-Anmeldeinformationen angemeldet, gehen Sie zur [Azure-Portal](https://portal.azure.com)und select **mehrere Dienste**aus, und geben Sie in dem **Filter**Intune **Intune App Schutz** auswählen \> ** App-Richtlinie**.
+Um die Einstellung InTune zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu [Azure Portal](https://portal.azure.com), wählen Sie **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, und wählen Sie **InTune-App-Schutz** \> **aus. App-Richtlinie**.
   
  **Wichtig**: Mit einem Microsoft 365 Business-Abonnement erhalten Sie nur die Möglichkeit, die Intune-Einstellungen zu ändern, die den in Microsoft 365 Business verfügbaren Einstellungen zugeordnet sind. 
   
@@ -74,7 +77,7 @@ Klicken Sie auf den Namen der Richtlinie, die Sie auswählen möchten, und wähl
 |**Anwendungsrichtlinieneinstellung in Windows 10**|**Intune-Einstellung(en)**|
 |:-----|:-----|
 |Arbeitsdateien verschlüsseln  <br/> |**Erweiterte Einstellungen** \> **Datenschutz**: **Beim Aufheben der Registrierung Verschlüsselungsschlüssel widerrufen** und **Zugriff auf geschützte Daten widerrufen, wenn das Gerät bei MDM registriert wird** sind beide auf **Ein** festgelegt.  <br/> |
-|Hindert Benutzer am Kopieren von Unternehmensdaten auf persönliche Dateien.  <br/> |**Erforderliche Einstellungen** \> **Windows Information Protection-Modus**. **Ein** ist in Microsoft 365 Business wie folgt zugeordnet: **Außerkraftsetzungen ausblenden**, **Aus** ist in Microsoft 365 Business wie folgt zugeordnet: **Aus**<br/> |
+|Verhindern, dass Benutzer Unternehmensdaten in persönliche Dateien kopieren.  <br/> |**Erforderliche Einstellungen** \> **Windows Information Protection-Modus**. **Ein** ist in Microsoft 365 Business wie folgt zugeordnet: **Außerkraftsetzungen ausblenden**, **Aus** ist in Microsoft 365 Business wie folgt zugeordnet: **Aus**<br/> |
 |Zugriffssteuerung auf Office-Dokumente  <br/> | Wenn dies in Microsoft 365 Business auf **Ein** festgelegt ist, ist  <br/> **Erweiterte Einstellungen** \> **Zugriff**, **Verwenden Sie Windows Hello for Business als Methode zum Anmelden bei Windows** auf **Ein** festgelegt, wobei die folgenden zusätzlichen Einstellungen gelten:  <br/> **Legen Sie die für die PIN erforderliche Mindestanzahl an Zeichen fest** ist auf **4** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Großbuchstaben in der Windows Hello for Business-PIN** ist auf **Verwendung von Großbuchstaben für die PIN nicht zulassen** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Kleinbuchstaben in der Windows Hello for Business-PIN** ist auf **Verwendung von Kleinbuchstaben für die PIN nicht zulassen** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Sonderzeichen in der Windows Hello for Business-PIN** ist auf **Verwendung von Sonderzeichen für die PIN nicht zulassen** festgelegt.  <br/> **Geben Sie den Zeitraum (in Tagen) an, für den eine PIN verwendet werden kann, bevor das System den Benutzer zur Änderung auffordert** ist auf **0** festgelegt.  <br/> **Geben Sie die Anzahl der letzten PINs an, die einem Benutzerkonto zugeordnet und nicht wiederverwendet werden können** ist auf **0** festgelegt.  <br/> **Zulässige Anzahl von Authentifizierungsfehlern, bevor das Gerät zurückgesetzt wird** ist auf den gleichen Wert wie in Microsoft 365 Business festgelegt (standardmäßig 5).  <br/> **Die maximal zulässige Zeit (in Minuten) nach dem Wechsel des Gerät in den Leerlauf, bis das Gerät durch die PIN oder ein Kennwort gesperrt wird** ist auf den gleichen Wert wie in Microsoft 365 Business festgelegt.  <br/> |
 |Wiederherstellung geschützter Daten aktivieren  <br/> |**Erweiterte Einstellungen** \> **Datenschutz**: **Zeigen Sie das Datenschutzsymbol des Unternehmens an** und **Verwenden Sie Azure RMS für WIP** sind auf **Ein** festgelegt.  <br/> |
 |Weitere Cloudspeicherorte des Unternehmens schützen  <br/> |**Erweiterte Einstellungen** \> **Geschützte Domänen** und **Cloudressourcen** zeigen Domänen und SharePoint-Websites an.  <br/> |
@@ -85,7 +88,7 @@ Klicken Sie auf den Namen der Richtlinie, die Sie auswählen möchten, und wähl
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Gerätekonfiguration zu Intune-Einstellungen detailliert ausgeführt.
   
-Suchen das Intune Einstellung, während Sie sich mit Ihren Microsoft 365 Business-Admin-Anmeldeinformationen angemeldet wechseln Sie zur [Azure](https://portal.azure.com)-Portal, und wählen Sie **Intune** , select **mehrere Dienste**aus, und geben Sie in dem **Filter**Intune \> **Gerät Konfiguration** \> **Profile**. Wählen Sie dann auf **Richtlinie für Windows 10 Geräte** \> **Eigenschaften** \> **Settings**.
+um die einstellung intune zu finden, während sie sich mit ihren Microsoft 365 Business-administratoranmeldeinformationen angemeldet haben, wechseln sie zu [Azure portal](https://portal.azure.com), wählen sie **weitere dienste**aus, und geben sie intune in den **Filter**ein, und wählen sie **intune** \> -gerät aus. ** Konfigurations** \> **profile**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Einstellung der Windows 10-Geräterichtlinie**|**Intune-Einstellung(en)**|
 |:-----|:-----|

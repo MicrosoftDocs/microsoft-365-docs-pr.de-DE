@@ -1,59 +1,60 @@
 ---
-title: Microsoft verwalteter Desktop-app-Anforderungen
+title: Microsoft Managed Desktop-App-Anforderungen
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/08/2019
-ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: de6cc7d77e023a9d41961e5fbcce060f1bb659ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278335"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft verwalteter Desktop-app-Anforderungen
+# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop-App-Anforderungen
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreeement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Line-of-Business Applications, die Sie an Microsoft verwalteter Desktop Geräte bereitstellen möchten, müssen die Anforderungen in diesem Thema erfüllen. 
+Branchenanwendungen, die Sie auf Microsoft Managed Desktop-Geräten bereitstellen möchten, müssen die Anforderungen in diesem Thema erfüllen. 
 
-## <a name="application-condition"></a>Anwendung Bedingung
+## <a name="application-condition"></a>Anwendungs Bedingung
 
-Es ist wichtig, dass Anwendungen sich negativ auf die Umgebung Microsoft verwalteten Desktops keine Auswirkung auf die. Im folgenden werden die Anforderungen, dass eine Anwendung, damit Microsoft erfüllen muss bereitzustellen. Für jede Anwendung oder Treiber kann Microsoft jede Anforderung dargelegten verzichten. Microsoft kann beschließen, entfernen Sie alle Anwendung oder Treiber, die sich negativ auf Leistung und Zuverlässigkeit von Microsoft verwalteten Desktops Geräte auswirkt.
+Es ist wichtig, dass sich Anwendungen nicht negativ auf die Microsoft Managed Desktop-Umgebung auswirken. Es folgen die Anforderungen, die eine Anwendung erfüllen muss, damit Microsoft Sie bereitstellen kann. Für eine bestimmte Anwendung oder einen Treiber kann Microsoft auf die hier aufgeführten Anforderungen verzichten. Microsoft kann beschließen, alle Anwendungen oder Treiber zu entfernen, die sich negativ auf die Leistung und Zuverlässigkeit von Microsoft Managed Desktop-Geräten auswirken.
 
-## <a name="deployable-using-microsoft-technologies"></a>Bereitstellung von Microsoft-Technologien
+## <a name="deployable-using-microsoft-technologies"></a>Bereitstellen mithilfe von Microsoft-Technologien
 
-Microsoft verwalteter Desktop verwendet Intune, Microsoft Store und Microsoft Store for Business Applications bereitstellen. Aus diesem Grund müssen Applications auf eine Weise, die von der aktuellen Version dieser Dienste bereitgestellt werden können verpackt werden.
+Microsoft Managed Desktop verwendet InTune, Microsoft Store und Microsoft Store for Business, um Anwendungen bereitzustellen. Daher müssen Anwendungen so verpackt werden, dass Sie von der jeweils aktuellen Version dieser Dienste bereitgestellt werden können.
 
-## <a name="prohibited-app-classes"></a>Verbotene app-Klassen
+## <a name="prohibited-app-classes"></a>Verbotene App-Klassen
 
-Bestimmte Anwendungstypen dürfen nicht auf verwaltete Microsoft-Desktop-Geräten:
-- 3. Partei Antivirus, Sicherheit oder Audit-software
-- 3. Partei Webbrowser
-- Versionen von Microsoft Office, bevor Sie Office 365 Pro Plus
-- Anwendungen, die installieren oder andere 3. Software von Drittanbietern Verpacken
+Bestimmte Anwendungstypen sind auf verwalteten Desktop Geräten von Microsoft nicht zulässig:
+- Antiviren-, Sicherheits-oder Überwachungssoftware von Drittanbietern
+- Drittanbieter-Webbrowser
+- Versionen von Microsoft Office vor Office 365 pro Plus
+- Anwendungen, die andere Drittanbietersoftware installieren oder bündeln
 
-## <a name="restricted-app-behaviors"></a>Eingeschränkte app Verhaltensweisen
+## <a name="restricted-app-behaviors"></a>Eingeschränktes App-Verhalten
 
-Bestimmte Anwendung Verhaltensweisen werden so stark beeinträchtigt bei Benutzeroberfläche oder an Microsoft verwalteter Desktop Geräte ein Sicherheitsrisiko darstellen können. Applikationen darf nicht die folgenden Verhaltensweisen oder Merkmale aufweisen: 
+Bestimmte Anwendungsverhaltens weisen können eine Beeinträchtigung der Benutzerfreundlichkeit oder ein Sicherheitsrisiko für verwaltete Desktop Geräte von Microsoft darstellen. Anwendungen dürfen nicht die folgenden Verhaltensweisen oder Merkmale aufweisen: 
 
-Benutzeroberfläche:
-- Installieren Sie Hintergrunddienste oder erzeugen langer Hintergrundprozesse
-- Hinzufügen von selbst zu den Windows-Startpfad
+Benutzererfahrung:
+- Installieren von Hintergrunddiensten oder Laichen von lang andauernden Hintergrundprozessen
+- Hinzufügen des Windows-Start Pfads
 
 Sicherheit:
-- Rufen Sie nicht dokumentierte Windows- oder Office-APIs oder internen Datenstrukturen Windows- oder Office übernehmen Abhängigkeiten
-- Fungieren Sie als app-Store oder über die integrierte Erweiterungsmanager
-- Der Endbenutzer Berechtigungen ausweiten
-- Sicherheitsrisiken haben bezeichnet werden.
-- Mit einem Zertifikat die vertrauenswürdige Stammzertifizierungsstelle Rollup nicht signiert
-- Verschlüsseln oder Einschränken des Zugriffs auf Endbenutzerdaten
-- Ändern der Betriebssystem-Code zur Laufzeit
+- Aufrufen von nicht dokumentierten Windows-oder Office-APIs oder Abhängigkeiten von internen Windows-oder Office-Datenstrukturen
+- Fungieren als APP-Speicher oder haben integrierten Erweiterungs-Manager
+- Erhöhen der Berechtigungen des Endbenutzers
+- Bekannte Sicherheitsrisiken
+- Signiert mit einem Zertifikat, das nicht für ein vertrauenswürdiges Stammverzeichnis verwendet wird
+- VerSchlüsseln oder Einschränken des Zugriffs auf Endbenutzerdaten
+- Ändern des Betriebssystemcodes zur Laufzeit
 
-## <a name="driver-deployment"></a>Treiber-Bereitstellung
+## <a name="driver-deployment"></a>Treiberbereitstellung
 
-Es sei denn, ein Treiber in Windows Update verfügbar ist oder von Windows Hardware Quality Lab (WHQL) getrennt signiert ist, muss Microsoft einen Treiber genehmigen, bevor Microsoft des Treibers an Microsoft verwalteter Desktop-Geräte Deployment.
+Wenn ein Treiber in Windows Update nicht verfügbar ist oder von Windows Hardware Quality Lab (WHQL) separat signiert wurde, muss Microsoft einen Treiber genehmigen, bevor Microsoft den Treiber für Microsoft Managed Desktop Devices bereitstellt.

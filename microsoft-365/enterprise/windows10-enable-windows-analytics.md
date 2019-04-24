@@ -4,17 +4,18 @@ description: Bietet Hilfestellung zur Verwendung von Windows Analytics zur Über
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-Dokumentation, Windows 10 Enterprise und Windows Analytics
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 45bf1b222501dd7564d6a619d992d6adfc03242f
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289397"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>Schritt 4: Monitorgerätestatus und -Compliance
 

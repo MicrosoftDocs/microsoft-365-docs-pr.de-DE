@@ -7,11 +7,11 @@ author: trudyha
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
-ms.sourcegitcommit: 2211f57c268754d242d6331c188143f818f5a9f4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282521"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Bereitstellen von apps auf Microsoft Managed Desktop-Geräten
 Ein Teil des onboardings für Microsoft Managed Desktop umfasst das Hinzufügen und Bereitstellen von apps auf den Geräten Ihrer Benutzer. Nachdem Sie das Microsoft Managed Desktop-Portal verwendet haben, können Sie Ihre apps hinzufügen und bereitstellen. 

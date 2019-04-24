@@ -1,37 +1,36 @@
 ---
-title: Voraussetzungen für Microsoft Managed Desktop
+title: VoraussetZungen für Microsoft Managed Desktop
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 11/1/2018
-ms.openlocfilehash: 303765d6804071b3a3de18ee412304566cbbe089
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 8d9c008af9531bc5b829d248665dc5b58ac6034b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277386"
 ---
-# <a name="prerequisites-for-microsoft-managed-desktop"></a>Voraussetzungen für Microsoft Managed Desktop
+# <a name="prerequisites-for-microsoft-managed-desktop"></a>VoraussetZungen für Microsoft Managed Desktop
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
 
-Erfolg mit Microsoft verwalteter Desktop beginnt mit bekannten dokumentierte und vereinbarten Anforderungen für die Infrastruktur des Kunden. In diesem Abschnitt werden die erforderlichen Komponenten beschrieben. 
+Der Erfolg mit Microsoft Managed Desktop beginnt mit bekannten, dokumentierten und vereinbarten Anforderungen für die Infrastruktur des Kunden. Dieser Abschnitt enthält die folgenden Infastructure-Anforderungen. 
 
-Microsoft FastTrack ist, damit Kunden diese Anforderungen erfüllen und helfen Ihnen bei der Vorbereitung zur Teilnahme an modernen Jahrestag als Dienst verfügbar. Weitere Informationen finden Sie unter [Microsoft schnelle](https://fasttrack.microsoft.com/about). 
+Microsoft-Kurzarbeits ist verfügbar, um Kunden bei der Erfüllung dieser Anforderungen zu unterstützen und Sie bei der Vorbereitung der Teilnahme an Microsoft Managed Desktop vorzubereiten. Weitere Informationen finden Sie unter [Microsoft](https://fasttrack.microsoft.com/about)-Kurzdaten. 
 
-Bereich | Erforderliche Informationen
+Bereich | Erforderliche Details
 --- | ---
-Lizenzierung | Eine Microsoft 365 E5 Lizenz oder gleichwertige Lizenzen sind erforderlich.<br><br>Diese Lizenz beinhaltet Office 365 E5, Windows 10 Enterprise E5 & Enterprise Mobilität + E5 Sicherheit (zur Abstimmung). Weitere Informationen finden Sie unter [Microsoft-365-Lizenzierung](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
-Konnektivität |  Alle Microsoft verwalteter Desktop-Geräte müssen Connectivity zahlreiche Microsoft Dienstendpunkten aus dem internen Netzwerk Organisationseinheit, einschließlich:<br>-Windows Update<br>-Microsoft Speicher für Unternehmen<br>-Azure Active Directory<br>-Windows Fehlerberichterstattung<br>-Online-Absturzanalyse<br>-Benutzeroberfläche und Telemetrie verbunden<br>-OneDrive app für Windows 10<br><br>Die vollständige Liste der erforderlichen IP Adressen und URLs finden Sie unter [Proxy-Konfiguration](../get-ready/network.md). 
-Azure Active Directory |    Azure Active Directory (AD Azure) muss entweder der Autoritätsquelle für alle Benutzerkonten oder Benutzerkonten synchronisiert werden müssen, aus dem lokalen Active Directory mit Azure Active Directory verbinden, Version 1.1.654.0 oder höher. Weitere Informationen finden Sie unter [Azure Active Directory verbinden](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
-Authentifizierung |    Wenn Azure AD nicht der Autoritätsquelle für ein Benutzerkonto ist, müssen Sie eine der folgenden in Azure AD-Connect konfigurieren:<br>-Kennwort Hash-Synchronisierung (empfohlen)<br>-Pass-Through Authentifizierung<br>-Verbund mit ADFS<br><br>Beim Festlegen von Authentifizierungsoptionen mit Azure Active Directory verbinden Kennwort Rückschreiben auch erforderlich ist. Weitere Informationen finden Sie unter [Kennwort Rückschreiben](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback).<br><br>Weitere Informationen über Authentifizierungsoptionen mit Azure AD finden Sie unter [Azure AD-Connect - Anmeldung Benutzeroptionen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
-Office 365 |    Es wird dringend empfohlen, dass die folgenden Dienste in die Cloud migriert werden:<br>-E-Mail - Migration zu cloudbasierten Postfächer Exchange online oder mit Exchange Online Hybrid mit Exchange 2013 oder höher, lokalen konfiguriert werden.<br>-Dateien und Ordnern – Migrieren von SharePoint Online/Office 365.<br>-Skype for Business – Migrieren zu Skype für Unternehmen Online.
-Geräteverwaltung | Microsoft Intune - eine reinen MDM-Lösung (nicht-hybridbereitstellungen) ist erforderlich, wodurch die IT-Administratoren zum Verwalten von Microsoft verwalteter Desktop-Geräten, die über eine Webkonsole, die aus zugegriffen werden kann an einer beliebigen Stelle in der ganzen Welt. Microsoft Intune ist die erforderlichen MDM-Lösung.<br><br>Weitere Informationen finden Sie unter [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Daten sichern und Wiederherstellen | Microsoft verwalteter Desktop müssen Dateien zu OneDrive for Business synchronisiert werden, für den Schutz. Alle Dateien, die nicht zu OneDrive for Business synchronisiert werden von Microsoft verwaltet Desktop nicht garantiert und verloren während Gerät Austausch oder Supportanrufe erfordern Gerät zurückgesetzt. Microsoft verwalteter Desktop unterstützt zugeordneten Netzlaufwerke nicht.  
+Lizenzierung | Jedem MMD-Benutzer muss eine der folgenden Lizenzoptionen zugewiesen sein:<br>-Microsoft 365 E5<br>-Microsoft 365 E3, Enterprise Mobility + Security E5 und Windows 10 Enterprise E5<br>-Office 365 E3, Enterprise Mobility + Security E5 und Windows 10 Enterprise E5<br><br>Vorhandene Enterprise Agreement-Kunden benötigen möglicherweise Anweisungen, um die Aktivierung von Windows 10 Enterprise-Abonnements im Azure AD-Mandanten zu aktivieren. Weitere Informationen finden Sie unter [Deploy Windows 10 Enterprise licenses](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).<br><br>Produktlizenzen können mithilfe von Sicherheitsgruppen zugewiesen werden, indem die Azure AD-basierte Lizenzierung konfiguriert wird. Weitere Informationen finden Sie unter [Was ist die Gruppenbasierte Lizenzierung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).<br><br>Weitere Informationen zu den verfügbaren Lizenzen finden Sie unter [Microsoft 365 Licensing](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Konnektivität |  Alle von Microsoft verwalteten Desktop Geräte erfordern eine Verbindung mit zahlreichen Microsoft-Dienstendpunkten aus dem Unternehmensnetzwerk.<br><br>Eine vollständige Liste der erforderlichen IPs und URLs finden Sie unter [Netzwerkkonfiguration](../get-ready/network.md). 
+Azure Active Directory |    Azure Active Directory (Azure AD) muss entweder die Autoritäts Quelle für alle Benutzerkonten sein, oder Benutzerkonten müssen vom lokalen Active Directory mithilfe der neuesten unterstützten Version von Azure AD Connect synchronisiert werden.<br><br>Weitere Informationen zu Azure AD Connect finden Sie unter [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Weitere Informationen zu unterstützten Azure AD Connect-Versionen finden Sie unter [Azure AD Connect: Version Release History](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history).
+Authentifizierung |    Wenn Azure AD nicht die Autoritäts Quelle für Benutzerkonten ist, müssen Sie eine dieser in Azure AD Connect konfigurieren:<br>-Kennworthash Synchronisierung<br>-Passthrough-Authentifizierung<br>-Verbund mit ADFS<br><br>Wenn Sie Authentifizierungsoptionen mit Azure AD Connect festlegen, ist auch ein Kenn Wort Rückschreiben erforderlich. Weitere Informationen finden Sie unter [Kenn Wort Rück schreibe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Weitere Informationen zu Authentifizierungsoptionen mit Azure AD finden Sie unter [Azure AD Connect-Benutzeranmelde Optionen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
+Office 365 |    Obwohl es nicht erforderlich ist, sich bei Microsoft Managed Desktop anzumelden, wird dringend empfohlen, die folgenden Dienste in die Cloud zu migrieren:<br>-E-Mail-Migration zu Cloud-basierten Postfächern, Exchange Online oder mit Exchange Online-Hybrid mit Exchange 2013 oder höher, lokal.<br>-Dateien und Ordner – Migration zu OneDrive for Business/SharePoint Online.<br>-Tools für die Online Zusammenarbeit – Migration zu Teams.
+Geräteverwaltung | Microsoft Managed Desktop-Geräte erfordern eine Verwaltung mit Microsoft InTune. InTune muss als Verwaltungsautorität für mobile Geräte festgelegt werden.<br><br>Weitere Informationen finden Sie unter [Microsoft InTune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
+Datensicherung und-Wiederherstellung | Microsoft Managed Desktop erfordert, dass Dateien mit OneDrive for Business zum Schutz synchronisiert werden. Alle Dateien, die nicht mit OneDrive for Business synchronisiert wurden, werden von Microsoft Managed Desktop nicht garantiert und können während des Geräteaustauschs verloren gehen oder Anrufe unterstützen, die ein Zurücksetzen des Geräts erfordern.<br><br>Obwohl dies nicht erforderlich ist, empfiehlt Microsoft Managed Desktop dringend die Migration von zugeordneten Netzlaufwerken zur entsprechenden Cloud-Lösung.  
 
-[Erfahren Sie, wie die erforderlichen Komponenten für die Registrierung von Microsoft verwalteten Desktops zu erfüllen.](../get-ready/index.md)
-
-Wenn Sie die erste Schritte mit Microsoft verwalteter Desktop bereit sind, wenden Sie sich an Ihren Microsoft-Konto-Manager. 
+Wenn Sie mit Microsoft Managed Desktop beginnen möchten, wenden Sie sich an Ihren Microsoft-Konto Manager. 

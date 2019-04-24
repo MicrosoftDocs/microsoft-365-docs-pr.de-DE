@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Office 365 Pro Plus-Infrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: 3f6630d4c120609cbb1737ad96644d43eb2fda3c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290943"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4: Office 365 ProPlus
 
@@ -89,7 +89,6 @@ Wenn Ihre Organisation Configuration Manager verwendet, wird empfohlen, ein Upgr
 
 Erfahren Sie anhand der folgenden Ressourcen, wie Experten bei Microsoft Office 365 ProPlus und Microsoft 365 Enterprise geplant und bereitgestellt haben:
 
-- [Vorbereiten Ihrer Organisation für eine nahtlose Bereitstellung von Office 365 ProPlus 2016](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Bereitstellen und Aktualisieren von Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Automatisierung und Updatekanäle helfen bei der Bereitstellung von Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (Video)
 

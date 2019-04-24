@@ -6,6 +6,9 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -16,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Erfahren Sie, wie Windows AutoPilot verwenden, um neue Windows 10 Geräte für Ihr Unternehmen einzurichten.
-ms.openlocfilehash: 56225424125e9eed9f46867837c564aa5d1c4adc
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie, wie Sie Windows autoPilot verwenden, um neue Windows 10-Geräte für Ihr Unternehmen einzurichten.
+ms.openlocfilehash: e0802ddcc0964d0b8d102f7dbdb9116b33cdcf58
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277108"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
 [] Mit Windows AutoPilot können Sie neue Windows 10-Geräte für Ihr Unternehmen so einrichten, dass sie sofort nach Übergabe an Ihre Mitarbeiter produktiv eingesetzt werden können.
   
-## <a name="device-requirements"></a>Anforderungen an Geräte
+## <a name="device-requirements"></a>Geräteanforderungen
 
 Geräte müssen diese Anforderungen erfüllen:
   

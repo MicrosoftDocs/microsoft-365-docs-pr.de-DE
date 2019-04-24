@@ -1,17 +1,18 @@
 ---
 title: Gerätekonfiguration
-description: Informationen Sie zu den Standardrichtlinien an Microsoft verwalteter Desktop Geräte angewendet.
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+description: Informationen zu den Standardrichtlinien, die auf von Microsoft verwaltete Desktop Geräte angewendet werden.
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: e36c65bab3fa78fc27ee6228e78461b2e6b318dd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 9a080c044939dfde223c231dfebdd248861d5f9f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278624"
 ---
 # <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -20,39 +21,39 @@ ms.locfileid: "26868006"
 
 <!-- Device configuration and Security Addendum-->
 
-Wenn ein neues Microsoft verwalteter Desktop-Gerät bereitgestellt wird, stellen wir sicher, dass die Rechte für Microsoft verwalteter Desktop optimierte Konfiguration vorhanden ist. Dies umfasst eine Reihe von Standardrichtlinien, die im Rahmen des Prozesses Onboarding festgelegt sind. Um Konflikte zu vermeiden, sollten diese Richtlinien nicht geändert werden. 
+Wenn ein neues Microsoft Managed Desktop-Gerät bereitgestellt wird, stellen wir sicher, dass die richtige Konfiguration, optimiert für Microsoft Managed Desktop, vorhanden ist. Dies umfasst eine Reihe von Standardrichtlinien, die als Teil des Onboarding-Prozesses festgelegt werden. Um Konflikte zu vermeiden, sollten diese Richtlinien nicht geändert werden. 
 
-Geräte werden mit einer Signaturbild eintreffen und dann Azure Active Directory-Domäne beitreten, wenn der erste Benutzer anmeldet. Das Gerät installiert automatisch Erforderlicher Richtlinien und Anwendungen ohne Eingriff IT benötigt.
+Geräte werden mit einem Signaturbild eingehen und dann der Azure Active Directory-Domäne beitreten, wenn sich der erste Benutzer anmeldet. Das Gerät installiert automatisch erforderliche Richtlinien und Anwendungen, ohne dass ein IT-Eingriff erforderlich ist.
 
 ## <a name="why-mdm-over-group-policy"></a>Warum MDM über Gruppenrichtlinien
 
-Es gibt einige Gründe für die Verwaltung von mobilen Geräten (MDM) anstelle von Gruppenrichtlinien verwenden:
+Es gibt einige Gründe für die Verwendung der mobilen Geräteverwaltung (MDM) anstelle von Gruppenrichtlinien:
 
-- Sicherheit - sind MDM Richtlinien in der modernen Welt sicherer. Gruppenrichtlinien ist darauf ausgelegt, am besten mit lokalen Identität Arbeit während des MDM entwickelt für Funktion am besten mit Cloud Identitätsmanagement (Azure Active Directory).
-- Zuverlässigkeit - MDM Richtlinien bieten mehr zuverlässige Bereitstellung von Gruppenrichtlinien. Darüber hinaus überschreiben MDM-Einstellungen (Group Policy Object, GPO) Richtlinien. Beginnend mit Windows Version 1803 10, werden MDM Einstellungen über die Werte von Gruppenrichtlinien priorisiert werden der Kunden, wechseln zu Verwaltung der modernen unterstützt. 
-- Richten Sie mit Microsoft verwalteter Desktop Vision – bietet umfassendere Überwachung auf Bereitstellung von Gruppenrichtlinien und Arbeitsgruppen-Methode für die schrittweise Einführung Richtlinie Änderungen mit Möglichkeit zum anhalten / fortsetzen bei Bedarf Bereitstellung unterstützt.
+- Security-MDM-Richtlinien sind in der modernen Welt sicherer. Gruppenrichtlinien sind so konzipiert, dass Sie am besten mit der lokalen Identität arbeiten, während MDM für die Cloud Identity Management (Azure Active Directory) am besten geeignet ist.
+- Zuverlässigkeit – MDM-Richtlinien bieten eine zuverlässigere Richtlinienbereitstellung. Darüber hinaus überschreiben MDM-Einstellungen Gruppenrichtlinienobjekt-Richtlinien. Beginnend mit Windows 10, Version 1803, werden die MDM-Einstellungen über die Gruppenrichtlinien Werte priorisiert, die Kunden, die auf modernes Management umstellen, unterstützen. 
+- Align with Microsoft Managed Desktop-Weitblick – bietet eine umfassendere Überwachung der Richtlinienbereitstellung und unterstützt den gruppenbasierten Ansatz zur schrittweisen Einführung von Richtlinienänderungen mit der Möglichkeit, die Bereitstellung bei Bedarf anzuhalten/fortzusetzen.
 
-Weitere Informationen finden Sie unter [Verwaltung mobiler Geräte](https://docs.microsoft.com/windows/client-management/mdm/). 
+Weitere Informationen finden Sie unter [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 ## <a name="default-policies"></a>Standardrichtlinien
 
-In dieser Tabelle werden die Standard-Richtlinien, die an alle Geräte von Microsoft verwalteten Desktops während der Bereitstellung Gerät angewendet werden. Alle erkannt, dass die Änderungen, die nicht von Microsoft verwalteten Desktops Vorgänge Team auf Objekte, die von Microsoft verwaltet Desktop verwaltet genehmigt werden wiederhergestellt werden.
+In dieser Tabelle werden die Standardrichtlinien hervorgehoben, die während der Geräte Bereitstellung auf alle verwalteten Desktop Geräte von Microsoft angewendet werden. Alle erkannten Änderungen, die von Microsoft Managed Desktop Operations Team nicht an von Microsoft Managed Desktop verwaltete Objekte genehmigt wurden, werden zurückgesetzt.
 
 Richtlinie | Beschreibung
 --- | ---
-Security baseline | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) für MDM ist für alle Microsoft verwalteter Desktop Geräte konfiguriert. Dieser Baseline ist die Industriestandard-Konfiguration. Öffentlich freigegeben ist, wird ebenfalls getestet, und wurden durch Microsoft Security-Experten zu Microsoft verwalteter Desktop Geräte geprüft und apps secure modernen am Arbeitsplatz.<br><br>Zum Verringern von Bedrohungen in die ständig wachsenden Sicherheit Bedrohung Querformat ein, werden die Microsoft Security Baseline aktualisiert und an Microsoft verwalteter Desktop Geräte bei jeder Aktualisierung der Windows-10-Feature bereitgestellt.<br><br>Weitere Informationen finden Sie unter [Security Baseline für Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
-Microsoft verwalteter Desktop Sicherheitsvorlage empfohlen | Eine Reihe von Empfohlene Änderungen an der Basislinie Sicherheit, die Benutzer zu optimieren.  Diese Änderungen werden in [Der Security Addendum](#security-addendum)dokumentiert. Updates für die Richtlinie Addendum treten bei Bedarf.  
-Gerät-compliance | Diese Richtlinien werden standardmäßig für alle Microsoft verwalteter Desktop Geräte konfiguriert. Ein Gerät wird als nicht kompatible gemeldet, wenn eine der folgenden Security Bedingungen nicht erfüllt ist:<br>-BitLocker Geräteverschlüsselung aktiviert, um Daten auf Geräten zu schützen. Weitere Informationen finden Sie unter [Übersicht der BitLocker Geräteverschlüsselung in Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Sicheren Boot aktiviert und erzwungen, um die firmwareabbilder auf Geräten zu überprüfen, bevor sie ausgeführt werden können. Weitere Informationen finden Sie unter [Secure Boot und Gerät Übersicht über die Verschlüsselung.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-Microsoft verwalteter Desktop-Gerät muss das Kennwort für die Anmeldung.
-Update-Bereitstellung | Verwenden Sie Windows Update für Unternehmen (WUfB) zum schrittweisen Bereitstellung von Softwareupdates ausführen. IT-Administratoren können Einstellungen für die Bereitstellung von Gruppenrichtlinien nicht ändern. Weitere Informationen über die Arbeitsgruppen-Bereitstellung finden Sie unter [wie Updates behandelt werden](../working-with-managed-desktop/updates.md).
-Telemetrie | Geräte werden unter einem bekannten kommerziellen Bezeichner erweiterte Diagnosedaten an Microsoft übermitteln festgelegt. Als Teil des Microsoft verwalteten Desktops können IT-Administratoren diese Einstellungen nicht ändern. Für Kunden im Allgemeinen Regionen Data Protection Regulierung (GDPR), Endbenutzer können reduziert die Ebene der Diagnosedaten, die bereitgestellt wird, aber eine Verringerung der Dienst werden. Beispielsweise werden Microsoft verwalteter Desktop kann nicht zum Sammeln der Daten erforderlich sind, um auf Einstellungen und Richtlinien, um optimale Leistung und Sicherheit Bedürfnisse durchlaufen. Weitere Informationen finden Sie unter [Diagnosedaten in Ihrer Organisation konfigurieren von Windows.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+Sicherheitsbasis | [Microsoft-Sicherheits Basisplan](https://docs.microsoft.com/windows/device-security/windows-security-baselines) für MDM ist für alle Microsoft Managed Desktop-Geräte konfiguriert. Diese Baseline ist die Standardkonfiguration. Es ist öffentlich veröffentlicht, gut getestet und wurde von Microsoft-Sicherheitsexperten überprüft, um die Sicherheit von Microsoft-Desktop Geräten und-apps am modernen Arbeitsplatz sicherzustellen. <br><br>Um Bedrohungen in der sich ständig weiter entwickelnden Sicherheits Bedrohungslandschaft zu verringern, wird die Microsoft-Sicherheitsbasislinie mit jedem Windows 10-Funktions Update auf Microsoft Managed Desktop-Geräten aktualisiert und bereitgestellt.<br><br>Weitere Informationen finden Sie unter [Sicherheits Basisplan für Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Empfohlene Sicherheitsvorlage für Microsoft Managed Desktop | Eine Reihe von empfohlenen Änderungen an der Sicherheitsbasislinie, die die Benutzerfreundlichkeit optimieren.  Diese Änderungen werden im [Sicherheits Nachtrag](#security-addendum)dokumentiert. Aktualisierungen des Richtlinien Nachweises erfolgen auf Bedarfsbasis.  
+Geräte Konformität | Diese Richtlinien werden standardmäßig für alle verwalteten Microsoft-Desktop Geräte konfiguriert. Ein Gerät wird als nicht kompatibel gemeldet, wenn eine der folgenden Sicherheitsbedingungen nicht erfüllt ist:<br>-BitLocker-Geräteverschlüsselung aktiviert, um Daten auf Geräten zu schützen. Weitere Informationen finden Sie unter [Übersicht über die BitLocker-Geräteverschlüsselung in Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Secure Boot aktiviert und erzwungen, um die Firmware-Images auf Geräten zu überprüfen, bevor Sie ausgeführt werden können. Weitere Informationen finden Sie unter [Secure Boot and Device Encryption Overview.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-Microsoft Managed Desktop Device erfordert ein Kennwort für die Anmeldung.
+Update-Bereitstellung | Verwenden Sie Windows Update for Business (WUfB), um die schrittweise Bereitstellung von Softwareupdates durchzuführen. IT-Administratoren können keine Einstellungen für die Bereitstellungsgruppen Richtlinien ändern. Weitere Informationen zur gruppenbasierten Bereitstellung finden Sie unter [wie Updates behandelt werden](../working-with-managed-desktop/updates.md).
+Diagnosedaten | Geräte werden so festgelegt, dass Microsoft unter einer bekannten kommerziellen ID erweiterte Diagnosedaten bereitgestellt werden. Als Teil von Microsoft Managed Desktop können IT-Administratoren diese Einstellungen nicht ändern. Für Kunden in allgemeinen Datenschutzbestimmungen (DSGVO) können Endbenutzer den Grad der bereitgestellten Diagnosedaten reduzieren, es wird jedoch eine Reduzierung des Diensts geben. Microsoft Managed Desktop kann beispielsweise nicht die erforderlichen Daten sammeln, um Einstellungen und Richtlinien zu durchlaufen, um die Leistungs-und Sicherheitsanforderungen am besten zu erfüllen. Weitere Informationen finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
- ## <a name="security-addendum"></a>Security addendum
+ ## <a name="security-addendum"></a>Sicherheits Nachtrag
 
- Dieser Abschnitt stellt die Richtlinien, die als zusätzlich zu den Microsoft verwalteter Desktop Standardrichtlinien bereitgestellt werden soll. Standardrichtlinien sind in [die Standardrichtlinien](#default-policies)aufgeführt. Diese Konfiguration ist darauf ausgelegt, mit Finanzdienstleister und stark regulierten Branchen im Hinterkopf: Optimieren für die sicherste Abwehr Benutzer Produktivität zu beeinträchtigen.
+ In diesem Abschnitt werden die Richtlinien erläutert, die zusätzlich zu den Standardrichtlinien für Microsoft Managed Desktops bereitgestellt werden. Standardrichtlinien sind in [Standardrichtlinien](#default-policies)aufgeführt. Diese Konfiguration ist für Finanzdienstleister und hochregulierte Branchen konzipiert: Optimierung für die sicherste Position bei gleichzeitiger Beibehaltung der Benutzerproduktivität.
 
  ### <a name="additional-security-policies"></a>Zusätzliche Sicherheitsrichtlinien
 
- Diese Richtlinien werden zur Verbesserung der Sicherheit für stark regulierten Branchen hinzugefügt. 
- - **App-Zulassungsliste**: Apps zur Ausführung in Microsoft verwalteter Desktop Geräte der Organisation vertrauenswürdig sein müssen. Dadurch wird die eine gesperrten Umgebung. Das Desktop Vorgänge Team von Microsoft verwaltet mitzuteilen alle apps, die Onboarded werden müssen. Weitere Informationen finden Sie unter [Windows Defender Gerät Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
- - **Überwachung der Sicherheit**: Microsoft überwacht Geräten über [Windows Defender erweiterte Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Wenn eine Bedrohung erkannt werden, wird Microsoft benachrichtigen der Kunde, das Gerät zu isolieren und Remote, das Problem beheben. 
+ Diese Richtlinien werden hinzugefügt, um die Sicherheit für hochregulierte Branchen zu verbessern. 
+ - **App-Zulassungsliste**: apps müssen von der Organisation als vertrauenswürdig eingestuft werden, wenn Sie auf verwalteten Desktop Geräten von Microsoft ausgeführt werden. Dadurch wird eine gesperrte Umgebung bereitgestellt. Alle apps, die onboarded werden müssen, müssen dem Microsoft Managed Desktop Operations-Team mitgeteilt werden. Weitere Informationen finden Sie unter [Windows Defender Device Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+ - **Sicherheitsüberwachung**: Microsoft überwacht Geräte mithilfe von [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Wenn eine Bedrohung erkannt wird, wird der Kunde von Microsoft benachrichtigt, das Gerät isolieren und das Problem Remote beheben. 
 

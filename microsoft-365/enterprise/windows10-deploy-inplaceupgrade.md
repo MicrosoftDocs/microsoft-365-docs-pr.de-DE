@@ -1,140 +1,141 @@
 ---
 title: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
-description: Enthält Anleitungen zum Konfigurieren und Bereitstellen einer Windows 10 Enterprise Abbilds mithilfe von System Center Configuration Manager als ein direktes Upgrade.
-keywords: Microsoft 365 Microsoft 365 Enterprise Microsoft 365 Dokumentation, Windows 10 Enterprise-Bereitstellung in-Place Upgrade vom Konfigurations-Manager, System Center Configuration Manager
+description: Enthält Anleitungen zum Konfigurieren und Bereitstellen eines Windows 10 Enterprise-Abbilds mithilfe von System Center Configuration Manager als direktes Upgrade.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, Windows 10 Enterprise, Deployment, in-Place Upgrade, Configuration Manager, System Center Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 3df76c0de7b5a8b12c063113c79f9efa4e33b4c1
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291612"
 ---
-# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Stellen Sie Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade bereit
+# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
 *Dieser Abschnitt gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Der einfachste Pfad zum Upgraden von PCs, die derzeit ausgeführten Windows 7 oder Windows 8.1 bis 10 für Windows wird über ein direktes Upgrade. Eine Aufgabensequenz System Center Configuration Manager (Konfigurations-Manager) können Sie um den Prozess zu automatisieren. 
+Der einfachste Pfad zum Aktualisieren von PCs, auf denen Windows 7 oder Windows 8,1 unter Windows 10 ausgeführt wird, ist ein direktes Upgrade. Sie können einen System Center Configuration Manager (Configuration Manager)-Aufgabensequenz verwenden, um den Prozess vollständig zu automatisieren. 
 
-Wenn Sie vorhandene Computer unter Windows 7 oder Windows 8.1 verfügen, empfehlen wir diesen Pfad Wenn Ihre Organisation Windows 10 bereitgestellt wird. Dies nutzt die Windows-Installationsprogramm (Setup.exe) zum Ausführen eines direkten Upgrades und automatisch, alle Daten, die Einstellungen, die Anwendungen behält, und die Treiber aus der vorhandenen Version des Betriebssystems. Dies erfordert den geringsten Aufwand für die IT, da es keine Notwendigkeit jeder komplexen Bereitstellung-Infrastruktur besteht.
+Bei vorhandenen Computern mit Windows 7 oder Windows 8,1 wird dieser Pfad empfohlen, wenn in Ihrer Organisation Windows 10 bereitgestellt wird. Dadurch wird das Windows-Installationsprogramm (Setup. exe) genutzt, um ein direktes Upgrade durchzuführen, das automatisch alle Daten, Einstellungen, Anwendungen und Treiber aus der vorhandenen Betriebssystemversion beibehält. Dies erfordert den geringsten IT-Aufwand, da keine komplexe Bereitstellungsinfrastruktur erforderlich ist.
 
-Befolgen Sie diese Schritte zum Konfigurieren und Bereitstellen einer Windows 10 Enterprise Bild von Configuration Manager als ein direktes Upgrade aus.
+Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Abbild mithilfe von Configuration Manager als direktes Upgrade zu konfigurieren und bereitzustellen.
 
-## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Teil 1: Überprüfen Sie die Bereitschaft für das Aktualisieren von Windows
+## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Abschnitt 1: Überprüfen der Bereitschaft zum Upgrade von Windows
 
-Zunächst, mit dem die Möglichkeit zum Upgrade Bereitschaft Windows Analytics bieten leistungsstarke Insights und Empfehlungen zu Computer, Anwendungen und Treiber in Ihrer Organisation, ohne zusätzliche Kosten und ohne zusätzliche infrastrukturanforderungen. Dieser neue Dienst führt Sie durch Verwenden eines Workflows basierend auf von Microsoft empfohlene Methoden für Upgrade und Feature Update Projekte. Auf dem neuesten Stand Bestandsdaten können Sie einen Lastenausgleich Kosten und Risiken in Ihrer Upgrade-Projekte.
+Verwenden Sie zunächst die Bereitschafts Fähigkeit von Windows Analytics, um leistungsstarke Einblicke und Empfehlungen zu Computern, Anwendungen und Treibern in Ihrer Organisation bereitzustellen, ohne zusätzliche Kosten und zusätzliche Infrastrukturanforderungen. Dieser neue Dienst führt Sie durch Upgrade-und Feature-Update-Projekte mithilfe eines Workflows, der auf Microsoft-empfohlenen Methoden basiert. Aktuelle Inventardaten ermöglichen es Ihnen, Kosten und Risiken in ihren Upgrade-Projekten zu verteilen.
 
-Erfahren mehr, erste Schritte, verwenden und aktualisieren Bereitschaft Problembehandlung finden Sie unter [Verwalten von Windows-Upgrades mit Bereitschaft aktualisieren](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) .
+Weitere Informationen, erste Schritte, Verwendung und Problembehandlung bei der Upgrade-Bereitschaft finden Sie unter [Manage Windows Upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) .
 
-Im nächsten Schritt führen Sie im Handbuch für System Center Configuration Manager (aktuelle Zweig) zum Aktualisieren von Windows 7 oder höher auf Windows 10 verwenden, um ein. Wie bei jeder Bereitstellung mit hohem Risiko wird empfohlen, Sichern von Benutzerdaten, bevor Sie fortfahren. OneDrive-Cloud-Speicher ist für lizenzierte Benutzer von Microsoft 365 verwenden und kann verwendet werden, um ihre Dateien sicher zu speichern. Weitere Informationen finden Sie unter [OneDrive quick start Guide](https://aka.ms/ODfBquickstartguide). Um auf diese Seite zuzugreifen, müssen Sie als Administrator oder als globaler Administrator in einem Office 365 oder Microsoft 365-Mandanten anmelden.
+Befolgen Sie als nächstes die Anleitung zur Verwendung von System Center Configuration Manager (Current Branch), um das BetriebssystemWindows 7 oder höher auf Windows 10 zu aktualisieren. Wie bei jeder Bereitstellung mit hohem Risiko empfiehlt es sich, die Benutzerdaten zu sichern, bevor Sie fortfahren. OneDrive Cloud-Speicher ist für lizenzierte Microsoft 365-Benutzer bereit und kann verwendet werden, um Ihre Dateien sicher zu speichern. Weitere Informationen finden Sie unter [OneDrive-Schnellstarthandbuch](https://aka.ms/ODfBquickstartguide). Um auf diese Seite zuzugreifen, müssen Sie sich als mandantenadministrator oder globaler Administrator in einem Mandanten von Office 365 oder Microsoft 365 anmelden.
 
-Eine Liste der Konfigurations-Manager sowie den entsprechenden Windows 10-Client-Versionen, die unterstützt werden, finden Sie unter [Unterstützung für Windows 10 für System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
 
-**So überprüfen Sie die Bereitschaft für das Aktualisieren von Windows**
+**So überprüfen Sie die Bereitschaft zum Upgrade von Windows**
 
-Lesen Sie diesen Anforderungen vor dem Starten der Windows-10-bereitstellungs:
+Lesen Sie diese Anforderungen, bevor Sie mit der Windows 10-Bereitstellung beginnen:
 
-- **Aktualisieren Sie für die Windows-Editionen** - Gerät müssen Editionen von Windows 7 oder Windows 8.1, die für ein Upgrade auf Windows 10 Enterprise kommen ausgeführt werden. Eine Liste der unterstützten Editionen finden Sie unter [Windows 10 Pfade zu aktualisieren](https://aka.ms/win10upgradepaths). 
-- **Unterstützte Geräte** - die meisten Computer, die mit Windows 8.1 kompatibel sind, werden mit Windows 10 kompatibel sein. Sie müssen möglicherweise aktualisierte Treiber für Ihre Geräte ordnungsgemäß-Funktion in Windows 10 installieren. Weitere Informationen finden Sie unter [Windows 10 Spezifikationen](https://aka.ms/windows10specifications) .
-- **Vorbereiten der Bereitstellung** - stellen Sie sicher, dass die folgenden vor die Bereitstellung konfigurieren:
-    - Windows-10-Installationsmedien - den Installationsmedien müssen auf einem separaten Laufwerk, mit der bereits bereitgestellt ISO befinden. Sie können die ISO aus [Downloads für MSDN-Abonnenten](https://aka.ms/msdn-subscriber-downloads) oder aus dem [Volume Licensing Service Center](https://aka.ms/mvlsc)abrufen.
-    - Sicherungen von Benutzerdaten - zwar Benutzerdaten in das Upgrade migriert werden bewährte Methode zum Konfigurieren einer Sicherung Szenarios ist. Exportieren Sie beispielsweise alle Benutzerdaten in einer OneDrive-Konto, BitLocker To Go-verschlüsselten USB-Laufwerk oder Netzwerk-Dateiserver. Weitere Informationen finden Sie unter [Sichern oder Übertragen von Daten in Windows](https://aka.ms/backuptransferdatawindows).
-- **Vorbereitung der Umgebung** - verwenden Sie eine vorhandene Serverstruktur des Konfigurations-Manager-zur Vorbereitung der Bereitstellung eines Betriebssystems. Zusätzlich zu den Basisinstallation sollte in der Configuration Manager-Umgebung die folgenden Konfigurationen vorgenommen werden:
-    1. [Active Directory-Schema erweitern](https://aka.ms/extendadschema) und [Erstellen Sie einen System Management Container](https://aka.ms/createsysmancontainer).
-    2. Active Directory-Gesamtstruktur aktivieren Discovery und Active Directory-System-Erkennung. Weitere Informationen finden Sie unter [Configure-Discovery-Methoden für System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
-    3. IP-Bereich Beschränkungen und Grenzgruppe für Inhalte und Website-Zuordnung zu erstellen. Weitere Informationen finden Sie unter [Define Website Beschränkungen und Grenzgruppen für System Center Configuration Manager](https://aka.ms/definesiteboundaries).
-    4. Fügen Sie hinzu und konfigurieren Sie den Konfigurations-Manager reporting Services-Punkt-Rolle. Weitere Informationen finden Sie unter [Konfigurieren von Reporting im Konfigurations-Manager](https://aka.ms/configurereporting).
-    5. Erstellen Sie eine Ordner Dateisystemstruktur für Pakete.
-    6. Erstellen Sie eine Ordnerstruktur des Konfigurations-Manager-Konsole für Pakete.
-    7. Installieren von System Center Configuration Manager (aktuelle Zweig) Updates und zusätzlichen Windows 10 erforderliche Komponenten.
+- Windows-Editionen, die **für ein Upgrade geeignet** sind – auf Ihren Geräten müssen Editionen von Windows 7 oder Windows 8,1 ausgeführt werden, die für ein Upgrade auf Windows 10 Enterprise geeignet sind. Eine Liste der unterstützten Editionen finden Sie unter [Windows 10 Upgrade Paths](https://aka.ms/win10upgradepaths). 
+- **Unterstützte Geräte** – die meisten mit Windows 8,1 kompatiblen Computer sind mit Windows 10 kompatibel. Möglicherweise müssen Sie aktualisierte Treiber in Windows 10 installieren, damit Ihre Geräte ordnungsgemäß funktionieren. Weitere Informationen finden Sie unter [Windows 10-Spezifikationen](https://aka.ms/windows10specifications) .
+- **Vorbereitung der Bereitstellung** – stellen Sie sicher, dass Sie über Folgendes verfügen, bevor Sie mit der Konfiguration der Bereitstellung beginnen:
+    - Windows 10-Installationsmedium – das Installationsmedium muss sich auf einem separaten Laufwerk befinden, wobei der ISO bereits installiert ist. Sie können die ISO von [MSDN-Abonnenten Downloads](https://aka.ms/msdn-subscriber-downloads) oder aus dem [Volume Licensing Service Center](https://aka.ms/mvlsc)beziehen.
+    - Sicherungen von Benutzerdaten – Obwohl beim Upgrade Benutzerdaten migriert werden, empfiehlt es sich, ein Sicherungs Szenario zu konfigurieren. Exportieren Sie beispielsweise alle Benutzerdaten in ein OneDrive-Konto, einen BitLocker-zu-verschlüsselten USB-Flashlaufwerk oder einen Netzwerkdateiserver. Weitere Informationen finden Sie unter [sichern oder übertragen von Daten in Windows](https://aka.ms/backuptransferdatawindows).
+- **Vorbereitung der Umgebung** : Sie verwenden eine vorhandene Configuration Manager-Serverstruktur zur Vorbereitung der Betriebssystembereitstellung. Zusätzlich zur Basis Einstellung sollten die folgenden Konfigurationen in der Configuration Manager-Umgebung vorgenommen werden:
+    1. [Erweitern Sie das Active Directory-Schema](https://aka.ms/extendadschema) , und [Erstellen Sie einen System Verwaltungs Container](https://aka.ms/createsysmancontainer).
+    2. Aktivieren Sie die Active Directory-Gesamtstruktur Ermittlung und die Active Directory-System Ermittlung. Weitere Informationen finden Sie unter [configure Discovery Methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
+    3. Erstellen Sie IP-Bereichsgrenzen und Grenz Gruppen für Inhalte und Website Zuweisungen. Weitere Informationen finden Sie unter [define SiteLimits and Boundary Groups for System Center Configuration Manager](https://aka.ms/definesiteboundaries).
+    4. Hinzufügen und Konfigurieren der Configuration Manager Reporting Services-Punkt Rolle. Weitere Informationen finden Sie unter [Configuring Reporting in Configuration Manager](https://aka.ms/configurereporting).
+    5. Erstellen Sie eine Dateisystemordner-Struktur für Pakete.
+    6. Erstellen Sie eine Configuration Manager-Konsolen Ordnerstruktur für Pakete.
+    7. Installieren von System Center Configuration Manager (Current Branch)-Updates und zusätzlichen Windows 10-Voraussetzungen.
 
-## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>Teil 2: Hinzufügen ein Windows 10-Betriebssystemabbilds von Configuration Manager
-Jetzt müssen Sie ein Betriebssystem Aktualisierungspaket erstellen, die das vollständige Windows-10-Installationsmedium enthält. Konfigurations-Manager verwenden Sie in den folgenden Schritten erstellen ein Upgrade-Paket für Windows 10 Enterprise X64.
+## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>Abschnitt 2: Hinzufügen eines Windows 10-Betriebssystem Bilds mithilfe von Configuration Manager
+Jetzt müssen Sie ein Betriebssystem-Upgrade-Paket erstellen, das die vollständigen Windows 10-Installationsmedien enthält. In den folgenden Schritten erstellen Sie mit Configuration Manager ein Upgrade-Paket für Windows 10 Enterprise x64.
 
-**So fügen Sie ein Windows 10-Betriebssystemabbild von Configuration Manager hinzu**
+**So fügen Sie ein Windows 10-Betriebssystemabbild mithilfe von Configuration Manager hinzu**
 
-1. Die Konfigurations-Manager-Konsole im Arbeitsbereich **Software Library** rechten Maustaste auf den Knoten **Betriebssystem aktualisieren Pakete** , und wählen Sie dann **Betriebssystem Aktualisierungspaket hinzufügen**aus.
-2. Klicken Sie auf der Seite **Datenquelle** Geben Sie UNC-Pfad zu Windows 10 Enterprise X64 Mediums an, und wählen Sie dann auf **Weiter**.
-3. Klicken Sie auf der Seite **Allgemein** Geben Sie **Windows 10 Enterprise X64 aktualisieren**, und wählen Sie dann auf **Weiter**. 
-4. Klicken Sie auf der Seite **Zusammenfassung** wählen Sie **Weiter**aus, und wählen Sie dann auf **Schließen**. 
-5. Mit der rechten Maustaste in des erstellten **Windows 10 Enterprise X64 Update** -Pakets, und wählen Sie dann auf **Content verteilen**. 
-6. Wählen Sie Ihre Verteilungspunkt aus.
+1. Klicken Sie in der Configuration Manager-Konsole im Arbeitsbereich **Software Bibliothek** mit der rechten Maustaste auf den Knoten **Betriebssystem-Aktualisierungspakete** , und wählen Sie dann **Betriebssystem-Upgrade-Paket hinzufügen**aus.
+2. Geben Sie auf der Seite **Datenquelle** den UNC-Pfad zu Windows 10 Enterprise x64-Medien an, und wählen Sie dann **weiter**aus.
+3. Geben Sie **** auf der Seite Allgemein **Windows 10 Enterprise x64-Upgrade**an, und wählen Sie dann **weiter**aus. 
+4. Klicken Sie auf der Seite **Zusammenfassung** auf **weiter**, und wählen Sie dann **Schließen**aus. 
+5. Klicken Sie mit der rechten Maustaste auf das erstellte **Windows 10 Enterprise x64-Update** Paket, und wählen Sie **Inhalt verteilen**aus. 
+6. Wählen Sie Ihren Verteilungspunkt aus.
 
-## <a name="part-3-configure-deployment-settings"></a>Teil 3: Konfigurieren der Einstellungen für die Bereitstellung
-In diesem Schritt fügen Sie ein Upgrade Aufgabensequenz konfigurieren, die Einstellungen für das Upgrade von Windows 10 enthält. Sie identifizieren Sie die Geräte zu aktualisieren, und klicken Sie dann die Abfolge der Vorgänge für diese Geräte bereitstellen.
+## <a name="part-3-configure-deployment-settings"></a>Abschnitt 3: Konfigurieren der Bereitstellungseinstellungen
+In diesem Schritt konfigurieren Sie eine Aktualisierungstask Sequenz, die die Einstellungen für das Windows 10-Upgrade enthält. Dann identifizieren Sie die zu aktualisierbaren Geräte, und stellen Sie dann die Tasksequenz auf diesen Geräten bereit.
 
 ### <a name="create-a-task-sequence"></a>Erstellen einer Aufgabensequenz
-So erstellen Sie ein Upgrade Aufgabensequenz, führen Sie die folgenden Schritte aus:
+Führen Sie die folgenden Schritte aus, um eine Aktualisierungsaufgaben Sequenz zu erstellen:
   
-1. Erweitern Sie in der Configuration Manager-Konsole, klicken Sie im Arbeitsbereich **Software Library** **Betriebssysteme**. 
-2. Maustaste auf den Knoten **Task Sequences** , und wählen Sie dann auf **Task Sequence erstellen**.
-3. Wählen Sie auf der Seite **Erstellen einer neuen Aufgabensequenz** **ein Betriebssystem aus Aktualisierungspaket aktualisieren**, und wählen Sie dann auf **Weiter**.
-4. Klicken Sie auf der Seite **Task Sequence Informationen** Geben Sie **Windows 10 Enterprise X64 aktualisieren**, und wählen Sie dann auf **Weiter**.
-5. Klicken Sie auf der Seite **Aktualisieren des Windows-Betriebssystems** wählen Sie **Durchsuchen** und wählen Sie das **Upgrade Betriebssystem Windows 10 Enterprise X64 upgrade-Pakets**, wählen Sie **OK**aus, und wählen Sie dann auf **Weiter**.
-6. Folgen Sie den restlichen Seiten des Assistenten, und wählen Sie dann auf **Schließen**.
+1. Erweitern Sie in der Configuration Manager-Konsole im Arbeitsbereich **Software Bibliothek** die Option **Betriebssysteme**. 
+2. Klicken Sie mit der rechten Maustaste auf den Knoten **Tasksequenzen** , und wählen Sie dann **Tasksequenz erstellen**aus.
+3. Wählen Sie auf der Seite **neue Tasksequenz erstellen** die Option **Betriebssystem von Upgrade-Paket aktualisieren aus**, und wählen Sie dann **weiter**aus.
+4. Geben Sie auf der Seite **Task Sequenzinformationen** **Windows 10 Enterprise x64-Upgrade**an, und wählen Sie dann **weiter**aus.
+5. Wählen Sie auf der Seite **Windows-Betriebssystem aktualisieren** die Option **Durchsuchen** aus, und wählen Sie das **Upgrade-Paket für Windows 10 Enterprise x64 Upgrade**aus, klicken Sie auf **OK**und dann auf **weiter**.
+6. Fahren Sie auf den restlichen Seiten des Assistenten fort, und wählen Sie dann **Schließen**aus.
 
-### <a name="create-a-device-collection"></a>Erstellen Sie eine Gerät-Auflistung
-Nachdem Sie die Upgrade-Task Sequence erstellt haben, müssen Sie eine Auflistung erstellen, die Geräte enthält, die Sie upgraden.
+### <a name="create-a-device-collection"></a>Erstellen einer gerätesammlung
+Nachdem Sie die Aktualisierungstask Sequenz erstellt haben, müssen Sie eine Sammlung mit den Geräten erstellen, die Sie aktualisieren möchten.
 
 > [!NOTE]
-> Verwenden Sie die folgenden Einstellungen zum Testen der Bereitstellung auf einem einzigen Gerät. Regeln für die verschiedenen Mitgliedschaft können Sie Gruppen von Geräten zählen, wenn Sie bereit sind. Weitere Informationen finden Sie unter [Sammlungen in System Center Configuration Manager zu erstellen](https://aka.ms/sccm-create-collections).
+> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gruppen von Geräten einzuschließen, wenn Sie bereit sind. Weitere Informationen finden Sie unter [Erstellen von Auflistungen in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
 
-1. In der Configuration Manager-Konsole, klicken Sie im Arbeitsbereich **Ressourcen und Compliance** mit der rechten Maustaste **Gerät Sammlungen**, und wählen Sie dann auf **Geräte-Sammlung erstellen**. 
-2. Im Gerät-Sammlung erstellen-Assistenten auf der Seite **Allgemein** Geben Sie die folgenden Einstellungen, und wählen Sie dann auf **Weiter**:
-    - Name: Windows 10 Enterprise X64 Upgrade
-    - Einschränkende Auflistung: Alle Systeme
-3. Wählen Sie auf der Seite **Regeln für die Mitgliedschaft** **Regel hinzufügen** > **direkte Regel** zum Starten des Assistenten für die Erstellung direkter Mitgliedschaft.
-4. Wählen Sie auf der Seite **Willkommen** des Assistenten für die Erstellung direkter Mitgliedschaft **Weiter**.
-5. Geben Sie auf der Seite **Ressourcen suchen** Sie die folgenden Einstellungen, und ersetzen den Platzhaltertext **Wert** Text mit dem Namen des Geräts, die Sie aktualisieren: 
-    - Resource-Klasse: Systemressource
+1. Klicken Sie in der Configuration Manager-Konsole im Bereich **Ressourcen und Kompatibilität** mit der rechten Maustaste auf **gerätesammlungen**, und wählen Sie dann **gerätesammlung erstellen**aus. 
+2. Geben Sie im Assistenten zum Erstellen von Gerätesammlungen auf der Seite **Allgemein** die folgenden Einstellungen ein, und wählen Sie dann **weiter**aus:
+    - Name: Windows 10 Enterprise x64-Upgrade
+    - Einschränkende Auflistung: alle Systeme
+3. Wählen Sie auf der Seite **Mitgliedschaftsregeln** die Option Regel > **direkt Regel** **Hinzufügen**aus, um den Assistenten zum Erstellen einer direkten Mitgliedschaftsregel zu starten.
+4. Klicken Sie auf der **Willkommens** Seite des Assistenten zum Erstellen einer direkten Mitgliedschaftsregel auf **weiter**.
+5. Geben Sie auf der Seite **Ressourcen suchen** die folgenden Einstellungen ein, und ersetzen Sie den Platzhalter **Wert** mit dem Namen des zu aktualisierenden Geräts: 
+    - Ressourcenklasse: System Resource
     - Attribut Name: Name
     - Wert: *PC0003*
-6. Klicken Sie auf der Seite **Ressourcen auswählen** wählen Sie das Gerät, und wählen Sie **Weiter**aus.
-7. Führen Sie den Assistenten für direkte Mitgliedschaftsregel erstellen und den Assistenten zum Erstellen eines Geräts-Auflistung.  
-8. Überprüfen der Aktualisierung Windows 10 Enterprise X64-Auflistung. Führen Sie nicht fortgesetzt werden, bis Sie die Computer sehen Sie in der Auflistung hinzugefügt.
+6. Wählen Sie auf der Seite **Ressourcen auswählen** Ihr Gerät aus, und wählen Sie **weiter**aus.
+7. Schließen Sie den Assistenten zum Erstellen direkter MitgliedschaftsRegel und den Assistenten zum Erstellen von Gerätesammlungen ab.  
+8. Lesen Sie die Windows 10 Enterprise x64-Upgrade-Sammlung. Fahren Sie erst dann fort, wenn die in der Auflistung hinzugefügten Computer angezeigt werden.
 
-### <a name="create-an-operating-system-deployment"></a>Erstellen einer bereitstellungs eines Betriebssystems
-Befolgen Sie diese Schritte, um eine Bereitstellung für die Abfolge der Vorgänge zu erstellen.
+### <a name="create-an-operating-system-deployment"></a>Erstellen einer Betriebssystembereitstellung
+Führen Sie die folgenden Schritte aus, um eine Bereitstellung für die Tasksequenz zu erstellen.
 
-1. In der Configuration Manager-Konsole, klicken Sie im Arbeitsbereich **Softwarebibliothek** mit der rechten Maustaste die Abfolge der Vorgänge, die Sie in einem vorherigen Schritt erstellt haben, und wählen Sie dann auf **Bereitstellen**.
-2. Wählen Sie auf der Seite **Allgemein** die Sammlung **Windows 10 Enterprise X64 aktualisieren** , und wählen Sie dann auf **Weiter**.
-3. Wählen Sie auf der Seite **Inhalt** **Weiter**.
-4. Klicken Sie auf der Seite **Einstellungen für die Bereitstellung** wählen Sie die folgenden Einstellungen, und wählen Sie dann auf **Weiter**:
+1. Klicken Sie in der Configuration Manager-Konsole im Arbeitsbereich **Software Bibliothek** mit der rechten Maustaste auf die Tasksequenz, die Sie in einem vorherigen Schritt erstellt haben, und wählen Sie dann **Bereitstellen**aus.
+2. Wählen Sie auf der Seite **Allgemein** die **Windows 10 Enterprise x64-Upgrade** -Sammlung aus, und wählen Sie dann **weiter**aus.
+3. Klicken Sie auf der Seite **Inhalt** auf **weiter**.
+4. Wählen Sie auf der Seite **Bereitstellungseinstellungen** die folgenden Einstellungen aus, und wählen Sie dann **weiter**aus:
 
     > [!NOTE]
-    > Für diese testbereitstellung wird den Zweck **verfügbar**, festlegen auf die zum Starten der bereitstellungs Benutzereingriff erforderlich sind. Möglicherweise möchten Sie automatisieren die Bereitstellung mithilfe des erforderlichen zwecks, der umfasst die Konfiguration zusätzlicher Optionen wie bei Ausführung die Bereitstellung planen, in einer produktionsumgebung. 
+    > Für diese Testbereitstellung legen Sie den Zweck auf **available**fest, der die Benutzerintervention zum Starten der Bereitstellung erfordert. In einer Produktionsumgebung möchten Sie möglicherweise die Bereitstellung mithilfe des erforderlichen zwecks automatisieren, wozu zusätzliche Optionen wie die Planung bei der Ausführung der Bereitstellung erforderlich sind. 
 
-    - Aktion: Installieren
+    - Aktion: install
     - Zweck: verfügbar
 
-5. Klicken Sie auf der Seite **Planung** übernehmen Sie die Standardeinstellungen, und wählen Sie dann auf **Weiter**.
-6. Übernehmen Sie auf der Seite **Benutzer** die Standardeinstellungen, und wählen Sie dann auf **Weiter**.
-7. Klicken Sie auf der Seite **Warnungen** übernehmen Sie die Standardeinstellungen, und wählen Sie dann auf **Weiter**.
-8. Klicken Sie auf der Seite **Zusammenfassung** wählen Sie **Weiter**aus, und wählen Sie dann auf **Schließen**.
+5. Übernehmen Sie auf der Seite **Planung** die Standardeinstellungen, und wählen Sie dann **weiter**aus.
+6. Übernehmen Sie auf der Seite **Benutzerfreundlichkeit** die Standardeinstellungen, und wählen Sie dann **weiter**aus.
+7. Übernehmen Sie auf der Seite **Warnungen** die Standardeinstellungen, und wählen Sie dann **weiter**aus.
+8. Klicken Sie auf der Seite **Zusammenfassung** auf **weiter**, und wählen Sie dann **Schließen**aus.
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>Teil 5: Starten der Windows-10 Upgrade Aufgabensequenz
-Befolgen Sie diese Schritte, um die Aktualisierung von Windows 10 Aufgabensequenz auf dem Gerät zu starten, den Sie aktualisieren.
+## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>Teil 5: Starten der Tasksequenz für Windows 10-Upgrades
+Führen Sie die folgenden Schritte aus, um die Windows 10-Aktualisierungstask Sequenz auf dem Gerät zu starten, das Sie aktualisieren möchten.
  
-1. Melden Sie sich an der Windows-Computer und starten Sie **Software Center**zu.
-2. Wählen Sie die Abfolge der Vorgänge, die Sie in einem vorherigen Schritt erstellt haben, und wählen Sie dann auf **Installieren**.
-3. Klicken Sie nach Beginn die Aufgabensequenz, er automatisch initiiert den Upgradeprozess in-Place durch Aufrufen das Windows-Setupprogramm (Setup.exe) mit den erforderlichen Befehlszeilenparametern ausführen und eine automatisierte Aktualisierung, alle Daten, die Einstellungen, die apps behält, und Treiber.
-4. Nach dem erfolgreichen der Aufgabensequenz Abschluss wird der Computer vollständig auf Windows 10 aktualisiert werden.
+1. Melden Sie sich beim Windows-Computer an, und starten Sie **Software Center**.
+2. Wählen Sie die Tasksequenz aus, die Sie in einem vorherigen Schritt erstellt haben, und wählen Sie dann **Installieren**aus.
+3. Wenn die Tasksequenz beginnt, initiiert Sie automatisch das direkte Upgrade, indem das Windows-Setupprogramm (Setup. exe) mit den erforderlichen Befehlszeilenparametern zum Durchführen eines automatisierten Upgrades aufgerufen wird, das alle Daten, Einstellungen, Apps und Treiber.
+4. Nachdem die Tasksequenz erfolgreich abgeschlossen wurde, wird der Computer vollständig auf Windows 10 aktualisiert.
 
 Wenn bei der Verwendung von Windows 10 in einer Unternehmensumgebung Probleme auftreten, konsultieren Sie die [wichtigsten Microsoft-Support-Lösungen für am häufigsten auftretenden Probleme](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Diese Ressourcen umfassen KB-Artikel, Updates und Bibliotheksartikel.
 
-Während der Installation von Updates in Ihrer Organisation mit der aktualisieren Compliance-Funktion eines Windows Analytics einen ganzheitlichen OS Update Compliance, Update Bereitstellungsfortschritts und Fehler bei der Problembehandlung für Windows 10 Geräte bieten. Dieser neue Dienst verwendet Installationsstatus, Windows Update-Konfiguration und andere Informationen einschließlich Diagnosedaten um solche Einblicke ohne zusätzliche Kosten und ohne zusätzliche infrastrukturanforderungen. Ob sie mit Windows Update für Geschäftskunden und anderen Verwaltungstools verwendet wird, können Sie sicher sein, die Ihre Geräte ordnungsgemäß aktualisiert werden.
+Verwenden Sie während der Einführung von Updates in Ihrer Organisation die Update Compliance-Funktion von Windows Analytics, um eine ganzheitliche Ansicht der Betriebssystemupdate-Compliance, des Fortschritts bei der Aktualisierung der Bereitstellung und der Fehlerbehebung für Windows 10-Geräte bereitzustellen. Dieser neue Dienst verwendet Diagnosedaten, einschließlich des Installationsfortschritts, der Windows Update-Konfiguration und anderer Informationen, um solche Einblicke zu ermöglichen, ohne zusätzliche Kosten und zusätzliche Infrastrukturanforderungen. Unabhängig davon, ob Sie mit Windows Update for Business oder anderen Verwaltungstools verwendet werden, können Sie sicher sein, dass Ihre Geräte ordnungsgemäß aktualisiert werden.
 
-Finden Sie unter [Monitor-Updates für Windows und Windows Defender Antivirus mit Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) erfahren mehr, erste Schritte und Kompatibilität verwenden.
+Weitere Informationen finden Sie unter [Überwachen von Windows-Updates und Windows Defender Antivirus mit Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) , um mehr zu erfahren, zu beginnen und die Update Kompatibilität zu verwenden.
 
-Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step2) für diesen Schritt anschauen.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step2) für diesen Schritt betrachten.
 
 ## <a name="next-step"></a>Nächster Schritt
 

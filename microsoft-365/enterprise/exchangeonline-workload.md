@@ -1,5 +1,5 @@
 ---
-title: Stellen Sie Exchange Online für Microsoft 365 Enterprise bereit
+title: Bereitstellen von Exchange Online für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
@@ -7,97 +7,98 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
-description: Führen Sie durch den Prozess der Planung, Rollout und den Wert der Exchange Online in Microsoft 365 Enterprise in Ihrer Organisation gesteuert.
-ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Durchlaufen Sie den Prozess der Planung, Einführung und Einführung des Werts von Exchange Online in Microsoft 365 Enterprise in Ihrer Organisation.
+ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281205"
 ---
-# <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Stellen Sie Exchange Online für Microsoft 365 Enterprise bereit
+# <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Bereitstellen von Exchange Online für Microsoft 365 Enterprise
 
-Exchange Online ist Ihre primäre Cloud-Dienst für e-Mail und Kalenderfunktionen, hilft die Benutzern zusammenarbeiten Möglichkeiten, die erfordern keinen in Echtzeit chatten oder zentralisierte Speicherung von Dokumenten. Exchange Online ist, woher einzelne und kleine Gruppe kurzlebige Kommunikation und Planen von und ist ein Schlüsselelement des integrierten für Zusammenarbeit einem Wert von Microsoft 365 Enterprise. Exchange Online können Sie mehr erreichen und eine effektivere Zusammenarbeit mit bekannten Outlook-Anwendung, unabhängig davon, welches Gerät Sie sich befinden.
+*Diese Arbeitslast ist sowohl in den Versionen E3 und E5 von Microsoft 365 Enterprise enthalten.*
 
-Exchange Online hat auch die erweiterte Sicherheitsfunktionen, einschließlich Anti-Malware und Filtern von Anti-Spam-Postfächer zu schützen und Data Loss Prevention-Funktionen, die verhindern, dass Benutzer versehentlich vertraulichen Informationen an nicht autorisierte Personen senden. Exchange Online-Sicherheit ist ein Schlüsselelement des Werts intelligenten Sicherheit von Microsoft 365 Enterprise.
+Exchange Online ist Ihr primärer clouddienst für e-Mail-und Kalenderfunktionen, die Ihren Benutzern bei der Zusammenarbeit auf eine Art und Weise helfen, in der kein Echtzeit-Chat oder zentraler Dokumentspeicher erforderlich ist. Exchange Online ist die Art und Weise, wie Sie die Kommunikation und Planung von einzelnen und kleinen Gruppen durchführen, und ist ein wichtiger Bestandteil des Werts von Microsoft 365 Enterprise für die zusammenArbeit. Mit Exchange Online können Sie mehr erreichen und effektiver mit der bekannten Outlook-Anwendung arbeiten, unabhängig davon, auf welchem Gerät Sie sich gerade befinden.
 
-Wenn Sie mit Exchange Online sind, finden Sie unter [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online).
+Exchange Online verfügt außerdem über erweiterte Sicherheitsfunktionen wie Antischadsoftware und Antispamfilter zum Schutz von Postfächern und Funktionen zur Verhinderung von Datenverlust, die verhindern, dass Benutzer vertrauliche Informationen fälschlicherweise an unbefugte Personen senden. Exchange Online Security ist ein zentrales Element des intelligenten Sicherheits Werts von Microsoft 365 Enterprise.
 
-Die folgenden Phasen und Schritte führen Sie durch den Prozess von der Rolle von Exchange Online in Ihrer Organisation, Onboarding Ihrer Organisation zu Exchange Online über eine Reihe von schrittweisen Einführungen Entwurfsprozess und fördern der Verwendung von Exchange Online und seine der Wert für die Endbenutzer.
+Wenn Sie eine neue Marke für Exchange Online haben, lesen Sie [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online).
+
+Die folgenden Phasen und Schritte führen Sie durch den Prozess der Planung der Rolle von Exchange Online in Ihrer Organisation, das Onboarding Ihrer Organisation zu Exchange Online über eine Reihe von fortschrittlichen Rollouts und die Nutzung von Exchange Online und deren Wert für die Endbenutzer.
 
 >[!Note]
->Diese Anweisungen Bereitstellung sollte erst nach Abschluss der Microsoft 365 Foundation Unternehmensinfrastruktur [Phase 2-Identity](identity-infrastructure.md) folgen.
+>Diese Bereitstellungsanweisungen sollten erst befolgt werden, nachdem Sie die [Phase 2-Identität](identity-infrastructure.md) der Microsoft 365 Enterprise Foundation-Infrastruktur abgeschlossen haben.
 >
 
 ## <a name="phase-1-envision"></a>Phase 1: Betrachten
 
-In dieser Phase sammeln Sie die Personen für Ihre Bereitstellung von Exchange Online und fest, wie Ihre Organisation Exchange Online seiner geschäftlichen Anforderungen gerecht werden.
+In dieser Phase erfassen Sie die Personen für Ihre Exchange Online-Bereitstellung und bestimmen, wie Ihre Organisation Exchange Online verwendet, um Ihre geschäftlichen Anforderungen zu erfüllen.
 
-### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Schritt 1: Sammeln der Mitglieder einer Exchange Online-Bereitstellung
+### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Schritt 1: Sammeln Ihrer Exchange Online-Bereitstellungs Mitglieder
 
-Für eine erfolgreiche Bereitstellung von Exchange Online auf der Basis der Microsoft 365 Foundation Unternehmensinfrastruktur [Phase 2-Identität](identity-infrastructure.md) müssen Sie die richtigen Personen für Eingabe- und Feedback erhalten. Wichtige Personen gehören Entscheidungsträger, IT-Mitarbeiter wie konstruiert und Implementierer und Fürsprecher für die Endbenutzer. 
+Für eine erfolgreiche Bereitstellung von Exchange Online über [Phase 2 – Identität](identity-infrastructure.md) der Microsoft 365 Enterprise Foundation-Infrastruktur müssen Sie die richtigen Mitarbeiter für Eingabe und Feedback erhalten. Zu den wichtigsten Personen zählt die Entscheidungsträger für Unternehmen, IT-Mitarbeiter wie Architekten und Implementierer sowie Fürsprecher für Ihre Endbenutzer. 
 
-Diese drei Gruppen stellen Sie sicher, dass Ihre Exchange Online Bereitstellung Aspekte das aufgelistet geschäftlichen Anforderungen, technische Aspekte der Migration von Postfächern und Sicherheit und umfasst, dass das Ergebnis etwas wird, die die meisten Benutzer verwenden.
+Diese drei Gruppen stellen sicher, dass Ihre Exchange Online-Bereitstellung Überlegungen beinhaltet, die geschäftliche Anforderungen, technische Aspekte der Migration und Sicherheit von Postfächern berücksichtigen, und dass das Ergebnis ein typisches Beispiel für Benutzer ist.
 
 #### <a name="result"></a>Ergebnis
 
 Eine Liste von Personen, die die unternehmerischen und technischen Aspekte sowie die Endbenutzer Ihrer Organisation darstellen.
 
-### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>Schritt 2: Bestimmen Sie und Priorisieren Sie Ihre Exchange Online Geschäftsszenarien
+### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>Schritt 2: ermitteln und Priorisieren Ihrer Exchange Online-Geschäftsszenarien
 
-Exchange Online können für verschiedene Zwecke verwendet werden. Sie müssen herausfinden, welche Zwecke Ihrer geschäftlichen Anforderungen auf separaten Ebenen in Ihrer Organisation, Ihre Geschäftsbereichen, Abteilungen oder einzelne arbeiten und Project-Teams zuordnen. Sie sollten Exchange Online, um Ihre einzelnen und kleine Gruppe kurzlebige Kommunikation und Planen von Anforderungen aufgelistet adressieren. 
+Exchange Online kann zu unterschiedlichen Zwecken verwendet werden. Sie müssen herausfinden, welche Zwecke Ihren geschäftlichen Anforderungen auf den getrennten Ebenen Ihrer Organisation, ihren Geschäftsgruppen, ihren Abteilungen oder einzelnen Arbeits-und Projektteams zugeordnet werden. Sie sollten Exchange Online anvisieren, um Ihre individuellen und kleinen Gruppen mit kurzlebigen Kommunikations-und Planungsanforderungen zu erfüllen. 
 
-Eine Möglichkeit, die Vorteile von Exchange Online finden Sie unter ist untersuchen, wie Personen, Teams oder V-Team heute interagieren, und suchen Sie dann eine entsprechende Szenarios, in dem bietet einfachere Möglichkeiten, geplante Besprechungen, Kommunikation und Zusammenarbeit. Beachten Sie, dass [Microsoft-Teams,](teams-workload.md) die bessere Wahl für einige Szenarien für die Zusammenarbeit möglicherweise beibehalten.
+Eine Möglichkeit, die Vorteile von Exchange Online anzuzeigen, besteht darin, zu untersuchen, wie Einzelpersonen, ein Team oder ein v-Team heute interagieren, und dann ein geeignetes Szenario zu finden, das einfachere Möglichkeiten zur Kommunikation, zum Planen von Besprechungen und zur Zusammenarbeit bietet. Beachten Sie, dass [Microsoft Teams](teams-workload.md) für einige ihrer Zusammenarbeitsszenarien möglicherweise besser geeignet ist.
 
 Exchange Online ermöglicht die folgenden strategischen Geschäftsszenarien für Microsoft 365 Enterprise:
 
 - Zusammenarbeiten an Dokumenten in Echtzeit oder in Ihrem eigenen Tempo, um den Mitgestaltungsprozess zu vereinfachen
 - Verwalten von Projekten, Aufgaben und Terminen, um Ihre Geschäftsziele zu erreichen
 - Verstehen Ihrer Arbeitsgewohnheiten zur Verbesserung Ihres Einflusses und Ihres Eindrucks
-- Kommunikation mit Ihrem Team, um auf dem Laufenden zu bleiben, Feedback anzufordern, den Zusammenhalt zu stärken und einen Konsens zu erreichen
+- Kommunikation mit Ihrem Team, um auf den Laufenden zu bleiben, Feedback anzufordern, den Zusammenhalt zu stärken und einen Konsens zu erreichen
 - Speichern und Freigeben von Dateien innerhalb und außerhalb Ihrer Organisation für eine nahtlose Zusammenarbeit über Organisationsgrenzen hinweg
 - Sicheres Arbeiten überall und jederzeit von Ihrem Gerät aus, um bei einem flexiblen Arbeitsstil produktiver zu arbeiten
 - Schützen Ihrer Informationen und Reduzierung des Risikos von Datenverlusten
-- Erkennung von und Schutz gegen externe Bedrohungen 
-- Überwachen, Berichten und Analysieren von Aktivität zum umgehend reagieren, um die Sicherheit in der Organisation bereitstellen
+- Schutz vor externen Bedrohungen 
+- Überwachen, melden und Analysieren der Aktivität, um umgehend auf die organisatorische Sicherheit zu reagieren
 - Unterstützen Ihrer Organisation mit verbessertem Datenschutz und Compliance, um die Datenschutz-Grundverordnung (DSGVO) zu erfüllen
 
 Weitere Informationen finden Sie unter [Digitale Transformation mit Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="result"></a>Ergebnis
-Eine Liste mit Exchange Online Situationen, in denen der Anforderungen Ihrer Organisation, planen, Zusammenarbeit und Kommunikation kurzlebige.
+Eine Liste der Exchange Online-Szenarien, die die Anforderungen Ihrer Organisation an Kommunikation, Terminplanung und Zusammenarbeit in kurzer Zeit erfüllen.
 
 ## <a name="phase-2-onboard"></a>Phase 2: Onboarding
 
-In dieser Phase für den technischen Aspekten der Exchange Online-Bereitstellung planen und einführungsmethoden für ausgewählte Gruppen von Benutzern zu starten.
+In dieser Phase planen Sie die technischen Aspekte einer Exchange Online-Bereitstellung und beginnen mit der Einführung in ausgewählte Benutzergruppen.
 
 ### <a name="prerequisites-identity-and-device-access-configuration"></a>Voraussetzungen: Konfigurationen für den Identitäts- und Gerätezugriff
 
-Um Zugriff auf Exchange Online-Postfächer zu schützen, stellen Sie sicher, dass Sie die [Identität und Gerät RAS-Richtlinien](identity-access-policies.md) und die [empfohlene Richtlinien für den Exchange Online](secure-email-recommended-policies.md)konfiguriert haben.
+Um den Zugriff auf Exchange Online-Postfächer zu schützen, stellen Sie sicher, dass Sie [Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md) und die [empfohlenen Exchange Online-Zugriffsrichtlinien](secure-email-recommended-policies.md)konfiguriert haben.
 
 ### <a name="step-1-complete-your-technical-planning"></a>Schritt 1: Abschließen der technischen Planung
 
-Bevor Sie beginnen, technische Planung, bestimmen Sie, ob Sie schnelle verwenden möchten. Wenn die Organisation über mehr als 50 Arbeitsplätzen und eines [qualifizierten Plan](https://technet.microsoft.com/library/dn783224.aspx)beteiligt ist, können Sie [schnell für Microsoft 365](https://fasttrack.microsoft.com/microsoft365), ohne zusätzliche Kosten durch die Planung, Bereitstellung und Service Annahme leiten verfügbar. Alternativ können Sie diesen Vorgang ausführen selbst mithilfe der schnelle Onboarding-Assistenten, die aus [der schnelle](https://fasttrack.microsoft.com/) verfügbar sind, sobald Sie sich mit Ihrem Office 365-Konto anmelden.
+Bevor Sie mit der technischen Planung beginnen, legen Sie fest, ob Sie die Kurzhilfe verwenden möchten. Wenn Ihre Organisation über 50 Arbeitsplätze hat und an einem [berechtigten Plan](https://technet.microsoft.com/library/dn783224.aspx)teilnimmt, können Sie [für Microsoft 365](https://fasttrack.microsoft.com/microsoft365), ohne zusätzliche Kosten, zur Verfügung stehen, um Sie durch Planung, Bereitstellung und Dienst Einführung zu führen. Sie können diese Arbeit auch selbst abschließen, indem Sie Onboarding-Assistenten verwenden, die bei [](https://fasttrack.microsoft.com/) der Anmeldung mit ihrem Office 365-Konto bei der Verbindung zur Verfügung stehen.
 
-Wenn Sie Ihre eigene Planung ausführen oder in Verbindung mit der schnelle, müssen Sie ermitteln, ob Ihr Netzwerk und Ihre Organisation für Exchange Online bereit sind. Es ist besonders wichtig, dass Sie die abschlusskriterien für Netzwerke in Ihrer Infrastruktur Foundation mit besonders auf die Internetbandbreite, Durchsatz und Datenverkehr Verzögerungen für Maximierung der Leistung für die zusätzlichen Datenverkehr für Exchange erfüllen Online-basierten e-Mails und Anhängen.
+Wenn Sie Ihre eigene Planung oder in Verbindung mit der Überführung durchführen, müssen Sie ermitteln, ob Ihr Netzwerk und Ihre Organisation für Exchange Online bereit sind. Es ist besonders wichtig, dass Sie die Beendigungskriterien für das Netzwerk in ihrer Foundation-Infrastruktur erfüllen, mit besonderem Augenmerk auf die Internet Bandbreite, den Durchsatz und die Datenverkehrs Verzögerungen, um die Leistung für den zusätzlichen Datenverkehr für Exchange zu maximieren. Online basierte e-Mails und Anlagen.
 
-Verwenden Sie diese Ressourcen, um für den technischen Aspekten der Exchange Online-Rollout vorzubereiten: 
+Verwenden Sie diese Ressourcen, um sich auf die technischen Aspekte eines Exchange Online-Rollouts vorzubereiten: 
 
 - [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
-- [Office 365 e-Mail-Migration advisor](https://portal.office.com/onboarding/mailsetupadvisor#/) (muss bei Ihrem Office 365-Abonnement angemeldet sein)
 - [Zusammenarbeit in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Empfänger in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
 
-Lesen Sie für ein besseres Verständnis der Sicherheit in Exchange Online die folgenden Ressourcen:
+Ein besseres Verständnis der Sicherheit in Exchange Online finden Sie in den folgenden Ressourcen:
 
 - [Berechtigungen in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
 - [Sicherheit und Richtlinientreue für Exchange Online](https://technet.microsoft.com/library/jj200706(v=exchg.150).aspx) 
 - [Antispam- und Antischadsoftwareschutz](https://technet.microsoft.com/library/jj200731(v=exchg.150).aspx)
 
-Im nächsten Schritt verwenden Sie diese Ressourcen um zu Exchange Online postfachverwaltung zu verstehen:
+Verwenden Sie als nächstes die folgenden Ressourcen, um die Exchange Online-Postfachverwaltung zu verstehen:
 
 - [Erstellen von Benutzerpostfächern in Exchange Online](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
 - [Verwalten von Benutzerpostfächern](https://technet.microsoft.com/library/bb123809(v=exchg.150).aspx) 
@@ -105,77 +106,77 @@ Im nächsten Schritt verwenden Sie diese Ressourcen um zu Exchange Online postfa
 
 #### <a name="result"></a>Ergebnis
 
-Sie verstehen Migration von Postfächern, Sicherheit und Verwaltung und können mit Einführung der ausgewählten Gruppen in Ihrer Organisation Exchange Online beginnen.
+Sie verstehen die Migration, Sicherheit und Verwaltung von Postfächern und können mit der Einführung von Exchange Online zu ausgewählten Gruppen in Ihrer Organisation beginnen.
 
 ### <a name="step-2-run-an-it-pilot"></a>Schritt 2: Ausführen eines IT-Pilotprojekts
 
 In den meisten mittelständischen und großen Unternehmen bietet es sich an, ein IT-Pilotprojekt mit den Projektbeteiligten aus Phase 1, Erstanwendern und Technikliebhabern durchzuführen.
 
-- Wählen Sie ein Exchange Online Business Szenario, in dem die Teilnehmer an der Pilotphase IT üben können.
-- Geben Sie die Teilnehmer an der Pilotphase Office 365-Lizenzen, und migrieren Sie ihre lokalen Postfächer zu Exchange Online.
-- Geben Sie die Teilnehmer an der Pilotphase eine Reihe von Übungen So testen Sie Exchange Online-e-Mail-Planung und andere Funktionen.
-- Bestimmen Sie der Change-Management-Strategie und erzeugen Sie Materialien organisationsweiten Benutzer Akzeptanz von Exchange Online zu. Änderung Management Materialien können e-Mail-Ankündigungstext, interne Schulungspläne, Gang Poster und Präsentationen enthalten. Dieses Material werden Ihrer Organisation zu Exchange Online und seine Vorteile durch die Ziele der auslösen zur Förderung des Bekanntheitsgrads und treibende Verwendungsanalyse darüber informieren. Finden Sie im Artikel [Ändern Management-Strategie für das Microsoft-Teams,](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) einige Ideen.
-- Haben Sie Ihre IT pilot Teilnehmer die Änderung Management Materialien basierend auf ihren Erfahrungen überprüfen. Sie können auf best Practices Tipps und Ratschläge, wie Sie am besten beschreiben die Vorteile von Exchange Online und für die Kommunikation und-Planung Verwendungsweise bereitstellen.
+- Wählen Sie ein Exchange Online-Geschäftsszenario aus, in dem Ihre IT-Pilot Teilnehmer üben können.
+- Erteilen Sie Ihren Pilot Teilnehmern Office 365-Lizenzen, und migrieren Sie Ihre lokalen Postfächer zu Exchange Online.
+- Geben Sie Ihren Piloten Teilnehmern eine Reihe von Übungen, um Exchange Online-e-Mails, Terminplanung und andere Funktionen zu testen.
+- Bestimmen Sie Ihre Change Management-Strategie, und erstellen Sie Materialien, die die organisationsweite Benutzerakzeptanz von Exchange Online fördern. Änderungs Verwaltungs Materialien können e-Mail-Ankündigungstext, interne Schulungspläne, Flur Poster und Präsentationen sein. Diese Materialien informieren Sie Ihre Organisation über Exchange Online und Ihre Vorteile mit dem Ziel, das Bewusstsein zu schärfen und die Nutzung zu verbessern. Einige Ideen finden Sie im Artikel [Change Management Strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) .
+- Lassen Sie Ihre IT-Pilot Teilnehmer die Änderungs Verwaltungs Materialien basierend auf Ihren Erfahrungen überarbeiten. Sie bieten Tipps zu bewährten Methoden und Ratschläge, wie Sie die Vorteile von Exchange Online am besten beschreiben und wie Sie es für Kommunikation und Terminplanung verwenden können.
 
 #### <a name="result"></a>Ergebnis
 
-Der Exchange Online für IT-Pilotphase abgeschlossen ist und die anfängliche Änderung Management Materialien wurden entwickelt, geprüft und eingeschränkt.
+Ihr Exchange Online-IT-Pilotprojekt ist abgeschlossen, und die anfänglichen Änderungs Verwaltungs Materialien wurden entwickelt, überprüft und optimiert.
 
 ### <a name="step-3-roll-out-to-a-business-group"></a>Schritt 3: Einführung in eine Unternehmensgruppe
 
-Klicken Sie nach Abschluss der Pilotphase IT, Einführung von Exchange Online Business Gruppe oder Abteilung in Ihrer Organisation. Wenn Ihre Organisation einen lokale e-Mail-Dienst wie Exchange Server verwendet wird, besteht die Implementierung Migration von Postfächern aus. Einführung sollten Folgendes umfassen:
+Nachdem Sie Ihr IT-Pilotprojekt abgeschlossen haben, müssen Sie Exchange Online für eine Unternehmensgruppe oder Abteilung in Ihrer Organisation bereitstellen. Wenn Ihre Organisation einen lokalen e-Mail-Dienst wie Exchange Server verwendet, besteht dieser Rollout aus der Postfachmigration. Dieser Rollout sollte Folgendes umfasst:
 
-- Kennung für wichtige Geschäftsszenarien für Exchange Online innerhalb der Unternehmensgruppe.
-- Ankündigung Aktivitäten aus, die Benutzer über die Erwartungen und Zeitrahmen für Exchange Online-Nutzung für Abteilungen und Arbeit "oder" Project-Teams zu informieren.
-- Migration von lokalen Postfächern der Mitglieder Ihrer Business zu Exchange Online.
-- Versendung benutzerschulungen zu Exchange Online oder Links zu Ressourcen, eine Einführung in Exchange Online und dessen Verwendung.
+- Identifizierung der wichtigsten Geschäftsszenarien für Exchange Online innerhalb der Unternehmensgruppe.
+- Ankündigungs Aktivitäten, um Benutzer über die Erwartungen und Zeitpläne für die Exchange Online-Nutzung für Abteilungen und Arbeits-oder Projektteams zu informieren.
+- Migration von lokalen Postfächern Ihrer Geschäftsgruppen Mitglieder zu Exchange Online.
+- Bereitstellen von Benutzerschulungen in Exchange Online oder Links zu Ressourcen zur Einführung von Exchange Online und zur Verwendung.
 - Ein Feedbackmechanismus, z. B. ein zentrales Microsoft Teams-Team, das alle Personen in der Unternehmensgruppe enthält, um Kommentare von Benutzern in der Unternehmensgruppe zu sammeln und Probleme zu beheben.
 
 Während der Einführung können Sie Ihre Änderungsverwaltungsmaterialien in Vorbereitung auf die organisationsweite Einführung optimieren.
 
 #### <a name="result"></a>Ergebnis
 
-Eine Unternehmensgruppe ist nicht gedrückt und Ausführung mit Exchange Online und die Änderung Management Materialien getestet und eingeschränkt wurden.
+Eine Unternehmensgruppe wird mit Exchange Online eingerichtet, und die Änderungs Verwaltungs Materialien wurden getestet und optimiert.
 
 ## <a name="phase-3-drive-value"></a>Phase 3: Wertschöpfung
 
-In dieser Phase abgeschlossen die Einführung von Exchange Online und unterstützen Ihre Benutzer, mit denen sie die Vorteile auszuschöpfen.
+In dieser Phase schließen Sie den Rollout von Exchange Online ab und unterstützen Ihre Benutzer bei der Realisierung ihrer Vorteile.
 
-### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>Schritt 1: Einführung von Exchange Online für den Rest Ihrer Organisation
+### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>Schritt 1: Bereitstellen von Exchange Online in der restlichen Organisation
 
 Das Rollout in der restlichen Organisation sollte Folgendes beinhalten:
 
-- Kennung für wichtige Geschäftsszenarien für Exchange Online in separaten Geschäftsbereichen.
-- Verwendung von Ihrer eingeschränkten Änderung Management Referenzmaterial für Ankündigung Aktivitäten aus, die Ihrer Organisation der erwartet zu informieren und Zeitachsen für die Verwendung von Exchange Online.
+- Identifizierung von wichtigen Geschäftsszenarien für Exchange Online innerhalb separater Unternehmensgruppen.
+- Verwenden Sie ihr verfeinertes Change Management-Material für Ankündigungs Aktivitäten, um Ihre Organisation über die Erwartungen und Zeitpläne für die Exchange Online-Nutzung zu informieren.
 - Migration der Postfächer für den Rest Ihrer Organisation zu Exchange Online.
-- Spielt die Schulung von Benutzern auf Exchange Online, oder geben Sie Links zu Ressourcen, die eine Einführung in Exchange Online und dessen Verwendung.
+- Bereitstellen von Benutzerschulungen in Exchange Online oder Bereitstellung von Links zu Ressourcen zur Einführung von Exchange Online und zur Verwendung.
 - Ein Feedbackmechanismus, z. B. ein zentrales Team, das alle Personen in der Unternehmensgruppe enthält, um Kommentare und Probleme von Benutzern in der Organisation zu sammeln. Wenn Ihre Organisation weniger als 2500 Einzelpersonen umfasst, verwenden Sie einen öffentlichen Kanal in Teams. Andernfalls verwenden Sie eine öffentliche Gruppe in Yammer.
 
 #### <a name="result"></a>Ergebnis
 
-Ihrer Organisation ist nicht gedrückt und ausgeführt werden und Ihre Strategie für die Änderung Management direkt zu informieren und Schulen Aktivieren von Benutzern zum Verwenden von Exchange Online ist.
+Ihre Organisation ist in Betrieb und ihre Change Management-Strategie ist vorhanden, um Benutzer zu informieren, zu Schulen und Ihnen die Verwendung von Exchange Online zu ermöglichen.
 
 ### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>Schritt 2: Messen der Nutzung, Verwalten der Zufriedenheit und Fördern der Akzeptanz
 
-Nach der Einführung der Exchange Online in der gesamten Organisation, müssen Sie weiterhin Ihre Änderung-Strategie einsetzen:
+Nach der Einführung von Exchange Online für Ihre gesamte Organisation müssen Sie Ihre Change Management-Strategie weiterhin für Folgendes verwenden:
 
-- Haben Sie Ihre führende Exchange Online als primäres Tool für die einzelnen und kurzlebige Kommunikation fördern und planen.
-- Fördern Sie Personen für die Verwendung für Unternehmensgruppe, Abteilung, Work, und project Team Communications, Kalender und Zusammenarbeit.
+- Führen Sie eine Unterstützung für Exchange Online als primäres Tool für die individuelle und kurzlebige Kommunikation und Terminplanung aus.
+- Ermutigen Sie Einzelpersonen, die IT für die Kommunikation, das kalendering und die Zusammenarbeit von Unternehmensgruppen, Abteilungen, Mitarbeitern und Projekten zu verwenden.
 
 Nachfolgend finden Sie einige Vorschläge:
 
 - Weitere Informationen zu allgemeinen bewährten Methoden für die Einführung von Clouddiensten finden Sie im [Office 365-Einführungsleitfaden](https://aka.ms/successfactors). 
 - Informationen zur Office 365-Dienstnutzung in Ihrer Organisation finden Sie unter [Office 365-Aktivitätsberichte](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Wenn Sie kein globaler Administrator für Office 365 für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
-- Überwachen Sie Ihr Feedback Veranstaltungsort (einen öffentlichen Kanal in einem zentralen Teams Team- oder Yammer) Informationen zu Problemen und Feedback von Personen zu ihren Erfahrungen mit Exchange Online. Beheben Sie so schnell wie möglich, um zu verhindern, dass frustrierte Einzelpersonen und demonstrieren die Unterstützung für das Rollout Fragen und Probleme.
-- Identifizieren und Champions in jeder Gruppe Business Mentorenprogramme und markieren Sie ihre erreichten und bewährte Methoden, die mit Exchange Online. Entsprechend ihren Erfolge, für die Organisation Projekterfolg und Annahme anzeigen. Billigung durch technischen Leiter innerhalb einer Unternehmensgruppe kann einen starken Einfluss über Führungskräfte und Peers ausüben.
+- ÜberWachen Sie Ihren Feedback-Veranstaltungsort (einen öffentlichen Kanal in einem zentralen Teams-Team oder jammern) auf Probleme und Feedback von Personen über ihre Erfahrungen mit Exchange Online. Beheben Sie Fragen und Probleme so schnell wie möglich, um frustrierte Personen zu verhindern und die Unterstützung für die Einführung zu demonstrieren.
+- Identifizieren und pflegen Sie Champions in jeder Geschäftsgruppe, und heben Sie Ihre Leistungen und bewährten Methoden mit Exchange Online hervor. Reflektieren Sie Ihre Erfolge an der Organisation, um Projekterfolg und-Annahme zu zeigen. Die unterStützung durch technische Leiter innerhalb einer Unternehmensgruppe kann Einfluss auf Führungskräfte und Peers haben.
 
 #### <a name="result"></a>Ergebnis
 
-Ihre Organisation hat Exchange Online als primäre einzelne und kleine Gruppe kurzlebige Kommunikation und Planungstool eingeführt.
+Ihre Organisation hat Exchange Online als primäres, individuelles und kleineres Kommunikations-und Planungstool für kurze Zeit verwendet.
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 
-Um Microsoft verkürzt, und erfahren, wie das Unternehmen zu Exchange Online migriert und Exchange Online Protection zum Schutz vor Angriffen im Internet verwendet, finden Sie unter:
+Wenn Sie sich in Microsoft Einblicken und erfahren möchten, wie das Unternehmen zu Exchange Online migriert wurde und Exchange Online Protection zum Schutz vor Cyber-Angriffen verwendet, lesen Sie:
 
 - [Microsoft migriert 150.000 Postfächer nach Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft verwendet Informationen zu Bedrohungen, um Bedrohungen zu erkennen, auf diese zu reagieren und vor diesen zu schützen](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
@@ -183,7 +184,7 @@ Um Microsoft verkürzt, und erfahren, wie das Unternehmen zu Exchange Online mig
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Finden Sie diese Ressourcen für die Wartung von Exchange Online:
+Lesen Sie diese Ressourcen für die laufende Wartung von Exchange Online:
 
 - [Exchange Admin Center in Exchange Online](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
 - [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)

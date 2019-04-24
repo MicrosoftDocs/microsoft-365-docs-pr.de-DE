@@ -1,114 +1,120 @@
 ---
-title: SharePoint Online-Website für streng vertraulich digitale Objekte der Contoso Corporation
+title: SharePoint Online-Website für hoch vertrauliche digitale Objekte der Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 04/15/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
-description: 'Zusammenfassung: Wie für eine SharePoint Online-Website von Contoso stark implementiert teams regulierte Daten für einfachere Zusammenarbeit zwischen den Research.'
-ms.openlocfilehash: 697ddb27b56fd529e9c73b89d9f07b8731ad76c3
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Zusammenfassung: wie Contoso eine SharePoint Online-Website für hochregulierte Daten implementiert hat, um die Zusammenarbeit zwischen ihren Forschungsteams zu vereinfachen.'
+ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289221"
 ---
-# <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>SharePoint Online-Website für streng vertraulich digitale Objekte der Contoso Corporation
+# <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>SharePoint Online-Website für hoch vertrauliche digitale Objekte der Contoso Corporation
 
- **Zusammenfassung:** Contoso hat wie eine SharePoint Online-Website für stark regulierten Daten für einfachere Zusammenarbeit zwischen den Teams Research implementiert.
+ **Zusammenfassung:** Wie Contoso eine SharePoint Online-Website für hochregulierte Daten implementiert hat, um die Zusammenarbeit zwischen ihren Forschungsteams zu vereinfachen.
   
-Wichtigsten Ressourcen von Contoso sind dessen Rechte an geistigem Eigentum in Form von Geschäftsgeheimnissen wie proprietäre Fertigung Techniken, und Entwerfen Spezifikationen von Produkten, die bei der Entwicklung sind. Diese Objekte sind in digitaler Form, die ursprünglich als Dateien auf einer SharePoint Server 2016-Website gespeichert. Bei Contoso Microsoft 365 Enterprise bereitgestellt haben, sollte damit ihre lokale digitaler Objekte in die Cloud für leichteren Zugriff und anfälliger für die Zusammenarbeit über Research Teams in Paris, Moskau, New York, Peking und Bangalore umzustellen. 
+Die wertvollsten Ressourcen von Contoso sind Ihr geistiges Eigentum in Form von Geschäftsgeheimnisse, wie proprietäre Herstellungsverfahren und Designspezifikationen für Produkte, die sich in der Entwicklung befinden. Diese Objekte sind in digitaler Form, die ursprünglich als Dateien auf einer SharePoint Server 2016-Website gespeichert wurden. Als Contoso Microsoft 365 Enterprise bereitgestellt hat, wollten Sie Ihre lokalen digitalen Ressourcen für einen einfacheren Zugriff und eine offenere Zusammenarbeit über Forschungsteams in Paris, Moskau, New York, Peking und Bangalore hinweg in die Cloud überführen. 
   
-Aufgrund der sensiblen Daten, muss jedoch Zugriff auf diese Dateien werden:
+Aufgrund Ihrer sensiblen Art muss der Zugriff auf diese Dateien jedoch wie folgt erfolgen:
 
-- Klicken Sie auf die Gruppe von Personen, die berechtigt sind, anzeigen oder ändern, mit dem laufenden Berechtigungen für die Website nur von SharePoint-Administratoren verwaltet beschränkt. 
-- Geschützte mit Data Loss Prevention (DLP) verhindert, dass Benutzer außerhalb der Website verteilt werden.
-- Verschlüsselte und geschützt mit Access Zugriffssteuerungslisten zu verhindern, dass der nicht autorisierte Benutzer den Zugriff auf ihre Inhalte, auch wenn sie außerhalb des Standorts verteilt werden.
+- Beschränkt auf die Gruppe von Personen, die Sie anzeigen oder ändern dürfen, mit laufenden Berechtigungen für die Website, die nur von SharePoint-Administratoren verwaltet wird. 
+- Protected with Data Loss Prevention (DLP), um zu verhindern, dass Benutzer Sie außerhalb der Website verteilen.
+- Verschlüsselt und mit Zugriffssteuerungslisten geschützt, um zu verhindern, dass unbefugte Benutzer auf Ihre Inhalte zugreifen, auch wenn Sie außerhalb der Website verteilt sind.
 
-Sicherheit und SharePoint-Administratoren in Contoso des IT-Abteilung entschieden, eine [SharePoint Online-Website für stark regulierter Daten](teams-sharepoint-online-sites-highly-regulated-data.md)zu verwenden.
+Sicherheit und SharePoint-Administratoren in der IT-Abteilung von Contoso haben sich entschieden, eine [SharePoint Online-Website für hochregulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md)zu verwenden.
   
-Contoso verwendet diese Schritte zum Erstellen und Sichern eine SharePoint Online Teamwebsites für ihre Research-Teams.
+Contoso hat die folgenden Schritte zum Erstellen und Sichern einer SharePoint Online-Teamwebsite für Ihre Forschungsteams verwendet.
 
-## <a name="step-1-reviewed-and-verified-the-members-of-research-team-groups"></a>Schritt 1: Überprüft und die Mitglieder einer Gruppe von Research Team überprüft
+## <a name="step-1-reviewed-and-verified-the-members-of-research-team-groups"></a>Schritt 1: überprüfen und Überprüfen der Mitglieder von Forschungsteam Gruppen
 
-Contoso-IT-Administratoren einen Überblick über den Satz von Sicherheitsgruppen für ihre Teams Research ausgeführt. Diese entfernt Personen war keine Interviewer oder nicht benötigen Zugriff auf Research-Objekte. 
+Contoso-IT-Administratoren haben eine Überprüfungen der Gruppe von Sicherheitsgruppen für Ihre Forschungsteams durchgeführt. Sie haben alle Personen entfernt, die kein Forscher waren oder keinen Zugriff auf Forschungsobjekte benötigten. 
 
-Sie auch und diese neue Sicherheitsgruppen erstellt:
+Außerdem haben Sie die folgenden neuen Sicherheitsgruppen erstellt:
 
-- **Research-Admins**  Der Satz von SharePoint-Administratoren, die vollständige Kontrolle über die Website, einschließlich der Möglichkeit zum Ändern der Berechtigungen verfügen.
-- **Research-Member**  Der Satz von Sicherheitsgruppen für die Research Teams auf der ganzen Welt.
-- **Research-Viewer**  Der Satz von Management-Benutzer, wie die Führungskräfte in der Organisation Research, die die Anlagen auf der Website anzeigen können.
+- **Forschung-Administratoren**  Die Gruppe von SharePoint-Administratoren, die über vollständige Kontrolle über die Website verfügen, einschließlich der Möglichkeit, Berechtigungen zu ändern.
+- **Research-Mitglieder**  Die Gruppe von Sicherheitsgruppen für die Teams weltweit.
+- **Forschung – Betrachter**  Die Gruppe der Verwaltungs Benutzer, wie beispielsweise Führungskräfte in der Forschungsorganisation, die nur die Objekte auf der Website anzeigen können.
 
-## <a name="step-2-created-an-isolated-sharepoint-online-team-site"></a>Schritt 2: Erstellt eine isolierte SharePoint Online-Teamwebsite 
+## <a name="step-2-created-an-isolated-sharepoint-online-team-site"></a>Schritt 2: Erstellen einer isolierten SharePoint Online-Teamwebsite 
 
-**Namens Contoso SharePoint-Administratoren, die zuerst erstellt eine neue Teamwebsite.** Diese dann konfiguriert:
+Contoso SharePoint-Administratoren haben zunächst eine neue Teamwebsite mit dem Namen **Research**erstellt. Anschließend haben Sie Folgendes konfiguriert:
 
-- Die Berechtigungsstufe Vollzugriff auf die Research Besitzer SharePoint-Gruppe verwenden, die die Sicherheitsgruppe **"Research-Admins"** als Mitglied aufweist
-- Die Berechtigungsstufe bearbeiten die Research Mitglieder SharePoint-Gruppe verwenden, die die Sicherheitsgruppe **Research Mitglieder** als Mitglied aufweist
-- Die Berechtigungsstufe lesen, um die Research Besucher von SharePoint-Gruppe verwenden, die als Mitglied die **Research-Viewer** -Sicherheitsgruppe verfügt
+- Die Berechtigungsstufe "Vollzugriff" für die Verwendung der SharePoint-Gruppe "Research Owners" mit der Sicherheitsgruppe " **Research-Admins** " als Mitglied
+- Die Berechtigungsstufe "Bearbeiten" für die Verwendung der SharePoint-Gruppe "Research Members" mit der Sicherheitsgruppe " **Forschungs Mitglieder** " als Mitglied
+- Die Lese Berechtigungsstufe zum Verwenden der SharePoint-Gruppe "Research Visitors" mit der Sicherheitsgruppe " **Research-Viewers** " als Mitglied
 
-Hier sind die resultierenden SharePoint-Berechtigungsstufen, SharePoint-Gruppen und deren Member.
+Hier sind die resultierenden SharePoint-Berechtigungsstufen, SharePoint-Gruppen und ihre Mitglieder.
 
 ![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
-Im nächsten Schritt konfiguriert sie zusätzliche Einschränkungen für die Website.
+Als nächstes haben Sie zusätzliche Einschränkungen für die Website konfiguriert.
 
-Die Konfigurationsdetails finden Sie unter [Bereitstellen einer isolierten SharePoint Online-Teamwebsite](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).
+Die Konfigurationsdetails finden Sie unter [Deploy an isolated SharePoint Online Team Site](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).
 
-## <a name="step-3-configured-the-site-for-a-restrictive-office-365-label-dlp-policy"></a>Schritt 3: Konfiguriert die Website für eine eingeschränkte Office 365 Bezeichnung DLP-Richtlinie
+## <a name="step-3-configured-the-site-for-a-restrictive-dlp-policy"></a>Schritt 3: Konfigurieren der Website für eine restriktive DLP-Richtlinie
 
-"Contoso Admins" wird zuerst die Bezeichnung des **Streng vertraulich** Office 365 zu der Website **Research** angewendet.
+Zunächst wendeten Contoso-Administratoren die **streng vertrauliche** Office 365-Aufbewahrungs Bezeichnung auf die **Forschungs** Website an.
 
-Erstellt im nächsten Schritt eine neue Office 365 DLP-Richtlinie mit dem Namen **Research** , die:
+Als nächstes haben Sie eine neue Office 365 DLP-Richtlinie namens " **Forschung** " erstellt, die:
 
-- Verwendet die **Streng vertraulich** Office 365-Beschriftung. 
-- Wird auf der Website **Research** angewendet.
+- Verwendet die **vertrauliche** Office 365-Aufbewahrungs Bezeichnung. 
+- Wird auf die **Forschungs** Website angewendet.
 - Verhindert, dass Benutzer Dokumente freigeben.
 
-Die Konfigurationsdetails finden Sie unter [Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
+Die Konfigurationsdetails finden Sie unter [Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>Schritt 4: Erstellt eine untergeordnete Azure Information Protection Beschriftung für die Website
+## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>Schritt 4: Erstellen einer Azure Information Protection-unter Bezeichnung für die Website
 
-"Contoso Admins" erstellt eine neue Azure Information Protection untergeordnete Beschriftung mit dem Namen **Research** der standardmäßigen **Streng vertraulich** Beschriftung in einer bereichsbezogenen Richtlinie, die:
+Contoso-Administratoren haben eine neue Azure Information Protection-unter Bezeichnung mit dem Namen **Research** der standardmäßigen, **streng vertraulichen** Bezeichnung in einer bereichsbezogenen Richtlinie erstellt, die:
 
-- Verschlüsselung ist erforderlich.
-- Ermöglicht den Vollzugriff durch ein Mitglied der Sicherheitsgruppe **Research Mitglieder** .
-- Ermöglicht den Lesezugriff durch ein Mitglied der Sicherheitsgruppe **Research Leser von Berichten** .
+- Verschlüsselung erforderlich.
+- Ermöglicht den vollständigen Zugriff durch Mitglieder der Sicherheitsgruppe " **Research-Members** ".
+- Ermöglicht den Lesezugriff durch Mitglieder der Sicherheitsgruppe " **Research-Viewers** ".
 
-Im nächsten Schritt bereitgestellt sie Azure Information Protection-Client für die Geräte der Teammitglieder Research.
+Als nächstes haben Sie den Azure Information Protection-Client für die Geräte von Mitgliedern des Forschungsteams bereitgestellt.
 
 Die Konfigurationsdetails finden Sie unter [Schützen von SharePoint Online-Dateien mit Azure Information Protection](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection). 
 
-Hier ist die resultierende Konfiguration der Website **Research** für streng vertraulich Objekte.
+Hier ist die resultierende Konfiguration der **Forschungs** Website für hoch vertrauliche Ressourcen.
 
 ![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Schritt 5: Migriert Research lokale SharePoint-Daten
+Dateien in Ordnern der **Recherche** Website werden geschützt durch:
 
-"Contoso Admins" verschoben, dass alle von der lokalen Dateien in der lokalen SharePoint Server 2016 Website in Ordnern in die neue **Research** SharePoint Online-Website Recherchieren.
+- Die **** unter Bezeichnung Azure Information Protection, die Verschlüsselung und permssions für jede Datei anwendet, die mit der Datei reist, wenn Sie von der **Recherche** Website verschoben oder kopiert wird.
+- Die **** DLP-richtLinie "Recherchieren" verwendet die **hochsensible** Aufbewahrungs Bezeichnung und Einstellungen, die verhindern, dass die Datei die Website verlässt.
+- Die Gruppe von Websiteberechtigungen, die nur den Mitgliedern der Sicherheitsgruppen für **** Recherche-und Forschungs **** Benutzer sowie der Verwaltung von Mitgliedern der sicherheitsGruppe "Recherche- **Administratoren** " den Zugriff ermöglichen.
 
-## <a name="step-6-trained-their-users"></a>Schritt 6: Geschulte ihre Benutzer 
+## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Schritt 5: Migrieren der lokalen SharePoint-Forschungsdaten
 
-Contoso Sicherheit Mitarbeiter geschult die Research Teams ein obligatorisch Kurs, der über diese schrittweise durchlaufen:
+Contoso-Administratoren haben alle lokalen Recherche Dateien in der lokalen SharePoint Server 2016-Website in Ordner in der neuen **Research** SharePoint Online-Website verschoben.
 
-- Wie Sie auf die neue **Research** SharePoint Online-Website und die vorhandenen Dateien zugreifen.
+## <a name="step-6-trained-their-users"></a>Schritt 6: Schulung der Benutzer 
+
+Das Sicherheitsteam von Contoso hat die Forschungsteams in einem obligatorischen Kurs geschult, der Sie durchlaufen hat:
+
+- Zugriff auf die neue **Research** SharePoint Online-Website und die vorhandenen Dateien
 - Erklären Sie, wie neue Dateien auf der Website erstellt und neue, lokal gespeicherte Dateien hochgeladen werden.
-- Veranschaulicht die Erstellung blockiert die DLP-Richtlinie Dateien extern freigegeben.
-- Wie Sie mit der Azure Information Protection Client Research-Dateien mit der untergeordneten **Research** Bezeichnung bezeichnen.
-- Veranschaulicht die Erstellung schützt **Research** untergeordnete Beschriftung eine Datei, auch wenn es von der Website offengelegt werden.
+- Ein Beispiel dafür, wie die DLP-Richtlinie verhindert, dass Dateien extern freigegeben werden.
+- Verwenden des Azure Information Protection-Clients zum Beschriften von Recherche Dateien mit der **Recherche** -unter Bezeichnung.
+- Eine Demonstration, wie die untergeordnete Bezeichnung " **Research** " eine Datei schützt, auch wenn Sie von der Website geleckt wird.
 
-Das Ergebnis ist eine sichere Umgebung, in der die Forscher in der gesamten Organisation in einer sicheren Umgebung zusammenarbeiten können. 
+Das Endergebnis ist eine sichere Umgebung, in der die Forscher innerhalb der gesamten Organisation in einer sicheren Umgebung zusammenarbeiten können. 
 
-Wenn ein Research-Dokument mit der untergeordneten **Research** Bezeichnung aus der Website **Research** offengelegt werden, ist es verschlüsselte und können nur Mitglieder der Sicherheitsgruppen **Research Elemente** und **Research Leser von Berichten** mit gültigen Anmeldeinformationen zugreifen.
+Wenn ein Forschungsdokument mit der unter Bezeichnung **Recherche** aus der **Forschungs** Website ausgelaufen ist, wird es verschlüsselt und kann nur Mitgliedern der sicherheitsGruppen "Research- **Members** " und " **Research-Viewers** " mit gültigen Anmeldeinformationen zugänglich gemacht werden.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Bereitstellen](deploy-microsoft-365-enterprise.md) von Microsoft 365 Enterprise in Ihrer Organisation.
+[Bereitstellen](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise in Ihrer Organisation.
 

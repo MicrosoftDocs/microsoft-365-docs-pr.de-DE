@@ -1,11 +1,12 @@
 ---
-title: Zugriff auf lokale Ressourcen von einem Azure AD gehörenden Gerät in Microsoft 365 Business
+title: Zugreifen auf lokale Ressourcen über ein Azure AD-verbundenes Gerät in Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
+ms.collection: M365-subscription-management
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -15,42 +16,42 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
-description: Erfahren Sie, wie erhalten Sie Zugriff auf lokale Ressourcen, wie Line Of Business-apps, Dateifreigaben und Drucker von Azure Active Directory Windows 10 Gerät verbunden.
-ms.openlocfilehash: 0a5d4b0828888fcb99676223000c446479f84ddc
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Hier erfahren Sie, wie Sie Zugriff auf lokale Ressourcen wie Branchen-apps, Dateifreigaben und Drucker aus einem Azure Active Directory, das Windows 10-Gerät hat, erhalten.
+ms.openlocfilehash: 212685bc229f519152e69b09d0a745bfac7a38cd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276879"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Zugriff auf lokale Ressourcen von einem Azure AD gehörenden Gerät in Microsoft 365 Business
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Zugreifen auf lokale Ressourcen über ein Azure AD-verbundenes Gerät in Microsoft 365 Business
 
-Alle Windows 10-Geräte, die Azure Active Directory verbunden ist haben Zugriff auf alle cloudbasierte Ressourcen wie Ihre apps für Office 365 und kann von Microsoft 365 Business geschützt werden. Um den Zugriff auf lokale Ressourcen wie Zeile des Business (LOB) apps, Dateifreigaben und Drucker zu ermöglichen, müssen Sie Ihre lokale Active Directory mithilfe von [Azure Active Directory verbinden](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)mit Azure Active Directory synchronisieren. Finden Sie unter [Einführung in die Verwaltung von Geräten in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) , um mehr zu erfahren. 
+Jedes Windows 10-Gerät, das mit Azure Active Directory verbunden ist, hat Zugriff auf alle cloudbasierten Ressourcen wie Ihre Office 365-apps und kann von Microsoft 365 Business geschützt werden. Sie müssen Ihr lokales Active Directory mit Azure Active Directory mithilfe von [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)synchronisieren, um auch den Zugriff auf lokale Ressourcen wie Branchen-apps, Dateifreigaben und Drucker zuzulassen. Weitere Informationen finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) . 
   
-## <a name="run-azure-ad-connect"></a>Ausführen von Azure Active Directory verbinden
+## <a name="run-azure-ad-connect"></a>Ausführen von Azure AD Connect
 
-Gehen Sie folgendermaßen vor, um beigetreten Azure AD-Geräte für den Zugriff auf lokale Ressourcen auf Ihrer Organisation zu aktivieren.
+Führen Sie die folgenden Schritte aus, um den Zugriff ihrer Organisation für Azure AD-Geräte auf lokale Ressourcen zu ermöglichen.
   
-1. Führen Sie zum Synchronisieren der Benutzer, Gruppen und Kontakte aus der lokalen Active Directory in Azure Active Directory-Assistenten für die-Synchronisierung, und Azure Active Directory verbinden als in [Einrichten von verzeichnissynchronisierung für Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)beschrieben.
+1. Führen Sie den Assistenten für die Verzeichnissynchronisierung und Azure AD Connect wie unter [Einrichten der Verzeichnissynchronisierung für Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)beschrieben aus, um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory in Azure Active Directory zu synchronisieren.
     
-2. Nach Abschluss die verzeichnissynchronisierung, stellen Sie sicher, dass Ihre Organisation Windows 10 Geräte Azure AD verbunden sind. Dieser Schritt ist auf jedem Gerät Windows 10 einzeln ausgeführt. Einzelheiten finden Sie unter [Einrichten von Windows-Geräte für Microsoft 365 Geschäftsbenutzer](set-up-windows-devices.md) . 
+2. Stellen Sie nach Abschluss der Verzeichnissynchronisierung sicher, dass die Windows 10-Geräte Ihrer Organisation Azure AD beigetreten sind. Dieser Schritt wird auf jedem Windows 10-Gerät einzeln ausgeführt. Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md) . 
     
-3. Nachdem die Geräte 10 für Windows Azure AD verbunden sind, sollte jeder Benutzer ihre Geräte und melden Sie sich mit den Anmeldeinformationen ihres Microsoft 365 Business neu starten. Alle Geräte werden nun auf sowie auf lokale Ressourcen zugreifen.
+3. Sobald die Windows 10-Geräte mit Azure AD verbunden sind, sollten alle Benutzer ihre Geräte neu starten und sich mit Ihren Microsoft 365 Business-Anmeldeinformationen anmelden. Alle Geräte haben nun auch Zugriff auf lokale Ressourcen.
     
-Es sind keine zusätzliche Schritte erforderlich Zugriff auf lokale, dass Ressourcen für Azure AD Geräte verbunden. Dies ist die integrierte Funktionalität in Windows 10 verfügbar. 
+Es sind keine zusätzlichen Schritte erforderlich, um Zugriff auf lokale Ressourcen für mit Azure AD verbundene Geräte zu erhalten. Dies ist eine integrierte Funktionalität, die in Windows 10 verfügbar ist. 
   
-Wenn Ihre Organisation nicht zum Bereitstellen von in Azure AD beigetreten Gerätekonfiguration oben beschriebenen bereit ist, sollten Sie einrichten [Hybrid Azure AD beigetreten Gerätekonfiguration](manage-windows-devices.md).
+Wenn Ihre Organisation nicht bereit ist, in der oben beschriebenen Azure AD-Gerätekonfiguration bereitzustellen, erwägen Sie die Einrichtung einer [hybridEn Azure AD-Gerätekonfiguration](manage-windows-devices.md).
   
-### <a name="considerations-when-joining-your-windows-devices-to-azure-ad"></a>Aspekte beim Beitritt Ihre Geräte Windows Azure AD
+### <a name="considerations-when-joining-your-windows-devices-to-azure-ad"></a>Überlegungen beim Hinzufügen Ihrer Windows-Geräte zu Azure AD
 
-Wenn Sie die Teilnahme an einer Windows-Gerät, die zuvor in die Domäne eingebundener wurde Azure AD sind oder in einer Arbeitsgruppe, müssen Sie die folgenden Nachteile beachten:
+Wenn Sie Azure AD beitreten zu einem Windows-Gerät, das zuvor Domänenmitglied oder in einer Arbeitsgruppe war, müssen Sie die folgenden Einschränkungen berücksichtigen:
   
-- Wenn ein Gerät Azure AD beigetreten ist, erstellt es einen neuen Benutzer ohne verweisen auf ein vorhandenes Profil. Um dieses Problem zu beheben, müssen Profile manuell migriert werden müssen. Ein Benutzerprofil enthält Informationen wie Favoriten, lokale Dateien, Browsereinstellungen, Start im Menü Einstellungen usw.. Ein bewährte Ansatz besteht darin, ein Drittanbieter-Tool Zuordnen von vorhandenen Dateien und Einstellungen zu dem neuen Profil suchen
+- Bei der Verknüpfung eines Device Azure AD wird ein neuer Benutzer erstellt, ohne auf ein vorhandenes Profil zu verweisen. Um dies zu beheben, müssen Profile manuell migriert werden. Ein Benutzerprofil enthält Informationen wie Favoriten, lokale Dateien, Browsereinstellungen, Startmenü-Einstellungen usw. Eine optimale Vorgehensweise besteht darin, ein Drittanbietertool zu finden, um vorhandene Dateien und Einstellungen dem neuen Profil zuzuordnen.
     
-- Wenn das Gerät (Group Policy Objects, GPOs) verwendet wird, möglicherweise einige Gruppenrichtlinienobjekte eine vergleichbare [Konfiguration-Dienstanbieter](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) nicht in Intune. Führen Sie das [Tool MMAT](https://www.microsoft.com/download/details.aspx?id=45520) vergleichbare Kryptografiedienstanbieter für vorhandene Gruppenrichtlinienobjekte zu finden. 
+- Wenn das Gerät Gruppenrichtlinienobjekte (GPO) verwendet, verfügen einige GPOs möglicherweise nicht über einen vergleichbaren [Konfigurationsdienstanbieter](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) in InTune. Führen Sie das [FMAT-Tool](https://www.microsoft.com/download/details.aspx?id=45520) aus, um vergleichbare Kryptografiedienstanbieter für vorhandene GPOs zu finden. 
     
-- Benutzer werden nicht authentifiziert für Clientanwendungen, die von Active Directory-Authentifizierung abhängen. Für den Umgang mit dadurch auswerten mit einer Vorversion app und erwägen Sie eine Aktualisierung zu einer app, die moderne Auth möglichst verwendet.
+- Benutzer können sich nicht bei Anwendungen authentifizieren, die von der Active Directory-Authentifizierung abhängig sind. Um dieses Problem zu umgehen, verwenden Sie eine Legacy-APP und erwägen Sie, nach Möglichkeit eine APP zu aktualisieren, die moderne auth verwendet.
     
-- Active Directory Drucker Discovery funktioniert nicht. Um dieses Problem zu beheben, bieten Sie direkte Druckerpfade für alle Benutzer oder nutzen Sie [Hybrid Cloud drucken](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Die Active Directory-Druckersuche funktioniert nicht. Um dies zu beheben, stellen Sie direkte Druckerpfade für alle Benutzer bereit, oder nutzen Sie den [hybridEn Cloud-Druck](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
     
 

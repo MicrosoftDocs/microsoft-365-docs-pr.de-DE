@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: 'Installieren oder Deinstallieren von Office auf Windows-10-Geräten im Microsoft 365 Business Admin Center. '
-ms.openlocfilehash: 997c001ed1520f1ac989255632d36f9b7bedd16c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Installieren oder deinstallieren Sie Office auf Windows 10-Geräten im Microsoft 365 Business Admin Center. '
+ms.openlocfilehash: fef4a543aed489202bf05dfb1e8cafbb784ca819
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277275"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>Automatisches Installieren oder Deinstallieren von Office auf Windows 10-Geräten
 
@@ -35,7 +37,8 @@ Um zu verstehen, wie dies bei zuvor installierten Office-Apps funktioniert, lese
 
 1. Melden Sie sich beim [Admin Center](https://aka.ms/bcsportal) mit globalen Administratoranmeldeinformationen an. 
     
-2. Wählen Sie auf der Karte **Geräte** **Office-Bereitstellung verwalten**.    Die Karte **Gerät Aktionen** nicht angezeigt werden in der Admin Center **Home** -Seite, klicken Sie auf **Hinzufügen** (+), um es bei Ihnen zu Hause Admin hinzufügen
+2. Wählen Sie auf der Karte **Geräte** die Option **Office-Bereitstellung verwalten** aus.
+      Wenn die **Device Actions** -Karte nicht angezeigt wird, klicken Sie auf der Admin Center- **Start** Seite auf **Hinzufügen** (+), um Sie Ihrem Administrator-Home hinzuzufügen.
     
     ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   

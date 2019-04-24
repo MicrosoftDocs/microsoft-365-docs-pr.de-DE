@@ -1,141 +1,139 @@
 ---
-title: Klassifizierung von Daten für Ihr Unternehmen der Microsoft 365 test Environment.
+title: Datenklassifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Verwenden Sie diese Test Lab Guide erstellen und Verwenden von Office 365 Etiketten auf Dokumente in Ihrer testumgebung Microsoft 365 Enterprise.
-ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Verwenden Sie dieses Test Labor Handbuch, um Office 365-Aufbewahrungs Bezeichnungen für Dokumente in Ihrer Microsoft 365 Enterprise-Testumgebung zu erstellen und zu verwenden.
+ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283538"
 ---
-# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Klassifizierung von Daten für Ihr Unternehmen der Microsoft 365 test Environment.
+# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Datenklassifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
-Mit den Anweisungen in diesem Artikel konfigurieren Sie mithilfe von Office 365 Aufbewahrung Bezeichnungen in Ihrer unternehmensumgebung Microsoft 365 Test Datenklassifikation.
+Mit den Anweisungen in diesem Artikel Konfigurieren Sie die Datenklassifizierung mithilfe von Office 365-Aufbewahrungs Bezeichnungen in Ihrer Microsoft 365 Enterprise-Testumgebung.
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Sie Ihre Umgebung für Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
-Wenn Sie Office 365 Beschriftungen auf einfache Weise mit den Mindestanforderungen konfigurieren möchten, befolgen Sie die Anweisungen in der [Lightweight Basiskonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Wenn Sie nur Office 365-Aufbewahrungs Bezeichnungen auf einfache Weise mit den Mindestanforderungen konfigurieren möchten, befolgen Sie die Anweisungen unter [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Wenn Sie Office 365 Bezeichnungen in einer simulierten Enterprise konfigurieren möchten, befolgen Sie die Anweisungen in [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
+Wenn Sie Office 365-Aufbewahrungs Bezeichnungen in einem simulierten Unternehmen konfigurieren möchten, befolgen Sie die Anweisungen unter [Passthrough-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testen Office 365 Etiketten erfordert keinen der simulierten Enterprise-testumgebung, einschließlich einer simulierten Intranet mit dem Internet verbunden und Directory-Synchronisierung für eine Windows Server Active Directory-Gesamtstruktur. Erfolgt hier als eine Option, damit Sie automatisierte Lizenzierung und Gruppenmitgliedschaft testen können, und probieren Sie es in einer Umgebung, die eine typische Organisation darstellt. 
+> Das Testen von Office 365-Aufbewahrungs Bezeichnungen erfordert nicht die simulierte Unternehmens Testumgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) verbunden ist. Sie wird hier als Option bereitgestellt, damit Sie die automatisierte Lizenzierung und die Gruppenmitgliedschaft testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
 
-## <a name="phase-2-create-office-365-labels"></a>Phase 2: Erstellen von Office 365-Bezeichnungen
+## <a name="phase-2-create-office-365-retention-labels"></a>Phase 2: Erstellen von Office 365-Aufbewahrungs Bezeichnungen
 
-In dieser Phase erstellen Sie die Beschriftungen für die verschiedenen Berechtigungsstufen Aufbewahrung für SharePoint Online Dokumente Ordner.
-  
-1. Falls erforderlich, verwenden Sie eine private Instanz des Internetbrowsers, und melden Sie sich das Office-Portal mit Ihrer globalen Administratorkonto an. Hilfe finden Sie unter [Where zur Anmeldung bei Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+In dieser Phase erstellen Sie die Aufbewahrungs Bezeichnungen für die verschiedenen Aufbewahrungs Ebenen für SharePoint Online-Dokumentordner.
+
+1. Melden Sie sich beim [Microsoft 365 Compliance-Portal](https://compliance.microsoft.com) mit Ihrem globalen Administratorkonto an.
     
-2. Klicken Sie auf der Registerkarte **Microsoft Office Home** auf die Kachel **Admin**.
+2. Klicken Sie auf der Registerkarte **Start – Microsoft 365 Compliance ** im Browser auf **Klassifizierungen > Bezeichnungen**.
     
-3. Klicken Sie auf der neuen Registerkarte **Office Admin Center** im Browser auf **Admin Center > Security &amp; Compliance**.
+3. Klicken Sie auf **Aufbewahrungsbezeichnung > Erstellen einer Bezeichnung**.
     
-4. Von der neuen **Home - Sicherheit &amp; Compliance** Registerkarte des Browsers, klicken Sie auf **Klassifikationen > Etiketten**. Aus der **Home > Etiketten** Bereich, klicken Sie auf der Registerkarte **Archivierung** .
+4. Geben Sie im Bereich **Name für Bezeichnung****Intern Öffentlich** ein, und klicken Sie dann auf **Weiter**.
+
+5. Klicken Sie im Bereich **Dateiplanbeschreibungen** auf **Weiter**.
     
-5. Klicken Sie auf **eine Beschriftung erstellen**.
+6. Legen Sie im Bereich **Bezeichnungseigenschaften**, falls erforderlich, **Aufbewahrung** auf **Ein** fest, und klicken Sie dann auf **Weiter**.
     
-6. Geben Sie im Bereich **Name für Bezeichnung** **Intern Öffentlich** ein, und klicken Sie dann auf **Weiter**.
+7. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Beschriftung erstellen**.
     
-7. Klicken Sie im Bereich **Bezeichnungseinstellungen** auf **Weiter**.
-    
-8. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnung erstellen**, und klicken Sie dann auf **Schließen**.
-    
-9. Wiederholen Sie die Schritte 5 bis 8 für diese zusätzlichen Bezeichnungen:
+8. Wiederholen Sie die Schritte 3-7 für zusätzliche Bezeichnungen mit diesen Namen:
     
   - Private
     
   - Vertraulich
     
   - Streng vertraulich
-    
-10. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
-    
-11. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
-    
-12. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
-    
-13. Klicken Sie auf **Fertig**.
-    
-14. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
-    
-15. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
-    
-16. Geben Sie im Bereich **Richtlinie benennen** **Beispielorganisation** unter **Name** ein, und klicken Sie dann auf **Weiter**.
-    
-17. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
-
-Beachten Sie, dass es ein paar Minuten für die Beschriftungen zu veröffentlichenden dauern kann.
-
-## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Phase 3: Office 365 Aufbewahrung Etiketten auf Dokumente anwenden
-
-In dieser Phase ermitteln das Standardverhalten für die Beschriftung für Dateien im Ordner "Dokumente" einer SharePoint Online-Website und Manuelles Ändern der Beschriftung eines Dokuments.
-
-Erstellen Sie zunächst eine Sensitive-Ebene SharePoint Online-Teamwebsite:
   
-1. Melden Sie sich mit einem Browser auf dem lokalen Computer an, in das Office-Portal mit Ihrem Konto globaler Administrator. Hilfe finden Sie unter [Where zur Anmeldung bei Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+9. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
     
-2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
+10. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
+    
+11. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
+    
+12. Klicken Sie auf **Fertig**.
+    
+13. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
+    
+14. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
+    
+15. Geben Sie im Bereich **Richtlinie benennen** **Beispielorganisation** unter **Name** ein, und klicken Sie dann auf **Weiter**.
+    
+16. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
+ 
+Beachten Sie, dass es einige Minuten dauern kann, bis die Aufbewahrungs Bezeichnungen veröffentlicht werden.
+
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Phase 3: Anwenden von Office 365-Aufbewahrungs Bezeichnungen auf Dokumente
+
+In dieser Phase erkennen Sie das Standardverhalten der Aufbewahrungs Bezeichnung für Dateien im Ordner "Dokumente" einer SharePoint Online-Website und ändern die Aufbewahrungs Bezeichnung eines Dokuments manuell.
+
+Erstellen Sie zunächst eine SharePoint Online-Teamwebsite auf vertraulicher Ebene:
+  
+1. Verwenden Sie einen Browser auf dem lokalen Computer, und melden Sie sich im [Office 365-Portal](https://portal.office.com) mit Ihrem globalen Administratorkonto an.
+    
+2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
     
 3. Klicken Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser auf **Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie in das Feld **Teamname Website** **SensitiveFiles**.
+5. Geben Sie unter **Name der Team Website** **SensitiveFiles**.
     
-6. Geben Sie im Feld **websitebeschreibung Team** **SharePoint-Website für vertrauliche Dateien**.
+6. Geben Sie unter **Beschreibung der Team Website** **den Text SharePoint-Website für vertrauliche Dateien**ein.
     
 7.  Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
 8. Klicken Sie im Bereich **Wer soll hinzugefügt werden?** auf **Fertig stellen**.
     
-Konfigurieren Sie anschließend den Dokumentenordner der Teamwebsite SensitiveFiles für die Bezeichnung vertrauliche.
+Konfigurieren Sie als nächstes den Ordner "Dokumente" der SensitiveFiles-Teamwebsite für die vertrauliche Aufbewahrungs Bezeichnung.
   
-1. Klicken Sie auf der Registerkarte **SensitiveFiles** Ihres Browsers auf **Dokumente**.
+1. Klicken Sie auf der Registerkarte **SensitiveFiles** des Browsers auf **Dokumente**.
     
-2. Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
+2. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
     
 3. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
-4. **Bezeichnung Einstellungen anwenden**wählen Sie im Dropdown- **vertrauliche** aus, und klicken Sie dann auf **Speichern**.
+4. Wählen Sie in der Dropdownliste unter **Einstellungen-Bezeichnung anwenden**die Option **vertraulich** aus, und klicken Sie dann auf **Speichern**.
 
-Im nächsten Schritt erstellen Sie ein neues Dokument auf der Website SensitiveFiles, und ändern Sie dessen Beschriftung.
+Erstellen Sie als nächstes ein neues Dokument auf der SensitiveFiles-Website, und ändern Sie dessen Aufbewahrungs Bezeichnung.
     
-1. Klicken Sie im Dokumentenordner auf **Neu > Word-Dokument**.
+1. Klicken Sie im Ordner Dokumente auf **Neues _GT_ Word-Dokument**.
     
-2. Geben Sie Text in das leere Dokument. Warten Sie auf den Text gespeichert werden soll.
+2. Geben Sie im leeren Dokument Text ein. Warten Sie, bis der Text gespeichert wird.
     
-3. Klicken Sie in der Menüleiste auf **Freigegebene Dokumente**.
+3. Klicken Sie in der Menüleiste auf **freiGegebene Dokumente**.
     
-4. Klicken Sie auf das Word-Symbol neben dem Dateinamen **Document.docx** .
+4. Klicken Sie auf das Word-Symbol neben dem Dateinamen **Document. docx** .
     
-5. Beachten Sie im rechten Bereich, in den Abschnitt **Eigenschaften** unter **Übernehmen Aufbewahrung Label**, dass das Dokument die Bezeichnung des **vertrauliche** automatisch angewendet wurde.
+5. Beachten Sie im rechten Bereich im Abschnitt **Eigenschaften** unter **Aufbewahrungs Bezeichnung anwenden**, dass das Dokument die vertrauliche Bezeichnung automatisch angewendet hat **** .
     
-6. Klicken Sie auf **alle zu bearbeiten**.
+6. Klicken Sie auf **alle bearbeiten**.
     
-7. Wählen Sie im Bereich **Document.docx** unter **Übernehmen Beschriftung**die **Streng vertraulich** Beschriftung, und klicken Sie dann auf **Speichern**.
+7. Wählen Sie im Bereich **Document. docx** unter **Bezeichnung anwenden**die Bezeichnung **streng vertraulich** aus, und klicken Sie dann auf **Speichern**.
 
-Finden Sie im Schritt [Configure Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md) in der Phase **Information Protection** Informationen und Links zu Office 365 Aufbewahrung Bezeichnungen in der Produktion.
+Informationen und Links dazu, wie Sie Office 365- **** Aufbewahrungs Bezeichnungen in der Produktion bereitStellen, finden Sie unter [Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md) .
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Hier finden Sie zusätzliche [Informationen Protection](m365-enterprise-test-lab-guides.md#information-protection) Features und Funktionen in Ihrer testumgebung.
+Erkunden Sie zusätzliche Features und Funktionen zum [Schutz von Informationen](m365-enterprise-test-lab-guides.md#information-protection) in Ihrer Testumgebung.
 
 ## <a name="see-also"></a>Siehe auch
 

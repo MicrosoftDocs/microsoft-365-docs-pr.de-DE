@@ -4,10 +4,13 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Informationen Sie zu Gerätestatus in Microsoft 365 Business.
-ms.openlocfilehash: bd6f1ad7f7671d9616fd14d477dfcfb164ff6bd0
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie mehr über Gerätestatus in Microsoft 365 Business.
+ms.openlocfilehash: 15114835a5014f5bfac600eac79bcdffdaec481a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276977"
 ---
 # <a name="device-states"></a>Gerätezustände
 
@@ -34,7 +37,7 @@ Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **G
   
 ![In the Device actions list, you can see the Devices states.](media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
   
-|**Zustand**|**Beschreibung**|
+|**Status**|**Beschreibung**|
 |:-----|:-----|
 |Von Intune verwaltet  <br/> |Verwaltet von Microsoft 365 Business.  <br/> |
 |Abkoppeln ausstehend  <br/> |Microsoft 365 Business bereitet sich darauf vor, Unternehmensdaten vom Gerät zu entfernen.  <br/> |

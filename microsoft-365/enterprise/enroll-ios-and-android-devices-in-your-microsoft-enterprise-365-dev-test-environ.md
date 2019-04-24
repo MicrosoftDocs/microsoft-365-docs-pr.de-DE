@@ -1,5 +1,5 @@
 ---
-title: Registrieren von iOS- und Android-Geräten in Ihrer Testumgebung für Microsoft 365 Enterprise
+title: Registrieren von iOS-und Android-Geräten in Ihrer Microsoft 365 Enterprise-Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,76 +8,76 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Verwenden Sie diese Test Lab Guide zum Registrieren von Geräten in Ihrer Microsoft 365 Test-Umgebung und Remote zu verwalten.
-ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Verwenden Sie dieses Test Labor Handbuch, um Geräte in Ihrer Microsoft 365-Testumgebung zu registrieren und Remote zu verwalten.
+ms.openlocfilehash: e653b3e6cafb6ee2eb492709a2d060c7b92a6904
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281247"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Registrieren von iOS- und Android-Geräten in Ihrer Testumgebung für Microsoft 365 Enterprise
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Registrieren von iOS-und Android-Geräten in Ihrer Microsoft 365 Enterprise-Testumgebung
 
-Gemäß die Anweisungen in diesem Artikel müssen Sie möglicherweise zum Registrieren und Testen grundlegende Mobilgerät Management-Funktionen für iOS und Android-Geräte in Ihrer testumgebung Microsoft 365 Enterprise.
+Durch Befolgen der Anweisungen in diesem Artikel können Sie die grundlegenden Funktionen für die Verwaltung mobiler Geräte für iOS-und Android-Geräte in Ihrer Microsoft 365 Enterprise-Testumgebung registrieren und testen.
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Sie Ihre Umgebung für Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
-Wenn Sie auf einfache Weise mit den Mindestanforderungen iOS und Android-Geräte registrieren möchten, befolgen Sie die Anweisungen in der [Lightweight Basiskonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Wenn Sie nur iOS-und Android-Geräte mit den Mindestanforderungen auf einfache Weise registrieren möchten, befolgen Sie die Anweisungen unter [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Wenn Sie iOS und Android-Geräte in einem simulierten Unternehmen registrieren möchten, befolgen Sie die Anweisungen in [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
+Wenn Sie iOS-und Android-Geräte in einem simulierten Unternehmen registrieren möchten, befolgen Sie die Anweisungen unter [Passthrough-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testen der automatisiert Lizenzierung und Gruppenmitgliedschaft erfordert keinen der simulierten Enterprise-testumgebung, einschließlich einer simulierten Intranet mit dem Internet verbunden und Directory-Synchronisierung für eine Windows Server Active Directory-Gesamtstruktur. Erfolgt hier als eine Option, damit Sie automatisierte Lizenzierung und Gruppenmitgliedschaft testen können, und probieren Sie es in einer Umgebung, die eine typische Organisation darstellt. 
+> Das Testen der automatisierten Lizenzierung und der Gruppenmitgliedschaft erfordert nicht die simulierte Enterprise-Testumgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) verbunden ist. Sie wird hier als Option bereitgestellt, damit Sie die automatisierte Lizenzierung und die Gruppenmitgliedschaft testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
 >  
 
-## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2: Registrieren Sie Ihre iOS und Android-Geräte
+## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2: Registrieren der iOS-und Android-Geräte
 
-Verwenden Sie zunächst die Anweisungen in [Installieren und melden Sie sich die app Unternehmensportal](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) zum Anpassen von Microsoft Intune Unternehmensportal-app für Ihre testumgebung.
+Verwenden Sie zunächst die Anweisungen unter [Installieren und Anmelden bei der Unternehmensportal-App](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) , um die Microsoft InTune-Unternehmensportal-App für Ihre Testumgebung anzupassen.
 
-Im nächsten Schritt verwenden Sie die Anweisungen in [Richten Sie Ihre Unternehmensressourcen zugreifen,](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) einer iOS-Geräte zu registrieren.
+Verwenden Sie als nächstes die Anweisungen unter [Einrichten des Zugriffs auf Ihre Unternehmensressourcen](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) , um ein IOS-Gerät einzuschreiben.
 
-Im nächsten Schritt verwenden Sie die Anweisungen in [Registrieren Ihrer Android-Gerät im Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) Android-Gerät zu registrieren.
+Verwenden Sie als nächstes die Anweisungen unter [Registrieren Ihres Android-Geräts in InTune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) , um ein Android-Gerät zu registrieren.
 
-## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Phase 3: Verwalten Sie Ihrer iOS und Android-Geräte Remote
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Phase 3: Remoteverwaltung von iOS-und Android-Geräten
 
-Bietet Microsoft Intune remote sperren und die Kennung Funktionen zurückgesetzt. Wenn eine Person ihr Gerät verliert, können Sie das Gerät Remote sperren. Wenn eine Person ihre Kennung vergisst, können Sie es Remote zurücksetzen.
+Microsoft Intune bietet sowohl Funktionen für eine Remotesperre und das Zurücksetzen der Kennung. Wenn jemand sein Gerät verliert, können Sie das Gerät remote sperren. Wenn Ihr Kennwort von einem Benutzer vergessen wird, können Sie es Remote zurücksetzen.
   
-Um eine IOS- oder Android-Gerät remote zu sperren:
+So sperren Sie ein iOS-oder Android-Gerät Remote
 
-1. Melden Sie sich bei der Azure-Portal unter [https://portal.azure.com](https://portal.azure.com) mit den Anmeldeinformationen Ihres Kontos globaler Administrator.
-2. Klicken Sie auf **alle Dienste**, geben Sie **Intune**, und klicken Sie dann auf **Intune**.
-3. Klicken Sie auf **Geräte > alle Geräte**.
-4. Klicken Sie in der Liste der Geräte auf eine IOS- oder Android-Gerät, und klicken Sie dann auf die Aktion **Remote Sperren** .
+1. Melden Sie sich beim Azure-Portal [https://portal.azure.com](https://portal.azure.com) unter mit den Anmeldeinformationen des globalen Administratorkontos an.
+2. Klicken Sie auf **alle Dienste**, geben Sie **InTune**ein, und klicken Sie dann auf **InTune**.
+3. Klicken Sie auf **Geräte _GT_ alle Geräte**.
+4. Klicken Sie in der Liste der Geräte auf ein iOS-oder Android-Gerät, und klicken Sie dann auf die **Remote Sperr** Aktion.
 
     
 So setzen Sie den Zugangscode remote zurück
 
-1. Falls erforderlich, melden Sie sich bei der Azure-Portal unter [https://portal.azure.com](https://portal.azure.com) mit den Anmeldeinformationen Ihres Kontos globaler Administrator.
-2. Klicken Sie auf **alle Dienste**, geben Sie **Intune**, und klicken Sie dann auf **Intune**.
-3. Klicken Sie auf **Geräte > alle Geräte**.
-4. Aus der Liste der Geräte verwalten, klicken Sie auf eine IOS- oder Android-Gerät und wählen Sie **... Weitere**. Wählen Sie dann die **Kennung entfernen** Gerät remote-Aktion aus.
+1. Melden Sie sich bei Bedarf im Azure-Portal unter [https://portal.azure.com](https://portal.azure.com) mit den Anmeldeinformationen des globalen Administratorkontos an.
+2. Klicken Sie auf **alle Dienste**, geben Sie **InTune**ein, und klicken Sie dann auf **InTune**.
+3. Klicken Sie auf **Geräte _GT_ alle Geräte**.
+4. Klicken Sie in der Liste der Geräte, die Sie verwalten, auf ein iOS-oder Android-Gerät, und wählen Sie dann **... Mehr**. Wählen Sie dann die Remote Aktion "Kenncode-Gerät **Entfernen** " aus.
 
-Weitere Versuche finden Sie unter [verfügbare Gerät Aktionen](https://docs.microsoft.com/intune/device-management#available-device-actions).
+Weitere Tests finden Sie unter [Verfügbare Geräteaktionen](https://docs.microsoft.com/intune/device-management#available-device-actions).
 
     
 ## <a name="next-step"></a>Nächster Schritt
 
-Hier finden Sie zusätzliche [Verwaltung mobiler Geräte](m365-enterprise-test-lab-guides.md#mobile-device-management) Features und Funktionen in Ihrer testumgebung.
+Erkunden Sie zusätzliche Features und Funktionen für die [Verwaltung mobiler Geräte](m365-enterprise-test-lab-guides.md#mobile-device-management) in Ihrer Testumgebung.
 
 ## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen für Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
   
-[Gerät Kompatibilitätsrichtlinien für Ihr Unternehmen der Microsoft 365 test Environment.](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Geräte Konformitätsrichtlinien für Ihre Microsoft 365 Enterprise-Testumgebung](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Bereitstellen von Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
-[Enterprise-Mobilität + Sicherheit (zur Abstimmung)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

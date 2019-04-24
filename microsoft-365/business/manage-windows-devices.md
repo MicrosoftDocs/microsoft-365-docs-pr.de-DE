@@ -1,5 +1,5 @@
 ---
-title: Aktivieren Sie in die Domäne eingebundener Windows 10 Geräte von Microsoft 365 Business verwaltet werden
+title: Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,39 +19,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Erfahren Sie, wie Microsoft 365 schützen aktivieren lokalen AD Windows 10 Geräte verbunden.
-ms.openlocfilehash: 6e66a2c5417c9037232c1ada654d4cac3c520607
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Erfahren Sie, wie Sie mit Microsoft 365 lokale AD-verbundene Windows 10-Geräte schützen können.
+ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278075"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivieren Sie in die Domäne eingebundener Windows 10 Geräte von Microsoft 365 Business verwaltet werden
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 
-Wenn Ihre Organisation Windows Server Active Directory lokalen verwendet wird, können Sie Microsoft 365 Business zum Schutz Ihrer Windows 10 Geräte bei gleichzeitiger Wahrung der Zugriff auf lokale Ressourcen, die erfordern lokale Authentifizierung festlegen. Sie können dies richten Sie durch die erste Synchronisierung Ihrer Active Directory mit Azure Active Directory, gefolgt von den Windows-10-Geräten mit Azure Active Directory registrieren und registrieren sie für die Verwaltung von mobilen Geräten von Microsoft 365 Business.
+Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business einrichten, um Ihre Windows 10-Geräte zu schützen, ohne dabei den Zugriff auf lokale Ressourcen zu gewährleisten, die lokal authentifiziert werden müssen. Sie können dies einrichten, indem Sie zunächst Ihr Active Directory mit Azure Active Directory synchronisieren, gefolgt von der Registrierung der Windows 10-Geräte mit Azure AD und der Anmeldung für die Verwaltung mobiler Geräte durch Microsoft 365 Business.
   
-## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Einrichten von Geräten in die Domäne eingebundener von Microsoft 365 Business verwaltet werden
+## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Einrichten von Domänen verbundenen Geräten, die von Microsoft 365 Business verwaltet werden
 
-Zum Einrichten Ihrer Organisation in die Domäne eingebundener Geräte profitieren von der Funktionen von Azure Active Directory zusätzlich zur lokalen Active Directory können Sie **Hybrid Azure AD verbunden Geräte**implementieren. Dies sind Geräte, die sowohl die lokale Active Directory und die Azure Active Directory verbunden sind. Hybride beigetreten Azure AD-Geräte können geschützt und Microsoft 365 Business verwaltet werden. 
+Zum Einrichten der Domänen verbundenen Geräte Ihrer Organisation, die zusätzlich zu lokalen Active Directory-Funktionen von Azure Active Directory bereitgestellt werden, können Sie **hybride Azure AD-verbundene Geräte**implementieren. Dabei handelt es sich um Geräte, die sowohl mit Ihrem lokalen Active Directory als auch mit Ihrem Azure Active Directory verbunden sind. Hybride Azure AD-verbundene Geräte können von Microsoft 365 Business geschützt und verwaltet werden. 
   
-Führen Sie die Schritte unten, um Ihre Windows 10 Geräte Hybrid Azure AD beigetreten und verwaltet von Microsoft 365 Business stellen.
+Führen Sie die folgenden Schritte aus, um Ihre Windows 10-Geräte Hybrid Azure AD zu verbinden und von Microsoft 365 Business zu verwalten.
   
-1. Führen Sie zum Synchronisieren der Benutzer, Gruppen und Kontakte aus der lokalen Active Directory in Azure Active Directory den Assistenten für verzeichnissynchronisierung und Azure Active Directory verbinden gemäß [Directory-Synchronisierung für Office 365 einrichten](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
+1. Führen Sie den Assistenten für die Verzeichnissynchronisierung und Azure Active Directory Connect wie unter [Einrichten der Verzeichnissynchronisierung für Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)beschrieben aus, um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory in Azure Active Directory zu synchronisieren.
     
     > [!NOTE]
-    > Die Schritte sind exakt identisch für Microsoft 365 Business. 
+    > Die Schritte sind für Microsoft 365 Business identisch. 
   
-2. Bevor Sie Schritt 3, um Windows 10 Geräte können Hybrid werden Azure AD beigetreten ist abgeschlossen haben, müssen Sie sicherstellen, dass Sie die folgenden Anforderungen erfüllen:
+2. Bevor Sie Schritt 3 abschließen, um Windows 10-Geräte als Hybriden Azure AD-Beitritt zu aktivieren, müssen Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
     
-   - Sie arbeiten mit die neueste Version von Azure Active Directory verbinden.
+   - Sie führen die neueste Version von Azure AD Connect aus.
     
-   - Verbinden von Azure Active Directory synchronisiert hat die Computerobjekte der Geräte Hybrid werden Azure AD verknüpft werden soll. Eine Verbindung herstellen Sie sowie, wenn die Computerobjekte zu bestimmten Organisationseinheiten (OE) gehören, stellen Sie sicher, dass diese OUs für Azure AD-Synchronisierung festgelegt sind.
+   - Azure AD Connect hat alle Computerobjekte der Geräte synchronisiert, für die eine hybride Azure AD-Verknüpfung verwendet werden soll. Wenn die Computerobjekte zu bestimmten Organisationseinheiten (OU) gehören, stellen Sie sicher, dass diese OUs auch für die Synchronisierung in Azure AD Connect festgelegt sind.
     
-3. Registrieren Sie die vorhandenen Domäne eingebundener Windows 10 Geräte Hybrid Azure AD-beigetreten und für die Verwaltung von mobilen Geräten von Intune (Microsoft 365 Business) zu registrieren:
+3. Registrieren Sie vorhandene mit der Domäne verbundene Windows 10-Geräte als hybrides Azure AD-Mitglied, und registrieren Sie Sie für die Verwaltung mobiler Geräte von InTune (Microsoft 365 Business):
     
-4. Befolgen Sie die Schritt-für-Schritt-Anweisungen unter [How to configure Hybrid Azure Active Directory verbunden Geräte](https://go.microsoft.com/fwlink/p/?linkid=872870)aus. Auf diese Weise können die Synchronisierung der lokalen Active Directory beigetreten Windows 10 Computern und stellen sie die cloud bereit.
+4. BeFolgen Sie die Schritt-für-Schritt-Anweisungen unter [How to configure Hybrid Azure Active Directory Joined Devices](https://go.microsoft.com/fwlink/p/?linkid=872870). Dadurch wird die Synchronisierung Ihrer lokalen Active Directory-Verbindung mit Windows 10-Computern aktiviert, sodass diese Cloud-fähig ist.
     
-5. Um ein Windows-10-Gerät für die Verwaltung von mobilen Geräten zu registrieren, finden Sie unter [registrieren ein Geräts Windows 10 mit Intune mithilfe einer Gruppenrichtlinie](https://go.microsoft.com/fwlink/p/?linkid=872871) Anweisungen. Sie können die Gruppenrichtlinie auf einem lokalen Computer Ebene oder für Massenvorgänge, können Sie diese gruppenrichtlinieneinstellung auf Ihre Domänencontrollerserver erstellen. 
+5. Informationen zum Registrieren eines Windows 10-Geräts für die Verwaltung mobiler Geräte finden Sie unter [Registrieren eines Windows 10-Geräts mit InTune mithilfe einer Gruppenrichtlinie](https://go.microsoft.com/fwlink/p/?linkid=872871) . Sie können die Gruppenrichtlinie auf lokaler Computerebene oder für Massenvorgänge festlegen, indem Sie diese Gruppenrichtlinieneinstellung auf dem Domänencontrollerserver erstellen. 
     
 

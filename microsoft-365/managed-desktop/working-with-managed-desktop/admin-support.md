@@ -1,60 +1,58 @@
 ---
-title: Administratorunterstützung für Microsoft Managed Desktop
+title: Administrator Unterstützung für Microsoft Managed Desktop
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 12/18/2018
-ms.openlocfilehash: 0a9d76c402419922e423eeda639f78ca8083bc17
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 1b5708438813feb9b7086f80e3f3d28b6beacaad
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278445"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Administratorunterstützung für Microsoft Managed Desktop
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Administrator Unterstützung für Microsoft Managed Desktop
 
-Sie können supporttickets oder Anfragen an Microsoft mithilfe des Microsoft verwalteten Desktops Administrative Portals Feedback senden. Supportanfragen sind immer über Feedback Übermittlungen priorisiert. Supportanfragen werden selektiert und je nach Schweregrad verwaltet werden, wie in der [Schweregrad Definitionstabelle](#sev)beschrieben. Feedback wird überprüft, und eine Antwort bereitgestellt, in denen angefordert. 
+Sie können Support Tickets oder Feedback Anforderungen an Microsoft über das Verwaltungs Portal Microsoft Managed Desktop einreichen. Support Anfragen werden immer über Feedback Übermittlungen priorisiert. Support Anfragen werden gemäß dem Schweregrad, der in der Severity-Definitions [Tabelle](#sev)beschrieben wird, unterstützt und verwaltet. Das Feedback wird überprüft und eine entsprechende Antwort bereitgestellt. 
 
 >[!IMPORTANT]
->Stellen Sie sicher, Sie [Richten Sie einen Kontakt Admin](../get-started/add-admin-contacts.md) für die app packen, Geräte, Sicherheit und andere. Sie können sich nicht um eine Supportanfrage in diesen Bereichen zu übermitteln, wenn ein Kontakt Admin nicht konfiguriert ist.
+>Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Verpackungen, Geräte, Sicherheit und andere einrichten. Sie können keine Support Anfrage in einem dieser Bereiche übermitteln, wenn kein Administratorkontakt konfiguriert ist.
 
-Um eine Anfrage zu senden, öffnen Sie das Microsoft verwalteter Desktop-Admin-Portal, und wählen Sie **+ neue Support-Ticket** auf der Registerkarte Support-Anforderung. Die folgenden Informationen helfen Ihnen Schritt für Schritt die fertigzustellen, je nach Szenario. Wenn Sie einen Schweregrad auswählen, überprüfen Sie in **erwartete Kunden Antwort**erwartet.
+**So übermitteln Sie eine Supportanfrage**
+1. Melden Sie sich beim [Microsoft Managed Desktop Admin Portal](http://aka.ms/mwaasportal)an. 
+2. Wählen Sie **unter Supportanfragen**die Option **+ Neues Support Ticket**aus.
+3. Wählen Sie den **Support** -Anforderungs aus, der mit der benötigten Hilfe übereinstimmt. In der folgenden Tabelle werden die Optionen erläutert. 
+4. Wählen Sie den **schwere**Grad aus. Weitere Informationen finden Sie unter [Support Request Severity Definitions](#sev). 
 
-Wenn Sie Ihre Anfrage erstellen, wählen Sie den Typ für die Art der Hilfe, die Sie benötigen.
-
-Unterstützung Anforderungstyp | Geeignet in folgender Situation
+Support-Anforderungs | Geeignet in folgender Situation
 --- | ---
-Vorfall | Sie benötigen Microsoft verwalteten Desktops Vorgänge-Team untersuchen, wie weit verbreitete Auswirkungen von einem Vorfall ändern oder Sicherheit.
-Anfordern von Informationen | Eine Änderung für Netzwerke, Proxykonfiguration, VPN-Systeme, zertifikatablauf geplant wird, oder nur einige Informationen zu den Dienst benötigt. Eine Antwort vom Desktop Vorgänge Team von Microsoft verwaltet wird dringend empfohlen, wenn Sie eine Änderung innerhalb Ihrer Organisation kommunizieren.
-Die Anforderung zum Ändern | Sie benötigen Microsoft verwalteten Desktops Vorgänge-Team ändern, wie das Verschieben von Geräten zwischen Update klingelt.
+Vorfall | Sie müssen das Microsoft Managed Desktop Operations-Team wie die weit verbreitete Auswirkung einer Änderung oder eines Sicherheitsvorfalls untersuchen.
+Anforderung von Informationen | Sie planen eine Änderung für das Netzwerk, die Proxykonfiguration, VPN-Systeme, das Ablaufdatum des Zertifikats oder benötigen nur einige Informationen zum Dienst. Eine Antwort des Microsoft Managed Desktop Operations-Teams wird dringend empfohlen, wenn Sie eine Änderung in Ihrer Organisation kommunizieren.
+Änderungsanforderung | Sie benötigen das Microsoft Managed Desktop Operations-Team, um eine Änderung vorzunehmen, beispielsweise das Bewegen von Geräten Zwischenupdate Gruppen.
 
 <span id="sev" />
 
-## <a name="support-request-severity-definitions"></a>Unterstützung der Anforderung Schweregrade
+## <a name="support-request-severity-definitions"></a>Dringlichkeits Definitionen für Support Anforderungen
 
-Die Antwortzeiten ist der Zeitraum aus, wenn Sie Ihre Anfrage, wenn ein Microsoft verwalteter Desktop Engineer Sie und beginnt, die auf Ihre Anfrage arbeiten Kontakte senden. Geschäftliche Relevanz der Anforderung, basierend auf den Schweregrad der Anforderung hängt von die anfänglichen Antwortzeit ab.
+Bei der anfänglichen Antwortzeit handelt es sich um den Zeitraum, ab dem Sie Ihre Supportanfrage an den Zeitpunkt übermitteln, an dem ein Microsoft Managed Desktop Engineer Sie kontaktiert und mit der Bearbeitung Ihrer Supportanfrage beginnt. Die anfängliche Antwortzeit variiert je nach dem Schweregrad der Anforderung mit den geschäftlichen Auswirkungen der Anforderung.
 
-Schweregrad  | Kundensituation |  Die Antwortzeiten   | Erwartete Kunden Antwort
+Schweregrad  | Kundensituation |  Anfängliche Antwortzeit   | Erwartete Kundenantwort
 --- | --- | --- | ---
-**Schweregrad A – kritische Auswirkungen** |  **Kritische geschäftliche Relevanz**<br><br>Kunden hat signifikanten Verlust oder Beeinträchtigung der Dienste und sofortige Aufmerksamkeit.<br><br>**Haupt-Anwendungskompatibilität auswirken**<br><br>Gesamte Unternehmen des Kunden ist finanziellen Auswirkungen aufgrund von Abstürzen oder kritische Funktionalitätsverlust auftritt. | Initial: < 1 Stunde<br>Update: 60 Minuten<br>24 x 7 verfügbar | Wenn Sie Schweregrad A auswählen, bestätigen Sie, dass das Problem kritische geschäftliche Auswirkungen mit schwerwiegenden Datenverlust und Beeinträchtigung der Dienste hat. <br><br>Das Problem erfordert, sofort eine Antwort, und Sie zur fortlaufenden 24 x 7 Vorgang jeden Tag mit dem Microsoft-Team bis zur Lösung zu übergeben, kann Microsoft andernfalls unter seiner Ermessen Verringern der Schweregrad Ebene B.<br><br> Sie stellen Sie außerdem sicher, dass Microsoft präzise Kontaktinformationen verfügt. 
-**Schweregrad B – mittlere Auswirkung** |  **Moderater geschäftliche Relevanz**<br><br>Kunden hat, Moderater Datenverlusten oder Beeinträchtigung der Dienste, aber Arbeit kann fortgeführt nach vernünftigem Ermessen fortgesetzt.<br><br>**Haupt-Anwendungskompatibilität auswirken**<br><br>Eine Gruppe bestimmter geschäftlicher ist nicht mehr produktive, aufgrund von Abstürzen Verhalten oder kritische Funktionalitätsverlust. | Initial: < 4 Stunden<br>Update: 12 Stunden<br>Geschäftszeiten (24 x 7 verfügbar) | Wenn Sie Schweregrad B auswählen, bestätigen Sie, dass das Problem Moderater für Ihr Unternehmen mit Verlust und Beeinträchtigung der Dienste wirkt, jedoch umgangen angemessene, dies ist allerdings temporäre, Geschäftskontinuität aktivieren. <br><br>Das Problem erfordert eine schnelle Antwort. Wenn Sie 24 x 7 ausgewählt haben, wenn Sie die Supportanfrage Commit an einer fortlaufenden Vorgang jeden Tag mit dem Microsoft-Team 24 x 7 bis zur Lösung, übermitteln kann anderenfalls Microsoft seine Ermessen Schweregrad c Ebene verringern Wenn Sie ausgewählt, dass die Geschäftszeiten unterstützen haben, wenn Sie einen Vorfall Schweregrad B übermitteln, wenden Sie Microsoft wird während der Geschäftszeiten nur.<br><br>Sie stellen Sie außerdem sicher, dass Microsoft präzise Kontaktinformationen verfügt.
-**Schweregrad C – minimaler Beeinträchtigung** |   **Minimale geschäftliche Relevanz**<br><br> Kunden ist mit minor Hindernisse Dienste funktionsfähig.<br><br>**Minor Anwendungskompatibilität auswirken**<br><br>Potenziell nicht verbundene Benutzer bemerken geringfügige Kompatibilitätsprobleme, die nicht die Produktivität verhindern |    Initial: < 8 Stunden<br>Update: 24 Stunden<br>Geschäftszeiten  | Wenn Sie Schweregrad C auswählen, bestätigen Sie, dass das Problem mit minimalen Beeinträchtigung für Ihr Unternehmen mit minor Hindernis des Diensts hat.<br><br>Für einen Vorfall Schweregrad C kontaktiert Microsoft Sie während der Geschäftszeiten nur.<br><br>Sie stellen Sie außerdem sicher, dass Microsoft hat sich die genaue Kontaktinformationen
+**Schweregrad A – kritische Auswirkung** |  **Wichtige geschäftliche Auswirkungen**<br><br>Das Geschäft des Kunden hat erheblichen Verlust oder Verschlechterung der Dienste und erfordert sofortige Aufmerksamkeit.<br><br>**Wichtige Auswirkungen auf die Anwendungskompatibilität**<br><br>Das gesamte Unternehmen des Kunden hat finanzielle Auswirkungen auf das abstürzen oder den Verlust wichtiger Funktionen. | Initial: < 1 Stunde<br>Update: 60 Minuten<br>24X7 verfügbar | Wenn Sie den Schweregrad A auswählen, bestätigen Sie, dass das Problem wichtige geschäftliche Auswirkungen mit schwerwiegenden Verlusten und Beeinträchtigungen von Diensten hat. <br><br>Das Problem erfordert eine sofortige Antwort, und Sie verpflichten sich zu einem kontinuierlichen 24X7-Betrieb täglich mit dem Microsoft-Team bis zur Lösung, andernfalls kann Microsoft nach eigenem Ermessen den Schweregrad auf Stufe B verringern.<br><br> Außerdem stellen Sie sicher, dass Microsoft über Ihre genauen Kontaktinformationen verfügt. 
+**Schweregrad B – moderate Auswirkung** |  **Moderate geschäftliche Auswirkungen**<br><br>Das Geschäft des Kunden hat einen moderaten Verlust oder eine Beeinträchtigung der Dienste, aber die Arbeit kann auf eine eingeschränkte Weise fortgesetzt werden.<br><br>**Moderate Anwendungs Kompatibilitäts Auswirkung**<br><br>Eine bestimmte Unternehmensgruppe ist aufgrund des Absturz Verhaltens oder Verlusts wichtiger Funktionen nicht mehr produktiv. |  Initial: < 4 Stunden<br>Update: 12 Stunden<br>Geschäftszeiten (24X7 verfügbar) | Wenn Sie Schweregrad B auswählen, stellen Sie sicher, dass das Problem für Ihr Unternehmen aufgrund des Verlusts und der Verschlechterung von Diensten moderat ist, aber Problemumgehungen ermöglichen eine angemessene, wenn auch temporäre Geschäftskontinuität. <br><br>Das Problem erfordert eine dringende Antwort. Wenn Sie bei der Übermittlung der Supportanfrage rund um die Uhr ausgewählt haben, verpflichten Sie sich täglich mit dem Microsoft-Team zu einem kontinuierlichen 24X7-Betrieb bis zur Lösung, andernfalls kann Microsoft nach eigenem Ermessen den Schweregrad auf Level C verringern. Wenn Sie beim Übermitteln eines Schweregrad B-Ereignisses die Geschäftszeiten Unterstützung gewählt haben, wird Microsoft Sie nur während der Geschäftszeiten kontaktieren.<br><br>Außerdem stellen Sie sicher, dass Microsoft über Ihre genauen Kontaktinformationen verfügt.
+**Schweregrad C – minimale Auswirkungen** |   **Minimale geschäftliche Auswirkungen**<br><br> Das Geschäft des Kunden arbeitet mit geringen Dienst Hindernissen.<br><br>**Geringe Auswirkungen auf die Anwendungskompatibilität**<br><br>MöglicherWeise nicht in Verbindung stehende Benutzer erleben kleinere Kompatibilitätsprobleme, die die Produktivität nicht verhindern |    Initial: < 8 Stunden<br>Update: 24 Stunden<br>Geschäftszeiten  | Wenn Sie Schweregrad C auswählen, bestätigen Sie, dass das Problem minimale Auswirkungen auf Ihr Unternehmen mit einem geringen Dienst Hindernis hat.<br><br>Bei einem Vorfall mit Schweregrad C wird Microsoft Sie nur während der Geschäftszeiten kontaktieren.<br><br>Außerdem stellen Sie sicher, dass Microsoft über Ihre genauen Kontaktinformationen verfügt.
 
 Weitere Details:
-- Sprachen - unterstützt alle Support in Englisch bereitgestellt wird.
-- Schweregrad ändert - kann Microsoft den Schweregrad herabstufen, wenn der Kunde nicht genügend Ressourcen oder Antworten auf Microsoft Problem Lösung anstrengungen fortsetzen aktivieren bereitstellen kann. 
-- Geschäftszeiten - für den meisten Ländern Business Stunden von 9:00 Uhr bis 5:00 Uhr Pacific Standard Time lauten.
-- Für ein Kompatibilitätsproblem Anwendung gezogen werden muss ein reproduceable Fehler, die gleiche Version der Anwendung, der zwischen der vorherigen und der aktuellen Version von Windows oder Office vorhanden sein.
-- Zum Beheben von Problemen mit der Anwendungskompatibilität erfordert Microsoft eine Anlaufstelle Kunden entwickelt. Die einzelnen ist erforderlich, um arbeiten direkt mit unser Team Fast Track untersuchen und das Problem zu beheben.
-- Wenn ein Kunde die erwartete Antwort erfüllen kann, wird die Anforderung von einem Schweregrad, auf ein Minimum Schweregrad c Microsoft downgraden
-- Wenn ein Kunde reagiert auf Anforderungen für die Aktion ist, wird Microsoft abwehren und Schließen der Supportanfrage innerhalb der letzten Anforderung 48 Stunden.
+- **Support Sprachen** – alle Unterstützung wird in englischer Sprache bereitgestellt.
+- **Änderungen des schwere** Grads – Microsoft kann den Schweregrad herabsetzen, wenn der Kunde nicht in der Lage ist, angemessene Ressourcen oder Antworten bereitzustellen, um die Problem Behebungs Bemühungen von Microsoft fortzusetzen. 
+- **Geschäftszeiten** -für die meisten Länder sind die Geschäftszeiten von 9:00 uhr bis 5:00 Uhr, Pacific Standard Time.
+- **Anwendungskompatibilität** – damit ein Anwendungs Kompatibilitätsproblem berücksichtigt werden kann, muss ein reproduzierter Fehler der gleichen Version der Anwendung zwischen der vorherigen und der aktuellen Version von Windows oder Office vorliegen. Um Anwendungskompatibilitätsprobleme zu beheben, benötigt Microsoft einen Kundenkontakt. Der einzelne muss direkt mit unserem Fast-Track-Team zusammenarbeiten, um das Problem zu untersuchen und zu beheben.
+- **Kunden Reaktionszeit** Wenn ein Kunde die erwarteten Antwort Anforderungen nicht erfüllen kann, stuft Microsoft die Anforderung um einen Schweregrad herab, und zwar auf ein Minimum von Schweregrad C. Wenn ein Kunde nicht auf Anforderung von Aktion reagiert, verringert Microsoft die Supportanfrage innerhalb von 48 Stunden nach der letzten Anforderung.
  
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- [Endbenutzer-Unterstützung für Microsoft verwalteter Desktop](end-user-support.md). 
-- [Unterstützung für Microsoft verwalteten Desktops](../service-description/support.md). 
-
-
-
+- [Endbenutzer Unterstützung für Microsoft Managed Desktop](end-user-support.md). 
+- [Unterstützung für Microsoft Managed Desktop](../service-description/support.md). 

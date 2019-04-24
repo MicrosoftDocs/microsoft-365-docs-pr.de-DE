@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
 ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
-ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31504081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283590"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Gehen Sie zu [Discover microsoft 365 Business Advantage](https://www.microsoft.c
 
     - **Username**: Geben Sie den Namen (als Alias bezeichnet) ein, den Sie für Ihre eigene geschäftliche e-Mail verwenden. Robert Young kann beispielsweise RobY oder RobYoung als Arbeits Alias verwenden.
     - **Ihr Unternehmen**: Geben Sie Ihren eindeutigen Firmennamen ein. Dies ist der Name, den Ihre Geschäftswebsite verwendet, wenn Sie einen haben, und ist auch der Name, den Sie nach dem @-Zeichen einfügen möchten, wenn Sie eine geschäftliche e-Mail erhalten. Dieser Name wird als Domäne bezeichnet. Wenn Ihr Unternehmen beispielsweise contoso Skis heißt, geben Sie ContosoSkis nach dem @-Zeichen ein.
-    - **Wählen Sie eine Domäne**aus: Wenn Sie bereits Ihren Domänennamen besitzen, wählen sie. onmicrosoft.com aus den Dropdown-Männern aus, und wir bitten Sie, Sie später einzurichten. Andernfalls ist es ganz einfach, einen Domänennamen zu erwerben, der Ihr Unternehmen repräsentiert. Wählen Sie dazu die gewünschte Domäne im Dropdownmenü aus. Beispielsweise kann Ihre vollständige e-Mail *Teresa@ContosoSkis.net*-Adresse sein. Wir informieren Sie sofort, wenn der Domänenname verfügbar ist. Wenn dies der Fall ist, werden die Kosten Ihrer Domäne zu den Kosten Ihres Microsoft 365 Business-Abonnements hinzugefügt. Die neue Domäne wird ebenfalls eingerichtet und kann in Microsoft 365 verwendet werden, wenn Sie Sie hier erwerben. Informationen zu Domänen finden Sie unter [häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq).
+    - **Wählen Sie eine Domäne**aus: Wenn Sie bereits Ihren Domänennamen besitzen, wählen sie. onmicrosoft.com aus den Dropdown-Männern aus, und wir bitten Sie, Sie später einzurichten. Andernfalls ist es ganz einfach, einen Domänennamen zu erwerben, der Ihr Unternehmen repräsentiert. Wählen Sie dazu die gewünschte Domäne im Dropdownmenü aus. Beispielsweise kann Ihre vollständige e-Mail-Adresse *Teresa@ContosoSkis.net*sein. Wir informieren Sie sofort, wenn der Domänenname verfügbar ist. Wenn dies der Fall ist, werden die Kosten Ihrer Domäne zu den Kosten Ihres Microsoft 365 Business-Abonnements hinzugefügt. Die neue Domäne wird ebenfalls eingerichtet und kann in Microsoft 365 verwendet werden, wenn Sie Sie hier erwerben. Informationen zu Domänen finden Sie unter [häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq).
     
     ![Screenshot der Seite "Benutzer-ID erstellen".](media/signinuserid.png)
 

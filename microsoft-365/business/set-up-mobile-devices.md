@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Installieren von Office auf einem iPhone oder ein Android-Telefon und Ihre Arbeitsdateien in Office-apps durch Microsoft 365 Business geschützt werden.
-ms.openlocfilehash: 15dc9742cb9712bcbf21e7e3668adc572ee9eb2b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Installieren Sie Office auf einem iPhone oder einem Android-Smartphone, und Ihre Arbeitsdateien in Office-Apps werden von Microsoft 365 Business geschützt.
+ms.openlocfilehash: 4ffde6197104cfceb337a9d531032dacfd9efcf0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284639"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Einrichten mobiler Geräte für Benutzer von Microsoft 365 Business
 
@@ -34,7 +37,7 @@ Das Beispiel ist für Outlook bestimmt, gilt aber auch für alle anderen Office-
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-Sehen Sie sich ein Video über das Office-apps auf iOS-Geräten mit Microsoft 365 Business einrichten:
+Sehen Sie sich ein Video zum Einrichten von Office-Apps auf iOS-Geräten mit Microsoft 365 Business an:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -50,7 +53,7 @@ Tippen Sie nach Abschluss der Installation auf die Schaltfläche **Öffnen**, um
   
 ![Screenshot of Outlook with Get Started button](media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Geben Sie Ihre geschäftliche e-Mail-Adresse auf dem **E-Mail-Konto hinzufügen** -Bildschirm \> **Konto hinzufügen**, und geben Sie Ihre Anmeldeinformationen für Microsoft 365 Business \> **Anmelden**.
+Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 Business credentials \> **Sign in**.
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -64,7 +67,7 @@ Suchen Sie Outlook auf dem iPhone, und starten Sie es erneut. Geben Sie bei der 
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
-Um Setup auf dem Android-Telefon zu beginnen, wechseln Sie an den Store wiedergeben.
+Um das Setup auf Ihrem Android-Smartphone zu starten, wechseln Sie zum Play Store.
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
@@ -72,7 +75,7 @@ Geben Sie im Suchfeld von Google Play "Microsoft Outlook" ein, und tippen Sie au
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-In der Outlook-app Tippen Sie auf **Erste Schritte**aus, und fügen Sie Ihr e-Mail-Konto von Microsoft 365 Business \> **Weiter**, und melden Sie sich mit Ihren Anmeldeinformationen für die Organisation.
+In the Outlook app tap **Get Started**, then add your Microsoft 365 Business email account \> **Continue**, and sign in with your organization credentials.
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   

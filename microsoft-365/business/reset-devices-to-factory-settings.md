@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 'Informationen zur Verwendung von Microsoft 365 Unternehmen Factory Ihrer Windows 10 Geräte zurücksetzen. '
-ms.openlocfilehash: ed745ea792f755ada17b3b327032246dab16d94b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Erfahren Sie, wie Sie Ihre Windows 10-Geräte mit Microsoft 365 Business Factory zurücksetzen. '
+ms.openlocfilehash: 8340bd6a24f3b4d875f6482c03a69275a9a48f33
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283721"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen
 
@@ -29,11 +32,9 @@ ms.locfileid: "26868092"
   
 1. Melden Sie sich beim [Admin Center](https://aka.ms/bcsportal) mit globalen Administratoranmeldeinformationen an. 
     
-2. Wählen Sie im Admin Center auf der Karte **Geräteaktionen** die Option **Zurücksetzung auf Werkseinstellungen** aus.
-    
-    ![On the Device actions card, choose Factory reset](media/7caddd12-207e-4c99-b61c-0495fc5f55e3.png)
-  
-3. Aktivieren Sie im Bereich **Zurücksetzung auf Werkseinstellungen** das Kontrollkästchen neben dem Gerät, von dem Sie Daten entfernen möchten. Wählen Sie dann **Auswählen** aus.
+2. Wählen Sie im Admin Center im linken Navigationsbereich Devices **** \> **Manage**aus.
+
+3. Aktivieren Sie auf der Seite **Verwalten** das Kontrollkästchen neben dem Gerät, aus dem Sie Daten entfernen möchten, und wählen Sie dann in der Dropdownliste **Verwalten** die Option **Factory Reset**aus.
     
 4. Wählen Sie im Bereich **Sind Sie sicher, dass Sie die Zurücksetzung auf Werkseinstellungen auf den folgenden Geräten durchführen möchten?** nacheinander **Bestätigen** \> **Schließen** aus.
     
