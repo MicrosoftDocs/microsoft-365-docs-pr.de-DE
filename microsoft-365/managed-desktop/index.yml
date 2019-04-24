@@ -1,16 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 07a77c646f8aef2440f415fdf143373cd249a641
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867878"
 documentType: LandingData
-title: Microsoft verwalteter Desktop Dokumentationen und Ressourcen
+title: Dokumentation und Ressourcen für Microsoft Managed Desktop
 metadata:
-  title: Dokumentation zu Microsoft verwalteten Desktops
-  description: 
-  keywords: Gerät, app, management
+  title: Dokumentation zu Microsoft Managed Desktop
+  description: null
+  keywords: 'Gerät, APP, Verwaltung'
   author: trudyha
   ms.author: trudyha
   ms.date: 11/1/2018
@@ -18,58 +12,58 @@ metadata:
   ms.devlang: na
   ms.service: m365-md
 sections:
-- items:
-  - type: markdown
-    text: Am einfachsten erfreuen Sie Ihre Benutzer und frei IT.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - items:
+      - type: markdown
+        text: 'Die einfachste Möglichkeit, Benutzer zu begeistern und Sie freizugeben.'
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: intro/index.md
+            html: <p>Informieren Sie sich über die Funktionsweise von Microsoft Managed Desktop.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
+            title: Was ist Microsoft Managed Desktop?
+          - href: service-description/index.md
+            html: '<p>Erfahren Sie, was in Microsoft Managed Desktop enthalten ist.</p>'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+            title: Dienstbeschreibung
+          - href: get-ready/index.md
+            html: '<p>Erfahren Sie, wie Sie sich für die Registrierung in Microsoft Managed Desktop vorbereiten.</p>'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
+            title: Mach dich bereit
+          - href: get-started/index.md
+            html: '<p>Erfahren Sie, wie Sie Geräte bestellen und Kontakte hinzufügen.</p>'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
+            title: Erste Schritte
+          - href: working-with-managed-desktop/index.md
+            html: <p>Informationen zur APP-Verwaltung.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
+            title: Arbeiten mit Microsoft Managed Desktop
+  - title: Neue Artikel und Blogbeiträge
     items:
-    - href: intro/index.md
-      html: <p>Informieren Sie sich über Neuigkeiten Microsoft verwalteter Desktop und deren Funktionsweise.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: Was ist Microsoft Managed Desktop?
-    - href: service-description/index.md
-      html: <p>Hier erfahren Sie, was in Microsoft verwalteter Desktop enthalten ist.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: Beschreibung der Dienste
-    - href: get-ready/index.md
-      html: <p>Hier erfahren Sie, wie Sie in Microsoft verwalteter Desktop registrieren vorbereiten.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: Mach dich bereit
-    - href: get-started/index.md
-      html: <p>Informationen Sie zum Bestellen von Geräten und Hinzufügen von Kontakten.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
-      title: Erste Schritte
-    - href: working-with-managed-desktop/index.md
-      html: <p>Informationen Sie zu app-Verwaltung.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
-      title: Arbeiten mit Microsoft Managed Desktop
-- title: Neue Artikel und Blogbeiträge
-  items:
-  - type: paragraph
-    text: Lesen Sie die neueste und interessantesten Informationen, die Sie wissen müssen.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - type: paragraph
+        text: 'Lesen Sie die neuesten und besten Informationen, die Sie wissen müssen.'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/'
+            title: Blog Zusammenarbeit mit Kunden und Partnern zur Bereitstellungeines modernen Desktops
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
+          - href: 'https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html'
+            title: 'Artikel Microsoft Managed Desktop: alle Windows 10-Geräte, verwaltet von Microsoft'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
+  - title: Videos
     items:
-    - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
-      title: '[Blog] Dank der Zusammenarbeit mit Kunden und Partnern, einen modernen Desktop übermitteln'
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
-    - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
-      title: '[Artikel] Microsoft Managed Desktop: Alle Windows 10 Geräte, von Microsoft verwaltet werden'
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
-- title: Videos
-  items:
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]'
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]'

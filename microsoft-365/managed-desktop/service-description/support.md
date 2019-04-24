@@ -1,55 +1,52 @@
 ---
 title: Unterstützung für Microsoft Managed Desktop
 description: ''
-keywords: Dokumentation Microsoft verwalteter Desktop, Microsoft-365-Dienst
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
-ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278520"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a><span data-ttu-id="cd3e9-103">Unterstützung für Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="cd3e9-103">Support for Microsoft Managed Desktop</span></span>
+# <a name="support-for-microsoft-managed-desktop"></a><span data-ttu-id="4f5f8-103">Unterstützung für Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="4f5f8-103">Support for Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="cd3e9-p101">Verwalteter Microsoft-Desktop-Geräte werden verwaltet werden und repariert oder von Microsoft gemäß den Anweisungen in Garantie Vereinbarung ersetzt. Microsoft stellt proaktive und reaktive Problemmanagement bereit. Microsoft verfolgt Vorfälle im Microsoft verwalteter Desktop Admin-Portal. Sie werden gemäß der [Definition des Schweregrads](../working-with-managed-desktop/admin-support.md#sev)eingeteilt.</span><span class="sxs-lookup"><span data-stu-id="cd3e9-p101">Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).</span></span>
+<span data-ttu-id="4f5f8-104">Von Microsoft verwaltete Desktop-Geräte werden nach Gewährleistungsvertrag von Microsoft verwaltet und repariert oder ersetzt.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-104">Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement.</span></span> <span data-ttu-id="4f5f8-105">Microsoft bietet eine proaktive und reaktive Vorfallverwaltung.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-105">Microsoft will provide proactive and reactive incident management.</span></span> <span data-ttu-id="4f5f8-106">Microsoft verfolgt Vorfälle im Microsoft Managed Desktop Admin-Portal nach.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-106">Microsoft tracks incidents in the Microsoft Managed Desktop admin portal.</span></span> <span data-ttu-id="4f5f8-107">Sie werden gemäß den [Schweregrad Definitionen](../working-with-managed-desktop/admin-support.md#sev)klassifiziert.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-107">They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).</span></span>
 
-<span data-ttu-id="cd3e9-108">Kunden können Microsoft verwalteter Desktop Vorgänge für wenden Sie sich an:</span><span class="sxs-lookup"><span data-stu-id="cd3e9-108">Customers can contact Microsoft Managed Desktop operations for:</span></span>
-- <span data-ttu-id="cd3e9-109">Anfragen nach Informationen auf modernen Arbeitsplatz als Dienst Mandanten oder Konfiguration</span><span class="sxs-lookup"><span data-stu-id="cd3e9-109">Information requests on the Modern Workplace as a Service tenant or configuration</span></span>
-- <span data-ttu-id="cd3e9-110">Ändern von Anforderungen an die Konfiguration des modernen Jahrestag als Service-Geräte</span><span class="sxs-lookup"><span data-stu-id="cd3e9-110">Change requests to the configuration of Modern Workplace as a Service devices</span></span>
-- <span data-ttu-id="cd3e9-111">Reporting ein Vorfall oder Ausfall</span><span class="sxs-lookup"><span data-stu-id="cd3e9-111">Reporting an incident or outage</span></span>
+<span data-ttu-id="4f5f8-108">Kunden können Microsoft Managed Desktop-Vorgänge für Folgendes kontaktieren:</span><span class="sxs-lookup"><span data-stu-id="4f5f8-108">Customers can contact Microsoft Managed Desktop operations for:</span></span>
+- <span data-ttu-id="4f5f8-109">Informationsanforderungen für den Mandanten oder die Konfiguration von Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="4f5f8-109">Information requests on the Microsoft Managed Desktop tenant or configuration</span></span>
+- <span data-ttu-id="4f5f8-110">Ändern von Anforderungen an die Konfiguration von Microsoft Managed Desktop-Geräten</span><span class="sxs-lookup"><span data-stu-id="4f5f8-110">Change requests to the configuration of Microsoft Managed Desktop devices</span></span>
+- <span data-ttu-id="4f5f8-111">Melden eines Ereignisses oder Ausfalls</span><span class="sxs-lookup"><span data-stu-id="4f5f8-111">Reporting an incident or outage</span></span>
 
-## <a name="whats-included"></a><span data-ttu-id="cd3e9-112">Was hat enthalten?</span><span class="sxs-lookup"><span data-stu-id="cd3e9-112">What's included?</span></span>
+## <a name="whats-included"></a><span data-ttu-id="4f5f8-112">Was ist enthalten?</span><span class="sxs-lookup"><span data-stu-id="4f5f8-112">What's included?</span></span>
 
-<span data-ttu-id="cd3e9-113">Unterstützung für Microsoft verwalteter Desktop:</span><span class="sxs-lookup"><span data-stu-id="cd3e9-113">Microsoft Managed Desktop support:</span></span>
+<span data-ttu-id="4f5f8-113">Microsoft Managed Desktop-Support:</span><span class="sxs-lookup"><span data-stu-id="4f5f8-113">Microsoft Managed Desktop support:</span></span>
 
-- <span data-ttu-id="cd3e9-114">Stellt ein Team von Support-Mitarbeiter an Microsoft verwalteter Desktop Geräte dedizierte</span><span class="sxs-lookup"><span data-stu-id="cd3e9-114">Provides a team of support engineers dedicated to Microsoft Managed Desktop devices</span></span>
-- <span data-ttu-id="cd3e9-115">Unterstützt Microsoft verwalteter Desktop Geräte und Endbenutzer, die Geräte zugewiesen sind</span><span class="sxs-lookup"><span data-stu-id="cd3e9-115">Supports Microsoft Managed Desktop devices and end users assigned to those devices</span></span>
-- <span data-ttu-id="cd3e9-116">Gewährt eingeschränkten administrativen Zugriff auf Microsoft verwalteter Desktop Geräte für Supporttechniker Verwalten von Microsoft verwaltet Desktop-Geräten</span><span class="sxs-lookup"><span data-stu-id="cd3e9-116">Grants limited administrative access to Microsoft Managed Desktop devices for support engineers managing Microsoft Managed Desktop devices</span></span> 
+- <span data-ttu-id="4f5f8-114">Stellt ein Team von Supportingenieuren zur verFügung, die für verwaltete Desktop Geräte von Microsoft dediziert sind</span><span class="sxs-lookup"><span data-stu-id="4f5f8-114">Provides a team of support engineers dedicated to Microsoft Managed Desktop devices</span></span>
+- <span data-ttu-id="4f5f8-115">Unterstützt Microsoft Managed Desktop-Geräte und Endbenutzer, die diesen Geräten zugewiesen sind</span><span class="sxs-lookup"><span data-stu-id="4f5f8-115">Supports Microsoft Managed Desktop devices and end users assigned to those devices</span></span>
+- <span data-ttu-id="4f5f8-116">Gewährt begrenzten administrativen Zugriff auf Microsoft Managed Desktop-Geräte für Supporttechniker, die Microsoft Managed Desktop-Geräte verwalten</span><span class="sxs-lookup"><span data-stu-id="4f5f8-116">Grants limited administrative access to Microsoft Managed Desktop devices for support engineers managing Microsoft Managed Desktop devices</span></span> 
 
-<span data-ttu-id="cd3e9-117">Unterstützte Produkte:</span><span class="sxs-lookup"><span data-stu-id="cd3e9-117">Supported products:</span></span>
+<span data-ttu-id="4f5f8-117">Unterstützte Produkte:</span><span class="sxs-lookup"><span data-stu-id="4f5f8-117">Supported products:</span></span>
 
-- <span data-ttu-id="cd3e9-118">Windows 10 mit Windows Defender erweiterte Schutz (WDATP)</span><span class="sxs-lookup"><span data-stu-id="cd3e9-118">Windows 10 with Windows Defender Advanced Threat Protection (WDATP)</span></span> 
-- <span data-ttu-id="cd3e9-119">Teilmenge der Suite Microsoft 365 E5: Outlook, Word, PowerPoint, Excel, damit Business-Client, Microsoft-Teams, Skype</span><span class="sxs-lookup"><span data-stu-id="cd3e9-119">Subset of the Microsoft 365 E5 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams</span></span> 
-- <span data-ttu-id="cd3e9-120">Microsoft Store für Unternehmen</span><span class="sxs-lookup"><span data-stu-id="cd3e9-120">Microsoft Store for Business</span></span> 
-- <span data-ttu-id="cd3e9-121">OneDrive for Business-client</span><span class="sxs-lookup"><span data-stu-id="cd3e9-121">OneDrive for Business client</span></span> 
+- <span data-ttu-id="4f5f8-118">Windows 10 mit Windows Defender Advanced Threat Protection (WDATP)</span><span class="sxs-lookup"><span data-stu-id="4f5f8-118">Windows 10 with Windows Defender Advanced Threat Protection (WDATP)</span></span> 
+- <span data-ttu-id="4f5f8-119">Teilmenge der Microsoft 365 E3-Suite: Outlook, Word, PowerPoint, Excel, Skype for Business-Client, Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="4f5f8-119">Subset of the Microsoft 365 E3 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams</span></span> 
+- <span data-ttu-id="4f5f8-120">Microsoft Store für Unternehmen</span><span class="sxs-lookup"><span data-stu-id="4f5f8-120">Microsoft Store for Business</span></span> 
+- <span data-ttu-id="4f5f8-121">OneDrive for Business-Client</span><span class="sxs-lookup"><span data-stu-id="4f5f8-121">OneDrive for Business client</span></span> 
 
-<span data-ttu-id="cd3e9-122">Ausführliche Informationen zu unterstützen:</span><span class="sxs-lookup"><span data-stu-id="cd3e9-122">Support details:</span></span>
+<span data-ttu-id="4f5f8-122">Support Details:</span><span class="sxs-lookup"><span data-stu-id="4f5f8-122">Support details:</span></span>
 
-- <span data-ttu-id="cd3e9-123">Aktuell: Nordamerika, Großbritannien und nur Australien (24 x 7 x 365)</span><span class="sxs-lookup"><span data-stu-id="cd3e9-123">Current: North America, United Kingdom, and Australia only (24x7x365)</span></span> 
-- <span data-ttu-id="cd3e9-124">Englisch ist die einzige unterstützte Sprache für Telefon- und Chat Gespräche mit Kunden</span><span class="sxs-lookup"><span data-stu-id="cd3e9-124">English is the only supported language for phone and chat conversations with customers</span></span> 
-- <span data-ttu-id="cd3e9-125">Wir sind, eine Partnerschaft nicht ersetzen, Helpdesk Ihrer Firmen; Line-of-Business (LOB) apps, die Ressourcen des Umkreisnetzwerks usw. werden von den Helpdesk weiterhin behandelt.</span><span class="sxs-lookup"><span data-stu-id="cd3e9-125">We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk</span></span> 
-- <span data-ttu-id="cd3e9-126">Microsoft verwalteten Geräten, die in Testgeräte anrufen und nicht - Microsoft verwalteter Desktop sind außerhalb des Gültigkeitsbereichs</span><span class="sxs-lookup"><span data-stu-id="cd3e9-126">Microsoft Managed Devices residing in the test ring and non-Microsoft Managed Desktop devices are out of scope</span></span> 
-
-## <a name="hardware-replacement"></a><span data-ttu-id="cd3e9-127">Austausch von Hardware</span><span class="sxs-lookup"><span data-stu-id="cd3e9-127">Hardware replacement</span></span>
-
-<span data-ttu-id="cd3e9-p102">Hardwaregeräte werden für Elemente im Rahmen der Gewährleistung ersetzt, die Sie auswählen. Geräte werden am Ende der Laufzeit Ihres Geräts als Dienst aktualisiert, wie ihre angefügte Garantie ist. Geräte müssen ersetzt werden, werden aus Gründen der außerhalb der Gewährleistung bewertet Gebühren für den Austausch, z. B. verlorenen oder gestohlenen Geräten. Eine vollständige Liste der was Gewährleistung abgedeckt ist finden Sie unter [Fläche Garantieoptionen](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty).</span><span class="sxs-lookup"><span data-stu-id="cd3e9-p102">Hardware devices are replaced for items under the terms of the warranty you select. Devices are refreshed at the end of your Device-as-a-Service term, as is their attached warranty. Devices that need to be replaced for reasons outside of the warranty coverage will be assessed a replacement fee, e.g. lost or stolen devices. For a full list of what is covered under warranty, see [Surface warranty options](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty).</span></span>
+- <span data-ttu-id="4f5f8-123">Current: Nordamerika, Kanada (außer Quebec), Vereinigtes Königreich und Australien (nur 24x7x365)</span><span class="sxs-lookup"><span data-stu-id="4f5f8-123">Current: North America, Canada (excluding Quebec), United Kingdom, and Australia only (24x7x365)</span></span> 
+- <span data-ttu-id="4f5f8-124">Englisch ist die einzige unterstützte Sprache für Telefon-und Chat Unterhaltungen mit Kunden.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-124">English is the only supported language for phone and chat conversations with customers</span></span> 
+- <span data-ttu-id="4f5f8-125">Wir arbeiten mit und ersetzen nicht Ihren Unternehmens Helpdesk; Branchenspezifische apps, Netzwerkressourcen usw. werden weiterhin von Ihrem Helpdesk bearbeitet.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-125">We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk</span></span> 
+- <span data-ttu-id="4f5f8-126">Microsoft-verwaltete Geräte, die sich in der Testgruppe und nicht von Microsoft verwalteten Desktop-Geräten befinden, liegen außerhalb des Bereichs.</span><span class="sxs-lookup"><span data-stu-id="4f5f8-126">Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope</span></span> 
 
 
-## <a name="related-topics"></a><span data-ttu-id="cd3e9-132">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="cd3e9-132">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="4f5f8-127">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="4f5f8-127">Related topics</span></span>
 
-- [<span data-ttu-id="cd3e9-133">Hier erfahren Sie, wie IT-Administratoren können die Unterstützung erhalten können</span><span class="sxs-lookup"><span data-stu-id="cd3e9-133">Learn how IT administrators can get support</span></span>](../working-with-managed-desktop/admin-support.md)
-- [<span data-ttu-id="cd3e9-134">Hier erfahren Sie, wie Endbenutzer Unterstützung erhalten können</span><span class="sxs-lookup"><span data-stu-id="cd3e9-134">Learn how end users can get support</span></span>](../working-with-managed-desktop/end-user-support.md)
+- [<span data-ttu-id="4f5f8-128">Informationen zur Unterstützung von IT-Administratoren</span><span class="sxs-lookup"><span data-stu-id="4f5f8-128">Learn how IT administrators can get support</span></span>](../working-with-managed-desktop/admin-support.md)
+- [<span data-ttu-id="4f5f8-129">Informationen zur Unterstützung von Endbenutzern</span><span class="sxs-lookup"><span data-stu-id="4f5f8-129">Learn how end users can get support</span></span>](../working-with-managed-desktop/end-user-support.md)
