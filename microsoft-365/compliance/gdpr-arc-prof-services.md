@@ -2,20 +2,20 @@
 title: Prüfliste für Microsoft-Support und Dienstleistungen zu den Verantwortlichkeiten für die DSGVO
 description: Ermöglicht den bequemen Zugriff auf Informationen, die Sie bei Verwendung von Microsoft-Support und Dienstleistungen zur Unterstützung der DSGVO unter Umständen benötigen.
 keywords: Prüflisten zu den Verantwortlichkeiten, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 95af57f0029fe22803179076bc05feaafa277fa5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bbdb806648c1f5a438e07b9092a7b432ab0ed81d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286496"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Prüfliste für Microsoft-Support und Dienstleistungen zu den Verantwortlichkeiten für die DSGVO
 
@@ -25,8 +25,6 @@ ms.locfileid: "26868232"
 Diese Prüfliste zu den Verantwortlichkeiten ist eine bequeme Möglichkeit, um auf Informationen zuzugreifen, die Sie bei Verwendung von Microsoft-Support und Dienstleistungen zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste ist basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut (*gemäß ISO/IEC CD 27552 Information technology – Security techniques – Enhancement to ISO/IEC 27001 for privacy management – Requirements*).
 
 Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen Steuerelemente zu organisieren, die Microsoft Professional Services zur Unterstützung der DSGVO implementiert, die Sie hier herunterladen können: https://servicetrust.microsoft.com/ViewPage/TrustDocuments.
-
-Eine Kopie des vollständigen Entwurfs des ISO-Standards finden Sie unter *https://shop.bsigroup.com/ProductDetail?pid=000000000030372571*.
 
 <br>
 
@@ -154,24 +152,20 @@ Eine Kopie des vollständigen Entwurfs des ISO-Standards finden Sie unter *https
 | **ID**                | **Beschreibung**                                                                                            | **URL**                                                                                                                                                                                                               |
 | 1 <a name="1"> </a>   | ***Microsoft Professional Services – Nachtrag zum Datenschutz***                                             | (<http://aka.ms/professionalservicesdpa>)                                                                                                                                                                             |
 | 2 <a name="2"> </a>   | ***Microsoft Professional Services-Sicherheitsdokumentation im Microsoft Trust Center***                     | <https://www.microsoft.com/TrustCenter/professional-services-security>                                                                                                                                                |
-| 3 <a name="3"> </a>   | ***Beschreibung des Schulungs- und Bewusstseinsprogramms***                                                           | Auf Anfrage über das Kontoverwaltungsteam des Kunden verfügbar.<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                       |
-| 4 <a name="4"> </a>   | ***Microsoft Azure-Datensicherheit*** (Datenbereinigung und -lecks)                                            | <https://blogs.msdn.microsoft.com/walterm/2014/09/04/microsoft-azure-data-security-data-cleansing-and-leakage/>                                                                                                       |
-| 5 <a name="5"> </a>   | ***5. Steuerelementsatz von Microsoft Professional Services für die DSGVO***                                                 | Herunterladbar über den Compliance-Manager im Microsoft Service Trust Portal unter <https://aka.ms/GDPRControls> oder über den Compliance-Manager https://servicetrust.microsoft.com/ComplianceManager                                |
-| 6 <a name="6"> </a>   | ***Dokumentation zur Verwaltung der Geschäftskontinuität in Microsoft Enterprise***                                    | Auf Anfrage über das Kontoverwaltungsteam des Kunden verfügbar.<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                       |
-| 7 <a name="7"> </a>   | ***Wer unter welchen Umständen auf Ihre Kundendaten zugreifen kann***                                                           | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
-| 8 <a name="8"> </a>   | ***Datensubjektanforderungen von Microsoft Professional Services für die DSGVO***                                   | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services>                                                                                                                                          |
-| 9 <a name="9"> </a>   | ***Microsoft Professional Services und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO***                               | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services>                                                                                                             |
-| 10 <a name="10"> </a> | ***Wichtige Informationen aus Microsoft Professional Services für die Datenschutz-Folgenabschätzung in Bezug auf Kundendaten*** | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services>                                                                                                                                         |
-| 11 <a name="11"> </a> | ***ISO 27001 Überwachungsbericht***<br>                                                                           |                                                                                                                                                                                                                       |
-|                       | Zertifizierungsbericht                                                                                       | <https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002> |
-|                       | Überwachungsbericht                                                                                               | Auf Anfrage über das technische Kontoverwaltungsteam des Kunden verfügbar.<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                             |
-| 12 <a name="12"> </a> | ***Microsoft Professional Services ISO/IEC 27001:2013 ISMS Statement of Applicability***                   | Auf Anfrage über das Kontoverwaltungsteam des Kunden verfügbar.<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                              |
-| 13 <a name="13"> </a> | ***Microsoft Trust Center – Complianceangebote***                                                          | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
-| 14 <a name="14"> </a> | ***Microsoft DPO Information***                                                                            | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer>                                                                                                                                    |
+| 3 <a name="3"> </a>   | ***Beschreibung des Schulungs- und Bewusstseinsprogramms***                                                           | Auf Anfrage über das Kontoverwaltungsteam des Kunden verfügbar.|                                                                                                    |
+| 4 <a name="4"> </a>   | ***Steuerelementsatz von Microsoft Professional Services für die DSGVO***                                                 | Herunterladbar über den Compliance-Manager im Microsoft Service Trust Portal unter <https://aka.ms/GDPRControls> oder über den Compliance-Manager https://servicetrust.microsoft.com/ComplianceManager                                |
+| 5 <a name="5"> </a>   | ***Dokumentation zur Verwaltung der Geschäftskontinuität in Microsoft Enterprise***                                    | Auf Anfrage über das Kontoverwaltungsteam des Kunden verfügbar.                                                                     |
+| 6 <a name="6"> </a>   | ***Wer unter welchen Umständen auf Ihre Kundendaten zugreifen kann***                                                           | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
+| 7 <a name="7"> </a>   | ***Datensubjektanforderungen von Microsoft Professional Services für die DSGVO***                                   | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services>                                                                                                                                          |
+| 8 <a name="8"> </a>   | ***Microsoft Professional Services und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO***                               | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services>                                                                                                             |
+|  9 <a name="9"> </a> | ***Wichtige Informationen aus Microsoft Professional Services für die Datenschutz-Folgenabschätzung in Bezug auf Kundendaten*** | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services>                                                                                                                                         |
+| 10 <a name="10"> </a> | ***ISO 27001 Überwachungsbericht***                                                                              |   <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>                                                                                                                                            |
+| 11 <a name="11"> </a> | ***Microsoft Professional Services ISO/IEC 27001:2013 ISMS Statement of Applicability***                   | SOA auf Anfrage über das Kontoverwaltungsteam des Kunden verfügbar.|
+| 12 <a name="12"> </a> | ***Microsoft Trust Center – Complianceangebote***                                                          | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
+| 13 <a name="13"> </a> | ***Microsoft DPO Information***                                                                            | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer>                                                                                                                                    |
 |                       |                                                                                                            |                                                                                                                                                                                                                       |
 
 ## <a name="learn-more"></a>Weitere Informationen
 
 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
-[Vertrauensstellungsportal (STP)](https://aka.ms/gdprgetstarted)
