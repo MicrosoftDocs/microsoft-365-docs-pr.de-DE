@@ -3,20 +3,20 @@ title: DPIA für Dynamics für die DSGVO
 description: Stellt den Datenverantwortlichen Informationen über Dynamics 365 bereit, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgeabschätzung erforderlich ist, und welche Informationen sie enthalten soll.
 keywords: DPIA, Microsoft 365, Dynamics 365, Microsoft 365-Dokumentation, DSGVO
 robots: NOINDEX,NOFOLLOW
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 467c14bbad32225d2ddfc7a4159aebd782106ebc
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5331577675571d07225b7f934ed92bcc8d0123be
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286506"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Dynamics 365 verwenden
 
