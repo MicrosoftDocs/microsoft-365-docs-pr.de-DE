@@ -8,18 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von Microsoft Teams in Microsoft 365 Enterprise in Ihrem Unternehmen.
-ms.openlocfilehash: 25329c7024f267983a83c4e719f18df6ad613bf5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291659"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
+
+*Diese Workload ist in den Versionen E3 und E5 von Microsoft 365 Enterprise enthalten.*
 
 In Microsoft Teams werden Chats, Konferenzen, Dokumentfreigabe und Diskussionsthreads derart kombiniert, dass das Erstellen und Freigeben von Inhalten über Gruppen hinweg erleichtert wird. Teams ermöglicht Teamarbeit und Zusammenarbeit für Microsoft 365 Enterprise und ist ein Schlüsselelement für den Ansatz „Built for Teamwork“ von Microsoft 365. Wenn Sie noch nicht mit Teams vertraut sind, lesen Sie die Informationen unter [Übersicht über Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
  
@@ -27,9 +29,7 @@ Wenn Sie derzeit Skype for Business verwenden, wird Sie interessieren, dass wir 
 
 Die folgenden Phasen und Schritte führen Sie durch den Prozess der Betrachtung der Rolle von Teams in Ihrer Organisation, des Onboardings Ihrer Organisation in Teams über eine Reihe progressiver Einführungen sowie die Förderung der Nutzung von Teams und dessen Wert für Ihre Endbenutzer. 
 
->[!Note]
->Diese Bereitstellungsanweisungen sollten erst nach Abschluss der [Fundamentinfrastruktur](deploy-foundation-infrastructure.md) für Microsoft 365 Enterprise befolgt werden.
->
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die richtigen [Foundation-Infrastruktur](deploy-foundation-infrastructure.md)-Phasen konfiguriert haben, sodass Ihren Teams die erforderlichen Sicherheitsfunktionen zur Verfügung stehen.
 
 ## <a name="phase-1-envision"></a>Phase 1: Betrachten
 
@@ -45,7 +45,7 @@ Diese drei Gruppen stellen sicher, dass Ihre Teams-Bereitstellung Aspekte umfass
 Eine Liste von Personen, die die unternehmerischen und technischen Aspekte sowie die Endbenutzer Ihrer Organisation darstellen.
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Schritt 2: Ermitteln und Priorisieren Ihrer Teams-Geschäftsszenarien
-Teams kann für unterschiedliche Zwecke verwendet werden. Sie müssen herausfinden, welcher Zweck Ihren Geschäftsanforderungen auf den unterschiedlichen Ebenen Ihrer Organisation, Ihren Unternehmensgruppen, Abteilungen und einzelnen Arbeits- und Projektteams entspricht. Beispiele, mit denen Sie Teams-Szenarios definieren können, finden Sie unter [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success). 
+Teams kann für unterschiedliche Zwecke verwendet werden. Sie müssen herausfinden, welcher Zweck Ihren Geschäftsanforderungen auf den unterschiedlichen Ebenen Ihrer Organisation, Ihren Unternehmensgruppen, Abteilungen und einzelnen Arbeits- und Projektteams entspricht. Beispiele, mit denen Sie Teams-Szenarios definieren können, finden Sie unter [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1). 
 
 Teams sollte für sich schnell entwickelnde und stark vernetzte Teams verwendet eingesetzt werden, die eng zusammen arbeiten und viel mehr Funktionen benötigen als nur E-Mail mit Exchange Online liefern kann. Beispiele sind Live-Gruppenchats mit einen aufgezeichneten Verlauf und ein allgemeiner und leicht auffindbarer Ort zum Speichern von Dateien und Notizen. 
 

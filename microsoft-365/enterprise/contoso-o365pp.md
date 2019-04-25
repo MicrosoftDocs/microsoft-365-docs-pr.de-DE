@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso System Center Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
-ms.openlocfilehash: 5b98f72561d7a431a4ca4a0b0241c6105c87026f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283548"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Office 365 ProPlus-Bereitstellung für Contoso
 
@@ -71,7 +71,7 @@ Um die Bereitstellung von Office abzuschließen, hat Contoso den folgenden Proze
 7. Das Unternehmen stellte in Configuration Manager die Windows- und Office-Pakete für Verteilungspunkte im Netzwerk bereit und führte anschließend die Bereitstellung-Aufgabensequenzen von Configuration Manager durch, um die Office 365 ProPlus-Pakete für den Piloten in der Pilotgruppe bereitzustellen.
 8. Nachdem Kompatibilitätsprobleme mit der Pilotgruppe behandelt wurden, führte Contoso die Aufgabensequenzen zum Bereitstellen des Office 365 ProPlus-Pakets für die allgemeine Gruppe aus.
 
-Da Contoso sich dafür entschieden hatte, Geräte automatisch über die Cloud zu aktualisieren, musste dieser Vorgang nicht in Configuration Manager verwaltet werden. Die Geräte werden direkt automatisch über die Cloud aktualisiert, basierend auf dem Kanal, der im Rahmen der anfänglichen Bereitstellung definiert wurde. 
+Da sich Contoso entschlossen hat, Geräte automatisch aus der Cloud zu aktualisieren, war es nicht erforderlich, den Prozess im Configuration Manager zu verwalten. Die Geräte werden direkt automatisch direkt aus der Cloud und basierend auf dem Updatekanal, den Sie als Teil der ersten Bereitstellung definieren, aktualisiert. 
 
 ## <a name="next-step"></a>Nächster Schritt
 

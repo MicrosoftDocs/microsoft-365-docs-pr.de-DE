@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Dateien und Einstellungen von Benutzern migrieren.
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291733"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Schritt 4: Migration von Benutzerdateien und -einstellungen
 
@@ -29,14 +29,14 @@ Das Verschieben der Dateien und Einstellungen der Benutzer auf die neuen oder ak
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
-<td><p><strong>Schritt 4: Benutzerdateien und -einstellungen</strong></p>
+<td><p><strong>Schritt 4: Benutzerdateien und Einstellungen</strong></p>
 <p>Wenn Computer aktualisiert oder ersetzt werden, können Sie Zeit sparen, indem Sie das Sichern und Wiederherstellen des Benutzerstatus automatisieren. Mit neuen Optionen für die Synchronisierung von Clouddateien können Sie die Synchronisierung von Desktop-, Dokument- und Bildordnern mit OneDrive pro Benutzer erzwingen, sodass ein nahtloser Dateizugriff von neuen Windows-Installationen aus gewährleistet ist.</p></td>
 <td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Obwohl Sie die bisher von Ihnen verwendeten Migrationsprozesse auch weiterhin verwenden können, empfehlen wir Ihnen beim Übergang zu Office 365 ProPlus, das Verfahren zum Verschieben von bekannten Ordnern in OneDrive zu verwenden (siehe unten). Um den vollständigen Prozess für die Desktopbereitstellung zu sehen, besuchen Sie das [Bereitstellungscenter für modernen Desktop](https://aka.ms/HowToShift).
+>Obwohl Sie die bisher von Ihnen verwendeten Migrationsprozesse auch weiterhin verwenden können, empfehlen wir Ihnen beim Übergang zu Office 365 ProPlus, das Verfahren zum Verschieben von bekannten Ordnern in OneDrive zu verwenden (siehe unten). Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
 >
 
 Eine der schwierigsten und häufig hochgradig manuellen Aufgaben einer umfangreichen Bereitstellung ist das Übertragen der Dateien und Einstellungen Ihrer Benutzer. In diesem Artikel werden die verfügbaren Optionen zum Migrieren von Benutzern auf neue, aktualisierte und mit neuen Images versehene PCs behandelt.

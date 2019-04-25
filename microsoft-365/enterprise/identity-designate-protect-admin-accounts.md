@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 2: Schützen von globalen Administratorkonten'
+title: 'Schritt 2: Sichern Ihrer privilegierten Identitäten'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,24 +9,27 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und konfigurieren Sie Ihre Administratorkonten für maximalen Schutz.
-ms.openlocfilehash: ccab7c8526817ee5140a5315c56f6f8a42f085d2
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b4a8d01cdf71e30139fa448813a3ff7c43855c7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285158"
 ---
-# <a name="step-2-protect-global-administrator-accounts"></a>Schritt 2: Schützen von globalen Administratorkonten
-
-*Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+# <a name="step-2-secure-your-privileged-identities"></a>Schritt 2: Sichern Ihrer privilegierten Identitäten
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In diesem Schritt verhindern Sie digitale Angriffe auf Ihre Organisation, indem Sie sicherstellen, dass Ihre Administratorkonten so sicher wie möglich sind. Dazu müssen Sie Folgendes tun:
+<a name="identity-global-admin"></a>
+## <a name="protect-global-administrator-accounts"></a>Schützen von globalen Administratorkonten
+
+*Dies ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+
+In diesem Abschnitt verhindern Sie digitale Angriffe auf Ihre Organisation, indem Sie sicherstellen, dass Ihre Administratorkonten so sicher wie möglich sind. Dazu müssen Sie Folgendes tun:
 
 - Erstellen Sie dedizierte globale Administratorkonten mit sehr [starken Kennwörtern](https://support.microsoft.com//help/4026406/microsoft-account-create-a-strong-password), und verwenden Sie sie nur bei Bedarf.
 - Führen Sie tägliche Verwaltungsaufgaben aus, indem Sie bestimmte Administratorrollen, z. B. Exchange-Administrator oder Kennwortadministrator, zu Benutzerkonten von IT-Personal nach Bedarf zuweisen.
@@ -34,7 +37,7 @@ In diesem Schritt verhindern Sie digitale Angriffe auf Ihre Organisation, indem 
 Für Ihre dedizierten globalen Administratorkonten müssen Sie außerdem Folgendes tun:
 
 1. Testen Sie Einstellungen für Konto oder bedingte zugriffsbasierte Multi-Factor Authentication (MFA) pro Benutzer mit einem Testbenutzerkonto, um sicherzustellen, dass MFA korrekt und vorhersehbar arbeitet. Die MFA erfordert eine sekundäre Authentifizierung, wie einen an ein Smartphone gesendeten Verifizierungscode.
-2. Konfigurieren Sie die MFA für jedes der dedizierten globalen Office 365-Administratorkonten, und verwenden Sie die stärkste Form der sekundären Authentifizierung, die in Ihrer Organisation verfügbar ist. Unter [Multi-Factor Authentication](identity-multi-factor-authentication.md) finden Sie weitere Informationen.
+2. Konfigurieren Sie die MFA für jedes der dedizierten globalen Office 365-Administratorkonten, und verwenden Sie die stärkste Form der sekundären Authentifizierung, die in Ihrer Organisation verfügbar ist. Unter [Multi-Factor Authentication](identity-multi-factor-authentication.md#identity-mfa) finden Sie weitere Informationen.
 2. Verwenden Sie eine bedingte Zugriffsrichtlinie, damit MFA für globalen Administratorkonten erforderlich ist. Weitere Informationen finden Sie unter [Administratorkonten schützen](identity-access-prerequisites.md#protecting-administrator-accounts).
 4. Verwenden Sie eine Office 365 Cloud App Security-Richtlinie, um die Aktivität globaler Administratorkonten zu überwachen. Unter [Erhöhte Sicherheit für Office 365 konfigurieren](infoprotect-configure-increased-security-office-365.md) finden Sie weitere Informationen.
 
@@ -43,27 +46,46 @@ Unter [Schützen Ihrer globalen Office 365-Administratorkonten](https://docs.mic
 > [!Note]
 > Organisationen sollten reine Cloud-Identitäten verwenden, um privilegierte Konten, z. B. globale Administratoren, für Break-Glass-Szenarien in Notfällen (wie Cyberangriff) zu erstellen. Weitere Informationen finden Sie unter [Administrativen Konten für den Notfallzugriff in Azure AD verwalten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
 
-Die Ergebnisse dieses Schritts sind:
+Die Ergebnisse dieses Abschnitts sind:
 
-- Die einzigen Benutzerkonten in Ihrem Abonnement, die über die Rolle des globalen Administrators verfügen, sind der neue Satz der dedizierten globalen Administratorkonten. Überprüfen Sie dies mit dem folgenden Windows Azure AD V2 PowerShell-Befehl: 
+- Die einzigen Benutzerkonten in Ihrem Abonnement, die über die Berechtigungen eines globalen Administrators verfügen, befinden sich im neuen Satz der dedizierten Konten für globale Administratoren. Verifizieren Sie dies mit dem folgenden Azure Active Directory PowerShell für Graph-Befehl: 
   ```
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - Alle anderen normalen Benutzerkonten für die Verwaltung Ihres Abonnements verfügen über Administratorrollen, die ihren beruflichen Zuständigkeiten zugewiesen sind.
 
 > [!Note]
-> Anweisungen zum Installieren des Azure AD V2 PowerShell-Moduls und zum Anmelden finden Sie unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
+> Anweisungen zum Installieren des Azure Active Directory PowerShell-Moduls und zum Anmelden finden Sie unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md) |
 |||
 
-Als Zwischenprüfpunkt können Sie sich die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-global-admin) für diesen Schritt ansehen.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-global-admin) für diesen Abschnitt betrachten.
+
+
+<a name="identity-pim"></a>
+## <a name="set-up-on-demand-global-administrators"></a>Einrichten von globalen Administratoren bei Bedarf
+
+*Dies ist optional und gilt nur für die Versionen E5 von Microsoft 365 Enterprise.*
+
+In diesem Abschnitt richten Sie Azure AD Privileged Identity Management (PIM) ein, um die Zeitspanne zu verringern, in der Ihre globalen Administratorkonten anfällig für Angriffe von böswilligen Benutzern sind. PIM bietet bei Bedarf eine zeitnahe Zuweisung der globalen Administratorrolle.  
+
+Ihre globalen Administratorkonten werden zu berechtigten Administratoren anstelle von dauerhaften Administratoren. Die globale Administratorrolle ist inaktiv, bis eine Person sie benötigt. Sie durchlaufen dann einen Aktivierungsprozess, bei dem die globale Administratorrolle für eine bestimmte Zeitspanne zum globalen Administratorkonto hinzugefügt wird. Wenn der Zeitraum abgelaufen ist, entfernt PIM die globale Administratorrolle vom globalen Administratorkonto.
+
+PIM ist zusammen mit Azure Active Directory Premium P2 erhältlich, das in Microsoft 365 Enterprise E5 enthalten ist. Alternativ können Sie für Ihre globalen Administratorkonten einzelne Azure Active Directory Premium P2-Lizenzen erwerben.
+
+Weitere Informationen zum Aktivieren von Azure PIM für Ihren Azure AD-Mandanten und für globale Administratorkonten finden Sie unter der [Schritte zum Konfigurieren von PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+
+Weitere Informationen zum Entwickeln einer Roadmap, um den privilegierten Zugriff vor Cyberangriffen schützt, finden Sie unter [Schützen des privilegierten Zugriffs für hybride Cloudbereitstellungen in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
+
+Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-pim) für diesen Abschnitt betrachten.
+
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Einrichten von globalen Administratoren bei Bedarf](identity-privileged-identity-management.md) |
+|![](./media/stepnumbers/Step3.png)| [Konfigurieren der Hybrididentität](identity-azure-ad-connect.md) |
 

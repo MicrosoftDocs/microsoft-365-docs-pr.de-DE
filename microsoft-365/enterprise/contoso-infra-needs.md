@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt werden können.
-ms.openlocfilehash: b507d1a44edc0b31b2ac5a3f949ecd8a72913311
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283677"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>IT-Infrastruktur und geschäftliche Anforderungen von Contoso
 
@@ -126,8 +126,8 @@ Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuord
 |  | Mehr Kreativität und Innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sicherheit |  |  |
 |  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit mehrstufiger Authentifizierung (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Informationen zu Bedrohungen in Office 365 <BR> |
-|  | Schutz von Daten | Azure Information Protection (AIP) <BR> Verhinderung von Datenverlust in Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
+|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Untersuchung von und Antwort auf Bedrohungen in Office 365 <BR> |
+|  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust in Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
 |  | Sicherheitsverwaltung | Azure Security Center  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
 |  | Mehr Sicherheit für Telearbeiter und Mobilmitarbeiter | Microsoft Intune |

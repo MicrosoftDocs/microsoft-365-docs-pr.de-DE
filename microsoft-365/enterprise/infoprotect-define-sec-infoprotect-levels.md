@@ -3,22 +3,22 @@ title: 'Schritt 1: Definieren von Sicherheits- und Informationsschutzebenen'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und konfigurieren Sie Sicherheits- und Informationsschutzebenen für Ihre Organisation.
-ms.openlocfilehash: bc55fab7b450685268ae89648ae18292e5494ce8
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 91274ec2bcd4e4472969a7cd65660742daaef5bd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286998"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Schritt 1: Definieren von Sicherheits- und Informationsschutzebenen
 
@@ -26,7 +26,7 @@ ms.locfileid: "26867800"
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-In diesem Schritt definieren Sie die Ebenen von Sicherheit und Schutz für Ihre Organisation. Beispielsweise benötigt Ihre Vertriebsabteilung evtl. nur eine niedrige Sicherheitsebene. Ihre Forschungsabteilung und deren äußerst wertvolles geistiges Eigentum benötigen jedoch evtl. eine hohe Sicherheitsebene, die Dateien verschlüsselt und den Zugriff auf Forschungsmitarbeiter beschränkt.
+In diesem Schritt definieren Sie die Sicherheits- und Schutzebenen für Ihre Organisation. Für die Vertriebsabteilung ist vielleicht nur eine niedrige Sicherheitsstufe erforderlich. Für die Forschungsabteilung und das äußerst wertvolle geistige Eigentum ist aber vielleicht eine hohe Sicherheitsstufe erforderlich, die Dateien verschlüsselt und den Zugriff auf die Forschungsmitarbeiter beschränkt.
 
 Obwohl Sie eigene Sicherheitsebenen definieren können und möglicherweise bereits einige haben, empfiehlt Microsoft, dass Sie beim Entwickeln eines Plans mindestens drei unterschiedliche Ebenen von Sicherheit und Schutz verwenden, die angewendet werden können. Es folgt eine Liste für die ersten Schritte: 
 
@@ -35,8 +35,6 @@ Obwohl Sie eigene Sicherheitsebenen definieren können und möglicherweise berei
 - **Hoch reguliert:** Dies ist die höchste Schutzebene für Organisationen, die in der Regel eine kleine Menge an streng klassifizierten Daten haben (geistiges Eigentum oder Betriebsgeheimnisse) oder Daten haben, die strengen Sicherheitsvorschriften unterliegen. Microsoft 365 Enterprise bietet Funktionen, damit Organisationen diese hohen Sicherheitsanforderungen erfüllen, einschließlich äquivalenter Schutz für Identitäten und Geräte.
 
 Weitere Informationen finden Sie unter [Drei Schutzebenen](microsoft-365-policies-configurations.md#three-tiers-of-protection).
-
-Das Ergebnis ist eine Bestimmung Ihrer Sicherheits- und Informationsschutzebenen.
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step1) für diesen Schritt betrachten.
 

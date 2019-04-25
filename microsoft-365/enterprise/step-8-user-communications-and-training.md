@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand dieser Kommunikation und Schulungen für den modernen Desktop vorbereiten.
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand von Benutzerkommunikation und Schulungen auf Windows 10 und Office 365 ProPlus vorbereiten.
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289913"
 ---
 # <a name="step-8-user-communications-and-training"></a>Schritt 8: Benutzerkommunikation und Schulung
-
-Informieren Sie die Benutzer über den modernen Arbeitsplatz, der Office 365, Windows 10 und neue Sicherheits- sowie Compliance-Steuerungen mit Azure Active Directory und vielem mehr umfasst, und bereiten Sie die Benutzer auf die Verwendung vor.
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,15 +29,15 @@ Informieren Sie die Benutzer über den modernen Arbeitsplatz, der Office 365, Wi
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Schritt 8: Benutzerkommunikation und Schulung</strong></p>
 <p>Stellen Sie sicher, dass Ihre Benutzer über neue Oberflächen und neue Arbeitsmethoden informiert sind, wenn Sie Ihre Computer auf Windows 10 und Office 365 ProPlus umstellen. Erfahren Sie, wie Sie mit Microsoft FastTrack, Schulungsmaterialien und Kommunikationsvorlagen die Akzeptanz beim Endbenutzer beschleunigen können, und lernen Sie neue Möglichkeiten zur Überwachung der Benutzerakzeptanz und -verwendung kennen.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Benutzerkommunikation und Schulung ist der achte Schritt in unserem empfohlenem Bereitstellungsprozess, bei dem Tipps und Empfehlungen zum Informieren und Vorbereiten der Benutzer behandelt werden. Den vollständigen Desktopbereitstellungsprozess finden Sie im [Bereitstellungscenter für modernen Desktop](https://aka.ms/HowToShift).
+>Benutzerkommunikation und Schulung ist der achte Schritt in unserem empfohlenem Bereitstellungsprozess, bei dem Tipps und Empfehlungen zum Informieren und Vorbereiten der Benutzer behandelt werden. Den vollständigen Desktopbereitstellungsprozess finden Sie im [Bereitstellungscenter für Desktop](https://aka.ms/HowToShift).
 >
 
-Hierbei geht es darum, herauszufinden, wie Sie Updates am besten einführen: Einige Benutzer fürchten Auswirkungen auf ihre Produktivität oder Änderungen in ihrem Arbeitsablauf, oder sie müssen neue Dinge lernen.
+Informieren Sie die Benutzer über den modernen Arbeitsplatz, der Office 365, Windows 10 und neue Sicherheits- sowie Compliance-Steuerungen mit Azure Active Directory und vielem mehr umfasst und entscheidend für die Akzeptanz ist. Hierbei geht es darum, herauszufinden, wie Sie Updates am besten einführen: Einige Benutzer fürchten Auswirkungen auf ihre Produktivität oder Änderungen in ihrem Arbeitsablauf, oder sie müssen neue Dinge lernen.
 
 Es gibt jedoch auch eine gute Nachricht: Wenn Sie von Windows 7 und Office 2010 oder Office 2013 umsteigen, kennen viele Benutzer Windows 10 und neuere Versionen von Office bereits von ihren persönlichen Geräten, sodass die Auswirkungen der Änderung oft nicht so gravierend sind, wie befürchtet.
 
@@ -91,7 +89,7 @@ Es ist wichtig, in der anfänglichen Pilotphase engagierte Mitglieder zu haben, 
 
 Sobald Sie ein gutes Gefühl haben, was diese erste Phase angeht, können Sie sich eine größere Anzahl von Benutzern für die zweite Phase, die Pilotphase, vornehmen. Die Benutzer sollten eine repräsentative Mischung aus Benutzerrollen, Gerätetypen, Windows-Apps und Office-Add-Ins sein. Die von diesen Gruppen erhaltenen Daten werden über die Analysefunktionen genutzt, um auf die anfänglichen Wellen der Phase 3, die umfassende Bereitstellung, abzuzielen.
 
-Denken Sie daran, dass alle PCs in dieser Phase und zukünftigen Phasen Protokolle für den Analysedienst bereitstellen, damit Sie Telemetrie zur Geräte- und App-Integrität sowie zur Einsparung von Bandbreite von der Übermittlungsoptimierung und über die Nutzung von Windows Hello erfassen können.
+Denken Sie daran, dass alle PCs in dieser Phase und zukünftigen Phasen Protokolle für den Analysedienst bereitstellen, damit Sie Diagnosedaten zur Geräte- und App-Integrität sowie zur Einsparung von Bandbreite von der Übermittlungsoptimierung und über die Nutzung von Windows Hello erfassen können.
 
 In dieser Phase ist es besonders wichtig, Änderungen an die Benutzer zu kommunizieren und sie dabei zu unterstützen, die neuen Funktionen zu nutzen. Benutzer lesen E-Mails oder andere Kommunikation der IT-Abteilung häufig nicht mit Priorität oder ignorieren sie. Daher ist es hilfreich, sich mit dem Management zu treffen und dessen Unterstützung zu gewinnen, um Änderungen zu kommunizieren und die Akzeptanz neuer Tools und Technologien voranzutreiben.
 
@@ -123,14 +121,14 @@ Bei der Ausweitung des Pilotprojekts müssen Sie häufig gestellte Fragen und Se
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Phase 3 und weiter: Umfassende Produktionsbereitstellung 
 
-Zu dem Zeitpunkt, zu dem Sie die allgemeinen Bereitstellungsphasen erreichen, haben Sie bereits Ihre Prozesse, Kommunikation, Schulungen und Self-Service-Tools überarbeitet. Jetzt können Sie die über Telemetriefunktionen erfassten Daten nutzen, um immer mehr PCs abzuarbeiten.
+Zu dem Zeitpunkt, zu dem Sie die allgemeinen Bereitstellungsphasen erreichen, haben Sie bereits Ihre Prozesse, Kommunikation, Schulungen und Self-Service-Tools überarbeitet. Jetzt können Sie die über Diagnosedaten erfassten Daten nutzen, um immer mehr PCs abzuarbeiten.
 
 Führen Sie die Bereitstellung in dem Maße durch, mit dem Ihre IT-Abteilung, das Helpdesk, die Benutzer und die Netzwerkkapazität zurecht kommen. Sie können auch stets zu Schritt 2 des Bereitstellungsprozesses zurückkehren, um das Netzwerk durch Peer-zu-Peer-Cache, LEDBAT und andere Techniken noch weiter zu optimieren und so eine schnellere Übertragung der Daten im Rahmen der Bereitstellung zu ermöglichen.
 
-Zusätzlich zu den Telemetriedaten, die Sie anhand der Analysewerkzeuge überwachen, können Sie auch die Nutzung von Office 365- und Microsoft 365-Diensten granular überwachen, indem Sie detaillierte Nutzungsberichte nach Arbeitslast im Administrationscenter und die Admin-Dashboards über Power BI verwenden. Diese Tools sind hervorragend geeignet, um Ziele festzulegen und zu verfolgen, während Sie neue Tools für die Zusammenarbeit, wie Microsoft Teams, oder neue Möglichkeiten zum Freigeben von Dateien, wie OneDrive, ausrollen.
+Zusätzlich zu den Diagnosedaten, die Sie über die Analysewerkzeuge überwachen, können Sie auch die Nutzung von Office 365- und Microsoft 365-Diensten anhand von umfangreichen Nutzungsberichten nach Arbeitslast im Admin Center und unter Verwendung der Administratordashboards über Power BI detailliert überwachen. Dies sind hervorragende Tools, um Ziele bei der Einführung neuer Tools für die Zusammenarbeit festzulegen und nachzuverfolgen – z. B. Microsoft Teams – oder neue Methoden zum Freigeben von Dateien – z. B OneDrive.
 
 Der Prozess, bei dem die Benutzer neue Technologien akzeptieren und übernehmen, wird noch lange fortdauern, nachdem auf jedem PC in Ihrer Organisation Windows 10 und Office 365 ProPlus installiert wurden. Und wenn Sie sich nicht die Zeit nehmen, die Benutzer zu informieren und sie zu schulen, werden sie nicht unbedingt ihre Arbeitsweise ändern. Und nun, da die neuen Servicemodelle fortlaufend nach einem halbjährlichen Zeitplan neue Funktionen für Windows und optional monatlich für Office bereitstellen, ist die Kommunikation ein andauernder Prozess.
 
 ## <a name="previous-step"></a>Vorheriger Schritt 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)

@@ -3,61 +3,99 @@ title: Microsoft 365 Enterprise-Foundation-Infrastruktur
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/27/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation.
-ms.openlocfilehash: abc38dc0eb3d33f7af9e2c91f020a735cf0c8d96
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 668775097eeffff569b99cc9fe4cd259f5d25c22
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287117"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
 
-Um die Vorteile von Microsoft 365 Enterprise vollständig nutzen zu können, beginnen Sie die Bereitstellung mit der Foundation-Infrastruktur. 
+Wenn Sie die End-to-End-Bereitstellung von Microsoft 365 Enterprise selbst durchführen, sollten Sie zunächst eine solide Grundlage schaffen, auf der Anwendungen und Dienste Kreativität und Teamarbeit in einer sicheren Umgebung freisetzen können. 
 
-## <a name="foundation-infrastructure-for-deploying-microsoft-365-enterprise"></a>Foundation-Infrastruktur zur Bereitstellung von Microsoft 365 Enterprise
+Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese Phasen verwenden, um die Basisinfrastruktur von Microsoft 365 Enterprise zu planen und bereitzustellen:
 
-Die Foundation-Infrastruktur ist die Grundlage, auf der Sie Produktivitätsarbeitslasten (z. B. Microsoft Teams und Exchange Online in Office 365) und Szenarien (z. B. das Migrieren nach Microsoft 365 und das Automatisieren von Clientupdates) bereitstellen können. Sie bietet intelligente Sicherheit und Integration, die die fortlaufende Verwaltung vereinfacht. Dies stellt sicher, dass Ihre Client-Software mit den neuesten Verbesserungen für Produktivität und Sicherheit aktualisiert wird.
+| | Phase | Ergebnisse |
+|:-------|:-----|:-----|
+|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Netzwerke](networking-infrastructure.md)| Ihr Netzwerk ist für den Zugriff auf die cloudbasiert Dienste von Microsoft 365 optimiert. |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identität](identity-infrastructure.md)| Ihre Admin-Konten sind geschützt, Ihre Benutzer und Gruppen sind synchronisiert, und Ihre Benutzerauthentifizierung ist stark. |
+|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Ihre vorhandenen Windows-basierten Computer können auf Windows 10 Enterprise aktualisiert werden, und neue Geräte sind mit Windows 10 Enterprise ausgestattet. |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Ihre vorhandenen Benutzer von Microsoft Office können ein Upgrade auf Office 365 ProPlus durchführen. |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Verwaltung mobiler Geräte](mobility-infrastructure.md)| Ihre Geräte können registriert und verwaltet werden. |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information Protection](infoprotect-infrastructure.md)| Ihre Bezeichnungen sind bereit, Dokumente zu schützen, und Office 365-Sicherheitsfunktionen sind aktiviert. |
 
-Sie verwenden die folgenden Phasen zum Planen und Bereitstellen der Foundation-Infrastruktur von Microsoft 365 Enterprise in Ihrer Organisation:
+Die Phasen beginnen mit den grundlegendsten Elementen (Netzwerk und Identität), und erstellen dann Schichten von Infrastruktur-Einstellungen und Gruppen zu:
 
-|||
-|:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Netzwerke](networking-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identität](identity-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Verwaltung mobiler Geräte](mobility-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Schutz von Daten](infoprotect-infrastructure.md)|
+- Installieren Sie die aktuellste und sicherste Version von Windows auf Ihren Geräten.
+- Installieren Sie die aktuellste Version von Office auf Ihren Geräten.
+- Verwalten Sie die Geräte Ihrer Organisation.
+- Schützen Sie die Informationen auf diesen Geräten und in der Cloud.
 
+Sie haben jedoch die Flexibilität, die Phasen oder Schritte innerhalb der Phasen zu konfigurieren und bereitzustellen, um sie Ihren IT-Ressourcen und Geschäftsanforderungen anzupassen.
 
-Bevor Sie die einzelnen Phasen beenden können, müssen Sie deren Beendigungskriterien untersuchen, bei denen es sich um eine Reihe von erforderlichen Bedingungen handelt, die Sie erfüllen müssen, und optionale zu berücksichtigende Kriterien. Beendigungskriterien für die einzelnen Phasen stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die resultierende End-to-End-Konfiguration die Anforderungen für eine Bereitstellung von Microsoft 365 Enterprise erfüllen.
+- **Wenn Sie eine kleinere oder neueren Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen.
 
-Sehen Sie sich dieses kurze Video zur Funktionsweise der Foundation-Infrastrukturinhalte an.
+-  **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
+
+Am Ende jeder Phase sollten Sie die Beendigungskriterien prüfen, einschließlich der erforderlichen Bedingungen, die Sie erfüllen müssen, und der optionalen Bedingungen, die Sie berücksichtigen müssen. Die Beendigungskriterien für jede Phase stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die daraus resultierende End-to-End-Konfiguration die Anforderungen für eine Microsoft 365 Enterprise Bereitstellung erfüllen.
+
+Um zu erfahren, wie der Inhalt strukturiert ist, schauen Sie sich dieses kurze Video an.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-Die folgende Abbildung zeigt die Foundation-Infrastruktur im gesamten Inhalt der Microsoft 365 Enterprise-Bereitstellung und den Pfad.
+Hier ist die Foundation-Infrastruktur im gesamten Microsoft 365 Enterprise Bereitstellungshandbuch:
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
-## <a name="fasttrack"></a>FastTrack
+## <a name="infrastructure-configuration-vs-user-rollout"></a>Konfiguration der Infrastruktur vs. Benutzer-Rollout
 
-FastTrack (verfügbar im Rahmen Ihres Abonnements) bietet einen fortlaufenden und wiederholbaren Vorteil: Microsoft Techniker unterstützen Sie beim Wechsel zur Cloud in Ihrem eigenen Tempo. FastTrack ermöglicht Ihnen auch Zugriff auf qualifizierte Partner für zusätzliche Dienste, wenn diese erforderlich sind. Mit aktuell mehr als 40.000 Kunden unterstützt FastTrack Sie bei der Maximierung des ROI, der Beschleunigung der Bereitstellung und der Steigerung des Einsatzes in Ihrer Organisation. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365). 
+Die Foundation-Infrastruktur besteht aus einer Reihe von konfigurierter Software und Diensten, die wenn kombiniert, es einem Benutzer ermöglichen, das gesamte Spektrum der Funktionen und Schutzmaßnahmen von Microsoft 365 Enterprise zu nutzen. Das ultimative Ziel Ihrer End-to-End-Bereitstellung ist es, dass diese Infrastruktur für alle Ihre Benutzer und deren Windows-basierte Geräte verfügbar ist. 
 
-Wenn Sie von FastTrack für die Bereitstellung von Microsoft 365 Enterprise profitieren möchten, können Sie den FastTrack [Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) für Anleitung zum Bereitstellen und Einrichten Ihrer Foundation-Infrastruktur verwenden. Sie müssen als globaler Administrator in einem Office 365- oder Microsoft 365-Mandanten angemeldet sein, um auf diese Seite zuzugreifen.
+Es ist jedoch wichtig zu beachten, dass die Microsoft 365 Enterprise Foundation-Infrastruktur unabhängig vom Rollout von Software und Diensten für Ihre Benutzer ist. ***Sie können die Schichten der Foundation-Infrastruktur konfigurieren, ohne diese Schichten für alle Ihre Benutzer bereitstellen zu müssen.***
+
+Daher ist es möglich, Elemente der Foundation-Infrastruktur weit vor dem Rollout dieser Elemente für die Vielzahl Ihrer Benutzer in den Büros, Regionen oder Abteilungen Ihrer Organisation zu konfigurieren und zu testen.
+
+Beispielsweise erstellen Sie die Einstellungen für:
+
+| Phase | Ergebnisse |
+|:-------|:-----|
+| Identität | Kontosynchronisierung und Gruppen für identitätsbasierte Richtlinien für bedingten Zugriff. |
+| Windows 10 Enterprise | Gruppen, die automatisch Computer mit Windows 7 oder Windows 8.1 auf Windows 10 Enterprise aktualisieren. |
+| Office 365 ProPlus | Gruppen, die Office 365 ProPlus automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitstellen. |
+| Verwaltung mobiler Geräte | Gruppen für Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
+| Information Protection | Office 365 und Azure Information Protection Bezeichnungen und Gruppen. |
+
+Wenn Sie bereit sind, Elemente dieser Infrastruktur für Benutzer bereitzustellen, können Sie:
+
+| Phase | Rollouts Aktion |
+|:-------|:-----|
+| Identität | Hinzufügen von Benutzerkonten zu den Gruppen für identitätsbasierte Richtlinien für bedingten Zugriff. |
+| Windows 10 Enterprise | Hinzufügen von Konten zu den Gruppen, um Windows 10 Enterprise automatisch für Benutzer mit Windows 7 oder Windows 8.1 bereitzustellen. |
+| Office 365 ProPlus | Hinzufügen von Benutzerkonten zu den Gruppen, um Office 365 ProPlus automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitzustellen. |
+| Verwaltung mobiler Geräte | Hinzufügen von Konten zu den Gruppen für die Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
+| Information Protection | Hinzufügen von Benutzerkonten zu den Gruppen für Information Protection Bezeichnungen. |
+
+Sobald die Foundation-Infrastruktur fertiggestellt, getestet und erprobt ist, können Sie installierte Software, wie Windows 10 Enterprise und Office 365 ProPlus, sowie Cloud-basierte Dienste und Schutzmaßnahmen, wie Geräteregistrierung und Richtlinien für bedingten Zugriff, an Ihre Benutzer so bereitstellen, wie es Ihren Unternehmenszielen und IT-Ressourcen am besten entspricht.
+
+## <a name="deployment-and-project-management-strategies"></a>Bereitstellungs- und Projektmanagement-Strategien
+
+Um Ihnen einige Ideen zu geben, wie Sie das Projektmanagement der verschiedenen Phasen der Foundation-Infrastruktur für Erstanwender und den Rest Ihrer Organisation angehen können, siehe[Bereitstellungsstrategien](deployment-strategies-microsoft-365-enterprise.md). 
+
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn eine Infrastruktur für Office 365, Enterprise Mobility + Security oder Windows 10 Enterprise vorhanden ist, informieren Sie sich unter [Bereitstellung von Microsoft 365 Enterprise mit der vorhandenen Infrastruktur](deploy-with-existing-infrastructure.md). Dieser Artikel leitet Sie durch die Beendigungskriterien für jede Phase. Mit diesen Informationen können Sie schneller bestimmen, was Sie ändern müssen, um Ihre IT-Infrastruktur mit Microsoft 365 Enterprise kompatibel zu machen.
-
-Andernfalls können Sie Ihre End-to-End-Bereitstellung von Microsoft 365 Enterprise mit [Phase 1: Netzwerke](networking-infrastructure.md) beginnen.
+- Ich verfüge über eine bestehende Infrastruktur für Office 365, Enterprise Mobility + Security (EMS) oder Windows 10 Enterprise:
+  - Siehe[Bereitstellen mit vorhandener Infrastruktur](deploy-with-existing-infrastructure.md). Dieser Artikel führt Sie durch die Beendigungskriterien für jede Phase.
+- Von Grund auf neu beginnen: 
+   - Beginnen Sie Ihre End-to-End-Bereitstellung mit [Phase 1: Netzwerk](networking-infrastructure.md).

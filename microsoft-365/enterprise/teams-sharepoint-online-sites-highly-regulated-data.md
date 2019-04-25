@@ -3,26 +3,26 @@ title: Microsoft Teams und SharePoint Online-Websites für streng geregelte Date
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint Online-Teamwebsite oder ein Microsoft Teams-Team, um Ihre wertvollsten und vertraulichen digitalen Objekte zu speichern.
-ms.openlocfilehash: fa1a57d898e4822d0c96d6eb807d0a14a815e29a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289806"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams und SharePoint Online-Websites für streng geregelte Daten
 
-**Zusammenfassung:** Erstellen Sie eine sichere SharePoint Online-Teamwebsite oder ein Microsoft Teams-Team, um Ihre wertvollsten und vertraulichen digitalen Objekte zu speichern.
+*Dieses Szenario gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
 Microsoft 365 Enterprise umfasst eine vollständige Suite cloudbasierter Dienste, damit Sie streng geregelte Daten erstellen, speichern und schützen können. Dazu gehören folgende Daten:
 
@@ -33,10 +33,10 @@ Für eine cloudbasierte Microsoft 365 Enterprise-Lösung, die diese Geschäftsan
 
 - Digitale Objekte (Dokumente, Foliengruppen, Kalkulationstabellen usw.) in einer SharePoint Online-Teamwebsite oder auf der Registerkarte **Dateien** eines Microsoft Teams-Teams speichern.
 - Die Website oder das Team sperren, um Folgendes zu verhindern:
-   - Zugriff auf alles, mit Ausnahme einer bestimmten Gruppe von Benutzerkonten über Gruppenmitgliedschaft; dazu gehören Benutzer, die auf die SharePoint Online-Teamwebsite zugreifen können und mit welcher Berechtigungsstufe, und Benutzer, die diese verwalten können.
+   - Nur Zugriff auf eine bestimmte Gruppe von Benutzerkonten über Gruppenmitgliedschaft; dazu gehören Benutzer, die auf die SharePoint Online-Teamwebsite zugreifen können und mit welcher Berechtigungsstufe, und Benutzer, die diese verwalten können.
    - Dass Mitglieder der Website anderen Personen Zugriff gewähren.
    - Dass Nicht-Mitglieder der Website Zugriff auf die Website anfordern.
-- Konfigurieren einer Office 365-Bezeichnung für Ihre SharePoint Online-Websites oder Teams als eine Standardmethode, um digitale Objekte auf der Website zu klassifizieren.
+- Office 365-Aufbewahrungsbezeichnung für Ihre SharePoint Online-Websites oder -Teams als Standardmethode zum Definieren von Aufbewahrungsrichtlinien für die Dokumente der Website oder des Teams konfigurieren.
 - Benutzer am Senden von Dateien außerhalb der Organisation hindern.
 - Verschlüsseln Sie diehochgradig vertraulichen digitalen Objekte der Website oder des Teams.
 - Fügen Sie den hochgradig vertraulichen digitalen Objekten Berechtigungen hinzu, sodass für das Öffnen der Ressourcen weiterhin gültige Anmeldeinformationen eines Benutzerkontos mit Berechtigung erforderlich sind, selbst wenn diese außerhalb der Website freigegeben werden.
@@ -48,7 +48,7 @@ In der folgenden Tabelle sind die Anforderungen dieser Lösung einem Feature von
 | **Anforderung** | **Microsoft 365 Enterprise-Feature** |
 | Digitale Objekte speichern | SharePoint Online-Teamwebsites und Teams in Office 365 |
 | Die Website sperren | Azure AD-Gruppen und SharePoint Online-Teamwebsiteberechtigungen |
-| Digitale Objekte der Website kennzeichnen | Office 365-Bezeichnungen |
+| Digitale Objekte der Website kennzeichnen | Office 365-Aufbewahrungsbezeichnungen |
 | Verhindern, dass Benutzer Dateien außerhalb der Organisation senden | Richtlinien zur Verhinderung von Datenverlust in Office 365 |
 | Verschlüsseln aller digitalen Objekte der Website | Azure Information Protection-Unterbezeichnungen in Enterprise Mobility + Security (EMS) |
 | Berechtigungen zu den digitalen Objekten der Website hinzufügen | Azure Information Protection-Unterbezeichnungen in EMS |
@@ -56,7 +56,7 @@ In der folgenden Tabelle sind die Anforderungen dieser Lösung einem Feature von
 
 Diese Lösung erfordert, dass Sie Folgendes bereits bereitgestellt haben:
 
-- Die [Foundation-Infrastruktur](deploy-foundation-infrastructure.md). 
+- Die Phase [Identität](identity-infrastructure.md) und die Schritte 1 und 2 der Phase [Informationsschutz](infoprotect-infrastructure.md) der Foundation-Infrastruktur. 
 - Für streng geregelte Daten in SharePoint Online-Teamwebsites [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - Für streng geregelte Daten in Microsoft Teams-Teams [Microsoft Teams](teams-workload.md).
 
@@ -80,7 +80,7 @@ Dieser Zweck unterstützt die Ermittlung wichtiger Konfigurationselemente, z. B.
 
 - Die Gruppe von SharePoint Online-Berechtigungssätzen und SharePoint-Gruppen
 - Die Gruppe von Zugriffsgruppen, die Azure AD-Sicherheitsgruppen und deren Mitglieder, die zu SharePoint-Gruppen hinzugefügt werden sollen
-- Die Office 365-Bezeichnung, die der Website zugewiesen werden soll, und die Gruppe von DLP-Richtlinien für die Bezeichnung
+- Office 365-Aufbewahrungsbezeichnung, die der Website zugewiesen werden soll, und die Gruppe von DLP-Richtlinien für die Bezeichnung
 - Die Einstellungen für eine Azure Information Protection-Unterbezeichnung, die Benutzer auf hochgradig vertrauliche digitale Objekte anwenden, die in der Website gespeichert sind
 
 Nach der Ermittlung werden diese Einstellungen zur Konfiguration der Website in Phase 2 verwendet. 
@@ -98,17 +98,17 @@ Die Sicherheit von SharePoint Online-Teamwebsites, die streng geregelte Objekte 
 
 Unter [Entwerfen einer isolierten SharePoint Online-Teamwebsite](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site) finden Sie weitere Informationen zum Bestimmen der Gruppe von Berechtigungsstufen, SharePoint-Gruppen, Zugriffsgruppen und Gruppenmitgliedern.
 
-### <a name="step-2-office-365-labels-and-dlp-policies"></a>Schritt 2: Office 365-Bezeichnungen und DLP-Richtlinien
+### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>Schritt 2: Office 365-Aufbewahrungsbezeichnungen und DLP-Richtlinien
 
-Wenn Office 365-Bezeichnungen auf eine SharePoint Online-Teamwebsite angewendet werden, bieten diese eine Standardmethode zum Klassifizieren aller digitalen Objekte, die auf der Website gespeichert sind.
+Wenn Office 365-Aufbewahrungsbezeichnungen auf eine SharePoint Online-Teamwebsite angewendet werden, bieten diese eine Standardmethode zum Klassifizieren aller digitalen Objekte, die auf der Website gespeichert sind.
  
-Für SharePoint Online-Websites für streng geregelte Daten müssen Sie ermitteln, welche Office 365-Bezeichnung verwendet werden soll.
+Für SharePoint Online-Websites für streng geregelte Daten müssen Sie ermitteln, welche Office 365-Aufbewahrungsbezeichnung verwendet werden soll.
 
-Die Entwurfsaspekte für Office 365-Bezeichnungen finden Sie unter [Office 365-Klassifizierung und -Bezeichnungen](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels).
+Die Entwurfsaspekte für Office 365-Bezeichnungen finden Sie unter [Office 365-Klassifizierung und -Bezeichnungen](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Um vertrauliche Informationen zu schützen und ihre versehentliche oder absichtliche Veröffentlichung zu verhindern, verwenden Sie die DLP-Richtlinien. Weitere Informationen finden Sie in dieser [Übersicht](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-Für SharePoint Online-Websites für streng geregelte Daten müssen Sie eine DLP-Richtlinie für die Office 365-Bezeichnung konfigurieren, die der Website zugewiesen ist, um zu verhindern, dass Benutzer digitale Objekte für externe Benutzer freigeben. 
+Für SharePoint Online-Websites für streng geregelte Daten müssen Sie eine DLP-Richtlinie für die Office 365-Aufbewahrungsbezeichnung konfigurieren, die der Website zugewiesen ist, um zu verhindern, dass Benutzer digitale Objekte für externe Benutzer freigeben. 
 
 ### <a name="step-3-your-azure-information-protection-sub-label"></a>Schritt 3: Azure Information Protection-Unterbezeichnung
 
@@ -118,15 +118,13 @@ Eine Unterbezeichnung ist unter einer vorhandenen Bezeichnung vorhanden. Sie kö
 
 Die Einstellungen der angewendeten Unterbezeichnung werden mit dem Objekt verschoben. Nur authentifizierte Benutzerkonten mit entsprechenden Berechtigungen können es öffnen, selbst wenn es heruntergeladen und außerhalb der Website freigegeben wird.
 
-Informationen zu den Entwurfsüberlegungen für Azure Information Protection-Bezeichnungen finden Sie unter [Azure Information Protection](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection).
-
 ### <a name="design-results"></a>Entwurfsergebnisse
 
 Sie haben Folgendes bestimmt:
 
 - Die Gruppe von SharePoint-Gruppen und Berechtigungsstufen.
 - Die Gruppe von Zugriffsgruppen und deren Mitglieder für jede Berechtigungsstufe
-- Die entsprechende Office 365-Bezeichnung und die DLP-Richtlinie, die der Bezeichnung zugeordnet ist
+- Die entsprechende Office 365-Aufbewahrungsbezeichnung und die DLP-Richtlinie, die der Bezeichnung zugeordnet ist
 - Die Einstellungen der Azure Information Protection-Unterbezeichnung, die Verschlüsselung und Berechtigungen umfassen
 
 ## <a name="phase-2-configure"></a>Phase 2: Konfigurieren
@@ -140,11 +138,11 @@ Verwenden Sie die Anweisungen unter [Bereitstellen einer isolierten SharePoint O
 - Erstellen Sie die Zugriffsgruppen für jeder auf der Website verwendete SharePoint-Berechtigungsstufe, und füllen Sie diese.
 - Erstellen und Konfigurieren Sie die isolierte Teamwebsite.
 
-### <a name="step-2-configure-the-site-for-an-office-365-label-dlp-policy"></a>Schritt 2: Konfigurieren der Website für eine DLP-Richtlinie für eine Office 365-Bezeichnung
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>Schritt 2: Konfigurieren der Website für eine DLP-Richtlinie für eine Office 365-Aufbewahrungsbezeichnung
 
 Verwenden Sie die Anweisungen unter [Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp), um Folgendes zu tun:
 
-- Identifizieren oder erstellen Sie die Office 365-Bezeichnung, und wenden Sie diese auf Ihre isolierte SharePoint Online-Website an.
+- Identifizieren oder erstellen Sie die Office 365-Aufbewahrungsbezeichnung, und wenden Sie diese auf Ihre isolierte SharePoint Online-Website an.
 - Erstellen und Konfigurieren Sie die DLP-Richtlinie, die verhindert, dass Benutzer ein digitales Objekt auf Ihrer SharePoint Online-Website außerhalb der Organisation freigeben.
 
 ### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>Schritt 3: Erstellen einer Azure Information Protection-Unterbezeichnung für die Website
@@ -173,8 +171,8 @@ Auf der Registerkarte **Dateien** des neuen Teams werden die Inhalte des Ordners
 Sie haben Folgendes konfiguriert:
 
 - Eine isolierte SharePoint Online-Website
-- Eine Office 365-Bezeichnung, die der isolierten SharePoint Online-Website zugewiesen ist
-- Eine DLP-Richtlinie für die Office 365-Bezeichnung
+- Eine Office 365-Aufbewahrungsbezeichnung, die der isolierten SharePoint Online-Website zugewiesen ist
+- Eine DLP-Richtlinie für die Office 365-Aufbewahrungsbezeichnung
 - Eine Azure Information Protection-Unterbezeichnung einer begrenzten Richtlinie, die Benutzer auf die hochgradig vertraulich digitalen Objekte anwenden können, die in der Website gespeichert sind, durch die das Objekt verschlüsselt und Berechtigungen erzwungen werden
 - Bei Bedarf ein Team für stark geregelte Daten auf Grundlage der SharePoint Online-Website
 

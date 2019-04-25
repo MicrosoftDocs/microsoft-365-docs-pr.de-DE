@@ -1,30 +1,33 @@
 ---
-title: 'Schritt 5: Einrichten der mehrstufigen Authentifizierung'
+title: 'Schritt 4: Konfigurieren der sicheren Benutzerauthentifizierung'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 04/17/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren der mehrstufigen Authentifizierung für Benutzerkonten.
-ms.openlocfilehash: a54eb047c94430a2b3f61d06500c929e400e3d82
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 44d878a347e7b01263f9ba3a82f6443f5710dc43
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285466"
 ---
-# <a name="step-5-set-up-multi-factor-authentication"></a>Schritt 5: Einrichten der mehrstufigen Authentifizierung
-
-*Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+# <a name="step-4-configure-secure-user-authentication"></a>Schritt 4: Konfigurieren der sicheren Benutzerauthentifizierung
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
+<a name="identity-mfa"></a>
+## <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
+
+*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
 In diesem Schritt richten Sie die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) ein, um eine zweite Sicherheitsebene für Benutzeranmeldungen und Transaktionen hinzuzufügen. MFA erfordert eine zusätzliche Überprüfungsmethode, nachdem Benutzer ihr Kennwort richtig eingegeben haben. Ohne MFA ist das Kennwort die einzige Überprüfungsmethode. Das Problem mit Kennwörtern ist, dass sie häufig von einem Angreifer leicht zu erraten sind oder unbewusst für nicht vertrauenswürdige Parteien freigegeben werden.
 
@@ -35,11 +38,7 @@ Die zweite Sicherheitsebene bei MFA kann Folgendes sein:
 
 Sie aktivieren MFA und konfigurieren die sekundäre Authentifizierungsmethode auf Benutzerkontobasis. Teilen Sie den Benutzern unbedingt mit, dass MFA aktiviert ist, damit sie die Anforderungen, z. B. obligatorische Verwendung eines Smartphones zum Anmelden, verstehen und sich erfolgreich anmelden können.
 
-Weitere Informationen finden Sie unter [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba).
-
-Zum Konfigurieren der mehrstufigen Authentifizierung folgen Sie den Anweisungen unter [Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
-
-Sie können MFA mit bedingten Zugriffsrichtlinien anfordern. Sie können beispielsweise eine Richtlinie konfigurieren, die MFA erfordert, wenn die Authentifizierung als mittelmäßig oder hoch riskant eingestuft wird. Weitere Informationen finden Sie unter [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md#require-mfa-based-on-sign-in-risk).
+Weitere Informationen finden Sie unter [Planen der mehrstufigen Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 
 >[!Note]
 >In einigen Clientanwendungen, z. B. Microsoft Office 2010 oder früher und Apple Mail, können Sie MFA nicht verwenden. Um diese Apps zu nutzen, müssen Sie „App-Kennwörter“ anstelle Ihres herkömmlichen Kennworts verwenden. Das App-Kennwort ermöglicht der App, MFA zu umgehen und die Arbeit fortzusetzen. Weitere Informationen zu App-Kennwörtern finden Sie unter [Erstellen eines App-Kennworts für Office 365](https://support.office.com/article/Create-an-app-password-for-Office-365-3e7c860f-bda4-4441-a618-b53953ee1183).
@@ -50,11 +49,69 @@ Sie können MFA mit bedingten Zugriffsrichtlinien anfordern. Sie können beispie
 |![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Mehrstufige Authentifizierung](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
-Als Zwischenprüfpunkt können Sie sich die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-mfa) für diesen Schritt ansehen.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-mfa) für diesen Abschnitt betrachten.
+
+
+
+<a name="identity-ident-prot"></a>
+## <a name="protect-against-credential-compromise"></a>Schutz vor Kompromittierung von Anmeldeinformationen
+
+*Dies ist optional und gilt nur für die Versionen E5 von Microsoft 365 Enterprise.*
+
+In diesem Abschnitt erfahren Sie, wie Sie die Richtlinien zum Schutz vor Kompromittierung von Anmeldeinformationen konfigurieren. Bei der Kompromittierung von Anmeldeinformationen bestimmt ein Angreifer den Kontonamen und das Kennwort des Benutzers, um Zugriff auf die Clouddienste und Daten einer Organisation zu erhalten. Azure AD Identity Protection bietet eine Reihe von Methoden, mit denen verhindert werden kann, dass sich ein Angreifer seitwärts durch Konten und Gruppen und folglich Ihre wertvollsten Daten bewegt.
+
+Mit Azure AD Identity Protection können Sie Folgendes:
+
+|||
+|:---------|:---------|
+|Ermitteln und Beseitigen potenzieller Anfälligkeiten für Identitätsverletzungen in Ihrer Organisation|Azure Active Directory verwendet maschinelles Lernen, um Anomalien und verdächtige Aktivitäten automatisch zu erkennen, z. B. Anmeldungen und Aktivitäten nach der Anmeldung. Anhand dieser Daten generiert Identity Protection Berichte und Warnungen, mit denen Sie die Probleme auswerten und entsprechende Maßnahmen ergreifen können.|
+|Erkennen verdächtiger Aktionen, die im Zusammenhang mit Identitäten in Ihrer Organisation stehen, und automatisches Reagieren auf diese|Sie können risikobasierte Richtlinien konfigurieren, die automatisch auf erkannte Probleme reagieren, wenn eine angegebene Risikostufe erreicht wurde. Mit diesen Richtlinien können Sie neben anderen von Azure Active Directory and Enterprise Mobility + Security (EMS) bereitgestellten bedingten Zugriffssteuerungen entweder den Zugriff automatisch blockieren oder Korrekturmaßnahmen ergreifen, z. B. Kennwörter zurücksetzen oder mehrstufige Authentifizierung für nachfolgende Anmeldungen festlegen.|
+|Untersuchen verdächtiger Vorfälle und Beseitigen mit Verwaltungsaufgaben|Sie können Risikoereignisse anhand von Informationen zu dem Sicherheitsvorfall untersuchen. Es stehen grundlegende Workflows zur Nachverfolgung von Untersuchungen und Initiierung von Korrekturmaßnahmen wie das Zurücksetzen von Kennwörtern zur Verfügung.|
+
+Siehe [weitere Informationen zu Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
+
+Siehe [Schritte zum Aktivieren von Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
+
+In diesem Schritt haben Sie Azure AD Identity Protection aktiviert und verwenden es für Folgendes:
+
+- Beseitigen potenzieller Anfälligkeiten für Identitätsverletzungen
+- Erkennen möglicher Kompromittierungsversuche von Anmeldeinformationen
+- Untersuchen und Beheben laufender verdächtiger Identitätsvorfälle
+
+|||
+|:-------|:-----|
+|![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|||
+
+Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-ident-prot) für diesen Abschnitt betrachten.
+
+## <a name="monitor-tenant-and-sign-in-activity"></a>Überwachen der Mandanten- und Anmeldeaktivität
+
+*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+
+In diesem Schritt überprüfen Sie Überwachungsprotokolle und Anmeldeaktivitäten mithilfe von Azure AD-Berichten. Es stehen zwei Arten von Berichten zur Verfügung.
+
+Der **Aktivitätsbericht „Überwachungsprotokolle“** verzeichnet den Verlauf jeder in Ihrem Azure AD-Mandanten ausgeführten Aufgabe. In diesem Bericht finden Sie Antworten auf Fragen wie:
+
+- Wer hat eine Person zu einer Administratorengruppe hinzugefügt?
+- Welche Benutzer melden sich bei einer bestimmten App an?
+- Wie viele Kennwortzurücksetzungen werden ausgeführt?
+
+Der **Aktivitätsbericht „Anmeldungen“** verzeichnet, wer die im Überwachungsprotokollbericht gemeldeten Aufgaben ausgeführt hat. In diesem Bericht finden Sie Antworten auf Fragen wie:
+
+- Welches Anmeldemuster gilt für einen bestimmten untersuchten Benutzer?
+- Wie groß ist das Volumen von Anmeldungen über einen Tag, eine Woche oder einen Monat?
+- Wie viele dieser Anmeldeversuche waren nicht erfolgreich und für welche Konten?
+
+Weitere Informationen zu den Berichten und den Zugriffsmöglichkeiten auf diese finden Sie unter [Azure Active Directory-Berichterstellung](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
+
+In diesem Schritt lernen Sie die Berichte kennen und erfahren, wie Sie sie verwenden können, um zu Planungs- und Sicherheitszwecken Informationen über Azure AD-Ereignisse und -Aktivitäten zu erhalten.
+
+
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Schutz vor Kompromittierung von Anmeldeinformationen](identity-azure-ad-identity-protection.md) |
+|![](./media/stepnumbers/Step5.png)| [Vereinfachen des Zugriffs für Benutzer](identity-password-reset.md) |
 

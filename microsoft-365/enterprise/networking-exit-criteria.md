@@ -3,36 +3,35 @@ title: 'Phase 1: Beendigungskriterien für die Netzwerkinfrastruktur'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für die Netzwerkinfrastruktur erfüllt.
-ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291367"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1: Beendigungskriterien für die Netzwerkinfrastruktur
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Wenn Ihre Netzwerkinfrastruktur die folgenden Kriterien erfüllt, können Sie mit Phase 2 fortfahren.
+Stellen Sie sicher, dass Ihre Netzwerkinfrastruktur die folgenden erforderlichen Kriterien erfüllt, und dass Sie die optionalen Kriterien berücksichtigt haben.
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Erforderlich: Ihr Netzwerk ist bereit für Microsoft 365 Enterprise
 
 - Ihre Büros verfügen über ausreichende Internetbandbreite für Microsoft 365-Datenverkehr, einschließlich Office 365, Microsoft Intune sowie Windows 10 Enterprise (Installation und Updates)
-- Zentrale Büros für allgemeinen Internetdatenverkehr
-- Zweigstellen für Endpunktdatenverkehr der Kategorie „Optimieren“
 - Ihr Gesamtnetzwerk ist einer Office 365-Referenzarchitektur zugeordnet.
+- Ihre Netzwerkänderungen wurden eingeführt und getestet und erfüllen Ihre Anforderungen an die Datenverkehrslatenz. 
 
 Gegebenenfalls hilft Ihnen [Schritt 1](networking-provide-bandwidth-cloud-services.md), diese Anforderung zu erfüllen.
 
@@ -78,8 +77,10 @@ Sie haben die Einstellungen für das Transmssion Control Protocol (TCP) auf Ihre
 
 Gegebenenfalls hilft Ihnen [Schritt 5](networking-optimize-tcp-performance.md) bei dieser Option.
 
-## <a name="next-phase"></a>Nächste Phase
+## <a name="results-and-next-steps"></a>Ergebnisse und nächste Schritte
+
+Ihre Intranetbenutzer sind nun bereit, Microsoft 365-Clouddienste über einen effizienten Netzwerkpfad zum und über das Internet zu nutzen.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Die nächste Phase im End-to-End-Bereitstellungsprozess für Microsoft 365 Enterprise ist [identity](identity-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, folgt als nächstes die Phase [Identität](identity-infrastructure.md). |

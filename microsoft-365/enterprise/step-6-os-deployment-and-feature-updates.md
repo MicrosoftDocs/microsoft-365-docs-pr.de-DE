@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zu den Optionen für die Bereitstellung des Betriebssystems und Featureupdates.
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290085"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Schritt 6: Bereitstellung des Betriebssystems und Featureupdates
-
-Erfahren Sie mehr über die Optionen für die Bereitstellung eines Betriebssystems und bereiten Sie darauf vor, indem Sie Upgrade- und Imagingansätze mit System Center Configuration Manager oder dem Microsoft Deployment Toolkit nutzen.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
@@ -36,7 +34,7 @@ Erfahren Sie mehr über die Optionen für die Bereitstellung eines Betriebssyste
 </table>
 
 >[!NOTE]
->Betriebssystembereitstellung und Featureupdates sind der sechste Schritt in dem von uns empfohlenen Rad für den Bereitstellungsprozess, der die Bereitstellung von Windows 10, Upgrades und Featureupdates behandelt. Wenn Sie den vollständigen Desktopbereitstellungsprozess sehen möchten, besuchen Sie das [Bereitstellungscenter für modernen Desktop](https://aka.ms/HowToShift).
+>Betriebssystembereitstellung und Featureupdates sind der sechste Schritt in dem von uns empfohlenen Rad für den Bereitstellungsprozess, der die Bereitstellung von Windows 10, Upgrades und Featureupdates behandelt. Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
 >
 
 Wenn Sie dem Rad für den Bereitstellungsprozess bis hier gefolgt sind, haben Sie die Schritte für die Geräte- und App-Bereitschaft zumindest teilweise abgeschlossen, Ihre Infrastruktur vorbereitet, App-Pakete konfiguriert und gesammelt, verfügen über einen Plan für die Migration von Benutzerdateien und das Konfigurieren von Standardeinstellungen sowie Pläne für die Beibehaltung vorhandener und möglicherweise auch für die Bereitstellung neuer Sicherheitssteuerungen.
@@ -109,7 +107,7 @@ Unabhängig vom gewählten Bereitstellungstyp müssen Sie sicherstellen, dass er
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Eine neue Option in Windows 10 ermöglicht Ihnen, neue PCs als Teil Ihres Hardware-Aktualisierungszyklus mit Windows Autopilot zu konfigurieren. Hierbei können Sie mit Hardwareanbietern zusammenarbeiten, die diese Option unterstützen, um die standardmäßige Windows-Setup-Umgebung anzupassen. Sie können zum Beispiel festlegen, dass den Benutzern keine Optionen wie Lizenzverträge oder Telemetrie-Einstellungen angezeigt werden.
+Mit einer neuen Option von Windows 10 können Sie neue PCs als Bestandteil Ihres Hardware-Aktualisierungszyklus mit dem Windows Autopilot konfigurieren. Hierbei können Sie mit Hardwareanbietern zusammenarbeiten, um die standardmäßige Windows-Setup-Umgebung anzupassen, indem Sie z. B. Optionen wie Lizenzvereinbarungen oder Diagnosedaten-Einstellungen, die Benutzern angezeigt werden, entfernen.
 
 Wenn sich ein Benutzer dann während des Setups mit seinen Azure AD-Anmeldedaten bei dem PC anmeldet, registriert sich das Gerät bei Microsoft Intune, das dann den Bereitstellungsprozess übernimmt und Anwendungen, die Konfiguration von Softwareupdates und Compliance-Richtlinien anwendet. Optional kann Windows Autopilot auch verhindern, dass der Benutzer erst dann auf die erste Sitzung zugreifen kann, wenn die Bereitstellung abgeschlossen ist.
 
@@ -117,9 +115,21 @@ Wenn sich ein Benutzer dann während des Setups mit seinen Azure AD-Anmeldedaten
 
 [Voraussetzungen für Windows Autopilot](https://docs.microsoft.com/de-DE/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
+## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update for Business für Featureupdates
+
+Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), System Center Configuration Manager (aktueller Zweig) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
+
+Ausführlichere Informationen zu Windows Update for Business finden Sie in der folgenden Dokumentation:
+
+- [Bereitstellen von Updates mit Windows Update for Business](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-manage-updates-wufb)
+- [Konfigurieren von Windows Update for Business](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-configure-wufb)
+- [Integrieren von Windows Update for Business in vorhandene Verwaltungstools](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-integrate-wufb)
+- [Verwenden von Gruppenrichtlinien zum Konfigurieren von Windows Update for Business](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-wufb-group-policy)
+- [Verwenden von Microsoft Intune zum Konfigurieren von Windows Update for Business](https://docs.microsoft.com/de-DE/intune/windows-update-for-business-configure)
+
 ## <a name="next-step"></a>Nächster Schritt 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Vorheriger Schritt
 

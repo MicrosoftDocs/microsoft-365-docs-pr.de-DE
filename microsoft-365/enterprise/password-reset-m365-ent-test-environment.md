@@ -3,25 +3,25 @@ title: Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Testen der Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: a90cb362a2831bf0bcf3fe05932e3a4345d52b2e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5fc8d68493464d6b4a6ffdcda64ed9a0d8c7cdd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289462"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung
 
@@ -29,26 +29,30 @@ Die Azure AD Self-Service-Kennwortzurücksetzung (SSPR) erlaubt es Benutzern, ih
 
 Dieser Artikel beschreibt, wie Sie die Kennwortzurücksetzung in Ihrer Microsoft 365-Testumgebung in zwei Phasen konfigurieren und testen:
 
-1.  Erstellen Sie die simulierte Microsoft 365-Testunternehmensumgebung mit Kennworthashsynchronisierung.
+1.  Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
 2.  Konfigurieren Sie und testen Sie die Kennwortzurücksetzung für das Konto von Benutzer 2.
     
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
-  
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
-Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Hier ist die resultierende Konfiguration.
+## <a name="phase-1-configure-password-hash-synchronization-and-password-writebback-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren von Kennworthashsynchronisierung und Kennwortrückschreibung für Ihre Microsoft 365-Testumgebung
+
+Befolgen Sie zuerst die Anweisungen unter [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md). Hier ist die resultierende Konfiguration.
   
-![Das simulierte Unternehmen mit einer Testumgebung mit Pass-Through-Authentifizierung](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Das simulierte Unternehmen mit Kennworthashsynchronisierung für die Testumgebung](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Diese Konfiguration besteht aus:  
+Diese Konfiguration besteht aus: 
   
-- Testversionen oder dauerhaften Abonnements von Office 365 E5 und EMS E5.
+- Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
-- Azure AD Connect wird auf APP1 ausgeführt, um die Active Directory-Domäne TESTLAB von Windows Server mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements zu synchronisieren.
+- Azure AD Connect wird auf APP1 ausgeführt, um die AD DS-Domäne "TESTLAB" mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements zu synchronisieren.
 
+Folgen Sie anschließend den Anweisungen unter [Phase 2 der Kennwortrückschreibung](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) der Testumgebungsanleitungen.
+
+Sie müssen das Rückschreiben des Kennworts aktiviert haben, um das Kennwortzurücksetzen verwenden zu können.
+  
 ## <a name="phase-2-configure-and-test-password-reset"></a>Phase 2: Konfigurieren und testen Sie die Kennwortzurücksetzung
 
 In dieser Phase konfigurieren Sie die Kennwortzurücksetzung im Azure AD-Mandanten durch Gruppenmitgliedschaft und vergewissern sich anschließend, dass sie funktioniert.
@@ -75,9 +79,9 @@ Als Nächstes testen Sie die Kennwortzurücksetzung für das Konto von Benutzer 
 6. Melden Sie sich mit den Anmeldeinformationen des Kontos von Benutzer 2 an, geben Sie die Zeichen aus dem CAPTCHA ein, und klicken Sie dann auf **Weiter**.
 8. Klicken Sie in **Überprüfungsschritt 1** auf **E-Mail an meine alternative E-Mail-Adresse senden**, und klicken Sie dann auf **E-Mail**. Wenn Sie die E-Mail erhalten, geben Sie den Überprüfungscode ein, und klicken Sie dann auf **Weiter**.
 9. Geben Sie unter **Wiederherstellen des Kontos** ein neues Kennwort für das Konto von Benutzer 2 ein, und klicken Sie dann auf **Fertig stellen**. Notieren Sie sich das geänderte Kennwort für das Konto von Benutzer 2, und bewahren Sie es an einem sicheren Ort auf.
-10. Gehen Sie in einer separaten Registerkarte derselben Browserinstanz zu [https://portal.office.com](https://portal.office.com), und melden Sie sich dann mit dem Kontonamen von Benutzer 2 und dem neuen Kennwort an. Die **Office-Startseite** sollte angezeigt werden.
+10. Gehen Sie in einer separaten Registerkarte derselben Browserinstanz zu [https://office.com](https://office.com), und melden Sie sich dann mit dem Kontonamen von Benutzer 2 und dem neuen Kennwort an. Die **Office-Startseite** sollte angezeigt werden.
 
-Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-password-reset.md) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren der Kennwortzurücksetzung in der Produktion.
+Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-password-reset.md#identity-pw-reset) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren der Kennwortzurücksetzung in der Produktion.
 
 ## <a name="next-step"></a>Nächster Schritt
 

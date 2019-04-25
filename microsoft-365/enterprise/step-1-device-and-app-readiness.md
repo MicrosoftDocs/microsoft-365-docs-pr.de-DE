@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Geräte- und App-Bereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: a9fa85ea37de06399aa2264b09c61e588edc2107
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0ead897fef7f419b5a11b7a1fb5b5f4fdc62e52e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291033"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Schritt 1: Geräte- und App-Bereitschaft
-
-Beginnen Sie Ihre Desktopbereitstellung mit einer Bestandsaufnahme Ihrer Geräte und Apps, priorisieren Sie, was Sie für Ihre weitere Arbeit benötigen, testen Sie priorisierte Apps und Geräte, und beheben Sie dann ggf. Probleme, um sich auf die Bereitstellung vorzubereiten.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
@@ -36,30 +34,40 @@ Beginnen Sie Ihre Desktopbereitstellung mit einer Bestandsaufnahme Ihrer Geräte
 </table>
 
 >[!NOTE]
->Die Geräte- und App-Bereitschaft ist der erste Schritt in unserem empfohlenem Bereitstellungsprozess, bei dem die ganzheitlichen Aspekte der Anwendungs- und Hardwarekompatibilität behandelt werden. Den vollständigen Desktopbereitstellungsprozess finden Sie im [Bereitstellungscenter für modernen Desktop](https://aka.ms/HowToShift).
+>Die Geräte- und App-Bereitschaft ist der erste Schritt in unserem empfohlenem Bereitstellungsprozess, bei dem die ganzheitlichen Aspekte der Anwendungs- und Hardwarekompatibilität behandelt werden. Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
 >
 
 In der Vergangenheit war die Anwendungs- und Hardwarekompatibilität bei der Aktualisierung der Desktops der Benutzer eine große Herausforderung. Aber es gibt gute Nachrichten: Wenn Sie auf Windows 10 und Office 365 ProPlus umsteigen möchten, werden alle Anwendungen, die in den letzten zehn Jahren geschrieben wurden, auf Windows 10 ausgeführt, und alle COM-Add-Ins und VBA-Makros, die Ihre Organisation in älteren Versionen von Office (z. B. Office 2010) verwendete, funktionieren (ohne Änderungen) weiterhin in den neusten Versionen von Office.
 
 Nichtsdestotrotz ist das Überprüfen der Anwendungs- und Hardwarekompatibilität in Abhängigkeit von der Größe und dem Alter Ihrer Organisation mit großer Wahrscheinlichkeit nach wie vor ein wichtiger erster Schritt in unserem empfohlenen Bereitstellungsprozess, der aus acht Phasen besteht.
 
-In diesem Artikel führen wir Sie durch diese erste Phase – die Geräte- und App-Bereitschaft – mithilfe des neuen Upgradebereitschaft-Tools von Windows Analytics, bei dem es sich um eine intelligente, cloudbasierte Lösung handelt, die mit Ihrer Windows-Lizenz verfügbar ist.
+In diesem Artikel führen wir Sie durch diese erste Phase – die Geräte- und App-Bereitschaft – mithilfe der Microsoft-Tools zur Bewertung der Bereitschaft, einschließlich des neuen Upgradebereitschaft-Tools von Windows Analytics, bei dem es sich um eine intelligente, cloudbasierte Lösung handelt, die mit Ihrer Windows-Lizenz verfügbar ist.
 
-Wenn Sie Windows Analytics derzeit nicht für Ihre Umgebung eingerichtet haben oder sich für eine Testversion registrieren möchten, wechseln Sie zur [Windows Analytics-Seite](http://www.aka.ms/windowsanalytics), und legen Sie los.
+## <a name="windows-10-compatibility-scan"></a>Windows 10-Kompatibilitätsüberprüfung
+
+Vor der Bereitstellung von Windows 10 empfiehlt Microsoft, die Bereitschaft Ihrer vorhandenen Windows 7- oder Windows 8/8.1-Geräte zu überprüfen. Das Windows 10-Installationsmedium unterstützt eine Befehlszeilenoption für die Datei "setup.exe" zum Ausführen des Upgrades, mit der nur die Kompatibilität überprüft, das Upgrade aber nicht ausgeführt wird. ScanOnly kann nur als skriptgesteuerte Batchdatei ausgeführt oder in eine System Center Configuration Manager-Tasksequenz integriert werden, einschließlich der Möglichkeit, ScanOnly direkt aus dem Netzwerk auszuführen, ohne das Windows 10-Installationsmedium zuvor auf das lokale Gerät zu streamen. Nach Abschluss von ScanOnly werden die Ergebnisse über Rückgabecodes in von "setup.exe" generierte Protokolldateien zurückgegeben.   
+
+Ein Beispiel für eine ScanOnly-Befehlszeile, die die Kompatibilitätsüberprüfung ohne Benutzereingriff ausführt, sieht wie folgt aus:
+
+    Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+
+Weitere Informationen zu ScanOnly und anderen Windows-Setupbefehlsoptionen finden Sie unter [Windows Setup-Befehlszeilenoptionen](https://aka.ms/setupswitches).
 
 ## <a name="recommended-tool-windows-analytics-upgrade-readiness"></a>Empfohlenes Tool: Upgradebereitschaft von Windows Analytics
 
-Das Tool für die Upgradebereitschaft von Windows Analytics bietet viele Vorteile gegenüber herkömmlichen Desktopverwaltungssystemen und ist unser empfohlenes Tool. Es arbeitet ohne Agent. Sie werden durch die erforderlichen Aufgaben geführt, und es werden die Informationen zur Anwendungs- und Treiberkompatibilität verwendet, die beim Aktualisieren Hunderter Millionen Kunden-PCs gesammelt wurden, damit Sie eine ausführliche Bewertung erhalten und Kompatibilitätsprobleme identifizieren können, die möglicherweise Ihr Upgrade blockieren. Außerdem erhalten Sie Links zu vorgeschlagenen Korrekturen, die Microsoft bekannt sind.
+Windows Analytics Upgrade Readiness bietet viele Vorteile gegenüber herkömmlichen Desktopverwaltungssystemen und ist unser empfohlenes Tool. Für Windows Analytics Upgrade Readiness müssen keine Agents bereitgestellt werden, und das Tool führt Sie durch die erforderlichen Schritte unter Verwendung der beim Upgraden von Hunderten von Millionen von Verbraucher-PCs gesammelten Informationen zur Anwendungs- und Treiberkompatibilität. Anhand dieser Informationen erhalten Sie eine detaillierte Bewertung, indem Kompatibilitätsprobleme identifiziert werden, die Ihr Upgrade blockieren könnten, unterstützt durch Links zu vorgeschlagenen Korrekturen, die Microsoft bekannt sind.
 
-Um das Tool für die Upgradebereitschaft von Windows Analytics einzurichten, müssen Sie zunächst ein Azure-Abonnement einrichten und darin einen Azure Log Analytics-Arbeitsbereich einschließen. Wenn der Upgradebereitschaftsdienst von Windows Analytics ausgeführt wird, können Sie alle mit dem Internet verbundenen Windows 7-Geräte mit SP1 oder höher über die Gruppenrichtlinieneinstellungen registrieren. So einfach ist das! Es müssen keine Agents bereitgestellt werden. Anhand des visuellen Workflows des Tools für die Upgradebereitschaft von Windows Analytics werden Sie von der Pilotphase bis hin zur Produktionsbereitstellung geführt. Wenn Sie möchten, können Sie Daten aus der Upgradebereitschaft von Windows Analytics in Softwarebereitstellungstools, z. B. System Center Configuration Manager, exportieren, um direkt auf PCs abzuzielen und Sammlungen zu erstellen, wenn diese bereit zur Bereitstellung sind.
+Um Window Analytics Upgrade Readiness einzurichten, müssen Sie zuerst ein Azure-Abonnement einrichten und einen Azure Log Analytics-Arbeitsbereich hinzufügen. Sobald der Windows Analytics Upgrade Readiness-Dienst ausgeführt wird, können Sie jedes mit dem Internet verbundene Windows 7 SP1- oder neuere Gerät über Gruppenrichtlinieneinstellungen registrieren – so einfach ist das. Es müssen keine Agents bereitgestellt werden, und der visuelle Workflow von Windows Analytics Upgrade Readiness führt Sie von der Pilotbereitstellung bis zur Produktionsbereitstellung. Wenn Sie möchten, können Sie Daten von Windows Analytics Upgrade Readiness in Softwarebereitstellungstools wie System Center Configuration Manager exportieren, um PCs direkt zu adressieren und Sammlungen zu erstellen, sobald sie für die Bereitstellung bereit sind.
+
+Wenn Sie Windows Analytics derzeit nicht für Ihre Umgebung eingerichtet haben oder sich für eine Testversion registrieren möchten, wechseln Sie zur [Windows Analytics-Seite](http://www.aka.ms/windowsanalytics), und legen Sie los.
 
 ## <a name="device-and-app-readiness-process"></a>Prozess der Geräte- und App-Bereitschaft
 
-Die Geräte- und App-Bereitschaft umfasst vier Schritte: 1. Bestandsaufnahme, 2. Priorisieren, 3. Testen, 4. Fehlerbehebung. Wir werden uns nun näher mit den einzelnen Schritten befassen.
+Geräte- und App-Bereitschaft besteht aus vier Schritten: 1. Bestandsaufnahme, 2. Priorisieren, 3. Testen, 4. Fehlerbehebung. Lassen Sie uns alle Schritte nach einander betrachten.
 
 ### <a name="1-inventory"></a>1\. Bestandsaufnahme
 
-Der Upgradebereitschaftsdienst von Windows Analytics verwendet einen Prozess ohne Agent, um eine Bestandsaufnahme der Computer, Anwendungen und Office-Add-Ins über Ihren Desktop hinweg zu erstellen.
+Der Windows Analytics Upgrade Readiness-Dienst verwendet einen Prozess ohne Agent zur Bestandsaufnahme der Computer, Anwendungen und Office-Add-Ins Ihrer gesamten Desktopumgebung.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
 
@@ -93,7 +101,18 @@ Die letzte Phase der Geräte- und App-Bereitschaft ist die Fehlerbehebung. In di
 
 Wenn Sie die Liste zu behebender Probleme durcharbeiten, werden Sie sehen, dass immer mehr PCs „Bereit für die Bereitstellung“ werden. Dies bedeutet, dass sowohl die Treiber als auch die Apps auf den PCs als kompatibel mit der Version von Windows 10 gekennzeichnet werden, auf die Sie für die Bereitstellung abzielen.
 
-## <a name="continued-use-of-telemetry-tools"></a>Weiterverwendung von Telemetrietools
+### <a name="configuration-manager-software-inventory-for-application-prioritization"></a>Configuration Manager-Softwareinventur für Anwendungspriorisierung
+
+Configuration Manager-Softwareinventur ist eine Alternative zur Verwendung von cloudbasierten Analyselösungen für die Geräte- und App-Bereitschaft. Sie können Installationszählungen verwenden und weitere Informationen zu bestimmten Computern abrufen, um Kompatibilitätstests und -validierungen zu priorisieren und Anwendungspakete über Paketeinstellungen mit Windows 10 kompatibel zu machen. Obwohl diese Option nicht die Möglichkeit bietet, bekannte Kompatibilitätsinformationen mit den Analysediensten von Microsoft zu vergleichen, kann sie eine effektive Lösung sein, um eine kleinere Gruppe priorisierter Apps für manuelle Tests zu adressieren. 
+
+Weitere Informationen finden Sie unter [Einführung in die Softwareinventur in System Center Configuration Manager](https://docs.microsoft.com/de-DE/sccm/core/clients/manage/inventory/introduction-to-software-inventory) und zum Festlegen von Plattformanforderungen in Anwendungspaketen in [Pakete und Programme im System Center Configuration Manager](https://docs.microsoft.com/de-DE/sccm/apps/deploy-use/packages-and-programs).
+
+
+## <a name="desktop-app-assure"></a>Desktop App Assure
+
+Ein weiteres Tool, das Ihnen bei der Kompatibilität von Windows 10 und Office 365 ProPlus-Apps hilft, ist das Programm [Desktop App Assure](https://aka.ms/desktopappassure), das über das FastTrack Center verfügbar ist. Im Falle gültiger Anwendungsprobleme kann ein Microsoft-Techniker Ihnen über Desktop App Assure ohne zusätzliche Kosten bei der Behebung der Anwendungsinkompatibilität helfen.
+
+## <a name="continued-use-of-diagnostic-data-tools"></a>Fortgesetzte Verwendung von Diagnosedatentools
 
 Die Upgradebereitschaft von Windows Analytics ist nicht nur ein Tool, das Sie beim Umstieg auf Windows 10 und Office ProPlus 365 unterstützt. Wenn Sie Desktops haben, auf denen Windows 10 und Office 365 ausgeführt wird, können Sie diese verwenden, um die Bereitstellung sowie halbjährliche Featureupdates zu verwalten, damit Sie immer auf dem aktuellen Stand sind.
 

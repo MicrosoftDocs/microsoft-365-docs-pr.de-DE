@@ -1,21 +1,21 @@
 ---
 title: Leitfaden für Datenverantwortliche, die Office 365 verwenden
-description: Dieses Dokument stellt Datenverantwortlichen Informationen über Professional Services bereit, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgeabschätzung erforderlich ist und welche Informationen sie enthalten soll.
+description: Dieses Dokument stellt Datenverantwortlichen Informationen über Office 365 bereit, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgeabschätzung erforderlich ist und welche Informationen sie enthalten soll.
 keywords: Datenschutz-Folgeabschätzung, Office 365, Microsoft 365-Dokumentation, DSGVO
-author: BrendaCarter
+author: herviicban
 ms.localizationpriority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9ef2d1a91c00cbaa52282c27cf047e380dbf8249
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: bf6b174b8edce8264b3b53f72b7986f11d80a6f0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286676"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Microsoft Office 365 verwenden 
 
@@ -41,7 +41,8 @@ Artikel 35 der DSGVO legt fest, dass ein Datenverantwortlicher eine Datenschutz-
 |Eine systematische Überwachung eines öffentlich zugänglichen Bereichs in großem Umfang|Office 365 wurde nicht konzipiert, um eine solche Überwachung durchzuführen oder zu ermöglichen.<p>Ein Datenverantwortlicher kann es jedoch verwenden, um Daten, die über eine solche Überwachung erfasst wurden, zu bearbeiten.</p>|
 |||
 
-<!-- end of table --> [*] Bezüglich der Kriterien der umfassenden Verarbeitung von Daten wird in Absatz 91 der DSGVO Folgendes klar gestellt: „Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein.“
+<!-- end of table -->
+[*] Bezüglich der Kriterien der umfassenden Verarbeitung von Daten wird in Absatz 91 der DSGVO Folgendes klar gestellt: „Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein.“
 
 ### <a name="part-2--contents-of-a-dpia"></a>Teil 2 – Inhalte einer DPIA 
 Artikel 35(7) sieht vor, dass eine Datenschutz-Folgenabschätzung eine systematische Beschreibung der geplanten Verarbeitungsvorgänge und der Zwecke der Verarbeitung angibt. In den Folgeabschätzungen von Microsoft enthält eine derartige systematische Beschreibung Faktoren wie z. B. die Typen verarbeiteter Daten, wie lange die Daten aufbewahrt werden, wo sich die Daten befinden und wohin sie übertragen werden, und welche dritten Parteien möglicherweise Zugriff auf die Daten haben. Außerdem muss die Folgeabschätzung folgendes umfassen: 

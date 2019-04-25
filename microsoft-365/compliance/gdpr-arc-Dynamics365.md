@@ -2,21 +2,21 @@
 title: Dynamics 365-Prüfliste zu den Verantwortlichkeiten für die DSGVO
 description: Ermöglicht den bequemen Zugriff auf Informationen, die Sie bei Verwendung von Dynamics 365 zur Unterstützung der DSGVO unter Umständen benötigen.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: b358776da0d2cdd676ac79736efea1908cd2a961
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c175e10e15bb35993b5234a76b6f7ca61e03dd3a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283568"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Dynamics 365-Prüfliste zu den Verantwortlichkeiten für die DSGVO
 
@@ -100,7 +100,7 @@ Weitere Dokumentationen im Zusammenhang mit der DSGVO finden Sie unter https://a
 | Länder und Organisationen als Ziel der PII-Übertragung (7.5.2)         | Der Kunde sollte die Länder, in die personenbezogene Daten ggf. übertragen werden, kennen und diese für die Person bereitstellen können. Wenn diese Übertragung von einem Drittanbieter bzw. Verarbeiter durchgeführt wird, sollte der Kunde diese Informationen vom Verarbeiter beschaffen.                                                                                                                                                  | Eine Beschreibung der Arten von personenbezogenen Daten, die von Microsoft-Diensten übertragen werden, der Standorte, zwischen denen die Übertragung erfolgt, und des rechtlichen Schutzes für die Übertragung.<br>- Wichtige Informationen aus Dynamics 365 für die Datenschutz-Folgenabschätzung in Bezug auf Kundendaten [2]                                                       | (30)(1)(e)                                      |
 | Aufzeichnungen zu PII-Übertragungen (personenbezogene Daten) (7.5.3)                           | Der Kunde sollte alle notwendigen und erforderlichen Aufzeichnungen über die Übermittlung personenbezogener Daten aufbewahren. Wenn ein Dritter/Bearbeiter die Übertragung durchführt, sollte der Kunde sicherstellen, dass er die entsprechenden Aufzeichnungen aufbewahrt und diese bei Bedarf erhält.                                                                                                                                                    | Eine Beschreibung der Arten von personenbezogenen Daten, die von Microsoft-Diensten übertragen werden, der Standorte, zwischen denen die Übertragung erfolgt, und des rechtlichen Schutzes für die Übertragung.<br>- Wichtige Informationen aus Dynamics 365 für die Datenschutz-Folgenabschätzung in Bezug auf Kundendaten [2]                                                       | (30)(1)(e)                                      |
 | Aufzeichnungen der PII-Offenlegung für Dritte (7.5.4)                            | Der Kunde sollte mit den Anforderungen in Bezug auf die Aufzeichnungen vertraut sein, die darüber angefertigt werden, für wen personenbezogene Daten offengelegt wurden. Dies kann auch Offenlegungen für Strafverfolgungsbehörden usw. umfassen. Wenn die Daten von einem Drittanbieter bzw. Verarbeiter offengelegt werden, sollte der Kunde sicherstellen, dass dieser die entsprechenden Aufzeichnungen verwaltet, und diese je nach Bedarf beschaffen.                                                                                                 | Bereitgestellte Dokumentation zu den Kategorien von Empfängern der Offenlegungen personenbezogener Daten, einschließlich der verfügbaren Aufzeichnungen zur Offenlegung.<br>Wer unter welchen Umständen auf Ihre Kundendaten zugreifen kann [[7](gdpr-arc-Dynamics365.md#7)]                                                                                                              | (30)(1)(d)                                      |
-| Gemeinsamer Controller (7.5.5)                                                      | Der Kunde sollte ermitteln, ob er zusammen mit einer anderen Organisation als gemeinsamer Controller fungiert, und die Zuständigkeiten auf geeignete Weise dokumentieren und zuordnen.                                                                                                                                                                                                                                                           | Dynamics 365 verarbeitet personenbezogene Daten.<br>Onlinedienstbedingungen [1] <!-- look at this one -->siehe *Prozessor und Controller – Rollen und Verantwortlichkeiten [1]*                                                                                                                                        | (26)(1), (26)(2), (26)(3)                       |
+| Gemeinsamer Controller (7.5.5)                                                      | Der Kunde sollte ermitteln, ob er zusammen mit einer anderen Organisation als gemeinsamer Controller fungiert, und die Zuständigkeiten auf geeignete Weise dokumentieren und zuordnen.                                                                                                                                                                                                                                                           | Dynamics 365 verarbeitet personenbezogene Daten.<br>- Onlinedienstbedingungen [1] <!-- look at this one -->siehe *Prozessor und Controller – Rollen und Verantwortlichkeiten [1]*                                                                                                                                        | (26)(1), (26)(2), (26)(3)                       |
 |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                    |                                                 |
 
 <br>

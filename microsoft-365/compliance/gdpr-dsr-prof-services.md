@@ -2,20 +2,20 @@
 title: Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO
 description: Wie Microsoft-Support und Professional Services mit Datenbetreffsanforderungen umgeht.
 keywords: Professional Services, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278246"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Microsoft-Support und Professional Services für Datenbetreffsanforderungen für die DSGVO
 
@@ -23,9 +23,9 @@ ms.locfileid: "26867840"
 
 Microsoft Professional Services umfasst eine heterogene Gruppe aus technischen Architekten, Technikern, Beratern und Supportmitarbeitern, die die Mission von Microsoft unterstützen, Kunden zu befähigen, mehr zu tun und mehr zu erreichen. Unser Professional Services-Team umfasst insgesamt mehr als 21.000 Berater, Berater für digitale Angelegenheiten, Premier-Support, Techniker und Vertriebsmitarbeiter in 191 Ländern, die 46 unterschiedliche Sprachen sprechen, mehrere Millionen Engagements pro Monat absolvieren und vor Ort oder über Telefon, Internet, Community und automatisierte Tools mit Kunden und Partnern interagieren. Die Organisation liefert umfangreiche Kenntnisse über das gesamte Spektrum des Microsoft-Portfolios hinweg, wofür ein weites Partnernetzwerk, technische Communities, Tools, Diagnosen und Kanäle genutzt werden, die uns mit unseren Unternehmenskunden verbinden.
 
-Mehr über Microsoft Professional Services erfahren Sie hier (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) und im Abschnitt zu Microsoft Professional Services im Microsoft Trust Center (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>). Microsoft Professional Services nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Die Informationen in diesem Dokument dienen der Beantwortung von Kundenfragen dazu, wie die Support- und Beratungsangebote von Microsoft auf Verpflichtungen im Hinblick auf Anträge betroffener Personen entsprechend der DSGVO reagieren und Kunden bei einer entsprechenden Reaktion unterstützen.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Weitere Informationen zu Microsoft Professional Services erhalten Sie im Abschnitt zu Microsoft Professional Services im Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). Microsoft Professional Services nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Die Informationen in diesem Dokument dienen zur Beantwortung von Kundenfragen, wie die Support- und Beratungsangebote von Microsoft den Data Subject Request(DSR)-Verpflichtungen im Rahmen der DSGVO gerecht werden und Kunden in dieser Hinsicht unterstützen.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
-### <a name="introduction-to-dsrs"></a>Einführung zu Anträgen betroffener Personen 
+### <a name="introduction-to-dsrs"></a>Einführung in die möglichen Anträge betroffener Personen 
 
 Die DSGVO gewährt Personen (die in den Bestimmungen als *betroffene Personen* bezeichnet werden) Berechtigungen zum Verwalten der personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Data Controller* oder nur *Controller* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten; dazu gehören das Kopieren der Daten, das Anfordern von Änderungen, das Einschränken der Verarbeitung und das Löschen. Eine formale Anforderung von einer betroffenen Person an einen Controller im Hinblick auf eine bestimmte Aktion für deren persönliche Daten wird als *Antrag einer betroffenen Person* bezeichnet. Zudem werden Unternehmen, die für einen Controller arbeiten (als *Datenverarbeiter* oder nur *Verarbeiter*) bezeichnet), verpflichtet, den Controller ernsthaft bei der Erfüllung von Anträgen betroffener Personen zu unterstützen.
 
@@ -76,20 +76,21 @@ Nachstehend sind die für diesen Leitfaden relevanten Definitionen von Ausdrück
 Dieser Leitfaden behandelt vier Szenarien, auf die ein Kunde stoßen kann, wenn er Microsoft Professional Services genutzt hat.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>Antrag einer betroffenen Person für einen Kundenkontakt gegenüber Microsoft
+- **Antrag einer betroffenen Person für einen Kundenkontakt gegenüber Microsoft**
+
 Erklärung dazu, wie Microsoft auf Anträge eines Kundenkontakts oder IT-Administrators zur Ausübung deren Rechte reagiert.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Antrag einer betroffenen Person für einen Endbenutzer gegenüber Microsoft
+- **Antrag einer betroffenen Person für einen Endbenutzer gegenüber Microsoft**
 
 Erklärung dazu, wie Microsoft auf Anträge eines Mitarbeiters des Kunden oder einer anderen betroffenen Person zur Ausübung deren Rechte reagiert.
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>Antrag einer betroffenen Person für vom Kunden bereitgestellte Daten: Kommerzieller Support
+- **Antrag einer betroffenen Person für vom Kunden bereitgestellte Daten: Kommerzieller Support**
 
 Erläuterung dazu, wie Unterstützung von Microsoft angefordert wird, wenn ein Kunde einen Antrag von einem Mitarbeiter oder einer anderen betroffenen Person zur Ausübung deren Rechte erhalten hat, wobei die personenbezogenen Daten dieser betroffenen Person während eines Support-Engagements vom Microsoft-Support erfasst wurden.
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>Antrag einer betroffenen Person für vom Kunden bereitgestellte Daten: Beratungsdienste einschließlich FastTrack-Migrationsdiensten 
+- **Antrag einer betroffenen Person für vom Kunden bereitgestellte Daten: Beratungsdienste einschließlich FastTrack-Migrationsdiensten** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

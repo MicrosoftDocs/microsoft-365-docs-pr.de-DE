@@ -2,21 +2,21 @@
 title: Dynamics 365-Datenbetreffsanforderungen für die DSGVO
 description: 'Leitfaden, wie unsere als Datenverantwortliche handelnden Kunden Microsoft-Produkte, -Dienste und -Verwaltungstools zum Suchen von und Reagieren auf personenbezogene Daten als Reaktion auf DSRs verwenden können:'
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285214"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Dynamics 365-Datenbetreffsanforderungen für die DSGVO
 
@@ -78,7 +78,7 @@ In den folgenden Artikeln finden Sie Informationen zur Vorbereitung und Beantwor
 
 Dynamics 365 ist ein Onlinedienst, der mehrere Datenverarbeitungsfunktionen als Software-as-a-Service (SaaS) anbietet. Damit bietet Dynamics 365 eine breite Palette von Funktionen zur Verarbeitung einer vielfältigen Sammlung von Daten, die je nach Art, Zweck oder anderen spezifischen Merkmalen wie Verkaufsdaten, Transaktionen, Finanzen, Personalinformationen usw. variieren können. Angesichts dieser Vielfalt bietet Dynamics 365 mehrere Formulare, Felder, Schemata, Endpunkte und Logik zur Verarbeitung von Kundendaten, was sich auch in den vielfältigen Möglichkeiten widerspiegelt, mit denen DSR in jeder Anwendung bearbeitet werden können. Wenn Dynamics 365-Anwendungen mehrere Möglichkeiten bieten, um spezifische DSR zu beantworten, werden wir diese in diesem Leitfaden auf die technischen Beschreibungen der einzelnen Anwendungen anmerken.
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>Suchen nach Kundendaten
 
 Der erste Schritt der Reaktion auf eine Anforderung bezüglich der Rechte betroffener Personen ist es, die Kundendaten zu suchen und zu ermitteln, auf die sich die Anforderung bezieht.
@@ -101,6 +101,8 @@ In Dynamics 365 for Marketing haben Sie die folgenden zusätzlichen Funktionen:
 
 2.  Nutzen Sie die Insight Views zu Kontakten und Objekten der Marketingausführung, um zusätzliche Datenpunkte zu identifizieren, die Kundendaten enthalten können.
 
+Dynamics 365 Customer Service Insights bietet Funktionen zum Antworten auf Anfragen nach Kopien persönlicher Daten, zum Löschen persönlicher Daten und zum Suchen persönlicher Daten für Data Subject Discovery Requests (DSRs). Einzelheiten hierzu finden Sie unter [Übersicht über DSGVO-Compliance für Dynamics 365-Kundendiensteinblicke](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** bietet Ihnen mehrere Möglichkeiten, nach Kundendaten zu suchen. Sie als Mandantenadministrator können die folgenden Aktionen durchführen, um nach Kundendaten zu suchen:
 
 -   Organisieren Sie Ihre Kundendaten so, dass sie der schnellen Auffindung personenbezogener Daten dienen, siehe [Datenbestände klassifizieren](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory).
@@ -114,6 +116,7 @@ In Dynamics 365 for Marketing haben Sie die folgenden zusätzlichen Funktionen:
 -   Erstellen Sie ein benutzerdefiniertes Formular, das personenbezogene Daten sucht und exportiert.
 
 -   Erstellen Sie ein externes Portal oder eine externe Website, das bzw. die es einem authentifizierten Kunden ermöglicht, seine personenbezogenen Daten einzusehen.
+
 
 ***Dynamics for Business Central*** bietet mehrere Optionen, mit denen Sie nach Daten suchen können. Einzelheiten hierzu finden Sie unter [Suchen, Filtern und Sortieren von Daten](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
 

@@ -3,22 +3,22 @@ title: 'Phase 6: Informationsschutz'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Infrastruktur für Informationsschutz in Microsoft 365 Enterprise.
-ms.openlocfilehash: 6df05479ae1ab7612c4b91d8c5e81f1207bbf0a6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 821c32eea09cde87155d0ee1ccdd81077d051d38
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287639"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6: Informationsschutz
 
@@ -40,7 +40,7 @@ Verwenden Sie anschließend die folgenden Schritte zum Erstellen vom Information
 |:-------|:-----|
 |![](./media/stepnumbers/Step1.png)|[Definieren von Sicherheits- und Informationsschutzebenen](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md)|
-|![](./media/stepnumbers/Step3.png)|[Konfigurieren der erhöhten Sicherheit für Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![](./media/stepnumbers/Step3.png)|[Konfigurieren der erhöhten Sicherheit für Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[Konfigurieren von Privileged Access Management für Office 365](infoprotect-configure-privileged-access-management.md)|
 
 

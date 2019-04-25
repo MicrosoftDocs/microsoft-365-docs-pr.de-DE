@@ -4,18 +4,19 @@ description: Ein nach Priorität aufgeschlüsselter Aktionsplan, den Sie abarbei
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 1e0232759bd33fb2bcaf66f7afd5334eed43fbbf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 3f81ad10d4549f9f28b5df4a0e090fb38a54bf6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283457"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>ISO 27001-Aktionsplan für Microsoft 365: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und danach
 
@@ -47,7 +48,7 @@ Die folgenden Maßnahmen können schnell umgesetzt werden und führen lediglich 
 |**Bereich**|**Aufgaben**|
 |Überblick über die Governance- und Complianceanforderungen im Rahmen der ISO 27001|• Bewertung und Management der Compliancerisiken Ihres Unternehmens und Durchführung einer ISO 27001:2013-Bewertung mit dem [Compliance-Manager](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000) von Microsoft im [Microsoft Service Trust Portal (STP)](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) sowie Definition von Standardvorgehensweisen (SOPs, Standard Operating Procedures) für jede der 14 Gruppen der ISO 27001
 |Beginn der Planung für eine unternehmensweite Implementierung einer Informationsklassifizierung sowie von Aufbewahrungsrichtlinien und Tools, mit denen Benutzer vertrauliche Daten und Ressourcen identifizieren, klassifizieren und schützen können|• Unterstützung der Benutzer bei der Identifizierung und Klassifizierung vertraulicher Daten gemäß den Informationssicherheitsrichtlinien und Standardvorgehensweisen (SOPs) Ihres Unternehmens durch Implementierung von Klassifizierungsrichtlinien und Bereitstellung der Anwendung [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) sowie Ausarbeitung eines Informationsklassifizierungsschemas (Richtlinien) samt Schulungs- und Implementierungsplan<br>• Unterstützung der Benutzer bei der Anwendung von Datenaufbewahrungs- und Sicherungsrichtlinien auf Inhalte durch den unternehmensweiten Rollout von [Office 365-Bezeichnungen](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30) sowie Planung der Bezeichnungen in Übereinstimmung mit den gesetzlichen Vorgaben zur Aufbewahrung von Informationen, samt Schulungs- und Rolloutplan
-|Schutz von Datensätzen mit Informationssicherheitsrelevanz vor Verlust, Löschung, Änderung und nicht autorisierten Zugriffen durch Erstellung von Überwachungs- und Verantwortlichkeitsrichtlinien im Rahmen der Standardvorgehensweisen (SOPs)|• Aktivierung der [Office 365-Überwachungsprotokollierung](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) und der [Postfachüberwachung](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (für alle Exchange-Postfächer) zur Überwachung von Office 365 auf potenziell böswillige Aktivitäten sowie als Grundlage für die forensische Analyse von Datenschutzverletzungen<br>• Regelmäßige Durchsuchung der Überwachungsprotokolle Ihrer Office 365-Mandanten zwecks Überprüfung etwaiger Änderungen an den Konfigurationseinstellungen der Mandanten<br>• Implementierung von [Office 365-Benachrichtigungsrichtlinien](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) im Office 365 Security & Compliance Center zur Benachrichtigung über vertrauliche Aktivitäten wie Rechteerweiterungen bei Benutzerkonten<br>• Verwendung der [Referenz zur Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) zur Integration in ein SIEM-Tool (Security Information and Event Management) für die langfristige Speicherung von Office 365-Überwachungsprotokolldaten
+|Schutz von Datensätzen mit Informationssicherheitsrelevanz vor Verlust, Löschung, Änderung und nicht autorisierten Zugriffen durch Erstellung von Überwachungs- und Verantwortlichkeitsrichtlinien im Rahmen der Standardvorgehensweisen (SOPs)|• Aktivierung der [Office 365-Überwachungsprotokollierung](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) und der [Postfachüberwachung](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (für alle Exchange-Postfächer) zur Überwachung von Office 365 auf potenziell böswillige Aktivitäten sowie als Grundlage für die forensische Analyse von Datenschutzverletzungen<br>• Regelmäßige Durchsuchung der Überwachungsprotokolle Ihrer Office 365-Mandanten zwecks Überprüfung etwaiger Änderungen an den Konfigurationseinstellungen der Mandanten<br>• Implementierung von [Office 365-Benachrichtigungsrichtlinien](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) im Microsoft 365 Security & Compliance Center zur Benachrichtigung über vertrauliche Aktivitäten wie Rechteerweiterungen bei Benutzerkonten.<br>• Verwendung der [Referenz zur Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) zur Integration mit einem SIEM-Tool (Security Information and Event Management) für die langfristige Speicherung von Office 365-Überwachungsprotokolldaten.
 |Definition von Administratorrollen und Sicherheitsrollen im Unternehmen sowie von angemessenen Richtlinien für Funktionstrennung|• Verwendung der [Office 365-Administratorrollen](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) zur Implementierung von Funktionstrennung hinsichtlich Administrationsaufgaben Hinweis: Viele Administratorrollen in Office 365 haben ein Pendant in Exchange Online, SharePoint Online und Skype for Business Online.<br>• Segmentierung von Berechtigungen, damit kein einzelner Administrator mehr Zugriffsrechte hat als erforderlich|
 
 

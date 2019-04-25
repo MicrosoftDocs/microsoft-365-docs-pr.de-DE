@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von SharePoint Online for Business für Microsoft 365 Enterprise
+title: Bereitstellen von SharePoint Online und OneDrive for Business für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/19/2018
@@ -8,19 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint Online in Microsoft 365 Enterprise in Ihrem Unternehmen.
-ms.openlocfilehash: 7a9fc1733c64b3f639d2de0b5b64e20df60e04a9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290899"
 ---
-# <a name="deploy-sharepoint-online-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint Online für Microsoft 365 Enterprise
+# <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint Online und OneDrive for Business für Microsoft 365 Enterprise
 
+*Diese Workload ist in den Versionen E3 und E5 von Microsoft 365 Enterprise enthalten.*
 
 In SharePoint Online und Microsoft Teams können Sie Dateien speichern und freigeben, Inhalte verwalten und zusammenarbeiten. Beide sind wesentliche Bestandteile des Mehrwerts Built for Teamwork von Microsoft 365 Enterprise. 
 
@@ -28,11 +29,9 @@ SharePoint Online verfügt zudem über erweiterte Sicherheitsfunktionen, einschl
 
 Wenn Sie ganz neu in SharePoint Online sind, finden Sie unter [SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) und [Erste Schritte mit SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics) weitere Informationen.
 
-Die folgenden Phasen und Schritte führen Sie durch den Prozess der Betrachtung der Rolle von SharePoint Online in Ihrer Organisation, des Onboardings Ihrer Organisation über eine Reihe progressiver Einführungen sowie die Förderung der Nutzung und dessen Wert für Ihre Endbenutzer. Diese Bereitstellungsanweisungen sollten erst nach Abschluss der [Fundamentinfrastruktur](deploy-foundation-infrastructure.md) befolgt werden. 
+Die folgenden Phasen und Schritte führen Sie durch den Prozess der Betrachtung der Rolle von SharePoint Online in Ihrer Organisation, des Onboardings Ihrer Organisation über eine Reihe progressiver Einführungen sowie die Förderung der Nutzung und dessen Wert für Ihre Endbenutzer. Bevor Sie beginnen, stellen Sie sicher, dass Sie die richtigen [Foundation-Infrastruktur](deploy-foundation-infrastructure.md)-Phasen konfiguriert haben, sodass Ihre SharePoint Online-Websites die erforderlichen Sicherheitsfunktionen aufweisen. 
 
->[!Note]
->Anleitungen zum Bereitstellen von OneDrive for Business für Microsoft 365 Enterprise finden Sie im [OneDrive-Leitfaden für Unternehmen](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
->
+Anleitungen zum Bereitstellen von OneDrive for Business für Microsoft 365 Enterprise finden Sie im [OneDrive-Leitfaden für Unternehmen](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
 
 ## <a name="phase-1-envision"></a>Phase 1: Betrachten
 In dieser Phase bringen Sie die Personen für Ihre SharePoint Online-Bereitstellung zusammen und bestimmen, wie SharePoint Online in Ihrer Organisation verwendet wird, um deren Geschäftsanforderungen zu erfüllen.

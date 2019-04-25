@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über wichtige Überlegungen zu Windows- und Office-Sicherheit und -Compliance.
-ms.openlocfilehash: 3b0e9ae38f988b8c148fe67eeeb629a9fce23037
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290031"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Schritt 5: Überlegungen zu Sicherheit und Compliance
-
-Überprüfen Sie die Optionen für die Nutzung neuer Sicherheits- und Compliance-Funktionen im Rahmen der Bereitstellung von modernen Desktops zusammen mit den Aspekten und allgemeinen Hindernissen beim Übergang von früheren Versionen von Windows und Office.
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -39,7 +37,7 @@ ms.locfileid: "26868026"
 >Sicherheit und Compliance ist der fünfte Schritt in dem von uns empfohlenen Rad für den Bereitstellungsprozess, der die Sicherheit in Windows 10 und Office 365 ProPlus sowie Compliance behandelt. Wenn Sie den vollständigen Desktopbereitstellungsprozess sehen möchten, besuchen Sie das [Bereitstellungscenter für modernen Desktop](https://aka.ms/HowToShift).
 >
 
-Viele der sicherheitsbezogenen Funktionen in Windows 10 treiben bereits allein den Übergang zu neueren Plattformen voran. Darüber hinaus bieten die Integration mit Clouddiensten in Office 365 und Identitätsoptionen in Azure Active Directory Zugriff auf neue und fortlaufend aktualisierte Schutzmechanismen für Ihre Daten, Geräte und Benutzer.
+Überprüfen Sie nun die Optionen für die Nutzung neuer Sicherheits- und Compliance-Funktionen im Rahmen der Windows 10- und Office 365 ProPlus-Bereitstellung zusammen mit den Aspekten und allgemeinen Hindernissen beim Übergang von früheren Versionen von Windows und Office. Viele der sicherheitsbezogenen Funktionen in Windows 10 treiben bereits allein den Übergang zu neueren Plattformen voran. Darüber hinaus bieten die Integration mit Clouddiensten in Office 365 und Identitätsoptionen in Azure Active Directory Zugriff auf neue und fortlaufend aktualisierte Schutzmechanismen für Ihre Daten, Geräte und Benutzer.
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>Überwinden potenzieller sicherheitsbezogener Bereitstellungsblockaden
 

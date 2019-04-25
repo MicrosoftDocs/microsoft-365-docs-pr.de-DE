@@ -3,22 +3,22 @@ title: 'Schritt 1: Vorbereiten Ihres Netzwerks für Microsoft 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 01/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegende Informationen zur Internetbandbreite für die Clouddienste von Microsoft 365 Enterprise.
-ms.openlocfilehash: 412ef53b0e2f87ff07d7a5b3f0d640629d40fbfd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb1e62b116a56273098d9c26bee646e7b5d6f7f3
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291083"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>Schritt 1: Vorbereiten Ihres Netzwerks für Microsoft 365
 
@@ -32,7 +32,9 @@ Schritt 1:
 - Richten Sie Ihr Netzwerk an einer [Office 365-Referenzarchitektur](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2) aus.
 - Planen Sie die Änderungen, machen Sie einen Pilotversuch, und testen Sie dann, ob die Änderungen Ihren Latenzanforderungen hinsichtlich Bandbreite und Datenverkehr entsprechen.
 
-Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-criteria.md#crit-networking-step1) für diesen Schritt betrachten.
+Informationen und Vorschläge zur Verwendung von ExpressRoute mit Office 365 und den anderen Clouddiensten von Microsoft 365 Enterprise finden Sie unter [Azure ExpressRoute für Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute).
+
+Als Zwischenprüfung können Sie sich die [Beendigungskriterien](networking-exit-criteria.md#crit-networking-step1) für diesen Schritt anschauen.
 
 ## <a name="next-step"></a>Nächster Schritt
 

@@ -12,7 +12,7 @@
 ### [Phase 2: Identität](identity-infrastructure.md)
 #### [Schritt 1: Planen von Benutzern und Gruppen](identity-plan-users-groups.md)
 #### [Schritt 2: sichern ihrer privilegierten Identitäten](identity-designate-protect-admin-accounts.md)
-#### [Schritt 3: Konfigurieren der Hybrid Identität](identity-azure-ad-connect.md)
+#### [Schritt 3: Konfigurieren der Hybrididentität](identity-azure-ad-connect.md)
 #### [Schritt 4: Konfigurieren der sicheren Benutzerauthentifizierung](identity-multi-factor-authentication.md)
 #### [Schritt 5: Vereinfachen des Zugriffs für Benutzer](identity-password-reset.md)
 #### [Schritt 6: Verwenden von Gruppen für eine einfachere Verwaltung](identity-self-service-group-management.md)
@@ -46,7 +46,7 @@
 ### [Standardkonfiguration]()
 #### [Leicht](lightweight-base-configuration-microsoft-365-enterprise.md)
 #### [Simuliertes Unternehmen](simulated-ent-base-configuration-microsoft-365-enterprise.md)
-### [Identity]()
+### [Identität]()
 #### [Kennworthash Synchronisierung](password-hash-sync-m365-ent-test-environment.md)
 #### [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md)
 #### [Nahtloses einmaliges Anmelden in Azure AD](single-sign-on-m365-ent-test-environment.md)
@@ -56,6 +56,10 @@
 #### [Kennwortzurücksetzung](password-reset-m365-ent-test-environment.md)
 #### [Automatische Lizenzierung und Gruppenmitgliedschaft](automate-licenses-group-membership-microsoft-365-test-environment.md)
 #### [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
+#### [Identitäts-und Geräte Zugriff](identity-device-access-m365-test-environment.md)
+##### [Rein cloudbasiert](cloud-only-prereqs-m365-test-environment.md)
+##### [Kennworthash Synchronisierung (PHS)](phs-prereqs-m365-test-environment.md)
+##### [Passthrough-Authentifizierung (PTA)](pta-prereqs-m365-test-environment.md)
 ### [Verwaltung mobiler Geräte]()
 #### [Registrieren von iOS- und Android-Geräten.](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 #### [Geräte Konformitätsrichtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
@@ -67,7 +71,7 @@
 ### [Übersicht](contoso-overview.md)
 ### [Contosos IT-Infrastruktur und -Anforderungen](contoso-infra-needs.md)
 ### [Netzwerk](contoso-networking.md)
-### [Identity](contoso-identity.md)
+### [Identität](contoso-identity.md)
 ### [Windows 10 Enterprise](contoso-win10.md)
 ### [Office 365 ProPlus](contoso-o365pp.md)
 ### [Verwaltung mobiler Geräte](contoso-mdm.md)
@@ -83,7 +87,7 @@
 ## [Schritt 4: Migration von Benutzerdateien und -einstellungen](step-4-user-files-and-settings-migration.md)
 ## [Schritt 5: Überlegungen zu Sicherheit und Compliance](step-5-security-and-compliance.md)
 ## [Schritt 6: Bereitstellung des Betriebssystems und Featureupdates](step-6-os-deployment-and-feature-updates.md)
-## [Schritt 7: Windows-und Office-Wartung](step-7-windows-and-office-as-a-service.md)
+## [Schritt 7: Windows und Office als Dienst](step-7-windows-and-office-as-a-service.md)
 ## [Schritt 8: Benutzerkommunikation und Schulung](step-8-user-communications-and-training.md)
 ## [Windows-und Office-Bereitstellung und Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [Hilfe zu Ihrer Bereitstellung](find-help-for-modern-desktop-deployment.md)
@@ -109,7 +113,6 @@
 #### [Microsoft-Support und Dienstleistungen](../compliance/gdpr-arc-prof-services.md)
 
 
-
 ### [Schutz von Daten](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
 
 ### [Datenbetreffsanforderungen](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
@@ -126,7 +129,6 @@
 #### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Microsoft-Support und Dienstleistungen](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
-
 
 ### [Datenschutz-Folgenabschätzung](../compliance/gdpr-data-protection-impact-assessments.md)
 #### [Office 365](../compliance/gdpr-dpia-office365.md)

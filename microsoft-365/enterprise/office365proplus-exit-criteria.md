@@ -3,22 +3,22 @@ title: Beendigungskriterien für die Office 365 ProPlus-Bereitstellung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 03/06/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für die Office 365 ProPlus-Infrastruktur erfüllt.
-ms.openlocfilehash: c38539d85e1c826667b7a8a177a15ab75350aa5f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c9a2afeae8d28170f4e8a15531a08e6b94cb48c2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291073"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Beendigungskriterien für die Office 365 ProPlus-Bereitstellung
 
@@ -26,7 +26,7 @@ ms.locfileid: "26867546"
 
 *Dies gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise und Microsoft 365 Education.*
 
-Bevor Sie zur nächsten Phase des Bereitstellungsprozesses übergehen, stellen Sie sicher, dass Ihre Konfiguration die folgenden erforderlichen Kriterien für die Office 365 ProPlus-Infrastruktur erfüllt.
+Stellen Sie sicher, dass Ihre Konfiguration die folgenden erforderlichen Kriterien für die Office 365 ProPlus-Infrastruktur erfüllt.
 
 - Die Bewertung der Infrastruktur und Umgebung ist abgeschlossen, einschließlich:
 
@@ -52,9 +52,12 @@ Bevor Sie zur nächsten Phase des Bereitstellungsprozesses übergehen, stellen S
     - Alle Clientgeräten befinden sich im entsprechenden Upatekanal und erhalten Updates
     - Auf allen Clientgeräten sind die entsprechenden Sprachen verfügbar oder wurden installiert
 
-## <a name="next-phase"></a>Nächste Phase 
 
+
+## <a name="results-and-next-steps"></a>Ergebnisse und nächste Schritte
+
+Ihre Client-Geräte weisen die aktuellen Versionen von Office 365 ProPlus auf und erhalten fortlaufend Updates.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Die nächste Phase im End-to-End-Bereitstellungsprozess für Microsoft 365 Enterprise ist die [Verwaltung mobiler Geräte](mobility-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, ist die nächste Phase [Verwaltung mobiler Geräte](mobility-infrastructure.md). |

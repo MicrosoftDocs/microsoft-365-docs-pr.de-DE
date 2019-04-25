@@ -9,22 +9,22 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Netzwerkinfrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: d575d8c3156ac1fc1a8a2bca96c875d4587ebf05
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291183"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Phase 1: Netzwerkinfrastruktur für Microsoft 365 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 Enterprise enthält Office 365 und Windows Intune als Teil von  Enterprise Management + Security (EMS). Beide cloudbasierten Dienste basieren auf der Sicherheit, Leistung und Zuverlässigkeit der Verbindungen von Clientgeräten über das Internet oder dedizierte Leitungen. Um diese Dienste zu hosten und sie für Kunden auf der ganzen Welt verfügbar zu machen, hat Microsoft eine Netzwerkinfrastruktur entwickelt, deren Fokus auf Leistung und Integration liegt. 
+Microsoft 365 Enterprise enthält Office 365 und Microsoft Intune als Teil von Enterprise Management + Security (EMS). Beide cloudbasierten Dienste basieren auf der Sicherheit, Leistung und Zuverlässigkeit der Verbindungen von Clientgeräten über das Internet oder dedizierte Leitungen. Um diese Dienste zu hosten und sie für Kunden auf der ganzen Welt verfügbar zu machen, hat Microsoft eine Netzwerkinfrastruktur entwickelt, deren Fokus auf Leistung und Integration liegt. 
 
 In dieser Phase durchlaufen Sie die wichtigsten Aspekte zum Erstellen einer leistungsfähigen Verbindung zu den Clouddiensten von Microsoft 365 Enterprise. Eine Übersicht finden Sie unter [Office 365-Netzwerkkenntnisse](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 

@@ -4,21 +4,21 @@ description: Visual Studio-Familie – Datensubjektanforderungen für die DSGVO
 keywords: Visual Studio, Visual Studio Code, Visual Studio für Mac, Visual Studio-Dokumentation, Datenschutz, DSGVO
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286923"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Visual Studio-Familie – Datensubjektanforderungen für die DSGVO
 
@@ -101,7 +101,7 @@ Das öffentliche Feedback umfasst Folgendes: gemeldete Probleme, Kommentare und 
 
 Führen Sie diese Schritte aus, um Ihre Feedbackdaten anzuzeigen:
 
-1. Melden Sie sich an der [Entwickler-Community](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profil und Einstellungen**.
+1. Melden Sie sich bei der [Entwicklercommunity](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profil und Einstellungen**.
 2. Klicken Sie auf die Registerkarte **Profil**, **Benachrichtigungen**, **Aktivität** oder **Anhänge**, um die an die Feedbacksysteme übermittelten Daten anzuzeigen.
    1. **Profil** bezieht sich auf Ihr Profil für die [Entwickler-Community](https://developercommunity.visualstudio.com) und enthält den Benutzernamen, die E-Mail-Adresse, allgemeine Informationen usw.
    2. Unter **Benachrichtigungen** steuern Sie, welche E-Mail-Benachrichtigungen Sie erhalten.
@@ -121,7 +121,7 @@ Sie können Ihre Feedbackdaten im Rahmen der Datensubjektanforderung exportieren
 
 Führen Sie diese Schritte aus, um einen Export zu starten:
 
-1. Melden Sie sich an der [Entwickler-Community](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profil und Einstellungen**.
+1. Melden Sie sich bei der [Entwicklercommunity](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profil und Einstellungen**.
 2. Klicken Sie auf die Registerkarte **Datenschutz**, und klicken Sie dann auf **Archiv erstellen**, um den Export Ihrer Daten anzufordern.
 3. **Archivstatus** wird aktualisiert, um anzuzeigen, dass die Daten aufbereitet werden. Der Zeitraum bis zur Verfügbarkeit der Daten richtet sich nach der Menge der Daten, die exportiert werden müssen.
 4. Wenn die Daten bereitstehen, senden wir Ihnen eine E-Mail.
