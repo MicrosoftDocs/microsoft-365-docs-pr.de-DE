@@ -5,19 +5,21 @@ description: Schutz von Daten für die Datenschutz-Grundverordnung (DSGVO)
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 371efa4e1c3e3375cd43dcc661d8aa549788baba
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 94ec13437ff297381b4ea8aca0e9370f295f249e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285187"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 
@@ -51,8 +53,7 @@ Microsoft bietet eine empfohlene Konfiguration, die Sie als Ausgangspunkt verwen
 
 Der Bedrohungsschutz ist in Microsoft 365-Diensten integriert. Nachfolgend finden Sie einige Ressourcen für die ersten Schritte:
 - [Office 365-Sicherheits-Roadmap: Die obersten Prioritäten für die ersten 30 Tage, die 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). Diese Roadmap enthält Empfehlungen für das Implementieren von Funktionen. 
-- 
-  [Schutz vor Bedrohungen in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Informationen Sie Schutzmaßnahmen, die Sie im Office 365 Security and Compliance Center ergreifen können.
+- [Schutz vor Bedrohungen in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Erfahren Sie mehr über die Schutzaktion, die Sie im Microsoft 365 Security Center ergreifen können.
 - [Windows-Bedrohungsschutz](https://docs.microsoft.com/windows/security/threat-protection/). Weitere Informationen zu Windows Defender Advanced Threat Protection und anderen Funktionen in Windows 10.
 
 
