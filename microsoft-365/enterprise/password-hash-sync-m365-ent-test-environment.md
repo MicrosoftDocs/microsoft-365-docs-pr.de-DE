@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Kennworthashsynchronisierung und Anmeldung für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 3cee2b69ce34647627cb2b72f9e0f59a6fba17e9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290978"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
-Viele Organisationen verwenden Azure AD Connect und Kennworthashsynchronisierung, um den Kontensatz in ihrer lokalen Windows Server Active Directory (AD)-Gesamtstruktur mit dem Kontensatz im Azure AD-Mandanten ihrer Office 365- und EMS E5-Abonnements zu synchronisieren. In diesem Artikel wird beschrieben, wie Sie die Kennworthashsynchronisierung zu Ihrer Microsoft 365-Testumgebung hinzufügen und so die folgende Konfiguration implementieren können:
+Viele Organisationen verwenden Azure AD Connect und die Kennwort-Hash-Synchronisierung, um die Gruppe von Konten in ihrer lokalen Active Directory Domain Services(AD DS)-Gesamtstruktur mit den Konten im Azure AD-Mandanten ihrer Office 365- und EMS E5-Abonnements zu synchronisieren. In diesem Artikel wird beschrieben, wie Sie Kennwort-Hash-Synchronisierung in der Microsoft 365-Testumgebung hinzufügen können, woraus die folgende Konfiguration resultiert:
   
 ![Das simulierte Unternehmen mit Kennworthashsynchronisierung für die Testumgebung](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -45,8 +45,8 @@ Befolgen Sie die Anweisungen in der [simulierten Unternehmensstandardkonfigurati
   
 Diese Konfiguration besteht aus:  
   
-- Testversionen oder dauerhaften Abonnements von Office 365 E5 und EMS E5
-- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus den virtuellen Computern DC1, APP1 und CLIENT1 in einem virtuellen Azure-Netzwerk besteht. DC1 ist der Domänencontroller für die Windows Server AD-Domäne „testlab. \<Ihr öffentlicher Domänenname>.
+- Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5.
+- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem virtuellen Azure-Netzwerk besteht. DC1 ist ein Domänencontroller für die Active Directory Domain Services(AD DS)-Domäne testlab.\<Name Ihrer öffentlichen Domäne>.
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>Phase 2: Erstellen und Registrieren der TestLab-Domäne
 
@@ -54,7 +54,7 @@ In dieser Phase fügen Sie eine öffentliche DNS-Domäne zu Ihrem Abonnement hin
 
 Als erstes arbeiten Sie mit Ihrem öffentlichen DNS-Registrierungsanbieter, um einen neuen öffentlichen DNS-Domänennamen basierend auf Ihrem aktuellen Domänennamen zu erstellen, und fügen diesen Ihrem Office 365-Abonnement hinzu. Es wird empfohlen, dass Sie den Namen **testlab.**\<Ihre öffentliche Domäne> verwenden. Wenn Ihre öffentliche Domänenname beispielsweise <span>**contoso</span>.com** ist, fügen Sie den öffentlichen Domänennamen **<span>testlab</span>.contoso.com** hinzu.
   
-Als Nächstes fügen Sie die Domäne **testlab.**\<Ihre öffentliche Domäne> zu Ihrer Testversion oder zu Ihrem dauerhaften Abonnement von Office 365 hinzu, indem Sie den Domänenregistrierungsprozess durchlaufen. Dieser besteht aus dem Hinzufügen zusätzlicher DNS-Einträge zur Domäne **testlab.**\<Ihre öffentliche Domäne>. Weitere Informationen finden Sie unter [Hinzufügen von Benutzern und Domänen zu Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
+Als Nächstes fügen Sie die Domäne **testlab.**\<Ihre öffentliche Domäne> zu Ihrer Office 365-Testversion oder Ihrem bezahlten Abonnement hinzu, indem Sie den Domänenregistrierungsprozess durchlaufen. Dies umfasst das Hinzufügen von zusätzlichen DNS-Einträgen zur Domäne **testlab.** \<Ihre öffentliche Domäne>. Weitere Informationen finden Sie unter [Hinzufügen von Benutzern und Domäne zu Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
@@ -62,14 +62,14 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 Diese Konfiguration besteht aus: 
 
-- Testversionen oder dauerhaften Abonnements von Office 365 E5 und EMS E5 mit der registrierten DNS-Domäne „testlab.\<Name Ihrer öffentlichen Domäne>“
+- Testversionen oder kostenpflichtige Abonnements von Office 365 E5 und EMS E5 mit der registrieren DNS-Domäne testlab.\<Name Ihrer öffentlichen Domäne>.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht.
 
 Für „testlab.\<Name Ihrer öffentlichen Domäne>“ gilt jetzt Folgendes:
 
 - Die Domäne wird von öffentlichen DNS-Datensätzen unterstützt.
 - Die Domäne ist in Ihren Office 365- und EMS-Abonnements registriert.
-- Die Domäne ist die Windows Server AD-Domäne in Ihrem simulierten Intranet.
+- Die Domäne ist die AD DS-Domäne in Ihrem simulierten Intranet.
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Phase 3: Installieren von Azure AD Connect auf APP1
 
@@ -103,15 +103,15 @@ Installieren Sie zunächst Azure AD Connect auf APP1 und konfigurieren Sie es.
     
 10. Klicken Sie auf der Seite **Konfiguration abgeschlossen** auf **Beenden**.
     
-11. Gehen Sie im Internet Explorer zum Office 365-Portal ([https://portal.office.com](https://portal.office.com)).
+11. Gehen Sie im Internet Explorer zum Office-Portal ([https://office.com](https://office.com)).
     
 12. Klicken Sie auf der Hauptportalseite auf **Admin**.
     
 13. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
-    Sie sehen das Konto **Benutzer1**. Dieses Konto gehört zur Windows Server AD-Domäne „TESTLAB“. Dass es angezeigt wird, belegt, dass die Verzeichnissynchronisierung erfolgreich war.
+    Sie sehen das Konto **Benutzer 1**. Dieses Konto gehört zur AD DS-Domäne „TESTLAB“. Dass es angezeigt wird, belegt, dass die Verzeichnissynchronisierung erfolgreich war.
     
-14. Klicken Sie auf das Konto **Benutzer1**. Für Produktlizenzen klicken Sie auf **Bearbeiten**.
+14. Klicken Sie auf das Konto**Benutzer1**. Für Produktlizenzen klicken Sie auf **Bearbeiten**.
     
 15. Wählen Sie unter **Product licenses** Ihr Land/Ihre Region aus, und klicken Sie dann für **Office 365 Enterprise E5** auf **Off**. (So schalten Sie die Lizenz auf **On**.) Führen Sie für die Lizenz **Enterprise Mobility + Security E5** die gleichen Schritte aus. 
 
@@ -123,7 +123,7 @@ Als Nächstes testen Sie, ob Sie sich mit dem Benutzernamen <strong>Benutzer1@te
 
 2. Wenn Sie aufgefordert werden, einen Benutzernamen und ein Kennwort anzugeben: Geben Sie „<strong>user1@testlab.</strong>\<Name Ihrer öffentlichen Domäne>“ und das Kennwort für „Benutzer1“ an. Sie sollten sich erfolgreich als „Benutzer1“ anmelden können. 
  
-„Benutzer1“ hat zwar Domänenadministratorberechtigungen für die Windows Server AD-Domäne „TESTLAB“, ist aber kein globaler Office 365-Administrator. Deshalb wird das Symbol **Administrator** nicht als Option angezeigt. 
+Beachten Sie, dass „Benutzer 1" zwar über Administratorberechtigungen für die AD DS-Domäne TESTLAB verfügt, er aber kein globaler Administrator für Office 365 ist. Daher wird das Symbol **Admin** nicht als Option angezeigt. 
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 
@@ -131,9 +131,9 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 
 Diese Konfiguration besteht aus:  
   
-- Testversionen oder dauerhaften Abonnements von Office 365 E5 und EMS E5 mit der registrieren DNS-Domäne „TESTLAB.\<Ihr Domänenname>.
-- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. Azure AD Connect wird auf APP1 ausgeführt, um die Windows Server Active Directory-Domäne „TESTLAB“ mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements regelmäßig zu synchronisieren.
-- Das Konto „Benutzer1“ in der Windows Server AD-Domäne „TESTLAB“ wurde mit dem Azure AD-Mandanten synchronisiert.
+- Testversionen oder kostenpflichtigen Abonnements von Office 365 E5 und EMS E5 mit der registrieren DNS-Domäne „TESTLAB.\<Ihr Domänenname>.
+- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. Azure AD Connect wird auf APP1 ausgeführt, um die AD DS-Domäne "TESTLAB" mit dem Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements regelmäßig zu synchronisieren.
+- Das Konto „Benutzer 1“ in der AD DS-Domäne „TESTLAB“ wurde mit dem Azure AD-Mandanten synchronisiert.
 
 ## <a name="next-step"></a>Nächster Schritt
 

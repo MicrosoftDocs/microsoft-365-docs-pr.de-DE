@@ -1,5 +1,5 @@
 ---
-title: Lab-Kit für moderne Desktop-Bereitstellung und -Verwaltung
+title: Deployment Lab Kit für Windows und Office
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,35 +12,35 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Erfahren Sie mehr über das Lab-Kit für moderne Desktop-Bereitstellung und -Verwaltung und wo Sie auf es zugreifen können.
-ms.openlocfilehash: 1423b0deb74d306cbbc0dc088fed9827ec01782c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
+ms.openlocfilehash: 2db50816f4a87007ce74fef934d3a4211cf4e905
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291100"
 ---
-# <a name="modern-desktop-deployment-and-management-lab-kit"></a>Lab-Kit für moderne Desktop-Bereitstellung und -Verwaltung
+# <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
 Diese herunterladbaren praktischen Übungen legen den Fokus auf die Windows 10- und Office 365-Bereitstellung sowie die verknüpften Konfigurations- und Verwaltungsaspekte nach der Bereitstellung. Die Schulung wird dringend für Organisationen empfohlen, die sich auf das Windows 7-End of Life vorbereiten, ist jedoch auch sinnvoll, wenn Sie aktuell Windows 10 und Office 365 Plus oder Office 2019 nutzen. Enthalten sind Leitfäden für Windows 10, Office 365 ProPlus, Enterprise Mobility + Security und verknüpfte Produkte und Dienste.
 
-Diese Übungen dienen zum Planen, Testen und Validieren der Bereitstellung und Verwaltung von modernen Desktops mit Windows 10 Enterprise und Office 365 ProPlus. Sie behandeln die Schritte und Tools im Bereich Modern Desktop Deployment, darunter System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive und Windows Autopilot.
+Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Office 365 ProPlus. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot und mehr umfasst.
 
-Im Rahmen des [Modern Desktop Deployment](http://www.aka.ms/howtoshift)-Prozesses für Windows 10 und Office 365 ProPlus ist die Erstellung einer Sandbox- oder isolierten Übungsumgebung der empfohlene Startpunkt bei der Beschäftigung mit Bereitstellungstool-Updates und Tests der bereitstellungsbezogenen Automatisierung.
+Im Rahmen der [Desktop-Bereitstellung](http://www.aka.ms/howtoshift) für Windows 10 und Office 365 ProPlus ist die Erstellung einer Sandbox- oder isolierten Übungsumgebung der empfohlene Startpunkt bei der Beschäftigung mit Bereitstellungstool-Updates und Tests der bereitstellungsbezogenen Automatisierung.
 
 Das Lab-Kit ist kostenlos herunterladbar und verwendet Testsoftware.
 
-[**HERUNTERLADEN**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Herunterladen des Deployment Lab Kit für Windows und Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-**Vollständige Übungsumgebung**
+## <a name="a-complete-lab-environment"></a>**Vollständige Übungsumgebung**
 
 Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschließlich Domänen-Desktop-Clients, Domänencontroller, Internetgateway und einer vollständig konfigurierten ConfigMgr-Instanz. Sie beinhaltet Evaluierungsversionen der folgenden Produkte:
 
-  - Windows 10 Enterprise, Version 1803
+  - Windows 10 Enterprise, Version 1809
   - Windows 7
-  - Office 365 ProPlus, Version 1807
+  - Office 365 ProPlus, Version 1901
   - System Center Configuration Manager, Version 1802
-  - Windows Assessment and Deployment Kit for Windows 10, Version 1803
+  - Windows Assessment and Deployment Kit for Windows 10, Version 1809
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
@@ -55,39 +55,39 @@ Oder
   - Office 365 Enterprise E5
   - Enterprise Mobility + Security
 
-**Schritt-für-Schritt-Übungen**
+## <a name="step-by-step-labs"></a>**Schritt-für-Schritt-Übungen**
 
 Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarios, einschließlich:
 
-**Geräte- und App-Bereitschaft**
+### <a name="device-and-app-readiness"></a>**Geräte- und App-Bereitschaft**
 
   - Windows Analytics
   - Enterprise Mode und Enterprise Mode Site List für Internet Explorer
 
-**Verzeichnis- und Netzwerkbereitschaft**
+### <a name="directory-and-network-readiness"></a>**Verzeichnis- und Netzwerkbereitschaft**
 
   - Basisinstallation für Azure Active Directory und Microsoft 365
   - Netzwerkoptimierung mit Delivery Optimization, Peer Cache in ConfigMgr und LEDBAT
-  - **NEU** ConfigMgr und Microsoft Intune Co-Management
-  - **NEU** Remotezugriff (VPN)
+  - ConfigMgr und Microsoft Intune Co-Management
+  - Remotezugriff (VPN)
 
-**Liefern von Office- und Branchen-Apps**
+### <a name="office-and-lob-app-delivery"></a>**Liefern von Office- und Branchen-Apps**
 
   - Bereitstellen von Office 365 ProPlus mithilfe von System Center Configuration Manager
   - Bereitstellen von Office 365 ProPlus mit Microsoft Intune
   - App-Bereitstellung und -Verwaltung mit Microsoft Intune
   - App-Bereitstellung und Self-Service-Installation mit Microsoft Store for Business
   - Desktop Bridge-Anwendungskonvertierung in UWP
-  - **NEU** Windows App Certification Kit
+  - Zertifizierungskit für Windows-App
   - Browserkompatibilitätskorrektur mit Enterprise Mode für IE
 
-**Migration von Benutzerdateien und -einstellungen**
+### <a name="user-file-and-settings-migration"></a>**Migration von Benutzerdateien und -einstellungen**
 
   - Migrationstool für den Benutzerstatus als Teil von Aufgabensequenzen für die PC-Aktualisierung und -Ersetzung in ConfigMgr und MDT
   - Verschieben bekannter Ordner in OneDrive
   - Enterprise State Roaming
 
-**Sicherheit und Compliance**
+### <a name="security-and-compliance"></a>**Sicherheit und Compliance**
 
   - BitLocker-Geräteverschlüsselung
   - Windows Defender Antivirus
@@ -99,7 +99,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
 
-**Bereitstellung des Betriebssystems und Featureupdates**
+### <a name="os-deployment-and-feature-updates"></a>**Bereitstellung des Betriebssystems und Featureupdates**
 
   - Erstellung von Betriebssystem-Images
   - Aufgabensequenzen für Betriebssystembereitstellung in ConfigMgr
@@ -111,21 +111,21 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Feature-Updates mit Aufgabensequenzen für Upgrade in ConfigMgr
   - Windows Autopilot
 
-**Office und Windows as a Service**
+### <a name="windows-and-office-servicing"></a>**Windows und Office als Dienst**
 
   - Verwaltung von Softwareupdates mit Configuration Manager
   - Verwaltung von Office 365 ProPlus-Updates in Configuration Manager
   - Mobile Device Management für Windows 10 mit Microsoft Intune
 
-[**HERUNTERLADEN**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Herunterladen des Deployment Lab Kit für Windows und Office**](https://aka.ms/mddlabs_evalcenter)
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB empfohlen. Die Übung läuft am 9. Dezember 2018 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 13. Mai 2019 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
-**Zusätzliche Anleitung**
+## <a name="additional-guidance"></a>**Zusätzliche Anleitung**
 
-  - [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Bereitstellungscenter für Desktop](http://www.aka.ms/howtoshift)
 
-  - [Videos zu Modern Desktop Deployment von Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
   - [System Center Configuration Manager – Betriebssystembereitstellung](https://docs.microsoft.com/de-DE/sccm/osd/understand/introduction-to-operating-system-deployment)
 
@@ -135,7 +135,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
   - [<span class="underline">Erste Schritte mit Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-> **Verwandte Ressourcen**
+## <a name="related-resources"></a>**Verwandte Ressourcen**
 
   - [<span class="underline">Einführung in Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
