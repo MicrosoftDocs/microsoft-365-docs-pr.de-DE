@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 4: Konfigurieren von Privileged Access Management für Office 365'
+title: 'Schritt 6: Konfigurieren von privileged Access Management für Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Verstehen und Konfigurieren von Privileged Access Management für Office 365.
-ms.openlocfilehash: 297d8e042c2a22c93b4ea566081d258e7ca0a5ab
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
+ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286948"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33304155"
 ---
-# <a name="step-4-configure-privileged-access-management-for-office-365"></a>Schritt 4: Konfigurieren von Privileged Access Management für Office 365
+# <a name="step-6-configure-privileged-access-management-for-office-365"></a>Schritt 6: Konfigurieren von privileged Access Management für Office 365
 
 *Dieser Schritt ist optional und gilt nur für die Versionen E5 und Advanced Compliance von Microsoft 365 Enterprise.*
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie im Thema [Privileged Access Management in Offic
 
 Das Ergebnis dieses Schritts ist, dass Sie die Sicherheit von Office 365 durch Aktivieren der Just-in-Time-Zugriffssteuerung für wichtige Daten und Konfigurationseinstellungen für Ihre Organisation erhöht haben.
 
-Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step5) für diesen Schritt betrachten.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step6) für diesen Schritt betrachten.
 
 ## <a name="next-step"></a>Nächster Schritt
 
