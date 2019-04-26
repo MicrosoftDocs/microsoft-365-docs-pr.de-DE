@@ -1,64 +1,53 @@
 ---
-title: 'Schritt 3: Konfigurieren der erhöhten Sicherheit für Office 365'
+title: 'Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verstehen und Konfigurieren der erhöhten Sicherheit für Office 365, einschließlich Office 365 ATP.
-ms.openlocfilehash: 0344778b8d8f9940dc6267a39eac2f4cfb261f9a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Verstehen und Konfigurieren der erhöhten Sicherheit für Microsoft 365
+ms.openlocfilehash: a1976a9305c40d721bd56a4b21b8a52552c1a9dc
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285078"
 ---
-# <a name="step-3-configure-increased-security-for-office-365"></a>Schritt 3: Konfigurieren der erhöhten Sicherheit für Office 365
+# <a name="step-3-configure-increased-security-for-microsoft-365"></a>Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Um sicherzustellen, dass Ihr Office 365-Abonnement und die darin enthaltenen Daten vor böswilligen Angriffen geschützt sind, lesen Sie die Informationen unter [Konfigurieren Ihres Office 365-Mandanten für erhöhte Sicherheit](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355), und konfigurieren Sie die folgende zusätzliche Sicherheit:
+Um sicherzustellen, dass Ihr Microsoft-365-Abonnement und die zugehörigen Daten vor böswilligen Angriffen geschützt sind, konfigurieren Sie Folgendes:
 
-- Richtlinien für die Bedrohungsverwaltung im Office 365 Security & Compliance Center
-- Zusätzliche mandantenweite Exchange Online-Einstellungen
-- Mandantenweite Freigaberichtlinien im SharePoint Admin Center
-- Azure Active Directory-Einstellungen
+- [Richtlinien zur Verwaltung von Bedrohungen optimieren](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-office-365-security--compliance-center)
+- [Zusätzliche mandantenweite Exchange Online-Einstellungen](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-additional-exchange-online-tenant-wide-settings)
+- [Mandantenweite Freigaberichtlinien im SharePoint Admin Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-tenant-wide-sharing-policies-in-sharepoint-admin-center)
+- [Azure Active Directory-Einstellungen (Azure AD)](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-settings-in-azure-active-directory)
 
 Nachdem Sie diese konfiguriert haben, können Sie Informationen zu Ihrem Sicherheitsstatus abrufen von:
 
-- Dashboards und Berichte im Security & Compliance Center
-- [Office 365 Secure Score](https://securescore.office.com/)
- 
-  Um auf diese Seite zugreifen zu können, müssen Sie als Office 365-Mandantenadministrator angemeldet sein.
+- [Dashboards und Berichte im Microsoft Security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
+- [Microsoft-Sicherheitsbewertung](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)
 
-Sie können Cloud App Security oder Office 365 Cloud App Security auch zur Überwachung von Sicherheitsvorfällen verwenden. Weitere Informationen finden Sie unter [Übersicht über Office 365 Cloud App Security](https://support.office.com/article/Overview-of-Office-365-Cloud-App-Security-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Ein zusätzliches Sicherheitsfeature ist [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp), mit dem Ihre Organisation sicherer zusammenarbeiten kann, indem:
 
-Ein zusätzliches Sicherheitsfeature ist Office 365 Advanced Threat Protection (ATP), mit dem Ihre Organisation sicherer zusammenarbeiten kann, indem:
+- [Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) und [Anlagen](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) in E-Mails geschützt werden. 
+- Spoofintelligenz und Anti-Phishing-Funktionen für E-Mails in Exchange Online und [Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams) bereitgestellt wird. 
 
-- Links und Anlagen in E-Mails geschützt werden. 
-- Spoofintelligenz und Anti-Phishing-Funktionen für E-Mails in Exchange Online und Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams bereitgestellt wird. 
-
->[!Note]
->Office 365 ATP ist im Lieferumfang von Microsoft 365 Enterprise E5 enthalten. Wenn Sie über Microsoft 365 Enterprise E3 verfügen, können Sie einzelne Lizenzen für ATP erwerben.
->
-
-Informationen zum Aktivieren von Office 365 ATP finden Sie unter [Aktivieren](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607#turniton).
-
-Weitere Informationen finden Sie unter [Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607).
-
+Office 365 ATP ist nur mit Microsoft 365 Enterprise E5 verfügbar.
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Konfigurieren der erhöhten Sicherheit von Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Konfigurieren der erhöhten Sicherheit von Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step4) für diesen Schritt betrachten.

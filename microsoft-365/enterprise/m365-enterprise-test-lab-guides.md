@@ -3,24 +3,24 @@ title: Testumgebungsanleitungen für Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: df723647748532936e40bbdb4e34ff698b9fa650
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283645"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -41,7 +41,7 @@ Zuerst erstellen Sie eine Testumgebung für [Microsoft 365 Enterprise](https:/
 
 - Verwenden Sie die [einfache Standardkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer reinen Cloudumgebung konfigurieren und demonstrieren möchten, die keine lokalen Komponenten umfasst.
 
-- Verwenden Sie die [simulierte Unternehmensstandardkonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer hybriden Cloudumgebung konfigurieren und demonstrieren möchten, die lokale Komponenten wie eine Windows Server Active Directory (AD)-Domäne verwendet.
+- Verwenden Sie die [simulierte Unternehmensstandardkonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer hybriden Cloudumgebung konfigurieren und demonstrieren möchten, die lokale Komponenten wie eine Active Directory Domain Services (AD DS)-Domäne verwendet.
     
 ## <a name="identity"></a>Identität
 
@@ -49,15 +49,15 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 - [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md)
   
-   Aktivieren und testen Sie die hashbasierte Verzeichnissynchronisierung von einem Windows Server AD-Domänencontroller.
+   Aktivieren und testen Sie die hashbasierte Verzeichnissynchronisierung von einem Active Directory Domain Services (AD DS-Domänencontroller.
 
 - [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md)
   
-   Aktivieren und testen Sie die Pass-Through-Authentifizierung an einen Windows Server AD-Domänencontroller.
+   Aktivieren und testen Sie die Pass-Through-Authentifizierung an einen AD DS-Domänencontroller.
 
 - [Nahtloses einmaliges Anmelden in Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Aktivieren und testen Sie das nahtlose einmalige Anmelden in Azure AD mit einem Windows Server AD-Domänencontroller.
+   Aktivieren und testen Sie das nahtlose einmalige Anmelden in Azure AD mit einem AD DS-Domänencontroller.
 
 - [Mehrstufige Authentifizierung](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -66,6 +66,10 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 - [Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
    Sperren Sie Ihre globalen Administratorkonten mit Office 365 Cloud App Security und Richtlinien für bedingten Zugriff.
+
+- [Rückschreiben des Kennworts](password-writeback-m365-ent-test-environment.md)
+
+   Verwenden Sie das Rückschreiben des Kennworts, um das Kennwort in Ihrem AD DS-Benutzerkonto aus Azure AD zu ändern.
 
 - [Kennwortzurücksetzung](password-reset-m365-ent-test-environment.md)
 
@@ -83,9 +87,9 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 Eine Veranschaulichung von Features und Funktionen im Zusammenhang mit der Verwaltung mobiler Geräte finden Sie unter:
 
-- [MAM-Richtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [Gerätekompatibilitätsrichtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   Erstellen Sie Richtlinien für Benutzergruppen und die mobile Anwendung (MAM) für iOS- und Android-Geräte.
+   Erstellen Sie eine Benutzergruppe und eine Gerätekompatibilitätsrichtlinie für Windows 10-Geräte.
     
 - [Registrieren von iOS- und Android-Geräten](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
@@ -104,12 +108,10 @@ Eine Veranschaulichung der schutzbezogenen Features und Funktionen finden Sie un
     
    Konfigurieren und Anwenden von Office 365-Bezeichnungen auf ein Dokument in einer SharePoint Online-Teamwebsite.
     
-- [Privileged Access Management für die Microsoft 365 Enterprise-Testumgebung](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    Konfigurieren von Privileged Access Management für Just-in-Time-Zugriff auf privilegierte Aufgaben mit erhöhten Rechten in Ihrer Office 365-Organisation.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Testumgebungsanleitungen zur Cloudakzeptanz](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
-    
-[Die One Microsoft Cloud-Testumgebungsanleitung](http://aka.ms/catlgstack)
+[Testen von Office 365 mit TLGs zur Cloudakzeptanz](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

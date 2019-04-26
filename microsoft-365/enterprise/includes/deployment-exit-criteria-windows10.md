@@ -9,7 +9,7 @@ Gegebenenfalls hilft Ihnen [Schritt 1](../windows10-prepare-your-org.md), diese 
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>Optional: Benutzer sind hinzugefügt und lizenziert
 
-Die entsprechenden Konten für Ihre Benutzer wurden hinzugefügt, entweder direkt zu Ihrem Azure AD-Mandanten für Ihre Office 365- und Intune-Abonnements oder über die Verzeichnissynchronisierung von Ihrem lokalen Windows Server AD.
+Die entsprechenden Konten für Ihre Benutzer wurden hinzugefügt, entweder direkt zu Ihrem Azure AD-Mandanten für Ihre Office 365- und Intune-Abonnements oder über die Verzeichnissynchronisierung von Ihren lokalen Active Directory Domain Services (AD DS).
 
 Nachdem Sie die Benutzer hinzugefügt haben, können Sie diesen Microsoft 365 Enterprise-Lizenzen zuweisen, entweder direkt als globaler Administrator oder Benutzeradministrator oder automatisch über die Gruppenmitgliedschaft.
 
@@ -27,8 +27,8 @@ Gegebenenfalls hilft Ihnen [Schritt 1](../windows10-prepare-your-org.md) bei die
 Zum Starten einer Tasksequenz des Konfigurations-Managers für ein direktes Upgrade auf einem Gerät unter Windows 7 oder Windows 8.1 müssen Sie die folgenden Schritte durchführen:
 
 - Festlegen der entsprechenden Windows-Diagnosedatenebene
-- Überprüfen der Bereitschaft für ein Upgrade von Windows
-- Erstellen einer Tasksequenz des Konfigurations-Managers, die eine Gerätesammlung und eine Bereitstellung des Betriebssystems mit einem Windows 10-Betriebssystemimage enthält
+- Sie haben die Bereitschaft für ein Upgrade von Windows überprüft.
+- Sie haben eine Configuration Manager-Tasksequenz erstellt, die eine Gerätesammlung und eine Bereitstellung des Betriebssystems mit einem Windows 10-Betriebssystemimage enthält.
 
 Nach Abschluss dieser Schritte können Sie direkte Upgrades auf Geräten durchführen, die für das Upgrade von Windows bereit sind. Um den maximalen Nutzen aus Microsoft 365 Enterprise zu ziehen, führen Sie das Upgrade für so viele Geräte unter Windows 7 und Windows 8.1 wie möglich durch. 
 
@@ -41,13 +41,13 @@ Gegebenenfalls hilft Ihnen [Schritt 2](../windows10-deploy-inplaceupgrade.md), d
 
 Um Windows Autopilot zum Bereitstellen und Anpassen von Windows 10 Enterprise auf einem neuen Gerät zu verwenden, müssen Sie die folgenden Schritte durchführen:
 
-- Festlegen der entsprechenden Windows-Diagnosedatenebene
-- Abschließen der für Windows Autopilot erforderlichen Schritte, die Folgendes umfassen:
-- Geräteregistrierung und Anpassung der Windows-Willkommensseite
-- Unternehmensbranding für Windows-Willkommensseite
-- Automatische Registrierung bei MDM in Microsoft Intune
-- Netzwerkkonnektivität mit von Windows Autopilot verwendeten Clouddiensten
-- Installation von Windows 10, Version 1703 oder höher auf den Geräten
+- Sie haben die entsprechende Windows-Diagnosedatenebene festgelegt.
+- Sie haben die für Windows Autopilot erforderlichen Schritte abgeschlossen, die Folgendes umfassen:
+   - Geräteregistrierung und Anpassung der Windows-Willkommensseite
+   - Unternehmensbranding für Windows-Willkommensseite
+   - Automatische Registrierung bei MDM in Microsoft Intune
+   - Netzwerkkonnektivität mit von Windows Autopilot verwendeten Clouddiensten
+- Geräte, auf denen Windows 10, Version 1703 oder höher vorinstalliert ist
 - Auswählen des Windows Autopilot Deployment-Programms für Ihre Organisation
 
 Nach Abschluss der Konfiguration von Windows Autopilot können Sie diese zum Konfigurieren und Anpassen von Windows 10 Enterprise für die Windows-Willkommensseite für Folgendes verwenden:

@@ -3,22 +3,22 @@ title: Informationsschutz für die Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Features für den Informationsschutz in Microsoft 365 Enterprise verwendet, um digitale Datenbestände in der Cloud zu sichern.
-ms.openlocfilehash: 2f6619aa3c6051696644b055e6c766525ad3a26d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f0869dfd661ae4dbaed74fdfd660c863deb20175
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276114"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -44,9 +44,9 @@ In der folgenden Tabelle sind die Informationsrichtlinien von Contoso aufgeführ
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **Access** | **Datenaufbewahrung** | **Schutz von Daten** |
-| Stufe 1: Geringer Geschäftswert (Baseline) | Zugriff auf alles zulassen  | 6 Monate | Verschlüsselung verwenden |
-| Stufe 2: Mittlerer Geschäftswert (Vertraulich) | Zugriff für Mitarbeiter, Subunternehmer und Partner von Contoso zulassen <BR> <BR> Mehrstufige Authentifizierung (MFA), Transport Layer Security (TLS) und mobile Anwendungsverwaltung (Mobile Application Management, MAM) verwenden | 2 Jahre  | Hashwerte für Datenintegrität verwenden  |
-| Stufe 3: Hoher Geschäftswert (Hochgradig reguliert) | Zugriff für Manager und Führungskräfte in Technik und Fertigung zulassen <BR> <BR> Rechteverwaltungssystem (Rights Management System, RMS) nur mit verwalteten Netzwerkgeräten  | 7 Jahre  | Digitale Signaturen für Nachweisbarkeit (Unleugbarkeit) verwenden  |
+| Geringer Geschäftswert (Stufe 1: Baseline) | Zugriff auf alles zulassen  | 6 Monate | Verschlüsselung verwenden |
+| Mittlerer Geschäftswert (Stufe 2: Vertraulich) | Zugriff für Mitarbeiter, Subunternehmer und Partner von Contoso zulassen <BR> <BR> Mehrstufige Authentifizierung (MFA), Transport Layer Security (TLS) und mobile Anwendungsverwaltung (Mobile Application Management, MAM) verwenden | 2 Jahre  | Hashwerte für Datenintegrität verwenden  |
+| Hoher Geschäftswert (Stufe 3: Hochgradig reguliert) | Zugriff für Manager und Führungskräfte in Technik und Fertigung zulassen <BR> <BR> Rechteverwaltungssystem (Rights Management System, RMS) nur mit verwalteten Netzwerkgeräten  | 7 Jahre  | Digitale Signaturen für Nachweisbarkeit (Unleugbarkeit) verwenden  |
 |||||
 
 ## <a name="contosos-path-to-information-protection-with-microsoft-365-enterprise"></a>Contosos Weg zum Informationsschutz mit Microsoft 365 Enterprise
@@ -61,21 +61,21 @@ Contoso führte die folgenden Schritte aus, um Microsoft 365 Enterprise für sei
 
    Basierend auf den Datenstufen ermittelte Contoso detaillierte Richtlinienanforderungen, die zum Schützen vorhandener digitaler Datenbestände während des Verschiebens in die Cloud verwendet wurden.
 
-3. Erstellen von Azure Information Protection-Bezeichnungen und ihrer Einstellungen für die verschiedenen Informationsstufen
+3. Erstellen von Vertraulichkeitsbezeichnungen und Einstellungen für die verschiedenen Informationsstufen
 
-   Contoso passte die Azure Information Protection-Bezeichnungen durch Titel an, die seinen Datenstufen entsprechen, und konfigurierte die Bezeichnungen für vertrauliche und hochgradig regulierte Datenbestände für die Verschlüsselung mit dem Azure-Cloudschlüssel. Das Unternehmen erstellte untergeordnete Bezeichnungen der Bezeichnung „Hochgradig reguliert“ für bestimmte Typen von Geschäftsgeheimnisdaten und beschränkte den Zugriff auf bestimmte Forschungs- und Entwicklungsgruppen. Contoso hat darüber hinaus den Azure Information Protection-Client auf allen Windows-PCs und Geräten bereitgestellt.
+   Contoso hat Vertraulichkeitsbezeichnungen (vertraulich und hochgradig reguliert) für seine Datenstufen erstellt, wie Verschlüsselung, Berechtigungen und Wasserzeichen.
 
 4. Erstellen geschützter SharePoint Online-Websites für vertrauliche und hochgradig regulierten Daten mit Berechtigungen, die den Zugriff einschränken
 
-   Sowohl sensible als auch hochgradig regulierte Seiten wurden als [isolierte Websites](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites) konfiguriert, in denen die Standardberechtigungen für SharePoint Online-Teamwebsites zu Azure AD-Gruppen angepasst wurden. Sensible und hochgradig regulierte SharePoint Online-Websites wurden ebenfalls mit einem standardmäßigen Office 365-Etikett konfiguriert. Dateien, die auf hochgradig regulierten SharePoint Online-Websites gespeichert werden, werden durch ein Azure Information Protection (API) Unter-Etikett einer Bereichsrichtlinie geschützt. Weitere Informationen finden Sie im Szenario [Microsoft Teams und SharePoint Online-Websites für hochgradig regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md).
+   Sowohl vertrauliche als auch hochgradig regulierte Websites wurden als [isolierte Websites](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites) konfiguriert, bei denen die standardmäßigen SharePoint Online-Teamwebsiteberechtigungen an die Azure Active Directory(Azure AD)-Gruppen angepasst wurden. Vertrauliche und hochgradig regulierte SharePoint Online-Websites wurden auch mit einer entsprechenden Aufbewahrungsbezeichnung konfiguriert. Auf hochgradig regulierten SharePoint Online-Websites gespeicherte Dateien werden durch die hochgradig regulierte Vertraulichkeitsbezeichnung geschützt. Weitere Informationen finden Sie im Szenario [Microsoft Teams und SharePoint Online-Websites für hochgradig regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 5.  Verschieben der Daten von den lokalen SharePoint-Websites und Dateifreigaben in die neuen SharePoint Online-Websites
 
-    Die Dateien, die in die neuen SharePoint Online-Websites migriert wurden, übernahmen die standardmäßigen Office 365-Bezeichnungen, die der Website zugewiesen waren.
+    Die Dateien, die zu den neuen SharePoint Online-Websites migriert wurden, übernahmen die standardmäßigen Aufbewahrungsbezeichnungen, die der Website zugewiesen waren.
 
-6.  Schulen der Mitarbeiter im Hinblick auf die Verwendung von Azure Information Protection-Bezeichnungen für neue Dokumente, die Interaktion mit den Contoso-IT-Mitarbeitern beim Erstellen neuer SharePoint Online-Websites und das stetige Speichern von digitalen Datenbeständen in SharePoint Online-Websites
+6.  Schulen der Mitarbeiter im Hinblick auf die Verwendung von Aufbewahrungsbezeichnungen für neue Dokumente, die Interaktion mit den Contoso-IT-Mitarbeitern beim Erstellen neuer SharePoint Online-Websites und das stetige Speichern von digitalen Assets auf SharePoint Online-Websites
 
-    Folgendes galt als der schwierigste Teil des Informationsschutzübergangs in die Cloud: Die IT-Mitarbeiter von Contoso und das Management mussten die schlechten Angewohnheiten der Mitarbeiter, wenn es um Informationsspeicherung geht, ändern und sie anhalten, digitale Datenbestände immer mit Bezeichnungen zu versehen und nie lokale Dateifreigaben zu verwenden.
+    Folgendes galt als der schwierigste Teil des Informationsschutzübergangs in die Cloud: Die IT-Mitarbeiter von Contoso und das Management mussten die schlechten Angewohnheiten der Mitarbeiter, wenn es um Informationsspeicherung geht, ändern und sie anhalten, digitale Assets immer zu speichern und mit Bezeichnungen zu versehen, keine lokalen Dateifreigaben und nie Cloudspeicherdienste von Drittanbietern oder USB-Laufwerke zu verwenden.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Bedingte Zugriffsrichtlinien für Informationsschutz
 
@@ -97,7 +97,7 @@ Abbildung 1 zeigt den von Contoso erstellten Satz von Informationsschutzrichtlin
 
 Diese Richtlinien stellen Folgendes sicher:
 
-- App-Schutzrichtlinien definieren, welche Apps zulässig sind und die Aktionen, die diese Apps mit den Unternehmensdaten ausführen kann.
+- Apps sind zulässig und die Aktionen, die diese Apps mit den Unternehmensdaten ausführen können, werden durch die App-Schutzrichtlinien definiert.
 - PCs und mobile Geräte müssen diesen Richtlinien entsprechen.
 - Exchange Online verwendet die Nachrichtenverschlüsselung von Office 365 für Exchange Online.
 - SharePoint Online verwendet die durch die App erzwungenen Einschränkungen.
@@ -110,9 +110,9 @@ Die folgende Tabelle zeigt die Zuordnung der Datenstufen von Contoso zu den Info
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 und Office 365 ProPlus** | **EMS** |
-| Stufe 1: Baseline  | Bedingte Zugriffsrichtlinien für SharePoint Online und Exchange Online <BR> Berechtigungen für SharePoint Online-Websites | Azure Information Protection Client <BR> BitLocker <BR> Windows Information Protection | Bedingte Zugriffsrichtlinien für Geräte und MAM-Richtlinien (Mobile Application Management) |
-| Stufe 2: Hochgradig vertraulich | Stufe 1: Baseline plus: <BR> <BR> Azure Information Protection-Bezeichnungen <BR> Office 365-Bezeichnungen in SharePoint Online-Websites <BR> Office 365-DLP (Data Loss Prevention, Verhinderung von Datenverlust) für SharePoint Online und Exchange Online <BR> Isolierte SharePoint Online-Websites  | Stufe 1: Baseline plus: <BR> <BR> Azure Information Protection-Bezeichnungen für digitale Datenbestände <BR> Office 365 Advanced Data Governance | Stufe 1: Baseline |
-| Stufe 3: Hochgradig reguliert | Stufe 2: Hochgradig vertraulich plus: <BR><BR> BYOK-Verschlüsselung („Bring Your Own Key“, Bereitstellen eines eigenen Schlüssels) und Schutz von Geschäftsgeheimnissen <BR> Azure Key Vault für Branchenlösungen, die mit Diensten von Office 365 interagieren | Stufe 2: Hochgradig vertraulich | Stufe 1: Baseline |
+| Stufe 1: Baseline  | Bedingte Zugriffsrichtlinien für SharePoint Online und Exchange Online <BR> Berechtigungen für SharePoint Online-Websites | Vertraulichkeitsbezeichnungen <BR> BitLocker <BR> Windows Information Protection | Bedingte Zugriffsrichtlinien für Geräte und MAM-Richtlinien (Mobile Application Management) |
+| Stufe 2: Vertraulich | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen <BR> Office 365-Bezeichnungen in SharePoint Online-Websites <BR> Office 365-DLP (Data Loss Prevention, Verhinderung von Datenverlust) für SharePoint Online und Exchange Online <BR> Isolierte SharePoint Online-Websites  | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen auf digitalen Assets <BR> Office 365 Advanced Data Governance | Stufe 1 |
+| Stufe 3: Hochgradig reguliert | Stufe 2 plus: <BR><BR> BYOK-Verschlüsselung („Bring Your Own Key“, Bereitstellen eines eigenen Schlüssels) und Schutz von Geschäftsgeheimnissen <BR> Azure Key Vault für Branchenlösungen, die mit Diensten von Office 365 interagieren | Stufe 2 | Stufe 1 |
 |||||
 
 
