@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die mehrstufige Authentifizierung mithilfe von Textnachrichten, die an ein Smartphone in Ihrer Microsoft 365 Enterprise-Testumgebung gesendet werden.
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353177"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -50,31 +50,29 @@ Wenn Sie die mehrstufige Authentifizierung in einem simulierten Unternehmen test
 
 Aktivieren Sie Multi-Factor Authentication für das Konto „Benutzer 2“ mit den folgenden Schritten:
   
-1. Öffnen Sie eine separate, private Instanz Ihres Browsers, wechseln Sie zum Office-Portal[https://office.com](https://office.com)(), und melden Sie sich mit ihrem globalen Administratorkonto an.
+1. Öffnen Sie eine separate, private Instanz Ihres Browsers, wechseln Sie zum Microsoft 365 Admin Center ([https://portal.microsoft.com](https://portal.microsoft.com)), und melden Sie sich mit ihrem globalen Administratorkonto an.
     
-2. Klicken Sie auf der Hauptportalseite auf **Admin**.
+2. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
-3. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
+3. Klicken Sie im Bereich aktive Benutzer auf **Weitere >-Setup**für mehrstufige Authentifizierung.
     
-4. Klicken Sie im Bereich aktive Benutzer auf **Weitere >-Setup**für mehrstufige Authentifizierung.
+4. Wählen Sie in der Liste das Konto **Benutzer 2** aus.
     
-5. Wählen Sie in der Liste das Konto **Benutzer 2** aus.
+5. Klicken Sie im Abschnitt **Benutzer 2** unter **QuickSteps** auf **Aktivieren**.
     
-6. Klicken Sie im Abschnitt **Benutzer 2** unter **QuickSteps** auf **Aktivieren**.
+6. Klicken Sie im Dialogfeld **Informationen zum Aktivieren von mehrstufiger Aktualisierung** auf **Multi-Factor Authentication aktivieren**.
     
-7. Klicken Sie im Dialogfeld **Informationen zum Aktivieren von mehrstufiger Aktualisierung** auf **Multi-Factor Authentication aktivieren**.
+7. Klicken Sie im Dialogfeld **erfolgreiche Updates** auf **Beenden**.
     
-8. Klicken Sie im Dialogfeld **erfolgreiche Updates** auf **Beenden**.
+8. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** auf das Benutzerkonto Symbol in der oberen rechten Ecke, **** und klicken Sie dann auf Abmelden.
     
-9. Klicken Sie auf der Registerkarte **Microsoft Office-Starts** auf das Benutzerkontosymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
-    
-10. Schließen Sie Ihre Browserinstanz.
+9. Schließen Sie Ihre Browserinstanz.
    
 Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung einer Textnachricht zur Prüfung ab, und testen Sie es mit den folgenden Schritten:
   
 1. Öffnen Sie eine neue, private Instanz Ihres Browsers.
     
-2. Wechseln Sie zum Office-Portal[https://office.com](https://office.com)(), und melden Sie sich mit dem Konto "Benutzer\<2" (User2 @ Organization name>. onmicrosoft. com) und Kennwort an.
+2. Wechseln Sie zum Office 365-Portal[https://portal.office.com](https://portal.office.com)(), und melden Sie sich mit dem Kontonamen und Kennwort des Benutzers 2 an.
     
 3. Nach der Anmeldung werden Sie aufgefordert, das Konto für weitere Informationen einzurichten. Klicken Sie auf **Weiter**.
     

@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die Gruppenbasierte Lizenzierung und die dynamische Gruppenmitgliedschaft in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: 8ced249ee56e15c057001af60d790a8a4315dd17
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4ee929b345469d9cab05968a4a4c7f7399635b32
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277241"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353077"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatisieren von Lizenzen und Gruppenmitgliedschaften für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -47,7 +47,7 @@ Wenn Sie die automatische Lizenzierung und Gruppenmitgliedschaft in einem simuli
 
 Zunächst erstellen Sie eine neue Vertriebsgruppe und fügen eine dynamische Gruppen Mitgliedschaftsregel hinzu, sodass Benutzerkonten mit der Abteilung "Sales" automatisch der Gruppe "Sales" hinzugefügt werden.
 
-1. Melden Sie sich über eine private Instanz Ihres Internet Browsers im Office-Portal unter [https://office.com](https://office.com) mit dem globalen Administratorkonto ihres Office 365 E5-Testabonnements an.
+1. Melden Sie sich über eine private Instanz Ihres Internet Browsers im Office 365-Portal unter [https://portal.office.com](https://portal.office.com) mit dem globalen Administratorkonto ihres Office 365 E5-Test Lab-Abonnements an.
 2. Wechseln Sie auf einer separaten Registerkarte in Ihrem Browser zum Azure-Portal [https://portal.azure.com](https://portal.azure.com)unter.
 3. Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.
 4. Klicken Sie auf dem Blatt **alle Gruppen** auf **neue Gruppe**.

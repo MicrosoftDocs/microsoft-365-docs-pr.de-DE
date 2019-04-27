@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291304"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353202"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Übersicht zu Microsoft 365 Enterprise
 
@@ -64,13 +64,17 @@ Klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publi
 
 ## <a name="deploying"></a>Bereitstellen
 
-Es gibt zwei Möglichkeiten, die Produkte, Features und Komponenten von Microsoft 365 Enterprise bereitzustellen:
+Es gibt drei Möglichkeiten, die Produkte, Features und Komponenten von Microsoft 365 Enterprise bereitzustellen:
 
 1. In Partnerschaft mit "Kurzarbeit"
   
-   Mit der schnell Hilfe helfen Ihnen Microsoft-Ingenieure bei der Umstellung auf die Cloud. Weitere Informationen finden Sie unter [für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   Mit der schnell Hilfe helfen Ihnen Microsoft-Ingenieure bei der Umstellung auf die Cloud. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Selbst ausführen
+2. Mithilfe von Microsoft Consulting Services oder einem Microsoft- [Partner](https://partner.microsoft.com/).
+
+   Berater können Ihre aktuelle Infrastruktur analysieren und einen Plan für die Integration aller Software und Dienste von Microsoft 365 Enterprise unterstützen.
+
+3. Selbst ausführen
 
    Das [Microsoft 365 Enterprise-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) führt Sie Schritt für Schritt durch die Erstellung von Infrastruktur-und Produktivitäts Arbeitsauslastungen. 
 
@@ -108,8 +112,8 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Starten Sie Ihre [Microsoft 365 Enterprise-Bereitstellungs Reise](deploy-microsoft-365-enterprise.md).
+Wenn Sie die Bereitstellung selbst durchführen, starten Sie Ihre [Microsoft 365 Enterprise-Bereitstellungs Reise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft 365 Enterprise product page (Microsoft 365 Enterprise-Produktseite)](https://www.microsoft.com/microsoft-365/enterprise)

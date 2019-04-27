@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Führen Sie die folgenden Schritte aus, um globale Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung zu schützen.
-ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290858"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353057"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Schützen globaler Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung
 
-Sie können digitale Angriffe auf Ihre Organisation verhindern, indem Sie sicherstellen, dass Ihre Administratorkonten so sicher wie möglich sind. In diesem Artikel wird beschrieben, wie Sie Office 365 Cloud App Security und Azure AD Conditional Access-Richtlinien zum Schutz globaler Administratorkonten verwenden.
+Sie können digitale Angriffe auf Ihre Organisation verhindern, indem Sie sicherstellen, dass Ihre Administratorkonten so sicher wie möglich sind. In diesem Artikel wird beschrieben, wie Sie mithilfe von Azure Active Directory (Azure AD) bedingten Zugriffsrichtlinien globale Administratorkonten schützen.
 
 Es gibt zwei Phasen zum Schutz globaler Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung:
 
@@ -34,9 +34,6 @@ Es gibt zwei Phasen zum Schutz globaler Administratorkonten in Ihrer Microsoft 3
 > [!TIP]
 > Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
 
-> [!NOTE]
-> In der Microsoft 365 Enterprise-Testumgebung werden E5-Versionen von Office 365 und Enterprise Management + Security (EMS) verwendet. Die Office 365 Cloud App-Sicherheitsfunktion ist nur in der E5-Version von Office 365 verfügbar. 
-
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
 Wenn Sie nur den Schutz globaler Administratorkonten auf einfache Weise mit den Mindestanforderungen testen möchten, befolgen Sie die Anweisungen unter [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
@@ -47,24 +44,9 @@ Wenn Sie den Schutz globaler Administratorkonten in einem simulierten Unternehme
 > [!NOTE]
 > Das Testen des globalen Administratorkonto Schutzes erfordert nicht die simulierte Enterprise-Testumgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) verbunden ist. Sie wird hier als Option bereitgestellt, damit Sie den Schutz globaler Administratorkonten testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>Phase 2: Konfigurieren von Sicherheits-und bedingten Zugriffsrichtlinien für Cloud-apps
+## <a name="phase-2-configure-conditional-access-policies"></a>Phase 2: Konfigurieren von Richtlinien für bedingten Zugriff
 
-Erstellen Sie zunächst eine Office 365 Cloud App-Sicherheitsrichtlinie, um die globale Administratorkonto Aktivität zu überwachen und Warnungen an die e-Mail-Adresse Ihres globalen Administratorkontos zu senden. 
-
-1. Melden Sie sich beim [Office 365 Security _AMP_ Compliance-Portal](https://protection.office.com/) mit ihrem globalen Administratorkonto an.
-2. Klicken Sie im linken Navigationsbereich auf **Warnungen > Erweiterte Warnungen verwalten**.
-3. Klicken Sie auf der Seite **Erweiterte Warnungen verwalten** auf **Office 365 Cloud App Security aktivieren**, und klicken Sie dann auf **Zu Office 365 Cloud App Security wechseln**.
-4. Klicken Sie auf der neuen **Dashboard**-Registerkarte auf **Steuern > Richtlinien**.
-5. Klicken Sie auf der Seite **Richtlinie** auf **Richtlinie erstellen**, und klicken Sie dann auf **Aktivitätsrichtlinie**.
-6. Geben Sie im Feld **Richtlinienname** den Namen **Administrative Aktivität** ein.
-7. Klicken Sie unter **Schweregrad der Richtlinie** auf **Hoch**.
-8. Klicken Sie unter **Kategorie** auf **Privilegierte Konten**.
-9. Klicken Sie in **Filter für die Richtlinie erstellen** unter **Aktivitäten entspricht allen folgenden Kriterien** auf **Administrative Aktivität**.
-10. Klicken Sie unter **Benachrichtigungen** auf **Benachrichtigung als E-Mail senden**. Geben Sie unter **An** die E-Mail-Adresse Ihres globalen Administratorkontos ein.
-11. Klicken Sie unten auf der Seite auf **Erstellen**.
-12. Schließt die Registerkarte **Dashboard** .
-    
-Als Nächstes erstellen Sie ein neues Benutzerkonto als dedizierter globaler Administrator.
+Erstellen Sie zunächst ein neues Benutzerkonto als dedizierter globaler Administrator.
 
 1. Öffnen Sie auf einer separaten Registerkarte das [Microsoft 365 Admin Center](https://admin.microsoft.com/).
 2. Klicken Sie unter **aktive Benutzer**auf **Benutzer hinzufügen**.
