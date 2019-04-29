@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289189"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400059"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -41,7 +41,7 @@ Es gibt drei Hauptmöglichkeiten zum Bereitstellen von Microsoft 365 Enterprise:
 
 FastTrack bietet fortlaufend und wiederholt einen Vorteil und ist im Rahmen eines Abonnements verfügbar. Microsoft-Techniker unterstützen Sie beim Wechsel in die Cloud in Ihrem eigenen Tempo. FastTrack bietet auch Zugang zu kompetenten Partnern für zusätzliche Dienste. Für mehr als 40.000 Kunden maximiert FastTrack aktuell den ROI, beschleunigt die Bereitstellung und steigert die Akzeptanz in der Organisation. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Wenn Sie von FastTrack für die Bereitstellung von Microsoft 365 Enterprise profitieren möchten, können Sie den FastTrack [Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) für Anleitung zum Bereitstellen und Einrichten Ihrer Foundation-Infrastruktur verwenden. Beachten Sie, dass Sie als globaler Administrator in einem Office 365- oder Microsoft 365-Mandanten angemeldet sein müssen, damit Sie auf diese Seite zugreifen können.
+Wenn Sie von FastTrack für die Bereitstellung von Microsoft 365 Enterprise profitieren möchten, können Sie den FastTrack [Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) für Anleitung zum Bereitstellen und Einrichten Ihrer Foundation-Infrastruktur verwenden. Sie müssen als globaler Administrator in einem Office 365- oder Microsoft 365-Mandanten angemeldet sein, um auf diese Seite zugreifen zu können.
 
 Beginnen Sie Ihre End-to-End-Bereitstellung mit FastTrack [hier](https://fasttrack.microsoft.com/microsoft365).
 

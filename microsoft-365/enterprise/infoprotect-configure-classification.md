@@ -3,7 +3,7 @@ title: 'Schritt 2: Konfigurieren der Klassifizierung für Ihre Umgebung'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren verschiedener Methoden zum Klassifizieren von Daten in Ihrer Organisation.
-ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5323e4f682e8a530601308877423502f64878a4c
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286974"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400089"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Schritt 2: Konfigurieren der Klassifizierung für Ihre Umgebung
 
@@ -47,12 +47,11 @@ Typen vertraulicher Informationen sind besonders hilfreich, um Compliance- und R
 
 Ein Teil der Definition einer Datenkontrolle-Strategie ist die Entscheidung, wie lange bestimmte Arten von Dokumenten oder Dokumente mit bestimmten Inhalten in Übereinstimmung mit den Organisationsrichtlinien und regionalen Vorschriften aufbewahrt werden sollen. Beispielsweise sollten einige Arten von Dokumenten für eine bestimmte Zeit aufbewahrt und dann gelöscht werden, während andere auf unbestimmte Zeit aufbewahrt werden müssen.
 
-Für Dokumente, die in Microsoft 365 gespeichert sind, definieren und wenden Sie Aufbewahrungsbezeichnungen auf Dokumente und Daten an, die in Exchange-E-Mails, SharePoint Online, OneDrive for Business und Teams gespeichert sind. Weitere Informationen, einschließlich wie Sie diese erstellen können, finden Sie unter [Übersicht der Aufbewahrungsbezeichnungen](https://docs.microsoft.com/office365/securitycompliance/labels).
+Für Dokumente, die in Microsoft 365 gespeichert sind, definieren und wenden Sie Aufbewahrungsbezeichnungen auf Dokumente und Daten an, die in Exchange-E-Mails, SharePoint Online, OneDrive for Business und Teams gespeichert sind. 
 
 Wenn Sie Aufbewahrungsbezeichnungen verwenden, sollten Sie für jede Kategorie von Dateien, für die eine Aufbewahrungsrichtlinie angewendet werden muss, eine Bezeichnung konfigurieren. Innerhalb der Aufbewahrungskennzeichnung können Sie folgendes angeben:
 
 - Eine Reihe von Deskriptoren für die Dateien (z.B. nach Fachabteilung, Dateityp oder Verordnung).
-
 - Die Aufbewahrungseinstellungen für die Dateien, die mit der Aufbewahrungskennzeichnung versehen sind, wie z.B. Aufbewahrungszeiten und -verhalten nach Erreichen der Aufbewahrungszeit.
 
 Sie können Dateien auch automatisch mit einer Aufbewahrungsbezeichnung versehen, indem Sie eine SharePoint Online-Site so konfigurieren, dass alle neuen Dokumente in der Site mit einer Standard-Aufbewahrungsbezeichnung versehen werden. 
@@ -64,21 +63,15 @@ Weitere Informationen finden Sie unter [Übersicht zu Aufbewahrungsbezeichnungen
 Zum Schutz und zur Implementierung der Sicherheit für bestimmte Arten von Dokumenten oder Dokumenten mit bestimmten Inhalten gehört es, diese mit einer Bezeichnung zu versehen, damit die zusätzliche Sicherheit angewendet werden kann. Mit Vertraulichkeitsbezeichnungen in Microsoft 365 können Sie:
 
 - Erzwingen von Schutzeinstellungen, wie Verschlüsselung, Berechtigungen oder das Hinzufügen eines Wasserzeichens.
-
 - Verhindern, dass sensible Inhalte Ihre Organisation auf Geräten mit Windows verlassen, indem Sie den Endpoint Protection in Microsoft Intune verwenden. 
-
 - Verwenden von Windows Information Protection (WIP) Endpoint Protection, um zu verhindern, dass Inhalte in eine Drittanbieteranwendung wie Twitter oder Gmail kopiert oder auf einen Wechselspeicher wie ein USB-Laufwerk kopiert werden.
-
 - Verwenden von Microsoft Cloud App Security zum Schutz von Inhalten in Anwendungen und Diensten von Drittanbietern. 
-
 - Klassifizieren von Inhalten ohne Verwendung von Schutzeinstellungen.
 
 Wenn Sie Vertraulichkeitsbezeichnungen verwenden, sollten Sie für jede Sicherheits- und Information Protection-Stufe eine Bezeichnung konfigurieren. Beispielsweise, können Sie drei Vertraulichkeitsbezeichnungen erstellen für:
 
 - Baseline
-
 - Vertraulich
-
 - Streng geregelt
 
 Weitere Informationen finden Sie unter [Übersicht über Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
@@ -102,12 +95,14 @@ Wenn Sie sowohl über Vertraulichkeits- als auch über Azure Information Protect
 
 Ein Beispiel für ein Klassifizierungsschema, das personenbezogene Daten für die DSGVO enthält, finden Sie unter [Entwerfen eines Klassifikationsschemas für personenbezogene Daten](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
+## <a name="take-it-for-a-test-drive"></a>Probieren Sie es aus
+
 |||
 |:-------|:-----|
 |![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Klassifizierung von Daten](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step3) für diesen Schritt betrachten.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step2) für diesen Schritt betrachten.
 
 ## <a name="next-step"></a>Nächster Schritt
 

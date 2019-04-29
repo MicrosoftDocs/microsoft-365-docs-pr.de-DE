@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283645"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353136"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -65,7 +65,7 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 - [Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Sperren Sie Ihre globalen Administratorkonten mit Office 365 Cloud App Security und Richtlinien für bedingten Zugriff.
+   Sperren Sie Ihre globalen Administratorkonten mit Richtlinien für bedingten Zugriff.
 
 - [Rückschreiben des Kennworts](password-writeback-m365-ent-test-environment.md)
 
@@ -82,6 +82,11 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 - [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
    Überprüfen Sie Ihre aktuellen Benutzerkonten auf Sicherheitsrisiken.
+
+- [Identitäts- und Gerätezugriff](identity-device-access-m365-test-environment.md)
+
+   Erstellen Sie eine Umgebung, um empfohlene Konfigurationen für Identitäts- und Gerätezugriff sowie Richtlinien für bedingten Zugriff zu testen.
+
 
 ## <a name="mobile-device-management"></a>Verwaltung mobiler Geräte
 

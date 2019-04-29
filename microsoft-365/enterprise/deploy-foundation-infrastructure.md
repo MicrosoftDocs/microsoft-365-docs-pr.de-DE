@@ -12,17 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation.
-ms.openlocfilehash: 668775097eeffff569b99cc9fe4cd259f5d25c22
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
+ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287117"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400049"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
 
-Wenn Sie die End-to-End-Bereitstellung von Microsoft 365 Enterprise selbst durchführen, sollten Sie zunächst eine solide Grundlage schaffen, auf der Anwendungen und Dienste Kreativität und Teamarbeit in einer sicheren Umgebung freisetzen können. 
+Wenn Sie die End-to-End-Bereitstellung von Microsoft 365 Enterprise selbst durchführen, sollten Sie zunächst eine solide Grundlage schaffen, auf der Anwendungen und Dienste Kreativität und Teamarbeit in einer sicheren Umgebung freisetzen können. Diese Foundation wird manchmal als die zentrale Bereitstellung bezeichnet.
 
 Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese Phasen verwenden, um die Basisinfrastruktur von Microsoft 365 Enterprise zu planen und bereitzustellen:
 
