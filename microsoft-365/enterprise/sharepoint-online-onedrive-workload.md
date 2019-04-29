@@ -13,11 +13,11 @@ ms.collection:
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint Online in Microsoft 365 Enterprise in Ihrem Unternehmen.
 ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290899"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400179"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint Online und OneDrive for Business für Microsoft 365 Enterprise
 

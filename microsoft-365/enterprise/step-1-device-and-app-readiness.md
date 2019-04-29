@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Geräte- und App-Bereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: 0ead897fef7f419b5a11b7a1fb5b5f4fdc62e52e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8c5f40f4f65c95aca628b64433676d473856e1c8
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291033"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400129"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Schritt 1: Geräte- und App-Bereitschaft
 
@@ -63,7 +63,7 @@ Wenn Sie Windows Analytics derzeit nicht für Ihre Umgebung eingerichtet haben o
 
 ## <a name="device-and-app-readiness-process"></a>Prozess der Geräte- und App-Bereitschaft
 
-Geräte- und App-Bereitschaft besteht aus vier Schritten: 1. Bestandsaufnahme, 2. Priorisieren, 3. Testen, 4. Fehlerbehebung. Lassen Sie uns alle Schritte nach einander betrachten.
+Geräte- und App-Bereitschaft besteht aus vier Schritten: 1. Inventar, 2. Priorisieren, 3. Testen, 4. Fehlerbehebung. Lassen Sie uns alle Schritte nach einander betrachten.
 
 ### <a name="1-inventory"></a>1\. Bestandsaufnahme
 

@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für die Office 365 ProPlus-Infrastruktur erfüllt.
 ms.openlocfilehash: c9a2afeae8d28170f4e8a15531a08e6b94cb48c2
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291073"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399989"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Beendigungskriterien für die Office 365 ProPlus-Bereitstellung
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über wichtige Überlegungen zu Windows- und Office-Sicherheit und -Compliance.
-ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: cefab9cfd1b61f37559d88c5625c512d33595395
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290031"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400239"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Schritt 5: Überlegungen zu Sicherheit und Compliance
 

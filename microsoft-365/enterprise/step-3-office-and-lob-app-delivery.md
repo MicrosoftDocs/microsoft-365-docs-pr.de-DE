@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Liefern von Office- und Branchen-Apps.
-ms.openlocfilehash: 631a8f55b33a55085e9d2f54029a564f1c7b5d95
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2fdd47fa38b3d9403bbd44869e4dfe012abd0f51
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290209"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400149"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Schritt 3: Liefern von Office- und Branchen-Apps
 

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von Microsoft Teams in Microsoft 365 Enterprise in Ihrem Unternehmen.
-ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291659"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400209"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 
@@ -45,7 +45,7 @@ Diese drei Gruppen stellen sicher, dass Ihre Teams-Bereitstellung Aspekte umfass
 Eine Liste von Personen, die die unternehmerischen und technischen Aspekte sowie die Endbenutzer Ihrer Organisation darstellen.
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Schritt 2: Ermitteln und Priorisieren Ihrer Teams-Geschäftsszenarien
-Teams kann für unterschiedliche Zwecke verwendet werden. Sie müssen herausfinden, welcher Zweck Ihren Geschäftsanforderungen auf den unterschiedlichen Ebenen Ihrer Organisation, Ihren Unternehmensgruppen, Abteilungen und einzelnen Arbeits- und Projektteams entspricht. Beispiele, mit denen Sie Teams-Szenarios definieren können, finden Sie unter [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1). 
+Teams kann für unterschiedliche Zwecke verwendet werden. Sie müssen herausfinden, welcher Zweck Ihren Geschäftsanforderungen auf den unterschiedlichen Ebenen Ihrer Organisation, Ihren Unternehmensgruppen, Abteilungen und einzelnen Arbeits- und Projektteams entspricht. Beispiele, mit denen Sie Teams-Szenarios definieren können, finden Sie unter [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success/?rtc=1). 
 
 Teams sollte für sich schnell entwickelnde und stark vernetzte Teams verwendet eingesetzt werden, die eng zusammen arbeiten und viel mehr Funktionen benötigen als nur E-Mail mit Exchange Online liefern kann. Beispiele sind Live-Gruppenchats mit einen aufgezeichneten Verlauf und ein allgemeiner und leicht auffindbarer Ort zum Speichern von Dateien und Notizen. 
 
