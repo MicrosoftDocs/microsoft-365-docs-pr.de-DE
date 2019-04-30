@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie dieses Test Labor Handbuch, um der Microsoft 365 Enterprise-Testumgebung InTune-Geräte Konformitätsrichtlinien hinzuzufügen.
-ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353187"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467733"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Geräte Konformitätsrichtlinien für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -54,7 +54,7 @@ In dieser Phase erstellen Sie eine Geräte Konformitätsrichtlinie für Windows 
     
 6. Klicken Sie auf dem Blatt **Gruppen-alle Gruppen** auf **+ neue Gruppe**.
     
-7. wählen sie im **gruppen** blatt **Office 365** für gruppentyp **?** aus, geben sie **verwaltete Windows 10-geräte benutzer** unter **Name**ein, wählen sie **zugewiesen** unter mitgliedschafts aus, und klicken sie dann auf **erstellen**. **** 
+7. wählen sie im **gruppen** blatt **Office 365** oder **sicherheit** für **gruppentyp?**, geben sie **verwaltete Windows 10-geräte benutzer** unter **Name**ein, wählen sie **zugewiesen** unter mitgliedschafts aus, und klicken sie dann auf **erstellen**. **** 
     
 8. Schließen Sie das Blatt **Gruppe**.
     
@@ -90,13 +90,13 @@ In dieser Phase erstellen Sie eine Geräte Konformitätsrichtlinie für Windows 
 
 26. Klicken Sie auf dem Blatt **app hinzufügen** auf **Hinzufügen**.
 
-Sie verfügen jetzt über eine Geräte Konformitätsrichtlinie zum Testen der ausgewählten apps in der **Windows 10** -Geräte Konformitätsrichtlinie und für Mitglieder der **verwalteten Windows 10-Geräte Benutzer** Gruppe. 
+Sie verfügen jetzt über eine Geräte Konformitätsrichtlinie zum Testen der ausgewählten apps in der **Windows 10** -Geräte Konformitätsrichtlinie und für Mitglieder der **verwalteten Windows 10-Geräte Benutzer** Gruppe. Beachten Sie, dass beim Auswählen von Office 365 als Gruppentyp zusätzliche Ressourcen erstellt werden. 
   
 ## <a name="next-step"></a>Nächster Schritt
 
 Erkunden Sie zusätzliche Features und Funktionen für die [Verwaltung mobiler Geräte](m365-enterprise-test-lab-guides.md#mobile-device-management) in Ihrer Testumgebung.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   
