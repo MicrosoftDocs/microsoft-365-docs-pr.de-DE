@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Kennworthashsynchronisierung und Anmeldung für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290978"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353143"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
@@ -103,19 +103,17 @@ Installieren Sie zunächst Azure AD Connect auf APP1 und konfigurieren Sie es.
     
 10. Klicken Sie auf der Seite **Konfiguration abgeschlossen** auf **Beenden**.
     
-11. Gehen Sie im Internet Explorer zum Office-Portal ([https://office.com](https://office.com)).
+11. Wechseln Sie im Internet Explorer zum Microsoft 365 Admin Center ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-12. Klicken Sie auf der Hauptportalseite auf **Admin**.
-    
-13. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
+12. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
     Sie sehen das Konto **Benutzer 1**. Dieses Konto gehört zur AD DS-Domäne „TESTLAB“. Dass es angezeigt wird, belegt, dass die Verzeichnissynchronisierung erfolgreich war.
     
-14. Klicken Sie auf das Konto**Benutzer1**. Für Produktlizenzen klicken Sie auf **Bearbeiten**.
+13. Klicken Sie auf das Konto**Benutzer1**. Für Produktlizenzen klicken Sie auf **Bearbeiten**.
     
-15. Wählen Sie unter **Product licenses** Ihr Land/Ihre Region aus, und klicken Sie dann für **Office 365 Enterprise E5** auf **Off**. (So schalten Sie die Lizenz auf **On**.) Führen Sie für die Lizenz **Enterprise Mobility + Security E5** die gleichen Schritte aus. 
+14. Wählen Sie unter **Product licenses** Ihr Land/Ihre Region aus, und klicken Sie dann für **Office 365 Enterprise E5** auf **Off**. (So schalten Sie die Lizenz auf **On**.) Führen Sie für die Lizenz **Enterprise Mobility + Security E5** die gleichen Schritte aus. 
 
-16. Klicken Sie unten auf der Seite auf **Speichern** und dann auf **Schließen**.
+15. Klicken Sie unten auf der Seite auf **Speichern** und dann auf **Schließen**.
     
 Als Nächstes testen Sie, ob Sie sich mit dem Benutzernamen <strong>Benutzer1@testlab.</strong>\<Name Ihrer öffentlichen Domäne>“ des Kontos „Benutzer1“ bei Ihrem Office 365-Abonnement anmelden können.
 

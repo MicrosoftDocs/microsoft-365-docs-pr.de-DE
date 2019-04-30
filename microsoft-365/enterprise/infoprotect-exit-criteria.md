@@ -3,7 +3,7 @@ title: Beendigungskriterien für die Information Protection-Infrastruktur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informieren Sie sich über die Kriterien für Information Protection-basierte Dienste und -Infrastruktur, um sicherzustellen, dass Ihre Konfiguration die Anforderungen von Microsoft 365Enterprise erfüllt.
-ms.openlocfilehash: 681b3bb2500680b4f5d5801486347aec1b801714
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9c74a3994a1a404583326f65f1cec579fccbe659
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283696"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400039"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Beendigungskriterien für die Information Protection-Infrastruktur
 
@@ -39,7 +39,7 @@ Sie verwenden mindestens drei Sicherheitsstufen:
 
 Gegebenenfalls hilft Ihnen [Schritt 1](infoprotect-define-sec-infoprotect-levels.md), diese Anforderung zu erfüllen. 
 
-<a name="crit-infoprotect-step4"></a>
+<a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>Erforderlich: Erhöhte Sicherheit für Microsoft 365 ist konfiguriert
 
 Sie haben die folgenden Einstellungen für [höhere Sicherheit von Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) konfiguriert:
@@ -49,11 +49,11 @@ Sie haben die folgenden Einstellungen für [höhere Sicherheit von Office 365](h
 - Mandantenweite Freigaberichtlinien im SharePoint Admin Center
 - Azure Active Directory-Einstellungen (Azure AD)
 
-Sie haben zudem [Office 365 Advanced Threat Protection (ATP) für SharePoint, OneDrive und Microsoft Teams aktiviert](https://docs.microsoft.com/de-DE/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).
+Sie haben zudem [Office 365 Advanced Threat Protection (ATP) für SharePoint, OneDrive und Microsoft Teams aktiviert](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).
 
 Gegebenenfalls hilft Ihnen [Schritt 3](infoprotect-configure-increased-security-office-365.md), diese Anforderung zu erfüllen. 
 
-<a name="crit-infoprotect-step3"></a>
+<a name="crit-infoprotect-step2"></a>
 ## <a name="optional-classification-is-configured-across-your-environment"></a>Optional: Klassifikation ist in der gesamten Umgebung konfiguriert
 
 Sie haben mit Ihrer Rechts- und Complianceabteilung eine entsprechende Klassifikation und ein Bezeichnungsschema für Data Governance- und Sicherheitsrichtlinien in Ihrer Organisation erarbeitet. 
@@ -67,12 +67,34 @@ Diese Richtlinien entsprechen der Konfiguration und Bereitstellung von:
 
 Gegebenenfalls hilft Ihnen [Schritt 2](infoprotect-configure-classification.md), diese Anforderung zu erfüllen. 
 
+
+<a name="crit-infoprotect-step4"></a>
+## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>Optional: Windows Information Protection wird in Ihrer Umgebung eingesetzt.
+
+Für Ihre angemeldeten Windows 10 Enterprise-Geräte wird eine Intune-Richtlinie bereitgestellt und angewendet, die definiert:
+
+- Welche Apps geschützt werden sollen.
+- Der Schutzgrad.
+- Wo der Schutz gilt.
+
+Gegebenenfalls hilft Ihnen [Schritt 4](infoprotect-deploy-windows-information-protection.md), diese Anforderung zu erfüllen. 
+
 <a name="crit-infoprotect-step5"></a>
+## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Optional: Office 365 Verhinderung von Datenverlust (DLP) wird bereitgestellt.
+
+Sie haben die DLP-Richtlinien analysiert, getestet und dann eingeführt, mit Standorten und Regeln, Bedingungen und Maßnahmen, die Ihre Organisation benötigt, um Kunden und andere Arten von privaten Daten zu schützen und branchenspezifische und regionale Vorschriften und Anforderungen einzuhalten.
+
+Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Office 365 Security & Compliance Dashboard zur Überwachung von DLP-Vorfällen.
+
+Gegebenenfalls hilft Ihnen [Schritt 5](infoprotect-data-loss-prevention.md), diese Anforderung zu erfüllen. 
+
+
+<a name="crit-infoprotect-step6"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>Optional: Konfigurieren von Privileged Access Management in Office 365
 
 Sie haben die Informationen im Thema [Konfigurieren von Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) verwendet, um privilegierten Zugriff zu aktivieren und eine oder mehrere Richtlinien für privilegierten Zugriff in Ihrer Organisation zu erstellen. Sie haben diese Richtlinien konfiguriert, und Just-in-Time-Zugriff ist für Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen aktiviert.
 
-Gegebenenfalls hilft Ihnen [Schritt 4](infoprotect-configure-privileged-access-management.md), diese Anforderung zu erfüllen. 
+Gegebenenfalls hilft Ihnen [Schritt 6](infoprotect-configure-privileged-access-management.md), diese Anforderung zu erfüllen. 
 
 ## <a name="results-and-next-steps"></a>Ergebnisse und nächste Schritte
 

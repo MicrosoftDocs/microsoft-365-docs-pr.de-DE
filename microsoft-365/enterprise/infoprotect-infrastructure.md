@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Infrastruktur für Informationsschutz in Microsoft 365 Enterprise.
-ms.openlocfilehash: 821c32eea09cde87155d0ee1ccdd81077d051d38
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287639"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399999"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6: Informationsschutz
 
@@ -41,7 +41,9 @@ Verwenden Sie anschließend die folgenden Schritte zum Erstellen vom Information
 |![](./media/stepnumbers/Step1.png)|[Definieren von Sicherheits- und Informationsschutzebenen](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md)|
 |![](./media/stepnumbers/Step3.png)|[Konfigurieren der erhöhten Sicherheit für Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[Konfigurieren von Privileged Access Management für Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[Konfigurieren der Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![](./media/stepnumbers/Step5.png)|[Konfigurieren der Verhinderung von Datenverlust in Office 365](infoprotect-data-loss-prevention.md)|
+|![](./media/stepnumbers/Step6.png)|[Konfigurieren von Privileged Access Management für Office 365](infoprotect-configure-privileged-access-management.md)|
 
 
 Wenn Sie diese Schritte abgeschlossen haben, wechseln Sie zu [Beendigungskriterien](infoprotect-exit-criteria.md) für diese Phase, um sicherzustellen, dass Sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.

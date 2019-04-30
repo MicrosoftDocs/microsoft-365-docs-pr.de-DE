@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e80c169a8aefa60c9e7b3be874a1fb26c86078b6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291450"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353167"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
@@ -55,9 +55,9 @@ Diese Konfiguration besteht aus:
 
 Konfigurieren Sie zuerst das Konto „User1“ mit der globalen Administratorrolle.
 
-1. Melden Sie sich aus dem [Office-Portal](https://office.com) mit Ihrem globalen Administratorkonto an.
+1. Melden Sie sich aus dem [Microsoft 365 Admin Center](https://portal.microsoft.com) mit Ihrem globalen Administratorkonto an.
 
-2. Klicken Sie auf die Kachel **Admin** Kachel. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** des Browsers auf **Aktive Benutzer**.
+2. Klicken Sie auf **Aktive Benutzer**.
  
 3. Klicken Sie auf der Seite **Aktive Benutzer** auf das Konto **Benutzer 1**.
 

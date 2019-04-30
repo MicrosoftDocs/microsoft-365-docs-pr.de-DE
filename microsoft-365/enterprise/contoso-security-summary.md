@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfunktionen für Microsoft 365 Enterprise verwendet
-ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289033"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353102"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung der Microsoft 365 Enterprise-Sicherheit für die Contoso Corporation
 
@@ -56,7 +56,7 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 - Dedizierte globale Administratorkonten mit MFA und PIM
 
-  Anstatt den normalen Benutzerkonten eine globale Administratorrolle zuzuweisen, erstellte Contoso drei dedizierte globale Administratorkonten mit sehr sicheren Kennwörtern. Diese Konten wurden durch eine mehrstufigen Authentifizierung (MFA) und Azure AD Privileged Identity Management (PIM) geschützt. 
+  Anstatt den normalen Benutzerkonten eine globale Administratorrolle zuzuweisen, erstellte Contoso drei dedizierte globale Administratorkonten mit sehr sicheren Kennwörtern. Diese Konten wurden durch eine mehrstufigen Authentifizierung (MFA) und Azure AD Privileged Identity Management (PIM) geschützt.  PIM ist nur mit Microsoft 365 Enterprise E5 verfügbar.
 
   Das Anmelden mit einem globalen Administratorkonto wird nur für bestimmte Verwaltungsaufgaben ausgeführt, die Kennwörter sind nur festgelegten Mitarbeitern bekannt, und sie können nur in dem Zeitraum verwendet werden, der in Azure AD PIM definiert ist. 
 
@@ -105,7 +105,7 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 ## <a name="information-protection"></a>Schutz von Daten
 
-- Schützen von vertraulichen und hochgradig regulierten digitalen Objekten mit Azure Information Protection
+- Schützen von vertraulichen und hochgradig regulierten digitalen Objekten mit Azure Information Protection-Bezeichnungen
 
   Contoso ermittelte drei Stufen für den Schutz von Daten und stellte [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)-Bezeichnungen bereit, die Benutzer auf digitale Objekte anwenden. Für Geschäftsgeheimnisse und anderes geistiges Eigentum verwendet Contoso untergeordnete Azure Information Protection-Bezeichnungen in einer begrenzten Richtlinie für hochgradig regulierte Daten, die den Inhalt verschlüsselt und den Zugriff auf bestimmte Sicherheitsgruppen beschränkt.
 
@@ -119,11 +119,7 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 - Cloudüberwachung mit Microsoft Cloud App Security
 
-  Contoso verwendet [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security), um seine Cloudumgebung zu strukturieren, die Nutzung zu überwachen und Sicherheitsereignisse und -vorfälle zu erkennen. 
-
-- Office 365-Sicherheitsüberwachung mit Office 365 Cloud App Security
-
-  Contoso-Sicherheitsadministratoren richten Benachrichtigungen mit [Office 365 Cloud App Security (CAS)](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview) ein, sodass sie bei anomalen oder riskanten Benutzeraktivitäten benachrichtigt werden, z. B. beim Download von großen Datenmengen aus SharePoint Online oder OneDrive for Business, mehreren nicht erfolgreichen Anmeldeversuchen oder Anmeldungen von unbekannten oder gefährlichen IP-Adressen.
+  Contoso verwendet [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security), um seine Cloudumgebung zu strukturieren, die Nutzung zu überwachen und Sicherheitsereignisse und -vorfälle zu erkennen. Microsoft Cloud App Security ist nur mit Microsoft 365 Enterprise E5 verfügbar.
 
 - Geräteverwaltung mit Microsoft Intune
 
