@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint Online-Teamwebsite oder ein Microsoft Teams-Team, um Ihre wertvollsten und vertraulichen digitalen Objekte zu speichern.
-ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289806"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553324"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams und SharePoint Online-Websites für streng geregelte Daten
 
@@ -124,7 +124,7 @@ Sie haben Folgendes bestimmt:
 
 - Die Gruppe von SharePoint-Gruppen und Berechtigungsstufen.
 - Die Gruppe von Zugriffsgruppen und deren Mitglieder für jede Berechtigungsstufe
-- Die entsprechende Office 365-Aufbewahrungsbezeichnung und die DLP-Richtlinie, die der Bezeichnung zugeordnet ist
+- Die entsprechende Office 365 Aufbewahrungsbezeichnung und die DLP-Richtlinie, die dieser Bezeichnung zugeordnet ist
 - Die Einstellungen der Azure Information Protection-Unterbezeichnung, die Verschlüsselung und Berechtigungen umfassen
 
 ## <a name="phase-2-configure"></a>Phase 2: Konfigurieren

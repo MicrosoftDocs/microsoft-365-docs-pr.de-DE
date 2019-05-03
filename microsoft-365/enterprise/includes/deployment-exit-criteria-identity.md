@@ -65,7 +65,7 @@ Um zu überprüfen, ob die Authentifizierung mit lokalen Anmeldeinformationen fu
 
 Führen Sie folgende Schritte aus, um zu überprüfen, ob die Verzeichnissynchronisierung ordnungsgemäß funktioniert:
 
-1.  Erstellen Sie eine neue Testgruppe in Active Directory Domain Services (AD DS).
+1.  Erstellen Sie eine neue Testgruppe in AD DS.
 2.  Warten Sie, bis die Synchronisierungszeit abgelaufen ist.
 3.  Überprüfen Sie Ihren Azure AD-Mandanten, um sicherzustellen, dass der Name der neuen Testgruppe angezeigt wird.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für identitätsbasierte Dienste und Infrastrukturen erfüllt.
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285549"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553304"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2: Beendigungskriterien für die Identitätsinfrastruktur
 
@@ -93,7 +93,7 @@ Um zu überprüfen, ob die Authentifizierung mit lokalen Anmeldeinformationen fu
 
 Führen Sie folgende Schritte aus, um zu überprüfen, ob die Verzeichnissynchronisierung ordnungsgemäß funktioniert:
 
-1.  Erstellen Sie eine neue Testgruppe in Active Directory Domain Services (AD DS).
+1.  Erstellen Sie eine neue Testgruppe in AD DS.
 2.  Warten Sie, bis die Synchronisierungszeit abgelaufen ist.
 3.  Überprüfen Sie Ihren Azure AD-Mandanten, um sicherzustellen, dass der Name der neuen Testgruppe angezeigt wird.
 

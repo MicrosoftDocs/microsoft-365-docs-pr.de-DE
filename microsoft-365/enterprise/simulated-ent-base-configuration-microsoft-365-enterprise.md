@@ -3,7 +3,7 @@ title: Simulierte Unternehmensstandardkonfiguration für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Verwenden Sie diese Testumgebungsanleitung, um eine Testumgebung mit einem simulierten Unternehmen für Microsoft 365 Enterprise zu erstellen.
-ms.openlocfilehash: 7c16f6fee480e883f7bf87d3b03441cf18e8f73f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290828"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553369"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Die simulierte Unternehmensstandardkonfiguration
 
 Dieser Artikel bietet Schrittanleitungen zum Erstellen einer vereinfachten Umgebung für Microsoft 365 Enterprise, die Folgendes umfasst:
 
-- Testversionen oder kostenpflichtige Abonnements von Office 365 E5 und EMS E5.
+- Eine Testversion oder ein kostenpflichtiges Abonnement für Microsoft 365 E5.
 - Ein vereinfachtes Unternehmensintranet mit Internetzugriff, das aus drei virtuellen Computern in einem virtuellen Azure-Netzwerk (DC1, APP1 und CLIENT1) besteht.
  
 ![Die simulierte Unternehmensstandardkonfiguration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -125,7 +125,7 @@ $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-Als Nächstes erstellen Sie den virtuellen Computer DC1 und konfigurieren diesen als Domänencontroller für die Active Directory Domain Services(AD DS)-Domäne **testlab.**\<Ihre öffentliche Domäne> sowie einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab. Wenn der Name der öffentlichen Domäne **<span>contoso</span>.com** ist, ist die virtuelle Maschine DC1 ein Domänencontroller für die Domäne **<span>testlab</span>.contoso.com**.
+Als Nächstes erstellen Sie den virtuellen DC1-Computer und konfigurieren ihn als einen Domänencontroller für **testlab.**\<Ihre öffentliche Domäne> AD DS-Domäne und einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab. Wenn der Name der öffentlichen Domäne **<span>contoso</span>.com** ist, ist die virtuelle Maschine DC1 ein Domänencontroller für die Domäne **<span>testlab</span>.contoso.com**.
   
 Geben Sie zum Erstellen eines virtuellen Azure-Computers für DC1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die PowerShell-Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
@@ -349,54 +349,63 @@ Dies ist Ihre aktuelle Konfiguration.
 ![Schritt 3 der simulierten Unternehmensstandardkonfiguration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## <a name="phase-2-create-your-office-365-e5-and-ems-e5-subscriptions"></a>Phase 2: Erstellen der Office 365 E5- und EMS E5-Abonnements
+## <a name="phase-2-create-your-microsoft-365-e5-subscriptions"></a>Phase 2: Ihre Abonnements für Microsoft 365 E5 erstellen
 
-In dieser Phase erstellen Sie neue Office 365 E5- und EMS E5-Abonnements, die einen neuen und allgemeinen Azure AD-Mandanten verwenden, der von Ihrem Produktionsabonnement getrennt ist. Hierfür haben Sie zwei Möglichkeiten:
+In dieser Phase erstellen Sie ein neues Abonnement für Microsoft 365 E5, das einen neuen Azure AD-Mandanten verwendet, der von Ihrem Produktionsabonnement getrennt ist. Dies können Sie auf zwei Arten tun:
 
-- Verwenden Sie die Testabonnements von Office 365 E5 und EMS E5. 
+- Verwenden Sie ein Testabonnement von Microsoft 365 E5. 
 
-  Das Testabonnement von Office 365 E5 gilt 30 Tage lang, die problemlos auf 60 Tage verlängert werden können. Das Testabonnement von EMS E5 gilt 90 Tage lang. Wenn die Testabonnements ablaufen, müssen Sie sie entweder in bezahlte Abonnements umwandeln oder neue Testabonnements erstellen. Durch Erstellen neuer Testabonnements müssen Sie Ihre Konfiguration verlassen, was zu komplexen Szenarien führen kann.  
-- Verwenden Sie ein separates Produktionsabonnement von Microsoft 365 Enterprise mit einer kleinen Anzahl von Lizenzen.
+  Das Testabonnement von Microsoft 365 E5 gilt für 30 Tage, die problemlos auf 60 Tage verlängert werden können. Wenn das Testabonnement abläuft, müssen Sie entweder zu einem kostenpflichtigen Abonnement wechseln oder eine neue Testversion erstellen. Durch Erstellen neuer Testabonnements müssen Sie Ihre Konfiguration verlassen, was im Hintergrund zu komplexen Szenarien führen kann.  
+- Verwenden Sie ein separates Produktionsabonnement von Microsoft 365 E5 mit einer kleinen Anzahl von Lizenzen.
 
   Dabei entstehen zusätzliche Kosten, aber es wird sichergestellt, dass Sie über eine funktionierende Testumgebung zum Testen von Features, Konfigurationen und Szenarien verfüge, die nicht abläuft. Sie können dieselbe Testumgebung über die gesamten Zeiträume für Machbarkeitsstudien, Demos für Mitarbeiter und Führungskräfte sowie für Anwendungsentwicklung und Tests verwenden. Dies ist die empfohlene Methode.
 
 ### <a name="use-trial-subscriptions"></a>Verwenden von Testabonnements
 
-Wenn Sie Testabonnements verwenden müssen, führen Sie die Schritte in Phase 2 und Phase 3 der [Office 365- Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) aus.
-  
-Als Nächstes registrieren Sie sich für das EMS E5-Testabonnement und fügen es derselben Organisation wie Ihr Office 365 E5-Abonnement hinzu.
-  
-Fügen Sie zunächst das Testabonnement für EMS E5 hinzu, und weisen Sie ihrem globalen Administratorkonto eine EMS-Lizenz zu.
-  
-1. Melden Sie sich mit einer privaten Instanz eines Internetbrowsers beim Office-Portal an, indem Sie die Anmeldeinformationen für Ihr globales Administratorkonto verwenden. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+Folgen Sie als Erstes den Schritten von Phase 2 und 3 unter [Office 365 Dev/Test-Umgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), um eine einfache Dev/Test-Umgebung für Office 365 zu erstellen.
+
+>[!Note]
+>Dann fordern wir Sie dazu auf, ein Office 365-Testabonnement zu erstellen, damit Ihre Dev/Test-Umgebung über einen separaten Azure AD-Mandanten verfügt, der getrennt ist von allen kostenpflichtigen Abonnements, die Sie aktuell haben. Diese Trennung bedeutet, dass Sie Benutzer zum Testmandanten hinzufügen und entfernen können, ohne dass dies Auswirkungen auf Ihre Produktionsabonnements hat.
+>
+
+Fügen Sie als Nächstes das Testabonnement für Microsoft 365 E5 hinzu und weisen Sie ihrem globalen Administratorkonto eine Microsoft 365-Lizenz zu.
+
+1. Melden Sie sich mit einer privaten Instanz eines Internetbrowsers mit den Anmeldeinformationen Ihres globalen Administratorkontos beim Microsoft 365 Admin Center unter [http://admin.microsoft.com](http://admin.microsoft.com) an. 
     
-2. Klicken Sie auf die Kachel **Admin**.
+2. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.
     
-3. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.
-    
-4. Suchen Sie auf der Seite **Dienste kaufen** den Artikel **Enterprise Mobility + Security E5**. Platzieren Sie den Mauszeiger auf dem Artikelnamen, und klicken Sie auf **Start free trial**.
-    
+3. Finden Sie auf der Seite**Dienste kaufen** das Element **Microsoft 365 E5**. Zeigen Sie mit Ihrem Mauszeiger darauf und klicken Sie **Kostenlose Testversion starten**.
+
+4. Wählen Sie auf der Seite **Microsoft 365 E5 Testversion** aus, ob Sie eine SMS oder einen Anruf erhalten möchten, geben Sie Ihre Telefonnummer ein und klicken Sie dann **SMS an mich senden** oder **Mich anrufen**.
+
 5. Klicken Sie auf der Seite für die **Bestätigung Ihrer Bestellung** auf **Jetzt versuchen**.
-    
+
 6. Klicken Sie auf der Seite **Bestellbestätigung** auf **Weiter**.
-    
-7. Klicken Sie auf der Registerkarte **Office 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
-    
-8. Klicken Sie auf Ihr globales Administratorkonto und dann auf **Bearbeiten**, um die **Produktlizenzen** anzuzeigen.
-    
-9. Setzen Sie im Bereich **Product licenses** die Produktlizenz für **Enterprise Mobility + Security E5** auf **On**. Klicken Sie auf **Speichern** und dann auf **Schließen**.
-    
+
+7. Klicken Sie im Microsoft 365 Admin Center **Aktiver Benutzer** und klicken Sie dann auf Ihr Administratorkonto.
+
+8. Klicken Sie **Bearbeiten** für **Produktlizenzen**.
+
+9. Deaktivieren Sie die Lizenz für Office 365 Enterprise E5 und aktivieren Sie die Lizenz für Microsoft 365 E5.
+
+10. Klicken Sie auf **Speichern > Schließen > Schließen**.
+
+ Als Nächstes,***wenn Sie die Schritte in Phase 3 der *** [Office 365 Dev/Test-Umgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) abgeschlossen haben, wiederholen Sie die Schritte 8 bis 11 des vorherigen Verfahrens für alle Ihre anderen Konten (Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5).
+  
 > [!NOTE]
->  Für eine dauerhafte Testumgebung erstellen Sie ein neues bezahltes Abonnement mit einer kleinen Anzahl von Lizenzen. 
+> Das Testabonnement für Microsoft 365 E5 ist 30 Tage gültig. Ändern Sie für eine dauerhafte Testumgebung dieses Testabonnement in ein kostenpflichtiges Abonnement mit einer kleinen Anzahl von Lizenzen.
   
-Wiederholen Sie dann die Schritte 8 und 9 des vorherigen Verfahrens für alle anderen Konten (Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5).
+Ihre Testumgebung verfügt nun über Folgendes:
   
+- Ein Testabonnement für Microsoft 365 E5.
+- Alle Ihre entsprechenden Benutzerkonten (entweder nur der globale Administrator oder alle fünf Benutzerkonten) können Microsoft 365 E5 verwenden.
+    
 ### <a name="results"></a>Ergebnisse
 
 Ihre Testumgebung verfügt nun über Folgendes:
   
-- Office 365 E5 Enterprise- und EMS E5-Testabonnements mit demselben Azure AD-Mandanten mit Ihrer Liste von Benutzerkonten.
-- Alle entsprechenden Benutzerkonten (entweder nur der globale Administrator oder alle fünf Benutzerkonten) können Office 365 E5 und EMS E5 verwenden.
+- Ein Testabonnement für Microsoft 365 E5.
+- Alle Ihre entsprechenden Benutzerkonten (entweder nur der globale Administrator oder alle fünf Benutzerkonten) können Microsoft 365 E5 verwenden.
     
 Dies ist Ihre endgültige Konfiguration.
   

@@ -16,16 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren des Rückschreibens des Kennworts für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: e80c169a8aefa60c9e7b3be874a1fb26c86078b6
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 13fffb595595269b627a1cc499558796c6306205
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353167"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553344"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Rückschreiben des Kennworts für Ihre Microsoft 365-Testumgebung
 
-Mit dem Rückschreiben des Kennworts können Benutzer ihre Kennwörter über Azure Active Directory (Azure AD) aktualisieren, das dann in Ihre lokalen Active Directory Domain Services (AD DS) repliziert wird. Dank dem Kennwortrückschreiben müssen Benutzer ihre Kennwörter nicht über das lokale Active Directory Domain Services (AD DS) aktualisieren, wo ihre ursprünglichen Benutzerkonten gespeichert sind. Dies ist für Roaming- oder Remote-Benutzer nützlich, die keine Remote-Zugriffsverbindung zum lokalen Netzwerk haben.
+Das Rückschreiben des Kennworts ermöglicht es Benutzern, ihre Kennwörter über Azure Active Directory (Azure AD) zu aktualisieren. Die aktualisierten Kennwörter werden dann in die lokalen Active Directory Domain Services (AD DS) repliziert. Mit der Kennwortrückschreibung brauchen Benutzer ihre Passwörter nicht mehr über den lokalen AD DS zu aktualisieren, in dem ihre ursprünglichen Benutzerkonten gespeichert sind. Dies ist für Roaming- oder Remotebenutzer hilfreich, die keine Remotezugriffsverbindung zu ihrem lokalen Netzwerk haben.
 
 Dieser Artikel beschreibt, wie Sie Ihre Microsoft 365-Testumgebung für das Kennwortrückschreiben konfigurieren.
 

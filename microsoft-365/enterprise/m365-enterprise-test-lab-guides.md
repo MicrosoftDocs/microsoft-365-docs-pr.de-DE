@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: e45a4c903932116a54f0660f08b394d8d2f91307
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353136"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553284"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -49,7 +49,7 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 - [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md)
   
-   Aktivieren und testen Sie die hashbasierte Verzeichnissynchronisierung von einem Active Directory Domain Services (AD DS-Domänencontroller.
+   Aktivieren und testen Sie die auf Kennworthash basierte Verzeichnissynchronisierung von einem AD DS-Domänencontroller aus.
 
 - [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md)
   
