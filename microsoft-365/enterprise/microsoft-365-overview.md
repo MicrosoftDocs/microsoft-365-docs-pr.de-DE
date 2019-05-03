@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353202"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553334"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Übersicht zu Microsoft 365 Enterprise
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise besteht aus:
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | Enthält sowohl Office 365 proPlus, die neuesten Office-Apps für Ihren PC und Mac (wie Word, Excel, PowerPoint, Outlook und andere), als auch eine umfassende Palette von Onlinediensten für e-Mails, Dateispeicherung und Zusammenarbeit, Besprechungen und vieles mehr. |
+| Office 365 Enterprise | Enthält sowohl Office 365 ProPlus, die neuesten Office-Apps für Ihren PC und Mac (wie Word, Excel, PowerPoint, Outlook und andere), als auch eine umfassende Palette von Onlinediensten für e-Mails, Dateispeicherung und Zusammenarbeit, Besprechungen und vieles mehr. |
 | Windows 10 Enterprise | Richtet die Anforderungen von großen und mittelständischen Unternehmen aus und bietet Benutzern die produktivste und sicherste Version von Windows-und IT-Experten mit umfassender Bereitstellung, Geräte-und App-Verwaltung. |
 | Enterprise Mobility + Security (EMS) | Enthält Microsoft InTune, ein Cloud-basierter Enterprise Mobility Management (EMM)-Dienst, der es Ihnen ermöglicht, Ihre Mitarbeiter produktiv zu machen und gleichzeitig Ihre Unternehmensdaten zu schützen. |
 |||
@@ -96,9 +96,7 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
  
-  ErMächtigen Sie die Zusammenarbeit der öffentlichen Mitarbeiter in den USA.
-
-
+  Ermächtigen Sie die Zusammenarbeit der öffentlichen Mitarbeiter in den USA.
 
 ## <a name="microsoft-365-training"></a>Microsoft 365-Schulung
 
@@ -107,13 +105,10 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 ![](./media/m365-poster/m365-fundamentals.svg)| Machen Sie sich selbst geschult und arbeiten Sie an einer Microsoft 365-Zertifizierung. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
 
-
-
-
 ## <a name="next-step"></a>Nächster Schritt
 
 Wenn Sie die Bereitstellung selbst durchführen, starten Sie Ihre [Microsoft 365 Enterprise-Bereitstellungs Reise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365 Enterprise product page (Microsoft 365 Enterprise-Produktseite)](https://www.microsoft.com/microsoft-365/enterprise)
