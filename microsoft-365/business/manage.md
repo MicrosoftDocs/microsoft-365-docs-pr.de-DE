@@ -18,16 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Hier erfahren Sie, wie Sie Microsoft 365 geschäftsbezogene Verwaltungsaufgaben, Mobile Geräte, Windows 10ST und viele solcher Aufgaben verwalten können.
-ms.openlocfilehash: 993db51ec487237395ca57290e37a6c5edbce8b8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0d0f9292307144314d25f712867cf1caa7cdd0ff
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660494"
 ---
 # <a name="manage-microsoft-365-business"></a>Verwalten von Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Allgemeine Microsoft 365 Business Admin-Aufgaben
+
+Der größte Teil des [Administrator Inhalts](/Office365/Admin/admin-home.md) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
 
 - [Hinzufügen weiterer Benutzer zu Microsoft 365 Business](add-users-m365b.md)
     
@@ -43,7 +45,7 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
 
 - [Einrichten mobiler Geräte für Benutzer von Microsoft 365 Business](set-up-mobile-devices.md)
     
-- [Festlegen von App-Schutzeinstellungen für Android-oder iOS-Geräte](app-protection-settings-for-android-and-ios.md)
+- [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](app-protection-settings-for-android-and-ios.md)
     
     Weitere Informationen finden Sie unter [Validieren von App-Schutzeinstellungen auf einem Android-oder IOS-Gerät](validate-settings-on-android-or-ios.md) . 
     
@@ -69,21 +71,21 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
     
 - [Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen](reset-devices-to-factory-settings.md)
     
-### <a name="use-autopilot-to-deploy-windows-10-devices"></a>Verwenden von autoPilot für die Bereitstellung von Windows 10-Geräten
+### <a name="use-autopilot-to-deploy-windows-10-devices"></a>Verwenden von Autopilot für die Bereitstellung von Windows 10-Geräten
 
-In den folgenden Themen wird beschrieben, wie Sie Windows autoPilot in Microsoft 365 Business zum Vorkonfigurieren von Windows 10-Geräten verwenden können.
+In den folgenden Themen wird beschrieben, wie Sie Windows Autopilot in Microsoft 365 Business zum Vorkonfigurieren von Windows 10-Geräten verwenden können.
   
 - [Verwenden der schrittweisen Anleitung zum Hinzufügen von Autopilot-Geräten und-Profil](add-autopilot-devices-and-profile.md)
     
-- [Erstellen und Bearbeiten von autoPilot-Profilen](create-and-edit-autopilot-profiles.md)
+- [Erstellen und Bearbeiten von Autopilot-Profilen](create-and-edit-autopilot-profiles.md)
     
-- [Erstellen und Bearbeiten von autoPilot-Geräten](create-and-edit-autopilot-devices.md)
+- [Erstellen und Bearbeiten von Autopilot-Geräten](create-and-edit-autopilot-devices.md)
     
 - [Beheben von Problemen mit AutoPilot-Geräten](troubleshoot-autopilot-errors.md)
     
 - [Gerätestatus](device-states.md)
     
-- [Informationen zu autoPilot-Profileinstellungen](autopilot-profile-settings.md)
+- [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md)
     
 ## <a name="set-up-and-pre-requisite-information"></a>Einrichten und vorab erforderliche Informationen
 

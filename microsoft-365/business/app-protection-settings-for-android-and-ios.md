@@ -20,21 +20,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
-description: Informationen zum Erstellen, bearbeiten oder Löschen einer APP-Verwaltungsrichtlinie sowie zum Schutz von Arbeitsdateien auf Android-oder iOS-Geräten.
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Informationen zum Erstellen, bearbeiten oder Löschen einer APP-Verwaltungsrichtlinie sowie zum Schutz von Arbeitsdateien auf Android-oder IOS-Geräten.
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277447"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660541"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte
 
+![Banner, das auf https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>Erstellen einer App-Verwaltungsrichtlinie
 
-1. Melden Sie sich bei [Microsoft 365 Business Admin Center](https://go.microsoft.com/fwlink/p/?linkid=837890) mit globalen Administratoranmeldeinformationen an. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Wählen Sie im Admin Center **Geräte** \> **Richtlinien** \> **Hinzufügen**.
+2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Richtlinien** \> **Hinzufügen**aus.
   
 3. Geben Sie im Bereich **Richtlinie hinzufügen** einen eindeutigen Namen für diese Richtlinie ein. 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277447"
     
 ## <a name="delete-an-app-management-policy"></a>Löschen einer App-Verwaltungsrichtlinie
 
-1. Wählen Sie auf der Registerkarte **Richtlinien** die Option **Richtlinie löschen** aus.
+1. Wählen Sie auf der Seite **Richtlinien** eine Richtlinie und dann **Löschen**aus.
     
-2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
+2. Wählen Sie im Bereich **Richtlinie löschen** die Option **Confirm** aus, um die ausgewählten Richtlinien zu löschen. 
     
 ## <a name="available-settings"></a>Verfügbare Einstellungen
 

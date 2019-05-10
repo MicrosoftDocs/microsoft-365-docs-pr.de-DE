@@ -6,7 +6,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
-- 'O365E_BCSSetup4OfficeMobile '
+- O365E_BCSSetup4OfficeMobile
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: Informationen zu Schutzrichtlinien, die den sicheren Zugriff auf Office-Apps von mobilen Geräten aus ermöglichen.
-ms.openlocfilehash: b77d30686b26f95de684238d1b9afd57550a7c7f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b49ec33f4899a25f92ffd9d7a25d3e435016749e
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278607"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660328"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Den Benutzerzugriff auf Office-Dokumente auf mobilen Geräten verwalten
 
@@ -45,6 +45,6 @@ Mit den folgenden Einstellungen können Sie den Zugriff von Benutzern auf Office
 |PIN nach dieser Anzahl von fehlerhaften Anmeldeversuchen zurücksetzen  <br/> |Um zu verhindern, dass ein nicht autorisierter Benutzer eine PIN nach dem Zufallsprinzip errät, wird die PIN, die nach der angegebenen Anzahl von Fehlversuchen zurückgesetzt.  <br/> |
 |Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange ein Benutzer inaktiv sein kann, bevor er dazu aufgefordert wird, sich erneut anzumelden.  <br/> |
 |Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät empfänglicher für Schadsoftware werden kann. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
-|Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche Apps erlauben  <br/> |Dies ist standardmäßig zulässig. Wenn aber die Einstellung auf **Ein** festgelegt wird, kann der Benutzer die in einer Arbeitsdatei gespeicherten Informationen in eine persönliche Datei kopieren. Wenn die Einstellung auf **Aus** festgelegt ist, kann der Benutzer keine Informationen aus einer Arbeitsdatei in eine private App oder auf ein privates Konto kopieren.  <br/> |
+|Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche apps nicht gestatten  <br/> |Wenn die Einstellung **auf**"ein" festgelegt ist, kann der Benutzer keine Informationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert**ist, kann der Benutzerinformationen aus einer Arbeitsdatei in eine persönliche APP oder ein persönliches Konto kopieren.  <br/> |
    
 

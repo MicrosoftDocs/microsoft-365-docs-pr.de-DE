@@ -21,14 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Hier erfahren Sie, wie Sie Office auf Windows 10-Geräten automatisch während des Setups bereitstellen.
-ms.openlocfilehash: 3b702f2a57fcd0ebffc51e17ed6af00e8f1c485b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660658"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installieren von Office auf Windows 10 während der Einrichtung
+
+![Banner, das auf https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 [] Diese Einstellung ist standardmäßig deaktiviert. Sie können sie aktivieren, um sicherzustellen, dass Benutzer die neueste Version von Office auf allen Windows 10-Geräten verwenden. Sie sollten jedoch zunächst überprüfen, ob alle Voraussetzungen erfüllt sind. Zusätzlich zu den in [Vorbereiten der Office-Clientbereitstellung durch Microsoft 365 Business](prepare-for-office-client-deployment.md) beschriebenen Anforderungen müssen Benutzer diese Einstellung für Microsoft 365 Business lizenziert sein, damit die Software per Push auf das Gerät übertragen werden kann. 
   

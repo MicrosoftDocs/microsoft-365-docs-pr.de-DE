@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Erfahren Sie, wie Sie mit Microsoft 365 lokale AD-verbundene Windows 10-Geräte schützen können.
-ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Erfahren Sie, wie Sie mit Microsoft 365 lokale Ad-verbundene Windows 10-Geräte schützen können.
+ms.openlocfilehash: 661e5bf8205a661eb4382b4bdd8fcf3a54ecc12f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660307"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 
@@ -43,15 +43,13 @@ Führen Sie die folgenden Schritte aus, um Ihre Windows 10-Geräte Hybrid Azure 
     > Die Schritte sind für Microsoft 365 Business identisch. 
   
 2. Bevor Sie Schritt 3 abschließen, um Windows 10-Geräte als Hybriden Azure AD-Beitritt zu aktivieren, müssen Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
-    
+
    - Sie führen die neueste Version von Azure AD Connect aus.
-    
+
    - Azure AD Connect hat alle Computerobjekte der Geräte synchronisiert, für die eine hybride Azure AD-Verknüpfung verwendet werden soll. Wenn die Computerobjekte zu bestimmten Organisationseinheiten (OU) gehören, stellen Sie sicher, dass diese OUs auch für die Synchronisierung in Azure AD Connect festgelegt sind.
     
 3. Registrieren Sie vorhandene mit der Domäne verbundene Windows 10-Geräte als hybrides Azure AD-Mitglied, und registrieren Sie Sie für die Verwaltung mobiler Geräte von InTune (Microsoft 365 Business):
     
-4. BeFolgen Sie die Schritt-für-Schritt-Anweisungen unter [How to configure Hybrid Azure Active Directory Joined Devices](https://go.microsoft.com/fwlink/p/?linkid=872870). Dadurch wird die Synchronisierung Ihrer lokalen Active Directory-Verbindung mit Windows 10-Computern aktiviert, sodass diese Cloud-fähig ist.
+4. Befolgen Sie die Schritt-für-Schritt-Anweisungen unter [How to configure Hybrid Azure Active Directory Joined Devices](https://go.microsoft.com/fwlink/p/?linkid=872870). Dadurch wird die Synchronisierung Ihrer lokalen Active Directory-Verbindung mit Windows 10-Computern aktiviert, sodass diese Cloud-fähig ist.
     
-5. Informationen zum Registrieren eines Windows 10-Geräts für die Verwaltung mobiler Geräte finden Sie unter [Registrieren eines Windows 10-Geräts mit InTune mithilfe einer Gruppenrichtlinie](https://go.microsoft.com/fwlink/p/?linkid=872871) . Sie können die Gruppenrichtlinie auf lokaler Computerebene oder für Massenvorgänge festlegen, indem Sie diese Gruppenrichtlinieneinstellung auf dem Domänencontrollerserver erstellen. 
-    
-
+5. Informationen zum Registrieren eines Windows 10-Geräts für die Verwaltung mobiler Geräte finden Sie unter [Registrieren eines Windows 10-Geräts mit InTune mithilfe einer Gruppenrichtlinie](https://go.microsoft.com/fwlink/p/?linkid=872871) . Sie können die Gruppenrichtlinie auf lokaler Computerebene oder für Massenvorgänge festlegen, indem Sie diese Gruppenrichtlinieneinstellung auf dem Domänencontrollerserver erstellen.

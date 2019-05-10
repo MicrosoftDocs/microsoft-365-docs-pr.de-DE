@@ -19,34 +19,32 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Zeigen Sie Geräterichtlinien und-Aktionen an, indem Sie sich bei Microsoft 365 Business mit globaler Administrator credintials anmelden.
-ms.openlocfilehash: 524e5382fb242ea6b77abd72191073ce4df14f0c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: fa609aad36b945fe9df99392aa1f9f8252baff1c
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660191"
 ---
-# <a name="view-policies-and-devices"></a>Anzeigen von Richtlinien und Geräten
+# <a name="view-and-manage-policies-and-devices"></a>Anzeigen und Verwalten von Richtlinien und Geräten
 
-## <a name="view-device-policies"></a>Anzeigen von Geräterichtlinien
+![Banner, das auf https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
-1. Melden Sie sich bei [Microsoft 365 Business](https://portal.office.com) mit globalen Administratoranmeldeinformationen an. 
-    
-2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Richtlinien** \> **Hinzufügen**aus.
-    
+## <a name="view-and-edit-device-policies"></a>Anzeigen und Bearbeiten von Geräterichtlinien
+
+1.  Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Richtlinien**aus.
+
     Auf dieser Seite können Sie eine Zielgruppe erstellen, bearbeiten oder ändern oder aber eine Richtlinie löschen.
-    
-    ![Screenshot of the Policies page](media/27ebb1d3-d04b-4221-a13f-8583045b5077.png)
-  
-## <a name="view-device-actions"></a>Anzeigen von Geräteaktionen
 
-1. Melden Sie sich bei [Microsoft 365 Business](https://portal.office.com) mit globalen Administratoranmeldeinformationen an. 
-    
-2. Wählen Sie im Admin Center auf der Karte **Geräteaktionen** die Option **Geräteaktionen** aus, um die Seite **Geräteaktionen** zu öffnen. 
+    ![Screenshot of the Policies page](media/devicepolicies.png)
+  
+## <a name="view-and-manage-devices"></a>Anzeigen und Verwalten von Geräten
+
+
+1. Wählen Sie im linken Navigationsbereich **Devices** \> **Manage**aus. 
     
     Auf dieser Seite können Sie ein oder mehrere Geräte auswählen und Unternehmensdaten entfernen. Windows 10-Geräte, für die Sie Geräteschutzeinstellungen festgelegt haben, können Sie bei Bedarf auch auf die Werkseinstellungen zurücksetzen.
-    
-    ![Device actions page.](media/6d2ad0c4-9c96-4489-ab93-c4e38e317d45.PNG)
   
-  
+   ![Seite "Geräte verwalten"](media/devicesmanage.png)
 

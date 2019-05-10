@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Erfahren Sie, wie Sie Windows autoPilot verwenden, um neue Windows 10-Geräte für Ihr Unternehmen einzurichten.
-ms.openlocfilehash: e0802ddcc0964d0b8d102f7dbdb9116b33cdcf58
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Erfahren Sie, wie Sie Windows Autopilot verwenden, um neue Windows 10-Geräte für Ihr Unternehmen einzurichten.
+ms.openlocfilehash: 8c4a14b4b9dcbf7a30c1e6e0bdd53418a1ab8a03
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277108"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660667"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
-[] Mit Windows AutoPilot können Sie neue Windows 10-Geräte für Ihr Unternehmen so einrichten, dass sie sofort nach Übergabe an Ihre Mitarbeiter produktiv eingesetzt werden können.
+Sie können Windows Autopilot verwenden, um **neue** Windows 10-Geräte für Ihr Unternehmen einzurichten, damit Sie für den produktiven einsatzbereit sind, sobald Sie Sie Ihren Mitarbeitern übergeben.
   
 ## <a name="device-requirements"></a>Geräteanforderungen
 
@@ -41,13 +41,17 @@ Geräte müssen diese Anforderungen erfüllen:
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Befolgen der Setupanleitung zum Erstellen von Geräten und Profilen
 
+![Banner, das auf https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, beginnen Sie am besten mit der schrittweisen Anleitung. Doch Sie können auch ohne die Anleitung [Geräte hinzufügen](create-and-edit-autopilot-devices.md) und ihnen [Profile zuweisen](create-and-edit-autopilot-profiles.md). 
   
-1. Suchen Sie im Microsoft 365 Business Admin Center die Karte **Geräteaktionen**, und wählen Sie **Windows mit AutoPilot bereitstellen**.
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+
+2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Autopilot**aus.
+
+    ![Wählen Sie im Admin Center Geräte und dann Autopilot aus.](media/AutoPilot.png)
   
-2. Klicken oder tippen Sie auf der Seite **Windows vorbereiten** auf **Schnellstarthandbuch**.
+2. Klicken oder **** Tippen Sie auf der Seite Autopilot auf **Start Hilfe**.
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
