@@ -7,16 +7,16 @@ author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
+ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278520"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970462"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Unterstützung für Microsoft Managed Desktop
 
-Von Microsoft verwaltete Desktop-Geräte werden nach Gewährleistungsvertrag von Microsoft verwaltet und repariert oder ersetzt. Microsoft bietet eine proaktive und reaktive Vorfallverwaltung. Microsoft verfolgt Vorfälle im Microsoft Managed Desktop Admin-Portal nach. Sie werden gemäß den [Schweregrad Definitionen](../working-with-managed-desktop/admin-support.md#sev)klassifiziert.
+Microsoft bietet eine proaktive und reaktive Vorfallverwaltung. Microsoft verfolgt Vorfälle im Microsoft Managed Desktop Admin-Portal nach. Sie werden gemäß den [Schweregrad Definitionen](../working-with-managed-desktop/admin-support.md#sev)klassifiziert.
 
 Kunden können Microsoft Managed Desktop-Vorgänge für Folgendes kontaktieren:
 - Informationsanforderungen für den Mandanten oder die Konfiguration von Microsoft Managed Desktop
@@ -27,14 +27,14 @@ Kunden können Microsoft Managed Desktop-Vorgänge für Folgendes kontaktieren:
 
 Microsoft Managed Desktop-Support:
 
-- Stellt ein Team von Supportingenieuren zur verFügung, die für verwaltete Desktop Geräte von Microsoft dediziert sind
+- Stellt ein Team von Supportingenieuren zur Verfügung, die für verwaltete Desktop Geräte von Microsoft dediziert sind
 - Unterstützt Microsoft Managed Desktop-Geräte und Endbenutzer, die diesen Geräten zugewiesen sind
 - Gewährt begrenzten administrativen Zugriff auf Microsoft Managed Desktop-Geräte für Supporttechniker, die Microsoft Managed Desktop-Geräte verwalten 
 
 Unterstützte Produkte:
 
 - Windows 10 mit Windows Defender Advanced Threat Protection (WDATP) 
-- Teilmenge der Microsoft 365 E3-Suite: Outlook, Word, PowerPoint, Excel, Skype for Business-Client, Microsoft Teams 
+- Teilmenge der Office 365-Suite: Outlook, Word, PowerPoint, Excel, Skype for Business-Client, Microsoft Teams 
 - Microsoft Store für Unternehmen 
 - OneDrive for Business-Client 
 
