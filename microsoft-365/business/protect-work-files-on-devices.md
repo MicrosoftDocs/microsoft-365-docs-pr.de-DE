@@ -3,7 +3,7 @@ title: Schützen von Arbeitsdateien auf Geräten
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4MobileData
@@ -24,23 +24,23 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: 'Erfahren Sie mehr über die Standardkonfiguration und das Hinzufügen von Anwendungsverwaltungsrichtlinien zum Schutz von Unternehmensdaten auf persönlichen mobilen Geräten der Benutzer. '
-ms.openlocfilehash: 8c534723f8d7ef903612ab637484891b1e21166e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1cb2f8079fafd6d3bba153eafcc07d071fd9ccbd
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285285"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072598"
 ---
-# <a name="protect-work-files-on-devices"></a><span data-ttu-id="1c909-103">Schützen von Arbeitsdateien auf Geräten</span><span class="sxs-lookup"><span data-stu-id="1c909-103">Protect work files on devices</span></span>
+# <a name="protect-work-files-on-devices"></a><span data-ttu-id="d83f1-103">Schützen von Arbeitsdateien auf Geräten</span><span class="sxs-lookup"><span data-stu-id="d83f1-103">Protect work files on devices</span></span>
 
-<span data-ttu-id="1c909-p101">[] Heutzutage sind die Benutzer auf ihre Geräte angewiesen, und wenn Privat- und Arbeitsleben aufeinandertreffen, kann es vorkommen, dass Unternehmensdaten auf dem privaten Gerät eines Mitarbeiters landen. Die Einstellungen, die Sie hier konfigurieren, können Ihnen dabei helfen, die Kontrolle zurückzuerlangen. Darüber hinaus bieten sie Schutz für Ihre Arbeitsdateien, ohne dass die persönlichen Einstellungen oder Daten eines Benutzers beeinträchtigt werden.</span><span class="sxs-lookup"><span data-stu-id="1c909-p101">In today's world, users are tied to their devices, and as personal and work life collides, your company data can end up on an employee's personal device. The settings that you configure here can help you take back control and provide protection for work files, without affecting any of the user's personal settings or data.</span></span>
+<span data-ttu-id="d83f1-p101">[] Heutzutage sind die Benutzer auf ihre Geräte angewiesen, und wenn Privat- und Arbeitsleben aufeinandertreffen, kann es vorkommen, dass Unternehmensdaten auf dem privaten Gerät eines Mitarbeiters landen. Die Einstellungen, die Sie hier konfigurieren, können Ihnen dabei helfen, die Kontrolle zurückzuerlangen. Darüber hinaus bieten sie Schutz für Ihre Arbeitsdateien, ohne dass die persönlichen Einstellungen oder Daten eines Benutzers beeinträchtigt werden.</span><span class="sxs-lookup"><span data-stu-id="d83f1-p101">In today's world, users are tied to their devices, and as personal and work life collides, your company data can end up on an employee's personal device. The settings that you configure here can help you take back control and provide protection for work files, without affecting any of the user's personal settings or data.</span></span>
   
-## <a name="configuring-policies-during-setup"></a><span data-ttu-id="1c909-106">Konfigurieren von Richtlinien während des Setups</span><span class="sxs-lookup"><span data-stu-id="1c909-106">Configuring policies during setup</span></span>
+## <a name="configuring-policies-during-setup"></a><span data-ttu-id="d83f1-106">Konfigurieren von Richtlinien während des Setups</span><span class="sxs-lookup"><span data-stu-id="d83f1-106">Configuring policies during setup</span></span>
 
-<span data-ttu-id="1c909-p102">Während des Setups werden drei Anwendungsverwaltungsrichtlinien hinzugefügt, jeweils eine für Android, iOS und Windows 10. Jede Richtlinie weist dieselben Einstellungen auf und gilt für alle Benutzer. Die Richtlinien werden aktiviert, wenn der Benutzer seine Arbeit auf dem Mobiltelefon mit seinem Geschäftskonto verbindet.</span><span class="sxs-lookup"><span data-stu-id="1c909-p102">During setup, three application management policies are added, one each for Android, iOS, and Windows 10. Each policy will have the same settings and they will apply to all users. The policies are activated when the user connects their work account to their mobile phone.</span></span>
+<span data-ttu-id="d83f1-p102">Während des Setups werden drei Anwendungsverwaltungsrichtlinien hinzugefügt, jeweils eine für Android, iOS und Windows 10. Jede Richtlinie weist dieselben Einstellungen auf und gilt für alle Benutzer. Die Richtlinien werden aktiviert, wenn der Benutzer seine Arbeit auf dem Mobiltelefon mit seinem Geschäftskonto verbindet.</span><span class="sxs-lookup"><span data-stu-id="d83f1-p102">During setup, three application management policies are added, one each for Android, iOS, and Windows 10. Each policy will have the same settings and they will apply to all users. The policies are activated when the user connects their work account to their mobile phone.</span></span>
   
-<span data-ttu-id="1c909-p103">Wir empfehlen, während des Setups die Standardkonfiguration zu übernehmen. Nach Abschluss des Setups können Sie weitere Richtlinien hinzufügen, mit denen Sie die Konfiguration optimieren und unterschiedliche Steuerungsebenen für bestimmte Benutzergruppen festlegen können.</span><span class="sxs-lookup"><span data-stu-id="1c909-p103">We recommend that you accept the default configuration during setup. After setup completes, you can add more policies that let you fine-tune the configuration and let you apply varying levels of control for specific user groups.</span></span>
+<span data-ttu-id="d83f1-p103">Wir empfehlen, während des Setups die Standardkonfiguration zu übernehmen. Nach Abschluss des Setups können Sie weitere Richtlinien hinzufügen, mit denen Sie die Konfiguration optimieren und unterschiedliche Steuerungsebenen für bestimmte Benutzergruppen festlegen können.</span><span class="sxs-lookup"><span data-stu-id="d83f1-p103">We recommend that you accept the default configuration during setup. After setup completes, you can add more policies that let you fine-tune the configuration and let you apply varying levels of control for specific user groups.</span></span>
   
-<span data-ttu-id="1c909-112">Informationen zum Hinzufügen von Richtlinien nach dem Setup finden Sie unter [Verwalten von Richtlinien und Geräten im Admin Center](manage.md).</span><span class="sxs-lookup"><span data-stu-id="1c909-112">To add policies after setup, see [Manage policies and devices in the admin center](manage.md).</span></span>
+<span data-ttu-id="d83f1-112">Informationen zum Hinzufügen von Richtlinien nach dem Setup finden Sie unter [Verwalten von Richtlinien und Geräten im Admin Center](manage.md).</span><span class="sxs-lookup"><span data-stu-id="d83f1-112">To add policies after setup, see [Manage policies and devices in the admin center](manage.md).</span></span>
   
 
