@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Liefern von Office- und Branchen-Apps.
-ms.openlocfilehash: 2fdd47fa38b3d9403bbd44869e4dfe012abd0f51
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 716be01cd414bea5655fb90289b465db27f15841
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073105"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Schritt 3: Liefern von Office- und Branchen-Apps
 
@@ -43,7 +43,8 @@ Wenn Ihnen nichts im Wege steht, empfehlen wir Ihnen, die 64-Bit-Version aller A
 
 Es gibt viele Methoden und Modelle für die Installation von Apps unter Windows. Sehen wir uns also die Optionen an, die Ihnen für die Lieferung zur Verfügung stehen.
 
-[Windows 10-Anwendungsmanagement](https://docs.microsoft.com/de-DE/windows/application-management/)
+
+  [Windows 10-Anwendungsmanagement](https://docs.microsoft.com/de-DE/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>MSI-basierte Bereitstellungen
 
@@ -61,9 +62,11 @@ Eine andere häufig verwendete Methode der App-Bereitstellung ist PC-Imageerstel
 
 Wenn Sie Office 365 ProPlus in das Image einbeziehen möchten, denken Sie daran, dass dies eine benutzerbasierte Aktivierung erfordert. Es kann nicht vom Systemadministrator bereits aktiviert werden. Verwenden Sie das Office-Bereitstellungstool auf dem Gerät, von dem Sie ein Image erstellen, und überspringen Sie die Benutzeranmeldung. Nach der Bereitstellung des Images können sich Endbenutzer mit ihren Office 365-Anmeldeinformationen anmelden und Office 365 ProPlus aktivieren.
 
-[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/de-DE/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Bereitstellen von Office 365 ProPlus als Bestandteil eines Betriebssystemabbilds](https://docs.microsoft.com/de-DE/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+  [Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/de-DE/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+
+
+  [Bereitstellen von Office 365 ProPlus als Bestandteil eines Betriebssystemabbilds](https://docs.microsoft.com/de-DE/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office Klick-und-Los 
 
@@ -79,13 +82,17 @@ Wenn Sie System Center Configuration Manager verwenden, können Sie dies weiter 
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Bereitstellungshandbuch für Office 365 ProPlus](https://docs.microsoft.com/de-DE/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Office 365 ProPlus](https://docs.microsoft.com/de-DE/deployoffice/upgrade-from-msi-version)
+  [Bereitstellungshandbuch für Office 365 ProPlus](https://docs.microsoft.com/de-DE/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Verwalten von Office 365 ProPlus mit Configuration Manager](https://docs.microsoft.com/de-DE/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-[Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune](https://docs.microsoft.com/de-DE/intune/apps-add-office365)
+  [Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Office 365 ProPlus](https://docs.microsoft.com/de-DE/deployoffice/upgrade-from-msi-version)
+
+
+  [Verwalten von Office 365 ProPlus mit Configuration Manager](https://docs.microsoft.com/de-DE/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+
+
+  [Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune](https://docs.microsoft.com/de-DE/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>Browserbasierte Apps
 
@@ -93,7 +100,8 @@ Es gibt einige Dinge zu berücksichtigen, um sicherzustellen, dass Ihre browserb
 
 Wenn Sie darüber hinaus wissen, dass Ihre Intranetwebsites nicht ordnungsgemäß mit Microsoft Edge funktionieren, können Sie festlegen, dass alle Intranetwebsites automatisch mit Internet Explorer 11 geöffnet werden. Dieser Vorgang verwendet eine XML-Datei, um zu bestimmen, ob IE11 für jede Website verwendet wird, wobei eine Gruppenrichtlinie zum Erzwingen der Einstellungen verwendet wird.
 
-[Der Unternehmensmodus](https://docs.microsoft.com/de-DE/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+
+  [Der Unternehmensmodus](https://docs.microsoft.com/de-DE/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 Bisher haben wir ausschließlich allgemein bekannte Bereitstellungsmethoden behandelt. Allerdings gibt es zwei neue Ansätze für die App-Bereitstellung, die Sie in Betracht ziehen sollten.
 

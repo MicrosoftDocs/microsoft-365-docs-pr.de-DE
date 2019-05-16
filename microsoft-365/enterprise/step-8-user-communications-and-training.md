@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand von Benutzerkommunikation und Schulungen auf Windows 10 und Office 365 ProPlus vorbereiten.
-ms.openlocfilehash: cd413ae0f7a85a65c41c2112a64e19b6ed68c987
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 60207ad991acdee2c5378b331ce85aa762722e40
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073045"
 ---
 # <a name="step-8-user-communications-and-training"></a>Schritt 8: Benutzerkommunikation und Schulung
 
@@ -55,11 +55,12 @@ Bei Windows 10 helfen wir Ihnen dabei, Ihre Benutzer mit optionalen und standard
 
 Es gibt außerdem sichtbare Sicherheits- und Compliance-Steuerungen, die möglicherweise für die Benutzer angezeigt werden. Enterprise Mobility + Security, das Azure AD und Microsoft Intune umfasst, integriert zusätzliche Funktionen in Windows 10 und Office 365, die Sie für das Desktop-Upgrade nutzen können.
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/de-DE/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
 
 Wenn Sie zum Beispiel die mehrstufige Authentifizierung aktiviert haben, verwendet diese Azure AD und schützt so die Benutzeranmeldung bei Ressourcen, indem eine Telefon-App oder PIN zum sicheren Zugriff auf die Dienste genutzt wird. Azure Information Protection erleichtert es Benutzern außerdem, Dokumente zu klassifizieren und mit Bezeichnungen zu versehen.
 
-[Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/de-DE/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+
+  [Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/de-DE/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Dies sind nur einige wenige der neuen Funktionen, die den Benutzern nun zur Verfügung stehen, und einige Benutzer werden überrascht sein – positiv, oder auch weniger positiv. Dies kann dazu führen, dass Sie mehr Support-Anfragen und -Tickets für den Helpdesk erhalten, insbesondere dann, wenn sich der normale Arbeitsablauf ändert.
 

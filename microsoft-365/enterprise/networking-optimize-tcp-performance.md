@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Konfigurieren von TCP-Einstellungen und Office 365-Diensten für eine bessere Leistung.
-ms.openlocfilehash: cf172bcaa87b7c69d33d349d18c449efff30a1d9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9e786b36d7a2afccc3b9112b815cd42a40317c15
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073185"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>Schritt 5: Optimieren der Leistung des Clients und des Office 365-Diensts
 

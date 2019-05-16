@@ -3,7 +3,7 @@ title: Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von Microsoft Teams in Microsoft 365 Enterprise in Ihrem Unternehmen.
-ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072855"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 
@@ -99,7 +99,7 @@ Verwenden Sie diese Ressourcen dann, um die Teams-Lizenzierung zu verstehen und 
 - [Verwalten des Benutzerzugriffs auf Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [Clients für Microsoft Teams abrufen](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [Aktivieren von Microsoft Teams in Ihrer Office 365-Organisation](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [Verwalten von Microsoft Teams-Features in Ihrer Office 365-Organisation](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+- [Verwalten von Microsoft Teams-Features in Ihrer Office 365-Organisation](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
 
 #### <a name="result"></a>Ergebnis
 
