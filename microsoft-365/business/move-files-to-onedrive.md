@@ -3,7 +3,7 @@ title: Verschieben von Dateien auf OneDrive for Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Erfahren Sie, wie Sie Ihre Dateien in OneDrive verschieben.
-ms.openlocfilehash: a5cc0ff46599bcbf5aee71a76bce3ed99c8b9a66
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 361c65a714a8f820c05204b627c179adf8b17e63
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285415"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072668"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business
 

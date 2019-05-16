@@ -3,7 +3,7 @@ title: Erstellen und Bearbeiten von AutoPilot-Profilen
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Informationen zum Erstellen, bearbeiten, löschen oder Entfernen von autoPilot-Profilen. '
-ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 'Informationen zum Erstellen, bearbeiten, löschen oder Entfernen von Autopilot-Profilen. '
+ms.openlocfilehash: 7987cafb3ea234d81be72c79aee8e584a3770875
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277109"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073488"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Erstellen und Bearbeiten von AutoPilot-Profilen
 
@@ -35,7 +35,7 @@ ms.locfileid: "32277109"
 
 Ein Profil gilt für ein Gerät oder eine Gerätegruppe.
   
-1. wählen sie im Microsoft 365 Business Admin center die option **geräte** \> **autopilot**aus.
+1. Wählen Sie im Microsoft 365 Business Admin Center die Option **Geräte** \> **Autopilot**aus.
   
 2. Klicken Sie **** auf der Seite Autopilot auf die Register \> Karte **profile** **Profil erstellen**.
     

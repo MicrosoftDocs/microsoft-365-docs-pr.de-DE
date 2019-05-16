@@ -3,7 +3,7 @@ title: Bereitstellen von Exchange Online für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -11,18 +11,18 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Einführung des Werts von Exchange Online in Microsoft 365 Enterprise in Ihrer Organisation.
-ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281205"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072285"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Bereitstellen von Exchange Online für Microsoft 365 Enterprise
 
-*Diese Arbeitslast ist sowohl in den Versionen E3 und E5 von Microsoft 365 Enterprise enthalten.*
+*Diese Workload ist in den Versionen E3 und E5 von Microsoft 365 Enterprise enthalten.*
 
-Exchange Online ist Ihr primärer clouddienst für e-Mail-und Kalenderfunktionen, die Ihren Benutzern bei der Zusammenarbeit auf eine Art und Weise helfen, in der kein Echtzeit-Chat oder zentraler Dokumentspeicher erforderlich ist. Exchange Online ist die Art und Weise, wie Sie die Kommunikation und Planung von einzelnen und kleinen Gruppen durchführen, und ist ein wichtiger Bestandteil des Werts von Microsoft 365 Enterprise für die zusammenArbeit. Mit Exchange Online können Sie mehr erreichen und effektiver mit der bekannten Outlook-Anwendung arbeiten, unabhängig davon, auf welchem Gerät Sie sich gerade befinden.
+Exchange Online ist Ihr primärer clouddienst für e-Mail-und Kalenderfunktionen, die Ihren Benutzern bei der Zusammenarbeit auf eine Art und Weise helfen, in der kein Echtzeit-Chat oder zentraler Dokumentspeicher erforderlich ist. Exchange Online ist die Art und Weise, wie Sie die Kommunikation und Planung von einzelnen und kleinen Gruppen durchführen, und ist ein wichtiger Bestandteil des Werts von Microsoft 365 Enterprise für die Zusammenarbeit. Mit Exchange Online können Sie mehr erreichen und effektiver mit der bekannten Outlook-Anwendung arbeiten, unabhängig davon, auf welchem Gerät Sie sich gerade befinden.
 
 Exchange Online verfügt außerdem über erweiterte Sicherheitsfunktionen wie Antischadsoftware und Antispamfilter zum Schutz von Postfächern und Funktionen zur Verhinderung von Datenverlust, die verhindern, dass Benutzer vertrauliche Informationen fälschlicherweise an unbefugte Personen senden. Exchange Online Security ist ein zentrales Element des intelligenten Sicherheits Werts von Microsoft 365 Enterprise.
 
@@ -59,7 +59,7 @@ Exchange Online ermöglicht die folgenden strategischen Geschäftsszenarien für
 - Zusammenarbeiten an Dokumenten in Echtzeit oder in Ihrem eigenen Tempo, um den Mitgestaltungsprozess zu vereinfachen
 - Verwalten von Projekten, Aufgaben und Terminen, um Ihre Geschäftsziele zu erreichen
 - Verstehen Ihrer Arbeitsgewohnheiten zur Verbesserung Ihres Einflusses und Ihres Eindrucks
-- Kommunikation mit Ihrem Team, um auf den Laufenden zu bleiben, Feedback anzufordern, den Zusammenhalt zu stärken und einen Konsens zu erreichen
+- Kommunikation mit Ihrem Team, um auf dem Laufenden zu bleiben, Feedback anzufordern, den Zusammenhalt zu stärken und einen Konsens zu erreichen
 - Speichern und Freigeben von Dateien innerhalb und außerhalb Ihrer Organisation für eine nahtlose Zusammenarbeit über Organisationsgrenzen hinweg
 - Sicheres Arbeiten überall und jederzeit von Ihrem Gerät aus, um bei einem flexiblen Arbeitsstil produktiver zu arbeiten
 - Schützen Ihrer Informationen und Reduzierung des Risikos von Datenverlusten
@@ -82,7 +82,7 @@ Um den Zugriff auf Exchange Online-Postfächer zu schützen, stellen Sie sicher,
 
 ### <a name="step-1-complete-your-technical-planning"></a>Schritt 1: Abschließen der technischen Planung
 
-Bevor Sie mit der technischen Planung beginnen, legen Sie fest, ob Sie die Kurzhilfe verwenden möchten. Wenn Ihre Organisation über 50 Arbeitsplätze hat und an einem [berechtigten Plan](https://technet.microsoft.com/library/dn783224.aspx)teilnimmt, können Sie [für Microsoft 365](https://fasttrack.microsoft.com/microsoft365), ohne zusätzliche Kosten, zur Verfügung stehen, um Sie durch Planung, Bereitstellung und Dienst Einführung zu führen. Sie können diese Arbeit auch selbst abschließen, indem Sie Onboarding-Assistenten verwenden, die bei [](https://fasttrack.microsoft.com/) der Anmeldung mit ihrem Office 365-Konto bei der Verbindung zur Verfügung stehen.
+Bevor Sie mit der technischen Planung beginnen, legen Sie fest, ob Sie die Kurzhilfe verwenden möchten. Wenn Ihre Organisation über 50 Arbeitsplätze hat und an einem [berechtigten Plan](https://technet.microsoft.com/library/dn783224.aspx)teilnimmt, können Sie [für Microsoft 365](https://fasttrack.microsoft.com/microsoft365), ohne zusätzliche Kosten, zur Verfügung stehen, um Sie durch Planung, Bereitstellung und Dienst Einführung zu führen. Sie können diese Arbeit auch selbst abschließen, indem Sie Onboarding-Assistenten verwenden, die bei [](https://fasttrack.microsoft.com/) der Anmeldung mit Ihrem Office 365-Konto bei der Verbindung zur Verfügung stehen.
 
 Wenn Sie Ihre eigene Planung oder in Verbindung mit der Überführung durchführen, müssen Sie ermitteln, ob Ihr Netzwerk und Ihre Organisation für Exchange Online bereit sind. Es ist besonders wichtig, dass Sie die Beendigungskriterien für das Netzwerk in ihrer Foundation-Infrastruktur erfüllen, mit besonderem Augenmerk auf die Internet Bandbreite, den Durchsatz und die Datenverkehrs Verzögerungen, um die Leistung für den zusätzlichen Datenverkehr für Exchange zu maximieren. Online basierte e-Mails und Anlagen.
 
@@ -167,8 +167,8 @@ Nachfolgend finden Sie einige Vorschläge:
 
 - Weitere Informationen zu allgemeinen bewährten Methoden für die Einführung von Clouddiensten finden Sie im [Office 365-Einführungsleitfaden](https://aka.ms/successfactors). 
 - Informationen zur Office 365-Dienstnutzung in Ihrer Organisation finden Sie unter [Office 365-Aktivitätsberichte](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Wenn Sie kein globaler Administrator für Office 365 für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
-- ÜberWachen Sie Ihren Feedback-Veranstaltungsort (einen öffentlichen Kanal in einem zentralen Teams-Team oder jammern) auf Probleme und Feedback von Personen über ihre Erfahrungen mit Exchange Online. Beheben Sie Fragen und Probleme so schnell wie möglich, um frustrierte Personen zu verhindern und die Unterstützung für die Einführung zu demonstrieren.
-- Identifizieren und pflegen Sie Champions in jeder Geschäftsgruppe, und heben Sie Ihre Leistungen und bewährten Methoden mit Exchange Online hervor. Reflektieren Sie Ihre Erfolge an der Organisation, um Projekterfolg und-Annahme zu zeigen. Die unterStützung durch technische Leiter innerhalb einer Unternehmensgruppe kann Einfluss auf Führungskräfte und Peers haben.
+- Überwachen Sie Ihren Feedback-Veranstaltungsort (einen öffentlichen Kanal in einem zentralen Teams-Team oder jammern) auf Probleme und Feedback von Personen über ihre Erfahrungen mit Exchange Online. Beheben Sie Fragen und Probleme so schnell wie möglich, um frustrierte Personen zu verhindern und die Unterstützung für die Einführung zu demonstrieren.
+- Identifizieren und pflegen Sie Champions in jeder Geschäftsgruppe, und heben Sie Ihre Leistungen und bewährten Methoden mit Exchange Online hervor. Reflektieren Sie Ihre Erfolge an der Organisation, um Projekterfolg und-Annahme zu zeigen. Die Unterstützung durch technische Leiter innerhalb einer Unternehmensgruppe kann Einfluss auf Führungskräfte und Peers haben.
 
 #### <a name="result"></a>Ergebnis
 

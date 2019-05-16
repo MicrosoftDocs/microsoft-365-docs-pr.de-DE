@@ -3,7 +3,7 @@ title: Migrieren zu Microsoft 365 Business von Office 365 Business Premium
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen zu Microsoft 365 Business bewegen.
-ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072738"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrieren zu Microsoft 365 Business von Office 365 Business Premium
 
@@ -58,7 +58,7 @@ Wenn Sie einen Link zum Erwerb Ihrer Lizenzen erhalten haben, werden Sie einen A
     
 2. Auf der Seite **Ihre Anmeldung und e-Mail-Adresse personalisieren** können Sie eine Domäne hinzufügen, indem Sie eine Domäne verbinden, die **Sie bereits besitzen** , wenn Sie diese Gelegenheit nutzen möchten, um Ihrem Abonnement eine weitere Domäne hinzuzufügen. 
     
-    Wenn Sie bereits eine Domäne eingerichtet haben, wird im zweiten Feld angezeigt, dass der _Domänenname_ \> weiterhin **für e-Mails und die Anmeldung** **verwendet** \<wird.   wenn sie keine domäne mit ihrem abonnement eingerichtet haben, werden sie sagen, dass sie **weiterhin** \< _ihr unternehmen name.onmicrosoft.com_ \> **für e-mail und anmeldung**verwenden.  
+    Wenn Sie bereits eine Domäne eingerichtet haben, wird im zweiten Feld angezeigt, dass der _Domänenname_ \> weiterhin **für e-Mails und die Anmeldung** **verwendet** \<wird.   Wenn Sie keine Domäne mit Ihrem Abonnement eingerichtet haben, werden Sie sagen, dass Sie **weiterhin** \< _Ihr Unternehmen Name.onmicrosoft.com_ \> **für e-Mail und Anmeldung**verwenden.  
     
     Wählen Sie **Weiter** aus.
     
@@ -78,9 +78,9 @@ Wenn Sie einen Link zum Erwerb Ihrer Lizenzen erhalten haben, werden Sie einen A
     
     ![Wählen Sie in der Benutzerkarte bearbeiten Nebenprodukt Lizenzen aus.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. unter **produktlizenzen** : folie **Microsoft 365 Business** auf **beim** \> **speichern**, und **schließen**sie dann.
+8. Unter **Produktlizenzen** : Folie **Microsoft 365 Business** auf **beim** \> **Speichern**, und **Schließen**Sie dann.
     
-nachdem sie die erstlizenz für Microsoft 365 Business erworben haben, können sie nun auch weitere in **billing** \> **Purchase services**hinzufügen. Auf der Seite **Purchase Services** können Sie auf die Auslassungspunkte auf der **Microsoft 365** -Visitenkarte klicken und dann **Lizenzmenge ändern** wählen, um weitere Informationen zu erwerben. 
+Nachdem Sie die Erstlizenz für Microsoft 365 Business erworben haben, können Sie nun auch weitere in **Billing** \> **Purchase Services**hinzufügen. Auf der Seite **Purchase Services** können Sie auf die Auslassungspunkte auf der **Microsoft 365** -Visitenkarte klicken und dann **Lizenzmenge ändern** wählen, um weitere Informationen zu erwerben. 
   
 ## <a name="protect-user-devices-and-files"></a>Schützen von Benutzergeräten und-Dateien
 
@@ -90,11 +90,11 @@ Nachdem Sie Microsoft 365 Business Lizenzen zugewiesen haben, können Sie mit de
     
 2. Klicken Sie auf der Seite **Geräterichtlinien** auf **Hinzufügen**.
     
-3. Geben Sie im Bereich **richtLinie hinzufügen** der Richtlinie einen Namen ein, und wählen Sie dann einen **Richtlinientyp** aus der Dropdownliste aus. 
+3. Geben Sie im Bereich **Richtlinie hinzufügen** der Richtlinie einen Namen ein, und wählen Sie dann einen **Richtlinientyp** aus der Dropdownliste aus. 
     
     Sie können Anwendungsrichtlinien für den Schutz von Dateien auf Android-und iPhone-Geräten sowie für Windows 10 einrichten, und Sie können Geräte Konfigurationsrichtlinien für Unternehmens-Windows 10-Geräte einrichten. Weitere Informationen finden Sie unter den folgenden Links:
     
-  - [Festlegen von App-Schutzeinstellungen für Android-oder iOS-Geräte](app-protection-settings-for-android-and-ios.md)
+  - [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](app-protection-settings-for-android-and-ios.md)
     
   - [Festlegen von Anwendungsschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
     

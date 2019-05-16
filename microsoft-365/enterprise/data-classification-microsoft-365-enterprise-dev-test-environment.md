@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie dieses Test Labor Handbuch, um Office 365-Aufbewahrungs Bezeichnungen für Dokumente in Ihrer Microsoft 365 Enterprise-Testumgebung zu erstellen und zu verwenden.
-ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072415"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Datenklassifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -55,7 +55,7 @@ In dieser Phase erstellen Sie die Aufbewahrungs Bezeichnungen für die verschied
     
 7. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Beschriftung erstellen**.
     
-8. Wiederholen Sie die Schritte 3-7 für zusätzliche Bezeichnungen mit diesen Namen:
+8. Wiederholen Sie die Schritte 3 bis 7 für die zusätzlichen Bezeichnungen mit diesen Namen:
     
   - Private
     
@@ -115,11 +115,11 @@ Konfigurieren Sie als nächstes den Ordner "Dokumente" der SensitiveFiles-Teamwe
 
 Erstellen Sie als nächstes ein neues Dokument auf der SensitiveFiles-Website, und ändern Sie dessen Aufbewahrungs Bezeichnung.
     
-1. Klicken Sie im Ordner Dokumente auf **Neues _GT_ Word-Dokument**.
+1. Klicken Sie im Ordner Dokumente auf **Neues > Word-Dokument**.
     
 2. Geben Sie im leeren Dokument Text ein. Warten Sie, bis der Text gespeichert wird.
     
-3. Klicken Sie in der Menüleiste auf **freiGegebene Dokumente**.
+3. Klicken Sie in der Menüleiste auf **freigegebene Dokumente**.
     
 4. Klicken Sie auf das Word-Symbol neben dem Dateinamen **Document. docx** .
     
@@ -129,7 +129,7 @@ Erstellen Sie als nächstes ein neues Dokument auf der SensitiveFiles-Website, u
     
 7. Wählen Sie im Bereich **Document. docx** unter **Bezeichnung anwenden**die Bezeichnung **streng vertraulich** aus, und klicken Sie dann auf **Speichern**.
 
-Informationen und Links dazu, wie Sie Office 365- **** Aufbewahrungs Bezeichnungen in der Produktion bereitStellen, finden Sie unter [Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md) .
+Informationen und Links dazu, wie Sie Office 365- **** Aufbewahrungs Bezeichnungen in der Produktion bereitstellen, finden Sie unter [Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md) .
 
 ## <a name="next-step"></a>Nächster Schritt
 

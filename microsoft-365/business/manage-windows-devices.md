@@ -3,7 +3,7 @@ title: Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Erfahren Sie, wie Sie mit Microsoft 365 lokale Ad-verbundene Windows 10-Geräte schützen können.
-ms.openlocfilehash: 661e5bf8205a661eb4382b4bdd8fcf3a54ecc12f
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: af0e78ef6e79bfd612b11a16538e7afcd377ffb0
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071548"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 

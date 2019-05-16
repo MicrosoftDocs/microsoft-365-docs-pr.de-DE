@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: wie Contoso eine SharePoint Online-Website für hochregulierte Daten implementiert hat, um die Zusammenarbeit zwischen ihren Forschungsteams zu vereinfachen.'
-ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072780"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>SharePoint Online-Website für hoch vertrauliche digitale Objekte der Contoso Corporation
 
@@ -70,9 +70,9 @@ Als nächstes haben Sie eine neue Office 365 DLP-Richtlinie namens " **Forschung
 
 - Verwendet die **vertrauliche** Office 365-Aufbewahrungs Bezeichnung. 
 - Wird auf die **Forschungs** Website angewendet.
-- Verhindert, dass Benutzer Dokumente freigeben.
+- Blockiert Benutzer, wenn Sie versuchen, ein digitales Objekt auf der **Forschungs** Website außerhalb von Contoso freizugeben.
 
-Die Konfigurationsdetails finden Sie unter [Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
+Die Konfigurationsdetails finden Sie unter [Schützen von SharePoint Online-Dateien mit Aufbewahrungs Bezeichnungen und DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
 ## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>Schritt 4: Erstellen einer Azure Information Protection-unter Bezeichnung für die Website
 
@@ -93,8 +93,8 @@ Hier ist die resultierende Konfiguration der **Forschungs** Website für hoch ve
 Dateien in Ordnern der **Recherche** Website werden geschützt durch:
 
 - Die **** unter Bezeichnung Azure Information Protection, die Verschlüsselung und permssions für jede Datei anwendet, die mit der Datei reist, wenn Sie von der **Recherche** Website verschoben oder kopiert wird.
-- Die **** DLP-richtLinie "Recherchieren" verwendet die **hochsensible** Aufbewahrungs Bezeichnung und Einstellungen, die verhindern, dass die Datei die Website verlässt.
-- Die Gruppe von Websiteberechtigungen, die nur den Mitgliedern der Sicherheitsgruppen für **** Recherche-und Forschungs **** Benutzer sowie der Verwaltung von Mitgliedern der sicherheitsGruppe "Recherche- **Administratoren** " den Zugriff ermöglichen.
+- Die **** DLP-Richtlinie "Recherchieren" verwendet die **hochsensible** Aufbewahrungs Bezeichnung und Einstellungen, die verhindern, dass die Datei für externe Benutzer freigegeben wird.
+- Die Gruppe von Websiteberechtigungen, die nur den Mitgliedern der Sicherheitsgruppen für **** Recherche-und Forschungs **** Benutzer sowie der Verwaltung von Mitgliedern der Sicherheitsgruppe "Recherche- **Administratoren** " den Zugriff ermöglichen.
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Schritt 5: Migrieren der lokalen SharePoint-Forschungsdaten
 
@@ -112,7 +112,7 @@ Das Sicherheitsteam von Contoso hat die Forschungsteams in einem obligatorischen
 
 Das Endergebnis ist eine sichere Umgebung, in der die Forscher innerhalb der gesamten Organisation in einer sicheren Umgebung zusammenarbeiten können. 
 
-Wenn ein Forschungsdokument mit der unter Bezeichnung **Recherche** aus der **Forschungs** Website ausgelaufen ist, wird es verschlüsselt und kann nur Mitgliedern der sicherheitsGruppen "Research- **Members** " und " **Research-Viewers** " mit gültigen Anmeldeinformationen zugänglich gemacht werden.
+Wenn ein Forschungsdokument mit der unter Bezeichnung **Recherche** aus der **Forschungs** Website ausgelaufen ist, wird es verschlüsselt und kann nur Mitgliedern der Sicherheitsgruppen "Research- **Members** " und " **Research-Viewers** " mit gültigen Anmeldeinformationen zugänglich gemacht werden.
 
 ## <a name="next-step"></a>Nächster Schritt
 

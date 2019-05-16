@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie dieses Test Labor Handbuch, um der Microsoft 365 Enterprise-Testumgebung InTune-Geräte Konformitätsrichtlinien hinzuzufügen.
-ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: eb140844eba4bc5cf5eba7fe452345f251ced0ff
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072115"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Geräte Konformitätsrichtlinien für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -42,7 +42,7 @@ Wenn Sie MAM-Richtlinien in einem simulierten Unternehmen konfigurieren möchten
 
 In dieser Phase erstellen Sie eine Geräte Konformitätsrichtlinie für Windows 10-Geräte.
   
-1. Wechseln Sie zum Office 365-Portal unter[https://portal.office.com](https://portal.office.com)(), und melden Sie sich bei ihrem Office 365-Test Lab-Abonnement mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie zum Office 365-Portal unter[https://portal.office.com](https://portal.office.com)(), und melden Sie sich bei Ihrem Office 365-Test Lab-Abonnement mit ihrem globalen Administratorkonto an.
     
 2. Öffnen Sie auf einer neuen Registerkarte Ihres Browsers das Azure-Portal [https://portal.azure.com](https://portal.azure.com)unter.
 
@@ -54,7 +54,7 @@ In dieser Phase erstellen Sie eine Geräte Konformitätsrichtlinie für Windows 
     
 6. Klicken Sie auf dem Blatt **Gruppen-alle Gruppen** auf **+ neue Gruppe**.
     
-7. wählen sie im **gruppen** blatt **Office 365** oder **sicherheit** für **gruppentyp?**, geben sie **verwaltete Windows 10-geräte benutzer** unter **Name**ein, wählen sie **zugewiesen** unter mitgliedschafts aus, und klicken sie dann auf **erstellen**. **** 
+7. Wählen Sie im **Gruppen** Blatt **Office 365** oder **Sicherheit** für **Gruppentyp?**, geben Sie **verwaltete Windows 10-Geräte Benutzer** unter **Name**ein, wählen Sie **zugewiesen** unter Mitgliedschafts aus, und klicken Sie dann auf **Erstellen**. **** 
     
 8. Schließen Sie das Blatt **Gruppe**.
     
@@ -76,7 +76,7 @@ In dieser Phase erstellen Sie eine Geräte Konformitätsrichtlinie für Windows 
     
 19. Schließen Sie das Blatt **Kompatibilitätsrichtlinienprofile**.
     
-20. Klicken Sie auf dem **Microsoft InTune** -Blatt im linken navigationsBereich auf **Client-apps** .
+20. Klicken Sie auf dem **Microsoft InTune** -Blatt im linken Navigationsbereich auf **Client-apps** .
     
 21. Klicken Sie auf dem Blatt **Client apps** auf **apps**, und klicken Sie dann auf **Hinzufügen**. 
 
@@ -100,7 +100,7 @@ Erkunden Sie zusätzliche Features und Funktionen für die [Verwaltung mobiler G
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   
-[Registrieren von iOS-und Android-Geräten in Ihrer Microsoft 365 Enterprise-Testumgebung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Registrieren von IOS-und Android-Geräten in Ihrer Microsoft 365 Enterprise-Testumgebung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Bereitstellen von Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 

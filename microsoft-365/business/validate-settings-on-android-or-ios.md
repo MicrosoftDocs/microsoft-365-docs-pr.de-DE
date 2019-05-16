@@ -1,9 +1,9 @@
 ---
-title: Überprüfen der APP-Schutzeinstellungen auf Android-oder iOS-Geräten
+title: Überprüfen der APP-Schutzeinstellungen auf Android-oder IOS-Geräten
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 'Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.  '
-ms.openlocfilehash: 5ab16d481bd11ec31a1387a7e94d8b08bb3e0abe
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d4ed70290b21b40ca9ecd5601954c429a27dc528
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072368"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Überprüfen der APP-Schutzeinstellungen auf Android-oder iOS-Geräten
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Überprüfen der APP-Schutzeinstellungen auf Android-oder IOS-Geräten
 
-Folgen Sie den Anweisungen auf den Registerkarten, um App-Schutzeinstellungen auf Android-oder iOS-Geräten zu überprüfen.
+Folgen Sie den Anweisungen auf den Registerkarten, um App-Schutzeinstellungen auf Android-oder IOS-Geräten zu überprüfen.
   
 ## <a name="androidtab"></a>[Android](#tab/)
   

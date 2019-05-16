@@ -3,7 +3,7 @@ title: Privileged Access Management für die Microsoft 365 Enterprise-Testumgebu
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Verwenden Sie dieses Test Labor Handbuch, um die privilegierte Zugriffsverwaltung Ihrer Microsoft 365 Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 9cac4f941ba3eb45bfc2bf79075ba22515a589b9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 306cd8d3cb574fd18a3d184898ead765936bf431
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073015"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Privileged Access Management für die Microsoft 365 Enterprise-Testumgebung
 
@@ -36,7 +36,7 @@ Wenn Sie die Verwaltung von privilegierten Zugriffen nur auf einfache Weise mit 
 Wenn Sie die Verwaltung privilegierter Zugriffsrechte in einem simulierten Unternehmen konfigurieren möchten, befolgen Sie die Anweisungen unter [Passthrough-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Das Testen der privilegierten Zugriffsverwaltung erfordert nicht die simulierte Enterprise-Testumgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) verbunden ist. Sie wird hier als Option bereitgestellt, damit Sie die privilegierte Zugriffsverwaltung testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
+> Das Testen der privilegierten Zugriffsverwaltung erfordert nicht die simulierte Enterprise-Testumgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine AD DS-Gesamtstruktur verbunden ist. Sie wird hier als Option bereitgestellt, damit Sie die privilegierte Zugriffsverwaltung testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Phase 2: Konfigurieren der Verwaltung privilegierter Zugriffsrechte
 
