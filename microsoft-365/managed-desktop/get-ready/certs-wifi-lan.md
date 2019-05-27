@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163445"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391266"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop  
  
@@ -71,7 +71,7 @@ Nachdem Sie Ihr LAN-Profil exportiert haben, können Sie die Richtlinie für Mic
     - Oma-URI (Groß-/Kleinschreibung beachten): Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - Datentyp: SELECT **String (XML File)**. 
     - Benutzerdefiniertes XML: Hochladen der exportierten XML-Datei.
-2. Übermitteln einer Dienstanforderung an von Microsoft verwaltete Desktop Vorgänge mithilfe des Verwaltungsportals von Microsoft Managed Desktop zum Überprüfen und Bereitstellen des Konfigurationsprofils für "moderne Arbeitsplatz Geräte – Test". Microsoft Managed Desktop Operations informiert Sie darüber, wann die Anforderung über das Verwaltungs Portal abgeschlossen wurde.
+2. Übermitteln Sie eine Support Anfrage an den Microsoft Managed Desktop-IT-Betrieb mithilfe des Verwaltungsportals von Microsoft Managed Desktop, um das Konfigurationsprofil auf "moderne Arbeitsplatz Geräte – Test" zu überprüfen und bereitzustellen. Microsoft Managed Desktop-IT-Betrieb informiert Sie, wenn die Anforderung über die Support Anfrage im Administratorportal abgeschlossen wird.
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Bereitstellen von Zertifikaten und Wi-Fi/VPN-Profil 
  
@@ -82,6 +82,6 @@ Führen Sie die folgenden Schritte aus, um Zertifikate und Profile bereitzustell
 2. Erstellen eines Profils für jedes SCEP-oder PKCS-Zertifikat (siehe [Erstellen eines SCEP-Zertifikats Profils](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) oder [Erstellen eines PKCS-Zertifikat Profils](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) jedes dieser Profile muss eine Beschreibung aufweisen, die ein Ablaufdatum im Format tt/mm/jjjj enthält. **Zertifikat profile ohne Ablaufdatum werden nicht bereitgestellt.**
 3. Erstellen Sie ein Profil für jedes Firmen-WLAN-Netzwerk (siehe [WLAN-Einstellungen für Geräte unter Windows 10 und höher](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Erstellen Sie ein Profil für jedes Unternehmens VPN (siehe [Windows 10 und Windows holographische Geräteeinstellungen zum Hinzufügen von VPN-Verbindungen mit InTune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Senden Sie eine Dienstanforderung mit dem Titel "Zertifikatbereitstellung" oder "WLAN-Profil Bereitstellung" über das Microsoft Managed Desktop Admin Portal an Microsoft Managed Desktop Operations, um das Konfigurationsprofil auf "moderne Arbeitsplatz Geräte – Test" zu überprüfen und bereitzustellen. Microsoft Managed Desktop Operations informiert Sie darüber, wann die Anforderung über das Verwaltungs Portal abgeschlossen wurde. 
+5. Übermitteln einer Support Anforderung mit dem Titel "Zertifikatbereitstellung" oder "WLAN-Profil Bereitstellung" an von Microsoft verwaltete Desktop-IT-Vorgänge mithilfe des Verwaltungsportals von Microsoft Managed Desktop zum Überprüfen und Bereitstellen des Konfigurationsprofils für "moderne Arbeitsplatz Geräte – Test ". Microsoft Managed Desktop-IT-Betrieb informiert Sie darüber, wann die Anforderung über die Support Anfrage im Administratorportal abgeschlossen wurde. 
  
  
