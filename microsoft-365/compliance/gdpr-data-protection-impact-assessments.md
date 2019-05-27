@@ -2,20 +2,20 @@
 title: Datenschutz-Folgenabschätzung
 description: Diese Dokumente stellen den Datenverantwortlichen Informationen bereit, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgeabschätzung erforderlich ist, und wenn ja, welche Informationen sie enthalten soll.
 keywords: Datenschutz-Folgenabschätzung, DPIA (Data Protection Impact Assessment), Dynamics 365, Microsoft Professional Services, Microsoft 365, Microsoft 365-Dokumentation, DSGVO
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d05c99daaaeadd42714b7df752b5d560e95538bb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 049d12f5e8cb738fc7f1d53f6d08c592c8c52c46
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285588"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431818"
 ---
 # <a name="data-protection-impact-assessments"></a>Datenschutz-Folgenabschätzung
 
