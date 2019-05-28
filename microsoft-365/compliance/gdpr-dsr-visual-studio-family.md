@@ -13,12 +13,12 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286923"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431546"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Visual Studio-Familie – Datensubjektanforderungen für die DSGVO
 
@@ -104,7 +104,7 @@ Führen Sie diese Schritte aus, um Ihre Feedbackdaten anzuzeigen:
 1. Melden Sie sich bei der [Entwicklercommunity](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profil und Einstellungen**.
 2. Klicken Sie auf die Registerkarte **Profil**, **Benachrichtigungen**, **Aktivität** oder **Anhänge**, um die an die Feedbacksysteme übermittelten Daten anzuzeigen.
    1. **Profil** bezieht sich auf Ihr Profil für die [Entwickler-Community](https://developercommunity.visualstudio.com) und enthält den Benutzernamen, die E-Mail-Adresse, allgemeine Informationen usw.
-   2. Unter **Benachrichtigungen** steuern Sie, welche E-Mail-Benachrichtigungen Sie erhalten.
+   2. **Benachrichtigungen steuern, welche E-Mail-Benachrichtigungen Sie erhalten.
    3. Unter **Aktivität** sind die Feedbackelemente, für die Sie Aktionen durchgeführt haben (Posten, Kommentieren usw.), und die Aktivitäten aufgeführt.
    4. Unter **Anhänge** wird eine Liste mit Ihrem Anhangverlauf beispielsweise im folgenden Format `FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM` angezeigt.
 

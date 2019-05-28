@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: b3711e0a68600152750d85e6287be735e204a92d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285093"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431776"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Azure DevOps Services – Anfragen von Betroffenen für die DSGVO
 
@@ -33,7 +33,7 @@ Die Artikel [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/pr
 
 ## <a name="personal-data-we-collect"></a>Von uns erfasste personenbezogene Daten
 
-Microsoft erfasst Daten von Benutzern zur Ausführung und Verbesserung von Azure DevOps Services. Azure DevOps Services erfasst zwei Kategorien von Daten&mdash;Kundendaten und vom System generierte Protokolle. Kundendaten umfassen vom Benutzer identifizierbare transaktionale und interaktionale Daten, die Azure DevOps Services für den Dienst verwenden muss. Vom System generierte Protokolle enthalten Dienstverwendungsdaten, die für jeden Produktbereich und jede Produktfunktion aggregiert werden.
+Microsoft erfasst Daten von Benutzern zur Ausführung und Verbesserung von Azure DevOps Services. Azure DevOps Services erfasst zwei Kategorien von Daten: Kundendaten und vom System generierte Protokolle. Kundendaten umfassen vom Benutzer identifizierbare transaktionale und interaktionale Daten, die Azure DevOps Services für den Dienst verwenden muss. Vom System generierte Protokolle enthalten Dienstverwendungsdaten, die für jeden Produktbereich und jede Produktfunktion aggregiert werden.
 
 ## <a name="delete-azure-devops-data"></a>Löschen Azure DevOps-Daten
 
