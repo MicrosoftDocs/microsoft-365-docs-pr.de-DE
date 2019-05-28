@@ -1,6 +1,6 @@
 ---
 title: Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO
-description: Wie Microsoft-Support und Professional Services mit Datenbetreffsanforderungen umgeht.
+description: Wie Microsoft-Support und Professional Services mit Anträgen betroffener Personen umgeht.
 keywords: Professional Services, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 author: herviicban
 localization_priority: Priority
@@ -10,12 +10,12 @@ ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4fb7c3140a73e4f72673807bb99214ff6fc0f2bc
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278246"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431746"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Microsoft-Support und Professional Services für Datenbetreffsanforderungen für die DSGVO
 
@@ -55,13 +55,13 @@ Sämtliche Anträge müssen wie nachfolgend beschrieben über einen Supportmitar
 
 Nachstehend sind die für diesen Leitfaden relevanten Definitionen von Ausdrücken aus der DSGVO aufgeführt:
 
--   **Controller. ** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Controller bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
+-   **Datenverantwortlicher.** eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Datenverantwortliche bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
 
--   **Personenbezogene Daten und betroffene Person.** Alle Informationen über eine identifizierte oder identifizierbare natürliche Person ("betroffene Person"). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
+-   **Personenbezogene Daten und betroffene Person.** Alle Informationen über eine identifizierte oder identifizierbare natürliche Person („betroffene Person“). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
 
--   **Verarbeiter. ** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Controllers verarbeitet.
+-   **Verarbeiter.** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Controllers verarbeitet.
 
-#### <a name="additional-terms-and-definitions-that-may-helpful-in-understanding-this-guide"></a>Zusätzliche Begriffe und Definitionen, die möglicherweise hilfreich für das Verständnis dieses Leitfadens sind
+#### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Zusätzliche Begriffe und Definitionen, die möglicherweise hilfreich für das Verständnis dieses Leitfadens sind
 
 -   **Support- und Beratungsdaten** sind alle Daten, einschließlich Text, Ton, Video, Bilddateien und Software, die Microsoft durch den Kunden oder in dessen Namen durch ein Engagement mit Microsoft übermittelt werden (oder deren Abruf über einen Onlinedienst Microsoft vom Kunden genehmigt wird), um Support oder Professional Services zu erhalten. Dies beinhaltet keine erfassten Daten, für die Microsoft der Daten-Controller ist, einschließlich Kontaktdaten des Kunden.
 

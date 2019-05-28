@@ -2,21 +2,21 @@
 title: Dynamics 365-Datenbetreffsanforderungen für die DSGVO
 description: Leitfaden, wie unsere als Datenverantwortliche handelnden Kunden Microsoft-Produkte, -Dienste und -Verwaltungstools zum Suchen von und Reagieren auf personenbezogene Daten als Reaktion auf DSRs verwenden können.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/30/2019
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 3c394df956801beed63b5e31c4a1579bf5324eba
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497737"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431756"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Dynamics 365-Datenbetreffsanforderungen für die DSGVO
 
@@ -24,17 +24,17 @@ Die europäische Datenschutz-Grundverordnung (DSGVO) gewährt Personen (die in d
 
 In diesem Leitfaden wird erläutert, wie Microsoft-Produkte, -Dienste und -Verwaltungstools verwendet werden können, um als Reaktion auf Anträge betroffener Personen unseren als Datenverantwortliche handelnden Kunden dabei zu helfen, personenbezogene Daten zu finden und auf diese zu reagieren. Dies umfasst das Suchen, den Zugriff und die Reaktion auf personenbezogene Daten, die in der Microsoft-Cloud gespeichert sind. Im Folgenden finden Sie eine kurze Übersicht den in diesem Leitfaden beschriebenen Prozesse:
 
-1. ***Ermittlung *** – verwenden Sie Such- und Ermittlungstools, um Kundendaten leichter zu finden, die möglicherweise Gegenstand einer Anforderung einer betroffenen Person sind. Sobald potenziell geeignete Dokumente gefunden wurden, können Sie eine oder mehrere der Aktionen für Anträge betroffener Personen durchführen, die in den folgenden Schritten beschrieben sind, um auf die Anforderung der betroffenen Person zu reagieren. Andernfalls können Sie bestimmen, dass die Anforderung nicht den Unternehmensrichtlinien für die Reaktion auf Anträge betroffener Personen entspricht.
+1. ***Ermittlung – verwenden Sie Such- und Ermittlungstools, um Kundendaten leichter zu finden, die möglicherweise Gegenstand einer Anforderung einer betroffenen Person sind. Sobald potenziell geeignete Dokumente gefunden wurden, können Sie eine oder mehrere der Aktionen für Anträge betroffener Personen durchführen, die in den folgenden Schritten beschrieben sind, um auf die Anforderung der betroffenen Person zu reagieren. Andernfalls können Sie bestimmen, dass die Anforderung nicht den Unternehmensrichtlinien für die Reaktion auf Anträge betroffener Personen entspricht.
 
-2. ***Zugriff*** – rufen Sie personenbezogene Daten auf, die sich in der Microsoft-Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
+2. ***Zugriff – rufen Sie personenbezogene Daten auf, die sich in der Microsoft-Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
 
-3. ***Berichtigung*** – nehmen Sie gegebenenfalls Änderungen oder sonstige beantragte Aktionen an den personenbezogenen Daten vor.
+3. ***Berichtigung – nehmen Sie gegebenenfalls Änderungen oder sonstige beantragte Aktionen an den personenbezogenen Daten vor.
 
-4.  ***Beschränken*** – Schränken Sie die Verarbeitung personenbezogener Daten entweder durch Zurückziehen von Lizenzen für verschiedene Onlinedienste oder durch Deaktivieren der gewünschten Dienste wo möglich ein. Des Weiteren können Sie Daten aus der Microsoft-Cloud entfernen und diese lokal oder an einem anderen Ort aufbewahren.
+4.  ***Beschränken – Schränken Sie die Verarbeitung personenbezogener Daten entweder durch Zurückziehen von Lizenzen für verschiedene Onlinedienste oder durch Deaktivieren der gewünschten Dienste wo möglich ein. Des Weiteren können Sie Daten aus der Microsoft-Cloud entfernen und diese lokal oder an einem anderen Ort aufbewahren.
 
-5. ***Löschen*** – entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
+5. ***Löschen – entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
 
-6. ***Export*** – stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten zur Verfügung.
+6. ***Export – stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten zur Verfügung.
 
 In jedem Abschnitt dieses Leitfadens werden technische Verfahren beschrieben, die ein als Datenverantwortlicher handelndes Unternehmen nutzen kann, um auf eine Anforderung einer betroffenen Person bezüglich personenbezogener Daten in der Microsoft-Cloud zu reagieren.
 
@@ -42,15 +42,15 @@ In jedem Abschnitt dieses Leitfadens werden technische Verfahren beschrieben, di
 
 Nachfolgend finden Sie Definitionen von Begriffen, die für diesen Leitfaden relevant sind:
 
-- <em>Datenverantwortlicher</em> – eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Datenverantwortliche bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
+- <em>Datenverantwortlicher. eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Datenverantwortliche bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
 
-- *Personenbezogene Daten* und <em>betroffene Person</em> – alle Informationen über eine identifizierte oder identifizierbare natürliche Person („betroffene Person“). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
+- *Personenbezogene Daten* und <em>betroffene Person.Alle Informationen über eine identifizierte oder identifizierbare natürliche Person („betroffene Person“). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
 
-- <em>Datenverarbeiter</em> – eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Datenverantwortlichen verarbeitet.
+- <em>Verarbeiter. Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Controllers verarbeitet.
 
 - *Kundendaten* – alle Daten, einschließlich aller Text-, Sound-, Video- oder Bilddateien, die Microsoft vom Kunden oder im Auftrag des Kunden durch Nutzung von Enterprise-Diensten bereitgestellt werden, wie in den Onlinedienstbedingungen von Microsoft festgelegt.
 
-- *Vom System*-* generierte Protokolle –* von Microsoft generierte Protokolle und verbundene Daten, die Microsoft bei der Bereitstellung von Enterprise-Diensten für Benutzer unterstützen. Vom System generierte Protokolle enthalten in erster Linie pseudonymisierte Daten, z. B. eindeutige Bezeichner – in der Regel eine vom System generierte Zahl, die von sich aus eine Einzelperson nicht identifizieren kann, aber dazu verwendet wird, die Enterprise-Dienste für Benutzer bereitzustellen. Vom System generierte Protokolle enthalten möglicherweise auch Informationen zur Identifikation über Endbenutzer, wie z. B. einen Benutzernamen.  
+- *Vom System* *generierte Protokolle – von Microsoft generierte Protokolle und verbundene Daten, die Microsoft bei der Bereitstellung von Enterprise-Diensten für Benutzer unterstützen. Vom System generierte Protokolle enthalten in erster Linie pseudonymisierte Daten, z. B. eindeutige Bezeichner – in der Regel eine vom System generierte Zahl, die von sich aus eine Einzelperson nicht identifizieren kann, aber dazu verwendet wird, die Enterprise-Dienste für Benutzer bereitzustellen. Vom System generierte Protokolle enthalten möglicherweise auch Informationen zur Identifikation über Endbenutzer, wie z. B. einen Benutzernamen.  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>So kann Sie dieser Leitfaden bei der Einhaltung Ihrer Verantwortlichkeiten als Datenverarbeiter unterstützen
 
@@ -247,7 +247,7 @@ Der erste Schritt bei der Beantwortung der Anforderung einer betroffenen Person 
 
 - Benutzernamen in Power BI, wenn Ihre Organisation das [Social Engagement Content Pack](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) für Power BI verwendet, um die Teamleistung on sozialen Medien zu analysieren.
 
-Dieser erste Schritt - das Auffinden und Überprüfen der fraglichen personenbezogenen Daten - hilft Ihnen festzustellen, ob die Anforderung der betroffenen Person den Anforderungen Ihres Unternehmens entspricht, diese einzuhalten oder abzulehnen. Nachdem Sie beispielsweise die personenbezogenen Daten gefunden und geprüft haben, können Sie feststellen, dass die Anforderung nicht den Anforderungen Ihres Unternehmens entspricht, da diese die Rechte und Freiheiten anderer beeinträchtigen könnte.
+Dieser erste Schritt – das Auffinden und Überprüfen der fraglichen personenbezogenen Daten – hilft Ihnen festzustellen, ob die Anforderung der betroffenen Person den Anforderungen Ihres Unternehmens entspricht, diese einzuhalten oder abzulehnen. Nachdem Sie beispielsweise die personenbezogenen Daten gefunden und geprüft haben, können Sie feststellen, dass die Anforderung nicht den Anforderungen Ihres Unternehmens entspricht, da diese die Rechte und Freiheiten anderer beeinträchtigen könnte.
 
 #### <a name="social-media-users-authors"></a>Für Benutzer von sozialen Medien (Autoren)
 
@@ -394,7 +394,7 @@ Administratoren können auf vom System generierte Protokolle zugreifen, die mit 
 
 Nachdem Sie eine neue Anforderung erstellt haben, wird sie auf der Seite **Datenprotokollexport** aufgelistet, wo Sie ihren Status nachverfolgen können. Nachdem eine Anforderung abgeschlossen ist, können Sie auf einen Link klicken, um auf die vom System generierten Protokolle zuzugreifen, die innerhalb von 30 Tagen nach Erstellung der Anforderung in den Azure-Speicherort Ihrer Organisation exportiert werden. Die Daten werden in gängigen, maschinenlesbaren Dateiformaten wie JSON oder XML gespeichert. Wenn Sie kein Azure-Konto und keinen Azure-Speicherort haben, müssen Sie ein Azure-Konto und/oder einen Azure-Speicherort für Ihre Organisation erstellen, damit das Datenprotokollexport-Tool die vom System generierten Protokolle exportieren kann.
 
-Azure unterstützt dies, indem es Ihrer Organisation ermöglicht, die Daten im nativen JSON-Format in den angegebenen Container im Azure-Speicher zu exportieren. Artikel [Einführung in Microsoft Azure Storage – BLOB-Speicher](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
+Azure unterstützt dies, indem es Ihrer Organisation ermöglicht, die Daten im nativen JSON-Format in den angegebenen Container im Azure-Speicher zu exportieren. Artikel [Einführung in Microsoft Azure Storage – Blob-Speicher](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
 
 **Wichtig**: Sie müssen ein Mandantenadministrator sein, um Benutzerdaten aus dem Mandanten exportieren zu können.
 
@@ -436,7 +436,8 @@ Die folgende Tabelle fasst den Zugriff auf und den Export von vom System generie
 </tbody>
 </table>
 
-[Hinweis] Bei einigen Features ist das Exportieren oder Löschen personenbezogener Daten nicht möglich, um die Integrität derartiger Informationen aus Sicherheits- und Überwachungsgründen zu schützen.
+> [!Note]
+> Bei einigen Features ist das Exportieren oder Löschen personenbezogener Daten nicht möglich, um die Integrität derartiger Informationen aus Sicherheits- und Überwachungsgründen zu schützen.
 
 ### <a name="deleting-system-generated-logs"></a>Löschen von vom System generierten Protokollen
 Um vom System generierte Protokolle zu löschen, die über eine Zugriffsanforderung abgerufen werden, müssen Sie den Benutzer aus dem Dienst entfernen und sein Azure Active Directory-Konto dauerhaft löschen. Anweisungen zum dauerhaften Löschen eines Benutzers finden Sie im Abschnitt [Löschen eines Benutzers](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) in diesem Handbuch. Es ist wichtig zu beachten, dass das dauerhafte Löschen eines Benutzerkontos nach dem Start unwiderruflich ist.
@@ -445,4 +446,4 @@ Durch dauerhaftes Löschen eines Benutzerkontos werden die Daten des Benutzers i
 
 #### <a name="learn-more"></a>Weitere Informationen
 
-[Microsoft Trust Center](https://www.microsoft.com/de-DE/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
