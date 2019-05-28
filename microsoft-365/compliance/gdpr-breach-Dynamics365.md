@@ -2,27 +2,25 @@
 title: Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 description: Wie Dynamics 365 Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 3ee90c2fbe2684cebbd19376f44fc97d743515db
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 957fbe5713c248ebcac1a986248455c7d98b4935
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286385"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431876"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
-Dynamics 365 nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst.Microsoft Dynamics 365 – Datenschutzverletzungen
-
-Microsoft arbeitet kontinuierlich an der Bereitstellung äußerst sicherer Unternehmensdienste für Dynamics 365-Kunden. Die Informationen in diesem Abschnitt geben einen Überblick darüber, wie Microsoft Dynamics 365 vor Sicherheitsvorfällen/Datenschutzverletzungen schützt, sowie über den Prozess zur Reaktion und Benachrichtigung unserer Kunden.
+Dynamics 365 nimmt die Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst und ergreift umfangreiche Sicherheitsmaßnahmen zum Schutz vor Datenschutzverletzungen. Microsoft arbeitet kontinuierlich an der Bereitstellung äußerst sicherer Unternehmensdienste für Dynamics 365-Kunden. Die Informationen in diesem Abschnitt geben einen Überblick darüber, wie Microsoft Dynamics 365 vor Sicherheitsvorfällen/Datenschutzverletzungen schützt, sowie über den Prozess zur Reaktion und Benachrichtigung unserer Kunden.
 
 #### <a name="microsoft-dynamics-365-built-in-security-features"></a>Microsoft Dynamics 365 – Integrierte Sicherheitsfeatures
 
@@ -128,7 +126,7 @@ Während der Untersuchung arbeitet das Sicherheitsteam eng mit globalen Rechtsbe
 
 Microsoft überprüft, ob das Risiko für Kunden und Unternehmen erfolgreich gebannt wurde und ob Abhilfemaßnahmen implementiert wurden. Bei Bedarf werden Notfallverfahren zum Beheben unmittelbarer Sicherheitsrisiken im Zusammenhang mit dem Ereignis ausgeführt.
 
-Microsoft nimmt auch eine interne nachträgliche Analyse zu Datenschutzverletzungen vor. Im Rahmen dieser Übung wird die Angemessenheit von Reaktions- und Betriebsverfahren bewertet und es werden etwaige notwendige Updates an den internen Sicherheitsrichtlinien von Microsoft oder zugehörigen Prozessen identifiziert und implementiert. Interne nachträgliche Analysen zu Datenschutzverletzungen sind streng vertrauliche Datensätze, auf die Kunden keinen Zugriff haben. Diese Analysen können allerdings in zusammengefasster Form in andere Kundenbenachrichtigungen zu Ereignissen aufgenommen werden. Die Analysen werden im Rahmen des routinemäßigen Auditzyklus von Dynamics 365 durch externe Auditoren geprüft.
+Microsoft führt zudem einen internen nachträglichen Vorgang für Datenverstöße durch. Als Teil dieser Übung werden die Suffizienz der Antwort und der Betriebsabläufe ausgewertet und alle Verbesserungen, die für Microsofts interne Sicherheitsrichtlinien oder zugehörige Prozesse nötig sein könnten ermittelt und implementiert. Interne nachträgliche Vorgänge für Datenverstöße sind hochgradig vertrauliche Datensätze, die für Kunden nicht verfügbar sind. Es kann jedoch vorkommen, dass die nachträglichen Vorgänge in anderen Kunden-Ereignisbenachrichtigungen zusammengefasst und einbezogen werden. Diese Berichte werden externen Auditoren zur Überprüfung als Teil des routinemäßigen Überwachungszyklus von Dynamics 365 bereitgestellt.
 
 #### <a name="customer-notification"></a>Kundenbenachrichtigung
 
