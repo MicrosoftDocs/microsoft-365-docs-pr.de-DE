@@ -2,21 +2,21 @@
 title: Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
 description: Wie Microsoft Schutz vor Datenschutzverletzungen für personenbezogene Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6b91b489d8d69faffa0852c3e352a6b2e9e9d496
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 69c626d874e0afd59e1447c494ec1b84c7a4cb7a
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286365"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431866"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
 
@@ -36,7 +36,7 @@ Zusätzlich zu unserer Verpflichtung, rechtzeitig über Datenschutzverletzungen 
 
 Hier finden Sie eine Beschreibung einiger unserer Investitionen in diesem Bereich:
 
--   **Zugriffskontrollsysteme.** Office 365 befolgt eine Richtlinie des „Zero-standing-Zugriffs“, was bedeutet, dass Techniker nicht auf den Dienst zugreifen können, bis ihnen der Zugriff als Reaktion auf einen bestimmten Vorfall, der eine Ausweitung des Zugriffs erfordert, explizit gewährt wird. Zugriff wird jedes Mal nach dem  Prinzip der geringsten Rechte gewährt: Die Berechtigung für eine bestimmte Anforderung ermöglicht nur einen minimalen Satz von Aktionen, die erforderlich sind, um diese Anforderung zu bedienen. Zu diesem Zweck behält Office 365 eine strikte Trennung zwischen „erweiterten Rollen“ bei, von denen jede Rolle lediglich bestimmte vordefinierte Aktionen ermöglicht. Die Rolle  „Zugang zu Kundendaten“ unterscheidet sich von anderen Rollen, die häufiger zum Verwalten des Dienstes verwendet werden, und wird vor der Genehmigung am stärksten geprüft. Zusammengenommen reduzieren diese Investitionen in die Zugriffskontrolle die Wahrscheinlichkeit, dass ein Techniker missbräuchlich auf Kundendaten in Office 365 zugreift, erheblich.
+-   **Zugriffskontrollsysteme.** Office 365 befolgt eine Richtlinie des „Zero-standing-Zugriffs“, was bedeutet, dass Techniker nicht auf den Dienst zugreifen können, bis ihnen der Zugriff als Reaktion auf einen bestimmten Vorfall, der eine Ausweitung des Zugriffs erfordert, explizit gewährt wird. Zugriff wird jedes Mal nach dem Prinzip der geringsten Rechte gewährt: Die Berechtigung für eine bestimmte Anforderung ermöglicht nur einen minimalen Satz von Aktionen, die erforderlich sind, um diese Anforderung zu bedienen. Zu diesem Zweck behält Office 365 eine strikte Trennung zwischen „erweiterten Rollen“ bei, von denen jede Rolle lediglich bestimmte vordefinierte Aktionen ermöglicht. Die Rolle „Zugang zu Kundendaten“ unterscheidet sich von anderen Rollen, die häufiger zum Verwalten des Dienstes verwendet werden, und wird vor der Genehmigung am stärksten geprüft. Zusammengenommen reduzieren diese Investitionen in die Zugriffskontrolle die Wahrscheinlichkeit, dass ein Techniker missbräuchlich auf Kundendaten in Office 365 zugreift, erheblich.
 
 -   **Sicherheitsüberwachungssysteme und Automatisierung:** Office 365 verfügt über zuverlässige Sicherheitsüberwachungssysteme in Echtzeit. Unter anderem lösen diese Systeme Warnungen aus bei versuchtem unrechtmäßigen Zugriff auf Kundendaten oder bei Versuchen, Daten unrechtmäßig aus unserem Dienst heraus zu übertragen. Im Zusammenhang mit den oben genannten Zugriffskontrollsystemen verwalten unsere Sicherheitsüberwachungssysteme detaillierte Einträge zu Erweiterungsanforderungen und die Aktionen, die aufgrund einer bestimmten Anforderung ausgeführt werden. Zudem unterhält Office 365 automatische Investitionen in die Auflösung, die automatisch handeln, um als Reaktion auf erkannte Gefahren Bedrohungen zu mindern, sowie dedizierte Teams zur Reaktion auf Warnungen, die nicht automatisch aufgelöst werden können. Zur Überprüfung unserer Sicherheitsüberwachungssysteme führt Office 365 regelmäßig Übungen mit roten Teams durch, in denen ein internes Team für Penetrationstests Angreiferverhalten in der Live-Umgebung simuliert. Diese Übungen haben regelmäßige Verbesserungen unserer Fähigkeiten zur Sicherheitsüberwachung und Reaktion zur Folge.
 
