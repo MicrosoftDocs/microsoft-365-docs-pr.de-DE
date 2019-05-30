@@ -1,6 +1,6 @@
 ---
 title: Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
-description: Wie Microsoft Schutz vor Datenschutzverletzungen für personenbezogene Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
+description: Wie Microsoft Sie vor Verletzungen des Schutzes personenbezogener Daten schützt und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -20,19 +20,19 @@ ms.locfileid: "34431866"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
 
-Als Datenverarbeiter stellt Office 365 sicher, dass unsere Kunden als Datenverantwortliche die Anforderungen an Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO einhalten. Zu diesem Zweck sind wir bestrebt, Folgendes zu tun:
+Als Datenauftragsverarbeiter stellt Office 365 sicher, dass unsere Kunden in ihrer Rolle als Datenverantwortliche die Anforderungen an Benachrichtigungen im Falls von Datenschutzverletzungen im Rahmen der DSGVO einhalten. Zu diesem Zweck sind wir bestrebt, Folgendes zu tun:
 
 -   unseren Kunden eine Möglichkeit zu bieten, einen dedizierten Datenschutzkontakt anzugeben, der im Falle einer Verletzung benachrichtigt wird. Kunden können diesen Kontakt in Azure Active Directory (AAD) angeben.
 
--   Kunden innerhalb von 72 Stunden über eine Datenschutzverletzung bei personenbezogenen Daten zu benachrichtigen. Die Benachrichtigung erfolgt per E-Mail an den Kontakt, der von dem Kunden angegeben wurde.
+-   Kunden innerhalb von 72 Stunden über eine Verletzung des Schutzes personenbezogener Daten zu benachrichtigen. Die Benachrichtigung erfolgt per E-Mail an den Kontakt, der von dem Kunden angegeben wurde.
 
 -   Die erste Benachrichtigung umfasst mindestens eine Beschreibung der Art der Verletzung, eine  Schätzung der Auswirkungen auf die Benutzer und Schritte zur Minderung der Auswirkungen (falls zutreffend). Wenn unsere Untersuchung zum Zeitpunkt der ersten Benachrichtigung nicht abgeschlossen ist, werden wir in unserer ersten Benachrichtigung nächste Schritte und Zeitrahmen für die nachfolgende Kommunikation aufführen.
 
-Microsoft ist sich bewusst, dass Datenverantwortliche die Verantwortung für die Durchführung von Risikobewertungen tragen und dafür, zu bestimmen, ob eine Verletzung die Benachrichtigung der Datenschutzbehörde des Kunden erfordert. Unsere Benachrichtigung an Kunden enthält die Informationen, die zur Durchführung dieser Bewertung erforderlich sind. Microsoft wird Kunden daher über eine Datenschutzverletzung bei personenbezogenen Daten benachrichtigen, außer in Fällen, in denen personenbezogene Daten als unverständlich gelten (z. B. stark verschlüsselte Daten, bei denen die Integrität des Schlüssels bestätigt wurde).
+Microsoft ist sich bewusst, dass Datenverantwortliche die Verantwortung für die Durchführung von Risikobewertungen tragen und dafür, zu bestimmen, ob eine Verletzung die Benachrichtigung der Datenschutzbehörde des Kunden erfordert. Unsere Benachrichtigung an Kunden enthält die Informationen, die zur Durchführung dieser Bewertung erforderlich sind. Microsoft wird Kunden daher über eine Verletzung des Schutzes personenbezogener Daten benachrichtigen, außer in Fällen, in denen personenbezogene Daten als unverständlich gelten (z. B. stark verschlüsselte Daten, bei denen die Integrität des Schlüssels bestätigt wurde).
 
 ## <a name="office-365-investments-in-data-security"></a>Office 365 Investitionen in Datensicherheit
 
-Zusätzlich zu unserer Verpflichtung, rechtzeitig über Datenschutzverletzungen zu benachrichtigen, investiert Office 365 in Systeme, Prozesse und Mitarbeiter, um die Wahrscheinlichkeit von Verletzungen bei personenbezogenen Daten zu verringern, und Verletzungen, wenn sie auftreten, schnell zu erkennen und ihre Auswirkungen zu mindern.
+Zusätzlich zu unserer Verpflichtung, rechtzeitig über Datenschutzverletzungen zu benachrichtigen, investiert Office 365 in Systeme, Prozesse und Mitarbeiter, um die Wahrscheinlichkeit von Verletzungen des Schutzes personenbezogener Daten zu verringern, und Verletzungen, wenn sie auftreten, schnell zu erkennen und ihre Auswirkungen zu mindern.
 
 Hier finden Sie eine Beschreibung einiger unserer Investitionen in diesem Bereich:
 
@@ -42,7 +42,7 @@ Hier finden Sie eine Beschreibung einiger unserer Investitionen in diesem Bereic
 
 -   **Personal und Prozesse:** Zusätzlich zu der oben beschriebenen Automatisierung verfügt Office 365 über Prozesse und Teams, die für die Weiterbildung des gesamten Unternehmens zum Thema Datenschutz und Vorfallmanagement-Prozesse sowie für die Durchführung dieser Prozesse im Falle einer Datenschutzverletzung zuständig sind. Beispielsweise wird ein detailliertes Standardverfahren (Standard Operating Procedure, SOP) für Datenschutzverletzungen aufrechterhalten und an die Teams innerhalb des Unternehmens weitergegeben. Dieses Standardverfahren beschreibt detailliert die Rollen und Verantwortlichkeiten der einzelnen Teams in Office 365 und der zentralen Teams für die Reaktion auf Sicherheitsvorfälle. Dazu gehören sowohl Aufgaben, die Teams erfüllen müssen, um ihre eigene Sicherheitsposition zu verbessern (Sicherheitsüberprüfungen durchführen, mit zentralen Sicherheitsüberwachungssystemen und anderen Best Practices integrieren), und Aufgaben, die Teams im Falle einer tatsächlichen Datenschutzverletzung erfüllen müssten (schnelle Eskalation zur Reaktion auf Vorfälle, bestimmte Datenquellen verwalten und bereitstellen, die verwendet werden, um den Reaktionsprozess zu beschleunigen). Teams werden außerdem regelmäßig zur Klassifizierung von Daten und zur richtigen Handhabung und Speicherung personenbezogener Daten geschult.
 
-Die wichtigsten Schlussfolgerung ist, dass Office 365 stark in die Verringerung der Wahrscheinlichkeit und Auswirkungen von Datenschutzverletzungen investiert, die unsere Kunden betreffen. Wenn solche Verletzungen bei personenbezogenen Daten auftreten, benachrichtigen wir unsere Kunden unverzüglich darüber, sobald die Verletzung bestätigt wurde.
+Die wichtigste Schlussfolgerung ist, dass Office 365 besonderes Augenmerk darauf legt, die Wahrscheinlichkeit und die Auswirkungen von Datenschutzverletzungen, die unsere Kunden betreffen, zu minimieren. Wenn solche Verletzungen des Schutzes personenbezogener Daten auftreten, benachrichtigen wir unsere Kunden unverzüglich darüber, sobald die Verletzung bestätigt wurde.
 
 ## <a name="what-to-expect-in-the-event-of-breach"></a>Was Sie im Falle einer Datenschutzverletzung erwarten können
 
@@ -60,9 +60,9 @@ Im Abschnitt oben werden die Investitionen beschrieben, die Office 365 tätigt, 
 
     -   Die Art von Benutzerdaten, die betroffen ist
 
-    -   Aktionen, die vom Datenverantwortlichen oder Datenverarbeiter ausgeführt werden müssen, um die Auswirkungen der Datenschutzverletzung zu mindern
+    -   Aktionen, die vom Verantwortlichen oder Auftragsverarbeiter ausgeführt werden müssen, um die Auswirkungen der Datenschutzverletzung zu mindern
 
-Kunden sollten auch beachten, dass Office 365 als Datenverarbeiter nicht das Risiko einer Datenschutzverletzung bewertet. Wenn eine Datenschutzverletzung erkannt wird, benachrichtigen wir unsere Kunden und stellen ihnen die Informationen bereit, die sie benötigen, um das Risiko für die betroffenen Benutzer genau zu bewerten und zu entscheiden, ob weitere Berichte an Aufsichtsbehörden erforderlich sind. Zu diesem Zweck müssen Datenverantwortliche Folgendes ermitteln:
+Kunden sollten auch beachten, dass Office 365 als Datenauftragsverarbeiter nicht das Risiko einer Datenschutzverletzung bewertet. Wenn eine Datenschutzverletzung erkannt wird, benachrichtigen wir unsere Kunden und stellen ihnen die Informationen bereit, die sie benötigen, um das Risiko für die betroffenen Benutzer genau zu bewerten und zu entscheiden, ob weitere Berichte an Aufsichtsbehörden erforderlich sind. Zu diesem Zweck müssen Datenverantwortliche Folgendes ermitteln:
 
 -   Schweregrad der Verletzung (d. h. Risikobewertung)
 

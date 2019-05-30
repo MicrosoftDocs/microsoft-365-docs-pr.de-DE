@@ -1,6 +1,6 @@
 ---
 title: Azure und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
-description: Wie Azure Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
+description: Wie Azure Sie vor Verletzungen des Schutzes von personenbezogenen Daten schützt und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -20,7 +20,7 @@ ms.locfileid: "34431496"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
-Microsoft Azure nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnung (DSGVO) sehr ernst. Microsoft Azure ergreift umfassende Sicherheitsmaßnahmen, um Daten vor Sicherheitsverletzungen zu schützen. Diese umfassen sowohl physische und logische Sicherheitskontrollen als auch automatisierte Sicherheitsprozesse, umfassende Richtlinien zur Informationssicherheit und zum Datenschutz sowie Schulungen zur Sicherheit und zum Datenschutz für Mitarbeiter.
+Microsoft Azure nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnung (DSGVO) sehr ernst. Microsoft Azure ergreift umfassende Sicherheitsmaßnahmen, um vor Datenschutzverletzungen zu schützen. Diese umfassen sowohl physische und logische Sicherheitskontrollen als auch automatisierte Sicherheitsprozesse, umfassende Richtlinien zur Informationssicherheit und zum Datenschutz sowie Schulungen zur Sicherheit und zum Datenschutz für Mitarbeiter.
 
 Sicherheit ist in Microsoft Azure von Grund auf integriert, beginnend mit dem [Security Development Lifecycle](https://www.microsoft.com/sdl/), einem obligatorischen Entwicklungsprozess, der benutzerdefinierte und standardmäßige Datenschutz-Methodologien umfasst. Das Leitprinzip der Sicherheitsstrategie von Microsoft besteht darin, vom Vorhandensein einer Datenschutzverletzung auszugehen, und stellt somit eine Erweiterung der Strategie für tiefgreifende, vorbeugende Sicherheit dar. Indem die Sicherheitsfunktionen von Azure ständig getestet werden, kann Microsoft neuen Bedrohungen immer einen Schritt voraus bleiben. Weitere Informationen zur Sicherheit bei Azure finden Sie in diesen [Ressourcen](https://www.microsoft.com/trustcenter/security/azure-security).
 
@@ -129,7 +129,7 @@ Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und SMEs von Microsoft Az
 
 -   **Meldepflichtiger Sicherheitsvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Anlagen von Microsoft bzw. deren Verwendung, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
 
--   **Datenschutzverletzung:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit persönlichen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
+-   **Datenschutzverletzung:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
 
 Damit ein CRSI erklärt werden kann, muss Microsoft bestimmen, dass ein nicht autorisierter Zugriff auf Kundendaten erfolgt ist oder sehr wahrscheinlich erfolgt ist und/oder dass eine rechtliche oder vertragliche Meldepflicht besteht. Es ist wünschenswert, aber nicht erforderlich, dass bestimmte Kundenauswirkungen, Ressourcenzugriff und Schritte zur Behebung bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls zu einem CRSI erklärt. Die Erklärung kann aber zu einem beliebigen Zeitpunkt erfolgen, sofern alle relevanten Informationen zur Verfügung stehen. Der Manager des Sicherheitsvorfalls muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis aufgetreten ist, um mit der Ausführung des Prozesses zur Benachrichtigung des Kunden über den Sicherheitsvorfall zu beginnen.
 
@@ -144,7 +144,7 @@ Microsoft führt zudem einen internen nachträglichen Vorgang für Datenverstö�
 
 Microsoft Azure benachrichtigt den Kunden und Aufsichtsbehörden entsprechend den Vorschriften über Datenschutzverletzungen. Microsoft baut auf eine umfangreiche interne Trennung im Betrieb von Azure-Diensten. Datenflussprotokolle sind ebenfalls robust. Ein Vorteil dieses Entwurfs besteht darin, dass die meisten Vorfälle auf bestimmte Kunden eingegrenzt werden können. Das Ziel besteht darin, betroffenen Kunden genaue, umsetzbare und zeitgerechte Informationen bereitzustellen, wenn Datenschutzverletzungen im Hinblick auf ihre Daten aufgetreten sind.
 
-Der Benachrichtigungsprozess bei einem deklarierten CRSI wird so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Im Allgemeinen wird der Prozess des Benachrichtigungsentwurfs durchgeführt, während der Vorfall untersucht wird. Kundenbenachrichtigungen werden ab dem Zeitpunkt, an dem wir einen Verstoß deklarieren, innerhalb von 72 Stunden übermittelt, *mit Ausnahme * der folgenden Situationen:
+Der Benachrichtigungsprozess bei einem deklarierten CRSI wird so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Im Allgemeinen wird der Prozess des Benachrichtigungsentwurfs durchgeführt, während der Vorfall untersucht wird. Kundenbenachrichtigungen werden ab dem Zeitpunkt, an dem wir eine Datenverletzung deklarieren, innerhalb von 72 Stunden übermittelt, *mit Ausnahme * der folgenden Situationen:
 
 -   Microsoft ist der Auffassung, dass durch das Ausführen einer Benachrichtigung das Risiko für andere Kunden erhöht wird. Beispielsweise kann der Akt der Benachrichtigung einen Gegenspieler über interne Abläufe informieren, was eine Unfähigkeit zur Behebung verursacht.
 
@@ -163,7 +163,7 @@ Microsoft Intune ist eine Schlüsselkomponente des Clouddienst-Angebots Microsof
 
 Da das Clouddienst-Angebot von Microsoft InTune dieselben technischen und organisatorischen Maßnahmen befolgt, treten ein oder mehrere Microsoft Azure-Service Teams zur Sicherung gegen Datenverletzungsprozesse ein. Daher sind alle Informationen, die im Benachrichtigungsdokument „Microsoft Azure-Datenverletzung“ dokumentiert sind, analog zum Microsoft InTune-Dienst. So hat Microsoft InTune beispielsweise denselben Sicherheitsincident-Antwortprozess und -Lebenszyklus (Phase 1: ermitteln bis Phase 5<strong>:</strong> Abschluss und nachträgliche Verfolgung) sowie den gleichen Kunden-Benachrichtigungsprozess für Sicherheitsverletzungen. Darüber hinaus erfüllt Microsoft InTune auch seine Verpflichtungen zu Datenverletzungsbenachrichtigungen für alle Microsoft O365-Kunden, die Intune verwenden, indem es direkt mit dem Microsoft O365-Team zusammen arbeitet.
 
-Weitere Informationen darüber, wie Microsoft eine Verletzung von personenbezogenen Daten erkennt und darauf reagiert, finden Sie im Service Trust Portal unter [Benachrichtigung bei Datenschutzverletzungen im Rahmen der DSGVO](https://servicetrust.microsoft.com/ViewPage/GDPRBreach).
+Weitere Informationen darüber, wie Microsoft eine Verletzung des Schutzes personenbezogener Daten erkennt und darauf reagiert, finden Sie im Service Trust Portal unter [Benachrichtigung bei Datenschutzverletzungen im Rahmen der DSGVO](https://servicetrust.microsoft.com/ViewPage/GDPRBreach).
 
 
 #### <a name="learn-more"></a>Weitere Informationen

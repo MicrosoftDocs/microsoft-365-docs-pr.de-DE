@@ -1,5 +1,5 @@
 ---
-title: Azure-Datenbetreffsanforderungen für die DSGVO
+title: Anträge betroffener Personen für Azure im Rahmen der DSGVO
 description: ''
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
@@ -17,11 +17,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "34431676"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr"></a>Azure-Datenbetreffsanforderungen für die DSGVO
+# <a name="azure-data-subject-requests-for-the-gdpr"></a>Anträge betroffener Personen für Azure im Rahmen der DSGVO
 
-## <a name="introduction-to-data-subject-requests-dsrs"></a>Einführung in Datenbetreffsanforderungen (DSRs)
+## <a name="introduction-to-data-subject-requests-dsrs"></a>Einführung in Anträge betroffener Personen
 
-Die europäische Datenschutz-Grundverordnung (DSGVO) gewährt Personen (die in den Bestimmungen als *betroffene Personen* bezeichnet werden) Berechtigungen zum Verwalten der personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Datenverantwortlicher* oder nur *Verantwortlicher* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten; dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format, damit sie zu einem anderen Datenverantwortlichen bewegt werden können. Eine formale Anforderung von einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion für deren persönliche Daten wird als *Antrag einer betroffenen Person* bezeichnet.
+Die europäische Datenschutz-Grundverordnung (DSGVO) gewährt Personen (die in den Bestimmungen als *betroffene Personen* bezeichnet werden) das Recht zum Verwalten ihrer personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Datenverantwortlicher* oder nur *Verantwortlicher* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten; dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format, damit sie zu einem anderen Datenverantwortlichen bewegt werden können. Eine formale Anfrage einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als *Antrag einer betroffenen Person* bezeichnet.
 
 In diesem Leitfaden wird erläutert, wie Microsoft-Produkte, -Dienste und -Verwaltungstools verwendet werden können, um als Reaktion auf Anträge betroffener Personen unseren als Datenverantwortliche handelnden Kunden dabei zu helfen, personenbezogene Daten zu finden und auf diese zu reagieren. Dies umfasst das Suchen, den Zugriff und die Reaktion auf personenbezogene Daten, die in der Microsoft-Cloud gespeichert sind. Im Folgenden finden Sie eine kurze Übersicht den in diesem Leitfaden beschriebenen Prozesse:
 
@@ -31,7 +31,7 @@ In diesem Leitfaden wird erläutert, wie Microsoft-Produkte, -Dienste und -Verwa
 
 3.  ***Berichtigung – nehmen Sie gegebenenfalls Änderungen oder sonstige beantragte Aktionen an den personenbezogenen Daten vor.
 
-4.  ***Beschränkung – schränken Sie die Verarbeitung personenbezogener Daten entweder durch Zurückziehen von Lizenzen für verschiedenen Azure-Dienste oder durch Deaktivieren der gewünschten Dienste wo möglich ein. Des Weiteren können Sie Daten aus der Microsoft-Cloud entfernen und diese lokal oder an einem anderen Ort aufbewahren.
+4.  ***Einschränkung – schränken Sie die Verarbeitung personenbezogener Daten entweder durch Zurückziehen von Lizenzen für verschiedenen Azure-Dienste oder durch Deaktivieren der gewünschten Dienste wo möglich ein. Des Weiteren können Sie Daten aus der Microsoft-Cloud entfernen und diese lokal oder an einem anderen Ort aufbewahren.
 
 5.  ***Löschung – entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
 
@@ -60,7 +60,7 @@ Nachfolgend finden Sie Definitionen von Begriffen, die für diesen Leitfaden rel
 
 Dieser Leitfaden besteht aus zwei Teilen:
 
-**Teil 1: Reaktion auf Anträge betroffener Personen bezüglich Kundendaten** – In Teil 1  dieses Leitfadens wird erläutert, wie Sie auf Daten in Anwendungen zugreifen und diese korrigieren, einschränken und exportieren können, in denen Sie Daten verfasst haben. Dieser Abschnitt enthält Informationen zum Ausführen von Anträgen von betroffenen Personen in Bezug auf Kundeninhalte und Informationen zur Identifikation von Endbenutzern.
+**Teil 1: Reaktion auf Anträge betroffener Personen bezüglich Kundendaten** – In Teil 1  dieses Leitfadens wird erläutert, wie Sie auf Daten in Anwendungen zugreifen und diese korrigieren, einschränken und exportieren können, in denen Sie Daten verfasst haben. Dieser Abschnitt enthält Informationen zum Ausführen von Anträgen von betroffenen Personen in Bezug auf Kundeninhalte und Informationen zur Identifizierung von Endbenutzern.
 
 **Teil 2: Reaktion auf Anträge betroffener Personen bezüglich vom System generierten Protokollen** – Wenn Sie die Microsoft Enterprise-Dienste verwenden, generiert Microsoft einige Informationen, die als vom System generierte Protokolle bekannt sind, um den Dienst bereitzustellen. In Teil 2 dieses Leitfadens wird erläutert, wie Sie auf solche Daten in Azure zugreifen können und wie Sie sie löschen und exportieren können.
 
@@ -89,14 +89,14 @@ Anträge betroffener Personen bezüglich eines MSA-Kontos selbst **außerhalb ei
 Microsoft bietet die Möglichkeit, auf bestimmte Kundendaten über das Azure-Portal und auch direkt über bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder Benutzeroberflächen (UI) für bestimmte Dienste (auch bezeichnet als *Oberflächen im Produkt*) zugreifen und diese löschen und exportieren. Details zu solchen Erfahrungen im Produkt werden in der jeweiligen Referenzdokumentation der entsprechenden Dienste beschrieben.
 
 >[Wichtig]  
-> Dienste, die Anträge betroffener Personen im Produkt unterstützen, erfordern die direkte Verwendung der Anwendungsprogrammierschnittstelle (API) oder der Benutzeroberfläche (UI) des Services, die die entsprechenden CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) beschreiben. Aus diesem Grund muss die Ausführung von Anträgen betroffener Personen in einem bestimmten Dienst zusätzlich zur Ausführung eines Antrags einer betroffenen Person im Azure-Portal erfolgen, damit eine vollständige Anforderung für eine bestimmte betroffene Person abgeschlossen werden kann. Weitere Details finden Sie in der Referenzdokumentation bestimmter Dienste.
+> Dienste, die Anträge betroffener Personen im Produkt unterstützen, erfordern die direkte Verwendung der Anwendungsprogrammierschnittstelle (API) oder der Benutzeroberfläche (UI) des Services, die die entsprechenden CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) beschreiben. Aus diesem Grund muss die Ausführung von Anträgen betroffener Personen in einem bestimmten Dienst zusätzlich zur Ausführung eines Antrags einer betroffenen Person im Azure-Portal erfolgen, damit ein Antrag einer bestimmten betroffenen Person vollständig abgeschlossen werden kann. Weitere Details finden Sie in der Referenzdokumentation bestimmter Dienste.
 
 <span id="_Discover" class="anchor"><span id="_Toc508792508" class="anchor"><span id="_Toc511122661" class="anchor"><span id="_Toc511120754" class="anchor"><span id="_Toc511125167" class="anchor"><span id="_Toc511136234" class="anchor"><span id="_Toc511163877" class="anchor"><span id="_Toc511384806" class="anchor"></span></span></span></span></span></span></span></span>
 ## <a name="step-1-discover"></a>Schritt 1: Ermittlung
 
-Der erste Schritt beim Antworten auf einen Antrag einer betroffenen Person ist die Suche nach den betroffenen personenbezogenen Daten. In diesem ersten Schritt – Suchen und Überprüfen der betroffenen personenbezogenen Daten – können Sie bestimmen, ob ein Antrag einer betroffenen Person den Anforderungen Ihres Unternehmens zur Anerkennung oder zur Ablehnung eines Antrags einer betroffenen Person entspricht. Nach dem Suchen und Überprüfen der betroffenen personenbezogenen Daten können Sie beispielsweise bestimmen, dass die Anforderung nicht den Voraussetzungen Ihres Unternehmens entspricht, da dadurch Rechte und Freiheiten anderer beeinträchtigt werden könnten.
+Der erste Schritt der Reaktion auf einen Antrag einer betroffenen Person ist die Suche nach den betroffenen personenbezogenen Daten. In diesem ersten Schritt – Suchen und Überprüfen der betroffenen personenbezogenen Daten – können Sie bestimmen, ob ein Antrag einer betroffenen Person den Anforderungen Ihres Unternehmens zur Anerkennung oder zur Ablehnung eines Antrags einer betroffenen Person entspricht. Nach dem Suchen und Überprüfen der betroffenen personenbezogenen Daten können Sie beispielsweise bestimmen, dass der Antrag nicht den Anforderungen Ihres Unternehmens entspricht, da dadurch Rechte und Freiheiten anderer beeinträchtigt werden könnten.
 
-Nachdem Sie die Daten gefunden haben, können Sie eine bestimmte Aktion durchführen, um der Anforderung durch die betroffene Person gerecht zu werden.
+Nachdem Sie die Daten gefunden haben, können Sie die jeweilige Aktion ausführen, um dem Antrag der betroffenen Person Folge zu leisten.
 
 <span id="_Toc511384807" class="anchor"><span id="_Toc511163878" class="anchor"><span id="_Toc511136235" class="anchor"><span id="_Toc511125168" class="anchor"><span id="_Toc511120755" class="anchor"><span id="_Toc511122662" class="anchor"></span></span></span></span></span></span>
 ### <a name="azure-active-directory"></a>Azure Active Directory
@@ -141,7 +141,7 @@ Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über be
 <span id="_Access" class="anchor"><span id="_Toc508792512" class="anchor"><span id="_Ref511119401" class="anchor"><span id="_Toc511122664" class="anchor"><span id="_Toc511120757" class="anchor"><span id="_Toc511125170" class="anchor"><span id="_Toc511136237" class="anchor"><span id="_Toc511163880" class="anchor"><span id="_Toc511384809" class="anchor"><span id="_Hlk503968195" class="anchor"></span></span></span></span></span></span></span></span></span></span>
 ## <a name="step-2-access"></a>Schritt 2: Zugriff
 
-Nachdem Sie Kundendaten mit personenbezogenen Daten gefunden haben, die möglicherweise mit einem Antrag einer betroffenen Person zusammenhängen, liegt es an Ihnen und Ihrer Organisation, zu entscheiden, welche Daten Sie der betroffenen Person zur Verfügung stellen. Sie können ihr eine Kopie des tatsächlichen Dokuments, eine entsprechend geschwärzte Version oder einen Screenshot mit dem Bereich, den Sie als zur Freigabe geeignet eingestuft haben zur Verfügung stellen. Für jede der folgenden Antworten auf eine Zugriffsanforderung müssen Sie eine Kopie des Dokuments oder eines anderen Elements, das die entsprechenden Daten enthält, abrufen.
+Nachdem Sie Kundendaten mit personenbezogenen Daten gefunden haben, die möglicherweise mit einem Antrag einer betroffenen Person zusammenhängen, liegt es an Ihnen und Ihrer Organisation, zu entscheiden, welche Daten Sie der betroffenen Person zur Verfügung stellen. Sie können ihr eine Kopie des tatsächlichen Dokuments, eine entsprechend geschwärzte Version oder einen Screenshot mit dem Bereich, den Sie als zur Freigabe geeignet eingestuft haben, zur Verfügung stellen. Bei jeder dieser Reaktionen auf eine Zugriffsanforderung müssen Sie eine Kopie des Dokuments oder des anderen Elements, das die entsprechenden Daten enthält, abrufen.
 
 Wenn Sie der betroffenen Person eine Kopie zur Verfügung stellen, müssen Sie personenbezogene Daten zu anderen betroffenen Personen und sämtliche vertraulichen Informationen möglicherweise entfernen oder schwärzen.
 
@@ -151,7 +151,7 @@ Wenn Sie der betroffenen Person eine Kopie zur Verfügung stellen, müssen Sie p
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-<span id="_Forms_1" class="anchor"></span>Microsoft bietet sowohl ein Portal als auch Oberflächen im Produkt, mit denen der Mandantenadministrator des Enterprise-Kunden Zugriffsanträge betroffener Personen verwalten kann. Zugriffsanträge betroffener Personen ermöglichen den Zugriff auf die personenbezogenen Daten des Benutzers, einschließlich: (a) Informationen zur Identifikation eines Endbenutzers und (b) vom System generierten Protokollen.
+<span id="_Forms_1" class="anchor"></span>Microsoft stellt sowohl ein Portal als auch produktinterne Oberflächen bereit, über die der Mandantenadministrator des Unternehmenskunden Zugriffsanträge betroffener Personen verwalten kann. Zugriffsanträge betroffener Personen ermöglichen den Zugriff auf die personenbezogenen Daten des Benutzers, einschließlich: (a) Informationen zur Identifizierung eines Endbenutzers und (b) vom System generierte Protokollen.
 
 <span id="_Toc511384811" class="anchor"><span id="_Toc511163882" class="anchor"><span id="_Toc511136239" class="anchor"><span id="_Toc511125172" class="anchor"><span id="_Toc511120759" class="anchor"><span id="_Toc511122666" class="anchor"></span></span></span></span></span></span>
 ### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
@@ -161,16 +161,16 @@ Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über be
 <span id="_Sway" class="anchor"><span id="_Toc508792516" class="anchor"><span id="_Toc511122667" class="anchor"><span id="_Toc511120760" class="anchor"><span id="_Toc511125173" class="anchor"><span id="_Toc511136240" class="anchor"><span id="_Toc511163883" class="anchor"><span id="_Toc511384812" class="anchor"></span></span></span></span></span></span></span></span>
 ## <a name="step-3-rectify"></a>Schritt 3: Berichtigung
 
-Wenn eine betroffene Person Sie gebeten hat, personenbezogene Daten zu berichtigen, die in den Daten Ihres Unternehmens gespeichert werden, müssen Sie und Ihr Unternehmen feststellen, ob der Anforderung nachzukommen ist. Die Berichtigung der Daten kann Aktionen wie Bearbeiten, Schwärzen oder Entfernen von personenbezogenen Daten aus einem Dokument oder anderen Typ oder Element umfassen. Nachfolgend finden Sie die zweckmäßigste Möglichkeit hierzu für Microsoft-Support- und FastTrack-Daten.
+Wenn eine betroffene Person Sie gebeten hat, personenbezogene Daten zu berichtigen, die in den Daten Ihres Unternehmens gespeichert sind, müssen Sie und Ihr Unternehmen bestimmen, ob dem Antrag Folge zu leisten ist. Die Berichtigung der Daten kann Aktionen wie Bearbeiten, Schwärzen oder Entfernen von personenbezogenen Daten aus einem Dokument oder anderen Element umfassen. Nachfolgend finden Sie die zweckmäßigste Möglichkeit hierzu für Microsoft-Support- und FastTrack-Daten.
 
 <span id="_Toc511384813" class="anchor"><span id="_Toc511163884" class="anchor"><span id="_Toc511136241" class="anchor"><span id="_Toc511125174" class="anchor"><span id="_Toc511120761" class="anchor"><span id="_Toc511122668" class="anchor"></span></span></span></span></span></span>
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Enterprise-Kunden haben die Möglichkeit, Berichtigungsanträge betroffener Personen zu verwalten, einschließlich eingeschränkter Bearbeitungsfunktionen entsprechend der Natur eines bestimmten Microsoft-Dienstes. Als Datenverantwortlicher bietet Microsoft nicht die Möglichkeit, die vom System generierten Protokolle zu korrigieren, da diese auf Fakten basierende Aktivitäten widerspiegeln und einen historischen Datensatz der Ereignisse innerhalb von Microsoft-Diensten bilden. Im Hinblick auf Azure Active Directory gibt es eingeschränkte Bearbeitungsfunktionen, um Informationen zur Identifikation eines Endbenutzers wie unten beschrieben zu korrigieren.
+Unternehmenskunden haben die Möglichkeit, Anträge betroffener Personen zur Berichtigung personenbezogener Daten zu verwalten, einschließlich eingeschränkter Bearbeitungsfunktionen entsprechend der Natur eines bestimmten Microsoft-Dienstes. Als Datenauftragsverarbeiter wird Microsoft keine vom System generierten Protokolle korrigieren, da diese auf Fakten basierende Aktivitäten widerspiegeln und einen historischen Datensatz der Ereignisse innerhalb von Microsoft-Diensten bilden. In Azure Active Directory steht eine eingeschränkte Bearbeitungsfunktionalität bereit, um Informationen zur Identifizierung eines Endbenutzers wie unten beschrieben zu berichtigen.
 
 #### <a name="azure-active-directory-rectifycorrect-inaccurate-or-incomplete-personal-data"></a>Azure Active Directory: Berichtigen/Korrigieren ungenauer oder unvollständiger personenbezogener Daten
 
-Sie können Informationen zur Identifikation von Endbenutzer, wie Benutzerprofil- und Benutzerarbeitsinformationen von Kunden und Mitarbeitern, die personenbezogene Daten, z. B. den Namen des Benutzers, den Arbeitstitel, die Adresse oder die Telefonnummer, in Ihrer [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)(AAD)-Umgebung unter Verwendung des [Azure-Portals](https://portal.azure.com/) korrigieren, aktualisieren oder löschen. Sie müssen sich mit einem Konto anmelden, das ein globaler Administrator für das Verzeichnis ist.
+Sie können Informationen zur Identifizierung von Endbenutzern, wie Benutzerprofil- und Benutzerarbeitsinformationen von Kunden und Mitarbeitern, die personenbezogene Daten, z. B. den Namen des Benutzers, den Arbeitstitel, die Adresse oder die Telefonnummer enthalten, in Ihrer [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)(AAD)-Umgebung unter Verwendung des [Azure-Portals](https://portal.azure.com/) korrigieren, aktualisieren oder löschen. Sie müssen sich mit einem Konto anmelden, das ein globaler Administrator für das Verzeichnis ist.
 
 ##### <a name="how-do-i-correct-or-update-user-profile-and-work-information-in-azure-active-directory"></a>Wie kann ich Benutzerprofil- und Arbeitsinformationen in Azure Active Directory korrigieren oder aktualisieren?
 
@@ -204,12 +204,12 @@ Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über be
 <span id="_Gain_access_to" class="anchor"><span id="_Toc508792521" class="anchor"><span id="_Toc511122670" class="anchor"><span id="_Toc511120763" class="anchor"><span id="_Toc511125176" class="anchor"><span id="_Toc511136243" class="anchor"><span id="_Toc511163886" class="anchor"><span id="_Toc511384815" class="anchor"></span></span></span></span></span></span></span></span>
 ## <a name="step-4-restrict"></a>Schritt 4: Einschränkung
 
-<span id="_Delete" class="anchor"></span>Betroffene Personen verlangen möglicherweise, dass Sie die Verarbeitung ihrer personenbezogenen Daten einschränken. Wir bieten sowohl das Azure-Portal als auch bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder Benutzeroberflächen (UI). Diese Oberflächen bieten dem Mandantenadministrator des Enterprise-Kunden die Möglichkeit, solche Anträge betroffener Personen durch eine Kombination aus Export und Löschen von Daten zu verwalten. Ein Kunde kann (1) eine elektronische Kopie der personenbezogenen Daten des Benutzers exportieren, einschließlich (a) Konto/Konten, (b) vom System generierten Protokollen und (c) verbundenen Protokollen, gefolgt von einer (2) Löschung des Kontos und verbundener Daten, die innerhalb von Microsoft-Systemen gespeichert werden.
+<span id="_Delete" class="anchor"></span>Betroffene Personen beantragen möglicherweise, dass Sie die Verarbeitung ihrer personenbezogenen Daten einschränken. Wir stellen sowohl das Azure-Portal als auch bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder Benutzeroberflächen (UI) bereit. Diese Schnittstellen bieten dem Mandantenadministrator des Unternehmenskunden die Möglichkeit, solche Anträge betroffener Personen durch eine Kombination aus Export und Löschen von Daten zu verwalten. Ein Kunde kann (1) eine elektronische Kopie der personenbezogenen Daten des Benutzers exportieren, einschließlich (a) Konto/Konten, (b) vom System generierten Protokollen und (c) verbundenen Protokollen, gefolgt von einer (2) Löschung des Kontos und verbundener Daten, die innerhalb von Microsoft-Systemen gespeichert werden.
 
 <span id="_Toc508792528" class="anchor"><span id="_Toc511122671" class="anchor"><span id="_Toc511120764" class="anchor"><span id="_Toc511125177" class="anchor"><span id="_Toc511136244" class="anchor"><span id="_Toc511163887" class="anchor"><span id="_Toc511384816" class="anchor"></span></span></span></span></span></span></span>
 ## <a name="step-5-delete"></a>Schritt 5: Löschung
 
-Das „Recht auf Löschung“ durch das Entfernen personenbezogener Daten aus den Kundendaten eines Unternehmens ist ein wichtiger Schutz in der DSGVO. Das Entfernen personenbezogener Daten umfasst das Entfernen aller personenbezogenen Daten und vom System generierten Protokolle, mit Ausnahme der Überwachungsprotokollinformationen. Wenn ein Benutzer **vorläufig gelöscht** wird (siehe unten), wird das Konto für 30 Tage deaktiviert. Wenn während dieses 30-tägigen Zeitraums keine weitere Aktion durchgeführt wird, wird der Benutzer **dauerhaft gelöscht** (siehe unten). Bei einer **dauerhaft Löschung** wird das Konto des Benutzers, personenbezogene Daten und vom System generierte Protokolle werden innerhalb weiterer 30 Tage ausgelöscht. Wenn ein Mandantenadministrator sofort eine **dauerhafte Löschung** veranlasst, werden das Konto des Benutzers, personenbezogene Daten und vom System generierte Protokolle innerhalb von 30 Tagen nach der Veranlassung ausgelöscht.
+Das „Recht auf Löschung“, d. h.  das Entfernen personenbezogener Daten aus den Kundendaten eines Unternehmens, ist ein wichtiger Schutz in der DSGVO. Das Entfernen personenbezogener Daten umfasst das Entfernen aller personenbezogenen Daten und vom System generierten Protokolle, mit Ausnahme der Überwachungsprotokollinformationen. Wenn ein Benutzer **vorläufig gelöscht** wird (siehe unten), wird das Konto für 30 Tage deaktiviert. Wenn während dieses 30-tägigen Zeitraums keine weitere Aktion durchgeführt wird, wird der Benutzer **dauerhaft gelöscht** (siehe unten). Bei einer **dauerhaften Löschung** wird das Konto des Benutzers, personenbezogene Daten und vom System generierte Protokolle innerhalb weiterer 30 Tage endgültig gelöscht. Wenn ein Mandantenadministrator sofort eine **dauerhafte Löschung** veranlasst, werden das Konto des Benutzers, personenbezogene Daten und vom System generierte Protokolle innerhalb von 30 Tagen nach der Veranlassung endgültig.
 
 >[Wichtig] Sie müssen ein Mandantenadministrator sein, um einen Benutzer von einem Mandanten löschen zu können.
 
@@ -217,7 +217,7 @@ Das „Recht auf Löschung“ durch das Entfernen personenbezogener Daten aus de
 
 ### <a name="delete-a-user-and-associated-data-through-the-azure-portal"></a>Löschen eines Benutzers und der verbundenen Daten über das Azure-Portal
 
-Nachdem Sie eine Anforderung zur Löschung erhalten haben, können Sie das Azure-Portal sowohl zum Löschen eines Benutzer und der verbundenen personenbezogenen Daten als auch zum Löschen von vom System generierten Protokollen verwenden.
+Nachdem Sie einen Antrag zur Löschung erhalten haben, können Sie das Azure-Portal sowohl zum Löschen eines Benutzers und der verbundenen personenbezogenen Daten als auch zum Löschen von vom System generierten Protokollen verwenden.
 
 Durch das Löschen diese Daten löschen Sie ebenfalls den Benutzer aus dem Mandanten. Benutzer werden zunächst vorläufig gelöscht, was bedeutet, dass das Konto von einem Mandantenadministrator innerhalb von 30 Tagen, während es zum vorläufigen Löschen gekennzeichnet ist, wiederhergestellt werden kann. Nach 30 Tagen wird das Konto automatisch und dauerhaft zu aus dem Mandanten gelöscht. Vor diesen 30 Tagen können Sie manuell einen vorläufig gelöschten Benutzer im Papierkorb löschen.
 
@@ -268,7 +268,7 @@ Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über be
 <span id="_Toc511384820" class="anchor"><span id="_Toc511163891" class="anchor"><span id="_Toc511136248" class="anchor"><span id="_Toc511125181" class="anchor"><span id="_Toc511120768" class="anchor"><span id="_Toc511122675" class="anchor"><span id="_Ref511119875" class="anchor"></span></span></span></span></span></span></span>
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Im Hinblick auf Kundendaten bietet Microsoft sowohl ein Portal als auch Oberflächen im Produkt, mit denen der Mandantenadministrator des Enterprise-Kunden Exportanforderungen für Informationen zur Identifikation eines Endbenutzers verwalten kann.
+Im Hinblick auf Kundendaten stellt Microsoft sowohl ein Portal als auch Schnittstellen und Oberflächen im Produkt bereit, über die der Mandantenadministrator des Unternehmenskunden Anträge zum Export von Informationen zur Identifizierung eines Endbenutzers verwalten kann.
 
 <span id="_Toc511384821" class="anchor"><span id="_Toc511163892" class="anchor"></span></span>
 ### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
@@ -282,7 +282,7 @@ Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über be
 Microsoft bietet Ihnen auch die Möglichkeit, auf bestimmte vom System generierte Protokolle in Verbindung mit der Verwendung von Azure eines Benutzers zuzugreifen und diese zu löschen und zu exportieren.
 
 >[!Important]
-> Die Möglichkeit, vom System generierte Protokolle einzuschränken oder zu berichtigen, wird nicht unterstützt. Vom System generierte Protokolle stellen auf Fakten basierende Aktionen dar, die innerhalb der Microsoft-Cloud und der Diagnosedaten durchgeführt werden. Änderungen an solchen Daten würden den historischen Datensatz von Aktionen beeinträchtigen und die Betrugs- und Sicherheitsrisiken erhöhen.
+> Die Möglichkeit, vom System generierte Protokolle einzuschränken oder zu berichtigen, wird nicht unterstützt. Vom System generierte Protokolle geben auf Fakten basierende Aktionen wieder, die innerhalb der Microsoft-Cloud und der Diagnosedaten ausgeführt werden. Änderungen an solchen Daten würden den historischen Datensatz der Aktionen kompromittieren und das Betrugs- und Sicherheitsrisiko erhöhen.
 
 <span id="_Toc511384823" class="anchor"><span id="_Toc511163894" class="anchor"><span id="_Toc511136252" class="anchor"><span id="_Toc511125185" class="anchor"><span id="_Toc511120772" class="anchor"><span id="_Toc511122679" class="anchor"></span></span></span></span></span></span>
 ## <a name="executing-dsrs-against-system-generated-logs"></a>Ausführen von Anträgen betroffener Personen bezüglich vom System generierter Protokolle
@@ -290,17 +290,17 @@ Microsoft bietet Ihnen auch die Möglichkeit, auf bestimmte vom System generiert
 Microsoft bietet die Möglichkeit, auf bestimmte vom System generierte Protokolle über das Azure-Portal und auch direkt über programmgesteuerte Schnittstellen oder Benutzeroberflächen für bestimmte Dienste zuzugreifen und diese zu löschen und zu exportieren. Details werden in der jeweiligen Referenzdokumentation der entsprechenden Dienste beschrieben.
 
 >[!Important]  
-> Dienste, die Anträge betroffener Personen im Produkt unterstützen, erfordern die direkte Verwendung der Anwendungsprogrammierschnittstelle (API) oder der Benutzeroberfläche (UI) des Services. Aus diesem Grund **muss die Ausführung eines Antrags im Produkt in einem bestimmten Dienst zusätzlich zur Ausführung eines Antrags einer betroffenen Person im Azure-Portal erfolgen, damit eine vollständige Anforderung für eine bestimmte betroffene Person abgeschlossen werden kann. Weitere Details finden Sie in der Referenzdokumentation bestimmter Dienste.**
+> Dienste, die Anträge betroffener Personen im Produkt unterstützen, erfordern die direkte Verwendung der Anwendungsprogrammierschnittstelle (API) oder der Benutzeroberfläche (UI) des Services. Aus diesem Grund **muss die Ausführung eines Antrags einer betroffenen Person in einem bestimmten Dienst zusätzlich zur Ausführung eines Antrags einer betroffenen Person im Azure-Portal erfolgen, damit ein Antrag einer bestimmten betroffenen Person vollständig abgeschlossen werden kann. Weitere Details finden Sie in der Referenzdokumentation bestimmter Dienste.**
 
 <span id="_Toc511384824" class="anchor"><span id="_Toc511163895" class="anchor"><span id="_Toc511136253" class="anchor"><span id="_Toc511125186" class="anchor"><span id="_Toc511120773" class="anchor"><span id="_Toc511122680" class="anchor"><span id="_Ref511119063" class="anchor"><span id="_Toc508792552" class="anchor"><span id="_Toc509825622" class="anchor"></span></span></span></span></span></span></span></span></span>
 ## <a name="step-1-access"></a>Schritt 1: Zugriff 
 
-Der Mandantenadministrator ist die einzige Person in Ihrem Unternehmen, die auf vom System generierte Protokolle in Verbindung mit der Verwendung von Azure eines bestimmten Benutzers zugreifen kann. Die Daten, die für eine Zugriffsanforderung abgerufen werden, werden in einem maschinenlesbaren Format und in Dateien bereitgestellt, durch die die Benutzer wissen, mit welchen Diensten die Daten verbunden sind. Wie bereits oben erwähnt, enthalten die abgerufenen Daten keine Daten, die die Sicherheit des Dienstes gefährden könnten.
+Der Mandantenadministrator ist die einzige Person in Ihrem Unternehmen, die auf vom System generierte Protokolle in Verbindung mit der Verwendung von Azure eines bestimmten Benutzers zugreifen kann. Die Daten, die für eine Zugriffsanforderung abgerufen werden, werden in einem maschinenlesbaren Format und in Dateien bereitgestellt, über die der Benutzer Rückschlüsse darauf ziehen kann, aus welchen Diensten die Daten stammen. Wie bereits oben erwähnt, enthalten die abgerufenen Daten keine Daten, die die Sicherheit des Dienstes gefährden könnten.
 
 <span id="_Toc511384825" class="anchor"><span id="_Toc511163896" class="anchor"><span id="_Toc511136254" class="anchor"><span id="_Toc511125187" class="anchor"><span id="_Toc511120774" class="anchor"><span id="_Toc511122681" class="anchor"><span id="_Toc511119129" class="anchor"></span></span></span></span></span></span></span>
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Microsoft bietet sowohl ein Portal als auch Oberflächen im Produkt, mit denen der Mandantenadministrator des Enterprise-Kunden Zugriffsanträge verwalten kann. Zugriffsanträge ermöglichen den Zugriff auf die personenbezogenen Daten des Benutzers, einschließlich: (a) Informationen zur Identifikation eines Endbenutzers und (b) vom System generierten Protokollen. Der Prozess entspricht dem im Abschnitt „Azure Active Directory“ beschriebenen Prozess in Teil 1, Schritt 2: Zugriff.
+Microsoft stellt sowohl ein Portal als auch produktinterne Oberflächen bereit, über die der Mandantenadministrator des Unternehmenskunden Zugriffsanforderungen verwalten kann. Zugriffsanforderungen ermöglichen den Zugriff auf die personenbezogenen Daten des Benutzers, einschließlich: (a) Informationen zur Identifizierung eines Endbenutzers und (b) vom System generierte Protokolle. Der Prozess entspricht dem im Abschnitt „Azure Active Directory“ beschriebenen Prozess in Teil 1, Schritt 2: Zugriff.
 
 <span id="_Toc511384826" class="anchor"><span id="_Toc511163897" class="anchor"><span id="_Toc511136255" class="anchor"><span id="_Toc511125188" class="anchor"><span id="_Toc511120775" class="anchor"><span id="_Toc511122682" class="anchor"><span id="_Toc511119130" class="anchor"></span></span></span></span></span></span></span>
 ### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
@@ -308,14 +308,14 @@ Microsoft bietet sowohl ein Portal als auch Oberflächen im Produkt, mit denen d
 Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder Benutzeroberflächen (UI) für bestimmte Dienste. Details werden in der jeweiligen Referenzdokumentation zu entsprechenden CRUD-Vorgängen (Erstellen, Lesen, Aktualisieren, Löschen) beschrieben.
 
 <span id="_Toc511384827" class="anchor"><span id="_Toc511163898" class="anchor"><span id="_Toc511136256" class="anchor"><span id="_Toc511125189" class="anchor"><span id="_Toc511120776" class="anchor"><span id="_Toc511122683" class="anchor"><span id="_Toc508792553" class="anchor"><span id="_Toc509825623" class="anchor"></span></span></span></span></span></span></span></span>
-## <a name="step-2-delete"></a>Schritt 2: Löschen
+## <a name="step-2-delete"></a>Schritt 2: Löschung
 
 Der Mandantenadministrator ist die einzige Person in Ihrem Unternehmen, die einen Antrag einer betroffenen Person zur Löschung für einen bestimmten Benutzer innerhalb eines Azure-Mandanten ausführen kann.
 
 <span id="_Toc511384828" class="anchor"><span id="_Toc511163899" class="anchor"><span id="_Toc511136257" class="anchor"><span id="_Toc511125190" class="anchor"><span id="_Toc511120777" class="anchor"><span id="_Toc511122684" class="anchor"><span id="_Toc511119563" class="anchor"></span></span></span></span></span></span></span>
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Microsoft bietet sowohl ein Portal als auch Oberflächen im Produkt, mit denen der Mandantenadministrator des Enterprise-Kunden Anträge betroffener Personen zum Löschen verwalten kann. Anträge betroffener Personen zum Löschen befolgen dieselben Schritte, wie im Abschnitt „Löschen eines Benutzers und der verbundenen Daten über das Azure-Portal“ in Teil 1, Schritt 5: Löschen beschrieben.
+Microsoft stellt sowohl ein Portal als auch Schnittstellen und Oberflächen im Produkt bereit, über die der Mandantenadministrator des Unternehmensunden Anträge betroffener Personen auf Löschung verwalten kann. Für Anträge betroffener Personen auf Löschung gelten dieselben Schritte wie im Abschnitt „Löschen eines Benutzers und der verbundenen Daten über das Azure-Portal“ in Teil 1, Schritt 5: Löschung.
 
 <span id="_Toc511384829" class="anchor"><span id="_Toc511163900" class="anchor"><span id="_Toc511136258" class="anchor"><span id="_Toc511125191" class="anchor"><span id="_Toc511120778" class="anchor"><span id="_Toc511122685" class="anchor"><span id="_Toc511119564" class="anchor"></span></span></span></span></span></span></span>
 ### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
@@ -326,7 +326,7 @@ Microsoft bietet die Möglichkeit zur Ermittlung von Kundendaten direkt über be
 
 ## <a name="step-3-export"></a>Schritt 3: Export
 
-Der Mandantenadministrator ist die einzige Person in Ihrem Unternehmen, die auf vom System generierte Protokolle in Verbindung mit der Verwendung von Azure eines bestimmten Benutzers zugreifen kann. Die Daten, die für eine Exportanforderung abgerufen werden, werden in einem maschinenlesbaren Format und in Dateien bereitgestellt, durch die die Benutzer wissen, mit welchen Diensten die Daten verbunden sind. Wie bereits oben erwähnt, enthalten die abgerufenen Daten keine Daten, die die Sicherheit oder die Stabilität des Dienstes gefährden könnten.
+Der Mandantenadministrator ist die einzige Person in Ihrem Unternehmen, die auf vom System generierte Protokolle in Verbindung mit der Verwendung von Azure eines bestimmten Benutzers zugreifen kann. Die Daten, die für einen Antrag auf Export abgerufen werden, werden in einem maschinenlesbaren Format und in Dateien bereitgestellt, über die der Benutzer Rückschlüsse darauf ziehen kann, aus welchen Diensten die Daten stammen. Wie bereits oben erwähnt, enthalten die abgerufenen Daten keine Daten, die die Sicherheit oder die Stabilität des Dienstes gefährden könnten.
 
 <span id="_Toc511384831" class="anchor"><span id="_Toc511163902" class="anchor"></span></span>
 ### <a name="export-system-generated-logs-using-the-azure-portal"></a>Exportieren von vom System generierten Protokollen mit dem Azure-Portal

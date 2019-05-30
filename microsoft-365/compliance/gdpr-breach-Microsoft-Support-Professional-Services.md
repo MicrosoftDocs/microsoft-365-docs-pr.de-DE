@@ -1,6 +1,6 @@
 ---
 title: Microsoft-Support, Dienstleistungen und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
-description: Wie Microsoft-Support und Dienstleistungen Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
+description: Wie Microsoft-Support und Professional Services Sie vor Verletzungen des Schutzes personenbezogener Daten schützen und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -85,7 +85,7 @@ Wenn Microsoft Professional Services eine Datenschutzverletzung gemäß der DSGV
 
 Nach der Erklärung einer Datenschutzverletzung wird der Benachrichtigungsprozess so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Um sicherzustellen, dass die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde sicherstellen, dass die administrativen Kontaktinformationen für jedes entsprechende Konto und Abonnement sowie im Online Services-Portal korrekt sind. Zwar besteht das Ziel darin, genaue, umsetzbare und zeitnahe Informationen zu übermitteln, jedoch enthält die erste Benachrichtigung aufgrund der Verpflichtung zur Meldung innerhalb von 72 Stunden möglicherweise keine vollständigen Details, da diese in den frühen Phasen einer Datenschutzverletzung häufig nicht verfügbar sind. Darüber hinaus kann es aufgrund der Umstände der Datenschutzverletzung erforderlich sein, dass Microsoft einige Details zurückhält. Beispielsweise kann es notwendig sein, Details zurückzuhalten, wenn deren Übermittlung das Risiko für andere Kunden erhöht oder verhindert, dass Microsoft oder die Strafverfolgung eine Person mit böswilligen Absichten fasst.
 
-In der Eigenschaft als Datenverarbeitungsunternehmen erkennt Microsoft an, dass Kunden dafür verantwortlich sind, zu bestimmen, ob Benachrichtigungen zutreffend sind, und in diesem Fall die zuständige Datenschutzbehörde und die eigenen betroffenen Personen des Kunden über Verletzungen des Schutzes personenbezogener Daten zu benachrichtigen. Microsoft Professional Services bemüht sich, den Kunden die Informationen bereitzustellen, die unter diesen Umständen zu Benachrichtigungszwecken erforderlich sind.
+In der Rolle als Datenauftragsverarbeiter erkennt Microsoft an, dass Kunden dafür verantwortlich sind, zu bestimmen, ob eine Benachrichtigung angemessen ist, und falls ja, die zuständige Datenschutzbehörde und die betroffenen Personen beim Kunden über Verletzungen des Schutzes ihrer personenbezogener Daten zu benachrichtigen. Microsoft Professional Services bemüht sich, den Kunden die Informationen bereitzustellen, die unter diesen Umständen zu Benachrichtigungszwecken erforderlich sind.
 
 Bei der Benachrichtigung von Kunden über eine Verletzung des Schutzes personenbezogener Daten stellt Microsoft die folgenden Informationen bereit, sofern diese im Einzelfall zutreffend und bekannt sind:
 

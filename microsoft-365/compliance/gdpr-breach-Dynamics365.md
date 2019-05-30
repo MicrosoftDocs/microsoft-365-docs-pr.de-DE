@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
-description: Wie Dynamics 365 Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
+description: Wie Dynamics 365 Sie vor Verletzungen des Schutzes personenbezogener Daten schützt und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -118,7 +118,7 @@ Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und Experten (Subject Mat
 
 -   **Meldepflichtiger Sicherheitsvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Anlagen von Microsoft bzw. deren Verwendung, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
 
--   **Datenschutzvorfall:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit persönlichen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
+-   **Datenschutzvorfall:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
 
 Damit ein CRSI erklärt werden kann, muss Microsoft bestimmen, dass ein nicht autorisierter Zugriff auf Kundendaten erfolgt ist oder sehr wahrscheinlich erfolgt ist und/oder dass eine rechtliche oder vertragliche Meldepflicht besteht. Es ist wünschenswert, aber nicht erforderlich, dass bestimmte Kundenauswirkungen, Ressourcenzugriff und Schritte zur Behebung bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls zu einem CRSI erklärt. Die Erklärung kann aber zu einem beliebigen Zeitpunkt erfolgen, sofern alle relevanten Informationen zur Verfügung stehen. Der Manager des Sicherheitsvorfalls muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis aufgetreten ist, um mit der Ausführung des Prozesses zur Benachrichtigung des Kunden über den Sicherheitsvorfall zu beginnen.
 
@@ -132,7 +132,7 @@ Microsoft führt zudem einen internen nachträglichen Vorgang für Datenverstö�
 
 Microsoft Dynamics 365 benachrichtigt den Kunden und Aufsichtsbehörden entsprechend den Vorschriften über Datenschutzverletzungen. Microsoft baut auf eine umfangreiche interne Trennung im Betrieb von Dynamics 365-Diensten. Datenflussprotokolle sind ebenfalls robust. Ein Vorteil dieses Entwurfs besteht darin, dass die meisten Vorfälle auf bestimmte Kunden eingegrenzt werden können. Das Ziel besteht darin, betroffenen Kunden genaue, umsetzbare und zeitgerechte Informationen bereitzustellen, wenn Datenschutzverletzungen im Hinblick auf ihre Daten aufgetreten sind.
 
-Der Benachrichtigungsprozess bei einem deklarierten CRSI wird so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Im Allgemeinen wird der Prozess des Benachrichtigungsentwurfs durchgeführt, während der Vorfall untersucht wird. Kundenbenachrichtigungen werden ab dem Zeitpunkt, an dem wir einen Verstoß deklarieren, umgehend übermittelt, *mit Ausnahme * der folgenden Situationen:
+Der Benachrichtigungsprozess bei einem deklarierten CRSI wird so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Im Allgemeinen wird der Prozess des Benachrichtigungsentwurfs durchgeführt, während der Vorfall untersucht wird. Kundenbenachrichtigungen werden ab dem Zeitpunkt, an dem wir eine Datenverletzung deklarieren, umgehend übermittelt, *mit Ausnahme * der folgenden Situationen:
 
 -   Microsoft ist der Meinung, dass eine Benachrichtigung das Risiko für andere Kunden erhöht. Beispielsweise kann durch das Benachrichtigen ein Widersacher informiert und eine Abhilfe verhindert werden.
 
@@ -140,7 +140,7 @@ Der Benachrichtigungsprozess bei einem deklarierten CRSI wird so rasch wie mögl
 
 Microsoft Dynamics 365 bietet Kunden ausführliche Informationen, sodass sie interne Untersuchungen ausführen können und die Erfüllung von Verpflichtungen gegenüber Endbenutzern erleichtert wird, ohne den Benachrichtigungsprozess übermäßig zu verzögern.
 
-Die Benachrichtigung über eine Verletzung im Hinblick auf personenbezogene Daten wird dem Kunden auf einem von Microsoft gewählten Weg übermittelt, möglicherweise auch per E-Mail.Die Benachrichtigung über eine Datenschutzverletzung wird an die in Office Security Center hinterlegte Liste der Kundenkontakte/Administratoren übermittelt (nur betroffene Mandanten), die vom Kunden-/Mandantenadministrator konfiguriert werden kann. Um sicherzustellen, dass die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde sicherstellen, dass die administrativen Kontaktinformationen für jedes geltende Abonnement und im Online Services-Portal korrekt sind.
+Die Benachrichtigung zu einer Verletzung des Schutzes personenbezogener Daten wird dem Kunden auf einem von Microsoft gewählten Weg übermittelt, möglicherweise auch per E-Mail. Die Benachrichtigung über eine Datenschutzverletzung wird an die in Office Security Center hinterlegte Liste der Kundenkontakte/Administratoren übermittelt (nur betroffene Mandanten), die vom Kunden-/Mandantenadministrator konfiguriert werden kann. Um sicherzustellen, dass die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde sicherstellen, dass die administrativen Kontaktinformationen für jedes geltende Abonnement und im Online Services-Portal korrekt sind.
 
 Das Microsoft Dynamics 365-Team kann auch entscheiden, zusätzliches Microsoft-Personal wie den Kundendienst und die Konto-Manager oder technischen Konto-Manager des Kunden zu benachrichtigen. Diese Personen haben häufig enge Beziehungen zum Kunden und können eine schnellere Problembehebung erzielen.<span id="_Appendix_A" class="anchor"></span>
 

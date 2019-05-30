@@ -1,6 +1,6 @@
 ---
 title: Benachrichtigung bei Sicherheitsverletzungen
-description: Wie Microsoft-Dienste Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
+description: Wie Microsoft-Dienste Sie vor Verletzungen des Schutzes personenbezogener Daten schützen und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -20,7 +20,7 @@ ms.locfileid: "34431846"
 ---
 # <a name="breach-notification-under-the-gdpr"></a>Microsoft-Dienste und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
-Microsoft-Dienste nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnung (DSGVO) sehr ernst. Informationen dazu, wie Azure Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie wir reagieren und Sie benachrichtigen, wenn eine Verletzung auftritt, finden Sie in den folgenden Themen:
+Microsoft nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnung (DSGVO) sehr ernst. Informationen dazu, wie Azure Sie vor Verletzungen des Schutzes personenbezogener Daten schützt und wie wir reagieren und Sie benachrichtigen, wenn eine Verletzung auftritt, finden Sie in den folgenden Themen:
 
 - [Office 365](gdpr-breach-Office365.md) 
 - [Azure](gdpr-breach-Azure.md)
@@ -28,7 +28,7 @@ Microsoft-Dienste nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnun
 - [Microsoft-Support und Dienstleistungen](gdpr-breach-Microsoft-Support-Professional-Services.md)
 
 
-Weitere Informationen darüber, wie Microsoft eine Verletzung von personenbezogenen Daten erkennt und darauf reagiert, finden Sie im Service Trust Portal unter [Benachrichtigung bei Datenschutzverletzungen im Rahmen der DSGVO](https://servicetrust.microsoft.com/ViewPage/GDPRBreach).
+Weitere Informationen darüber, wie Microsoft eine Verletzung des Schutzes personenbezogener Daten erkennt und darauf reagiert, finden Sie im Service Trust Portal unter [Benachrichtigung bei Datenschutzverletzungen im Rahmen der DSGVO](https://servicetrust.microsoft.com/ViewPage/GDPRBreach).
 
 ## <a name="learn-more"></a>Weitere Informationen
 

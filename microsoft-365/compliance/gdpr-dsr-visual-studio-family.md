@@ -1,6 +1,6 @@
 ---
-title: Visual Studio-Familie – Datensubjektanforderungen für die DSGVO
-description: Visual Studio-Familie – Datensubjektanforderungen für die DSGVO
+title: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO
+description: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO
 keywords: Visual Studio, Visual Studio Code, Visual Studio für Mac, Visual Studio-Dokumentation, Datenschutz, DSGVO
 localization_priority: Priority
 audience: itpro
@@ -20,13 +20,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "34431546"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Visual Studio-Familie – Datensubjektanforderungen für die DSGVO
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO
 
-Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (die in den Bestimmungen als „betroffene Personen“ oder _Datensubjekte_ bezeichnet werden) Rechte zum Verwalten ihrer personenbezogenen Daten. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt Datensubjekten bestimmte Rechte für ihre personenbezogenen Daten. Hierzu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format. Eine formelle Anforderung, die von einem Datensubjekt an einen Datencontroller (einen Arbeitgeber oder eine andere Art von Behörde oder Organisation, die die Kontrolle über personenbezogene Daten besitzt) gesendet wird, damit für die personenbezogenen Daten dieses Datensubjekts eine Aktion durchgeführt wird, wird als _Datensubjektanforderung_ bezeichnet. Allgemeine Informationen zur DSGVO finden Sie im [DSGVO-Abschnitt im Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (die in den Bestimmungen als _betroffene Personen_ bezeichnet werden) das Recht zum Verwalten ihrer personenbezogenen Daten. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten. Hierzu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format. Eine formale Anfrage von einer betroffenen Person an einen Datenverantwortlichen (einen Arbeitgeber oder eine Organisation, die Kontrolle über personenbezogene Daten hat) im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als _Antrag einer betroffenen Person_ bezeichnet. Allgemeine Informationen zur DSGVO finden Sie im [DSGVO-Abschnitt im Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## <a name="products-covered-by-this-guide"></a>In diesem Leitfaden behandelte Produkte
 
-In diesem Leitfaden wird beschrieben, wie Sie Microsoft-Tools nutzen, um personenbezogene Daten, die im Verlauf von authentifizierten (angemeldeten) Sitzungen von Visual Studio und Visual Studio für Mac sowie dazugehörigen Microsoft-Erweiterungen und Erweiterungen für Visual Studio Code erfasst werden, zu exportieren oder zu löschen. Darüber hinaus wird in diesem Leitfaden beschrieben, wie Sie Datensubjektanforderungen für personenbezogene Daten durchführen, wenn Sie die Visual Studio Developer Community, NuGet.org und die ASP.NET-Website verwenden. Diese Produkte ermöglichen Ihnen ggf. die Nutzung von Tools und Erweiterungen, die nicht von Microsoft stammen und für die Microsoft nicht als Datenverarbeiter oder Controller fungiert. Benutzer sollten sich an den Anbieter des Tools bzw. der Erweiterung wenden, um sich mit den Richtlinien zu den personenbezogenen Daten und zur Erfassung für diese Tools und Erweiterungen vertraut zu machen.
+In diesem Leitfaden wird beschrieben, wie Sie Microsoft-Tools nutzen, um personenbezogene Daten, die im Verlauf von authentifizierten (angemeldeten) Sitzungen von Visual Studio und Visual Studio für Mac sowie dazugehörigen Microsoft-Erweiterungen und Erweiterungen für Visual Studio Code erfasst werden, exportieren oder löschen. Darüber hinaus wird in diesem Leitfaden beschrieben, wie Sie Anträge betroffener Personen bezüglich personenbezogenen Daten ausführen, wenn Sie die Visual Studio Developer Community, NuGet.org und die ASP.NET-Website verwenden. Diese Produkte ermöglichen Ihnen ggf. die Nutzung von Tools und Erweiterungen, die nicht von Microsoft stammen und für die Microsoft nicht als Datenauftragsverarbeiter oder Verantwortlicher fungiert. Benutzer sollten sich an den Anbieter des Tools bzw. der Erweiterung wenden, um sich mit den Richtlinien zu den personenbezogenen Daten und zur Erfassung für diese Tools und Erweiterungen vertraut zu machen.
 
 ## <a name="additional-privacy-information"></a>Zusätzliche Datenschutzinformationen
 
@@ -36,7 +36,7 @@ Unsere Methoden zur Datenverarbeitung sind in den Microsoft-Software-Lizenzbedin
 
 ### <a name="personal-data-we-collect"></a>Von uns erfasste personenbezogene Daten
 
-Als Datenverarbeiter im Rahmen der DSGVO erfasst Microsoft von Benutzern die Daten, die benötigt werden, um Benutzeroberflächen für Visual Studio und Visual Studio für Mac sowie für dazugehörige Microsoft-Erweiterungen und Erweiterungen für Visual Studio Code bereitzustellen und zu verbessern. Es gibt zwei Kategorien von Daten: Kundendaten und vom System generierte Protokolle. Zu den Kundendaten gehören personenbezogene Transaktions- und Interaktionsdaten, die von diesen Produkten zum Bereitstellen des jeweiligen Diensts benötigt werden. Um Benutzern beispielsweise personalisierte Benutzeroberflächen, z.B. Roamingeinstellungen, bieten zu können, müssen wir Benutzerkontoinformationen und Einstellungsdaten erfassen. Vom System generierte Protokolle umfassen Nutzungs- oder Diagnosedaten, die zum Identifizieren und Behandeln von Problemen und Verbessern unserer Produkte und Dienste verwendet werden. Außerdem können sie personenbezogene Endbenutzerinformationen enthalten, z.B. einen Benutzernamen. Die vom System generierten Protokolle werden maximal 18 Monate lang aufbewahrt. Beispielsweise werden vom System generierte Protokolle für jeden Tag der Produktnutzung aggregiert und enthalten das Nutzungsdatum, das verwendete Produkt (z.B. „Visual Studio 2017“), die durchgeführte Aktion (z.B. „vs/core/packagecostsummary/solutionload“) und eine Angabe dazu, wie häufig die Aktion durchgeführt wurde. Dies ist in diesem Beispiel dargestellt:
+Als Datenauftragsverarbeiter im Rahmen der DSGVO erfasst Microsoft von Benutzern die Daten, die benötigt werden, um Benutzeroberflächen für Visual Studio und Visual Studio für Mac sowie für dazugehörige Microsoft-Erweiterungen und Erweiterungen für Visual Studio Code bereitzustellen und zu verbessern. Es gibt zwei Kategorien von Daten: Kundendaten und vom System generierte Protokolle. Zu den Kundendaten gehören personenbezogene Transaktions- und Interaktionsdaten, die von diesen Produkten zum Bereitstellen des jeweiligen Diensts benötigt werden. Um Benutzern beispielsweise personalisierte Benutzeroberflächen, z.B. Roamingeinstellungen, bieten zu können, müssen wir Benutzerkontoinformationen und Einstellungsdaten erfassen. Vom System generierte Protokolle umfassen Nutzungs- oder Diagnosedaten, die zum Identifizieren und Behandeln von Problemen und Verbessern unserer Produkte und Dienste verwendet werden. Außerdem können sie personenbezogene Endbenutzerinformationen enthalten, z.B. einen Benutzernamen. Die vom System generierten Protokolle werden maximal 18 Monate lang aufbewahrt. Beispielsweise werden vom System generierte Protokolle für jeden Tag der Produktnutzung aggregiert und enthalten das Nutzungsdatum, das verwendete Produkt (z.B. „Visual Studio 2017“), die durchgeführte Aktion (z.B. „vs/core/packagecostsummary/solutionload“) und eine Angabe dazu, wie häufig die Aktion durchgeführt wurde. Dies ist in diesem Beispiel dargestellt:
 
 ```
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
@@ -54,11 +54,11 @@ Als Datenverarbeiter im Rahmen der DSGVO erfasst Microsoft von Benutzern die Dat
 
 Weitere Informationen finden Sie unter [System-generated logs collected by Visual Studio](https://docs.microsoft.com/visualstudio/ide/diagnostic-data-collection) (Vom System generierte Protokolle, die von Visual Studio erfasst werden).
 
-Nur personenbezogene Daten, die mit authentifizierten Identitäten verknüpft sind, können per Datensubjektanforderung behandelt werden. Da Visual Studio Code die Anmeldung nicht unterstützt, werden vom System generierte Protokolle dafür nicht mit einer authentifizierten Identität verknüpft und können nicht behandelt werden. Es kann aber sein, dass einige Microsoft-Erweiterungen für Visual Studio Code authentifizierte Daten bereitstellen, und diese Daten können per Datensubjektanforderung behandelt werden. Weitere Informationen finden Sie unter [DSGVO und Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). Im Allgemeinen speichern wir keine Daten für Visual Studio 2013 und früher. Unter Umständen liefern aber bestimmte Erweiterungen und Komponenten Daten, die mit authentifizierten Identitäten verknüpft sind und wie unten beschrieben per Datensubjektanforderung behandelt werden können.
+Nur personenbezogene Daten, die mit authentifizierten Identitäten verknüpft sind, können für einen Antrag einer betroffenen Person berücksichtigt werden. Da Visual Studio Code die Anmeldung nicht unterstützt, werden vom System generierte Protokolle dafür nicht mit einer authentifizierten Identität verknüpft und können nicht berücksichtigt werden. Es kann aber sein, dass einige Microsoft-Erweiterungen für Visual Studio Code authentifizierte Daten bereitstellen, und diese Daten können für einen Antrag einer betroffenen Person berücksichtigt werden. Weitere Informationen finden Sie unter [DSGVO und Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). Im Allgemeinen speichern wir keine Daten für Visual Studio 2013 und früher. Unter Umständen liefern aber bestimmte Erweiterungen und Komponenten Daten, die mit authentifizierten Identitäten verknüpft sind und wie unten beschrieben für einen Antrag einer betroffenen Person berücksichtigt werden können.
 
 ### <a name="how-users-can-control-personal-data"></a>Kontrolle personenbezogener Daten durch Benutzer
 
-Visual Studio 2015 und höher, Visual Studio für Mac und Visual Studio Code verfügen über die folgenden Optionen, mit denen Ihre Benutzer die Datensammlung beenden und Sie als Controller Daten exportieren oder bereits erfasste Daten löschen können.
+Visual Studio 2015 und höher, Visual Studio für Mac und Visual Studio Code verfügen über die folgenden Optionen, mit denen Ihre Benutzer die Datensammlung beenden und Sie als Verantwortlicher Daten exportieren oder bereits erfasste Daten löschen können.
 
 #### <a name="in-app-settings"></a>In-App-Einstellungen
 
@@ -70,10 +70,10 @@ Benutzer können die Datenschutzeinstellungen für diese Produkte kontrollieren.
 
 #### <a name="exporting-or-deleting-data"></a>Exportieren oder Löschen von Daten
 
-Für Controller gibt es zwei Methoden, mit denen Kundendaten und vom System generierte Protokolle, die für ihre Datensubjekte erfasst werden, verwaltet werden können. Dies richtet sich danach, wie die Visual Studio-Produktfamilie oder die Microsoft-Erweiterungen registriert wurden. In einigen Fällen müssen beide Methoden verwendet werden. Beide Methoden ermöglichen es Controllern, eine Kopie ihres Aktivitätsverlaufs herunterzuladen, der mit dieser Methode verwaltet wird. Beim Schließen eines AAD- oder MSA-Kontos werden die zugeordneten Visual Studio-Kundendaten gelöscht, und die personenbezogenen Daten in vom System generierten Protokollen, die zu diesen Produkten gehören, werden anonymisiert. Anonymisierte vom System generierte Protokolle werden maximal 18 Monate lang aufbewahrt.
+Verantwortlichen stehen zwei Methoden zur Verfügung, Kundendaten und vom System generierte Protokolle, die zu ihren betroffenen Personen erfasst werden, zu verwalten. Dies richtet sich danach, wie die Visual Studio-Produktfamilie oder die Microsoft-Erweiterungen registriert wurden. In einigen Fällen müssen beide Methoden verwendet werden. Beide Methoden ermöglichen es Verantwortlichen, eine Kopie ihres Aktivitätsverlaufs herunterzuladen, der mit dieser Methode verwaltet wird. Beim Schließen eines AAD- oder MSA-Kontos werden die zugeordneten Visual Studio-Kundendaten gelöscht, und die personenbezogenen Daten in vom System generierten Protokollen, die zu diesen Produkten gehören, werden anonymisiert. Anonymisierte vom System generierte Protokolle werden maximal 18 Monate lang aufbewahrt.
 
 - Benutzer, die ein Produkt der Visual Studio-Familie über ein Konto registriert haben, das auf einem Azure-Mandanten basiert (z.B. ein AAD- oder MSA-Konto unter einem Azure-Abonnement), können die Anleitung unter [Azure-Datensubjektanforderungen für die DSGVO](gdpr-dsr-azure.md) befolgen.
-- Benutzer, die ein Produkt der Visual Studio-Familie ohne Konto auf Basis eines Azure-Mandanten registriert haben (z.B. in vielen Fällen ein Microsoft-Konto (MSA)), können das [webbasierte Microsoft Privacy Response Center](https://aka.ms/userprivacysite) nutzen. Es ist über das Microsoft-Konto verfügbar und ermöglicht das übergreifende Anzeigen, Kontrollieren und Löschen von Aktivitätsdaten, die mit dem Microsoft-Konto verknüpft sind, für mehrere Microsoft-Dienste. In diesem Szenario ist der Benutzer ein Controller für seine eigenen personenbezogenen Daten.
+- Benutzer, die ein Produkt der Visual Studio-Familie ohne Konto auf Basis eines Azure-Mandanten registriert haben (z.B. in vielen Fällen ein Microsoft-Konto (MSA)), können das [webbasierte Microsoft Privacy Response Center](https://aka.ms/userprivacysite) nutzen. Es ist über das Microsoft-Konto verfügbar und ermöglicht das übergreifende Anzeigen, Kontrollieren und Löschen von Aktivitätsdaten, die mit dem Microsoft-Konto verknüpft sind, für mehrere Microsoft-Dienste. In diesem Szenario ist der Benutzer der Verantwortliche für seine eigenen personenbezogenen Daten.
 
 > [!NOTE]
 > Wenn ein MSA-Kontoinhaber sein Konto löscht, werden alle personenbezogenen Daten gelöscht, die zu diesen Produkten gehören – unabhängig davon, ob das Konto auf einem Azure-Mandanten basiert. Die vom System generierten Protokolle werden anonymisiert.
@@ -82,7 +82,7 @@ Für Visual Studio 2013 werden die erfassten Daten von uns anonymisiert. Für Vi
 
 ## <a name="visual-studio-developer-community"></a>Visual Studio Developer Community
 
-Wir unterstützen Anforderungen im Rahmen der [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) über die Website der [Entwickler-Community](https://developercommunity.visualstudio.com). Sie können Ihre Feedbackdaten anzeigen, exportieren oder löschen.
+Wir unterstützen Anträge im Rahmen der [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) über die Website der [Entwickler-Community](https://developercommunity.visualstudio.com). Sie können Ihre Feedbackdaten anzeigen, exportieren oder löschen.
 
 ### <a name="personal-data-we-collect"></a>Von uns erfasste personenbezogene Daten
 
@@ -110,7 +110,7 @@ Führen Sie diese Schritte aus, um Ihre Feedbackdaten anzuzeigen:
 
 #### <a name="export"></a>Export
 
-Sie können Ihre Feedbackdaten im Rahmen der Datensubjektanforderung exportieren. Wir erstellen mindestens ein ZIP-Archiv mit folgendem Inhalt:
+Sie können Ihre Feedbackdaten im Rahmen eines Antrags einer betroffenen Person exportieren. Wir erstellen mindestens ein ZIP-Archiv mit folgendem Inhalt:
 
 - Ihre Profilinformationen aus der [Entwickler-Community](https://developercommunity.visualstudio.com)
 - Einstellungen und Benachrichtigungseinstellungen
@@ -200,31 +200,31 @@ Zum Anfordern der Löschung von personenbezogenen Daten, die in Verbindung mit d
 
 ## <a name="nuget"></a>NuGet
 
-Weitere Informationen zu Datensubjektanforderungen für NuGet.org finden Sie unter [Benutzerdatenanforderungen](https://docs.microsoft.com/nuget/policies/data-requests).
+Weitere Informationen zu Anträgen betroffener Personen für NuGet.org finden Sie unter [Benutzerdatenanforderungen](https://docs.microsoft.com/nuget/policies/data-requests).
 
 ## <a name="aspnet"></a>ASP.NET
 
-Informationen zu Datensubjektanforderungen für die ASP.NET-Website finden Sie unter [The ASP.NET Website and GDPR Data Subject Request processing](https://www.asp.net/gdpr) (ASP.NET-Website und Verarbeitung von Datensubjektanforderungen gemäß DSGVO)
+Informationen zu Anträgen betroffener Personen für die ASP.NET-Website finden Sie unter [The ASP.NET Website and GDPR Data Subject Request processing](https://www.asp.net/gdpr) (ASP.NET-Website und Verarbeitung von Anträgen betroffener Personen gemäß DSGVO)
 
 ## <a name="iisnet"></a>IIS.NET
 
-Informationen zu Datensubjektanforderungen für die IIS.NET-Website finden Sie unter [The IIS.NET Website and GDPR Data Subject Request processing](https://www.iis.net/gdpr) (IIS.NET-Website und Verarbeitung von Datensubjektanforderungen gemäß DSGVO)
+Informationen zu Anträgen betroffener Personen für die IIS.NET-Website finden Sie unter [The IIS.NET Website and GDPR Data Subject Request processing](https://www.iis.net/gdpr) (IIS.NET-Website und Verarbeitung von Anträgen betroffener Personen gemäß DSGVO)
 
 ## <a name="other-visual-studio-family-services"></a>Andere Dienste der Visual Studio-Familie
 
 ### <a name="surveymonkey"></a>SurveyMonkey
 
-Von Zeit zu Zeit bitten wir Kunden um Feedback zu diesen Produkten per SurveyMonkey. Diese Daten werden innerhalb von 28 Tagen gelöscht. Falls bei der Bearbeitung von Datensubjektanforderungen für diese Produkte authentifizierte Antworten auf Umfragen vorliegen, fügen wir diese in den Export- und Löschvorgang ein.
+Von Zeit zu Zeit bitten wir Kunden um Feedback zu diesen Produkten per SurveyMonkey. Diese Daten werden innerhalb von 28 Tagen gelöscht. Falls bei der Bearbeitung von Anträgen betroffener Personen für diese Produkte authentifizierte Antworten auf Umfragen vorliegen, fügen wir diese in den Export- und Löschvorgang ein.
 
 ### <a name="uservoice"></a>UserVoice
 
-Wir bitten unsere Kunden, auf den UserVoice.com-Websites Vorschläge zu diesen Produkten anzugeben. Die Websites werden separat von UserVoice betrieben, und auch die Datensubjektanforderungen werden von UserVoice verwaltet.
+Wir bitten unsere Kunden, auf den UserVoice.com-Websites Vorschläge zu diesen Produkten anzugeben. Die Websites werden separat von UserVoice betrieben, und die Anträge betroffener Personen werden von UserVoice verwaltet.
 
 - [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
 - [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
 - [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
 
-Informationen zu Datensubjektanforderungen für diese Daten finden Sie in der UserVoice-Anleitung zum [Exportieren von Daten](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) bzw. zum [Löschen von Daten](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
+Informationen zu Anträgen betroffener Personen für diese Daten finden Sie in der UserVoice-Anleitung zum [Exportieren von Daten](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) bzw. zum [Löschen von Daten](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## <a name="learn-more"></a>Weitere Informationen
 
@@ -233,4 +233,4 @@ Informationen zu Datensubjektanforderungen für diese Daten finden Sie in der Us
 - [Service Trust Portal (STP)](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft-Datenschutzdashboard](https://account.microsoft.com/privacy)
 - [Microsoft Privacy Response Center](https://aka.ms/userprivacysite)
-- [Azure-Datensubjektanforderungen für die DSGVO](gdpr-dsr-azure.md)
+- [Anträge betroffener Personen für Azure im Rahmen der DSGVO](gdpr-dsr-azure.md)
