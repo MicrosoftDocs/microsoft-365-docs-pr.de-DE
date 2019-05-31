@@ -1,0 +1,37 @@
+- name: Verwalten von Commerce-Käufen und-Rechnungen
+  href: index.md
+  expanded: true
+  items:
+    - name: Produkte und Dienste
+      expanded: true
+      items:
+        - name: Verwalten von Drittanbieter-apps
+          href: manage-saas-apps.md
+        - name: Erwerben von Lizenzen
+          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Zuweisen von Lizenzen
+          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Entfernen von Lizenzen aus Ihrem Abonnement
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Entfernen von Benutzerlizenzen
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Abonnements aktualisieren
+          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+    - name: Rechnungen und Zahlungen
+      items:
+        - name: Meine Rechnung verstehen
+          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
+        - name: Verwalten von Zahlungsmethoden
+          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+        - name: Verwalten von Abrechnungs Profilen
+          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
+        - name: Bestellverlauf
+          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: Abrechnungskonto
+      items:
+        - name: Verwalten von Abrechnungskontoinformationen
+          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
+        - name: Zuordnen eines Mandanten zu meinem Abrechnungskonto
+          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: Verwalten von Beziehungen mit meinen Partnern
+      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
