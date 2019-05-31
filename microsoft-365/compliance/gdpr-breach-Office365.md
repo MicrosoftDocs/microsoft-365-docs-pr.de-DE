@@ -11,12 +11,12 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 69c626d874e0afd59e1447c494ec1b84c7a4cb7a
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 0bacc6341ac143a8f2b3dcb066709c951d2f1cbb
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431866"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544952"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
 
@@ -36,11 +36,11 @@ Zusätzlich zu unserer Verpflichtung, rechtzeitig über Datenschutzverletzungen 
 
 Hier finden Sie eine Beschreibung einiger unserer Investitionen in diesem Bereich:
 
--   **Zugriffskontrollsysteme.** Office 365 befolgt eine Richtlinie des „Zero-standing-Zugriffs“, was bedeutet, dass Techniker nicht auf den Dienst zugreifen können, bis ihnen der Zugriff als Reaktion auf einen bestimmten Vorfall, der eine Ausweitung des Zugriffs erfordert, explizit gewährt wird. Zugriff wird jedes Mal nach dem Prinzip der geringsten Rechte gewährt: Die Berechtigung für eine bestimmte Anforderung ermöglicht nur einen minimalen Satz von Aktionen, die erforderlich sind, um diese Anforderung zu bedienen. Zu diesem Zweck behält Office 365 eine strikte Trennung zwischen „erweiterten Rollen“ bei, von denen jede Rolle lediglich bestimmte vordefinierte Aktionen ermöglicht. Die Rolle „Zugang zu Kundendaten“ unterscheidet sich von anderen Rollen, die häufiger zum Verwalten des Dienstes verwendet werden, und wird vor der Genehmigung am stärksten geprüft. Zusammengenommen reduzieren diese Investitionen in die Zugriffskontrolle die Wahrscheinlichkeit, dass ein Techniker missbräuchlich auf Kundendaten in Office 365 zugreift, erheblich.
+- **Zugriffskontrollsysteme.** Office 365 befolgt eine Richtlinie des „Zero-standing-Zugriffs“, was bedeutet, dass Techniker nicht auf den Dienst zugreifen können, bis ihnen der Zugriff als Reaktion auf einen bestimmten Vorfall, der eine Ausweitung des Zugriffs erfordert, explizit gewährt wird. Zugriff wird jedes Mal nach dem Prinzip der geringsten Rechte gewährt: Die Berechtigung für eine bestimmte Anforderung ermöglicht nur einen minimalen Satz von Aktionen, die erforderlich sind, um diese Anforderung zu bedienen. Zu diesem Zweck behält Office 365 eine strikte Trennung zwischen „erweiterten Rollen“ bei, von denen jede Rolle lediglich bestimmte vordefinierte Aktionen ermöglicht. Die Rolle „Zugang zu Kundendaten“ unterscheidet sich von anderen Rollen, die häufiger zum Verwalten des Dienstes verwendet werden, und wird vor der Genehmigung am stärksten geprüft. Zusammengenommen reduzieren diese Investitionen in die Zugriffskontrolle die Wahrscheinlichkeit, dass ein Techniker missbräuchlich auf Kundendaten in Office 365 zugreift, erheblich.
 
--   **Sicherheitsüberwachungssysteme und Automatisierung:** Office 365 verfügt über zuverlässige Sicherheitsüberwachungssysteme in Echtzeit. Unter anderem lösen diese Systeme Warnungen aus bei versuchtem unrechtmäßigen Zugriff auf Kundendaten oder bei Versuchen, Daten unrechtmäßig aus unserem Dienst heraus zu übertragen. Im Zusammenhang mit den oben genannten Zugriffskontrollsystemen verwalten unsere Sicherheitsüberwachungssysteme detaillierte Einträge zu Erweiterungsanforderungen und die Aktionen, die aufgrund einer bestimmten Anforderung ausgeführt werden. Zudem unterhält Office 365 automatische Investitionen in die Auflösung, die automatisch handeln, um als Reaktion auf erkannte Gefahren Bedrohungen zu mindern, sowie dedizierte Teams zur Reaktion auf Warnungen, die nicht automatisch aufgelöst werden können. Zur Überprüfung unserer Sicherheitsüberwachungssysteme führt Office 365 regelmäßig Übungen mit roten Teams durch, in denen ein internes Team für Penetrationstests Angreiferverhalten in der Live-Umgebung simuliert. Diese Übungen haben regelmäßige Verbesserungen unserer Fähigkeiten zur Sicherheitsüberwachung und Reaktion zur Folge.
+- **Sicherheitsüberwachungssysteme und Automatisierung:** Office 365 verfügt über zuverlässige Sicherheitsüberwachungssysteme in Echtzeit. Unter anderem lösen diese Systeme Warnungen aus bei versuchtem unrechtmäßigen Zugriff auf Kundendaten oder bei Versuchen, Daten unrechtmäßig aus unserem Dienst heraus zu übertragen. Im Zusammenhang mit den oben genannten Zugriffskontrollsystemen verwalten unsere Sicherheitsüberwachungssysteme detaillierte Einträge zu Erweiterungsanforderungen und die Aktionen, die aufgrund einer bestimmten Anforderung ausgeführt werden. Zudem unterhält Office 365 automatische Investitionen in die Auflösung, die automatisch handeln, um als Reaktion auf erkannte Gefahren Bedrohungen zu mindern, sowie dedizierte Teams zur Reaktion auf Warnungen, die nicht automatisch aufgelöst werden können. Zur Überprüfung unserer Sicherheitsüberwachungssysteme führt Office 365 regelmäßig Übungen mit roten Teams durch, in denen ein internes Team für Penetrationstests Angreiferverhalten in der Live-Umgebung simuliert. Diese Übungen haben regelmäßige Verbesserungen unserer Fähigkeiten zur Sicherheitsüberwachung und Reaktion zur Folge.
 
--   **Personal und Prozesse:** Zusätzlich zu der oben beschriebenen Automatisierung verfügt Office 365 über Prozesse und Teams, die für die Weiterbildung des gesamten Unternehmens zum Thema Datenschutz und Vorfallmanagement-Prozesse sowie für die Durchführung dieser Prozesse im Falle einer Datenschutzverletzung zuständig sind. Beispielsweise wird ein detailliertes Standardverfahren (Standard Operating Procedure, SOP) für Datenschutzverletzungen aufrechterhalten und an die Teams innerhalb des Unternehmens weitergegeben. Dieses Standardverfahren beschreibt detailliert die Rollen und Verantwortlichkeiten der einzelnen Teams in Office 365 und der zentralen Teams für die Reaktion auf Sicherheitsvorfälle. Dazu gehören sowohl Aufgaben, die Teams erfüllen müssen, um ihre eigene Sicherheitsposition zu verbessern (Sicherheitsüberprüfungen durchführen, mit zentralen Sicherheitsüberwachungssystemen und anderen Best Practices integrieren), und Aufgaben, die Teams im Falle einer tatsächlichen Datenschutzverletzung erfüllen müssten (schnelle Eskalation zur Reaktion auf Vorfälle, bestimmte Datenquellen verwalten und bereitstellen, die verwendet werden, um den Reaktionsprozess zu beschleunigen). Teams werden außerdem regelmäßig zur Klassifizierung von Daten und zur richtigen Handhabung und Speicherung personenbezogener Daten geschult.
+- **Personal und Prozesse:** Zusätzlich zu der oben beschriebenen Automatisierung verfügt Office 365 über Prozesse und Teams, die für die Weiterbildung des gesamten Unternehmens zum Thema Datenschutz und Vorfallmanagement-Prozesse sowie für die Durchführung dieser Prozesse im Falle einer Datenschutzverletzung zuständig sind. Beispielsweise wird ein detailliertes Standardverfahren (Standard Operating Procedure, SOP) für Datenschutzverletzungen aufrechterhalten und an die Teams innerhalb des Unternehmens weitergegeben. Dieses Standardverfahren beschreibt detailliert die Rollen und Verantwortlichkeiten der einzelnen Teams in Office 365 und der zentralen Teams für die Reaktion auf Sicherheitsvorfälle. Dazu gehören sowohl Aufgaben, die Teams erfüllen müssen, um ihre eigene Sicherheitsposition zu verbessern (Sicherheitsüberprüfungen durchführen, mit zentralen Sicherheitsüberwachungssystemen und anderen Best Practices integrieren), und Aufgaben, die Teams im Falle einer tatsächlichen Datenschutzverletzung erfüllen müssten (schnelle Eskalation zur Reaktion auf Vorfälle, bestimmte Datenquellen verwalten und bereitstellen, die verwendet werden, um den Reaktionsprozess zu beschleunigen). Teams werden außerdem regelmäßig zur Klassifizierung von Daten und zur richtigen Handhabung und Speicherung personenbezogener Daten geschult.
 
 Die wichtigste Schlussfolgerung ist, dass Office 365 besonderes Augenmerk darauf legt, die Wahrscheinlichkeit und die Auswirkungen von Datenschutzverletzungen, die unsere Kunden betreffen, zu minimieren. Wenn solche Verletzungen des Schutzes personenbezogener Daten auftreten, benachrichtigen wir unsere Kunden unverzüglich darüber, sobald die Verletzung bestätigt wurde.
 
@@ -48,29 +48,26 @@ Die wichtigste Schlussfolgerung ist, dass Office 365 besonderes Augenmerk darauf
 
 Im Abschnitt oben werden die Investitionen beschrieben, die Office 365 tätigt, um die Wahrscheinlichkeit von Datenschutzverletzungen zu verringern. In dem unwahrscheinlichen Fall, dass eine Verletzung auftritt, sollten Kunden ein vorhersagbares Erlebnis im Hinblick auf die folgenden Punkte erwarten:
 
--   Konsistenter Lebenszyklus für die Reaktion auf Vorfälle in Office 365. Wie zuvor beschrieben, verwaltet Office 365 detaillierte SOPs für die Reaktion auf Vorfälle, in denen beschrieben wird, wie sich Teams auf Datenschutzverletzungen vorbereiten sollten und wie sie sich verhalten sollten, wenn eine Verletzung auftritt. Dadurch wird sichergestellt, dass unsere Schutzfunktionen und Prozesse über den gesamten Dienst angewendet werden.
+- Konsistenter Lebenszyklus für die Reaktion auf Vorfälle in Office 365. Wie zuvor beschrieben, verwaltet Office 365 detaillierte SOPs für die Reaktion auf Vorfälle, in denen beschrieben wird, wie sich Teams auf Datenschutzverletzungen vorbereiten sollten und wie sie sich verhalten sollten, wenn eine Verletzung auftritt. Dadurch wird sichergestellt, dass unsere Schutzfunktionen und Prozesse über den gesamten Dienst angewendet werden.
 
--   Einheitliche Kriterien für die Benachrichtigung von Kunden. Unsere Benachrichtigungskriterien konzentrieren sich auf die Vertraulichkeit, Integrität und Verfügbarkeit von Kundendaten. Office 365  benachrichtigt  Kunden direkt, wenn die Vertraulichkeit oder Integrität von Kundendaten beeinträchtigt ist. D. h. wir benachrichtigen Kunden, wenn ohne ordnungsgemäße Autorisierung auf ihre Daten zugegriffen wird oder wenn es zu einer unangemessenen Löschung oder einem Verlust von Daten gekommen ist. Office 365 meldet auch Probleme, die die Verfügbarkeit der Daten beeinträchtigen, obwohl diese Benachrichtigung in der Regel durch das Service Health Dashboard (SHD) erfolgt.
+- Einheitliche Kriterien für die Benachrichtigung von Kunden. Unsere Benachrichtigungskriterien konzentrieren sich auf die Vertraulichkeit, Integrität und Verfügbarkeit von Kundendaten. Office 365  benachrichtigt  Kunden direkt, wenn die Vertraulichkeit oder Integrität von Kundendaten beeinträchtigt ist. D. h. wir benachrichtigen Kunden, wenn ohne ordnungsgemäße Autorisierung auf ihre Daten zugegriffen wird oder wenn es zu einer unangemessenen Löschung oder einem Verlust von Daten gekommen ist. Office 365 meldet auch Probleme, die die Verfügbarkeit der Daten beeinträchtigen, obwohl diese Benachrichtigung in der Regel durch das Service Health Dashboard (SHD) erfolgt.
 
--   Einheitliche Benachrichtigungsinformationen. Wenn Office 365 Kunden über Datenschutzverletzungen benachrichtigt, können Kunden davon ausgehen, dass bestimmte Informationen kommuniziert werden: Wir stellen mindestens die folgenden Informationen bereit:
+- Einheitliche Benachrichtigungsinformationen. Wenn Office 365 Kunden über Datenschutzverletzungen benachrichtigt, können Kunden davon ausgehen, dass bestimmte Informationen kommuniziert werden: Wir stellen mindestens die folgenden Informationen bereit:
 
-    -   Dauer der Verletzung und Zeitpunkt, zu dem die Verletzung bekannt wurde
-
-    -   Die ungefähre Anzahl der betroffenen Benutzer
-
-    -   Die Art von Benutzerdaten, die betroffen ist
-
-    -   Aktionen, die vom Verantwortlichen oder Auftragsverarbeiter ausgeführt werden müssen, um die Auswirkungen der Datenschutzverletzung zu mindern
+    - Dauer der Verletzung und Zeitpunkt, zu dem die Verletzung bekannt wurde
+    - Die ungefähre Anzahl der betroffenen Benutzer
+    - Die Art von Benutzerdaten, die betroffen ist
+    - Aktionen, die vom Verantwortlichen oder Auftragsverarbeiter ausgeführt werden müssen, um die Auswirkungen der Datenschutzverletzung zu mindern
 
 Kunden sollten auch beachten, dass Office 365 als Datenauftragsverarbeiter nicht das Risiko einer Datenschutzverletzung bewertet. Wenn eine Datenschutzverletzung erkannt wird, benachrichtigen wir unsere Kunden und stellen ihnen die Informationen bereit, die sie benötigen, um das Risiko für die betroffenen Benutzer genau zu bewerten und zu entscheiden, ob weitere Berichte an Aufsichtsbehörden erforderlich sind. Zu diesem Zweck müssen Datenverantwortliche Folgendes ermitteln:
 
--   Schweregrad der Verletzung (d. h. Risikobewertung)
+- Schweregrad der Verletzung (d. h. Risikobewertung)
 
--   Ob Endbenutzer benachrichtigt werden müssen
+- Ob Endbenutzer benachrichtigt werden müssen
 
--   Ob Aufsichtsbehörden (Datenschutzbehörden) benachrichtigt werden müssen
+- Ob Aufsichtsbehörden (Datenschutzbehörden) benachrichtigt werden müssen
 
--   Bestimmte Schritte, die vom Datenverantwortlichen ergriffen werden, um die Auswirkungen der Verletzung zu mindern
+- Bestimmte Schritte, die vom Datenverantwortlichen ergriffen werden, um die Auswirkungen der Verletzung zu mindern
 
 ## <a name="contacting-microsoft"></a>Kontaktaufnahme mit Microsoft
 
@@ -84,7 +81,5 @@ Der Datenschutzkontakt des Kunden kann eine Person in dem Unternehmen, eine Vert
 
 Office 365 bittet Kunden also, folgende Handlungen auszuführen, um von den Vorteilen unserer Prozesse zur Benachrichtigung bei Datenschutzverletzungen zu profitieren:
 
--   Entscheiden Sie sich für einen Kontakt, der E-Mail-Benachrichtigungen über Datenschutzverletzungen empfängt. Dieser Kontakt sollte die Anforderungen an Datenverantwortliche gemäß der DSGVO kennen und bereit für die Kontaktaufnahme mit dem Datenschutzbeauftragten des Unternehmens und womöglich auch der Datenschutzbehörde nach Erhalt der Benachrichtigung sein. Mandantenadministratoren werden ebenfalls  Benachrichtigungen über Datenschutzverletzungen erhalten und sollten die Anforderungen an Datenverantwortliche gemäß der DSGVO kennen.
-
--   Geben Sie die E-Mail-Adresse des Datenschutzkontakts in das AAD-Portal ein. Wenn kein globaler Datenschutzkontakt angegeben wurde, benachrichtigt Microsoft lediglich den Mandantenadministrator.
-- <!-- note that there is missing text clipped from the original Word doc -->
+- Entscheiden Sie sich für einen Kontakt, der E-Mail-Benachrichtigungen über Datenschutzverletzungen empfängt. Dieser Kontakt sollte die Anforderungen an Datenverantwortliche gemäß der DSGVO kennen und bereit für die Kontaktaufnahme mit dem Datenschutzbeauftragten des Unternehmens und womöglich auch der Datenschutzbehörde nach Erhalt der Benachrichtigung sein. Mandantenadministratoren werden ebenfalls  Benachrichtigungen über Datenschutzverletzungen erhalten und sollten die Anforderungen an Datenverantwortliche gemäß der DSGVO kennen.
+- Geben Sie die E-Mail-Adresse des Datenschutzkontakts in das AAD-Portal ein. Wenn kein globaler Datenschutzkontakt angegeben wurde, benachrichtigt Microsoft lediglich den Mandantenadministrator.
