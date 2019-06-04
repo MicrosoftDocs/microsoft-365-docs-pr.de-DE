@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für identitätsbasierte Dienste und Infrastrukturen erfüllt.
-ms.openlocfilehash: aabd9f5db223b4b1aba0173dcfb739fe27553555
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 19eefe3cd153668239d9cf15f71c90e8ac9571e1
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072125"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681042"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2: Beendigungskriterien für die Identitätsinfrastruktur
 
@@ -51,7 +51,7 @@ Gegebenenfalls hilft Ihnen [Schritt 2](identity-designate-protect-admin-accounts
 
 Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Administratorkonten geschützt haben:
 
-1. Führen Sie an der PowerShell-Eingabeaufforderung den folgenden Azure AD V2-Befehl aus. Nur die Liste der dedizierten globalen Administratorkonten sollte angezeigt werden.
+1. Führen Sie an der PowerShell-Eingabeaufforderung den folgenden Azure Active Directory PowerShell for Graph-Befehl aus. Nur die Liste der dedizierten globalen Administratorkonten sollte angezeigt werden.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

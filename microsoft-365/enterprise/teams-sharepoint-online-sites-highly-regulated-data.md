@@ -3,8 +3,8 @@ title: Microsoft Teams und SharePoint Online-Websites für streng geregelte Date
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint Online-Teamwebsite oder ein Microsoft Teams-Team, um Ihre wertvollsten und vertraulichen digitalen Objekte zu speichern.
-ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553324"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681062"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams und SharePoint Online-Websites für streng geregelte Daten
 
@@ -29,7 +29,7 @@ Microsoft 365 Enterprise umfasst eine vollständige Suite cloudbasierter Dienste
 - Daten, die regionalen Vorschriften unterliegen.
 - Die wertvollsten Daten für Ihre Organisation, z. B. Geschäftsgeheimnisse, Informationen zu Finanzen oder Personalwesen und die Organisationsstrategie.
 
-Für eine cloudbasierte Microsoft 365 Enterprise-Lösung, die diese Geschäftsanforderung erfüllt, müssen Sie:
+Für ein cloudbasiertes Microsoft 365 Enterprise-Szenario, das diese Geschäftsanforderung erfüllt, müssen Sie:
 
 - Digitale Objekte (Dokumente, Foliengruppen, Kalkulationstabellen usw.) in einer SharePoint Online-Teamwebsite oder auf der Registerkarte **Dateien** eines Microsoft Teams-Teams speichern.
 - Die Website oder das Team sperren, um Folgendes zu verhindern:
@@ -41,7 +41,7 @@ Für eine cloudbasierte Microsoft 365 Enterprise-Lösung, die diese Geschäftsan
 - Verschlüsseln Sie diehochgradig vertraulichen digitalen Objekte der Website oder des Teams.
 - Fügen Sie den hochgradig vertraulichen digitalen Objekten Berechtigungen hinzu, sodass für das Öffnen der Ressourcen weiterhin gültige Anmeldeinformationen eines Benutzerkontos mit Berechtigung erforderlich sind, selbst wenn diese außerhalb der Website freigegeben werden.
 
-In der folgenden Tabelle sind die Anforderungen dieser Lösung einem Feature von Microsoft 365 Enterprise zugeordnet.
+In der folgenden Tabelle sind die Anforderungen dieses Szenarios einem Feature von Microsoft 365 Enterprise zugeordnet.
 
 |||
 |:-------|:-----|
@@ -54,7 +54,11 @@ In der folgenden Tabelle sind die Anforderungen dieser Lösung einem Feature von
 | Berechtigungen zu den digitalen Objekten der Website hinzufügen | Azure Information Protection-Unterbezeichnungen in EMS |
 |||
 
-Diese Lösung erfordert, dass Sie Folgendes bereits bereitgestellt haben:
+Hier ist die Konfiguration für eine SharePoint Online-Website.
+
+![Microsoft Teams und SharePoint Online-Websites für streng geregeltes Daten Szenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+Dieses Szenario erfordert, dass Sie Folgendes bereits bereitgestellt haben:
 
 - Die Phase [Identität](identity-infrastructure.md) und die Schritte 1 und 2 der Phase [Informationsschutz](infoprotect-infrastructure.md) der Foundation-Infrastruktur. 
 - Für streng geregelte Daten in SharePoint Online-Teamwebsites [SharePoint Online](sharepoint-online-onedrive-workload.md).
@@ -64,9 +68,13 @@ Die folgenden Phasen führen Sie schrittweise durch den Entwurf, die Konfigurati
 
 Um zu erfahren, wie die Contoso Corporation, ein fiktives, aber repräsentatives multinationales Unternehmen, eine SharePoint Online-Website für seine Forschungsteams entwickelt hat, sehen Sie sich die folgende [Beispielkonfiguration](contoso-sharepoint-online-site-for-highly-confidential-assets.md) an.
 
->[!Note]
->Ein Team für streng geregelte Daten setzt voraus, dass Sie zuerst eine SharePoint Online-Teamwebsite für streng geregelte Daten erstellen. Anschließend erstellen Sie ein neues Team, das die Office 365-Gruppe der SharePoint Online-Teamwebsite verwendet. In Phase 2, Schritt 4, finden Sie weitere Informationen.
->
+
+Ein Team für streng geregelte Daten setzt voraus, dass Sie zuerst eine SharePoint Online-Teamwebsite für streng geregelte Daten erstellen. Anschließend erstellen Sie ein neues Team, das die Office 365-Gruppe der SharePoint Online-Teamwebsite verwendet. In Phase 2, Schritt 4, finden Sie weitere Informationen.
+
+Hier ist die Konfiguration für ein Team.
+
+![Microsoft Teams und SharePoint Online-Websites für streng geregeltes Daten Szenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>Voraussetzungen für den Identitäts- und Gerätezugriff
 
@@ -207,6 +215,10 @@ Ihre Benutzer bei Bedarf erneut schulen.
 ### <a name="user-adoption-results"></a>Ergebnisse der Benutzerakzeptanz
 
 Vertrauliche digitale Objekte werden ausschließlich auf SharePoint Online-Websites oder Teams für stark geregelte Daten gespeichert, und auf die hochgradig vertraulichen Objekte wurde die Azure Information Protection-Unterbezeichnung angewendet.
+
+## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise für die Contoso Corporation
+
+Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie Contoso die Einführung einer [sicheren SharePoint Online-Website](contoso-sharepoint-online-site-for-highly-confidential-assets.md) für seine Forschungsteams in Paris, Moskau, New York, Peking (Beijing) und Bengaluru (Bangalore) konzipiert, konfiguriert und dann vorangetrieben hat. 
 
 ## <a name="see-also"></a>Siehe auch
 
