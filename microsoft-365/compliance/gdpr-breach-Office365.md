@@ -11,22 +11,20 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 0bacc6341ac143a8f2b3dcb066709c951d2f1cbb
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: f30bdc4aec20a69c18405b6f69a14fc919f57554
+ms.sourcegitcommit: 651a1c583021a7122a9487be2f32330aff161467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544952"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34675630"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
 
 Als Datenauftragsverarbeiter stellt Office 365 sicher, dass unsere Kunden in ihrer Rolle als Datenverantwortliche die Anforderungen an Benachrichtigungen im Falls von Datenschutzverletzungen im Rahmen der DSGVO einhalten. Zu diesem Zweck sind wir bestrebt, Folgendes zu tun:
 
--   unseren Kunden eine Möglichkeit zu bieten, einen dedizierten Datenschutzkontakt anzugeben, der im Falle einer Verletzung benachrichtigt wird. Kunden können diesen Kontakt in Azure Active Directory (AAD) angeben.
-
--   Kunden innerhalb von 72 Stunden über eine Verletzung des Schutzes personenbezogener Daten zu benachrichtigen. Die Benachrichtigung erfolgt per E-Mail an den Kontakt, der von dem Kunden angegeben wurde.
-
--   Die erste Benachrichtigung umfasst mindestens eine Beschreibung der Art der Verletzung, eine  Schätzung der Auswirkungen auf die Benutzer und Schritte zur Minderung der Auswirkungen (falls zutreffend). Wenn unsere Untersuchung zum Zeitpunkt der ersten Benachrichtigung nicht abgeschlossen ist, werden wir in unserer ersten Benachrichtigung nächste Schritte und Zeitrahmen für die nachfolgende Kommunikation aufführen.
+- unseren Kunden eine Möglichkeit zu bieten, einen dedizierten Datenschutzkontakt anzugeben, der im Falle einer Verletzung benachrichtigt wird. Kunden können diesen Kontakt in Azure Active Directory (AAD) angeben.
+- Kunden innerhalb von 72 Stunden über eine Verletzung des Schutzes personenbezogener Daten zu benachrichtigen. Die Benachrichtigung erfolgt per E-Mail an den Kontakt, der von dem Kunden angegeben wurde.
+- Die erste Benachrichtigung umfasst mindestens eine Beschreibung der Art der Verletzung, eine  Schätzung der Auswirkungen auf die Benutzer und Schritte zur Minderung der Auswirkungen (falls zutreffend). Wenn unsere Untersuchung zum Zeitpunkt der ersten Benachrichtigung nicht abgeschlossen ist, werden wir in unserer ersten Benachrichtigung nächste Schritte und Zeitrahmen für die nachfolgende Kommunikation aufführen.
 
 Microsoft ist sich bewusst, dass Datenverantwortliche die Verantwortung für die Durchführung von Risikobewertungen tragen und dafür, zu bestimmen, ob eine Verletzung die Benachrichtigung der Datenschutzbehörde des Kunden erfordert. Unsere Benachrichtigung an Kunden enthält die Informationen, die zur Durchführung dieser Bewertung erforderlich sind. Microsoft wird Kunden daher über eine Verletzung des Schutzes personenbezogener Daten benachrichtigen, außer in Fällen, in denen personenbezogene Daten als unverständlich gelten (z. B. stark verschlüsselte Daten, bei denen die Integrität des Schlüssels bestätigt wurde).
 
@@ -62,11 +60,8 @@ Im Abschnitt oben werden die Investitionen beschrieben, die Office 365 tätigt, 
 Kunden sollten auch beachten, dass Office 365 als Datenauftragsverarbeiter nicht das Risiko einer Datenschutzverletzung bewertet. Wenn eine Datenschutzverletzung erkannt wird, benachrichtigen wir unsere Kunden und stellen ihnen die Informationen bereit, die sie benötigen, um das Risiko für die betroffenen Benutzer genau zu bewerten und zu entscheiden, ob weitere Berichte an Aufsichtsbehörden erforderlich sind. Zu diesem Zweck müssen Datenverantwortliche Folgendes ermitteln:
 
 - Schweregrad der Verletzung (d. h. Risikobewertung)
-
 - Ob Endbenutzer benachrichtigt werden müssen
-
 - Ob Aufsichtsbehörden (Datenschutzbehörden) benachrichtigt werden müssen
-
 - Bestimmte Schritte, die vom Datenverantwortlichen ergriffen werden, um die Auswirkungen der Verletzung zu mindern
 
 ## <a name="contacting-microsoft"></a>Kontaktaufnahme mit Microsoft
