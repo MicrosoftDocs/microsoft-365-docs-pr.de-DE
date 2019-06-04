@@ -23,7 +23,7 @@ Gegebenenfalls hilft Ihnen [Schritt 2](../identity-designate-protect-admin-accou
 
 Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Administratorkonten geschützt haben:
 
-1. Führen Sie an der PowerShell-Eingabeaufforderung den folgenden Azure AD V2-Befehl aus. Nur die Liste der dedizierten globalen Administratorkonten sollte angezeigt werden.
+1. Führen Sie an der PowerShell-Eingabeaufforderung den folgenden Azure Active Directory Domain Services PowerShell for Graph-Befehl aus. Nur die Liste der dedizierten globalen Administratorkonten sollte angezeigt werden.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
