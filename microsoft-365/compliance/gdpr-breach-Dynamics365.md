@@ -5,18 +5,17 @@ keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Do
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: c69bc0a0ac665fbcac68e3ba45abc7bf8f7e0ded
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 7fbe7f277825905326a1234249e5bccf7082658d
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544942"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698317"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 

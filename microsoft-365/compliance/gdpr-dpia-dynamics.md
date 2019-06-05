@@ -6,17 +6,17 @@ robots: NOINDEX,NOFOLLOW
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 88037da44d1f03716e07b59dc633f2629e750570
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: f85ba942649f70e6bd8c1fdc73b1f0f4005be1bc
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544814"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698157"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Dynamics 365 verwenden
 
@@ -36,7 +36,7 @@ Artikel 35 der DSGVO legt fest, dass ein Datenverantwortlicher eine Datenschutz-
 | Eine systematische Überwachung eines öffentlich zugänglichen Bereichs in großem Umfang | Dynamics 365 dient nicht der Durchführung oder Ermöglichung einer solchen Überwachung. <br><br> Jedoch kann ein Datenverantwortlicher es verwenden, um die durch eine solche Überwachung gesammelten Daten zu verarbeiten. | |
 
 > [!Note]
-> <sup>1</sup> Bezüglich der Kriterien der umfassenden Verarbeitung von Daten wird in Absatz 1 der DSGVO Folgendes klar gestellt: „Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein.“
+> <sup>1</sup> Bezüglich der Kriterien der umfassenden Verarbeitung von Daten wird in Absatz 91 der DSGVO Folgendes klar gestellt: „Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein.“
 
 ## <a name="part-2--contents-of-a-dpia"></a>Teil 2 – Inhalte einer DPIA
 

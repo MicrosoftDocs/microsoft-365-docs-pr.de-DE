@@ -5,17 +5,17 @@ keywords: Datenschutz-Folgeabschätzung, Office 365, Microsoft 365-Dokumentation
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 95f3e5e4bb36c5bcf5e2d8a2a3f629c213d2d219
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: da9ba78f11dad06a1bea72484e6ecc77e7619493
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544832"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698297"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Microsoft Office 365 verwenden 
 
