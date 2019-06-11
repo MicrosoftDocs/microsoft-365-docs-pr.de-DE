@@ -3,8 +3,8 @@ title: 'Schritt 1: Geräte- und App-Bereitschaft'
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
-audience: ITPro
+ms.date: 05/20/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Geräte- und App-Bereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: 2059904bf7c0f89876c2142d83212ce75542c505
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f45b4c4b38cd2108c706eb6465e9b5ba241e252f
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073155"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814636"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Schritt 1: Geräte- und App-Bereitschaft
 
