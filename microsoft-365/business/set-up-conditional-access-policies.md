@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie Richtlinien für bedingten Zugriff für Microsoft 365 Business einrichten.
-ms.openlocfilehash: 6ca3995113f090ccf2b119abde059a68ce562970
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34806820"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913006"
 ---
 # <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Einrichten von Richtlinien für bedingten Zugriff für Microsoft 365 Business
 
@@ -52,9 +52,9 @@ Weitere Informationen zu diesen Richtlinien finden Sie unter [Was sind Basisrich
     ![Seite, auf der Basisrichtlinien für bedingten Zugriff aufgelistet werden.](media/baslinepolicies.png)
 1. Lesen Sie die folgenden spezifischen Anweisungen für jede Richtlinie:
 
-    - [MFA für Administratoren erforderlich](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-    -   [MFA für Benutzer erforderlich](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Legacy Authentifizierung blockieren](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [MFA für Administratoren erforderlich](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Reequire MFA für Benutzer](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [Legacy Authentifizierung blockieren](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [MFA für Service Management erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 Sie können viele zusätzliche Richtlinien einrichten, beispielsweise das Anfordern von genehmigten Client-apps. Weitere Informationen finden Sie in der [Dokumentation zum bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/) .
