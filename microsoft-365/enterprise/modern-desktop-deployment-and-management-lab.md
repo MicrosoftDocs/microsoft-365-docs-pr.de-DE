@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814546"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017497"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
@@ -36,18 +36,17 @@ Das Lab-Kit ist kostenlos herunterladbar und verwendet Testsoftware.
 
 Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschließlich Domänen-Desktop-Clients, Domänencontroller, Internetgateway und einer vollständig konfigurierten ConfigMgr-Instanz. Sie beinhaltet Evaluierungsversionen der folgenden Produkte:
 
-  - Windows 10 Enterprise, Version 1809
-  - Windows 7
-  - Office 365 ProPlus, Version 1901
-  - System Center Configuration Manager, Version 1802
-  - Windows Assessment and Deployment Kit for Windows 10, Version 1809
+  - Windows 10 Enterprise, Version 1903
+  - Windows 7 Enterprise
+  - System Center Konfigurationsmanager, Version 1902
+  - Windows Assessment and Deployment Kit für Windows 10, Version 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-DARÜBERHINAUS kann die Übung mit Tests für folgende Produkte verbunden werden:
+DARÜBERHINAUS kann die Übung mit Tests für folgende Produkte verbunden werden: 
 
   - Microsoft 365 Enterprise E5
 
@@ -119,7 +118,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Herunterladen des Deployment Lab Kit für Windows und Office**](https://aka.ms/mddlabs_evalcenter)
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 13. Mai 2019 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 27. August 2019 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>**Zusätzliche Anleitung**
 
