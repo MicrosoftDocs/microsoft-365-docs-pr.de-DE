@@ -1,0 +1,44 @@
+---
+title: Bump up Security Protection für Ihre Kampagne
+ms.author: samanro
+author: samanro
+manager: scotv
+ms.audience: Admin
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
+- M365-Campaigns
+ms.custom:
+- Adm_O365
+- MiniMaven
+- MSB365
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+description: Erfahren Sie, wie Sie Ihre Kampagne schützen, indem Sie Ihre Sicherheit mit Microsoft 365 für Kampagnen erhöhen.
+ms.openlocfilehash: f5a021e8c13f261ea0faf5dec5e463bfa8454277
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35080862"
+---
+## <a name="overview"></a>Übersicht 
+Sehen Sie sich dieses Video an, um zu erfahren, wie Sie Ihre Kampagne schützen können:
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
+
+
+Führen Sie dann die folgenden Schritte aus:
+- [Schutz vor Schadsoftware und anderen Bedrohungen](m365-campaigns-increase-protection.md)
+- [Schützen des Zugriffs auf Ihre Kampagnendaten](m365-campaigns-conditional-access.md) durch Schützen Ihrer Konten und Apps
+- [Schützen von Administratorkonten](m365-campaigns-protect-admin-accounts.md)
+- [Einrichten von mobilen Geräten](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [Schulen der Benutzer](m365-campaigns-users.md) 
+
