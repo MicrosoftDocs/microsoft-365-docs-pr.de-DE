@@ -19,13 +19,12 @@ ms.locfileid: "34698277"
 ---
 # <a name="breach-notification-under-the-gdpr"></a>Microsoft-Dienste und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
-Microsoft nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnung (DSGVO) sehr ernst. Informationen dazu, wie Azure Sie vor Verletzungen des Schutzes personenbezogener Daten schützt und wie wir reagieren und Sie benachrichtigen, wenn eine Verletzung auftritt, finden Sie in den folgenden Themen:
+Microsoft nimmt seine Pflichten im Rahmen der Datenschutz-Grundverordnung (DSGVO) sehr ernst. Informationen dazu, wie Microsoft-Dienste Sie vor Verletzungen des Schutzes personenbezogener Daten schützen und wie wir reagieren und Sie benachrichtigen, wenn eine Verletzung auftritt, finden Sie in den folgenden Themen:
 
 - [Office 365](gdpr-breach-Office365.md) 
 - [Azure](gdpr-breach-Azure.md)
 - [Dynamics 365](gdpr-breach-Dynamics365.md)
-- [Microsoft-Support und Dienstleistungen](gdpr-breach-Microsoft-Support-Professional-Services.md)
-
+- [Microsoft-Support und Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)
 
 Weitere Informationen darüber, wie Microsoft eine Verletzung des Schutzes personenbezogener Daten erkennt und darauf reagiert, finden Sie im Service Trust Portal unter [Benachrichtigung bei Datenschutzverletzungen im Rahmen der DSGVO](https://servicetrust.microsoft.com/ViewPage/GDPRBreach).
 

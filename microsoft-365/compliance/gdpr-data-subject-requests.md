@@ -29,7 +29,7 @@ In den folgenden Artikel wird veranschaulicht, wie Microsoft-Produkte, -Dienste 
 - [Dynamics 365](gdpr-dsr-Dynamics365.md)
 - [Visual Studio-Produktfamilie](gdpr-dsr-visual-studio-family.md)
 - [Azure DevOps Services](gdpr-dsr-vsts.md)
-- [Microsoft-Support und Dienstleistungen](gdpr-dsr-prof-services.md)
+- [Microsoft-Support und Professional Services](gdpr-dsr-prof-services.md)
 
 Weitere Informationen dazu, wie Sie mithilfe von Microsoft auf Anträge betroffener Personen antworten können, finden Sie unter [DSGVO: Anträge betroffener Personen](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) im Service Trust Portal.
 
