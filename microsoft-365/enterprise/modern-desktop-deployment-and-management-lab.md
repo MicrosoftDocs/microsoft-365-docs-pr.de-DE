@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
+ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017497"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576505"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
