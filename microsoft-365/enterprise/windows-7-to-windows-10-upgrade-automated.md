@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatisierte Upgrades von Windows 7 auf Windows 10 für große Organisationen
-ms.openlocfilehash: 4e07ae23f063bdc714d5dddd8cdb8d8c41e25eac
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 6fc22ad7ae8b0a34384818bc77813c6802609b89
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395308"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584511"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>In-Place-Upgrades von Windows 7 auf Windows 10 für große Organisationen
 
 Ab dem 14. Januar 2020 werden Sicherheitsupdates oder Support für PCs unter Windows 7 nicht mehr bereitgestellt. Es bleiben nur wenige Monate Zeit, um von Windows 7 auf Windows 10 zu wechseln, gleichzeitig gilt es, mehrere Optionen bereitzustellen. Deshalb lautet eine häufige Frage in der IT-Community: "Was ist der schnellste Weg, um von Windows 7 auf Windows 10 zu wechseln?" Die kurze Antwort lautet, In-Place-Upgrades für bestehende PCs durchzuführen, wodurch der Fokus hinsichtlich verschiedener Aspekte des Desktopbereitstellungsprozesses reduziert werden kann.
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
+<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 Mithilfe von In-Place-Upgrades werden mehrere Desktopbereitstellungsprozesse erheblich in ihrem Umfang reduziert, insbesondere:
 
