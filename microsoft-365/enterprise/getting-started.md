@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Einführung in den Desktopbereitstellungsprozess.
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814656"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584521"
 ---
 # <a name="getting-started---desktop-deployment"></a>Erste Schritte – Desktopbereitstellung
 
@@ -86,7 +86,7 @@ Klick-und-Los unterscheidet sich stark von den MSI-basierten Paketen in der Verg
 
 Bevor Sie beginnen, sollten Sie einen allgemeinen Plan erstellen und die erforderlichen Sponsoren ins Boot holen. Unser Bereitstellungsprozess beschreibt wichtige Schritte, anhand der Sie die wichtigsten Teammitglieder und Ressourcen in den folgenden Bereitstellungsbereichen verwalten können.
 
-**[Schritt 1: Geräte- und App-Bereitschaft](https://aka.ms/mdd1)** Für eine erfolgreiche Bereitstellung müssen Sie zunächst wissen, was Sie haben. Das bedeutet, dass eine Bestandsaufnahme Ihrer Geräte und Apps und eine Überprüfung der Kompatibilität erforderlich ist. Zur Unterstützung können Sie dabei die Tools nutzen, die in unserem cloudbasierten Dienst, Windows Analytics, verfügbar sind. Mit Windows Analytics können Sie auf Kompatibilitätsintelligenz und Diagnosedaten von Hunderten von Millionen Computern zugreifen, um die auf Ihrem Gerät ausgeführten Apps und Treiber zu bewerten, damit Sie die Bereitschaft Ihres Desktops sicherstellen können. Sie können aus Windows Analytics eine Liste der Computer, die für die Bereitstellung bereit sind, in System Center Configuration Manager exportieren, wenn Sie es verwenden, sodass Sie datengesteuerte Sammlungen der entsprechenden Computer erstellen können, sobald diese bereit sind.
+**[Schritt 1: Geräte- und App-Bereitschaft](https://aka.ms/mdd1)** Für eine erfolgreiche Bereitstellung müssen Sie zunächst wissen, was Sie haben. Das bedeutet, dass eine Bestandsaufnahme Ihrer Geräte und Apps und eine Überprüfung der Kompatibilität erforderlich ist. Zur Unterstützung können Sie dabei die Tools nutzen, die in unserem cloudbasierten Dienst, Desktop Analytics, verfügbar sind. Mit Desktop Analytics können Sie auf Kompatibilitätsintelligenz und Diagnosedaten von Hunderten von Millionen Computern zugreifen, um die auf Ihrem Gerät ausgeführten Apps und Treiber zu bewerten, damit Sie die Bereitschaft Ihres Desktops sicherstellen können. Sie können aus Desktop Analytics eine Liste der Computer, die für die Bereitstellung bereit sind, in System Center Configuration Manager exportieren, wenn Sie es verwenden, sodass Sie datengesteuerte Sammlungen der entsprechenden Computer erstellen können, sobald diese bereit sind.
 
 
   [Erste Schritte mit der Upgradebereitschaft](https://docs.microsoft.com/de-DE/windows/deployment/upgrade/upgrade-readiness-get-started)

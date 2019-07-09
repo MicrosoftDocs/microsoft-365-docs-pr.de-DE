@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576505"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584531"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
 Diese herunterladbaren praktischen Übungen legen den Fokus auf die Windows 10- und Office 365-Bereitstellung sowie die verknüpften Konfigurations- und Verwaltungsaspekte nach der Bereitstellung. Die Schulung wird dringend für Organisationen empfohlen, die sich auf das Windows 7-End of Life vorbereiten, ist jedoch auch sinnvoll, wenn Sie aktuell Windows 10 und Office 365 Plus oder Office 2019 nutzen. Enthalten sind Leitfäden für Windows 10, Office 365 ProPlus, Enterprise Mobility + Security und verknüpfte Produkte und Dienste.
 
-Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Office 365 ProPlus. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot und mehr umfasst.
+Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Office 365 ProPlus. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das System Center Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot und mehr umfasst.
 
 Im Rahmen der [Desktop-Bereitstellung](http://www.aka.ms/howtoshift) für Windows 10 und Office 365 ProPlus ist die Erstellung einer Sandbox- oder isolierten Übungsumgebung der empfohlene Startpunkt bei der Beschäftigung mit Bereitstellungstool-Updates und Tests der bereitstellungsbezogenen Automatisierung.
 
@@ -60,7 +60,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ### <a name="device-and-app-readiness"></a>**Geräte- und App-Bereitschaft**
 
-  - Windows Analytics
+  - Desktop Analytics
   - Enterprise Mode und Enterprise Mode Site List für Internet Explorer
 
 ### <a name="directory-and-network-readiness"></a>**Verzeichnis- und Netzwerkbereitschaft**

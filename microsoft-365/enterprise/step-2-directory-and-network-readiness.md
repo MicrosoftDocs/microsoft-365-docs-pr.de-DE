@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Verzeichnis- und Netzwerkbereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: d9ab05c9ff7d0b926f147ee4f924d95f01ccffd1
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814616"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584571"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Schritt 2: Verzeichnis- und Netzwerkbereitschaft
 
@@ -80,7 +80,7 @@ Eine Möglichkeit, um die Auswirkungen des auf die Bereitstellung bezogenen Date
 
   [Informationen zu BITS](https://docs.microsoft.com/de-DE/windows/desktop/bits/about-bits)
 
-Wenn Sie System Center Configuration Manager verwenden, können Sie auch BITS-fähige Verteilungspunkte konfigurieren oder Multicast mit WDS aktivieren.
+Wenn Sie System Center Configuration Manager (Current Branch) verwenden, können Sie auch BITS-fähige Verteilungspunkte konfigurieren oder Multicast mit WDS aktivieren.
 
 Die Drosselung von bestimmtem Datenverkehr bedeutet, dass der normale Netzwerkdatenverkehr weniger durch PCs, die Updates und Anwendungen herunterladen, beeinträchtigt wird. Indem ein bestimmter Prozentsatz der Bandbreite für diese Vorgänge reserviert wird, wird sichergestellt, dass die Produktivität durch die Windows- oder Office-Bereitstellung nicht beeinträchtigt wird, und Prozesse werden weiterhin nach Bedarf ausgeführt. Dies kann jedoch dazu führen, dass die Ausfallzeiten bei der Bereitstellung länger werden, wenn der Benutzerzugriff während der Durchführung einer Bereitstellung auf dem PC gesperrt ist.
 
@@ -90,7 +90,7 @@ Glücklicherweise gibt es neue Tools, die es Ihnen erleichtern, die Auswirkungen
 
 ## <a name="scavenging-bandwidth"></a>**Aufräumen der Bandbreite**
 
-LEDBAT (Low Extra Delay Background Transport), das in Windows Server 2019 and System Center Configuration Manager Version 1806 unterstützt wird, ist auf die Optimierung des Netzwerkverkehrs für Windows-Clients ausgelegt.
+LEDBAT (Low Extra Delay Background Transport), das in Windows Server 2019 and System Center Configuration Manager (Current Branch) unterstützt wird, ist auf die Optimierung des Netzwerkverkehrs für Windows-Clients ausgelegt.
 
 [Top 10 Netzwerkfeatures in Windows Server 2019: \#9 LEDBAT – Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -110,7 +110,7 @@ Hinweis: BranchCache and Peercache ergänzen sich und können zusammen in dersel
 
 [Branch-Cache und Peer-Cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Übermittlungsoptimierung** Die Übermittlungsoptimierung ist eine weitere Peer-zu-Peer Technologie für die Zwischenspeicherung, die auf dem Netzwerk basierende Steuerungen für Bereitstellungen bietet. Verwenden Sie die Windows 10-Übermittlungsoptimierung, um integrierte UWP-Apps zu aktualisieren und um Anwendungen aus dem Microsoft Store sowie Softwareupdates mit Express-Updates zu installieren. Sie ist seit den frühen Versionen von Windows 10 verfügbar, wurde jedoch erst kürzlich mit System Center Configuration Manager integriert. Seit Windows 10 Version 1803 bedeuten neue Konfigurationsoptionen, dass Sie jetzt unabhängig voneinander Bandbreitengrenzwerte für die Aktualisierung im Hintergrund und Vordergrundaufgaben wie das Installieren einer App aus dem Store festlegen können. Die Windows-Übermittlungsoptimierung unterstützt nun auch Office 365 ProPlus bei Clientupdates, verfügbar in allen unterstützten Office 365-Clientupdatekanälen. Unterstützung für Windows-Übermittlungsoptimierung bei der Erstinstallation von Office 365-Clients wird in Kürze folgen.  
+**Übermittlungsoptimierung** Die Übermittlungsoptimierung ist eine weitere Peer-zu-Peer Technologie für die Zwischenspeicherung, die auf dem Netzwerk basierende Steuerungen für Bereitstellungen bietet. Verwenden Sie die Windows 10-Übermittlungsoptimierung, um integrierte UWP-Apps zu aktualisieren und um Anwendungen aus dem Microsoft Store sowie Softwareupdates mit Express-Updates zu installieren. Sie ist seit den frühen Versionen von Windows 10 verfügbar, wurde jedoch erst kürzlich mit System Center Configuration Manager (Current Branch) integriert. Seit Windows 10 Version 1803 bedeuten neue Konfigurationsoptionen, dass Sie jetzt unabhängig voneinander Bandbreitengrenzwerte für die Aktualisierung im Hintergrund und Vordergrundaufgaben wie das Installieren einer App aus dem Store festlegen können. Die Windows-Übermittlungsoptimierung unterstützt nun auch Office 365 ProPlus bei Clientupdates, verfügbar in allen unterstützten Office 365-Clientupdatekanälen. Unterstützung für Windows-Übermittlungsoptimierung bei der Erstinstallation von Office 365-Clients wird in Kürze folgen.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

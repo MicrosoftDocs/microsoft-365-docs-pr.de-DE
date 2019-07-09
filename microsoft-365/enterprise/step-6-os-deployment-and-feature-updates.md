@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zu den Optionen für die Bereitstellung des Betriebssystems und Featureupdates.
-ms.openlocfilehash: e26bbea4e0507c66102931eb102ce96d2620cfc7
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 16af9a57623ffbdd73d97d44993c36ce57889eaf
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814626"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584541"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Schritt 6: Bereitstellung des Betriebssystems und Featureupdates
 
@@ -49,7 +49,7 @@ Die meisten Organisationen verwenden das Verfahren des PC-Imagings zum Konfiguri
 
 Wenn Sie den Weg der Imageerfassung wählen, sollten Sie so viele Aufgaben wie möglich automatisieren, damit Sie ein Image von höchster Qualität erhalten und einen wiederholbaren Prozess einrichten. Bei den meisten Bereitstellungen ist es ebenfalls empfehlenswert, vor dem Erfassen so wenige Anpassungen und vorinstallierte Apps in das Windows-Image aufzunehmen. Dies wir auch als „Thin Image“-Ansatz bezeichnet, durch den Bandbreite im Netzwerk gespart werden kann, indem die Anzahl der Apps im Image reduziert wird. Wenn Sie mit einem einfachen Image beginnen, können Sie die erforderlichen Apps, Sprachen und Konfigurationen in Layern hinzufügen, die dynamisch auf die Benutzer zugeschnitten werden können.
 
-Während des Erstellungs- und Erfassungsvorgangs verwenden Tools wie der System Center Configuration Manager und das Microsoft Deployment Toolkit das Systemvorbereitungstool (auch als „Sysprep“ bezeichnet) zusammen mit dem Befehl zum Generalisieren, um das Image vor dem Erfassen der Windows 10-Installation als Image wieder zu versiegeln.
+Während des Erstellungs- und Erfassungsvorgangs verwenden Tools wie der System Center Configuration Manager (Current Branch) und das Microsoft Deployment Toolkit das Systemvorbereitungstool (auch als „Sysprep“ bezeichnet) zusammen mit dem Befehl zum Generalisieren, um das Image vor dem Erfassen der Windows 10-Installation als Image wieder zu versiegeln.
 
 Das erfasste Image hat das Windows-Image-Format (WIM), wie jedes standardmäßige Windows-Installationsmedium. Sobald Sie Ihre eigene WIM-Datei erstellt haben, können Sie eine andere Aufgabensequenz als Teil der Betriebssystembereitstellung im System Center Configuration Manager oder Microsoft Deployment Toolkit verwenden, um mit der Bereitstellung zusammenhängenden Aufgaben durchzuführen, das Image anzuwenden und Aufgaben vor und nach der Anwendung des Windows-Images auszuführen.
 
@@ -76,7 +76,7 @@ Alle drei dieser Szenarien haben eines gemeinsam: Sie verwenden für die Ausfüh
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Direktes Upgrade durch Aufgabensequenz-Automatisierung
 
-Zusätzlich zu diesen Bereitstellungstypen gibt es nun eine neue Option als eine System Center Configuration Manager-Aufgabensequenz in Windows 10: das direkte Upgrade mit der Upgrade-Aufgabensequenz.
+Zusätzlich zu diesen Bereitstellungstypen gibt es nun eine neue Option als eine Aufgabensequenz von System Center Configuration Manager (Current Branch) in Windows 10: das direkte Upgrade mit der Upgrade-Aufgabensequenz.
 
 Direkte Upgrades von einer vorherigen Version von Windows erfordern keine Aufgabensequenz. Dieser Ansatz wird jedoch empfohlen, wenn Sie die Bereitstellung auf Unternehmensebene durchführen. bei einem direkten Upgrade können Sie kein benutzerdefiniertes Image mit Anwendungen verwenden. Sie können jedoch die standardmäßige install.wim anhand von Offline-Servicing aktualisieren. Sie können beispielsweise sicherstellen, dass vor dem Upgrade die neuesten Windows-Updates angewendet wurden.
 
@@ -100,7 +100,7 @@ Beim Planen der Bereitstellung sehen Sie bestimmte Computer für die Bare-Metal-
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-and-the-microsoft-deployment-toolkit"></a>Empfohlenen Tools: System Center Configuration Manager und das Microsoft Deployment Toolkit
+### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Empfohlenen Tools: System Center Configuration Manager (Current Branch) und das Microsoft Deployment Toolkit
 
 Unabhängig vom gewählten Bereitstellungstyp müssen Sie sicherstellen, dass er so weit wie möglich automatisiert ist, damit eine gewisse Vorhersagbarkeit und Wiederholbarkeit gegeben ist. Microsoft bietet zwei Lösungen zum Automatisieren der Betriebssystembereitstellung mit automatisieren Aufgabensequenzen an:
 
@@ -126,7 +126,7 @@ Wenn sich ein Benutzer dann während des Setups mit seinen Azure AD-Anmeldedaten
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update for Business für Featureupdates
 
-Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), System Center Configuration Manager (aktueller Zweig) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
+Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
 
 Ausführlichere Informationen zu Windows Update for Business finden Sie in der folgenden Dokumentation:
 

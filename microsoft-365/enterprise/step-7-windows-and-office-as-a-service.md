@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur Vorbereitung für Windows und Office als Dienst in Ihrer Umgebung.
-ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814596"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584561"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Schritt 7: Windows und Office als Dienst
 
@@ -37,7 +37,7 @@ ms.locfileid: "34814596"
 >Windows und Office als Dienst ist der siebte Schritt in dem von uns empfohlenen Rad für den Bereitstellungsprozess, der die Planungsaspekte der Vorbereitung auf halbjährliche Updates für Features behandelt. Wenn Sie den vollständigen Desktopbereitstellungsprozess sehen möchten, besuchen Sie das [Bereitstellungscenter für Desktop](https://aka.ms/HowToShift).
 >
 
-Sowohl in Windows 10 und als auch in Office 365 ProPlus werden neue Wartungsoptionen, Supportmodelle und Zeitpläne für Updates eingeführt. Anhand dieser Änderungen können Sie leichter über die neuesten Features auf dem Laufenden bleiben. Neben diesen Updates gibt es neue Konfigurationsoptionen, die Wartungspläne ermöglichen, die Ihren Anforderungen entsprechen. Erfahren Sie, wie Sie sich auf halbjährliche Kanalupdates mit neuen Features und Funktionen in Windows 10 und Office 365 ProPlus vorbereiten können, während Sie neue Features in System Center Configuration Manager Current Branch nutzen.
+Sowohl in Windows 10 und als auch in Office 365 ProPlus werden neue Wartungsoptionen, Supportmodelle und Zeitpläne für Updates eingeführt. Anhand dieser Änderungen können Sie leichter über die neuesten Features auf dem Laufenden bleiben. Neben diesen Updates gibt es neue Konfigurationsoptionen, die Wartungspläne ermöglichen, die Ihren Anforderungen entsprechen. Erfahren Sie, wie Sie sich auf halbjährliche Kanalupdates mit neuen Features und Funktionen in Windows 10 und Office 365 ProPlus vorbereiten können, während Sie neue Features in System Center Configuration Manager (Current Branch) nutzen.
 
 [Kunden beim Umstieg auf Windows 10 und Office 365 ProPlus unterstützen](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -79,7 +79,7 @@ Ein weiterer Punkt: Wenn Sie einen halbjährlichen Kanal für Office zur Bereits
 
 ### <a name="supporting-management-tools"></a>Unterstützen der Verwaltungstools
 
-Wir haben uns auch Gedanken darüber gemacht, wie wir die Bereitstellung von Updates für Sie reibungslos gestalten können. System Center Configuration Manager Current Branch wird häufig aktualisiert, um die Einführung dieser Updates für Windows und Office sowie andere neue Funktionen zu unterstützen.
+Wir haben uns auch Gedanken darüber gemacht, wie wir die Bereitstellung von Updates für Sie reibungslos gestalten können. System Center Configuration Manager (Current Branch) wird häufig aktualisiert, um die Einführung dieser Updates für Windows und Office sowie andere neue Funktionen zu unterstützen.
 
 
   [Bereitstellen von Windows 10-Updates mit System Center Configuration Manager](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-manage-updates-configuration-manager)
@@ -125,7 +125,7 @@ Mithilfe einer Technologie mit dem Namen „Express Updates“ in Windows und Bi
 
 [Erläuterung von Windows 10-Qualitätsupdates und das Ende von Deltaaktualisierungen](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-Windows Update for Business und Windows Server Update Services haben Express-Updates über einen langen Zeitraum unterstützt, dieser Support wurde nun auf System Center Configuration Manager erweitert, sodass auch hier Express-Updates verwendet werden können.
+Windows Update for Business und Windows Server Update Services haben Express-Updates über einen langen Zeitraum unterstützt, dieser Support wurde nun auf System Center Configuration Manager (Current Branch) erweitert, sodass auch hier Express-Updates verwendet werden können.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -141,7 +141,7 @@ Da Sie nun die Überlegungen für monatliche Updates kennen, fahren wir mit den 
 
 Wie bei der Geräte- und App-Bereitschaft behandelt, sollten Sie zur Vorbereitung auf diese größeren Updates die gleichen Bereitschaftstools verwenden, die in Schritt 1 des Bereitstellungsprozesses eingerichtet wurden.
 
-Was die Tools angeht, so können Sie Richtlinieneinstellungen mit Windows Update for Business, die Softwareupdateverwaltung über System Center Configuration Manager, Windows Server Update Services (WSUS) oder von Microsoft Intune festgelegte Updaterichtlinien verwenden. Wenn Sie sich Sorgen um die Netzwerkbandbreite machen, sehen Sie sich „Schritt 2: Verzeichnis- und Netzwerkbereitschaft“ an, um mehr über Ihre Optionen zur Reduzierung des Netzwerkdatenverkehrs über die Übermittlungsoptimierung und andere Peer-to-Peer-Cachingtechnologien zu erfahren.
+Was die Tools angeht, so können Sie Richtlinieneinstellungen mit Windows Update for Business, die Softwareupdateverwaltung über System Center Configuration Manager (Current Branch), Windows Server Update Services (WSUS) oder von Microsoft Intune festgelegte Updaterichtlinien verwenden. Wenn Sie sich Sorgen um die Netzwerkbandbreite machen, sehen Sie sich „Schritt 2: Verzeichnis- und Netzwerkbereitschaft“ an, um mehr über Ihre Optionen zur Reduzierung des Netzwerkdatenverkehrs über die Übermittlungsoptimierung und andere Peer-to-Peer-Cachingtechnologien zu erfahren.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -153,7 +153,7 @@ Was die Tools angeht, so können Sie Richtlinieneinstellungen mit Windows Update
 
 #### <a name="upgrade-task-sequences"></a>Aufgabensequenzen bei Upgrades
 
-Das Installieren der größeren Featureupdates über standardäßige Routinen der Softwareupdateverwaltung ist eine unterstützte Option, aber viele Organisationen verwenden lieber eine Upgradeaufgabensequenz mit System Center Configuration Manager oder das Microsoft Deployment Toolkit.
+Das Installieren der größeren Featureupdates über standardmäßige Routinen der Softwareupdateverwaltung ist eine unterstützte Option, aber viele Organisationen verwenden lieber eine Upgradeaufgabensequenz mit System Center Configuration Manager (Current Branch) oder das Microsoft Deployment Toolkit.
 
 Mit einer Aufgabensequenz können Sie benutzerdefinierte Prüfungen oder Aufgaben VOR der Installation der Featureupdates erstellen und benutzerdefinierte Aufgaben ausführen, NACHDEM die Installation des Updates selbst abgeschlossen wurde – Aufgaben nach der Aktualisierung beinhalten möglicherweise das vorübergehende Aussetzen von Diensten, wenn dies während des Updates, der Treiberinstallation und des Treiberaustauschs, während Anwendungsupgrades oder Personalisierungseinstellungen für die Taskleiste und Windows 10-Start erforderlich ist.
 
