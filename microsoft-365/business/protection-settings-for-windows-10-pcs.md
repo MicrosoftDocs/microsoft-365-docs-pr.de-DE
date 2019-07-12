@@ -3,7 +3,7 @@ title: Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Hier finden Sie Informationen zu standardmäßigen und anderen Einstellungen in Microsoft 365 Business zur Sicherung von Windows 10-Geräten.
-ms.openlocfilehash: 5dc6ede8f31f5837d59c200e0b76083dcf419e05
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+description: Erfahren Sie mehr über die standardmäßigen und anderen Einstellungen, die in Microsoft 365 Business zum Sichern von Windows 10-Geräten verfügbar sind.
+ms.openlocfilehash: 844bddc4b93c7dc543ad6c6a79f5cf92c96ceff0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660347"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630607"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
 
@@ -34,7 +34,7 @@ Schauen Sie sich ein Video mit Informationen zum Sichern von Windows 10-Geräten
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. SGO zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Richtlinien** \> **Hinzufügen**aus.
   
