@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c991dd20dcab50c824784c233e03ecc8cdc25f94
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: f16989960d999e65ad904fd11894d5fe8bca98f0
+ms.sourcegitcommit: 1bd18fb00aad37bad8d1411a916f444e1d1a38cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857288"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756897"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
@@ -47,7 +47,6 @@ Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen mö
 | [DGM-Buch 2](https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 GB/Intel i7/16 GB RAM | 15-Zoll-Anzeige | 16. November 2019 | 16. November 2022 |
 | [DGM-go](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8GB RAM | Keine | 2. August 2020 | 2. August 2023 |
 | [Surface Laptop 2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | Keine | 16. Oktober 2020 | 16. Oktober 2023 |
-|[Surface pro (5th Gen)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2019** | 15. Juni 2022 |
 | [Surface pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | Keine | 16. Oktober 2020 | 16. Oktober 2023 |
 
 Darüber hinaus muss das Gerät auch:     
