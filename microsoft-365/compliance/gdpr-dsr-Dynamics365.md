@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 468a8c7f1151443d001efb89639c5cdad204b1c2
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698237"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778130"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Anträge betroffener Personen für Dynamics 365 im Rahmen der DSGVO
 
@@ -224,7 +224,7 @@ Dieser erste Schritt – Suchen und Überprüfen der betroffenen personenbezogen
 
 Suche nach:
 
-- Einem Benutzerprofil: Gehen Sie zum [Office 365 Admin Center](https://portal.office.com/adminportal/home). Wählen Sie im **Admin Center** die Option **Benutzer** aus. Suchen Sie auf der Seite **Aktive Benutzer** nach dem Benutzer in der Liste. Social Engagement: Gehen Sie zu **Einstellungen\>, Benutzerverwaltung**, um Informationen anzuzeigen, die von Office 365 automatisch synchronisiert werden.
+- Einem Benutzerprofil: Gehen Sie zum [Admin Center](https://portal.office.com/adminportal/home). Wählen Sie im **Admin Center** die Option **Benutzer** aus. Suchen Sie auf der Seite **Aktive Benutzer** nach dem Benutzer in der Liste. Social Engagement: Gehen Sie zu **Einstellungen\>, Benutzerverwaltung**, um Informationen anzuzeigen, die von Office 365 automatisch synchronisiert werden.
 - Dem Empfänger einer Benachrichtigung: Führen Sie die ersten beiden Schritten unter [Verwalten von Warnungsempfängern als Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator) aus.
 - Daten sozialer Profile, die von Mitarbeitern eingegeben wurden: Gehen Sie zu **Einstellungen \> Soziale Profile**. (Weitere Informationen finden Sie unter [Verwalten von Social Media-Profilen](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles).)
 - Benutzernamen in Power BI: Öffnen Sie das Social Engagement Power BI-Dashboard, und filtern Sie nach dem Mitarbeiternamen.
@@ -242,7 +242,7 @@ Die DSGVO gibt den betroffenen Personen das Recht, einen Antrag auf eine Kopie i
 
 Um zu exportieren:
 
-- Kundendaten aus Benutzerprofilen: Navigieren Sie zum [Office 365 Admin Center](https://portal.office.com/adminportal/home). Wählen Sie im **Admin Center** die Option **Benutzer** aus. Suchen Sie auf der Seite **Aktive Benutzer** nach dem Benutzer, dessen Daten Sie exportieren möchten. Löschen Sie alle Benutzer außer dem Zielbenutzer, und wählen Sie dann **Exportieren** aus, um die Daten in eine CSV-Datei zu exportieren, in der Sie die Informationen mit Excel anzeigen können.
+- Kundendaten aus Benutzerprofilen: Navigieren Sie zum [Admin Center](https://portal.office.com/adminportal/home). Wählen Sie im **Admin Center** die Option **Benutzer** aus. Suchen Sie auf der Seite **Aktive Benutzer** nach dem Benutzer, dessen Daten Sie exportieren möchten. Löschen Sie alle Benutzer außer dem Zielbenutzer, und wählen Sie dann **Exportieren** aus, um die Daten in eine CSV-Datei zu exportieren, in der Sie die Informationen mit Excel anzeigen können.
 - E-Mail-Adressen eines Benachrichtigungsempfängers (die einzigen Kundendaten in einer Benachrichtigung). Folgen Sie den Schritten in [Verwalten von Warnungsempfängern als Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Wählen Sie dann **Exportieren** aus, um eine Excel-Liste der Benachrichtigungen herunterzuladen, die diesen Empfänger enthalten.
 - Benutzernamen aus Power BI: [Engagement-Berichte](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) zeigen Benutzernamen in Berichten zur Teamleistung in sozialen Medien. Um diese Daten zu exportieren, filtern Sie nach dem Benutzer im PowerBI-Dashboard oder -[Bericht](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), und [exportieren Sie die Daten](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data).
 
@@ -317,7 +317,7 @@ Um die Autoren-Tags zu extrahieren, die einem bestimmten Autor hinzugefügt wurd
 
 Um zu exportieren:
 
-- Kundendaten aus Benutzerprofilen: Navigieren Sie zum [Office 365 Admin Center](https://portal.office.com/adminportal/home). Wählen Sie im **Admin Center** die Option **Benutzer** aus. Suchen Sie auf der Seite **Aktive Benutzer** nach dem Benutzer, dessen Daten Sie exportieren möchten. Löschen Sie alle Benutzer außer dem Zielbenutzer, und wählen Sie dann **Exportieren** aus, um die Daten in eine CSV-Datei zu exportieren, in der Sie die Informationen mit Excel anzeigen können.
+- Kundendaten aus Benutzerprofilen: Navigieren Sie zum [Admin Center](https://portal.office.com/adminportal/home). Wählen Sie im **Admin Center** die Option **Benutzer** aus. Suchen Sie auf der Seite **Aktive Benutzer** nach dem Benutzer, dessen Daten Sie exportieren möchten. Löschen Sie alle Benutzer außer dem Zielbenutzer, und wählen Sie dann **Exportieren** aus, um die Daten in eine CSV-Datei zu exportieren, in der Sie die Informationen mit Excel anzeigen können.
 - E-Mail-Adressen eines Benachrichtigungsempfängers (die einzigen personenbezogenen Daten in einer Benachrichtigung). Führen Sie die Schritte unter [Verwalten von Warnungsempfängern als Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator) aus. Wählen Sie dann **Export** aus, um eine Excel-Liste der Benachrichtigungen herunterzuladen, die diesen Empfänger enthalten.
 - Benutzernamen aus Power BI: [Engagement-Berichte](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) zeigen Benutzernamen in Berichten zur Teamleistung in sozialen Medien. Um diese Daten zu exportieren, filtern Sie nach dem Benutzer im PowerBI-Dashboard oder -[Bericht](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), und [exportieren Sie die Daten](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data).
 
