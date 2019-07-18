@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Rufen Sie Microsoft 365 für Kampagnen ab, damit Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation schützen können.
-ms.openlocfilehash: 21131707d88168f8886472f3ef0b42603229d8c5
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183305"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772512"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Abrufen von Microsoft 365 für Kampagnen
 
@@ -53,7 +53,7 @@ Es gibt keine minimale Zeit Verpflichtung, wenn Sie sich bei Microsoft 365 für 
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>Wie qualifiziere ich mich für spezielle Preise?
 
-1. Wechseln Sie https://m365forcampaigns.microsoft.com/ zu und geben Sie einige Details zu Ihrer Organisation an. Die von Ihnen bereitgestellten Details helfen uns zu überprüfen, ob Sie eine politische Kampagne auf nationaler Ebene in den Vereinigten Staaten darstellen. Es gibt keine Verpflichtung, wenn Sie dieses Formular ausfüllen. 
+1. Wechseln Sie https://m365forcampaigns.microsoft.com/ zu und geben Sie einige Details zu Ihrer Organisation an. Mit den von Ihnen bereitgestellten Details können Sie sicherstellen, dass Sie eine politische Kampagne auf nationaler Ebene in den Vereinigten Staaten darstellen. Es gibt keine Verpflichtung, wenn Sie dieses Formular ausfüllen. 
 2. Nachdem Sie das Formular abgeschlossen haben, benötigen wir einige Tage, um Ihre Informationen zu überprüfen. 
 3. Nachdem Sie überprüft haben, dass Sie eine politische Kampagne auf nationaler Ebene oder eine Partei darstellen, erhalten Sie eine e-Mail-Einladung von Microsoft. Ihre Einladung enthält einen für Ihre Organisation spezifischen Registrierungslink. 
 

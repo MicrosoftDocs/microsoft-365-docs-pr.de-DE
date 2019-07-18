@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Schützen Sie sich gegen Phishing und andere Angriffe mit Microsoft 365 für Kampagnen.
-ms.openlocfilehash: a0e5876d0b1a3b454a00df79f3d0808b26ef8e1e
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080863"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772482"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Schützen Sie sich vor Phishing und anderen Angriffen
 
-Microsoft 365 umfasst eine Vielzahl von Schutzmaßnahmen gegen Angriffe, aber es gibt Dinge, die Sie selbst tun können, um das Risiko von Onlineangriffen zu begrenzen und zu minimieren.
+Microsoft 365 umfasst viele Schutzmaßnahmen gegen Angriffe, aber es gibt Dinge, die Sie selbst tun können, um das Risiko von Onlineangriffen zu begrenzen und zu minimieren.
 
-- **Spam oder Junk-e-Mail** Es gibt viele Gründe, warum Sie Junk-e-Mail erhalten, und nicht alle Junk-e-Mails ist identisch. Sie können jedoch reduzieren, was für Sie durchläuft, und reduzieren dadurch das Risiko von Angriffen durch das Filtern von Junk-e-Mails.
+- **Spam oder Junk-e-Mail** Es gibt viele Gründe, warum Sie Junk-e-Mail erhalten, und nicht alle Junk-e-Mails ist identisch. Sie können jedoch reduzieren, was für Sie durchläuft, und somit das Risiko von Angriffen reduzieren, indem Sie Junk-e-Mails herausfiltern.
 - **Phishing** Ein Phishing-Betrug ist eine e-Mail-Nachricht, die legitim erscheint, aber ein Versuch ist, Ihre persönlichen Informationen zu erhalten oder Ihr Geld zu stehlen.
 - **Spoofing** Betrüger können auch eine Technik namens Spoofing verwenden, um es so aussehen zu lassen, als hätten Sie eine e-Mail von sich selbst erhalten. 
-- **Schadsoftware** ist eine bösartige Software, die auf Ihrem Computer installiert werden kann – normalerweise installiert, nachdem Sie auf einen Link geklickt oder ein Dokument aus einer e-Mail geöffnet haben. Es gibt verschiedene Arten von Schadsoftware (beispielsweise Ransomware, wenn Ihr Computer übernommen wird), aber Sie möchten keine davon haben. 
+- **Schadsoftware** ist eine bösartige Software, die auf Ihrem Computer installiert werden kann, in der Regel installiert, nachdem Sie auf einen Link geklickt oder ein Dokument aus einer e-Mail geöffnet haben. Es gibt verschiedene Arten von Schadsoftware (beispielsweise Ransomware, wenn Ihr Computer übernommen wird), aber Sie möchten keine davon haben. 
 
 
 ## <a name="best-practices"></a>Bewährte Methoden
@@ -46,7 +46,7 @@ Befolgen Sie diese [10 Tipps, wie Sie Spam reduzieren können](https://support.o
 
 **Melden Sie es!**
 
-Melden Sie alle Phishing-oder andere Scam-e-Mails, die Sie erhalten. Wählen Sie die Nachricht aus, und wählen Sie im Menüband **Berichtsnachricht** aus, um den Absender der Nachricht zu melden und dann die Nachricht zu blockieren.
+Melden Sie alle Phishing-oder andere Scam-e-Mails, die Sie erhalten. Wählen Sie die Nachricht aus, und wählen Sie im Menüband **Bericht Meldung** aus.
 Hier finden Sie weitere Informationen zum [melden von Junk-und Phishing-e-Mails](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Vermeiden von Phishing**
@@ -60,13 +60,13 @@ Hier finden Sie Informationen zu fünf gängigen Betrugsarten im [Umgang mit Mis
 
 **Stellen Sie sicher, dass Ihre e-Mails anderen Benutzern legitim erscheinen.**
 
-Helfen Sie Ihren Kunden, ihrer Kommunikation zu vertrauen – fügen Sie eine digitale Signatur hinzu, um zu beweisen, dass Sie von Ihnen kommt. Siehe [sichere Nachrichten mithilfe einer digitalen Signatur](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Helfen Sie Ihren Kunden, ihrer Kommunikation zu vertrauen, indem Sie eine digitale Signatur hinzufügen, um zu beweisen, dass Sie von Ihnen kommt. Siehe [sichere Nachrichten mithilfe einer digitalen Signatur](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>Schützen Ihrer Kampagne vor Onlinebedrohungen
 
 Laden Sie diese Infografik mit Tipps für Sie und die Mitglieder Ihres Kampagnen Teams herunter:
 
-[![Image for help schützen Ihrer Kampagnen Infografik](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[! Hilfe zum Schutz Ihrer Kampagnen Infografik](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)] (Downloads/M365CampaignsWhatCanUsersDoToSecure. pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

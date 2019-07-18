@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Melden Sie sich bei Microsoft 365 für Kampagnen an. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: 2bf147f1d062ecbccabade355e50cff16bf30089
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: be24db2a7614e312bff96e5689f58a439de224a6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183300"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772442"
 ---
 # <a name="sign-in-to-microsoft-365-for-campaigns"></a>Melden Sie sich bei Microsoft 365 für Kampagnen an.
 

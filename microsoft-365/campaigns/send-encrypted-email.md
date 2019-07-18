@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie, wie Sie verschlüsselte e-Mails mit Outlook senden.
-ms.openlocfilehash: 16e6a6977d7cd8ec4d6bf59adbcd196b14995752
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183299"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772322"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Verschlüsseln oder bezeichnen von vertraulichen e-Mails
 
@@ -54,7 +54,7 @@ Weitere Informationen zum Einrichten der e-Mail-Verschlüsselung finden Sie unte
 
 ### <a name="automatically-encrypt-email-messages"></a>E-Mail-Nachrichten automatisch verschlüsseln
 
-Administratoren können e-Mail-Flussregeln erstellen, um automatisch e-Mail-Nachrichten zu schützen, die von Ihrer Kampagne gesendet und empfangen werden. Einrichten von Regeln zum Verschlüsseln von ausgehenden e-Mail-Nachrichten und zum Entfernen der Verschlüsselung von verschlüsselten Nachrichten, die innerhalb Ihrer Organisation oder von Antworten auf verschlüsselte Nachrichten von Ihrer Organisation gesendet 
+Administratoren können e-Mail-Flussregeln erstellen, um automatisch e-Mail-Nachrichten zu schützen, die von Ihrer Kampagne gesendet und empfangen werden. Richten Sie Regeln zum Verschlüsseln von ausgehenden e-Mail-Nachrichten ein, und entfernen Sie die Verschlüsselung aus verschlüsselten Nachrichten, die innerhalb Ihrer Organisation oder aus Antworten auf verschlüsselte Nachrichten von Ihrer Organisation gesendet 
 
 Sie erstellen Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten mit den neuen Funktionen für die Office 365 Nachrichtenverschlüsselung (OM). Definieren Sie Nachrichtenfluss Regeln für die Auslösung der Nachrichtenverschlüsselung mit den neuen OM-Funktionen mithilfe des Exchange Admin Centers (EAC). 
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183303"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772462"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -47,7 +47,7 @@ Hier erfahren Sie, wie Sie Ihre Registrierung für Microsoft 365 für Kampagnen 
     > Wenn Sie bereits über ein vorhandenes Office 365 für Unternehmen-Abonnement verfügen und das Microsoft 365 for Campaigns-Angebot hinzufügen möchten, wechseln Sie zu [Hinzufügen von Microsoft 365 für Kampagnen zu einem vorhandenen Abonnement](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. Geben Sie **auf der Seite Microsoft 365 Business**ihre Geschäftsdetails ein. Verwenden Sie für **geschäftliche e-Mail-Adresse**eine aktuelle e-Mail-Adresse. Wir benötigen diese Adresse nur, um während des Installationsvorgangs mit Ihnen in Kontakt zu bleiben. Wählen Sie **Weiter** aus.
 1. **Auf der Seite Benutzer-ID erstellen**:
-    1. Geben Sie unter **Benutzer**Name den Namen oder den Alias ein, den Sie für Ihre e-Mail-Adresse wünschen. Beispielsweise möchten Sie vielleicht einfach nur als Alice oder Rob bezeichnet werden. In einer größeren Kampagne kann AliceC oder AliceChavez mehr Sinn ergeben.
+    1. Geben Sie unter **Benutzer**Name den Namen oder den Alias ein, den Sie für Ihre e-Mail-Adresse wünschen. Beispielsweise können Sie als "Just Alice" oder "Rob" bezeichnet werden. In einer größeren Kampagne kann AliceC oder AliceChavez mehr Sinn ergeben.
     2. Geben Sie in **Ihrem Unternehmen**den Namen der Kampagne ein, für die Sie arbeiten. Beispiel: ContosoCampaign. Wenn Sie bereits eine Domäne besitzen, verwenden Sie diesen Namen hier. 
     3. Wählen Sie unter **Domäne auswählen die**Option **. onmicrosoft.com** für jetzt aus. Wir können Sie später mit einer Domäne einrichten oder Ihnen helfen, Microsoft 365 mit einer Domäne verbunden zu lassen, die Sie bereits besitzen.
     4. Erstellen Sie ein Kennwort, und wählen Sie **mein Konto erstellen**aus. 
@@ -63,7 +63,7 @@ Hier erfahren Sie, wie Sie Ihre Registrierung für Microsoft 365 für Kampagnen 
     1. Stellen Sie sicher, dass die Kosten pro Benutzer $5,00 sind. 
     2. Wenn Sie sich jetzt nur selbst einrichten möchten, wählen Sie **weiter**aus. 
     3. Optional: Fügen Sie jetzt einige zusätzliche Lizenzen hinzu, indem Sie die Nummer im Feld **Benutzer** ändern. [Die Mitarbeiter, mit denen Sie zusammenarbeiten, können jederzeit Lizenzen für Microsoft 365 zuweisen](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) .
-7. **Wie möchten Sie bezahlen? Seite**: Wählen Sie **neue Kreditkarte**aus, geben Sie die Details Ihrer Geschäftskredit Karte ein, und wählen Sie **Bestellung platzieren**aus. Wenn Sie es vorziehen, können Sie auch ein Bankkonto verwenden.
+7. **Wie möchten Sie bezahlen? Seite**: Wählen Sie **neue Kreditkarte**aus, geben Sie die Details Ihrer Geschäftskredit Karte ein, und wählen Sie **Bestellung platzieren**aus. Wenn es Ihnen lieber ist, können Sie auch ein Bankkonto verwenden.
 8. **Dies kann eine Moment Seite dauern**: Sie finden Details darüber, wo Sie sich anmelden und Ihre Benutzer-ID. Wir senden diese Informationen auch an die e-Mail-Adresse, die Sie in Schritt 2 oben eingegeben haben.
 
 Die Anmeldeschritte sind abgeschlossen! Wenn Sie mit den nächsten Schritten fortfahren möchten, wählen Sie **Setup starten**aus, oder kehren Sie zu einem späteren Zeitpunkt zurück, um die Schritte abzuschließen. Wenn Sie fertig sind, überprüfen Sie Ihre e-Mails (in Schritt 2), um Ihren Benutzernamen und Ihr Kennwort zu finden, damit Sie sich beim nächsten Mal anmelden können. Diese werden als Administrator-oder globale Administratoranmeldeinformationen bezeichnet.

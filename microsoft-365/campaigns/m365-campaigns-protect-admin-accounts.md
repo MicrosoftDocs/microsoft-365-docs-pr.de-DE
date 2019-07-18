@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihre Administratorkonten einrichten und schützen.
-ms.openlocfilehash: 857c24ac0ec134e119b3de083afe8dc3269bdbe2
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183306"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772472"
 ---
 # <a name="protect-your-administrator-accounts"></a>Schützen Ihrer Administratorkonten
 
@@ -38,7 +38,7 @@ Wenn Sie sich für Microsoft 365 Business registrieren und Ihre Informationen ei
 
 ## <a name="create-additional-admin-accounts"></a>Erstellen zusätzlicher Administratorkonten
 
-Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um Konten, Geräte und während der Arbeit an anderen Verwaltungsfunktionen zu verwalten.  Es empfiehlt sich auch, die Microsoft 365 Business License aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
+Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um Konten, Geräte und während der Arbeit an anderen Verwaltungsfunktionen zu verwalten. Es empfiehlt sich auch, die Microsoft 365 Business License aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
 
 Sie möchten mindestens ein zusätzliches globales Administratorkonto einrichten, um Administratorzugriff auf einen anderen vertrauenswürdigen Mitarbeiter zu erhalten. Sie können auch separate Administratorkonten für die Benutzerverwaltung erstellen (diese Rolle wird als **Benutzer Verwaltungs Administrator**bezeichnet). Weitere Informationen finden Sie unter Informationen [zu Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
 

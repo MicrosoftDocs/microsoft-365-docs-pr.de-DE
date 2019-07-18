@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie sich Microsoft 365 für Kampagnen auf Ihre Benutzer auswirkt.
-ms.openlocfilehash: 9d70adab86eb7c8b7f1608de58c0652f84ec03a0
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183301"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772422"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
 
-Microsoft 365 für Kampagnen ist es für Hacker erheblich schwieriger, Zugriff auf Ihre Umgebung zu erhalten. Der Kompromiss besteht darin, dass Ihre Benutzer sich bewusst sein müssen, wie Sie in dieser sichereren Umgebung arbeiten. Wir verstehen, dass ein wenig zusätzliche Geduld erforderlich ist, aber es lohnt sich, Ihre Organisation zu schützen.
+Microsoft 365 für Kampagnen ist es für Hacker erheblich schwieriger, Zugriff auf Ihre Umgebung zu erhalten. Der Nachteil besteht darin, dass sich Ihre Benutzer bewusst sein müssen, wie Sie in dieser sichereren Umgebung arbeiten. Wir verstehen, dass ein wenig zusätzliche Geduld erforderlich ist, aber es lohnt sich, Ihre Organisation zu schützen.
 
 ![Abbildung, die wichtige Punkte von unten für iPhones, Android-Geräte, Macs, Windows 10, Freigabe und wichtige Mitarbeiter zusammenfasst](media/M365-democracy-Users_700px.png)
 
@@ -57,7 +57,7 @@ Außerdem ist es wichtig, dass die Benutzer Ihr primäres Arbeitsgerät auf dem 
 - Installieren Sie die neuesten Versionen von Office-Desktop-Apps, und lassen Sie diese mit Updates aktualisieren, wenn Sie dazu aufgefordert werden. 
 - Behalten Sie die Betriebssystemupdates wie Windows-Updates im Vordergrund.
 
-Bei [nicht verwalteten Windows 10-und Mac-Geräten](m365-campaigns-protect-pcs-macs.md)müssen Benutzer sicherstellen, dass die grundlegenden Sicherheitsfunktionen aktiviert sind.
+Bei [nicht verwalteten Windows 10-und Mac-Geräten](m365-campaigns-protect-pcs-macs.md)müssen die Benutzer dafür sorgen, dass die grundlegenden Sicherheitsfeatures aktiviert sind.
 
 **Aktivieren grundlegender Sicherheitsfunktionen auf BYOD Windows 10-und Mac-Geräten**
 
@@ -69,11 +69,11 @@ Bei [nicht verwalteten Windows 10-und Mac-Geräten](m365-campaigns-protect-pcs-m
 Weitere Informationen zu diesen Empfehlungen finden Sie unter [Protect Your Account and Devices from Hackers and Malware](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Zusammenarbeit mit Microsoft Teams, OneDrive, SharePoint Online und anderen Office 365 Tools
-Ihre Benutzer sind möglicherweise versucht, ihre Organisationsdateien an anderen Orten als Microsoft 365 freizugeben und zu speichern. Mit Microsoft 365 ist es so einfach wie möglich, die Zusammenarbeit und die sichere Freigabe sicherzustellen. Sie können [Dateien und Videos](share-files-and-videos.md) direkt in Microsoft Teams, OneDrive, Stream und sogar in einer Datei freigeben. Die Freigabe in diesen Tools trägt dazu bei, dass Ihre Daten nicht mehr auslaufen. Sie können auch zusätzlichen Schutz für vertrauliche Daten hinzufügen, um die Freigabe außerhalb Ihrer Organisation zu verhindern. 
+Ihre Benutzer sind möglicherweise versucht, ihre Organisationsdateien an anderen Orten als Microsoft 365 freizugeben und zu speichern. Mit Microsoft 365 ist es so einfach wie möglich, die Zusammenarbeit und die sichere Freigabe sicherzustellen. Sie können [Dateien und Videos](share-files-and-videos.md) direkt in Microsoft Teams, OneDrive, Stream und sogar in einer Datei freigeben. Die Freigabe in diesen Tools trägt dazu bei, dass Ihre Daten nicht mehr auslaufen. Sie können vertraulichen Daten zusätzlichen Schutz hinzufügen, um die Freigabe außerhalb Ihrer Organisation zu verhindern. 
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>Einrichten von verwalteten Windows 10-Geräten
-Wir empfehlen, dass die wichtigsten Mitarbeiter, die Sie neu erworbene Windows 10-Geräte verwenden, die Sie verwalten. In diesem Artikel erfahren Sie, wie Sie [diese Geräte verwalten und sichern](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)können. Dadurch wird sichergestellt, dass Mitarbeiter, die das höchste Wert Ziel für Hacker sind, den größtmöglichen Schutz erhalten. 
+Es wird empfohlen, dass Ihre wichtigsten Mitarbeiter frisch erworbene Windows 10-Geräte verwenden, die Sie verwalten. In diesem Artikel erfahren Sie, wie Sie [diese Geräte verwalten und sichern](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)können. Dadurch wird sichergestellt, dass Mitarbeiter, die das höchste Wert Ziel für Hacker sind, den größtmöglichen Schutz erhalten. 
 
 
 

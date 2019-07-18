@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie einen Bereich für die Zusammenarbeit für Ihr Team mit Microsoft Teams.
-ms.openlocfilehash: 0b0d0d968bcf1cec44fefabcde84fba6ddab3c63
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 18a28364b02b15af9d7d4c69c432ecd26d61b802
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183317"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772522"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Erstellen von Teams für die Zusammenarbeit in Microsoft Teams
 
@@ -36,11 +36,11 @@ Microsoft Teams ist eine Zusammenarbeits-APP, mit der Ihre Mitarbeiter organisie
 
 Kampagnen können beispielsweise die folgenden Teams zur sicheren Kommunikation und Zusammenarbeit erstellen:
 
-1. **Eine Kampagne führt ein Team** aus – diese Einstellung wird als privates Team eingerichtet, sodass nur die Mitglieder ihrer Hauptkampagne darauf zugreifen und potenziell vertrauliche Aspekte besprechen können.
-2. **Ein allgemeines kampagnenteam** – Dies gilt für jeden, der für tägliche Kommunikation und Arbeit verwendet werden soll. Einzelpersonen, Gruppen oder Ausschüsse können in diesem Team Kanäle für Ihre Arbeit einrichten. Beispielsweise können die Ereignis Planungsmitarbeiter einen Kanal zum chatten und koordinieren der Logistik für Kampagnenereignisse einrichten.
-3. **Ein Partnerteam** – eine, in dem Sie mit ihren Lieferanten, Partnern oder freiwilligen koordinieren können, ohne dass Sie vertraulich sind.
+1. **Ein Kampagnen Leads-Team:** Legen Sie diese Einstellung als privates Team fest, sodass nur die Mitglieder ihrer Hauptkampagne darauf zugreifen und potenziell vertrauliche Aspekte besprechen können.
+2. **Ein allgemeines kampagnenteam:** Dies gilt für jeden, der für die tägliche Kommunikation und Arbeit verwendet werden soll. Einzelpersonen, Gruppen oder Ausschüsse können in diesem Team Kanäle für Ihre Arbeit einrichten. Beispielsweise können die Ereignis Planungsmitarbeiter einen Kanal zum chatten und koordinieren der Logistik für Kampagnenereignisse einrichten.
+3. **Ein Partnerteam:** Hierbei handelt es sich um ein Team, in dem Sie sich mit ihren Lieferanten, Partnern oder freiwilligen koordinieren können, ohne vertrauliche Aktionen durch zuzulassen.
 
-Sie können auch Teams für bestimmte Projekte erstellen und den richtigen Schutzumfang anwenden, je nachdem, wer einbezogen werden muss. 
+Sie können auch Teams für bestimmte Projekte erstellen und die richtige Menge an Schutz anwenden, basierend darauf, wer einbezogen werden sollte. 
 
 ![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit zu ermöglichen](media/m365-democracy-teams-collab.png)
 
@@ -53,13 +53,13 @@ Wenn Sie ein Team erstellen, erfahren Sie hier, was else erstellt wird:
 - Bindung an andere Office 365-apps wie Planner und Power BI
 
 In Microsoft Teams können Sie Folgendes finden:
-1. **Teams** – Kanäle suchen, zu denen Sie gehören oder Ihre eigenen erstellen. Innerhalb von Kanälen können Sie Besprechungen vor Ort durchführen, Unterhaltungen haben und Dateien freigeben.
+1. **Teams:** Suchen Sie nach Kanälen, zu denen Sie gehören oder eigene erstellen möchten. Innerhalb von Kanälen können Sie Besprechungen vor Ort durchführen, Unterhaltungen haben und Dateien freigeben.
 
-2. **Besprechungen** – sehen Sie alles, was Sie für den Tag oder die Woche eingerichtet haben. Oder Planen einer Besprechung. Dieser Kalender wird mit Ihrem Outlook-Kalender synchronisiert.
+2. **Besprechungen:** Hier finden Sie alles, was Sie für einen Tag oder eine Woche eingerichtet haben. Oder Planen einer Besprechung. Dieser Kalender wird mit Ihrem Outlook-Kalender synchronisiert.
  
-3. **Anrufe** – in einigen Fällen können Sie bei der Einrichtung des Unternehmens jeder aus Microsoft Teams anrufen, auch wenn Microsoft Teams nicht verwendet werden.
+3. **Ruft:** In einigen Fällen können Sie, wenn Ihre Organisation Sie eingerichtet hat, jeder aus Microsoft Teams anrufen, selbst wenn Sie nicht Microsoft Teams verwenden.
 
-4. **Aktivität** – erfassen Sie alle ungelesenen Nachrichten, @Mentions, Antworten und vieles mehr. 
+4. **Aktivität:** Informieren Sie sich über alle ungelesenen Nachrichten, @Mentions, Antworten und vieles mehr. 
 
 Verwenden Sie das Befehlsfeld oben, um nach bestimmten Elementen oder Personen zu suchen, schnell Aktionen auszuführen und apps zu starten.
 

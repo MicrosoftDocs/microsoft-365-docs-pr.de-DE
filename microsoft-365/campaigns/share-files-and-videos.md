@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Freigeben von Dateien und Videos in Ihrer Kampagne mit Microsoft Teams und SharePoint..
-ms.openlocfilehash: bcc81b65661e113083705c6536f6de4d030a3de7
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: Freigeben von Dateien und Videos in Ihrer Kampagne mit Microsoft Teams und SharePoint.
+ms.openlocfilehash: c554ba2b4e7945cefa9a1e7114b3726efa58561e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080851"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772342"
 ---
 # <a name="share-files-and-videos"></a>Freigeben von Dateien und Videos
 
-Wenn Sie steuern müssen, wer welche Dateien anzeigen kann und wer Sie bearbeiten kann, müssen Sie die Dateien an einem sicheren Speicherort speichern, damit Sie sicherstellen können, dass die Berechtigungen ordnungsgemäß angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern und die Dateien dann entweder innerhalb oder außerhalb Ihrer Kampagne mit Microsoft Teams oder durch Senden von SharePoint-Links freizugeben. Wenn Sie einen Link anstelle einer e-Mail-Anlage senden, wissen Sie, wer die Dateien anzeigt und ändert, und Sie können ohne Ihre Berechtigung nicht angezeigt oder geändert werden. 
+Wenn Sie steuern müssen, wer welche Dateien anzeigen kann und wer Sie bearbeiten kann, müssen Sie die Dateien an einem sicheren Speicherort speichern, um sicherzustellen, dass die Berechtigungen ordnungsgemäß angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern und die Dateien dann entweder innerhalb oder außerhalb Ihrer Kampagne mit Microsoft Teams oder durch Senden von SharePoint-Links freizugeben. Wenn Sie einen Link anstelle einer e-Mail-Anlage senden, wissen Sie, wer die Dateien anzeigt und ändert, und Sie können ohne Ihre Berechtigung nicht angezeigt oder geändert werden. 
 
-![Diagramm eines Microsoft Teams-Fensters mit geöffneter Registerkarte "Dateien" und Link im Menü "abrufen"](media/m365-democracy-teams-sharefiles.png)
+![Diagramm eines Microsoft Teams-Fensters, das Register "Dateien" und "Get Link" im Menü anzeigen](media/m365-democracy-teams-sharefiles.png)
 
-Mit Ihren Dateien in Microsoft Teams und SharePoint können Sie die Dateien auch zusammen bearbeiten und sich gegenseitig die Änderungen ansehen. Verwenden von Microsoft Teams zum Freigeben von Dateien innerhalb einer politischen Kampagne können Sie dies mithilfe von Microsoft Teams tun. Wenn Sie extern für Personen außerhalb der Kampagne freigeben möchten, können Sie diese als Gäste zu einem Team hinzufügen oder Ihnen eine sichere SharePoint-Verknüpfung senden.
+Mit Ihren Dateien in Microsoft Teams und SharePoint können Sie die Dateien auch zusammen bearbeiten und sich gegenseitig die Änderungen ansehen. Verwenden Sie Microsoft Teams, um Dateien innerhalb einer politischen Kampagne freizugeben. Wenn Sie extern für Personen außerhalb der Kampagne freigeben möchten, können Sie diese als Gäste zu einem Team hinzufügen oder Ihnen eine sichere SharePoint-Verknüpfung senden.
 
 Sie können auch Microsoft Stream zum Speichern und Freigeben von Videos für Ihre Kampagne verwenden. Diese Videos sind für die Öffentlichkeit nicht sichtbar, daher eignen Sie sich ideal für interne Kampagnen Nachrichten.
 
