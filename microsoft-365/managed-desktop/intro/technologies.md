@@ -3,16 +3,16 @@ title: Microsoft Managed Desktop-Technologien
 description: In diesem Thema werden die Technologien und apps aufgeführt, die in Microsoft Managed Desktop verwendet werden.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9c0e6481d0dc80e7cf03de2b748935c2f59f132a
-ms.sourcegitcommit: e54ec86310a18101f4688890cd5a9fc16bbe6f55
+ms.openlocfilehash: 914a90b4267132c9cb942740ceb974b084bcdf82
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35257818"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778090"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft Managed Desktop-Technologien
 
@@ -31,7 +31,7 @@ Im folgenden sind alle Komponenten aufgeführt, die in den erforderlichen Enterp
 Office 365 Standard Suite (64bit) * | Die standardmäßige Office-Suite mit Anwendungen wird mit dem Gerät ausgeliefert: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>Die Vollversionen von Microsoft Project und Microsoft Visio von 64bit-Klick zum Ausführen (C2R) sind nicht in der Office 365 Standard Suite enthalten.  Da die Installation dieser Anwendungen jedoch von der standardmäßigen Office Suite-Installation abhängt, hat Microsoft Managed Desktop standardmäßige InTune-Bereitstellungen und Sicherheitsgruppen erstellt, die der Kunde zum Bereitstellen dieser Anwendungen verwenden wird, um lizenzierte Endbenutzer.  
 Store-Apps |    Microsoft Sway, Power BI Desktop werden nicht mit dem Gerät ausgeliefert. Diese apps stehen im Microsoft Store zum Download bereit.
 Win32-Anwendungen |    Power BI pro, Azure Information Protection-Client und Microsoft Planner werden nicht mit dem Gerät ausgeliefert und können für die Bereitstellung durch den Kunden verpackt werden. 
-Webanwendungen |  Jammern, Office Online, vertiefen, Durchfluss, StaffHub, PowerApps werden nicht mit dem Gerät ausgeliefert. Benutzer können über einen Browser auf die Webversion dieser Anwendungen zugreifen.
+Webanwendungen |  Jammern, Office in einem Browser, vertiefen, fließen, StaffHub, PowerApps werden nicht mit dem Gerät ausgeliefert. Benutzer können über einen Browser auf die Webversion dieser Anwendungen zugreifen.
 Skype for Business Online Cloud-PBX | Dieses Feature steht über Office 365 zur Verfügung. Von Microsoft Managed Desktop werden keine Aspekte dieses Diensts konfiguriert.
 
 ## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
@@ -42,7 +42,7 @@ Schutz von Anmeldeinformationen |  Microsoft stellt Anleitungen bereit und verwa
 Application Virtualization (App-V) |    Diese Art der Bereitstellung wird von Microsoft Managed Desktop nicht unterstützt, da Sie in InTune nicht unterstützt wird.
 User Experience Virtualization (UE-V) | Dies wird nicht für verwaltete Microsoft Managed Desktop-Geräte verwendet.
 Verwaltete Benutzeroberfläche  | Dies wird nicht für verwaltete Microsoft Managed Desktop-Geräte verwendet. MDM wird als Lösung für die Geräteverwaltung verwendet.
-Windows Defender Advanced Threat Protection |   Dieser wird von Microsoft Managed Desktop zum Verwalten von Gerätesicherheitsrichtlinien verwendet. 
+Erweiterter Bedrohungsschutz von Microsoft Defender | Dieser wird von Microsoft Managed Desktop zum Verwalten von Gerätesicherheitsrichtlinien verwendet. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Sicherheit E5
 

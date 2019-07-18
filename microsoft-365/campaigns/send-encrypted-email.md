@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie, wie Sie verschlüsselte e-Mails mit Outlook senden.
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772322"
+ms.locfileid: "35778140"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Verschlüsseln oder bezeichnen von vertraulichen e-Mails
 
@@ -60,7 +60,7 @@ Sie erstellen Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten 
 
 1. Melden Sie sich in einem Webbrowser mit einem Arbeits-oder Schulkonto, dem globale Administratorberechtigungen erteilt wurden, bei Office 365 an. 
 2. Wählen Sie die Kachel admin aus. 
-3. Wählen Sie im Office 365 Admin Center die Option admin Centers **#a0 Exchange**aus. 
+3. Wählen Sie im Admin Center die Option admin Centers **#a0 Exchange**aus. 
 
 Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
