@@ -1,4 +1,0 @@
-<span data-ttu-id="cfaa1-101">--Title: Microsoft Managed Desktop Reference Description: detaillierte Informationen zu bestimmten Microsoft Managed Desktop-Features Stichwörter: Microsoft Managed Desktop, Microsoft 365, Service, Dokumentation ms. Service: m365-MD Author: jaimeo ms. localizationpriority: normal</span><span class="sxs-lookup"><span data-stu-id="cfaa1-101">-- title: Microsoft Managed Desktop reference description: Detailed information on certain Microsoft Managed Desktop features keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation ms.service: m365-md author: jaimeo ms.localizationpriority: normal</span></span>
----
-
-# <a name="microsoft-managed-desktop-reference"></a><span data-ttu-id="cfaa1-102">Referenz zu Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="cfaa1-102">Microsoft Managed Desktop reference</span></span>
