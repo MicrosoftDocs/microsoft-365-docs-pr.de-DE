@@ -1,47 +1,47 @@
 ---
-title: Unterstützung für Microsoft Managed Desktop
+title: Erhalten der Unterstützung für Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a073a5dfe61b036cbdc3bf9b0be08bc559acb548
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 1e98ef5a7c800ed3fb7fe1b7355e535ed3576c1e
+ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970472"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853164"
 ---
-# <a name="getting-help-for-end-users"></a>Hilfe für Endbenutzer
+# <a name="getting-help-for-end-users"></a>Aufrufen von Hilfe für Endbenutzer
 
-Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Hilfe zu Ihren Microsoft Managed Desktop-Geräten erhalten: **Hilfe** -APP oder Telefon-Support. Beide Supportoptionen stehen Benutzern 24 Stunden am Tag, 7 Tage die Woche zur Verfügung. 
+Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung für Ihre Microsoft Managed Desktop-Geräte erhalten können: **Abrufen der Hilfe** -APP oder Telefonsupport. Beide Supportoptionen stehen Benutzern 24 Stunden am Tag, 7 Tage die Woche zur Verfügung. 
 >[!NOTE]
 >Geräte, die sich in der Testgruppe befinden, liegen außerhalb des Bereichs für diese Endbenutzer-Supportoptionen. 
 
 ## <a name="get-help-app"></a>Hilfe-App abrufen
 
-Die bevorzugte Methode für die Unterstützung Ihrer Benutzer ist die **Hilfe**, eine benutzerfreundliche Oberfläche, die auf dem endbenutzergerät integriert ist.  
+Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine einfach zu bedienende Oberfläche, die in das endbenutzergerät integriert ist.  
 
 ![Hilfe erhalten](images/get-help.png)
 
-Hierbei handelt es sich um eine Anwendung, die auf allen verwalteten Desktop Geräten von Microsoft installiert ist und in der Taskleiste angeheftet ist. 
+Hierbei handelt es sich um eine Anwendung, die auf allen von Microsoft verwalteten Desktop Geräten installiert ist und an der Taskleiste fixiert ist. 
 
-- Endbenutzer können einen Anruf zurück zu einer bereitgestellten Telefonnummer anfordern oder online mit einem Servicemitarbeiter chatten.
-- Anforderungen, die außerhalb des Bereichs des Microsoft Managed Desktop-Supports liegen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.  
+- Endbenutzer können einen Rückruf an eine bereitgestellte Telefonnummer anfordern oder online mit einem Dienstmitarbeiter chatten.
+- Anforderungen, die außerhalb des Bereichs Microsoft Managed Desktop Support fallen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.  
 
 ## <a name="phone-support"></a>Telefonunterstützung
 
-Endbenutzer mit Microsoft Managed Desktop-Geräten haben auch Zugriff auf gebührenfreie Telefonnummern, die Sie anrufen können. Dies soll verwendet werden, wenn keine Hilfe verfügbar ist. Beispielsweise, wenn Sie sich nicht beim Gerät anmelden können oder das Gerät beschädigt ist. Hier sind die Telefonnummern für den Telefonsupport:
+Endbenutzer mit von Microsoft verwalteten Desktop Geräten haben auch Zugriff auf gebührenfreie Telefonnummern, die Sie anrufen können. Diese sollte verwendet werden, wenn Get Help nicht verfügbar ist. Beispielsweise, wenn Sie sich nicht am Gerät anmelden können oder das Gerät beschädigt ist. Hier sind die Telefonnummern für den Telefonsupport:
 
-- USA: + 1 855 425 0216
-- Kanada (außer Quebec): + 1 855 425 0216
+- Vereinigte Staaten: + 1 855 425 0216
+- Kanada (ohne Quebec): + 1 855 425 0216
 - Vereinigtes Königreich: + 44 800 026 0698
 - Australien: + 61 180 037 0619
 
 >[!NOTE]
->Halten Sie die Seriennummer Ihres Geräts bereit, wenn Sie anrufen. 
+>Stellen Sie bitte Ihre organisatorische e-Mail-Adresse zur Verfügung, wenn Sie anrufen, um Ihre Identität zu verifizieren. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
