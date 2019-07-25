@@ -13,14 +13,72 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Übersicht über das Bereitstellungscenter für den Desktop.
-ms.openlocfilehash: 659ea39fc4ccd1c06d79c8a5c39ff2c4e85ba9ce
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: b19c2f5df6368fd6066b6506a17ed81ddf57f8c6
+ms.sourcegitcommit: 275d5c2d74e55ef6488594165367b02e735dc540
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814646"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834028"
 ---
-# <a name="desktop-deployment-center"></a>Bereitstellungscenter für Desktop
+# <a name="desktop-deployment-center"></a>Bereitstellungscenter für modernen Desktop
+
+<table border="0">
+ <tr>
+ <td>
+  <strong>Upgrade von Windows 7 zu Windows 10 </strong><p>Der erweiterte Support für Windows 7 endet am 14. Januar 2020. Ein direktes Upgrade von Windows 7 zu Windows 10 ist die schnellste Methode der Bereitstellung. Sie können <a href="https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mit System Center Configuration Manager ein Upgrade auf einem einzelnen PC</a> oder <a href="https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Tausenden von PCs durchführen</a>. Sie müssen sich bei direkten Upgrades nicht auf die App-Bereitstellung, Dateimigration, benutzerdefinierte Imageerstellung oder Aktivierung von Cloud-basierten Diensten konzentrieren. Sie können Tools verwenden, die Sie bereits für das Upgraden vorhandener PCs besitzen, und sich auf die folgenden Bereitstellungsschritte für Upgrades konzentrieren: </td>
+ </tr>
+ <tr>
+ <td>
+    <table border="0">
+     <tr>
+     <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
+              </td>
+              <td>
+              <strong>Upgrade von ConfigMgr zu Current Branch</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
+              </td>
+              <td>
+              <strong>Validieren der Geräte- und App-Bereitschaft</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
+              </td>
+              <td>
+              <strong>Upgrade von PCs mit Windows 7 zu Windows 10</strong>
+                  </td>
+                 </tr>
+                </table>
+        </td>
+        </tr>
+    </td>
+    </tr>
+    <tr>
+    <td>
+Bestandteil des Schritts „Verzeichnis- und Netzwerkbereitschaft“ für Organisationen, die SCCM verwenden </td>
+    <td>
+Bestandteil des Schritts „Geräte-und App-Bereitschaft“; Hilfe ist über Desktop App Assure verfügbar </td>
+    <td>
+Teil des Schritts „BS-Bereitstellung und Funktionsupdates“ für vom Benutzer gesicherte PCs </td>
+    </tr>
+</table>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
