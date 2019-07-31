@@ -3,24 +3,24 @@ title: Übersicht zu Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2019
-ms.audience: ITPro
+ms.date: 07/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553334"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937421"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Übersicht zu Microsoft 365 Enterprise
 
-Microsoft 365 Enterprise ist eine vollständige, intelligente Lösung, die es jedem ermöglicht, kreativ zu sein und sicher zusammenzuarbeiten. 
+Microsoft 365 Enterprise ist eine vollständige, intelligente Lösung, die es allen ermöglicht, kreativ zu sein und sicher zusammenzuarbeiten. 
 
 Obwohl für große Organisationen entwickelt, kann Microsoft 365 Enterprise auch für mittelständische und kleine Unternehmen verwendet werden, die die fortschrittlichsten Sicherheits-und Produktivitätsfunktionen benötigen. 
 
@@ -30,9 +30,9 @@ Microsoft 365 Enterprise besteht aus:
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | Enthält sowohl Office 365 ProPlus, die neuesten Office-Apps für Ihren PC und Mac (wie Word, Excel, PowerPoint, Outlook und andere), als auch eine umfassende Palette von Onlinediensten für e-Mails, Dateispeicherung und Zusammenarbeit, Besprechungen und vieles mehr. |
-| Windows 10 Enterprise | Richtet die Anforderungen von großen und mittelständischen Unternehmen aus und bietet Benutzern die produktivste und sicherste Version von Windows-und IT-Experten mit umfassender Bereitstellung, Geräte-und App-Verwaltung. |
-| Enterprise Mobility + Security (EMS) | Enthält Microsoft InTune, ein Cloud-basierter Enterprise Mobility Management (EMM)-Dienst, der es Ihnen ermöglicht, Ihre Mitarbeiter produktiv zu machen und gleichzeitig Ihre Unternehmensdaten zu schützen. |
+| Lokale und Cloud-basierte apps und Produktivitätsdienste | Umfasst sowohl Office 365 ProPlus, die neuesten Office-Apps für Ihren PC und Mac (wie Word, Excel, PowerPoint, Outlook und andere), als auch eine vollständige Sammlung von Onlinediensten für e-Mail, Dateispeicherung und Zusammenarbeit, Besprechungen und vieles mehr. |
+| Windows 10 Enterprise | Erfüllt die Anforderungen von Groß-und mittelständischen Organisationen und stellt Benutzern die produktivste und sichere Version von Windows-und IT-Experten mit umfassender Bereitstellung, Geräte-und App-Verwaltung zur Verfügung. |
+| Geräteverwaltung und erweiterte Sicherheitsdienste | Umfasst Microsoft InTune, ein Cloud-basierter Dienst für die Enterprise Mobility-Verwaltung (EMM), mit dem Ihre Mitarbeiter produktiv arbeiten und Ihre Unternehmensdaten geschützt werden können. |
 |||
 
 ## <a name="plans"></a>Pläne
@@ -41,22 +41,29 @@ Microsoft 365 Enterprise ist in drei Plänen verfügbar.
 
 |||
 |:-------|:-----|
-| E3 | Umfasst Office 365 Enterprise, Windows 10 Enterprise und Enterprise Mobility + Security (EMS). |
-| E5 | Enthält alle E3's-Funktionen sowie erweiterte Sicherheits-, VoIP-und Datenanalysetools. |
-| F1 | Zweckmäßige Verbindung zwischen Mitarbeitern von First und den Tools und Ressourcen, die für eine optimale Arbeit erforderlich sind. Die ersten Mitarbeiter sind die ersten, die sich mit ihren Kunden beschäftigen und die Marke und den Wert Ihres Unternehmens vertreten. |
+| E3 | Greifen Sie auf Kernprodukte und-Features in Microsoft 365 zu, um die Produktivität am Arbeitsplatz zu verbessern und Innovationen sicher zu fördern. |
+| E5 | Greifen Sie auf die neuesten Produkte und Features in Microsoft 365, einschließlich Advanced Threat Protection, Security and Collaboration Tools, zu.. Umfasst alle E3's-Funktionen sowie erweiterte Sicherheits-, sprach-und Datenanalysetools. |
+| F1 | Stellen Sie eine Verbindung mit ihren First-Workern über speziell entwickelte Tools und Ressourcen her, mit denen Sie Ihre besten Aufgaben erledigen können. |
 |||
 
-Weitere Informationen finden Sie unter [Features and capabilities for each Plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Wenn Sie Microsoft 365 Enteprise E3 haben, können Sie auch diese [Angebote](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)erhalten:
+
+- Identitäts #a0 Bedrohungsschutz
+- Informationsschutz #a0 Compliance
+
+Diese Angebote enthalten zusätzliche Features, die in Microsoft 365 Enterprise E5 enthalten sind.
+
+Weitere Informationen finden Sie unter [Features und Funktionen für jeden Plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
 ## <a name="at-a-glance"></a>Auf einen Blick
 
-Das [Microsoft 365 Enterprise-Poster](http://aka.ms/m365eposter) ist eine zentrale Stelle, die Sie anzeigen können:
+Das [Microsoft 365 Enterprise-Poster](http://aka.ms/m365eposter) ist ein zentraler Ort, an dem Sie Folgendes anzeigen können:
 
-- Die Produkte und Features von Microsoft 365 Enterprise und ihre Zuordnung zu den Wert Pfeilern
-- Microsoft 365 Enterprise-Pläne und die enthaltenen Komponenten 
+- Die Vorteile von Microsoft 365 Enterprise und deren Zuordnung zu den Wert Pfeilern
+- Microsoft 365 Enterprise-Pläne und die darin enthaltenen Komponenten 
 - Die wichtigsten Komponenten des modernen Arbeitsplatzes, die Microsoft 365 Enterprise ermöglicht
-- Die wichtigsten Geschäftswert Szenarien von Microsoft 365 Enterprise und welche Dienste und Produkte diese ermöglichen
-- Die Adoptions-Roadmap, die das Microsoft 365 Enterprise [-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) hervorhebt
+- Die wichtigsten Geschäftswert Szenarien von Microsoft 365 Enterprise und welche Dienste und Produkte machen diese möglich
+- Der Einführungs Fahrplan zur Hervorhebung des Microsoft 365 Enterprise [-Bereitstellungs](deploy-microsoft-365-enterprise.md) Handbuchs
 
 ![](./media/m365-poster/m365e-poster.png)
 
@@ -66,17 +73,17 @@ Klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publi
 
 Es gibt drei Möglichkeiten, die Produkte, Features und Komponenten von Microsoft 365 Enterprise bereitzustellen:
 
-1. In Partnerschaft mit "Kurzarbeit"
+1. In Partnerschaft mit dem Kurzarbeits-
   
-   Mit der schnell Hilfe helfen Ihnen Microsoft-Ingenieure bei der Umstellung auf die Cloud. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   Mit dem Kurztext helfen Ihnen Microsoft-Ingenieure, in Ihrem eigenen Tempo in die Cloud zu gelangen. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Mithilfe von Microsoft Consulting Services oder einem Microsoft- [Partner](https://partner.microsoft.com/).
+2. Mithilfe von Microsoft Consulting Services oder eines Microsoft- [Partners](https://partner.microsoft.com/).
 
-   Berater können Ihre aktuelle Infrastruktur analysieren und einen Plan für die Integration aller Software und Dienste von Microsoft 365 Enterprise unterstützen.
+   Berater können Ihre aktuelle Infrastruktur analysieren und Ihnen helfen, einen Plan für die Integration aller Software und Dienste von Microsoft 365 Enterprise zu entwickeln.
 
 3. Selbst ausführen
 
-   Das [Microsoft 365 Enterprise-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) führt Sie Schritt für Schritt durch die Erstellung von Infrastruktur-und Produktivitäts Arbeitsauslastungen. 
+   Das [Microsoft 365 Enterprise-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) führt Sie Schritt für Schritt durch die Entwicklung der Infrastruktur-und Produktivitäts Arbeitslasten. 
 
 Weitere Informationen zur Bereitstellung finden Sie unter How:
 
@@ -96,18 +103,19 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
  
-  Ermächtigen Sie die Zusammenarbeit der öffentlichen Mitarbeiter in den USA.
+  Bevollmächtigen Sie die Mitarbeiter des öffentlichen Sektors für die Zusammenarbeit, sicher.
 
 ## <a name="microsoft-365-training"></a>Microsoft 365-Schulung
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| Machen Sie sich selbst geschult und arbeiten Sie an einer Microsoft 365-Zertifizierung. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![](./media/m365-poster/m365-fundamentals.svg)| Lassen Sie sich selbst geschult und auf eine Microsoft 365-Zertifizierung hinarbeiten. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+|||
 
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie die Bereitstellung selbst durchführen, starten Sie Ihre [Microsoft 365 Enterprise-Bereitstellungs Reise](deploy-microsoft-365-enterprise.md).
+Wenn Sie die Bereitstellung selbst ausführen, starten Sie die [Microsoft 365 Enterprise-Bereitstellungs Reise](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Siehe auch
 
