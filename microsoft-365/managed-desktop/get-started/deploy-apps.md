@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
+ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390422"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36059585"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Bereitstellen von apps auf Microsoft Managed Desktop-Geräten
 Ein Teil des onboardings für Microsoft Managed Desktop umfasst das Hinzufügen und Bereitstellen von apps auf den Geräten Ihrer Benutzer. Nachdem Sie das Microsoft Managed Desktop Portal verwendet haben, können Sie Ihre apps hinzufügen und bereitstellen. 
@@ -41,9 +41,9 @@ Sie können sich bei Microsoft Managed Desktop Portal anmelden oder sich bei InT
 1.  Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mmdportal)an. 
 2.  Wählen Sie unter **Inventar**die Option **apps**aus.
 3.  Wählen Sie in der Arbeitsauslastung von apps die Option **Hinzufügen**aus.
-4.  Wählen Sie unter **app hinzufügen**die Option **Branchen-App** oder **Windows-app (Win32) – Vorschau**aus.
+4.  Wählen Sie unter **app hinzufügen**die Option **Branchen-App** oder **Windows-app (Win32)** aus.
     - Wenn Sie die Branchen **-App**ausgewählt haben, finden Sie unter [Hinzufügen einer Windows-Branchen-APP zu Microsoft InTune](https://docs.microsoft.com/intune/lob-apps-windows) Anweisungen zum Hinzufügen und Konfigurieren von Branchen-apps.
-    - Wenn Sie **Windows-app (Win32)-Preview**ausgewählt haben, finden Sie unter [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) Anweisungen zum Hinzufügen und Konfigurieren von Windows-apps.
+    - Wenn Sie **Windows-app (Win32)** ausgewählt haben, finden Sie unter [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) Anweisungen zum Hinzufügen und Konfigurieren von Windows-apps.
 
 <span id="msfb-apps">
 
