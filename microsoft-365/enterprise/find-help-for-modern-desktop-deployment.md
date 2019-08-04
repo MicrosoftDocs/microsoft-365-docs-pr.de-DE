@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 11/20/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wo Sie Hilfe und Support zur Bereitstellung von Windows 10 und Office 365 ProPlus finden.
-ms.openlocfilehash: b1700e5ff1ec6475f11120e036e01c056dd6a15c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7e8bd661d1698decaee1e9a61332316589fd3e9b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073905"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Hilfe zur Bereitstellung von Windows 10 und Office 365 ProPlus 
 
@@ -43,7 +43,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Verzeichnis- und Netzwerkbereitschaft</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#core">Haupt-Onboarding</a>: FastTrack-Spezialisten von Microsoft stellen eine Identitätsintegration zwischen Ihren aktuellen Verzeichnisdiensten und Azure Active Directory bereit. Dies ist im Rahmen der Desktopbereitstellung für Office 365 ProPlus, Microsoft Intune, OneDrive und andere Office 365- und EMS-Cloud-Dienste erforderlich.</p></li>
+  <a href="https://docs.microsoft.com/de-DE/fasttrack/o365-onboarding-and-migration#core">Haupt-Onboarding</a>: FastTrack-Spezialisten von Microsoft stellen eine Identitätsintegration zwischen Ihren aktuellen Verzeichnisdiensten und Azure Active Directory bereit. Dies ist im Rahmen der Desktopbereitstellung für Office 365 ProPlus, Microsoft Intune, OneDrive und andere Office 365- und EMS-Cloud-Dienste erforderlich.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -51,7 +51,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Liefern von Office- und Branchen-Apps</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>-Konfiguration und -Bereitstellung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen, bei der Konfiguration der Installation, beim Aktualisieren der Einstellungen für Klick-und-Los und beim Erstellen von Paketen bereitstellen, wenn Ihre Organisation System Center Configuration Manager verwendet.</p></li>
+  <a href="https://docs.microsoft.com/de-DE/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>-Konfiguration und -Bereitstellung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen, bei der Konfiguration der Installation, beim Aktualisieren der Einstellungen für Klick-und-Los und beim Erstellen von Paketen bereitstellen, wenn Ihre Organisation System Center Configuration Manager verwendet.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -59,7 +59,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Migration von Benutzerdateien und -einstellungen</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#onedrive-for-business">OneDrive</a>-Konfiguration und -Implementierung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen und bei der Konfiguration der Einstellungen des OneDrive-Synchronisierungsclients bereitstellen. Für Organisationen mit berechtigten Abonnements <a href="https://docs.microsoft.com/en-us/fasttrack/data-migration">migriert FastTrack Daten nach OneDrive</a>.</p></li>
+  <a href="https://docs.microsoft.com/de-DE/fasttrack/o365-onboarding-and-migration#onedrive-for-business">OneDrive</a>-Konfiguration und -Implementierung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen und bei der Konfiguration der Einstellungen des OneDrive-Synchronisierungsclients bereitstellen. Für Organisationen mit berechtigten Abonnements <a href="https://docs.microsoft.com/de-DE/fasttrack/data-migration">migriert FastTrack Daten nach OneDrive</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Überlegungen zu Sicherheit und Compliance</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure Active Directory Premium</a>: FastTrack-Spezialisten von Microsoft geben Hilfestellung beim Aktivieren von Diensten zur Verbesserung der Schutzebenen für Ihre Sicherheit und Informationen, wenn Sie Microsoft 365 einführen. Die Dienste umfassen Azure Multi-Factor Authentication, Self-Service-Kennwortzurücksetzung, bedingten Azure Active Directory-Zugriff und vieles mehr. Für die Sicherheit von Geräten und Endpunkten kann Microsoft FastTrack auch bei der <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>-Bereitstellung und bei Richtlinien behilflich sein.</p></li>
+  <a href="https://docs.microsoft.com/de-DE/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure Active Directory Premium</a>: FastTrack-Spezialisten von Microsoft geben Hilfestellung beim Aktivieren von Diensten zur Verbesserung der Schutzebenen für Ihre Sicherheit und Informationen, wenn Sie Microsoft 365 einführen. Die Dienste umfassen Azure Multi-Factor Authentication, Self-Service-Kennwortzurücksetzung, bedingten Azure Active Directory-Zugriff und vieles mehr. Für die Sicherheit von Geräten und Endpunkten kann Microsoft FastTrack auch bei der <a href="https://docs.microsoft.com/de-DE/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>-Bereitstellung und bei Richtlinien behilflich sein.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -75,7 +75,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Bereitstellung des Betriebssystems und Featureupdates</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung bei der Bereitstellung von Benutzerlizenzen und bei der Konfiguration von Windows Autopilot für neue Geräte, MDM-Richtlinien für Windows 10 und andere Mobilgeräte, einschließlich App-Bereitstellung, Wi-Fi und VPN-Profilen, gemeinsamer Verwaltung mit System Center Configuration Manager und mehr.</p></li>
+  <a href="https://docs.microsoft.com/de-DE/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung bei der Bereitstellung von Benutzerlizenzen und bei der Konfiguration von Windows Autopilot für neue Geräte, MDM-Richtlinien für Windows 10 und andere Mobilgeräte, einschließlich App-Bereitstellung, Wi-Fi und VPN-Profilen, gemeinsamer Verwaltung mit System Center Configuration Manager und mehr.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Office und Windows as a Service</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung beim Konfigurieren von Updaterichtlinien für Windows 10 und Office 365 ProPlus. <a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>: Microsoft FastTrack kann auch Unterstützung beim Einrichten von Bereitstellungsringen bereitstellen, um auf dem aktuellen Stand zu bleiben.</p></li>
+  <a href="https://docs.microsoft.com/de-DE/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung beim Konfigurieren von Updaterichtlinien für Windows 10 und Office 365 ProPlus. <a href="https://docs.microsoft.com/de-DE/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>: Microsoft FastTrack kann auch Unterstützung beim Einrichten von Bereitstellungsringen bereitstellen, um auf dem aktuellen Stand zu bleiben.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

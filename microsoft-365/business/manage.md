@@ -3,7 +3,7 @@ title: Verwalten von Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,29 +17,29 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Hier erfahren Sie, wie Sie Microsoft 365 geschäftsbezogene Verwaltungsaufgaben, Mobile Geräte, Windows 10ST und viele solcher Aufgaben verwalten können.
-ms.openlocfilehash: 0d0f9292307144314d25f712867cf1caa7cdd0ff
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+description: Erfahren Sie mehr über die Verwaltung von Microsoft 365 geschäftsbezogenen Verwaltungsaufgaben, mobilen Geräten, Windows 10ST und vielen solchen Aufgaben.
+ms.openlocfilehash: 8cae8f580b8967eeafe8a22658fd95d41f22a43c
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074238"
 ---
 # <a name="manage-microsoft-365-business"></a>Verwalten von Microsoft 365 Business
 
-## <a name="general-microsoft-365-business-admin-tasks"></a>Allgemeine Microsoft 365 Business Admin-Aufgaben
+## <a name="general-microsoft-365-business-admin-tasks"></a>Allgemeine Microsoft 365-Geschäfts Administratoraufgaben
 
-Der größte Teil des [Administrator Inhalts](/Office365/Admin/admin-home.md) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
+Der Großteil der [Administrator Inhalte](/Office365/Admin/admin-home.md) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
 
 - [Hinzufügen weiterer Benutzer zu Microsoft 365 Business](add-users-m365b.md)
     
 - [Anzeigen von Richtlinien und Geräten](view-policies-and-devices.md)
     
-- [Microsoft 365 Business-Sicherheitsfeatures](security-features.md)
+- [Microsoft 365-Geschäfts Sicherheitsfeatures](security-features.md)
     
-- [Funktionsweise von Schutzfunktionen in Microsoft 365 Business Map zu InTune-Einstellungen](map-protection-features-to-intune-settings.md)
+- [Vorgehensweise Zuordnen von Schutzfunktionen in Microsoft 365 Business zu InTune-Einstellungen](map-protection-features-to-intune-settings.md)
     
-In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microsoft 365 Business, um die Daten Ihrer Organisation auf PCs und mobilen Geräten zu schützen.
+In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microsoft 365 Business zum Schutz der Daten Ihrer Organisation auf PCs und mobilen Geräten.
   
 ## <a name="manage-mobile-devices"></a>Verwalten von mobilen Geräten
 
@@ -47,7 +47,7 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
     
 - [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](app-protection-settings-for-android-and-ios.md)
     
-    Weitere Informationen finden Sie unter [Validieren von App-Schutzeinstellungen auf einem Android-oder IOS-Gerät](validate-settings-on-android-or-ios.md) . 
+    Weitere Informationen finden Sie unter [Validieren von App-Schutzeinstellungen auf einem Android-oder IOS-Gerät](validate-settings-on-android-or-ios.md) , um sicherzustellen, dass dies funktioniert 
     
 - [Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
     
@@ -57,25 +57,25 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
     
 - [Automatisches Installieren oder Deinstallieren von Office auf Windows 10-Geräten](auto-install-or-uninstall-office.md)
     
-    Lesen Sie [Prepare for Office Client Deployment by Microsoft 365 Business vor der](prepare-for-office-client-deployment.md) automatischen Installation von Office. 
+    Lesen Sie [vorbereiten für die Office-Clientbereitstellung von Microsoft 365 Business](prepare-for-office-client-deployment.md) , bevor Sie Office automatisch installieren. 
     
 - [Festlegen von Geräteschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-pcs.md)
     
-    Weitere Informationen finden Sie unter [Validieren von Geräteschutz Einstellungen auf Windows 10-Geräten](validate-settings-on-windows-10-pcs.md) . 
+    Weitere Informationen finden Sie unter [Validieren von Geräteschutz Einstellungen auf Windows 10-Geräten](validate-settings-on-windows-10-pcs.md) , um sicherzustellen, dass dies funktioniert. 
     
 - [Festlegen von Anwendungsschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
     
-    Weitere Informationen finden Sie unter [Validieren von App-Schutzeinstellungen auf Windows 10-PCs](validate-protection-settings-on-windows-10-pcs.md) . 
+    Siehe [Validieren von App-Schutzeinstellungen auf Windows 10-PCs](validate-protection-settings-on-windows-10-pcs.md) , um sicherzustellen, dass dies funktioniert. 
     
 - [Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
     
 - [Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen](reset-devices-to-factory-settings.md)
     
-### <a name="use-autopilot-to-deploy-windows-10-devices"></a>Verwenden von Autopilot für die Bereitstellung von Windows 10-Geräten
+### <a name="use-autopilot-to-deploy-windows-10-devices"></a>Verwenden von Autopilot zur Bereitstellung von Windows 10-Geräten
 
-In den folgenden Themen wird beschrieben, wie Sie Windows Autopilot in Microsoft 365 Business zum Vorkonfigurieren von Windows 10-Geräten verwenden können.
+In den folgenden Themen wird beschrieben, wie Sie Windows 10-Geräte mit Windows Autopilot in Microsoft 365 Business vorab konfigurieren können.
   
-- [Verwenden der schrittweisen Anleitung zum Hinzufügen von Autopilot-Geräten und-Profil](add-autopilot-devices-and-profile.md)
+- [Verwenden Sie die Schritt-für-Schritt-Anleitung zum Hinzufügen von Autopilot-Geräten und-Profil](add-autopilot-devices-and-profile.md)
     
 - [Erstellen und Bearbeiten von Autopilot-Profilen](create-and-edit-autopilot-profiles.md)
     
@@ -87,7 +87,7 @@ In den folgenden Themen wird beschrieben, wie Sie Windows Autopilot in Microsoft
     
 - [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>Einrichten und vorab erforderliche Informationen
+## <a name="set-up-and-pre-requisite-information"></a>Einrichten und Voraussetzungen für Informationen
 
 - [Voraussetzungen zum Schutz von Daten auf Geräten mit Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
@@ -95,9 +95,9 @@ In den folgenden Themen wird beschrieben, wie Sie Windows Autopilot in Microsoft
     
 - [Migrieren zu Microsoft 365 Business](migrate-to-microsoft-365-business.md)
     
-- [Aktivieren von Domänenbeitritt zu Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden](manage-windows-devices.md)
+- [Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden](manage-windows-devices.md)
     
-[Zusätzliche Sicherheitsfunktionen](security-features.md#additional-security-features)
+[Zusätzliche Sicherheitsfeatures](security-features.md#additional-security-features)
     
 
   

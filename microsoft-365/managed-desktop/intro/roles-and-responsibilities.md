@@ -3,16 +3,16 @@ title: Rollen und Verantwortlichkeiten von Microsoft Managed Desktops
 description: In diesem Thema werden die Rollen und Verantwortlichkeiten beschrieben, die von Microsoft für Microsoft Managed Desktop bereitgestellt werden.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a51738b993a8a3683769d10882877b3b42d34ddf
-ms.sourcegitcommit: 7edeea1311ebb79a8c72418d2c6451b94fb788cb
+ms.openlocfilehash: 9eedd9b6ca9995595c75044b7877ed6eaca21127
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35061848"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425689"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Rollen und Verantwortlichkeiten von Microsoft Managed Desktops
 
@@ -31,7 +31,7 @@ Rolle oder Verantwortung | Beschreibung
 MDM-Richtlinienverwaltung | Microsoft wendet MDM-Richtlinien entsprechend den bewährten Methoden an und prüft die Anforderungen für Richtlinienänderungen. Wir nehmen auch Änderungen an Ihrem Mandanten vor, die in [Geräterichtlinien](../service-description/device-policies.md)vorgeschrieben sind.
 Unterstützung für Endbenutzer | Microsoft stellt Endbenutzer Unterstützung für Geräte, Windows und Office-Produktsuite für alle registrierten Benutzer über die Get-Hilfe-App bereit, die auf allen von Microsoft verwalteten Desktop Geräten vorinstalliert ist. 
 Unterstützung für den Microsoft Managed Desktop-Dienst | Microsoft unterstützt Kunden-IT-Abteilungen über ein Microsoft Managed Desktop Operations-Team. Dieses Team unterstützt technische Problembehandlung, Änderungsanforderungen und Incident Management für die von Microsoft verwaltete Desktop Umgebung des Kunden. Weitere Informationen finden Sie unter [Administrator Unterstützung für Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
-Sicherheitsüberwachung | Microsoft überwacht die von Microsoft verwalteten Desktop Geräte von Kunden mit Windows Defender ATP. Wenn eine Bedrohung durch das Microsoft Managed Desktop Security Operations Center (SoC) erkannt wird, wird Microsoft den Kunden Benachrichtigen, das Gerät isolieren und das Problem Remote beheben. Weitere Informationen finden Sie unter [Security](../service-description/security.md).
+Sicherheitsüberwachung | Microsoft überwacht Kunden von Microsoft verwaltete Desktop Geräte mit Microsoft Defender ATP. Wenn eine Bedrohung durch das Microsoft Managed Desktop Security Operations Center (SoC) erkannt wird, wird Microsoft den Kunden Benachrichtigen, das Gerät isolieren und das Problem Remote beheben. Weitere Informationen finden Sie unter [Security](../service-description/security.md).
 Update Überwachung und-Verwaltung | Microsoft überwacht aktiv die von Microsoft verwalteten Desktop Geräte von Kunden, um sicherzustellen, dass die neuesten Qualitäts-und Funktionsupdates für Microsoft Windows und Microsoft Office installiert sind. Weitere Informationen finden Sie unter [How Updates are Handling](../service-description/updates.md).
 Benutzer-und Geräte Gruppierung | Das Microsoft Managed Desktop Operations-Team erstellt und verwaltet die erforderlichen Geräte-und Benutzergruppen im Rahmen des IT-Betriebs. Für diese Gruppen sind keine Mitgliedschafts-oder Konfigurationsänderungen zulässig. Das Ändern dieser Gruppen kann zu einer unerwarteten Konfiguration von Geräten und dem Verlust der Funktionalität führen. Bei Problemen oder Fragen rund um diese Gruppen, die einmal eingerichtet wurden, können IT-Administratoren sich an Microsoft Managed Desktop Operations wenden. Weitere Informationen finden Sie unter [Administrator Unterstützung für Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
 

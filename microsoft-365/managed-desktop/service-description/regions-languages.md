@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3b89591943e060eb752f0301258f2114f3a84608
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: bdd11728b6b3b5ebaf0eea507906e4fc31adb7b5
+ms.sourcegitcommit: d9350b6465d1404d32bcba8f5fc5a203085e6b82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34482703"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786730"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen
 
@@ -20,7 +20,7 @@ Dieses Thema enthält Details zu Regionen und Sprachen, die von Microsoft Manage
 - **Regionen:** Vereinigte Staaten, Kanada (ohne Quebec), Vereinigtes Königreich, Australien und Neuseeland
 - **Sprachen:** Englisch ist die einzige unterstützte Sprache, die Benutzern auf verwalteten Geräten derzeit zur Verfügung steht. Dies gilt sowohl für die Unterstützung von [Administratoren](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) als auch für die [Support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) Optionen für Endbenutzer. 
 
-Kunden können jedoch weiterhin verwaltete Geräte außerhalb der oben aufgeführten Regionen ohne Unterbrechung des von Microsoft verwalteten Desktop Diensts verwenden. Beispielsweise kann ein Mitarbeiter mit Hauptsitz in Großbritannien sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während Sie in Asien, Europa oder Südamerika Reisen.
+Kunden können jedoch weiterhin verwaltete Geräte außerhalb der oben aufgeführten Regionen ohne Unterbrechung des Microsoft Managed Desktop-Diensts verwenden. Beispielsweise kann ein Mitarbeiter mit Hauptsitz in Großbritannien sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während Sie in Asien, Europa oder Südamerika Reisen.
 
 Weitere Informationen zur Benutzerunterstützung mit Microsoft Managed Desktop finden Sie unter [Support für Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
 

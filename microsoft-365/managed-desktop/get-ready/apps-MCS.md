@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39a5102d045d9ed79b631a3b477bd1c72dea76de
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34918726"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425738"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Arbeiten mit Microsoft Consulting Services
 
@@ -22,7 +22,7 @@ Sie können sich mit Microsoft Consulting Services (MCS) beschäftigen, um Ihre 
 Um mit MCS App Packaging arbeiten zu können, **müssen Sie diese Elemente bereitstellen**:
 
 - Die Quellinstallationsdateien (beispielsweise Setup. exe oder. msi).
-- Die Installationsanweisungen, in denen Details zum Aussehen der endgültigen Installation angegeben werden. Soll beispielsweise eine Desktopverknüpfung mit der app vorhanden sein? Was sollte die APP-Sichtbarkeit sein? Sollte sich die APP mit einem Server verbinden und wenn ja, welche? <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
+- Die Installationsanweisungen, in denen Details zum Aussehen der endgültigen Installation angegeben werden. Soll beispielsweise eine Desktopverknüpfung mit der app vorhanden sein? Was sollte die APP-Sichtbarkeit sein? Sollte sich die APP mit einem Server verbinden und wenn ja, welche? Ausführliche Informationen finden Sie in der [Vorlage "Application Packaging Request](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)".
 - Sie müssen ihre eigenen Akzeptanztests durchführen, um sicherzustellen, dass die APP so funktioniert, wie Sie Sie in Ihrer Umgebung benötigen.
 
 **Diese Aktionen werden von MCS übernommen:**

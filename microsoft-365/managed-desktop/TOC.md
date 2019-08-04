@@ -2,6 +2,7 @@
 ## [Was ist Microsoft Managed Desktop?](intro/index.md)
 ### [Rollen und Verantwortlichkeiten](intro/roles-and-responsibilities.md)
 ### [Technologien in Microsoft Managed Desktop](intro/technologies.md)
+### [Microsoft Managed Desktop und ITIL](MMD-and-ITSM.md)
 ## [Beschreibung des Microsoft Managed Desktop-Diensts](service-description/index.md)
 ### [Unterstützte Regionen und Sprachen](service-description/regions-languages.md)
 ### [Produktlebenszyklus](service-description/device-lifecycle.md)

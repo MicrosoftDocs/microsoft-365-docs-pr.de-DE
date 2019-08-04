@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 8/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: Erfahren Sie, wie Schutzfunktionen in Microsoft 365 Business der InTune-Einstellungen zugeordnet werden. Das Abonnement bietet Ihnen eine Lizenz zum Ändern der InTune-Einstellungen.
-ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: In diesem Artikel erfahren Sie, wie die Schutzfunktionen in Microsoft 365 Business InTune-Einstellungen zugeordnet werden. Das Abonnement bietet Ihnen eine Lizenz zum Ändern von InTune-Einstellungen.
+ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074258"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Zuordnung von Microsoft 365 Business-Schutzfunktionen zu Intune-Einstellungen
 
@@ -35,9 +35,9 @@ ms.locfileid: "32278553"
 
 In der folgenden Tabelle ist die Zuordnung von Android- und iOS-Einstellungen der Anwendungsschutzrichtlinie zu Intune-Einstellungen detailliert ausgeführt.
   
-Um die Einstellung InTune zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu **Admin Center**und dann **InTune**.
+Um die Intune-Einstellung zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu **Admin Center**und dann **InTune**.
   
- **Wichtig:** Ein Microsoft 365 Business-Abonnement bietet Ihnen eine Lizenz zum Ändern aller InTune-Einstellungen. Weitere Informationen finden Sie unter [Einführung in InTune.](https://docs.microsoft.com/intune/introduction-intune)
+ **Wichtig:** Ein Microsoft 365 Business-Abonnement bietet Ihnen eine Lizenz zum Ändern aller InTune-Einstellungen. [Die ersten Schritte finden Sie unter Einführung in InTune.](https://docs.microsoft.com/intune/introduction-intune)
   
 Klicken Sie auf den Namen der Richtlinie, die Sie auswählen möchten, z. B. "Anwendungsrichtlinie für Android", und wählen Sie dann **Richtlinieneinstellungen** aus.
   
@@ -68,7 +68,7 @@ Unter **Benutzerzugriff auf Office-Dateien auf mobilen Geräten verwalten**
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Anwendungsschutzrichtlinie zu Intune-Einstellungen detailliert ausgeführt.
   
-Um die Einstellung InTune zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu [Azure Portal](https://portal.azure.com), wählen Sie **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, und wählen Sie **InTune-App-Schutz** \> **aus. App-Richtlinie**.
+Um die Intune-Einstellung zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu [Azure-Portal](https://portal.azure.com), wählen Sie dann **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, und wählen Sie InTune- **App-Schutz** \> **aus. App-Richtlinie**.
   
  **Wichtig**: Mit einem Microsoft 365 Business-Abonnement erhalten Sie nur die Möglichkeit, die Intune-Einstellungen zu ändern, die den in Microsoft 365 Business verfügbaren Einstellungen zugeordnet sind. 
   
@@ -88,7 +88,7 @@ Klicken Sie auf den Namen der Richtlinie, die Sie auswählen möchten, und wähl
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Gerätekonfiguration zu Intune-Einstellungen detailliert ausgeführt.
   
-um die einstellung intune zu finden, während sie sich mit ihren Microsoft 365 Business-administratoranmeldeinformationen angemeldet haben, wechseln sie zu [Azure portal](https://portal.azure.com), wählen sie **weitere dienste**aus, und geben sie intune in den **Filter**ein, und wählen sie **intune** \> -gerät aus. ** Konfigurations** \> **profile**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Um die Intune-Einstellung zu finden, während Sie sich mit Ihren Microsoft 365 Business-Administratoranmeldeinformationen angemeldet haben, wechseln Sie zu [Azure-Portal](https://portal.azure.com), wählen Sie dann **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, wählen Sie **InTune** \> -Gerät aus. ** Konfigurations** \> **profile**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Einstellung der Windows 10-Geräterichtlinie**|**Intune-Einstellung(en)**|
 |:-----|:-----|
