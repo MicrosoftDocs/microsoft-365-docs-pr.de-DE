@@ -15,9 +15,10 @@
 ## Einrichtung des Benutzergeräts
 ### [Einrichten von mobilen Geräten](set-up-mobile-devices.md)
 ### [Einrichten von Windows-Geräten](set-up-windows-devices.md)
-## [Sicher](security-features.md)
-### [Absichern Ihres Unternehmens](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
-### [Einrichten von erweiterten Sicherheitsfeatures](set-up-advanced-security.md)
+## [Absichern Ihres Unternehmens](security-features.md)
+### [Erhöhter Bedrohungsschutz](increase-threat-protection.md)
+### [Erste Schritte mit bedingtem Zugriff](set-up-conditional-access-policies.md)
+### [Einrichten von Kompatibilitätsfeatures](set-up-compliance.md)
 ## Verwalten von Benutzern
 ### [Hinzufügen von Benutzern](add-users-m365b.md)
 ### [Entfernen eines Mitarbeiters](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

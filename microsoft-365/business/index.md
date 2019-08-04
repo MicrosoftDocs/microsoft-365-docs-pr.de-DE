@@ -2,26 +2,26 @@
 layout: HubPage
 hide_bc: true
 ms.topic: hub-page
-ms.author: robmazz
-author: robmazz
-keywords: Microsoft 365 Business, Microsoft 365, Business, SMB, Small to mittelständische Unternehmen, Microsoft 365 Business Documentation, docs, Documentation, Technical Information
+ms.author: sirkkuw
+author: sirkkuw
+keywords: Microsoft 365 Business, Microsoft 365, Business, SMB, kleine bis mittelständische Unternehmen, Microsoft 365-Geschäftsdokumentation, Dokumente, Dokumentation, technische Informationen
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 Business-Ressourcen
-description: Erfahren Sie, wie Sie Microsoft Office 365, Windows 10 und Enterprise Mobility + Security gemeinsam in Ihrem Unternehmen planen, bereitstellen und verwenden können, um eine integrierte und sichere Infrastruktur zu schaffen, die Teamwork ermöglicht und Kreativität entsperrt.
-ms.openlocfilehash: 3c5cc341734896cb9a42565c8647f3f5ac37fc5b
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft Office 365, Windows 10 und Enterprise Mobility + Security gemeinsam in Ihrem Unternehmen für eine integrierte und sichere Infrastruktur planen, bereitstellen und verwenden können, die die Zusammenarbeit ermöglicht und die Kreativität freischaltet.
+ms.openlocfilehash: a7b6ef6b3c86868ffd9dd2ab912c427911075911
+ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660289"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34653044"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 Business-Ressourcen</h1>
-        <P>Microsoft 365 Business umfasst die neuesten Versionen von Windows-und Office-Apps wie Excel und Outlook. Nutzen Sie die Vorteile von Datenschutz und Sicherheit, die sich auf alle Ihre unternehmensgeräte ausweiten.</p>
+        <P>Microsoft 365 Business umfasst die neuesten Versionen von Windows und Office-Apps wie Excel und Outlook. Nutzen Sie den Schutz und die Sicherheit von Daten, die sich auf alle Ihre Geschäfts Geräte erstrecken.</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -61,7 +61,7 @@ ms.locfileid: "33660289"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Einrichtung</h3>
-                                              <P><a href="get-microsoft-365-business.md" target="_blank">Microsoft 365 Business abrufen</a></p>
+                                              <P><a href="sign-up.md" target="_blank">Holen Sie sich Microsoft 365 Business</a></p>
                                                <P><a href="set-up.md" target="_blank">Einrichten von Microsoft 365 Business</a></p>
                                                 <P><a href="set-up-windows-devices.md" target="_blank">Einrichten von Windows 10-Geräten</a></p>
                                                 <P><a href="set-up-mobile-devices.md" target="_blank">Einrichten von iPhone-und Android-Geräten</a></p>
@@ -81,8 +81,8 @@ ms.locfileid: "33660289"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Wechseln zu Microsoft 365 Business</h3>
-                                                <P><a href="migrate-to-microsoft-365-business.md" target="_blank">Wechseln von Office 365 Business Premium</a></p>
+                                                <h3>Wechsel zu Microsoft 365 Business</h3>
+                                                <P><a href="migrate-to-microsoft-365-business.md" target="_blank">Wechsel von Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -99,10 +99,9 @@ ms.locfileid: "33660289"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Schützen von Geschäftsdaten und-Geräten</h3>
-                                                 <P><a href="https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data"target="_blank">Die wichtigsten 10 Möglichkeiten zum Sichern von Microsoft 365 Business</a></p>
                                                 <P><a href="security-features.md" target="_blank">Weitere Informationen zu Sicherheitsfeatures</a></p>
                                                 <P><a href="remove-company-data.md" target="_blank">Entfernen von Daten von Geräten</a></p>
-                                                <P><a href="reset-devices-to-factory-settings.md" target="_blank">Zurücksetzen von Geräten</a></p>
+                                                <P><a href="reset-devices-to-factory-settings.md" target="_blank">Geräte zurücksetzen</a></p>
                                                 </div>
                                         </div>
                                     </div>
@@ -119,8 +118,8 @@ ms.locfileid: "33660289"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Verwendung</h3>
-                                                <P><a href="https://support.office.com/office-training-center" target="_blank">Unterstützung für alle Benutzer mit Office</a></p>
-                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Unterstützung für alle Benutzer zu Windows 10</a></p>
+                                                <P><a href="https://support.office.com/office-training-center" target="_blank">Hilfe für alle Personen, die mit Office in Betrieb nehmen können</a></p>
+                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Jedem bei der Umstellung auf Windows 10 helfen</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">InTune-Schulung</a></p>
                                             </div>
                                         </div>
@@ -138,9 +137,9 @@ ms.locfileid: "33660289"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Ressourcen für Partner</h3>
-                                                <P><a href="get-microsoft-365-business.md" target="_blank">Abrufen von Microsoft 365 Business vom Partner Center</a></p>
+                                                <P><a href="get-microsoft-365-business.md" target="_blank">Abrufen von Microsoft 365 Business aus dem Partner Center</a></p>
                                                 <P><a href="https://www.microsoft.com/microsoft-365/partners/business" target="_blank">Microsoft 365-Partnerseite</a></p>
-                                                <P><a href="https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck" target="_blank">Microsoft 365 Business-Lizenzierungs Deck</a></p>
+                                                <P><a href="https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck" target="_blank">Microsoft 365 Business Licensing-Deck</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +162,7 @@ ms.locfileid: "33660289"
                                                     <h3>Benötigen Sie Hilfe?</h3>
                                                     <P><a href="https://www.microsoft.com/solution-providers/search" target="_blank">Partner suchen</a></p>
                                                     <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Kontaktieren des Supports für Office 365</a></p>
-                                                    <P><a href="https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB" target="_blank">Community für kleine und mittelständische Unternehmen</a></p>
+                                                    <P><a href="https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB" target="_blank">Kleine und mittlere Unternehmens-Tech-Community</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -180,7 +179,7 @@ ms.locfileid: "33660289"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Hilfedokumentation</h3>
-                                                     <P><a href="https://docs.microsoft.com/office/admins-itprofessionals" target="_blank">Office-Administrator-Dokumente</a></p>
+                                                     <P><a href="https://docs.microsoft.com/office/admins-itprofessionals" target="_blank">Office-Administrator Dokumente</a></p>
                                                      <P><a href="https://docs.microsoft.com/intune/index">Microsoft InTune-Dokumente</a></p>
                                                 </div>
                                             </div>
