@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Geräte- und App-Bereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584551"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830533"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Schritt 1: Geräte- und App-Bereitschaft
 
@@ -41,7 +41,7 @@ In der Vergangenheit war die Anwendungs- und Hardwarekompatibilität bei der Akt
 
 Nichtsdestotrotz ist das Überprüfen der Anwendungs- und Hardwarekompatibilität in Abhängigkeit von der Größe und dem Alter Ihrer Organisation mit großer Wahrscheinlichkeit nach wie vor ein wichtiger erster Schritt in unserem empfohlenen Bereitstellungsprozess, der aus acht Phasen besteht.
 
-In diesem Artikel führen wir Sie durch diese erste Phase – die Geräte- und App-Bereitschaft – mithilfe der Microsoft-Tools zur Bewertung der Bereitschaft, einschließlich des neuen Tools Upgradebereitschaft von Desktop Analytics, bei dem es sich um eine intelligente, cloudbasierte Lösung handelt, die mit Ihrer Windows-Lizenz verfügbar ist.
+In diesem Artikel führen wir Sie durch diese erste Phase – die Geräte- und App-Bereitschaft – mithilfe der Microsoft-Tools zur Bewertung der Bereitschaft, einschließlich des neuen Tools Desktop Analytics, bei dem es sich um eine intelligente, cloudbasierte Lösung handelt, die mit Ihrer Windows-Lizenz verfügbar ist.
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10-Kompatibilitätsüberprüfung
 
@@ -53,11 +53,11 @@ Ein Beispiel für eine ScanOnly-Befehlszeile, die die Kompatibilitätsüberprüf
 
 Weitere Informationen zu ScanOnly und anderen Windows-Setupbefehlsoptionen finden Sie unter [Windows Setup-Befehlszeilenoptionen](https://aka.ms/setupswitches).
 
-## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>Empfohlenes Tool: Upgradebereitschaft von Desktop Analytics
+## <a name="recommended-tool-desktop-analytics"></a>Empfohlenes Tool: Desktop Analytics
 
-Upgradebereitschaft von Desktop Analytics bietet viele Vorteile gegenüber herkömmlichen Desktopverwaltungssystemen und ist unser empfohlenes Tool. Für Windows Analytics Upgrade Readiness müssen keine Agents bereitgestellt werden, und das Tool führt Sie durch die erforderlichen Schritte unter Verwendung der beim Upgraden von Hunderten von Millionen von Verbraucher-PCs gesammelten Informationen zur Anwendungs- und Treiberkompatibilität. Anhand dieser Informationen erhalten Sie eine detaillierte Bewertung, indem Kompatibilitätsprobleme identifiziert werden, die Ihr Upgrade blockieren könnten, unterstützt durch Links zu vorgeschlagenen Korrekturen, die Microsoft bekannt sind.
+Desktop Analytics bietet viele Vorteile gegenüber herkömmlichen Desktopverwaltungssystemen und ist unser empfohlenes Tool. Für Windows Analytics Upgrade Readiness müssen keine Agents bereitgestellt werden, und das Tool führt Sie durch die erforderlichen Schritte unter Verwendung der beim Upgraden von Hunderten von Millionen von Verbraucher-PCs gesammelten Informationen zur Anwendungs- und Treiberkompatibilität. Anhand dieser Informationen erhalten Sie eine detaillierte Bewertung, indem Kompatibilitätsprobleme identifiziert werden, die Ihr Upgrade blockieren könnten, unterstützt durch Links zu vorgeschlagenen Korrekturen, die Microsoft bekannt sind.
 
-Um Window Analytics Upgrade Readiness einzurichten, müssen Sie zuerst ein Azure-Abonnement einrichten und einen Azure Log Analytics-Arbeitsbereich hinzufügen. Sobald der Dienst Upgradebereitschaft von Desktop Analytics ausgeführt wird, können Sie jedes mit dem Internet verbundene Windows 7 SP1- oder neuere Gerät über Gruppenrichtlinieneinstellungen registrieren – so einfach ist das. Es müssen keine Agents bereitgestellt werden, und der visuelle Workflow von Upgradebereitschaft von Desktop Analytics führt Sie von der Pilotbereitstellung bis zur Produktionsbereitstellung. Wenn Sie möchten, können Sie Daten von Upgradebereitschaft von Desktop Analytics in Softwarebereitstellungstools wie System Center Configuration Manager (Current Branch) exportieren, um PCs direkt zu adressieren und Sammlungen zu erstellen, sobald sie für die Bereitstellung bereit sind.
+Um Desktop Analytics einzurichten, müssen Sie zuerst ein Azure-Abonnement einrichten und einen Azure Log Analytics-Arbeitsbereich hinzufügen. Sobald der Dienst Desktop Analytics ausgeführt wird, können Sie jedes mit dem Internet verbundene Windows 7 SP1- oder neuere Gerät über Gruppenrichtlinieneinstellungen registrieren – so einfach ist das. Es müssen keine Agents bereitgestellt werden, und der visuelle Workflow von Desktop Analytics führt Sie von der Pilotbereitstellung bis zur Produktionsbereitstellung. Wenn Sie möchten, können Sie Daten von Desktop Analytics in Softwarebereitstellungstools wie System Center Configuration Manager (Current Branch) exportieren, um PCs direkt zu adressieren und Sammlungen zu erstellen, sobald sie für die Bereitstellung bereit sind.
 
 Wenn Sie Windows Desktop derzeit nicht für Ihre Umgebung eingerichtet haben oder sich für eine Testversion registrieren möchten, wechseln Sie zur Desktop Analytics-Seite](http://www.aka.ms/desktopanalytics), und legen Sie los.
 
@@ -67,17 +67,15 @@ Geräte- und App-Bereitschaft besteht aus vier Schritten: 1. Inventar, 2. Priori
 
 ### <a name="1-inventory"></a>1\. Bestandsaufnahme
 
-Der Dienst Upgradebereitschaft von Desktop Analytics verwendet einen Prozess ohne Agent zur Bestandsaufnahme der Computer und Anwendungen Ihrer gesamten Desktopumgebung.
+Der Dienst Desktop Analytics verwendet einen Prozess ohne Agent zur Bestandsaufnahme der Computer und Anwendungen Ihrer gesamten Desktopumgebung. Er stellt außerdem Berichte zu häufig besuchten Internetwebsites, Apps und Intranetspeicherorten bereit, um Sie später bei den Kompatibilitätstests zu unterstützen.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-Er stellt außerdem Berichte zu häufig besuchten Internetwebsites, Apps und Intranetspeicherorten bereit, um Sie später bei den Kompatibilitätstests zu unterstützen.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Priorisieren
 
-Nach der Bestandsaufnahme können Sie Upgradebereitschaft von Desktop Analytics verwenden, um die am häufigsten verwendeten Apps und die am häufigsten in Ihrer Organisation verwendete Hardware zu identifizieren und zu priorisieren, und ermitteln, worauf Sie sich konzentrieren müssen, um so viele Computer wie möglich für die Bereitstellung vorzubereiten.
+Nach der Bestandsaufnahme können Sie Desktop Analytics verwenden, um die am häufigsten verwendeten Apps und die am häufigsten in Ihrer Organisation verwendete Hardware zu identifizieren und zu priorisieren, und ermitteln, worauf Sie sich konzentrieren müssen, um so viele Computer wie möglich für die Bereitstellung vorzubereiten.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +83,9 @@ Außerdem erhalten Sie Hilfestellung zur Beurteilung der Updates, die erforderli
 
 ### <a name="3-testing"></a>3\. Testen
 
-Sie werden feststellen, dass die meisten Anwendungen, Treiber und Add-Ins der Bestandsaufnahme in der vorliegenden Form funktionieren. Für Elemente, bei denen Upgradebereitschaft von Desktop Analytics Probleme feststellt, erhalten Sie bekannte Informationen, z. B., wo Versionsupdates zur Behebung von Kompatibilitätsproblemen zu finden sind. Anstatt Zeit und Ressourcen auf die Lösung komplexer Probleme in nicht kritischen, selten bereitgestellten Anwendungen und älteren Geräten aufzuwenden, können Sie stattdessen mit Benutzern arbeiten, um diese Elemente zurückzuziehen und zu ersetzen.
+Sie werden feststellen, dass die meisten Anwendungen, Treiber und Add-Ins der Bestandsaufnahme in der vorliegenden Form funktionieren. Für Elemente, bei denen Desktop Analytics Probleme feststellt, erhalten Sie bekannte Informationen, z. B., wo Versionsupdates zur Behebung von Kompatibilitätsproblemen zu finden sind. Anstatt Zeit und Ressourcen auf die Lösung komplexer Probleme in nicht kritischen, selten bereitgestellten Anwendungen und älteren Geräten aufzuwenden, können Sie stattdessen mit Benutzern arbeiten, um diese Elemente zurückzuziehen und zu ersetzen.
 
-Sie können Upgradebereitschaft von Desktop Analytics verwenden, um auch browserbasierte Kompatibilitätsprobleme zu beurteilen und dabei Websites und Web-Apps identifizieren, auf die von Benutzern zugegriffen wird und die immer noch ActiveX-Steuerelemente, Browserhilfsobjekte, VBScript oder andere veraltete Technologien verwenden, die vom Microsoft Edge-Browser nicht unterstützt werden. Ihre Benutzer müssen weiterhin Internet Explorer 11 für diese Websites verwenden, und Sie können diese mithilfe des Enterprise Mode Site List Managers der [Siteliste für den Unternehmensmodus](https://docs.microsoft.com/de-DE/microsoft-edge/deploy/emie-to-improve-compatibility) hinzufügen.
+Desktop Analytics kann auch zur Bewertung der browserbasierten Kompatibilität verwendet werden. Dabei werden Websites und Web-Apps mit Benutzerzugriff identifiziert, die noch ActiveX-Steuerelemente verwenden, sowie Browser-Hilfsobjekte, VBScript, oder andere veraltete Technologie, die nicht vom Microsoft Edge Browser unterstützt wird. Ihre Benutzer müssen weiterhin Internet Explorer 11 für diese Websites verwenden, und Sie können sie mit dem Enterprise Mode Site List Manager zur [Unternehmensmodus-Websiteliste](https://docs.microsoft.com/de-DE/microsoft-edge/deploy/emie-to-improve-compatibility) hinzufügen.
 
 Um Ihnen den Umstieg auf Office 365 ProPlus zu erleichtern, können Sie außerdem das [Readiness Toolkit für Office](https://docs.microsoft.com/de-DE/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) zum Testen der Kompatibilität Ihrer Add-Ins und VBA-Makros (Microsoft Visual Basic für Applikationen) verwenden.
 
@@ -114,7 +112,7 @@ Ein weiteres Tool, das Ihnen bei der Kompatibilität von Windows 10 und Office 3
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Fortgesetzte Verwendung von Diagnosedatentools
 
-Upgradebereitschaft von Desktop Analytics ist nicht nur ein Tool, das Sie beim Umstieg auf Windows 10 und Office ProPlus 365 unterstützt. Wenn Sie Desktops haben, auf denen Windows 10 und Office 365 ausgeführt wird, können Sie diese verwenden, um die Bereitstellung sowie halbjährliche Featureupdates zu verwalten, damit Sie immer auf dem aktuellen Stand sind.
+Desktop Analytics ist nicht nur ein Tool, das Sie beim Umstieg auf Windows 10 und Office 365 ProPlus unterstützt. Wenn Sie Desktops haben, auf denen Windows 10 und Office 365 ausgeführt wird, können Sie diese verwenden, um die Bereitstellung sowie halbjährliche Featureupdates zu verwalten, damit Sie immer auf dem aktuellen Stand sind.
 
 ## <a name="next-step"></a>Nächster Schritt 
 
