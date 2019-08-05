@@ -1,7 +1,7 @@
 ---
 title: Prüflisten zu den Verantwortlichkeiten für die DSGVO
 description: Wie Microsoft-Dienste Schutz vor Datenschutzverletzungen für persönliche Daten bietet und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -10,22 +10,57 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d810dbfa6abb4935ae9d7078f9ed475123be405c
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 95805d6d61f2e8454ade16298db78370b0fca9f1
+ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698357"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078925"
 ---
-# <a name="accountability-readiness-checklists-for-the-gdpr"></a>Prüflisten zu den Verantwortlichkeiten für die DSGVO
+# <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Unterstützung des DSGVO-Programms mit Prüflisten zu den Verantwortlichkeiten
 
-Diese Prüflisten zu den Verantwortlichkeiten sind eine komfortable Möglichkeit, um auf Informationen zuzugreifen, die Sie bei Verwendung von Microsoft-Produkten und -Diensten zur Unterstützung der Datenschutz-Grundverordnung (DSGVO) benötigen.  
+Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md).
+
+## <a name="accountability-readiness-checklists"></a>Prüflisten zu den Verantwortlichkeiten
+
+Prüflisten zu den Verantwortlichkeiten werden als komfortable Möglichkeit für den Zugriff auf Informationen bereitgestellt, die Sie bei Verwendung von Microsoft-Produkten und -Diensten zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste enthält potenzielle Verpflichtungen, die Sie im Rahmen der DSGVO möglicherweise erfüllen müssen, und verweist auf Informationen, die Sie zur Unterstützung der Compliance Ihrer Organisation verwenden können. <br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+
+Es gibt einen spezifischen Leitfaden für vier Microsoft-Produkt- und Dienstfamilien:
 
 - [Office 365](gdpr-arc-Office365.md)
-- [Azure](gdpr-arc-Azure.md)
 - [Dynamics 365](gdpr-arc-Dynamics365.md)
-- [Microsoft-Support und Dienstleistungen](gdpr-arc-prof-services.md)
+- [Azure](gdpr-arc-Azure.md)
+- [Microsoft-Support und Professional Services](gdpr-arc-prof-services.md)
+
+Sie können die Elemente in dieser Checkliste mit dem [Compliance-Manager](https://servicetrust.microsoft.com/ComplianceManager)verwalten, indem Sie auf die Kontroll-ID und den Kontrolltitel unter Vom Kunden verwaltete Steuerelemente in der DSGVO-Kachel verweisen.
+
+Die Prüflisten umfassen die vier grundlegenden Kategorien von Überlegungen für ein Datenschutzprogramm zur Unterstützung der DSGVO. Diese sind nachstehend aufgeführt, zusammen mit Beispielanforderungen.
+
+1. Bedingungen für Datensammlung und -verarbeitung:
+
+    - Wann wird Zustimmung eingeholt?  
+    - Identifizieren und Dokumentieren des Zwecks  
+    - Datenschutz-Folgenabschätzung
+
+2. Rechte betroffener Personen  
+
+    - Ermitteln von Informationen für PII-Prinzipale (Betroffene)  
+    - Bereitstellen eines Mechanismus zum Ändern oder Widerrufen der Zustimmung
+
+3. Datenschutz als Konzept und Standard  
+
+    - Beschränken der Datensammlung  
+    - Einhalten von Identifizierungsebenen  
+    - Temporäre Dateien
+
+4. Datenschutz und Sicherheit  
+
+    - Grundlegendes zur Organisation und zum Kontext  
+    - Planung  
+    - Richtlinien zur Informationssicherheit
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

@@ -10,25 +10,67 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 52436050d95935833dbfbeb1655c57ed9cfdad68
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 7c4e66988c57754324fbc18de95e97d409ab0a53
+ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698207"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078915"
 ---
-# <a name="data-protection-impact-assessments"></a>Datenschutz-Folgenabschätzung
+# <a name="data-protection-impact-assessment-for-the-gdpr"></a>Datenschutz-Folgenabschätzungen im Rahmen der DSGVO
 
-Gemäß der Datenschutz-Grundverordnung (DSGVO) müssen Datenverantwortliche eine Datenschutz-Folgenabschätzung (Data Protection Impact Assessment, DPIA) für die Verarbeitung von Vorgängen vorbereiten, die „wahrscheinlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen nach sich ziehen“. Es gibt in Microsoft Azure oder Dynamics 365 keine inhärenten Merkmale, die die Erstellung einer Datenschutz-Folgenabschätzung durch einen Datenverantwortlichen, der diese Programme verwendet, erfordern würden. Ob eine Datenschutz-Folgenabschätzung erforderlich ist, hängt vielmehr von den jeweiligen Daten ab und davon, *wie* der Datenverantwortliche die Produkte bereitstellt und konfiguriert.
+Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md). <br><br>
 
-Dieses Dokument soll den Datenverantwortlichen Informationen bereitstellen, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgenabschätzung erforderlich ist, und wenn ja, welche Informationen sie enthalten soll.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
 
-- [Office 365](gdpr-dpia-office365.md)
-- [Azure](gdpr-dpia-azure.md)
-- [Dynamics 365](gdpr-dpia-dynamics.md)
-- [Microsoft-Support und Dienstleistungen](gdpr-dpia-prof-services.md)
+Dieses Dokument bietet Ihnen Informationen bezüglich Datenschutz-Folgenabschätzungen unter der DSGVO, während Sie Microsoft-Produkte und -Dienste verwenden.
 
-Weitere Informationen zum Datenschutz bei Microsoft in Übereinstimmung mit der DSGVO finden Sie unter [Compliance](https://servicetrust.microsoft.com/ComplianceManager) im ***Service Trust Portal***.
+## <a name="terminology"></a>Begrifflichkeiten
+
+Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
+
+- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, eine öffentliche Stelle, eine Behörde oder eine andere Stelle, die allein oder zusammen mit anderen den Zweck und die Mittel für die Verarbeitung personenbezogener Daten bestimmt.  
+- *Personenbezogene Daten * und *betroffene Person (oder Datensubjekt) *: alle Informationen, die sich auf eine bestimmte oder identifizierbare natürliche Person beziehen (betroffene Person); eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt identifiziert werden kann.  
+- *Verarbeiter*: eine natürliche oder juristische Person, eine öffentliche Behörde, eine Agentur oder eine andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
+- *Kundendaten*: Daten, die bei Ihrer tagtäglichen Geschäftsausführung erstellt und gespeichert werden.
+
+## <a name="what-is-a-dpia"></a>Was ist Datenschutz-Folgenabschätzung?
+
+Unter der DSGVO sind Datenverantwortliche dazu aufgerufen, eine Datenschutz-Folgenabschätzung (Data Protection Impact Assessment, DPIA) für Vorgänge vorzubereiten, die "wahrscheinlich zu einem hohen Risiko für die Rechte und Freiheiten natürlicher Personen führen". Microsoft-Produkte und -Dienste verfügen über nichts Inhärentes, das eine DPIA erforderlich machen würde. Da Microsoft-Produkte und-Dienste jedoch hochgradig anpassbar sind, kann je nach den Details Ihrer Microsoft-Konfiguration eine DPIA erforderlich sein. Microsoft hat keine Kontrolle über und wenig oder gar keine Einsichten in solche Informationen. Sie als Datenverantwortlicher müssen die geeignete Verwendung der Daten ermitteln.
+
+## <a name="dpia-in-action"></a>Angewendete DPIA
+
+Der DPIA-Leitfaden gilt für Office 365, Azure, Dynamics 365 und Microsoft-Support sowie Professional Services. Der Leitfaden umfasst Folgendes:
+
+1. **Wann ist eine DPIA erforderlich?** Die nachstehend aufgeführten Risikofaktoren sollten bei den Überlegungen zur Durchführung einer DPIA berücksichtigt werden. Weitere potenzielle Faktoren und weitere Details finden Sie in Teil 1 der einzelnen Richtlinien.  
+
+    - Eine systematische und umfassende Auswertung von Daten auf der Grundlage einer automatisierten Verarbeitung.  
+    - Verarbeitung spezieller Kategorien von Daten (Daten, aus denen Informationen hervorgehen, anhand derer eine natürliche Person eindeutig identifiziert werden kann) bzw. personenbezogener Daten über strafrechtliche Verurteilungen und Straftaten.
+    - Systematische Überwachung eines öffentlich zugänglichen Bereichs.
+
+    Die DSGVO stellt Folgendes klar: "Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein."
+
+2. **Was ist erforderlich, um eine DPIA durchzuführen?** Eine DPIA sollte spezifische Informationen zur beabsichtigten Verarbeitung bereitstellen. Darauf wird in Teil 2 des Leitfadens genauer eingegangen. Dazu gehören:
+
+    - Eine Bewertung der Notwendigkeit und Verhältnismäßigkeit der Datenverarbeitung in Bezug auf den Zweck der DPIA.  
+    - Bewertung der Risiken für die Rechte und Grundfreiheiten natürlicher Personen.
+    - Vorgesehene Maßnahmen zum Umgang mit den Risiken, Sicherheitsvorkehrungen, Sicherheitsmaßnahmen und Mechanismen zur Sicherstellung des Schutzes personenbezogener Daten und zur Veranschaulichung der Einhaltung des DSGVO.
+    - Zwecke der Verarbeitung  
+    - Kategorien verarbeiteter personenbezogener Daten  
+    - Datenaufbewahrung  
+    - Speicherort und Übermittlung personenbezogener Daten  
+    - Teilen von Daten mit Dritten  
+    - Teilen von Daten mit unabhängigen Dritten  
+    - Rechte betroffener Personen
+
+## <a name="additional-considerations"></a>Weitere Überlegungen
+
+Nachstehend finden Sie spezifische Details, die für Ihre Microsoft-Implementierung relevant sein können.
+
+- [Office 365](gdpr-dpia-office365.md): Dieses Dokument gilt für Office 365-Anwendungen und -Dienste, einschließlich, aber nicht beschränkt auf Exchange Online, SharePoint Online, Yammer, Skype for Business und Power BI. Weitere Details finden Sie in den Tabellen [1](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-1--determining-whether-a-dpia-is-needed) und [2](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia).  
+- [Azure](gdpr-dpia-azure.md): Kunden sind dazu angehalten, mit Ihren Datenschutzbeauftragten und Rechtsberatern zu arbeiten, um die Notwendigkeit und Inhalte aller DPIAs zu ermitteln, die mit der Verwendung von Microsoft Azure verbunden sind.  
+- [Dynamics 365](gdpr-dpia-dynamics.md): Der Inhalt einer DPIA kann variieren, je nachdem, welche Dynamics 365-Tools Sie verwenden. Spezifische Details finden Sie in [Teil 2 – Inhalte einer DPIA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-dynamics#part-2--contents-of-a-dpia).
+- [Microsoft-Support und Professional Services](gdpr-dpia-prof-services.md): Professional Services führt keine bestimmte routinemäßige oder automatisierte Datenverarbeitung aus und ist nicht für die Verarbeitung spezieller Kategorien bzw. die Ausführung bestimmter Aufgaben vorgesehen, die das Überwachen von öffentlich zugänglichen Daten erleichtern oder erfordern. Details hierzu finden Sie in [Teil 1 – Bestimmen, ob eine DPIA erforderlich ist](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services#part-1--determining-whether-a-dpia-is-needed). Die Verantwortlichen müssen die oben genannten DPIA-Elemente sowie alle anderen relevanten Faktoren im Kontext der spezifischen Implementierungen und Verwendungen von Professional Services durch den Verantwortlichen berücksichtigen. Informationen zu Professional Services finden Sie in [Teil 2 – Inhalte einer DPIA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services#part-2--contents-of-a-dpia).
 
 ## <a name="learn-more"></a>Weitere Informationen
 
