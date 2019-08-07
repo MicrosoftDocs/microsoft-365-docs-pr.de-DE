@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso System Center Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
-ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283548"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054997"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Office 365 ProPlus-Bereitstellung für Contoso
 
@@ -75,7 +75,7 @@ Da sich Contoso entschlossen hat, Geräte automatisch aus der Cloud zu aktualisi
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-mdm.md), wie Contoso Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise zum Verwalten von Geräten und den darauf ausgeführten Apps im Unternehmen verwendet.
+[Erfahren Sie](contoso-mdm.md), wie Contoso Intune in Microsoft 365 Enterprise zum Verwalten von Geräten und den darauf ausgeführten Apps im Unternehmen verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 

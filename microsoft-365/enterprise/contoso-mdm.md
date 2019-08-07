@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verstehen Sie, wie Contoso EMS in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
-ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Verstehen Sie, wie Contoso Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
+ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278042"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054987"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Verwaltung mobiler Geräte bei Contoso
 
-**Zusammenfassung:** Verstehen Sie, wie Contoso EMS in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
+**Zusammenfassung:** Verstehen Sie, wie Contoso Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
 
-Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise besteht aus Microsoft Intune und einer Reihe von Azure-Diensten zur Unterstützung der Verwaltung mobiler Geräte und Anwendungen und der Sicherheit.
+Microsoft 365 Enterprise enthält Microsoft Intune und eine Reihe von Azure-Diensten zur Unterstützung der Verwaltung und Sicherheit mobiler Geräte und Anwendungen.
 
 Bei Contoso arbeiten viele Mitarbeiter mit Mobilunterstützung, von denen einige Büros an Contoso-Standorten haben und einige nicht in Büros arbeiten. Das Unternehmen benötigte eine Möglichkeit, die Mitarbeiterproduktivität zu steigern und dabei gleichzeitig die auf diesen Geräten gespeicherten Contoso-Daten sowie das Anwendungsverhalten zu schützen.
 

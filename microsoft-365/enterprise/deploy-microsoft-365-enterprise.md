@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937407"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054947"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
-Microsoft 365 Enterprise ist eine Kombination von Office 365, Enterprise Mobility + Security (EMS) und Windows 10 Enterprise: 
+Microsoft 365 Enterprise ist eine Kombination aus lokalen und cloudbasierten Produktivitäts-Apps und -Diensten mit Windows 10 Enterprise, und bietet folgende Features:  
 
 - Es bietet Intelligente Sicherheit.
 - Es ist für Einfachheit integriert.

@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfunktionen für Microsoft 365 Enterprise verwendet
-ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 3de3b748659d713d4db8375d4bcc51ce89573d79
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353102"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054967"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung der Microsoft 365 Enterprise-Sicherheit für die Contoso Corporation
 
@@ -123,7 +123,7 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 - Geräteverwaltung mit Microsoft Intune
 
-  Als Teil der Enterprise Management + Security-Suite (EMS) verwendet Contoso [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) zum Registrieren und Verwalten von mobilen Geräten und zum Konfigurieren des Zugriffs darauf, ebenso wie zum Konfigurieren der Apps, die auf den Geräten ausgeführt werden können. Gerätebasierte bedingte Zugriffsrichtlinien erfordern ebenfalls genehmigte Apps und kompatible PCs bzw. mobile Geräte.
+  Contoso verwendet [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) zum Registrieren und Verwalten von mobilen Geräten und zum Konfigurieren des Zugriffs darauf, ebenso wie zum Konfigurieren der Apps, die auf den Geräten ausgeführt werden können. Gerätebasierte bedingte Zugriffsrichtlinien erfordern ebenfalls genehmigte Apps und kompatible PCs bzw. mobile Geräte.
 
 ## <a name="security-management"></a>Sicherheitsverwaltung
 
