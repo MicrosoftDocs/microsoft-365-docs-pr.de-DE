@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390532"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243946"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Hinzufügen von Administrator Kontakten im Verwaltungsportal von Microsoft Managed Desktop
 
@@ -28,13 +28,13 @@ Microsoft Managed Desktop Admin Portal erfordert, dass Personen, die auf das Por
 
 Der globale Administrator muss derjenige sein, der den Kunden in Microsoft Managed Desktop registriert. Alle fünf Rollen haben im Administratorportal denselben Zugriff, um Aufgaben zu initiieren und anzuzeigen. Weitere Informationen zum Zuweisen dieser Rollen in Azure AD finden Sie unter [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
-## <a name="admin-contact-focus-areas"></a>Fokusbereiche für den Administratorkontakt
+## <a name="admin-contact-areas-of-focus"></a>Administrative Kontaktbereiche des Fokus
 
 Administrator Kontakte sollten die beste Person oder Gruppe sein, die Fragen beantworten und Entscheidungen für unterschiedliche Fokusbereiche treffen kann. Bei Microsoft Managed Desktop Operations werden diese Administrator Kontakte für Fragen im Zusammenhang mit Supportanfragen, die vom Kunden eingereicht wurden, kontaktiert. Diese Administrator Kontakte erhalten Benachrichtigungen für Updates für Supportanfragen und neue Nachrichten. Diese Bereiche umfassen:
 
 Fokusbereich | Fragen zu
 --- | ---
-Apps | Problembehandlung bei App-Verpackungen
+App-Verpackung | Problembehandlung bei App-Verpackungen
 Geräte | Geräte Integrität, Problembehandlung mit Microsoft Managed Desktop-Geräten
 Sicherheit | Beheben von Sicherheitsproblemen mit Microsoft Managed Desktop-Geräten
 IT-Helpdesk | in Fällen, in denen Microsoft Managed Desktop Hands over End User Tickets außerhalb der MMD-Support Bereiche unterstützt 
