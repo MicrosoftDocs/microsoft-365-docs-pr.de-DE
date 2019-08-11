@@ -191,7 +191,7 @@ Um sicherzustellen, dass Ihre Windows 10 Enterprise-Geräte in die Identitäts- 
 
 - Reine Cloud (Sie verfügen nicht über eine lokale AD DS-Domäne)
 
-  Binden Sie jedes Windows 10 Enterprise-Gerät an den Azure AD-Mandanten Ihres Abonnements ein.
+  Verbinden Sie jedes Windows 10 Enterprise-Gerät mit dem Azure AD-Mandanten Ihres Abonnements.
 
   Weitere Informationen finden Sie unter [Einbinden von geschäftlichen Geräten in das Netzwerk der Organisation](https://docs.microsoft.com/de-DE/azure/active-directory/user-help/user-help-join-device-on-network).
 
@@ -279,7 +279,7 @@ Die neuen und hervorgehobenen Elemente für die Verwaltung mobiler Geräte umfas
 
 Microsoft 365 Enterprise verfügt über eine Vielzahl von Features zum Informationsschutz, mit denen Sie Klassifizierungen von Daten unterschiedlich behandeln können, indem Sie verschiedene Ebenen der Governance, Sicherheit und des Schutzes anwenden. 
 
-So benötigt beispielsweise die normale Korrespondenz zwischen den meisten Mitarbeitern und den Dokumenten, an denen sie arbeiten, einen gewissen Schutzebene-Basisplan. Finanzunterlagen, Kundendaten und Ihr geistiges Eigentum benötigen eine höhere Schutzebene.
+So benötigt beispielsweise die normale Korrespondenz zwischen den meisten Mitarbeitern und den Dokumenten, an denen sie arbeiten, eine gewisse Basis-Schutzebene. Finanzunterlagen, Kundendaten und Ihr geistiges Eigentum benötigen eine höhere Schutzebene.
 
 Der erste Schritt zu einer Informationsschutzstrategie ist die Festlegung der Sicherheitsebenen. Viele Organisationen verwenden diese Ebenen, die bereits für Richtlinien für den bedingten Zugriff verwendet werden:
 
