@@ -3,7 +3,7 @@ title: Bereitstellen von Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054947"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297905"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -29,13 +29,13 @@ Microsoft 365 Enterprise ist eine Kombination aus lokalen und cloudbasierten Pro
 - Es fördert die Kreativität.
 - Es wurde für die Teamarbeit entwickelt.
 
-Diese Vorteile werden nicht durch den Abruf der Lizenzen für die drei Produkte, sondern durch Bereitstellung der Lizenzen und ihrer Funktionen auf eine Art und Weise realisiert, die Integration und modernste Sicherheit beinhaltet.
+Von diesen Vorteilen können Sie profitieren, indem Sie die Infrastruktur und Produktivitätsworkloads auf integrierte Weise bereitstellen, wobei die neuesten Sicherheitsdienste und -features verwendet werden.
 
 Es gibt drei Hauptmöglichkeiten zum Bereitstellen von Microsoft 365 Enterprise:
 
-- In Zusammenarbeit mit Microsoft-Technikern über FastTrack für Microsoft 365.
+- In Zusammenarbeit mit Microsoft-Technikern über [FastTrack für Microsoft 365](#fasttrack-for-microsoft-365).
 - Mit Hilfe der Microsoft Consulting Services oder eines [Microsoft-Partners](https://partner.microsoft.com/).
-- Alleine unter Verwendung des Microsoft 365 Enterprise-Bereitstellungshandbuchs.
+- Alleine unter Verwendung des [Microsoft 365 Enterprise-Bereitstellungshandbuchs](#microsoft-365-enterprise-deployment-guide).
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack für Microsoft 365
 
@@ -57,7 +57,7 @@ Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
   **Wenn Sie eine kleinere oder neuere Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen.
 
-  Sie können jedoch Phasen oder Teile der Phasen dieser Infrastruktur in beliebiger Reihenfolge, [eine nach der anderen oder parallel](deployment-strategies-microsoft-365-enterprise.md) bereitstellen, um sie in Ihre aktuelle Infrastruktur zu integrieren, sie an Ihre IT-Pläne und -Ressourcen anzupassen und Ihre Geschäftsanforderungen zu erfüllen. 
+  Sie können jedoch Phasen oder Teile der Phasen dieser Infrastruktur in beliebiger Reihenfolge, [eine nach der anderen oder parallel](deployment-strategies-microsoft-365-enterprise.md) bereitstellen, um sie in Ihre aktuelle Infrastruktur zu integrieren, sie an Ihre IT-Pläne und -Ressourcen anzupassen und Ihre Geschäftsanforderungen zu erfüllen. Für eine vereinfachte Bereitstellung für Nicht-Unternehmen [klicken](deploy-foundation-infrastructure-non-enterprises.md) Sie hier.
 
   **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
 
@@ -85,6 +85,16 @@ Weitere Informationen finden Sie unter [Microsoft 365 Enterprise-Testumgebungsan
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## <a name="transition-your-entire-organization"></a>Umstellung Ihrer gesamten Organisation
+
+Um einen besseren Überblick zu erhalten, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste von Microsoft 365 Enterprise umstellen können, laden Sie das [Poster zur Umstellung](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf) herunter.
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+Dieses zweiseitige Poster ist eine schnelle Methode, um eine Aufstellung Ihrer vorhandenen Infrastruktur zu erstellen und die Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise zu finden. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
+
+Sie können dieses Poster in den Formaten "Brief", "Legal" oder "Tabloid (27,94 x 43,18 cm)" drucken.
+
 ## <a name="how-did-others-do-it"></a>Wie haben andere Personen es gemacht?
 
 Verwenden Sie diese Ressourcen, um zu verstehen, wie andere Personen Microsoft 365 Enterprise bereitgestellt haben und verwenden.
@@ -98,11 +108,10 @@ Auf der Website „Erfahrungsberichte von Kunden“ erfahren Sie, wie Microsoft-
 3. Wählen Sie unter **Branche** die Branche Ihrer Organisation aus.
 4. Wählen Sie unter **Produkt** **Microsoft 365** aus.
 5. Klicken Sie auf eine Karte für die Fallstudie des Kunden.
-  
 
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 
-Die Definition einer digitalen Kultur hat für jede Führungskraft, die sich für einen modernen Arbeitsplatz einsetzt, höchste Priorität. Microsoft 365 wurde entwickelt, um diese Art von kulturellem Wandel zu unterstützen und Führungskräften dabei zu helfen, alle Mitarbeiter in ihren Unternehmen zu befähigen, Kreativität und Zusammenarbeit zu entfalten. Bei Microsoft hat der Aufbau unserer grundlegenden Infrastruktur genau diese Art von digitalem Kulturwandel ausgelöst. Die Implementierung von Microsoft 365 Enterprise hat es uns ermöglicht, Kollaborationstechnologien wie Microsoft Teams und Exchange Online einzusetzen und sensible Daten online über sichere SharePoint-Intranetseiten zu teilen.
+Die Definition einer digitalen Kultur hat für jede Führungskraft, die sich für einen modernen Arbeitsplatz einsetzt, höchste Priorität. Microsoft 365 wurde entwickelt, um diese Art von kulturellem Wandel zu unterstützen und Führungskräften dabei zu helfen, alle Mitarbeiter in ihren Unternehmen zu befähigen, Kreativität und Zusammenarbeit zu entfalten. Die Etablierung der Foundation-Infrastruktur von Microsoft hat genau diese Art von digitalem Kulturwandel ausgelöst. Die Implementierung von Microsoft 365 Enterprise hat es uns ermöglicht, Technologien für die Zusammenarbeit wie Microsoft Teams und Exchange Online einzusetzen und sensible Daten online über sichere SharePoint-Intranetseiten zu teilen.
 
 Gleichzeitig helfen intelligente Sicherheitsfunktionen und Produktintegration, die Verwaltungsanforderungen zu rationalisieren und die Gesamtbetriebskosten über den gesamten IT-Lebenszyklus hinweg zu minimieren. 
 
@@ -115,7 +124,7 @@ Erfahren Sie, wie Core Services Engineering and Operations (ehemals Microsoft IT
 
 Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie [Contoso Microsoft 365 Enterprise bereitgestellt](contoso-case-study.md) und dabei wichtige Designentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Office 365 ProPlus, Verwaltung mobiler Geräte, Datenschutz und Sicherheit berücksichtigt. 
 
-## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>Nächster Schritt zur Bereitstellung von Microsoft 365 Enterprise
+## <a name="next-step"></a>Nächster Schritt
 
 Um direkte Unterstützung von Microsoft zu erhalten, verwenden Sie [FastTrack](https://fasttrack.microsoft.com/microsoft365).
 

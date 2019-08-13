@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise-Foundation-Infrastruktur
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055021"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297915"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
 
@@ -37,14 +37,14 @@ Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese
 
 Die Phasen beginnen mit den grundlegendsten Elementen (Netzwerk und Identität), und erstellen dann Schichten von Infrastruktur-Einstellungen und Gruppen zu:
 
-- Installieren Sie die aktuellste und sicherste Version von Windows auf Ihren Geräten.
-- Installieren Sie die aktuellste Version von Microsoft Office auf Ihren Geräten.
-- Verwalten Sie die Geräte Ihrer Organisation.
+- Installieren Sie die aktuellste und sicherste Version von Windows auf Ihren Geräten, und halten Sie sie auf dem neuesten Stand.
+- Installieren Sie die aktuellste Version von Microsoft Office auf Ihren Geräten, und halten Sie sie auf dem neuesten Stand.
+- Verwalten Sie die Geräte Ihrer Organisation und den Zugriff auf Apps.
 - Schützen Sie die Informationen auf diesen Geräten und in der Cloud.
 
 Sie haben jedoch die Flexibilität, die Phasen oder Schritte innerhalb der Phasen zu konfigurieren und bereitzustellen, um sie Ihren IT-Ressourcen und Geschäftsanforderungen anzupassen.
 
-- **Wenn Sie eine kleinere oder neueren Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen.
+- **Wenn Sie eine kleinere oder neueren Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen. Für eine vereinfachte Bereitstellung für Nicht-Unternehmen [klicken](deploy-foundation-infrastructure-non-enterprises.md) Sie hier.
 
 -  **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
 
@@ -80,7 +80,7 @@ Die Foundation-Infrastruktur besteht aus einer Reihe von konfigurierter Software
 
 Es ist jedoch wichtig zu beachten, dass die Microsoft 365 Enterprise Foundation-Infrastruktur unabhängig vom Rollout von Software und Diensten für Ihre Benutzer ist. ***Sie können die Schichten der Foundation-Infrastruktur konfigurieren, ohne diese Schichten für alle Ihre Benutzer bereitstellen zu müssen.***
 
-Daher ist es möglich, Elemente der Foundation-Infrastruktur weit vor dem Rollout dieser Elemente für die Vielzahl Ihrer Benutzer in den Büros, Regionen oder Abteilungen Ihrer Organisation zu konfigurieren und zu testen.
+Es ist möglich, Elemente der Foundation-Infrastruktur weit vor dem Rollout dieser Elemente für die Vielzahl Ihrer Benutzer in den Büros, Regionen oder Abteilungen Ihrer Organisation zu konfigurieren und zu testen.
 
 Beispielsweise erstellen Sie die Einstellungen für:
 
@@ -102,7 +102,7 @@ Wenn Sie bereit sind, Elemente dieser Infrastruktur für Benutzer bereitzustelle
 | Verwaltung mobiler Geräte | Hinzufügen von Konten zu den Gruppen für die Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
 | Information Protection | Hinzufügen von Benutzerkonten zu den Gruppen für Information Protection Bezeichnungen. |
 
-Sobald die Foundation-Infrastruktur fertiggestellt, getestet und erprobt ist, können Sie installierte Software, wie Windows 10 Enterprise und Office 365 ProPlus, sowie Cloud-basierte Dienste und Schutzmaßnahmen, wie Geräteregistrierung und Richtlinien für bedingten Zugriff, an Ihre Benutzer so bereitstellen, wie es Ihren Unternehmenszielen und IT-Ressourcen am besten entspricht.
+Sobald die Phasen oder Elemente der Foundation-Infrastruktur fertiggestellt, getestet und erprobt ist, können Sie installierte Software, wie Windows 10 Enterprise und Office 365 ProPlus, sowie Cloud-basierte Dienste und Schutzmaßnahmen, wie Geräteregistrierung und Richtlinien für bedingten Zugriff, an Ihre Benutzer so bereitstellen, wie es Ihren Unternehmenszielen und IT-Ressourcen am besten entspricht.
 
 ## <a name="deployment-and-project-management-strategies"></a>Bereitstellungs- und Projektmanagement-Strategien
 
@@ -114,7 +114,6 @@ Wenn Ihre Organisation kleiner und Microsoft 365 Business für Sie nicht geeigne
 
 
 ## <a name="next-step"></a>Nächster Schritt
-
 
 | Wo ich bin | Wo ich hin möchte |
 |:-------|:-----|
