@@ -41,7 +41,7 @@ In der Vergangenheit war die Anwendungs- und Hardwarekompatibilität bei der Akt
 
 Nichtsdestotrotz ist das Überprüfen der Anwendungs- und Hardwarekompatibilität in Abhängigkeit von der Größe und dem Alter Ihrer Organisation mit großer Wahrscheinlichkeit nach wie vor ein wichtiger erster Schritt in unserem empfohlenen Bereitstellungsprozess, der aus acht Phasen besteht.
 
-In diesem Artikel führen wir Sie durch diese erste Phase – die Geräte- und App-Bereitschaft – mithilfe der Microsoft-Tools zur Bewertung der Bereitschaft, einschließlich des neuen Tools Desktop Analytics, bei dem es sich um eine intelligente, cloudbasierte Lösung handelt, die mit Ihrer Windows-Lizenz verfügbar ist.
+In diesem Artikel führen wir Sie durch diese erste Phase – die Geräte- und App-Bereitschaft – mithilfe der Microsoft-Tools zur Bewertung der Bereitschaft, einschließlich des neuen Tools Desktop Analytics, bei dem es sich um eine intelligente cloudbasierte Lösung handelt, die mit Ihrer Windows-Lizenz verfügbar ist.
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10-Kompatibilitätsüberprüfung
 
