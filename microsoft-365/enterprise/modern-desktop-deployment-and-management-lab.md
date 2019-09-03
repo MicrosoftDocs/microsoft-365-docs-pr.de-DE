@@ -126,8 +126,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
   - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - 
-  [System Center Configuration Manager – Betriebssystembereitstellung](https://docs.microsoft.com/de-DE/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager – Betriebssystembereitstellung](https://docs.microsoft.com/de-DE/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Planen der Windows 10-Bereitstellung</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
