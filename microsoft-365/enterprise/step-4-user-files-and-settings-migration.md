@@ -59,15 +59,13 @@ Während der Migration muss ausreichende Serverspeicherkapazität vorhanden sein
 
 Wenn Sie eine PC-Aktualisierung ausführen und nicht die primäre Windows-Partition neu formatieren, haben Sie mit USMT auch die Möglichkeit, einen Hard-Link-Migrationsspeicher zu verwenden. Dieser Vorgang behält den Benutzerstatus auf dem PC bei, während das alte Betriebssystem und die Apps entfernt und aktualisiert werden. Da der Wiederherstellungsvorgang von der gleichen lokalen Partition aus erfolgt, bietet diese Option erhebliche Verbesserungen bei der Leistung und verringert den Netzwerkdatenverkehr.
 
-
-  [Migrationstool für den Benutzerstatus (USMT)](https://docs.microsoft.com/de-DE/windows/deployment/usmt/usmt-overview)
+[Migrationstool für den Benutzerstatus (USMT)](https://docs.microsoft.com/de-DE/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>Verschieben bekannter Ordner in OneDrive
 
 Wenn die Benutzer OneDrive nutzen oder wenn Sie OneDrive im Rahmen dieser Bereitstellung hinzufügen, steht Ihnen eine neue Option zur Verfügung. Indem es die Cloud zum Synchronisieren von Benutzerdateien verwendet, bietet das OneDrive-Feature zum Verschieben bekannter Ordner ein Maß an Flexibilität, das sich mit den Optionen für eine lokale Netzwerk-basierte Dateimigration nicht erreichen lässt. Wenn das Feature vor der Migration aktiviert wurde, bietet es sicheren Zugriff auf neue oder aktualisierte PCs, und es entfällt die Notwendigkeit, temporäre Migrationsspeicher auf den eigenen Servern zu erstellen. Darüber hinaus ist es potenziell für den Benutzer vollständig transparent.
 
-
-  [Umleiten und Verschieben von bekannten Windows-Ordnern in OneDrive](https://docs.microsoft.com/de-DE/onedrive/redirect-known-folders)
+[Umleiten und Verschieben von bekannten Windows-Ordnern in OneDrive](https://docs.microsoft.com/de-DE/onedrive/redirect-known-folders)
 
 Wenn Sie OneDrive bereits verwenden, ist Ihnen bekannt, dass Benutzer die Ordner und Speicherorte auswählen können, die sie von OneDrive oder SharePoint auf ihrem Gerät synchronisieren möchten, wobei es jedoch beim Endbenutzer liegt, dies einzurichten. Durch das Verschieben bekannter Ordner können Sie die Ordner „Dokumente“, „Desktop“ und „Bilder“ in einem Benutzerprofils als Ziel auswählen und diese alle in OneDrive schützen. Ein Benutzer kann dies selbst durchführen, wobei Sie dies jedoch auch, und das ist in diesem Szenario wichtig, über [Gruppenrichtlinieneinstellungen erzwingen können](https://docs.microsoft.com/de-DE/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c).
 
