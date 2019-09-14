@@ -8,16 +8,36 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35795621"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982606"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für die Microsoft Managed Desktop-Dokumentation
 
 In diesem Thema werden neue und aktualisierte Themen in der [Dokumentation zu Microsoft Managed Desktop](index.yml)aufgelistet.
+
+## <a name="september-2019"></a>September 2019
+Neues oder geändertes Thema | Beschreibung
+--- | ---
+[Voraussetzungen für Microsoft Managed Desktop](get-ready/prerequisites.md) | Aktualisiertes Thema
+[Einrichten von Microsoft Managed Desktop-Geräten](get-started/set-up-devices.md) | Neues Thema
+[Neue Geräte selbst registrieren](get-started/register-devices-self.md) | Aktualisiertes Thema
+[Registrieren vorhandener Geräte](get-started/register-reused-devices-self.md) | Neues Thema
+[Behandlung von Updates in Microsoft Managed Desktop](service-description/updates.md) | Aktualisiertes Thema
+
+## <a name="august-2019"></a>August 2019
+Neues oder geändertes Thema | Beschreibung
+--- | ---
+[Arbeiten mit Microsoft Consulting Services](get-ready/apps-mcs.md) | Aktualisiertes Thema
+[Administrator Unterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisiertes Thema
+[Aufrufen von Hilfe für Endbenutzer](working-with-managed-desktop/end-user-support.md) | Aktualisiertes Thema
+[Voraussetzungen für Microsoft Managed Desktop](get-ready/prerequisites.md) | Aktualisiertes Thema
+[Microsoft Managed Desktop-Technologien](intro/technologies.md) | Aktualisiertes Thema
+
+
 
 ## <a name="july-2019"></a>Juli 2019
 Neues oder geändertes Thema | Beschreibung
@@ -46,7 +66,7 @@ Neues oder geändertes Thema | Beschreibung
 [Vorbereiten von zugeordneten Laufwerken für Microsoft Managed Desktop](get-ready/mapped-drives.md) | Neues Thema
 [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Neues Thema
 [Bestellen von Microsoft Managed Desktop-Geräten](get-started/devices.md) | Aktualisiertes Thema
-
+[Aufrufen von Hilfe für Endbenutzer](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>April 2019
 Neues oder geändertes Thema | Beschreibung

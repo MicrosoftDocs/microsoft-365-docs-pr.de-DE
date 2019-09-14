@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f16989960d999e65ad904fd11894d5fe8bca98f0
-ms.sourcegitcommit: 1bd18fb00aad37bad8d1411a916f444e1d1a38cf
+ms.openlocfilehash: 83e7f227639c9efa69bb634ad91e3ff4f0821cd8
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756897"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982496"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
@@ -33,7 +33,8 @@ Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen mö
 
 | Modell    | Mindestanforderungen  | Zusätzliche Anforderungen    | Archivdatum   | Ruhestands Datum   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | IR-Kamera erforderlich | 9. Januar 2020  | 9. Januar 2023  |
+|[Dell Latitude 5300/5400/5500](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-5400-business-laptop/spd/latitude-14-5400-laptop) | 256 GB/Intel i5/8 GB RAM | IR-Kamera erforderlich | 1. Juni 2021  | 1. Juni 2024  |
+[Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | IR-Kamera erforderlich | 9. Januar 2020  | 9. Januar 2023  |
 [Dell Latitude 7390 7390 2-in-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297)   | 256 GB/Intel i5/8 GB RAM   | IR-Kamera erforderlich | 9. Januar 2020 | 9. Januar 2023 |
 |[Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | IR-Kamera erforderlich | 22. Mai 2020  | 22. Mai 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | SKU mit 5VS03AV, IR-Kamera erforderlich | 14. Mai 2020 | 14. Mai 2023 |

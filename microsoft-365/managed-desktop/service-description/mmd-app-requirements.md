@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913016"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982456"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop-App-Anforderungen
 
@@ -33,7 +33,7 @@ Alle auf Microsoft Managed Devices installierten Anwendungen und Treiber müssen
 
 Bestimmte Anwendungstypen sind auf Microsoft Managed Desktop-Geräten nicht zulässig:
 - Virenschutz-, Sicherheits-oder Überwachungssoftware von Drittanbietern
-- Versionen von Microsoft Office vor Office 365 pro Plus
+- Versionen von Microsoft Office vor Office 365 ProPlus
 - Anwendungen, die andere Drittanbietersoftware installieren oder bündeln
 
 ## <a name="restricted-app-behaviors"></a>Eingeschränktes App-Verhalten

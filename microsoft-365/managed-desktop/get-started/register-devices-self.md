@@ -1,62 +1,74 @@
 ---
-title: Selbst registrieren von Geräten in Microsoft Managed Desktop
+title: Neue Geräte selbst registrieren
 description: Geräte selbst registrieren, damit Sie von Microsoft Managed Desktop verwaltet werden können
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857298"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981726"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop"></a>Registrieren von Geräten in Microsoft Managed Desktop
+# <a name="register-new-devices-yourself"></a>Neue Geräte selbst registrieren
 
->[!NOTE]
->In diesem Thema werden die Schritte beschrieben, mit denen Sie Geräte selbst registrieren können. Der Prozess für Partner ist unter [Register Devices in Microsoft Managed Desktop for Partners](register-devices-partner.md)dokumentiert.
+Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte mithilfe von Microsoft Managed Desktop im Azure-Portal registrieren.
 
-Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte mithilfe von Microsoft Managed Desktop im Azure-Portal registrieren oder mithilfe einer API Flexibilität erzielen.
+> [!NOTE]
+> Arbeiten mit einem Partner, um Geräte zu beziehen? Wenn dies der Fall ist, müssen Sie sich keine Gedanken über das erhalten der Hardware-Hashes machen. Das werden Sie für Sie erledigen. Stellen Sie sicher, dass Ihr Partner eine Beziehung mit Ihnen im [Partner Center](https://partner.microsoft.com/dashboard) herstellt und dass er Delegierte Administratorrechte für Azure Active Directory und Office 365 enthält. Ihr Partner kann weitere Informationen finden Sie unter [Hilfe zum Partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Nachdem diese Beziehung hergestellt wurde, registriert Ihr Partner einfach Geräte in Ihrem Namen – keine weiteren Schritte, die von Ihnen benötigt werden. Wenn Sie die Details anzeigen möchten oder Ihr Partner Fragen hat, finden Sie unter [Schritte für Partner zum Registrieren von Geräten](register-devices-partner.md). Nachdem die Geräte registriert wurden, können Sie mit der [Überprüfung des Images](#check-the-image) fortfahren und [die Geräte](#deliver-the-device) an Ihre Benutzer übermitteln.
 
-## <a name="prepare-to-register-devices"></a>Vorbereiten der Registrierung von Geräten
+## <a name="prepare-to-register-brand-new-devices"></a>Vorbereiten der Registrierung brandneuer Geräte
 
-Wenn Sie die Geräte, die Sie verwenden möchten, noch nicht erhalten haben, überprüfen Sie [Microsoft Managed Desktop-Geräte](../service-description/device-list.md) , und arbeiten Sie mit einem Geräte Partner zusammen, um unterstützte Geräte zu beschaffen.
 
-Unabhängig davon, ob Sie mit vollständig neuen Geräten arbeiten oder vorhandene wieder verwenden, um Sie bei Microsoft Managed Desktop zu registrieren, müssen Sie eine durch **trennzeichengetrennte CSV-Datei**vorbereiten. Diese Datei sollte die folgenden Informationen für jedes Gerät enthalten:
+Nachdem Sie die neuen Geräte in der Hand haben, führen Sie die folgenden Schritte aus:
 
->[!NOTE]
->Dieses Format ist nur für Self-Service-Registrierungen. Die Format Partner sollten in [Register Devices in Microsoft Managed Desktop for Partners](register-devices-partner.md)dokumentiert werden.
+1. [Rufen Sie den Hardwarehash für jedes Gerät ab.](#obtain-the-hardware-hash)
+2. [Zusammenführen der Hash Daten](#merge-hash-data)
+3. [Registrieren Sie die Geräte in Microsoft Managed Desktop](#register-devices).
+4. [Stellen Sie sicher, dass das Bild korrekt ist.](#check-the-image)
+5. [Verteilen des Geräts](#deliver-the-device)
 
-Diese Werte werden für Anzeigezwecke verwendet und müssen nicht genau mit den Eigenschaften des Geräts übereinstimmen.
-- Gerätehersteller (Beispiel: SpiralOrbit) 
-- Gerätemodell (Beispiel: ContosoABC)
-- Seriennummer des Geräts
+### <a name="obtain-the-hardware-hash"></a>Abrufen des Hardwarehash
 
-Der Hardwarehash muss eine exakte Übereinstimmung aufweisen.
-- Hardware Hash
+Microsoft Managed Desktop identifiziert jedes Gerät eindeutig, indem es auf seinen Hardwarehash verweist. Sie haben drei Optionen zum erhalten dieser Informationen:
 
-Um den Hardwarehash zu erhalten, können Sie Hilfe von Ihrem OEM oder Partner anfordern oder die folgenden Schritte für jedes Gerät durchführen:
+- Fragen Sie Ihren OEM-Lieferanten nach der Autopilot-Registrierungsdatei, die die Hardware-Hashes enthält.
+- Führen Sie auf jedem Gerät ein [Windows PowerShell-Skript](#powershell-script-method) aus, und sammeln Sie die Ergebnisse in einer Datei.
+- Starten Sie jedes Gerät, aber schließen Sie nicht die Windows Setup-Umgebung ab – und [sammeln Sie die Hashes auf einem wechselbaren Flashlaufwerk](#flash-drive-method).
+
+#### <a name="powershell-script-method"></a>PowerShell-Skriptmethode
 
 1.  Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten.
 2.  Ausführen`Install-Script -Name Get-MMDRegistrationInfo`
 3.  Ausführen`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
+#### <a name="flash-drive-method"></a>Flash Drive-Methode
 
-Alternativ können Sie diese Schritte auf einem brandneuen Gerät befolgen (bevor Sie die OOBE zum ersten Mal durchgehen):
-
-1. Legen Sie auf einem anderen Gerät ein USB-Laufwerk ein.
+1. Legen Sie auf einem anderen Gerät als dem, das Sie gerade registrieren, ein USB-Laufwerk ein.
 2. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten.
 3. Ausführen`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
-4. Aktivieren Sie das Ziel Gerät, starten Sie jedoch nicht die Setup-Umgebung. Wenn Sie das Setupprogramm versehentlich gestartet haben, müssen Sie das Gerät zurücksetzen oder neu abbilden.
+4. Aktivieren Sie das Gerät, das Sie registrieren, aber *beginnen Sie nicht mit der Setup-Umgebung*. Wenn Sie das Setupprogramm versehentlich gestartet haben, müssen Sie das Gerät zurücksetzen oder neu abbilden.
 5. Legen Sie das USB-Laufwerk ein, und drücken Sie dann UMSCHALT + F10.
 6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, `cd <pathToUsb>`und führen Sie dann aus.
 7. Ausführen`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Ausführen`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
-3. Entfernen Sie das USB-Laufwerk, und fahren Sie dann das Gerät herunter, indem Sie`shutdown -s -t 0`
+9. Entfernen Sie das USB-Laufwerk, und fahren Sie dann das Gerät herunter, indem Sie`shutdown -s -t 0`
 
 >[!IMPORTANT]
->Schalten Sie das Zielgerät erst wieder ein, wenn Sie die Registrierung für dieses Gerät abgeschlossen haben. 
+>Schalten Sie das Gerät, das Sie erneut registrieren, erst wieder ein, wenn Sie die Registrierung dafür abgeschlossen haben. 
+
+
+### <a name="merge-hash-data"></a>Zusammenführen von Hash Daten
+
+Sie müssen die Daten in den CSV-Dateien in einer einzigen Datei zusammenfassen, um die Registrierung abzuschließen. Hier ist ein Beispiel für PowerShell-Skripts, um dies zu vereinfachen:
+
+`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+
+### <a name="register-devices"></a>Registrieren von Geräten
+
+Die CSV-Datei muss sich in einem bestimmten Format für die Registrierung befinden. Wenn Sie die Daten in den vorherigen Schritten selbst gesammelt haben, sollte die Datei bereits im richtigen Format vorhanden sein. Wenn Sie die Datei von einem Lieferanten beziehen, müssen Sie das Format möglicherweise anpassen.
 
 >[!NOTE]
 >Für Ihre Bequemlichkeit können Sie eine [Vorlage](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) für diese CSV-Datei herunterladen.
@@ -71,10 +83,9 @@ Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Her
   ```
 
 >[!NOTE]
->Wenn Sie vergessen, die Beispieldaten zu ändern, tritt bei der Registrierung ein Fehler auf.   
+>Wenn Sie vergessen, die Beispieldaten zu ändern, tritt bei der Registrierung ein Fehler auf.
 
-
-## <a name="register-devices-by-using-the-azure-portal"></a>Registrieren von Geräten mithilfe des Azure-Portals
+#### <a name="register-devices-by-using-the-azure-portal"></a>Registrieren von Geräten mithilfe des Azure-Portals
 
 Wählen Sie im linken Navigationsbereich **Geräte** aus dem Microsoft Managed Desktop [Azure-Portal](https://aka.ms/mmdportal)aus. Select **+ Register Devices**; das Einfliegen wird geöffnet:
 
@@ -90,7 +101,7 @@ Führen Sie die folgenden Schritte aus:
 
 1. Geben Sie im Feld **Dateiupload**einen Pfad zu der CSV-Datei an, die Sie zuvor erstellt haben.
 2. Optional können Sie eine **Auftrags-ID** oder eine **Einkaufs-ID** für eigene Tracking-Zwecke hinzufügen. Für diese Werte gibt es keine Formatanforderungen.
-3. Wählen Sie **Geräte registrieren**aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät**hinzu, das als " **Registrierung**Ausstehend" gekennzeichnet wird. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, was darauf wartet, dass ein Endbenutzer mit der Verwendung beginnt.
+3. Wählen Sie **Geräte registrieren**aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät**hinzu, das als " **Registrierung ausstehend**" gekennzeichnet wird. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, was darauf wartet, dass ein Endbenutzer mit der Verwendung beginnt.
 
 
 Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite von **Microsoft Managed Desktop-Devices** überwachen. Mögliche Zustände, die dort gemeldet werden, umfassen:
@@ -98,28 +109,35 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite von **Mi
 | Status | Beschreibung |
 |---------------|-------------|
 | Registrierung ausstehend | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später erneut. |
-| Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung](register-devices-self.md#troubleshooting) . |
+| Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung bei der Geräteregistrierung](#troubleshooting-device-registration) . |
 | Benutzer einsatzfähig | Die Registrierung wurde erfolgreich ausgeführt, und das Gerät ist jetzt bereit, an den Endbenutzer zugestellt zu werden. Microsoft Managed Desktop führt Sie durch die erstmalige Einrichtung, sodass Sie keine weiteren Vorbereitungen treffen müssen. |
 | Aktiv | Das Gerät wurde an den Endbenutzer übermittelt, und Sie haben sich bei Ihrem Mandanten registriert. Dies deutet auch darauf hin, dass das Gerät regelmäßig verwendet wird. |
 | Inaktiv | Das Gerät wurde an den Endbenutzer übermittelt, und Sie haben sich bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch vor kurzem nicht verwendet (in den letzten 7 Tagen).  | 
 
-
-## <a name="register-devices-by-using-an-api"></a>Registrieren von Geräten mithilfe einer API
-
-Eine Rest-API steht Ihnen zur Verfügung, um Ihnen größere Flexibilität und Wiederholbarkeit bei häufigen separaten Geräte Registrierungen zu ermöglichen. Um die API verwenden zu können, bitten Sie Ihren Microsoft-Kontakt um Hilfe, um an einer Vorschau dieser Funktion teilzunehmen.
-
-
-
-## <a name="troubleshooting"></a>Problembehandlung
+#### <a name="troubleshooting-device-registration"></a>Problembehandlung bei der Geräteregistrierung
 
 | Fehlermeldung | Details |
 |---------------|-------------|
 | Gerät nicht gefunden | Dieses Gerät konnte nicht registriert werden, da keine Übereinstimmung für den bereitgestellten Hersteller, das Modell oder die Seriennummer gefunden werden konnte. Bestätigen Sie diese Werte mit Ihrem Gerätelieferanten. |
-| Gerät nicht gefunden | Dieses Gerät konnte nicht registriert werden, da es in Ihrer Organisation nicht vorhanden ist. Keine weitere Aktion erforderlich. |
 | Hardware Hash ungültig | Der für dieses Gerät angegebene Hardwarehash wurde nicht ordnungsgemäß formatiert. Überprüfen Sie den Hardwarehash doppelt, und senden Sie dann erneut. |
 | Gerät ist bereits registriert | Dieses Gerät ist bereits für Ihre Organisation registriert. Keine weitere Aktion erforderlich. |
 | Von einer anderen Organisation beanspruchtes Gerät | Dieses Gerät wurde bereits von einer anderen Organisation beansprucht. Erkundigen Sie sich bei Ihrem Gerätelieferanten. |
 | Unerwarteter Fehler | Ihre Anforderung konnte nicht automatisch verarbeitet werden. Kontaktieren Sie den Support, und geben Sie die Anforderungs-ID an:<requestId> |
+
+### <a name="check-the-image"></a>Überprüfen des Bilds
+
+Wenn Ihr Gerät von einem Microsoft Managed Desktop Partner-Anbieter stammt, sollte das Bild korrekt sein.
+
+Sie können das Bild auch auf eigene Faust anwenden, wenn Sie es vorziehen. Um zu beginnen, wenden Sie sich an den Microsoft-Mitarbeiter, mit dem Sie zusammenarbeiten, und Sie werden den Speicherort und die Schritte zum Anwenden des Abbilds erhalten.
+
+### <a name="deliver-the-device"></a>Verteilen des Geräts
+
+> [!IMPORTANT]
+> Bevor Sie das Gerät an Ihren Benutzer übergeben, müssen Sie sicherstellen, dass Sie die [entsprechenden Lizenzen](../get-ready/prerequisites.md) für diesen Benutzer erworben und angewendet haben.
+
+Wenn alle Lizenzen angewendet werden, können Sie [Ihre Benutzer zur Verwendung von Geräten verwenden](get-started-devices.md), und dann kann Ihr Benutzer das Gerät starten und die Windows Setup-Umgebung durchlaufen.
+
+
 
 
 

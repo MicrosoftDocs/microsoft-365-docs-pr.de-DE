@@ -1,18 +1,18 @@
 ---
-title: Registrieren von Geräten in Microsoft Managed Desktop für Partner
+title: Schritte für Partner zum Registrieren von Geräten
 description: Wie Partner Geräte registrieren können, damit Sie von Microsoft Managed Desktop verwaltet werden können
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
-ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
+ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447527"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982716"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrieren von Geräten in Microsoft Managed Desktop für Partner
+# <a name="steps-for-partners-to-register-devices"></a>Schritte für Partner zum Registrieren von Geräten
 
 
 In diesem Thema werden die Schritte beschrieben, die für Partner zum Registrieren von Geräten befolgt werden müssen. Das Verfahren zum Registrieren von Geräten selbst ist unter [Registrieren von Geräten in Microsoft Managed Desktop selbst](register-devices-self.md)dokumentiert.
@@ -41,7 +41,7 @@ Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Her
 >Dieses Format ist nur für den Partner Prozess. Der Prozess für die Selbstregistrierung ist in [Register Devices in Microsoft Managed Desktop selbst](register-devices-self.md)dokumentiert.
 
 >[!IMPORTANT]
->Diese Werte müssen genau mit den Hersteller Werten von SMBIOS übereinstimmen. Sie müssen auch *Hardware Hash* in der ersten Zeile (aber kein Wert für ihn in der zweiten Zeile) das nachstehende Komma nach dem Wert der *Seriennummer* in der zweiten Zeile einschließen.
+>Diese Werte müssen mit den Hersteller Werten von SMBIOS genau übereinstimmen, einschließlich Groß-/Kleinschreibung und Sonderzeichen. 
 
 - Gerätehersteller (Beispiel: SpiralOrbit) 
 - Gerätemodell (Beispiel: ContosoABC)
@@ -60,7 +60,7 @@ Die Registrierung mithilfe des Azure-Portals ist identisch mit der von Self-Serv
 7. Wählen Sie **Geräte**aus.
 8. Geben Sie im Feld **Dateiupload**einen Pfad zu der CSV-Datei an, die Sie zuvor erstellt haben.
 9. Optional können Sie eine **Auftrags-ID** oder eine **Einkaufs-ID** für eigene Tracking-Zwecke hinzufügen. Für diese Werte gibt es keine Formatanforderungen.
-10. Wählen Sie **Geräte registrieren**aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät**hinzu, das als " **Registrierung**Ausstehend" gekennzeichnet wird. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, was darauf wartet, dass ein Endbenutzer mit der Verwendung beginnt.
+10. Wählen Sie **Geräte registrieren**aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät**hinzu, das als " **Registrierung ausstehend**" gekennzeichnet wird. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, was darauf wartet, dass ein Endbenutzer mit der Verwendung beginnt.
 
 
 Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite von **Microsoft Managed Desktop-Devices** überwachen. Mögliche Zustände, die dort gemeldet werden, umfassen:
@@ -68,21 +68,18 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite von **Mi
 | Status | Beschreibung |
 |---------------|-------------|
 | Registrierung ausstehend | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später erneut. |
-| Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung](register-devices-self.md#troubleshooting) . |
+| Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung bei der Geräteregistrierung](register-devices-self.md#troubleshooting-device-registration) . |
 | Benutzer einsatzfähig | Die Registrierung wurde erfolgreich ausgeführt, und das Gerät ist jetzt bereit, an den Endbenutzer zugestellt zu werden. Microsoft Managed Desktop führt Sie durch die erstmalige Einrichtung, sodass Sie keine weiteren Vorbereitungen treffen müssen. |
 | Aktiv | Das Gerät wurde an den Endbenutzer übermittelt, und Sie haben sich bei Ihrem Mandanten registriert. Dies deutet auch darauf hin, dass das Gerät regelmäßig verwendet wird. |
 | Inaktiv | Das Gerät wurde an den Endbenutzer übermittelt, und Sie haben sich bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch vor kurzem nicht verwendet (in den letzten 7 Tagen).  |
 
-## <a name="register-devices-by-using-an-api"></a>Registrieren von Geräten mithilfe einer API
 
-Die Registrierung per API ist identisch mit Self-Service, mit dem Unterschied, dass die Hardwarehash-Eigenschaft der gerätesammlung optional ist, wie im Abschnitt CSV beschrieben. 
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
 | Fehlermeldung | Details |
 |---------------|-------------|
 | Gerät nicht gefunden | Dieses Gerät konnte nicht registriert werden, da keine Übereinstimmung für den bereitgestellten Hersteller, das Modell oder die Seriennummer gefunden werden konnte. Bestätigen Sie diese Werte mit Ihrem Gerätelieferanten. |
-| Gerät nicht gefunden | Dieses Gerät konnte nicht registriert werden, da es in Ihrer Organisation nicht vorhanden ist. Keine weitere Aktion erforderlich. |
 | Hardware Hash ungültig | Der für dieses Gerät angegebene Hardwarehash wurde nicht ordnungsgemäß formatiert. Überprüfen Sie den Hardwarehash doppelt, und senden Sie dann erneut. |
 | Gerät ist bereits registriert | Dieses Gerät ist bereits für Ihre Organisation registriert. Keine weitere Aktion erforderlich. |
 | Von einer anderen Organisation beanspruchtes Gerät | Dieses Gerät wurde bereits von einer anderen Organisation beansprucht. Erkundigen Sie sich bei Ihrem Gerätelieferanten. |

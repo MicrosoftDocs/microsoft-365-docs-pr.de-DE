@@ -5,18 +5,17 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 08c0ee15869ac47d889f9575e8eaeff63fa64fd7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390626"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982476"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administrator Unterstützung für Microsoft Managed Desktop
 
-Sie können Support Tickets oder Feedback Anforderungen über das Microsoft Managed Desktop administrative Portal an Microsoft übermitteln. Support Anforderungen werden immer über Feedback Übermittlungen priorisiert. Support Anforderungen werden je nach Schweregrad behandelt, wie in der Definitionstabelle für den [Schweregrad](#sev)beschrieben. Feedback wird überprüft, und bei Bedarf wird eine Antwort angegeben. 
+Sie können Support Tickets oder Feedback Anforderungen über das Microsoft Managed Desktop administrative Portal an Microsoft übermitteln. Support Anforderungen werden immer über Feedback Übermittlungen priorisiert. Support Anforderungen werden je nach Schweregrad behandelt, wie in der [Definitionstabelle für den Schweregrad](#sev)beschrieben. Feedback wird überprüft, und bei Bedarf wird eine Antwort angegeben. 
 
 >[!IMPORTANT]
 >Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Verpackungen, Geräte, Sicherheit und andere einrichten. Sie können keine Support Anfragen in einen dieser Bereiche übermitteln, wenn kein Administratorkontakt konfiguriert ist.
@@ -56,3 +55,4 @@ Weitere Details:
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Endbenutzer Unterstützung für Microsoft Managed Desktop](end-user-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md). 
+- Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Resources** des [Microsoft Managed Desktop Admins detaillierte Verfahren, Ablauf, Arbeitsanweisungen und FAQs. Portal](https://aka.ms/mwaasportal).

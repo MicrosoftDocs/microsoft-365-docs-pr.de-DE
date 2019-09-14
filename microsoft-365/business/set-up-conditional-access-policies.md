@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie Richtlinien für bedingten Zugriff für Microsoft 365-Kampagnen einrichten.
-ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 614e3a6e13a14114f40ecf87bf936d4165744503
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35076309"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982379"
 ---
 # <a name="set-up-conditional-access-policies"></a>Einrichten von Richtlinien für bedingten Zugriff
 
@@ -53,7 +53,7 @@ Weitere Informationen zu diesen Richtlinien finden Sie unter [Was sind Basisrich
 1. Lesen Sie die folgenden spezifischen Anweisungen für jede Richtlinie:
 
   - [MFA für Administratoren erforderlich](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Reequire MFA für Benutzer](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+- [MFA für Benutzer erforderlich](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
  - [Legacy Authentifizierung blockieren](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [MFA für Service Management erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 

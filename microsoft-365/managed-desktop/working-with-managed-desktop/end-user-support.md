@@ -5,14 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1e98ef5a7c800ed3fb7fe1b7355e535ed3576c1e
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853164"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982396"
 ---
 # <a name="getting-help-for-end-users"></a>Aufrufen von Hilfe für Endbenutzer
 
@@ -46,3 +45,4 @@ Endbenutzer mit von Microsoft verwalteten Desktop Geräten haben auch Zugriff au
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md).
+- Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Resources** des [Microsoft Managed Desktop Admins detaillierte Verfahren, Ablauf, Arbeitsanweisungen und FAQs. Portal](https://aka.ms/mwaasportal).

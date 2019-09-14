@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-Dokumentation, 
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 0ee9696d441d61fb41359f6502e6f73988749156
-ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
+ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33623149"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982806"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
@@ -26,17 +26,7 @@ ms.locfileid: "33623149"
 
 *Dieses Feature gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-Microsoft 365 Enterprise umfasst Features zur Unterstützung der Verwaltung von Geräten und deren apps in Ihrer Organisation. Mithilfe von Microsoft InTune können Sie IOS-, Android-, macOS-und Windows-Geräte verwalten, um den Zugriff auf die Ressourcen Ihrer Organisation einschließlich Ihrer Daten zu schützen. InTune integriert sich in Azure Active Directory (Azure AD) und aktiviert die folgenden Geschäftsszenarien für Microsoft 365:
-
-- Speichern und Freigeben von Dateien innerhalb und außerhalb Ihrer Organisation für eine nahtlose Zusammenarbeit über Organisationsgrenzen hinweg
-- Sicheres Arbeiten überall und jederzeit von Ihrem Gerät aus, um bei einem flexiblen Arbeitsstil produktiver zu arbeiten
-- Beruhigendes Gefühl dank Steuerungen und Sichtbarkeit für branchengeprüfte Konformität mit globalen Standards
-- Schützen Ihrer Informationen und Reduzierung des Risikos von Datenverlusten
-- Erkennen und schützen von externen Bedrohungen
-- Überwachen, melden und Analysieren von Aktivitäten, um umgehend reagieren zu können, um organisatorische Sicherheit zu gewährleisten
-- Schützen Ihrer Benutzer und ihrer Konten
-
-Weitere Informationen finden Sie unter [Digitale Transformation mit Microsoft 365](http://transform.microsoft.com). 
+Microsoft 365 Enterprise umfasst Features zur Unterstützung der Verwaltung von Geräten und deren apps in Ihrer Organisation. Mithilfe von Microsoft InTune können Sie IOS-, Android-, macOS-und Windows-Geräte verwalten, um den Zugriff auf die Ressourcen Ihrer Organisation einschließlich Ihrer Daten zu schützen. 
 
 In dieser Phase registrieren Sie Ihre Geräte in InTune und erstellen und erzwingen Richtlinien, um die Sicherheit und den Schutz Ihrer Daten zu gewährleisten. Die gesamte Dokumentation zur InTune-Bibliothek steht [Online zur Verfügung](https://docs.microsoft.com/intune). Es empfiehlt sich auch, den Leitfaden zur [Planung, Entwurf und Implementierung von InTune-Bereitstellungen](https://docs.microsoft.com/intune/planning-guide) zu lesen, bevor Sie loslegen.
 
@@ -146,7 +136,7 @@ Denken Sie daran, beginnen Sie klein, und verwenden Sie einen mehrstufigen Ansat
 InTune ist ein leistungsstarker Dienst, der zahlreiche Funktionen umfasst. Im folgenden finden Sie einige andere Aufgaben, die Sie mit InTune ausführen können:
 
 - Verwalten von Software und Updates auf [](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)auf Windows-Geräten und [IOS](https://docs.microsoft.com/intune/software-updates-ios) -Geräten
-- Aktivieren Sie [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) auf Ihren Windows 10-Geräten, und verwenden Sie Compliance und bedingten Zugriff, um den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online zu schützen.
+- Aktivieren Sie [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) auf Ihren Windows 10-Geräten, und verwenden Sie Compliance und bedingten Zugriff, um den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online zu schützen.
 - Verwenden von [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)und anderen Partnern für Mobile Verteidigungs Bedrohungen
 - Hinzufügen einer Partner Zertifizierungs [Stelle](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) zum ausgeben und erneuern von Zertifikaten
 - [Bereitstellen von Anleitungen für Endbenutzer](https://docs.microsoft.com/intune/end-user-educate) in der Unternehmens Portal-APP, zum erhalten von apps und mehr

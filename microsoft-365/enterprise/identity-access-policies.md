@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
-ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
+ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35411649"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982016"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -217,18 +217,18 @@ In den folgenden Tabellen werden die empfohlenen Einstellungen beschrieben:
 ||"Speichern unter" verhindern|Ja||
 ||Speicherdienste zum Speichern von Unternehmensdaten auswählen|OneDrive für Unternehmen, SharePoint||
 ||Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|Verwaltete Richtlinien-apps mit Paste in||
-||Anzeige von Webinhalten auf den Managed Browser beschränken|Nein||
+||Anzeige von Webinhalten auf den Managed Browser beschränken|No||
 ||App-Daten verschlüsseln|Ja|Wählen Sie bei iOS diese Option aus: Wenn das Gerät gesperrt ist.|
 ||App-Verschlüsselung deaktivieren, wenn das Gerät aktiviert ist|Ja|Deaktivieren Sie diese Einstellung, um eine Doppel Verschlüsselung zu vermeiden|
-||Kontaktsynchronisierung deaktivieren|Nein||
-||Drucken deaktivieren|Nein||
+||Kontaktsynchronisierung deaktivieren|No||
+||Drucken deaktivieren|No||
 |Zugriff|PIN für Zugriff anfordern|Ja||
 ||Typ auswählen|Numeric||
-||Einfache PIN zulassen|Nein||
+||Einfache PIN zulassen|No||
 ||PIN-Länge|6||
 ||Fingerabdruck anstelle von PIN zulassen|Ja||
 ||App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird|Ja||
-||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|Nein||
+||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|No||
 ||Erneutes Überprüfen der Zugriffsanforderung nach (Minuten)|30||
 ||Bildschirmaufnahme und Android-Assistenten blockieren|Nein|Bei iOS ist diese Option nicht verfügbar.|
 |Anmelde Sicherheitsanforderungen|Max. Pin-Versuche|5|PIN zurücksetzen|
@@ -322,11 +322,11 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 ||Windows Defender-Antischadsoftware-Signatur auf dem neuesten Stand|Erforderlich||
 ||Echtzeitschutz|Erforderlich|Wird nur für Windows 10-Desktop unterstützt|
 
-**Windows Defender ATP**
+**Microsoft Defender ATP**
 
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Windows Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel||
+|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets)
 Bevor Sie eine Richtlinie hinzufügen, die kompatible PCs erfordert, müssen Sie die Geräte für die Verwaltung in InTune registrieren. Die Verwendung der mehrstufigen Authentifizierung wird empfohlen, bevor Geräte in InTune registriert werden, um sicher zu sein, dass das Gerät im Besitz des beabsichtigten Benutzers ist. 

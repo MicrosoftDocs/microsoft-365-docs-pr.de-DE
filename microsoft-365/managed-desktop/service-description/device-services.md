@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390652"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982486"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop-Geräte Dienste
 
@@ -26,7 +26,7 @@ Microsoft stellt diese Dienste für von Microsoft verwaltete Desktop Geräte ber
  --- | ---
 Support | Support-Agents beantworten Fragen, die sich direkt auf Gerätefunktionen beziehen, und diagnostizieren Geräteprobleme.
 Bestandsaufnahme | Alle Geräte werden im Verwaltungsportal von Microsoft Managed Desktop zur Inventarisierung und Statusverfolgung nachverfolgt.
-Firmware/Treiberupdates | Firmware/Treiberupdates werden zur Kompatibilität von Microsoft bereitgestellt und überwacht. 
+Firmware/Treiberupdates | Standardmäßig werden von Microsoft verwaltete Desktop Gerätefirmware-und Treiberupdates von Windows Update empfangen. Nicht alle Hardware Partner stellen Ihre Updates über Windows Update bereit; Diese Updates können separat angefordert werden.
 Zubehör | Zubehörteile, die mit Ihrem Gerät geliefert werden, werden von denselben Diensten wie das Gerät selbst abgedeckt, die Gewährleistungsbedingungen können jedoch unterschiedlich sein. Lesen Sie die Gewährleistungsbedingungen, die Sie bei der Auswahl Ihrer Geräte getroffen haben. 
 Geräte Einrichtung    | Geräte werden mit der aktuellen Version von Windows vorkonfiguriert und erhalten Ihre apps und Konfigurationen über die Cloud. 
 
