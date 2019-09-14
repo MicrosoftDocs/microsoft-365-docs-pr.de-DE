@@ -2,7 +2,7 @@
 title: Bereitstellen von SharePoint Online und OneDrive for Business für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint Online in Microsoft 365 Enterprise in Ihrem Unternehmen.
-ms.openlocfilehash: fab2a368a936fc3ffb4a56a9dc81ba6b3e0b0910
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ceadbb0268d3a2aa82309d01933a8bd05429188
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074115"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981766"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint Online und OneDrive for Business für Microsoft 365 Enterprise
 
@@ -67,23 +67,6 @@ Die folgenden Geschäftssäulen können den Anforderungen Ihrer Organisation ger
 Unter [SharePoint Online-Admin](https://docs.microsoft.com/sharepoint/sharepoint-online) finden Sie Ressourcen zum Konfigurieren von SharePoint Online für Ihre Anforderungen.
 
 Sie können die Vorteile von SharePoint Online ermitteln, indem Sie die aktuelle Interaktionsweise von Personen, eines Teams, einer Abteilung oder der gesamten Organisation untersuchen und dann ein entsprechendes Szenario suchen, das einfachere Methoden zum Speichern und Freigeben von Dateien bietet. Beachten Sie, dass [Microsoft Teams](teams-workload.md) für einige Szenarien die bessere Wahl sein kann.
-
-SharePoint Online ermöglicht die folgenden strategischen Geschäftsszenarien für Microsoft 365 Enterprise:
-
-- Kommunikation mit Ihrem Team, um auf dem Laufenden zu bleiben, Feedback anzufordern, den Zusammenhalt zu stärken und einen Konsens zu erreichen
-- Nutzung von kollektivem Wissen
-- Befähigen der Benutzer, Geschäftsprozesse zu transformieren
-- Formen der Unternehmenskultur
-- Verwalten von Projekten, Aufgaben und Terminen, um Ihre Geschäftsziele zu erreichen
-- Einbinden der Mitarbeiter in Service und Produktion zur Förderung der digitalen Transformation
-- Verstehen Ihrer Arbeitsgewohnheiten zur Verbesserung Ihres Einflusses und Ihres Eindrucks
-- Kommunikation mit Partnern, Kollegen und Kunden
-- Speichern und Freigeben von Dateien innerhalb und außerhalb Ihrer Organisation für eine nahtlose Zusammenarbeit über Organisationsgrenzen hinweg
-- Sicheres Arbeiten überall und jederzeit von Ihrem Gerät aus, um bei einem flexiblen Arbeitsstil produktiver zu arbeiten
-- Schützen Ihrer Informationen und Reduzierung des Risikos von Datenverlusten
-- Unterstützen Ihrer Organisation mit verbessertem Datenschutz und Compliance, um die Datenschutz-Grundverordnung (DSGVO) zu erfüllen
-
-Weitere Informationen finden Sie unter [Digitale Transformation mit Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="sharepoint-online-site-for-highly-regulated-data"></a>SharePoint Online-Website für Daten mit strengen Sicherheitsbestimmungen
 
