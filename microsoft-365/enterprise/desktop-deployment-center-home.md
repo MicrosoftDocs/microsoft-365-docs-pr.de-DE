@@ -3,9 +3,10 @@ title: Bereitstellungscenter für Desktop
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 06/01/19
+ms.date: 08/14/19
 ms.audience: ITPro
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
@@ -13,142 +14,143 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Übersicht über das Bereitstellungscenter für den Desktop.
-ms.openlocfilehash: 222a7a565a48a39aa7701ab4a737cf404ebaa548
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 16cabf8080e6d3a04805a4fcce385a80ec80dfd6
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853174"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982086"
 ---
-# <a name="desktop-deployment-center"></a><span data-ttu-id="ee484-103">Bereitstellungscenter für modernen Desktop</span><span class="sxs-lookup"><span data-stu-id="ee484-103">Desktop Deployment Center</span></span>
+# <a name="desktop-deployment-center"></a>Bereitstellungscenter für modernen Desktop
 
-<span data-ttu-id="ee484-104"><strong>Upgrade von Windows 7 zu Windows 10 </strong></span><span class="sxs-lookup"><span data-stu-id="ee484-104"><strong>Upgrading from Windows 7 to Windows 10</strong></span></span>
-<p><span data-ttu-id="ee484-105">Der erweiterte Support für Windows 7 endet am 14. Januar 2020.</span><span class="sxs-lookup"><span data-stu-id="ee484-105">Windows 7 extended support ends January 14, 2020.</span></span> <span data-ttu-id="ee484-106">Ein direktes Upgrade von Windows 7 zu Windows 10 ist die schnellste Methode der Bereitstellung.</span><span class="sxs-lookup"><span data-stu-id="ee484-106">In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy.</span></span> <span data-ttu-id="ee484-107">Sie können <a href="https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mit System Center Configuration Manager ein Upgrade auf einem einzelnen PC</a> oder <a href="https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Tausenden von PCs durchführen</a>.</span><span class="sxs-lookup"><span data-stu-id="ee484-107">You can <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>.</span></span> <span data-ttu-id="ee484-108">Sie müssen sich bei direkten Upgrades nicht auf die App-Bereitstellung, Dateimigration, benutzerdefinierte Imageerstellung oder Aktivierung von Cloud-basierten Diensten konzentrieren.</span><span class="sxs-lookup"><span data-stu-id="ee484-108">You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades.</span></span> <span data-ttu-id="ee484-109">Sie können Tools verwenden, die Sie bereits für das Upgraden vorhandener PCs besitzen, und sich auf die folgenden Bereitstellungsschritte für Upgrades konzentrieren:</span><span class="sxs-lookup"><span data-stu-id="ee484-109">You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades:</span></span> </p>
+<strong>Upgrade von Windows 7 zu Windows 10 </strong>
+<p>Der erweiterte Support für Windows 7 endet am 14. Januar 2020. Ein direktes Upgrade von Windows 7 zu Windows 10 ist die schnellste Methode der Bereitstellung. Sie können <a href="https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mit System Center Configuration Manager ein Upgrade auf einem einzelnen PC</a> oder <a href="https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Tausenden von PCs durchführen</a>. Sie müssen sich bei direkten Upgrades nicht auf die App-Bereitstellung, Dateimigration, benutzerdefinierte Imageerstellung oder Aktivierung von Cloud-basierten Diensten konzentrieren. Sie können Tools verwenden, die Sie bereits für das Upgraden vorhandener PCs besitzen, und sich auf die folgenden Bereitstellungsschritte für Upgrades konzentrieren: </p>
 
 <p>
-<table>
-     <tr>
-     <td>
-        <table border="0">
-             <tr>
-                  <td>
-                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="100" width="100" />
-              </td>
-              <td><span data-ttu-id="ee484-110">
-              <strong>Upgrade von Configuration Manager auf den Current Branch</strong>
-                  </span><span class="sxs-lookup"><span data-stu-id="ee484-110">
-              <strong>Upgrade Configuration Manager to Current Branch</strong>
-                  </span></span></td>
-                 </tr>
-                </table>
-    </td>
-        <td>
-        <table border="0">
-             <tr>
-                  <td>
-                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="100" width="100" />
-              </td>
-              <td><span data-ttu-id="ee484-111">
-              <strong>Validieren der Geräte- und App-Bereitschaft</strong>
-                  </span><span class="sxs-lookup"><span data-stu-id="ee484-111">
-              <strong>Validate device and app readiness</strong>
-                  </span></span></td>
-                 </tr>
-                </table>
-    </td>
-        <td>
-        <table border="0">
-             <tr>
-                  <td>
-                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="100" width="100" />
-              </td>
-              <td><span data-ttu-id="ee484-112">
-              <strong>Upgrade von PCs mit Windows 7 zu Windows 10</strong>
-                  </span><span class="sxs-lookup"><span data-stu-id="ee484-112">
-              <strong>Upgrade Windows 7 PCs to Windows 10</strong>
-                  </span></span></td>
-                 </tr>
-                </table>
-    </td>
-    </tr>
-    <tr>
-    <td>
-<span data-ttu-id="ee484-113">Bestandteil des Schritts „Verzeichnis- und Netzwerkbereitschaft“ für Organisationen, die System Center Configuration Manager verwenden</span><span class="sxs-lookup"><span data-stu-id="ee484-113">Part of Directory and network readiness step for organizations using System Center Configuration Manager</span></span> </td>
-    <td>
-<span data-ttu-id="ee484-114">Bestandteil des Schritts „Geräte- und App-Bereitschaft“; Hilfe ist über Desktop App Assure verfügbar</span><span class="sxs-lookup"><span data-stu-id="ee484-114">Part of Device and app readiness step; help is available via Desktop App Assure</span></span> </td>
-    <td>
-<span data-ttu-id="ee484-115">Teil des Schritts „BS-Bereitstellung und Funktionsupdates“ für vom Benutzer gesicherte PCs</span><span class="sxs-lookup"><span data-stu-id="ee484-115">Part of OS deployment and feature updates step for user-retained PCs</span></span> </td>
-    </tr>
-</table>
 </p>
 
-<img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
+<ul class="panelContent cardsM">
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-2-directory-and-network-readiness">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Upgrade von ConfigMgr zu Current Branch</h3>
+            <p>Teil der Verzeichnis- und Netzwerkbereitschaft für Organisationen, die Configuration Manager verwenden</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-1-device-and-app-readiness">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Validieren der Geräte- und App-Bereitschaft</h3>
+            <p>Teil der Geräte- und App-Bereitschaft; Hilfe ist über Desktop App Assure verfügbar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Upgrade von PCs mit Windows 7 zu Windows 10</h3>
+            <p>Teil der BS-Bereitstellung und Funktionsupdates für vom Benutzer gesicherte PCs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
 
-<span data-ttu-id="ee484-116">Führen Sie die folgenden Schritte aus, um eine umfangreiche Bereitstellung für Windows 10 und Office 365 ProPlus zu planen und durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="ee484-116">Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus.</span></span> <span data-ttu-id="ee484-117">Jeder der nachfolgenden Schritte ist Teil des allgemeinen Planungs- und Bereitstellungsprozesses, bei dem typischerweise in einer stufenweisen Bereitstellung mehrere Schritte parallel ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="ee484-117">Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment.</span></span> <span data-ttu-id="ee484-118">Laden Sie das kostenlose [Lab-Kit für die Desktop-Bereitstellung und -Verwaltung](https://aka.ms/howtoshiftlabs) herunter, um eine praktische Schulung zu den Tools zu erhalten, die im Bereitstellungsprozess besonders wichtig sind.</span><span class="sxs-lookup"><span data-stu-id="ee484-118">Download the free [Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process.</span></span> <span data-ttu-id="ee484-119">[Hilfe](https://aka.ms/mddhelp) bei Ihrer Desktop-Bereitstellung erhalten Sie außerdem von Microsoft-Partnern und FastTrack-Diensten.</span><span class="sxs-lookup"><span data-stu-id="ee484-119">You can also [find help](https://aka.ms/mddhelp) for your desktop deployment from Microsoft partners and FastTrack services.</span></span>
+<img align="middle" src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
+
+
+Führen Sie die folgenden Schritte aus, um eine umfangreiche Bereitstellung für Windows 10 und Office 365 ProPlus zu planen und durchzuführen. Jeder der nachfolgenden Schritte ist Teil des allgemeinen Planungs- und Bereitstellungsprozesses, bei dem typischerweise in einer stufenweisen Bereitstellung mehrere Schritte parallel ausgeführt werden. Laden Sie das kostenlose [Lab-Kit für die Desktop-Bereitstellung und -Verwaltung](https://aka.ms/howtoshiftlabs) herunter, um eine praktische Schulung zu den Tools zu erhalten, die im Bereitstellungsprozess besonders wichtig sind. [Hilfe](https://aka.ms/mddhelp) bei Ihrer Desktop-Bereitstellung erhalten Sie außerdem von Microsoft-Partnern und FastTrack-Diensten.
 
 <br>
 
 <table>
 <tr class="even">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-120"><strong><a href="https://aka.ms/mdd0">Erste Schritte: Leitfaden zu Personen, Prozessen und Technologien</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-120"><strong><a href="https://aka.ms/mdd0">Getting Started: People, Process and Technology Guidance</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-121">Entdecken Sie die Vorteile von einem Wechsel zu Windows 10 und Office 365 ProPlus, von wesentlichen Änderungen und Überlegungen im Vergleich zu früheren Bereitstellungen und von bewährten Methoden, um einen reibungslosen Übergang zu Windows 10 und Office 365 ProPlus sicherzustellen.</span><span class="sxs-lookup"><span data-stu-id="ee484-121">Discover the benefits of moving to Windows 10 and Office 365 ProPlus, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</span></span></p></td>
+<td><a href="https://aka.ms/mdd0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd0">Erste Schritte: Leitfaden zu Personen, Prozessen und Technologien</a></strong></p>
+<p>Entdecken Sie die Vorteile von einem Wechsel zu Windows 10 und Office 365 ProPlus, von wesentlichen Änderungen und Überlegungen im Vergleich zu früheren Bereitstellungen und von bewährten Methoden, um einen reibungslosen Übergang zu Windows 10 und Office 365 ProPlus sicherzustellen.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
 <tr class="odd">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-122"><strong><a href="https://aka.ms/mdd1">Schritt 1: Geräte- und App-Bereitschaft</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-122"><strong><a href="https://aka.ms/mdd1">Step 1: Device and App Readiness</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-123">Beginnen Sie Ihre Desktopbereitstellung mit einer Bestandsaufnahme Ihrer Geräte und Apps, priorisieren Sie, was Sie für Ihre weitere Arbeit benötigen, testen Sie priorisierte Apps und Geräte, und beheben Sie dann ggf. Probleme, um sich auf die Bereitstellung vorzubereiten.</span><span class="sxs-lookup"><span data-stu-id="ee484-123">Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you need to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</span></span></p></td>
+<td><a href="https://aka.ms/mdd1"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd1">Schritt 1: Geräte- und App-Bereitschaft</a></strong></p>
+<p>Beginnen Sie Ihre Desktopbereitstellung mit einer Bestandsaufnahme Ihrer Geräte und Apps, priorisieren Sie, was Sie für Ihre weitere Arbeit benötigen, testen Sie priorisierte Apps und Geräte, und beheben Sie dann ggf. Probleme, um sich auf die Bereitstellung vorzubereiten.</p></td>
 <td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-124"><strong><a href="https://aka.ms/mdd2">Schritt 2: Verzeichnis- und Netzwerkbereitschaft</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-124"><strong><a href="https://aka.ms/mdd2">Step 2: Directory and Network Readiness</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-p103">Mit der Cloud verbundene Dienste in Office 365 ProPlus und neue Bereitstellungsoptionen wie Windows Autopilot erfordern Azure Active Directory. Netzwerk und Konnektivität sind auch wichtige Bereiche, die beim Verschieben von Windows-Abbildern, Apps, Treibern und zugehörigen Dateien auf Ihre Computer geplant werden müssen. Erfahren Sie, wie Sie mit neuen Tools und Bereitstellungsoptionen den Netzwerkverkehr reduzieren und optimieren können.</span><span class="sxs-lookup"><span data-stu-id="ee484-p103">Cloud connected services in Office 365 ProPlus and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</span></span></p></td>
+<td><a href="https://aka.ms/mdd2"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd2">Schritt 2: Verzeichnis- und Netzwerkbereitschaft</a></strong></p>
+<p>Mit der Cloud verbundene Dienste in Office 365 ProPlus und neue Bereitstellungsoptionen wie Windows Autopilot erfordern Azure Active Directory. Netzwerk und Konnektivität sind auch wichtige Bereiche, die beim Verschieben von Windows-Abbildern, Apps, Treibern und zugehörigen Dateien auf Ihre Computer geplant werden müssen. Erfahren Sie, wie Sie mit neuen Tools und Bereitstellungsoptionen den Netzwerkverkehr reduzieren und optimieren können.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-128"><strong><a href="https://aka.ms/mdd3">Schritt 3: Liefern von Office- und Branchen-Apps</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-128"><strong><a href="https://aka.ms/mdd3">Step 3: Office and LOB App Delivery</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-129">Stellen Sie sicher, dass Ihre Apps für eine automatische Installation verpackt und bereit sind.</span><span class="sxs-lookup"><span data-stu-id="ee484-129">Ensure your apps are packaged and ready for automated installation.</span></span> <span data-ttu-id="ee484-130">Erfahren Sie, wie Sie durch eine Klick-und-Los-Verpackung mit Office 365 ProPlus neue Optionen erhalten, um Ihre Office-Apps zu konfigurieren, zu liefern und auf dem neuesten Stand zu halten.</span><span class="sxs-lookup"><span data-stu-id="ee484-130">Learn how Click-to-Run packaging with Office 365 ProPlus gives you new options to configure, deliver, and keep your Office apps up-to-date.</span></span></p></td>
+<td><a href="https://aka.ms/mdd3"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd3">Schritt 3: Liefern von Office- und Branchen-Apps</a></strong></p>
+<p>Stellen Sie sicher, dass Ihre Apps für eine automatische Installation verpackt und bereit sind. Erfahren Sie, wie Sie durch eine Klick-und-Los-Verpackung mit Office 365 ProPlus neue Optionen erhalten, um Ihre Office-Apps zu konfigurieren, zu liefern und auf dem neuesten Stand zu halten.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-131"><strong><a href="https://aka.ms/mdd4">Schritt 4: Benutzerdateien und -einstellungen</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-131"><strong><a href="https://aka.ms/mdd4">Step 4: User Files and Settings</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-132">Wenn Computer aktualisiert oder ersetzt werden, können Sie Zeit sparen, indem Sie das Sichern und Wiederherstellen des Benutzerstatus automatisieren.</span><span class="sxs-lookup"><span data-stu-id="ee484-132">When refreshing or replacing PCs, save time by automating user state backup and restore.</span></span> <span data-ttu-id="ee484-133">Mit neuen Optionen für die Synchronisierung von Clouddateien können Sie die Synchronisierung von Desktop-, Dokument- und Bildordnern mit OneDrive pro Benutzer erzwingen, sodass ein nahtloser Dateizugriff von neuen Windows-Installationen aus gewährleistet ist.</span><span class="sxs-lookup"><span data-stu-id="ee484-133">New options for cloud file sync allow you to enforce per user sync of Desktop, Documents, and Pictures folders to OneDrive for seamless file access from new Windows installs.</span></span></p></td>
+<td><a href="https://aka.ms/mdd4"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd4">Schritt 4: Benutzerdateien und -einstellungen</a></strong></p>
+<p>Wenn Computer aktualisiert oder ersetzt werden, können Sie Zeit sparen, indem Sie das Sichern und Wiederherstellen des Benutzerstatus automatisieren. Mit neuen Optionen für die Synchronisierung von Clouddateien können Sie die Synchronisierung von Desktop-, Dokument- und Bildordnern mit OneDrive pro Benutzer erzwingen, sodass ein nahtloser Dateizugriff von neuen Windows-Installationen aus gewährleistet ist.</p></td>
 <td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-134"><strong><a href="https://aka.ms/mdd5">Schritt 5: Überlegungen zu Sicherheit und Compliance</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-134"><strong><a href="https://aka.ms/mdd5">Step 5: Security and Compliance Considerations</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-135">Windows 10 und Office 365 ProPlus bieten neue Methoden zum Schützen Ihrer Daten, Geräte und Benutzer und zum schnellen Erkennen von und Reagieren auf Bedrohungen.</span><span class="sxs-lookup"><span data-stu-id="ee484-135">Windows 10 and Office 365 ProPlus provide new ways to protect your data, devices and users, and quickly detect and respond to threats.</span></span> <span data-ttu-id="ee484-136">Darüber hinaus erfahren Sie, wie allgemeine Probleme im Zusammenhang mit Datenträgerverschlüsselung, Antischadsoftware-Apps und Richtlinien für den Umstieg auf Windows 10 behandelt werden.</span><span class="sxs-lookup"><span data-stu-id="ee484-136">Also, learn how to deal with common problems associated with disk encryption, anti-malware apps, and policies when moving to Windows 10.</span></span></p></td>
+<td><a href="https://aka.ms/mdd5"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd5">Schritt 5: Überlegungen zu Sicherheit und Compliance</a></strong></p>
+<p>Windows 10 und Office 365 ProPlus bieten neue Methoden zum Schützen Ihrer Daten, Geräte und Benutzer und zum schnellen Erkennen von und Reagieren auf Bedrohungen. Darüber hinaus erfahren Sie, wie allgemeine Probleme im Zusammenhang mit Datenträgerverschlüsselung, Antischadsoftware-Apps und Richtlinien für den Umstieg auf Windows 10 behandelt werden.</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-137"><strong><a href="https://aka.ms/mdd6">Schritt 6: Bereitstellung des Betriebssystems und Featureupdates</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-137"><strong><a href="https://aka.ms/mdd6">Step 6: OS Deployment and Feature Updates</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-138">Eine Bereitstellung basierend auf einer Aufgabenfolge wird zum Automatisieren von umfangreichen und stufenweisen Bereitstellungen für Bare-Metal-Installationen, Computeraktualisierungen und eines Computeraustauschs verwendet.</span><span class="sxs-lookup"><span data-stu-id="ee484-138">Task sequence-based deployment is used to automate large scale, phased deployment for bare metal installs, PC refresh, and PC replacement.</span></span> <span data-ttu-id="ee484-139">Mithilfe von Aktualisierungsaufgabenfolgen können Sie im Hinblick auf größere halbjährliche Updates auf dem Laufenden bleiben.</span><span class="sxs-lookup"><span data-stu-id="ee484-139">Upgrade task sequences will also help you stay current with major semi-annual updates.</span></span> <span data-ttu-id="ee484-140">Windows Autopilot ist eine neue Ergänzung, durch die der das Imaging neuer und vorhandener Geräte modernisiert wird.</span><span class="sxs-lookup"><span data-stu-id="ee484-140">Windows Autopilot is a recent addition that modernizes imaging new and existing devices.</span></span></p></td>
+<td><a href="https://aka.ms/mdd6"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd6">Schritt 6: Bereitstellung des Betriebssystems und Featureupdates</a></strong></p>
+<p>Eine Bereitstellung basierend auf einer Aufgabenfolge wird zum Automatisieren von umfangreichen und stufenweisen Bereitstellungen für Bare-Metal-Installationen, Computeraktualisierungen und eines Computeraustauschs verwendet. Mithilfe von Aktualisierungsaufgabenfolgen können Sie im Hinblick auf größere halbjährliche Updates auf dem Laufenden bleiben. Windows Autopilot ist eine neue Ergänzung, durch die der das Imaging neuer und vorhandener Geräte modernisiert wird.</p></td>
 <td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-141"><strong><a href="https://aka.ms/mdd7">Schritt 7: Windows und Office als Dienst</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-141"><strong><a href="https://aka.ms/mdd7">Step 7: Windows and Office Servicing</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-142">Sowohl für Windows 10 als auch für Office 365 ProPlus werden ständig neue Funktionen hinzugefügt, um die-Benutzeroberfläche und dich Sicherheit mit den neuesten Innovationen nach vorne zu bringt.</span><span class="sxs-lookup"><span data-stu-id="ee484-142">Both Windows 10 and Office 365 ProPlus continually add new capabilities to keep bringing user experiences and security forward with the latest innovations.</span></span> <span data-ttu-id="ee484-143">Erfahren Sie, wie Sie mit halbjährlichen und monatlichen Updates auf dem neusten Stand bleiben, wie das neue Wartungsmodell funktioniert und welche Funktionen und Optionen Ihnen zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="ee484-143">Learn how to stay current with semi-annual and monthly updates, how the new servicing model works, and the tools and options you have.</span></span></p></td>
+<td><a href="https://aka.ms/mdd7"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd7">Schritt 7: Windows und Office als Dienst</a></strong></p>
+<p>Sowohl für Windows 10 als auch für Office 365 ProPlus werden ständig neue Funktionen hinzugefügt, um die-Benutzeroberfläche und dich Sicherheit mit den neuesten Innovationen nach vorne zu bringt. Erfahren Sie, wie Sie mit halbjährlichen und monatlichen Updates auf dem neusten Stand bleiben, wie das neue Wartungsmodell funktioniert und welche Funktionen und Optionen Ihnen zur Verfügung stehen.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-144"><strong><a href="https://aka.ms/mdd8">Schritt 8: Benutzerkommunikation und Schulung</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-144"><strong><a href="https://aka.ms/mdd8">Step 8: User Communication and Training</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-p109">Stellen Sie sicher, dass Ihre Benutzer über neue Oberflächen und neue Arbeitsmethoden informiert sind, wenn Sie Ihre Computer auf Windows 10 und Office 365 ProPlus umstellen. Erfahren Sie, wie Sie mit Microsoft FastTrack, Schulungsmaterialien und Kommunikationsvorlagen die Akzeptanz beim Endbenutzer beschleunigen können, und lernen Sie neue Möglichkeiten zur Überwachung der Benutzerakzeptanz und -verwendung kennen.</span><span class="sxs-lookup"><span data-stu-id="ee484-p109">Make sure your users are informed about new experiences and new ways of working as you shift your PCs to Windows 10 and Office 365 ProPlus. Learn how to take advantage of user adoption assistance with Microsoft FastTrack, training materials and communication templates, as well as new ways to monitor user acceptance and usage.</span></span></p></td>
+<td><a href="https://aka.ms/mdd8"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></a></td>
+<td><p><strong><a href="https://aka.ms/mdd8">Schritt 8: Benutzerkommunikation und Schulung</a></strong></p>
+<p>Stellen Sie sicher, dass Ihre Benutzer über neue Oberflächen und neue Arbeitsmethoden informiert sind, wenn Sie Ihre Computer auf Windows 10 und Office 365 ProPlus umstellen. Erfahren Sie, wie Sie mit Microsoft FastTrack, Schulungsmaterialien und Kommunikationsvorlagen die Akzeptanz beim Endbenutzer beschleunigen können, und lernen Sie neue Möglichkeiten zur Überwachung der Benutzerakzeptanz und -verwendung kennen.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
-</tr>
-<tr class="odd">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-12.png" alt="Value Discovery and Business Case" height="144" width="144" /></td>
-<td><p><span data-ttu-id="ee484-147"><strong><a href="https://transform.microsoft.com" target="_blank">Wie Sie die Geschäftsleitung an Bord holen können: Wertermittlung und Geschäftsszenario</a></strong></span><span class="sxs-lookup"><span data-stu-id="ee484-147"><strong><a href="https://transform.microsoft.com" target="_blank">Get your Leadership on Board: Value Discovery and Business Case</a></strong></span></span></p>
-<p><span data-ttu-id="ee484-148">Wenn Sie Ihre Bereitstellungsrecherchen abgeschlossen, die App- und Gerätebereitschaft beurteilt, einen Bereitstellungsplan entwickelt und einen Pilottest für Ihre Bereitstellung gestartet haben, Ihnen aber die Unterstützung oder Ressourcen fehlen, die Sie von Ihrem Verwaltungsteam benötigen, um die Termine im Hinblick auf Ihre Bereitstellung einhalten zu können, können Ihnen die Business Value Programs von Microsoft helfen.</span><span class="sxs-lookup"><span data-stu-id="ee484-148">If you’ve done your deployment research, assessed app and device readiness, built your deployment plan and started piloting your deployment, but don’t have the support or resources needed from your management team to meet your deployment timelines, the Business Value Program at Microsoft can help.</span></span> <span data-ttu-id="ee484-149">Erfahren Sie, wie Sie ein Geschäftsszenario für den Übergang zu Windows 10 und Office 365 erstellen und alle Beteiligten an Bord holen können.</span><span class="sxs-lookup"><span data-stu-id="ee484-149">Learn how to build a business case to move to Windows 10 and Office 365 ProPlus and help get everyone on board.</span></span></p></td>
-<td><a href="https://transform.microsoft.com" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></td>
 </tr>
 </tbody>
 </table>
