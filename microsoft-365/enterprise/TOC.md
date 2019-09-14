@@ -16,6 +16,7 @@
 #### [Schritt 4: Konfigurieren der sicheren Benutzerauthentifizierung](identity-multi-factor-authentication.md)
 #### [Schritt 5: Vereinfachen des Zugriffs für Benutzer](identity-password-reset.md)
 #### [Schritt 6: Verwenden von Gruppen zur einfacheren Verwaltung](identity-self-service-group-management.md)
+#### [Schritt 7: Konfigurieren der Identitäts Steuerung](identity-governance.md)
 #### [Identitäts Beendigungskriterien](identity-exit-criteria.md)
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Schritt 1: Vorbereiten Ihrer Organisation](windows10-prepare-your-org.md)
@@ -96,7 +97,6 @@
 ## [Windows 7 auf automatisierte Upgrades von Windows 10](windows-7-to-windows-10-upgrade-automated.md)
 ## [Windows-und Office-Bereitstellung und Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [Suchen nach Hilfe für Ihre Bereitstellung](find-help-for-modern-desktop-deployment.md)
-## [Wie Sie die Geschäftsleitung an Bord holen können: Wertermittlung und Geschäftsszenario](https://transform.microsoft.com)
 
 # [Identity and device access configurations (Konfigurationen für den Identitäts- und Gerätezugriff)](microsoft-365-policies-configurations.md)
 ##[Erforderliche Arbeit](identity-access-prerequisites.md)
