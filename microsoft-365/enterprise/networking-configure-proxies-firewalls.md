@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren von Webbrowsern und Edge-Geräten für Datenverkehrumgehungen zu vertrauenswürdigen Office 365-Speicherorten.
-ms.openlocfilehash: c7d4391d3274fd36a3f6fbf208cd94ce7b0f9339
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 416c93fd3f44e1cd9edba52a9d6117ac6d133760
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074225"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982786"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Schritt 4: Konfigurieren von Datenverkehrumgehungen
 
@@ -26,7 +26,7 @@ ms.locfileid: "34074225"
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Da allgemeiner Internetdatenverkehr riskant sein kann, erzwingen typische Organisationsnetzwerke Sicherheit über Edge-Geräte wie Proxyserver, SSL Break and Inspect und Paketüberprüfungsgeräte sowie Systeme zur Verhinderung von Datenverlust. Unter „Verwenden von Netzwerkgeräten oder -lösungen von Drittanbietern für Office 365-Datenverkehr“ finden Sie einige Probleme mit Netzwerk-Abfanggeräten.
+Da allgemeiner Internetdatenverkehr riskant sein kann, erzwingen typische Organisationsnetzwerke Sicherheit über Edge-Geräte wie Proxyserver, SSL Break and Inspect, Paketüberprüfungsgeräte sowie Systeme zur Verhinderung von Datenverlust. Unter "Verwenden von Netzwerkgeräten oder -lösungen von Drittanbietern für Office 365-Datenverkehr" finden Sie einige Probleme mit Netzwerk-Abfanggeräten.
 
 Die DNS-Domänennamen und IP-Adressen, die von cloudbasierten Microsoft 365-Diensten verwendet werden, sind bekannt. Zudem sind Datenverkehr und Dienste selbst durch viele Sicherheitsfeatures geschützt. Durch diese Sicherheit und diesen Schutz müssen Ihre Edge-Geräte dies nicht duplizieren. Zwischenziele und doppelte Sicherheitsverarbeitung für Microsoft 365-Datenverkehr können die Leistung erheblich senken.
 
@@ -40,7 +40,8 @@ Sie finden die DNS-Domänennamen und IP-Adressbereiche unter [ https://aka.ms/o3
 
 Microsoft empfiehlt Folgendes:
 
-- Verwenden Sie Proxy Automatic Configuration(PAC)-Skripts für die Internetbrowser Ihrer lokalen Computer, um Ihre Proxyserver für die DNS-Domänennamen cloudbasierter Microsoft 365-Dienste zu umgehen. Das aktuelle Microsoft 365-PAC-Skript finden Sie im Get-Pacfile-PowerShell-Skript.
+- Verwenden Sie Proxy Automatic Configuration(PAC)-Skripts für die Internetbrowser Ihrer lokalen Computer, um Ihre Proxyserver für die DNS-Domänennamen cloudbasierter Microsoft 365-Dienste zu umgehen. Das aktuelle Microsoft 365-PAC-Skript finden Sie im [Get-Pacfile-PowerShell-Skript](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
+- 
 - Analysieren Sie Ihre Edge-Geräte, um die doppelte Verarbeitung zu bestimmen, und konfigurieren Sie sie dann zum Weiterleiten von Datenverkehr an Optimieren- und Zulassen-Endpunkte ohne Verarbeitung. Dies wird als Umgehung des Datenverkehrs bezeichnet. 
 
 Edge-Geräte umfassen Firewalls, SSL Break and Inspect, Paketüberprüfungsgeräte und Systeme zur Verhinderung von Datenverlust. Um die Konfiguration der Edge-Geräte zu konfigurieren und zu aktualisieren, können Sie ein Skript oder einen REST-Aufruf verwenden, um eine strukturierte Liste von Endpunkten aus dem Office 365-Endpunkt-Webdienst zu nutzen. Weitere Informationen finden Sie unter [Office 365 – IP-Adress- und URL-Webdienst](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).

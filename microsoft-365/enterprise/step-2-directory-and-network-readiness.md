@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Verzeichnis- und Netzwerkbereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584571"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982726"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Schritt 2: Verzeichnis- und Netzwerkbereitschaft
 
@@ -73,7 +73,7 @@ Das neue Servicemodell umfasst Featureupdates für Windows zwei Mal im Jahr, hal
 
 Die dritte Komponente, die berücksichtigt werden muss, ist die Benutzeranpassung. Hier müssen Sie Netzwerkbandbreite einplanen, um die Wiederherstellung von Benutzerdateien, ihrer Einstellungen und ihrer Anwendungen als Teil des PC-Aktualisierungs- oder -Ersetzungsprozesses zu ermöglichen. Zusammen sind diese Elemente häufig größer als 20 GB pro PC. Bei einigen Benutzern können Sie 100 GB überschreiten.
 
-## <a name="limiting-bandwidth"></a>**Beschränken der Bandbreite**
+## <a name="limiting-bandwidth"></a>Beschränken der Bandbreite
 
 Eine Möglichkeit, um die Auswirkungen des auf die Bereitstellung bezogenen Datenverkehrs im Netzwerk zu beschränken, ist die Drosselung mit der BITS-Einstellung (Background Intelligent Transfer Service) auf Clients. BITS verwendet eine adaptive Bitrate (ABR), um die Bandbreite anzupassen, die für Bereitstellungszwecke verfügbar ist. Sie kann mit einer Gruppenrichtlinie auf Clients konfiguriert werden.
 
@@ -87,7 +87,7 @@ Glücklicherweise gibt es neue Tools, die es Ihnen erleichtern, die Auswirkungen
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## <a name="scavenging-bandwidth"></a>**Aufräumen der Bandbreite**
+## <a name="scavenging-bandwidth"></a>Aufräumen der Bandbreite
 
 LEDBAT (Low Extra Delay Background Transport), das in Windows Server 2019 and System Center Configuration Manager (Current Branch) unterstützt wird, ist auf die Optimierung des Netzwerkverkehrs für Windows-Clients ausgelegt.
 
@@ -97,7 +97,7 @@ Im Gegensatz zur herkömmlichen Drosselung kann LEDBAT die gesamte verfügbare N
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## <a name="peer-to-peer-options"></a>**Peer-zu-Peer-Optionen**
+## <a name="peer-to-peer-options"></a>Peer-zu-Peer-Optionen
 
 Peer-zu-Peer-Optionen werden zunehmend bei Windows 10-Migrationen, für PC-Imaging, Softwareupdates und Benutzerpersonalisierung verwendet. Sie sind auch nützlich, um Build-zu-Build-Upgrades nach der anfänglichen Bereitstellung von Windows 10 zu vereinfachen. Wir erläutern hier mehrere Beispiele, um durch Windows 10 und Office verursachten Datenverkehr vom Zentrum des Netzwerks weg zu leiten, wobei die Notwendigkeit herkömmlicher Drosselungsansätze verringert wird. PCs können dann die aktualisierten Dateien, die sie benötigen, auf den Peercomputern im lokalen Netzwerk finden und müssen sie nicht von einem Verteilungspunkt oder aus dem Internet herunterladen.
 

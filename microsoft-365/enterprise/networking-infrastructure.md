@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Netzwerkinfrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 35c65515854bb0c47a45e48d8e3c6af6a80d907c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074315"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982796"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Phase 1: Netzwerkinfrastruktur für Microsoft 365 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 Enterprise enthält Office 365 und Microsoft Intune als Teil von Enterprise Management + Security (EMS). Beide cloudbasierten Dienste basieren auf der Sicherheit, Leistung und Zuverlässigkeit der Verbindungen von Clientgeräten über das Internet oder dedizierte Leitungen. Um diese Dienste zu hosten und sie für Kunden auf der ganzen Welt verfügbar zu machen, hat Microsoft eine Netzwerkinfrastruktur entwickelt, deren Fokus auf Leistung und Integration liegt. 
+Microsoft 365 Enterprise umfasst Office 365, Microsoft Intune und viele Identitäts- und Sicherheitsdienste von Microsoft Azure. Alle cloudbasierten Dienste basieren auf der Sicherheit, Leistung und Zuverlässigkeit der Verbindungen von Clientgeräten über das Internet oder dedizierte Leitungen. Um diese Dienste zu hosten und sie für Kunden auf der ganzen Welt verfügbar zu machen, hat Microsoft eine Netzwerkinfrastruktur entwickelt, deren Fokus auf Leistung und Integration liegt. 
 
 In dieser Phase durchlaufen Sie die wichtigsten Aspekte zum Erstellen einer leistungsfähigen Verbindung zu den Clouddiensten von Microsoft 365 Enterprise. Eine Übersicht finden Sie unter [Office 365-Netzwerkkenntnisse](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 
@@ -48,7 +48,7 @@ Wenn Sie diese Schritte abgeschlossen haben, wechseln Sie zu [Beendigungskriteri
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 
-Werfen Sie einen Blick hinter die Kulissen von Microsoft, und erfahren Sie, wie das Unternehmen [das Microsoft-Netzwerk für Clouddienste optimiert hat](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
+Werfen Sie einen Blick hinter die Kulissen von Microsoft, und erfahren Sie, wie das Unternehmen [das Microsoft-Netzwerk für Clouddienste optimiert hat](https://www.microsoft.com/de-DE/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Wie Microsoft 365 Enterprise bei Contoso eingesetzt wird
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297915"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982096"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
 
@@ -60,7 +60,7 @@ Hier ist die Foundation-Infrastruktur im gesamten Microsoft 365 Enterprise Berei
 
 ## <a name="at-a-glance"></a>Auf einen Blick
 
-Das [Poster "Microsoft 365 Enterprise-Foundation-Infrastruktur"](http://aka.ms/m365efoundinfraposter) bietet einen gute Übersicht über die einzelnen Phasen:
+Das [Poster "Microsoft 365 Enterprise-Foundation-Infrastruktur"](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) bietet einen gute Übersicht über die einzelnen Phasen:
 
 - Allgemeinen Ziele der Phase für Administratoren und Benutzer
 - Dienste, Features und Tools
@@ -69,7 +69,7 @@ Das [Poster "Microsoft 365 Enterprise-Foundation-Infrastruktur"](http://aka.ms/m
 - Vorgehensweise für das Onboarding eines neuen Benutzers
 - Überwachen und Aktualisieren
 
-![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+[![Bild für das Microsoft 365 Enterprise-Foundation-Infrastruktur-Poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 

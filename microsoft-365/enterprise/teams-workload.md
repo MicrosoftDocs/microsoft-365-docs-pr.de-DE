@@ -2,7 +2,7 @@
 title: Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von Microsoft Teams in Microsoft 365 Enterprise in Ihrem Unternehmen.
-ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072855"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982616"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 
@@ -50,14 +50,6 @@ Teams kann für unterschiedliche Zwecke verwendet werden. Sie müssen herausfind
 Teams sollte für sich schnell entwickelnde und stark vernetzte Teams verwendet eingesetzt werden, die eng zusammen arbeiten und viel mehr Funktionen benötigen als nur E-Mail mit Exchange Online liefern kann. Beispiele sind Live-Gruppenchats mit einen aufgezeichneten Verlauf und ein allgemeiner und leicht auffindbarer Ort zum Speichern von Dateien und Notizen. 
 
 Eine Möglichkeit, die Vorteile von Teams aufzuzeigen, besteht darin zu untersuchen, wie ein Team oder ein V-Team heute interagiert und dann ein entsprechendes Teams-Szenario zu suchen, das die Interaktion ersetzt und einfachere Möglichkeiten zur Zusammenarbeit sowie zusätzliche Funktionen bietet.
-
-Teams ermöglich die folgenden strategischen Geschäftsszenarien für Microsoft 365 Enterprise:
-
-- Kommunikation mit Ihrem Team, um auf den Laufenden zu bleiben, Feedback anzufordern, den Zusammenhalt zu stärken und einen Konsens zu erreichen
-- Einbinden der Mitarbeiter in Service und Produktion zur Förderung der digitalen Transformation
-- Verstehen Ihrer Arbeitsgewohnheiten zur Verbesserung Ihres Einflusses und Ihres Eindrucks
-
-Weitere Informationen finden Sie unter [Digitale Transformation mit Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="microsoft-teams-for-highly-regulated-data"></a>Microsoft Teams für Daten mit strengen Sicherheitsbestimmungen
 
@@ -99,7 +91,7 @@ Verwenden Sie diese Ressourcen dann, um die Teams-Lizenzierung zu verstehen und 
 - [Verwalten des Benutzerzugriffs auf Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [Clients für Microsoft Teams abrufen](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [Aktivieren von Microsoft Teams in Ihrer Office 365-Organisation](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [Verwalten von Microsoft Teams-Features in Ihrer Office 365-Organisation](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+- [Verwalten von Microsoft Teams-Features in Ihrer Office 365-Organisation](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 #### <a name="result"></a>Ergebnis
 
