@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint Online-Teamwebsite oder ein Microsoft Teams-Team, um Ihre wertvollsten und vertraulichen digitalen Objekte zu speichern.
-ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
-ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
+ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34681062"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982756"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams und SharePoint Online-Websites für streng geregelte Daten
 
@@ -67,7 +67,6 @@ Dieses Szenario erfordert, dass Sie Folgendes bereits bereitgestellt haben:
 Die folgenden Phasen führen Sie schrittweise durch den Entwurf, die Konfiguration und das Fördern der Einführung für SharePoint Online-Websites und Teams für streng geregelte Daten.
 
 Um zu erfahren, wie die Contoso Corporation, ein fiktives, aber repräsentatives multinationales Unternehmen, eine SharePoint Online-Website für seine Forschungsteams entwickelt hat, sehen Sie sich die folgende [Beispielkonfiguration](contoso-sharepoint-online-site-for-highly-confidential-assets.md) an.
-
 
 Ein Team für streng geregelte Daten setzt voraus, dass Sie zuerst eine SharePoint Online-Teamwebsite für streng geregelte Daten erstellen. Anschließend erstellen Sie ein neues Team, das die Office 365-Gruppe der SharePoint Online-Teamwebsite verwendet. In Phase 2, Schritt 4, finden Sie weitere Informationen.
 

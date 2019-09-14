@@ -3,7 +3,7 @@ title: 'Schritt 6: Verwenden von Gruppen zur einfacheren Verwaltung'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Verständnis und zur Konfiguration der Self-Service-Gruppenverwaltung in Azure AD.
-ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97077f5e047f55ea6bf6e532d25d25f4682ff179
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073605"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981776"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>Schritt 6: Verwenden von Gruppen zur einfacheren Verwaltung
 
@@ -74,14 +74,11 @@ Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-cri
 
 *Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-In diesem Abschnitt konfigurieren Sie Sicherheitsgruppen in Azure AD, um automatisch Lizenzen aus einer Gruppe von Abonnements zu allen Mitgliedern der Gruppe zuzuweisen. Dies wird als *gruppenbasierte Lizenzierung* bezeichnet. Wenn ein Benutzerkonto der Gruppe hinzugefügt oder aus ihr entfernt wird, werden die Lizenzen für die Gruppenabonnements dem Benutzerkonto automatisch zugewiesen oder aus ihm entfernt.
+In diesem Abschnitt konfigurieren Sie Sicherheitsgruppen in Azure AD, um automatisch Lizenzen aus einer Gruppe von Abonnements zu allen Mitgliedern der Gruppe zuzuweisen. Dies wird als *gruppenbasierte Lizenzierung* bezeichnet. Wenn ein Benutzerkonto der Gruppe hinzugefügt oder aus ihr entfernt wird, werden die Lizenzen für die Gruppenabonnements dem Benutzerkonto automatisch zugewiesen, bzw. die Zuweisung wird entfernt.
 
-Für Microsoft 365 Enterprise konfigurieren Sie Azure AD-Sicherheitsgruppen, um beide Lizenzen zuzuweisen:
+Für Microsoft 365 Enterprise konfigurieren Sie Azure AD-Sicherheitsgruppen, um die passenden Microsoft 365 Enterprise-Lizenzen zuzuweisen.
 
-- Office 365 Enterprise E3 oder E5
-- Enterprise Mobility + Security (EMS) E3 oder E5
-
-Suchen Sie unter Verwendung der Gruppen, die Sie in Schritt 2 identifiziert haben, nach Gruppen, die eine Liste der Konten enthalten, wobei alle Benutzer in dieser Gruppe Office 365- und EMS-Lizenzen haben müssen. Stellen Sie sicher, dass Sie genug Lizenzen für alle Gruppenmitglieder haben. Wenn keine Lizenzen mehr vorhanden sind, werden neuen Benutzern keine Lizenzen zugewiesen, bis Lizenzen verfügbar werden.
+Stellen Sie sicher, dass Sie genug Lizenzen für alle Gruppenmitglieder haben. Wenn keine Lizenzen mehr vorhanden sind, werden neuen Benutzern keine Lizenzen zugewiesen, bis Lizenzen verfügbar werden.
 
 >[!Note]
 >Sie sollten  nicht die *gruppenbasierte Lizenzierung* für Gruppen konfigurieren, die Azure Business to Business (B2B)-Konten enthalten.
@@ -103,6 +100,6 @@ Die Ergebnisse dieses Abschnitts sind:
 
 Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-criteria.md#crit-identity-group-license) für diesen Abschnitt ansehen.
 
-## <a name="next-step"></a>Nächster Schritt
-
-[Beendigungskriterien für die Identitätsinfrastruktur](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [Konfigurieren der Identitätsgovernance](identity-governance.md) |

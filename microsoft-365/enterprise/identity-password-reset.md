@@ -3,7 +3,7 @@ title: 'Schritt 5: Vereinfachen des Zugriffs für Benutzer'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und konfigurieren Sie die Self-Service-Kennwortzurücksetzung (Self-Service Password Reset, SSPR) für Azure AD.
-ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ec81b2931fd4ad599ffcf983ea8a7d764c56404a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073725"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981796"
 ---
 # <a name="step-5-simplify-access-for-users"></a>Schritt 5: Vereinfachen des Zugriffs für Benutzer
 
@@ -32,7 +32,7 @@ ms.locfileid: "34073725"
 
 In diesem Abschnitt können Sie können Sie festlegen, dass Benutzer ihre Kennwörter über Azure Active Directory (Azure AD) zurücksetzen können, das dann in Ihre lokalen Active Directory Domain Services (AD DS) repliziert wird. Dieser Vorgang wird als Rückschreiben des Kennworts bezeichnet. Mit der Kennwortrückschreibung brauchen Benutzer ihre Kennwörter nicht mehr über den lokalen AD-DS zu aktualisieren, auf dem ihre Benutzerkonten und Attribute gespeichert sind. Dies ist für Roaming- oder Remote-Benutzer nützlich, die keine Remote-Zugriffsverbindung zum lokalen Netzwerk haben.
 
-Das Kennwortrückschreiben ist erforderlich für die vollständige Nutzung von Identity Protection-Features, z. B. um zu verlangen, dass Benutzer ihre lokalen Kennwörter ändern, wenn ein hohes Risiko einer Kontogefährdung besteht.
+Das Kennwortrückschreiben ist erforderlich für die vollständige Nutzung von Azure AD Identity Protection, z. B. um zu verlangen, dass Benutzer ihre lokalen Kennwörter ändern, wenn ein hohes Risiko einer Kontogefährdung besteht.
 
 Weitere Informationen und Hinweise zur Konfiguration finden Sie unter [Azure AD SSPR mit Kennwortrückschreiben](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
 
@@ -92,20 +92,11 @@ In diesem Abschnitt werden Sie den Unternehmensnamen, das Logo und andere erkenn
 
 Mit Microsoft 365 Enterprise können Sie die Darstellung der Anmeldeseite und der Zugriffsbereichsseiten anpassen, damit sie Unternehmenslogo, Farbschemas und angepasste Benutzerinformationen enthalten. 
 
-Wenn Benutzer versuchen, sich auf einem Gerät anzumelden, wird eine Seite angezeigt, die in etwa wie im folgenden Beispiel für eine Office 365-Anmeldeseite *vor der Anpassung* aussieht.
-
-![Beispiel für die Office 365-Anmeldeseite vor der Anpassung](./media/identity-customize-office-365-sign-in/id-step01-sign-in-before.png)
-
-So würde die Seite für denselben Benutzer von Contoso Corporation *nach der Anpassung* aussehen.
-
-![Beispiel für die Office 365-Anmeldeseite nach der Anpassung](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
-
 Weitere Informationen finden Sie unter [Hinzufügen Ihres Unternehmensbrandings zur Anmeldeseite von Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Anweisungen zur Konfiguration finden Sie unter [Hinzufügen Ihres Unternehmensbrandings zur Anmeldeseite und zu Zugriffsbereichsseiten](http://aka.ms/aadpaddbranding).
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-custom-sign-in) für diesen Abschnitt betrachten.
-
 
 ## <a name="next-step"></a>Nächster Schritt
 

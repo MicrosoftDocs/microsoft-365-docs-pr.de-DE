@@ -3,7 +3,7 @@ title: 'Schritt 1: Planen von Benutzern und Gruppen'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Planen von Satz von Benutzern und Gruppen, die für Ihr Unternehmen arbeiten werden.
-ms.openlocfilehash: 1f879c789e6b531dec7163fa252e0f85459c823d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072175"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981806"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Schritt 1: Planen von Benutzern und Gruppen
 
@@ -67,10 +67,10 @@ Darüber hinaus können einige Clouddienste für Benutzer außerhalb Ihres Unter
 
 Sie können Gruppen in Azure AD für mehrere Zwecke verwenden, die die Verwaltung Ihrer Cloudumgebung vereinfachen. Für Azure AD-Gruppen können Sie beispielsweise die folgenden Aufgaben durchführen:
 
-- Sie können die gruppenbasierte Lizenzierung verwenden, um Ihren Benutzerkonten Lizenzen für Office 365 and Enterprise Mobility + Security (EMS) automatisch zuzuweisen, sobald diese in Azure AD hinzugefügt werden oder mit AD DS synchronisiert werden. 
+- Sie können die gruppenbasierte Lizenzierung verwenden, um Ihren Benutzerkonten automatisch Lizenzen zuzuweisen, sobald diese in Azure AD hinzugefügt werden oder mit AD DS synchronisiert werden. 
 - Sie können bestimmten Gruppen auf Grundlage von Benutzerkontoattributen wie Abteilung Benutzerkonten dynamisch hinzufügen.  
 - Sie können automatisch SaaS-Anwendungen für Benutzer bereitstellen und den Zugriff auf diese Anwendungen mit der mehrstufigen Authentifizierung und anderen Regeln für bedingten Zugriff schützen.
-- Sie können Berechtigungen und Zugriffsebenen für SharePoint Online-Teamwebsites bereitstellen. Azure AD-Gruppen können auch mit bereichsbezogenen Azure Information Protection-Richtlinien zum Schutz von Dateien mit einer Verschlüsselung und Berechtigungen verwendet werden. 
+- Sie können Berechtigungen und Zugriffsebenen für SharePoint Online-Teamwebsites bereitstellen. Azure AD-Gruppen können auch mit Vertraulichkeits- oder Azure Information Protection-Bezeichnungen zum Schutz von Dateien mit einer Verschlüsselung und Berechtigungen verwendet werden. 
 
 ## <a name="results"></a>Ergebnisse
 
@@ -81,7 +81,7 @@ Wenn Sie diesen Schritt abgeschlossen haben, verfügen Sie über Folgendes:
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-user-groups) für diesen Schritt betrachten.
 
-Sobald Ihre Benutzer und Gruppen in Azure AD vorhanden sind, können Sie mit dem Zuweisen von Lizenzen und der Verwendung von Exchange Online beginnen. Informationen zur Einführung von Exchange Online bei Ihren Benutzern finden Sie unter [Bereitstellen von Exchange Online für Microsoft 365 Enterprise](exchangeonline-workload.md).
+Sobald Ihre Benutzer und Gruppen in Azure AD erstellt wurden, können Sie mit dem Zuweisen von Lizenzen und der Verwendung von Produktivitätsarbeitslasten wie OneDrive for Business oder Exchange Online beginnen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
