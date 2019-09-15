@@ -10,23 +10,23 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698367"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982306"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Prüfliste für Microsoft-Support und Dienstleistungen zu den Verantwortlichkeiten für die DSGVO
 
 ## <a name="1-introduction"></a>1. Einführung
 
-Diese Prüfliste zu den Verantwortlichkeiten ist eine bequeme Möglichkeit, um auf Informationen zuzugreifen, die Sie bei Nutzung von Microsoft Professional Services und Supportdiensten zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste ist basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut:
+Diese Prüfliste zu den Verantwortlichkeiten ermöglicht den bequemen Zugriff auf Informationen, die Sie bei Nutzung von Microsoft Professional Services und Microsoft-Produktsupport zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste ist basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) Anforderungen für die Sicherheitstechnik.
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für Datenschutzanforderungen.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) für Techniken und Anforderungen im Zusammenhang mit dem Datenschutzinformationsmanagement.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für allgemeine Anforderungen im Zusammenhang mit dem Informationssicherheitsmanagement.
 
-Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen Steuerelemente zu organisieren, die Microsoft Professional Services zur Unterstützung der DSGVO implementiert. Diese können Sie vom [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen.
+Diese Kontrollstruktur wird auch verwendet, um die Darstellung der internen Kontrollen zu organisieren, die Microsoft Professional Services zur Unterstützung der DSGVO implementiert. Diese können Sie aus dem [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen.
 
 ## <a name="2-conditions-for-collection-and-processing"></a>2. Bedingungen für Sammlung und Verarbeitung
 

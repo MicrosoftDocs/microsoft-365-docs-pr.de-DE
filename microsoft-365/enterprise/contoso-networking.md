@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur Contoso-Netzwerkinfrastruktur und dazu, wie die SD-WAN-Technologie für eine optimale Netzwerkkonnektivität für cloudbasierte Microsoft 365 Enterprise-Dienste verwendet wird.
-ms.openlocfilehash: 4a2b9f2172def2c62821536e456b2194795158c4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8eb6f17ffd7974169c0131fa81f05939a54854e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072555"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982106"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Netzwerkfunktionen für die Contoso Corporation
 
@@ -50,7 +50,7 @@ Abbildung 1 zeigt die Contoso-Netzwerkinfrastruktur und die dazugehörigen Verbi
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Verwenden des SD-WAN für eine optimale Netzwerkkonnektivität mit Microsoft
 
-Contoso folgte den folgenden [Prinzipien von Office 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles):
+Contoso folgte den folgenden [Prinzipien von Office 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) bei folgende Aufgaben:
 
 1. Identifizieren und Unterscheiden von Office 365-Netzwerkdatenverkehr
 2. Lokaler Ausgang von Netzwerkverbindungen
