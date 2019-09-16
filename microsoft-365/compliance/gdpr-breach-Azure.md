@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7e614554f73f154828536cb4064a5dcf9ec23c26
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 6fdcf43da2dfa7ddf4b38b5ade8d20c37e70b52d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698327"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982356"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -68,10 +68,10 @@ Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und Sicherheitsexperten (
 
 - **Falsch positives Ereignis:** Ein Ereignis, das die Kriterien zur Erkennung von Sicherheitsvorfällen erfüllt, sich aber als Teil der gängigen Geschäftsprozesse herausstellt und möglicherweise herausgefiltert werden muss. Das Serviceteam ermittelt die Ursache falsch positiver Ereignisse und behandelt sie auf systematische Weise, wobei es Erkennungsquellen zurate zieht und bei Bedarf <span id="_Toc350859432" class="anchor"></span>überarbeitet.
 - **Sicherheitsvorfall:** Ein Vorfall, bei dem ein unrechtmäßiger Zugriff auf Kundendaten oder Supportdaten, die auf Geräten oder in Einrichtungen von Microsoft gespeichert sind, bzw. ein nicht autorisierter Zugriff auf diese Geräte oder Einrichtungen erfolgt ist, der zu Verlust, Offenlegung oder Änderung von Kundendaten oder Supportdaten geführt hat.
-- **Meldepflichtiger Sicherheitsvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
+- **Meldepflichtiger Sicherheitsvorfall/Datenschutzvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
 - **Datenschutzverletzung:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
 
-Damit ein CRSI deklariert werden kann, muss Microsoft feststellen, dass ein nicht autorisierter Zugriff auf Kundendaten (sehr wahrscheinlich) stattgefunden hat und/oder dass eine gesetzliche oder vertragliche Verpflichtung zur Benachrichtigung besteht. Es ist wünschenswert, aber nicht zwingend erforderlich, dass die spezifische Auswirkung auf den Kunden, der Ressourcenzugriff und die Reparaturschritte bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls als CRSI deklariert. Allerdings kann dies auch zu jedem beliebigen anderen Zeitpunkt stattfinden, an dem alle relevanten Informationen verfügbar sind. Der Manager für Sicherheitsvorfälle muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis eingetreten ist, um den Prozess der Benachrichtigung des Kunden zu starten.
+Damit ein CRSPI deklariert werden kann, muss Microsoft feststellen, dass ein nicht autorisierter Zugriff auf Kundendaten (sehr wahrscheinlich) stattgefunden hat und/oder dass eine gesetzliche oder vertragliche Verpflichtung zur Benachrichtigung besteht. Es ist wünschenswert, aber nicht zwingend erforderlich, dass die spezifische Auswirkung auf den Kunden, der Ressourcenzugriff und die Reparaturschritte bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls als CRSPI deklariert. Allerdings kann dies auch zu jedem beliebigen anderen Zeitpunkt stattfinden, an dem alle relevanten Informationen verfügbar sind. Der Manager für Sicherheitsvorfälle muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis eingetreten ist, um den Prozess der Benachrichtigung des Kunden zu starten.
 
 Während der gesamten Untersuchung arbeitet das Sicherheitsteam eng mit weltweit tätigen Rechtsberatern zusammen, um sicherzustellen, dass die Forensik unter Einhaltung der gesetzlichen Verpflichtungen und Zusagen gegenüber dem Kunden ausgeführt wird. Es gibt zudem erhebliche Beschränkungen für das Anzeigen und Verarbeiten von System- und Kundendaten in verschiedenen Betriebsumgebungen. Sensible oder vertrauliche Daten sowie Kundendaten werden ohne explizite schriftliche Genehmigung des Managers von Sicherheitsvorfällen, der im entsprechenden Vorfallsticket angegeben ist, nicht aus der Produktionsumgebung heraus übertragen.
 
@@ -83,7 +83,7 @@ Microsoft führt zudem eine interne nachträgliche Analyse für Datenschutzverst
 
 Microsoft Azure benachrichtigt Kunden und Aufsichtsbehörden vorgabengerecht über Datenschutzverletzungen. Microsoft baut auf eine starke interne Trennung des Betriebs von Azure. Datenflussprotokolle sind ebenfalls robust. Ein Vorteil dieses Designs ist, dass die meisten Vorfälle bestimmten Kunden zugeordnet werden können. Das Ziel ist, den betroffenen Kunden präzise, umsetzbare und zeitgerechte Informationen bereitzustellen, wenn der Schutz ihrer Daten verletzt wurde.
 
-Sobald ein CRSI deklariert wurde, wird der Benachrichtigungsprozess so rasch wie möglich gestartet, wobei auch die Sicherheitsrisiken eines zu schnellen Handelns berücksichtigt werden. Im Allgemeinen wird die Benachrichtigung bereits entworfen, während der Vorfall untersucht wird. Ab dem Zeitpunkt, an dem wir eine Datenschutzverletzung deklarieren, vergehen nicht mehr als 72 Stunden, bis wir unsere Kunden informieren, *mit Ausnahme* der folgenden Situationen:
+Der Benachrichtigungsprozess nach einem deklarierten CRSPI wird so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Im Allgemeinen erfolgt der Prozess des Benachrichtigungsentwurfs, während der Vorfall untersucht wird. Ab dem Zeitpunkt, an dem wir eine Datenschutzverletzung deklarieren, vergehen nicht mehr als 72 Stunden, bis wir unsere Kunden informieren, *mit Ausnahme* der folgenden Situationen:
 
 - Microsoft ist der Meinung, dass eine Benachrichtigung das Risiko für andere Kunden erhöht. Beispielsweise kann der Akt der Benachrichtigung einen Gegenspieler über interne Abläufe informieren, was eine Unfähigkeit zur Behebung verursacht.
 

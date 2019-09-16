@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7fbe7f277825905326a1234249e5bccf7082658d
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698317"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982336"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -49,7 +49,7 @@ Dynamics 365 reagiert auf eine potenzielle Datenschutzverletzung entsprechend de
 |**Stufe**|**Beschreibung**|
 |:-----|:-----|
 | ***1 – Erkennung*** | Erste Anzeichen für einen potenziellen Vorfall. |
-| ***2 – Analyse*** | Ein abrufbereites Mitglied des Teams für die Reaktion auf Sicherheitsvorfälle analysiert die Auswirkungen und den Schweregrad des Ereignisses. Basierend auf den Nachweisen kann die Analyse zu einer Eskalation an das Sicherheitsteam führen. |
+| ***2 – Analyse*** | Ein abrufbereites Mitglied des Teams für die Reaktion auf Sicherheitsvorfälle analysiert die Auswirkungen und den Schweregrad des Ereignisses. Basierend auf den Nachweisen kann die Analyse zur einer Eskalation an das Sicherheitsteam führen. |
 | ***3 – Diagnose*** | Sicherheitsexperten führen eine technische oder forensische Untersuchung durch und identifizieren Strategien für Eindämmung, Minderung und Abhilfe. Wenn das Sicherheitsteam der Meinung ist, dass möglicherweise Kundendaten gegenüber einer unbefugten Personen offengelegt wurden, wird parallel der Prozess zur Benachrichtigung des Kunden über den Sicherheitsvorfall in Gang gesetzt.|
 | ***4 – Stabilisierung und Wiederherstellung*** | Das Team für die Reaktion auf Sicherheitsvorfälle erstellt einen Wiederherstellungsplan, um das Problem zu mindern. Schritte zur Eindämmung der Auswirkungen, wie die Isolierung der betroffenen Systeme, können sofort und parallel zur Diagnose ausgeführt werden. Zudem können längerfristige Maßnahmen zur Risikominderung geplant werden, die umgesetzt werden, sobald die unmittelbare Gefahr gebannt ist. |
 | ***5 – Abschluss und nachträgliche Analyse*** | Das Team für die Reaktion auf Sicherheitsvorfälle erstellt eine nachträgliche Analyse, die den Vorfall detailliert untersucht, mit dem Ziel, die vorhandenen Richtlinien und Prozesse zu überarbeiten, um ein erneutes Auftreten des Ereignisses zu verhindern. |
@@ -73,10 +73,10 @@ Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und Sicherheitsexperten (
 
 - **Falsch positives Ereignis:** Ein Ereignis, das die Kriterien zur Erkennung von Sicherheitsvorfällen erfüllt, sich aber als Teil der gängigen Geschäftsprozesse herausstellt und möglicherweise herausgefiltert werden muss. Das Serviceteam ermittelt die Ursache falsch positiver Ereignisse und behandelt sie auf systematische Weise, wobei es Erkennungsquellen zurate zieht und bei Bedarf<span id="_Toc350859432" class="anchor"></span> überarbeitet.
 - **Sicherheitsvorfall:** Ein Vorfall, bei dem ein unrechtmäßiger Zugriff auf Kundendaten oder Supportdaten, die auf Geräten oder in Einrichtungen von Microsoft gespeichert sind, bzw. ein nicht autorisierter Zugriff auf diese Geräte oder Einrichtungen erfolgt ist, der zu Verlust, Offenlegung oder Änderung von Kundendaten oder Supportdaten geführt hat.
-- **Meldepflichtiger Sicherheitsvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
-- **Datenschutzvorfall:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
+- **Meldepflichtige/r Sicherheitsvorfall/Datenschutzverletzung (Customer-Reportable Security/Privacy Incident, CRSPI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
+- **Datenschutzverletzung**: Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
 
-Damit ein CRSI deklariert werden kann, muss Microsoft feststellen, dass ein nicht autorisierter Zugriff auf Kundendaten (sehr wahrscheinlich) stattgefunden hat und/oder dass eine gesetzliche oder vertragliche Verpflichtung zur Benachrichtigung besteht. Es ist wünschenswert, aber nicht zwingend erforderlich, dass die spezifische Auswirkung auf den Kunden, der Ressourcenzugriff und die Reparaturschritte bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls als CRSI deklariert. Allerdings kann dies auch zu jedem beliebigen anderen Zeitpunkt stattfinden, an dem alle relevanten Informationen verfügbar sind. Der Manager für Sicherheitsvorfälle muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis eingetreten ist, um den Prozess der Benachrichtigung des Kunden zu starten.
+Damit ein CRSPI deklariert werden kann, muss Microsoft feststellen, dass ein nicht autorisierter Zugriff auf Kundendaten (sehr wahrscheinlich) stattgefunden hat und/oder dass eine gesetzliche oder vertragliche Verpflichtung zur Benachrichtigung besteht. Es ist wünschenswert, aber nicht zwingend erforderlich, dass die spezifische Auswirkung auf den Kunden, der Ressourcenzugriff und die Reparaturschritte bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls als CRSPI deklariert. Allerdings kann dies auch zu jedem beliebigen anderen Zeitpunkt stattfinden, an dem alle relevanten Informationen verfügbar sind. Der Manager für Sicherheitsvorfälle muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis eingetreten ist, um den Prozess der Benachrichtigung des Kunden zu starten.
 
 Während der gesamten Untersuchung arbeitet das Sicherheitsteam eng mit weltweit tätigen Rechtsberatern zusammen, um sicherzustellen, dass die Forensik unter Einhaltung der gesetzlichen Verpflichtungen und Zusagen gegenüber dem Kunden ausgeführt wird. Es gibt zudem erhebliche Beschränkungen für das Anzeigen und Verarbeiten von System- und Kundendaten in verschiedenen Betriebsumgebungen. Sensible oder vertrauliche Daten sowie Kundendaten werden ohne explizite schriftliche Genehmigung des Managers von Sicherheitsvorfällen, der im entsprechenden Vorfallsticket angegeben ist, nicht aus der Produktionsumgebung heraus übertragen.
 
@@ -88,7 +88,7 @@ Microsoft führt zudem eine interne nachträgliche Analyse für Datenschutzverst
 
 Microsoft Dynamics 365 benachrichtigt Kunden und Aufsichtsbehörden vorgabengerecht über Datenschutzverletzungen. Microsoft baut auf eine starke interne Trennung des Betriebs der verschiedenen Dynamics 365-Dienste. Datenflussprotokolle sind ebenfalls robust. Ein Vorteil dieses Designs ist, dass die meisten Vorfälle bestimmten Kunden zugeordnet werden können. Das Ziel ist, den betroffenen Kunden präzise, umsetzbare und zeitgerechte Informationen bereitzustellen, wenn der Schutz ihrer Daten verletzt wurde.
 
-Sobald ein CRSI deklariert wurde, wird der Benachrichtigungsprozess so rasch wie möglich gestartet, wobei auch die Sicherheitsrisiken eines zu schnellen Handelns berücksichtigt werden. Im Allgemeinen wird die Benachrichtigung bereits entworfen, während der Vorfall untersucht wird. Ab dem Zeitpunkt, an dem wir eine Datenschutzverletzung deklarieren, werden unsere Kunden umgehend informiert, *mit Ausnahme* der folgenden Situationen:
+Der Benachrichtigungsprozess bei einem deklarierten CRSPI wird so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Im Allgemeinen erfolgt der Prozess des Benachrichtigungsentwurfs, während der Vorfall untersucht wird. Kundenbenachrichtigungen werden ab dem Zeitpunkt, an dem wir einen Verstoß deklarieren, umgehend übermittelt, *mit Ausnahme* der folgenden Situationen:
 
 - Microsoft ist der Meinung, dass eine Benachrichtigung das Risiko für andere Kunden erhöht. Beispielsweise wenn durch die Benachrichtigung der Übeltäter gewarnt und der Schaden daraufhin nicht mehr behoben werden kann.
 - Andere ungewöhnliche oder extreme Umstände, die von der Rechtsabteilung und dem leitenden Vorfall-Manager von Microsoft überprüft werden.
