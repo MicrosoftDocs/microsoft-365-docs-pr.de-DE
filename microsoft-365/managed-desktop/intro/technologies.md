@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 9f1631b054a46cac83140e07460807b2ba0edac3
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982536"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040777"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft Managed Desktop-Technologien
 
@@ -28,7 +28,7 @@ In diesem Thema werden die Komponenten der erforderlichen Enterprise-Lizenzen zu
  |
  --- | ---
 Office 365 ProPlus (64-Bit) | Diese Office-Anwendungen werden mit dem Gerät ausgeliefert: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>Die 64-Bit-Vollversionen von Microsoft Project und Microsoft Visio sind nicht enthalten. Da die Installation dieser Anwendungen jedoch von der Office 365 ProPlus-Installation abhängt, hat Microsoft Managed Desktop standardmäßig Microsoft InTune-Bereitstellungen und Sicherheitsgruppen erstellt, die Sie dann verwenden können, um diese Anwendungen für lizenzierte bereitzustellen. Benutzer. Weitere Informationen finden Sie unter [Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop-Geräten](../get-started/project-visio.md)
-OneDrive for Business | Azure Active Directory einmaliges Anmelden <br><br>Die bekannte Ordnerumleitung für "Desktop"-, "Document"-und "Pictures"-Ordner ist enthalten; aktiviert und konfiguriert von Microsoft Managed Desktop. 
+OneDrive for Business |Azure Active Directory einmaliges Anmelden ist für Endbenutzer bei der ersten Anmeldung bei OneDrive für Unternehmen aktiviert.<br><br>Die bekannte Ordnerumleitung für "Desktop"-, "Document"-und "Pictures"-Ordner ist enthalten; aktiviert und konfiguriert von Microsoft Managed Desktop. 
 Store-Apps |    Microsoft Sway und Power BI werden nicht mit dem Gerät ausgeliefert. Diese apps stehen im Microsoft Store zum Download bereit.
 Win32-Anwendungen |    Teams werden nicht mit dem Gerät ausgeliefert, sondern werden von Microsoft für von Microsoft verwaltete Desktop Geräte gepackt und bereitgestellt. Azure Information Protection-Client wird nicht mit dem Gerät ausgeliefert, aber Sie können dieses Paket für die Bereitstellung bereitstellen. 
 Webanwendungen |  Jammern, Office in einem Browser, vertiefen, Durchfluss, StaffHub, PowerApps und Planer werden nicht mit dem Gerät ausgeliefert. Benutzer können über einen Browser auf die Webversion dieser Anwendungen zugreifen.

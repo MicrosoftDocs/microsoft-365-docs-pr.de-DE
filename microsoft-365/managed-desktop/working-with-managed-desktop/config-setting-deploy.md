@@ -5,14 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, Dokumentation, Depl
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390512"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040799"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -20,7 +19,7 @@ Nachdem Sie Änderungen an den Einstellungskategorien vorgenommen und eine Berei
 
 ## <a name="deployment-statuses"></a>Bereitstellungsstatus 
 
-Dies sind die Statuen, die Sie für jede Bereitstellung sehen.
+Dies sind die Status, die Sie für jede Bereitstellung sehen.
 
 Status  | Erklärung 
 --- | --- 
@@ -41,17 +40,15 @@ In diesen Anweisungen wird ein Desktop Hintergrundbild angezeigt. Nachdem Sie ei
 3. Wählen Sie im Bereich **Bereitstellungsstatus** die Einstellung aus, die Sie bereitstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus.
 4. Wählen Sie **Bereitstellen** aus, um die Änderung an einer der Bereitstellungsgruppen bereitzustellen.
 
-![Bereitstellungsstatus für konfigurierbare Einstellungen (Übersicht)](images/deploy-cs-overview.png)
-
-Microsoft Managed Desktop empfiehlt die Bereitstellung in Bereitstellungsgruppen in dieser Reihenfolge: Test, erste, schnelle und dann breit. 
+![Konfigurierbare Einstellungen Bereitstellungs](images/1deployedit.png) Statusübersicht Microsoft Managed Desktop empfiehlt die Bereitstellung in Bereitstellungsgruppen in dieser Reihenfolge: Test, erste, schnell und dann breit. 
 
 Wenn Änderungen in jeder Gruppe abgeschlossen werden, ändert sich der Status in **abgeschlossen**.
 
-![Bereitstellung der konfigurierbaren Einstellungen abgeschlossen](images/config-setting-complete.png)
+![Bereitstellung der konfigurierbaren Einstellungen abgeschlossen](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Wiederherstellen der Bereitstellung
 
-Nachdem Sie eine Änderung bereitgestellt haben, können Sie den **Bereitstellungsstatus**wiederherstellen. Wenn Sie eine gerade ausgeführte oder **** **abgeschlossene**Änderung wiederherstellen, wird die aktuelle Bereitstellung angehalten. Die Einstellung wird auf die letzte Version zurückgesetzt, die für alle Gruppen bereitgestellt wurde. 
+Nachdem Sie eine Änderung bereitgestellt haben, können Sie den **Bereitstellungsstatus**wiederherstellen. Wenn Sie eine gerade **ausgeführte** oder **abgeschlossene**Änderung wiederherstellen, wird die aktuelle Bereitstellung angehalten. Die Einstellung wird auf die letzte Version zurückgesetzt, die für alle Gruppen bereitgestellt wurde. 
 
 Wir zeigen die Schritte zum Rückgängigmachen einer Änderung mithilfe des Desktop Hintergrundbilds als Beispiel. 
 
@@ -61,7 +58,7 @@ Wir zeigen die Schritte zum Rückgängigmachen einer Änderung mithilfe des Desk
 3. Wählen Sie im Arbeitsbereich **Bereitstellungsstatus** die Einstellung aus, die Sie wiederherstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus, die wiederhergestellt werden soll.
 4. Wählen Sie unter **Notwendigkeit zum Rückgängigmachen dieser Änderung**die Option **Bereitstellung rückgängig**machen aus.
 
-![Bereitstellung konfigurierbarer Einstellungen wiederherstellen](images/config-setting-revert.png) 
+![Bereitstellung konfigurierbarer Einstellungen wiederherstellen](images/3revert.png) 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md)
