@@ -3,7 +3,7 @@ title: Bereitstellen von Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982070"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050276"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -39,7 +39,7 @@ Es gibt drei Hauptmöglichkeiten zum Bereitstellen von Microsoft 365 Enterprise:
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack für Microsoft 365
 
-FastTrack bietet fortlaufend und wiederholt einen Vorteil und ist im Rahmen eines Abonnements verfügbar. Microsoft-Techniker unterstützen Sie beim Wechsel in die Cloud in Ihrem eigenen Tempo. FastTrack bietet auch Zugang zu kompetenten Partnern für zusätzliche Dienste. Für mehr als 40.000 Kunden maximiert FastTrack aktuell den ROI, beschleunigt die Bereitstellung und steigert die Akzeptanz in der Organisation. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+FastTrack bietet fortlaufend und wiederholt einen Vorteil und ist* im Rahmen Ihres Abonnements kostenlos verfügbar*. Microsoft-Techniker unterstützen Sie beim Wechsel in die Cloud in Ihrem eigenen Tempo. FastTrack bietet auch Zugang zu kompetenten Partnern für zusätzliche Dienste. Für mehr als 40.000 Kunden maximiert FastTrack aktuell den ROI, beschleunigt die Bereitstellung und steigert die Akzeptanz in der Organisation. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 Wenn Sie von FastTrack für die Bereitstellung von Microsoft 365 Enterprise profitieren möchten, können Sie den FastTrack [Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) für Anleitung zum Bereitstellen und Einrichten Ihrer Foundation-Infrastruktur verwenden. Sie müssen als globaler Administrator in einem Office 365- oder Microsoft 365-Mandanten angemeldet sein, um auf diese Seite zugreifen zu können.
 
@@ -77,7 +77,7 @@ Beginnen Sie Ihre End-to-End-Bereitstellung [hier](deploy-foundation-infrastruct
 
 Wenn Sie Microsoft 365 Enterprise oder ein bestimmtes Produkt oder Feature nicht kennen, ist eine der besten Methoden, es selbst zu konfigurieren und zu sehen, wie es funktioniert.
 
-Wir haben dies mit Testumgebungsanleitungen einfacher gestaltet, die Sie durch die Konfiguration der Infrastruktur oder einer Funktion in einer vereinfachten, aber repräsentativen Umgebung über Testversionen oder bezahlte Abonnements unterstützen.
+Wir haben dies mit Testumgebungsanleitungen einfacher gestaltet, die Sie durch die Konfiguration der Infrastruktur oder einer Funktion in einer vereinfachten, aber repräsentativen Testumgebung über Testversionen oder bezahlte Abonnements unterstützen.
 
 Mit Testumgebungsanleitungen können Sie eine Machbarkeitsstudie einer komplexen Konfiguration, einer Arbeitslast oder eines End-to-End-Szenarios selbst erarbeiten, demonstrieren, anpassen oder erstellen.
 
@@ -87,13 +87,13 @@ Weitere Informationen finden Sie unter [Microsoft 365 Enterprise-Testumgebungsan
 
 ## <a name="transition-your-entire-organization"></a>Umstellung Ihrer gesamten Organisation
 
-Einen besseren Überblick darüber, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste von Microsoft 365 Enterprise umstellen können, erhalten Sie unter [Überführen Ihrer Organisation zu Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Einen besseren Überblick darüber, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste von Microsoft 365 Enterprise umstellen können, erhalten Sie auf dem Poster [Überführen Ihrer Organisation zu Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Poster zur Überführung Ihrer Organisation zu Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Aufstellung Ihrer vorhandenen Infrastruktur zu erstellen und die Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise zu finden. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
-Sie können [das Poster zur Überführung herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [das Poster zur Überführung auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="how-did-others-do-it"></a>Wie haben andere Personen es gemacht?
 

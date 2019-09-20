@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise-Foundation-Infrastruktur
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982096"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050306"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
 
@@ -33,7 +33,7 @@ Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese
 |![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Ihre vorhandenen Windows-basierten Computer können auf Windows 10 Enterprise aktualisiert werden, und neue Geräte sind mit Windows 10 Enterprise ausgestattet. |
 |![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Ihre vorhandenen Benutzer von Microsoft Office können ein Upgrade auf Office 365 ProPlus durchführen. |
 |![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Verwaltung mobiler Geräte](mobility-infrastructure.md)| Ihre Geräte können registriert und verwaltet werden. |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information Protection](infoprotect-infrastructure.md)| Ihre Bezeichnungen sind bereit, Dokumente zu schützen, und Office 365-Sicherheitsfunktionen sind aktiviert. |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information Protection](infoprotect-infrastructure.md)| Office 365-Sicherheitsfunktionen sind aktiviert, und Ihre Bezeichnungen und Richtlinien sind bereit, Dokumente und E-Mail zu schützen. |
 
 Die Phasen beginnen mit den grundlegendsten Elementen (Netzwerk und Identität), und erstellen dann Schichten von Infrastruktur-Einstellungen und Gruppen zu:
 
@@ -48,7 +48,7 @@ Sie haben jedoch die Flexibilität, die Phasen oder Schritte innerhalb der Phase
 
 -  **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
 
-Am Ende jeder Phase sollten Sie die Beendigungskriterien prüfen, einschließlich der erforderlichen Bedingungen, die Sie erfüllen müssen, und der optionalen Bedingungen, die Sie berücksichtigen müssen. Die Beendigungskriterien für jede Phase stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die daraus resultierende End-to-End-Konfiguration die Anforderungen für eine Microsoft 365 Enterprise Bereitstellung erfüllen.
+Am Ende jeder Phase sollten Sie die *Beendigungskriterien* prüfen, einschließlich der erforderlichen Bedingungen, die Sie erfüllen müssen, und der optionalen Bedingungen, die Sie berücksichtigen müssen. Die Beendigungskriterien für jede Phase stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die daraus resultierende End-to-End-Konfiguration die Anforderungen für eine Microsoft 365 Enterprise Bereitstellung erfüllen.
 
 Um zu erfahren, wie der Inhalt strukturiert ist, schauen Sie sich dieses kurze Video an.
 
@@ -90,7 +90,7 @@ Beispielsweise erstellen Sie die Einstellungen für:
 | Windows 10 Enterprise | Gruppen, die automatisch Computer mit Windows 7 oder Windows 8.1 auf Windows 10 Enterprise aktualisieren. |
 | Office 365 ProPlus | Gruppen, die Office 365 ProPlus automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitstellen. |
 | Verwaltung mobiler Geräte | Gruppen für Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
-| Schutz von Daten | Office 365-Vertraulichkeitsbezeichnungen und Azure Information Protection-Bezeichnungen und Gruppen. |
+| Schutz von Daten | Gruppe für Office 365-Vertraulichkeitsbezeichnungen. |
 
 Wenn Sie bereit sind, Elemente dieser Infrastruktur für Benutzer bereitzustellen, können Sie:
 
@@ -100,7 +100,7 @@ Wenn Sie bereit sind, Elemente dieser Infrastruktur für Benutzer bereitzustelle
 | Windows 10 Enterprise | Hinzufügen von Konten zu den Gruppen, um Windows 10 Enterprise automatisch für Benutzer mit Windows 7 oder Windows 8.1 bereitzustellen. |
 | Office 365 ProPlus | Hinzufügen von Benutzerkonten zu den Gruppen, um Office 365 ProPlus automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitzustellen. |
 | Verwaltung mobiler Geräte | Hinzufügen von Konten zu den Gruppen für die Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
-| Information Protection | Hinzufügen von Benutzerkonten zu den Gruppen für Information Protection Bezeichnungen. |
+| Schutz von Daten | Fügen Sie Benutzerkonten zu den Gruppen für Vertraulichkeitsbezeichnungen hinzu. |
 
 Sobald die Phasen oder Elemente der Foundation-Infrastruktur fertiggestellt, getestet und erprobt ist, können Sie installierte Software, wie Windows 10 Enterprise und Office 365 ProPlus, sowie Cloud-basierte Dienste und Schutzmaßnahmen, wie Geräteregistrierung und Richtlinien für bedingten Zugriff, an Ihre Benutzer so bereitstellen, wie es Ihren Unternehmenszielen und IT-Ressourcen am besten entspricht.
 
@@ -110,7 +110,7 @@ Um Ihnen einige Ideen zu geben, wie Sie das Projektmanagement der verschiedenen 
 
 ## <a name="deployment-for-non-enterprises"></a>Bereitstellung für Nicht-Unternehmen
 
-Wenn Ihre Organisation kleiner und Microsoft 365 Business für Sie nicht geeignet ist, lesen Sie [Bereitstellung für Nicht-Unternehmen](deploy-foundation-infrastructure-non-enterprises.md).
+Wenn Ihre Organisation kleiner und Microsoft 365 Business für Sie nicht geeignet ist, finden Sie unter [Bereitstellung für Nicht-Unternehmen](deploy-foundation-infrastructure-non-enterprises.md) eine vereinfachte Bereitstellungsmethode.
 
 
 ## <a name="next-step"></a>Nächster Schritt

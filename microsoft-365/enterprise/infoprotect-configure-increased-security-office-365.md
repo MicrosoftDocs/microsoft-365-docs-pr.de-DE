@@ -3,7 +3,7 @@ title: 'Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren der erhöhten Sicherheit für Microsoft 365
-ms.openlocfilehash: 81c39eb6a51e7596a72721c72084f1f255f7f451
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b51cb38a386292b79fdfe264c9d8a86973aa6325
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073635"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047278"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365
 
@@ -28,14 +28,14 @@ ms.locfileid: "34073635"
 
 Um sicherzustellen, dass Ihr Microsoft-365-Abonnement und die zugehörigen Daten vor böswilligen Angriffen geschützt sind, konfigurieren Sie Folgendes:
 
-- [Richtlinien zur Verwaltung von Bedrohungen optimieren](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-office-365-security--compliance-center)
+- [Richtlinien zur Verwaltung von Bedrohungen optimieren](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-microsoft-365-security-center)
 - [Zusätzliche mandantenweite Exchange Online-Einstellungen](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-additional-exchange-online-tenant-wide-settings)
 - [Mandantenweite Freigaberichtlinien im SharePoint Admin Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-tenant-wide-sharing-policies-in-sharepoint-admin-center)
 - [Azure Active Directory-Einstellungen (Azure AD)](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-settings-in-azure-active-directory)
 
 Nachdem Sie diese konfiguriert haben, können Sie Informationen zu Ihrem Sicherheitsstatus abrufen von:
 
-- [Dashboards und Berichte im Microsoft Security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
+- [Dashboards und Berichte im Microsoft Security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security-and-compliance-centers)
 - [Microsoft-Sicherheitsbewertung](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)
 
 Ein zusätzliches Sicherheitsfeature ist [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp), mit dem Ihre Organisation sicherer zusammenarbeiten kann, indem:

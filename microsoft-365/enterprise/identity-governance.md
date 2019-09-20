@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Identitätsgovernance für Ihren Azure AD-Mandanten verstehen und konfigurieren.
-ms.openlocfilehash: a965b74afc680c2ff506e0fc2ddebc280ee312a1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 1c0eab574e5436dd0c88a0b46d1916281bcf0577
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982908"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047358"
 ---
 # <a name="step-7-configure-identity-governance"></a>Schritt 7: Konfigurieren der Identitätsgovernance
 
@@ -31,7 +31,7 @@ Weitere Informationen über Identitätsgovernance für Azure Active Directory (A
 <a name="identity-access-reviews"></a>
 ## <a name="set-up-azure-ad-access-reviews"></a>Zugriffsüberprüfungen in Azure AD einrichten
 
-*Dies ist optional und gilt nur für die Versionen E5 von Microsoft 365 Enterprise*
+*Dies ist optional und gilt nur für die E5-Version von Microsoft 365 Enterprise*
 
 In diesem Schritt richten Sie Azure AD Zugriffsüberprüfungen ein, mit denen Sie den Zugriff eines Benutzers überprüfen können, um sicherzustellen, dass nur die richtigen Personen weiterhin Zugriff haben. Zum Beispiel:
 
