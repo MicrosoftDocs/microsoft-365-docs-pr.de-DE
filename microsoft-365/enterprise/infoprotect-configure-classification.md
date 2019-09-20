@@ -3,7 +3,7 @@ title: 'Schritt 2: Konfigurieren der Klassifizierung für Ihre Umgebung'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren verschiedener Methoden zum Klassifizieren von Daten in Ihrer Organisation.
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072255"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047298"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Schritt 2: Konfigurieren der Klassifizierung für Ihre Umgebung
 
@@ -63,9 +63,8 @@ Weitere Informationen finden Sie unter [Übersicht zu Aufbewahrungsbezeichnungen
 Zum Schutz und zur Implementierung der Sicherheit für bestimmte Arten von Dokumenten oder Dokumenten mit bestimmten Inhalten gehört es, diese mit einer Bezeichnung zu versehen, damit die zusätzliche Sicherheit angewendet werden kann. Mit Vertraulichkeitsbezeichnungen in Microsoft 365 können Sie:
 
 - Erzwingen von Schutzeinstellungen, wie Verschlüsselung, Berechtigungen oder das Hinzufügen eines Wasserzeichens.
-- Verhindern, dass sensible Inhalte Ihre Organisation auf Geräten mit Windows verlassen, indem Sie den Endpoint Protection in Microsoft Intune verwenden. 
 - Verwenden von Windows Information Protection (WIP) Endpoint Protection, um zu verhindern, dass Inhalte in eine Drittanbieteranwendung wie Twitter oder Gmail kopiert oder auf einen Wechselspeicher wie ein USB-Laufwerk kopiert werden.
-- Verwenden von Microsoft Cloud App Security zum Schutz von Inhalten in Anwendungen und Diensten von Drittanbietern. 
+- Verwenden von Microsoft Cloud App Security (CAS) zum Schutz von Inhalten in Anwendungen und Diensten von Drittanbietern. 
 - Klassifizieren von Inhalten ohne Verwendung von Schutzeinstellungen.
 
 Wenn Sie Vertraulichkeitsbezeichnungen verwenden, sollten Sie für jede Sicherheits- und Information Protection-Stufe eine Bezeichnung konfigurieren. Beispielsweise, können Sie drei Vertraulichkeitsbezeichnungen erstellen für:
@@ -73,6 +72,8 @@ Wenn Sie Vertraulichkeitsbezeichnungen verwenden, sollten Sie für jede Sicherhe
 - Baseline
 - Vertraulich
 - Streng geregelt
+
+Wenn Sie Dateien mit stark regulierten Daten auf einer SharePoint Online-Website speichern und möchten, dass diese Dateien auch bei Verlassen der Website über dieselben Berechtigungen wie die Website verfügen, müssen Sie eine zusätzliche Vertraulichkeitsbezeichnung erstellen, deren Berechtigungen mit denjenigen der Website identisch sind.
 
 Weitere Informationen finden Sie unter [Übersicht über Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 

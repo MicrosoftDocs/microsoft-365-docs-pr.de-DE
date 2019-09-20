@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint Online-Teamwebsite oder ein Microsoft Teams-Team, um Ihre wertvollsten und vertraulichen digitalen Objekte zu speichern.
-ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982756"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047336"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Microsoft Teams und SharePoint Online-Websites für streng geregelte Daten
 
@@ -145,7 +145,7 @@ Verwenden Sie die Anweisungen unter [Bereitstellen einer isolierten SharePoint O
 - Erstellen Sie die Zugriffsgruppen für jeder auf der Website verwendete SharePoint-Berechtigungsstufe, und füllen Sie diese.
 - Erstellen und Konfigurieren Sie die isolierte Teamwebsite.
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>Schritt 2: Konfigurieren der Website für eine DLP-Richtlinie für eine Office 365-Aufbewahrungsbezeichnung
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>Schritt 2: Konfigurieren der Website für eine Office 365-Aufbewahrungsbezeichnung
 
 Verwenden Sie die Anweisungen unter [Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp), um Folgendes zu tun:
 

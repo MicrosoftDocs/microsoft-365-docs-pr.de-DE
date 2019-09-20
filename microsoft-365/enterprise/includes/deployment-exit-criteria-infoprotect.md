@@ -45,7 +45,7 @@ Gegebenenfalls hilft Ihnen [Schritt 2](../infoprotect-configure-classification.m
 
 Für Ihre angemeldeten Windows 10 Enterprise-Geräte wird eine Intune-Richtlinie bereitgestellt und angewendet, die definiert:
 
-- Welche Apps beschützt werden sollen.
+- Welche Apps geschützt werden sollen.
 - Der Schutzgrad.
 - Wo der Schutz gilt.
 
@@ -60,10 +60,24 @@ Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Office 365 Sec
 
 Gegebenenfalls hilft Ihnen [Schritt 5](../infoprotect-data-loss-prevention.md), diese Anforderung zu erfüllen. 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>Optional: E-Mail-Verschlüsselung ist konfiguriert
+
+Sie haben die folgende E-Mail-Verschlüsselung nach Bedarf für Ihre Organisation konfiguriert:
+
+|||
+|:-------|:-----|
+| **Verschlüsselungsmethode** | **Für gesendete E-Mails** |
+| [Office 365-Nachrichtenverschlüsselung (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Außerhalb Ihrer Organisation mit Verschlüsselung |
+| [Verwaltung von Informationsrechten (Information Rights Management, IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Verschlüsselung und Berechtigungen |
+| [Secure/Multipurpose Internet Mail Extensions (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Verschlüsselung und digitale Signaturen unter Verwendung der Kryptografie mit öffentlichen Schlüsseln |
+|||
+
+Gegebenenfalls hilft Ihnen [Schritt 6](../infoprotect-email-encryption.md), diese Anforderung zu erfüllen.
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>Optional: Konfigurieren von Privileged Access Management in Office 365
 
 Sie haben die Informationen im Thema [Konfigurieren von Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) verwendet, um privilegierten Zugriff zu aktivieren und eine oder mehrere Richtlinien für privilegierten Zugriff in Ihrer Organisation zu erstellen. Sie haben diese Richtlinien konfiguriert, und Just-in-Time-Zugriff ist für Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen aktiviert.
 
-Gegebenenfalls hilft Ihnen [Schritt 6](../infoprotect-configure-privileged-access-management.md), diese Anforderung zu erfüllen. 
+Gegebenenfalls hilft Ihnen [Schritt 7](../infoprotect-configure-privileged-access-management.md), diese Anforderung zu erfüllen. 
