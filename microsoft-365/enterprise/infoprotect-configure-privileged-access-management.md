@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 6: Konfigurieren von privileged Access Management für Office 365'
+title: 'Schritt 7: Konfigurieren der privilegierten Zugriffsverwaltung für Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Verstehen und Konfigurieren von Privileged Access Management für Office 365.
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072095"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047288"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>Schritt 6: Konfigurieren von privileged Access Management für Office 365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Schritt 7: Konfigurieren der privilegierten Zugriffsverwaltung für Office 365
 
 *Dieser Schritt ist optional und gilt nur für die Versionen E5 und Advanced Compliance von Microsoft 365 Enterprise.*
 
@@ -39,11 +39,13 @@ Weitere Informationen zum Aktivieren von Privileged Access Management in Office 
 
 Weitere Informationen finden Sie im Thema [Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-## <a name="results"></a>Ergebnisse
 
-Das Ergebnis dieses Schritts ist, dass Sie die Sicherheit von Office 365 durch Aktivieren der Just-in-Time-Zugriffssteuerung für wichtige Daten und Konfigurationseinstellungen für Ihre Organisation erhöht haben.
+|||
+|:-------|:-----|
+|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Um diese Konfiguration in einer Testlaborumgebung zu üben, lesen Sie den Leitfaden für die [privilegierte Zugriffs Verwaltungs Test-Übungseinheit](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|||
 
-Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step6) für diesen Schritt betrachten.
+Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step7) für diesen Schritt betrachten.
 
 ## <a name="next-step"></a>Nächster Schritt
 

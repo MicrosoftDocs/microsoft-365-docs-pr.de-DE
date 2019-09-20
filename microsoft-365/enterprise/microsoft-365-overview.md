@@ -3,7 +3,7 @@ title: Übersicht zu Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: b1750e1810556b8dadd4a16481c9ada3195f6c3c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982836"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050286"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Übersicht zu Microsoft 365 Enterprise
 
@@ -78,27 +78,27 @@ Um ein besseres Bild davon zu erhalten, wie Sie Ihre gesamte Organisation auf di
 
 Dieses zweiseitige Poster ist eine schnelle Möglichkeit zum Inventarisieren Ihrer vorhandenen Infrastruktur und zur Anleitung für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es umfasst Windows-und Office-Produkte sowie andere Infrastruktur-und Sicherheitselemente wie Geräteverwaltung, Identität und Informationen und Schutz vor Bedrohungen.
 
-Sie können [Dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten Letter, legal oder Tabloid (11 x 17) ausdrucken.
+Sie können [Dieses Poster auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten Letter, legal oder Tabloid (11 x 17) ausdrucken.
 
-## <a name="avoid-end-of-support-for-office-2010-clients-and-servers-and-windows-7"></a>Vermeiden Sie das Ende der Unterstützung für Office 2010-Clients und-Server und-Windows 7
+## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Vermeiden des Endes der Unterstützung für Windows 7-und Office 2010-Clients und-Server
 
-Die folgenden Produkte erreichen das Ende der Unterstützung am **14. Januar 2010**:
+Die folgenden Produkte erreichen das Ende der Unterstützung am **14. Januar 2020**:
 
 - [Windows 7](https://aka.ms/win7upgrade)
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 
 Die folgenden Produkte erreichen das Ende der Unterstützung am **13. Oktober 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 Eine visuelle Zusammenfassung der Upgrade-, Migrations-und Cloud-Optionen für diese Produkte finden Sie unter [Ende des Support-Posters](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
 [![Image für das Ende der Unterstützung für Office 2010-Clients und-Server und Windows 7 Poster](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Office 2010 Client-und Serverprodukte und Windows 7 das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Options Unterstützung in Microsoft 365 Enterprise hervorgehoben werden.
+Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Windows 7 und Office 2010 Client-und Serverprodukte das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Unterstützung in Microsoft 365 Enterprise hervorgehoben sind.
 
-Sie können [Dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten Letter, legal oder Tabloid (11 x 17) ausdrucken.
+Sie können [Dieses Poster auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten Letter, legal oder Tabloid (11 x 17) ausdrucken.
 
 ## <a name="deploy"></a>Bereitstellen
 
