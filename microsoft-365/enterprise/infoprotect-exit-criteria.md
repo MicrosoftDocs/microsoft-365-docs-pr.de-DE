@@ -3,7 +3,7 @@ title: Beendigungskriterien für die Information Protection-Infrastruktur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informieren Sie sich über die Kriterien für Information Protection-basierte Dienste und -Infrastruktur, um sicherzustellen, dass Ihre Konfiguration die Anforderungen von Microsoft 365Enterprise erfüllt.
-ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071945"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047238"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Beendigungskriterien für die Information Protection-Infrastruktur
 
@@ -88,16 +88,30 @@ Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Office 365 Sec
 
 Gegebenenfalls hilft Ihnen [Schritt 5](infoprotect-data-loss-prevention.md), diese Anforderung zu erfüllen. 
 
-
 <a name="crit-infoprotect-step6"></a>
+## <a name="optional-email-encryption-is-configured"></a>Optional: E-Mail-Verschlüsselung ist konfiguriert
+
+Sie haben die folgende E-Mail-Verschlüsselung nach Bedarf für Ihre Organisation konfiguriert:
+
+|||
+|:-------|:-----|
+| **Verschlüsselungsmethode** | **Für gesendete E-Mails** |
+| [Office 365-Nachrichtenverschlüsselung (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Außerhalb Ihres Unternehmens mit Verschlüsselung |
+| [Verwaltung von Informationsrechten (Information Rights Management, IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Verschlüsselung und Berechtigungen |
+| [S/MIME (Secure/Multipurpose Internet Mail Extensions)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Verschlüsselung und digitale Signaturen unter Verwendung der Kryptografie mit öffentlichen Schlüsseln |
+|||
+
+Gegebenenfalls hilft Ihnen [Schritt 6](infoprotect-email-encryption.md), diese Anforderung zu erfüllen.
+
+<a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>Optional: Konfigurieren von Privileged Access Management in Office 365
 
 Sie haben die Informationen im Thema [Konfigurieren von Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) verwendet, um privilegierten Zugriff zu aktivieren und eine oder mehrere Richtlinien für privilegierten Zugriff in Ihrer Organisation zu erstellen. Sie haben diese Richtlinien konfiguriert, und Just-in-Time-Zugriff ist für Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen aktiviert.
 
-Gegebenenfalls hilft Ihnen [Schritt 6](infoprotect-configure-privileged-access-management.md), diese Anforderung zu erfüllen. 
+Gegebenenfalls hilft Ihnen [Schritt 7](infoprotect-configure-privileged-access-management.md), diese Anforderung zu erfüllen. 
 
 ## <a name="results-and-next-steps"></a>Ergebnisse und nächste Schritte
 
-Ihre Information Protection-Infrastruktur für Microsoft 365 Enterprise verwendet definierte Sicherheitsstufen, erhöhte Sicherheit für Office 365, Klassifizierungen anhand vertraulicher Datentypen und -bezeichnungen und privilegierte Zugriffsverwaltung.
+Ihre Informationsschutzinfrastruktur für Microsoft 365 Enterprise verwendet definierte Sicherheitsstufen, erhöhte Sicherheit für Office 365, Klassifizierung mithilfe von Datentypen und Bezeichnungen für vertrauliche Daten, Windows Information Protection, Verhinderung von Datenverlust, E-Mail-Verschlüsselung und Privileged Access Management.
 
 Wenn Sie die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise befolgen, Sie können jetzt für alle Ihre [Arbeitslasten und Szenarien](deploy-workloads.md) die Vorteile der Funktionen und Konfiguration der Foundation-Infrastruktur nutzen.
