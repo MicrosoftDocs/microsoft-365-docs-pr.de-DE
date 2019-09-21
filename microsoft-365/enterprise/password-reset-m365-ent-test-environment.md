@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Testen der Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: de025d6b54b3cc1b69c8e50fec428f58d7754dcb
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8be1e898d0b995ddbed7b63c2f0ce07c969592c8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073115"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071594"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Kennwortzurücksetzung für Ihre Microsoft 365-Testumgebung
 
@@ -85,7 +85,7 @@ Als Nächstes testen Sie die Kennwortzurücksetzung für das Konto von Benutzer 
 9. Geben Sie unter **Wiederherstellen des Kontos** ein neues Kennwort für das Konto von Benutzer 2 ein, und klicken Sie dann auf **Fertig stellen**. Notieren Sie sich das geänderte Kennwort für das Konto von Benutzer 2, und bewahren Sie es an einem sicheren Ort auf.
 10. Gehen Sie in einer separaten Registerkarte derselben Browserinstanz zu [https://portal.office.com](https://portal.office.com), und melden Sie sich dann mit dem Kontonamen von Benutzer 2 und dem neuen Kennwort an. Die **Microsoft Office-Startseite** sollte angezeigt werden.
 
-Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-password-reset.md#identity-pw-reset) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren der Kennwortzurücksetzung in der Produktion.
+Im Schritt [Vereinfachen der Kennwortzurücksetzung](identity-secure-your-passwords.md#identity-pw-reset) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren der Kennwortzurücksetzung in der Produktion.
 
 ## <a name="next-step"></a>Nächster Schritt
 

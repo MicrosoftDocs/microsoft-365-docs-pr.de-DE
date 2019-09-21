@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Testen des nahtlosen einmaliges Anmeldens in Azure AD für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 51543b595a0adf6bd0abcad8bc59be4dc8834e36
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 4d62405bc500bdf0dec8aa8aa6639e0802aa232e
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074135"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071564"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Nahtloses einmaliges Anmelden in Azure AD für Ihre Microsoft 365-Testumgebung
 
@@ -109,7 +109,7 @@ Diese Konfiguration besteht aus:
 - Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Office 365- und EMS E5-Abonnements mit der AD DS-Domäne "TESTLAB" zu synchronisieren. 
 - Das nahtlose einmalige Anmelden in Azure AD wird aktiviert, damit sich Computer im simulierten Intranet bei Microsoft 365-Cloudressourcen anmelden können, ohne ein Kennwort für ein Benutzerkonto anzugeben.
 
-Im Schritt [Vereinfachen der Benutzeranmeldung](identity-password-reset.md#identity-sso) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren der nahtlosen einmaligen Anmeldung in Azure AD in der Produktion.
+Im Schritt [Vereinfachen der Benutzeranmeldung](identity-secure-your-passwords.md#identity-sso) in der Identitätsphase finden Sie Informationen und Links zum Konfigurieren der nahtlosen einmaligen Anmeldung in Azure AD in der Produktion.
 
 ## <a name="next-step"></a>Nächster Schritt
 

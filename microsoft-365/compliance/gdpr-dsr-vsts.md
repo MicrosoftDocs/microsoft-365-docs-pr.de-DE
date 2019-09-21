@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431776"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071484"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Azure DevOps Services – Anfragen von Betroffenen für die DSGVO
 
@@ -43,7 +43,7 @@ Der erste Schritt zum Löschen verknüpfter Azure DevOps Services-Kundendaten un
 
 Verantwortliche können Kundendaten und vom System generierte Protokolle der Betroffenen mit einer von zwei Methoden exportieren, je nach Identitätsanbieter (MSA oder AAD) zum Anmelden beim Azure DevOps Service.
 
-- Benutzer, die sich über ein Konto registriert haben, das auf einem Azure-Mandanten basiert (z.B. ein AAD- oder MSA-Konto unter einem Azure-Abonnement), können die Anleitung unter [Azure-Anfragen von Betroffenen für die DSGVO](../compliance/gdpr-dsr-azure.md) befolgen.
+- Benutzer, die sich über ein Konto registriert haben, das auf einem Azure-Mandanten basiert (z.B. ein AAD- oder MSA-Konto unter einem Azure-Abonnement), können die Anleitung unter [Azure-Anfragen von Betroffenen für die DSGVO](gdpr-dsr-azure.md) befolgen.
 
 - Benutzer, die sich mit einer MSA-Identität authentifizieren, können diese [Datenschutzanfrage-Website](https://www.microsoft.com/concern/privacyrequest-msa) verwenden, um Aktivitätsdaten zu ihrer MSA-Identität für mehrere Microsoft-Dienste anzuzeigen. In diesem Szenario ist der Benutzer ein Verantwortlicher für die personenbezogenen Daten.
 
