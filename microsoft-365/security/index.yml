@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Microsoft 365-Sicherheitsdokumentation
+summary: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihr Unternehmen besser über Angriffsflächen hinweg schützen können.
+metadata:
+  title: Microsoft 365-Sicherheitsdokumentation
+  description: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihr Unternehmen besser auf Angriffsflächen schützen können.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 09/13/2019
+  ms.openlocfilehash: c0d139fe824429bf6a9185c336168b4822558833
+  ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 09/20/2019
+  ms.locfileid: "37080593"
+landingContent:
+- title: Microsoft Threat Protection
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft Threat Protection?
+      url: mtp/microsoft-threat-protection.md
+    - text: Microsoft 365 Security Center
+      url: mtp/overview-security-center.md
+- title: Microsoft Defender ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft Defender ATP?
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+    - text: Übersicht über die Funktionen
+      url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview
+- title: Office 365 ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Office 365 ATP?
+      url: office-365-security/office-365-atp.md
+    - text: Office 365 ATP-Dienstbeschreibung
+      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+- title: Azure ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Azure ATP?
+      url: https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp
+    - text: Azure ATP-Architektur
+      url: https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-architecture
+- title: Azure Security Center
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Azure Security Center?
+      url: https://docs.microsoft.com/en-us/azure/security-center/security-center-intro
+    - text: Unterstützte Features
+      url: https://docs.microsoft.com/en-us/azure/security-center/security-center-services
+- title: Microsoft Cloud App Security
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft Cloud App Security?
+      url: https://docs.microsoft.com/en-us/cloud-app-security/what-is-cloud-app-security
+    - text: Erste Schritte mit der Microsoft Cloud-App-Sicherheit
+      url: https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security
+- title: Azure Sentinel (Vorschau)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Azure Sentinel? Vorschau
+      url: https://docs.microsoft.com/en-us/azure/sentinel/overview
+- title: Sicherheitsverwaltung
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sicheres Ergebnis
+      url: mtp/microsoft-secure-score.md
