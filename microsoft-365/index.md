@@ -1,20 +1,19 @@
 ---
 layout: HubPage
 hide_bc: true
-author: CelesteDG
+author: robmazz
 localization_priority: Normal
-ms.author: celested
+ms.author: robmazz
 ms.topic: hub-page
 keywords: Microsoft 365, Microsoft 365 Documentation, Microsoft 365 for Business, Microsoft 365 for Enterprise, Microsoft 365 for Education, Enterprise, Business, Education, docs, Documentation
 title: Microsoft 365-Dokumentation
-description: Hier finden Sie Dokumentation und Ressourcen für Microsoft 365 – eine vollständige, intelligente Lösung, einschließlich Office 365, Windows 10 und Enterprise Mobility + Security, die es jedem ermöglicht, kreativ zu sein und sicher zu arbeiten.
-ms.date: 07/01/2018
-ms.openlocfilehash: 255d60ba415b6af7435aeadbb0ee74c8bc760908
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Hier finden Sie Dokumentationen und Ressourcen für Microsoft 365 – eine umfassende, intelligente Lösung, einschließlich Office 365, Windows 10 und Enterprise Mobility + Security, die es allen Benutzern ermöglicht, sicher kreativ zu sein und zusammenzuarbeiten.
+ms.openlocfilehash: 6026926ad2dd8638a3a9165e99a36b454eeac6bc
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289016"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071764"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -26,7 +25,7 @@ ms.locfileid: "32289016"
                     <li>
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsW">
-                            <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> ist eine vollständige, intelligente Lösung, einschließlich Office 365, Windows 10 und Enterprise Mobility + Security, die es jedem ermöglicht, kreativ zu sein und sicher zu arbeiten.
+                            <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> ist eine vollständige, intelligente Lösung, einschließlich Office 365, Windows 10 und Enterprise Mobility + Security, die es allen Benutzern ermöglicht, sicher kreativ zu sein und zusammenzuarbeiten.
                             </li>
                             <li>
                                 <a href="https://docs.microsoft.com/microsoft-365/enterprise/" target="blank">
@@ -61,7 +60,7 @@ ms.locfileid: "32289016"
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Business</h3>
-                                                    <p>Microsoft 365 Business ist eine neue Lösung für kleine und mittelständische Unternehmen (SMB), die die besten Produktivitäts-und Zusammenarbeitsfunktionen von Office 365 mit Geräteverwaltung und Sicherheitslösungen zum Schutz von Geschäftsdaten kombiniert.</p>
+                                                    <p>Microsoft 365 Business ist eine neue Lösung für kleine und mittelständische Unternehmen (SMB), die die besten Produktivitäts-und Zusammenarbeitsfunktionen von Office 365 mit Geräte Verwaltungs-und Sicherheitslösungen zum Schutz von Geschäftsdaten zusammenbringt.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -81,7 +80,47 @@ ms.locfileid: "32289016"
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Education</h3>
-                                                    <p>Microsoft 365 Education ermächtigt Pädagogen, Kreativität zu entsperren, Teamarbeit zu fördern und eine einfache und sichere Erfahrung in einer einzigen, erschwinglichen Lösung zu schaffen, die für Bildungseinrichtungen entwickelt wurde.</p>
+                                                    <p>Mit Microsoft 365 Education können Pädagogen die Kreativität freischalten, die Zusammenarbeit fördern und eine einfache und sichere Erfahrung in einer einzigen, erschwinglichen, für Bildung konzipierten Lösung bereitstellen.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/compliance/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Compliance-400x140.svg" alt="Microsoft 365 compliance documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365-Konformität</h3>
+                                                    <p>Microsoft 365 Compliance-Lösungen helfen Ihrer Organisation, gesetzliche oder behördliche Vorgaben einzuhalten.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/security/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Security-400x140.svg" alt="Microsoft 365 security documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365-Sicherheit</h3>
+                                                    <p>Microsoft 365-Sicherheitslösungen helfen, Ihr Unternehmen über Angriffsflächen hinweg zu schützen.</p>
                                                 </div>
                                             </div>
                                         </div>
