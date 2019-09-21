@@ -1,0 +1,58 @@
+---
+title: Erweiterte Spamfilterungsoptionen
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
+ms.date: 07/09/2019
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
+ms.collection:
+- M365-security-compliance
+description: Erweiterte Spamfilter Optionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37082356"
+---
+# <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
+
+Erweiterte Spamfilter Optionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
+  
+Die Aktivierung von erweiterten Spamfilterungsoptionen ist ein aggressiver Ansatz für die Spamfilterung, und Nachrichten, die von diesen Optionen herausgefiltert werden, können nicht als falsch positive Ergebnisse gemeldet werden. Diese Nachrichten können durch regelmäßige Spambenachrichtigungen für Endbenutzer identifiziert und aus der Spamquarantäne gerettet werden. Sie können auch mithilfe des X-Headertexts identifiziert werden, der für jede ASF-Option spezifisch ist und in der Internetkopfzeile von Nachrichten angezeigt wird, bei denen eine ASF-Option erfüllt wurde. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
+  
+Erweiterte Spamfilterungsoptionen können aktiviert, deaktiviert oder auf den Testmodus festgelegt werden, wenn Sie die Inhaltsfilterrichtlinien bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Der Testmodus steht nicht zur Verfügung für die Optionen **NDR-Rückläufer**, **SPF-Eintrag: Schwerer Fehler**, **Bedingte Absender-ID-Filterung: Schwerer Fehler** und **Massen-E-Mail**.) 
+  
+> > [!TIP]
+>  Ziehen Sie es in Erwägung, die erweiterten Spamfilterungsoptionen im Testmodus zu aktivieren, um gemäß Ihrer Umgebung möglichst viel Spam zu blockieren. Für Kunden mit hohen Spamprozentsätzen für spezifische erweiterte Spamfilterungsoptionen empfiehlt es sich, diese Optionen erst zu testen, bevor Sie sie in der Produktionsumgebung implementieren. Wenn Sie über Phishing in Ihrer Organisation besorgt sind, aktivieren Sie die Option **SPF Record: Hard Fail** . 
+  
+In der folgenden Tabelle werden die einzelnen erweiterten Spamfilterungsoptionen beschrieben.
+  
+||||
+|:-----|:-----|:-----|
+|**Erweiterte Spamfilterungsoption** <br/> |**Beschreibung** <br/> |**X-Headertext** <br/> |
+|**Abschnitt "Spambewertung erhöhen"** <br/> |Bei Aktivierung legen diese Optionen den Spamwahrscheinlichkeitswert (SCL) einer entsprechenden Nachricht auf 5 oder 6 fest, was als Spamverdacht bewertet wird. Die für die Nachricht durchgeführte Aktion entspricht der Einstellung **Spam** in Ihrer Inhaltsfilterrichtlinie.<br/> ||
+|Bildlinks zu Remotestandorten  <br/> |Wenn diese Einstellung aktiviert ist, erhält jede Nachricht mit HTML-Inhalt, die einen IMG-Tag mit einem Remote-Link enthält (z. B., weil http verwendet wird) eine erhöhte Spam-Bewertung.  <br/> |X-CustomSpam: Bildlinks zu Remotestandorten  <br/> |
+|Numerische IP-Adresse in URL  <br/> |Wenn diese Einstellung aktiviert ist, erhalten alle Nachrichten, die aus Zahlen bestehende URLs (meist in Form von IP-Adressen) enthalten, eine höhere Spambewertung.  <br/> |X-CustomSpam: Numerische IP in URL  <br/> |
+|URL-Umleitung zu anderem Port  <br/> |Wenn diese Einstellung aktiviert ist, erhalten alle Nachrichten eine höhere Spambewertung, die den Benutzer an andere Ports als Port 80 (den regulären HTTP-Port), 8080 (den alternativen HTTP-Port) oder 443 (den HTTPS-Port) umleiten.  <br/> |X-CustomSpam: URL-Umleitung zu anderem Port  <br/> |
+|URL zu BIZ- oder INFO-Websites:  <br/> |Wenn diese Einstellung aktiviert ist, erhalten alle Nachrichten, die die Erweiterung ".biz" oder ".info" im Nachrichtentext enthalten, eine höhere Spambewertung.  <br/> |X-CustomSpam: URL zu BIZ- oder INFO-Websites:  <br/> |
+|**Abschnitt "Als Spam markieren"** <br/> |Bei Aktivierung legen diese Optionen den Spamwahrscheinlichkeitswert (SCL) einer entsprechenden Nachricht auf 9 fest, was bedeutet, dass es sicher Spam ist. Die für die Nachricht durchgeführte Aktion entspricht der Einstellung **Nachricht mit hoher Spamwahrscheinlichkeit** in Ihrer Inhaltsfilterrichtlinie.<br/> ||
+|Leere Nachrichten  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, deren Nachrichtentext und Betreffzeile leer sind und die keine Anlage enthält, als Spam gekennzeichnet.  <br/> |X-CustomSpam: Leere Nachricht  <br/> |
+|JavaScript oder VBScript in HTML  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, in der JavaScript oder Visual Basic Script Edition in HTML verwendet wurde, als Spam gekennzeichnet. Diese beiden Skriptsprachen werden in einer HTML-Nachricht verwendet, um automatisch eine bestimmte Aktion zu veranlassen. Der Browser analysiert und verarbeitet das Skript zusammen mit dem Rest des Dokuments.  <br/> |X-CustomSpam: Javascript- oder VBscript-Tags in HTML  <br/> |
+|Frame- oder IFrame-Tags in HTML  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, die das HTML-Tag \<Frame\> oder \<IFrame\> enthält, als Spam gekennzeichnet. Diese Tags werden auf Websites oder in HTML-Nachrichten verwendet, um die Seite für die Anzeige von Text oder Grafiken zu formatieren.  <br/> |X-CustomSpam: IFRAME oder FRAME in HTML  <br/> |
+|Object-Tags in HTML  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, die das HTML-Tag \<Object\> enthält, als Spam gekennzeichnet. Mit diesem HTML-Tag können Plug-Ins oder Anwendungen in einem HTML-Fenster ausgeführt werden.  <br/> |X-CustomSpam: Object-Tags in HTML  <br/> |
+|Embed-Tags in HTML  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, die das HTML-Tag \<Embed\> enthält, als Spam gekennzeichnet. Mit diesem HTML-Tag können unterschiedliche Arten von Dokumenten von verschiedenen Datentypen in ein HTML-Dokument eingebettet werden. Beispiele sind Sounds, Filme oder Bilder.  <br/> |X-CustomSpam: Embed-Tags in HTML  <br/> |
+|Form-Tags in HTML  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, die das HTML-Tag \<Form\> enthält, als Spam gekennzeichnet. Dieses HTML-Tag wird zum Erstellen von Websiteformularen verwendet. Werbe-E-Mails enthalten häufig dieses Tag, um Informationen vom Empfänger zu erbitten.  <br/> |X-CustomSpam: Form-Tags in HTML  <br/> |
+|Web-Bugs in HTML  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, die einen Web-Bug enthält, als Spam gekennzeichnet. Ein Web-Bug ist eine Grafik, mit der ermittelt werden soll, ob eine Webseite oder E-Mail gelesen wurde. Web-Bugs sind für den Empfänger häufig unsichtbar, da sie einer Nachricht im Allgemeinen als Grafik hinzugefügt werden, die nicht größer sein muss als 1x1 Pixel. Diese Technik wird manchmal auch in legitimen Newsletters verwendet, wird jedoch von vielen Benutzern als Verletzung ihrer Privatsphäre angesehen.  <br/> |X-CustomSpam: Web-Bug  <br/> |
+|Liste mit sensiblen Begriffen anwenden  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, die ein Wort aus der Liste mit sensiblen Begriffen enthält, als Spam gekennzeichnet. Mit der Liste mit sensiblen Begriffen können leicht Wörter gesperrt werden, die häufig in anstößigen Nachrichten vorkommen. Bei einigen dieser Wörter wird die Groß-/Kleinschreibung beachtet. Als Administrator können Sie diese Liste nicht bearbeiten. Die Filterung anhand der Liste mit sensiblen Begriffen wird auf den Betreff und den Nachrichtentext einer Nachricht angewendet.  <br/> |X-CustomSpam: Sensibler Begriff in Betreff/Text  <br/> |
+|SPF-Eintrag: Schwerer Fehler|Wenn diese Einstellung aktiviert ist, werden Nachrichten, die eine SPF-Prüfung nicht bestehen (d. h. sie wurden von einer nicht im SPF-Eintrag angegebenen IP-Adresse gesendet) als Spam gekennzeichnet. Das Aktivieren dieser Einstellung wird für Organisationen empfohlen, die befürchten, Phishingnachrichten zu erhalten.  <br/> <br/> Der Testmodus ist für diese Option nicht verfügbar.  <br/> |X-CustomSpam: SPF-Eintragsfehler  <br/> |
+|Bedingte Absender-ID-Filterung: Schwerer Fehler  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, für die ein schwerer Fehler bei der bedingten Absender-ID-Filterung auftritt, als Spam gekennzeichnet. Bei dieser Option wird eine SPF-Überprüfung mit einer Überprüfung der Absender-ID kombiniert, um einen Schutz gegen Nachrichtenkopfzeilen zu erreichen, die gefälschte Absender enthalten.  <br/> <br/> Der Testmodus ist für diese Option nicht verfügbar.  <br/> |X-CustomSpam: Von-SPF-Eintragsfehler  <br/> |
+|NDR-Rückläufer  <br/> |Wenn Sie EOP für den Schutz lokaler Postfächer verwenden, werden bei Aktivierung dieser Einstellung alle legitimen NDR-Nachrichten an den ursprünglichen Absender gesendet, und alle Rückläufernachrichten (nicht legitime NDR-Nachrichten) werden als Spam gekennzeichnet. Wenn Sie diese Einstellung nicht aktivieren, durchlaufen alle NDRs trotzdem die Spamfilterung. In diesem Fall werden die legitimsten Nachrichten an den ursprünglichen Absender gesendet, während einige, aber nicht alle, Rückläufernachrichten als Spam gekennzeichnet werden. Rückläufernachrichten, die nicht als Spam gekennzeichnet sind, werden jedoch nicht an den ursprünglichen Absender gesendet, weil sie an den gefälschten Absender gehen.  <br/> <br/> Wenn Sie den Dienst zum Schutz von cloudgehosteten Exchange Online-Postfächern verwenden, ist es nicht notwendig, diese Einstellung zu konfigurieren.  <br/><br/> Für beide Szenarien (lokale und in der Cloud gehostete Postfächer) ist es auch nicht erforderlich, diese Einstellung für ausgehende Nachrichten zu aktivieren, die über den Dienst gesendet werden, da Unzustellbarkeitsberichte, die legitime Unzustellbarkeitsnachrichten sind, automatisch erkannt und an den ursprünglichen Absender übermittelt werden. . >  Der Testmodus ist für diese Option nicht verfügbar.           <br/><br/>Tipp: Weitere Informationen zu Rückläufer Meldungen und EOP finden Sie unter [Backscatter Messages and EoP](backscatter-messages-and-eop.md).           |X-CustomSpam: Rückläufer-NDR  <br/> |
+|Massen-E-Mail|Die erweiterte Spamfilterung von Massen-E-Mails wurde eingestellt und durch die Schwellenwerteinstellungen für Massen-E-Mails ersetzt. Unter [Worin besteht der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md) und [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) finden Sie weitere Informationen und erfahren, wie Sie die Einstellungen konfigurieren.  |X-CustomSpam: Massen-e-Mail | Massen-e-Mail  <br/> |
+|
