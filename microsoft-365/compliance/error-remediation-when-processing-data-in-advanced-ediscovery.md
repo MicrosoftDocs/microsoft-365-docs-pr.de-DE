@@ -1,0 +1,113 @@
+---
+title: Beheben von Fehlern beim Verarbeiten von Daten
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection: M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+ms.assetid: ''
+description: ''
+ms.openlocfilehash: 02fa8870d6edb4e1a6616604ee0e98638b217237
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37081566"
+---
+# <a name="error-remediation-when-processing-data"></a><span data-ttu-id="c1867-102">Beheben von Fehlern beim Verarbeiten von Daten</span><span class="sxs-lookup"><span data-stu-id="c1867-102">Error remediation when processing data</span></span>
+
+<span data-ttu-id="c1867-103">Durch die Fehlerkorrektur können eDiscovery-Administratoren Daten Probleme beheben, die verhindern, dass Advanced eDiscovery die Inhalte ordnungsgemäß verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="c1867-103">Error remediation allows eDiscovery administrators the ability to rectify data issues that prevent Advanced eDiscovery from properly processing the content.</span></span> <span data-ttu-id="c1867-104">Beispielsweise können Dateien, die kennwortgeschützt sind, nicht verarbeitet werden, da die Dateien gesperrt oder verschlüsselt sind.</span><span class="sxs-lookup"><span data-stu-id="c1867-104">For example, files that are password protected can't be processed since the files are locked or encrypted.</span></span> <span data-ttu-id="c1867-105">Mithilfe der Fehlerbehebung können eDiscovery-Administratoren Dateien mit solchen Fehlern herunterladen, den Kennwortschutz entfernen und dann die korrigierten Dateien hochladen.</span><span class="sxs-lookup"><span data-stu-id="c1867-105">Using error remediation, eDiscovery administrators can download files with such errors, remove the password protection, and then upload the remediated files.</span></span>
+
+<span data-ttu-id="c1867-106">Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDiscovery-Fällen zu beheben.</span><span class="sxs-lookup"><span data-stu-id="c1867-106">Use the following workflow to remediate files with errors in Advanced eDiscovery cases.</span></span>
+
+## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a><span data-ttu-id="c1867-107">Erstellen einer Fehlerkorrektur Sitzung zum Beheben von Dateien mit Verarbeitungsfehlern</span><span class="sxs-lookup"><span data-stu-id="c1867-107">Create an error remediation session to remediate files with processing errors</span></span>
+
+>[!NOTE]
+><span data-ttu-id="c1867-108">Wenn der Fehlerkorrektur-Assistent während des folgenden Verfahrens zu einem beliebigen Zeitpunkt geschlossen wird, können Sie auf der Registerkarte **Verarbeitung** zur Fehlerbehebungssitzung zurückkehren, indem Sie im Dropdownmenü **Ansicht** die Option **Korrekturen** auswählen.</span><span class="sxs-lookup"><span data-stu-id="c1867-108">If the the error remediation wizard is closed at any time during the following procedure, you can return to the error remediation session from the **Processing** tab by selecting **Remediations** in the **View** drop-down menu.</span></span>
+
+1. <span data-ttu-id="c1867-109">Wählen Sie auf der Registerkarte **Verarbeitung** im erweiterten eDiscovery-Fall im Dropdown **Menü Ansicht** die Option **Fehler** aus, und wählen Sie dann im Dropdownmenü **Bereich** einen Überprüfungs Satz oder den gesamten Fall aus.</span><span class="sxs-lookup"><span data-stu-id="c1867-109">On the **Processing** tab in the Advanced eDiscovery case, select **Errors** in the **View** drop-down menu and then select a review set or the entire case in the **Scope** drop-down menu.</span></span> <span data-ttu-id="c1867-110">In diesem Abschnitt werden alle Fehler aus dem Fall oder Fehler aus einem bestimmten Überprüfungs Satz angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c1867-110">This section displays all errors from the case or error from a specific review set.</span></span>
+
+   ![Fehlerbehebung](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+
+2. <span data-ttu-id="c1867-112">Wählen Sie die Fehler aus, die Sie korrigieren möchten, indem Sie auf das Optionsfeld neben dem Fehlertyp oder-Dateityp klicken.</span><span class="sxs-lookup"><span data-stu-id="c1867-112">Select the errors you want to remediate by clicking the radio button next to either the error type or file type.</span></span>  <span data-ttu-id="c1867-113">Im folgenden Beispiel werden wir eine kennwortgeschützte Datei remediationieren.</span><span class="sxs-lookup"><span data-stu-id="c1867-113">In the following example, we're remediating a password protected file.</span></span>
+
+3. <span data-ttu-id="c1867-114">Klicken Sie auf **neue Fehlerkorrektur**.</span><span class="sxs-lookup"><span data-stu-id="c1867-114">Click **New error remediation**.</span></span>
+
+    <span data-ttu-id="c1867-115">Der Fehlerkorrektur-Workflow beginnt mit einer Vorbereitungsphase, in der die Dateien mit Fehlern in einen von Microsoft bereitgestellten Azure-Speicherort kopiert werden, damit Sie Sie auf den lokalen Computer herunterladen können, um Sie zu beheben.</span><span class="sxs-lookup"><span data-stu-id="c1867-115">The error remediation workflow starts with a preparation stage where the files with errors are copied to a Microsoft-provided Azure Storage location so that you can download them to your local computer to remediate.</span></span>
+
+    ![Vorbereiten der Fehlerbehebung](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+
+4. <span data-ttu-id="c1867-117">Nachdem die Vorbereitung abgeschlossen ist, klicken Sie auf **Weiter: Dateien herunterladen** , um den Download fortzusetzen.</span><span class="sxs-lookup"><span data-stu-id="c1867-117">After the preparation is complete, click **Next: Download files** to proceed with download.</span></span>
+
+    ![Herunterladen von Dateien](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+
+5. <span data-ttu-id="c1867-119">Geben Sie zum Herunterladen von Dateien den **Ziel Pfad für den Download**an.</span><span class="sxs-lookup"><span data-stu-id="c1867-119">To download files, specify the **Destination path for download**.</span></span> <span data-ttu-id="c1867-120">Dies ist ein Pfad zum übergeordneten Ordner auf dem lokalen Computer, auf dem die Datei heruntergeladen wird.</span><span class="sxs-lookup"><span data-stu-id="c1867-120">This is a path to the parent folder on your local computer where the file will be downloaded.</span></span>  <span data-ttu-id="c1867-121">Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="c1867-121">The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder.</span></span> <span data-ttu-id="c1867-122">Sie können diesen Pfad bei Bedarf ändern.</span><span class="sxs-lookup"><span data-stu-id="c1867-122">You can change this path if desired.</span></span> <span data-ttu-id="c1867-123">Wenn Sie es ändern, wird empfohlen, einen lokalen Dateipfad für die beste Leistung zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="c1867-123">If you do change it, we recommend that you use a local file path for the best performance.</span></span> <span data-ttu-id="c1867-124">Verwenden Sie keinen Remotenetzwerk Pfad.</span><span class="sxs-lookup"><span data-stu-id="c1867-124">Don't use a remote network path.</span></span> <span data-ttu-id="c1867-125">Sie können beispielsweise den Pfad **C:\Remediation**verwenden.</span><span class="sxs-lookup"><span data-stu-id="c1867-125">For example, you could use the path **C:\Remediation**.</span></span> 
+
+   <span data-ttu-id="c1867-126">Der Pfad zum übergeordneten Ordner wird automatisch dem AzCopy-Befehl (als Wert des **/dest** -Parameters) hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="c1867-126">The path to the parent folder is automatically added to AzCopy command (as the value of the **/Dest** parameter).</span></span>
+
+6. <span data-ttu-id="c1867-127">Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken.</span><span class="sxs-lookup"><span data-stu-id="c1867-127">Copy the predefined command by clicking **Copy to clipboard**.</span></span> <span data-ttu-id="c1867-128">Öffnen Sie eine Windows-Eingabeaufforderung, fügen Sie den AzCopy-Befehl ein, und drücken Sie dann die **Eingabe**Taste.</span><span class="sxs-lookup"><span data-stu-id="c1867-128">Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**.</span></span>  
+
+    ![Vorbereiten der Fehlerbehebung](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+
+    > [!NOTE]
+    > <span data-ttu-id="c1867-130">Sie müssen AzCopy v 8.1 verwenden, um den Befehl erfolgreich zu verwenden, der auf der Seite zum **Herunterladen von Dateien** bereitgestellt wird.</span><span class="sxs-lookup"><span data-stu-id="c1867-130">You must use AzCopy v8.1 to successfully use the command that's provided on the **Download files** page.</span></span> <span data-ttu-id="c1867-131">Sie müssen auch AzCopy v 8.1 verwenden, um die Dateien in Schritt 10 hochzuladen.</span><span class="sxs-lookup"><span data-stu-id="c1867-131">You also must use AzCopy v8.1 to upload the files in step 10.</span></span> <span data-ttu-id="c1867-132">Informationen zum Installieren dieser Version von AzCopy finden Sie unter [übertragen von Daten mit der AzCopy v 8.1 unter Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).</span><span class="sxs-lookup"><span data-stu-id="c1867-132">To install this version of AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).</span></span> <span data-ttu-id="c1867-133">Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).</span><span class="sxs-lookup"><span data-stu-id="c1867-133">If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).</span></span>
+
+    <span data-ttu-id="c1867-134">Die Dateien, die Sie ausgewählt haben, werden an den Speicherort heruntergeladen, den Sie in Schritt 5 angegeben haben.</span><span class="sxs-lookup"><span data-stu-id="c1867-134">The files that you selected are downloaded to the location that you specified in step 5.</span></span> <span data-ttu-id="c1867-135">Im übergeordneten Ordner (beispielsweise **C:\Remediation**) wird die folgende Unterordnerstruktur automatisch erstellt:</span><span class="sxs-lookup"><span data-stu-id="c1867-135">In the parent folder (for example, **C:\Remediation**), the following subfolder structure is automatically created:</span></span>
+
+    `<Parent folder>\Subfolder 1\Subfolder 2\<file>`
+
+    - <span data-ttu-id="c1867-136">Unter *Ordner 1* wird mit der ID für den Fall oder der Überprüfungsgruppe benannt, je nach dem Bereich, den Sie in Schritt 1 ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="c1867-136">*Subfolder 1* is named with the ID for the case or the review set, depending on the scope that you selected in step 1.</span></span>
+
+    - <span data-ttu-id="c1867-137">Unter *Ordner 2* wird mit der Datei-ID der heruntergeladenen Datei benannt.</span><span class="sxs-lookup"><span data-stu-id="c1867-137">*Subfolder 2* is named with the file ID of the downloaded file</span></span>
+
+    - <span data-ttu-id="c1867-138">Die heruntergeladene Datei befindet sich im unter *Ordner 2* und ist ebenfalls mit der Datei-ID benannt.</span><span class="sxs-lookup"><span data-stu-id="c1867-138">The downloaded file is located in *Subfolder 2* and is also named with the file ID.</span></span>
+
+    <span data-ttu-id="c1867-139">Im folgenden finden Sie ein Beispiel für den Ordnerpfad und den Namen der Fehler Datei, der erstellt wird, wenn Elemente in den übergeordneten Ordner **C:\Remediation** heruntergeladen werden:</span><span class="sxs-lookup"><span data-stu-id="c1867-139">Here's an example of the folder path and error file name that's created when items are downloaded to the **C:\Remediation** parent folder:</span></span>
+
+    `C:\Remediation\232f8b7e-089c-4781-88c6-210da0615d32\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938.docx`
+
+    <span data-ttu-id="c1867-140">Wenn mehrere Dateien heruntergeladen werden, wird jeder in einen Unterordner heruntergeladen, der mit der Datei-ID benannt ist.</span><span class="sxs-lookup"><span data-stu-id="c1867-140">If multiple files are downloaded, each one is downloaded to a subfolder that's named with the file ID.</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="c1867-141">Wenn Sie Dateien in Schritt 9 und Schritt 10 hochladen, müssen die korrigierten Dateien denselben Dateinamen aufweisen und sich in derselben Unterordnerstruktur befinden.</span><span class="sxs-lookup"><span data-stu-id="c1867-141">When you upload files in step 9 and step 10, the remediated files must have that same filename and be located in the same subfolder structure.</span></span> <span data-ttu-id="c1867-142">Der Unterordner und die Dateinamen werden verwendet, um die korrigierte Datei mit der ursprünglichen Fehler Datei zu verknüpfen.</span><span class="sxs-lookup"><span data-stu-id="c1867-142">The subfolder and file names are used to associated the remediated file with the original error file.</span></span> <span data-ttu-id="c1867-143">Wenn die Ordnerstruktur oder die Dateinamen geändert werden, erhalten Sie den folgenden Fehler: `Cannot apply Error Remediation to the current Workingset`.</span><span class="sxs-lookup"><span data-stu-id="c1867-143">If the folder structure or file names are changed, you'll receive the following error: `Cannot apply Error Remediation to the current Workingset`.</span></span> <span data-ttu-id="c1867-144">Um Probleme zu vermeiden, sollten Sie die korrigierten Dateien im gleichen übergeordneten Ordner und Unterordnerstruktur beibehalten.</span><span class="sxs-lookup"><span data-stu-id="c1867-144">To prevent any issues, we recommend that keep the remediated files in the same parent folder and subfolder structure.</span></span>
+
+7. <span data-ttu-id="c1867-145">Nachdem Sie die Dateien heruntergeladen haben, können Sie Sie mit einem geeigneten Tool korrigieren.</span><span class="sxs-lookup"><span data-stu-id="c1867-145">After downloading the files, you can remediate them with an appropriate tool.</span></span> <span data-ttu-id="c1867-146">Für kennwortgeschützte Dateien gibt es mehrere Kenn Wort Knack Tools, die Sie verwenden können.</span><span class="sxs-lookup"><span data-stu-id="c1867-146">For password-protected files, there are several password cracking tools you can use.</span></span> <span data-ttu-id="c1867-147">Wenn Sie die Kennwörter für die Dateien kennen, können Sie Sie öffnen und den Kennwortschutz entfernen.</span><span class="sxs-lookup"><span data-stu-id="c1867-147">If you know the passwords for the files, you can open them and remove the password protection.</span></span>
+
+8. <span data-ttu-id="c1867-148">Kehren Sie zu Advanced eDiscovery und dem Fehlerkorrektur-Assistenten zurück, und klicken Sie dann auf **Weiter: Dateien hochladen**.</span><span class="sxs-lookup"><span data-stu-id="c1867-148">Return to Advanced eDiscovery and the error remediation wizard and then click **Next: Upload files**.</span></span>  <span data-ttu-id="c1867-149">Diese wechselt zur nächsten Seite, auf der Sie nun die Dateien hochladen können.</span><span class="sxs-lookup"><span data-stu-id="c1867-149">This moves to the next page where you can now upload the files.</span></span>
+
+    ![Hochladen von Dateien](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+
+9. <span data-ttu-id="c1867-151">Geben Sie den übergeordneten Ordner an, in dem sich die korrigierten Dateien im Textfeld **Pfad zum Speicherort der Dateien** befinden.</span><span class="sxs-lookup"><span data-stu-id="c1867-151">Specify the parent folder where the remediated files are located in the **Path to location of files** text box.</span></span> <span data-ttu-id="c1867-152">Der übergeordnete Ordner muss wieder dieselbe Unterordnerstruktur aufweisen, die beim Herunterladen der Dateien erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="c1867-152">Again, the parent folder must have the same subfolder structure that was created when you downloaded the files.</span></span>
+
+    <span data-ttu-id="c1867-153">Der Pfad zum übergeordneten Ordner wird automatisch dem AzCopy-Befehl (als Wert des **/Source** -Parameters) hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="c1867-153">The path to the parent folder is automatically added to AzCopy command (as the value of the **/Source** parameter).</span></span>
+
+10. <span data-ttu-id="c1867-154">Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken.</span><span class="sxs-lookup"><span data-stu-id="c1867-154">Copy the predefined command by clicking **Copy to clipboard**.</span></span> <span data-ttu-id="c1867-155">Öffnen Sie eine Windows-Eingabeaufforderung, fügen Sie den AzCopy-Befehl ein, und drücken Sie dann die **Eingabe**Taste.</span><span class="sxs-lookup"><span data-stu-id="c1867-155">Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**.</span></span> <span data-ttu-id="c1867-156">Laden Sie die Dateien hoch.</span><span class="sxs-lookup"><span data-stu-id="c1867-156">upload the files.</span></span>
+
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+
+11. <span data-ttu-id="c1867-158">Nachdem Sie den AzCopy-Befehl ausgeführt haben, klicken Sie auf **Weiter: Process files**.</span><span class="sxs-lookup"><span data-stu-id="c1867-158">After you run the AzCopy command, click **Next: Process files**.</span></span>
+
+    <span data-ttu-id="c1867-159">Wenn die Verarbeitung abgeschlossen ist, können Sie zu Überprüfungs Sätzen wechseln und die korrigierten Dateien anzeigen.</span><span class="sxs-lookup"><span data-stu-id="c1867-159">When processing is complete, you can go to review set and view the remediated files.</span></span> 
+
+## <a name="what-happens-when-files-are-remediated"></a><span data-ttu-id="c1867-160">Was geschieht, wenn Dateien behoben werden</span><span class="sxs-lookup"><span data-stu-id="c1867-160">What happens when files are remediated</span></span>
+
+<span data-ttu-id="c1867-161">Bei hochzuladenden Dateien werden die ursprünglichen Metadaten mit Ausnahme der folgenden Felder beibehalten:</span><span class="sxs-lookup"><span data-stu-id="c1867-161">When remediated files are uploaded, the original metadata is preserved except for the following fields:</span></span> 
+
+- <span data-ttu-id="c1867-162">ExtractedTextSize</span><span class="sxs-lookup"><span data-stu-id="c1867-162">ExtractedTextSize</span></span>
+- <span data-ttu-id="c1867-163">HasText</span><span class="sxs-lookup"><span data-stu-id="c1867-163">HasText</span></span>
+- <span data-ttu-id="c1867-164">IsErrorRemediate</span><span class="sxs-lookup"><span data-stu-id="c1867-164">IsErrorRemediate</span></span>
+- <span data-ttu-id="c1867-165">Lade-Nr</span><span class="sxs-lookup"><span data-stu-id="c1867-165">LoadId</span></span>
+- <span data-ttu-id="c1867-166">ProcessingErrorMessage</span><span class="sxs-lookup"><span data-stu-id="c1867-166">ProcessingErrorMessage</span></span>
+- <span data-ttu-id="c1867-167">ProcessingStatus</span><span class="sxs-lookup"><span data-stu-id="c1867-167">ProcessingStatus</span></span>
+- <span data-ttu-id="c1867-168">Text</span><span class="sxs-lookup"><span data-stu-id="c1867-168">Text</span></span>
+- <span data-ttu-id="c1867-169">WordCount</span><span class="sxs-lookup"><span data-stu-id="c1867-169">WordCount</span></span>
+- <span data-ttu-id="c1867-170">WorkingsetId</span><span class="sxs-lookup"><span data-stu-id="c1867-170">WorkingsetId</span></span>
+
+<span data-ttu-id="c1867-171">Eine Definition aller Metadatenfelder in Advanced eDiscovery finden Sie unter [Document Metadata fields](document-metadata-fields.md).</span><span class="sxs-lookup"><span data-stu-id="c1867-171">For a definition of all metadata fields in Advanced eDiscovery, see [Document metadata fields](document-metadata-fields.md).</span></span>
