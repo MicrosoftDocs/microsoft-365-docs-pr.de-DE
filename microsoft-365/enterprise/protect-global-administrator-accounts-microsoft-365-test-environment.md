@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Verwenden Sie diese Schritte, um globale Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung zu schützen.
-ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 457ac33aa2242dc4b25cd662bf233bb1599a6fec
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074145"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071554"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Schützen globaler Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung
 
@@ -81,19 +81,19 @@ Diese zweite Richtlinie blockiert den Zugriff auf die Authentifizierung des glob
 
 1. Klicken Sie auf dem Blatt **bedingter Zugriff – Richtlinien** auf **neue Richtlinie**.
 2. Geben Sie auf dem **neuen** Blade **globale Administratoren** in **Name**ein.
-3. Klicken Sie **** im Abschnitt Zuweisungen auf **Benutzer und Gruppen**.
+3. Klicken Sie im Abschnitt **Zuweisungen** auf **Benutzer und Gruppen**.
 4. Klicken Sie auf der Registerkarte **einschließen** des Blades **Benutzer und Gruppen** auf **Benutzer und Gruppen #a0 Benutzer und Gruppen auswählen #a1 auswählen**.
 5. Klicken Sie auf dem Blatt **auswählen** auf **GlobalAdmins #a0 wählen Sie #a1 fertig**aus.
-6. Klicken Sie **** im Abschnitt Zuweisungen auf **Bedingungen**.
+6. Klicken Sie im Abschnitt **Zuweisungen** auf **Bedingungen**.
 7. Klicken Sie auf dem Blatt **Bedingungen** auf **Anmelde Risiko**, klicken Sie **auf Ja** für **configure**, klicken Sie auf **hoch** und **Mittel**, und klicken Sie dann auf **auswählen** und **Fertig**.
 8. Klicken Sie im Abschnitt **Zugriffssteuerung** des **neuen** Blades auf **erteilen**.
 9. Klicken Sie auf dem Blatt **Grant** auf **Zugriff blockieren**, und klicken Sie dann auf **auswählen**.
-10. Klicken Sie auf dem **neuen** Blade **** auf für die **Option Richtlinie aktivieren**, und klicken Sie dann auf **Erstellen**.
+10. Klicken Sie auf dem **neuen** Blade **auf für die** **Option Richtlinie aktivieren**, und klicken Sie dann auf **Erstellen**.
 11. Schließen Sie die Registerkarten **Azure-Portal** und **Microsoft 365 Admin Center** .
 
 Um die erste Richtlinie zu testen, melden Sie sich ab, und melden Sie sich mit dem DedicatedAdmin-Konto an. Sie sollten aufgefordert werden, MFA für das Benutzerkonto zu konfigurieren. Dies zeigt, dass die erste Richtlinie angewendet wird.
 
-Informationen und Links zum Schutz ihrer globalen Administratorkonten in der Produktion finden Sie unter [Protect Global Administrator Accounts](identity-designate-protect-admin-accounts.md#identity-global-admin) Step in the Identity Phase.
+Informationen und Links zum Schutz ihrer globalen Administratorkonten in der Produktion finden Sie unter [Protect Global Administrator Accounts](identity-create-protect-global-admins.md#identity-global-admin) Step in the Identity Phase.
 
 ## <a name="next-step"></a>Nächster Schritt
 
