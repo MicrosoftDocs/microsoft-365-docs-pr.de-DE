@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Planen von Satz von Benutzern und Gruppen, die für Ihr Unternehmen arbeiten werden.
-ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ac7f5e56bae882e01c31cacee856f73b0ead772f
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981806"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071634"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Schritt 1: Planen von Benutzern und Gruppen
 
@@ -78,8 +78,6 @@ Wenn Sie diesen Schritt abgeschlossen haben, verfügen Sie über Folgendes:
 
 - Eine Liste der Benutzerkonten in Azure AD, die den Mitarbeitern in Ihrer Organisation und den Lieferanten, Vertragsnehmern und Partnern, die für oder mit Ihrer Organisation arbeiten, entsprechen.
 - Gruppen und deren Mitgliedschaft bei Azure AD, die den logischen Benutzerkonten und anderen Gruppen für die automatische Lizenzbereitstellung von Sicherheitseinstellungen für Microsoft-Clouddienste entsprechen.
-
-Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-user-groups) für diesen Schritt betrachten.
 
 Sobald Ihre Benutzer und Gruppen in Azure AD erstellt wurden, können Sie mit dem Zuweisen von Lizenzen und der Verwendung von Produktivitätsarbeitslasten wie OneDrive for Business oder Exchange Online beginnen.
 
