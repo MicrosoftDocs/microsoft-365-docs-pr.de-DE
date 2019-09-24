@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business geliefert werden.
-ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017520"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121156"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 
@@ -32,7 +32,7 @@ Microsoft 365 Business bietet vereinfachte Sicherheitsfunktionen zum Schutz Ihre
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business Admin Center-Sicherheitsfeatures
 
-![Banner, auf das https://aka.ms/aboutM365previewverwiesen wird.](media/m365admincenterchanging.png)
+[![Bezeichnungsfeld, damit Sie wissen, dass sich das Admin Center ändert, und weitere Informationen finden Sie unter aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Sie können viele der Microsoft 365-Geschäfts Sicherheitsfeatures im Admin Center verwalten, wodurch Sie eine vereinfachte Möglichkeit zum Aktivieren oder Deaktivieren dieser Features erhalten. Im Admin Center können Sie folgende Aktionen ausführen:
   

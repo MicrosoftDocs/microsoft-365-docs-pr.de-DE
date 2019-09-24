@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Zeigen Sie Geräterichtlinien und-Aktionen an, indem Sie sich bei Microsoft 365 Business mit globaler Administrator credintials anmelden.
-ms.openlocfilehash: 3231cfa61dcc85cda162b05f2c653048e980a8d9
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Anzeigen von Geräterichtlinien und-Aktionen durch Anmelden bei Microsoft 365 Business mit globaler Administrator-credintials
+ms.openlocfilehash: ea53276f4ee8430031105f2b9c516471c702e839
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072198"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121276"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Anzeigen und Verwalten von Richtlinien und Geräten
 
-![Banner, das auf https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Bezeichnungsfeld, damit Sie wissen, dass sich das Admin Center ändert, und weitere Informationen finden Sie unter aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="view-and-edit-device-policies"></a>Anzeigen und Bearbeiten von Geräterichtlinien
 
@@ -42,7 +42,7 @@ ms.locfileid: "34072198"
 ## <a name="view-and-manage-devices"></a>Anzeigen und Verwalten von Geräten
 
 
-1. Wählen Sie im linken Navigationsbereich **Devices** \> **Manage**aus. 
+1. Wählen Sie im linken Navigationsbereich **Geräte** \> **Verwalten**aus. 
     
     Auf dieser Seite können Sie ein oder mehrere Geräte auswählen und Unternehmensdaten entfernen. Windows 10-Geräte, für die Sie Geräteschutzeinstellungen festgelegt haben, können Sie bei Bedarf auch auf die Werkseinstellungen zurücksetzen.
   
