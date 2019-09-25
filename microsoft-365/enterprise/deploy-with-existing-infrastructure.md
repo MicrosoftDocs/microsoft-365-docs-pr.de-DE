@@ -3,7 +3,7 @@ title: Bereitstellung von Microsoft 365 Enterprise mit vorhandener Infrastruktur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/04/2018
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die Beendigungskriterien für die Bereitstellung von Microsoft 365 Enterprise, wenn Sie eine vorhandene Infrastruktur haben.
-ms.openlocfilehash: 8c9c1d1900e9fd1a025d3fd74cc9f358b612a4d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073915"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148509"
 ---
 # <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>Bereitstellung von Microsoft 365 Enterprise mit vorhandener Infrastruktur
 
@@ -27,41 +27,41 @@ Viele Organisationen verfügen über vorhandene Netzwerke, Identität und andere
 Bevor Sie die einzelnen Phasen beenden können, müssen Sie deren Beendigungskriterien untersuchen, bei denen es sich um eine Reihe von erforderlichen Bedingungen handelt, die Sie erfüllen müssen, und optionale zu berücksichtigende Kriterien. Beendigungskriterien für die einzelnen Phasen stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die resultierende End-to-End-Konfiguration die Anforderungen für eine Bereitstellung von Microsoft 365 Enterprise erfüllen.
 
 > [!Note] 
-> FastTrack (verfügbar im Rahmen Ihres Abonnements) bietet einen fortlaufenden und wiederholbaren Vorteil: Microsoft Techniker unterstützen Sie beim Wechsel zur Cloud in Ihrem eigenen Tempo. FastTrack ermöglicht Ihnen auch Zugriff auf qualifizierte Partner für zusätzliche Dienste, wenn diese erforderlich sind. Mit aktuell mehr als 40.000 Kunden unterstützt FastTrack Sie bei der Maximierung des ROI, der Beschleunigung der Bereitstellung und der Steigerung des Einsatzes in Ihrer Organisation. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+> FastTrack (im Rahmen Ihres Abonnements kostenlos verfügbar) bietet einen fortlaufenden und wiederholbaren Vorteil: Microsoft Techniker unterstützen Sie beim Wechsel zur Cloud in Ihrem eigenen Tempo.FastTrack bietet bei Bedarf auch Zugang zu kompetenten Partnern für zusätzliche Dienste. Für mehr als 40.000 Kunden maximiert FastTrack aktuell den ROI, beschleunigt die Bereitstellung und steigert die Akzeptanz in der Organisation.Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 ## <a name="exit-criteria-for-networking-phase-1"></a>Beendigungskriterien für Netzwerke (Phase 1)
 
-Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für die Netzwerkinfrastruktur.
+Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für Ihre Netzwerkinfrastruktur.
 
 [!INCLUDE [Deployment exit criteria for networking](./includes/deployment-exit-criteria-networking.md)]
 
 ## <a name="exit-criteria-for-identity-phase-2"></a>Beendigungskriterien für Identität (Phase 2)
 
-Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für die Identitätsinfrastruktur.
+Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für Ihre Identitätsinfrastruktur.
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
 
 ## <a name="exit-criteria-for-windows-10-enterprise-phase-3"></a>Beendigungskriterien für Windows 10 Enterprise (Phase 3)
 
-Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für die Windows 10 Enterprise-Infrastruktur.
+Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für Ihre Windows 10 Enterprise-Infrastruktur.
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
 ## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Beendigungskriterien für Office 365 ProPlus (Phase 4)
 
-Erfüllen Sie die Anforderungen für die Bewertung, die Bereitstellungsplanung und die Bereitstellung der Office 365 ProPlus-Infrastruktur für Microsoft 365 Enterprise.
+Erfüllen Sie die Anforderungen für die Bewertung, die Bereitstellungsplanung und die Bereitstellung Ihrer Office 365 ProPlus-Infrastruktur.
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## <a name="exit-criteria-for-mobile-device-management-phase-5"></a>Beendigungskriterien für die Verwaltung mobiler Geräte (Phase 5)
 
-Erfüllen Sie die folgenden Anforderungen für die Infrastruktur der Verwaltung mobiler Geräte.
+Erfüllen Sie die folgenden Anforderungen für Ihre Infrastruktur der Verwaltung mobiler Geräte.
 
 [!INCLUDE [Deployment exit criteria for mobile device management](./includes/deployment-exit-criteria-mobility.md)]
 
 ## <a name="exit-criteria-for-information-protection-phase-6"></a>Beendigungskriterien für Informationsschutz (Phase 6)
 
-Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für die Informationsschutzinfrastruktur.
+Durchlaufen Sie die folgenden erforderlichen und optionalen Bedingungen für Ihre Informationsschutzinfrastruktur.
 
 [!INCLUDE [Deployment exit criteria for information protection](./includes/deployment-exit-criteria-infoprotect.md)]
 

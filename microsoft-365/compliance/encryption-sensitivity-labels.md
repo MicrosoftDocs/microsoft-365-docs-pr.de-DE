@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: a30f5d6168ea8118ef6b30ff26a429857affaa4a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081490"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148479"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -61,11 +61,11 @@ Wenn Sie hingegen über eine Vertraulichkeitsbezeichnung namens **Geschäftsvert
 
 ## <a name="assign-permissions-now"></a>Berechtigungen sofort zuweisen
 
-Steuern Sie über die folgenden Optionen, wer auf E-Mails oder Dokumente zugreifen kann, auf die eine bestimmte Bezeichnung angewendet wurde. Sie haben folgende Möglichkeiten:
+Steuern Sie über die folgenden Optionen, wer auf E-Mails oder Dokumente zugreifen kann, auf die eine bestimmte Bezeichnung angewendet wurde. Sie können:
 
-1. **Verschlüsselung sowohl auf E-Mails als auch auf Dokumente oder nur auf E-Mails anwenden** Wenn Sie sich nur für E-Mails entscheiden, werden Nachrichten mit dieser Bezeichnung in Outlook verschlüsselt, aber Dokumente mit dieser Bezeichnung werden in anderen Apps wie Word oder PowerPoint nicht verschlüsselt. 
-2. **Zulassen, dass Zugriff auf gekennzeichnete Inhalte abläuft**, entweder an einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Nach dieser Zeit können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt dieses ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Cachingmechanismen den Ablauf nicht durchsetzen können und E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
-3. **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
+1. **Zulassen, dass Zugriff auf gekennzeichnete Inhalte abläuft**, entweder an einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Nach dieser Zeit können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt dieses ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Cachingmechanismen den Ablauf nicht durchsetzen können und E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
+
+2. **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
 
 ![Einstellungen für von Administratoren definierte Berechtigungen](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 

@@ -3,7 +3,7 @@ title: Bereitstellungsstrategien für die Foundation-Infrastruktur von Microsoft
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 01/23/2019
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, wie Sie die Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise bereitstellen können.
-ms.openlocfilehash: 2c30420390be97d33f66888eac533b89c907b3b2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073885"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148499"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Bereitstellungsstrategien für die Foundation-Infrastruktur von Microsoft 365 Enterprise
 
@@ -84,22 +84,22 @@ Um die Erläuterung und das Beispiel zu vereinfachen, wird davon ausgegangen, da
 >Phase 1: Die Vernetzung der Microsoft 365 Enterprise Foundation-Infrastruktur ist eine reine Phase der IT-Abteilung. Benutzer profitieren von den Vorteilen einer optimierten Konnektivität mit den Cloudressourcen von Microsoft, werden aber nicht dazu gezwungen.
 >
 
-Vereinfachtes Beispiel für eine Pilotprojekt-Benutzererfahrung:
+Hier finden Sie ein Beispiel für eine vereinfachte Pilotbenutzeroberfläche:
 
 - Im Dezember muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im März wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
 - Im Juni wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
-- Im September erhalte ich Geräteregistrierung und App, und bedingte Zugriffsrichtlinien werden angewendet. (Verwaltung mobiler Geräte)
+- Im September erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im Dezember wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
 Das Ergebnis ist eine Kadenz von 90 Tagen zwischen den aufeinanderfolgenden Pilotrollouts.
 
-Vereinfachtes Beispiel für eine Endbenutzererfahrung:
+Hier finden Sie ein Beispiel für eine vereinfachte Endbenutzeroberfläche:
 
 - Im Januar muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im April wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
 - Im Juli wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
-- Im Oktober erhalte ich Geräteregistrierung und App, und bedingte Zugriffsrichtlinien werden angewendet. (Verwaltung mobiler Geräte)
+- Im Oktober erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im Januar des Folgejahres wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
 Das Ergebnis ist eine Kadenz von 90 Tagen zwischen den aufeinanderfolgenden Benutzerrollouts.
@@ -110,28 +110,26 @@ Der Nachteil dieser Bereitstellungsstrategie besteht darin, dass es lange dauern
 
 Für diese Bereitstellungsstrategie starten Sie das Pilotrollout der nächsten Phase im letzten Teil des Benutzerrollouts der aktuellen Phase. Hier findet die Bereitstellung der Phasen 2 bis 6 statt, wenn das Pilotrollout stattfindet, während das Benutzerrollout der vorherigen Phase abgeschlossen ist.
 
-Dies ist ein vereinfachter Vergleich zwischen parallelen und seriellen Bereitstellungsstrategien.
-
 ![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 Das Endergebnis ist, dass das Benutzerrollout für die aktuelle Phase in Ihrem Unternehmen abgeschlossen ist, bevor die nächste Phase beginnt. Benutzer, die sich nicht in Pilotrollouts befinden, befassen sich nicht gleichzeitig mit den Rollouts mehrerer Phasen, aber Pilotrollouts werden parallel zu Benutzerrollouts durchgeführt.
 
-Vereinfachtes Beispiel für eine Pilotprojekt-Benutzererfahrung: 
+Hier finden Sie ein Beispiel für eine vereinfachte Pilotbenutzeroberfläche:
 
 - Im Dezember muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im Februar wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
 - Im April wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
-- Im Juni erhalte ich Geräteregistrierung und App, und bedingte Zugriffsrichtlinien werden angewendet. (Verwaltung mobiler Geräte)
+- Im Juni erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im August wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
 Das Ergebnis ist eine Kadenz von 60 Tagen zwischen den aufeinanderfolgenden Pilotrollouts.
 
-Vereinfachtes Beispiel für eine Endbenutzererfahrung:
+Hier finden Sie ein Beispiel für eine vereinfachte Endbenutzeroberfläche:
 
 - Im Januar muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im März wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
 - Im Mai wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
-- Im Juli erhalte ich Geräteregistrierung und App, und bedingte Zugriffsrichtlinien werden angewendet. (Verwaltung mobiler Geräte)
+- Im Juli erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im September wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
 Das Ergebnis ist eine Kadenz von 60 Tagen zwischen den aufeinanderfolgenden Benutzerrollouts.
@@ -143,7 +141,7 @@ Der Vorteil dieser Bereitstellungsstrategie besteht darin, dass die vollständig
 Für diese Bereitstellungsstrategie beginnen Sie:
 
 - Das Pilotrollout der nächsten Phase während des letzten Teils des Benutzerrollouts der aktuellen Phase.
-- Das Benutzerrollout der nächsten Phase während des Benutzerrollouts der aktuellen Phase so, dass kein Benutzer gleichzeitig mit den Rollouts mehrerer Phasen beschäftigt ist. Dies setzt voraus, dass Sie jede Phase der Foundation-Infrastruktur auf die gleiche Weise (über Regionen, Abteilungen usw.) umsetzen.
+- Benutzerrollout der nächsten Phase während des Benutzerrollouts der aktuellen Phase, sodass sich kein Benutzer mit dem Rollout mehrerer Phasen gleichzeitig befassen muss. Dies setzt voraus, dass das Rollout der einzelnen Phasen der Foundation-Infrastruktur auf die gleiche Weise wie Regionen, Abteilungen oder andere Gruppierungen erfolgt.
 
 Dies ist ein vereinfachter Vergleich zwischen den verschiedenen Bereitstellungsstrategien.
 
@@ -154,27 +152,27 @@ Für das Endergebnis gilt Folgendes:
 - Pilotrollouts gehen ohne Unterbrechung von einer Phase in die nächste über.
 - Das Benutzerrollout für eine Phase beginnt vor Abschluss des Benutzerrollouts der vorherigen Phase, aber kein einzelner Benutzer führt mehr als eine Phase gleichzeitig aus.
 
-Vereinfachtes Beispiel für eine Pilotprojekt-Benutzererfahrung: 
+Hier finden Sie ein Beispiel für eine vereinfachte Pilotbenutzeroberfläche:
 
 - Im Dezember muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im Januar wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
 - Im Februar wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
-- Im März erhalte ich Geräteregistrierung und App, und bedingte Zugriffsrichtlinien werden angewendet. (Verwaltung mobiler Geräte)
+- Im März erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im April wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
 Das Ergebnis ist eine Kadenz von 30 Tagen zwischen den aufeinanderfolgenden Pilotrollouts.
 
-Vereinfachtes Beispiel für eine Endbenutzererfahrung:
+Hier finden Sie ein Beispiel für eine vereinfachte Endbenutzeroberfläche:
 
 - Im Januar muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im Februar wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
 - Im März wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
-- Im April erhalte ich Geräteregistrierung und App, und bedingte Zugriffsrichtlinien werden angewendet. (Verwaltung mobiler Geräte)
+- Im April erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im Mai wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
 Das Ergebnis ist eine Kadenz von 30 Tagen zwischen den aufeinanderfolgenden Benutzerrollouts.
 
-Der Vorteil dieser Bereitstellungsstrategie besteht darin, dass die vollständige Bereitstellung der Microsoft 365 Enterprise Foundation-Infrastruktur noch schneller erfolgen kann, ohne dass einzelne Benutzer gleichzeitig mehrere Rollouts durchführen müssen. Die Benutzer erhalten jedoch keine Pause zwischen den aufeinanderfolgenden Phasen.
+Der Vorteil dieser Bereitstellungsstrategie besteht darin, dass die vollständige Bereitstellung der Microsoft 365 Enterprise Foundation-Infrastruktur in noch kürzerer Zeit erfolgen kann, Ihre Benutzer aber trotzdem nicht mehrere Rollouts gleichzeitig durchführen müssen. Allerdings erhalten die Benutzer keine Pause zwischen den aufeinanderfolgenden Phasen.
 
 ### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>Vorabinfrastruktur und Rollout der End-to-End-Konfiguration
 
@@ -187,7 +185,7 @@ Die IT-Abteilung konfiguriert die Infrastruktur für die Phasen 2 bis 6 und stel
 - MFA und andere Identitätsfeatures (Identität)
 - Windows 10 Enterprise auf Windows-Geräten (Windows 10 Enterprise)
 - Office 365 ProPlus für die Office-Suite (Office 365 ProPlus)
-- App und bedingte Zugriffsrichtlinien (Verwaltung mobiler Geräte)
+- App und Geräterichtlinien (Verwaltung mobiler Geräte)
 - Installation des Azure Information Protection-Clients und Schulung, wie Bezeichnungen auf Dokumente angewendet werden (Information Protection)
 
 Nach Abschluss des Pilotrollouts beginnt das Benutzerrollout, bei dem jeder Benutzer alle Funktionen gleichzeitig erhält.

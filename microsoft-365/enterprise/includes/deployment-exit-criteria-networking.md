@@ -1,8 +1,8 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Erforderlich: Ihr Netzwerk ist bereit für Microsoft 365 Enterprise
 
-- Ihre Büros verfügen über ausreichende Internetbandbreite für Microsoft 365-Datenverkehr, einschließlich Office 365, Microsoft Intune sowie Windows 10 Enterprise (Installation und Updates)
-- Ihr Gesamtnetzwerk ist einer Office 365-Referenzarchitektur zugeordnet.
+- Ihre Büros verfügen über ausreichende Internetbandbreite für Microsoft 365-Datenverkehr, einschließlich Office 365, Microsoft Intune sowie Windows 10 Enterprise (Installation und Updates).
+- Ihr Gesamtnetzwerk ist einer [Office 365-Referenzarchitektur](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2) zugeordnet.
 - Ihre Netzwerkänderungen wurden eingeführt und getestet und erfüllen Ihre Anforderungen an die Datenverkehrslatenz.
 
 Gegebenenfalls hilft Ihnen [Schritt 1](../networking-provide-bandwidth-cloud-services.md), diese Anforderung zu erfüllen.
@@ -10,7 +10,7 @@ Gegebenenfalls hilft Ihnen [Schritt 1](../networking-provide-bandwidth-cloud-ser
 <a name="crit-networking-step2"></a>
 ### <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Erforderlich: Ihre lokalen Büros verfügen über lokale Internet-Verbindungen und -Namensauflösung.
 
-Sie haben jedes lokale Büro mit Internetzugang über einen lokalen ISP konfiguriert, dessen DNS-Server eine lokale öffentliche IP-Adresse verwenden, die ihren Standort im Internet identifiziert. Dies gewährleistet die bestmögliche Leistung für Benutzer, die auf Office 365 und Intune zugreifen.
+Sie haben jedes lokale Büro mit Internetzugang über einen lokalen ISP konfiguriert, dessen DNS-Server eine lokale öffentliche IP-Adresse verwenden, die ihren Standort im Internet identifiziert. Dies gewährleistet die bestmögliche Leistung für Benutzer, die auf Microsoft 365-Clouddienste zugreifen.
 
 Wenn Sie nicht für jede Zweigstelle einen lokalen ISP verwenden, kann die Leistung beeinträchtigt werden, da der Netzwerkverkehr den Backbone einer Organisation passieren muss oder Datenanforderungen von entfernten Front-End-Servern bedient werden.
 
@@ -20,7 +20,7 @@ Verwenden Sie ein Tool oder eine Website von einem Gerät in diesem Büro, um di
 Gegebenenfalls hilft Ihnen [Schritt 2](../networking-dns-resolution-same-location.md), diese Anforderung zu erfüllen.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneeded-network-hairpins-are-removed"></a>Optional: Nicht benötigte Spitzkehren für Netzwerke werden entfernt.
+### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Optional: Nicht benötigte Spitzkehren für Netzwerke werden entfernt.
 
 Sie haben Ihre Spitzkehren für Netzwerke untersucht und ihre Auswirkung auf die Leistung für alle Ihre Büros bestimmt. Sie haben Spitzkehren für Netzwerke (wo möglich) entfernt oder mit Ihrem Netzwerk- oder Sicherheitsanbieter zusammengearbeitet, um optimales Microsoft 365-Peering für das Netzwerk zu implementieren.
 
