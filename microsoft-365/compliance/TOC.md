@@ -7,15 +7,17 @@
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planen von Sicherheit und Compliance in Office 365](plan-for-security-and-compliance.md)
 
-# Verwalten von Insider Risiken
+# Verwalten interner Risiken
 ## [Schutz von Benutzer- und Gerätezugriff](protect-access-to-data-and-services.md)
-## [Privileged Access Management](privileged-access-management-overview.md)
-## [Konfigurieren von Privileged Access Management](privileged-access-management-configuration.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
+## [Privileged Access Management]()
+### [Informationen zur privilegierten Zugriffsverwaltung](privileged-access-management-overview.md)
+### [Konfigurieren von Privileged Access Management](privileged-access-management-configuration.md)
 ## Kundenschlüssel
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
 ### [Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365](service-encryption-with-customer-key-faq.md)
-## [Aufsichtskommunikation](supervision-policies.md)
+## [Kommunikationsüberwachung]()
+### [Informationen zur Kommunikationsüberwachung](supervision-policies.md)
 ### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
 ## [Informationsbarrieren](information-barriers.md)
 ### [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
@@ -285,6 +287,7 @@
 ## [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md)
 ## [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](set-up-compliance-boundaries.md)
 ## [eDiscovery-Lösungsreihe – Szenario eines Datenverlusts – Suchen und Löschen](data-spillage-scenariosearch-and-purge.md)
+## [Beheben allgemeiner eDiscovery-Probleme](ediscovery-troubleshooting-common-issues.md)
 
 ## Verwalten von Speichern
 ### [Erstellen eines eDiscovery-Speichers](ediscovery-cases.md#step-4-place-content-locations-on-hold)
