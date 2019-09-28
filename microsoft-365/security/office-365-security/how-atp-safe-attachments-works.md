@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Das Feature "sichere Anlagen" bietet eine Zeit-für-Klick-Überprüfung von e-Mail-Anlagen. Verwenden Sie sichere Anlagen, um Ihre Organisation vor böswilligen Dateien zu schützen, die Personen in e-Mails senden oder empfangen.
-ms.openlocfilehash: 14db6bc51f2017388639eb4270d7c5fc67b4ff7d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78abf4aed7999e891907c981cddfea4e659d4285
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081252"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305919"
 ---
-# <a name="how-ffice-365-atp-safe-attachments-works"></a>Funktionsweise von ffice 365 ATP-Sicherheitsanlagen
+# <a name="how-office-365-atp-safe-attachments-works"></a>Funktionsweise Office 365 sicherer ATP-Anlagen
 
 ## <a name="how-it-works"></a>Funktionsweise
 

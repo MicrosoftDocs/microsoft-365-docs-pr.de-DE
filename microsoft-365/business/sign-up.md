@@ -10,20 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
-ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
-ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
+ms.openlocfilehash: bcdf0adc60c597a5eca485415f33662402d12cf4
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35114920"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288233"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -54,7 +51,7 @@ Nachdem Sie Microsoft 365 Business erworben haben, führen Sie die folgenden Sch
 3. Füllen Sie die restlichen Felder aus, und wählen Sie **mein Konto erstellen**aus.
 4. Auf dem nach **weisen. Sie sind. Not. A. Robot.** Seite geben Sie eine Telefonnummer ein, um einen Code per Text oder Anruf zu erhalten, und wählen Sie **Text mich** oder **Anruf**aus, und \> geben Sie dann den Überprüfungscode **als nächstes**ein.
 5. Geben Sie im Feld **wo werden Sie diese Seite verwenden** Ihre Geschäftsadresse ein. Diese Informationen bestimmen, welche Steuern Sie zahlen und welche Abonnements verfügbar sind. Weitere Informationen zu steuern finden Sie unter [welche Steuern werden berechnet?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
-1. Wählen Sie **weiter**aus, überprüfen Sie **** Ihre Bestellung, und wählen Sie dann erneut aus.
+1. Wählen Sie **weiter**aus, überprüfen Sie Ihre Bestellung, und wählen Sie **dann erneut aus** .
 1. Geben Sie auf der Seite **wie möchten Sie bezahlen** aus Ihre Zahlungsdetails ein, und platzieren Sie dann die **Bestellung**.
     Sie können dann zum [Admin Center](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) wechseln, um die [Einrichtung](set-up.md)abzuschließen.
 

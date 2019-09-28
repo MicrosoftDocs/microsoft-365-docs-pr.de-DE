@@ -11,22 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: 64cfa460311af6cdafb637ceb3415511e003e394
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 8568232eb65485f1e016342bb13de9a07f706c00
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853147"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288533"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Übersicht über Microsoft 365 Business
 
@@ -45,7 +41,7 @@ Ihre Geschäftsdaten können in vielerlei Hinsicht kompromittiert werden. Sie un
 1. Gefährdete oder schwache Anmeldeinformationen.
 2. Kompromittiertes Gerät mit schwacher PIN oder einem benutzereigenen Gerät.
 3. Benutzer, die die Daten Ihrer Organisation in persönliche apps Kopieren/Einfügen/speichern können.
-4. Benutzer, die Drittanbieter-<sup></sup> apps mit schwacher Sicherheit installieren und verwenden.
+4. Benutzer,<sup>die Drittanbieter</sup> -apps mit schwacher Sicherheit installieren und verwenden.
 5. E-Mail-Schwachstellen, einschließlich der Freigabe vertraulicher Daten, Phishing-Versuche, Schadsoftware usw.
 6. Wenn Personen, die dies nicht tun sollten, auf Dokumente mit vertraulichen Informationen zugreifen können.
 

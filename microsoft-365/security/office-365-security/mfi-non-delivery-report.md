@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können sich über den Unzustellbarkeitsbericht im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: 64664f54ce90676689b90391c1244f1587ef2578
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 19b3e40aee6af286a3b8ddb43cdb87a39e622b01
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082479"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306159"
 ---
 # <a name="non-delivery-report"></a>Unzustellbarkeitsbericht
 

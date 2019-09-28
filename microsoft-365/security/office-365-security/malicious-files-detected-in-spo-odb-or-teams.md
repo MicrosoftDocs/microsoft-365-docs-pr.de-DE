@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wo Sie Informationen zu schädlichen Dateien anzeigen können, die in SharePoint, OneDrive oder Teams erkannt wurden, und wie Sie Aktionen für diese Dateien durchführen.
-ms.openlocfilehash: b16ba88cd4984754f92fac2917f0f2b393600692
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2271ec7822efd442474aa322535da26d42788db
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082528"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306109"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Anzeigen von Informationen zu bösartigen Dateien, die in SharePoint, OneDrive oder Microsoft Teams erkannt wurden
 
@@ -43,21 +43,21 @@ Zum Anzeigen des Status und detaillierter Informationen zu Dateien, die von Offi
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Anzeigen und Ausführen von Aktionen für Dateien in der Quarantäne
 
-1. Wählen Sie im Office 365 &amp; Security Compliance Center die Option **Threat Management** \> **Review** \> **Quarantine**aus.
+1. Wählen Sie im Office 365 &amp; Security Compliance Center die Option **Threat Management** \> **Review** \> **Quarantine**aus. (Sie können auch direkt zu [https://protection.office.com/quarantine](https://protection.office.com/quarantine)wechseln.)
     
-2. Ändern Sie in der oberen linken Ecke den Filter von **e-Mail** in **Inhalt**.
+2. Ändern Sie in der oberen linken Ecke das Dropdownmenü von **e-Mails** in **Dateien**. Wenn die Liste der Ergebnisse zu viele Elemente enthält, verwenden Sie die **Filter** Funktionalität, um die Auswahl einzuschränken.
     
 3. Wählen Sie ein Element in der Liste aus, um detaillierte Informationen anzuzeigen, einschließlich der URL der Datei.
     
 4. Wählen Sie eine verfügbare Aktion aus.
     
-  - Wählen **Sie &amp; Release Report** aus, um die Datei zu entsperren. 
+  - Wählen Sie **Datei freigeben** aus, um die Datei zu entsperren. 
     
     Wählen Sie **Bericht an Microsoft senden** aus, um die Datei als falsch positiv an Microsoft zu melden. 
     
   - Wählen Sie **Datei herunterladen** aus, um die Datei weiter zu untersuchen. 
     
-  - Klicken Sie auf **Löschen** , um die Datei aus der Liste der isolierten Elemente zu entfernen. Wenn Sie diese Option auswählen, müssen Sie die Datei auch in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams aus der entsprechenden Bibliothek löschen. Mit dieser Option wird das Öffnen oder Freigeben einer Datei nicht aufgehoben. 
+  - Wählen Sie **aus Quarantäne entfernen** aus, um die Datei aus der Liste der isolierten Elemente zu entfernen. Wenn Sie diese Option auswählen, müssen Sie die Datei auch in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams aus der entsprechenden Bibliothek löschen. Mit dieser Option wird das Öffnen oder Freigeben einer Datei nicht aufgehoben. 
     
 5. Wählen Sie **Schließen** aus, um die Details für ein ausgewähltes Element zu schließen. 
   

@@ -15,51 +15,51 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Administratoren können sich über die Berechtigungen informieren, die im Office 365 Security #a0 Compliance Center zur Verfügung stehen.'
-ms.openlocfilehash: c879c2f316844bde0474c693a3c42532a8ae4bc8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b222ea240260518d955f65e4049dfc1e05dc96a2
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082412"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306119"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Berechtigungen im Office 365 Security & Compliance Center
 
 Mit dem Office 365 Security #a0 Compliance Center können Sie Personen, die Compliance-Aufgaben wie Geräteverwaltung, Verhinderung von Datenverlust, eDiscovery, Aufbewahrung usw. ausführen, Berechtigungen erteilen. Diese Personen können nur die Aufgaben ausführen, denen Sie explizit Zugriff gewähren. Für den Zugriff auf das Security #a0 Compliance Center müssen Benutzer ein Office 365 globaler Administrator oder Mitglied einer oder mehrerer Sicherheits #a1 Compliance Center-Rollengruppen sein.
-  
+
 Berechtigungen im Security #a0 Compliance Center basieren auf dem Berechtigungsmodell der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC). Dies ist das gleiche Berechtigungsmodell, das von Exchange verwendet wird, wenn Sie also mit Exchange vertraut sind, werden Berechtigungen im Security #a0 Compliance Center sehr ähnlich sein. Beachten Sie jedoch, dass Exchange-Rollengruppen und Sicherheits #a0 Compliance Center-Rollengruppen keine Mitgliedschaft oder Berechtigungen gemeinsam nutzen. Zwar verfügen beide über eine Rollengruppe "Organisationsverwaltung", sie sind jedoch nicht identisch. Die erteilten Berechtigungen und die Mitglieder der Rollengruppen sind verschieden. Unten finden Sie eine Liste der Rollengruppen Security #a0 Compliance Center.
-  
+
 ![Seite "Berechtigungen" im Office 365 Security #a0 Compliance Center](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
-  
+
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Beziehung zwischen Mitgliedern, Rollen und Rollengruppen
 
 Eine **Rolle** gewährt Berechtigungen zum Ausführen einer Reihe von Aufgaben. Beispielsweise berechtigt die Rolle "Fallmanagement" Personen zum Arbeiten mit eDiscovery-Fällen.
-  
+
 Bei einer **Rollengruppe** handelt es sich um eine Gruppe von Rollen, mit deren Hilfe Benutzer ihre Aufgaben über das Security #a0 Compliance Center ausführen können. Beispielsweise enthält die Rollengruppe Compliance-Administrator die Rollen für die Fallverwaltung, die Inhaltssuche und die Organisationskonfiguration (plus andere), da eine Person, die ein Compliance-Administrator ist, die Berechtigungen für diese Aufgaben benötigt, um Ihre Arbeit zu erledigen.
-  
+
 Das Security #a0 Compliance Center enthält Standardrollengruppen für die am häufigsten verwendeten Aufgaben und Funktionen, denen Sie Personen zuweisen müssen. Es wird empfohlen, nur einzelne Benutzer als **Mitglieder** zu den Standardrollengruppen hinzuzufügen.
-  
+
 ![Diagramm mit Beziehungen zwischen Rollengruppen und Rollen und Mitgliedern](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
-  
+
 Sie können die vorhandenen Rollengruppen bearbeiten oder löschen, dies wird jedoch nicht empfohlen. Anstatt eine standardmäßige Rollengruppe zu bearbeiten, können Sie sie kopieren, ändern und dann unter einem anderen Namen speichern.
-  
+
 ## <a name="permissions-needed-to-use-features-in-the-security--compliance-center"></a>Erforderliche Berechtigungen für die Verwendung von Features im Security #a0 Compliance Center
 
 In der folgenden Tabelle sind die Standardrollengruppen aufgelistet, die im Security #a0 Compliance Center verfügbar sind, sowie die Rollen, die standardmäßig den Rollengruppen zugewiesen sind. Um einem Benutzerberechtigungen zum Ausführen einer Konformitäts Aufgabe zu erteilen, fügen Sie ihn der entsprechenden Sicherheits #a0 Compliance Center-Rollengruppe hinzu.
-  
+
 Durch die Verwaltung von Berechtigungen im Sicherheits #a0 Compliance Center können Benutzer nur auf die Compliance-Features zugreifen, die im Sicherheits #a1 Compliance Center selbst verfügbar sind. Wenn Sie Berechtigungen für andere Kompatibilitätsfeatures gewähren möchten, die sich nicht im Security #a0 Compliance Center befinden, wie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln), müssen Sie das Exchange Admin Center verwenden.
-  
+
 Informationen zum Erteilen des Zugriffs auf das Compliance Center für Sicherheit #a0 finden Sie unter Gewähren von [Benutzern Zugriff auf Office 365 Compliance Admin Center](grant-access-to-the-security-and-compliance-center.md).
-  
+
 |**Rollengruppe**|**Beschreibung**|**Zugewiesene Standardrollen**|
 |:-----|:-----|:-----|
-|**Kompatibilitäts Administrator** <sup>1</sup>|Mitglieder können Einstellungen für die Geräteverwaltung, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten.|Fallverwaltung <br/><br/> Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> Situ <br/><br/> IB-Konformitätsverwaltung <br/><br/> 
+|**Kompatibilitäts Administrator**<sup>1</sup>|Mitglieder können Einstellungen für die Geräteverwaltung, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten.|Fallverwaltung <br/><br/> Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> Situ <br/><br/> IB-Konformitätsverwaltung <br/><br/> 
             Benachrichtigungen verwalten <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement <br/><br/> Aufbewahrungsverwaltung <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> Aufbewahrungsverwaltung mit Ansichts Schutz <br/><br/> DLP-Konformitätsverwaltung mit Ansichts Schutz <br/><br/> Geräteverwaltung mit Ansichts Schutz <br/><br/> Compliance-Management für die Anzeige von IB <br/><br/> Benachrichtigungen nur anzeigen verwalten <br/><br/> Schreibgeschützte Empfänger <br/><br/> Datensatzverwaltung mit Ansichts Schutz|
 |**Kompatibilitätsdaten Administrator**|Mitglieder können Einstellungen für die Geräteverwaltung, Datenschutz, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten.|Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> IB-Konformitätsverwaltung <br/><br/> 
             Benachrichtigungen verwalten <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement <br/><br/> Aufbewahrungsverwaltung <br/><br/> Vertraulichkeits Bezeichnung-Administrator <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> DLP-Konformitätsverwaltung mit Ansichts Schutz <br/><br/> Geräteverwaltung mit Ansichts Schutz <br/><br/> Compliance-Management für die Anzeige von IB <br/><br/> Benachrichtigungen nur anzeigen verwalten <br/><br/> Schreibgeschützte Empfänger <br/><br/> Datensatzverwaltung mit Ansichts Schutz <br/><br/> Aufbewahrungsverwaltung mit Ansichts Schutz|
 |**Data Investigator**|Mitglieder können Suchvorgänge für Postfächer, SharePoint-Websites und OneDrive-Konten durchführen.|Kommunikation <br/><br/> Compliance-Suche <br/><br/> Custodian <br/><br/> Daten Ermittlungsverwaltung <br/><br/> Exportieren<br/><br/> Vorschau <br/><br/> RMS-Entschlüsselung <br/><br/> Überprüfung<br/><br/> Suchen und löschen|
 |**eDiscovery-Manager**|Mitglieder können Suchvorgänge durchführen und Postfächer, SharePoint Online-Websites und OneDrive for Business-Orte im In-Situ-Speicher platzieren. Mitglieder können auch eDiscovery-Fälle erstellen und verwalten, Mitglieder zu einem Fall hinzufügen und entfernen, Inhalts Suchvorgänge für einen Fall erstellen und bearbeiten sowie auf Falldaten in Office 365 Advanced eDiscovery zugreifen. <br/><br/> Ein eDiscovery-Administrator ist Mitglied der Rollengruppe "eDiscovery-Manager", der zusätzliche Berechtigungen zugewiesen wurden. Zusätzlich zu den Aufgaben, die ein eDiscovery-Manager ausführen kann, kann ein eDiscovery-Administrator Folgendes tun: <br/>• Anzeigen aller eDiscovery-Fälle in der Organisation. <br/>• Verwalten Sie alle eDiscovery-Fälle, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben. <br/><br/> Der Hauptunterschied zwischen einem eDiscovery-Manager und einem eDiscovery-Administrator besteht darin, dass ein eDiscovery-Administrator auf alle Fälle zugreifen kann, die auf der Seite **eDiscovery-Fälle** im Security #a0 Compliance Center aufgeführt sind. Ein eDiscovery-Manager kann nur auf die von Ihnen erstellten Fälle oder auf Fälle, in denen Sie Mitglied sind, zugreifen. Weitere Informationen zum Erstellen eines eDiscovery-Administrators für einen Benutzer finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security #a0 Compliance Center](../../compliance/assign-ediscovery-permissions.md).|Fallverwaltung <br/><br/> Kommunikation <br/><br/> Compliance-Suche <br/><br/> Custodian <br/><br/> Exportieren <br/><br/> Situ <br/><br/> Vorschau <br/><br/> RMS-Entschlüsselung <br/><br/> Überprüfung|
 |**Nachrichtenfluss-Administrator**|Mitglieder können den Nachrichtenfluss Einblicke und Berichte im Security #a0 Compliance Center überwachen und anzeigen. Globale Administratoren können gewöhnliche Benutzer zu dieser Gruppe hinzufügen, aber wenn der Benutzer kein Mitglied der Exchange-Administratorgruppe ist, hat der Benutzer keinen Zugriff auf Aufgaben im Zusammenhang mit der Exchange-Verwaltungsaufgabe.|Schreibgeschützte Empfänger|
-|**Organisationsverwaltung** <sup>1</sup>|Mitglieder können Berechtigungen für den Zugriff auf Features im Security #a0 Compliance Center Steuern und außerdem Einstellungen für die Geräteverwaltung, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten. <br/><br/> Beachten Sie, dass der Benutzer ein Exchange-Administrator sein muss, damit ein Benutzer, der kein globaler Administrator ist, die Liste der von MDM verwalteten Geräte für Office 365 anzeigen und Aktionen auf diesen Geräten durchführen kann, beispielsweise wenn ein Gerät von MDM für Office 365 zurückgezogen wird. <br/><br/> Office 365 globale Administratoren werden automatisch als Mitglieder dieser Rollengruppe hinzugefügt.|Überwachungsprotokolle <br/><br/> Fallverwaltung <br/><br/> Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> Situ <br/><br/> IB-Konformitätsverwaltung <br/><br/> 
+|**Organisationsverwaltung**<sup>1</sup>|Mitglieder können Berechtigungen für den Zugriff auf Features im Security #a0 Compliance Center Steuern und außerdem Einstellungen für die Geräteverwaltung, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten. <br/><br/> Beachten Sie, dass der Benutzer ein Exchange-Administrator sein muss, damit ein Benutzer, der kein globaler Administrator ist, die Liste der von MDM verwalteten Geräte für Office 365 anzeigen und Aktionen auf diesen Geräten durchführen kann, beispielsweise wenn ein Gerät von MDM für Office 365 zurückgezogen wird. <br/><br/> Office 365 globale Administratoren werden automatisch als Mitglieder dieser Rollengruppe hinzugefügt.|Überwachungsprotokolle <br/><br/> Fallverwaltung <br/><br/> Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> Situ <br/><br/> IB-Konformitätsverwaltung <br/><br/> 
             Benachrichtigungen verwalten <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement <br/><br/> Aufbewahrungsverwaltung <br/><br/> Rollenverwaltung <br/><br/> Suchen und löschen <br/><br/> Sicherheitsadministrator <br/><br/> Sicherheits Leser <br/><br/> Vertraulichkeits Bezeichnung-Administrator <br/><br/> Service Assurance-Ansicht <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> DLP-Konformitätsverwaltung mit Ansichts Schutz <br/><br/> Geräteverwaltung mit Ansichts Schutz <br/><br/> Compliance-Management für die Anzeige von IB <br/><br/> Benachrichtigungen nur anzeigen verwalten <br/><br/> Schreibgeschützte Empfänger <br/><br/> Datensatzverwaltung mit Ansichts Schutz <br/><br/> Aufbewahrungsverwaltung mit Ansichts Schutz|
 |**Datensatzverwaltung**|Mitglieder können Datensatzinhalte verwalten und freigeben.|Überwachungsprotokolle <br/><br/> RecordManagement <br/><br/> Aufbewahrungsverwaltung|
 |**Reviewer**|Mitglieder können die Liste der Fälle nur auf der Seite eDiscovery-Fälle im Security #a0 Compliance Center anzeigen. Sie können keine eDiscovery-Fälle erstellen, öffnen oder verwalten. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in Advanced eDiscovery zu gestatten. <br/><br/> Diese Rollengruppe verfügt über die restriktivsten Berechtigungen in Bezug auf eDiscovery.|Überprüfung|
@@ -73,7 +73,7 @@ Informationen zum Erteilen des Zugriffs auf das Compliance Center für Sicherhei
 
 > [!NOTE]
 > <sup>1</sup> Diese Rollengruppe weist Mitgliedern keine Berechtigungen zu, die zum Durchsuchen des Office 365 Überwachungsprotokolls erforderlich sind, oder um Berichte zu verwenden, die möglicherweise Exchange-Daten enthalten, wie etwa DLP-oder ATP-Berichte. Um das Überwachungsprotokoll durchsuchen oder alle Berichte anzeigen zu können, muss einem Benutzer in Exchange Online Berechtigungen zugewiesen werden. Dies liegt daran, dass das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet ist. Office 365 globale Administratoren können das Überwachungsprotokoll durchsuchen und alle Berichte anzeigen, da diese automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt werden. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center](https://go.microsoft.com/fwlink/p/?LinkID=708432).
-  
+
 ## <a name="roles-in-the-security--compliance-center"></a>Rollen im Security #a0 Compliance Center
 
 In der folgenden Tabelle sind die verfügbaren Rollen und Rollengruppen aufgelistet, denen Sie standardmäßig zugewiesen sind.

@@ -12,23 +12,19 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: Informationen zu Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen abzielen, um Unternehmensdaten auf persönlichen Geräten des Benutzers zu schützen.
-ms.openlocfilehash: ee7a0a1a397d7f527c3db16520ba157168cfbee3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Hier finden Sie Informationen zu Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen abzielen, um Unternehmensdaten auf persönlichen Geräten des Benutzers zu schützen.
+ms.openlocfilehash: a34d0a83f10aba1bf9bffb2b81907d7629344665
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072638"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288074"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>So schützen die Richtlinien in Microsoft 365 Business Ihre Unternehmensdaten
 

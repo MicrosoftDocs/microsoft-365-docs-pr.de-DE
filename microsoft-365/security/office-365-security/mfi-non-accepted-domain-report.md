@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: d8684f49cca100217b998e5dc8c31b25875d97b7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d256eb99a573b3dc9a6e1bcd14bffdd0800081c
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082480"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306169"
 ---
 # <a name="non-accepted-domain-report"></a>Bericht über nicht akzeptierte Domänen
 
