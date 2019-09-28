@@ -45,6 +45,7 @@
 ### [Exchange Online](exchangeonline-workload.md)
 ### [SharePoint Online und OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [Migration](migration-microsoft-365-enterprise-workload.md)
+### [Empower Remote Workers](empower-people-to-work-remotely.md)
 ### [Teams und Websites für streng geregelte Daten](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)
 ### [Standardkonfiguration]()
