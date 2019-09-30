@@ -1,4 +1,4 @@
-# [Microsoft 365-Konformität](index.yml)
+# [Microsoft 365 Compliance](index.yml)
 
 # Erste Schritte
 ## [Neuerungen im Compliance Center](whats-new.md)
@@ -11,7 +11,7 @@
 ## [Schutz von Benutzer- und Gerätezugriff](protect-access-to-data-and-services.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
 ## [Privileged Access Management]()
-### [Informationen zur privilegierten Zugriffsverwaltung](privileged-access-management-overview.md)
+### [Informationen zu Privileged Access Management](privileged-access-management-overview.md)
 ### [Konfigurieren von Privileged Access Management](privileged-access-management-configuration.md)
 ## Kundenschlüssel
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
@@ -31,7 +31,7 @@
 ### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 
-## [Verhinderung von Datenverlusten (Data Loss Prevention, DLP)](data-loss-prevention-policies.md)
+## [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ### [DLP und Microsoft Teams](dlp-microsoft-teams.md)
 ### [Sehen Sie einen erweiterten Überblick über DLP an](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### Einrichten von DLP
@@ -51,14 +51,14 @@
 ### [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
 ### [Sehen Sie einen erweiterten Überblick über das Anpassen von DLP an](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
-### [Benutzerdefinierte Typen vertraulicher Informationen](custom-sensitive-info-types.md)
-### [Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security #a0 Compliance Center](create-a-custom-sensitive-information-type.md)
+### [Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md)
+### [Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung.](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center](create-a-custom-sensitive-information-type.md)
 ### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
 ### [Dokumentfingerabdrücke](document-fingerprinting.md)
 ### [DLP-Funktionen für vertrauliche Informationen](what-the-dlp-functions-look-for.md)
-### [Sehen Sie einen erweiterten Überblick über das Anpassen von DLP an](https://go.microsoft.com/fwlink/?linkid=852306)
+### [Einen erweiterten Überblick über das Anpassen von DLP ansehen](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [E-Mail-Verschlüsselung](email-encryption.md)
 ### [Office 365-Nachrichtenverschlüsselung (OME)](ome.md)
@@ -80,7 +80,7 @@
 #### [Legacyinformationen für die Office 365-Nachrichtenverschlüsselung](legacy-information-for-message-encryption.md)
 #### [Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# Verwalten der Informationssteuerung
+# Verwalten der Informationsgovernance
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
 ### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
 ### [Verwenden des Laufwerkversands zum Importieren von PST-Dateien](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -89,8 +89,8 @@
 ### [Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Häufig gestellte Fragen zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md)
 ### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
-#### [Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
-#### [Verwenden eines Beispiel-Konnektors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
+#### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
+#### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
 #### [Einrichten eines Connectors zum Archivieren von LinkedIn-Daten](archive-linkedin-data.md)
 #### [Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten](archive-instant-bloomberg-data.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
@@ -104,7 +104,7 @@
 ### [Dateiplan-Manager](file-plan-manager.md)
 ### [Aufbewahrungsbezeichnungen](labels.md)
 ### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
 ### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
 ## [Freigeben von Daten](disposition-reviews.md)
@@ -125,7 +125,7 @@
 ### Dateiplan
 #### [Dateiplan-Manager](file-plan-manager.md)
 #### [Aufbewahrungsbezeichnungen](labels.md)
-#### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 #### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
 #### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
@@ -191,7 +191,7 @@
 #### [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 ### [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md)
-#### [Create a search](create-search-to-collect-data.md)
+#### [Erstellen einer Suche](create-search-to-collect-data.md)
 #### [Erstellen von Suchabfragen](building-search-queries.md)
 #### [Suchstatistiken](search-statistics.md)
 #### [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md)
@@ -205,7 +205,7 @@
 #### [Anzeigen von Dokumenten in einem Prüfdateisatz](view-documents-in-review-set.md)
 #### [Abfragen der Daten in einem Prüfdateisatz](review-set-search.md)
 #### [Markieren von Dokumenten in einem Prüfdateisatz](tagging-documents.md)
-#### [Einrichten der Anwalts-Client-Berechtigungs Erkennung](attorney-privilege-detection.md)
+#### [Erkennung für anwaltliche Schweigepflicht einstellen](attorney-privilege-detection.md)
 
 ### [Analysieren von Falldaten](analyzing-data-in-review-set.md)
 #### [Erkennen von Quasiduplikaten](near-duplicate-detection-in-advanced-ediscovery.md)
@@ -225,11 +225,11 @@
 #### [Konfigurieren der Such- und Analyseeinstellungen](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 
 ### Referenz zu Advanced eDiscovery
-#### [Anmerkungen zu dieser Version](release-notes-ediscovery20.md)
+#### [Versionshinweise](release-notes-ediscovery20.md)
 #### [Grenzwerte in Advanced eDiscovery](limits-ediscovery20.md)
 #### [Unterstützte Dateitypen](supported-filetypes-ediscovery20.md)
 #### [Dokumentmetadatenfelder](document-metadata-fields-in-advanced-ediscovery.md)
-#### [Konversations Überprüfungs Sätze](conversation-review-sets.md)
+#### [Unterhaltungs-Prüfdateisätze](conversation-review-sets.md)
 #### [Problembehandlung bei AzCopy](troubleshooting-azcopy.md)
 
 ## [Verwalten von eDiscovery-Fällen](ediscovery-cases.md)
@@ -287,7 +287,7 @@
 ## [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md)
 ## [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](set-up-compliance-boundaries.md)
 ## [eDiscovery-Lösungsreihe – Szenario eines Datenverlusts – Suchen und Löschen](data-spillage-scenariosearch-and-purge.md)
-## [Beheben allgemeiner eDiscovery-Probleme](ediscovery-troubleshooting-common-issues.md)
+## [Behandeln allgemeiner eDiscovery-Probleme](ediscovery-troubleshooting-common-issues.md)
 
 ## Verwalten von Speichern
 ### [Erstellen eines eDiscovery-Speichers](ediscovery-cases.md#step-4-place-content-locations-on-hold)
@@ -300,7 +300,7 @@
 # [Verwalten von Datenuntersuchungen](overview-data-investigations.md)
 ## [Verwalten von Datenüberläufen](manage-data-spillage-incidents.md)
 ## [Erstellen einer neuen Untersuchung](create-new-investigation.md)
-## [Zuweisen von Berechtigungen für Daten Untersuchungen](permissions.md)
+## [Zuweisen von Berechtigungen für Datenuntersuchungen](permissions.md)
  
 ## [Suchen nach Daten in einer Untersuchung](search-for-data.md)
 ### [Erstellen von Suchabfragen](build-search-queries.md)
@@ -312,7 +312,7 @@
 ### [Anmerken und Überarbeiten von Dokumenten](annotate-and-redact-documents.md)
 ### [Laden von Nicht-Office 365-Daten](load-non-office365-data.md)
 ### [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation.md)
-### [Elemente aus dem ursprünglichen Speicherort löschen](delete-items-from-original-locations.md)
+### [Löschen von Elementen am ursprünglichen Speicherort](delete-items-from-original-locations.md)
 
 ## [Durchführen von Analysen zur schnelleren Untersuchung](run-analytics-to-investigate-faster.md)
 ### [E-Mail-Threading](email-threading.md)
@@ -344,12 +344,12 @@
 ## [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md)
 ## [Verwalten der Postfächern](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
-## [Exportieren, konfigurieren und Anzeigen von Überwachungsprotokolleinträgen](export-view-audit-log-records.md)
+## [Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md)
 ## [Verwenden des Überwachungsprotokoll zum Beheben häufiger Szenarien](auditing-troubleshooting-scenarios.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Manage Compliance Risks
+# Verwalten von Compliancerisiken
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance-Manager (Klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance-Manager (Vorschau)](compliance-manager-overview.md)
@@ -374,30 +374,30 @@
 ### [DSGVO für Office Web Apps Server und Office Online Server](gdpr-for-office-online-server.md)
 ### [DSGVO für lokale Windows Server-Dateifreigaben](gdpr-for-on-premises-file-shares.md)
 
-# [Aktionspläne zur Einhaltung behördlicher Vorschriften](compliance-solutions-overview.md)
+# [Aktionspläne für die Einhaltung gesetzlicher Vorschriften](compliance-solutions-overview.md)
 
-## [ISO – empfohlener Aktionsplan](iso-action-plan.md)
-## [NIST – empfohlener Aktionsplan](nist-action-plan.md) 
+## [ISO – Empfohlener Aktionsplan](iso-action-plan.md)
+## [NIST – Empfohlener Aktionsplan](nist-action-plan.md) 
 
 ## [DSGVO](gdpr.md)
-### [Empfohlener Aktionsplan für dsgvo](gdpr-action-plan.md)
+### [Empfohlener Aktionsplan für DSGVO](gdpr-action-plan.md)
 
-### [Prüflisten zur Verantwortlichkeits Bereitschaft]()
-#### [Prüflisten zur Verantwortlichkeits Bereitschaft](gdpr-arc.md)
+### [Prüflisten zu Verantwortlichkeiten]()
+#### [Prüflisten zu Verantwortlichkeiten](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
-#### [Microsoft Support #a0 Professional Services](gdpr-arc-prof-services.md)
+#### [Microsoft-Support und Professional Services](gdpr-arc-prof-services.md)
 #### [Office 365](gdpr-arc-office365.md)
 
 ### [Schutz von Daten](gdpr-information-protection.md)
 
 ### [Datenbetreffsanforderungen]()
-#### [Datenbetreffsanforderungen](gdpr-data-subject-requests.md)
+#### [Anfragen von Datensubjekten](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
 #### [Dynamics 365](gdpr-dsr-dynamics365.md)
 #### [Intune](gdpr-dsr-intune.md)
-#### [Microsoft Support #a0 Professional Services](gdpr-dsr-prof-services.md)
+#### [Microsoft-Support und Professional Services](gdpr-dsr-prof-services.md)
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio-Produktfamilie](gdpr-dsr-visual-studio-family.md)
 
@@ -405,22 +405,22 @@
 #### [Benachrichtigung bei Sicherheitsverletzungen](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
-#### [Microsoft Support #a0 Professional Services](gdpr-breach-microsoft-support-professional-services.md)
+#### [Microsoft-Support und Professional Services](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
-### [Datenschutz-Folgenabschätzung]()
-#### [Datenschutz-Folgenabschätzung](gdpr-data-protection-impact-assessments.md)
+### [Datenschutz-Folgenabschätzungen]()
+#### [Datenschutz-Folgenabschätzungen](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
-#### [Microsoft Support #a0 Professional Services](gdpr-dpia-prof-services.md)
+#### [Microsoft-Support und Professional Services](gdpr-dpia-prof-services.md)
 #### [Office 365](gdpr-dpia-office365.md)
 
-### [Microsoft-Datenschutzbeauftragter](gdpr-data-protection-officer.md)
+### [Datenschutzbeauftragter von Microsoft](gdpr-data-protection-officer.md)
 
-# Funktionen für die Hybrid Kompatibilität
+# Hybridcompliancefunktionen
 ## [Exchange Online-Mailverschlüsselung mit AD RMS](information-rights-management-in-exchange-online.md)
 ### [Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
-# [Microsoft 365-Sicherheit](https://docs.microsoft.com/microsoft-365/security/)
+# [Sicherheit in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
