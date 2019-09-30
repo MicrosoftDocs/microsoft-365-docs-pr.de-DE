@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsarbeitslasten von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981936"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306009"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
 
@@ -29,7 +29,11 @@ Um die Vorteile für Kreativität und Teamwork von Microsoft 365 Enterprise zu r
 
 In der Arbeitslast [Migration](migration-microsoft-365-enterprise-workload.md)finden Sie eine allgemeine Roadmap zum Migrieren Ihrer gesamten Organisation zu Microsoft 365 Enterprise. Dies beinhaltet Microsoft Office-Client-Produkte, lokale Office-Serverprodukte und Microsoft Windows-basierte Geräte.
 
-Szenarien verwenden Funktionen und Dienste aus Microsoft 365 Enterprise auf integrierte Art und Weise, um eine Geschäftsanforderung zu erfüllen. Eine derartige Anforderung ist, stark regulierte Daten, die in Microsoft 365 gespeichert sind, zu schützen. Stark regulierte Daten umfassen folgende digitale Assets:
+Szenarien verwenden Funktionen und Dienste aus Microsoft 365 Enterprise auf integrierte Art und Weise, um eine Geschäftsanforderung zu erfüllen. 
+
+Eine solche Notwendigkeit besteht darin sicherzustellen, dass Ihre Mitarbeiter produktiv und sicher arbeiten können, wenn sie nicht direkt mit Ihrem Intranet verbunden sind. Eine Roadmap zur Bereitstellung von Infrastrukturelementen und zur Steuerung der Anpassungen Remote-Benutzer-Anpassungen an die wesentlichen Arbeitslasten, wie z. B. Teams and Exchange Online, finden Sie unter [Empower remote workers](empower-people-to-work-remotely.md)(Unterstützen von Remote-Mitarbeitern).
+
+Eine derartige Anforderung ist der Schutz von umfassend regulierten Daten, die in Microsoft 365 gespeichert sind. Stark regulierte Daten umfassen folgende digitale Assets:
 
 - Daten, die regionalen Vorschriften unterliegen.
 - Die wertvollsten Daten für Ihre Organisation, z. B. Geschäftsgeheimnisse, Informationen zu Finanzen oder Personalwesen und die Organisationsstrategie.
