@@ -340,7 +340,9 @@
 ### [Dokumentmetadatenfelder](document-metadata-fields.md)
 ### [Verwalten von Aufträgen](manage-jobs.md)
 
-# [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md)
+# Verwalten von Überwachungs- und Warnungsrichtlinien
+## [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md)
+## [Verwalten von Warnungsrichtlinien](alert-policies.md)
 ## [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md)
 ## [Verwalten der Postfächern](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
