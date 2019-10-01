@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Aufsichts Überprüfungsrichtlinien zum Erfassen der Mitarbeiterkommunikation zur Überprüfung.
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081014"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317617"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -52,10 +52,6 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 
 - **Schritt 5 (optional)**: [Testen Ihrer Aufsichtsrichtlinie](#step-5-test-your-supervision-policy-optional)
 
     Testen Sie Ihre Aufsichtsrichtlinie, um sicherzustellen, dass Sie wie gewünscht funktioniert. Es ist wichtig sicherzustellen, dass Ihre Konformitäts Strategie ihre Standards erfüllt.
-
-- **Schritt 6 (optional)**: [Konfigurieren von Outlook für Bearbeiter, die Office 365 Aufsichts Konsole nicht zum Überprüfen der beaufsichtigten Kommunikation verwenden möchten](#step-6-configure-outlook-for-reviewers-optional)
-
-    Konfigurieren Sie Outlook so, dass Sie den Prüfern Zugriff auf die Überwachungsfunktionen innerhalb des Outlook-Clients gewähren, damit Sie jedes Element bewerten und kategorisieren können.
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>Schritt 1: Einrichten von Gruppen für die Beaufsichtigung (optional)
 
@@ -181,70 +177,10 @@ Nachdem Sie eine Aufsichtsrichtlinie erstellt haben, sollten Sie testen, um sich
 1. Öffnen Sie einen e-Mail-Client oder Microsoft Teams, der als überwachten Benutzer angemeldet ist, der in der Richtlinie definiert ist, die Sie testen möchten.
 2. Senden Sie eine e-Mail oder einen Microsoft Teams-Chat, die die Kriterien erfüllen, die Sie in der Aufsichtsrichtlinie definiert haben. Hierbei kann es sich um ein Stichwort, eine Anlagegröße, eine Domäne usw. handeln. Stellen Sie sicher, dass Sie feststellen, ob die konfigurierten bedingten Einstellungen in der Richtlinie zu restriktiv oder zu nachsichtig sind.
 
-    > [!Note]
+    > [!NOTE]
     > E-Mails, die bestimmten Richtlinien unterliegen, werden nahezu in Echtzeit verarbeitet und können unmittelbar nach der Konfiguration der Richtlinie getestet werden. Chats in Microsoft Teams können bis zu 24 Stunden in Anspruch nehmen, um eine Richtlinie vollständig zu verarbeiten. 
 
 3. Melden Sie sich bei Ihrem Office 365-Mandanten als Prüfer an, der in der Aufsichtsrichtlinie angegeben ist. Navigieren Sie zu **Beaufsichtigung** > *Ihre benutzerdefinierte Richtlinie* > **geöffnet** , um den Bericht für die Richtlinie anzuzeigen.
-
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>Schritt 6: Konfigurieren von Outlook für Bearbeiter (optional)
-
-Bearbeiter, die Outlook anstelle des Aufsichts Dashboards in Office 365 verwenden möchten, um die Kommunikation zu überprüfen, müssen Ihren Outlook-Client konfigurieren.
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Schritt 1: Kopieren der Adresse für das Aufsichts Postfach
-
-Zum Konfigurieren der Überprüfung für Outlook Desktop benötigen Sie die Adresse des Aufsichts Postfachs, das als Teil des Setups für die Aufsichtsrichtlinie erstellt wurde.
-  
-> [!NOTE]
-> Wenn die Richtlinie von einer anderen Person erstellt wurde, müssen Sie diese Adresse abrufen, um das Add-in zu installieren.
-
-**So suchen Sie die Überwachungs Postfachadresse**
-  
-1. Melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation beim [Compliance Center](https://compliance.microsoft.com) an.
-
-2. Wechseln Sie zur **Aufsicht**.
-
-3. Wählen Sie eine Aufsichtsrichtlinie für die Kommunikation aus, die Sie überprüfen möchten.
-
-4. Kopieren Sie im Flyout Richtlinie Details unter **Aufsichts Postfach**die Adresse.<br/>![Abschnitt "überwachungspostfach" des Detail Flyouts einer Aufsichtsrichtlinie, in dem die Adresse des Aufsichts Postfachs hervorgehoben ist](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Schritt 2: Konfigurieren des Überwachungs Postfachs für Outlook Access
-
-Als nächstes müssen Bearbeiter ein paar Exchange Online PowerShell-Befehle ausführen, damit Sie Outlook mit dem überwachungspostfach verbinden können.
-  
-1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. [Wie muss ich vorgehen?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. Führen Sie die folgenden Befehle aus, wobei *SupervisoryReview {GUID} @Domain. onmicrosoft.com* die Adresse ist, die Sie in Schritt 1 oben kopiert haben, und *User* ist der Name des berezensenten, der in Schritt 3 eine Verbindung mit dem Aufsichts Postfach herstellen wird.
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. Warten Sie mindestens eine Stunde, bevor Sie mit Schritt 3 fortfahren.
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>Schritt 3: Erstellen eines Outlook-Profils zum Herstellen einer Verbindung mit dem überwachungspostfach
-
-Im letzten Schritt müssen Prüfer ein Outlook-Profil erstellen, um eine Verbindung mit dem überwachungspostfach herzustellen.
-
-> [!NOTE]
-> Um ein neues Outlook-Profil zu erstellen, verwenden Sie die e-Mail-Einstellungen in der Windows-Systemsteuerung. Der Pfad, den Sie zum Abrufen dieser Einstellungen benötigen, hängt möglicherweise davon ab, welches Windows-Betriebssystem (Windows 7, Windows 8 oder Windows 10) Sie verwenden und welche Version von Outlook installiert ist.
-  
-1. Öffnen Sie die Systemsteuerung. Geben Sie im **Suchfeld** oben im Fenster **Mail**ein.<br/>(Sie sind nicht sicher, wie Sie zur Systemsteuerung gelangen? Siehe [wo ist die Systemsteuerung?](https://support.microsoft.com/help/13764/windows-where-is-control-panel))
-  
-2. Öffnen Sie die **Mail-** app.
-
-3. Klicken Sie in **Mail-Setup-Outlook**auf **Profile anzeigen**.<br/>![Das Dialogfeld ' Mail-Setup-Outlook ' mit hervorgehobener Schaltfläche ' Profile anzeigen '](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. Klicken Sie in **e-Mail**auf **Hinzufügen**. Geben Sie dann in **Neues Profil**einen Namen für das Aufsichts Postfach ein (beispielsweise **Überwachung**).<br/>![Das Dialogfeld "neues Profil" mit dem Namen "Beaufsichtigung" im Feld "Profilname"](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. Klicken Sie in **Verbinden von Outlook mit Office 365**auf mit **einem anderen Konto verbinden**.<br/>![Die Nachricht "Connect Outlook to Office 365" mit dem Link "mit einem anderen Konto verbinden" wurde hervorgehoben](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. Wählen Sie unter **Automatische Kontoeinrichtung**die Option **manuelles Setup oder zusätzliche Servertypen**aus, und klicken Sie dann auf **weiter**.
-
-7. Wählen Sie unter Kontotyp **auswählen die**Option **Office 365**aus. Geben Sie dann im Feld **e-Mail-Adresse** die Adresse des Aufsichts Postfachs ein, das Sie zuvor kopiert haben.<br/>![Auf der Seite "wählen Sie Ihren Kontotyp" im Dialogfeld "Konto hinzufügen" in Outlook, in dem das Feld "e-Mail-Adresse" hervorgehoben angezeigt wird.](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. Wenn Sie dazu aufgefordert werden, geben Sie Ihre Office 365 Anmeldeinformationen ein.
-
-9. Wenn die Überwachung erfolgreich verläuft, wird der Ordner ** \<Richtlinienname\> ** in der Ordnerlistenansicht in Outlook aufgeführt.
 
 ## <a name="powershell-reference"></a>PowerShell-Referenz
 
