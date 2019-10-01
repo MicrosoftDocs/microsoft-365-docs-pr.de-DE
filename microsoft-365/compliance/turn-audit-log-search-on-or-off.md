@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 'Sie können das Feature Überwachungsprotokoll Suche im Security #a0 Compliance Center aktivieren. Wenn Sie Ihre Meinung ändern, können Sie jederzeit deaktivieren. Wenn die Überwachungsprotokoll Suche deaktiviert ist, können Administratoren das Office 365 Überwachungsprotokoll nicht nach Benutzer-und Administratoraktivitäten in Ihrer Organisation durchsuchen.'
-ms.openlocfilehash: c5e1106617aa4828ec2db5afcc44ac55e91f2383
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 83ef355c4acd5e0af4fd7ffbf13157307bcac930
+ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082548"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37334245"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche
 
@@ -35,7 +35,7 @@ Sie (oder ein anderer Administrator) müssen die Überwachungsprotokollierung ak
     > [!IMPORTANT]
     > Benutzern müssen Berechtigungen in Exchange Online zugewiesen sein, um die Überwachungsprotokoll Suche ein-oder auszuschalten. Wenn Sie den Benutzern die Rolle "Überwachungsprotokolle" auf der Seite **Berechtigungen** im Security #a0 Compliance Center zuweisen, kann die Überwachungsprotokoll Suche nicht aktiviert oder deaktiviert werden. Dies liegt daran, dass das zugrunde liegende Cmdlet ein Exchange Online-Cmdlet ist. 
   
-- Wenn Sie die Überwachungsprotokoll Suche in Office 365 deaktivieren, können Sie die Office 365-Verwaltungs Aktivitäts-API nicht verwenden, um auf Überwachungsdaten für Ihre Organisation zuzugreifen. Wenn Sie die Überwachungsprotokoll Suche deaktivieren, indem Sie die Schritte in diesem Artikel durchführen, werden keine Ergebnisse zurückgegeben, wenn Sie das Überwachungsprotokoll mithilfe der Sicherheits #a0 Compliance Center oder beim Ausführen des Cmdlets **Search-UnifiedAuditLog** in Exchange Online PowerShell durchsuchen. . Dies bedeutet auch, dass Ihre Überwachungsprotokolle nicht über die Office 365 Verwaltungs Aktivitäts-API verfügbar sind.  
+- Wenn Sie die Überwachungsprotokoll Suche in Office 365 deaktivieren, können Sie die Office 365 Verwaltungs Aktivitäts-API nicht verwenden, um auf Überwachungsdaten für Ihre Organisation zuzugreifen. Wenn Sie die Überwachungsprotokoll Suche deaktivieren, indem Sie die Schritte in diesem Artikel durchführen, werden keine Ergebnisse zurückgegeben, wenn Sie das Überwachungsprotokoll mithilfe der Sicherheits #a0 Compliance Center oder beim Ausführen des Cmdlets **Search-UnifiedAuditLog** in Exchange Online PowerShell durchsuchen. . Dies bedeutet auch, dass Ihre Überwachungsprotokolle nicht über die Office 365 Verwaltungs Aktivitäts-API verfügbar sind.  
     
 - Eine Schritt-für-Schritt-Anleitung zum Durchsuchen des Office 365 Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md).
     
@@ -47,15 +47,13 @@ Sie können das Security #a0 Compliance Center oder die PowerShell verwenden, um
 
 1. Wechseln Sie im Security #a0 Compliance Center zu **Such** \> **Überwachungsprotokoll-Suche**.
     
-2. Klicken Sie auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten**.
+   Ein Banner wird angezeigt, das besagt, dass die Überwachung aktiviert werden muss, um Benutzer-und Administratoraktivitäten aufzuzeichnen.
+
+2. Klicken Sie auf **Überwachung aktivieren**.
     
-    ![Klicken Sie auf Aufzeichnung von Benutzer-und Administratoraktivitäten starten, um die Überwachung zu aktivieren](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![Klicken Sie auf Überwachung aktivieren](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    Es wird ein Dialogfeld angezeigt, das besagt, dass Benutzer-und Administratoraktivitäten in Ihrer Organisation im Office 365 Überwachungsprotokoll aufgezeichnet und in einem Bericht angezeigt werden können. 
-    
-3. Klicken Sie auf **Aktivieren**.
-    
-    Es wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können.
+    Das Banner wird aktualisiert, um zu sagen, dass das Überwachungsprotokoll vorbereitet wird und dass Sie in wenigen Stunden nach Benutzer-und Administratoraktivitäten suchen können.
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Aktivieren der Überwachungsprotokoll Suche mithilfe von PowerShell
 
@@ -85,14 +83,12 @@ Sie müssen Remote-PowerShell verwenden, die mit Ihrer Exchange Online Organisat
     
     - Führen Sie in PowerShell den folgenden Befehl aus:
 
-        ```
-        Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-        ```
+            ```
+            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+            ```
 
-        Der Wert von `False` für die _UnifiedAuditLogIngestionEnabled_ -Eigenschaft gibt an, dass die Überwachungsprotokoll Suche deaktiviert ist. 
+           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
     
-    - Wechseln Sie im Security #a0 Compliance Center zu **Such** \> **Überwachungsprotokoll Suche**, und klicken Sie dann auf **Suchen**.
+    - Wechseln Sie im Security #a0 Compliance Center zu **Such** \> **Überwachungsprotokoll-Suche**.
     
-      Es wird eine Meldung angezeigt, die besagt, dass die Überwachungsprotokoll Suche nicht aktiviert ist. 
-    
-      ![Wenn die Überwachung deaktiviert ist, wird eine Meldung angezeigt.](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)
+           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
