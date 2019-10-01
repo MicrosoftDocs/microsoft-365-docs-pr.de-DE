@@ -12,12 +12,13 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 09/20/2019
-  ms.openlocfilehash: 0357312feb1821f343809e93b1a53f2c5df536c4
-  ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+  localization_priority: Priority
+  ms.openlocfilehash: c502be734ec6fdc86a64968ecf1859587869cdf9
+  ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/20/2019
-  ms.locfileid: "37080653"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "37329183"
 landingContent:
 - title: Verwalten des Informationsschutzes
   linkLists:
@@ -33,7 +34,7 @@ landingContent:
       url: custom-sensitive-info-types.md
     - text: E-Mail-Verschlüsselung
       url: email-encryption.md
-- title: Verwalten der Informationssteuerung
+- title: Verwalten der Informationsgovernance
   linkLists:
   - linkListType: overview
     links:
@@ -49,7 +50,7 @@ landingContent:
       url: inactive-mailboxes-in-office-365.md
     - text: Anzeigen von Data Governance-Berichten
       url: view-the-data-governance-reports.md
-- title: Verwalten von Insider Risiken
+- title: Verwalten interner Risiken
   linkLists:
   - linkListType: overview
     links:
