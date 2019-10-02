@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise-Foundation-Infrastruktur für Nicht-Unternehmen
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: 09/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die vereinfachten Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise für Nicht-Unternehmen.
-ms.openlocfilehash: 37bbf04eafeb3adc63d9dd01d052376f98856df4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4006980de5341c53d9c6a2d827613015c000fab0
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071734"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369576"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur für Nicht-Unternehmen
 
@@ -27,9 +27,9 @@ Nicht-Unternehmen können auch Microsoft 365 Enterprise einsetzen und den Gesch�
 - Eine kleine oder gar keine lokale IT-Infrastruktur, wie E-Mail- und Dateiserver und eine Active Directory Domain Services (AD DS)-Domäne.
 - Ein kleines IT-Team, von dem die meisten Informatiker sind, und nicht Spezialisten für eine bestimmte Technologie oder Arbeitsbelastung wie Vernetzung oder E-Mail senden.
 
-Für Ihr kleineres Nicht-Unternehmen bietet Microsoft das [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). Es gibt jedoch Gründe, warum Sie Microsoft 365 Enterprise benötigen, wie z. B.:
+Für Ihre Nicht-Unternehmen stellt Microsoft [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) bereit. Es gibt jedoch Gründe, warum Sie Microsoft 365 Enterprise benötigen, wie z. B.:
 
-- Ihre Organisation benötigt oder wird mehr als 300 Microsoft 365-Lizenzen benötigen, was das Maximum für Microsoft 365 Business darstellt.
+- Ihre Organisation benötigt jetzt oder später mehr als 300 Microsoft 365-Lizenzen, was das Maximum für Microsoft 365 Business darstellt.
 - Ihre Organisation benötigt die fortschrittliche Produktivität, Sprach-, Sicherheits- und Analysefunktionen, die mit Microsoft 365 Business nicht verfügbar sind.
 
 Dieser Artikel führt Sie durch eine vereinfachte Bereitstellung der für Ihr Nicht-Unternehmen geeigneten Foundation-Infrastruktur von Microsoft 365 Enterprise.
@@ -42,20 +42,20 @@ Als nächstes müssen Sie zusätzliche Sicherheit für Microsoft 365 konfigurier
 
 ## <a name="phase-1-networking"></a>Phase 1: Vernetzung
 
-Nicht-Unternehmen verfügen in der Regel über lokale Internetverbindungen in jedem Büro und verwenden keine Proxy-Server, Firewalls oder Paket-Inspektionsgeräte. Der Internetdienstanbieter (Internet Service Provider, ISP), der die einzelnen Büros versorgt, verfügt über einen regional lokalen DNS-Server, so dass der Datenverkehr an den Microsoft 365-Netzwerkstandort geleitet wird, die Ihren Büros und deren lokalen Benutzern am nächsten sind.
+Nicht-Unternehmen verfügen in der Regel über lokale Internetverbindungen in jedem Büro und verwenden keine Proxy-Server, Firewalls oder Paket-Inspektionsgeräte. Der Internetdienstanbieter (Internet Service Provider, ISP), der die einzelnen Büros versorgt, verfügt über einen regional lokalen DNS-Server, so dass der Datenverkehr an den Microsoft 365-Netzwerkstandort geleitet wird, die Ihren Büros und deren lokalen Benutzern am nächsten sind. Weitere Informationen finden Sie unter [Konfigurieren von lokalen Internetverbindungen für jedes Büro](networking-dns-resolution-same-location.md).
 
-Daher müssen Sie nur bei Ihrem ISP überprüfen, ob die Verbindung an jedem Ihrer Standorte Folgendes tut:
+Daher müssen Sie nur bei Ihrem ISP überprüfen, ob die Verbindung an jedem Ihrer Standorte:
 
 - Einen regional lokalen DNS-Server verwendet.
-- Ist für aktuelle und zukünftige Anforderungen geeignet, da Ihre Benutzer mehr Microsoft 365-Clouddienste nutzen.
+- Für aktuelle und zukünftige Anforderungen geeignet ist, da Ihre Benutzer mehr Microsoft 365-Clouddienste nutzen.
 
-Wenn Sie Proxyserver, Firewalls oder Paket-Inspektionsgeräte verwenden, finden Sie weitere Informationen unter [Netzwerkinfrastruktur für Microsoft 365 Enterprise](networking-infrastructure.md).
+Wenn Sie Proxyserver, Firewalls oder Paketüberprüfungsgeräte verwenden, finden Sie Informationen zur Optimierung der Leistung von Microsoft 365-Diensten unter [Konfigurieren von Datenverkehrumgehungen](networking-configure-proxies-firewalls.md).
 
 ### <a name="your-configuration-so-far"></a>Ihre bisherige Konfiguration
 
 Hier ist eine visuelle Zusammenfassung, in der das Element "Phase 1" hervorgehoben ist. **Ihre Organisation** kann aus mehreren Büros bestehen, von denen jedes eine lokale Internetverbindung mit einem ISP hat, der einen regional lokalen DNS-Server verwendet. Über den ISP können Benutzer in jedem Büro den nächstgelegenen Microsoft 365-Netzwerkstandort und die Ressourcen Ihres Microsoft 365-Abonnements erreichen.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
+![Ihre Organisation nach der Phase "Vernetzung"](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
 ## <a name="phase-2-identity"></a>Phase 2: Identität
 
@@ -82,7 +82,7 @@ Wenn Sie keine lokale AD DS-Domäne haben, erstellen Sie Sicherheitsgruppen in A
 
 ### <a name="hybrid-identity"></a>Hybrididentität
 
-Wenn Sie über eine lokale AD DS-Domäne verfügen, müssen Sie die Gruppe der Benutzerkonten, Gruppen und Kontakte Ihrer Domäne mit dem Azure AD-Mandanten Ihres Microsoft 365 Enterprise-Abonnements synchronisieren. Für Ihr Nicht-Unternehmen konfigurieren Sie Azure AD Connect auf einem Server mit Kennwort-Hash-Synchronisierung (Password Hash Synchronization, PHS). Weitere Informationen finden Sie unter [Synchronisieren von Identitäten](identity-add-user-accounts.md).
+Wenn Sie über eine lokale AD DS-Domäne verfügen, müssen Sie die Gruppe der Benutzerkonten, Gruppen und Kontakte Ihrer Domäne mit dem Azure AD-Mandanten Ihres Microsoft 365 Enterprise-Abonnements synchronisieren. Für Ihr Nicht-Unternehmen konfigurieren Sie Azure AD Connect auf einem Server mit Kennwort-Hash-Synchronisierung (Password Hash Synchronization, PHS). Weitere Informationen finden Sie unter [Synchronisieren von Identitäten](identity-add-user-accounts.md#synchronize-identities-for-hybrid-identity).
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>Mehr Sicherheit für den Benutzerzugriff mit Richtlinien für bedingten Zugriff
 
@@ -148,38 +148,37 @@ Wenn Sie über Microsoft 365 Enterprise E5 verfügen, können Sie Azure AD Ident
 
 ### <a name="your-configuration-so-far"></a>Ihre bisherige Konfiguration
 
-Hier ist eine visuelle Zusammenfassung der Phase "Identität" für hybride Identität, in der die neuen Elemente hervorgehoben sind.
+Hier ist eine visuelle Zusammenfassung der Phase "Identität" für hybride Identität, in der die vorhandenen und neuen Elemente hervorgehoben sind.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
+![Ihre Organisation nach der Phase "Identität" für hybride Identität](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
 Zu den neuen und hervorgehobenen Elementen der hybriden Identität gehören:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | Eine lokale AD DS-Domäne mit Benutzerkonten und Gruppen. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | Ein Windows-basierter Server mit Azure AD Connect. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Der synchronisierte Satz von AD DS-Konten und Gruppen in Azure AD. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Azure AD-Einstellungen für die Authentifizierung, die Sicherung globaler Konten und die Vereinfachung der Verwaltung von Gruppen und Lizenzen. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD-Richtlinien für den bedingten Zugriff. |
+| ![Eine lokale AD DS-Domäne mit Benutzerkonten und Gruppen](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | Eine lokale AD DS-Domäne mit Benutzerkonten und Gruppen. |
+| ![Ein Windows-basierter Server mit Azure AD Connect](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | Ein Windows-basierter Server mit Azure AD Connect. |
+| ![Der synchronisierte Satz von AD DS-Benutzerkonten und Gruppen in Azure AD](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Der synchronisierte Satz von AD DS-Benutzerkonten und Gruppen in Azure AD. |
+| ![Azure AD-Einstellungen für die Authentifizierung, die Sicherung globaler Konten und die Vereinfachung der Verwaltung von Gruppen und Lizenzen](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Azure AD-Einstellungen für die Authentifizierung, die Sicherung globaler Konten und die Vereinfachung der Verwaltung von Gruppen und Lizenzen. |
+| ![Azure AD-Richtlinien für den bedingten Zugriff](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD-Richtlinien für den bedingten Zugriff. |
 |||
 
 Hier ist eine visuelle Zusammenfassung der Phase "Identität" für reine Cloudidentität, in der die neuen Elemente hervorgehoben sind.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+![Ihre Organisation nach der Phase "Identität" für reine Cloudidentität](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
 Zu den neuen und hervorgehobenen Elementen der reinen Cloudidentität gehören:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Azure AD-Einstellungen für die Authentifizierung, die Sicherung globaler Konten und die Vereinfachung der Verwaltung von Gruppen und Lizenzen. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD-Richtlinien für den bedingten Zugriff. |
+| ![Die Benutzerkonten und -gruppen in Azure AD](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Die Benutzerkonten und -gruppen in Azure AD. |
+| ![Azure AD-Einstellungen für die Authentifizierung, die Sicherung globaler Konten und die Vereinfachung der Verwaltung von Gruppen und Lizenzen](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Azure AD-Einstellungen für die Authentifizierung, die Sicherung globaler Konten und die Vereinfachung der Verwaltung von Gruppen und Lizenzen. |
+| ![Azure AD-Richtlinien für den bedingten Zugriff](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD-Richtlinien für den bedingten Zugriff. |
 |||
-
-
 
 ## <a name="phase-3-windows-10-enterprise"></a>Phase 3: Windows 10 Enterprise
 
-Um sicherzustellen, dass Ihre Windows 10 Enterprise-Geräte in die Identitäts- und Sicherheitsinfrastruktur von Microsoft 365 integriert sind, haben Sie folgende Möglichkeiten:
+Um sicherzustellen, dass Ihre Windows 10 Enterprise-Geräte in die Identitäts- und Sicherheitsinfrastruktur von Microsoft 365 Enterprise integriert sind, haben Sie folgende Möglichkeiten:
 
 - Hybrid (Sie verfügen über eine lokale AD DS-Domäne)
 
@@ -193,7 +192,7 @@ Um sicherzustellen, dass Ihre Windows 10 Enterprise-Geräte in die Identitäts- 
 
   Verbinden Sie jedes Windows 10 Enterprise-Gerät mit dem Azure AD-Mandanten Ihres Abonnements.
 
-  Weitere Informationen finden Sie unter [Einbinden von geschäftlichen Geräten in das Netzwerk der Organisation](https://docs.microsoft.com/de-DE/azure/active-directory/user-help/user-help-join-device-on-network).
+  Weitere Informationen finden Sie unter [Einbinden von geschäftlichen Geräten in das Netzwerk der Organisation](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network).
 
 
 Nach der Installation und Verknüpfung installiert jedes Windows 10 Enterprise-Gerät automatisch Updates aus dem Windows Update for Business-Clouddienst. In der Regel ist es in einem Nicht-Unternehmen nicht erforderlich, eine Infrastruktur für die Verteilung und Installation von Windows 10-Updates einzurichten.
@@ -202,21 +201,21 @@ Nach der Installation und Verknüpfung installiert jedes Windows 10 Enterprise-G
 
 Hier ist eine visuelle Zusammenfassung der Phase "Windows 10 Enterprise", in der die neuen Elemente hervorgehoben sind.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
+![Ihre Organisation nach der Phase "Windows 10 Enterprise"](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
 Zu den neuen und hervorgehobenen Elementen von Windows 10 Enterprise gehören:
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise wurde auf Windows-Geräten installiert, beispielsweise auf einem lokalen Laptop. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Das Volume Licensing Service Center, das Bilder für Neuinstallationen von Windows 10 Enterprise bereitstellt, und der Windows Update for Business Service, der die neuesten Updates bereitstellt. |
+| ![Windows 10 Enterprise auf Windows-Geräten](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise wurde auf Windows-Geräten installiert, beispielsweise auf einem lokalen Laptop. |
+| ![Das Volume Licensing Service Center](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Das Volume Licensing Service Center, das Bilder für Neuinstallationen von Windows 10 Enterprise bereitstellt, und der Windows Update for Business Service, der die neuesten Updates bereitstellt. |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>Phase 4: Office 365 ProPlus
 
 Microsoft 365 Enterprise enthält Office 365 ProPlus, die Abonnementversion von Microsoft Office. Wie Office 2016 oder Office 2019 wird Office 365 ProPlus direkt auf Ihren Clientgeräten installiert. Office 365 ProPlus erhält jedoch in regelmäßigen Abständen mit neuen Features. Weitere Informationen finden Sie unter [Informationen zu Office 365 ProPlus im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
-Für Ihr Nicht-Unternehmen installieren Sie Office 365 ProPlus manuell auf Geräten. Dies kann im Rahmen der Vorbereitung eines neuen Geräts für den Gebrauch oder durch den Benutzer im Rahmen seines Onboarding-Prozesses erfolgen.
+Für Ihr Nicht-Unternehmen installieren Sie Office 365 ProPlus manuell auf Geräten, beispielsweise auf Windows-, iOS- und Android-Geräten. Dies kann im Rahmen der Vorbereitung eines neuen Geräts für den Gebrauch oder durch den Benutzer im Rahmen seines Onboarding-Prozesses erfolgen.
 
 In beiden Fällen meldet sich der Administrator oder der Benutzer am Office 365-Portal unter https://portal.office.com an. Klicken Sie auf der Registerkarte **Microsoft Office-Startseite** auf **Office installieren**, und durchlaufen Sie den Installationsvorgang.
 
@@ -226,14 +225,14 @@ Feature-Updates für Office 365 ProPlus werden monatlich von jedem Computer heru
 
 Hier ist eine visuelle Zusammenfassung der Phase "Office 365 ProPlus", in der die neuen Elemente hervorgehoben sind.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Ihre Organisation nach der Phase "Office 365 ProPlus"](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
 Zu den neuen und hervorgehobenen Office 365 ProPlus-Elementen gehören:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus wurde auf Geräten installiert, beispielsweise auf einem lokalen Laptop. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Das Office Content Delivery Network (CDN) für Office 365 ProPlus, auf das die Geräte für Office 365 ProPlus-Updates zugreifen. |
+| ![Office 365 ProPlus auf Geräten](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus wurde auf Geräten installiert, beispielsweise auf einem lokalen Laptop. |
+| ![Office-Content Delivery Network (CDN) für Office 365 ProPlus](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Das Office Content Delivery Network (CDN) für Office 365 ProPlus, auf das die Geräte für Office 365 ProPlus-Updates zugreifen. |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>Phase 5: Verwaltung mobiler Geräte
@@ -265,14 +264,14 @@ Siehe [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-p
 
 Hier ist eine visuelle Zusammenfassung der Phase "Verwaltung mobiler Geräte", in der die neuen Elemente hervorgehoben sind.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
+![Ihre Organisation nach der Phase "Verwaltung mobiler Geräte"](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
 Die neuen und hervorgehobenen Elemente für die Verwaltung mobiler Geräte umfassen:
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | In Intune registrierte Geräte, die beispielsweise Windows 10 Enterprise auf einem lokalen Laptop ausführen. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Intune-Richtlinien für die Gerätekompatibilität und den App-Schutz. |
+| ![In Intune registrierte Geräte](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | In Intune registrierte Geräte, die beispielsweise Windows 10 Enterprise auf einem lokalen Laptop ausführen. |
+| ![Intune-Richtlinien für die Gerätekompatibilität und den App-Schutz](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Intune-Richtlinien für die Gerätekompatibilität und den App-Schutz. |
 |||
 
 ## <a name="phase-6-information-protection"></a>Phase 6: Informationsschutz
@@ -291,9 +290,9 @@ Der erste Schritt zu einer Informationsschutzstrategie ist die Festlegung der Si
 
   Beispiele sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte oder Dienste.
 
-- Streng geregelt
+- Hochgradig reguliert
 
-  Beispiele sind personenbezogene Daten von Kunden und Partnern sowie Finanzdaten oder geistiges Eigentum Ihrer Organisation.
+  Beispiele sind personenbezogene Daten von Kunden und Partnern sowie strategische Pläne oder das geistige Eigentum Ihrer Organisation.
 
 Basierend auf diesen Ebenen der Datensicherheit ist der nächste Schritt die Identifizierung und Implementierung von:
 
@@ -303,7 +302,7 @@ Basierend auf diesen Ebenen der Datensicherheit ist der nächste Schritt die Ide
 
 - Aufbewahrungsbezeichnungen
 
-  Um die Organisationsrichtlinien und regionalen Vorschriften einzuhalten, müssen Sie möglicherweise angeben, wie lange bestimmte Arten von Dokumenten oder Dokumente mit bestimmten Inhalten aufbewahrt werden sollen. Sie können dies für E-Mails und Dokumente mit Aufbewahrungsbezeichnungen implementieren.
+  Um die Organisationsrichtlinien und regionalen Vorschriften einzuhalten, müssen Sie möglicherweise angeben, wie lange bestimmte Arten von Dokumenten oder Dokumente mit bestimmten Inhalten aufbewahrt werden sollen. Sie können dies für E-Mails und Dokumente mit Aufbewahrungsbezeichnungen implementieren. Aufbewahrungsbezeichnungen können auch in Verbindung mit Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verwendet werden, die die Freigabe von Dateien oder E-Mails außerhalb Ihrer Organisation einschränken können.
 
 - Vertraulichkeitsbezeichnungen
 
@@ -311,7 +310,7 @@ Basierend auf diesen Ebenen der Datensicherheit ist der nächste Schritt die Ide
 
 Weitere Informationen hierzu finden Sie unter [Microsoft 365-Klassifizierungstypen](infoprotect-configure-classification.md#microsoft-365-classification-types).
 
-Wenn Sie Vertraulichkeitsbezeichnungen mit Berechtigungen verwenden, müssen Sie möglicherweise zusätzliche Azure AD-Sicherheitsgruppen erstellen, um zu definieren, wer was mit E-Mails und Dokumenten tun darf. 
+Wenn Sie Vertraulichkeitsbezeichnungen mit Berechtigungen verwenden, müssen Sie möglicherweise zusätzliche Azure AD-Sicherheitsgruppen erstellen, um zu definieren, wer was mit E-Mails und Dokumenten tun darf, auf die die Vertraulichkeitsbezeichnung angewendet wurde. 
 
 Beispielsweise müssen Sie eine Vertraulichkeitsbezeichnung FORSCHUNG erstellen, um die E-Mails und Dokumente Ihres Forschungsteams zu schützen. Sie bestimmen Folgendes:
 
@@ -331,13 +330,13 @@ Bei Vertraulichkeitsbezeichnung, die mit gruppenbasierten Berechtigungen konfigu
 
 Hier ist eine visuelle Zusammenfassung der Phase "Informationsschutz", in der die neuen Elemente hervorgehoben sind.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
+![Ihre Organisation nach der Phase "Informationsschutz"](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
  
 Zu den neuen und hervorgehobenen Elementen des Informationsschutzes gehören:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | Vertraulichkeitsbezeichnungen für die drei Sicherheitsebenen, die Benutzer auf Dokumente anwenden können. |
+| ![Vertraulichkeitsbezeichnungen für die drei Sicherheitsebenen](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | Vertraulichkeitsbezeichnungen für die drei Sicherheitsebenen, die Benutzer auf Dokumente und E-Mails anwenden können. |
 |||
 
 Benutzerdefinierte Informationstypen und Aufbewahrungsbezeichnungen werden nicht angezeigt.
@@ -356,7 +355,7 @@ Bevor Sie einem Mitarbeiter ein neues Windows 10 Enterprise-Gerät zuweisen:
 
 - Für reine Cloudidentität
 
-  Verbinden Sie das Gerät an den Azure AD-Mandanten Ihres Microsoft 365 Enterprise-Abonnements.
+  Verknüpfen Sie das Gerät mit Ihrem Azure AD-Mandanten.
 
 ### <a name="existing-employee-with-an-ad-ds-user-account"></a>Vorhandene Mitarbeiter mit einem AD DS-Benutzerkonto
 
@@ -413,11 +412,11 @@ Nach dem Aufbau und der Konfiguration Ihrer Microsoft 365 Enterprise-Infrastrukt
 
 Hier ist eine visuelle Zusammenfassung der Infrastruktur, wenn Ihre Organisation eine Hybrididentität verwendet, die Ihre AD DS-Domäne, einen Azure AD Connect-Server und synchronisierte AD DS-Benutzer und -Gruppen umfasst.
 
-![](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
+![Zusammenfassung der Infrastruktur, wenn Ihre Organisation eine hybride Identität verwendet](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
  
 Hier ist eine visuelle Zusammenfassung der Infrastruktur, wenn Ihre Organisation eine reine Cloud-Identität verwendet.
  
-![](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
+![Zusammenfassung der Infrastruktur, wenn Ihre Organisation eine reine Cloud-Identität verwendet](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
 
 ### <a name="employee-results"></a>Mitarbeiterergebnisse
 
