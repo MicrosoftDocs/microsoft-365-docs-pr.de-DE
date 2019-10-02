@@ -3,7 +3,7 @@ title: Bereitstellung von Windows 10 Enterprise für Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Contoso System Center Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
-ms.openlocfilehash: 03ee4d9efcedf42eb976e001411299d2080abf83
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073855"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370472"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Bereitstellung von Windows 10 Enterprise für Contoso
 
 **Zusammenfassung:** Informationen dazu, wie Contoso System Center Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
 
-Vor der unternehmensweiten Einführung von Microsoft 365 Enterprise verfügte Contoso über Windows-kompatible Computer und Geräte, auf denen eine Mischung aus Windows 7 (10 %), Windows 8.1 (65 %) und Windows 10 (25 %) ausgeführt wurde. Contoso wollte seine Computer auf Windows 10 Enterprise aktualisieren, um die höhere Sicherheit sowie den niedrigeren IT-Aufwand der automatisierten Bereitstellung von Updates nutzen zu können. 
+Vor der unternehmensweiten Einführung von Microsoft 365 Enterprise verfügte Contoso über Windows-kompatible Computer und Geräte, auf denen eine Mischung aus Windows 7 (10 %), Windows 8.1 (65 %) und Windows 10 (25 %) ausgeführt wurde. Contoso wollte seine Computer auf Windows 10 Enterprise aktualisieren, um die erweiterte Sicherheit sowie den niedrigeren IT-Aufwand der automatisierten Bereitstellung von Updates nutzen zu können. 
 
 Nach der Bewertung der Infrastruktur und der Geschäftsanforderungen identifizierte Contoso die folgenden Hauptanforderungen für die Bereitstellung:
 
@@ -45,11 +45,11 @@ Vor und während direkter Upgrades von Windows 10 Enterprise verwendete Contoso 
 
 - Update-Compliance  
 
-  Es werden System- und Diagnosedaten, einschließlich des Updateinstallationsstatus, WUfB-Konfigurationsdaten (Windows Update for Business), Windows Defender Antivirus-Daten und anderer updatespezifischer Informationen erfasst; diese Daten werden dann in der Cloudanalyse und -verwendung gespeichert.
+  Zeigt den Status Ihrer Geräte in Bezug auf die Windows-Updates an, so dass Sie sicherstellen können, dass diese gegebenenfalls auf den aktuellsten Updates sind.
 
 - Geräteintegrität  
 
-  Es werden System- und Diagnosedaten für Windows 10, einschließlich des Updateinstallationsstatus, WUfB-Konfigurationsdaten (Windows Update for Business), Windows Defender Antivirus-Daten und anderer updatespezifischer Informationen erfasst; diese Daten werden dann in der Cloudanalyse und -verwendung gespeichert.
+  Identifiziert Geräte, die häufig abstürzen und daher möglicherweise neu aufgebaut oder ersetzt werden müssen, und Gerätetreiber, die Geräteabstürze verursachen, mit Vorschlägen für alternative Versionen dieser Treiber, welche die Anzahl der Abstürze reduzieren könnten. Bietet eine Benachrichtigung über Fehlkonfigurationen des Windows Information Protection, die Eingabeaufforderungen an Endbenutzer senden.
  
 Contoso verfügt über eine vorhandene Infrastruktur von System Center Configuration Manager (Current Branch). Configuration Manager kann an große Umgebungen angepasst werden und bietet eine umfassende Kontrolle über Installation, Updates und Einstellungen. Er verfügt außerdem über integrierte Features, um die Bereitstellung und Verwaltung von Windows 10 Enterprise zu vereinfachen und effizienter zu gestalten.
 
@@ -75,20 +75,18 @@ Um die Bereitstellung des direkten Upgrades von Windows 10 Enterprise abzuschlie
 4. Mithilfe der Lösungen für Geräteintegrität und Updatebereitschaft von Windows Analytics wurden der Erfolg von Computern und Geräten in den drei Ringen für Überprüfung und Staging der Bereitstellung bewertet.
 5. Contoso ermittelte (basierend auf den Windows Analytics-Informationen) die Version von Windows 10 Enterprise, die im Ring der Bereitstellung auf breiter Basis bereitgestellt werden soll.
 6. Es wurden die Bereitstellungsaufgabenfolgen von Configuration Manager ausgeführt, um das ausgewählte Windows-Paket im Ring der Bereitstellung auf breiter Basis bereitzustellen.
-7. Die Computer und Geräte im Ring der Bereitstellung auf breiter Basis wurden mithilfe der Lösungen für Geräteintegrität und Updatebereitschaft überwacht, die von Windows Analytics zur Behebung von Problemen bereitgestellt werden.
+7. Die Computer und Geräte im Ring der Bereitstellung auf breiter Basis wurden mithilfe der Lösungen für Geräteintegrität und Updatebereitschaft überwacht, die zur Behebung von Problemen bereitgestellt werden.
 
-Abbildung 1 zeigt die Bereitstellungsarchitektur für das direkte Upgrade und fortlaufende Updates.
+Hier ist Contosos Bereitstellungsarchitektur für das direkte Upgrade und fortlaufende Updates.
 
-![](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**Abbildung 1: Bereitstellungsinfrastruktur für Windows 10 Enterprise von Contoso**
+![Contosos Bereitstellungsinfrastruktur für Windows 10 Enterprise](./media/contoso-win10/contoso-win10-fig1.png)
 
 Diese Infrastruktur besteht aus:
 
 - System Center Configuration Manager, der:
   - Images für Windows 10 Enterprise-Pakete aus dem Microsoft Volume Licensing Center im Microsoft Network abruft.
   - Als zentraler Verwaltungspunkt für Bereitstellungspakete fungiert.
-- Regionale Verteilungspunkte befinden sich in der Regel in den Zweigstellen von Contoso.
+- Regionale Verteilungspunkte befinden sich in der Regel in den regionalen Hub-Büros von Contoso.
 - Windows-PCs und Geräte an verschiedenen Standorten, die die Bereitstellungspakete für das direkte Upgrade oder für laufende Updates basierend auf der Ringmitgliedschaft empfangen und installieren.
 
 ## <a name="next-step"></a>Nächster Schritt

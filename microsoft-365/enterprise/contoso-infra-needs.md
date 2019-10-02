@@ -3,7 +3,7 @@ title: IT-Infrastruktur und geschäftliche Anforderungen von Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt werden können.
-ms.openlocfilehash: e50a2b17544c1a551d25dffd751d12aec1c15ecd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt wurden.
+ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072615"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369586"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>IT-Infrastruktur und geschäftliche Anforderungen von Contoso
 
-**Zusammenfassung:** Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt werden können.
-
+**Zusammenfassung:** Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt wurden.
 
 Contoso ist dabei, von der lokalen zentralen IT-Infrastruktur auf eine cloudeinschließende Infrastruktur umzustellen, die aus cloudbasierten persönlichen Produktivitätsarbeitslasten und Anwendungen besteht.
 
@@ -33,7 +32,7 @@ Contoso nutzt eine weitestgehend zentrale lokale IT-Infrastruktur mit Anwendungs
 
 Abbildung 1 zeigt eine Unternehmenszentrale mit Anwendungsrechenzentren, einer DMZ und Internet.
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contosos vorhandene IT-Infrastruktur](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Abbildung 1: Contosos vorhandene IT-Infrastruktur**
  
@@ -43,15 +42,15 @@ In den lokalen Anwendungsrechenzentren wird Folgendes gehostet:
 - Eine Reihe von älteren SharePoint-Servern.
 - Server auf Organisations- und Teamebene für das Speichern von Dateien.
 
-Darüber hinaus jedes regionales Hub-Büro, das eine Reihe von Servern mit einer ähnlichen Gruppe von Anwendungen unterstützt. Diese Server werden von regionalen IT-Abteilungen gesteuert.
+Darüber hinaus unterstützt jedes regionales Hub-Büro eine Reihe von Servern mit einer ähnlichen Gruppe von Anwendungen. Diese Server werden von regionalen IT-Abteilungen gesteuert.
 
 Die Durchsuchbarkeit über die Anwendungen und Daten dieser separaten Rechenzentren an mehreren geografischen Standorten hinweg bleibt eine Herausforderung.
 
 In der DMZ am Hauptsitz von Contoso bieten verschiedene Servergruppen Folgendes:
 
-- VPN-basierter Remotezugriff auf das Contoso-Intranet und Webproxyfunktion für Mitarbeiter in der Pariser Zentrale.
 - Hosting der öffentlichen Contoso-Website, über die Kunden Produkte, Teile, Zubehör oder Dienstleistungen bestellen können.
 - Hosting für das Contoso-Partnerextranet für die Kommunikation und Zusammenarbeit mit Partnern.
+- VPN-basierter Remotezugriff (virtuelles privates Netzwerk) auf das Contoso-Intranet und Webproxyfunktion für Mitarbeiter in der Pariser Zentrale.
 
 ## <a name="contosos-business-needs"></a>Contosos Geschäftsanforderungen
 
@@ -81,7 +80,7 @@ Sicherheit:
 
 - Schutz von Daten
 
-  Sperren Sie den Zugriff auf wichtige digitale Ressourcen, und verschlüsseln Sie diese (z. B. Kundendaten, Entwurfsspezifikationen und Mitarbeiterinformationen).
+  Sperren Sie den Zugriff auf wichtige digitale Ressourcen, und verschlüsseln Sie diese (z. B. Kundendaten, Entwurfs- und Fertigungsspezifikationen und Mitarbeiterinformationen).
 
 - Sicherheitsverwaltung
 
@@ -111,7 +110,7 @@ Verwaltung:
 
 - Reduzieren des IT-Aufwands für die Verwaltung von Software, die auf Clientcomputern und -geräten ausgeführt wird
 
-  Automatisieren Sie die Installation von Updates auf dem Windows-Betriebssystem und in Microsoft Office in der gesamten Organisation.
+  Automatisieren Sie die Installation von Updates auf dem Windows-Betriebssystem und in Microsoft Office ProPlus in der gesamten Organisation.
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Zuordnen der Geschäftsanforderungen von Contoso zu Microsoft 365 Enterprise
 
@@ -121,27 +120,27 @@ Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuord
 |:-------|:-----|:-----|
 | **Kategorie** | **Geschäftsanforderung** | **Produkte oder Features von Microsoft 365 Enterprise** |
 | Produktivität |  |  |
-|  | Vereinfachen der Zusammenarbeit | Teams, SharePoint Online, Skype for Business Online |
-|  | Mehr Produktivität für Telearbeiter und Mobilmitarbeiter | Office 365-Arbeitslasten und cloudbasierte Daten |
+|  | Vereinfachen der Zusammenarbeit | Microsoft Teams, SharePoint, OneDrive |
+|  | Mehr Produktivität für Telearbeiter und Mobilmitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Mehr Kreativität und Innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sicherheit |  |  |
-|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit mehrstufiger Authentifizierung (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Untersuchung von und Antwort auf Bedrohungen in Office 365 <BR> |
-|  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust in Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust in Office 365 <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Sicherheitsverwaltung | Azure Security Center  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
 |  | Mehr Sicherheit für Telearbeiter und Mobilmitarbeiter | Microsoft Intune |
-|  | Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter | Office 365-Arbeitslasten und cloudbasierte Daten |
+|  | Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Bessere Konnektivität und weniger Aufwand für B2B-Transaktionen | Verbundauthentifizierung und cloudbasierte Ressourcen |
 | Compliance |  |  |
 |  | Einhalten von regionalen gesetzlichen Vorschriften | DSGVO-Features in Office 365 |
 | Verwaltung |  |  |
-|  | Reduzieren des IT-Aufwands für die Installation von Clientupdates | Bereitstellungsringe <BR> Vorhandenes Upgrade auf Windows 10 und Autopilot <BR> Office 365 ProPlus |
+|  | Reduzieren des IT-Aufwands für die Installation von Clientupdates | Bereitstellungsringe <BR> Windows 10 Enterprise-Updates <BR> Office 365 ProPlus-Updates |
 ||||
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-networking.md) über das lokale Netzwerk von Contoso und wie dieses im Hinblick auf Zugriff und Latenz für cloudbasierte Microsoft 365-Ressourcen in der gesamten Organisation optimiert wurde.
+[Erfahren Sie mehr](contoso-networking.md) über das lokale Netzwerk von Contoso und wie dieses im Hinblick auf Zugriff und Latenz für cloudbasierte Microsoft 365-Ressourcen optimiert wurde.
 
 ## <a name="see-also"></a>Siehe auch
 

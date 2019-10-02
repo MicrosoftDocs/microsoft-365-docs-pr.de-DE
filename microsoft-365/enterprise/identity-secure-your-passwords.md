@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie müssen für Ihre gesamte Organisation sichere Kennwörter verwenden, und die Kennwortverwaltung einfach gestalten.
-ms.openlocfilehash: 06d936a68432b55912b1c10839336dc94e698f51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082009"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370402"
 ---
 # <a name="step-2-secure-your-passwords"></a>Schritt 2: Schützen von Kennwörtern
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Verhindern unsicherer Kennwörter
@@ -98,4 +98,4 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Absichern und Verwalten von Benutzeranmeldungen](identity-secure-user-sign-ins.md) |
+|![Schritt 3](./media/stepnumbers/Step3.png)| [Absichern und Verwalten von Benutzeranmeldungen](identity-secure-user-sign-ins.md) |

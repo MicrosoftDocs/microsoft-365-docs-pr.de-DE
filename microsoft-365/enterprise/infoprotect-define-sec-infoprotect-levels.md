@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und konfigurieren Sie Sicherheits- und Informationsschutzebenen für Ihre Organisation.
-ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047258"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370392"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Schritt 1: Definieren von Sicherheits- und Informationsschutzebenen
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In diesem Schritt definieren Sie die Sicherheits- und Schutzebenen für Ihre Organisation. Für die Vertriebsabteilung ist vielleicht nur eine niedrige Sicherheitsstufe erforderlich. Für die Forschungsabteilung und das äußerst wertvolle geistige Eigentum ist aber vielleicht eine hohe Sicherheitsstufe erforderlich, die Dateien verschlüsselt und den Zugriff auf die Forschungsmitarbeiter beschränkt.
 
@@ -42,4 +42,4 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md)|
+|![Schritt 2](./media/stepnumbers/Step2.png)|[Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md)|

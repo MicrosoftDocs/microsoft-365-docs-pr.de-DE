@@ -3,7 +3,7 @@ title: Verwaltung mobiler Geräte bei Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verstehen Sie, wie Contoso Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
-ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: Verstehen Sie, wie Contoso Microsoft Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
+ms.openlocfilehash: b083b7fed67eb08b47daf70c3fd22c181f5a8f77
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054987"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370482"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Verwaltung mobiler Geräte bei Contoso
 
-**Zusammenfassung:** Verstehen Sie, wie Contoso Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
+**Zusammenfassung**: Verstehen Sie, wie Contoso Microsoft Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
 
-Microsoft 365 Enterprise enthält Microsoft Intune und eine Reihe von Azure-Diensten zur Unterstützung der Verwaltung und Sicherheit mobiler Geräte und Anwendungen.
+Microsoft 365 Enterprise enthält Intune und eine Reihe von Azure-Diensten zur Unterstützung der Verwaltung und Sicherheit mobiler Geräte und Anwendungen.
 
 Bei Contoso arbeiten viele Mitarbeiter mit Mobilunterstützung, von denen einige Büros an Contoso-Standorten haben und einige nicht in Büros arbeiten. Das Unternehmen benötigte eine Möglichkeit, die Mitarbeiterproduktivität zu steigern und dabei gleichzeitig die auf diesen Geräten gespeicherten Contoso-Daten sowie das Anwendungsverhalten zu schützen.
 
@@ -64,6 +64,10 @@ Contoso hat seine Infrastruktur für die Verwaltung mobiler Geräte folgenderma�
   - Eine klare Trennung der geschäftlichen und persönlichen Daten. Benutzer oder Administratoren können Unternehmensdaten selektiv vom Gerät löschen, aber persönliche Daten wie Bilder, persönliche E-Mail-Konten und persönliche Dateien unberührt lassen.
 
 Nach der Bereitstellung hat Contoso PCs sowie Smartphones und Tablets im Besitz des Unternehmens registriert, indem diese zu den entsprechenden Intune-Gerätegruppe hinzugefügt wurden, und es wurde ein BYOD-Programm eingeführt, im Rahmen dessen Mitarbeiter ihre persönlichen Geräte registrieren können. Registrierte Geräte erhielten Intune-Richtlinien, die zu verwalteten und geschützten Geräten und Anwendungen führten. Geräte, die nicht registriert wurden, weisen MAM-Richtlinien auf, in denen zulässige Anwendungen angegeben werden.
+
+Hier ist Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte.
+
+![Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte](./media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

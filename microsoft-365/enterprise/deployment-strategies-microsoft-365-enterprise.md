@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, wie Sie die Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise bereitstellen können.
-ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148499"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369436"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Bereitstellungsstrategien für die Foundation-Infrastruktur von Microsoft 365 Enterprise
 
@@ -51,7 +51,7 @@ Die Benutzergruppe im Pilotrollout ist nicht identisch mit derjenigen im Benutze
 
 Dieser Artikel verwendet die folgenden Grafikelemente, um diese Definitionen darzustellen: 
 
-![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![Die Grafik zur Darstellung der Definitionen von Pilot- und Benutzerrollout](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 Die Schattierung für die Benutzerrolloutgrafik zeigt den Prozentanteil in Ihrem Unternehmen von 0 % bis 100 % mit einem strukturierten oder methodischen Ansatz wie Gruppen, Abteilungen oder Regionen.
 
@@ -76,7 +76,7 @@ Bei einer seriellen Bereitstellung führen Sie eine Phase vollständig aus, soda
 
 Dieses Gantt-Diagramm zeigt eine vereinfachte serielle Bereitstellung der Phasen 2 bis 6 der Foundation-Infrastruktur für Microsoft 365 Enterprise.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![Die serielle Bereitstellung der Phasen 2 bis 6 der Foundation-Infrastruktur](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Um die Erläuterung und das Beispiel zu vereinfachen, wird davon ausgegangen, dass jede Phase und jedes Einsatzsegment innerhalb jeder Phase die gleiche Zeit in Anspruch nimmt.
 
@@ -110,7 +110,7 @@ Der Nachteil dieser Bereitstellungsstrategie besteht darin, dass es lange dauern
 
 Für diese Bereitstellungsstrategie starten Sie das Pilotrollout der nächsten Phase im letzten Teil des Benutzerrollouts der aktuellen Phase. Hier findet die Bereitstellung der Phasen 2 bis 6 statt, wenn das Pilotrollout stattfindet, während das Benutzerrollout der vorherigen Phase abgeschlossen ist.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![Parallele Bereitstellung der Phasen 2 bis 6 mit nicht überlappendem Benutzerrollout](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 Das Endergebnis ist, dass das Benutzerrollout für die aktuelle Phase in Ihrem Unternehmen abgeschlossen ist, bevor die nächste Phase beginnt. Benutzer, die sich nicht in Pilotrollouts befinden, befassen sich nicht gleichzeitig mit den Rollouts mehrerer Phasen, aber Pilotrollouts werden parallel zu Benutzerrollouts durchgeführt.
 
@@ -145,7 +145,7 @@ Für diese Bereitstellungsstrategie beginnen Sie:
 
 Dies ist ein vereinfachter Vergleich zwischen den verschiedenen Bereitstellungsstrategien.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![Parallele Bereitstellung der Phasen 2 bis 6 mit überlappendem Benutzerrollout](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 Für das Endergebnis gilt Folgendes:
 
@@ -174,11 +174,11 @@ Das Ergebnis ist eine Kadenz von 30 Tagen zwischen den aufeinanderfolgenden Benu
 
 Der Vorteil dieser Bereitstellungsstrategie besteht darin, dass die vollständige Bereitstellung der Microsoft 365 Enterprise Foundation-Infrastruktur in noch kürzerer Zeit erfolgen kann, Ihre Benutzer aber trotzdem nicht mehrere Rollouts gleichzeitig durchführen müssen. Allerdings erhalten die Benutzer keine Pause zwischen den aufeinanderfolgenden Phasen.
 
-### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>Vorabinfrastruktur und Rollout der End-to-End-Konfiguration
+### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>Vorabinfrastruktur und Rollout der End-to-End-Konfiguration
 
 Für kleinere Unternehmen mit der Möglichkeit, die Phasen 2 bis 6 in einem einzigen Bereitstellungssegment zu komprimieren, sieht die sich ergebende Bereitstellung folgendermaßen aus:
  
-![](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![Vorabinfrastruktur und Rollout der End-to-End-Konfiguration](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 Die IT-Abteilung konfiguriert die Infrastruktur für die Phasen 2 bis 6 und stellt sie dann für die Pilotbenutzer bereit, um die End-to-End-Funktionalität zu überprüfen. Beispielsweise erhalten Pilotbenutzer alle diese Funktionen gleichzeitig:
 

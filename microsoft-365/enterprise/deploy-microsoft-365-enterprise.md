@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050276"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369536"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -65,7 +65,7 @@ Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
 Die Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien ist wie folgt.
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Arbeitslasten und Szenarios agieren auf Grundlage der Foundation-Infrastruktur. Sie müssen jedoch nicht alle Phasen der Foundation-Infrastruktur vollständig durchlaufen haben, um Arbeitslasten für Produktivität und Zusammenarbeit verwenden zu können.
 

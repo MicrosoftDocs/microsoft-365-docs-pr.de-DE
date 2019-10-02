@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsarbeitslasten von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: 6446e73f79a3dd92d60fa3299e6007e1a5a3fdeb
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329210"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369426"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
 
@@ -42,12 +42,9 @@ Um diese Daten vor internen und externen Bedrohungen zu schützen, ziehen Sie [M
 
 Dies sind die Arbeitslasten und Szenarios im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Arbeitslasten und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Weitere Szenarien finden Sie in der [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success/). 
-
-1. Geben Sie auf dieser Webseite eine Suchzeichenfolge ein, oder klicken Sie auf **Filtern nach**, und geben Sie Branche, Rollen (Abteilungen) und Produkte innerhalb von Microsoft 365 an.
-2. Klicken Sie in den Ergebnissen auf eine Karte, um die Schritte anzuzeigen, die Ihnen den Einstieg erleichtern.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Foundation-Infrastruktur – Voraussetzungen
 
