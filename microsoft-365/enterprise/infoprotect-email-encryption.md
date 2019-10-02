@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 6: Konfigurieren der e-Mail-Verschlüsselung'
+title: 'Schritt 6: Konfigurieren der E-Mail-Verschlüsselung'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +14,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Verstehen und Konfigurieren von Privileged Access Management für Office 365.
-ms.openlocfilehash: 7747f5a0905a9477e9d3fd17b00eae740d76f640
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050296"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370432"
 ---
-# <a name="step-6-configure-email-encryption"></a>Schritt 6: Konfigurieren der e-Mail-Verschlüsselung
+# <a name="step-6-configure-email-encryption"></a>Schritt 6: Konfigurieren der E-Mail-Verschlüsselung
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Informationsschutz](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Es gibt drei Arten von e-Mail-Verschlüsselung in Microsoft 365.
 
@@ -79,4 +79,4 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[Konfigurieren von Privileged Access Management für Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Schritt 7](./media/stepnumbers/Step7.png)|[Konfigurieren von Privileged Access Management für Office 365](infoprotect-configure-privileged-access-management.md)|

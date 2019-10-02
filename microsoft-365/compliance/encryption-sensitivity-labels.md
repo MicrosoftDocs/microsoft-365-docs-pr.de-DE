@@ -1,7 +1,7 @@
 ---
 title: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148479"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369446"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -135,7 +135,7 @@ Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights 
 
 Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweisen, wenn sie eine Vertraulichkeitsbezeichnung manuell auf Inhalte anwenden:
 
-- In Outlook kann ein Benutzer Einschränkungen durchsetzen, die der Option **Nicht weiterleiten** entsprechen. Diese Option wird in Outlook unter Windows systemintern unterstützt und erfordert keine Installation des Azure Information Protection-Clients für einheitliche Bezeichnungen.
+- In Outlook kann ein Benutzer Einschränkungen durchsetzen, die der Option [Nicht weiterleiten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) entsprechen. Diese Option wird in Outlook unter Windows systemintern unterstützt und erfordert keine Installation des Azure Information Protection-Clients für einheitliche Bezeichnungen.
 - In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, eine Berechtigungsstufe für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen. Diese Option wird in diesen Office-Apps nicht systemintern unterstützt, Ihre Benutzer müssen deshalb den Azure Information Protection-Client für einheitliche Bezeichnungen installieren.
 
 Durch diese Optionen wird festgelegt, in welchen Apps die Vertraulichkeitsbezeichnung angezeigt wird:

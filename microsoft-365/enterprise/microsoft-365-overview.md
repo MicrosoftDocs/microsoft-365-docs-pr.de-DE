@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050286"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370462"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Übersicht zu Microsoft 365 Enterprise
 
@@ -140,7 +140,7 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| Lassen Sie sich selbst geschult und auf eine Microsoft 365-Zertifizierung hinarbeiten. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Microsoft 365-Grundlagentraining](./media/m365-poster/m365-fundamentals.svg)| Lassen Sie sich selbst geschult und auf eine Microsoft 365-Zertifizierung hinarbeiten. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 
