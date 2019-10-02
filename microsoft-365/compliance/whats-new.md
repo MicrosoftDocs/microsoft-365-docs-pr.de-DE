@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: 558a35d255171ffa09f5e8610cdfc0d6ba63c9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082036"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369636"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -29,9 +29,23 @@ Wir fügen dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center
 > [!TIP]
 > Möchten Sie wissen, was in anderen Admin Center passiert? Lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Neuerungen im SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
-## <a name="august-2019"></a>August 2019
+## <a name="september-2019"></a>September 2019
 
 Sie Fragen sich, warum es auf der Veröffentlichungs Front in diesem Monat ruhig ist? Wir entwickeln neue, innovative Compliance-Lösungen, die bei [Microsoft Ignite](https://www.microsoft.com/ignite) im November vorgestellt werden. Stay tuned!
+
+### <a name="new-encryption-options-for-sensitivity-labels"></a>Neue Verschlüsselungsoptionen für Sensitivitäts Bezeichnungen 
+
+Wenn Sie die Verschlüsselung für eine Vertraulichkeits Bezeichnung konfigurieren, haben Sie nun zwei Optionen, mit denen Benutzerberechtigungen zuweisen können, wenn Sie die Bezeichnung manuell auf e-Mail und Dokumente anwenden:<br>
+- Wenn die Bezeichnung auf **Outlook-e-Mails**angewendet wird, können Benutzereinschränkungen erzwingen, die der Option nicht weiterleiten entsprechen. Die Empfänger können die Nachricht zwar lesen, aber nicht weiterleiten, drucken oder den Inhalt kopieren.
+- Wenn die Bezeichnung auf **Word-, PowerPoint-und Excel-Dateien**angewendet wird, werden Benutzer aufgefordert, Zugriffsberechtigungen bestimmten Benutzern und Gruppen zuzuweisen.
+
+[Weitere Informationen](encryption-sensitivity-labels.md#let-users-assign-permissions)
+
+## <a name="august-2019"></a>August 2019
+
+### <a name="update-to-data-investigations"></a>Aktualisieren auf Daten Untersuchungen
+
+Wenn Sie eine Daten Untersuchung durchführen, können Sie jetzt Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer Organisation löschen können. Da Sie die Elemente als Beweismaterial gesammelt haben, werden Sie in den Beweis Sätzen Kopien davon erhalten, die Sie weiter untersuchen oder lediglich als Referenz beibehalten können. [Weitere Informationen](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -49,34 +63,3 @@ Wir haben zwei neue Administratorrollen veröffentlicht, um die Sicherheit und C
 Kein Bildlauf durch ein Meer von Berichten, um die gewünschten zu finden. Sie können nun nach Berichten (basierend auf ihren Titeln) suchen und nach Kategorien wie "Labels" und "Compliance" und Quellen wie "Office 365" und "Microsoft Cloud App Security" filtern.
 
 ![Bildschirmaufzeichnung der Such-und Filterschaltflächen für Berichte mit einem angewendeten Filter](media/mcc_report_filtering.png)
-
-### <a name="help-content"></a>Hilfeinhalt
-
-Ziehen Sie einen Stuhl hoch, schnappen Sie sich eine Tasse Kaffee, und lassen Sie sich von unseren neuesten Compliance-Dokumenten wegwischen.
-
-**Erweiterte eDiscovery**
-- [Überprüfen von Unterhaltungen in Advanced eDiscovery](conversation-review-sets.md) Neue
-- [Problembehandlung bei AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
-- [Laden von Nicht-Office 365-Daten in einen Prüfdateisatz](load-non-office365-data.md)
-- [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation.md)
-
-**Archivieren von drittanbieterdaten**
-- [Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten in Office 365](archive-instant-bloomberg-data.md)
-
-**Überwachung**
-- [Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden](use-sharing-auditing.md)
-- [Office 365-Verwaltungsaktivitäts-API – Referenz](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
-- [Problembehandlung bei der Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md)
-
-**Verschlüsselung**
-- [Legacyinformationen für die Office 365-Nachrichtenverschlüsselung](legacy-information-for-message-encryption.md)
-
-**Klassifizierung**
-- [Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-**Datensteuerung**
-- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
-
-**Aufsicht**
-- [Aufsichtsrichtlinien in Office 365](supervision-policies.md)

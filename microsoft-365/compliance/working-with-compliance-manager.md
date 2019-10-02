@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
+ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082034"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37350316"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -94,7 +94,7 @@ Beachten Sie beim Arbeiten mit Gruppen Folgendes:
 
 Compliance-Manager (Preview) enthält eine neue Schnittstelle zum Verwalten neuer Datenelemente, die als **Mandantenverwaltung**bezeichnet werden. Mit dieser Schnittstelle können Sie Mandantenweite Einstellungen verwalten:
 
-- **Dimensionen:** Anzeigen, hinzufügen und Anpassen von Metadaten für Vorlagen, BEWERTUNGEN und Aktionselemente, mit denen Sie benutzerdefinierte Pivots für Filter erstellen können.
+- **Dimensionen:** Zeigen Sie Metadaten für Vorlagen, BEWERTUNGEN und Aktionselemente an, mit denen Sie benutzerdefinierte Pivots für Filter erstellen können.
 - **Besitzer:** Geben Sie einen Besitzer für jedes Aktionselement an.
 - **Aktionen für Kunden:** Verwalten Sie die vollständige Liste der Aktionen, die in Compliance-Manager (Preview) enthalten sind, und aktivieren/deaktivieren Sie die Secure Score-Überwachung für Aktionen, die mit Secure Score integriert sind.
 
@@ -102,34 +102,7 @@ Wählen Sie **Mandantenverwaltung** aus, um die Verwaltungsschnittstelle zu öff
 
 ### <a name="dimensions"></a>Maße
 
-Dimensionen sind Satz von Metadaten, die Informationen zu einer Vorlage, einer Bewertung oder einem Aktionselement bereitstellen. Dimensionen verwenden das Konzept von Schlüsseln und Werten, wobei der Dimensionsschlüssel eine Eigenschaft darstellt, und Dimensionswert gültige Werte für die Eigenschaft darstellt. Beispielsweise gibt es im Compliance-Manager drei Arten von Aktionen. Sie werden durch einen Dimensionsschlüssel des **Aktionstyps** und der Dimensionswerte der Dokumentation, der **Betriebs**-und der **technischen** **Beschreibung**definiert. Sie können vorhandene Dimensionen ändern oder eigene Bemaßungen hinzufügen. Das Hinzufügen von Dimensionen ist häufig beim Importieren benutzerdefinierter Vorlagen erforderlich.
-
-#### <a name="add-a-dimension"></a>Hinzufügen einer Dimension
-
-1. Öffnen Sie die **Mandantenverwaltung** , und wählen Sie **Dimensionen**aus.
-2. Wählen Sie **+ Dimension hinzufügen**aus.
-3. Geben Sie im Feld **Schlüssel** einen eindeutigen Namen ein.
-4. Aktivieren Sie optional mehrere Werte, die gleichzeitig für dieselbe Taste verwendet werden sollen, und schieben Sie die Umschaltfläche für die Option **Mehrfachauswahl für Bemaßungen** auf ein.
-5. Wählen Sie **+ Hinzufügen** aus, um einen Wert hinzuzufügen, indem Sie einen eindeutigen Namen angeben und auf das Symbol Speichern klicken.
-6. Wiederholen Sie Schritt 5 für jeden Wert, den Sie hinzufügen möchten.
-7. Wählen Sie **Speichern** aus, um die neue Dimension zu speichern.
-
-#### <a name="edit-a-dimension"></a>Bearbeiten einer Dimension
-
-Sie können einen Dimensionsschlüssel umbenennen, aber Sie können die Werte für benutzerdefinierte Bemaßungen ändern.
-
-1. Öffnen Sie die **Mandantenverwaltung** , und wählen Sie **Dimensionen**aus.
-2. Suchen Sie die Dimension, die Sie bearbeiten möchten, wählen Sie daneben die Auslassungspunkte (...) aus, und wählen Sie **Bearbeiten**aus.
-3. Wählen Sie **+ Hinzufügen** aus, um einen Wert hinzuzufügen, indem Sie einen eindeutigen Namen angeben und auf das Symbol Speichern klicken, oder wählen Sie den Wert aus, den Sie bearbeiten oder löschen möchten, und wählen Sie **Entfernen** oder **Bearbeiten**aus.
-4. Klicken Sie auf **Speichern** , wenn Sie die Änderungen abgeschlossen haben.
-
-#### <a name="delete-a-dimension"></a>Löschen einer Dimension
-
-Sie können benutzerdefinierte Dimensionen bei Bedarf löschen.
-
-1. Öffnen Sie die **Mandantenverwaltung** , und wählen Sie **Dimensionen**aus.
-2. Suchen Sie die Dimension, die Sie löschen möchten, wählen Sie daneben die Ellipsen (...) aus, und wählen Sie dann **Löschen**aus.
-3. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **Löschen**aus.
+Dimensionen sind Satz von Metadaten, die Informationen zu einer Vorlage, einer Bewertung oder einem Aktionselement bereitstellen. Dimensionen verwenden das Konzept von Schlüsseln und Werten, wobei der Dimensionsschlüssel eine Eigenschaft darstellt, und Dimensionswert gültige Werte für die Eigenschaft darstellt. Beispielsweise gibt es im Compliance-Manager drei Arten von Aktionen. Sie werden durch einen Dimensionsschlüssel des **Aktionstyps** und der Dimensionswerte der Dokumentation, der **Betriebs**-und der **technischen** **Beschreibung**definiert. Sie können vorhandene Dimensionen bearbeiten oder löschen.
 
 ### <a name="owners"></a>Besitzer
 
@@ -354,11 +327,11 @@ Steuerelemente können im Steuerelement-Info-Dashboard angezeigt werden. Steuere
 
 ![Details zu Compliance-Manager-Microsoft-Steuerelementen](media/compliance-manager-control-details.png)
 
-Es gibt drei Arten von Steuerelementen. Zwei von Microsoft werden in den integrierten Vorlagen bereitgestellt, und die dritte wird von Kunden in benutzerdefinierten Vorlagen erstellt und verwaltet. Die drei Typen sind:
+Es gibt drei Arten von Steuerelementen:
 
-1. Von **Microsoft verwaltete Steuerelemente (mm):** Dies sind Steuerelemente, für die nur Microsoft zuständig ist. Sie werden in den in-Box-Vorlagen angezeigt und werden dem Compliance-Manager von Microsoft hinzugefügt.
-2. Vom **Kunden verwaltete Steuerelemente (cm):** Dies sind Steuerelemente, für die nur Kunden verantwortlich sind. Sie werden in den in-Box-Vorlagen angezeigt und werden dem Compliance-Manager von Microsoft oder Kunden hinzugefügt. Der Kunde kann auch von Microsoft bereitgestellte vom Kunden verwaltete Steuerelemente bearbeiten oder deaktivieren.
-3. **Shared Controls (SM):** Dies sind Steuerelemente, bei denen Verantwortung zwischen Microsoft und dem Kunden freigegeben wird. Diese werden in den in-Box-Vorlagen angezeigt und werden dem Compliance-Manager von Microsoft hinzugefügt.
+1. Von **Microsoft verwaltete Steuerelemente:** Dies sind Steuerelemente, für die nur Microsoft zuständig ist. Sie werden in den in-Box-Vorlagen angezeigt und werden dem Compliance-Manager von Microsoft hinzugefügt.
+2. Vom **Kunden verwaltete Steuerelemente:** Dies sind Steuerelemente, für die nur Kunden verantwortlich sind. Sie werden in den in-Box-Vorlagen angezeigt und werden dem Compliance-Manager von Kunden hinzugefügt.
+3. **Gemeinsame Verwaltungssteuerelemente:** Dies sind Steuerelemente, bei denen die Verantwortung von Microsoft und dem Kunden freigegeben wird. Diese werden in den in-Box-Vorlagen angezeigt und werden dem Compliance-Manager von Microsoft hinzugefügt. Der Kunde kann auch von Microsoft verwaltete Steuerelemente bearbeiten oder deaktivieren.
 
 ### <a name="actions-items"></a>Aktionen Elemente
 
@@ -423,7 +396,7 @@ Diese Registerkarte enthält Spalten, die die Steuerelemente definieren, die den
 - **controlDescription:** Kontroll Beschreibung aus Zertifizierung/Norm/Regulierung usw.
 - **controlVersion:** Optionale Steuerelement Versionsinformationen.  Beispiel: für NIST 800-53 ist der aktuelle Wert Rev 4, sodass der controlVersion 4 ist.  Für CSA ccm ist es 3.0.1.
 - **isDisabled:** Verwenden Sie true oder false, um anzugeben, ob das Steuerelement deaktiviert wurde.
-- **ControlType:** Verwenden Sie cm, um anzugeben, dass es sich um vom Kunden verwaltete Steuerelemente handelt.
+- **ControlType:** Verwenden Sie cc, um anzugeben, dass es sich um vom Kunden verwaltete Steuerelemente handelt.
 - **controlComplianceScore:** Summe der Punktzahl aller Aktionen, die dem Steuerelement zugewiesen sind.
 - **controlActionTitle:** Doppelte durch Semikolons getrennte Liste aller actionTitles für dieses Steuerelement, wie auf der Registerkarte Aktionen aufgeführt. 
 
@@ -449,7 +422,7 @@ Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enth
     Product::Office 365;;Certification::NIST CSF
     ```
 
-    Alle Dimensionen, die in einer benutzerdefinierten Vorlage verwendet werden, müssen auf der Registerkarte Dimensionen der Importdatei aufgeführt werden, auch wenn diese bereits im Dashboard Dimensionen aufgeführt sind. Wenn Sie neue Dimensionsschlüssel oder-Werte hinzufügen, müssen Sie diese zuerst dem Dimensions-Dashboard hinzufügen.
+    Alle Dimensionen, die in einer benutzerdefinierten Vorlage verwendet werden, müssen auf der Registerkarte Dimensionen der Importdatei aufgeführt werden, auch wenn diese bereits im Dashboard Dimensionen aufgeführt sind.
 - **actionScore:** Numerischer Wert für jede Aktion, der die Bewertung für diese Aktion darstellt. Es wird empfohlen, das von den integrierten Bewertungen verwendete Bewertungsmodell zu verwenden, das auf dem Zweck und der Erzwingung der einzelnen Aktionen basiert.
 - **actionOwnership:** Doppelte durch Semikolons getrennte Liste der Besitzer. Alle aufgeführten Besitzer müssen auf der Registerkarte "Besitz" enthalten sein.
 - **actionDescription:** Text jeder Aktion, die eindeutig sein muss. Dieses Feld unterstützt die unten beschriebene Absprache.
@@ -527,7 +500,7 @@ Sie können eine Vorlage erstellen, indem Sie eine vorhandene Vorlage kopieren o
 
 1. Öffnen Sie das Dashboard **Vorlagen** , und wählen Sie **+ Vorlage hinzufügen**aus.
 2. Geben Sie im Feld **Vorlagenname eingeben** einen eindeutigen Namen für die Vorlage ein.
-3. Fügen Sie eine oder mehrere Dimensionen hinzu. Selbst wenn die Dimensionen, die Sie verwenden, bereits im Dimensions-Dashboard aufgeführt sind, müssen Sie weiterhin in der Importdatei aufgeführt werden.
+3. Wählen Sie mindestens eine Dimension aus der Liste verfügbar aus.
 4. Wählen Sie **Durchsuchen** aus, um zum Speicherort der Importdatei zu navigieren, wählen Sie Sie aus, und wählen Sie **Öffnen**aus.
 5. Die Importdatei wird überprüft und gibt die Anzahl der Steuerelemente und Kontroll Familien an, die erkannt wurden. Wenn Fehler vorliegen, wird eine Verknüpfung für eine geänderte Version der Importdatei bereitgestellt, die Fehlerdetails enthält. Alle Fehler müssen aufgelöst werden, bevor die Daten importiert werden.
 6. Nachdem die Daten validiert wurden, wählen Sie **zum Dashboard hinzufügen**aus.

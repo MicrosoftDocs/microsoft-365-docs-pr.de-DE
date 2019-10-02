@@ -1,7 +1,7 @@
 ---
 title: Automatisieren der ereignisgesteuerten Aufbewahrung
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Thema wird erläutert, wie Sie Geschäftsprozessabläufe über Ereignisse mithilfe der Microsoft 365-REST-API einrichten können, um die Aufbewahrung zu automatisieren.
-ms.openlocfilehash: 3a5dc3efb88eaa4eabe1b01731d17f5ac418f99d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b687ab89e0d29910c9c0781540b6f9113e53ed6
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081075"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342968"
 ---
 # <a name="automate-event-based-retention"></a>Automatisieren der ereignisbasierten Aufbewahrung
 

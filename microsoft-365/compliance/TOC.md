@@ -2,6 +2,7 @@
 
 # Erste Schritte
 ## [Neuerungen im Compliance Center](whats-new.md)
+## [Aktuelle Updates für Compliance-Inhalte](recently-updated-topics-mcc.md)
 ## [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -104,7 +105,7 @@
 ### [Dateiplan-Manager](file-plan-manager.md)
 ### [Aufbewahrungsbezeichnungen](labels.md)
 ### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
 ### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
 ## [Freigeben von Daten](disposition-reviews.md)
@@ -125,7 +126,7 @@
 ### Dateiplan
 #### [Dateiplan-Manager](file-plan-manager.md)
 #### [Aufbewahrungsbezeichnungen](labels.md)
-#### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 #### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
 #### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
@@ -393,7 +394,7 @@
 
 ### [Schutz von Daten](gdpr-information-protection.md)
 
-### [Datenbetreffsanforderungen]()
+### [Anfragen von Datensubjekten]()
 #### [Anfragen von Datensubjekten](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)

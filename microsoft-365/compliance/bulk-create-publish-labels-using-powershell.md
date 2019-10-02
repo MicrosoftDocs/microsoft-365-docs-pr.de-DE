@@ -1,7 +1,7 @@
 ---
 title: Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
-ms.author: stephow
-author: stephow-msft
+ms.author: laurawi
+author: laurawi
 ms.date: ''
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In Office 365 können Sie Aufbewahrungsbeschriftungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Aufbewahrungsbeschriftungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security and Compliance Center verwenden, das einzelne Erstellen von Aufbewahrungsbeschriftungen ist aber sehr zeitaufwändig und ineffizient. Mithilfe des folgenden Skripts und der CSV-Dateien können Sie Aufbewahrungsbeschriftungen und Aufbewahrungsbeschriftungsrichtlinien massenerstellen und veröffentlichen. Zunächst erstellen Sie eine Liste der Aufbewahrungsbeschriftungen sowie eine Liste der Aufbewahrungsbeschriftungsrichtlinien in Excel, anschließend führen Sie eine Massenerstellung der und Aufbewahrungsbeschriftungen und Aufbewahrungsbeschriftungsrichtlinien in diesen Listen mithilfe von PowerShell aus. Auf diese Weise wird das gleichzeitige Erstellen und Veröffentlichen aller Aufbewahrungsbeschriftungen vereinfacht, die für Ihren Aufbewahrungszeitraum erforderlich sind.
-ms.openlocfilehash: 1b6ab634ee0f168392981026367a3b8b2e98f5f8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 086ae7fc941a916a92b49c4745b584dd32a7cbda
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081063"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342928"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 
