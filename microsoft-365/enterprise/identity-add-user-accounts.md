@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Fügen Sie Benutzerkonten und Gruppen entweder direkt in der Cloud oder über die Synchronisierung mit Ihrem lokalen Verzeichnis hinzu.
-ms.openlocfilehash: ce831a6866f61342f6eb93836d44637742007c03
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082015"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370222"
 ---
 # <a name="step-4-add-your-user-accounts"></a>Schritt 4: Hinzufügen von Benutzerkonten
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>Erstellen von Benutzerkonten für reine Cloudidentität
@@ -122,8 +122,8 @@ Weitere Informationen und Hinweise zur Konfiguration finden Sie unter [Azure AD 
 |![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Rückschreiben des Kennworts](password-writeback-m365-ent-test-environment.md) |
 |||
 
-Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-criteria.md#crit-identity-pw-writeback) für diesen Abschnitt ansehen.
+Als Zwischenprüfung können Sie sich die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-pw-writeback) für diesen Abschnitt ansehen.
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Verwenden von Gruppen zur Verwaltung](identity-use-group-management.md) |
+|![Schritt 5](./media/stepnumbers/Step5.png)| [Verwenden von Gruppen zur Verwaltung](identity-use-group-management.md) |

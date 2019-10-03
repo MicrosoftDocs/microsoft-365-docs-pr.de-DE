@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie können Gruppen verwenden, um die Verwaltung bestimmter administrativer Aufgaben zu automatisieren.
-ms.openlocfilehash: 01bbce00457362ed0eb089e126f0d17f31237eb4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082008"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370182"
 ---
 # <a name="step-5-use-groups-for-management"></a>Schritt 5: Verwenden von Gruppen zur Verwaltung
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Zulassen der Erstellung und Verwaltung von eigenen Gruppen für Benutzer
@@ -100,8 +100,8 @@ Die Ergebnisse dieses Abschnitts sind:
 |![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Automatisieren von Lizenzen und Gruppenmitgliedschaften](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
-Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-criteria.md#crit-identity-group-license) für diesen Abschnitt ansehen.
+Als Zwischenprüfung können Sie sich die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-group-license) für diesen Abschnitt ansehen.
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Konfigurieren der Identitätsgovernance](identity-configure-identity-governance.md) |
+|![Schritt 6](./media/stepnumbers/Step6.png)| [Konfigurieren der Identitätsgovernance](identity-configure-identity-governance.md) |

@@ -3,7 +3,7 @@ title: 'Schritt 3: Vermeiden von Spitzkehren für Netzwerke'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und entfernen Sie Spitzkehren für Netzwerke für eine bessere Leistung.
-ms.openlocfilehash: eb233c02d1d4c0198c11d520acca1d680df78a82
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073285"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370332"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Schritt 3: Vermeiden von Spitzkehren für Netzwerke
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1: Vernetzung](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Eine [Spitzkehre für Netzwerke](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) tritt ein, wenn Datenverkehr für ein Ziel zunächst an ein anderes Zwischenziel geleitet wird, wie einen lokalen Sicherheitsstapel, einen Cloudzugriffsbroker oder ein cloudbasiertes Webgateway. Eine Spitzkehre für Netzwerke kann auch durch fehlerhaftes Routing im Internet aufgrund von Netzwerkdienstanbietern verursacht werden. Eine Spitzkehre sorgt für Latenz und kann Datenverkehr potenziell an ein geografisch entferntes Ziel umleiten.
+Eine [Netzwerkhaarnadel](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) liegt vor, wenn der an ein Ziel gerichtete Datenverkehr zuerst an einen weiteren Zwischenstandort umgeleitet wird, z. B. an einen lokalen Sicherheitsstapel, einen Cloudzugriffsbroker oder ein cloudbasiertes Webgateway. Hier ein Beispiel:
+
+![Beispiel für eine Netzwerkhaarnadel](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+
+Eine Netzwerkhaarnadel kann auch durch unzureichendes Routing im Internet durch Netzwerkdienstanbieter verursacht werden. 
+
+Eine Haarnadel fügt Latenz hinzu und kann potenziell den Datenverkehr an einen geografisch entfernten Standort umleiten.
 
 Überprüfen Sie zum Optimieren der Leistung für den Datenverkehr zu cloudbasierten Microsoft 365-Diensten, ob der ISP, der die lokale Internetverbindung bereitstellt, über eine direkte Peering-Beziehung mit dem Microsoft Global Network in der Nähe dieses Ziels verfügt. Diese Verbindungen haben keine Spitzkehren.
 
@@ -38,10 +44,12 @@ Wenn Sie cloudbasierte Netzwerk- oder Sicherheitsdienste für Microsoft 365-Date
 
 Wann immer möglich, konfigurieren Sie Ihre Edge-Router, um vertrauenswürdigen Microsoft 365-Datenverkehr direkt zu senden, statt ihn über eine Drittanbietercloud oder einen cloudbasierten Netzwerksicherheitsanbieterweiterzuleiten oder zu tunneln, der Ihren Internetdatenverkehr verarbeitet. 
 
+![Beispiel für die Umgehung einer Netzwerkhaarnadel](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
 Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-criteria.md#crit-networking-step3) für diesen Schritt betrachten.
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Konfigurieren von Datenverkehrumgehungen](networking-configure-proxies-firewalls.md)|
+|![Schritt 4](./media/stepnumbers/Step4.png)|[Konfigurieren von Datenverkehrumgehungen](networking-configure-proxies-firewalls.md)|

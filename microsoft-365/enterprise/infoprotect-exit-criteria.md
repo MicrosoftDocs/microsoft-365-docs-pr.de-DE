@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informieren Sie sich über die Kriterien für Information Protection-basierte Dienste und -Infrastruktur, um sicherzustellen, dass Ihre Konfiguration die Anforderungen von Microsoft 365Enterprise erfüllt.
-ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: f4896baeb4c18fc1eabac10b15f3ad8e150ab260
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047238"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370132"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Beendigungskriterien für die Information Protection-Infrastruktur
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Stellen Sie sicher, dass Ihre Information Protection-Infrastruktur die folgenden erforderlichen Kriterien erfüllt, und dass Sie die optionalen Kriterien berücksichtigt haben.
 

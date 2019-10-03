@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für identitätsbasierte Dienste und Infrastrukturen erfüllt.
-ms.openlocfilehash: 880bfa2b71158a2fa5c64fb09af2e8a34428a7a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4a93d0a9fb497daccba4fd2641fd5faf9c4fb384
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071684"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370202"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2: Beendigungskriterien für die Identitätsinfrastruktur
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Stellen Sie sicher, dass Ihre Identitätsinfrastruktur die folgenden erforderlichen Kriterien erfüllt, und dass Sie die optionalen Kriterien berücksichtigt haben.
 
@@ -292,5 +292,5 @@ Ihre Identitätsinfrastruktur in der Microsoft 365-Cloud verwendet starke Authen
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, ist die nächste Phase [Windows 10 Enterprise](windows10-infrastructure.md). |
+|![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, ist die nächste Phase [Windows 10 Enterprise](windows10-infrastructure.md). |
 

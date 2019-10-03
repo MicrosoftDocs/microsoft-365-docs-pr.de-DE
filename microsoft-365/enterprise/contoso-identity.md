@@ -3,7 +3,7 @@ title: Identität für die Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
-ms.openlocfilehash: 5c78e8cc9235eb2ca5de091c05d1883ed6cca1b4
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a61ce89c3d0069edffccc12a6ed2a4c578e6968a
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369606"
+ms.locfileid: "37370252"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
 
@@ -30,12 +30,10 @@ Microsoft bietet eine IDaaS (Identity as a Service, Identität als Dienst) in se
 
 Contoso verwendet eine einzelne Active Directory Domain Services(AD DS)-Gesamtstruktur für „contoso.com“ mit sieben Unterdomänen, eine für jede Region der Welt. Die Zentrale, die Regionalstellen und die Zweigstellen enthalten Domänencontroller für die lokale Authentifizierung und Autorisierung.
 
-Abbildung 1 zeigt die Contoso-Gesamtstruktur mit regionalen Domänen für die unterschiedlichen Regionen, die Regionalstellen enthalten.
+Hier sehen Sie die Contoso-Gesamtstruktur mit regionalen Domänen für die unterschiedlichen Regionen, die regionale Hubs enthalten.
 
 ![Gesamtstruktur und Domänen von Contoso weltweit](./media/contoso-identity/contoso-identity-fig1.png)
  
-**Abbildung 1: Gesamtstruktur und Domänen von Contoso weltweit**
-
 Contoso wollte die Konten und Gruppen in der „contoso.com“-Gesamtstruktur zur Authentifizierung und Autorisierung seiner Microsoft 365-Arbeitslasten und -Dienste verwenden.
 
 ## <a name="contosos-federated-authentication-infrastructure"></a>Contosos Infrastruktur der Verbundauthentifizierung
@@ -45,11 +43,9 @@ Contoso lässt Folgendes zu:
 - Kunden können ihre Microsoft-, Facebook- oder Google Mail-Konten verwenden, um sich bei ihren öffentlichen Websites anzumelden.
 - Lieferanten und Partner können ihre LinkedIn-, Salesforce- oder Google Mail-Konten verwenden, um sich beim Partnerextranet anzumelden.
 
-Abbildung 2 zeigt die Contoso-DMZ mit einer öffentlichen Website, einem Partnerextranet und einer Reihe von Active Directory Federation Services-Servern (AD FS). Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
+Hier sehen Sie die Contoso-DMZ mit einer öffentlichen Website, einem Partnerextranet und einer Reihe von Active Directory-Verbunddienste-Servern (AD FS). Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
 
-![Contosos Unterstützung für die Verbundauthentifizierung für Kunden und Partner](./media/contoso-identity/contoso-identity-fig2.png)
-
-**Abbildung 2: Contosos Unterstützung für die Verbundauthentifizierung für Kunden und Partner**
+![Unterstützung von Contoso für die Verbundauthentifizierung für Kunden und Partner](./media/contoso-identity/contoso-identity-fig2.png)
  
 AD FS-Server in der DMZ erleichtern das Authentifizieren von Kundenanmeldeinformationen durch den Identitätsanbieter für Zugriff auf die öffentliche Website und Partneranmeldeinformationen für Zugriff auf das Partnerextranet.
 
@@ -61,13 +57,12 @@ Contoso wollte seine lokale AD DS-Gesamtstruktur für die Authentifizierung bei 
 
 Bei der Kennwort-Hash-Synchronisierung wird die lokale AD DS-Gesamtstruktur mit dem Azure AD-Mandanten des Microsoft 365 Enterprise-Abonnements synchronisiert, wobei Benutzer- und Gruppenkonten und eine Hash-Version von Benutzerkontokennwörtern kopiert werden. 
 
-Um die laufende Verzeichnissynchronisierung durchzuführen, hat Contoso das Azure AD Connect-Tool auf einem Server im Rechenzentrum in Paris bereitgestellt. Abbildung 3 zeigt den Server mit Azure AD Connect, das die AD DS-Gesamtstruktur von Contoso auf Änderungen abruft und diese Änderungen dann mit dem Azure AD-Mandanten synchronisiert.
+Um die laufende Verzeichnissynchronisierung durchzuführen, hat Contoso das Azure AD Connect-Tool auf einem Server im Rechenzentrum in Paris bereitgestellt. 
+
+Hier sehen Sie den Server mit Azure AD Connect, das die AD DS-Gesamtstruktur von Contoso auf Änderungen abruft und diese Änderungen dann mit dem Azure AD-Mandanten synchronisiert.
 
 ![Infrastruktur für die PHS-Verzeichnissynchronisierung von Contoso](./media/contoso-identity/contoso-identity-fig4.png)
  
-**Abbildung 3: Infrastruktur für die PHS-Verzeichnissynchronisierung von Contoso**
-
-
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Richtlinien für bedingten Zugriff für Identitäts- und Gerätezugriff
 
 Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zugriff](identity-access-policies.md) für drei Schutzebenen erstellt:
@@ -76,12 +71,10 @@ Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zug
 - **Vertraulicher** Schutz gilt für die Geschäftsleitung und Führungskräfte
 - **Hochgradig regulierter** Schutz gilt für bestimmte Benutzer der Finanz-, Rechts- und Forschungsabteilung, die Zugriff auf hochgradig regulierte Daten haben.
 
-Abbildung 4 zeigt die resultierenden identitäts- und gerätebasierten Richtlinien für bedingten Zugriff.
+Hier sehen Sie die resultierenden identitäts- und gerätebasierten Richtlinien für bedingten Zugriff von Contoso.
 
 ![Identitäts- und gerätebasierte Richtlinien für bedingten Zugriff](./media/contoso-identity/contoso-identity-fig5.png)
  
-**Abbildung 4: Identitäts- und gerätebasierte Richtlinien für bedingten Zugriff**
-
 ## <a name="next-step"></a>Nächster Schritt
 
 [Erfahren Sie](contoso-win10.md), wie Contoso seine System Center Configuration Manager-Infrastruktur verwendet, um Windows 10 Enterprise über die Organisation hinweg bereitzustellen und auf dem neuesten Stand zu halten.

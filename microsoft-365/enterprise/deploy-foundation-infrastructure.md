@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050306"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370352"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
 
@@ -28,12 +28,12 @@ Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese
 
 | | Phase | Ergebnisse |
 |:-------|:-----|:-----|
-|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Netzwerke](networking-infrastructure.md)| Ihr Netzwerk ist für den Zugriff auf die cloudbasiert Dienste von Microsoft 365 optimiert. |
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identität](identity-infrastructure.md)| Ihre Admin-Konten sind geschützt, Ihre Benutzer und Gruppen sind synchronisiert, und Ihre Benutzerauthentifizierung ist stark. |
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Ihre vorhandenen Windows-basierten Computer können auf Windows 10 Enterprise aktualisiert werden, und neue Geräte sind mit Windows 10 Enterprise ausgestattet. |
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Ihre vorhandenen Benutzer von Microsoft Office können ein Upgrade auf Office 365 ProPlus durchführen. |
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Verwaltung mobiler Geräte](mobility-infrastructure.md)| Ihre Geräte können registriert und verwaltet werden. |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information Protection](infoprotect-infrastructure.md)| Office 365-Sicherheitsfunktionen sind aktiviert, und Ihre Bezeichnungen und Richtlinien sind bereit, Dokumente und E-Mail zu schützen. |
+|![Phase 1: Vernetzung](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Netzwerke](networking-infrastructure.md)| Ihr Netzwerk ist für den Zugriff auf die cloudbasiert Dienste von Microsoft 365 optimiert. |
+|![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identität](identity-infrastructure.md)| Ihre Admin-Konten sind geschützt, Ihre Benutzer und Gruppen sind synchronisiert, und Ihre Benutzerauthentifizierung ist stark. |
+|![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Ihre vorhandenen Windows-basierten Computer können auf Windows 10 Enterprise aktualisiert werden, und neue Geräte sind mit Windows 10 Enterprise ausgestattet. |
+|![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Ihre vorhandenen Benutzer von Microsoft Office können ein Upgrade auf Office 365 ProPlus durchführen. |
+|![Phase 5: Verwaltung mobiler Geräte](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Verwaltung mobiler Geräte](mobility-infrastructure.md)| Ihre Geräte können registriert und verwaltet werden. |
+|![Phase 6: Informationsschutz](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Schutz von Daten](infoprotect-infrastructure.md)| Office 365-Sicherheitsfunktionen sind aktiviert, und Ihre Bezeichnungen und Richtlinien sind bereit, Dokumente und E-Mail zu schützen. |
 
 Die Phasen beginnen mit den grundlegendsten Elementen (Netzwerk und Identität), und erstellen dann Schichten von Infrastruktur-Einstellungen und Gruppen zu:
 
@@ -56,7 +56,7 @@ Um zu erfahren, wie der Inhalt strukturiert ist, schauen Sie sich dieses kurze V
 
 Hier ist die Foundation-Infrastruktur im gesamten Microsoft 365 Enterprise Bereitstellungshandbuch:
 
-![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Die Foundation-Infrastruktur im gesamten Microsoft 365 Enterprise Bereitstellungshandbuch](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>Auf einen Blick
 

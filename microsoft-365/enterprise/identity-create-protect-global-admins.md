@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Ihre globalen Administratorkonten benötigen eine spezielle Behandlung, um sie vor der Kompromittierung von Anmeldeinformationen zu schützen.
-ms.openlocfilehash: a32781686cd972ca96f6bb08f31c15ede016c4cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082011"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370212"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Schritt 1: Erstellen und Schützen Ihrer globalen Administratorkonten
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>Schützen von globalen Administratorkonten
@@ -110,5 +110,5 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Schützen von Kennwörtern](identity-secure-your-passwords.md) |
+|![Schritt 2](./media/stepnumbers/Step2.png)| [Schützen von Kennwörtern](identity-secure-your-passwords.md) |
 

@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Bereitstellen von Office 365 Data Loss Prevention in Microsoft 365.
-ms.openlocfilehash: dbe88885812e51b0daefa89dae123af5907c60a8
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 43ebfb39202e407fe6dc7bb4c8e0fe8f906f7a6d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047248"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370162"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>Schritt 5: Konfigurieren von Office 365 Data Loss Prevention
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Mithilfe von Data Loss Prevention-Richtlinien (DLP) im Office 365 Security & Compliance Center können Sie vertrauliche Informationen in Microsoft 365 identifizieren, überwachen und automatisch schützen. Mit DLP-Richtlinien können Sie folgende Aktionen ausführen:
 
@@ -58,6 +58,6 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[Konfigurieren der E-Mail-Verschlüsselung](infoprotect-email-encryption.md)|
+|![Schritt 6](./media/stepnumbers/Step6.png)|[Konfigurieren der E-Mail-Verschlüsselung](infoprotect-email-encryption.md)|
 
 

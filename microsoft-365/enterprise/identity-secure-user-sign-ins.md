@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie können die Benutzeranmeldungen auf Windows-Geräten und auf Microsoft 365 sicherer machen.
-ms.openlocfilehash: edf51b344ed8f9c8e13587cc2ccf0ba1ed081da6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082010"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370192"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Schritt 3: Absichern und Verwalten von Benutzeranmeldungen
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -88,8 +88,8 @@ In diesem Schritt haben Sie Azure AD Identity Protection aktiviert und verwenden
 |![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
-Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-criteria.md#crit-identity-ident-prot) für diesen Abschnitt ansehen.
+Als Zwischenprüfung können Sie sich die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-ident-prot) für diesen Abschnitt ansehen.
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Hinzufügen von Benutzerkonten](identity-add-user-accounts.md) |
+|![Schritt 4](./media/stepnumbers/Step4.png)| [Hinzufügen von Benutzerkonten](identity-add-user-accounts.md) |

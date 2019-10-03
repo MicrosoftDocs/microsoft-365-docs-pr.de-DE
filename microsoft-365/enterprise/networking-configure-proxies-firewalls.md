@@ -3,7 +3,7 @@ title: 'Schritt 4: Konfigurieren von Datenverkehrumgehungen'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren von Webbrowsern und Edge-Geräten für Datenverkehrumgehungen zu vertrauenswürdigen Office 365-Speicherorten.
-ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
-ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
+ms.openlocfilehash: 32aa2216856d5a519fddb55701be745a9dacbd87
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36999039"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370142"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Schritt 4: Konfigurieren von Datenverkehrumgehungen
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1: Vernetzung](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Da allgemeiner Internetdatenverkehr riskant sein kann, erzwingen typische Organisationsnetzwerke Sicherheit über Edgegeräte wie Proxyserver, SSL Break and Inspect und Paketüberprüfungsgeräte sowie Systeme zur Verhinderung von Datenverlust. Informieren Sie sich unter „Verwenden von Netzwerkgeräten oder -lösungen von Drittanbietern für Office 365-Datenverkehr“ über einige der Probleme mit Netzwerk-Abfanggeräten.
+Da allgemeiner Internetdatenverkehr riskant sein kann, erzwingen typische Organisationsnetzwerke Sicherheit über Edge-Geräte wie Proxyserver, SSL Break and Inspect, Paketüberprüfungsgeräte sowie Systeme zur Verhinderung von Datenverlust. Unter [Verwenden von Netzwerkgeräten oder -lösungen von Drittanbietern für Office 365-Datenverkehr](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365) finden Sie einige Probleme mit Netzwerk-Abfanggeräten.
 
 Die DNS-Domänennamen und IP-Adressen, die von cloudbasierten Microsoft 365-Diensten verwendet werden, sind bekannt. Zudem sind Datenverkehr und Dienste selbst durch viele Sicherheitsfeatures geschützt. Durch diese Sicherheit und diesen Schutz müssen Ihre Edge-Geräte dies nicht duplizieren. Zwischenziele und doppelte Sicherheitsverarbeitung für Microsoft 365-Datenverkehr können die Leistung erheblich senken.
 
@@ -41,10 +41,14 @@ Sie finden die DNS-Domänennamen und IP-Adressbereiche unter [ https://aka.ms/o3
 Microsoft empfiehlt Folgendes:
 
 - Verwenden Sie Proxy Automatic Configuration(PAC)-Skripts für die Internetbrowser Ihrer lokalen Computer, um Ihre Proxyserver für die DNS-Domänennamen cloudbasierter Microsoft 365-Dienste zu umgehen. Das aktuelle Microsoft 365-PAC-Skript finden Sie im [Get-Pacfile-PowerShell-Skript](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
-- 
+
 - Analysieren Sie Ihre Edge-Geräte, um die doppelte Verarbeitung zu bestimmen, und konfigurieren Sie sie dann zum Weiterleiten von Datenverkehr an Optimieren- und Zulassen-Endpunkte ohne Verarbeitung. Dies wird als Umgehung des Datenverkehrs bezeichnet. 
 
-Edge-Geräte umfassen Firewalls, SSL Break and Inspect, Paketüberprüfungsgeräte und Systeme zur Verhinderung von Datenverlust. Um die Konfiguration der Edge-Geräte zu konfigurieren und zu aktualisieren, können Sie ein Skript oder einen REST-Aufruf verwenden, um eine strukturierte Liste von Endpunkten aus dem Office 365-Endpunkt-Webdienst zu nutzen. Weitere Informationen finden Sie unter [Office 365 – IP-Adress- und URL-Webdienst](https://docs.microsoft.com/de-DE/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file).
+Hier sind die Empfehlungen in Ihrer Netzwerkinfrastruktur.
+
+![Empfehlungen zur Optimierung des lokalen Datenverkehrs](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+
+Zu den Edgegeräten gehören Firewalls, SSL Break and Inspect, Paketüberprüfungsgeräte sowie Systeme zur Verhinderung von Datenverlust. Zum Konfigurieren und Aktualisieren der Konfigurationen von Edgegeräten können Sie ein Skript oder einen REST-Aufruf verwenden, um eine strukturierte Liste der Endpunkte vom Office 365-Endpunkte-Webdienst zu verwenden. Weitere Informationen finden Sie unter [Office 365-IP-Adresse und -URL-Webdienst](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 Sie umgehen nur die normale Proxy- und Netzwerksicherheitsverarbeitung für Datenverkehr zu Microsoft 365-Endpunkten der Kategorie „Optimieren“ und „Zulassen“. Der andere allgemeine Internetdatenverkehr wird weitergeleitet und unterliegt Ihrer vorhandenen Netzwerksicherheitsverarbeitung.
 
@@ -55,7 +59,7 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-crit
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)|[Optimieren der Leistung des Clients und des Office 365-Diensts](networking-optimize-tcp-performance.md) |
+|![Schritt 5](./media/stepnumbers/Step5.png)|[Optimieren der Leistung des Clients und des Office 365-Diensts](networking-optimize-tcp-performance.md) |
 
 
 

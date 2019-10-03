@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren der erhöhten Sicherheit für Microsoft 365
-ms.openlocfilehash: b51cb38a386292b79fdfe264c9d8a86973aa6325
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047278"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370172"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Um sicherzustellen, dass Ihr Microsoft-365-Abonnement und die zugehörigen Daten vor böswilligen Angriffen geschützt sind, konfigurieren Sie Folgendes:
 
@@ -57,6 +57,6 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Konfigurieren der Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Schritt 4](./media/stepnumbers/Step4.png)|[Konfigurieren der Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 

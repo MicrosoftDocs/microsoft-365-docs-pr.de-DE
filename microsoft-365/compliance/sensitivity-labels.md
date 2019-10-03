@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Vertraulichkeitsbezeichnungen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: d732303db1c2b138349a88fde45bd2aefb745c89
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: c0f7438d0ee8de873122cdf9bf08878a7edebaf6
+ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148519"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37378617"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -38,7 +38,7 @@ Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
 
 - **Schützen Sie Inhalte in Drittanbieter-Apps und -Diensten** mithilfe von Microsoft Cloud App Security. Mit Cloud App Security (CAS) können Sie Inhalte in Drittanbieter-Apps und -Diensten wie z. B. SalesForce, Box oder DropBox erkennen, klassifizieren, beschriften und schützen, auch wenn die Drittanbieter-App oder der Dienst Vertraulichkeitsbezeichnungen nicht liest oder unterstützt.
 
-- **Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste**. Mit dem Microsoft Information Protection SDK können Drittanbieter-Apps auf [diesen Plattformen](https://docs.microsoft.com/de-DE/information-protection/develop/overview#microsoft-information-protection-sdk) Vertraulichkeitsbezeichnungen lesen und Schutzeinstellungen anwenden.
+- **Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste.** Mit dem Microsoft Information Protection SDK können Drittanbieter-Apps auf [diesen Plattformen](https://docs.microsoft.com/de-DE/information-protection/develop/overview#microsoft-information-protection-sdk) Vertraulichkeitsbezeichnungen lesen und Schutzeinstellungen anwenden.
 
 - **Klassifizieren von Inhalten ohne Verwendung von Schutzeinstellungen.** Sie können Inhalten auch einfach eine Klassifizierung zuweisen (wie einen Aufkleber), die erhalten bleibt und mit dem Inhalt bewegt wird, wenn er verwendet und freigegeben wird. Mit dieser Klassifizierung können Sie Verwendungsberichte generieren und Aktivitätsdaten für Ihre vertraulichen Inhalte anzeigen. Basierend auf diesen Informationen können Sie später jederzeit auswählen, dass Schutzeinstellungen angewendet werden sollen.
     
@@ -47,6 +47,8 @@ In all diesen Fällen können Vertraulichkeitsbezeichnungen in Office 365 Ihnen 
 Sie erstellen Vertraulichkeitsbezeichnungen im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security & Compliance Center unter **Klassifizierung** > **Vertraulichkeitsbezeichnungen**. Diese Vertraulichkeitsbezeichnungen können von Azure Information Protection, Office-Apps und Office 365-Diensten verwendet werden.
 
 Azure Information Protection-Kunden können Ihre Azure Information Protection-Bezeichnungen in den anderen Admin Centern verwenden, damit Ihre Bezeichnungen mit dem Azure-Portal synchronisiert werden, falls Sie eine zusätzliche oder erweiterte Konfiguration ausgewählt haben. **Azure Information Protection-Bezeichnungen und Office 365-Vertraulichkeitsbezeichnungen sind miteinander vollständig kompatibel.** Dies bedeutet z. B., wenn Sie Inhalte mit Azure Information Protection gekennzeichnet haben, müssen Sie Ihre Inhalte nicht klassifizieren oder neu bezeichnen.
+
+>Hinweis: Vertraulichkeitsbezeichnungen werden nur für Mandanten in der globalen (öffentlichen) Cloud unterstützt. Vertraulichkeitsbezeichnungen werden nicht für Mandanten in anderen Clouds (z. B. [nationalen Clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)) unterstützt.
 
 ## <a name="what-a-sensitivity-label-is"></a>Bedeutung von Vertraulichkeitsbezeichnungen
 
@@ -206,6 +208,7 @@ In Office-Apps auf Android-Geräten werden Vertraulichkeitsbezeichnungen auf der
 
 - [Anwenden von Vertraulichkeits-Beschriftungen auf Ihre Dokumente und E-Mails in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 - [Bekannte Probleme beim Anwenden von Vertraulichkeits-Beschriftungen auf Ihren Office-Dateien](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Funktionsweise von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>Funktionsweise von Vertraulichkeitsbezeichnungen zusammen mit vorhandenen Azure Information Protection-Bezeichnungen
 
