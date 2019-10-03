@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Genau wie Funktionen im Microsoft 365 Compliance Center entwickeln sich unsere Hilfeinhalte ständig weiter. Wir erstellen ständig neue Artikel, aktualisieren vorhandene und nehmen Änderungen basierend auf Ihrem Feedback vor. Finden Sie heraus, was in diesem Monat neu und aktualisiert wurde.
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369650"
+ms.locfileid: "37376130"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aktuelle Updates für den Microsoft 365-Kompatibilitäts Inhalt
 
@@ -34,9 +34,9 @@ Genau wie Funktionen im Microsoft 365 Compliance Center entwickeln sich unsere H
 
 ### <a name="ediscovery"></a>eDiscovery
 
-[Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme](ediscovery-troubleshooting-common-issues.md) (neu)<br> Enthält grundlegende Schritte zur Problembehandlung, die Sie ausführen können, um Probleme zu identifizieren und zu beheben, die während einer eDiscovery-Suche oder an anderer Stelle im eDiscovery-Prozess auftreten können.
+[Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme](ediscovery-troubleshooting-common-issues.md) (neu)<br> Enthält grundlegende Schritte zur Problembehandlung, die Sie ausführen können, um Probleme zu identifizieren und zu beheben, die während einer eDiscovery-Suche oder an einer anderen Stelle im eDiscovery-Prozess auftreten können.
 
-###<a name="supervision"></a>Aufsicht
+### <a name="supervision"></a>Aufsicht
 
 [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md) (aktualisiert)<br>Details zur Verwendung von Outlook zum Durchführen von Besprechungen wurden entfernt. Verwenden Sie stattdessen die Überprüfungs-und Markierungsoptionen, die in der Aufsichts Benutzeroberfläche zur Verfügung stehen.
 

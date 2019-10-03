@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289397"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370092"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>Schritt 4: Monitorgerätestatus und -Compliance
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics verwendet Diagnosedaten, um aussagekräftige, leicht umsetzbare Informationen bereitzustellen, die Ihnen umfassende Einblicke in die Betriebseffizienz und die Integrität von Windows 10-Geräten in Ihrer Umgebung zu ermöglichen.
 
@@ -27,10 +27,10 @@ Die Geräteintegritätsfunktion von Windows Analytics bietet proaktive Einblicke
 
 Weitere Informationen zu ersten Schritten und zur Verwendung von Device Health finden Sie unter [Überwachen der Integrität von Geräten mit Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor).
 
-Als Zwischenprüfung können Sie die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step4) für diesen Schritt betrachten.
+Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step4) für diesen Schritt anschauen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Bereitstellen von Sicherheitsmerkmalen von Windows 10 Enterprise](windows10-enable-security-features.md) |
+|![Schritt 5](./media/stepnumbers/Step5.png)| [Bereitstellen von Sicherheitsmerkmalen von Windows 10 Enterprise](windows10-enable-security-features.md) |

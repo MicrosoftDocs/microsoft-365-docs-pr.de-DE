@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
-ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
+ms.openlocfilehash: 3e37cebc1721a1bdcce0a30223a8beeb38868e82
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35595301"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370082"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
 *Dieser Abschnitt gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Der einfachste Weg zum Upgrade von PCs, auf denen Windows 7 oder Windows 8.1 auf Windows 10 ausgeführt wird, ist ein direktes Upgrade. Sie können eine Tasksequenz von System Center Configuration Manager (Configuration Manager) verwenden, um den Prozess vollständig zu automatisieren. 
 
@@ -43,7 +43,7 @@ Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10
 
 Überprüfen Sie diese Anforderungen vor dem Starten der Windows 10-Bereitstellung:
 
-- Windows-Editionen, die **für ein Upgrade berechtigt** sind: auf Ihren Geräten müssen Editionen von Windows 7 oder Windows 8.1 ausgeführt werden, die für ein Upgrade auf Windows 10 Enterprise geeignet sind. Eine Liste der unterstützten Editionen finden Sie unter [Windows 10 Upgrade Paths](https://aka.ms/win10upgradepaths). 
+- **Windows-Editionen, die für ein Upgrade berechtigt** sind: auf Ihren Geräten müssen Editionen von Windows 7 oder Windows 8.1 ausgeführt werden, die für ein Upgrade auf Windows 10 Enterprise geeignet sind. Eine Liste der unterstützten Editionen finden Sie unter [Windows 10 Upgrade Paths](https://aka.ms/win10upgradepaths). 
 - **Unterstützte Geräte** – die meisten Computer, die mit Windows 8.1 kompatibel sind, sind mit Windows 10 kompatibel. Möglicherweise müssen Sie in Windows 10 aktualisierte Treiber installieren, damit Ihre Geräte ordnungsgemäß funktionieren. Weitere Informationen finden Sie unter [Windows 10 Specifications](https://aka.ms/windows10specifications) .
 - **Vorbereitung der Bereitstellung** – stellen Sie sicher, dass Sie über Folgendes verfügen, bevor Sie mit der Konfiguration der Bereitstellung beginnen:
     - Windows 10-Installationsmedien: das Installationsmedium muss sich auf einem separaten Laufwerk befinden, wobei die ISO-Daten bereits eingebunden sind. Sie können die ISO von [MSDN-Abonnenten Downloads](https://aka.ms/msdn-subscriber-downloads) oder aus dem [Volume Licensing Service Center](https://aka.ms/mvlsc)abrufen.
@@ -141,7 +141,7 @@ Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Schritt 3](./media/stepnumbers/Step3.png)| [Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot](windows10-deploy-autopilot.md) |
 
 
 

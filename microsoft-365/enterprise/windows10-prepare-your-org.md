@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071774"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370242"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Schritt 1: Vorbereiten Ihrer Organisation auf Windows 10 Enterprise
 
 *Dieser Abschnitt gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Beachten Sie vor dem Upgrade Ihrer Geräte auf Windows 10 Enterprise Folgendes:
 
@@ -62,7 +62,7 @@ Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade](windows10-deploy-inplaceupgrade.md) |
+|![Schritt 2](./media/stepnumbers/Step2.png)| [Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade](windows10-deploy-inplaceupgrade.md) |
 
 
 

@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289255"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370282"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Schritt 3: Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot
 
 *Dieser Abschnitt gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Nutzen Sie zur Anpassung von neuen, vorkonfigurierten Windows 10-PCs den Windows Autopilot, um für Ihre Organisation ein neues, bereits konfiguriertes System mit Apps und Einstellungen bereitzustellen. Es müssen keine Images implementiert, keine Treiber installiert und keine Infrastruktur verwaltet werden. Die Benutzer können den Bereitstellungsprozess unabhängig durchlaufen, ohne ihren IT-Administrator konsultieren zu müssen.
 
@@ -98,13 +98,13 @@ Gehen Sie folgendermaßen vor, um den Synchronisierungsstatus des Geräts mit Az
 
 Wenn bei der Verwendung von Windows 10 in einer Unternehmensumgebung Probleme auftreten, konsultieren Sie die [wichtigsten Microsoft-Support-Lösungen für am häufigsten auftretenden Probleme](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Diese Ressourcen umfassen KB-Artikel, Updates und Bibliotheksartikel.
 
-Als Zwischenprüfung können Sie die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step3) für diesen Schritt betrachten.
+Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-criteria.md#crit-windows10-step3) für diesen Schritt anschauen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Überwachen der Geräteintegrität und der Compliance](windows10-enable-windows-analytics.md) |
+|![Schritt 4](./media/stepnumbers/Step4.png)| [Überwachen der Geräteintegrität und der Compliance](windows10-enable-windows-analytics.md) |
 
 
 

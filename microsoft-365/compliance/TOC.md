@@ -31,6 +31,7 @@
 ### [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md)
 ### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
+### [Vertraulichkeits Bezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)
 
 ## [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ### [DLP und Microsoft Teams](dlp-microsoft-teams.md)
@@ -394,7 +395,7 @@
 
 ### [Schutz von Daten](gdpr-information-protection.md)
 
-### [Anfragen von Datensubjekten]()
+### [Datenbetreffsanforderungen]()
 #### [Anfragen von Datensubjekten](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)

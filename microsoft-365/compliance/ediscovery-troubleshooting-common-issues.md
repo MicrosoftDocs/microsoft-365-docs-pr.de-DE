@@ -1,5 +1,5 @@
 ---
-title: Troublshooting häufige eDiscovery-Probleme
+title: Problembehandlung bei gängigen eDiscovery-Problemen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,33 +16,34 @@ search.appverid:
 ms.assetid: ''
 description: Untersuchen, beheben und beheben Sie häufige Probleme in Office 365 eDiscovery.
 siblings_only: true
-ms.openlocfilehash: db355067aa4e3fc41541e6414b59c92aaac1b5b3
-ms.sourcegitcommit: 75c8f89049081f08852699c8d51c3a07b12165da
+ms.openlocfilehash: 0d411976ecf6adba9df1f75eb8a45409647b3e1a
+ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37207292"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37378637"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme
 
-In diesem Thema werden grundlegende Schritte zur Problembehandlung beschrieben, die Sie zum Identifizieren und Beheben von Problemen durchführen können, die während einer eDiscovery-Suche oder an einer anderen Stelle im eDiscovery-Prozess auftreten können. Zum Beheben einiger dieser Szenarien benötigen Sie Hilfe von den Kunden Support Diensten (CSS). Informationen zum Zeitpunkt der Kontaktaufnahme mit CSS sind in den Lösungsschritten enthalten.
+In diesem Thema werden grundlegende Schritte zur Problembehandlung beschrieben, die Sie zum Identifizieren und Beheben von Problemen durchführen können, die während einer eDiscovery-Suche oder an einer anderen Stelle im eDiscovery-Prozess auftreten können. Das Auflösen einiger dieser Szenarien erfordert Unterstützung durch den Microsoft-Support. Die Lösungsschritte enthalten Informationen zum Zeitpunkt der Kontaktaufnahme mit dem Microsoft-Support.
 
-## <a name="errorissue-ambiguous-location"></a>Fehler/Problem-mehrdeutiger Speicherort
+## <a name="errorissue-ambiguous-location"></a>Fehler/Problem: nicht eindeutiger Speicherort
 
-Dieser Fehler wird angezeigt "die kompatibilitätssuche enthält den folgenden ungültigen `(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous"` Speicherort, wenn Sie versucht haben, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es gibt doppelte oder widersprüchliche Objekte mit derselben Benutzer-ID im Exchange Online Schutz (EoP). Directory.
+Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es gibt doppelte oder widersprüchliche Objekte mit derselben UserID im Exchange Online Protection-Verzeichnis (EoP), wird dieser Fehler `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`angezeigt:. 
 
 ### <a name="resolution"></a>Auflösung
 
 Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-ID.
 
-1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) her.
+1. Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)her.
+
 2. Rufen Sie alle Instanzen des Benutzernamens ab, und geben Sie Folgendes ein:
 
-```powershell
-Get-Recipient <username>
-```
+    ```powershell
+    Get-Recipient <username>
+    ```
 
-Die Ausgabe für "useralias@contoso.com" kann
+Die Ausgabe für "useralias@contoso.com" würde etwa wie folgt aussehen:
 
 > 
 > |Name  |RecipientType  |
@@ -52,7 +53,7 @@ Die Ausgabe für "useralias@contoso.com" kann
 
 3. Wenn mehrere Benutzer zurückgegeben werden, suchen und beheben Sie das Konflikt verursachende Objekt.
 
-## <a name="errorissue-search-fails-on-specific-locations"></a>Fehler/Problemsuche an bestimmten Speicherorten fehlgeschlagen
+## <a name="errorissue-search-fails-on-specific-locations"></a>Fehler/Problem: Suchfehler an bestimmten Speicherorten
 
 Eine eDiscovery-oder Inhaltssuche kann den folgenden Fehler ergeben:
 >Diese Suche wurde mit (#) Fehlern abgeschlossen.  Möchten Sie die Suche an den fehlgeschlagenen Speicherorten wiederholen?
@@ -61,69 +62,75 @@ Eine eDiscovery-oder Inhaltssuche kann den folgenden Fehler ergeben:
 
 ### <a name="resolution"></a>Auflösung
 
-Wenn dieser Fehler auftritt, wird empfohlen, dass Sie die Speicherorte überprüfen, bei denen die Suche fehlgeschlagen ist, und führen Sie die Suche dann nur für die fehlerhaften Speicherorte erneut aus.
+Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte überprüfen, die bei der Suche fehlgeschlagen sind, und die Suche dann nur für die fehlerhaften Speicherorte erneut ausführen.
 
-1. Stellen Sie eine Verbindung mit [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)her.
-1. Typ:
+1. Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und geben Sie dann den folgenden Befehl ein:
 
-```powershell
-Get-Compliancesearch searchname|fl 
-```
+    ```powershell
+    Get-ComplianceSearch <searchname> | FL 
+    ```
 
-3. Zeigen Sie in der PowerShell-Ausgabe die fehlerhaften Speicherorte im Feld Fehler oder von den Statusdetails in dem Fehler aus der Suchausgabe an.
-1. Wiederholen Sie die eDiscovery-Suche nur auf den fehlerhaften Speicherorten.
-1. Wenn diese Fehlermeldung weiterhin angezeigt wird, finden Sie weitere Informationen zur Problembehandlung unter wieder [holen fehlgeschlagener Speicherorte](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) .
+2. Zeigen Sie in der PowerShell-Ausgabe die fehlerhaften Speicherorte im Feld Fehler oder von den Statusdetails in dem Fehler aus der Suchausgabe an.
 
-## <a name="errorissue-file-not-found"></a>Fehler/Problem Datei nicht gefunden
+3. Wiederholen Sie die eDiscovery-Suche nur auf den fehlerhaften Speicherorten.
 
-Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird `File Not Found` möglicherweise die Fehlermeldung angezeigt, obwohl sich die Datei auf der Website befindet. Dieser Fehler tritt in den Export Warnungen und Errors. CSV oder Skipped Items. CSV auf, wenn die Datei nicht auf der Website gefunden werden kann oder der Index veraltet ist. Hier ist der Text eines tatsächlichen Fehlers, wobei der Schwerpunkt hinzugefügt wurde.
+4. Wenn Sie diese Fehler weiterhin erhalten, finden Sie weitere Informationen zur Problembehandlung unter wieder [holen fehlgeschlagener Speicherorte](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) .
+
+## <a name="errorissue-file-not-found"></a>Fehler/Problem: Datei nicht gefunden
+
+Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird `File Not Found` möglicherweise die Fehlermeldung angezeigt, obwohl sich die Datei auf der Website befindet. Dieser Fehler tritt in den Export Warnungen und Errors. CSV oder Skip Items. CSV auf. Dies kann vorkommen, wenn sich die Datei nicht auf der Website befinden kann oder der Index veraltet ist. Hier ist der Text eines tatsächlichen Fehlers, wobei der Schwerpunkt hinzugefügt wurde.
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed zum Herunterladen von Inhalten. Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: Fehler beim Herunterladen aus dem Inhalts 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document. Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode:-2147024894---#a0 Microsoft. SharePoint. Client. ServerException: die ***Datei wurde nicht gefunden***. unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---Ende der internen Ausnahmestapelüberwachung---
 
 ### <a name="resolution"></a>Auflösung
 
 1. Überprüfen Sie die in der Suche identifizierte Position, um sicherzustellen, dass der Speicherort der Datei richtig ist und an den Suchpfaden hinzugefügt wurde.
+
 2. Verwenden Sie die Verfahren unter [Manuelles anfordern des Durchforstens und erneuten Indizierens einer Website, einer Bibliothek oder einer Liste](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) zum erneuten Indizieren der Website.
 
-## <a name="errorissue-search-fails-recipient-not-found"></a>Fehler/Problemsuche fehlgeschlagen Empfänger nicht gefunden
+## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Fehler/Problem: die Suche schlägt fehl, da der Empfänger nicht gefunden wurde.
 
-die eDiscovery-Suche schlägt `recipient not found`fehl mit dem Fehler. Dieser Fehler kann auftreten, wenn das Benutzerobjekt in Exchange Online Protection (EoP) nicht gefunden werden kann, da das Objekt nicht synchronisiert wurde.
+Bei einer eDiscovery `recipient not found`-Suche tritt ein Fehler auf. Dieser Fehler kann auftreten, wenn das Benutzerobjekt in Exchange Online Protection (EoP) nicht gefunden werden kann, da das Objekt nicht synchronisiert wurde.
 
 ### <a name="resolution"></a>Auflösung
 
-1. Stellen Sie eine Verbindung mit [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)her.
-1. Überprüfen Sie, ob das Benutzerobjekt mit Exchange Online Schutztyp synchronisiert ist:
+1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) her.
 
-```powershell
-Get-Recipient userId|fl
-```
+2. Überprüfen Sie, ob das Benutzerobjekt mit Exchange Online Schutztyp synchronisiert ist:
 
-3. Es sollte ein MailUser-Objekt für die Benutzerfrage geben. Wenn Nothing zurückgegeben wird, überprüfen Sie das User-Objekt. Wenden Sie sich an CSS, wenn das Objekt nicht synchronisiert werden kann.
+    ```powershell
+    Get-Recipient <userId> | FL
+    ```
 
-## <a name="errorissue-exporting-search-results-is-slow"></a>Fehler/Problem beim Exportieren der Suchergebnisse ist langsam
+3. Es sollte ein e-Mail-Benutzerobjekt für die Benutzerfrage geben. Wenn Nothing zurückgegeben wird, überprüfen Sie das User-Objekt. Wenden Sie sich an den Microsoft-Support, wenn das Objekt nicht synchronisiert werden kann.
+
+## <a name="errorissue-exporting-search-results-is-slow"></a>Fehler/Problem: das Exportieren von Suchergebnissen ist langsam
 
 Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Security and Compliance Center dauert der Download länger als erwartet.  Sie können überprüfen, ob die Datenmenge heruntergeladen und möglicherweise die Exportgeschwindigkeit erhöht werden soll.
 
 ### <a name="resolution"></a>Auflösung
 
 1.  Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
-2.  Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) her, und geben Sie Folgendes ein:
 
-```powershell
-Get-ComplianceSearch searchname\fl
-```
+2.  Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und geben Sie dann den folgenden Befehl ein:
+
+    ```powershell
+    Get-ComplianceSearch <searchname> | FL
+    ```
 
 4. Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.
-5. Typ:
 
-```powershell
-Get-ComplianceSearchAction |fl
-```
+5. Geben Sie den folgenden Befehl ein:
+
+   ```powershell
+   Get-ComplianceSearchAction | FL
+   ```
 
 6. Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.
+
 7. Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.
 
-## <a name="errorissue-internal-server-error-500-occurred"></a>Fehler/Problem "Interner Serverfehler (500) aufgetreten"
+## <a name="errorissue-internal-server-error-500-occurred"></a>Fehler/Problem: "Interner Serverfehler (500) aufgetreten"
 
 Wenn eine eDiscovery-Suche ausgeführt wird und die Suche kontinuierlich fehlschlägt und Fehler wie "Internal Server Error (500)" aufgetreten sind, müssen Sie die Suche möglicherweise nur an bestimmten Postfachspeicher Orten erneut ausführen.
 
@@ -132,17 +139,20 @@ Wenn eine eDiscovery-Suche ausgeführt wird und die Suche kontinuierlich fehlsch
 ### <a name="resolution"></a>Auflösung
 
 1. Unterbrechen Sie die Suche in kleinere suchen, und führen Sie die Suche erneut aus.  Versuchen Sie, einen kleineren Datumsbereich zu verwenden oder die Anzahl der durchsuchten Speicherorte zu begrenzen.
-2. Stellen Sie eine Verbindung mit [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) her und geben Sie Folgendes ein:
 
-```powershell
-Get-ComplianceSearch searchname |fl
-```
+2. Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und geben Sie dann den folgenden Befehl ein:
+
+    ```powershell
+    Get-ComplianceSearch <searchname> | FL
+    ```
 
 3. Überprüfen Sie die Ausgabe auf Ergebnisse und Fehler.
-3. Überprüfen Sie die Datei Trace. log. Es befindet sich in demselben Ordner, an den Sie den Export gesendet haben.
-4. Wenden Sie sich an den Support CSS.
 
-## <a name="errorissue-holds-dont-sync"></a>Fehler/Problem hält nicht synchronisiert
+4. Überprüfen Sie die Datei Trace. log. Es befindet sich in demselben Ordner, an den Sie den Export gesendet haben.
+
+5. Wenden Sie sich an den Support von Microsoft.
+
+## <a name="errorissue-holds-dont-sync"></a>Fehler/Problem: hält keine Synchronisierung
 
 eDiscovery Case Hold Policy Sync-Verteilungsfehler. Der Fehler lautet:
 
@@ -150,17 +160,18 @@ eDiscovery Case Hold Policy Sync-Verteilungsfehler. Der Fehler lautet:
 
 ### <a name="resolution"></a>Auflösung
 
-1.  Stellen Sie eine Verbindung mit [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) her und geben Sie Folgendes ein:
+1.  Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und geben Sie dann den folgenden Befehl ein:
 
-```powershell
-Get-RetentionCompliancePolicy  policyname - Distributiondetail|fl
-```
+    ```powershell
+    Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
+    ```
 
-2. Überprüfen Sie den Wert im Parameter Distributiondetail auf Fehler wie die folgenden:
+2. Überprüfen Sie den Wert im Parameter DistributionDetail auf Fehler wie die folgenden:
 
-> Wenn ein Fehler vorliegt, erstellen Sie eine Eskalation an PG, um eine manuelle erneute Synchronisierung für die Richtlinie zu erzwingen.
+   > Wenn ein Fehler vorliegt, erstellen Sie eine Eskalation an PG, um eine manuelle erneute Synchronisierung für die Richtlinie zu erzwingen.
 
-3. Wenden Sie sich an CSS.
+3. Wenden Sie sich an den Support von Microsoft.
 
 ## <a name="see-also"></a>Siehe auch
-- [Tipps zum Vermeiden von Inhaltsspeicherort Fehlern](https://docs.microsoft.com/en-us/microsoft-365/compliance/retry-failed-content-search%23tips-to-avoid-content-location-errors)
+
+- [Tipps zum Vermeiden von Inhaltsspeicherort Fehlern](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
