@@ -3,7 +3,7 @@ title: Übersicht über die Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen der Contoso Corporation als Unternehmen und Informationen zu der mehrstufigen Struktur ihrer weltweiten Büros.
-ms.openlocfilehash: 2610cad2db4f5621759578b29e6a6e48c07b3654
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072525"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369556"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Übersicht über die Contoso Corporation
 
 **Zusammenfassung:** Verstehen der Contoso Corporation als Unternehmen und Informationen zu der mehrstufigen Struktur ihrer weltweiten Büros.
 
-Die Contoso Corporation ist ein multinationales Unternehmen mit der Zentrale in Paris, Frankreich. Sie ist ein Mischkonzern aus Herstellungs-, Vertriebs- und Supportunternehmen mit mehr als 100.000 Produkten.
+![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
-![](./media/contoso-overview/contoso-icon.png)
+Die Contoso Corporation ist ein multinationales Unternehmen mit der Zentrale in Paris, Frankreich. Sie ist ein Mischkonzern aus Herstellungs-, Vertriebs- und Supportunternehmen mit mehr als 100.000 Produkten.
 
 ## <a name="contoso-around-the-world"></a>Contoso auf der ganzen Welt
 
 Abbildung 1 zeigt die Unternehmenszentrale in Paris und Regionalstellen und Zweigstellen auf unterschiedlichen Kontinenten.
 
-![](./media/contoso-overview/contoso-overview-fig1.png)
+![Contoso-Niederlassungen weltweit](./media/contoso-overview/contoso-overview-fig1.png)
 
 **Abbildung 1: Contoso-Niederlassungen weltweit**
  
@@ -62,7 +62,7 @@ Das Bereitstellen von besserer Unterstützung für Mobilmitarbeiter ist ein wich
 
 ## <a name="design-considerations-for-microsoft-365-enterprise"></a>Entwurfsaspekte für Microsoft 365 Enterprise
 
-Die IT-Architekten von Contoso haben die folgenden Entwurfsaspekte bei der Bereitstellung von Microsoft 365 Enterprise identifiziert: 
+Die IT-Architekten von Contoso haben die folgenden Entwurfsanforderungen und -aspekte bei der Bereitstellung von Microsoft 365 Enterprise identifiziert: 
 
 - Mehrere geografische Standorte mit lokalen Vorschriften und Compliance-Anforderungen
 - Ein zentrales Intranetrechenzentrum in der Unternehmenszentrale und regionale Anwendungsserver, auf der interne Branchenanwendungen gehostet werden.
@@ -71,12 +71,12 @@ Die IT-Architekten von Contoso haben die folgenden Entwurfsaspekte bei der Berei
 - Eine Kombination aus persönlichen und firmeneigenen mobilen Geräten wie iOS (iPhone und iPad), Android-Smartphones und Tablets
 - Viele Remote- und Mobilmitarbeiter
 - Viele Geschäftspartner
-- Viele Kunden und personenbezogene Daten
+- Viele Kunden und personenbezogene Informationen
 - Geistiges Eigentum in der Form von Entwurfsspezifikationen für Produkte und Geschäftsgeheimnisse
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-infra-needs.md) über die lokale IT-Infrastruktur der Contoso Corporation und wie ihre Unternehmensanforderungen mit Microsoft 365 Enterprise erfüllt werden können.
+[Erfahren Sie mehr](contoso-infra-needs.md) über die lokale IT-Infrastruktur der Contoso Corporation und wie ihre Unternehmensanforderungen mit Microsoft 365 Enterprise erfüllt wurden.
 
 ## <a name="see-also"></a>Siehe auch
 
