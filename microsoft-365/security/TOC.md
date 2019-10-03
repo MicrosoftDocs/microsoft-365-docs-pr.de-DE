@@ -17,6 +17,8 @@
 #### [Geräteüberwachung und Berichterstellung](./mtp/monitor-devices.md)
 #### [App-Überwachung und Berichterstellung](./mtp/monitor-apps.md)
 
+### [Verwalten von Tickets über ServiceNow](./mtp/tickets.md)
+
 ## [Sicherheit in Office 365]()
 ### [Erste Schritte]()
 #### [Inhaltsübersicht für die Sicherheit von Office 365](./office-365-security/security-roadmap.md)
