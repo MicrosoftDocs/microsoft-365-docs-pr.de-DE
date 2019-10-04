@@ -10,17 +10,17 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
-ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c96656495e9433703b85fb1c5f3610a617100253
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283477"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391208"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Dokumentation und Ressourcen zu Microsoft 365 Enterprise</h1>
-        <P>In diesem Artikel erfahren Sie, wie Sie Microsoft Office 365, Windows 10 und Enterprise Mobility + Security zusammen in Ihrer Organisation planen, bereitstellen und verwenden. Diese Dienste bieten eine integrierte und sichere Infrastruktur, die Teamwork ermöglicht und Kreativität entsperrt.</p>
+        <P>In diesem Artikel erfahren Sie, wie Sie Microsoft Office 365, Windows 10 und Enterprise Mobility + Security gemeinsam in Ihrer Organisation planen, bereitstellen und verwenden. Diese Dienste bieten eine integrierte und sichere Infrastruktur, die die Zusammenarbeit ermöglicht und Kreativität entsperrt.</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -78,9 +78,10 @@ ms.locfileid: "32283477"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Verwalten der &amp; Sicherheitskonformität</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance-Lösungen</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 – &amp; Sicherheitskonformität</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identitäts &amp; Geräte Zugriff</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Aktionspläne zur Richtlinientreue</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/" target="_blank">Microsoft 365 Compliance</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/security/" target="_blank">Sicherheit in Microsoft 365</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Zugriff &amp; auf Identitäts Geräte</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
@@ -97,7 +98,7 @@ ms.locfileid: "32283477"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Schulen Sie Ihre Administratoren & Benutzer</h3>
+                                                <h3>Schulen Ihrer Administratoren #a0 Benutzer</h3>
                                                 <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
@@ -136,7 +137,7 @@ ms.locfileid: "32283477"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Verwalten von Enterprise Mobility + Security</h3>
+                                                <h3>Manage Enterprise Mobility + Security</h3>
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
@@ -179,7 +180,7 @@ ms.locfileid: "32283477"
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Weitere Microsoft 365-Produkte</h3>
+                                                        <h3>Andere Microsoft 365-Produkte</h3>
                                                         <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Business</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
                                                     </div>
