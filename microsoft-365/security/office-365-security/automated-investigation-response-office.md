@@ -3,7 +3,7 @@ title: Automatische Untersuchung und Reaktion (Air) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081683"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386202"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
-Mit den Funktionen für die automatische Untersuchung und Reaktion (in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Mit Air können Sie Ihre Security Operations-Teams effizienter und effektiver betreiben.
+Mit den Funktionen für die automatische Untersuchung und Reaktion (Air) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Mit Air können Sie Ihre Security Operations-Teams effizienter und effektiver betreiben.
 - Verwenden Sie diesen Artikel, um einen Überblick über die Funktionsweise von Air zu erhalten.
 - Informationen zum Einstieg in die Verwendung von Air finden Sie unter [Automatisches untersuchen und reagieren auf Bedrohungen in Office 365](office-365-air.md).
 
 > [!NOTE]
 > Sie müssen ein globaler Administrator, Sicherheitsadministrator, Sicherheits Operator oder Sicherheits Leser sein, um auf die Air-Funktionen zugreifen zu können. Weitere Informationen zu diesen Berechtigungen finden Sie unter [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+Air ist in den folgenden Abonnements enthalten:
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection-Plan 2
 
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
@@ -57,8 +63,12 @@ In der ersten Version von Air (Anfang April 2019) werden Warnungen, die von folg
 
 - E-Mail-Nachrichten mit gelöschten Phishing-URLs nach der Zustellung *
 
+- Erkannte verdächtige e-Mail-Sende Muster #
+
+- Benutzer vom Senden von e-Mails eingeschränkt #
+
 > [!NOTE]
-> Die mit einem Sternchen gekennzeichneten Warnungen werden in den jeweiligen Warnungsrichtlinien im Security #a0 Compliance Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden.
+> Die mit einem Sternchen (*) gekennzeichneten Warnungen werden in den jeweiligen Warnungsrichtlinien im Security #a0 Compliance Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden. Mit einem Hash (#) gekennzeichnete Warnungen sind allgemein verfügbare Warnungen für öffentliche Vorschau-Textbuch.
 
 Um Warnungen anzuzeigen **, wählen Sie** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um diese anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Informationswarnungen hinzugefügt werden.
 
@@ -74,15 +84,18 @@ Die Sicherheits-Textbuch-Dokumente, die Sie mit Air erhalten, wurden entwickelt,
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Sicherheits-Textbuch-Rollen in Phasen
 
-Im Rahmen von Air werden Sicherheits-Textbuch in Phasen ausgerollt. Während Phase 1 (die Vorschau begann im April 2019) wurden mehrere Textbuch veröffentlicht, die Empfehlungen für Aktionen enthalten, die von Sicherheitsadministratoren überprüft und genehmigt wurden:
+Im Rahmen von Air werden Sicherheits-Textbuch in Phasen ausgerollt. Phase 1 ist jetzt allgemein verfügbar und enthält mehrere Textbuch, die Empfehlungen für Aktionen enthalten, die Sicherheitsadministratoren überprüfen und genehmigen können:
 - Vom Benutzer gemeldete Phishing-Nachricht
-- Änderung des URL-Klick Urteils 
+- Änderung des URL-Klick Urteils
 - Erkannte Schadsoftware nach der Zustellung (Malware zap)
 - Phishing-Erkennung nach der Zustellung zap (Phishing zap)
 
-Phase 1 enthält auch manuelle e-Mail-Untersuchungen (mithilfe von [Threat Explorer](threat-explorer.md)).
+Phase 1 enthält auch Unterstützung für manuelle e-Mail-Untersuchungen (mithilfe von [Threat Explorer](threat-explorer.md)).
 
-Phase 2 wird jetzt ausgeführt. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was noch geplant ist und demnächst verfügbar ist.
+Phase 2 wird nun mit den folgenden Textbuch in der **öffentlichen Vorschau**fortgesetzt, wobei Empfehlungen für Aktionen und Sicherheitsadministratoren bei der Untersuchung von Problemen gegeben werden:
+- Als kompromittiert gemeldeter Benutzer (öffentliche Vorschau)
+
+Weitere Textbuch werden als abgeschlossen veröffentlicht. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was noch geplant ist und demnächst verfügbar ist.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Manuskripte umfassen Untersuchungen und Empfehlungen
 
@@ -297,7 +310,7 @@ Wenn Sie keines dieser Abonnements haben, [Starten Sie eine ﻿kostenlose Testve
 
 Weitere Informationen zur Verfügbarkeit von Features finden Sie unter [Verfügbarkeit von Features über erweiterte Threat Protection (ATP)-Pläne](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 [Erste Schritte mit Air in Office 365](office-365-air.md)
 

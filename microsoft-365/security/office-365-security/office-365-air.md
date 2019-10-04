@@ -1,10 +1,10 @@
 ---
-title: Automatisches untersuchen und reagieren auf Bedrohungen in Office 365
+title: Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit der Verwendung von automatisierten Vorfall Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 5def4ab38c14629f2840e4b833fa9430d234e75c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082425"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37385732"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatisches untersuchen und reagieren auf Bedrohungen in Office 365
+# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
 
 ## <a name="overview"></a>Übersicht
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 enthält Funktionen für die automatische Vorfall Antwort (Air), mit denen Sie die Zeit und den Aufwand für Sicherheitsvorgänge im Umgang mit Warnungen und Bedrohungen speichern können. 
+In Abhängigkeit von Ihrem Abonnement kann [Office 365 Advanced Threat Protection](office-365-atp.md) die Funktion "Automated Incident Response (Air)" enthalten, mit der Sie die Zeit und den Aufwand für Sicherheitsvorgänge im Umgang mit Warnungen und Bedrohungen speichern können.
+
 - Verwenden Sie diesen Artikel, um die Verwendung von Air-Funktionen in Office 365 zu beginnen. 
 - Wenn Sie einen Überblick über die Funktionsweise von Air erhalten möchten, finden Sie weitere Informationen unter [Automated Incident Response (Air) in Office 365](automated-investigation-response-office.md).
 
@@ -37,6 +38,12 @@ Wenn bestimmte Warnungen ausgelöst werden, werden ein oder mehrere Sicherheits-
 
 > [!NOTE]
 > Sie müssen ein globaler Administrator, Sicherheitsadministrator, Sicherheits Operator oder Sicherheits Leser sein, um die in diesem Artikel beschriebenen Aufgaben ausführen zu können. Weitere Informationen finden Sie unter [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+Air ist in den folgenden Abonnements enthalten:
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection-Plan 2
 
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
@@ -109,7 +116,7 @@ Verwenden Sie die folgenden Ressourcen, um dies einzurichten:
 |[Office 365-Verwaltungsaktivitäts-API – Referenz](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |Sie können die Office 365-Verwaltungs Aktivitäts-API verwenden, um Informationen zu Benutzer-, Verwaltungs-, System-und Richtlinienaktionen und-Ereignissen aus Office 365-und Azure AD-Aktivitätsprotokollen abzurufen. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.        |
 |[Office 365-Verwaltungsaktivitäts-API –Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Erhalten Sie einen Überblick über das [allgemeine Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) und das [Office 365 ATP-und Threat-Ermittlungs-und-Antwortschema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) , um sich über bestimmte Arten von Daten zu informieren, die über die API für die Office 365-Verwaltungsaktivität verfügbar sind.         |
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 [Weitere Informationen zu Warnungen](../../compliance/alert-policies.md)
 

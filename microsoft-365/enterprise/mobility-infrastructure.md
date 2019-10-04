@@ -2,10 +2,10 @@
 title: 'Phase 5: Verwaltung mobiler Geräte'
 description: Microsoft 365 Enterprise umfasst die Verwaltung mobiler Geräte mithilfe von Microsoft InTune. Überprüfen Sie die Anforderungen und Voraussetzungen, richten Sie InTune mithilfe ihrer Azure Active Directory-Ressource ein, registrieren Sie IOS-, macOS-, Android-und Windows-Geräte, stellen Sie apps bereit, erstellen Sie ein configure-Profil, verwenden Sie eine Konformitätsrichtlinie, und aktivieren Sie den bedingten Zugriff für Mobile Geräteverwaltung mit Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-Dokumentation, Verwaltung mobiler Geräte, InTune
-author: MandiOhlinger
-ms.author: mandia
-manager: dougeby
-ms.date: 08/28/2019
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982806"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386142"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5: Verwaltung mobiler Geräte](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Dieses Feature gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
@@ -34,11 +34,11 @@ In dieser Phase registrieren Sie Ihre Geräte in InTune und erstellen und erzwin
 
 Einer der Hauptgründe für die Verwaltung mobiler Geräte ist die Sicherung und der Schutz der Ressourcen Ihrer Organisation. [Häufige Verwendungsweisen von Microsoft InTune](https://docs.microsoft.com/intune/common-scenarios) sind einige Beispiele aus der realen Welt, einschließlich der Sicherung Office 365 e-Mails und Daten.
 
-InTune bietet Ihnen Optionen zum Verwalten des Zugriffs auf Ihre Organisation mithilfe von [MDM (Mobile Device Management) oder MAM (Mobile Application Management)](https://docs.microsoft.com/intune/byod-technology-decisions). MDM ist, wenn Benutzer ihre Geräte in InTune "registrieren". Sobald die Registrierung erfolgt ist, handelt es sich um verwaltete Geräte und kann alle Richtlinien, Regeln und Einstellungen empfangen, die von Ihrer Organisation verwendet werden. Beispielsweise können Sie bestimmte apps installieren, eine Kennwortrichtlinie erstellen, eine VPN-Verbindung installieren und vieles mehr.
+InTune bietet Ihnen Optionen zum Verwalten des Zugriffs auf Ihre Organisation mithilfe von MDM (Mobile Device Management) oder MAM (Mobile Application Management). MDM ist, wenn Benutzer ihre Geräte in InTune "registrieren". Sobald die Registrierung erfolgt ist, handelt es sich um verwaltete Geräte und kann alle Richtlinien, Regeln und Einstellungen empfangen, die von Ihrer Organisation verwendet werden. Beispielsweise können Sie bestimmte apps installieren, eine Kennwortrichtlinie erstellen, eine VPN-Verbindung installieren und vieles mehr.
 
-Benutzer mit ihren eigenen persönlichen Geräten möchten möglicherweise Ihre Geräte nicht registrieren oder von InTune und ihren Richtlinien verwalten. Dennoch müssen Sie die Ressourcen und Daten Ihrer Organisation schützen. In diesem Szenario können Sie Ihre apps mit MAM schützen. Sie können beispielsweise eine MAM-Richtlinie verwenden, bei der ein Benutzer eine PIN beim Zugriff auf SharePoint auf dem Gerät eingeben muss.
+Benutzer mit ihren eigenen persönlichen Geräten möchten möglicherweise Ihre Geräte nicht registrieren oder von InTune und ihren Richtlinien verwalten. Sie müssen jedoch dennoch die Ressourcen und Daten Ihrer Organisation schützen. In diesem Szenario können Sie Ihre apps mit MAM schützen. Sie können beispielsweise eine MAM-Richtlinie verwenden, bei der ein Benutzer eine PIN beim Zugriff auf SharePoint auf dem Gerät eingeben muss.
 
-Darüber hinaus bestimmen Sie, wie Sie persönliche oder organisationseigene Geräte verwalten werden. Sie sollten Geräte je nach Verwendung unterschiedlich behandeln. Beispielsweise können Sie unterschiedliche Pläne für Benutzer in "Personalwesen" oder "Benutzer im Vertrieb" wünschen. [Identifizieren der Verwaltung mobiler Geräte verwenden – Case-Szenarien](https://docs.microsoft.com/intune/planning-guide-scenarios) können Ihnen den Einstieg erleichtern und einige Anleitungen zu diesen verschiedenen Szenarien enthalten.
+Darüber hinaus bestimmen Sie, wie Sie persönliche oder organisationseigene Geräte verwalten werden. Sie sollten Geräte je nach Verwendung unterschiedlich behandeln. Beispielsweise können Sie unterschiedliche Pläne für Benutzer in "Personalwesen" oder "Benutzer im Vertrieb" wünschen. [Identifizieren der Verwaltung mobiler Geräte verwenden – Fall Szenarien](https://docs.microsoft.com/intune/planning-guide-scenarios) können Ihnen den Einstieg erleichtern und einige Anleitungen zu diesen verschiedenen Szenarien enthalten.
 
 ## <a name="step-2-get-your-prerequisites"></a>Schritt 2: Abrufen Ihrer Voraussetzungen
 
@@ -66,13 +66,13 @@ Dieser Schritt konzentriert sich auf die Einrichtung von InTune und die Vorberei
 
 5. **[Hinzufügen von Benutzern](https://docs.microsoft.com/intune/users-add)** und **[Hinzufügen von Gruppen](https://docs.microsoft.com/intune/groups-add)**. 
 
-   Sie können Benutzer manuell hinzufügen oder eine Verbindung mit Azure AD herstellen, um Benutzer mit InTune zu synchronisieren. Sie können auch Administratorrollen bestimmten Benutzern zuweisen. Benutzer sind erforderlich, es sei denn, Ihre Geräte sind "Benutzer"-Geräte wie Kiosk Geräte.
+   Sie können Benutzer manuell hinzufügen oder Hybrid Identitäten verwenden und Azure AD Connect herstellen, um Ihre lokalen Benutzerkonten mit InTune zu synchronisieren. Sie können auch Administratorrollen bestimmten Benutzern zuweisen. Benutzer sind erforderlich, es sei denn, Ihre Geräte sind "Benutzer"-Geräte wie Kiosk Geräte.
 
    Azure Ad Gruppen werden verwendet, um die Verwaltung von Geräten und Benutzern in InTune zu vereinfachen. Bei Verwendung von Gruppen können Sie viele verschiedene Aufgaben ausführen. Ihre Organisation möchte beispielsweise eine bestimmte App auf Android-Geräten benötigen. Sie können eine Gruppe von Android-Geräten erstellen und eine Richtlinie mit dieser APP für die Gruppe bereitstellen.
 
     In InTune können Sie Benutzer oder Gruppen hinzufügen, die Sie in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) erstellen
 
-6. **[Zuweisen von Lizenzen](https://docs.microsoft.com/intune/licenses-assign)**. Damit sich Benutzer oder Geräte in InTune registrieren können, benötigen Sie eine Lizenz auf dem Gerät. Für jeden Benutzer oder kein Benutzergerät ist eine InTune-Lizenz für den Zugriff auf den InTune-Dienst erforderlich. Diese Lizenzen sind in Microsoft 365 enthalten und müssen in InTune zugewiesen sein.
+6. **[Zuweisen von Lizenzen](https://docs.microsoft.com/intune/licenses-assign)**. Damit Benutzer oder Geräte sich in InTune registrieren können, benötigen Sie eine Microsoft 365-Lizenz, wobei der InTune-Dienst für den Zugriff auf den InTune-Dienst aktiviert ist. Sie weisen Microsoft 365-Lizenzen zu, bei denen der Microsoft InTune-Dienst standardmäßig im Microsoft 365 Admin Center oder mit PowerShell aktiviert ist.
 
 ## <a name="step-4-enroll-devices"></a>Schritt 4: Registrieren von Geräten
 
@@ -96,7 +96,7 @@ InTune kann apps verwalten, einschließlich apps hinzufügen, Sie verschiedenen 
 
 Wenn Benutzer ein mobiles Gerät erhalten, besteht eine der ersten Aufgaben im Zugriff auf Organisations-e-Mails und-Dokumente. Mithilfe von InTune können Sie e-Mail-Einstellungen mithilfe von e-Mail-apps [Erstellen und Bereitstellen](https://docs.microsoft.com/intune/email-settings-configure) , die auf den Geräten vorinstalliert sind. 
 
-[Apps hinzufügen](https://docs.microsoft.com/intune/app-management) listet die Schritte zum Hinzufügen, bereitstellen, überwachen, konfigurieren und schützen von apps auf Geräten in Ihrer Organisation auf.
+Der Artikel [apps hinzufügen](https://docs.microsoft.com/intune/apps/apps-add) enthält eine Liste der Schritte zum Hinzufügen, bereitstellen, überwachen, konfigurieren und schützen von apps auf Geräten in Ihrer Organisation.
 
 |||
 |:-------|:-----|
@@ -107,13 +107,13 @@ Wenn Benutzer ein mobiles Gerät erhalten, besteht eine der ersten Aufgaben im Z
 
 In den vorherigen Schritten richten Sie Ihre Umgebung ein und aktivieren InTune. Jetzt können Sie einige Richtlinien mit Compliance und bedingtem Zugriff erstellen.
 
-Compliance und bedingter Zugriff sind für die Verwaltung von Geräten wichtig. **[Konformitätsrichtlinien](https://docs.microsoft.com/intune/device-compliance-get-started)** werden erstellt, um die Ressourcen Ihrer Organisation zu schützen. Wenn Sie eine Konformitätsrichtlinie erstellen, definieren Sie die Standard-oder die "Baseline", die ein Gerät aufweisen muss. Sie können beispielsweise eine akzeptable (oder nicht akzeptable) Bedrohungsstufe auswählen, jailbroken-Geräte blockieren, eine Kennwortlänge und vieles mehr benötigen. Wenn diese Geräte Ihren Regeln nicht entsprechen, was bedeutet, dass Sie nicht kompatibel sind, können Sie den Zugriff auf Ihre Ressourcen blockieren.
+Compliance und bedingter Zugriff sind für die Verwaltung von Geräten wichtig. [Konformitätsrichtlinien](https://docs.microsoft.com/intune/device-compliance-get-started) werden erstellt, um die Ressourcen Ihrer Organisation zu schützen. Wenn Sie eine Konformitätsrichtlinie erstellen, definieren Sie die Standard-oder die "Baseline", die ein Gerät aufweisen muss. Sie können beispielsweise eine akzeptable (oder nicht akzeptable) Bedrohungsstufe auswählen, jailbroken-Geräte blockieren, eine Kennwortlänge und vieles mehr benötigen. Wenn diese Geräte Ihren Regeln nicht entsprechen, was bedeutet, dass Sie nicht kompatibel sind, können Sie den Zugriff auf Ihre Ressourcen blockieren.
 
-Durch dieses "blockieren" wird der **[bedingte Zugriff](https://docs.microsoft.com/intune/conditional-access)** eingeführt. Wenn ein Gerät als nicht kompatibel gilt, können Sie den Zugriff auf e-Mails, SharePoint und vieles mehr blockieren.
+Durch dieses "blockieren" wird der [bedingte Zugriff](https://docs.microsoft.com/intune/conditional-access)eingeführt. Wenn ein Gerät als nicht kompatibel gilt, können Sie den Zugriff auf e-Mails, SharePoint und vieles mehr blockieren.
 
 Mit InTune im [Azure-Portal](https://portal.azure.com) können Sie diese Richtlinien erstellen und auf Ihre Benutzer und Geräte anwenden. Als bewährte Methode sollten Sie klein beginnen und einen mehrstufigen Ansatz verwenden. Erstellen Sie beispielsweise eine IOS-Richtlinie, die jailbroken von Geräten blockiert. Apply (genannt "Assign" in InTune) die Richtlinie auf ein Pilotprojekt oder eine Testgruppe. Fügen Sie der Pilotgruppe nach dem ersten testen weitere Benutzer hinzu. Mithilfe eines stufenweisen Ansatzes können Sie Feedback aus einer Vielzahl von Benutzertypen erhalten.
 
-Erste [Schritte mit den Richtlinien für die Geräte Konformität](https://docs.microsoft.com/intune/device-compliance-get-started) und [dem bedingten Zugriff für den](https://docs.microsoft.com/intune/conditional-access) Einstieg.
+Weitere Informationen finden Sie unter [Erste Schritte mit Geräte Konformitätsrichtlinien](https://docs.microsoft.com/intune/device-compliance-get-started) und Informationen [zum bedingten Zugriff und zu InTune](https://docs.microsoft.com/intune/conditional-access) .
 
 ## <a name="step-7-apply-features-and-settings"></a>Schritt 7: Anwenden von Features und Einstellungen
 
@@ -125,22 +125,21 @@ InTune im [Azure-Portal](https://portal.azure.com) ermöglicht Ihnen das Erstell
 - Verwenden Sie das Feature für eingeschränkte apps auf IOS-Geräten, um eine Liste der genehmigten apps zu erstellen, die installiert werden können. Oder erstellen Sie eine Liste der verbotenen apps.
 - Verwenden Sie die Kiosk Einstellungen, um auszuwählen, welche apps auf Android-Geräten verwendet werden können, die im Kiosk-Modus ausgeführt werden.
 - Wenden Sie auf Geräten mit macOS eine WLAN-Verbindung und deren Einstellungen einschließlich des Sicherheitstyps an.
-- Und vieles mehr
 
-[Was sind Microsoft InTune-Geräteprofile?](https://docs.microsoft.com/intune/device-profiles) eignet sich hervorragend zum Lesen von Profilen, Informationen zum Erstellen eines Profils und vieles mehr.
+Das [Anwenden von Features und Einstellungen auf Ihren Geräten mithilfe von Geräteprofilen](https://docs.microsoft.com/intune/device-profiles) eignet sich hervorragend zum Lesen von Profilen, Informationen zum Erstellen eines Profils und vieles mehr.
 
 Denken Sie daran, beginnen Sie klein, und verwenden Sie einen mehrstufigen Ansatz. Weisen Sie das Profil einem Pilotprojekt oder einer Testgruppe zu. Weisen Sie dann das Profil mehreren Pilotgruppen zu.
 
 ## <a name="step-8-get-to-know-the-other-features"></a>Schritt 8: Kennenlernen der anderen Features
 
-InTune ist ein leistungsstarker Dienst, der zahlreiche Funktionen umfasst. Im folgenden finden Sie einige andere Aufgaben, die Sie mit InTune ausführen können:
+InTune ist ein leistungsstarker Dienst mit vielen Features. Im folgenden finden Sie einige andere Aufgaben, die Sie mit InTune ausführen können:
 
 - Verwalten von Software und Updates auf [](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)auf Windows-Geräten und [IOS](https://docs.microsoft.com/intune/software-updates-ios) -Geräten
 - Aktivieren Sie [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) auf Ihren Windows 10-Geräten, und verwenden Sie Compliance und bedingten Zugriff, um den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online zu schützen.
 - Verwenden von [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)und anderen Partnern für Mobile Verteidigungs Bedrohungen
-- Hinzufügen einer Partner Zertifizierungs [Stelle](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) zum ausgeben und erneuern von Zertifikaten
+- Hinzufügen einer [Partnerzertifizierungsstelle (Certification Authority, ca)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) zum ausgeben und erneuern von Zertifikaten
 - [Bereitstellen von Anleitungen für Endbenutzer](https://docs.microsoft.com/intune/end-user-educate) in der Unternehmens Portal-APP, zum erhalten von apps und mehr
-- Überwachen Sie [apps](https://docs.microsoft.com/intune/apps-monitor), überwachen Sie die [Geräte Konformität](https://docs.microsoft.com/intune/compliance-policy-monitor), überwachen Sie [Konfigurationsprofile](https://docs.microsoft.com/intune/compliance-policy-monitor)und mehr Telemetrie mithilfe der Überwachungsprotokolle. Sie können auch eine Verbindung mit dem [InTune-Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) herstellen und Power BI für noch mehr Berichtsanforderungen verwenden.
+- Überwachen von [apps](https://docs.microsoft.com/intune/apps-monitor) und [Geräte Konformität und Konfigurationsprofilen](https://docs.microsoft.com/intune/compliance-policy-monitor)und mehr Telemetrie mithilfe der Überwachungsprotokolle. Sie können auch eine Verbindung mit dem [InTune-Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) herstellen und Power BI für noch mehr Berichtsanforderungen verwenden.
 
 
 ## <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
@@ -158,7 +157,7 @@ Erfahren Sie, wie IT-Experten bei Microsoft [Geräte mit EMS verwalten](https://
 
 Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber repräsentatives multinationales Unternehmen, [Ihre Infrastruktur für Mobile Geräteverwaltung](contoso-mdm.md) mit Microsoft 365 Cloud Services bereitgestellt hat.
 
-![](./media/contoso-overview/contoso-icon.png)
+![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

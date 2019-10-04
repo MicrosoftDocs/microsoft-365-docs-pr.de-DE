@@ -6,30 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047228"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391218"
 ---
 # <a name="getting-help-for-end-users"></a>Aufrufen von Hilfe für Endbenutzer
 
 Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung für Ihre Microsoft Managed Desktop-Geräte erhalten können: **Abrufen der Hilfe** -APP oder Telefonsupport. Beide Supportoptionen stehen Benutzern 24 Stunden am Tag, 7 Tage die Woche zur Verfügung.
  
 >[!NOTE]
->Diese Supportoptionen stehen für Geräte in der Test Gruppe nicht zur Verfügung. 
+>Diese Supportoptionen stehen für Geräte in der Test Gruppe nicht zur Verfügung.
 
 ## <a name="get-help-app"></a>Hilfe-App abrufen
 
-Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine einfach zu bedienende Oberfläche, die in das endbenutzergerät integriert ist.  
+Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine benutzerfreundliche Oberfläche, die in das endbenutzergerät integriert ist.  
 
 ![Hilfe erhalten](images/get-help.png)
 
 Hierbei handelt es sich um eine Anwendung, die auf allen von Microsoft verwalteten Desktop Geräten installiert ist und an der Taskleiste fixiert ist. 
 
 - Endbenutzer können einen Rückruf an eine bereitgestellte Telefonnummer anfordern oder online mit einem Dienstmitarbeiter chatten.
-- Anforderungen, die außerhalb des Bereichs Microsoft Managed Desktop Support fallen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.  
+- Anforderungen, die außerhalb des Bereichs Microsoft Managed Desktop Support fallen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.
+
+### <a name="prerequisites"></a>Voraussetzungen
+Damit Ihre Endbenutzerhilfe über die APP erhalten können, stellen Sie sicher, dass diese Voraussetzungen erfüllt sind:
+
+- Das Gerät muss bei Microsoft Managed Desktop mit einer der Methoden unter [Einrichten von Microsoft Managed Desktop-Geräten](../get-started/set-up-devices.md)registriert werden, beispielsweise [Registrieren neuer Geräte selbst](../get-started/register-devices-self.md).
+- Die Anzeigesprache für das Gerät muss auf eine der folgenden englischsprachigen Gebietsschemas festgelegt sein: en-US, en-GB, en-au, en-NZ oder en-ca.
+- Die Get-Hilfe-app sollte auf dem neuesten Stand sein. Um dies zu bestätigen, suchen Sie im Microsoft Store nach APP-Updates.
+- Auf bestimmte [Endpunkte](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) muss vom Gerät aus zugegriffen werden können.
+
+> [!NOTE]
+> Die Get-Hilfe-App kann bis zu einer Stunde dauern, nachdem ein Gerät bereitgestellt wurde, um voll funktionsfähig zu sein.
+
+Wenn Sie diese Voraussetzungen überprüft haben und die Get-Hilfe-App immer noch nicht funktioniert, sollten Sie als IT-Administrator eine [Supportanfrage](admin-support.md)einreichen.
 
 ## <a name="phone-support"></a>Telefonunterstützung
 
