@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/28/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 3981d2bb37b1c9b91ed2b0a93f57a33940a25186
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082424"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386152"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -87,7 +87,14 @@ Office 365 ATP Plan 2 enthält erstklassige [Bedrohungsuntersuchung- und Antwort
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>Zeit sparen mit automatisierten Untersuchungen und Antworten
 
-(**NEU!**) Bei der Untersuchung eines potenziellen Cyberangriffs ist Zeit von äußerster Wichtigkeit. Je früher Sie Bedrohungen erkennen und eindämmen können, desto besser für Ihre Organisation. Office 365 ATP Plan 2 enthält nun [Automatisierte Untersuchung und Antwort (Automated Investigation and Response, AIR)](automated-investigation-response-office.md)-Funktionen. (Wenn Sie noch nicht über diese Funktionen verfügen, werden Sie sie bald mit ATP Plan 2 haben.) 
+(**NEU!**) Bei der Untersuchung eines potenziellen Cyberangriffs ist Zeit von äußerster Wichtigkeit. Je früher Sie Bedrohungen erkennen und eindämmen können, desto besser für Ihre Organisation. Die unten aufgeführten Abonnements umfassen nun auch [Automatisierte Untersuchung und Antwort (Automated Investigation and Response, AIR)](automated-investigation-response-office.md)-Funktionen. (Wenn Sie noch nicht über diese Funktionen verfügen, werden Sie sie mit einem dieser Abonnements in Kürze erhalten.) 
+
+Office 365 AIR ist in den folgenden Abonnements enthalten:
+
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection Plan 2
 
 AIR umfasst eine Reihe von Sicherheits-Playbooks, die automatisch gestartet werden können, z.B. wenn eine Benachrichtigung ausgelöst wird, oder manuell, z.B. aus einer Explorer-Ansicht. AIR spart Ihrem Team für Sicherheitsvorgänge Zeit und Mühe beim effektiven und effizienten Eindämmen von Bedrohungen. Weitere Informationen finden Sie unter [Automatisierte Untersuchung und Reaktion (AIR) mit Office 365](automated-investigation-response-office.md).
 
