@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsarbeitslasten von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369426"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403244"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
 
@@ -44,7 +44,7 @@ Dies sind die Arbeitslasten und Szenarios im allgemeinen Microsoft 365 Enterpris
 
 ![Arbeitslasten und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-Weitere Szenarien finden Sie in der [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success/). 
+Weitere Szenarien finden Sie in der [Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)). 
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Foundation-Infrastruktur – Voraussetzungen
 
