@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
-ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
+ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37350316"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417584"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -40,7 +40,7 @@ Um Ihnen den Einstieg zu erleichtern, wird eine ISO/IEC 27001:2103-Bewertung fü
 
 ## <a name="administration"></a>Verwaltung
 
-Es gibt bestimmte administrative Funktionen, die nur für den mandantenadministrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Solange der Administrator den Benutzern jedoch keine Compliance-Manager-Rollen zuweist, sind die Daten im Compliance-Manager für alle Benutzer in Ihrer Organisation sichtbar. Es wird empfohlen, die rollenbasierte Zugriffssteuerung zu implementieren, um zu bestimmen, wer im Compliance-Manager auf Aktionen zugreifen und diese ausführen kann.
+Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Sobald der Administrator anderen Benutzern Compliance-Manager-Rollen zuweist, können diese Benutzerdaten im Compliance-Manager anzeigen und Aktionen durchführen, die von ihrer Rolle bestimmt werden. Der Administrator kann dem Compliance-Manager auch schreibgeschützten Zugriff erteilen, indem er dem Benutzer die [globale Leserrolle in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)zugewiesen.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Zuweisen von Compliance-Manager-Rollen zu Benutzern
 
@@ -416,7 +416,7 @@ Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enth
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
-    Beispiel:
+    Zum Beispiel:
 
     ```
     Product::Office 365;;Certification::NIST CSF
@@ -450,7 +450,7 @@ Vorlagen und Bewertungen unterstützen die Verwendung von Abschriften Sprache f�
 - Hyperlinks
 - Fettdruck
 
-Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Beispiel:
+Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Zum Beispiel:
 
 ```
 * Item A
@@ -458,7 +458,7 @@ Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählun
 * Item C
 ```
 
-Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Beispiel:
+Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Zum Beispiel:
    1. Element A
    2. Element B
       1. Unterelement A
@@ -469,7 +469,7 @@ Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei L
       2. Unterelement B
    5. Element E
 
-Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Beispiel:
+Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Zum Beispiel:
 
 ```
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
@@ -477,7 +477,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 Dieser Text wird wie folgt gerendert: Klicken Sie [hier](https://www.microsoft.com) , um zur Startseite von Microsoft zu gelangen.
 Wie im obigen Beispiel dargestellt, rendert Compliance Manager keine URLs mit Unterstreichung.
 
-Fett formatierter Text ist nur zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Beispiel:
+Fett formatierter Text ist nur zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Zum Beispiel:
 
 ```
 **This text will render in bold**
@@ -551,15 +551,11 @@ Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihr
 
 In der folgenden Tabelle werden die einzelnen Compliance-Manager-Berechtigungen beschrieben, und welche Aktionen der Benutzer zulässt. Die Tabelle gibt auch die Rolle an, der jede Berechtigung zugewiesen ist.
 
-||**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Daten lesen:** Benutzer können Daten lesen, aber nicht bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> | X | X | X | X  | X |
-|**Bearbeiten von Daten:** Benutzer können alle Felder mit Ausnahme der Felder Testergebnis und Test Datum bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> || X | X  | X | X |
-|**Bearbeiten von Testergebnissen:** Benutzer können die Felder Testergebnis und Test Datum bearbeiten.  <br> ||| X | X | X |
-|**Verwalten von Bewertungen:** Benutzer können Bewertungen erstellen, archivieren und löschen.  <br> |||| X | X |
-|**Verwalten von Masterdaten:** Benutzer können Vorlagendaten und Mandanten Verwaltungsdaten anzeigen, bearbeiten und löschen.  <br> |||| X | X |
-|**Verwalten von Benutzern:** Benutzer können andere Benutzer in Ihrer Organisation zu den Rollen Leser, Mitwirkenden, Assessoren und Administrator hinzufügen. Nur Benutzer mit der globalen Administrator Rolle in Ihrer Organisation können Benutzer aus der Portal Administratorrolle hinzufügen oder entfernen.  <br> ||||| X |
-
-### <a name="guest-access"></a>Gastzugriff
-  
-Nachdem der Zugriff auf den Compliance-Manager konfiguriert wurde, befindet sich jeder Benutzer, der über keine bereitgestellte Rolle verfügt, standardmäßig in der Rolle " **Gastzugriff** " (Dies ist auch die Erfahrung aller nicht von der Organisation bereitgestellten Konten wie persönliche Microsoft-Konten). Gastzugriffs Benutzer haben nicht Vollzugriff auf alle Compliance-Manager-Funktionen. Sie können keine der Kompatibilitätsbewertungsdaten der Organisation sehen, jedoch können Sie den Compliance-Manager verwenden, um die Kompatibilitäts Bewertungsberichte und Dienst Vertrauensstellungs Dokumente von Microsoft anzuzeigen.
+||**Azure AD globaler Leser**|**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Daten lesen:** Benutzer können Daten lesen, aber nicht bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> | X | X | X | X | X  | X  |X |
+|**Bearbeiten von Daten:** Benutzer können alle Felder mit Ausnahme der Felder Testergebnis und Test Datum bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> ||| X | X  | X | X |
+|**Bearbeiten von Testergebnissen:** Benutzer können die Felder Testergebnis und Test Datum bearbeiten.  <br> |||| X | X | X |
+|**Verwalten von Bewertungen:** Benutzer können Bewertungen erstellen, archivieren und löschen.  <br> ||||| X | X |
+|**Verwalten von Masterdaten:** Benutzer können Vorlagendaten und Mandanten Verwaltungsdaten anzeigen, bearbeiten und löschen.  <br> ||||| X | X |
+|**Verwalten von Benutzern:** Benutzer können andere Benutzer in Ihrer Organisation zu den Rollen Leser, Mitwirkenden, Assessoren und Administrator hinzufügen. Nur Benutzer mit der globalen Administrator Rolle in Ihrer Organisation können Benutzer aus der Portal Administratorrolle hinzufügen oder entfernen.  <br> |||||| X |

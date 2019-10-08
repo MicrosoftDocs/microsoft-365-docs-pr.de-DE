@@ -12,21 +12,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 148920fac825dab9f67a79bc11907b72218e47bc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081029"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417494"
 ---
 # <a name="compliance-score-methodology-preview"></a>Methodik der Konformitätsbewertung (Vorschau)
 
 > [!NOTE]
 > Die Compliance-Bewertung drückt kein absolutes Maß für die Einhaltung eines bestimmten Standards oder einer bestimmten Vorschrift in der Organisation aus. Sie drückt vielmehr den Umfang aus, in dem Sie Steuerelemente einsetzen, durch die die Risiken für persönliche Daten und den Datenschutz reduziert werden können. Kein Dienst kann garantieren, dass Sie einen Standard oder eine Vorschrift einhalten. Die Compliance-Bewertung sollte in keinster Weise als eine Garantie verstanden werden.
 
-Im Compliance-Manager-Dashboard wird ein Gesamt Kompatibilitäts Faktor für Bewertungen in den einzelnen Bewertungs Kacheln angezeigt. Dies ist das Gesamtergebnis der Konformität für die Bewertung und ist die Akkumulation von Punkten, die für jedes implementierte und getestete Steuerelement in der Bewertung erhalten wurden. Für eine neue Bewertung weist das Kompatibilitäts Ergebnis einen anfänglichen Wert für die enthaltenen von unabhängigen Drittanbietern getesteten von Microsoft verwalteten Steuerelemente auf. Compliance Score kann helfen, Prioritäten zu setzen, auf welche Bewertungen und Kontrollen Sie sich konzentrieren müssen, um Ihre allgemeine Compliance-Haltung zu verbessern.
+Im Compliance-Manager-Dashboard wird ein Gesamt Kompatibilitäts Faktor für Bewertungen in den einzelnen Bewertungs Kacheln angezeigt. Dies ist das Gesamtergebnis der Konformität für die Bewertung und ist die Akkumulation von Punkten, die für jedes implementierte und getestete Steuerelement in der Bewertung erhalten wurden. Für eine neue Bewertung weist das Kompatibilitäts Ergebnis einen anfänglichen Wert für die enthaltenen von unabhängigen Drittanbietern getesteten von Microsoft verwalteten Steuerelemente auf. Das Kompatibilitäts Ergebnis wird basierend auf von Microsoft verwalteten Aktions Ergebnissen und von Kunden verwalteten Aktionspunkten berechnet. Compliance Score kann helfen, Prioritäten zu setzen, auf welche Bewertungen und Kontrollen Sie sich konzentrieren müssen, um Ihre allgemeine Compliance-Haltung zu verbessern.
 
-Die angezeigten Kompatibilitäts Bewertungswerte für das Steuerelement werden *in ihrer Gesamtheit* auf das Gesamtergebnis der Konformitätsbewertung auf Pass/Fail-Basis angewendet. Das Steuerelement ist implementiert und übergibt den nachfolgenden Bewertungstest oder nicht. Es gibt keine Teilgutschrift für eine teilweise Implementierung. Zugewiesene Punkte werden zur Kompatibilitätsbewertung hinzugefügt, wenn das Steuerelement Folgendes besitzt:
+Die angezeigten Kompatibilitäts Bewertungswerte für das Steuerelement werden *in ihrer Gesamtheit* auf das Gesamtergebnis der Konformitätsbewertung auf Pass/Fail-Basis angewendet. Das Steuerelement ist implementiert und übergibt den nachfolgenden Bewertungstest oder nicht. Zugewiesene Punkte werden zur Kompatibilitätsbewertung hinzugefügt, wenn das Steuerelement Folgendes besitzt:
 
 - **Implementierungs Status** entspricht **implementiert** oder **alternative Implementierung** und,
 - **Test Ergebnis** gleich **übergeben**.
@@ -53,7 +53,7 @@ Aktionselemente werden Steuerelementen zugeordnet, und wenn ein Steuerelement me
   
 Jedes Steuerelement besitzt einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das es darstellt:
 
-|**Type**|**Zugewiesene Punktzahl**|
+|**Typ**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
 | Vorbeugender Ermessensspielraum | 9 |

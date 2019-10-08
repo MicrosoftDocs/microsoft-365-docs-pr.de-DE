@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: c88b45fb568b0fe29bc967676ea09e89e9084a62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081030"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417534"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -111,11 +111,16 @@ Zertifizierungs Steuerelemente werden in der Regel von einer Person implementier
 
 ## <a name="permissions"></a>Berechtigungen
 
-Compliance-Manager verwendet ein [Berechtigungsmodell](working-with-compliance-manager.md#permissions)für die rollenbasierte Zugriffssteuerung. Standardmäßig verfügt jeder Benutzer in Ihrer Organisation mit Azure Active Directory (Azure AD) über Vollzugriff und kann beliebige Aktionen im Compliance-Manager ausführen. Nachdem die rollenbasierte Zugriffssteuerung von Ihrer Organisation implementiert wurde, wird jedem Benutzer, der keiner definierten Compliance-Manager-Rolle zugewiesen ist, Gastzugriff zugewiesen. Microsoft-Dienstmitarbeiter haben keinen ständigen Zugriff auf Daten, die Sie eingeben oder hochladen.
+Compliance-Manager verwendet ein Berechtigungsmodell für die rollenbasierte Zugriffssteuerung. Nur Benutzer, denen eine Benutzerrolle zugewiesen ist, können auf den Compliance-Manager zugreifen, und die von den einzelnen Benutzern zugelassenen Aktionen sind nach Rollentyp eingeschränkt. Zeigt [eine Tabelle](working-with-compliance-manager.md#permissions) mit den für jede Berechtigung zulässigen Aktionen an.
 
-Um von Standardberechtigungen zu wechseln und ein vollständig rollenbasiertes Zugriffssteuerungsmodell zu implementieren, muss jeder Compliance-Manager-Rolle mindestens ein Benutzer hinzugefügt werden. Nachdem ein Benutzer einer Rolle hinzugefügt wurde, werden die Berechtigungen zum Ausführen der dieser Rolle zugewiesenen Aktionen aus den standardmäßigen Berechtigungssätzen entfernt, die allen Benutzern zur Verfügung stehen. Nur Benutzer, die mit der Rolle bereitgestellt werden, können auf den Compliance-Manager zugreifen und die von dieser Rolle zulässigen Aktionen ausführen.
+Der Portaladministrator für Compliance-Manager kann die Berechtigungen für andere Benutzer im Compliance-Manager festlegen, indem Sie die folgenden Schritte ausführen:
 
-Wenn Sie der Rolle einen Benutzer hinzufügen, um Bewertungen zu verwalten, können nur Mitglieder dieser Rolle Bewertungen verwalten. Wenn Sie der Rolle keinen Benutzer hinzufügen, der Benutzern das Lesen der Daten in Assessments ermöglicht, können alle Benutzer in Ihrer Organisation auf den Compliance-Manager zugreifen und Daten in einer beliebigen Bewertung lesen.
+1. Wählen Sie im Dropdownmenü Top **more** die Option **Admin**und dann **Settings**aus.
+2. Wählen Sie hier die Rolle aus, die Sie zuweisen möchten, und fügen Sie dann den Mitarbeiter hinzu, den Sie dieser Rolle zuweisen möchten. Die Benutzer können dann bestimmte Aktionen ausführen.
+
+Darüber hinaus verfügen Benutzer, denen die [globale Leserrolle in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) zugewiesen ist, über eine schreibgeschützte Berechtigung für den Zugriff auf den Compliance-Manager. Sie können jedoch keine Daten bearbeiten oder Aktionen im Compliance-Manager durchführen.
+
+Beachten Sie, dass keine standardmäßige **Gastzugriffs** Rolle mehr vorhanden ist. Jedem Benutzer muss eine Rolle zugewiesen sein, damit er auf den Compliance-Manager zugreifen und darin arbeiten kann.
   
 ## <a name="manage-evidence"></a>Verwalten von beweisen
 
