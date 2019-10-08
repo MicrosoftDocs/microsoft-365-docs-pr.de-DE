@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378651"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417564"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>Funktionsweise von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -135,7 +135,9 @@ PowerPoint
 <td><font size="-1">Bald verfügbar<sup>3</sup>
 <td><font size="-1">Bald verfügbar<sup>3</sup>
 
-<tr><td><font size="-1">Vordefinierte Berechtigungen zuweisen
+
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Zuweisen vordefinierter Berechtigungen</a>
 <td><font size="-1"><b>Ja</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>Ja</b><br><font size="-1">16.21.0+</font>
@@ -172,7 +174,8 @@ PowerPoint
 <td><font size="-1">Noch nicht festgelegt
 <td><font size="-1">Noch nicht festgelegt
 
-<tr><td><font size="-1">Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden</a>
 <td><font size="-1">Noch nicht festgelegt
 
 <td><font size="-1">Noch nicht festgelegt
@@ -207,7 +210,7 @@ PowerPoint
 | --- | --- | --- |
 | Word, Excel, PowerPoint auf allen Plattformen | Sofort | Sofort |
 | Outlook für PC und Mac | Nachdem E-Mails von Exchange Online gesendet werden | Sofort |
-| Word, Excel, PowerPoint auf allen Plattformen | Nachdem E-Mails von Exchange Online gesendet werden | Nachdem E-Mails von Exchange Online gesendet werden |
+| Outlook im Web, für iOS und Android | Nachdem E-Mails von Exchange Online gesendet werden | Nachdem E-Mails von Exchange Online gesendet werden |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>Können Vertraulichkeitsbezeichnungen neben dem Azure Information Protection-Client in Office für Windows ausgeführt werden?
 
@@ -233,11 +236,7 @@ Die von Administratoren definierten [Schutzvorlagen](https://docs.microsoft.com/
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>Kann eine Datei oder eine E-Mail-Nachricht mehr als eine Klassifizierung aufweisen?
 
-Benutzer können für jedes Dokument oder jede E-Mail jeweils nur eine Bezeichnung auswählen, was häufig zu einer einzigen Klassifizierung führt. Wenn Benutzer jedoch eine Unterbezeichnung auswählen, werden tatsächlich zwei Bezeichnungen gleichzeitig angewendet, eine primäre Bezeichnung und eine sekundäre Bezeichnung. Mithilfe von Unterbezeichnungen kann eine Datei zwei Klassifizierungen aufweisen, die eine Beziehung zwischen über- und untergeordneten Elementen für eine weitere Steuerungsebene angeben. 
-
-So kann die Bezeichnung  **Vertraulich**  beispielsweise Unterbezeichnungen wie  **Rechtsabteilung**  und  **Buchhaltung** enthalten. Sie können auf diese Unterbezeichnungen unterschiedliche visuelle Klassifizierungsmarkierungen und verschiedene Vorlagen zur Rechteverwaltung anwenden. Ein Benutzer kann nicht die Bezeichnung  **Vertraulich** , sondern nur eine ihrer Unterbezeichnungen auswählen, z. B.  **Rechtsabteilung**. Demzufolge wird als festgelegte Bezeichnung  **Vertraulich** / **Rechtsabteilung** angezeigt. Die Metadaten für diese Datei umfassen eine benutzerdefinierte Texteigenschaft für  **Vertraulich**, eine benutzerdefinierte Texteigenschaft für  **Rechtsabteilung** und eine weitere, die beide Werte enthält (**Vertraulich Rechtsabteilung**). 
-
-Wenn Sie Unterbezeichnungen verwenden, konfigurieren Sie visuelle Kennzeichnungen, Schutz und Bedingungen nicht für die primäre Bezeichnung. Bei Verwendung von Unterbezeichnungen konfigurieren Sie diese Einstellung nur für die Unterbezeichnung. Wenn Sie diese Einstellungen für die primäre Bezeichnung und deren Unterbezeichnung konfigurieren, haben die Einstellungen der Unterbezeichnung Vorrang.
+Nein. Benutzer können für jedes Dokument oder jede E-Mail jeweils nur eine Bezeichnung auswählen.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Wenn eine E-Mail mit einer Bezeichnung versehen ist, erhalten Anlagen automatisch dieselbe Bezeichnung?
 
