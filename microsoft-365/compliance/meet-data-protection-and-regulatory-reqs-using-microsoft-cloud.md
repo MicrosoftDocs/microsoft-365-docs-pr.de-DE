@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
-ms.openlocfilehash: 6a06d69456ed1d42497f1d9f377252b079c6daba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082302"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417594"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten
 
@@ -87,40 +87,29 @@ Eine Bewertung besteht aus mehreren der folgenden Komponenten:
   
 ## <a name="permissions-and-role-based-access-control"></a>Berechtigungen und rollenbasierte Zugriffssteuerung
 
-Standardmäßig hat jede Person in Ihrer Organisation mit einem Office 365- oder Azure AD-Konto Zugriff auf Compliance-Manager und kann beliebige Aktionen darin ausführen. Um von den Standardberechtigungen zum Modell der rollenbasierten Zugriffssteuerung zu wechseln, muss jeder Compliance-Manager-Rolle mindestens ein Benutzer hinzugefügt werden (siehe die folgenden Anweisungen). Nachdem ein Benutzer zu einer Rolle hinzugefügt wurde, werden die Berechtigungen zum Durchführen der dieser Rolle zugewiesenen Aktionen aus dem Standardberechtigungssatz entfernt, der für alle Benutzer verfügbar ist; nur die Benutzer, die diese Rolle erhalten haben, können auf Compliance-Manager zugreifen und die für diese Rolle zulässigen Aktionen ausführen.
+Compliance-Manager verwendet ein Berechtigungsmodell der rollenbasierten Zugriffssteuerung. Nur Benutzer, denen eine Benutzerrolle zugewiesen ist, können auf Compliance-Manager zugreifen, und welche Aktionen ein Benutzer ausführen darf, wird durch den jeweiligen Rollentyp eingeschränkt.
   
-Nachdem der rollenbasierte Zugriff implementiert wurde, haben alle Benutzer, die nicht einer definierten Compliance-Manager-Rolle zugewiesen sind, Gastzugriff.
-  
-> [!NOTE]
-> Zur vollständigen Implementierung der rollenbasierten Zugriffssteuerung (um zu verwalten, wer auf Compliance-Manager zugreifen kann und darin Aktionen ausführen kann), muss jeder Rolle ein Benutzer hinzugefügt werden, um die Standardberechtigungen zu ändern. Wenn Sie beispielsweise einen Benutzer zu der Rolle hinzufügen, mit der Benutzer Bewertungen verwalten können, können nur Mitglieder dieser Rolle Bewertungen verwalten. Wenn Sie keinen Benutzer zu der Rolle hinzufügen, mit der Benutzer die Daten in Bewertungen lesen können, so können alle Benutzer in Ihrer Organisation auf Compliance-Manager zugreifen und Daten in allen Bewertungen lesen. 
+Beachten Sie, dass es keine Standardrolle **Gastzugriff** mehr gibt. Jedem Benutzer muss eine Rolle zugewiesen werden, damit er auf Compliance-Manager zugreifen und darin arbeiten kann.
   
 In der folgenden Tabelle werden die einzelnen Compliance-Manager-Berechtigungen beschrieben und was der Benutzer damit tun kann. In der Tabelle wird außerdem die Rolle angegeben, der jede Berechtigung zugewiesen ist.
   
 ||**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lesen von Daten**: Benutzer können Daten lesen, aber nicht bearbeiten.  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Bearbeiten von Daten**: Benutzer können alle Felder, mit Ausnahme von „Testergebnis“ und „Testdatum“, bearbeiten.  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Bearbeiten der Testergebnisse**: Benutzer können die Felder „Testergebnis“ und „Testdatum“ bearbeiten.  <br/> |||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Verwalten von Bewertungen**: Benutzer können Bewertungen erstellen, archivieren und löschen.  <br/> ||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Verwalten von Benutzern**: Benutzer können andere Benutzer in der Organisation zu den Rollen „Reader“, „Contributor“, „Assessor“ und „Administrator“ hinzufügen. Nur die Benutzer mit der Rolle „Globaler Administrator“ in Ihrer Organisation können Benutzer zu der Rolle „Portal Admin“ hinzufügen oder daraus entfernen.<br/> |||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Lesen von Daten**: Benutzer können Daten lesen, aber nicht bearbeiten.  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
+|**Bearbeiten von Daten**: Benutzer können alle Felder, mit Ausnahme von „Testergebnis“ und „Testdatum“, bearbeiten.  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Bearbeiten der Testergebnisse**: Benutzer können die Felder „Testergebnis“ und „Testdatum“ bearbeiten.  <br/> ||<br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Verwalten von Bewertungen**: Benutzer können Bewertungen erstellen, archivieren und löschen.  <br/> |||<br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Verwalten von Benutzern**: Benutzer können andere Benutzer in der Organisation zu den Rollen „Reader“, „Contributor“, „Assessor“ und „Administrator“ hinzufügen. Nur die Benutzer mit der Rolle „Globaler Administrator“ in Ihrer Organisation können Benutzer zu der Rolle „Portal Admin“ hinzufügen oder daraus entfernen.<br/> ||||<br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-### <a name="guest-access"></a>Gastzugriff
-  
-Nachdem der Zugriff auf Compliance-Manager konfiguriert wurde, befinden sich alle Benutzer, denen keine Rolle bereitgestellt wurde, standardmäßig in der Rolle **Gastzugriff** (wie dies auch bei allen nicht von einer Organisation bereitgestellten Konten, z. B. persönlichen Microsoft-Konten, der Fall ist). Benutzer mit Gastzugriff verfügen nicht über vollständigen Zugriff auf alle Features von Compliance-Manager und können keine Bewertungsdaten der Organisation anzeigen. Sie können Compliance-Manager jedoch verwenden, um die Compliance-Bewertungsberichte von Microsoft und Service Trust-Dokumente anzuzeigen. In den Abbildungen können Sie sehen, worauf zugegriffen werden kann und worauf nicht. Features, auf die zugegriffen werden kann, sind blau dargestellt, und Features, auf die nicht zugegriffen werden kann, rot. 
-  
-![Compliance-Manager-Dashboard – Gastzugriff](media/7c9cb09d-ba13-4633-ad89-129a33e291f7.png)
-  
-![Compliance-Manager – Abbildung zum Gastzugriff](media/11dade9e-557d-4a7f-ac2a-a5a1c0eaea93.png)
+## <a name="understanding-the-compliance-score"></a>Grundlegendes zur Compliancebewertung
 
-## <a name="understanding-the-compliance-score"></a>Grundlegendes zur Compliance-Bewertung
-
-Im Dashboard zeigt der Compliance-Manager einen Gesamtwert für Office 365-Bewertungen in der oberen rechten Ecke der Kachel an. Dies ist die gesamte Compliancebewertung für die Bewertung, also die Sammlung von Punkten, die für jede Steuerelementbewertung erhalten wurde, die in der Bewertung als „Implementiert“ und „Getestet“ markiert wurde. Wenn eine Bewertung hinzugefügt wird, werden Sie sehen, dass die Compliancebewertung fast abgeschlossen ist, da die Punkte für die von Microsoft verwalteten Steuerelemente, die von Microsoft implementiert und von unabhängigen Drittanbietern getestet wurden, bereits übernommen wurden.
+Compliance-Manager zeigt im Dashboard einen Gesamtwert für Office 365-Bewertungen in der oberen rechten Ecke der Kachel an. Dies ist der allgemeine Compliancegesamtwert für die Bewertung und stellt die Akkumulierung der Punkte dar, die für jede Steuerelementbewertung erhalten wurden, die in der Bewertung als implementiert und getestet gekennzeichnet wurde. Wenn Sie eine Bewertung hinzufügen, werden Sie feststellen, dass die Compliancebewertung bereits nahezu abgeschlossen ist, weil die Punkte für die von Microsoft verwalteten Steuerelemente, die von Microsoft implementiert und von unabhängigen Dritten getestet wurden, bereits angewendet wurden.
   
 ![Compliance-Manager – Compliance-Bewertung insgesamt](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 Die übrigen Punkte stammen aus der erfolgreichen Bewertung von Kundensteuerelementen, aus der Implementierung und aus dem Test der vom Kunden verwalteten Steuerelemente, von denen jedes einen bestimmten Wert hat, der einen Teil der Compliance-Bewertung ausmacht. 
   
-Für jede Bewertung wird eine risikobasierte Compliancebewertung angezeigt, damit Sie das Risikoniveau (aufgrund von Nicht-Einhaltung oder aufgrund eines Steuerelementfehlers) für jedes Steuerelement (einschließlich von Microsoft und vom Kunden verwalteter Steuerelemente) in einer Bewertung besser beurteilen können. Jedem vom Kunden verwaltete Steuerelement ist einer möglichen Anzahl von Punkten (Schwergrad) auf einer Skala von 1 bis 10 zugewiesen, wobei für Steuerelemente mit einem höheren Risikofaktor mehr Punkte vergeben werden, wenn das Steuerelement fehlschlägt, und weniger Punkte für Steuerelemente mit niedrigerem Risiko. 
+Jede Bewertung zeigt einen Wert der risikobasierten Compliancebewertung, damit Sie das Risikoniveau (aufgrund einer Nichtkonformität oder eines Steuerelementfehlers) im Zusammenhang mit jedem Steuerelement (einschließlich der von Microsoft verwalteten und vom Kunden verwalteten Steuerelemente) in einer Bewertung abschätzen können. Jedem vom Kunden verwalteten Steuerelement wird eine mögliche Anzahl von Punkten auf einer Skala von 1 bis 10 zugeordnet (als *Schweregradeinstufung bezeichnet). Dabei werden Steuerelementen mit einem höheren Risikofaktor beim Fehlschlagen mehr Punkte und Steuerelementen mit einem geringen Risiko weniger Punkte zugeordnet. 
   
 Das unten dargestellte Bewertungssteuerelement für die Verwaltung des Benutzerzugriffs hat einen sehr hohen Schweregrad. Deshalb wird der Wert 10 angezeigt.
   
@@ -132,7 +121,7 @@ Das unten dargestellte Bewertungssteuerelement für die Verwaltung des Benutzerz
   
 Der Compliance-Manager weist einen standardmäßigen Schweregrad für jedes Steuerelement zu. Risikobewertungen werden basierend auf den folgenden Kriterien berechnet:
   
-- Ob ein Steuerelement Zwischenfälle verhindert (höchste Bewertung), bereits geschehene Vorfälle erkennt oder die Auswirkungen eines Zwischenfalls korrigiert (niedrigste Bewertung). Im Hinblick auf den Schweregrad wird einem obligatorischen Steuerelement, das eine Bedrohung verhindert, die höchste Anzahl von Punkten zugewiesen; Steuerelementen, die Bedrohungen erkennen oder korrigieren (unabhängig davon, ob sie obligatorisch sind oder nach Ermessen verwendet werden), werden die niedrigsten Punktzahlen zugewiesen.
+- Ob ein Steuerelement das Auftreten von Vorfällen verhindert (die höchste Einstufung), Vorfälle, die geschehen sind, erkennt oder die Auswirkungen eines Vorfalls korrigiert (niedrigste Einstufung). Im Hinblick auf die Schweregradeinstufung wird einem obligatorischen Steuerelement, das eine Bedrohung verhindert, die höchste Punktzahl zugeordnet. Steuerelementen, die zur Erkennung oder Behebung dienen (unabhängig davon, ob sie obligatorisch sind oder nach eigenem Ermessen angewendet werden), wird die niedrigste Punktzahl zugeordnet.
     
 - Ob ein Steuerelement (nach seiner Implementierung) erforderlich ist und deshalb von den Benutzern nicht umgangen werden kann (Benutzer müssen beispielsweise ihr Kennwort zurücksetzen und Anforderungen im Hinblick auf Kennwortlänge und -zeichen erfüllen), oder ob es frei verfügbar ist und von Benutzern umgangen werden kann (zum Beispiel Geschäftsregeln, die erfordern, dass Benutzer ihre Bildschirme sperren, wenn sie sich nicht an ihren Computern befinden).
     
@@ -142,13 +131,13 @@ Der Compliance-Manager weist einen standardmäßigen Schweregrad für jedes Steu
     
 Die angezeigten Werte für die Compliance-Bewertung für das Steuerelement werden basierend auf dem Kriterium „Bestanden/Nicht bestanden) *vollständig* auf das Gesamtergebnis angewendet – das Steuerelement wird implementiert und besteht den nachfolgenden Bewertungstest, oder es besteht den Test nicht. Nur wenn der **Implementierungsstatus** des Steuerelements auf **Implementiert** oder **Alternative Implementierung** und das **Testergebnis** auf **Bestanden** festgelegt ist, werden die zugewiesenen Punkte zum Gesamtwert addiert. 
   
-Was am wichtigsten ist: Mithilfe der Compliancebewertung können Sie priorisieren, welche Steuerelemente für die Implementierung verwendet werden sollen, indem Sie Steuerelemente angeben, die ein höheres potenzielles Risiko aufweisen, wenn ein Fehler im Zusammenhang mit einem Steuerelement auftritt. Neben der risikobasierten Priorisierung ist zu beachten, dass wenn Bewertungssteuerelemente mit anderen Steuerelementen verknüpft sind (entweder in der gleichen Bewertung oder in einer anderen Bewertung, die sich in derselben Bewertungsgruppierung befindet), das erfolgreiche Abschließen eines einzigen Steuerelements zu einer wesentlichen Reduzierung des Aufwands basierend auf der Synchronisierung von Steuerelement-Testergebnissen führen kann.
+Die Compliancebewertung kann Ihnen insbesondere bei der Priorisierung von Steuerelementen helfen, auf die bei der Implementierung der Schwerpunkt gelegt werden muss, indem angegeben wird, welche Steuerelemente bei einem Fehler ein höheres mögliches Risiko aufweisen. Neben der risikobasierten Priorisierung ist Folgendes zu beachten: Wenn sich die Bewertungssteuerelemente auf andere Steuerelemente beziehen (entweder innerhalb derselben Bewertung oder in einer anderen Bewertung in derselben Bewertungsgruppe), kann der erfolgreiche Abschluss eines einzelnen Steuerelements zu einer erheblichen Verringerung des Aufwands basierend auf der Synchronisierung der Steuerelement-Testergebnisse führen.
   
 In der Abbildung unten sehen wir beispielsweise, dass die Bewertung „Office 365 – DSGVO“ derzeit zu 46 % bewertet ist, was bedeutet, dass 51 von 111 Steuerelementbewertungen mit einer Gesamtbewertung von 289 Punkten von möglichen 600 Punkten abgeschlossen wurden.
   
 ![Compliance-Manager – Zusammenfassung der Bewertung](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
-In der Bewertung ist das DSGVO-Steuerelement 7.5.5 mit 5 anderen Steuerelementen verknüpft (7.4.1, 7.4.3, 7.4.4, 7.4.8 und 7.4.9), die alle einen mittleren bis hohen Schweregrad von 6 oder 8 aufweisen). Mithilfe des Bewertungsfilters wurden all diese Steuerelemente ausgewählt und so in der Bewertungsansicht sichtbar gemacht. Unten können Sie sehen, dass keines davon bewertet wurde. 
+In der Bewertung bezieht sich das DSGVO-Steuerelement 7.5.5 auf 5 andere Steuerelemente (7.4.1, 7.4.3, 7.4.4, 7.4.8 und 7.4.9), die jeweils einen mittleren bis hohen Risikobewertungswert von 6 oder 8 für den Schweregrad aufweisen). Mithilfe des Bewertungsfilters haben wir alle diese Steuerelemente ausgewählt, sodass sie in der Bewertungsansicht angezeigt werden. Sie können unten erkennen, dass keines von ihnen bewertet wurde. 
   
 ![Compliance-Manager – Bewertungsansicht – Filtersteuerelemente, keines bewertet](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Da diese 6 Steuerelemente miteinander verknüpft sind, führt das Abschließen eines der Steuerelemente zu einer Synchronisierung dieser Testergebnisse über die verknüpften Steuerelemente in der Bewertung (genau wie bei allen verknüpften Steuerelementen in einer Bewertung, die sich in derselben Bewertungsgruppierung befindet). Bei Abschluss der Implementierung und des Tests des DSGVO-Steuerelements 7.5.5 wird der Detailbereich des Steuerelements so aktualisiert, dass angezeigt wird, dass alle 6 Steuerelemente bewertet wurden, und es ist ein entsprechender Anstieg der Anzahl bewerteter Steuerelemente auf 57 und 51 % bewertete Steuerelemente sowie eine Änderung des Gesamtwerts auf +40 zu beobachten. 
   
@@ -170,7 +159,7 @@ Die Compliance-Bewertung, wie der Microsoft Secure Store, ist anderen verhaltens
   
 Bewertungen im Compliance-Manager basieren auf dem Modell für gemeinsame Verantwortung für Cloud Computing. Im Modell für gemeinsame Verantwortung teilen sich Microsoft und alle Kunden die Verantwortung für den Schutz der Kundendaten, wenn diese in unserer Cloud gespeichert werden.
   
-Wie in der Office 365-DSGVO-Bewertung unten dargestellt, sind sowohl Microsoft als auch Kunden dafür verantwortlich, unterschiedliche Aktionen durchzuführen, die dazu dienen sollen, die Anforderungen des bewerteten Standards oder der bewerteten Vorschrift zu erfüllen. Um die erforderlichen Aktionen von einer Vielzahl von Standards und Vorschriften hinweg zu rationalisieren und zu verstehen, werden im Compliance-Manager alle Standards und Vorschriften so behandelt, als wären sie Steuerelement-Frameworks. Die für jede Bewertung von Microsoft und Kunden durchgeführten Aktionen umfassen daher die Implementierung und Überprüfung mehrerer Steuerelemente.
+Wie aus der folgenden Office 365 DSGVO-Bewertung hervorgeht, sind Microsoft und seine Kunden jeweils für die Durchführung einer Reihe von Maßnahmen verantwortlich, die den Anforderungen der zu beurteilenden Standards oder Vorschriften entsprechen. Um die erforderlichen Maßnahmen für eine Vielzahl von Standards und Vorschriften zu rationalisieren und zu verstehen, behandelt der Compliance-Manager alle Standards und Vorschriften so, als wären sie Kontrollframeworks. So beinhalten die von Microsoft und den Kunden für jede Bewertung durchgeführten Maßnahmen die Implementierung und Validierung verschiedener Steuerelemente.
   
 ![Compliance-Manager – DSGVO-Bewertung](media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
   
