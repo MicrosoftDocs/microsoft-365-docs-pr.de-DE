@@ -10,18 +10,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+hideEdit: true
+ms.openlocfilehash: 7b42333f23e674af07bf8acc15069d04605c5e84
+ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982306"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37422422"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Prüfliste für Microsoft-Support und Dienstleistungen zu den Verantwortlichkeiten für die DSGVO
 
 ## <a name="1-introduction"></a>1. Einführung
 
-Diese Prüfliste zu den Verantwortlichkeiten ermöglicht den bequemen Zugriff auf Informationen, die Sie bei Nutzung von Microsoft Professional Services und Microsoft-Produktsupport zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste ist basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut:
+Diese Prüfliste zu den Verantwortlichkeiten ist eine bequeme Möglichkeit, um auf Informationen zuzugreifen, die Sie bei Nutzung von Microsoft Professional Services und Supportdiensten zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste ist basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut:
 
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) für Techniken und Anforderungen im Zusammenhang mit dem Datenschutzinformationsmanagement.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für allgemeine Anforderungen im Zusammenhang mit dem Informationssicherheitsmanagement.

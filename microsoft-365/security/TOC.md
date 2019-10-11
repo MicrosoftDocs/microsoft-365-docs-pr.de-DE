@@ -19,6 +19,13 @@
 
 ### [Verwalten von Tickets über ServiceNow](./mtp/tickets.md)
 
+
+## [Konfigurationen für den Identitäts- und Gerätezugriff](../enterprise/microsoft-365-policies-configurations.md)
+### [Erforderliche Arbeit](../enterprise/identity-access-prerequisites.md)
+### [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../enterprise/identity-access-policies.md)
+### [Empfohlene Exchange Online-Zugriffsrichtlinien](../enterprise/secure-email-recommended-policies.md)
+### [Empfohlene SharePoint Online-Zugriffsrichtlinien](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Sicherheit in Office 365]()
 ### [Erste Schritte]()
 #### [Inhaltsübersicht für die Sicherheit von Office 365](./office-365-security/security-roadmap.md)
@@ -43,7 +50,6 @@
 ##### [Häufig gestellte Fragen zum Schutz vor Schadsoftware](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Antispam- und Antischadsoftwareschutz in Office 365](./office-365-security/anti-malware-protection.md)
 ##### [Häufig gestellte Fragen zum Antispamschutz](./office-365-security/anti-spam-protection-faq.md)
-##### [Steuern ausgehender Spamnachrichten in Office 365](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [Vermeiden von ungültigen Zeichen in ihren Spamfilterregeln und der Spamfilterrichtlinie](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Listen sicherer und blockierter Absender in Exchange Online](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Sicherheitstipps in E-Mail-Nachrichten in Office 365](./office-365-security/safety-tips-in-office-365.md)
@@ -253,4 +259,8 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+
+
+
 ## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)

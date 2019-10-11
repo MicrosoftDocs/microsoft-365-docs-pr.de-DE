@@ -1,7 +1,7 @@
 ---
 title: Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,25 +10,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Office 365 Organisation fließen.
-ms.openlocfilehash: 50b068c39ad02d04596b6598c31333be79ac28c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082167"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441532"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
 Mithilfe von Nachrichtenflussregeln (auch bekannt als Transportregeln) können Sie Nachrichten, die über Ihre Office 365-Organisation fließen, identifizieren und Maßnahmen dafür ergreifen. Nachrichtenflussregeln sind mit den Posteingangsregeln vergleichbar, die in Outlook und Outlook im Web zur Verfügung stehen. Der Hauptunterschied besteht darin, dass Nachrichtenflussregeln Nachrichten während der Übertragung behandeln und nicht nach der Übermittlung der Nachricht an das Postfach. Nachrichtenflussregeln enthalten einen reichhaltigeren Satz an Bedingungen, Ausnahmen und Aktionen, sodass Sie über die Flexibilität verfügen, viele Arten von Nachrichtenrichtlinien zu implementieren.
-  
+
 In diesem Artikel werden die Komponenten von Nachrichtenflussregeln und deren Funktionsweise erläutert.
-  
+
 Schritte zum Erstellen, kopieren und Verwalten von Nachrichtenfluss Regeln finden Sie unter [Manage Mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Bei jeder Regel haben Sie die Möglichkeit, sie zu erzwingen, sie zu testen oder sie zu testen und den Absender zu benachrichtigen. Weitere Informationen zu den Testoptionen finden Sie unter [Test Mail Flow Rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
-  
+
 Eine Zusammenfassung und ausführliche Berichte zu Nachrichten, die Nachrichtenflussregeln entsprechen, finden Sie unter [Verwenden von Berichten zum E-Mail-Schutz in Office 365, um Daten über Schadsoftware, Spam und Regelerkennung anzuzeigen](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
-  
+
 Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von Nachrichtenflussregeln finden Sie in den folgenden Themen:
-  
+
 - [Verwenden von Nachrichtenfluss Regeln zum Überprüfen von Nachrichtenanlagen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Einrichten der Verschlüsselung in Office 365 Enterprise](../../compliance/set-up-encryption.md)
@@ -44,20 +44,20 @@ Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von
 - [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von E-Mail-Nachrichten](https://go.microsoft.com/fwlink/p/?Linkid=402846)
 
 Das folgende Video bietet eine Demonstration zum Einrichten von Nachrichtenfluss Regeln in Exchange Online Schutz.
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
+
 ## <a name="mail-flow-rule-components"></a>Komponenten von Nachrichtenflussregeln
 
 Eine Nachrichtenflussregel besteht aus Bedingungen, Ausnahmen, Aktionen und Eigenschaften:
-  
-- **Bedingungen**: identifizieren Sie die Nachrichten, auf die Sie die Aktionen anwenden möchten. Einige Bedingungen untersuchen Nachrichtenkopffelder (beispielsweise die Felder "an", "von" oder "CC"). Andere Bedingungen untersuchen Nachrichteneigenschaften (beispielsweise Nachrichtenbetreff, Text, Anlagen, Nachrichtengröße oder Nachrichtenklassifikation). Bei den meisten Bedingungen müssen Sie einen Vergleichsoperator angeben (beispielsweise Equals, doesn 't EQUAL oder Contains) und einen Wert, der übereinstimmen soll. Wenn keine Bedingungen oder Ausnahmen vorhanden sind, wird die Regel auf alle Nachrichten angewendet. 
+
+- **Bedingungen**: identifizieren Sie die Nachrichten, auf die Sie die Aktionen anwenden möchten. Einige Bedingungen untersuchen Nachrichtenkopffelder (beispielsweise die Felder "an", "von" oder "CC"). Andere Bedingungen untersuchen Nachrichteneigenschaften (beispielsweise Nachrichtenbetreff, Text, Anlagen, Nachrichtengröße oder Nachrichtenklassifikation). Bei den meisten Bedingungen müssen Sie einen Vergleichsoperator angeben (beispielsweise Equals, doesn 't EQUAL oder Contains) und einen Wert, der übereinstimmen soll. Wenn keine Bedingungen oder Ausnahmen vorhanden sind, wird die Regel auf alle Nachrichten angewendet.
 
 Weitere Informationen zu Bedingungen für Nachrichtenfluss Regeln in Exchange Online Protection finden Sie unter [Nachrichtenfluss Regelbedingungen und Ausnahmen (Prädikate) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Ausnahmen**: identifizieren Sie optional die Nachrichten, auf die die Aktionen nicht angewendet werden sollten. In Ausnahmen sind die gleichen Nachrichten-IDs verfügbar wie in Bedingungen. Mit Ausnahmen werden Bedingungen außer Kraft gesetzt, und es wird verhindert, dass die Regelaktionen auf eine Nachricht angewendet werden, und zwar auch dann, wenn die Nachricht allen konfigurierten Bedingungen entspricht. 
+- **Ausnahmen**: identifizieren Sie optional die Nachrichten, auf die die Aktionen nicht angewendet werden sollten. In Ausnahmen sind die gleichen Nachrichten-IDs verfügbar wie in Bedingungen. Mit Ausnahmen werden Bedingungen außer Kraft gesetzt, und es wird verhindert, dass die Regelaktionen auf eine Nachricht angewendet werden, und zwar auch dann, wenn die Nachricht allen konfigurierten Bedingungen entspricht.
 
-- **Actions**: Geben Sie an, was mit Nachrichten ausgeführt werden soll, die den Bedingungen in der Regel entsprechen, und stimmen Sie keiner der Ausnahmen überein. Es stehen zahlreiche Aktionen zur Verfügung, wie Ablehnen, Löschen oder Umleiten von Nachrichten, Hinzufügen weiterer Empfänger, Hinzufügen von Präfixen zum Nachrichtenbetreff oder Einfügen von Haftungsausschlüssen in den Nachrichtentext. 
+- **Actions**: Geben Sie an, was mit Nachrichten ausgeführt werden soll, die den Bedingungen in der Regel entsprechen, und stimmen Sie keiner der Ausnahmen überein. Es stehen zahlreiche Aktionen zur Verfügung, wie Ablehnen, Löschen oder Umleiten von Nachrichten, Hinzufügen weiterer Empfänger, Hinzufügen von Präfixen zum Nachrichtenbetreff oder Einfügen von Haftungsausschlüssen in den Nachrichtentext.
 
 Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in Exchange Online Protection verfügbar sind, finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
@@ -68,7 +68,7 @@ Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in Exchange 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Mehrere Bedingungen, Ausnahmen und Aktionen
 
 Die folgende Tabelle zeigt, wie mehrere Bedingungen, Bedingungswerte, Ausnahmen und Aktionen in einer Regel verarbeitet werden.
-  
+
 |**Komponente**|**Logik**|**Kommentare**|
 |:-----|:-----|:-----|
 |Kommentare|UND|Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine von zwei Bedingungen erfüllt werden muss, verwenden Sie für die Bedingungen separate Regeln. Wenn Sie z. B. Nachrichten mit Anlagen und Nachrichten, die einen bestimmten Text enthalten, die gleiche Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. In der Exchange-Verwaltungskonsole können Sie eine Regel ganz einfach kopieren.|
@@ -79,7 +79,7 @@ Die folgende Tabelle zeigt, wie mehrere Bedingungen, Bedingungswerte, Ausnahmen 
 ### <a name="mail-flow-rule-properties"></a>Eigenschaften von Nachrichtenflussregeln
 
 Die folgende Tabelle beschreibt die Regeleigenschaften, die in Nachrichtenflussregeln zur Verfügung stehen.
-  
+
 |**Eigenschaftenname in der Exchange-Verwaltungskonsole**|**Parametername in PowerShell**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**Priority**|_Priority_|Gibt die Reihenfolge an, in der die Regeln auf Nachrichten angewendet werden. Die Standardpriorität basiert auf dem Erstellungsdatum der Regel (ältere Regeln haben eine höhere Priorität als neuere Regeln, und Regeln mit höherer Priorität werden vor Regeln mit niedrigerer Priorität verarbeitet).   <br/><br/> Sie ändern die Regelpriorität in der Exchange-Verwaltungskonsole, indem Sie die Regel in der Liste der Regeln nach oben oder unten verschieben. In der PowerShell legen Sie die Prioritätsnummer fest (0 ist die höchste Priorität).   <br/><br/> Wenn Sie z. B. eine Regel verwenden, um Nachrichten abzulehnen, die eine Kreditkartennummer enthalten, und eine andere Regel, die eine Genehmigung erfordert, sollte die Ablehnungsregel zuerst angewendet werden, und es sollten keine anderen Regeln mehr angewendet werden.      |
@@ -94,13 +94,13 @@ Die folgende Tabelle beschreibt die Regeleigenschaften, die in Nachrichtenflussr
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Wie Nachrichtenflussregeln auf Nachrichten angewendet werden
 
 Alle Nachrichten, die Ihre Organisation durchlaufen, werden anhand der aktivierten Nachrichtenflussregeln in Ihrer Organisation ausgewertet. Regeln werden in der Reihenfolge verarbeitet, die auf der Seite **Nachrichtenfluss** \> **Regeln** in der Exchange-Verwaltungskonsole aufgeführt ist, oder basierend auf dem entsprechenden _Priority_ -Parameterwert in der PowerShell.
-  
+
 Jede Regel bietet außerdem die Möglichkeit, die Verarbeitung weiterer Regeln anzuhalten, wenn die Regel erfüllt wird. Diese Einstellung ist für Nachrichten wichtig, die die Bedingungen in mehreren E-Mail-Flussregeln erfüllen. (Welche Regel soll auf die die Nachricht angewendet werden? Alle? Nur eine?)
-  
+
 ### <a name="differences-in-processing-based-on-message-type"></a>Unterschiede in der Verarbeitung basierend auf dem Nachrichtentyp
 
 Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die folgende Tabelle zeigt, welche Nachrichtentypen von Nachrichtenflussregeln verarbeitet werden können.
-  
+
 ****
 
 |**Nachrichtentyp**|**Kann eine Regel angewendet werden?**|
@@ -121,9 +121,9 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 - Nach dem Erstellen oder Ändern einer E-Mail-Flussregel kann es bis zu 30 Minuten dauern, bis die neue oder aktualisierte Regel auf Nachrichten angewendet wird.
 
 ## <a name="for-more-information"></a>Weitere Informationen
-  
+
 [Verwenden von Nachrichtenfluss Regeln zum Überprüfen von Nachrichtenanlagen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
-  
+
 [E-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
-  
+
 [Journal-, Transport- und Posteingangsregelgrenzen](https://go.microsoft.com/fwlink/p/?LinkId=324584)

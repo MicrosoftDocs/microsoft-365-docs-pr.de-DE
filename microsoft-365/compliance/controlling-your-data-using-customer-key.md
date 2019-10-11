@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie den Kundenschlüssel für Office 365 für Exchange Online, Skype for Business, SharePoint Online und OneDrive für Unternehmen einrichten. Mit dem Kundenschlüssel steuern Sie die Verschlüsselungsschlüssel Ihrer Organisation und konfigurieren dann Office 365, damit Sie Ihre Daten im Ruhezustand in den Microsoft-Rechenzentren verschlüsseln können.
-ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d3e10a32aeedc90dc06257a29b63df8657157a0b
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080992"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435529"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
 
@@ -504,7 +504,7 @@ Um den Kundenschlüssel für SharePoint Online und OneDrive für Unternehmen ein
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>Erstellen einer Daten Verschlüsselungsrichtlinie für jede SharePoint Online und OneDrive für Unternehmen Geo
 <a name="CreateDEP4SPOODfB"> </a>
 
-Eine DEP ist einer Reihe von Schlüsseln zugeordnet, die in Azure Key Vault gespeichert sind. Sie wenden einen DEP auf alle Ihre Daten an einem geografischen Standort an, der auch als Geo bezeichnet wird. Wenn Sie das Multi-Geo-Feature von Office 365 (derzeit in der Vorschau) verwenden, können Sie eine DEP pro Geo erstellen. Wenn Sie keine Multi-Geo-Daten verwenden, können Sie eine DEP in Office 365 für die Verwendung mit SharePoint Online und OneDrive für Unternehmen erstellen. Office 365 verwendet dann die in der DEP identifizierten Schlüssel, um Ihre Daten in diesem Geo zu verschlüsseln. Zum Erstellen der DEP benötigen Sie die wichtigsten Vault-URIs, die Sie zuvor abgerufen haben. Anweisungen finden Sie unter [Abrufen des URI für jeden Azure Key Vault-Schlüssel](controlling-your-data-using-customer-key.md#GetKeyURI) . 
+Eine DEP ist einer Reihe von Schlüsseln zugeordnet, die in Azure Key Vault gespeichert sind. Sie wenden einen DEP auf alle Ihre Daten an einem geografischen Standort an, der auch als Geo bezeichnet wird. Wenn Sie das Multi-Geo-Feature von Office 365 verwenden, können Sie eine DEP pro Geo erstellen. Wenn Sie keine Multi-Geo-Daten verwenden, können Sie eine DEP in Office 365 für die Verwendung mit SharePoint Online und OneDrive für Unternehmen erstellen. Office 365 verwendet dann die in der DEP identifizierten Schlüssel, um Ihre Daten in diesem Geo zu verschlüsseln. Zum Erstellen der DEP benötigen Sie die wichtigsten Vault-URIs, die Sie zuvor abgerufen haben. Anweisungen finden Sie unter [Abrufen des URI für jeden Azure Key Vault-Schlüssel](controlling-your-data-using-customer-key.md#GetKeyURI) . 
   
 Denken Sie daran! Wenn Sie eine Datenausführungsverhinderung erstellen, geben Sie zwei Schlüssel an, die sich in zwei verschiedenen Azure-Schlüssel Tresoren befinden. Stellen Sie sicher, dass sich diese Schlüssel in zwei separaten Azure-Regionen befinden, um die Geo-Redundanz sicherzustellen.
   

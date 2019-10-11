@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 0dcbe9e39f33cab65dff6033f0b78ceb7e1c42cc
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369536"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437865"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -123,6 +123,10 @@ Erfahren Sie, wie Core Services Engineering and Operations (ehemals Microsoft IT
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise für die Contoso Corporation
 
 Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie [Contoso Microsoft 365 Enterprise bereitgestellt](contoso-case-study.md) und dabei wichtige Designentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Office 365 ProPlus, Verwaltung mobiler Geräte, Datenschutz und Sicherheit berücksichtigt. 
+
+## <a name="stay-current-with-deployment-content"></a>Immer auf dem neuesten Stand mit Bereitstellungsinhalten
+
+Die neuesten Änderungen am Inhalt finden Sie in [diesem Artikel](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Nächster Schritt
 

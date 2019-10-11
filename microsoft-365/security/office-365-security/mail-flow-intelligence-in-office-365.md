@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die mit der Nachrichtenzustellung in Office 365 (auch als Nachrichtenfluss-Intelligence bezeichnet) verbunden sind.
-ms.openlocfilehash: 718634f17ad5dd54773f2dc00595d5651cd27b51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081196"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441542"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligente Nachrichtenübermittlung in Office 365
 
@@ -130,6 +130,6 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 bei dem Versuch, das Zerti
 
 ## <a name="other-error-codes"></a>Andere Fehlercodes
 
-Office 365 Probleme bei der Zustellung von Nachrichten an Ihren lokalen oder Partner-e-Mail-Server. Verwenden Sie die Informationen zum **Zielserver** im Fehler, um das Problem in Ihrer Umgebung zu untersuchen, oder ändern Sie den Konnektor bei einem Konfigurationsfehler. 
+Office 365 Probleme bei der Zustellung von Nachrichten an Ihren lokalen oder Partner-e-Mail-Server. Verwenden Sie die Informationen zum **Zielserver** im Fehler, um das Problem in Ihrer Umgebung zu untersuchen, oder ändern Sie den Konnektor bei einem Konfigurationsfehler.
 
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.

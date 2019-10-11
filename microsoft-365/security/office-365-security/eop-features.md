@@ -1,7 +1,7 @@
 ---
 title: EOP-Funktionen
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,20 +10,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-ms.openlocfilehash: a5a11204cff0392245c91d371aad0fcae9e4d124
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1dd3ff638c9cb209c51a82fd2388057f3bf4b95e
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081308"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441512"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 
 Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-  
+
 > [!TIP]
-> Die [Roadmap: Office 365 for Business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) ist eine gute Ressource für Informationen zu demnächst verfügbaren neuen Funktionen. Einen umfassenderen Überblick über die Funktionen in den verschiedenen EOP-Abonnementplänen finden Sie unter [Exchange Online Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). 
-  
+> Die [Roadmap: Office 365 for Business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) ist eine gute Ressource für Informationen zu demnächst verfügbaren neuen Funktionen. Einen umfassenderen Überblick über die Funktionen in den verschiedenen EOP-Abonnementplänen finden Sie unter [Exchange Online Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
 |||
 |:-----|:-----|
 |**Feature**|**Beschreibung**|
@@ -41,7 +41,7 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |Konfiguration von erweiterten Optionen beim aggressiveren Filtern von Spam|Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md) (Where you configure them) und [Advanced Spam Filtering Options](advanced-spam-filtering-asf-options.md) (which are Specific Details to what any Option).|
 |Internationale Spamfilterung|Sie können EoP so konfigurieren, dass Nachrichten gefiltert werden, die in bestimmten Sprachen verfasst oder aus bestimmten Ländern oder Regionen gesendet werden. Es können bis zu 86 Sprachen und 250 Regionen konfiguriert werden. Der Dienst wendet die konfigurierte Aktion auf Spam mit hoher Vertrauenswürdigkeit an. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).|
 |Verwalten von Spam über Outlook oder Outlook im Internet (früher bekannt als Outlook Web App)|Administratoren und Endbenutzer können Listen sicherer Absender und Listen blockierter Absender erstellen. Weitere Informationen: <br/>• **Outlook im Internet**: siehe [blockieren oder zulassen (Einstellungen für Junk-e-Mail)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46).  <br/>• **Outlook**: siehe [Übersicht über den Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). <br/><br/> Wenn Sie EoP zum Schutz von lokalen Postfächern verwenden, müssen Sie unbedingt die Verzeichnissynchronisierung verwenden, um sicherzustellen, dass diese Einstellungen mit dem Dienst synchronisiert werden. Weitere Informationen zum Einrichten der Verzeichnissynchronisierung finden Sie unter "Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung" in [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).|
-|Spamübermittlungen über das Add-In "Junk-E-Mail-Berichtsprogramm" für Microsoft Office Outlook|Sie können ein Add-In für Outlook herunterladen, mit dem Sie Spamnachrichten zur Analyse an Microsoft senden können. Weitere Informationen zum herunterladen und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> Wenn Sie Exchange Server 2013 oder höher mit EoP verwenden, können Sie auch mit der rechten Maustaste auf Outlook im Internet klicken, um Spamnachrichten zu übermitteln, wie unter [melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)beschrieben.|
+|Spamübermittlungen über das Add-In "Junk-E-Mail-Berichtsprogramm" für Microsoft Office Outlook|Sie können ein Add-In für Outlook herunterladen, mit dem Sie Spamnachrichten zur Analyse an Microsoft senden können. Weitere Informationen zum herunterladen und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> Wenn Sie Exchange Server 2013 oder höher mit EoP verwenden, können Sie auch mit der rechten Maustaste auf Outlook im Internet klicken, um Spamnachrichten zu übermitteln, wie unter [melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)beschrieben.|
 |Übermitteln von Spam- und Nicht-Spamnachrichten über einen E-Mail-Alias|Sie können Spamnachrichten (Junk-E-Mail) und Nicht-Spamnachrichten (keine Junk-E-Mail) per E-Mail an Microsoft senden. Weitere Informationen finden Sie unter [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).|
 |Spam-und nicht-Spam-Übermittlungen über Outlook im Internet-Junk-e-Mail-Berichterstellung|Sie können Spam-und nicht-Spamnachrichten über Outlook im Internet über die Junk-e-Mail-Berichterstellung an Microsoft übermitteln. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> Dieses Feature steht derzeit für Outlook im webkunden zur Verfügung, deren Exchange Server 2013 SP1-oder höher-Postfächer von EoP gefiltert werden. Exchange Online Outlook im Internet-Kunden wird diese Funktion auch in naher Zukunft haben.|
 |Spamquarantänebenachrichtigungen für Endbenutzer|Endbenutzer können ihre eigenen Nachrichten in Spamquarantäne freigeben und diese über Spambenachrichtigungen für Endbenutzer als Nicht-Junk-E-Mails melden. Diese Benachrichtigungs-e-Mails müssen von einem Administrator konfiguriert und aktiviert werden, wie unter [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) oder [configure End-User Spam Notifications in EoP](configure-end-user-spam-notifications-in-eop.md)beschrieben.|
@@ -77,7 +77,7 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |Ändern der SCL-Bewertung einer Nachricht anhand einer Regel|Sie können eine Nachricht während der Übertragung untersuchen und der Nachricht basierend auf den gewählten Kriterien eine SCL-Bewertung zuweisen. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenfluss Regeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).|
 |Überprüfen von Nachrichtenanlagen|Sie können die Inhalte einer Anlage oder die Merkmale einer angehängten Daten untersuchen und ausgehend von den gefundenen Informationen eine durchzuführende Maßnahmen definieren. Weitere Informationen finden Sie unter [using Mail Flow Rules to Inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).|
 |**Verwaltung**||
-|Webbasierte Verwaltung|EOP-Administratoren können den Dienst über die Benutzeroberfläche des Exchange Admin Center verwalteten, die in 60 Sprachen verfügbar ist. Weitere Informationen finden Sie unter [Exchange Admin Center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md).|
+|Webbasierte Verwaltung|EOP-Administratoren können den Dienst über die Benutzeroberfläche des Exchange Admin Center verwalteten, die in 60 Sprachen verfügbar ist. Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Verzeichnissynchronisierung|Die Verzeichnissynchronisierung ist über das Azure Active Directory-Synchronisierungstool verfügbar. Weitere Informationen finden Sie unter "Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung" unter [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).  |
 |Verzeichnisbasierte Edge-Blockierung (DBEB)|DBEB ermöglicht es Ihnen, Nachrichten für ungültige Empfänger im Dienstnetzwerkumkreis abzulehnen. Mit DBEB können Administratoren Office 365 E-Mail-aktivierte Empfänger hinzufügen und alle an E-Mail-Adressen, die sich nicht in Office 365 befinden, gesendeten Nachrichten blockieren. Weitere Informationen zum Konfigurieren von Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.|
 |Zugriff auf die remote verwendete Windows PowerShell|Die vollständige EOP-Funktionalität ist über die remote verwendete Windows PowerShell verfügbar. Weitere Informationen finden Sie unter [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|

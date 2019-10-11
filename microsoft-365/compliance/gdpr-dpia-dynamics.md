@@ -11,12 +11,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: f85ba942649f70e6bd8c1fdc73b1f0f4005be1bc
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+hideEdit: true
+ms.openlocfilehash: 6b616da44266dd7ab6bbc15dbdbeb270523c14eb
+ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698157"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37422362"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Dynamics 365 verwenden
 

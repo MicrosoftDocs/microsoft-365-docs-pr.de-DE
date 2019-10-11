@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288493"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440593"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business im Setup-Assistenten
 
@@ -44,7 +44,7 @@ Wenn Sie Microsoft 365 Business erwerben, haben Sie die Möglichkeit, eine Domä
     > [!IMPORTANT]
     > Wenn Sie während der Registrierung eine Domäne erworben haben, wird hier kein Domänen Schritt **Hinzufügen** angezeigt. Wechseln Sie stattdessen zu [Benutzer hinzufügen](#add-users-and-assign-licenses) .
 
-    ![Wählen Sie Domäne hinzufügen aus.](media/addadomainadmincenter.png)
+    ![Wählen Sie Gehe zu Setup aus.](media/gotosetupinadmincenter.png)
     
 3. Geben Sie im Assistenten den Domänennamen ein, den Sie verwenden möchten (wie contoso.com).
 
@@ -70,7 +70,9 @@ Alle Benutzer, die Sie dem Assistenten hinzufügen, erhalten automatisch eine Mi
 
 1. Wenn Ihr Microsoft 365 Business-Abonnement über vorhandene Benutzer verfügt (beispielsweise, wenn Sie Azure AD Connect verwendet haben), erhalten Sie eine Option, um Ihnen jetzt Lizenzen zuzuweisen. Fügen Sie die Lizenzen ebenfalls hinzu.
 
-3. Nachdem Sie die Benutzer hinzugefügt haben, erhalten Sie auch eine Option zum Freigeben von Anmeldeinformationen für die neuen Benutzer, die Sie hinzugefügt haben. Sie können auswählen, ob Sie Sie ausdrucken, per e-Mail versenden oder herunterladen möchten.
+2. Nachdem Sie die Benutzer hinzugefügt haben, erhalten Sie auch eine Option zum Freigeben von Anmeldeinformationen für die neuen Benutzer, die Sie hinzugefügt haben. Sie können auswählen, ob Sie Sie ausdrucken, per e-Mail versenden oder herunterladen möchten.
+
+3. Im Erstellen von Teams für Ihre Organisation können Sie Microsoft Teams hinzufügen und Benutzer hinzufügen. Sie können dies auch später tun. Weitere Informationen finden Sie unter [Erstellen eines unternehmensweiten Teams](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
 
 4. Überspringen Sie die Migration von e-Mail-Nachrichten, und wählen Sie **weiter** auf Seite **e-Mails migrieren** . 
 
@@ -86,14 +88,14 @@ Zum Einrichten von Diensten müssen Sie einige Datensätze bei Ihrem DNS-Host od
   
 1. Der Setup-Assistent erkennt normalerweise Ihre Registrierungsstelle und stellt einen Link zu Schritt-für-Schritt-Anweisungen zum Aktualisieren der NS-Einträge auf der Registrierungsstellen Website bereit. Wenn dies nicht der Fall ist, ändern Sie Namen [Server, um Office 365 bei einer beliebigen Domänenregistrierungsstelle einzurichten](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - Wenn Sie über vorhandene DNS-Einträge verfügen, beispielsweise eine vorhandene Website, Ihr DNS-Host jedoch für die [Domäne Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)aktiviert ist, wählen Sie **für mich Datensätze hinzufügen**aus. 
+    - Wenn Sie über vorhandene DNS-Einträge verfügen, beispielsweise eine vorhandene Website, Ihr DNS-Host jedoch für die [Domäne Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)aktiviert ist, wählen Sie **für mich Datensätze hinzufügen**aus. Übernehmen Sie auf der Seite **Wählen Sie Ihre Onlinedienste aus** alle Standardeinstellungen, und wählen Sie **weiter**aus, und klicken Sie auf der Seite Ihres DNS-Hosts auf **autorisieren** .
     - Wenn Sie über vorhandene DNS-Einträge mit anderen DNS-Hosts verfügen (nicht für Domäne Connect aktiviert), sollten Sie Ihre eigenen DNS-Einträge verwalten, um sicherzustellen, dass die vorhandenen Dienste verbunden bleiben. Weitere Informationen finden Sie unter [Domain Basics](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
 
         ![Verbinden Sie Ihre Domänen Seite mit ich werde meine eigenen DNS-Einträge verwalten.](media/connectyourdomainpage.png)
 
 2. Führen Sie die Schritte im Assistenten aus, und e-Mail und andere Dienste werden für Sie eingerichtet.
 
-### <a name="set-up-security-policies-and-device-configurations"></a>Einrichten von Sicherheitsrichtlinien und Gerätekonfigurationen 
+### <a name="protect-data-and-devices"></a>Schützen von Daten und Geräten 
 
 Die Richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch auf eine [Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) mit dem Namen " *alle Benutzer*" angewendet. Sie können auch weitere Gruppen zum Zuweisen von Richtlinien im Admin Center erstellen.
 
@@ -113,7 +115,6 @@ Die Richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch a
 3. Sie können auch festlegen, dass Office auf Windows 10-Geräten [automatisch installiert](install-office-on-windows-10-during-setup.md) wird.
 
     ![Screenshot der Seite "Windows 10-Gerätekonfiguration festlegen".](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>Bereitstellen von Office 365-Client-apps

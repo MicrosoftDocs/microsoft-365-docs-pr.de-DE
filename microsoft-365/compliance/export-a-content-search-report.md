@@ -18,29 +18,29 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: 'Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center in Office 365 zu exportieren, können Sie einfach einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert werden würde.'
-ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 'Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center in Office 365 zu exportieren, können Sie einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert werden würde.'
+ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081448"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437785"
 ---
 # <a name="export-a-content-search-report"></a>Exportieren eines Berichts für die Inhaltssuche
 
-Anstatt den vollständigen Satz von Suchergebnissen aus einer Inhaltssuche im Security #a0 Compliance Center (und aus einer Inhaltssuche, die einem eDiscovery-Fall zugeordnet ist) zu exportieren, können Sie einfach dieselben Berichte exportieren, die beim Exportieren der Suchergebnisse generiert werden. .
+Anstatt den vollständigen Satz von Suchergebnissen aus einer Inhaltssuche im Security #a0 Compliance Center (und aus einer Inhaltssuche, die einem eDiscovery-Fall zugeordnet ist) zu exportieren, können Sie dieselben Berichte exportieren, die beim Exportieren der Suchergebnisse generiert werden.
   
-Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Namen wie die Inhaltssuche heruntergeladen, dieser wird jedoch mit *_ReportsOnly* angefügt. Wenn die Inhaltssuche beispielsweise *ContosoCase0815* heißt, wird der Bericht in einen Ordner mit dem Namen *ContosoCase0815_ReportsOnly* heruntergeladen. Eine Liste der Dokumente, die im Bericht enthalten sind, finden Sie unter [What es included in the Report](#whats-included-in-the-report).
+Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Namen wie die Inhaltssuche heruntergeladen, dieser wird jedoch mit *_ReportsOnly*angefügt. Wenn die Inhaltssuche beispielsweise *ContosoCase0815*heißt, wird der Bericht in einen Ordner mit dem Namen *ContosoCase0815_ReportsOnly*heruntergeladen. Eine Liste der Dokumente, die im Bericht enthalten sind, finden Sie unter [What es included in the Report](#whats-included-in-the-report).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Zum Exportieren eines Inhalts Suchberichts müssen Sie im Security #a0 Compliance Center die Compliance Search-Verwaltungsrolle zugewiesen haben. Diese Rolle wird den integrierten eDiscovery-Manager-und Organisations Verwaltungsrollengruppen zugewiesen. Sie wird nicht standardmäßig der Rollengruppe "Organisationsverwaltung" zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
-- Wenn Sie einen Bericht exportieren, werden die Daten temporär in einem eindeutigen Windows Azure-Speicherbereich in der Microsoft-Cloud gespeichert, bevor Sie auf Ihren lokalen Computer heruntergeladen werden. Stellen Sie sicher, dass Ihre Organisation eine Verbindung mit dem Endpunkt in Azure herstellen kann, also ** \*. BLOB.Core.Windows.net** (der Platzhalter stellt einen eindeutigen Bezeichner für den Export dar). Die Suchergebnis Daten werden zwei Wochen nach ihrer Erstellung aus dem Azure-Speicherbereich gelöscht. 
+- Wenn Sie einen Bericht exportieren, werden die Daten temporär in einem eindeutigen Azure-Speicherbereich in der Microsoft-Cloud gespeichert, bevor Sie auf Ihren lokalen Computer heruntergeladen werden. Stellen Sie sicher, dass Ihre Organisation eine Verbindung mit dem Endpunkt in Azure herstellen kann, also ** \*. BLOB.Core.Windows.net** (der Platzhalter stellt einen eindeutigen Bezeichner für den Export dar). Die Suchergebnis Daten werden zwei Wochen nach ihrer Erstellung aus dem Azure-Speicherbereich gelöscht. 
     
 - Der Computer, den Sie zum Exportieren der Suchergebnisse verwenden, muss die folgenden Voraussetzungen erfüllen:
     
-  - 32- oder 64-Bit-Versionen von Windows 7 und höher
+  - 32-Bit-oder 64-Bit-Versionen von Windows 7 und höheren Versionen
     
   - Microsoft .NET Framework 4,7
     
@@ -54,7 +54,7 @@ Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Nam
     
     **Hinweis:** Microsoft stellt keine Drittanbietererweiterungen oder Add-ons für ClickOnce-Anwendungen her. Das Exportieren von Suchergebnissen mit einem nicht unterstützten Browser mit Erweiterungen oder Add-ons von Drittanbietern wird nicht unterstützt. 
 
-- Wenn die geschätzte Gesamtgröße der Ergebnisse, die von einer Inhaltssuche zurück&nbsp;gegeben werden, 20 TB überschreitet, schlägt das Exportieren des Berichts fehl. Um den Bericht erfolgreich zu exportieren, versuchen Sie, den Bereich einzugrenzen, und führen Sie die Suche erneut aus, damit die geschätzte Größe&nbsp;der Ergebnisse weniger als 20 TB beträgt.
+- Wenn die geschätzte Gesamtgröße der Ergebnisse, die von einer Inhaltssuche zurückgegeben werden, 2 TB überschreitet, schlägt das Exportieren des Berichts fehl. Um den Bericht erfolgreich zu exportieren, versuchen Sie, den Bereich einzugrenzen, und führen Sie die Suche erneut aus, damit die geschätzte Größe der Ergebnisse weniger als 2 TB beträgt.
 
 - Das Exportieren von Inhalts Suchberichten gilt für die maximale Anzahl von Exporten, die gleichzeitig ausgeführt werden, und für die maximale Anzahl von Exporten, die ein einzelner Benutzer ausführen kann. Weitere Informationen zu Exportbeschränkungen finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md#export-limits).
 
@@ -104,7 +104,7 @@ Der nächste Schritt besteht darin, den Bericht aus dem Azure-Speicherbereich au
   
 1. Klicken Sie im Detailbereich für die Suche, für die Sie den Bericht erstellt haben, unter **Bericht auf Computer exportieren**auf **Bericht herunterladen**.
     
-    Die Seite **Download Bericht** wird angezeigt und enthält die folgenden Informationen über den Bericht, bis Sie auf Ihren Computer heruntergeladen werden. 
+    Die Seite **Bericht herunterladen** wird angezeigt und enthält die folgenden Informationen zu dem Bericht, der auf Ihren Computer heruntergeladen wird. 
     
     - Die Anzahl der Elemente, die heruntergeladen werden.
     
@@ -112,11 +112,11 @@ Der nächste Schritt besteht darin, den Bericht aus dem Azure-Speicherbereich au
     
     - Ob indiziert oder nicht indiziert exportiert wird. Nicht indizierte Elemente sind Elemente, die ein erkanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden.
     
-    - Gibt an, ob Versionen von SharePoint-Dokumenten heruntergeladen werden sollen.
+    - Gibt an, ob Versionen von SharePoint-Dokumenten heruntergeladen werden.
     
     - Der Status des Berichtsexport Prozesses. Sie können auch dann mit dem Herunterladen des Berichts beginnen, wenn die Vorbereitung des Berichts nicht abgeschlossen ist.
     
-2. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie werden diesen Schlüssel in Schritt 5 verwenden, um den Bericht herunterzuladen.
+2. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 5, um den Bericht herunterzuladen.
     
     > [!IMPORTANT]
     > Da jeder Benutzer das eDiscovery-Export Tool installieren und starten und dann den Suchbericht mit diesem Schlüssel herunterladen kann, müssen Sie Vorkehrungen treffen, um diesen Schlüssel so zu schützen, wie Sie Kennwörter oder andere sicherheitsrelevante Informationen schützen. 
@@ -140,14 +140,14 @@ Der nächste Schritt besteht darin, den Bericht aus dem Azure-Speicherbereich au
 
 Wenn Sie einen Bericht zu den Ergebnissen einer Inhaltssuche generieren und exportieren, werden die folgenden Dokumente heruntergeladen:
   
-- **Export Zusammenfassung** -ein Excel-Dokument, das eine Zusammenfassung des Exports enthält. Dazu gehören Informationen wie die Anzahl der durchsuchten Inhaltsquellen, die Anzahl der Suchergebnisse von jedem Inhaltsspeicherort, die geschätzte Anzahl von Elementen, die tatsächliche Anzahl der exportierten Elemente sowie die geschätzte und tatsächliche Größe von Elementen. , die exportiert werden sollen. 
+- **Export Zusammenfassung:** Ein Excel-Dokument, das eine Zusammenfassung des Exports enthält. Dazu gehören Informationen wie die Anzahl der durchsuchten Inhaltsquellen, die Anzahl der Suchergebnisse von jedem Inhaltsspeicherort, die geschätzte Anzahl von Elementen, die tatsächliche Anzahl der exportierten Elemente sowie die geschätzte und tatsächliche Größe von Elementen. , die exportiert werden sollen. 
     
     > [!NOTE]
     > Wenn Sie nicht indizierte Elemente beim Exportieren des Berichts einschließen, wird die Anzahl der nicht indizierten Elemente in der Gesamtzahl der geschätzten Suchergebnisse und in der Gesamtzahl der heruntergeladenen Suchergebnisse (wenn Sie die Suchergebnisse exportieren), die in der Liste Export Zusammenfassungsbericht. Mit anderen Worten: die Gesamtzahl der heruntergeladenen Elemente entspricht der Gesamtzahl der geschätzten Ergebnisse und der Gesamtzahl der nicht indizierten Elemente. 
   
-- **Manifest** -eine Manifestdatei (im XML-Format), die Informationen zu jedem Element enthält, das in den Suchergebnissen enthalten ist. 
+- **Manifest:** Eine Manifestdatei (im XML-Format), die Informationen zu jedem Element enthält, das in den Suchergebnissen enthalten ist. 
     
-- **Ergebnisse** – ein Excel-Dokument, das eine Zeile mit Informationen zu jedem indizierten Element enthält, das mit den Suchergebnissen exportiert werden würde. Bei e-Mails enthält das Ergebnisprotokoll Informationen zu den einzelnen Nachrichten, einschließlich: 
+- **Ergebnisse:** Ein Excel-Dokument, das eine Zeile mit Informationen zu jedem indizierten Element enthält, das mit den Suchergebnissen exportiert werden würde. Bei e-Mails enthält das Ergebnisprotokoll Informationen zu den einzelnen Nachrichten, einschließlich: 
     
   - Der Speicherort der Nachricht im Quellpostfach (einschließlich der Angabe, ob die Nachricht sich im primären oder im Archivpostfach befindet).
     
@@ -168,6 +168,6 @@ Wenn Sie einen Bericht zu den Ergebnissen einer Inhaltssuche generieren und expo
   - Der Name des Dokuments (der sich in der Spalte Betreff im Ergebnisprotokoll befindet).
     
     > [!NOTE]
-    > Die Anzahl der Zeilen im **Ergebnis** Bericht sollte der Gesamtzahl der Suchergebnisse entsprechen, die heruntergeladen werden sollen minus der Gesamtzahl der im Bericht nicht **Indexierte Elemente** aufgeführten Elemente. 
+    > Die Anzahl der Zeilen im **Ergebnis** Bericht sollte der Gesamtzahl der Suchergebnisse minus der Gesamtzahl der im Bericht nicht **Indexierte Elemente** aufgeführten Elemente entsprechen. 
   
-- Nicht **indizierte Elemente** – ein Excel-Dokument, das Informationen zu nicht indizierten Elementen enthält, die in den Suchergebnissen enthalten wären. Wenn Sie nicht indizierte Elemente beim Generieren des Berichts "Suchergebnisse" einschließen, wird dieser Bericht weiterhin heruntergeladen, wird jedoch leer sein.
+- Nicht **indizierte Elemente:** Ein Excel-Dokument, das Informationen zu nicht indizierten Elementen enthält, die in den Suchergebnissen enthalten sind. Wenn Sie nicht indizierte Elemente beim Generieren des Berichts "Suchergebnisse" einschließen, wird dieser Bericht weiterhin heruntergeladen, wird jedoch leer sein.

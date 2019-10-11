@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082397"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428426"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
@@ -35,7 +35,7 @@ Es wird dringend empfohlen, uns über falsch negative Nachrichten [mit dem Add-I
 
 ## <a name="fixing-allowed-spam"></a>Korrigieren zulässiger Spam
 
-Wir stellen häufig fest, dass Kunden aufgrund falscher Konfigurationen Junk-E-Mails in ihrem Posteingang erhalten. Die häufigste Ursache ist das Konfigurieren von Domänen in einer E-Mail-Flussregel (auch als Transportregel bezeichnet) zum Umgehen von Filtern oder Auflisten der Domäne(n) in der Liste der zulässigen/sicheren Absender. Dies ist keine gute Vorgehensweise, da diese Nachrichten die Spamfilterung überspringen, obwohl sie andernfalls hätten abgefangen werden können.  
+Wir stellen häufig fest, dass Kunden aufgrund falscher Konfigurationen Junk-E-Mails in ihrem Posteingang erhalten. Die häufigste Ursache ist das Konfigurieren von Domänen in einer E-Mail-Flussregel (auch als Transportregel bezeichnet) zum Umgehen von Filtern oder Auflisten der Domäne(n) in der Liste der zulässigen/sicheren Absender. Dies ist keine gute Vorgehensweise, da diese Nachrichten die Spamfilterung überspringen, obwohl sie andernfalls hätten abgefangen werden können. Daher muss die Erstellung von [Listen sicherer Absender](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365) als temporäre Lösung angesehen werden.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Lösungen für andere häufige Ursachen von zu viel Spam
 

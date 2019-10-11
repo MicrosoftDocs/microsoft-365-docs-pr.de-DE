@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Anti-Phishing-Schutz mit umfassendem Schutz als Bestandteil von Office 365 Advanced Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Schutz helfen, Ihre Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen zu schützen. und andere Phishing-Angriffe.
-ms.openlocfilehash: e668a4681f37f4a3d6977f9d42c4aa661a07cac7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 620a6f818d3de7c360c3dc22a0ca5822357fb487
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081924"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428406"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing
 
@@ -39,7 +39,7 @@ Was ist zu tun:
 3. Richten Sie eine Anti-Phishing-Richtlinie oder eine ATP-Anti-Phishing-Richtlinie ein.
 
 >[!IMPORTANT]
-> Informationen dazu, wie mehrere Technologien angewendet werden, finden Sie unter [How Policies and protections are Combined](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
+> Informationen dazu, wie mehrere Technologien angewendet werden, finden Sie unter [How Policies and protections are Combined](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).
 
 ## <a name="review-the-prerequisites"></a>Überprüfen der Voraussetzungen
 
@@ -47,9 +47,9 @@ Was ist zu tun:
 
     |Rolle  |Wo/wie zugewiesen  |
     |---------|---------|
-    |Office 365 globaler Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+    |Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Exchange Online Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
     Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -93,9 +93,6 @@ Wenn Sie Ihre ATP-Anti-Phishing-Richtlinien einrichten oder bearbeiten, können 
 |**Hinzufügen von vertrauenswürdigen Absendern und Domänen** <br/> |Definiert e-Mail-Adressen und Domänen, die durch diese Richtlinie nicht als Identitätswechsel betrachtet werden. Nachrichten von den Absender-e-Mail-Adressen und Domänen, die Sie als vertrauenswürdige Absender und Domänen hinzufügen, werden nie als ein auf Identitätswechsel basierender Angriff klassifiziert. Daher werden die Aktionen und Einstellungen in dieser Richtlinie nicht auf Nachrichten von diesen Absendern und Domänen angewendet.  <br/><br/>Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge. |Wenn Benutzer mit Domänen oder Benutzern interagieren, die einen Identitätswechsel auslösen, jedoch als sicher eingestuft werden. Wenn ein Partner beispielsweise den gleichen/ähnlichen Anzeigenamen oder Domänennamen hat wie ein in der Liste definierter Benutzer.  <br/> |
 |**Angewendet auf** <br/> |Definiert die Empfänger, deren eingehende e-Mail-Nachrichten den Regeln der Richtlinie unterworfen werden. Sie können Bedingungen und Ausnahmen für die Empfänger erstellen, die der Richtlinie zugeordnet sind.  <br/> Sie können beispielsweise eine globale Richtlinie für Ihre Organisation erstellen, indem Sie die Regel auf alle Empfänger in Ihrer Domäne anwenden.  <br/> Sie können auch Ausnahmeregeln erstellen, beispielsweise eine Regel, die keine e-Mail-Nachrichten für eine bestimmte Empfängergruppe scannt.  <br/> |Jede Richtlinie muss einer Reihe von Benutzern zugeordnet sein, beispielsweise Benutzern in einer bestimmten Gruppe oder Domäne.  <br/> |
 |**Erweiterte Phishing-Schwellenwerte** <br/> |Definiert die Ebene der Einstellungen für die Behandlung von Phishing-Nachrichten.  <br/> **Standard mäßig** E-Mail, die als Phishing vermutet wird, wird auf Standard-Weise verarbeitet.  <br/> **Aggressiv** E-Mail, die als Phishing mit hoher oder sehr hoher Zuverlässigkeit vermutet wird, wird vom System auf die gleiche Weise verarbeitet.  <br/> **Aggressiver** E-Mail, die als Phishing mit einem mittleren, hohen oder sehr hohen Maß an Zuverlässigkeit vermutet wird, wird vom System auf die gleiche Weise verarbeitet.  <br/> **Aggressivste** E-Mail-Verdacht auf Phishing mit niedrigem, mittlerem, hohem oder sehr hohem Maß an Zuverlässigkeit werden vom System auf die gleiche Weise behandelt.  <br/> |Wenn Sie bei der Behandlung von potenziell Phishing-Nachrichten in Office 365 aggressiver vorgehen möchten. Beispielsweise werden Nachrichten mit einer sehr hohen Wahrscheinlichkeit, dass es sich um Phishing handelt, die aggressivsten Aktionen durchgeführt, während Nachrichten mit niedriger Wahrscheinlichkeit weniger aggressive Aktionen für Sie durchgeführt haben. Diese Einstellung wirkt sich auch auf andere Teile des Filtersystems aus, die Signale miteinander kombinieren. Dies bedeutet nicht zwangsläufig, dass unterschiedliche Aktionen implementiert werden.  Im wesentlichen legen Sie die Wahrscheinlichkeit für die Phishing-e-Mail fest, um die (gleiche) festgelegte Aktion zu bestimmen. Die Wahrscheinlichkeit, dass gute Nachrichten verschoben werden, steigt, wenn die Einstellungsstufe zunimmt.  <br/>|
-
-> [!IMPORTANT]
-> ![Image](../media/EnableMailboxIntelligenceBasedImpersonation.png) neue wichtige Einstellungen, abtrennen * * Postfach-Intelligence "von" Post Fach Intelligenz basierter Identitätswechsel Schutz ". Der Identitätswechsel erfolgt, wenn Sie über ein Skript, eine API oder eine Drittanbietersoftware oder sogar böswilligen Code unter Ihrem Postfach Programmgesteuertes auf Ihr Postfach zugreifen und Aktionen über das Postfach ausführen.
 
 ## <a name="learn-about-anti-phishing-policy-options"></a>Informationen zu Optionen für Anti-Phishing-Richtlinien
 

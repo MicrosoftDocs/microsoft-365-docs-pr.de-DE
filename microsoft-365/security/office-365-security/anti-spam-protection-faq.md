@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: d36499815979fb0b5ac805a98f0c9320fc07a538
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081733"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441092"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -79,7 +79,7 @@ Kunden von Exchange Online Protection: [Berichterstellung und Nachrichtenablaufv
   
  **F. Jemand hat mir eine Nachricht gesendet, aber ich finde sie nicht. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?**
   
-A. Ja. Mit dem Tool für die Nachrichtenablaufverfolgung können Sie verfolgen, wie E-Mails den Dienst durchlaufen haben, um herauszufinden, was mit ihnen passiert ist. Weitere Informationen zur Verwendung des Tools für die Nachrichtenablaufverfolgung, um zu ermitteln, weshalb eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [Wurde eine Nachricht als Spam gekennzeichnet?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+A. Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **F. Schränkt der Dienst meine E-Mail ein (begrenzt ihre Rate), wenn die Benutzer ausgehenden Spam senden?**
   

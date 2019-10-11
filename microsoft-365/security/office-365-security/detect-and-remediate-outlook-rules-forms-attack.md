@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081345"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440652"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365
 
@@ -123,7 +123,7 @@ Es gibt zwei Remote-PowerShell-Cmdlets, mit denen Sie gefährliche Regeln entfer
 Schritte für Postfächer auf einem Exchange-Server
 
 1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit dem Exchange-Server her. Führen Sie die Schritte unter [Verbinden mit Exchange-Servern mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps)aus.
-2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln aus einem Postfach vollständig entfernen möchten, verwenden Sie das [Cmdlet Remove-Posteingangsregel ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)– verwenden Sie diese Option, um eine, mehrere oder alle Regeln aus dem Postfach vollständig zu entfernen.
+2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln aus einem Postfach vollständig entfernen möchten, verwenden Sie das [Cmdlet Remove-Posteingangsregel](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)– verwenden Sie diese Option, um eine, mehrere oder alle Regeln aus dem Postfach vollständig zu entfernen.
 3. Wenn Sie die Regel und ihren Inhalt für weitere Untersuchungen beibehalten möchten, verwenden Sie das [Cmdlet Disable-InboxRule](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 Schritte für Postfächer in Exchange Online
@@ -144,8 +144,8 @@ Die beste Möglichkeit zum Schutz Ihrer Benutzerkonten und insbesondere ihrer Ad
     <li>Überwachen Sie, wie auf ihre Benutzerkonten <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">zugegriffen und verwendet wird</a>. Sie können die anfängliche Verletzung nicht verhindern, aber Sie werden die Dauer und die Auswirkungen der Verletzung verkürzen, indem Sie Sie früher erkennen. Sie können diese verwenden: <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">Office 365 Cloud App Security Policies</a> to Monitor Your Accounts und Alert on Unusual activity. 
         <ol type="a">
             <li><b>Mehrere fehlgeschlagene Anmeldeversuche</b> Diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Benutzer mehrere fehlgeschlagene Anmeldeaktivitäten in einer einzigen Sitzung im Hinblick auf die gelernte Baseline ausführen, was auf eine versuchte Verletzung hindeuten könnte.</li>
-            <li><b>Unmöglich Reisen</b> - Diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Aktivitäten vom gleichen Benutzer an unterschiedlichen Orten innerhalb eines Zeitraums erkannt werden, der kürzer ist als die erwartete Reisezeit zwischen den beiden Standorten. Dies kann darauf hindeuten, dass ein anderer Benutzer die gleichen Anmeldeinformationen verwendet. Wenn Sie dieses anomale Verhalten erkennen, ist eine anfängliche Lernphase von sieben Tagen erforderlich, in der das Aktivitätsmuster eines neuen Benutzers erlernt wird.</li>
-            <li><b>Ungewöhnliche imitierte Aktivität (nach Benutzer)</b> - Diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Benutzer mehrere imitierte Aktivitäten in einer einzigen Sitzung im Hinblick auf die erlernten Grundlagen ausführen, was auf eine versuchte Verletzung hindeuten könnte.</li>
+            <li><b>Impossible Travel</b> - diese Richtlinie Profile Ihrer Umgebung und löst Warnungen aus, wenn Aktivitäten vom gleichen Benutzer an unterschiedlichen Orten innerhalb eines Zeitraums erkannt werden, der kürzer ist als die erwartete Reisezeit zwischen den beiden Standorten. Dies kann darauf hindeuten, dass ein anderer Benutzer die gleichen Anmeldeinformationen verwendet. Wenn Sie dieses anomale Verhalten erkennen, ist eine anfängliche Lernphase von sieben Tagen erforderlich, in der das Aktivitätsmuster eines neuen Benutzers erlernt wird.</li>
+            <li><b>Ungewöhnliche imitierte Aktivität (nach Benutzer)</b> - diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Benutzer mehrere imitierte Aktivitäten in einer einzigen Sitzung im Hinblick auf die erlernten Grundlagen ausführen, was darauf hindeuten könnte, dass eine versuchter Verstoß.</li>
         </ol>
     </li>
     <li>Nutzen Sie ein Tool wie das <a href="https://securescore.office.com/">Office 365 Secure Score</a> , um Konto Sicherheitskonfigurationen und-Verhalten zu verwalten. 

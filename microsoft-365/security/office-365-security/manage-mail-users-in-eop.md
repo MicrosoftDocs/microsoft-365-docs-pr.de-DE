@@ -10,26 +10,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: d445bceb9e796c11c40ab778ed3d056df0f4c44b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 85a2c3ee278af36b9743fd9ff70ea9ab21437de8
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082525"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441242"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
 Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP). Es gibt mehrere Möglichkeiten zur Verwaltung von Benutzern in EOP.
-  
-- Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung: Falls Ihr Unternehmen über vorhandene Benutzerkonten in einer lokalen Active Directory-Umgebung verfügt, können Sie diese Konten mit Azure Active Directory (AD) synchronisieren, wo eine Kopie der Konten in der Cloud gespeichert wird. Beim Synchronisieren vorhandener Benutzerkonten mit Azure Active Directory können Sie diese Benutzer im Bereich **Empfänger** von Exchange Admin Center (EAC) anzeigen. Es wird empfohlen, Verzeichnissynchronisierung zu verwenden. 
 
-- Verwalten von E-Mail-Benutzern über die Exchange Admin Center: Hinzufügen und Verwalten von E-Mail-Benutzern direkt in der Exchange Admin Center. Dies ist der einfachste Weg, E-Mail-Benutzer hinzuzufügen, und hilfreich, um jeweils einen Benutzer hinzuzufügen.
+- **Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung**: Falls Ihr Unternehmen über vorhandene Benutzerkonten in einer lokalen Active Directory-Umgebung verfügt, können Sie diese Konten mit Azure Active Directory (AD) synchronisieren, wo eine Kopie der Konten in der Cloud gespeichert wird. Beim Synchronisieren vorhandener Benutzerkonten mit Azure Active Directory können Sie diese Benutzer im Bereich **Empfänger** von Exchange Admin Center (EAC) anzeigen. Es wird empfohlen, Verzeichnissynchronisierung zu verwenden.
 
-- Verwalten von E-Mail-Benutzern mithilfe der Windows Remote-PowerShell: Hinzufügen und Verwalten von E-Mail-Benutzern durch die Ausführung der Windows Remote-PowerShell. Diese Methode ist hilfreich, um mehrere Datensätze hinzuzufügen und Skripts zu erstellen.
+- **Verwalten von E-Mail-Benutzern über die Exchange Admin Center**: Hinzufügen und Verwalten von E-Mail-Benutzern direkt in der Exchange Admin Center. Dies ist der einfachste Weg, E-Mail-Benutzer hinzuzufügen, und hilfreich, um jeweils einen Benutzer hinzuzufügen.
+
+- **Verwenden von PowerShell zum Verwalten von e-Mail-Benutzern**: Hinzufügen und Verwalten von e-Mail-Benutzern in Exchange Online Protection PowerShell. Diese Methode ist hilfreich, um mehrere Datensätze hinzuzufügen und Skripts zu erstellen.
 
 > [!NOTE]
 > Sie können Benutzer im Microsoft 365 Admin Center hinzufügen, jedoch können diese Benutzer nicht als e-Mail-Empfänger verwendet werden.
-  
+
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
@@ -46,16 +46,27 @@ Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Ex
 
 > [!TIP]
 > Liegt ein Problem vor? Fragen Sie im Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) nach Hilfe.
-  
+
 ## <a name="use-directory-synchronization-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung
 
 In diesem Abschnitt finden Sie weitere Informationen zum Verwalten von E-Mail-Benutzern mithilfe von Verzeichnissynchronisierung.
-  
-> [!NOTE]
-> Wenn Sie die Verzeichnissynchronisierung zum Verwalten Ihrer Empfänger verwenden, können Sie dennoch Benutzer im Microsoft 365 Admin Center hinzufügen und verwalten, Sie werden jedoch nicht mit Ihrer lokalen Active Directory synchronisiert. Dies liegt daran, dass die Verzeichnissynchronisierung nur Empfänger von Ihrem lokalen Active Directory zur Cloud synchronisiert. <br/><br/> Die Verzeichnissynchronisierung wird für die Verwendung mit den folgenden Features empfohlen: <br/><br/>• **Listen sicherer Absender und blockierter Absender in Outlook**: Wenn Sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Dadurch können Benutzer ihre eigene Liste sicherer und blockierter Absender auf Benutzer- oder Domänenbasis verwalten. <br/><br/>• **Verzeichnisbasierte Edge-Blockierung (Blockierung)**: Weitere Informationen zu Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)werden. <br/><br/>• **Spamquarantäne für Endbenutzer**: um auf die Spamquarantäne von Endbenutzern zugreifen zu können, benötigen Endbenutzer eine gültige Office 365 Benutzer-ID und ein Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein. <br/><br/>• **Nachrichtenfluss Regeln**: Wenn Sie die Verzeichnissynchronisierung verwenden, werden Ihre vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, die auf bestimmte Benutzer und/oder Gruppen ohne manuelles Hinzufügen über die Exchange-Verwaltungskonsole oder Exchange Online Protection PowerShell. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://go.microsoft.com/fwlink/?LinkId=507569) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
-  
+
+**Hinweise**:
+
+- Wenn Sie die Verzeichnissynchronisierung zum Verwalten Ihrer Empfänger verwenden, können Sie dennoch Benutzer im Microsoft 365 Admin Center hinzufügen und verwalten, Sie werden jedoch nicht mit Ihrer lokalen Active Directory synchronisiert. Dies liegt daran, dass die Verzeichnissynchronisierung nur Empfänger **von** Ihrem lokalen Active Directory **zur** Cloud synchronisiert.
+
+- Die Verzeichnissynchronisierung wird für die Verwendung mit den folgenden Features empfohlen:
+
+  - **Listen sicherer Absender und blockierter Absender in Outlook**: Wenn Sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Dadurch können Benutzer ihre eigene Liste sicherer und blockierter Absender auf Benutzer- oder Domänenbasis verwalten.
+
+  - **Verzeichnisbasierte Edge-Blockierung (Blockierung)**: Weitere Informationen zu Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)werden.
+
+  - **Spamquarantäne für Endbenutzer**: um auf die Spamquarantäne für Endbenutzer zugreifen zu können, benötigen Endbenutzer eine gültige Office 365 Benutzer-ID und ein Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein.
+ 
+  - **Nachrichtenfluss Regeln**: Wenn Sie die Verzeichnissynchronisierung verwenden, werden die vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, die auf bestimmte Benutzer und/oder Gruppen ohne manuelles Hinzufügen über die Exchange-Verwaltungskonsole oder Exchange Online Protection PowerShell. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://go.microsoft.com/fwlink/?LinkId=507569) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
+
 Rufen Sie die erforderlichen Berechtigungen ab, und bereiten Sie die Verzeichnissynchronisierung vor, wie unter [Vorbereiten der Verzeichnissynchronisierung](https://go.microsoft.com/fwlink/p/?LinkId=308908) beschrieben.
-  
+
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>So synchronisieren Sie Benutzerverzeichnisse mit Azure Active Directory Connect (AAD Connect)
 
 Um Benutzer mit Azure Active Directory (AAD) zu synchronisieren, müssen Sie zunächst die **Verzeichnissynchronisierung aktivieren**, wie unter [Activate Directory Synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308909)beschrieben.
@@ -72,12 +83,12 @@ Vergewissern Sie sich nach dem Konfigurieren der Synchronisierung, dass EoP ordn
 ## <a name="use-the-eac-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern über die Exchange Admin Center
 
 In diesem Abschnitt finden Sie Informationen über das Hinzufügen und Verwalten von E-Mail-Benutzern direkt in der Exchange Admin Center.
-  
+
 ### <a name="use-the-eac-to-add-a-mail-user"></a>Hinzufügen eines e-Mail-Benutzers mithilfe der Exchange-Verwaltungskonsole
 
 1. Erstellen Sie einen E-Mail-Benutzer, indem Sie in der Verwaltungskonsole **Empfänger** \> **Kontakte** aufrufen und dann auf **Neu +** klicken.
 
-2. Geben Sie auf der Seite **Neuer E-Mail-Benutzer** die folgenden Benutzerinformationen ein: 
+2. Geben Sie auf der Seite **Neuer E-Mail-Benutzer** die folgenden Benutzerinformationen ein:
 
    ****
 
@@ -95,16 +106,16 @@ In diesem Abschnitt finden Sie Informationen über das Hinzufügen und Verwalten
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>Bearbeiten oder Entfernen eines e-Mail-Benutzers mithilfe der Exchange-Verwaltungskonsole
 
-- Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**. Klicken Sie in der Liste der Benutzer auf den Benutzer, den Sie anzeigen oder ändern möchten, und wählen **** ![Sie dann Bearbeitungs](../media/ITPro-EAC-EditIcon.gif) Symbol bearbeiten aus, um die Benutzereinstellungen nach Bedarf zu aktualisieren. Sie können den Benutzernamen, Aliasnamen oder die Kontaktinformationen ändern, und Sie können ausführliche Informationen zur Benutzerrolle in der Organisation eingeben. Sie können auch einen Benutzer auswählen und dann Remove **** ![-Symbol](../media/ITPro-EAC-RemoveIcon.gif) entfernen auswählen, um es zu löschen. 
+- Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**. Klicken Sie in der Liste der Benutzer auf den Benutzer, den Sie anzeigen oder ändern möchten, und wählen **** ![Sie dann Bearbeitungs](../media/ITPro-EAC-EditIcon.gif) Symbol bearbeiten aus, um die Benutzereinstellungen nach Bedarf zu aktualisieren. Sie können den Benutzernamen, Aliasnamen oder die Kontaktinformationen ändern, und Sie können ausführliche Informationen zur Benutzerrolle in der Organisation eingeben. Sie können auch einen Benutzer auswählen und dann Remove **** ![-Symbol](../media/ITPro-EAC-RemoveIcon.gif) entfernen auswählen, um es zu löschen.
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Verwenden von Exchange Online Protection PowerShell zum Verwalten von e-Mail-Benutzern
 
 In diesem Abschnitt finden Sie Informationen dazu, wie Sie E-Mail-Benutzer mithilfe der Windows Remote-PowerShell hinzufügen und verwalten.
-  
+
 ### <a name="use-eop-powershell-to-add-a-mail-user"></a>Verwenden von EoP PowerShell zum Hinzufügen eines e-Mail-Benutzers
-  
+
 In diesem Beispiel wird anhand des [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)-Cmdlets für Jeffrey Zeng ein E-Mail-aktiviertes Benutzerkonto mit den folgenden Angaben erstellt:
-  
+
 - Der Vorname ist "Jeffrey" und der Nachname ist "Zeng".
 
 - Der Name ist "Jeffrey", und der Anzeigename ist "Jeffrey Zeng".
@@ -117,62 +128,59 @@ In diesem Beispiel wird anhand des [New-EOPMailUser](https://docs.microsoft.com/
 
 - Das Kennwort lautet "Pa$$word1".
 
-```Powershell
+```PowerShell
 New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
 Um zu überprüfen, ob dies funktioniert hat, führen Sie den folgenden Befehl aus, um Informationen über den neuen e-Mail-Benutzer Jeffrey Zeng anzuzeigen:
-  
-```Powershell
+
+```PowerShell
 Get-User -Identity "Jeffrey Zeng"
 ```
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
 
 ### <a name="use-eop-powershell-to-edit-the-properties-of-a-mail-user"></a>Verwenden von EoP PowerShell zum Bearbeiten der Eigenschaften eines e-Mail-Benutzers
-  
+
 Verwenden Sie die Cmdlets [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) und [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser), um Eigenschaften für E-Mail-Benutzer anzuzeigen oder zu ändern.
-  
+
 In diesem Beispiel wird die externe E-Mail-Adresse für Pilar Pinella festgelegt.
-  
-```Powershell
+
+```PowerShell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
 In diesem Beispiel wird die Eigenschaft "Company" für alle E-Mail-Benutzer in "Contoso" geändert.
-  
-```Powershell
+
+```PowerShell
 $Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
-  
+
 Um zu überprüfen, ob dies funktioniert hat, verwenden Sie das [Get-Recipient-](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) Cmdlet, um die Änderungen zu überprüfen. (Beachten Sie, dass Sie für mehrere E-Mail-Kontakte mehrere Eigenschaften anzeigen können.)
-  
-```Powershell
+
+```PowerShell
 Get-Recipient -Identity "Pilar Pinilla" | Format-List
 ```
 
 Führen Sie für das vorherige Beispiel, in dem die Eigenschaft "Company" für alle E-Mail-Benutzer auf "Contoso" festgelegt wurde, den folgenden Befehl aus, um die Änderungen zu überprüfen:
-  
-```Powershell
+
+```PowerShell
 Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
 ```
 
 > [!IMPORTANT]
 > Dieses Cmdlet verwendet eine Batchverarbeitungsmethode, die zu einer Laufzeitverzögerung von wenigen Minuten führt, bevor die Ergebnisse des Cmdlets sichtbar sind.
-  
+
 ### <a name="use-eop-powershell-to-remove-a-mail-user"></a>Verwenden von EoP PowerShell zum Entfernen eines e-Mail-Benutzers
-  
+
 In diesem Beispiel wird das [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient/remove-eopmailuser)-Cmdlet verwendet, um den Benutzer Jeffrey Zeng zu löschen:
-  
-```Powershell
+
+```PowerShell
 Remove-EOPMailUser -Identity Jeffrey
 ```
-
- **So stellen Sie sicher, dass es funktioniert hat**
-  
 Führen Sie das Cmdlet [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) aus, um zu überprüfen, ob der e-Mail-Benutzer nicht mehr vorhanden ist.
-  
-```Powershell
+
+```PowerShell
 Get-Recipient Jeffrey | Format-List
 ```

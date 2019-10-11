@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Übersicht über die Schritte zum Einrichten von Microsoft 365 Business.
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288573"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440535"
 ---
-# <a name="overview-of-setup"></a>Übersicht über das Setup
+# <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
 Die meisten der Schritte zum einrichten können im Setup-Assistenten ausgeführt werden, aber die anderen Optionen werden ebenfalls aufgeführt.
 
@@ -41,7 +41,7 @@ Die meisten der Schritte zum einrichten können im Setup-Assistenten ausgeführt
         - Sie können Benutzer auch später im Admin Center [Hinzufügen](add-users-m365b.md) .
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Schritt 2: Einrichten von Sicherheitsrichtlinien und Konfigurieren von Geräten 
 
-  - Verwenden Sie den [Setup-Assistenten](set-up.md#set-up-security-policies-and-device-configurations) , um Geräte-und Sicherheitsrichtlinien zu konfigurieren. 
+  - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-data-and-devices) , um Geräte-und Sicherheitsrichtlinien zu konfigurieren. 
   - Sie können auch später im [Admin Center](view-policies-and-devices.md) und im [InTune-Portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)weitere hinzufügen oder bearbeiten.
   - Zusätzlich zu den Sicherheitseinstellungen im Setup-Assistenten können Sie die Sicherheit durch Hinzufügen der folgenden Einstellungen verbessern:
 
@@ -62,7 +62,7 @@ Die meisten der Schritte zum einrichten können im Setup-Assistenten ausgeführt
    Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien, die Sie in [Schritt 2](#step-2-set-up-security-policies-and-configure-devices) eingerichtet haben, darauf angewendet.
 
    - Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Verwenden Sie den [Setup-Assistenten](set-up.md#set-up-security-policies-and-device-configurations) , um Richtlinien für Windows 10-Geräte zu konfigurieren.
+    - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-data-and-devices) , um Richtlinien für Windows 10-Geräte zu konfigurieren.
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: Installieren von Office 365 Business
 - Sie können Office auf den Windows-Geräten automatisch mithilfe des [Setup-Assistenten](set-up.md#deploy-office-365-client-apps)installieren.
@@ -74,7 +74,7 @@ Die meisten der Schritte zum einrichten können im Setup-Assistenten ausgeführt
             
      Sie können [Windows Autopilot](add-autopilot-devices-and-profile.md) verwenden, um **neue** Windows 10-Geräte für einen Benutzer automatisch vorkonfigurieren, aber es ist möglicherweise einfacher, einen [Partner](https://www.microsoft.com/solution-providers/search) zu erhalten, der dies für Sie tun kann. Sie können auch zu [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) wechseln und einen Cloud Technology Expert bitten, neue Geräte einzurichten, die Sie für Sie kaufen.
 
-- **Zugreifen auf lokale Ressourcen**
+- **Zugriff auf lokale Ressourcen**
 
      - Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern. Führen Sie die Schritte unter [enable Domain-Joined Windows 10 Devices to manage by Microsoft 365 Business](manage-windows-devices.md) aus, um diesen einzurichten. Dies ist die bevorzugte Methode, und Geräte in diesem Zustand werden als Hybrid Azure AD verbundene Geräte bezeichnet.
 

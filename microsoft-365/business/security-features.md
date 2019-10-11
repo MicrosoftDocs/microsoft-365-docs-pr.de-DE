@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business geliefert werden.
-ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c0c37b09fd0bb0218864b6bc97aa127feae1ff16
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288453"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453974"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 
@@ -98,9 +98,9 @@ Ihr Microsoft 365 Business-Abonnement enthält Features, mit denen Sie Complianc
     
     Exchange Online Archivierungslizenz ermöglicht das einfache Archivieren von Nachrichten mit fortlaufender Datensicherung. Sie speichert alle e-Mail-Nachrichten eines Benutzers, einschließlich gelöschter Elemente, für den Fall, dass Sie später zur Ermittlung oder Wiederherstellung benötigt werden. Darüber hinaus können Sie unterschiedliche Aufbewahrungsrichtlinien verwenden, um e-Mail-Daten für Beweissicherungsverfahren, eDiscovery oder zur Erfüllung von Compliance-Anforderungen beizubehalten.
     
-- **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
-    
-    Durch den Schutz von Informationen können Sie den Zugriff auf vertrauliche Informationen in e-Mails und Dokumenten mit Steuerelementen wie "nicht weiterleiten" und "nicht kopieren" steuern. Sie können vertrauliche Informationen auch als "vertraulich" klassifizieren und angeben, wie klassifizierte Informationen außerhalb und innerhalb des Unternehmens freigegeben werden können. Die unternehmensweite Verschlüsselung lässt sich einfach auf e-Mails und Dokumente anwenden, um Ihre Informationen privat zu halten. Microsoft 365 Business umfasst alle Funktionen von [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Sie können auch das Azure Information Protection-Client-Add-in für Office-Apps installieren. Weitere Informationen finden Sie unter [Azure Information Protection-Client Administratorhandbuch](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+- **[Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+
+   Microsoft 365 Business umfasst alle Funktionen von [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Mit diesem Plan können Sie **Sensitivitäts Bezeichnungen**erstellen, mit denen Sie den Zugriff auf vertrauliche Informationen in e-Mails und Dokumente mit Steuerelementen wie "nicht weiterleiten" und "nicht kopieren" steuern können. Sie können vertrauliche Informationen auch als "vertraulich" klassifizieren und angeben, wie klassifizierte Informationen außerhalb und innerhalb des Unternehmens freigegeben werden können. Die unternehmensweite Verschlüsselung lässt sich einfach auf e-Mails und Dokumente anwenden, um Ihre Informationen privat zu halten. Sie können auch das Azure Information Protection-Client-Add-in für Office-Apps installieren. Weitere Informationen finden Sie unter [Azure Information Protection Unified Labelling-Client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Für Sensitivitäts Bezeichnungen installieren Sie die **AzInfoProtection_UL. exe**.
 
 Sie können diese Funktionen im Security &amp; Compliance Center und im InTune Admin Center verwalten. Im Laufe der Zeit werden die vereinfachten Steuerelemente dem Microsoft 365 Business Admin Center hinzugefügt.
   
