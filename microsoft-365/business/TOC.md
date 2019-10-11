@@ -16,8 +16,8 @@
 ### [Einrichten von mobilen Geräten](set-up-mobile-devices.md)
 ### [Einrichten von Windows-Geräten](set-up-windows-devices.md)
 ## [Absichern Ihres Unternehmens](security-features.md)
+### [Einrichten von MFA](set-up-mfa.md)
 ### [Erhöhen des Bedrohungsschutzes](increase-threat-protection.md)
-### [Erste Schritte mit dem bedingten Zugriff](set-up-conditional-access-policies.md)
 ### [Einrichten von Compliancefeatures](set-up-compliance.md)
 ## Verwalten von Benutzern
 ### [Hinzufügen von Benutzern](add-users-m365b.md)
@@ -29,9 +29,9 @@
 ### [Zuordnen von Schutzfunktionen zu Intune-Einstellungen](map-protection-features-to-intune-settings.md)
 ### [App-Schutzeinstellungen für Android und iOS](app-protection-settings-for-android-and-ios.md)
 #### [Überprüfen der Einstellungen auf Android oder iOS](validate-settings-on-android-or-ios.md)
-### [Schutzeinstellungen für Windows 10-Computer](protection-settings-for-windows-10-pcs.md)
-#### [Überprüfen der Einstellungen auf Windows 10-Computern](validate-settings-on-windows-10-pcs.md)
-### [Schutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
+### [Geräteschutzeinstellungen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md)
+#### [Überprüfen der Einstellungen auf Windows 10-PCs](validate-settings-on-windows-10-pcs.md)
+### [App-Schutzeinstellungen für Windows 10-PCs](protection-settings-for-windows-10-devices.md)
 ## [Migrieren zu Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 ## Abrechnung
 ### [Ihre Rechnung](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
