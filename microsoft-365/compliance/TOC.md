@@ -2,7 +2,7 @@
 
 # Erste Schritte
 ## [Neuerungen im Compliance Center](whats-new.md)
-## [Aktuelle Updates für Compliance-Inhalte](recently-updated-topics-mcc.md)
+## [Neueste Aktualisierungen für Compliance-Inhalte](recently-updated-topics-mcc.md)
 ## [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -17,8 +17,8 @@
 ## Kundenschlüssel
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
 ### [Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365](service-encryption-with-customer-key-faq.md)
-## [Kommunikationsüberwachung]()
-### [Informationen zur Kommunikationsüberwachung](supervision-policies.md)
+## [Aufsicht]()
+### [Weitere Informationen zu Aufsichtsrichtlinien](supervision-policies.md)
 ### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
 ## [Informationsbarrieren](information-barriers.md)
 ### [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
@@ -31,7 +31,7 @@
 ### [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md)
 ### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
-### [Vertraulichkeits Bezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)
+### [Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)
 
 ## [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ### [DLP und Microsoft Teams](dlp-microsoft-teams.md)
@@ -106,7 +106,7 @@
 ### [Dateiplan-Manager](file-plan-manager.md)
 ### [Aufbewahrungsbezeichnungen](labels.md)
 ### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
 ### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
 ## [Freigeben von Daten](disposition-reviews.md)
@@ -127,7 +127,7 @@
 ### Dateiplan
 #### [Dateiplan-Manager](file-plan-manager.md)
 #### [Aufbewahrungsbezeichnungen](labels.md)
-#### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 #### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
 #### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
@@ -330,7 +330,7 @@
 ### [Exportieren von Nachweisdokumenten](export-documents-from-incident.md)
 ### [Herunterladen von Exportaufträgen](download-export-jobs-from-a-data-investigation.md)
 
-## [Konfigurieren der Einstellungen von Datenuntersuchungen](configure-settings-datainvestigations.md)
+## Konfigurieren von Untersuchungseinstellungen
 ### [Hinzufügen zu oder Entfernen von Mitgliedern aus einer Untersuchung](add-remove-members.md)
 ### [Konfigurieren der Such- und Analyseeinstellungen](configure-search-analytics-settings.md)
 ### [Schließen oder Löschen einer Untersuchung](close-or-delete-investigation.md)
