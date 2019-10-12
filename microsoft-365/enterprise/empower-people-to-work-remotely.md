@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Konfigurieren Sie Infrastruktur und Sicherheit, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453945"
+ms.locfileid: "37469157"
 ---
 # <a name="empower-remote-workers"></a>Fördern von Remotemitarbeitern
 
@@ -74,7 +74,7 @@ In den folgenden Phasen werden Sie schrittweise durch die Bereitstellung des Mic
 
 [![Poster "Fördern von Remotemitarbeitern"](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Phase 1: Bereitstellen von Microsoft 365-Features und -Funktionen für Remotemitarbeiter
