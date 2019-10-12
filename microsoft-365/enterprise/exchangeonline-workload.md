@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Steuerung des Werts von Exchange Online in Microsoft 365 Enterprise innerhalb Ihrer Organisation.
-ms.openlocfilehash: c11a4ca0216d42f039005616c5d414759b8c0bad
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437815"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453861"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Bereitstellen von Exchange Online für Microsoft 365 Enterprise
 
@@ -74,8 +74,11 @@ Wenn Sie Ihre eigene Planung oder in Verbindung mit dem kurzstand durchführen, 
 Verwenden Sie diese Ressourcen, um sich auf die technischen Aspekte eines Exchange Online-Rollout vorzubereiten: 
 
 - [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
+- [Migrieren von Exchange Server öffentlichen Ordnern zu Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
+- [Migrieren von Exchange Server öffentlichen Ordnern zu Office 365 Gruppen](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Zusammenarbeit in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Empfänger in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
+- [Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
 
 Lesen Sie die folgenden Ressourcen, um ein besseres Verständnis der Sicherheit in Exchange Online zu erhalten:
 

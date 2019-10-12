@@ -12,30 +12,30 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt.
-ms.openlocfilehash: 5b7cefc2057d4e7705c991348a7710c2eaa4c7d9
-ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
+description: Erfahren Sie mehr über die Nachrichtenkopfzeilen und die Werte, die Nachrichten von Exchange Online Protection hinzugefügt werden.
+ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
+ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428416"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37451117"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 
 Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt. Mit den Feldern in dieser Kopfzeile können Administratoren Information zur Nachricht und deren Verarbeitung bereitgestellt werden. Die Felder in der Kopfzeile **X-Microsoft-Antispam** liefern zusätzliche Informationen über Massensendungen und Phishing. Zusätzlich zu diesen beiden Kopfzeilen fügt Exchange Online Protection auch E-Mail-Authentifizierungsergebnisse für jede verarbeitete Nachricht in die Kopfzeile **Authentication-results** ein.
 
-Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
-  
+Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+
 > [!TIP]
->  Sie können den Inhalt einer Nachrichtenkopfzeile kopieren und in das Tool [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) einfügen. Mit diesem Tool können Sie Kopfzeilen analysieren und in ein besser lesbares Format umwandeln.
-  
+> Sie können den Inhalt einer Nachrichtenkopfzeile kopieren und in das Tool [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) einfügen. Mit diesem Tool können Sie Kopfzeilen analysieren und in ein besser lesbares Format umwandeln.
+
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Forefront-Antispam-Report
 
 Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-Forefront-Antispam-Report**, und suchen Sie nach den folgenden Feldern: Andere Felder in dieser Kopfzeile werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
 
 |**Kopfzeilenfeld**|**Beschreibung**|
 |:-----|:-----|
-|CIP: [IP-Adresse]|Die IP-Verbindungsadresse. Sie sollten diese IP-Adresse angeben, wenn Sie im Verbindungsfilter eine IP-Zulassungsliste oder eine Liste für geblockte IP-Adressen erstellen. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungsfilterrichtlinie](configure-the-connection-filter-policy.md).  |
+|CIP: \[IP-Adresse\]|Die IP-Verbindungsadresse. Sie sollten diese IP-Adresse angeben, wenn Sie im Verbindungsfilter eine IP-Zulassungsliste oder eine Liste für geblockte IP-Adressen erstellen. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungsfilterrichtlinie](configure-the-connection-filter-policy.md).  |
 |CTRY|Das Land, aus dem die Nachricht mit dem Dienst verbunden wurde. Es wird anhand der Verbindungs-IP-Adresse ermittelt, die nicht notwendigerweise mit der ursprünglichen Sende-IP-Adresse übereinstimmen muss.|
 |LANG|Die Sprache, in der die Nachricht verfasst wurde, wie im Ländercode angegeben (z. B. ru_RU für Russisch).|
 |SCL|Die SCL-Bewertung (Spam Confidence Level) einer Nachricht. Weitere Informationen zur Interpretation dieser Werte finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).  |
@@ -53,71 +53,70 @@ Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-
 |SFV:SKI|Ähnlich wie SFV:SKN, die Filterung der Nachricht wurde aus einem anderen Grund übersprungen, wie eine unternehmensinterne E-Mail innerhalb einer Mandantenstruktur.|
 |SFV:SKQ|Die Nachricht wurde aus der Quarantäne freigegeben und an die vorgesehenen Empfänger gesendet.|
 |SFV:NSPM|Die Nachricht wurde als "Nicht-Spam" markiert und an die vorgesehenen Empfänger gesendet.|
-|H: [helostring]|Die Zeichenfolge HELO oder EHLO des verbundenen E-Mail-Servers.|
-|PTR: [ReverseDNS]|Der PTR-Eintrag (bzw. der Zeigereintrag) der Absender-IP-Adresse, auch als Reverse-DNS-Adresse bezeichnet.|
+|H: \[HELI-String\]|Die Zeichenfolge HELO oder EHLO des verbundenen E-Mail-Servers.|
+|PTR: \[ReverseDNS\]|Der PTR-Eintrag (bzw. der Zeigereintrag) der Absender-IP-Adresse, auch als Reverse-DNS-Adresse bezeichnet.|
 |CAT:|Die Kategorie der Schutzrichtlinie, die auf die Nachricht angewendet wurde: <br/>MALW: Malware <br/>PHSH: Phishing <br/>HSPM: Spam mit hoher Vertrauenswürdigkeit <br/>SPOOF: Spoofing <br/>SPM: Spam <br/>BULK: Massenaktion <br/>DIMP: Domänenidentitätswechsel <br/>UIMP: Benutzeridentitätswechsel <br/>Möglicherweise wird eine eingehende Nachricht durch mehrere Schutzformen und mehrere Erkennungsscans gekennzeichnet. Richtlinien haben unterschiedliche Prioritäten, und die Richtlinie mit der höchsten Priorität wird angewendet. Ziehen Sie [Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungsscans für Ihre E-Mails ausgeführt werden?](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined) zurate.|
 |SFTY|Die Nachricht wurde als Phishing-E-Mail erkannt und wird außerdem mit einem der folgenden Werte gekennzeichnet: <br/>9.1: Standardwert. Die Nachricht enthält eine Phishing-URL, kann weitere Phishinginhalte enthalten oder wurde möglicherweise vor der Weiterleitung an Office 365 von einem anderen E-Mail-Filter (z. B. einer lokalen Version von Exchange Server) als Phishing-E-Mail gekennzeichnet. <br/>9.11: Nachricht hat Antispoofing-Überprüfungen nicht bestanden, wobei die Absenderdomäne in der "From:"-Kopfzeile mit der Empfängerdomäne übereinstimmt oder Teil der gleichen Organisation ist. Dies weist auf organisationsinternes Spoofing hin. Ein Sicherheitstipp wird hinzugefügt. <br/>9.19: Nachricht hat Domänenidentitätswechsel-Überprüfungen nicht bestanden, wobei die Absenderdomäne versucht, die Identität einer Domäne des Empfängers oder einer benutzerdefinierten, von der Antiphishing-Richtlinie geschützten Domäne anzunehmen. Dies weist auf einen Identitätswechsel hin. Ein Sicherheitstipp wird zur Nachricht hinzugefügt, wenn dies über die Antiphishing-Richtlinie aktiviert ist. <br/>9.20: Nachricht hat Benutzeridentitätswechsel-Überprüfungen nicht bestanden, wobei der sendende Benutzer versucht, die Identität eines Benutzers innerhalb der Organisation des Empfängers oder eines benutzerdefinierten, von der Antiphishing-Richtlinie geschützten Benutzers anzunehmen. Dies weist auf einen Identitätswechsel hin. Ein Sicherheitstipp wird zur Nachricht hinzugefügt, wenn dies über die Antiphishing-Richtlinie aktiviert ist. <br/>9.21: Nachricht hat Antispoofing-Überprüfungen nicht bestanden, wobei die Absenderdomäne in der "From:"-Kopfzeile sich nicht authentifiziert und aus einer externen Domäne stammt. Wird in Kombination mit CompAuth verwendet (siehe Authentifizierungsergebnisse). <br/>9.22: identisch mit 9.21, außer dass der Benutzer über ein sicherer Absender ist, der überschrieben wurde. <br/>9.23: identisch mit 9.22, außer dass die Organisation über einen zulässigen Absender oder eine zulässige Domäne verfügt, die überschrieben wurde. <br/>9.24: identisch mit 9.23, außer dass der Benutzer über eine Exchange-Nachrichtenflussregel verfügt, die überschrieben wurde.|
-|X-CustomSpam: [ASFOption]|Die Nachricht stimmte mit einer erweiterten Spamfilteroption  überein. So bedeutet z. B. **X-CustomSpam: Bildlinks zu Remotestandorten**, dass eine Übereinstimmung mit der ASF-Option **Bildlinks zu Remotestandorten** besteht. Informationen dazu, welcher X-Headertext für die jeweiligen ASF-Funktionen hinzugefügt wird, finden Sie unter [Erweiterte Spamfilterungsoptionen](advanced-spam-filtering-asf-options.md).|
+|X-CustomSpam: \[ASFOption\]|Die Nachricht stimmte mit einer erweiterten Spamfilteroption überein. So bedeutet z. B. **X-CustomSpam: Bildlinks zu Remotestandorten**, dass eine Übereinstimmung mit der ASF-Option **Bildlinks zu Remotestandorten** besteht. Informationen dazu, welcher X-Headertext für die jeweilige ASF-Funktion hinzugefügt wird, finden Sie unter [Erweiterte Optionen für die Spamfilterung](advanced-spam-filtering-asf-options.md).|
 |
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Microsoft-Antispam
 
 In der folgenden Tabelle werden die hilfreiche Felder der Nachrichtenkopfzeile **X-Microsoft-Antispam** beschrieben: Andere Felder in dieser Kopfzeile werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
-  
+
 |**Kopfzeilenfeld**|**Beschreibung**|
 |:-----|:-----|
-|BCL|Die BCL-Wert (Bulk Complaint Level) der Nachricht. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level)](bulk-complaint-level-values.md).  |
 |PCL|Der PCL-Wert (Phishing Confidence Level) der Nachricht, der anzeigt, ob es sich um eine Phishing-Nachricht handelt. Dieser Status kann als einer der folgenden numerischen Werte zurückgegeben werden: <br/>**0-3**: Der Inhalt der Nachricht wird wahrscheinlich nicht zum Phishing genutzt. <br/>**4-8**: Der Inhalt der Nachricht wird wahrscheinlich zum Phishing genutzt. <br/>**-9990**: (nur Exchange Online Protection) Der Inhalt der Nachricht wird wahrscheinlich als Phishing eingestuft.  <br/>  Anhand dieser Werte wird ermittelt, welche Aktion Ihr E-Mail-Client für die Nachrichten ausführt. Outlook verwendet z. B. den PCL-Stempel, um den Inhalt von verdächtigen Nachrichten zu blockieren. Weitere Informationen über Phishing und darüber, wie Outlook Phishingnachrichten verarbeitet, finden Sie unter [Aktivieren und Deaktivieren von Links in E-Mail-Nachrichten](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
 |
 
 ## <a name="authentication-results-message-header"></a>Nachrichtenkopfzeile „Authentication-results“
 
 Die Ergebnisse der SPF-, DKIM- und DMARC-Überprüfungen werden aufgezeichnet, oder in der Nachrichtenkopfzeile **Authentication-results** von Office 365 markiert, wenn unsere E-Mail-Server eine E-Mail erhalten.
-  
+
 ### <a name="check-stamp-syntax-and-examples"></a>Überprüfen der Stempelsyntax und Beispiele
 
 Die folgenden Syntaxbeispiele zeigen einen Teil des „Textstempels“, den Office 365 in der Nachrichtenkopfzeile für jede E-Mail-Nachricht anwendet, die beim Empfang durch Ihren Mailserver eine E-Mail-Authentifizierungsprüfung durchlaufen. Dieser Stempel wird der Kopfzeile mit den Authentifizierungsergebnissen hinzugefügt:
-  
-**Syntax: SPF-Prüfstempel**
-  
+
+#### <a name="syntax-spf-check-stamp"></a>Syntax: SPF-Prüfstempel
+
 Für SPF gilt die folgende Syntax.
-  
+
 ```text
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
-**Beispiele: SPF-Prüfstempel**
-  
+**Beispiele: SPF-Prüfstempel
+
 ```text
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
-**Syntax: DKIM-Prüfstempel**
-  
+#### <a name="syntax-dkim-check-stamp"></a>Syntax: DKIM-Prüfstempel
+
 Für DKIM gilt die folgende Syntax.
-  
+
 ```text
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
-**Beispiele: DKIM-Prüfstempel**
-  
+**Beispiele: DKIM-Prüfstempel
+
 ```text
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
-**Syntax: DMARC-Prüfstempel**
-  
+#### <a name="syntax-dmarc-check-stamp"></a>Syntax: DMARC-Prüfstempel
+
 Für DMARC gilt die folgende Syntax.
-  
+
 ```text
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
-**Beispiele: DMARC-Prüfstempel**
-  
+#### <a name="examples-dmarc-check-stamp"></a>Beispiele: DMARC-Prüfstempel
+
 ```text
 dmarc=pass action=none header.from=contoso.com
 dmarc=bestguesspass action=none header.from=contoso.com
@@ -128,7 +127,7 @@ dmarc=fail action=oreject header.from=contoso.com
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Kopfzeilenfelder mit Authentifizierungsergebnissen, die von der Office 365-E-Mail-Authentifizierung verwendet werden
 
 In dieser Tabelle werden die Felder und die möglichen Werte für jede E-Mail-Authentifizierungsprüfung beschrieben.
-  
+
 |**Kopfzeilenfeld**|**Beschreibung**|
 |:-----|:-----|
 |SPF|Beschreibt die Ergebnisse der SPF-Prüfung für die Nachricht. Mögliche Werte sind: <br/>**pass (IP-Adresse)**: Gibt an, dass die SPF-Überprüfung für die Nachricht bestanden wurde, und enthält die IP-Adresse des Absenders. Der Client kann E-Mails im Auftrag der Absenderdomäne senden oder weiterleiten. <br/>**fail (IP-Adresse)**: Gibt an, dass die SPF-Überprüfung für die Nachricht fehlgeschlagen ist, und enthält die IP-Adresse des Absenders. Dies wird häufig als _hard fail_ bezeichnet. <br/>**soft fail (Ursache)**: Gibt an, dass der SPF-Eintrag bestimmt hat, dass der Host nicht die Erlaubnis zum Senden hat, sich jedoch im Übergang befindet. <br/>**neutral**: Gibt an, dass der SPF-Eintrag explizit angegeben hat, dass nicht angegeben wird, ob die IP-Adresse autorisiert ist. <br/>**none**: Gibt an, dass die Domäne nicht über einen SPF-Eintrag verfügt oder dass der SPF-Eintrag nicht zu einem Ergebnis ausgewertet wird. <br/>**temperror**: Gibt an, dass ein Fehler aufgetreten ist, der möglicherweise vorübergehend ist, zum Beispiel ein DNS-Fehler. Wenn Sie es später noch einmal versuchen, kann der Vorgang möglicherweise ohne Eingreifen von Seiten eines Administrators erfolgreich ausgeführt werden. <br/>**permerror**: Gibt an, dass ein dauerhafter Fehler aufgetreten ist. Dies geschieht, wenn die Domäne beispielsweise einen falsch formatierten SPF-Eintrag aufweist.|
