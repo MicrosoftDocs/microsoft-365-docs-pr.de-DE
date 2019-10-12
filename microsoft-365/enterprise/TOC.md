@@ -99,11 +99,6 @@
 ## [Deployment and Lab Kit für Windows und Office](modern-desktop-deployment-and-management-lab.md)
 ## [Hilfe für Ihre Bereitstellung](find-help-for-modern-desktop-deployment.md)
 
-# [Konfigurationen für den Identitäts- und Gerätezugriff](microsoft-365-policies-configurations.md)
-##[Erforderliche Arbeit](identity-access-prerequisites.md)
-## [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md)
-## [Empfohlene Exchange Online-Zugriffsrichtlinien](secure-email-recommended-policies.md)
-## [Empfohlene SharePoint Online-Zugriffsrichtlinien](sharepoint-file-access-policies.md)
 
 # [Microsoft 365 Compliance](../compliance/index.yml)
 # [Sicherheit in Microsoft 365](../security/index.yml)
