@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: 2845fc9b20b337764159d9debc04f165dcb4bf62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7db1259f4ec15fffe46955ba2166b244c5737d43
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081248"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510552"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 
@@ -244,6 +244,6 @@ Sie können nslookup zum Anzeigen der DNS-Einträge verwenden, einschließlich d
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="SPFTroubleshoot"> </a>
 
-Benötigen Sie Hilfe beim Hinzufügen des SPF-TXT-Eintrags? [Schrittweise Anweisungen](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) zur Aktualisierung von SPF (TXT)-Einträgen an einer Vielzahl beliebter Domänenregistrierungsstellen stehen zur Verfügung. [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) umfasst die Syntax- und Kopfzeilenfelder, die von Office 365 für SPF-Überprüfungen verwendet werden. 
+Benötigen Sie Hilfe beim Hinzufügen des SPF-TXT-Eintrags? Lesen Sie den Artikel [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-a-txt-record-for-spf-to-help-prevent-email-spam) ausführliche Informationen zur Verwendung von Sender Policy Framework mit Ihrer benutzerdefinierten Domäne in Office 365. [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) umfasst die Syntax- und Kopfzeilenfelder, die von Office 365 für SPF-Überprüfungen verwendet werden. 
   
 

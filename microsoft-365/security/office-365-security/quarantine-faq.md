@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt.
-ms.openlocfilehash: 389fa939c2fd35351abad4d355829656c3977deb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082398"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510532"
 ---
 # <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
@@ -47,15 +47,15 @@ A. Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenu
   
  **Q. Können auch andere Nachrichten als Spam in Quarantäne gesendet werden?**
   
-A. Nachrichten, die einer e-Mail-Fluss Regel (auch als Transportregel bezeichnet) entsprechen, können auch an die Administrator Quarantäne gesendet werden, wenn dies die konfigurierte Aktion ist. Die Endbenutzer-Quarantäne ist nur für Spam vorgesehen.
+A. Ja. Nachrichten, die einer e-Mail-Fluss Regel entsprechen (auch als Transportregel bezeichnet) zusammen mit Nachrichten, die als Phishing identifiziert werden, können auch an die Administrator Quarantäne gesendet werden, wenn dies die konfigurierte Aktion ist. Die Endbenutzer-Quarantäne ist nur für Spam vorgesehen.
   
  **F. Wie lange bleiben Nachrichten in der Quarantäne?**
   
-A. Standardmäßig werden Spam isolierte Nachrichten 30 Tage lang in der Quarantäne aufbewahrt, während in Quarantäne befindliche Nachrichten, die einer e-Mail-Fluss Regel entsprechen, für 7 Tage in der Quarantäne aufbewahrt werden. Nach dieser Zeitspanne werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
+A. Standardmäßig werden Spam isolierte Nachrichten 30 Tage lang in der Quarantäne aufbewahrt, während isolierte Nachrichten, die einer e-Mail-Fluss Regel entsprechen, in der Quarantäne für bis zu 30 Tage aufbewahrt werden, basierend auf dem in der standardmäßigen Inhaltsfilter Richtlinie festgelegten Aufbewahrungszeitraum. Nach dieser Zeitspanne werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
   
  **F. Kann ich mehr als eine Quarantänenachricht gleichzeitig freigeben oder melden?**
   
-A. Im EAC oder der Spamquarantäne für Endbenutzer können derzeit nicht mehrere Nachrichten gleichzeitig freigegeben oder gemeldet werden. Administratoren können dazu allerdings ein Windows Remote-PowerShell-Skript erstellen. Verwenden Sie das [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx)-Cmdlet, um nach Nachrichten zu suchen, und das [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx)-Cmdlet, um sie freizugeben. 
+A. Ja, es können bis zu 100 Nachrichten gleichzeitig im Quarantäne Portal freigegeben werden. Darüber hinaus können Administratoren ein Remote Windows PowerShell Skript erstellen, um diese Aufgabe auszuführen. Verwenden Sie das [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx)-Cmdlet, um nach Nachrichten zu suchen, und das [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx)-Cmdlet, um sie freizugeben. 
   
  **F. Werden bei der Suche nach in der Quarantäne isolierte Nachrichten Platzhalterzeichen unterstützt? Kann ich für eine bestimmte Domäne nach Nachricht in Quarantäne suchen?**
   
