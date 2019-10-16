@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: 38160952827d8e60884877a67aea15521000f63f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081645"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510562"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
 Zu den Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen. Die Einstellungen für die Spamfilterrichtlinie werden nur auf eingehende Nachrichten angewendet. Es gibt zwei Optionen:
@@ -50,7 +50,7 @@ Wenn Sie mehr benutzerdefinierte Einstellungen aktivieren oder benutzerdefiniert
 
 3. Gehen Sie unter dem Abschnitt **Spam- und Massenaktionen** folgendermaßen vor:
 
-  - Wählen Sie jeweils eine Aktion für den Typ **Spam**, **Nachricht mit hoher Spamwahrscheinlichkeit**, **Phishing-E-Mail** und **Massen-E-Mail** aus. Die verfügbaren Werte sind: 
+  - Wählen Sie jeweils eine Aktion für den Typ **Spam**, **Nachricht mit hoher Spamwahrscheinlichkeit**, **Nachricht mit hoher Phishingwahrscheinlichkeit**, **Phishing-E-Mail** und **Massen-E-Mail** aus. Die verfügbaren Werte sind: 
 
     - **Nachricht in Junk-E-Mail-Ordner verschieben:** Sendet die Nachricht an den Ordner "Junk-E-Mail" der angegebenen Empfänger. Hierbei handelt es sich um die Standardaktion für Spam, Nachrichten mit hoher Spamwahrscheinlichkeit und Massen-E-Mails.<br/><br/>
 
