@@ -1,8 +1,8 @@
 ---
 title: 'Workshop zum Chief Information Security Officer (CISO), Modul 4a: Bedrohungsschutz Strategie'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 0bbc9cf6cb102067aadcacdb416f6f538bb2555b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081658"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517574"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO Workshop-Modul 4a: Bedrohungsschutz Strategie
 
 Erkunden Sie wichtige Informationen zu Bedrohungsschutz, Sicherheitsentwicklung, Strategien und Sicherheits Straßenkarten.
 
 - PDF-Zusammenfassung herunterladen: [Modul 4a: Bedrohungsschutz Strategie](../media/ciso-workshop-4a-threat-protection.pdf)
-- Herunterladen der PowerPoint-Zusammenfassung: [Modul 4a: Bedrohungsschutz Strategie](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
+- Herunterladen der PowerPoint-Zusammenfassung: [Modul 4a: Bedrohungsschutz Strategie](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>Einführung: Bedrohungsschutz Strategie (4:37)
 

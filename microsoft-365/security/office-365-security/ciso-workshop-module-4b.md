@@ -1,8 +1,8 @@
 ---
 title: 'Workshop zum Chief Information Security Officer (CISO), Modul 4B: Bedrohungsschutz Strategie'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 5644ea7e69381b108dd3e90ec5fb0cbf8738886d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 88cb6ab079afcd420202f5cca47f555895d0d46a
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081663"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517504"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop-Modul 4B: Bedrohungsschutz Strategie 
 
 In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security Operations Center (SoC), die von Billionen von Signalen im Microsoft Intelligent Security Graph betrieben werden, überprüft.
 
 - PDF-Zusammenfassung herunterladen: [Modul 4B: Bedrohungsschutz Strategie](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
-- Herunterladen der PowerPoint-Zusammenfassung: [Modul 4B: Bedrohungsschutz Strategie](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
+- Herunterladen der PowerPoint-Zusammenfassung: [Modul 4B: Bedrohungsschutz Strategie](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>Einführung: Bedrohungsschutz Strategie (Detect-respond-Recover) (3:38)
 
