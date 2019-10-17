@@ -1,14 +1,31 @@
 # [Sicherheit in Microsoft 365](index.yml)
 
+## Erste Schritte
+### [Microsoft 365 Security für geschäftliche Entscheidungsträger](Microsoft-365-security-for-bdm.md)
+### [Sicherheitsbewertung](./mtp/microsoft-secure-score.md)
+### [Chief Informationen Security Officer (CISO) – Workshop-Schulung](./office-365-security/ciso-workshop.md)
+#### [Modul 1: Microsoft Internetsicherheit-Briefing](./office-365-security/ciso-workshop-module-1.md)
+#### [Modul 2: Sicherheitsverwaltung](./office-365-security/ciso-workshop-module-2.md)
+#### [Modul 3 – Identität und Zugriff für nicht vertrauenswürdige Benutzer](./office-365-security/ciso-workshop-module-3.md)
+#### [Modul 4a: Bedrohungsschutz Strategie, Teil I](./office-365-security/ciso-workshop-module-4a.md)
+#### [Modul 4 b: Bedrohungsschutz Strategie, Teil II](./office-365-security/ciso-workshop-module-4b.md)
+#### [Modul 5: Information Protection](./office-365-security/ciso-workshop-module-5.md)
+
+
+## [Konfigurationen für den Identitäts- und Gerätezugriff](../enterprise/microsoft-365-policies-configurations.md)
+### [Erforderliche Arbeit](../enterprise/identity-access-prerequisites.md)
+### [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../enterprise/identity-access-policies.md)
+### [Empfohlene Exchange Online-Zugriffsrichtlinien](../enterprise/secure-email-recommended-policies.md)
+### [Empfohlene SharePoint Online-Zugriffsrichtlinien](../enterprise/sharepoint-file-access-policies.md)
+
+
 ## Microsoft Threat Protection
 ### [Übersicht]()
 #### [Was ist Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 Security Center](mtp/overview-security-center.md)
 
-
 ### [Suche in Microsoft 365](./mtp/hunting.md)
 
-### [Sicherheitsbewertung](./mtp/microsoft-secure-score.md)
 
 ### [Berichte]()
 #### [Überwachen und Anzeigen von Berichten](./mtp/monitoring-and-reporting.md)
@@ -20,12 +37,6 @@
 ### [Verwalten von Tickets über ServiceNow](./mtp/tickets.md)
 
 
-## [Konfigurationen für den Identitäts- und Gerätezugriff](../enterprise/microsoft-365-policies-configurations.md)
-### [Erforderliche Arbeit](../enterprise/identity-access-prerequisites.md)
-### [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../enterprise/identity-access-policies.md)
-### [Empfohlene Exchange Online-Zugriffsrichtlinien](../enterprise/secure-email-recommended-policies.md)
-### [Empfohlene SharePoint Online-Zugriffsrichtlinien](../enterprise/sharepoint-file-access-policies.md)
-
 ## [Sicherheit in Office 365]()
 ### [Erste Schritte]()
 #### [Inhaltsübersicht für die Sicherheit von Office 365](./office-365-security/security-roadmap.md)
@@ -34,13 +45,8 @@
 #### [Berechtigungen im Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 #### [Freigeben des Benutzerzugriffs auf das Security Center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
-#### [Chief Informationen Security Officer (CISO) – Workshop-Schulung](./office-365-security/ciso-workshop.md)
-##### [Modul 1: Microsoft Internetsicherheit-Briefing](./office-365-security/ciso-workshop-module-1.md)
-##### [Modul 2: Sicherheitsverwaltung](./office-365-security/ciso-workshop-module-2.md)
-##### [Modul 3: Identitäts- und Zugriffsverwaltung](./office-365-security/ciso-workshop-module-3.md)
-##### [Modul 4a: Bedrohungsschutz Strategie, Teil I](./office-365-security/ciso-workshop-module-4a.md)
-##### [Modul 4 b: Bedrohungsschutz Strategie, Teil II](./office-365-security/ciso-workshop-module-4b.md)
-##### [Modul 5: Information Protection](./office-365-security/ciso-workshop-module-5.md)
+
+
 
 
 ### [Schutz vor Bedrohungen](./office-365-security/protect-against-threats.md)
@@ -93,6 +99,7 @@
 #### [Antispoofingschutz in Office 365](./office-365-security/anti-spoofing-protection.md)
 ##### [Weitere Informationen zu Spoofing Intelligence](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [Exemplarische Vorgehensweise für Erkenntnisse der Spoofintelligenz](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web](./office-365-security/unverified-sender-feature.md)
 
 #### [Was ist EOP?](./office-365-security/what-is-eop.md)
 ##### [Unterstützung für anonym eingehende E-Mail-Nachrichten über IPv6](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -154,7 +161,7 @@
 
 #### [Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](./office-365-security/threat-explorer.md)
 ##### [Ansichten des Sicherheitsrisiken-Explorers](./office-365-security/threat-explorer-views.md)
-##### [Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web](./office-365-security/unverified-sender-feature.md)
+
 
 #### [Mehr Sicherheit durch Integration]()
 ##### [Integration von Office 365 ATP mit Microsoft Defender ATP](./office-365-security/integrate-office-365-ti-with-wdatp.md)
