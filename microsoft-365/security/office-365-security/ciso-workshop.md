@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: b00d18e9d14d369716f9c37fb9975f55d3c0eece
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523620"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554122"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Workshop-Schulung für Chief Information Security Officer (CISO)
 
@@ -32,7 +32,7 @@ Die ciso Workshop-Videos und PDF/PowerPoint-Download Inhalte sind modular aufgeb
 
 - [Modul 2: Sicherheitsverwaltung](ciso-workshop-module-2.md): Hier erfahren Sie, wie Sie die Sichtbarkeit und Kontrolle über ihre Hybriden Unternehmensimmobilien mit integrierter Anleitung, automatischer Richtlinienerzwingung und Überwachung verbessern können.
 
-- [Modul 3: Modul 3 – Identitäts-und NULL-vertrauenswürdiger Benutzer Zugriff](ciso-workshop-module-3.md): Hier erfahren Sie, wie Sie NULL-Trust-Konzepte in Ihre Identität und Benutzerzugriffs Strategie einbeziehen, um Unternehmensdaten innerhalb und außerhalb des Netzwerkperimeters besser zu schützen.
+- [Modul 3: Modul 3 – Identitäts-und NULL-vertrauenswürdiger Benutzer Zugriff](ciso-workshop-module-3.md): erfahren Sie, wie Sie Zero Trust mit Ihrer Identitäts-und Benutzerzugriffs Strategie voraussetzen, um Unternehmensdaten innerhalb und außerhalb Ihres Netzwerkperimeters besser zu schützen.
 
 - [Modul 4a: Bedrohungsschutz Strategie, Teil I](ciso-workshop-module-4a.md): erkunden Sie wichtige Erkenntnisse zum Bedrohungsschutz, zur Sicherheitsentwicklung, zu Strategien und zu Sicherheits Straßenkarten.
 
