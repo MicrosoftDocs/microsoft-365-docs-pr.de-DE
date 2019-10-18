@@ -10,24 +10,28 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.
-ms.openlocfilehash: 19a7ce48e8df5c80964a250b0bc087591a0530c1
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 309dbf5bdba81bbf8ad0a9707c136a03c4a28586
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287873"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575526"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Überprüfen der APP-Schutzeinstellungen auf Android-oder IOS-Geräten
 
-Befolgen Sie die Anweisungen auf den Registerkarten, um App-Schutzeinstellungen auf Android-oder IOS-Geräten zu validieren.
+Befolgen Sie die Anweisungen in den folgenden Abschnitten, um Einstellungen für den App-Schutz auf Android-oder IOS-Geräten zu validieren.
   
-## <a name="androidtab"></a>[Android](#tab/)
+## <a name="android"></a>Android
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Überprüfen, ob die Einstellungen für den App-Schutz auf Benutzergeräten funktionieren
 
@@ -116,7 +120,7 @@ Wählen Sie im Bereich **Richtlinie bearbeiten** neben **Schutz bei verlorenen o
     
     ![An encrypted image file in the Gallery app.](media/25936414-bd7e-421d-824e-6e59b877722d.png)
   
-## <a name="iostab"></a>[iOS](#tab/)
+## <a name="ios"></a>iOS
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Überprüfen, ob die Einstellungen für den App-Schutz auf Benutzergeräten funktionieren
 

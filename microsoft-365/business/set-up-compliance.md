@@ -10,17 +10,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Einrichten von Compliance-Features, um Datenverlust zu verhindern und vertrauliche Daten zu kennzeichnen
-ms.openlocfilehash: a0ba2fa6dbe7c786d577ad7098c1790f569f5acc
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 73709c1302a2e9e46eb2d54ea021438b5f1743c5
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453912"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575656"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 

@@ -1,18 +1,18 @@
 ---
-title: Registrieren vorhandener Geräte
+title: Selbstregistrieren vorhandener Geräte
 description: Wiederverwendete Geräte registrieren, die Sie möglicherweise bereits haben, damit Sie von Microsoft Managed Desktop verwaltet werden können
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: c2527b18c422d53060398f90b7470db8b4959afa
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982948"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577771"
 ---
-# <a name="register-existing-devices-yourself"></a>Registrieren vorhandener Geräte
+# <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
 >[!NOTE]
 >In diesem Thema werden die Schritte beschrieben, mit denen Sie bereits verwendete Geräte wieder verwenden und in Microsoft Managed Desktop registrieren können. Wenn Sie mit brandneuen Geräten arbeiten, befolgen Sie stattdessen die Schritte unter [Registrieren neuer Geräte in Microsoft Managed Desktop](register-devices-self.md) .
@@ -176,7 +176,7 @@ Jetzt können Sie mit dem [Registrieren von Geräten](#register-devices)fortfahr
 
 Wenn Sie die Hardwarehash Daten nach den manuellen PowerShell-oder Flash Drive-Methoden gesammelt haben, müssen Sie nun die Daten in den CSV-Dateien in einer einzigen Datei zusammenfassen, um die Registrierung abzuschließen. Hier ist ein Beispiel für PowerShell-Skripts, um dies zu vereinfachen:
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 Nachdem die Hashdaten in einer CSV-Datei zusammengeführt wurden, können Sie nun mit [dem Registrieren der Geräte](#register-devices)fortfahren.
 
