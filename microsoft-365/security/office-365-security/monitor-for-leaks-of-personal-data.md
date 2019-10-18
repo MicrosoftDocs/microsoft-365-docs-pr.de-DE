@@ -87,9 +87,9 @@ Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachun
 
 -   [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://support.office.com/de-DE/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Durchsuchen des Überwachungsprotokolls](https://support.office.com/de-DE/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Durchsuchen des Überwachungsprotokolls](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/de-DE//library/mt238501(v=exchg.160).aspx) (Cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
 
 -   [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](https://support.office.com/de-DE/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
