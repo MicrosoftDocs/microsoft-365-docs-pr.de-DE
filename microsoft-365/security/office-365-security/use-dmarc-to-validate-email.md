@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Office 365-Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 24196139d46df8de7813e827e57d04c4bf9146b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 677b46f970edab98e950c9db49f264afc8d5dd73
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082387"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590489"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Validieren von E-Mails in Office 365
 
@@ -209,6 +209,13 @@ Office 365 ist so konfiguriert, da einige autorisierte E-Mail-Nachrichten die DM
 - Benutzer fügen mithilfe des E-Mail-Clients sichere Absender einzeln hinzu
     
 - Administratoren erstellen eine Exchange-E-Mail-Flussregel (auch bekannt als Transportregel) für alle Benutzer, die Nachrichten dieser bestimmten Absender zulassen. 
+
+## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>So verwendet Office 365 ARC (Authenticated Received Chain)
+<a name="ARC"> </a>
+
+Alle gehosteten Postfächer in Office 365 profitieren nun von ARC mit besserer Zustellbarkeit von Nachrichten und verbessertem Antispoofingschutz. ARC bewahrt die Ergebnisse der E-Mail-Authentifizierung aller teilnehmenden Mittler bzw. Hops, wenn eine E-Mail vom ursprünglichen Server an das Empfängerpostfach geleitet wird. Von Mittlern im E-Mail-Routing vorgenommene Änderungen, z. B. Weiterleitungsregeln oder automatische Signaturen, konnten vor der Verwendung von ARC zu DMARC-Fehlern führen, wenn die E-Mail das Empfängerpostfach erreichte. Mit ARC kann Office 365 anhand der kryptografischen Aufbewahrung der Authentifizierungsergebnisse die Authentizität eines E-Mail-Absenders überprüfen. 
+
+Office 365 verwendet ARC zurzeit zur Überprüfung der Authentifizierungsergebnissen, wenn Microsoft der ARC-Sealer ist, aber Sie sollten künftig Unterstützung für ARC-Sealer von Drittanbietern ergänzen. 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Problembehandlung bei der DMARC-Implementierung
 <a name="dmarctroubleshoot"> </a>
