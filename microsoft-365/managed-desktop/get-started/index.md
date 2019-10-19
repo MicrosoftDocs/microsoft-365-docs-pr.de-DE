@@ -5,19 +5,17 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390502"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595581"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="b49b7-103">Erste Schritte mit Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="b49b7-103">Get started with Microsoft Managed Desktop</span></span>
+# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="d5afc-103">Erste Schritte mit Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="d5afc-103">Get started with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="b49b7-104">Mit Microsoft Managed Desktop wird die Verwaltung Ihrer Desktop Geräte in eine Enterprise-Cloud-Infrastruktur übertragen.</span><span class="sxs-lookup"><span data-stu-id="b49b7-104">With Microsoft Managed Desktop, managing your desktop devices is transitioned to an enterprise cloud infrastructure.</span></span> 
+<span data-ttu-id="d5afc-104">Wenn Sie bereit sind, sich beim Dienst anzumelden, enthält dieser Abschnitt die folgenden Schritte, um tatsächlich dem Dienst beizutreten, Geräte zu beziehen und einzurichten, Ihre Endbenutzer vorzubereiten und apps bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="d5afc-104">Once you're ready to enroll in the service, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b49b7-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="b49b7-105">In this section</span></span>
-
-- [<span data-ttu-id="b49b7-106">Hinzufügen von Administrator Kontakten</span><span class="sxs-lookup"><span data-stu-id="b49b7-106">Add Admin contacts</span></span>](add-admin-contacts.md)
-- [<span data-ttu-id="b49b7-107">Bestell Geräte</span><span class="sxs-lookup"><span data-stu-id="b49b7-107">Order devices</span></span>](devices.md)
+- [<span data-ttu-id="d5afc-105">Hinzufügen von Administrator Kontakten im Verwaltungsportal von Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="d5afc-105">Add Admin contacts in Microsoft Managed Desktop Admin portal</span></span>](add-admin-contacts.md)
+- [<span data-ttu-id="d5afc-106">Einrichten von Microsoft Managed Desktop-Geräten</span><span class="sxs-lookup"><span data-stu-id="d5afc-106">Set up Microsoft Managed Desktop devices</span></span>](set-up-devices.md)
+- [<span data-ttu-id="d5afc-107">Bereitstellen von apps auf Microsoft Managed Desktop-Geräten</span><span class="sxs-lookup"><span data-stu-id="d5afc-107">Deploy apps to Microsoft Managed Desktop devices</span></span>](deploy-apps.md)
