@@ -37,4 +37,4 @@
 ## [Zurücksetzen von Geräten auf Werkseinstellungen](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Verwalten von Sicherheitsvorfällen
-## [Reagieren auf ein kompromittiertes E-Mail-Konto](/office365/securitycompliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)
+## [Reagieren auf ein kompromittiertes E-Mail-Konto](../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
