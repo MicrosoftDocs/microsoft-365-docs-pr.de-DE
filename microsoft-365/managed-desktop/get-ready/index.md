@@ -1,24 +1,25 @@
 ---
-title: Vorbereiten der Registrierung in Microsoft Managed Desktop
-description: ''
+title: Vorbereiten auf die Registrierung in Microsoft Managed Desktop
+description: Schritte zur Vorbereitung Ihrer Organisation auf die Registrierung
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
-ms.openlocfilehash: 68cf55e5528affef352f144384888c0cb01cfc88
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390542"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595591"
 ---
-# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Vorbereiten der Registrierung in Microsoft Managed Desktop
+# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Vorbereiten auf die Registrierung in Microsoft Managed Desktop
 
-Erfahren Sie mehr über die Voraussetzungen für Microsoft Managed Desktop. 
-
-## <a name="in-this-section"></a>Inhalt dieses Abschnitts
+In diesen Themen werden die Schritte beschrieben, die Sie in Ihrer Organisation zur Vorbereitung auf die Registrierung durchführen müssen, einschließlich der Überprüfung, ob Ihre Umgebung wichtige Voraussetzungen erfüllt, Netzwerke konfigurieren, Zertifikate einrichten und ihre Apps für die Aufnahme in das Vorbereiten Service.
 
 - [Voraussetzungen für Microsoft Managed Desktop](prerequisites.md)
-- [Netzwerkkonfiguration](network.md)
-- [Vorbereiten von Apps für Microsoft Managed Desktop](apps.md)
+- [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
+- [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](network.md)
+- [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
+- [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
+- [Apps in Microsoft Managed Desktop](apps.md)
+

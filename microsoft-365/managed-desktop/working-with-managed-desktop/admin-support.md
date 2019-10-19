@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982476"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37159683"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administrator Unterstützung für Microsoft Managed Desktop
 
 Sie können Support Tickets oder Feedback Anforderungen über das Microsoft Managed Desktop administrative Portal an Microsoft übermitteln. Support Anforderungen werden immer über Feedback Übermittlungen priorisiert. Support Anforderungen werden je nach Schweregrad behandelt, wie in der [Definitionstabelle für den Schweregrad](#sev)beschrieben. Feedback wird überprüft, und bei Bedarf wird eine Antwort angegeben. 
 
 >[!IMPORTANT]
->Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Verpackungen, Geräte, Sicherheit und andere einrichten. Sie können keine Support Anfragen in einen dieser Bereiche übermitteln, wenn kein Administratorkontakt konfiguriert ist.
+>Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Verpackungen, Geräte, Sicherheit und andere einrichten. Sie können keine Supportanfragen in einen dieser Bereiche übermitteln, wenn kein Administratorkontakt konfiguriert ist.
 
 **So übermitteln Sie eine Supportanfrage**
 1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)an. 
@@ -50,7 +50,14 @@ Weitere Details:
 - **Geschäftszeiten** -für die meisten Länder sind die Geschäftszeiten von 9:00 Uhr bis 5:00 Uhr, Pacific Standard Time.
 - **Anwendungskompatibilität** – für ein Problem mit der Anwendungskompatibilität muss ein reproduzierbarer Fehler derselben Version der Anwendung zwischen der vorherigen und der aktuellen Version von Windows oder Office vorliegen. Um Probleme mit der Anwendungskompatibilität zu beheben, benötigt Microsoft eine Kontaktstelle für Kunden, mit der Sie arbeiten können. Die einzelnen müssen direkt mit unserem Fast-Track-Team zusammenarbeiten, um das Problem zu untersuchen und zu beheben.
 - **Kundenantwort Zeit** Wenn ein Kunde die erwarteten Antwort Anforderungen nicht erfüllen kann, wird die Anforderung von Microsoft um einen Schweregrad auf ein Minimum von Schweregrad C herabgestuft. Wenn ein Kunde nicht auf Aktionsanforderungen reagiert, wird Microsoft die Supportanfrage innerhalb von 48 Stunden nach der letzten Anforderung entschärfen und schließen.
- 
+
+
+## <a name="providing-administrator-rights-to-specific-users"></a>Bereitstellen von Administratorrechten für bestimmte Benutzer
+
+Bei der Arbeit mit Supportmitarbeitern müssen Sie möglicherweise lokalen Administratorrechten für einen Benutzer auf einem Gerät zur Unterstützung der Problembehandlung zur Verfügung stellen. Hierzu müssen Sie bereits über globale Administrator-oder Geräteadministrator Rechte für Ihr eigenes Konto in Microsoft InTune verfügen. Führen Sie je nach Situation einen der folgenden Schritte aus:
+
+- Wenn Ihre Benutzer vom lokalen Active Directory-Konto synchronisiert werden, führen Sie **net localgroup Administrators/Add "Contoso\username"** über eine Eingabeaufforderung mit erhöhten Rechten aus.
+- Wenn Ihre Benutzer in Azure Active Directory erstellt wurden, führen Sie **net localgroup Administrators/Add "AzureAD\UserUpn"** an einer Eingabeaufforderung mit erhöhten Rechten aus.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Endbenutzer Unterstützung für Microsoft Managed Desktop](end-user-support.md). 

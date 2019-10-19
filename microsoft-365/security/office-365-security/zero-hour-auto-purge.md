@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab.
-ms.openlocfilehash: f43826614def99f8807d8777f128d5bc66f7b46a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 725dc9da9119169937231372585489bdf192b11e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082150"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37319268"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
@@ -56,16 +56,17 @@ Malware zap ist in der Schadsoftware-Richtlinie standardmäßig aktiviert. Sie k
 
 Bei e-Mails, die nach der Zustellung als "Phishing" identifiziert werden, wird zap entsprechend der Spam Richtlinie, von der der Benutzer abgedeckt ist, aktiv. Wenn die Richtlinien-Phishing-Aktion auf eine e-Mail (Umleitung, Löschung, Quarantäne, verschieben zu Junk) festgelegt ist, wird zap die Nachricht in den Junk-e-Mail-Ordner des Posteingangs des Benutzers verschieben, unabhängig vom Lesestatus der e-Mail. Wenn die Richtlinie Phishing-Aktion nicht auf Aktion ausführen festgelegt ist (X-Header hinzufügen, Betreff ändern, keine Aktion), wird zap keine Aktion für die e-Mail durchführen. Weitere Informationen zum [Konfigurieren ihrer Spamfilter Richtlinien](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) finden Sie hier.
 
-Phishing-zap ist in der Spam Richtlinie standardmäßig aktiviert. Sie können Phishing zap mithilfe des Parameters *ZapEnabled* im Cmdlet " [hostedcontentfilterpolicy dient zum](https://go.microsoft.com/fwlink/p/?LinkId=722758) " in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren.
+Phishing-zap ist in der Spam Richtlinie standardmäßig aktiviert. Phishing-zap kann mithilfe des *PhishZapEnabled* -Parameters von [sethostedcontentfilterpolicy dient zum](https://go.microsoft.com/fwlink/p/?LinkId=722758), einem EoP-Cmdlet, deaktiviert werden.
+
+> **[Hinweis]** der vorherige *ZapEnabled* -Cmdlet-Parameter, der sowohl Phishing als auch Spam zap kontrollierte, wird am **1. Februar 2020 veraltet**. Wenn Sie Skripts geschrieben haben, die den ZapEnabled-Parameter verwenden, wird empfohlen, diese für die Verwendung von SpamZapEnabled und PhishZapEnabled zu aktualisieren. In der Übergangsphase werden alle drei Parameter (ZapEnabled, PhishZapEnabled und SpamZapEnabled) über das Cmdlet zur Verfügung gestellt. Bis zur expliziten Festlegung über UI oder PowerShell wird PhishZapEnabled und SpamZapEnabled einen geerbten Wert aus dem ZapEnabled-Parameter anzeigen. Nachdem die neuen Parameter festgelegt wurden, werden Sie nicht mehr vom ZapEnabled-Parameter geerbt. Nachdem er veraltet ist, hat das Festlegen von ZapEnabled keine Auswirkung auf die PhishZapEnabled-oder SpamZapEnabled-Eigenschaften, und ZapEnabled wird aus der Liste der Parameter in Cmdlets entfernt.
 
 ### <a name="spam-zap"></a>Spam zap
 
 Bei e-Mail-Nachrichten, die nach der Zustellung als Spam identifiziert werden, wird zap entsprechend der Spam Richtlinie, von der der Benutzer abgedeckt ist, aktiv. Wenn die Spam Aktion der Richtlinie auf eine e-Mail (Umleitung, Löschung, Quarantäne, verschieben zu Junk) festgelegt ist, wird zap die Nachricht in den Junk-e-Mail-Ordner des Posteingangs des Benutzers verschieben, wenn die Nachricht ungelesen ist. Wenn die Spam Aktion der Richtlinie nicht auf Aktion ausführen festgelegt ist (X-Header hinzufügen, Betreff ändern, keine Aktion), wird zap keine Aktion für die e-Mail durchführen. Weitere Informationen zum [Konfigurieren ihrer Spamfilter Richtlinien](configure-your-spam-filter-policies.md) finden Sie hier.
 
-Spam zap ist in der Spam Richtlinie standardmäßig aktiviert. Sie können Spam zap mithilfe des *ZapEnabled* -Parameters von [sethostedcontentfilterpolicy dient zum-](https://go.microsoft.com/fwlink/p/?LinkId=722758) Cmdlet in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren.
+Spam zap ist in der Spam Richtlinie standardmäßig aktiviert. Sie können Spam zap mithilfe des *SpamZapEnabled* -Parameters von [sethostedcontentfilterpolicy dient zum-](https://go.microsoft.com/fwlink/p/?LinkId=722758) Cmdlet in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren.
 
-> [!NOTE]
-> Der Parameter *ZapEnabled* für das Cmdlet " **hostedcontentfilterpolicy dient zum** " deaktiviert oder aktiviert sowohl Phishing zap als auch Spam zap für die Richtlinie. Sie können Phishing Zap und Spam Zap nicht unabhängig in derselben Richtlinie aktivieren oder deaktivieren.
+> **[Hinweis]** der vorherige *ZapEnabled* -Cmdlet-Parameter, der sowohl Phishing als auch Spam zap kontrollierte, wird am **1. Februar 2020 veraltet**. Wenn Sie Skripts geschrieben haben, die den ZapEnabled-Parameter verwenden, wird empfohlen, diese für die Verwendung von SpamZapEnabled und PhishZapEnabled zu aktualisieren. In der Übergangsphase werden alle drei Parameter (ZapEnabled, PhishZapEnabled und SpamZapEnabled) über das Cmdlet zur Verfügung gestellt. Bis zur expliziten Festlegung über UI oder PowerShell wird PhishZapEnabled und SpamZapEnabled einen geerbten Wert aus dem ZapEnabled-Parameter anzeigen. Nachdem die neuen Parameter festgelegt wurden, werden Sie nicht mehr vom ZapEnabled-Parameter geerbt. Nachdem er veraltet ist, hat das Festlegen von ZapEnabled keine Auswirkung auf die PhishZapEnabled-oder SpamZapEnabled-Eigenschaften, und ZapEnabled wird aus der Liste der Parameter in Cmdlets entfernt.
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Wie Sie sehen, ob zap Ihre Nachricht verschoben hat
 
@@ -87,10 +88,12 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-Malwa
 
 ### <a name="disable-phish-zap-and-spam-zap"></a>Deaktivieren von Phishing Zap und Spam zap
 
-In diesem Beispiel wird die Inhaltsfilter Richtlinie "Test" deaktiviert, und Spam zap wird deaktiviert.
+Um Phishing und Spam zap für Ihren O365-Mandanten oder eine Gruppe von Benutzern zu deaktivieren, verwenden Sie die Parameter *PhishZapEnabled* und *SpamZapEnabled* von [sethostedcontentfilterpolicy dient zum](https://go.microsoft.com/fwlink/p/?LinkId=722758), ein EoP-Cmdlet.
+
+Im folgenden Beispiel sind Phishing und Spam zap für eine Inhaltsfilter Richtlinie mit dem Namen "Test" deaktiviert.
 
 ```Powershell
-Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEnabled $false
 ```
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-hostedcontentfilterpolicy dient zum](https://go.microsoft.com/fwlink/p/?LinkId=722758).

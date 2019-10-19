@@ -5,21 +5,18 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ec402077eb20cfa39192e099de2d35e4e79399e
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390372"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595411"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Arbeiten mit Microsoft Managed Desktop
 
-Nachdem Sie mit Ihrem Microsoft-Konto Team auf dem Microsoft Managed Desktop zusammengearbeitet haben, können Sie das [Verwaltungsportal](https://aka.ms/mmdportal) zum Verwalten Ihrer Umgebung verwenden. 
+Dieser Abschnitt enthält Informationen zu Ihrem täglichen Leben mit dem Dienst, beispielsweise darüber, wie Ihre IT-Administratoren Unterstützung bei Bedarf erhalten, wie Ihre Endbenutzer Unterstützung erhalten, Ihre apps verwalten, sobald Sie bereitgestellt wurden, und wie Sie die anpassbaren Einstellungen auf Geräten bearbeiten können.
 
-## <a name="in-this-section"></a>Inhalt dieses Abschnitts
-
-- [Endbenutzer Unterstützung für Microsoft Managed Desktop](end-user-support.md)
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md)
-- [Verwalten von apps in Microsoft Managed Desktop](manage-apps.md)
+- [Aufrufen von Hilfe für Endbenutzer](end-user-support.md)
+- [Konfigurierbare Einstellungen – Microsoft Managed Desktop](config-setting-overview.md)

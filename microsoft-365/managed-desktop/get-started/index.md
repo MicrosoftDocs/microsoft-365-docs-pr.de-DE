@@ -5,19 +5,17 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390502"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595581"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Erste Schritte mit Microsoft Managed Desktop
 
-Mit Microsoft Managed Desktop wird die Verwaltung Ihrer Desktop Geräte in eine Enterprise-Cloud-Infrastruktur übertragen. 
+Wenn Sie bereit sind, sich beim Dienst anzumelden, enthält dieser Abschnitt die folgenden Schritte, um tatsächlich dem Dienst beizutreten, Geräte zu beziehen und einzurichten, Ihre Endbenutzer vorzubereiten und apps bereitzustellen.
 
-## <a name="in-this-section"></a>Inhalt dieses Abschnitts
-
-- [Hinzufügen von Administrator Kontakten](add-admin-contacts.md)
-- [Bestell Geräte](devices.md)
+- [Hinzufügen von Administrator Kontakten im Verwaltungsportal von Microsoft Managed Desktop](add-admin-contacts.md)
+- [Einrichten von Microsoft Managed Desktop-Geräten](set-up-devices.md)
+- [Bereitstellen von apps auf Microsoft Managed Desktop-Geräten](deploy-apps.md)

@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982016"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590499"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -42,12 +42,12 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, empfehlen wir, die Basisr
 |Schutzebene|Richtlinien|Weitere Informationen|
 |:---------------|:-------|:----------------|
 |**Basisplan**|[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](#require-mfa-based-on-sign-in-risk)| |
-|        |[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication)|Clients, die keine moderne Authentifizierung verwenden, können Regeln für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|
+|        |[Sperrt Clients, die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication)|Clients, die keine moderne Authentifizierung verwenden, können Regeln für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|
 |        |[Benutzer mit hohem Risiko müssen das Kennwort ändern](#high-risk-users-must-change-password)|Zwingt Benutzer, Ihr Kennwort zu ändern, wenn Sie sich anmelden, wenn risikoreiche Aktivitäten für Ihr Konto erkannt werden|
 |        |[Definieren von App-Schutzrichtlinien](#define-app-protection-policies)|Eine Richtlinie pro Plattform (Ios, Android, Windows).|
 |        |[Genehmigte apps erfordern](#require-approved-apps)|Erzwingt Mobile App Schutz für Telefone und Tablets|
 |        |[Definieren von Geräte Konformitätsrichtlinien](#define-device-compliance-policies)|Eine Richtlinie für jede Plattform|
-|        |[Kompatible PCs erfordern](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs.|
+|        |[Kompatible PCs erforderlich](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs.|
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](#require-mfa-based-on-sign-in-risk)| |
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](#require-compliant-pcs-and-mobile-devices)|Erzwingt die Intune-Verwaltung für PCs und Telefon/Tablets.|
 |**Streng geregelt**|[*Immer* MFA erforderlich](#require-mfa-based-on-sign-in-risk)|
@@ -122,7 +122,7 @@ Wenden Sie die Einstellungen basierend auf der Schutzebene an, auf die Sie Ziele
 
 
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen
+## <a name="block-clients-that-dont-support-modern-authentication"></a>Sperrt Clients, die moderne Authentifizierung nicht unterstützen
 1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren Anmeldeinformationen an. Nachdem Sie sich erfolgreich angemeldet haben, wird das Azure-Dashboard angezeigt.
 
 2. Wählen Sie im linken Menü **Azure Active Directory** aus.
@@ -141,7 +141,7 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für den bedingten
 ||Ausschließen|Ausnahmesicherheitsgruppe, Dienstkonten (App-Identitäten)|Mitgliedschaft, die auf vorübergehender, bedarfsmäßiger Basis geändert wird|
 |Cloud-Apps|Include|Wählen Sie die Apps aus, auf die diese Regel angewendet werden soll. Wählen Sie beispielsweise Office 365 Exchange Online||
 |Bedingungen|Konfigurierte|Ja|Konfigurieren von Client-apps|
-|Client-apps|Konfigurierte|Ja|Mobile Apps und Desktop Clients, andere Clients (Wählen Sie beides aus)|
+|Client-Apps|Konfigurierte|Ja|Mobile Apps und Desktop Clients, andere Clients (Wählen Sie beides aus)|
 
 **Zugriffssteuerung**
 
@@ -176,8 +176,8 @@ Melden Sie sich im [Microsoft Azure-Portal (http://portal.azure.com)](http://por
 
 | Typ | Eigenschaften | Werte                  | Hinweise |
 |:-----|:-----------|:------------------------|:------|
-|      | Zugriff     | Zugriff zulassen            | Wahr  |
-|      | Zugriff     | Kennwortänderung erforderlich | True  |
+|      | Access     | Zugriff zulassen            | Wahr  |
+|      | Access     | Kennwortänderung erforderlich | True  |
 
 **Überprüfung:** nicht zutreffend
 
@@ -192,7 +192,7 @@ Erstellen Sie eine Richtlinie für jede Plattform:
 - Android
 - Windows 10
 
-Um eine neue APP-Schutzrichtlinie zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure Portal an, und navigieren Sie dann zu **Mobile Apps #a0 App Protection Policies**. Wählen Sie **Richtlinie hinzufügen**aus.
+Um eine neue APP-Schutzrichtlinie zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure-Portal an, und navigieren Sie dann zu **Client apps** > -**App-Schutzrichtlinien**. Wählen Sie **Richtlinie erstellen**aus.
 
 Es gibt jedoch geringfügige Unterschiede in den Richtlinienoptionen für App-Schutz zwischen iOS und Android. Die folgende Richtlinie gilt speziell für Android. Verwenden Sie dies als Leitfaden für Ihre anderen Richtlinien.
 
@@ -200,7 +200,7 @@ Die empfohlene Liste von apps umfasst Folgendes:
 - PowerPoint
 - Excel
 - Word
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft SharePoint
 - Microsoft Visio Viewer
 - OneDrive
@@ -217,18 +217,18 @@ In den folgenden Tabellen werden die empfohlenen Einstellungen beschrieben:
 ||"Speichern unter" verhindern|Ja||
 ||Speicherdienste zum Speichern von Unternehmensdaten auswählen|OneDrive für Unternehmen, SharePoint||
 ||Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|Verwaltete Richtlinien-apps mit Paste in||
-||Anzeige von Webinhalten auf den Managed Browser beschränken|No||
+||Anzeige von Webinhalten auf den Managed Browser beschränken|Nein||
 ||App-Daten verschlüsseln|Ja|Wählen Sie bei iOS diese Option aus: Wenn das Gerät gesperrt ist.|
 ||App-Verschlüsselung deaktivieren, wenn das Gerät aktiviert ist|Ja|Deaktivieren Sie diese Einstellung, um eine Doppel Verschlüsselung zu vermeiden|
-||Kontaktsynchronisierung deaktivieren|No||
-||Drucken deaktivieren|No||
+||Kontaktsynchronisierung deaktivieren|Nein||
+||Drucken deaktivieren|Nein||
 |Zugriff|PIN für Zugriff anfordern|Ja||
 ||Typ auswählen|Numeric||
-||Einfache PIN zulassen|No||
+||Einfache PIN zulassen|Nein||
 ||PIN-Länge|6||
 ||Fingerabdruck anstelle von PIN zulassen|Ja||
 ||App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird|Ja||
-||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|No||
+||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|Nein||
 ||Erneutes Überprüfen der Zugriffsanforderung nach (Minuten)|30||
 ||Bildschirmaufnahme und Android-Assistenten blockieren|Nein|Bei iOS ist diese Option nicht verfügbar.|
 |Anmelde Sicherheitsanforderungen|Max. Pin-Versuche|5|PIN zurücksetzen|
@@ -265,7 +265,7 @@ So erfordern Sie genehmigte apps:
 
 11. Wählen Sie **Zugriff gewähren**aus, wählen Sie **genehmigte Client-App anfordern**aus. Wählen Sie für mehrere Steuerelemente **die Option ausgewählte Steuerelemente erfordern**aus, und wählen Sie dann **auswählen**aus. 
 
-12. Wählen Sie **Erstellen**.
+12. Klicken Sie auf **Erstellen**.
 
 ## <a name="define-device-compliance-policies"></a>Definieren von Geräte Kompatibilitätsrichtlinien
 
@@ -317,7 +317,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 |Gerätesicherheit|Firewall|Erforderlich||
 ||Antivirus|Erforderlich||
 ||AntiSpyware|Erforderlich|Für diese Einstellung ist eine mit dem Windows Security Center registrierte Anti-Spyware-Lösung erforderlich.|
-|Defender|Antischadsoftware für Windows Defender|Erforderlich||
+|Defender|Windows Defender Antimalware|Erforderlich||
 ||Minimale Version von Windows Defender-Antischadsoftware||Wird nur für Windows 10-Desktop unterstützt. Microsoft empfiehlt Versionen von nicht mehr als fünf hinter der neuesten Version|
 ||Windows Defender-Antischadsoftware-Signatur auf dem neuesten Stand|Erforderlich||
 ||Echtzeitschutz|Erforderlich|Wird nur für Windows 10-Desktop unterstützt|
@@ -326,7 +326,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel||
+|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Medium||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets)
 Bevor Sie eine Richtlinie hinzufügen, die kompatible PCs erfordert, müssen Sie die Geräte für die Verwaltung in InTune registrieren. Die Verwendung der mehrstufigen Authentifizierung wird empfohlen, bevor Geräte in InTune registriert werden, um sicher zu sein, dass das Gerät im Besitz des beabsichtigten Benutzers ist. 
@@ -353,7 +353,7 @@ So benötigen Sie kompatible PCs:
 
 10. Wählen Sie **Zugriff gewähren**aus, und wählen Sie **Gerät müssen als konform gekennzeichnet sein**aus. Wählen Sie für mehrere Steuerelemente **die Option alle ausgewählten Steuerelemente anfordern**aus, und wählen Sie dann **auswählen**aus. 
 
-11. Wählen Sie **Erstellen**.
+11. Klicken Sie auf **Erstellen**.
 
 Wenn Ihr Ziel darin besteht, kompatible PCs *und* Mobile Geräte zu benötigen, wählen Sie keine Plattformen aus. Dadurch wird die Kompatibilität für alle Geräte erzwungen. 
 
@@ -379,7 +379,7 @@ So erfordern Sie die Kompatibilität für alle Geräte:
 
 9. Wählen Sie **Zugriff gewähren**aus, und wählen Sie **Gerät müssen als konform gekennzeichnet sein**aus. Wählen Sie für mehrere Steuerelemente **die Option alle ausgewählten Steuerelemente anfordern**aus, und wählen Sie dann **auswählen**aus. 
 
-10. Wählen Sie **Erstellen**.
+10. Klicken Sie auf **Erstellen**.
 
 Wählen Sie beim Erstellen dieser Richtlinie keine Plattformen aus. Dadurch werden konforme Geräte erzwungen.
 
