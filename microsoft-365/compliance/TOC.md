@@ -17,7 +17,7 @@
 ## Kundenschlüssel
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
 ### [Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365](service-encryption-with-customer-key-faq.md)
-## [Aufsicht]()
+## [Kommunikation überwachen]()
 ### [Weitere Informationen zu Aufsichtsrichtlinien](supervision-policies.md)
 ### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
 ## [Informationsbarrieren](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Datensatzverwaltung
 ### [Datensatzverwaltung](records-management.md)
+### [Datensätze](records.md)
 ### Dateiplan
 #### [Dateiplan-Manager](file-plan-manager.md)
 #### [Aufbewahrungsbezeichnungen](labels.md)
@@ -349,7 +350,7 @@
 ## [Verwalten der Postfächern](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
 ## [Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md)
-## [Verwenden des Überwachungsprotokoll zum Beheben häufiger Szenarien](auditing-troubleshooting-scenarios.md)
+## [Verwenden des Überwachungsprotokolls, um häufige Probleme zu untersuchen](auditing-troubleshooting-scenarios.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 
