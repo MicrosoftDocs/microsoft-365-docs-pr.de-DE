@@ -46,6 +46,7 @@
 ### [Microsoft Office SharePoint Online und OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [Migration](migration-microsoft-365-enterprise-workload.md)
 ### [Fördern von Remotemitarbeitern](empower-people-to-work-remotely.md)
+### [Teams für streng regulierte Daten](secure-teams-highly-regulated-data-scenario.md)
 ### [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)
 ### [Standardkonfiguration]()
