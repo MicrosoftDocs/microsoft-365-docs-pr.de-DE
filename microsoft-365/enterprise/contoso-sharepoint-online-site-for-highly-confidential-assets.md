@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: wie Contoso eine SharePoint-Website für hochregulierte Daten zur einfacheren Zusammenarbeit zwischen den Forschungsteams implementiert hat.'
-ms.openlocfilehash: bb3c178ee64d5925f82aef9887c06ceafe51f4ee
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403222"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617253"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>SharePoint-Website für hoch vertrauliche digitale Objekte der Contoso Corporation
 
@@ -96,7 +96,7 @@ Contoso-Sicherheitsmitarbeiter haben die Mitglieder der Gruppe " **Research** Of
 
 Das Endergebnis ist eine sichere Umgebung, in der die Forscher über Contoso hinweg in einer sicheren Umgebung mit Dateien zusammenarbeiten können, die Forschungsinformationen enthalten. 
 
-Wenn ein Forschungsdokument mit der unter Bezeichnung **Research Teams** die **Forschungs** Website verlässt, ist es verschlüsselt und nur für Mitglieder der **Forschungs** Office 365 Gruppen mit gültigen Anmeldeinformationen für das Benutzerkonto zugänglich.
+Wenn ein Forschungsdokument mit der unter Bezeichnung " **Research Teams** " den **Forschungs** Standort verlässt, ist es verschlüsselt und nur für Mitglieder der Gruppe " **Research** Office 365" mit gültigen Anmeldeinformationen für das Benutzerkonto zugänglich.
 
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -104,4 +104,4 @@ Wenn ein Forschungsdokument mit der unter Bezeichnung **Research Teams** die **F
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
+[Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)

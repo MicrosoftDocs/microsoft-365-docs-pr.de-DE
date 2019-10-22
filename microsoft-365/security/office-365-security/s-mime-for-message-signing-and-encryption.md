@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratoren können sich über die Verwendung von S/MIME in Exchange Online informieren.
-ms.openlocfilehash: ddb244e9e0cb189dbeb78af49e34ed90f64e77cc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b7ad73f1a7dd55abdc5a88a2f86344f5a2f0f5b
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081823"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608586"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME für die Nachrichtensignierung und-Verschlüsselung in Exchange Online
 
@@ -46,6 +46,9 @@ Die Schritte, die Sie zum Einrichten von S/MIME mit jedem dieser Endpunkte durch
 - Richten Sie eine virtuelle Zertifikatauflistung zum Validieren von S/MIME ein. Diese Informationen verwendet Outlook im Web beim Validieren der Signatur einer E-Mail und stellt sicher, dass sie von einem vertrauenswürdigen Zertifikat signiert wurde.
 
 - Richten Sie den Outlook- oder EAS-Endpunkt für die Verwendung von S/MIME ein.
+
+> [!NOTE]
+> Das S/MIME-Steuerelement kann nicht in Outlook im Internet unter Mac, Ios, Android oder anderen nicht-Windows-Geräten installiert werden. Weitere Informationen finden Sie unter [Verschlüsseln von Nachrichten mithilfe von S/MIME in Outlook im Internet](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>Einrichten von S/MIME mit Outlook im Internet
 
