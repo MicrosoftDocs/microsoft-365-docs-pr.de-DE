@@ -3,7 +3,7 @@ title: Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: 67d0f51dd1f2602a21d199da1ed7ca6ba6e41c09
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: e872b0c289a002b4a0e0459a9ee19aa78b039b31
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453991"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617243"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
 
 ## <a name="october-2019"></a>Oktober 2019
 
 ### <a name="new-content"></a>Neue Inhalte 
+
+- [Szenario: Microsoft Teams für streng regulierte Daten](secure-teams-highly-regulated-data-scenario.md)
+
+  [![Das Szenario "Microsoft Teams für streng regulierte Daten"](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
 - [Poster "Fördern von Remotemitarbeitern"](empower-people-to-work-remotely.md#poster)
 
@@ -34,7 +38,7 @@ ms.locfileid: "37453991"
 ### <a name="updates-and-enhancements"></a>Updates und Verbesserungen
 
 - Aktualisierung der [Contoso-Fallstudie](contoso-case-study.md)
-- Aktualisierung der [Exchange Online](exchangeonline-workload.md)-Workload
+- Aktualisieren der [Microsoft Teams](teams-workload.md)-, [Exchange Online](exchangeonline-workload.md)- und [SharePoint Online](sharepoint-online-onedrive-workload.md)-Workloads
 - Aktualisierung des Szenarios [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md)
  
   [![Das Szenario "SharePoint-Websites für streng regulierte Daten"](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)

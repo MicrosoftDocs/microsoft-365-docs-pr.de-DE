@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsarbeitslasten von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403244"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608596"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
 
@@ -38,7 +38,12 @@ Eine derartige Anforderung ist der Schutz von umfassend regulierten Daten, die i
 - Daten, die regionalen Vorschriften unterliegen.
 - Die wertvollsten Daten für Ihre Organisation, z. B. Geschäftsgeheimnisse, Informationen zu Finanzen oder Personalwesen und die Organisationsstrategie.
 
-Um diese Daten vor internen und externen Bedrohungen zu schützen, ziehen Sie [Microsoft Teams- und SharePoint-Websites für stark regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md) zurate. Dieses Szenario leitet Sie durch die Konfiguration einer SharePoint-Website oder eines Microsoft Teams-Teams, um Ihre wertvollsten Daten sicher zu speichern.
+Informationen zum Schutz dieser Daten vor internen und externen Bedrohungen, finden Sie unter:
+
+- [Microsoft Teams für streng regulierte Daten](secure-teams-highly-regulated-data-scenario.md)
+- [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md). 
+
+Diese Szenarien leiten Sie durch die Konfiguration eines Microsoft Teams-Teams oder einer SharePoint-Website, um Ihre wertvollsten Daten sicher zu speichern.
 
 Dies sind die Arbeitslasten und Szenarios im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
 
