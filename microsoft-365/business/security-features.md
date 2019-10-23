@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business geliefert werden.
-ms.openlocfilehash: 668b83e363a40e61391cbe56b0dbfab88cae7c43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575696"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636770"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 
@@ -48,7 +48,7 @@ Sie können viele der Microsoft 365-Geschäfts Sicherheitsfeatures im Admin Cent
     
 - [Festlegen von Geräteschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-pcs.md) . 
     
-    Sie können die [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) -Verschlüsselung aktivieren, um Daten für den Fall zu schützen, dass ein Gerät verloren geht oder gestohlen wird, und [Windows Exploit Guard](https://go.microsoft.com/fwlink/p/?linkid=871404) für erweiterten Schutz gegen Ransomware bereitzustellen. 
+    Sie können die [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) -Verschlüsselung aktivieren, um Daten für den Fall zu schützen, dass ein Gerät verloren geht oder gestohlen wird, und [Windows Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) für erweiterten Schutz gegen Ransomware bereitzustellen. 
     
 - [Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
     
