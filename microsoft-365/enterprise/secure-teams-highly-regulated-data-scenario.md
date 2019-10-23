@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie ein sicheres Team zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: 5117d310ccd877a7377e6e538e7fba13daaad4ef
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617263"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628349"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams für streng regulierte Daten
 
@@ -40,9 +40,9 @@ Hier sehen Sie die resultierende Konfiguration mit einer Vertraulichkeitsbezeich
 
 ![Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## <a name="configuration"></a>Konfiguration
+## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Phase 1: Konfigurieren eines Teams für stark regulierte Daten
 
-Die End-to-End-Konfiguration eines sicheren Teams umfasst folgende Schritte:
+Die End-to-End-Konfiguration umfasst folgende Schritte:
 
 1. Konfigurieren des Identitäts- und Gerätezugriffs.
 2. Erstellen eines privaten Teams.
@@ -142,30 +142,20 @@ Hier sehen Sie die Beziehung zwischen der Vertraulichkeitsbezeichnung und der Te
 
 
 >[!Note]
->Wenn Sie die Vertraulichkeitsbezeichnung oder eine Unterbezeichnung für benutzerdefinierte Berechtigungen oder mit einem Ablaufdatum konfigurieren, können Sie die Datei nicht aus Microsoft Teams oder SharePoint Online öffnen. Sie müssen eine Office-App verwenden.
+>Wenn Sie die Vertraulichkeitsbezeichnung oder eine Unterbezeichnung für benutzerdefinierte Berechtigungen oder mit einem Ablaufdatum konfigurieren, können Sie die Datei nicht aus Microsoft Teams oder SharePoint öffnen. Sie müssen eine Office-App verwenden.
 >
 
-## <a name="using-the-team-and-a-sensitivity-label"></a>Verwenden des Teams und einer Vertraulichkeitsbezeichnung
-
-Mitglieder der Teamgruppe können auf das Team und alle zugehörigen Ressourcen zugreifen, b. B. Chats, Besprechungen und andere Apps. Wenn Sie mit Dateien aus dem Abschnitt **Dateien** eines Kanals arbeiten, müssen die Mitglieder der Teamgruppe den für das sichere Team erstellten Dateien die Vertraulichkeitsbezeichnung oder eine Unterbezeichnung zuweisen. Es folgt ein Beispiel.
-
-![Beispiel für eine Bezeichnung, die auf eine Datei in einem sicheren Team angewendet wurde](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-Wird die Bezeichnung auf eine Datei angewendet, ist diese abgesichert. Mitglieder der Teamgruppe können sie in Teams öffnen und in Echtzeit zusammenarbeiten. Sie wird verschlüsselt und umfasst die für die Teamgruppenmitglieder festgelegten Co-Autor-Berechtigungen. Wenn die Datei die Website verlässt und an einen böswilligen Benutzer weitergeleitet wird, lässt sich die Datei nur öffnen, und ihr Inhalt kann nur angezeigt werden, wenn die Anmeldeinformationen eines Benutzerkontos angegeben werden, das Mitglied der Teamgruppe ist. 
-
-Sie können sehen, welchen Dateien eine Bezeichnung zugeordnet ist, indem Sie einen Ordner in SharePoint Online anzeigen und über die Option **Spalten ein-/ausblenden** > **Spalte hinzufügen** die Spalte **Vertraulichkeit** hinzufügen.
-
-## <a name="custom-permissions"></a>Benutzerdefinierte Berechtigungen
+### <a name="custom-permissions"></a>Benutzerdefinierte Berechtigungen
 
 Sie können auch benutzerdefinierte SharePoint-Websiteberechtigungen für die Teamwebsite und, falls erforderlich, die entsprechende Vertraulichkeitsbezeichnung konfigurieren. Es folgen zwei Beispiele.
 
-### <a name="example-1-delegating-sharepoint-site-administration"></a>Beispiel 1: Delegieren der SharePoint-Websiteverwaltung
+#### <a name="example-1-delegating-sharepoint-site-administration"></a>Beispiel 1: Delegieren der SharePoint-Websiteverwaltung
 
 Wenn der Teambesitzer keine SharePoint-Verwaltungsoberfläche hat oder die Verwaltung der Teamwebsite delegieren möchte, könnte er das Benutzerkonto eines SharePoint-Administrators zur Liste der Teambesitzer hinzufügen. Aber dann hat der SharePoint-Administrator Vollzugriff auf das Team und alle zugehörigen Ressourcen und wäre in der Lage, eine Datei mit angewendeter Vertraulichkeitsbezeichnung zu öffnen. 
 
 Um diese Zuweisung von zu vielen Berechtigungen zu verhindern, fügen Sie das Benutzerkonto des SharePoint-Administrators der SharePoint-Gruppe "Teamwebsitebesitzer" in den erweiterten Berechtigungseinstellungen der Website hinzu. Der SharePoint-Administrator kann die Website verwalten, aber ist nicht in der Lage, auf das Team und seine Ressourcen zuzugreifen oder die Dateien mit zugewiesenen Vertraulichkeitsbezeichnungen zu öffnen.
 
-### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Beispiel 2: Zulassen des schreibgeschützten Zugriffs auf Dateien mit Bezeichnungen
+#### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Beispiel 2: Zulassen des schreibgeschützten Zugriffs auf Dateien mit Bezeichnungen
 
 Wenn einige Mitarbeiter den Inhalt von Dateien mit Bezeichnungen in der Teamwebsite nur anzeigen müssen, fügen Sie die einzelnen Benutzerkonten zur
 
@@ -178,8 +168,48 @@ Hier sehen Sie die resultierenden Berechtigungen für die Bezeichnung.
  
 Die Websitebesucher können direkt auf die Teamwebsite zugreifen und die Inhalte von Dateien anzeigen, auf die die Unterbezeichnung angewendet wurde. Da Sie aber keine Mitglieder der Teamgruppe sind, können sie nicht auf das Team oder die zugehörigen Ressourcen zugreifen.
 
+
+## <a name="phase-2-drive-user-adoption-for-team-members"></a>Phase 2: Fördern der Benutzerakzeptanz für Teammitglieder
+
+Wenn das Team aktiv ist, ist es an der Zeit, die Benutzerakzeptanz dieses Teams und dessen zusätzlicher Sicherheit für Teammitglieder zu fördern.
+
+### <a name="step-1-train-your-users"></a>Schritt 1: Schulen der Benutzer
+
+Mitglieder der Teamgruppe können auf das Team und alle zugehörigen Ressourcen zugreifen, b. B. Chats, Besprechungen und andere Apps. Wenn Sie mit Dateien aus dem Abschnitt **Dateien** eines Kanals arbeiten, müssen die Mitglieder der Teamgruppe den für das sichere Team erstellten Dateien die Vertraulichkeitsbezeichnung oder eine Unterbezeichnung zuweisen. Es folgt ein Beispiel.
+
+![Beispiel für eine Bezeichnung, die auf eine Datei in einem sicheren Team angewendet wurde](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+Wird die Bezeichnung auf eine Datei angewendet, ist diese abgesichert. Mitglieder der Teamgruppe können sie in Teams öffnen und in Echtzeit zusammenarbeiten. Sie wird verschlüsselt und umfasst die für die Teamgruppenmitglieder festgelegten Co-Autor-Berechtigungen. Wenn die Datei die Website verlässt und an einen böswilligen Benutzer weitergeleitet wird, lässt sich die Datei nur öffnen, und ihr Inhalt kann nur angezeigt werden, wenn die Anmeldeinformationen eines Benutzerkontos angegeben werden, das Mitglied der Teamgruppe ist. 
+
+Schulen Sie Ihre Teammitglieder:
+
+- Vermitteln Sie ihnen, wie wichtig es ist, das neue Team für Chats, Besprechungen, Dateien und andere Ressourcen der Teamwebsite zu nutzen und welche Auswirkungen ein Verlust streng regulierter Daten hat, z. B. rechtliche Konsequenzen, Bußgelder, Ransomware oder Verlust des Wettbewerbsvorteils.
+- So greifen Sie auf das Team zu.
+- Erklären Sie, wie neue Dateien auf der Website erstellt und neue, lokal gespeicherte Dateien hochgeladen werden.
+- Veranschaulichen Sie, wie durch die DLP-Richtlinie verhindert wird, dass Dateien extern freigegeben werden.
+- So beschriften Sie Dateien mit der Bezeichnung oder Unterbezeichnung des Teams.
+- Veranschaulichen Sie, wie die Bezeichnung oder Unterbezeichnung Dateien schützt, auch wenn sie die Website verlassen.
+
+Diese Schulung sollte praktische Übungen umfassen, damit die Teammitglieder diese Funktionen und deren Ergebnisse ausprobieren können.
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-team-member-feedback"></a>Schritt 2: Durchführen regelmäßiger Verwendungsprüfungen und Behandeln des Feedbacks der Teammitglieder.
+
+In den Wochen nach der Schulung:
+
+- Reagieren Sie umgehend auf Feedback von Teammitgliedern und optimieren Sie die Richtlinien und Konfigurationen.
+- Analysieren Sie die Verwendung der Website und vergleichen Sie sie mit den Erwartungen.
+- Sicherstellen, dass streng regulierte Dateien korrekt mit der eigens erstellten Vertraulichkeitsbezeichnung oder -unterbezeichnung gekennzeichnet wurden.
+
+  Sie können sehen, welchen Dateien eine Bezeichnung zugeordnet ist, indem Sie einen Ordner in SharePoint anzeigen und über die Option **Spalten ein-/ausblenden** > **Spalte hinzufügen** die Spalte **Vertraulichkeit** hinzufügen.
+
+Ihre Benutzer bei Bedarf erneut schulen.
+
 ## <a name="see-also"></a>Siehe auch
 
 [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Microsoft 365 Enterprise-Arbeitslasten und -Szenarien](deploy-workloads.md)
+
+[Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
 
 [Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)

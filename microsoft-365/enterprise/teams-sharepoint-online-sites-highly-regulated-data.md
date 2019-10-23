@@ -3,7 +3,7 @@ title: SharePoint-Websites für streng regulierte Daten
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint-Teamwebsite zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437825"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628339"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>SharePoint-Websites für streng regulierte Daten
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise umfasst eine vollständige Suite cloudbasierter Dienste
 - Die wertvollsten Daten für Ihre Organisation, z. B. Geschäftsgeheimnisse, Informationen zu Finanzen oder Personalwesen und die Organisationsstrategie.
 
 >[!Note]
-> Ein ähnliches Szenario mit Microsoft Teams ist in der Entwicklung.
+> Ein ähnliches Szenario mit Microsoft Teams finden Sie [hier](secure-teams-highly-regulated-data-scenario.md).
 >
 
 Für ein cloudbasiertes Microsoft 365 Enterprise-Szenario, das diese Geschäftsanforderung erfüllt, müssen Sie:
@@ -50,14 +50,14 @@ In der folgenden Tabelle sind die Anforderungen dieses Szenarios einem Feature v
 |:-------|:-----|
 | **Anforderung** | **Microsoft 365 Enterprise-Feature** |
 | Speichern von Dateien | SharePoint-Teamwebsites |
-| Sperren der Website | Azure Active Directory (Azure AD)-Gruppen und SharePoint-Teamwebsiteberechtigungen |
+| Sperren der Website | Office 365-Gruppen und SharePoint-Teamwebsiteberechtigungen |
 | Zuordnen von Bezeichnungen zu den Dateien der Website | Office 365-Aufbewahrungsbezeichnungen |
 | Verhindern, dass Benutzer Dateien außerhalb der Organisation senden | Richtlinien zur Verhinderung von Datenverlust in Office 365 |
-| Verschlüsseln aller Dateien der Website | Office 365-Vertraulichkeitsbezeichnungen |
-| Hinzufügen von Berechtigungen zu den Dateien der Website | Office 365-Vertraulichkeitsbezeichnungen |
+| Verschlüsseln aller Dateien der Website | Office 365-Vertraulichkeitsbezeichnungen oder -unterbezeichnungen |
+| Hinzufügen von Berechtigungen zu den Dateien der Website | Office 365-Vertraulichkeitsbezeichnungen oder -unterbezeichnungen |
 |||
 
-Hier sehen Sie die Konfiguration für eine sichere SharePoint-Website.
+Hier sehen Sie eine Beispielkonfiguration für eine sichere SharePoint-Website.
 
 ![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -99,12 +99,11 @@ Für SharePoint-Websites müssen Sie eine DLP-Richtlinie für die Office 365-Auf
 
 ### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Schritt 2: Ihre Office 365-Vertraulichkeitsunterbezeichnung
 
-Um für Ihre besonders sensiblen Dateien Verschlüsselung und eine Reihe von Berechtigungen bereitzustellen, müssen Benutzer eine Office 365-Vertraulichkeitsunterbezeichnung anwenden.
+Um für Ihre besonders sensiblen Dateien Verschlüsselung und eine Reihe von Berechtigungen bereitzustellen, müssen Benutzer eine Office 365-Vertraulichkeitsbezeichnung oder -unterbezeichnung anwenden. Eine Unterbezeichnung ist einer vorhandenen Bezeichnung untergeordnet. 
 
-Eine Unterbezeichnung ist einer vorhandenen Bezeichnung untergeordnet. Sie können z. B. unter der Bezeichnung "Hochgradig reguliert" eine Unterbezeichnung "Forschung und Entwicklung" erstellen. Bei SharePoint-Websites für stark regulierte Daten konfigurieren Sie die Berechtigungen so, dass eine Datei, an die die Unterbezeichnung angefügt ist, nur von Websitemitgliedern geöffnet und geändert werden kann.
+Verwenden Sie eine Vertraulichkeitsbezeichnung, wenn Sie nur eine kleine Anzahl von Bezeichnungen für die globale Nutzung und für einzelne private Teams benötigen. Verwenden Sie eine Vertraulichkeitsunterbezeichnung, wenn Sie über eine große Anzahl von Bezeichnungen verfügen oder Bezeichnungen für sichere Websites unter ihrer streng regulierten Bezeichnung organisieren möchten. 
 
-Die Einstellungen der angewendeten Unterbezeichnung sind an die Datei gebunden. Auch wenn eine Datei die Website verlässt, kann sie nur von authentifizierten Benutzerkonten mit entsprechenden Berechtigungen geöffnet werden.
-
+Die Einstellungen der angewendeten Bezeichnung oder Unterbezeichnung sind an die Datei gebunden. Auch wenn eine Datei die Website verlässt, kann sie nur von authentifizierten Benutzerkonten mit entsprechenden Berechtigungen geöffnet werden.
 
 ### <a name="design-results"></a>Entwurfsergebnisse
 
@@ -125,10 +124,10 @@ Folgen Sie [diesen Anweisungen]( https://support.office.com/article/create-a-sit
 
 Konfigurieren Sie diese Berechtigungseinstellungen auf der SharePoint-Website.
 
-1.  Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen“ und anschließend auf **Websiteberechtigungen**.
-2.  Klicken Sie im Bereich **Websiteberechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
-3.  Klicken Sie auf der neuen Registerkarte **Berechtigungen** in Ihrem Browser auf **Einstellungen für Zugriffsrechteanforderungen**.
-4.  Deaktivieren Sie im Dialogfeld **Einstellungen für Zugriffsrechteanforderungen** die Optionen **Mitgliedern das Freigeben der Website sowie einzelner Dateien und Ordner erlauben** und **Zugriffsanforderungen zulassen** (sodass alle drei Kontrollkästchen deaktiviert sind), und klicken Sie dann auf **OK**.
+1. Klicken Sie in der Symbolleiste auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
+2. Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
+3. Wählen Sie unter **Freigabeberechtigungen** die Option **Nur Websitebesitzer können Dateien, Ordner und die Website teilen** aus.
+4. Deaktivieren Sie **Zugriffsanforderungen zulassen**, und klicken Sie dann auf **Speichern**.
 
 Bei diesen Einstellungen ist die Möglichkeit, dass Websitegruppenmitglieder die Website mit anderen Mitgliedern oder Nichtmitgliedern teilen, um den Zugriff auf die Website anzufordern, deaktiviert.
 
@@ -145,13 +144,13 @@ Verwenden Sie die Anweisungen unter [Schützen von SharePoint-Dateien mit Office
 Im Gegensatz zu einer Vertraulichkeitsbezeichnung für streng regulierte Daten, die von jedem auf eine beliebige Datei angewendet werden kann, benötigt eine sichere Website eine eigene Unterbezeichnung, damit für Dateien, denen diese Unterbezeichnung zugeordnet ist, Folgendes gilt:
 
 - Die Dateien werden verschlüsselt, und die Verschlüsselung ist an die Dateien gebunden.
--   Die Dateien enthalten benutzerdefinierte Berechtigungen, sodass sie nur von Mitgliedern der Websitegruppe geöffnet werden können.
+- Die Dateien enthalten benutzerdefinierte Berechtigungen, sodass sie nur von Mitgliedern der Websitegruppe geöffnet werden können.
 
-Um diese zusätzliche Sicherheitsstufe für die auf der Website gespeicherten Dateien zu erreichen, müssen Sie eine neue Vertraulichkeitsbezeichnung konfigurieren, bei der es sich um eine Unterbezeichnung der allgemeinen Bezeichnung für stark regulierten Dateien handelt. Diese wird nur Gruppenmitgliedern der Website in der Liste der Unterbezeichnungen für die Bezeichnung "Hochgradig reguliert" angezeigt.
+Um diese zusätzliche Sicherheitsstufe für die auf der Website gespeicherten Dateien zu erreichen, müssen Sie eine neue Vertraulichkeitsbezeichnung oder Unterbezeichnung der allgemeinen Bezeichnung für stark regulierte Dateien konfigurieren. Diese wird nur Gruppenmitgliedern der Website in der Liste der Unterbezeichnungen für die Bezeichnung "Hochgradig reguliert" angezeigt.
 
-Verwenden Sie die [hier](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) aufgeführten Anweisungen, um eine Unterbezeichnungen der verwendeten Bezeichnung für stark regulierte Dateien mit den folgenden Einstellungen zu konfigurieren:
+Verwenden Sie die [hier](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) aufgeführten Anweisungen, um eine Bezeichnung oder Unterbezeichnung der verwendeten Bezeichnung für stark regulierte Dateien mit den folgenden Einstellungen zu konfigurieren:
 
-- Zur einfachen Zuordnung der Unterbezeichnung zu einer Datei enthält der Name der Unterbezeichnung den Namen der Website.
+- Zur einfachen Zuordnung der Bezeichnung oder Unterbezeichnung zu einer Datei enthält der Name der Bezeichnung oder Unterbezeichnung den Namen der Website.
 - Die Verschlüsselung ist aktiviert.
 - Die Websitegruppe verfügt über Berechtigungen für die gemeinsame Dokumenterstellung.
 
@@ -162,14 +161,13 @@ Sie haben Folgendes konfiguriert:
 - Restriktivere Berechtigungseinstellungen auf der SharePoint-Website
 - Eine Office 365-Aufbewahrungsbezeichnung, die dem Dokumententeil der SharePoint-Website zugewiesen ist
 - Eine DLP-Richtlinie für die Office 365-Aufbewahrungsbezeichnung
-- Eine Office 365-Vertraulichkeitsunterbezeichnung, die Benutzer auf die auf der Website gespeicherten besonders sensiblen Dateien anwenden können. Die Vertraulichkeitsunterbezeichnung verschlüsselt die Datei und erlaubt nur Mitgliedern der Teamwebsitegruppe den Zugriff für die gemeinsame Dokumenterstellung 
+- Eine Office 365-Vertraulichkeitsbezeichnung oder -unterbezeichnung, die Benutzer auf die auf der Website gespeicherten besonders sensiblen Dateien anwenden können. Die Vertraulichkeitsbezeichnung oder -unterbezeichnung verschlüsselt die Datei und erlaubt nur Mitgliedern der Teamwebsitegruppe den Zugriff für die gemeinsame Dokumenterstellung 
 
-Nachfolgend sehen Sie die daraus resultierende Konfiguration.
+Hier ist die resultierende Konfiguration, die eine Unterbezeichnung der Vertraulichkeitsbezeichnung verwendet.
 
 ![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-
-In diesem Beispiel hat ein Benutzer die Vertraulichkeitsunterbezeichnung auf eine auf der Website gespeicherte Datei angewendet.
+In diesem Beispiel hat ein Benutzer die Unterbezeichnung auf eine auf der Website gespeicherte Datei angewendet.
 
 ![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
@@ -182,14 +180,14 @@ Beispielsweise müssen Angestellte, die vertrauliche Dateien bisher auf USB-Lauf
 
 ### <a name="step-1-train-your-users"></a>Schritt 1: Schulen der Benutzer
 
-Schulen Sie nach Abschluss der Konfiguration die Gruppe von Benutzern, die Mitglied der Websitezugriffsgruppen sind:
+Schulen Sie nach Abschluss der Konfiguration die Gruppe von Benutzern, die Mitglied der Website sind:
 
 - Vermitteln Sie ihnen, wie wichtig es ist, die neue Website zu verwenden, um wertvolle Dateien zu schützen, und welche Auswirkungen ein Verlust streng regulierter Daten hat, z. B. rechtliche Konsequenzen, Bußgelder oder Verlust des Wettbewerbsvorteils.
 - Erläutern Sie, wie auf die Website und ihre Dateien zugegriffen wird.
 - Erklären Sie, wie neue Dateien auf der Website erstellt und neue, lokal gespeicherte Dateien hochgeladen werden.
 - Veranschaulichen Sie, wie durch die DLP-Richtlinie verhindert wird, dass Dateien extern freigegeben werden.
-- Erklären Sie, wie die besonders sensiblen Dateien mit der Unterbezeichnung für die Website gekennzeichnet werden.
-- Veranschaulichen Sie, wie die Unterbezeichnung eine Datei schützt, auch wenn die Website verlässt.
+- Erklären Sie, wie die besonders sensiblen Dateien mit der Bezeichnung oder Unterbezeichnung für die Website gekennzeichnet werden.
+- Veranschaulichen Sie, wie die Bezeichnung oder Unterbezeichnung eine Datei schützt, auch wenn die Website verlässt.
 
 Diese Schulung sollte praktische Übungen umfassen, damit die Benutzer diese Vorgänge und deren Ergebnisse ausprobieren können.
 
@@ -198,21 +196,27 @@ Diese Schulung sollte praktische Übungen umfassen, damit die Benutzer diese Vor
 In den Wochen nach der Schulung kann der SharePoint-Administrator für die SharePoint-Website Folgendes tun:
 
 - Die Verwendung für die Website analysieren und dies mit den Erwartungen vergleichen.
-- Sicherstellen, dass streng vertrauliche Dateien korrekt mit der Vertraulichkeitsbezeichnung gekennzeichnet wurden.
+- Sicherstellen, dass streng vertrauliche Dateien korrekt mit der Vertraulichkeitsbezeichnung oder -unterbezeichnung gekennzeichnet wurden.
+
+  Sie können sehen, welchen Dateien eine Bezeichnung zugeordnet ist, indem Sie einen Ordner in SharePoint anzeigen und über die Option **Spalten ein-/ausblenden** > **Spalte hinzufügen** die Spalte **Vertraulichkeit** hinzufügen.
+
 
 Ihre Benutzer bei Bedarf erneut schulen.
 
 ### <a name="user-adoption-results"></a>Ergebnisse der Benutzerakzeptanz
 
-Stark regulierte Dateien werden ausschließlich auf SharePoint-Websites für stark regulierte Daten gespeichert, und die besonders sensiblen Dateien weisen die Vertraulichkeitsunterbezeichnung für die Website auf.
+Stark regulierte Dateien werden ausschließlich auf SharePoint-Websites für stark regulierte Daten gespeichert, und die besonders sensiblen Dateien weisen die Vertraulichkeitsbezeichnung oder -unterbezeichnung für die Website auf.
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise für die Contoso Corporation
 
-Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie Contoso die Einführung einer [sicheren SharePoint-Website](contoso-sharepoint-online-site-for-highly-confidential-assets.md) für seine Forschungsteams in Paris, Moskau, New York, Peking (Beijing) und Bengaluru (Bangalore) konzipiert, konfiguriert und dann vorangetrieben hat. 
+Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern. Erfahren Sie, wie Contoso die Einführung einer [sicheren SharePoint-Website](contoso-sharepoint-online-site-for-highly-confidential-assets.md) für seine Forschungsteams in Paris, Moskau, New York, Peking (Beijing) und Bengaluru (Bangalore) konzipiert, konfiguriert und dann vorangetrieben hat. 
 
 ## <a name="see-also"></a>Siehe auch
 
+[Teams für streng regulierte Daten](secure-teams-highly-regulated-data-scenario.md)
+
+[Microsoft 365 Enterprise-Arbeitslasten und -Szenarien](deploy-workloads.md)
+
+[Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
+
 [Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)
-
-[Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)
-
