@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Microsoft 365, SMB, FAQ, häufig gestellte Fragen, Antworten, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
-ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
+ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37611419"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646383"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Häufig gestellte Fragen für Microsoft 365 Business
 
@@ -164,7 +164,7 @@ IT-Dienstanbieter, die nicht bereits Microsoft-Partner sind, erfahren mehr über
 Partner, die Office365 verkaufen, können die gleichen beratenden Verkaufsmethoden verwenden, um Microsoft 365 Business zu verkaufen. Darüber hinaus führen wir weitere Ressourcen und Schulungen für Ihr Vertriebsteam ein, damit diese die vorhandene Desktop-Umgebung des Kunden, die Active Directory-Abhängigkeit, Mobilität und Sicherheit verstehen und so den gesamten Wert von Microsoft 365 Business effektiv in einer Weise zu kommunizieren, die für den Kunden relevant ist. Ressourcen über das Office-Partner-Portal finden Sie unter [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Wie kann Microsoft 365 Business Partnern helfen, die Rentabilität zu erhöhen? 
-Microsoft 365 Business hilft Partnern bei der Reduzierung der Kosten durch betriebliche Effizienz und der Verbesserung der Einnahmen durch den Verkauf von zusätzlichen Diensten. Die Microsoft 365 Business Total Economic Impact (TEI)-Studie von Forrester Research von Juni2017 (https://partners.office.com/TEIBusiness) zeigt, dass Microsoft 365 Business sich positiv auf die Produktivität auswirken wird. 
+Microsoft 365 Business hilft Partnern bei der Reduzierung der Kosten durch betriebliche Effizienz und der Verbesserung der Einnahmen durch den Verkauf von zusätzlichen Diensten. Die Microsoft 365 Business Total Economic Impact (TEI)-Studie von Forrester Research von Juni2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI) zeigt, dass Microsoft 365 Business sich positiv auf die Produktivität auswirken wird. 
 
 In der TEI-Studie gaben Partner an, dass Sie von Microsoft 365 Business folgendes erwarten: 
 
