@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Office 365 Pro Plus-Infrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982766"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646400"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4: Office 365 ProPlus
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *Dies gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise und Microsoft 365 Education.*
 
-Microsoft 365 Enterprise enthält Office 365 ProPlus, die Abonnementversion von Office. Wie Office 2016 umfasst Office 365 ProPlus alle Office-Anwendungen, und diese Anwendungen sind direkt auf Ihren Clientgeräten installiert sind. Im Gegensatz zu Office 2016 wird Office 365 ProPlus regelmäßig um neue Features erweitert und verfügt über ein benutzerbasiertes Lizenzierungsmodell, mit dem Benutzer Office auf bis zu 5 Geräten installieren können. Weitere Informationen finden Sie unter [Informationen zu Office 365 ProPlus im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise enthält Office 365 ProPlus, die Abonnementversion von Office. Wie Office 2019 enthält auch Office 365 ProPlus alle Office-Anwendungen, und diese Anwendungen werden direkt auf Ihren Clientgeräten installiert. Anders als bei Office 2019 wird Office 365 ProPlus regelmäßig mit neuen Features aktualisiert und verfügt über ein benutzerbasiertes Lizenzierungsmodell, das es Benutzern ermöglicht, Office auf mehreren Geräten zu installieren. Weitere Details finden Sie unter [Informationen zu Office 365 ProPlus im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 In dieser Phase stellen Sie Office 365 ProPlus auf Clientgeräten im Rahmen von Microsoft 365 Enterprise bereit. Zusätzlich zu dieser Anleitung empfehlen wir die Verwendung von [Microsoft Fastrack](https://fasttrack.microsoft.com/office) bei der Bereitstellung. 
 
@@ -53,14 +53,12 @@ Der Artikel zum [Planen](https://docs.microsoft.com/DeployOffice/plan-office-365
 
 ## <a name="step-3-deploy"></a>Schritt 3: Bereitstellen
 
-Wählen Sie basierend auf Ihrem Bereitstellungsplan aus Schritt 2 die Methode für die Bereitstellung aus:
+Wählen Sie basierend auf Ihrem Bereitstellungsplan die Methode für die Bereitstellung aus:
 
 - **[Bereitstellen von Office 365 ProPlus mithilfe von System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** Verwalten der Bereitstellung mit Configuration Manager und Herunterladen und Bereitstellen von Office über Verteilungspunkte im Netzwerk
 
 - **[Bereitstellen von Office 365 ProPlus mit dem Office-Bereitstellungstool aus der Cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** Verwalten der Bereitstellung mit dem Office-Bereitstellungstool und direktes Installieren von Office über das Office-CDN auf Clientgeräten
  
-- **[Bereitstellen von Office 365 ProPlus mit dem Office-Bereitstellungstool aus einer lokalen Datenquelle](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source):** Verwalten der Bereitstellung mit dem Office-Bereitstellungstool und Herunterladen und Bereitstellen von Office über eine lokale Datenquelle im Netzwerk 
-
 - **[Installieren von Office 365 ProPlus über das Office-Portal](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658):** Verwalten der Bereitstellung im Office-Portal und direktes Installieren von Office auf Clientgeräten über das Portal durch Benutzer
 
 Viele Organisationen verwenden für unterschiedliche Benutzer eine Kombination aus diesen Optionen. Eine Organisation kann z. B. Configuration Manager verwenden, um Office für die meisten Benutzer bereitzustellen, einer kleinen Gruppe von Mitarbeitern, die nicht häufig mit dem internen Netzwerk verbunden sind, jedoch ermöglichen, Office selbst zu installieren. 
@@ -75,7 +73,7 @@ Erfahren Sie, wie die Experten bei Microsoft [Updates für Office 365 ProPlus be
 
 Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber multinationales, repräsentatives Unternehmen [Office 365 ProPlus bereitgestellt hat](contoso-o365pp.md).
 
-![](./media/contoso-overview/contoso-icon.png)
+![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 
