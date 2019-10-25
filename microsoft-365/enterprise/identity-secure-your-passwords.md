@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie müssen für Ihre gesamte Organisation sichere Kennwörter verwenden, und die Kennwortverwaltung einfach gestalten.
-ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370402"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662551"
 ---
 # <a name="step-2-secure-your-passwords"></a>Schritt 2: Schützen von Kennwörtern
 

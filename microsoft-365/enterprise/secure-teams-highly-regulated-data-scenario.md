@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie ein sicheres Team zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: d917e14719744dad8a681e15a8547655c3a0457f
+ms.sourcegitcommit: d95aab99d7827dbb9248280044748ca05ebec786
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628349"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37657802"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams für streng regulierte Daten
 

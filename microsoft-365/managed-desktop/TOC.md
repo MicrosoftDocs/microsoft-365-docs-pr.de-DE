@@ -15,6 +15,7 @@
 ### [Support](service-description/support.md)
 ### [Vorgänge und Überwachung](service-description/operations-and-monitoring.md)
 ### [Anwendungsanforderungen](service-description/mmd-app-requirements.md)
+### [Dienständerungen und Kommunikation](service-description/servicechanges.md)
 ### [Anpassen des Diensts](service-description/customizing.md)
 ## [Vorbereiten auf die Registrierung in Microsoft Managed Desktop](get-ready/index.md)
 ### [Voraussetzungen für Microsoft Managed Desktop](get-ready/prerequisites.md)
