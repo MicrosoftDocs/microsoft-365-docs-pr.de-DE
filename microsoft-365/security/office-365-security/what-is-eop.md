@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: Dieses Einführungsdokument hilft Ihnen, Exchange Online Schutz (EoP) und einige wichtige Terminologie zu verstehen. Dies gilt für Office 365 Kunden, die Exchange Online in der Cloud gehosteten Postfächern und EOP-eigenständigen Kunden schützen, die lokale Postfächer wie Exchange Server 2016 schützen.
-ms.openlocfilehash: 0ca3e8215eb57a08362dd836b4519aedd0b6ab84
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2e4de0b62b24498b1153c713523418193e8694b4
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082154"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662521"
 ---
-## <a name="what-is-exchange-online-protection-eop"></a>Was ist Exchange Online Schutz (EoP)
+# <a name="what-is-exchange-online-protection-eop"></a>Was ist Exchange Online Schutz (EoP)
 
 Exchange Online Protection (EoP) ist ein Cloud-basierter e-Mail-Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützen kann. Wenn Sie über Postfächer in Office 365 verfügen, werden diese automatisch von EoP geschützt, da Sie Teil des Diensts sind. Dies umfasst Organisationen mit Postfächern sowohl in Office 365 als auch lokal, was gemeinhin als Hybrid Szenario bezeichnet wird. EoP Standalone steht auch Kunden zur Verfügung, die keine Postfächer in der Cloud haben, aber ihre lokalen Postfächer schützen möchten.
 

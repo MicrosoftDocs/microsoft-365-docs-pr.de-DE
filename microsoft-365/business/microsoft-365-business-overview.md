@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: e6f99d6d2f2d7951303591a806a3618615a25310
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575916"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697763"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Übersicht über Microsoft 365 Business
 
@@ -54,7 +54,43 @@ Mit Microsoft 365 Business können Sie Ihre Daten in jeder dieser Instanzen sch�
 
 ![Eine Abbildung, die zeigt, wie M365B Ihr Unternehmen schützt.](media/m365businessvalueadd.png)
 
-Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 365 Business Security Features](security-features.md). Nach dem [Einrichten von Microsoft 365 Business](set-up.md)finden Sie unter [Einrichten von erweiterten Sicherheitsrichtlinien](set-up-advanced-security.md) erste Schritte mit den Sicherheitsfeatures, die nicht im Rahmen des Setups enthalten sind. Lesen Sie auch die [Top 10 Ways to Secure Office 365 und Microsoft 365 Business Plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) für einen guten Überblick über die Einrichtung von Schutzmaßnahmen gegen Cyber-Kriminelle und Hacker.
+## <a name="how-your-data-and-devices-are-protected"></a>Schutz Ihrer Daten und Geräte
+
+Microsoft 365 Business hilft bei der **Verteidigung gegen Bedrohungen** durch:
+
+Durchsuchen von Links in e-Mails und Dokumenten in Echtzeit zum Blockieren unsicherer Websites (ATP-sichere Links).
+
+- Durchführen einer erweiterten Analyse von e-Mail-Anlagen in einer Sandkastenumgebung zum erkennen neu entwickelter Schadsoftware (ATP-sichere Anlagen). 
+
+- Aktivieren von Anti-Phishing-Richtlinien, bei denen Computer Lernmodelle und Identitätswechsel Erkennung verwendet werden, um Schutz vor fortgeschrittenen Angriffen zu bieten (ATP-AntiPhishing-Intelligence). 
+
+- Einrichten von erweiterten Richtlinien zum Deaktivieren des Zugriffs von nicht vertrauenswürdigen Speicherorten oder zur Umgehung der mehrstufigen Authentifizierung von vertrauenswürdigen stellen wie Ihrem Office-Netzwerk (Azure MFA einschließlich vertrauenswürdiger IPS und bedingter Zugriff). 
+
+- Erzwingen des Schadsoftware-Schutzes auf allen Windows 10-Geräten Ihres Unternehmens und schützen von Dateien in wichtigen Systemordnern vor von Ransomware vorgenommenen Änderungen (Windows Defender)
+
+Ihre **Geschäftsdaten sind geschützt** durch:
+
+- Mithilfe der automatischen Erkennung können Sie verhindern, dass vertrauliche Informationen wie Sozialversicherungsnummern oder Kreditkarten außerhalb Ihres Unternehmens undicht werden (Verhinderung von Datenverlust). 
+
+- Verschlüsseln vertraulicher e-Mails, damit Sie sicher mit Kunden oder anderen Personen außerhalb Ihres Unternehmens kommunizieren können, um sicherzustellen, dass nur der vorgesehene Empfänger die Nachricht lesen kann (Office 365 Nachrichtenverschlüsselung).
+
+- Steuern der Benutzer, die Zugriff auf Unternehmensinformationen haben, indem Sie Einschränkungen wie " **nicht kopieren** " und " **nicht weiterleiten** " auf e-Mail und Dokumente anwenden (Azure Information Protection, Plan 1).
+
+- Aktivieren der unbegrenzten Cloud-Archivierung, damit Sie alle e-Mails Ihres Unternehmens, einschließlich der Postfächer ehemaliger Mitarbeiter (Exchange Online Archivierung), beibehalten können.
+
+Ihre **Geräte sind gesichert** durch:
+
+- Steuern, welche Geräte und Benutzer auf Ihre Office 365 Daten zugreifen können; mit Optionen zum Blockieren der Anmeldung von Benutzern von Heimcomputern, nicht genehmigten Apps oder außerhalb der Arbeitsstunden (bedingter Zugriff).
+
+- Anwenden von Sicherheitsrichtlinien zum Schutz von Geschäftsdaten auf IOS-und Android-Geräten.  Sie können beispielsweise festlegen, dass Benutzer eine PIN oder einen Fingerabdruck für den Zugriff auf Geschäftsdaten bereitstellen und Daten auf mobilen Geräten verschlüsseln (app Protection für Office Mobile Apps).
+
+- Aufbewahrung von Geschäftsdokumenten, e-Mails und anderen Daten in einer genehmigten Office-Mobile Apps und verhindern, dass Mitarbeiter diese in nicht autorisierten apps und Speicherorten speichern (app Protection für Office Mobile Apps).
+
+- Remote Abwischen von Geschäftsdaten von verlorenen oder gestohlenen Geräten ohne Beeinträchtigung der persönlichen Informationen (InTune-selektives Löschen).
+
+- Verwenden vereinfachter Steuerelemente zum Verwalten von Richtlinien für alle Windows 10-PCs in Ihrem Unternehmen, erzwingen der BitLocker-Verschlüsselung und automatische Installation wichtiger Windows-Updates (Erzwingen von Windows Update-Richtlinien).
+
+Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 365 Business Security Features](security-features.md). Nach dem [Einrichten von Microsoft 365 Business](set-up.md)finden Sie unter [Set up Advanced Security Policies](set-up-advanced-security.md) to Get Started with the Security Features, die nicht als Bestandteil der geführten Einrichtung enthalten sind. Lesen Sie auch die [Top 10 Ways to Secure Office 365 und Microsoft 365 Business Plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) für einen guten Überblick über die Einrichtung von Schutzmaßnahmen gegen Cyber-Kriminelle und Hacker.
 
 ## <a name="get-microsoft-365-business"></a>Abrufen von Microsoft 365 Business
 

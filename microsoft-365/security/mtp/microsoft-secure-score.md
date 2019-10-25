@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b337f020702b60ceeb02043e9b66d5614f58c228
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435559"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697750"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -32,9 +32,9 @@ Mit Secure Score können Organisationen Folgendes tun:
 * Verbessern Sie Ihre Sicherheitsposition durch Bereitstellen von Auffindbarkeit, Sichtbarkeit, Anleitung und Steuerung.  
 * Vergleichen Sie mit Benchmarks, und legen Sie Key Performance Indicators (KPIs) fest.
 
-Mit Secure Score erhalten Organisationen Zugriff auf robuste Visualisierungen von Metriken und Trends, die Integration in andere Microsoft-Produkte, den Vergleich mit ähnlichen Organisationen und vieles mehr. Die Bewertung kann auch reflektieren, wenn von Drittanbieterlösungen Empfohlene Aktionen behandelt wurden.
+Organisationen erhalten Zugriff auf robuste Visualisierungen von Metriken und Trends, die Integration in andere Microsoft-Produkte, den Vergleich mit ähnlichen Organisationen und vieles mehr. Die Bewertung kann auch reflektieren, wenn von Drittanbieterlösungen Empfohlene Aktionen behandelt wurden.
 
-Darüber hinaus können Sie über die [Microsoft Graph-API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)auf Ihre Empfehlungen und Gäste zugreifen.
+Darüber hinaus können Sie über die [Microsoft Graph-API](https://www.microsoft.com/security/partnerships/graph-security-api)auf Ihre Empfehlungen und Gäste zugreifen. Erfahren Sie mehr über den [Ressourcentyp Secure Score](https://go.microsoft.com/fwlink/?linkid=2092996).
 
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -45,6 +45,10 @@ Ihre Punktzahl wird in Echtzeit aktualisiert, um die Informationen widerzuspiege
 ### <a name="how-improvement-actions-are-scored"></a>So werden Verbesserungs Aktionen bewertet
 
 Die meisten werden auf binäre Weise bewertet – Wenn Sie die Verbesserungs Aktion implementieren, wie das Erstellen einer neuen Richtlinie oder das Aktivieren einer bestimmten Einstellung, erhalten Sie 100% der Punkte. Bei anderen Verbesserungs Aktionen werden Punkte als Prozentsatz der Gesamtkonfiguration angegeben. Wenn die Verbesserungs Aktion beispielsweise besagt, dass Sie 30 Punkte erhalten, indem Sie alle Ihre Benutzer mit mehrstufiger Authentifizierung schützen und nur 5 von 100 gesamt Benutzern geschützt sind, erhalten Sie einen Teil der Punktzahl von rund 2 Punkten (5 Protected/100 Total * 30 MAX pts = 2 Pkt.  Teilergebnis).
+
+### <a name="products-included-in-secure-score"></a>Produkte im Lieferumfang von Secure Score
+
+Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD, InTune und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte wie Azure ATP und Microsoft Defender ATP werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können auch die Verbesserungs Aktionen als von einem Drittanbieter abgedeckt markieren. 
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
@@ -77,19 +81,17 @@ Für den Zugriff auf die Graph-API benötigen Sie zusätzlich zu einer Rolle ein
 * Bereich securityevents. Read. all (für schreibgeschützte Rolle)
 * Bereich securityevents. ReadWrite. all (für Lese-und Schreibrolle)
 
-## <a name="rich-experiences--security-recommendations"></a>Umfangreiche Erfahrungen #a0 Sicherheitsempfehlungen
+## <a name="gain-visibility-into-your-security-posture"></a>Verschaffen Sie sich eine Sichtbarkeit in ihrer Sicherheitsposition
 
-In Microsoft Secure Score gibt es Empfehlungen aus Office 365, Azure AD, InTune und Cloud-App-Sicherheit mit Empfehlungen von Azure Security Center und Microsoft Defender Security Center in Kürze.
-
-Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Empfehlungen in Gruppen gegliedert:
+Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Verbesserungs Aktionen in Gruppen gegliedert:
 
 * Identität (Azure Ad Konten und Rollen)
 * Daten (Office 365 Dokumente)
-* Gerät (Microsoft Defender ATP-Geräte)
+* Device (Microsoft Defender ATP Devices, demnächst verfügbar)
 * App (e-Mail-und Cloud-Apps)
 * Infrastruktur (Azure-Ressourcen)
 
-Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können. Sie können diese Daten verwenden, um zu agieren und große Unterschiede in ihrer Sicherheitsposition zu treffen.  
+Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können.
 
 ![Secure Score Homepage](../media/secure-score/homepage-original.png)
 *Abbildung 1: Übersicht über die Microsoft Secure Scores-Seite*
