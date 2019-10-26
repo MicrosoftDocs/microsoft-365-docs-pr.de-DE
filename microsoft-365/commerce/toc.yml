@@ -24,8 +24,6 @@
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
         - name: Verwalten von Abrechnungs Profilen
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: Bestellverlauf
-          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
         - name: Zahlungs Dienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
           href: /microsoft-365/commerce/billing-and-payments/psd2.md
     - name: Abrechnungskonten
