@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 3e37cebc1721a1bdcce0a30223a8beeb38868e82
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69edcd65ada007ead9e0c0d628b96f6390e34696
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370082"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733451"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
@@ -28,6 +28,17 @@ Der einfachste Weg zum Upgrade von PCs, auf denen Windows 7 oder Windows 8.1 auf
 Wenn Sie über vorhandene Computer verfügen, auf denen Windows 7 oder Windows 8.1 läuft, wird dieser Pfad empfohlen, wenn Ihre Organisation Windows 10 bereitstellt. Dadurch wird das Windows-Installationsprogramm (Setup. exe) verwendet, um ein direktes Upgrade durchzuführen, mit dem alle Daten, Einstellungen, Anwendungen und Treiber aus der vorhandenen Betriebssystemversion automatisch beibehalten werden. Dies erfordert den geringsten IT-Aufwand, da keine komplexe Bereitstellungsinfrastruktur erforderlich ist.
 
 Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Image mithilfe von Configuration Manager als direktes Upgrade zu konfigurieren und bereitzustellen.
+
+## <a name="the-windows-10-deployment-with-system-center-configuration-manager-poster"></a>Windows 10-Bereitstellung mit System Center Configuration Manager-Poster
+
+Das Poster des Configuration Managers ist eine Seite im Querformatmodus (17x11). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
+
+[![Bereitstellen von Windows 10 mit dem Configuration Manager-Poster](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
+
+<!--
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
+-->
 
 ## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Abschnitt 1: Überprüfen der Bereitschaft zum Aktualisieren von Windows
 

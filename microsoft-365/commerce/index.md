@@ -10,12 +10,12 @@ ms.author: TrudyHa
 ms.date: 5/29/2019
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: e1c16deaeb61a497a4ec4fc1dc2cd9af672d55c7
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: a094057ba635a6ca848b822fc2888b4bc717573a
+ms.sourcegitcommit: a372c634c3befcb488a4cc85a593e17c53fe36e8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646361"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37732869"
 ---
 # <a name="manage-commercial-purchases-in-microsoft-365-admin-center"></a>Verwalten von kommerziellen Einkäufen im Microsoft 365 Admin Center
 
@@ -30,7 +30,6 @@ ms.locfileid: "37646361"
 | [Grundlegendes zur Ihrer Rechnung](/microsoft-365/commerce/billing-and-payments/understand-your-invoice) | Informationen zu Rechnungen für Artikel, die über das Microsoft 365 Admin Center erworben wurden. |
 | [Verwalten von Zahlungsmethoden](https://docs.microsoft.com/microsoft-store/payment-methods) | Hinzufügen, bearbeiten oder Löschen von Zahlungsmethoden. |
 | [Verwalten von Abrechnungs Profilen](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) | Passen Sie an, wie die Abrechnung verschiedener Artikel auf Ihrer Rechnung erfolgt.  |
-| [Bestellverlauf](https://docs.microsoft.com/microsoft-store/manage-orders-microsoft-store-for-business) | Verfolgen Sie Ihre kommerziellen Bestellungen. |
 | [Verwalten von Abrechnungskontoinformationen](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings) | Mit Abrechnungskonten können Sie Organisationsinformationen, Kaufverträge mit Microsoft und Administrator Genehmigungen verwalten. |
 | [Mandanten mit Abrechnungskonto verknüpfen](https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business) | Die Mandanten oder Mandanten, die Ihrem Einkaufskonto hinzugefügt werden, Steuern, wie Sie Personen in Ihrer Organisation Produkte zuweisen können. |
 | [Verwalten von Partnerbeziehungen](https://docs.microsoft.com/microsoft-store/work-with-partner-microsoft-store-business) | Arbeiten Sie mit Microsoft-zertifizierten Lösungsanbietern zusammen, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. |

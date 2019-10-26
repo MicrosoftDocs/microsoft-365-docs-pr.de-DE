@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 131c48e89a5bb82381347e766b3f00451a852410
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370282"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733450"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Schritt 3: Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot
 
@@ -26,6 +26,18 @@ ms.locfileid: "37370282"
 Nutzen Sie zur Anpassung von neuen, vorkonfigurierten Windows 10-PCs den Windows Autopilot, um für Ihre Organisation ein neues, bereits konfiguriertes System mit Apps und Einstellungen bereitzustellen. Es müssen keine Images implementiert, keine Treiber installiert und keine Infrastruktur verwaltet werden. Die Benutzer können den Bereitstellungsprozess unabhängig durchlaufen, ohne ihren IT-Administrator konsultieren zu müssen.
 
 Mit Windows Autopilot können Sie neue, vorkonfigurierte Windows 10-Geräte einrichten und einsatzbereit machen. Weitere Einzelheiten zu Windows Autopilot, inklusive Vorteilen und Szenarien von Windows Autopilot finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot). Die nachfolgenden Abschnitte erläutern die Einrichtung neuer Geräte.
+
+## <a name="the-windows-autopilot-deployment-process-poster"></a>Das Poster des Windows Autopilot-Bereitstellungsprozesses
+
+Das Poster von Windows Autopilot ist zwei Seiten im Portraitmodus (11 x 17). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
+
+[![Bereitstellen von Windows 10 mit Autopilot Poster](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+
+<!--
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
+
+-->
 
 ## <a name="part-1-start-windows-autopilot-deployment"></a>Abschnitt 1: Starten der Windows Autopilot-Bereitstellung
 Siehe [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot), um:
