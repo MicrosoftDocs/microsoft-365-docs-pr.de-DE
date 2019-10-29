@@ -3,7 +3,7 @@ title: Beendigungskriterien für die Office 365 ProPlus-Bereitstellung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/06/2019
+ms.date: 10/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für die Office 365 ProPlus-Infrastruktur erfüllt.
-ms.openlocfilehash: 544eb31a8fd2417adfa929df793f88ec52b1d503
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 749d9661911bd6b69a3d6abff0b54e9ea1200adc
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073145"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746581"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Beendigungskriterien für die Office 365 ProPlus-Bereitstellung
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *Dies gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise und Microsoft 365 Education.*
 
@@ -60,4 +60,4 @@ Ihre Client-Geräte weisen die aktuellen Versionen von Office 365 ProPlus auf un
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, ist die nächste Phase [Verwaltung mobiler Geräte](mobility-infrastructure.md). |
+|![Phase 5: Verwaltung mobiler Geräte](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, ist die nächste Phase [Verwaltung mobiler Geräte](mobility-infrastructure.md). |
