@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'Um Phishing zu verhindern, benötigen Office 365 und Outlook.com jetzt die RFC-Compliance für from: addresses.'
-ms.openlocfilehash: 39c9898a31c715487f3bc934ad0986e9a7b3679d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081244"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749157"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Vorgehensweise Office 365 Überprüfen der Absenderadresse zur Verhinderung von Phishing
 
@@ -73,7 +73,7 @@ Das Format für den Wert der from:-Adresse wird über mehrere RFCs hinweg detail
 From: "displayname " <emailaddress >
 ```
 
-Wobei Folgendes gilt:
+Dabei gilt:
   
 - Optional  *DisplayName* ist ein Ausdruck, der den Besitzer der e-Mail-Adresse beschreibt. Dies kann beispielsweise ein benutzerfreundlicherer Name sein, um den Absender als den Namen des Postfachs zu beschreiben. Die Verwendung eines Anzeigenamens ist optional. Wenn Sie jedoch einen Anzeigenamen verwenden, empfiehlt Microsoft, dass Sie ihn immer in Anführungszeichen einschließen, wie in der Abbildung dargestellt. 
     
@@ -83,7 +83,7 @@ Wobei Folgendes gilt:
   local-part @domain
   ```
 
-    Wobei Folgendes gilt:
+    Dabei gilt:
     
   - Erforderlich  *local-Part* ist eine Zeichenfolge, die das Postfach identifiziert, das der Adresse zugeordnet ist. Dies ist innerhalb der Domäne eindeutig. Der Benutzername oder die GUID des Postfachbesitzers wird häufig als Wert für das lokale Webpart verwendet. 
     
@@ -121,7 +121,7 @@ From: "Office 365" <sender@contoso.com> (Sent by a process)
 
 Für from: addresses, die einen Wert für den Anzeigenamen enthalten, gelten die folgenden Regeln:
   
-- Wenn die Absenderadresse einen Anzeigenamen enthält und der Anzeigename ein Komma enthält, muss der Anzeigename in Anführungszeichen eingeschlossen werden. Beispiel:
+- Wenn die Absenderadresse einen Anzeigenamen enthält und der Anzeigename ein Komma enthält, muss der Anzeigename in Anführungszeichen eingeschlossen werden. Zum Beispiel:
     
     Das folgende Beispiel ist gültig:
     
@@ -223,7 +223,7 @@ Sie können diese Richtlinie nicht für ausgehende e-Mails außer Kraft setzen, 
 ### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Weitere Möglichkeiten zum verhindern und schützen von Internetkriminalität in Office 365
 <a name="OtherProtection"> </a>
 
-Weitere Informationen darüber, wie Sie Ihre Organisation gegen Internetkriminalität wie Phishing, Spam, Datenschutzverletzungen und andere Bedrohungen stärken können, finden Sie unter [bewährte Methoden für die Sicherheit für Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
+Weitere Informationen darüber, wie Sie Ihre Organisation gegen Internetkriminalität wie Phishing, Spam, Datenschutzverletzungen und andere Bedrohungen stärken können, finden Sie unter [bewährte Methoden für die Sicherheit für Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).
   
 ## <a name="related-topics"></a>Verwandte Themen
 
