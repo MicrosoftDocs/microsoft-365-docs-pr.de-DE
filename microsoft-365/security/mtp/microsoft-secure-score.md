@@ -15,18 +15,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 74afe39e78990d794368ed19aa5fd5116bee17bb
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697750"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37774908"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
 Microsoft Secure Score ist ein Maß für die Sicherheitslage einer Organisation mit einer höheren Zahl, die mehr Verbesserungs Aktionen anzeigt. Von einem zentralisierten Dashboard im Microsoft 365 Security Center aus können Organisationen die Sicherheit Ihrer Microsoft 365-Identitäten, Daten, apps, Geräte und Infrastruktur überwachen und daran arbeiten.
 
-Mit Secure Score können Organisationen Folgendes tun:  
+Secure Score hilft Organisationen:
 
 * Bericht über den aktuellen Status der Sicherheitsposition der Organisation.
 * Verbessern Sie Ihre Sicherheitsposition durch Bereitstellen von Auffindbarkeit, Sichtbarkeit, Anleitung und Steuerung.  
@@ -38,17 +38,17 @@ Darüber hinaus können Sie über die [Microsoft Graph-API](https://www.microsof
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (beispielsweise zum Anzeigen von Berichten) oder zur Adressierung der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters. Einige Verbesserungs Aktionen geben nur dann Punkte, wenn Sie vollständig abgeschlossen sind, und einige geben partielle Punkte an, wenn Sie für einige Geräte oder Benutzer abgeschlossen werden. Sicherheit sollte immer mit Benutzerfreundlichkeit abgeglichen werden, und nicht jede Empfehlung kann für Ihre Umgebung funktionieren.
+Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (beispielsweise zum Anzeigen von Berichten) oder zur Adressierung der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters. Einige Verbesserungs Aktionen geben nur dann Punkte, wenn Sie vollständig abgeschlossen sind, und einige geben partielle Punkte an, wenn Sie für einige Geräte oder Benutzer abgeschlossen werden. Die Sicherheit sollte mit der Benutzerfreundlichkeit ausgeglichen werden, und nicht jede Empfehlung kann für Ihre Umgebung funktionieren.
 
 Ihre Punktzahl wird in Echtzeit aktualisiert, um die Informationen widerzuspiegeln, die auf den Seiten Visualisierungen und Verbesserungs Aktionen angezeigt werden. Secure Score synchronisiert auch täglich, um Systemdaten zu ihren erreichten Punkten für jede Aktion zu erhalten.
 
 ### <a name="how-improvement-actions-are-scored"></a>So werden Verbesserungs Aktionen bewertet
 
-Die meisten werden auf binäre Weise bewertet – Wenn Sie die Verbesserungs Aktion implementieren, wie das Erstellen einer neuen Richtlinie oder das Aktivieren einer bestimmten Einstellung, erhalten Sie 100% der Punkte. Bei anderen Verbesserungs Aktionen werden Punkte als Prozentsatz der Gesamtkonfiguration angegeben. Wenn die Verbesserungs Aktion beispielsweise besagt, dass Sie 30 Punkte erhalten, indem Sie alle Ihre Benutzer mit mehrstufiger Authentifizierung schützen und nur 5 von 100 gesamt Benutzern geschützt sind, erhalten Sie einen Teil der Punktzahl von rund 2 Punkten (5 Protected/100 Total * 30 MAX pts = 2 Pkt.  Teilergebnis).
+Die meisten werden auf binäre Weise bewertet – Wenn Sie die Verbesserungs Aktion implementieren, wie Sie eine neue Richtlinie erstellen oder eine bestimmte Einstellung aktivieren, erhalten Sie 100% der Punkte. Bei anderen Verbesserungs Aktionen werden Punkte als Prozentsatz der Gesamtkonfiguration angegeben. Wenn die Verbesserungs Aktion beispielsweise besagt, dass Sie 30 Punkte erhalten, indem Sie alle Ihre Benutzer mit mehrstufiger Authentifizierung schützen und nur 5 von 100 gesamt Benutzern geschützt sind, erhalten Sie einen Teil der Punktzahl von rund 2 Punkten (5 Protected/100 Total * 30 MAX pts = 2 Pkt.  Teilergebnis).
 
 ### <a name="products-included-in-secure-score"></a>Produkte im Lieferumfang von Secure Score
 
-Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD, InTune und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte wie Azure ATP und Microsoft Defender ATP werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können auch die Verbesserungs Aktionen als von einem Drittanbieter abgedeckt markieren. 
+Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD, InTune und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte wie Azure ATP und Microsoft Defender ATP werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können auch die Verbesserungs Aktionen als von einem Drittanbieter abgedeckt markieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
@@ -85,10 +85,10 @@ Für den Zugriff auf die Graph-API benötigen Sie zusätzlich zu einer Rolle ein
 
 Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Verbesserungs Aktionen in Gruppen gegliedert:
 
-* Identität (Azure Ad Konten und Rollen)
-* Daten (Office 365 Dokumente)
+* Identität (Azure Ad Konten #a0 Rollen, wobei Azure ATP in Kürze verfügbar ist)
+* Data (Microsoft Information Protection)
 * Device (Microsoft Defender ATP Devices, demnächst verfügbar)
-* App (e-Mail-und Cloud-Apps)
+* App (e-Mail-und Cloud-apps, einschließlich Office 365 und Microsoft Cloud-App-Sicherheit)
 * Infrastruktur (Azure-Ressourcen)
 
 Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können.
@@ -102,7 +102,7 @@ Auf der Registerkarte Verbesserungs Aktionen werden die Sicherheitsempfehlungen 
 
 ### <a name="ranking"></a>Ranking
 
-Die Rangfolge basiert auf der Anzahl der verbleibenden Punkte, die zum Erreichen der Implementierungs Schwierigkeit, der Benutzer Auswirkungen und der Komplexität übrig bleiben. Die am höchsten bewerteten Verbesserungs Aktionen weisen bei niedrigen Schwierigkeitsgraden, Benutzer Auswirkungen und Komplexität große verbleibende Punkte auf.
+Die Rangfolge basiert auf der Anzahl der verbleibenden Punkte, die zum Erreichen der Implementierungs Schwierigkeit, der Benutzer Auswirkungen und der Komplexität übrig bleiben. Die am höchsten bewerteten Verbesserungs Aktionen weisen eine große Anzahl von Punkten auf, die mit geringer Schwierigkeit, Benutzer Auswirkungen und Komplexität verbleiben.
 
 ### <a name="actions"></a>Aktionen
 

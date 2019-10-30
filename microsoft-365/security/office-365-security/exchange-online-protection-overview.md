@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, mit dem Sie Ihre Organisation vor Spam und Schadsoftware schützen können.
-ms.openlocfilehash: e091946792e78f47f5c0ab5a001bf45ca4de6b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440452"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772269"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -56,13 +56,13 @@ EOP führt einen Lastenausgleich zwischen Rechenzentren aus, jedoch nur innerhal
 
 ## <a name="eop-plans-and-features"></a>EOP-Dienste und -Funktionen
 
-Die folgenden EOP-Abonnementpläne sind verfügbar:
+Die verfügbaren EoP-Abonnement Pläne lauten wie folgt:
 
-- **EoP Standalone**: wo EoP ihre lokalen Postfächer schützt.
+- **EoP Standalone**: Sie registrieren sich in EoP, um Ihre lokale e-Mail-Organisation zu schützen.
 
-- **EoP-Features in Exchange Online**: wo EoP Ihre Exchange Online in der Cloud gehosteten Postfächer schützt.
+- **EoP-Features in Exchange Online**: jedes Abonnement, das Exchange Online enthält (eigenständig oder als Teil Office 365), verwendet EoP zum Schutz Ihrer Exchange Online Postfächer.
 
-- **Exchange Enterprise CAL mit Diensten**: dabei schützt EoP ihre lokalen Postfächer wie EoP Standalone und umfasst Datenverlust Verhinderung (Data Loss Prevention, DLP) und die Berichterstellung mithilfe von Webdiensten.
+- **Exchange Enterprise CAL mit Diensten**: Wenn Sie über eine lokale Exchange-Organisation verfügen, in der Sie zusätzliche Lizenzen für Exchange Enterprise CAL mit Diensten erworben haben, ist EoP Teil der enthaltenen Dienste.
 
 Weitere Informationen zu Anforderungen, wichtigen Grenzwerten und Verfügbarkeit von Funktionen in allen EOP-Abonnementplänen finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?LinkId=320619).
 
