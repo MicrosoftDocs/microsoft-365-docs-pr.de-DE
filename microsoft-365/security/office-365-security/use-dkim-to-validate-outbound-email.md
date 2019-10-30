@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 4d9228301a4cafd3728a349ad710496ba8f9d379
-ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
+ms.openlocfilehash: 07cb90684bbbba4851697020ceac4756381f8b55
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "37598289"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772239"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -129,7 +129,7 @@ Erstellen von CNAMEs, auf die in der Get-DkimSigningConfig-Ausgabe verwiesen wir
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-Die CNAME-Einträge in Ihrem DNS verweisen auf bereits erstellte A-Datensätze, die im DNS auf den Microsoft-DNS-Servern für Office 365 vorhanden sind.
+Die CNAME-Einträge in Ihrem DNS verweisen auf bereits erstellte DKIM TXT-Datensätze, die im DNS auf den Microsoft-DNS-Servern für Office 365 vorhanden sind.
   
 Office 365 führt die automatische Schlüsselrotation unter Verwendung der beiden eingerichteten Datensätze durch. Wenn Sie neben der ersten Domäne zusätzliche benutzerdefinierte Domänen in Office 365 bereitgestellt haben, müssen Sie zwei CNAME-Einträge für jede zusätzliche Domäne veröffentlichen. Wenn Sie also zwei Domänen haben, müssen Sie zwei zusätzliche CNAME-Einträge veröffentlichen usw.
   

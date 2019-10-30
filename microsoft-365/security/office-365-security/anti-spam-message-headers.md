@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Nachrichtenkopfzeilen und die Werte, die Nachrichten von Exchange Online Protection hinzugefügt werden.
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451117"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772259"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 
@@ -39,7 +39,6 @@ Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-
 |CTRY|Das Land, aus dem die Nachricht mit dem Dienst verbunden wurde. Es wird anhand der Verbindungs-IP-Adresse ermittelt, die nicht notwendigerweise mit der ursprünglichen Sende-IP-Adresse übereinstimmen muss.|
 |LANG|Die Sprache, in der die Nachricht verfasst wurde, wie im Ländercode angegeben (z. B. ru_RU für Russisch).|
 |SCL|Die SCL-Bewertung (Spam Confidence Level) einer Nachricht. Weitere Informationen zur Interpretation dieser Werte finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).  |
-|PCL|Der PCL-Wert (Phishing Confidence Level) der Nachricht.|
 |SRV:BULK|Die Nachricht wurde als Massen-E-Mail identifiziert. Ist die erweiterte Spamfilteroption **Alle Massen-E-Mail-Nachrichten sperren** aktiviert, wird sie als Spam markiert. Ist die nicht aktiviert, wird sie nur dann als Spam markiert, wenn der Rest der Filterungsregeln festlegt, dass es sich bei der Nachricht um Spam handelt.|
 |SFV:SFE|Filterung wurde übersprungen, und die Nachricht wurde durchgelassen, da sie von einem Absender aus der Liste mit sicheren Absendern stammt.|
 |SFV:BLK|Filterung wurde übersprungen, und die Nachricht wurde blockiert, da sie von einem Absender aus der Liste mit blockierten Absendern stammt.  <br/> **Tipp**: Weitere Informationen zum Erstellen von Listen mit sicheren oder blockierten Absendern finden Sie unter [Sperren oder Zulassen (Junk-E-Mail-Einstellungen)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook im Web) und [Übersicht über den Junk-E-Mail-Filter](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|
@@ -66,8 +65,7 @@ In der folgenden Tabelle werden die hilfreiche Felder der Nachrichtenkopfzeile *
 
 |**Kopfzeilenfeld**|**Beschreibung**|
 |:-----|:-----|
-|PCL|Der PCL-Wert (Phishing Confidence Level) der Nachricht, der anzeigt, ob es sich um eine Phishing-Nachricht handelt. Dieser Status kann als einer der folgenden numerischen Werte zurückgegeben werden: <br/>**0-3**: Der Inhalt der Nachricht wird wahrscheinlich nicht zum Phishing genutzt. <br/>**4-8**: Der Inhalt der Nachricht wird wahrscheinlich zum Phishing genutzt. <br/>**-9990**: (nur Exchange Online Protection) Der Inhalt der Nachricht wird wahrscheinlich als Phishing eingestuft.  <br/>  Anhand dieser Werte wird ermittelt, welche Aktion Ihr E-Mail-Client für die Nachrichten ausführt. Outlook verwendet z. B. den PCL-Stempel, um den Inhalt von verdächtigen Nachrichten zu blockieren. Weitere Informationen über Phishing und darüber, wie Outlook Phishingnachrichten verarbeitet, finden Sie unter [Aktivieren und Deaktivieren von Links in E-Mail-Nachrichten](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
-|
+|BCL|Das Massenbeschwerdeniveau (Bulk Confidence Level, BCL) der Nachricht hilft dabei, die verschiedenen Arten von Serienbriefen zu unterscheiden. Die BCL-Bewertung wird als Wert zwischen 0 und 9 dargestellt. Werte und andere Informationen zur BCL-Bewertung finden Sie unter [BCL-Werte (Bulk Confidence Level)](bulk-complaint-level-values.md).|
 
 ## <a name="authentication-results-message-header"></a>Nachrichtenkopfzeile „Authentication-results“
 
