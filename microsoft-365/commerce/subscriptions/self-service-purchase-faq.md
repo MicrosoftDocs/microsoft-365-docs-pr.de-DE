@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
-ms.openlocfilehash: f88d815b83da1038f3c5854a7499a5efaa029320
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
+ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749167"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885579"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
@@ -29,15 +29,15 @@ ms.locfileid: "37749167"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Welche Änderungen hat Microsoft rund um Self-Service Purchases für die Power Platform-Produkte angekündigt?
 
-Ab dem 19. November 2019 stehen Self-Service Purchase-, Subscription-und License Management-Funktionen für Power Platform-Produkte (Power BI, PowerApps und Flow) für die meisten kommerziellen Cloud-Kunden in den Vereinigten Staaten zur Verfügung. Mit Self-Service Purchase können Benutzer neue Technologien ausprobieren und Lösungen entwickeln, die letztlich ihren größeren Organisationen zugute kommen. Diese Funktion steht derzeit nicht für Mandanten zur Verfügung, die Regierungs-, gemeinnützige oder Bildungseinrichtungen sind. Zentrale Beschaffung und IT-Teams haben eine Sichtbarkeit für alle Benutzer, die Self-Service-Kauf Lösungen über das <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>kaufen und bereitstellen.
+Ab dem 19. November 2019 stehen Self-Service Purchase-, Subscription-und License Management-Funktionen für Power Platform-Produkte (Power BI, PowerApps und Flow) für die meisten kommerziellen Cloud-Kunden in den Vereinigten Staaten zur Verfügung. Mit Self-Service Purchase können Benutzer neue Technologien ausprobieren und Lösungen entwickeln, die letztlich ihren größeren Organisationen zugute kommen. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind. Zentrale Beschaffung und IT-Teams haben eine Sichtbarkeit für alle Benutzer, die Self-Service-Kauf Lösungen über das <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>kaufen und bereitstellen.
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Warum wird von Microsoft eine Self-Service-Kaufoption für die Produkte der Power Platform hinzugefügt?
 
-Durch die digitale Transformation ändern sich herkömmliche Rollen. Da Mitarbeiter unabhängiger und besser in der Technologie versiert werden, haben wir eine erhöhte Nachfrage sowohl von Benutzern als auch von Organisationen gesehen, damit Benutzer Abonnements selbst erwerben können. Das Ziel der Self-Service-Kaufoption besteht darin, Benutzern die Entwicklung eigener Lösungen zu ermöglichen, um die Produktivität zu entschlüsseln und die geschäftlichen Auswirkungen zu steigern, während die Datenverwaltung und Compliance von Organisationen respektiert wird.
+In der heutigen Welt suchen Endbenutzer und Abteilungen zunehmend nach und kaufen Technologielösungen ein. Wir haben zahlreiche Anfragen von diesen Kunden erhalten, um Self-Service-Erwerb von Power Platform-Produkten zu ermöglichen. Wir reagieren auf diese Kundenanforderung und gleichzeitig die Anforderungen von IT-Administratoren, die häufig die Sichtbarkeit und Kontrolle verlieren, wenn Personen innerhalb Ihrer Organisation Lösungen von Drittanbietern ohne Ihr Wissen einführen. Mit der anstehenden Self-Service-Funktion für Power Platform-Produkte haben IT-Administratoren vollständige Sichtbarkeit für alle Self-Service-Käufe innerhalb Ihrer Organisation, und auf Organisationsebene festgelegte Daten Steuerungsrichtlinien werden für Abonnements, die über Self-Service erworben wurden. Administratoren können auch vorhandene Lizenzen oder zusätzliche Abonnements von Power Platform-Produkten über vorhandene Vereinbarungen und Preise für Benutzer, die Self-Service-Käufen zugewiesen sind, zuweisen. Nach dem Zuweisen dieser zentral erworbenen Lizenzen können Administratoren dann anfordern, dass die Käufer Ihre vorhandenen Abonnements kündigen. Microsoft untersucht Möglichkeiten zur Vereinfachung und Rationalisierung dieses Prozesses für Administratoren in der Zukunft.
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>Wann ist Self-Service-Erwerb für die Produkte der Power Platform verfügbar?
 
-Microsoft startet Self-Service-Kauf für Power BI am 19. November 2019 an Kunden in den Vereinigten Staaten, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. PowerApps und Microsoft Flow werden am 4. Dezember 2019 hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten zur Verfügung, die Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
+Microsoft startet Self-Service-Kauf für Power BI am 19. November 2019 an Kunden in den Vereinigten Staaten, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. PowerApps und Microsoft Flow werden am 4. Dezember 2019 hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Kann Self-Service-Einkauf für Dienste außerhalb der Power Platform-Produkte aktiviert werden?
 
@@ -97,11 +97,11 @@ Während alle Azure AD Benutzer in berechtigten Organisationen Self-Service-Käu
 
 ### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>Warum unterliegt Self-Service Purchases nicht der Administratorgenehmigung?
 
-Wir reagieren auf unsere Kunden, die diese Funktion angefordert haben, während Administratoren die Kontrolle über die Dienste behalten und die Datenverwaltung und-Compliance respektieren. Weitere Informationen zum Verwalten von Azure AD Dienst Prinzipalen finden Sie unter [festlegen-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). Darüber hinaus haben Administratoren vollständige Transparenz darüber, wer einen Self-Service-Einkauf getätigt hat und welchen Benutzern auf ihren Mandanten eine Lizenz von einem Self-Service-Kauf zugewiesen wurde. Organisationen können sich dann auf Ihre eigenen internen Richtlinien, Verfahren und Kommunikationen verlassen, um sicherzustellen, dass Personen, die Self-Service-Käufe tätigen, die Unternehmensrichtlinien erfüllen. 
+Wir reagieren auf unsere Kunden, die Self-Service-Käufe angefordert haben, während Sie weiterhin die Administrator Kontrolle über die Dienste respektieren. Administratoren haben vollständige Sichtbarkeit darüber, wer einen Self-Service-Einkauf getätigt hat und welchen Benutzern auf ihren Mandanten eine Lizenz von einem Self-Service-Kauf zugewiesen wurde. Organisationen können sich auch auf interne Richtlinien, Verfahren und Kommunikation verlassen, um sicherzustellen, dass Personen, die Self-Service-Käufe tätigen, die Unternehmensrichtlinien erfüllen.  Als ein Beispiel für die Steuerung des Zugriffs auf Dienste: mit der [Einstellung MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0) kann die Verwendung des Produkts über den gesamten Mandanten verhindert werden.
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Wie respektiert Microsoft die Datensteuerung und Compliance, indem Self-Service-Käufe aktiviert werden?
 
-Administratoren behalten die Kontrolle darüber, welche Dienste und Produkte in Ihrem Mandanten basierend auf Ihren Anforderungen an die Datensteuerung und Compliance aktiviert werden. Darüber hinaus gelten alle Datenverwaltungsdienste und Zugriffsrichtlinien, die Ihre Organisation aktiviert hat, auch weiterhin für Self-Service-Dienste, die für aktivierte Dienste erworben werden.
+Administratoren behalten die Kontrolle darüber, welche Dienste und Produkte in Ihrem Mandanten basierend auf Ihren Anforderungen an die Datensteuerung und Compliance aktiviert werden. Darüber hinaus gelten alle Datenverwaltungsdienste und Zugriffsrichtlinien, die Ihre Organisation aktiviert hat, auf Self-Service-Dienste, die für aktivierte Dienste erworben werden.
 
 ### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>Wem gehören die Produktdaten, die aus Self-Service-Käufen erstellt wurden?
 

@@ -11,16 +11,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die mit der Nachrichtenzustellung in Office 365 (auch als Nachrichtenfluss-Intelligence bezeichnet) verbunden sind.
-ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
+ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441542"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37886858"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligente Nachrichtenübermittlung in Office 365
 
-Normalerweise verwenden Sie einen Connector, um e-Mail-Nachrichten von Ihrer Office 365 Organisation an Ihre lokale e-Mail-Umgebung weiterzuleiten. Sie können auch einen Konnektor verwenden, um Nachrichten von Office 365 zu einer Partnerorganisation weiterzuleiten. Wenn Office 365 diese Nachrichten nicht über den Konnektor senden kann, werden sie in die Office 365-Warteschlange gestellt. Office 365 versucht 48 Stunden, die Nachrichten zu senden. Nach 48 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht zurückgegeben (auch bekannt als NDR oder Unzustellbarkeitsnachricht).
+Normalerweise verwenden Sie einen Connector, um e-Mail-Nachrichten von Ihrer Office 365 Organisation an Ihre lokale e-Mail-Umgebung weiterzuleiten. Sie können auch einen Konnektor verwenden, um Nachrichten von Office 365 zu einer Partnerorganisation weiterzuleiten. Wenn Office 365 diese Nachrichten nicht über den Konnektor senden kann, werden sie in die Office 365-Warteschlange gestellt. Office 365 weiterhin die Zustellung für jede Nachricht für 24 Stunden wiederholen. Nach 24 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) zurückgegeben.
 
 Office 365 generiert einen Fehler, wenn eine Nachricht nicht mithilfe eines Konnektors gesendet werden kann. In diesem Thema werden die am häufigsten auftretenden Fehler und die dazugehörigen Lösungen beschrieben. Gemeinsam werden Warteschlangen-und Benachrichtigungsfehler für unzustellbare Nachrichten, die über Connectors gesendet werden, als _Nachrichtenfluss-Intelligence_bezeichnet.
 
@@ -42,7 +42,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 versucht haben, eine Verbi
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Fehlercode: 450 4.4.315 Timeout bei der Verbindung
 
-Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Beispiel:
+Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
 
 - Der lokale e-Mail-Server ist nicht verfügbar.
 
@@ -82,7 +82,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Fehlercode: 450 4.4.317 Fehler beim Herstellen der Verbindung mit Remote-Server
 
-Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Beispiel:
+Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
 
 - Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, der angibt, dass der Server die Kommunikation mit Office 365 nicht aufrecht erhalten kann.
 
