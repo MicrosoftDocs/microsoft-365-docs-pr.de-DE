@@ -25,7 +25,7 @@
         - name: Verwalten von Abrechnungs Profilen
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Zahlungs Dienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
-          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Abrechnungskonten
       items:
         - name: Verwalten von Abrechnungskontoinformationen
