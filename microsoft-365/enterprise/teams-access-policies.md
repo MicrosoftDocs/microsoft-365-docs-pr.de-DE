@@ -14,20 +14,20 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a4815cee2adcd9c19286b4de6b2e42b795be7ecb
-ms.sourcegitcommit: bd487d36b04b8f8caf10900e8c5237f9ccf9e072
+ms.openlocfilehash: 645abf48297ddcf186d8971a422588d46f7b2fef
+ms.sourcegitcommit: 7c977771fc295ca1e4e9b16a6d05faee8edeadad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37654075"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37913118"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinien Empfehlungen für das Sichern von teamchats,-Gruppen und-Dateien
 
 In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien implementieren, um Microsoft Teams-Chats, Gruppen und Inhalte wie Dateien und Kalender zu schützen. Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md)mit zusätzlichen Informationen, die für Teams spezifisch sind. Da Teams in unsere anderen Produkte integriert werden, finden Sie weitere Informationen unter [Richtlinien Empfehlungen zum Sichern von SharePoint-Websites und-Dateien](sharepoint-file-access-policies.md) und [Richtlinien Empfehlungen zum Sichern von e-Mails](secure-email-recommended-policies.md).
 
-Diese Empfehlungen basieren auf drei verschiedenen Ebenen der Sicherheit und des Schutzes für Teams, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: Baseline, sensibel und stark reguliert. Weitere Informationen zu diesen Sicherheitsebenen und zu den empfohlenen Clientbetriebssystemen, auf die diese Empfehlungen verweisen, finden Sie in den [Konfigurationen für Identitäts-und Geräte Zugriff](microsoft-365-policies-configurations.md).
+Diese Empfehlungen basieren auf drei verschiedenen Ebenen der Sicherheit und des Schutzes für Teams, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: Baseline, sensibel und stark reguliert. Weitere Informationen zu diesen Sicherheitsebenen und den empfohlenen Richtlinien, auf die diese Empfehlungen verweisen, finden Sie unter [Identitäts-und Gerätezugriffs Konfigurationen](microsoft-365-policies-configurations.md).
 
-In diesem Artikel werden zusätzliche spezifische Empfehlungen für die Bereitstellung von Teams aufgeführt, um bestimmte Authentifizierungs Bedingungen, einschließlich für Benutzer außerhalb Ihrer Organisation, zu behandeln, und Sie müssen diesen Leitfaden für eine vollständige Sicherheitserfahrung befolgen.
+In diesem Artikel werden zusätzliche Empfehlungen speziell für die Microsoft Teams-Bereitstellung aufgeführt, um bestimmte Authentifizierungs Bedingungen, einschließlich für Benutzer außerhalb Ihrer Organisation, abzudecken. Sie müssen diese Anleitung befolgen, um eine vollständige Sicherheitserfahrung zu erhalten.
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>Erste Schritte mit Microsoft Teams vor anderen abhängigen Diensten
 
@@ -72,23 +72,23 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die erneut besucht we
 
 ## <a name="teams-dependent-services-architecture"></a>Architektur der Teams-abhängigen Dienste
 
-Als Referenz zeigt das folgende Diagramm die Dienste, auf denen Teams basiert. Weitere Informationen und weitere Illustrationen finden Sie unter [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
+Als Referenz zeigt das folgende Diagramm die Dienste, auf denen Teams basiert. Weitere Informationen und weitere Illustrationen finden Sie unter [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
 
 ![Diagramm mit Abhängigkeiten von Teams in SharePoint Online, OneDrive für Unternehmen und Exchange.](../images/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Aktivieren von Gast-und externem Zugriff für Teams
 
-In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese beiden Typen ist Gast. Gastbenutzer sind B2B-Benutzer. Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern in der app. Zwar ist es wichtig zu verstehen, wie diese in Microsoft Teams behandelt werden, aber beide Benutzertypen sind in Azure AD B2B-Benutzer, und die empfohlenen Richtlinien für B2B-Benutzer gelten für beide.
+In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese beiden Typen ist Gast. Gastbenutzer sind B2B-Benutzer. Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern in der app. Zwar ist es wichtig zu verstehen, wie diese in Microsoft Teams behandelt werden, aber beide Benutzertypen sind in Azure AD B2B-Benutzer, und die empfohlenen Richtlinien für B2B-Benutzer gelten für beide. Empfohlene Richtlinien zum Zulassen des Gastzugriffs finden Sie unter [Richtlinien für das Zulassen von Gast-und externen B2B-Zugriffen](identity-access-policies-guest-access.md).
 
 ### <a name="guest-access-in-teams"></a>Gastzugriff in Microsoft Teams
 
-Zusätzlich zu den Richtlinien für Benutzer, die sich innerhalb Ihres Unternehmens oder Ihrer Organisation befinden, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen zu ermöglichen und mit zu interagieren. interne Personen für Dinge wie Gruppenunterhaltungen, Chats und Besprechungen. Weitere Informationen zum Gastzugriff finden Sie unter folgendem Link: [Teams Gastzugriff](https://docs.microsoft.com/en-us/microsoftteams/guest-access)
+Zusätzlich zu den Richtlinien für Benutzer, die sich innerhalb Ihres Unternehmens oder Ihrer Organisation befinden, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen zu ermöglichen und mit zu interagieren. interne Personen für Dinge wie Gruppenunterhaltungen, Chats und Besprechungen. Weitere Informationen zum Gastzugriff finden Sie unter folgendem Link: [Teams Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Externer Zugriff in Microsoft Teams
 
 Der externe Zugriff ist manchmal mit Gastzugriff verwechselt, daher ist es wichtig zu beachten, dass diese beiden nicht internen Zugriffsmechanismen tatsächlich ganz unterschiedlich sind. Während Gastzugriff auf Benutzerebene erfolgt (Sie fügen jeweils jeweils einen Benutzer hinzu), ermöglicht ein Administrator den externen Zugriff, sodass Sie alle Benutzer einer externen Domäne gleichzeitig zu Microsoft Teams hinzufügen können. Diese externen Benutzer haben jedoch weniger Zugriff und Funktionalität als eine Person, die über Gastzugriff hinzugefügt wurde. Externe Benutzer können über Microsoft Teams mit ihren internen Benutzern chatten.
 
-Weitere Informationen zum externen Zugriff und dazu, wie Sie ihn bei Bedarf implementieren können, finden Sie unter [Manage External Access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access) .
+Weitere Informationen zum externen Zugriff und dazu, wie Sie ihn bei Bedarf implementieren können, finden Sie unter [Manage External Access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access) .
 
 ## <a name="teams-policies"></a>Teams-Richtlinien
 
@@ -98,20 +98,26 @@ Außerhalb der oben aufgeführten allgemeinen Richtlinien gibt es Teams-spezifis
 
 Teams und Kanäle sind zwei häufig verwendete Elemente in Microsoft Teams, und es gibt Richtlinien, die Sie einführen können, um zu steuern, was Benutzer bei der Verwendung von Teams und Kanälen tun können und was nicht. Sie können zwar ein globales Team erstellen, aber wenn Ihre Organisation 5000 oder weniger Benutzer hat, ist es wahrscheinlich hilfreich, kleinere Teams und Kanäle für bestimmte Zwecke im Einklang mit Ihren organisatorischen Anforderungen zu haben.
 
-Es empfiehlt sich, die Standardrichtlinie zu ändern oder benutzerdefinierte Richtlinien zu erstellen, und weitere Informationen zum Verwalten von Richtlinien finden Sie unter diesem Link: [Verwalten von Teams-Richtlinien in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-policies).
+Es empfiehlt sich, die Standardrichtlinie zu ändern oder benutzerdefinierte Richtlinien zu erstellen, und weitere Informationen zum Verwalten von Richtlinien finden Sie unter diesem Link: [Verwalten von Teams-Richtlinien in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-policies).
 
 ### <a name="messaging-policies"></a>Messaging Richtlinien
 
-Messaging oder Chat können auch über die standardmäßige globale Richtlinie oder durch benutzerdefinierte Richtlinien verwaltet werden, was dazu beitragen kann, dass Ihre Benutzer miteinander auf eine Weise kommunizieren, die für Ihre Organisation geeignet ist. Diese Informationen können unter [Managing Messaging Policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/messaging-policies-in-teams)überprüft werden.
+Messaging oder Chat können auch über die standardmäßige globale Richtlinie oder durch benutzerdefinierte Richtlinien verwaltet werden, was dazu beitragen kann, dass Ihre Benutzer miteinander auf eine Weise kommunizieren, die für Ihre Organisation geeignet ist. Diese Informationen können unter [Managing Messaging Policies in Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)überprüft werden.
 
 ### <a name="meeting-policies"></a>Besprechungsrichtlinien
 
 Keine Besprechung von Teams wäre ohne Planung und Implementierung von Richtlinien in Teams-Besprechungen abgeschlossen. Besprechungen stellen eine wesentliche Komponente von Teams dar und ermöglichen es den Benutzern, viele Benutzer gleichzeitig formell zu treffen und vorzustellen, sowie Inhalte für die Besprechung freizugeben. Das Festlegen der richtigen Richtlinien für Ihre Organisation in Besprechungen ist unerlässlich.
 
-Weitere Informationen finden Sie [unter Manage Meeting Policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams) .
+Weitere Informationen finden Sie [unter Manage Meeting Policies in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams) .
 
 ### <a name="app-permission-policies"></a>Richtlinien für App-Berechtigungen
 
 Mit Microsoft Teams können Sie auch apps an verschiedenen Orten wie Kanälen oder persönlichen Chats verwenden. Wenn Sie Richtlinien dazu haben, welche apps hinzugefügt und verwendet werden können, und wo dies erforderlich ist, ist dies für die Verwaltung einer inhaltsreichen Umgebung unerlässlich, die auch sicher ist.
 
-Weitere Informationen zu app-Berechtigungsrichtlinien finden Sie [unter Verwalten von App-Berechtigungsrichtlinien in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies).
+Weitere Informationen zu app-Berechtigungsrichtlinien finden Sie [unter Verwalten von App-Berechtigungsrichtlinien in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+[Informationen zum Aktivieren des bedingten Zugriffs für Exchange Online](secure-email-recommended-policies.md)
+
+
