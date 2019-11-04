@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 Enterprise E3 migrieren.
-ms.openlocfilehash: efdf4030a2a638a3fd56d1c415fcc6e6ac261c1a
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772716"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931853"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 Enterprise E3
 
@@ -34,10 +34,10 @@ Beispielsweise ist Ihr Unternehmen gewachsen und benötigt mehr als 300 Lizenzen
 
 Oder Ihr Unternehmen benötigt Enterprise-Features wie Office 365 ProPlus, Windows 10 Enterprise E3 oder Enterprise-Client Zugriffs Lizenzen (CALs).
 
-Die Migration ist ganz einfach: Wechseln Sie einfach Lizenzen. Alle Ihre Daten und Konfigurationen in Ihrem aktuellen Abonnement werden beibehalten. Es gibt nichts, was Sie tun müssen, um die Migration vorzubereiten und danach nichts zu tun, außer nutzen Sie die neuen Features. 
+Das Upgrade ist ganz einfach: Sie können das Upgrade [über das Admin Center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)initiieren. Alle Ihre Daten und Konfigurationen in Ihrem aktuellen Abonnement werden beibehalten. Es gibt nichts, was Sie tun müssen, um die Migration vorzubereiten und danach nichts zu tun, außer nutzen Sie die neuen Features. 
 
 >[!Note]
->Sie können auch ein Microsoft 365 Business-Abonnement für bis zu 300-Sitze verwenden und ein Microsoft 365 Enterprise E3-Abonnement für mehr als 300 Sitze erhalten. Office 365 ATP ist jedoch nicht in Microsoft 365 Enterprise E3 enthalten. Sie sollten weitere Office 365 ATP-Lizenzen für die Benutzer in Ihrem Microsoft 365 Enterprise E3-Abonnement hinzufügen.
+>Sie können auch ein Microsoft 365 Business-Abonnement für bis zu 300-Sitze verwenden und ein Microsoft 365 Enterprise E3-Abonnement für mehr als 300 Sitze erhalten. Office 365 ATP ist jedoch nicht in Microsoft 365 Enterprise E3 enthalten. Für fortgesetzten Bedrohungsschutz sollten Sie zusätzliche Office 365 ATP-Lizenzen hinzufügen, damit alle Benutzer im Umfang Ihrer Office 365 ATP Policies lizenziert sind.
 >
 
 ## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Unterschiede zwischen Microsoft 365 Business und Microsoft 365 Enterprise
@@ -104,7 +104,7 @@ Ihre Benutzer können jetzt unbegrenzten Speicherplatz in den Exchange Online Po
 Sie können mit der Verwendung der Cloud-App-Ermittlung, Azure AD Connect-Integrität und SSO für mehr als 10 apps beginnen.
 
 >[!Note]
->Nach der Migration zu Microsoft 365 Enterprise E3 sind Sie nicht mehr Outlook-Kunden Manager und MileIQ.
+>Benutzer, die zu Microsoft 365 Enterprise E3 migriert wurden, können Outlook-Kunden Manager und MileIQ nicht mehr verwenden.
 >
 
 <a name="threat-protection"></a>
@@ -127,7 +127,7 @@ Windows 10 Business umfasst diese Schutzfunktionen:
 Windows 10 Enterprise E3 umfasst auch die Unternehmensverwaltung der hardwarebasierten Isolierung für Microsoft Edge.
 
 >[!Note]
->Nach der Migration zu Microsoft 365 Enterprise E3 haben Sie Office 365 ATP nicht mehr. Sie können zusätzliche Office 365 ATP-Lizenzen für Ihr Microsoft 365 Enterprise E3-Abonnement erwerben und Sie Ihren Benutzerkonten zuweisen.
+>Für Benutzer, die zu Microsoft 365 Enterprise E3 migriert werden, benötigen Sie eine Office 365 ATP-Lizenz für fortgesetzten Bedrohungsschutz. Achten Sie darauf, zusätzliche Office 365 ATP-Lizenzen zu erwerben, damit alle Benutzer im Umfang Ihrer Office 365 ATP Policies lizenziert sind. 
 >
 
 ### <a name="device-management-with-intune"></a>Geräteverwaltung mit InTune

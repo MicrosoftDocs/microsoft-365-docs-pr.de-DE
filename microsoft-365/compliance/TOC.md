@@ -82,6 +82,12 @@
 #### [Legacyinformationen für die Office 365-Nachrichtenverschlüsselung](legacy-information-for-message-encryption.md)
 #### [Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [Grundlegendes zur Datenklassifizierung (Vorschau)](data-classification-overview.md)
+### [Beschriftungs-Aktivität anzeigen (Vorschau)](data-classification-activity-explorer.md)
+### [Erste Schritte mit lernbaren Klassifizierungen (Vorschau)](classifier-getting-started-with.md)
+### [Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)](classifier-using-a-ready-to-use-classifier.md)
+### [Erstellen und Trainieren einer Klassifizierung (Vorschau)](classifier-creating-a-trainable-classifier.md)
+
 # Verwalten der Informationsgovernance
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
 ### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
@@ -357,11 +363,16 @@
 
 # Verwalten von Compliancerisiken
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Compliance-Manager (Klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Compliance-Manager (Vorschau)](compliance-manager-overview.md)
-### [Neuerungen beim Compliance-Manager (Vorschau)](compliance-manager-release-notes.md)
-### [Arbeiten mit Compliance-Manager (Vorschau)](working-with-compliance-manager.md)
-### [Methodik der Compliance-Bewertung (Vorschau)](compliance-score-methodology.md)
+## Compliancebewertung und Compliance-Manager
+### [Compliancebewertung (Vorschau)](compliance-score.md)
+### [Einrichten der Compliancebewertung (Vorschau)](compliance-score-setup.md)
+### [Arbeiten mit der Compliancebewertung (Vorschau)](working-with-compliance-score.md)
+### [Berechnung der Compliancebewertung (Vorschau)](compliance-score-methodology.md)
+### [Versionshinweise zur Compliancebewertung (Vorschau)](compliance-score-release-notes.md)
+### [Compliance-Manager (Vorschau)](compliance-manager-overview.md)
+#### [Neuerungen beim Compliance-Manager (Vorschau)](compliance-manager-release-notes.md)
+#### [Arbeiten mit Compliance-Manager (Vorschau)](working-with-compliance-manager.md)
+#### [Compliance-Manager (Legacy)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [DSGVO: Anfragen von Datensubjekten (DSRs)](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
