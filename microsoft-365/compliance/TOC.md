@@ -4,6 +4,7 @@
 ## [Neuerungen im Compliance Center](whats-new.md)
 ## [Neueste Aktualisierungen für Compliance-Inhalte](recently-updated-topics-mcc.md)
 ## [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
+## [Microsoft 365-Lösungskatalog (Vorschau)](microsoft-365-solution-catalog.md)
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planen von Sicherheit und Compliance in Office 365](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## Kundenschlüssel
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
 ### [Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365](service-encryption-with-customer-key-faq.md)
-## Aufsichtskommunikation
-### [Weitere Informationen zu Aufsichtsrichtlinien](supervision-policies.md)
-### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
+## Kommunikationscompliance
+### [Informationen zur Kommunikationscompliance (Vorschau)](communication-compliance.md)
+### [Konfigurieren der Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance-configure.md)
+### [Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)](communication-compliance-investigate-remediate.md)
+### [Funktionsreferenz für Kommunikationsrichtlinien (Vorschau)](communication-compliance-feature-reference.md)
+### [Aufsichtsrichtlinien in Office 365](supervision-policies.md)
+### [Konfigurieren von Aufsichtsrichtlinien für Office 365](configure-supervision-policies.md)
 ## [Informationsbarrieren](information-barriers.md)
 ### [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
 ### [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
@@ -31,6 +36,8 @@
 ### [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md)
 ### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
+### [Verwenden von Vertraulichkeitsbezeichnungen für Teams, Gruppen und Websites](sensitivity-labels-teams-groups-sites.md)
+### [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)
 
 ## [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
@@ -89,6 +96,7 @@
 ### [Erstellen und Trainieren einer Klassifizierung (Vorschau)](classifier-creating-a-trainable-classifier.md)
 
 # Verwalten der Informationsgovernance
+## [Verwalten der Informationsgovernance](manage-information-governance.md)
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
 ### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
 ### [Verwenden des Laufwerkversands zum Importieren von PST-Dateien](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -372,7 +380,7 @@
 ### [Compliance-Manager (Vorschau)](compliance-manager-overview.md)
 #### [Neuerungen beim Compliance-Manager (Vorschau)](compliance-manager-release-notes.md)
 #### [Arbeiten mit Compliance-Manager (Vorschau)](working-with-compliance-manager.md)
-#### [Compliance-Manager (Legacy)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+#### [Compliance-Manager (Klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [DSGVO: Anfragen von Datensubjekten (DSRs)](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
@@ -394,8 +402,8 @@
 # [Aktionspläne für die Einhaltung gesetzlicher Vorschriften](compliance-solutions-overview.md)
 
 ## [ISO – Empfohlener Aktionsplan](iso-action-plan.md)
-## [NIST – Empfohlener Aktionsplan](nist-action-plan.md) 
-
+## [NIST – Empfohlener Aktionsplan](nist-action-plan.md)
+## [CCPA – Häufig gestellte Fragen](ccpa-faq.md)
 ## [DSGVO](gdpr.md)
 ### [Empfohlener Aktionsplan für DSGVO](gdpr-action-plan.md)
 
@@ -592,6 +600,7 @@
 #### [PASF (Vereinigtes Königreich)](offering-pasf-uk.md)
 
 ### Nordamerika
+#### [California Consumer Privacy Act (CCPA)](offering-ccpa.md)
 #### [Kanadische Datenschutzgesetze](offering-canadian-privacy-laws.md)
 
 ### Südamerika
