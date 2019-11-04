@@ -15,6 +15,8 @@
 ## [Konfigurationen für den Identitäts- und Gerätezugriff](../enterprise/microsoft-365-policies-configurations.md)
 ### [Erforderliche Arbeit](../enterprise/identity-access-prerequisites.md)
 ### [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../enterprise/identity-access-policies.md)
+### [Richtlinien für Gäste und externe Benutzer](../enterprise/identity-access-policies-guest-access.md)
+### [Empfohlene Zugriffsrichtlinien für Teams](../enterprise/teams-access-policies.md)
 ### [Empfohlene Exchange Online-Zugriffsrichtlinien](../enterprise/secure-email-recommended-policies.md)
 ### [Empfohlene SharePoint Online-Zugriffsrichtlinien](../enterprise/sharepoint-file-access-policies.md)
 
