@@ -9,18 +9,21 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: a936a3b24c97e9336550527750afa800345891e6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
+ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082515"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968525"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
 ## <a name="overview"></a>Übersicht
 
 Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center folgt e-Mail-Nachrichten, wenn Sie über Ihre Exchange Online Organisation Reisen. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+
+> [!NOTE]
+> Um die Nachrichtenablaufverfolgung durchführen zu können, muss der Administrator Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein.
 
 Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert die Nachrichtenablaufverfolgung, die im Exchange Admin Center (EAC) zur Verfügung stand. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen über das geschehen mit ihren Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
@@ -29,7 +32,7 @@ Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert die
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
-1. [Melden Sie sich bei Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Firmen- oder Schulkonto an.
+1. [Melden Sie sich bei Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
 2. Wählen Sie das Symbol für das App-Startfeld ![Symbol für Office 365-App-Startfeld](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) in der oberen linken Ecke und dann **Administrator** aus.
 
@@ -60,7 +63,7 @@ Die Standardwerte sind **alle Absender** und **alle Empfänger**, aber Sie könn
 - **Für diese Personen**: Klicken Sie in dieses Feld, um einen oder mehrere Empfänger in Ihrer Organisation auszuwählen.
 
 > [!NOTE]
-> Sie können auch die e-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt`*@contoso.com` ( `scot?@contoso.com`oder), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.<br/>Sie können mehrere Absender oder Empfängerlisten mit Semikolon (`;`) getrennt einfügen. Leerzeichen`\s`(), Wagenrücklauf`\r`() oder nächste Zeilen`\n`() sind zulässig.
+> Sie können auch die e-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt (beispielsweise `*@contoso.com`), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.<br/>Sie können mehrere Absender oder Empfängerlisten mit Semikolon (`;`) getrennt einfügen. Leerzeichen`\s`(), Wagenrücklauf`\r`() oder nächste Zeilen`\n`() sind zulässig.
 
 ### <a name="time-range"></a>Zeitbereich
 
@@ -347,7 +350,7 @@ Ein **custom_data** -Wert, der `S:SFA` mit beginnt, ist vom Spamfilter-Agent. Di
 |`DI=SN`|Die Nachricht wurde durch den Pool für besonders riskante Zustellungen geleitet. Weitere Informationen finden Sie unter [hochriskanter Zustellungs Pool für ausgehende Nachrichten](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Die Nachricht wurde durch den normalen Pool für ausgehende Zustellungen geleitet.|
 |`SFS=[a]|SFS=[b]`|Dies bedeutet, dass Übereinstimmungen mit den Spam-Regeln gefunden wurden.|
-|`IPV=CAL`|Die Nachricht wurde durch die Spam-Filter gelassen weil die IP-Adrese in einer IP-Zulassungsliste im Verbindungsfilter angegeben wurde.|
+|`IPV=CAL`|Die Nachricht wurde durch die Spam-Filter gelassen, weil die IP-Adrese in einer IP-Zulassungsliste im Verbindungsfilter angegeben wurde.|
 |`H=<EHLOstring>`|Die HELO-oder EHLO-Zeichenfolge des Verbindungs-e-Mail-Servers.|
 |`PTR=<ReverseDNS>`|Der PTR-Eintrag der IP-Adresse des Absenders, auch bekannt als Reverse-DNS-Adresse.|
 

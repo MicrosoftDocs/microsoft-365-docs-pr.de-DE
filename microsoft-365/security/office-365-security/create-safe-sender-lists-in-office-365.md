@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie Ihre Zulassungsliste in einer Spamfilter Richtlinie im Exchange Admin Center anpassen.
-ms.openlocfilehash: b01abc327dd19a2d3098d3c49deed1edb1c07b68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8651b09d891a57cd5239311026af701064c9a4e1
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082341"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964451"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
 
@@ -59,7 +59,7 @@ Die Aktion für die Regel muss diesem Muster entsprechen:
 
 1. Legen Sie die SCL-Bewertung (Spam Confidence Level) auf-1 (Spamfilterung umgehen) fest.
 
-2. Fügen Sie einen X-Header hinzu, um zu sagen, was die Regel bewirkt. Im folgenden Beispiel können Sie einen einfachen Header "X-ETR: Bypass Spam Filtering for authenticated Sender `contoso.com`" hinzufügen. Wenn Sie mehr als eine Domäne in dieser Regel haben, können Sie den Kopfzeilentext entsprechend ändern. **Wenn eine Nachricht die Filterung aufgrund eines ETR überspringt, stempelt Sie SFV: SKN im X-Forefront-Antispam-Report-Header** (**Wenn es sich um eine IP-Zulassungsliste handelt, stempelt es auch IPV: Cal**). Dies hilft bei der Problembehandlung.
+2. Fügen Sie einen X-Header hinzu, um zu sagen, was die Regel bewirkt. Im folgenden Beispiel können Sie einen einfachen Header "X-ETR: Bypass Spam Filtering for authenticated Sender `contoso.com`" hinzufügen. Wenn Sie mehr als eine Domäne in dieser Regel haben, können Sie den Kopfzeilentext entsprechend ändern. **Wenn eine Nachricht die Filterung aufgrund eines ETR überspringt, stempelt Sie SFV: SKN in der Kopfzeile X-Forefront-Antispam-Report** (**Wenn Sie sich in einer IP-Zulassungsliste befindet, stempelt Sie auch IPV: Cal**). Dies hilft bei der Problembehandlung.
 
 ![GUI zur Umgehung der Spamfilterung.](../media/1-AllowList-SkipFilteringFromContoso.png)
 
