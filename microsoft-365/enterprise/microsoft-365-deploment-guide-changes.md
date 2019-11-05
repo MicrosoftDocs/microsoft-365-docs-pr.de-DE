@@ -3,7 +3,7 @@ title: Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: 6c965efcbbfebe4fd80ac983674a7d183793e946
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 605805d715243c9ef00f681616976be0f4b6b705
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889934"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929278"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
 
 ## <a name="october-2019"></a>Oktober 2019
 
 ### <a name="new-content"></a>Neue Inhalte 
+
+
+- [Poster für Teams für streng regulierte Daten](secure-teams-highly-regulated-data-scenario.md#poster)
+
+  [![Poster für Teams für streng regulierte Daten](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+  Sie können dieses Poster als [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+
+- [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
+
+  [![SharePoint-Websites für streng regulierte Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+  Sie können dieses Poster als [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 - [Das Poster "Bereitstellen von Windows 10 AutoPilot"](windows10-deploy-autopilot.md) 
 
@@ -47,7 +60,7 @@ ms.locfileid: "37889934"
 
 - [Poster "Fördern von Remotemitarbeitern"](empower-people-to-work-remotely.md#poster)
 
-  [![Poster "Fördern von Remotemitarbeitern"](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+  [![Poster "Fördern von Remotemitarbeitern"](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
  
 
 ### <a name="updates-and-enhancements"></a>Updates und Verbesserungen
