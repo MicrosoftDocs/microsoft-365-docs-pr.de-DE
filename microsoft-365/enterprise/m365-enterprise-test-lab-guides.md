@@ -3,7 +3,7 @@ title: Testumgebungsanleitungen für Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/04/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 082d110ca7b25d3613ee276b30066683cd0232b5
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733421"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964425"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -32,9 +32,10 @@ Testumgebungsanleitungen ermöglichen die Erstellung repräsentativer Umgebungen
   
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
-  
+Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+
+[![Der Stapel der Testumgebungsanleitungen für Microsoft 365 Enterprise](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+
 ## <a name="base-configuration"></a>Standardkonfiguration
 
 Zuerst erstellen Sie eine Testumgebung für [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/), die Office 365 E5, Enterprise Mobility + Security (EMS) E5 und Windows 10 Enterprise umfasst. Es stehen zwei unterschiedliche Typen von Standardkonfiguration zur Auswahl:
@@ -117,6 +118,4 @@ Eine Veranschaulichung der schutzbezogenen Features und Funktionen finden Sie un
     
    Konfigurieren von Privileged Access Management für Just-in-Time-Zugriff auf privilegierte Aufgaben mit erhöhten Rechten in Ihrer Office 365-Organisation.
 
-## <a name="see-also"></a>Siehe auch
 
-[Testen von Office 365 mit TLGs zur Cloudakzeptanz](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
