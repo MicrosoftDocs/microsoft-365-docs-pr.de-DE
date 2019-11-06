@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
+ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968525"
+ms.locfileid: "37993730"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -63,7 +63,7 @@ Die Standardwerte sind **alle Absender** und **alle Empfänger**, aber Sie könn
 - **Für diese Personen**: Klicken Sie in dieses Feld, um einen oder mehrere Empfänger in Ihrer Organisation auszuwählen.
 
 > [!NOTE]
-> Sie können auch die e-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt (beispielsweise `*@contoso.com`), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.<br/>Sie können mehrere Absender oder Empfängerlisten mit Semikolon (`;`) getrennt einfügen. Leerzeichen`\s`(), Wagenrücklauf`\r`() oder nächste Zeilen`\n`() sind zulässig.
+> Sie können auch die e-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt (beispielsweise `*@contoso.com`), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.<br/>Sie können mehrere Absender oder Empfängerlisten durch Semikolons getrennt einfügen (`;`). Leerzeichen`\s`(), Carriage Returns (`\r`) oder Next Lines`\n`().
 
 ### <a name="time-range"></a>Zeitbereich
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Hier erfahren Sie, wie Sie eine APP-Verwaltungsrichtlinie erstellen, bearbeiten oder löschen und Arbeitsdateien auf Android-oder IOS-Geräten schützen.
-ms.openlocfilehash: a829cfbcb3209313a53e0a1406f5252d3d5580d8
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 914e6848ac46eb334516aadff2827da2b83a38c4
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574736"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002083"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte
 
@@ -71,7 +71,7 @@ ms.locfileid: "37574736"
     
 ## <a name="available-settings"></a>Verfügbare Einstellungen
 
-Die nachstehenden Tabellen enthalten detaillierte Informationen zu den verfügbaren Einstellungen zum Schutz von Arbeitsdateien auf Geräten und den Einstellungen zur Steuerung, wie Benutzer über ihre mobilen Geräte auf Office-Dateien zugreifen können.
+Die folgenden Tabellen enthalten ausführliche Informationen zu den verfügbaren Einstellungen zum Schutz von Arbeitsdateien auf Geräten und den Einstellungen, die Steuern, wie Benutzer auf Ihre mobilen Geräte auf Office-Dateien zugreifen.
   
  Weitere Informationen finden Sie unter [Zuordnung von Microsoft 365 Business-Schutzfunktionen zu Intune-Einstellungen](map-protection-features-to-intune-settings.md). 
   
