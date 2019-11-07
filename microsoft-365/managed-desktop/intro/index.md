@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: d3abfaa0901ff9dbc15aa6fcba3bb7a13e6afb84
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697730"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012036"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -24,7 +24,7 @@ Dieser Vorgang wird von Microsoft Managed Desktop weiter ausgeführt, indem die 
 
 <table>
 <tr><th>Freude an Endbenutzern</th><th>Empower IT</th><th>Unterstützt von Microsoft</th></tr>
-<tr><td><p>Modernes Gerät</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Integrierte Sicherheit</p><p>Anmeldung mit Gesichtserkennung</p><p>Immer auf dem neuesten Stand</p></td><td><p>Integrierte Sicherheit</p><p>Umsetzbare Einblicke</p><p>Betriebsunterstützung</p><p>Anleitungen von Microsoft-Experten</p></td><td><p>Team für Sicherheitsvorgänge</p><p>Systemüberwachung</p><p>Cloud-Sicherung für Daten</p><p>Unterstützung für 24X7-Endbenutzer</p></td></tr>
+<tr><td><p>Modernes Gerät</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Integrierte Sicherheit</p><p>Anmeldung mit Gesichtserkennung</p><p>Immer auf dem neuesten Stand</p></td><td><p>Integrierte Sicherheit</p><p>Umsetzbare Einblicke</p><p>Betriebsunterstützung</p><p>Anleitungen von Microsoft-Experten</p></td><td><p>Team für Sicherheitsvorgänge</p><p>Systemüberwachung</p><p>Cloud-Sicherung für Daten</p><p>Unterstützung für 24X7-Endbenutzer</p></td></tr>
 </table>
 
 Microsoft Managed Desktop bietet Kunden eine umfassende IT-Lösung, die Benutzer begeistert und IT-Ressourcen für wichtigere Aufgaben frei gibt. Wir haben diesen Dienst basierend auf Feedback entwickelt, das wir allgemein hören:
@@ -41,7 +41,7 @@ Microsoft Managed Desktop bietet die beste Benutzererfahrung mit der neuesten Te
 - [Beschreibung des Microsoft Managed Desktop-Diensts](../service-description/index.md)
 - [Voraussetzungen für Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
-<!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
+<!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040799"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012300"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -26,7 +26,7 @@ Status  | Erklärung
 Bereitstellen | Ihre Änderung wartet auf die Bereitstellung für diese Gruppe.
 In Arbeit | Die Änderung wird auf aktive Geräte in dieser Gruppe angewendet. 
 Abschließen | Die Änderung, die für alle aktiven Geräte in dieser Gruppe abgeschlossen wurde. 
-Failed | Die Änderung konnte auf 10 Prozent der aktiven Geräte in der Gruppe nicht ausgeführt werden, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanfrage wird automatisch mit Microsoft Managed Desktop Operations geöffnet, um die Bereitstellung zu beheben. 
+Fehlgeschlagen | Die Änderung konnte auf 10 Prozent der aktiven Geräte in der Gruppe nicht ausgeführt werden, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanfrage wird automatisch mit Microsoft Managed Desktop Operations geöffnet, um die Bereitstellung zu beheben. 
 Zurückgesetzt | Die Änderung wurde auf die letzte Änderung zurückgesetzt, die für alle Bereitstellungsgruppen erfolgreich bereitgestellt wurde.
 
 ## <a name="deploy-changes"></a>Bereitstellen von Änderungen
@@ -35,7 +35,7 @@ In diesen Anweisungen wird ein Desktop Hintergrundbild angezeigt. Nachdem Sie ei
 
 **So stellen Sie Änderungen bereit**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im Bereich **Bereitstellungsstatus** die Einstellung aus, die Sie bereitstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus.
 4. Wählen Sie **Bereitstellen** aus, um die Änderung an einer der Bereitstellungsgruppen bereitzustellen.
@@ -53,7 +53,7 @@ Nachdem Sie eine Änderung bereitgestellt haben, können Sie den **Bereitstellun
 Wir zeigen die Schritte zum Rückgängigmachen einer Änderung mithilfe des Desktop Hintergrundbilds als Beispiel. 
 
 **So stellen Sie eine Änderung wieder her**
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im Arbeitsbereich **Bereitstellungsstatus** die Einstellung aus, die Sie wiederherstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus, die wiederhergestellt werden soll.
 4. Wählen Sie unter **Notwendigkeit zum Rückgängigmachen dieser Änderung**die Option **Bereitstellung rückgängig**machen aus.
@@ -62,4 +62,4 @@ Wir zeigen die Schritte zum Rückgängigmachen einer Änderung mithilfe des Desk
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md)
-- [Referenz zu konfigurierbaren Einstellungen](config-setting-ref.md) 
+- [Referenz der konfigurierbaren Einstellungen](config-setting-ref.md) 

@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390732"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012410"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Verwalten von Branchenanwendungen in Microsoft Managed Desktop
 
@@ -25,7 +25,7 @@ Es gibt verschiedene Möglichkeiten, APP-Updates für apps zu verwalten, die Sie
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Aktualisieren von Branchenanwendungen in Microsoft Managed Desktop
 
 **So aktualisieren Sie Ihre Branchen-apps im Microsoft Managed Desktop Portal**
-1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mmdportal)an.
+1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mmdportal)an.
 2. Wählen Sie unter **Inventar**die Option **apps**aus.  
 3. Wählen Sie die APP aus, die Sie aktualisieren möchten, und klicken Sie dann auf **Bearbeiten**.
 4. Wählen Sie unter **Verwalten**die Option **Eigenschaften**aus. 
@@ -58,7 +58,7 @@ Wenn beim Bereitstelleneiner neuen Version einer APP ein Fehler festgestellt wur
 
 **So setzen Sie eine Branchen-App auf eine frühere Version zurück**
 
-1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mmdportal)an.
+1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mmdportal)an.
 2. Wählen Sie unter **Inventar**die Option **apps**aus.  
 3. Wählen Sie die APP aus, die Sie für ein Rollback ausführen möchten, und wählen Sie dann **Bearbeiten**aus.
 4. Wählen Sie unter **Verwalten**die Option **Eigenschaften**aus. 

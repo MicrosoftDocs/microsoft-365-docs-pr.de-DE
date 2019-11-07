@@ -1,20 +1,19 @@
 ---
-title: Installieren des InTune-Unternehmensportals von Microsoft verwaltete Desktop Geräte
+title: Installieren des InTune-Unternehmensportals auf Geräten
 description: Informationen zum Installieren der Unternehmensportal-App auf Microsoft Managed Desktop-Geräten
 keywords: Microsoft Managed Desktop, Microsoft 365, Unternehmens Portal
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a9ce2b2455b6036170636ac564c450676473ac48
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 121771dd2474d58e7bd6a0d56218563c8785d4bf
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390702"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011956"
 ---
-# <a name="install-intune-company-portal-on-microsoft-managed-desktop-devices"></a>Installieren des InTune-Unternehmensportals auf Microsoft Managed Desktop-Geräten
+# <a name="install-intune-company-portal-on-on-devices"></a>Installieren des InTune-Unternehmensportals auf auf Geräten
 
 Microsoft Managed Desktop erfordert, dass IT-Administratoren das InTune-Unternehmens Portal für Ihre Benutzer mit Microsoft Managed Desktop-Geräten installieren. Hier finden Sie einige Vorteile für Ihre Organisation:
 - Benutzer verfügen über eine Stelle zum Durchsuchen und Installieren verfügbarer Anwendungen. 
@@ -44,3 +43,14 @@ Weitere Informationen zum Senden von Supportanforderungen mit Microsoft Managed 
 Als IT-Administrator für Ihre Organisation ist es wichtig, dass Ihre Benutzer wissen, wie Sie das Unternehmens Portal in Ihrer Organisation verwenden können. Microsoft Managed Desktop empfiehlt Folgendes:
 - Schritte zum Installieren von Anwendungen aus dem Unternehmens Portal. Weitere Informationen finden Sie unter [Installieren und Freigeben von apps auf Ihrem Gerät](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
 - Vorgehensweise Senden von Anforderungen an IT-Administratoren für Anwendungen, die derzeit nicht verfügbar sind.
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
+
+1. [Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal](add-admin-contacts.md)
+2. [Anpassen des bedingten Zugriffs](conditional-access.md)
+3. [Zuweisen von Lizenzen](assign-licenses.md)
+4. Bereitstellen des InTune-Unternehmensportals (in diesem Thema)
+5. [Aktivieren des Enterprise-Status-Roaming](enterprise-state-roaming.md)
+6. [Einrichten von Geräten](set-up-devices.md)
+7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
+8. [Bereitstellen von Apps](deploy-apps.md)

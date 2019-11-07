@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390412"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012260"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -21,7 +21,7 @@ In diesem Thema werden die Einstellungskategorien aufgelistet, die Kunden mit Mi
 ## <a name="desktop-background-picture"></a>Desktop Hintergrundbild
 Sie können das Desktophintergrundbild für Microsoft Managed Desktop-Geräte in Ihrer Organisation anpassen. Sie können dies verwenden, um eine Unternehmensmarke oder ein Marketingmaterial anzuwenden. 
 
-### <a name="requirements"></a>Voraussetzungen
+### <a name="requirements"></a>Anforderungen
 
 Diese Anforderungen müssen für ein Desktophintergrundbild erfüllt sein:
 - Bilddateiformat –. jpg, JPEG oder. png
@@ -31,7 +31,7 @@ Diese Anforderungen müssen für ein Desktophintergrundbild erfüllt sein:
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Anpassen und Bereitstellen von Desktophintergrundbildern
 
 **So fügen Sie ein benutzerdefiniertes Desktophintergrundbild hinzu**
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Desktop Hintergrundbild**aus. 
 4. Geben Sie den Speicherort des Bilds ein, das Sie verwenden möchten. 
@@ -40,14 +40,14 @@ Diese Anforderungen müssen für ein Desktophintergrundbild erfüllt sein:
 ## <a name="browser-start-pages"></a>Browser Startseiten
 Browser Startseiten werden auf einzelnen Registerkarten geöffnet, wenn Ihre Benutzer Microsoft Edge starten. Wenn Sie Ihren Benutzern das Öffnen einer Gruppe von Websites erleichtern möchten, die Sie häufig verwenden, fügen Sie für jede Website eine Browser Startseite hinzu. 
 
-### <a name="requirements"></a>Voraussetzungen
+### <a name="requirements"></a>Anforderungen
 
 Sie müssen den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Intranet-oder Internet Websites für Ihre Browser Startseiten angeben. Wenn interne Websites konfiguriert sind, können Sie den Benutzern mitteilen, dass der Zugriff auf diese Websites nur zulässig ist, wenn Sie im Büro mit dem internen Netzwerk verbunden sind oder wenn Sie mit einer VPN-Verbindung verbunden sind. 
 
 ### <a name="customize-and-deploy-browser-start-pages"></a>Anpassen und Bereitstellen von Browser Startseiten
 
 **So fügen Sie eine Browser Startseite hinzu**
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Browser Startseiten**aus. 
 4. Wählen Sie **Startseite hinzufügen**aus.
@@ -61,7 +61,7 @@ Wenn Sie bestimmte Websites und apps haben, von denen Sie wissen, dass Sie Kompa
 
 Sie können einen https://-Speicherort oder den Speicherort für eine interne Freigabe angeben, in der Sie die Website Liste für den Unternehmens Modus gehostet haben. 
 
-### <a name="requirements"></a>Voraussetzungen
+### <a name="requirements"></a>Anforderungen
 
 Diese Anforderungen müssen für die Website Listendatei im Enterprise-Modus erfüllt sein:
 - Dateiformat – XML-Datei, die [Dateianforderungen](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file) erfüllt
@@ -78,7 +78,7 @@ Diese bewährten Methoden werden angeboten, um Kunden bei der Entscheidungsfindu
 
 **So fügen Sie einen Listenspeicherort für den Unternehmensstandort Modus hinzu**
 
-1.  Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1.  Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2.  Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3.  Wählen Sie im **konfigurierbaren** Arbeitsbereich den **Unternehmens Modus Site List Location**aus. 
 4.  Geben Sie den HTTPS-Speicherort für Ihre Website Liste ein. 
@@ -92,7 +92,7 @@ Vertrauenswürdige Websites ermöglichen das Anpassen von Sicherheitszonen oder 
 - Zone 3 – Internet Zone
 - Zone 4 – Zone für eingeschränkte Websites
 
-### <a name="requirements"></a>Voraussetzungen
+### <a name="requirements"></a>Anforderungen
 
 Geben Sie den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Intranet-oder Internet Websites für jede vertrauenswürdige Website an. 
 
@@ -100,7 +100,7 @@ Geben Sie den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQD
 
 **So fügen Sie eine vertrauenswürdige Website hinzu**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **vertrauenswürdige Websites**aus, und wählen Sie **vertrauenswürdige Website hinzufügen**aus. 
 4. Geben Sie auf **vertrauenswürdige Website hinzufügen**die URL ein, wählen Sie eine Sicherheitszone aus, und wählen Sie dann **vertrauenswürdige Website hinzufügen**aus. 
@@ -109,7 +109,7 @@ Geben Sie den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQD
 
 **So entfernen Sie eine vertrauenswürdige Website**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **vertrauenswürdige Websites**aus. 
 4. Wählen Sie die Website aus, die Sie löschen möchten, und wählen Sie dann **Löschen**aus. 
@@ -124,7 +124,7 @@ Die Proxy Site Ausnahmen, die Sie im Microsoft Managed Desktop Portal hinzufüge
 > [!NOTE]
 > Das Aktualisieren der standardmäßigen Proxyausnahmeliste wird immer Vorrang vor Kundenbereitstellungen gegeben. Dies bedeutet, dass die Bereitstellung in einer Bereitstellung angehalten wird, wenn es eine Bereitstellung für die standardmäßige Proxyausnahmeliste gibt.  
 
-### <a name="requirements"></a>Voraussetzungen
+### <a name="requirements"></a>Anforderungen
 
 Diese Anforderungen müssen für Proxy Server-und Proxy Standort Ausnahmen erfüllt sein:
 - Es muss sich um eine gültige Serveradresse und Portnummer handeln.
@@ -134,7 +134,7 @@ Diese Anforderungen müssen für Proxy Server-und Proxy Standort Ausnahmen erfü
 
 **So fügen Sie eine einzelne Proxy Standort Ausnahme hinzu**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)
+1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Proxy**aus. 
 4. Geben Sie die **Adresse** und **Port Nummer** für Ihren Proxy Server ein, und wählen Sie dann **Proxyausnahme hinzufügen**aus. 
@@ -144,4 +144,4 @@ Diese Anforderungen müssen für Proxy Server-und Proxy Standort Ausnahmen erfü
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md) 
-- [Bereitstellen von konfigurierbaren Einstellungen](config-setting-deploy.md)
+- [Bereitstellen konfigurierbarer Einstellungen](config-setting-deploy.md)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37159683"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011996"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administrator Unterstützung für Microsoft Managed Desktop
 
@@ -21,7 +21,7 @@ Sie können Support Tickets oder Feedback Anforderungen über das Microsoft Mana
 >Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Verpackungen, Geräte, Sicherheit und andere einrichten. Sie können keine Supportanfragen in einen dieser Bereiche übermitteln, wenn kein Administratorkontakt konfiguriert ist.
 
 **So übermitteln Sie eine Supportanfrage**
-1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](http://aka.ms/mwaasportal)an. 
+1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)an. 
 2. Wählen Sie **unter Supportanfragen**die Option **+ Neues Support Ticket**aus.
 3. Wählen Sie den **Support Anforderungstyp** aus, der der benötigten Hilfe entspricht. In der folgenden Tabelle werden die Optionen erläutert. 
 4. Wählen Sie den **schwere**Grad aus. Weitere Informationen finden Sie unter [Support Request Severity Definitions](#sev). 

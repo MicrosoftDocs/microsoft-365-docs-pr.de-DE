@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982456"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020368"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop-App-Anforderungen
 
@@ -38,7 +38,7 @@ Bestimmte Anwendungstypen sind auf Microsoft Managed Desktop-Geräten nicht zul�
 
 ## <a name="restricted-app-behaviors"></a>Eingeschränktes App-Verhalten
 
-Bestimmte App-Verhaltensweisen können sich negativ auf die Benutzerfreundlichkeit auswirken oder ein Sicherheitsrisiko für von Microsoft verwaltete Desktop Geräte darstellen. Apps mit den folgenden Verhaltensweisen dürfen nicht ohne spezielle Ausnahme von Microsoft in der Microsoft Managed Desktop-Umgebung ausgeführt werden.
+Bestimmte App-Verhaltensweisen können sich negativ auf die Benutzerfreundlichkeit auswirken oder ein Sicherheitsrisiko für von Microsoft verwaltete Desktop Geräte darstellen. Apps mit den folgenden Verhaltensweisen dürfen nicht in der Microsoft Managed Desktop-Umgebung ohne einen bestimmten von Microsoft ausgeführt werden.
 
 Benutzererfahrung:
 - Installieren von Hintergrunddiensten
@@ -58,5 +58,5 @@ Sicherheit:
 
 Microsoft Managed Desktop unterstützt nur Gerätetreiber, die über Windows Update oder einen installierten Posteingang mit dem von Microsoft verwalteten Gerät zur Verfügung stehen. 
 
-Wenn für eine Anwendung eine bestimmte Treiber Ausführung erforderlich ist, wird Sie als eingeschränkte Anwendung betrachtet und erfordert eine Ausnahme für die Bereitstellung auf dem Microsoft Managed Desktop. 
+Wenn für eine Anwendung eine bestimmte Treiber Ausführung erforderlich ist, wird Sie als eingeschränkte Anwendung betrachtet und erfordert eine Bereitstellung für Microsoft Managed Desktop. 
 
