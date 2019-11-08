@@ -3,6 +3,7 @@
 ## Erste Schritte
 ### [Microsoft 365 Security für geschäftliche Entscheidungsträger](Microsoft-365-security-for-bdm.md)
 ### [Sicherheitsbewertung](./mtp/microsoft-secure-score.md)
+### [Sicherheitsbewertung (Vorschau)](./mtp/microsoft-secure-score-preview.md)
 ### [Chief Informationen Security Officer (CISO) – Workshop-Schulung](./office-365-security/ciso-workshop.md)
 #### [Modul 1: Microsoft Internetsicherheit-Briefing](./office-365-security/ciso-workshop-module-1.md)
 #### [Modul 2: Sicherheitsverwaltung](./office-365-security/ciso-workshop-module-2.md)
