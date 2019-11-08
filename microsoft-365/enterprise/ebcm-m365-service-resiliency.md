@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Beschreibung des Resilienzthemas
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122285"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031050"
 ---
 # <a name="built-in-resiliency"></a>Integrierte Resilienz
 
@@ -26,7 +26,7 @@ Als Ihr Cloud-Zusammenarbeitsanbieter erkennt Microsoft die Notwendigkeit, sich 
 
 **"Ausfallzeit von SharePoint Online**: Jeder Zeitraum, in dem Benutzer keine Teile einer SharePoint Online-Websitesammlung lesen oder schreiben können, für die Sie über die entsprechenden Berechtigungen verfügen."
 
-Sie finden die Definitionen für Ausfallzeiten in den [Vereinbarungen zum Servicelevel](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Sie finden die Definitionen für Ausfallzeiten in den [Vereinbarungen zum Servicelevel](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 Um die Ausfallzeiten – geplant oder unerwartet – zu minimieren, sind Microsoft 365-Dienste so konzipiert und ausgeführt, dass Sie hochgradig verfügbar und Ausfall resistent sind, indem Sie sich auf vier Bereiche konzentrieren:
 

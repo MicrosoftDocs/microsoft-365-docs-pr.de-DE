@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfunktionen für Microsoft 365 Enterprise verwendet
-ms.openlocfilehash: 394120f811057258afe1bd29e60733e42bf5191a
-ms.sourcegitcommit: 4acd6fc368f547eb7a25d04799cb1a77003b143d
+ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37372716"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031100"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung der Microsoft 365 Enterprise-Sicherheit für die Contoso Corporation
 
@@ -111,7 +111,7 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 - Verhindern von Datenlecks mit Office 365 Data Loss Prevention (DLP)
 
-  Contoso hat [DLP](https://docs.microsoft.com/de-DE/microsoft-365/compliance/data-loss-prevention-policies)-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) für Exchange Online, SharePoint und OneDrive for Business konfiguriert, um zu verhindern, dass Benutzer versehentlich vertrauliche Daten weitergeben.
+  Contoso hat [DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) für Exchange Online, SharePoint und OneDrive for Business konfiguriert, um zu verhindern, dass Benutzer versehentlich vertrauliche Daten weitergeben.
 
 - Verhindern von Geräte-Datenlecks mit Windows Information Protection
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über wichtige Überlegungen zu Windows- und Office-Sicherheit und -Compliance.
-ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981756"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031690"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Schritt 5: Überlegungen zu Sicherheit und Compliance
 
@@ -51,11 +51,11 @@ Einige Lösungen zur Datenträgerverschlüsselung ermöglichen Ihnen, Upgrades m
 
 Eine Möglichkeit zur Lösung dieser Probleme ist die Verwendung von BitLocker in Windows 10, das in Windows 10 Pro und höhere Editionen enthalten ist. BitLocker ermöglicht Ihnen, den Schutz für Betriebssystemupgrades und Feature-Updates als Teil des Prozesses auszusetzen.
 
-[Grundlegende BitLocker-Bereitstellung](https://docs.microsoft.com/de-DE/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
+[Grundlegende BitLocker-Bereitstellung](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
 
 ### <a name="antivirus-and-antimalware-application-compatibility"></a>Kompatibilität mit Antiviren- und Antischadsoftware
 
-Als zweiten Punkt möchten wir anführen, dass zwar mehr als [99 % der Windows-Anwendungen zwischen Windows 7 und Windows 10 kompatibel sind](https://www.microsoft.com/de-DE/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), wobei Antivirensoftware-Apps (AV) oder VPN-Clients (Virtual Privat Network) häufig eine Ausnahme darstellen. Diese Anwendungen implementieren oft nicht standardmäßige Entwicklungsmethoden und APIs und verwenden häufig nicht dokumentierte Vorgehensweisen zum Schutz Ihres Systems oder zum Herstellen der Verbindung mit Netzwerkressourcen.
+Als zweiten Punkt möchten wir anführen, dass zwar mehr als [99 % der Windows-Anwendungen zwischen Windows 7 und Windows 10 kompatibel sind](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), wobei Antivirensoftware-Apps (AV) oder VPN-Clients (Virtual Privat Network) häufig eine Ausnahme darstellen. Diese Anwendungen implementieren oft nicht standardmäßige Entwicklungsmethoden und APIs und verwenden häufig nicht dokumentierte Vorgehensweisen zum Schutz Ihres Systems oder zum Herstellen der Verbindung mit Netzwerkressourcen.
 
 Daher können diese Apps naturgemäß empfindlich sein, was Änderungen beim Übergang zu einer neuen Version von Windows betrifft. Wenn Ihre AV- oder VPN-Software in Windows 10 oder nach dem Upgrade nicht funktioniert, können Sie das Problem in der Regel dadurch beheben, dass Sie die App durch ein App ersetzen, die für Windows 10 getestet wurde und unterstützt wird.
 
@@ -77,19 +77,19 @@ Wir beginnen bei der Identitäts- und Zugriffsverwaltung. Azure Active Directory
 
 Auf Geräteebene können biometrische Merkmale eindeutige IDs für den einfachen und sicheren Zugriff auf Ihre Geräte und Apps bereitstellen und somit die Verwendung von Kennwörtern überflüssig machen. Windows Hello bietet eine gerätebasierte mehrstufige Authentifizierung. Es nutzt das Gerät selbst, Ihre PIN oder eindeutige biometrische Kennzeichen wie Ihr Gesicht oder Ihren Fingerabdruck, was Sie über eine Richtlinie erzwingen können.
 
-[Grundlagen der Identitätsverwaltung in Azure](https://docs.microsoft.com/de-DE/azure/active-directory/fundamentals/identity-fundamentals)
+[Grundlagen der Identitätsverwaltung in Azure](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-fundamentals)
 
-[Grundlegendes zu Azure-Identitätslösungen](https://docs.microsoft.com/de-DE/azure/active-directory/fundamentals/understand-azure-identity-solutions)
+[Grundlegendes zu Azure-Identitätslösungen](https://docs.microsoft.com/azure/active-directory/fundamentals/understand-azure-identity-solutions)
 
-[Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/conditional-access/overview)
+[Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
 
-[Windows Hello for Business](https://docs.microsoft.com/de-DE/windows/security/identity-protection/hello-for-business/hello-identity-verification)
+[Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)
 
 ### <a name="virtualization-based-security"></a>Auf Virtualisierung basierende Sicherheit
 
 Über die Identität hinausgehend können Sie jetzt auch einen kontinuierlichen Schutz vor bekannten und unbekannten Bedrohungen aktivieren. Hierzu verwendet Windows 10 im Kern auf Virtualisierung basierende Sicherheit, um die Integrität beim Booten und Codeintegrität mit Secure Boot zu gewährleisten. Darüber hinaus können wir den Identitätsdiebstahl mit Credential Guard verhindern, indem geheime Schlüssel von Benutzern isoliert von Windows gespeichert werden. Außerdem kann Application Guard browserbasierte Bedrohungen isolierten und Maßnahmen dagegen ergreifen, indem der Browser in einem isolierten Container ausgeführt wird. Alle diese Technologien verwenden die auf Virtualisierung basierende Sicherheit in Windows 10 und sind grundlegende Änderungen, die nicht auf einem Windows 7-System auf Hardware-Ebene repliziert werden können. Beachten Sie, dass sie darüber hinaus UEFI, 64-Bit-Windows und die Unterstützung der Virtualisierungserweiterung mit SLAT erfordern.
 
-[Mehr zur auf Virtualisierung basierenden Sicherheit](https://docs.microsoft.com/de-DE/windows-hardware/design/device-experiences/oem-vbs)
+[Mehr zur auf Virtualisierung basierenden Sicherheit](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs)
 
 ### <a name="security-enhancements-from-cloud-services"></a>Sicherheitsverbesserungen durch Clouddienste
 
@@ -97,27 +97,27 @@ Clouddienste bieten eine zusätzliche Stufe für optionalen Schutz, um die Siche
 
 Zusammen mit Microsoft Intelligent Security Graph haben Sie schnelleren Zugriff auf Informationen zu und Schutzfunktionen gegen aufkommende Bedrohungen. Hier sind einige Beispiele dafür aufgeführt, welche Funktionen Sie nutzen können, angefangen bei Office.
 
-**[Verhinderung von Datenverlust (Data Loss Prevention, DLP)](https://docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies)** ist in Office 365 ProPlus integriert und informiert Benutzer von Sicherheitsrichtlinien, wenn hochgradig riskante Inhalte wie Kreditkarten- oder Ausweisnummern erkannt werden. Die Richtlinien können nach der Benachrichtigung der Benutzer darüber informieren oder das Senden blockieren.
+**[Verhinderung von Datenverlust (Data Loss Prevention, DLP)](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** ist in Office 365 ProPlus integriert und informiert Benutzer von Sicherheitsrichtlinien, wenn hochgradig riskante Inhalte wie Kreditkarten- oder Ausweisnummern erkannt werden. Die Richtlinien können nach der Benachrichtigung der Benutzer darüber informieren oder das Senden blockieren.
 
-**[Azure Information Protection](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/client-admin-guide) ** ist ein Dienst, der Office ergänzt und mit dem Benutzer auf einfache Weise ihre Office-Dateien klassifizieren und bezeichnen können. Er kann automatische Aktionen für Dateien mit Bezeichnungen ausführen, z. B. Verschlüsselung oder Sperren der Weitergabe.
+**[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide) ** ist ein Dienst, der Office ergänzt und mit dem Benutzer auf einfache Weise ihre Office-Dateien klassifizieren und bezeichnen können. Er kann automatische Aktionen für Dateien mit Bezeichnungen ausführen, z. B. Verschlüsselung oder Sperren der Weitergabe.
 
-Wir haben darüber hinaus den Schutz durch **[sichere Links](https://docs.microsoft.com/de-DE/office365/securitycompliance/atp-safe-links)** in Office-Apps eingeführt, um Sie bekannten Websites mit böswilligen Inhalten anhand einer dynamischen Liste zu schützen.
+Wir haben darüber hinaus den Schutz durch **[sichere Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)** in Office-Apps eingeführt, um Sie bekannten Websites mit böswilligen Inhalten anhand einer dynamischen Liste zu schützen.
 
-Zusätzlich dazu gehen **[sichere Anlagen](https://docs.microsoft.com/de-DE/office365/securitycompliance/atp-safe-attachments)** in Outlook und als Teil von Exchange Online geht weit über das Filtern von E-Mail-Nachrichten zum Prüfen von Anhängen hinaus. Wenn ein Anhang mit einem hohen Risiko erkannt wird, informiert Sichere Anlagen den Benutzer über bekannte böswillige Anhänge und entfernt sie aus der E-Mail.
+Zusätzlich dazu gehen **[sichere Anlagen](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments)** in Outlook und als Teil von Exchange Online geht weit über das Filtern von E-Mail-Nachrichten zum Prüfen von Anhängen hinaus. Wenn ein Anhang mit einem hohen Risiko erkannt wird, informiert Sichere Anlagen den Benutzer über bekannte böswillige Anhänge und entfernt sie aus der E-Mail.
 
-**[Office 365-Nachrichtenverschlüsselung](https://docs.microsoft.com/de-DE/office365/securitycompliance/encryption) ** (OME) kann ebenfalls verwendet werden, um die Sicherheit von E-Mails und gesendeten Anhängen zu gewährleisten, wobei sichergestellt wird, dass nur die beabsichtigten Empfänger den E-Mail-Inhalt anzeigen können. OME arbeitet nahtlos mit Google-, Yahoo- und Microsoft-Endbenutzerkonto-Authentifizierung zusammen, und die Einmalkennungen ermöglichen Benutzern anderer E-Mail-Dienste, E-Mails ebenfalls sicher zu empfangen.
+**[Office 365-Nachrichtenverschlüsselung](https://docs.microsoft.com/office365/securitycompliance/encryption) ** (OME) kann ebenfalls verwendet werden, um die Sicherheit von E-Mails und gesendeten Anhängen zu gewährleisten, wobei sichergestellt wird, dass nur die beabsichtigten Empfänger den E-Mail-Inhalt anzeigen können. OME arbeitet nahtlos mit Google-, Yahoo- und Microsoft-Endbenutzerkonto-Authentifizierung zusammen, und die Einmalkennungen ermöglichen Benutzern anderer E-Mail-Dienste, E-Mails ebenfalls sicher zu empfangen.
 
 #### <a name="additional-windows-10-protections"></a>Zusätzliche Schutzfunktionen in Windows 10
 
-**[Windows Defender Application Control](https://docs.microsoft.com/de-DE/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** in Windows 10 verwendet eine genehmigte Liste mit zugelassenen und nicht zugelassenen Anwendungen, die Microsoft auf ihre Sicherheit überprüft hat und die von Endpunkt-Sicherheitsrichtlinien mit Microsoft Intune verwaltet werden.
+**[Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** in Windows 10 verwendet eine genehmigte Liste mit zugelassenen und nicht zugelassenen Anwendungen, die Microsoft auf ihre Sicherheit überprüft hat und die von Endpunkt-Sicherheitsrichtlinien mit Microsoft Intune verwaltet werden.
 
-**[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/de-DE/windows/security/threat-protection/windows-defender-atp/overview)** ist eine einheitliche Plattform für präventiven Schutz, Erkennung nach einem Angriff, automatisierte Untersuchung und Reaktion. Es schützt Endgeräte vor Cyber-Bedrohungen, erkennt fortgeschrittene Angriffe und Datenschutzverletzungen, automatisiert Sicherheitsvorfälle und verbessert die Sicherheitslage.
+**[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview)** ist eine einheitliche Plattform für präventiven Schutz, Erkennung nach einem Angriff, automatisierte Untersuchung und Reaktion. Es schützt Endgeräte vor Cyber-Bedrohungen, erkennt fortgeschrittene Angriffe und Datenschutzverletzungen, automatisiert Sicherheitsvorfälle und verbessert die Sicherheitslage.
 
-**[Exploit Guard](https://docs.microsoft.com/de-DE/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** verringert die Angriffsfläche bei ausgeführten Anwendungen, indem er verhindert, dass Schadsoftware in Windows eindringt, und indem er nicht vertrauenswürdigen Prozessen den Zugriff auf geschützte Ordner verweigert.
+**[Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** verringert die Angriffsfläche bei ausgeführten Anwendungen, indem er verhindert, dass Schadsoftware in Windows eindringt, und indem er nicht vertrauenswürdigen Prozessen den Zugriff auf geschützte Ordner verweigert.
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/de-DE/intune/introduction-intune) fungiert als ein cloudbasierter Verwaltungsdienst für Szenarien mit mobilen Geräten, einschließlich iOS-, Android- und Windows-Geräten. Es kann nun für die gemeinsame Verwaltung konfiguriert werden, um Steuerungen für bestimmte Workloads zu ergänzen und zu erweitern, die von System Center Configuration Manager verwaltet werden. Ein Vorteil hierbei ist, dass für Geräte, die auf geschützte Ressourcen zugreifen, durchgesetzt werden kann, dass sie sich bei der Geräteverwaltung registrieren, auch wenn es sich um nicht verwaltete Geräte oder Geräte, die nicht der Domäne oder Azure AD beigetreten sind, handelt. Sie können auch die Vorteile einer granularen Konfiguration und der Erzwingung von Compliance-Richtlinien auf Ebene des Betriebssystems und von Anwendungen nutzen. Anwendungsrichtlinien und Einstellungen können zentral konfiguriert und für Office 365 ProPlus und Store-Apps in Windows 10 mit Microsoft Intune durchgesetzt werden.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fungiert als ein cloudbasierter Verwaltungsdienst für Szenarien mit mobilen Geräten, einschließlich iOS-, Android- und Windows-Geräten. Es kann nun für die gemeinsame Verwaltung konfiguriert werden, um Steuerungen für bestimmte Workloads zu ergänzen und zu erweitern, die von System Center Configuration Manager verwaltet werden. Ein Vorteil hierbei ist, dass für Geräte, die auf geschützte Ressourcen zugreifen, durchgesetzt werden kann, dass sie sich bei der Geräteverwaltung registrieren, auch wenn es sich um nicht verwaltete Geräte oder Geräte, die nicht der Domäne oder Azure AD beigetreten sind, handelt. Sie können auch die Vorteile einer granularen Konfiguration und der Erzwingung von Compliance-Richtlinien auf Ebene des Betriebssystems und von Anwendungen nutzen. Anwendungsrichtlinien und Einstellungen können zentral konfiguriert und für Office 365 ProPlus und Store-Apps in Windows 10 mit Microsoft Intune durchgesetzt werden.
 
 ## <a name="next-step"></a>Nächster Schritt
 

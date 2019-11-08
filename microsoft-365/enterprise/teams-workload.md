@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier finden Sie Informationen zu Microsoft Teams und dessen Einführung in Ihrem Unternehmen.
-ms.openlocfilehash: e6a4ccc1b7ec5989707e2195b66fa1cf987cd091
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889920"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033600"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 
@@ -63,8 +63,8 @@ Weitere Informationen finden Sie unter [Erste Schritte mit dem Upgrade von Micro
 
 Im folgenden Artikel erhalten Sie einen Einblick in die Arbeit von Microsoft, und erfahren Sie, wie wir Teams für die Zusammenarbeit bereitgestellt haben und verwenden:
 
-- [Die Strategie für die Einführung von Microsoft Teams bereitet Mitarbeiter auf eine neue Unternehmenskultur vor](https://www.microsoft.com/de-DE/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [Microsoft Teams-Räume schafft eine global skalierbare moderne Besprechungsumgebung](https://www.microsoft.com/de-DE/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [Die Strategie für die Einführung von Microsoft Teams bereitet Mitarbeiter auf eine neue Unternehmenskultur vor](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [Microsoft Teams-Räume schafft eine global skalierbare moderne Besprechungsumgebung](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

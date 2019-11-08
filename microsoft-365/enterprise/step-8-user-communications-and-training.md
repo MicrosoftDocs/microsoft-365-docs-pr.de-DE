@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand von Benutzerkommunikation und Schulungen auf Windows 10 und Office 365 ProPlus vorbereiten.
-ms.openlocfilehash: 6592734c89ea280a658007f53020641a0bc956b8
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814556"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033660"
 ---
 # <a name="step-8-user-communications-and-training"></a>Schritt 8: Benutzerkommunikation und Schulung
 
@@ -55,11 +55,11 @@ Bei Windows 10 helfen wir Ihnen dabei, Ihre Benutzer mit optionalen und standard
 
 Es gibt außerdem sichtbare Sicherheits- und Compliance-Steuerungen, die möglicherweise für die Benutzer angezeigt werden. Enterprise Mobility + Security, das Azure AD und Microsoft Intune umfasst, integriert zusätzliche Funktionen in Windows 10 und Office 365, die Sie für das Desktop-Upgrade nutzen können.
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/de-DE/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 Wenn Sie zum Beispiel die mehrstufige Authentifizierung aktiviert haben, verwendet diese Azure AD und schützt so die Benutzeranmeldung bei Ressourcen, indem eine Telefon-App oder PIN zum sicheren Zugriff auf die Dienste genutzt wird. Azure Information Protection erleichtert es Benutzern außerdem, Dokumente zu klassifizieren und mit Bezeichnungen zu versehen.
 
-[Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/de-DE/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Dies sind nur einige wenige der neuen Funktionen, die den Benutzern nun zur Verfügung stehen, und einige Benutzer werden überrascht sein – positiv, oder auch weniger positiv. Dies kann dazu führen, dass Sie mehr Support-Anfragen und -Tickets für den Helpdesk erhalten, insbesondere dann, wenn sich der normale Arbeitsablauf ändert.
 
@@ -101,7 +101,7 @@ Parallel zur Planung für Geräte, Benutzer, Abteilungen und Zeiten können Sie 
 
 Bei der Zusammenstellung von Schulungsinhalten haben Sie in der Produktivitätsbibliothek von Microsoft FastTrack Zugriff auf einen umfassenden Satz von kurzen, auf Videos basierenden Trainings mit Schrittanleitungen.
 
-[Microsoft FastTrack-Produktivitätsbibliothek](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=2)
+[Microsoft FastTrack-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success/?rtc=2)
 
 Es gibt Hunderte von Themen, basierend auf dem, was für Ihre Organisation wesentlich ist: Erstellen von wirkungsvolleren Inhalten, Freigeben von Websites und Inhalten, Transformieren der Teamarbeit und Steigern der Produktivität mit modernen Geräten.
 

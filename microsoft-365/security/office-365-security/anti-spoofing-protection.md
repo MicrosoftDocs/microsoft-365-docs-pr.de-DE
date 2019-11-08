@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: e863a7fe580bdd6c60ba6f28d3fbf2df010e9384
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b793d3244343111f1894ff8aae77c2d6ea8f4f3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081739"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034286"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -115,7 +115,7 @@ Microsoft unterscheidet zwei verschiedene Typen von Spoofingnachrichten:
   
  **Organisationsinternes Spoofing**
   
-Dies wird auch als Self-to-Self-Spoofing bezeichnet.Dies tritt auf, wenn die Domäne in der „Von“-Adresse der Empfängerdomäne oder wenn die Empfängerdomäne eine der in der Organisation [akzeptierten Domänen](https://technet.microsoft.com/de-DE/library/jj945194%28v=exchg.150%29.aspx) entspricht; oder wenn die Domäne in der „Von“-Adresse Teil der gleichen Organisation ist.
+Dies wird auch als Self-to-Self-Spoofing bezeichnet.Dies tritt auf, wenn die Domäne in der „Von“-Adresse der Empfängerdomäne oder wenn die Empfängerdomäne eine der in der Organisation [akzeptierten Domänen](https://technet.microsoft.com/library/jj945194%28v=exchg.150%29.aspx) entspricht; oder wenn die Domäne in der „Von“-Adresse Teil der gleichen Organisation ist.
   
 Im folgenden Beispiel weist der Absender und der Empfänger die gleiche Domäne (contoso.com) auf. Leerzeichen werden in die E-Mail-Adresse eingefügt, um das Spambot-Harvesting auf dieser Seite zu verhindern):
   
@@ -654,7 +654,7 @@ Die Antispoofingtechnologie von Microsoft wurde ursprünglich für die Organisat
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
 
-Sie können entweder das [Add-In „Nachricht melden“ für Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) verwenden oder, falls es nicht installiert ist, [Spamnachrichten, Nachrichten, die kein Spam sind, und Phishingnachrichten zur Analyse an Microsoft übermitteln](https://technet.microsoft.com/de-DE/library/jj200769%28v=exchg.150%29.aspx).
+Sie können entweder das [Add-In „Nachricht melden“ für Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) verwenden oder, falls es nicht installiert ist, [Spamnachrichten, Nachrichten, die kein Spam sind, und Phishingnachrichten zur Analyse an Microsoft übermitteln](https://technet.microsoft.com/library/jj200769%28v=exchg.150%29.aspx).
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Ich bin ein Domänenadministrator, der nicht alle Absender kennt.
 

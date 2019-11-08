@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Verzeichnis- und Netzwerkbereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982726"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031560"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Schritt 2: Verzeichnis- und Netzwerkbereitschaft
 
@@ -49,7 +49,7 @@ In diesem Artikel erfahren Sie mehr über die Tools und Optionen zum Vorbereiten
 
 Wenn Ihre Organisation bereits Office 365, Exchange Online, Microsoft Intune oder andere Microsoft Online-Dienste verwendet, ist die gute Nachricht, dass Sie bereits Azure Active Directory verwenden. Wenn dies der Fall ist, müssen Sie nur sicherzustellen, dass die Benutzer, für die Sie die Desktopbereitstellung vornehmen möchten, in Ihrem Azure Active Directory vorhanden sind, und dass Lizenzen zugewiesen wurden.
 
-Wenn Sie Azure Active Directory noch nicht verwenden, gibt es [zahlreiche Ressourcen](https://docs.microsoft.com/de-DE/azure/active-directory/), die Ihnen bei der Einrichtung helfen. Sie sind möglicherweise für die persönliche Unterstützung über Microsoft FastTrack berechtigt, als Teil Ihrer Office 365-Lizenz. Weitere Informationen über Microsoft Fastrack finden Sie [hier](https://fasttrack.microsoft.com).
+Wenn Sie Azure Active Directory noch nicht verwenden, gibt es [zahlreiche Ressourcen](https://docs.microsoft.com/azure/active-directory/), die Ihnen bei der Einrichtung helfen. Sie sind möglicherweise für die persönliche Unterstützung über Microsoft FastTrack berechtigt, als Teil Ihrer Office 365-Lizenz. Weitere Informationen über Microsoft Fastrack finden Sie [hier](https://fasttrack.microsoft.com).
 
 Sobald Sie Azure Active Directory eingerichtet haben, können sich die Benutzer anmelden und ihre Office 365 ProPlus-Apps aktivieren, und Sie können die Microsoft Intune- oder Windows Autopilot-Bereitstellung für die automatisierte Bereitstellung von Apps und Richtlinien verwenden.
 
@@ -65,7 +65,7 @@ Bei Windows-Images ohne Anpassungen sollten Sie in der Regel 3 GB pro PC einplan
 
 ### <a name="software-updates"></a>Softwareupdates
 
-Sie müssen nach Netzwerkbandbreite für Softwareupdates einplanen. Windows 10 und Office 365 ProPlus verwenden ein Servicemodell mit monatlichen und halbjährliche Updates. Wenn Sie mit diesem Modell noch nicht vertraut sind, erfahren Sie [hier](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-overview) mehr zu seiner Funktionsweise.
+Sie müssen nach Netzwerkbandbreite für Softwareupdates einplanen. Windows 10 und Office 365 ProPlus verwenden ein Servicemodell mit monatlichen und halbjährliche Updates. Wenn Sie mit diesem Modell noch nicht vertraut sind, erfahren Sie [hier](https://docs.microsoft.com/windows/deployment/update/waas-overview) mehr zu seiner Funktionsweise.
 
 Das neue Servicemodell umfasst Featureupdates für Windows zwei Mal im Jahr, halbjährliche Kanalupdates für Office und monatliche Qualitätsupdates. Featureupdates sind in der Regel 2 bis 4 GB groß, und halbjährliche Kanalupdates für Office 300 bis 400 MB pro Update. Dann gibt es noch die monatlichen Qualitätsupdates. Diese können ein paar Hundert Megabyte (MB) bis über 1 GB groß sein. Dies liegt daran, dass monatliche Updates kumulativ sind, sodass ihre Größe während der Lebensdauer für jede Version von Windows 10 stetig zunimmt. Es gibt jedoch Tools, mit denen sich die Datenmenge reduzieren lässt, die zum Implementieren von Updates im Netzwerk übertragen werden muss. Dies wird weiter unten ausführlicher erläutert.
 
@@ -77,7 +77,7 @@ Die dritte Komponente, die berücksichtigt werden muss, ist die Benutzeranpassun
 
 Eine Möglichkeit, um die Auswirkungen des auf die Bereitstellung bezogenen Datenverkehrs im Netzwerk zu beschränken, ist die Drosselung mit der BITS-Einstellung (Background Intelligent Transfer Service) auf Clients. BITS verwendet eine adaptive Bitrate (ABR), um die Bandbreite anzupassen, die für Bereitstellungszwecke verfügbar ist. Sie kann mit einer Gruppenrichtlinie auf Clients konfiguriert werden.
 
-[Informationen zu BITS](https://docs.microsoft.com/de-DE/windows/desktop/bits/about-bits)
+[Informationen zu BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 Wenn Sie System Center Configuration Manager (Current Branch) verwenden, können Sie auch BITS-fähige Verteilungspunkte konfigurieren oder Multicast mit WDS aktivieren.
 
@@ -119,7 +119,7 @@ Zusätzlich zur Nutzung der Übermittlungsoptimierung finden Sie hier drei Eleme
 
 **Binary Delta Compression (Binärdeltakomprimierung)** Office 365 ProPlus verwendet die Binary Delta Compression, um die Bandbreite zu verringern, die von Softwareupdates beim Aktualisieren von der neuesten Version von Office 365 ProPlus auf die nächste Version beansprucht wird. Indem nur die Änderungen auf Binärebene im Vergleich zur vorherigen Version abgerufen werden, werden die Auswirkung der monatlich wachsenden kumulativen Updates minimiert. So können bis zu mehrere Hundert MB von Daten pro PC jeden Monat eingespart werden. Um diese Funktion nutzen zu können, können Sie jedoch keine Versionen überspringen. Fall Sie dies doch tun, müssen Sie das gesamte kumulative Update herunterladen.
 
-[Herunterladen von Updates für Office 365](https://docs.microsoft.com/de-DE/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Herunterladen von Updates für Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Outlook-Datendateien** Outlook wird oft so konfiguriert, dass es das gesamte Postfach der Benutzer für die Offlineverwendung lokal zwischenspeichert. Dies gilt für alle Windows-Bereitstellungen, mit Ausnahme direkter Upgrades. Diese erfordern, dass sich die Outlook-Datendateien der Benutzer nach dem Upgrade selbst neu erstellen. Dies ist ein automatisierter Prozess, aber bei den Outlook-Postfachbeschränkungen, die normalerweise auf maximal 100 GB festgelegt sind, bedeutet das erneute lokale Zwischenspeichern des gesamten Postfachs für alle Benutzer eine Menge Datentransfer. Zum Reduzieren der Netzwerklast können Sie beispielsweise die Gruppenrichtlinie verwenden, um die Einstellung für "E-Mail im Offlinemodus" zu verringern. In Office 365 ProPlus oder Office 2016 ist der Standardwert für Outlook auf 12 Monate festgelegt. Um die Auswirkungen auf das Netzwerk zu reduzieren, sollten Sie für den Offlinecache eine Dauer von 1 bis 6 Monaten festlegen. Das Ändern dieser Einstellung hat keinen Einfluss auf die Größe des Onlinepostfachs, und das gesamte Postfach kann weiterhin über Outlook durchsucht werden, wenn es online ist.
 
@@ -131,7 +131,7 @@ Zusätzlich zur Nutzung der Übermittlungsoptimierung finden Sie hier drei Eleme
 
 [Einrichten der Verschiebung bekannter Ordner](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[OneDrive-Dateien nach Bedarf](https://www.microsoft.com/de-DE/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[OneDrive-Dateien nach Bedarf](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 Wenn Sie OneDrive noch nicht ausgerollt haben, ist der Übergang von Windows 7 zu Windows 10 eine gute Gelegenheit, um OneDrive zu aktivieren, und es kann problemlos in Office 365 ProPlus integriert werden. Ziehen Sie den Beginn dieses Rollouts in Betracht, wenn Sie die App- und Gerätebereitschaft bearbeiten. Hierdurch erhalten Sie bei der Dateisynchronisierung einen Vorsprung, bevor Sie mit dem Verschieben von Windows-Images und dem Bereitstellen von Apps über das Netzwerk beginnen.
 

@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: dbfff642563117a479db1ac36e76700cca71dd75
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386152"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032200"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -41,7 +41,7 @@ Office 365 Advanced Threat Protection (ATP) schützt Ihre Organisation vor bösa
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 und Plan 2
 
-ATP ist Bestandteil von Office 365 E5. ATP Plan 1 und ATP Plan 2 jedoch sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen hierzu finden Sie unter [Funktionsverfügbarkeit bei ATP-Plänen](https://docs.microsoft.com/de-DE/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+ATP ist Bestandteil von Office 365 E5. ATP Plan 1 und ATP Plan 2 jedoch sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen hierzu finden Sie unter [Funktionsverfügbarkeit bei ATP-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## <a name="configure-atp-policies"></a>Konfigurieren von ATP-Richtlinien
 
@@ -53,7 +53,7 @@ Die Richtlinien, die für Ihre Organisation definiert sind, bestimmen das Verhal
 
 - [ATP-sichere Anlagen](atp-safe-attachments.md): Bietet Zero-Day-Schutz, um Ihr Messagingsystem zu schützen, indem E-Mail-Anlagen auf schädliche Inhalte überprüft werden. Es leitet alle Nachrichten und Anlagen, die keine Viren- und Malware-Signaturen aufweisen, an eine spezielle Umgebung weiter, und verwendet dann Machine Learning- und Analysetechniken, um bösartige Absichten zu erkennen. Wenn keine verdächtigen Aktivitäten gefunden werden, wird die Nachricht an das Postfach weitergeleitet. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für Office 365 ATP-sichere Anlagen](set-up-atp-safe-attachments-policies.md).
 
-- [ATP-sichere Links](atp-safe-links.md): Bietet eine Zeit-auf-Klick-Überprüfung von URLs, beispielsweise in E-Mails und Office-Dateien. Der Schutz ist laufend aktiv und gilt für Ihre Messaging- und Office-Umgebung. Links werden bei jedem Klick gescannt: sichere Links bleiben verfügbar, bösartige Links werden dynamisch blockiert. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für Office 365 ATP-sichere Links](https://docs.microsoft.com/de-DE/office365/securitycompliance/set-up-atp-safe-links-policies). 
+- [ATP-sichere Links](atp-safe-links.md): Bietet eine Zeit-auf-Klick-Überprüfung von URLs, beispielsweise in E-Mails und Office-Dateien. Der Schutz ist laufend aktiv und gilt für Ihre Messaging- und Office-Umgebung. Links werden bei jedem Klick gescannt: sichere Links bleiben verfügbar, bösartige Links werden dynamisch blockiert. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für Office 365 ATP-sichere Links](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies). 
 
 - [ATP für SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md): Schützt Ihre Organisation, wenn Benutzer zusammenarbeiten und Dateien freigeben, indem es schädliche Dateien in Team-Websites und Dokumentbibliotheken identifiziert und blockiert. Weitere Informationen finden Sie unter [Office 365 ATP für SharePoint, OneDrive, und Microsoft Teams aktivieren](turn-on-atp-for-spo-odb-and-teams.md). 
 
@@ -105,8 +105,8 @@ Für den Zugriff auf ATP-Features im Security & Compliance Center müssen Sie ü
 |Rolle oder Rollengruppe  |Ressourcen mit mehr Informationen  |
 |---------|---------|
 |Globaler Office 365-Administrator |[Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Sicherheitsadministrator |[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online-Organisationsverwaltung |[Berechtigungen in Exchange Online](https://docs.microsoft.com/de-DE/exchange/permissions-exo/permissions-exo) <br>und<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Sicherheitsadministrator |[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online-Organisationsverwaltung |[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>und<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Weitere Informationen finden Sie unter:
 
@@ -130,4 +130,4 @@ Neue Features werden Office 365 ATP kontinuierlich hinzugefügt. Weitere Informa
 
 - Die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) liefert eine Liste neuer Features in Entwicklung und Rollout begriffen.
 
-- Die [Dienstbeschreibung von Office 365 Advanced Threat Protection](https://docs.microsoft.com/de-DE/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) beschreibt Verfügbarkeit und Funktionen in ATP-Plänen. 
+- Die [Dienstbeschreibung von Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) beschreibt Verfügbarkeit und Funktionen in ATP-Plänen. 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspekte, die bei der Entwicklung eines Cloud-bewussten Geschäftskontinuitätsplans berücksichtigt werden müssen.
-ms.openlocfilehash: 4a133c65f6a5a2de44e871995886a01c2ce8e9a9
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122335"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031070"
 ---
 # <a name="developing-your-continuity-plan"></a>Entwickeln Ihres Kontinuitätsplans
 
@@ -61,7 +61,7 @@ Dies ist ein BIA-Dokument für `name of the service, system, process, or functio
 
 Als Nächstes sehen Sie sich die Geschäftsprozesse an, um zu sehen, wo kaskadierende Abhängigkeitsbeziehungen bestehen. Auf der Grundlage des Ergebnisses priorisieren und bilden Sie Ausfallsicherheitsstrategien und Standardbetriebsverfahren, die Ihre Strategien unterstützen.
 
-Sie können [Microsoft Service Map](https://docs.microsoft.com/de-DE/azure/azure-monitor/insights/service-map) verwenden, um Sie bei dieser Zuordnung zu unterstützen. Microsoft Service Map ermittelt automatisch Anwendungskomponenten auf Windows- und Linux-Systemen, ordnet alle TCP-Abhängigkeiten zu und ermittelt Verbindungen sowie Remotesysteme von Drittanbietern, von denen die App abhängig ist. Außerdem ordnet es Abhängigkeiten zu Bereichen Ihres Netzwerks zu, die herkömmlicherweise dunkel sind, z. B. Active Directory Domain Services.
+Sie können [Microsoft Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) verwenden, um Sie bei dieser Zuordnung zu unterstützen. Microsoft Service Map ermittelt automatisch Anwendungskomponenten auf Windows- und Linux-Systemen, ordnet alle TCP-Abhängigkeiten zu und ermittelt Verbindungen sowie Remotesysteme von Drittanbietern, von denen die App abhängig ist. Außerdem ordnet es Abhängigkeiten zu Bereichen Ihres Netzwerks zu, die herkömmlicherweise dunkel sind, z. B. Active Directory Domain Services.
 
 Hier ist ein Beispiel für eine Abhängigkeitsanalyse (Dependency Analysis, DA), mit der Sie beginnen können. In Ihrer Abhängigkeitsanalyse (DA) bestimmen und überprüfen Sie die Prozessabhängigkeiten. Sorgen Sie dafür, dass Sie Personen, Lieferanten, Kunden, Partner und Einrichtungen einbeziehen. Die Daten aus dieser Analyse werden verwendet, um Lücken zwischen den Wiederherstellungsanforderungen eines Prozesses und den Wiederherstellungsfunktionen unterstützender Abhängigkeiten zu ermitteln.
 

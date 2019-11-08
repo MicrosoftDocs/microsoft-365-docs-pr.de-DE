@@ -14,16 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: b11edac77b5b4e3ebd26d1234bbebdf8b2e0880a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081942"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035705"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -101,9 +102,9 @@ Wenn Sie die externe Freigabe nicht zulassen, stehen Benutzern mit einer Geschä
   
 ### <a name="device-access-settings"></a>Gerätezugriffseinstellungen
 
-In den Gerätezugriffseinstellungen für SharePoint Online und OneDrive for Business können Sie bestimmen, ob der Zugriff auf den Browser beschränkt ist (es können keine Dateien heruntergeladen werden) oder ob der Zugriff vollständig blockiert ist. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/de-DE/sharepoint/control-access-from-unmanaged-devices). 
+In den Gerätezugriffseinstellungen für SharePoint Online und OneDrive for Business können Sie bestimmen, ob der Zugriff auf den Browser beschränkt ist (es können keine Dateien heruntergeladen werden) oder ob der Zugriff vollständig blockiert ist. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices). 
 
-Wenn Sie Gerätezugriffseinstellungen mit empfohlenen bedingten Zugriffsrichtlinien in Azure Active Directory verwenden möchten, finden Sie unter [Richtlinienempfehlungen zum Schutz von SharePoint-Websites und -Dateien](https://docs.microsoft.com/de-DE/microsoft-365/enterprise/sharepoint-file-access-policies) weitere Informationen.
+Wenn Sie Gerätezugriffseinstellungen mit empfohlenen bedingten Zugriffsrichtlinien in Azure Active Directory verwenden möchten, finden Sie unter [Richtlinienempfehlungen zum Schutz von SharePoint-Websites und -Dateien](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies) weitere Informationen.
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -170,7 +171,7 @@ Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gew�
   
 - Hinzufügen von externen Benutzern zu einer Azure AD-Gruppe, die zum Konfigurieren des Schutzes für eine Bezeichnung verwendet wird
     
-     Sie müssen zuerst das Konto als B2B-Benutzer in Ihrem Verzeichnis hinzufügen. Das [Zwischenspeichern der Gruppenmitgliedschaft durch Azure Rights Management](https://docs.microsoft.com/information-protection/plan-design/prepare#group-membership-caching-by-azure-rights-management) kann einige Stunden dauern. Bei dieser Methode werden Berechtigungen für alle vorhandenen Dateien erteilt, die mit der Bezeichnung geschützt sind (sogar Dateien, die geschützt wurden, bevor ein Benutzer der Azure AD-Gruppe hinzugefügt wird).
+     Sie müssen zuerst das Konto als B2B-Benutzer in Ihrem Verzeichnis hinzufügen. Das [Zwischenspeichern der Gruppenmitgliedschaft durch Azure Rights Management](https://docs.microsoft.com/information-protection/plan-design/prepare) kann einige Stunden dauern. Bei dieser Methode werden Berechtigungen für alle vorhandenen Dateien erteilt, die mit der Bezeichnung geschützt sind (sogar Dateien, die geschützt wurden, bevor ein Benutzer der Azure AD-Gruppe hinzugefügt wird).
     
 - Direktes Hinzufügen von externen Benutzern zum Bezeichnungsschutz
     

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Infrastruktur für Informationsschutz in Microsoft 365 Enterprise.
-ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370452"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030850"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6: Informationsschutz
 
@@ -51,7 +51,7 @@ Wenn Sie diese Schritte abgeschlossen haben, wechseln Sie zu [Beendigungskriteri
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 
-Erfahren Sie, wie IT-Experten bei Microsoft [Azure Information Protection verwenden und Daten schützen](https://www.microsoft.com/de-DE/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
+Erfahren Sie, wie IT-Experten bei Microsoft [Azure Information Protection verwenden und Daten schützen](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Wie Microsoft 365 Enterprise bei Contoso eingesetzt wird
 

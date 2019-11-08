@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981696"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031110"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
@@ -26,7 +26,7 @@ Diese herunterladbaren praktischen Übungen legen den Fokus auf die Windows 10- 
 
 Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Office 365 ProPlus. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das System Center Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot und mehr umfasst.
 
-Im Rahmen der [Desktop-Bereitstellung](http://www.aka.ms/howtoshift) für Windows 10 und Office 365 ProPlus ist die Erstellung einer Sandbox- oder isolierten Übungsumgebung der empfohlene Startpunkt bei der Beschäftigung mit Bereitstellungstool-Updates und Tests der bereitstellungsbezogenen Automatisierung.
+Im Rahmen der [Desktop-Bereitstellung](https://www.aka.ms/howtoshift) für Windows 10 und Office 365 ProPlus ist die Erstellung einer Sandbox- oder isolierten Übungsumgebung der empfohlene Startpunkt bei der Beschäftigung mit Bereitstellungstool-Updates und Tests der bereitstellungsbezogenen Automatisierung.
 
 Das Lab-Kit ist kostenlos herunterladbar und verwendet Testsoftware.
 
@@ -122,11 +122,11 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ## <a name="additional-guidance"></a>**Zusätzliche Anleitung**
 
-  - [Bereitstellungscenter für Desktop](http://www.aka.ms/howtoshift)
+  - [Bereitstellungscenter für Desktop](https://www.aka.ms/howtoshift)
 
-  - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager – Betriebssystembereitstellung](https://docs.microsoft.com/de-DE/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager – Betriebssystembereitstellung](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Planen der Windows 10-Bereitstellung</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

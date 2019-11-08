@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung Ihrer Identitätsinfrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 50c3321dfd8a552d7585606f654360b9cff35b3c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030890"
 ---
 # <a name="phase-2-identity"></a>Phase 2: Identität
 
@@ -68,7 +68,7 @@ Microsoft bietet eine Reihe von Empfehlungen für den [Identitäts- und Gerätez
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 
-Erfahren Sie, wie IT-Experten bei Microsoft [Identitäten verwalten und den Zugriff sichern](https://www.microsoft.com/de-DE/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
+Erfahren Sie, wie IT-Experten bei Microsoft [Identitäten verwalten und den Zugriff sichern](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Wie Microsoft 365 Enterprise bei Contoso eingesetzt wird
 

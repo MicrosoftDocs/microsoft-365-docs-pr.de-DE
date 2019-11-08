@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
-ms.openlocfilehash: 51e681d751e9d36872a47fcde1390c3dda8a2184
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b4ca34f3446a0067c6497d844e5b79a78d0eb35e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082429"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032240"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
 
@@ -59,7 +59,7 @@ Darüber hinaus können Sie anhand der DLP-Berichte Ihre DLP-Richtlinien bei der
 
 DLP-Berichte finden sich im Security Center und Compliance Center. Navigieren Sie zu Berichte \> Berichte anzeigen. Wechseln Sie unter „Verhinderung von Datenverlust (Data Loss Prevention, DLP)“ entweder zu „DLP-Richtlinien- und -Regelübereinstimmungen“ oder zu „Falsch positive Meldungen der DLP-Richtlinie und Außerkraftsetzungen“.
 
-Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung von Datenverlust](https://support.office.com/de-DE/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung von Datenverlust](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
 ![Bericht mit DLP-Richtlinienübereinstimmungen](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -77,21 +77,21 @@ Informationenssicherheits- und Compliance-Teams können diese Tools verwenden, u
 
 Informationssicherheitsteams können auch das Überwachungsprotokoll durchsuchen, um einen vermeintlichen Datenmissbrauch zu untersuchen sowie Ursache und Ausmaß der Verletzung zu bestimmen. Diese integrierte Funktionalität erleichtert die Einhaltung der Artikel 33 und 34 der DSGVO. Diese verlangen bei einer Datenpanne die Benachrichtigung der Aufsichtsbehörde der DSGVO und der betroffenen Person selbst innerhalb eines bestimmten Zeitraums. Einträge im Überwachungsprotokoll werden nur 90 Tage lang im Dienst aufbewahrt. Häufig empfiehlt es sich, und viele Organisationen erfordern dies, dass die Protokolle länger aufbewahrt werden.
 
-Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API die einheitlichen Überwachungsprotokolle (Unified Audit Logs) abonnieren und beide Protokolleinträge nach Bedarf speichern können. Diese bieten erweiterte Dashboards und Warnungen. Ein Beispiel hierfür ist [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/de-DE/azure/operations-management-suite/oms-solution-office-365).
+Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API die einheitlichen Überwachungsprotokolle (Unified Audit Logs) abonnieren und beide Protokolleinträge nach Bedarf speichern können. Diese bieten erweiterte Dashboards und Warnungen. Ein Beispiel hierfür ist [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
 
 Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachungsprotokolls finden Sie unter:
 
--   [Warnungsrichtlinien im Microsoft 365 Security oder Compliance Center](https://support.office.com/de-DE/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Warnungsrichtlinien im Microsoft 365 Security oder Compliance Center](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   [Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365](https://support.office.com/de-DE/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (Einführung)
+-   [Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (Einführung)
 
--   [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://support.office.com/de-DE/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Durchsuchen des Überwachungsprotokolls](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Durchsuchen des Überwachungsprotokolls](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
 
--   [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](https://support.office.com/de-DE/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -125,11 +125,11 @@ Hinweis: Aktivieren Sie unbedingt „Automatisch Dateien auf Azure Information P
 
 Weitere Informationen:
 
--   [Bereitstellen von Cloud App Security](https://docs.microsoft.com/de-DE/cloud-app-security/getting-started-with-cloud-app-security)
+-   [Bereitstellen von Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/de-DE/cloud-platform/cloud-app-security)
+-   [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](https://docs.microsoft.com/de-DE/cloud-app-security/use-case-proxy-block-session-aad)
+-   [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Beispieldatei und Aktivitätsrichtlinien zum Erkennen der Freigabe von personenbezogenen Daten
 
@@ -140,7 +140,7 @@ Benachrichtigen, wenn eine Datei mit einer Kreditkartennummer von einer genehmig
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Steuerung</strong></th>
+<th align="left"><strong>Steuerelement</strong></th>
 <th align="left"><strong>Einstellungen</strong></th>
 </tr>
 </thead>
@@ -215,7 +215,7 @@ Hinweise:
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Steuerung</strong></th>
+<th align="left"><strong>Steuerelement</strong></th>
 <th align="left"><strong>Einstellungen</strong></th>
 </tr>
 </thead>

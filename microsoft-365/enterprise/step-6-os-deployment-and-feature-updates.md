@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zu den Optionen für die Bereitstellung des Betriebssystems und Featureupdates.
-ms.openlocfilehash: 16af9a57623ffbdd73d97d44993c36ce57889eaf
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584541"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031670"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Schritt 6: Bereitstellung des Betriebssystems und Featureupdates
 
@@ -53,9 +53,9 @@ Während des Erstellungs- und Erfassungsvorgangs verwenden Tools wie der System 
 
 Das erfasste Image hat das Windows-Image-Format (WIM), wie jedes standardmäßige Windows-Installationsmedium. Sobald Sie Ihre eigene WIM-Datei erstellt haben, können Sie eine andere Aufgabensequenz als Teil der Betriebssystembereitstellung im System Center Configuration Manager oder Microsoft Deployment Toolkit verwenden, um mit der Bereitstellung zusammenhängenden Aufgaben durchzuführen, das Image anzuwenden und Aufgaben vor und nach der Anwendung des Windows-Images auszuführen.
 
-[Erstellen eines Windows 10-Referenzimages](https://docs.microsoft.com/de-DE/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+[Erstellen eines Windows 10-Referenzimages](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/de-DE/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Bereitstellungsarten
 
@@ -69,7 +69,7 @@ Sobald Sie ein benutzerdefiniertes Image erstellt haben, wird die Installation o
 
 Alle drei dieser Szenarien haben eines gemeinsam: Sie verwenden für die Ausführung eine Aufgabensequenz, wobei in jedem Fall ein benutzerdefiniertes Image angewendet werden kann.
 
-[Mehr über Windows 10-Bereitstellungsszenarien](https://docs.microsoft.com/de-DE/windows/deployment/windows-10-deployment-scenarios)
+[Mehr über Windows 10-Bereitstellungsszenarien](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Direktes Upgrade durch Aufgabensequenz-Automatisierung
 
@@ -85,9 +85,9 @@ Das direkte Upgrade verwendet das Windows-Setup. Das Setup-Programm führt mehre
 
 Das Szenario des direkten Upgrades kann zum Migrieren von älteren Versionen von Windows auf Windows 10 sowie als Upgrade von älteren Windows 10-Versionen verwendet werden. Nachdem das Windows-Setup das Upgrade abgeschlossen hat, kann die Aufgabensequenz weiter ausgeführt werden und Anwendungen wie Office aktualisieren, Treiber ersetzen und Personalisierungseinstellungen anwenden. Ebenso können Sie mit der Upgrade-Aufgabensequenz die Aufgaben vor der Installation oder Überprüfungen vor dem Durchführen des Upgrades vornehmen.
 
-[Durchführen eines direkten Upgrades auf Windows 10 mit dem Configuration Manager](https://docs.microsoft.com/de-DE/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
+[Durchführen eines direkten Upgrades auf Windows 10 mit dem Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Erstellen einer Aufgabensequenz für ein Betriebssystemupgrade in Configuration Manager](https://docs.microsoft.com/de-DE/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Erstellen einer Aufgabensequenz für ein Betriebssystemupgrade in Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Phasenweise Bereitstellung
 
@@ -99,9 +99,9 @@ Beim Planen der Bereitstellung sehen Sie bestimmte Computer für die Bare-Metal-
 
 Unabhängig vom gewählten Bereitstellungstyp müssen Sie sicherstellen, dass er so weit wie möglich automatisiert ist, damit eine gewisse Vorhersagbarkeit und Wiederholbarkeit gegeben ist. Microsoft bietet zwei Lösungen zum Automatisieren der Betriebssystembereitstellung mit automatisieren Aufgabensequenzen an:
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/de-DE/sccm/core/understand/introduction) ** (ConfigMgr) bietet integrierte Funktionen für die Betriebssystembereitstellung, die die Funktionen für die Softwareverteilung und die Verwaltung von Softwareupdates ergänzen. ConfigMgr wird von zahlreichen Organisationen aller Größen genutzt und unterstützt alle vier Arten der Windows-Bereitstellung. Optional können Sie ConfigMgr mit Microsoft Intune integrieren, um weitere Funktionen für die Bereitstellung und Geräteverwaltung nutzen zu können.
+  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction) ** (ConfigMgr) bietet integrierte Funktionen für die Betriebssystembereitstellung, die die Funktionen für die Softwareverteilung und die Verwaltung von Softwareupdates ergänzen. ConfigMgr wird von zahlreichen Organisationen aller Größen genutzt und unterstützt alle vier Arten der Windows-Bereitstellung. Optional können Sie ConfigMgr mit Microsoft Intune integrieren, um weitere Funktionen für die Bereitstellung und Geräteverwaltung nutzen zu können.
 
-  - Eine weitere beliebte Bereitstellungsmethode ist das kostenlose ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/de-DE/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT), das in der Regel von kleinen und mittleren Organisationen für die Betriebssystembereitstellung verwendet wird. Das MDT benötigt nur sehr wenig Infrastruktur. MDT kann in Windows Deployment Services (WDS) für das Booten im Netzwerk integriert werden. Es unterstützt alle vier Bereitstellungstypen sowie die Installation von Anwendungen, Treibern und Einstellungen. Darüber hinaus kann MDT natürlich auch in Configuration Manager integriert werden.
+  - Eine weitere beliebte Bereitstellungsmethode ist das kostenlose ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT), das in der Regel von kleinen und mittleren Organisationen für die Betriebssystembereitstellung verwendet wird. Das MDT benötigt nur sehr wenig Infrastruktur. MDT kann in Windows Deployment Services (WDS) für das Booten im Netzwerk integriert werden. Es unterstützt alle vier Bereitstellungstypen sowie die Installation von Anwendungen, Treibern und Einstellungen. Darüber hinaus kann MDT natürlich auch in Configuration Manager integriert werden.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
@@ -111,21 +111,21 @@ Mit einer neuen Option von Windows 10 können Sie neue PCs als Bestandteil Ihres
 
 Wenn sich ein Benutzer dann während des Setups mit seinen Azure AD-Anmeldedaten bei dem PC anmeldet, registriert sich das Gerät bei Microsoft Intune, das dann den Bereitstellungsprozess übernimmt und Anwendungen, die Konfiguration von Softwareupdates und Compliance-Richtlinien anwendet. Optional kann Windows Autopilot auch verhindern, dass der Benutzer erst dann auf die erste Sitzung zugreifen kann, wenn die Bereitstellung abgeschlossen ist.
 
-[Übersicht über Windows Autopilot](https://docs.microsoft.com/de-DE/windows/deployment/windows-autopilot/windows-10-autopilot)
+[Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 
-[Voraussetzungen für Windows Autopilot](https://docs.microsoft.com/de-DE/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
+[Voraussetzungen für Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update for Business für Featureupdates
 
-Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
+Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
 
 Ausführlichere Informationen zu Windows Update for Business finden Sie in der folgenden Dokumentation:
 
-- [Bereitstellen von Updates mit Windows Update for Business](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-manage-updates-wufb)
-- [Konfigurieren von Windows Update for Business](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-configure-wufb)
-- [Integrieren von Windows Update for Business in vorhandene Verwaltungstools](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-integrate-wufb)
-- [Verwenden von Gruppenrichtlinien zum Konfigurieren von Windows Update for Business](https://docs.microsoft.com/de-DE/windows/deployment/update/waas-wufb-group-policy)
-- [Verwenden von Microsoft Intune zum Konfigurieren von Windows Update for Business](https://docs.microsoft.com/de-DE/intune/windows-update-for-business-configure)
+- [Bereitstellen von Updates mit Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [Konfigurieren von Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb)
+- [Integrieren von Windows Update for Business in vorhandene Verwaltungstools](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb)
+- [Verwenden von Gruppenrichtlinien zum Konfigurieren von Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-wufb-group-policy)
+- [Verwenden von Microsoft Intune zum Konfigurieren von Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 
 ## <a name="next-step"></a>Nächster Schritt 
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.'
-ms.openlocfilehash: 6cf9fb03c66f1cf4d1f20287f5dc121474898d5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ca72ee800287bf8a90fe45f4aaa1de3400cb71e1
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082003"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038884"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -134,7 +134,7 @@ Zunächst müssen Sie [eine Verbindung mit dem Azure Active Directory PowerShell
   
 Geben Sie anschließend den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle an der PowerShell-Eingabeaufforderung oder in der ISE-Umgebung ein (Integrated Script Environment) aus:
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -169,31 +169,31 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 Gehen Sie folgendermaßen vor, um sicherzustellen, dass die dynamische Gruppenmitgliedschaft und gruppenbasierte Lizenzierung ordnungsgemäß funktionieren.
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office Home** in Ihrem Browser auf die Kachel **Admin**.
-    
+
 2. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** des Browsers auf **Benutzer**.
-    
+
 3. Klicken Sie in der Benutzerliste auf **Kandidat**.
-    
+
 4. Stellen Sie im Bereich mit den Eigenschaften für das Benutzerkonto **Kandidat** Folgendes sicher:
-    
+
   - Ist Mitglied der Gruppe **Senior-Mitarbeiter und strategische Mitarbeiter** (unter **Gruppenmitgliedschaften**).
-    
+
   - Dem Benutzerkonto wurden **Enterprise Mobilität + Security E5**- und **Office 365 Enterprise E5**-Lizenzen (unter **Produktlizenzen**) zugewiesen.
-    
+
 5. Schließen Sie den Bereich für das Benutzerkonto **Kandidat**.
-    
+
 ## <a name="record-values-for-future-reference"></a>Notieren von Werten für zukünftige Verwendung
 
 Notieren Sie diese Werte für die Arbeit mit Office 365- und EMS-Testabonnements für diese Entwicklung-/Testumgebung:
   
 - Organisationsname für das Testabonnement: ![](../media/Common-Images/TableLine.png) 
-    
+
     Für den Domänennamen contoso.onmicrosoft.com des Testabonnements lautet der Name der Organisation zum Beispiel „contoso“.
-    
+
 - Der Name des globalen Office 365-Administrators: ![](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     Notieren Sie sich das Kennwort für dieses Konto und das gemeinsame ursprüngliche Kennwort für die anderen Benutzerkonten, und bewahren Sie diese an einem sicheren Ort auf.
-    
+
 ## <a name="next-step"></a>Nächster Schritt
 
 Erstellen Sie die vier verschiedenen Arten von SharePoint Online-Teamwebsites in dieser Entwicklungs-/Testumgebung mit [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md).
@@ -207,7 +207,3 @@ Erstellen Sie die vier verschiedenen Arten von SharePoint Online-Teamwebsites in
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-
