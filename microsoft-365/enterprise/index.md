@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
-ms.openlocfilehash: c96656495e9433703b85fb1c5f3610a617100253
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: 8740d999ff2ade06b5b2c4f168068e8827d0fb41
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391208"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030880"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,7 +42,7 @@ ms.locfileid: "37391208"
                                                 <h3>Durchsuchen</h3>
                                                 <P><a href="microsoft-365-overview.md" target="_blank">Übersicht</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architekturmodelle</a></p>
-                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 für IT</a></p>
+                                                <P><a href="https://Microsoft365.com/it" target="_blank">Microsoft 365 für IT</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -201,7 +201,7 @@ ms.locfileid: "37391208"
                                                         <h3>Benötigen Sie Unterstützung?</h3>
                                                         <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
                                                         <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
-                                                        <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
+                                                        <P><a href="https://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
                                                     </div>
                                                 </div>
                                             </div>
