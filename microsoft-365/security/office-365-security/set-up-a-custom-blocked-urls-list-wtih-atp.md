@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie eine Liste blockierter URLs für Ihre Organisation mit Office 365 Advanced Threat Protection einrichten. Die gesperrten URLs gelten für e-Mail-Nachrichten und Office-Dokumente gemäß ihren ATP-Richtlinien für sichere Links.
-ms.openlocfilehash: 738509978bfafb44cd289113ef77c3d12fb79a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081932"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032060"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-Sicherheits Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die [Office 365 Advanced Threat Protection](office-365-atp.md)haben. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation eine benutzerdefinierte Liste der blockierten Websiteadressen (URLs) haben. Wenn eine URL blockiert wird, werden Personen, die auf Links zur gesperrten URL klicken, zu einer [Warnungsseite](atp-safe-links-warning-pages.md) geleitet, die dem folgenden Bild ähnelt: 
   
@@ -43,9 +43,9 @@ Um ATP-Richtlinien zu bearbeiten oder zu definieren, müssen Sie einer der in de
 
 |Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
-|Office 365 globaler Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+|Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
 > Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -66,7 +66,7 @@ Um ATP-Richtlinien zu bearbeiten oder zu definieren, müssen Sie einer der in de
 
 Achten Sie beim Hinzufügen von URLs zu Ihrer Liste darauf, Folgendes zu beachten: 
 
-- Fügen Sie am Ende der URL keinen **/** Schrägstrich () ein. Geben Sie beispielsweise anstatt Eingabe `http://www.contoso.com/`ein ein `http://www.contoso.com`.
+- Fügen Sie am Ende der URL keinen **/** Schrägstrich () ein. Geben Sie beispielsweise anstatt Eingabe `https://www.contoso.com/`ein ein `https://www.contoso.com`.
     
 - Sie können eine nur-Domänen-URL angeben ( `contoso.com` wie `tailspintoys.com`oder). Dadurch wird das Klicken auf eine URL blockiert, die die Domäne enthält.
 
@@ -76,10 +76,10 @@ Achten Sie beim Hinzufügen von URLs zu Ihrer Liste darauf, Folgendes zu beachte
     
 |**Beispieleintrag**|**Funktionsweise**|
 |:-----|:-----|
-|`contoso.com` oder `*contoso.com*`  <br/> |Blockiert die Domäne, Unterdomänen und Pfade, wie `https://www.contoso.com`, und `http://sub.contoso.com``http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Blockiert eine Website `http://contoso.com/a` , jedoch keine weiteren untergeordneten Pfade wie`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Blockiert eine Website `http://contoso.com/a` und weitere untergeordnete Pfade wie`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Blockiert eine Unterdomäne ("Toys" in diesem Fall), aber Sie können Klicks auf andere Domänen- `http://contoso.com` URLs `http://home.contoso.com`(wie oder) zulassen.  <br/> |
+|`contoso.com` oder `*contoso.com*`  <br/> |Blockiert die Domäne, Unterdomänen und Pfade, wie `https://www.contoso.com`, und `https://sub.contoso.com``https://contoso.com/abc`  <br/> |
+|`https://contoso.com/a`  <br/> |Blockiert eine Website `https://contoso.com/a` , jedoch keine weiteren untergeordneten Pfade wie`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a*`  <br/> |Blockiert eine Website `https://contoso.com/a` und weitere untergeordnete Pfade wie`https://contoso.com/a/b`  <br/> |
+|`https://toys.contoso.com*`  <br/> |Blockiert eine Unterdomäne ("Toys" in diesem Fall), aber Sie können Klicks auf andere Domänen- `https://contoso.com` URLs `https://home.contoso.com`(wie oder) zulassen.  <br/> |
    
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Vorgehensweise definieren von Ausnahmen für bestimmte Benutzer in einer Organisation

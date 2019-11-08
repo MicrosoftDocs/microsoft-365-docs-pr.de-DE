@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8ac644ccd7772d8e4c53395c8a42ff6ddbd683a6
-ms.sourcegitcommit: a6878de8ab977b675a45fc847ff46a9c0365dc56
+ms.openlocfilehash: 667dfe355aca61eff99a85c2a2c29ee0b57e74c5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35231858"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030960"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -39,7 +39,7 @@ Vor dem Implementieren der empfohlenen Richtlinien für Identitäts-und Geräte 
 | [Aktivieren der automatischen Geräteregistrierung für mit der Domäne verbundene Windows-Computer](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Bedingter Zugriff stellt sicher, dass Geräte, die mit apps verbunden sind, der Domäne beigetreten sind oder kompatibel sind. Um dies auf Windows-Computern zu unterstützen, muss das Gerät mit Azure AD registriert sein.  In diesem Artikel wird beschrieben, wie Sie die automatische Geräteregistrierung konfigurieren. |   | Ja |  Ja |  Ja |
 | **Vorbereiten Ihres Supportteams**: Sie sollten vorausplanen, wie Sie mit Benutzern umgehen, die keine MFA durchführen können. Sie können sie z.B. Dies könnte das Hinzufügen zu einer Richtlinien Ausschlussgruppe oder das Registrieren neuer MFA-Informationen für Sie sein. Bevor Sie eine dieser sicherheitsrelevanten Änderungen vornehmen, müssen Sie sicherstellen, dass der tatsächliche Benutzer die Anforderung macht. Es kann hilfreich sein, den Vorgesetzten des Benutzers bei der Genehmigung mit einzubeziehen. | Ja | Ja | Ja | Ja |  
 | [Konfigurieren des Kenn Wort Rückschreibens für lokale Ad](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Durch das Kenn Wort Rückschreiben können Azure AD festlegen, dass Benutzer ihre lokalen Kennwörter ändern müssen, wenn eine risikoreiche Konto Gefährdung erkannt wird. Sie können dieses Feature mit Azure AD Connect auf zwei Arten aktivieren: entweder aktivieren Sie das Rückschreiben von **Kennwörtern** im optionalen Features-Bildschirm des Setup-Assistenten für Azure AD Connect, oder aktivieren Sie es über Windows PowerShell. |   | Ja | Ja | Ja |
-| [Aktivieren Sie Azure Active Directory Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/enable). Mit Azure AD Identity Protection können Sie potenzielle Sicherheitsrisiken erkennen, die sich auf die Identitäten Ihrer Organisation auswirken, und eine automatisierte Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde Risiko und Benutzer Risiko konfigurieren.  | Ja | Ja | Ja | Ja |
+| [Aktivieren Sie Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/enable). Mit Azure AD Identity Protection können Sie potenzielle Sicherheitsrisiken erkennen, die sich auf die Identitäten Ihrer Organisation auswirken, und eine automatisierte Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde Risiko und Benutzer Risiko konfigurieren.  | Ja | Ja | Ja | Ja |
 | **Aktivieren Sie die moderne Authentifizierung** für [Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) und [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (MFA). Die moderne Authentifizierung ist für Office 2016 Clients, SharePoint Online und OneDrive für Unternehmen standardmäßig aktiviert. | Ja | Ja | Ja | Ja |
 ||||||
 
@@ -93,9 +93,9 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 
 ### <a name="office-365-client-support"></a>Office 365-Clientunterstützung
 Weitere Informationen zur Office 365-Clientunterstützung finden Sie in den folgenden Artikeln:
-- [Office 365 Client-App-Unterstützung – bedingter Zugriff](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 Client-App-Unterstützung – Mobile Anwendungsverwaltung](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 Client-App-Unterstützung – moderne Authentifizierung](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-modern-authentication)
+- [Office 365 Client-App-Unterstützung – bedingter Zugriff](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Office 365 Client-App-Unterstützung – Mobile Anwendungsverwaltung](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Office 365 Client-App-Unterstützung – moderne Authentifizierung](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>Schützen von Administratorkonten
 Azure Ad bietet Ihnen eine einfache Möglichkeit, den Administratorzugriff mit einer vorkonfigurierten Richtlinie für bedingten Zugriff zu schützen. Wechseln Sie in Azure AD zu **bedingter Zugriff** , und suchen Sie nach dieser Richtlinie – **Baseline-Richtlinie: MFA für Administratoren erfordern (Vorschau)**. Wählen Sie diese Richtlinie aus, und wählen Sie dann **Richtlinie sofort verwenden**aus. 
@@ -110,8 +110,8 @@ Diese Richtlinie erfordert MFA für die folgenden Rollen:
 Weitere Informationen finden Sie unter [Baseline Security Policy for Azure AD Administrator Accounts](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/22/baseline-security-policy-for-azure-ad-admin-accounts-in-public-preview/).
 
 Weitere Empfehlungen umfassen Folgendes:
-- Verwenden Sie Azure AD Privileged Identity Management zum Reduzieren der Anzahl der persistenten Administratorkonten. Weitere Informationen finden Sie unter [Beginn der Verwendung von PIM](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-getting-started). 
-- [Verwenden Sie die privilegierte Zugriffsverwaltung in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/privileged-access-management-overview) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können. 
+- Verwenden Sie Azure AD Privileged Identity Management zum Reduzieren der Anzahl der persistenten Administratorkonten. Weitere Informationen finden Sie unter [Beginn der Verwendung von PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
+- [Verwenden Sie die privilegierte Zugriffsverwaltung in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können. 
 - Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die reguläre nicht-administrative Verwendung verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist. [Office 365 Administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) Rollen haben wesentlich mehr Berechtigungen als Office 365 Dienste.
 - Führen Sie bewährte Methoden zum Sichern von privilegierten Konten in Azure AD wie in diesem [Artikel](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)beschrieben aus.
 

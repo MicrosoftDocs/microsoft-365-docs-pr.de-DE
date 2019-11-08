@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie eine Kommunikationswebsite für Ihre Kampagne.
-ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 8473aa3a5b4e091b25d57939a0897eb257513b75
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772532"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029089"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Erstellen einer Kommunikationswebsite für Ihre Kampagne
 
@@ -58,7 +58,7 @@ Die folgenden Links für PowerPoint und PDF können heruntergeladen und im Tablo
 2. Wählen Sie in der oberen linken Ecke der Seite das App-Start Symbol aus, und wählen Sie dann die **SharePoint** -Kachel aus. Wenn die **SharePoint** -Kachel nicht angezeigt wird, klicken Sie auf die Kachel " **Websites** " oder " **alle** ", wenn SharePoint nicht sichtbar ist.
 3. Klicken Sie oben auf der SharePoint-Startseite auf **+ Website erstellen** , und wählen Sie die Option **Kommunikationswebsite** aus.
 
-Hier finden Sie Informationen zu [Kommunikationswebsites](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) und zum [Erstellen einer Kommunikationswebsite in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
+Hier finden Sie Informationen zu [Kommunikationswebsites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) und zum [Erstellen einer Kommunikationswebsite in SharePoint Online](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
 
 
 ## <a name="admin-settings"></a>Administratoreinstellungen

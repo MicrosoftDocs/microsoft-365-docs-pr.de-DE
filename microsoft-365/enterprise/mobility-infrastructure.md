@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386142"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031150"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
@@ -119,7 +119,7 @@ Weitere Informationen finden Sie unter [Erste Schritte mit Geräte Konformitäts
 
 Diese Features und Einstellungen werden häufig als der "coole" Teil von InTune betrachtet und sind sehr leistungsfähig. Nachdem Sie einige Konformitätsrichtlinien mithilfe des bedingten Zugriffs erfolgreich durchgesetzt haben, können Sie **Geräteprofile**erstellen.
 
-InTune im [Azure-Portal](https://portal.azure.com) ermöglicht Ihnen das Erstellen unterschiedlicher Profile basierend auf Ihrer Geräteplattform – IOS, macOS, Android und Windows. Sie verfügen über folgende Möglichkeiten:
+InTune im [Azure-Portal](https://portal.azure.com) ermöglicht Ihnen das Erstellen unterschiedlicher Profile basierend auf Ihrer Geräteplattform – IOS, macOS, Android und Windows. Beispielsweise können Sie folgende Aktionen ausführen:
 
 - Verwenden Sie den Endpunktschutz auf Windows 10-Geräten, um verschiedene BitLocker-Optionen einschließlich Verschlüsselung zu aktivieren.
 - Verwenden Sie das Feature für eingeschränkte apps auf IOS-Geräten, um eine Liste der genehmigten apps zu erstellen, die installiert werden können. Oder erstellen Sie eine Liste der verbotenen apps.
@@ -151,7 +151,7 @@ Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 
-Erfahren Sie, wie IT-Experten bei Microsoft [Geräte mit EMS verwalten](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
+Erfahren Sie, wie IT-Experten bei Microsoft [Geräte mit EMS verwalten](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Wie Microsoft 365 Enterprise bei Contoso eingesetzt wird
 

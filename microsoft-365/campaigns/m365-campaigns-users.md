@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie sich Microsoft 365 für Kampagnen auf Ihre Benutzer auswirkt.
-ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772422"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031240"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
 
@@ -42,7 +42,7 @@ Alle Benutzer sollten diese e-Mail-Methoden kennen und verwenden, um Ihre e-Mail
 
 Erfahren Sie mehr über [Phishing und andere Angriffe](m365-campaigns-phishing-and-attacks.md). 
 
-Laden Sie [](m365-campaigns-protect-campaign-infographic.md) eine Infografik mit Tipps für Sie und die Mitglieder Ihres Kampagnen Teams herunter.
+Laden Sie eine [Infografik](m365-campaigns-protect-campaign-infographic.md) mit Tipps für Sie und die Mitglieder Ihres Kampagnen Teams herunter.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Einrichten von iPhones und Android-Geräten
 Alle Benutzer, die Sie Ihrer Umgebung hinzufügen, müssen einige Minuten dauern, bis die [iPhones und Android-Geräte sicher installiert](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) sind:
@@ -66,7 +66,7 @@ Bei [nicht verwalteten Windows 10-und Mac-Geräten](m365-campaigns-protect-pcs-m
 ||**Windows 10**|**Mac**|
 |Sicherheitsfunktionen|Aktivieren des BitLocker-Geräteschutzes<p><p> Sicherstellen, dass Windows Defender eingeschaltet bleibt <p>Aktivieren der Windows-Firewall| Verwenden von FileVault zum Verschlüsseln des Mac-Datenträgers <p><p>Verwenden einer zuverlässigen Antivirus-Software <p>Aktivieren des Firewall-Schutzes|
 
-Weitere Informationen zu diesen Empfehlungen finden Sie unter [Protect Your Account and Devices from Hackers and Malware](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+Weitere Informationen zu diesen Empfehlungen finden Sie unter [Protect Your Account and Devices from Hackers and Malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Zusammenarbeit mit Microsoft Teams, OneDrive, SharePoint Online und anderen Office 365 Tools
 Ihre Benutzer sind möglicherweise versucht, ihre Organisationsdateien an anderen Orten als Microsoft 365 freizugeben und zu speichern. Mit Microsoft 365 ist es so einfach wie möglich, die Zusammenarbeit und die sichere Freigabe sicherzustellen. Sie können [Dateien und Videos](share-files-and-videos.md) direkt in Microsoft Teams, OneDrive, Stream und sogar in einer Datei freigeben. Die Freigabe in diesen Tools trägt dazu bei, dass Ihre Daten nicht mehr auslaufen. Sie können vertraulichen Daten zusätzlichen Schutz hinzufügen, um die Freigabe außerhalb Ihrer Organisation zu verhindern. 

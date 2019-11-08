@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441092"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034186"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -33,7 +33,7 @@ Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispams
 A. **Für eingehende Nachrichten:** Der Großteil der Spamnachrichten wird mithilfe der Verbindungsfilterung gelöscht, die auf der IP-Adresse des Absenders basiert. Der Dienst untersucht anschließend den Inhalt der Nachricht. Standardmäßig wird durch die Inhaltsfilterung abgefangener Spam an den Junk E-Mail-Ordner des Empfängers gesendet. Sie können diese Aktion ändern. Beispielsweise können Sie durch Konfigurieren der Inhaltsfilterrichtlinie auswählen, dass Spamnachrichten stattdessen in die Quarantäne gesendet werden. 
   
 > [!IMPORTANT]
-> Für EoP-eigenständige Kunden: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um zu erkennen von EoP hinzugefügte Spam Kopfzeilen. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Für EoP eigenständige Kunden: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu erkennen. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder durch den Pool für besonders riskante Zustellungen geleitet oder ist unzustellbar und wird nicht zugestellt. In diesem Fall sollte der Absender eine Benachrichtigung über den Übermittlungsstatus (Delivery Status Notification, DSN) erhalten, in der ihm mitgeteilt wird, dass die Nachricht nicht zugestellt werden konnte. 
   
@@ -73,13 +73,13 @@ A. Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kei
   
 A. Ja, beispielsweise können Sie einen Spam Erkennungs Bericht im Microsoft 365 Admin Center erhalten. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
   
-Exchange Online Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Kunden von Exchange Online Protection: [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **F. Jemand hat mir eine Nachricht gesendet, aber ich finde sie nicht. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?**
   
-A. Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+A. Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **F. Schränkt der Dienst meine E-Mail ein (begrenzt ihre Rate), wenn die Benutzer ausgehenden Spam senden?**
   
@@ -89,15 +89,15 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
   
  **F. Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?**
   
-A. Ja, Sie können einen anderen Filterdienst zum Schutz vor Spam und Schadsoftware konfigurieren, um Ihre Exchange Online-Postfächer zu schützen. Zu diesem Zweck müssen Sie für eingehende E-Mail-Nachrichten Ihre E-Mail-Nachrichten an einen Drittanbieter weiterleiten, indem Sie Ihre MX-Einträge ändern, um auf den Drittanbieter zu verweisen. Leiten Sie die Nachrichten anschließend zur weiteren Bearbeitung an den EOP-Dienst weiter. Für Ausgehende E-Mail-Nachrichten muss der Drittanbieter (Smarthost) als Übermittlungsziel für die Nachrichten angegeben werden, siehe [Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Ja, Sie können einen anderen Filterdienst zum Schutz vor Spam und Schadsoftware konfigurieren, um Ihre Exchange Online-Postfächer zu schützen. Zu diesem Zweck müssen Sie für eingehende E-Mail-Nachrichten Ihre E-Mail-Nachrichten an einen Drittanbieter weiterleiten, indem Sie Ihre MX-Einträge ändern, um auf den Drittanbieter zu verweisen. Leiten Sie die Nachrichten anschließend zur weiteren Bearbeitung an den EOP-Dienst weiter. Für Ausgehende E-Mail-Nachrichten muss der Drittanbieter (Smarthost) als Übermittlungsziel für die Nachrichten angegeben werden, siehe [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
   
  **F. Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?**
   
 A. Ja, lesen Sie dazu die folgenden Artikel:
   
-[Informationen zu Phishing, Lotteriebetrug und andere Arten von Betrug](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[Informationen zu Phishing, Lotteriebetrug und andere Arten von Betrug](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-[E-Mail- und Internetbetrügereien: So schützen Sie sich](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+[E-Mail- und Internetbetrügereien: So schützen Sie sich](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **F. Werden Spam- und Malwarenachrichten darauf untersucht, wer sie gesendet hat, oder werden sie an Strafverfolgungsbehörden weitergeleitet?**
   

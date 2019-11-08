@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Einrichten von Compliance-Features, um Datenverlust zu verhindern und vertrauliche Daten zu kennzeichnen
-ms.openlocfilehash: 73709c1302a2e9e46eb2d54ea021438b5f1743c5
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5213c55f4a8ce0e223896f1b960847714d6d06cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575656"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031413"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
@@ -57,7 +57,7 @@ So legen Sie ein Postfach für das Beweissicherungsverfahren im Admin Center ab:
 
 Vertraulichkeits Bezeichnungen werden mit dem Azure Information Protection (AIP) Plan 1 geliefert und helfen Ihnen, Ihre Dokumente und e-Mails zu klassifizieren und optional zu schützen, indem Sie Bezeichnungen anwenden. Bezeichnungen können automatisch von Administratoren angewendet werden, die Regeln und Bedingungen manuell von Benutzern definieren, oder indem Sie eine Kombination verwenden, in der Benutzern Empfehlungen gegeben werden.
 
-Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und Verwalten von Sensitivitäts Bezeichnungen](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
+Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und Verwalten von Sensitivitäts Bezeichnungen](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
 
 
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Schützen Sie sich gegen Phishing und andere Angriffe mit Microsoft 365 für Kampagnen.
-ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593860"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029059"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Schützen Sie sich vor Phishing und anderen Angriffen
 
@@ -42,12 +42,12 @@ Microsoft 365 umfasst viele Schutzmaßnahmen gegen Angriffe, aber es gibt Dinge,
 
 **Spam-e-Mails reduzieren**
 
-Befolgen Sie diese [10 Tipps, wie Sie Spam reduzieren können](https://support.office.com/en-us/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Befolgen Sie diese [10 Tipps, wie Sie Spam reduzieren können](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
 
 **Melden Sie es!**
 
 Melden Sie alle Phishing-oder andere Scam-e-Mails, die Sie erhalten. Wählen Sie die Nachricht aus, und wählen Sie im Menüband **Bericht Meldung** aus.
-Hier finden Sie weitere Informationen zum [melden von Junk-und Phishing-e-Mails](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Hier finden Sie weitere Informationen zum [melden von Junk-und Phishing-e-Mails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Vermeiden von Phishing**
 - Antworten Sie nie auf eine e-Mail, in der Sie aufgefordert werden, persönliche oder Kontoinformationen zu senden.
@@ -56,11 +56,11 @@ Hier finden Sie weitere Informationen zum [melden von Junk-und Phishing-e-Mails]
 - Wenn die e-Mail anscheinend von einem Unternehmen stammt, wenden Sie sich über das Telefon oder den Webbrowser an den Kundendienst des Unternehmens, um zu sehen, ob die e-Mail legitim ist.
 - Durchsuchen Sie das Internet nach der Betreffzeile des e-Mail-betreffs, gefolgt von dem Wort Hoax, um zu sehen, ob dieser betrug von anderen Personen gemeldet wurde.
 
-Hier finden Sie Informationen zu fünf gängigen Betrugsarten im [Umgang mit Missbrauch, Phishing oder Spoofing](https://support.office.com/en-us/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
+Hier finden Sie Informationen zu fünf gängigen Betrugsarten im [Umgang mit Missbrauch, Phishing oder Spoofing](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
 **Stellen Sie sicher, dass Ihre e-Mails anderen Benutzern legitim erscheinen.**
 
-Helfen Sie Ihren Kunden, ihrer Kommunikation zu vertrauen, indem Sie eine digitale Signatur hinzufügen, um zu beweisen, dass Sie von Ihnen kommt. Siehe [sichere Nachrichten mithilfe einer digitalen Signatur](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Helfen Sie Ihren Kunden, ihrer Kommunikation zu vertrauen, indem Sie eine digitale Signatur hinzufügen, um zu beweisen, dass Sie von Ihnen kommt. Siehe [sichere Nachrichten mithilfe einer digitalen Signatur](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>Schützen Ihrer Kampagne vor Onlinebedrohungen
 
@@ -75,6 +75,6 @@ Laden Sie diese Infografik mit Tipps für Sie und die Mitglieder Ihres Kampagnen
 ## <a name="set-it-up"></a>Einrichtung
 
 Erfahren Sie mehr über die folgenden Vorgehensweise:
-- [Schützen der Dateien und der Kommunikation mit Office](https://support.office.com/en-us/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [Sicher und privat bei der Arbeit bleiben](https://support.office.com/en-us/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Schützen der Dateien und der Kommunikation mit Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
+- [Sicher und privat bei der Arbeit bleiben](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
   

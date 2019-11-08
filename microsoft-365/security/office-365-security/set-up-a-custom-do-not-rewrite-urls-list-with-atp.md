@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre ATP-Richtlinien für sichere Links einrichten, können Sie eine "do-not-rewrite"-Liste mit URLs einfügen, um es einigen Personen in Ihrer Organisation zu ermöglichen, Websites zu besuchen, die Sie in Ihre Liste aufnehmen.
-ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1068f7e2ac75f9c4403475e1fa9bc4da57fabe51
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772139"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032050"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe Office 365 sicherer ATP-Links
 
@@ -69,19 +69,19 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 
 - Alle URLs, die Sie in der Liste "nicht umschreiben" angeben, werden von der Überprüfung der ATP-sichere Links für die von Ihnen angegebenen Empfänger ausgeschlossen.
  
-- Wenn Sie bereits über eine Liste von URLs in Ihrer Liste "nicht umschreiben" verfügen, stellen Sie sicher, dass Sie diese Liste überprüfen und je nach Bedarf Platzhalter hinzufügen. Wenn Ihre vorhandene Liste beispielsweise einen Eintrag wie `http://contoso.com/a` enthält und Sie untergeordnete Pfade wie `http://contoso.com/a/b` in Ihrer Richtlinie einschließen möchten, fügen Sie Ihrem Eintrag ein Platzhalterzeichen hinzu, `http://contoso.com/a/*`damit es aussieht.
+- Wenn Sie bereits über eine Liste von URLs in Ihrer Liste "nicht umschreiben" verfügen, stellen Sie sicher, dass Sie diese Liste überprüfen und je nach Bedarf Platzhalter hinzufügen. Wenn Ihre vorhandene Liste beispielsweise einen Eintrag wie `https://contoso.com/a` enthält und Sie untergeordnete Pfade wie `https://contoso.com/a/b` in Ihrer Richtlinie einschließen möchten, fügen Sie Ihrem Eintrag ein Platzhalterzeichen hinzu, `https://contoso.com/a/*`damit es aussieht.
     
 - Fügen Sie keinen Schrägstrich (/) in die URLs ein, die Sie in der Liste "nicht umschreiben" angeben. Geben Sie `contoso.com`beispielsweise nicht in `contoso.com/` die Liste "nicht umschreiben" ein.
 
-- Wenn Sie eine Liste "nicht umschreiben" für eine Richtlinie für ATP-sichere Links angeben, können Sie bis zu drei Platzhalter Sternchen\*() einschließen. Platzhalterzeichen\*() werden verwendet, um explizit Präfixe oder Unterdomänen wie `http://` oder `https://`hinzuzufügen. Ein Eintrag, wie er `contoso.com` nicht mit der Liste " `*.contoso.com/*` nicht umschreiben" übereinstimmt. Sie müssen, `*.contoso.com/*` Wenn Sie den Benutzern das Besuchen einer Domäne und ihrer Unterdomänen und Pfade gestatten möchten.
+- Wenn Sie eine Liste "nicht umschreiben" für eine Richtlinie für ATP-sichere Links angeben, können Sie bis zu drei Platzhalter Sternchen\*() einschließen. Platzhalterzeichen\*() werden verwendet, um explizit Präfixe oder Unterdomänen wie `https://` oder `https://`hinzuzufügen. Ein Eintrag, wie er `contoso.com` nicht mit der Liste " `*.contoso.com/*` nicht umschreiben" übereinstimmt. Sie müssen, `*.contoso.com/*` Wenn Sie den Benutzern das Besuchen einer Domäne und ihrer Unterdomänen und Pfade gestatten möchten.
     
 In der folgenden Tabelle sind Beispiele aufgeführt, was Sie eingeben können und welche Auswirkungen diese Einträge haben.
     
 |**Beispieleintrag**|**Funktionsweise**|
 |:-----|:-----|
-|`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website `http://contoso.com` wie, aber keine Unterdomänen oder Pfade.|
-|`*.contoso.com/*`  <br/> |Ermöglicht Empfängern das Besuchen einer Domäne, Unterdomänen und Pfaden, wie `http://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`, oder`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Ermöglicht bestimmten Empfängern das Besuchen einer Website `http://contoso.com/a`wie, aber keine untergeordneten Pfade wie`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a/*`  <br/> |Ermöglicht bestimmten Empfängern das Besuchen einer Website `http://contoso.com/a` wie und untergeordnete Pfade wie`http://contoso.com/a/b`  <br/> |
+|`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website `https://contoso.com` wie, aber keine Unterdomänen oder Pfade.|
+|`*.contoso.com/*`  <br/> |Ermöglicht Empfängern das Besuchen einer Domäne, Unterdomänen und Pfaden, wie `https://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`, oder`https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |Ermöglicht bestimmten Empfängern das Besuchen einer Website `https://contoso.com/a`wie, aber keine untergeordneten Pfade wie`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |Ermöglicht bestimmten Empfängern das Besuchen einer Website `https://contoso.com/a` wie und untergeordnete Pfade wie`https://contoso.com/a/b`  <br/> |
    
  

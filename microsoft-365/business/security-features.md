@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business geliefert werden.
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636770"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031443"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 
@@ -33,7 +33,7 @@ Microsoft 365 Business bietet vereinfachte Sicherheitsfunktionen zum Schutz Ihre
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business Admin Center-Sicherheitsfeatures
 
-[![Bezeichnungsfeld, damit Sie wissen, dass sich das Admin Center ändert, und weitere Informationen finden Sie unter aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Sie können viele der Microsoft 365-Geschäfts Sicherheitsfeatures im Admin Center verwalten, wodurch Sie eine vereinfachte Möglichkeit zum Aktivieren oder Deaktivieren dieser Features erhalten. Im Admin Center können Sie folgende Aktionen ausführen:
   
@@ -73,7 +73,7 @@ Erweiterte Funktionen in Microsoft 365 Business stehen Ihnen zum Schutz Ihres Un
 - **[Die vollständigen Funktionen von InTune im Azure-Portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     Wenn Sie auf das InTune-Verwaltungscenter im Azure-Portal zugreifen, können Sie zusätzliche Sicherheitsfeatures wie die Verwaltung von MacOS-Geräten, iPhone und Android-Geräten sowie erweiterte Geräteverwaltung für Windows einrichten, die nicht über Microsoft verfügbar sind. 365 Business Admin Center.
-- **Gleicher [bedingter Zugriff](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) wie Azure AD P1-Plan**
+- **Gleicher [bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) wie Azure AD P1-Plan**
 
     Bedingter Zugriff kann zum Schutz Ihrer Organisation vor Anmelde Risiken, Zugriffsversuchen von einem unerwarteten Netzwerk oder Gebietsschema, Zugriffsversuche mit riskanten Gerätetypen usw. beitragen. Richtlinien für bedingten Zugriff werden nach Abschluss der ersten Authentifizierung erzwungen, und es werden Signale vom ersten Authentifizierungsereignis verwendet, um zu ermitteln, ob der versuchte Zugriff genehmigt, verweigert oder f weiterer Nachweis (beispielsweise die zweite Form der Identifizierung) Erforderlich.
 

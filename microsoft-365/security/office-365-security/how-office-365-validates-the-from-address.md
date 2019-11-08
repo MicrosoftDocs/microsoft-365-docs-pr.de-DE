@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'Um Phishing zu verhindern, benötigen Office 365 und Outlook.com jetzt die RFC-Compliance für from: addresses.'
-ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: ca3ec0ca6e9a2267c84549f26498b46479f74401
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749157"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032350"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Vorgehensweise Office 365 Überprüfen der Absenderadresse zur Verhinderung von Phishing
 
@@ -227,6 +227,6 @@ Weitere Informationen darüber, wie Sie Ihre Organisation gegen Internetkriminal
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Rückläufernachrichten und EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
+[Rückläufernachrichten und EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
   
 

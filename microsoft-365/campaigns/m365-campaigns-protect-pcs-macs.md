@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Schützen Sie sich gegen Phishing und andere Angriffe mit Microsoft 365 für Kampagnen.
-ms.openlocfilehash: 686a69a7e712e80c4f58cade24a69465fb4e7d33
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772452"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031290"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Schützen nicht verwalteter Windows 10-PCs und Macs
 
@@ -48,9 +48,9 @@ Wenn Ihr Windows 10-PC oder Mac nicht von Ihrer Organisation verwaltet wird, mü
 ## <a name="windows-10tabwindows10"></a>[Windows 10](#tab/Windows10)
 **Aktivieren der Geräteverschlüsselung**<p>
 
-Die Geräteverschlüsselung steht für eine Vielzahl von Windows-Geräten zur Verfügung und schützt Ihre Daten durch Verschlüsselung. Wenn Sie die Geräteverschlüsselung aktivieren, können nur autorisierte Personen auf Ihr Gerät und Ihre Daten zugreifen. Anweisungen finden Sie unter [Aktivieren der Geräteverschlüsselung](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) .
+Die Geräteverschlüsselung steht für eine Vielzahl von Windows-Geräten zur Verfügung und schützt Ihre Daten durch Verschlüsselung. Wenn Sie die Geräteverschlüsselung aktivieren, können nur autorisierte Personen auf Ihr Gerät und Ihre Daten zugreifen. Anweisungen finden Sie unter [Aktivieren der Geräteverschlüsselung](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) .
 
- Wenn die Geräteverschlüsselung auf Ihrem Gerät nicht verfügbar ist, können Sie stattdessen die standardmäßige [BitLocker-Verschlüsselung](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) aktivieren. (BitLocker steht unter Windows 10 Home Edition nicht zur Verfügung.) 
+ Wenn die Geräteverschlüsselung auf Ihrem Gerät nicht verfügbar ist, können Sie stattdessen die standardmäßige [BitLocker-Verschlüsselung](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) aktivieren. (BitLocker steht unter Windows 10 Home Edition nicht zur Verfügung.) 
 
 
 
@@ -59,10 +59,10 @@ Wenn Sie über Windows 10 verfügen, erhalten Sie den neuesten Virenschutz mit W
 
 Windows Update lädt Updates für die Windows-Sicherheit automatisch herunter, um Ihren PC sicher zu halten und vor Bedrohungen zu schützen.
 
-Wenn Sie über eine frühere Version von Windows verfügen und Microsoft Security Essentials verwenden, empfiehlt es sich, zu Windows-Sicherheit zu navigieren. Weitere Informationen finden Sie unter [Help protect my device with Windows Security](https://support.microsoft.com/en-us/help/17464/windows-10-help-protect-my-device-with-windows-security) .
+Wenn Sie über eine frühere Version von Windows verfügen und Microsoft Security Essentials verwenden, empfiehlt es sich, zu Windows-Sicherheit zu navigieren. Weitere Informationen finden Sie unter [Help protect my device with Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security) .
 
 **Aktivieren der Windows-Firewall**<p>
-Sie sollten die Windows-Firewall immer ausführen, auch wenn Sie eine andere Firewall aktiviert haben. Durch das Deaktivieren der Windows-Firewall wird möglicherweise Ihr Gerät (und Ihr Netzwerk, falls vorhanden) anfälliger für nicht autorisierten Zugriff. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Windows-Firewall](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) für Anweisungen
+Sie sollten die Windows-Firewall immer ausführen, auch wenn Sie eine andere Firewall aktiviert haben. Durch das Deaktivieren der Windows-Firewall wird möglicherweise Ihr Gerät (und Ihr Netzwerk, falls vorhanden) anfälliger für nicht autorisierten Zugriff. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Windows-Firewall](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) für Anweisungen
 
 ## <a name="mactabmac"></a>[Mac](#tab/Mac)
 **Verwenden von FileVault zum Verschlüsseln des Mac-Datenträgers**<p>

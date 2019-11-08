@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: 9a0cbbe29a43a223a006b1a8495d2522ca2386c4
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 189b97de92386a7dc1a7a264ee1bb58cd367839a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772219"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033916"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 
@@ -127,7 +127,7 @@ Wenn Sie eine Hybridbereitstellung haben (d. h. einige Postfächer lokal und ein
 
 Verwenden Sie die Syntaxinformationen in diesem Artikel, um den SPF TXT-Eintrag für Ihre benutzerdefinierte Domäne zu erstellen. Obwohl es auch andere Optionen gibt, die hier nicht genannt werden, sind dies die am häufigsten verwendeten Syntaxoptionen. Nachdem Sie Ihren Eintrag erstellt haben, müssen Sie den Eintrag bei Ihrer Domänenregistrierungsstelle aktualisieren.
   
-Informationen zu den Domänen, die Sie für Office 365 einschließen müssen, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Verwenden Sie die [schrittweisen Anweisungen](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle. Wenn die Registrierungsstelle nicht aufgeführt ist, müssen Sie sie separat kontaktieren, um Informationen zum Aktualisieren Ihres Eintrags zu erhalten. 
+Informationen zu den Domänen, die Sie für Office 365 einschließen müssen, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Verwenden Sie die [schrittweisen Anweisungen](https://office.microsoft.com/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle. Wenn die Registrierungsstelle nicht aufgeführt ist, müssen Sie sie separat kontaktieren, um Informationen zum Aktualisieren Ihres Eintrags zu erhalten. 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Syntax des SPF TXT-Eintrags für Office 365
 <a name="SPFSyntaxO365"> </a>

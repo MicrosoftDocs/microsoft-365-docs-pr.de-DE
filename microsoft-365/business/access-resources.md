@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Hier erfahren Sie, wie Sie Zugriff auf lokale Ressourcen wie Branchen-apps, Dateifreigaben und Drucker aus einem Azure-Active Directory, dem Windows 10-Gerät beigetreten ist.
-ms.openlocfilehash: 92e8ccb99dfece7687c25db84b81fc7bc7158d71
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 2af5d4b4f84f39f5b157313e5b38ef030da7263d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574676"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030532"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business
 
-Jedes Windows 10-Gerät, das als Azure Active Directory beigetreten ist, hat Zugriff auf alle Cloud-basierten Ressourcen wie Ihre Office 365-apps und kann von Microsoft 365 Business geschützt werden. Um auch Zugriff auf lokale Ressourcen wie Branchen-apps, Dateifreigaben und Drucker zu gewähren, müssen Sie Ihre lokale Active Directory mit Azure Active Directory mithilfe von [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)synchronisieren. 
+Jedes Windows 10-Gerät, das als Azure Active Directory beigetreten ist, hat Zugriff auf alle Cloud-basierten Ressourcen wie Ihre Office 365-apps und kann von Microsoft 365 Business geschützt werden. Um auch Zugriff auf lokale Ressourcen wie Branchen-apps, Dateifreigaben und Drucker zu gewähren, müssen Sie Ihre lokale Active Directory mit Azure Active Directory mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)synchronisieren. 
 
-Weitere Informationen finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) .
+Weitere Informationen finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) .
 Die Schritte sind auch in den folgenden Abschnitten zusammengefasst.
 
 ## <a name="run-azure-ad-connect"></a>Ausführen Azure AD Connect

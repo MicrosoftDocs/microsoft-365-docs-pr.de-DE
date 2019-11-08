@@ -1,5 +1,5 @@
 ---
-title: 'Melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet '
+title: 'Melden von Junk-E-Mails und Phishing-Versuchen in Outlook im Web '
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook im Internetbenutzer können Junk-und Phishing-Scams mithilfe integrierter e-Mail-Berichterstellungsoptionen melden. Sie können Microsoft auch informieren, ob eine e-Mail fälschlicherweise als Junk (Spam) identifiziert wurde.
-ms.openlocfilehash: 0191394c1e0c0f43c65af977c219630c65b6a292
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f066181e912060b137437893dee545787fa405a2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080609"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031800"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-E-Mails und Phishing-Versuchen in Outlook im Web 
 
 Für die Benutzer in Ihrer Organisation kann es frustrierend sein, wenn sie in ihrem Posteingang eine Junk-E-Mail empfangen oder aber eine wichtige E-Mail verpassen, weil diese fälschlicherweise als Spam identifiziert wurde. Wir versuchen stets, unsere Exchange Online Protection (EOP)-Spamfilter zu optimieren, um genauere Ergebnisse zu erzielen, und Sie und Ihre Endbenutzer können uns dabei unterstützen. Benutzer von Microsoft Outlook im Web können Junknachrichten (Spam) und betrügerische Phishingversuche mithilfe der integrierten Junk-E-Mail-Meldeoptionen zur Analyse an Microsoft übermitteln. Falls Sie eine Nachricht fälschlicherweise als Junk (Spam) eingestuft wurde, können Sie diese Nachricht auch an Microsoft übermitteln.
   
@@ -64,7 +64,7 @@ Wenn eine Nachricht von Office 365 fälschlicherweise als Junk eingestuft wird, 
 
 [Weitere Informationen zu Junk-E-Mails und Phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Add-In „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Add-In „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

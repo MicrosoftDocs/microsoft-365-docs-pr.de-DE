@@ -1,5 +1,5 @@
 ---
-title: Verschlüsselte e-Mail senden
+title: Senden verschlüsselter E-Mail-Nachrichten
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie, wie Sie verschlüsselte e-Mails mit Outlook senden.
-ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: e7028f69f4418ae0ff0183653c509fc9ad6171ac
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778140"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031230"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Verschlüsseln oder bezeichnen von vertraulichen e-Mails
 
@@ -46,11 +46,11 @@ Bevor Sie e-Mails mit vertraulichen oder vertraulichen Informationen senden, sol
 
 ## <a name="set-it-up"></a>Einrichtung
 
-Wenn Sie eine Nachricht verschlüsseln möchten, die keine vordefinierte Regel erfüllt oder Ihr Administrator keine Regeln eingerichtet hat, können Sie vor dem Senden einer Nachricht eine Vielzahl unterschiedlicher Verschlüsselungsregeln anwenden. Wenn Sie eine verschlüsselte Nachricht von Outlook 2013 oder 2016 oder Outlook 2016 für Mac senden möchten, wählen Sie **Optionen #a0 Berechtigungen**aus, und wählen Sie dann die benötigte Schutzoption aus. Sie können eine verschlüsselte Nachricht auch senden, indem Sie die Schaltfläche **schützen** in Outlook im Internet auswählen. Weitere Informationen finden Sie unter [senden, anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC](https://support.office.com/en-us/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+Wenn Sie eine Nachricht verschlüsseln möchten, die keine vordefinierte Regel erfüllt oder Ihr Administrator keine Regeln eingerichtet hat, können Sie vor dem Senden einer Nachricht eine Vielzahl unterschiedlicher Verschlüsselungsregeln anwenden. Wenn Sie eine verschlüsselte Nachricht von Outlook 2013 oder 2016 oder Outlook 2016 für Mac senden möchten, wählen Sie **Optionen #a0 Berechtigungen**aus, und wählen Sie dann die benötigte Schutzoption aus. Sie können eine verschlüsselte Nachricht auch senden, indem Sie die Schaltfläche **schützen** in Outlook im Internet auswählen. Weitere Informationen finden Sie unter [senden, anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 
-Weitere Informationen zum Einrichten der e-Mail-Verschlüsselung finden Sie unter [e-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+Weitere Informationen zum Einrichten der e-Mail-Verschlüsselung finden Sie unter [e-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>E-Mail-Nachrichten automatisch verschlüsseln
 
@@ -62,9 +62,9 @@ Sie erstellen Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten 
 2. Wählen Sie die Kachel admin aus. 
 3. Wählen Sie im Admin Center die Option admin Centers **#a0 Exchange**aus. 
 
-Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Branding Ihrer Verschlüsselungs Nachrichten
 
-Sie können auch Ihr Kampagnen Branding anwenden, um das Aussehen und den Text in den e-Mail-Nachrichten anzupassen. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+Sie können auch Ihr Kampagnen Branding anwenden, um das Aussehen und den Text in den e-Mail-Nachrichten anzupassen. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 

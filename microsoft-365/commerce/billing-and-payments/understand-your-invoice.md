@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: e0af9ec0808de97e55ef550c6feb51a146dbb5f6
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646432"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029039"
 ---
 # <a name="understand-your-invoice"></a>Grundlegendes zur Ihrer Rechnung
 
 Die Rechnung enthält eine Zusammenfassung ihrer Gebühren und Anweisungen zur Zahlung. Sie können [Ihre Online Rechnung](#view-your-online-invoice) im Microsoft 365 Admin Center anzeigen. Sie können es auch im Portable Document Format (. pdf) herunterladen, um es per e-Mail zu senden.
 
-Wenn Sie nur ein Office 365-Abonnement haben, finden Sie unter [Anzeigen der Rechnung für Office 365 für Unternehmen](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Wenn Sie nur ein Office 365-Abonnement haben, finden Sie unter [Anzeigen der Rechnung für Office 365 für Unternehmen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
 
 ## <a name="understand-the-invoice-header"></a>Grundlegendes zum Rechnungskopf
 
@@ -50,13 +50,13 @@ Die **Abrechnungszusammenfassung** zeigt die Zusammenfassung der Gebühren seit 
 | --- | --- |
 | Gebühren|Die Gesamtzahl der für diesen Abrechnungszeitraum erworbenen Produkte und der zugehörigen Gebühren und steuern. Käufe werden aggregiert, um eine präzise Ansicht Ihrer Rechnung bereitzustellen. |
 | Mitwirkende |Guthaben, die Sie von Rücksendungen erhalten haben |
-| Zugewiesene Azure-Gutschriften |Ihre Azure-Gutschriften, die automatisch auf Azure angewendet werden, belasten jeden Abrechnungszeitraum. Wenn Sie keine Azure-Gutschriften haben, ist dieses Feld ausgeblendet. Weitere Informationen zu Azure Credits finden Sie unter [Track Microsoft Customer Agreement Azure Credit Balance](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance). |
+| Zugewiesene Azure-Gutschriften |Ihre Azure-Gutschriften, die automatisch auf Azure angewendet werden, belasten jeden Abrechnungszeitraum. Wenn Sie keine Azure-Gutschriften haben, ist dieses Feld ausgeblendet. Weitere Informationen zu Azure Credits finden Sie unter [Track Microsoft Customer Agreement Azure Credit Balance](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
 | Teilergebnis |Der fällige Betrag vor Steuern |
 | Steuer |Art und Höhe der Steuer, die Sie zahlen, je nach Land Ihres Abrechnungs Profils. Wenn Sie keine Steuern zahlen müssen, wird auf Ihrer Rechnung keine Steuer angezeigt. |
 
 ### <a name="understand-your-charges"></a>Grundlegendes zu ihren Gebühren
 
-Auf den Gebührenseiten werden die Kosten nach Produkt aufgeschlüsselt angezeigt. Für Azure-Kunden können die Gebühren nach dem Abschnitt "Rechnung" organisiert werden. Weitere Informationen zur Verwendung von Rechnungs Abschnitten für Azure-Produkte finden Sie unter [Invoice Sections](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections) in [Erste Schritte mit Ihrem Microsoft-Kundenvertrags-Abrechnungskonto](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview). In jedem Produktauftrag werden die Kosten nach Dienst Familie aufgeschlüsselt.
+Auf den Gebührenseiten werden die Kosten nach Produkt aufgeschlüsselt angezeigt. Für Azure-Kunden können die Gebühren nach dem Abschnitt "Rechnung" organisiert werden. Weitere Informationen zur Verwendung von Rechnungs Abschnitten für Azure-Produkte finden Sie unter [Invoice Sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [Erste Schritte mit Ihrem Microsoft-Kundenvertrags-Abrechnungskonto](https://docs.microsoft.com/azure/billing/billing-mca-overview). In jedem Produktauftrag werden die Kosten nach Dienst Familie aufgeschlüsselt.
 
 | Begriff |Beschreibung |
 | --- | --- |
@@ -76,7 +76,7 @@ Der Gesamtbetrag, der für jede Dienst Familie fällig ist, wird berechnet, inde
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Wenn auf Ihrer Rechnung Azure-Gebühren angezeigt werden, für die Sie weitere Informationen wünschen, lesen Sie [Gebühren auf Ihrer Microsoft-Kundenvertrags Rechnung verstehen](https://docs.microsoft.com/en-us/azure/billing/billing-mca-understand-your-bill).
+Wenn auf Ihrer Rechnung Azure-Gebühren angezeigt werden, für die Sie weitere Informationen wünschen, lesen Sie [Gebühren auf Ihrer Microsoft-Kundenvertrags Rechnung verstehen](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Grundlegendes zur letzten Rechnungsseite
 
@@ -110,4 +110,4 @@ Rechnungen sind online verfügbar. Ein Link zu Ihrer Online Rechnung steht in Ih
 
 Wenn Sie Fragen haben oder Hilfe zu ihren Azure-Gutschriften benötigen, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Erstellen Sie eine Supportanfrage mit Azure-Unterstützung</a>.
 
-Wenn Sie Fragen haben oder Hilfe zu Ihrer Rechnung im Microsoft 365 Admin Center benötigen, [wenden Sie sich an den Support für Business-Produkte](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+Wenn Sie Fragen haben oder Hilfe zu Ihrer Rechnung im Microsoft 365 Admin Center benötigen, [wenden Sie sich an den Support für Business-Produkte](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

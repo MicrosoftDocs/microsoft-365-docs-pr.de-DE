@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. Exchange Online Protection (EOP)-Anti-Spam- und Anti-Phishing-Filtertechnologie wird plattformübergreifend über die E-Mail-Plattformen von Microsoft angewendet, um Benutzern die neuesten Anti-Spam- und Anti-Phishing-Tools und Innovationen im gesamten Netzwerk zur Verfügung zu stellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081289"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032370"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Bekämpfung von Junk-E-Mails, die an Office 365 gesendet werden
 
@@ -60,15 +60,15 @@ Microsoft konzentriert seine Anti-Phishing-Technologie auf zwei Punkte: Erstens 
 > [!TIP]
 > Internet Explorer ab Version 7 blockiert oder warnt Benutzer, wenn sie bekannte potenzielle Phishing-Websites besuchen, damit sie keine persönlichen Informationen bereitstellen.[Stellen Sie sicher, dass Sie die neueste Version von Internet Explorer haben](https://www.microsoft.com/windows/ie/default.mspx). 
   
-#### <a name="authentication"></a>Authentication
+#### <a name="authentication"></a>Authentifizierung
 
 Domänen-Spoofing ist eine Möglichkeit, eine seriöse E-Mail-Adresse zu imitieren, damit betrügerische E-Mails seriös erscheinen. Spoofing wird von böswilligen Personen oder Organisationen in Phishing-Betrugsversuchen verwendet, um Personen zum Preiszugeben vertraulicher persönlicher Informationen zu verleiten. Die Offenlegung dieser Informationen kann zu Identitätsdiebstahl und anderen Arten von Betrug führen.
   
 EOP verwendet Sender Protection Framework (SPF), DomainKeys Identified Mail (DKIM) und Domain-based Message Authentication, Reporting, and Conformance (DMARC) sowie andere implizite Authentifizierungen, um sicherzustellen, dass Nachrichten aus der Domäne stammen, die angegeben wird. Es wird empfohlen, dass alle Absender SPF und DKIM verwenden, um ihre Empfänger vor Junk-E-Mails und Phishing-Betrug zu schützen. Absender sollten einen DMARC veröffentlichen, um E-Mails abzulehnen oder zu isolieren, die von unbefugten Absendern gesendet werden.
   
-- Weitere Informationen zu SPF finden Sie unter [RFC 7208](https://tools.ietf.org/html/rfc7208) und [Sender Policy Framework](http://www.openspf.org/).
+- Weitere Informationen zu SPF finden Sie unter [RFC 7208](https://tools.ietf.org/html/rfc7208) und [Sender Policy Framework](https://www.openspf.org/).
     
-- Weitere Informationen zu DKIM finden Sie unter [RFC 6376](https://tools.ietf.org/html/rfc6376) und [DKIM.org](http://dkim.org/).
+- Weitere Informationen zu DKIM finden Sie unter [RFC 6376](https://tools.ietf.org/html/rfc6376) und [DKIM.org](https://dkim.org/).
     
 - Weitere Informationen zu DMARC finden Sie unter [DMARC.org](https://dmarc.org/).
     
