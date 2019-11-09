@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577771"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074737"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
@@ -71,20 +71,25 @@ Geben Sie **im Microsoft Berichts-Generator**die SQL-Anweisung für den Bericht 
 4. Wählen Sie im **Berichts-Generator**die Option **Datenquelle:** aus. Wählen Sie die Standarddatenquelle aus, die mit "Autogen" beginnen soll. 
 5. Wählen Sie **als Text den gewünschten Abfragetyp**aus, und geben Sie dann diese Abfrage ein:
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. Navigieren Sie zur Registerkarte **Feld** , wehre Werte für **Feldname** und **Feld Quelle** sollten bereits aufgefüllt werden. Wenn dies nicht der Fall ist, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Abfragefeld**aus. Geben Sie den **Namen des Felds** und die **Feld Quelle**ein.
 6. Wiederholen Sie diesen Vorgang für jeden der folgenden Werte: 
     - Hersteller 

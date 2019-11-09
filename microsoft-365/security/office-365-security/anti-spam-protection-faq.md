@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d858706a80cf66772ea3a422e07d4f773935446c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034186"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076319"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -89,7 +89,7 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
   
  **F. Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?**
   
-A. Ja, Sie können einen anderen Filterdienst zum Schutz vor Spam und Schadsoftware konfigurieren, um Ihre Exchange Online-Postfächer zu schützen. Zu diesem Zweck müssen Sie für eingehende E-Mail-Nachrichten Ihre E-Mail-Nachrichten an einen Drittanbieter weiterleiten, indem Sie Ihre MX-Einträge ändern, um auf den Drittanbieter zu verweisen. Leiten Sie die Nachrichten anschließend zur weiteren Bearbeitung an den EOP-Dienst weiter. Für Ausgehende E-Mail-Nachrichten muss der Drittanbieter (Smarthost) als Übermittlungsziel für die Nachrichten angegeben werden, siehe [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Ja, Sie können einen anderen Filterdienst für Spam und Schadsoftware konfigurieren, um Ihre Exchange Online Postfächer zu schützen. Um dies bei eingehenden e-Mails zu tun, sollten Sie Ihre e-Mail-Nachrichten an den Drittanbieter umleiten, indem Sie Ihre MX-Einträge so ändern, dass Sie auf den Drittanbieter verweisen, und die Nachrichten dann zur weiteren Verarbeitung an EoP umleiten. Um dies für ausgehende e-Mails zu tun, konfigurieren Sie das Nachrichten Zustellungsziel für den Drittanbieter (Smarthost).
   
  **F. Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?**
   
@@ -125,7 +125,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
     
     [Einrichten von SPF in Office 365 zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [Häufig gestellte Fragen zu Domänen](/office365/admin/setup/domains-faq)
     
 5. **Wenn Sie E-Mails mit DKIM signieren, melden Sie sich mit eingeschränkter Kanonisierung an.**
     

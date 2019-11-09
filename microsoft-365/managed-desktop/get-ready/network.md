@@ -4,15 +4,15 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b2b1a147659bf58c9b8ded26d6774994a3c1682
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012210"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074690"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 
@@ -23,19 +23,19 @@ ms.locfileid: "38012210"
 
 Microsoft Managed Desktop ist ein von der Cloud verwalteter Dienst. Es gibt eine Reihe von Endpunkten, die die Microsoft Managed Desktop Services in der Lage sein müssen zu erreichen. In diesem Abschnitt werden die Endpunkte aufgelistet, die für die verschiedenen Aspekte des Microsoft Managed Desktop-Diensts zulässig sein müssen. 
 
-Kunden können Ihr Netzwerk optimieren, indem Sie alle vertrauenswürdigen Microsoft 365-Netzwerkanforderungen direkt über Ihre Firewall/Ihren Proxy senden, die Authentifizierung und alle zusätzlichen Überprüfungen oder Verarbeitungsvorgänge auf Paketebene umgehen. Dadurch werden die Latenz und die Anforderungen an die Umkreiskapazität reduziert. 
+Kunden können Ihr Netzwerk optimieren, indem Sie alle vertrauenswürdigen Microsoft 365-Netzwerkanforderungen direkt über Ihre Firewall oder Ihren Proxy senden, indem Sie die Authentifizierung und alle zusätzlichen Überprüfungen oder Verarbeitungsvorgänge auf Paketebene umgehen. Dadurch werden die Latenz und die Anforderungen an die Umkreiskapazität reduziert. 
 
 Um die Leistung auf von Microsoft verwalteten Desktop cloudbasierten Diensten zu optimieren, benötigen diese Endpunkte eine spezielle Behandlung durch Kunden-Clientbrowser und die Geräte in Ihrem Edge-Netzwerk. Zu diesen Geräten gehören Firewalls, SSL-Unterbrechung und-Inspektion, Paket Inspektionsgeräte und Systeme zur Verhinderung von Datenverlust.
 
 ### <a name="proxy-requirement"></a>Proxy Anforderung
 
-Der Proxy oder die Firewall muss TLS 1,2 unterstützen. Andernfalls müssen Kunden möglicherweise die Protokollerkennung deaktivieren.
+Der Proxy oder die Firewall muss TLS 1,2 unterstützen. Andernfalls müssen Sie möglicherweise die Protokollerkennung deaktivieren.
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Zulässige Endpunkte für Microsoft Managed Desktop
 
 Microsoft Managed Desktop verwendet das Azure-Portal, um die Webkonsole zu hosten. Die folgenden URLs in der Tabelle unten müssen in der Liste der zulässigen Proxy-und Firewall-Adressen aufgeführt sein, damit Microsoft Managed Desktop-Geräte mit Microsoft-Diensten kommunizieren können.  
 
-Beachten Sie, dass die unten aufgeführte Microsoft Managed Desktop-URL für alles verwendet wird, was unser Dienst auf der Kunden-API ausführt. Kunden müssen sicherstellen, dass diese URL immer im Unternehmensnetzwerk verfügbar ist.
+Beachten Sie, dass die unten aufgeführte Microsoft Managed Desktop-URL für alles verwendet wird, was unser Dienst auf der Kunden-API ausführt. Sie müssen sicherstellen, dass diese URL immer im Unternehmensnetzwerk verfügbar ist.
 
 Microsoft-Dienst  | Erforderliche URLs für Zulassungsliste 
 --- | --- | ---
@@ -56,8 +56,7 @@ Zustellungsoptimierung | [Konfigurieren der Zustellungsoptimierung für Windows 
 Office 365 | [Office 365 URL-und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybride Identität erforderliche Ports und Protokolle](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) sowie [Active Directory und Active Directory-Domänendienste Port Anforderungen](https://aka.ms/AA26ygm) 
 Microsoft Intune | [InTune-Netzwerk Konfigurationsanforderungen](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP-Endpunkte] (https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP-Endpunkte](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

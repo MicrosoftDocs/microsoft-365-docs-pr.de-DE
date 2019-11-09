@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatisierte Upgrades von Windows 7 auf Windows 10 für große Organisationen
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033630"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078084"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>In-Place-Upgrades von Windows 7 auf Windows 10 für große Organisationen
 
@@ -44,7 +44,7 @@ In-Place-Upgrades lassen sich mit Betriebssystem-Bereitstellungstools wie [Syste
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Aktualisieren einer kleinen Anzahl von Computern
 
-Bei einem einzelnen oder einer geringen Anzahl Computer ist die manuelle Methode in der Regel die bessere Option gegenüber automatisierten Ansätzen. Sie finden die erforderliche Software und Lizenzen im [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), bei anderen Software-Einzelhändlern oder im [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx), wenn Sie über eine Volumenlizenzierung verfügen. Eine detaillierte Anleitung zum Upgrade eines einzelnen PCs auf Windows 10 sowie zu Wiederherstellungsoptionen nach dem Upgrade finden Sie in der [schrittweisen Anleitung für das manuelle Upgrade von Windows 7 auf Windows 10](https://docs.microsoft.com/de-DE/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
+Bei einem einzelnen oder einer geringen Anzahl Computer ist die manuelle Methode in der Regel die bessere Option gegenüber automatisierten Ansätzen. Sie finden die erforderliche Software und Lizenzen im [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), bei anderen Software-Einzelhändlern oder im [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx), wenn Sie über eine Volumenlizenzierung verfügen. Eine detaillierte Anleitung zum Upgrade eines einzelnen PCs auf Windows 10 sowie zu Wiederherstellungsoptionen nach dem Upgrade finden Sie in der [schrittweisen Anleitung für das manuelle Upgrade von Windows 7 auf Windows 10](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
 
 ## <a name="how-to-upgrade-many-computers"></a>So führen Sie ein Upgrade vieler Computer durch
 

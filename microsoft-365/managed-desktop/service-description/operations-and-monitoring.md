@@ -4,14 +4,15 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 9f0d1889e625ceba52f3e91ee950041f82e9750e
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431916"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074767"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Desktop-Vorgänge und-Überwachung
 
@@ -59,7 +60,7 @@ Es gibt verschiedene Arten von Änderungen, die in regelmäßigen Abständen an 
 
 Nicht alle Änderungen wirken sich gleichermaßen auf die Benutzer aus und erfordern eine Aktion. Einige sind geplant und einige ungeplante (nicht sicherheitsrelevante Updates und Sicherheitsupdates sind in der Regel nicht geplant). Je nach Art der Änderung kann der Kommunikationskanal variieren. In der folgenden Tabelle sind die Arten von Änderungen aufgeführt, die Sie für den Microsoft Managed Desktop-Dienst erwarten können.
 
-|   | Funktionalität |   Nicht sicherheitsrelevante Updates |  Sicherheit
+|   | Funktionalität |   Nicht sicherheitsrelevante Sicherheitsupdates |  Sicherheit
 --- | --- | --- | ---
 **Art der Änderung** | -Feature-Updates<br>-Neue Features oder Anwendungen<br>-Veraltete Features | Client-Hotfixes für Probleme | Sicherheitspatches
 **Vorankündigung** | 5 Tage Benachrichtigung für Änderungen, die eine Aktion erfordern |    Nein, diese sind in der monatlichen Version enthalten.   | Nein, diese sind in der monatlichen Version enthalten. 
@@ -82,7 +83,7 @@ Netzwerk (Proxy, Paketüberprüfung, VPN)  | Beraten und planen Sie Kunden, um R
 Dienstkonten |-Implementieren, sicher speichern und Verwalten der Anmeldeinformationen.<br> – Kommunizieren Sie nicht autorisierten Zugriff oder die Verwendung dieser Anmeldeinformationen für Ihr Sicherheits Betriebsteam. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Zuweisen von Richtlinien, mehrstufiger Authentifizierung, bedingtem Zugriff oder Anwendungsbereitstellung zu den Microsoft Managed Desktop-Dienstkonten.<br>-Setzen Sie das Kennwort nicht zurück, oder verwenden Sie die Anmeldeinformationen.<br>-Öffnen Sie eine SEV C-Supportanfrage für Microsoft Managed Desktop Operations, wenn in InTune-oder Azure-Überwachungsprotokollen, die sich auf diese Dienstkonten beziehen, verdächtige Aktivitäten beobachtet werden.
 Gerätegruppen | -Implementieren und Verwalten der Mitgliedschaft von Geräten in Microsoft Managed Desktop-Gruppen.<br>-Verwenden Sie die Microsoft Managed Desktop-Gruppen, um die Zuweisung und Freigabe von Konfigurationen und Updates für Geräte zu verwalten. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Ändern Sie nicht die Mitgliedschaft einer beliebigen Microsoft Managed Desktop-Gruppe.<br>-Verwenden Sie die Gruppen nur zum Zuweisen von Unternehmens Zertifikaten für Dienste wie VPN, Windows Hello for Business oder e-Mail-Verschlüsselung oder für die Konfiguration von unternehmensweiten Wi-Fi-Profilen.<br>– Wenn die gemeinsame Verwaltung vorhanden ist, schließen Sie beim Bereitstellen des Configuration Manager-Clients explizit alle von Microsoft verwalteten Desktop Gruppen aus.
 Richtlinien |  -Implementieren und verwalten Sie die Microsoft Managed Desktop-Richtlinien, die den Konfigurationsstatus von Geräten in Service steuern.<br>– Bereitstellen von Updates, Richtlinien oder Fenstern, inkrementelle Verwendung von Gerätegruppen.<br> – Explizite Ausrichtung auf nicht von Microsoft verwaltete Desktop Gruppen ausschließen. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Nicht bearbeiten oder Zuweisen von Microsoft Managed Desktop-Richtlinien zu Geräten oder Benutzern, die nicht vom Microsoft Managed Desktop-Dienst verwaltet werden.
-Windows Defender Advanced Threat Protection | Überwachen und untersuchen von Geräten im Rahmen des Microsoft Managed Desktop-Diensts. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Nur eine Änderung anwenden, nachdem Microsoft Managed Desktop Operations bewertet und empfohlen wurde
+Microsoft Defender Advanced Threat Protection   | Überwachen und untersuchen von Geräten im Rahmen des Microsoft Managed Desktop-Diensts. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Nur eine Änderung anwenden, nachdem Microsoft Managed Desktop Operations bewertet und empfohlen wurde
 Microsoft Store für Unternehmen |  Konfigurieren und Verwalten des Windows Autopilot-Profils für den Microsoft Managed Desktop-Dienst. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Ändern Sie nicht die Konfiguration des Microsoft Managed Desktop-Windows-Autopilot-Profils, oder fügen Sie zugewiesene Geräte hinzu.
 Zertifikate | | -Erstellen einer Supportanforderung 60 Tage vor Ablauf eines Zertifikats, Anfordern von Informationen für eine geplante Konfigurationsänderung, einschließlich Konfigurationsdetails, Umfang, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Aktualisieren aller Zertifikate, die zum Konfigurieren von Zertifikat Profilen, VPN-Profilen und WLAN-Profilen erforderlich sind.
 
@@ -91,7 +92,7 @@ Zertifikate | | -Erstellen einer Supportanforderung 60 Tage vor Ablauf eines Zer
 
 ## <a name="device-wipe-with-factory-reset"></a>Gerätezurücksetzung mit Factory-Reset
 
-Das Team für verwaltete Desktop Vorgänge kann ein Zurücksetzen auf von Microsoft verwaltete Desktop verwaltete Geräte ausführen, die neu abbildet werden müssen. Dies ist hilfreich, wenn Sie einem anderen Mitarbeiter ein Gerät geben müssen oder wenn ein Mitarbeiter Ihr Unternehmen verlässt. 
+Das Microsoft Managed Desktop Operations-Team kann bei Bedarf ein werksseitiges Zurücksetzen der in den Dienst eingeschriebenen Geräte durchführen. Dies ist hilfreich, wenn Sie einem anderen Mitarbeiter ein Gerät geben müssen oder wenn ein Mitarbeiter Ihr Unternehmen verlässt. 
 
 Es gibt einige Voraussetzungen:
 
@@ -113,4 +114,4 @@ Wenn das Gerät zurückgesetzt wurde, können Sie es an eine andere Person in Ih
 
 BitLocker ist eine wichtige Komponente der Datensicherheit in diesem Prozess. Bei der BitLocker-Verschlüsselung auf Microsoft Managed Desktop-Geräten bleiben Daten auf dem Laufwerk auch dann sicher, wenn auf das Gerät ein Factory-Reset angewendet wurde. Alle Daten, die sich auf dem Laufwerk befanden, sind für den nächsten Benutzer des Geräts nicht verfügbar. Weitere Informationen finden Sie unter [Übersicht über BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
-Weitere Informationen finden Sie unter [Factory Reset a Device](https://docs.microsoft.com/intune/devices-wipe#factory-reset-a-device). 
+Weitere Informationen finden Sie unter [Factory Reset a Device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 
