@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Schritte zum Upgrade Ihres Unternehmens von Office 365 Business Premium auf Microsoft 365 Business.
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002117"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231409"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Upgrade auf Microsoft 365 Business von Office 365 Business Premium
 
@@ -38,37 +38,6 @@ Weitere Informationen zu Microsoft 365 Business finden Sie unter [Microsoft.com]
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Worin besteht der Unterschied zwischen Office 365 Business Premium und Microsoft 365 Business?
 Wir haben einen nebeneinander Vergleich dieser beiden Pläne zur [Microsoft 365 Business-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)hinzugefügt. 
 
-1. Nachdem Sie neue Lizenzen erworben haben, und dies ist das erste Mal, wird das Setup Banner für Microsoft 365 Business oben im Admin Center angezeigt.
-    
-    > [!NOTE]
-    > Das Setup Banner ist eine Möglichkeit zum Hinzufügen neuer Benutzer, einer neuen Domäne und zum Migrieren von e-Mails für neue Benutzer. Wenn Sie keine Vorgehensweise ausführen möchten, sollten Sie den Assistenten weiterhin durchlaufen und die Standardoptionen auswählen, damit er von der Administrator-Startseite ausgeblendet wird. 
-  
-   ![Wählen Sie Start Setup auf dem Microsoft 365 Business ist zum Einrichten von Bannern Ready.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Wählen Sie **Setup starten** aus.
-    
-2. Auf der Seite **Personalisieren Ihrer Anmeldung und e-Mail-Adresse** können Sie eine Domäne hinzufügen, indem Sie eine Domäne verbinden auswählen, die **Sie bereits besitzen** , wenn Sie diese Gelegenheit zum Hinzufügen einer weiteren Domäne zu Ihrem Abonnement verwenden möchten. 
-    
-    Wenn Sie bereits eine Domäne eingerichtet haben, zeigt das zweite Feld an, dass Sie _Ihren Domänennamen_ \> **für e-Mails und die Anmeldung** **weiterhin verwenden** \<werden.   Wenn Sie keine Domäne mit Ihrem Abonnement eingerichtet haben, wird Sie sagen, dass Sie **weiterhin** \< _Ihr Unternehmen Name.onmicrosoft.com_ \> **für e-Mail und Anmeldung**verwenden.  
-    
-    Wählen Sie **Weiter** aus.
-    
-    ![Wählen Sie auf der Seite personalisieren der Anmeldung und der e-Mail-Adresse die Option aus, um eine Domäne hinzuzufügen, oder verwenden Sie die, die Sie verwendet haben.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. Auf der Seite **neue Benutzer hinzufügen** können Sie neue Benutzer hinzufügen, wenn Sie neue Mitarbeiter haben, denen Sie die Microsoft 365 Business licenses zuweisen möchten. 
-    
-    Wenn Sie keine neuen Mitarbeiter hinzufügen möchten und den vorhandenen Benutzern Lizenzen zuweisen möchten, wählen Sie **weiter**aus.
-    
-4. Auf der Seite **e-Mail-Nachrichten migrieren** können Sie auswählen, dass e-Mails für alle neuen Benutzer migriert werden sollen, die Sie in Schritt 3 hinzugefügt haben. Sie können diesen Schritt auch überspringen. Wählen Sie **Weiter** aus.
-    
-5. Wählen Sie auf der letzten Seite **zum Admin Center wechseln**aus, und setzen Sie das Setup dort fort.
-    
-6. Wechseln Sie im Admin Center zu **Benutzer** \> **aktive Benutzer**.
-    
-7. Wählen Sie den Benutzer aus, dem Sie die **Microsoft 365 Business** License zuweisen möchten, und wählen Sie dann **Bearbeiten** neben **Produktlizenzen**aus.
-    
-    ![Wählen Sie auf der Benutzerkarte Nebenprodukt Lizenzen bearbeiten aus.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>Bevor Sie loslegen
 
 - **Wann sollte ich ein Upgrade auswählen?** Das Upgrade ist die richtige Wahl, wenn Sie alle einem einzelnen Plan zugewiesenen **Benutzer** aktualisieren möchten. Wenn Sie Upgrade auswählen, werden alle Plan Benutzer gleichzeitig zu einem anderen Plan gewechselt. Wenn Sie nicht alle einem einzelnen Plan zugewiesenen Upgrades aktualisieren möchten, kaufen Sie Lizenzen für den neuen Plan (in diesem Fall Microsoft 365 Business), und [weisen Sie diese Lizenzen](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) jedem Benutzer einzeln zu, der aktualisiert werden soll. 

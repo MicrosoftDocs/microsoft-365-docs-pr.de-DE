@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über die automatische Erweiterung der Archivierung in Office 365, die unbegrenzten Archivspeicher für Exchange Online Postfächer bereitstellt.
-ms.openlocfilehash: 475bf53304be55bbac085693788cff4b5522bb14
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c13a6067a4c17b78a869be151b6e119f0c784f46
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082545"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231376"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die unbegrenzte Archivierung in Office 365
 
@@ -55,13 +55,13 @@ Hier finden Sie eine kurze Übersicht über den Prozess.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Was wird auf den zusätzlichen Archivspeicherplatz verschoben?
 
-Um den automatisch wachsenden Archivspeicher effizient zu nutzen, werden möglicherweise die Ordner verschoben. Office 365 bestimmt, welche Ordner verschoben werden, wenn dem Archiv zusätzlicher Speicher hinzugefügt wird. Wenn ein Ordner verschoben wird, wird automatisch ein Unterordner unter dem ursprünglichen Ordner im Archivteil der Ordnerliste in Outlook erstellt. Dieser neue Unterordner verweist auf die Elemente, die verschoben wurden. Die Benennungskonvention, die Office 365 zum Benennen dieses Ordners verwendet, ist ** \<Folder\>Name _yyyy (erstellt in Mmm dd, yyyy h_mm)**, wobei Folgendes gilt: 
-  
+Um den automatisch expandierenden Archivspeicher effizient zu nutzen, werden Ordner möglicherweise verschoben. Office 365 bestimmt, welche Ordner verschoben werden, wenn dem Archiv zusätzlicher Speicher hinzugefügt wird. Wenn ein Ordner verschoben wird, werden in einigen Fällen automatisch ein oder mehrere Unterordner erstellt, und Elemente aus dem ursprünglichen Ordner werden an diese Ordner verteilt, um den Verschiebungsprozess zu vereinfachen. Wenn Sie den Archivteil der Ordnerliste in Outlook anzeigen, werden diese Unterordner im ursprünglichen Ordner angezeigt.  Die Benennungskonvention, die Office 365 zum Benennen dieser Unterordner verwendet, ist ** \<Folder\>Name _yyyy (erstellt auf Mmm dd, yyyy h_mm)**, wobei Folgendes gilt:
+
 - **yyyy** ist das Jahr, in dem die Nachrichten im Ordner empfangen wurden. 
     
-- **mmm tt, yyyy h_m** ist das Datum und die Uhrzeit, zu der der Unterordner von Office 365 im UTC-Format basierend auf der Zeitzone des Benutzers und den regionalen Einstellungen in Outlook erstellt wurde. 
+- **mmm tt, yyyy h_m** ist das Datum und die Uhrzeit, zu der der Unterordner von Office 365 im UTC-Format erstellt wurde, basierend auf der Zeitzone des Benutzers und den regionalen Einstellungen in Outlook. 
     
-Die folgenden Screenshots zeigen eine Ordnerliste vor und nach dem Verschieben von Nachrichten in einem automatisch erweiterten Archiv.
+Die folgenden Screenshots zeigen eine Ordnerliste vor und nach dem Verschieben von Nachrichten in ein automatisch erweitertes Archiv.
   
  **Bevor zusätzlicher Speicher hinzugefügt wird**
   
@@ -71,6 +71,9 @@ Die folgenden Screenshots zeigen eine Ordnerliste vor und nach dem Verschieben v
   
 ![Ordnerliste des Archivpostfachs, nachdem das Archiv automatisch erweitert wurde](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
+> [!NOTE]
+> Wie bereits beschrieben, verschiebt Office 365 Elemente in Unterordner (und benennt Sie mit der oben beschriebenen Benennungskonvention), um die Verteilung von Inhalten an ein zusätzliches Archiv zu unterstützen. Das Verschieben von Elementen in Unterordner ist jedoch möglicherweise nicht immer der Fall. Manchmal kann ein ganzer Ordner in ein zusätzliches Archiv verschoben werden. In diesem Fall wird der ursprüngliche Name des Ordners beibehalten.  In der Ordnerliste in Outlook wird nicht deutlich, dass der Ordner in ein zusätzliches Archiv verschoben wurde.
+
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook-Anforderungen für den Zugriff auf Elemente in einem automatisch erweiterten Archiv
 
 Für den Zugriff auf Nachrichten, die in einem automatisch erweiterten Archiv gespeichert sind, müssen Benutzer einen der folgenden Outlook-Clients verwenden:
@@ -102,11 +105,11 @@ In diesem Abschnitt wird die Funktionalität zwischen der automatisch wachsenden
   
 - **eDiscovery:** Wenn Sie ein Office 365 eDiscovery-Tool wie Inhaltssuche oder in-Place-eDiscovery verwenden, werden auch die zusätzlichen Speicherbereiche in einem automatisch erweiterten Archiv durchsucht.
     
-- **Aufbewahrungs**:* * Wenn Sie ein Postfach mithilfe von Tools wie Beweissicherungsverfahren in Exchange Online-oder eDiscovery-Fall Haltern und Aufbewahrungsrichtlinien im Security and Compliance Center speichern, wird der Inhalt in einem automatisch erweiterten Archiv ebenfalls aufbewahrt.
+- **Aufbewahrung:** Wenn Sie ein Postfach mithilfe von Tools wie Beweissicherungsverfahren in Exchange Online-oder eDiscovery-Fall-und Aufbewahrungsrichtlinien im Security and Compliance Center speichern, wird der Inhalt in einem automatisch erweiterten Archiv ebenfalls aufbewahrt.
     
 - **Messaging-Datensatzverwaltung (MRM):** Wenn Sie MRM-Löschrichtlinien in Exchange Online verwenden, um abgelaufene Postfachelemente endgültig zu löschen, werden abgelaufene Elemente, die sich im automatisch erweiterten Archiv befinden, ebenfalls gelöscht.
     
-- **Import Service**:* * Sie können den Office 365-Import Dienst verwenden, um PST-Dateien in das automatisch erweiterte Archiv eines Benutzers zu importieren. Sie können bis zu 100 GB Daten aus PST-Dateien in das Archivpostfach des Benutzers importieren. 
+- **Import Dienst:** Sie können den Office 365 Import-Dienst verwenden, um PST-Dateien in das automatisch erweiterte Archiv eines Benutzers zu importieren. Sie können bis zu 100 GB Daten aus PST-Dateien in das Archivpostfach des Benutzers importieren. 
 
 ## <a name="more-information"></a>Weitere Informationen
 
