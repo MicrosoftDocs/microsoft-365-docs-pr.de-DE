@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 'Administratoren können Informationen zu Warteschlangen Warnungen und Warteschlangen im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center erhalten.'
-ms.openlocfilehash: ef8b4acd4008f3039030049893f83a5e49e1efc2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66bd4116cfb84d15bbecafa269fcc2c7a88789d8
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082475"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290545"
 ---
 # <a name="queue-alerts-and-queues"></a>Warteschlangenwarnungen und Warteschlangen
 
@@ -26,9 +26,9 @@ Wenn Nachrichten nicht von Ihrer Office 365 Organisation an Ihre lokalen oder Pa
 
 - In Ihrer lokalen Umgebung wurden Netzwerk-oder Firewall-Änderungen vorgenommen.
 
-Office 365 wird die Zustellung für 48 Stunden fortgesetzt. Nach 48 Stunden laufen die Nachrichten ab und werden an die Absender in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Bounce-Nachrichten bezeichnet) zurückgegeben.
+Office 365 wird die Zustellung 24 Stunden lang erneut durchgeführt. Nach 24 Stunden laufen die Nachrichten ab und werden an die Absender in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Bounce-Nachrichten bezeichnet) zurückgegeben.
 
-Wenn das e-Mail-Volumen in der Warteschlange den vordefinierten Schwellenwert überschreitet (der Standardwert ist 2000 Nachrichten), sind die Warnungen im Nachrichtenfluss-Dashboard bei **den letzten Warnungen**verfügbar, und Administratoren erhalten eine e-Mail-Benachrichtigung (an Ihre alternative e-Mail-Adresse). . Informationen zum Konfigurieren des warnungsschwellenwerts, des täglichen Benachrichtigungs Grenzwerts und/oder der Empfänger der Warnung finden Sie im Abschnitt **Anpassen von Warteschlangen Warnungen** weiter unten.
+Wenn das e-Mail-Volumen in der Warteschlange den vordefinierten Schwellenwert überschreitet (der Standardwert ist 2000 Nachrichten), werden die Warnungen bei den **letzten Warnungen**im Nachrichtenfluss-Dashboard zur Verfügung gestellt, und Administratoren erhalten eine e-Mail-Benachrichtigung (an Ihre alternative e-Mail-Adresse). Informationen zum Konfigurieren des warnungsschwellenwerts, des täglichen Benachrichtigungs Grenzwerts und/oder der Empfänger der Warnung finden Sie im Abschnitt **Anpassen von Warteschlangen Warnungen** weiter unten.
 
 ![Warteschlangen Warnungen im Bereich "zuletzt verwendete Benachrichtigungen" im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 

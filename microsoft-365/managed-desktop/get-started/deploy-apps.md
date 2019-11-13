@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5f1e2bd2440b5c38c958d3182684e87643f2e853
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012026"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302912"
 ---
 # <a name="deploy-apps-to-devices"></a>Bereitstellen von apps auf Geräten
 Ein Teil des onboardings für Microsoft Managed Desktop umfasst das Hinzufügen und Bereitstellen von apps auf den Geräten Ihrer Benutzer. Nachdem Sie das Microsoft Managed Desktop Portal verwendet haben, können Sie Ihre apps hinzufügen und bereitstellen. 
@@ -83,7 +83,7 @@ Zuordnungstyp "App" |   Gruppenverwendung   | Beispiel Azure Ad Name
 --- | --- | ---
 Available |  Die APP wird über die APP oder Website des Unternehmensportals verfügbar sein. | MMD – *App-Name* – verfügbar
 Erforderlich |  Die APP wird auf Geräten in den ausgewählten Gruppen installiert. | MMD – *App-Name* – erforderlich
-Uninstall |  Die APP wird auf den Geräten in den ausgewählten Gruppen deinstalliert. | MMD – *App-Name* – deinstallieren
+Uninstall |  Die APP wird von Geräten in den ausgewählten Gruppen deinstalliert. | MMD – *App-Name* – deinstallieren
 
 Fügen Sie Ihre Benutzer zu diesen Gruppen hinzu, um entweder die app verfügbar zu machen, die APP zu installieren oder die APP von Ihrem von Microsoft verwalteten Desktop Gerät zu entfernen. 
 
@@ -102,11 +102,11 @@ Fügen Sie Ihre Benutzer zu diesen Gruppen hinzu, um entweder die app verfügbar
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
 
-1. [Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal](add-admin-contacts.md)
-2. [Anpassen des bedingten Zugriffs](conditional-access.md)
+1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
+2. [Bedingten Zugriff anpassen](conditional-access.md)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
-4. [Bereitstellen des InTune-Unternehmensportals](company-portal.md)
-5. [Aktivieren des Enterprise-Status-Roaming](enterprise-state-roaming.md)
+4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
+5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Einrichten von Geräten](set-up-devices.md)
 7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
 8. Bereitstellen von apps (dieses Thema)

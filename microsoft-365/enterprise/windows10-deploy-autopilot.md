@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 0d85bc51ac3f224b396281ff4e8414541097ed22
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 244aa9a2749c41471760c5263a6df6d745e5ade6
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746541"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302942"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Schritt 3: Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot
 
@@ -31,9 +31,9 @@ Mit Windows Autopilot können Sie neue, vorkonfigurierte Windows 10-Geräte einr
 
 Das Poster von Windows Autopilot ist zwei Seiten im Portraitmodus (11 x 17). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
 
-[![Poster "Bereitstellen von Windows 10 AutoPilot"](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+[![Poster "Bereitstellen von Windows 10 AutoPilot"](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=RWOcP%2BhJZYpYcGKMhuTUEL6lcuWdBFefqR%2BQQfmj6IM%3D&st=2019-11-12T23%3A48%3A59Z&se=2019-11-13T23%3A58%3A59Z&sp=r)
 
-Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) -oder [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) -Format herunterladen.
+Sie können dieses Poster auch in [PDF-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) oder [Visio-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) Format herunterladen.
 
 ## <a name="part-1-start-windows-autopilot-deployment"></a>Abschnitt 1: Starten der Windows Autopilot-Bereitstellung
 Siehe [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot), um:
