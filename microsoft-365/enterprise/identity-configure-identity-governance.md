@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Identitätsgovernance für Ihren Azure AD-Mandanten verstehen und konfigurieren.
-ms.openlocfilehash: 3bc0872eefa71288d25ce83ebb8f3c51d8959678
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370382"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302922"
 ---
-# <a name="step-7-configure-identity-governance"></a>Schritt 7: Konfigurieren der Identitätsgovernance
+# <a name="step-6-configure-identity-governance"></a>Schritt 6: Konfigurieren der Identitätsgovernance
 
 ![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
