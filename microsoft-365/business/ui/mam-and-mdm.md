@@ -19,22 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie den Unterschied zwischen der Verwaltung mobiler Geräte und der Mobile App Verwaltung oder MDM und MAM erkennen.
-ms.openlocfilehash: 338390f7e824d5fbff1bf25e1291aa9803e8dcd6
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+description: Erfahren Sie mehr über die Unterschiede zwischen der Verwaltung mobiler Geräte und Mobile App Verwaltung oder MDM und MAM.
+ms.openlocfilehash: fff9fc40f9dbead58b456fb3449133c3eb8523d4
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697892"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38319973"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Unterschied zwischen MDM und MAM
 
-Microsoft 365 Business bietet zahlreiche Möglichkeiten zum Schutz Ihrer Geschäftsdaten. In [Overview of Microsoft 365 Business](../microsoft-365-business-overview.md) finden Sie weitere Informationen zu den verschiedenen Schutzbestimmungen, die automatisch eingerichtet werden, und was Sie einrichten können, um Ihr Unternehmen weiter zu schützen. Sie können auch Richtlinien einrichten, die Ihre Windows 10-Geräte schützen, sowie die Daten auf Ihren mobilen Geräten.
-[Festlegen von Anwendungsschutz Einstellungen für Windows 10-Geräte](../protection-settings-for-windows-10-devices.md)
+Microsoft 365 Business bietet eine Reihe von Möglichkeiten zum Schutz Ihrer Geschäftsdaten. Unter [Overview of Microsoft 365 Business](../microsoft-365-business-overview.md) finden Sie weitere Informationen zu den verschiedenen Schutzbestimmungen, die automatisch eingerichtet werden und die Sie selbst einrichten können, um Ihr Unternehmen weiter zu schützen. Sie können auch Richtlinien einrichten, die Ihre Windows 10-Geräte und die Daten auf Ihren mobilen Geräten schützen.
+[Legen Sie Anwendungsschutz Einstellungen für Windows 10-Geräte fest](../protection-settings-for-windows-10-devices.md).
+
 ## <a name="mobile-device-management-or-mdm"></a>Verwaltung mobiler Geräte oder MDM
 
-Microsoft 365 Business ermöglicht Ihnen das Einrichten von Richtlinien zum Schutz von Daten auf Ihren Windows 10-Geräten. Wenn ein Gerät der Verwaltung mobiler Geräte unterliegt, Steuern Sie das gesamte Gerät und können Daten davon abwischen und auf die Werkseinstellungen zurücksetzen. Weitere Informationen finden Sie unter [Festlegen von Geräteschutz Einstellungen für Windows 10-PCs](../protection-settings-for-windows-10-pcs.md) .
+Mit Microsoft 365 Business können Sie Richtlinien einrichten, mit denen Daten auf Ihren Windows 10-Geräten geschützt werden. Wenn ein Gerät der Verwaltung mobiler Geräte unterliegt, Steuern Sie das gesamte Gerät und können Daten davon abwischen und auch auf die Werkseinstellungen zurücksetzen. Weitere Informationen finden Sie unter [Festlegen von Geräteschutz Einstellungen für Windows 10-PCs](../protection-settings-for-windows-10-pcs.md).
 
 ## <a name="mobile-application-management-or-mam"></a>Mobile Anwendungsverwaltung oder MAM
 
-Durch die Verwaltung mobiler Anwendungen können Sie Ihre Geschäftsdaten auf persönlichen Geräten Ihrer Benutzer wie iPhones und Androiden sowie auf Ihren persönlichen Win 10-Computern steuern. Mit den von Ihnen festgelegten Anwendungsverwaltungsrichtlinien können Benutzer Geschäftsdaten aus Office-Apps in Ihre persönlichen apps kopieren und auch alle Daten aus den Office-Apps auf Ihren persönlichen Geräten entfernen. Weitere Informationen finden Sie unter [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](../app-protection-settings-for-android-and-ios.md) und Festlegen von [Anwendungsschutz Einstellungen für Windows 10-Geräte](../protection-settings-for-windows-10-devices.md) .
+Mit der Verwaltung mobiler Anwendungen können Sie Ihre Geschäftsdaten auf persönlichen Geräten Ihrer Benutzer wie iPhones und Androiden sowie auf Ihren persönlichen Win 10-Computern steuern. Sie können Anwendungsverwaltungsrichtlinien verwenden, um zu verhindern, dass Ihre Benutzer Geschäftsdaten aus Office-Apps in Ihre persönlichen apps kopieren. Sie können auch alle Daten aus den Office-Apps auf Ihren persönlichen Geräten entfernen. Weitere Informationen finden Sie unter [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](../app-protection-settings-for-android-and-ios.md) und [Festlegen von Anwendungsschutz Einstellungen für Windows 10-Geräte](../protection-settings-for-windows-10-devices.md).
