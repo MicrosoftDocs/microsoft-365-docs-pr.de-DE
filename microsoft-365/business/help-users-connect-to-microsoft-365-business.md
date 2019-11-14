@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Erfahren Sie, was Sie erwarten, wenn Business Cloud Suite-Setup abgeschlossen ist.
-ms.openlocfilehash: b11c247e8d857f8c7a4d41f633267038b3dd86c6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574696"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320186"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>Hilfe für Benutzer bei der Herstellung der Verbindung zu Microsoft 365 Business
 
-[] Nach dem Abschluss des Setups sind Ihre standardmäßigen Geräterichtlinien vorhanden und können aktiviert werden. Auf mobilen Geräten laden die Benutzer Office-Apps herunter. Nun werden Richtlinien angewendet, wenn der Benutzer sich mit seinem Geschäfts,- Schul- oder Unikonto anmeldet. Es gibt noch weitere Aufgaben zu erledigen, bevor Richtlinien auf Windows-PCs angewendet werden, wie ein direktes Upgrade. Lesen Sie bitte folgende Artikel, und verweisen Sie Ihre Benutzer darauf, um diesen die Einrichtung und die Herstellung der Verbindung zu vereinfachen.
+Nachdem Sie das Setup abgeschlossen haben, sind Ihre Standardgeräte Richtlinien vorhanden und können angewendet werden. Auf mobilen Geräten laden Benutzer Office-Apps herunter. Richtlinien werden dann angewendet, wenn sich der Benutzer mit seinem Arbeits-oder Schulkonto anmeldet. Es gibt ein bisschen mehr Arbeit, bevor Richtlinien auf Windows-PCs angewendet werden, beispielsweise auf ein direktes Upgrade. Weitere Informationen finden Sie unter und Freigeben der folgenden Themen, um Benutzer bei der Einrichtung und Verbindung zu unterstützen:
   
 [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md)
   

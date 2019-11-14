@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035705"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311109"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
  **Zusammenfassung:** Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.
   
-Dieser Artikel enthält Empfehlungen, wie Sie SharePoint Online-Teamwebsites und den Dateischutz so konfigurieren, dass sowohl Sicherheit als auch einfache Zusammenarbeit sichergestellt sind. In diesem Artikel werden vier verschiedene Konfigurationen definiert, beginnend mit einer öffentlichen Website in Ihrer Organisation mit sehr offenen Freigaberichtlinien. Mit jeder weiteren Konfiguration wird der Schutz jeweils erheblich verbessert, gleichzeitig wird aber auch der Zugriff und die Zusammenarbeit auf die für die Benutzer relevanten Ressourcen eingeschränkt. Verwenden Sie diese Empfehlungen als Ausgangspunkt, und passen Sie die Konfigurationen entsprechend den Bedürfnissen Ihrer Organisation an. 
+Dieser Artikel enthält Empfehlungen, wie Sie SharePoint Online-Teamwebsites und den Dateischutz so konfigurieren, dass sowohl Sicherheit als auch einfache Zusammenarbeit sichergestellt sind. In diesem Artikel werden vier verschiedene Konfigurationen definiert, beginnend mit einer öffentlichen Website in Ihrer Organisation mit sehr offenen Freigaberichtlinien. Mit jeder weiteren Konfiguration wird der Schutz jeweils erheblich verbessert, gleichzeitig wird aber auch der Zugriff und die Zusammenarbeit auf die für die Benutzer relevanten Ressourcen eingeschränkt. Verwenden Sie diese Empfehlungen als Ausgangspunkt, und passen Sie die Konfigurationen entsprechend den Bedürfnissen Ihrer Organisation an.
   
 Die Konfigurationen in diesem Artikel sind auf die Microsoft-Empfehlungen für drei Schutzebenen für Daten, Identitäten und Geräte ausgerichtet:
   
@@ -40,7 +40,7 @@ Die Konfigurationen in diesem Artikel sind auf die Microsoft-Empfehlungen für d
     
 - Schutz von streng vertraulichen Daten
     
-Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfohlen werden, finden Sie in den folgenden Ressourcen: 
+Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfohlen werden, finden Sie in den folgenden Ressourcen:
   
 - [Identität- und Geräteschutz für Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
@@ -54,7 +54,7 @@ Empfehlungen für SharePoint Online-Teamwebsites greifen auf eine Vielzahl von M
 
 Erläuterung der Abbildung:
   
-- Basisschutz umfasst zwei Optionen für SharePoint Online-Teamwebsites: eine öffentliche Website und eine private Website. Öffentliche Websites können von allen Benutzern in einer Organisation ermittelt werden, und alle haben Zugriff darauf. Private Websites können nur von Mitgliedern der Website ermittelt werden, und nur diese haben Zugriff darauf. Beide Websitekonfigurationen lassen die Freigabe für Personen außerhalb der Gruppe zu. 
+- Basisschutz umfasst zwei Optionen für SharePoint Online-Teamwebsites: eine öffentliche Website und eine private Website. Öffentliche Websites können von allen Benutzern in einer Organisation ermittelt werden, und alle haben Zugriff darauf. Private Websites können nur von Mitgliedern der Website ermittelt werden, und nur diese haben Zugriff darauf. Beide Websitekonfigurationen lassen die Freigabe für Personen außerhalb der Gruppe zu.
     
 - Websites mit der Schutzebene „Sensibel“ und „Streng vertraulich“ sind private Websites, bei denen der Zugriff auf Mitglieder bestimmter Gruppen beschränkt ist.
     

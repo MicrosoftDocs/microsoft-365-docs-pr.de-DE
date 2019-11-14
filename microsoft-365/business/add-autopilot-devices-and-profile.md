@@ -21,30 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: In diesem Artikel erfahren Sie, wie Sie Windows Autopilot zum Einrichten neuer Windows 10-Geräte für Ihr Unternehmen verwenden.
-ms.openlocfilehash: d028ea3e902965d55c445dc3b3a02aa315201b25
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5f40dac57285b83da57d4506bac58e562475522c
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574786"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38323093"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
-Sie können Windows Autopilot verwenden, um **neue** Windows 10-Geräte für Ihr Unternehmen einzurichten, damit Sie für den produktiven einsatzbereit sind, sobald Sie Sie an Ihre Mitarbeiter weitergeben.
+Sie können Windows Autopilot verwenden, um **neue** Windows 10-Geräte für Ihr Unternehmen einzurichten, damit diese bereitgestellt werden, wenn Sie Sie an Ihre Mitarbeiter weitergeben.
   
 ## <a name="device-requirements"></a>Geräteanforderungen
 
 Geräte müssen diese Anforderungen erfüllen:
   
-- Windows 10, Version 1703 oder höher.
+- Windows 10, Version 1703 oder höher
     
-- Neue Geräte, die nicht auf der Windows-Willkommensseite angezeigt werden.
+- Neue Geräte, die die Out-of-Box-Erfahrung von Windows noch nicht durchlaufen haben
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Befolgen der Setupanleitung zum Erstellen von Geräten und Profilen
 
-[![Bezeichnungsfeld, damit Sie wissen, dass sich das Admin Center ändert, und weitere Informationen finden Sie unter aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, beginnen Sie am besten mit der schrittweisen Anleitung. Doch Sie können auch ohne die Anleitung [Geräte hinzufügen](create-and-edit-autopilot-devices.md) und ihnen [Profile zuweisen](create-and-edit-autopilot-profiles.md). 
+Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, ist die beste Möglichkeit, mit der ersten Schritte zu beginnen, die schrittweise Anleitung. Sie können auch [Geräte hinzufügen](create-and-edit-autopilot-devices.md) und Ihnen [profile zuweisen](create-and-edit-autopilot-profiles.md) , ohne die Anleitung zu verwenden. 
   
 1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
@@ -56,37 +56,35 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, beginnen Sie am 
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Navigieren Sie auf der Seite **CSV-Datei mit Liste der Geräte hochladen** zu den Speicherorten, an denen Sie die vorbereitete CSV-Datei gespeichert haben, und wählen Sie **Öffnen** \> **Weiter**. Die Datei sollte drei Überschriften aufweisen:
+3. Navigieren Sie auf der Seite **Upload. CSV-Datei mit Geräteliste** zu einem Speicherort, an dem Sie die vorbereitete bereit haben. CSV-Datei, und **Öffnen** \> Sie dann **Next**. Die Datei muss drei Kopfzeilen aufweisen:
     
-  - Spalte A: Seriennummer des Geräts
+    - Spalte A: Seriennummer des Geräts
     
-  - Spalte B: Windows-Produkt-ID
+    - Spalte B: Windows-Produkt-ID
     
-  - Spalte C: Hardwarehash
+    - Spalte C: Hardwarehash
     
-    Diese Informationen erhalten Sie von Ihrem Hardwareanbieter oder durch Verwendung des [PowerShell-Skripts Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), das eine CSV-Datei generiert. 
+    Sie können diese Informationen von Ihrem Hardwareanbieter abrufen, oder Sie können das [PowerShell-Skript Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) verwenden, um eine CSV-Datei zu generieren. 
     
     Weitere Informationen finden Sie unter [CSV-Datei mit Geräteliste](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e). Sie können auf der Seite **CSV-Datei mit Liste der Geräte hochladen** auch eine Beispieldatei herunterladen. 
     
-4. Auf der Seite **Profil zuweisen** können Sie entweder ein vorhandenes Profil auswählen oder ein neues Profil erstellen. Wenn Sie noch keines haben, werden Sie aufgefordert, ein neues zu erstellen. 
+4. Auf der Seite **Profil zuweisen** können Sie entweder ein vorhandenes Profil auswählen oder einen neuen erstellen. Wenn Sie noch nicht über eine verfügen, werden Sie aufgefordert, eine zu erstellen. 
     
     Ein Profil ist eine Sammlung von Einstellungen, die für ein einzelnes Gerät oder eine Gruppe von Geräten gelten können.
     
-    Die Standardfunktionen sind erforderlich und werden automatisch festgelegt. Es folgen die Standardfunktionen:
+    Die Standardfeatures sind erforderlich und werden automatisch festgelegt. Es folgen die Standardfunktionen:
     
-  - Cortana, OneDrive und OEM-Registrierung werden übersprungen.
+    - Überspringen Sie Cortana, OneDrive und OEM-Registrierung.
     
-  - Erstellen Sie eine Anmeldeumgebung mit Ihrem Unternehmensbranding.
+    - Erstellen Sie eine Anmeldeumgebung mit Ihrem Unternehmensbranding.
     
-  - Ihre Geräte werden mit Azure Active Directory-Konten verbunden und automatisch für die Verwaltung mit Microsoft 365 Business registriert.
+    - Verbinden Sie Ihre Geräte mit Azure Active Directory-Konten, und registrieren Sie Sie automatisch für die Verwaltung durch Microsoft 365 Business.
     
-    Weitere Informationen finden Sie unter
-    
-    [Informationen zu AutoPilot-Profileinstellungen](autopilot-profile-settings.md) . 
+    Weitere Informationen finden Sie unter [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md). 
     
 5. Die anderen Einstellungen sind **Datenschutzeinstellungen überspringen** und **Nicht zulassen, dass der Benutzer der lokale Administrator wird**. Beide sind standardmäßig auf **Aus** festgelegt. 
     
     Wählen Sie **Weiter** aus.
     
-6. Die Seite **Fertig** zeigt an, dass das von Ihnen erstellte (oder ausgewählte) Profil auf die Gerätegruppe angewendet wird, die Sie durch das Hochladen der Liste der Geräte erstellt haben. Diese Einstellungen werden wirksam, wenn sich die Benutzer des Geräts als Nächstes wieder anmelden. Wählen Sie **Schließen** aus.
+6. **Sie haben** angegeben, dass das Profil, das Sie erstellt (oder ausgewählt haben), auf die Gerätegruppe angewendet wird, die Sie durch Hochladen der Geräteliste erstellt haben. Die Einstellungen werden wirksam, wenn sich die Geräte Benutzer als nächstes anmelden. Wählen Sie **Schließen** aus.
     

@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: Erfahren Sie mehr über Geräterichtlinien für Windows 10, die für alle Benutzer in Ihrer Organisation gelten.
-ms.openlocfilehash: 11c8f75f56a86895d7f81fc242490303c10ac24e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: ad092d2b2760a55e16c44a66350626c90c9ac7c5
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575426"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321362"
 ---
 # <a name="configure-windows-10-devices"></a>Konfigurieren von Windows 10-Geräten
 
-[] Während des Setups wird eine Geräterichtlinie für Windows 10 erstellt, die für alle Benutzer in Ihrer Organisation gilt. Wenn sich ein Benutzer mit seinem Geschäfts-, Schul- oder Unikonto mit einem Windows 10-Gerät bei einer Office-App anmeldet, werden die von Ihnen konfigurierten Einstellungen automatisch angewendet, um gewährleisten, dass der Benutzer auf sichere Weise die Verbindung herstellt.
+Während des Setups erstellen Sie eine Geräterichtlinie für Windows 10, die für alle Benutzer in Ihrer Organisation gilt. Wenn sich ein Benutzer mit seinem Geschäfts-oder Schulkonto bei einer Office-App auf seinem Windows 10-Gerät anmeldet, werden die von Ihnen konfigurierten Einstellungen automatisch angewendet, um sicherzustellen, dass der Benutzer sich auf sichere Weise verbindet.
   
-Wir empfehlen, während des Setups die Standardkonfiguration zu übernehmen. Nach dem Setup können Sie weitere Richtlinien erstellen und hiermit spezielle Benutzergruppen als Zielgruppe einschließen.
+Wir empfehlen, während des Setups die Standardkonfiguration zu übernehmen. Nach dem Setup können Sie weitere Richtlinien erstellen und diese auf bestimmte Benutzergruppen ausrichten.
   
 Zum Hinzufügen einer Richtlinie zum Verwalten der Konfiguration von Windows 10-Geräten lesen Sie [Festlegen der Gerätekonfigurationen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md).
   

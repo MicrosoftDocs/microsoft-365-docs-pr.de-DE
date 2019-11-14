@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Hier erfahren Sie, wie Sie Autopilot-Profile erstellen, bearbeiten, löschen oder entfernen.
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574716"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320236"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Erstellen und Bearbeiten von AutoPilot-Profilen
 
@@ -40,17 +40,17 @@ Ein Profil gilt für ein Gerät oder eine Gerätegruppe.
   
 2. Klicken Sie auf der Seite **Autopilot** auf **** die Register \> Karte Profile Profil **Erstellen**.
     
-3. Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, mit dem Sie es identifizieren können, z.B. Marketing. Aktivieren Sie die gewünschte Einstellung (weitere Informationen finden Sie unter [Informationen zu AutoPilot-Profileinstellungen](autopilot-profile-settings.md)), und wählen Sie **Speichern**.
+3. Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, das Sie bei der Identifizierung unterstützt, beispielsweise Marketing. Aktivieren Sie die gewünschte Einstellung, und wählen Sie dann **Speichern**aus. Weitere Informationen zu Autopilot-Profileinstellungen finden Sie unter [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Zuweisen eines Profils zu einem Gerät
 
-Nachdem Sie ein Profil erstellt haben, können Sie es einem Gerät oder einer Gruppe von Geräten zuweisen. Sie können ein vorhandenes Profil in der [schrittweisen Anleitung](add-autopilot-devices-and-profile.md) auswählen, es neuen Geräten zuordnen oder ein vorhandenes Profil für ein Gerät oder eine Gerätegruppe ersetzen. 
+Nachdem Sie ein Profil erstellt haben, können Sie es auf ein Gerät oder eine Gruppe von Geräten anwenden. Sie können ein vorhandenes Profil in der [schrittweisen Anleitung](add-autopilot-devices-and-profile.md) auswählen und auf neue Geräte anwenden oder ein vorhandenes Profil für ein Gerät oder eine Gerätegruppe ersetzen. 
   
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**. 
     
-2. Click the check-box next to a device name and in the **Device** panel, choose a profile from the **Assigned profile** drop-down \> **Save**.
+2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich ein Profil aus der Dropdownliste **** \> zugewiesenes Profil **Speichern**aus.
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**. 
     
-2. Click the check-box next to a device name and in the **Profile** panel update any of the available settings \> **Save**.
+2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und aktualisieren Sie im **Profil** Bereich alle verfügbaren Einstellungen \> **Speichern**.
     
     Wenn Sie dies tun, bevor ein Benutzer das Gerät mit dem Internet verbindet, wird das Profil auf den Setupvorgang angewendet.
     
@@ -70,7 +70,7 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**. 
     
-2. Click the check-box next to a device name and in the **Profile** panel click **Delete profile** \> **Save**.
+2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Profil** Bereich die Option **Profil** \> **Speichern**löschen aus.
     
     Wenn Sie ein Profil löschen, wird es von einem Gerät oder einer Gruppe von Geräten entfernt, denen es zugewiesen war.
     
@@ -78,5 +78,5 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**. 
     
-2. Click the check-box next to a device name and in the **Device** panel, choose a **None** from the **Assigned profile** drop-down \> **Save**.
+2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich **keine** aus der Dropdownliste **** \> zugewiesenes Profil **Speichern**aus.
     

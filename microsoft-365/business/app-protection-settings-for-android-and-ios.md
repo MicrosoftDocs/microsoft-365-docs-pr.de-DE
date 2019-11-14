@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Hier erfahren Sie, wie Sie eine APP-Verwaltungsrichtlinie erstellen, bearbeiten oder löschen und Arbeitsdateien auf Android-oder IOS-Geräten schützen.
-ms.openlocfilehash: 914e6848ac46eb334516aadff2827da2b83a38c4
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: 2eebe5b603837d7e4125ab7e88b61792ca3a1e5d
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002083"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321843"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte
 
@@ -41,15 +41,15 @@ ms.locfileid: "38002083"
   
 3. Geben Sie im Bereich **Richtlinie hinzufügen** einen eindeutigen Namen für diese Richtlinie ein. 
     
-4. Wählen Sie unter **Richtlinientyp** eine der Optionen **Anwendungsverwaltung für Android** oder **Anwendungsverwaltung für iOS** aus - je nachdem, welchen Richtliniensatz Sie erstellen möchten. 
+4. Wählen Sie unter **Richtlinientyp**die Option **Anwendungsverwaltung für Android** oder **Anwendungsverwaltung für IOS**aus, je nachdem, welchen Richtliniensatz Sie erstellen möchten. 
     
-5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. Weitere Informationen finden Sie unter [Verfügbare Einstellungen](#available-settings) . 
+5. Erweitern Sie **Arbeitsdateien schützen, wenn Geräte verloren gehen oder gestohlen werden** , und verwalten Sie, **wie Benutzer auf mobilen Geräten auf Office-Dateien zugreifen**. Konfigurieren Sie die Einstellungen, wie Sie möchten. **Verwalten Sie, wie Benutzer auf Office-Dateien auf mobilen Geräten zugreifen** , standardmäßig **deaktiviert** , es wird jedoch empfohlen, dass Sie es **aktivieren und die** Standardwerte akzeptieren. Weitere Informationen finden Sie unter [Verfügbare Einstellungen](#available-settings). 
     
     Mit dem Link **Standardeinstellungen zurücksetzen** können Sie jederzeit die Standardeinstellungen wiederherstellen. 
     
     ![Screenshot of Create a policy with Application management for Android selected](media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
+6. Next decide **Who will get these settings?** Wenn Sie die standardmäßige Sicherheitsgruppe " **alle Benutzer** " nicht verwenden möchten, wählen Sie **ändern**aus, und wählen Sie \> die Sicherheitsgruppen aus, die **diese Einstellungen erhalten**.
     
 7. Wählen Sie schließlich **Fertig** aus, um die Richtlinie zu speichern, und weisen Sie sie Geräten zu. 
     
@@ -59,9 +59,9 @@ ms.locfileid: "38002083"
     
 2. Wählen Sie im Bereich **Richtlinie bearbeiten** die Richtlinie aus, die Sie ändern möchten. 
     
-3. Wählen Sie neben jeder Einstellung **Bearbeiten** aus, um die Werte in der Richtlinie zu ändern. Wenn Sie einen Wert ändern, wird er in der Richtlinie automatisch gespeichert. 
+3. Wählen Sie neben jeder Einstellung **Bearbeiten** aus, um die Werte in der Richtlinie zu ändern. Wenn Sie einen Wert ändern, wird er automatisch in der Richtlinie gespeichert.
     
-4. Wenn Sie fertig sind, schließen Sie den Bereich **Richtlinie bearbeiten**. 
+4. Wenn Sie fertig sind, schließen Sie den Bereich **Richtlinie bearbeiten** . 
     
 ## <a name="delete-an-app-management-policy"></a>Löschen einer App-Verwaltungsrichtlinie
 
@@ -82,23 +82,19 @@ Die folgenden Einstellungen stehen zum Schutz von Arbeitsdateien zur Verfügung,
 |||
 |:-----|:-----|
 |Einstellung  <br/> |Beschreibung  <br/> |
-|Arbeitsdateien von einem inaktiven Gerät löschen nach diesem Zeitraum (Tage)  <br/> |Wenn ein Gerät während der hier festgelegten Anzahl von Tagen nicht genutzt wird, werden alle auf dem Gerät gespeicherten Arbeitsdateien automatisch gelöscht.  <br/> |
-|Benutzer zum Speichern aller Arbeitsdateien auf OneDrive for Business zwingen  <br/> |Wenn diese Einstellung auf **Ein** festgelegt wurde, ist der einzige verfügbare Speicherort für Arbeitsdateien OneDrive for Business.  <br/> |
-|Arbeitsdateien verschlüsseln  <br/> |Behalten Sie für diese Einstellung **Ein** bei, damit Arbeitsdateien durch Verschlüsselung geschützt werden. Selbst wenn das Gerät verloren geht oder gestohlen wird, kann niemand Ihre Unternehmensdaten lesen.  <br/> |
+|Arbeitsdateien von einem inaktiven Gerät löschen nach diesem Zeitraum (Tage)  <br/> |Wenn ein Gerät nicht für die Anzahl der Tage verwendet wird, die Sie hier angeben, werden alle auf dem Gerät gespeicherten Arbeitsdateien automatisch gelöscht.  <br/> |
+|Benutzer zum Speichern aller Arbeitsdateien auf OneDrive for Business zwingen  <br/> |Wenn diese Einstellung **auf "ein**" festzulegen ist, ist der einzige verfügbare Speicherplatz für Arbeitsdateien OneDrive für Unternehmen.  <br/> |
+|Arbeitsdateien verschlüsseln  <br/> |Behalten Sie für diese Einstellung **Ein** bei, damit Arbeitsdateien durch Verschlüsselung geschützt werden. Selbst wenn das Gerät verloren geht oder gestohlen wird, kann niemand die Daten Ihres Unternehmens lesen.  <br/> |
    
-### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Einstellungen, die steuern, wie Benutzer auf Office-Dateien auf mobilen Geräten zugreifen
+### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Einstellungen, die steuern, wie Benutzer auf mobilen Geräten auf Office-Dateien zugreifen
 
 Mit den folgenden Einstellungen können Sie den Zugriff von Benutzern auf Office-Arbeitsdateien verwalten:
   
 |||
 |:-----|:-----|
 |Einstellung  <br/> |Beschreibung  <br/> |
-|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Ist diese Einstellung **aktiviert**, müssen Benutzer zusätzlich zum Benutzernamen und Kennwort eine andere Form der Authentifizierung angeben, bevor sie Office-Apps auf ihren mobilen Geräten verwenden können.  <br/> |
+|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **auf** Benutzer muss eine andere Form der Authentifizierung neben Ihrem Benutzernamen und Kennwort bereitstellen, bevor Sie Office-Apps auf Ihren mobilen Geräten verwenden können.<br/> |
 |PIN nach dieser Anzahl von fehlerhaften Anmeldeversuchen zurücksetzen  <br/> |Um zu verhindern, dass ein nicht autorisierter Benutzer eine PIN nach dem Zufallsprinzip errät, wird die PIN, die nach der angegebenen Anzahl von Fehlversuchen zurückgesetzt.  <br/> |
-|Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange ein Benutzer inaktiv sein kann, bevor er dazu aufgefordert wird, sich erneut anzumelden.  <br/> |
+|Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange sich ein Benutzer im Leerlauf befinden kann, bevor er zur erneuten Anmeldung aufgefordert wird.  <br/> |
 |Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät empfänglicher für Schadsoftware werden kann. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
 |Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche Apps erlauben  <br/> |Dies ist standardmäßig zulässig, aber wenn die Einstellung **aktiviert**ist, kann der Benutzerinformationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert**ist, kann der Benutzer keine Informationen aus einem Arbeitskonto in eine persönliche APP oder ein persönliches Konto kopieren.  <br/> |
-   
-
-  
-

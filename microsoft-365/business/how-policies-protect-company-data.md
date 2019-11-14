@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: Hier finden Sie Informationen zu Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen abzielen, um Unternehmensdaten auf persönlichen Geräten des Benutzers zu schützen.
-ms.openlocfilehash: f0a7f5ac91fa7eb20c54024f8017927199a7758b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Verwenden Sie zum Schutz von Unternehmensdaten auf persönlichen Geräten der Benutzer Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen abzielen.
+ms.openlocfilehash: 225dbadf599d5287a706ce50ec2b3cc9dd27c996
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574596"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320126"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>So schützen die Richtlinien in Microsoft 365 Business Ihre Unternehmensdaten
 
 [] Die von Ihnen erstellten Richtlinien gelten speziell für den jeweiligen Gerätetyp und können auf bestimmte Benutzergruppen angewendet werden. Dies bedeutet, dass Sie eine Richtlinie erstellen können, die für die leitenden Mitarbeiter gilt, und eine weitere, die für alle anderen Personen gilt.
   
-Bei Android- und iOS-Geräten können Sie Anwendungsrichtlinien erstellen und bearbeiten, mit denen Office-Apps und die in Office-Apps verwendeten Arbeitsdateien geschützt werden können. Wir können Windows 10-Geräte noch besser kontrollieren, daher können Anwendungsrichtlinien weitere Einstellungen wie Verschlüsselung und Schutz für Netzwerk- und Cloudspeicherorte enthalten. Sie können auch Geräterichtlinien für Windows 10-Geräte erstellen, mit denen Einstellungen wie Virenschutz und automatische Aktualisierung erzwungen werden. Wir empfehlen, sich an die Richtlinien zu halten, die während des Setups erstellt werden. Wenn Sie diese jedoch optimieren oder weitere hinzufügen möchten, finden Sie in den folgenden Artikeln weitere Informationen:
+Für Android-und IOS-Geräte können Sie Anwendungsrichtlinien hinzufügen oder bearbeiten, die Office-Apps und Arbeitsdateien schützen, die von Office-Apps verwendet werden. Wir können Windows 10-Geräte ein wenig genauer steuern, sodass Anwendungsrichtlinien weitere Einstellungen enthalten können, wie Verschlüsselung und Schutz für Netzwerk-und Cloud-Standorte. Sie können auch Geräterichtlinien für Windows 10-Geräte erstellen, die Einstellungen wie Virenschutz und automatische Updates erzwingen. Es wird empfohlen, dass Sie die während des Setups erstellten Richtlinien einhalten, aber wenn Sie Ihre Richtlinien optimieren oder weitere hinzufügen möchten, lesen Sie die folgenden Artikel:
   
 [Festlegen von App-Konfigurationen für Android- oder iOS-Geräte](app-protection-settings-for-android-and-ios.md)
   

@@ -22,16 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Erfahren Sie mehr über Gerätestatus in Microsoft 365 Business.
-ms.openlocfilehash: 06e5c800e6a104785c1fd0724223e05d7729722e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072718"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320206"
 ---
 # <a name="device-states"></a>Gerätezustände
-
-## <a name="device-states"></a>Gerätezustände
 
 Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **Geräteaktionen**) können die folgenden Zustände haben.
   
@@ -43,12 +41,12 @@ Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **G
 |Abkoppeln ausstehend  <br/> |Microsoft 365 Business bereitet sich darauf vor, Unternehmensdaten vom Gerät zu entfernen.  <br/> |
 |Abkoppeln wird ausgeführt  <br/> |Microsoft 365 Business entfernt momentan Unternehmensdaten vom Gerät.  <br/> |
 |Fehler beim Abkoppeln  <br/> | Beim Entfernen von Unternehmensdaten ist ein Fehler aufgetreten.  <br/> |
-|Abkoppeln abgebrochen  <br/> |Der Abkopplungsvorgang wurde abgebrochen.  <br/> |
+|Zurückziehen abgebrochen  <br/> |Die zurückzieh-Aktion wurde abgebrochen.  <br/> |
 |Zurücksetzen steht aus  <br/> |Es wird auf den Start des Zurücksetzens auf die Werkseinstellung gewartet.  <br/> |
 |Zurücksetzen wird ausgeführt  <br/> |Das Zurücksetzen auf die Werkseinstellung ist erfolgt.  <br/> |
-|Fehler beim Zurücksetzen  <br/> |Das Zurücksetzen auf die Werkseinstellung konnte nicht ausgeführt werden.  <br/> |
-|Zurücksetzen abgebrochen  <br/> |Das Zurücksetzen auf die Werkseinstellung wurde abgebrochen.  <br/> |
-|Fehlerhaft  <br/> |Dies bedeutet, dass eine Aktion aussteht (oder im Gange ist), aber das Gerät seit mehr als 30 Tagen nicht eingecheckt wurde.  <br/> |
+|Fehler beim Zurücksetzen  <br/> |Factory-Reset konnte nicht ausgeführt werden.  <br/> |
+|Löschvorgang abgebrochen  <br/> |Factory Wipe wurde abgebrochen.  <br/> |
+|Fehlerhaft  <br/> |Eine Aktion ist ausstehend (oder wird ausgeführt), aber das Gerät wurde für 30 Tage nicht eingecheckt.  <br/> |
 |Löschen steht aus  <br/> |Die Löschaktion steht aus.  <br/> |
 |Ermittelt  <br/> |Microsoft 365 Business hat das Gerät erkannt.  <br/> |
    
