@@ -12,24 +12,24 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informationen dazu, wie Contoso System Center Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
-ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Informationen dazu, wie Contoso Microsoft Endpoint Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
+ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370472"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627331"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Bereitstellung von Windows 10 Enterprise für Contoso
 
-**Zusammenfassung:** Informationen dazu, wie Contoso System Center Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
+**Zusammenfassung:** Informationen dazu, wie Contoso Microsoft Endpoint Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
 
 Vor der unternehmensweiten Einführung von Microsoft 365 Enterprise verfügte Contoso über Windows-kompatible Computer und Geräte, auf denen eine Mischung aus Windows 7 (10 %), Windows 8.1 (65 %) und Windows 10 (25 %) ausgeführt wurde. Contoso wollte seine Computer auf Windows 10 Enterprise aktualisieren, um die erweiterte Sicherheit sowie den niedrigeren IT-Aufwand der automatisierten Bereitstellung von Updates nutzen zu können. 
 
 Nach der Bewertung der Infrastruktur und der Geschäftsanforderungen identifizierte Contoso die folgenden Hauptanforderungen für die Bereitstellung:
 
 - Windows 10 Enterprise soll auf so vielen Computern und Geräten wie möglich ausgeführt werden.
-- Die Einführung von direkten Upgrades nutzt die vorhandene System Center Configuration Manager-Infrastruktur.
+- Die Einführung von direkten Upgrades nutzt die vorhandene Configuration Manager-Infrastruktur.
 - Die Steuerung, welche Versionen von Windows 10 Enterprise bereitgestellt und aktualisiert werden sollen, erfolgt über Ringe.
 - Computer und Geräte sollen mit minimalen IT-Verwaltungskosten und minimalen Auswirkungen auf die Endbenutzer auf dem aktuellen Stand gehalten werden.
 
@@ -51,7 +51,7 @@ Vor und während direkter Upgrades von Windows 10 Enterprise verwendete Contoso 
 
   Identifiziert Geräte, die häufig abstürzen und daher möglicherweise neu aufgebaut oder ersetzt werden müssen, und Gerätetreiber, die Geräteabstürze verursachen, mit Vorschlägen für alternative Versionen dieser Treiber, welche die Anzahl der Abstürze reduzieren könnten. Bietet eine Benachrichtigung über Fehlkonfigurationen des Windows Information Protection, die Eingabeaufforderungen an Endbenutzer senden.
  
-Contoso verfügt über eine vorhandene Infrastruktur von System Center Configuration Manager (Current Branch). Configuration Manager kann an große Umgebungen angepasst werden und bietet eine umfassende Kontrolle über Installation, Updates und Einstellungen. Er verfügt außerdem über integrierte Features, um die Bereitstellung und Verwaltung von Windows 10 Enterprise zu vereinfachen und effizienter zu gestalten.
+Contoso verfügt über eine vorhandene Infrastruktur von Configuration Manager (Current Branch). Configuration Manager kann an große Umgebungen angepasst werden und bietet eine umfassende Kontrolle über Installation, Updates und Einstellungen. Er verfügt außerdem über integrierte Features, um die Bereitstellung und Verwaltung von Windows 10 Enterprise zu vereinfachen und effizienter zu gestalten.
 
 ## <a name="planning-process"></a>Planungsprozess
 
@@ -83,7 +83,7 @@ Hier ist Contosos Bereitstellungsarchitektur für das direkte Upgrade und fortla
 
 Diese Infrastruktur besteht aus:
 
-- System Center Configuration Manager, der:
+- Configuration Manager, der:
   - Images für Windows 10 Enterprise-Pakete aus dem Microsoft Volume Licensing Center im Microsoft Network abruft.
   - Als zentraler Verwaltungspunkt für Bereitstellungspakete fungiert.
 - Regionale Verteilungspunkte befinden sich in der Regel in den regionalen Hub-Büros von Contoso.
@@ -91,7 +91,7 @@ Diese Infrastruktur besteht aus:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-o365pp.md) darüber, wie Contoso seine System Center Configuration Manager-Infrastruktur verwendet, um Office 365 ProPlus in der gesamten Organisation bereitzustellen und auf dem neuesten Stand zu halten. 
+[Erfahren Sie mehr](contoso-o365pp.md) darüber, wie Contoso seine Configuration Manager-Infrastruktur verwendet, um Office 365 ProPlus in der gesamten Organisation bereitzustellen und auf dem neuesten Stand zu halten. 
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -3,7 +3,7 @@ title: Office 365 ProPlus-Bereitstellung für Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,17 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verstehen, wie Contoso System Center Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
-ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
+ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054997"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627351"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Office 365 ProPlus-Bereitstellung für Contoso
 
-**Zusammenfassung:** Verstehen, wie Contoso System Center Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
+**Zusammenfassung:** Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
 
 Contoso hat seine PCs auf Windows 10 Enterprise und Office 365 ProPlus aktualisiert, um eine effektivere Zusammenarbeit zu ermöglichen, bessere Sicherheit zu gewährleisten und eine modernere Desktopoberfläche bereitzustellen. Nach der Bewertung der Infrastruktur- und Geschäftsanforderungen hat Contoso die folgenden wichtigen Anforderungen für die Bereitstellung ermittelt:
 
@@ -33,7 +33,7 @@ Contoso hat seine PCs auf Windows 10 Enterprise und Office 365 ProPlus aktualisi
 
 ## <a name="deployment-tools"></a>Bereitstellungstools
 
-Basierend auf den Anforderungen entschied sich Contoso für die Bereitstellung von Windows und Office mit System Center Configuration Manager (Current Branch). Configuration Manager kann an große Umgebungen angepasst werden und bietet eine umfassende Kontrolle über Installation, Updates und Einstellungen. Er verfügt außerdem über integrierte Features, um die Bereitstellung und Verwaltung von Office zu vereinfachen und effizienter zu gestalten, darunter:
+Basierend auf den Anforderungen entschied sich Contoso für die Bereitstellung von Windows 10 Enterprise und Office 365 ProPlus mit Configuration Manager (Current Branch). Configuration Manager kann an große Umgebungen angepasst werden und bietet eine umfassende Kontrolle über Installation, Updates und Einstellungen. Er verfügt außerdem über integrierte Features, um die Bereitstellung und Verwaltung von Office zu vereinfachen und effizienter zu gestalten, darunter:
 
 - Peercache, der bei begrenzter Netzwerkkapazität von Nutzen sein kann, wenn die Bereitstellung für Geräte an Remotestandorten erfolgt
 - Das Dashboard zur Office-Clientverwaltungs, mit dem die Bereitstellung von Office vereinfacht wird und das Aktualisierungen überwacht und Administratoren Zugriff auf die neuesten Bereitstellungs- und Verwaltungsfeatures bietet.
@@ -51,7 +51,7 @@ Office 365 ProPlus hat ein neues Veröffentlichungsmodell: Office als Dienst (Of
 
 Anstatt Updates von Office mit Configuration Manager zu verwalten, aktivierte Contoso automatische Updates über die Cloud. Cloudbasierte Updates hatten einen reduzierten Verwaltungsaufwand zur Folge, wobei sichergestellt wurde, dass die Geräte stets auf dem neuesten Stand sind. 
 
-Contoso folgte dem gleichen zweistufigen Ansatz, den das Unternehmen für die Bereitstellung von Office nutzte, für Feature-Updates: Geräte in der Pilotgruppe erhielten Feature-Updates vier Monate vor den Geräten in der restlichen Organisation (die allgemeine Gruppe). Um dies für Office zu aktivieren, verwendete Contoso zwei empfohlene [Updatekanäle](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
+Contoso folgte dem gleichen zweistufigen Ansatz für Feature-Updates, den das Unternehmen für die Bereitstellung von Office nutzte: Geräte in der Pilotgruppe erhielten Feature-Updates vier Monate vor den Geräten in der restlichen Organisation (die allgemeine Gruppe). Um dies für Office zu aktivieren, verwendete Contoso zwei empfohlene [Updatekanäle](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
 
 - den halbjährlichen Kanal (gezielt) für Updates für die Pilotgruppe 
 - den halbjährlichen Kanal für Updates für die allgemeine Gruppe. 
@@ -73,9 +73,13 @@ Um die Bereitstellung von Office abzuschließen, hat Contoso den folgenden Proze
 
 Da sich Contoso entschlossen hat, Geräte automatisch aus der Cloud zu aktualisieren, war es nicht erforderlich, den Prozess im Configuration Manager zu verwalten. Die Geräte werden direkt automatisch direkt aus der Cloud und basierend auf dem Updatekanal, den Sie als Teil der ersten Bereitstellung definieren, aktualisiert. 
 
+Hier ist die Bereitstellungsarchitektur von Contoso für die Office 365 ProPlus-Installation und fortlaufende Updates.
+
+![Office 365 ProPlus-Bereitstellungsinfrastruktur von Contoso](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+ 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-mdm.md), wie Contoso Intune in Microsoft 365 Enterprise zum Verwalten von Geräten und den darauf ausgeführten Apps im Unternehmen verwendet.
+[Erfahren Sie](contoso-mdm.md), wie Contoso Microsoft Intune in Microsoft 365 Enterprise zum Verwalten von Geräten und den darauf ausgeführten Apps im Unternehmen verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 

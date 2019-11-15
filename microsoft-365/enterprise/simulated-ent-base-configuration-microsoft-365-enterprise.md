@@ -3,7 +3,7 @@ title: Simulierte Unternehmensstandardkonfiguration für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Verwenden Sie diese Testumgebungsanleitung, um eine Testumgebung mit einem simulierten Unternehmen für Microsoft 365 Enterprise zu erstellen.
-ms.openlocfilehash: 7a23f0eabcd9b4b0b94f6f932570fed12de32cbe
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 5faa6857de42049cbcfc237e3e617de294794530
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746501"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640387"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Die simulierte Unternehmensstandardkonfiguration
 
@@ -36,7 +36,7 @@ Sie können die resultierende Umgebung verwenden, um die Features und Funktionen
 ![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Klicken Sie [hier](https://aka.ms/m365etlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Phase 1: Erstellen eines simulierten Intranets
 
@@ -80,32 +80,32 @@ Starten Sie zunächst eine Windows PowerShell-Eingabeaufforderung auf dem lokale
   
 Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 Legen Sie Ihr Azure-Abonnement fest. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „<“ und „>“, durch den entsprechenden Namen.
   
-```
+```powershell
 $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
 Im nächsten Schritt wird eine neue Ressourcengruppe für Ihr simuliertes Unternehmenstestlabor erstellt. Verwenden Sie zum Ermitteln eines eindeutigen Ressourcengruppennamens diesen Befehl, mit dem die vorhandenen Ressourcengruppen aufgeführt werden.
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 Erstellen Sie die neue Ressourcengruppe mit diesen Befehlen. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „<“ und „>“, durch die entsprechenden Namen.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -113,7 +113,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 Als Nächstes erstellen Sie das virtuelle Netzwerk „TestLab“, in dem das Corpnet-Subnetz der simulierten Unternehmensumgebung gehostet und mit einer Netzwerksicherheitsgruppe geschützt wird. Tragen Sie den Namen Ihrer Ressourcengruppe ein, und führen Sie diese Befehle an der PowerShell-Eingabeaufforderung auf dem lokalen Computer aus.
   
-```
+```powershell
 $rgName="<name of your new resource group>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -130,7 +130,7 @@ Als Nächstes erstellen Sie den virtuellen DC1-Computer und konfigurieren ihn al
   
 Geben Sie zum Erstellen eines virtuellen Azure-Computers für DC1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die PowerShell-Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
@@ -172,13 +172,13 @@ Stellen Sie dann eine Verbindung mit dem virtuellen Computer DC1 her.
     
 Im nächsten Schritt führen Sie diesen Befehl über eine Windows PowerShell-Eingabeaufforderung mit Administratorrechten auf DC1 aus, um ein zusätzliches Datenlaufwerk als neues Volume mit dem Laufwerkbuchstaben „F:" hinzuzufügen.
   
-```
+```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
 Konfigurieren Sie als Nächstes DC1 als Domänencontroller und DNS-Server für die Domäne **testlab.**\<Ihr öffentlicher Domänenname>. Geben Sie Ihren öffentlichen Domänennamen an, entfernen Sie die Zeichen \< und „>“, und führen Sie die folgenden Befehle an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene auf DC1 aus.
   
-```
+```powershell
 $yourDomain="<your public domain>"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
@@ -201,7 +201,7 @@ Stellen Sie nach dem Neustart von DC1 wieder eine Verbindung zum virtuellen DC1-
     
 Im nächsten Schritt erstellen Sie ein Benutzerkonto in Active Directory, das bei der Anmeldung an Mitgliedscomputern der Domäne TESTLAB verwendet wird. Führen Sie diesen Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.
   
-```
+```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
@@ -209,7 +209,7 @@ Beachten Sie, dass Sie von dem Befehl aufgefordert werden, das Kennwort des Kont
   
 Konfigurieren Sie als Nächstes das neue Konto „Benutzer1“ als Domänen-, Unternehmens- und Schemaadministrator aus. Führen Sie diesen Befehl an der Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.
   
-```
+```powershell
 $yourDomain="<your public domain>"
 $domainName = "testlab"+$yourDomain
 $userName="user1@" + $domainName
@@ -222,7 +222,7 @@ Schließen Sie die Remotedesktopsitzung mit DC1, und stellen Sie dann mit dem Ko
   
 Führen Sie als Nächstes den folgenden Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus, um Datenverkehr für das Tool Ping zuzulassen.
   
-```
+```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
@@ -236,7 +236,7 @@ In diesem Schritt erstellen und konfigurieren Sie APP1, ein Anwendungsserver, de
 
 Geben Sie zum Erstellen eines virtuellen Azure-Computers für APP1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
@@ -257,7 +257,7 @@ Führen Sie zum Überprüfen der Namensauflösung und der Netzwerkkommunikation 
   
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer APP1 mit der Domäne TESTLAB.
   
-```
+```powershell
 $yourDomain="<your public domain name>"
 Add-Computer -DomainName ("testlab" + $yourDomain)
 Restart-Computer
@@ -269,13 +269,13 @@ Stellen Sie nach dem Neustart von APP1 eine Verbindung über das Konto „TESLAB
   
 Im nächsten Schritt richten Sie APP1 mit dem folgenden Befehl in der Windows PowerShell-Eingabeaufforderung auf Administratorebene auf APP1 als Webserver ein.
   
-```
+```powershell
 Install-WindowsFeature Web-WebServer -IncludeManagementTools
 ```
 
 Erstellen Sie als Nächstes einen freigegebenen Ordner und eine Textdatei innerhalb des Ordners auf APP1 mit diesen PowerShell-Befehlen.
   
-```
+```powershell
 New-Item -path c:\files -type directory
 Write-Output "This is a shared file." | out-file c:\files\example.txt
 New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
@@ -294,7 +294,7 @@ In diesem Schritt wird CLIENT1 erstellt und konfiguriert, der als typischer Lapt
   
 Geben Sie zum Erstellen eines virtuellen Azure-Computers für CLIENT1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
@@ -315,7 +315,7 @@ Führen Sie zum Überprüfen der Namensauflösung und der Netzwerkkommunikation 
   
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer CLIENT1 mit der Domäne TESTLAB.
   
-```
+```powershell
 $yourDomain="<your public domain name>"
 Add-Computer -DomainName ("testlab" + $yourDomain)
 Restart-Computer
@@ -350,27 +350,163 @@ Dies ist Ihre aktuelle Konfiguration.
 ![Schritt 3 der simulierten Unternehmensstandardkonfiguration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## <a name="phase-2-create-your-microsoft-365-e5-subscriptions"></a>Phase 2: Ihre Abonnements für Microsoft 365 E5 erstellen
+## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>Phase 2: Erstellen Ihres Abonnements für Microsoft 365 E5
 
 In dieser Phase erstellen Sie ein neues Abonnement für Microsoft 365 E5, das einen neuen Azure AD-Mandanten verwendet, der von Ihrem Produktionsabonnement getrennt ist. Dies können Sie auf zwei Arten tun:
 
 - Verwenden Sie ein Testabonnement von Microsoft 365 E5. 
 
   Das Testabonnement von Microsoft 365 E5 gilt für 30 Tage, die problemlos auf 60 Tage verlängert werden können. Wenn das Testabonnement abläuft, müssen Sie entweder zu einem kostenpflichtigen Abonnement wechseln oder eine neue Testversion erstellen. Durch Erstellen neuer Testabonnements müssen Sie Ihre Konfiguration verlassen, was im Hintergrund zu komplexen Szenarien führen kann.  
+
 - Verwenden Sie ein separates Produktionsabonnement von Microsoft 365 E5 mit einer kleinen Anzahl von Lizenzen.
 
   Dabei entstehen zusätzliche Kosten, aber es wird sichergestellt, dass Sie über eine funktionierende Testumgebung zum Testen von Features, Konfigurationen und Szenarien verfüge, die nicht abläuft. Sie können dieselbe Testumgebung über die gesamten Zeiträume für Machbarkeitsstudien, Demos für Mitarbeiter und Führungskräfte sowie für Anwendungsentwicklung und Tests verwenden. Dies ist die empfohlene Methode.
 
-### <a name="use-trial-subscriptions"></a>Verwenden von Testabonnements
+Für das Microsoft 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Unternehmensnamen und ein neues Microsoft-Konto.
+  
+1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: ![](./media/Common-Images/TableLine.png).
+    
+2. Wenn Sie sich für ein neues Microsoft-Konto registrieren möchten, wechseln Sie zu [https://outlook.com](https://outlook.com), und erstellen Sie ein Konto mit neuem E-Mail-Konto und neuer E-Mail-Adresse. Dieses Konto wird für die Registrierung für Office 365 verwendet.
+    
+  - Notieren Sie hier den Vor- und Nachnamen des Kontos: ![](./media/Common-Images/TableLine.png)
+    
+  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![](./media/Common-Images/TableLine.png)@outlook.com
+    
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrieren für ein Office 365 E5-Testabonnement
 
-Folgen Sie als Erstes den Schritten von Phase 2 und 3 unter [Office 365 Dev/Test-Umgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), um eine einfache Dev/Test-Umgebung für Office 365 zu erstellen.
+Wir beginnen mit einem Office 365 E5-Testabonnement und fügen dann das Microsoft 365 E5-Abonnement hinzu.
 
->[!Note]
->Dann fordern wir Sie dazu auf, ein Office 365-Testabonnement zu erstellen, damit Ihre Dev/Test-Umgebung über einen separaten Azure AD-Mandanten verfügt, der getrennt ist von allen kostenpflichtigen Abonnements, die Sie aktuell haben. Diese Trennung bedeutet, dass Sie Benutzer zum Testmandanten hinzufügen und entfernen können, ohne dass dies Auswirkungen auf Ihre Produktionsabonnements hat.
->
+1. Stellen Sie für die simulierte Office 365-Entwicklungs-/Testumgebung über das Azure-Portal eine Verbindung mit CLIENT1 mit dem CORP\User1-Konto her.  Führen Sie vom Startbildschirm Microsoft Edge aus, und wechseln Sie zu [https://aka.ms/e5trial](https://aka.ms/e5trial).
+    
+2. Geben Sie auf der Seite **Willkommen, Grundlegendes zu Ihrer Person** die folgenden Informationen an:
+    
+  - Tatsächlicher Standort
+    
+  - Vor- und Nachname des neuen Microsoft-Kontos
+    
+  - Die neue E-Mail-Kontoadresse
+    
+  - Telefonnummer geschäftlich
+    
+  - Fiktiver Unternehmensname
+    
+  - Unternehmensgröße zwischen 250-999 Mitarbeitern
+    
+3. Klicken Sie auf **Nur noch ein Schritt**.
+    
+4. Geben Sie auf der Seite **Benutzer-ID erstellen** einen Benutzernamen auf Grundlage der neuen E-Mail-Adresse, den fiktiven Unternehmensnamen nach dem @-Zeichen (entfernen Sie alle Leerzeichen im Namen) und dann (zweimal) ein Kennwort für dieses neue Office 365-Konto ein. 
+    
+    Notieren Sie das verwendete Kennwort, und bewahren Sie es an einem sicheren Ort auf.
+    
+    Notieren Sie hier den fiktiven Unternehmensnamen, der im Folgenden **Organisationsname** genannt wird: ![](./media/Common-Images/TableLine.png)
+    
+5. Klicken Sie auf **Mein Konto erstellen**.
+    
+6. Geben Sie auf der Seite **Ich bin kein Roboter** die Rufnummer eines SMS-fähigen Mobiltelefons, und klicken Sie dann auf **SMS an mich**.
+    
+7. Geben Sie den Verifizierungscode ein, den Sie per SMS erhalten haben, und klicken Sie dann auf **Weiter**.
+    
+8. Notieren Sie hier die URL der Anmeldeseite (auswählen und kopieren): ![](./media/Common-Images/TableLine.png)
+    
+9. Notieren Sie hier die Benutzer-ID (auswählen und kopieren): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+    Dieser Wert wird **Name des globalen Office 365-Administrators** genannt.
+    
+10. Wenn **Alle Schritte wurden abgeschlossen.** angezeigt wird, klicken Sie darauf.
+    
+11. Warten Sie auf der nächsten Seite, bis die Einrichtung von Office 365 abgeschlossen ist und alle Kacheln verfügbar sind.
+    
+Nun sollte die Hauptseite des Office 365-Portals angezeigt werden, über die Sie auf Office-Dienste und das Microsoft 365 Admin Center zugreifen können.
+  
+Dann fordern wir Sie dazu auf, ein Office 365-Testabonnement zu erstellen, damit Ihre Dev/Test-Umgebung über einen separaten Azure AD-Mandanten verfügt, der getrennt ist von allen kostenpflichtigen Abonnements, die Sie aktuell haben. Diese Trennung bedeutet, dass Sie Benutzer zum Testmandanten hinzufügen und entfernen können, ohne dass dies Auswirkungen auf Ihre Produktionsabonnements hat.
+    
+### <a name="configure-your-office-365-e5-trial-subscription"></a>Konfigurieren des Office 365 E5-Testabonnements
 
-Fügen Sie als Nächstes das Testabonnement für Microsoft 365 E5 hinzu und weisen Sie ihrem globalen Administratorkonto eine Microsoft 365-Lizenz zu.
+Als Nächstes konfigurieren Sie Ihr Office 365 E5-Abonnement mit weiteren Benutzern und weisen diesen Office 365 E5-Lizenzen zu.
+  
+Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module), um Ihr Office 365-Abonnement mit dem Azure Active Directory PowerShell-Modul für Graph und dem virtuellen Computer CLIENT1 zu verbinden.
+    
+Geben Sie in das Dialogfeld „Windows PowerShell Credential Request“ den Namen des globalen Office 365-Administrators (z. B. „jdoe@contosotoycompany.onmicrosoft.com“) und sein Kennwort ein.
+  
+Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“), den zweistelligen Ländercode für Ihren Standort und ein gemeinsames Kontokennwort ein, und führen Sie dann die folgenden Befehle von der PowerShell-Eingabeaufforderung aus:
 
+```powershell
+$orgName="<organization name>"
+$loc="<two-character country code, such as US>"
+$commonPW="<common user account password>"
+$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password=$commonPW
+
+$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+```
+> [!NOTE]
+> Für die Automatisierung und Vereinfachung der Konfiguration einer Dev/Test-Umgebung wird hier ein gemeinsames Kennwort verwendet. Natürlich ist davon bei Produktionsabonnements dringend abzuraten. 
+
+#### <a name="record-key-information-for-future-reference"></a>Aufzeichnen von Schlüsselinformationen für spätere Verweise
+
+Sie können diesen Artikel auch ausdrucken, um die speziellen Informationen zu notieren, die Sie für diese Umgebung in den kommenden 30 Tage des Office 365-Testabonnements benötigen. Sie können das Testabonnement einfach um weitere 30 Tage verlängern. Für eine dauerhafte Entwicklungs-/Testumgebung erstellen Sie ein neues bezahltes Abonnement mit einem separaten Azure AD-Mandanten und einer kleinen Anzahl von Lizenzen.
+
+Notieren Sie diese Werte:
+  
+- Name des globalen Office 365-Administrators: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 9 von Phase 2)
+    
+    Notieren Sie auch das Kennwort für dieses Konto, und bewahren Sie es an einem sicheren Ort auf.
+    
+- Organisationsname für das Testabonnement: ![](./media/Common-Images/TableLine.png) (aus Schritt 4 von Phase 2)
+    
+- Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung den folgenden Befehl aus, um die Konten für Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5 anzuzeigen:
+    
+  ```powershell
+  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
+  ```
+
+    Notieren Sie hier die Kontonamen:
+    
+  - Kontoname für Benutzer 2: benutzer2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+  - Kontoname für Benutzer 3: benutzer3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+  - Kontoname für Benutzer 4: benutzer4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+  - Kontoname für Benutzer 5: benutzer5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+    Notieren Sie auch das gemeinsame Kennwort für diese Konten, und bewahren Sie es an einem sicheren Ort auf.
+   
+
+#### <a name="using-an-office-365-e5-devtest-environment"></a>Verwenden einer Office 365 E5-Entwicklungs-/Testumgebung
+
+Wenn Sie nur eine Office 365-Entwicklungs-/Testumgebung benötigen, sind Sie hier fertig. 
+
+Weitere Testumgebungsanleitungen, die sowohl für Office 365 als auch für Microsoft 365 gelten, finden Sie unter [Microsoft 365 Enterprise-Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md).
+  
+### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Hinzufügen eines Testabonnements für Microsoft 365 E5
+
+Als Nächstes registrieren Sie sich für das Microsoft 365 E5-Testabonnement und fügen es derselben Organisation wie Ihr Office 365 E5-Testabonnement hinzu.
+  
+Fügen Sie zuerst das Testabonnement für Microsoft 365 E5 hinzu, und weisen Sie ihrem globalen Administratorkonto eine Microsoft 365-Lizenz zu.
+  
 1. Melden Sie sich mit einer privaten Instanz eines Internetbrowsers mit den Anmeldeinformationen Ihres globalen Administratorkontos beim Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://admin.microsoft.com) an. 
     
 2. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.
@@ -391,26 +527,22 @@ Fügen Sie als Nächstes das Testabonnement für Microsoft 365 E5 hinzu und weis
 
 10. Klicken Sie auf **Speichern > Schließen > Schließen**.
 
- Als Nächstes,***wenn Sie die Schritte in Phase 3 der *** [Office 365 Dev/Test-Umgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) abgeschlossen haben, wiederholen Sie die Schritte 8 bis 11 des vorherigen Verfahrens für alle Ihre anderen Konten (Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5).
+Wiederholen Sie dann die Schritte 8 bis 11 des vorherigen Verfahrens für alle anderen Konten (Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5).
   
 > [!NOTE]
-> Das Testabonnement für Microsoft 365 E5 ist 30 Tage gültig. Ändern Sie für eine dauerhafte Testumgebung dieses Testabonnement in ein kostenpflichtiges Abonnement mit einer kleinen Anzahl von Lizenzen.
+> Das Testabonnement für Microsoft 365 E5 ist 30 Tage gültig. Ändern Sie für eine dauerhafte Testumgebung dieses Testabonnement in ein kostenpflichtiges Abonnement mit einer kleinen Anzahl von Lizenzen. 
   
-Ihre Testumgebung verfügt nun über Folgendes:
-  
-- Ein Testabonnement für Microsoft 365 E5.
-- Alle Ihre entsprechenden Benutzerkonten (entweder nur der globale Administrator oder alle fünf Benutzerkonten) können Microsoft 365 E5 verwenden.
-    
 ### <a name="results"></a>Ergebnisse
 
 Ihre Testumgebung verfügt nun über Folgendes:
   
 - Ein Testabonnement für Microsoft 365 E5.
-- Alle Ihre entsprechenden Benutzerkonten (entweder nur der globale Administrator oder alle fünf Benutzerkonten) können Microsoft 365 E5 verwenden.
+- Alle entsprechenden Benutzerkonten sind für die Verwendung von Microsoft 365 E5 aktiviert.
+- Ein simuliertes und vereinfachtes Intranet.
     
 Dies ist Ihre endgültige Konfiguration.
   
-![Phase 4 der simulierten Unternehmensstandardkonfiguration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 2 der simulierten Unternehmensstandardkonfiguration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 Sie können nun die zusätzlichen Funktionen von [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) ausprobieren.
   
