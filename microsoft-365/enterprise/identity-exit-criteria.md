@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für identitätsbasierte Dienste und Infrastrukturen erfüllt.
-ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 94343400482083b2e793ff218816f06cb982187e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746521"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627391"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2: Beendigungskriterien für die Identitätsinfrastruktur
 
@@ -42,7 +42,7 @@ Gegebenenfalls hilft Ihnen [Schritt 1](identity-create-protect-global-admins.md#
 Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Administratorkonten geschützt haben:
 
 1. Führen Sie den folgenden Azure Active Directory PowerShell für Graph-Befehl an der PowerShell-Eingabeaufforderung aus. Es sollte nur die Liste der dedizierten globalen Administratorkonten angezeigt werden.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Melden Sie sich bei Office 365 mit jedem der Konten aus Schritt 1 an. Bei jeder Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation verlangt werden.

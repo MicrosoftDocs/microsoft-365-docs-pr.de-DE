@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Ihre globalen Administratorkonten benötigen eine spezielle Behandlung, um sie vor der Kompromittierung von Anmeldeinformationen zu schützen.
-ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370212"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627081"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Schritt 1: Erstellen und Schützen Ihrer globalen Administratorkonten
 
@@ -47,7 +47,7 @@ Näheres zu weiteren Schutzmaßnahmen finden Sie unter [Schützen Ihrer globalen
 Die Ergebnisse dieses Abschnitts sind:
 
 - Die einzigen Benutzerkonten in Ihrem Abonnement, die über die Berechtigungen eines globalen Administrators verfügen, befinden sich in den dedizierten Konten für globale Administratoren. Verifizieren Sie dies mit dem folgenden Azure Active Directory PowerShell für Graph-Befehl: 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - Alle anderen Benutzerkonten für die Verwaltung Ihrer Abonnementdienste verfügen über Administratorrollen, die ihren beruflichen Zuständigkeiten zugewiesen sind.
