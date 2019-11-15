@@ -1,5 +1,5 @@
 ---
-title: Übersicht Microsoft 365 Business
+title: Übersicht über Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+description: Erfahren Sie mehr über Microsoft 365 Business.
+ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038947"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633397"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Übersicht über Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Was ist Microsoft 365 Business?
 
-Microsoft 365 Business ist ein Abonnementdienst, der Office 365 Produktivitätstools sowie erweiterte Funktionen zum Schutz Ihres Unternehmens gegen Bedrohungen, zum Schutz Ihrer Daten und zum Verwalten der Geräte enthält.
+Microsoft 365 Business ist ein Abonnementdienst, der Office 365 Produktivitätstools sowie erweiterte Funktionen zum Schutz Ihres Unternehmens gegen Bedrohungen, zum Schutz Ihrer Daten und zur Verwaltung von Geräten umfasst.
   
-Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht, wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) -Dokumentation.
+Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 
 Die gesamte Liste der Features finden Sie unter [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) .
   
@@ -43,12 +43,12 @@ Die gesamte Liste der Features finden Sie unter [Microsoft 365 Business Service 
 
 Ihre Geschäftsdaten können in vielerlei Hinsicht kompromittiert werden. Sie und Ihre Benutzer können die Sicherheit Ihrer Organisation gefährden, wenn Sie sich mit kompromittierten Anmeldeinformationen anmelden oder Organisationsdaten auf unterschiedlichen Geräten und Anwendungen anzeigen. Genauer gesagt besteht für Ihre Organisation ein Risiko:
 
-1. Gefährdete oder schwache Anmeldeinformationen.
-2. Kompromittiertes Gerät mit schwacher PIN oder einem benutzereigenen Gerät.
-3. Benutzer, die die Daten Ihrer Organisation in persönliche apps Kopieren/Einfügen/speichern können.
-4. Benutzer,<sup>die Drittanbieter</sup> -apps mit schwacher Sicherheit installieren und verwenden.
-5. E-Mail-Schwachstellen, einschließlich der Freigabe vertraulicher Daten, Phishing-Versuche, Schadsoftware usw.
-6. Wenn Personen, die dies nicht tun sollten, auf Dokumente mit vertraulichen Informationen zugreifen können.
+- Gefährdete oder schwache Anmeldeinformationen.
+- Kompromittiertes Gerät mit schwacher PIN oder einem benutzereigenen Gerät.
+- Benutzer, die die Daten Ihrer Organisation in persönliche apps Kopieren/Einfügen/speichern können.
+- Benutzer, die apps von Drittanbietern mit schwacher Sicherheit installieren und verwenden.
+- E-Mail-Sicherheitsrisiken, einschließlich der Freigabe vertraulicher Daten, Phishing-Versuche, Schadsoftware usw.
+- Wenn Personen, die dies nicht tun sollten, auf Dokumente mit vertraulichen Informationen zugreifen können.
 
 Mit Microsoft 365 Business können Sie Ihre Daten in jeder dieser Instanzen schützen. Die Sicherheitsfeatures, die Ihre Geschäftsdaten schützen, sind in der folgenden Abbildung aufgeführt.
 
@@ -58,7 +58,7 @@ Mit Microsoft 365 Business können Sie Ihre Daten in jeder dieser Instanzen sch�
 
 Microsoft 365 Business hilft bei der **Verteidigung gegen Bedrohungen** durch:
 
-Durchsuchen von Links in e-Mails und Dokumenten in Echtzeit zum Blockieren unsicherer Websites (ATP-sichere Links).
+- Durchsuchen von Links in e-Mails und Dokumenten in Echtzeit zum Blockieren unsicherer Websites (ATP-sichere Links)
 
 - Durchführen einer erweiterten Analyse von e-Mail-Anlagen in einer Sandkastenumgebung zum erkennen neu entwickelter Schadsoftware (ATP-sichere Anlagen). 
 
@@ -66,23 +66,23 @@ Durchsuchen von Links in e-Mails und Dokumenten in Echtzeit zum Blockieren unsic
 
 - Einrichten von erweiterten Richtlinien zum Deaktivieren des Zugriffs von nicht vertrauenswürdigen Speicherorten oder zur Umgehung der mehrstufigen Authentifizierung von vertrauenswürdigen stellen wie Ihrem Office-Netzwerk (Azure MFA einschließlich vertrauenswürdiger IPS und bedingter Zugriff). 
 
-- Erzwingen des Schadsoftware-Schutzes auf allen Windows 10-Geräten Ihres Unternehmens und schützen von Dateien in wichtigen Systemordnern vor von Ransomware vorgenommenen Änderungen (Windows Defender)
+- Erzwingen des Schadsoftware-Schutzes auf allen Windows 10-Geräten Ihrer Organisation und schützen von Dateien in wichtigen Systemordnern vor von Ransomware vorgenommenen Änderungen (Windows Defender)
 
 Ihre **Geschäftsdaten sind geschützt** durch:
 
 - Mithilfe der automatischen Erkennung können Sie verhindern, dass vertrauliche Informationen wie Sozialversicherungsnummern oder Kreditkarten außerhalb Ihres Unternehmens undicht werden (Verhinderung von Datenverlust). 
 
-- Verschlüsseln vertraulicher e-Mails, damit Sie sicher mit Kunden oder anderen Personen außerhalb Ihres Unternehmens kommunizieren können, um sicherzustellen, dass nur der vorgesehene Empfänger die Nachricht lesen kann (Office 365 Nachrichtenverschlüsselung).
+- Verschlüsseln vertraulicher e-Mails, damit Sie sicher mit Kunden oder anderen Personen außerhalb Ihrer Organisation kommunizieren können. Dadurch wird sichergestellt, dass nur der vorgesehene Empfänger die Nachricht (Office 365 Nachrichtenverschlüsselung) lesen kann.
 
 - Steuern der Benutzer, die Zugriff auf Unternehmensinformationen haben, indem Sie Einschränkungen wie " **nicht kopieren** " und " **nicht weiterleiten** " auf e-Mail und Dokumente anwenden (Azure Information Protection, Plan 1).
 
-- Aktivieren der unbegrenzten Cloud-Archivierung, damit Sie alle e-Mails Ihres Unternehmens, einschließlich der Postfächer ehemaliger Mitarbeiter (Exchange Online Archivierung), beibehalten können.
+- Aktivieren der unbegrenzten Cloud-Archivierung, sodass Sie alle e-Mails Ihrer Organisation einschließlich der Postfächer ehemaliger Mitarbeiter (Exchange Online Archivierung) beibehalten können.
 
 Ihre **Geräte sind gesichert** durch:
 
-- Steuern, welche Geräte und Benutzer auf Ihre Office 365 Daten zugreifen können; mit Optionen zum Blockieren der Anmeldung von Benutzern von Heimcomputern, nicht genehmigten Apps oder außerhalb der Arbeitsstunden (bedingter Zugriff).
+- Steuern, welche Geräte und Benutzer auf Ihre Office 365 Daten zugreifen können, mit Optionen zum Blockieren von Benutzern bei der Anmeldung von Heimcomputern, nicht genehmigten Apps oder außerhalb der Arbeitszeiten (bedingter Zugriff).
 
-- Anwenden von Sicherheitsrichtlinien zum Schutz von Geschäftsdaten auf IOS-und Android-Geräten.  Sie können beispielsweise festlegen, dass Benutzer eine PIN oder einen Fingerabdruck für den Zugriff auf Geschäftsdaten bereitstellen und Daten auf mobilen Geräten verschlüsseln (app Protection für Office Mobile Apps).
+- Anwenden von Sicherheitsrichtlinien zum Schutz von Geschäftsdaten auf IOS-und Android-Geräten. Sie können beispielsweise festlegen, dass Benutzer eine PIN oder einen Fingerabdruck für den Zugriff auf Geschäftsdaten bereitstellen und Daten auf mobilen Geräten verschlüsseln (app Protection für Office Mobile Apps).
 
 - Aufbewahrung von Geschäftsdokumenten, e-Mails und anderen Daten in einer genehmigten Office-Mobile Apps und verhindern, dass Mitarbeiter diese in nicht autorisierten apps und Speicherorten speichern (app Protection für Office Mobile Apps).
 
@@ -94,7 +94,7 @@ Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 3
 
 ## <a name="get-microsoft-365-business"></a>Abrufen von Microsoft 365 Business
 
-- Wenn Sie über einen Partner verfügen, erhält dieser Microsoft 365 Business: [Abrufen von Microsoft 365 Business bei Microsoft über Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- Wenn Sie über einen Partner verfügen, erhalten Sie Microsoft 365 Business: [erhalten Sie Microsoft 365 Business aus dem Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
 - Wenn Sie keinen Partner haben und Microsoft 365 Business erhalten möchten, können Sie [ihn hier kaufen](https://www.microsoft.com/microsoft-365/business) und den [Anmelde](sign-up.md) Anweisungen folgen.
 

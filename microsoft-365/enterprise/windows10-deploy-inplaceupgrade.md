@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
-description: Enthält Anleitungen zum Konfigurieren und Bereitstellen eines Windows 10 Enterprise-Images mithilfe von System Center Configuration Manager als direktes Upgrade.
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-Dokumentation, Windows 10 Enterprise, Bereitstellung, in-Place-Upgrade, Configuration Manager, System Center Configuration Manager
+description: Enthält Anleitungen zum Konfigurieren und Bereitstellen eines Windows 10 Enterprise-Images mithilfe von Microsoft Endpoint Configuration Manager als direktes Upgrade.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, Windows 10 Enterprise, Deployment, Inplace Upgrade, Configuration Manager, Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7dfa5c72a98dacc7a772ea034df6696621a8ef6
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f3a518ca448bf56c4328bbc34fe29a41d5f16488
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302932"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627469"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
@@ -23,13 +23,13 @@ ms.locfileid: "38302932"
 
 ![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Der einfachste Weg zum Upgrade von PCs, auf denen Windows 7 oder Windows 8.1 auf Windows 10 ausgeführt wird, ist ein direktes Upgrade. Sie können eine Tasksequenz von System Center Configuration Manager (Configuration Manager) verwenden, um den Prozess vollständig zu automatisieren. 
+Der einfachste Weg zum Upgrade von PCs, auf denen Windows 7 oder Windows 8.1 auf Windows 10 ausgeführt wird, ist ein direktes Upgrade. Sie können eine Konfigurations-Manager-Tasksequenz (Configuration Manager) verwenden, um den Prozess vollständig zu automatisieren. 
 
 Wenn Sie über vorhandene Computer verfügen, auf denen Windows 7 oder Windows 8.1 läuft, wird dieser Pfad empfohlen, wenn Ihre Organisation Windows 10 bereitstellt. Dadurch wird das Windows-Installationsprogramm (Setup. exe) verwendet, um ein direktes Upgrade durchzuführen, mit dem alle Daten, Einstellungen, Anwendungen und Treiber aus der vorhandenen Betriebssystemversion automatisch beibehalten werden. Dies erfordert den geringsten IT-Aufwand, da keine komplexe Bereitstellungsinfrastruktur erforderlich ist.
 
 Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Image mithilfe von Configuration Manager als direktes Upgrade zu konfigurieren und bereitzustellen.
 
-## <a name="the-windows-10-deployment-with-system-center-configuration-manager-poster"></a>Das Poster "Windows 10-Bereitstellung mit System Center Configuration Manager"
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Die Windows 10-Bereitstellung mit dem Configuration Manager-Poster
 
 Das Poster des Configuration Managers ist eine Seite im Querformatmodus (17x11). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
 
@@ -43,9 +43,9 @@ Verwenden Sie zunächst die Upgrade-Bereitschafts Fähigkeit von Windows Analyti
 
 Weitere Informationen, erste Schritte, Verwendung und Problembehandlung für das Upgrade finden Sie unter [Manage Windows Upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) .
 
-Führen Sie als nächstes die Anleitung aus, um System Center Configuration Manager (Current Branch) zum Upgraden von Windows 7 oder höherem Betriebssystem auf Windows 10 zu verwenden. Wie bei jeder Bereitstellung mit hohem Risiko wird empfohlen, die Benutzerdaten zu sichern, bevor Sie fortfahren. OneDrive Cloud Storage ist für lizenzierte Microsoft 365-Benutzer einsatzfähig und kann verwendet werden, um Ihre Dateien sicher zu speichern. Weitere Informationen finden Sie unter [OneDrive-Schnellstarthandbuch](https://aka.ms/ODfBquickstartguide). Um auf diese Seite zugreifen zu können, müssen Sie sich als mandantenadministrator oder globaler Administrator in einem Office 365-oder Microsoft 365-Mandanten anmelden.
+Führen Sie als nächstes die Anleitung aus, um Configuration Manager (Current Branch) zu verwenden, um Windows 7 oder höheres Betriebssystem auf Windows 10 zu aktualisieren. Wie bei jeder Bereitstellung mit hohem Risiko wird empfohlen, die Benutzerdaten zu sichern, bevor Sie fortfahren. OneDrive Cloud Storage ist für lizenzierte Microsoft 365-Benutzer einsatzfähig und kann verwendet werden, um Ihre Dateien sicher zu speichern. Weitere Informationen finden Sie unter [OneDrive-Schnellstarthandbuch](https://aka.ms/ODfBquickstartguide). Um auf diese Seite zugreifen zu können, müssen Sie sich als mandantenadministrator oder globaler Administrator in einem Office 365-oder Microsoft 365-Mandanten anmelden.
 
-Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für Configuration Manager](https://aka.ms/supportforwin10sccm).
 
 **So überprüfen Sie die Bereitschaft zum Upgrade von Windows**
 
@@ -58,12 +58,12 @@ Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10
     - Sicherungen von Benutzerdaten – wenn Benutzerdaten beim Upgrade migriert werden, empfiehlt es sich, ein Sicherungs Szenario zu konfigurieren. Exportieren Sie beispielsweise alle Benutzerdaten in ein OneDrive-Konto, ein BitLocker zu Go-verschlüsselten USB-Flashlaufwerk oder einen Netzwerkdateiserver. Weitere Informationen finden Sie unter [sichern oder übertragen von Daten in Windows](https://aka.ms/backuptransferdatawindows).
 - **Vorbereitung der Umgebung** : Sie verwenden eine vorhandene Configuration Manager-Serverstruktur, um die Betriebssystembereitstellung vorzubereiten. Neben dem Basis Setup sollten die folgenden Konfigurationen in der Configuration Manager-Umgebung vorgenommen werden:
     1. [Erweitern Sie das Active Directory Schema](https://aka.ms/extendadschema) , und [Erstellen Sie einen System Verwaltungs Container](https://aka.ms/createsysmancontainer).
-    2. Aktivieren Sie Active Directory Gesamtstruktur Ermittlung und Active Directory System Ermittlung. Weitere Informationen finden Sie unter [configure Discovery Methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
-    3. Erstellen von IP-Bereichsgrenzen und begrenzungsgruppen für die Inhalts-und Website Zuweisung. Weitere Informationen finden Sie unter [define Site Barriers and Boundary Groups for System Center Configuration Manager](https://aka.ms/definesiteboundaries).
+    2. Aktivieren Sie Active Directory Gesamtstruktur Ermittlung und Active Directory System Ermittlung. Weitere Informationen finden Sie unter [configure Discovery Methods for Configuration Manager](https://aka.ms/configurediscoverymethods).
+    3. Erstellen von IP-Bereichsgrenzen und begrenzungsgruppen für die Inhalts-und Website Zuweisung. Weitere Informationen finden Sie unter [define Site Barriers and Boundary Groups for Configuration Manager](https://aka.ms/definesiteboundaries).
     4. Fügen Sie die Configuration Manager Reporting Services-Zeiger Rolle hinzu, und konfigurieren Sie Sie. Weitere Informationen finden Sie unter [Configuring Reporting in Configuration Manager](https://aka.ms/configurereporting).
     5. Erstellen Sie eine Dateisystemordner Struktur für Pakete.
     6. Erstellen Sie eine Configuration Manager-Konsolen Ordnerstruktur für Pakete.
-    7. Installieren Sie die Updates für System Center Configuration Manager (aktuelle Zweigstellen) und alle weiteren Voraussetzungen für Windows 10.
+    7. Installieren Sie Configuration Manager-Updates (Current Branch) und alle weiteren Voraussetzungen für Windows 10.
 
 ## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>Part 2: Hinzufügen eines Windows 10-Betriebssystemabbilds mithilfe von Configuration Manager
 Jetzt müssen Sie ein Betriebssystem-Upgrade-Paket erstellen, das die vollständigen Windows 10-Installationsmedien enthält. In den folgenden Schritten erstellen Sie mit dem Konfigurations-Manager ein Upgrade-Paket für Windows 10 Enterprise x64.
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte aus, um eine Aktualisierungstask Sequenz zu e
 Nachdem Sie die Aktualisierungstask Sequenz erstellt haben, müssen Sie eine Sammlung erstellen, die die zu aktualisierbaren Geräte enthält.
 
 > [!NOTE]
-> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gerätegruppen einzuschließen, wenn Sie dazu fähig sind. Weitere Informationen finden Sie unter [How to Create Collections in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
+> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gerätegruppen einzuschließen, wenn Sie dazu fähig sind. Weitere Informationen finden Sie unter [How to Create Collections in Configuration Manager](https://aka.ms/sccm-create-collections).
 
 1. Klicken Sie in der Configuration Manager-Konsole im Arbeitsbereich **Ressourcen und Kompatibilität** mit der rechten Maustaste auf **gerätesammlungen**, und wählen Sie dann **gerätesammlung erstellen**aus. 
 2. Geben Sie im Assistenten zum Erstellen von gerätesammlungen auf der Seite **Allgemein** die folgenden Einstellungen ein, und wählen Sie dann **weiter**aus:

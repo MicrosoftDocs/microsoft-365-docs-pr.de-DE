@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 Enterprise E3 migrieren.
-ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 77760aa8ea5b79f39d4c069d86e79a3cec6844e9
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931853"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640784"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 Enterprise E3
 
@@ -34,7 +34,7 @@ Beispielsweise ist Ihr Unternehmen gewachsen und benötigt mehr als 300 Lizenzen
 
 Oder Ihr Unternehmen benötigt Enterprise-Features wie Office 365 ProPlus, Windows 10 Enterprise E3 oder Enterprise-Client Zugriffs Lizenzen (CALs).
 
-Das Upgrade ist ganz einfach: Sie können das Upgrade [über das Admin Center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)initiieren. Alle Ihre Daten und Konfigurationen in Ihrem aktuellen Abonnement werden beibehalten. Es gibt nichts, was Sie tun müssen, um die Migration vorzubereiten und danach nichts zu tun, außer nutzen Sie die neuen Features. 
+Das Upgrade ist ganz einfach: Sie können das Upgrade [über das Admin Center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)starten. Alle Ihre Daten und Konfigurationen in Ihrem aktuellen Abonnement werden beibehalten. Es gibt nichts, was Sie tun müssen, um die Migration vorzubereiten und danach nichts zu tun, außer nutzen Sie die neuen Features. 
 
 >[!Note]
 >Sie können auch ein Microsoft 365 Business-Abonnement für bis zu 300-Sitze verwenden und ein Microsoft 365 Enterprise E3-Abonnement für mehr als 300 Sitze erhalten. Office 365 ATP ist jedoch nicht in Microsoft 365 Enterprise E3 enthalten. Für fortgesetzten Bedrohungsschutz sollten Sie zusätzliche Office 365 ATP-Lizenzen hinzufügen, damit alle Benutzer im Umfang Ihrer Office 365 ATP Policies lizenziert sind.
@@ -51,7 +51,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 | Office-Apps *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **Apps für die Cloud-Produktivität**       | | | 
 | Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 Enterprise E3 enthalten](./media/check-mark.png) | 
+| Microsoft Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 Enterprise E3 enthalten](./media/check-mark.png) | 
 | OneDrive for Business | 1 TB Speichergrenzwert pro Benutzer   | Unbegrenzt | 
 | Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 Enterprise E3 enthalten](./media/check-mark.png) | 
 | StaffHub  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 Enterprise E3 enthalten](./media/check-mark.png) | 
@@ -87,13 +87,13 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 
 ## <a name="migration"></a>Migration
 
-Um zu migrieren, arbeiten Sie mit Ihrem Partner zusammen, um Ihr Microsoft 365 Business-Abonnement und ihre Lizenzen auf ein geeignetes Microsoft 365 Enterprise E3-Abonnement mit seinen Lizenzen zu verschieben.
+Zur Migration können Sie mit Ihrem Partner zusammenarbeiten, um Ihr Microsoft 365 Business-Abonnement und ihre Lizenzen in ein geeignetes Microsoft 365 Enterprise E3-Abonnement mit seinen Lizenzen zu verschieben.
 
 In den folgenden Abschnitten wird beschrieben, welche Änderungen Sie vornehmen müssen, falls vorhanden, und was Sie nach der Migration tun können.
 
 ### <a name="microsoft-365-subscription-configuration-and-data"></a>Microsoft 365-Abonnementkonfiguration und-Daten
 
-Sie müssen vor der Migration keine Änderungen am aktuellen Abonnement oder an den Daten vornehmen, einschließlich:
+Sie müssen keine Änderungen am aktuellen Abonnement oder an den Daten vor der Migration vornehmen, einschließlich:
 
 - Abonnementkonfiguration, wie DNS-Domänennamen.
 - Benutzer-und Gruppenkonten und Authentifizierungseinstellungen, beispielsweise mehrstufige Authentifizierung oder Richtlinien für bedingten Zugriff.
@@ -132,7 +132,7 @@ Windows 10 Enterprise E3 umfasst auch die Unternehmensverwaltung der hardwarebas
 
 ### <a name="device-management-with-intune"></a>Geräteverwaltung mit InTune
 
-Vor der Migration müssen Sie keine Änderungen an Ihrer aktuellen InTune-Konfiguration vornehmen, einschließlich der registrierten Geräte und Geräte-und App-Einstellungen.
+Sie müssen vor der Migration keine Änderungen an Ihrer aktuellen InTune-Konfiguration vornehmen, einschließlich eingeschriebener Geräte und Geräte-und App-Einstellungen.
 
 ### <a name="windows-10"></a>Windows 10
 

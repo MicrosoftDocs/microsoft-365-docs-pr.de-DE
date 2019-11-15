@@ -20,20 +20,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 zum Schutz von lokalen AD-Joints von Windows 10-Geräten aktivieren.
-ms.openlocfilehash: 392c57a7350a901c1481be632e880cc9fcaa6140
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 zum Schutz von lokalen Active Directory an Windows 10-Geräte schützen können.
+ms.openlocfilehash: 93e3364fc94f3878bec13d0a87b17a7d3678a4cc
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575976"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633267"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 
 Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern.
-Um dies festzulegen, können Sie **hybride Azure AD verbundene Geräte**implementieren. Dabei handelt es sich um Geräte, die sowohl zu Ihrer lokalen Active Directory als auch zu Ihrem Azure-Active Directory hinzugefügt werden.
+Um diesen Schutz einzurichten, können Sie **hybride Azure AD verbundene Geräte**implementieren. Diese Geräte sind sowohl mit Ihrem lokalen Active Directory als auch mit Ihrem Azure-Active Directory verbunden.
 
-Im folgenden Video werden die Schritte beschrieben, wie Sie diese Einstellung für das gängigste Szenario festlegen können, das auch in den folgenden Schritten detailliert beschrieben wird.
+In diesem Video werden die Schritte beschrieben, wie Sie dies für das am häufigsten verwendete Szenario einrichten, das auch in den folgenden Schritten detailliert erläutert wird.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
@@ -42,11 +42,11 @@ Im folgenden Video werden die Schritte beschrieben, wie Sie diese Einstellung f�
 
 Bevor Sie Ihre Benutzer und Computer aus der lokalen Active Directory Domäne synchronisieren, überprüfen Sie die [Verzeichnissynchronisierung auf Office 365 vorbereiten](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). Insbesondere:
 
-   - Stellen Sie sicher, dass in Ihrem Verzeichnis keine Duplikate für die folgenden Attribute vorhanden sind: **Mail**, **proxyAddresses**und **userPrincipalName**. Diese Werte sollten eindeutig sein, und alle Duplikate sollten entfernt werden.
+   - Stellen Sie sicher, dass in Ihrem Verzeichnis keine Duplikate für die folgenden Attribute vorhanden sind: **Mail**, **proxyAddresses**und **userPrincipalName**. Diese Werte müssen eindeutig sein, und alle Duplikate müssen entfernt werden.
    
-   - Es wird empfohlen, das UPN-Attribut ( **userPrincipalName** ) für jedes lokale Benutzerkonto so zu konfigurieren, dass es mit der primären e-Mail-Adresse übereinstimmt, die dem lizenzierten Microsoft 365-Benutzer entspricht. Beispiel *Mary.Shelley@contoso.com* statt *Mary @ contoso. local*
+   - Es wird empfohlen, das UPN-Attribut ( **userPrincipalName** ) für jedes lokale Benutzerkonto so zu konfigurieren, dass es mit der primären e-Mail-Adresse übereinstimmt, die dem lizenzierten Microsoft 365-Benutzer entspricht. Beispiel: *Mary.Shelley@contoso.com* statt *Mary@contoso. local*
    
-   - Wenn die Active Directory Domäne in einem nicht routingfähigen Suffix wie *. local* oder *. LAN*endet, müssen Sie anstelle eines routingfähigen Internet-Suffixes wie *. com* oder *. org*das UPN-Suffix der lokalen Benutzerkonten wie in beschrieben anpassen. [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+   - Wenn die Active Directory Domäne in einem nicht routingfähigen Suffix wie *. local* oder *. LAN*endet, müssen Sie anstelle eines über das Internet routingfähigen Suffixes wie *. com* oder *. org*das UPN-Suffix der lokalen Benutzerkonten anpassen, wie unter [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)beschrieben. 
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. installieren und Konfigurieren von Azure AD Connect
 
@@ -55,28 +55,28 @@ Wenn Sie Ihre Benutzer, Gruppen und Kontakte vom lokalen Active Directory in Azu
 > [!NOTE]
 > Die Schritte sind für Microsoft 365 Business genau gleich. 
 
-Wenn Sie Ihre Optionen für Azure AD Connect konfigurieren, empfehlen wir die Aktivierung der **Kennwortsynchronisierung** und des **nahtlosen einmaligen Anmeldens**sowie das Feature zum **Kenn Wort** Rückschreiben, das in Microsoft 365 Business ebenfalls unterstützt wird.
+Wenn Sie Ihre Optionen für Azure AD Connect konfigurieren, wird empfohlen, dass Sie die **Kennwortsynchronisierung**, das **nahtlose einmalige Anmelden**und das **Kenn Wort Rückschreibe** Feature aktivieren, das auch in Microsoft 365 Business unterstützt wird.
 
 > [!NOTE]
 > Es gibt einige zusätzliche Schritte für das Kenn Wort Rückschreiben über das Kontrollkästchen in Azure AD Connect hinaus. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren des Kenn Wort](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)Rückschreibens. 
 
 ## <a name="3-configure-hybrid-azure-ad-join"></a>3. Konfigurieren des Joins für Hybrid Azure AD
 
-Bevor Sie Windows 10-Geräte als Hybrid Azure AD verbunden aktivieren, sollten Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
+Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind, bevor Sie Windows 10-Geräte so aktivieren, dass Sie Hybrid Azure AD verbunden sind:
 
    - Sie führen die neueste Version von Azure AD Connect aus.
 
    - Azure AD Connect hat alle Computerobjekte der Geräte synchronisiert, die Sie als Hybrid Azure AD verbunden haben möchten. Wenn die Computerobjekte bestimmten Organisationseinheiten (Organizational Units, OU) angehören, stellen Sie sicher, dass diese OUs in Azure AD Connect ebenfalls für die Synchronisierung festgelegt sind.
 
-Führen Sie die Schritte im [Lernprogramm: Configure Hybrid Azure Active Directory Join for Managed Domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)aus, um die vorhandenen Domänen verbundenen Windows 10-Geräte als Hybrid Azure AD registriert zu registrieren. Auf diese Weise können Sie Ihre vorhandenen lokalen Active Directory, die Windows 10-Computern beigetreten sind, Hybrid aktivieren und Cloud bereit machen.
+Führen Sie die Schritte im [Lernprogramm: Configure Hybrid Azure Active Directory Join for Managed Domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)aus, um die vorhandenen Domänen verbundenen Windows 10-Geräte als Hybrid Azure AD registriert zu registrieren. Dieser Hybrid aktiviert ihre vorhandenen lokalen Active Directory den Windows 10-Computern beigetreten sind und Sie zur Cloud bereit machen.
     
 ## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. Aktivieren der automatischen Registrierung für Windows 10
 
- Informationen zum automatischen Registrieren von Windows 10-Geräten für die Verwaltung mobiler Geräte in InTune finden Sie unter [Registrieren eines Windows 10-Geräts automatisch mithilfe von Gruppenrichtlinien](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). Sie können die Gruppenrichtlinie auf lokaler Computerebene festlegen oder für Massenvorgänge diese Gruppenrichtlinieneinstellung auf dem Domänen Controller mithilfe der Gruppenrichtlinien-Verwaltungskonsole und der ADMX-Vorlagen erstellen.
+ Informationen zum automatischen Registrieren von Windows 10-Geräten für die Verwaltung mobiler Geräte in InTune finden Sie unter [Registrieren eines Windows 10-Geräts automatisch mithilfe von Gruppenrichtlinien](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). Sie können die Gruppenrichtlinie auf lokaler Computerebene oder für Massenvorgänge festlegen, indem Sie die Gruppenrichtlinien-Verwaltungskonsole und ADMX-Vorlagen verwenden, um diese Gruppenrichtlinieneinstellung auf dem Domänen Controller zu erstellen.
 
 ## <a name="5-configure-seamless-single-sign-on"></a>5. Konfigurieren des nahtlosen einmaligen Anmeldens
 
-  Seamless SSO signiert Benutzer automatisch bei der Verwendung von Unternehmenscomputern in Ihren Microsoft 365-Cloud-Ressourcen. Stellen Sie einfach eine der beiden in Azure beschriebenen Gruppenrichtlinienoptionen bereit [Active Directory nahtloses einmaliges Anmelden: Schnellstart](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). Die **Gruppenrichtlinien** Option lässt nicht zu, dass Benutzer Ihre Einstellungen ändern, während die Option **Gruppenrichtlinieneinstellung** die Werte festlegt, Sie aber auch Benutzer konfigurierbar lässt.
+  Seamless SSO signiert Benutzer automatisch bei Verwendung von Unternehmenscomputern in Ihre Microsoft 365 Cloud-Ressourcen. Stellen Sie einfach eine der beiden in Azure beschriebenen Gruppenrichtlinienoptionen bereit [Active Directory nahtloses einmaliges Anmelden: Schnellstart](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). Mit der **Gruppenrichtlinien** Option können Benutzer Ihre Einstellungen nicht ändern, während die Option **Gruppenrichtlinieneinstellung** die Werte festlegt, Sie aber auch Benutzer konfigurierbar lässt.
 
 ## <a name="6-set-up-windows-hello-for-business"></a>6. Einrichten von Windows Hello for Business
 

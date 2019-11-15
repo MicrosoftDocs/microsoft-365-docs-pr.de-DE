@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Erfahren Sie mehr über die Verwaltung von Microsoft 365 geschäftsbezogenen Verwaltungsaufgaben, mobilen Geräten, Windows 10ST und vielen solchen Aufgaben.
-ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Erfahren Sie mehr über die Verwaltung von Microsoft 365 geschäftsbezogenen Verwaltungsaufgaben, mobilen Geräten, Windows 10-PCs und vielen solchen Aufgaben.
+ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575956"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633307"
 ---
 # <a name="manage-microsoft-365-business"></a>Verwalten von Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Allgemeine Microsoft 365-Geschäfts Administratoraufgaben
 
-Der Großteil der [Administrator Inhalte](/Office365/Admin/admin-home.md) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
+Der Großteil des [Administrator Inhalts](/Office365/Admin/admin-home.md) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
 
 - [Hinzufügen weiterer Benutzer zu Microsoft 365 Business](add-users-m365b.md)
     
@@ -48,7 +48,7 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
     
 - [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](app-protection-settings-for-android-and-ios.md)
     
-    Weitere Informationen finden Sie unter [Validieren von App-Schutzeinstellungen auf einem Android-oder IOS-Gerät](validate-settings-on-android-or-ios.md) , um sicherzustellen, dass dies funktioniert 
+    Um dies sicherzustellen, lesen Sie [Überprüfen der Einstellungen für den App-Schutz auf einem Android-oder IOS-Gerät](validate-settings-on-android-or-ios.md). 
     
 - [Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
     
@@ -62,11 +62,11 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
     
 - [Festlegen von Geräteschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-pcs.md)
     
-    Weitere Informationen finden Sie unter [Validieren von Geräteschutz Einstellungen auf Windows 10-Geräten](validate-settings-on-windows-10-pcs.md) , um sicherzustellen, dass dies funktioniert. 
+    Um dies sicherzustellen, lesen Sie [Überprüfen der Geräteschutz Einstellungen auf Windows 10-Geräten](validate-settings-on-windows-10-pcs.md). 
     
 - [Festlegen von Anwendungsschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
     
-    Siehe [Validieren von App-Schutzeinstellungen auf Windows 10-PCs](validate-protection-settings-on-windows-10-pcs.md) , um sicherzustellen, dass dies funktioniert. 
+    Um dies sicherzustellen, lesen Sie [Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs](validate-protection-settings-on-windows-10-pcs.md). 
     
 - [Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
     
@@ -88,9 +88,9 @@ In den folgenden Themen wird beschrieben, wie Sie Windows 10-Geräte mit Windows
     
 - [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>Einrichten und Voraussetzungen für Informationen
+## <a name="set-up-and-prerequisite-information"></a>Einrichten und erforderliche Informationen
 
-- [Voraussetzungen zum Schutz von Daten auf Geräten mit Microsoft 365 Business](pre-requisites-for-data-protection.md)
+- [Voraussetzungen für den Schutz von Daten auf Geräten mit Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
 - [Einrichten von Microsoft 365 Business mithilfe des Setup-Assistenten](set-up.md)
     
@@ -98,8 +98,4 @@ In den folgenden Themen wird beschrieben, wie Sie Windows 10-Geräte mit Windows
     
 - [Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden](manage-windows-devices.md)
     
-[Zusätzliche Sicherheitsfeatures](security-features.md#additional-security-features)
-    
-
-  
-
+- [Zusätzliche Sicherheitsfeatures](security-features.md#additional-security-features)

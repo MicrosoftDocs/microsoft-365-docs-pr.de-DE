@@ -21,24 +21,24 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: 4c744d6a900dba3c11ee51e75602a430268e15bb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029102"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633427"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Erste Schritte mit Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Was ist Microsoft 365 Business?
 
-Microsoft 365 Business ist eine umfassende Sammlung von Tools für Produktivität und Zusammenarbeit im Unternehmen und besteht z. B. aus Outlook, Word, Excel und anderen Office-Produkten, die immer auf dem neuesten Stand sind. Sie können Ihre Arbeitsdateien auf allen Ihren iOS-, Android- und Windows 10-Geräten mit Sicherheit auf Unternehmensniveau schützen, die einfach zu verwalten ist.
+Microsoft 365 Business ist eine umfassende Sammlung von Tools für die geschäftliche Produktivität und Zusammenarbeit, wie Outlook, Word, Excel und andere Office-Produkte, die immer auf dem neuesten Stand sind. Sie können Ihre Arbeitsdateien auf allen IOS-, Android-und Windows 10-Geräten mit unternehmensweitem Sicherheitsniveau schützen, das einfach zu verwalten ist.
   
-Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht, wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) -Dokumentation. 
+Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) . 
   
 ## <a name="get-microsoft-365-business"></a>Abrufen von Microsoft 365 Business
 
-- Wenn Sie über einen Partner verfügen, erhält dieser Microsoft 365 Business: [Abrufen von Microsoft 365 Business bei Microsoft über Microsoft Partner Center](get-microsoft-365-business.md).
+- Wenn Sie über einen Partner verfügen, erhalten Sie Microsoft 365 Business: [erhalten Sie Microsoft 365 Business aus dem Microsoft Partner Center](get-microsoft-365-business.md).
     
 - Wenn Sie keinen Partner haben und Microsoft 365 Business erhalten möchten, können Sie [ihn hier kaufen](https://www.microsoft.com/microsoft-365/business).
     
@@ -46,37 +46,37 @@ Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht, wenn Sie weitere Li
 
  **Übersicht über das Setup der Microsoft 365 Business Suite**
   
-Im folgenden Diagramm wird beschrieben, wie Microsoft 365 Business von Administratoren eingerichtet wurde. Darüber hinaus werden die Schritte zum Vorbereiten von Windows-PCs für Microsoft 365 Business beschrieben. Sie können mit dem [Windows AutoPilot](add-autopilot-devices-and-profile.md) auch neue Geräte im Microsoft 365 Business Admin Center hinzufügen. Mit dem AutoPilot können Sie neue Geräte einrichten und vorkonfigurieren, um sie auf den produktiven Einsatz vorzubereiten, sobald sich ein Benutzer mit seinen Microsoft 365 Business-Anmeldeinformationen anmeldet.
+Im folgenden Diagramm wird beschrieben, wie Microsoft 365 Business von Administratoren eingerichtet wurde. Darüber hinaus werden die Schritte zum Vorbereiten von Windows-PCs für Microsoft 365 Business beschrieben. Sie können auch neue Geräte im Microsoft 365 Business Admin Center mit [Windows Autopilot](add-autopilot-devices-and-profile.md)hinzufügen. Sie können Autopilot zum Einrichten und vorkonfigurieren neuer Geräte verwenden, damit Sie für die produktive Verwendung bereit sind, sobald sich ein Benutzer mit seinen Microsoft 365-Geschäfts Anmeldeinformationen anmeldet.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: Einrichten von Microsoft 365 Business (Administrator)
 
-Melden Sie sich mit Ihren globalen Administratoranmeldeinformationen beim [Microsoft 365 Business Admin Center](https://portal.office.com/adminportal/home) an, und führen Sie die nachstehenden Schritte zum Einrichten von Microsoft 365 Business aus. 
+Melden Sie sich bei [Microsoft 365 Business Admin Center](https://portal.office.com/adminportal/home) mit ihren globalen Administratoranmeldeinformationen an, und führen Sie die folgenden Schritte aus, um Microsoft 365 Business einzurichten. 
   
-1. [Voraussetzungen zum Schutz von Daten auf Geräten mit Microsoft 365 Business](pre-requisites-for-data-protection.md)
+1. [Voraussetzungen für den Schutz von Daten auf Geräten mit Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
     Lesen Sie zuerst die Voraussetzungen, um sicherzustellen, dass Ihre Geräte für Microsoft 365 Business bereit sind.
     
 2. [Einrichten von Microsoft 365 Business mithilfe des Setup-Assistenten](set-up.md)
     
-    Wenn Sie **dauerhaft von einem lokalen Active Directory in die Cloud wechseln**, können Sie Ihre Benutzer entweder manuell im Microsoft 365 Business Admin Center mithilfe des Setup-Assistenten hinzufügen, oder Sie können eine einmalige Synchronisierung mit Azure AD Connect durchführen. Sie können auf zwei Arten vorgehen: 
+    Wenn Sie **dauerhaft von einem lokalen Active Directory in die Cloud**wechseln, können Sie zum Microsoft 365 Business Admin Center wechseln und den Setup-Assistenten verwenden, um Ihre Benutzer manuell hinzuzufügen, oder Sie können eine einmalige Synchronisierung mit Azure AD Connect durchführen. Sie können auf zwei Arten vorgehen: 
     
-  - Wenn Sie auch über einen Exchange 2010-, Exchange 2013-oder Exchange 2016-Server verfügen, können Sie mit [minimaler Hybrid Bereitstellung schnell Exchange-Postfächer zu Office 365 migrieren](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Die Schritte bei der minimalen Hybridkonfiguration umfassen eine einmalige Synchronisierung von Benutzern mit Azure AD sowie die E-Mail-Migration aus der lokalen Bereitstellung in die Cloud. Nachdem die E-Mail-Migration abgeschlossen wurde, wird die Verzeichnissynchronisierung automatisch deaktiviert, wenn Sie diese Methode verwenden.
+    - Wenn Sie auch über einen Exchange 2010-, Exchange 2013-oder Exchange 2016-Server verfügen, können Sie mit [minimaler Hybrid Bereitstellung schnell Exchange-Postfächer zu Office 365 migrieren](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Die minimalen Hybriden Schritte umfassen eine einmalige Synchronisierung von Benutzern zu Azure AD und eine e-Mail-Migration von der lokalen zur Cloud. Nachdem die e-Mail-Migration abgeschlossen ist, wird die Verzeichnissynchronisierung automatisch deaktiviert, wenn Sie diese Methode verwenden.
     
-  - Verwenden Sie den Office 365-Verzeichnissynchronisierungs-Assistenten, um Ihre Benutzer mit der Cloud zu synchronisieren. Führen Sie die Schritte unter [Einrichten der Verzeichnissynchronisierung für Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) aus, um diesen Vorgang abzuschließen. Nachdem Sie Ihre Benutzer mit der Cloud synchronisiert haben, müssen Sie die [Verzeichnissynchronisierung deaktivieren](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+    - Verwenden Sie den Office 365-Verzeichnis Synchronisierungs-Assistenten, um Ihre Benutzer mit der Cloud zu synchronisieren. Führen Sie die Schritte unter [Einrichten der Verzeichnissynchronisierung für Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) aus, um diesen Vorgang abzuschließen. Nachdem Sie Ihre Benutzer mit der Cloud synchronisiert haben, müssen Sie die [Verzeichnissynchronisierung für Office 365 deaktivieren](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Außerdem müssen Sie jedem Benutzer, der auf diese Weise hinzugefügt wurde, eine Lizenz für Microsoft 365 Business erteilen. Dies können Sie im Setup- [Assistenten](set-up.md)oder im [Office 365 für Unternehmen Zuweisen von Lizenzen zu Benutzern](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)tun.
+    Außerdem müssen Sie jedem Benutzer, der auf diese Weise hinzugefügt wurde, eine Lizenz für Microsoft 365 Business geben. Dies können Sie im Setup- [Assistenten](set-up.md) tun, oder Sie können [Benutzern in Office 365 für Unternehmen Lizenzen zuweisen](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
     
 ### <a name="2-prepare-mobile-devices"></a>2: Vorbereiten von mobilen Geräten
 
-Führen Sie die Schritte unter[Einrichten mobiler Geräte für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md) aus, um Office-Apps auf Geräten zu installieren und sicherzustellen, dass Sie von Microsoft 365 Business geschützt sind. 
+Führen Sie die Schritte unter [Einrichten mobiler Geräte für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md) aus, um Office-Apps auf Geräten zu installieren und sicherzustellen, dass Sie von Microsoft 365 Business geschützt sind. 
   
 ### <a name="3-prepare-pcs"></a>3: Vorbereiten von PCs
 
-Administratoren können Einstellungen für neue Geräte Windows 10-PCs mithilfe von [Windows Autopilot](add-autopilot-devices-and-profile.md)vorab auswählen. Benutzer können Ihre vorhandenen oder neuen Windows 10-Geräte einrichten, indem Sie die Schritte in diesem Thema ausführen: Einrichten von [Windows-PCs für Microsoft 365 Business-Benutzer](set-up-windows-devices.md). Für vorhandene Geräte können Benutzer **optional**[Dateien auch in OneDrive für Unternehmen umlegen](move-files-to-onedrive.md). Sie können auch Tools von Drittanbietern verwenden, um Dateien zu migrieren, die mit dem Windows-Profil in OneDrive verbunden sind.
+Administratoren können mithilfe von [Windows Autopilot](add-autopilot-devices-and-profile.md)Einstellungen für neue Windows 10-PCs vorab auswählen. Benutzer können Ihre vorhandenen oder neuen Windows 10-Geräte einrichten, indem Sie die Schritte in diesem Thema ausführen: Einrichten von [Windows-PCs für Microsoft 365 Business-Benutzer](set-up-windows-devices.md). Für vorhandene Geräte können Benutzer **optional** [Dateien in OneDrive für Unternehmen umlegen](move-files-to-onedrive.md). Sie können auch Tools von Drittanbietern verwenden, um Dateien zu migrieren, die mit dem Windows-Profil in OneDrive verbunden sind.
   
-Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern. Führen Sie die Schritte unter [enable Domain-Joined Windows 10 Devices to manage by Microsoft 365 Business](manage-windows-devices.md) aus, um diesen einzurichten. Dies ist die bevorzugte Methode, und Geräte in diesem Zustand werden als **Hybrid Azure AD verbundene Geräte**bezeichnet. 
+Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern. Führen Sie die Schritte unter [enable Domain-Joined Windows 10 Devices to manage by Microsoft 365 Business](manage-windows-devices.md) aus, um diesen einzurichten. Diese Methode wird bevorzugt, und Geräte in diesem Zustand werden als **Hybrid Azure AD verbundene Geräte**bezeichnet. 
   
 Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen (beispielsweise Dateifreigaben und Drucker) enthält, können Sie Ihren **Azure AD-verbundenen Geräten** Zugriff auf diese Ressourcen gewähren, indem Sie die folgenden Schritte ausführen: [zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business](access-resources.md).
   
@@ -88,7 +88,7 @@ Nachdem Sie Windows 10-PCs eingerichtet haben, können Sie [Office automatisch](
   
 - Wenden Sie sich an Ihren Partner.
     
-- Als Microsoft 365 Business-Administrator haben Sie Zugriff auf unser Kundensupport Team, ** [kontaktieren des Supports für Business-Produkte – Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Als Microsoft 365 Business-Administrator haben Sie Zugriff auf unser Kundensupport Team: ** [kontaktieren des Supports für Business-Produkte-Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
 ## <a name="related-topics"></a>Verwandte Themen
 [Microsoft 365 Business-Dokumentation und -Ressourcen](https://go.microsoft.com/fwlink/p/?linkid=853701)

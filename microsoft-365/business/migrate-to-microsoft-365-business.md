@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Schritte zum Upgrade Ihres Unternehmens von Office 365 Business Premium auf Microsoft 365 Business.
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231409"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640559"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Upgrade auf Microsoft 365 Business von Office 365 Business Premium
 
@@ -41,7 +41,7 @@ Wir haben einen nebeneinander Vergleich dieser beiden Pläne zur [Microsoft 365 
 ## <a name="before-you-get-started"></a>Bevor Sie loslegen
 
 - **Wann sollte ich ein Upgrade auswählen?** Das Upgrade ist die richtige Wahl, wenn Sie alle einem einzelnen Plan zugewiesenen **Benutzer** aktualisieren möchten. Wenn Sie Upgrade auswählen, werden alle Plan Benutzer gleichzeitig zu einem anderen Plan gewechselt. Wenn Sie nicht alle einem einzelnen Plan zugewiesenen Upgrades aktualisieren möchten, kaufen Sie Lizenzen für den neuen Plan (in diesem Fall Microsoft 365 Business), und [weisen Sie diese Lizenzen](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) jedem Benutzer einzeln zu, der aktualisiert werden soll. 
-- **Einige Add-ons verhindern möglicherweise ein Upgrade** Wenn Sie versuchen, ein Upgrade zu starten, und Sie ein Add-on haben, das verhindert, dass Sie fortfahren, können Sie das Add-on zuerst entfernen und dann später wieder hinzufügen, wenn Sie es dennoch benötigen. 
+- **Einige Add-ons verhindern möglicherweise das Upgrade** Wenn Sie versuchen, ein Upgrade zu starten, und Sie ein Add-on haben, das verhindert, dass Sie fortfahren, können Sie das Add-on zuerst entfernen und dann später wieder hinzufügen, wenn Sie es dennoch benötigen. 
 - **Wenn Sie Ihren Plan voraus bezahlt haben** Es gibt keinen einfachen Upgrade-Pfad für Prepaid-Pläne. Sie wissen, ob Sie über einen Prepaid-Plan verfügen, da Sie Ihren Plan mit einer Produkt-ID einrichten, die Sie möglicherweise in einem Store erworben haben. Wenden Sie sich an einen Partner, wechseln Sie zum Microsoft Store, oder warten Sie, bis Ihr Prepaid-Plan abgelaufen ist, um zu einem neuen Plan zu wechseln.
 
 ## <a name="upgrade-to-microsoft-365-business"></a>Upgrade auf Microsoft 365 Business
@@ -56,12 +56,12 @@ Kaufen Sie Ihre Lizenzen, indem Sie die folgenden Schritte im [neuen Admin Cente
       ![Ein Screenshot zeigt, wo Sie das Upgrade im Admin Center auswählen können.](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > Wenn Sie eine Meldung mit dem Hinweis "Upgrade Ihres Abonnements wird von der gruppenbasierten Lizenzierung in Azure Active Directory nicht unterstützt" angezeigt wird, können Sie diese ignorieren, es sei denn, Sie verfügen über eine sehr große Organisation. Organisationen, die diese Option ausgewählt haben, sind sich bewusst, dass Sie die Gruppenbasierte Lizenzierung verwenden.
+  > Wenn eine Meldung angezeigt wird, die besagt, dass das **Upgrade Ihres Abonnements mit der gruppenbasierten Lizenzierung in Azure Active Directory nicht unterstützt wird**, können Sie diese ignorieren, es sei denn, Sie verfügen über eine sehr große Organisation. Organisationen, die diese Option ausgewählt haben, sind sich bewusst, dass Sie die Gruppenbasierte Lizenzierung verwenden.
 
 4. Als nächstes können Sie eine Liste der Office-Pläne anzeigen, auf die Sie ein Upgrade ausführen können. Suchen Sie in diesem Fall den Microsoft 365 Business-Plan. Sie können einen Bildlauf nach unten durchführen, wenn Sie alle Office-Apps und-Dienste anzeigen möchten, die in diesem Plan enthalten sind. Wählen Sie unter **Microsoft 365 Business** **Upgrade** aus, um Microsoft 365 Business zu Ihrem Warenkorb hinzuzufügen.
 5. Im Warenkorb:
-    1. Wir fügen automatisch Lizenzen für alle aktuellen Benutzer in den Warenkorb ein. Wenn Sie mehr oder weniger Lizenzen benötigen, müssen Sie [Diese Lizenzen einzeln erwerben und zuweisen](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
-    2. Sie können anpassen, wie Sie zahlen möchten-monatlich oder jährlich. Wählen Sie das Dropdownmenü aus, um Ihre Auswahl zu treffen.
+    1. Es werden automatisch Lizenzen für alle aktuellen Benutzer hinzugefügt. Wenn Sie mehr oder weniger Lizenzen benötigen, müssen Sie [Diese Lizenzen einzeln erwerben und zuweisen](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
+    2. Sie können festlegen, wie Sie zahlen möchten: monatlich oder jährlich. Wählen Sie das Dropdownmenü aus, um Ihre Auswahl zu treffen.
 6. Wählen Sie **Gehe zu Kasse** aus, wo Sie eine Zusammenfassung Ihres Kaufs sehen, einschließlich der Zahlungsmethode für dieses Konto. Sie können auch einen Promo-Code hinzufügen, wenn Sie einen haben.
 7. Wählen Sie **Bestellung platzieren** aus, um Ihren Einkauf abzuschließen.
 Es dauert ein paar Minuten, bis Microsoft die neuen Dienstpläne eingerichtet hat. Um den Status zu überprüfen, wählen Sie **Upgradestatus überprüfen**aus. 
@@ -78,7 +78,7 @@ Nachdem Microsoft 365 Business-Lizenzen zugewiesen wurden, müssen Sie die Schri
     
 2. Wählen Sie auf der Seite **Geräterichtlinien** die Option **Hinzufügen**aus.
     
-3. Geben Sie im Bereich **Richtlinie hinzufügen** der Richtlinie einen Namen (beispielsweise Arbeitsdateien schützen), und wählen Sie dann einen **Richtlinientyp** aus der Dropdownliste aus. 
+3. Geben Sie im Bereich **Richtlinie hinzufügen** der Richtlinie einen Namen (beispielsweise Arbeitsdateien schützen), und wählen Sie dann in der Dropdownliste einen **Richtlinientyp** aus. 
     
     Sie können Anwendungsrichtlinien zum Schützen von Dateien auf Android-und iPhone-Geräten sowie Windows 10 einrichten, und Sie können Geräte Konfigurationsrichtlinien für Windows 10-Geräte im Unternehmen einrichten. Weitere Informationen finden Sie unter den folgenden Links:
     
@@ -96,6 +96,3 @@ Nachdem Microsoft 365 Business-Lizenzen zugewiesen wurden, müssen Sie die Schri
   - Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business Users](set-up-windows-devices.md) für Schritte für Windows-Geräte. 
     
   - Weitere Informationen finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md) für Schritte für Android-Telefone und iPhones. 
-
-
-

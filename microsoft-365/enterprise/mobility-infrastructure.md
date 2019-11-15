@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c507db0d2867b006772f5aca83d8b5342e55113d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031150"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627429"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
@@ -62,7 +62,7 @@ Dieser Schritt konzentriert sich auf die Einrichtung von InTune und die Vorberei
 
 3. **[Melden Sie sich bei InTune an](https://docs.microsoft.com/intune/account-sign-up)**. Wenn Sie sich anmelden, werden Sie möglicherweise aufgefordert, Informationen zu Ihrer Organisation einzugeben. InTune ist in Microsoft 365 enthalten und kann direkt im [Microsoft 365 Admin Center](https://admin.microsoft.com)geöffnet werden. Sie können InTune auch direkt über das [Azure-Portal](https://portal.azure.com)öffnen.
 
-4. **[Wählen Sie die Verwaltungskonfiguration für mobile Geräte aus](https://docs.microsoft.com/intune/mdm-authority-set)**. Wenn Sie InTune zum ersten Mal verwenden, müssen Sie die Geräteverwaltung aktivieren. InTune kann als Cloud-only-Dienst, als Hybrid mit InTune und System Center Configuration Manager oder mithilfe der Verwaltung mobiler Geräte für Office 365 verwendet werden. Sie können auswählen, welches Setup für Ihre Organisation am besten geeignet ist.
+4. **[Wählen Sie die Verwaltungskonfiguration für mobile Geräte aus](https://docs.microsoft.com/intune/mdm-authority-set)**. Wenn Sie InTune zum ersten Mal verwenden, müssen Sie die Geräteverwaltung aktivieren. InTune kann als Cloud-only-Dienst, als Hybrid mit InTune und Microsoft Endpoint Configuration Manager oder mithilfe der Verwaltung mobiler Geräte für Office 365 verwendet werden. Sie können auswählen, welches Setup für Ihre Organisation am besten geeignet ist.
 
 5. **[Hinzufügen von Benutzern](https://docs.microsoft.com/intune/users-add)** und **[Hinzufügen von Gruppen](https://docs.microsoft.com/intune/groups-add)**. 
 

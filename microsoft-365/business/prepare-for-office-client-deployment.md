@@ -18,21 +18,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: Erfahren Sie, wie Sie die 32-Bit-Office-Apps automatisch auf Windows 10-Computern installieren und aktualisieren.
-ms.openlocfilehash: 5b28c1e62d813c52b41ce8e7619c865cdf7690e2
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: In diesem Artikel erfahren Sie, wie Sie die 32-Bit-Office-Apps auf Windows 10-Computern automatisch installieren und auf dem neuesten Stand halten.
+ms.openlocfilehash: 09857ddeb28e953da07979045a65f6b91925aeaf
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575816"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640767"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Vorbereiten der Office-Clientbereitstellung durch Microsoft 365 Business
 
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Vorbereiten der automatischen Installation von Office-Apps auf Clientcomputern
 
-Sie können die 32-Bit-Office-Apps mithilfe von Microsoft 365 Business auf Windows 10-Computern automatisch installieren und mit Updates auf dem neuesten Stand halten.
+Sie können Microsoft 365 Business verwenden, um die 32-Bit-Office-Apps auf Windows 10-Computern automatisch zu installieren und diese mit Updates auf dem neuesten Stand zu halten.
   
-Das funktioniert am besten, wenn auf dem Computer des Endbenutzers Windows 10 Business ausgeführt wird und außerdem Folgendes zutrifft:
+Die automatische Installation funktioniert am besten, wenn sich der Computer des Endbenutzers in Windows 10 Business befindet und:
   
 - Es sind keine Office-Desktop-Apps (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access und OneDrive) vorhanden.
     
@@ -40,34 +40,32 @@ Das funktioniert am besten, wenn auf dem Computer des Endbenutzers Windows 10 Bu
     
 - Auf dem Computer ist eine Version von Office Klick-und-Los installiert.
     
-Wenn Sie feststellen möchten, ob Sie über die Office Klick-und-Los-Version verfügen, wechseln Sie in einer beliebigen Office-App zu **Datei** \> **Konto** ( **Office-Konto** in Outlook). Wenn "Office-Updates" wie in der nachstehenden Abbildung angezeigt wird, erfolgte die Installation mithilfe von Klick-und-Los. 
+Wenn Sie feststellen möchten, ob Sie über die Office Klick-und-Los-Version verfügen, wechseln Sie in einer beliebigen Office-App zu **Datei** \> **Konto** ( **Office-Konto** in Outlook). Wenn Office- **Updates** wie in der folgenden Abbildung dargestellt angezeigt werden, wurde die Installation mithilfe von Klick-und-Los ausgeführt. 
   
 ![Screenshot of Office updates in Office app Account](media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
- **Wer von diesem Feature profitiert**
+ **Wer profitiert von dieser Funktion**
   
 Der Endbenutzer, für dessen PC Folgendes zutrifft:
   
 - **Verfügt** über eine Windows 10 Business-Benutzerlizenz, eine aktive Microsoft 365 Business-Lizenz, Windows 10 Creators Update und ist in Azure Active Directory eingebunden. 
     
-- **Verfügt über keine** 64-Bit-Office-Apps (Beispiel: Word, Excel, PowerPoint). Wenn die 64-Bit-Office-Apps benötigt werden, ist dieses Feature ungeeignet, weil es keinen Support für das Auslösen einer 64-Bit-Version von Office 2016 Klick-und-Los über die Microsoft 365 Business-Verwaltungskonsole gibt. 
+- Verfügt **nicht über** 64-Bit-Office-Apps (Beispiel: Word, Excel, PowerPoint). Wenn 64-Bit-Office-Apps erforderlich sind, ist dieses Feature nicht geeignet, da es keine Unterstützung für das Auslösen einer 64-Bit-2016-Klick-und-Los-Version von Office über die Microsoft 365 Business-Verwaltungskonsole gibt. 
     
-- **Verfügt über keine** eigenständigen 2016 Windows Installer-Apps (MSI-Apps) wie z. B. Visio oder Project. Microsoft 365 Business aktualisiert Office auf die Klick-und-Los-Version von Office 2016 und funktioniert nicht bei eigenständigen Office 2016-MSI-Apps. 
+- Verfügt **nicht über** 2016 eigenständige Windows Installer (MSI)-Apps (beispielsweise Visio oder Project). Microsoft 365 Business aktualisiert Office auf die Klick-und-Los-Version von Office 2016 und funktioniert nicht mit Office 2016 MSI-eigenständigen apps. 
     
-In der nachstehenden Tabelle wird erläutert, welche Maßnahme die Endbenutzer/Administratoren - je nach ihrem Anfangsstatus - möglicherweise ergreifen müssen, um eine erfolgreiche 32-Bit-Klick-und-Los-Version einer Office-Bereitstellung über die Microsoft 365 Business-Verwaltungskonsole zu erhalten.
+Die folgende Tabelle zeigt, welche Aktion die Endbenutzer/Administratoren je nach Anfangsstatus möglicherweise ausführen müssen, um eine erfolgreiche 32-Bit-Klick-und-Los-Version der Office-Bereitstellung über die Microsoft 365 Business Admin Console zu erhalten.
   
 |**Status "Office-Installation starten"**|**Zu ergreifende Maßnahme vor Microsoft 365 Business Office-Installation**|**Endstatus**|
 |:-----|:-----|:-----|
-|Keine Office-Suite installiert  <br/> |Keine  <br/> |Die 32-Bit-Version von Office 2016 wurde mithilfe von Klick-und-Los installiert  <br/> |
+|Keine Office-Suite installiert  <br/> |Keine  <br/> |Office 2016 32-Bit wird mithilfe von Klick-und-Los installiert  <br/> |
 |Vorhandene 32-Bit-Klick-und-Los-Version von Office (2016 oder früher) und keine eigenständigen Apps  <br/> |Keine  <br/> |Upgrade auf die neueste 32-Bit-Klick-und-Los-Version von Office 2016, je nach Bedarf **\*** <br/> |
-|Vorhandene 32-Bit-Klick-und-Los-Version von Office und eigenständige 32- oder 64-Bit-Klick-und-Los-Office-Apps (z. B. Visio, Project)  <br/> |Keine  <br/> |Eigenständige Apps sind hiervon nicht betroffen. Suite wird auf 32-Bit-Klick-und-Los-Version von Office 2016 aktualisiert.  <br/> |
-|Vorhandene 32-Bit-Klick-und-Los-Version von Office und alle eigenständigen 32-Bit- oder 64-Bit-MSI-Office-Apps (mit Ausnahme von 2016)  <br/> |Keine  <br/> |Eigenständige Apps sind hiervon nicht betroffen. Suite wird auf 32-Bit-Klick-und-Los-Version von Office 2016 aktualisiert.  <br/> ||||
-|Beliebige vorhandene 64-Bit-Klick-und-Los-Version von Office  <br/> |64-Bit-Office-Apps deinstallieren, wenn es OK ist, dass sie durch die 32-Bit-Office-Apps ersetzt werden  <br/> |Wenn die 64-Bit-Office-Apps entfernt wurden, wird die 32-Bit-Klick-und-Los-Version von Office 2016 installiert  <br/> |
+|Vorhandene Klick-und-Los-32-Bit-Version von Office-und Klick-und-Los-32-Bit-oder 64-Bit-eigenständigen Office-Apps (beispielsweise Visio, Project)  <br/> |Keine  <br/> |Eigenständige apps sind davon nicht betroffen. Suite wird auf 32-Bit-Klick-und-Los-Version von Office 2016 aktualisiert.  <br/> |
+|Vorhandene 32-Bit-Klick-und-Los-Version von Office und alle eigenständigen 32-Bit- oder 64-Bit-MSI-Office-Apps (mit Ausnahme von 2016)  <br/> |Keine  <br/> |Eigenständige apps sind davon nicht betroffen. Suite wird auf 32-Bit-Klick-und-Los-Version von Office 2016 aktualisiert.  <br/> ||||
+|Beliebige vorhandene 64-Bit-Klick-und-Los-Version von Office  <br/> |Deinstallieren Sie die 64-Bit-Office-Apps, wenn es OK ist, um Sie durch 32-Bit-Office-Apps zu ersetzen.  <br/> |Wenn die 64-Bit-Office-Apps entfernt wurden, wird die 32-Bit-Klick-und-Los-Version von Office 2016 installiert  <br/> |
 |Eine vorhandene MSI-Installation von Office 2016 mit oder ohne eigenständige Apps  <br/> |MSI-Office 2016 deinstallieren  <br/> |Die 32-Bit-Klick-und-Los-Version von Office 2016 wird installiert. Keine Änderung an eigenständigen Apps  <br/> |
 |Vorhandene MSI-Installation von Office 2013 (oder früher) und/oder eigenständigen Office-Apps  <br/> |Keine  <br/> |32-Bit-Klick-und-Los-Version von Office 2016 mit der bereits vorhandenen MSI-Office-Installation (und eigenständigen Apps) existieren nebeneinander.  <br/> |
 ||||
    
- **(\*) Hinweis:** Führt aufgrund eines bekannten Fehlers kein Upgrade auf die 32-Bit-Klick-und-Los-Version von Office 2016 durch. Eine Fehlerkorrektur ist in Bearbeitung. 
+ **(\*) Hinweis:** Führt aufgrund eines bekannten Fehlers kein Upgrade auf die 32-Bit-Klick-und-Los-Version von Office 2016 durch. Eine Korrektur wird ausgeführt. 
   
-
-

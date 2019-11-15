@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Informationen zum Migrieren Ihres Unternehmens zu Microsoft 365 Business von Office 365 E3.
-ms.openlocfilehash: 5142038110cada6e1da77d405c82f119e0f9e4d3
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f624ee7ef7c00ac4d1fe413500d0cd081a156748
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002428"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640576"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business 
 
-Microsoft 365 Business verfügt über alles, was Sie für Ihr kleines Unternehmen benötigen, und kombiniert die branchenbesten Cloud-basierten Produktivitäts-apps mit einfacher Geräteverwaltung und Sicherheit.  Wenn Sie derzeit über ein Office 365 E3-Abonnement verfügen, aber nicht über mehr als 300 Mitarbeiter verfügen, sollten Sie zum Hinzufügen von Sicherheitsfeatures zu Microsoft 365 Business wechseln.
+Microsoft 365 Business verfügt über alles, was Sie für Ihr kleines Unternehmen benötigen, und kombiniert die branchenbesten Cloud-basierten Produktivitäts-apps mit einfacher Geräteverwaltung und Sicherheit. Wenn Sie derzeit über ein Office 365 E3-Abonnement verfügen, aber nicht über mehr als 300 Mitarbeiter verfügen, sollten Sie zum Hinzufügen von Sicherheitsfeatures zu Microsoft 365 Business wechseln.
 
 Die Migration ist einfach: zuerst wechseln Sie die Lizenzen, und alle Ihre Daten und Benutzerinformationen in Ihrem aktuellen Abonnement werden beibehalten. Nach der Migration müssen Sie die Features einrichten, die in Microsoft 365 Business hinzugefügt werden.
 
@@ -42,7 +42,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Offi
 | Office-Apps<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
 | **Apps für die Cloud-Produktivität**       | | | 
 | Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png) | 
+| Microsoft Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png) | 
 | OneDrive for Business | 1 TB Speichergrenzwert pro Benutzer   | Unbegrenzt | 
 | Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png) | 
 | StaffHub  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png) | 
@@ -56,21 +56,21 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Offi
 | Aktivierung gemeinsam genutzter Computer|   ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png) | ![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png)| 
 | Aktualisieren von Rechten auf Windows 10 pro von Win 7/8.1 pro-Lizenzen|     ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png) || 
 | **Schutz von Daten**        | | |
-|Office 365 Verhinderung von Datenverlust|   ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)|![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png)|
+|Verhinderung von Datenverlust in Office 365|   ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)|![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png)|
 |Azure Information Protection Plan 1, BitLocker-Erzwingung|![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)||
 |Azure Information Protection-Plan 1, Sensitivitäts Bezeichnungen|![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)||
 |**Client Zugriffslizenz (CAL-Rechte)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Im Lieferumfang von Office 365 E3 enthalten](./media/check-mark.png)|
 
-<sup>1</sup> die Microsoft 365 Business-Version der Office-Apps beinhalten keine Volumenaktivierung über Gruppenrichtlinien, App-Telemetrie, Update Steuerelemente, Kalkulationstabelle vergleichen und erkundigen sowie Business Intelligence.
+<sup>1</sup> die Microsoft 365 Business-Version der Office-Apps umfasst keine Volumenaktivierung über Gruppenrichtlinien, App-Telemetrie, Update Steuerelemente, Arbeitsblatt Vergleich und erkundigen oder Business Intelligence.
 
 ## <a name="migration"></a>Migration
 
-Informationen zum Migrieren Ihres Abonnements finden Sie unter [Wechseln zu einem anderen Plan manuell](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) für Anweisungen Wenn Sie nur einige wenige Personen in Microsoft 365 Business verschieben möchten, können Sie [jeden automatisch aktualisieren](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)oder mit Partner zusammenarbeiten, um Ihre E3 zu verschieben. Abonnement und Lizenzen für ein Microsoft 365 Business-Abonnement.
-In den folgenden Abschnitten wird beschrieben, welche Änderungen Sie vornehmen müssen, falls vorhanden, und was Sie nach der Migration tun können.
+Informationen zum Migrieren Ihres Abonnements finden Sie unter [Wechseln zu einem anderen Plan manuell](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) , um Anweisungen zu erhalten, wenn Sie nur einige wenige Personen zu Microsoft 365 Business verschieben möchten. Sie können auch [alle automatisch aktualisieren](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)oder mit Partner zusammenarbeiten, um Ihr E3-Abonnement und ihre Lizenzen in ein Microsoft 365 Business-Abonnement zu migrieren.
+In den folgenden Abschnitten werden die Änderungen beschrieben, die Sie vornehmen müssen, falls vorhanden, und was Sie nach der Migration tun können.
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3-Abonnementkonfiguration und-Daten
-Sie müssen vor der Migration keine Änderungen am aktuellen Abonnement oder an den Daten vornehmen, einschließlich:
+Sie müssen keine Änderungen am aktuellen Abonnement oder an den Daten vor der Migration vornehmen, einschließlich:
 
 - Abonnementkonfiguration, wie DNS-Einträge und Domänennamen.
 - Benutzer-und Gruppenkonten und Authentifizierungseinstellungen, beispielsweise mehrstufige Authentifizierung oder Richtlinien für bedingten Zugriff.
@@ -78,7 +78,7 @@ Sie müssen vor der Migration keine Änderungen am aktuellen Abonnement oder an 
 
 ### <a name="windows-10"></a>Windows 10
 
-Wenn Ihre Windows-Version nicht bereits auf dem Windows pro Creator-Update installiert ist, müssen Sie [diese auf Windows pro Creators Update](upgrade-to-windows-pro-creators-update.md)aktualisieren.
+Wenn sich Ihre Windows-Version nicht bereits auf dem Windows pro Creator-Update befindet, führen [Sie ein Upgrade auf Windows pro Creators Update durch](upgrade-to-windows-pro-creators-update.md).
 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Einrichten von Richtlinien zum Schutz von Benutzergeräten und-Dateien
 
@@ -87,7 +87,7 @@ Wenn Ihre Windows-Version nicht bereits auf dem Windows pro Creator-Update insta
 
 Nachdem Sie Microsoft 365 Business Lizenzen zugewiesen haben, können Sie mit dem Schutz der Geräte und Dateien der Benutzer beginnen.
 
-Wenn Sie alle Benutzer in Ihrer Organisation auf Microsoft 365 Business aktualisiert haben, wird der Setup-Assistent auf der Startseite angezeigt, und Sie können die Schritte zum [Einrichten von Microsoft 365 Business im Setup-Assistenten](set-up.md) ausführen, um Dateien und mobile Geräte zu schützen.
+Wenn Sie alle in Ihrer Organisation auf Microsoft 365 Business aktualisiert haben, wird der Setup-Assistent auf der Startseite angezeigt, und Sie können die Schritte zum [Einrichten von Microsoft 365 Business im Setup-Assistenten](set-up.md) ausführen, um Dateien und mobile Geräte zu schützen.
 
 Sie können diese Schritte auch auf der Seite Geräte ausführen:
   
@@ -97,7 +97,7 @@ Sie können diese Schritte auch auf der Seite Geräte ausführen:
     
 3. Geben Sie im Bereich **Richtlinie hinzufügen** der Richtlinie einen Namen, und wählen Sie dann einen **Richtlinientyp** aus der Dropdownliste aus. 
     
-    Sie können Anwendungsrichtlinien zum Schützen von Dateien auf Android-und iPhone-Geräten sowie Windows 10 einrichten, und Sie können Geräte Konfigurationsrichtlinien für Windows 10-Geräte im Unternehmen einrichten. Weitere Informationen finden Sie unter den folgenden Links:
+     Sie können Anwendungsrichtlinien zum Schützen von Dateien auf Android-und iPhone-Geräten sowie Windows 10 einrichten, und Sie können Geräte Konfigurationsrichtlinien für Windows 10-Geräte im Unternehmen einrichten. Weitere Informationen finden Sie unter den folgenden Links:
     
   - [Festlegen von App-Schutzeinstellungen für Android-oder IOS-Geräte](app-protection-settings-for-android-and-ios.md)
     
@@ -113,7 +113,7 @@ Sie können diese Schritte auch auf der Seite Geräte ausführen:
 
 ### <a name="threat-protection"></a>Bedrohungsschutz
 
-Nach der Migration zu Microsoft 365 Business haben Sie Office 365 ATP. Weitere Informationen finden Sie unter [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) für eine Übersicht und einrichten siehe [Einrichten von ATP-Sicherheits Links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), einrichten [von ATP-Tresoranlagen](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5) und [Einrichten von ATP-AntiPhishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
+Nach der Migration zu Microsoft 365 Business haben Sie Office 365 ATP. Eine Übersicht finden Sie unter [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) . Informationen zum Einrichten finden Sie unter [Einrichten von ATP-Safe-Links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), einrichten [von ATP-Tresoranlagen](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)und [Einrichten von ATP-Anti-Phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
