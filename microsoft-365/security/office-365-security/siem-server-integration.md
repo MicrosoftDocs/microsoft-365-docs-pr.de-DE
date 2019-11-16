@@ -1,11 +1,11 @@
 ---
-title: Siem-Server Integration mit Microsoft 365
+title: Integration von Siem-Servern in Microsoft 365-Dienste und-Anwendungen
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 06/17/2019
+ms.date: 11/15/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -13,35 +13,45 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
-description: 'Zusammenfassung: Lesen Sie diesen Artikel, um einen Überblick über die Integration von Siem Server mit Microsoft 365 zu erhalten.'
-ms.openlocfilehash: 97f1c1d1f1862d140e014b4460ac9f40cb1934bb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Lesen Sie diesen Artikel, um einen Überblick über die Integration von Siem Server mit Microsoft 365 zu erhalten.
+ms.openlocfilehash: bea6141022fef1275a7e291217f698f52613f170
+ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082644"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38677508"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integration von Siem-Servern in Microsoft 365-Dienste und-Anwendungen
 
-## <a name="overview"></a>Übersicht
+## <a name="summary"></a>Zusammenfassung
 
-Wenn Ihre Organisation einen Siem-Server (Security Information and Event Management) verwendet oder wenn Sie einen Siem-Server bald erhalten möchten, Fragen Sie sich möglicherweise, wie sich das in Ihren Microsoft 365, einschließlich Office 365 E5, integrieren lässt. Ob Sie einen Siem-Server benötigen, hängt von vielen Faktoren ab, beispielsweise von den Sicherheitsanforderungen Ihrer Organisation. Microsoft 365 bietet eine Vielzahl von Sicherheitsfeatures; Wenn Ihre Organisation jedoch Inhalte und Anwendungen lokal und in der Cloud hat (wie bei einer hybriden Cloud-Bereitstellung), können Sie einen Siem-Server für zusätzlichen Schutz verwenden. Wenn Ihre Organisation besonders strenge Sicherheitsanforderungen erfüllt, müssen Sie möglicherweise einen Siem-Server zu Ihrer Umgebung hinzufügen.
+Wenn Ihre Organisation einen Siem-Server (Security Information and Event Management) verwendet oder wenn Sie einen Siem-Server bald erhalten möchten, Fragen Sie sich möglicherweise, wie sich das in Microsoft 365 oder Office 365 integrieren lässt. Dieser Artikel enthält eine Liste der Ressourcen, die Sie zum Einrichten der Integration von Siem Server mit Ihren Microsoft 365-Diensten und-Anwendungen verwenden können.
 
-## <a name="siem-server-integration-microsoft-365"></a>Siem-Server Integration Microsoft 365
+> [!TIP]
+> Wenn Sie noch keinen Siem-Server haben und Ihre Optionen untersuchen, sollten Sie sich **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)** ansehen.
 
-Ein Siem-Server kann Daten aus einer Vielzahl von Microsoft 365-Diensten und-Anwendungen empfangen. In der folgenden Tabelle sind mehrere Microsoft 365-Dienste und-Anwendungen zusammen mit Siem Server-Eingaben aufgeführt, und weitere Informationen zur Integration von Siem Server finden Sie unter. 
+## <a name="do-i-need-a-siem-server"></a>Benötige ich einen Siem-Server?
 
-| Microsoft 365-Dienst oder-Anwendung | Siem-Server Eingaben | Ressourcen für weitere Informationen |
+Ob Sie einen Siem-Server benötigen, hängt von vielen Faktoren ab, beispielsweise von den Sicherheitsanforderungen Ihrer Organisation und dem Ort, an dem sich Ihre Daten befinden. Microsoft 365 umfasst eine Vielzahl von Sicherheitsfeatures, die die Sicherheitsanforderungen vieler Organisationen erfüllen, ohne zusätzliche Server wie einen Siem-Server. Einige Organisationen haben spezielle Umstände, die die Verwendung eines Siem-Servers erfordern. Im Folgenden finden Sie einige Beispiele:
+
+- *Fabrikam* verfügt über einige Inhalte und Anwendungen vor Ort und einige in der Cloud (Sie verfügen über eine hybride Cloud-Bereitstellung). Um Sicherheitsberichte über alle Inhalte und Anwendungen zu erhalten, hat Fabrikam einen Siem-Server implementiert. 
+
+- *Contoso* ist eine Finanzdienstleistungsorganisation mit besonders strengen Sicherheitsanforderungen. Sie haben ihren Umgebungen einen Siem-Server hinzugefügt, um den zusätzlichen Sicherheitsschutz zu nutzen, den Sie benötigen.
+
+## <a name="siem-server-integration-with-microsoft-365"></a>Siem-Server Integration mit Microsoft 365
+
+Ein Siem-Server kann Daten aus einer Vielzahl von Microsoft 365-Diensten und-Anwendungen empfangen. In der folgenden Tabelle sind mehrere Microsoft 365-Dienste und-Anwendungen zusammen mit Siem Server-Eingaben und Ressourcen aufgeführt, um weitere Informationen zur Integration von Siem Server zu erhalten. 
+
+| Microsoft 365-Dienst oder-Anwendung | Siem-Server Eingaben | Ressourcen mit mehr Informationen |
 | --- | --- | --- |
-| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>oder<br/>[Informationen zu Bedrohungen in Office 365](office-365-ti.md) | Überwachungsprotokolle | [Siem-Integration mit Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
+| [Office 365 Advanced Threat Protection](office-365-atp.md)  | Überwachungsprotokolle | [Siem-Integration mit Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
+| [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | In Azure gehosteter HTTPS-Endpunkt <br/>REST-API| [Abrufen von Benachrichtigungen an Ihre Siem-Tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Protokoll Integration | [Siem-Integration in Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Microsoft Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Protokoll Integration | [Abrufen von Benachrichtigungen an Ihre Siem-Tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
-| [Azure-Sicherheits Center](https://docs.microsoft.com/azure/security-center/security-center-intro) (Bedrohungsschutz und Bedrohungserkennung) | Warnungen | [Azure Security Data Export to Siem-Pipeline Configuration – Vorschau](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-|[Azure Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure-Monitor | [Blog Verwenden von Azure Monitor zur Integration in Siem-Tools](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
-|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |Protokoll Integration |[Integrieren von Sicherheits-API-Warnungen in Microsoft Graph in SIEM (Security Information &amp; Event Management)](https://docs.microsoft.com/graph/security-siemintegration) |
 
+> [!TIP]
+> Sehen Sie sich [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)an, der mit einer Reihe von Connectors für Microsoft-Lösungen ausgestattet ist, die sofort verfügbar sind und eine Echtzeitintegration bieten, einschließlich Microsoft Threat Protection-Lösungen und Microsoft 365-Quellen, einschließlich Office 365, Azure AD, Azure ATP und Microsoft Cloud-App-Sicherheit und vieles mehr.
 
-## <a name="audit-logging-must-be-turned-on"></a>Die Überwachungsprotokollierung muss aktiviert sein.
+### <a name="audit-logging-must-be-turned-on"></a>Die Überwachungsprotokollierung muss aktiviert sein.
 
 Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist, bevor Sie die Integration von Siem Server konfigurieren. 
 
@@ -49,10 +59,8 @@ Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist, bevor S
 
 - Für Exchange Online [ist die Überwachungsprotokollierung mit Windows PowerShell aktiviert](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-  
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Integrieren von Sicherheitslösungen im Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
-
+[Integrieren von Sicherheits-API-Warnungen in Microsoft Graph in SIEM (Security Information &amp; Event Management)](https://docs.microsoft.com/graph/security-integration)

@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
-ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627351"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673161"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Office 365 ProPlus-Bereitstellung für Contoso
-
-**Zusammenfassung:** Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
 
 Contoso hat seine PCs auf Windows 10 Enterprise und Office 365 ProPlus aktualisiert, um eine effektivere Zusammenarbeit zu ermöglichen, bessere Sicherheit zu gewährleisten und eine modernere Desktopoberfläche bereitzustellen. Nach der Bewertung der Infrastruktur- und Geschäftsanforderungen hat Contoso die folgenden wichtigen Anforderungen für die Bereitstellung ermittelt:
 

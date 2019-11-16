@@ -13,16 +13,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365 Enterprise implementiert.
-ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: e7c79612b18bdd21d8fd137abe11f8f26cfd6eff
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369616"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673221"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise für die Contoso Corporation
-
-**Zusammenfassung:** So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365 Enterprise implementiert.
 
 Microsoft 365 Enterprise ist das erstklassige Cloudangebot von Microsoft, das lokale und cloudbasierte Produktivitäts-Apps und -Dienste mit Windows 10 Enterprise und erweiterten Sicherheitsfeatures in einer umfassenden, intelligenten Lösung kombiniert, mit der alle Mitarbeiter kreativ und sicher zusammenarbeiten können. 
 
