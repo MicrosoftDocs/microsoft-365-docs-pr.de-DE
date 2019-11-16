@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 01985c69d1d89536d16b166eafc23df37ee53d0a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639889"
+ms.locfileid: "38673281"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -81,11 +81,15 @@ Die **e-Mail-Zeitachse** ist eine weitere neue Explorer-Funktion, mit der die Ja
 Weitere Informationen zur Untersuchung böswilliger e-Mails finden Sie unter [Suchen und untersuchen von in Office 365 zugestellten böswilligen](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered)e-Mails.
 
 
-Außerdem können Sie jetzt Berichte in Microsoft Excel **exportieren** , um sowohl die Netzwerknachrichten-ID als auch das Klick Urteil anzuzeigen, um zu verstehen, wo Ihr Datenverkehr ursprünglich einfacher war. So funktioniert es. Klicken Sie auf der Office 365-Schnellstartleiste in Threat Management auf diese Kette:
+Außerdem können Sie nun **Berichte für URL-Klicks** in Microsoft Excel exportieren, um sowohl die Netzwerknachrichten-ID als auch das Klick Urteil anzuzeigen, um zu verstehen, wo Ihre URL auf den Datenverkehr fällt. So funktioniert es. Klicken Sie auf der Office 365-Schnellstartleiste in Threat Management auf diese Kette:
 
-**Explorer #a0 anzeigen von Phishing-#a1 Klicks #a2 häufigsten URLs**
+**Explorer-#a0 anzeigen von Phishing-#a1 Klicks auf #a2 häufigsten URLs oder URLs am oberen Rand #a3 klicken auf einen beliebigen Datensatz zum Öffnen des URL-Flyouts**
 
 Wenn Sie auf eine URL in der Liste klicken, wird im Ausklappbereich eine neue Schaltfläche Exportieren angezeigt. Verwenden Sie diese Schaltfläche, um Daten zur einfacheren Berichterstellung in eine Excel-Tabelle zu migrieren.
+
+Sie können den gleichen Speicherort in Echt Zeit Erkennungen wie folgt abrufen:
+
+**Explorer #a0 Echt Zeit Erkennungen #a1 anzeigen von Phishing-#a2 URLs #a3 oberen URLs oder oberen Klicks #a4 klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout zu öffnen, > navigieren Sie zur Registerkarte Klicks.**
 
 > [!TIP]
 > Network Message ID ordnet den Klick zurück zu bestimmten Mails zu, wenn Sie über den Explorer oder zugeordnete Tools von Drittanbietern über die Netzwerknachrichten-ID suchen. Durch die Suche über die Netzwerknachrichten-ID erhalten Administratoren die spezifische e-Mail-Adresse, die mit einem Klick Ergebnis verknüpft ist. Für eine schnellere und leistungsstärkere Analyse durch den Export mit wird die korrelierte Identifikation der Netzwerknachrichten-ID ermöglicht.

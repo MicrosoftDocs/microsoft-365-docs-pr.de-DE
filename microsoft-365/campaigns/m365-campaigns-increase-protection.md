@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365 Business.
-ms.openlocfilehash: f7ae2516403613667401e622f93939cfce63e617
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029069"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676103"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -79,7 +79,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 6. Klicken Sie auf **Speichern**.
     
-|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
+|**Setting**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/>  |
 |Wenden Sie diese Regel an, wenn. . .  <br/> |Jede Anlage. . . Dateierweiterung entspricht. . .  <br/> |
@@ -113,7 +113,7 @@ Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video
     
 6. Klicken Sie auf **Speichern**.
     
-|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
+|**Setting**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
 |:-----|:-----|
 |Name  <br/> |Verhindern der automatischen Weiterleitung von e-Mails an externe Domänen  <br/> |
 |Diese Regel anwenden, wenn...  <br/> |Absender. . . ist extern/intern. . . Innerhalb der Organisation  <br/> |
@@ -139,7 +139,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
     
 4. Wählen Sie auf der Seite **Anti-Phishing** die Option **+ Create**aus. Ein Assistent wird gestartet, der Sie schrittweise durch die Definition ihrer Anti-Phishing-Richtlinie führt.
     
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
     
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Erstellen Sie diese Richtlinie** oder **Speichern**, je nach Bedarf.
     
@@ -155,7 +155,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
 |Vertrauenswürdige Absender und Domänen hinzufügen  <br/> |Hier können Sie Ihre eigene Domäne oder andere vertrauenswürdige Domänen hinzufügen.  <br/> |
 |Angewendet auf  <br/> |Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise *contoso.<span> com <span>* in der Liste aus, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
    
-Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Schutz vor böswilligen Anlagen, Dateien und Links mit Advanced Threat Protection (ATP)
 
@@ -208,7 +208,7 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [
 |Umleitungs Anlage bei der Erkennung  <br/> |Umleitung aktivieren (aktivieren Sie dieses Kontrollkästchen) geben Sie das Administratorkonto oder ein Post Fach Setup für Quarantäne ein.          Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt (aktivieren Sie dieses Kontrollkästchen).  <br/> |
 |Angewendet auf  <br/> |Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
    
-Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ### <a name="set-up-atp-safe-links-in-the-security--compliance-center"></a>Einrichten von ATP-Sicherheits Links im Security #a0 Compliance Center
 

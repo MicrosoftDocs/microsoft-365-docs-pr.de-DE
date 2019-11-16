@@ -1,9 +1,9 @@
 ---
-title: Automatische Untersuchung und Reaktion (Air) in Office 365
+title: Automatische Vorfall Antwort (Air) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,40 +12,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Erfahren Sie mehr über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
+ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386202"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673401"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Automatische Vorfall Antwort (Air) in Office 365
 
-Mit den Funktionen für die automatische Untersuchung und Reaktion (Air) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Mit Air können Sie Ihre Security Operations-Teams effizienter und effektiver betreiben.
+Mit den Funktionen für automatisierte Vorfall Reaktionen (Air) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Mit Air können Sie Ihre Security Operations-Teams effizienter und effektiver betreiben.
 - Verwenden Sie diesen Artikel, um einen Überblick über die Funktionsweise von Air zu erhalten.
 - Informationen zum Einstieg in die Verwendung von Air finden Sie unter [Automatisches untersuchen und reagieren auf Bedrohungen in Office 365](office-365-air.md).
 
 > [!NOTE]
 > Sie müssen ein globaler Administrator, Sicherheitsadministrator, Sicherheits Operator oder Sicherheits Leser sein, um auf die Air-Funktionen zugreifen zu können. Weitere Informationen zu diesen Berechtigungen finden Sie unter [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-Air ist in den folgenden Abonnements enthalten:
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection-Plan 2
-
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
 Auf hohem Niveau funktioniert der Luftstrom wie folgt:
 
-|Phase  |Was ist involviert  |
+|Phase  |Was beteiligt ist  |
 |---------|---------|
 |1     |Eine [Warnung](#alerts) , die ausgelöst wird, und ein [Sicherheits](#security-playbooks) -Textbuch initiiert.         |
 |2     |Je nach dem jeweiligen Sicherheits Textbuch [beginnt die automatische Untersuchung sofort](#example-a-user-reported-phish-message-launches-an-investigation-playbook). (Alternativ kann ein Sicherheitsanalyst eine [Automatische Untersuchung](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)von einem Wert in einem Bericht wie dem [Explorer](threat-explorer.md)manuell starten.)         |
-|3     |Während eine automatisierte Untersuchung ausgeführt wird, kann Ihr Bereich als neue, Verwandte Warnungen ausgelöst werden, erhöht werden.         |
+|3     |Werden verwandte Warnungen ausgelöst werden, kann der Umfang der automatisierten Untersuchung während ihrer Ausführung erweitert werden.         |
 |4     |Während und nach einer automatisierten Untersuchung stehen [Details und Ergebnisse](#investigation-graph) zur Verfügung, die angezeigt werden können. Die Ergebnisse umfassen [Empfohlene Aktionen](#recommended-actions) , die ergriffen werden können, um alle gefundenen Bedrohungen zu reagieren und zu beheben. Darüber hinaus steht ein Textbuch- [Protokoll](#playbook-log) zur Verfügung, das alle Ermittlungsaktivitäten aufspürt.<br/>Wenn Ihre Organisation eine benutzerdefinierte Berichtslösung oder eine Drittanbieterlösung verwendet, können Sie [die API für die Office 365 Verwaltungsaktivität verwenden](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) , um Informationen zu automatisierten Untersuchungen und Bedrohungen anzuzeigen.         |
-|5     |Ihr Sicherheits Betriebsteam überprüft die Ergebnisse und Empfehlungen und genehmigt Korrekturaktionen. In Office 365 werden Korrekturaktionen nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation durchgeführt.         |
+|5     |Ihr Sicherheitsteam überprüft die Ergebnisse und Empfehlungen und billigt Abhilfemaßnahmen. In Office 365 werden Abhilfemaßnahmen nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt.         |
 
 Die folgenden Abschnitte enthalten weitere Details zu Air, einschließlich Details zu Warnungen, Sicherheits handschreibungen und Ermittlungs Details. Darüber hinaus sind in diesem Artikel zwei Beispiele für die Verwendung von Air-Arbeiten enthalten. Informationen zum Einstieg in die Verwendung von Air finden Sie unter [Automatisches untersuchen und reagieren auf Bedrohungen in Office 365](office-365-air.md).
 
@@ -72,7 +66,7 @@ In der ersten Version von Air (Anfang April 2019) werden Warnungen, die von folg
 
 Um Warnungen anzuzeigen **, wählen Sie** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um diese anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Informationswarnungen hinzugefügt werden.
 
-Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignissen verwaltet, können Sie Office 365 Benachrichtigungen entweder per e-Mail-Benachrichtigung oder über den [ Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security #a0 Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
+Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignisverwaltung verwaltet, können Sie Office 365 Warnungen entweder per e-Mail-Benachrichtigung oder über die API für die [Office 365-Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)an dieses System senden. Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security #a0 Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
 
 ![Warnungen, die mit Untersuchungen verknüpft sind](../media/air-alerts-page-details.png) 
 
@@ -118,18 +112,22 @@ Sie können:
 - Exportieren Sie die Daten in eine CSV-Datei.
 
 Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Während der Untersuchung wird der Status geändert, um anzugeben, ob Bedrohungen gefunden wurden und ob Aktionen genehmigt wurden. 
-- **Start**: die Untersuchung wird in Kürze in die Warteschlange eingereiht.
-- **Running**: die Untersuchung wurde gestartet und führt ihre Analyse durch
-- **Keine Bedrohungen gefunden**: die Untersuchung hat ihre Analyse abgeschlossen, und es wurden keine Bedrohungen gefunden.
-- **Beendet durch System**: die Untersuchung wurde nicht geschlossen und ist nach 7 Tagen abgelaufen.
-- **Ausstehende Aktion**: die Untersuchung hat Bedrohungen mit empfohlenen Aktionen gefunden
-- **Gefundene Bedrohungen**: die Untersuchung hat Bedrohungen festgestellt, aber für die Bedrohungen sind keine Aktionen in Air verfügbar.
-- **Behoben**: die Untersuchung wurde abgeschlossen und wurde vollständig korrigiert (alle Aktionen wurden genehmigt)
-- **Teilweise behoben**: die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt.
-- **Durch den Benutzer beendet**: ein Administrator hat die Untersuchung beendet
-- **Fehler: während**der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht.
-- In der **Warteschlange durch Drosselung**: die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung)
-- **Durch Drosselung beendet**: die Untersuchung konnte aufgrund der Untersuchung von Volumen-und System Verarbeitungs Einschränkungen nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen.
+
+
+|Status  |Was das bedeutet  |
+|---------|---------|
+|Wird gestartet | Die Untersuchung wird in Kürze in die Warteschlange gestellt. |
+|Wird ausgeführt | Die Untersuchung wurde gestartet und führt die Analyse aus. |
+|Keine Bedrohungen gefunden | Die Untersuchung hat ihre Analyse abgeschlossen, und es wurden keine Bedrohungen gefunden. |
+|Beendet von System | Die Untersuchung wurde nach 7 Tagen nicht abgeschlossen und ist abgelaufen. |
+|Ausstehende Aktion | Die Untersuchung hat Bedrohungen mit empfohlenen Aktionen gefunden. |
+|Gefundene Bedrohungen | Die Untersuchung hat Bedrohungen festgestellt, aber für die Bedrohungen sind keine Aktionen in Air verfügbar. |
+|Bereinigt | Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
+|Teilweise behoben | Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
+|Durch den Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
+|Failed | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
+|Durch Drosselung in der Warteschlange | Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
+|Durch Drosselung beendet | Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
 
 ### <a name="investigation-graph"></a>Unter Such Diagramm
 
@@ -189,7 +187,8 @@ Sie können:
 
 ![Air Investigation e-Mail mit Flyout-Details](../media/air-investigationemailpageflyoutdetails.png)
 
-* Hinweis: im Rahmen der Untersuchung wird im Kontext der e-Mail möglicherweise eine Bedrohungs Fläche für Volumen Anomalien angezeigt. Eine Volumen Anomalie gibt eine Spitze in ähnlichen e-Mail-Nachrichten um die Ermittlungsereignis Zeit im Vergleich zu früheren Zeitrahmen an. Diese Spitze im e-Mail-Datenverkehr mit ähnlichen Merkmalen (z. b. Betreff-und Absenderdomäne, Text Ähnlichkeit und Absender-IP) ist typisch für den Start von e-Mail-Kampagnen oder-Angriffen. Massen-, Spam-und legitime e-Mail-Kampagnen teilen diese Merkmale jedoch häufig. Volumen Anomalien stellen eine potenzielle Bedrohung dar und können dementsprechend im Vergleich zu Malware-oder Phishing-Bedrohungen, die mit Antiviren-Engines, Detonation oder böswilliger Reputation identifiziert werden, eine geringere schwere aufweisen.
+> [!NOTE]
+> Im Zusammenhang mit e-Mails wird möglicherweise als Teil der Untersuchung eine Bedrohungs Fläche für Volumen Anomalien angezeigt. Eine Volumen Anomalie gibt eine Spitze in ähnlichen e-Mail-Nachrichten um die Ermittlungsereignis Zeit im Vergleich zu früheren Zeitrahmen an. Diese Spitze im e-Mail-Datenverkehr mit ähnlichen Merkmalen (z. b. Betreff-und Absenderdomäne, Text Ähnlichkeit und Absender-IP) ist typisch für den Start von e-Mail-Kampagnen oder-Angriffen. Massen-, Spam-und legitime e-Mail-Kampagnen teilen diese Merkmale jedoch häufig. Volumen Anomalien stellen eine potenzielle Bedrohung dar und können dementsprechend im Vergleich zu Malware-oder Phishing-Bedrohungen, die mit Antiviren-Engines, Detonation oder böswilliger Reputation identifiziert werden, eine geringere schwere aufweisen.
 
 ### <a name="user-investigation"></a>Benutzer Ermittlung
 
@@ -299,21 +298,22 @@ Nehmen Sie als weiteres Beispiel an, dass Sie Daten zu e-Mail-Nachrichten anzeig
 
 ## <a name="how-to-get-air"></a>So erhalten Sie Luft
 
-Office 365 Air sind in den folgenden Abonnements enthalten:
+Office 365 AIR ist in den folgenden Abonnements enthalten:
 
-- Microsoft 365 Enterprise E5
-- Office 365 Enterprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft Threat Protection
-- Office 365 Advanced Threat Protection-Plan 2
+- Office 365 Advanced Threat Protection Plan 2
 
 Wenn Sie keines dieser Abonnements haben, [Starten Sie eine ﻿kostenlose Testversion](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
 Weitere Informationen zur Verfügbarkeit von Features finden Sie unter [Verfügbarkeit von Features über erweiterte Threat Protection (ATP)-Pläne](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 [Erste Schritte mit Air in Office 365](office-365-air.md)
 
 [Informationen zu Air in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [Besuchen Sie die Microsoft 365-Roadmap, um zu sehen, was bald kommt und wie Sie Rollen](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+

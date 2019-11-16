@@ -3,7 +3,7 @@ title: Untersuchung von und Antwort auf Bedrohungen in Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/23/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sicherheitsrisiken in Ihrer Organisation erforschen, auf Schadsoftware, Phishing und andere Angriffe reagieren können, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen. Indikatoren.
-ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047fb99a32fdd7e86572c5a96370f351da50f139
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031870"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673271"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen in Office 365
 
@@ -32,13 +32,13 @@ Untersuchung und Antwortfunktionen für Bedrohungen in [Office 365 Advanced Thre
     
 - Bereitstellen von Einblicken und Wissen zur Unterstützung von Sicherheitsmaßnahmen beim verhindern von Cyberangriffe in Ihrer Organisation
 
-- Einsatz von [automatisierten Untersuchungen und Reaktionen](automated-investigation-response-office.md) auf kritische e-Mail-basierte Bedrohungen
+- Einsatz von [automatischer Vorfall Antwort](automated-investigation-response-office.md) für wichtige e-Mail-basierte Bedrohungen
     
 Die Funktionen zur Ermittlung und Reaktion von Bedrohungen bieten Einblicke in Bedrohungen und zugehörige Reaktions Aktionen, die &amp; im Office 365 Security Compliance Center verfügbar sind. Diese Erkenntnisse können dazu beitragen, dass das Sicherheitsteam Ihrer Organisation Office 365 Benutzer vor e-Mail-oder dateibasierten Angriffen schützt. Die Funktionen helfen bei der Überwachung von Signalen und Sammeln von Daten aus mehreren Quellen wie Benutzeraktivität, Authentifizierung, e-Mail, kompromittierten PCs und Sicherheitsvorfällen. Entscheidungsträger im Unternehmen und Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheitsexperten können diese Informationen nutzen, um Bedrohungen gegen Office 365 Benutzer zu verstehen und darauf zu reagieren und geistiges Eigentum zu schützen.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Kennenlernen von Bedrohungs Ermittlungs-und-Antwort Tools
 
-Die Funktionen "Bedrohungs Ermittlung und-Reaktion &amp; " befinden sich im Security Compliance Center als Reihe von Tools und Antwort Workflows, einschließlich des [Threat-Dashboards](#threat-dashboard), des [Explorers](#threat-explorer), der [Vorfälle](#incidents), des [Angriffs Simulators](#attack-simulator)und der [automatischen Untersuchung #a0 Antwort](automated-investigation-response-office.md).
+Die Funktionen "Bedrohungs Ermittlung und-Reaktion &amp; " werden im Security Compliance Center als eine Reihe von Tools und Antwort Workflows, einschließlich des [Threat-Dashboards](#threat-dashboard), des [Explorers](#threat-explorer), der [Vorfälle](#incidents), des [Angriffs Simulators](#attack-simulator)und der [automatischen Vorfall Antwort](automated-investigation-response-office.md), Oberfläche angezeigt.
   
 ### <a name="threat-dashboard"></a>Threat-Dashboard
 
@@ -46,7 +46,7 @@ Verwenden Sie das Threat-Dashboard (Dies wird auch als [Sicherheits Dashboard](s
   
 ![Threat-Dashboard](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-Um dieses Dashboard anzuzeigen und zu verwenden, wechseln Sie &amp; im Security Compliance Center zu **Threat Management** \> **Dashboard**.
+Um dieses Dashboard anzuzeigen und zu verwenden, wechseln Sie im &amp; Office 365 Security Compliance Center zu **Threat Management** \> **Dashboard**.
 
 Weitere Informationen 
   
@@ -56,7 +56,7 @@ Verwenden Sie [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) , um
   
 ![Bedrohungs-Explorer](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-Um diesen Bericht anzuzeigen und zu verwenden, wechseln Sie &amp; im Security Compliance Center zu **Threat Management** \> **Explorer**.
+Um diesen Bericht anzuzeigen und zu verwenden, wechseln Sie im &amp; Office 365 Security Compliance Center zu **Threat Management** \> **Explorer**.
   
 ### <a name="incidents"></a>Vorfälle
 
@@ -74,7 +74,7 @@ Verwenden Sie den Angriffs Simulator zum Einrichten und ausführen realistischer
 
 ### <a name="automated-investigation-and-response"></a>Automatische Untersuchung und Reaktion
 
-Verwenden Sie automatisierte Ermittlungs-und Antwortfunktionen (Air), um Zeit und Aufwand beim Korrelieren von Inhalten, Geräten und gefährdeten Personen vor Bedrohungen in Ihrer Organisation zu sparen. Air-Prozesse können beginnen, wenn bestimmte Warnungen ausgelöst werden oder wenn Sie von Ihrem Sicherheits Betriebsteam gestartet werden. Weitere Informationen finden Sie unter [Automatische Vorfall Antwort (Air) mit Office 365](automated-investigation-response-office.md). 
+Verwenden Sie automatisierte Ermittlungs-und Antwortfunktionen (Air), um Zeit und Aufwand beim Korrelieren von Inhalten, Geräten und gefährdeten Personen vor Bedrohungen in Ihrer Organisation zu sparen. Air-Prozesse können beginnen, wenn bestimmte Warnungen ausgelöst werden oder wenn Sie von Ihrem Sicherheits Betriebsteam gestartet werden. Weitere Informationen finden Sie unter [Automatische Vorfall Antwort in Office 365](automated-investigation-response-office.md). 
   
 ## <a name="threat-intelligence-widgets"></a>Threat Intelligence-Widgets
 

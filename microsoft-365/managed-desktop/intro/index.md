@@ -7,10 +7,10 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
 ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38012036"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
@@ -24,7 +24,7 @@ Dieser Vorgang wird von Microsoft Managed Desktop weiter ausgeführt, indem die 
 
 <table>
 <tr><th>Freude an Endbenutzern</th><th>Empower IT</th><th>Unterstützt von Microsoft</th></tr>
-<tr><td><p>Modernes Gerät</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Integrierte Sicherheit</p><p>Anmeldung mit Gesichtserkennung</p><p>Immer auf dem neuesten Stand</p></td><td><p>Integrierte Sicherheit</p><p>Umsetzbare Einblicke</p><p>Betriebsunterstützung</p><p>Anleitungen von Microsoft-Experten</p></td><td><p>Team für Sicherheitsvorgänge</p><p>Systemüberwachung</p><p>Cloud-Sicherung für Daten</p><p>Unterstützung für 24X7-Endbenutzer</p></td></tr>
+<tr><td><p>Modernes Gerät</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Integrierte Sicherheit</p><p>Anmeldung mit Gesichtserkennung</p><p>Immer auf dem neuesten Stand</p></td><td><p>Integrierte Sicherheit</p><p>Umsetzbare Einblicke</p><p>Betriebsunterstützung</p><p>Anleitungen von Microsoft-Experten</p></td><td><p>Team für Sicherheitsvorgänge</p><p>Systemüberwachung</p><p>Cloud-Sicherung für Daten</p><p>Unterstützung für 24X7-Endbenutzer</p></td></tr>
 </table>
 
 Microsoft Managed Desktop bietet Kunden eine umfassende IT-Lösung, die Benutzer begeistert und IT-Ressourcen für wichtigere Aufgaben frei gibt. Wir haben diesen Dienst basierend auf Feedback entwickelt, das wir allgemein hören:

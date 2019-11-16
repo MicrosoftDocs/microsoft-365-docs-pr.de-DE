@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 244aa9a2749c41471760c5263a6df6d745e5ade6
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 98585f744b9aeabe84cdb31c6f7e3c2f9ddf0a05
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302942"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38669681"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Schritt 3: Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot
 
@@ -31,7 +31,7 @@ Mit Windows Autopilot können Sie neue, vorkonfigurierte Windows 10-Geräte einr
 
 Das Poster von Windows Autopilot ist zwei Seiten im Portraitmodus (11 x 17). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
 
-[![Poster "Bereitstellen von Windows 10 AutoPilot"](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=RWOcP%2BhJZYpYcGKMhuTUEL6lcuWdBFefqR%2BQQfmj6IM%3D&st=2019-11-12T23%3A48%3A59Z&se=2019-11-13T23%3A58%3A59Z&sp=r)
+[![Poster "Bereitstellen von Windows 10 AutoPilot"](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 Sie können dieses Poster auch in [PDF-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) oder [Visio-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) Format herunterladen.
 

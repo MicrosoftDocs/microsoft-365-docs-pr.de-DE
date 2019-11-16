@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Erfahren Sie mehr über die Verwaltung von Microsoft 365 geschäftsbezogenen Verwaltungsaufgaben, mobilen Geräten, Windows 10-PCs und vielen solchen Aufgaben.
-ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: 77b8757d9e6ab644b16e97ff20f50c0ce3123088
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633307"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675966"
 ---
 # <a name="manage-microsoft-365-business"></a>Verwalten von Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Allgemeine Microsoft 365-Geschäfts Administratoraufgaben
 
-Der Großteil des [Administrator Inhalts](/Office365/Admin/admin-home.md) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
+Der Großteil des [Administrator Inhalts](https://docs.microsoft.com/office365/admin/admin-home) für Office 365 für Unternehmen gilt auch für Microsoft 365 Business.
 
 - [Hinzufügen weiterer Benutzer zu Microsoft 365 Business](add-users-m365b.md)
     
@@ -55,9 +55,7 @@ In den folgenden Abschnitten finden Sie Informationen zur Verwendung von Microso
 ## <a name="manage-windows-10-pcs"></a>Verwalten von Windows 10-PCs
 
 - [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md)
-    
-- [Automatisches Installieren oder Deinstallieren von Office auf Windows 10-Geräten](auto-install-or-uninstall-office.md)
-    
+
     Lesen Sie [vorbereiten für die Office-Clientbereitstellung von Microsoft 365 Business](prepare-for-office-client-deployment.md) , bevor Sie Office automatisch installieren. 
     
 - [Festlegen von Geräteschutz Einstellungen für Windows 10-Geräte](protection-settings-for-windows-10-pcs.md)
