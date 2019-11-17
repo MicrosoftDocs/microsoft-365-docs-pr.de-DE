@@ -15,14 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
-ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
+ms.openlocfilehash: 2f6fd8c17096c9c25a0f1af886894e68d33e939d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37964425"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672571"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
+
+*Dies gilt sowohl für Microsoft 365 Enterprise als auch Office 365 Enterprise.*
 
 Mithilfe von Testumgebungsanleitungen können Sie schnell mehr zu Microsoft-Produkten erfahren. Sie enthalten Anweisungen zum Konfigurieren vereinfachter, aber repräsentativer Testumgebungen. Sie können diese Umgebungen für Demos, Anpassungen oder das Erstellen komplexer Machbarkeitsstudien für die Dauer eines Test- oder bezahlten Abonnements verwenden. 
 
@@ -43,6 +45,8 @@ Zuerst erstellen Sie eine Testumgebung für [Microsoft 365 Enterprise](https:/
 - Verwenden Sie die [einfache Standardkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer reinen Cloudumgebung konfigurieren und demonstrieren möchten, die keine lokalen Komponenten umfasst.
 
 - Verwenden Sie die [simulierte Unternehmensstandardkonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer hybriden Cloudumgebung konfigurieren und demonstrieren möchten, die lokale Komponenten wie eine Active Directory Domain Services (AD DS)-Domäne verwendet.
+
+Sie können auch Testumgebungen für Office 365 E5 erstellen, ohne die Microsoft 365 E5-Lizenz zu Ihrer Test- oder Produktionstestumgebung hinzuzufügen.
     
 ## <a name="identity"></a>Identität
 
