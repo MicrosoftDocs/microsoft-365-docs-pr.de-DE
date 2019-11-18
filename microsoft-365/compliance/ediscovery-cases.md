@@ -10,17 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 'Verwenden Sie das Security #a0 Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Advanced eDiscovery vorbereiten.'
-ms.openlocfilehash: f0487a7657b1d6cc4374bfc7308092285aebc979
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf880e6f54f2ab91bae23c3ecf468f88627f3025
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081354"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686263"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>eDiscovery-Fälle im Security #a0 Compliance Center
 
@@ -56,13 +57,13 @@ Verwenden Sie den folgenden Workflow zum Einrichten und Verwenden von eDiscovery
 
 Der erste Schritt besteht darin, Personen die entsprechenden eDiscovery-bezogenen Berechtigungen zuzuweisen, damit Sie Sie in Schritt 2 zu einem eDiscovery-Fall hinzufügen können. Sie müssen Mitglied der Rollengruppe "Organisationsverwaltung" (oder der Rolle "Rollenverwaltung" zugewiesen) im Sicherheits #a0 Compliance Center sein, um eDiscovery-Berechtigungen zuzuweisen. In der folgenden Liste werden die eDiscovery-bezogenen Rollengruppen im Security #a0 Compliance Center beschrieben. 
   
-- **Prüfer** – diese Rollengruppe verfügt über die restriktivsten eDiscovery-bezogenen Berechtigungen. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in Office 365 Advanced eDiscovery zu gestatten. Mitglieder dieser Gruppe können die Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center nur anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security and Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Sie können keine Fälle erstellen, einem Fall Mitglieder hinzufügen, Aufbewahrungen erstellen, Suchergebnisse in der Vorschau anzeigen, Suchergebnisse exportieren oder Ergebnisse für Advanced eDiscovery vorbereiten. 
+- **Prüfer.** Diese Rollengruppe verfügt über die restriktivsten Berechtigungen in Bezug auf eDiscovery. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in Office 365 Advanced eDiscovery zu gestatten. Mitglieder dieser Gruppe können die Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center nur anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security and Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Sie können keine Fälle erstellen, einem Fall Mitglieder hinzufügen, Aufbewahrungen erstellen, Suchergebnisse in der Vorschau anzeigen, Suchergebnisse exportieren oder Ergebnisse für Advanced eDiscovery vorbereiten. 
     
-- **eDiscovery Manager** – Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, inhaltsspeicherorte in der Warteschleife platzieren, Inhalts suchen, die einem Fall zugeordnet sind, erstellen und bearbeiten, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. In dieser Rollengruppe gibt es zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
+- **eDiscovery-Manager.** Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, inhaltsspeicherorte in der Warteschleife platzieren, Inhalts suchen, die einem Fall zugeordnet sind, erstellen und bearbeiten, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. In dieser Rollengruppe gibt es zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
     
-  - **eDiscovery-Manager** -kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder Mitglied von sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der **eDiscovery** -Seite im Security #a0 Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen. 
+  - **eDiscovery-Manager.** Kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder deren Mitglied Sie sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der **eDiscovery** -Seite im Security #a0 Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen. 
     
-  - **eDiscovery-Administrator** -kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
+  - **eDiscovery-Administrator *.** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
     
     - Anzeigen aller Fälle, die auf der Seite **eDiscovery-Fälle** aufgeführt sind. 
     
@@ -95,7 +96,7 @@ Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen vo
 
 ## <a name="step-2-create-a-new-case"></a>Schritt 2: Erstellen einer neuen Anfrage
 
-Der nächste Schritt besteht darin, einen neuen eDiscovery-Fall zu erstellen. Sie müssen Mitglied der Rollengruppe „eDiscovery-Manager“ sein, um eDiscovery-Fälle zu erstellen. Wie bereits erläutert, können Sie (und andere Fall Mitglieder) nach dem Erstellen eines neuen Falls im Security #a0 Compliance Center auf denselben Fall in Advanced eDiscovery zugreifen, wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt.
+Der nächste Schritt besteht darin, einen eDiscovery-Fall zu erstellen. Sie müssen Mitglied der Rollengruppe „eDiscovery-Manager“ sein, um eDiscovery-Fälle zu erstellen. Wie bereits erläutert, können Sie (und andere Fall Mitglieder) nach dem Erstellen eines Falls im Security #a0 Compliance Center auf denselben Fall in Advanced eDiscovery zugreifen, wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
@@ -103,18 +104,18 @@ Der nächste Schritt besteht darin, einen neuen eDiscovery-Fall zu erstellen. Si
     
 3. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery**, und klicken Sie ![dann auf](media/ITPro-EAC-AddIcon.gif) Symbol hinzufügen, **um eine Anfrage zu erstellen**.
     
-4. Geben Sie auf der Seite **neuer Fall** einen Namen ein, geben Sie eine optionale Beschreibung ein, und klicken Sie dann auf **Speichern**. Beachten Sie, dass der Case-Name in Ihrer Organisation eindeutig sein muss.
+4. Geben Sie auf der Seite **neuer Fall** einen Namen ein, geben Sie eine optionale Beschreibung ein, und klicken Sie dann auf **Speichern**. Der Case-Name muss in Ihrer Organisation eindeutig sein.
     
-    ![Erstellen eines neuen Falls](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Erstellen einer Anfrage](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
-    Der neue Fall wird in der Liste der Fälle auf der **eDiscovery** -Seite angezeigt. Beachten Sie, dass Sie den Mauszeiger über einen Fallnamen bewegen können, um Informationen über den Fall anzuzeigen, einschließlich des Status der Anfrage ( **aktiv** oder **geschlossen**), der Beschreibung des Falls (die im vorherigen Schritt erstellt wurde), und wenn der Fall zuletzt geändert wurde und Wer es geändert hat.
+    Der neue Fall wird in der Liste der Fälle auf der **eDiscovery** -Seite angezeigt. Sie können den Mauszeiger über einen Fallnamen bewegen, um Informationen über den Fall anzuzeigen, einschließlich des Status der Anfrage (**aktiv** oder **geschlossen**), der Beschreibung des Falls (die im vorherigen Schritt erstellt wurde), und wenn der Fall zuletzt geändert wurde und wer ihn geändert hat.
     
     > [!TIP]
     > Nachdem Sie einen neuen Fall erstellt haben, können Sie ihn jederzeit umbenennen. Klicken Sie auf der **eDiscovery** -Seite einfach auf den Namen des Falls. Ändern Sie auf der Seite **diesen Fall Flyout verwalten** den Namen, der in dem Feld unter **Name**angezeigt wird, und speichern Sie die Änderung. 
   
 ## <a name="step-3-add-members-to-a-case"></a>Schritt 3: Hinzufügen von Mitgliedern zu einer Anfrage
 
-Nachdem Sie einen neuen Fall erstellt haben, besteht der nächste Schritt darin, der Anfrage Mitglieder hinzuzufügen. Wie zuvor erläutert, können nur Benutzer, die Mitglieder der Rollengruppen Prüfer oder eDiscovery-Manager sind, als Mitglieder der Anfrage hinzugefügt werden. Beachten Sie, dass der eDiscovery-Manager, der den Fall erstellt hat, automatisch als Mitglied hinzugefügt wird.
+Nachdem Sie einen Fall erstellt haben, besteht der nächste Schritt darin, der Anfrage Mitglieder hinzuzufügen. Wie zuvor erläutert, können nur Benutzer, die Mitglieder der Rollengruppen Prüfer oder eDiscovery-Manager sind, als Mitglieder der Anfrage hinzugefügt werden. Der eDiscovery-Manager, der den Fall erstellt hat, wird automatisch als Mitglied hinzugefügt.
   
 1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
@@ -182,23 +183,23 @@ So erstellen Sie einen Aufbewahrungsplatz für einen eDiscovery-Fall:
     
     ![Wählen Sie Inhaltsspeicherorte aus, die im Haltebereich platziert werden sollen.](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . zur Angabe von Postfächern, die in den Haltebereich verschoben werden. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für eine Office 365 Gruppe oder ein Microsoft-Team aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+   a. **Exchange-e-Mail.** Klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . zur Angabe von Postfächern, die in den Haltebereich verschoben werden. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für eine Office 365 Gruppe oder ein Microsoft-Team aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
     > [!NOTE]
     > Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um festzulegende Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen. 
   
-   b. **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites für die Aufbewahrung festzulegen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365 Gruppe oder ein Microsoft-Team hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+   b. **SharePoint-Websites.** Klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites anzugeben, die in der Warteschleife platziert werden sollen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365 Gruppe oder ein Microsoft-Team hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
     Im Abschnitt [Weitere Informationen](#more-information) finden Sie Tipps zum Platzieren von Office 365 Gruppen und Microsoft Teams in der Warteschleife. 
     
     > [!NOTE]
     > Im seltenen Fall, dass der Benutzerprinzipalname (UPN) einer Person geändert wird, wird die URL für Ihr OneDrive-Konto ebenfalls geändert, um den neuen UPN zu integrieren. In diesem Fall müssen Sie den Haltebereich ändern, indem Sie die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen. 
   
-   c. **Öffentliche Exchange-Ordner** – verschieben Sie das ![Toggle-](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Steuerelement der Umschaltfläche in die Position **alle** , um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Beachten Sie, dass Sie keine bestimmten öffentlichen Ordner für die Aufbewahrung auswählen können. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
+   c. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![-Steuer](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Element der Umschaltfläche in die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
     
 9. Wenn Sie das Hinzufügen von Inhaltsspeicherorten in der Warteschleife abgeschlossen haben, klicken Sie auf **weiter**.
     
-10. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls einfach auf **weiter**
+10. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls auf **weiter** .
     
     ![Erstellen eines abfragebasierten haltebereichs mit Bedingungen](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
@@ -223,7 +224,7 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
   
 - Die Gesamtanzahl der Elemente in der Warteschleife gibt die Anzahl der Elemente aus allen Inhaltsquellen an, die in der Warteschleife gespeichert werden. Wenn Sie einen abfragebasierten Haltebereich erstellt haben, gibt diese Statistik die Anzahl der Elemente an, die mit der Abfrage übereinstimmen.
     
-- Die Anzahl der zu speichernden Elemente umfasst auch nicht indizierte Elemente, die an den Inhaltsspeicherorten gefunden wurden. Beachten Sie, dass beim Erstellen eines abfragebasierten haltebereichs alle nicht indizierten Elemente in den Inhaltsspeicherorten in der Warteschleife gespeichert werden. Dies umfasst nicht indizierte Elemente, die nicht mit den Suchkriterien eines abfragebasierten haltebereichs und nicht indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Dies unterscheidet sich von dem, was passiert, wenn Sie eine Inhaltssuche ausführen, in der nicht indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen oder von einer Datumsbereichs Bedingung ausgeschlossen werden, nicht in den Suchergebnissen enthalten sind. Weitere Informationen zu nicht indizierten Elementen finden Sie unter [teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md).
+- Die Anzahl der zu speichernden Elemente umfasst auch nicht indizierte Elemente, die an den Inhaltsspeicherorten gefunden wurden. Wenn Sie einen abfragebasierten Haltebereich erstellen, werden alle nicht indizierten Elemente in den Inhaltsspeicherorten in die Warteschleife gesetzt. Dies umfasst nicht indizierte Elemente, die nicht mit den Suchkriterien eines abfragebasierten haltebereichs und nicht indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Dies unterscheidet sich von dem, was passiert, wenn Sie eine Inhaltssuche ausführen, in der nicht indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen oder von einer Datumsbereichs Bedingung ausgeschlossen werden, nicht in den Suchergebnissen enthalten sind. Weitere Informationen zu nicht indizierten Elementen finden Sie unter [teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md).
     
 - Sie können die neuesten Aufbewahrungs Statistiken abrufen, indem Sie auf **Statistik aktualisieren** klicken, um eine Such Schätzung erneut auszuführen, mit der die aktuelle Anzahl der zu speichernden Elemente berechnet wird. Klicken Sie gegebenenfalls in ****![der Symbolleiste](media/O365-MDM-Policy-RefreshIcon.gif) auf Aktualisierungssymbol aktualisieren, um die Aufbewahrungs Statistiken im Detailbereich zu aktualisieren. 
     
@@ -250,13 +251,13 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     ![Neue Suche](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-6. Sie können Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, beispielsweise Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (wie etwa Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in die Suchergebnisse eingeschlossen. 
+6. Sie können Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, beispielsweise Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in die Suchergebnisse eingeschlossen. 
     
 7. Sie können auf das Kontrollkästchen **Schlüsselwortliste anzeigen** und in jede Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile durch den **or** -Operator in der erstellten Suchabfrage miteinander verbunden. 
     
     ![Stichwortliste](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
-    Gründe für die Verwendung der Stichwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern übereinstimmen. Auf diese Weise können Sie schnell erkennen, welche Stichwörter am häufigsten (und am wenigsten) effektiv sind. Sie können auch eine Stichwort Phrase (umgeben von Klammern) in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen von Keyword-Statistiken für Inhalts Suchergebnisse](view-keyword-statistics-for-content-search.md).
+    Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Sie können auch einen (in Klammern eingeschlossenen) Schlüsselwortausdruck in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md).
     
     Weitere Informationen zur Verwendung der Liste Stichwörter finden Sie unter [Erstellen einer Suchabfrage](content-search.md#building-a-search-query).
     
@@ -268,11 +269,11 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     ![Speicherorte, Aufbewahrungsorte](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Alle Standorte** – wählen Sie diese Option aus, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Wenn Sie diese Option auswählen, können Sie auswählen, dass alle Exchange-Postfächer durchsucht werden sollen (einschließlich der Postfächer für alle Office 365 Gruppen und Microsoft Teams), alle SharePoint-und OneDrive für Unternehmen-Websites (einschließlich der Websites für alle Office 365 Gruppen und Microsoft Teams) und alle öffentlichen Ordner.
+    - **Alle Standorte.** Wählen Sie diese Option aus, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Wenn Sie diese Option auswählen, können Sie auswählen, dass alle Exchange-Postfächer durchsucht werden sollen (einschließlich der Postfächer für alle Office 365 Gruppen und Microsoft Teams), alle SharePoint-und OneDrive für Unternehmen-Websites (einschließlich der Websites für alle Office 365 Gruppen und Microsoft Teams) und alle öffentlichen Ordner.
     
-    - **Alle Speicherorte in der Warteschleife** – wählen Sie diese Option aus, um alle inhaltsspeicherorte zu durchsuchen, die in der Anfrage gespeichert wurden. Wenn die Groß-/Kleinschreibung mehrere Haltestatus enthält, werden die inhaltsspeicherorte aus allen Haltebereichen durchsucht, wenn Sie diese Option auswählen. Wenn ein Inhaltsspeicherort in einem abfragebasierten Speicherplatz gefunden wurde, werden beim Ausführen der Inhaltssuche, die Sie in diesem Schritt erstellen, nur die Elemente durchsucht, die in der Warteschleife gespeichert sind. Wenn beispielsweise ein Benutzer auf Abfrage basiertem Case Hold gesetzt wurde, der Elemente aufrecht erhält, die vor einem bestimmten Datum gesendet oder erstellt wurden, werden nur diese Elemente mithilfe der Suchkriterien der Inhaltssuche durchsucht. Dies wird erreicht, indem die Case Hold-Abfrage und die Inhalts Suchabfrage durch einen **and-** Operator verbunden werden. Weitere Informationen zum Suchen von Fall Inhalten finden Sie im Abschnitt [Weitere Informationen](#more-information) am Ende dieses Artikels. 
+    - **Alle Aufbewahrungsorte.** Wählen Sie diese Option aus, um alle inhaltsspeicherorte zu durchsuchen, die in der Anfrage gespeichert wurden. Wenn die Groß-/Kleinschreibung mehrere Haltestatus enthält, werden die inhaltsspeicherorte aus allen Haltebereichen durchsucht, wenn Sie diese Option auswählen. Wenn ein Inhaltsspeicherort in einem abfragebasierten Speicherplatz gefunden wurde, werden beim Ausführen der Inhaltssuche, die Sie in diesem Schritt erstellen, nur die Elemente durchsucht, die in der Warteschleife gespeichert sind. Wenn beispielsweise ein Benutzer auf Abfrage basiertem Case Hold gesetzt wurde, der Elemente aufrecht erhält, die vor einem bestimmten Datum gesendet oder erstellt wurden, werden nur diese Elemente mithilfe der Suchkriterien der Inhaltssuche durchsucht. Dies wird erreicht, indem die Case Hold-Abfrage und die Inhalts Suchabfrage durch einen **and-** Operator verbunden werden. Weitere Informationen zum Suchen von Fall Inhalten finden Sie im Abschnitt [Weitere Informationen](#more-information) am Ende dieses Artikels. 
     
-    - **Bestimmte Standorte** – wählen Sie diese Option aus, um die Postfächer und Websites auszuwählen, die Sie durchsuchen möchten. Wenn Sie diese Option auswählen und auf **ändern**klicken, wird eine Liste der Speicherorte angezeigt. Sie können auswählen, ob Sie einen oder alle Benutzer, Gruppen, Teams oder Website Standorte durchsuchen möchten.
+    - **Bestimmte Standorte.** Wählen Sie diese Option aus, um die Postfächer und Websites auszuwählen, die Sie durchsuchen möchten. Wenn Sie diese Option auswählen und auf **ändern**klicken, wird eine Liste der Speicherorte angezeigt. Sie können auswählen, ob Sie einen oder alle Benutzer, Gruppen, Teams oder Website Standorte durchsuchen möchten.
     
       ![Auswählen bestimmter Standorte](media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
@@ -284,7 +285,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
       - Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um die zu durchsuchenden Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Klicken Sie zum Hinzufügen von Empfängern zu dieser Liste auf **Benutzer, Gruppen oder Teams auswählen**, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, aktivieren Sie das Kontrollkästchen neben dem Namen, und klicken Sie dann auf **auswählen**. 
     
-      - Sie können inaktive Postfächer, Office 365 Gruppen, Microsoft Teams und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Office 365 Gruppen oder Microsoft Teams hinzufügen, wird das Gruppen-oder Team Postfach durchsucht. die Postfächer der Gruppenmitglieder werden nicht durchsucht.
+      - Sie können inaktive Postfächer, Office 365 Gruppen, Microsoft Teams und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Office 365 Gruppen oder Microsoft Teams hinzufügen, wird das Gruppen-oder Team Postfach durchsucht. Die Postfächer der Gruppenmitglieder werden nicht durchsucht.
     
       - Klicken Sie zum Hinzufügen von Websites auf **Websites auswählen**, dann auf **Websites erneut auswählen** , und geben Sie dann die URL für jede Website ein, die Sie durchsuchen möchten. Sie können auch die URL für die SharePoint-Website für Office 365 Gruppen und Microsoft Teams hinzufügen. 
     
@@ -329,7 +330,7 @@ Sie können die Ergebnisse einer einzelnen Suche exportieren, die [einem Fall zu
     
     ![Registerkarte "Exportieren"](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Möglicherweise müssen Sie **auf Aktualisierungs**![Symbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge so zu aktualisieren, dass der soeben erstellte Exportauftrag angezeigt wird. Beachten Sie, dass Exportaufträge den gleichen Namen wie die entsprechende Inhaltssuche haben, wobei **_Export** an das Ende des Such namens angehängt wird. 
+    Möglicherweise müssen Sie **auf Aktualisierungs**![Symbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge so zu aktualisieren, dass der von Ihnen erstellte Exportauftrag angezeigt wird. Export Aufträge haben den gleichen Namen wie die entsprechende Inhaltssuche, wobei **_Export** an das Ende des Such namens angehängt wird. 
     
 6. Klicken Sie auf den soeben erstellten Exportauftrag, um Statusinformationen im Detailbereich anzuzeigen. Diese Informationen umfassen den Prozentsatz der Elemente, die in einen Azure-Speicherbereich in der Microsoft-Cloud übertragen wurden.
     
@@ -371,7 +372,7 @@ Als Alternative zum Exportieren der Ergebnisse einer einzelnen Inhaltssuche, die
     
     ![Registerkarte "Exportieren", mehrere Suchvorgänge](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Möglicherweise müssen Sie **auf Aktualisierungs** ![Symbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge zu aktualisieren, um den soeben erstellten Exportauftrag anzuzeigen. Beachten Sie, dass die Suchvorgänge, die in den Exportauftrag aufgenommen wurden, in der Spalte **Suchen** aufgeführt werden. 
+    Möglicherweise müssen Sie **auf Aktualisierungs** ![Symbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge zu aktualisieren, um den von Ihnen erstellten Exportauftrag anzuzeigen. Die Suchvorgänge, die in den Exportauftrag aufgenommen wurden, werden in der Spalte **Suchen** aufgeführt. 
     
 8. Klicken Sie auf den soeben erstellten Exportauftrag, um Statusinformationen im Detailbereich anzuzeigen. Diese Informationen umfassen den Prozentsatz der Elemente, die in einen Azure-Speicherbereich in der Microsoft-Cloud übertragen wurden.
     
@@ -387,11 +388,11 @@ Als Alternative zum Exportieren der Ergebnisse einer einzelnen Inhaltssuche, die
     
 - Wenn dasselbe e-Mail-Element oder Dokument vom gleichen Inhaltsspeicherort von mehr als einer der Suchvorgänge zurückgegeben wird, die Sie exportieren, wird nur eine Kopie des Elements exportiert.
     
-- Sie können einen Export für mehrere Suchvorgänge nach dem Erstellen nicht bearbeiten. Beispielsweise können Sie dem Export keine Suchvorgänge hinzufügen oder daraus entfernen. Sie müssen einen neuen Exportauftrag erstellen, um die exportierten Suchergebnisse zu ändern. Nachdem ein Exportauftrag erstellt wurde, können Sie die Ergebnisse nur auf einen Computer herunterladen, den Export neu starten oder den Exportauftrag löschen.
+- Sie können einen Export für mehrere Suchvorgänge nach dem Erstellen nicht bearbeiten. Beispielsweise können Sie dem Export keine Suchvorgänge hinzufügen oder daraus entfernen. Sie müssen einen Exportauftrag erstellen, um die exportierten Suchergebnisse zu ändern. Nachdem ein Exportauftrag erstellt wurde, können Sie die Ergebnisse nur auf einen Computer herunterladen, den Export neu starten oder den Exportauftrag löschen.
     
 - Wenn Sie den Export neu starten, wirken sich Änderungen an den Abfragen der Suchvorgänge, aus denen der Exportauftrag besteht, nicht auf die Suchergebnisse aus, die abgerufen werden. Wenn Sie einen Export neu starten, wird derselbe kombinierte Suchabfrage Auftrag, der beim Erstellen des Exportauftrags ausgeführt wurde, erneut ausgeführt.
     
-- Wenn Sie einen Export von der Seite **Exports** in einem eDiscovery-Fall neu starten, überschreiben die Suchergebnisse, die an den Azure-Speicherbereich übertragen werden, die vorherigen Ergebnisse; die vorherigen Ergebnisse, die dort übertragen wurden, stehen nicht zum Herunterladen zur Verfügung. 
+- Wenn Sie einen Export von der Seite **Exports** in einem eDiscovery-Fall neu starten, überschreiben die Suchergebnisse, die an den Azure-Speicherbereich übertragen werden, die vorherigen Ergebnisse. Die vorherigen Ergebnisse, die dort übertragen wurden, stehen nicht zum Herunterladen zur Verfügung. 
     
 - Das Vorbereiten der Ergebnisse mehrerer Suchvorgänge für die Analyse in Advanced eDiscovery ist nicht verfügbar. Sie können nur die Ergebnisse einer einzelnen Suche für die Analyse in Advanced eDiscovery vorbereiten.
 
@@ -448,7 +449,7 @@ So navigieren Sie zu einem Fall in Advanced eDiscovery:
     
     ![Erweiterte eDiscorvery-Statusanzeige](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
-    Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 7 zur Analyse in Advanced eDiscovery vorbereitet haben. Beachten Sie, dass der Name des Containers den gleichen Namen wie die Inhaltssuche in dem Fall im Security #a0 Compliance Center hat. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen.
+    Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 7 zur Analyse in Advanced eDiscovery vorbereitet haben. Der Name des Containers hat den gleichen Namen wie die Inhaltssuche in dem Fall im Security #a0 Compliance Center. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen.
     
 4. Wenn Sie die Suchergebnis Daten aus einem Container in den Fall in Advanced eDiscovery laden möchten, wählen Sie einen Container aus, und klicken Sie auf **verarbeiten**.
     
@@ -493,7 +494,7 @@ So schließen Sie einen Fall:
      
 ## <a name="optional-step-10-re-open-a-closed-case"></a>Optional Schritt 10: Erneutes Öffnen eines geschlossenen Falls
 
-Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen des Cases vorhanden waren, nicht automatisch wiederhergestellt. Nachdem der Fall erneut geöffnet wurde, müssen Sie zur **halte** Seite wechseln und die vorherigen Holds-Objekte aktivieren. Wenn Sie einen Haltestatus aktivieren möchten, wählen Sie ihn aus, und klicken Sie im Detailbereich auf **Einschalten** . 
+Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen des Cases vorhanden waren, nicht automatisch wiederhergestellt. Nachdem der Fall erneut geöffnet wurde, müssen Sie zur **halte** Seite wechseln und die vorherigen Holds-Objekte aktivieren. Zum Aktivieren eines haltebereichs wählen Sie ihn aus, und klicken Sie im Detailbereich auf **Einschalten** . 
   
 1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
@@ -522,7 +523,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
   |**Beschreibung der Beschränkung**|**Grenzwert**|
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
-  |Maximale Anzahl von Fall Behältern für eine Organisation  <br/> |10,000  <br/> |
+  |Maximale Anzahl von Fall Behältern für eine Organisation  <br/> |10.000  <br/> |
   |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1,000  <br/> |
   |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites in einem einzigen Aufbewahrungs Fall  <br/> |100  <br/> |
    
@@ -542,57 +543,59 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
     
     Im folgenden finden Sie einige andere Punkte, die Sie beim Durchsuchen aller Case-Inhalte beachten sollten:
     
-  - Wenn ein Inhaltsspeicherort Teil mehrerer haltebereiche im gleichen Fall ist, werden die Aufbewahrungs Abfragen durch einen **oder** -Operator kombiniert, wenn Sie diesen Inhaltsspeicherort mithilfe der Option "alle Groß-/Kleinschreibung" Durchsuchen. Wenn ein Inhaltsspeicherort Teil von zwei unterschiedlichen Haltebereichen ist, wobei einer auf Abfrage basiert ist und der andere ein unbegrenzter Speicher ist (wobei der gesamte Inhalt in den Haltebereich gesetzt wird), wird der gesamte Inhalt aufgrund des unbegrenzten Haltestatus durchsucht. 
+  - Wenn ein Inhaltsspeicherort Teil mehrerer haltebereiche im gleichen Fall ist, werden die Aufbewahrungs Abfragen durch einen **oder** -Operator kombiniert, wenn Sie diesen Inhaltsspeicherort mithilfe der Option "alle Groß-/Kleinschreibung" Durchsuchen. Wenn ein Inhaltsspeicherort Teil von zwei unterschiedlichen Haltebereichen ist, wobei einer auf Abfrage basiert und der andere ein unbegrenzter Speicher ist (wobei der gesamte Inhalt in den Haltebereich gesetzt wird), wird der gesamte Inhalt aufgrund des unbegrenzten Haltestatus durchsucht. 
     
   - Wenn eine Inhaltssuche für einen Fall gilt und Sie Sie so konfiguriert haben, dass alle Fall Inhalte durchsucht werden und Sie dann einen Haltestatus ändern (durch Hinzufügen oder Entfernen eines Inhaltsspeicherorts oder Ändern der halte Abfrage), wird die Suchkonfiguration mit diesen Änderungen aktualisiert. Sie müssen die Suche jedoch erneut ausführen, nachdem der Haltebereich geändert wurde, um die Suchergebnisse zu aktualisieren.
     
-  - Wenn mehrere Case-Aufbewahrungsorte an einer Inhaltsposition in einem eDiscovery-Fall gespeichert werden und Sie alle Fall Inhalte durchsuchen möchten, beträgt die maximale Anzahl von Stichwörtern für diese Suchabfrage 500. Das liegt daran, dass die Inhaltssuche alle abfragebasierten Haltestatus mit dem Operator **or** kombiniert. Wenn in den kombinierten Aufbewahrungs Abfragen und der Inhalts Suchabfrage mehr als 500 Schlüsselwörter vorhanden sind, wird der gesamte Inhalt im Postfach durchsucht, und nicht nur der Inhalt, der mit dem abfragebasierten Case-Wert übereinstimmt. 
+  - Wenn mehrere Case-Aufbewahrungsorte an einer Inhaltsposition in einem eDiscovery-Fall gespeichert werden und Sie alle Fall Inhalte durchsuchen möchten, beträgt die maximale Anzahl von Stichwörtern für diese Suchabfrage 500. Das liegt daran, dass die Inhaltssuche alle abfragebasierten Haltestatus mit dem Operator **or** kombiniert. Wenn in den kombinierten Aufbewahrungs Abfragen und der Inhalts Suchabfrage mehr als 500 Schlüsselwörter vorhanden sind, wird der gesamte Inhalt im Postfach durchsucht, und nicht nur der Inhalt, der mit abfragebasierten Fällen übereinstimmt. 
     
   - Wenn ein Case Hold den Status " **Einschalten**" aufweist, können Sie die Speicherorte der Fall Inhalte weiterhin durchsuchen, während der Haltebereich aktiviert ist.
     
   - Wenn eine Suche so konfiguriert ist, dass alle Fall Inhalte durchsucht werden, können Sie, wie bereits erwähnt, diese Suche nicht einschließen, wenn Sie die Ergebnisse mehrerer Suchvorgänge exportieren möchten. Wenn eine Suche so konfiguriert ist, dass alle Fall Inhalte durchsucht werden, müssen Sie die Ergebnisse dieser einzelnen Suche exportieren.
     
-- **Wenn ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto, das in der Warteschleife ist, in eine andere Region in einer Multi-Geo-Umgebung verschoben wird, wird der Haltebereich dennoch angewendet?** In allen Fällen werden die Inhalte in einem Postfach-, Standort-oder OneDrive-Konto weiterhin beibehalten. Die Aufbewahrungs Statistik enthält jedoch keine Elemente mehr von einem Inhaltsspeicherort, der in eine andere Region verschoben wurde. Um Aufbewahrungs Statistiken für einen verschobenen Inhaltsspeicherort einzuschließen, müssen Sie das Archiv bearbeiten und die URL (oder SMTP-Adresse eines Postfachs) aktualisieren, damit der Inhaltsspeicherort wieder in die halte Statistik aufgenommen wird. 
+- **Wenn ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto, das in der Warteschleife ist, in eine andere Region in einer Multi-Geo-Umgebung verschoben wird, wird der Haltebereich dennoch angewendet?** In allen Fällen werden die Inhalte in einem Postfach-, Standort-oder OneDrive-Konto weiterhin beibehalten. Die Aufbewahrungs Statistik enthält jedoch keine Elemente mehr von einem Inhaltsspeicherort, der in eine andere Region verschoben wurde. Wenn Sie Aufbewahrungs Statistiken für einen verschobenen Inhaltsspeicherort einschließen möchten, müssen Sie den Aufbewahrungsplatz bearbeiten und die URL (oder SMTP-Adresse eines Postfachs) aktualisieren, damit der Inhaltsspeicherort wieder in die halte Statistik aufgenommen wird. 
     
-- **Was ist mit dem Platzieren eines Haltestatus für Office 365 Gruppen und Microsoft Teams?** Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es sehr ähnlich, dass Sie in einem eDiscovery-Fall aufbewahrt werden. Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte. 
+- **Was ist mit dem Platzieren eines Haltestatus für Office 365 Gruppen und Microsoft Teams?** Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es ähnlich, dass Sie in einem eDiscovery-Fall in den Haltebereich versetzt werden. Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte. 
     
   - Zum Platzieren von Inhalten in Office 365 Gruppen und in Microsoft Teams müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind.
     
-  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Office 365 Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden beispielsweise ausgewählte Eigenschaften für eine Office 365 Gruppe mit dem Namen "Senior Leadership Team" angezeigt: 
+  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Office 365 Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt: 
     
-     ```
-    Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
+       ```text
+       Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
 
-     DisplayName            : Senior Leadership Team
-     Alias                  : seniorleadershipteam
-     PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
-     SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
+       DisplayName            : Senior Leadership Team
+       Alias                  : seniorleadershipteam
+       PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
+       SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
+       ```
+
+    > [!NOTE]
+    > Zum Ausführen des **Get-UnifiedGroup**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
+  
+  - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Office 365 Gruppen oder Microsoft Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Office 365 Gruppe oder ein Microsoft-Team halten, wird auf ähnliche Weise nur das Gruppenpostfach und die Gruppen Website in den Haltebereich verschoben. Die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nicht in den Haltestatus versetzt, es sei denn, Sie fügen Sie explizit in den Haltebereich ein. Wenn Sie daher eine Office 365 Gruppe oder ein Microsoft-Team aus einem rechtlichen Grund in die Warteschleife stellen müssen, sollten Sie die Postfächer und OneDrive für Unternehmen Websites für Gruppen-und Teammitglieder in demselben Archiv hinzufügen.
+    
+  - Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite " **Start \> Gruppen** " im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen: 
+    
+    ```powershell
+    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
     ```
 
     > [!NOTE]
-    > Damit Sie das Cmdlet **Get-Unifiedgroup** ausführen können, müssen Sie in Exchange Online die Rolle "nur-Ansicht-Empfänger" besitzen oder Mitglied einer Rollengruppe sein, der die Rolle "nur-Empfänger" zugewiesen ist. 
+    > Zum Ausführen des **Get-UnifiedGroupLinks**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
   
-  - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Office 365 Gruppen oder Microsoft Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Office 365 Gruppe oder ein Microsoft-Team halten, wird auf ähnliche Weise nur das Gruppenpostfach und die Gruppen Website in den Wartebereich verschoben. die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nicht in den Haltestatus versetzt, es sei denn, Sie fügen Sie explizit in den Haltebereich ein. Wenn Sie daher eine Office 365 Gruppe oder ein Microsoft-Team aus rechtlichen Gründen in die Warteschleife stellen müssen, sollten Sie die Postfächer und OneDrive für Unternehmen Websites für Gruppen-und Teammitglieder in demselben Archiv hinzufügen.
-    
-  - Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite " **Start \> Gruppen** " im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
-    
-      ```
-      Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
-      ```
-
-    > [!NOTE]
-    > Damit Sie das Cmdlet **Get-UnifiedGroupLinks** ausführen können, müssen Sie in Exchange Online die Rolle "nur-Ansicht-Empfänger" besitzen oder Mitglied einer Rollengruppe sein, der die Rolle "nur-Ansicht-Empfänger" zugewiesen ist. 
-  
-  - Unterhaltungen, die Teil eines Microsoft Teams-Kanals sind, werden in dem Postfach gespeichert, das dem Microsoft-Team zugeordnet ist. Auf ähnliche Weise werden Dateien, die Teammitglieder in einem Kanal freigeben, auf der SharePoint-Website des Teams gespeichert. Daher müssen Sie das Microsoft Team-Postfach und die SharePoint-Website speichern, um Unterhaltungen und Dateien in einem Kanal beizubehalten.
+  - Unterhaltungen, die Teil eines Microsoft Teams-Kanals sind, werden in dem Postfach gespeichert, das dem Microsoft-Team zugeordnet ist. Gleichermaßen werden Dateien, die Teammitglieder in einem Kanal freigeben, auf der SharePoint-Website des Teams gespeichert. Daher müssen Sie das Microsoft Team-Postfach und die SharePoint-Website speichern, um Unterhaltungen und Dateien in einem Kanal beizubehalten.
     
     Alternativ werden Unterhaltungen, die Teil der Chatliste in Microsoft Teams sind, im Postfach des Benutzers gespeichert, der am Chat teilnimmt. Und Dateien, die ein Benutzer in Chat Unterhaltungen freigibt, werden auf der OneDrive für Unternehmen Website des Benutzers gespeichert, der die Datei freigibt. Daher müssen Sie die einzelnen Benutzerpostfächer und OneDrive für Unternehmen Websites in der Warteschleife platzieren, um Unterhaltungen und Dateien in der Chat Liste beizubehalten. Daher empfiehlt es sich, die Postfächer von Mitgliedern eines Microsoft-Teams zusätzlich zur Aufbewahrung des Team Postfachs (und der Website) in einem Archiv zu platzieren.
     
     > [!IMPORTANT]
     > Benutzer, die an Unterhaltungen teilnehmen, die Teil der Chat Liste in Microsoft Teams sind, müssen über ein Exchange Online (Cloud-basiertes) Postfach verfügen, um Chat Unterhaltungen beizubehalten, wenn das Postfach in einen eDiscovery-Speicher gesetzt wird. Das liegt daran, dass Unterhaltungen, die Teil der Chat Liste sind, in den cloudbasierten Postfächern der Chat Teilnehmer gespeichert werden. Wenn ein Chat Teilnehmer kein Exchange Online Postfach hat, können Sie keine Chat Unterhaltungen beibehalten. Beispielsweise können Benutzer mit einem lokalen Postfach in einer Exchange-hybridbereitstellung an Unterhaltungen teilnehmen, die Teil der Chat Liste in Microsoft Teams sind. In diesem Fall können Inhalte aus diesen Unterhaltungen jedoch nicht beibehalten werden, da die Benutzer keine cloudbasierten Postfächer haben. 
   
-  - Jeder Microsoft-Team-oder Team Kanal enthält ein wiki für die Notizen und die Zusammenarbeit. Der Inhalt des Wikis wird automatisch in einer Datei mit dem MHT-Format gespeichert. Diese Datei wird in der Microsoft Teams-wiki-Datendokument Bibliothek auf der SharePoint-Website des Teams gespeichert. Sie können die Inhalte im wiki in der Warteschleife platzieren, indem Sie die SharePoint-Website des Teams in der Warteschleife platzieren.
+  - Jeder Microsoft-Team-oder Team Kanal enthält ein wiki für die Notizen und die Zusammenarbeit. Die Wiki-Inhalte werden automatisch in einer Datei im MHT-Format gespeichert. Diese Datei wird in der Dokumentbibliothek für Wiki-Daten auf der SharePoint-Website des Teams gespeichert. Sie können die Inhalte im wiki in der Warteschleife platzieren, indem Sie die SharePoint-Website des Teams in der Warteschleife platzieren.
     
     > [!NOTE]
     > Die Funktion zum Beibehalten von wiki-Inhalten für einen Microsoft-Team-oder Team Kanal (wenn Sie die SharePoint-Website des Teams in der Warteschleife platzieren) wurde am 22. Juni 2017 veröffentlicht. Wenn eine Teamwebsite gespeichert ist, wird der Inhalt des Wikis ab diesem Datum beibehalten. Wenn jedoch eine Teamwebsite gespeichert ist und der Inhalt des Wikis vor dem 22. Juni 2017 gelöscht wurde, wurde der Inhalt des Wikis nicht beibehalten. 
   
-- **Wie finde ich die URL für OneDrive für Unternehmen Websites?** Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehmen Websites in Ihrer Organisation, damit Sie Sie zu einem Haltestatus oder einer Suche hinzufügen können, die einem eDiscovery-Fall zugeordnet ist, finden Sie unter [Erstellen einer Liste aller OneDrive-Standorte in Ihrer Organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Dieses Skript in diesem Artikel erstellt eine Textdatei, die eine Liste aller OneDrive-Websites enthält. Um dieses Skript auszuführen, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Stellen Sie sicher, dass Sie die URL für die mysite-Domäne Ihrer Organisation an jede OneDrive-Website anfügen, die Sie durchsuchen möchten. Dies ist die Domäne, die alle OneDrive enthält. Beispiel: `https://contoso-my.sharepoint.com`. Hier ist ein Beispiel für eine URL für die OneDrive-Website eines Benutzers `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`:.
+  - Wenn Sie ein Microsoft-Team aufbewahren, gilt der Haltebereich nicht für private Kanal Nachrichten. Nur Nachrichten in Standardkanälen bleiben erhalten. Die Unterstützung für die Aufbewahrung privater Kanal Nachrichten wird in Kürze verfügbar sein.
+
+- **Wie finde ich die URL für OneDrive für Unternehmen Websites?** Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehmen Websites in Ihrer Organisation, damit Sie Sie zu einem Haltestatus oder einer Suche hinzufügen können, die einem eDiscovery-Fall zugeordnet ist, finden Sie unter [Erstellen einer Liste aller OneDrive-Standorte in Ihrer Organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Mit dem Skript in diesem Artikel wird eine Textdatei erstellt, die eine Liste aller OneDrive-Websites enthält. Um dieses Skript ausführen zu können, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Achten Sie darauf, die URL für die "MeineWebsite"-Domäne Ihrer Organisation an jede OneDrive-Website anzuhängen, die Sie durchsuchen möchten. Dies ist die Domäne, die Ihr gesamtes OneDrive enthält, z. B. `https://contoso-my.sharepoint.com`. Hier ein Beispiel für die URL der OneDrive-Website eines Benutzers: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

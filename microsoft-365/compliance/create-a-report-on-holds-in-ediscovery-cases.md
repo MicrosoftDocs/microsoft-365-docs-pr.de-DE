@@ -8,24 +8,26 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind.
-ms.openlocfilehash: 7118b62dcd42413309e33c45e80516c8822faeff
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e07e628b21c9e8f7485f3012a8740823fe301fc2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080919"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686210"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Erstellen eines Berichts über Aufbewahrungen in eDiscovery-Fällen in Office 365
   
 Mit dem Skript in diesem Artikel können eDiscovery-Administratoren und eDiscovery-Manager einen Bericht generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind. Der Bericht enthält Informationen wie den Namen des Falls, dem ein Haltebereich zugeordnet ist, die Aufbewahrungsorte für Inhalte, die in der Warteschleife gespeichert werden, und ob der Haltebereich Abfrage basiert ist. Wenn es Fälle gibt, in denen keine Aufbewahrungspflicht besteht, erstellt das Skript einen zusätzlichen Bericht mit einer Liste von Fällen ohne Haltestatus.
 
-Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
+Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) .
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Wenn Sie einen Bericht über alle eDiscovery-Fälle in Ihrer Organisation generieren möchten, müssen Sie ein eDiscovery-Administrator in Ihrer Organisation sein. Wenn Sie eDiscovery-Manager sind, enthält der Bericht nur Informationen zu den Fällen, auf die Sie zugreifen können. Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
@@ -39,7 +41,7 @@ Der erste Schritt besteht darin, eine Verbindung mit dem Security #a0 Compliance
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `ConnectSCC.ps1`. 
     
-      ```
+      ```powershell
       # Get login credentials 
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -51,10 +53,10 @@ Der erste Schritt besteht darin, eine Verbindung mit dem Security #a0 Compliance
     
 3. Ausführen des Skripts; Zum Beispiel:
 
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-   
+
 4. Wenn Sie zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden, geben Sie Ihre e-Mail-Adresse und Ihr Kennwort ein, und klicken Sie auf **OK**. 
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Schritt 2: Ausführen des Skripts zum Melden von Haltestatus für eDiscovery-Fälle
@@ -63,7 +65,7 @@ Nachdem Sie sich mit Security #a0 Compliance Center PowerShell verbunden haben, 
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: CaseHoldsReport. ps1. 
     
-  ```
+  ```powershell
 #script begin
 " " 
 write-host "***********************************************"
@@ -155,7 +157,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
 3. Ausführen des Skripts; Zum Beispiel:
 
-    ```
+    ```powershell
     .\CaseHoldsReport.ps1
     ```
 

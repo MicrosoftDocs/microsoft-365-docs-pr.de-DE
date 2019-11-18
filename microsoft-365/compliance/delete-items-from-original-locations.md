@@ -1,5 +1,5 @@
 ---
-title: Elemente aus dem ursprünglichen Speicherort löschen
+title: Löschen von Elementen am ursprünglichen Speicherort
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 'In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für neue Daten Untersuchungen (Vorschau) im Security #a0 Compliance Center Elemente aus ihren ursprünglichen Speicherorten löschen.'
-ms.openlocfilehash: d855a8e4c69d64cdb37c40b37b042c2571af67a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070632"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38686205"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Löschen von Elementen aus dem ursprünglichen Speicherort (Vorschau)
 
@@ -27,9 +29,9 @@ Das Feature zum Löschen von Elementen aus dem ursprünglichen Speicherort befin
 
 Mithilfe von Daten Untersuchungen können Sie Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer Organisation löschen können. Da Sie Elemente als Beweismaterial gesammelt haben, haben Sie Kopien der Elemente, die im Beweissatz aufbewahrt werden, zur weiteren Untersuchung oder als Referenz aufzubewahren.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-- Um Elemente zu löschen, müssen Sie die **Such-und Lösch** Rolle im Security #a0 Compliance Center zugewiesen haben. Diese Rolle wird standardmäßig der integrierten Data Investigator-Rollengruppe zugewiesen. 
+- Um Elemente zu löschen, müssen Sie die **Such-und Lösch** Rolle im Security #a0 Compliance Center zugewiesen haben. Diese Rolle wird standardmäßig der integrierten Data Investigator-Rollengruppe zugewiesen.
 
 - Bei dem Verfahren in diesem Thema wird davon ausgegangen, dass Sie eine mit einer Untersuchung verknüpfte Suche ausgeführt und die Suchergebnisse einem Beweissatz hinzugefügt haben. Nachdem die Suchergebnisse in Evidenz angezeigt wurden, können Sie ein oder mehrere Elemente zum Löschen auswählen. Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md).
 
@@ -41,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um Elemente von Ihrem ursprünglichen Sp
 
 1. Öffnen Sie im Tool **Daten Untersuchungen** die Datenermittlung, die die Elemente enthält, die Sie löschen möchten, und klicken Sie dann auf die Registerkarte **Beweise** .
 
-2. Wählen Sie die Elemente aus, die Sie löschen möchten. Sie können alle Elemente im Beweissatz auswählen oder nur eine Teilmenge der Elemente auswählen. 
+2. Wählen Sie die Elemente aus, die Sie löschen möchten. Sie können alle Elemente im Beweissatz auswählen oder nur eine Teilmenge der Elemente auswählen.
 
    > [!NOTE]
    > Wenn Sie die Anlagen einer e-Mail oder einer an ein Dokument angeschlossenen Datei in SharePoint und OneDrive auswählen, wird das übergeordnete Element ebenfalls ausgewählt und gelöscht, wenn das Element von seinem ursprünglichen Speicherort gelöscht wird. Wenn Sie ein Element mit Anlagen auswählen, wird entsprechend das übergeordnete Element Element und alle Anlagen gelöscht.
@@ -57,11 +59,11 @@ Führen Sie die folgenden Schritte aus, um Elemente von Ihrem ursprünglichen Sp
    > [!NOTE]
    > Im vorherigen Screenshot gibt die Anzahl der Elemente die Anzahl der Elemente an, die zum Löschen ausgewählt wurden. Die Anzahl der Dokumente gibt die Gesamtzahl der Elemente einschließlich aller Dateien an, die an ein übergeordnetes Element angefügt sind. Wenn Sie beispielsweise eine e-Mail-Nachricht auswählen und diese Nachricht ein angefügtes Word-Dokument enthält, würde die Anzahl der Elemente und Dokumente, die unter **Ausgewählte Dokumente** angezeigt werden, nur **1 Elemente sein (2 Dokumente)**.
 
-Sie können den Fortschritt des Auftrags zum **Löschen von Elementen von ursprünglichen Speicherorten** auf der Registerkarte **Aufträge** nachverfolgen. Klicken Sie auf den Auftrag, um die Flyout-Seite anzuzeigen. 
+Sie können den Fortschritt des Auftrags zum **Löschen von Elementen von ursprünglichen Speicherorten** auf der Registerkarte **Aufträge** nachverfolgen. Klicken Sie auf den Auftrag, um die Flyout-Seite anzuzeigen.
 
 ![Flyout-Seite für den Auftrag Elemente aus ursprünglichen Speicherorten löschen](media/DataInvestigationsDeleteItems3.png)
 
-Wenn die Elemente im Auftrag gelöscht werden, wird der Auftragsstatus auf " **erfolgreich**" festgelegt. Die Uhrzeit und das Datum des abgeschlossenen Auftrags werden ebenfalls angezeigt. 
+Wenn die Elemente im Auftrag gelöscht werden, wird der Auftragsstatus auf " **erfolgreich**" festgelegt. Die Uhrzeit und das Datum des abgeschlossenen Auftrags werden ebenfalls angezeigt.
 
 ![Auftrag zum Löschen von Elementen abgeschlossen](media/DataInvestigationsDeleteItems4.png)
 

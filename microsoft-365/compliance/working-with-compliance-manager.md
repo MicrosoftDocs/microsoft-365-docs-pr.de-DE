@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417584"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38686138"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -40,9 +40,11 @@ Um Ihnen den Einstieg zu erleichtern, wird eine ISO/IEC 27001:2103-Bewertung fü
 
 ## <a name="administration"></a>Verwaltung
 
-Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Sobald der Administrator anderen Benutzern Compliance-Manager-Rollen zuweist, können diese Benutzerdaten im Compliance-Manager anzeigen und Aktionen durchführen, die von ihrer Rolle bestimmt werden. Der Administrator kann dem Compliance-Manager auch schreibgeschützten Zugriff erteilen, indem er dem Benutzer die [globale Leserrolle in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)zugewiesen.
+Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Der globale Administrator kann Benutzerberechtigungen zuweisen und automatisch sichere Bewertungs Aktualisierungen für alle Aktionen aktivieren.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Zuweisen von Compliance-Manager-Rollen zu Benutzern
+
+Sobald der Administrator anderen Benutzern Compliance-Manager-Rollen zuweist, können diese Benutzerdaten im Compliance-Manager anzeigen und Aktionen durchführen, die von ihrer Rolle bestimmt werden. Der Administrator kann dem Compliance-Manager auch schreibgeschützten Zugriff erteilen, indem er dem Benutzer die [globale Leserrolle in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)zugewiesen.
 
 Jede Compliance-Manager-Rolle verfügt über geringfügig unterschiedliche Berechtigungen. Sie können die jeder Rolle zugewiesenen Berechtigungen anzeigen, ermitteln, welche Benutzer sich in welchen Rollen befinden, und Benutzer aus dieser Rolle über das Dienst Vertrauensstellungs Portal hinzufügen oder entfernen. Wählen Sie das Menüelement **Admin** aus, und wählen Sie die anzuzeigenden **Einstellungen** aus.
   
@@ -58,7 +60,7 @@ Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
 
 4. Wählen Sie in der Dropdownliste **Rolle auswählen** die Rolle aus, die Sie verwalten möchten.
 
-5. Benutzer, die jeder Rolle hinzugefügt wurden, werden auf der Seite **Rolle auswählen** aufgeführt.
+5. Benutzer, die den einzelnen Rollen hinzugefügt wurden, werden auf der Seite **Rolle auswählen** aufgeführt.
 
 6. Um Benutzer zu dieser Rolle hinzuzufügen, wählen Sie **Hinzufügen**aus. Wählen Sie im Dialogfeld **Benutzer hinzufügen** das Feld Benutzer aus. Sie können in der Liste der verfügbaren Benutzer einen Bildlauf durchführen oder mit der Eingabe des Benutzernamens beginnen, um die Liste basierend auf Ihrem Suchbegriff zu filtern. Wählen Sie den Benutzer aus, der dieses Konto der mit dieser Rolle bereitgestellten Liste **Benutzer** hinzufügen hinzugefügt werden soll. Wenn Sie mehrere Benutzer gleichzeitig hinzufügen möchten, beginnen Sie mit der Eingabe eines Benutzernamens, um die Liste zu filtern, und wählen Sie dann den Benutzer aus, der der Liste hinzugefügt werden soll. Wählen Sie **Speichern** aus, um die ausgewählte Rolle für diese Benutzer festzustellen. 
 
@@ -67,6 +69,18 @@ Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
 7. Wenn Sie Benutzer aus dieser Rolle entfernen möchten, wählen Sie die Benutzer aus, und klicken Sie dann auf **Löschen**.
 
     ![Compliance-Manager – Löschen von Benutzern](media/compliance-manager-delete-users.png)
+
+### <a name="controlling-automatic-secure-score-updates"></a>Steuern automatischer Bewertungen für sichere Gäste
+
+Updates für sichere Bewertungen können für alle Aktionen automatisch aktiviert werden, können für alle Aktionen deaktiviert werden oder können durch einzelne Aktionen festgelegt werden.
+
+1. Melden Sie sich mit ihrem globalen Administratorkonto beim [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com) an.
+
+2. Wählen Sie in der oberen Menüleiste des Dienst Vertrauensstellungs Portals die Option **Administrator** aus, und wählen Sie dann **Einstellungen**aus.
+
+4. Wählen Sie auf der Registerkarte **sichere Punktzahl** die entsprechende Schaltfläche für die gewählte Einstellung aus.
+
+**Hinweis:** Nur der globale Administrator kann automatische Updates für alle Aktionen aktivieren oder deaktivieren. Der Compliance-Manager-Administrator kann automatische Updates für einzelne Aktionen aktivieren, jedoch nicht für alle Aktionen Global.
 
 ## <a name="groups"></a>Gruppen
 
@@ -87,8 +101,8 @@ Beachten Sie beim Arbeiten mit Gruppen Folgendes:
 - Neue Gruppen können Informationen aus einer vorhandenen Gruppe kopieren, wenn Sie eine neue Bewertung erstellen. Alle Informationen, die den Implementierungs Details und Test Plan-und Verwaltungs Antwortfeldern von von Kunden verwalteten Steuerelementen aus Bewertungen in der Gruppe hinzugefügt wurden, von der Sie kopieren, werden in die gleichen (oder verwandten) von Kunden verwalteten Steuerelemente in der neuen Bewertung. Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen aus Bewertungen in dieser Gruppe in die neue Bewertung kopiert.
 - Gruppennamen (auch *Gruppen-IDs*genannt) müssen innerhalb Ihrer Organisation eindeutig sein.
 - Gruppen können Bewertungen für die gleiche Zertifizierung/Regulierung enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Cloud Service/Zertifizierungs Paar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und das NIST-GfK enthalten. Eine Gruppe kann nur dann mehrere Bewertungen für denselben clouddienst enthalten, wenn die entsprechende Zertifizierung/Regulierung für jede einzelne unterschiedlich ist.
-- Nachdem eine Bewertung zu einer Bewertungsgruppe hinzugefügt wurde, kann die Gruppierung nicht mehr geändert werden. Sie können die Bewertungsgruppe umbenennen, die den Namen der Bewertungs Gruppierung für alle dieser Gruppe zugeordneten Bewertungen ändert. Sie können eine Bewertung und eine neue Bewertungsgruppe erstellen und Informationen aus einer vorhandenen Bewertung kopieren, wodurch effektiv ein Duplikat dieser Bewertung in einer anderen Bewertungsgruppe erstellt wird.
-- Durch das Archivieren einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen. Weitere Aktualisierungen anderer verwandter Bewertungen werden nicht mehr in der archivierten Bewertung wiedergegeben.
+- Nachdem eine Bewertung zu einer Bewertungsgruppe hinzugefügt wurde, kann die Gruppierung nicht mehr geändert werden. Sie können die Bewertungsgruppe umbenennen, die den Namen der Bewertungs Gruppierung für alle dieser Gruppe zugeordneten Bewertungen ändert. Sie können eine neue Bewertung und eine neue Bewertungsgruppe erstellen und Informationen aus einer vorhandenen Bewertung kopieren. Auf diese Weise wird effektiv ein Duplikat dieser Bewertung in einer anderen Bewertungsgruppe erstellt.
+- Durch das Archivieren einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen. Alle weiteren Updates zu anderen verwandten Bewertungen werden in der archivierten Bewertung nicht mehr berücksichtigt.
 
 ## <a name="tenant-management"></a>Mandantenverwaltung
 
@@ -103,6 +117,9 @@ Wählen Sie **Mandantenverwaltung** aus, um die Verwaltungsschnittstelle zu öff
 ### <a name="dimensions"></a>Maße
 
 Dimensionen sind Satz von Metadaten, die Informationen zu einer Vorlage, einer Bewertung oder einem Aktionselement bereitstellen. Dimensionen verwenden das Konzept von Schlüsseln und Werten, wobei der Dimensionsschlüssel eine Eigenschaft darstellt, und Dimensionswert gültige Werte für die Eigenschaft darstellt. Beispielsweise gibt es im Compliance-Manager drei Arten von Aktionen. Sie werden durch einen Dimensionsschlüssel des **Aktionstyps** und der Dimensionswerte der Dokumentation, der **Betriebs**-und der **technischen** **Beschreibung**definiert. Sie können vorhandene Dimensionen bearbeiten oder löschen.
+
+> [!IMPORTANT]
+> Sie können neue Dimensionen hinzufügen und Sie Vorlagen zuweisen, die Sie bereits importiert haben. Sie können auch neue Bemaßungen zu allen neuen Vorlagen hinzufügen, die Sie erstellen.
 
 ### <a name="owners"></a>Besitzer
 
@@ -154,11 +171,6 @@ Auf einen Blick können Sie den Titel, den Besitzer, die Kategorie, die Erzwingu
 8. Wählen Sie das **X** aus, um das Blatt Beschreibung zu schließen.
 9. Wählen Sie **Speichern** aus, um die Aktion Kunden zu speichern.
 
-#### <a name="edit-a-customer-action"></a>Bearbeiten einer Kunden Aktion
-
-1. Wählen Sie die Auslassungspunkte (...) für die Aktion aus, die Sie ändern möchten, und wählen Sie **Bearbeiten**aus.
-2. Bearbeiten Sie die Aktion wie gewünscht, und wählen Sie **Speichern**aus.
-
 #### <a name="delete-a-customer-action"></a>Löschen einer Kunden Aktion
 
 1. Wählen Sie die Auslassungspunkte (...) für die Aktion aus, die Sie ändern möchten, und wählen Sie **Löschen**aus.
@@ -188,7 +200,7 @@ Auf einen Blick können Sie den Titel, den Besitzer, die Kategorie, die Erzwingu
 - Der Titel der Bewertung.
 - Die Dimensionen der Bewertung, einschließlich Zertifizierung, Umgebung und Produkt, die auf die Bewertung angewendet wurden.
 - Das Datum, an dem es erstellt wurde, und das Datum, an dem es zuletzt geändert wurde.
-- Das Bewertungsergebnis wird als Prozentsatz angezeigt.
+- Das Bewertungsergebnis wird als Prozentsatz angezeigt. Diese Bewertung enthält automatisch Ihre Ergebnisse aus von Microsoft verwalteten Steuerelementen und aus sicherer Bewertung.
 - Fortschrittsindikatoren, die die Anzahl der beurteilten von Microsoft verwalteten und vom Kunden verwalteten Steuerelemente anzeigen.
 
 ### <a name="copying-information-from-existing-assessments"></a>Kopieren von Informationen aus vorhandenen Bewertungen
@@ -215,9 +227,7 @@ Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus
 
 3. Wählen Sie **Speichern** aus, um die Bewertung zu erstellen.
 
-### <a name="viewing-assessments"></a>Anzeigen von Bewertungen
-
-#### <a name="view-an-assessment"></a>Anzeigen einer Bewertung
+### <a name="view-an-assessment"></a>Anzeigen einer Bewertung
   
 1. Wählen Sie im Dashboard Assessments den Bewertungs Namen aus, um ihn zu öffnen, und zeigen Sie die Informationen zu Aktionselementen und Steuerelementen an.
 
@@ -282,40 +292,39 @@ Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihr
 
 Der Bewertungsbericht wird als Excel-Datei in ihrer Browsersitzung heruntergeladen. Der Name der Datei für die Excel-Datei ist standardmäßig der Titel der Bewertung.
 
-### <a name="archive-a-template-or-an-assessment"></a>Archivieren einer Vorlage oder eines Assessments
+### <a name="hide-a-template-or-an-assessment"></a>Ausblenden einer Vorlage oder einer Bewertung
 
-Wenn Sie mit einer Vorlage oder Bewertung fertig sind und diese nicht mehr für Compliance-Zwecke benötigen, können Sie Sie archivieren. Wenn eine Vorlage oder Bewertung archiviert wird, wird Sie aus der Standardansicht entfernt, und Sie müssen das Kontrollkästchen archiviert anzeigen aktivieren, um Sie anzuzeigen.
+Wenn Sie mit einer Vorlage oder Bewertung fertig sind und Sie nicht mehr für Compliance-Zwecke benötigen, können Sie Sie aus ihrer Ansicht ausblenden. Wenn eine Vorlage oder Bewertung ausgeblendet ist, wird Sie aus der Standardansicht entfernt, und Sie müssen das Kontrollkästchen **ausgeblendet einschließen** aktivieren, um es anzuzeigen.
 
-![Compliance-Manager-Microsoft-Aktionsansicht](media/compliance-manager-archive-assessment-view.png)
-  
+![Ansicht "verdeckte Vorlagen für Compliance-Manager"](media/compliance-manager-hidden-template.png "Verdeckte Vorlage für Compliance-Manager")
+
 > [!IMPORTANT]
-> Archivierte Bewertungen behalten Ihre Links zu hochgeladenen Beweisdokumenten nicht bei. Es wird dringend empfohlen, dass Sie den Test vor der Archivierung exportieren, um Links zu den Beweisdokumenten im Bericht beizubehalten.
+> Ausgeblendete Bewertungen behalten Ihre Links zu hochgeladenen Beweisdokumenten nicht bei. Es wird dringend empfohlen, dass Sie die Bewertung vor dem ausblenden exportieren, um Links zu den Beweisdokumenten im Bericht beizubehalten.
   
-#### <a name="archive-a-template"></a>Archivieren einer Vorlage
+#### <a name="hiding-a-template"></a>Ausblenden einer Vorlage
 
 1. Öffnen Sie das Dashboard **Vorlagen** .
-2. Suchen Sie nach der zu archivierenden Vorlage, und wählen Sie das Archiv Symbol aus.
-3. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **archivieren**aus.
+2. Suchen Sie die Vorlage, die Sie ausblenden möchten, und wählen Sie auf den Ellipsen in der Zeile **Ausblenden**aus.
+3. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **Ausblenden**aus.
 
-#### <a name="archive-an-assessment"></a>Archivieren einer Bewertung
+#### <a name="hide-an-assessment"></a>Ausblenden einer Bewertung
 
 1. Öffnen Sie das Dashboard **Assessments** .
-2. Wählen Sie die **Gruppe** aus der Dropdownliste aus, die die Bewertung enthält, die Sie archivieren möchten.
-3. Suchen Sie nach der Bewertung, die Sie archivieren möchten, und wählen Sie das Archiv Symbol aus.
-4. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **archivieren**aus.
+2. Wählen Sie die **Gruppe** aus der Dropdownliste aus, die die Bewertung enthält, die Sie ausblenden möchten.
+3. Suchen Sie nach der Bewertung, die Sie ausblenden möchten, und wählen Sie in den Ellipsen die Option **Ausblenden**aus.
+4. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **Ausblenden**aus.
 
-#### <a name="view-archived-assessments"></a>Anzeigen archivierter Bewertungen
+#### <a name="view-hidden-assessments"></a>Ausgeblendete Bewertungen anzeigen
   
-1. Öffnen Sie die Registerkarte **Assessments** Dashboard, und aktivieren Sie das Kontrollkästchen **archiviert anzeigen** .
-2. Die archivierten Bewertungen werden im Abschnitt **Archivierte Bewertungen** angezeigt.
-3. Wählen Sie den zu öffnenden Bewertungs Namen aus, und zeigen Sie die Bewertung an.
+1. Öffnen Sie die Registerkarte **Assessments** Dashboard, und aktivieren Sie das Kontrollkästchen **einschließen ausgeblendet** .
+2. Die ausgeblendeten Bewertungen werden im Abschnitt **Ausgeblendete Bewertungen** angezeigt.
 
-#### <a name="activate-an-archived-assessment"></a>Aktivieren einer archivierten Bewertung
+#### <a name="unhide-an-assessment"></a>Einblenden eines Assessments
 
-1. Klicken Sie auf der Registerkarte **Assessments** auf das Kontrollkästchen **archiviert anzeigen** .
-2. Die archivierten Bewertungen werden im Abschnitt **Archivierte Bewertungen** angezeigt.
-3. Suchen Sie nach der Bewertung, die Sie aktivieren möchten, und wählen Sie das Symbol aktivieren aus.
-4. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **aktivieren**aus.
+1. Aktivieren Sie auf der Registerkarte **Bewertungen** das Kontrollkästchen **ausgeblendet einschließen** .
+2. Die ausgeblendeten Bewertungen werden im Abschnitt **Ausgeblendete Bewertungen** angezeigt.
+3. Suchen Sie den zu unsichtbaren Test, und wählen Sie bei den Ellipsen die Option **Einblenden**aus.
+4. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **Einblenden**aus.
 
 ## <a name="controls-and-actions"></a>Steuerelemente und Aktionen
 
@@ -416,7 +425,7 @@ Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enth
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
-    Zum Beispiel:
+    Beispiel:
 
     ```
     Product::Office 365;;Certification::NIST CSF
@@ -450,7 +459,7 @@ Vorlagen und Bewertungen unterstützen die Verwendung von Abschriften Sprache f�
 - Hyperlinks
 - Fettdruck
 
-Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Zum Beispiel:
+Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Beispiel:
 
 ```
 * Item A
@@ -458,7 +467,7 @@ Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählun
 * Item C
 ```
 
-Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Zum Beispiel:
+Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Beispiel:
    1. Element A
    2. Element B
       1. Unterelement A
@@ -469,7 +478,7 @@ Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei L
       2. Unterelement B
    5. Element E
 
-Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Zum Beispiel:
+Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Beispiel:
 
 ```
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
@@ -477,7 +486,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 Dieser Text wird wie folgt gerendert: Klicken Sie [hier](https://www.microsoft.com) , um zur Startseite von Microsoft zu gelangen.
 Wie im obigen Beispiel dargestellt, rendert Compliance Manager keine URLs mit Unterstreichung.
 
-Fett formatierter Text ist nur zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Zum Beispiel:
+Fett formatierter Text ist nur zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Beispiel:
 
 ```
 **This text will render in bold**
@@ -507,6 +516,9 @@ Sie können eine Vorlage erstellen, indem Sie eine vorhandene Vorlage kopieren o
 7. Die importierte Vorlage wird im Dashboard **Vorlagen** angezeigt und hat den Status **importiert**. Wählen Sie die Ellipsen (...) aus, und wählen Sie **veröffentlichen** aus, um die Vorlage zu veröffentlichen. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **veröffentlichen**aus. Der Vorlagenstatus wird in **Ausstehende Genehmigung**geändert.
 8. Ein anderer Benutzer mit der Rolle Compliance-Manager-Administrator muss die Vorlage im Dashboard Vorlagen genehmigen. Sie müssen die Ellipsen (...) auswählen und **genehmigen**auswählen. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **genehmigen**aus. Die Vorlage kann nun verwendet werden.
 
+> [!IMPORTANT]
+> Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
+
 ### <a name="customize-a-template"></a>Anpassen einer Vorlage
 
 Vorlagen können mithilfe der zusätzlichen benutzerdefinierten Steuerelemente angepasst werden. Alle benutzerdefinierten Steuerelemente werden als vom Kunden verwaltete Steuerelemente betrachtet.
@@ -531,6 +543,9 @@ Vorlagen können mithilfe der zusätzlichen benutzerdefinierten Steuerelemente a
 12. Wenn alle anwendbaren Aktionen ausgewählt wurden, wählen Sie **zuweisen**aus.
 13. Wählen Sie **Speichern** aus, um das neue Steuerelement zu speichern.
 
+> [!NOTE]
+> Alle an einer Vorlage vorgenommenen Änderungen werden nicht in vorhandenen Bewertungen wiedergegeben. Vorlagen Aktualisierungen müssen zuerst vorgenommen und dann auf eine neue Bewertung angewendet werden, damit die Änderungen angezeigt werden.
+
 ### <a name="export-a-template-to-json"></a>Exportieren einer Vorlage in JSON
 
 Compliance-Manager (Preview) unterstützt auch das Exportieren von Vorlagen in JavaScript Object Notation (JSON) Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
@@ -553,7 +568,7 @@ In der folgenden Tabelle werden die einzelnen Compliance-Manager-Berechtigungen 
 
 ||**Azure AD globaler Leser**|**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Daten lesen:** Benutzer können Daten lesen, aber nicht bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> | X | X | X | X | X  | X  |X |
+|**Daten lesen:** Benutzer können Daten lesen, aber nicht bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> | X | X | X | X | X  | X |
 |**Bearbeiten von Daten:** Benutzer können alle Felder mit Ausnahme der Felder Testergebnis und Test Datum bearbeiten (außer für Vorlagendaten und Mandantenverwaltung).  <br> ||| X | X  | X | X |
 |**Bearbeiten von Testergebnissen:** Benutzer können die Felder Testergebnis und Test Datum bearbeiten.  <br> |||| X | X | X |
 |**Verwalten von Bewertungen:** Benutzer können Bewertungen erstellen, archivieren und löschen.  <br> ||||| X | X |

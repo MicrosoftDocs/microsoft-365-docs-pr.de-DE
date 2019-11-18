@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie, wie Exchange Online und Office 365 TLS (Transport Layer Security) und das Weiterleitungs Geheimnis (FS) verwenden, um die e-Mail-Kommunikation zu sichern. Erhalten Sie auch Informationen über das von Microsoft ausgestellte Zertifikat für Exchange Online.
-ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081449"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686081"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert
 
@@ -63,7 +63,7 @@ Die von Exchange Online verwendeten Zertifikatinformationen werden in der folgen
 |:-----|:-----|
 |Aussteller des Stammzertifikats der Zertifizierungsstelle  <br/> |GlobalSign-Stammzertifizierungsstelle – R1 <br/> |
 |Name des Zertifikats  <br/> |mail.protection.outlook.com  <br/> |
-|Organisation  <br/> |Microsoft Corporation  <br/> |
+|Organization (Organisation)  <br/> |Microsoft Corporation  <br/> |
 |Organisationseinheit  <br/> |  <br/> |
 |Schlüsselstärke des Zertifikats  <br/> |2048  <br/> |
    
@@ -77,7 +77,7 @@ Um einen reibungslosen Übergang sicherzustellen, werden wir weiterhin die alten
 |:-----|:-----|
 |Aussteller des Stammzertifikats der Zertifizierungsstelle  <br/> |Baltimore CyberTrust Root  <br/> |
 |Name des Zertifikats  <br/> |mail.protection.outlook.com  <br/> |
-|Organisation  <br/> |Microsoft Corporation  <br/> |
+|Organization (Organisation)  <br/> |Microsoft Corporation  <br/> |
 |Organisationseinheit  <br/> |Microsoft Corporation  <br/> |
 |Schlüsselstärke des Zertifikats  <br/> |2048  <br/> |
    
@@ -88,7 +88,7 @@ Das neue Zertifikat wird von einer anderen Zertifizierungsstelle aus dem vorheri
 Das neue Zertifikat erfordert eine Verbindung mit den Endpunkten der neuen Zertifizierungsstelle als Teil der Überprüfung des Zertifikats. Wenn Sie dies nicht tun, kann dies dazu führen, dass der Nachrichtenfluss negativ beeinflusst wird. Wenn Sie Ihre e-Mail-Server mit Firewalls schützen, die nur die Verbindung von e-Mail-Servern mit bestimmten Zielen zulassen, müssen Sie überprüfen, ob Ihr Server das neue Zertifikat überprüfen kann. Führen Sie die folgenden Schritte aus, um zu bestätigen, dass Ihr Server das neue Zertifikat verwenden kann:
 
 1. Stellen Sie über Windows PowerShell eine Verbindung mit Ihrem lokalen Exchange Server her, und führen Sie dann den folgenden Befehl aus:  
-  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. Wählen Sie im angezeigten Fenster die Option **Abrufen**aus.
 3. Wenn das Dienstprogramm seine Prüfung abgeschlossen hat, wird ein Status zurückgegeben. Wenn der Status **"OK"** angezeigt wird, kann Ihr e-Mail-Server das neue Zertifikat erfolgreich überprüfen. Wenn dies nicht der Fall ist, müssen Sie ermitteln, was dazu führt, dass die Verbindungen fehlschlagen. Höchstwahrscheinlich müssen Sie die Einstellungen einer Firewall aktualisieren. Die vollständige Liste der Endpunkte, auf die zugegriffen werden muss, umfasst Folgendes:
     - ocsp.globalsign.com

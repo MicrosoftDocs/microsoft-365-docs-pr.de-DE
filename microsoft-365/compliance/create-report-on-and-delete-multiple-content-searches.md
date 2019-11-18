@@ -7,24 +7,26 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 'Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security #a0 Compliance Center in Office 365.'
-ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080869"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686267"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
  Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie sich mit den zugrunde liegenden Daten und dem Umfang und der Qualität Ihrer Suche vertraut machen möchten. Dazu bietet die Security #a0 Compliance Center PowerShell eine Reihe von Cmdlets zum Automatisieren zeitaufwändiger Inhalts Suchaufgaben. Diese Skripts bieten eine schnelle und einfache Möglichkeit zum Erstellen einer Reihe von Suchvorgängen und führen dann Berichte der geschätzten Suchergebnisse aus, mit denen Sie die Menge der fraglichen Daten bestimmen können. Sie können die Skripts auch verwenden, um verschiedene Versionen von Suchvorgängen zu erstellen, um die Ergebnisse zu vergleichen, die von jedem erstellt werden. Diese Skripts können Ihnen dabei helfen, Ihre Daten schnell und effizient zu identifizieren und zu pflücken. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security #a0 Compliance Center sein, um die in diesem Thema beschriebenen Skripts auszuführen. 
     
@@ -42,7 +44,7 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
   
 1. Kopieren Sie den folgenden Text, und fügen Sie ihn mit Notepad in eine txt-Datei ein. Speichern Sie diese Datei in einem Ordner auf Ihrem lokalen Computer. Sie speichern die anderen Skripts ebenfalls in diesem Ordner.
     
-    ```
+    ```text
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2000,12/31/2005
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2006,12/31/2010
@@ -72,7 +74,7 @@ Im nächsten Schritt stellen Sie eine Verbindung mit der Security #a0 Compliance
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `ConnectSCC.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die CSV-Datei in Schritt 1 gespeichert haben.
     
-    ```
+    ```powershell
     # Get login credentials 
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -82,15 +84,15 @@ Im nächsten Schritt stellen Sie eine Verbindung mit der Security #a0 Compliance
 
 2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, wechseln Sie zu dem Ordner, in dem sich das Skript befindet, das Sie im vorherigen Schritt erstellt haben, und führen Sie dann das Skript aus. Zum Beispiel:
     
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-  
+
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Schritt 3: Ausführen des Skripts zum Erstellen und Starten der Suche
 
 Mit dem Skript in diesem Schritt wird eine separate Inhaltssuche für jede Zeile in der CSV-Datei erstellt, die Sie in Schritt 1 erstellt haben. Wenn Sie dieses Skript ausführen, werden Sie aufgefordert, zwei Werte einzugeben:
   
-- **Suchgruppen-ID** – dieser Name bietet eine einfache Möglichkeit zum Organisieren der aus der CSV-Datei erstellten Suchvorgänge. Jede erstellte Suche wird mit der Suchgruppen-ID benannt, und dann wird dem Suchnamen eine Zahl angefügt. Wenn Sie beispielsweise **ContosoCase** für die Suchgruppen-ID eingeben, werden die Suchvorgänge als **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**usw. bezeichnet. Beachten Sie, dass bei dem von Ihnen eingegebenen Namen Groß-/Kleinschreibung beachtet wird. Wenn Sie in Schritt 4 und Schritt 5 die Suchgruppen-ID verwenden, müssen Sie den gleichen Fall wie beim Erstellen verwenden. 
+- **Suchgruppen-ID** – dieser Name bietet eine einfache Möglichkeit zum Organisieren der aus der CSV-Datei erstellten Suchvorgänge. Jede erstellte Suche wird mit der Suchgruppen-ID benannt, und dann wird dem Suchnamen eine Zahl angefügt. Wenn Sie beispielsweise **ContosoCase** für die Suchgruppen-ID eingeben, werden die Suchvorgänge **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**usw. benannt. Beachten Sie, dass bei dem von Ihnen eingegebenen Namen Groß-/Kleinschreibung beachtet wird. Wenn Sie in Schritt 4 und Schritt 5 die Suchgruppen-ID verwenden, müssen Sie den gleichen Fall wie beim Erstellen verwenden. 
     
 - **CSV-Datei** : der Name der CSV-Datei, die Sie in Schritt 1 erstellt haben. Achten Sie darauf, dass Sie den vollständigen Dateinamen verwenden, einschließlich der CSV-Dateierweiterung; Beispiel: `ContosoCase.csv`.
     

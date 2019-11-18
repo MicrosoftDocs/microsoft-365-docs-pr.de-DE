@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081112"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686122"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten in Office 365 (Vorschau)
 
@@ -23,7 +23,7 @@ Das Sample Connector-Feature zum Archivieren von Facebook-Daten in Office 365 be
 
 Verwenden Sie einen Beispiel-Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus Facebook-Geschäfts Seiten in Office 365 zu importieren und zu archivieren. Nachdem Sie einen Sample Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
 
-Nachdem die Facebook-Daten importiert wurden, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Überwachung und Office 365 Aufbewahrungsrichtlinien auf Facebook-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Facebook-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Facebook-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von Facebook-Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
+Nachdem Sie die Facebook-Daten importiert haben, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, [Kommunikations Konformität](communication-compliance.md)und Office 365-Aufbewahrungsrichtlinien auf die Facebook-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Facebook-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Facebook-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von Facebook-Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
 > [!NOTE]
 > Zu diesem Zeitpunkt stehen nur die Beispiel-Konnektoren für Facebook-Geschäfts Seiten und [Twitter](archive-twitter-data-with-sample-connector.md) für die Vorschau zur Verfügung. Weitere Beispiel-Konnektoren werden in Kürze verfügbar sein.
@@ -85,9 +85,9 @@ Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen einer neuen weba
 
 Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anleitungen befolgen) geben Sie beim Erstellen der Webanwendungs Ressource die folgenden Informationen (die Sie nach Abschluss der vorherigen Schritte in eine Textdatei kopiert haben) an.
 
-- APISecretKey – Sie erstellen diesen Schlüssel während des Abschlusses dieses Schritts; Sie wird in Schritt 7 verwendet.
-- StorageAccountConnectionString – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
-- Mandantenkennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
+- APISecretKey: Sie erstellen diesen Schlüssel während des Abschlusses dieses Schritts; Sie wird in Schritt 7 verwendet.
+- StorageAccountConnectionString: der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
+- Mandantenkennung: die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
 
 Darüber hinaus laden Sie die SampleConnector. zip-Datei (die Sie in Schritt 1 heruntergeladen haben) in diesem Schritt hoch, um den Quellcode für die Facebook-Connector-App bereitzustellen.
 
@@ -118,7 +118,7 @@ Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführe
 - Überprüfen des Tokens in Facebook-webhooks (in Schritt 5 erhalten)
 - Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 2 abgerufen wurde)
 - Azure Active Directory Application Secret (der in Schritt 2 abgerufene Aad-Anwendungsschlüssel)
-- Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweisehttps://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweise`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center
 

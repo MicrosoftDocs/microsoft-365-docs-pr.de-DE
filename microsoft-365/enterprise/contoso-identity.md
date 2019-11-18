@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
-ms.openlocfilehash: a61ce89c3d0069edffccc12a6ed2a4c578e6968a
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: dc893fb1e632cf15a612ebf13e911173933d9af3
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370252"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673211"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
-
-**Zusammenfassung:** Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
 
 Microsoft bietet eine IDaaS (Identity as a Service, Identität als Dienst) in seinen Cloudangeboten mit Azure Active Directory (Azure AD). Um Microsoft 365 Enterprise einzuführen, musste für die IDaaS-Lösung von Contoso dessen lokaler Identitätsanbieter genutzt und weiterhin Verbundauthentifizierung mit den vorhandenen vertrauenswürdigen Drittanbieter-Identitätsanbietern einbezogen werden.
 
@@ -77,7 +75,7 @@ Hier sehen Sie die resultierenden identitäts- und gerätebasierten Richtlinien 
  
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-win10.md), wie Contoso seine System Center Configuration Manager-Infrastruktur verwendet, um Windows 10 Enterprise über die Organisation hinweg bereitzustellen und auf dem neuesten Stand zu halten.
+[Erfahren Sie](contoso-win10.md), wie Contoso seine Microsoft Endpoint Configuration Manager-Infrastruktur verwendet, um das aktuelle Windows 10 Enterprise im gesamten Unternehmen bereitzustellen.
 
 ## <a name="see-also"></a>Siehe auch
 

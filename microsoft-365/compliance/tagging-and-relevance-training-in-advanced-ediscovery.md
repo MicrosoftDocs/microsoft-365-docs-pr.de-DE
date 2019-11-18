@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 569fdfd6e5369459d55bb3ecfa2ebc32f0a10005
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78c8446a30868b2c01f6831630cadc21916e6476
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081890"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686314"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Tagging und Relevanz Training in Office 365 Advanced eDiscovery
 
@@ -37,15 +37,14 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
   
     Auf der Registerkarte **Tag** wird der Anzeigename der Datei angezeigt. Hierbei kann es sich um den Pfad, den e-Mail-Betreff, den Titel oder den benutzerdefinierten Namen handeln. Die ID, der Dateipfad oder der Textpfad können kopiert werden, indem Sie mit der rechten Maustaste auf den Pfad der Datei klicken. 
     
-    Die Kennzeichnung der **Tags** -Registerkarten Statistik zeigt die Datei Beispiel Nummer (oben im linken Bereich), die Nummer der aktuell angezeigten Datei aus den Gesamtdateien im Beispiel (unten im rechten Bereich) und die aktuelle Gesamtzahl der getaggten Dateien im Beispiel (unten in t Er hat den linken Bereich), der beim Markieren von Dateien geändert wird. Dies gilt für alle durchgeführten Relevanz-Markierungen, sei es bei der Bewertung, Schulung, Aufholjagd oder Test. 
+    Die Kennzeichnung der **Tags** -Registerkarten Statistik zeigt die Datei Beispiel Nummer (oben im linken Bereich), die Nummer der aktuell angezeigten Datei aus den Gesamtdateien im Beispiel (unten im rechten Bereich) und die aktuelle Gesamtzahl der getaggten Dateien im Beispiel (unten im linken Bereich) an, die sich beim Markieren von Dateien ändert. Dies gilt für alle durchgeführten Relevanz-Markierungen, sei es bei der Bewertung, Schulung, Aufholjagd oder Test. 
     
     Symbole, die das vorhanden sein von Kommentaren, Tags und Familiendateien angeben, werden in der Datei Ansicht in einer Leiste oberhalb der Datei angezeigt.
     
 2. Ermitteln Sie die Relevanz der Datei für das Fall Problem, und markieren Sie die Datei mit den Symbolschaltflächen für die Markierungsoption oder mit den Tastenkombinationen, wie in der folgenden Tabelle dargestellt:
-    
-| |
+
 |**Tagging-Option**|**Beschreibung**|**Tastenkombination**|**Für mehrere Probleme – Tastenkombination für Massen Tags**|
-|:-----|:-----|:-----|:-----|
+|-----|-----|-----|-----|
 |R  <br/> |Relevanten  <br/> |Z  <br/> |UMSCHALT + Z  <br/> |
 |Nr  <br/> |Nicht relevant  <br/> |X  <br/> |UMSCHALT + X  <br/> |
 |Überspringen  <br/> |Überspringen  <br/> |C  <br/> |UMSCHALT + A  <br/> |

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector einrichten, um Twitter-Daten in Office 365 zu importieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 6780e3fbb53e2326994e03815403c1e5ae0d0616
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf738f67778dbe435e60098b9fc6d753583858a8
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081106"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686121"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Twitter-Daten in Office 365 (Vorschau)
 
@@ -23,7 +23,7 @@ Das Feature "Sample Connector" zum Archivieren von Twitter-Daten in Office 365 b
 
 Verwenden Sie einen Beispiel-Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus Twitter zu importieren und zu archivieren. Nachdem Sie einen Sample Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem Twitter-Konto Ihrer Organisation her (planmäßig), konvertiert den Inhalt eines Elements in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
 
-Nachdem Sie Twitter-Daten importiert haben, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Überwachung und Office 365 Aufbewahrungsrichtlinien auf die im Postfach gespeicherten Daten anwenden. Beispielsweise können Sie Twitter-Daten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Mithilfe von Beispiel-Konnektoren zum Importieren und Archivieren von Twitter-Daten in Office 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
+Nachdem Sie Twitter-Daten importiert haben, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, [Kommunikations Konformität](communication-compliance.md)und Office 365 Aufbewahrungsrichtlinien auf die im Postfach gespeicherten Daten anwenden. Beispielsweise können Sie Twitter-Daten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Mithilfe von Beispiel-Konnektoren zum Importieren und Archivieren von Twitter-Daten in Office 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
 
 > [!NOTE]
 > Derzeit stehen nur die Beispiel-Konnektoren für Twitter-und [Facebook-Geschäfts Seiten](archive-facebook-data-with-sample-connector.md) für die Vorschau zur Verfügung. Weitere Beispiel-Konnektoren werden in Kürze verfügbar sein.
@@ -91,7 +91,7 @@ Während des Abschlusses dieses Schritts (mit den schrittweisen Anweisungen) geb
 
 Sie können auch die SampleConnector. zip-Datei (die Sie in Schritt 1 heruntergeladen haben) in diesem Schritt hochladen, um den Quellcode für die Twitter Connector-App bereitzustellen.
 
-Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Azure-App-Dienst-URL kopieren https://twitterconnector.azurewebsites.net)(beispielsweise. Sie müssen dies verwenden, um Schritt 5, Schritt 6 und Schritt 7 abzuschließen.
+Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Azure-App-Dienst-URL kopieren `https://twitterconnector.azurewebsites.net`(beispielsweise). Sie müssen dies verwenden, um Schritt 5, Schritt 6 und Schritt 7 abzuschließen.
 
 ## <a name="step-5-create-developer-app-on-twitter"></a>Schritt 5: Erstellen der Entwickler-App auf Twitter
 
@@ -120,7 +120,7 @@ Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anweisunge
 - Twitter-Zugriffs Token Secret (in Schritt 5 erhalten)
 - Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 2 abgerufen wurde)
 - Azure Active Directory Application Secret (der in Schritt 2 abgerufene Aad-Anwendungsschlüssel)
-- Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweisehttps://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweise`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center
 
@@ -130,5 +130,5 @@ Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 7: Einrichten eine
 
 Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anweisungen befolgen) geben Sie die folgenden Informationen an (die Sie nach Abschluss der Schritte in eine Textdatei kopiert haben).
 
-- Azure-App-Dienst-URL (abgerufen in Schritt 4; Beispiel:https://twitterconnector.azurewebsites.net)
+- Azure-App-Dienst-URL (abgerufen in Schritt 4; `https://twitterconnector.azurewebsites.net`zum Beispiel)
 - APISecretKey (das Sie in Schritt 4 erstellt haben)

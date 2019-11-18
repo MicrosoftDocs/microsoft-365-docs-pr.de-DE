@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können das Office 365 Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie das Untersuchen eines kompromittierten Kontos zu beheben, herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat, oder zu ermitteln, warum ein externer Benutzer sich erfolgreich bei Ihrem anmelden konnte. Organisation.
-ms.openlocfilehash: 255fd323ca08dd4ea759648fbe0673f5e5254c22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081096"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686217"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Durchsuchen des Office 365 Überwachungsprotokolls zur Problembehandlung bei allgemeinen Szenarien
+# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Office 365 Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
 
-In diesem Artikel wird beschrieben, wie Sie mithilfe des Office 365 Überwachungsprotokoll-Such Tools häufige Support Szenarien beheben können. Dies umfasst die Verwendung des Überwachungsprotokolls für Folgendes:
+In diesem Artikel wird beschrieben, wie Sie mithilfe des Office 365 Überwachungsprotokoll-Such Tools häufige Supportprobleme untersuchen können. Dies umfasst die Verwendung des Überwachungsprotokolls für Folgendes:
 
 - Suchen der IP-Adresse des Computers, der für den Zugriff auf ein kompromittiertes Konto verwendet wurde
 - Bestimmen, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat
@@ -114,13 +114,13 @@ a. Im Feld **objectID** wird der Alias des Postfachs, auf dem die e-Mail-Weiterl
 
 b. Im Feld **Parameter** gibt der Wert *ForwardingSmtpAddress* an, dass die e-Mail-Weiterleitung für das Postfach festgelegt wurde. In diesem Beispiel wird e-Mail an die e-Mail-Adresse Mike@contoso.com weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com-Organisation befindet.
 
-c. Der Wert *true* für den Parameter *DeliverToMailboxAndForward* gibt an, dass eine Kopie der an Sarad@alpinehouse.onmicrosoft.com zugestellten Nachricht an die von der ForwardingSmtpAddress angegebene e- *Mail-Adresse* weitergeleitet wird. * *-Parameter, der in diesem Beispiel Mike@contoso.com ist. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false*festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das im Feld **objectID** angegebene Postfach übermittelt.
+c. Der Wert *true* für den Parameter *DeliverToMailboxAndForward* gibt an, dass eine Kopie der an Sarad@alpinehouse.onmicrosoft.com zugestellten Nachricht an die e-Mail-Adresse weitergeleitet wird, die im *ForwardingSmtpAddress* -Parameter *angegeben ist,* was in diesem Beispiel Mike@contoso.com ist. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false*festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das im Feld **objectID** angegebene Postfach übermittelt.
 
 d. Das **UserID** -Feld gibt den Benutzer an, der die e-Mail-Weiterleitung für das im Feld **objectID** angegebene Postfach festgelegt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt. In diesem Fall scheint es, dass der Besitzer des Postfachs die e-Mail-Weiterleitung für Ihr Postfach festgelegt hat.
 
 Wenn Sie feststellen, dass die e-Mail-Weiterleitung nicht für das Postfach festgelegt werden sollte, können Sie Sie entfernen, indem Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
@@ -221,7 +221,7 @@ Weitere Informationen zu den anderen Eigenschaften, die in einem UserLoggedIn-Ü
 
 Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Through-Authentifizierung dazu führen, dass ein erfolgreicher **Benutzer in** der Überwachungsaktivität angemeldet ist: 
 
-  - Ein Benutzer mit einem Microsoft-Konto (beispielsweise SaraD@Outlook.com) hat versucht, auf ein Dokument in einem OneDrive für Unternehmen-Konto in fourthcoffee.onmicrosoft.com zuzugreifen, und ist kein entsprechendes Gastbenutzerkonto für SaraD@Outlook.com in fourthcoffee.onmicrosoft.com.
+  - Ein Benutzer mit einem Microsoft-Konto (beispielsweise SaraD@Outlook.com) hat versucht, auf ein Dokument in einem OneDrive für Unternehmen-Konto in fourthcoffee.onmicrosoft.com zuzugreifen, und es handelt sich nicht um ein entsprechendes Gastbenutzerkonto für SaraD@Outlook.com in fourthcoffee.onmicrosoft.com.
 
   - Ein Benutzer mit einem Arbeits-oder Schulkonto in einer Office 365 Organisation (beispielsweise pilarp@fabrikam.onmicrosoft.com) hat versucht, auf eine SharePoint-Website in contoso.onmicrosoft.com zuzugreifen, und ist kein entsprechendes Gastbenutzerkonto für pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
@@ -232,7 +232,7 @@ Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Thr
 
    ![Suchen nach allen Aktivitäten, die vom externen Benutzer ausgeführt werden](media/PassThroughAuth2.png)
 
-    Zusätzlich zu den **in Aktivitäten angemeldeten Benutzern** werden möglicherweise andere Überwachungseinträge zurückgegeben, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen mit dem externen Benutzer freigegeben hat und ob der externe Benutzer ein Dokument, auf das zugegriffen, geändert oder heruntergeladen wurde, wurde für Sie freigegeben.
+    Zusätzlich zu den **in Aktivitäten angemeldeten Benutzern** werden möglicherweise andere Überwachungseinträge zurückgegeben, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen mit dem externen Benutzer freigegeben hat und ob der externe Benutzer ein Dokument, das für ihn freigegeben wurde, aufgerufen, geändert oder heruntergeladen hat.
 
 - Suchen Sie nach SharePoint-freigabeaktivitäten, die darauf hindeuten, dass eine Datei für den externen Benutzer freigegeben wurde, der von einem im Überwachungsdatensatz **angemeldeten Benutzer** identifiziert wurde. Weitere Informationen finden Sie unter [Use Sharing Auditing in the Office 365 Audit Log](use-sharing-auditing.md).
 

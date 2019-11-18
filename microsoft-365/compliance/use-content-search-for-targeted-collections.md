@@ -7,17 +7,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 'Verwenden Sie die Inhaltssuche im Security #a0 Compliance Center, um gezielte Sammlungen durchzuführen. Eine gezielte Sammlung bedeutet, dass Sie sicher sind, dass Elemente, die auf einen Fall reagieren, oder privilegierte Elemente sich in einem bestimmten Postfach oder Standortordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für das jeweilige Postfach oder die Websiteordner zu erhalten, die Sie durchsuchen möchten.'
-ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081851"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686277"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden der Inhaltssuche in Office 365 für gezielte Auflistungen
 
@@ -26,7 +28,7 @@ Das Feature "Inhaltssuche" im Office 365 &amp; Security Compliance Center bietet
 > [!NOTE]
 > Um Inhalte zurückzugeben, die sich in einem Ordner auf einer SharePoint-oder OneDrive für Unternehmen-Website befinden, verwendet das Skript in diesem Thema die verwaltete Eigenschaft DocumentLink anstelle der Path-Eigenschaft. Die DocumentLink-Eigenschaft ist robuster als die Path-Eigenschaft, da Sie alle Inhalte in einem Ordner zurückgibt, während die Path-Eigenschaft einige Mediendateien zurückgibt.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security &amp; Compliance Center sein, um das Skript in Schritt 1 auszuführen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
@@ -34,7 +36,7 @@ Das Feature "Inhaltssuche" im Office 365 &amp; Security Compliance Center bietet
     
 - Jedes Mal, wenn Sie das Skript in Schritt 1 ausführen, wird eine neue Remote-PowerShell-Sitzung erstellt. Sie können also alle Remote-PowerShell-Sitzungen nutzen, die Ihnen zur Verfügung stehen. Um dies zu verhindern, können Sie den folgenden Befehl ausführen, um die Verbindung der aktiven Remote-PowerShell-Sitzungen zu trennen.
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
@@ -62,7 +64,7 @@ So zeigen Sie eine Liste der Postfachordner oder Website documentlink (path) Nam
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `GetFolderSearchParameters.ps1`.
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
@@ -177,7 +179,7 @@ So zeigen Sie eine Liste der Postfachordner oder Website documentlink (path) Nam
     
 3. Ausführen des Skripts; Zum Beispiel:
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -203,7 +205,7 @@ Das Beispiel in Schritt 2 zeigt die Abfrage, die zum Durchsuchen des Ordners "pu
   
 ### <a name="script-output-for-site-folders"></a>Skriptausgabe für Websiteordner
 
-Wenn Sie den Pfad der **documentlink** -Eigenschaft von SharePoint oder OneDrive für Unternehmen-Websites erhalten, stellt das Skript eine Verbindung mit dem Security #a0 Compliance Center mithilfe der Remote-PowerShell her, erstellt eine neue Inhaltssuche, die die Website nach Ordnern durchsucht, und zeigt dann eine Liste der Ordner an, die sich im angegebenen Standort befinden. Das Skript zeigt den Namen jedes Ordners an und fügt das Präfix **documentlink** der Ordner-URL hinzu. Da es sich bei der **documentlink** -Eigenschaft um eine durchsuchbare `documentlink:<path>` Eigenschaft handelt, verwenden Sie in einer Suchabfrage in Schritt 2 die Eigenschaft: Wert-Paar, um diesen Ordner zu durchsuchen. Das Skript zeigt maximal 200 Websiteordner an. Wenn mehr als 200 Websiteordner vorhanden sind, werden die neuesten angezeigt.
+Wenn Sie den Pfad der **documentlink** -Eigenschaft von SharePoint oder OneDrive für Unternehmen-Websites erhalten, stellt das Skript eine Verbindung mit dem Security #a0 Compliance Center mithilfe von Remote-PowerShell her, erstellt eine neue Inhaltssuche, die die Website nach Ordnern durchsucht, und zeigt dann eine Liste der Ordner an, die sich in der angegebenen Website befinden. Das Skript zeigt den Namen jedes Ordners an und fügt das Präfix **documentlink** der Ordner-URL hinzu. Da es sich bei der **documentlink** -Eigenschaft um eine durchsuchbare `documentlink:<path>` Eigenschaft handelt, verwenden Sie in einer Suchabfrage in Schritt 2 die Eigenschaft: Wert-Paar, um diesen Ordner zu durchsuchen. Das Skript zeigt maximal 200 Websiteordner an. Wenn mehr als 200 Websiteordner vorhanden sind, werden die neuesten angezeigt.
   
 Im folgenden finden Sie ein Beispiel für die vom Skript für Websiteordner zurückgegebene Ausgabe.
   
@@ -245,28 +247,28 @@ Im folgenden finden Sie einige Beispiele für `folderid` die `documentlink` Verw
   
 - In diesem Beispiel werden drei verschiedene Postfachordner durchsucht. Sie können ähnliche Abfragesyntax verwenden, um die ausgeblendeten Ordner im Ordner "refundable Items" eines Benutzers zu durchsuchen.
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - In diesem Beispiel wird ein Postfachordner nach Elementen durchsucht, die einen genauen Ausdruck enthalten.
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - In diesem Beispiel wird ein Websiteordner (und alle Unterordner) nach Dokumenten durchsucht, die die Buchstaben "NDA" im Titel enthalten.
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - In diesem Beispiel wird ein Websiteordner (und ein beliebiger Unterordner) nach Dokumenten durchsucht, die innerhalb eines Datumsbereichs geändert wurden.
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
+
 ## <a name="more-information"></a>Weitere Informationen
 
 Beachten Sie Folgendes, wenn Sie das Skript in diesem Artikel verwenden, um gezielte Sammlungen durchzuführen.

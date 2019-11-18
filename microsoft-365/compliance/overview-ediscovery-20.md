@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird die neue Version von Advanced eDiscovery in Microsoft 365 beschrieben.
-ms.openlocfilehash: e63fe05cf9a2e236247da3c45674b53cc830546d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: abeb4e6b9a465e4f1df857187ef709b5dc2c86b5
+ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082000"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "38686000"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365
 
@@ -35,19 +35,19 @@ Der integrierte Workflow von Advanced eDiscovery richtet sich an den eDiscovery-
 
 Hier erfahren Sie, wie Advanced eDiscovery den EDRM-Workflow auf hohem Niveau unterstützt:
 
-- **Identifikation** – nachdem Sie potenzielle Personen in einer Untersuchung identifiziert haben, können Sie Sie als Verwalter (auch als *Datenverwalter*bezeichnet) hinzufügen, da diese möglicherweise Informationen enthalten, die für die Untersuchung relevant sind. eDiscovery-Fall. Nachdem Benutzer als Verwalter hinzugefügt wurden, ist es ganz einfach, Depot Dokumente aufzubewahren, zu sammeln und zu überprüfen.
+- **Identifizierung.** Nachdem Sie potenzielle interessierte Personen in einer Untersuchung identifiziert haben, können Sie diese als Verwalter hinzufügen (auch als *Datenverwalter*bezeichnet, da Sie möglicherweise für die Untersuchung relevante Informationen besitzen), und zwar in einem erweiterten eDiscovery-Fall. Nachdem Benutzer als Verwalter hinzugefügt wurden, ist es ganz einfach, Depot Dokumente aufzubewahren, zu sammeln und zu überprüfen.
 
-- **Bewahrung** – um Daten, die für eine Untersuchung relevant sind, zu erhalten und zu schützen, können Sie mit Advanced eDiscovery die Datenquellen, die den Depot Betreuern zugeordnet sind, in einem Fall legal halten. Sie können auch Daten für nicht-Freiheitsentzug speichern. Advanced eDiscovery verfügt auch über einen integrierten Kommunikations Workflow, sodass Sie Benachrichtigungen für rechtliche Aufbewahrungen an Verwalter senden und deren Bestätigungen nachverfolgen können.
+- **Erhaltung.** Um Daten beizubehalten und zu schützen, die für eine Untersuchung relevant sind, können Sie mit Advanced eDiscovery eine rechtliche Aufbewahrungspflicht für die mit den Depotbanken verknüpften Datenquellen in einem Fall setzen. Sie können auch Daten für nicht-Freiheitsentzug speichern. Advanced eDiscovery verfügt auch über einen integrierten Kommunikations Workflow, sodass Sie Benachrichtigungen für rechtliche Aufbewahrungen an Verwalter senden und deren Bestätigungen nachverfolgen können.
 
-- **Sammlung** – nachdem Sie die für die Untersuchung relevanten Datenquellen identifiziert (und aufbewahrt) haben, können Sie das integrierte Such Tool in der erweiterten eDiscovery-Suche für und Sammeln von Livedaten aus den Freiheits Datenquellen (und Datenquellen ohne Freiheitsentzug) verwenden. (falls zutreffend), die für den Fall relevant sein können.
+- **Auflistung.** Nachdem Sie die für die Untersuchung relevanten Datenquellen identifiziert (und aufbewahrt) haben, können Sie das integrierte Such Tool in der erweiterten eDiscovery-Suche für und Sammeln von Livedaten aus den Freiheits Datenquellen (und ggf. auch aus Datenquellen ohne Freiheitsentzug) verwenden, die möglicherweise für den Fall relevant.
 
-- **Verarbeitung** – nachdem Sie alle für den Fall relevanten Daten gesammelt haben, ist der nächste Schritt der Prozess für die weitere Überprüfung und Analyse. In Advanced eDiscovery werden die in der Sammlungsphase identifizierten in-Place-Daten in einen Azure-Speicherort (als *Überprüfungs*bezeichnet) kopiert, der eine statische Ansicht der Falldaten bereitstellt. 
+- **Verarbeitung.** Nachdem Sie alle relevanten Daten für den Fall gesammelt haben, ist der nächste Schritt die Verarbeitung zur weiteren Überprüfung und Analyse. In Advanced eDiscovery werden die in der Sammlungsphase identifizierten in-Place-Daten in einen Azure-Speicherort (als *Überprüfungs*bezeichnet) kopiert, der eine statische Ansicht der Falldaten bereitstellt. 
  
-- **Überprüfung** – nachdem Daten zu einem Überprüfungs Satzes hinzugefügt wurden, können Sie bestimmte Dokumente anzeigen und eine andere Abfrage ausführen, um die Daten auf das für den Fall relevanteste zu reduzieren. Außerdem können Sie bestimmte Dokumente mit Anmerkungen versehen und kennzeichnen.
+- **Bewertung.** Nachdem Daten zu einem Überprüfungs Sätze hinzugefügt wurden, können Sie bestimmte Dokumente anzeigen und eine andere Abfrage ausführen, um die Daten auf das für den Fall relevanteste zu reduzieren. Außerdem können Sie bestimmte Dokumente mit Anmerkungen versehen und kennzeichnen.
  
-- **Analyse** – Advanced eDiscovery stellt integriertes Analyse Tool zur Verfügung, mit dem Sie weitere Daten aus dem Überprüfungs ausmerzen können, die Sie für die Untersuchung nicht relevant festlegen. Zusätzlich zur Verringerung der Menge relevanter Daten hilft Ihnen Advance eDiscovery auch beim Speichern von juristischen Überprüfungskosten, indem Sie Inhalte organisieren, um den Überprüfungsprozess zu vereinfachen und effizienter zu gestalten.
+- **Analyse.** Advanced eDiscovery bietet integriertes Analyse Tool, mit dem Sie die Daten aus der Überprüfungsgruppe, die Sie bestimmen, nicht für die Untersuchung relevant sind, weiter ausmerzen können. Zusätzlich zur Verringerung der Menge relevanter Daten hilft Ihnen Advance eDiscovery auch beim Speichern von juristischen Überprüfungskosten, indem Sie Inhalte organisieren, um den Überprüfungsprozess zu vereinfachen und effizienter zu gestalten.
 
-- **Produktion** und **Präsentation** – Wenn Sie dazu in der Lage sind, können Sie Dokumente aus einem Überprüfungs Satzes für die juristische Überprüfung exportieren. Sie können Dokumente in ihrem systemeigenen Format oder in einem von EDRM angegebenen Format exportieren, sodass Sie in Überprüfung-Anwendungen von Drittanbietern importiert werden können.
+- **Produktion** und **Präsentation.** Wenn Sie fertig sind, können Sie Dokumente aus einem Überprüfungs Satzes für die juristische Überprüfung exportieren. Sie können Dokumente in ihrem systemeigenen Format oder in einem von EDRM angegebenen Format exportieren, sodass Sie in Überprüfung-Anwendungen von Drittanbietern importiert werden können.
 
 ## <a name="advanced-ediscovery-workflow"></a>Erweiterter eDiscovery-Workflow
 
@@ -81,12 +81,14 @@ Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge für in-Place-Frei
 
 Auf der Registerkarte **Überprüfungs Sätze** können Sie die Inhalte, die Sie im Live-System gesammelt und einem Überprüfungs Satz hinzugefügt haben, überprüfen und analysieren. Ein *Überprüfungs Satz* ist eine statische Sammlung dieser Daten (mit anderen Worten: eine Offlinekopie von Daten) von Daten für den Freiheitsentzug (und, falls zutreffend, Daten ohne Freiheitsentzug), die Sie in der vorherigen Phase des eDiscovery-Workflows gesammelt haben. Wenn Sie einer Überprüfungsgruppe Suchergebnisse hinzufügen, wird ein Prozess ausgelöst, der Dateien aus Containern extrahiert, Metadaten extrahiert und Text extrahiert. Wenn dieser Vorgang abgeschlossen ist, erstellt das System einen neuen Index aller Daten, die von den Verwaltern gesammelt wurden, und fügt ihn dem Überprüfungs-Datensatz hinzu. Nachdem die Daten dem Überprüfungs Sätzen hinzugefügt wurden, können Sie weitere Abfragen ausführen, um die Falldaten einzuschränken, Daten als Text oder im systemeigenen Dateiformat anzuzeigen und Dokumente in der Überprüfungsgruppe mit Anmerkungen, redact und Tags zu versehen. Sie können auch erweiterte Analysen durchführen, beispielsweise das Identifizieren von Dokument Duplikaten, e-Mail-Threads und Designs. Nachdem Sie die Daten nur auf das, was für den Fall relevant ist, abgeschlachtet haben, können Sie Dokumente entweder direkt herunterladen oder zusammen mit Datei Metadaten, Anmerkungen und Tags exportieren. Weitere Informationen finden Sie unter:
 
-- [Überprüfen von Case-Daten in Advanced eDiscovery](reviewing-data-in-review-set.md)
-- [Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery](analyzing-data-in-review-set.md)
+- [Anzeigen von Dokumenten in einem Prüfdateisatz](view-documents-in-review-set.md)
+- [Abfragen der Daten in einem Prüfdateisatz](review-set-search.md)
+- [Markieren von Dokumenten in einem Prüfdateisatz](tagging-documents.md)
+- [Analysieren von Daten in einem Überprüfungs Satzes](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Exportieren von Daten zur Überprüfung und Präsentation
 
-Nachdem Sie die Daten aus einem Überprüfungs Satzes exportiert haben, verwenden Sie die Registerkarte **Exports** , um einen Exportauftrag zu verwalten und Daten aus einem Überprüfungspaket herunterzuladen. Beim Exportieren eines Überprüfungs Satzes werden die Daten in einen Azure-Speicherort hochgeladen und stehen dann auf einem lokalen Computer heruntergeladen. Sie können den Speicher Bewertungsschlüssel abrufen, der zum Herunterladen der exportierten Daten auf der Registerkarte **Exports** erforderlich ist. Weitere Informationen finden Sie unter [Exportieren von Case-Daten in Advanced eDiscovery](exporting-data-ediscover20.md).
+Nachdem Sie die Daten aus einem Überprüfungs Satzes exportiert haben, verwenden Sie die Registerkarte **Exports** , um einen Exportauftrag zu verwalten und Daten aus einem Überprüfungspaket herunterzuladen. Beim Exportieren eines Überprüfungs Satzes werden die Daten in einen von Microsoft bereitgestellten Azure-Speicherort (oder einen Azure-Speicherort, der von Ihrer Organisation verwaltet wird) hochgeladen. Nachdem es in Azure hochgeladen wurde, ist es dann verfügbar und kann auf einen lokalen Computer heruntergeladen werden. Sie können den Speicher Bewertungsschlüssel abrufen, der zum Herunterladen der exportierten Daten auf der Registerkarte **Exports** erforderlich ist. Weitere Informationen finden Sie unter [Exportieren von Case-Daten in Advanced eDiscovery](exporting-data-ediscover20.md).
 
 ## <a name="managing-jobs"></a>Verwalten der Aufträge
 

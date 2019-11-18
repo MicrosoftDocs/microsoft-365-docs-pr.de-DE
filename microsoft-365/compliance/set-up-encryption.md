@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Bei Office 365 sind einige Verschlüsselungsfunktionen standardmäßig aktiviert. andere Funktionen können so konfiguriert werden, dass bestimmte Compliance-oder gesetzliche Anforderungen erfüllt werden.
-ms.openlocfilehash: 3bb76d70bd364bd461721d6277516801b3675031
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f758bc026ee1ef8b071b92d29c950c3f436305a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081791"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686102"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Einrichten von Verschlüsselung in Office 365 Enterprise
 
@@ -40,4 +40,4 @@ Mit Office 365 stehen standardmäßig mehrere Verschlüsselungsfunktionen zur Ve
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Weitere Informationen zu Dateischutz Lösungen, die Verschlüsselungsoptionen enthalten, finden Sie unter [File Protection Solutions in Office 365](https://www.microsoft.com/en-us/download/details.aspx?id=55523).
+Weitere Informationen zu Dateischutz Lösungen, die Verschlüsselungsoptionen enthalten, finden Sie unter [File Protection Solutions in Office 365](https://www.microsoft.com/download/details.aspx?id=55523).

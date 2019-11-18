@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
-ms.openlocfilehash: 3c350a3648b77992dd8e86ee47498efc327b2af8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081136"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686197"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Anwenden der Verwaltung von Informationsrechten (Information Rights Management, IRM) auf eine Liste oder Bibliothek
 
 Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Der Azure Rights Management Service (Azure RMS) von Azure Information Protection und die lokale Entsprechung, Active Directory Rights Management Services (AD RMS), unterstützen die Verwaltung von Informationsrechten für Websites. Es sind keine separaten oder zusätzlichen Installationen erforderlich.
     
@@ -133,8 +134,7 @@ Die Typen von Einschränkungen, die auf eine Datei angewendet werden, wenn Sie a
 |:-----|:-----|
 |Berechtigungen verwalten, Website verwalten  <br/> |**Vollzugriff** (wie vom Clientprogramm definiert): mit dieser Berechtigung können Benutzerberechtigungen für Inhalte mit verwalteten Rechten in der Regel lesen, bearbeiten, kopieren, speichern und ändern.  <br/> |
 |Bearbeiten von Elementen, Verwalten von Listen, hinzufügen und Anpassen von Seiten  <br/> |**Bearbeiten**, **Kopieren**und **Speichern**: ein Benutzer kann eine Datei nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.  <br/> |
-|
-            Elemente anzeigen  <br/> |**Lesen**: ein Benutzer kann das Dokument lesen, aber seinen Inhalt nicht kopieren oder ändern. Ein Benutzer kann nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.  <br/> |
+|Elemente anzeigen  <br/> |**Lesen**: ein Benutzer kann das Dokument lesen, aber seinen Inhalt nicht kopieren oder ändern. Ein Benutzer kann nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.  <br/> |
 |Andere  <br/> |Keine anderen Berechtigungen entsprechen direkt IRM-Berechtigungen.  <br/> |
    
 Wenn Sie IRM für eine Liste oder Bibliothek in SharePoint Server 2013 aktivieren, können Sie nur Dateitypen in dieser Liste oder Bibliothek schützen, für die ein Schutz auf allen Front-End-Webservern installiert ist. Ein Protector ist ein Programm, das die Verschlüsselung und Entschlüsselung von Dateien mit verwalteten Rechten eines bestimmten Dateiformats steuert. SharePoint umfasst Schutz für die folgenden Dateitypen:

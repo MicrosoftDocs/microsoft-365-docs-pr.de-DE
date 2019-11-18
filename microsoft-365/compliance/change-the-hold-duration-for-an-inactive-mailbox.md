@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Nachdem ein Office 365 Postfach deaktiviert wurde, können Sie die Dauer des Haltestatus oder Office 365 Aufbewahrungsrichtlinie ändern, die dem inaktiven Postfach zugewiesen ist. Die Aufbewahrungsdauer definiert die Aufbewahrungsdauer von Elementen im Ordner „Wiederherstellbare Elemente".
-ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c07c360a557dfad5b13447bbc9fbf800f96e75d5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081049"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686215"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Ändern der Aufbewahrungsdauer für ein inaktives Postfach in Office 365
 
@@ -28,7 +28,7 @@ Ein inaktives Postfach wird verwendet, um die E-Mails eines ehemaligen Mitarbeit
 > [!IMPORTANT]
 > Wir haben den Stichtag (1. Juli 2017) zum Erstellen von neuem In-Situ-Speicher, um ein Postfach als inaktiv zu markieren, nach hinten verlegt. Ende dieses Jahres oder Anfang des nächsten Jahres können Sie keinen neuen In-Situ-Speicher in Exchange Online mehr erstellen. Es können dann nur noch das Beweissicherungsverfahren und Office 365-Aufbewahrungsrichtlinien zum Erstellen eines inaktiven Postfachs verwendet werden. Vorhandene inaktive Postfächer, die sich im In-Situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können weiterhin die In-Situ-Speicher für inaktive Postfächer verwalten. Dazu zählen das Ändern der Dauer eines In-Situ-Speichers sowie das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des In-Situ-Speichers. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Zum Ändern der Aufbewahrungsdauer für ein Beweissicherungsverfahren für ein aktives Postfach müssen Sie die Exchange Online PowerShell verwenden. Sie können nicht die Exchange-Verwaltungskonsole (EAC) verwenden. Sie können Exchange Online PowerShell oder die Exchange-Verwaltungskonsole jedoch verwenden, um die Aufbewahrungsdauer für einen In-Situ-Speicher zu ändern. Sie können das Security and Compliance Center oder die Security #a0 Compliance Center-PowerShell verwenden, um die Aufbewahrungsdauer für eine Office 365-Aufbewahrungsrichtlinie zu ändern.
     
@@ -48,16 +48,16 @@ Da unterschiedliche Haltebereiche oder eine oder mehrere Office 365-Aufbewahrung
   
 Führen Sie in Exchange Online PowerShell den folgenden Befehl aus, um die Informationen zu Haltebereichen für alle inaktiven Postfächer in Ihrer Organisation anzuzeigen.
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
-   
+
 Der Wert **True** für die Eigenschaft **LitigationHoldEnabled** gibt an, dass für das inaktive Postfach ein Beweissicherungsverfahren aktiviert ist. Wenn ein In-Situ-Speicher, ein eDiscovery Hold oder eine Office 365-Aufbewahrungsrichtlinie für ein inaktives Postfach aktiviert ist, wird eine GUID für den Haltebereich oder die Aufbewahrungsrichtlinie als Wert für die Eigenschaft **InPlaceHolds** angezeigt. Im folgenden Beispiel werden Ergebnisse für 5 inaktive Postfächer angezeigt. 
   
 ||
 |:-----|
 |
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -93,7 +93,7 @@ LitigationHoldEnabled : False
 LitigationHoldDuration: Unlimited
 InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 ```
-   
+
 In der folgenden Tabelle sind fünf unterschiedliche Haltebereichstypen aufgeführt, die verwendet wurden, um die einzelnen Postfächer als inaktiv zu markieren.
   
 |**Inaktives Postfach**|**Haltebereichstyp**|**Wie Sie den Haltebereich für das inaktive Postfach erkennen**|
@@ -114,7 +114,7 @@ Nachdem Sie ermittelt haben, welche Art von Haltebereich für das inaktive Postf
 
 Im Folgenden erfahren Sie, wie Sie die Exchange Online PowerShell zum Ändern der Aufbewahrungsdauer für ein Beweissicherungsverfahren verwenden, das auf einem inaktiven Postfach platziert wird. Sie können nicht die EAC verwenden. Führen Sie zum Ändern der Aufbewahrungsdauer den folgenden Befehl aus. In diesem Beispiel wird die Aufbewahrungsdauer auf unbegrenzt festgelegt.
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
@@ -131,7 +131,7 @@ Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bi
 
 1. Wenn Sie den Namen des zu ändernden In-Situ-Speichers kennen, fahren Sie mit dem nächsten Schritt fort. Führen Sie andernfalls den folgenden Befehl aus, um den Namen des In-Situ-Speichers abzurufen, der auf dem inaktiven Postfach platziert ist. Verwenden Sie die in-situ-Hold-GUID, die Sie in [Schritt 1](#step-1-identify-the-holds-on-an-inactive-mailbox)erhalten haben.
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
@@ -155,13 +155,13 @@ Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bi
 
 1. Wenn Sie den Namen des zu ändernden In-Situ-Speichers kennen, fahren Sie mit dem nächsten Schritt fort. Führen Sie andernfalls den folgenden Befehl aus, um den Namen des In-Situ-Speichers abzurufen, der auf dem inaktiven Postfach platziert ist. Verwenden Sie die in-situ-Hold-GUID, die Sie in [Schritt 1](#step-1-identify-the-holds-on-an-inactive-mailbox)erhalten haben.
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
 2. Führen Sie zum Ändern der Aufbewahrungsdauer den folgenden Befehl aus. In diesem Beispiel wird die Aufbewahrungsdauer in 2.555 Tage (etwa 7 Jahre) geändert. 
     
-    ```
+    ```powershell
     Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
     ```
 
@@ -179,22 +179,22 @@ Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bi
     
 - **Führen Sie einen der folgenden Befehle aus, um die neue Aufbewahrungsdauer zu überprüfen.** Der erste Befehl ist für das Beweissicherungsverfahren, der zweite für den In-Situ-Speicher. 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
     ```
 
-    ```
+    ```powershell
     Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
 - **Wie bei regulären Postfächern verarbeitet der Assistent für verwaltete Ordner auch inaktive Postfächer.** In Exchange Online verarbeitet der Assistent für verwaltete Ordner Postfächer einmal alle sieben Tage. Nachdem Sie die Aufbewahrungsdauer für ein inaktives Postfach geändert haben, können Sie das Cmdlet **Start-ManagedFolderAssistant** verwenden, um die Verarbeitung der neuen Aufbewahrungsdauer für das inaktive Postfach sofort zu starten. Führen Sie den folgenden Befehl aus. 
 
-    ```
+    ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
 - **Wenn viele Haltebereiche für ein inaktives Postfach aktiviert werden, werden nicht alle Haltebereich-GUIDs angezeigt.** Sie können den folgenden Befehl ausführen, um die GUIDs für alle Haltebereiche (mit Ausnahme von Beweissicherungsverfahren) für ein inaktives Postfach anzuzeigen. 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds
     ```

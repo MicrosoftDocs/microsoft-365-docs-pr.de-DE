@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: Sie können Exchange Online IRM so konfigurieren, dass bei Bedarf lokaler Active Directory Rights Management Service (AD RMS) verwendet wird, um die Anforderungen Ihrer Organisation zu erfüllen. Dies ist jedoch nicht die Regel. Wenn Sie keine Voraussetzung für die Verwendung von AD RMS haben, verwenden Sie stattdessen die Office-Nachrichtenverschlüsselung.
-ms.openlocfilehash: f5611ca7efeae0ab60ef90ebf4f8a225ea1332e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1c3bdf02f31f57f1328f0244d539d0dc88e7ba89
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080629"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686099"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Exchange Online-Mailverschlüsselung mit AD RMS
 
@@ -43,6 +43,6 @@ Nach der Aktivierung kann IRM-Schutz auf Nachrichten wie folgt angewendet werden
     
 - **Administratoren können mithilfe von Transportregeln automatisch IRM-Schutz auf Outlook und Outlook im Web anwenden** Sie können Transportregeln erstellen, um IRM-Schutz für Nachrichten bereitzustellen. Konfigurieren Sie die Transportschutzregelaktion, um eine AD RMS-Rechterichtlinienvorlage auf Nachrichten anzuwenden, die die Regelbedingung erfüllen. Nach dem Aktivieren von IRM sind die AD RMS-Rechterichtlinienvorlagen zur Verwendung mit der Transportschutzregelaktion **Rechteschutz auf Nachricht anwenden mit** verfügbar.
     
-- **Administratoren können Outlook-Schutzregeln erstellen.** Durch Outlook-Schutzregeln wird basierend auf Nachrichtenbedingungen wie der Abteilung des Absenders, dem Empfänger und dem Empfängerbereich (innerhalb oder außerhalb der Organisation) automatisch IRM-Schutz auf Nachrichten in Outlook 2010 angewendet (nicht in Outlook im Web). Weitere Informationen finden Sie unter [Create an Outlook Protection Rule](http://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx).
+- **Administratoren können Outlook-Schutzregeln erstellen.** Durch Outlook-Schutzregeln wird basierend auf Nachrichtenbedingungen wie der Abteilung des Absenders, dem Empfänger und dem Empfängerbereich (innerhalb oder außerhalb der Organisation) automatisch IRM-Schutz auf Nachrichten in Outlook 2010 angewendet (nicht in Outlook im Web). Weitere Informationen finden Sie unter [Create an Outlook Protection Rule](https://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx).
     
 

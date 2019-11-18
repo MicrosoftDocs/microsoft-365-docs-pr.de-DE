@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatische Erweiterung der Archivierung, um die Größe des Ordners "Wiederherstellbare Elemente" für ein Postfach in Office 365 zu erhöhen. '
-ms.openlocfilehash: 4c2e36dae3c8677579569d55a9c5b88efb5c54e5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080666"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686242"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 
@@ -31,21 +31,21 @@ Um die Wahrscheinlichkeit zu verringern, diesen Grenzwert zu überschreiten, wir
   
 |**Speicherort des Ordners "refundable Items"**|**Nicht in der Warteschleife gehaltene Postfächer**|**Aufbewahrung von Postfächern**|
 |:-----|:-----|:-----|
-|Primäres Postfach  <br/> |30 GB  <br/> |100 GB  <br/> |
-|Archivpostfach<sup>\*</sup> <br/> |Unbeschränkt  <br/> |Unbeschränkt  <br/> |
-|**Gesamtes Speicherkontingent für den Ordner "refundable Items"** <br/> |Unbeschränkt  <br/> |Unbeschränkt  <br/> |
+|Primäres Postfach  <br/> |30 GB  <br/> |100 GB  <br/> |
+|Archivpostfach<sup>\*</sup> <br/> |Unbegrenzt  <br/> |Unbegrenzt  <br/> |
+|**Gesamtes Speicherkontingent für den Ordner "refundable Items"** <br/> |Unbegrenzt  <br/> |Unbegrenzt  <br/> |
    
 > [!NOTE]
 > <sup>\*</sup>Das anfängliche Speicherkontingent für das Archivpostfach beträgt 100 GB für Benutzer mit einer Lizenz für Exchange Online (Plan 2). Wenn die automatisch expandierende Archivierung für Postfächer aktiviert ist, wird das Speicherkontingent für das Archivpostfach und den Ordner "Wiederherstellbare Elemente" jedoch auf 110 GB erhöht. Wenn erforderlich, wird zusätzlicher Archivspeicherplatz zur Verfügung gestellt, was zu einer unbegrenzten Menge Archivspeicher führt. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md). 
   
 Wenn das Speicherkontingent für den Ordner "refundable Items" im primären Postfach eines aufbewahrten Postfachs nahe am Erreichen des Grenzwerts liegt, können Sie die folgenden Schritte ausführen:
   
-- **Aktivieren des Archivpostfachs und Aktivieren der automatisch wachsenden Archivierung** – Sie können eine unbegrenzte Speicherkapazität für den Ordner "Wiederherstellbare Elemente" aktivieren, indem Sie einfach das Archivpostfach aktivieren und dann das Feature für die automatische Erweiterung der Archivierung in Exchange aktivieren. Online. Dies führt zu 110 GB für den Ordner "refundable Items" im primären Postfach und eine unbegrenzte Menge an Speicherkapazität für den Ordner "refundable Items" im Archiv des Benutzers. Weitere Informationen finden Sie unter Vorgehensweise: [Aktivieren von archivpostfächern im Security #a0 Compliance Center](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung in Office 365](enable-unlimited-archiving.md).
+- **Aktivieren des Archivpostfachs und Aktivieren der automatisch wachsenden Archivierung** – Sie können eine unbegrenzte Speicherkapazität für den Ordner "Wiederherstellbare Elemente" einfach aktivieren, indem Sie das Archivpostfach aktivieren und dann das Feature für die automatische Erweiterung der Archivierung in Exchange Online aktivieren. Dies führt zu 110 GB für den Ordner "refundable Items" im primären Postfach und eine unbegrenzte Menge an Speicherkapazität für den Ordner "refundable Items" im Archiv des Benutzers. Weitere Informationen finden Sie unter Vorgehensweise: [Aktivieren von archivpostfächern im Security #a0 Compliance Center](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung in Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Nachdem Sie das Archiv für ein Postfach aktiviert haben, das das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" überschreitet, müssen Sie möglicherweise den Assistenten für verwaltete Ordner ausführen, um den Assistenten zum Verarbeiten des Postfachs manuell auszulösen, sodass abgelaufene Elemente verschoben werden. Ordner "refundable Items" im Archivpostfach. Anweisungen finden Sie in [Schritt 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Beachten Sie, dass andere Elemente im Postfach des Benutzers möglicherweise in das neue Archivpostfach verschoben werden. Sie sollten dem Benutzer mitteilen, dass dies möglicherweise geschieht, nachdem Sie das Archivpostfach aktiviert haben. 
   
-- **Erstellen einer benutzerdefinierten Aufbewahrungsrichtlinie für Postfächer in der Warteschleife** – zusätzlich zum Aktivieren des Archivpostfachs und der automatisch wachsenden Archivierung für Postfächer in einem Beweissicherungsverfahren oder in-situ-Speicher möchten Sie möglicherweise auch eine benutzerdefinierte Aufbewahrungsrichtlinie für Postfächer erstellen, die sich auf situ. In diesem Fall können Sie eine Aufbewahrungsrichtlinie auf Postfächer anwenden, die sich von der Standard-MRM-Richtlinie unterscheiden, die auf Postfächer angewendet wird, die nicht in der Warteschleife gespeichert sind. Auf diese Weise können Sie Aufbewahrungstags anwenden, die speziell für Postfächer in der Warteschleife entworfen wurden. Dies umfasst das Erstellen eines neuen Aufbewahrungstags für den Ordner "Wiederherstellbare Elemente". 
+- **Erstellen einer benutzerdefinierten Aufbewahrungsrichtlinie für Postfächer in der Warteschleife** – zusätzlich zum Aktivieren des Archivpostfachs und der automatisch wachsenden Archivierung für Postfächer in einem Beweissicherungsverfahren oder in-situ-Speicher möchten Sie möglicherweise auch eine benutzerdefinierte Aufbewahrungsrichtlinie für Postfächer in der Warteschleife erstellen. In diesem Fall können Sie eine Aufbewahrungsrichtlinie auf Postfächer anwenden, die sich von der Standard-MRM-Richtlinie unterscheiden, die auf Postfächer angewendet wird, die nicht in der Warteschleife gespeichert sind. Auf diese Weise können Sie Aufbewahrungstags anwenden, die speziell für Postfächer in der Warteschleife entworfen wurden. Dies umfasst das Erstellen eines neuen Aufbewahrungstags für den Ordner "Wiederherstellbare Elemente". 
     
 Im weiteren Verlauf dieses Themas werden die schrittweisen Verfahren zum Erstellen einer benutzerdefinierten Aufbewahrungsrichtlinie für Postfächer in der Warteschleife beschrieben.
   
@@ -65,13 +65,13 @@ Der erste Schritt besteht darin, für den Ordner "Wiederherstellbare Elemente" e
     
 2. Führen Sie den folgenden Befehl aus, um eine neue RPT für den Ordner "Wiederherstellbare Elemente" zu erstellen: 
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
     Mit dem folgenden Befehl wird beispielsweise eine RPT für den Ordner "refundable Items" mit dem Namen "refundable Items 30 Days for Mailboxes on Hold" mit einer Aufbewahrungsdauer von 30 Tagen erstellt. Dies bedeutet, dass ein Element im Ordner "Wiederherstellbare Elemente" 30 Tage lang in den Ordner "Wiederherstellbare Elemente" im Archivpostfach des Benutzers verschoben wird.
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
     ```
 
@@ -118,17 +118,17 @@ Sie können die Exchange-Verwaltungskonsole oder Exchange Online PowerShell verw
   
 Führen Sie den folgenden Befehl aus, um eine neue Aufbewahrungsrichtlinie für Postfächer in der Warteschleife zu erstellen. 
   
-```
+```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
 
 ```
 
 Mit dem folgenden Befehl werden beispielsweise die Aufbewahrungsrichtlinie und verknüpfte Aufbewahrungstags erstellt, die in der vorherigen Abbildung angezeigt werden.
   
-```
+```powershell
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-  
+
 ## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>Schritt 3: Anwenden der neuen Aufbewahrungsrichtlinie auf Postfächer in der Warteschleife
 
 Der letzte Schritt besteht darin, die neue Aufbewahrungsrichtlinie, die Sie in Schritt 2 erstellt haben, auf in Ihrer Organisation aufbewahrte Postfächer anzuwenden. Sie können die Exchange-Verwaltungskonsole oder Exchange Online PowerShell verwenden, um die Aufbewahrungsrichtlinie auf ein einzelnes Postfach oder auf mehrere Postfächer anzuwenden. 
@@ -161,27 +161,27 @@ Sie können Exchange Online PowerShell verwenden, um eine neue Aufbewahrungsrich
   
 In diesem Beispiel wird die neue Aufbewahrungsrichtlinie auf das Postfach von Pilar Pinilla angewendet.
   
-```
+```powershell
 Set-Mailbox "Pilar Pinilla" -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 In diesem Beispiel wird die neue Aufbewahrungsrichtlinie auf alle Postfächer in der Organisation angewendet, die das Beweissicherungsverfahren besitzen.
   
-```
+```powershell
 $LitigationHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'}
 ```
 
-```
+```powershell
 $LitigationHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 In diesem Beispiel wird die neue Aufbewahrungsrichtlinie auf alle Postfächer in der Organisation angewendet, die sich im Compliance-Archiv befinden.
   
-```
+```powershell
 $InPlaceHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null}
 ```
 
-```
+```powershell
 $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
@@ -189,35 +189,35 @@ Sie können das Cmdlet **Get-Mailbox** verwenden, um zu überprüfen, ob die neu
   
 Im folgenden finden Sie einige Beispiele, um zu überprüfen, ob in den Befehlen in den vorherigen Beispielen die Aufbewahrungsrichtlinie für MRM-Richtlinien für Postfächer auf Postfächer für das Beweissicherungsverfahren und die Postfächer im Compliance-Archiv angewendet wurde.
   
-```
+```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'} | FT DisplayName,RetentionPolicy -Auto
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-  
+
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>Optional Schritt 4: Ausführen des Assistenten für verwaltete Ordner zum Anwenden der neuen Aufbewahrungseinstellungen
 
 Nachdem Sie die neue Aufbewahrungsrichtlinie auf Postfächer angewendet haben, kann es bis zu sieben Tage dauern, bis Exchange Online vom Assistenten für verwaltete Ordner mithilfe der Einstellungen in der neuen Aufbewahrungsrichtlinie diese Postfächer verarbeitet. Anstatt auf die Ausführung des Assistenten für verwaltete Ordner zu warten, können Sie das Cmdlet **Start-ManagedFolderAssistant** verwenden, um den Assistenten manuell auszulösen, um die Postfächer zu verarbeiten, auf die Sie die neue Aufbewahrungsrichtlinie angewendet haben. 
   
 Führen Sie den folgenden Befehl aus, um den Assistenten für verwaltete Ordner für das Postfach von Pilar Pinilla zu starten.
   
-```
+```powershell
 Start-ManagedFolderAssistant "Pilar Pinilla"
 ```
 
 Führen Sie die folgenden Befehle aus, um den Assistenten für verwaltete Ordner für alle in der Warteschleife stehenden Postfächer zu starten.
   
-```
+```powershell
 $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlaceHolds -ne $null) -or ($_.LitigationHoldEnabled -eq "True")}
 ```
 
-```
+```powershell
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 

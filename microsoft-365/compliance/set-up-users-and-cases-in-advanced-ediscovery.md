@@ -1,9 +1,9 @@
 ---
 title: Einrichten von Benutzern und Fällen in Office 365 Advanced eDiscovery
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informationen zum Konfigurieren von Benutzerrollen, Erstellen von Fällen und Zuweisen von Benutzern zu Fällen in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e53d304445aa7d171766d38496d95a0d6cb47792
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6fa3581fe15c089292e7585e7d053b817ae167b
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081914"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686143"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Einrichten von Benutzern und Fällen in Office 365 Advanced eDiscovery
 
@@ -35,7 +35,7 @@ Vor dem Einrichten von Fällen und Benutzern in Advanced eDiscovery ist Folgende
     
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Office 365 Security &amp; Compliance Center sein, um einen eDiscovery-Fall zu erstellen und ihm Mitglieder hinzuzufügen. Um sich selbst der eDiscovery-Manager-Rollengruppe im &amp; Security Compliance Center hinzufügen zu können, müssen Sie ein globaler Administrator in Ihrer Office 365 Organisation sein. Wenn Sie kein globaler Administrator sind, müssen Sie einen globalen Administrator bitten, Sie zur eDiscovery-Manager-Rollengruppe hinzuzufügen. Weitere Informationen finden Sie unter:
     
-  - [Berechtigungen im Microsoft 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+  - [Berechtigungen im Microsoft 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
   - [Zuweisen von eDiscovery-Berechtigungen im Microsoft 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md)
     

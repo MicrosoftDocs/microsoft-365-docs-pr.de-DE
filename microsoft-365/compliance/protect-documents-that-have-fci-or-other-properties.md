@@ -3,7 +3,7 @@ title: Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder 
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Viele Organisationen verfügen mithilfe der Klassifikationseigenschaften in Windows Dateiklassifizierungsinfrastruktur (FCI, File Classification Infrastructure), der Dokumenteigenschaften in SharePoint oder Dokumenteigenschaften, die von einem Drittanbietersystem angewendet werden, bereits über einen Prozess zum Identifizieren und Klassifizieren vertraulicher Informationen. Wenn dies auf Ihre Organisation zutrifft, können Sie eine DLP-Richtlinie in Office 365 erstellen, welche die Eigenschaften erkennt, die von Windows Server FCI oder einem anderen System auf Dokumente angewendet wurden, damit die DLP-Richtlinie bei Office-Dokumenten mit bestimmten FCI- oder anderen Eigenschaftswerten erzwungen werden kann.
-ms.openlocfilehash: 5f464c2918d7ea91fa5c65b28bc477ee7cc768e3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 286a66968727737c906ba24ac900eacd7732276e
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082212"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686149"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
 
@@ -42,7 +42,7 @@ Beispiele
   
 Dies ist wichtig, da DLP in Office 365 den Suchcrawler zum Identifizieren und Klassifizieren vertraulicher Informationen auf Ihren Websites verwendet und dann diese vertraulichen Informationen in einem sicheren Bereich des Suchindex speichert. Wenn Sie ein Dokument in Office 365 hochladen, erstellt SharePoint automatisch durchforstete Eigenschaften auf Grundlage der Dokumenteigenschaften. Um aber eine FCI- oder eine andere Eigenschaft in einer DLP-Richtlinie zu verwenden, muss die durchforstete Eigenschaft einer verwalteten Eigenschaft zugeordnet werden, damit Inhalt mit dieser Eigenschaft im Index gespeichert wird.
   
-Weitere Informationen zu Such-und verwalteten Eigenschaften finden Sie unter [Verwalten des Suchschemas in SharePoint Online](http://go.microsoft.com/fwlink/p/?LinkID=627454).
+Weitere Informationen zu Such-und verwalteten Eigenschaften finden Sie unter [Verwalten des Suchschemas in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=627454).
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Schritt 1: Hochladen eines Dokuments mit der erforderlichen Eigenschaft in Office 365
 
@@ -92,29 +92,29 @@ Als Nächstes erstellen Sie eine DLP-Richtlinie mit zwei Regeln, die beide die B
 
 Beachten Sie, dass die Bedingungs **Dokumenteigenschaften einen dieser Werte enthalten** , die in der Benutzeroberfläche des Security &amp; Compliance Centers vorübergehend nicht verfügbar sind, Sie können diese Bedingung jedoch weiterhin mithilfe von PowerShell verwenden. Sie können `New\Set\Get-DlpCompliancePolicy` die Cmdlets verwenden, um mit einer DLP-Richtlinie zu arbeiten `New\Set\Get-DlpComplianceRule` , und die Cmdlets mit dem `ContentPropertyContainsWords` Parameter verwenden, um die Bedingung **Dokumenteigenschaften enthalten einen dieser Werte**hinzufügen.
   
-Weitere Informationen zu diesen Cmdlets finden Sie unter [Office 365 Security &amp; Compliance Center-Cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
+Weitere Informationen zu diesen Cmdlets finden Sie unter [Office 365 Security &amp; Compliance Center-Cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Erstellen Sie die Richtlinie `New-DlpCompliancePolicy`mithilfe von.
-    
-    Hier ist ein PowerShell-Beispiel, das eine DLP-Richtlinie erstellt, die für alle Standorte gilt.
-    
-      ```
-      New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
-      ```
+
+Hier ist ein PowerShell-Beispiel, das eine DLP-Richtlinie erstellt, die für alle Standorte gilt.
+
+```powershell
+New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
+```
 
 3. Erstellen Sie die beiden oben beschriebenen Regeln mithilfe `New-DlpComplianceRule`von, wobei eine Regel für den **niedrigen** Wert steht, und eine andere Regel für die **hohen** und **moderaten** Werte. 
     
     Es folgt ein PowerShell-Beispiel, in dem diese beiden Regeln erstellt werden. Beachten Sie, dass die Eigenschaften Name/Wert-Paare in Anführungszeichen eingeschlossen sind, und ein Eigenschaftsname möglicherweise mehrere Werte durch Kommas ohne Leerzeichengetrennt angibt, wie`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
-    
-      ```
-      New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
-      ```
 
-    Beachten Sie, dass Windows Server FCI viele integrierte Eigenschaften enthält, einschließlich **personenbezogener Informationen** , die in diesem Beispiel verwendet werden. Die möglichen Werte für jede Eigenschaft können für jede Organisation unterschiedlich sein. Die hier verwendeten **hohen**, **moderaten**und **niedrigen** Werte sind nur ein Beispiel. Für Ihre Organisation können Sie die Eigenschaften der Windows Server-FCI-Klassifizierung mit ihren möglichen Werten im Ressourcen-Manager für Dateiserver auf dem Windows Server-basierten Dateiserver anzeigen. Weitere Informationen finden Sie unter [Erstellen einer Klassifizierungseigenschaft](http://go.microsoft.com/fwlink/p/?LinkID=627456).
+```powershell
+New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
+```
+
+    Note that Windows Server FCI includes many built-in properties, including **Personally Identifiable Information** used in this example. The possible values for each property can be different for every organization. The **High**, **Moderate**, and **Low** values used here are only an example. For your organization, you can view the Windows Server FCI classification properties with their possible values in the file Server Resource Manager on the Windows Server-based file server. For more information, see [Create a classification property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
     
-Wenn Sie fertig sind, sollte Ihre Richtlinie zwei neue Regeln haben, in denen beide die **Dokumenteigenschaften mit einer dieser Werte Bedingung enthalten** . Beachten Sie, dass diese Bedingung nicht auf der Benutzeroberfläche angezeigt wird, obwohl die anderen Bedingungen, Aktionen und Einstellungen angezeigt werden. 
+Wenn Sie fertig sind, sollte Ihre Richtlinie zwei neue Regeln haben, in denen beide die **Dokumenteigenschaften mit einer dieser Werte Bedingung enthalten** . Beachten Sie, dass diese Bedingung nicht auf der Benutzeroberfläche angezeigt wird, obwohl die anderen Bedingungen, Aktionen und Einstellungen angezeigt werden.
   
 Eine Regel sperrt den Zugriff auf Inhalte, bei denen die Eigenschaft **Personenbezogene Informationen** den Wert **Hoch** oder **Mittel** aufweist. Eine zweite Regel sendet eine Benachrichtigung über Inhalte, bei denen die Eigenschaft **Personenbezogene Informationen** den Wert **Niedrig** aufweist.
   
@@ -129,7 +129,7 @@ Um überall Inhalte mit dieser Eigenschaft zu ermitteln, sollten Sie manuell anf
 > [!CAUTION]
 > Erneute Indizierung einer Website kann das Suchsystem massiv belasten. Indizieren Sie Ihre Website nicht neu, es sei denn, Ihr Szenario erfordert dies unbedingt. 
   
-Weitere Informationen finden Sie unter [Manuelles anfordern der Durchforstung und erneuten Indizierung einer Website, einer Bibliothek oder einer Liste](http://go.microsoft.com/fwlink/p/?LinkID=627457).
+Weitere Informationen finden Sie unter [Manuelles anfordern der Durchforstung und erneuten Indizierung einer Website, einer Bibliothek oder einer Liste](https://go.microsoft.com/fwlink/p/?LinkID=627457).
   
 ### <a name="re-index-a-site-optional"></a>Erneute Indizierung einer Website (optional)
 
@@ -148,5 +148,3 @@ Weitere Informationen finden Sie unter [Manuelles anfordern der Durchforstung un
 - [Inhalt der DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
 - [Verfügbare Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md)
-    
-

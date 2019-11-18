@@ -7,23 +7,25 @@ ms.date: 1/3/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Verwenden Sie die Inhaltssuche und das Skript in diesem Artikel, um die Postfächer und OneDrive für Unternehmen Websites für eine Gruppe von Benutzern zu durchsuchen.
-ms.openlocfilehash: 9c8de90f8d2faee73ba269466f90478bc72b708e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02b89646fdb4175d30dce8840ac069f62995cbbc
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081946"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686226"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Verwenden Sie die Inhaltssuche, um das Postfach und die OneDrive for Business-Website nach einer Liste mit Benutzern zu durchsuchen.
 
 Das Security #a0 Compliance Center bietet eine Reihe von Windows PowerShell-Cmdlets, mit denen Sie zeitaufwändige eDiscovery-bezogene Aufgaben automatisieren können. Das Erstellen einer Inhaltssuche im Security #a0 Compliance Center zum Durchsuchen einer großen Anzahl von Speicherorten für Depot Inhalte erfordert Zeit und Vorbereitung. Bevor Sie eine Suche erstellen, müssen Sie die URL für jede OneDrive für Unternehmen Website erfassen und dann jedes Postfach und OneDrive für Unternehmen Website der Suche hinzufügen. In zukünftigen Versionen ist dies im Security #a0 Compliance Center einfacher. Bis dahin können Sie das Skript in diesem Artikel verwenden, um diesen Prozess zu automatisieren. In diesem Skript werden Sie zur Angabe des Namens der mysite-Domäne Ihrer Organisation aufgefordert ( **** beispielsweise "Contoso https://contoso-my.sharepoint.com)" in der URL, eine Liste der e-Mail-Adressen der Benutzer, der Name der neuen Inhaltssuche und die zu verwendende Suchabfrage. Das Skript ruft die OneDrive für Unternehmen-URL für jeden Benutzer in der Liste ab und erstellt und startet dann eine Inhaltssuche, die das Postfach und die OneDrive für Unternehmen Website für jeden Benutzer in der Liste durchsucht, wobei die von Ihnen bereitgestellte Suchabfrage verwendet wird. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security #a0 Compliance Center und SharePoint Online globaler Administrator sein, um das Skript in Schritt 3 auszuführen.
     
@@ -45,7 +47,7 @@ Mit dem Skript in Schritt 3 wird eine Inhaltssuche erstellt, um die Postfächer 
   
 Hier ist ein [Exchange Onlineer PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) -Befehl, mit dem Sie eine Liste von e-Mail-Adressen für alle Benutzer in Ihrer Organisation erhalten und in einer Textdatei namens `Users.txt`speichern können. 
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
@@ -70,7 +72,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
     
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `SearchEXOOD4B.ps1`. Speichern Sie die Datei im gleichen Ordner, in dem Sie die Liste der Benutzer in Schritt 2 gespeichert haben.
     
-  ```
+  ```powershell
   # This PowerShell script will prompt you for the following information:
   #    * Your user credentials 
   #    * The name of your organization's MySite domain                                              
@@ -106,7 +108,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
       }
   }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -114,7 +116,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "SharePoint Online Management Shell isn't installed, please install from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
+          Write-Error "SharePoint Online Management Shell isn't installed, please install from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
           return;
       }
   }
@@ -164,7 +166,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
     
 3. Starten des Skripts; Zum Beispiel:
     
-    ```
+    ```powershell
     .\SearchEXOOD4B.ps1
     ```
 
@@ -180,4 +182,4 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
     
     - Die Suchabfrage (lassen Sie das Feld leer, um alle Elemente an den Inhaltsspeicherorten zurückzugeben).
     
-    Das Skript ruft die URLs für jede OneDrive für Unternehmen Website ab und erstellt dann die Suche und startet diese. Sie können entweder das Cmdlet **Get-ComplianceSearch** in Security #a0 Compliance Center PowerShell ausführen, um die Suchstatistiken und Ergebnisse anzuzeigen, oder Sie können zur Seite **Inhaltssuche** im Security #a1 Compliance Center wechseln, um Informationen anzuzeigen. über die Suche. 
+    Das Skript ruft die URLs für jede OneDrive für Unternehmen Website ab und erstellt dann die Suche und startet diese. Sie können entweder das Cmdlet **Get-ComplianceSearch** in Security #a0 Compliance Center PowerShell ausführen, um die Suchstatistiken und Ergebnisse anzuzeigen, oder Sie können zur Seite **Inhaltssuche** im Security #a1 Compliance Center wechseln, um Informationen zur Suche anzuzeigen. 

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informationen zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: fc143982ab7ec465bb379e0032b4d99a5d28edec
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bac0f99683c87eb57ee8a69334010573c69acc55
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081905"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686118"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
-Aufsichtsrichtlinien in Office 365 ermöglichen es Ihnen, Mitarbeiter Kommunikationen zur Untersuchung durch designierte Bearbeiter zu erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation erfassen. Bearbeiter können dann die Nachrichten überprüfen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation übereinstimmen und diese mit dem Klassifizierungs lösen. 
+Aufsichtsrichtlinien in Office 365 ermöglichen es Ihnen, Mitarbeiter Kommunikationen zur Untersuchung durch designierte Bearbeiter zu erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation erfassen. Bearbeiter können dann die Nachrichten überprüfen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation übereinstimmen und diese mit dem Klassifizierungs lösen.
 
 Mithilfe dieser Richtlinien können Sie auch viele moderne Anforderungen an die Compliance bewältigen, darunter:
 
@@ -38,6 +38,8 @@ In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwi
 Eine kurze Übersicht über Aufsichtsrichtlinien finden Sie im [Video zur Aufsichtsrichtlinie](https://youtu.be/C3Y8WZ7o_dI) im [Microsoft Mechanics-Kanal](https://www.youtube.com/user/OfficeGarageSeries).
 
 Weitere Informationen zu Verbesserungen und Verfügbarkeit der Überwachungsfunktionen finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
+Möchten Sie die neue Erfahrung mit der Kommunikations Konformität in Microsoft 365 testen? Sehen Sie sich die neuen und verbesserten Features an, die in [Communication Compliance in Microsoft 365 (Preview)](communication-compliance.md)zur Verfügung stehen.
 
 ## <a name="scenarios-for-supervision-policies"></a>Szenarien für Aufsichtsrichtlinien
 
@@ -111,7 +113,7 @@ Standardmäßig wird die Bedingung " **Direction** " angezeigt und kann nicht en
 
 Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Aufsichtsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Im Rahmen Office 365 [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)können mit der Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Konfidenz Stufen und sogar benutzerdefinierte Datentypen verwendet werden, um Inhalte zu identifizieren und zu kennzeichnen, die möglicherweise vertraulich sind. Die Standardtypen für vertrauliche Informationen sind:
 
-- Finanzen
+- Finanzwesen
 - Medizin und Gesundheit
 - Datenschutz
 - Benutzerdefinierter Informationstyp
@@ -152,7 +154,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
   
 |**Bedingung**|**Verwendung**|
 |:-----|:-----|
-| **Nachricht wird von einer dieser Domänen empfangen**  <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in empfangene Nachrichten einzubeziehen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle e-Mails von einer bestimmten Domäne überwachen, aber Nachrichten ausschließen möchten, die keine Überprüfung (Newsletter, Ankündigungen usw.) benötigen, müssen Sie die Bedingung konfigurieren, dass eine **Nachricht nicht von einer dieser Domänen Bedingungen empfangen wird** , die die e-Mail-Adresse (Beispiel "Newsletter@contoso.com"). |
+| **Nachricht wird von einer dieser Domänen empfangen**  <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in empfangene Nachrichten einzubeziehen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle e-Mails von einer bestimmten Domäne überwachen, aber Nachrichten ausschließen möchten, die keine Überprüfung (Newsletter, Ankündigungen usw.) benötigen, müssen Sie die Bedingung konfigurieren, dass eine **Nachricht nicht von einer dieser Domänen Bedingungen empfangen wird** , die die e-Mail-Adresse ausschließt (Beispiel "Newsletter@contoso.com"). |
 | **Nachricht wird an eine dieser Domänen gesendet.**  <br><br> **Nachricht wird nicht an eine dieser Domänen gesendet** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in gesendete Nachrichten einzuschließen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle an eine bestimmte Domäne gesendeten e-Mails überwachen möchten, jedoch gesendete Nachrichten ausschließen möchten, die nicht überprüft werden müssen, müssen Sie zwei Bedingungen konfigurieren: <br> -Eine **Nachricht wird an eine dieser Domänen Bedingungen gesendet** , die die Domäne definiert ("contoso.com") und <br> -Eine **Nachricht wird nicht an eine dieser Domänen Bedingungen gesendet** , die die e-Mail-Adresse ("Subscriptions@contoso.com") ausschließen. |
 | **Nachricht wird mit einer dieser Bezeichnungen klassifiziert.**  <br><br> **Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert** | So wenden Sie die Richtlinie an, wenn bestimmte Aufbewahrungs Bezeichnungen in einer Nachricht enthalten oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und die konfigurierten Beschriftungen werden als Teil dieser Bedingung ausgewählt. Jede ausgewählte Bezeichnung wird separat angewendet (nur eine dieser Bezeichnungen muss für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Overview of Retention Labels](labels.md).|
 | **Nachricht enthält eines dieser Wörter**  <br><br> **Nachricht enthält keines dieser Wörter** | Um die Richtlinie anzuwenden, wenn bestimmte Wörter oder Ausdrücke in einer Nachricht enthalten oder ausgeschlossen werden, geben Sie jedes Wort oder jede Phrase in einer separaten Linie ein. Jede Zeile von Wörtern, die Sie eingeben, werden separat angewendet (nur eine dieser Zeilen muss für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
@@ -164,7 +166,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"></a> Jede wortlinie, die Sie eingeben, wird separat angewendet (es muss nur eine Linie angewendet werden, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Banker" und "Insiderhandel" in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
-Um sowohl e-Mail-Nachrichten als auch Anlagen für dieselben Stichwörter zu überprüfen, erstellen Sie eine [Richtlinie zur Verhinderung von Datenverlust](create-test-tune-dlp-policy.md) mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) für die zu überwachenden Ausdrücke. Diese Richtlinienkonfiguration identifiziert definierte Schlüsselwörter, die entweder in der e-Mail-Nachricht **oder** in der e-Mail-Anlage angezeigt werden. Unter Verwendung der standardmäßigen bedingten Richtlinieneinstellungen (*Nachricht enthält* eines dieser Wörter und *Anlage enthält*eines dieser Wörter) zum Identifizieren von Ausdrücken in Nachrichten und in Anlagen erfordert die Begriffe sind **sowohl** in der Nachricht als auch in der vorhanden Anlage.
+Um sowohl e-Mail-Nachrichten als auch Anlagen für dieselben Stichwörter zu überprüfen, erstellen Sie eine [Richtlinie zur Verhinderung von Datenverlust](create-test-tune-dlp-policy.md) mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) für die zu überwachenden Ausdrücke. Diese Richtlinienkonfiguration identifiziert definierte Schlüsselwörter, die entweder in der e-Mail-Nachricht **oder** in der e-Mail-Anlage angezeigt werden. Unter Verwendung der standardmäßigen bedingten Richtlinieneinstellungen (*Nachricht enthält* eines dieser Wörter und *Anlage enthält*eines dieser Wörter) zum Identifizieren von Ausdrücken in Nachrichten und in Anlagen erfordert die Begriffe sind **sowohl** in der Nachricht als auch in der Anlage vorhanden.
   
 ##### <a name="enter-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 
@@ -276,7 +278,7 @@ Zeigen Sie Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll ode
 
 Im folgenden Beispiel werden die Aktivitäten für alle Aufsichts Überprüfungsaktivitäten (Richtlinien und Regeln) zurückgegeben, und es werden detaillierte Informationen zu den einzelnen Vorgängen aufgelistet:
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
@@ -285,3 +287,4 @@ Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellte
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
 Informationen zum Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation finden Sie unter [configure Supervision Policies](configure-supervision-policies.md).
+

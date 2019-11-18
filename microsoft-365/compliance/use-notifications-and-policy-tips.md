@@ -2,8 +2,8 @@
 title: Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn jemand mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082675"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686188"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -143,9 +144,9 @@ Möglicherweise wird eine DLP-Richtlinie auf OneDrive für Unternehmen Websites 
   
 1. Erste Regel: Wenn in einem Dokument weniger als fünf Instanzen dieser vertraulichen Informationen erkannt werden und das Dokument für Personen innerhalb der Organisation freigegeben wird, wird mit der Aktion **Benachrichtigung senden** ein richtlinientipp angezeigt. Für Richtlinien Tipps sind keine Außerkraftsetzungsoptionen erforderlich, da diese Regel lediglich Personen benachrichtigt und nicht den Zugriff blockiert. 
     
-2. Zweite Regel: Wenn mehr als fünf Instanzen dieser vertraulichen Informationen in einem Dokument erkannt werden und das Dokument für Personen innerhalb der Organisation freigegeben wird, schränkt die Aktion **Zugriff auf Inhalt blockieren** die Berechtigungen für die Datei ein, und die ** Benachrichtigung senden** : mit dieser Aktion können Benutzer die Aktionen in dieser Regel außer Kraft setzen, indem Sie eine geschäftliche Begründung bereitstellen. In Ihrem Unternehmen ist es manchmal erforderlich, dass interne Personen PII-Daten freigeben, und dass ihre DLP-Richtlinie diese Arbeit nicht blockiert. 
+2. Zweite Regel: Wenn mehr als fünf Instanzen dieser vertraulichen Informationen in einem Dokument erkannt werden und das Dokument für Personen innerhalb der Organisation freigegeben wird, schränkt die Aktion **Zugriff auf Inhalt blockieren** die Berechtigungen für die Datei ein, und die Aktion **Benachrichtigung senden** ermöglicht Benutzern das außer Kraft setzen der Aktionen in dieser Regel durch die Bereitstellung einer geschäftlichen Begründung. In Ihrem Unternehmen ist es manchmal erforderlich, dass interne Personen PII-Daten freigeben, und dass ihre DLP-Richtlinie diese Arbeit nicht blockiert. 
     
-3. Dritte Regel: Wenn mehr als fünf Instanzen dieser vertraulichen Informationen in einem Dokument erkannt werden und das Dokument für Personen außerhalb der Organisation freigegeben wird, schränkt die Aktion **Zugriff auf Inhalt blockieren** die Berechtigungen für die Datei ein, und die ** Benachrichtigung senden** mit Aktion können Benutzer die Aktionen in dieser Regel außer Kraft setzen, da die Informationen extern freigegeben werden. In keinem Fall dürfen Personen in Ihrer Organisation PII-Daten außerhalb der Organisation freigeben. 
+3. Dritte Regel: Wenn mehr als fünf Instanzen dieser vertraulichen Informationen in einem Dokument erkannt werden und das Dokument für Personen außerhalb der Organisation freigegeben wird, schränkt die Aktion **Zugriff auf Inhalt blockieren** die Berechtigungen für die Datei ein, und mit der Aktion **Benachrichtigung senden** können Benutzer die Aktionen in dieser Regel außer Kraft setzen, da die Informationen extern freigegeben werden. In keinem Fall dürfen Personen in Ihrer Organisation PII-Daten außerhalb der Organisation freigeben. 
     
 Hier sind einige feine Punkte, die Sie bei der Verwendung eines Richtlinien Tipps zum Überschreiben einer Regel verstehen:
   
@@ -214,23 +215,13 @@ Derzeit unterstützt Outlook 2013 und höher nur für diese Bedingungen Richtlin
 - Inhalt enthält
 - Inhalt ist freigegeben
 
-Wir arbeiten derzeit an der Unterstützung für das Anzeigen von Richtlinien Tipps für zusätzliche Bedingungen. Zu diesen zählen:
-
-- Der Inhalt einer e-Mail-Anlage konnte nicht überprüft werden
-- Der Inhalt einer e-Mail-Anlage hat die Überprüfung nicht abgeschlossen
-- Anlagendatei Erweiterung ist
-- Anlage ist kennwortgeschützt
-- Document-Eigenschaft ist
-- Empfängerdomäne ist
-- Absender-IP-Adresse ist
-
 Beachten Sie, dass alle diese Bedingungen in Outlook funktionieren, in denen Sie Inhalte abgleichen und Schutzaktionen für Inhalte erzwingen können. Das Anzeigen von Richtlinien Tipps für Benutzer wird jedoch noch nicht unterstützt.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Richtlinien Tipps im Exchange Admin Center vs. The Office 365 Security &amp; Compliance Center
 
 Richtlinien Tipps können entweder mit DLP-Richtlinien und Nachrichtenfluss Regeln funktionieren, die im Exchange Admin Center erstellt wurden, oder mit DLP-Richt &amp; Linien, die im Office 365 Security Compliance Center erstellt wurden, jedoch nicht in beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, aber Richtlinien Tipps nur von einem einzelnen Speicherort aus gezeichnet werden können.
   
-Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Office 365 Security &amp; Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps in der Exchange-Verwaltungskonsole deaktivieren. Admin Center. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) weiterhin funktionieren, bis Sie das Office 365 Security &amp; Compliance Center aktivieren.
+Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Office 365 Security &amp; Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) weiterhin funktionieren, bis Sie das Office 365 Security &amp; Compliance Center aktivieren.
   
 Beachten Sie, dass Richtlinien Tipps zwar nur von einem einzigen Speicherort aus gezeichnet werden können, e-Mail-Benachrichtigungen jedoch immer gesendet werden, selbst wenn Sie DLP &amp; -Richtlinien sowohl im Office 365 Security Compliance Center als auch im Exchange Admin Center verwenden.
   
@@ -295,5 +286,3 @@ Sie können den Text für Richtlinien Tipps separat von der e-Mail-Benachrichtig
 - [Inhalt der DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
 - [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
-    
-

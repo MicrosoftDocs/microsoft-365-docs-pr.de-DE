@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Verwenden Sie ein PowerShell-Skript, um eine Compliance-eDiscovery-Suche in Exchange Online basierend auf einer im Security #a0 Compliance Center erstellten Suche zu erstellen. '
-ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a16bf747da2d2eb8219ac4c13f4ff8c34d37b2c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081861"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686281"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Verwenden der Inhaltssuche im eDiscovery-Workflow
 
@@ -48,7 +48,7 @@ Der erste Schritt besteht in der Verwendung des Security #a0 Compliance Center (
     
 4. Klicken Sie unter **Wo sollen wir suchen?** auf **Alle Postfächer durchsuchen**, und klicken Sie dann auf **Weiter**.
     
-5. Geben Sie im Feld unter **Wonach sollen wir für Sie suchen?** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften , z. B. Sende- und Empfangsdatum, oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum der letzten Dokumentänderung. Sie können komplexere Abfragen verwenden, die einen booleschen Operator wie and, or, Not oder near verwenden, oder Sie können auch nach vertraulichen Informationen (beispielsweise Sozialversicherungsnummern) in Nachrichten suchen. Weitere Informationen zum Erstellen von Suchabfragen finden Sie unter [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
+5. Geben Sie im Feld unter **Wonach sollen wir für Sie suchen?** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften wie das Sende- und Empfangsdatum oder Dokumenteigenschaften wie Dateinamen oder das Datum angeben, an dem ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operator wie and, or, Not oder near verwenden, oder Sie können auch nach vertraulichen Informationen (beispielsweise Sozialversicherungsnummern) in Nachrichten suchen. Weitere Informationen zum Erstellen von Suchabfragen finden Sie unter [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
 6. Klicken Sie auf **Suche**, um die Sucheinstellungen zu speichern und die Suche zu starten. 
     
@@ -62,11 +62,11 @@ Sie können auch das **New-ComplianceSearch**-Cmdlet zum Durchsuchen aller Postf
   
 Im folgenden finden Sie ein Beispiel für die Verwendung von PowerShell zum Durchsuchen aller Postfächer in Ihrer Organisation. Die Suchabfrage gibt alle zwischen dem 1. Januar 2015 und dem 30. Juni 2015 gesendeten Nachrichten zurück, die den Ausdruck "Finanzbericht" in der Betreffzeile enthalten. Der erste Befehl erstellt die Suche, und der zweite Befehl führt die Suche aus. 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -80,7 +80,7 @@ Wenn Sie eine Inhaltssuche mit nicht mehr als 1.000 Quellpostfächern unterstüt
   
 1. Speichern Sie den folgenden Text in einer PowerShell-Skriptdatei unter Verwendung des filename-Suffixes ". ps1". Sie können es beispielsweise in einer Datei mit dem Namen `SourceMailboxes.ps1`speichern.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -112,7 +112,7 @@ Wenn Sie eine Inhaltssuche mit nicht mehr als 1.000 Quellpostfächern unterstüt
 
 2. Wechseln Sie in Security #a0 Compliance Center PowerShell zu dem Ordner, in dem sich das im vorherigen Schritt erstellte Skript befindet, und führen Sie dann das Skript aus. Zum Beispiel:
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -128,7 +128,7 @@ Der nächste Schritt besteht darin, eine Verbindung zwischen Windows PowerShell 
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamensuffixes „.ps1". Sie können es beispielsweise in einer Datei mit dem Namen `ConnectEXO-CC.ps1`speichern.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -139,7 +139,7 @@ Der nächste Schritt besteht darin, eine Verbindung zwischen Windows PowerShell 
 
 2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, wechseln Sie zu dem Ordner, in dem sich das Skript befindet, das Sie im vorherigen Schritt erstellt haben, und führen Sie dann das Skript aus. Zum Beispiel:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
@@ -167,7 +167,7 @@ Nachdem Sie die duale PowerShell-Sitzung in Schritt 2 erstellt haben, besteht de
     
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamensuffixes „.ps1". Sie können es beispielsweise in einer Datei mit dem Namen `CreateMBSearchFromComplianceSearch.ps1`speichern.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -231,12 +231,11 @@ Nachdem Sie die duale PowerShell-Sitzung in Schritt 2 erstellt haben, besteht de
   {
     New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. Wechseln Sie in der Windows PowerShell-Sitzung, die Sie in Schritt 2 erstellt haben, zu dem Ordner, in dem sich das Skript befindet, das Sie im vorherigen Schritt erstellt haben, und führen Sie dann das Skript aus. Zum Beispiel:
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 

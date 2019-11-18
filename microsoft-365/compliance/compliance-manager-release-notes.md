@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417504"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "38686050"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Anmerkungen zur Version für Compliance-Manager (Vorschau)
 
@@ -27,11 +27,9 @@ Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microso
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Neuerungen im Compliance-Manager (Vorschau)
 
-- **Rollenbasierter Zugriff auf den Compliance-Manager:** Die standardmäßige **Guess-Zugriffs** Rolle wurde entfernt. Damit ein Benutzer auf den Compliance-Manager zugreifen kann, muss der globale Administrator [jedem Benutzer eine Berechtigung zuweisen](compliance-manager-overview#permissions.md).
+- **Rollenbasierter Zugriff auf den Compliance-Manager:** Die standardmäßige **Gastzugriffs** Rolle wurde entfernt. Damit ein Benutzer auf den Compliance-Manager zugreifen kann, muss der globale Administrator [jedem Benutzer eine Berechtigung zuweisen](compliance-manager-overview.md#permissions).
 
-- **Integration in Microsoft Secure Score:** Compliance-Manager unterstützt die Integration mit [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) , indem Kunden verwaltete Aktionen mit mehr als 50 Secure Score-Aktionen zugeordnet werden. Wenn Sie eine zugeordnete Aktion in "Secure Score" abschließen, wird die entsprechende Compliance-Manager-Aktion automatisch aktualisiert.
-
-- **Importieren benutzerdefinierter Bewertungen:** Zusätzlich zu den integrierten Bewertungen unterstützt Compliance Manager jetzt das Importieren von benutzerdefinierten Vorlagen. Sie können benutzerdefinierte Bewertungen für ein Produkt oder eine Dienstleistung sowie für alle Standards oder Verordnungen erstellen.
+- **Aktualisierte Kompatibilitätsbewertung**: das Kompatibilitäts Ergebnis enthält jetzt Ergebnisse für von Microsoft verwaltete Aktionen. Ihre Punktzahl wird dadurch zunehmen.
 
 - **Actions-Elemente:** Aktionselemente sind jetzt einzelne Elemente, und viele umfassen die Telemetrie-Sammlung aus der Microsoft Secure Score Graph-API. Wenn möglich, werden Empfehlungen zur technischen Aktion nun Links zur entsprechenden Konfigurationsseite im Office 365-Dienst angezeigt.
 
@@ -39,8 +37,6 @@ Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microso
     - **Dimensionen:** Anzeigen, hinzufügen und Anpassen von Metadaten für Vorlagen, BEWERTUNGEN und Aktionselemente, mit denen Sie benutzerdefinierte Pivots für Filter erstellen können.
     - **Besitzer:** Geben Sie einen Besitzer für jedes Aktionselement an.
     - **Aktionen für Kunden:** Verwalten Sie die vollständige Liste der Aktionen, die in Compliance-Manager (Preview) enthalten sind, und aktivieren/deaktivieren Sie die Überwachung sicherer Bewertungen für Aktionselemente, die mit Secure Score integriert sind.
-
-- **Aktualisierte Kompatibilitätsbewertung**: die Methodik wurde geändert, um die Synchronisierung mit Microsoft Secure Score zu unterstützen. Das Ergebnis wird basierend auf von Microsoft verwalteten Aktions Ergebnissen und von Kunden verwalteten Aktionspunkten berechnet.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Bekannte Probleme im Compliance-Manager (Vorschau)
 
@@ -52,8 +48,11 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 
 ### <a name="secure-score"></a>Sicherheitsbewertung
 
-- Sichere Ergebnis Ergebnisse sind für einige Aktionselemente in bestimmten Microsoft 365-und Office 365-Abonnements nicht verfügbar. Das sichere Ergebnis Ergebnis lautet in diesen Fällen "konnte nicht erkannt werden".
+- Sichere Ergebnis Ergebnisse sind für einige Aktionselemente in bestimmten Microsoft 365-und Office 365-Abonnements nicht verfügbar. In diesen Fällen konnte das sichere Ergebnis Ergebnis **nicht erkannt werden** .
 - Manchmal werden sichere Ergebnis Ergebnisse für die entsprechenden Richtlinien und Aktionselemente nicht abgeschlossen zurückgegeben.
+- Für neue Mandanten ist die Sicherung der Bewertungs Aktualisierungen für alle Aktionen automatisch aktiviert. Der globale Administrator kann die Option für die kontinuierliche Aktualisierung sicherer Bewertungen auf aus festlegen, wodurch Updates für alle Aktionen deaktiviert werden.
+- Wenn Secure Score Updates aktiviert sind, werden Aktionen aktiv durch Secure Score überwacht, obwohl das Test Datum der Aktion nicht aktualisiert wird, um die Überwachung widerzuspiegeln.
+- Wenn neue Bewertungen erstellt werden, enthalten Scores automatisch von Microsoft verwaltete Steuerpunkte und die Integration sicherer Bewertungen.
 
 ### <a name="microsoft-managed-controls"></a>Von Microsoft verwaltete Steuerelemente
 
@@ -69,12 +68,9 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 
 - Wenn Sie eine Vorlage importieren, spiegeln alle auf dieser Vorlage basierenden Bewertungen alle Steuerelementfamilien wider, die Teil der Vorlage sind. Wenn Sie der Vorlage jedoch neue Steuerelementfamilien hinzufügen, werden die Änderungen in vorhandenen Bewertungen nicht berücksichtigt. Nur neue Bewertungen, die aus der aktualisierten Vorlage erstellt wurden, spiegeln die Änderungen wider.
 
-### <a name="filters"></a>Filter
-
-- Das Filtern von Aktionselementen oder Steuerelementen führt nicht konsistent zu korrekten Ergebnissen.
-
 ### <a name="templates"></a>Vorlagen
 
+- Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
 - Archivierte Vorlagen können bearbeitet werden, und Sie sollten nicht bearbeitbar sein.
 - Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 

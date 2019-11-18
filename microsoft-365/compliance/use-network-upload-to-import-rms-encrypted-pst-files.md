@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Hier erfahren Sie, wie Sie mit dem Netzwerk Upload RMS-verschlüsselte PST-Dateien in Benutzerpostfächer in Office 365 importieren.
-ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c31658ead08fd1c72447f1182af28c32db421842
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082688"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686302"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Verwenden des Netzwerk Uploads zum Importieren von RMS-verschlüsselten PST-Dateien in Office 365
 
@@ -51,7 +51,7 @@ Hier sind die erforderlichen Schritte zum Verschlüsseln und Importieren von PST
   
 Weitere Informationen zum Importieren von Daten in Office 365 finden Sie unter [Overview of Import your organization PST files to Office 365](importing-pst-files-to-office-365.md).
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen in Exchange Online über die Rolle "Postfachimport export" verfügen, um PST-Dateien in Office 365 Postfächer zu importieren. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder unter "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppen](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
@@ -110,13 +110,13 @@ Nachdem Sie den Rights Management-Dienst aktiviert haben, besteht der nächste S
     
 2. Führen Sie den folgenden Befehl aus, um die RMS-Schlüssel Freigabe-URL festzulegen.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation <RMS key sharing location>
     ```
 
     Verwenden Sie die folgende Tabelle, um den richtigen RMS-Schlüssel Freigabespeicherort für den Standort Ihrer Organisation zu ermitteln.
     
-    |**Standort**|**RMS-Key-Sharing-Location**|
+    |**Ort**|**RMS-Key-Sharing-Location**|
     |:-----|:-----|
     |Nordamerika  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |Europäische Union  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
@@ -129,13 +129,13 @@ Nachdem Sie den Rights Management-Dienst aktiviert haben, besteht der nächste S
   
     Mit diesem Befehl wird beispielsweise der Speicherort der RMS-Online Schlüssel Freigabe in Exchange Online für einen Kunden in Nordamerika konfiguriert.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 3. Führen Sie den folgenden Befehl aus, um eine vertrauenswürdige Veröffentlichungsdomäne (Trusted Publishing Domain, TPD) von RMS Online in Ihre Office 365 Organisation zu importieren. 
     
-    ```
+    ```powershell
     Import-RMSTrustedPublishingDomain -RMSOnline -Name "RMS Online"
     ```
 
@@ -143,7 +143,7 @@ Nachdem Sie den Rights Management-Dienst aktiviert haben, besteht der nächste S
     
 4. Führen Sie den folgenden Befehl aus, um IRM für Ihre Office 365 Organisation zu aktivieren.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
 
@@ -151,7 +151,7 @@ Nachdem Sie den Rights Management-Dienst aktiviert haben, besteht der nächste S
 
 Der letzte Schritt in diesem Abschnitt ist das Herunterladen des RMS-Clients (Rights Management Services, Rechteverwaltungsdienste) 2,1. Diese Software dient zum Schutz des Zugriffs auf Azure RMS und zum Schutz von Informationen, die über Anwendungen mit Azure RMS fließen. Installieren Sie den RMS-Client auf demselben Computer, den Sie zum Verschlüsseln und Hochladen von PST-Dateien in Schritt 5 verwenden werden. 
   
-1. Download [Rights Management Service Client 2,1](https://www.microsoft.com/en-us/download/details.aspx?id=38396).
+1. Download [Rights Management Service Client 2,1](https://www.microsoft.com/download/details.aspx?id=38396).
     
 2. Führen Sie den Client 2,1-Assistenten für Active Directory Rights Management Service aus, um den Client zu installieren.
 
@@ -163,7 +163,7 @@ Nachdem Sie Azure RMS eingerichtet haben, ist der nächste Schritt das Generiere
     
 2. Führen Sie den folgenden Befehl aus, um eine Verbindung mit dem Microsoft Online-Dienst herzustellen.
     
-    ```
+    ```powershell
     Connect-MsolService
     ```
 
@@ -171,7 +171,7 @@ Nachdem Sie Azure RMS eingerichtet haben, ist der nächste Schritt das Generiere
     
 4. Führen Sie den folgenden Befehl aus, um einen Verschlüsselungsschlüssel zu generieren (einen symmetrischen Schlüssel aufrufen). Hierzu erstellen Sie einen neuen PST-Verschlüsselungs Prinzipal.
     
-    ```
+    ```powershell
     New-MsolServicePrincipal -DisplayName PstEncryptionPrincipal
     ```
 
@@ -192,7 +192,7 @@ Der nächste Schritt besteht darin, die Mandanten-ID und die URL für den Lizenz
   
 1. Führen Sie im Azure Active Directory-Modul für Windows PowerShell (das mit dem Microsoft Online-Dienst verbunden ist) den folgenden Befehl aus, um eine Verbindung mit dem Azure RMS-Dienst in Ihrer Office 365 Organisation herzustellen.
     
-    ```
+    ```powershell
     Connect-AadrmService 
     ```
 
@@ -200,7 +200,7 @@ Der nächste Schritt besteht darin, die Mandanten-ID und die URL für den Lizenz
     
 3. Führen Sie den folgenden Befehl aus, um die Mandanten-ID für den Azure RMS-Dienst in Ihrer Office 365 Organisation anzuzeigen.
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL BPOSId
     ```
 
@@ -208,7 +208,7 @@ Der nächste Schritt besteht darin, die Mandanten-ID und die URL für den Lizenz
     
 4. Führen Sie den folgenden Befehl aus, um den Lizenzierungs Speicherort für Ihren Azure RMS-Dienst anzuzeigen.
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL LicensingIntranetDistributionPointUrl
     ```
 
@@ -260,7 +260,7 @@ Nachdem Sie Schritt 1 bis Schritt 4 abgeschlossen haben, können Sie das Tool "o
     
 3. Führen Sie den folgenden Befehl zum Verschlüsseln und Hochladen von PST-Dateien in Office 365 aus.
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
     ```
 
@@ -273,13 +273,13 @@ Nachdem Sie Schritt 1 bis Schritt 4 abgeschlossen haben, können Sie das Tool "o
     | `/protect-tenantid:` <br/> |Gibt die Identität ihrer Azure RMS-Organisation an. Verwenden Sie den Wert der `BPOSId` Eigenschaft, die Sie in Schritt 3 abgerufen haben.  <br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
     | `/protect-key:` <br/> |Gibt den symmetrischen Schlüssel an, den Sie in Schritt 2 erhalten haben. Stellen Sie sicher, dass Sie den Wert dieses Parameters mit doppelten Anführungszeichen ("") umgeben.  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |Gibt an, ob Sie PST-Dateien über das Netzwerk hochladen oder auf einer Festplatte versenden. Der Wert `upload` gibt an, dass Sie die Dateien über das Netzwerk hochladen. Der Wert `drive` gibt an, dass Sie den PST auf einer Festplatte verschicken.  <br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |Gibt das Ziel in Office 365 an, in dem Ihre PST-Dateien hochgeladen werden. Dies ist der Azure-Speicherort für Ihre Organisation. Der Wert für diesen Parameter besteht aus der Netzwerk-Upload-URL aus der SAS-URL, die Sie in Schritt 4 kopiert haben. Stellen Sie sicher, dass Sie den Wert dieses Parameters mit doppelten Anführungszeichen ("") umgeben.  <br/><br/> **Tipp:** Optional Sie können einen Unterordner im Azure-Speicherort angeben, in den die verschlüsselten PST-Dateien hochgeladen werden sollen. Hierzu fügen Sie einen Unterordner Speicherort (nach "ingestiondata") in der Netzwerk-Upload-URL hinzu. Im ersten Beispiel wird kein Unterordner angegeben. Das bedeutet, dass das PST in den Stamm (namens *ingestiondata* ) des Azure-Speicherorts hochgeladen wird. Das zweite Beispiel lädt die PST-Dateien in einen Unterordner (mit dem Namen *EncryptedPSTs* ) am Azure-Speicherort hoch.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Oder  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-dest:` <br/> |Gibt das Ziel in Office 365 an, in dem Ihre PST-Dateien hochgeladen werden. Dies ist der Azure-Speicherort für Ihre Organisation. Der Wert für diesen Parameter besteht aus der Netzwerk-Upload-URL aus der SAS-URL, die Sie in Schritt 4 kopiert haben. Stellen Sie sicher, dass Sie den Wert dieses Parameters mit doppelten Anführungszeichen ("") umgeben.  <br/><br/> **Tipp:** (optional) Sie können einen Unterordner am Azure-Speicherort angeben, in den die verschlüsselten PST-Dateien hochgeladen werden sollen. Hierzu fügen Sie einen Unterordner Speicherort (nach "ingestiondata") in der Netzwerk-Upload-URL hinzu. Im ersten Beispiel wird kein Unterordner angegeben. Das bedeutet, dass das PST in den Stamm (namens *ingestiondata* ) des Azure-Speicherorts hochgeladen wird. Das zweite Beispiel lädt die PST-Dateien in einen Unterordner (mit dem Namen *EncryptedPSTs* ) am Azure-Speicherort hoch.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Oder  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
     | `/upload-destSAS:` <br/> |Gibt den SAS-Schlüssel für Ihre Organisation an. Der Wert für diesen Parameter besteht aus dem SAS-Schlüssel aus der SAS-URL, die Sie in Schritt 4 kopiert haben. Beachten Sie, dass das erste Zeichen im SAS-Schlüssel ein Fragezeichen ("?") ist. Stellen Sie sicher, dass Sie den Wert dieses Parameters mit doppelten Anführungszeichen ("") umgeben.  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |Diese optionale Option gibt den rekursiven Modus an, sodass das Tool "o365importtool. exe PST-Dateien kopiert, die sich in Unterordnern im Quellverzeichnis befinden, das durch den `/srcdir:` -Parameter angegeben wird.  <br/><br/> **Hinweis:** Wenn Sie diesen Switch verwenden, werden PST-Dateien in Unterordnern nach dem Hochladen einen anderen Dateipfadname am Azure-Speicherort haben. Sie müssen den genauen Dateipfadname in der CSV-Datei angeben, die Sie in Schritt 7 erstellen.           | `/recurse` <br/> |
    
     Im folgenden finden Sie ein Beispiel für die Syntax für das Tool "o365importtool. exe unter Verwendung der tatsächlichen Werte für die einzelnen Parameter:
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:\\FILESERVER01\PSTs /protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing" /protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b  /protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=" /transfer:upload /upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata" /upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
     ```
 
@@ -339,7 +339,7 @@ Nachdem die PST-Dateien verschlüsselt und in den Azure-Speicherort für Ihre Of
     
 2. Öffnen oder speichern Sie die CSV-Datei auf Ihrem lokalen Computer. Das folgende Beispiel zeigt eine abgeschlossene PST-Importzuordnungsdatei (in Editor geöffnet). Es ist wesentlich einfacher, Microsoft Excel zum Bearbeiten der CSV-Datei zu verwenden.
     
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst.pfile,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst.pfile,annb@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
@@ -434,7 +434,7 @@ Der letzte Schritt besteht darin, den PST-Importauftrag im Import Dienst in Offi
     
 - Im folgenden finden Sie ein Beispiel für die Schlüssel, IDs und URLs, die in den Schritten 2, 3 und 4 abgerufen werden. Dieses Beispiel enthält auch die Syntax für den Befehl, den Sie im Tool "o365importtool. exe ausführen, um PST-Dateien in Office 365 zu verschlüsseln und hochzuladen. Ergreifen Sie entsprechende Vorsichtsmaßnahmen, um diese so zu schützen, wie Sie Kennwörter oder andere Sicherheitsinformationen schützen würden.
     
-  ```
+  ```text
   Symmetric key: l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=
 
   BPOSId: 42745b33-2a5c-4726-8a2a-ca43caa0f74b

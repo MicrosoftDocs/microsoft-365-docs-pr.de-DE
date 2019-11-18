@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector einrichten, um Daten aus dem Chat-Tool von Instant Bloomberg in Office 365 zu importieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: eda68a0fdc887a2042a78683eaef0693264d0684
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081107"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686048"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten in Office 365
 
 Verwenden Sie einen nativen Connector im Security #a0 Compliance Center in Office 365 zum Importieren und Archivieren von Finanz Dienstleistungs-Chatdaten aus dem Tool " [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) Collaboration". Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit der Bloomberg Secure FTP Site (SFTP) Ihrer Organisation her, wandelt den Inhalt von Chatnachrichten in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Postfächer in Office 365.
 
-Nachdem Instant Bloomberg-Daten in Benutzerpostfächern gespeichert wurden, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung und Office 365-Aufbewahrungsrichtlinien auf Bloomberg-Daten anwenden. Beispielsweise können Sie Instant Bloomberg Chatnachrichten mithilfe der Inhaltssuche durchsuchen oder das Postfach, das die Instant Bloomberg-Daten enthält, einer Depotbank in einem erweiterten eDiscovery-Fall zuordnen. Die Verwendung eines Instant Bloomberg-Konnektors zum Importieren und Archivieren von Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
+Nachdem Instant Bloomberg-Daten in Benutzerpostfächern gespeichert wurden, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, [Kommunikations Konformität](communication-compliance.md)und Office 365-Aufbewahrungsrichtlinien auf Bloomberg-Daten anwenden. Beispielsweise können Sie Instant Bloomberg Chatnachrichten mithilfe der Inhaltssuche durchsuchen oder das Postfach, das die Instant Bloomberg-Daten enthält, einer Depotbank in einem erweiterten eDiscovery-Fall zuordnen. Die Verwendung eines Instant Bloomberg-Konnektors zum Importieren und Archivieren von Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>Übersicht über die Archivierung von Instant Bloomberg-Daten
 
@@ -41,7 +41,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
     
     b. **Elemente mit einem Wert in der CorporateEmailAddress-Eigenschaft, die keinem Office 365 Benutzerkonto entsprechen:** Wenn der Connector keine e-Mail-Adresse in der *CorporateEmailAddress* -Eigenschaft einem bestimmten Benutzerkonto in Office 365 zuordnen kann, wird das Element in den Ordner Posteingangs Verzeichnis eines alternativen Postfachs "Catch-All" in Office 365 kopiert.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Viele der erforderlichen Implementierungsschritte zum Archivieren von Instant Bloomberg-Daten sind extern für Office 365 und müssen abgeschlossen sein, bevor Sie den Connector im Security #a0 Compliance Center erstellen können.
 
@@ -119,7 +119,7 @@ Der letzte Schritt besteht darin, einen Instant Bloomberg-Konnektor im Security 
 5. Geben Sie auf der Seite **alternatives Postfach** die e-Mail-Adresse eines Postfachs ein, das zum Speichern der Chatnachrichten aus Instant Bloomberg verwendet wird, die keinem Benutzerpostfach in Ihrer Organisation zugeordnet sind.
 
    > [!NOTE]
-   > Jede Chatnachricht in jeder Unterhaltung in Instant Bloomberg enthält eine Eigenschaft namens *CorporateEmailAddress*, die die e-Mail-Adresse Ihrer Organisation für den Chat Teilnehmer enthält. Während des Importvorgangs versucht der Connector, Chatnachrichten in ein Benutzerpostfach in Office 365 mit denselben e-Mail-Adressen zu importieren, die mit dem in der *CorporateEmailAddress* -Eigenschaft übereinstimmen. Wenn es kein Office 365 Postfach mit derselben Adresse wie in der *CorporateEmailAddress* -Eigenschaft gibt, importiert der Connector die Chatnachricht in das alternative Postfach, das Sie auf dieser Seite angeben. Zurzeit werden Instant Bloomberg Chatnachrichten, die im alternativen Postfach archiviert werden, nicht durch Aufsichtsrichtlinien in Office 365 überwacht.
+   > Jede Chatnachricht in jeder Unterhaltung in Instant Bloomberg enthält eine Eigenschaft namens *CorporateEmailAddress*, die die e-Mail-Adresse Ihrer Organisation für den Chat Teilnehmer enthält. Während des Importvorgangs versucht der Connector, Chatnachrichten in ein Benutzerpostfach in Office 365 mit denselben e-Mail-Adressen zu importieren, die mit dem in der *CorporateEmailAddress* -Eigenschaft übereinstimmen. Wenn kein Office 365 Postfach mit derselben Adresse wie in der *CorporateEmailAddress* -Eigenschaft vorhanden ist, importiert der Connector die Chatnachricht in das alternative Postfach, das Sie auf dieser Seite angeben.
 
 6. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **vorbereiten** , um den Connector zu erstellen.
 

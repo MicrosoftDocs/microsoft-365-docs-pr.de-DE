@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie ein sicheres Team zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302952"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627499"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams für streng regulierte Daten
 
@@ -125,7 +125,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration bis zu diesem Punkt
 
 ![Schritt 4 der Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### <a name="step-5-create-the-label-or-a-sublabel-of-the-highly-regulated-label"></a>Schritt 5: Erstellen der Bezeichnung oder einer Unterbezeichnung der streng regulierten Bezeichnung
+### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>Schritt 5: Erstellen einer Vertraulichkeitsbezeichnung oder einer Unterbezeichnung der streng regulierten Vertraulichkeitsbezeichnung
 
 Im Gegensatz zu einer Vertraulichkeitsbezeichnung für streng regulierte Daten, die von jedem auf eine beliebige Datei angewendet werden kann, benötigt ein sicheres Team eine eigene Bezeichnung oder Unterbezeichnung, damit für Dateien, denen diese Bezeichnung oder Unterbezeichnung zugeordnet ist, Folgendes gilt:
 

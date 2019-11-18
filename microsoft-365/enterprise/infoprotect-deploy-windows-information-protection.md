@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Bereitstellen von Windows Information Protection in Microsoft 365.
-ms.openlocfilehash: 5d327ea97a24d4b1015940688b7702dc761e826d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370122"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627381"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Schritt 4: Konfigurieren von Windows Information Protection
 
@@ -39,7 +39,7 @@ Gehen Sie folgendermaßen vor, um WIP in Ihrer Organisation mit Microsoft 365 En
   - Stellen Sie sicher, dass Sie Liste mit geschützten Apps ausgefüllt haben.
   - Wählen Sie Ihre WIP-Schutzebene aus.
 
-Sie können WIP auch mit [System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm) verwenden. 
+Sie können WIP auch mit dem [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm) verwenden. 
 
 Weitere Informationen finden Sie unter [Bewährte Methoden für WIP]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip).
 

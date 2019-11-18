@@ -1,5 +1,5 @@
 ---
-title: Exportieren, konfigurieren und Anzeigen von Überwachungsprotokolleinträgen
+title: Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Nachdem Sie die Ergebnisse einer Office 365-Überwachungsprotokoll Suche in eine CSV-Datei exportiert und heruntergeladen haben, können Sie das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um die einzelnen Eigenschaften im JSON-Objekt in der Auditdata-Spalte in eine eigene Spalte aufzuteilen. Auf diese Weise können Sie schnell die spezifischen Überwachungsdaten Auffinden, nach denen Sie suchen.
-ms.openlocfilehash: 7dac373e8f25ead38dddbe2663e521b35b3153ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b422877c10f086553a695e43c50f02d389dd2b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081434"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686244"
 ---
-# <a name="export-configure-and-view-audit-log-records"></a>Exportieren, konfigurieren und Anzeigen von Überwachungsprotokolleinträgen
+# <a name="export-configure-and-view-audit-log-records"></a>Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen
 
 Nachdem Sie das Office 365 Überwachungsprotokoll durchsucht und die Suchergebnisse in eine CSV-Datei heruntergeladen haben, enthält die Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Die Daten in dieser Spalte werden als JSON-Objekt formatiert, das mehrere Eigenschaften enthält, die als *Eigenschaft: Wert-* Paare durch Kommas getrennt konfiguriert sind. Sie können das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um jede Eigenschaft im JSON-Objekt in der **Auditdata** -Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft eine eigene Spalte aufweist. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und Filtern, die Ihnen helfen, die gewünschten Überwachungsdaten schnell zu finden.
 
@@ -108,11 +108,11 @@ Im folgenden finden Sie einige Tipps und Beispiele für das Exportieren und Anze
 
    Führen Sie in diesem Beispiel die folgenden Befehle aus, um alle Datensätze im Zusammenhang mit SharePoint-Freigabe Vorgängen zurückzugeben. 
    
-   ```
+   ```powershell
    $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
    ```
 
-   ```
+   ```powershell
    $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
    ```
 
@@ -122,10 +122,10 @@ Im folgenden finden Sie einige Tipps und Beispiele für das Exportieren und Anze
    
    - Sie können nur einen einzelnen Wert für diesen Parameter einschließen. Um nach Überwachungsdatensätzen für andere Datensatztypen zu suchen, müssen Sie die beiden vorherigen Befehle erneut ausführen, um einen anderen Datensatztyp anzugeben und diese Ergebnisse an die ursprüngliche CSV-Datei anzufügen. Beispielsweise würden Sie diese beiden Befehle ausführen, um SharePoint-Dateiaktivitäten aus dem gleichen Datumsbereich zur PowerShellAuditlog. CSV-Datei hinzuzufügen.
 
-       ```
+       ```powershell
       $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
       ```
 
-      ```
+      ```powershell
       $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```
+      ```powershell

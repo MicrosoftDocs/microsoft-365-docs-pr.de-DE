@@ -7,19 +7,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 10/16/2019
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Erweiterte Nachrichtenverschlüsselung in Office 365 unterstützt Organisationen bei der Erfüllung Ihrer Compliance-Verpflichtungen, indem Administratoren das ablaufen und widerrufen des Zugriffs über ein Office 365-Webportal auf verschlüsselte e-Mails ermöglichen.
-ms.openlocfilehash: eb6e95b1cbf24ab19df6a595c34721c84c831211
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+description: Die erweiterte Nachrichtenverschlüsselung in Office 365 unterstützt Organisationen bei der Erfüllung Ihrer Compliance-Verpflichtungen, indem Administratoren die Möglichkeit erhalten, noch mehr mit geschützten Nachrichten zu tun.
+ms.openlocfilehash: 7594a6ed2226081e54af957268cf0ca3fe403767
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435509"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686108"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Erweiterte Office 365-Nachrichtenverschlüsselung
 
@@ -29,16 +29,18 @@ Die erweiterte Nachrichtenverschlüsselung in Office 365 unterstützt Kunden bei
 
 Sie können ein Ablaufdatum für e-Mails, die an externe Empfänger gesendet werden, nur widerrufen und festlegen.
 
-Wenn Sie Office 365 erweiterte Nachrichtenverschlüsselung verwenden, wendet Office 365 einen Wrapper immer dann auf e-Mails an, die der e-Mail-Fluss Regel entsprechen, auf die die Vorlage angewendet wird, wenn Sie eine benutzerdefinierte Branding-Vorlage anwenden. Sie können nur Nachrichten widerrufen und Ablaufdaten auf Nachrichten anwenden, die Benutzer über das Portal erhalten. Mit anderen Worten: e-Mail, auf die eine benutzerdefinierte Branding-Vorlage angewendet wurde.
-
 ## <a name="get-started-with-office-365-advanced-message-encryption"></a>Erste Schritte mit Office 365 erweiterte Nachrichtenverschlüsselung
 
-In den folgenden Themen wird beschrieben, wie Sie die erweiterte Nachrichtenverschlüsselung einrichten und verwenden.
+In den folgenden Artikeln wird beschrieben, wie Sie die erweiterte Nachrichtenverschlüsselung einrichten und verwenden.
 
-Ihre Organisation muss über ein Abonnement verfügen, das Office 365 erweiterte Nachrichtenverschlüsselung enthält. Ausführliche Informationen zu unterstützten Abonnements finden Sie in der [Beschreibung des Nachrichtenrichtlinien-und Kompatibilitätsdiensts](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
+Ihre Organisation muss über ein Abonnement verfügen, das Office 365 erweiterte Nachrichtenverschlüsselung enthält. Ausführliche Informationen zu unterstützten Abonnements finden Sie in der [Beschreibung des Nachrichtenrichtlinien-und Kompatibilitätsdiensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
 
 Wenn Sie Office 365 Nachrichtenverschlüsselung nicht bereits eingerichtet haben, finden Sie weitere Informationen unter [Einrichten neuer Office 365 Nachrichten Verschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md).
+
+Mit der erweiterten Nachrichtenverschlüsselung sind Sie nicht auf eine einzelne Branding-Vorlage limitiert. Stattdessen können Sie mehrere Branding-Vorlagen erstellen und verwenden. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten](add-your-organization-brand-to-encrypted-messages.md).
 
 [Legen Sie ein Ablaufdatum für e-Mails fest, die durch Office 365 erweiterte Nachrichtenverschlüsselung verschlüsselt werden](ome-advanced-expiration.md). Steuern Sie vertrauliche, außerhalb der Organisation freigegebene e-Mails mit automatischen Richtlinien, die den Schutz durch Ablauf des Zugriffs über ein sicheres Webportal auf verschlüsselte e-Mails verbessern.
 
 [Durch Office 365 erweiterte Nachrichtenverschlüsselung verschlüsselte e-Mails widerrufen](revoke-ome-encrypted-mail.md). Steuern Sie vertrauliche e-Mails, die außerhalb der Organisation freigegeben wurden, und erhöhen Sie den Schutz, indem Sie den Zugriff über ein sicheres Webportal auf verschlüsselte e-Mails widerrufen.  
+
+Wenn Sie Office 365 erweiterte Nachrichtenverschlüsselung verwenden, wendet Office 365 einen Wrapper immer dann auf e-Mails an, die der e-Mail-Fluss Regel entsprechen, auf die die Vorlage angewendet wird, wenn Sie eine benutzerdefinierte Branding-Vorlage anwenden. Sie können nur Nachrichten widerrufen und Ablaufdaten auf Nachrichten anwenden, die Benutzer über das Portal erhalten. Mit anderen Worten: e-Mail, auf die eine benutzerdefinierte Branding-Vorlage angewendet wurde. Weitere Informationen und ein Beispiel finden Sie im Leitfaden unter [sicherstellen, dass alle externen Empfänger das OM-Portal zum Lesen verschlüsselter e-Mails verwenden – Office 365 nur erweiterte Nachrichtenverschlüsselung](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).

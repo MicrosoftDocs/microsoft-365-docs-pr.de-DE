@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Für Office 365-, Azure-und Dynamics 365-Online Richtlinien Konformitätsberichte, um Informationen zu Drittanbietern zu erhalten, erfahren Sie, wie Microsoft Kundendaten schützt und wie Sie mit ISO, HIPAA, NIST, FINRA, dsgvo und FedRAMP kompatibel sind, wenn Sie diese Online Dienste verwenden.
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22968c23b1d521b8fd48e9eccd4679e0a6dd2ed2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080685"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686236"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust-Portal
 
@@ -58,7 +58,7 @@ Die Features und Inhalte des Dienst Vertrauensstellungs Portals können über da
 
 In den folgenden Abschnitten werden die einzelnen Elemente im Haupt Menü beschrieben.
   
-### <a name="service-trust-portal"></a>Vertrauensstellungsportal (STP)
+### <a name="service-trust-portal"></a>Service Trust Portal
 
 Der Link **Service Trust Portal** zeigt die Startseite an. Es bietet eine schnelle Möglichkeit, wieder zur Startseite zu gelangen.
 
@@ -76,24 +76,24 @@ Enthält die folgenden Tools und Ressourcen für die Einhaltung der Kompatibilit
 
   Informationen zu Überwachungsberichten und einen Link zur Seite " **Überwachungsberichte** " finden Sie auch auf der Startseite des Dienst Vertrauensstellungs Portals. 
   
-- **Compliance** -Manager – Compliance-Manager ist ein Workflow basiertes Risiko Bewertungstool, das Sie bei der Überwachung, Zuweisung und Überprüfung der behördlichen Compliance-Aktivitäten Ihrer Organisation im Zusammenhang mit Microsoft Cloud-Diensten wie Office 365, Dynamics 365 und Azure. Verwenden Sie den Compliance-Manager, um die Einhaltung gesetzlicher Vorschriften innerhalb des Modells der Cloud mit gemeinsamer Verantwortung zu verwalten. Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers zur Unterstützung der Einhaltung von Datenschutz-und behördlichen Anforderungen bei der Verwendung von Microsoft Cloud Services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Compliance** -Manager – Compliance-Manager ist ein Workflow basiertes Risiko Bewertungstool, das Sie bei der Überwachung, Zuweisung und Überprüfung der behördlichen Compliance-Aktivitäten Ihrer Organisation im Zusammenhang mit Microsoft-Cloud-Diensten wie Office 365, Dynamics 365 und Azure unterstützt. Verwenden Sie den Compliance-Manager, um die Einhaltung gesetzlicher Vorschriften innerhalb des Modells der Cloud mit gemeinsamer Verantwortung zu verwalten. Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers zur Unterstützung der Einhaltung von Datenschutz-und behördlichen Anforderungen bei der Verwendung von Microsoft Cloud Services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
-### <a name="industries--regions"></a>Branchen #a0 Regionen
+### <a name="industries--regions"></a>Branchen und Regionen
 
 Bietet Branchen-und regionsspezifische Konformitätsinformationen zu Microsoft Cloud Services.
 
 - **Industries** – bietet branchenspezifische Zielseiten für Informationen und darüber, wie Microsoft Cloud-Dienste Ihre Organisation dabei unterstützen, mit Standards und Vorschriften für diese Branchen konform zu sein:
 
     - Schulung und Weiterbildung
-    - Finanzdienstleistungen
-    - Government
-    - Health
+    - Finanzdienste
+    - Behörden
+    - Gesundheitswesen
     - Fertigung
     - Einzelhandel
 
 - **Regionen** – bietet Rechtsgutachten zu Microsoft Cloud Services Compliance mit verschiedenen Gesetzen verschiedener Länder. Zu den einzelnen Ländern gehören Australien, Tschechische Republik, Deutschland, Polen, Rumänien, Spanien und das Vereinigte Königreich.
   
-### <a name="documents--resources"></a>Dokumente #a0 Ressourcen
+### <a name="documents--resources"></a>Dokumente und Ressourcen
 
 Enthält eine Vielzahl von Sicherheits Implementierungs-und-Entwurfsinformationen, mit dem Ziel, die Einhaltung gesetzlicher Vorschriften zu vereinfachen, indem Sie verstehen, wie die Datensicherheit von Microsoft Cloud Services gewährleistet ist. Um Inhalt zu überprüfen, wählen Sie eine der Optionen auf der Seite **Dokumente #a0 Ressourcen** aus.
 
@@ -104,7 +104,7 @@ Enthält eine Vielzahl von Sicherheits Implementierungs-und-Entwurfsinformatione
 - Azure Security and Compliance Blueprints
 - Überwachte Steuerelemente
   
-### <a name="trust-center"></a>Sicherheitscenter
+### <a name="trust-center"></a>Das Trust Center
 
 Links zum [Microsoft Trust Center](https://www.microsoft.com/trustcenter), das weitere Informationen zur Sicherheit, Compliance und Datenschutz in der Microsoft-Cloud bereitstellt. Dies umfasst Informationen zu den Funktionen in Microsoft Cloud-Diensten, die Sie verwenden können, um bestimmte Anforderungen des dsgvo zu erfüllen, Dokumentation, die für Ihre dsgvo-Verantwortlichkeit hilfreich ist, sowie für Ihr Verständnis der technischen und organisatorischen Maßnahmen. Microsoft hat die Unterstützung für die dsgvo übernommen.
   
@@ -118,7 +118,7 @@ Administrative Funktionen, die nur für das globale Administratorkonto verfügba
   
  Auf der Seite **Einstellungen** können Sie dem Compliance-Manager rollenbasierten Zugriff zuweisen. Weitere Informationen finden Sie im Abschnitt "Berechtigungen und rollenbasierte Zugriffssteuerung" in [use Compliance Manager, um die Einhaltung von Datenschutz-und behördlichen Anforderungen bei der Verwendung von Microsoft Cloud Services zu unterstützen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Suchen
+### <a name="search"></a>Suche
 
 Klicken Sie auf das Lupensymbol in der oberen rechten Ecke der Seite Vertrauens Portal für das Dienst Vertrauen, um das Feld zu erweitern, Ihre Suchbegriffe einzugeben und die **Eingabe**Taste zu drücken.
 
@@ -169,4 +169,4 @@ Wir helfen Ihnen bei Fragen zum Dienst Vertrauensstellungs Portal oder Fehlern, 
   
 Ihr Feedback ist uns sehr wichtig. Klicken Sie auf die Schaltfläche Feedback am unteren Rand der Seite, um uns Kommentare darüber zu senden, was Sie getan oder nicht mochten, oder Vorschläge, die Sie zur Verbesserung unserer Produkte oder Produktfunktionen haben können.
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![Welche Art von Feedback haben Sie?](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

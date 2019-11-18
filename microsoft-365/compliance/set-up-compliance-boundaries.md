@@ -10,17 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Office 365 Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 1e87926910ad7dd356696368ad6759bfacfe37c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 13f45ce55f23d91a81068031691436383ec87ba3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081793"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686287"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -106,10 +107,10 @@ Nachdem Sie für jede Agentur Rollengruppen erstellt haben, besteht der nächste
   
 Hier ist die Syntax, die verwendet wird, um einen Such Berechtigungsfilter zu erstellen, der für Kompatibilitäts Grenzen verwendet wird.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
-  
+
 Im folgenden finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
   
 -  `FilterName`: Gibt den Namen des Filters an. Verwenden Sie einen Namen, der die Agentur beschreibt oder identifiziert, in der der Filter verwendet wird. 
@@ -125,7 +126,7 @@ Im folgenden finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
     -  `Site_Path`: Gibt die SharePoint-Websites an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Die *SharePointURL* gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Zum Beispiel: `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Beachten Sie `Site` , `Site_Path` dass die und-Filter durch einen **-oder-** Operator verbunden sind.
     
      > [!NOTE]
-     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste*. Eine Filterliste ist ein Filter, der einen Post Fach Filter und einen Website Filter enthält, der durch ein Komma getrennt ist. Beachten Sie im vorherigen Beispiel, dass durch ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute**getrennt werden `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`:. Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden zwei Such Berechtigungsfilter aus der Liste Filter erstellt: ein Post Fach Filter und ein Website Filter. Eine Alternative zur Verwendung einer Filterliste besteht darin, zwei separate Such Berechtigungsfilter für jede Agentur zu erstellen: einen Such Berechtigungsfilter für das Postfachattribut und einen Filter für die Website Attribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Such Berechtigungsfilter ist eine Frage der Präferenz.
+     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste*. Eine Filterliste ist ein Filter, der einen Post Fach Filter und einen Website Filter enthält, der durch ein Komma getrennt ist. Beachten Sie im vorherigen Beispiel, dass ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute**trennt: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden zwei Such Berechtigungsfilter aus der Liste Filter erstellt: ein Post Fach Filter und ein Website Filter. Eine Alternative zur Verwendung einer Filterliste besteht darin, zwei separate Such Berechtigungsfilter für jede Agentur zu erstellen: einen Such Berechtigungsfilter für das Postfachattribut und einen Filter für die Website Attribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Such Berechtigungsfilter ist eine Frage der Präferenz.
 
 -  `Action`: Gibt die Art der Konformitäts Suchaktion an, auf die der Filter angewendet wird. Beispielsweise würde `-Action Search` der Filter nur angewendet, wenn Mitglieder der Rollengruppe, die im `Users` Parameter definiert sind, eine Inhaltssuche ausführen. In diesem Fall würde der Filter beim Exportieren von Suchergebnissen nicht angewendet. Verwenden Sie `-Action All` für Kompatibilitäts Grenzen den Filter, damit dieser auf alle Suchaktionen angewendet wird. 
     
@@ -135,13 +136,13 @@ Im folgenden sind Beispiele für die beiden Such Berechtigungsfilter aufgeführt
   
  **Vierter Kaffee**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
-   
+
  **Weingut Winery**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -220,30 +221,30 @@ Mit Such Berechtigungs filtern können Sie auch steuern, wohin Inhalte für den 
 
 Im folgenden finden Sie Beispiele für die Verwendung des **Region** -Parameters beim Erstellen von Such Berechtigungs Filtern nach Kompatibilitäts Grenzen. Dabei wird davon ausgegangen, dass sich die Fourth Coffee-Tochtergesellschaft in Nordamerika befindet und dass sich die Weinkellerei in Europa befindet. 
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
-   
+
 Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen die folgenden Aspekte.
   
-- Der **Region** -Parameter steuert keine Suche von Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Verwenden Sie zum Begrenzen des Bereichs, in dem Exchange-Postfächer durchsucht werden, den Parameter **Filters** beim Erstellen oder Ändern eines Such Berechtigungs Filters. 
+- Der Parameter **Region** steuert keine Suchvorgänge in Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Verwenden Sie zum Begrenzen des Bereichs, in dem Exchange-Postfächer durchsucht werden, den Parameter **Filters** beim Erstellen oder Ändern eines Such Berechtigungs Filters. 
     
 - Wenn ein eDiscovery-Manager in mehreren SharePoint-Regionen durchsuchen muss, müssen Sie ein anderes Benutzerkonto erstellen, mit dem der eDiscovery-Manager im Such Berechtigungsfilter die Region angibt, in der die SharePoint-Websites oder OneDrive Konten befinden sich. Weitere Informationen zum Einrichten dieser Einstellung finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint-Umgebung mit mehreren geografischen Inhalten" unter [Inhaltssuche in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der Parameter **Region** die Suche entweder an den Haupt-oder Satelliten Speicherort, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint-und OneDrive-Websites außerhalb der Region durchsucht, die im Such Berechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben. 
     
-- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Office 365 Diensten, die Sie mithilfe des Inhalts Such Tools durchsuchen können) in den Azure-Speicherort in der Liste hochgeladen. Rechenzentrum, das durch den **Region** -Parameter angegeben wird. Auf diese Weise können Organisationen innerhalb der Compliance-Richtlinien bleiben, da Inhalte nicht über kontrollierte Grenzen hinweg exportiert werden können. Wenn im Such Berechtigungsfilter kein Bereich angegeben ist, wird der Inhalt in den Standardbereich der Organisation hochgeladen. 
+- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Office 365 Diensten, die Sie mithilfe des Inhalts Such Tools durchsuchen können) an den Azure-Speicherort im Rechenzentrum hochgeladen, das durch den **Region** -Parameter angegeben wird. Auf diese Weise können Organisationen innerhalb der Compliance-Richtlinien bleiben, da Inhalte nicht über kontrollierte Grenzen hinweg exportiert werden können. Wenn im Such Berechtigungsfilter kein Bereich angegeben ist, wird der Inhalt in den Standardbereich der Organisation hochgeladen. 
     
 - Sie können einen vorhandenen Such Berechtigungsfilter bearbeiten, um den Bereich hinzuzufügen oder zu ändern, indem Sie den folgenden Befehl ausführen:
 
-    ```
+    ```powershell
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
- 
+
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
  **Wer kann Such Berechtigungsfilter erstellen und verwalten (mithilfe von New-ComplianceSecurityFilter-und ComplianceSecurityFilter-Cmdlets)?**

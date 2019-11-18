@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hilft bei der Erläuterung der Unterschiede zwischen den Versionen der Office 365 Nachrichtenverschlüsselung.
-ms.openlocfilehash: 29c30c1630e6fbf24e9037837c162b4ac67950e2
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 1d4016e3fa0576a52ef9627539ecd96416a53fae
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435519"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38686009"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
@@ -72,11 +72,9 @@ Informationen zur Verwendung der erweiterten Nachrichtenverschlüsselung finden 
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Eindeutige Merkmale Office 365 Nachrichtenverschlüsselung in einer gcc-hoch Bereitstellung
 
-Office 365 erweiterte Nachrichtenverschlüsselung steht in einer gcc High-Umgebung nicht zur Verfügung. Sie können weiterhin eine einzelne Marken Vorlage in einer gcc-Umgebung mit hoher Qualität verwenden.
+Office 365 erweiterte Nachrichtenverschlüsselung steht in einer gcc High-Umgebung nicht zur Verfügung. Sie können eine einzelne Marken Vorlage weiterhin in einer gcc-Umgebung mit hoher Qualität anpassen.
 
 Wenn Sie Office 365 Nachrichtenverschlüsselung in einer gcc-High-Umgebung verwenden möchten, gibt es außerdem einige eindeutige Merkmale zur Empfänger Oberfläche.
-
-Office 365 erweiterte Nachrichtenverschlüsselung wird in gcc High nicht unterstützt.
 
 ### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Verschlüsselte e-Mail von gcc-hoch an gcc-hohe Empfänger
 

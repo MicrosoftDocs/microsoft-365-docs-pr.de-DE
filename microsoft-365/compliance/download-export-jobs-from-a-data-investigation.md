@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Installieren und verwenden Sie den Azure Storage Explorer zum Herunterladen von Dokumenten, die aus einer Überprüfungsgruppe in Advanced eDiscovery exportiert wurden.
-ms.openlocfilehash: d7af50b37383e69c666084a93b5b91591a76c114
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Installieren und verwenden Sie den Azure Storage Explorer zum Herunterladen von Dokumenten, die aus beweisen in einer Datenuntersuchung exportiert wurden.
+ms.openlocfilehash: af71cb43f91c940e4c5edb8ca7be39f4bca9b3be
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080719"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686255"
 ---
 # <a name="download-export-jobs"></a>Herunterladen von Exportaufträgen
 
-Wenn Sie Dokumente aus einer Überprüfungsgruppe in einem erweiterten eDiscovery-Fall exportieren, werden die Dokumente in einen von Microsoft bereitgestellten Azure-Speicherort oder an einen Azure-Speicherort hochgeladen, der von Ihrer Organisation verwaltet wird. Der Typ des verwendeten Azure-Speicherorts hängt davon ab, welche Option beim Exportieren der Dokumente ausgewählt wurde. 
+Wenn Sie Dokumente aus beweisen in einer Datenermittlung exportieren, werden die Dokumente in einen von Microsoft bereitgestellten Azure-Speicherort oder an einen Azure-Speicherort hochgeladen, der von Ihrer Organisation verwaltet wird. Der Typ des verwendeten Azure-Speicherorts hängt davon ab, welche Option beim Exportieren der Dokumente ausgewählt wurde. 
 
-In diesem Artikel wird beschrieben, wie Sie mithilfe des Microsoft Azure Speicher-Explorers eine Verbindung mit einem Azure-Speicherort herstellen, um die exportierten Dokumente zu durchsuchen und herunterzuladen. Weitere Informationen zum Azure Storage-Explorer finden Sie unter [Quick Start: Verwenden des Azure Storage Explorers](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+In diesem Artikel wird beschrieben, wie Sie mithilfe des Microsoft Azure Speicher-Explorers eine Verbindung mit einem Azure-Speicherort herstellen, um die exportierten Dokumente zu durchsuchen und herunterzuladen. Weitere Informationen zum Azure Storage-Explorer finden Sie unter [Quick Start: Verwenden des Azure Storage Explorers](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Schritt 1: Installieren des Azure Storage-Explorers
 
@@ -35,7 +35,7 @@ Der erste Schritt besteht darin, den Azure Storage Explorer herunterzuladen und 
 
 Der nächste Schritt besteht darin, die SAS-URL (Shared Access Signature) zu erhalten, die generiert wurde, als Sie den Exportauftrag zum [Exportieren von Dokumenten aus einem Überprüfungs Satz](export-documents-from-review-set.md)erstellt haben. Sie können die SAS-URL für Dokumente kopieren, die in einen von Microsoft bereitgestellten Azure-Speicherort oder einen von Ihrer Organisation verwalteten Azure-Speicherplatz hochgeladen werden. In beiden Fällen verwenden Sie die SAS-URL, um eine Verbindung mit dem Azure-Speicherort in Schritt 3 herzustellen.
 
-1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu dem Fall, und klicken Sie dann auf die Registerkarte **Exporte** .
+1. Wechseln Sie auf der Seite **Daten Ermittlungen** zu der Untersuchung, und klicken Sie dann auf die Registerkarte **Exporte** .
 
 2. Klicken Sie auf der Registerkarte **Exports** auf den Exportauftrag, den Sie herunterladen möchten.
 
@@ -61,7 +61,7 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
 
     ![Fügen Sie die SAS-URL in das Feld URI ein.](media/AzureStorageConnect3.png)
 
-    Beachten Sie, dass ein Teil der SAS-URL im Feld **Anzeigename** angezeigt wird. Dieser wird als Anzeigename des Containers verwendet, der unter den **Speicherkonten** erstellt wurde, nachdem Sie eine Verbindung mit dem Speicherort hergestellt haben. Dieser Name besteht aus der ID des erweiterten eDiscovery-Falls und einem eindeutigen Bezeichner. Sie können den standardmäßigen Anzeigenamen beibehalten oder ändern. Wenn Sie den Namen ändern, muss der Anzeigename eindeutig sein.
+    Beachten Sie, dass ein Teil der SAS-URL im Feld **Anzeigename** angezeigt wird. Dieser wird als Anzeigename des Containers verwendet, der unter den **Speicherkonten** erstellt wurde, nachdem Sie eine Verbindung mit dem Speicherort hergestellt haben. Dieser Name besteht aus der ID der Daten Untersuchung und einer eindeutigen ID. Sie können den standardmäßigen Anzeigenamen beibehalten oder ändern. Wenn Sie den Namen ändern, muss der Anzeigename eindeutig sein.
 
 5.  Klicken Sie auf **Weiter**.
 
@@ -73,7 +73,7 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
 
     Der **Knoten BLOB-Container** (unter **Speicherkonten** > **(angefügte Container)** \> wird geöffnet. 
 
-    ![](media/AzureStorageConnect5.png)
+    ![Exportieren von Aufträgen im Knoten BLOBs-Container](media/AzureStorageConnect5.png)
 
     Sie enthält einen Container namens mit dem Anzeigenamen aus Schritt 4. Dieser Container enthält einen Ordner für jeden exportierten Auftrag, den Sie erstellt haben. Diese Ordner werden mit einer ID benannt, die der ID des Exportauftrags entspricht. Diese Export-IDs (und der Name des Exports) finden Sie unter **Support Informationen** auf der Flyout-Seite für jeden auf der Registerkarte **Aufträge** aufgeführten **Vorbereitungs Daten für den Export** Auftrag.
 
@@ -101,7 +101,7 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
  
 8. Wenn Sie alle Inhalte im Export exportieren möchten, wählen Sie den Ordner exportieren aus, und klicken Sie dann auf **herunterladen**.
 
-9. Geben Sie den Speicherort an, an dem Sie die exportierten Dateien herunterladen möchten, und klicken Sie dann auf Ordner auswählen.
+9. Geben Sie den Speicherort an, an dem Sie die exportierten Dateien herunterladen möchten, und klicken Sie dann auf **Ordner auswählen**.
 
     Der Azure Storage Explorer startet den Exportvorgang. Der Status des Herunterladens der exportierten Elemente wird im Bereich " **Aktivitäten** " angezeigt. Nach Abschluss des Downloads wird eine Meldung angezeigt.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c0dd3b19f1fb666e07f70c36db05ed520093bfac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f3a27cc86bb764191aa23cd9159c97635f62e09
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081574"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38686166"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Verwalten von Aufträgen in Advanced eDiscovery
 
@@ -27,10 +27,10 @@ Im folgenden finden Sie eine Liste der Aufträge (in der Regel langwierige Proze
 
 | Auftragstyp           | Beschreibung     |
 | :----------------- | :----------     |
-|Hinzufügen von Daten zu einem Überprüfungs Satzes | Ein Benutzer fügt die Ergebnisse einer Suche zu einem Überprüfungs Satzes hinzu. Dieser Auftrag besteht aus zwei untergeordneten Aufträgen: </br> </br>• **GatheringItems** – eine Liste mit Elementen, die mit der Suchabfrage übereinstimmen (und der Office 365 Datenquelle, in der Sie sich befinden) wird generiert. </br>• **Einnahme #a0 Indizierung** – die Elemente, die mit der Suchabfrage übereinstimmen, werden in einen Azure-Speicherort (in einem Prozess namens " *Ingestion*") kopiert, und anschließend werden diese Elemente im Azure-Speicherort neu indiziert. Dieser neue Index wird beim Abfragen und Analysieren von Elementen in dem DataSet verwendet. </br></br>Weitere Informationen finden Sie unter [Hinzufügen von Suchergebnissen zu einer Überprüfungsgruppe](add-data-to-review-set.md). |
+|Hinzufügen von Daten zu einem Überprüfungs Satzes | Ein Benutzer fügt die Ergebnisse einer Suche zu einem Überprüfungs Satzes hinzu. Dieser Auftrag besteht aus zwei untergeordneten Aufträgen: </br>• **GatheringItems** – eine Liste mit Elementen, die mit der Suchabfrage übereinstimmen (und der Office 365 Datenquelle, in der Sie sich befinden) wird generiert. </br>• **Einnahme #a0 Indizierung** – die Elemente, die mit der Suchabfrage übereinstimmen, werden in einen Azure-Speicherort (in einem Prozess namens " *Ingestion*") kopiert, und anschließend werden diese Elemente im Azure-Speicherort neu indiziert. Dieser neue Index wird beim Abfragen und Analysieren von Elementen in dem DataSet verwendet. </br></br>Weitere Informationen finden Sie unter [Hinzufügen von Suchergebnissen zu einer Überprüfungsgruppe](add-data-to-review-set.md). |
 |Hinzufügen von Daten zu einem anderen Überprüfungs Satzes | Ein Benutzer fügt in demselben Fall Dokumente aus einem Überprüfungs Satzes zu einem anderen Überprüfungs Sätze hinzu. Weitere Informationen finden Sie unter [Hinzufügen von Daten zu einem Überprüfungs Sätze aus einem anderen Überprüfungs Sätze](add-data-to-review-set-from-another-review-set.md).|
 |Hinzufügen von nicht Office 365 Daten zu einem Überprüfungs Satzes | Ein Benutzer lädt nicht Office 365E Daten in einen Überprüfungs-Datensatz hoch. Die Daten werden auch während dieses Prozesses indiziert. Beispielsweise werden Dateien von einem lokalen Dateiserver oder einem Clientcomputer in einen Überprüfungs-Datensatz hochgeladen. Weitere Informationen finden Sie unter [Laden von nicht Office 365 Daten in einen Überprüfungs Sätze](load-non-office365-data.md).| 
-|Hinzufügen von wiederherzustellenden Daten zu einem Überprüfungs Satzes | Daten mit Verarbeitungsfehlern werden wiederhergestellt und in einen Überprüfungs Satz zurückgeladen. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten](error-remediation.md). | 
+|Hinzufügen von wiederherzustellenden Daten zu einem Überprüfungs Satzes | Daten mit Verarbeitungsfehlern werden wiederhergestellt und in einen Überprüfungs Satz zurückgeladen. Weitere Informationen finden Sie unter:</br>• [Fehlerkorrektur bei der Verarbeitung von Daten](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Fehlerbehebung für einzelne Elemente](single-item-error-remediation.md)| 
 |Vergleichen von Lastsätzen | Ein Benutzer prüft die Unterschiede zwischen verschiedenen Lastsätzen in einem Überprüfungs Satz. Bei einem Lastsatz handelt es sich um eine Instanz des Hinzufügens von Daten zu einem Überprüfungs Satzes. Wenn Sie beispielsweise die Ergebnisse von zwei unterschiedlichen Suchvorgängen zu demselben Überprüfungs Sätzen hinzufügen, würde jeder einen Lastsatz darstellen. Weitere Informationen finden Sie unter [Manage Last Sets](manage-load-sets.md). |
 |Konvertieren von behandelten Dokumenten in PDF|Nachdem ein Benutzer ein Dokument in einem Überprüfungs Satz kommentiert und einen Teil davon verarbeitet hat, kann er die Konvertierung des Dokuments in eine PDF-Datei auswählen. Dadurch wird sichergestellt, dass der behandelte Teil nicht sichtbar ist, wenn das Dokument zur Präsentation exportiert wird. Weitere Informationen finden Sie unter [View Documents in a Review Sets](annotating-and-redacting-documents.md). |
 |Schätzen von Suchergebnissen | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), durchsucht das Such Tool den Index nach Elementen, die mit der Suchabfrage übereinstimmen, und bereitet eine Schätzung vor, die die Anzahl und Gesamtgröße aller Elemente durch die Suche sowie die Anzahl der Datenquellen anbraten enthält. Ched.  Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md). | 

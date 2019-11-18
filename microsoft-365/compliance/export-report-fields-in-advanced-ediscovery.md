@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Beschreibt alle Felder, die in den Export Berichten für Advanced eDiscovery enthalten sind.
-ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081435"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686312"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportieren von Berichtsfeldern in Office 365 Advanced eDiscovery
 
@@ -62,8 +62,8 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
 |Email_recipient_domains  <br/> |E-Mail  <br/> |E-Mail-Empfängerdomänen (an, CC und BCC).  <br/> |Ja  <br/> |Ja  <br/> |
 |Email_date_received  <br/> |E-Mail  <br/> |Datum, an dem e-Mail empfangen wurde.  <br/> |Ja  <br/> |Ja  <br/> |
 |Email_action  <br/> |E-Mail  <br/> |Werte: gemäß e-Mail-Betreff: "Forward" (für "FW:"), "Reply" (für "Re:") oder "Other" (anderer Betreff-Text).  <br/> |Ja  <br/> |Ja  <br/> |
-|Meeting_Start_Date/Zeit  <br/> ||Das Datum und die Uhrzeit, zu der ein Besprechungselement gestartet wurde.  <br/> |Ja  <br/> |Ja  <br/> |
-|Meeting_End_Date/Zeit  <br/> ||Das Datum und die Uhrzeit, zu der ein Besprechungselement beendet wurde.  <br/> |Ja  <br/> |Ja  <br/> |
+|Meeting_Start_Date/Time  <br/> ||Das Datum und die Uhrzeit, zu der ein Besprechungselement gestartet wurde.  <br/> |Ja  <br/> |Ja  <br/> |
+|Meeting_End_Date/Time  <br/> ||Das Datum und die Uhrzeit, zu der ein Besprechungselement beendet wurde.  <br/> |Ja  <br/> |Ja  <br/> |
 |File_relevance_score  <br/> |Relevanz  <br/> |Relevanz Score (0-100). Pro Problem.  <br/> |Ja  <br/> |Ja  <br/> |
 |Family_relevance_score  <br/> |Relevanz  <br/> |Max Family Relevanz Score (0-100). Pro Problem.  <br/> |Ja  <br/> |Ja  <br/> |
 |Relevance_tag  <br/> |Relevanz  <br/> |Tagging der Datei, wenn die Datei manuell mit Relevanz versehen wurde. Pro Problem.  <br/> |Ja  <br/> |Ja  <br/> |
@@ -130,9 +130,7 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
 |Set_order_inclusives_first  <br/> |E-Mail  <br/> |E-Mails und Anlagen: Zähler chronologischer Reihenfolge (einschließlich zuerst). Dokumente: Pivots zuerst und der Rest nach Ähnlichkeitsergebnis, absteigend.  <br/> |Nein  <br/> |Ja  <br/> |
 |Tagged_By  <br/> |Relevanz  <br/> |Benutzer, der die Datei für das jeweilige Problem relevant markiert hat.  <br/> |Nein  <br/> |Ja  <br/> |
 |Word_count  <br/> |Analysieren  <br/> |Die Anzahl der Wörter im Dokument.  <br/> |Nein  <br/> |Ja  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## <a name="related-topics"></a>Verwandte Themen
 

@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 'In diesem Artikel erfahren Sie, wie Sie die Windows-Registrierung so konfigurieren, dass der Datendurchsatz beim Herunterladen von Suchergebnissen und Such Daten aus dem Security #a0 Compliance Center und Advanced eDiscovery in Office 365 erhöht wird.'
-ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081394"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686237"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365
 
-Wenn Sie das Office 365 eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center herunterzuladen oder Daten aus Office 365 Advanced eDiscovery herunterzuladen, startet das Tool eine bestimmte Anzahl gleichzeitiger Exportvorgänge, um die Daten auf Ihrem lokalen Computer. Standardmäßig ist die Anzahl gleichzeitiger Vorgänge auf das 8-fache der Anzahl der Kerne des Computers festgelegt, den Sie zum Herunterladen der Daten verwenden. Wenn Sie beispielsweise über einen Dual-Core-Computer verfügen (d. h. zwei zentrale Verarbeitungseinheiten auf einem Chip), beträgt die Standardanzahl gleichzeitiger Exportvorgänge 16. Um den Durchsatz der Datenübertragung zu erhöhen und den Downloadvorgang zu beschleunigen, können Sie die Anzahl gleichzeitiger Vorgänge erhöhen, indem Sie eine Windows-Registrierungseinstellung auf dem Computer konfigurieren, mit dem Sie die Suchergebnisse herunterladen. Um den Downloadprozess zu beschleunigen, sollten Sie mit einer Einstellung von 24 gleichzeitigen Vorgängen beginnen.
+Wenn Sie das Office 365 eDiscovery-Export Tool zum Herunterladen der Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center oder zum Herunterladen von Daten aus Office 365 Advanced eDiscovery verwenden, startet das Tool eine bestimmte Anzahl gleichzeitiger Exportvorgänge, um die Daten auf den lokalen Computer herunterzuladen. Standardmäßig ist die Anzahl gleichzeitiger Vorgänge auf das 8-fache der Anzahl der Kerne des Computers festgelegt, den Sie zum Herunterladen der Daten verwenden. Wenn Sie beispielsweise über einen Dual-Core-Computer verfügen (d. h. zwei zentrale Verarbeitungseinheiten auf einem Chip), beträgt die Standardanzahl gleichzeitiger Exportvorgänge 16. Um den Durchsatz der Datenübertragung zu erhöhen und den Downloadvorgang zu beschleunigen, können Sie die Anzahl gleichzeitiger Vorgänge erhöhen, indem Sie eine Windows-Registrierungseinstellung auf dem Computer konfigurieren, mit dem Sie die Suchergebnisse herunterladen. Um den Downloadprozess zu beschleunigen, sollten Sie mit einer Einstellung von 24 gleichzeitigen Vorgängen beginnen.
   
 Wenn Sie Suchergebnisse über ein Netzwerk mit niedriger Bandbreite herunterladen, wirkt sich die Erhöhung dieser Einstellung möglicherweise negativ aus. Alternativ können Sie die Einstellung möglicherweise auf mehr als 24 gleichzeitige Vorgänge in einem Netzwerk mit hoher Bandbreite vergrössern (die maximale Anzahl gleichzeitiger Vorgänge ist 48). Nachdem Sie diese Registrierungseinstellung konfiguriert haben, müssen Sie Sie möglicherweise ändern, um die optimale Anzahl gleichzeitiger Vorgänge für Ihre Umgebung zu ermitteln.
   
@@ -33,7 +33,7 @@ Führen Sie das folgende Verfahren auf dem Computer aus, den Sie zum Herunterlad
     
 2. Speichern Sie den folgenden Text in einer Fenster Registrierungsdatei unter Verwendung eines filename-Suffixes von. reg; Beispiel: ConcurrentOperations. reg. 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "DownloadConcurrency"="24"

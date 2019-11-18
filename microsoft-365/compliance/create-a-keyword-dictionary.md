@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/11/2019
+ms.date: ''
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 73ca1e83f716af076f99b1bcb8fba4fbb6e69d9d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080929"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686142"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
@@ -73,13 +73,13 @@ Häufig, wenn Sie ein großes Wörterbuch erstellen müssen, können Sie Stichw�
     
 3. Lesen Sie die Datei in eine Variable, indem Sie das folgende Cmdlet ausführen:
     
-    ```
+    ```powershell
     $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
     ```
 
 4. Erstellen Sie das Wörterbuch, indem Sie das folgende Cmdlet ausführen:
     
-    ```
+    ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
 
@@ -91,7 +91,7 @@ Beispielsweise ändern wir einige Ausdrücke in PowerShell, speichern die Begrif
 
 Rufen Sie zuerst das Wörterbuchobjekt ab:
   
-```
+```powershell
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
@@ -99,7 +99,7 @@ Beim `$dict` Drucken werden die verschiedenen Variablen angezeigt. Die Schlüsse
 
 Bevor Sie das Wörterbuch ändern, müssen Sie die Zeichenfolge von Ausdrücken mithilfe der `.split(',')` -Methode wieder in ein Array umwandeln. Anschließend bereinigen Sie die unerwünschten Leerzeichen zwischen den Stichwörtern `.trim()` mit der-Methode, sodass nur die Schlüsselwörter für die Arbeit übrig bleiben. 
   
-```
+```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
@@ -109,71 +109,68 @@ Im letzten Schritt haben Sie die Schlüsselwörter in einem Array gespeichert. E
   
 Führen Sie den Befehl  `$terms` aus, um die aktuelle Liste von Ausdrücken anzuzeigen. Die Ausgabe des Befehls sieht wie folgt aus: 
   
-```
-aarskog's syndrome
-abandonment
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipoproteinemia
-abiotrophy
-ablatio
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
-```
+`aarskog's syndrome`
+`abandonment`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipoproteinemia`
+`abiotrophy`
+`ablatio`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 
 Führen Sie diesen Befehl aus, um die Ausdrücke anzugeben, die Sie entfernen möchten:
   
-```
+```powershell
 $termsToRemove = @('abandonment', 'ablatio')
 ```
 
 Führen Sie diesen Befehl, um die Ausdrücke tatsächlich aus der Liste zu entfernen:
   
-```
+```powershell
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
 Führen Sie den Befehl  `$updatedTerms` aus, um die aktualisierte Liste von Ausdrücken anzuzeigen. Die Ausgabe des Befehls sieht wie folgt aus (die angegebenen Ausdrücke wurden entfernt): 
   
-```
-aarskog's syndrome
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipo proteinemia
-abiotrophy
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
+`aarskog's syndrome`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipo proteinemia`
+`abiotrophy`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 ```
 
-Speichern Sie das Wörterbuch jetzt lokal, und fügen Sie ein paar mehr Ausdrücke hinzu. Sie können Ausdrücke direkt in PowerShell hinzufügen, müssen aber die Datei dennoch lokal exportieren, um sicherzustellen, dass sie mit Unicode-Codierung gespeichert wird und die BOM enthält.
+Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
   
-Speichern Sie das Wörterbuch lokal, indem Sie Folgendes ausführen:
+Save the dictionary locally by running the following:
   
-```
+```powershell
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
 Öffnen Sie jetzt einfach die Datei, fügen Sie Ihre zusätzlichen Ausdrücke hinzu, und speichern Sie die Datei mit Unicode-Codierung (UTF-16). Nun laden Sie die aktualisierten Ausdrücke hoch und aktualisieren das vorhandene Wörterbuch.
   
-```
+```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
@@ -183,7 +180,7 @@ Das vorhandene Wörterbuch wurde nun aktualisiert. Beachten Sie, dass das Feld `
 
 Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen für einen benutzerdefinierten Typ vertraulicher Informationen oder als vertraulicher Informationstyp selbst verwendet werden. Beide erfordern die Erstellung eines [benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type-in-scc-powershell.md). Befolgen Sie die Anweisungen im verknüpften Artikel, um einen Typ für vertrauliche Informationen zu erstellen. Sobald Sie über den XML-Code verfügen, benötigen Sie den GUID-Bezeichner für das Wörterbuch, um ihn zu verwenden.
   
-```
+```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
         <IdMatch idRef=". . ."/>
@@ -193,27 +190,25 @@ Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen f�
 
 Um die Identität des Wörterbuchs zu erhalten, führen Sie den folgenden Befehl aus, und kopieren Sie den **Identity**-Eigenschaftswert: 
   
-```
+```powershell
 Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 Die Ausgabe des Befehls sieht wie folgt aus:
   
-```
-RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255
-Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f
-Name              : Diseases
-Description       : Names of diseases and injuries from ICD-10-CM lexicon
-KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo
-                    proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,
-                    abrami's disease, abramo
-IsValid           : True
-ObjectState       : Unchanged
-```
+`RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
+`Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
+`Name              : Diseases`
+`Description       : Names of diseases and injuries from ICD-10-CM lexicon`
+`KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo` `proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,`
+                    `abrami's disease, abramo`
+`IsValid           : True`
+`ObjectState       : Unchanged`
+
 
 Fügen Sie die Identität in den XML-Code Ihres benutzerdefinierten Typs vertraulicher Informationen ein, und laden Sie ihn hoch. Jetzt wird das Wörterbuch in Ihrer Liste der Typen vertraulicher Informationen angezeigt, und Sie können es direkt in Ihrer Richtlinie verwenden und festlegen, bei wie vielen Schlüsselwörtern eine Übereinstimmung festgestellt werden muss.
   
-```
+```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f" />
@@ -226,5 +221,3 @@ Fügen Sie die Identität in den XML-Code Ihres benutzerdefinierten Typs vertrau
       </Resource>
     </LocalizedStrings>
 ```
-
-

@@ -10,12 +10,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte hinter dem Dokument Fingerabdruck und das Erstellen eines mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: 776410ec042e629e32fa6b03a2cb4fe0f2bacd2e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8ac8e0f44c71f0f52d362f6c6c84f7fc9e55face
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070114"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686145"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -51,7 +51,7 @@ Sie möchten beispielsweise eine DLP-Richtlinie einrichten, die verhindert, dass
   
 ### <a name="supported-file-types"></a>Unterstützte Dateitypen
 
-Die Dokument Fingerabdruckunterstützung unterstützt die gleichen Dateitypen, die in Nachrichtenfluss Regeln (auch bekannt als Transportregeln) unterstützt werden. Eine Liste der unterstützten Dateitypen finden Sie unter [Unterstützte Dateitypen für die Inhaltsüberprüfung von Nachrichtenfluss Regeln](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Ein kurzer Hinweis zu Dateitypen: weder Nachrichtenfluss Regeln noch Dokument Fingerabdruck unterstützen den DOTX-Dateityp, was verwirrend sein kann, da es sich um eine Vorlagendatei in Word handelt. Der Begriff "Vorlage" in diesem und anderen Themen zum Dokumentfingerabdruck bezieht sich auf ein Dokument, das Sie als Standardformular eingerichtet haben, nicht auf den Dateityp "Vorlage".
+Die Dokument Fingerabdruckunterstützung unterstützt die gleichen Dateitypen, die in Nachrichtenfluss Regeln (auch bekannt als Transportregeln) unterstützt werden. Eine Liste der unterstützten Dateitypen finden Sie unter [Unterstützte Dateitypen für die Inhaltsüberprüfung von Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Ein kurzer Hinweis zu Dateitypen: weder Nachrichtenfluss Regeln noch Dokument Fingerabdruck unterstützen den DOTX-Dateityp, was verwirrend sein kann, da es sich um eine Vorlagendatei in Word handelt. Der Begriff "Vorlage" in diesem und anderen Themen zum Dokumentfingerabdruck bezieht sich auf ein Dokument, das Sie als Standardformular eingerichtet haben, nicht auf den Dateityp "Vorlage".
   
 #### <a name="limitations-of-document-fingerprinting"></a>Einschränkungen der Funktion "Dokumentfingerabdruck"
 
@@ -65,18 +65,18 @@ Das Dokumentieren von Fingerabdrücken erkennt in den folgenden Fällen keine ve
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Verwenden von PowerShell zum Erstellen eines Klassifizierungsregel Pakets basierend auf dem Dokument Fingerabdruck
 
-Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security &amp; Compliance Center einen Dokument Fingerabdruck erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security &amp; Compliance Center einen Dokument Fingerabdruck erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-DLP verwendet Klassifizierungsregel Pakete, um vertrauliche Inhalte zu erkennen. Zum Erstellen eines Klassifizierungsregel Pakets basierend auf einem Dokument Fingerabdruck verwenden Sie die Cmdlets **New-DlpFingerprint** und **New-DlpSensitiveInformationType** . Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Daten Klassifizierungsregel gespeichert werden, führen Sie immer **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **festlegen-DlpSensitiveInformationType** in derselben PowerShell-Sitzung. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können. 
+DLP verwendet Klassifizierungsregel Pakete, um vertrauliche Inhalte zu erkennen. Zum Erstellen eines Klassifizierungsregel Pakets basierend auf einem Dokument Fingerabdruck verwenden Sie die Cmdlets **New-DlpFingerprint** und **New-DlpSensitiveInformationType** . Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Daten Klassifizierungsregel gespeichert werden, führen Sie immer **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **festlegen-DlpSensitiveInformationType** in derselben PowerShell-Sitzung aus. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können.
   
-```
+```powershell
 $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte -ReadCount 0
 $Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
 ```
 
 Lassen Sie uns nun eine neue Datenklassifizierungsregel namens "Contoso Employee Confidential" erstellen, die den Dokumentfingerabdruck auf der Datei "C:\Eigene Dateien\Contoso Customer Information Form.docx" verwendet.
   
-```
+```powershell
 $Customer_Form = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte -ReadCount 0
 $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
@@ -86,15 +86,14 @@ Sie können jetzt das Cmdlet **Get-DlpSensitiveInformationType** verwenden, um n
   
 Fügen Sie abschließend das Daten Klassifizierungsregel Paket "Contoso Customer Confidential" zu einer DLP-Richtlinie &amp; im Security Compliance Center hinzu. In diesem Beispiel wird einer vorhandenen DLP-Richtlinie mit dem Namen "ConfidentialPolicy" eine Regel hinzugefügt.
 
-```
+```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-Sie können das Daten Klassifizierungsregel Paket auch in Nachrichtenfluss Regeln in Exchange Online verwenden, wie im folgenden Beispiel dargestellt. Zum Ausführen dieses Befehls müssen Sie zunächst [eine Verbindung mit Exchange Online PowerShell herstellen](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Beachten Sie auch, dass es Zeit dauert, bis das Regelpaket vom Security &amp; Compliance Center mit dem Exchange Admin Center synchronisiert wird.
+Sie können das Daten Klassifizierungsregel Paket auch in Nachrichtenfluss Regeln in Exchange Online verwenden, wie im folgenden Beispiel dargestellt. Zum Ausführen dieses Befehls müssen Sie zunächst [eine Verbindung mit Exchange Online PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Beachten Sie auch, dass es Zeit dauert, bis das Regelpaket vom Security &amp; Compliance Center mit dem Exchange Admin Center synchronisiert wird.
   
-```
+```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
-
 ```
 
 DLP erkennt jetzt Dokumente, die dem Fingerabdruck des Dokuments "Contoso Customer Form. docx" entsprechen.

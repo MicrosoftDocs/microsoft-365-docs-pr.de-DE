@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 'Verwenden Sie das Tool für die Inhaltssuche im Security #a0 Compliance Center zum Suchen und Exportieren von verläuft-Chat Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung.'
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082539"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686289"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
 
@@ -86,7 +86,7 @@ Nachdem das Feature aktiviert wurde, können Sie die Inhaltssuche im Security #a
     
 3. Erstellen Sie die Stichwortabfrage, und fügen Sie bei Bedarf der Suchabfrage Bedingungen hinzu. Um nur nach Team Chats-Daten zu suchen, können Sie die folgende Abfrage im Feld **Schlüsselwörter** hinzufügen: 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -112,15 +112,15 @@ Sie können die Cmdlets **New-ComplianceSearch** und **ComplianceSearch** in der
     
 2. Führen Sie den folgenden PowerShell-Befehl aus, um eine Inhaltssuche zu erstellen, die die cloudbasierten Postfächer von lokalen Benutzern durchsucht.
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     Der Parameter *IncludeUserAppContent* wird verwendet, um das cloudbasierten Postfach für den Benutzer oder die Benutzer anzugeben, die durch den *ExchangeLocation* -Parameter angegeben werden. Das *AllowNotFoundExchangeLocationsEnabled* ermöglicht Cloud-basierte Postfächer für lokale Benutzer. Wenn Sie den `$true` Wert für diesen Parameter verwenden, versucht die Suche nicht, das vorhanden sein des Postfachs zu überprüfen, bevor es ausgeführt wird. Dies ist erforderlich, um die Cloud-basierten Postfächer für lokale Benutzer zu durchsuchen, da diese Typen von Postfächern nicht als reguläre Postfächer aufgelöst werden. 
     
     Im folgenden Beispiel wird nach Microsoft Teams-Chats (Sofortnachrichten) gesucht, die das Schlüsselwort "Redstone" im cloudbasierten Postfach von Sara Davis, einem lokalen Benutzer in der Contoso-Organisation, enthalten.
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 

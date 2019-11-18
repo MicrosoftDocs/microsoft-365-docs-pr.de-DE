@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: e6201fc938f7481a524a8d3c4171d4c1b67997e9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 720381c067ba17614df253ffdf0543821a0bf192
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080923"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686221"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen eines Beweissicherungsverfahrens
 
@@ -31,7 +31,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
     
 - Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
     
@@ -64,17 +64,17 @@ Hier finden Sie die Schritte zum Aufbewahren eines Postfachs für das Beweissich
 
 Sie können auch ein Beweissicherungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)ausführen:
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
 Der vorherige Befehl behält Elemente auf unbestimmte Zeit bei, da die Aufbewahrungsdauer nicht angegeben ist. Zum Erstellen eines zeitbasierten haltebereichs mit dem folgenden Befehl:
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Weitere Informationen finden Sie unter [festlegen-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox).
+Weitere Informationen finden Sie unter [festlegen-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>Wie funktioniert das Beweissicherungsverfahren?
 

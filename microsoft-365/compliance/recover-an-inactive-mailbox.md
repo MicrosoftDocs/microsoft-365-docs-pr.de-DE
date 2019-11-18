@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Wenn ein ehemaliger Mitarbeiter in Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt ist, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
-ms.openlocfilehash: be7935472363e406a978c09f926776e69c3024fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082552"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686295"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Wiederherstellen eines inaktiven Postfachs in Office 365
 
@@ -34,13 +34,13 @@ Im Abschnitt [Weitere Informationen](#more-information) finden Sie weitere Detai
 > [!NOTE]
 > Wir haben die Frist für die Erstellung neuer in-Place-Speicher verschoben, damit ein Postfach inaktiv wird. Aber irgendwann in der Zukunft werden Sie nicht in der Lage sein, neue in-Place-Aufbewahrungen in Exchange Online zu erstellen. Zu diesem Zeitpunkt können nur Beweissicherungsverfahren und Office 365 Aufbewahrungsrichtlinien verwendet werden, um ein inaktives Postfach zu erstellen. Vorhandene inaktive Postfächer, die sich in-situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können die in-situ-Speicher für inaktive Postfächer weiterhin verwalten. Dies umfasst das Ändern der Dauer eines in-situ-Speichers und das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des in-situ-Speichers. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Zum Rückspeichern eines inaktiven Postfachs müssen Sie Exchange Online PowerShell verwenden. Das Exchange Admin Center (EAC) kann hierfür nicht verwendet werden. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
 - Führen Sie den folgenden Befehl aus, um die Identitätsinformationen für die inaktiven Postfächer in Ihrer Organisation abzurufen. 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly | FL Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
     ```
 
@@ -54,16 +54,16 @@ Verwenden Sie das Cmdlet **New-Mailbox** mit dem Parameter *InactiveMailbox* , u
   
 1. Erstellen Sie eine Variable, die die Eigenschaften des inaktiven Postfachs enthält. 
     
-    ```
+    ```powershell
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
-   
+
     > [!IMPORTANT]
     > Verwenden Sie im vorherigen Befehl den Wert der Eigenschaft **DistinguishedName** oder **ExchangeGUID** zum Identifizieren des inaktiven Postfachs. Diese Eigenschaften sind für jedes Postfach in Ihrer Organisation eindeutig, wobei ein aktives und ein inaktives Postfach die gleiche primäre SMTP-Adresse haben können. 
   
 2. In diesem Beispiel werden die mit dem vorherigen Befehl abgerufenen Eigenschaften verwendet, und das inaktive Postfach wird in ein aktives Postfach für die Benutzerin Ann Beebe wiederhergestellt. Stellen Sie sicher, dass die für den Parameter " *Name* " und " *MicrosoftOnlineServicesID* " angegebenen Werte innerhalb Ihrer Organisation eindeutig sind. 
 
-    ```
+    ```powershell
     New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name annbeebe -FirstName Ann -LastName Beebe -DisplayName "Ann Beebe" -MicrosoftOnlineServicesID Ann.Beebe@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
     ```
 
@@ -95,7 +95,7 @@ Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 3
     
 - **Woher weiß ich, ob der Aufbewahrungszeitraum für vorläufig gelöschte Postfächer für ein inaktives Postfach abgelaufen ist?** Führen Sie hierzu den folgenden Befehl aus. 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL ExternalDirectoryObjectId
   ```
 

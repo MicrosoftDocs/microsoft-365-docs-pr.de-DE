@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080859"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686086"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -107,7 +107,7 @@ Um die TFN-Erkennung auf eine ziemlich unverblümte Weise zu demonstrieren, wird
 
 ![Australien-Steuerdatei Nummer, die keine Prüfsumme übergibt](media/DLP-create-test-tune-email-test1.png)
 
-Im Vergleich dazu löst eine e-Mail mit den Worten "Steuerdatei Nummer" und einer gültigen TFN, die die Prüfsumme übergibt, die Richtlinie aus. Für den Eintrag hier wurde das TFN, das ich verwende, von einer Website entnommen, die gültige, aber nicht echte TFNs generiert. Es gibt ähnliche Websites, die [gültige, aber gefälschte Kreditkartennummern](http://www.fakecreditcardgenerator.net/)generieren. Solche Websites sind sehr nützlich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie eine gefälschte Nummer verwendet, die nicht gültig ist und die Prüfsumme nicht übergibt (und daher die Richtlinie nicht auslöst).
+Im Vergleich dazu löst eine e-Mail mit den Worten "Steuerdatei Nummer" und einer gültigen TFN, die die Prüfsumme übergibt, die Richtlinie aus. Für den Eintrag hier wurde das TFN, das ich verwende, von einer Website entnommen, die gültige, aber nicht echte TFNs generiert. Es gibt ähnliche Websites, die [gültige, aber gefälschte Kreditkartennummern](https://www.fakecreditcardgenerator.net/)generieren. Solche Websites sind sehr nützlich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie eine gefälschte Nummer verwendet, die nicht gültig ist und die Prüfsumme nicht übergibt (und daher die Richtlinie nicht auslöst).
 
 ![Australische Steuerdatei Nummer, die die Prüfsumme übergibt](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ Wenn Sie sicher sind, dass ihre DLP-Richtlinie vertrauliche Informationstypen ge
 
 ![Option zum Aktivieren der Richtlinie](media/DLP-create-test-tune-turn-on-policy.png)
  
-Wenn Sie darauf warten, dass die Richtlinie wirksam wird, stellen Sie [eine Verbindung mit Security #a0 Compliance Center PowerShell her](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) , und führen Sie das [Cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) aus, um die Eigenschaften distributionstatus anzuzeigen.
+Wenn Sie darauf warten, dass die Richtlinie wirksam wird, stellen Sie [eine Verbindung mit Security #a0 Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) , und führen Sie das [Cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) aus, um die Eigenschaften distributionstatus anzuzeigen.
 
 ![Ausführen eines Cmdlets in PowerShell](media/DLP-create-test-tune-PowerShell.png)
 

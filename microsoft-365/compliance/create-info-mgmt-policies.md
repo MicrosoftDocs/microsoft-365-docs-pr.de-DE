@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: Mithilfe von Informationsverwaltungsrichtlinien kann Ihre Organisation steuern, wie lange Inhalt aufbewahrt werden soll, um zu überwachen, was Benutzer mit Inhalten tun, und um einem dokumentbarcodes oder Beschriftungen hinzuzufügen. Eine Richtlinie kann dazu beitragen, die Einhaltung gesetzlicher und behördlicher Vorschriften oder interner Geschäftsprozesse zu erzwingen. Als Administrator können Sie eine Richtlinie einrichten, um zu steuern, wie Dokumente überwacht werden und wie lange Dokumente aufbewahrt werden sollen.
-ms.openlocfilehash: 85113393f534a6b17f75962d02518a5a8c65dd8b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d8572f570db7b0223bc2f08cd78875224897e02c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080886"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686191"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Erstellen und Anwenden von Informationsverwaltungsrichtlinien
 
@@ -90,7 +91,7 @@ Durch das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltsty
     
 ||||||**1.**|* * Wählen Sie * * eine Aufbewahrungsphase für Datensätze hinzufügen... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Wählen Sie eine Beibehaltungsdauer Option aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt werden. Führen Sie einen der folgenden Schritte aus:  <br/>  Um das Ablaufdatum basierend auf einer Date-Eigenschaft festzulegen, unter dem **Ereignis** \> **Diese Stufe basiert auf einer Date-Eigenschaft für das Element**, und wählen Sie dann die Dokument-oder Elementaktion (beispielsweise erstellt oder geändert) und das Inkrement der Zeit nach dieser Aktion ( beispielsweise die Anzahl der Tage, Monate oder Jahre), wenn das Element ablaufen soll.  <br/>  Wenn Sie eine benutzerdefinierte Aufbewahrungs Formel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie **durch eine auf diesem Server installierte benutzerdefinierte Aufbewahrungs Formel festlegen**aus.  <br/> > [!NOTE]> diese Option ist nur verfügbar, wenn eine benutzerdefinierte Formel vom Administrator eingerichtet wurde.           |
+||||||2.  <br/> | Wählen Sie eine Beibehaltungsdauer Option aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt werden. Führen Sie einen der folgenden Schritte aus:  <br/>  Wenn das Ablaufdatum basierend auf einer Date-Eigenschaft festgelegt werden soll, unter dem **Ereignis** \> **Diese Stufe basiert auf einer Date-Eigenschaft für das Element**, und wählen Sie dann die Dokument-oder Elementaktion (beispielsweise erstellt oder geändert) und das Inkrement der Zeit nach dieser Aktion (beispielsweise die Anzahl der Tage, Monate oder Jahre) aus, wenn das Element ablaufen soll.  <br/>  Wenn Sie eine benutzerdefinierte Aufbewahrungs Formel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie **durch eine auf diesem Server installierte benutzerdefinierte Aufbewahrungs Formel festlegen**aus.  <br/> > [!NOTE]> diese Option ist nur verfügbar, wenn eine benutzerdefinierte Formel vom Administrator eingerichtet wurde.           |
 ||||||3.  <br/> |Die Option **Workflow starten** ist nur verfügbar, wenn Sie eine Richtlinie für eine Liste, Bibliothek oder einen Inhaltstyp definieren, dem bereits ein Workflow zugeordnet ist. Sie erhalten dann eine Auswahl von Workflows zur Auswahl.  <br/> |
 ||||||4.  <br/> |Wählen Sie im Abschnitt **Serie** die Option **Aktion dieser Stufe wiederholen aus...** und geben Sie ein, wie oft die Aktion wieder aufgetreten werden soll.  <br/> > [!NOTE]> diese Option ist nur verfügbar, wenn die Aktion, die Sie ausgewählt haben, wiederholt werden kann. Beispielsweise können Sie die Serie für die Aktion nicht **dauerhaft löschen**festlegen.           |
 ||||||5.  <br/> |Wählen Sie **OK**aus.  <br/> |
@@ -102,7 +103,7 @@ Durch das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltsty
 ||||||1. * * * *|Klicken Sie auf der Seite Richtlinie bearbeiten * * **unter** **Auditing** **\>** **enable Auditing** * *, und aktivieren Sie dann die Kontrollkästchen neben den Ereignissen, für die Sie einen Überwachungspfad beibehalten möchten. * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |**Um Benutzer aufzufordern, diese Barcodes in Dokumente einzufügen,** **Wählen Sie** **Benutzer auffordern, vor dem Speichern oder Drucken einen Barcode einzufügen** **.** <br/> |
-||||||**3.** <br/> |**Wählen Sie** **OK** * *, um das Überwachungsfeature auf die Richtlinie anzuwenden. ** <br/> |
+||||||**3.** <br/> |**Wählen Sie** **OK** * * aus, um das Überwachungsfeature auf die Richtlinie anzuwenden. ** <br/> |
 |||||||Mit dem Überwachungsrichtlinienfeature können Organisationen Überwachungspfade für Dokumente erstellen und analysieren sowie Elemente wie Aufgabenlisten, Problemlisten, Diskussionsgruppen und Kalender auflisten. Mit diesem Richtlinienfeature wird ein Überwachungsprotokoll bereitgestellt, das Ereignisse wie beispielsweise, wenn Inhalt angezeigt, bearbeitet oder gelöscht wird, aufzeichnet.  <br/> |
 |||||||Wenn die Überwachung als Teil einer Informationsverwaltungsrichtlinie aktiviert ist, können Administratoren die Überwachungsdaten in Berichten zur Richtlinienverwendung anzeigen, die in Microsoft Excel basieren und die aktuelle Verwendung zusammenfassen. Administratoren können mithilfe dieser Berichte feststellen, wie Informationen innerhalb der Organisation verwendet werden. Diese Berichte können Organisationen auch helfen, ihre behördlichen Vorschriften zu überprüfen und zu dokumentieren oder potenzielle Probleme zu untersuchen.  <br/> |
 |||||||Im Überwachungsprotokoll werden folgende Informationen aufgezeichnet: Ereignisname, Datum und Uhrzeit des Ereignisses sowie der Systemname des Benutzers, der die Aktion ausgeführt hat.  <br/> |
@@ -172,7 +173,7 @@ Wenn **Inhaltstyp** als Quelle angezeigt wird, klicken Sie auf **Quelle ändern*
     
 7. Wählen Sie im Dialogfeld Bühneneigenschaften eine Option für den Aufbewahrungszeitraum aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt werden. Führen Sie einen der folgenden Schritte aus:
     
-  - Um das Ablaufdatum basierend auf einer Date-Eigenschaft festzulegen, unter dem **Ereignis** \> **Diese Stufe basiert auf einer Date-Eigenschaft für das Element**, und wählen Sie dann die Dokument-oder Elementaktion (beispielsweise erstellt oder geändert) und das Inkrement der Zeit nach dieser Aktion ( beispielsweise die Anzahl der Tage, Monate oder Jahre), wenn das Element ablaufen soll. 
+  - Wenn das Ablaufdatum basierend auf einer Date-Eigenschaft festgelegt werden soll, unter dem **Ereignis** \> **Diese Stufe basiert auf einer Date-Eigenschaft für das Element**, und wählen Sie dann die Dokument-oder Elementaktion (beispielsweise erstellt oder geändert) und das Inkrement der Zeit nach dieser Aktion (beispielsweise die Anzahl der Tage, Monate oder Jahre) aus, wenn das Element ablaufen soll. 
     
   - Wenn Sie eine benutzerdefinierte Aufbewahrungs Formel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie **durch eine auf diesem Server installierte benutzerdefinierte Aufbewahrungs Formel festlegen**aus. 
     

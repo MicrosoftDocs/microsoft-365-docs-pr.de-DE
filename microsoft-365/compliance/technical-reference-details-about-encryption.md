@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Hier finden Sie technische Details zu Verschlüsselungs in Office 365.
-ms.openlocfilehash: 0ae26aa6a534f0de0923f869acb94d7ee8529f31
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b21409007b82490730aa48f403c30e542ead0316
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081883"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686101"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Technische Details zur Verschlüsselung in Office 365
 
@@ -55,7 +55,7 @@ Transport Layer Security (TLS) und SSL (vor TLS) sind kryptografische Protokolle
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Veraltete Unterstützung für TLS 1,0 und 1,1 und was dies für Sie bedeutet
 <a name="TLS11and12deprecation"> </a>
 
-Seit dem 31. Oktober 2018 unterstützt Office 365 nicht mehr TLS 1,0 und 1,1. Dies bedeutet, dass Microsoft keine neuen Probleme beheben kann, die in Clients, Geräten oder Diensten gefunden werden, die mit TLS 1,0 und 1,1 eine Verbindung mit Office 365 herstellen.
+Seit dem 31. Oktober 2018 unterstützt Office 365 nicht mehr TLS 1,0 und 1,1. Dies bedeutet, dass Microsoft keine neuen Probleme beheben wird, die in Clients, Geräten oder Diensten auftreten, die sich mit Office 365 über TLS 1.0 und 1.1 verbinden.
 
 Hinweis Dies bedeutet nicht, dass Office 365 TLS 1,0-und 1,1-Verbindungen blockieren wird. 
 
@@ -63,7 +63,7 @@ TLS 1,0 und TLS 1,1 werden an den folgenden Tagen offiziell veraltet sein:
 - 1. Juni 2020 für Kunden in den weltweiten und gcc-Umgebungen.
 - 15. Januar 2020 für Kunden in den souveränen gcc-und DoD-Umgebungen. 
 
-Sie sollten sicherstellen, dass für alle Client-Server-und Browser Serverkombinationen TLS 1,2 (oder eine höhere Version) verwendet wird, um die Verbindung mit Office 365 Diensten aufrechtzuerhalten. Möglicherweise müssen Sie bestimmte Client-Server-und Browser Serverkombinationen aktualisieren. Informationen dazu, wie sich dies auf Sie auswirkt, finden Sie unter [Vorbereiten der obligatorischen Verwendung von TLS 1,2 in Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
+Sie sollten sicherstellen, dass für alle Client-Server-und Browser Serverkombinationen TLS 1,2 (oder eine höhere Version) verwendet wird, um die Verbindung mit Office 365 Diensten aufrechtzuerhalten. Möglicherweise müssen Sie bestimmte Client-Server-und Browser Serverkombinationen aktualisieren. Informationen dazu, wie sich dies auf Sie auswirkt, finden Sie unter [Vorbereiten der obligatorischen Verwendung von TLS 1,2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
 ## <a name="deprecating-support-for-3des"></a>Veraltete Unterstützung für 3DES
 <a name="TLS11and12deprecation"> </a>
@@ -91,10 +91,10 @@ Bei einer Cipher Suite handelt es sich um eine Sammlung von Verschlüsselungsalg
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Ja  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>Verwandte Themen
 [TLS-Verschlüsselungs Pakete in Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
@@ -105,6 +105,6 @@ Bei einer Cipher Suite handelt es sich um eine Sammlung von Verschlüsselungsalg
   
 [SChannel-Implementierung von TLS 1,0 im Windows-Sicherheitsstatus Update: 24. November 2015](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL-kryptografische Verbesserungen (Windows IT Center)](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
+[TLS/SSL-kryptografische Verbesserungen (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
 

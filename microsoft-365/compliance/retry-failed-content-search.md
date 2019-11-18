@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die Schaltfläche Wiederholen zum Auflösen von Inhalts suchen mit fehlerhaften Inhaltsverzeichnissen.
-ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b35c2985efeafa3192a2404047fe62e28e04157e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082576"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686291"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicher Fehlers
 
 Wenn Sie die Inhaltssuche im Security and Compliance Center verwenden, um eine große Anzahl von Postfächern zu durchsuchen, erhalten Sie möglicherweise ähnliche Suchfehler wie die folgenden:
 
-```
+```text
 Error
 
 The search on the following locations failed:

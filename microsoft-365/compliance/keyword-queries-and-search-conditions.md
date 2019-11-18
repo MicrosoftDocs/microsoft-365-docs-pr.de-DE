@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
-ms.openlocfilehash: 5b3438537e2936fa140052c6869f84937e103746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080691"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686233"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -74,7 +75,7 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
 
 ## <a name="searchable-site-properties"></a>Durchsuchbare Websiteeigenschaften
 
-In der folgenden Tabelle sind einige der SharePoint-und OneDrive für Unternehmen-Eigenschaften aufgeführt, die mithilfe der Inhalts Suchfunktion im Security #a0 Compliance Center oder mithilfe des **New-ComplianceSearch** oder der Gruppe "ComplianceSearch" durchsucht werden können. ** **-Cmdlet. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
+In der folgenden Tabelle sind einige der SharePoint-und OneDrive für Unternehmen-Eigenschaften aufgeführt, die mithilfe der Inhalts Suchfunktion im Security #a0 Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
   
 Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden können, finden Sie unter [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Eigenschaften, die mit einem **Ja** in der **Queryable** -Spalte markiert sind, können durchsucht werden. 
   
@@ -90,11 +91,11 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |FileName|Der Name einer Datei.|`filename:"marketing plan"`  <br/> `filename:estimate`|Im ersten Beispiel werden Dateien mit dem genauen Ausdruck "Marketingplan" im Titel zurückgegeben. Im zweiten Beispiel werden Dateien mit dem Wort "Estimate" im Dateinamen zurückgegeben.|
 |LastModifiedTime|Das Datum, an dem ein Element zuletzt geändert wurde.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Im ersten Beispiel werden Elemente zurückgegeben, die am oder nach dem 1. Mai 2016 geändert wurden. Das zweite Beispiel gibt Elemente zurück, die zwischen dem 1. Mai 2016 und dem 1. Juni 2016 geändert wurden.|
 |ModifiedBy|Die Person, die ein Element zuletzt geändert hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`modifiedby:"Garth Fort"`|Alle Elemente, die zuletzt von Garth fort geändert wurden.|
-|Path|Der Pfad (URL) einer bestimmten Website in einer SharePoint-oder OneDrive für Unternehmen-Website.  <br/> Um Elemente zurückzugeben, die sich in Ordnern auf der Website befinden, die Sie für die Path-Eigenschaft angeben\* , müssen Sie die URL der angegebenen Website hinzufügen. Zum Beispiel`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Hinweis:** Wenn Sie `Path` die Eigenschaft zum Durchsuchen von OneDrive-Speicherorten verwenden, werden keine Mediendateien wie PNG-, TIFF-oder WAV-Dateien in den Suchergebnissen zurückgegeben. Verwenden Sie eine andere Website Eigenschaft in Ihrer Suchabfrage, um nach Mediendateien in OneDrive-Ordnern zu suchen. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen OneDrive für Unternehmen-Standort zurückgegeben. Das zweite Beispiel gibt Dokumente in der angegebenen Website (und Ordner auf der Website) zurück, die das Wort "Confidential" im Dateinamen enthalten.|
+|Pfad|Der Pfad (URL) einer bestimmten Website in einer SharePoint-oder OneDrive für Unternehmen-Website.  <br/> Um Elemente zurückzugeben, die sich in Ordnern auf der Website befinden, die Sie für die Path-Eigenschaft angeben\* , müssen Sie die URL der angegebenen Website hinzufügen. Zum Beispiel`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Hinweis:** Wenn Sie `Path` die Eigenschaft zum Durchsuchen von OneDrive-Speicherorten verwenden, werden keine Mediendateien wie PNG-, TIFF-oder WAV-Dateien in den Suchergebnissen zurückgegeben. Verwenden Sie eine andere Website Eigenschaft in Ihrer Suchabfrage, um nach Mediendateien in OneDrive-Ordnern zu suchen. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen OneDrive für Unternehmen-Standort zurückgegeben. Das zweite Beispiel gibt Dokumente in der angegebenen Website (und Ordner auf der Website) zurück, die das Wort "Confidential" im Dateinamen enthalten.|
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer freigegeben wurden und auf der Seite für **mich freigegeben** auf der OneDrive für Unternehmen Website des Benutzers angezeigt werden. Dabei handelt es sich um Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Beim Exportieren von Dokumenten, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument gemeinsam mit dem angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Suchen nach Websiteinhalten, die in Ihrer Organisation freigegeben](#searching-for-site-content-shared-within-your-organization)sind.|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|In beiden Beispielen werden alle internen Dokumente zurückgegeben, die explizit für Garth fort freigegeben wurden und auf der Seite für **mich freigegeben** in Garth fort in OneDrive für Unternehmen Konto angezeigt werden.|
 |Website|Die URL einer Website oder Gruppen von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente aus den OneDrive für Unternehmen Websites für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Das erste Beispiel gibt Elemente zurück, die größer als 1 Byte sind. Das zweite Beispiel gibt Elemente von 1 bis 10.000 Bytes an Größe zurück.|
-|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
+|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
 |||||
    
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -123,7 +124,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |OfficeLocation|Der Wert in der **Office** -oder **Office-Standort** Eigenschaft.|
 |OtherAddress|Der Wert für die **andere** Address-Eigenschaft.|
 |Nachname|Der Name in der **Last** Name-Eigenschaft.|
-|Titel|Der Titel in der **Position Title** -Eigenschaft.|
+|Position|Der Titel in der **Position Title** -Eigenschaft.|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
@@ -218,7 +219,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
 |**Bedingung**|**Beschreibung**|
 |:-----|:-----|
 |Ursprung|Das Feld Autor aus Office-Dokumenten, das bleibt, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und die e-Mails an eine andere Person weitergeben, die es dann in SharePoint hoch lädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
+|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dies ist die gleiche Eigenschaft wie die FileExtension-Website Eigenschaft.|
@@ -277,7 +278,7 @@ Beachten Sie Folgendes bei der Verwendung von Suchbedingungen:
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Beispiele
 
-Die folgenden Beispiele zeigen die GUI-basierte Version einer Suchabfrage mit Bedingungen, die Suchabfrage Syntax, die im Detailbereich der ausgewählten Suche angezeigt wird (die auch vom Cmdlet **Get-ComplianceSearch** zurückgegeben wird) und die Logik des entsprechende KQL-Abfrage. 
+Die folgenden Beispiele zeigen die GUI-basierte Version einer Suchabfrage mit Bedingungen, die Suchabfrage Syntax, die im Detailbereich der ausgewählten Suche (die auch vom Cmdlet **Get-ComplianceSearch** zurückgegeben wird) und die Logik der entsprechenden KQL-Abfrage angezeigt wird. 
   
 #### <a name="example-1"></a>Beispiel 1
 
@@ -379,13 +380,13 @@ Nur Dokumente, die mit der dritten Option (für **bestimmte Personen**freigegebe
 
 Sie können die folgende Stichwortabfrage verwenden, um in Skype for Business Unterhaltungen gezielt nach Inhalten zu suchen:
 
-```
+```powershell
 kind:im
 ```
 
 Die vorherige Suchabfrage gibt auch Chats von Microsoft Teams zurück. Um dies zu verhindern, können Sie die Suchergebnisse eingrenzen, um nur Skype for Business Unterhaltungen mit der folgenden Stichwortabfrage einzuschließen:
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -393,7 +394,7 @@ Die vorherige Stichwortabfrage schließt Chats in Microsoft Teams aus, da Skype 
 
 Verwenden Sie die folgende Stichwortabfrage, um nach Skype for Business Unterhaltungen zu suchen, die in einem bestimmten Datumsbereich aufgetreten sind:
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

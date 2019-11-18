@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Die Verhinderung von Datenverlust (Data Loss &amp; Prevention, DLP) im Office 365 Security Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 820bab0a128f952cf5d96208f5d561f4994bd859
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082041"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686316"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
@@ -44,7 +44,7 @@ Unformatiert: 9 aufeinanderfolgende Ziffern, beginnend mit 0, 1, 2, 3, 6, 7 oder
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -102,12 +102,12 @@ Acht Ziffern:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_argentina_national_id sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_argentina_national_id findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_argentina_national_id wurde gefunden.
 
 ```xml
@@ -150,7 +150,7 @@ Australische Bankleitzahl:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -222,7 +222,7 @@ ODER
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -422,13 +422,13 @@ Ein Buchstabe (Groß-/Kleinschreibung irrelevant) gefolgt von sieben Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_australia_passport_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number wird gefunden.
+- Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number wurde gefunden.
 
 ```xml
 <!-- Australia Passport Number -->
@@ -582,12 +582,12 @@ Die Zeichenfolge "DocumentDb" gefolgt von den Zeichen und Zeichenfolgen, die im 
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureDocumentDBAuthKey sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureDocumentDBAuthKey findet Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
@@ -642,12 +642,12 @@ Die Zeichenfolge "Server", "Server" oder "Datenquelle", gefolgt von den Zeichen 
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureConnectionString sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
@@ -702,12 +702,12 @@ Die Zeichenfolge "Hostname" gefolgt von den Zeichen und Zeichenfolgen, die im Mu
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureIoTConnectionString sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureIoTConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
@@ -752,12 +752,12 @@ Die Zeichenfolge "benutzerkwt =" gefolgt von einer alphanumerischen Zeichenfolge
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzurePublishSettingPasswords sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzurePublishSettingPasswords findet Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
 
@@ -808,12 +808,12 @@ Die Zeichenfolge "" Codestring. Cache. Windows.<!--no-hyperlink-->NET ", gefolgt
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureRedisCacheConnectionString sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureRedisCacheConnectionString findet Inhalte, die mit dem Muster übereinstimmen..
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
@@ -862,12 +862,12 @@ Die Zeichenfolge "SIG" gefolgt von den Zeichen und Zeichenfolgen, die im Muster 
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureSAS sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureSAS findet Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
 <!--Azure SAS-->
@@ -902,12 +902,12 @@ Die Zeichenfolge "Endpoint" gefolgt von den Zeichen und Zeichenfolgen, die im Mu
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString findet Inhalte, die mit dem Muster übereinstimmen..
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
@@ -960,12 +960,12 @@ Die Zeichenfolge "DefaultEndpointsProtocol", gefolgt von den Zeichen und Zeichen
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKey sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKey findet Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_AzureEmulatorStorageAccountFilter findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 
@@ -1019,12 +1019,12 @@ Eine beliebige Kombination von 86 unter-oder Großbuchstaben, Ziffern, den Schr�
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKeyGeneric sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKeyGeneric findet Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1057,7 +1057,7 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_belgium_national_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_belgium_national_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_belgium_national_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
@@ -1125,12 +1125,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_brazil_cpf findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_brazil_cpf sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_brazil_cpf wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_brazil_cpf findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_brazil_cpf sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -1185,12 +1185,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_brazil_cnpj findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_brazil_cnpj sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_brazil_cnpj wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_brazil_cnpj findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_brazil_cnpj sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -1261,12 +1261,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_brazil_rg findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_brazil_rg sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_brazil_rg wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_brazil_rg findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_brazil_rg sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -1307,7 +1307,7 @@ Eine kanadische Bankkontonummer setzt sich wie folgt zusammen:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -1373,7 +1373,7 @@ Verschiedene Muster in Alberta, British Columbia, Manitoba, New Brunswick, Newfo
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -1440,7 +1440,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
 - Die Abkürzung für die Provinz, z. B. AB
 - Der Name der Provinz, beispielsweise „Alberta“
@@ -1590,7 +1590,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -1636,13 +1636,13 @@ Zwei Großbuchstaben, gefolgt von sechs Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_canada_passport_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport wird gefunden.
+- Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport wurde gefunden.
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -1703,7 +1703,7 @@ Neun Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -1867,12 +1867,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_chile_id_card findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_chile_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_chile_id_card wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_chile_id_card findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_chile_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -1926,12 +1926,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_china_resident_id findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_china_resident_id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_china_resident_id wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_china_resident_id findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_china_resident_id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -2218,12 +2218,12 @@ Neun aufeinanderfolgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_croatia_id_card findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_croatia_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_croatia_id_card wurde gefunden.
 
 ```xml
@@ -2263,12 +2263,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_croatia_oib_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_croatia_oib_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_croatia_oib_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_croatia_oib_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_croatia_oib_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -2855,7 +2855,7 @@ Schlüsselwörter Keyword_finland_passport_number Passport Passi
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -2904,7 +2904,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -2939,7 +2939,7 @@ Neun Ziffern und Buchstaben:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -3001,12 +3001,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 95 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_french_insee oder Func_fr_insee sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Die Funktion Func_french_insee oder Func_fr_insee findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_fr_insee wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_french_insee oder Func_fr_insee sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Die Funktion Func_french_insee oder Func_fr_insee findet Inhalte, die mit dem Muster übereinstimmen.
 - Es wurde kein Schlüsselwort aus Keyword_fr_insee gefunden.
 - Die Prüfsumme stimmt.
 
@@ -3301,12 +3301,12 @@ Vom 1. April 1987 bis 31. Oktober 2010:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_germany_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_germany_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_germany_id_card wurde gefunden.
 
 ```xml
@@ -3351,12 +3351,12 @@ Acht Buchstaben und Zahlen (neues Format):
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_greece_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_greece_id_card wurde gefunden.
 
 ```xml
@@ -3398,12 +3398,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_hong_kong_id_card findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_hong_kong_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_hong_kong_id_card wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_hong_kong_id_card findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_hong_kong_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -3480,7 +3480,7 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_india_permanent_account_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_india_permanent_account_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
@@ -3567,16 +3567,16 @@ Die Prüfsumme stimmt.
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_indonesia_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_indonesia_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_indonesia_id_card wurde gefunden.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_indonesia_id_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_indonesia_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -3655,7 +3655,7 @@ Komplexes Muster, das formatierte (Punkte) und unformatierte (keine Punkte) Vers
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -3709,7 +3709,7 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 
 ### <a name="format"></a>Format
 
-Dictionary
+Wörterbuch
 
 ### <a name="pattern"></a>Muster
 
@@ -3717,7 +3717,7 @@ Schlüsselwort
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -3743,15 +3743,15 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Schlüsselwörter
 
-Ein beliebiger Ausdruck aus dem Dictionary_icd_10_updated-Stichwort Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, zehnte Überarbeitung, klinische Änderung (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungs Codes.
+Ein beliebiger Ausdruck aus dem Dictionary_icd_10_updated Keyword-Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, zehnte Revision, klinische Änderung (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungs Codes.
 
-Ein beliebiger Ausdruck aus dem Dictionary_icd_10_codes-Stichwort Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, zehnte Überarbeitung, klinische Änderung (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Dieser Typ sucht nur nach Versicherungs Codes, nicht nach der Beschreibung.
+Ein beliebiger Ausdruck aus dem Dictionary_icd_10_codes Keyword-Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, zehnte Revision, klinische Änderung (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Dieser Typ sucht nur nach Versicherungs Codes, nicht nach der Beschreibung.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Internationale Klassifikation von Krankheiten (ICD-9-cm)
 
 ### <a name="format"></a>Format
 
-Dictionary
+Wörterbuch
 
 ### <a name="pattern"></a>Muster
 
@@ -3759,7 +3759,7 @@ Schlüsselwort
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -3784,9 +3784,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-Ein beliebiger Ausdruck aus dem Dictionary_icd_9_updated-Stichwort Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, neunte Revision, klinische Änderung (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungs Codes.
+Ein beliebiger Ausdruck aus dem Dictionary_icd_9_updated Keyword-Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, neunte Revision, klinische Änderung (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungs Codes.
 
-Ein beliebiger Ausdruck aus dem Dictionary_icd_9_codes-Stichwort Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, neunte Revision, klinische Änderung (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Dieser Typ sucht nur nach Versicherungs Codes, nicht nach der Beschreibung.
+Ein beliebiger Ausdruck aus dem Dictionary_icd_9_codes Keyword-Wörterbuch, das auf der [internationalen Klassifikation von Krankheiten basiert, neunte Revision, klinische Änderung (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Dieser Typ sucht nur nach Versicherungs Codes, nicht nach der Beschreibung.
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Irland – Personal Public Service-Nummer (PPS)
 
@@ -3816,14 +3816,14 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_ireland_pps findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_ireland_pps sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_ireland_pps wurde gefunden.
     - Die Funktion Func_eu_date findet ein Datum in das richtige Datumsformat.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_ireland_pps findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_ireland_pps sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -3878,7 +3878,7 @@ Unformatiert
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -3963,7 +3963,7 @@ Eine Kombination von 10 Buchstaben und Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4007,7 +4007,7 @@ Bankkontonummer:
 
 Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4117,7 +4117,7 @@ Otemachi
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4177,7 +4177,7 @@ Zwei Buchstaben (Groß-/Kleinschreibung irrelevant), gefolgt von sieben Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4216,7 +4216,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4267,7 +4267,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4318,12 +4318,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_jp_residence_card_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_jp_residence_card_number findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_jp_residence_card_number wurde gefunden.
 
 ```xml
@@ -4363,12 +4363,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_malaysia_id_card_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_malaysia_id_card_number findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_malaysia_id_card_number wurde gefunden.
 
 ```xml
@@ -4433,9 +4433,9 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_netherlands_bsn findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_netherlands_bsn sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_netherlands_bsn wurde gefunden.
-- Die Funktion Func_eu_date2 sucht ein Datum im richtigen Datumsformat.
+- Die Funktion Func_eu_date2 findet ein Datum im richtigen Datumsformat.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -4500,7 +4500,7 @@ Keyword_nz_terms
 
 - Nhi 
 - New Zealand 
-- Health 
+- Gesundheitswesen 
 - Behandlung 
    
 ## <a name="norway-identification-number"></a>Norwegen – Identifikationsnummer
@@ -4523,11 +4523,11 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_norway_id_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_norway_id_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_norway_id_number wurde gefunden.
 - Die Prüfsumme stimmt.
 - Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_norway_id_numbe findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_norway_id_numbe sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -4572,12 +4572,12 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_philippines_unified_id sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_philippines_unified_id findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_philippines_id wurde gefunden.
 
 ```xml
@@ -4734,12 +4734,12 @@ Acht Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_portugal_citizen_card sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_portugal_citizen_card findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_portugal_citizen_card wurde gefunden.
 
 ```xml
@@ -4774,7 +4774,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -4824,12 +4824,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_singapore_nric sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_singapore_nric findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_singapore_nric wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_singapore_nric sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_singapore_nric findet Inhalte, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -4880,7 +4880,7 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_south_africa_identification_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_south_africa_identification_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_south_africa_identification_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
@@ -4925,12 +4925,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_south_korea_resident_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_south_korea_resident_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_south_korea_resident_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_south_korea_resident_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_south_korea_resident_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -5012,12 +5012,12 @@ Die Zeichenfolge "Benutzer-ID", "Benutzer-ID", "UID" oder "UserID", gefolgt von 
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_SQLServerConnectionString sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_Regex_SQLServerConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus CEP_GlobalFilter wurde **nicht** gefunden.
 - Der reguläre Ausdruck CEP_PasswordPlaceHolder findet **keine** Inhalte, die mit dem Muster übereinstimmen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
@@ -5105,7 +5105,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-No
+Nein
    
 ## <a name="sweden-passport-number"></a>Schwedische Reisepassnummer
 
@@ -5119,7 +5119,7 @@ Acht aufeinanderfolgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5194,7 +5194,7 @@ Vier Buchstaben, gefolgt von 5 bis 31 Buchstaben oder Ziffern:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5317,12 +5317,12 @@ Nicht biometrische Passnummer:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_taiwan_passport sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_taiwan_passport findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_taiwan_passport wurde gefunden.
 
 ```xml
@@ -5362,12 +5362,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_taiwan_resident_certificate sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Regex_taiwan_resident_certificate findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_taiwan_resident_certificate wurde gefunden.
 
 ```xml
@@ -5415,11 +5415,11 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Thai_Citizen_Id findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_Thai_Citizen_Id wurde gefunden.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Thai_Citizen_Id findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -5462,11 +5462,11 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Turkish_National_Id findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_Turkish_National_Id wurde gefunden.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Turkish_National_Id findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -5501,7 +5501,7 @@ Kombination aus 18 Buchstaben und Ziffern im angegebenen Format
 18 Buchstaben und Ziffern:
 - Fünf Buchstaben (ohne Beachtung der Groß-/Kleinschreibung) oder die Ziffer 9 anstelle eines Buchstabens 
 - Eine Ziffer 
-- Fünf Ziffern im Datumsformat TTMMJ für das Geburtsdatum 
+- Fünf Ziffern im Datumsformat MMDDY für das Geburtsdatum (das siebte Zeichen wird um 50 erhöht, wenn der Fahrer weiblich ist, d. h. 51 bis 62 statt 01 bis 12).
 - Zwei Buchstaben (ohne Beachtung der Groß-/Kleinschreibung) oder die Ziffer 9 anstelle eines Buchstabens 
 - Fünf Ziffern
 
@@ -5558,7 +5558,7 @@ Zwei Buchstaben (Groß-/Kleinschreibung irrelevant), gefolgt von 1-4 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5683,7 +5683,7 @@ ODER
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5742,7 +5742,7 @@ Neun aufeinanderfolgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5794,7 +5794,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5858,7 +5858,7 @@ Abhängig vom Bundesstaat – am Beispiel für New York:
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -5989,7 +5989,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
 - Abkürzung für Bundesstaat (z. B. „NY“) 
 - Name des Bundesstaats (z. B. „New York“)    
@@ -6019,7 +6019,7 @@ Unformatiert
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 ### <a name="definition"></a>Definition
 
@@ -6102,11 +6102,11 @@ Vier Funktionen suchen nach Sozialversicherungsnummern in vier verschiedenen Mus
 - Func_ssn findet Sozialversicherungsnummern mit starker Formatierung vor 2011, die mit Bindestrichen oder Leerzeichen formatiert sind (DDD-DD-dddd oder DDD DD dddd)
 - Func_unformatted_ssn findet Sozialversicherungsnummern mit starker Formatierung vor 2011, die als neun aufeinanderfolgende Ziffern (ddddddddd) unformatiert sind.
 - Func_randomized_formatted_ssn findet Post-2011-Sozialversicherungsnummern, die mit Bindestrichen oder Leerzeichen formatiert sind (DDD-DD-dddd oder DDD DD dddd)
-- Func_randomized_unformatted_ssn findet Post-2011-Sozialversicherungsnummern, die als neun aufeinanderfolgende Ziffern (ddddddddd) unformatiert sind.
+- Func_randomized_unformatted_ssn findet Post-2011 Sozialversicherungsnummern, die als neun aufeinanderfolgende Ziffern (ddddddddd) unformatiert sind.
 
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
 
 
 ### <a name="definition"></a>Definition
@@ -6115,25 +6115,25 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Die Funktion Func_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 - Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address findet eine Adresse im richtigen Format.
+- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_unformatted_ssn findet Inhalte, die mit dem Muster übereinstimmen.
+- Die Funktion Func_unformatted_ssn sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 - Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address findet eine Adresse im richtigen Format.
+- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_randomized_formatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 - Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address findet eine Adresse im richtigen Format.
+- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist zu 55 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_randomized_unformatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 - Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address findet eine Adresse im richtigen Format.
+- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist 40% sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Sie in einer Nähe von 300 Zeichen:
 - Die Funktion Func_ssn findet Inhalte, die dem Muster entsprechen.

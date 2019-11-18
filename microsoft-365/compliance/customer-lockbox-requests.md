@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a19b8f7933cfae06c462d204148f53b441126f58
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080825"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38686172"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 
@@ -114,7 +114,7 @@ Ein Office 365 Administrator kann Kunden-Lockbox-Steuerelemente im Microsoft 365
 Überwachungsdatensätze, die den Kunden Lockbox-Anforderungen entsprechen, werden im Office 365 Überwachungsprotokoll protokolliert und können mithilfe des [Überwachungstools für die Überwachungsprotokoll Suche](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) im Office 365 Security #a0 Compliance Center abgerufen werden. Aktionen im Zusammenhang mit einem Kunden, der eine Lockbox-Anforderung für einen Kunden akzeptiert oder ablehnt und von Microsoft-Ingenieuren ausgeführte Aktionen (wenn Zugriffsanforderungen genehmigt werden) werden im Office 365 Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
 
 > [!NOTE]
-> Sie müssen in Exchange Online die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" zugewiesen sein, um das Office 365 Überwachungsprotokoll durchsuchen zu können. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
+> Sie müssen in Exchange Online die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" zugewiesen sein, um das Office 365 Überwachungsprotokoll durchsuchen zu können. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Durchsuchen des Überwachungsprotokolls nach Aktivitäten im Zusammenhang mit Kunden-Lockbox-Anforderungen
 
@@ -162,7 +162,7 @@ Wenn eine Person in Ihrer Organisation eine Kunden-Lockbox-Anforderung genehmigt
 |:---------- |:----------|
 | Datum       | Das Datum und die Uhrzeit, zu der die Kunden-Lockbox-Anforderung genehmigt oder verweigert wurde.
 | IP-Adresse | Die IP-Adresse des Computers, den die genehmigende Person verwendet hat, um eine Anforderung zu genehmigen oder zu verweigern. |
-| Benutzer       | Das Dienstkonto BOXServiceAccount @\[customerforest\]. Prod.Outlook.com.            |
+| Benutzer       | Das Dienstkonto BOXServiceAccount@\[customerforest\]. Prod.Outlook.com.            |
 | Aktivität   | Festlegen-AccessToCustomerDataRequest; Dies ist die Überwachungsaktivität, die protokolliert wird, wenn Sie eine Kunden-Lockbox-Anforderung genehmigen oder verweigern.                                |
 | Element       | Die GUID der Kunden-Lockbox-Anforderung                             |
 
@@ -216,7 +216,7 @@ Kunden Inhalte sind die Daten, die von Benutzern Office 365 Diensten und Anwendu
 
 - Schlussfolgerungen und alle nachfolgenden Rückschlüsse, wenn der Inhalt des Kunden bleibt
 
-Weitere Informationen zu Kundeninhalten in Office 365 finden Sie im [Office 365 Trust Center](https://products.office.com/en-US/business/office-365-trust-center-privacy/).
+Weitere Informationen zu Kundeninhalten in Office 365 finden Sie im [Office 365 Trust Center](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>Wer wird benachrichtigt, wenn eine Anforderung für den Zugriff auf meine Inhalte vorliegt?
 
@@ -270,9 +270,9 @@ Wenn ein Kunde eine Kunden-Lockbox-Anforderung ablehnt, erfolgt kein Zugriff auf
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>Schützt die Kunden-Lockbox vor Daten Anfragen von Strafverfolgungsbehörden oder anderen Drittanbietern?
 
-Nein. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten ernst. Als Cloud-Dienstanbieter plädiert Microsoft immer für den Schutz von Kundendaten. Für den Fall, dass eine Vorladung vorliegt, versucht Microsoft immer, den Drittanbieter an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie den Blog von Brad Smith: [Schützen von Kundendaten vor Regierungs snoopings](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig [detaillierte Informationen](https://www.microsoft.com/en-us/corporate-responsibility/lerr) zu den von Microsoft empfangenen Strafverfolgungs Anforderungen.
+Nein. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten ernst. Als Cloud-Dienstanbieter plädiert Microsoft immer für den Schutz von Kundendaten. Für den Fall, dass eine Vorladung vorliegt, versucht Microsoft immer, den Drittanbieter an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie den Blog von Brad Smith: [Schützen von Kundendaten vor Regierungs snoopings](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig [detaillierte Informationen](https://www.microsoft.com/corporate-responsibility/lerr) zu den von Microsoft empfangenen Strafverfolgungs Anforderungen.
 
-Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/default.aspx) in Bezug auf Datenanforderungen von Drittanbietern und im Abschnitt "Offenlegung von Kundendaten" in den [Online Dienstbedingungen](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
+Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) in Bezug auf Datenanforderungen von Drittanbietern und im Abschnitt "Offenlegung von Kundendaten" in den [Online Dienstbedingungen](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Wie gewährleistet Microsoft, dass ein Mitglied seiner Mitarbeiter in Office 365 Anwendungen keinen ständigen Zugriff auf Kunden Inhalte hat?
 

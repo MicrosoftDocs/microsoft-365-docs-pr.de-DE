@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über die Verwaltung privilegierter Zugriffsrechte in Office 365
-ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082233"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686114"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privileged Access Management in Office 365
 
@@ -94,4 +94,4 @@ Beginnen [Sie mit der Konfiguration Ihrer Organisation für die privilegierte Zu
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-[Interaktiver Leitfaden: überwachen und Steuern von Administratoraufgaben mit privilegierter Zugriffsverwaltung](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[Interaktiver Leitfaden: überwachen und Steuern von Administratoraufgaben mit privilegierter Zugriffsverwaltung](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

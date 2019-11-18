@@ -7,23 +7,25 @@ ms.date: 7/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Zusätzlich zur standardmäßigen Verschlüsselung auf Volumen Ebene, die über BitLocker und den Distributed Key Manager (DKM) aktiviert ist, bietet Office 365 eine zusätzliche Verschlüsselungsebene auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich Daten aus Exchange Online, Skype for Business, SharePoint Online und OneDrive für Unternehmen. Dies wird als Dienst Verschlüsselung bezeichnet.
-ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081810"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686176"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
 
 Zusätzlich zur standardmäßigen Verschlüsselung auf Volumen Ebene, die über BitLocker und den Distributed Key Manager (DKM) aktiviert ist, bietet Office 365 eine zusätzliche Verschlüsselungsebene auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich Daten aus Exchange Online, Skype for Business, SharePoint Online und OneDrive für Unternehmen. Dies wird als Dienst Verschlüsselung bezeichnet.
   
-Der Kundenschlüssel basiert auf der Dienst Verschlüsselung und ermöglicht es Ihnen, Schlüssel bereitzustellen und zu steuern, die zum Verschlüsseln der Daten in Rest in Office 365 verwendet werden, wie in den [Online Services Terms (Ost)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)beschrieben. Mit dem Kundenschlüssel können Sie Auflagen erfüllen, da Sie die Verschlüsselungsschlüssel steuern, mit denen Office 365 die Daten entschlüsselt.
+Der Kundenschlüssel basiert auf der Dienst Verschlüsselung und ermöglicht es Ihnen, Schlüssel bereitzustellen und zu steuern, die zum Verschlüsseln der Daten in Rest in Office 365 verwendet werden, wie in den [Online Services Terms (Ost)](https://www.microsoft.com/Licensing/product-licensing/products.aspx)beschrieben. Mit dem Kundenschlüssel können Sie Auflagen erfüllen, da Sie die Verschlüsselungsschlüssel steuern, mit denen Office 365 die Daten entschlüsselt.
   
 Um Feedback zum Kundenschlüssel bereitzustellen, einschließlich der Dokumentation, senden Sie Ihre Ideen, Vorschläge und Perspektiven an customerkeyfeedback@Microsoft.com.
   
@@ -46,16 +48,16 @@ BYOK mit Azure Information Protection für Exchange Online wird in den Office 36
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Verschlüsseln Office 365 Nachrichtenverschlüsselung und bringen Sie Ihren eigenen Schlüssel mit Azure Information Protection, ändern Sie den Microsoft-Ansatz für Datenanforderungen von Drittanbietern wie Vorladungen?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Nein. Office 365 Nachrichtenverschlüsselung und die Option zum Bereitstellen und Steuern ihrer eigenen Verschlüsselungsschlüssel mit "Holen Sie sich Ihren eigenen Schlüssel" (BYOK) für Azure Information Protection wurde nicht entwickelt, um auf Strafverfolgungs Vorladungen zu reagieren. Office 365 Nachrichtenverschlüsselung mit BYOK für AIP wurde für Compliance-orientierte Kunden entwickelt, die ihre internen oder externen Compliance-Verpflichtungen erfüllen müssen. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten sehr ernst. Als Anbieter von Cloud-Diensten plädieren wir immer für den Schutz von Kundendaten. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie bitte Brad Smith es Blog: [Schützen von Kundendaten vor Regierungs snoopings](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig detaillierte Informationen über die Anfrage, die wir [hier](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)erhalten.
+Nein. Office 365 Nachrichtenverschlüsselung und die Option zum Bereitstellen und Steuern ihrer eigenen Verschlüsselungsschlüssel mit "Holen Sie sich Ihren eigenen Schlüssel" (BYOK) für Azure Information Protection wurde nicht entwickelt, um auf Strafverfolgungs Vorladungen zu reagieren. Office 365 Nachrichtenverschlüsselung mit BYOK für AIP wurde für Compliance-orientierte Kunden entwickelt, die ihre internen oder externen Compliance-Verpflichtungen erfüllen müssen. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten sehr ernst. Als Anbieter von Cloud-Diensten plädieren wir immer für den Schutz von Kundendaten. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie bitte Brad Smith es Blog: [Schützen von Kundendaten vor Regierungs snoopings](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig detaillierte Informationen über die Anfrage, die wir [hier](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)erhalten.
   
-Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/default.aspx) in Bezug auf Datenanforderungen von Drittanbietern und "Offenlegung von Kundendaten" in den [Online Dienstleistungsbedingungen (Ost) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) in Bezug auf Datenanforderungen von Drittanbietern und "Offenlegung von Kundendaten" in den [Online Dienstleistungsbedingungen (Ost) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Ändert die Dienst Verschlüsselung mit dem Kundenschlüssel den Microsoft-Ansatz für Datenanforderungen von Drittanbietern wie beispielsweise Vorladungen?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Nein. Der Kundenschlüssel wurde nicht für die Reaktion auf Vorladungen der Strafverfolgungsbehörden entwickelt. Es wurde für regulierte Kunden entwickelt, um Ihre internen oder externen Compliance-Verpflichtungen zu erfüllen. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten sehr ernst. Als Anbieter von Cloud-Diensten plädieren wir immer für den Schutz von Kundendaten. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie bitte Brad Smith es Blog: [Schützen von Kundendaten vor Regierungs snoopings](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig detaillierte Informationen über die Anfrage, die wir [hier](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)erhalten.
+Nein. Der Kundenschlüssel wurde nicht für die Reaktion auf Vorladungen der Strafverfolgungsbehörden entwickelt. Es wurde für regulierte Kunden entwickelt, um Ihre internen oder externen Compliance-Verpflichtungen zu erfüllen. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten sehr ernst. Als Anbieter von Cloud-Diensten plädieren wir immer für den Schutz von Kundendaten. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie bitte Brad Smith es Blog: [Schützen von Kundendaten vor Regierungs snoopings](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig detaillierte Informationen über die Anfrage, die wir [hier](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)erhalten.
   
-Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) in Bezug auf Datenanforderungen von Drittanbietern und "Offenlegung von Kundendaten" in den [Online Dienstleistungsbedingungen (Ost)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) . 
+Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) in Bezug auf Datenanforderungen von Drittanbietern und "Offenlegung von Kundendaten" in den [Online Dienstleistungsbedingungen (Ost)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) . 
   
 ## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>Steht der Kurzhilfe-Support für die Implementierung des Kunden Schlüssels zur Verfügung?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -89,15 +91,15 @@ Ja. Sie können das Cmdlet MailUser Windows PowerShell verwenden, um dem Benutze
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>Wie kann ich überprüfen, ob die Verschlüsselung mit dem Kundenschlüssel aktiviert ist und Office 365 die Verschlüsselung mit dem Kundenschlüssel abgeschlossen hat?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online und Skype for Business:** Sie können [mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online herstellen](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) und dann das Cmdlet **[Get-MailboxStatistics]** für jedes Postfach verwenden, das Sie überprüfen möchten. In der Ausgabe des Cmdlets Get-MailboxStatistics gibt die _IsEncrypted_ -Eigenschaft den Wert **true** zurück, wenn das Postfach verschlüsselt ist, und den Wert **false** , wenn dies nicht der Fall ist. Wenn das Postfach verschlüsselt ist, ist der für die _DataEncryptionPolicyID_ -Eigenschaft zurückgegebene Wert die GUID der DEP, mit der das Postfach verschlüsselt wird. Weitere Informationen zum Ausführen dieses Cmdlets finden Sie unter [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) und using PowerShell with Exchange Online. 
+ **Exchange Online und Skype for Business:** Sie können [mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online herstellen](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) und dann das Cmdlet **[Get-MailboxStatistics]** für jedes Postfach verwenden, das Sie überprüfen möchten. In der Ausgabe des Cmdlets Get-MailboxStatistics gibt die _IsEncrypted_ -Eigenschaft den Wert **true** zurück, wenn das Postfach verschlüsselt ist, und den Wert **false** , wenn dies nicht der Fall ist. Wenn das Postfach verschlüsselt ist, ist der für die _DataEncryptionPolicyID_ -Eigenschaft zurückgegebene Wert die GUID der DEP, mit der das Postfach verschlüsselt wird. Weitere Informationen zum Ausführen dieses Cmdlets finden Sie unter [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx) und using PowerShell with Exchange Online. 
   
-Wenn die Postfächer nach dem warten auf 72 Stunden ab dem Zeitpunkt, an dem Sie die DEP zugewiesen haben, nicht verschlüsselt sind, initiieren Sie eine Post Fach Verlagerung. Stellen Sie hierzu [mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , und verwenden Sie dann das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs wie folgt an: 
+Wenn die Postfächer nach dem warten auf 72 Stunden ab dem Zeitpunkt, an dem Sie die DEP zugewiesen haben, nicht verschlüsselt sind, initiieren Sie eine Post Fach Verlagerung. Stellen Sie hierzu [mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) , und verwenden Sie dann das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs wie folgt an: 
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online und OneDrive für Unternehmen:** Sie können [eine Verbindung mit SharePoint Online PowerShell herstellen](https://technet.microsoft.com/en-us/library/fp161372.aspx)und dann das Cmdlet **[get-SPODataEncryptionPolicy]** verwenden, um den Status Ihres Mandanten zu überprüfen. Die * * _State_* *-Eigenschaft gibt den Wert " **registered** " zurück, wenn die Verschlüsselung von Kunden Schlüsseln aktiviert ist und alle Dateien an allen Standorten verschlüsselt wurden. Wenn die Verschlüsselung noch ausgeführt wird, bietet dieses Cmdlet Informationen darüber, welcher Prozentsatz der Websites abgeschlossen ist. 
+ **SharePoint Online und OneDrive für Unternehmen:** Sie können [eine Verbindung mit SharePoint Online PowerShell herstellen](https://technet.microsoft.com/library/fp161372.aspx)und dann das Cmdlet **[get-SPODataEncryptionPolicy]** verwenden, um den Status Ihres Mandanten zu überprüfen. Die * * _State_* *-Eigenschaft gibt den Wert " **registered** " zurück, wenn die Verschlüsselung von Kunden Schlüsseln aktiviert ist und alle Dateien an allen Standorten verschlüsselt wurden. Wenn die Verschlüsselung noch ausgeführt wird, bietet dieses Cmdlet Informationen darüber, welcher Prozentsatz der Websites abgeschlossen ist. 
   
 ## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>Wie lange dauert es, bis die neuen Schlüsselsätze meine Daten schützen, wenn ich zu einer anderen Gruppe von Tasten wechseln möchte?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -140,7 +142,7 @@ Es gibt drei Möglichkeiten, den Verfügbarkeits Schlüssel mit Exchange Online 
   
 Office 365 verwendet den Verfügbarkeits Schlüssel sowohl für die Dienstverfügbarkeit als auch für die Wiederherstellung von einem fehlerhaften Kundenschlüssel Status für Exchange Online. Es gibt eine Hierarchie von Schlüsseln, die von Kunden Schlüsseln verwendet werden. Diese Hierarchie wird in der folgenden Abbildung dargestellt.
   
-![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
+![Eine Grafik zeigt die Hierarchie von Schlüsseln im Kundenschlüssel](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
 Wenn beide Azure Key Vault-Schlüssel einer einzelnen Daten Verschlüsselungsrichtlinie (DEP) nicht verfügbar sind, können Office 365 den Verfügbarkeits Schlüssel verwenden, um zu einer neuen DEP zu wechseln. Office 365 bestimmt, ob der Verfügbarkeits Schlüssel für die Dienstverfügbarkeit unterschiedlich verwendet werden soll, je nachdem, ob eine vom Benutzer initiierte Aktivität, beispielsweise wenn ein Benutzer e-Mails an den Outlook-Client herunterlädt, oder eine vom System initiierte Aktivität wie die Indizierung Postfachinhalte oder für eDiscovery-suchen haben den Prozess ausgelöst.
   
@@ -206,7 +208,7 @@ Für SharePoint Online muss der Office 365 Administrator, der den Kundenschlüss
   
 Für Exchange Online müssen die Postfächer "Benutzer" und "e-Mail-Benutzer" lizenziert werden. Alle anderen, beispielsweise freigegebene Postfächer, benötigen keine Lizenz für den Kundenschlüssel. Führen Sie das folgende Cmdlet aus, um zu überprüfen, ob Ihr Exchange Online Postfach ordnungsgemäß lizenziert ist:
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
@@ -220,7 +222,7 @@ Nein. Per Definition haben Testabonnements eine beschränkte Lebensdauer. Versch
 ## <a name="how-much-will-using-customer-key-cost"></a>In welchem Umfang werden die Kundenschlüssel Kosten verwendet?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Zusätzlich zur Lizenzierung, die für den Kundenschlüssel erforderlich ist, entstehen für Kunden Kosten für die Verwendung von Schlüssel Vaults. [Azure Key Vault Pricing Details](https://azure.microsoft.com/en-us/pricing/details/key-vault/) beschreibt das Kostenmodell und hilft bei der Schätzung. Es gibt keine Möglichkeit, die genauen Kosten vorherzusagen, die jedem Kunden entstehen, da sich die Nutzungsmuster unterscheiden. Die Erfahrung hat gezeigt, dass die Kosten sehr niedrig sind und im Allgemeinen im Bereich von $0,002 bis $0,005 pro Benutzer und Monat zuzüglich der Kosten von HSM-gebackenen Schlüsseln liegt. Die Kosten variieren auch je nach der vom Kunden gewählten Protokollierungskonfiguration und der Größe des Azure-Speichers, der für Azure Key Vault-Protokolle verwendet wird. 
+Zusätzlich zur Lizenzierung, die für den Kundenschlüssel erforderlich ist, entstehen für Kunden Kosten für die Verwendung von Schlüssel Vaults. [Azure Key Vault Pricing Details](https://azure.microsoft.com/pricing/details/key-vault/) beschreibt das Kostenmodell und hilft bei der Schätzung. Es gibt keine Möglichkeit, die genauen Kosten vorherzusagen, die jedem Kunden entstehen, da sich die Nutzungsmuster unterscheiden. Die Erfahrung hat gezeigt, dass die Kosten sehr niedrig sind und im Allgemeinen im Bereich von $0,002 bis $0,005 pro Benutzer und Monat zuzüglich der Kosten von HSM-gebackenen Schlüsseln liegt. Die Kosten variieren auch je nach der vom Kunden gewählten Protokollierungskonfiguration und der Größe des Azure-Speichers, der für Azure Key Vault-Protokolle verwendet wird. 
   
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>

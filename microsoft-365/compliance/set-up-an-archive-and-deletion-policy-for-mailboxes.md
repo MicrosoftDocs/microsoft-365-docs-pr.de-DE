@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081802"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686290"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Richten Sie eine Archiv-und Löschrichtlinie für Postfächer in Ihrer Office 365 Organisation ein.
 
@@ -44,7 +44,7 @@ In den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsrich
     
 Sie können einige oder alle Schritte in diesem Artikel befolgen, um eine Archivierungs-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess auf einigen Postfächern zu testen, bevor er für alle Postfächer in Ihrer Organisation implementiert wird.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
@@ -125,7 +125,7 @@ Zunächst erstellen Sie ein Standardrichtlinientag für ein benutzerdefiniertes 
     
 3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1095 Tagen (3 Jahren) in das Archivpostfach verschoben.
     
-4. **Kommentar** Optional Geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
+4. **Comment** (optional) geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
     
 3. Klicken Sie auf **Speichern** , um das benutzerdefinierte Archiv-richtlinientag zu erstellen. 
     
@@ -147,7 +147,7 @@ Als Nächstes erstellen Sie ein weiteres benutzerdefiniertes Standardrichtlinien
     
 3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 2555 Tagen (7 Jahre) gelöscht.
     
-4. **Kommentar** Optional Geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
+4. **Comment** (optional) geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
     
 3. Klicken Sie auf **Speichern** , um den benutzerdefinierten Löschungs richtlinientag zu erstellen. 
     
@@ -171,7 +171,7 @@ Das letzte Aufbewahrungs-Tag, das Sie erstellen, ist ein benutzerdefiniertes Auf
     
 4. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1825 Tagen (5 Jahre) gelöscht.
     
-5. **Kommentar** Optional Geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
+5. **Comment** (optional) geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
     
 3. Klicken Sie auf **Speichern** , um die benutzerdefinierte RPT für den Ordner Gelöschte Elemente zu erstellen. 
     
@@ -242,7 +242,7 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit Exchange Online
   
 1. Öffnen Sie auf Ihrem lokalen Computer Windows PowerShell, und führen Sie dann den folgenden Befehl aus.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -250,19 +250,19 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit Exchange Online
     
 2. Führen Sie den folgenden Befehl aus.
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. Führen Sie den folgenden Befehl aus.
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. Um zu prüfen, ob Sie mit Ihrer Exchange Online-Organisation verbunden sind, führen Sie den folgenden Befehl aus, um eine Liste aller Postfächer in Ihrer Organisation abzurufen.
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -271,11 +271,11 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit Exchange Online
   
 5. Führen Sie die folgenden beiden Befehle aus, um den Assistenten für verwaltete Ordner für alle Benutzerpostfächer in Ihrer Organisation zu starten.
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -289,16 +289,18 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
 
 2. Führen Sie den folgenden Befehl aus, um Informationen zu den Postfachplänen in Ihrer Organisation anzuzeigen.
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     Notieren Sie sich den Postfachplan, der als Standard festgelegt ist.
 
 3. Führen Sie den folgenden Befehl aus, um die neue Aufbewahrungsrichtlinie, die Sie in Schritt 3 (beispielsweise **Alpine House Archive und Aufbewahrungsrichtlinie**) erstellt haben, dem Standard Postfachplan zuzuweisen. In diesem Beispiel wird davon ausgegangen, dass der Name des Standard Postfachplans **exchangeonlineenterprise zurückgegeben**ist.
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. Sie können den Befehl in Schritt 2 erneut ausführen, um zu überprüfen, ob die der Standardpostfacheinstellungen zugewiesene Aufbewahrungsrichtlinie geändert wurde.
 
 ## <a name="more-information"></a>Weitere Informationen
@@ -307,7 +309,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
     
 - In der folgenden Tabelle finden Sie weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die durch Befolgen der Schritte in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungstags**|**Funktionsweise dieses Tags**|**Integriert oder Benutzerdefiniert?**|**Type**|
+    |**Aufbewahrungstags**|**Funktionsweise dieses Tags**|**Integriert oder Benutzerdefiniert?**|**Typ**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Jahre Umstellung auf Archiv  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpines Haus 7 Jahre dauerhaft löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |

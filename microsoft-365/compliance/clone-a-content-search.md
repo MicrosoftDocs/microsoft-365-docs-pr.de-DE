@@ -13,12 +13,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel, um schnell eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 zu klonen. Wenn Sie eine Suche Klonen, wird eine neue Suche (mit einem neuen Namen) erstellt, die die gleichen Eigenschaften wie die ursprüngliche Suche enthält. Anschließend können Sie die neue Suche (durch Ändern der Stichwortabfrage oder des Datumsbereichs) bearbeiten und dann ausführen.
-ms.openlocfilehash: 2622b77045d3b4a92ad2e8a1852e1ddbaaca3368
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081046"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686228"
 ---
 # <a name="clone-a-content-search"></a>Klonen einer Inhaltssuche
 
@@ -32,7 +32,7 @@ Gründe für das Klonen von Inhalts suchen
     
 - So verringern Sie die Größe der Suchergebnisse; Wenn Sie beispielsweise eine Suche haben, die zu viele zu exportierende Ergebnisse zurückgibt, können Sie die Suche Klonen und dann eine Suchbedingung basierend auf einem Datumsbereich hinzufügen, um die Anzahl der Suchergebnisse zu reduzieren.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security #a0 Compliance Center sein, um das in diesem Thema beschriebene Skript auszuführen.
     
@@ -58,7 +58,7 @@ So Klonen Sie eine Suche:
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `CloneSearch.ps1`.
     
-  ```
+  ```powershell
   # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
@@ -120,7 +120,7 @@ So Klonen Sie eine Suche:
     
 3. Ausführen des Skripts; Zum Beispiel:
     
-    ```
+    ```powershell
     .\CloneSearch.ps1
     ```
 
@@ -138,7 +138,7 @@ So Klonen Sie eine Suche:
 
 Nachdem Sie das Skript zum Klonen einer vorhandenen Inhaltssuche ausgeführt haben, müssen Sie im nächsten Schritt zum Compliance Center wechseln, um die neue Suche zu bearbeiten und auszuführen. Wie bereits erwähnt, können Sie eine Suche bearbeiten, indem Sie die Stichwort Suchabfrage ändern und Suchbedingungen hinzufügen oder entfernen. Weitere Informationen finden Sie unter:
   
-- [Inhaltssuche in Office 365](content-search.md)
+- [Inhaltssuche in Office 365](content-search.md)
     
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
     

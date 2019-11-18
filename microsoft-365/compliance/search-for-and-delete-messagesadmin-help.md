@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Mithilfe des Cmdlets Search-Mailbox können Administratoren Benutzerpostfächer durchsuchen und anschließend Nachrichten aus Postfächern löschen.
-ms.openlocfilehash: bb375bc7a3273e78acb44807e51a1cee0261e7af
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3505026034fabcc6d509e7a187fafc5691ef9e7
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081968"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686288"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Suchen nach und Löschen von Nachrichten – Administratorhilfe
   
@@ -28,7 +28,7 @@ Um Nachrichten in einem Schritt zu suchen und zu löschen, führen Sie das Cmdle
   
 Als zusätzliche Schutzmaßnahme können Sie die Nachrichten zuerst in ein anderes Postfach kopieren; dazu verwenden Sie die Parameter  _TargetMailbox_ und  _TargetFolder_. So behalten Sie eine Kopie der gelöschten Nachrichten für den Fall, dass Sie wieder auf sie zugreifen müssen. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Geschätzte Zeit bis zum Abschließen des Vorgangs: 10 Minuten. Die tatsächliche Zeit kann von der Größe des Postfachs und der Suchabfrage abhängen.
     
@@ -36,13 +36,13 @@ Als zusätzliche Schutzmaßnahme können Sie die Nachrichten zuerst in ein ander
     
 - Ihnen müssen die beiden folgenden Verwaltungsrollen zugewiesen sein, damit Sie in den Benutzerpostfächern nach Nachrichten suchen und Nachrichten löschen können:
     
-  - **Postfachsuche**– mit dieser Rolle können Sie Nachrichten in mehreren Postfächern in Ihrer Organisation suchen. Administratoren wird diese Rolle nicht standardmäßig zugewiesen. Wenn Sie sich diese Rolle selbst zuweisen möchten, damit Sie Postfächer durchsuchen können, fügen Sie sich als Mitglied der Rollengruppe "Discoveryverwaltung" hinzu. Weitere Informationen finden Sie unter [Add a User to the Discovery Management Role Group](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Postfachsuche**– mit dieser Rolle können Sie Nachrichten in mehreren Postfächern in Ihrer Organisation suchen. Administratoren wird diese Rolle nicht standardmäßig zugewiesen. Wenn Sie sich diese Rolle selbst zuweisen möchten, damit Sie Postfächer durchsuchen können, fügen Sie sich als Mitglied der Rollengruppe "Discoveryverwaltung" hinzu. Weitere Informationen finden Sie unter [Add a User to the Discovery Management Role Group](https://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Post Fach Import Export** – mit dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers löschen. Diese Rolle ist standardmäßig keiner Rollengruppe zugewiesen. Um Nachrichten aus Benutzerpostfächern zu löschen, können Sie der Rollengruppe "Organisationsverwaltung" die Rolle "Postfachimport/-export" hinzufügen. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" unter [Manage Role](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) Groups. 
+  - **Post Fach Import Export** – mit dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers löschen. Diese Rolle ist standardmäßig keiner Rollengruppe zugewiesen. Um Nachrichten aus Benutzerpostfächern zu löschen, können Sie der Rollengruppe "Organisationsverwaltung" die Rolle "Postfachimport/-export" hinzufügen. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" unter [Manage Role](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) Groups. 
     
-- Wenn für das Postfach, aus dem Sie Nachrichten löschen möchten, die Wiederherstellung einzelner Elemente aktiviert ist, müssen Sie diese Funktion zuerst deaktivieren. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Wiederherstellung einzelner Elemente für ein Postfach](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
+- Wenn für das Postfach, aus dem Sie Nachrichten löschen möchten, die Wiederherstellung einzelner Elemente aktiviert ist, müssen Sie diese Funktion zuerst deaktivieren. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Wiederherstellung einzelner Elemente für ein Postfach](https://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Wenn für das Postfach, aus dem Sie Nachrichten löschen möchten, die Aufbewahrung für eventuelle Rechtsstreitigkeiten festgelegt wurde, sollten Sie bei der Datensatzverwaltungs- oder Rechtsabteilung nachfragen, bevor Sie die entsprechende Sperre aufheben und den Postfachinhalt löschen. Nachdem Sie die Genehmigung erhalten haben, führen Sie die im Thema [Bereinigen des Ordners "Wiederherstellbare Elemente"](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)aufgeführten Schritte aus.
+- Wenn für das Postfach, aus dem Sie Nachrichten löschen möchten, die Aufbewahrung für eventuelle Rechtsstreitigkeiten festgelegt wurde, sollten Sie bei der Datensatzverwaltungs- oder Rechtsabteilung nachfragen, bevor Sie die entsprechende Sperre aufheben und den Postfachinhalt löschen. Nachdem Sie die Genehmigung erhalten haben, führen Sie die im Thema [Bereinigen des Ordners "Wiederherstellbare Elemente"](https://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)aufgeführten Schritte aus.
     
 - Mithilfe des Cmdlets **Search-Mailbox** können maximal 10.000 Postfächer durchsucht werden. Wenn Sie eine Exchange Online-Organisation mit mehr als 10.000 Postfächern haben, können Sie die Funktion „Compliancesuche" (oder das entsprechende Cmdlet **New-ComplianceSearch** ) verwenden, um eine unbegrenzte Anzahl von Postfächern zu durchsuchen. Anschließend können Sie mit dem Cmdlet **New-ComplianceSearchAction** die Nachrichten löschen, die von der Compliancesuche zurückgegeben wurden. Weitere Informationen finden Sie unter [Suchen und Löschen von E-Mail-Nachrichten in Ihrer Office 365-Organisation - Administratorhilfe](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     
@@ -54,17 +54,17 @@ Als zusätzliche Schutzmaßnahme können Sie die Nachrichten zuerst in ein ander
 
 In diesem Beispiel wird das Postfach von April Stewart nach Nachrichten mit dem Satz "Your bank statement" im Betrefffeld durchsucht. Die Suchergebnisse werden im Postfach des Administrators im Ordner "SearchAndDeleteLog" protokolliert. Nachrichten werden nicht in das Zielpostfach kopiert und nicht aus diesem gelöscht.
   
-```
+```powershell
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
 ```
 
 In diesem Beispiel werden alle Postfächer in der Organisation nach Nachrichten durchsucht, an die ein beliebiger Typ von Datei mit dem Namen "Trojan" angefügt ist. Anschließend wird eine Protokollnachricht an das Administratorpostfach gesendet.
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
   
  
 ## <a name="search-and-delete-messages"></a>Suchen und Löschen von Nachrichten
@@ -74,23 +74,23 @@ In diesem Beispiel wird das Postfach von April Stewart nach Nachrichten mit dem 
 > [!IMPORTANT]
 > Wenn Sie das Cmdlet **Search-Mailbox** mit der Option  _DeleteContent_ verwenden, werden Nachrichten dauerhaft aus dem Quellpostfach gelöscht. Bevor Sie Nachrichten dauerhaft löschen, sollten Sie mit der Option  _LogOnly_ ein Protokoll der von der Suche gefundenen Nachrichten generieren, bevor sie gelöscht werden, oder die Nachrichten in ein anderes Postfach kopieren, bevor Sie sie aus dem Quellpostfach löschen. 
   
-```
+```powershell
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
 ```
 
 In diesem Beispiel wird das Postfach von April Stewart nach Nachrichten mit dem Satz "Your bank statement" im Betrefffeld durchsucht. Die Suchergebnisse werden in den Ordner "AprilStewart-DeletedMessages" im Postfach "BackupMailbox" kopiert und aus dem Postfach von April Stewart gelöscht.
   
-```
+```powershell
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
 ```
 
 In diesem Beispiel werden alle Postfächer in der Organisation nach Nachrichten mit der Betreffzeile "Laden Sie diese Datei herunter" durchsucht und dauerhaft gelöscht. 
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
 
 ## <a name="using-the--loglevel-full-parameter"></a>Verwenden des Parameters -LogLevel Full
 

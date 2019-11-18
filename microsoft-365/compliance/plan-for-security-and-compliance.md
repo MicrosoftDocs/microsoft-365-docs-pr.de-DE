@@ -3,7 +3,7 @@ title: Planen der Sicherheits &amp; Konformität in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 3/15/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Zielseite für die Planung von Sicherheit und Compliance
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3619a5e22a5bc957b001dd4f42a9569a7543e6b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081955"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686150"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planen der Sicherheits &amp; Konformität in Office 365
 
@@ -51,7 +51,7 @@ Der Schutz des Zugriffs auf Ihre Office 365 Daten und-Dienste ist für die Verte
 
 Überprüfen und planen Sie die Dateischutzfunktionen, die von drei Schutzebenen organisiert werden.
   
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Schritt 5: Nutzen des Microsoft 365 Security &amp; Compliance Center
 
@@ -59,9 +59,9 @@ Mit dem &amp; Security Compliance Center erhalten Sie eine zentrale Ansicht der 
   
 - [Wechseln Sie zum Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
     
-- [Berechtigungen im Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Berechtigungen im Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Erteilen von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Erteilen von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Schritt 6: Verwenden von End-to-End-Sicherheitsszenarien als Ausgangspunkt
 
@@ -69,7 +69,7 @@ Verwenden Sie diese empfohlenen Konfigurationen als Ausgangspunkt für Unternehm
   
 - [Sichere e-Mail-Richtlinien und-Konfigurationen](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Contoso in der Microsoft-Cloud](http://aka.ms/cloudarchcontoso)
+- [Contoso in der Microsoft-Cloud](https://aka.ms/cloudarchcontoso)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 Admin Center und Dashboards
 
@@ -80,5 +80,3 @@ Konfigurieren der Sicherheits-und Kompatibilitätseinstellungen in diesen Verwal
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 Admin Center  <br/>  Security &amp; Compliance Center  <br/>  Exchange Admin Center  <br/>  SharePoint Admin Center und OneDrive für Unternehmen Admin Center  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile-Anwendungsverwaltung  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud-App-Sicherheit  <br/> |
-   
-

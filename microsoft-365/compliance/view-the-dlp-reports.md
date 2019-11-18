@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den DLP-Berichten in Office 365 können Sie schnell sehen, wie viele DLP-Richtlinien übereinstimmen, Außerkraftsetzungen oder falsch positive Ergebnisse aufweisen. Überprüfen, ob Sie im Laufe der Zeit nach oben oder unten tendieren Filtern des Berichts auf unterschiedliche Weise und weitere Details anzeigen, indem Sie einen Punkt in einer Kurve im Diagramm auswählen.
-ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 94569ef24814204263820fb5fdb7a8cb72da20e4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082054"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686089"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Anzeigen der Berichtr zur Verhinderung von Datenverlust
 
@@ -85,18 +85,18 @@ Um DLP-Berichte im Security #a0 Compliance Center anzuzeigen, müssen Sie folgen
 
 Um die meisten Cmdlets für das Security &amp; Compliance Center verwenden zu können, müssen Sie Folgendes tun:
   
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Verwenden eines dieser [Office 365 Security &amp; Compliance Center-Cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Verwenden eines dieser [Office 365 Security &amp; Compliance Center-Cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 DLP-Berichte benötigen jedoch Pull-Daten aus Across Office 365, einschließlich Exchange Online. Aus diesem Grund sind die Cmdlets für die DLP-Berichte in Exchange Online PowerShell verfügbar – nicht in der &amp; Security Compliance Center-PowerShell. Um die Cmdlets für die DLP-Berichte verwenden zu können, müssen Sie daher Folgendes tun:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Verwenden Sie eines der folgenden Cmdlets für die DLP-Berichte:
     
-      - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

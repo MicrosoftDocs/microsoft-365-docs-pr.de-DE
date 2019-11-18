@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 'Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security #a0 Compliance Centers.'
-ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 61b55c221c11a577a64d0d2358c89253b1e90714
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081087"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686223"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center
 
@@ -43,11 +43,11 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security #a0 Compliance Center 
 > [!NOTE]
 > Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die Fällen zugeordnet sind, und Verwenden von Advanced eDiscovery zum Analysieren von Daten benötigen keine E5-Lizenz.  
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "Organisationsverwaltung" sein (oder der Rolle "Rollenverwaltung" zugewiesen sein), um eDiscovery-Berechtigungen im Security #a0 Compliance Center zuzuweisen.
     
-- Sie können das [Add-RoleGroupMember-](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) Cmdlet in Security #a0 Compliance Center PowerShell verwenden, um eine e-Mail-aktivierte Sicherheitsgruppe als Mitglied der Untergruppe eDiscovery Managers in der Rollengruppe "eDiscovery-Manager" hinzuzufügen. Sie können jedoch keine e-Mail-aktivierte Sicherheitsgruppe zur Untergruppe der eDiscovery-Administratoren hinzufügen. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
+- Sie können das [Add-RoleGroupMember-](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) Cmdlet in Security #a0 Compliance Center PowerShell verwenden, um eine e-Mail-aktivierte Sicherheitsgruppe als Mitglied der Untergruppe eDiscovery Managers in der Rollengruppe "eDiscovery-Manager" hinzuzufügen. Sie können jedoch keine e-Mail-aktivierte Sicherheitsgruppe zur Untergruppe der eDiscovery-Administratoren hinzufügen. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center
 
@@ -58,11 +58,11 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security #a0 Compliance Center 
 3. Klicken Sie im linken Bereich des Security and Compliance Centers auf **Berechtigungen**, und klicken Sie dann auf das Kontrollkästchen neben **eDiscovery-Manager**.
     
 4. Führen Sie auf der Flyout-Seite des **eDiscovery-Managers** einen der folgenden Schritte basierend auf den eDiscovery-Berechtigungen aus, die Sie zuweisen möchten. 
-    
-  - **So machen Sie einen Benutzer zu einem eDiscovery-Manager** Klicken Sie neben **eDiscovery-Manager**auf **Bearbeiten**. Klicken Sie unter **ausgewählte eDiscovery-Manager**auf **Bearbeiten**, und ![klicken Sie](media/ITPro-EAC-AddIcon.gif) dann auf Symbol **hinzu**fügen. Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als eDiscovery-Manager hinzufügen möchten, und klicken Sie dann auf **Hinzufügen**. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, klicken Sie auf **Fertig**. Klicken Sie dann auf der Seite zum **Bearbeiten von eDiscovery-Manager** -Flyouts auswählen auf **Speichern** , um die Änderungen an der eDiscovery-Manager-Mitgliedschaft zu speichern. 
-    
-  - **So machen Sie einen Benutzer zu einem eDiscovery-Administrator** Klicken Sie neben **eDiscovery-Administrator**auf **Bearbeiten**. Klicken Sie unter **ausgewählte eDiscovery-Administratoren**auf **Bearbeiten**, und ![klicken Sie](media/ITPro-EAC-AddIcon.gif) dann auf Symbol **hinzu**fügen. Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als eDiscovery-Administrator hinzufügen möchten, und klicken Sie dann auf **Hinzufügen**. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, klicken Sie auf **Fertig**. Klicken Sie dann auf der Flyout-Seite **"eDiscovery-Administrator bearbeiten"** auf **Speichern** , um die Änderungen an der eDiscovery-Administrator Mitgliedschaft zu speichern. 
-    
+  
+    **So machen Sie einen Benutzer zu einem eDiscovery-Manager:** Klicken Sie neben **eDiscovery-Manager**auf **Bearbeiten**. Klicken Sie im Abschnitt **eDiscovery-Manager auswählen** auf den Hyperlink **eDiscovery-Manager auswählen** , ![und klicken](media/ITPro-EAC-AddIcon.gif) Sie dann auf Symbol **hinzu**fügen. Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als eDiscovery-Manager hinzufügen möchten, und klicken Sie dann auf **Hinzufügen**. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, klicken Sie auf **Fertig**. Klicken Sie dann auf der Seite zum **Bearbeiten von eDiscovery-Manager** -Flyouts auswählen auf **Speichern** , um die Änderungen an der eDiscovery-Manager-Mitgliedschaft zu speichern.
+  
+    **So machen Sie einen Benutzer zu einem eDiscovery-Administrator:** Klicken Sie neben **eDiscovery-Manager**auf **Bearbeiten**. Klicken Sie im Abschnitt **eDiscovery-Administrator auswählen** unter **eDiscovery-Administratoren**auf **eDiscovery-Administrator auswählen** , klicken Sie auf ![ **Bearbeiten**, und klicken Sie dann auf Symbol](media/ITPro-EAC-AddIcon.gif) **hinzu**fügen. Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als **eDiscovery-Administrator**hinzufügen möchten, und klicken Sie dann auf **Hinzufügen**. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, klicken Sie auf **Fertig**. Klicken Sie dann auf der Flyout-Seite **"eDiscovery-Administrator bearbeiten"** auf **Speichern** , um die Änderungen an der eDiscovery-Administrator Mitgliedschaft zu speichern.
+      
 > [!NOTE]
 > Sie können auch das **Add-eDiscoveryCaseAdmin-** Cmdlet verwenden, um einen Benutzer zu einem eDiscovery-Administrator zu machen. Dem Benutzer muss jedoch die Fall Verwaltungsrolle zugewiesen sein, bevor Sie dieses Cmdlet verwenden können, um Sie zu einem eDiscovery-Administrator zu machen. Weitere Informationen finden Sie unter [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
@@ -77,9 +77,9 @@ In der folgenden Tabelle sind die eDiscovery-Rollen im Sicherheits #a0 Complianc
 |Fallverwaltung <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Compliance-Suche <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Exportieren <br/> | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Situ <br/>  |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Hold <br/>  |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Vorschau <br/>  | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Überprüfung <br/>  | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Review <br/>  | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS-Entschlüsselung <br/>  ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Suchen und löschen <br/> | <br/> | <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -106,7 +106,7 @@ Die Rolle ermöglicht Benutzern das Exportieren der Ergebnisse einer Inhaltssuch
 
 Weitere Informationen zum Exportieren von Suchergebnissen finden Sie unter [Exportieren von Suchergebnissen aus Security #a0 Compliance Center](export-search-results.md).
 
-### <a name="hold"></a>Situ
+### <a name="hold"></a>Hold
 
 Diese Rolle ermöglicht Benutzern das Platzieren von Inhalten in Postfächern, öffentlichen Ordnern, Websites, Skype for Business Unterhaltungen und Office 365 Gruppen in der Warteschleife. Wenn Inhalte gespeichert sind, können Inhaltsbesitzer weiterhin den ursprünglichen Inhalt ändern oder löschen, der Inhalt bleibt jedoch erhalten, bis die Aufbewahrungszeit aufgehoben wird oder die Aufbewahrungsdauer abläuft. 
 
@@ -119,7 +119,7 @@ Weitere Informationen zu Holds finden Sie unter:
 
 Diese Rolle ermöglicht Benutzern das Anzeigen einer Liste von Elementen, die von einer Inhaltssuche zurückgegeben wurden. Sie können auch jedes Element aus der Liste öffnen und anzeigen, um den Inhalt anzuzeigen.
 
-### <a name="review"></a>Überprüfung
+### <a name="review"></a>Review
 
 Diese Rolle ermöglicht Benutzern den Zugriff auf die Falldaten in Office 365 Advanced eDiscovery. Der primäre Zweck dieser Rolle besteht darin, Benutzern den Zugriff auf Erweiterte eDiscovery zu ermöglichen. Benutzer, denen diese Rolle zugewiesen ist, können die Liste der Fälle auf der Seite "eDiscovery" im Security #a0 Compliance Center anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security #a0 Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Diese Rolle ermöglicht es dem Benutzer nicht, die Ergebnisse einer Inhaltssuche in einer Vorschau anzuzeigen, die mit dem Fall verbunden ist, oder andere Inhaltssuche oder Fall Verwaltungsaufgaben auszuführen.
 
@@ -144,7 +144,7 @@ Diese Rolle ermöglicht es Benutzern, das Massen Entfernen von Daten durchzufüh
     
 - **Kann ich eine Gruppe als Mitglied der eDiscovery-Manager-Rollengruppe hinzufügen?** Wie bereits erläutert, können Sie eine e-Mail-aktivierte Sicherheitsgruppe als Mitglied der Untergruppe eDiscovery Managers in der Rollengruppe eDiscovery-Manager mithilfe des **Add-RoleGroupMember-** Cmdlets in Security #a0 Compliance Center PowerShell hinzufügen. Sie können beispielsweise den folgenden Befehl ausführen, um eine e-Mail-aktivierte Sicherheitsgruppe zur eDiscovery-Manager-Rollengruppe hinzuzufügen. 
     
-  ```
+  ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 

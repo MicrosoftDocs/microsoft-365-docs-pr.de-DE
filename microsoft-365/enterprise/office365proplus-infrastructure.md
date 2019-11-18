@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Office 365 Pro Plus-Infrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: 05615c4c9020326da6b2e3e97b162dbb8d132854
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a51a37a321b450d233d7f9fd6da28b5828514d13
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033650"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627449"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4: Office 365 ProPlus
 
@@ -44,7 +44,7 @@ Befolgen Sie vor der Bereitstellung von Office 365 ProPlus die Anleitungen unter
 
 Befolgen Sie nach dem Bewerten der Umgebung die Anleitungen unter [Planen der Bereitstellung von Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) zum Erstellen eines Bereitstellungsplans. Dieser Plan enthält die folgenden Entscheidungen: 
 
-- Bereitstellen von Office, darunter das zu verwendende Tool (z. B. System Center Configuration Manager oder Office-Bereitstellungstool) und Ort der Installation von Office
+- Bereitstellen von Office, einschließlich dem zu verwendenden Tool (z. B. Microsoft Endpoint Configuration Manager oder Office-Bereitstellungstool) und dem Ort, von dem aus Office installiert werden soll
 - Verwalten von Updates für Office
 - Zu verwendende Updatekanäle (Updatekanäle für Office steuern, wie häufig die Benutzer Updates von Funktionen in ihren Office-Anwendungen erhalten)
 - Zu verwendende Office-Installationspakete und -Bereitstellungsgruppen, darunter die zu installierenden Office-Anwendungen und Sprachen für Benutzer
@@ -55,7 +55,7 @@ Der Artikel zum [Planen](https://docs.microsoft.com/DeployOffice/plan-office-365
 
 Wählen Sie basierend auf Ihrem Bereitstellungsplan die Methode für die Bereitstellung aus:
 
-- **[Bereitstellen von Office 365 ProPlus mithilfe von System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** Verwalten der Bereitstellung mit Configuration Manager und Herunterladen und Bereitstellen von Office über Verteilungspunkte im Netzwerk
+- **[Bereitstellen von Office 365 ProPlus mit dem Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** Verwalten der Bereitstellung mit dem Configuration Manager und Herunterladen und Bereitstellen von Office über Verteilungspunkte in Ihrem Netzwerk.
 
 - **[Bereitstellen von Office 365 ProPlus mit dem Office-Bereitstellungstool aus der Cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** Verwalten der Bereitstellung mit dem Office-Bereitstellungstool und direktes Installieren von Office über das Office-CDN auf Clientgeräten
  

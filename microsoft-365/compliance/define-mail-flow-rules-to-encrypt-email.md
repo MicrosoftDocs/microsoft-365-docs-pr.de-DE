@@ -14,21 +14,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Erstellen von Nachrichtenfluss Regeln (Transportregeln) zum Verschlüsseln und Entschlüsseln von Nachrichten mit Office 365 Nachrichtenverschlüsselung erlernen.
-ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080771"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38686011"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365
 
 Als Office 365 globaler Administrator können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um e-Mail-Nachrichten zu schützen, die Sie senden und empfangen. Sie können Regeln einrichten, um ausgehende e-Mail-Nachrichten zu verschlüsseln und Verschlüsselung von verschlüsselten Nachrichten aus Ihrer Organisation oder aus Antworten auf verschlüsselte Nachrichten zu entfernen, die von Ihrer Organisation gesendet werden. Sie können die Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell verwenden, um diese Regeln zu erstellen. Zusätzlich zu den allgemeinen Verschlüsselungsregeln können Sie auch die Aktivierung oder Deaktivierung einzelner Nachrichtenverschlüsselungsoptionen für Endbenutzer auswählen.
-
-||
-|:-----|
-|Dieser Artikel ist Teil einer größeren Reihe von Artikeln über Office 365 Nachrichtenverschlüsselung. Dieser Artikel richtet sich an Administratoren und ITPros. Wenn Sie nur auf der Suche nach Informationen zum Senden oder Empfangen einer verschlüsselten Nachricht sind, lesen Sie die Artikelliste in [Office 365 Nachrichtenverschlüsselung (OM)](ome.md) , und suchen Sie nach dem Artikel, der Ihren Anforderungen am besten entspricht. |
-||
 
 Wenn Sie kürzlich von AD RMS zu Azure Information Protection migriert haben, müssen Sie Ihre vorhandenen Nachrichtenfluss Regeln überprüfen, um sicherzustellen, dass Sie in ihrer neuen Umgebung weiterhin funktionieren. Darüber hinaus müssen Sie die vorhandenen Nachrichtenfluss Regeln aktualisieren, wenn Sie die neuen Funktionen zur Office 365 Nachrichtenverschlüsselung (OM) über Azure Information Protection nutzen möchten. Andernfalls erhalten die Benutzer weiterhin verschlüsselte e-Mails, die das vorherige HTML-Anlagenformat anstelle der neuen nahtlosen OM-Umgebung verwenden. Wenn Sie noch kein OM eingerichtet haben, finden Sie weitere Informationen unter [Einrichten der neuen Office 365 Nachrichten Verschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md) .
 

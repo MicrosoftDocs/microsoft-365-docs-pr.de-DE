@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits #a0 auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
-ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081564"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686247"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -33,7 +34,7 @@ Alle RMS-verschlüsselten e-Mail-Nachrichten, die in den Ergebnissen einer Inhal
   
 Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Ergebnisse und das anschließende herunterladen auf einen lokalen Computer.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um Suchergebnisse zu exportieren, müssen Sie der Rolle "Exportverwaltung" im Security #a0 Compliance Center zugewiesen sein. Diese Rolle wird der integrierten eDiscovery-Manager-Rollengruppe zugewiesen. Sie wird nicht standardmäßig der Rollengruppe "Organisationsverwaltung" zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
@@ -65,17 +66,17 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
     
     Fügen Sie die folgenden Zeilen zur Datei *Machine. config* hinzu, die `<configuration>` sich `</configuration>` irgendwo zwischen den Tags und befinden. Achten Sie darauf, `ProxyServer` dass `Port` Sie und die richtigen Werte für Ihre Organisation ersetzen. Beispiel: `proxy01.contoso.com:80` . 
     
-    ```
+    ```text
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
-         <proxy proxyaddress="http://ProxyServer :Port " 
+         <proxy proxyaddress="https://ProxyServer :Port " 
                 usesystemdefault="False" 
                 bypassonlocal="True" 
                 autoDetect="False" />
        </defaultProxy>
     </system.net>
     ```
-    
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Schritt 1: Vorbereiten der Suchergebnisse für Export
 
 Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereiten. Wenn Sie Ergebnisse vorbereiten, werden Sie in einen von Microsoft bereitgestellten Azure-Speicherort in der Microsoft-Cloud hochgeladen. Inhalte von Postfächern und Websites werden mit einer maximalen Rate von 2 GB pro Stunde hochgeladen.
@@ -256,7 +257,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
     
     Wenn Sie sowohl die indizierten als auch teilweise indizierten Elemente exportieren oder nur die indizierten Elemente aus einer Inhaltssuche exportieren, die alle Elemente zurückgibt, wird die gleiche Anzahl von Elementen heruntergeladen. Dies geschieht auch dann, wenn die geschätzten Suchergebnisse für die Inhaltssuche (angezeigt in den Suchstatistiken im Security #a0 Compliance Center) weiterhin eine separate Schätzung für die Anzahl der teilweise indizierten Elemente enthalten. Angenommen, die Schätzung für eine Suche, die alle Elemente (keine Stichwörter in der Suchabfrage) enthält, zeigt, dass 1.000 Elemente gefunden wurden und 200 teilweise indizierte Elemente ebenfalls gefunden wurden. In diesem Fall enthalten die 1.000-Elemente die teilweise indizierten Elemente, da die Suche alle Elemente zurückgibt. Mit anderen Worten: Es gibt 1.000 Gesamtelemente, die von der Suche zurückgegeben werden, und nicht 1.200 Elemente (wie Sie möglicherweise erwarten). Wenn Sie die Ergebnisse dieser Suche exportieren und indizierte und teilweise indizierte Elemente exportieren (oder nur teilweise indizierte Elemente exportieren), werden 1.000-Elemente heruntergeladen. Das liegt daran, dass teilweise indizierte Elemente in den regulären (indizierten) Ergebnissen enthalten sind, wenn Sie eine leere Suchabfrage verwenden, um alle Elemente zurückzugeben. Wenn Sie in diesem Beispiel nur teilweise indizierte Elemente exportieren, werden nur die 200 nicht indizierten Elemente heruntergeladen.
     
-    Beachten Sie auch, dass im vorherigen Beispiel (wenn Sie indizierte und teilweise indizierte Elemente exportieren oder nur indizierte Elemente exportieren) der **Export Zusammenfassungs** Bericht, der in den exportierten Suchergebnissen enthalten ist, 1.000 Elemente enthält, die geschätzte Elemente und 1.000 heruntergeladen wurden. Elemente aus denselben Gründen wie zuvor beschrieben. 
+    Beachten Sie auch, dass im vorherigen Beispiel (wenn Sie indizierte und teilweise indizierte Elemente exportieren oder nur indizierte Elemente exportieren) der in den exportierten Suchergebnissen enthaltene **Export Zusammenfassungs** Bericht 1.000 Elemente mit den geschätzten Elementen und 1.000 heruntergeladenen Elementen aus den zuvor beschriebenen Gründen auflisten würde. 
     
 - Wenn es sich bei der Suche, aus der Sie Ergebnisse exportieren, um die Suche nach bestimmten Inhaltsspeicherorten oder allen Inhaltsspeicherorten in Ihrer Organisation handelt, werden nur die Teilelemente aus Inhaltsspeicherorten exportiert, die Elemente enthalten, die mit den Suchkriterien übereinstimmen. Wenn also keine Suchergebnisse in einem Postfach oder einer Website gefunden werden, werden alle teilweise indizierten Elemente in diesem Postfach oder der Website nicht exportiert. Der Grund hierfür ist, dass das Exportieren von teilweise indizierten Elementen aus vielen Orten in der Organisation die Wahrscheinlichkeit von Exportfehlern erhöht und die Zeit für den Export und den Download der Suchergebnisse erhöht.
     
@@ -277,7 +278,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
     
     Wenn Sie teilweise indizierte Elemente exportieren, werden teilweise indizierte Postfachelemente in eine separate PST-Datei exportiert, unabhängig von der Option, die Sie unter **Exchange-Export Inhalt als exportieren**auswählen.
 
-- Wenn teilweise indizierte Elemente in den Suchergebnissen zurückgegeben werden (da andere Eigenschaften von teilweise indizierten Elementen mit den Suchkriterien übereinstimmen), werden diese teilweise indizierten mit den regulären Suchergebnissen exportiert. Wenn Sie also sowohl indizierte Elemente als auch teilweise indizierte Elemente exportieren (indem Sie **alle Elemente auswählen, einschließlich derer, die nicht erkanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert** wurden, exportieren Sie die Option), werden die exportierten teilweise indizierten Elemente mit den regulären Ergebnissen werden im Bericht results. CSV aufgeführt. Sie werden nicht im Bericht nicht indizierte Elemente. CSV aufgeführt.
+- Wenn teilweise indizierte Elemente in den Suchergebnissen zurückgegeben werden (da andere Eigenschaften von teilweise indizierten Elementen mit den Suchkriterien übereinstimmen), werden diese teilweise indizierten mit den regulären Suchergebnissen exportiert. Wenn Sie also sowohl indizierte Elemente als auch teilweise indizierte Elemente exportieren (indem Sie **alle Elemente auswählen, einschließlich derer, die nicht erkanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert** wurden), werden die teilweise indizierten Elemente, die mit den regulären Ergebnissen exportiert werden, im Bericht results. CSV aufgeführt. Sie werden nicht im Bericht nicht indizierte Elemente. CSV aufgeführt.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportieren einzelner Nachrichten oder PST-Dateien
   

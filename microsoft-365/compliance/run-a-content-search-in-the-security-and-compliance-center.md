@@ -9,25 +9,27 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Verwenden Sie die Inhaltssuche im Security #a0 Compliance Center zum Durchsuchen von Postfächern, SharePoint Online Websites und OneDrive für Unternehmen Speicherorten. '
-ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 41b3a3d30decd1787d18652398ee0462bada38fc
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081985"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686294"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Ausführen einer Inhaltssuche im Security & Compliance Center
 
-Sie können das eDiscovery-Tool für die Inhaltssuche im Security #a0 Compliance Center verwenden, um nach Elementen wie e-Mails, Dokumenten und Chat Unterhaltungen in Ihrer Office 365 Organisation zu suchen. Verwenden Sie dieses Tool, um nach Elementen in diesen Office 365 Diensten zu suchen:
+Sie können das eDiscovery-Tool für die Inhaltssuche im Security #a0 Compliance Center verwenden, um nach Elementen wie e-Mails, Dokumenten und Chat Unterhaltungen in Ihrer Office 365 Organisation zu suchen. Mithilfe dieses Tools können Sie nach Elementen in folgenden Office 365-Diensten suchen:
   
-- Exchange Online von Postfächern und öffentlichen Ordnern
+- Exchange-Postfächer und öffentliche Ordner
     
 - SharePoint Online-und OneDrive für Unternehmen-Websites
     
-- Skype for Business Unterhaltungen
+- Skype for Business-Unterhaltungen
     
 - Microsoft Teams 
     
@@ -51,7 +53,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
   
 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Informationen und Anleitungen zum Erstellen von Suchabfragen und zum Verwenden von booleschen Suchoperatoren finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md). Dieser Artikel enthält auch Informationen zum Suchen nach vertraulichen Informationstypen und zum Suchen nach Inhalten, die für Personen innerhalb und außerhalb Ihrer Organisation freigegeben sind.
     
@@ -63,7 +65,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
 - Wie bereits erwähnt, können Sie die Inhaltssuche verwenden, um nach Inhalten in Office 365 Gruppen und Microsoft Teams zu suchen. Dies bedeutet, dass Sie das Gruppenpostfach, den freigegebenen Kalender und die SharePoint-Websites durchsuchen können, die einer Office 365 Gruppe und einem Microsoft-Team zugeordnet sind. Darüber hinaus können Sie die Kanal Unterhaltungen in einem Microsoft-Team durchsuchen. Informationen zu Office 365 Gruppen und Microsoft Teams finden Sie unter:
     
-  - [Informationen zu Office 365 Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+  - [Weitere Informationen zu Office 365-Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
     
   - [Hilfe zu Microsoft Teams](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
@@ -71,7 +73,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>Erstellen einer Suche
 <a name="create"> </a>
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
@@ -100,11 +102,11 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
   - Wenn Sie auf Add-Symbol](media/ITPro-EAC-AddIcon.gif) **Hinzufügen**![klicken, um die zu durchsuchenden Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Wenn Sie dieser Liste Empfänger hinzufügen möchten, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, ****![und klicken Sie](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)auf Suchsymbol suchen.
     
-  - Sie können inaktive Postfächer und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Für Verteilergruppen werden die Postfächer von Gruppenmitgliedern durchsucht. Beachten Sie, dass dynamische Verteilergruppen nicht unterstützt werden.
+  - Sie können inaktive Postfächer und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Bei Verteilergruppen werden die Postfächer der Gruppenmitglieder durchsucht. Beachten Sie, dass dynamische Verteilergruppen nicht unterstützt werden.
     
-  - Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen `Get-Mailbox -InactiveMailboxOnly` Sie den Befehl in Exchange Online PowerShell aus. Alternativ können Sie im Security #a0 Compliance Center zur **Aufbewahrung** von **Datenverwaltung** \> wechseln und dann auf **Weitere**![Navigationsleiste Ellipsen](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **inaktive Postfächer**klicken.
+  - Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen Sie in Exchange Online PowerShell den Befehl `Get-Mailbox -InactiveMailboxOnly` aus. Alternativ können Sie im Security & Compliance Center zu **Data governance**\> **Aufbewahrung** wechseln, und dann auf **Weitere**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktive Postfächer** klicken.
     
-  - Sie können auch das Postfach hinzufügen, das einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. In diesem Fall wird nur das Gruppen-oder Team Postfach durchsucht; die Postfächer der Gruppe oder der Teammitglieder werden nicht durchsucht. Um Sie durchsuchen zu können, müssen Sie Sie explizit der Suche hinzufügen.
+  - Sie können auch das Postfach hinzufügen, das einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. In diesem Fall wird nur das Gruppen-oder Team Postfach durchsucht; die Postfächer der Gruppe oder der Teammitglieder werden nicht durchsucht. Um diese zu durchsuchen, müssen sie eigens zur Suche hinzugefügt werden.
     
   - Wenn Sie keine Postfächer für die Suche einbeziehen möchten, wählen Sie **bestimmte Postfächer für die Suche auswählen**aus, aber fügen Sie der Liste kein Postfach hinzu.
     
@@ -126,17 +128,17 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
     ![Erstellen einer Suchabfrage mit Schlüsselwörtern und Bedingungen](media/1b7cf7b5-f1e1-471a-ad5c-48aad8435b00.png)
   
-1. Geben Sie im Feld unter **Wonach sollen wir für Sie suchen?** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften , z. B. Sende- und Empfangsdatum, oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum der letzten Dokumentänderung. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (wie etwa Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in die Suchergebnisse eingeschlossen. 
+1. Geben Sie im Feld unter **Wonach sollen wir für Sie suchen?** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften wie das Sende- und Empfangsdatum oder Dokumenteigenschaften wie Dateinamen oder das Datum angeben, an dem ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in die Suchergebnisse eingeschlossen. 
     
 2. Sie können auf das Kontrollkästchen **Keyword-Liste anzeigen** und in jeder Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile durch den **or** -Operator in der erstellten Suchabfrage miteinander verbunden. 
     
     ![Sie können ein Stichwort oder eine Stichwort Phase in eine Zeile in der Liste Stichwörter eingeben.](media/aea1a361-639d-4a82-8c3c-48645ef3fc05.png)
   
-    Gründe für die Verwendung der Stichwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern übereinstimmen. Auf diese Weise können Sie schnell erkennen, welche Stichwörter am häufigsten (und am wenigsten) effektiv sind. Sie können auch eine Stichwort Phrase (umgeben von Klammern) in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen von Keyword-Statistiken für Inhalts Suchergebnisse](view-keyword-statistics-for-content-search.md).
+    Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Sie können auch einen (in Klammern eingeschlossenen) Schlüsselwortausdruck in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md).
     
     Im Abschnitt finden Sie Anleitungen zur Verwendung der Stichwortliste. 
     
-3. Klicken Sie auf **Abfrage für Tippfehler überprüfen** , um Ihre Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren zu überprüfen, die möglicherweise nicht groß geschrieben werden. Nicht unterstützte Zeichen werden häufig ausgeblendet und verursachen in der Regel einen Suchfehler oder geben unbeabsichtigte Ergebnisse zurück. Weitere Informationen zu den nicht unterstützten Zeichen, die überprüft werden, finden Sie unter [Überprüfen der Inhalts Suchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
+3. Klicken Sie auf **Abfrage für Tippfehler überprüfen** , um Ihre Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren zu überprüfen, die möglicherweise nicht groß geschrieben werden. Nicht unterstützte Zeichen sind häufig ausgeblendet und verursachen in der Regel einen Suchfehler, oder es werden unerwartete Ergebnisse zurückgegeben. Weitere Informationen zu den nicht unterstützten Zeichen, nach denen gesucht wird, finden Sie unter [Überprüfen der Inhaltssuchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
     
 4. Fügen Sie unter **Bedingungen**einer Suchabfrage Bedingungen hinzu, um eine Suche einzuschränken und eine verfeinerte Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zu der KQL-Suchabfrage hinzu, die beim Starten der Suche erstellt und ausgeführt wird. Eine Bedingung ist durch **AND**-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Dies bedeutet, dass Elemente sowohl die Schlüsselwortabfrage als auch die Bedingung erfüllen muss, damit sie in die Suchergebnisse aufgenommen werden. Auf diese Weise können Sie Ihre Ergebnisse mit Bedingungen eingrenzen. 
     
@@ -169,7 +171,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
 
 Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive für Unternehmen Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Es gibt auch zusätzliche Dokumente und Berichte, die in den exportierten Suchergebnissen enthalten sind. Weitere Informationen finden Sie unter [Exportieren von Suchergebnissen aus dem Security #a0 Compliance Center](export-search-results.md).
   
-## <a name="preview-search-results"></a>Suchergebnisse in der Vorschau anzeigen
+## <a name="preview-search-results"></a>Vorschau von Suchergebnissen anzeigen
 <a name="preview"> </a>
 
 Nachdem die Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der Suchergebnisse anzeigen. Im Zusammenhang mit dem Anzeigen von Inhaltssuchergebnissen in der Vorschau gibt es einige Einschränkungen. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Security #a0 Compliance Center](limits-for-content-search.md). Beachten Sie, dass nicht indizierte Elemente für die Vorschau nicht verfügbar sind.
@@ -184,7 +186,7 @@ Nachdem die Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der
     
     Das Element wird im Vorschaufenster geöffnet.
     
-4. Wenn ein Dateityp nicht für die Vorschau oder zum Herunterladen einer Kopie eines Dokuments unterstützt wird, können Sie auf **ursprüngliche Datei herunterladen** klicken, um Sie auf den lokalen Computer herunterzuladen. Für aspx-Webseiten ist die URL für die Seite enthalten, obwohl Sie möglicherweise nicht über Berechtigungen für den Zugriff auf die Seite verfügen. 
+4. Wenn für den Dateityp weder die Vorschau noch das Herunterladen einer Kopie des Dokuments unterstützt wird, können Sie auf **Ursprüngliche Datei herunterladen**, um sie auf den lokalen Computer herunterzuladen. Bei ASPX-Webseiten ist die URL der Seite eingeschlossen, Sie haben möglicherweise jedoch keine Berechtigungen zum Zugriff auf die Seite. 
     
 > [!NOTE]
 > Wenn Sie die Suchergebnisse einer Suche, die vor mehr als sieben Tagen ausgeführt wurde, in der Vorschau anzeigen, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Die Suche wird erneut ausgeführt, um die aktuellsten Ergebnisse abzurufen, die die Suchabfrage erfüllen. 
@@ -193,21 +195,21 @@ Nachdem die Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der
 
 Unterstützte Dateitypen können im Vorschaufenster angezeigt werden. Wenn ein Dateityp nicht unterstützt wird, müssen Sie eine Kopie der Datei auf den lokalen Computer herunterladen, um Sie anzuzeigen. Die folgenden Dateitypen werden unterstützt und können in der Vorschau auf der **Suchergebnis** Seite angezeigt werden. 
   
-- txt, HTML, MHTML
+- .TXT, .HTML, .MHTML
     
-- EML
+- .EML
     
-- doc-, docx-, DOCM-
+- .DOC, .DOCX, .DOCM
     
-- . pptm,. pptx
+- .PPTM, .PPTX
     
-- .pdf
+- .PDF
     
-Darüber hinaus werden die folgenden Dateicontainer Typen unterstützt. Sie können die Liste der Dateien im Container im Bereich Vorschau anzeigen.
+Darüber hinaus werden die folgenden Dateicontainer Typen unterstützt. Eine Liste der Dateien in einem Container können Sie im Vorschaubereich anzeigen.
   
-- . zip
+- .ZIP
     
-- gzip
+- .GZIP
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -269,7 +271,7 @@ Hier finden Sie weitere Informationen zu Inhalts suchen.
   
 [Suchabfragen](#search-queries)
   
-[Durchsuchen inaktiver Postfächer](#searching-inactive-mailboxes)
+[Durchsuchen von inaktiven Postfächern](#searching-inactive-mailboxes)
   
 [Sonstiges](#miscellaneous)
   
@@ -279,16 +281,16 @@ Hier finden Sie weitere Informationen zu Inhalts suchen.
   
 - Eine Beschreibung der Grenzwerte, die auf das Feature für die Inhaltssuche angewendet werden, finden Sie unter [Grenzwerte für die Suche im Security #a0 Compliance Center](limits-for-content-search.md).
     
-- Microsoft sammelt Leistungsinformationen für Inhalts suchen, die von allen Office 365 Organisationen ausgeführt werden. Während sich die Komplexität der Suchabfrage auf die Suchzeiten auswirken kann, ist der größte Faktor, der sich auf die Dauer der Suche auswirkt, die Anzahl der durchsuchten Postfächer. Obwohl Microsoft keine Vereinbarung zum Service Level für Suchzeiten bereitstellt, werden in der folgenden Tabelle die durchschnittlichen Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der in der Suche enthaltenen Postfächer aufgeführt.
+- Microsoft sammelt Leistungsdaten für alle Inhaltssuchen, die von Office 365-Organisationen durchgeführt werden. Obwohl sich die Komplexität einer Suchabfrage negativ auf die Suchzeiten auswirken kann, ist die Anzahl der durchsuchten Postfächer der Faktor, der die Suchdauer am stärksten beeinflusst. Microsoft bietet zwar keine Vereinbarung zum Servicelevel (Service Level Agreement, SLA) für Suchzeiten an, in der folgenden Tabelle werden jedoch durchschnittliche Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der in die Suche einbezogenen Postfächer angegeben.
     
-|**Anzahl der Postfächer**|**Durchschnittliche Such Dauer**|
+|**Anzahl Postfächer**|**Durchschnittliche Suchzeit**|
 |:-----|:-----|
 |100  <br/> |30 Sekunden  <br/> |
-|1,000  <br/> |45 Sekunden  <br/> |
-|10,000  <br/> |4 Minuten  <br/> |
+|1.000  <br/> |45 Sekunden  <br/> |
+|10.000  <br/> |4 Minuten  <br/> |
 |25.000  <br/> |10 Minuten  <br/> |
 |50.000  <br/> |20 Minuten  <br/> |
-|100,000  <br/> |25 Minuten  <br/> |
+|100.000  <br/> |25 Minuten  <br/> |
    
   
 ### <a name="unindexed-items"></a>Nicht indizierte Elemente
@@ -299,13 +301,13 @@ Hier finden Sie weitere Informationen zu Inhalts suchen.
   
 ### <a name="microsoft-teams-and-office-365-groups"></a>Microsoft Teams und Office 365 Gruppen
   
-- Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist die Suche sehr ähnlich. Beachten Sie bei der Suche nach Inhalten in Microsoft Teams und Office 365 Gruppen die folgenden Punkte.
+- Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist die Suche sehr ähnlich. Beachten Sie die folgenden Punkte, wenn Sie in Microsoft Teams und Office 365-Gruppen nach Inhalten suchen.
     
   - Um nach Inhalten zu suchen, die sich in Microsoft Teams und Office 365 Gruppen befinden, müssen Sie das Postfach und die SharePoint-Website angeben, die einem Team oder einer Gruppe zugeordnet sind.
     
-  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für ein Microsoft-Team oder eine Office 365 Gruppe anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einem Team oder einer Gruppe zugeordnet ist. Mit dem folgenden Befehl werden beispielsweise ausgewählte Eigenschaften für eine Office 365 Gruppe mit dem Namen "Senior Leadership Team" angezeigt: 
+  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für ein Microsoft-Team oder eine Office 365 Gruppe anzuzeigen. Dies ist eine gute Möglichkeit zum Abrufen der URL der einem Team oder einer Gruppe zugeordneten Website. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt: 
     
-  ```
+  ```powershell
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
@@ -315,32 +317,32 @@ Hier finden Sie weitere Informationen zu Inhalts suchen.
   ```
 
     > [!NOTE]
-    > Damit Sie das Cmdlet **Get-Unifiedgroup** ausführen können, müssen Sie in Exchange Online die Rolle "nur-Ansicht-Empfänger" besitzen oder Mitglied einer Rollengruppe sein, der die Rolle "nur-Empfänger" zugewiesen ist. 
+    > Zum Ausführen des **Get-UnifiedGroup**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
   
   - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Microsoft Teams oder Office 365 Gruppen, in denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie ein Microsoft-Team oder eine Office 365 Gruppe durchsuchen, wird auf ähnliche Weise nur das Gruppenpostfach und die von Ihnen angegebene Gruppen Website durchsucht. die Postfächer und OneDrive für Unternehmen Konten von Gruppenmitgliedern werden nur durchsucht, wenn Sie Sie explizit der Suche hinzugefügt haben.
     
-  - Wenn Sie eine Liste der Mitglieder eines Microsoft-Teams oder einer Office 365 Gruppe erhalten möchten, können Sie die Eigenschaften auf der Seite " **Start \> Gruppen** " im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
+  - Wenn Sie eine Liste der Mitglieder eines Microsoft-Teams oder einer Office 365 Gruppe erhalten möchten, können Sie die Eigenschaften auf der Seite " **Start \> Gruppen** " im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen: 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
     > [!NOTE]
-    > Damit Sie das Cmdlet **Get-UnifiedGroupLinks** ausführen können, müssen Sie in Exchange Online die Rolle "nur-Ansicht-Empfänger" besitzen oder Mitglied einer Rollengruppe sein, der die Rolle "nur-Ansicht-Empfänger" zugewiesen ist. 
+    > Zum Ausführen des **Get-UnifiedGroupLinks**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
   
-  - Unterhaltungen, die Teil eines Microsoft Teams-Kanals sind, werden in dem Postfach gespeichert, das dem Microsoft-Team zugeordnet ist. Auf ähnliche Weise werden Dateien, die Teammitglieder in einem Kanal freigeben, auf der SharePoint-Website des Teams gespeichert. Daher müssen Sie das Microsoft Team-Postfach und die SharePoint-Website als Inhaltsspeicherort hinzufügen, um Unterhaltungen und Dateien in einem Kanal zu durchsuchen.
+  - Unterhaltungen, die Teil eines Microsoft Teams-Kanals sind, werden in dem Postfach gespeichert, das dem Microsoft-Team zugeordnet ist. Gleichermaßen werden Dateien, die Teammitglieder in einem Kanal freigeben, auf der SharePoint-Website des Teams gespeichert. Daher müssen Sie das Microsoft Team-Postfach und die SharePoint-Website als Inhaltsspeicherort hinzufügen, um Unterhaltungen und Dateien in einem Kanal zu durchsuchen.
     
   - 
     
-    Alternativ werden Unterhaltungen, die Teil der Chat Liste in Microsoft Teams sind, im Exchange Online Postfach der Benutzer gespeichert, die an dem Chat teilnehmen. Und Dateien, die ein Benutzer in Chat Unterhaltungen freigibt, werden im OneDrive für Unternehmen Konto des Benutzers gespeichert, der die Datei freigibt. Daher müssen Sie die einzelnen Benutzerpostfächer und OneDrive für Unternehmen Konten als inhaltsspeicherorte hinzufügen, um Unterhaltungen und Dateien in der Chat Liste zu durchsuchen.
+    Alternativ werden Unterhaltungen, die Teil der Chat Liste in Microsoft Teams sind, im Exchange Online Postfach der Benutzer gespeichert, die an dem Chat teilnehmen. Und in Chatunterhaltungen freigegebene Dateien werden im OneDrive for Business-Konto des Benutzers gespeichert, der die Datei freigibt. Daher müssen Sie die Postfächer und OneDrive for Business-Konten der jeweiligen Benutzer als Inhaltsspeicherorte hinzufügen, um Unterhaltungen und Dateien in der Chatliste zu durchsuchen.
     
     > [!NOTE]
     > Benutzer, die an Unterhaltungen teilnehmen, die Teil der Chat Liste in Microsoft Teams sind, müssen über ein Exchange Onlinees (Cloud-basiertes) Postfach verfügen, damit Sie Chat Unterhaltungen durchsuchen können. Das liegt daran, dass Unterhaltungen, die Teil der Chat Liste sind, in den cloudbasierten Postfächern der Chat Teilnehmer gespeichert werden. Wenn ein Chat Teilnehmer kein Exchange Online Postfach hat, können Sie keine Chat Unterhaltungen durchsuchen. Beispielsweise können Benutzer mit einem lokalen Postfach in einer Exchange-hybridbereitstellung an Unterhaltungen teilnehmen, die Teil der Chat Liste in Microsoft Teams sind. In diesem Fall können Inhalte aus diesen Unterhaltungen jedoch nicht durchsucht werden, da die Benutzer keine cloudbasierten Postfächer haben. 
   
-  - Jeder Microsoft-Team-oder Team Kanal enthält ein wiki für die Notizen und die Zusammenarbeit. Der Inhalt des Wikis wird automatisch in einer Datei mit dem MHT-Format gespeichert. Diese Datei wird in der Microsoft Teams-wiki-Datendokument Bibliothek auf der SharePoint-Website des Teams gespeichert. Sie können das Inhaltssuche-Tool zum Durchsuchen des Wikis verwenden, indem Sie die SharePoint-Website des Teams als den zu durchsuchenden Inhaltsspeicherort angeben. 
+  - Jeder Microsoft-Team-oder Team Kanal enthält ein wiki für die Notizen und die Zusammenarbeit. Die Wiki-Inhalte werden automatisch in einer Datei im MHT-Format gespeichert. Diese Datei wird in der Dokumentbibliothek für Wiki-Daten auf der SharePoint-Website des Teams gespeichert. Sie können das Tool für die Inhaltssuche zum Durchsuchen des Wikis verwenden, indem Sie die SharePoint-Website des Teams als den zu durchsuchenden Inhaltsspeicherort angeben. 
     
     > [!NOTE]
-    > Die Funktion zum Durchsuchen des Wikis nach einem Microsoft-Team oder-Kanal (wenn Sie die SharePoint-Website des Teams durchsuchen) wurde am 22. Juni 2017 veröffentlicht. Wiki-Seiten, die an diesem Datum oder später gespeichert oder aktualisiert wurden, stehen für die Durchsuchung zur Verfügung. Wiki-Seiten, die zuletzt gespeichert oder vor diesem Datum aktualisiert wurden, stehen nicht für die Suche zur Verfügung. 
+    > Die Funktion zum Durchsuchen des Wikis nach einem Microsoft-Team oder-Kanal (wenn Sie die SharePoint-Website des Teams durchsuchen) wurde am 22. Juni 2017 veröffentlicht. Es können Wiki-Seiten, die an diesem Datum oder später gespeichert oder aktualisiert wurden, durchsucht werden. Wiki-Seiten, die das letzte Mal vor diesem Datum gespeichert oder aktualisiert wurden, sind nicht für die Suche verfügbar. 
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
   
@@ -351,48 +353,48 @@ Hier finden Sie weitere Informationen zu Inhalts suchen.
   
 - Beachten Sie beim Erstellen einer Suchabfrage die folgenden Aspekte, wenn Sie die Stichwortliste verwenden.
     
-  - Sie müssen das Kontrollkästchen **Keyword-Liste anzeigen** aktivieren und dann jedes Schlüsselwort in eine separate Zeile eingeben, um eine Suchabfrage zu erstellen, bei der die Schlüsselwörter (oder Keyword-Phrasen) in jeder Zeile durch den **or** -Operator miteinander verbunden sind. Wenn Sie einfach eine Liste mit Stichwörtern in das Feld Stichwort einfügen oder die **Eingabe** Taste drücken, nachdem Sie ein Stichwort eingegeben haben, wird Sie nicht durch den Operator **oder** verbunden. Im folgenden finden Sie ein falsches und korrektes Beispiel für das Hinzufügen einer Liste von Schlüsselwörtern. 
+  - Sie müssen das Kontrollkästchen **Stichwortliste anzeigen** aktivieren und dann jedes Schlüsselwort in eine separate Zeile eingeben, um eine Suchabfrage zu erstellen, wobei die Schlüsselwörter (oder Schlüsselwortausdrücke) in jeder Zeile durch den Operator **OR** verbunden sind. Wenn Sie einfach eine Liste mit Stichwörtern in das Feld Stichwort einfügen oder die **Eingabe** Taste drücken, nachdem Sie ein Stichwort eingegeben haben, wird Sie nicht durch den Operator **oder** verbunden. Im folgenden finden Sie ein falsches und korrektes Beispiel für das Hinzufügen einer Liste von Schlüsselwörtern. 
     
-    **Falsche**
+    **Falsch**
     
-    ![Falsche Vorgehensweise zum Formatieren einer Keyword-Liste (durch Einfügen der Liste in das Feld "Stichwort")](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![Falsche Methode zum Formatieren einer Schlüsselwortliste (indem Sie die Liste in das Schlüsselwortfeld einfügen)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Richtig**
     
-    ![Die richtige Möglichkeit zum Formatieren einer Keyword-Liste (durch Markieren von CheckBox und Einfügen der Liste)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![Richtige Methode zum Formatieren einer Schlüsselwortliste (indem Sie das Kontrollkästchen aktivieren und die Liste anschließend einfügen)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
-  - Sie können auch eine Liste von Schlüsselwörtern oder Keyword-Phrasen in einer Excel-Datei oder einer nur-Text-Datei vorbereiten und dann die Liste in die Stichwortliste kopieren und einfügen. Dazu müssen Sie das Kontrollkästchen **Schlüsselwortliste anzeigen** aktivieren. Klicken Sie dann in der Liste Stichwort auf die erste Zeile, und fügen Sie Ihre Liste ein. Jede Zeile aus der Excel-oder Textdatei wird in in die separate Zeile in der Schlüsselwortliste eingefügt. 
+  - Sie können auch eine Liste von Schlüsselwörtern oder Keyword-Phrasen in einer Excel-Datei oder einer nur-Text-Datei vorbereiten und dann die Liste in die Stichwortliste kopieren und einfügen. Zu diesem Zweck müssen Sie das Kontrollkästchen **Schlüsselwortliste anzeigen** aktivieren. Klicken Sie dann auf die erste Zeile in der Schlüsselwortliste, und fügen Sie Ihre Liste ein. Jede Zeile aus der Excel-oder Textdatei wird in in die separate Zeile in der Schlüsselwortliste eingefügt. 
     
-  - Nachdem Sie eine Abfrage mithilfe der Stichwortliste erstellt haben, sollten Sie die Suchabfrage Syntax (im Detailbereich der ausgewählten Suche) überprüfen, um die beabsichtigte Suchabfrage zu machen. In der Suchabfrage, die unter **Query** im Detailbereich angezeigt wird, werden die Schlüsselwörter durch den Text **(c:s)** getrennt. Dies deutet darauf hin, dass die Schlüsselwörter durch den **or** -Operator verbunden sind. Wenn Ihre Suchabfrage Bedingungen enthält, werden die Schlüsselwörter und Bedingungen entsprechend durch den Text **(c:c)** getrennt. Dies deutet darauf hin, dass die Schlüsselwörter durch den **and-** Operator mit den Bedingungen verbunden sind. Im folgenden finden Sie ein Beispiel für die Suchabfrage (die im Detailbereich angezeigt wird), die bei Verwendung der Stichwortliste und einer Bedingung resultiert. 
+  - Nachdem Sie eine Abfrage mithilfe der Stichwortliste erstellt haben, sollten Sie die Suchabfrage Syntax (im Detailbereich der ausgewählten Suche) überprüfen, um die beabsichtigte Suchabfrage zu machen. In der Suchabfrage, die im Detailbereich unter **Abfrage** angezeigt wird, sind die Schlüsselwörter durch den Text **(c:s)** voneinander getrennt. Dies deutet darauf hin, dass die Schlüsselwörter durch den **or** -Operator verbunden sind. Wenn Ihre Suchabfrage Bedingungen enthält, sind die Schlüsselwörter und die Bedingungen entsprechend durch den Text **(c:c)** voneinander getrennt. Dies deutet darauf hin, dass die Schlüsselwörter durch den **and-** Operator mit den Bedingungen verbunden sind. Es folgt ein Beispiel für die (im Bereich "Details" angezeigte) Suchabfrage, die sich ergibt, wenn Sie die Schlüsselwortliste und eine Bedingung verwenden. 
     
-    ![Beispiel für die Abfrage, die erstellt wird, wenn die Stichwortliste verwendet wird und eine Bedingung](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Beispiel für die Abfrage, die unter Verwendung der Schlüsselwortliste und einer Bedingung erstellt wird](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
   - Wenn Sie über eine Suchabfrage verfügen, die Stichwörter für nicht englische Zeichen (beispielsweise chinesische Zeichen) enthält, müssen Sie möglicherweise das Cmdlet " **ComplianceSearch** " verwenden, um die Language-Eigenschaft für die Inhaltssuche zu konfigurieren. Wenn Sie eine Inhaltssuche mithilfe der GUI im Security #a0 Compliance Center erstellen, ist die Standardsprache neutral. 
     
-    Wie können Sie erkennen, ob Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie bestimmte inhaltsspeicherorte enthalten, die nicht englische Zeichen sind, die Sie suchen, aber die Suche keine Ergebnisse zurückgibt, ist die Spracheinstellung möglicherweise die Ursache.
+    Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie bestimmte inhaltsspeicherorte enthalten, die nicht englische Zeichen sind, die Sie suchen, aber die Suche keine Ergebnisse zurückgibt, ist die Spracheinstellung möglicherweise die Ursache.
     
     Um die Spracheinstellung für eine vorhandene Inhaltssuche zu ändern, führen Sie den folgenden Befehl in Security #a0 Compliance Center PowerShell aus:
     
-  ```
+  ```powershell
   Set-ComplianceSearch <name of content search> -Language <culture code value>
   ```
 
     Um beispielsweise die Spracheinstellung in Chinesisch zu ändern, verwenden `zh-CN` Sie den Wert für Kulturcode. Nachdem Sie die Spracheinstellung geändert haben, müssen Sie die Suche erneut ausführen. Eine Liste der möglichen Kulturcode Werte finden Sie unter [CultureInfo-Klasse](https://go.microsoft.com/fwlink/p/?LinkID=184859). Für die Inhaltssuche wird empfohlen, dass Sie zweiteilige Kulturcodes für den Wert der Spracheinstellung verwenden. Beispiel: `ja-JP` und nicht `ja`.
     
 
-### <a name="searching-inactive-mailboxes"></a>Durchsuchen inaktiver Postfächer
+### <a name="searching-inactive-mailboxes"></a>Durchsuchen von inaktiven Postfächern
   
-Wie bereits erwähnt, können Sie inaktive Postfächer in einer Inhaltssuche durchsuchen. Im folgenden finden Sie einige Punkte, die Sie bei der Suche inaktiver Postfächer beachten sollten.
+Wie bereits erwähnt, können Sie inaktive Postfächer in einer Inhaltssuche durchsuchen. Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
   
 - Wenn eine Inhaltssuche ein Benutzerpostfach enthält und dieses Postfach dann inaktiv gemacht wird, wird durch die Inhaltssuche weiterhin das inaktive Postfach durchsucht, wenn Sie die Suche erneut ausführen, nachdem Sie inaktiv geworden ist.
     
 - In einigen Fällen verfügt ein Benutzer möglicherweise über ein aktives Postfach und ein inaktives Postfach mit der gleichen SMTP-Adresse. In diesem Fall wird nur das bestimmte Postfach durchsucht, das Sie als Speicherort für eine Inhaltssuche ausgewählt haben. Wenn Sie also das Postfach eines Benutzers zu einer Suche hinzufügen, können Sie nicht davon ausgehen, dass sowohl die aktiven als auch die inaktiven Postfächer durchsucht werden. nur das Postfach, das Sie explizit zur Suche hinzufügen, wird durchsucht.
     
-- Es wird dringend empfohlen, ein aktives Postfach und ein inaktives Postfach mit derselben SMTP-Adresse zu vermeiden. Wenn Sie die SMTP-Adresse, die derzeit einem inaktiven Postfach zugewiesen ist, wieder verwenden müssen, wird empfohlen, das inaktive Postfach wiederherzustellen oder den Inhalt eines inaktiven Postfachs in einem aktiven Postfach (oder im Archiv eines aktiven Postfachs) wiederherzustellen, und löschen Sie dann die inaktives Postfach. Weitere Informationen finden Sie unter einem der folgenden Themen:
+- Es wird dringend empfohlen, die Verwendung der gleichen SMTP-Adresse für ein aktives und ein inaktives Postfach zu vermeiden. Wenn Sie die SMTP-Adresse, die derzeit einem inaktiven Postfach zugewiesen ist, wieder verwenden müssen, wird empfohlen, das inaktive Postfach wiederherzustellen oder den Inhalt eines inaktiven Postfachs in einem aktiven Postfach (oder im Archiv eines aktiven Postfachs) wiederherzustellen, und löschen Sie dann die inaktives Postfach. Weitere Informationen hierzu finden Sie in einem der folgenden Beiträge:
     
   - [Wiederherstellen eines inaktiven Postfachs in Office 365](recover-an-inactive-mailbox.md)
     
-  - [Wiederherstellen eines inaktiven Postfachs in Office 365](restore-an-inactive-mailbox.md)
+  - [Rückspeichern eines inaktiven Postfachs in Office 365](restore-an-inactive-mailbox.md)
     
   - [Löschen eines inaktiven Postfachs in Office 365](delete-an-inactive-mailbox.md)
     

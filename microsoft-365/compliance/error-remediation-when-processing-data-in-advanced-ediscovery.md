@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 02fa8870d6edb4e1a6616604ee0e98638b217237
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081566"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38686015"
 ---
 # <a name="error-remediation-when-processing-data"></a>Beheben von Fehlern beim Verarbeiten von Daten
 
@@ -95,6 +95,14 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 11. Nachdem Sie den AzCopy-Befehl ausgeführt haben, klicken Sie auf **Weiter: Process files**.
 
     Wenn die Verarbeitung abgeschlossen ist, können Sie zu Überprüfungs Sätzen wechseln und die korrigierten Dateien anzeigen. 
+
+## <a name="remediating-errors-in-container-files"></a>Remediation von Fehlern in Containerdateien
+
+In Situationen, in denen der Inhalt einer Containerdatei (beispielsweise eine ZIP-Datei) nicht von Advanced eDiscovery extrahiert werden kann, können die Container heruntergeladen und der Inhalt in denselben Ordner erweitert werden, in dem sich der ursprüngliche Container befindet. Die erweiterten Dateien werden dem übergeordneten Container zugeordnet, als wäre sie ursprünglich mit Advanced eDiscovery erweitert worden. Der Vorgang funktioniert wie oben beschrieben, außer beim Hochladen einer einzelnen Datei als Ersatzdatei.  Wenn Sie korrigierte Dateien hochladen, schließen Sie die ursprüngliche Containerdatei nicht ein.
+
+## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Beheben von Fehlern durch Hochladen des extrahierten Texts
+
+Manchmal ist es nicht möglich, eine Datei in das systemeigene Format zu korrigieren, das von Advanced eDiscovery interpretiert werden kann. Sie können die Originaldatei jedoch durch eine Textdatei ersetzen, die den ursprünglichen Text der systemeigenen Datei enthält (in einem Prozess namens " *Textüberlagerung*"). Führen Sie dazu die in diesem Artikel beschriebenen Schritte aus, anstatt die ursprüngliche Datei im systemeigenen Format zu korrigieren, würden Sie eine Textdatei erstellen, die den extrahierten Text aus der ursprünglichen Datei enthält, und dann die Textdatei mit dem ursprünglichen Dateinamen hochladen. angefügt mit dem Suffix. txt. Beispielsweise laden Sie eine Datei während der Fehlerbehebung mit dem Dateinamen 335850cc-6602-4af0-ACFA-1d14d9128ca2. ABC herunter. Öffnen Sie die Datei in der systemeigenen Anwendung, kopieren Sie den Text, und fügen Sie ihn in eine neue Datei mit dem Namen 335850cc-6602-4af0-ACFA-1d14d9128ca2. ABC. txt ein. Wenn Sie dies tun, müssen Sie die Originaldatei im systemeigenen Format aus dem Speicherort der bereinigten Datei auf Ihrem lokalen Computer entfernen, bevor Sie die korrigierte Textdatei in "Advanced eDiscovery" hochladen.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Was geschieht, wenn Dateien behoben werden
 

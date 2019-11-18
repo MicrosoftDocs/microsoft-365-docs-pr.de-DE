@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn Unternehmensseite in Office 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Kompatibilität der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081108"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686213"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Einrichten eines Connectors zum Archivieren von LinkedIn Daten in Office 365 (Vorschau)
 
@@ -71,14 +71,10 @@ Wenn Sie weitere Details anzeigen möchten, klicken Sie auf den Konnektor in der
 
 - Aufgrund des vorherigen Verhaltens können Sie die `from` oder `subject` e-Mail-Eigenschaften durchsuchen, wenn Sie ein Microsoft eDiscovery-Tool zum Durchsuchen von LinkedIn-Elementen verwenden, die in Office 365 archiviert werden. Wenn beispielsweise der Name der Unternehmensseite "Contoso Company page" lautet, können Sie eine der folgenden *Eigenschaft: Wert-* Paare in der Stichwort Suchabfrage verwenden:
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > von: "Contoso Company page"
 
     Oder
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > Betreff: "Contoso Company page"
 
 - Damit Sie das Auffinden oder Verwalten von in Office 365 importierten LinkedIn-Elementen vereinfachen können, kann der Besitzer des Speicher Postfachs (oder jeder, dem die Berechtigung "FullAccess" zugewiesen ist) eine Posteingangsregel einrichten, um die Elemente von einer LinkedIn Unternehmensseite in einen bestimmten Ordner zu verschieben. Dies ist hilfreich, wenn das Speicher Postfach zum Archivieren von Elementen verwendet wird, die aus anderen Datenquellen von Drittanbietern importiert wurden. Sie können beispielsweise eine Posteingangsregel erstellen, mit der alle Elemente, die den Namen einer bestimmten LinkedIn Unternehmensseite enthalten, im Feld Betreff in einen bestimmten Ordner verschoben werden.

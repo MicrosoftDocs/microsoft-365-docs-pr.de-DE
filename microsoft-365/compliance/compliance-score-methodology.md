@@ -1,5 +1,5 @@
 ---
-title: Methodik der Konformitätsbewertung
+title: Berechnung der Konformitätsbewertung
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -11,47 +11,68 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
+ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417494"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686025"
 ---
-# <a name="compliance-score-methodology-preview"></a>Methodik der Konformitätsbewertung (Vorschau)
+# <a name="microsoft-compliance-score-calculation-preview"></a>Berechnung der Microsoft-Konformitätsbewertung (Vorschau)
 
-> [!NOTE]
-> Die Compliance-Bewertung drückt kein absolutes Maß für die Einhaltung eines bestimmten Standards oder einer bestimmten Vorschrift in der Organisation aus. Sie drückt vielmehr den Umfang aus, in dem Sie Steuerelemente einsetzen, durch die die Risiken für persönliche Daten und den Datenschutz reduziert werden können. Kein Dienst kann garantieren, dass Sie einen Standard oder eine Vorschrift einhalten. Die Compliance-Bewertung sollte in keinster Weise als eine Garantie verstanden werden.
+> [!IMPORTANT]
+> Compliance Score ist kein absolutes Maß für die organisatorische Einhaltung einer bestimmten Norm oder Regulierung. Sie drückt das Ausmaß aus, in dem Sie Steuerelemente eingeführt haben, die die Risiken für personenbezogene Daten und den Schutz der Privatsphäre reduzieren können. Empfehlungen aus dem Compliance Score und dem Compliance-Manager sollten nicht als Garantie für die Compliance interpretiert werden. Dieser Dienst befindet sich derzeit in der Vorschau und unterliegt den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910).
 
-Im Compliance-Manager-Dashboard wird ein Gesamt Kompatibilitäts Faktor für Bewertungen in den einzelnen Bewertungs Kacheln angezeigt. Dies ist das Gesamtergebnis der Konformität für die Bewertung und ist die Akkumulation von Punkten, die für jedes implementierte und getestete Steuerelement in der Bewertung erhalten wurden. Für eine neue Bewertung weist das Kompatibilitäts Ergebnis einen anfänglichen Wert für die enthaltenen von unabhängigen Drittanbietern getesteten von Microsoft verwalteten Steuerelemente auf. Das Kompatibilitäts Ergebnis wird basierend auf von Microsoft verwalteten Aktions Ergebnissen und von Kunden verwalteten Aktionspunkten berechnet. Compliance Score kann helfen, Prioritäten zu setzen, auf welche Bewertungen und Kontrollen Sie sich konzentrieren müssen, um Ihre allgemeine Compliance-Haltung zu verbessern.
+## <a name="overview"></a>Übersicht
 
-Die angezeigten Kompatibilitäts Bewertungswerte für das Steuerelement werden *in ihrer Gesamtheit* auf das Gesamtergebnis der Konformitätsbewertung auf Pass/Fail-Basis angewendet. Das Steuerelement ist implementiert und übergibt den nachfolgenden Bewertungstest oder nicht. Zugewiesene Punkte werden zur Kompatibilitätsbewertung hinzugefügt, wenn das Steuerelement Folgendes besitzt:
+Das Kompatibilitäts Bewertungs Dashboard zeigt eine Bewertung an, die den Fortschritt beim Abschließen von Verbesserungs Aktionen innerhalb von Steuerelementen misst. Ihre Punkte werden nach Abschluss der Aktionen gesammelt.
+
+Ihre Bewertung wird basierend auf dem Abschluss von von Microsoft verwalteten Aktionen und von Kunden verwalteten Aktionen berechnet. Jede Aktion unterscheidet sich je nach den potenziellen Risiken durch eine andere Auswirkung auf Ihre Bewertung, sodass die Bewertung helfen kann, Prioritäten zu setzen, auf die Sie sich konzentrieren müssen, um Ihre allgemeine Compliance-Haltung zu verbessern.
+
+Die angezeigten Werte für die Konformitätsbewertung für das Steuerelement werden *in ihrer Gesamtheit* auf die Gesamtpunktzahl auf Pass/Fail-Basis angewendet. Das Steuerelement ist implementiert und übergibt den nachfolgenden Bewertungstest oder nicht. Zugewiesene Punkte werden zur Konformitätsbewertung hinzugefügt, wenn das Steuerelement Folgendes besitzt:
 
 - **Implementierungs Status** entspricht **implementiert** oder **alternative Implementierung** und,
 - **Test Ergebnis** gleich **übergeben**.
 
-## <a name="compliance-score"></a>Kompatibilitätsbewertung
-  
-Im Compliance-Manager werden Baseline-Bewertungen von der Steuerelementebene in die Aktionselement Ebene verlagert. Die Ergebnisse basieren auf dem Zweck (Detektiv, vorbeugend oder Korrektiv) und der Erzwingung (diskretionäre oder obligatorisch) des Aktionselements.
+Die Summe der Punkte, die durch Verbesserungs Aktionen erzielt werden, ist das Kontrollergebnis. Die Summe ihrer Kontrollpunkte ist das Bewertungsergebnis. Die Summe ihrer Bewertungsergebnisse entspricht dem Gesamtergebnis der Konformität.
 
-Aktionselemente werden Steuerelementen zugeordnet, und wenn ein Steuerelement mehreren Aktionselementen zugeordnet wird, ist die Summe der Ergebnisse des Aktionselements das Kontrollergebnis. Die Summe der Steuerelement Bewertung für alle Steuerelemente in einer bestimmten Bewertung ist das Bewertungsergebnis. Die durchschnittliche Punktzahl aller Bewertungen in einer Gruppe ist die Konformitätsbewertung für diese Gruppe.
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Ursprüngliche Bewertung basierend auf der Microsoft 365-Datenschutz Basis
   
-### <a name="mandatory-or-discretionary-controls"></a>Obligatorische oder diskretionäre Steuerelemente
+Mit der Kompatibilitätsbewertung erhalten Sie eine vordefinierte Bewertung basierend auf der Microsoft 365-Datenschutz Basis, bei der es sich um eine Reihe von Steuerelementen handelt, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierung) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management). Program) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
+
+## <a name="how-compliance-score-continuously-assesses-controls"></a>So beurteilt Compliance Score kontinuierlich Steuerelemente
+
+Compliance Score scannt automatisch Ihre Microsoft 365-Umgebung und erkennt Ihre Systemeinstellungen, und aktualisiert Ihren technischen Steuerungsstatus kontinuierlich und automatisch. Wenn Sie beispielsweise die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) im Azure AD-Portal aktiviert haben, erkennt das Kompatibilitäts Ergebnis die Einstellung und gibt die Informationen in den Details des Steuerelements für den Zugriff auf die Lösung wieder. Wenn Sie sich umgekehrt nicht für MFA aktiviert haben, kennzeichnet das Konformitäts Bewertungsergebnis dies als empfohlene Aktion, die Sie ergreifen sollten.
+
+Die Kompatibilitätsbewertung aktualisiert Ihren Steuerelementstatus alle 24 Stunden. Nachdem Sie eine Empfehlung zur Implementierung eines Steuerelements befolgt haben, wird der Status des Steuerelements am nächsten Tag aktualisiert.
+
+Während der öffentlichen Vorschau steht eine kontinuierliche Bewertung für einen Teilsteuerelemente, jedoch nicht für alle zur Verfügung.
   
- **Zwingende Steuerelemente** sind Aktionen, die weder absichtlich noch versehentlich umgangen werden können. Ein Beispiel für ein allgemeines obligatorisches Steuerelement ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für die Länge, Komplexität und den Ablauf von Kennwörtern festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
+## <a name="control-types-and-points"></a>Steuerelementtypen und-Punkte
+
+Das Kompatibilitäts Ergebnis verfolgt zwei Arten von Steuerelementen, die von Microsoft verwaltet und von Kunden verwaltet werden, von denen jede über Punkte verfügt, die zu ihrer Gesamtpunktzahl beitragen:
+
+1. **Kunden verwaltete Punkte** tragen zur Konformitätsbewertung basierend auf Steuerelementen bei, die von Ihrer Organisation verwaltet werden.
+2. Von **Microsoft verwaltete Punkte** tragen zur Konformitätsbewertung basierend auf Steuerelementen bei, die von Microsoft als Cloud-Dienstanbieter verwaltet werden.
+
+Steuerelementen wird ein Bewertungs Wert zugewiesen, je nachdem, ob Sie obligatorisch oder diskretionäre sind und ob Sie vorbeugend, detektivisch oder Korrektiv sind – wie unten beschrieben.
+
+### <a name="mandatory-and-discretionary-controls"></a>Obligatorische und diskretionäre Steuerelemente
+
+ - **Zwingende Steuerelemente** sind Aktionen, die weder absichtlich noch versehentlich umgangen werden können. Ein Beispiel ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für die Kennwortlänge,-Komplexität und-Ablaufzeit festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
   
- **Diskretionäre Steuerelemente** basieren darauf, dass Benutzer Richtlinien verstehen und entsprechend handeln. Beispielsweise ist eine Richtlinie, bei der Benutzer Ihren Computer beim Verlassen des Computers Sperren müssen, ein diskretionäres Steuerelement, da es vom Benutzer abhängig ist.
+ - **Diskretionäre Steuerelemente** basieren darauf, dass Benutzer Richtlinien verstehen und entsprechend handeln. Beispielsweise ist eine Richtlinie, bei der Benutzer Ihren Computer beim Verlassen des Computers Sperren müssen, ein diskretionäres Steuerelement, da es vom Benutzer abhängig ist.
   
-### <a name="preventative-detective-or-corrective-controls"></a>Vorbeugende, Detektive oder korrigierende Steuerelemente
+### <a name="preventative-detective-and-corrective-controls"></a>Vorbeugende, Detektive und korrigierende Steuerelemente
   
- **Vorbeugende Steuerelemente** sind Aktionen, die bestimmte Risiken verhindern. Beispielsweise ist das Schützen von Informationen im Ruhezustand mithilfe von Verschlüsselung eine vorbeugende Kontrolle gegen Angriffe und Verstöße. Die Trennung von Zöllen ist eine präventive Kontrolle zur Verwaltung von Interessenkonflikten und zum Schutz vor Betrug.
+ - **Vorbeugende Kontrollen** befassen sich mit bestimmten Risiken. Beispielsweise ist das Schützen von Informationen im Ruhezustand mithilfe von Verschlüsselung eine vorbeugende Kontrolle gegen Angriffe und Verstöße. Die Trennung von Zöllen ist eine vorbeugende Kontrolle zur Verwaltung von Interessenkonflikten und zum Schutz vor Betrug.
   
- **Detektiv Steuerelemente** sind Aktionen, die Systeme aktiv überwachen, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die Risiken darstellen oder die verwendet werden können, um Eindringversuche zu erkennen oder um festzustellen, ob ein Verstoß aufgetreten ist. Die System Zugriffsüberwachung und die Überwachung privilegierter administrativer Aktionen sind Typen von Detektiv Überwachungs Steuerelementen. Compliance-Überwachungen sind eine Art von Detektiv Steuerung, die zum Auffinden von Prozessproblemen verwendet wird.
+ - **Detektiv Steuerelemente** überwachen Systeme aktiv, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die Risiken darstellen oder die verwendet werden können, um Eindringversuche zu erkennen oder um festzustellen, ob ein Verstoß auftritt. Die System Zugriffsüberwachung und die Überwachung privilegierter administrativer Aktionen sind Typen von Detektiv Überwachungs Steuerelementen. Compliance-Überwachungen sind eine Art von Detektiv Steuerung, die zum Auffinden von Prozessproblemen verwendet wird.
   
-**Korrektur Steuerelemente** sind Steuerelemente, die versuchen, die negativen Auswirkungen eines Sicherheitsvorfalls auf ein Minimum zu beschränken, Korrekturmaßnahmen zur Verringerung des unmittelbaren Effekts zu ergreifen und den Schaden nach Möglichkeit umzukehren. Die Antwort auf Datenschutz Vorfälle ist eine Korrekturhilfe, um nach einem Verstoß Schäden zu begrenzen und Systeme auf einen Betriebszustand zurückzusetzen.
+- **Korrigierende Steuerelemente** versuchen, die negativen Auswirkungen eines Sicherheitsvorfalls auf ein Minimum zu beschränken, Korrekturmaßnahmen zu ergreifen, um den unmittelbaren Effekt zu reduzieren, und den Schaden nach Möglichkeit umzukehren. Die Antwort auf Datenschutz Vorfälle ist eine Korrekturhilfe, um nach einem Verstoß Schäden zu begrenzen und Systeme auf einen Betriebszustand zurückzusetzen.
   
-Jedes Steuerelement besitzt einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das es darstellt:
+Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend auf dem Risiko, das es darstellt:
 
 |**Typ**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
@@ -62,23 +83,3 @@ Jedes Steuerelement besitzt einen zugewiesenen Wert im Compliance-Manager basier
 | Korrektur Pflicht | 3 |
 | Korrigierendes diskretionäre | 1 |
   
-## <a name="action-item-workflow"></a>Aktionselement Workflow
-
-Hier ist der grundlegende Workflow für ein typisches Aktionselement:
-  
-1. Der Compliance-, Risiko-, Datenschutz-und/oder Datenschutzbeauftragte einer Organisation weist einer Person in der Organisation eine Aufgabe zu, um ein Steuerelement zu implementieren. Diese Person kann Folgendes sein:
-
-    - Ein Geschäftsrichtlinien Besitzer.
-    - Ein IT-Implementierer.
-    - Eine andere Person in der Organisation, die für die Ausführung der Aufgabe zuständig ist.
-
-2. Diese Person führt die Aufgaben aus, die für die Implementierung der Steuerung erforderlich sind, lädt den Nachweis der Implementierung in Compliance-Manager hoch und markiert das an das Aktionselement gebundene Steuerelement als implementiert. Sobald diese Aufgaben abgeschlossen sind, weisen Sie das Aktionselement einem Gutachter zur Überprüfung zu.
-
-    Prüfer können sein:
-
-    - Interne Prüfer, die die Validierung von Steuerelementen in einer Organisation durchführen.
-    - Externe Prüfer, die die Konformität prüfen, überprüfen und zertifizieren, beispielsweise die unabhängigen Drittanbieter Organisationen, die die Cloud-Dienste von Microsoft überwachen.
-
-3. Der Assessor überprüft das Steuerelement und untersucht den Beweis und kennzeichnet das Steuerelement als bewertet und die Ergebnisse der Bewertung.
-
-Nachdem alle einem Assessment zugeordneten Steuerelemente bewertet wurden, ist die Bewertung abgeschlossen.

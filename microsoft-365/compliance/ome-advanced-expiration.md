@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Mit Office 365 erweiterten Nachrichten Verschlüsselungsfunktionen über Office 365-Nachrichtenverschlüsselung (OM) können Sie Ihre e-Mail-Sicherheit erweitern, indem Sie ein Ablaufdatum für e-Mails über eine benutzerdefinierte Marken Vorlage festlegen.
-ms.openlocfilehash: 59e014a69214c8085ad248ad1c1a0c21142abd47
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 6790cc7103ad098419bde96b93738424626cd0cc
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435539"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686109"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Festlegen eines Ablaufdatums für E-Mails, die mit der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
 
@@ -37,7 +37,7 @@ Bei Office 365 erweiterten Nachrichtenverschlüsselung wendet der Office 365 den
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Erstellen einer benutzerdefinierten Branding-Vorlage zum Erzwingen des e-Mail-Ablaufs mithilfe von PowerShell
 
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) mit einem Konto her, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt.
+1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) mit einem Konto her, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt.
 
 2. Führen Sie das Cmdlet New-OMEConfiguration aus.
 
@@ -45,7 +45,7 @@ Bei Office 365 erweiterten Nachrichtenverschlüsselung wendet der Office 365 den
      New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
      ```
 
-Wobei Folgendes gilt:
+Dabei gilt:
 
 - `Identity`ist der Name der benutzerdefinierten Vorlage.
 
@@ -57,4 +57,4 @@ Wobei Folgendes gilt:
 
 - [Widerrufen von E-Mails, die von der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden](revoke-ome-encrypted-mail.md)
 
-- [Beschreibung des Nachrichtenrichtlinien-und Kompatibilitätsdiensts](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Beschreibung des Nachrichtenrichtlinien-und Kompatibilitätsdiensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

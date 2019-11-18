@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Teilweise indizierte Elemente (auch nicht indexierte Elemente aufrufen) sind Exchange-Postfachelemente und Dokumente auf SharePoint-und OneDrive-Websites, die aus irgendeinem Grund nicht vollständig für die Inhaltssuche indiziert wurden. In diesem Artikel erfahren Sie, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, Suchfehler für teilweise indizierte Elemente identifizieren und ein PowerShell-Skript verwenden, um die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mail-Nachrichten zu ermitteln. Elemente.
-ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080630"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686238"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery
 
@@ -84,7 +84,7 @@ Wenn Sie Inhalts Suchergebnisse oder einen Inhalts Suchbericht mit einer dieser 
 
 Fehler Tags bestehen aus zwei Informationselementen, dem Fehler und dem Dateityp. Beispielsweise in diesem Fehler/filetype-paar:
 
-```
+```text
  parseroutputsize_xls
 ```
 
@@ -120,7 +120,7 @@ In den folgenden Schritten wird gezeigt, wie Sie ein PowerShell-Skript ausführe
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `PartiallyIndexedItems.ps1`.
 
-```
+```powershell
   write-host "**************************************************"
   write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
@@ -163,15 +163,15 @@ In den folgenden Schritten wird gezeigt, wie Sie ein PowerShell-Skript ausführe
   }
   
 ```
-   
+
 2. Stellen [Sie eine Verbindung mit Security #a0 Compliance Center PowerShell her](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. Wechseln Sie in Security #a0 Compliance Center PowerShell zu dem Ordner, in dem Sie das Skript in Schritt 1 gespeichert haben, und führen Sie dann das Skript aus. Zum Beispiel:
 
-    ```
+    ```powershell
     .\PartiallyIndexedItems.ps1
     ```
-   
+
 Im folgenden finden Sie ein Beispiel für die vom Skript zurückgegebene Ausgabe.
   
 ![Beispiel für die Ausgabe von einem Skript, das einen Bericht über die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mail-Elementen generiert](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)

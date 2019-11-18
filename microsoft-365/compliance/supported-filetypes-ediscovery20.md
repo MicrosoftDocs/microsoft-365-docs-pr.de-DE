@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081900"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38686019"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Unterstützte Dateitypen in Advanced eDiscovery
 
 Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen, die in der folgenden Tabelle beschrieben werden. Diese Liste ist nicht abgeschlossen, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. In den Tabellen wird angegeben, ob ein Dateityp für die Textextraktion (OCR für Bilder) unterstützt wird, der im Native Viewer angezeigt wird und auch im Annotations-Viewer in Advanced eDiscovery unterstützt wird.
+
 
 ## <a name="archive--container"></a>Archiv/Container
 
@@ -32,7 +33,19 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | Application/x-7z-komprimiert | Ja | Ja | Ja | .7z |
 | Application/x-rar-komprimiert | Ja | Ja | Ja | . rar |
 | Anwendung/x-tar | Ja | Ja | Ja | . tar |
-| Anwendung/zip | Ja | Ja | Ja | . zip |
+| Anwendung/zip | Ja | Ja | Ja | .ZIP |
+||||||||
+
+## <a name="audio--video"></a>Audio/Video
+
+| MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Anwendung/MP4 | Ja | Ja | Nein | Ja | Nein | . F4V;. m4a;. m4v;. MP4;. MP4V;. MPEG;. MPEG4 |
+| Audio/MPEG | Ja | Ja | Nein | Ja | Nein | . MPEG |
+| Video/3GPP | Ja | Ja | Nein | Ja | Nein | .3GP |
+| Video-3GPP2 | Ja | Ja | Nein | Ja | Nein | .3G2;. 3gp2 |
+| Video/QuickTime | Ja | Ja | Nein | Ja | Nein | . mov;. mov;. Qt |
+| Video/x-m4v | Ja | Ja | Nein | Ja | Nein | . m4v |
 ||||||||
 
 ## <a name="database"></a>Datenbank
@@ -47,7 +60,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/vnd. MS-Outlook | Ja | Ja | Ja | Ja | Ja | . msg |
-| Nachricht/RFC822 | Ja | Ja | Ja | Ja | Ja | EML |
+| Nachricht/RFC822 | Ja | Ja | Ja | Ja | Ja | .EML |
 | Text/vCard-Kontakt | Ja | Ja | Ja | Ja | Ja | . vcf |
 ||||||||
 
@@ -95,6 +108,13 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Ja | Ja | Ja | Ja | Ja | . xltx |
 ||||||||
 
+## <a name="microsoft-onenote"></a>Microsoft OneNote
+
+| MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Anwendung/OneNote | Ja | Ja | Ja | Ja | Nein | . eine |
+||||||||
+
 ## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
@@ -103,6 +123,13 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | Ja | Ja | Ja | Ja | Ja | PPTX |
 | application/vnd. openxmlformats-officeDocument. PresentationML. Slideshow | Ja | Ja | Ja | Ja | Ja | . ppsx |
 | application/vnd. openxmlformats-officeDocument. PresentationML. Template | Ja | Ja | Ja | Ja | Ja | . POTX |
+||||||||
+
+## <a name="microsoft-project"></a>Microsoft Project
+
+| MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Project | Ja | Ja | Ja | Nein | Ja | MPP |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher
@@ -169,7 +196,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/pdf | Ja | Ja | Ja | Ja | Ja | .pdf |
+| application/pdf | Ja | Ja | Ja | Ja | Ja | .PDF |
 ||||||||
 
 ## <a name="word-perfect"></a>Word Perfect

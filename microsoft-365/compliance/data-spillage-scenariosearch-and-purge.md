@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie Office 365 eDiscovery-und Such Tools, um einen Vorfall zur Verschütten von Daten in Ihrer Organisation zu verwalten und zu reagieren.
-ms.openlocfilehash: bf6c22a593a2611b86012cd51e3e2932a13dfe4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080786"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686262"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung
 
@@ -82,7 +82,7 @@ Informationen zum Erstellen einer Inhaltssuche, die einem eDiscovery-Fall zugeor
 
 Nachdem Sie eine Inhaltssuche erstellt haben, müssen Sie die Suchergebnisse überprüfen und überprüfen und sicherstellen, dass Sie nur aus den e-Mail-Nachrichten bestehen, die gelöscht werden müssen. Bei einer Inhaltssuche können Sie eine Vorschau einer Zufallsstichprobe von 1.000 e-Mail-Nachrichten anzeigen, ohne die Suchergebnisse zu exportieren, um weitere Datenüberlauf zu vermeiden. Weitere Informationen zu den Vorschau Beschränkungen finden Sie unter [Limits for Content Search](limits-for-content-search.md).
   
-Wenn Sie mehr als 1.000 Postfächer oder mehr als 100 e-Mail-Nachrichten pro Postfach zur Überprüfung haben, können Sie die anfängliche Suche mithilfe zusätzlicher Stichwörter oder Bedingungen wie Datumsbereich oder Absender/Empfänger in mehrere Suchvorgänge unterteilen und die Ergebnisse jeder Suche überprüfen. einzeln. Achten Sie darauf, alle Suchabfragen zu notieren, die beim Löschen von Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)verwendet werden sollen.
+Wenn Sie mehr als 1.000 Postfächer oder mehr als 100 e-Mail-Nachrichten pro Postfach zur Überprüfung haben, können Sie die anfängliche Suche mithilfe zusätzlicher Stichwörter oder Bedingungen wie Datumsbereich oder Absender/Empfänger in mehrere Suchvorgänge unterteilen und die Ergebnisse jeder Suche einzeln überprüfen. Achten Sie darauf, alle Suchabfragen zu notieren, die beim Löschen von Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)verwendet werden sollen.
 
 Wenn einer Depotbank oder einem Endbenutzer eine Office 36 E5-Lizenz zugewiesen ist, können Sie bis zu 10.000 Suchergebnisse gleichzeitig mit Office 365 Advanced eDiscovery untersuchen. Wenn mehr als 10.000 e-Mail-Nachrichten zu überprüfen sind, können Sie die Suchabfrage nach Datumsbereich aufteilen und jedes Ergebnis einzeln überprüfen, da die Suchergebnisse nach Datum sortiert sind. In Advanced eDiscovery können Sie Suchergebnisse mit dem Feature **Bezeichnung als** im Vorschaufenster markieren und das Suchergebnis nach dem Tag filtern, mit dem Sie beschriftet haben. Dies ist hilfreich, wenn Sie mit einem sekundären Bearbeiter zusammenarbeiten. Durch die Verwendung zusätzlicher Analysetools in Advanced eDiscovery, wie der optischen Zeichenerkennung, des e-Mail-Threadings und der Vorhersage Codierung können Sie schnell Tausende von Nachrichten verarbeiten und überprüfen und Sie zur weiteren Überprüfung markieren. Weitere Informationen finden Sie unter [Quick Setup für Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
@@ -154,7 +154,7 @@ Es gibt zwei Möglichkeiten, eine Liste der e-Mail-Adressen von Postfächern mit
 
 Wenn die Wiederherstellung einzelner Elemente aktiviert ist oder ein Postfach aufbewahrt wird, wird im Ordner "Wiederherstellbare Elemente" eine endgültig gelöschte Nachricht (bereinigt) gespeichert. Bevor Sie also verschüttete Daten löschen können, müssen Sie die vorhandenen Postfachkonfigurationen überprüfen und die Wiederherstellung einzelner Elemente deaktivieren und alle halte-oder Office 365 Aufbewahrungsrichtlinie entfernen. Beachten Sie, dass Sie ein Postfach gleichzeitig vorbereiten und dann denselben Befehl für verschiedene Postfächer ausführen oder ein PowerShell-Skript erstellen können, um mehrere Postfächer gleichzeitig vorzubereiten.
 
-- Informationen dazu, wie Sie überprüfen können, ob die Wiederherstellung einzelner Elemente aktiviert ist oder ob das Postfach in der Warteschleife gespeichert oder einem Benutzer zugewiesen wurde, finden Sie unter "Schritt 1: Erfassen von Informationen über das Postfach" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) " in der Warteschleife. Aufbewahrungsrichtlinie. 
+- Weitere Informationen zum Überprüfen, ob die Wiederherstellung einzelner Elemente aktiviert ist oder ob das Postfach in der Warteschleife oder einer Aufbewahrungsrichtlinie zugewiesen ist, finden Sie unter "Schritt 1: Erfassen von Informationen über das Postfach" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) " in der Warteschleife. 
     
 - Anweisungen zum Deaktivieren der Wiederherstellung einzelner Elemente finden Sie unter "Schritt 2: Vorbereiten des Postfachs" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
     
@@ -174,24 +174,24 @@ Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereit
     
 2. Führen Sie den folgenden Befehl aus:
     
-    ```
+    ```powershell
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
-  
+
 3. Führen Sie den vorherigen Befehl für jedes Postfach erneut aus, das die verschütteten Daten enthält, indem Sie den Wert für den Parameter Identity ersetzen. Zum Beispiel:
 
-    ```
+    ```powershell
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-    ```
+    ```powershell
     Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-   ```
+   ```powershell
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
-  
+
 Wie bereits erwähnt, können Sie auch ein [PowerShell-Skript](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) erstellen und es für eine Liste von Postfächern ausführen, sodass das Skript die verschütteten Daten in jedem Postfach löscht.
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, stellen Sie einen Nachweis für die Löschung bereit, und überwachen

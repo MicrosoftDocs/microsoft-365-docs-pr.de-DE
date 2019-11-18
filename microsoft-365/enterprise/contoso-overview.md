@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen der Contoso Corporation als Unternehmen und Informationen zu der mehrstufigen Struktur ihrer weltweiten Büros.
-ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 429d74c66198c1b4a3dea735127a4fb569aa7bb0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369556"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627341"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Übersicht über die Contoso Corporation
 
@@ -66,7 +66,7 @@ Die IT-Architekten von Contoso haben die folgenden Entwurfsanforderungen und -as
 
 - Mehrere geografische Standorte mit lokalen Vorschriften und Compliance-Anforderungen
 - Ein zentrales Intranetrechenzentrum in der Unternehmenszentrale und regionale Anwendungsserver, auf der interne Branchenanwendungen gehostet werden.
-- Eine vorhandene Infrastruktur von System Center Configuration Manager
+- Eine vorhandene Microsoft Endpoint Configuration Manager-Infrastruktur
 - Eine Kombination aus Clientcomputinggeräten wie Windows, Mac und Linux.
 - Eine Kombination aus persönlichen und firmeneigenen mobilen Geräten wie iOS (iPhone und iPad), Android-Smartphones und Tablets
 - Viele Remote- und Mobilmitarbeiter

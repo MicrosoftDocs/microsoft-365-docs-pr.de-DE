@@ -13,14 +13,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Das dsgvo gibt EU-Bürgern (sogenannte Datensubjekte) bestimmte Rechte für Ihre personenbezogenen Daten. Diese Rechte umfassen das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen im elektronischen Format. Eine formelle Anforderung einer betroffenen Person, eine Aktion für Ihre personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 8a4882070509991ca91403c96b55825fac3a2536
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081607"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686232"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool im Security #a0 Compliance Center
 
@@ -133,13 +134,13 @@ Nachdem Sie einen DSR-Fall erstellt und Mitglieder hinzugefügt haben, besteht d
     
 Hier erfahren Sie, wie die Stichwortabfrage für die integrierte Suche aussieht, die beim Erstellen eines DSR-Falls automatisch erstellt wird.
   
-```
+```powershell
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 Wenn beispielsweise der Name der betroffenen Person Ina Leonte ist, würde die Stichwortabfrage wie folgt aussehen:
   
-```
+```powershell
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
@@ -210,7 +211,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
     Die Suchergebnisse werden zum Herunterladen vorbereitet, was bedeutet, dass Sie in den Azure-Speicherbereich für Ihre Organisation in der Microsoft-Cloud hochgeladen werden. In den nächsten Schritten wird gezeigt, wie Sie diese Daten auf den lokalen Computer herunterladen.
     
-6. Klicken Sie auf die Registerkarte **exportieren** , um den von Ihnen erstellten Exportauftrag anzuzeigen. Export Aufträge haben den gleichen Namen wie die entsprechende Suche, wobei **_Export** an das Ende des Such namens angehängt wird. 
+6. Klicken Sie auf die Registerkarte **exportieren** , um den von Ihnen erstellten Exportauftrag anzuzeigen. Export Aufträge haben denselben Namen wie die entsprechende Suche, wobei **_Export** an das Ende des Such namens angehängt wird. 
     
 7. Klicken Sie auf den soeben erstellten Exportauftrag, um die Seite Flyout exportieren anzuzeigen. Auf dieser Seite werden Informationen zur Suche angezeigt, beispielsweise die Größe und Gesamtanzahl der zu exportierenden Elemente sowie der Prozentsatz der Elemente, die in einen Azure-Speicherbereich übertragen wurden. Klicken Sie auf **Aktualisieren** , um die Statusinformationen für den Upload zu aktualisieren. 
     
@@ -272,7 +273,7 @@ So ändern Sie die inhaltsspeicherorte für die Suche:
 3. Wenn Sie die inhaltsspeicherorte in der integrierten Suche ändern, klicken Sie **auf &amp; Run speichern** , um die Suche neu zu starten. 
 
 > [!NOTE]
-> Wenn Sie alle Postfachspeicher Orte oder nur bestimmte Postfächer durchsuchen, werden Daten aus anderen Office 365-Anwendungen, die in Benutzerpostfächern gespeichert sind, beim Exportieren der Suchergebnisse eingeschlossen. Diese Daten werden nicht in die geschätzten Suchergebnisse aufgenommen und stehen nicht für die Vorschau zur Verfügung. Aber es ist enthalten, wenn Sie die Suchergebnisse exportieren und herunterladen. Weitere Informationen zu den Anwendungen, die Daten im Postfach eines Benutzers speichern, finden Sie unter [in Exchange Online Postfächern gespeicherte Inhalte](what-is-stored-in-exo-mailbox.md).
+> Wenn Sie alle Postfachspeicher Orte oder nur bestimmte Postfächer durchsuchen, werden Daten aus anderen Office 365-Anwendungen, die in Benutzerpostfächern gespeichert sind, beim Exportieren der Suchergebnisse eingeschlossen. Diese Daten werden nicht in die geschätzten Suchergebnisse einbezogen und sind für die Vorschau nicht verfügbar. Aber es ist enthalten, wenn Sie die Suchergebnisse exportieren und herunterladen. Weitere Informationen zu den Anwendungen, die Daten im Postfach eines Benutzers speichern, finden Sie unter [in Exchange Online Postfächern gespeicherte Inhalte](what-is-stored-in-exo-mailbox.md).
   
 ## <a name="more-information-about-using-the-dsr-case-tool"></a>Weitere Informationen zur Verwendung des DSR-Fall Tools
 
@@ -414,7 +415,7 @@ Im folgenden finden Sie einen allgemeinen Prozess für die Suche nach Elementen,
     
   - Verwenden Sie im Feld **Schlüsselwörter** die folgende Suchabfrage: 
     
-    ```
+    ```powershell
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 
