@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633427"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704113"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Erste Schritte mit Microsoft 365 Business
 
@@ -80,9 +80,8 @@ Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können 
   
 Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen (beispielsweise Dateifreigaben und Drucker) enthält, können Sie Ihren **Azure AD-verbundenen Geräten** Zugriff auf diese Ressourcen gewähren, indem Sie die folgenden Schritte ausführen: [zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business](access-resources.md).
   
-Nachdem Sie Windows 10-PCs eingerichtet haben, können Sie [Office automatisch](auto-install-or-uninstall-office.md) auf den Geräten installieren. 
   
-## <a name="contact-support"></a>Support kontaktieren
+## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   

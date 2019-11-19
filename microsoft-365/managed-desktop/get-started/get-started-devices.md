@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627559"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697158"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Vorbereiten Ihrer Benutzer für die Verwendung von Geräten
 
 Sobald ein von Microsoft verwaltetes Desktop Gerät in den Händen Ihres Endbenutzers liegt, ist es schnell und einfach, damit begonnen zu haben. Geräte sind mit der aktuellen Version von Windows vorkonfiguriert, und Konfigurationen und apps werden in der Cloud installiert, wenn der Benutzer das Setup abgeschlossen hat. 
  
-Um dies noch einfacher zu machen, bieten wir eine Anleitung, die Ihre Benutzer durch das erst Setup führt und bei Bedarf Hilferessourcen sowohl für das Setup als auch für die spätere Verwendung bereitstellt. Sie können dieses Handbuch so anpassen, dass bestimmte Details für Ihre Organisation berücksichtigt werden. Anschließend verteilen Sie das Handbuch zusammen mit dem Gerät direkt an die Benutzer. Es gibt zwei Versionen, eine für Organisationen, die das Support System von Microsoft verwenden (die Get-Hilfe-APP), eine für Personen, die ihre eigene interne Endbenutzer Unterstützung bereitstellen.
+Um dies noch einfacher zu machen, bieten wir eine Anleitung, die Ihre Benutzer durch das erst Setup führt und bei Bedarf Hilferessourcen sowohl für das Setup als auch für die spätere Verwendung bereitstellt. Sie können dieses Handbuch so anpassen, dass bestimmte Details für Ihre Organisation berücksichtigt werden. Anschließend verteilen Sie das Handbuch zusammen mit dem Gerät direkt an die Benutzer. Es gibt zwei Versionen, eine für Organisationen, die das Support System von Microsoft verwenden (die Get-Hilfe-APP), eine für diejenigen, die Alternative Unterstützung für Ihre Benutzer bereitstellen.
 
 ## <a name="to-prepare-the-guide"></a>So bereiten Sie das Handbuch vor
 

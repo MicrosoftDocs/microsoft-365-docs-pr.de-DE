@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Office 365 Advanced Threat Protection ein, und schützen Sie vertrauliche Daten.
-ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676006"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704073"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -233,4 +233,4 @@ Weitere Informationen finden Sie unter [Office 365 ATP-sichere Links](https://go
 
 3. Sobald die Ergebnisse angezeigt werden, wählen Sie den Start neben **Microsoft InTune** aus, um ihn zu einem bevorzugten und leicht zu findenden späteren Zeitpunkt zu machen.
 
-Zusätzlich zum Admin Center können Sie InTune verwenden, um die Geräte Ihrer Organisation zu registrieren und zu verwalten. Weitere Informationen finden Sie unter [Funktionen nach Registrierungsmethode für Windows-Geräte](https://docs.microsoft.com/intune/enrollment-method-capabs) und [Registrierungsoptionen für Geräte, die von InTune verwaltet](https://docs.microsoft.com/intune/enrollment-options)werden.
+Zusätzlich zum Admin Center können Sie InTune verwenden, um die Geräte Ihrer Organisation zu registrieren und zu verwalten. Weitere Informationen finden Sie unter [Funktionen nach Registrierungsmethode für Windows-Geräte](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab) und [Registrierungsoptionen für Geräte, die von InTune verwaltet](https://docs.microsoft.com/intune/enrollment-options)werden.
