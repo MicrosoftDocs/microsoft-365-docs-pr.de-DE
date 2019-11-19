@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
-ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686233"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699685"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -145,7 +145,7 @@ Boolesche Suchoperatoren wie **and**, **or**und **Not**helfen Ihnen bei der Defi
 |**Operator**|**Verwendung**|**Beschreibung**|
 |:-----|:-----|:-----|
 |AND|Wort1 AND Wort2|Gibt Elemente zurück, die alle angegebenen Schlüsselwörter oder `property:value` Ausdrücke enthalten. Beispielsweise `from:"Ann Beebe" AND subject:northwind` würden alle von Ann Beebe gesendeten Nachrichten zurückgegeben, die das Wort Northwind in der Betreffzeile enthalten. <sup>2</sup>|
-|+|Suchbegriff1 + Wort2 + Wort3|Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage `keyword1 + keyword2` (mit einem Leerzeichen nach **+** dem Symbol) ist nicht identisch mit dem Operator * * und * *. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
+|+|Suchbegriff1 + Wort2 + Wort3|Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage `keyword1 + keyword2` (mit einem Leerzeichen nach **+** dem Symbol) ist nicht identisch mit dem **and-** Operator. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
 |OR|Wort1 OR Wort2|Gibt Elemente zurück, die einen oder mehrere der angegebenen Schlüsselwörter `property:value` oder Ausdrücke enthalten. <sup>2</sup>|
 |NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> Nicht freundlich: Chat|Schließt Elemente an, die durch ein Schlüsselwort `property:value` oder einen Ausdruck angegeben werden. Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Das dritte Beispiel schließt alle Chat Unterhaltungen aus, beispielsweise Skype for Business Unterhaltungen, die im Postfachordner für den Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
 |-|Wort1 - Wort2|Identisch mit dem Operator **NOT**. Diese Abfrage gibt also Elemente zurück, `keyword1` die Elemente enthalten, die enthalten `keyword2`und diese ausschließen.|
