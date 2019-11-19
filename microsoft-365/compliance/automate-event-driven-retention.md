@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Thema wird erläutert, wie Sie Geschäftsprozessabläufe über Ereignisse mithilfe der Microsoft 365-REST-API einrichten können, um die Aufbewahrung zu automatisieren.
-ms.openlocfilehash: 1b687ab89e0d29910c9c0781540b6f9113e53ed6
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 5977b79c47166fdafc76dfdb122b4fd37b63a875
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342968"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708110"
 ---
 # <a name="automate-event-based-retention"></a>Automatisieren der ereignisbasierten Aufbewahrung
 
@@ -85,7 +85,7 @@ Der Compliance-Administrator geht wie folgt vor, um ein Repository für Datensä
         
     - Er erstellt eine SharePoint-Bibliothek: er legt eine ereignisbasierte Bezeichnung auf Bibliotheksebene fest. Weitere Informationen finden Sie unter [Anwenden einer Aufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - Er richtet einen Dokumentsatz in SharePoint ein. Weitere Informationen finden Sie unter [Einführung in Dokumentenmappen](https://support.office.com/de-DE/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
+    - Er richtet einen Dokumentsatz in SharePoint ein. Weitere Informationen finden Sie unter [Einführung in Dokumentenmappen](https://support.office.com/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
       
 1. Er weist jeder Dokumentenmappe eine Asset-ID zu (Asset-ID ist ein Produktname oder eine Code, der von dem Unternehmen verwendet wird, eine Mitarbeiternummer kann zum Beispiel eine Asset-ID sein). (Bei Zuweisung einer Asset-ID zu einem Ordner erben alle Elemente in diesem Ordner automatisch die gleiche Asset-ID. Das bedeutet, dass der Aufbewahrungszeitraum für alle Elemente durch dasselbe Ereignis ausgelöst wird.)
 
@@ -103,7 +103,7 @@ Es gibt zwei Optionen für die Verwendung der REST-API:
 
 - **PowerShell oder ein HTTP-Client zum Aufrufen der REST-API** Sie können PowerShell (Version 6 oder höher) zum Aufrufen der Microsoft 365-REST-API verwenden, um Ereignisse zu erstellen. 
 
-Bei einer REST-API handelt es sich um einen Dienstendpunkt, der Sätze von HTTP-Vorgängen (Methoden) unterstützt, die den Zugriff auf die Ressourcen des Diensts erstellen/abrufen/aktualisieren/löschen. Weitere Informationen finden Sie unter [Komponenten der REST-API-Anforderung/-Antwort](https://docs.microsoft.com/de-DE/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) . In diesem Fall können mit der Microsoft 365-REST-API über die POST- und GET-Vorgänge (Methoden) Ereignisse erstellt und abgerufen werden.
+Bei einer REST-API handelt es sich um einen Dienstendpunkt, der Sätze von HTTP-Vorgängen (Methoden) unterstützt, die den Zugriff auf die Ressourcen des Diensts erstellen/abrufen/aktualisieren/löschen. Weitere Informationen finden Sie unter [Komponenten der REST-API-Anforderung/-Antwort](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) . In diesem Fall können mit der Microsoft 365-REST-API über die POST- und GET-Vorgänge (Methoden) Ereignisse erstellt und abgerufen werden.
 
 ## <a name="example-scenarios"></a>Beispielszenarien
 
@@ -181,10 +181,10 @@ Beispielcode zum Aufrufen der REST-API
 <tr class="odd">
 <td>Body</td>
 <td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>
@@ -372,10 +372,10 @@ Schritt 2: Führen Sie das folgende Skript aus.
 <p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>
 <p>Write-Host &quot;Start to create an event with name: $EventName&quot;</p>
 <p>$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>

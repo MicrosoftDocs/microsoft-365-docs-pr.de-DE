@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Office 365 ausführen.'
-ms.openlocfilehash: a11bd934cf45a8f90ae7f558814a1b6d9e839914
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8596108902cadd82cbab4bd128d457858b5c63c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082690"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38710056"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Verwenden des Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -127,11 +127,11 @@ Jetzt können Sie Tool "AzCopy.exe" verwenden, um PST-Dateien in Office 365 hoch
     
 3. Führen Sie den folgenden Befehl aus, um die PST-Dateien in Office365 hochzuladen.
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
- 
+
     > [!IMPORTANT] 
     > Sie müssen im vorherigen Befehl ein Verzeichnis als Quellspeicherort angeben. Sie können keine einzelne PST-Datei angeben. Alle PST-Dateien im Quellverzeichnis werden hochgeladen.
  
@@ -147,9 +147,8 @@ Jetzt können Sie Tool "AzCopy.exe" verwenden, um PST-Dateien in Office 365 hoch
    
 Nachfolgend sehen Sie ein Beispiel der Syntax für das Tool "AzCopy.exe", in dem die tatsächlichen Werte für jeden Parameter verwendet werden:
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 Nachdem Sie den Befehl ausgeführt haben, werden Statusmeldungen angezeigt, die den Fortschritt des Hochladens der PST-Dateien anzeigen. Eine endgültige Statusmeldung zeigt die Gesamtzahl der Dateien an, die erfolgreich hochgeladen wurden.
@@ -200,8 +199,7 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Office 
     
 2. Öffnen oder speichern Sie die CSV-Datei auf Ihrem lokalen Computer. Das folgende Beispiel zeigt eine abgeschlossene PST-Importzuordnungsdatei (in Editor geöffnet). Es ist wesentlich einfacher, Microsoft Excel zum Bearbeiten der CSV-Datei zu verwenden.
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -214,6 +212,7 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Office 
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     Die erste Zeile oder Kopfzeile der CSV-Datei enthält die Parameter, die vom PST-Importdienst verwendet werden, um die PST-Dateien in Benutzerpostfächer zu importieren. Die einzelnen Parameternamen werden jeweils durch ein Komma getrennt. Jede Zeile unter der Kopfzeile stellt die Parameterwerte für das Importieren einer PST-Datei in ein bestimmtes Postfach dar. Sie benötigen eine Zeile für jede PST-Datei, die Sie in ein Benutzerpostfach importieren möchten. Vergessen Sie nicht, die Platzhalterdaten in der Zuordnungsdatei durch die tatsächlichen Werte zu ersetzen.
 
    **Hinweis:** Ändern Sie nichts in der Kopfzeile, einschließlich der SharePoint-Parameter; diese werden während des PST-Importvorgangs ignoriert. 
@@ -354,7 +353,7 @@ Es folgen eine Darstellung und eine Beschreibung des Netzwerkuploadprozesses, in
   
 - Hier finden Sie ein Beispiel für die SAS-URL (Shared Access Signature), den Sie in Schritt 1 abgerufen haben. Dieses Beispiel enthält auch die Syntax für den Befehl, den Sie im Tool "AzCopy.exe" zum Hochladen von PST-Dateien in Office 365 ausführen. Schützen Sie diese SAS-URL unbedingt genauso wie Kennwörter und andere sicherheitsbezogene Informationen.
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung.
-ms.openlocfilehash: 3d4936a03ab9b2e5d766f514472ea862009da553
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080910"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708105"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -82,7 +82,7 @@ Im folgenden Beispiel definiert die XML-Datei das Schema für eine Datenbank mit
 (Sie können das Beispiel kopieren, ändern und verwenden.)
 
  ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records" version="1">
             <Field name="PatientID" searchable="true" />
             <Field name="MRN" searchable="true" />
@@ -186,7 +186,7 @@ Sie werden zu folgenden Bestätigungen aufgefordert:
 
 Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei und die edm.xml-Datei korrekt referenzieren. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
 
-- **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](https://docs.microsoft.com/de-DE/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
+- **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
 
 - **Datenspeicher**: Dieses Feld gibt den zu verwendenden EDM-Nachschlage-Datenspeicher an. Sie geben einen Datenquellennamen eines konfigurierten EDM-Schemas an.
 
@@ -201,7 +201,7 @@ Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei un
   - Beschreibungen „Name“ und „Bearbeiten des Schemas“: Passen Sie nach Bedarf an.
 
 ```xml
-<RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
@@ -488,7 +488,7 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/de-DE/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 

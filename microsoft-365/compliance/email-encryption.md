@@ -15,18 +15,18 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: Vergleichen Sie die Verschlüsselungsoptionen in Office 365, einschließlich Office-Nachrichtenverschlüsselung (Office Message Encryption, OME), S/MIME und Information Rights Management (IRM), und erfahren Sie mehr über Transport Layer Security (TLS).
-ms.openlocfilehash: 79a7ddd13e437255fa671e949236c879b235c2ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70c22f9627c804c201cb23b7b3c38a4f6a349ece
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081515"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708101"
 ---
 # <a name="email-encryption-in-office-365"></a>E-Mail-Verschlüsselung in Office 365
 
 In diesem Artikel werden die Verschlüsselungsoptionen in Office 365, einschließlich Office-Nachrichtenverschlüsselung (Office Message Encryption, OME), S/MIME und Information Rights Management (IRM) verglichen und Transport Layer Security (TLS) eingeführt.
   
-Office 365 bietet mehrere Verschlüsselungsoptionen, die Sie bei der Erfüllung Ihrer geschäftlichen Anforderungen hinsichtlich E-Mail-Sicherheit unterstützen. In diesem Artikel werden drei Methoden zum Verschlüsseln von E-Mail in Office 365 präsentiert. Weitere Informationen zu allen Sicherheitsfeatures in Office 365 erhalten Sie im [Office 365 Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=282470). In diesem Artikel werden die drei Verschlüsselungstypen vorgestellt, die Office 365-Administratoren zum Sichern von E-Mails in Office 365 zur Verfügung stehen.
+Office 365 bietet mehrere Verschlüsselungsoptionen, die Sie bei der Erfüllung Ihrer geschäftlichen Anforderungen hinsichtlich E-Mail-Sicherheit unterstützen. In diesem Artikel werden drei Methoden zum Verschlüsseln von E-Mail in Office 365 präsentiert. Weitere Informationen zu allen Sicherheitsfeatures in Office 365 erhalten Sie im [Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=282470). In diesem Artikel werden die drei Verschlüsselungstypen vorgestellt, die Office 365-Administratoren zum Sichern von E-Mails in Office 365 zur Verfügung stehen.
   
 - Office-Nachrichtenverschlüsselung (Office Message Encryption, OME)
 
@@ -66,7 +66,7 @@ In diesem Video sehen Sie eine Einführung in die [Verschlüsselung in Office 36
 
 ## <a name="what-encryption-options-are-available-for-my-office-365-subscription"></a>Welche Verschlüsselungsoptionen sind für mein Office 365-Abonnement verfügbar?
 
-Informationen zu den E-Mail-Verschlüsselungsoptionen für Ihr Office 365-Abonnement finden Sie unter [Exchange Online-Dienstbeschreibung](https://technet.microsoft.com/de-DE/library/exchange-online-service-description.aspx). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfeatures:
+Informationen zu den E-Mail-Verschlüsselungsoptionen für Ihr Office 365-Abonnement finden Sie unter [Exchange Online-Dienstbeschreibung](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfeatures:
   
 - Azure RMS, einschließlich IRM-Funktionen und OME
 
@@ -92,7 +92,7 @@ Weitere Informationen zu den E-Mail-Verschlüsselungsoptionen in diesem Artikel 
   
 **IRM**
   
-[Verwaltung von Informationsrechten in Exchange Online](https://technet.microsoft.com/de-DE/library/jj983436%28v=exchg.150%29.aspx)
+[Verwaltung von Informationsrechten in Exchange Online](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
   
 [Was ist Azure Rights Management?](https://technet.microsoft.com/library/jj585026)
   
@@ -106,4 +106,4 @@ Weitere Informationen zu den E-Mail-Verschlüsselungsoptionen in diesem Artikel 
   
 **TLS**
   
-[Konfigurieren des benutzerdefinierten Nachrichtenflusses mit Connectors in Office 365](https://technet.microsoft.com/de-DE/library/jj723138%28v=exchg.150%29.aspx)
+[Konfigurieren des benutzerdefinierten Nachrichtenflusses mit Connectors in Office 365](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)

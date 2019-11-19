@@ -1,24 +1,26 @@
 ---
 title: Anzeigen der Bezeichnungsaktivität für Dokumente
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
-ms.openlocfilehash: 6b68c82e364432107d616c5184959cd879cdcb9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082060"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38710054"
 ---
 # <a name="view-label-activity-for-documents"></a>Anzeigen der Bezeichnungsaktivität für Dokumente
 
@@ -36,7 +38,7 @@ Mit dem Bezeichnungsaktivitäten-Explorer können Sie beispielsweise folgende Au
     
 - Anzeigen der Bezeichnungsaktivitäten für Ordner sowie einzelne Dokumente. In Kürze wird die Möglichkeit verfügbar sein, anzuzeigen, wie viele Dateien in diesem Ordner durch das Anwenden einer Bezeichnung auf den Ordner eine Bezeichnung erhalten haben.
     
-Den Bezeichnungsaktivitäten-Explorer finden Sie im &amp; Security Compliance Center > **Datenkontrolle** > ** Bezeichnungsaktivitäten-Explorer**.
+Den Bezeichnungsaktivitäten-Explorer finden Sie im Security &amp;Compliance Center > **Informationskontrolle** > ** Bezeichnungsaktivitäten-Explorer**.
   
 Beachten Sie, dass für den Bezeichnungsaktivitäten-Explorer ein Office 365 Enterprise E5-Abonnement erforderlich ist.
   

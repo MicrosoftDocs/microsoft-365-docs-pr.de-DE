@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten Regel enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird.
-ms.openlocfilehash: 99a65e7862eb1657c73c77b526e3b82b7595d248
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5fbc0e9ffba0237462062e19edb9ca0458675b04
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080830"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708104"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -36,7 +36,7 @@ Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
 ```    
-2. Speichern Sie die Regeln Ihrer Organisation in einer Variablen, indem Sie Folgendes eingeben.Durch das Speichern in einer Variablen kann später problemlos auf die Daten in einem Format zugegriffen werden, das sich für Remote-PowerShell-Befehle eignet.
+2. Speichern Sie die Regeln Ihrer Organisation in einer Variablen, indem Sie Folgendes eingeben. Durch das Speichern in einer Variablen kann später problemlos auf die Daten in einem Format zugegriffen werden, das sich für Remote-PowerShell-Befehle eignet.
 
 ```powershell    
 $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
@@ -53,7 +53,7 @@ Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCol
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Suchen der Regel, die in der XML-Datei geändert werden soll
 
-Mit den obigen Cmdlets wurde die gesamte *Regelsammlung* exportiert, die die Standardregeln umfasst. Anschließend müssen Sie speziell nach der Regel für die Kreditkartennummer suchen, die Sie ändern möchten. 
+Mit den vorstehenden Cmdlets wurde die gesamte *Regelsammlung* exportiert, die die Standardregeln umfasst. Anschließend müssen Sie speziell nach der Regel für die Kreditkartennummer suchen, die Sie ändern möchten. 
   
 1. Verwenden Sie einen Texteditor, um die im vorherigen Abschnitt exportierte XML-Datei zu öffnen.
     
@@ -85,7 +85,7 @@ Alle XML-Regeldefinitionen werden anhand der folgenden allgemeinen Vorlage erste
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id=". . ." /> 
@@ -114,7 +114,7 @@ Sie verfügen nun über eine XML-Datei, die der Folgenden ähnelt. Da Regelpaket
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />

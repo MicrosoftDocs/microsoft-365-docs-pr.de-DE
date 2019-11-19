@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: 77da4ec44e31fae8db2c37ebc39233f76c5e4dd3
-ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
+ms.openlocfilehash: 5c7d267b37f024d4defa34b4dfbeff3ba9255ac5
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37317607"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38710048"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien Aufbewahrungsbezeichnungen und Verhindern von Datenverlust
 

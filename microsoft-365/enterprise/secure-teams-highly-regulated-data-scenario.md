@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie ein sicheres Team zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627499"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699765"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams für streng regulierte Daten
 
@@ -46,9 +46,9 @@ Hier sehen Sie die resultierende Konfiguration mit einer Vertraulichkeitsbezeich
 
 <a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios finden Sie auf dem [Poster für Teams für streng regulierte Daten](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
-[![Teams für streng regulierte Daten](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![Poster für Teams für streng regulierte Daten](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-Sie können dieses Poster herunterladen als [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Phase 1: Konfigurieren eines Teams für stark regulierte Daten
 
@@ -213,6 +213,10 @@ In den Wochen nach der Schulung:
   Sie können sehen, welchen Dateien eine Bezeichnung zugeordnet ist, indem Sie einen Ordner in SharePoint anzeigen und über die Option **Spalten ein-/ausblenden** > **Spalte hinzufügen** die Spalte **Vertraulichkeit** hinzufügen.
 
 Ihre Benutzer bei Bedarf erneut schulen.
+
+## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Verwendung eines sicheren Teams für ein streng geheimes Projekt in der Contoso Corporation
+
+Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern. Erfahren Sie, wie Contoso die Einführung eines [sicheren Teams](contoso-team-for-top-secret-project.md) für ein streng geheimes Projekt zur Entwicklung und Markteinführung einer neuen Reihe von Produkten und Dienstleistungen konfiguriert und vorangetrieben hat. 
 
 ## <a name="see-also"></a>Siehe auch
 

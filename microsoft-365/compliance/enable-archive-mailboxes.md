@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Im Security & Compliance Center in Office 365 können Sie Archivpostfächer aktivieren, um den Anforderungen Ihrer Organisation hinsichtlich Nachrichtenarchivierung, eDiscovery und Aufbewahrung gerecht zu werden.
-ms.openlocfilehash: 5cf399b311b6c342aff2d84477edaa945f8e0cd4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea6448c4d47eb89d16266644e5a4ab06f774e0da
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081504"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38708120"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von Archivpostfächern im Security & Compliance Center
   
@@ -101,27 +101,27 @@ Nachdem Sie eine Verbindung mit Exchange Online hergestellt haben, können Sie d
 
 Führen Sie den folgenden Befehl aus, um das Archivpostfach für einen einzelnen Benutzer zu aktivieren.
     
-  ```
+  ```powershell
   Enable-Mailbox -Identity <username> -Archive
   ```
 
 Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer in Ihrer Organisation zu aktivieren, deren Archivpostfach aktuell nicht aktiviert ist.
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
-  
+
 ### <a name="disable-archive-mailboxes"></a>Deaktivieren von Archivpostfächern
 
 Führen Sie den folgenden Befehl aus, um das Archivpostfach für einen einzelnen Benutzer zu deaktivieren.
     
-  ```
+  ```powershell
   Disable-Mailbox -Identity <username> -Archive
   ```
 
 Führen Sie den folgenden Befehl aus, um die Archivpostfächer aller Benutzer in Ihrer Organisation zu deaktivieren (deren Archivpostfach aktuell aktiviert ist).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 

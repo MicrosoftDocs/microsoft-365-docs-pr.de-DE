@@ -11,17 +11,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Verwenden von DLP-Richtlinien zum Schutz personenbezogener Daten in Office 365.
-ms.openlocfilehash: f6d6d69f7c776b9b49ea360367117a9ce86293b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081134"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708115"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Anwenden des Schutzes auf personenbezogene Daten in Office 365
 
@@ -41,7 +42,7 @@ Mit DLP können Sie Folgendes:
 
 -   DLP-Berichte mit Inhalten anzeigen, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen
 
-Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/de-DE/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
 ![Optionen zum Erstellen einer DLP-Richtlinie](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -118,7 +119,7 @@ Beschreibung: Anzeigen von Richtlinientipps für Mitarbeiter, Benachrichtigen vo
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Steuerung</strong></th>
+<th align="left"><strong>Steuerelement</strong></th>
 <th align="left"><strong>Einstellungen</strong></th>
 </tr>
 </thead>
@@ -142,7 +143,7 @@ Beschreibung: Anzeigen von Richtlinientipps für Mitarbeiter, Benachrichtigen vo
 <tr class="odd">
 <td align="left">Benutzer benachrichtigen, wenn Inhalte den Richtlinieneinstellungen entsprechen</td>
 <td align="left"><p>Aktivieren Sie dieses Kontrollkästchen („Richtlinientipps für Benutzer anzeigen und eine E-Mail-Benachrichtigung senden“.)</p>
-<p>Klicken Sie auf „Tipp und E-Mail anpassen“, und aktualisieren Sie diese für Ihre Umgebung. Die standardmäßigen Benachrichtigungen finden Sie in dem Artikel: <a href="https://support.office.com/de-DE/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien</a>.</p></td>
+<p>Klicken Sie auf „Tipp und E-Mail anpassen“, und aktualisieren Sie diese für Ihre Umgebung. Die standardmäßigen Benachrichtigungen finden Sie in dem Artikel: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Erkennen, wenn eine bestimmte Menge personenbezogener Informationen auf einmal freigegeben wird</td>
@@ -177,7 +178,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Info
 <thead>
 <tr class="header">
 <th align="left"><strong>Umfang des Schutzes</strong></th>
-<th align="left"><strong>Capabilities</strong></th>
+<th align="left"><strong>Funktionen</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -300,7 +301,7 @@ Die folgende Tabelle enthält die Steuerelemente, die Sie konfigurieren können.
 
 Weitere Informationen:
 
--   [Verwalten der externen Freigabe für Ihre SharePoint-Online-Umgebung](https://support.office.com/de-DE/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Verwalten der externen Freigabe für Ihre SharePoint-Online-Umgebung](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [Freigeben von Websites oder Dokumenten für Personen außerhalb Ihrer Organisation](https://support.office.com/de-DE/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -351,7 +352,7 @@ Für Gerätezugriffsrichtlinien für SharePoint und OneDrive for Business sind j
 </tbody>
 </table>
 
-Weitere Informationen: [SharePoint Online Admin Center: Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/de-DE/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+Weitere Informationen: [SharePoint Online Admin Center: Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Dienstzugriffsschutz für Identitäten und Geräte
 
@@ -359,9 +360,9 @@ Microsoft empfiehlt, den Schutz für Identitäten und Geräte zu konfigurieren, 
 
 Zugriffsschutz für Identitäten und Geräte bietet einen Basisschutz, um sicherzustellen, dass Identitäten nicht kompromittiert werden, Geräte sicher und Unternehmensdaten, auf die auf Geräten zugegriffen wird, isoliert und geschützt sind.
 
-Empfehlungen zu den Ansatzpunkten und Konfigurationsanweisungen finden Sie unter [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](https://docs.microsoft.com/de-DE/microsoft-365-enterprise/microsoft-security-guidance).
+Empfehlungen zu den Ansatzpunkten und Konfigurationsanweisungen finden Sie unter [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-Informationen zu Hybrididentitätsumgebungen mit AD FS finden Sie unter [Empfohlene Sicherheitsrichtlinien und Konfigurationen](https://docs.microsoft.com/de-DE/microsoft-365-enterprise/microsoft-security-guidance).
+Informationen zu Hybrididentitätsumgebungen mit AD FS finden Sie unter [Empfohlene Sicherheitsrichtlinien und Konfigurationen](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
 Die folgende Abbildung beinhaltet die Beziehungen zwischen Clouddiensten (SaaS, PaaS), Kontotypen (Mandantendomänenkonten und B2B-Konten) und Funktionen für den Dienstzugriff. Es ist wichtig zu wissen, welche Funktionen mit B2B-Konten verwendet werden können.
 

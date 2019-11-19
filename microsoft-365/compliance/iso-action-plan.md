@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5737cac2803c1ba74bc569e5e1206251bd1c8367
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: d68edbb64ae1c7b78661e765f8d270ee60fc271b
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431726"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "38710040"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>ISO 27001-Aktionsplan für Microsoft 365: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und danach
 
@@ -26,8 +26,8 @@ Die ISO/IEC 27001 ist die internationale Norm für die Implementierung eines In
 
 In diesem Artikel finden Sie einen nach Priorität aufgeschlüsselten Aktionsplan, den Sie abarbeiten können, um die Anforderungen der ISO/IEC 27001 zu erfüllen. Dieser Aktionsplan wurde in Zusammenarbeit mit Protiviti entwickelt, einem auf gesetzliche Compliance spezialisierten Microsoft-Partner. Weitere Informationen zur Nutzung dieses Aktionsplans erhalten Sie auf Microsoft Ignite in der Session [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), präsentiert von Maithili Dandige (Microsoft) und Antonio Maio (Protiviti).
 
-
 ## <a name="action-plan-outcomes"></a>Ergebnisse des Aktionsplans
+
 Unsere Empfehlungen sind in drei Phasen gegliedert und in logischer Reihenfolge angeordnet. Erreicht werden sollen die nachfolgend beschriebenen Ergebnisse: 
 
 |||
@@ -37,10 +37,8 @@ Unsere Empfehlungen sind in drei Phasen gegliedert und in logischer Reihenfolge 
 |90 Tage|**Steuerung des Zugriffs auf die Umgebung und Schutz der Unternehmensinformationen und Unternehmensressourcen gemäß der definierten Standardvorgehensweisen (SOPs) mithilfe der Microsoft 365-Sicherheitsfunktionen**<br>•    Schutz von Administratorkonten und Endbenutzerkonten durch die Implementierung von Identitäts- und Authentifizierungslösungen wie mehrstufiger Authentifizierung und moderner Authentifizierung.<br>• Implementierung von Richtlinien für sichere Kennwörter zwecks Verwaltung und Schutz von Benutzerkontenanmeldeinformationen<br>• Konfiguration und Implementierung von Funktionen für Nachrichtenverschlüsselung, damit Endbenutzer beim Senden vertraulicher Daten per E-Mail die Standardvorgehensweisen (SOPs) des Unternehmens einhalten<br>• Schutz vor Schadcode und Implementierung von Verfahren zur Vermeidung von und Reaktion auf Datenschutzverletzungen<br>•    Konfiguration von Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) zwecks Identifizierung und Schutz von vertraulichen Daten und Steuerung des Zugriffs auf solche Daten.<br>•    Gewährleistung der Einhaltung von Unternehmensrichtlinien bei der Speicherung von vertraulichen Daten sowie dem Zugriff auf solche Daten.<br>• Absicherung gegen die häufigsten Angriffsvektoren wie Phishing-E-Mails und Office-Dokumente mit gefährlichen Links und Anlagen
 |Nach 90 Tagen|**Implementierung fortlaufender Governanceprogramme für personenbezogene Daten mithilfe der erweiterten Data-Governance-Tools und Informationssicherheitsfunktionen in Microsoft 365 **<br>• Automatische Identifizierung persönlicher Informationen in Dokumenten und E-Mails<br>•    Unternehmensweiter Schutz von auf Mobilgeräten gespeicherten und genutzten Daten sowie Gewährleistung, dass für den Zugriff auf solche Daten nur konforme Geräte verwendet werden.<br><br>**Überwachung auf fortlaufende Compliance in Microsoft 365 und anderen Cloudanwendungen**<br>•    Prüfung auf Einhaltung der Standardvorgehensweisen (SOPs) durch regelmäßige Bewertungen der Informationssicherheitsrichtlinien des Unternehmens und ihrer Implementierung mit dem Compliance-Manager von Microsoft.<br>• Fortlaufende Überprüfung und Überwachung des Informationssicherheit-Managementsystems<br>•    Kontrolle und regelmäßige Überprüfung aller Benutzer und Gruppen mit hohen Berechtigungsstufen (d. h. privilegierte Benutzer oder Administratoren).<br>• Bereitstellung und Konfiguration der Microsoft 365-Funktionen für die Absicherung privilegierter Identitäten und die strikte Kontrolle von privilegiertem Zugriff.<br>•    Durchsuchung der Office 365-Überwachungsprotokolle im Rahmen der Standardvorgehensweisen (SOPs) zwecks Überprüfung von Änderungen an den Konfigurationseinstellungen von Mandanten, Erhöhung von Endbenutzerrechten und riskanten Benutzeraktivitäten.<br>• Überwachung der Nutzung von Cloudanwendungen im Unternehmen und Implementierung von erweiterten Benachrichtigungsrichtlinien<br>• Nachverfolgung riskanter Aktivitäten zwecks Identifizierung potenziell böswilliger Administratoren, Untersuchung von Datenschutzverletzungen oder Überprüfung der Einhaltung von Complianceanforderungen
 
-
-
-
 ## <a name="30-days--powerful-quick-wins"></a>30 Tage: schnell umsetzbare Maßnahmen
+
 Die folgenden Maßnahmen können schnell umgesetzt werden und führen lediglich zu geringen Beeinträchtigungen für die Benutzer.
 
 |||
@@ -51,10 +49,8 @@ Die folgenden Maßnahmen können schnell umgesetzt werden und führen lediglich 
 |Schutz von Datensätzen mit Informationssicherheitsrelevanz vor Verlust, Löschung, Änderung und nicht autorisierten Zugriffen durch Erstellung von Überwachungs- und Verantwortlichkeitsrichtlinien im Rahmen der Standardvorgehensweisen (SOPs).|•  Aktivieren der [Office 365-Überwachungsprotokollierung](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) und der [Postfachüberwachung](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (für alle Exchange-Postfächer) zur Überwachung von Office 365 auf potenziell böswillige Aktivitäten sowie als Grundlage für die forensische Analyse von Datenschutzverletzungen.<br>• Regelmäßige Durchsuchung der Überwachungsprotokolle Ihrer Office 365-Mandanten zwecks Überprüfung etwaiger Änderungen an den Konfigurationseinstellungen der Mandanten<br>• Implementierung von [Office 365-Benachrichtigungsrichtlinien](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) im Microsoft 365 Security & Compliance Center zur Benachrichtigung über vertrauliche Aktivitäten wie Rechteerweiterungen bei Benutzerkonten.<br>• Verwendung der [Referenz zur Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) zur Integration mit einem SIEM-Tool (Security Information and Event Management) für die langfristige Speicherung von Office 365-Überwachungsprotokolldaten.
 |Definition von Administratorrollen und Sicherheitsrollen im Unternehmen sowie von angemessenen Richtlinien für Funktionstrennung|• Verwendung der [Office 365-Administratorrollen](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) zur Implementierung von Funktionstrennung hinsichtlich Administrationsaufgaben Hinweis: Viele Administratorrollen in Office 365 haben ein Pendant in Exchange Online, SharePoint Online und Skype for Business Online.<br>• Segmentierung von Berechtigungen, damit kein einzelner Administrator mehr Zugriffsrechte hat als erforderlich|
 
+## <a name="90-days--enhanced-protections"></a>90 Tage: erweiterte Schutzmaßnahmen
 
-
-
-## <a name="90-days--enhanced-protections"></a>90 Tage: erweiterte Schutzmaßnahmen 
 Die folgenden Maßnahmen erfordern etwas mehr Zeit für Planung und Implementierung, stärken die Sicherheit Ihres Unternehmens jedoch erheblich. 
 
 |||
@@ -63,8 +59,8 @@ Die folgenden Maßnahmen erfordern etwas mehr Zeit für Planung und Implementier
 |Steuerung des Zugriffs auf die Umgebung und Schutz der Unternehmensinformationen und Unternehmensressourcen gemäß der definierten Standardvorgehensweisen (SOPs) mithilfe der Microsoft 365-Sicherheitsfunktionen|• Schutz von Administratorkonten und Endbenutzerkonten durch Implementierung von [Identitätsrichtlinien und Gerätezugriffsrichtlinien](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations), einschließlich der Aktivierung von mehrstufiger Authentifizierung für alle Benutzerkonten und moderner Authentifizierung für alle Apps.<br>•   Implementierung von [Richtlinien für sichere Kennwörter](https://www.microsoft.com/research/publication/password-guidance/) zwecks Verwaltung und Schutz von Anmeldeinformationen für Benutzerkonten.<br>• Einrichtung der [Office 365-Nachrichtenverschlüsselung (OME)](https://support.office.com/article/office-365-message-encryption-f87cb016-7876-4317-ae3c-9169b311ff8a), damit Endbenutzer beim Senden vertraulicher Daten per E-Mail die Standardvorgehensweisen (SOPs) des Unternehmens einhalten<br>• Bereitstellung von [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) auf allen Desktops zum Schutz vor Schadcode sowie zur Verhinderung von und Reaktion auf Datenschutzverletzungen<br>•  Konfiguration, Test und Bereitstellung von [Office 365-Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) zwecks Identifizierung, Überwachung und [automatischem Schutz](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365) von mehr als 80 gängigen Typen vertraulicher Daten in Dokumenten und E-Mails, einschließlich Finanzinformationen, medizinischen Informationen und personenbezogenen Informationen.<br>Automatische Information aller E-Mail-Absender, dass sie möglicherweise eine Ihrer Richtlinien verletzen. Dies ist durch Konfigurieren von [Richtlinientipps](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) sogar möglich, bevor die Absender eine Richtlinien verletzende Nachricht senden. Richtlinientipps können so konfiguriert werden, dass dem Ersteller einer Nachricht in Outlook, Outlook im Web und OWA für Geräte während des Verfassens ein Hinweis mit Informationen über eine mögliche Richtlinienverletzung angezeigt wird.<br>• Implementierung von [Office 365 Advanced Threat Protection (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653) zur Absicherung gegen die häufigsten Angriffsvektoren wie Phishing-E-Mails und Office-Dokumente mit gefährlichen Links und Anlagen.|
 
 
-
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>Nach 90 Tagen: fortlaufende Sicherheit, Data Governance und Berichterstellung
+
 Schützen Sie personenbezogene Daten am Speicherort und während der Übertragung, erkennen Sie Datenschutzverletzungen und reagieren Sie auf sie, und ermöglichen Sie regelmäßige Tests Ihrer Sicherheitsmaßnahmen: Nachfolgend finden Sie wichtige Sicherheitsmaßnahmen, die auf den vorangegangenen Maßnahmen aufbauen.  
 
 
@@ -74,16 +70,7 @@ Schützen Sie personenbezogene Daten am Speicherort und während der Übertragun
 |Implementierung fortlaufender Governanceprogramme für personenbezogene Daten mithilfe der erweiterten Data-Governance-Tools und Informationssicherheitsfunktionen in Microsoft 365|• Nutzung von [Office 365 Advanced Data Governance](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365) zur Identifizierung persönlicher Informationen in Dokumenten und E-Mails durch automatische Anwendung von Office 365-Bezeichnungen<br>• Verwendung von [Microsoft Intune](https://docs.microsoft.com/intune/) für den unternehmensweiten Schutz von auf Mobilgeräten gespeicherten und genutzten Daten sowie die Gewährleistung, dass für den Zugriff auf solche Daten nur konforme Unternehmensgeräte verwendet werden.|
 |Überwachung auf fortlaufende Compliance in Microsoft 365 und anderen Cloudanwendungen|• Prüfung auf Einhaltung der Standardvorgehensweisen (SOPs) durch regelmäßige ISO 27001:2013-Bewertungen der Informationssicherheitsrichtlinien des Unternehmens und ihrer Implementierung mit dem [Compliance-Manager von Microsoft](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)<br>• Fortlaufende Überprüfung und Überwachung des Informationssicherheit-Managementsystems<br>•   Verwenden von [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) zur Kontrolle und regelmäßigen Überprüfung aller Benutzer und Gruppen mit hohen Berechtigungsstufen (d. h. privilegierte Benutzer oder Administratoren).<br>•   Bereitstellen und Konfigurieren des [Privileged Access Management in Office 365](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365) zur Bereitstellung einer präzise steuerbaren Zugriffskontrolle über privilegierte Administratoraufgaben in Office 365.  Sobald es aktiviert ist, müssen Benutzer just-in-time-Zugriff anfordern, um Aufgaben mit erhöhten und privilegierten Rechten auszuführen. Dabei kommt ein Genehmigungsworkflow zum Einsatz, der gleichermaßen genau abgesteckt sowie zeitkritisch ist.<br>•  Durchsuchung der Office 365-Überwachungsprotokolle im Rahmen der Standardvorgehensweisen (SOPs) zwecks Überprüfung von Änderungen an den Konfigurationseinstellungen von Mandanten, Erhöhung von Endbenutzerrechten und riskanten Benutzeraktivitäten.<br>• Überwachung auf [Postfachzugriffe durch Nichtbesitzer](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports) zwecks Identifizierung potenzieller Informationslecks und proaktiver Überprüfung aller Exchange Online-Postfächer auf Zugriffe durch Nichtbesitzer<br>• Verwendung von [Office 365-Benachrichtigungsrichtlinien, Berichten über die Verhinderung von Datenverlust und Microsoft Cloud App Security](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data) zur Überwachung der Nutzung von Cloudanwendungen in Ihrem Unternehmen sowie zur Implementierung von erweiterten Benachrichtigungsrichtlinien auf Basis von Heuristik und Benutzeraktivitäten<br>• Verwendung von [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) zur automatischen Nachverfolgung riskanter Aktivitäten, Identifizierung potenziell böswilliger Administratoren, Untersuchung von Datenschutzverletzungen oder Überprüfung der Einhaltung von Complianceanforderungen|
 
-
-
-
-
-
-
 ## <a name="learn-more"></a>Weitere Informationen
 
-Microsoft Trust Center: [ISO/IEC 27001: 2013 Information Security Management-Standards](https://www.microsoft.com/TrustCenter/Compliance/ISO-IEC-27001)
-
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
+- Microsoft Trust Center: [ISO/IEC 27001: 2013 Information Security Management-Standards](offering-iso-27001.md)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

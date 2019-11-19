@@ -1,7 +1,7 @@
 ---
 title: Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen erstellt haben, können Sie überprüfen, wie sie mandantenübergreifend verwendet werden. Mithilfe der Analyse der Bezeichnungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center können Sie schnell sehen, welche Bezeichnungen am häufigsten verwendet werden und wo sie angewendet werden.
-ms.openlocfilehash: 297987d420b5ed05bf4fdeb86513bc7c4ddec609
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081529"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38710052"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
 
@@ -38,9 +38,9 @@ Sie finden die Analyse der Bezeichnungen im [Microsoft 365 Compliance Center](ht
 
 ## <a name="sensitivity-label-usage"></a>Vertraulichkeitsbezeichnungsnutzung
 
-Die Daten zur Verwendung der Vertraulichkeitsbezeichnung werden aus den Berichten für Azure Information Protection abgerufen. Weitere Informationen hierzu finden Sie unter [Zentrale Berichterstellung für Azure Information Protection](https://docs.microsoft.com/de-DE/azure/information-protection/reports-aip).
+Die Daten zur Verwendung der Vertraulichkeitsbezeichnung werden aus den Berichten für Azure Information Protection abgerufen. Weitere Informationen hierzu finden Sie unter [Zentrale Berichterstellung für Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Beachten Sie, dass für die Azure Information Protection-Berichte [Voraussetzungen](https://docs.microsoft.com/de-DE/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics) gelten, die auch für die Analyse der Bezeichnungen im Hinblick auf Vertraulichkeitsbezeichnungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center gelten. Sie benötigen z. B. ein Azure-Abonnement, das die Protokollanalyse enthält, da diese Berichte durch das Senden von Informationen zu Überwachungsereignissen von Azure Information Protection-Clients und -Scannern an einen zentralen Speicherort basierend auf dem Azure Log Analytics-Dienst entstehen.
+Beachten Sie, dass für die Azure Information Protection-Berichte [Voraussetzungen](/azure/information-protection/reports-aip#prerequisites) gelten, die auch für die Analyse der Bezeichnungen im Hinblick auf Vertraulichkeitsbezeichnungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center gelten. Sie benötigen z. B. ein Azure-Abonnement, das die Protokollanalyse enthält, da diese Berichte durch das Senden von Informationen zu Überwachungsereignissen von Azure Information Protection-Clients und -Scannern an einen zentralen Speicherort basierend auf dem Azure Log Analytics-Dienst entstehen.
 
 Für die Vertraulichkeitsbezeichnungsnutzung:
 
@@ -97,5 +97,5 @@ Wenn Sie die Analyse der Bezeichnungen anzeigen möchten, muss Ihnen eine der fo
 - Sicherheitsadministrator
 - Benutzer mit Leseberechtigung für Sicherheitsfunktionen
 
-Beachten Sie außerdem, dass diese Berichte Azure Monitor verwenden, um die Daten in einem Protokollanalysearbeitsbereich Ihres Unternehmens zu speichern. Aus diesem Grund sollte der Benutzer als Benutzer mit Leseberechtigung zum Azure Monitoring-Arbeitsbereich hinzugefügt werden, der die Daten enthält. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Azure Information Protection-Analysen](https://docs.microsoft.com/de-DE/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+Beachten Sie außerdem, dass diese Berichte Azure Monitor verwenden, um die Daten in einem Protokollanalysearbeitsbereich Ihres Unternehmens zu speichern. Aus diesem Grund sollte der Benutzer als Benutzer mit Leseberechtigung zum Azure Monitoring-Arbeitsbereich hinzugefügt werden, der die Daten enthält. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Azure Information Protection-Analysen](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

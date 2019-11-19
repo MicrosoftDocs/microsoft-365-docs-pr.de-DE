@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Zusammenfassung: Erstellen und Konfigurieren von SharePoint Online-Teamwebsites für verschiedene Ebenen des Informationsschutzes.'
-ms.openlocfilehash: 2ddf3de7180d384c387bdc335afda6214508e3c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ff892d57d4fe6e707e4cbcb4f1562a3594fe70b
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070702"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38708118"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Bereitstellen von SharePoint Online-Websites für drei Schutzebenen
 
@@ -46,7 +47,7 @@ Um eine grundlegende SharePoint Online-Teamwebsite mit öffentlichem Zugriff und
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie unter **Name der Website** einen Namen für die öffentliche Teamwebsite ein. 
+5. Geben Sie unter **Name der Website** einen Namen für die öffentliche Teamwebsite ein.
     
 6. Geben Sie im Feld **Beschreibung der Teamwebsite** eine Beschreibung der Website ein.
     
@@ -70,7 +71,7 @@ Um eine grundlegende SharePoint Online-Teamwebsite mit privatem Zugriff und Bere
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie unter **Name der Website** einen Namen für die private Teamwebsite ein. 
+5. Geben Sie unter **Name der Website** einen Namen für die private Teamwebsite ein.
     
 6. Geben Sie unter **Beschreibung der Teamwebsite** eine Beschreibung des Zwecks der Website ein.
     

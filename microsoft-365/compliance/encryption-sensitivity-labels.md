@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: aae46b8a6fa18c9af32005bca87ad80638b5b6c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369446"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708100"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -44,7 +44,7 @@ Die Verschlüsselungseinstellungen sind verfügbar, wenn Sie eine Vertraulichkei
 
 ## <a name="how-encryption-works"></a>Funktionsweise der Verschlüsselung
 
-Die Verschlüsselung verwendet Azure Rights Management (Azure RMS). Azure RMS verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](https://docs.microsoft.com/de-DE/azure/information-protection/what-is-azure-rms)
+Die Verschlüsselung verwendet Azure Rights Management (Azure RMS). Azure RMS verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Aktivieren der Verschlüsselung für eine Vertraulichkeitsbezeichnung
 
@@ -77,7 +77,7 @@ Wenn kein Ablaufdatum festgelegt wurde, beträgt die Standardeinstellung für di
 
 Neben der erneuten Authentifizierung wird auch die Richtlinien- und die Benutzergruppenmitgliedschaft erneut bewertet. Dies bedeutet, dass bei Benutzern unterschiedliche Zugriffsergebnisse für dasselbe Dokument oder dieselbe E-Mail auftreten könnten, wenn es seit dem letzten Zugriff auf den Inhalt Änderungen in der Richtlinien- oder Gruppenmitgliedschaft gab.
 
-Informationen zum Ändern der Standardeinstellung von 30 Tagen finden Sie unter [Rights Management-Verwendungslizenz](https://docs.microsoft.com/de-DE/azure/information-protection/configure-usage-rights#rights-management-use-license).
+Informationen zum Ändern der Standardeinstellung von 30 Tagen finden Sie unter [Rights Management-Verwendungslizenz](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Zuweisen von Berechtigungen für bestimmte Benutzer oder Gruppen
 
@@ -106,10 +106,10 @@ Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwende
 
 Wenn Sie die Berechtigungen für diese Benutzer oder Gruppen auswählen, können Sie folgende Optionen auswählen:
 
-- Eine [vordefinierte Berechtigungsstufe](https://docs.microsoft.com/de-DE/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) mit einer bereits festgelegten Gruppen von Rechten, z. B. Mitverfasser oder Überprüfer.
+- Eine [vordefinierte Berechtigungsstufe](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) mit einer bereits festgelegten Gruppen von Rechten, z. B. Mitverfasser oder Überprüfer.
 - Eine benutzerdefinierte Gruppe von Berechtigungen, aus der Sie beliebige Berechtigungen auswählen können.
 
-Weitere Informationen zu den einzelnen Berechtigungen finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/de-DE/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Weitere Informationen zu den einzelnen Berechtigungen finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](media/Sensitivity-Choose-permissions-settings.png)
 
@@ -129,7 +129,7 @@ Der Rights Management-Aussteller erhält immer Vollzugriff für das Dokument ode
 - Der Rights Management-Aussteller kann immer offline auf das Dokument oder die E-Mail zugreifen.
 - Der Rights Management-Aussteller kann ein Dokument weiterhin öffnen, nachdem es gesperrt wurde.
 
-Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights Management-Besitzer](https://docs.microsoft.com/de-DE/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights Management-Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ## <a name="let-users-assign-permissions"></a>Benutzern die Zuweisung von Berechtigungen überlassen
 
@@ -197,7 +197,7 @@ In dieser Tabelle wird beschrieben, was mit einer vorhandenen Verschlüsselung g
 
 Wenn Verschlüsselung auf Dateien in OneDrive und SharePoint angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Dies bedeutet, das Features wie Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit nicht funktionieren. DLP-Richtlinien können nur für Metadaten (einschließlich Office 365-Bezeichnungen) angewendet werden, aber nicht für den Inhalt verschlüsselter Dateien (z. B. Kreditkartennummern in Dateien) verwendet werden.
 
-Dies gilt nur für Inhalte, die in OneDrive und SharePoint gespeichert sind. In Exchange Online verwenden E-Mail-Flussregeln (auch als Transportregeln bezeichnet) das [Administratorkonto](https://docs.microsoft.com/de-DE/azure/information-protection/configure-super-users), damit sie verschlüsselte Inhalte überprüfen und DLP-Richtlinien erzwingen können.
+Dies gilt nur für Inhalte, die in OneDrive und SharePoint gespeichert sind. In Exchange Online verwenden E-Mail-Flussregeln (auch als Transportregeln bezeichnet) das [Administratorkonto](https://docs.microsoft.com/azure/information-protection/configure-super-users), damit sie verschlüsselte Inhalte überprüfen und DLP-Richtlinien erzwingen können.
 
 ## <a name="important-prerequisites"></a>Wichtige Voraussetzungen
 
@@ -205,7 +205,7 @@ Bevor Sie Verschlüsselung verwenden können, müssen Sie möglicherweise die fo
 
 ### <a name="activating-azure-rights-management"></a>Aktivieren von Azure Rights Management
 
-Um die Verschlüsselung in Vertraulichkeitbezeichnungen zu verwenden, muss in Ihrem Mandanten Azure Rights Management aktiviert werden. In neuen Mandanten ist dieser Dienst standardmäßig aktiviert, aber Sie müssen ihn möglicherweise manuell einschalten. Weitere Informationen finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/de-DE/azure/information-protection/activate-service).
+Um die Verschlüsselung in Vertraulichkeitbezeichnungen zu verwenden, muss in Ihrem Mandanten Azure Rights Management aktiviert werden. In neuen Mandanten ist dieser Dienst standardmäßig aktiviert, aber Sie müssen ihn möglicherweise manuell einschalten. Weitere Informationen finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Konfigurieren von Exchange für Azure Information Protection
 
@@ -215,5 +215,5 @@ Benutzer können beispielsweise geschützte E-Mails nicht auf Mobiltelefonen ode
 
 Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
 
-- Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/de-DE/azure/information-protection/configure-office365#exchange-online-irm-configuration).
-- For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/de-DE/azure/information-protection/deploy-rms-connector). 
+- Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 

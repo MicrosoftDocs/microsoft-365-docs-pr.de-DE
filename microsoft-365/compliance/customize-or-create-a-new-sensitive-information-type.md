@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Informationen zum Ändern oder Erstellen eines neuen vertraulichen Informationstyps in Office 365 für DSGVO.
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080815"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708108"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Anpassen oder Erstellen eines neuen vertraulichen Informationstyps
 
@@ -71,7 +71,7 @@ So passen Sie einen benutzerdefinierten vertraulichen Informationstyp an
 
 7.  Laden Sie den neuen vertraulichen Informationstyp hoch.
 
-8.  Durchforsten Sie Ihre Inhalte erneut, um vertrauliche Informationen zu identifizieren. Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizieren einer Website](https://support.office.com/de-DE/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Durchforsten Sie Ihre Inhalte erneut, um vertrauliche Informationen zu identifizieren. Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizieren einer Website](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Beispiel: Ändern des vertraulichen Informationstyps „EU-Debitkartennummer“
 
@@ -141,15 +141,15 @@ Sie müssen möglicherweise zusätzliche Abfragen erstellen, um nach personenbez
 
 Verwenden Sie die folgenden Ressourcen, um Abfragen mithilfe von KQL zu formulieren und zu optimieren:
 
--   [Syntaxreferenz für die Keyword Query Language (KQL) (DMC)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [Syntaxreferenz für die Keyword Query Language (KQL) (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Ausführen einer Inhaltssuche](https://support.office.com/de-DE/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Ausführen einer Inhaltssuche](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-Die Inhaltssuche bietet eine weitere Ressource, die Sie beim Entwickeln von KQL-Abfragen und vertraulichen Informationstypen unterstützt – Schlüsselwörter. Gründe für die Verwendung der Schlüsselwortliste? Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](https://support.office.com/de-DE/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+Die Inhaltssuche bietet eine weitere Ressource, die Sie beim Entwickeln von KQL-Abfragen und vertraulichen Informationstypen unterstützt – Schlüsselwörter. Gründe für die Verwendung der Schlüsselwortliste? Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
 Schlüsselwörter in einer Zeile werden durch den OR-Operator in der Suchabfrage verknüpft, die erstellt wird. Sie können auch einen Stichwortausdruck (in Klammern) in einer Zeile verwenden.
 
-Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](https://support.office.com/de-DE/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Beispiel – Verwenden der Inhaltssuche für die Identifizierung von E-Mail-Adressen
 
@@ -301,7 +301,7 @@ Contoso verwendet immer eine Contoso-Kundennummer beim Verweisen auf Kunden in d
 <tr class="header">
 <th align="left"><strong>Schritt</strong></th>
 <th align="left"><strong>Aktion </strong></th>
-<th align="left"><strong>Result</strong></th>
+<th align="left"><strong>Ergebnis</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -374,7 +374,7 @@ Contoso verwendet immer eine Contoso-Kundennummer beim Verweisen auf Kunden in d
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 

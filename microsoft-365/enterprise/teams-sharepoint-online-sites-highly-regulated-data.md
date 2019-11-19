@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint-Teamwebsite zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: cfa1f7d85f7dd4d20b293c73b0b8f7d8e2577d02
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929242"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699745"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>SharePoint-Websites für streng regulierte Daten
 
@@ -72,7 +72,8 @@ Die folgenden Phasen führen Sie schrittweise durch den Entwurf, die Konfigurati
 
 [![SharePoint-Websites für streng regulierte Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-Sie können dieses Poster als [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>Voraussetzungen für den Identitäts- und Gerätezugriff
 
@@ -211,7 +212,7 @@ Ihre Benutzer bei Bedarf erneut schulen.
 
 Stark regulierte Dateien werden ausschließlich auf SharePoint-Websites für stark regulierte Daten gespeichert, und die besonders sensiblen Dateien weisen die Vertraulichkeitsbezeichnung oder -unterbezeichnung für die Website auf.
 
-## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise für die Contoso Corporation
+## <a name="how-the-contoso-corporation-used-a-sharepoint-site-for-highly-regulated-data"></a>Verwendung einer SharePoint-Website für stark regulierte Daten in der Contoso Corporation
 
 Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern. Erfahren Sie, wie Contoso die Einführung einer [sicheren SharePoint-Website](contoso-sharepoint-online-site-for-highly-confidential-assets.md) für seine Forschungsteams in Paris, Moskau, New York, Peking (Beijing) und Bengaluru (Bangalore) konzipiert, konfiguriert und dann vorangetrieben hat. 
 
