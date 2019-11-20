@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698287"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749793"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft-Support, Dienstleistungen und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -27,7 +29,7 @@ Das Ziel des globalen Teams für die Reaktion auf Datenschutzverletzungen von Mi
 
 ## <a name="data-protection-incident-response-overview"></a>Übersicht über die Reaktion auf Datenschutzverletzungen 
 
-Microsoft Professional Services setzt sich für den Schutz seiner Kunden ein und ergreift weitreichende Maßnahmen, um Datenschutzverletzungen zu verhindern und das Vertrauen der Kunden zu erhalten. Eine Datenschutzverletzung in der Professional Services-Organisation ist ein Sicherheitsverstoß, der zur zufälligen oder unrechtmäßigen Zerstörung, zu Verlust, Veränderung, unbefugter Weitergabe oder unberechtigtem Zugang zu personenbezogenen Daten oder Support- oder Beratungsdaten führt, während diese durch Microsoft verarbeitet werden. Für kommerzielle Kunden, die Premier-Support, Unified Support oder Microsoft Consulting Services erworben haben, müssen Sie die Sprache für die Reaktion auf Datenschutzverletzungen im Nachtrag zum Datenschutz von Professional Services unter <http://aka.ms/professionalservicesdpa/> nachsehen.
+Microsoft Professional Services setzt sich für den Schutz seiner Kunden ein und ergreift weitreichende Maßnahmen, um Datenschutzverletzungen zu verhindern und das Vertrauen der Kunden zu erhalten. Eine Datenschutzverletzung in der Professional Services-Organisation ist ein Sicherheitsverstoß, der zur zufälligen oder unrechtmäßigen Zerstörung, zu Verlust, Veränderung, unbefugter Weitergabe oder unberechtigtem Zugang zu personenbezogenen Daten oder Support- oder Beratungsdaten führt, während diese durch Microsoft verarbeitet werden. Für kommerzielle Kunden, die Premier-Support, Unified Support oder Microsoft Consulting Services erworben haben, müssen Sie die Sprache für die Reaktion auf Datenschutzverletzungen im Nachtrag zum Datenschutz von Professional Services unter <https://aka.ms/professionalservicesdpa/> nachsehen.
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>Umfang und Grenzen des Prozesses für die Reaktion auf Datenschutzverletzungen
 
@@ -54,7 +56,7 @@ Microsoft Professional Services prüft kontinuierlich auf neue Datenschutzverlet
 Die von Microsoft Professional Services eingesetzten Erkennungsprozesse sind darauf ausgelegt, Datenschutzverletzungen zu erkennen und Untersuchungen auszulösen. Zum Beispiel:
 
 - Sicherheitsrisiken werden zur Weiterleitung an das Microsoft-weite Berichtssystem oder direkt an das Professional Services-Team für die Reaktion auf Datenschutzverletzungen gemeldet.
-- Kunden übermitteln Berichte mit der Beschreibung verdächtiger Aktivitäten über das [Kundensupport-Portal](http://support.microsoft.com).
+- Kunden übermitteln Berichte mit der Beschreibung verdächtiger Aktivitäten über das [Kundensupport-Portal](https://support.microsoft.com).
 - Mitarbeiter von Professional Services nehmen Eskalationen vor. Microsoft-Mitarbeiter sind dahingehend geschult, potenzielle Sicherheitsprobleme zu identifizieren und zu eskalieren.
 - Für Tools und Systeme, die im Rahmen der Bereitstellung von Professional Services eingesetzt werden, nutzen die Betriebsteams automatisierte Systembenachrichtigungen über interne Überwachungs- und Warnungsframeworks. Diese Warnungen können in Form von signaturbasierten Alarmen eingehen wie Antischadsoftware oder Angriffserkennung bzw. über Algorithmen, die ein Profil der erwarteten Aktivität erstellen und bei Anomalien Warnungen ausgeben sollen.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031110"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718634"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
@@ -36,7 +36,7 @@ Das Lab-Kit ist kostenlos herunterladbar und verwendet Testsoftware.
 
 Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschließlich Domänen-Desktop-Clients, Domänencontroller, Internetgateway und einer vollständig konfigurierten ConfigMgr-Instanz. Sie beinhaltet Evaluierungsversionen der folgenden Produkte:
 
-  - Windows 10 Enterprise, Version 1903
+  - Windows 10 Enterprise, Version 1909
   - Windows 7 Enterprise
   - System Center Konfigurationsmanager, Version 1902
   - Windows Assessment and Deployment Kit für Windows 10, Version 1903
@@ -118,7 +118,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Herunterladen des Deployment Lab Kit für Windows und Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 16. November 2019 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 15. Februar 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>**Zusätzliche Anleitung**
 

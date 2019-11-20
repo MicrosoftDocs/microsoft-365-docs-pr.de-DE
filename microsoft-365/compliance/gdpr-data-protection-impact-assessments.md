@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7c4e66988c57754324fbc18de95e97d409ab0a53
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c6f01e5b82d0021c4698dfa7b4fddc5152c7d737
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078915"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749789"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>Datenschutz-Folgenabschätzungen im Rahmen der DSGVO
 
@@ -29,9 +31,9 @@ Dieses Dokument bietet Ihnen Informationen bezüglich Datenschutz-Folgenabschät
 
 Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
 
-- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, eine öffentliche Stelle, eine Behörde oder eine andere Stelle, die allein oder zusammen mit anderen den Zweck und die Mittel für die Verarbeitung personenbezogener Daten bestimmt.  
-- *Personenbezogene Daten * und *betroffene Person (oder Datensubjekt) *: alle Informationen, die sich auf eine bestimmte oder identifizierbare natürliche Person beziehen (betroffene Person); eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt identifiziert werden kann.  
-- *Verarbeiter*: eine natürliche oder juristische Person, eine öffentliche Behörde, eine Agentur oder eine andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
+- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
+- *Personenbezogene Daten * und *betroffene Person*: alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
+- *Auftragsverarbeiter*: eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
 - *Kundendaten*: Daten, die bei Ihrer tagtäglichen Geschäftsausführung erstellt und gespeichert werden.
 
 ## <a name="what-is-a-dpia"></a>Was ist Datenschutz-Folgenabschätzung?

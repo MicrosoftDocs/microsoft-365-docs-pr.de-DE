@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 11bf048dd1cd913d8344929b5025a65638d47f4b
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078935"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749777"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -27,11 +29,11 @@ Dieses Dokument bietet Ihnen Informationen zu der Einhaltung von Rechten und dem
 
 ## <a name="terminology"></a>Begrifflichkeiten
 
-Hilfreiche Definitionen für GSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
+Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
 
-- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, eine öffentliche Stelle, eine Behörde oder eine andere Stelle, die allein oder zusammen mit anderen den Zweck und die Mittel für die Verarbeitung personenbezogener Daten bestimmt.  
-- *Personenbezogene Date * und *betroffene Person*: alle Informationen, die sich auf eine bestimmte oder identifizierbare natürliche Person beziehen (betroffene Person); eine identifizierbare natürliche Person, die direkt oder indirekt identifiziert werden kann.  
-- *Verarbeiter*: Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
+- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
+- *Personenbezogene Daten * und *betroffene Person*: alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
+- *Auftragsverarbeiter*: eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
 - *Kundendaten*: Daten, die im Rahmen Ihrer regulären Geschäftstätigkeit erstellt und gespeichert werden.
 
 ## <a name="what-is-the-gdpr"></a>Was ist die DSGVO?
@@ -66,7 +68,7 @@ Anträge betroffener Personen bieten betroffenen Personen die Möglichkeit, Ihre
 - **Welche Aktionen sind zum Durchführen eines Antrags einer betroffenen Person erforderlich?**: Anträge betroffener Personen umfassen sechs Aktivitäten: Erkennung, Zugang, Berichtigung, Einschränkung, Export und Löschung.
 - **Was sind Ihre Datenquellen?**: Ein großer Teil der Daten einer Organisation wird in [Office-Anwendungen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) wie Excel und Outlook generiert.  Möglicherweise finden Sie auch relevante Daten für einen Antrag einer betroffenen Person in den von Microsoft-Produkten und -Diensten generierten [Erkenntnissen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) und [vom System generierten Protokollen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs).
 - **Welche Arten von Daten müssen durchsucht werden?**: Personenbezogene Daten finden Sie in den Kundendaten, den von Microsoft-Produkten und -Diensten generierten Erkenntnissen sowie in vom System generierten Protokollen.
-- **Wie werden personenbezogene Daten durchsucht?**: Die Suche nach personenbezogenen Daten kann unter Microsoft-Produkten und -Diensten variieren. Suchtools bieten beispielsweise eine [Inhaltssuche](https://docs.microsoft.com/de-DE/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) oder eine [In-App-Suche](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Administratoren können auf [vom System generierte Protokolle](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs) zugreifen, die einer Benutzeraktivität zugeordnet sind.  
+- **Wie werden personenbezogene Daten durchsucht?**: Die Suche nach personenbezogenen Daten kann unter Microsoft-Produkten und -Diensten variieren. Suchtools bieten beispielsweise eine [Inhaltssuche](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) oder eine [In-App-Suche](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Administratoren können auf [vom System generierte Protokolle](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs) zugreifen, die einer Benutzeraktivität zugeordnet sind.  
 - **In welchen Formaten sollten personenbezogene Daten zur Verfügung gestellt werden?**: Das „Recht auf Datenübertragbarkeit“ der DSGVO ermöglicht es betroffenen Personen, eine elektronische Kopie ihrer personenbezogenen Daten in einem „strukturierten, gängigen, maschinenlesbaren Format“ sowie die Übermittelung dieser Dateien durch Ihre Organisation an einen anderen Datenverantwortlichen anzufordern.
 
 ### <a name="data-protection-impact-assessment"></a>Datenschutzfolgenabschätzung
