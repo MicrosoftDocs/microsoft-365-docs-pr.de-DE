@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten der mehrstufigen Authentifizierung.
-ms.openlocfilehash: cd14bb0d0f24215c64579851fe6982c5bf1ddc3e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 8bd3d4e0c2a918d5b8dbf0c763444bb0a1cff466
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772492"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748356"
 ---
 # <a name="set-up-multifactor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
 

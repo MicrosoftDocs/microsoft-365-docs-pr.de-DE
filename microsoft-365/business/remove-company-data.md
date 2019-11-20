@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Informationen zur Verwendung von Microsoft 365 Business zum Entfernen von Unternehmensdaten von Benutzergeräten oder Windows-PCs. '
-ms.openlocfilehash: 169bc7d849bb934de2788daebb90308b1a086111
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59e94a08e149a5cb119aabbbe816ccd2f4a9f9fb
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575736"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715230"
 ---
 # <a name="remove-company-data-from-devices"></a>Entfernen von Unternehmensdaten von Geräten
 
-[![Bezeichnungsfeld, damit Sie wissen, dass sich das Admin Center ändert, und weitere Informationen finden Sie unter aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Entfernen von Unternehmensdaten
 
@@ -41,9 +41,9 @@ Sie können mit Microsoft 365 Business Unternehmensdaten entfernen, die Ihre Ben
   
 3. Wählen Sie auf der Seite **Verwalten** die Option aus, oder suchen Sie nach einem Benutzer, der die zu entfernenden Daten hat, und wählen Sie den Namen aus. 
     
-4. Wählen Sie im nächsten Bereich das Gerät oder die Geräte in der Liste **Geräte** aus, und klicken Sie im daraufhin geöffneten Gerätebereich können Sie festlegen, dass das Gerät auf die Werkseinstellungen zurückgesetzt oder die Unternehmensdaten je nach Gerätetyp entfernt werden sollen. 
+4. Wählen Sie im nächsten Bereich das Gerät oder die Geräte aus der Liste **Geräte** aus. Im daraufhin geöffneten Gerätebereich können Sie je nach Gerätetyp festlegen, ob das Gerät auf die Werkseinstellungen zurückgesetzt oder die Unternehmensdaten entfernt werden sollen. 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
+    ![Wählen Sie im Bereich Unternehmensdaten entfernen das Gerät aus, aus dem Sie die Daten entfernen möchten.](media/resetorremove.png)
   
 5. Klicken Sie im Bestätigungsbereich auf **Schließen** **bestätigen** \> .
     

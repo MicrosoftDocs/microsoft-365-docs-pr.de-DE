@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: cd59570cbcb9b027780e160117b44be88770d6b9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575546"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721487"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business im Setup-Assistenten
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Hinzufügen von Richtlinien für Domäne, Benutzer und einrichten
 
-[![Bezeichnungsfeld, damit Sie wissen, dass sich das Admin Center ändert, und weitere Informationen finden Sie unter aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Wenn Sie Microsoft 365 Business erwerben, haben Sie die Möglichkeit, eine Domäne zu verwenden, die Sie besitzen, oder einen Kauf während der [Anmeldung](sign-up.md).
 
@@ -58,7 +58,7 @@ Wenn Sie Microsoft 365 Business erwerben, haben Sie die Möglichkeit, eine Domä
     
 4. Befolgen Sie die Schritte im Assistenten zum [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) , die ihre eigene Domäne verifizieren. Wenn Sie Ihren Domänenhost kennen, lesen Sie auch die [hostspezifischen Anweisungen](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
-    Wenn es sich bei Ihrem Hostinganbieter um einen GoDaddy oder einen anderen Host handelt, der mit der [Domäne Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)aktiviert ist, ist der Prozess einfach, und Sie werden automatisch aufgefordert, sich anzumelden und die Authentifizierung von Microsoft in Ihrem Namen zu ermöglichen:
+    Wenn Ihr Hosting-Anbieter GoDaddy oder ein anderer Host ist, der mit der [Domäne Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)aktiviert ist, ist der Prozess einfach, und Sie werden automatisch aufgefordert, sich anzumelden und Microsoft in Ihrem Namen authentifizieren zu lassen.
 
     ![Wählen Sie auf der Seite GoDaddy-Zugriff bestätigen die Option autorisieren aus.](media/godaddyauth.png)
 
@@ -103,7 +103,7 @@ Zum Einrichten von Diensten müssen Sie einige Datensätze bei Ihrem DNS-Host od
 
 Die Richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch auf eine [Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) mit dem Namen " *alle Benutzer*" angewendet. Sie können auch weitere Gruppen zum Zuweisen von Richtlinien im Admin Center erstellen.
 
-1. Wählen Sie auf der Seite zum **Schützen Ihrer Arbeitsdateien auf mobilen Geräten** standardmäßig die Option **Arbeitsdateien schützen, wenn Geräte verloren gehen oder gestohlen werden** . Sie haben die Möglichkeit, die **Verwaltung der Benutzerzugriffe auf Office-Dateien auf mobilen Geräten**zu aktivieren, und dies wird empfohlen.
+1. Auf dem **Schützen Ihrer Arbeitsdateien auf mobilen Geräten**ist die Option **Arbeitsdateien schützen, wenn Geräte verloren gehen oder gestohlen** wird standardmäßig aktiviert. Sie haben die Möglichkeit, die **Verwaltung der Benutzerzugriffe auf Office-Dateien auf mobilen Geräten**zu aktivieren, und dies wird empfohlen.
 
     ![Screenshot der Seite Arbeitsdateien auf mobilen Geräten schützen.](media/protectworkfilesondevices.png)
 
@@ -123,7 +123,8 @@ Die Richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch a
 
 ## <a name="deploy-office-365-client-apps"></a>Bereitstellen von Office 365-Client-apps
 
-Wenn Sie Office-Apps während der Einrichtung automatisch in installieren, werden die apps auf den Windows 10-Geräten installiert, sobald sich die Benutzer bei Azure AD von Ihren Windows-Geräten mit ihren Arbeits Anmeldeinformationen angemeldet haben.
+Wenn Sie während des Setups die automatische Installation von Office-Apps ausgewählt haben, werden die apps auf den Windows 10-Geräten installiert, sobald sich die Benutzer bei Azure AD von Ihren Windows-Geräten unter Verwendung ihrer Arbeits Anmeldeinformationen angemeldet haben.
+
 Informationen zum Installieren von Office auf mobilen IOS-oder Android-Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md).
 
 Sie können Office auch einzeln installieren. Anweisungen finden Sie unter [Installieren von Office auf einem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) .

@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
-ms.openlocfilehash: ef34a3e2bc848ce98efb2218f7bdd9b2a186b6b2
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968781"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718717"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -46,10 +46,10 @@ Es gibt drei Möglichkeiten, Microsoft 365 Business zu erhalten:
 Führen Sie die folgenden Schritte aus, um sich anzumelden und Microsoft 365 für Ihr Unternehmen zu erwerben:
 
 1. Wählen Sie auf der [Seite Microsoft 365 for Business](https://go.microsoft.com/fwlink/?linkid=2109654)die Option **Planes #a0 Pricing**aus. 
-2. Ermitteln Sie auf der nächsten Seite die monatlichen Kosten, und Scrollen Sie auf der Seite nach unten, um mehr über das in Microsoft 365 Business enthaltene zu erfahren. Wählen Sie unter Microsoft 365 Business die Option **Jetzt kaufen**aus.
+2. Ermitteln Sie auf der nächsten Seite die monatlichen Kosten, und Scrollen Sie dann auf der Seite nach unten, um mehr über das in Microsoft 365 Business enthaltene zu erfahren. Wählen Sie unter Microsoft 365 Business die Option **Jetzt kaufen**aus.
 3. Geben Sie auf der Seite **Danke für die Auswahl von Microsoft 365 Business** die Informationen für die ersten Schritte ein.
 4. Geben Sie in **Schritt 1**eine e-Mail-Adresse ein, die Sie bereits verwenden. Hierbei kann es sich um Ihre aktuelle geschäftliche e-Mail-Adresse oder eine beliebige Adresse handeln, die Microsoft für die Kommunikation mit Ihnen während des Setups verwenden soll. Es ist auch die Adresse, an die wir Ihnen Informationen über Ihre Rechnung und Erneuerungen senden. Wählen Sie dann **Konto**einrichten aus.
-5. Geben Sie in **Schritt 2**ihren Namen, Ihre geschäftliche Telefonnummer, den Firmennamen und den Standort ein. Beachten Sie, dass Ihr Land oder Ihre Region die genauen Dienste bestimmt, die Sie von Microsoft erhalten, und Sie können nicht mehr geändert werden, nachdem Sie diesen Schritt abgeschlossen haben. Wählen Sie **Weiter** aus.
+5. Geben Sie in **Schritt 2**ihren Namen, Ihre geschäftliche Telefonnummer, den Firmennamen und den Standort ein. Ihr Land oder Ihre Region bestimmt die genauen Dienste, die Sie von Microsoft erhalten, und kann nicht mehr geändert werden, nachdem Sie diesen Schritt abgeschlossen haben. Wählen Sie **Weiter** aus.
     > [!NOTE]
     > Wir zeigen den Namen Ihres Unternehmens im Admin Center an; Hier verwalten Sie Microsoft 365-Benutzer,-Lizenzen usw. Wir fügen Sie auch in alle internen (SharePoint)-Website-URLs ein.
 6. In **Schritt 3**:
@@ -66,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um sich anzumelden und Microsoft 365 fü
         
         - **Ich bin nicht sicher, oder ich besitze bereits einen Domänennamen** 
         
-             Wählen Sie **Get a Microsoft Domain for now aus**. Dies kostet nichts, und später können Sie einen benutzerdefinierten Namen für Ihr Unternehmen erhalten oder eine Verbindung mit einem, den&mdash;Sie bereits besitzen, zeigen.
+             Wählen Sie **Get a Microsoft Domain for now aus**. Dies kostet nichts, und später können Sie einen benutzerdefinierten Namen für Ihr Unternehmen erhalten oder eine Verbindung zu einem bereits vorhandenen herstellen. Wir zeigen Ihnen, wie.
 
     3. Wählen Sie **weiter** aus, um Ihre Benutzer-ID und Ihre geschäftliche e-Mail-Adresse zu erstellen. Geben Sie den Namen (auch als Alias bezeichnet) ein, den Sie verwenden möchten. Beispielsweise kann Robert Young RobY oder RobYoung als Arbeits Alias verwenden. Fügen Sie ein Kennwort hinzu, und wählen Sie **registrieren**aus. Notieren Sie sich Ihr Kennwort. Wir senden eine e-Mail an die Adresse, die Sie in Schritt 1 eingegeben haben, um Sie an Ihre Benutzer-ID zu erinnern.
 7. In **Schritt 4**: 

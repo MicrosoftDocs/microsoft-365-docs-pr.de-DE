@@ -22,24 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Übersicht über die Schritte zum Einrichten von Microsoft 365 Business.
-ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+description: Übersicht über die Installationsschritte für Microsoft 365 Business.
+ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676026"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721557"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
-Die meisten der Schritte zum einrichten können im Setup-Assistenten ausgeführt werden, aber die anderen Optionen werden ebenfalls aufgeführt.
-
+Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber auch die anderen Optionen werden aufgelistet.
 
 ## <a name="step-1-add-your-domain-and-users"></a>Schritt 1: Hinzufügen Ihrer Domäne und Benutzer
 
    - **[Hinzufügen Ihrer Domäne](set-up.md#add-your-domain-to-personalize-sign-in)** (wenn Sie Ihre Domäne während der [Registrierung](sign-up.md)erworben haben, ist dieser Schritt bereits abgeschlossen.)
 
-    - **Benutzer hinzufügen**. Sie können auf eine der folgenden drei Arten vorgehen:
+    - **Benutzer hinzufügen**. Sie können auf drei Arten Benutzer hinzufügen:
         - Im [Assistenten](set-up.md#add-users-in-the-wizard).
         - Verwenden Sie die Verzeichnissynchronisierung, um [Benutzer mithilfe Azure AD Connect hinzuzufügen](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) , wenn Sie über ein lokales Active Directory verfügen.
         - Sie können Benutzer auch später im Admin Center [Hinzufügen](add-users-m365b.md) .
@@ -68,14 +67,14 @@ Die meisten der Schritte zum einrichten können im Setup-Assistenten ausgeführt
    - Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
     - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-data-and-devices) , um Richtlinien für Windows 10-Geräte zu konfigurieren.
 
-## <a name="stes-4-install-office-365-business"></a>Stes 4: Installieren von Office 365 Business
+## <a name="step-4-install-office-365-business"></a>Schritt 4: Installieren von Office 365 Business
 - Sie können Office auf den Windows-Geräten automatisch mithilfe des [Setup-Assistenten](set-up.md#deploy-office-365-client-apps)installieren.
 - Benutzer können [Office-Apps](https://docs.microsoft.com/office365/admin/setup/install-applications) für Windows und Geräte installieren.
      
 ## <a name="advanced"></a>Fortgeschritten
 - **Verwenden von Autopilot zum Einrichten neuer Geräte**
             
-     Sie können [Windows Autopilot](add-autopilot-devices-and-profile.md) verwenden, um **neue** Windows 10-Geräte für einen Benutzer automatisch vorkonfigurieren, aber es ist möglicherweise einfacher, einen [Partner](https://www.microsoft.com/solution-providers/search) zu erhalten, der dies für Sie tun kann. Sie können auch zu [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) wechseln und einen Cloud Technology Expert bitten, neue Geräte einzurichten, die Sie für Sie kaufen.
+     Sie können [Windows Autopilot](add-autopilot-devices-and-profile.md) verwenden, um **neue** Windows 10-Geräte für einen Benutzer automatisch vorkonfigurieren, aber es ist möglicherweise einfacher, einen [Partner](https://www.microsoft.com/solution-providers/search) zu erhalten, der dies für Sie tun kann. Sie können auch zu [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)wechseln und einen Experten für die Cloud-Technologie bitten, neue Geräte einzurichten, die Sie kaufen.
 
 - **Zugriff auf lokale Ressourcen**
 

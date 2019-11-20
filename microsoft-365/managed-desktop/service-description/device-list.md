@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 11cbdaf47e06536afd996fd41c3ea603967e2685
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 64b5ffab59b19945b20bc614f09963ca43027afe
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640347"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715507"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
@@ -20,7 +20,7 @@ Weitere Informationen zu Microsoft Managed Desktop finden Sie unter [Dokumentati
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der folgenden Modelle sein und die aufgeführten Spezifikationen für RAM, Prozessorfamilie und Speicherplatz erfüllen oder übertreffen. Keine andere Anpassung wird unterstützt.
+Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der folgenden Modelle sein und die aufgeführten Spezifikationen für RAM, Prozessorfamilie und Speicherplatz erfüllen oder übertreffen. 
 
 Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit ihren kommerziellen Kanal Kontakten zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen. In dieser Tabelle ist das *Archivdatum* das Datum, an dem diese Modelle einer kürzeren Lebensdauer von Microsoft Managed Desktops unterworfen werden. solche Geräte, die nach diesem Datum an Bord sind, erhalten keine vollständige dreijährige Unterstützung von Microsoft Managed Desktop. Archivierte Geräte werden auch in [archivierten Microsoft Managed Desktop-Geräten](archived-device-list.md)aufgeführt. Das *Renten Datum* ist das Datum, an dem dieses Modell nicht mehr von Microsoft Managed Desktop unterstützt wird. An diesem Tag werden alle registrierten Geräte dieses Modells aus dem Microsoft Managed Desktop entfernt, unabhängig davon, wann Sie registriert wurden.
 
@@ -41,7 +41,7 @@ Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen mö
 | [HP EliteBook 830/840/850 G6-Notebook-PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich | 30. November 2020 | 30. November 2023 |
 | [HP EliteBook X360 830 G6-Notebook-PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich | 30. November 2020 | 30. November 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | SKU mit 5VS03AV, IR-Kamera erforderlich | 14. Mai 2020 | 14. Mai 2023 |
-| [HP EliteBook X360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | 14. Mai 2020 | 14. Mai 2023 |
+| [HP EliteBook X360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | 14. Mai 2020 | 14. Mai 2023 |
 | [HP EliteBook X360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | 23. Oktober 2020 | 23. Oktober 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel I3/8 GB RAM | SKU mit 5VS04AV | 18. Juli 2020 | 18. Juli 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel I3/8 GB RAM | SKU mit 5VS04AV | 18. Juli 2020 | 18. Juli 2023 |

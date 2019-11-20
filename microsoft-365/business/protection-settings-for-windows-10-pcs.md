@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Erfahren Sie mehr über die standardmäßigen und anderen Einstellungen, die in Microsoft 365 Business zum Sichern von Windows 10-Geräten verfügbar sind.
-ms.openlocfilehash: 5d4bce02df1276dc9b284c7b0709c7dc26b0dbce
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 1846ee7ae09db94575ef27dcf4f5721661f7666d
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676046"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715200"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
 
@@ -43,9 +43,9 @@ Schauen Sie sich ein Video mit Informationen zum Sichern von Windows 10-Geräten
     
 4. Wählen Sie unter **Richtlinientyp** die Option **Windows 10-Gerätekonfiguration** aus.
     
-5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](#available-settings) for more information. 
+5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. Weitere Informationen finden Sie unter [Verfügbare Einstellungen](#available-settings). 
     
-    Über den Link **Standardeinstellungen zurücksetzen** können Sie die Standardeinstellung jederzeit wiederherstellen. 
+    Mit dem Link **Standardeinstellungen zurücksetzen** können Sie jederzeit die Standardeinstellungen wiederherstellen. 
     
     ![Add policy pane with Windows 10 Device configuration selected](media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
@@ -66,13 +66,10 @@ Weitere Informationen finden Sie unter [Zuordnung von Microsoft 365 Business-Sch
 |PCs vor webbasierten Bedrohungen in Microsoft Edge schützen  <br/> |Aktiviert Einstellungen in Edge, die Benutzer vor Websites und Downloads mit Schadsoftware schützen.  <br/> |
 |Regeln verwenden, die die Angriffsfläche von Geräten verringern  <br/> |Wenn diese Option aktiviert ist, hilft die Reduzierung der Angriffsfläche, Aktionen und Apps zu blockieren, die häufig von Schadsoftware zum Infizieren von Geräten verwendet werden. Diese Einstellung ist nur verfügbar, wenn Windows Defender Antivirus aktiviert ist. Weitere Informationen finden Sie unter [Verringern der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
 |Ordner vor Bedrohungen wie Ransomware schützen  <br/> |Diese Einstellung verwendet kontrollierten Ordner Zugriff, um Unternehmensdaten vor Änderungen durch verdächtige oder böswillige apps wie Ransomware zu schützen. Diese Typen von apps werden daran gehindert, Änderungen in geschützten Ordnern vorzunehmen. Diese Einstellung ist nur verfügbar, wenn Windows Defender Antivirus aktiviert ist. Weitere Informationen finden Sie unter [Schützen von Ordnern mit gesteuertem Ordner Zugriff](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) .  <br/> |
-|Netzwerkzugriff auf potenziell schädliche Inhalte im Internet verhindern  <br/> |Mithilfe dieser Einstellung können Sie ausgehende Benutzerverbindungen zu nicht vertrauenswürdigen Internetseiten blockieren, die Phishing-Betrügereien, Exploits oder andere schädliche Inhalte enthalten können. Diese Einstellung ist nur verfügbar, wenn Windows Defender Antivirus aktiviert ist. Weitere Informationen finden Sie unter [Schützen Sie Ihr Netzwerk](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
-|Dateien und Ordner auf PCs mit BitLocker vor unbefugtem Zugriff schützen  <br/> |BitLocker schützt Daten durch Verschlüsselung der Computerfestplatten und bietet Schutz vor Datenverlusten, falls ein Computer verloren geht oder gestohlen wird. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Bitlocker](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
+|Netzwerkzugriff auf potenziell schädliche Inhalte im Internet verhindern  <br/> |Verwenden Sie diese Einstellung, um ausgehende Benutzer Verbindungen zu Internet Standorten mit niedriger Zuverlässigkeit zu blockieren, die Phishing-Scams, Exploits oder andere schädliche Inhalte hosten können. Diese Einstellung ist nur verfügbar, wenn Windows Defender Antivirus auf **ein**festgelegt ist. Weitere Informationen finden Sie unter [Protect Your Network](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
+|Dateien und Ordner auf PCs mit BitLocker vor unbefugtem Zugriff schützen  <br/> |BitLocker schützt Daten durch Verschlüsselung der Computerfestplatten und bietet Schutz vor Datenverlusten, falls ein Computer verloren geht oder gestohlen wird. Weitere Informationen finden Sie unter [häufig gestellte Fragen zu BitLocker](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
 |Benutzern den Download von Apps aus dem Microsoft Store erlauben  <br/> |Ermöglicht es Benutzern, Apps aus dem Microsoft Store herunterzuladen und zu installieren. Weil Apps alles umfassen - von Spielen bis zu Produktivitätstools - behalten Sie für diese Einstellung **Ein** bei. Sie können sie aber auch deaktivieren, um die Sicherheit zu erhöhen.  <br/> |
-|Benutzern den Zugriff auf Cortana erlauben  <br/> |Cortana kann sehr hilfreich sein! Sie kann Einstellungen automatisch aktivieren oder deaktivieren, Wegbeschreibungen liefern und sicherstellen, dass Sie Ihre Termine einhalten. Deshalb ist diese Einstellung standardmäßig auf **Ein** festgelegt.  <br/> |
+|Benutzern den Zugriff auf Cortana erlauben  <br/> |Cortana kann sehr hilfreich sein! Cortana kann Einstellungen für Sie aktivieren oder deaktivieren, Anweisungen geben und sicherstellen, dass Sie pünktlich für Termine sind, sodass diese Einstellung standardmäßig **aktiviert** bleibt.  <br/> |
 |Benutzern erlauben, Windows-Tipps und Werbung von Microsoft zu empfangen  <br/> |Windows-Tipps können nützlich sein und Benutzern die Orientierung erleichtern, wenn neue Features veröffentlicht werden.  <br/> |
 |Windows 10-Geräte automatisch auf dem neuesten Stand halten  <br/> |Stellt sicher, dass Windows 10-Geräte die neuesten Updates automatisch erhalten.  <br/> |
 |Bildschirm deaktivieren, wenn ein Gerät im Leerlauf ist seit dieser Zeitdauer  <br/> |Stellt sicher, dass die Unternehmensdaten bei Benutzerinaktivität geschützt sind. Vielleicht arbeitet ein Benutzer an einem Ort mit Publikumsverkehr, z. B. in einem Café, und entfernt sich von seinem Gerät oder ist nur einen Augenblick abgelenkt, wodurch das Gerät für zufällige Blicke anfällig ist. Mit dieser Einstellung können Sie steuern, wie lange der Benutzer inaktiv sein kann, bevor der Bildschirm abgeschaltet wird.  <br/> |
-   
-  
-

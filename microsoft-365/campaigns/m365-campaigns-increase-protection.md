@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365 Business.
-ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676103"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748306"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
 Dieser Artikel unterstützt Sie bei der Verbesserung des Schutzes Ihres Microsoft 365-Abonnements zum Schutz vor Phishing, Schadsoftware und anderen Bedrohungen. Diese Empfehlungen sind für Organisationen mit einem erhöhten Sicherheitsbedürfnis geeignet, beispielsweise für politische Kampagnen, Anwaltskanzleien und Kliniken für das Gesundheitswesen. 
 
-Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Office 365 Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen durchführen, erhöhen Sie die Punktzahl. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich nicht negativ auf die Produktivität Ihrer Benutzer auswirken. 
+Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Office 365 Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen durchführen, erhöhen Sie die Punktzahl. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich negativ auf die Produktivität Ihrer Benutzer auswirken. 
 
 Weitere Informationen finden Sie unter [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -63,7 +63,7 @@ Ransomware schränkt den Zugriff auf Daten ein, indem Dateien verschlüsselt ode
   
 Sie können Schutz vor Ransomware durch Erstellen einer oder mehrerer Nachrichtenfluss Regeln zum Blockieren von Dateierweiterungen, die häufig für Ransomware verwendet werden (diese wurden in der [Erhöhung der Schutz vor Schadsoftware im e-Mail](#raise-the-level-of-protection-against-malware-in-mail) -Schritt hinzugefügt), oder um Benutzer zu warnen, die diese Anlagen in e-Mails empfangen.
 
-Zusätzlich zu den Dateien, die Sie im vorherigen Schritt blockiert haben, empfiehlt es sich auch, eine Regel zu erstellen, um Benutzer vor dem Öffnen von Office-Dateianlagen mit Makros zu warnen. Ransomware können in Makros ausgeblendet werden, sodass die Benutzer gewarnt werden, diese Dateien nicht von Personen zu öffnen, die Sie nicht kennen.
+Zusätzlich zu den Dateien, die Sie im vorherigen Schritt blockiert haben, empfiehlt es sich auch, eine Regel zu erstellen, um Benutzer vor dem Öffnen von Office-Dateianlagen mit Makros zu warnen. Ransomware können in Makros ausgeblendet werden, daher warnen Sie die Benutzer davor, diese Dateien nicht von Personen zu öffnen, die Sie nicht kennen.
 
 So erstellen Sie eine e-Mail-Transportregel:
   
@@ -128,7 +128,6 @@ Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365-oder
   
 Es wird empfohlen, dass Sie mit diesem Schutz beginnen, indem Sie eine Richtlinie zum Schutz ihrer wichtigsten Benutzer und Ihrer benutzerdefinierten Domäne erstellen. 
 
-  
 Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurze Schulungsvideo](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
@@ -139,7 +138,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
     
 4. Wählen Sie auf der Seite **Anti-Phishing** die Option **+ Create**aus. Ein Assistent wird gestartet, der Sie schrittweise durch die Definition ihrer Anti-Phishing-Richtlinie führt.
     
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Erstellen Sie diese Richtlinie** oder **Speichern**, je nach Bedarf.
     
@@ -161,7 +160,7 @@ Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinie
 
 ![Banner, auf das https://aka.ms/aboutM365previewverwiesen wird.](../business/media/m365admincenterchanging.png)
 
-Stellen Sie zunächst sicher, dass im Admin Center <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> die neue Vorschau für das Admin Center aktiviert ist. Aktivieren Sie die Umschaltfläche neben dem Text **das neue Admin Center**.
+Stellen Sie zunächst sicher, <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> dass im Admin Center die neue Vorschau für das Admin Center aktiviert ist. Aktivieren Sie die Umschaltfläche neben dem Text **das neue Admin Center**.
 
    ![Die neue Admin Center-Vorschau auf.](media/previewon.png)
 
@@ -172,11 +171,11 @@ Wenn die Seite **Setup** noch nicht mit Karten in Ihrem Mandanten angezeigt wird
     ![Klicken Sie auf der Seite zum Erweitern des Schutzes vor fortgeschrittenen Bedrohungen auf anzeigen.](media/startatp.png) 
 
 3. Wählen Sie auf der Seite **Schutz vor fortgeschrittenen Bedrohungen erweitern** die Option **Erste Schritte**aus.
-4. Aktivieren Sie im daraufhin geöffneten Bereich Kontrollkästchen neben **Links und Anlagen in e-Mail**, **Dateien in SharePoint, OneDrive**und Microsoft Teams überprüfen und **Links in Office Desktop-und Office Online-apps** unter **Scanelemente für böswillige Inhalte**scannen.
+4. Aktivieren Sie im geöffneten Bereich die Kontrollkästchen neben **Links und Anlagen in e-Mail**, **Dateien in SharePoint, OneDrive**und Microsoft Teams überprüfen und **Links in Office Desktop-und Office Online-apps** unter **Scanelemente für böswillige Inhalte**scannen.
 
       - Geben Sie unter **Links und Anlagen in e-Mail**alle Benutzer oder die spezifischen Benutzer ein, deren e-Mail gescannt werden soll.
 
-    ![Aktivieren Sie alle Kontrollkästchen unter höhere Protestierung durch erweiterte Bedrohungen.](media/setatp.png)
+    ![Aktivieren Sie alle Kontrollkästchen unter Schutz vor fortgeschrittenen Bedrohungen verbessern.](media/setatp.png)
 5. Wählen Sie **Richtlinien erstellen** aus, um ATP-sichere Anlagen und ATP-sichere Links zu aktivieren.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Einrichten von ATP-Safe Attachments im Security #a0 Compliance Center
@@ -288,8 +287,8 @@ In der folgenden Abbildung sind die Standardrichtlinien aufgeführt, die in Micr
 
 Sie können verhindern, dass Personen in Ihrer Organisation ihre Kalender freigeben, oder Sie können auch verwalten, was Sie freigeben können. Beispielsweise können Sie die Freigabe nur auf Frei/Gebucht-Zeiten beschränken.
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie **Einstellungen** \> für **Dienste #a0-Add-ins** aus.
-2. Wählen Sie auf der Seite **Dienste #a0-Add-ins** den **Kalender**aus, und wählen Sie aus, ob Personen in Ihrer Organisation ihre Kalender für Personen freigeben können, die über Office 365 oder Exchange verfügen, oder mit anderen Personen. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie **Einstellungen** \> **Dienste #a0 Add-ins**aus.
+2. Wählen Sie auf der Seite **Dienste #a0-Add-ins** die Option **Kalender**aus, und wählen Sie aus, ob Personen in Ihrer Organisation ihre Kalender für Personen freigeben können, die sich außerhalb von Office 365 oder Exchange oder mit anderen Personen befinden. 
     Wenn Sie die Option für jeden freigeben auswählen, können Sie auch nur Frei/Gebucht-Informationen freigeben.
 
 3. Klicken Sie unten auf der Seite auf **Änderungen speichern** .

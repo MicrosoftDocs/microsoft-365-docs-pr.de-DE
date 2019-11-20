@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie eine Kommunikationswebsite für Ihre Kampagne.
-ms.openlocfilehash: 8473aa3a5b4e091b25d57939a0897eb257513b75
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e8f7730d1ec407bf24a819df7366d9bedd78d390
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029089"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748276"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Erstellen einer Kommunikationswebsite für Ihre Kampagne
 

@@ -18,29 +18,29 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Hier erfahren Sie, wie Sie Windows-Geräte auf Windows 10 pro Creators Update aktualisieren. '
-ms.openlocfilehash: 5daebb16dcb98ebcdacfb5c7cf330772b24ab753
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 72522626d3d5cd836b47e896202e6c18c06fe0b1
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575486"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718847"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Aktualisieren von Windows-Geräten auf Windows Pro Creators Update
 
 ## <a name="upgrade-to-windows-10-pro-creators-update"></a>Aktualisieren auf Windows 10 pro Creators-Update
   
-1. Um ein Upgrade auf Windows 10 pro Creators Update durchführen zu können, stehen Ihnen mehrere Optionen zur Verfügung. Sie können:
+Um ein Upgrade auf Windows 10 pro Creators Update durchführen zu können, stehen Ihnen mehrere Optionen zur Verfügung. Sie können:
     
-    - Installieren des Upgrades von der [Microsoft-Software Download Website](https://go.microsoft.com/fwlink/?LinkID=836951 ) – wählen Sie diese Option aus, wenn sich das Gerät, auf dem Sie angemeldet sind, auf dem Gerät befindet, das Sie aktualisieren möchten.
-    
-      a. Klicken Sie auf der Seite Software Download auf **Jetzt aktualisieren** , um das Upgrade des Geräts auf Windows 10 pro Creators Update zu starten. 
-    
-     - Erstellen eines Installationsmediums mit dem [Medien Erstellungs Tool](https://go.microsoft.com/fwlink/?LinkID=836960) – wählen Sie diese Option aus, um ein Windows 10 pro Creators Update Installationsmedium (USB-Flashlaufwerk oder ISO-Datei) zu erstellen, um Windows 10 auf einem PC zu installieren, der sich von dem von Ihnen verwendeten unterscheidet.
-    
-        a. Lesen Sie die Anweisungen zur Verwendung des Tools und zum Erstellen Ihrer Installationsmedien. 
+- Installieren des Upgrades von der [Microsoft-Software Download Website](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; wählen Sie diese Option aus, wenn sich das Gerät, auf dem Sie angemeldet sind, auf dem Gerät befindet, das Sie aktualisieren möchten. 
 
-> [!Note]
-> Wenn Sie über Windows-Geräte mit Windows 7 pro, Windows 8 pro oder Windows 8.1 pro verfügen, berechtigt Ihr Microsoft 365 Business-Abonnement zu einem Windows 10-Upgrade – Sie benötigen keinen Product Key.
+    - Klicken Sie auf der Seite Software Download auf **Jetzt aktualisieren** , um das Upgrade des Geräts auf Windows 10 pro Creators Update zu starten. 
+    
+- Erstellen eines Installationsmediums mit dem [Medien Erstellungs Tool](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; wählen Sie diese Option aus, um ein Windows 10 pro Creators Update Installationsmedium (USB-Flashlaufwerk oder ISO-Datei) zu erstellen, um Windows 10 auf einem PC zu installieren, der sich von dem unterscheidet, das Sie verwenden.
+
+    - Lesen Sie die Anweisungen zur Verwendung des Tools und zum Erstellen Ihrer Installationsmedien. 
+
+> [!NOTE]
+> Wenn Sie über Windows-Geräte mit Windows 7 pro, Windows 8 pro oder Windows 8.1 pro verfügen, berechtigt Ihr Microsoft 365 Business-Abonnement zu einem Windows 10-Upgrade; Sie benötigen keinen Product Key.
     
 Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md) zum Abschließen der Einrichtung von Windows 10-Geräten. 
   

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Hier erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business-Benutzer einrichten. '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575566"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718877"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Einrichten von Windows-Geräten für Benutzer von Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Stellen Sie sicher, dass das [Gerät mit Azure AD verbunden ist](#verify-the-dev
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Verbinden von Windows 10-Geräten in Ihrer Organisation mit Azure AD
 
-Nachdem alle Windows-Geräte in Ihrer Organisation entweder auf Windows 10 Pro Creators Update aktualisiert wurden oder bereits Windows 10 Pro Creators Update ausführen, können Sie diese Geräte in Ihrer Organisation mit Azure Active Directory verbinden. Sobald die Geräte verbunden sind, werden sie automatisch auf Windows 10 Business aktualisiert, das Teil Ihres Microsoft 365 Business-Abonnements ist.
+Wenn alle Windows-Geräte in Ihrer Organisation entweder auf Windows 10 pro Creators-Update aktualisiert wurden oder bereits Windows 10 pro Creators Update ausgeführt wurden, können Sie diese Geräte mit der Azure-Active Directory Ihrer Organisation verbinden. Sobald die Geräte verbunden sind, werden Sie automatisch auf Windows 10 Business aktualisiert, das Teil Ihres Microsoft 365 Business-Abonnements ist.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Ganz neue oder neu aktualisierte Windows 10 Pro-Geräte
 
@@ -89,7 +89,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-Wenn Sie Dateien nach OneDrive for Business hochgeladen haben, synchronisieren Sie diese wieder. Wenn Sie ein Drittanbietertool zum Migrieren von Profil und Dateien verwendet haben, synchronisieren Sie diese auch in das neue Profil.
+Wenn Sie Dateien nach OneDrive for Business hochgeladen haben, synchronisieren Sie diese wieder. Wenn Sie ein Drittanbietertool zum Migrieren von Profil und Dateien verwendet haben, synchronisieren Sie diese ebenfalls mit dem neuen Profil.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Stellen Sie sicher, dass das Gerät mit Azure AD verbunden ist
 
@@ -97,7 +97,7 @@ Um Ihren Synchronisierungsstatus zu überprüfen, klicken Sie auf der Seite **Au
   
 Klicken Sie auf der Seite "Synchronisierungsstatus" auf "Synchronisieren", um die neuesten Verwaltungsrichtlinien für Mobilgeräte auf den Computer abzurufen.
   
-Um mit der Verwendung des Microsoft 365 Business-Kontos zu beginen, klicken Sie auf die Windows-Schaltfläche **Start**, klicken Sie mit der rechten Maustaste auf das Bild Ihres aktuellen Kontos, und klicken Sie dann auf **Konto wechseln**. Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
+Um mit dem Microsoft 365 Business-Konto zu beginnen, wechseln Sie zur Windows-Schaltfläche **Start** , klicken Sie mit der rechten Maustaste auf Ihr aktuelles Kontobild, und wechseln Sie dann zu **Konto**. Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

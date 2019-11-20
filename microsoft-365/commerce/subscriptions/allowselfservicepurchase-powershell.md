@@ -1,5 +1,5 @@
 ---
-title: Verwenden von AllowSelfServicePurchase zum Aktivieren oder Deaktivieren von Self-Service-Käufen
+title: Verwenden von AllowSelfServicePurchase für das MSCommerce-PowerShell-Modul
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie das AllowSelfServicePurchase PowerShell-Cmdlet verwenden, um Self-Service-Käufe ein-oder auszuschalten.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9093e018ed24a9e9735f5b6b71084246967cb59d
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: cb035294ff7f6007e73464f88fc69376fc5b8cc1
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676267"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748246"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MSCommerce-PowerShell-Modul
 
@@ -123,6 +123,21 @@ Connect-MSCommerce #sign-in with your global or billing administrator account wh
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate'}
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
+
+## <a name="troubleshooting"></a>Problembehandlung
+
+**Problem**
+
+Die folgende Fehlermeldung wird angezeigt:
+
+    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
+    connection was closed: An unexpected error occurred on a send.
+
+Dies kann an einer älteren Version von Transport Layer Security (TLS) liegen. Um diesen Dienst zu verbinden, müssen Sie TLS 1,2 oder höher verwenden.
+
+**Lösung**
+
+Upgrade auf TLS 1,2:[https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

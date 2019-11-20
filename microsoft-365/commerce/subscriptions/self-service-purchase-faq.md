@@ -13,17 +13,17 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
-ms.openlocfilehash: 9faa573ea2062af2fe49e2810eaecc75ce90c84c
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: cbf30a29ed3948cb3b20da919835ed2524163617
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37911386"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721649"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
 > [!NOTE]
-> Die Informationen in diesem Artikel gelten nur für Microsoft Power Platform-Abonnements (Power BI, PowerApps und Flow).
+> Die Informationen in diesem Artikel gelten nur für Microsoft Power Platform-Abonnements (Power BI, Power apps und Power automatisieren).
 
 ## <a name="general"></a>Allgemein
 
@@ -31,10 +31,10 @@ ms.locfileid: "37911386"
 
 Update am 31. Oktober 2019: seit der letzten Woche hören wir auf Kundenfeedback bezüglich der Einführung unserer Self-Service-Kauf Funktionen für Power Platform-Produkte. Basierend auf dem Feedback nehmen wir die folgenden Änderungen an unserem Plan vor:
 
-- Am 19. November stellen wir IT-Administratoren eine Möglichkeit bereit, Self-Service-Einkauf auf Produktbasis über PowerShell zu deaktivieren. Weitere Informationen finden Sie in Kürze.
+- Am 19. November stellen wir IT-Administratoren eine Möglichkeit bereit, Self-Service-Einkauf auf Produktbasis über PowerShell zu deaktivieren. Informationen zur Verwendung finden Sie unter [use AllowSelfServicePurchase for the MSCommerce PowerShell Module](allowselfservicepurchase-powershell.md).
 - Um mehr Zeit für die Vorbereitung auf diese Änderung zu schaffen, aktualisieren wir den Start von Self-Service-Kauf Funktionen für Power Platform-Produkte, um am 14. Januar für alle kommerziellen Cloud-Kunden mit Power BI zu beginnen.  
 
-Ab dem 14. Januar 2020 werden Self-Service Purchase-, Subscription-und License Management-Funktionen für Power Platform-Produkte (Power BI, PowerApps und Flow) für kommerzielle Cloud-Kunden in den Vereinigten Staaten verfügbar sein. Mit Self-Service Purchase können Benutzer neue Technologien ausprobieren und Lösungen entwickeln, die letztlich ihren größeren Organisationen zugute kommen. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind. Zentrale Beschaffungs-und IT-Teams haben eine Sichtbarkeit für alle Benutzer, die Self-Service-Kauf Lösungen über das <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> kaufen und bereitstellen, und können Self-Service-Einkauf pro Produkt über PowerShell deaktivieren.
+Ab dem 14. Januar 2020 werden Self-Service Purchase-, Subscription-und License Management-Funktionen für Power Platform-Produkte (Power BI, Power apps und Power Automation) für kommerzielle Cloud-Kunden in den Vereinigten Staaten verfügbar sein. Mit Self-Service Purchase können Benutzer neue Technologien ausprobieren und Lösungen entwickeln, die letztlich ihren größeren Organisationen zugute kommen. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind. Zentrale Beschaffungs-und IT-Teams haben eine Sichtbarkeit für alle Benutzer, die Self-Service-Kauf Lösungen über das <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> kaufen und bereitstellen, und können Self-Service-Einkauf pro Produkt über PowerShell deaktivieren.
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Warum wird von Microsoft eine Self-Service-Kaufoption für die Produkte der Power Platform hinzugefügt?
 
@@ -42,7 +42,7 @@ In der heutigen Welt suchen Endbenutzer und Abteilungen zunehmend nach und kaufe
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>Wann ist Self-Service-Erwerb für die Produkte der Power Platform verfügbar?
 
-Microsoft startet Self-Service-Kauf für Power BI am 14. Januar 2020 an Kunden in den Vereinigten Staaten, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. PowerApps und Microsoft Flow werden in den folgenden Wochen hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
+Microsoft startet Self-Service-Kauf für Power BI am 14. Januar 2020 an Kunden in den Vereinigten Staaten, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. Power apps und Power Automation werden in den folgenden Wochen hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Kann Self-Service-Einkauf für Dienste außerhalb der Power Platform-Produkte aktiviert werden?
 
@@ -52,7 +52,7 @@ Zu diesem Zeitpunkt sind die Power Platform-Produktfamilie die einzigen Dienste,
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>Wie macht ein Kunde einen Self-Service-Kauf?
 
-Kunden können einen Self-Service-Einkauf online über die Microsoft Power BI-, PowerApps-und Flow-Websites tätigen. Kunden werden zuerst aufgefordert, eine e-Mail-Adresse einzugeben, um sicherzustellen, dass Sie ein Benutzer in einem vorhandenen Azure-Active Directory (AD)-Mandanten sind, und dann werden Sie zur Anmeldung mit ihren Azure AD Anmeldeinformationen umgeleitet. Nachdem Sie sich angemeldet haben, wird der Kunde aufgefordert auszuwählen, wie viele Abonnements er kaufen möchte und Kreditkartenzahlungen bereitzustellen. Wenn der Kauf abgeschlossen ist, können Sie mit der Verwendung des Abonnements beginnen. Der Käufer kann außerdem auf eine beschränkte Ansicht des <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin Centers</a> zugreifen, in der andere Personen in Ihrer Organisation die Verwendung des Produkts ermöglichen können.
+Kunden können online einen Self-Service-Einkauf über die Websites von Microsoft Power BI, Power apps und Power automatisieren tätigen. Kunden werden zuerst aufgefordert, eine e-Mail-Adresse einzugeben, um sicherzustellen, dass Sie ein Benutzer in einem vorhandenen Azure-Active Directory (AD)-Mandanten sind, und dann werden Sie zur Anmeldung mit ihren Azure AD Anmeldeinformationen umgeleitet. Nachdem Sie sich angemeldet haben, wird der Kunde aufgefordert auszuwählen, wie viele Abonnements er kaufen möchte und Kreditkartenzahlungen bereitzustellen. Wenn der Kauf abgeschlossen ist, können Sie mit der Verwendung des Abonnements beginnen. Der Käufer kann außerdem auf eine beschränkte Ansicht des <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin Centers</a> zugreifen, in der andere Personen in Ihrer Organisation die Verwendung des Produkts ermöglichen können.
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>Was sind die Zahlungsoptionen für Self-Service-Käufe?
 
@@ -60,7 +60,9 @@ Derzeit ist Kreditkarte die einzige verfügbare Zahlungsmethode. Die Zahlung üb
 
 ### <a name="who-can-buy-through-self-service-purchase"></a>Wer kann durch Self-Service-Erwerb kaufen?
 
-Jeder Benutzer mit einem nicht-Gast-Benutzerkonto in einem verwalteten Azure AD Mandanten kaufen kann. Diese Funktion steht derzeit nicht für Mandanten zur Verfügung, die Regierungs-, gemeinnützige oder Bildungseinrichtungen sind. Benutzer in Organisationen oder Märkten, für die kein Self-Service-Kauf berechtigt ist, erhalten eine Meldung, in der Sie aufgefordert werden, Ihren IT-Administrator so wie heute zu kontaktieren.
+Jeder Benutzer mit einem nicht-Gast-Benutzerkonto in einem verwalteten Azure AD Mandanten kaufen kann. Diese Funktion steht derzeit nicht für Mandanten zur Verfügung, die Regierungs-, gemeinnützige oder Bildungseinrichtungen sind. Wenn dies auf Ihre Organisation zutrifft, ist zu diesem Zeitpunkt keine zusätzliche Aktion erforderlich, um den Self-Service-Kauf zu steuern.
+
+Benutzer in Organisationen oder Märkten, für die kein Self-Service-Kauf berechtigt ist, erhalten eine Meldung, in der Sie aufgefordert werden, Ihren IT-Administrator so wie heute zu kontaktieren.
 
 ### <a name="can-guest-users-buy-through-self-service-purchase"></a>Können Gastbenutzer durch Self-Service-Erwerb kaufen?
 
@@ -98,6 +100,8 @@ Die Person, die das Abonnement über Self-Service Purchase kauft, wird in Rechnu
 
 Administratoren können alle Self-Service-Käufe anzeigen, die in Ihrer Organisation im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>vorgenommen wurden. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Bestellverlauf, den Kaufpreis und die zugewiesenen Benutzer für jeden Self-Service-Kauf anzeigen. Wenn es für Ihre Organisation erforderlich ist, können Administratoren Self-Service-Einkauf pro Produkt über PowerShell deaktivieren. Administratoren haben die gleiche Datenverwaltung und Zugriffsrichtlinien für Produkte, die über Self-Service Purchase oder zentral erworben wurden.
 
+Administratoren können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe tätigen können. Weitere Informationen finden Sie unter [use AllowSelfServicePurchase for the MSCommerce PowerShell Module](allowselfservicepurchase-powershell.md).
+
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Wie respektiert Microsoft die Datensteuerung und Compliance, indem Self-Service-Käufe aktiviert werden?
 
 Administratoren behalten die Kontrolle darüber, welche Dienste und Produkte in Ihrem Mandanten basierend auf Ihren Anforderungen an die Datensteuerung und Compliance aktiviert werden. Darüber hinaus gelten alle Datenverwaltungsdienste und Zugriffsrichtlinien, die Ihre Organisation aktiviert hat, auf Self-Service-Dienste, die für aktivierte Dienste erworben werden.
@@ -108,11 +112,11 @@ Daten, die aus Produkten erstellt wurden, die über Self-Service Purchase erworb
 
 ### <a name="how-do-i-centralize-the-purchases-made-through-self-service-purchase"></a>Wie kann ich die durch Self-Service Purchase getätigten Käufe zentralisieren?
 
-Administratoren können vorhandene Lizenzen zuweisen oder zusätzliche Abonnements von Power Platform-Produkten (Power BI, PowerApps und Microsoft Flow) über vorhandene Vereinbarungen und Preise für Benutzer erwerben, die Self-Service-Käufen zugewiesen sind. Nach dem Zuweisen dieser zentral erworbenen Lizenzen können Administratoren dann anfordern, dass die Käufer Ihre vorhandenen Abonnements kündigen. Microsoft untersucht Möglichkeiten zur Vereinfachung und Rationalisierung dieses Prozesses für Administratoren in der Zukunft.
+Administratoren können vorhandene Lizenzen zuweisen oder zusätzliche Abonnements von Power Platform-Produkten (Power BI, Power apps und Power Automation) über vorhandene Vereinbarungen und Preise für Benutzer erwerben, die Self-Service-Käufen zugewiesen sind. Nach dem Zuweisen dieser zentral erworbenen Lizenzen können Administratoren dann anfordern, dass die Käufer Ihre vorhandenen Abonnements kündigen. Microsoft untersucht Möglichkeiten zur Vereinfachung und Rationalisierung dieses Prozesses für Administratoren in der Zukunft.
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>Wo sieht der Administrator Self-Service-Käufe?
 
-Globale und Abrechnungs Administratoren können Abonnements, die über Self-Service Purchase in **Billing** > Products erworben wurden,**#a0 Dienste** im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> zusammen mit allen anderen Abonnements anzeigen, die über Central erworben wurden. Beschaffung. Sie können die Liste nur auf die Abonnements filtern, die über die zentrale Beschaffung erworben wurden, oder auch Abonnements, die über Self-Service Purchase erworben wurden.
+Globale und Abrechnungs Administratoren können Abonnements, die über Self-Service Purchase in **Billing** > Products erworben wurden,**#a0 Dienste** im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> zusammen mit allen anderen Abonnements anzeigen, die über die zentrale Beschaffung erworben wurden. Sie können die Liste nur auf die Abonnements filtern, die über die zentrale Beschaffung erworben wurden, oder auch Abonnements, die über Self-Service Purchase erworben wurden.
 
 Administratoren können das Produkt, den Käufer Namen, das erworbene Abonnement, das Ablaufdatum, den Bestellverlauf, den Kaufpreis und die zugewiesenen Benutzer sehen.
 
@@ -126,10 +130,9 @@ IT-Abteilungen und Partner werden nicht erwartet, dass Sie Unterstützung für P
 
 Self-Service-Käufer verwenden nicht die Premier-Support-Vorfälle eines Kunden, um Unterstützung für Self-Service-Käufe zu erhalten.
 
-
 ### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>Wie wird erwartet, dass Benutzerschulungen zu den Produkten erhalten, die Sie über Self-Service Purchase kaufen?
 
-Umfassende Schulungen für Benutzer finden Sie auf den Microsoft Power BI-, PowerApps-und Flow-Websites. Die Produkte haben geleitetes lernen, Dokumentation, Beispiele und starke Communities, um Antworten und Tipps direkt von anderen Benutzern zu erhalten.
+Umfassende Schulungen für Benutzer finden Sie auf den Websites Microsoft Power BI, Power apps und Power automatisieren. Die Produkte haben geleitetes lernen, Dokumentation, Beispiele und starke Communities, um Antworten und Tipps direkt von anderen Benutzern zu erhalten.
 
 ### <a name="what-happens-to-a-self-service-purchase-if-a-user-leaves-the-organization"></a>Was geschieht mit einem Self-Service-Kauf, wenn ein Benutzer die Organisation verlässt?
 
