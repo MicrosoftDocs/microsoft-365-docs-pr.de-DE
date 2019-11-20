@@ -83,6 +83,7 @@
 ### [Verwaltung mobiler Geräte](contoso-mdm.md)
 ### [Schutz von Daten](contoso-info-protect.md)
 ### [Sicherheitszusammenfassung](contoso-security-summary.md)
+### [Team für ein streng geheimes Projekt](contoso-team-for-top-secret-project.md)
 ### [SharePoint-Website für streng regulierte Daten](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 ## [Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte](microsoft-365-deploment-guide-changes.md)
 # [Bereitstellungscenter für Desktop](desktop-deployment-center-home.md)
