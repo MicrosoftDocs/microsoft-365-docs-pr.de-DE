@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38686138"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718684"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -421,13 +421,13 @@ Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enth
 
 - **actionDimensionValues:** Doppelte durch Semikolons getrennte Liste der entsprechenden Dimensionen auf der Registerkarte Dimensionen mit folgendem Format:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     Beispiel:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -461,7 +461,7 @@ Vorlagen und Bewertungen unterstützen die Verwendung von Abschriften Sprache f�
 
 Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Beispiel:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -480,15 +480,16 @@ Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei L
 
 Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Beispiel:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 Dieser Text wird wie folgt gerendert: Klicken Sie [hier](https://www.microsoft.com) , um zur Startseite von Microsoft zu gelangen.
+
 Wie im obigen Beispiel dargestellt, rendert Compliance Manager keine URLs mit Unterstreichung.
 
-Fett formatierter Text ist nur zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Beispiel:
+Fett formatierter Text ist zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Beispiel:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **Dieser Text wird fett dargestellt**
