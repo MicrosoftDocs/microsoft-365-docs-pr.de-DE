@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 9a1ca4898696923b7dcbe22879906b25ccebcd13
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "38710042"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757652"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Aktionsplan für Microsoft 365 NIST 800-53 – Die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und danach
 
@@ -25,7 +25,7 @@ Microsoft 365 ermöglicht den Einsatz eines Cloud Control Framework, das Steuere
 
 Microsoft gilt in Bezug auf Cloudsicherheit als einer der Branchenführer. Aufbauend auf jahrelanger Erfahrung mit der Entwicklung von Unternehmenssoftware und der Ausführung von Onlinediensten, lernt unser Team laufend weiter und aktualisiert unsere Dienste und Anwendungen, um einen sicheren Cloudproduktivitätsdienst bereitzustellen, der die strengen Branchenstandards der Compliance erfüllt. Die Clouddienste von Microsoft für Regierungsbehörden, darunter Office 365 U.S. Government, erfüllen die anspruchsvollen Anforderungen des US Federal Risk and Authorization Management Program (FedRAMP) und ermöglichen den US-Regierungsbehörden, die Vorteile von Kostenersparnissen und der strengen Sicherheit der Microsoft-Cloud zu nutzen.
 
-In diesem Artikel finden Sie einen nach Priorität aufgeschlüsselten Aktionsplan, den Sie abarbeiten können, um die Anforderungen der ISO/IEC 800-53 zu erfüllen. Dieser Aktionsplan wurde in Zusammenarbeit mit Protiviti entwickelt, einem auf gesetzliche Compliance spezialisierten Microsoft-Partner. Weitere Informationen zur Nutzung dieses Aktionsplans erhalten Sie auf Microsoft Ignite in der Session [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), präsentiert von Maithili Dandige (Microsoft) und Antonio Maio (Protiviti).
+Dieser Artikel beinhaltet einen nach Prioritäten aufgeschlüsselten Aktionsplan, dem Sie folgen können, um die Anforderungen von NIST 800-53 zu erfüllen. Dieser Aktionsplan wurde in Zusammenarbeit mit Protiviti, einem Microsoft-Partner, der sich auf die Einhaltung gesetzlicher Vorschriften spezialisiert hat, entwickelt. 
 
 ## <a name="action-plan-outcomes"></a>Ergebnisse des Aktionsplans
 
