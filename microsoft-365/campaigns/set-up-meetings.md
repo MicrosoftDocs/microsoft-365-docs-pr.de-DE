@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Onlinebesprechungen mit Microsoft Teams.
-ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772302"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753584"
 ---
 # <a name="set-up-meetings"></a>Einrichten von Besprechungen
 
@@ -40,8 +40,8 @@ Laden Sie eine Infografik in [PDF](https://go.microsoft.com/fwlink/?linkid=20787
 ## <a name="best-practices"></a>Bewährte Methoden
 
 Befolgen Sie diese bewährten Methoden für Ihre Onlinebesprechungen:
-1. Planen Sie Ihre Onlinebesprechungen direkt in Microsoft Teams. Sie können ein Team und einen Kanal auswählen, und Teams werden die Teilnehmer dieses Teams oder Kanals automatisch einladen.
-2. Sie benötigen eine spontane Besprechung? Wenn Sie sich in einem Einzelchat befinden, wählen Sie **jetzt** beginnen, um einen Video-oder Audioanruf mit der Person zu starten, mit der Sie chatten. 
+- Planen Sie Ihre Onlinebesprechungen direkt in Microsoft Teams. Sie können ein Team und einen Kanal auswählen, und Teams werden die Teilnehmer dieses Teams oder Kanals automatisch einladen.
+- Sie benötigen eine spontane Besprechung? Wenn Sie sich in einem Einzelchat befinden, wählen Sie **jetzt** beginnen, um einen Video-oder Audioanruf mit der Person zu starten, mit der Sie chatten. 
 
 
 ## <a name="schedule-a-meeting"></a>Planen einer Besprechung

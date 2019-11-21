@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Rechnungen durch Abrechnungsprofile unterstützt werden.
 keywords: Abrechnungsprofil, Rechnungen, Gebühren, verwaltete Gebühren
-ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029049"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753544"
 ---
 # <a name="manage-billing-profiles"></a>Verwalten von Abrechnungs Profilen
 Für kommerzielle Kunden, die Produkte und Dienste von Microsoft kaufen, können Sie mit Abrechnungs Profilen anpassen, welche Elemente in Ihrer Rechnung enthalten sind, und wie Sie Ihre Rechnungen bezahlen.
 
 Abrechnungsprofile umfassen die folgenden Informationen:
 
-- **Abrechnungskonto** &mdash; Name des Abrechnungskontos, mit dem das Profil verknüpft ist
-- **Zahlungsmethoden** &mdash; Kredit-oder Debitkarten, Bankkonten, Schecks oder Überweisungen
-- **Kontaktinformationen** &mdash; Rechnungsadresse und Kontakt Name
-- Währung für **Rechnungseinstellungen** &mdash; basierend auf dem Land des Abrechnungskontos, einer optionalen Bestellnummer und der Option zum Empfangen von Rechnungen als e-Mail-Anlagen
-- **Berechtigungs** &mdash; Berechtigungen, mit denen Sie das Abrechnungsprofil ändern, Rechnungen bezahlen oder die Zahlungsmethode für das Abrechnungsprofil verwenden können, um Einkäufe zu tätigen
+- **Abrechnungskonto** &ndash; Name des Abrechnungskontos, mit dem das Profil verknüpft ist
+- **Zahlungsmethoden** &ndash; Kredit-oder Debitkarten, Bankkonten, Schecks oder Überweisungen
+- **Kontaktinformationen** &ndash; Rechnungsadresse und Kontakt Name
+- Währung für **Rechnungseinstellungen** &ndash; basierend auf dem Land des Abrechnungskontos, einer optionalen Bestellnummer und der Option zum Empfangen von Rechnungen als e-Mail-Anlagen
+- **Berechtigungs** &ndash; Berechtigungen, mit denen Sie das Abrechnungsprofil ändern, Rechnungen bezahlen oder die Zahlungsmethode für das Abrechnungsprofil verwenden können, um Einkäufe zu tätigen
 
 Verwenden Sie Abrechnungsprofile, um Ihre Käufe zu steuern und ihre Rechnung anzupassen. Für die Produkte, die mit dem Abrechnungsprofil gekauft wurden, wird eine monatliche Rechnung generiert. Sie können die Rechnung wie das Aktualisieren der Bestellnummer und der e-Mail-Rechnungs Präferenz anpassen.
 

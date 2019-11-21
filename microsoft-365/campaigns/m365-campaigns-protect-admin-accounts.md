@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihre Administratorkonten einrichten und schützen.
-ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 76c90b48e0f0859ed856b6e3dc772aedfc2ccdaf
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772472"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753742"
 ---
 # <a name="protect-your-administrator-accounts"></a>Schützen Ihrer Administratorkonten
 
-Da die Administratorkonten mit erhöhten Rechten ausgestattet sind, sind Sie wertvolle Ziele für Hacker und Cyber-Kriminelle. Inhalt dieses Artikels
+Da Administratorkonten mit erhöhten Rechten ausgestattet sind, sind Sie wertvolle Ziele für Hacker und Cyber-Kriminelle. Inhalt dieses Artikels
 
 - Einrichten eines zusätzlichen Administratorkontos für Notfälle.
 - Wie diese Konten geschützt werden.
@@ -38,9 +38,9 @@ Wenn Sie sich für Microsoft 365 Business registrieren und Ihre Informationen ei
 
 ## <a name="create-additional-admin-accounts"></a>Erstellen zusätzlicher Administratorkonten
 
-Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um Konten, Geräte und während der Arbeit an anderen Verwaltungsfunktionen zu verwalten. Es empfiehlt sich auch, die Microsoft 365 Business License aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
+Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und bei Bedarf nur Ihr Administratorkonto verwenden, um Konten und Geräte zu verwalten, sowie bei der Arbeit an anderen Verwaltungsfunktionen. Es empfiehlt sich auch, die Microsoft 365 Business License aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
 
-Sie möchten mindestens ein zusätzliches globales Administratorkonto einrichten, um Administratorzugriff auf einen anderen vertrauenswürdigen Mitarbeiter zu erhalten. Sie können auch separate Administratorkonten für die Benutzerverwaltung erstellen (diese Rolle wird als **Benutzer Verwaltungs Administrator**bezeichnet). Weitere Informationen finden Sie unter Informationen [zu Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
+Sie möchten mindestens ein zusätzliches globales Administratorkonto einrichten, um Administratorzugriff auf einen anderen vertrauenswürdigen Mitarbeiter zu erhalten. Sie können auch separate Administratorkonten für die Benutzerverwaltung erstellen (diese Rolle wird als **Benutzer Verwaltungs Administrator**bezeichnet). Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 So erstellen Sie zusätzliche Administratorkonten:
 
@@ -48,10 +48,10 @@ So erstellen Sie zusätzliche Administratorkonten:
 
     ![Wählen Sie Benutzer und dann aktive Benutzer im linken Navigationsbereich aus.](media/Activeusers.png)
 
-2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Benutzer hinzufügen** oben auf der Seite aus, und geben Sie im Bereich **neuer Benutzer** den Namen und andere Informationen ein.
+2. Wählen Sie auf der Seite **aktive Benutzer** oben auf der Seite **einen Benutzer hinzufügen** aus, und geben Sie im Bereich **neuer Benutzer** den Namen und andere Informationen ein.
 3. Erweitern Sie den Abschnitt **Rollen** , und wählen Sie **globaler Administrator** aus, um diesem Benutzer den globalen Administratorzugriff zu gewähren. Sie können auch **benutzerdefinierten Administrator** auswählen und eine der Rollen auswählen, die angezeigt werden.
 
-    Geben Sie eine Alternative e-Mail in das Textfeld Alternative e-Mail-Adresse ein. Sie können diese Adresse verwenden, um Ihre Kennwortinformationen wiederherzustellen, wenn Sie gesperrt werden. Für globale Administratoren wird auch eine Abrechnungs Anweisung an diese Adresse gesendet.
+    Geben Sie eine Alternative e-Mail in das Textfeld **Alternative e-Mail-Adresse** ein. Sie können diese Adresse verwenden, um Ihre Kennwortinformationen wiederherzustellen, wenn Sie gesperrt werden. Für globale Administratoren wird auch eine Abrechnungs Anweisung an diese Adresse gesendet.
 
     ![Auswählen der Administratorrolle](media/adminroles.png)
     
@@ -61,7 +61,7 @@ So erstellen Sie zusätzliche Administratorkonten:
 
 ## <a name="create-an-emergency-admin-account"></a>Erstellen eines Notfall Administratorkontos
 
-Sie sollten auch ein sicherungskonto erstellen, das nicht mit mehrstufiger Authentifizierung (Multi-Factor Authentication, MFA) eingerichtet ist, damit Sie sich nicht versehentlich selbst verschließen (beispielsweise wenn Sie Ihr Telefon verlieren, das Sie als Sekunde von der Überprüfung verwenden). Stellen Sie sicher, dass das Kennwort für dieses Konto ein Ausdruck oder mindestens 16 Zeichen lang ist. Dies wird häufig als "Break-Glass-Konto" bezeichnet.
+Sie sollten auch ein sicherungskonto erstellen, das nicht mit mehrstufiger Authentifizierung (Multi-Factor Authentication, MFA) eingerichtet ist, damit Sie sich nicht versehentlich selbst verschließen (beispielsweise wenn Sie Ihr Telefon verlieren, das Sie als zweite Überprüfung verwenden). Stellen Sie sicher, dass das Kennwort für dieses Konto ein Ausdruck oder mindestens 16 Zeichen lang ist. Dies wird häufig als "Break-Glass-Konto" bezeichnet.
 
 ## <a name="create-a-user-account-for-yourself"></a>Erstellen eines Benutzerkontos für sich selbst
 
@@ -69,7 +69,7 @@ Verwenden Sie Ihr Benutzerkonto, um an der Zusammenarbeit mit Ihrer Organisation
 
 So erstellen Sie ein neues Benutzerkonto:
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Admin Center</a> , und wählen Sie dann **Benutzer** \> **aktive Benutzer** im linken Navigationsbereich aus.
-2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Benutzer hinzufügen** oben auf der Seite aus, und geben Sie im Bereich **neuer Benutzer** den Namen und andere Informationen ein.
+2. Wählen Sie auf der Seite **aktive Benutzer** oben auf der Seite **einen Benutzer hinzufügen** aus, und geben Sie im Bereich **neuer Benutzer** den Namen und andere Informationen ein.
 3. Erweitern Sie den Abschnitt **Rollen** , und wählen Sie **Benutzer (kein Administratorzugriff)** aus.
 1. Stellen Sie im Abschnitt **Produktlizenzen** den Selektor für **Microsoft 365 Business** auf **ein**. 
 

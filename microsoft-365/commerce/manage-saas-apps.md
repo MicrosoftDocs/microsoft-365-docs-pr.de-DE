@@ -11,22 +11,22 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029029"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753554"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Verwalten von Drittanbieter-App-Abonnements für Ihre Organisation
 
 Sie können Lizenzen und Abrechnung für Drittanbieter-apps im Microsoft 365 Admin Center mit aktiviertem Vorschaumodus verwalten. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen sowie eine verbesserte Flexibilität bei der Verwaltung von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Commerce-Plattform von Microsoft. Dies gilt für Software-as-a-Service-apps, die Kunden direkt kaufen oder von einem Drittanbieter.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>So erhalten Sie Software-as-a-Service-apps
-Es gibt einige Möglichkeiten, Drittanbieter-apps zu erwerben.
+Es gibt einige Möglichkeiten, Apps von Drittanbietern zu erwerben.
 - **Direkterwerb** – Kunden können direkt Abonnements von [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)oder [AppSource](https://www.appsource.com/)kaufen. 
 - **Partner Einkauf** – arbeiten Sie mit einem Partner über das Partner Center zusammen, um Abonnements zu erwerben. 
-- **Microsoft Proposal** – reagieren Sie auf einen Vorschlag von Microsoft Sales, der Drittanbieter-apps enthält. 
+- **Microsoft Proposal** – reagieren Sie auf einen Vorschlag von Microsoft Sales, der apps von Drittanbietern enthält. 
 
 Sobald Kunden die apps kaufen und die Microsoft-Kundenvereinbarung akzeptieren, können Sie diese im Microsoft 365 Admin Center oder im Microsoft Store for Business verwalten.
 
@@ -50,9 +50,9 @@ Unterstützung für Drittanbieter-Apps ist in diesen Regionen verfügbar:
 - Westeuropa
 
 ## <a name="set-up-app"></a>Einrichten der APP
-Administratoren müssen Drittanbieter-Apps aktivieren, bevor Sie Sie Benutzern zuweisen. Sie werden im Portal des Drittanbieter-Herausgebers aktiviert. 
+Administratoren müssen apps von Drittanbietern aktivieren, bevor Sie Sie Benutzern zuweisen. Diese apps werden im Portal des Drittanbieters des Herausgebers aktiviert. 
 
-**So aktivieren Sie Drittanbieter-apps**
+**So aktivieren Sie apps von Drittanbietern**
 1. Wechseln Sie zu [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=837890), und aktivieren **Sie die Vorschau testen**.
 2. Wählen Sie **Abrechnungs** > **Produkte #a0 Dienste** > -**apps**aus.
 3. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus. 
@@ -60,7 +60,7 @@ Administratoren müssen Drittanbieter-Apps aktivieren, bevor Sie Sie Benutzern z
 
 Sie werden zur Website des App-Herausgebers weitergeleitet, auf der Sie die APP aktivieren können. 
 
-## <a name="managing-3rd-party-apps"></a>Verwalten von Drittanbieter-apps
+## <a name="managing-third-party-apps"></a>Verwalten von Drittanbieter-apps
 Administratoren verwalten Drittanbieter-apps an zwei Standorten: Microsoft 365 Admin Center und das Portal des Drittanbieter-App-Anbieters. Hier sehen Sie, was Sie in jedem Portal tun können.
 
 ### <a name="app-status"></a>App-Status
@@ -71,9 +71,9 @@ Sobald die App aktiviert ist, bleibt sie aktiv, es sei denn, Sie wird abgebroche
 | Lizenzmenge ändern <br> Verwalten der Bezahlung Ihrer Rechnung <br> Verwalten der Bezahlung Ihrer Rechnung <br> Zahlungsmethode ändern (Kreditkarte) <br> Rechnung anzeigen <br> App-Abonnement kündigen | Einrichten der APP (einmal für jede APP) <br> Zuweisen von Lizenzen für Benutzer <br> Technischer Support |
 
 ## <a name="assign-licenses"></a>Zuweisen von Lizenzen
-Administratoren müssen Drittanbieter-Apps aktivieren, bevor Sie Sie Benutzern zuweisen. Sie werden im Portal des Drittanbieter-Herausgebers aktiviert. Wählen Sie auf der Seite app unter Einstellungen #a0 Aktionen den Link zum Zuweisen von Lizenzen aus.
+Administratoren müssen apps von Drittanbietern aktivieren, bevor Sie Sie Benutzern zuweisen. Sie werden im Portal des Drittanbieters des Herausgebers aktiviert. Wählen Sie auf der Seite app unter **Einstellungen #a0 Aktionen**den Link zum Zuweisen von Lizenzen aus.
 
-**So weisen Sie Drittanbieter-apps zu**
+**So weisen Sie apps von Drittanbietern zu**
 
 1. Wechseln Sie zu [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=837890), und aktivieren **Sie die Vorschau testen**.
 2. Wählen Sie **Abrechnungs** > **Produkte #a0 Dienste** > -**apps**aus.
@@ -99,7 +99,7 @@ Software-as-a-Service-apps haben jeweils ein Abrechnungsprofil zugewiesen. Mit A
 
 Weitere Informationen zu Abrechnungs Profilen finden Sie unter [Understanding Billing Profiles](https://docs.microsoft.com/microsoft-store/billing-profile). 
 
-**So ändern Sie das Abrechnungsprofil in einem Software-as-a-Service-APP-Abonnement**
+**So ändern Sie das Abrechnungsprofil für ein Software-as-a-Service-APP-Abonnement**
 
 1. Wechseln Sie zu [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=837890), und aktivieren **Sie die Vorschau testen**.
 2. Wählen Sie **Abrechnungs** > **Produkte #a0 Dienste** > -**apps**aus.

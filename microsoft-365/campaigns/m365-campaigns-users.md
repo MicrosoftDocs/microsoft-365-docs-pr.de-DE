@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie sich Microsoft 365 für Kampagnen auf Ihre Benutzer auswirkt.
-ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031240"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753594"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
 
@@ -74,7 +74,3 @@ Ihre Benutzer sind möglicherweise versucht, ihre Organisationsdateien an andere
 
 ## <a name="set-up-managed-windows-10-devices"></a>Einrichten von verwalteten Windows 10-Geräten
 Es wird empfohlen, dass Ihre wichtigsten Mitarbeiter frisch erworbene Windows 10-Geräte verwenden, die Sie verwalten. In diesem Artikel erfahren Sie, wie Sie [diese Geräte verwalten und sichern](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)können. Dadurch wird sichergestellt, dass Mitarbeiter, die das höchste Wert Ziel für Hacker sind, den größtmöglichen Schutz erhalten. 
-
-
-
-  

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Richtlinien für die Kommunikations Konformität zum Konfigurieren der Mitarbeiterkommunikation für die Überprüfung.
-ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686040"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755603"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Konfigurieren der Kommunikations Kompatibilität für Microsoft 365 (Vorschau)
 
@@ -42,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um die Kommunikations Konformität in Ih
 
 - **Schritt 2 (erforderlich)**: [Stellen Sie die Kommunikations Konformität in Ihrer Organisation zur Verfügung](#step-2-make-communication-compliance-available-in-your-organization-required) .
 
-    Fügen Sie sich selbst der **Aufsichts Überprüfungs Administrator** Rolle hinzu, damit Sie Richtlinien einrichten können. Außerdem müssen Sie Personen oder Gruppen, die Ermittlungs-und Korrekturaktionen für Nachrichten mit Richtlinien Übereinstimmungen durchführen, die **Fallverwaltung** und die **Überprüfungs** Rollen zuweisen. Jeder, dem diese Rollen zugewiesen sind, kann im Microsoft 365 Compliance Center auf die Seite " **Kommunikations Kompatibilität** " zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
+    Fügen Sie sich selbst der **Aufsichts Überprüfungs Administrator** Rolle hinzu, damit Sie Richtlinien einrichten können. Sie müssen außerdem eine Gruppe mit dem **Aufsichts Überprüfungs Administrator**, der **Fallverwaltung** und den **Überprüfungs** Rollen für Personen oder Gruppen erstellen, die Ermittlungs-und Korrekturaktionen für Nachrichten mit Richtlinien Übereinstimmungen durchführen sollen. Jeder, dem diese Rollen zugewiesen sind, kann im Microsoft 365 Compliance Center auf die Seite " **Kommunikations Kompatibilität** " zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
 
 - **Schritt 3 (erforderlich)**: [Einrichten einer Kommunikations Konformitätsrichtlinie](#step-3-create-a-communication-compliance-policy-required)
 
@@ -77,29 +77,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Schritt 2: Bereitstellen der Kommunikations Kompatibilität in Ihrer Organisation (erforderlich)
 
-Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle "Aufsichts Überprüfungs Administrator" zugewiesen sein. Um Nachrichten mit Richtlinien Übereinstimmungen zu untersuchen und zu beheben, müssen Sie die Rollen " **Fallverwaltung** " und " **überprüfen** " zugewiesen haben.
-  
-Dazu können Sie sich entweder selbst als Mitglied der Rollengruppe aufsichtsüberprüfung hinzufügen oder eine neue Rollengruppe erstellen.
-  
-### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a>Hinzufügen erforderlicher Rollen zur Supervisory Prüfer-Rollengruppe
-
-1. Melden Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
-
-2. Wechseln Sie im Microsoft 365 Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
-
-3. Wählen Sie die Rollengruppe **aufsichtsüberprüfung** aus, und klicken Sie dann auf der Seite Details im Abschnitt **zugewiesene Rollen** auf **Bearbeiten** .
-
-4. Wählen Sie **Bearbeiten**und dann **Hinzufügen**aus. Aktivieren Sie das Kontrollkästchen für **Fallverwaltung** und- **Überprüfung**, und wählen Sie dann **Hinzufügen**aus.
-
-5. Wählen Sie **Fertig**aus, und klicken Sie dann auf **Speichern**.
-
-6. Wählen Sie im Abschnitt **Mitglieder** die Option **Bearbeiten** aus, um die Personen hinzuzufügen, die die Kommunikations Konformität für Ihre Organisation verwalten möchten.
-
-7. Wählen Sie **Bearbeiten**und dann **Hinzufügen**aus. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen**aus.
-
-8. Wählen Sie **Fertig**aus, und klicken Sie dann auf **Speichern**.
-
-9. Klicken Sie auf **Schließen** , um die Seite Rollengruppen Details zu verlassen.
+Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle " **Aufsichts Überprüfungs Administrator** " zugewiesen sein. Um Nachrichten mit Richtlinien Übereinstimmungen zu untersuchen und zu beheben, müssen Sie darüber hinaus eine Gruppe für Bearbeiter mit dem **Aufsichts Überprüfungs Administrator**, der **Fallverwaltung** und den **Überprüfungs** Rollen erstellen.
 
 ### <a name="create-a-new-role-group"></a>Erstellen einer neuen Rollengruppe
 

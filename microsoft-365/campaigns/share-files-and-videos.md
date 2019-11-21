@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigeben von Dateien und Videos in Ihrer Kampagne mit Microsoft Teams und SharePoint.
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031190"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753614"
 ---
 # <a name="share-files-and-videos"></a>Freigeben von Dateien und Videos
 
-Wenn Sie steuern müssen, wer welche Dateien anzeigen kann und wer Sie bearbeiten kann, müssen Sie die Dateien an einem sicheren Speicherort speichern, um sicherzustellen, dass die Berechtigungen ordnungsgemäß angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern und die Dateien dann entweder innerhalb oder außerhalb Ihrer Kampagne mit Microsoft Teams oder durch Senden von SharePoint-Links freizugeben. Wenn Sie einen Link anstelle einer e-Mail-Anlage senden, wissen Sie, wer die Dateien anzeigt und ändert, und Sie können ohne Ihre Berechtigung nicht angezeigt oder geändert werden. 
+Wenn Sie steuern müssen, wer Ihre Dateien anzeigen kann und wer Sie bearbeiten kann, müssen Sie die Dateien an einem sicheren Ort speichern, wo Sie sicherstellen können, dass die Berechtigungen ordnungsgemäß angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern und die Dateien dann entweder innerhalb oder außerhalb Ihrer Kampagne mithilfe von Microsoft Teams oder durch Senden von SharePoint-Links freizugeben. Wenn Sie einen Link anstelle einer e-Mail-Anlage senden, wissen Sie, wer die Dateien anzeigt und ändert, und Sie können ohne Ihre Berechtigung nicht angezeigt oder geändert werden. 
 
 ![Diagramm eines Microsoft Teams-Fensters, das Register "Dateien" und "Get Link" im Menü anzeigen](media/m365-democracy-teams-sharefiles.png)
 

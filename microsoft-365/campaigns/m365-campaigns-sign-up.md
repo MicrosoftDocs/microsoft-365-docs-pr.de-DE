@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b6866a3c2291b00934b5808777f795e5b99faa34
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772462"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753604"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -75,14 +75,14 @@ Wenn Sie bereits über ein vorhandenes Abonnement für Office 365 für Unternehm
 > Sie können das Microsoft 365 for Campaigns-Angebot keinem vorhandenen Microsoft 365-Geschäfts Mandanten hinzufügen.
 
 1. Wählen Sie in Ihrer Einladung zu Microsoft 365 für Kampagnen-e-Mails **die Option Ihre Organisation >registrieren **aus. Damit gelangen Sie zur Microsoft 365-Registrierung.
-2. Auf der **Willkommensseite, Let es Get to Know You** Page, klicken oder tippen Sie auf **möchten Sie diese zu einem vorhandenen Abonnement hinzufügen? Melden Sie sich an**.
+2. Klicken oder tippen Sie auf der Seite **Willkommen, Let es Get to Know You** Page auf **möchten Sie dieses zu einem vorhandenen Abonnement hinzufügen? Melden Sie sich an**.
     
     ![Wählen Sie in der oberen rechten Ecke anmelden aus.](media/addtoexisting.png)
-3. Geben Sie auf der Anmeldeseite den Administrator Alias für Ihr vorhandenes Abonnement ein, beispielsweise *Alice @ VoteContoso<span></span>. org* , und klicken Sie dann auf **weiter**, geben Sie Ihr Kennwort ein, und wählen Sie **Anmelden**aus.
-4. Auf der Seite **wie sieht das aus?** geben Sie die Anzahl der Benutzer ein, die Sie haben, und klicken Sie **dann auf weiter**. Beachten Sie, dass Sie hier keinen Promo-Code eingeben müssen, da er bereits in der Einladungs-URL enthalten ist.
+3. Geben Sie auf der Anmeldeseite den Administrator-Alias für Ihr vorhandenes Abonnement ein, Beispiels *Weise<span></span>Alice@VoteContoso. org*, wählen Sie **weiter**aus, geben Sie Ihr Kennwort ein, und klicken Sie dann auf **Anmelden**.
+4. Auf der Seite **wie sieht das aus?** geben Sie die Anzahl der Benutzer ein, die Sie haben, und klicken Sie **dann auf weiter**. Sie müssen hier keinen Promo-Code eingeben, da er bereits in der Einladungs-URL enthalten ist.
 5. Geben Sie auf der Seite **wie soll ich bezahlen?** die Zahlungsmethode ein, und wählen Sie **Bestellung platzieren**aus.
 
-Nachdem Sie diese Schritte ausgeführt haben, können Sie den Kampagnen Mitarbeitern [die neuen Lizenzen zuweisen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) . 
+Nachdem Sie diese Schritte ausgeführt haben, können Sie [die neuen Lizenzen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) Ihren Kampagnen Mitarbeitern zuweisen. 
 
 
 ## <a name="whats-next"></a>Nächste Schritte
