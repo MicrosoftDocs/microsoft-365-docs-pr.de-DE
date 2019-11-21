@@ -3,7 +3,7 @@ title: Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: d2946034c4f5bd5e650a18859c1fbd6fe3c6fdd4
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 529d781f31157c6e9ad63a83ef5f8bb96873049d
+ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669716"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38711889"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
+
+## <a name="november-2019"></a>November 2019
+
+### <a name="new-content"></a>Neue Inhalte 
+
+- [Migrieren von Microsoft 365 Business zu Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+
+- [Team für ein streng geheimes Projekt in der Contoso Corporation](contoso-team-for-top-secret-project.md)
+
+  [![Team für ein streng geheimes Projekt in der Contoso Corporation](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)](contoso-team-for-top-secret-project.md)
 
 ## <a name="october-2019"></a>Oktober 2019
 
@@ -30,13 +40,13 @@ ms.locfileid: "38669716"
 
   [![Poster für Teams für streng regulierte Daten](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-  Sie können dieses Poster als [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+  Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 - [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
 
   [![SharePoint-Websites für streng regulierte Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-  Sie können dieses Poster als [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+  Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 - [Das Poster "Bereitstellen von Windows 10 AutoPilot"](windows10-deploy-autopilot.md) 
 
@@ -60,7 +70,7 @@ ms.locfileid: "38669716"
 
   [![Poster "Fördern von Remotemitarbeitern"](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
 
-- [Migrieren von Microsoft 365 Business zu Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+  Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ### <a name="updates-and-enhancements"></a>Updates und Verbesserungen
 
