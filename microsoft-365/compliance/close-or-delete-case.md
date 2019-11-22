@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081042"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191170"
 ---
 # <a name="close-or-delete-a-case"></a>Schließen oder Löschen eines Falls
 
@@ -35,16 +35,16 @@ Wenn der von einem eDiscovery-Fall unterstützte rechtliche Fall oder die Unters
 
 So schließen Sie einen Fall:
 
-1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu Ihrem Fall.
+1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie schließen möchten.
 
-2. Wechseln Sie zu **Einstellungen** , und wählen Sie **Fall Informationen**aus. 
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fall Informationen**auf **auswählen**.
 
-3. Klicken Sie auf **Fall schließen**. 
+3. Klicken Sie auf **Fall schließen**.
 
 So löschen Sie einen Fall:
 
-1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu Ihrem Fall.
+1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie löschen möchten.
 
-2. Wechseln Sie zu **Einstellungen** , und wählen Sie **Fall Informationen**aus. 
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fall Informationen**auf **auswählen**.
 
 3. Klicken Sie auf **Fall löschen**. 

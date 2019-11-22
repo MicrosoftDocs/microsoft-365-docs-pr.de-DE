@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise und bekannte Probleme für Microsoft Compliance Score (Preview), ein Feature im M365 Compliance Center, das das vereinfachen und Automatisieren von Risikobewertungen erleichtert.
-ms.openlocfilehash: 192519e323f9d23420f82a603979b50f4581ac4f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: d46e8a621b6f4daa1275a78b5cc1e6917e0a997c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686196"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793639"
 ---
-# <a name="microsoft-compliance-score-release-notes-preview"></a>Versionshinweise zu Microsoft Compliance Score (Vorschau)
+# <a name="microsoft-compliance-score-preview-release-notes"></a>Versionshinweise zu Microsoft Compliance Score (Preview)
 
 Die Public Preview of Microsoft Compliance Score bietet Ihnen frühzeitigen Zugriff auf bevorstehende Funktionen und Updates.
 

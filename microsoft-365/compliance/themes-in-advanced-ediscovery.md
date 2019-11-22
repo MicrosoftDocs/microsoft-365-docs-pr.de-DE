@@ -14,19 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b26b031b767f23504294880f4424be5042350c71
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ba57a89365c2a76dec215f56d7ed0755f27be12d
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082549"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191205"
 ---
 # <a name="themes"></a>Designs
-Wie schreibt eine Person ein Dokument? Sie beginnen im Allgemeinen mit einem oder mehreren Ideen, die Sie im Dokument vermitteln möchten, und verfassen sich mit Wörtern, die mit den Ideen übereinstimmen. Je häufiger eine Idee ist, desto häufiger sind die Wörter, die mit dieser Idee verwandt sind, eher. Dies informiert darüber, wie Personen Dokumente auch nutzen; Das wichtigste beim Lesen eines Dokuments sind die Ideen, die das Dokument zu vermitteln versucht, und welche Ideen angezeigt werden und welche Beziehungen zwischen den Ideen bestehen.
+
+Wie schreibt eine Person ein Dokument? Sie beginnen im Allgemeinen mit einem oder mehreren Ideen, die Sie im Dokument vermitteln möchten, und verfassen sich mit Wörtern, die mit den Ideen übereinstimmen. Je häufiger eine Idee ist, desto häufiger sind die Wörter, die mit dieser Idee verwandt sind, eher. Dies informiert darüber, wie auch Benutzer Dokumente konsumieren. Das wichtigste beim Lesen eines Dokuments ist die Idee, die das Dokument zu vermitteln versucht, welche Ideen angezeigt werden und wie die Beziehungen zwischen den Ideen aussehen.
 
 Dies kann erweitert werden, um zu erfahren, wie eine Person eine Reihe von Dokumenten verwenden möchte. Sie möchten sehen, welche Ideen in den Sets vorhanden sind und welche Dokumente über diese Ideen sprechen. Wenn Sie ein bestimmtes Dokument finden, das interessant ist, möchten Sie auch Dokumente sehen, in denen ähnliche Ideen erörtert werden.
 
-Designs-Modul versucht zu imitieren, wie Menschen Grund zu Dokumenten, durch die Analyse der "Designs", die in einer Überprüfung festgelegt und Zuweisen von Dokumenten. Designs geht einen Schritt weiter und identifiziert pro Dokument das "dominante Design"; dh das Design, das am häufigsten angezeigt wird.
+Die Designs-Funktionalität in Advanced eDiscovery versucht zu imitieren, wie Menschen Grund zu Dokumenten sind, indem Sie die in einer Überprüfungsgruppe besprochenen *Designs* analysieren und einem Dokument in der Überprüfungsgruppe ein Design zuweisen. In Advanced eDiscovery geht Designs einen Schritt weiter und identifiziert das *dominante Design* in jedem Dokument. Das dominante Design ist diejenige, die am häufigsten in einem Dokument angezeigt wird.
 
 ## <a name="how-does-themes-work"></a>Wie funktioniert Designs?
-Designs analysiert Dokumente mit Text in einer Überprüfungsgruppe, um allgemeine Designs zu analysieren, die in den Dokumenten angezeigt werden. Anschließend werden diese Designs den Dokumenten zugewiesen, in denen Sie angezeigt werden. Sie beschriftet außerdem jeweils Wörter, die in den Dokumenten verwendet werden, die für das Design repräsentativ sind. Da es sich bei einem Dokument um mehr als einen Betreff handeln kann, sind dem Dokument in vielen Fällen mehr als ein Design zugeordnet. Das Design, das in einem Dokument am deutlichsten erscheint, wird als dominierendes Design festgelegt.
+
+Die Designs-Funktion analysiert Dokumente mit Text in einem Überprüfungs Satzes, um allgemeine Designs zu analysieren, die in allen Dokumenten in der Überprüfungsgruppe angezeigt werden. Advanced eDiscovery ordnet diese Designs den Dokumenten zu, in denen Sie angezeigt werden. Außerdem werden die einzelnen Designs mit den in den Dokumenten verwendeten Wörtern versehen, die für das Design repräsentativ sind. Da ein Dokument verschiedene Arten von Gegenstand enthalten kann, weist Advanced eDiscovery häufig mehreren Designs zu Dokumenten zu. Das Design, das in einem Dokument am deutlichsten erscheint, wird als dominierendes Design festgelegt.

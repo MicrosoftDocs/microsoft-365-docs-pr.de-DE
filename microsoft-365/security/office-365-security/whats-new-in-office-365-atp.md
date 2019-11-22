@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 13267597bb29708fcf477a79168e6873a7ccdd90
-ms.sourcegitcommit: b8dd1cb1da936f2b7c9ed621bce6ef5b3588427c
+ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37400341"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191220"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -40,9 +40,13 @@ Office 365 ATP ist in zwei Plänen verfügbar: Office 365 ATP-Plan 1 und Office 
 
 Office 365 ATP-Plan 2 ist in Office 365 Enterprise E5, Office 365 Education a5 und Microsoft 365 Enterprise E5 enthalten. Office 365 ATP-Plan 1 ist in Microsoft 365 Business enthalten. Wenn Ihr aktuelles Abonnement Office 365 ATP nicht umfasst, wenden Sie sich [an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644), und erfahren Sie, wie ATP für Ihre Organisation funktionieren kann. 
 
+## <a name="november-2019"></a>November 2019
+
+- [Sehen Sie sich neue kompromittierte Benutzererkennung und Antwortfunktionen (Preview)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) an (Office 365 ATP-Plan 2)
+
 ## <a name="september-2019"></a>September 2019
 
-- [Nutzen der automatischen Vorfall Antwort (Air) in Office 365](automated-investigation-response-office.md) (Office 365 ATP-Plan 2)
+- [Verwenden der automatischen Vorfall Antwort (Air) in Office 365](automated-investigation-response-office.md) (Office 365 ATP-Plan 2)
 
 - [Integration in Office 365 ATP Air-Ereignisse mithilfe der API für die Office 365-Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP-Plan 2)
 

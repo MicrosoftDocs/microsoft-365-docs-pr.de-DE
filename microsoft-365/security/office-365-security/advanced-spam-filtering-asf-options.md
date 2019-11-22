@@ -14,23 +14,23 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Erweiterte Spamfilter Optionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
-ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082356"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793699"
 ---
 # <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
+
+> [!NOTE]
+> Die erweiterten spamfiltereinstellungen der Anti-Spam-Richtlinie sind derzeit veraltet. Diese Einstellungen werden empfohlen, um Sie zu deaktivieren **.** Die Funktionen, die im erweiterten Spam Filter verfügbar waren, werden in andere Teile des Filter Stapels integriert.
 
 Erweiterte Spamfilter Optionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
   
 Die Aktivierung von erweiterten Spamfilterungsoptionen ist ein aggressiver Ansatz für die Spamfilterung, und Nachrichten, die von diesen Optionen herausgefiltert werden, können nicht als falsch positive Ergebnisse gemeldet werden. Diese Nachrichten können durch regelmäßige Spambenachrichtigungen für Endbenutzer identifiziert und aus der Spamquarantäne gerettet werden. Sie können auch mithilfe des X-Headertexts identifiziert werden, der für jede ASF-Option spezifisch ist und in der Internetkopfzeile von Nachrichten angezeigt wird, bei denen eine ASF-Option erfüllt wurde. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
   
 Erweiterte Spamfilterungsoptionen können aktiviert, deaktiviert oder auf den Testmodus festgelegt werden, wenn Sie die Inhaltsfilterrichtlinien bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Der Testmodus steht nicht zur Verfügung für die Optionen **NDR-Rückläufer**, **SPF-Eintrag: Schwerer Fehler**, **Bedingte Absender-ID-Filterung: Schwerer Fehler** und **Massen-E-Mail**.) 
-  
-> > [!TIP]
->  Ziehen Sie es in Erwägung, die erweiterten Spamfilterungsoptionen im Testmodus zu aktivieren, um gemäß Ihrer Umgebung möglichst viel Spam zu blockieren. Für Kunden mit hohen Spamprozentsätzen für spezifische erweiterte Spamfilterungsoptionen empfiehlt es sich, diese Optionen erst zu testen, bevor Sie sie in der Produktionsumgebung implementieren. Wenn Sie über Phishing in Ihrer Organisation besorgt sind, aktivieren Sie die Option **SPF Record: Hard Fail** . 
   
 In der folgenden Tabelle werden die einzelnen erweiterten Spamfilterungsoptionen beschrieben.
   

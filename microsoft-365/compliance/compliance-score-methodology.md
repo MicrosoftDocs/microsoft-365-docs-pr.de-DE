@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686025"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793659"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Berechnung der Microsoft-Konformitätsbewertung (Vorschau)
+# <a name="microsoft-compliance-score-preview-calculation"></a>Berechnung der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
 > [!IMPORTANT]
 > Compliance Score ist kein absolutes Maß für die organisatorische Einhaltung einer bestimmten Norm oder Regulierung. Sie drückt das Ausmaß aus, in dem Sie Steuerelemente eingeführt haben, die die Risiken für personenbezogene Daten und den Schutz der Privatsphäre reduzieren können. Empfehlungen aus dem Compliance Score und dem Compliance-Manager sollten nicht als Garantie für die Compliance interpretiert werden. Dieser Dienst befindet sich derzeit in der Vorschau und unterliegt den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910).
@@ -77,9 +77,9 @@ Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend au
 |**Typ**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
-| Vorbeugender Ermessensspielraum | 9 |
-| Detektiv erforderlich | 3 |
-| Detektiv-diskretionäres | 1 |
-| Korrektur Pflicht | 3 |
-| Korrigierendes diskretionäre | 1 |
+| Vorbeugender Ermessensspielraum | 9  |
+| Detektiv erforderlich | 3  |
+| Detektiv-diskretionäres | 1  |
+| Korrektur Pflicht | 3  |
+| Korrigierendes diskretionäre | 1  |
   

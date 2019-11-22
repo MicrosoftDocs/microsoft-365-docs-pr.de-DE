@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Eine Liste unterstützter Dateitypen in Microsoft 365 Advanced eDiscovery. Dies umfasst eine Liste der Bilddateitypen, die von der OCR-Funktion in Advanced eDiscovery unterstützt werden.
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38686019"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191240"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Unterstützte Dateitypen in Advanced eDiscovery
 
-Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen, die in der folgenden Tabelle beschrieben werden. Diese Liste ist nicht abgeschlossen, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. In den Tabellen wird angegeben, ob ein Dateityp für die Textextraktion (OCR für Bilder) unterstützt wird, der im Native Viewer angezeigt wird und auch im Annotations-Viewer in Advanced eDiscovery unterstützt wird.
-
+Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen, die in den folgenden Tabellen beschrieben werden. Diese Liste ist nicht abgeschlossen, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. In diesen Tabellen wird angegeben, ob ein Dateityp für die Textextraktion (und die optische Zeichenerkennung oder OCR-Textextraktion für Bilddateien) unterstützt wird, die im Native Viewer angezeigt werden und auch im Annotations-Viewer in Advanced eDiscovery unterstützt werden.
 
 ## <a name="archive--container"></a>Archiv/Container
 
@@ -83,7 +82,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 
 ## <a name="image"></a>Image
 
-| MIME-Typ | Datei Identifikation | Extraktion von Metadaten | OCR-Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
+| MIME-Typ | Datei Identifikation | Extraktion von Metadaten | OCR-Textextraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | Bild/BMP | Ja | Ja | Ja | Ja | Ja | BMP |
 | Bild/EMF | Ja | Ja | Ja | Ja | Ja | . EMF |
@@ -115,7 +114,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | Anwendung/OneNote | Ja | Ja | Ja | Ja | Nein | . eine |
 ||||||||
 
-## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

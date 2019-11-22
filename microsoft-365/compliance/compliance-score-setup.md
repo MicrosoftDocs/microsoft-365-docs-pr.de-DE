@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und das Dashboard für Microsoft Compliance Score verstehen, das die Vereinfachung und Automatisierung von Risikobewertungen erleichtert.
-ms.openlocfilehash: 8c9bc7d1605bad66228bb47de8f86042839ac5be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686031"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793649"
 ---
-# <a name="microsoft-compliance-score-setup-preview"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
+# <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Der globale Administrator von Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf das Kompatibilitäts Ergebnis zugreift. Wenn Sie das Kompatibilitäts Ergebnis zum ersten Mal besuchen, empfehlen wir die globale Administratoranmeldung, und legen Sie die Benutzerberechtigungen fest, wie unten beschrieben.
 
@@ -49,9 +49,9 @@ In der folgenden Tabelle wird gezeigt, wie die einzelnen Rollen des Compliance-C
 | :------------- | :-------------: | :------------: |
 | **Lesen, aber nicht bearbeiten von Daten**| Azure AD globaler Leser  | Azure AD globaler Leser | 
 | **Lesen, aber nicht bearbeiten von Daten**| Benutzer mit Leseberechtigung für Sicherheitsfunktionen | Compliance-Manager-Leser  | 
-| **Bearbeiten von Daten**| Complianceadministrator | Compliance-Manager-Mitwirkender | 
-| **Bearbeiten von Testergebnissen**| Complianceadministrator | Auditor für Compliance-Manager | 
-| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Complianceadministrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
+| **Bearbeiten von Daten**| Compliance-Administrator | Compliance-Manager-Mitwirkender | 
+| **Bearbeiten von Testergebnissen**| Compliance-Administrator | Auditor für Compliance-Manager | 
+| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Compliance-Administrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
 | **Zuweisen von Benutzern**| Globaler Administrator | Portal Administrator | 
 
 > [!NOTE]

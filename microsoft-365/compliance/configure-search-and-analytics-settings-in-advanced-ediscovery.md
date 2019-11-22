@@ -13,43 +13,71 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Konfigurieren Sie erweiterte eDiscovery-Einstellungen, die für alle Überprüfungs Sätze in einem Fall gelten. Dies umfasst Einstellungen für Analyse und OCR.
+ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081020"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191140"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
 
+Sie können Einstellungen für jeden erweiterten eDiscovery-Fall konfigurieren, um die folgenden Funktionen zu steuern.
+
+- Nahe Duplikate und e-Mail-Threading
+- Designs
+- Abfrage "automatisch generierte Überprüfungs Satz"
+- Text ignorieren
+- Optische Zeichenerkennung
+
+So konfigurieren Sie Such-und Analyse Einstellungen für einen Fall:
+
+1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus.
+
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Search #a0 Analytics**auf **auswählen**.
+
+   Die Seite Fall Einstellungen wird angezeigt. Diese Einstellungen werden in einem Fall auf alle Überprüfungs Sätze angewendet.
+
+   ![Konfigurieren von Analyse-und Sucheinstellungen für einen erweiterten eDiscovery-Fall](media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Nahe Duplikate und e-Mail-Threading
 
-In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, in der Nähe der doppelten Erkennung und beim e-Mail-Threading festlegen.
+In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, in der Nähe der doppelten Erkennung und beim e-Mail-Threading festlegen. Weitere Informationen finden Sie [in der Nähe der doppelten Erkennung](near-duplicates.md) und des [e-Mail-Threadings](email-threading.md).
 
-- Aktivieren/deaktivieren: doppelte Erkennung, nahezu doppelte Erkennung und e-Mail-Threading als Teil des Analyse Flusses einschließen, falls aktiviert. Da Sie sich übereinander aufbauen, müssen Sie alle aktivieren oder deaktivieren.
+- **In der Nähe von Duplikaten/e-Mail-Threading:** Wenn die Analyse für die Daten in einem Überprüfungs Satzes ausgeführt wird, werden die doppelte Erkennung, die Erkennung in der Nähe von Duplikaten und das e-Mail-Threading als Teil des Workflows einbezogen.
 
-- Schwellenwert: Wenn sich die Ähnlichkeits Ebene zweier Dokumente über dem Schwellenwert befindet, werden Sie in derselben nahe doppelten Gruppe platziert.
+- **Schwellenwert für die Dokument-und e-Mail-Ähnlichkeit:** Wenn sich die Ähnlichkeits Ebene für zwei Dokumente über dem Schwellenwert befindet, werden beide Dokumente in derselben nahe doppelten Gruppe platziert.
 
-- Duplikate standardmäßig ausblenden: Wenn diese Einstellung aktiviert ist, wird in der Überprüfungsgruppe standardmäßig ein Filter zum Ausblenden von doppelten Dokumenten angewendet. Der Filter kann bei Bedarf manuell in der Überprüfungsgruppe entfernt werden.
-
-- Minimale/maximale Anzahl von Wörtern: nahe Duplikate und e-Mail-Threading werden nur für Dokumente ausgeführt, die mindestens die minimale Anzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen.
-Weitere Informationen finden Sie [in der Nähe der doppelten Erkennung](near-duplicates.md) und des [e-Mail-Threadings](email-threading.md).
+- **Minimale/maximale Anzahl von Wörtern:** Mit diesen Einstellungen wird angegeben, dass nahe Duplikate und die e-Mail-Thread Analyse nur für Dokumente ausgeführt werden, die mindestens die minimale Anzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen.
 
 ## <a name="themes"></a>Designs
 
-In diesem Abschnitt können Sie Parameter für Designs festlegen.
+In diesem Abschnitt können Sie Parameter für Designs festlegen. Weitere Informationen finden Sie unter [Designs](themes-in-advanced-ediscovery.md).
 
-- Aktivieren/deaktivieren: einbeziehen von Designs beim Clustering als Teil des Analyse Flusses, falls aktiviert.
-- Anpassen der maximalen Anzahl von Designs dynamisch dynamisch: in bestimmten Fällen gibt es nicht genügend Dokumente, um die gewünschte Anzahl von Designs zu erstellen. Wenn diese Einstellung aktiviert ist, wird nicht versucht, die gewünschte maximale Anzahl von Designs zu erzwingen, sondern das System passt die maximale Anzahl von Designs dynamisch an.
-- Maximale Anzahl von Designs: gewünschte Anzahl von Designs
-- Zahlen in Designs einbeziehen: Wenn diese Option aktiviert ist, werden beim Generieren von Designs Zahlen in enthalten.  
+- **Designs:** Wenn Sie aktiviert ist, wird das Thema Clustering als Teil des Workflows ausgeführt, wenn Sie Analysen für die Daten in einem Überprüfungs Satzes ausführen.
 
-## <a name="optical-character-recognition-ocr"></a>Optische Zeichenerkennung (OCR)
+- **Maximale Anzahl von Designs:** Gibt die maximale Anzahl von Designs an, die beim Ausführen von Analytics für die Daten in einem Überprüfungs Satz generiert werden können.
 
-Wenn diese Einstellung aktiviert ist, wird die OCR für Bilder ausgeführt, die in Überprüfungs Sätzen aufgenommen werden, damit Sie durchsuchbar werden können.
+- **Zahlen in Designs einbeziehen:** Wenn diese Option aktiviert ist, werden beim Generieren von Designs Zahlen (zur Identifizierung eines Designs) einbezogen. 
+
+- **Anpassen der maximalen Anzahl von Designs dynamisch:** In bestimmten Situationen kann es in einem Überprüfungs möglicherweise nicht genügend Dokumente geben, um die gewünschte Anzahl von Designs zu erstellen. Wenn diese Einstellung aktiviert ist, passt Advanced eDiscovery die maximale Anzahl von Designs dynamisch an, anstatt zu versuchen, die maximale Anzahl von Designs zu erzwingen.
+
+## <a name="review-set-query"></a>Abfrage "Sätze überprüfen"
+
+Wenn Sie das Kontrollkästchen **für Überprüfung gespeicherte Suche nach Analyse automatisch erstellen** aktivieren, wird Advanced eDiscovery autogenet Review Sets Query benannt **zur Überprüfung.** 
+
+![Die automatisch generierte Abfrage zur Überprüfung](media/AeDForReviewQuery.png)
+
+Diese Abfrage filtert im wesentlichen doppelte Elemente aus dem Überprüfungs Satzes. Auf diese Weise können Sie die eindeutigen Elemente in der Überprüfungsgruppe überprüfen. Diese Abfrage wird nur erstellt, wenn Sie Analytics für alle Überprüfungs Sätze im Fall ausführen. Weitere Informationen zum Überprüfen von Mengen Abfragen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
 
 ## <a name="ignore-text"></a>Text ignorieren
 
-Es gibt Fälle, in denen bestimmte Texte die Qualität von Analysen vermindern, wie lange Haftungsausschlüsse, die zu bestimmten e-Mails hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie solche Fälle kennen, können Sie diesen Text aus Analysen ausschließen, indem Sie den Text angeben (Regex wird unterstützt) und welche Module für den Text ausgeschlossen werden sollen.
+Es gibt Situationen, in denen ein bestimmter Text die Qualität der Analyse verringert, beispielsweise langwierige Haftungsausschlüsse, die zu e-Mail-Nachrichten hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie Text kennen, der ignoriert werden soll, können Sie ihn von Analytics ausschließen, indem Sie die Textzeichenfolge und die Analysefunktionalität (nahe Duplikate, e-Mail-Threading, Designs und Relevanz) angeben, für die der Text ausgeschlossen werden soll. Das Verwenden regulärer Ausdrücke (Regex) als ignorierter Text wird ebenfalls unterstützt. 
+
+## <a name="optical-character-recognition-ocr"></a>Optische Zeichenerkennung (OCR)
+
+Wenn diese Einstellung aktiviert ist, wird OCR für Bilddateien ausgeführt, die zu Überprüfungs Sätzen hinzugefügt werden, sodass Bildtext überprüft, durchsucht, markiert und analysiert werden kann. Weitere Informationen finden Sie unter:
+
+- [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md#optical-character-recognition)
+- [Unterstützte Bilddateitypen](supported-filetypes-ediscovery20.md#image)

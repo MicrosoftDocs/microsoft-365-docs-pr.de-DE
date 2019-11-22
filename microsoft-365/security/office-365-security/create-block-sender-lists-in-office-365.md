@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Die Optionen zum Blockieren von Absenderlisten umfassen Outlook blockierte Absender, Antispam-Sender/Domänen Sperrlisten, IP-Sperrlisten und Exchange-Transport Regeln (ETRs), die auch als Nachrichtenfluss Regeln bezeichnet werden.
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032400"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793709"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Erstellen von Block Absenderlisten in Office 365
 
@@ -49,7 +49,7 @@ Die Schritte zum Einrichten dieser Einstellung unterscheiden sich zwischen [Outl
 
 Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter und Sie müssen eine unternehmensweite Anti-Spam-Richtlinie für Absender-/Domänen Sperrlisten verwenden. Die detaillierten Schritte finden [Sie unter Configure your Spamfilter Policies](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) Document. Alle Nachrichten, die mit dieser Methode blockiert werden, verfolgen die in der Richtlinie konfigurierte Spamaktion.
 
-Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
+Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Verwenden von Exchange-Transport Regeln (ETRs) zum Blockieren bestimmter Absender
 

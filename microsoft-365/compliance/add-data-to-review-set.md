@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 03328cfeada2e6bc493bfff0ee64f95904b8c9f8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Fügen Sie die Ergebnisse einer Suche hinzu, die einem erweiterten eDiscovery-Fall zugeordnet ist. Elemente werden von Ihrem ursprünglichen Speicherort kopiert und in einen von Microsoft bereitgestellten Azure-Speicher Speicherort kopiert. Außerdem werden Elemente erneut indiziert, und Advanced eDiscovery führt die optische Zeichenerkennung für Bilddateien durch und lädt den Bild Text zur Überprüfung und Analyse hoch.
+ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081181"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191180"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
 
 Wenn Sie mit den Ergebnissen einer Suche zufrieden sind und Sie diese Suchergebnisse überprüfen und analysieren möchten, können Sie Sie zu einem Überprüfungs in dem Fall hinzufügen. Durch das Kopieren der ursprünglichen Daten in den Überprüfungs wird auch der Überprüfungs-und Analyseprozess erleichtert, indem Ihnen erweiterte Analysetools bereitgestellt werden, beispielsweise die Erkennung von Designs, die Erkennung praktischer Duplikate und die e-Mail-Threadidentifikation. Sie können auch Daten aus nicht Office 365 Datenquellen zu einem Überprüfungs Satz hinzufügen, damit Sie diese Daten zusätzlich zu den von Office 365 gesammelten Daten überprüfen können. 
 
-Wenn Sie die Ergebnisse einer Suche zu einem Überprüfungs Satz hinzufügen (Überprüfungs Sätze befinden sich auf der Registerkarte **Überprüfungs Sätze** des Falles), treten die folgenden Dinge auf:
+Wenn Sie die Ergebnisse einer Suche zu einem Überprüfungs Satz hinzufügen (die Überprüfungs Sätze werden in einem Fall auf der Registerkarte **Überprüfungs Sätze** aufgeführt), treten die folgenden Dinge auf:
 
 - Die Suche wird erneut ausgeführt. Dies bedeutet, dass die tatsächlichen Suchergebnisse, die in den Überprüfungs Satzes kopiert wurden, sich möglicherweise von den geschätzten Ergebnissen unterscheiden, die bei der letzten Ausführung der Suche zurückgegeben wurden.
 
 - Alle Elemente in den Suchergebnissen werden aus der ursprünglichen Datenquelle in den Live Office 365-Diensten kopiert und in einen sicheren Azure-Speicherort in der Microsoft-Cloud kopiert.
 
-- Alle Elemente (einschließlich der Inhalte und Metadaten) werden erneut indiziert, sodass alle Daten in der Überprüfungsgruppe während der Überprüfung der Falldaten vollständig durchsuchbar sind. Das erneute Indizieren der Daten führt zu einer gründlichen und sehr schnellen Suche, wenn Sie die Daten im Überprüfungspaket während der Fallprüfung durchsuchen.
+- Alle Elemente (einschließlich der Inhalte und Metadaten) werden erneut indiziert, sodass alle Daten in der Überprüfungsgruppe während der Überprüfung der Falldaten vollständig durchsuchbar sind. Das erneute Indizieren der Daten führt zu einer gründlichen und schnellen Suche, wenn Sie die Daten im Überprüfungspaket während der Fallprüfung durchsuchen.
 
 Klicken Sie zum Hinzufügen von Daten zu einem Überprüfungs Satzes auf der Registerkarte **Suchen** auf eine Suche, und klicken Sie dann auf der Flyout-Seite auf **zu überprüfende Ergebnisse hinzufügen** .
 
@@ -51,6 +51,12 @@ Wenn Sie einem Überprüfungs Satzes ein Beispiel hinzufügen möchten, klicken 
 
 - **Konfidenz Stufe%** und **Konfidenzintervall%** – die der Überprüfungsgruppe hinzugefügten Elemente werden durch die von Ihnen festgelegten statistischen Parameter bestimmt. Wenn Sie normalerweise bei Sampling-Ergebnissen eine Konfidenz Stufe und ein Intervall verwenden, geben Sie diese in den Dropdownfeldern an. Verwenden Sie andernfalls die Standardeinstellungen.
 
-- **Zufalls Beispiel%** – die dem Überprüfungs Satz hinzugefügten Elemente basieren auf einer zufälligen Auswahl des angegebenen Prozentsatzes der Gesamtzahl der Elemente, die von der Suche zurückgegeben wurden.
+- **Zufalls Beispiel%** – die Elemente, die dem Überprüfungs Satz hinzugefügt wurden, basieren auf einer zufälligen Auswahl des angegebenen Prozentsatzes der Gesamtzahl der Elemente, die von der Suche zurückgegeben wurden.
 
 Nachdem Sie eine der vorherigen Optionen ausgewählt und konfiguriert haben, wählen Sie eine Überprüfungsgruppe aus, der Sie das Beispiel hinzufügen möchten, und klicken Sie dann auf **senden**. Sie können den Fortschritt auch wieder auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** verfolgen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen.
+
+## <a name="optical-character-recognition"></a>Optische Zeichenerkennung
+
+Wenn Sie Suchergebnisse zu einem Überprüfungs Satz hinzufügen, extrahiert die OCR-Funktion (Optical Character Recognition) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit den Daten, die einem Überprüfungs Satz hinzugefügt wurden. Auf diese Weise können Sie eine weitere Überprüfung und Analyse von Text in Bildern durchführen. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, die für die OCR unterstützt werden, finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+
+Sie müssen OCR-Funktionen für jeden Fall aktivieren, den Sie in Advanced eDiscovery erstellen. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
