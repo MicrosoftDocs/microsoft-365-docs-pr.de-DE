@@ -701,6 +701,8 @@
           href: compliance-score-methodology.md
         - name: Versionshinweise zur Compliancebewertung (Vorschau)
           href: compliance-score-release-notes.md
+        - name: FAQ zur Kompatibilitätsbewertung (Vorschau)
+          href: compliance-score-faq.md
         - name: Compliance-Manager (Vorschau)
           href: compliance-manager-overview.md
           items:
