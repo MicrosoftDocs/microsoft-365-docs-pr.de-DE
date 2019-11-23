@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Zusammenfassung: Erstellen von vertraulichen und streng vertraulichen Teams in Microsoft Teams für Dateien in einer Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: f22b3b1fbe07af6866206034ad6c9a90ced8a268
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929263"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202296"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Sichere Teams für Dateien in einer Entwicklungs-/Testumgebung
 
@@ -62,7 +62,7 @@ Erstellen Sie zuerst zwei Gruppen für eine typische Organisation mit dem Azure-
       
 5. Klicken Sie auf **Erstellen**, und schließen Sie dann das Blatt **Gruppe**.
     
-6.  Wiederholen Sie die Schritte 3-5 für eine neue folgende Gruppe namens **Marketingmitarbeiter**.
+6.  Wiederholen Sie die Schritte 3-5 für eine neue Gruppe namens **Marketingmitarbeiter**.
     
 Im nächsten Schritt wird die automatische Lizenzierung konfiguriert, sodass Mitgliedern von Gruppen automatisch Lizenzen für Ihre Office 365- und EMS-Abonnements zugewiesen werden.
   

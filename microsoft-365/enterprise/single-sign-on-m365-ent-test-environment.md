@@ -3,7 +3,7 @@ title: Nahtloses einmaliges Anmelden in Azure AD für Ihre Microsoft 365-Testumg
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Testen des nahtlosen einmaliges Anmeldens in Azure AD für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: f263ab507e392c1172d28b5d6ef111d8d9f40682
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757672"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202236"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Nahtloses einmaliges Anmelden in Azure AD für Ihre Microsoft 365-Testumgebung
 
@@ -81,7 +81,7 @@ In dieser Phase konfigurieren Sie Azure AD Connect auf APP1 für das nahtlose ei
 
 11. Klicken Sie im Azure-Portal im linken Bereich auf **Azure Active Directory > Azure AD Connect**. Überprüfen Sie, ob die Funktion **Einmaliges Anmelden** als **Aktiviert** angezeigt wird.
 
-Als Nächstes testen Sie, ob Sie sich mit dem Benutzernamen <strong>user1@testlab.</strong>\<Ihre öffentliche Domäne> des Kontos „Benutzer1“ beim Ihrem Office 365-Abonnement anmelden können.
+Als Nächstes testen Sie, ob Sie sich mit dem Benutzernamen "<strong>User1@testlab.</strong>\<Ihre öffentliche Domäne>“ des Kontos "User1" anmelden können.
 
 1. Klicken Sie in Internet Explorer auf APP1 auf das Symbol „Einstellungen“, und klicken Sie dann auf **Internetoptionen**.
  
@@ -93,11 +93,11 @@ Als Nächstes testen Sie, ob Sie sich mit dem Benutzernamen <strong>user1@testla
 
 5. Geben Sie unter **Diese Website zur Zone hinzufügen** die Adresse **https<span>://</span>autologon.microsoftazuread-sso.com** ein, und klicken Sie auf **Hinzufügen > Schließen > OK > OK**.
 
-6. Melden Sie sich von Office 365 ab, und melden Sie sich dann erneut an. Geben Sie dieses Mal ein anderes Konto an.
+6. Melden Sie sich ab, und melden Sie sich dann erneut an. Geben Sie dieses Mal ein anderes Konto an.
 
 7. Wenn Sie aufgefordert werden, sich anzumelden, geben Sie <strong>user1@testlab.</strong>\<Ihren öffentlichen Domänennamen> an, und klicken Sie dann auf **Weiter**. Sie sollten sich erfolgreich als "User1" anmelden können, ohne zur Eingabe eines Kennworts aufgefordert zu werden. Dies beweist, dass das nahtlose einmalige Anmelden mit Azure AD funktioniert.
 
-Beachten Sie, dass "User1" zwar über Administratorberechtigungen für die AD DS-Domäne TESTLAB verfügt, er aber kein globaler Administrator für Azure AD und Office 365 ist. Daher wird das Symbol **Admin** nicht als Option angezeigt.
+Beachten Sie, dass "User1" zwar über Administratorberechtigungen für die AD DS-Domäne TESTLAB verfügt, er aber kein globaler Administrator für Azure AD ist. Daher wird das Symbol **Admin** nicht als Option angezeigt.
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration:
 
