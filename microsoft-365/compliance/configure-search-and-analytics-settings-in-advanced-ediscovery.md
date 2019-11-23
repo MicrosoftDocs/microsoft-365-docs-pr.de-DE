@@ -14,21 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Konfigurieren Sie erweiterte eDiscovery-Einstellungen, die für alle Überprüfungs Sätze in einem Fall gelten. Dies umfasst Einstellungen für Analyse und OCR.
-ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191140"
+ms.locfileid: "39202196"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
 
 Sie können Einstellungen für jeden erweiterten eDiscovery-Fall konfigurieren, um die folgenden Funktionen zu steuern.
 
 - Nahe Duplikate und e-Mail-Threading
+
 - Designs
+
 - Abfrage "automatisch generierte Überprüfungs Satz"
+
 - Text ignorieren
+
 - Optische Zeichenerkennung
 
 So konfigurieren Sie Such-und Analyse Einstellungen für einen Fall:
@@ -69,7 +73,7 @@ Wenn Sie das Kontrollkästchen **für Überprüfung gespeicherte Suche nach Anal
 
 ![Die automatisch generierte Abfrage zur Überprüfung](media/AeDForReviewQuery.png)
 
-Diese Abfrage filtert im wesentlichen doppelte Elemente aus dem Überprüfungs Satzes. Auf diese Weise können Sie die eindeutigen Elemente in der Überprüfungsgruppe überprüfen. Diese Abfrage wird nur erstellt, wenn Sie Analytics für alle Überprüfungs Sätze im Fall ausführen. Weitere Informationen zum Überprüfen von Mengen Abfragen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
+Diese Abfrage filtert im wesentlichen doppelte Elemente aus dem Überprüfungs Satzes. Auf diese Weise können Sie die eindeutigen Elemente in der Überprüfungsgruppe überprüfen. Diese Abfrage wird nur erstellt, wenn Sie Analytics für eine Überprüfungsgruppe in dem Fall ausführen. Weitere Informationen zum Überprüfen von Mengen Abfragen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
 
 ## <a name="ignore-text"></a>Text ignorieren
 
@@ -77,7 +81,8 @@ Es gibt Situationen, in denen ein bestimmter Text die Qualität der Analyse verr
 
 ## <a name="optical-character-recognition-ocr"></a>Optische Zeichenerkennung (OCR)
 
-Wenn diese Einstellung aktiviert ist, wird OCR für Bilddateien ausgeführt, die zu Überprüfungs Sätzen hinzugefügt werden, sodass Bildtext überprüft, durchsucht, markiert und analysiert werden kann. Weitere Informationen finden Sie unter:
+Wenn diese Einstellung aktiviert ist, wird OCR für Bilddateien ausgeführt, die zu Überprüfungs Sätzen hinzugefügt werden, sodass Bildtext überprüft, durchsucht, markiert und analysiert werden kann. Sie können den extrahierten Text im Text Betrachter der ausgewählten Bilddatei im überprüfungsordner anzeigen. Weitere Informationen finden Sie unter:
 
 - [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md#optical-character-recognition)
+
 - [Unterstützte Bilddateitypen](supported-filetypes-ediscovery20.md#image)

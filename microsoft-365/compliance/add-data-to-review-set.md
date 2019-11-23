@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Fügen Sie die Ergebnisse einer Suche hinzu, die einem erweiterten eDiscovery-Fall zugeordnet ist. Elemente werden von Ihrem ursprünglichen Speicherort kopiert und in einen von Microsoft bereitgestellten Azure-Speicher Speicherort kopiert. Außerdem werden Elemente erneut indiziert, und Advanced eDiscovery führt die optische Zeichenerkennung für Bilddateien durch und lädt den Bild Text zur Überprüfung und Analyse hoch.
-ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 99fe0cce8bd872ecd5f4a94699857c36c3a4d617
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191180"
+ms.locfileid: "39202326"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
 
@@ -57,6 +57,6 @@ Nachdem Sie eine der vorherigen Optionen ausgewählt und konfiguriert haben, wä
 
 ## <a name="optical-character-recognition"></a>Optische Zeichenerkennung
 
-Wenn Sie Suchergebnisse zu einem Überprüfungs Satz hinzufügen, extrahiert die OCR-Funktion (Optical Character Recognition) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit den Daten, die einem Überprüfungs Satz hinzugefügt wurden. Auf diese Weise können Sie eine weitere Überprüfung und Analyse von Text in Bildern durchführen. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, die für die OCR unterstützt werden, finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+Wenn Sie Suchergebnisse zu einem Überprüfungs Satz hinzufügen, extrahiert die OCR-Funktion (Optical Character Recognition) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit den Daten, die einem Überprüfungs Satz hinzugefügt wurden. Sie können den extrahierten Text im Text Betrachter der ausgewählten Bilddatei im überprüfungsordner anzeigen. Auf diese Weise können Sie eine weitere Überprüfung und Analyse von Text in Bildern durchführen. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, die für die OCR unterstützt werden, finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
 Sie müssen OCR-Funktionen für jeden Fall aktivieren, den Sie in Advanced eDiscovery erstellen. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
