@@ -3,7 +3,7 @@ title: Schützen globaler Administratorkonten in Ihrer Microsoft 365 Enterprise-
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Verwenden Sie diese Schritte, um globale Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung zu schützen.
-ms.openlocfilehash: 89985f99f5471aab87189e78035062add2c6bad9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5447177c6581b69d48272ceef7718552ea84dc9d
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673331"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202226"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Schützen globaler Administratorkonten in Ihrer Microsoft 365 Enterprise-Testumgebung
 
-*Diese Test Umgebungs Anleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Testumgebungsanleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
 
 Sie können digitale Angriffe in Ihrer Organisation verhindern, indem Sie sicherstellen, dass Ihre Administratorkonten so sicher wie möglich sind. In diesem Artikel wird beschrieben, wie Sie mithilfe von Azure Active Directory (Azure AD) bedingten Zugriffsrichtlinien globale Administratorkonten schützen.
 
@@ -31,7 +31,7 @@ Es gibt zwei Phasen zum Schutz globaler Administratorkonten in Ihrer Microsoft 3
 1.  Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
 2.  Schützen Sie Ihr dediziertes globales Administratorkonto.
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
@@ -56,7 +56,7 @@ Erstellen Sie zunächst ein neues Benutzerkonto als dedizierter globaler Adminis
 4. Klicken Sie auf **Kennwort**, klicken Sie auf **das Kennwort erstellen**, und geben Sie dann ein sicheres Kennwort ein. Notieren Sie sich das Kennwort für dieses neue Konto an einem sicheren Ort.
 5. Deaktivieren **Sie, dass dieser Benutzer sein Kennwort bei der ersten Anmeldung ändert**.
 6. Klicken Sie auf **Rollen**, und klicken Sie dann auf **globaler Administrator**.
-7. Klicken Sie auf **Produktlizenzen**, und schalten Sie dann die Lizenzen **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** ein.
+7. Klicken Sie auf **Produktlizenzen**, und aktivieren Sie dann die **Microsoft 365 E5** -Lizenz.
 8. Klicken Sie auf **Hinzufügen**.
 9. Deaktivieren Sie auf der **Seite Benutzer wurde hinzugefügt die Seite** **Kennwort in e-Mail senden**, und klicken Sie dann auf **Schließen**.
 

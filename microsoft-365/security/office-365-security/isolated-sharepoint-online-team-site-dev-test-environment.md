@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: 0f91bcce140fd1ad00c51b27e8b1e134e5f2a283
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8f49e449d7053642bd1c926765156f495bc36801
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032340"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202206"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -83,9 +83,6 @@ $groupDesc="People allowed to view the SharePoint resources for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
-> [!TIP]
-> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.
-  
 Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“) und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:
   
 ```
@@ -151,7 +148,7 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
   
 1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [https://admin.microsoft.com](https://admin.microsoft.com) unter Verwendung des globalen Administratorkontos an.
     
-2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
+2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
 3. Klicken Sie auf der neuen SharePoint-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
     
@@ -219,7 +216,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 3. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Lead Designers an.
     
-4. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
+4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
 5. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
     
@@ -249,7 +246,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
   
 1. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Development VP an.
     
-2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
+2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
 3. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
     

@@ -3,7 +3,7 @@ title: Automatisieren der Lizenzierung und der Gruppenmitgliedschaft für Ihre M
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die Gruppenbasierte Lizenzierung und die dynamische Gruppenmitgliedschaft in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: fe6380d94919556904a1fb1ac0624fac3496fe30
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673251"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202476"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatisieren der Lizenzierung und der Gruppenmitgliedschaft für Ihre Microsoft 365 Enterprise-Testumgebung
 
-*Diese Test Umgebungs Anleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Testumgebungsanleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
 
 Bei der gruppenbasierten Lizenzierung werden basierend auf der Gruppenmitgliedschaft automatisch Lizenzen für ein Benutzerkonto zugewiesen oder entfernt. Durch die dynamische Gruppenmitgliedschaft werden Mitglieder einer Gruppe basierend auf den Eigenschaften des Benutzerkontos wie Abteilung oder Land hinzugefügt oder entfernt. In diesem Artikel werden Sie durch eine Demonstration beider Schritte in Ihrer Microsoft 365 Enterprise-Testumgebung geführt.
 
@@ -31,7 +31,7 @@ Es gibt zwei Phasen zum Einrichten der automatischen Lizenzierung und der dynami
 1. Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
 2. Konfigurieren und Testen der dynamischen Gruppenmitgliedschaft und der automatischen Lizenzierung.
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
@@ -63,10 +63,10 @@ Zunächst erstellen Sie eine neue Gruppe "Sales" und fügen eine dynamische Grup
 12. Klicken Sie auf **Abfrage hinzufügen**, und klicken Sie dann auf **Erstellen**.
 13. Schließen Sie die Blades **Gruppe** und **Gruppen – alle Gruppen** .
 
-Als Nächstes konfigurieren Sie die Gruppe "Sales" so, dass Mitgliedern automatisch Office 365 E5-und Enterprise Mobility + Security E5-Lizenzen zugewiesen werden.
+Als Nächstes konfigurieren Sie die Gruppe "Sales" so, dass Mitgliedern automatisch die Microsoft 365 E5-Lizenz zugewiesen wird.
 
 1. Klicken Sie auf der Active Directory **Übersicht** Blade for Azure auf **Lizenzen #a0 alle Produkte**.
-2. Wählen Sie in der Liste **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** aus, und klicken Sie dann auf **Zuweisen**.
+2. Wählen Sie in der Liste **Micrsooft 365 E5**aus, und klicken Sie dann auf **zuweisen**.
 3. Klicken Sie auf dem Blatt **Lizenz zuweisen** auf **Benutzer und Gruppen**.
 4. Wählen Sie in der Liste der Gruppen die Gruppe **Vertrieb** aus.
 5. Klicken Sie auf **Auswählen** und dann auf **Zuweisen**.
@@ -78,7 +78,7 @@ Als nächstes testen Sie die dynamische Gruppenmitgliedschaft und die automatisc
 2. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** auf **aktive Benutzer**.
 3. Klicken Sie auf der Seite **aktive Benutzer** auf das Konto **Benutzer 4** .
 4. Klicken Sie im Bereich **Benutzer 4** auf für **Produktlizenzen** **Bearbeiten** .
-5. Aktivieren Sie im Bereich " **Produktlizenzen** " die Lizenzen " **Enterprise Mobility + Security E5** " und " **Office 365 Enterprise E5** " aus, und klicken Sie dann auf **Save #a0 close**.
+5. Deaktivieren Sie im Bereich **Produktlizenzen** die Lizenz **Microsoft 365 E5** , und klicken Sie dann auf **#a0 schließen speichern**.
 6. Überprüfen Sie in den Eigenschaften des Benutzerkontos 4, dass keine Produktlizenzen zugewiesen wurden und keine Gruppenmitgliedschaften vorhanden sind.
 7. Klicken Sie auf **Bearbeiten** , um **Kontaktinformationen zu erhalten**.
 8. Klicken Sie im Bereich **Kontaktinformationen bearbeiten** auf **Kontaktinformationen**.
@@ -88,7 +88,7 @@ Als nächstes testen Sie die dynamische Gruppenmitgliedschaft und die automatisc
 In der Zeit sollte Folgendes angezeigt werden:
 
 - **Group Memberships** -Eigenschaft mit der Gruppe " **Sales** " aktualisiert.
-- **Product licenses** -Eigenschaft mit den Lizenzen **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** aktualisiert.
+- Die Eigenschaft " **Produktlizenzen** " wurde mit der **Microsoft 365 E5** -Lizenz aktualisiert.
 
 In den folgenden Schritten in der Identitäts Phase finden Sie Informationen und Links zum Bereitstellen der dynamischen Gruppenmitgliedschaft und der automatischen Lizenzierung in der Produktionsumgebung:
 

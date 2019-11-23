@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
-ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523630"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204260"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
 
 > [!NOTE] 
-> Diese Updates werden jetzt ausgerollt und sind möglicherweise noch nicht für alle Benutzer verfügbar.
+> Diese Updates werden jetzt ausgerollt und sind möglicherweise noch nicht für alle Benutzer verfügbar. Dieses Feature wird für Benutzer von Enterprise-Outlook.com unterstützt. Es steht derzeit nicht für Consumer-Outlook.com zur Verfügung.
 
 Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
 
@@ -53,9 +53,9 @@ Wenn Sie ein Office 365er Kunde sind, können Sie diese Funktion über das Secur
 
 - Wenn ein Administrator ein falsch positives Ergebnis erkannt hat und ein Absender nicht überprüfte Absender Behandlung erhalten soll, können Sie eine der folgenden Aktionen ausführen, um den Absender zur Spoof-Zulassungsliste "Spoof Intelligence" hinzuzufügen:
         
-    - Fügen Sie das Domänenpaar über die Spoof Intelligence-Einblicke hinzu. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise: Spoof Intelligence Insight
+    - Fügen Sie das Domänenpaar über die Spoof Intelligence-Einblicke hinzu. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Spoof Intelligence Insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
                 
-    - Fügen Sie das Domänenpaar über das PhishFilterPolicy-Cmdlet hinzu. Weitere Informationen finden Sie unter Festlegen-PhishFilterPolicy und Schutz vor Spoofing in Office 365
+    - Fügen Sie das Domänenpaar über das PhishFilterPolicy-Cmdlet hinzu. Weitere Informationen finden Sie unter [festlegen-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) und [Einrichten Office 365 ATP-Anti-Phishing-und Anti-Phishing-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
 Darüber hinaus wenden wir die nicht überprüfte Absender Behandlung nicht an, wenn Sie über eine Liste der zugelassenen Administratoren an den Posteingang übermittelt wurde, einschließlich e-Mail-Transport Regeln (ETRs), Liste sicherer Domänen (Anti-Spam-Richtlinie), Liste sicherer Absender oder ein Benutzer hat diesen Benutzer als "sicheren Absender" in ihrer festgelegt Inbox.
 
