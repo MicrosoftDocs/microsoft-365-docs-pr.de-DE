@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081382"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218840"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -96,7 +96,7 @@ Es folgen eine Darstellung und Beschreibung des vollständigen PST-Importprozess
     
   - Verwenden von [Aufbewahrungsrichtlinien](retention-policies.md) im Security & Compliance Center, um zu steuern, wie lange Postfachinhalte aufbewahrt werden, und Löschen von Inhalten, nachdem der Aufbewahrungszeitraum abgelaufen ist. 
 
-  - Verwenden von [Aufsichtsrichtlinien](supervision-policies.md) zur Überprüfung von Nachrichten, um sicherzustellen, dass sie den Nachrichtenstandards entsprechen, und einen Klassifizierungstyp hinzuzufügen.
+  - Verwenden von [Kommunikationscompliancerichtlinien](communication-compliance.md) zur Überprüfung von Nachrichten, um sicherzustellen, dass sie den Nachrichtenstandards entsprechen, und einen Klassifizierungstyp hinzuzufügen.
     
 - Das Importieren von Daten in Office 365 schützt vor Datenverlust. E-Mail-Daten, die in Office 365 importiert werden, erben die Features für hohe Verfügbarkeit von Exchange Online.
     
