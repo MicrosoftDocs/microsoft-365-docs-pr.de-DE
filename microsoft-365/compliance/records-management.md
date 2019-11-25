@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie die spezifischen Aufbewahrungszeitpläne Ihrer Organisation in einen Aktenplan einbinden, um Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus zu verwalten.
-ms.openlocfilehash: 97b5c1981cf2596554571e8b53059aa718aa561c
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3057b5ab061bc5107acbde3c67ecde8a9edaffd7
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440672"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "39233217"
 ---
 # <a name="records-management-in-microsoft-365"></a>Datensatzverwaltung in Microsoft 365
 
@@ -26,13 +26,13 @@ Organisationen aller Art benötigen eine Datensatzverwaltungslösung, um gesetzl
 
 Die Datensatzverwaltungslösung unterstützt die folgenden Elemente:
 
+- **Bezeichnen von Inhalt als Datensatz** Veröffentlichen Sie [Datensatzbezeichnungen](records.md), die von Endbenutzern angewendet werden sollen, oder lassen Sie [Datensatzbezeichnungen automatisch auf Elemente anwenden](labels.md#applying-a-retention-label-automatically-based-on-conditions), die bestimmte sensible Informationen, Schlüsselwörter oder Inhaltstypen enthalten.
+
 - **Migrieren und verwalten Sie Ihren Aufbewahrungsplan mit einem Dateiplan** und verwenden Sie den [Dateiplan-Manager](file-plan-manager.md), um Ihren bestehenden Aufbewahrungsplan einzubinden oder einen neuen mit Dateideskriptoren zu erstellen und Hierarchien zu expandieren.
 
 - **Erstellung von Aufbewahrungs- und Löschrichtlinien innerhalb der Datensatzbezeichnung**. Definieren Sie Zeiträume für [Aufbewahrung](retention-policies.md#retaining-content-for-a-specific-period-of-time) und [Disposition](retention-policies.md#deleting-content-thats-older-than-a-specific-age), basierend auf zahlreichen Faktoren, z. B. dem Datum der letzten Änderung oder dem Erstellungsdatum.
 
 - **Lösen Sie ereignisbasierte Aufbewahrung** mit [ereignisbasierter Aufbewahrung](event-driven-retention.md) aus.
-
-- **Bezeichnung als Datensatz**. Veröffentlichen Sie [Datensatzbezeichnungen](labels.md#using-retention-labels-for-records-management), die von Endbenutzern angewendet werden sollen, oder lassen Sie [Datensatzbezeichnungen automatisch auf Elemente anwenden](labels.md#applying-a-retention-label-automatically-based-on-conditions), die bestimmte sensible Informationen, Schlüsselwörter oder Inhaltstypen enthalten.
 
 - **Überprüfen und validieren Sie die Disposition** mit [Dispositionsüberprüfungen](disposition-reviews.md).
 
