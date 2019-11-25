@@ -55,6 +55,7 @@
 ### [Identität]()
 #### [Kennworthashsynchronisierung](password-hash-sync-m365-ent-test-environment.md):
 #### [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md)
+#### [Verbundauthentifizierung](federated-identity-for-your-office-365-dev-test-environment.md)
 #### [Nahtloses einmaliges Anmelden in Azure AD](single-sign-on-m365-ent-test-environment.md)
 #### [Mehrstufige Authentifizierung](multi-factor-authentication-microsoft-365-test-environment.md)
 #### [Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md)
