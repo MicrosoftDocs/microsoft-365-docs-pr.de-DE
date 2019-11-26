@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204256"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257550"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -137,7 +137,7 @@ EoP-Kunden erhalten grundlegende Anti-Phishing-Funktionen, wie zuvor beschrieben
 |EnableAuthenticationSafetyTip|True|True|Diese Einstellung ist nur in PowerShell verfügbar.|
 |EnableAuthenticationSoftPassSafetyTip|False|Wahr|Diese Einstellung ist nur in PowerShell verfügbar.|
 |EnableSuspiciousSafetyTip|False|Wahr|Diese Einstellung ist nur in PowerShell verfügbar.|
-|TreatSoftPassAsAuthenticated|Wahr|Falsch|Diese Einstellung ist nur in PowerShell verfügbar.|
+|TreatSoftPassAsAuthenticated|Wahr|False|Diese Einstellung ist nur in PowerShell verfügbar.|
 
 |Name der erweiterten Einstellungen-Sicherheitsfeature|Standard|Strict|Kommentar|
 |---------|---------|---------|---------|
@@ -164,24 +164,3 @@ Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken|Deaktiviert|Deaktiv
 |Umleitungs Anlage bei der Erkennung|Aktiviert|Aktiviert|Umleitung zur e-Mail-Adresse eines Sicherheitsadministrators, der weiß, wie Sie feststellen können, ob die Anlage Schadsoftware ist oder nicht|
 |Antwort bei ATP Safe Attachments, wenn Malwarescans für Anlagen ein Timeout oder ein Fehler auftritt|Aktiviert|Aktiviert||
 
-## <a name="miscellaneous-settings"></a>Verschiedene Einstellungen
-
-Diese Einstellungen umfassen eine Reihe von Features, die nicht unbedingt in bestimmte Kategorien oben passt. Einige der Einstellungen befinden sich außerhalb des Sicherheits #a0 Compliance Centers.
-
-Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|[Einrichten von SPF in Office 365 zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Ja|Ja||
-|[Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden](use-dkim-to-validate-outbound-email.md)|Ja|Ja||
-|[Verwenden von DMARC zum Validieren von E-Mails in Office 365](use-dmarc-to-validate-email.md)|Ja|Ja|Use Action = Quarantine for Standard und Action = Reject for Strict.|
-|Bereitstellen des Berichtsnachrichten-Add-ons zur Verbesserung der Berichterstellung für verdächtige e-Mails durch Endbenutzer|Ja|Ja||
-|Planen von Malware-und Spam Berichten|Ja|Ja||
-|Die automatische Weiterleitung an externe Domänen sollte nicht zugelassen oder überwacht werden.|Ja|Ja||
-|Einheitliche Überwachung sollte aktiviert sein|Ja|Ja||
-|IMAP-Konnektivität mit Postfach|Deaktiviert|Deaktiviert||
-|Pop-Konnektivität mit Postfach|Deaktiviert|Deaktiviert||
-|SMTP-authentifizierte Übermittlung an Postfach|Deaktiviert|Deaktiviert||
-|EWS-Konnektivität mit Postfach|Deaktiviert|Deaktiviert||
-|PowerShell-Konnektivität|Deaktiviert|Deaktiviert||
-|Verwenden von Spoofing Intelligence zum Whitelisting von Absendern, wann immer möglich|Ja|Ja||
-|Verzeichnisbasierte Edge-Blockierung (Blockierung)|Aktiviert|Aktiviert|Domain-Typ = autorisierend|
-|[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiviert|Aktiviert||
