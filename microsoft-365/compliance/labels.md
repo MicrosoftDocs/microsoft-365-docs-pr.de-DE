@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Aufbewahrungsbezeichnungen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,16 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Aufbewahrungsbezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Aufbewahrungsbezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: 71630812e75ef8b4af2f172f73e51d0084fb0df1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 143d3fb97afca5b6a3b18e47b7be472f35a857ba
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080650"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39266136"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -72,10 +73,10 @@ Aufbewahrungsbezeichnungen sind unabhängige, wiederverwendbare Bausteine, die i
   
 ![Diagramm der Bezeichnungen, Bezeichnungsrichtlinien und Speicherorte](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, werden sie in eine Aufbewahrungsbezeichnungsrichtlinie mit eingeschlossen. Bitte beachten Sie, dass Namen für Aufbewahrungsbezeichnungen unveränderlich sind und nachdem sie erstellt wurden nicht mehr bearbeitet werden können.
+1. Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, werden sie in eine Aufbewahrungsbezeichnungsrichtlinie einbezogen. Bitte beachten Sie, dass Namen für Aufbewahrungsbezeichnungen unveränderlich sind und nachdem sie erstellt wurden nicht mehr bearbeitet werden können.
 
 
-2. Eine einzelne Aufbewahrungsbezeichnung kann in viele Aufbewahrungsbezeichnungsrichtlinien eingeschlossen werden.
+2. Eine einzelne Aufbewahrungsbezeichnung kann in mehrere Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.
 
 3. Ein einzelner Ort kann auch in viele Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.    
     
@@ -113,7 +114,7 @@ Wenn Sie Aufbewahrungsbezeichnungen auf SharePoint oder OneDrive veröffentliche
   
 ### <a name="auto-apply-retention-labels"></a>Automatisch angewendete Aufbewahrungsbezeichnungen
 
-Wenn Sie Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, die bestimmte Bedingungen erfüllen, kann es bis zu sieben Tage dauern, bevor die Aufbewahrungsbezeichnungen auf alle vorhandenen Inhalte angewendet werden, die diesen Kriterien entsprechen. Beachten Sie jedoch, dass Ihre Aufbewahrungsbezeichnungen nach der Bereitstellung schnell auf neue Inhalte angewendet werden, in der Regel innerhalb von 15 Minuten oder weniger.
+Wenn Sie Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, die bestimmte Bedingungen erfüllen, kann es bis zu sieben Tage dauern, bevor die Aufbewahrungsbezeichnungen auf alle vorhandenen Inhalte angewendet werden, die diesen Kriterien entsprechen.
   
 ![Diagramm, wann automatisch angewendete Bezeichnungen wirksam werden](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -125,17 +126,17 @@ In Exchange Online werden Aufbewahrungsbezeichnungen Endbenutzern anhand eines P
     
 2. Führen Sie die folgenden Befehle aus:
     
-  ```
-  $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
-  ```
+   ```powershell
+   $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
+   ```
 
-  ```
-  $xmlprops = [xml]($logProps.MailboxLog)
-  ```
+   ```powershell
+   $xmlprops = [xml]($logProps.MailboxLog)
+   ```
 
-  ```
-  $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
-  ```
+   ```powershell
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
+   ```
 
 In den Ergebnissen zeigt die Eigenschaft `ELCLastSuccessTimeStamp` (UTC), wann das System zuletzt Ihr Postfach verarbeitet hat. Wenn dies seit dem Zeitpunkt der Richtlinienerstellung nicht geschehen ist, werden die Bezeichnungen nicht angezeigt. Um die Verarbeitung zu erzwingen, führen Sie `Start-ManagedFolderAssistant -Identity <user>` aus.
     
@@ -151,19 +152,19 @@ Verschiedene Arten von Aufbewahrungsbezeichnungen können an verschiedenen Speic
 |basierend auf Typen vertraulicher Informationen automatisch angewendet  <br/> |Exchange (nur alle Postfächer), SharePoint, OneDrive  <br/> |
 |basieren auf einer Abfrage automatisch angewendet  <br/> |Gruppen in Exchange, SharePoint, OneDrive, Office 365  <br/> |
    
-Beachten Sie, dass automatisch angewendete Aufbewahrungsbezeichnungen in Exchange (für Abfragen und Arten vertraulicher Informationen) nur auf neu gesendete Nachrichten angewendet werden (Daten bei der Übertragung), und nicht auf alle Elemente, die sich derzeit im Postfach befinden (ruhende Daten). Außerdem werden automatisch angewendete Aufbewahrungsbezeichnungen für Arten von vertraulichen Informationen immer auf alle Postfächer angewendet. Es können keine bestimmten Postfächer ausgewählt werden.
+In Exchange werden automatisch angewendete Bezeichnungen (sowohl für Abfragen als auch für vertrauliche Informationstypen) nur auf neu gesendete Nachrichten (in Übertragung begriffene Daten) angewendet, und nicht auf alle Elemente, die sich derzeit im Postfach befinden (ruhende Daten). Außerdem können automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationstypen nur auf alle Postfächer angewendet werden; Sie können keine bestimmten Postfächer dafür auswählen.
   
-Beachten Sie, dass öffentliche Ordner in Exchange und Skype Bezeichnungen nicht unterstützen.
+Öffentliche Ordner in Exchange und Skype unterstützen keine Bezeichnungen.
   
 ## <a name="how-retention-labels-enforce-retention"></a>So erzwingen Aufbewahrungsbezeichnungen die Aufbewahrung
 
-Aufbewahrungsbezeichnungen können genau die gleichen Aufbewahrungsaktionen erzwingen wie eine Aufbewahrungsrichtlinie. Sie können Aufbewahrungsbezeichnungen verwenden, um einen komplexen Inhaltsplan (oder Dateiplan) zu implementieren. Weitere Informationen zur Funktionsweise der Aufbewahrung finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md).
+Aufbewahrungsbezeichnungen können die gleichen Aufbewahrungsaktionen wie eine Aufbewahrungsrichtlinie erzwingen. Mithilfe von Aufbewahrungsbezeichnungen können Sie einen komplexen Inhaltsplan (oder Dateiplan) implementieren. Weitere Informationen zur Funktionsweise der Aufbewahrung finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md).
   
 Darüber hinaus hat eine Aufbewahrungsbezeichnung zwei Aufbewahrungsoptionen, die nur für eine Aufbewahrungsbezeichnung und nicht in einer Aufbewahrungsrichtlinie verfügbar sind. Aufbewahrungsbezeichnungen bieten Ihnen die folgenden Möglichkeiten:
   
 - Auslösen einer Dispositionsprüfung am Ende des Aufbewahrungszeitraums, damit SharePoint- und OneDrive-Dokumente überprüft werden müssen, bevor sie gelöscht werden können. Weitere Informationen finden Sie unter [Übersicht über Dispositionsprüfungen](disposition-reviews.md).
     
-- Beginnen des Aufbewahrungszeitraums zu dem Zeitpunkt, an dem der Inhalt mit der Bezeichnung versehen wurde, und nicht ausgehend vom Alter des Inhalts oder dem Zeitpunkt, zu dem er zuletzt geändert wurde. Beachten Sie, dass diese Option nur für Inhalte auf SharePoint-Websites und OneDrive-Konten gilt. Bei Exchange-E-Mails basiert der Aufbewahrungszeitraum immer auf dem Datum, an dem die Nachricht gesendet oder empfangen wurde, und zwar unabhängig davon, welche Option Sie hier auswählen.
+- Beginnen des Aufbewahrungszeitraums zu dem Zeitpunkt, an dem der Inhalt mit der Bezeichnung versehen wurde, und nicht ausgehend vom Alter des Inhalts oder dem Zeitpunkt, zu dem er zuletzt geändert wurde. Diese Option gilt nur für Inhalte auf SharePoint-Websites und in OneDrive-Konten. Bei Exchange-E-Mails basiert der Aufbewahrungszeitraum immer auf dem Datum, an dem die Nachricht gesendet oder empfangen wurde, und zwar unabhängig davon, welche Option Sie hier auswählen.
     
 ![Aufbewahrungseinstellungen mit Optionen speziell für Bezeichnungen](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
@@ -205,19 +206,21 @@ Sie können Aufbewahrungsbezeichnungen auch auf Ordner anwenden. Hierbei gilt Fo
     
 ### <a name="outlook-2010-and-later"></a>Outlook 2010 und höher
 
-Um ein Element in Outlook im Web mit einer Bezeichnung zu versehen: Mit der rechten Maustaste auf das Element klicken \> auf dem **Menüband** \> **Richtlinie zuweisen** \> Aufbewahrungsbezeichnung auswählen. 
+Wenn Sie ein Element im Outlook-Desktop-Client beschriften möchten, wählen Sie es zunächst aus. Klicken Sie im Menüband auf der Registerkarte **Start** auf **Richtlinie zuweisen**, und wählen Sie dann die gewünschte Aufbewahrungsbezeichnung aus. 
   
 ![Schaltfläche „Richtlinie zuweisen“](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-Nachdem die Aufbewahrungsbezeichnung angewendet wurde, können Sie sie zusammen mit der von ihr ausgeführten Aktion oben auf dem Element anzeigen. Wenn einer E-Mail eine Aufbewahrungsbezeichnung und damit verbunden ein Aufbewahrungszeitraum zugeordnet wurde, können Sie auf einen Blick sehen, wann die E-Mail abläuft.
+Sie können auch mit der rechten Maustaste auf ein Element klicken, im Kontextmenü auf **Richtlinie zuweisen** klicken, und dann die gewünschte Aufbewahrungsbezeichnung auswählen. 
+
+Nachdem die Aufbewahrungsbezeichnung angewendet wurde, können Sie sie zusammen mit der von ihr ausgeführten Aktion über dem Element anzeigen. Wenn einer E-Mail eine Aufbewahrungsbezeichnung und damit verbunden ein Aufbewahrungszeitraum zugeordnet wurde, können Sie auf einen Blick sehen, wann die E-Mail abläuft.
   
-Sie können Aufbewahrungsbezeichnungen auch auf Ordner anwenden. Dies funktioniert in Outlook 2010 und höher genauso wie in Outlook im Web – weitere Informationen finden Sie im vorherigen Abschnitt.
+Sie können Aufbewahrungsbezeichnungen auch auf Ordner anwenden. Die Funktionsweise ist in Outlook 2010 und höher die gleiche wie in Outlook im Web. Weitere Informationen hierzu finden Sie im vorherigen Abschnitt.
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive und SharePoint
 
-Um ein Dokument mit einer Bezeichnung zu versehen (einschließlich OneNote-Dateien), wählen Sie in OneDrive oder SharePoint das Element \> in der oberen rechten Ecke aus, wählen Sie **Detailfenster öffnen**![Symbol des Informationsbereichs](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Aufbewahrungsbezeichnung anwenden** \> Aufbewahrungsbezeichnung auswählen. 
+Um in OneDrive oder SharePoint ein Dokument mit einer Bezeichnung zu versehen (einschließlich OneNote-Dateien), wählen Sie das entsprechende Element \> in der oberen rechten Ecke aus, wählen Sie **Detailfenster öffnen**![Symbol des Informationsbereichs](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Aufbewahrungsbezeichnung anwenden** \> Aufbewahrungsbezeichnung auswählen. 
   
-Beachten Sie, dass Sie eine Aufbewahrungsbezeichnung auch auf einen Ordner- oder Dokumentensatz anwenden können. Sie können auch eine Standardaufbewahrungsbezeichnung für eine Dokumentbibliothek festlegen. Weitere Informationen finden Sie in Abschnitt weiter unten.
+Sie können eine Aufbewahrungsbezeichnung auch auf einen Ordner- oder Dokumentensatz anwenden sowie eine Standardaufbewahrungsbezeichnung für eine Dokumentbibliothek festlegen. Weitere Informationen hierzu finden Sie im nachstehenden Abschnitt.
   
 ![Bezeichnungsliste auf ein Element in SharePoint anwenden](media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
@@ -235,11 +238,11 @@ Wenn Sie Aufbewahrungsbezeichnungen in einer Office 365-Gruppe veröffentlichen,
 
 Um Inhalte für eine Office 365-Gruppe zu speichern, müssen Sie den Speicherort der Office 365-Gruppen verwenden. Obwohl eine Office 365-Gruppe über ein Exchange-Postfach verfügt, schließt eine Aufbewahrungsrichtlinie, die den gesamten Exchange-Speicherort umfasst, keine Inhalte in Office 365-Gruppenpostfächern ein.
 
-Darüber hinaus ist es nicht möglich, den Exchange-Speicherort zu verwenden, um ein bestimmtes Gruppenpostfach ein- oder auszuschließen. Obwohl der Exchange-Speicherort zunächst die Auswahl eines Gruppenpostfachs zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist.
+Außerdem ist es nicht möglich, den Exchange-Speicherort für den Ein- oder Ausschluss eines bestimmten Gruppenpostfachs zu verwenden. Obwohl der Exchange-Speicherort zunächst die Auswahl eines Gruppenpostfachs zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Automatisches Zuweisen einer Aufbewahrungsbezeichnung basierend auf Bedingungen
 
-Eines der leistungsstärksten Features von Aufbewahrungsbezeichnungen ist die Möglichkeit, sie automatisch auf Inhalte anzuwenden, die bestimmte Kriterien erfüllen. In diesem Fall müssen Personen in Ihrer Organisation die Aufbewahrungsbezeichnungen nicht selbst anwenden – Office 365 erledigt dies für sie.
+Eines der leistungsstärksten Features von Aufbewahrungsbezeichnungen ist die Möglichkeit, sie automatisch auf Inhalte anzuwenden, die bestimmte Bedingungen erfüllen. In diesem Fall müssen die Personen in Ihrer Organisation die Bezeichnungen nicht selber anwenden. Dies erledigt Office 365 automatisch.
   
 ![Diagramm der Rollen und Aufgaben für automatisch angewendete Bezeichnungen](media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -257,13 +260,17 @@ Sie können Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, wenn di
     
 - Der Inhalt enthält bestimmte Stichwörter, die einer von Ihnen erstellten Abfrage entsprechen.
     
-![Seite „Bedingung auswählen“ für automatisch angewendete Bezeichnungen](media/c0b7a3ef-bda0-494c-941d-f1f93753ecdd.png)
+![Seite „Bedingung auswählen“ für automatisch angewendete Bezeichnungen](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+
+
+Für automatisch angewendete Aufbewahrungsbezeichnungen ist ein Office 365 Enterprise E5-Abonnement erforderlich. Es kann bis zu sieben Tage dauern, bevor automatisch angewendete Aufbewahrungsbezeichnungen auf alle Inhalte angewendet werden, die die Bedingungen erfüllen, wie oben beschrieben.
   
-Beachten Sie, dass für automatisch angewendete Aufbewahrungsbezeichnungen ein Office 365 Enterprise E5-Abonnement erforderlich ist. Es kann bis zu sieben Tage dauern, bevor automatisch angewendete Aufbewahrungsbezeichnungen auf alle Inhalte angewendet werden, die die Bedingungen erfüllen, wie oben beschrieben.
-  
+> [!TIP]
+> Unter [Verwalten des Lebenszyklus von SharePoint-Dokumenten mithilfe von Aufbewahrungsbezeichnungen](auto-apply-retention-labels-scenario.md)finden Sie ein detailliertes Szenario zur Verwendung von verwalteten Eigenschaften in SharePoint, um Aufbewahrungsbezeichnungen automatisch anzuwenden und die ereignisgesteuerte Aufbewahrung zu implementieren.
+
 ### <a name="auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information"></a>Automatisches Anwenden von Aufbewahrungsbezeichnungen auf Inhalte mit bestimmten Typen von vertraulichen Informationen
 
-Beim Erstellen von automatisch angewendeten Aufbewahrungsbezeichnungen für vertrauliche Informationen wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) angezeigt. Jede Richtlinienvorlage ist so vorkonfiguriert, dass sie nach bestimmten Arten von vertraulichen Informationen sucht. So sucht die hier dargestellte Vorlage zum Beispiel nach US-ITIN, SSN und Passnummern. Weitere Informationen zu DLP finden Sie unter [Überblick über DLP-Richtlinien](data-loss-prevention-policies.md).
+Wenn Sie automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationen erstellen, wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. Jede Richtlinienvorlage ist für die Suche nach bestimmten Typen vertraulicher Informationen vorkonfiguriert. Die hier wiedergegebene Vorlage sucht beispielsweise nach US-amerikanischen Steuernummern für Privatpersonen (ITIN), Sozialversicherungsnummern (SSN) und Reisepassnummern. Weitere Informationen zu DLP finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md).
   
 ![Richtlinienvorlagen für Arten von vertraulichen Informationen](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
@@ -283,12 +290,12 @@ Sie können automatische Bezeichnungen auf Inhalte anwenden, die bestimmte Krite
 
 Weitere Informationen zur Abfragesyntax finden Sie unter:
 
-- [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Abfragebasierte Bezeichnungen verwenden den Suchindex zum Identifizieren von Inhalten. Weitere Informationen zu gültigen durchsuchbaren Eigenschaften finden Sie unter:
 
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
-- [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint Server](https://docs.microsoft.com/de-DE/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Beispiele für Abfragen:
 
@@ -305,7 +312,7 @@ Beispiele für Abfragen:
 
 Sie können es Personen nicht nur ermöglichen, eine Aufbewahrungsbezeichnung auf einzelne Dokumente anzuwenden, sondern Sie können eine Standardaufbewahrungsbezeichnung auf eine SharePoint-Bibliothek, einen Ordner oder eine Dokumentenmappe anwenden, sodass alle Dokumente in diesem Speicherort diese Standardaufbewahrungsbezeichnung erhalten.
   
-Bei einer Dokumentenbibliothek erfolgt dies auf der Seite **Bibliothekseinstellungen**. Wenn Sie die Standardaufbewahrungsbezeichnung auswählen, können Sie auch auswählen, dass sie auf alle vorhandenen Elemente in der Bibliothek angewendet wird. 
+Bei einer Dokumentbibliothek geschieht das auf der Seite **Bibliothekseinstellungen**. Wenn Sie die standardmäßige Aufbewahrungsbezeichnung auswählen, können Sie auch auswählen, dass sie auf vorhandene Elemente in der Bibliothek angewendet werden soll. 
   
 Wenn Sie zum Beispiel über ein Tag für Marketingmaterial verfügen und wissen, dass eine bestimmte Dokumentenbibliothek nur diese Art von Inhalt enthält, können Sie das Marketingmaterial-Tag als Standard für alle Dokumente in dieser Bibliothek festlegen.
   
@@ -313,11 +320,19 @@ Wenn Sie zum Beispiel über ein Tag für Marketingmaterial verfügen und wissen,
   
 Wenn Sie eine Standardaufbewahrungsbezeichnung auf vorhandene Elemente in der Bibliothek, im Ordner oder in der Dokumentenmappe anwenden:
   
-- Allen Elementen in der Bibliothek, im Ordner oder in der Dokumentenmappe wird automatisch dieselbe Aufbewahrungsbezeichnung zugewiesen, **mit Ausnahme von** Elementen, denen eine Aufbewahrungsbezeichnung explizit zugewiesen wurde. Explizit bezeichnete Elemente behalten diese Bezeichnung. Weitere Informationen finden Sie weiter unter im Abschnitt zu den [Grundsätzen der Aufbewahrung, oder was hat Vorrang?](#the-principles-of-retention-or-what-takes-precedence)
+- Alle Elemente in der Bibliothek, dem Ordner oder der Dokumentenmappe erhalten automatisch dieselbe Aufbewahrungsbezeichnung, **mit Ausnahme von Elementen**, auf die eine Aufbewahrungsbezeichnung explizit angewendet wurde. Explizit bezeichnete Elemente behalten diese Bezeichnung bei. Weitere Informationen finden Sie weiter unten im Abschnitt [Die Grundsätze der Aufbewahrung, oder was hat Vorrang?](#the-principles-of-retention-or-what-takes-precedence)
     
 - Wenn Sie die Standardaufbewahrungsbezeichnung einer Bibliothek, eines Ordners oder einer Dokumentenmappe ändern oder entfernen, wird die Aufbewahrungsbezeichnung ebenfalls für alle Elemente in der Bibliothek, im Ordner oder in der Dokumentenmappe geändert oder entfernt, **mit Ausnahme von** Elementen, die über explizit zugewiesene Aufbewahrungsbezeichnungen verfügen. 
     
 - Wenn Sie ein Element mit einer Standardaufbewahrungsbezeichnung aus einer Bibliothek, einem Ordner oder einer Dokumentenmappe in eine andere Bibliothek, einen Ordner oder eine Dokumentenmappe verschieben, behält das Element die vorhandene Standardaufbewahrungsbezeichnung auch dann, wenn der neue Speicherort eine andere Standardaufbewahrungsbezeichnung hat.
+
+- Wenn die standardmäßige Aufbewahrungsbezeichnung für eine Bibliothek, einen Ordner oder eine Dokumentenmappe Inhalte als Datensatz deklariert (auch *Datensatzbezeichnung* genannt), werden die folgenden Charakteristika angewendet:
+
+   - Wenn Sie die standardmäßige Aufbewahrungsbezeichnung zu einer Bezeichnung ändern, die Inhalte nicht als Datensatz deklariert, behalten Elemente die bestehende standardmäßige Datensatzbezeichnung bei. Die neue standardmäßige Aufbewahrungsbezeichnung wird nicht auf diese Elemente angewendet. Ein Websitesammlungsadministrator muss die Aufbewahrungsbezeichnung explizit löschen oder ändern.
+
+   - Wenn Sie die standardmäßige Aufbewahrungsbezeichnung löschen, die Inhalte als Datensatz deklariert, wird die Datensatzbezeichnung nicht aus den Elementen in der Bibliothek, dem Ordner oder der Dokumentenmappe entfernt. Ein Websitesammlungsadministrator muss die Aufbewahrungsbezeichnung explizit löschen.
+
+   Weitere Informationen zu Aufbewahrungsbezeichnungen, die Inhalte als Datensatz deklarieren, finden Sie unter [Übersicht über Datensätze](records.md).
     
 ## <a name="applying-a-retention-label-to-email-by-using-rules"></a>Anwenden einer Aufbewahrungsbezeichnung auf E-Mails mithilfe von Regeln
 
@@ -338,48 +353,8 @@ Sie können beispielsweise die Aufbewahrungsbezeichnung „Später überprüfen�
 ![Seite „Bezeichnungseinstellungen“ mit deaktivierter Aufbewahrung](media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## <a name="using-retention-labels-for-records-management"></a>Verwenden von Aufbewahrungsbezeichnungen für die Datensatzverwaltung
-
-Im Allgemeinen bedeutet die Datensatzverwaltung Folgendes:
-  
-- Wichtiger Inhalt wird von Benutzern als Datensatz klassifiziert.
     
-- Ein Datensatz kann nicht geändert oder gelöscht werden.
-    
-- Datensätze werden gelöscht, wenn die festgelegte Lebensdauer endet.
-    
-Sie können Aufbewahrungsbezeichnungen verwenden, um eine einheitliche Datensatzverwaltungsstrategie in Office 365 zu implementieren, während andere Funktionen für die Verwaltung von Datensätzen, z. B. das Datenarchiv, nur für SharePoint-Inhalte gelten. Darüber hinaus können Sie auch Aufbewahrungsaktionen für Datensätze erzwingen, damit sie am Ende ihres Lebenszyklus automatisch gelöscht werden.
-  
-Wenn Sie eine Aufbewahrungsbezeichnung erstellen, haben Sie die Möglichkeit, die Aufbewahrungsbezeichnung zum Klassifizieren des Inhalts als Datensatz zu verwenden.
-  
-![Kontrollkästchen zum Klassifizieren von Inhalt als Datensatz](media/9c300739-d5d0-41d2-88dd-137f1cfc9cb6.png)
-  
-Wenn ein Element als Datensatz bezeichnet wird, geschehen vier Dinge:
-  
-- Das Element kann nicht endgültig gelöscht werden.
-    
-- Das Element kann nicht bearbeitet werden.
-    
-- Die Bezeichnung kann nicht geändert werden.
-    
-- Die Bezeichnung kann nicht entfernt werden.
-    
-### <a name="who-can-classify-content-as-a-record"></a>Wer Inhalt als Datensatz klassifizieren kann
-
-Bei SharePoint-Inhalten kann jeder Benutzer in der Standardgruppe „Mitglieder“ (Berechtigungsstufe „Mitwirken“) eine Datensatzbezeichnung auf Inhalte anwenden. Nur der Administrator der Websitesammlung kann diese Aufbewahrungsbezeichnung entfernen oder ändern, nachdem sie angewendet wurde. Darüber hinaus kann eine Aufbewahrungsbezeichnung, die Inhalt als Datensatz klassifiziert, [automatisch auf Inhalte angewendet werden](#auto-apply-retention-labels).
-  
-### <a name="records-and-folders"></a>Datensätze und Ordner
-
-Sie können eine Aufbewahrungsbezeichnung auf einen Ordner in Exchange, SharePoint oder OneDrive anwenden. Wenn Sie einen Ordner als Datensatz bezeichnen und Sie ein Element in den Ordner verschieben, wird das Element als Datensatz gekennzeichnet. Wenn Sie das Element aus dem Ordner verschieben, bleibt es weiterhin als Datensatz gekennzeichnet.
-  
-### <a name="records-cant-be-deleted"></a>Datensätze können nicht gelöscht werden
-
-Wenn Sie versuchen, einen Datensatz in Exchange zu löschen, wird das Element in den Ordner „Wiederherstellbare Elemente“ verschoben, entsprechend der Beschreibung in [Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten am Speicherort](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
-  
-Wenn Sie versuchen, einen Datensatz in SharePoint zu löschen, wird eine Fehlermeldung angezeigt, dass das Element nicht gelöscht wurde, und das Element verbleibt in der Bibliothek.
-  
-![Nachricht, dass das Element nicht aus SharePoint gelöscht wurde](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
-  
-Wenn Sie versuchen, einen Datensatz in OneDrive zu löschen, wird das Element in das permanentes Dokumentarchiv verschoben, entsprechend der Beschreibung in [Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten am Speicherort](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+Sie können Aufbewahrungsbezeichnungen verwenden, um Inhalte als Datensätze zu klassifizieren. Auf diese Weise können Sie eine einzige, einheitliche Strategie zur Datensatzverwaltung in Office 365 einrichten. Weitere Informationen finden Sie unter [Übersicht über Datensätze](records.md).
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie
 
@@ -421,7 +396,7 @@ Um zu verstehen, wie verschiedene Bezeichnungen mit Aufbewahrungsrichtlinien auf
     
 3. **Explizite Einbindung hat Vorrang vor impliziter Einbindung.** Dies bedeutet: 
     
-    1. Wenn eine Aufbewahrungsbezeichnung mit Aufbewahrungseinstellungen von einem Benutzer manuell einem Element zugewiesen wird, z. B. einem Exchange-E-Mail- oder OneDrive-Dokument, hat diese Aufbewahrungsbezeichnung Vorrang sowohl vor einer Richtlinie, die auf Website- oder Postfachebene zugewiesen ist, als auch vor einer Standardaufbewahrungsbezeichnung, die von der Dokumentbibliothek zugewiesen wurde. Wenn z. B. die explizite Aufbewahrungsbezeichnung eine Aufbewahrung über zehn Jahr vorgibt, aber die der Website zugewiesene Richtlinie besagt, dass nur fünf Jahre aufbewahrt werden soll, hat die Aufbewahrungsbezeichnung Vorrang. Beachten Sie, dass automatisch angewendete Aufbewahrungsbezeichnungen als implizit und nicht als explizit angesehen werden, da sie von Office 365 automatisch angewendet werden.
+    1. Wenn eine Aufbewahrungsbezeichnung mit Einstellungen für die Aufbewahrung von einem Benutzer manuell einem Element, z. B. einer Exchange-E-Mail oder einem OneDrive-Dokument, zugewiesen wird, hat diese Aufbewahrungsbezeichnung sowohl Vorrang vor einer Richtlinie, die auf Website- oder Postfachebene zugewiesen wurde, als auch vor einer Standard-Aufbewahrungsbezeichnung, die von der Dokumentbibliothek zugewiesen wurde. Wenn beispielsweise die explizite Aufbewahrungsbezeichnung eine Aufbewahrung über zehn Jahre angibt, die der Website zugewiesene Aufbewahrungsrichtlinie hingegen eine Aufbewahrung über nur fünf Jahre, hat die Aufbewahrungsbezeichnung Vorrang. Automatisch zugewiesene Kennzeichnungen werden als implizit und nicht explizit angesehen, da sie von Office 365 automatisch angewendet werden.
     
     2. Wenn eine Aufbewahrungsrichtlinie einen bestimmten Speicherort wie das Postfach oder OneDrive for Business-Konto eines bestimmten Benutzers umfasst, hat diese Richtlinie Vorrang vor einer anderen Aufbewahrungsrichtlinie, die für alle Postfächer oder OneDrive for Business-Konten von Benutzern gilt, aber nicht das Postfach dieses Benutzers speziell einschließt.
     
@@ -435,7 +410,7 @@ Schließlich kann keine Aufbewahrungsrichtlinie oder Kennzeichnung einen Inhalt 
 
 Aufbewahrungsbezeichnungen können ganz einfach der gesamten Organisation und deren Inhalten in Office 365 bereitgestellt werden, einschließlich Exchange, SharePoint, OneDrive und Office 365-Gruppen. Wenn Sie Inhalte klassifizieren oder Datensätze in Office 365 verwalten müssen, empfehlen wir, dass Sie Aufbewahrungsbezeichnungen verwenden.
   
-Es gibt mehrere andere Features, die zuvor zum Klassifizieren von Inhalten oder Verwalten von Datensätzen in Office 365 verwendet wurden. Diese sind nachfolgend aufgeführt. Diese Features arbeiten weiterhin Seite an Seite mit Aufbewahrungsbezeichnungen. Beachten Sie, dass es zwar Fälle gibt, in denen sich die Implementierung von Bezeichnungen von früheren Features unterscheidet, die Entwicklung von Aufbewahrungsbezeichnungen jedoch die Zukunft der Datensatzverwaltung in Office 365 bestimmen wird. Daher wird im Hinblick auf Datengovernance auf lange Sicht empfohlen, Aufbewahrungsbezeichnungen anstelle dieser Features zu verwenden.
+Es gibt mehrere andere Features, die zuvor zum Klassifizieren von Inhalten oder Verwalten von Datensätzen in Office 365 verwendet wurden. Diese sind nachfolgend aufgeführt. Diese Features arbeiten weiterhin Seite an Seite mit Aufbewahrungsbezeichnungen. Es gibt zwar Fälle, in denen sich die Implementierung von Aufbewahrungsbezeichnungen von früheren Features unterscheidet, die Entwicklung von Aufbewahrungsbezeichnungen wird jedoch die Zukunft der Datensatzverwaltung in Office 365 bestimmen. Daher wird im Hinblick auf Datengovernance auf lange Sicht empfohlen, Aufbewahrungsbezeichnungen anstelle dieser Features zu verwenden.
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -451,7 +426,7 @@ Es gibt mehrere andere Features, die zuvor zum Klassifizieren von Inhalten oder 
     
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder Ihres Compliance-Teams, die Aufbewahrungsbezeichnungen erstellen sollen, benötigen Berechtigungen für das Security &amp; Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Speicherort und kann anderen Personen den Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, dass Sie zur Seite **Berechtigungen** des Security &amp; Compliance Center gehen, die Rollengruppe **Compliance-Administrator** bearbeiten und dieser Rollengruppe Mitglieder hinzufügen. 
+Die Mitglieder Ihres Complianceteams, die Aufbewahrungsbezeichnungen erstellen sollen, benötigen Berechtigungen für das Security &amp; Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Speicherort und kann anderen Personen den Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, dass Sie zur Seite **Berechtigungen** des Security &amp; Compliance Centers gehen, die Rollengruppe **Compliance-Administrator** bearbeiten und dieser Rollengruppe Mitglieder hinzufügen. 
   
 Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
