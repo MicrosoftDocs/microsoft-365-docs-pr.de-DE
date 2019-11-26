@@ -10,17 +10,18 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 9885463e61c36713cbd7be82ac1ef2caaee70e7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080603"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39233518"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -86,13 +87,13 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
 - Wenn Sie die Überwachungsprotokollsuche in Office 365 für Ihre Organisation deaktivieren möchten, können Sie in der mit Ihrer Exchange Online-Organisation verbundenen Remote-PowerShell den folgenden Befehl ausführen:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     Um die Überwachungssuche wieder zu aktivieren, können Sie den folgenden Befehl in der Exchange Online-PowerShell ausführen:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -213,6 +214,9 @@ Die Ergebnisse enthalten die folgenden Informationen zu den einzelnen Ereignisse
 
 - **IP-Adresse**: Die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird im Adressformat IPv4 oder IPv6 angezeigt.
 
+   > [!NOTE]
+  > Bei einigen Diensten ist der in diesem Feld angezeigte Wert möglicherweise die IP-Adresse einer vertrauenswürdigen Anwendung (z. B. Office in den Web-Apps), die anstelle eines Benutzers in den Dienst einruft und nicht die IP-Adresse des Geräts, das von der Person, die die Aktivität ausgeführt hat, verwendet wird. Außerdem wird bei Administratoraktivitäten (oder von einem Systemkonto ausgeführte Aktivitäten) für Azure Active Directory-bezogene Ereignisse die IP-Adresse nicht protokolliert, und der in diesem Feld angezeigte Wert ist `null`.
+
 - **Benutzer**: Der Benutzer (oder das Dienstkonto), der die Aktion ausführte, durch die das Ereignis ausgelöst wurde.
 
 - **Aktivität**: Die vom Benutzer ausgeführte Aktivität. Dieser Wert entspricht den Aktivitäten, die Sie in der Dropdownliste **Aktivitäten** ausgewählt haben. Bei einem Ereignis aus dem Exchange-Administratorüberwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet.
@@ -296,8 +300,9 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Benutzerverwaltungsaktivitäten](#user-administration-activities)|[Azure AD-Gruppenverwaltungsaktivitäten](#azure-ad-group-administration-activities)|[Anwendungsverwaltungsaktivitäten](#application-administration-activities)|
 |[Rollenverwaltungsaktivitäten](#role-administration-activities)|[Verzeichnisverwaltungsaktivitäten](#directory-administration-activities)|[eDiscovery-Aktivitäten](#ediscovery-activities)|
 |[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Yammer-Aktivitäten](#yammer-activities)|[Microsoft Flow-Aktivitäten für Abläufe](#microsoft-flow-activities)|
-|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|
+|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Yammer-Aktivitäten](#yammer-activities)|
+|[Microsoft Flow-Aktivitäten für Abläufe](#microsoft-flow-activities)|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
+[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
@@ -439,7 +444,7 @@ In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen vo
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Websitesammlungsadministrator hinzugefügt|SiteCollectionAdminAdded|Der Websitesammlungsadministrator oder -besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird ebenfalls protokolliert, wenn ein Administrator sich selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center oder [mithilfe des Microsoft 365 Admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).|
+|Websitesammlungsadministrator hinzugefügt|SiteCollectionAdminAdded|Der Websitesammlungsadministrator oder -besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird ebenfalls protokolliert, wenn ein Administrator sich selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center oder [mithilfe des Microsoft 365 Admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Benutzer oder Gruppe zu SharePoint-Gruppe hinzugefügt|AddedToGroup|Ein Benutzer hat ein Mitglied oder einen Gast zu einer SharePoint-Gruppe hinzugefügt. Dies kann eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität wie eines Freigabeereignisses gewesen sein.|
 |Vererbung der Berechtigungsstufe unterbrochen|PermissionLevelsInheritanceBroken|Ein Element wurde geändert, sodass es die Berechtigungsstufen nicht mehr vom übergeordneten Element erbt.|
 |Vererbung der Freigabe unterbrochen|SharingInheritanceBroken|Ein Element wurde geändert, sodass es die Freigabeberechtigung nicht mehr vom übergeordneten Element erbt.|
@@ -680,7 +685,7 @@ Die Überwachungsprotokollierung für Power BI ist standardmäßig nicht aktivie
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics-Aktivitäten
 
-Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen innerhalb Office 365-Organisation. In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von Benutzern ausgeführt wurden, denen die Administrator- oder Analystenrolle in Workplace Analytics zugeordnet ist. Benutzern, denen die Rolle des Analysten zugewiesen ist, haben Vollzugriff auf alle Dienstfunktionen und können das Produkt für Analysen verwenden. Benutzer, denen die Administratorrolle zugewiesen wurde, können Datenschutzeinstellungen und Systemstandardwerte konfigurieren sowie Organisationsdaten in Workplace Analytics vorbereiten, hochladen und überprüfen. Weitere Informationen finden Sie unter [Workplace Analytics](https://docs.microsoft.com/de-DE/workplace-analytics/index-orig).
+Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen innerhalb Office 365-Organisation. In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von Benutzern ausgeführt wurden, denen die Administrator- oder Analystenrolle in Workplace Analytics zugeordnet ist. Benutzern, denen die Rolle des Analysten zugewiesen ist, haben Vollzugriff auf alle Dienstfunktionen und können das Produkt für Analysen verwenden. Benutzer, denen die Administratorrolle zugewiesen wurde, können Datenschutzeinstellungen und Systemstandardwerte konfigurieren sowie Organisationsdaten in Workplace Analytics vorbereiten, hochladen und überprüfen. Weitere Informationen finden Sie unter [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -724,8 +729,16 @@ In der folgenden Tabelle sind die in Microsoft Teams von Benutzern und Administr
 |Registerkarte entfernt|TabRemoved|Ein Benutzer entfernt eine Registerkarte aus einem Kanal.|
 |Connector aktualisiert|ConnectorUpdated|Ein Benutzer hat in einem Kanal einen Connector geändert.|
 |Registerkarte aktualisiert|TabUpdated|Ein Benutzer hat in einem Kanal eine Registerkarte geändert.|
-|Benutzer bei Teams angemeldet|TeamsSessionStarted|Ein Benutzer meldet sich bei einem Microsoft Teams-Client an.|
+|Benutzer bei Teams angemeldet|TeamsSessionStarted|Ein Benutzer meldet sich bei einem Microsoft Teams-Client an. Dieses Ereignis erfasst keine Tokenaktualisierungsaktivitäten.|
 ||||
+
+### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams-Aktivitäten im Gesundheitswesen
+
+Wenn Ihre Organisation die [Patientenanwendung](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams verwendet, können Sie das Überwachungsprotokoll nach Aktivitäten im Zusammenhang mit der Patienten-App durchsuchen. Wenn Ihre Umgebung so konfiguriert ist, dass die Patienten-App unterstützt wird, steht in der Auswahlliste **Aktivitäten** eine weitere Aktivitätsgruppe für diese Aktivitäten zur Verfügung.
+
+![Microsoft Teams-Aktivitäten im Gesundheitswesen in der Auswahlliste "Aktivitäten"](media/TeamsHealthcareAuditActivities.png)
+
+Eine Beschreibung der Patienten-App-Aktivitäten finden Sie unter [Überwachungsprotokolle für die Patienten-App](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
 ### <a name="yammer-activities"></a>Yammer-Aktivitäten
 
@@ -758,7 +771,7 @@ Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durch
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft PowerApps durchsuchen. Diese Aktivitäten umfassen das Erstellen, Starten und Veröffentlichen einer App. Das Zuweisen von Berechtigungen zu Apps wird ebenfalls überwacht. Eine Beschreibung aller PowerApps-Aktivitäten finden Sie unter [Aktivitätsprotokollierung für PowerApps](https://docs.microsoft.com/de-DE/power-platform/admin/logging-powerapps#what-events-are-audited).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft PowerApps durchsuchen. Diese Aktivitäten umfassen das Erstellen, Starten und Veröffentlichen einer App. Das Zuweisen von Berechtigungen zu Apps wird ebenfalls überwacht. Eine Beschreibung aller PowerApps-Aktivitäten finden Sie unter [Aktivitätsprotokollierung für PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream-Aktivitäten
 
@@ -840,7 +853,7 @@ Nein. Die Überwachungsdienst-Pipeline arbeitet nahezu in Echtzeit und kann dahe
 
 **Wird der Datenaustausch von Office 365 über alle Regionen hinweg überwacht?**
 
-Nein. Zurzeit stellen wir Audit-Pipelines in den Regionen NA (Nordamerika), EMEA (Europa, Naher Osten und Afrika) und APAC (Asien-Pazifik) bereit. Es kann jedoch vorkommen, dass die Daten zum Lastenausgleich und nur während Livesite-Problemen zwischen den Regionen übertragen werden. Bei solchen Aktivitäten werden die Daten bei der Übertragung verschlüsselt.
+Nein. Zurzeit stellen wir Audit-Pipelines in den Regionen NA (Nordamerika), EMEA (Europa, Naher Osten und Afrika) und APAC (Asien-Pazifik) bereit. Es kann jedoch vorkommen, dass die Daten zum Lastenausgleich und nur während Livewebsiteproblemen zwischen den Regionen übertragen werden. Bei solchen Aktivitäten werden die Daten bei der Übertragung verschlüsselt.
 
 **Sind die Überwachungsdaten verschlüsselt?**
 

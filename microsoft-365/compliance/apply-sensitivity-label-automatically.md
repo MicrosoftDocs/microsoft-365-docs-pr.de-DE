@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
-ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
+ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "39233219"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256712"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 

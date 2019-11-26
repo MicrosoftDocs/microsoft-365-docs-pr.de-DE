@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informationen zum Verwenden von DLP-Richtlinien zum Schutz personenbezogener Daten in Office 365.
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: Informationen zum Verwenden von DLP-Richtlinien (Data Loss Prevention, Verhindern von Datenverlusten) zum Schutz personenbezogener Daten in Office 365.
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708115"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256782"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Anwenden des Schutzes auf personenbezogene Daten in Office 365
 
@@ -84,7 +84,7 @@ Die folgende Tabelle enthält drei Konfigurationen des zunehmenden Schutzes mith
 <td align="left"><p>Senden von E-Mail-Benachrichtigungen an Complianceteams, wenn diese Daten in Dokumenten in SharePoint Online und OneDrive for Business erkannt werden.</p>
 <p>Anpassen und Anzeigen von Richtlinientipps für Mitarbeiter in SharePoint und OneDrive for Business, wenn auf Dokumente mit diesen Daten zugegriffen wird.</p>
 <p>Erkennen und melden, wenn diese Daten freigegeben werden.</p></td>
-<td align="left"><p>Bewusstseinsbildung bei Complianceteams sowie Mitarbeitern im Hinblick darauf, wo diese Daten gespeichert werden.</p>
+<td align="left"><p>Bewusstseinsbildung bei Complianceteams und Mitarbeitern im Hinblick darauf, wo diese Daten gespeichert werden.</p>
 <p>Aufklärung von Mitarbeitern im Hinblick auf die Unternehmensrichtlinie zur Verarbeitung von Dokumenten, die diese Daten enthalten.</p>
 <p>Verhindert nicht, dass Mitarbeiter diese Daten intern oder extern freigeben.</p>
 <p>Sie können DLP-Berichte für freigegebene Daten überprüfen und entscheiden, ob Sie den Schutz erhöhen müssen.</p></td>
@@ -156,17 +156,17 @@ Beschreibung: Anzeigen von Richtlinientipps für Mitarbeiter, Benachrichtigen vo
 
 Alle Speicherorte umfasst:
 
--   SharePoint Online
+- SharePoint Online
 
--   OneDrive for Business-Konten
+- OneDrive for Business-Konten
 
--   Exchange-Postfächer
+- Exchange-Postfächer
 
 Da die Inhaltssuche derzeit das Testen personenbezogener Informationstypen mit E-Mails nicht unterstützt, sollten Sie ggf. separate Richtlinien für Exchange mit einer Teilmenge von vertraulichen Informationstypen in einer Richtlinie erstellen und die Einführung dieser Richtlinien überwachen.
 
 ## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>Zusätzlicher Schutz, den Sie zum Schutz personenbezogener Daten in Office 365 anwenden können
 
-Mit vertraulichen Informationstypen, -bezeichnungen und DLP-Richtlinien können Dokumente mit bestimmten Daten erkannt und entsprechender Schutz für diese angewendet werden. Diese Schutzfunktionen hängen jedoch von geeigneten Berechtigungen ab, die für den Zugriff auf Daten festgelegt sind, von Benutzern mit Konten, die nicht kompromittiert sind, und Geräten, die ordnungsgemäß ausgeführt werden.
+Mit vertraulichen Informationstypen, Bezeichnungen und DLP-Richtlinien können Dokumente mit bestimmten Daten erkannt und entsprechender Schutz für diese angewendet werden. Diese Schutzfunktionen hängen jedoch von geeigneten Berechtigungen ab, die für den Zugriff auf Daten festgelegt sind, von Benutzern mit Konten, die nicht kompromittiert sind, und Geräten, die ordnungsgemäß ausgeführt werden.
 
 Die folgende Abbildung zeigt zusätzliche Schutzfunktionen im Detail, die Sie zum Schutz personenbezogener Daten anwenden können.
 

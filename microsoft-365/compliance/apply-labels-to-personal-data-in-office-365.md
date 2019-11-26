@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
-ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081144"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256912"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
 
@@ -68,7 +68,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Aufbewahrungsbezeichnungen. Beispiele: „Privat“, „Öffentlich“, „Kundendaten“, „Personaldaten“, „Vertraulich“, „Streng vertraulich“</td>
+<td align="left">Aufbewahrungsbezeichnungen Beispiele: „Privat“, „Öffentlich“, „Kundendaten“, „Personaldaten“, „Vertraulich“, „Streng vertraulich“</td>
 <td align="left"><p>Diese Bezeichnung automatisch anwenden...</p>
 <p>Kundendaten</p>
 <p>... auf Dokumente, die folgenden vertraulichen Informationstypen entsprechen...</p>
@@ -119,9 +119,9 @@ Automatisch zugewiesene Bezeichnungen können entweder durch neuere Bezeichnungs
 
 Achten Sie darauf, dass Ihr Plan für die Implementierung von Bezeichnungen Folgendes umfasst:
 
--   Priorisieren der Reihenfolge, in der automatisch angewendete Richtlinien erstellt werden.
+- Priorisieren der Reihenfolge, in der automatisch angewendete Richtlinien erstellt werden.
 
--   Ausreichend Zeit für das automatische Anwenden von Bezeichnungen, bevor diese für das manuelle Anwenden für Benutzer bereitgestellt werden. Es kann bis zu sieben Tage dauern, bis die Bezeichnungen auf alle Inhalte angewendet werden, die die Bedingungen erfüllen.
+- Ausreichend Zeit für das automatische Anwenden von Bezeichnungen, bevor diese für das manuelle Anwenden für Benutzer bereitgestellt werden. Es kann bis zu sieben Tage dauern, bis die Bezeichnungen auf alle Inhalte angewendet werden, die die Bedingungen erfüllen.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Beispiel für Priorität für das Erstellen von automatisch angewendeten Richtlinien
 
@@ -166,7 +166,7 @@ Achten Sie darauf, dass Ihr Plan für die Implementierung von Bezeichnungen Folg
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Erstellen von Bezeichnungen und automatisch angewendeten Bezeichnungsrichtlinien
 
-Erstellen Sie Bezeichnungen und Richtlinien im Security Center or Compliance Center.
+Erstellen Sie Bezeichnungen und Richtlinien im Security Center oder Compliance Center.
 
 <table>
 <thead>
@@ -198,8 +198,8 @@ Die folgende Abbildung zeigt, wie Sie eine automatisch angewendete Bezeichnung f
 
 In der Abbildung sehen Sie Folgendes:
 
--   Die Bezeichnung „Kundendaten“ wird erstellt.
+- Die Bezeichnung „Kundendaten“ wird erstellt.
 
--   Die gewünschten vertraulichen Informationstypen für die DSGVO werden aufgeführt: Nationale belgische Nummer, Kreditkartennummer, Kroatische ID-Kartennummer, nationale finnische ID-Nummer.
+- Die gewünschten vertraulichen Informationstypen für die DSGVO werden aufgeführt: Nationale belgische Nummer, Kreditkartennummer, Kroatische ID-Kartennummer, nationale finnische ID-Nummer.
 
--   Erstellen einer automatisch angewendeten Richtlinie, die die Bezeichnung „Kundendaten“ jeder Datei zuweist, die einen der vertraulichen Informationstypen enthält, die der Richtlinie hinzugefügt wurde.
+- Erstellen einer automatisch angewendeten Richtlinie, die die Bezeichnung „Kundendaten“ jeder Datei zuweist, die einen der vertraulichen Informationstypen enthält, die der Richtlinie hinzugefügt wurde.
