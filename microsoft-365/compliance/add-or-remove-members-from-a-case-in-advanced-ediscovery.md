@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acaafcfea7e62ee4671c0ae63461fbb523c5a0f0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 562735b72e3f191dab6c6f2fa0a317634667e22c
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081170"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256722"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Hinzufügen oder Entfernen von Mitgliedern aus einem Fall
 
-Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die Anfrage zugreifen kann. Beachten Sie, dass Benutzer, die den Rollengruppen Prüfer oder eDiscovery-Manager hinzugefügt werden, als Mitglieder der Anfrage hinzugefügt werden können. Beachten Sie, dass der eDiscovery-Manager, der den Fall erstellt hat, automatisch als Mitglied hinzugefügt wird.
+Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die Anfrage zugreifen kann. Benutzer, die einem Prüfer oder einer eDiscovery-Manager-Rollengruppe hinzugefügt werden, können als Mitglieder der Anfrage hinzugefügt werden. Der eDiscovery-Manager, der den Fall erstellt hat, wird automatisch als Mitglied hinzugefügt.
 
 1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu Ihrem Fall.
 
@@ -31,13 +31,13 @@ Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die 
 
 3. Klicken Sie auf **Aktualisieren**.
 
-4. Klicken Sie unter **Mitglieder verwalten**auf Symbol hinzufügen, um der Anfrage Mitglieder hinzuzufügen. Sie können auch eine Rollengruppe zur Anfrage hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf Symbol hinzufügen.
+4. Wählen Sie unter **Mitglieder verwalten**die Option Add Icon Add aus, um der Anfrage Mitglieder hinzuzufügen. Sie können auch eine Rollengruppe zur Anfrage hinzufügen. Wählen Sie unter **Rollengruppen verwalten**die Option Symbol hinzufügen aus.
     Beachten Sie, dass Rollengruppen die Berechtigung für den Zugriff auf die Anfrage steuern. Das bedeutet, dass Sie nur Prüfer, eDiscovery-Manager oder benutzerdefinierte Rollengruppen mit Fall Verwaltungsrolle zuweisen können.
 
-5. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder der Anfrage hinzugefügt werden können, auf das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
+5. Aktivieren Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder der Anfrage hinzugefügt werden können, das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
 
-6. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder der Gruppe hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
+6. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder der Gruppe hinzugefügt werden sollen, wählen Sie **Hinzufügen**aus.
 
-7. Klicken Sie in **diesem Fall verwalten**auf **Speichern** , um die neue Liste der Fall Mitglieder zu speichern.
+7. Wählen Sie in **diesem Fall verwalten**die Option **Speichern** aus, um die neue Liste der Fall Mitglieder zu speichern.
 
-8. Klicken Sie auf **Speichern** , um die neue Liste der Fall Mitglieder zu speichern.
+8. Wählen Sie **Speichern** aus, um die neue Liste der Case-Elemente zu speichern.

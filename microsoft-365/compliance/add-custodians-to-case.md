@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 287d5252fd787d80a20ff6cff77a7b1f7cf7e0bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc8002d900c38dee1b8487bbc0167b956f63b97f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081182"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257053"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
@@ -50,11 +50,11 @@ Der erste Schritt besteht darin, die Verwalter für den Fall zu identifizieren u
   
 ## <a name="step-2-select-custodian-data-sources"></a>Schritt 2: Auswählen von Depotdaten Quellen
 
-Nach dem Hinzufügen von Depotbanken hilft Ihnen das depotverwalter-Tool, die primären Datenquellen zu identifizieren, die im Besitz jeder Depotbank sind. Diese Datenspeicherorte sind insbesondere das Exchange-Postfach des Depotbank und das OneDrive-Konto. 
+Nach dem Hinzufügen von Depotbanken hilft Ihnen das depotverwalter-Tool dabei, die primären Datenquellen zu identifizieren, die im Besitz jeder Depotbank sind. Diese Datenspeicherorte sind das Exchange-Postfach des Depotbank und das OneDrive-Konto. 
 
 So identifizieren Sie Depotbank-Datenquellen: 
 
-1. Wenn Sie das Exchange-Postfach für alle Verwalter auswählen möchten, klicken Sie oben in der Spalte auf das Kontrollkästchen **Exchange** . Beachten Sie, dass Sie das Kontrollkästchen für eine bestimmte Depotbank deaktivieren können, um ein Postfach als Speicherort für die Freiheitsentzug zu entfernen. Alternativ können Sie das Kontrollkästchen **Exchange** oben in der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
+1. Wenn Sie das Exchange-Postfach für alle Verwalter auswählen möchten, aktivieren Sie das Kontrollkästchen **Exchange** oben in der Spalte. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, um ein Postfach als Speicherort für die Freiheitsentzug zu entfernen. Alternativ können Sie das Kontrollkästchen **Exchange** oben in der Spalte deaktivieren und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
  
    ![Auswählen von Datenquellen für sorgeberechtigte](media/AddCustodianStep2.png)
  
@@ -74,7 +74,7 @@ So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
   
    ![Zuordnen zusätzlicher Datenquellen](media/AddCustodianStep3.PNG)
 
-2. Auf der Flyout-Seite können Sie eine Datenquelle aus den folgenden Office 365 Diensten angeben:
+2. Auf der Flyout-Seite können Sie eine Datenquelle aus einem der folgenden Office 365 Dienste angeben:
   
    -  **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie das Suchfeld, um nach Postfächern zu suchen, die der Depotbank zugeordnet werden sollen. Zum Angeben von Postfächern, die der ausgewählten Depotbank zugewiesen werden sollen, suchen Sie im Suchfeld nach Benutzerpostfächern und Verteilergruppen. Sie können auch das zugeordnete Postfach für eine Office 365 Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
@@ -83,28 +83,28 @@ So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
      
      - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um eine Liste der SharePoint-Websites in Ihrer Organisation anzuzeigen. Zum Zuordnen einer Website zur Depotbank können Sie eine Website in der Liste auswählen oder die URL einer anderen Website oder Website eingeben, die einer Office 365 Gruppe, einem Microsoft Team oder einem OneDrive-Konto zugeordnet ist.
      
-     - **Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft Teams anzuzeigen, in denen die Depotbank derzeit Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrer Depotbank hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch #a0 wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+     - **Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft Teams anzuzeigen, bei denen die Depotbank derzeit Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrer Depotbank hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch #a0 wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
        ![Zuordnen von Datenquellen](media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > Wenn Sie ein zusätzliches Team einer Depotbank zuordnen möchten, müssen Sie das Postfach und den Standort, der dem Team zugeordnet ist, separat mithilfe der Speicherorte von **Exchange-e-Mail** und **SharePoint-Websites** hinzufügen.
 
-Nachdem Sie die Zuordnung zusätzlicher Datenquellen zu den Depotstellen abgeschlossen haben, können Sie auf der **Seite Weitere Datenquellen auswählen**die Gesamtzahl der Postfächer, Websites und Teams anzeigen, die mit den einzelnen Depotbanken verknüpft sind. Wenn Sie die relevanten Datenquellen für eine bestimmte Depotbank abgeschlossen haben, wird diese Zuordnung während der Sammlungs-, Verarbeitungs-und Überprüfungsphase im eDiscovery-Workflow beibehalten und verwendet.
+Nachdem Sie die Zuordnung zusätzlicher Datenquellen zu den Depotstellen abgeschlossen haben, können Sie die Gesamtzahl der Postfächer, Websites und Teams anzeigen, die jeder Depotbank auf der **Seite Weitere Datenquellen auswählen**zugeordnet sind. Wenn Sie die relevanten Datenquellen für eine bestimmte Depotbank abgeschlossen haben, wird diese Zuordnung während der Sammlungs-, Verarbeitungs-und Überprüfungsphase im eDiscovery-Workflow beibehalten und verwendet.
 
 ## <a name="step-4-place-custodians-on-hold"></a>Schritt 4: Platzieren von Depot Haltern
 
-Nachdem Sie die Verwalter und Datenquellen abgeschlossen haben, die dem Fall hinzugefügt werden sollen, können Sie optional einige oder alle depotverwalter in der Warteschleife platzieren. Wenn Sie eine Depotstelle aufbewahren, werden alle Inhalte in allen Inhaltsspeicherorten, die der Depotbank zugeordnet sind, beibehalten, bis Sie den Haltebereich entfernen oder die Depotbank aus dem freigeben. In einigen Fällen möchten Sie möglicherweise Verwalter einem Fall hinzufügen, ohne diese in den Wartebereich zu versetzen.
+Nachdem Sie die Verwalter und Datenquellen abgeschlossen haben, die dem Fall hinzugefügt werden sollen, können Sie optional einige oder alle depotverwalter in der Warteschleife platzieren. Wenn Sie eine Depotstelle aufbewahren, werden alle Inhalte in allen Inhaltsspeicherorten, die dem depotverwalter zugeordnet sind, beibehalten, bis Sie den Haltebereich entfernen oder die Depotbank aus dem Archiv freigeben. In einigen Fällen möchten Sie möglicherweise Verwalter einem Fall hinzufügen, ohne diese in den Wartebereich zu versetzen.
 
 So platzieren Sie die Depotstellen und Datenquellen in der Warteschleife:
 
-1. Klicken Sie auf der Seite **Aufbewahrungszeit auf der ausgewählten Depotstelle platzieren** auf das Kontrollkästchen **halten** am oberen Rand der Spalte, um alle depotverwalter zu speichern. Beachten Sie, dass Sie das Kontrollkästchen für eine bestimmte Depotbank deaktivieren können, die aus dem Haltestatus entfernt werden soll. Alternativ können Sie das Kontrollkästchen **halten** am oberen Rand der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
+1. Aktivieren Sie auf der Seite **Aufbewahrungsplatz auf der ausgewählten Depotstelle** das Kontrollkästchen **halten** am oberen Rand der Spalte, um alle depotverwalter in den Haltebereich zu versetzen. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, die aus dem Haltestatus entfernt werden soll. Alternativ können Sie das Kontrollkästchen **halten** am oberen Rand der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
  
    ![Platz hält](media/AddCustodianStep5.PNG)
 
 2. Überprüfen Sie die Aufbewahrungsoptionen, und klicken Sie dann auf **Fertig**stellen.
 
-Wenn Sie keinen Aufbewahrungsplatz als depotverwalter festlegen, wird der Verwalter und die ihm zugeordneten Datenquellen dem Fall hinzugefügt, der Inhalt dieser Datenquellen wird jedoch nicht gespeichert.
+Wenn Sie keine Aufbewahrungspflicht für einen depotverwalter festlegen, werden der Verwalter und die ihm zugeordneten Datenquellen dem Fall hinzugefügt, der Inhalt dieser Datenquellen wird jedoch nicht in die Warteschleife gesetzt.
 
 Nachdem eine Depotbank in den Wartebereich versetzt wurde, wird automatisch eine Depotbank-Aufbewahrungsrichtlinie erstellt, die alle Freiheitsentzug-Quellen enthält. So zeigen Sie diese Richtlinie an:
 

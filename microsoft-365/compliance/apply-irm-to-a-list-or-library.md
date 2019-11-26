@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
-ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686197"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256812"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Anwenden der Verwaltung von Informationsrechten (Information Rights Management, IRM) auf eine Liste oder Bibliothek
 
 Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Der Azure Rights Management Service (Azure RMS) von Azure Information Protection und die lokale Entsprechung, Active Directory Rights Management Services (AD RMS), unterstützen die Verwaltung von Informationsrechten für Websites. Es sind keine separaten oder zusätzlichen Installationen erforderlich.
     
@@ -37,7 +37,7 @@ Sie können die Verwaltung von Informationsrechten (Information Rights Managemen
     
 - Um IRM auf eine Liste oder Bibliothek anzuwenden, benötigen Sie Administratorberechtigungen für diese Liste oder Bibliothek.
     
-- Wenn Sie SharePoint Online verwenden, können die Benutzer beim Herunterladen größerer IRM-geschützter Dateien möglicherweise Timeouts auftreten. Wenn dies geschieht, wenden Sie den IRM-Schutz mithilfe Ihrer Office-Programme an, und speichern Sie größere Dateien in einer SharePoint-Bibliothek, die nicht IRM verwendet.
+- Wenn Sie SharePoint Online verwenden, können die Benutzer beim Herunterladen größerer IRM-geschützter Dateien möglicherweise Timeouts auftreten. In diesem Fall wenden Sie den IRM-Schutz mithilfe Ihrer Office-Programme an und speichern größere Dateien in einer SharePoint-Bibliothek, die nicht IRM verwendet.
     
 > [!NOTE]
 > Wenn Sie SharePoint Server 2013 verwenden, muss ein Server Administrator auf allen Front-End-Webservern Schutzprogramme für jeden Dateityp installieren, den die Personen in Ihrer Organisation mithilfe von IRM schützen möchten. 
@@ -70,7 +70,7 @@ Sie können die Verwaltung von Informationsrechten (Information Rights Managemen
 |Erfordern, dass Personen Ihre Anmeldeinformationen in bestimmten Intervallen überprüfen.  <br/> Wählen Sie diese Option aus, wenn Sie den Zugriff auf Inhalte auf einen bestimmten Zeitraum beschränken möchten. Wenn Sie diese Option auswählen, laufen die Ausstellungs Lizenzen der Personen für den Zugriff auf den Inhalt nach der angegebenen Anzahl von Tagen ab, und die Benutzer müssen zum Server zurückkehren, um Ihre Anmeldeinformationen zu überprüfen und eine neue Kopie herunterzuladen.  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer müssen Ihre Anmeldeinformationen mit diesem Intervall (Tage) überprüfen** , und geben Sie dann die Anzahl der Tage an, für die das Dokument angezeigt werden soll.  <br/> |
 | Verhindern, dass Personen Dokumente hochladen, die IRM nicht unterstützen, für diese Liste oder Bibliothek.  <br/>  Wenn Sie diese Option auswählen, können Benutzer keine der folgenden Dateitypen hochladen:  <br/>  Dateitypen, für die keine entsprechenden IRM-Schutzkomponenten auf allen Front-End-Webservern installiert sind.  <br/>  Dateitypen, die SharePoint Server 2010 nicht entschlüsseln können.  <br/>  Dateitypen, die in einem anderen Programm IRM-geschützt sind  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer dürfen keine Dokumente hochladen, die IRM nicht unterstützen** .  <br/> |
 |Entfernen Sie eingeschränkte Berechtigungen aus dieser Liste oder Bibliothek an einem bestimmten Datum.  <br/> |Aktivieren Sie das Kontrollkästchen **Einschränken des Zugriffs auf die Bibliothek** deaktivieren, und wählen Sie dann das gewünschte Datum aus.  <br/> |
-|Steuern Sie das Intervall, in dem Anmeldeinformationen für das Programm zwischengespeichert werden, das zum Öffnen des Dokuments lizenziert ist.  <br/> |Geben Sie im **Intervall zum Festlegen von Gruppen Schutz und Anmeldeinformationen**theinterval für die Zwischenspeicherung von Anmeldeinformationen in Tagen ein.  <br/> |
+|Steuern Sie das Intervall, in dem Anmeldeinformationen für das Programm zwischengespeichert werden, das zum Öffnen des Dokuments lizenziert ist.  <br/> |Geben Sie im **Intervall zum Festlegen von Gruppen Schutz und Anmeldeinformationen**das Intervall für die Zwischenspeicherung von Anmeldeinformationen in Tagen ein.  <br/> |
 |Gruppen Schutz zulassen, damit Benutzer mit Mitgliedern derselben Gruppe teilen können.  <br/> |Wählen Sie **Gruppen Schutz zulassen**aus, und geben Sie den Namen der Gruppe für die Freigabe ein.  <br/> |
    
 8. Klicken Sie nach Abschluss der Auswahl der gewünschten Optionen auf **OK**.

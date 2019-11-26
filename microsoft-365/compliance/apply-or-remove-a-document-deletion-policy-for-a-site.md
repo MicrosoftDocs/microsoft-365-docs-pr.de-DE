@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Unternehmen unterliegen häufig compliancebezogenen, rechtlichen oder anderen Vorschriften, nach denen sie Dokumente eine bestimmte Zeit lang aufbewahren müssen. Werden Dokumente jedoch länger als erforderlich aufbewahrt, kann dies für das Unternehmen ein rechtliches Risiko darstellen. Daher hat Ihr Unternehmen für Ihre Website möglicherweise eine Dokumentlöschrichtlinie erstellt, nach der z. B. allgemeine Geschäftsdokumente fünf Jahre nach Erstellung gelöscht werden müssen.
-ms.openlocfilehash: 3f5228c26cc4e12c129a57e2141e3eea50d029a2
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 2eaa864cda726e6e36625f81358da76856db7db4
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342958"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256762"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Anwenden oder Entfernen einer Dokumentlöschrichtlinie für eine Website
 
-Unternehmen unterliegen häufig compliancebezogenen, rechtlichen oder anderen Vorschriften, nach denen sie Dokumente eine bestimmte Zeit lang aufbewahren müssen. Werden Dokumente jedoch länger als erforderlich aufbewahrt, kann dies für das Unternehmen ein rechtliches Risiko darstellen. Daher hat Ihr Unternehmen für Ihre Website möglicherweise eine Dokumentlöschrichtlinie erstellt, nach der z. B. allgemeine Geschäftsdokumente fünf Jahre nach Erstellung gelöscht werden müssen.
+Unternehmen unterliegen häufig compliancebezogenen, rechtlichen oder anderen Vorschriften, nach denen sie Dokumente eine bestimmte Zeit lang aufbewahren müssen. Werden Dokumente jedoch länger als erforderlich aufbewahrt, kann dies für das Unternehmen ein rechtliches Risiko darstellen. Aus diesem Grund hat Ihre Organisation möglicherweise eine Richtlinie zum Löschen von Dokumenten&mdash;für Ihre Website erstellt. beispielsweise können allgemeine Geschäftsdokumente fünf Jahre nach ihrer Erstellung gelöscht werden.
   
 Abhängig von Ihrem Unternehmen kann eine Dokumentlöschrichtlinie eine der folgenden Eigenschaften aufweisen:
   
@@ -33,11 +33,11 @@ Abhängig von Ihrem Unternehmen kann eine Dokumentlöschrichtlinie eine der folg
     
   - Auswählen einer anderen Richtlinie, sofern verfügbar.
     
-  - Vollständiges Abwählen der Richtlinie, wenn sie für die Inhalte der Website nicht relevant ist.
+  - Deaktivieren Sie die Richtlinie vollständig, wenn Sie für den Inhalt der Website nicht relevant ist.
     
 - **Weder verpflichtend noch standardmäßig** In diesem Fall wird auf die Website keine Richtlinie automatisch angewendet, und der Websiteeigentümer muss Maßnahmen ergreifen, um eine Richtlinie anzuwenden. 
     
-Eine Dokumentlöschrichtlinie kann mehr als eine Regel enthalten. So kann eine Regel etwa besagen, dass Dokumente ein Jahr nach deren Erstellung gelöscht werden, während eine andere Regel besagen kann, dass Dokumente ein Jahr nach der letzten Änderung gelöscht werden. Wenn eine Richtlinie mehr als eine Regel enthält, können Sie die Regel auswählen, die sich für Ihre Website am besten eignet. Die Löschregel wird auf alle Bibliotheken in der Website angewendet. In einer Website kann jeweils immer nur eine Richtlinie und eine Regel aktiv sein. Eine Regel kann wie eine Richtlinie als Standard festgelegt werden, sodass sie automatisch angewendet wird, wenn die Richtlinie angewendet wird.
+Eine Richtlinie zum Löschen von Dokumenten enthält möglicherweise mehrere Regeln&mdash;, beispielsweise kann eine Regel sagen, Löschen von Dokumenten ein Jahr nach ihrer Erstellung, aber eine andere Regel könnte sagen, Löschen von Dokumenten ein Jahr nach ihrer letzten Änderung. Wenn eine Richtlinie mehr als eine Regel enthält, können Sie die Regel auswählen, die am besten für Ihre Website gilt. Die Delete-Regel wird auf alle Bibliotheken innerhalb der Website angewendet. In einer Website kann jeweils immer nur eine Richtlinie und eine Regel aktiv sein. Wie eine Richtlinie kann eine Regel als Standard festgelegt werden, sodass Sie automatisch angewendet wird, wenn die Richtlinie angewendet wird.
   
 Außerdem werden Dokumentlöschrichtlinien vererbt. Wenn Sie eine Richtlinie oder Regel für Ihre Website auswählen, wird diese Auswahl von allen Unterwebsites geerbt. Der Besitzer einer Website kann die Vererbung allerdings durch Auswahl einer anderen Richtlinie oder Regel unterbrechen. Berücksichtigen Sie bei der Auswahl einer Richtlinie oder Regel die Inhalte aller Unterwebsites unterhalb Ihrer Website.
   
@@ -85,7 +85,7 @@ Für Sie als Besitzer einer Website oder Websitesammlung gibt es in Ihrem Untern
   
   - **So deaktivieren Sie eine Richtlinie** Wählen Sie **Opt-out: Do Note DELETE** \> **Save**.
     
-    Als Websitebesitzer können Sie eine Dokumentlöschrichtlinie abwählen, wenn die Richtlinie Ihrer Meinung nach für Inhalte Ihrer Website nicht geeignet ist. Eine Richtlinie, die als **Verpflichtend** gekennzeichnet ist, kann allerdings nicht abgewählt werden.
+    Als Websitebesitzer können Sie eine Richtlinie für das Löschen von Dokumenten deaktivieren, wenn Sie feststellen, dass die Richtlinie nicht für den Inhalt Ihrer Website gilt. Sie können jedoch keine Richtlinie deaktivieren, die als **obligatorisch**gekennzeichnet wurde.
     
     ![Opt-out-Option](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
@@ -99,7 +99,7 @@ Eine Website verwendet möglicherweise andere Richtlinie für die Aufbewahrung u
     
 Wenn Sie eine Dokumentlöschrichtlinie auf eine Website anwenden, die für eine Liste oder Bibliothek bereits Inhaltstyp- oder Informationsverwaltungsrichtlinien verwendet, werden diese Richtlinien ignoriert, während die Dokumentlöschrichtlinie angewendet wird. Wenn andere Richtlinien ignoriert werden, wird die Meldung "Inhalt auf dieser Website verwendet Dokument Löschungsrichtlinien" angezeigt.
   
-Das bedeutet, dass Sie für eine Website nur Richtlinien verwenden sollten, die für strukturierte Inhalte (Informationsverwaltungs- und Inhaltstyprichtlinien) oder unstrukturierte Inhalte (Dokumentlöschungsrichtlinien) gedacht sind, und nicht beide Arten von Richtlinien. Wenn Sie eine Dokumentlöschrichtlinie abwählen, wird die Warnung nicht angezeigt, und andere Richtlinientypen werden weiterhin angewendet.
+Das bedeutet, dass Sie für eine Website nur Richtlinien verwenden sollten, die für strukturierte Inhalte (Informationsverwaltungs- und Inhaltstyprichtlinien) oder unstrukturierte Inhalte (Dokumentlöschungsrichtlinien) gedacht sind, und nicht beide Arten von Richtlinien. Wenn Sie eine Richtlinie für das Löschen von Dokumenten ablehnen, wird die Warnung nicht angezeigt, und andere Richtlinientypen funktionieren weiterhin.
   
 Websiterichtlinien sind von Dokumentlöschungsrichtlinien nicht betroffen.
   

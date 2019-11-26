@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b5fabd3b0a1e6e1951143b1a3778ced4e01a6288
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 154273f4f55e48c959f601a00901e26e421db725
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081168"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257013"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Hinzufügen oder Entfernen von Mitgliedern aus einer Datenermittlung
 
@@ -29,15 +29,15 @@ Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die 
 
 2. Wechseln Sie zu **Einstellungen** , und wählen Sie "Zugriff #a0 Berechtigungen" aus.
  
-3. Klicken Sie auf **Aktualisieren**.
+3. Wählen Sie **Aktualisieren** aus.
  
-4. Klicken Sie unter **Mitglieder verwalten**auf Symbol hinzufügen, um der Untersuchung Mitglieder hinzuzufügen. Sie können auch eine Rollengruppe zur Untersuchung hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf Symbol hinzufügen. 
+4. Wählen Sie unter **Mitglieder verwalten**die Option Add Icon Add aus, um der Untersuchung Mitglieder hinzuzufügen. Sie können auch eine Rollengruppe zur Untersuchung hinzufügen. Wählen Sie unter **Rollengruppen verwalten**die Option Symbol hinzufügen aus. 
      Beachten Sie, dass Rollengruppen die Berechtigung für den Zugriff auf die Untersuchung steuern. Das heißt, Sie können nur Personen hinzufügen, denen die Rolle "Data Investigator Role Group" oder "Custom role groups" mit der Verwaltungsrolle "Daten Ermittlungsverwaltung" zugewiesen ist.
  
-5. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder der Untersuchung hinzugefügt werden können, auf das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
+5. Aktivieren Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder der Untersuchung hinzugefügt werden können, das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
 
-6. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder der Gruppe hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
+6. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder der Gruppe hinzugefügt werden sollen, wählen Sie **Hinzufügen**aus.
 
-7. Klicken Sie in **Diese Untersuchung verwalten**auf **Speichern** , um die neue Liste der Ermittlungs Mitglieder zu speichern.
+7. Wählen Sie in **Diese Untersuchung verwalten**die Option **Speichern** aus, um die neue Liste der Ermittlungs Mitglieder zu speichern.
 
-8. Klicken Sie auf **Speichern** , um die neue Liste der Ermittlungs Mitglieder zu speichern.
+8. Wählen Sie **Speichern** aus, um die neue Liste der Ermittlungs Mitglieder zu speichern.

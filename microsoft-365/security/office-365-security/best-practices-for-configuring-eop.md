@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten.
-ms.openlocfilehash: ccc312d6e3e9954ea38b10ebe9b4c8877a85b925
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 3146cb9a5141dfe87e9f31791c107be296121126
+ms.sourcegitcommit: e27fe0d97b9c446b1cc80561f7190d08c12d9e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257290"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39262698"
 ---
-# <a name="best-practices-for-configuring-eop"></a>Bewährte Methoden für das Konfigurieren von EOP
+# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Bewährte Methoden für die Konfiguration von EoP und Office 365 ATP
 
 Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten. In diesem Thema wird vorausgesetzt, dass Sie den Setup-Prozess bereits abgeschlossen haben. Wenn Sie das EOP-Setup nicht abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md).
 
