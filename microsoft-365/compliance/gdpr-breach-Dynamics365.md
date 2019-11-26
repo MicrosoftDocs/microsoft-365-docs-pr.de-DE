@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982336"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39266128"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -71,10 +73,10 @@ Microsoft weist der Untersuchung entsprechende Prioritäts- und Schweregrade zu,
 
 Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und Sicherheitsexperten (Subject Matter Experts, SMEs) von Microsoft Dynamics 365 zusammen, um das Ereignis basierend auf Fakten aus den gewonnenen Erkenntnissen zu klassifizieren. Ein Sicherheitsereignis kann wie folgt klassifiziert werden:
 
-- **Falsch positives Ereignis:** Ein Ereignis, das die Kriterien zur Erkennung von Sicherheitsvorfällen erfüllt, sich aber als Teil der gängigen Geschäftsprozesse herausstellt und möglicherweise herausgefiltert werden muss. Das Serviceteam ermittelt die Ursache falsch positiver Ereignisse und behandelt sie auf systematische Weise, wobei es Erkennungsquellen zurate zieht und bei Bedarf<span id="_Toc350859432" class="anchor"></span> überarbeitet.
+- **Falsch positives Ergebnis:** Ein Ereignis, das die Erkennungskriterien erfüllt, aber als Bestandteil einer normalen Geschäftspraxis gilt und möglicherweise gefiltert werden muss. Das Serviceteam ermittelt die Ursache für falsch positive Ergebnisse und behebt sie systematisch, indem Erkennungsquellen genutzt und bei Bedarf optimiert werden.
 - **Sicherheitsvorfall:** Ein Vorfall, bei dem ein unrechtmäßiger Zugriff auf Kundendaten oder Supportdaten, die auf Geräten oder in Einrichtungen von Microsoft gespeichert sind, bzw. ein nicht autorisierter Zugriff auf diese Geräte oder Einrichtungen erfolgt ist, der zu Verlust, Offenlegung oder Änderung von Kundendaten oder Supportdaten geführt hat.
-- **Meldepflichtige/r Sicherheitsvorfall/Datenschutzverletzung (Customer-Reportable Security/Privacy Incident, CRSPI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
-- **Datenschutzverletzung**: Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
+- **Meldepflichtiger Sicherheitsvorfall/Datenschutzvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
+- **Datenschutzverletzung:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
 
 Damit ein CRSPI deklariert werden kann, muss Microsoft feststellen, dass ein nicht autorisierter Zugriff auf Kundendaten (sehr wahrscheinlich) stattgefunden hat und/oder dass eine gesetzliche oder vertragliche Verpflichtung zur Benachrichtigung besteht. Es ist wünschenswert, aber nicht zwingend erforderlich, dass die spezifische Auswirkung auf den Kunden, der Ressourcenzugriff und die Reparaturschritte bekannt sind. Ein Vorfall wird im Allgemeinen nach Abschluss der Diagnosestufe eines Sicherheitsvorfalls als CRSPI deklariert. Allerdings kann dies auch zu jedem beliebigen anderen Zeitpunkt stattfinden, an dem alle relevanten Informationen verfügbar sind. Der Manager für Sicherheitsvorfälle muss zweifelsfrei nachweisen, dass ein meldepflichtiges Ereignis eingetreten ist, um den Prozess der Benachrichtigung des Kunden zu starten.
 
@@ -97,7 +99,7 @@ Microsoft Dynamics 365 stellt Kunden detaillierte Informationen bereit, sodass s
 
 Die Benachrichtigung zu einer Verletzung des Schutzes personenbezogener Daten wird dem Kunden auf einem von Microsoft gewählten Weg übermittelt, möglicherweise auch per E-Mail. Die Benachrichtigung über eine Datenschutzverletzung wird an die in Office Security Center hinterlegte Liste der Kundenkontakte/Administratoren übermittelt (nur betroffene Mandanten), die vom Kunden-/Mandantenadministrator konfiguriert werden kann. Um sicherzustellen, dass die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde dafür sorgen, dass die administrativen Kontaktinformationen in dem jeweiligen Abonnement und Onlinedienst-Portal korrekt sind.
 
-Das Microsoft Dynamics 365-Team kann auch entscheiden, zusätzliches Microsoft-Personal wie den Kundendienst und die Account Manager (AM) oder Technical Account Manager (TAM) des Kunden zu benachrichtigen. Diese Personen stehen häufig in enger Beziehung zum Kunden und können eine schnellere Problembehebung realisieren.<span id="_Appendix_A" class="anchor"></span>
+Das Microsoft Dynamics 365-Team kann auch entscheiden, zusätzliches Microsoft-Personal wie den Kundendienst und die Account Manager (AM) oder Technical Account Manager (TAM) des Kunden zu benachrichtigen. Diese Personen stehen häufig in enger Beziehung zum Kunden und können eine schnellere Problembehebung realisieren.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

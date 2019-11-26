@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 940db3e32c67ee0c457bd499f63a562343f09e2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080796"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39266132"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -105,7 +106,10 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
     
 - Der Inhalt eine Bezeichnung enthält. Weitere Informationen finden Sie weiter unten im Abschnitt [Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie](#using-a-label-as-a-condition-in-a-dlp-policy).
     
-- Inhalte an Personen außerhalb oder innerhalb der Organisation weitergeleitet wurden.
+- Inhalte werden an Personen außerhalb oder innerhalb der Organisation weitergeleitet.
+
+> [!NOTE]
+> Benutzer, die keine Gastkonten im Active Directory- oder Azure Active Directory-Mandanten einer Hostorganisation besitzen, werden als Personen innerhalb der Organisation betrachtet.
     
 #### <a name="types-of-sensitive-information"></a>Arten von vertraulichen Informationen
 
@@ -322,7 +326,11 @@ Sie können eine Bezeichnung erstellen und dann wie folgt damit vorgehen:
     
 Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Aufbewahrungsbezeichnungen](labels.md).
   
-Nachdem Sie eine Bezeichnung erstellt haben, können Sie diese Bezeichnung als Bedingung in Ihren DLP-Richtlinien verwenden. Dies kann beispielsweise in den folgenden Fällen wünschenswert sein:
+Nachdem Sie eine Bezeichnung erstellt haben, können Sie diese Bezeichnung als Bedingung in Ihren DLP-Richtlinien verwenden. 
+
+![Bezeichnungen als Bedingung](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+Dies kann beispielsweise in den folgenden Fällen wünschenswert sein:
   
 - Sie haben eine Bezeichnung namens **Vertraulich** veröffentlicht, damit Mitarbeiter in Ihrer Organisation diese Bezeichnung vertraulichen E-Mails und Dokumenten manuell zuweisen können. Durch die Verwendung dieser Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie verhindern, dass als **Vertraulich** gekennzeichnete Inhalte für Personen außerhalb Ihrer Organisation freigegeben werden. 
     
@@ -332,9 +340,10 @@ Nachdem Sie eine Bezeichnung erstellt haben, können Sie diese Bezeichnung als B
     
 - Sie haben die Bezeichnung **Geschäftsleitungsteam – Vertraulich** in den Exchange-Postfächern und OneDrive-Konten einer Gruppe von Führungskräften veröffentlicht. Durch Verwenden dieser Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie für dieselbe Teilmenge von Inhalten und Benutzern sowohl Aufbewahrungs- als auch Schutzaktionen erzwingen. 
     
-Durch Verwenden von Bezeichnungen als Bedingung in Ihren DLP-Regeln können Sie Schutzaktionen selektiv auf eine bestimmte Gruppe von Inhalten, Standorten oder Benutzern anwenden.
-  
-![Bezeichnungen als Bedingung](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+Durch Verwenden von Bezeichnungen als Bedingung in Ihren DLP-Regeln können Sie Schutzaktionen selektiv auf eine bestimmte Gruppe von Inhalten, Standorten oder Benutzern anwenden. 
+
+> [!NOTE]
+> Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: "Der Schutz von beschriftetem Inhalt in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten oder deaktivieren Sie Exchange und Teams als Speicherort." Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Die Unterstützung von Vertraulichkeitsbezeichnungen wird in Kürze verfügbar sein
 
