@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257550"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615655"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -41,7 +41,7 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 |Phishing-e-Mail-erkennungsaktion|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Phishing-e-Mail-erkennungsaktion mit hoher Zuverlässigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Massen-e-Mail-erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Schwellenwert für Massen-e-Mail festlegen|6|4||
+|Schwellenwert für Massen-e-Mail festlegen|6|4|Der Standardwert ist derzeit 7, es wird jedoch empfohlen, dass die meisten Organisationen es auf mindestens 6 mvoe.|
 |Aufbewahrungszeitraum für Quarantäne|30 Tage|30 Tage||
 |Sicherheitstipps|Ein|Ein||
 |Zugelassene Absender|Keine|Keine||
@@ -76,9 +76,9 @@ In der Antispampolitik "Advanced Spamfilter" gibt es verschiedene andere Paramet
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---------|---------|---------|---------|
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|400|500||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|800|1000||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|800|1000||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|500|400||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|1000|800||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|1000|800||
 |Aktion, wenn ein Benutzer die Grenzwerte überschreitet|Einschränken des Sendens von e-Mails durch den Benutzer|Einschränken des Sendens von e-Mails durch den Benutzer||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EoP-Anti-Malware-Richtlinieneinstellungen
