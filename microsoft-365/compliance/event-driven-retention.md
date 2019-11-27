@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die ereignisgesteuerte Aufbewahrung
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Sie können mit Aufbewahrungsbezeichnungen einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt.Das Ereignis wird löst den Anfang des Aufbewahrungszeitraums aus, und für alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugeordnet ist, werden die Aufbewahrungsaktionen der Bezeichnung erzwungen.Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Datensatzverwaltungsprozesses eingesetzt.
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Mit Aufbewahrungsbezeichnungen können Sie einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081453"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268506"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
@@ -42,7 +42,7 @@ Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses f
 - Bezeichnungen, die auf einem Ereignis basieren, lösen in der Regel am Ende des Aufbewahrungszeitraums eine Dispositionsprüfung aus, damit ein Datensatzverwalter den Inhalt manuell überprüfen und vernichten kann. Weitere Informationen finden Sie unter [Übersicht über Dispositionsprüfungen](disposition-reviews.md).
     
 Eine ereignisbasierte Bezeichnung hat die gleichen Funktionen wie jede andere Bezeichnung in Office 365. Weitere Informationen hierzu finden Sie unter [Übersicht über Bezeichnungen](labels.md).
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Grundlegendes zur Beziehung zwischen Ereignistypen, Bezeichnungen, Ereignissen und Asset-IDs
 
 Um die ereignisgesteuerte Aufbewahrung erfolgreich zu verwenden, müssen Sie die Beziehung zwischen Ereignistypen, Bezeichnungen, Ereignissen und Asset-IDs verstehen, wie hier gezeigt. Es folgt eine Erläuterung des Diagramms.
@@ -75,6 +75,9 @@ Nachfolgend ist der allgemeine Arbeitsablauf für eine ereignisgesteuerte Aufbew
   
 ![Diagramm des Arbeitsablaufs zum Einrichten der ereignisgesteuerten Aufbewahrung](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> Unter [Verwalten des Lebenszyklus von SharePoint-Dokumenten mithilfe von Aufbewahrungsbezeichnungen](auto-apply-retention-labels-scenario.md) finden Sie ein detailliertes Szenario zur Verwendung von verwalteten Eigenschaften in SharePoint, um Aufbewahrungsbezeichnungen automatisch anzuwenden und die ereignisgesteuerte Aufbewahrung zu implementieren.
+
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Schritt 1: Eine Bezeichnung erstellen, deren Aufbewahrungszeitraum auf einem Ereignis basiert
 
 Wählen Sie im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security &amp; Compliance Center in der linken Navigation **Klassifikation** > **Aufbewahrungsbezeichnungen** > **Bezeichnungen** (Registerkarte) > **Bezeichnung erstellen** aus.
@@ -123,9 +126,7 @@ Vergessen Sie nicht, dass die Asset-ID einfach eine weitere Dokumenteigenschaft 
   
 ### <a name="step-5-create-an-event"></a>Schritt 5: Erstellen eines Ereignisses
 
-Wenn eine bestimmte Instanz dieses Ereignistyps eintritt (ein Produkt erreicht z. B. das Ende seiner Lebensdauer), gehen Sie zur Seite „Ereignisse“ im Security &amp; Compliance Center, und erstellen Sie ein Ereignis. Sie müssen ein Ereignis manuell auslösen, indem Sie es erstellen.
-  
-![Seite „Ereignisse“ im Security & Compliance Center](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+Wenn eine bestimmte Instanz dieses Ereignistyps eintritt (ein Produkt erreicht z. B. das Ende seiner Lebensdauer), gehen Sie zur Seite **Datensatzverwaltung** > **Ereignisse** im Security &amp; Compliance Center, und erstellen Sie ein Ereignis. Sie müssen ein Ereignis manuell auslösen, indem Sie es erstellen.
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Schritt 6: Auswählen des gleichen Ereignistyps, der von der Bezeichnung in Schritt 2 verwendet wird
 

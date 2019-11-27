@@ -1,7 +1,7 @@
 ---
-title: Anträge betroffener Personen im Rahmen der DSGVO
+title: Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,17 +9,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078905"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268509"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>Anfragen von betroffenen Personen und die DSGVO
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
-Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Unternehmen, Regierungsbehörden, gemeinnützige Organisationen sowie andere Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren. Die DSGVO gilt unabhängig von Ihrem Wohnsitz und dem Sitz Ihres Unternehmens. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md). <br><br>
+Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md).
+
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Der CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Umsatz" eingestuft werden.  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
@@ -37,14 +41,16 @@ Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Anfragen von bet
 
 Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
 
-- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, eine öffentliche Stelle, eine Behörde oder eine andere Stelle, die allein oder zusammen mit anderen den Zweck und die Mittel für die Verarbeitung personenbezogener Daten bestimmt.  
-- *Personenbezogene Daten * und *betroffene Person (oder Datensubjekt) *: alle Informationen, die sich auf eine bestimmte oder identifizierbare natürliche Person beziehen (betroffene Person); eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt identifiziert werden kann.  
-- *Verarbeiter*: eine natürliche oder juristische Person, eine öffentliche Behörde, eine Agentur oder eine andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
+- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
+- *Personenbezogene Daten * und *betroffene Person*: alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
+- *Auftragsverarbeiter*: eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
 - *Kundendaten*: Daten, die bei den tagtäglichen Geschäftsausführung erstellt und gespeichert werden.
 
 ## <a name="what-is-a-dsr"></a>Was sind Anfragen von betroffenen Personen?
 
 Die Allgemeine Datenschutz-Grundverordnung (DSGVO) räumt natürlichen Personen (in der Verordnung als betroffene Personen bezeichnet) das Recht ein, vom Arbeitgeber oder einer anderen Einrichtung oder Organisation ( Datenverantwortlicher oder Verantwortlicher) erhobene personenbezogene Daten zu verwalten. Die DSGVO gewährt betroffenen Personen bestimmte Rechte an ihren personenbezogenen Daten. Es sind dies das Recht auf Erhalt einer Kopie dieser Daten, das Recht auf Korrektur der Daten, das Recht auf Beschränkung der Bearbeitung dieser Daten und das Recht auf Empfang dieser Daten in einem elektronischen Format, sodass sie an einen anderen Verantwortlichen übermittelt werden können.
+
+Der California Consumer Privacy Act (CCPA) bietet den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  
 
 Als Verantwortlicher sind Sie verpflichtet, jede Datensubjektanfrage sofort zu überprüfen und darauf zu reagieren, und zwar entweder, indem Sie die angeforderte Maßnahme ergreifen oder indem Sie erläutern, warum der Anfrage der betroffenen Person seitens des Verantwortlichen nicht nachgekommen werden kann. Ein Verantwortlicher sollte sich mit seinen eigenen Rechts- oder Complianceberatern hinsichtlich der geeigneten Disposition bezüglich einer bestimmten Datensubjektanfrage beraten.
 
@@ -59,9 +65,9 @@ Es sind möglicherweise mehrere Prozesse involviert, um eine Datensubjektanfrage
 
 ## <a name="specific-dsr-considerations"></a>Spezifische Überlegungen zu Datensubjektanfragen
 
-### <a name="insights-generated-by-microsoft-products-or-services"></a>Von Microsoft-Produkten oder -Diensten generierte Einblicke
+### <a name="insights-generated-by-microsoft-products-or-services"></a>Von Microsoft-Produkten oder -Diensten generierte Erkenntnisse
 
-[Einblicke](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) können durch Dienste (myAnalytics usw.) generiert werden. Office 365 umfasst Onlinedienste, die Benutzern und Organisationen, die diese Dienste nutzen, Einblicke gewähren. Die von diesen Diensten generierten Daten erzeugen möglicherweise personenbezogene Daten, die für eine Datensubjektanfrage relevant sind. Folgen Sie dem Link in der nachstehenden Liste, um Details zu dienstspezifischen Datensubjektanfrage-Prozessen anzuzeigen.  
+[Einblicke](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) können durch Dienste (MyAnalytics usw.) generiert werden. Office 365 umfasst Onlinedienste, die Benutzern und Organisationen, die diese Dienste nutzen, Einblicke gewähren. Die von diesen Diensten generierten Daten erzeugen möglicherweise personenbezogene Daten, die für eine Datensubjektanfrage relevant sind. Folgen Sie dem Link in der nachstehenden Liste, um Details zu dienstspezifischen Datensubjektanfrage-Prozessen anzuzeigen.  
 
 ### <a name="dsrs-for-system-generated-logs"></a>Datensubjektanfragen bezüglich vom System generierten Protokollen
 
