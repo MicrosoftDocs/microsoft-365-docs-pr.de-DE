@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Erhalten Sie einen Überblick über die Bewertungsphase und ihre Rolle bei der Bestimmung des Umfangs der Probleme beim Relevanz Training in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 77d9449ad15fd3a53709f2a28a96b06ab54556eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 727b432a541e1316952faa7dc9c5b8e40ac4295c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081090"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615635"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Grundlegendes zur Relevanz von Bewertungen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Advanced eDiscovery ermöglicht eine frühzeitige Bewertung, beispielsweise für die definierten Probleme und die für einen Fall importierten Daten. Advanced eDiscovery ermöglicht es dem Experten, Entscheidungen im Zusammenhang mit einem angenommenen Ansatz zu treffen und diese auf das Dokument Überprüfungs Projekt anzuwenden.
+Advanced eDiscovery ermöglicht eine frühzeitige Bewertung, beispielsweise für die definierten Probleme und die für einen Fall importierten Daten. Mit Advanced eDiscovery kann der Experte Entscheidungen über einen angenommenen Ansatz treffen und diese Entscheidungen auf das Dokument Überprüfungs Projekt anwenden.
   
 ## <a name="understanding-assessment"></a>Grundlegendes zur Bewertung
 
@@ -35,9 +35,9 @@ Je höher die Anzahl relevanter Dateien im assessmentsatz ist, desto genauer sin
   
 Die Statistiken, die während des Trainings und nach der Batch Berechnung auf den Registerkarten Track und entscheiden angezeigt werden, umfassen Schätzungen des Rückrufs für verschiedene Überprüfungs Sätze. In der Statistik enthalten Schätzungen, die auf einem Stich Probenset (in diesem Fall die Bewertungsdateien) basieren, den Fehler Rand und die Zuverlässigkeitsstufe dieses Fehler Rands. Geschätzte Rückrufe von 80% können beispielsweise eine Fehlergrenze von Plus oder minus 5% mit einem Konfidenzniveau von 95% aufweisen. Dies bedeutet, dass der geschätzte Rückruf tatsächlich 75%-85% ist und diese Schätzung 95% Zuversicht hat. Je größer der Bewertungssatz ist, desto geringer ist die Fehlergrenze, und die Statistiken sind genauer. 
   
-Nachdem der Experte einen anfänglichen assessmentsatz von 500-Dateien überprüft hat, kann Relevanz den aktuellen Fehler Rand der Rückruf Werte ermitteln. Mit Relevanz wird auch ein standardmäßiger Fehlerbereich festgelegt, der zur Optimierung des Bewertungs Satzes empfohlen wird. Im folgenden finden Sie einige Beispiele:
+Nachdem der Experte einen anfänglichen assessmentsatz mit 500 Dateien überprüft hat, kann die Relevanz den aktuellen Fehler Rand der Rückruf Werte bestimmen. Relevanz wird auch empfohlen, einen standardmäßigen Fehlerbereich zu erreichen, um den Bewertungs Satzes zu optimieren. Im Folgenden finden Sie einige Beispiele:
   
-- Wenn der Bewertungssatz bereits eine Fehlergrenze von Plus oder minus 10% ergab, wird die Relevanz empfohlen, mit der Schulung fort zukehren (keine zusätzliche Bewertungs Überprüfung erforderlich). 
+- Wenn der Bewertungssatz bereits eine Fehlergrenze von Plus oder minus 10% ergab, wird die Relevanz für die Weiterbildung (keine zusätzliche Bewertungs Überprüfung erforderlich) empfohlen. 
     
 - Wenn der Bewertungsgruppe eine Fehlermarge von Plus oder minus 13% ergab, kann die Relevanz die Überprüfung eines weiteren Satzes von Bewertungsdateien empfehlen, um einen kleineren Rand zu erreichen. 
     

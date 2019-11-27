@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: c9ed6e6d7f1489a510283a344094754a6f8cdeb4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369636"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615665"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -54,7 +54,7 @@ Wenn Sie eine Daten Untersuchung durchführen, können Sie jetzt Elemente aus ih
 Wir haben zwei neue Administratorrollen veröffentlicht, um die Sicherheit und Compliance in Ihrer Organisation zu unterstützen. erzählen Sie all Ihren Freunden.
 
 - **Compliance-Datenadministrator**. Benutzer mit dieser Rolle verfügen über Berechtigungen zum schützen und Nachverfolgen von Daten im Microsoft 365 Compliance Center, im Microsoft 365 Admin Center und in Azure. Sie können auch alles verwalten: das Exchange Admin Center, der Compliance-Manager, Teams #a0 Skype for Business Admin Center und erstellen Support Tickets für Azure und Microsoft 365.
-- **Sicherheits Operator**. Benutzer mit dieser Rolle können Benachrichtigungen verwalten und verfügen über einen globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features, einschließlich aller Informationen im Microsoft 365-Sicherheitscenter, Azure-Active Directory, Identitätsschutz, privilegierter Identitätsverwaltung und Office 365 Security #a0 Compliance Center.
+- **Sicherheits Operator**. Benutzer mit dieser Rolle können Benachrichtigungen verwalten und verfügen über einen globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features, einschließlich aller Informationen im Microsoft 365 Security Center, Azure Active Directory, Identity Protection, Privileged Identity Management und Office 365 Security #a0 Compliance Center.
 
 [Weitere Informationen zu diesen Rollen](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
 

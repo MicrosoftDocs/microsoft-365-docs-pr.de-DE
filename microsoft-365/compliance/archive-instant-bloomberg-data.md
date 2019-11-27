@@ -10,16 +10,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector einrichten, um Daten aus dem Chat-Tool von Instant Bloomberg in Office 365 zu importieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686048"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615605"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten in Office 365
 
-Verwenden Sie einen nativen Connector im Security #a0 Compliance Center in Office 365 zum Importieren und Archivieren von Finanz Dienstleistungs-Chatdaten aus dem Tool " [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) Collaboration". Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit der Bloomberg Secure FTP Site (SFTP) Ihrer Organisation her, wandelt den Inhalt von Chatnachrichten in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Postfächer in Office 365.
+Verwenden Sie einen nativen Connector im Security #a0 Compliance Center in Office 365 zum Importieren und Archivieren von Finanz Dienstleistungs-Chat Daten aus dem Tool " [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) Collaboration". Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit der Bloomberg Secure FTP Site (SFTP) Ihrer Organisation her, wandelt den Inhalt von Chatnachrichten in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Postfächer in Office 365.
 
 Nachdem Instant Bloomberg-Daten in Benutzerpostfächern gespeichert wurden, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, [Kommunikations Konformität](communication-compliance.md)und Office 365-Aufbewahrungsrichtlinien auf Bloomberg-Daten anwenden. Beispielsweise können Sie Instant Bloomberg Chatnachrichten mithilfe der Inhaltssuche durchsuchen oder das Postfach, das die Instant Bloomberg-Daten enthält, einer Depotbank in einem erweiterten eDiscovery-Fall zuordnen. Die Verwendung eines Instant Bloomberg-Konnektors zum Importieren und Archivieren von Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
@@ -29,7 +29,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
 
 ![Sofortiger Bloomberg-Import-und-Archivierungsprozess](media/InstantBloombergDataArchiving.png)
 
-1. Ihre Organisation arbeitet mit Bloomberg zusammen, um eine Bloomberg SFTP-Website einzurichten. Sie werden auch mit Bloomberg zusammenarbeiten, um Instant Bloomberg so zu konfigurieren, dass Chatnachrichten auf Ihre Bloomberg SFTP-Website kopiert werden.
+1. Ihre Organisation arbeitet mit Bloomberg zusammen, um eine Bloomberg SFTP-Website einzurichten. Sie können auch mit Bloomberg zusammenarbeiten, um Instant Bloomberg so zu konfigurieren, dass Chatnachrichten auf Ihre Bloomberg SFTP-Website kopiert werden.
 
 2. Alle 24 Stunden werden Chatnachrichten von Instant Bloomberg auf die Bloomberg SFTP-Website kopiert.
     
@@ -41,7 +41,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
     
     b. **Elemente mit einem Wert in der CorporateEmailAddress-Eigenschaft, die keinem Office 365 Benutzerkonto entsprechen:** Wenn der Connector keine e-Mail-Adresse in der *CorporateEmailAddress* -Eigenschaft einem bestimmten Benutzerkonto in Office 365 zuordnen kann, wird das Element in den Ordner Posteingangs Verzeichnis eines alternativen Postfachs "Catch-All" in Office 365 kopiert.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Viele der erforderlichen Implementierungsschritte zum Archivieren von Instant Bloomberg-Daten sind extern für Office 365 und müssen abgeschlossen sein, bevor Sie den Connector im Security #a0 Compliance Center erstellen können.
 
@@ -67,7 +67,7 @@ Viele der erforderlichen Implementierungsschritte zum Archivieren von Instant Bl
 
     - Port Nummer für Bloomberg SFTP-Website
 
-- Der Benutzer, der in Schritt 3 einen Instant Bloomberg-Konnektor erstellt (und der die öffentlichen Schlüssel und die IP-Adresse in Schritt 1 herunterlädt) muss die Rolle "Post Fach Import Export" in Exchange Online zugewiesen haben. Dies ist erforderlich, um im Security #a0 Compliance Center auf die Seite **Archivieren von drittanbieterdaten** zuzugreifen. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der in Schritt 3 einen Instant Bloomberg-Konnektor erstellt (und der die öffentlichen Schlüssel und die IP-Adresse in Schritt 1 herunterlädt) muss die Rolle "Post Fach Import Export" in Exchange Online zugewiesen haben. Dies ist erforderlich, um im Security #a0 Compliance Center auf die Seite **Archivieren von drittanbieterdaten** zuzugreifen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Schritt 1: Abrufen von öffentlichen SSH-und PGP-Schlüsseln
 
@@ -114,7 +114,7 @@ Der letzte Schritt besteht darin, einen Instant Bloomberg-Konnektor im Security 
 
     - **SFTP-URL:** Die URL für die Website von Bloomberg SFTP (beispielsweise SFTP.Bloomberg.com).
 
-    - **SFTP-Port:** Die Portnummer für Bloomberg SFTP-Website. Der Connector verwendet diese, um eine Verbindung mit der SFTP-Website herzustellen.
+    - **SFTP-Port:** Die Portnummer für Bloomberg SFTP-Website. Der Connector verwendet diesen Port, um eine Verbindung mit der SFTP-Website herzustellen.
 
 5. Geben Sie auf der Seite **alternatives Postfach** die e-Mail-Adresse eines Postfachs ein, das zum Speichern der Chatnachrichten aus Instant Bloomberg verwendet wird, die keinem Benutzerpostfach in Ihrer Organisation zugeordnet sind.
 
