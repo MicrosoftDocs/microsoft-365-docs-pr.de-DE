@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Ermitteln Sie, ob Ihre Organisation als Teil des DSGVO-Plans Bezeichnungen implementiert.
-ms.openlocfilehash: c0886ac68cd2d7a6ca7514f39636e74c5b2043ad
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4470f766ad2f8fd2d914e0e45deac8604028ddb5
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081117"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615645"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Entwerfen eines Klassifikationsschemas für personenbezogene Daten
 
@@ -28,7 +28,7 @@ Vorherige Artikel dieser Reihe konzentrieren sich auf die Verwendung vertraulich
 
 Hinweis: Die Definition eines Klassifikationsschemas für eine Organisation und die Konfiguration von Richtlinien, Bezeichnungen und Bedingungen erfordert sorgfältige Planung und Vorbereitung. Es ist wichtig zu erkennen, dass dies kein von der IT gesteuerter Prozess ist. Arbeiten Sie unbedingt mit Ihrer Rechts- und Complianceabteilung zusammen, um ein geeignetes Klassifikations- und Bezeichnungsschema für die Daten Ihrer Organisation zu entwickeln.
 
-## <a name="decide-if-you-are-using-labels-in-addition-to-sensitive-data-types"></a>Entscheiden, ob Bezeichnungen neben vertraulichen Informationstypen verwendet werden sollen
+## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Entscheiden, ob Bezeichnungen neben vertraulichen Informationstypen verwendet werden sollen
 
 Sie können einen der beiden Ansätze für die Klassifikation personenbezogener Informationen in Office 365 verwenden. Jeder Ansatz kann für Schutz für die DSGVO verwendet werden. Wenn Sie nur vertrauliche Informationstypen für die Klassifikation verwenden möchten, können Sie den Rest dieses Themas überspringen.
 
@@ -36,25 +36,23 @@ Wählen Sie eine der folgenden Optionen.
 
 ### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Option 1: Ausschließliches Verwenden vertraulicher Informationstypen in Office 365
 
--   Vertrauliche Informationstypen sind gut zum Identifizieren und Schutz personenbezogener Daten geeignet, die der DSGVO und anderen Vorschriften unterliegen.
+- Vertrauliche Informationstypen sind gut zum Identifizieren und Schutz personenbezogener Daten geeignet, die der DSGVO und anderen Vorschriften unterliegen.
 
--   Diese sind einfacher zu verwenden, wenn Ihre Organisation nicht bereits einen umfassenden Plan für die Datenkontrolle mithilfe von Bezeichnungen hat bzw. plant.
+- Diese sind einfacher zu verwenden, wenn Ihre Organisation nicht bereits einen umfassenden Plan für die Datenkontrolle mithilfe von Bezeichnungen hat bzw. plant.
 
--   Sie können mit DLP-Regeln verwendet werden (genauso wie Aufbewahrungsbezeichnungen).
+- Sie können mit DLP-Regeln verwendet werden (genauso wie Aufbewahrungsbezeichnungen).
 
--   Typen vertraulicher Informationen können auch mit Cloud App Security verwendet werden, sodass Sie vertrauliche Informationen in anderen SaaS-Apps erkennen können.
+- Typen vertraulicher Informationen können auch mit Cloud App Security verwendet werden, sodass Sie vertrauliche Informationen in anderen SaaS-Apps erkennen können.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Option 2: Verwenden von vertraulichen Informationstypen und Aufbewahrungsbezeichnungen
 
--   Sie benötigen vertrauliche Informationstypen, um Bezeichnungen automatisch auf personenbezogene Daten anzuwenden, die der DSGVO unterliegen, diese sind somit eine Voraussetzung.
+- Sie benötigen vertrauliche Informationstypen, um Bezeichnungen automatisch auf personenbezogene Daten anzuwenden, die der DSGVO unterliegen, diese sind somit eine Voraussetzung.
 
--   Mit Aufbewahrungsbezeichnungen können Sie personenbezogene Daten, die der DSGVO unterliegen, in einen umfassenderen Plan für die Datenkontrolle für Ihre Organisation implementieren.
-
-
+- Mit Aufbewahrungsbezeichnungen können Sie personenbezogene Daten, die der DSGVO unterliegen, in einen umfassenderen Plan für die Datenkontrolle für Ihre Organisation implementieren.
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Entwickeln eines Bezeichnungsschemas, das personenbezogene Daten enthält
 
-Bevor Sie die technischen Funktionen zum Anwenden von Bezeichnungen und des Schutzes verwenden können, müssen Sie ein Klassifikationsschema für Ihre Organisation definieren. Ihre Organisation verfügt möglicherweise bereits über ein Klassifikationsschema, was Ihnen das Hinzufügen personenbezogener Daten erleichtert. Dieses Thema enthält ein Beispiel für ein Klassifikationsschema. Sie können es bei Bedarf als Ausgangspunkt verwenden.
+Bevor Sie die technischen Funktionen zum Anwenden von Bezeichnungen und des Schutzes verwenden können, müssen Sie ein Klassifikationsschema für Ihre Organisation definieren. Ihre Organisation verfügt möglicherweise bereits über ein Klassifikationsschema, was Ihnen das Hinzufügen personenbezogener Daten erleichtert. Dieses Thema enthält ein Beispiel für ein Klassifikationsschema. Sie können dieses Beispiel bei Bedarf als Ausgangspunkt verwenden.
 
 ### <a name="getting-started"></a>Erste Schritte
 
@@ -64,21 +62,21 @@ Entscheiden Sie zunächst über die Anzahl und die Namen von Bezeichnungen, die 
 
 Berücksichtigen Sie beim Entwerfen und Implementieren von Richtlinien, Bezeichnungen und Bedingungen die folgenden Empfehlungen:
 
--   Verwenden Sie ein vorhandenes Klassifikationsschema (sofern vorhanden) – Viele Organisationen verwenden bereits eine Datenklassifizierung in irgendeiner Form. Werten Sie sorgfältig das vorhandene Bezeichnungsschema aus, und verwenden Sie es nach Möglichkeit unverändert. Vertraute Bezeichnungen, die für den Endbenutzer erkennbar sind, sorgen für größere Akzeptanz.
+- Verwenden Sie ein vorhandenes Klassifikationsschema (sofern vorhanden) &ndash; Viele Organisationen verwenden bereits eine Datenklassifizierung in irgendeiner Form. Werten Sie sorgfältig das vorhandene Bezeichnungsschema aus, und verwenden Sie es nach Möglichkeit unverändert. Vertraute Bezeichnungen, die für den Endbenutzer erkennbar sind, sorgen für größere Akzeptanz.
 
--   Beginnen Sie mit Standardrichtlinien und -bezeichnungen – Alle Lösungen enthalten eine Reihe vordefinierter Richtlinien und Bezeichnungen. Werten Sie diese sorgfältig anhand der rechtlichen und geschäftlichen Anforderungen der Organisation aus, und ziehen Sie es in Erwägung, diese zu verwenden, anstatt neue zu erstellen.
+- Beginnen Sie mit Standardrichtlinien und -bezeichnungen &ndash; Alle Lösungen enthalten eine Reihe vordefinierter Richtlinien und Bezeichnungen. Werten Sie diese sorgfältig anhand der rechtlichen und geschäftlichen Anforderungen der Organisation aus, und ziehen Sie es in Erwägung, diese zu verwenden, anstatt neue zu erstellen.
 
--   Beginnen Sie klein – Es gibt nahezu keine Beschränkung, was die Anzahl der Bezeichnungen angeht, die erstellt werden können. Viele Bezeichnungen und Unterbezeichnungen wirken sich jedoch negativ auf die Akzeptanz aus. Zu viele Auswahlmöglichkeiten bedeuten häufig überhaupt keine Auswahl.
+- Beginnen Sie klein &ndash; Es gibt nahezu keine Beschränkung, was die Anzahl der Bezeichnungen angeht, die erstellt werden können. Viele Bezeichnungen und Unterbezeichnungen wirken sich jedoch negativ auf die Akzeptanz aus. Zu viele Auswahlmöglichkeiten bedeuten häufig überhaupt keine Auswahl.
 
--   Verwenden Sie Szenarien und Anwendungsfälle – Identifizieren Sie allgemeine Anwendungsfälle innerhalb der Organisation, und verwenden Sie Szenarien, die von der DSGVO abgeleitet sind, um zu prüfen, ob die vorgesehene Bezeichnungs- und Klassifikationskonfiguration in der Praxis funktionieren.
+- Verwenden Sie Szenarien und Anwendungsfälle &ndash; Identifizieren Sie allgemeine Anwendungsfälle innerhalb der Organisation, und verwenden Sie Szenarien, die von der DSGVO abgeleitet sind, um zu prüfen, ob die vorgesehene Bezeichnungs- und Klassifikationskonfiguration in der Praxis funktionieren.
 
--   Stellen Sie jede Anforderung für eine neue Bezeichnung in Frage. Ist für jedes Szenario oder jeden Anwendungsfall wirklich eine neue Bezeichnung erforderlich, oder kann hierfür eine bereits vorhandene Bezeichnung verwendet werden? Eine minimale Anzahl von Bezeichnungen verbessert die Akzeptanz.
+- Stellen Sie jede Anforderung für eine neue Bezeichnung in Frage &ndash; Ist für jedes Szenario oder jeden Anwendungsfall wirklich eine neue Bezeichnung erforderlich, oder kann hierfür eine bereits vorhandene Bezeichnung verwendet werden? Eine minimale Anzahl von Bezeichnungen verbessert die Akzeptanz.
 
--   Verwenden Sie Unterbezeichnungen für wichtige Abteilungen. Für einige Abteilungen sind spezielle Bezeichnungen erforderlich. Definieren Sie diese Bezeichnungen als Unterbezeichnungen für vorhandene Bezeichnungen, und ziehen Sie es in Erwägung, bereichsbezogene Richtlinien zu verwenden, die einer Benutzergruppe zugewiesen sind, anstelle von globalen Richtlinien.
+- Verwenden Sie Unterbezeichnungen für wichtige Abteilungen &ndash; Für einige Abteilungen sind spezielle Bezeichnungen erforderlich. Definieren Sie diese Bezeichnungen als Unterbezeichnungen für vorhandene Bezeichnungen, und ziehen Sie es in Erwägung, bereichsbezogene Richtlinien zu verwenden, die einer Benutzergruppe zugewiesen sind, anstelle von globalen Richtlinien.
 
--   Ziehen Sie die Verwendung von bereichsbezogenen Richtlinien in Erwägung. Richtlinien, die auf eine Teilmenge von Benutzern abzielen, verhindern zu viele Bezeichnungen. Mit einer bereichsbezogenen Richtlinie können rollen- oder abteilungsspezifische (Unter-)Bezeichnungen nur Mitarbeitern zugewiesen werden, die für diese Abteilung arbeiten.
+- Ziehen Sie die Verwendung von bereichsbezogenen Richtlinien in Erwägung &ndash; Richtlinien, die auf eine Teilmenge von Benutzern abzielen, verhindern zu viele Bezeichnungen. Mit einer bereichsbezogenen Richtlinie können Sie rollen- oder abteilungsspezifische (Unter-)Bezeichnungen nur Mitarbeitern zuweisen, die für diese Abteilung arbeiten.
 
--   Verwenden Sie aussagekräftige Namen. Es wird empfohlen, Jargon, Standards oder Akronyme nicht als Bezeichnungsnamen zu verwenden. Verwenden Sie Namen, die hohe Akzeptanz bei Endbenutzern finden. Verwenden Sie statt Bezeichnungen wie PII, PCI, HIPAA, LBI, MBI und HBI Namen wie „Privat“, „Öffentlich“, „Allgemein“, „Vertraulich“ und „Streng vertraulich“.
+- Verwenden Sie aussagekräftige Namen &ndash; Es wird empfohlen, Jargon, Standards oder Akronyme nicht als Bezeichnungsnamen zu verwenden. Verwenden Sie Namen, die hohe Akzeptanz bei Endbenutzern finden. Verwenden Sie statt Bezeichnungen wie PII, PCI, HIPAA, LBI, MBI und HBI Namen wie „Privat“, „Öffentlich“, „Allgemein“, „Vertraulich“ und „Streng vertraulich“.
 
 ### <a name="example-classification-schema"></a>Beispiel für ein Klassifikationsschema
 

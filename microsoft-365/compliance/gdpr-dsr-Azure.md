@@ -1,7 +1,7 @@
 ---
-title: Anträge betroffener Personen für Azure im Rahmen der DSGVO
+title: Anträge betroffener Personen für Azure im Rahmen der DSGVO und des CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,33 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7a294893d609747b5ab36c66319427608462b451
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698337"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268528"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr"></a>Anträge betroffener Personen für Azure im Rahmen der DSGVO
+# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Azure im Rahmen der DSGVO und des CCPA
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Einführung in Anträge betroffener Personen
 
 Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (in den Bestimmungen als *betroffene Personen* bezeichnet) das Recht zum Verwalten ihrer personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Datenverantwortlicher* oder nur *Verantwortlicher* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten; dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format, damit sie zu einem anderen Datenverantwortlichen bewegt werden können. Eine formale Anfrage einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als *Antrag einer betroffenen Person* bezeichnet.
 
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen. Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
+
 In diesem Leitfaden wird erläutert, wie Microsoft-Produkte, -Dienste und -Verwaltungstools verwendet werden können, um unseren als Datenverantwortliche handelnden Kunden dabei zu helfen, personenbezogene Daten zu finden und auf Anträge betroffener Personen zu reagieren. Dies umfasst das Suchen und Abrufen der personenbezogenen Daten, die in der Microsoft-Cloud gespeichert sind, sowie das weitere Verarbeiten dieser Daten. Im Folgenden finden Sie eine kurze Übersicht der in diesem Leitfaden beschriebenen Prozesse:
 
-- **Ermittlung:** Verwenden Sie Such- und Ermittlungstools, um Kundendaten leichter zu finden, die möglicherweise Gegenstand eines Antrags einer betroffenen Person sind. Sobald potenziell geeignete Dokumente gefunden wurden, können Sie eine oder mehrere der Aktionen für Anträge betroffener Personen ausführen, die in den folgenden Schritten beschrieben sind, um auf den Antrag der betroffenen Person zu reagieren. Andernfalls können Sie bestimmen, dass der Antrag nicht den Unternehmensrichtlinien für die Reaktion auf Anträge betroffener Personen entspricht.
-- **Zugriff:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft-Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
-- **Berichtigung:** Nehmen Sie gegebenenfalls Änderungen vor oder führen Sie andere beantragte Aktionen für die personenbezogenen Daten aus.
-- **Einschränkung:** Schränken Sie die Verarbeitung personenbezogener Daten entweder durch Zurückziehen von Lizenzen für verschiedenen Azure-Dienste oder durch Deaktivieren der gewünschten Dienste wo möglich ein. Des Weiteren können Sie Daten aus der Microsoft-Cloud entfernen und diese lokal oder an einem anderen Ort aufbewahren.
+- **Erkennung:** Sie können Kundendaten, die ggf. Gegenstand eines Antrags einer betroffenen Person sind, mithilfe von Such- und Ermittlungstools finden. Sobald Sie potenziell relevante Dokumente ermittelt haben, können Sie dem Antrag entsprechend eine oder mehrere der in den folgenden Schritten beschriebenen Aktionen ausführen. Möglicherweise stellen Sie jedoch fest, dass der Antrag nicht den Vorgaben Ihrer Organisation für die Reaktion auf Anträge betroffener Personen entspricht.
+- **Zugang:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft-Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
+- **Berichtigung:** Nehmen Sie gegebenenfalls Änderungen an den personenbezogenen Daten vor oder führen Sie andere Aktionen aus, die für die Daten angefordert werden.
+- **Einschränkung:** Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Onlinedienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können auch Daten aus der Microsoft Cloud entfernen und lokal oder an einem anderen Speicherort speichern.
 - **Löschung:** Entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
-- **Export:** Stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten zur Verfügung.
+- **Exportieren/Empfangen (Portierbarkeit):** Stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten oder persönlichen Informationen zur Verfügung. Personenbezogene Informationen gemäß CCPA sind alle Informationen, die eine identifizierte oder identifizierbare Person betreffen. Es wird nicht zwischen privaten, öffentlichen oder beruflichen Rollen einer Person unterschieden. Der definierte Begriff "persönliche Informationen" entspricht in etwa dem Begriff "persönliche Daten" unter der DSGVO. Allerdings umfasst das CCPA auch Familien- und Haushaltsdaten. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
 In jedem Abschnitt dieses Leitfadens werden die Prozesse beschrieben, die ein als Datenverantwortlicher handelndes Unternehmen nutzen kann, um auf einen Antrag einer betroffenen Person bezüglich ihrer personenbezogenen Daten in der Microsoft-Cloud zu reagieren.
 
@@ -40,16 +45,16 @@ Nachfolgend finden Sie Definitionen von Begriffen, die für diesen Leitfaden rel
 
 - **Datenverantwortlicher:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Datenverantwortliche bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
 - **Personenbezogene Daten und betroffene Person:** Alle Informationen über eine identifizierte oder identifizierbare natürliche Person („betroffene Person“). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
-- **Auftragsverarbeiter:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
-- **Kundendaten:** Alle Daten, einschließlich aller Text-, Ton-, Video- oder Bilddateien und Software, die Microsoft durch oder im Auftrag eines Kunden durch die Verwendung des Enterprise-Dienstes bereitgestellt werden. Kundendaten umfassen sowohl (1) Informationen zur Identifikation von Endbenutzern (z. B. Benutzernamen und Kontaktinformationen in Azure Active Directory) als auch Kundeninhalte, die ein Kunde in einen bestimmten Dienst hochlädt oder in diesem erstellt (z. B. Kundeninhalte in einem Azure Storage-Konto, Kundeninhalte in einer Azure SQL-Datenbank oder das Image einer virtuellen Maschine eines Kunden in Azure Virtual Machines).
-- **Vom System generierte Protokolle:** Von Microsoft generierte Protokolle und verbundene Daten, die Microsoft bei der Bereitstellung von Enterprise-Diensten für Benutzer unterstützen. Vom System generierte Protokolle enthalten in erster Linie pseudonymisierte Daten, z. B. eindeutige Bezeichner – in der Regel eine vom System generierte Zahl, die von sich aus eine Einzelperson nicht identifizieren kann, aber dazu verwendet wird, die Enterprise-Dienste für Benutzer bereitzustellen. Vom System generierte Protokolle enthalten möglicherweise auch Informationen zur Identifikation von Endbenutzern, wie z. B. einen Benutzernamen.
+- **Verarbeiter:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
+- **Kundendaten:** Alle Daten, einschließlich aller Text-, Sound-, Video- oder Bilddateien, die Microsoft vom Kunden oder im Auftrag des Kunden durch Nutzung von Enterprise-Diensten bereitgestellt werden. Kundendaten umfassen sowohl (1) Informationen zur Identifikation von Endbenutzern (z. B. Benutzernamen und Kontaktinformationen in Azure Active Directory) als auch Kundeninhalte, die ein Kunde in einen bestimmten Dienst hochlädt oder in diesem erstellt (z. B. Kundeninhalte in einem Azure Storage-Konto, Kundeninhalte in einer Azure SQL-Datenbank oder das Image einer virtuellen Maschine eines Kunden in Azure Virtual Machines).
+- **Vom System generierte Protokolle:** Von Microsoft generierte Protokolle und verbundene Daten, die Microsoft bei der Bereitstellung von Enterprise-Diensten für Benutzer unterstützen. Vom System generierte Protokolle enthalten in erster Linie pseudonymisierte Daten, z. B. eindeutige Bezeichner – in der Regel eine vom System generierte Zahl, die von sich aus eine Einzelperson nicht identifizieren kann, aber dazu verwendet wird, die Enterprise-Dienste für Benutzer bereitzustellen. Vom System generierte Protokolle enthalten möglicherweise auch Informationen zur Identifikation über Endbenutzer, wie z. B. einen Benutzernamen.
 
 ## <a name="how-to-use-this-guide"></a>Verwenden dieses Leitfadens
 
 Dieser Leitfaden besteht aus zwei Teilen:
 
-- **Teil 1: Reaktion auf Anträge betroffener Personen bezüglich Kundendaten** – In Teil 1 dieses Leitfadens wird erläutert, wie Sie in Anwendungen, in denen Sie Daten verfasst haben, auf diese zugreifen, sie korrigieren, einschränken und exportieren können. Dieser Abschnitt enthält Informationen zum Ausführen von Anträgen betroffener Personen in Bezug auf Kundeninhalte und Informationen zur Identifizierung von Endbenutzern.
-- **Teil 2: Reaktion auf Anträge betroffener Personen bezüglich vom System generierten Protokollen** – Wenn Sie die Microsoft Enterprise-Dienste verwenden, generiert Microsoft einige Informationen, die als vom System generierte Protokolle bekannt sind, um den Dienst bereitzustellen. In Teil 2 dieses Leitfadens wird erläutert, wie Sie auf solche Daten in Azure zugreifen können und wie Sie sie löschen und exportieren können.
+- **Teil 1: Reaktion auf Anträge betroffener Personen bezüglich Kundendaten:** In Teil 1 dieses Leitfadens wird erläutert, wie Sie in Anwendungen, in denen Sie Daten erstellt haben, auf diese zugreifen, sie korrigieren, einschränken, löschen und exportieren können. Dieser Abschnitt enthält Informationen zum Ausführen von Anträgen betroffener Personen in Bezug auf Kundeninhalte und Informationen zur Identifizierung von Endbenutzern.
+- **Teil 2: Reaktion auf Anträge betroffener Personen bezüglich vom System generierten Protokollen:** Wenn Sie die Microsoft Enterprise-Dienste verwenden, generiert Microsoft einige Informationen, die als vom System generierte Protokolle bekannt sind, um den Dienst bereitzustellen. In Teil 2 dieses Leitfadens wird erläutert, wie Sie auf solche Daten in Azure zugreifen können und wie Sie diese löschen und exportieren können.
 
 ## <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-service-accounts"></a>Grundlegendes zu Anträgen betroffener Personen für Azure Active Directory- und Microsoft-Dienstkonten
 
@@ -85,19 +90,19 @@ Dies ist besonders hilfreich, wenn Sie nach personenbezogenen Daten für einen b
 
 1. Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit einem Konto an, das ein globaler Administrator für das Verzeichnis ist.
 
-2. Wählen Sie **Alle Dienste** aus, geben Sie **Benutzer und Gruppen** in das Textfeld ein, und drücken Sie dann die **Eingabetaste**.
+2. Wählen Sie **Azure Active Directory** aus.
 
-     ![Alle Dienste auswählen](media/azure-dsr_image3.png)
+     ![Alle Dienste auswählen](media/gdpr-azure-dsr-azure-portal.png)
 
-3. Wählen Sie auf dem Blatt **Benutzer und Gruppen** **Benutzer** aus.
+3. Wählen Sie **Benutzer** aus.
 
-     ![Benutzer auswählen](media/azure-dsr_image9.png)
+     ![Benutzer auswählen](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. Wählen Sie auf dem Blatt **Benutzer und Gruppen** einen Benutzer aus der Liste aus, und wählen Sie dann auf dem Blatt für den ausgewählten Benutzer **Profil** aus, um Benutzerprofilinformationen anzuzeigen, die möglicherweise personenbezogene Daten enthalten.
+4. Wählen Sie auf dem Blatt **Alle Benutzer** einen Benutzer aus der Liste aus, und wählen Sie dann auf dem Blatt für den ausgewählten Benutzer **Profil** aus, um Benutzerprofilinformationen anzuzeigen, die möglicherweise personenbezogene Daten enthalten.
 
-    ![Profil auswählen](media/azure-dsr_image5.png)
+    ![Profil auswählen](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Wenn Sie Benutzerprofilinformationen hinzufügen oder ändern möchten, können Sie dies tun und dann in der Befehlsleiste **Speichern** auswählen.
+5. Wenn Sie Benutzerprofilinformationen hinzufügen oder ändern möchten, können Sie dies tun, indem Sie in der Befehlsleiste **Bearbeiten** auswählen und dann auf **Speichern** klicken, nachdem Sie Änderungen vorgenommen haben.
 
 #### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
 
@@ -133,25 +138,21 @@ Im [Azure-Portal](https://portal.azure.com/) in Ihrer [Azure Active Directory](h
 
 1. Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit einem Konto an, das ein globaler Administrator für das Verzeichnis ist.
 
-2. Wählen Sie **Alle Dienste** aus, geben Sie **Benutzer und Gruppen** in das Textfeld ein, und drücken Sie dann die **Eingabetaste**.
+2. Wählen Sie **Azure Active Directory** aus.
 
-    ![Alle Dienste auswählen](media/azure-dsr_image3.png)
+    ![Alle Dienste auswählen](media/gdpr-azure-dsr-azure-portal.png)
 
-3. Wählen Sie auf dem Blatt **Benutzer und Gruppen** **Benutzer** aus.
+3. Wählen Sie **Benutzer** aus.
 
-    ![Benutzer auswählen](media/azure-dsr_image9.png)
+    ![Benutzer auswählen](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. Wählen Sie auf dem Blatt **Benutzer und Gruppen** einen Benutzer aus der Liste aus, und wählen Sie dann auf dem Blatt für den ausgewählten Benutzer **Profil** aus, um Benutzerprofilinformationen anzuzeigen, die korrigiert oder aktualisiert werden müssen.
+4. Wählen Sie auf dem Blatt **Alle Benutzer** einen Benutzer aus der Liste aus, und wählen Sie dann auf dem Blatt für den ausgewählten Benutzer **Profil** aus, um Benutzerprofilinformationen anzuzeigen, die korrigiert oder aktualisiert werden müssen.
 
-    ![Profil auswählen](media/azure-dsr_image5.png)
+    ![Profil auswählen](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Korrigieren oder aktualisieren Sie die Daten, und wählen Sie dann in der Befehlsleiste **Speichern** aus.
+5. Korrigieren oder aktualisieren Sie die Benutzerprofilinformationen, einschließlich der Arbeitsinformationen, indem Sie in der Befehlsleiste **Bearbeiten** auswählen und dann auf  **Speichern** klicken, nachdem Sie Änderungen vorgenommen haben.
 
-6. Wählen Sie auf dem Blatt für den ausgewählten Benutzer **Arbeitsinformationen** aus, um Benutzerarbeitsinformationen anzuzeigen, die korrigiert oder aktualisiert werden müssen.
-
-    ![Arbeitsinformationen auswählen](media/azure-dsr_image4.png)
-
-7. Korrigieren oder aktualisieren Sie Benutzerarbeitsinformationen, und wählen Sie dann in der Befehlsleiste **Speichern** aus.
+    ![Profil auswählen](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
 
@@ -184,26 +185,30 @@ Im Folgenden finden Sie die grundlegenden Schritte zum Löschen von Benutzern au
 
 ###### <a name="to-delete-a-user-from-an-azure-tenant"></a>So löschen Sie einen Benutzer aus einem Azure-Mandanten
 
-1. Öffnen Sie das Azure-Portal, wählen Sie das Blatt **Azure Active Directory** aus, und wählen Sie dann **Benutzer** aus.
+1. Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit einem Konto an, das ein globaler Administrator für das Verzeichnis ist.
 
-    Das Blatt **Benutzer – alle Benutzer** wird angezeigt.
+2. Wählen Sie **Azure Active Directory** aus.
 
-    ![Benutzer suchen](media/azure-dsr_image8.png)
+    ![Alle Dienste auswählen](media/gdpr-azure-dsr-azure-portal.png)
 
-2. Aktivieren Sie das Kontrollkästchen neben dem Benutzer, den Sie löschen möchten, wählen Sie **Benutzer löschen** aus, und wählen Sie dann **Ja** in dem Feld aus, in dem Sie gefragt werden, ob Sie den Benutzer löschen möchten.
+3. Wählen Sie **Benutzer** aus.
 
-    ![Benutzerverwaltung](media/azure-dsr_image9.png)
+    ![Benutzer auswählen](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. Wählen Sie im Dropdown-Feld **Anzeigen** die Option **Kürzlich gelöschte Benutzer** aus.
+4. Aktivieren Sie das Kontrollkästchen neben dem Benutzer, den Sie löschen möchten, wählen Sie **Benutzer löschen** aus, und wählen Sie dann **Ja** in dem Feld aus, in dem Sie gefragt werden, ob Sie den Benutzer löschen möchten.
 
-    ![Benutzerprofil anzeigen](media/azure-dsr_image10.png)
+    ![Benutzerverwaltung](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. Wählen Sie denselben Benutzer erneut aus, wählen Sie **Dauerhaft löschen**, aus und wählen Sie dann **Ja** im dem Feld aus, in dem Sie gefragt werden, ob Sie sicher sind.
+5. Wählen Sie auf dem Blatt  **Alle Benutzer**  die Option  **Gelöschte Benutzer** aus.
+
+    ![Benutzerprofil anzeigen](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. Wählen Sie denselben Benutzer erneut aus, wählen Sie in der Befehlsleiste  **Dauerhaft löschen** aus, und wählen Sie dann  **Ja**  in dem Feld aus, in dem Sie gefragt werden, ob Sie sicher sind.
 
 >[!IMPORTANT]  
 >Beachten Sie, dass Sie den Benutzer und alle verbundenen Daten und vom System generierten Protokolle dauerhaft und unwiderruflich löschen, indem Sie auf **Ja** klicken. Wenn Sie dies versehentlich tun, müssen Sie den Benutzer manuell wieder zum Mandanten hinzufügen. Die verbundenen Daten und die vom System generierten Protokolle werden nicht wiederhergestellt.
 
-   ![Benutzerarbeitsinformationen anzeigen](media/azure-dsr_image11.png)
+   ![Benutzerarbeitsinformationen anzeigen](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
 
@@ -279,15 +284,15 @@ Im Folgenden finden Sie die grundlegenden Schritte zum Exportieren von Daten aus
 
 1. Öffnen Sie das Azure-Portal, wählen Sie **Alle Dienste** aus, geben Sie *Richtlinie* in den Filter ein, und wählen Sie dann **Richtlinie** aus.
 
-     ![Alle Dienste filtern ](media/azure-dsr_image12.png)
+     ![Alle Dienste filtern ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. Wählen Sie im Blatt **Richtlinie** die Option **Datenschutz** und dann die Option **Benutzeranforderungen verwalten** aus, und wählen Sie dann **Exportanforderung hinzufügen** aus.
 
-    ![Exportanforderung hinzufügen ](media/azure-dsr_image13.png)
+    ![Exportanforderung hinzufügen ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. Schließen Sie die **Anforderung zum Exportieren von Daten** ab:
 
-    ![Neue Anforderung zum Exportieren von Daten](media/azure-dsr_image14.png)
+    ![Neue Anforderung zum Exportieren von Daten](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **Benutzer** – geben Sie die E-Mail-Adresse des Azure Active Directory-Benutzers ein, der den Export angefordert hat.
 - **Abonnement** – wählen Sie das Konto aus, über das Sie die Ressourcennutzung berichten und Dienste in Rechnung stellen. Dies ist auch der Speicherort Ihres Azure-Speicherkontos.

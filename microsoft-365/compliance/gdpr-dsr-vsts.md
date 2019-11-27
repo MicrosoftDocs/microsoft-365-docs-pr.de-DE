@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps-Datensubjektanforderungen für die DSGVO
-keywords: Visual Studio Team Services, VSTS, Azure DevOps-Dokumentation, Datenschutz, DSGVO
+title: Anträge betroffener Personen für Azure DevOps im Rahmen der DSGVO und des CCPA
+keywords: Visual Studio Team Services, VSTS, Azure DevOps-Dokumentation, Datenschutz, DSGVO, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: devops
@@ -9,19 +9,23 @@ ms.date: 06/11/2018
 author: jitojo
 ms.author: jominana
 manager: douge
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071484"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268845"
 ---
-# <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Azure DevOps Services – Anfragen von Betroffenen für die DSGVO
+# <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Azure DevOps Services im Rahmen der DSGVO und des CCPA
 
-Die [Datenschutz-Grundverordnung (DSGVO)](http://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen, die in den Bestimmungen als *betroffene Personen* bezeichnet werden, Berechtigungen zum Verwalten der personenbezogenen Daten, die von einem *Datenverantwortlichen* erfasst werden. Ein Datenverantwortlicher oder nur *Verantwortlicher* ist ein Arbeitgeber oder eine andere Art von Behörde oder Organisation. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten. Dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format, damit sie zu einem anderen Datenverantwortlichen bewegt werden können. Eine formale Anforderung von einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion für deren persönliche Daten wird als *Antrag einer betroffenen Person* bezeichnet.
+Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen, die in den Bestimmungen als *betroffene Personen* bezeichnet werden, Berechtigungen zum Verwalten der personenbezogenen Daten, die von einem *Datenverantwortlichen* erfasst werden. Ein Datenverantwortlicher oder nur *Verantwortlicher* ist ein Arbeitgeber oder eine andere Art von Behörde oder Organisation. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten. Dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format, damit sie zu einem anderen Datenverantwortlichen bewegt werden können. Eine formale Anforderung von einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion für deren persönliche Daten wird als *Antrag einer betroffenen Person* bezeichnet.
+
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
 Allgemeine Informationen zur DSGVO finden Sie im [DSGVO-Bereich des Service Trust-Portals](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
@@ -33,11 +37,11 @@ Die Artikel [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/pr
 
 ## <a name="personal-data-we-collect"></a>Von uns erfasste personenbezogene Daten
 
-Microsoft erfasst Daten von Benutzern zur Ausführung und Verbesserung von Azure DevOps Services. Azure DevOps Services erfasst zwei Kategorien von Daten: Kundendaten und vom System generierte Protokolle. Kundendaten umfassen vom Benutzer identifizierbare transaktionale und interaktionale Daten, die Azure DevOps Services für den Dienst verwenden muss. Vom System generierte Protokolle enthalten Dienstverwendungsdaten, die für jeden Produktbereich und jede Produktfunktion aggregiert werden.
+Microsoft erfasst Daten von Benutzern zur Ausführung und Verbesserung der Azure DevOps Services. Die Azure DevOps Services erfassen zwei Kategorien von Daten – Kundendaten und vom System generierte Protokolle. Kundendaten umfassen vom Benutzer identifizierbare transaktionale und interaktionale Daten, die Azure DevOps Services zur Ausführung des Dienstes benötigt. Vom System generierte Protokolle enthalten Dienstverwendungsdaten, die für jeden Produktbereich und jede Produktfunktion aggregiert werden.
 
 ## <a name="delete-azure-devops-data"></a>Löschen Azure DevOps-Daten
 
-Der erste Schritt zum Löschen verknüpfter Azure DevOps Services-Kundendaten und zum Anonymisieren personenbezogener Daten in vom System generierten Protokollen ist das Schließen Ihres Azure Active Directory (AAD)-Identitätskontos oder Microsoft Account (MSA). Azure DevOps Services ist ein Aufzeichnungssystem mit strengen Integritäts-, Nachverfolgbarkeits- und Überwachungsregeln. Diese vorhandenen Verpflichtungen wirken sich auf unsere Lösch- und Aufbewahrungsverpflichtungen für die DSGVO aus. Wenn Sie das Identitätskonto schließen, werden Artefakte und Aufzeichnungen, die mit der individuellen Identität im Azure DevOps Services-Konto verknüpft sind, nicht bearbeitet, entfernt oder geändert. Wir haben sichergestellt, dass alle verknüpften personenbezogenen Daten und vom System generierten Protokolle in diesem Konto aus unserem System entfernt werden, wenn ein komplettes Azure DevOps Services-Konto gelöscht wird (nach dem erforderlichen 30-tägigen Zeitraum für vorläufige Löschung des Azure DevOps Services-Kontos).
+Der erste Schritt zum Löschen von zugehörigen Azure DevOps Services-Kundendaten und zum Anonymisieren von personenbezogenen Daten, die sich in vom System generierten Protokollen befinden, ist das Schließen des Azure Active Directory (AAD)-Identitätskontos oder Microsoft Account (MSA). Azure DevOps Services ist ein Aufzeichnungssystem mit strengen Integritäts-, Nachverfolgbarkeits- und Überwachungsregeln. Diese bestehenden Verpflichtungen wirken sich auf die Lösch- und Aufbewahrungspflichten der DSGVO aus. Wenn Sie das Identitätskonto schließen, werden Artefakte und Aufzeichnungen, die mit der individuellen Identität im Azure DevOps Services-Konto verknüpft sind, nicht bearbeitet, entfernt oder geändert. Wir haben sichergestellt, dass alle verknüpften personenbezogenen Daten und vom System generierten Protokolle der Organisation aus unserem System entfernt werden, wenn eine komplette Azure DevOps-Organisation gelöscht wird (nach dem erforderlichen 30-tägigen Zeitraum für vorläufige Löschung der Azure DevOps-Organisation).
 
 ## <a name="export-azure-devops-data"></a>Exportieren Azure DevOps-Daten
 
