@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0d2edb2f7362fa8e8bea6ae82c417f61072bccff
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081040"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633614"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager und die dsgvo
 
@@ -48,9 +48,9 @@ So suchen Sie nach einem Benutzerkonto
 
 ## <a name="export-a-report-of-account-data-history"></a>Exportieren eines Berichts mit Kontoverlaufsdaten
 
-Sie können für jedes identifizierte Benutzerkonto einen Bericht über Abhängigkeiten generieren, die mit diesem Konto verknüpft sind. Mit diesen Informationen können Sie offene Aktionselemente neu zuweisen oder den Zugriff auf zuvor hochgeladene Beweise sicherstellen.
+Sie können für jedes identifizierte Benutzerkonto einen Bericht über Abhängigkeiten generieren, die mit dem Konto verknüpft sind. Mit diesen Informationen können Sie offene Aktionselemente neu zuweisen oder den Zugriff auf zuvor hochgeladene Beweise sicherstellen.
   
- So generieren und exportieren Sie einen Bericht
+ So generieren und exportieren Sie einen Bericht:
   
 1. Wählen Sie **exportieren** aus, um einen Bericht der Compliance-Manager-Steuerelement Aktionselemente zu generieren und herunterzuladen, die dem zurückgegebenen Benutzerkonto derzeit zugewiesen sind, und die Liste der Dokumente, die von diesem Benutzer hochgeladen wurden. Wenn keine Aktionen oder hochgeladenen Dokumente zugeordnet sind, wird in einer Fehlermeldung "keine Daten für diesen Benutzer" angezeigt.
 
@@ -69,6 +69,6 @@ So löschen Sie das Benutzerkonto-Aktionselement und den Dokumentupload-Verlauf:
   
 1. Wählen Sie **Löschen**aus.
 
-    Es wird ein Bestätigungsdialogfeld angezeigt, "*dadurch werden alle Aktionselement Zuweisungen des Steuerelements und der Verlauf des dokumentuploads für den ausgewählten Benutzer entfernt. Diese Aktion ist dauerhaft. Möchten Sie wirklich fortfahren?*"
+    Es wird ein Bestätigungsdialogfeld angezeigt: "*Hierdurch werden alle Aktionselement Zuweisungen des Steuerelements und der Verlauf des dokumentuploads für den ausgewählten Benutzer entfernt. Diese Aktion ist dauerhaft. Möchten Sie wirklich fortfahren?*"
 
 2. Um fortzufahren, wählen Sie **OK**, andernfalls **Abbrechen**aus.

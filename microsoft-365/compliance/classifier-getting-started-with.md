@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Sobald die Klassifizierungs Schulung erfolgt ist und Sie die Richtigkeit der Ergebnisse bestätigen, verwenden Sie Sie, um die Inhalte Ihrer Organisation zu durchsuchen, Sie zu klassifizieren, um Aufbewahrungs-oder Sensitivitäts Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 6b8574b7c87f0b038c46894940cb8d15b152ab5c
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
+ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690434"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633864"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
 
@@ -25,7 +25,7 @@ Das klassifizieren und kennzeichnen von Inhalten, damit es geschützt und ordnun
 
 ## <a name="manually"></a>Manuell
 
-Dies erfordert menschliches Urteilsvermögen und handeln. Ein Administrator kann entweder die bereits vorhandenen Bezeichnungen und Typen vertraulicher Informationen verwenden oder eigene erstellen und diese dann veröffentlichen. Benutzer und Administratoren wenden diese auf Inhalte an, wenn Sie darauf stoßen. Anschließend können Sie den Inhalt schützen und seine Disposition verwalten.
+Für diese Methode ist menschliches Urteilen und Handeln erforderlich. Ein Administrator kann entweder die bereits vorhandenen Bezeichnungen und Typen vertraulicher Informationen verwenden oder eigene erstellen und diese dann veröffentlichen. Benutzer und Administratoren wenden diese auf Inhalte an, wenn Sie darauf stoßen. Anschließend können Sie den Inhalt schützen und seine Disposition verwalten.
 
 ## <a name="automated-pattern-matching"></a>Automatischer Musterabgleich
 
@@ -36,11 +36,11 @@ Diese Kategorie von Klassifizierungsmechanismen umfasst das Auffinden von Inhalt
 - Erkennen eines Elements, da es sich um eine Variation einer Vorlage handelt [(Dokumentieren des Finger Drucks)](document-fingerprinting.md)
 - Verwenden des Vorhandenseins exakter Zeichenfolgen [(exakte Datenübereinstimmung)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Vertraulichkeits-und Aufbewahrungs Bezeichnungen können dann automatisch angewendet werden, sodass die Inhalte für die Verwendung in [DLP (Data Loss Prevention)](data-loss-prevention-policies.md) und [Aufbewahrungsrichtlinien](retention-policies.md)verfügbar gemacht werden.
+Vertraulichkeits-und Aufbewahrungs Bezeichnungen können dann automatisch angewendet werden, um die Inhalte für die Verwendung in [DLP (Data Loss Prevention)](data-loss-prevention-policies.md) und [Aufbewahrungsrichtlinien](retention-policies.md)zur Verfügung zu stellen.
 
 ## <a name="trainable-classifiers"></a>Schulungs Klassifizierer
 
-Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die aufgrund ihrer Beschaffenheit nicht so anfällig sind, dass Sie von den manuellen oder automatisierten Mustervergleichsmethoden leicht identifiziert werden können. Bei dieser Klassifizierungsmethode geht es um die Schulung einer Klassifizierung, um ein Element basierend auf dem Element zu identifizieren, nicht durch Elemente, die sich im Element befinden (Mustervergleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte von Beispielen für die Inhalte ansehen, die Sie klassifizieren möchten. Sie beginnen mit dem Füttern von IT-Beispielen, die sich eindeutig in der Kategorie befinden, und dann, wenn Sie diese verarbeiten, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen geben. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Sie bestätigen dann seine Ergebnisse, sortieren die positiven, negativen, falsch positiven und falschen negative, um die Genauigkeit der Vorhersagen zu verbessern. Wenn Sie die ausgebildete Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert und der Inhalt klassifiziert.
+Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht einfach durch die manuellen oder automatisierten Mustervergleichsmethoden identifiziert werden können. Bei dieser Klassifizierungsmethode geht es um die Schulung einer Klassifizierung, um ein Element basierend auf dem Element zu identifizieren, nicht durch Elemente, die sich im Element befinden (Mustervergleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte Beispiele für die Inhalte ansehen, die Sie bei der Klassifizierung interessieren. Sie beginnen mit dem Füttern von IT-Beispielen, die definitiv in der Kategorie sind. Nachdem diese verarbeitet wurden, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen zuweisen. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse, sortieren die positiven, negativen, falsch positiven und falschen negative, um die Genauigkeit der Vorhersagen zu verbessern. Wenn Sie die geschulte Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert, und der Inhalt wird klassifiziert.
 
 > [!IMPORTANT]
 > Beide Typen von Klassifizierungen stehen als Bedingung für die [automatische Anwendung von Aufbewahrungs Bezeichnungsrichtlinien basierend auf einer Bedingungs-](labels.md#applying-a-retention-label-automatically-based-on-conditions) und [Kommunikations Konformität](communication-compliance.md)zur Verfügung.
@@ -60,11 +60,11 @@ Sie können Klassifizierungen und Schulungs fähige Klassifizierungen verwenden.
 Microsoft 365 ist mit sechs einsatzfähigen Klassifizierungen ausgestattet:
 
 - **Anstößige Sprache**: erkennt Textelemente, die Profanität, Beleidigungen, verspottungen und verschleierte Ausdrücke enthalten (bei denen es sich um Ausdrücke handelt, die die gleiche Bedeutung wie ein beleidigender Ausdruck haben).
-- **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten der persönlichen, pädagogischen, beruflichen Qualifikationen eines Bewerbers, Berufserfahrung und anderer personenbezogener Informationen handelt.
+- **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
 - **Sourcecode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in weit verbreiteten Programmiersprachen für Computer geschrieben wurden.
 - **Belästigung**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit anstößigem Verhalten, das auf eine oder mehrere Personen basierend auf den folgenden Merkmalen ausgerichtet ist: Rasse, Ethnizität, Religion, nationale Herkunft, Geschlecht, sexuelle Orientierung, Alter, Behinderung.
-- **Profanität**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen
-- **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden
+- **Profanity**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen.
+- **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden.
 
 Diese werden in der Ansicht " **Microsoft 365 Compliance Center** > **-Datenklassifizierung (Preview)** > "**trainable Klassifizierers** " `Ready to use`mit dem Status" angezeigt.
 

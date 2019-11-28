@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Office 365 Postfach gespeichert werden können. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, eDiscovery-Haltestatus und Office 365-Aufbewahrungsrichtlinien. Sie können auch ermitteln, ob ein Benutzer von einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686239"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634012"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -175,30 +175,56 @@ Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Overview 
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Verwalten von Postfächern in Verzögerungs speichern
 
-Nach dem Entfernen eines beliebigen haltebereichs aus einem Postfach wird der Wert der *DelayHoldApplied* -Postfacheigenschaft auf **true**festgelegt. Dies tritt auf, wenn der Assistent für verwaltete Ordner das Postfach das nächste Mal verarbeitet und erkennt, dass ein Haltebereich entfernt wurde. Dies wird als *Verzögerungs* Speicher bezeichnet und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage verzögert wird, um zu verhindern, dass Daten endgültig aus dem Postfach gelöscht (bereinigt) werden. Dadurch erhalten Administratoren die Möglichkeit, Postfachelemente zu suchen oder wiederherzustellen, die nach dem Entfernen des Haltestatus gelöscht werden. Wenn ein Verzögerungs Speicher auf das Postfach gesetzt wird, wird das Postfach weiterhin für unbegrenzte Dauer aufbewahrt, als ob das Postfach ein Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Office 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die *DelayHoldApplied* -Eigenschaft auf **false**festgelegt wird), sodass der Haltebereich entfernt wird. Nachdem die *DelayHoldApplied* -Eigenschaft auf **false festgelegt**wurde, werden Elemente, die zum Entfernen markiert sind, beim nächsten verarbeiten des Postfachs vom Assistenten für verwaltete Ordner gelöscht.
+Nachdem ein Aufbewahrungs aus einem Postfach entfernt wurde, wird ein *Verzögerungs* Speicher angewendet. Dies bedeutet, dass die tatsächliche Entfernung des Haltestatus für 30 Tage verzögert wird, um zu verhindern, dass Daten endgültig aus dem Postfach gelöscht (bereinigt) werden. Dadurch erhalten Administratoren die Möglichkeit, Postfachelemente zu suchen oder wiederherzustellen, die nach dem Entfernen eines Haltestatus gelöscht werden. Das nächste Mal, wenn der Assistent für verwaltete Ordner das Postfach verarbeitet und festgestellt hat, dass ein Haltebereich entfernt wurde, wird ein Verzögerungs Speicher für ein Postfach festgehalten. Insbesondere wird eine Verzögerungs Sperre auf ein Postfach angewendet, wenn der Assistent für verwaltete Ordner eine der folgenden Postfacheigenschaften auf **true**festlegt:
 
-Um den Wert für die *DelayHoldApplied* -Eigenschaft für ein Postfach anzuzeigen, führen Sie den folgenden Befehl in Exchange Online PowerShell aus.
+- **DelayHoldApplied:** Diese Eigenschaft bezieht sich auf e-Mail-bezogene Inhalte (die von Personen mit Outlook und Outlook im Internet generiert werden), die im Postfach eines Benutzers gespeichert sind.
+
+- **DelayReleaseHoldApplied:** Diese Eigenschaft bezieht sich auf cloudbasierten Inhalte (die von nicht-Outlook-apps wie Microsoft Teams, Microsoft Forms und Microsoft jammern generiert werden), die im Postfach eines Benutzers gespeichert sind. Von einer Microsoft-App generierte clouddaten werden normalerweise in einem verborgenen Ordner im Postfach eines Benutzers gespeichert.
+ 
+ Wenn ein Verzögerungs Speicher für das Postfach gesetzt wird (wenn eine der vorherigen Eigenschaften auf " **true**" festgelegt ist), wird das Postfach weiterhin für eine unbegrenzte Aufbewahrungsdauer als aufbewahrt, als ob das Postfach das Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Office 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die DelayHoldApplied-oder DelayReleaseHoldApplied-Eigenschaft auf **false**festgelegt wird), sodass der Haltebereich entfernt wird. Nachdem eine dieser Eigenschaften auf " **false**" festgelegt wurde, werden die entsprechenden Elemente, die zum Entfernen markiert sind, beim nächsten verarbeiten des Postfachs vom Assistenten für verwaltete Ordner gelöscht.
+
+Um die Werte für die Eigenschaften DelayHoldApplied und DelayReleaseHoldApplied für ein Postfach anzuzeigen, führen Sie den folgenden Befehl in Exchange Online PowerShell aus.
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-Um die Verzögerung zu entfernen, bevor Sie abläuft, können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
+Um die Verzögerung zu entfernen, bevor Sie abläuft, können Sie je nach der Eigenschaft, die Sie ändern möchten, ein (oder beide) die folgenden Befehle in Exchange Online PowerShell ausführen: 
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Sie müssen der Rolle "Legal Hold" in Exchange Online zugewiesen sein, um den Parameter " *RemoveDelayHoldApplied* " verwenden zu können. 
+Oder
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
 
-Um die Verzögerung für ein inaktives Postfach zu entfernen, führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
+Sie müssen die Rolle "Legal Hold" in Exchange Online zugewiesen haben, um die Parameter *RemoveDelayHoldApplied* oder *RemoveDelayReleaseHoldApplied* zu verwenden. 
+
+Um die Verzögerung für ein inaktives Postfach zu entfernen, führen Sie einen der folgenden Befehle in Exchange Online PowerShell aus:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+Oder
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
 > Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl ist die Verwendung des Distinguished Name oder Exchange GUID-Werts. Durch Verwenden eines dieser Werte können Sie verhindern, versehentlich das falsche Postfach anzugeben. 
+
+Weitere Informationen zur Verwendung dieser Parameter zum Verwalten von Verzögerungs speichern finden Sie unter [festlegen-Postfach](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+
+Beachten Sie beim Verwalten eines Postfachs bei Verzögerung die folgenden Punkte:
+
+- Wenn entweder die DelayHoldApplied-oder die DelayReleaseHoldApplied-Eigenschaft auf **true** festgelegt ist und ein Postfach (oder das entsprechende Office 365 Benutzerkonto) gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Das liegt daran, dass ein Postfach als gesperrt gilt, wenn eine der beiden Eigenschaften auf " **true**" festgelegt ist, und das Löschen eines Postfachs in einem Haltestatus ein inaktives Postfach ergibt. Um ein Postfach zu löschen und es nicht zu einem inaktiven Postfach zu machen, müssen Sie beide Eigenschaften auf **false**festlegen.
+
+- Wie bereits erwähnt, wird ein Postfach für eine unbegrenzte Aufbewahrungsdauer als in der Warteschleife betrachtet, wenn entweder die DelayHoldApplied-oder die DelayReleaseHoldApplied-Eigenschaft auf **true**festgelegt ist. Dies bedeutet jedoch nicht, dass *alle* Inhalte im Postfach beibehalten werden. Dies hängt vom Wert ab, der auf die einzelnen Eigenschaften festgelegt wird. Angenommen, beide Eigenschaften sind auf **true** festgelegt, da haltebereiche aus dem Postfach entfernt werden. Anschließend entfernen Sie nur die Warteschleife, die auf nicht-Outlook-clouddaten angewendet wird (mithilfe des *RemoveDelayReleaseHoldApplied* -Parameters). Wenn der Assistent für verwaltete Ordner das nächste Mal das Postfach verarbeitet, werden die zum Entfernen markierten nicht-Outlook-Elemente gelöscht. Alle zum Entfernen markierten Outlook-Elemente werden nicht gelöscht, da die DelayHoldApplied-Eigenschaft weiterhin auf **true**festgelegt ist. Das Gegenteil wäre auch der Fall: Wenn DelayHoldApplied auf **false** festgelegt ist und DelayReleaseHoldApplied auf **true**festgelegt ist, werden nur Outlook-Elemente, die zum Entfernen markiert sind, gelöscht.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

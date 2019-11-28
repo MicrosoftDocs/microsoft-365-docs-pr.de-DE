@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Erfahren Sie, wie Administratoren Exchange Online PowerShell und eine CSV-Datei zum Massenimport externer Kontakte in die globale Adressliste verwenden können.
-ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 12fc8ec47881ce5cb3dc00a7a646966588bd5cca
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686212"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39630985"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Massenimport externer Kontakte in Exchange Online
 
@@ -42,7 +42,7 @@ Nachdem Sie diese Schritte zum Importieren von Kontakten ausgeführt haben, kön
 
 Der erste Schritt besteht darin, eine CSV-Datei zu erstellen, die Informationen zu jedem externen Kontakt enthält, den Sie in Exchange Online importieren möchten. 
   
-1. Kopieren Sie den folgenden Text in eine Textdatei im Editor, und speichern Sie ihn als CSV-Datei auf Ihrem Desktop, indem Sie ein filename-Suffix von. CSV verwenden; Beispiel: ExternalContacts. CSV.
+1. Kopieren Sie den folgenden Text in eine Textdatei im Editor, und speichern Sie ihn auf dem Desktop als CSV-Datei unter Verwendung des Datei namens Suffixes ". csv"; Beispiel: ExternalContacts. CSV.
     
     > [!TIP]
     > Wenn Ihre Sprache Sonderzeichen enthält (wie **å**, **ä**und **ö** auf Schwedisch), speichern Sie die CSV-Datei mit UTF-8 oder einer anderen Unicode-Codierung, wenn Sie die Datei im Editor speichern. 
@@ -99,7 +99,7 @@ Nachdem Sie den Befehl in Schritt 2 ausgeführt haben, werden die externen Konta
   
 1.  Verbinden Sie PowerShell mit Ihrer Exchange Online Organisation. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Wechseln Sie zum Desktop Ordner, in dem Sie die CSV-Datei in Schritt 1 gespeichert haben; zum Beispiel `C:\Users\Administrator\desktop`.
+2. Wechseln Sie zum Desktop Ordner, in dem Sie die CSV-Datei in Schritt 1 gespeichert haben; Beispiel: `C:\Users\Administrator\desktop`.
     
 3. Führen Sie die folgenden beiden Befehle aus, um die anderen Eigenschaften aus der CSV-Datei zu den externen Kontakten hinzuzufügen, die Sie in Schritt 2 erstellt haben.
     

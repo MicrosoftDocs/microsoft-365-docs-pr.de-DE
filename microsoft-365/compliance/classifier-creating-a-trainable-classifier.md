@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Schulungs fähige Klassifizierungen, wenn eine der Feld Klassifizierungen von Ready to use Ihren Anforderungen nicht entspricht. Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Thema wird gezeigt, wie Sie eine benutzerdefinierte Klassifizierung erstellen.
-ms.openlocfilehash: 1d62b70d821593ff7d8d3889c0da0e0b5cc9809f
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38690528"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633982"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Erstellen einer Schulungs Klassifizierer (Vorschau)
 
@@ -38,7 +38,7 @@ Wenn Sie möchten, dass eine Lernende Klassifizierung ein Element in einer besti
 
 ## <a name="testing-content"></a>Testen von Inhalten
 
-Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum Erstellen eines Vorhersagemodells verarbeitet hat, müssen Sie die Vorhersagen testen, um festzustellen, ob die Klassifizierung ordnungsgemäß zwischen Elementen unterscheiden kann, die der Kategorie und den Elementen entsprechen, die nicht übereinstimmen. Sie tun dies, indem Sie es eine andere, hoffentlich größere, Reihe von Menschen gepflückten Inhalte, die aus Beispielen, die in der Kategorie und Beispiele, die nicht fallen sollte. Nachdem Sie diese verarbeitet haben, werden Sie die Ergebnisse manuell durchlaufen und überprüfen, ob jede Vorhersage korrekt, falsch oder nicht sicher ist. Die Schulungs-Klassifizierung verwendet dieses Feedback, um das Vorhersagemodell zu verbessern.
+Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum Erstellen eines Vorhersagemodells verarbeitet hat, müssen Sie die vorher gestellten Voraussagen testen, um zu ermitteln, ob die Klassifizierung ordnungsgemäß zwischen Elementen unterscheiden kann, die der Kategorie und den Elementen entsprechen, die nicht übereinstimmen. Sie tun dies, indem Sie es eine andere, hoffentlich größere, Reihe von Menschen gepflückten Inhalte, die aus Beispielen, die in der Kategorie und Beispiele, die nicht fallen sollte. Nachdem Sie diese verarbeitet haben, gehen Sie die Ergebnisse manuell durch und überprüfen, ob jede Vorhersage korrekt, falsch oder nicht sicher ist. Die Schulungs-Klassifizierung verwendet dieses Feedback, um das Vorhersagemodell zu verbessern.
 
 > [!TIP]
 > Optimale Ergebnisse erzielen Sie, wenn Sie 10.000 Elemente in Ihrem Test Beispiel mit einer gleichmäßigen Verteilung positiver und negativer Übereinstimmungen festgelegt haben.
@@ -85,7 +85,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 > [!IMPORTANT]
 > Die Beispielelemente dürfen nicht verschlüsselt werden und müssen in Englisch sein.
 
-12. Platzieren Sie den Testinhalt in einem SharePoint Online Ordner, *der ausschließlich für den Testinhalt*reserviert ist. Notieren Sie sich die SharePoint Online Website-, Bibliotheks-und Ordner-URL.
+12. Platzieren Sie den Testinhalt in einem SharePoint Online Ordner, *der ausschließlich für den Testinhalt*reserviert ist. Notieren Sie sich die SharePoint Online Website, Bibliothek und Ordner-URL.
 
 > [!TIP]
 > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Testdaten erstellen, lassen Sie mindestens eine Stunde für diesen Ort indiziert werden, bevor Sie die Schulungs Klassifizierung erstellen, die diese Startdaten verwendet.

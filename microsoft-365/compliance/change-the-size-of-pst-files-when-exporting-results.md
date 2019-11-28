@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Sie können die Standardgröße von PST-Dateien ändern, die beim Exportieren von eDiscovery-Suchergebnissen auf Ihren Computer heruntergeladen werden.
-ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 3a302164a1de6d383e2e120dd7a849e692e622eb
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686214"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634002"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
 Wenn Sie das e-Mail-Ergebnis einer eDiscovery-Suche mithilfe des Office 365 eDiscovery-Exporttools aus den verschiedenen Microsoft eDiscovery-Tools exportieren, beträgt die Standardgröße einer PST-Datei, die exportiert werden kann, 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit dem Sie die Suchergebnisse exportieren. Ein Grund hierfür ist, dass eine PST-Datei auf Wechselmedien, einer solchen DVD, einer CD oder einem USB-Laufwerk angepasst werden kann. 
   
 > [!NOTE]
->  Das Office 365 eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie das Tool für die Inhaltssuche im Security and Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden.
+> Das Office 365 eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie das Tool für die Inhaltssuche im Security and Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Erstellen einer Registrierungseinstellung zum Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
@@ -43,7 +43,7 @@ Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebni
     
     |**Größe in GB (ca.)**|**Größe in Bytes**|
     |:-----|:-----|
-    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |0,7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
@@ -68,7 +68,7 @@ Die Standardgröße von 10 GB basierte auf dem Kundenfeedback; 10 GB ist ein gut
   
  **Sollte ich die Standardgröße von PST-Dateien vergrößern oder verkleinern?**
   
-Kunden neigen dazu, die Größenbeschränkung so zu verringern, dass die Suchergebnisse auf Wechseldatenträgern angepasst werden, sodass Sie andere Standorte in Ihrer Organisation physisch versenden können. Es wird nicht empfohlen, dass Sie die Standardgröße vergrößern, da PST-Dateien mit mehr als 10 GB möglicherweise zu Problemen mit der Beschädigung kommen.
+Kunden neigen dazu, die Größenbeschränkung so zu verringern, dass die Suchergebnisse auf Wechseldatenträgern angepasst werden, die Sie physisch an andere Standorte in Ihrer Organisation versenden können. Es wird nicht empfohlen, dass Sie die Standardgröße vergrößern, da PST-Dateien mit mehr als 10 GB möglicherweise zu Problemen mit der Beschädigung kommen.
   
  **Auf welchem Computer muss ich diese Funktion ausführen?**
   

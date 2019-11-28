@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Informationen zur Kommunikations Kompatibilität in Microsoft 365
-ms.openlocfilehash: 3765e8236b319eaadc543782f2254aefaa8914a2
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686033"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633664"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Kommunikations Kompatibilität in Microsoft 365 (Vorschau)
 
-Communication Compliance ist Teil der neuen Lösung für Insider Risiken in Microsoft 365, die das Minimieren von Kommunikationsrisiken unterstützt, indem Sie Ihnen hilft, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu entgegennehmen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Überprüfer können gescannte e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation konform sind.
+Communication Compliance ist Teil der neuen Lösung für Insider Risiken in Microsoft 365, die das Minimieren von Kommunikationsrisiken unterstützt, indem Sie Ihnen hilft, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu entgegennehmen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Überprüfer können gescannte e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
 
 Compliance-Richtlinien für Kommunikation in Microsoft 365 helfen Ihnen, viele moderne Herausforderungen im Zusammenhang mit Compliance sowie interner und externer Kommunikation zu bewältigen, einschließlich:
 
 - Überprüfen der zunehmenden Typen von Kommunikationskanälen
 - Die zunehmende Menge an Nachrichtendaten
-- Regulatorische Durchsetzung #a0 das Risiko von Geldbußen
+- Regulatorische Durchsetzung und das Risiko von Geldbußen
 
 In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Microsoft 365 unterstützt die Trennung zwischen der Konfiguration der Kommunikations Kompatibilität und der Konfiguration von Richtlinien für die Überprüfung der Kommunikation. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Kommunikationsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
 
@@ -49,7 +49,7 @@ Kommunikations Konformitätsrichtlinien können beim Überprüfen von Nachrichte
 
 - **Einhaltung von Vorschriften**
 
-    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für eine Anforderung für Organisationen, Aufsichtsverfahren für die Überprüfung der Mitarbeiterkommunikation und der Unternehmenstypen zu haben, in denen Sie tätig ist. Ein weiteres Beispiel ist möglicherweise die Notwendigkeit, die Broker Händler Kommunikation in Ihrer Organisation zu überprüfen, um gegen potenzielle Geldwäsche, Insidergeschäfte, Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen.
+    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für eine Anforderung für Organisationen, Aufsichtsverfahren für die Überprüfung der Mitarbeiterkommunikation und der Unternehmenstypen zu haben, in denen Sie tätig ist. Ein weiteres Beispiel ist möglicherweise die Notwendigkeit, die Broker Händler Kommunikation in Ihrer Organisation zu überprüfen, um gegen mögliche Geld Wäschereien, Insidergeschäfte, Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen.
 
 ## <a name="new-enhancements"></a>Neue Verbesserungen
 
@@ -79,7 +79,7 @@ Mithilfe integrierter Korrektur Workflows können Sie Nachrichten mit Richtlinie
 - **Exakte und nahezu doppelte Erkennung**: neben der Überprüfung auf genaue Begriffe, die Kommunikationsrichtlinien entsprechen, werden in der Nähe doppelter Erkennungs Gruppentext ähnliche Ausdrücke und Nachrichten zusammengefasst, um den Überprüfungsprozess zu beschleunigen.
 - **Neue Filter**: untersuchen und beheben Sie Richtlinienwarnungen schneller mit Nachrichten filtern für mehrere Felder, einschließlich Absender, Empfänger, Datum, Domänen und vieles mehr.
 - **Verbesserte Nachrichten Ansichten**: Untersuchungen und Korrekturaktionen sind jetzt schneller mit neuen Nachrichtenquellen-, Text-und Anmerkungsansichten. Nachrichtenanlagen können jetzt angezeigt werden, um bei Korrekturaktionen einen vollständigen Kontext bereitzustellen.
-- **Benutzer Verlaufsansicht**: Verlaufsansicht aller Aktivitäten zur Korrektur von Benutzer Nachrichten, beispielsweise vergangene Benachrichtigungen und Eskalationen für Richtlinien Übereinstimmungen, bieten nun Bearbeiter während des Korrektur-Workflow-Prozesses mehr Kontext. Zum ersten Mal oder wiederholen Instanzen von Richtlinien Übereinstimmungen für Benutzer werden jetzt archiviert und können leicht angezeigt werden.
+- **Ansicht "Benutzerverlauf**": Verlaufsansicht aller Aktivitäten zur Korrektur von Benutzer Nachrichten, wie vergangene Benachrichtigungen und Eskalationen für Richtlinien Übereinstimmungen, bietet nun Bearbeiter einen weiteren Kontext während des Behebungs Workflowprozesses. Zum ersten Mal oder wiederholen Instanzen von Richtlinien Übereinstimmungen für Benutzer werden jetzt archiviert und können leicht angezeigt werden.
 
 ### <a name="actionable-insights"></a>Umsetzbare Einblicke
 
@@ -87,7 +87,7 @@ Mithilfe neuer interaktiver Dashboards für Warnungen, Richtlinien Übereinstimm
 
 - **Proaktive intelligente Warnungen**: Warnungen für Richtlinien Übereinstimmungen, die sofortige Aufmerksamkeit erfordern, umfassen neue Dashboards für ausstehende Elemente, sortiert nach Schweregrad und neue automatische e-Mail-Benachrichtigungen, die an designierte Bearbeiter gesendet werden.
 - **Interaktive Dashboards**: neue Dashboards zeigen Richtlinien Übereinstimmungen, ausstehende und aufgelöste Aktionen sowie Trends von Benutzern und Richtlinien an.
-- **Überwachungsunterstützung**: ein vollständiges Protokoll der Richtlinien-und Überprüfungsaktivitäten kann leicht aus dem Microsoft 365 Compliance Center exportiert werden, um die Unterstützung von Überwachungs Überprüfungsanforderungen zu erleichtern.
+- **Überwachungsunterstützung**: ein vollständiges Protokoll der Richtlinien-und Überprüfungsaktivitäten wird leicht aus dem Microsoft 365 Compliance Center exportiert, um Unterstützung für Überwachungs Überprüfungsanforderungen zu ermöglichen.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integration in Microsoft 365-Dienste
 
@@ -126,7 +126,7 @@ In diesem Schritt sehen Sie sich die Probleme genauer an, die als Übereinstimmu
 - **Warnungen**: Wenn eine Nachricht mit einer Aufsichtsrichtlinie übereinstimmt, wird automatisch eine Warnung generiert. Für jede Warnung können Sie den Status, den Schweregrad, die erkannte Zeit und den Status eines Falles und dessen Status anzeigen. Neue Warnungen werden auf der Startseite der Kommunikations Kompatibilität und auf der Seite **Benachrichtigungen** angezeigt und in der Reihenfolgeihres Schweregrads aufgeführt.
 - **Problemverwaltung**: für jede Warnung können Sie Ermittlungsaktionen durchführen, um das in der Nachricht erkannte Problem zu beheben.
 - **Dokumentüberprüfung**: während der Untersuchung eines Problems können Sie mehrere Ansichten der Nachricht verwenden, um das erkannte Problem ordnungsgemäß auszuwerten. Die Ansichten umfassen eine Zusammenfassung der Unterhaltung, nur-Text-, kommentierte und Detailansichten des Kommunikations Gesprächs.
-- Über **prüfen des Benutzer aktivitätsverlaufs**: Anzeigen des Verlaufs von Benutzer Nachrichten Aktivitäten und Korrekturaktionen, beispielsweise vergangene Benachrichtigungen und Eskalationen für Richtlinien Übereinstimmungen.
+- Über **prüfen des Benutzer aktivitätsverlaufs**: Anzeigen des Verlaufs von Benutzer Nachrichten Aktivitäten und Korrekturaktionen wie vergangene Benachrichtigungen und Eskalationen für Richtlinien Übereinstimmungen.
 - **Filter**: Verwenden Sie Filter wie Absender, Empfänger, Datum und Betreff, um schnell die Nachrichten Warnungen einzuschränken, die Sie überprüfen möchten.
 
 ### <a name="remediate"></a>Korrigieren

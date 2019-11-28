@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: bc702778fc135429067352cac824a31c0b60a406
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202166"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633634"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Anmerkungen zur Version für Compliance-Manager (Vorschau)
 
@@ -44,7 +44,7 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 
 ### <a name="compliance-score"></a>Kompatibilitätsbewertung
 
-- Bei Aktionselementen, die als " **nicht im Bereich**" gekennzeichnet sind, wird die dem Aktionselement zugewiesene Bewertung nicht aus der Berechnung der Konformitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** gekennzeichnet sind, verbessern nicht die Konformitätsbewertung.
+- Bei Aktionselementen, die als " **nicht im Bereich**" gekennzeichnet sind, wird das dem Aktionselement zugewiesene Ergebnis nicht aus der Berechnung der Konformitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** markiert sind, verbessern nicht Ihre Konformitätsbewertung.
 
 ### <a name="secure-score"></a>Sicherheitsbewertung
 
@@ -73,7 +73,7 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 ### <a name="templates"></a>Vorlagen
 
 - Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
-- Archivierte Vorlagen können bearbeitet werden, und Sie sollten nicht bearbeitbar sein.
+- Archivierte Vorlagen sind bearbeitbar und sollten nicht bearbeitbar sein.
 - Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 
 ### <a name="export"></a>Exportieren
@@ -93,4 +93,4 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
  
 ### <a name="language-support"></a>Sprachunterstützung
 
-- Alle Sprachen werden für alle Webseiten nicht unterstützt. Wenn Ihre lokale Sprache nicht unterstützt wird, zeigen Sie in US-Englisch an.
+- Alle Sprachen werden nicht für alle Webseiten unterstützt. Wenn Ihre lokale Sprache nicht unterstützt wird, zeigen Sie in US-Englisch an.

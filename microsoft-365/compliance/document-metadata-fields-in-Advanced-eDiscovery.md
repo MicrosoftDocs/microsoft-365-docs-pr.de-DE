@@ -14,16 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc198bd5aa042cad2aadbe35ae4f19f66effe2bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080729"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633584"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
 
-In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überprüfungsgruppe in einem Fall in Advanced eDiscovery aufgeführt. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Überprüfungs Satzes ausführt wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Überprüfungs Satzes angezeigt werden, und ob das Feld bei Dokumenten a enthalten ist. erneut exportiert.
+In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überprüfungsgruppe in einem Fall in Advanced eDiscovery aufgeführt. Die Tabelle enthält die folgenden Informationen:
+
+- Der Name des Metadatenfelds (in der Spalte **Feldname** ).
+
+- Der Name der Eigenschaft, nach der Sie suchen können, wenn Sie eine [Überprüfungs Sätze-Abfrage](review-set-search.md) (in der Spalte **durchsuchbaren Feldnamen** ) durchführen. Eine leere Zelle bedeutet, dass Sie nicht nach dem Feld in einer Abfrage mit Überprüfungs Sätzen suchen können.
+
+- Der Name des Metadatenfelds, das beim Exportieren von Dokumenten enthalten ist (in der Spalte **exported Field Name** ).  Eine leere Zelle bedeutet, dass das Feld Meta Data nicht in den exportierten Metadaten enthalten ist.
+
+- Der Name des Metadatenfelds, das beim Anzeigen der Datei Metadaten eines ausgewählten Dokuments in einer Überprüfungsgruppe angezeigt wird (in der Spalte **Anzeige Feldname** ). Eine leere Zelle bedeutet, dass das Feld Meta Data beim Anzeigen der Datei Metadaten eines Dokuments nicht enthalten ist.
+
+- Eine Beschreibung des Felds "Meta Data" (in der **Spalte "Description**").
 
 | Feldname | Durchsuchbarer Feldname | Name des exportierten Felds | Anzeigefeld Name | Beschreibung |
 | :- |  :- |  :- |  :- |  :- |
@@ -32,7 +42,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 | Anwalts Kunde-Berechtigungs Bewertung | AttorneyClientPrivilegeScore |  | Anwalts Kunde-Berechtigungs Bewertung | Inhalts Ergebnis des Anwalts-Client-Berechtigungsmodells. |
 | Ursprung | Ursprung | Doc_authors | Ursprung | Autor aus den Dokumentmetadaten. |
 | BCC | Bcc | Email_bcc | BCC | BCC-Feld für Nachrichtentypen.  Das Format **ist \<DisplayName SMTPAddress>**. |
-| CC | Cc | Email_cc | CC | Feld CC für für Nachrichtentypen.  Das Format **ist \<DisplayName SMTPAddress>**. |
+| CC | Cc | Email_cc | CC | Feld CC für Nachrichtentypen.  Das Format **ist \<DisplayName SMTPAddress>**. |
 | Konformitäts Bezeichnungen | ComplianceLabels | Compliance_labels | Konformitäts Bezeichnungen | In Office 365 angewendete Kompatibilitäts Bezeichnungen. |
 | Zusammengesetzter Pfad | CompoundPath | Compound_path | Zusammengesetzter Pfad | Mensch lesbarer Pfad, der die Quelle des Elements beschreibt. |
 | Inhalt | Inhalt |  |  | Extrahierter Text des Elements. |
@@ -72,10 +82,10 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 | ExtractedTextLength |  | Extracted_text_length |  | Anzahl der Zeichen im extrahierten Text. |
 | Familien Relevanz-Ergebnis Fall Problem 1 |  | Family_relevance_score_case_issue_1 |  | Familien Relevanz-Ergebnis Fall Ausgabe 1 aus Relevanz. |
 | FamilyDuplicateSet |  | Family_duplicate_set |  | Numerischer Bezeichner für Familien, die exakte Duplikate von einander (gleicher Inhalt und alle gleichen Anlagen) sind. |
-| Familien-ID | FamilyID | Family_ID | Familien-ID | Familien-ID-Gruppen alle Elemente zusammen; für e-Mail umfasst dies die Nachricht und alle Anlagen; bei Dokumenten umfasst dies das Dokument und alle eingebetteten Elemente. |
+| Familien-ID | FamilyID | Family_ID | Familien-ID | Familien-ID-Gruppen alle Elemente zusammen; für e-Mail umfasst dies die Nachricht und alle Anlagen; für Dokumente umfasst dies das Dokument und alle eingebetteten Elemente. |
 | Familiengröße |  | Family_size | Familiengröße | Die Anzahl der Dokumente in der Familie. |
 | Datei Relevanz-Ergebnis Fall Problem 1 |  | File_relevance_score_case_issue_1 |  | Datei Relevanz-Ergebnis Fall Problem 1 aus Relevanz. |
-| File-Klasse | Fileclass | File_class | File-Klasse | Für Inhalte aus SharePoint und OneDrive: **Document**; für Inhalte aus Exchange: **e-Mail**oder **Anhang**. |
+| File-Klasse | Fileclass | File_class | File-Klasse | Für Inhalte aus SharePoint und OneDrive: **Document**; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
 | Datei-ID | FileId | File_ID | Datei-ID | In der Anfrage eindeutige Dokument-ID.|
 | Erstelltes Dateisystem Datum |  | File_system_date_created | Erstelltes Dateisystem Datum | Erstellungsdatum aus dem Dateisystem (gilt nur für nicht Office 365 Daten). |
 | Dateisystem Datum geändert |  | File_system_date_modified | Dateisystem Datum geändert | Änderungsdatum aus dem Dateisystem (gilt nur für nicht Office 365 Daten). |
@@ -87,10 +97,10 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 | Inklusiv-Typ | Inklusivtype | Inclusive_type | Inklusiv-Typ | Integrativer Typ, berechnet für Analyse: **0** -nicht inklusive; **1** – inklusive; **2** – inklusive minus; **3** -inclusive-Kopie. |
 | In Antwort an ID |  | In_reply_to_ID | In Antwort an ID | In Antwort an ID aus der Nachricht. |
 | Ist repräsentativ | Isrepresentative | Is_representative | Ist repräsentativ | Ein Dokument in jeder Gruppe exakter Duplikate wird als repräsentativ gekennzeichnet. |
-| Elementklasse | ItemClass | Item_class | Elementklasse | Von Exchange Server bereitgestellte Item-Klasse; beispielsweise **IPM. Hinweis:** |
+| Elementklasse | ItemClass | Item_class | Elementklasse | Von Exchange Server bereitgestellte Item-Klasse; Beispiel: **IPM. Hinweis:** |
 | Datum der letzten Änderung | LastModifiedDate | Doc_date_modified | Datum der letzten Änderung | Datum der letzten Änderung aus Dokumentmetadaten. |
 | Laden-ID | Lade-Nr | Load_ID | Laden-ID | Laden-ID, in der das Element in einen Überprüfungs Satzes geladen wurde. |
-| Standort | Standort | Standort | Standort | Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen;<br />Importierte Daten nicht-O365-#a0<br />Teams – #a0 Teams<br />Exo-#a0 Exchange<br />SPO-#a0 SharePoint<br />OneDrive für Unternehmen-#a0 OneDrive |
+| Ort | Ort | Ort | Ort | Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen;<br />Importierte Daten nicht-O365-#a0<br />Teams – #a0 Teams<br />Exo-#a0 Exchange<br />SPO-#a0 SharePoint<br />OneDrive für Unternehmen-#a0 OneDrive |
 | Speicherort Name | LocationName | Location_name | Speicherort Name | Zeichenfolge, die die Quelle des Elements angibt.  Für Exchange ist dies die SMTP-Adresse des Postfachs.  Für SharePoint und OneDrive die URL der Websitesammlung. |
 | Als repräsentativ gekennzeichnet | MarkAsRepresentative |  | Als repräsentativ gekennzeichnet | Ein Dokument aus den einzelnen Sätzen exakter Duplikate wird als Repräsentanten markiert. |
 | Als Pre-Tagged-Case-Problem 1 markiert |  | Marked_as_pre_tagged_Case_issue_1 |  | Als vorab markiertes Fall Problem 1 von Relevanz gekennzeichnet. |
@@ -141,12 +151,12 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 | Gekennzeichnet durch Fall Ausgabe 1 |  | Tagged_by_Case_issue_1 |  | Benutzer, der dieses Dokument für Fall Issue 1 relevant markiert hat. |
 | Tags | Tags | Tags | Tags | In einem Überprüfungs Satzes angewendete Tags. |
 | Themenliste | Themeslist | Themes_list | Themenliste | Für Analyse berechnete Themenliste. |
-| Titel | Titel | Doc_title | Titel | Titel aus den Dokumentmetadaten. |
-| An | An | Email_to | An | Feld für für Nachrichtentypen.  Format ist **Display\<Name SmtpAddress>** |
+| Titel | Titel | Doc_title | Position | Titel aus den Dokumentmetadaten. |
+| An | An | Email_to | An | An-Feld für Nachrichtentypen.  Format ist **Display\<Name SmtpAddress>** |
 | Eindeutig in e-Mail-Gruppe | UniqueInEmailSet |  | Eindeutig in e-Mail-Gruppe | False, wenn in der e-Mail-Gruppe ein Duplikat der Anlage vorhanden ist. |
 | Wurde behoben | WasRemediated | Was_Remediated | Wurde behoben | True, wenn das Element behoben wurde, andernfalls false. |
 | Wörter zählen | WordCount | Word_count | Wörter zählen | Die Anzahl der Wörter im Element. |
 ||||||
 
   > [!NOTE]
-  > Weitere Informationen zu durchsuchbaren Feldern bei der direkten Suche mit Office 365 finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md) .
+  > Weitere Informationen zu durchsuchbaren Eigenschaften beim Durchsuchen Office 365 Inhaltsspeicher Ortes beim Erfassen von Daten für einen erweiterten eDiscovery-Fall finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).

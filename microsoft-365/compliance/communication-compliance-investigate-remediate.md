@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Untersuchen und Beheben von Benachrichtigungen zur Kommunikations Konformität in Microsoft 365.
-ms.openlocfilehash: 8aaf74ceafc737487bd97bb7c71b26fc139aacf0
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686037"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633684"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)
 
@@ -31,7 +31,7 @@ Nachdem Sie die Richtlinien für die Kommunikations Konformität konfiguriert ha
 
 Der erste Schritt zum Untersuchen von in ihren Richtlinien festgestellten Problemen besteht darin, generierte Warnungen im Microsoft 365 Compliance Center zu überprüfen. Im Compliance Center gibt es verschiedene Bereiche, die Ihnen helfen, Warnungen schnell zu untersuchen, je nachdem, wie Sie die Warnungs Gruppierung anzeigen möchten:
 
-- **Homepage**für die Kommunikation-Compliance: Wenn Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation anmelden **, wählen Sie** > **Übersicht** über die Kommunikations Kompatibilität aus, um die Startseite für die Kommunikations Kompatibilität anzuzeigen. Hier sehen Sie Folgendes:
+- **Homepage zur Kommunikation-Compliance**: Wenn Sie sich [https://compliance.microsoft.com](https://compliance.microsoft.com) bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation anmelden, wählen Sie****  > Übersicht über die Kommunikations Kompatibilität aus, um die Startseite für die Kommunikations Kompatibilität anzuzeigen. **** Hier sehen Sie Folgendes:
     - Warnungen, die eine Überprüfung benötigen, die von hoher bis niedriger Dringlichkeit aufgeführt ist. Wählen Sie eine Warnung aus, um die Seite mit den Warnungsdetails zu starten und Korrekturaktionen zu starten.
     - Aktuelle Richtlinien Übereinstimmungen werden nach Richtliniennamen aufgeführt.
     - Aufgelöste Elemente werden nach Richtliniennamen aufgelistet.

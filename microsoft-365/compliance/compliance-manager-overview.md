@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615615"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633654"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -51,7 +51,7 @@ Das Diagramm zeigt die Beziehungen zwischen den primären Komponenten von Compli
 
 ## <a name="assessments"></a>Bewertungen
 
-Bei [Assessments](working-with-compliance-manager.md#assessments) handelt es sich um Container, mit denen Sie Steuerelemente basierend auf Zuständigkeiten zwischen Microsoft und Ihrer Organisation für die Bewertung der Sicherheits-und Konformitätsrisiken von Cloud-Diensten organisieren können. Mithilfe von Assessments können Sie Datenschutzgarantien implementieren, die durch einen Compliance-Standard und entsprechende Datenschutzstandards, Verordnungen oder Gesetze festgelegt sind. Sie unterstützen Sie beim Erkennen Ihrer Datenschutz-und Compliance-Haltung gegenüber dem ausgewählten Industriestandard für den ausgewählten Microsoft Cloud-Dienst. Die Bewertungen werden durch die Implementierung von Steuerelementen vervollständigt, die in der Bewertung enthalten sind, die einem Zertifizierungsstandard zugeordnet ist.
+Bei [Assessments](working-with-compliance-manager.md#assessments) handelt es sich um Container, mit denen Sie Steuerelemente für Verantwortlichkeiten zwischen Microsoft und Ihrer Organisation für die Bewertung der Sicherheits-und Compliance-Risiken von Cloud-Diensten organisieren können. Mithilfe von Assessments können Sie Datenschutzgarantien implementieren, die durch einen Compliance-Standard und entsprechende Datenschutzstandards, Verordnungen oder Gesetze festgelegt sind. Sie unterstützen Sie beim Erkennen Ihrer Datenschutz-und Compliance-Haltung gegenüber dem ausgewählten Industriestandard für den ausgewählten Microsoft Cloud-Dienst. Die Bewertungen werden durch die Implementierung von Steuerelementen vervollständigt, die in der Bewertung enthalten sind, die einem Zertifizierungsstandard zugeordnet ist.
 
 Standardmäßig erstellt Compliance-Manager die folgenden Bewertungen für Ihre Organisation:
 
@@ -107,7 +107,7 @@ Ein freigegebenes Steuerelement bezieht sich auf ein beliebiges Steuerelement, b
 
 Personen in Ihrer Organisation können den Compliance-Manager verwenden, um die vom Kunden verwalteten Steuerelemente aus allen Bewertungen zu überprüfen, denen Sie zugewiesen sind. Wenn ein Benutzer sich beim Compliance-Manager anmeldet und das **Aktionselemente**-Dashboard öffnet, wird eine Liste der ihm zugewiesenen Aktionselemente angezeigt. Je nach der Compliance-Manager-Rolle, die dem Benutzer zugewiesen wurde, kann er Implementierungs- oder Testdetails bereitstellen, den Status hochladen oder Aktionselemente zuweisen.
 
-Zertifizierungs Steuerelemente werden in der Regel von einer Person implementiert und von einer anderen getestet. Wenn beispielsweise Aktionselemente, die anfänglich einer Person zugewiesen wurden, für die Implementierung abgeschlossen sind, werden der nächsten Person Aktionselemente zugewiesen, um Beweise zu testen und hochzuladen. Jeder Benutzer mit ausreichenden Berechtigungen für Steuerelement Zuweisungen kann Aktionselemente zuweisen und neu zuweisen. Dies ermöglicht eine zentrale Verwaltung von Steuerungs Zuweisungen und das dezentrale Routing von Aktionselementen zwischen Implementierern und Testern.
+Zertifizierungs Steuerelemente werden in der Regel von einer Person implementiert und von einer anderen getestet. Wenn beispielsweise Aktionselemente, die anfänglich einer Person zugewiesen wurden, für die Implementierung abgeschlossen sind, werden diese Aktionselemente der nächsten Person zugewiesen, um Beweise zu testen und hochzuladen. Jeder Benutzer mit ausreichenden Berechtigungen für Steuerelement Zuweisungen kann Aktionselemente zuweisen und neu zuweisen. Dies ermöglicht eine zentrale Verwaltung von Steuerungs Zuweisungen und das dezentrale Routing von Aktionselementen zwischen Implementierern und Testern.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -120,7 +120,7 @@ Der Portaladministrator für Compliance-Manager kann die Berechtigungen für and
 
 Darüber hinaus verfügen Benutzer, denen die [globale Leserrolle in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) zugewiesen ist, über eine schreibgeschützte Berechtigung für den Zugriff auf den Compliance-Manager. Sie können jedoch keine Daten bearbeiten oder Aktionen im Compliance-Manager durchführen.
 
-Beachten Sie, dass es keine Standardrolle **Gastzugriff** mehr gibt. Jedem Benutzer muss eine Rolle zugewiesen werden, damit er auf Compliance-Manager zugreifen und darin arbeiten kann.
+Es gibt keine standardmäßige **Gastzugriffs** Rolle mehr. Jedem Benutzer muss eine Rolle zugewiesen werden, damit er auf Compliance-Manager zugreifen und darin arbeiten kann.
   
 ## <a name="manage-evidence"></a>Verwalten von beweisen
 

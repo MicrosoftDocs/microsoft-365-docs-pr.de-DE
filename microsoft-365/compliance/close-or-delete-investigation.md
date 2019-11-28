@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4d74685aec0de4d26a7bd52c3cb53f475ca8490b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3a888458dce090091fbba020d1fa17ec6d56e0f5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081041"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633824"
 ---
 # <a name="close-or-delete-an-investigation"></a>Schließen oder Löschen einer Untersuchung
 
 ## <a name="close-an-investigation"></a>Schließen einer Untersuchung
 
- Nachdem Sie die Untersuchung abgeschlossen und entsprechende Abhilfemaßnahmen ergriffen haben, möchten Sie möglicherweise die gesammelten Beweise aufbewahren, aber die Anfrage schließen, damit Sie in Zukunft problemlos nachverfolgen können. Nachdem Sie die Untersuchung beendet haben, wird Sie weiterhin auf der Seite Daten Untersuchungen im Security #a0 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten. Zu einem späteren Zeitpunkt können Sie abgeschlossene Untersuchungen erneut öffnen.
+ Nachdem Sie die Untersuchung abgeschlossen und entsprechende Abhilfemaßnahmen ergriffen haben, möchten Sie möglicherweise die gesammelten Beweise beibehalten, aber den Fall schließen, damit Sie in Zukunft problemlos darauf zurückgreifen können. Nachdem Sie die Untersuchung beendet haben, wird Sie weiterhin auf der Seite Daten Untersuchungen im Security #a0 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten. Zu einem späteren Zeitpunkt können Sie abgeschlossene Untersuchungen erneut öffnen.
 
 So schließen Sie eine Untersuchung:
 
-1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
+1. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Ermittlungsinformationen**aus.
 
-2. Klicken Sie auf **Untersuchung schließen**. 
+2. Wählen Sie **Close Investigation**aus. 
 
 
 ## <a name="delete-an-investigation"></a>Löschen einer Untersuchung
@@ -40,6 +40,6 @@ Manchmal möchten Sie die Beweise möglicherweise löschen, da Sie vertrauliche 
 
 So löschen Sie eine Untersuchung:
 
-1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
+1. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Ermittlungsinformationen**aus.
 
-2. Klicken Sie auf **Untersuchung löschen**. 
+2. Wählen Sie **Untersuchung löschen**aus. 

@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Überprüfen Sie Ihre Stichwortabfrage auf die Inhaltssuche nach Fehlern und Tippfehlern, wie nicht unterstützten Zeichen und booleschen Kleinbuchstaben Operatoren, bevor Sie die Suche ausführen. Wenn ein Fehler vorliegt, schlagen wir eine überarbeitete Abfrage vor.
-ms.openlocfilehash: 9f9f59c4466102d678bc3a599aa208869bbd9d64
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1d2c9a9f3e2204fa65fe29c9adaffe818d2f7a4c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081045"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633992"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Überprüfen der Inhaltssuchabfrage auf Fehler
 
-Wenn Sie eine Inhaltssuche erstellen oder bearbeiten, können Sie Office 365 Ihre Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren überprüfen, die möglicherweise nicht groß geschrieben werden. Wie? Klicken Sie auf der Seite Abfrage einer Inhaltssuche einfach auf **Abfrage für Tippfehler überprüfen** . 
+Wenn Sie eine Inhaltssuche erstellen oder bearbeiten, können Sie Office 365 Ihre Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren mit Kleinbuchstaben überprüfen lassen. Wie? Klicken Sie auf der Seite Abfrage einer Inhaltssuche einfach auf **Abfrage für Tippfehler überprüfen** . 
   
 ![Klicken Sie auf "Abfrage für Tippfehler überprüfen", um Ihre Suchabfrage auf nicht unterstützte Zeichen zu überprüfen.](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
@@ -30,7 +30,7 @@ Im folgenden finden Sie eine Liste der nicht unterstützten Zeichen, die wir üb
     
 - Nicht **druckbare und Steuerzeichen** -nicht druckbare und Steuerzeichen stellen kein schriftliches Symbol dar, beispielsweise ein alphanumerisches Zeichen. Beispiele für nicht druckbare Zeichen und Steuerzeichen sind Zeichen, die Text formatieren oder Textzeilen trennen. 
     
-- **Links-nach-rechts-und rechts-nach-links-Markierungen** -hierbei handelt es sich um Steuerzeichen, die zum Anzeigen der Textrichtung für Links-nach-rechts-Sprachen (wie Englisch und Spanisch) und Sprachen mit Schreibrichtung von rechts nach Links verwendet werden (beispielsweise Arabisch und Hebräisch).
+- **Links-nach-rechts-und rechts-nach-links-Markierungen** -diese Zeichen sind Steuerzeichen, die zum Anzeigen der Textrichtung für Links-nach-rechts-Sprachen (wie Englisch und Spanisch) und Sprachen mit Schreibrichtung von rechts nach Links verwendet werden (beispielsweise Arabisch und Hebräisch).
     
 - **Kleinbuchstaben-boolesche Operatoren** – Wenn Sie einen booleschen Operator wie **and**, **or**und **Not** in einer Suchabfrage verwenden, muss er in Großbuchstaben eingegeben werden. Wenn eine Abfrage auf Tippfehler überprüft wird, gibt die Abfragesyntax häufig an, dass ein boolescher Operator verwendet wird, obwohl klein-Operatoren verwendet werden können; andernfalls false. Beispiel: `(WordA or WordB) and (WordC or WordD)`.
     
@@ -42,4 +42,4 @@ Wenn in Ihrer Abfrage nicht unterstützte Zeichen gefunden werden, wird eine War
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Vorgehensweise verhindern, dass nicht unterstützte Zeichen in Ihren Suchabfragen
 
-Nicht unterstützte Zeichen werden normalerweise einer Abfrage hinzugefügt, wenn Sie die Abfrage oder Teile der Abfrage aus anderen Anwendungen (wie Microsoft Word oder Microsoft Excel) kopieren und in das Feld Schlüsselwort auf der Seite Abfrage einer Inhaltssuche kopieren. Die beste Möglichkeit zur Verhinderung nicht unterstützter Zeichen besteht darin, die Abfrage direkt in das Schlüsselwortfeld einzugeben. Alternativ können Sie eine Abfrage aus Word oder Excel kopieren und in einem Nur-Text-Editor, z. B. Microsoft Editor, in eine Datei einfügen. Speichern Sie dann die Textdatei, und wählen Sie **ANSI** in der Dropdownliste **Codierung** aus. Dadurch werden alle Formatierungen und nicht unterstützten Zeichen entfernt. Anschließend können Sie die Abfrage aus der Textdatei kopieren und im Schlüsselwort-Abfragefeld einfügen. 
+Nicht unterstützte Zeichen werden normalerweise einer Abfrage hinzugefügt, wenn Sie die Abfrage oder Teile der Abfrage aus anderen Anwendungen (wie Microsoft Word oder Microsoft Excel) kopieren und in das Feld Schlüsselwort auf der Seite Abfrage einer Inhaltssuche einfügen. Die beste Möglichkeit zur Verhinderung nicht unterstützter Zeichen besteht darin, die Abfrage direkt in das Schlüsselwortfeld einzugeben. Sie können auch eine Abfrage aus Word oder Excel kopieren und dann in einem nur-Text-Editor wie Microsoft Notepad einfügen. Speichern Sie die Textdatei, und wählen Sie in der Dropdownliste **Codierung** den Wert **ANSI** aus. Dadurch werden alle Formatierungen und nicht unterstützten Zeichen entfernt. Anschließend können Sie die Abfrage aus der Textdatei kopieren und im Schlüsselwort-Abfragefeld einfügen. 
