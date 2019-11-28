@@ -1,20 +1,20 @@
 ---
-title: Einblicke in die Nutzung
+title: Benutzungseinblicke
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256862"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634022"
 ---
-# <a name="usage-insights"></a>Einblicke in die Nutzung
-In dieser Ansicht werden Verwendungs Metriken für Ihre von Microsoft verwalteten Desktop Geräte bereitgestellt. 
+# <a name="usage-insights"></a>Benutzungseinblicke
+In dieser Ansicht werden Verwendungs Metriken für Ihre von Microsoft verwalteten Desktop Geräte bereitgestellt. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte **Nutzung** aus.
 

@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab.
-ms.openlocfilehash: dd702e88dc2400367330d9cb1b54b5b0017334e4
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 8496887f135e5a2c6496f969d420ae6eaa8f4908
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191230"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631585"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
@@ -42,7 +42,7 @@ Zulassungslisten, [Nachrichtenfluss Regeln](https://go.microsoft.com/fwlink/p/?L
 
 ### <a name="malware-zap"></a>Malware zap
 
-Für neu erkannte Schadsoftware entfernt zap Anlagen aus e-Mail-Nachrichten, sodass der Nachrichtentext im Postfach des Benutzers bleibt. Anlagen werden unabhängig vom Lesestatus der e-Mail entfernt.
+Für neu erkannte Schadsoftware verschiebt zap die gesamte Nachricht, einschließlich der Anlage, in die Quarantäne für Schadsoftware. Nachrichten werden unabhängig vom Lesestatus der e-Mail verschoben. Wenn wir ein Schadsoftware-Signal für eine Nachricht im Prozess der dynamischen Übermittlungs Überprüfung erhalten, wird zap in der Nachricht zu einer Junk-Aktion übergehen. Anschließend wird die dynamische Zustellung so abgeschlossen, dass die Zeit der Übermittlung überprüft wird, und Sie können die entsprechende Aktion durchführen.
 
 Malware zap ist in der Schadsoftware-Richtlinie standardmäßig aktiviert. Sie können Malware zap mithilfe des Parameters *ZapEnabled* im Cmdlet " [MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) " in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren. Malware zap kann auch durch Bearbeiten der Schadsoftware-Richtlinie im Security and Compliance Center aktiviert oder deaktiviert werden.
 
@@ -58,7 +58,7 @@ Bei e-Mail-Nachrichten, die nach der Zustellung als Spam identifiziert werden, e
 
 Spam zap ist in der Spam Richtlinie standardmäßig aktiviert. Sie können Spam zap mithilfe des *SpamZapEnabled* -Parameters von [sethostedcontentfilterpolicy dient zum-](https://go.microsoft.com/fwlink/p/?LinkId=722758) Cmdlet in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren.
 
-###<a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Phishing-und Spam zap-Anforderungen, Ausschlüsse und Benachrichtigungen
+### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Phishing-und Spam zap-Anforderungen, Ausschlüsse und Benachrichtigungen
 
 > [!IMPORTANT]
 > der vorherige *ZapEnabled* -Cmdlet-Parameter, der sowohl Phishing als auch Spam zap gesteuert **hat, wird am 1. Februar 2020 veraltet**. Wenn Sie Skripts geschrieben haben, die den ZapEnabled-Parameter verwenden, wird empfohlen, diese für die Verwendung von SpamZapEnabled und PhishZapEnabled zu aktualisieren. In der Übergangsphase werden alle drei Parameter (ZapEnabled, PhishZapEnabled und SpamZapEnabled) über das Cmdlet zur Verfügung gestellt. Bis zur expliziten Festlegung über UI oder PowerShell wird PhishZapEnabled und SpamZapEnabled einen geerbten Wert aus dem ZapEnabled-Parameter anzeigen. Nachdem die neuen Parameter festgelegt wurden, werden Sie nicht mehr vom ZapEnabled-Parameter geerbt. Nachdem die Einstellung veraltet ist, hat ZapEnabled keine Auswirkung auf die Eigenschaften PhishZapEnabled oder SpamZapEnabled, und ZapEnabled wird aus der Liste der Parameter in Cmdlets entfernt.

@@ -1,19 +1,19 @@
 ---
-title: Zuverlässigkeits Einblicke
+title: Zuverlässigkeitseinblicke
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f830e01d54aef9065727971533633f8e63bc1214
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257033"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634032"
 ---
-# <a name="reliability-insights"></a>Zuverlässigkeits Einblicke
+# <a name="reliability-insights"></a>Zuverlässigkeitseinblicke
 
 In dieser Ansicht erhalten Sie eine Zusammenfassung der Integrität Ihrer verwalteten Geräte. Um Zuverlässigkeitsdaten anzuzeigen, wählen Sie die Registerkarte **Zuverlässigkeit** aus.
 
@@ -35,5 +35,12 @@ Im Abschnitt **häufigsten Probleme** werden bestimmte erkannte Probleme erläut
 - Der Prozentsatz der verwalteten Geräte, die die Zahl darstellt
 - Die Gesamtanzahl der Vorkommen des jeweiligen Problems.
 - Die Softwarekomponente, die als Ursache des Problems angezeigt wird
+- Die Kategorie des erkannten Problems:
+    - Browser (Edge, Chrome, IE)
+    - Unbekannt (nicht-Microsoft-Komponenten)
+    - Treiber (Audio, Grafik oder andere Treiber)
+    - Produktivität (slack, G-Suites, Microsoft Office und seine Add-ons oder Erweiterungen, Teams)
+    - Medien (Bild-, Musik-oder Video-apps
+    - Sicherheit (Windows-Sicherheitskomponenten)
 - Der aktuelle Status als von Microsoft verwaltete Desktop Vorgänge untersucht und korrigiert das Problem
 

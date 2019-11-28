@@ -8,16 +8,43 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369626"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634062"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 
 In diesem Thema werden neue und aktualisierte Themen in der [Dokumentation zu Microsoft Managed Desktop](index.yml)aufgelistet. "Aktualisierte" Themen sind solche, die Material Ergänzungen oder Korrekturen vorgenommen haben – kleinere Korrekturen wie die Korrektur von Tippfehlern, Formatvorlagen oder Formatierungsproblemen werden nicht aufgeführt. Sie können den Verlauf bestimmter Commits (einschließlich der Details aller Änderungen) jederzeit anzeigen, indem Sie das [Repo auf GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)besuchen.
+
+## <a name="november-2019"></a>November 2019
+Neues oder geändertes Thema | Beschreibung
+--- | ---
+[Arbeiten mit Einblicken](working-with-managed-desktop/insights.md) | Neues Thema
+[Benutzungseinblicke](working-with-managed-desktop/usage-insights.md) | Neues Thema
+[Zuverlässigkeitseinblicke](working-with-managed-desktop/reliability-insights.md) | Neues Thema
+[Microsoft Managed Desktop-Geräte](service-description/device-list.md) | Aktualisiertes Thema
+[Microsoft Managed Desktop-Hauptseite](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Aktualisiertes Thema
+[Was ist Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Aktualisiertes Thema
+[Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started/get-started-devices.md) | Aktualisiertes Thema
+[Dienstplanausnahmen](service-description/customizing.md) | Aktualisiertes Thema
+
+
+## <a name="october-2019"></a>Oktober 2019
+Neues oder geändertes Thema | Beschreibung
+--- | ---
+[Dienstplanausnahmen](service-description/customizing.md) | Neues Thema
+[Aufrufen von Hilfe für Endbenutzer](working-with-managed-desktop/end-user-support.md) | Aktualisiertes Thema
+[Administrator Unterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisiertes Thema
+[Dienständerungen und Kommunikation](service-description/servicechanges.md) | Neues Thema
+[Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisiertes Thema
+[Selbstregistrieren vorhandener Geräte](get-started/register-reused-devices-self.md) | Aktualisiertes Thema
+[Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisiertes Thema
+
+
+
 
 ## <a name="september-2019"></a>September 2019
 Neues oder geändertes Thema | Beschreibung
