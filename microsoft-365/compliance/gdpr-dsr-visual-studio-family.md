@@ -1,7 +1,7 @@
 ---
-title: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO
-description: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO
-keywords: Visual Studio, Visual Studio Code, Visual Studio für Mac, Visual Studio-Dokumentation, Datenschutz, DSGVO
+title: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
+description: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
+keywords: Visual Studio, Visual Studio Code, Visual Studio für Mac, Visual Studio-Dokumentation, Datenschutz, DSGVO, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
@@ -10,23 +10,29 @@ ms.date: 05/24/2018
 author: PoulChapman
 ms.author: olholder
 manager: pchapman
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 96cb6820e24a378351c82264929c3aec99e6d4f6
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431546"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624798"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
-Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (die in den Bestimmungen als _betroffene Personen_ bezeichnet werden) das Recht zum Verwalten ihrer personenbezogenen Daten. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten. Hierzu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format. Eine formale Anfrage von einer betroffenen Person an einen Datenverantwortlichen (einen Arbeitgeber oder eine Organisation, die Kontrolle über personenbezogene Daten hat) im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als _Antrag einer betroffenen Person_ bezeichnet. Allgemeine Informationen zur DSGVO finden Sie im [DSGVO-Abschnitt im Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (die in den Bestimmungen als _betroffene Personen_ bezeichnet werden) das Recht zum Verwalten ihrer personenbezogenen Daten. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten. Hierzu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format. Eine formale Anfrage von einer betroffenen Person an einen Datenverantwortlichen (einen Arbeitgeber oder eine Organisation, die Kontrolle über personenbezogene Daten hat) im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als _Antrag einer betroffenen Person_ bezeichnet.
+
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
+
+Allgemeine Informationen zur DSGVO finden Sie im [DSGVO-Bereich des Service Trust-Portals](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## <a name="products-covered-by-this-guide"></a>In diesem Leitfaden behandelte Produkte
 
-In diesem Leitfaden wird beschrieben, wie Sie Microsoft-Tools nutzen, um personenbezogene Daten, die während authentifizierten (angemeldeten) Sitzungen von Visual Studio und Visual Studio für Mac sowie während der Verwendung der zugehörigen Microsoft-Erweiterungen und Erweiterungen für Visual Studio Code erfasst werden, zu exportieren oder zu löschen. Darüber hinaus wird in diesem Leitfaden beschrieben, wie Sie Anträge betroffener Personen bezüglich personenbezogenen Daten ausführen, wenn Sie die Visual Studio Developer Community, NuGet.org und die ASP.NET-Website verwenden. Diese Produkte ermöglichen Ihnen ggf. die Nutzung von Tools und Erweiterungen, die nicht von Microsoft stammen und für die Microsoft nicht als Datenauftragsverarbeiter oder Verantwortlicher fungiert. Benutzer sollten sich an den Anbieter des Tools bzw. der Erweiterung wenden, um sich mit den Richtlinien zu den personenbezogenen Daten und zur Erfassung für diese Tools und Erweiterungen vertraut zu machen.
+Dieser Leitfaden erläutert, wie Microsoft-Tools zum Exportieren oder Löschen von personenbezogenen Daten, die während einer authentifizierten (angemeldeten) Sitzung unter Verwendung von Visual Studio und Visual Studio für Mac erfasst wurden, und der dazugehörigen Erweiterungen sowie des Visual Studio Codes verwendet werden können. In diesem Leitfaden wird auch erläutert, wie Sie Anträge von betroffenen Personen auf persönliche Daten durchführen können, die bei der Verwendung von Visual Studio Developer Community, NuGet.org und der ASP.NET-Website erfasst wurden. Diese Produkte ermöglichen eventuell die Verwendung von Tools und Erweiterungen, die nicht von Microsoft stammen, und Microsoft ist kein Datenverarbeiter oder Controller für diese Tools und Erweiterungen. Benutzer sollten sich an den Anbieter der Tools oder Erweiterungen wenden, um weitere Informationen zu den Datenschutzrichtlinien für diese Tools und Erweiterungen zu erhalten.
 
 ## <a name="additional-privacy-information"></a>Zusätzliche Datenschutzinformationen
 
@@ -73,7 +79,7 @@ Benutzer können die Datenschutzeinstellungen für diese Produkte kontrollieren.
 Verantwortlichen stehen zwei Methoden zur Verfügung, Kundendaten und vom System generierte Protokolle, die zu ihren betroffenen Personen erfasst werden, zu verwalten. Dies richtet sich danach, wie die Visual Studio-Produktfamilie oder die Microsoft-Erweiterungen registriert wurden. In einigen Fällen müssen beide Methoden verwendet werden. Beide Methoden ermöglichen es Verantwortlichen, eine Kopie ihres Aktivitätsverlaufs herunterzuladen, der mit dieser Methode verwaltet wird. Beim Schließen eines AAD- oder MSA-Kontos werden die zugeordneten Visual Studio-Kundendaten gelöscht, und die personenbezogenen Daten in vom System generierten Protokollen, die zu diesen Produkten gehören, werden anonymisiert. Anonymisierte vom System generierte Protokolle werden maximal 18 Monate lang aufbewahrt.
 
 - Benutzer, die ein Produkt der Visual Studio-Familie über ein Konto registriert haben, das auf einem Azure-Mandanten basiert (z. B. ein AAD- oder MSA-Konto, das einem Azure-Abonnement zugeordnet ist), können die Anweisungen unter [Anträge betroffener Personen für Azure im Rahmen der DSGVO](gdpr-dsr-azure.md) befolgen.
-- Benutzer, die ein Produkt der Visual Studio-Familie registriert haben, aber nicht über ein Konto, das auf einem Azure-Mandanten basiert (oftmals sind dies Konten, die ein Microsoft-Konto (MSA) verwenden), können das [webbasierte Microsoft Privacy Response Center](https://aka.ms/userprivacysite) nutzen. Es kann über das Microsoft-Konto aufgerufen werden und ermöglicht das Anzeigen, Kontrollieren und Löschen von Aktivitätsdaten, die mit dem Microsoft-Konto verknüpft sind, in einer Reihe von Microsoft-Diensten. In diesem Szenario ist der Benutzer der Verantwortliche für seine eigenen personenbezogenen Daten.
+- Benutzer, die ein Produkt der Visual Studio-Familie registriert haben, aber nicht über ein Konto verfügen, das auf einem Azure-Mandanten basiert (oftmals sind dies Konten, die ein Microsoft-Konto (MSA) verwenden), können das [webbasierte Microsoft Privacy Response Center](https://aka.ms/userprivacysite) nutzen. Es kann über das Microsoft-Konto aufgerufen werden und ermöglicht das Anzeigen, Kontrollieren und Löschen von Aktivitätsdaten, die mit dem Microsoft-Konto verknüpft sind, in einer Reihe von Microsoft-Diensten. In diesem Szenario ist der Benutzer der Verantwortliche für seine eigenen personenbezogenen Daten.
 
 > [!NOTE]
 > Wenn ein MSA-Kontoinhaber sein Konto löscht, werden alle personenbezogenen Daten gelöscht, die zu diesen Produkten gehören – unabhängig davon, ob das Konto auf einem Azure-Mandanten basiert. Die vom System generierten Protokolle werden anonymisiert.
@@ -148,7 +154,7 @@ Beim Löschvorgang werden die folgenden Informationen zu Ihrer Person aus der [D
 
 Führen Sie diese Schritte aus, um den Löschvorgang zu initiieren:
 
-1. Melden Sie sich an der [Developer Community](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profile and Preferences** aus.
+1. Melden Sie sich bei der [Developer Community](https://developercommunity.visualstudio.com) an. Klicken Sie oben rechts auf Ihr Profil, und wählen Sie **Profile and Preferences** aus.
 2. Klicken Sie auf die Registerkarte **Privacy** und dann auf **Delete your data and account**, um den Löschvorgang für Ihre Daten zu starten.
 3. Ein Bestätigungsbildschirm wird angezeigt.
 4. Geben Sie im Feld „delete“ ein, und klicken Sie anschließend auf **Delete my account**.
@@ -162,11 +168,11 @@ Nachdem Sie auf **Delete my account** geklickt haben, passiert Folgendes:
 - Wenn Sie ein neues Problem melden oder sich bei der [Developer Community](https://developercommunity.visualstudio.com) anmelden, werden Sie als neuer Benutzer behandelt.
 - Wenn Sie Ihr Konto in der [Developer Community](https://developercommunity.visualstudio.com) löschen, wird es nicht aus anderen Microsoft-Diensten gelöscht.
 
-## <a name="xamarin-forums-and-bugzilla"></a>Xamarin Forums und Bugzilla
+## <a name="xamarin-forums"></a>Xamarin Forums
 
 ### <a name="personal-data-we-collect"></a>Von uns erfasste personenbezogene Daten
 
-Über die Benutzercommunity [Xamarin Forrums](https://forums.xamarin.com) und die [Xamarin Bugzilla](https://bugzilla.xamarin.com/)-Website zur Meldung von Fehlern sammelt Microsoft von Ihnen angegebene Daten, damit wir Probleme reproduzieren und behandeln können, die bei Microsoft-Produkten und -Diensten unter Umständen auftreten. Zu diesen Daten gehören auch personenbezogene Daten und öffentliches Feedback. Bei den gesammelten personenbezogenen Daten handelt es sich um Benutzerkontodaten (z. B. Benutzernamen und E-Mail-Adressen Ihrer Konten für Xamarin Forums oder Bugzilla), und das erfasste öffentliche Feedback enthält Fehler, Probleme, Kommentare und Lösungen, die Sie über Xamarin Forums oder die Xamarin Bugzilla-Website zur Meldung von Fehlern bereitstellen.
+Über die [Xamarin Forums](https://forums.xamarin.com/)-Benutzercommunity sammelt Microsoft die von Ihnen bereitgestellten Daten, um uns bei der Reproduktion und Behandlung von Problemen zu unterstützen, die Sie mit Microsoft-Produkten und -Diensten haben. Diese Daten umfassen persönliche Daten und öffentliches Feedback. Die personenbezogenen Daten, die wir erfassen, sind Benutzerkontodaten (z. B. Benutzernamen und E-Mail-Adressen, die mit Xamarin Forums verknüpft sind), und das von uns gesammelte öffentliche Feedback umfasst Bugs, Probleme, Kommentare und Lösungen, die Sie über Xamarin Forums bereitstellen.
 
 ### <a name="how-you-can-control-your-data"></a>Vorgehensweise bei der Kontrolle Ihrer Daten
 
@@ -184,19 +190,8 @@ Xamarin Forums wird von einem Drittanbieter, Vanilla Forums, gehostet. Zum Anfor
 
 Xamarin Forums wird von einem Drittanbieter, Vanilla Forums, gehostet. Zum Anfordern der Löschung ihrer personenbezogenen und öffentlichen Daten sollten sich Benutzer an „forums@xamarin.com“ (vom Xamarin-Team überwacht) wenden. Wir nehmen dann manuell die angeforderte Löschung der personenbezogenen Daten des Benutzers vor.
 
-#### <a name="bugzilla-for-xamarin"></a>Bugzilla für Xamarin
-
-##### <a name="view"></a>Anzeige
-
-Benutzer mit aktiven Xamarin Bugzilla-Konten können alle gemeldeten Fehler und alle Kommentare anzeigen, die sie Fehlern hinzugefügt haben, indem sie auf der Xamarin Bugzilla-Startseite auf die entsprechenden Links klicken.
-
-##### <a name="export"></a>Export
-
-Der Export von personenbezogenen Daten wird nicht unterstützt.
-
-##### <a name="delete"></a>Löschung
-
-Zum Anfordern der Löschung von personenbezogenen Daten, die in Verbindung mit der Xamarin Bugzilla-Website zum Melden von Fehlern verwendet werden, können Benutzer ihr Xamarin Bugzilla-Konto schließen, indem sie auf der [Seite mit den Benutzereinstellungen](https://bugzilla.xamarin.com/userprefs.cgi) auf die Registerkarte **Close Account** klicken. Geben Sie Ihr Bugzilla-Kennwort ein, und aktivieren Sie das Kontrollkästchen, um das endgültige Löschen Ihres Kontos zu bestätigen. Öffentliches Feedback (z. B. Fehler, Probleme, Kommentare und Lösungen), das von Benutzern in Xamarin Bugzilla gepostet wurde, wird nach Erhalt einer Löschanforderung nicht gelöscht. Stattdessen wird das öffentliche Feedback anonymisiert, indem aus dem gesamten öffentlichen Feedback des Benutzers, der die Löschanforderung stellt, der Name und die E-Mail-Adresse entfernt werden.
+> [!NOTE]
+> Bugzilla für Xamarin nimmt keine neue Probleme mehr an. Ehemalige Xamarin-Bugzilla-Kontoinhaber können sich ein Archiv aller von Ihnen gemeldeten Bugs und Kommentare, die sie zu Bugs hinzugefügt haben, unter [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/) ansehen. Wenn Benutzer die Löschung der im Archiv enthaltenen persönlichen Daten anfordern möchten, können sie unter [https://github.com/xamarin/bugzilla-archives/issues/new/choose](https://github.com/xamarin/bugzilla-archives/issues/new/choose) ein Problem melden. Öffentliches Feedback (beispielsweise Bugs, Probleme, Kommentare und Lösungen), das Benutzer bei Xamarin Bugzilla gepostet haben, wird nach Erhalt einer Löschanforderung nicht gelöscht. Öffentliche Feedback wird stattdessen anonymisiert. Dazu werden aus dem öffentlichem Feedback, das der Benutzer erstellt hat, der die Löschanforderung sendet, die damit verknüpften Namen und E-Mail-Adressen entfernt.
 
 ## <a name="nuget"></a>NuGet
 
@@ -215,16 +210,6 @@ Informationen zu Anträgen betroffener Personen für die IIS.NET-Website finden 
 ### <a name="surveymonkey"></a>SurveyMonkey
 
 Von Zeit zu Zeit bitten wir Kunden um Feedback zu diesen Produkten per SurveyMonkey. Diese Daten werden innerhalb von 28 Tagen gelöscht. Falls bei der Bearbeitung von Anträgen betroffener Personen für diese Produkte authentifizierte Antworten auf Umfragen vorliegen, fügen wir diese in den Export- und Löschvorgang ein.
-
-### <a name="uservoice"></a>UserVoice
-
-Wir bitten unsere Kunden, auf den UserVoice.com-Websites Vorschläge zu diesen Produkten anzugeben. Die Websites werden separat von UserVoice betrieben, und die Anträge betroffener Personen werden von UserVoice verwaltet.
-
-- [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
-- [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
-- [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
-
-Informationen zu Anträgen betroffener Personen für diese Daten finden Sie in der UserVoice-Anleitung zum [Exportieren von Daten](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) bzw. zum [Löschen von Daten](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## <a name="learn-more"></a>Weitere Informationen
 
