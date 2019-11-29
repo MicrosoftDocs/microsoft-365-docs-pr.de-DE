@@ -8,20 +8,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Erfahren Sie, wie Sie mit DSGVO-Anforderungen in lokalen SharePoint Servern umgehen.
-ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080689"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39625386"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>DSGVO für SharePoint Server
 
-Im Rahmen des Schutzes personenbezogener Daten empfehlen wir Folgendes:
+Gilt für:
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
+
+Im Rahmen des Schutzes persönlicher Informationen empfehlen wir Folgendes:
 
 -   Klassifizieren Ihrer Daten mithilfe von Azure Information Protection.
 
--   SharePoint Server in einer Konfiguration mit der geringsten Konfiguration ausführen. Siehe [Planen der geringsten Berechtigungen in SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) und [Security für SharePoint Server](https://docs.microsoft.com/de-DE/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server) für weitere Informationen.
+-   SharePoint Server in einer Konfiguration mit der geringsten Konfiguration ausführen. Siehe [Planen der geringsten Berechtigungen in SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) und [Security für SharePoint Server](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server) für weitere Informationen.
 
 -   [Aktivieren Sie die BitLocker-Verschlüsselung auf den Servern](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -35,7 +40,7 @@ Der empfohlene grundlegende Ansatz für die von Benutzern erstellten Inhalte auf
 
 Die empfohlene Vorgehensweise für  Dateifreigaben, Websites und Bibliotheken von SharePoint und umfasst die folgenden Schritte:
 
-1.  **[Installieren und konfigurieren Sie den Azure Information Protection-Scanner.](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Installieren und konfigurieren Sie den Azure Information Protection-Scanner.](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Entscheiden Sie, welche vertraulichen Datentypen Sie verwenden möchten.
 
@@ -65,7 +70,7 @@ Die empfohlene Vorgehensweise für  Dateifreigaben, Websites und Bibliotheken vo
 
 Verwenden Sie zur Beschriftung vertraulicher Daten nur Beschriftungen ohne Schutz. Ein Schutz schließt eine Verschlüsselung ein, die verhindert, dass vertrauliche Daten von Diensten in den Dateien gefunden werden können.
 
-Weitere Informationen über die Verwendung des Azure Information Protection-Scanners zum Suchen und Beschriften von personenbezogenen Daten finden Sie im [Microsoft GDPR Data Discovery Toolkit](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners)).
+Weitere Informationen über die Verwendung des Azure Information Protection-Scanners zum Suchen und Beschriften von personenbezogenen Daten finden Sie im [Microsoft GDPR Data Discovery Toolkit](https://aka.ms/gdprpartners) (https://aka.ms/gdprpartners)).
 
 Informationen über die Konfiguration des Scanners für Bedingungen und die Verwendung der vertraulichen Datentypen für die Verhinderung von Datenverlust in Office 365 finden Sie unter [So konfigurieren Sie Bedingungen für die automatische und empfohlene Klassifizierung von Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Beachten Sie, dass neue vertrauliche Datentypen in Office 365 nicht sofort für die Verwendung mit dem Scanner zur Verfügung stehen und dass benutzerdefinierte vertrauliche Datentypen nicht mit dem Scanner verwendet werden können.
 
@@ -85,7 +90,7 @@ Das Entfernen von personenbezogenen Daten (z. B. Metadaten oder Kommentare in ei
 
 ### <a name="uls-logs"></a>ULS-Protokolle
 
-Unified Logging Service (ULS) und die Verwendungsprotokollierung in SharePoint Server zeichnen verschiedene Systemfunktionen auf und sammeln somit möglicherweise auch Benutzerinformationen. ULS-Protokolle und Verwendungsprotokolle sind Textdateien und können mit einer Vielzahl von Suchwerkzeugen durchsucht werden. Mit dem [PowerShell-Cmdlet Merge-SPLogFile](https://docs.microsoft.com/de-DE/powershell/module/sharepoint-server/merge-splogfile) können Datensätze aus den ULS-Protokollen auf mehreren Servern einer Farm ausfindig gemacht werden.
+Unified Logging Service (ULS) und die Verwendungsprotokollierung in SharePoint Server zeichnen verschiedene Systemfunktionen auf und sammeln somit möglicherweise auch Benutzerinformationen. ULS-Protokolle und Verwendungsprotokolle sind Textdateien und können mit einer Vielzahl von Suchwerkzeugen durchsucht werden. Mit dem [PowerShell-Cmdlet Merge-SPLogFile](https://docs.microsoft.com/powershell/module/sharepoint-server/merge-splogfile) können Datensätze aus den ULS-Protokollen auf mehreren Servern einer Farm ausfindig gemacht werden.
 
 Ziehen Sie es in Erwägung, die Aufbewahrungsrichtlinien für Protokolle auf das für Ihr Unternehmen erforderliche Mindestmaß zu beschränken. Informationen zum Konfigurieren der Protokollierung in SharePoint Server finden Sie unter [Konfigurieren der Diagnoseprotokollierung in SharePoint Server](https://docs.microsoft.com/SharePoint/administration/configure-diagnostic-logging).
 

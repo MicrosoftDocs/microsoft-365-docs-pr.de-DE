@@ -1,7 +1,7 @@
 ---
-title: Office 365-Datenserviceanforderungen gemäß DSGVO
-description: Verstehen der Benutzerrechte gemäß DSGVO und wie Office 365 Unternehmen bei der Suche von und Reaktion auf Anträge betroffener Personen unterstützt.
-keywords: Office 365, Anträge betroffener Personen, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
+title: Office 365-Datenserviceanforderungen gemäß DSGVO und CCPA
+description: Verstehen der Benutzerrechte gemäß DSGVO und CCPA und wie Office 365 Unternehmen bei der Suche von und Reaktion auf Anträge betroffener Personen unterstützt.
+keywords: Office 365, Anträge betroffener Personen, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,30 +9,34 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 9f2d17c6165a028061cf7d155f828c683f09543f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071494"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624519"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr"></a>Anträge betroffener Personen nach der DSGVO in Office 365
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Office 365 im Rahmen der DSGVO und des CCPA
 
 ## <a name="introduction-to-dsrs"></a>Einführung in Anträge betroffener Personen
 
 Die [Datenschutz-Grundverordnung (DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (die in den Bestimmungen als *betroffene Personen* bezeichnet werden) das Recht zum Verwalten der personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Datenverantwortlicher* oder nur *Verantwortlicher* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte im Hinblick auf ihre personenbezogenen Daten; dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken ihrer Verarbeitung, das Löschen oder das Erhalten in einem elektronischen Format, damit sie zu einem anderen Datenverantwortlichen bewegt werden können. Eine formale Anfrage einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als *Antrag einer betroffenen Person* bezeichnet. Der Verantwortliche ist verpflichtet, jeden Antrag einer betroffenen Person unverzüglich zu bearbeiten und angemessen zu reagieren, entweder indem die angeforderte Aktion ausgeführt wird oder indem eine Erklärung abgegeben wird, warum dem Antrag der betroffenen Person vom Verantwortlichen nicht Folge geleistet werden kann. Ein Verantwortlicher sollte sich bezüglich der sachgerechten Bearbeitung der einzelnen Anträge betroffener Personen an seine eigenen Rechts- und Compliance-Berater wenden.
 
-In diesem Leitfaden wird erläutert, wie Office 365-Produkte, -Dienste und -Verwaltungstools verwendet werden können, um in Antwort auf Anträge betroffener Personen personenbezogene Daten zu finden und zu verarbeiten. Dazu zählen insbesondere die Suche, der Zugriff und die Verarbeitung von personenbezogenen Daten, die in der Microsoft-Cloud gespeichert sind. Im Folgenden finden Sie eine kurze Übersicht der in diesem Leitfaden beschriebenen Prozesse:
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen. Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
-- **Ermittlung:** Verwenden Sie Such- und Ermittlungstools, um Kundendaten leichter zu finden, die möglicherweise Gegenstand eines Antrags einer betroffenen Person sind. Sobald potenziell geeignete Dokumente gefunden wurden, können Sie eine oder mehrere der Aktionen für Anträge betroffener Personen ausführen, die in den folgenden Schritten beschrieben sind, um auf den Antrag der betroffenen Person zu reagieren. Andernfalls können Sie bestimmen, dass der Antrag nicht den Unternehmensrichtlinien für die Reaktion auf Anträge betroffener Personen entspricht.
-- **Zugriff:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
-- **Berichtigung:** Nehmen Sie gegebenenfalls Änderungen vor oder führen Sie andere beantragte Aktionen für die personenbezogenen Daten aus.
-- **Einschränkung:** Schränken Sie die Verarbeitung personenbezogener Daten entweder durch Zurückziehen von Lizenzen für verschiedenen Azure-Dienste oder durch Deaktivieren der gewünschten Dienste wo möglich ein. Des Weiteren können Sie Daten aus der Microsoft-Cloud entfernen und diese lokal oder an einem anderen Ort aufbewahren.
+In dem Leitfaden wird erläutert, wie Sie Office 365-Produkte, -Dienste und -Verwaltungstools zum Suchen von und Reagieren auf personenbezogene Daten oder persönliche Informationen als Reaktion auf DSRs verwenden können. Dies gilt insbesondere für die Suche nach, den Zugriff auf sowie die Verarbeitung von personenbezogenen Daten oder persönlichen Informationen, die sich in der Microsoft-Cloud befinden. Im Folgenden finden Sie eine kurze Übersicht über die Prozesse, die in diesem Leitfaden beschrieben werden:
+
+- **Erkennung:** Sie können Kundendaten, die ggf. Gegenstand eines Antrags einer betroffenen Person sind, mithilfe von Such- und Ermittlungstools finden. Sobald Sie potenziell relevante Dokumente ermittelt haben, können Sie dem Antrag entsprechend eine oder mehrere der in den folgenden Schritten beschriebenen Aktionen ausführen. Möglicherweise stellen Sie jedoch fest, dass der Antrag nicht den Vorgaben Ihrer Organisation für die Reaktion auf Anträge betroffener Personen entspricht.
+- **Zugang:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft-Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
+- **Berichtigung:** Nehmen Sie gegebenenfalls Änderungen an den personenbezogenen Daten vor oder führen Sie andere Aktionen aus, die für die Daten angefordert werden.
+- **Einschränkung:** Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Onlinedienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können auch Daten aus der Microsoft Cloud entfernen und lokal oder an einem anderen Speicherort speichern.
 - **Löschung:** Entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
-- **Export:** Stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten zur Verfügung.
+- **Exportieren/Empfangen (Portierbarkeit):** Stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten oder persönlichen Informationen zur Verfügung. Personenbezogene Informationen gemäß CCPA sind alle Informationen, die eine identifizierte oder identifizierbare Person betreffen. Es wird nicht zwischen privaten, öffentlichen oder beruflichen Rollen einer Person unterschieden. Der definierte Begriff "persönliche Informationen" entspricht in etwa dem Begriff "persönliche Daten" unter der DSGVO. Allerdings umfasst das CCPA auch Familien- und Haushaltsdaten. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
-### <a name="terminology"></a>Begrifflichkeiten
+### <a name="terminology"></a>Terminologie
 
 Im Folgenden finden Sie Definitionen von Begriffen der DSGVO, die für diesen Leitfaden relevant sind.
 
@@ -183,13 +187,13 @@ In diesem Beispiel werden Excel-Dateien auf SharePoint Online-Websites und in On
 
 ***Schlüsselwortsyntax***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image18.png)
+![Schlüsselwortdialog](media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>Beispiel 2
 
@@ -199,19 +203,19 @@ In diesem Beispiel werden Excel- oder Word-Dateien auf SharePoint Online-Website
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image19.png)
+![Schlüsselwortdialog](media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>Beispiel 3
 
 In diesem Beispiel werden E-Mail-Nachrichten zurückgegeben, die die angegebene ID-Nummer enthalten, bei der es sich hier um eine französische Sozialversicherungsnummer (INSEE) handelt.
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image20.png)
+![Schlüsselwortdialog](media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Arbeiten mit teilweise indizierten Elemente in der Inhaltssuche
 
@@ -281,13 +285,13 @@ Endbenutzer können auf SharePoint Online-Benutzerprofildaten mithilfe der Delve
 
 Eine andere Möglichkeit für Benutzer, auf ihre SharePoint-Profildaten zuzugreifen, besteht darin, zur Seite **Profil bearbeiten** in ihrem OneDrive for Business-Konto zu navigieren, auf das über den Pfad **EditProfile.aspx** unter der OneDrive for Business-URL zugegriffen werden kann. Für den Benutzer <strong>user1@contoso.com</strong> befindet sich das OneDrive for Business-Konto des Benutzers unter:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 Die URL für die Seite „Profil bearbeiten“ wäre:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +361,11 @@ Hier finden Sie eine spezifische Anleitung für ein Kursnotizbuch.
 3. Wählen Sie dieses Element aus, und kopieren Sie dann den Ordnerpfad, der im Detailbereich angezeigt wird. Dies ist der Stammordner des Kursnotizbuchs.
 4. Bearbeiten Sie die Suche, die Sie in Schritt 1 erstellt haben, ersetzen Sie den Namen des Kurses in der Schlüsselwortabfrage durch den Ordnerpfad des Kursnotizbuchs, und fügen Sie vor den Ordnerpfad die Websiteeigenschaft **path** ein, z. B. **path: "<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Achten Sie darauf, dass Sie die Anführungszeichen und den Schrägstrich am Ende einfügen.
 5. Fügen Sie eine Suchbedingung hinzu, wählen Sie die Dateitypbedingung aus und verwenden Sie dabei „one“ für den Dateityp. Dadurch werden alle OneNote-Dateien in den Suchergebnissen zurückgegeben. Die sich daraus ergebende Schlüsselwortsyntax würde folgendermaßen aussehen:[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  Führen Sie die Inhaltssuche erneut aus. Die Suchergebnisse sollten alle OneNote-Dateien für das Kursnotizbuch aus dem Kursteam enthalten.
 
 #### <a name="microsoft-to-do"></a>Microsoft Aufgaben
@@ -426,13 +432,13 @@ Wenn Sie die Ergebnisse einer Inhaltssuche exportieren, können E-Mail-Elemente 
 Um Elemente zu exportieren und herunterzuladen:
 
 1. Öffnen der Inhaltssuche im Security & Compliance Center.
-2. Klicken Sie auf der Fly-Out-Navigation auf der Seite der Suche auf ![](media/o365-dsr_image21.png) **Mehr** und anschließend auf **Ergebnisse exportieren**. Sie können auch einen Bericht exportieren.
+2. Klicken Sie auf der Fly-Out-Navigation auf der Seite der Suche auf ![Symbol herunterladen](media/o365-dsr_image21.png), **Mehr** und dann auf **Ergebnisse exportieren**. Sie können auch einen Bericht exportieren.
 3. Füllen Sie die Abschnitte auf der Fly-Out-Navigation der **Exportergebnisse** aus. Stellen Sie sicher, dass Sie Bildlaufleiste verwenden, um alle Exportoptionen anzuzeigen.
 4. Wechseln Sie wieder zur Seite der Inhaltssuche im Security & Compliance Center und klicken Sie auf die Registerkarte **Export**.
 5. Klicken Sie auf **aktualisieren**, um die Seite zu aktualisieren.
 6. Klicken Sie unter der Spalte **Name** auf den Exportauftrag, den Sie erstellt haben. Der Name des Exportauftrags ist der Name der Inhaltssuche gefolgt von der Endung **\_Export**.
 7. Klicken Sie auf der Fly-out-Navigation unter **Exportschlüssel** auf **In Zwischenablage kopieren**. Sie werden diesen Schlüssel in Schritt 10 nutzen, um die Suchergebnisse herunterzuladen.
-8. Klicken Sie oben auf der Fly-out-Navigation auf ![](media/o365-dsr_image21.png) **Ergebnisse herunterladen**.
+8. Klicken Sie oben auf der Fly-out-Navigation auf ![Symbol herunterladen](media/o365-dsr_image21.png) und **Ergebnisse herunterladen**.
 9. Wenn Sie aufgefordert werden, das **Microsoft Office 365 eDiscovery Export Tool** zu installieren, klicken Sie auf **installieren**.
 10. Fügen Sie im **eDiscovery-Exporttool** den Export-Schlüssel, den Sie in Schritt 7 kopiert haben, in das entsprechende Feld ein.
 11. Klicken Sie auf **Durchsuchen**, um das Verzeichnis anzugeben, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen.
@@ -847,9 +853,12 @@ Kursteilnehmerdateien, die mit einer Übermittlung für Aufgaben verbunden sind,
 
 Ein Administrator kann mit Hilfe der Inhaltssuche im Office 365 Security & Compliance Center nach Kursteilnehmerdateien (in den Bibliotheken „Arbeit von Kursteilnehmern“ und „Kursdateien“) suchen, die mit Übermittlungen zu Aufgaben sowie mit Dateien zu Aufgaben in Zusammenhang stehen. Beispielsweise könnte ein Administrator alle SharePoint-Websites in der Organisation durchsuchen und in der Suchanfrage den Namen und den Kurs des Kursteilnehmers oder den Aufgabennamen verwenden, um nach Daten zu suchen, die für einen Antrag einer betroffenen Person relevant sind.
 
-In ähnlicher Weise kann ein Administrator Lehrerdateien nutzen, die sich auf Aufgaben für Dateien beziehen, die ein Lehrer an Kursteilnehmer verteilt hat. Beispielsweise könnte ein Administrator alle SharePoint-Websites in der Organisation durchsuchen und in der Suchanfrage den Namen und den Kurs des Lehrers oder den Aufgabennamen verwenden, um nach Daten zu suchen, die für einen Antrag einer betroffenen Person relevant sind.
+Ebenso kann ein Administrator nach Dateien von Lehrkräften suchen, die sich auf Aufgaben für Dateien beziehen, die ein Lehrer an Kursteilnehmer verteilt hat. Beispielsweise könnte ein Administrator alle SharePoint-Websites in der Organisation durchsuchen und in der Suchanfrage den Namen und den Kurs der Lehrkraft oder den Aufgabennamen verwenden, um nach Daten zu suchen, die für einen Antrag einer betroffenen Person relevant sind.
 
-Siehe den Abschnitt [Reagieren auf Anträge betroffener Personen mit dem eDiscovery-Tool für die Inhaltssuche](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) in diesem Leitfaden.
+Weitere Informationen finden Sie unter:
+
+- [Dokumentation für Administratoren zu "Aufgaben"](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- [Reagieren auf Anträge betroffener Personen mit dem eDiscovery-Tool für die Inhaltssuche](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) (in diesem Leitfaden)
 
 ##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>Suchen nach Aufgabendaten, die nicht in SharePoint gespeichert werden
 
@@ -863,26 +872,29 @@ Um Daten zu finden, muss ein Administrator oder ein Lehrer auf der Website des K
 
 Auch wenn jemand nicht mehr zu den Teilnehmern eines Kurses zählt, sind seine Daten möglicherweise noch in dem Kurs vorhanden und mit "nicht mehr registriert" gekennzeichnet. In diesem Fall müsste ein Kursteilnehmer, der einen Antrag einer betroffenen Person stellt, dem Administrator die Liste der Kurse zur Verfügung stellen, in denen er eingeschrieben war.
 
-##### <a name="export"></a>Export
+##### <a name="export"></a>Exportieren
 
-Sie können Aufgabendaten für einen bestimmten Kursteilnehmer für alle Kurse exportieren, in denen dieser eingeschrieben ist, indem Sie ein PowerShell-Skript verwenden. Siehe:
+Sie können Aufgabendaten eines bestimmten Kursteilnehmers für alle Klassen exportieren, in denen der Kursteilnehmer registriert ist, indem Sie ein PowerShell-Skript verwenden, um eine Liste der Kurse des Kursteilnehmers abzurufen und dann ein PowerShell-Skript zum Exportieren der Daten verwenden. Siehe:
 
-- [Verwenden von Skripts zum Exportieren und Löschen von Benutzerdaten aus Aufgaben](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
-- [Exportieren von Kursteilnehmer- und Lehrerdaten aus Aufgaben](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a).
+- [Konfigurieren von Aufgaben für Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Abrufen einer Kursliste für einen bestimmten Kursteilnehmer](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Exportieren von Kursteilnehmer- und Lehrerdaten aus Aufgaben](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
 Wenn der Kursteilnehmer von der Teamkurs-Website entfernt wurde, kann der Administrator den Kursteilnehmer zurück zur Website hinzufügen, bevor er das Exportskript ausführt. Oder der Administrator kann die Eingabedatei für das Skript verwenden, um jeden Kurs zu identifizieren, in dem der Kursteilnehmer jemals eingeschrieben war. Sie können auch das Aufgabenexportskript verwenden, um die Übermittlungsdaten für alle Aufgaben zu exportieren, auf die ein Lehrer Zugriff hat.
 
 ##### <a name="delete"></a>Löschen
 
-Sie können Aufgabendaten für einen bestimmten Kursteilnehmer für alle Kurse löschen, in denen dieser eingeschrieben ist, indem Sie ein PowerShell-Skript verwenden. Sie sollten dies tun, bevor Sie den Kursteilnehmer aus dem Kurs entfernen. Siehe:
+Sie können Aufgabendaten eines bestimmten Kursteilnehmers für alle Klassen löschen, in denen der Kursteilnehmer registriert ist, indem Sie ein PowerShell-Skript verwenden, um eine Liste der Kurse des Kursteilnehmers abzurufen und dann ein PowerShell-Skript zum Löschen der Daten verwenden. Sie sollten dies tun, bevor Sie den Kursteilnehmer aus dem Kurs entfernen. Siehe:
 
-- [Verwenden von Skripts zum Exportieren und Löschen von Benutzerdaten aus Aufgaben](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
-
-- [Löschen von Teilnehmerdaten aus Aufgaben](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4).
+- [Konfigurieren von Aufgaben für Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Abrufen einer Kursliste für einen bestimmten Kursteilnehmer](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Löschen von Teilnehmerdaten aus Aufgaben](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
 Wenn der Kursteilnehmer von der Teamkurs-Website entfernt wurde, kann der Administrator den Kursteilnehmer zurück zur Website hinzufügen, bevor er das Exportskript ausführt. Oder der Administrator kann die Eingabedatei für das Skript verwenden, um jeden Kurs zu identifizieren, in dem der Kursteilnehmer jemals eingeschrieben war. Sie können das Aufgaben-Löschskript nicht zum Löschen von Lehrerdaten verwenden, da alle Aufgaben auf der Website des Kursteams gemeinsam genutzt werden. Als Alternative müsste sich ein Administrator auf der Seite des Kursteams eintragen und dann eine bestimmte Aufgabe löschen.
 
-**Kursnotizbuch:** Die Suche nach Inhalten im Kursnotizbuch wurde bereits in diesem Leitfaden erläutert. Gehen Sie hierzu zum Abschnitt [OneNote-Kursnotizbuch](#onenote-class-notebook). Sie können außerdem das Tool für die Inhaltssuche verwenden, um Daten aus einem Kursnotizbuch zu exportieren. Alternativ können ein Administrator oder die betroffene Person Daten aus einem Kursnotizbuch exportieren. Informationen hierzu finden Sie unter [Speichern einer Kopie eines Kursnotizbuchs](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
+#### <a name="class-notebook"></a>Kursnotizbuch
+
+Die Suche nach Inhalten im Kursnotizbuch wurde bereits in diesem Leitfaden erläutert. Gehen Sie hierzu zum Abschnitt [OneNote-Kursnotizbuch](#onenote-class-notebook). Sie können außerdem das Tool für die Inhaltssuche verwenden, um Daten aus einem Kursnotizbuch zu exportieren. Alternativ können ein Administrator oder die betroffene Person Daten aus einem Kursnotizbuch exportieren. Informationen hierzu finden Sie unter [Speichern einer Kopie eines Kursnotizbuchs](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
 
 ### <a name="flow"></a>Flow
 
@@ -1073,7 +1085,7 @@ PowerApps ist ein Dienst zum Erstellen von Apps, die innerhalb Ihres Unternehmen
 
 Um einen Antrag betroffener Personen bezüglich PowerApps zu erfüllen, können Sie die Verwaltungsvorgänge, die im [PowerApps Admin Center](https://admin.powerapps.com/) zur Verfügung stehen, sowie [PowerApps Admin PowerShell-Cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) nutzen. Für den Zugriff auf diese Tools ist ein Konto mit den folgenden Berechtigungen erforderlich:
 
-- Eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich [hier](http://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren.
+- Eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich [hier](https://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren.
 - [Globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder
 - [Globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1168,7 +1180,7 @@ Nachdem relevanter StaffHub-Inhalt gefunden wurde, können Sie diese anzeigen un
 - **Freigegebene Dateien:** Alle Dateien in StaffHub werden in SharePoint Online gespeichert. Daher können Sie diese mithilfe der Inhaltssuche durchsuchen, exportieren und auf diese zugreifen. Sie können sie auch in StaffHub unter der Registerkarte **Dateien** anzeigen.
 - **Nachrichtenübermittlung:** Zurzeit können Sie auf Nachrichten zugreifen, indem Sie die Schritte zum Zugreifen auf benutzerspezifische Daten im nächsten Element ausführen. In Zukunft werden alle Nachrichten in StaffHub in Microsoft Teams gespeichert, was bedeutet, dass Sie das Tool für die Inhaltssuche verwenden können, um darauf zuzugreifen.
 - **Benutzerspezifische Daten:** Benutzerspezifische Daten bestehen aus Benutzereinstellungen, Benutzer-Aktivitätsfeeds und Schichtanfragen-Verläufen. Diese können weder von Teammitgliedern noch von Administratoren eingesehen werden. Wenn Sie auf benutzerspezifische Daten zugreifen oder diese exportieren möchten, muss sich hierzu die betroffene Person in ihrem StaffHub-Konto anmelden. Sollte die betroffene Person Ihre Organisation verlassen haben, können Sie auf diese Daten auch zugreifen, indem Ihr Administrator das Benutzerkennwort für den betroffenen Benutzer zurücksetzt, sodass Sie oder der Administrator sich bei seinem Konto anmelden können.
-- **Kronos:** StaffHub unterstützt Verbindungen zu [Kronos](http://www.kronos.com/), einem Drittanbieter-Tool für die Verwaltung von Mitarbeitern. StaffHub und Kronos sind unabhängige Datenverarbeiter und verarbeiten die Daten Ihrer Organisation gemäß den Bedingungen, die Sie mit der jeweiligen Vertragspartei vereinbart haben. Wenn der an Sie herangetragene Antrag einer betroffenen Person von Kronos gespeicherte Daten betrifft, müssen Sie sich an Kronos wenden, um diesbezüglich Hilfe zu erhalten. Dasselbe gilt im umgekehrten Fall.
+- **Kronos:** StaffHub unterstützt Verbindungen zu [Kronos](https://www.kronos.com/), einem Drittanbieter-Tool für die Verwaltung von Mitarbeitern. StaffHub und Kronos sind unabhängige Datenverarbeiter und verarbeiten die Daten Ihrer Organisation gemäß den Bedingungen, die Sie mit der jeweiligen Vertragspartei vereinbart haben. Wenn der an Sie herangetragene Antrag einer betroffenen Person von Kronos gespeicherte Daten betrifft, müssen Sie sich an Kronos wenden, um diesbezüglich Hilfe zu erhalten. Dasselbe gilt im umgekehrten Fall.
 
 #### <a name="delete"></a>Löschen
 
@@ -1205,7 +1217,7 @@ In den folgenden Abschnitten wird erläutert, wie die In-App-Funktion in Microso
 
 #### <a name="discover"></a>Ermittlung
 
-Mithilfe von Sway erstellte Inhalte (unter [www.sway.com](http://www.sway.com)) können nur vom Besitzer und denjenigen Benutzern angezeigt werden, denen der Autor die Berechtigung zum Anzeigen gewährt hat. Weitere Informationen finden Sie unter [Datenschutzeinstellungen in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Um festzustellen, ob in Sway personenbezogene Daten vorhanden sind, die für Anträge betroffener Personen relevant sind, können Sie die betroffene Person und die Organisationsbenutzer, die wahrscheinlich Inhalte zu der betroffenen Person generiert haben, bitten, in Sway nach diesen Daten zu suchen und die Sways mitzuteilen, in denen wahrscheinlich personenbezogene Daten enthalten sind, die für den Antrag einer betroffenen Person relevant sind. Informationen zum Teilen von Sways finden Sie unter „Teilen eines Sway aus Ihrem Organisationskonto“ im Artikel [Teilen Ihres Sways](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
+Mithilfe von Sway erstellte Inhalte (unter [www.sway.com](https://www.sway.com)) können nur vom Besitzer und denjenigen Benutzern angezeigt werden, denen der Autor die Berechtigung zum Anzeigen gewährt hat. Weitere Informationen finden Sie unter [Datenschutzeinstellungen in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Um festzustellen, ob in Sway personenbezogene Daten vorhanden sind, die für Anträge betroffener Personen relevant sind, können Sie die betroffene Person und die Organisationsbenutzer, die wahrscheinlich Inhalte zu der betroffenen Person generiert haben, bitten, in Sway nach diesen Daten zu suchen und die Sways mitzuteilen, in denen wahrscheinlich personenbezogene Daten enthalten sind, die für den Antrag einer betroffenen Person relevant sind. Informationen zum Teilen von Sways finden Sie unter „Teilen eines Sway aus Ihrem Organisationskonto“ im Artikel [Teilen Ihres Sways](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Access
 
@@ -1531,7 +1543,7 @@ Benutzer können die folgenden Informationen in Delve löschen:
 
 ### <a name="myanalytics"></a>MyAnalytics
 
-MyAnalytics stellt den Benutzern Statistiken zur Verfügung, die ihnen dabei helfen, zu sehen, wie sie ihre Zeit bei der Arbeit verbringen. Um Ihren Benutzern zu helfen, die Daten, die ihnen in ihrem persönlichen Dashboard angezeigt werden und wie diese Daten berechnet werden, besser zu verstehen, verweisen Sie Ihre Benutzer auf das Hilfethema [MyAnalytics – Persönliches Dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard).
+MyAnalytics stellt den Benutzern Statistiken zur Verfügung, die ihnen dabei helfen, zu sehen, wie sie ihre Zeit bei der Arbeit verbringen. Um Ihren Benutzern zu helfen, die Daten, die ihnen in ihrem persönlichen Dashboard angezeigt werden und wie diese Daten berechnet werden, besser zu verstehen, verweisen Sie Ihre Benutzer auf das Hilfethema [MyAnalytics – Persönliches Dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
 
 #### <a name="access-and-export"></a>Zugriff und Export
 
@@ -1543,7 +1555,7 @@ Benutzer mit dem e-Mail- und Kalenderelemente werden alle Einblicke von MyAnalyt
 
 #### <a name="restrict"></a>Einschränkung
 
-Um die Verarbeitung für einen bestimmten Benutzer einzuschränken, können Sie MyAnalytics für diesen Benutzer inaktivieren. Eine Anleitung dazu finden Sie unter [Benutzereinstellungen für MyAnalytics konfigurieren](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings).
+Um die Verarbeitung für einen bestimmten Benutzer einzuschränken, können Sie MyAnalytics für diesen Benutzer inaktivieren. Eine Anleitung dazu finden Sie unter [Benutzereinstellungen für MyAnalytics konfigurieren](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics).
 
 #### <a name="delete"></a>Löschen
 
@@ -1551,7 +1563,7 @@ Alle Postfachinhalte, einschließlich der MyAnalytics-Daten, werden gelöscht, w
 
 ### <a name="workplace-analytics"></a>Workplace Analytics
 
-Workplace Analytics ermöglicht es Unternehmen, Office 365-Daten mit ihren eigenen Geschäftsdaten zu ergänzen, um Einblicke in die Produktivität der Organisation, die Zusammenarbeit und das Engagement der Mitarbeiter zu gewinnen. [Dieser Artikel](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access) erklärt die Kontrolle, die Ihre Organisation über die Daten hat, die Workplace Analytics verarbeitet, und wer Zugriff auf diese Daten hat.
+Workplace Analytics ermöglicht es Unternehmen, Office 365-Daten mit ihren eigenen Geschäftsdaten zu ergänzen, um Einblicke in die Produktivität der Organisation, die Zusammenarbeit und das Engagement der Mitarbeiter zu gewinnen. [Dieser Artikel](https://docs.microsoft.com/workplace-analytics/index-orig) erklärt die Kontrolle, die Ihre Organisation über die Daten hat, die Workplace Analytics verarbeitet, und wer Zugriff auf diese Daten hat.
 
 Um Sie bei Anträgen betroffener Personen in Workplace Analytics zu unterstützen: 
 
@@ -1580,7 +1592,7 @@ Um die personenbezogenen Daten einer betroffenen Person zu entfernen, kann ein g
 1. Die Workspace Analytics-Lizenz der betroffenen Person entfernen.
 2. Den Eintrag über die betroffene Person in Azure Active Directory (AAD) löschen. (Weitere Informationen finden Sie unter [Einen Benutzer entfernen](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
 3. Den Support kontaktieren, damit dieser ein Ticket für einen Antrag einer betroffenen Person auf Löschung ihrer Benutzerdaten eröffnet. In diesem Ticket muss die betroffene Person anhand ihres Benutzerprinzipalnamens angegeben werden.
-4. Eine Kopie der Personaldaten aus dem Personalsystem des Unternehmens exportieren (weitere Informationen finden Sie unter [Daten exportieren](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), die Informationen über die betroffene Person aus dieser Personaldatendatei entfernen und dann die bearbeitete Personaldatendatei im Format .csv in Workplace Analytics hochladen (weitere Informationen finden Sie unter [Organisationsdaten hochladen](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
+4. Eine Kopie der Personaldaten aus dem Personalsystem des Unternehmens exportieren (weitere Informationen finden Sie unter [Daten exportieren](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data)), die Informationen über die betroffene Person aus dieser Personaldatendatei entfernen und dann die bearbeitete Personaldatendatei im Format .csv in Workplace Analytics hochladen (weitere Informationen finden Sie unter [Organisationsdaten hochladen](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>Teil 3: Reaktion auf Anträge betroffener Personen für vom System generierte Protokolle
 
@@ -1625,7 +1637,7 @@ Im Folgenden wird der Zugriff auf und der Export von systemgenerierten Protokoll
 
 - **Wie sehen die Daten in den vom System generierten Protokollen aus?** Beispiel eines vom System generierten Protokolldatensatzes im JSON-Format:
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1666,7 +1678,7 @@ Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle 
 In den folgenden nationalen Clouds muss ein globaler IT-Administrator Folgendes tun, um vom System generierte Protokolle zu löschen:
 
 - Office 365 Deutschland – Wenn das Benutzerkonto dauerhaft gelöscht wird, werden auch die vom System erzeugten Protokolle gelöscht. 
-- Office 365 US Government – Senden Sie eine Anforderungen an den Microsoft-Support über das [Office 365-Verwaltungsportal](http://portal.office365.us).
+- Office 365 US Government – Senden Sie eine Anforderungen an den Microsoft-Support über das [Office 365-Verwaltungsportal](https://portal.office365.us).
 - Office 365, das von 21Vianet betrieben wird (China) – Senden Sie eine Anforderung an den Microsoft-Support über das Office 365-Verwaltungsportal unter dieser [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Gehen Sie zu **Handel**, und wählen Sie dann **Abonnement** -> **Datenschutz** -> **GDPR** aus, und geben Sie die erforderlichen Informationen ein.
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Teil 4: Weitere Ressourcen, die bei Anträgen betroffener Personen hilfreich sind
@@ -1784,4 +1796,5 @@ In der folgende Tabelle sind die Änderungen an dem Leitfaden für Office 365-An
 |09. Januar 2019|[StaffHub](#staffhub)|Im Abschnitt "Löschen" wurde die Beschreibung aktualisiert, was passiert, wenn ein Benutzerkonto dauerhaft gelöscht wird.|
 |8.5.2019| [Publisher](#publisher)|Informationen zur Reaktion auf Anträge betroffener Personen in Publisher wurden hinzugefügt.|
 |11.7.2019| [MyAnalytics](#myanalytics)|Die Möglichkeit für einen Administrator, das Falltool für Anträge betroffener Personen im Office 365 Security & Compliance Center zum Exportieren von myAnalytics-Daten zu verwenden, wurde entfernt, da alle Benutzer ihre Daten jetzt in der myAnalytics-App anzeigen können. |
+|06.11.2019|[Bildung](#education)|Mit neuen Themen zur Verwendung von PowerShell-Skripts zum Abrufen einer Liste der Kurse für einen bestimmten Kursteilnehmer verknüpft, um diese dann zu exportieren oder zu löschen.|
 ||||
