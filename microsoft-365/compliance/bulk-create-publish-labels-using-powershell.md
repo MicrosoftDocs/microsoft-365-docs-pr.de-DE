@@ -13,19 +13,19 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: In Office 365 können Sie Aufbewahrungsbeschriftungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Aufbewahrungsbeschriftungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security and Compliance Center verwenden, das einzelne Erstellen von Aufbewahrungsbeschriftungen ist aber sehr zeitaufwändig und ineffizient. Mithilfe des folgenden Skripts und der CSV-Dateien können Sie Aufbewahrungsbeschriftungen und Aufbewahrungsbeschriftungsrichtlinien massenerstellen und veröffentlichen. Zunächst erstellen Sie eine Liste der Aufbewahrungsbeschriftungen sowie eine Liste der Aufbewahrungsbeschriftungsrichtlinien in Excel, anschließend führen Sie eine Massenerstellung der und Aufbewahrungsbeschriftungen und Aufbewahrungsbeschriftungsrichtlinien in diesen Listen mithilfe von PowerShell aus. Auf diese Weise wird das gleichzeitige Erstellen und Veröffentlichen aller Aufbewahrungsbeschriftungen vereinfacht, die für Ihren Aufbewahrungszeitraum erforderlich sind.
-ms.openlocfilehash: 2be7c2251a3a35f32ff9754134cca1f5958b447a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: In Office 365 können Sie Aufbewahrungsbezeichnungen verwenden, um einen Aufbewahrungszeitplan für Ihr Unternehmen zu implementieren. Mithilfe des bereitgestellten Skripts und der CSV-Dateien können Sie Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien per Massenvorgang mit PowerShell erstellen und veröffentlichen.
+ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708114"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631595"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 
 In Office 365 können Sie Aufbewahrungsbeschriftungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Aufbewahrungsbeschriftungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security &amp; Compliance Center verwenden, das einzelne Erstellen von Aufbewahrungsbeschriftungen ist aber sehr zeitaufwändig und ineffizient.
   
-Mithilfe des folgenden Skripts und der CSV-Dateien können Sie Aufbewahrungsbeschriftungen und Aufbewahrungsbeschriftungsrichtlinien massenerstellen und veröffentlichen. Zunächst erstellen Sie eine Liste der Aufbewahrungsbeschriftungen sowie eine Liste der Aufbewahrungsbeschriftungsrichtlinien in Excel, anschließend führen Sie eine Massenerstellung der Aufbewahrungsbeschriftungen und Aufbewahrungsbeschriftungsrichtlinien in diesen Listen mithilfe von PowerShell aus. Auf diese Weise wird das gleichzeitige Erstellen und Veröffentlichen aller Aufbewahrungsbeschriftungen vereinfacht, die für Ihren Aufbewahrungszeitraum erforderlich sind.
+Mithilfe des unten bereitgestellten Skripts und der CSV-Dateien können Sie Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien per Massenvorgang erstellen und veröffentlichen. Zuerst erstellen Sie eine Liste der Aufbewahrungsbezeichnungen und eine Liste der Aufbewahrungsbezeichnungsrichtlinien in Excel. Anschließend verwenden Sie PowerShell, um die Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien in diesen Listen per Massenvorgang zu erstellen. Dies erleichtert es Ihnen, alle Aufbewahrungsbezeichnungen, die für Ihren Aufbewahrungszeitplan erforderlich sind, gleichzeitig zu erstellen und zu veröffentlichen.
   
 Weitere Informationen über Aufbewahrungsbeschriftungen finden Sie unter [Übersicht über Aufbewahrungsbeschriftungen ](labels.md).
   
@@ -69,7 +69,7 @@ Hinweise:
     
 - Wenn die CSV-Datei eine Aufbewahrungsbeschriftungsrichtlinie mit demselben Namen wie eine bereits vorhandene enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftungsrichtlinie. Es werden keine doppelten Aufbewahrungsbeschriftungsrichtlinien erstellt.
     
-- Das Skript veröffentlicht nur Aufbewahrungsbeschriftungen, die manuell auf Inhalte angewendet werden. Dieses Skript unterstützt keine Aufbewahrungsbeschriftungen, die automatisch auf Inhalte angewendet werden.
+- Das Skript veröffentlicht nur Aufbewahrungsbezeichnungen, die manuell auf Inhalte angewendet werden. Dieses Skript unterstützt keine Aufbewahrungsbezeichnungen, die automatisch auf Inhalte angewendet werden.
     
 - Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.
     

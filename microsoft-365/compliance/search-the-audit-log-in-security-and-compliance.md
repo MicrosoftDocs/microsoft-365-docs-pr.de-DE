@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233518"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634042"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -58,6 +58,8 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 - Aktivitäten von Analysten und Administratoren in Microsoft Workplace Analytics
 
 - Aktivitäten von Benutzern und Administratoren in Microsoft PowerApps
+
+- Aktivitäten von Benutzern und Administratoren in Microsoft Forms
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -125,7 +127,9 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |SharePoint Online und OneDrive for Business|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) ist der Verzeichnisdienst von Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen- und Verzeichnisaktivitäten, die im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal ausgeführt wurden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsberichtsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
@@ -302,7 +306,7 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Yammer-Aktivitäten](#yammer-activities)|
 |[Microsoft Flow-Aktivitäten für Abläufe](#microsoft-flow-activities)|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
-[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
+|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
@@ -776,6 +780,43 @@ Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft PowerApps 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream-Aktivitäten
 
 Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Stream durchsuchen. Diese Aktivitäten umfassen Videoaktivitäten, die von Benutzern ausgeführt werden, Gruppenkanalaktivitäten und Administratoraktivitäten, beispielsweisedas Verwalten von Benutzern und Organisationseinstellungen sowie das Exportieren von Berichten. Eine Beschreibung dieser Aktivitäten finden Sie im Abschnitt „Aktivitäten, die in Microsoft Stream protokolliert werden“ in den [Überwachungsprotokollen in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+
+### <a name="microsoft-forms-activities"></a>Microsoft Forms-Aktivitäten
+
+In der folgenden Tabelle sind die in Microsoft Forms von Benutzern und Administratoren ausgeführten Aktivitäten aufgelistet, die im Office 365-Überwachungsprotokoll protokolliert werden. Microsoft Forms ist ein Formular-/Quiz-/Umfrage-Tool zum Sammeln von Daten für Analysen. 
+
+Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusätzliche Aktivitätsparameter.
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Ersteller Kommentar|CreateComment|Der Formularbesitzer fügt Kommentare oder Bewertungen zu einem Quiz hinzu.|
+|Erstelltes Formular|CreateForm|Der Besitzer erstellt ein neues Formular.|
+|Bearbeitetes Formular|EditForm|Der Formularbesitzer bearbeitet ein Formular, indem er eine Frage erstellt, entfernt oder bearbeitet. <br><br>Eigenschaft EditOperation: Zeichenfolge gibt den Namen des Bearbeitungsvorgangs an. Mögliche Vorgänge sind: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage und ChangeTheme.  <br><br>Die meisten Vorgangsnamen sind selbsterklärend. <br><br>FormImage enthält jede Stelle in Formularen, an der Benutzer ein Bild hochladen können, z. B. in einer Abfrage oder als Hintergrunddesign.|
+|Formular verschoben|MoveForm|Der Formularbesitzer verschiebt ein Formular. <br><br>Eigenschaft DestinationUserId: Zeichenfolge gibt die Benutzer-ID der Person an, die das Formular verschoben hat. Eigenschafts NewFormId: Zeichenfolge ist die neue ID für das neu kopierte Formular.|
+|Gelöschtes Formular|DeleteForm|Der Formularbesitzer löscht ein Formular. Dazu gehören SoftDelete (Löschoption wird verwendet, Formular wird in den Papierkorb verschoben) und HardDelete (Papierkorb wird geleert).|
+|Angezeigtes Formular (Entwurfszeit)|ViewForm|Der Formularbesitzer öffnet ein vorhandenes Formular für die Bearbeitung.|
+|Formular in der Vorschau|PreviewForm|Der Formularbesitzer zeigt ein Formular mit der Vorschaufunktion an.|
+|Exportiertes Formular|ExportForm|Der Formularbesitzer exportiert Ergebnisse nach Excel. <br><br>Eigenschaft ExportFormat: Zeichenfolge gibt an, ob die Excel-Datei heruntergeladen wurde oder online verfügbar ist.|
+|Freigabe von Formularkopie zulassen|AllowShareFormForCopy|Der Formularbesitzer erstellt einen Vorlagen-Link, um das Formular für andere Benutzer freizugeben. Dieses Ereignis wird protokolliert, wenn der Formularbesitzer klickt, um eine Vorlagen-URL zu generieren.|
+|Freigabe von Formularkopie nicht zulassen|DisallowShareFormForCopy|Der Formularbesitzer löscht den Vorlagen-Link.|
+|Formular-Mitautor hinzugefügt|AddFormCoauthor|Ein Benutzer verwendet einen Link für die Zusammenarbeit, um beim Entwerfen/Anzeigen von Antworten zu helfen. Dieses Ereignis wird protokolliert, wenn ein Benutzer eine URL für die Zusammenarbeit verwendet (nicht, wenn die URL für die Zusammenarbeit zum ersten Mal generiert wird).|
+|Formular-Mitautor entfernt|RemoveFormCoauthor|Der Formularbesitzer löscht einen Link für die Zusammenarbeit.|
+|Angezeigte Antwortseite|ViewRuntimeForm|Der Benutzer hat eine Antwortseite für die Anzeige geöffnet. Dieses Ereignis wird protokolliert, und zwar unabhängig davon, ob der Benutzer eine Antwort absendet oder nicht.|
+|Erstellte Antwort|CreateResponse|Ähnlich wie beim Empfang einer neuen Antwort.  Ein Benutzer hat eine Antwort auf ein Formular gesendet. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
+|Aktualisierte Antwort|UpdateResponse|Der Formularbesitzer hat einen Kommentar oder eine Bewertung für ein Quiz aktualisiert. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
+|Alle Antworten gelöscht|DeleteAllResponses|Der Formularbesitzer löscht alle Antwortdaten.|
+|Gelöschte Antwort|DeleteResponse|Der Formularbesitzer löscht eine Antwort. <br><br>Eigenschaft ResponseId: Zeichenfolge gibt die gelöschte Antwort an.|
+|Angezeigte Antworten|ViewResponses|Der Formularbesitzer zeigt die aggregierte Liste der Antworten an. <br><br>Property ViewType: Zeichenfolge gibt an, ob der Formularbesitzer das Detail oder Aggregat anzeigt.|
+|Angezeigte Antwort|ViewResponse|Der Formularbesitzer zeigt eine bestimmte Antwort an. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
+|Erstellter Zusammenfassungs-Link|GetSummaryLink|Der Formularbesitzer erstellt einen Zusammenfassungs-Link, um Ergebnisse freizugeben.|
+|Gelöschte Zusammenfassungs-Link|DeleteSummaryLink|Der Formularbesitzer löscht den Link für die Zusammenfassungsergebnisse.|
+|Aktualisierter Phishing-Status von Formularen|UpdatePhishingStatus|Dieses Ereignis wird protokolliert, wenn der detaillierte Wert des internen Sicherheitsstatus geändert wurde, und zwar unabhängig davon, ob dadurch der endgültige Sicherheitsstatus geändert wurde (z. B. Formular ist nun Geschlossen oder Geöffnet). Dies bedeutet, dass Sie möglicherweise doppelte Ereignisse ohne eine endgültige Sicherheitsstatusänderung sehen können.|
+|Versendete Forms-Pro-Einladung|ProInvitation|Der Benutzer klickt, um eine Pro-Testversion zu aktivieren.|
+|Aktualisierte Formulareinstellung|UpdateFormSetting|Der Formularbesitzer aktualisiert eine Formulareinstellung. <br><br>Eigenschaft FormSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
+|Aktualisierte Benutzereinstellung|UpdateUserSetting|Der Formularbesitzer aktualisiert eine Benutzereinstellung. <br><br>Eigenschaft UserSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
+|Aufgelistete Formulare|ListForms|Der Formularbesitzer zeigt eine Liste der Formulare an. <br><br>Property ViewType: Zeichenfolge gibt an, welche Ansicht der Besitzer betrachtet: Alle Formulare, Mit mir geteilt oder Gruppenformulare.|
+|Gesendete Antwort|SubmitResponse|Ein Benutzer sendet eine Antwort auf ein Formular. <br><br>Eigenschaft IsInternalForm: Boolescher Wert gibt an, ob der Responder der gleichen Organisation angehört wie der Formularbesitzer.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administratorüberwachungsprotokoll
 
