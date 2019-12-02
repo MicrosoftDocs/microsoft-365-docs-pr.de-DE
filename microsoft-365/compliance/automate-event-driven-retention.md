@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Thema wird erläutert, wie Sie Geschäftsprozessabläufe über Ereignisse mithilfe der Microsoft 365-REST-API einrichten können, um die Aufbewahrung zu automatisieren.
-ms.openlocfilehash: 5977b79c47166fdafc76dfdb122b4fd37b63a875
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708110"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631065"
 ---
 # <a name="automate-event-based-retention"></a>Automatisieren der ereignisbasierten Aufbewahrung
 
-Die explosionsartige Zunahme von Inhalten in Unternehmen und wie erreicht werden kann, dass diese keine Rolle mehr spielt, ist eine ernste Angelegenheit. Um auch weiterhin den Herausforderungen im Zusammenhang mit der Einhaltung gesetzlicher und geschäftlicher Bestimmungen gerecht zu werden, müssen Unternehmen in der Lage sein, wichtige Informationen aufzubewahren und zu schützen und schnell herauszufinden, was relevant ist. Die Aufbewahrung ausschließlich wichtiger, relevanter Informationen ist der Schlüssel zum Erfolg eines Unternehmens.
+Die explosionsartige Zunahme von Inhalten in Unternehmen und wie erreicht werden kann, dass diese keine Rolle mehr spielt, ist eine ernste Angelegenheit. Um auch weiterhin den Herausforderungen im Zusammenhang mit der Einhaltung gesetzlicher und geschäftlicher Bestimmungen gerecht zu werden, müssen Organisationen in der Lage sein, wichtige Informationen aufzubewahren und zu schützen und schnell herauszufinden, was relevant ist. Die Aufbewahrung ausschließlich wichtiger, relevanter Informationen ist der Schlüssel zum Erfolg einer Organisation.
 
-Daher können Unternehmen die Aufbewahrungslösungen im Office 365 Security & Compliance Center nutzen. Aufbewahrung kann mithilfe von [Aufbewahrungsbezeichnungen](labels.md) ausgelöst werden. Eine Aufbewahrungsbezeichnung kann als [Grundlage für den Aufbewahrungszeitraum für ein bestimmtes Ereignis](event-driven-retention.md) dienen. In der Regel basiert der Aufbewahrungszeitraum auf einem bekannten Datum, z. B. dem Erstellungsdatum oder dem Datum der letzten Änderung der Inhalte. Unternehmen müssen jedoch auch Inhalte aufgrund des Eintretens eines Ereignisses entfernen, zum Beispiel 7 Jahre nach dem Austritt eines Mitarbeiters aus dem Unternehmen.
+Um dieser Anforderung gerecht zu werden, können Unternehmen die Aufbewahrungslösungen im Office 365 Security & Compliance Center nutzen. Aufbewahrung kann mithilfe von [Aufbewahrungsbezeichnungen](labels.md) ausgelöst werden. Eine Aufbewahrungsbezeichnung kann als [Grundlage für den Aufbewahrungszeitraum für ein bestimmtes Ereignis](event-driven-retention.md) dienen. In der Regel basiert der Aufbewahrungszeitraum auf einem bekannten Datum, z. B. dem Erstellungsdatum oder dem Datum der letzten Änderung der Inhalte. Unternehmen müssen jedoch auch Inhalte aufgrund des Eintretens eines Ereignisses entfernen, zum Beispiel 7 Jahre nach dem Austritt eines Mitarbeiters aus dem Unternehmen.
 
 Um ein ordnungsgemäßes Entfernen der Inhalte sicherzustellen, ist es zwingend erforderlich zu wissen, wann ein Ereignis eintritt. Da die Inhaltsmenge rasant zunimmt, wird es immer schwieriger, Inhalte zeitnah und ordnungsgemäß aufzubewahren und zu entfernen.
 
@@ -59,21 +59,21 @@ Identifizieren Sie die verschiedenen Rollen in einem Unternehmen, die Aufgaben f
 
 ### <a name="set-up-the-security--compliance-center"></a>Einrichten des Security & Compliance Center
   
-1. Der Compliance-Administrator erstellt einen Ereignistyp, zum Beispiel Ende der Beschäftigung, Vertragsablauf oder Ende der Produktherstellung (eine schrittweise Anleitung finden Sie unter [Ereignisgesteuerte Aufbewahrung](event-driven-retention.md)).
+1. Der Compliance-Administrator erstellt einen Ereignistyp &ndash;, zum Beispiel Ende der Beschäftigung, Vertragsablauf oder Ende der Produktherstellung. (Eine schrittweise Anleitung finden Sie unter [Ereignisgesteuerte Aufbewahrung](event-driven-retention.md)).
     
-1. Der Compliance-Administrator erstellt eine Aufbewahrungsbezeichnung auf der Grundlage eines Ereignisses und weist die Bezeichnung einem Ereignistyp zu.
+2. Der Compliance-Administrator erstellt eine Aufbewahrungsbezeichnung auf der Grundlage eines Ereignisses und weist die Bezeichnung einem Ereignistyp zu.
     
-1. Es gibt die 4 Arten von Auslösern für Aufbewahrungsbezeichnungen:
+    Es gibt vier Arten von Auslösern für Aufbewahrungsbezeichnungen:
             
     1. Erstellungsdatum
                 
-    1. Zuletzt geändert
+    2. Zuletzt geändert
                 
-    1. Datum der Bezeichnung (Zeitpunkt, zu dem die Inhalte mit der Bezeichnung versehen wurden)
+    3. Datum der Bezeichnung (Zeitpunkt, zu dem die Inhalte mit der Bezeichnung versehen wurden)
                 
-    1. Ereignis-basiert
+    4. Ereignis-basiert
     
-1. Der Compliance-Administrator veröffentlicht die Aufbewahrungsbezeichnung.
+3. Der Compliance-Administrator veröffentlicht die Aufbewahrungsbezeichnung.
 
 ### <a name="set-up-sharepoint"></a>Einrichten von SharePoint
    
@@ -81,29 +81,29 @@ Der Compliance-Administrator geht wie folgt vor, um ein Repository für Datensä
 
 1. Er erstellt eine SharePoint-Website.
 
-1. Er führt einen der folgenden Schritte aus:
+2. Er führt einen der folgenden Schritte aus:
         
     - Er erstellt eine SharePoint-Bibliothek: er legt eine ereignisbasierte Bezeichnung auf Bibliotheksebene fest. Weitere Informationen finden Sie unter [Anwenden einer Aufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - Er richtet einen Dokumentsatz in SharePoint ein. Weitere Informationen finden Sie unter [Einführung in Dokumentenmappen](https://support.office.com/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
+    - Richtet eine Dokumentenmappe in SharePoint ein. Weitere Informationen finden Sie unter [Einführung in Dokumentenmappen](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
       
-1. Er weist jeder Dokumentenmappe eine Asset-ID zu (Asset-ID ist ein Produktname oder eine Code, der von dem Unternehmen verwendet wird, eine Mitarbeiternummer kann zum Beispiel eine Asset-ID sein). (Bei Zuweisung einer Asset-ID zu einem Ordner erben alle Elemente in diesem Ordner automatisch die gleiche Asset-ID. Das bedeutet, dass der Aufbewahrungszeitraum für alle Elemente durch dasselbe Ereignis ausgelöst wird.)
+3. Weist jeder Dokumentenmappe eines Mitarbeiters eine Objekt-ID zu. Bei einer Objekt-ID handelt es sich um einen Produktnamen oder Code, der von der Organisation verwendet wird; die Mitarbeiternummer kann z. B. eine Objekt-ID sein. Durch Zuweisen der Objekt-ID zum Ordner erbt jedes Element in diesem Ordner automatisch dieselbe Objekt-ID. Dies bedeutet, dass der Aufbewahrungszeitraum aller Elemente durch das gleiche Ereignis ausgelöst werden kann.
 
 ## <a name="ways-to-trigger-event-based-retention"></a>Möglichkeiten zum Auslösen der ereignisbasierten Aufbewahrung
 
 Es gibt zwei Möglichkeiten zum Auslösen der ereignisbasierten Aufbewahrung:
 
-- **Über die Benutzeroberfläche des Admin Center** Dies ist ein Prozess, der verwendet werden kann, um weniger Inhalte aufzubewahren oder wenn die Aufbewahrung nicht so häufig ausgelöst wird, zum Beispiel monatlich oder jährlich ist. Weitere Informationen zu dieser Methode finden Sie unter [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md). Diese Art der Aufbewahrungsauslösung kann zeitaufwändig und fehleranfällig sein und die Skalierbarkeit beeinträchtigen. Aus diesem Grund kann eine automatisierte, nahtlose Lösung für die Auslösung der Aufbewahrung die Sicherheit und Compliance von Daten verbessern.
+- **Verwenden der Benutzeroberfläche des Admin Centers** Dies ist ein Prozess, der verwendet werden kann, um weniger Inhalte gleichzeitig zu speichern, oder wenn Häufigkeit, mit der die Aufbewahrung ausgelöst wird, gering ist, z. B. monatlich oder jährlich. Weitere Informationen über diese Methode finden Sie unter [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md). Allerdings kann diese Methode des Auslösens der Aufbewahrung zeitaufwändig und fehleranfällig sein, wodurch die Skalierbarkeit eingeschränkt wird. Daher kann eine automatisierte, nahtlose Lösung zum Auslösen der Aufbewahrung die Datensicherheit und Compliance verbessern.
 
 - **Mithilfe einer Microsoft 365-REST-API**Dieser Prozess kann verwendet werden, wenn sehr viele Inhalte aufbewahrt werden und/oder die Aufbewahrung häufig ausgelöst wird, zum Beispiel täglich oder wöchentlich. Der Ablauf erkennt, wenn ein Ereignis in Ihrem Branchensystem eintritt, und erstellt automatisch ein zugehöriges Ereignis im Security & Compliance Center. Sie müssen keine Ereignisse in der Benutzeroberfläche manuell erstellen, wenn diese eintreten.
 
 Es gibt zwei Optionen für die Verwendung der REST-API:
 
-- Sie können **Microsoft Flow oder eine ähnliche Anwendung** verwenden, um das Eintreten eines Ereignisses automatisch auszulösen. Microsoft Flow ist ein Orchestrator für die Verbindung zu anderen Systemen. Bei Verwendung von Microsoft Flow ist keine benutzerdefinierte Lösung erforderlich.
+- **Microsoft Flow oder eine ähnliche Anwendung** kann verwendet werden, um das Ereignis automatisch auszulösen. Microsoft Flow ist ein Orchestrator zum Herstellen einer Verbindung zu anderen Systemen. Für die Verwendung von Microsoft Flow ist keine benutzerdefinierte Lösung erforderlich.
 
 - **PowerShell oder ein HTTP-Client zum Aufrufen der REST-API** Sie können PowerShell (Version 6 oder höher) zum Aufrufen der Microsoft 365-REST-API verwenden, um Ereignisse zu erstellen. 
 
-Bei einer REST-API handelt es sich um einen Dienstendpunkt, der Sätze von HTTP-Vorgängen (Methoden) unterstützt, die den Zugriff auf die Ressourcen des Diensts erstellen/abrufen/aktualisieren/löschen. Weitere Informationen finden Sie unter [Komponenten der REST-API-Anforderung/-Antwort](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) . In diesem Fall können mit der Microsoft 365-REST-API über die POST- und GET-Vorgänge (Methoden) Ereignisse erstellt und abgerufen werden.
+Bei einer Rest-API handelt es sich um einen Dienstendpunkt, der Gruppen von HTTP-Vorgängen (Methoden) unterstützt, die Zugriff zum Erstellen/Abrufen/Aktualisieren/Löschen der Dienstressourcen bieten. Weitere Informationen finden Sie unter [Komponenten einer REST-API-Anfrage/-Anfrage](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). In diesem Fall können mithilfe der Microsoft 365 Rest-API Ereignisse erstellt und mit POST- und GET-Operationen abgerufen werden.
 
 ## <a name="example-scenarios"></a>Beispielszenarien
 
@@ -111,13 +111,13 @@ Betrachten Sie die folgenden Szenarien.
 
 ### <a name="scenario-1-employees-leaving-the-organization"></a>Scenario 1: Mitarbeiter tritt aus dem Unternehmen aus 
 
-Ein Unternehmen erstellt und speichert pro Mitarbeiter zahlreiche mitarbeiterbezogene Dokumente. Diese Dokumente werden während der Beschäftigung jedes Mitarbeiters verwaltet und aufbewahrt. Wenn der Mitarbeiter jedoch aus dem Unternehmen austritt oder das Arbeitsverhältnis beendet wird, ist das Unternehmen aufgrund gesetzlicher und geschäftlicher Bestimmungen verpflichtet, die Dokumente dieses Mitarbeiters über einen bestimmten Zeitraum aufzubewahren.
+Eine Organisation erstellt und speichert zahlreiche mitarbeiterbezogene Dokumente pro Mitarbeiter. Diese Dokumente werden während der Beschäftigungsdauer jedes Mitarbeiters verwaltet und aufbewahrt. Wenn der Mitarbeiter aber die Organisation verlässt oder das Beschäftigungsverhältnis beendet wird, ist die Organisation gemäß gesetzlicher und geschäftlicher Anforderungen verpflichtet, die Dokumente des Mitarbeiters für einen festgelegten Zeitraum aufzubewahren.
 
 Wenn nun täglich mehrere Mitarbeiter aus dem Unternehmen austreten, muss das Unternehmen die Aufbewahrungszeit von Hunderten, wenn nicht Tausenden von Dokumenten pro Tag auslösen.
 
 Darüber hinaus muss für jeden dieser Mitarbeiter die Aufbewahrungsfrist als Datum des Austritts aus dem Unternehmen + Anzahl der Tage, Monate oder Jahre je nach Art des Mitarbeiterdatensatzes berechnet werden. So kann beispielsweise die Vergütung des Mitarbeiters gegenüber den Leistungsanmeldungen desselben Arbeitnehmers eine unterschiedliche Aufbewahrung erfordern.
 
-Das folgende Diagramm zeigt, wie mehrere Bezeichnungen einem einzelnen Ereignis zugeordnet werden können. Alle Dateien unter der Bezeichnung „Vergütung“ und alle Dateien unter der Bezeichnung „Leistungen an Arbeitnehmer“ sind hier mit einem einzelnen Ereignis verknüpft, und zwar dem Austritt aus dem Unternehmen. Jede dieser verschiedenen Dateien hat unterschiedliche Aufbewahrungszeiten. Wenn also ein Mitarbeiter aus dem Unternehmen austritt, gilt für jede dieser Datei mit einer Bezeichnung eine unterschiedliche Aufbewahrungsdauer.Die Auslösung all dieser unterschiedlichen Aufbewahrungszeiten für jeden Dateityp oder jede Bezeichnung der Mitarbeiter kann eine sehr anspruchsvolle Aufgabe sein. Stellen Sie sich vor, Sie müssen dies für mehrere Mitarbeiter tun.
+Das nachstehende Diagramm zeigt, dass mehrere Beschriftungen vorhanden sein können, die einem einzelnen Ereignis zugeordnet sind. Hier werden alle Dateien unter der Bezeichnung „Mitarbeitervergütung“ und alle Dateien unter der Bezeichnung „Leistungen“ mit einem einzelnen Ereignis verknüpft, und zwar, dass der Mitarbeiter das Unternehmen verlässt. Jede dieser unterschiedlichen Dateien weist unterschiedliche Aufbewahrungszeitpläne auf. Wenn ein Mitarbeiter das Unternehmen verlässt, haben diese Dateien innerhalb der einzelnen Bezeichnungen einen anderen Aufbewahrungszeitraum. Das Auslösen dieser unterschiedlichen Aufbewahrungszeitpläne für jeden Dateityp oder jede Bezeichnung für jeden Mitarbeiter ist eine große Herausforderung. Stellen Sie sich vor, dies für mehrere Mitarbeiter auszuführen.
 
 ![Diagramm zu Ereignistypen, Ereignissen und Bezeichnungen](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
@@ -133,9 +133,7 @@ Ein automatisierter Prozess zum Auslösen dieser unterschiedlicher Aufbewahrungs
 
   - Der Administrator weist jedem Mitarbeiterordner eine Asset-ID zu. 
 
-  - Der SCC-Administrator
-
-  - Meldet sich beim Security & Compliance Center an.
+  - Der SCC-Administrator meldet sich beim Security & Compliance Center an.
 
   - SCC-Administrator erstellt mitarbeiterbezogene Ereignistypen wie „Beschäftigungsende“, „Einstellung des Mitarbeiters“.
 
@@ -407,9 +405,9 @@ Schritt 2: Führen Sie das folgende Skript aus.
 
 #### <a name="verify-the-outcome-in-both-options"></a>Überprüfen der Ausgabe bei beiden Optionen
 
-Schritt 1: Wechseln Sie zu Security & Compliance Center.
+Schritt 1: Wechseln Sie zum Security & Compliance Center.
 
-Schritt 2: Klicken Sie unter Datenkontrolle auf Ereignisse.
+Schritt 2: Klicken Sie unter **Datenkontrolle** auf **Ereignisse**.
 
 Schritt 3: Überprüfen Sie, ob das Ereignis erstellt wurde.
 
@@ -417,7 +415,7 @@ Ebenso können die aufgeführten Optionen zum Automatisieren der ereignisbasiert
 
 ### <a name="scenario-2-contracts-expiring"></a>Szenario 2: Ablauf von Verträgen
 
-Ein Unternehmen kann mehrere Datensätze für einen einzigen Vertrag mit Kunden, Lieferanten und Partnern haben. Diese Dokumente können sich in einer Dokumentenbibliothek wie SharePoint befinden. Das Ende eines Vertrages bestimmt den Beginn des Aufbewahrungszeitraums der Dokumente, die mit dem Vertrag verknüpft sind. Zum Beispiel: Alle Datensätze, die sich auf die Verträge beziehen, müssen fünf Jahre lang ab Ablauf des Vertrages aufbewahrt werden. Das Ereignis, das die fünfjährige Aufbewahrungsdauer auslöst, ist der Ablauf des Vertrages.
+Eine Organisation kann mehrere Datensätze für einen einzigen Vertrag mit Kunden, Lieferanten und Partnern haben. Diese Dokumente können sich in einer Dokumentbibliothek wie SharePoint befinden. Das Vertragsende bestimmt den Anfang des Aufbewahrungszeitraums der Dokumente, die dem Vertrag zugeordnet sind. So müssen z. B. alle Datensätze im Zusammenhang mit Verträgen fünf Jahre lang ab dem Zeitpunkt aufbewahrt werden, ab dem der Vertrag abläuft. Das Ereignis, das den Aufbewahrungszeitraum von fünf Jahren ausgelöst, ist der Ablauf des Vertrags.
 
 Ein CRM-System kann mit Microsoft 365 verwendet werden und die Aufbewahrung für Vertragsdokumente auslösen.
 
@@ -429,7 +427,7 @@ Ein CRM-System kann mit Microsoft 365 verwendet werden und die Aufbewahrung für
 
   - Der Administrator fügt Vertragsdateien zu jedem Vertragsordner hinzu, zum Beispiel Lizenzverträge, Entwicklungsverträge.
 
-  - Der Administrator weist jedem Vertragsordner eine Asset-ID zu.
+  - Der Administrator weist jedem Vertragsordner eine Objekt-ID zu.
 
   - Der SCC-Administrator meldet sich beim Security & Compliance Center an.
 
@@ -457,7 +455,7 @@ Ein ERP-System kann mit Microsoft 365 und Microsoft Flow verwendet werden, um di
 
   - Der Administrator fügt jedem Produktordner Produktdateien hinzu, zum Beispiel Fertigungsspezifikationen, Produktpreisgestaltung, Produktlizenzierung.
 
-  - Der Administrator weist jedem Produktordner eine Asset-ID zu.
+  - Der Administrator weist jedem Produktordner eine Objekt-ID zu.
 
   - Der SCC-Administrator meldet sich beim Security & Compliance Center an.
 
@@ -475,11 +473,11 @@ Ein ERP-System kann mit Microsoft 365 und Microsoft Flow verwendet werden, um di
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>Verwenden der Redirect 302-Antwortergebnisse zum Aufrufen der REST-API
 
-1.  Rufen Sie einen POST-Aufbewahrungsereignisaufruf mithilfe der REST-API-URL auf <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (globale Administratorrechte sind erforderlich).
+1. Rufen Sie einen POST-Aufbewahrungsereignisaufruf mithilfe der REST-API-URL auf <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (globale Administratorrechte sind erforderlich).
 
-2.  Überprüfen Sie den Antwortcode. Wenn dies 302 ist, rufen Sie die Umleitungs-URL aus der Location-Eigenschaft des Antwortheaders ab.
+2. Überprüfen Sie den Antwortcode. Wenn dies 302 ist, rufen Sie die Umleitungs-URL aus der Location-Eigenschaft des Antwortheaders ab.
 
-3.  Rufen Sie den POST-Aufbewahrungsereignisaufruf erneut mithilfe der Umleitungs-URL auf.
+3. Rufen Sie den POST-Aufbewahrungsereignisaufruf erneut mithilfe der Umleitungs-URL auf.
 
 ## <a name="credits"></a>Mitwirkende
 
