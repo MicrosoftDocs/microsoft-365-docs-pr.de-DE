@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Zusammenfassung: Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite.'
-ms.openlocfilehash: b5251d393249e9023f6f437cb3df6c074ebdf436
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637827"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668803"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Schützen von SharePoint Online-Dateien mit Vertraulichkeitsbezeichnungen
 
 Führen Sie die in diesem Artikel aufgeführten Schritte aus, um eine Office 365-Vertraulichkeitsbezeichnung so zu konfigurieren, dass Verschlüsselung und Berechtigungen für Dateien bereitgestellt werden. Diese Dateien können einer SharePoint-Bibliothek hinzugefügt werden, die für streng vertraulichen Schutz konfiguriert ist. Sie können eine Datei auch direkt von der Website öffnen und die Bezeichnung anwenden. Der Schutz durch die Verschlüsselung und Berechtigungen ist mit einer Datei verbunden, selbst wenn sie von der Website heruntergeladen wird. 
 
-Diese Schritte sind Teil einer umfangreicheren Lösung zur Konfiguration eines Schutzes streng vertraulicher Daten für SharePoint-Websites und die Dateien innerhalb dieser Websites. Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
+Diese Schritte sind Teil einer umfangreicheren Lösung zur Konfiguration eines Schutzes streng vertraulicher Daten für SharePoint-Websites und die Dateien innerhalb dieser Websites. Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
 
 Die Verwendung von Vertraulichkeitsbezeichnungen für Dateien in SharePoint Online wird nicht für alle Benutzer empfohlen, sie ist jedoch eine Option für Kunden, die für eine Teilmenge von Dateien diese Ebene des Schutzes benötigen.
 
@@ -44,7 +44,7 @@ Um diese zusätzliche Sicherheitsstufe für Dateien in einer bestimmten SharePoi
 
 - Verwenden Sie eine Vertraulichkeitsbezeichnung, wenn Sie nur eine kleine Anzahl von Bezeichnungen für die globale Nutzung und für einzelne private Teams benötigen.
 
-- Verwenden Sie eine Vertraulichkeitsunterbezeichnung, wenn Sie über eine große Anzahl von Bezeichnungen verfügen oder Bezeichnungen für streng vertrauliche Teams unter der streng regulierten Bezeichnung organisieren möchten.
+- Verwenden Sie eine Vertraulichkeitsunterbezeichnung, wenn Sie über eine große Anzahl von Bezeichnungen verfügen oder Bezeichnungen für streng vertrauliche Teams unter einer allgemeinen Bezeichnung für streng vertrauliche Dateien organisieren möchten.
 
 Verwenden Sie [diese Anweisungen ](encryption-sensitivity-labels.md) zum Konfigurieren einer separaten Bezeichnung oder einer Unterbezeichnung mit den folgenden Einstellungen:
 
@@ -67,7 +67,7 @@ Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gew�
 
 ## <a name="see-also"></a>Siehe auch
 
-[Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
