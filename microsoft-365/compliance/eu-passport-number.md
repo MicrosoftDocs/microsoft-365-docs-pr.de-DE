@@ -1,7 +1,7 @@
 ---
 title: EU-Passport-Nummer
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp EU-Passport-Nummern erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
+ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081471"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39662800"
 ---
 # <a name="eu-passport-number"></a>EU-Passport-Nummer
 
@@ -117,7 +117,7 @@ Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -156,7 +156,7 @@ Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -195,7 +195,7 @@ Ein Buchstabe, gefolgt von sechs bis acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -234,7 +234,7 @@ Acht Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -273,7 +273,7 @@ Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -312,7 +312,7 @@ Ein Buchstabe, gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -349,7 +349,7 @@ Ausführliche Informationen finden Sie im Abschnitt "französische Passport-Numm
   
 ## <a name="germany"></a>Deutschland
 
-Ausführliche Informationen finden Sie im Abschnitt "Deutschland Passport-Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Deutsche Passport-Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Griechenland
 
@@ -363,7 +363,7 @@ Zwei Buchstaben gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -402,7 +402,7 @@ Zwei Buchstaben, gefolgt von sechs oder sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -445,7 +445,7 @@ Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -531,7 +531,7 @@ Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -609,7 +609,7 @@ Acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -648,7 +648,7 @@ Sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -734,7 +734,7 @@ Ein Buchstabe, gefolgt von sechs Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -773,7 +773,7 @@ Acht oder neun Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -812,7 +812,7 @@ Eine Ziffer oder ein Buchstabe (ohne Groß-/Kleinschreibung), gefolgt von sieben
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -857,7 +857,7 @@ Zwei Buchstaben, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
