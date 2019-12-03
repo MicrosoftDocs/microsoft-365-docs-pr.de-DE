@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 069f4dac1b04a75ff30339f8cecde4e8f82c044a
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699735"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668813"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>Compliance-Angebot: Strafverfolgungs-Informationsdienste (CJIS)-Sicherheitsrichtlinie
 
@@ -40,14 +40,14 @@ Erfahren Sie mehr über die Vorteile der CJIS-Sicherheitsrichtlinie in der Micro
 
 Erfahren Sie, wie Sie Ihre CJIS-Sicherheitsrichtlinie mit unserem Azure Security and Compliance Blueprint beschleunigen: [Laden Sie die CJIS-Implementierungsrichtlinien für Microsoft Government Cloud Services herunter](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - [Office 365 US-Regierung](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI Cloud Service entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Das FBI bietet keine Zertifizierung von Microsoft Compliance mit CJIS-Anforderungen. Stattdessen ist eine Microsoft-Bescheinigung in Vereinbarungen zwischen Microsoft und der CJIS-Autorität eines Staates sowie zwischen Microsoft und seinen Kunden enthalten.
 
@@ -71,8 +71,6 @@ Wenden Sie sich an Ihren Microsoft-Konto Vertreter, um Informationen über die Z
 
 Microsoft unterzeichnet eine Informations Vereinbarung mit einer staatlichen CJIS-System Agentur (CSA); Sie können eine Kopie vom CSA ihres Staates anfordern. Darüber hinaus bietet Microsoft Kunden umfassende Sicherheits-, Datenschutz-und Kompatibilitätsinformationen. Kunden können auch Sicherheits-und Konformitätsberichte überprüfen, die von unabhängigen Prüfern erstellt wurden, damit Sie überprüfen können, ob Microsoft Sicherheitssteuerelemente (wie ISO 27001) implementiert hat, die dem relevanten Überwachungsbereich entsprechen.
 
-Staaten mit entsprechender CJIS-Dokumentation vom August 2017 umfassen: Alaska, Arizona, Arkansas, Kalifornien, Colorado, Hawaii, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nevada, New Jersey , New York, North Carolina, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Virginia, Utah, Vermont und Washington.
-
 **Wo beginne ich mit dem Compliance-Aufwand meiner Agentur?**
 
 [CJIS-Sicherheitsrichtlinie](https://aka.ms/cjis-security-policy) umfasst die Vorsichtsmaßnahmen, die Ihre Agentur zum Schutz von CJI ergreifen muss. Darüber hinaus können Sie mit Ihrem Microsoft-Konto Vertreter Kontakt mit denjenigen aufnehmen, die mit den Anforderungen Ihrer Gerichtsbarkeit vertraut sind.
@@ -83,10 +81,10 @@ Staaten mit entsprechender CJIS-Dokumentation vom August 2017 umfassen: Alaska, 
 - [CJIS-Sicherheitsrichtlinie](https://aka.ms/cjis-security-policy)
 - [CJIS-Sicherheitsrichtlinie Version 5,3 Backgrounder](https://aka.ms/cjis-backgrounder)
 - [CJIS-Implementierungsrichtlinien für Azure Government](https://aka.ms/cjisimplementationguidelines)
-- [Microsoft Common Controls – Hub-Compliance-Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Government-Cloud](https://go.microsoft.com/fwlink/?linkid=2087246)
+- [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/?linkid=2087246)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf) herunter.
