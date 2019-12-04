@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631030"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668873"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien Aufbewahrungsbezeichnungen und Verhindern von Datenverlust
 
-Führen Sie die in diesem Artikel aufgeführten Schritte durch, um Aufbewahrungsbezeichnungen und DLP-Richtlinien für SharePoint Online-Teamwebsites mit Basisschutz, Schutz vertraulicher und streng vertraulicher Daten zu entwerfen und bereitzustellen. Weitere Informationen zu diesen drei Schutzebenen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection).
+Führen Sie die in diesem Artikel aufgeführten Schritte durch, um Aufbewahrungsbezeichnungen und DLP-Richtlinien für SharePoint Online-Teamwebsites mit Basisschutz, Schutz vertraulicher und streng vertraulicher Daten zu entwerfen und bereitzustellen. Weitere Informationen zu diesen drei Schutzebenen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md).
   
 ## <a name="how-this-works"></a>Funktionsweise
 
@@ -150,7 +150,7 @@ Gehen Sie wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer b
     
 14. Klicken Sie im Bereich **Customize policy tips and email notifications** (Anpassen der Richtlinientipps und der E-Mail-Benachrichtigungen) auf **Customize the policy tip text** (Den Tipptext der Richtlinie als nächstes anpassen).
     
-15. Geben oder fügen Sie in das Textfeld einen der folgenden Tipps ein, abhängig davon, ob Sie Vertraulichkeitsbezeichnungen zum Schutz streng vertraulicher Dateien verwenden:
+15. Geben oder fügen Sie in das Textfeld einen der folgenden Tipps ein, sofern Sie optional Vertraulichkeitsbezeichnungen zum Schutz streng vertraulicher Dateien verwenden:
     
   - Wenn Sie eine Datei für einen Benutzer außerhalb der Organisation freigeben möchten, laden Sie die Datei herunter, und öffnen Sie sie. Klicken Sie auf „Datei“ > „Dokument schützen“ > „Mit Kennwort verschlüsseln“, und geben Sie dann ein sicheres Kennwort ein. Senden Sie das Kennwort in einer separaten E-Mail oder auf andere Weise.
   - Streng vertrauliche Dateien werden durch Verschlüsselung geschützt. Nur externe Benutzer, die Berechtigungen für diese Dateien von Ihrer IT-Abteilung erhalten haben, können diese lesen.
