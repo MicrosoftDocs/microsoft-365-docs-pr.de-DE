@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
+ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818837"
+ms.locfileid: "39819131"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Sensitivitäts Bezeichnungen mit Microsoft Teams, Office 365 Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -77,15 +77,15 @@ Diese Bilder zeigen:
   }
 ```
 
-Office 365 verwendet die alten Klassifizierungen für neue Gruppen und SharePoint-Websites nicht mehr, wenn Sie diese Vorschau aktivieren. Wenn Sie [Azure AD Site Klassifizierung](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificationlist"]) verwendet haben, zeigen vorhandene Gruppen und Websites weiterhin die alten Klassifizierungen an. Um die neuen Klassifizierungen anzuzeigen, konvertieren Sie Sie. Informationen zum Konvertieren dieser Website finden Sie unter [Wenn Sie klassische Azure AD Site Klassifizierung verwendet](#if-you-used-classic-azure-ad-site-classification)haben.
+Office 365 verwendet die alten Klassifizierungen für neue Gruppen und SharePoint-Websites nicht mehr, wenn Sie diese Vorschau aktivieren. Wenn Sie [Azure AD Site Klassifizierung](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificationlist"]) verwendet haben, zeigen vorhandene Gruppen und Websites weiterhin die alten Klassifizierungen an. Um die neuen Klassifizierungen anzuzeigen, konvertieren Sie Sie. Informationen zum Konvertieren dieser Website finden Sie unter [Wenn Sie klassische Azure AD Site Klassifizierung verwendet](#if-you-used-classic-azure-ad-site-classification)haben. 
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Festlegen von Standort-und Gruppeneinstellungen beim Erstellen (oder bearbeiten) von Sensitivitäts Bezeichnungen
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Festlegen von Standort-und Gruppeneinstellungen beim Erstellen oder Bearbeiten von Vertraulichkeits Bezeichnungen
 
-Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus, um Sensitivitäts Bezeichnungen zu erstellen. Änderungen an diesen Einstellungen können bis zu 24 Stunden synchron dauern.
+Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus, um Vertraulichkeits Bezeichnungen zu erstellen oder zu bearbeiten. Sie müssen diese Schritte ausführen, damit die neuen Sensitivitäts Bezeichnungen mit Websites und Gruppen arbeiten können, auch wenn bereits Beschriftungen definiert sind. Änderungen an diesen Einstellungen können bis zu 24 Stunden synchron dauern.
 
 1. Wählen Sie im Microsoft 365 Compliance Center **Klassifizierungs** > **Sensitivitäts Bezeichnungen**aus.
 
-2. Wählen Sie **Beschriftung erstellen**aus.
+2. Wählen Sie **Beschriftung erstellen**aus. Wenn Sie bereits über eine Bezeichnung verfügen, fahren Sie mit dem nächsten Schritt fort.
 
 3. Wählen Sie die gewünschten Optionen aus, und wählen Sie dann auf der Registerkarte **Website und Gruppeneinstellungen** Folgendes aus:
 
@@ -97,6 +97,14 @@ Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus
 
 > [!IMPORTANT]
 > Nur die Standort-und Gruppeneinstellungen werden wirksam, wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder einen Standort anwenden. Andere Einstellungen wie Verschlüsselung und Inhalts Markierung werden nicht auf alle Inhalte innerhalb des Teams, der Gruppe oder der Website angewendet. Wenn Sie eine Bezeichnung erstellen und die Einstellungen für die Website und die Gruppe nicht aktivieren, ist die Bezeichnung auch dann verfügbar, wenn Benutzer Teams, Gruppen und Websites erstellen, es wird jedoch nichts tun, wenn Benutzer Sie anwenden.
+
+[Informationen zum Veröffentlichen einer Vertraulichkeits Bezeichnung](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a>Problembehandlung bei der Sensitivitäts Bezeichnungs Bereitstellung
+
+Wenn beim Erstellen eines Teams oder Office 365 Gruppe Probleme auftreten, nachdem Sie diese Einstellungen aktiviert oder eine Beschriftungs Beschreibung geändert haben, speichern Sie die Beschriftung, warten Sie einige Stunden, und versuchen Sie dann erneut, das Team oder die Office 365 Gruppe zu erstellen.
+
+Wenn Sie die neue Sensitivitäts Bezeichnung immer noch nicht in SharePoint Online sehen können, wenden Sie sich umgehend an den Microsoft-Support.
 
 [Informationen zum Veröffentlichen einer Vertraulichkeits Bezeichnung](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
