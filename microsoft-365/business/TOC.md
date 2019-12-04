@@ -6,10 +6,11 @@
 ## Setup
 ### [Übersicht über die Einrichtung](set-up-overview.md)
 ### [Einrichten von Microsoft 365 Business](set-up.md)
+### [Sichere Windows 10-Computer](secure-win-10-pcs.md)
 ### [Aktualisieren auf Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Vorbereiten für die Office-Clientbereitstellung](prepare-for-office-client-deployment.md)
 ### [Unterstützen von Benutzern beim Installieren von Office](help-users-install-office.md)
-### [Zugriff auf lokale Ressourcen]()
+### [Zugriff auf lokale Ressourcen]
 #### [Ermöglichen, dass der Domäne beigetretene Windows 10-Geräte verwaltet werden](manage-windows-devices.md)
 #### [Zugreifen auf Ressourcen von einem in Azure AD eingebundenen Gerät](access-resources.md)
 ## Einrichten der Benutzergeräte
