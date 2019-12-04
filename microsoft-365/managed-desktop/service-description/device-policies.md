@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 93c7cca75f513008706b4a52b4bbc1bc033341aa
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 5eb91a45d844863b27ee208bda2bee812789851e
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830483"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813845"
 ---
 # <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -20,19 +20,12 @@ ms.locfileid: "35830483"
 
 <!-- Device configuration and Security Addendum-->
 
-Wenn ein neues Microsoft Managed Desktop-Gerät eingerichtet wird, stellen wir sicher, dass die richtige Konfiguration für Microsoft Managed Desktop optimiert wurde. Dies umfasst eine Reihe von Standardrichtlinien, die als Teil des Onboarding-Prozesses festgelegt werden. Um Konflikte zu vermeiden, sollten Sie diese Richtlinien nicht ändern. 
+Wenn ein neues Microsoft Managed Desktop-Gerät eingerichtet wird, stellen wir sicher, dass die richtige Konfiguration für Microsoft Managed Desktop optimiert wurde. Dies umfasst eine Reihe von Standardrichtlinien, die als Teil des Onboarding-Prozesses festgelegt werden. Diese Richtlinien werden nach Möglichkeit mithilfe der mobilen Geräteverwaltung (Mobile Device Management, MDM) bereitgestellt. Weitere Informationen finden Sie unter [Verwaltung mobiler Geräte](https://docs.microsoft.com/windows/client-management/mdm/). 
 
-Geräte werden mit einem Signaturbild eingehen und dann der Azure Active Directory-Domäne beitreten, wenn sich der erste Benutzer anmeldet. Das Gerät installiert automatisch erforderliche Richtlinien und Anwendungen, ohne dass ein IT-Eingriff erforderlich ist.
+>[!NOTE]
+>Um Konflikte zu vermeiden, sollten Sie diese Richtlinien nicht ändern.
 
-## <a name="why-mdm-over-group-policy"></a>Warum MDM über Gruppenrichtlinien
-
-Es gibt einige Gründe für die Verwendung der mobilen Geräteverwaltung (Mobile Device Management, MDM) anstelle von Gruppenrichtlinien:
-
-- Sicherheits-MDM-Richtlinien sind sicherer. Gruppenrichtlinien sind für eine optimale Zusammenarbeit mit der lokalen Identität konzipiert, während MDM für die optimale Verwendung von Cloud Identity Management (Azure Active Directory) entwickelt wurde.
-- Zuverlässigkeit-MDM-Richtlinien bieten eine zuverlässigere Richtlinienbereitstellung. Darüber hinaus überschreiben MDM-Einstellungen Gruppenrichtlinienobjekt-Richtlinien (GPO). Ab Windows 10, Version 1803, werden MDM-Einstellungen Vorrang vor den Gruppenrichtlinien Werten erhalten, wodurch Kunden in modernes Management wechseln. 
-- Align with Microsoft Managed Desktop Weitblick-bietet umfassendere Überwachung der Richtlinienbereitstellung und unterstützt den gruppenbasierten Ansatz für eine schrittweise Einführung von Richtlinienänderungen mit der Möglichkeit, die Bereitstellung bei Bedarf anzuhalten/fortzusetzen.
-
-Weitere Informationen finden Sie unter [Verwaltung mobiler Geräte](https://docs.microsoft.com/windows/client-management/mdm/). 
+Geräte werden mit einem Signaturbild eingehen und dann der Azure Active Directory Domäne beitreten, wenn sich der erste Benutzer anmeldet. Auf dem Gerät werden erforderliche Richtlinien und Anwendungen automatisch ohne Eingriff von Ihrem IT-Personal installiert.
 
 ## <a name="default-policies"></a>Standardrichtlinien
 
@@ -54,4 +47,4 @@ Gemessene Verbindungen | Standardmäßig sind Aktualisierungen über gemessene V
 
  Diese Richtlinien werden hinzugefügt, um die Sicherheit für hochregulierte Branchen zu verbessern. 
  - **Sicherheitsüberwachung**: Microsoft überwacht die Geräte mit [Advanced Threat Protection von Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Wenn eine Bedrohung erkannt wird, wird Microsoft den Kunden Benachrichtigen, das Gerät isolieren und das Problem Remote beheben. 
- - **Deaktivieren von PowerShell v2**: Microsoft hat PowerShell v2 im August 2017 entfernt. Dieses Feature wurde auf allen Microsoft Managed Desktop-Geräten deaktiviert. Weitere Informationen zu dieser Änderung finden Sie unter [Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)-veraltete.
+ - **Deaktivieren von PowerShell v2**: Microsoft hat PowerShell v2 im August 2017 entfernt. Dieses Feature wurde auf allen Microsoft Managed Desktop-Geräten deaktiviert. Weitere Informationen zu dieser Änderung finden Sie unter [Windows PowerShell 2,0-veraltete](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

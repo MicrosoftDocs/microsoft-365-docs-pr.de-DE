@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Schulungs fähige Klassifizierungen, wenn eine der Feld Klassifizierungen von Ready to use Ihren Anforderungen nicht entspricht. Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Thema wird gezeigt, wie Sie eine benutzerdefinierte Klassifizierung erstellen.
-ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633982"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813373"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Erstellen einer Schulungs Klassifizierer (Vorschau)
 
@@ -28,6 +28,9 @@ Weitere Informationen zu den verschiedenen Klassifizierungstypen finden Sie unte
 Diese Zeitachse spiegelt eine Beispielbereitstellung wider.
 
 ![Schulungs-und Klassifizierungs Zeitplan](media/trainable-classifier-deployment-timeline_border.png)
+
+> [!TIP]
+> Das Anmelden ist zum ersten Mal für Schulungs orientierte Klassifizierungen erforderlich. Es dauert zwölf Tage, bis Microsoft 365 eine Basisbewertung ihrer organisationsinhalte abgeschlossen hat.
 
 ## <a name="seed-content"></a>Seed-Inhalt
 
@@ -42,9 +45,6 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 
 > [!TIP]
 > Optimale Ergebnisse erzielen Sie, wenn Sie 10.000 Elemente in Ihrem Test Beispiel mit einer gleichmäßigen Verteilung positiver und negativer Übereinstimmungen festgelegt haben.
-
-> [!TIP]
-> Das Anmelden ist zum ersten Mal für Schulungs orientierte Klassifizierungen erforderlich. Es dauert zwölf Tage, bis Microsoft 365 eine Basisbewertung ihrer organisationsinhalte abgeschlossen hat.
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Vorgehensweise Erstellen einer Schulungs Klassifizierer
 
@@ -107,6 +107,8 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 ![Feld "Elemente überprüfen"](media/classifier-trainable-review-detail.png)
 
 19. Über *prüfen Sie mindestens 200* Elemente.
+
+<!-- insert Analyze steps here-->
 
 20. Überprüfen Sie weiter, bis die Genauigkeit mindestens 70% erreicht und `Publish the classifier` der Status `Ready to use`lautet.
 

@@ -3,7 +3,7 @@ title: Verwenden von Sensitivitäts Bezeichnungen mit Microsoft Teams, Office 36
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/13/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: 5fc7fec199482449baf9174d6e854d0a5564faa6
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686208"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818837"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Sensitivitäts Bezeichnungen mit Microsoft Teams, Office 365 Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -32,11 +32,13 @@ Wenn Sie Sensitivitäts Bezeichnungen im [Microsoft 365 Compliance Center](https
 
 Wenn Sie eine Bezeichnung auf ein Team oder eine Gruppe anwenden, gilt die Bezeichnung automatisch für die verbundene SharePoint-Teamwebsite und umgekehrt.
 
-Nun können Sie auch Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren. [Weitere Informationen](sensitivity-labels-sharepoint-onedrive-files.md)
+Nun können Sie auch Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren. [Weitere Informationen](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Informationen zur öffentlichen Vorschau für Microsoft Teams, Office 365 Gruppen und SharePoint-Websites
 
 Vertraulichkeits Bezeichnungen für Microsoft Teams, Office 365 Gruppen und SharePoint-Websites werden schrittweise für Mandanten bereitgestellt und können vor der endgültigen Version geändert werden.
+
+Die öffentliche Vorschau funktioniert nicht mit Office 365 Inhalts Zustellungs Netzwerken (CDNs).
 
 ## <a name="overview"></a>Übersicht
 
@@ -77,9 +79,9 @@ Diese Bilder zeigen:
 
 Office 365 verwendet die alten Klassifizierungen für neue Gruppen und SharePoint-Websites nicht mehr, wenn Sie diese Vorschau aktivieren. Wenn Sie [Azure AD Site Klassifizierung](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificationlist"]) verwendet haben, zeigen vorhandene Gruppen und Websites weiterhin die alten Klassifizierungen an. Um die neuen Klassifizierungen anzuzeigen, konvertieren Sie Sie. Informationen zum Konvertieren dieser Website finden Sie unter [Wenn Sie klassische Azure AD Site Klassifizierung verwendet](#if-you-used-classic-azure-ad-site-classification)haben.
 
-## <a name="set-site-and-group-settings-when-you-create-sensitivity-labels"></a>Festlegen von Standort-und Gruppeneinstellungen beim Erstellen von Sensitivitäts Bezeichnungen
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Festlegen von Standort-und Gruppeneinstellungen beim Erstellen (oder bearbeiten) von Sensitivitäts Bezeichnungen
 
-Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus:
+Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus, um Sensitivitäts Bezeichnungen zu erstellen. Änderungen an diesen Einstellungen können bis zu 24 Stunden synchron dauern.
 
 1. Wählen Sie im Microsoft 365 Compliance Center **Klassifizierungs** > **Sensitivitäts Bezeichnungen**aus.
 
@@ -149,7 +151,7 @@ Die folgenden apps und Dienste unterstützen die Sensitivitäts Bezeichnungen in
 - Microsoft 365 Compliance Center
 - SharePoint
 - Outlook im Web
-- Microsoft Teams
+- Teams
 - SharePoint Admin Center
 - Azure AD Admin Center
 

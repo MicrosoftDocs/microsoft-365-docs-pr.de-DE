@@ -4,13 +4,14 @@ description: Geräte, die sich kurz vor dem Ruhestand befinden, die Sie dennoch 
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ccc4d7e2fae0a8e5ee6e3a7d71fb55edc8f04930
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640586"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813875"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -23,7 +24,7 @@ Um eine optimale Benutzerfreundlichkeit zu gewährleisten, unterstützt Microsof
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der folgenden Modelle sein und die aufgeführten Spezifikationen für RAM, Prozessorfamilie und Speicherplatz erfüllen oder übertreffen. Keine andere Anpassung wird unterstützt.
 
-Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit ihren kommerziellen Kanal Kontakten zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen.
+
 
 >[!NOTE]
 >In dieser Tabelle ist das "pensionierungs Datum" das Datum, an dem dieses Modell nicht mehr von Microsoft Managed Desktop unterstützt wird. An diesem Tag werden alle registrierten Geräte dieses Modells aus dem Microsoft Managed Desktop entfernt, unabhängig davon, wann Sie registriert wurden.
@@ -32,9 +33,9 @@ Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen mö
 
 | Modell  | Minimale Angaben  | Zusätzliche Anforderungen   | Ruhestands Datum |
 |---------|---------|---------|---------|
-| [HP EliteBook 830/840/850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich  | **15. Februar 2023** |
-|[Surface-Laptop](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |
-|[Surface pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2022** |
+| HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich  | **15. Februar 2023** |
+|Surface-Laptop| 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |
+|Surface pro| 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2022** |
 
 
 Darüber hinaus muss das Gerät auch:

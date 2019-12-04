@@ -4,15 +4,16 @@ description: Informationen zum Aktualisieren von Branchen-apps, die auf Microsof
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012410"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813855"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Verwalten von Branchenanwendungen in Microsoft Managed Desktop
 
@@ -41,7 +42,7 @@ Die aktualisierte APP wird auf den Geräten Ihrer Benutzer bereitgestellt.
 ## <a name="update-line-of-business-apps-in-intune"></a>Aktualisieren von Branchenanwendungen in InTune
 
 **So aktualisieren Sie Ihre Branchen-apps in InTune**
-1. Melden Sie sich beim [Azure-Portal](https://azure.portal.com)an.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com)an.
 2. Wählen Sie **alle Dienste** > **InTune**aus. InTune befindet sich im Abschnitt **Überwachung + Verwaltung** .
 3. Wählen Sie **Client apps #a0 apps**aus.
 4. Suchen Sie Ihre APP in der Liste der apps, und wählen Sie Sie aus.

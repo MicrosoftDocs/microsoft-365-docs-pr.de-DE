@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Übersicht über die Installationsschritte für Microsoft 365 Business.
-ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721557"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812776"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -44,16 +44,15 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
         - Sie können Benutzer auch später im Admin Center [Hinzufügen](add-users-m365b.md) .
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Schritt 2: Einrichten von Sicherheitsrichtlinien und Konfigurieren von Geräten 
 
-  - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-data-and-devices) , um Geräte-und Sicherheitsrichtlinien zu konfigurieren. 
+  - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-your-organization) , um Geräterichtlinien zu konfigurieren. 
   - Sie können auch später im [Admin Center](view-policies-and-devices.md) und im [InTune-Portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)weitere hinzufügen oder bearbeiten.
-  - Zusätzlich zu den Sicherheitseinstellungen im Setup-Assistenten können Sie die Sicherheit durch Hinzufügen der folgenden Einstellungen verbessern:
+  - Außerdem werden mit dem Setup-Assistenten grundlegende Bedrohungen und Verhinderung von Datenverlust Einstellungen eingerichtet.
+  
+  Zusätzlich zu den Sicherheitseinstellungen im Setup-Assistenten können Sie die Sicherheit durch Hinzufügen der folgenden Einstellungen verbessern:
 
       - **E-Mail-Schutz vor Schadsoftware**
-      - **Sichere Links für Advanced Threat Protection (ATP)**
-      - **Sichere Anlagen in ATP**
       - **ATP-Anti-Phishing**
       - **Exchange Online-Archivierung**
-      - **Verhinderung von Datenverlust**
       - **Azure Information Protection (plan1**)
 
           Für erste Schritte siehe [Einrichten von erweiterten Sicherheitsrichtlinien](set-up-advanced-security.md).
@@ -62,10 +61,12 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Schritt 3: Einrichten und Verwalten von Windows 10-Geräten
 
-   Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien, die Sie in [Schritt 2](#step-2-set-up-security-policies-and-configure-devices) eingerichtet haben, darauf angewendet.
+Nachdem Sie den Assistenten für die Einrichtung ausgeführt haben, sollten Sie alle Windwos 10-Computer in Ihrer Organisation proctect.
+  
+- Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Führen Sie die Schritte unter [Secure Windows 10 PCs](secure-win-10-pcs.md) aus, um Richtlinien für Windows 10-Geräte einzurichten.
 
-   - Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-data-and-devices) , um Richtlinien für Windows 10-Geräte zu konfigurieren.
+Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien, die Sie für Windows 10-Computer festgelegt haben, auf diese angewendet. Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md).
 
 ## <a name="step-4-install-office-365-business"></a>Schritt 4: Installieren von Office 365 Business
 - Sie können Office auf den Windows-Geräten automatisch mithilfe des [Setup-Assistenten](set-up.md#deploy-office-365-client-apps)installieren.
@@ -82,4 +83,6 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
 
     - Wenn Ihr Unternehmen über ein lokales Active Directory verfügt, das einige lokale Ressourcen enthält (beispielsweise Dateifreigaben und Drucker), können Sie Ihren Azure AD-verbundenen Geräten Zugriff auf diese Ressourcen gewähren, indem Sie die folgenden Schritte ausführen: [zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business](access-resources.md).
 
-  
+## <a name="see-also"></a>Siehe auch
+
+[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

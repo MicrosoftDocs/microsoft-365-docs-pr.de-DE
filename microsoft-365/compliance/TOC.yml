@@ -291,7 +291,7 @@
               href: view-label-activity-for-documents.md
             - name: Anzeigen der Data Governance-Berichte
               href: view-the-data-governance-reports.md
-        - name: Veranstaltungen
+        - name: Ereignisse
           items:
             - name: Ereignisbasierte Aufbewahrung
               href: event-driven-retention.md
@@ -317,6 +317,8 @@
           href: export-search-results.md
         - name: Exportieren eines Berichts für die Inhaltssuche
           href: export-a-content-search-report.md
+        - name: Verwenden des eDiscovery-Export Tools in Microsoft Edge
+          href: configure-edge-to-export-search-results.md
         - name: Suchen nach und Löschen von E-Mail-Nachrichten
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Durchsuchen der cloudbasierten Postfächer lokaler Benutzer in Office 365

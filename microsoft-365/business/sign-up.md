@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
-ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 3470d07f98a1c5806a27d8f21f152a818e4a0371
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718717"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812796"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -42,6 +43,12 @@ Es gibt drei Möglichkeiten, Microsoft 365 Business zu erhalten:
 - [Registrieren Sie sich für einen Privat-oder Familienplan,](https://go.microsoft.com/fwlink/?linkid=2109398) Wenn Sie nicht für ein Unternehmen kaufen. 
 
 ## <a name="sign-up-steps"></a>Registrieren der Schritte
+
+Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Anmeldevorgang zu geben.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
+
+Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Führen Sie die folgenden Schritte aus, um sich anzumelden und Microsoft 365 für Ihr Unternehmen zu erwerben:
 
@@ -82,3 +89,6 @@ Wählen Sie **Gehe zu Setup** aus, um weitere Schritte wie das Hinzufügen von m
 
 Informationen zum Setup finden Sie unter [Set up](set-up.md).
 
+## <a name="see-also"></a>Siehe auch
+
+[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

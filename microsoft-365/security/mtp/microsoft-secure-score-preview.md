@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55f962a82fcbacb5ca1c5e3026469880489fd5b7
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076329"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676802"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
@@ -42,6 +42,8 @@ Darüber hinaus können Sie über die [Microsoft Graph-API](https://www.microsof
 ## <a name="how-it-works"></a>Funktionsweise
 
 Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben oder zum Beheben der Verbesserungs Aktion mit einer Drittanbieteranwendung oder-Software. Einige Verbesserungs Aktionen geben nur dann Punkte, wenn Sie vollständig abgeschlossen sind, und einige geben partielle Punkte an, wenn Sie für einige Geräte oder Benutzer abgeschlossen werden. Wenn Sie eine der Verbesserungs Aktionen nicht oder nicht durchführen möchten, können Sie das Risiko oder das verbleibende Risiko akzeptieren.
+
+Wir zeigen Ihnen den vollständigen Überblick über mögliche Verbesserungen, unabhängig von der Lizenz, sodass Sie bewährte Methoden für die Sicherheit verstehen und Ihre Punktzahl verbessern können. Ihre absolute Sicherheitsposition wird durch Secure Score dargestellt, was unabhängig von den Produktlizenzen, die Ihre Organisation besitzt, gleich bleibt. Beachten Sie, dass die Sicherheit mit der Benutzerfreundlichkeit ausgeglichen werden sollte, und nicht jede Empfehlung kann für Ihre Umgebung funktionieren.
 
 Ihre Punktzahl wird in Echtzeit aktualisiert, um die Informationen widerzuspiegeln, die auf den Seiten Visualisierungen und Verbesserungs Aktionen angezeigt werden. Secure Score synchronisiert auch täglich, um Systemdaten zu ihren erreichten Punkten für jede Aktion zu erhalten.
 

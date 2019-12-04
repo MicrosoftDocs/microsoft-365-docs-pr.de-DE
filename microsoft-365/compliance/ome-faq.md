@@ -3,7 +3,7 @@ title: FAQ zur Office 365-Nachrichtenverschlüsselung
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 8fea73b73ab49dcfb0ac67935a9e027e87eb721a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38686310"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818847"
 ---
 # <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
 
@@ -133,7 +133,11 @@ Ja! Sie können Nachrichtenfluss Regeln in Exchange Online oder mithilfe von DLP
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Kann ich an ein freigegebenes Postfach gesendete verschlüsselte Nachrichten öffnen?
 
-Ja! Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt. Es gelten einige Einschränkungen.
+Ja! Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt.
+
+- Benutzer können geschützte e-Mail-Nachrichten in einem freigegebenen Postfach öffnen, in dem das freigegebene Postfach eine geschützte e-Mail als Teil einer Verteilergruppe erhalten hat.
+
+- Benutzer können Anlagen anzeigen, die den Schutz von e-Mails erben, wenn Sie Outlook für Windows, Outlook für Mac und Outlook im Internet verwenden.
 
 ## <a name="is-delegated-access-supported"></a>Wird Delegierter Zugriff unterstützt?
 

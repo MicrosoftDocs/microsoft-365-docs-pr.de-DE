@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 2d8bececbaf4c249e13f31e314b42afc1bdd31c3
-  ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+  ms.openlocfilehash: 38706a53c978009fa3d890fdbcc759c2d1a57d3e
+  ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/21/2019
-  ms.locfileid: "38757642"
+  ms.lasthandoff: 12/03/2019
+  ms.locfileid: "39812833"
 conceptualContent:
   items:
   - title: Was ist Microsoft 365 Business?
@@ -38,10 +38,10 @@ conceptualContent:
       text: Häufig gestellte Fragen
   - title: Einrichten von Microsoft 365 Business
     links:
-    - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
-      itemType: video
+    - url: set-up.md
+      itemType: how-to-guide
       text: 1. Ausführen des Setup-Assistenten
-    - url: protection-settings-for-windows-10-pcs.md
+    - url: secure-win-10-pcs.md
       itemType: how-to-guide
       text: 2. Sichern Ihrer PCs
     - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start

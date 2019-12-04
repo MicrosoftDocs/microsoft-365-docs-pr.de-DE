@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6ea67a9214f5c52f02f7b4d5888b59971951d033
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7dae370f9fd41ba0a04dd4c327a238dac3841da3
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690515"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676652"
 ---
 # <a name="compliance-offering-national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Compliance-Angebot: National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -26,7 +26,7 @@ Das National Institute of Standards and Technology (NIST) fördert und pflegt Me
 
 Die Hauptprioritäten der FICIC waren das Einrichten einer Reihe von Standards und Methoden, um Organisationen bei der Verwaltung des Cyber-Risikos zu unterstützen und gleichzeitig eine geschäftliche Effizienz zu ermöglichen. Das NIST-Framework richtet sich an das Cyber-Risiko, ohne zusätzliche regulatorische Anforderungen für Regierungs-und Privatsektor-Organisationen aufzuerlegen.
 
-Das FICIC verweist auf global anerkannte Standards einschließlich NIST SP 800-53, die in Anhang A des NIST- [2014-Frameworks zum verbessern kritischer Infrastruktur Cyber](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)gefunden wurden. Jedes Steuerelement innerhalb des FICIC-Frameworks wird den entsprechenden NIST 800-53-Steuerelementen in der moderaten Baseline FedRAMP zugeordnet.
+Das FICIC verweist auf global anerkannte Standards einschließlich NIST SP 800-53, die in Anhang A des NIST- [Frameworks zum Verbessern der Cyber von kritischen Infrastrukturen](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)gefunden wurden. Jedes Steuerelement innerhalb des FICIC-Frameworks wird den entsprechenden NIST 800-53-Steuerelementen in der moderaten Baseline FedRAMP zugeordnet.
 
 ## <a name="microsoft-and-the-nist-csf"></a>Microsoft und das NIST-GfK
 
@@ -37,11 +37,11 @@ Erfahren Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance-Ma
 - [Download der Azure Security and Compliance Blueprint-NIST CSF Risk Assessment Checkliste](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Weitere Informationen zur Bewertung des NIST-GFK für Office 365 im Compliance-Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 für Government](https://aka.ms/d365-compliance-list)
-- [Office 365 und Office 365 US-Regierung](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 und Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audit-cycle-and-certification"></a>Überwachungszyklus und Zertifizierung
 
@@ -98,12 +98,12 @@ Microsoft bietet die umfassendsten Angebote im Vergleich zu anderen Anbietern vo
 
 - [Microsoft Cloud Services-Autorisierungen](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Zuordnen von Microsoft Cyber-angeboten zu: NIST Cyber Framework (CSF), CIS Controls, ISO27001:2013 und HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
-- [2014 Framework zur Verbesserung der Cyber von kritischen Infrastrukturen](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)
+- [Framework zum Verbessern der kritischen Infrastruktur Cyber](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [Presidential Executive Order zur Stärkung der Cyber von föderalen Netzwerken und kritischer Infrastruktur](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
-- [Microsoft Government-Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Onlinedienstbedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf) herunter.

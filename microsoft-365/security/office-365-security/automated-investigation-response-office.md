@@ -3,7 +3,7 @@ title: Automatische Vorfall Antwort (Air) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673401"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813915"
 ---
 # <a name="automated-incident-response-air-in-office-365"></a>Automatische Vorfall Antwort (Air) in Office 365
 
 Mit den Funktionen für automatisierte Vorfall Reaktionen (Air) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Mit Air können Sie Ihre Security Operations-Teams effizienter und effektiver betreiben.
 - Verwenden Sie diesen Artikel, um einen Überblick über die Funktionsweise von Air zu erhalten.
 - Informationen zum Einstieg in die Verwendung von Air finden Sie unter [Automatisches untersuchen und reagieren auf Bedrohungen in Office 365](office-365-air.md).
-
-> [!NOTE]
-> Sie müssen ein globaler Administrator, Sicherheitsadministrator, Sicherheits Operator oder Sicherheits Leser sein, um auf die Air-Funktionen zugreifen zu können. Weitere Informationen zu diesen Berechtigungen finden Sie unter [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
@@ -47,24 +44,22 @@ Die folgenden Abschnitte enthalten weitere Details zu Air, einschließlich Detai
 
 [Warnungen](../../compliance/alert-policies.md#viewing-alerts) stellen Auslöser für Sicherheitsvorgänge-Team Workflows für die Vorfall Antwort dar. Priorisieren des richtigen Warnungs Satzes für die Untersuchung, wobei sichergestellt wird, dass keine Bedrohungen unbehandelt sind, ist eine Herausforderung. Wenn Untersuchungen zu Warnungen manuell durchgeführt werden, müssen Sicherheits Betriebsteams Entitäten (beispielsweise Inhalte, Geräte und Benutzer), die von Bedrohungen bedroht sind, jagen und korrelieren. Solche Aufgaben und Workflows sind sehr zeitaufwendig und umfassen mehrere Tools und Systeme. Mit Air werden Untersuchungen und Antworten in wichtige Warnungen zur Sicherheits-und Bedrohungs Verwaltung automatisiert, die ihre Sicherheitsantwort-Textbuch automatisch auslösen. 
 
-In der ersten Version von Air (Anfang April 2019) werden Warnungen, die von folgenden Warnungsrichtlinien für einzelne Ereignisse generiert werden, automatisch untersucht. 
+In der ersten Version von Air (Anfang April 2019) werden von den folgenden Arten von Warnungsrichtlinien für einzelne Ereignisse generierte Warnungen automatisch untersucht:  
 
 - Ein potenziell böswilliger URL-Klick wurde erkannt.
-
 - Vom Benutzer als Phishing gemeldete e-Mail *
-
 - E-Mail-Nachrichten mit Schadsoftware nach der Zustellung entfernt *
-
 - E-Mail-Nachrichten mit gelöschten Phishing-URLs nach der Zustellung *
-
 - Erkannte verdächtige e-Mail-Sende Muster #
-
 - Benutzer vom Senden von e-Mails eingeschränkt #
 
 > [!NOTE]
 > Die mit einem Sternchen (*) gekennzeichneten Warnungen werden in den jeweiligen Warnungsrichtlinien im Security #a0 Compliance Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden. Mit einem Hash (#) gekennzeichnete Warnungen sind allgemein verfügbare Warnungen für öffentliche Vorschau-Textbuch.
 
-Um Warnungen anzuzeigen **, wählen Sie** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um diese anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Informationswarnungen hinzugefügt werden.
+Um Warnungen anzuzeigen **, wählen Sie** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. 
+
+> [!NOTE]
+> Informationswarnungen werden standardmäßig in der Warnungsansicht ausgeblendet. Um diese anzuzeigen, ändern Sie die Warnungsfilterung so, dass Sie Informationswarnungen einschließt.
 
 Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignisverwaltung verwaltet, können Sie Office 365 Warnungen entweder per e-Mail-Benachrichtigung oder über die API für die [Office 365-Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)an dieses System senden. Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security #a0 Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
 
@@ -121,11 +116,11 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 |Keine Bedrohungen gefunden | Die Untersuchung hat ihre Analyse abgeschlossen, und es wurden keine Bedrohungen gefunden. |
 |Beendet von System | Die Untersuchung wurde nach 7 Tagen nicht abgeschlossen und ist abgelaufen. |
 |Ausstehende Aktion | Die Untersuchung hat Bedrohungen mit empfohlenen Aktionen gefunden. |
-|Gefundene Bedrohungen | Die Untersuchung hat Bedrohungen festgestellt, aber für die Bedrohungen sind keine Aktionen in Air verfügbar. |
+|Bedrohungen gefunden | Die Untersuchung hat Bedrohungen festgestellt, aber für die Bedrohungen sind keine Aktionen in Air verfügbar. |
 |Bereinigt | Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
 |Teilweise behoben | Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
-|Durch den Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
-|Failed | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
+|Vom Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
+|Fehlgeschlagen | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
 |Durch Drosselung in der Warteschlange | Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
 |Durch Drosselung beendet | Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
 
@@ -309,7 +304,16 @@ Wenn Sie keines dieser Abonnements haben, [Starten Sie eine ﻿kostenlose Testve
 
 Weitere Informationen zur Verfügbarkeit von Features finden Sie unter [Verfügbarkeit von Features über erweiterte Threat Protection (ATP)-Pläne](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="required-permissions-to-use-air-capabilities"></a>Erforderliche Berechtigungen für die Verwendung von Air-Funktionen
+
+Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden Tabelle beschrieben werden: 
+
+|Aufgabe |Erforderliche Rolle (n) |
+|--|--|
+|So richten Sie Air-Features ein |Eine der folgenden Varianten: <br/>- **Globaler Administrator**<br/>- **Sicherheits Administrator** <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
+|So genehmigen oder ablehnen Sie Empfohlene Aktionen|Einer der folgenden (diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Compliance Center von Office 365 Security #a0](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden):<br/>- **Globaler Administrator** <br/>- **Sicherheits Administrator**<br/>- **Sicherheits Leser** <br/>---und---<br/>- **Suche und Bereinigung** (diese Rolle wird nur im [Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen)
+
+## <a name="next-steps"></a>Weitere Schritte
 
 [Erste Schritte mit Air in Office 365](office-365-air.md)
 
