@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Features für den Informationsschutz in Microsoft 365 Enterprise verwendet, um digitale Datenbestände in der Cloud zu sichern.
-ms.openlocfilehash: f5893414a0aab3d0ab89eb180f0c907d4379194c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673201"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831678"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -65,7 +65,7 @@ Contoso führte die folgenden Schritte aus, um Microsoft 365 Enterprise für sei
 
 4. Erstellen geschützter SharePoint-Websites für vertrauliche und hochgradig regulierten Daten mit Berechtigungen, die den Zugriff einschränken
 
-   Sowohl vertrauliche als auch hochgradig regulierte Websites wurden als [isolierte Websites](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites) konfiguriert, bei denen die standardmäßigen SharePoint-Teamwebsiteberechtigungen angepasst wurden. Vertrauliche und hochgradig regulierte SharePoint-Websites wurden auch mit einer entsprechenden Aufbewahrungsbezeichnung konfiguriert. Auf hochgradig regulierten SharePoint-Websites gespeicherte Dateien werden durch eine Vertraulichkeitsunterbezeichnung der Bezeichnung "Hochgradig reguliert" geschützt. Weitere Informationen finden Sie im Szenario [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md).
+   Sowohl vertrauliche als auch streng regulierte Websites wurden als private Teamwebsites mit zusätzlichen Berechtigungseinschränkungen konfiguriert. Vertrauliche und hochgradig regulierte SharePoint-Websites wurden auch mit einer entsprechenden Aufbewahrungsbezeichnung konfiguriert. Auf hochgradig regulierten SharePoint-Websites gespeicherte Dateien werden durch eine Vertraulichkeitsunterbezeichnung der Bezeichnung "Hochgradig reguliert" geschützt. Weitere Informationen finden Sie im Szenario [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 5.  Verschieben der Daten von den lokalen SharePoint-Websites und Dateifreigaben in die neuen SharePoint-Websites
 

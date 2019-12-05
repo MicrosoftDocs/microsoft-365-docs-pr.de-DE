@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Office 365 Pro Plus-Infrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: 30e3956eba0e990d8d07a41dae924c3005f34d75
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: f41990055a97a2853622529e7cc28ccf096eef69
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757752"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831896"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4: Office 365 ProPlus
 

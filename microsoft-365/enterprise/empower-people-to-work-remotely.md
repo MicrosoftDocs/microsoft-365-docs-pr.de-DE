@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Konfigurieren Sie Infrastruktur und Sicherheit, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 95b48112928902a046d837e5d02f025149028135
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929198"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831966"
 ---
 # <a name="empower-remote-workers"></a>Fördern von Remotemitarbeitern
 

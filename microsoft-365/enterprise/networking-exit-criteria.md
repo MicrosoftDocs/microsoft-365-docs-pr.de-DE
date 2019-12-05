@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für die Netzwerkinfrastruktur erfüllt.
-ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370152"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831946"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1: Beendigungskriterien für die Netzwerkinfrastruktur
 
@@ -48,7 +48,7 @@ Verwenden Sie ein Tool oder eine Website von einem Gerät in diesem Büro, um di
 Gegebenenfalls hilft Ihnen [Schritt 2](networking-dns-resolution-same-location.md), diese Anforderung zu erfüllen.
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneccessary-network-hairpins-are-removed"></a>Optional: Nicht benötigte Spitzkehren für Netzwerke werden entfernt.
+## <a name="optional-unnecessary-network-hairpins-are-removed"></a>Optional: Nicht benötigte Spitzkehren für Netzwerke werden entfernt.
 
 Sie haben Ihre Spitzkehren für Netzwerke untersucht und ihre Auswirkung auf die Leistung für alle Ihre Büros bestimmt. Sie haben Spitzkehren für Netzwerke (wo möglich) entfernt oder mit Ihrem Netzwerk- oder Sicherheitsanbieter zusammengearbeitet, um optimales Microsoft 365-Peering für das Netzwerk zu implementieren.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Beschreibung des Resilienzthemas
-ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a31e24925e65bcdff4ee6416a3e308bf46a5a955
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031050"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831856"
 ---
 # <a name="built-in-resiliency"></a>Integrierte Resilienz
 

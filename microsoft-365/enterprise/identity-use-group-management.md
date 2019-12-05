@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie können Gruppen verwenden, um die Verwaltung bestimmter administrativer Aufgaben zu automatisieren.
-ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 0d46a2af5683b8da40275302460d453f1f14acbe
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370182"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831658"
 ---
 # <a name="step-5-use-groups-for-management"></a>Schritt 5: Verwenden von Gruppen zur Verwaltung
 

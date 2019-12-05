@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspekte, die bei der Entwicklung eines Cloud-bewussten Geschäftskontinuitätsplans berücksichtigt werden müssen.
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031070"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831668"
 ---
 # <a name="developing-your-continuity-plan"></a>Entwickeln Ihres Kontinuitätsplans
 
@@ -26,7 +26,7 @@ Unter diesem Thema finden Sie Anleitungen zum Entwickeln eines Geschäftskontinu
 
 Im Allgemeinen umfasst die Planung der Geschäftskontinuität vier Aspekte: Bewertung, Planung, Funktionsüberprüfung sowie Kommunikation und Koordination.
 
-## <a name="assesment"></a>Bewertung
+## <a name="assessment"></a>Bewertung
 Zuerst müssen Sie die Geschäftsfunktionen in Ihrer Organisation und die Dienste und Prozesse ermitteln, die Sie unterstützen. Dies umfasst das Abschließen einer Analyse geschäftlicher Auswirkungen, bei der jede Geschäftsfunktion nach ihrer Wichtigkeit bewertet wird, und Sie ermitteln die Prozesse und Dienste, von denen jede abhängig ist. Hier ist eine Beispieltabelle, auf die Sie für die ersten Schritte bei Ihrer Bewertung zurückgreifen können.
 
 **Beispiel für die Bewertung geschäftlicher Auswirkungen (Business Impact Assessment, BIA)**
@@ -49,7 +49,7 @@ Dies ist ein BIA-Dokument für `name of the service, system, process, or functio
 |Besitzt die Technologie ein bekanntes leitendes Mandat, das ein bestimmtes SLA für Prozesse steuert? Wenn ja, geben Sie eine ausführliche Erklärung.|`details here`|
 |Wird durch den Verlust oder die Kompromittierung der mit diesen Diensten verbundenen Daten ein großes Ereignis ausgelöst? Wenn ja, geben Sie eine ausführliche Erklärung.|`details here`|
 |Gibt es für den Dienst eine vorhandene Problemumgehung oder Alternative für einige oder alle seine wichtigen Funktionen und Features? Wenn ja, geben Sie eine ausführliche Erklärung.|`details here`|
-|Verarbeitet, speichert oder überträgt der Dienst Kundendaten (PII)? Wenn ja, geben Sie eine ausführliche Erklärung.|`details here`|
+|Werden Kundendaten, z. B. personenbezogene Informationen (PII), vom Dienst verarbeitet, gespeichert oder übertragen? Wenn ja, geben Sie eine ausführliche Erklärung.|`details here`|
 |BIA-Status|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |Abschlussdatum|`the date this BIA was completed`|
 |BIA-Vermittler|`name of the person or group who is responsible for developing and maintaining this BIA`|

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, was Microsoft bei Auftreten eines Dienstvorfalls unternimmt, um Ihre Pläne zur Sicherung der Geschäftskontinuität besser gestalten zu können.
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031080"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831866"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Verantwortlichkeiten von Kunden und Cloud-Partnern im Rahmen der Steuerung der Geschäftskontinuität 
 
@@ -34,7 +34,7 @@ Microsoft benachrichtigt Microsoft 365-Administratoren mittels einer Aktualisier
 ## <a name="targeted"></a>Zielgerichtet
 Wenn unsere Überwachungssysteme ein Problem erkennen, können wir in den meisten Fällen den betroffenen Kundenstamm identifizieren, egal ob es sich dabei um einen Einzelkunden, eine Region oder einen noch größeren Kundenstamm handelt, und die notwendigen Benachrichtigungen an die betreffenden Kunden weiterleiten. Auf diese Weise erhalten Sie die für Ihr Unternehmen erforderlichen Informationen und werden nicht durch Signaltöne für Benachrichtigungen, die Sie nicht betreffen, abgelenkt. Wenn z. B. eine bestimmte Mailbox-Datenbank betroffen ist, können wir genau feststellen, welche Kunden über Benutzer auf der betroffenen Infrastruktur verfügen und die Reichweite unserer Benachrichtigungen an diese anpassen. Wenn der Umfang der Auswirkungen des Vorfalls nicht eindeutig ist, erweitern wir die Reichweite unserer Benachrichtigungen auf die umfangreichste Gruppe von Kunden, die potenziell betroffen sind.
 
-## <a name="highly-avaliable"></a>Umfassend verfügbar
+## <a name="highly-available"></a>Hoch verfügbar
 Microsoft unterhält mehrere Kanäle für Statusmitteilungen zu Diensten, die Kunden nutzen können.
 
 - Sollten das Admin-Center oder das Service Health Dashboard im Rahmen des Verwaltungsportals nicht verfügbar sein, können Sie den Status eines Dienstes über unsere [Sicherungswebsite](https://status.office365.com/) überwachen.
