@@ -20,7 +20,7 @@ Verwenden Sie ein Tool oder eine Website von einem Gerät in diesem Büro, um di
 Gegebenenfalls hilft Ihnen [Schritt 2](../networking-dns-resolution-same-location.md), diese Anforderung zu erfüllen.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Optional: Nicht benötigte Spitzkehren für Netzwerke werden entfernt.
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>Optional: Nicht benötigte Spitzkehren für Netzwerke werden entfernt.
 
 Sie haben Ihre Spitzkehren für Netzwerke untersucht und ihre Auswirkung auf die Leistung für alle Ihre Büros bestimmt. Sie haben Spitzkehren für Netzwerke (wo möglich) entfernt oder mit Ihrem Netzwerk- oder Sicherheitsanbieter zusammengearbeitet, um optimales Microsoft 365-Peering für das Netzwerk zu implementieren.
 
