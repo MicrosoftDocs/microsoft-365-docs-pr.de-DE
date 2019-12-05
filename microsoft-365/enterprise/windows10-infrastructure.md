@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 3cdb5fd6644d76a843e109ff53f73eb9ec4638f8
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627539"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831688"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3: Windows 10 Enterprise
 
@@ -68,7 +68,7 @@ Weitere Informationen finden Sie unter [Übersicht über Windows Analytics](http
 
 Windows 10 bietet Funktionen zum Schutz vor Bedrohungen, zur Sicherung Ihrer Geräte und zur Hilfe bei der Zugriffssteuerung. Mit Windows 10 erhalten Sie wichtige Sicherheitsfeatures, die Ihr Gerät von Anfang an schützen. Microsoft 365 E3 fügt Sicherheitsfeatures wie Windows Hello for Business, Windows Defender Application Control und Windows Information Protection hinzu. Mit Microsoft 365 E5 erhalten Sie den gesamten Schutz vor Microsoft 365 E3 Security Plus Cloud-basierten Sicherheitsfeatures und Microsoft Defender Advanced Threat Protection. 
 
-Weitere Informationen zu den Sicherheitsfeatures, die Sie mit Windows 10 Enterprise erhalten, erhalten Sie unter [Schritt 5: Bereitstellen von Windows 10 Enterprise-Sicherheitsfeatures](windows10-enable-security-features.md)für die Bereitstellung, Verwaltung, Konfiguration und Problembehandlung für drei wichtige ecurity-Features.
+Weitere Informationen zu den Sicherheitsfeatures, die Sie mit Windows 10 Enterprise erhalten, finden Sie unter [Schritt 5: Bereitstellen von Windows 10 Enterprise-Sicherheits](windows10-enable-security-features.md)Features, um die Bereitstellung, Verwaltung, Konfiguration und Problembehandlung für drei wichtige Sicherheitsfeatures zu erhalten.
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
 

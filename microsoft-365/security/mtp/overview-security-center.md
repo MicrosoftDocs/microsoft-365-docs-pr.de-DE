@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034206"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831996"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
@@ -25,9 +25,7 @@ Die Verwaltung der Sicherheit Ihres Unternehmens, um Sie vor einer ständig wach
 
 Geben Sie Microsoft 365 Security Center ein – das neue Zuhause zum Überwachen und Verwalten der Sicherheit in Ihren Microsoft-Identitäten,-Daten,-Geräten,-Apps und-Infrastrukturen. Hier können Sie ganz einfach die Sicherheitsintegrität Ihrer Organisation anzeigen, Geräte, Benutzer und apps konfigurieren und Benachrichtigungen für verdächtige Aktivitäten abrufen. Das Microsoft 365-Sicherheitscenter ist speziell für Sicherheitsadministratoren und Sicherheits Betriebsteams vorgesehen, um Ihre Organisation besser zu verwalten und zu schützen.
 
-Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center sind spezialisierte Arbeitsbereiche, die auf die Anforderungen von Sicherheitsteams und Compliance-Teams zugeschnitten sind. Diese Lösungen sind in Microsoft 365-Dienste integriert und bieten umsetzbare Einblicke, die zur Verringerung von Risiken und zum Schutz Ihrer digitalen Immobilien beitragen.
-
-[Erfahren Sie mehr und machen Sie sich](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) auf das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center gefasst.
+Das neue Microsoft 365 Security Center und das [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sind spezialisierte Arbeitsbereiche, die auf die Anforderungen von Sicherheitsteams und Compliance-Teams zugeschnitten sind. Diese Lösungen sind in Microsoft 365-Dienste integriert und bieten umsetzbare Einblicke, die zur Verringerung von Risiken und zum Schutz Ihrer digitalen Immobilien beitragen.
 
 Besuchen Sie das Microsoft 365 Security Center unter Security.Microsoft.com.  
 

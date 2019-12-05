@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Sensitivitäts Bezeichnungen mit Microsoft Teams, Office 365 Gruppen und SharePoint-Websites (öffentliche Vorschau)
+title: Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
-ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
+ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819131"
+ms.locfileid: "39822491"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Sensitivitäts Bezeichnungen mit Microsoft Teams, Office 365 Gruppen und SharePoint-Websites (öffentliche Vorschau)
+# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
 Wenn Sie Sensitivitäts Bezeichnungen im [Microsoft 365 Compliance Center](https://protection.office.com/)erstellen, können Sie diese nun auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden. Sie können den Beschriftungen Richtlinien zuordnen, um Sie zu steuern:
 
@@ -102,11 +102,9 @@ Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>Problembehandlung bei der Sensitivitäts Bezeichnungs Bereitstellung
 
-Wenn beim Erstellen eines Teams oder Office 365 Gruppe Probleme auftreten, nachdem Sie diese Einstellungen aktiviert oder eine Beschriftungs Beschreibung geändert haben, speichern Sie die Beschriftung, warten Sie einige Stunden, und versuchen Sie dann erneut, das Team oder die Office 365 Gruppe zu erstellen.
+Wenn beim Erstellen eines Teams oder Office 365 Gruppe Probleme auftreten, nachdem Sie diese Einstellungen aktiviert oder die Beschreibung einer Sensitivitäts Bezeichnung geändert haben, speichern Sie die Beschriftung, warten Sie einige Stunden, und versuchen Sie dann erneut, das Team oder die Office 365 Gruppe zu erstellen.
 
 Wenn Sie die neue Sensitivitäts Bezeichnung immer noch nicht in SharePoint Online sehen können, wenden Sie sich umgehend an den Microsoft-Support.
-
-[Informationen zum Veröffentlichen einer Vertraulichkeits Bezeichnung](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Anwenden einer Vertraulichkeits Bezeichnung auf ein neues Team
 

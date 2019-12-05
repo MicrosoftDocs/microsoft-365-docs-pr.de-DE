@@ -13,24 +13,33 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business einrichten.
-ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 0001c2b9962f6cce0be1f77cbf427c68f9ee3249
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721487"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831301"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business im Setup-Assistenten
+
+In diesem Video sehen Sie eine Übersicht über das Microsoft 365 Business-Setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Hinzufügen von Richtlinien für Domäne, Benutzer und einrichten
 
@@ -44,16 +53,18 @@ Wenn Sie Microsoft 365 Business erwerben, haben Sie die Möglichkeit, eine Domä
 
 1. Melden Sie sich mit ihren globalen Administratoranmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an. 
 
-2. Wählen Sie **Hinzufügen einer Domäne** oder **Hinzufügen von Benutzern** aus, um den Assistenten zu starten.
+2. Wählen Sie **Gehe zu Setup** aus, um den Assistenten zu starten.
+
+    ![Wählen Sie Gehe zu Setup aus.](media/gotosetupinadmincenter.png)
+
+3. Auf der Seite **Office-Apps installieren** können Sie optional die apps auf Ihrem eigenen Computer installieren.
+    
+4. Geben Sie im Schritt **Domäne hinzufügen** den Domänennamen ein, den Sie verwenden möchten (wie contoso.com).
+
     > [!IMPORTANT]
     > Wenn Sie während der Registrierung eine Domäne erworben haben, wird hier kein Domänen Schritt **Hinzufügen** angezeigt. Wechseln Sie stattdessen zu [Benutzer hinzufügen](#add-users-and-assign-licenses) .
 
-    ![Wählen Sie Gehe zu Setup aus.](media/gotosetupinadmincenter.png)
-    
-3. Geben Sie im Assistenten den Domänennamen ein, den Sie verwenden möchten (wie contoso.com).
-
-
-    ![Screenshot der Personalisierung Ihrer Anmeldeseite.](media/personalizesignin.png)
+    ![Screenshot der Personalisierung Ihrer Anmeldeseite.](media/adddomain.png)
 
     
 4. Befolgen Sie die Schritte im Assistenten zum [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) , die ihre eigene Domäne verifizieren. Wenn Sie Ihren Domänenhost kennen, lesen Sie auch die [hostspezifischen Anweisungen](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -76,13 +87,6 @@ Alle Benutzer, die Sie dem Assistenten hinzufügen, erhalten automatisch eine Mi
 
 2. Nachdem Sie die Benutzer hinzugefügt haben, erhalten Sie auch eine Option zum Freigeben von Anmeldeinformationen für die neuen Benutzer, die Sie hinzugefügt haben. Sie können auswählen, ob Sie Sie ausdrucken, per e-Mail versenden oder herunterladen möchten.
 
-3. Im Erstellen von Teams für Ihre Organisation können Sie Microsoft Teams hinzufügen und Benutzer hinzufügen. Sie können dies auch später tun. Weitere Informationen finden Sie unter [Erstellen eines unternehmensweiten Teams](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
-
-4. Überspringen Sie die Migration von e-Mail-Nachrichten, und wählen Sie **weiter** auf Seite **e-Mails migrieren** . 
-
-    Wenn Sie von einem anderen e-Mail-Anbieter wechseln und Ihre Daten später kopieren möchten, können Sie [e-Mails und Kontakte in Office 365 migrieren](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
-
-
 ### <a name="connect-your-domain"></a>Verbinden Ihrer Domäne
 
 > [!NOTE]
@@ -95,31 +99,29 @@ Zum Einrichten von Diensten müssen Sie einige Datensätze bei Ihrem DNS-Host od
     - Wenn Sie über vorhandene DNS-Einträge verfügen, beispielsweise eine vorhandene Website, Ihr DNS-Host jedoch für die [Domäne Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)aktiviert ist, wählen Sie **für mich Datensätze hinzufügen**aus. Übernehmen Sie auf der Seite **Wählen Sie Ihre Onlinedienste aus** alle Standardeinstellungen, und wählen Sie **weiter**aus, und klicken Sie auf der Seite Ihres DNS-Hosts auf **autorisieren** .
     - Wenn Sie über vorhandene DNS-Einträge mit anderen DNS-Hosts verfügen (nicht für Domäne Connect aktiviert), sollten Sie Ihre eigenen DNS-Einträge verwalten, um sicherzustellen, dass die vorhandenen Dienste verbunden bleiben. Weitere Informationen finden Sie unter [Domain Basics](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
 
-        ![Verbinden Sie Ihre Domänen Seite mit ich werde meine eigenen DNS-Einträge verwalten.](media/connectyourdomainpage.png)
+        ![Seite Datensätze aktivieren.](media/activaterecords.png)
 
 2. Führen Sie die Schritte im Assistenten aus, und e-Mail und andere Dienste werden für Sie eingerichtet.
 
-### <a name="protect-data-and-devices"></a>Schützen von Daten und Geräten 
+### <a name="protect-your-organization"></a>Schützen Ihrer Organisation 
 
 Die Richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch auf eine [Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) mit dem Namen " *alle Benutzer*" angewendet. Sie können auch weitere Gruppen zum Zuweisen von Richtlinien im Admin Center erstellen.
 
-1. Auf dem **Schützen Ihrer Arbeitsdateien auf mobilen Geräten**ist die Option **Arbeitsdateien schützen, wenn Geräte verloren gehen oder gestohlen** wird standardmäßig aktiviert. Sie haben die Möglichkeit, die **Verwaltung der Benutzerzugriffe auf Office-Dateien auf mobilen Geräten**zu aktivieren, und dies wird empfohlen.
+1. Um den **Schutz vor fortgeschrittenen Cyber-Bedrohungen zu verbessern**, wird empfohlen, dass Sie die Standardeinstellungen akzeptieren, damit [Office 365 Advance Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) Scandateien und Links in Office-Apps.
 
-    ![Screenshot der Seite Arbeitsdateien auf mobilen Geräten schützen.](media/protectworkfilesondevices.png)
+    ![Screenshot der Seite zur Verstärkung des Schutzes.](media/increasetreatprotection.png)
 
-     - Erweitern Sie **Protect work Files, wenn Geräte verloren gehen oder gestohlen werden** , um die [Standardwerte](protect-work-files-on-lost-or-stolen-device.md)anzuzeigen:
 
-        ![Screenshot der Standardwerte zum Schützen von Dateien auf verlorenen Geräten.](media/protectworkfilesondevicesdefault.png)
+2. Übernehmen Sie auf der Seite " **Lecks von vertraulichen Daten verhindern** " die Standardeinstellungen, um die Office 365 Verhinderung von Datenverlust (Data Loss Prevention, DLP) zum Nachverfolgen vertraulicher Daten in Office-Apps zu aktivieren und die unbeabsichtigte Freigabe dieser außerhalb Ihrer Organisation zu verhindern.
 
-    - Wählen Sie **verwalten, wie Benutzer auf Office-Dateien auf mobilen Geräten zugreifen** , und erweitern Sie diese, um die [Standardwerte](manage-user-access-on-mobile-devices.md)anzuzeigen. Es wird empfohlen, während des Setups die Standardwerte zu übernehmen, um Anwendungsrichtlinien für Android, IOS und Windows 10 zu erstellen, die für alle Benutzer gelten. Nach Abschluss des Setups können Sie weitere Richtlinien erstellen.
+3. Lassen Sie Mobile App Verwaltung auf der Seite **Daten in Office für Mobile schützen** auf, erweitern Sie die Einstellungen, und überprüfen Sie Sie, und wählen Sie dann **Mobile App Verwaltungsrichtlinie erstellen**aus.
 
-        ![Screenshot der Schutzeinstellungen für Office-Dateien auf mobilen Geräten](media/useraccessonmobile.png)
+    ![Screenshot von Daten in Office für Mobile Seite schützen.](media/protectdatainmobile.png)
 
-2. Der letzte Schritt zum Schutz von Daten und Geräten ermöglicht Ihnen das Einrichten von Richtlinien für die Sicherung von Windows 10-Geräten. Diese Einstellungen werden automatisch angewendet, wenn Windows 10 eines Benutzers eine Verbindung mit Ihrer Organisation herstellt. Sie können **sichere Windows 10-Geräte** erweitern, um die [Standardwerte](secure-windows-10-devices.md)anzuzeigen und zu ändern.
-3. Sie können auch festlegen, dass Office auf Windows 10-Geräten [automatisch installiert](install-office-on-windows-10-during-setup.md) wird.
 
-    ![Screenshot der Seite "Windows 10-Gerätekonfiguration festlegen".](media/setwin10config.png)
+## <a name="secure-windows-10-pcs"></a>Sichere Windows 10-PCs
 
+Wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann unter **Sing-in und Sicherheit** **die Option Sichern Ihrer Windows 10-Computer**aus. Wählen Sie **Ansicht** für erste Schritte aus. Ausführliche Anweisungen finden Sie unter [Sichern Ihrer Windows 10-Computer](secure-win-10-pcs.md) .
 
 ## <a name="deploy-office-365-client-apps"></a>Bereitstellen von Office 365-Client-apps
 
@@ -128,3 +130,7 @@ Wenn Sie während des Setups die automatische Installation von Office-Apps ausge
 Informationen zum Installieren von Office auf mobilen IOS-oder Android-Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md).
 
 Sie können Office auch einzeln installieren. Anweisungen finden Sie unter [Installieren von Office auf einem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) .
+
+## <a name="see-also"></a>Siehe auch
+
+[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

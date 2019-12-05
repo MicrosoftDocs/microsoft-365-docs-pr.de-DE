@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615655"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837329"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -41,7 +41,7 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 |Phishing-e-Mail-erkennungsaktion|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Phishing-e-Mail-erkennungsaktion mit hoher Zuverlässigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Massen-e-Mail-erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Schwellenwert für Massen-e-Mail festlegen|6|4|Der Standardwert ist derzeit 7, es wird jedoch empfohlen, dass die meisten Organisationen es auf mindestens 6 mvoe.|
+|Schwellenwert für Massen-e-Mail festlegen|6|4|Der Standardwert ist derzeit 7, es wird jedoch empfohlen, dass die meisten Organisationen ihn auf mindestens 6 zurücksetzen.|
 |Aufbewahrungszeitraum für Quarantäne|30 Tage|30 Tage||
 |Sicherheitstipps|Ein|Ein||
 |Zugelassene Absender|Keine|Keine||

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und das Dashboard für Microsoft Compliance Score verstehen, das die Vereinfachung und Automatisierung von Risikobewertungen erleichtert.
-ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793649"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831178"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
@@ -63,8 +63,6 @@ So legen Sie Berechtigungen im Microsoft 365 Compliance Center fest:
 
 1. Wechseln Sie zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com) , und melden Sie sich mit ihrem globalen Administratorkonto an.
 2. Wählen Sie im linken Navigationsbereich **Berechtigungen** aus. Von hier aus können Sie Rollen anzeigen und Berechtigungen zuweisen.
-
-Ausführliche Informationen finden Sie unter [Rollen und Berechtigungen im Microsoft 365 Compliance Center](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Grundlegendes zum Kompatibilitäts Bewertungs Dashboard
 

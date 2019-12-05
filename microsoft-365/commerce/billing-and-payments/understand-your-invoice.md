@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0319f8ce1cfc0fcfeec095e6dedccefdcb1a0a4d
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029039"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837379"
 ---
 # <a name="understand-your-invoice"></a>Grundlegendes zur Ihrer Rechnung
 

@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das Microsoft 365 Compliance Center, einschließlich dessen, was es enthält, wie Sie es erhalten, und Ihre nächsten Schritte.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 619f18f1113d3c84cb9629c60fca6dd044d1de76
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 920de48cf81134a22f117ee8d1dea0160b0daaa8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38686066"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831648"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Übersicht über das Microsoft 365 Compliance Center
 
@@ -70,8 +70,6 @@ Zusätzlich zu den Links in Karten auf der Startseite sehen Sie einen Navigation
 
 - Besuchen Sie das Microsoft 365 Compliance Center als globaler Administrator, Kompatibilitäts Administrator oder Compliance-Datenadministrator, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich an.
 
-- Weitere Informationen zu den Anforderungen finden Sie unter [Required licenses and Permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 **Warum werde ich zum Office 365 Security #a0 Compliance Center gebracht, um einige Aufgaben wie das Definieren bestimmter Richtlinien abzuschließen?**
@@ -80,7 +78,7 @@ Wir entwickeln weiterhin das Microsoft 365 Compliance Center und fügen in den k
 
 **Warum wird das neue Microsoft 365 Compliance Center noch nicht angezeigt?**
 
-Stellen Sie zunächst sicher, dass Sie über die entsprechenden [Lizenzen und Berechtigungen](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)verfügen. Melden Sie sich dann bei [https://compliance.microsoft.com](https://compliance.microsoft.com)an. Wenn das neue Compliance Center noch nicht angezeigt wird, haben Sie es bald.
+Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Berechtigungen verfügen. Melden Sie sich dann bei [https://compliance.microsoft.com](https://compliance.microsoft.com)an. Wenn das neue Compliance Center noch nicht angezeigt wird, haben Sie es bald.
 
 **Einige meiner Kompatibilitätsfunktionen sind im Microsoft 365 Compliance Center nicht verfügbar. Was soll ich tun?**
 
@@ -90,7 +88,7 @@ Um dorthin zu gelangen, wählen Sie im Microsoft 365 Compliance Center im Naviga
 
 ![Weitere Ressourcen](media/m365-compliance-center-more-resources.png)
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 - **Überprüfen Sie Ihr Microsoft-Kompatibilitäts Ergebnis** , um die Konformitätsbewertung zu verbessern. Weitere Informationen finden Sie unter [Compliance Score (Preview)](compliance-score.md).
 

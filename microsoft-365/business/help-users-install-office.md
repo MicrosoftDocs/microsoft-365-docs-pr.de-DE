@@ -16,17 +16,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Unterstützen Sie Ihre Benutzer bei der Installation von Office-Apps.
-ms.openlocfilehash: dd2d32ee04402ef977ee1530c20d77512c2d8336
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320223"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831208"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Unterstützen der Benutzer bei der Installation von Office auf Windows 10-Geräten
 
@@ -34,8 +36,14 @@ ms.locfileid: "38320223"
 
 Sie können Office auf Windows 10-PCs schnell und einfach über das Microsoft 365 Business Admin Center installieren.
   
-Um zu verstehen, wie dies bei zuvor installierten Office-Apps funktioniert, lesen Sie [Vorbereiten der Office-Clientinstallation](prepare-for-office-client-deployment.md), bevor Sie mit diesem Vorgang beginnen. 
-  
+Um zu verstehen, wie dies bei zuvor installierten Office-Apps funktioniert, lesen Sie [Vorbereiten der Office-Clientinstallation](prepare-for-office-client-deployment.md), bevor Sie mit diesem Vorgang beginnen.
+
+Sehen Sie sich ein kurzes Video über die Installation von Office-Apps an.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
+
+Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
 ## <a name="manage-office-deployments"></a>Verwalten von Office-Bereitstellungen
 
 1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>, und melden Sie sich mit globalen Administratoranmeldeinformationen an. 
@@ -51,4 +59,6 @@ Um zu verstehen, wie dies bei zuvor installierten Office-Apps funktioniert, lese
     
       :::image type="content" source="media/sendemailtousers.png" alt-text="Wählen Sie Benutzer zum Senden von e-Mails mit Office-Download Link aus.":::
 
+## <a name="see-also"></a>Siehe auch
 
+[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

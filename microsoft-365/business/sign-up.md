@@ -16,16 +16,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 description: Hier erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
-ms.openlocfilehash: 3470d07f98a1c5806a27d8f21f152a818e4a0371
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: d755931b6383a15376d3a875a9cf1ed93e9f4a63
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812796"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831241"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -44,7 +46,7 @@ Es gibt drei Möglichkeiten, Microsoft 365 Business zu erhalten:
 
 ## <a name="sign-up-steps"></a>Registrieren der Schritte
 
-Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Anmeldevorgang zu geben.
+Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Anmeldevorgang zu geben.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 

@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über den Microsoft 365-Lösungskatalog, einschließlich dessen, was er enthält, wie Sie ihn erhalten und wie Sie die nächsten Schritte durchführen.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a789aca60bbb34f6831c27afea4b1ec5d3135f59
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38686053"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831638"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Übersicht über den Microsoft 365-Lösungskatalog (Vorschau)
 
@@ -80,13 +80,11 @@ Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
 - Wenn Sie den Microsoft 365-Lösungskatalog besuchen möchten [https://compliance.microsoft.com](https://compliance.microsoft.com) , wechseln Sie zu und melden Sie sich als globaler Administrator, Kompatibilitäts Administrator oder Compliance-Datenadministrator an. Wählen Sie im Navigationsbereich auf der linken Seite des Bildschirms **Katalog** aus, um die Katalog Homepage zu öffnen.
 
-- Weitere Informationen zu den Anforderungen finden Sie unter [Required licenses and Permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 **Warum wird der neue Microsoft 365-Lösungskatalog noch nicht angezeigt?**
 
-Stellen Sie zunächst sicher, dass Sie über die entsprechenden [Lizenzen und Berechtigungen](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)verfügen. Melden Sie sich dann als [https://compliance.microsoft.com](https://compliance.microsoft.com) globaler Administrator, Kompatibilitäts Administrator oder Datenadministrator für die Richtlinientreue an. Wenn der neue Lösungskatalog noch nicht im linken Navigationsbereich angezeigt wird, haben Sie ihn bald.
+Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Berechtigungen verfügen. Melden Sie sich dann als [https://compliance.microsoft.com](https://compliance.microsoft.com) globaler Administrator, Kompatibilitäts Administrator oder Datenadministrator für die Richtlinientreue an. Wenn der neue Lösungskatalog noch nicht im linken Navigationsbereich angezeigt wird, haben Sie ihn bald.
 
 **Einige der Kompatibilitätsfeatures, die auf der Seite Lösungskatalog aufgeführt sind, sind im Microsoft 365 Compliance Center nicht verfügbar. Was soll ich tun?**
 
@@ -94,7 +92,7 @@ Im Microsoft 365 Compliance Center und im Lösungskatalog werden weiterhin Funkt
 
 Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie immer auf Lösungen im vorhandenen Office 365 Security and Compliance Center zugreifen, indem Sie zu [https://protection.office.com](https://protection.office.com)wechseln. Alternativ können Sie auf die Registerkarte **Weitere Ressourcen** im linken Navigationsbereich des Microsoft 365 Compliance Centers klicken und die Karte Office 365 Security and Compliance Center auswählen.  
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 - **Überprüfen Sie Ihre Microsoft-Kompatibilitäts**Bewertung, eine personalisierte, risikobasierte Bewertung, die Ihnen hilft, den Zustand Ihrer Organisation bezüglich der Einhaltung wichtiger Standards und Vorschriften zu verstehen. Es enthält empfohlene Maßnahmen, die Sie ergreifen können, um Ihre allgemeine Compliance-Haltung zu stärken, und bietet Workflowfunktionen, die Sie bei der effizienten Ausführung dieser Aktionen unterstützen. Weitere Informationen finden Sie unter [Compliance Score (Preview)](compliance-score.md).
 
