@@ -3,7 +3,7 @@ title: Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/19/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: 529d781f31157c6e9ad63a83ef5f8bb96873049d
-ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
+ms.openlocfilehash: bf7cda762d2ac7a8fd57135b985d893ee03c0646
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38711889"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831826"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
+
+## <a name="december-2019"></a>Dezember 2019
+
+### <a name="new-content"></a>Neue Inhalte 
+
+- [Test Lab-Leitfaden für Secure Teams für Dateien](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)
+
+### <a name="updates-and-enhancements"></a>Updates und Verbesserungen
+
+- [Speichern von SharePoint-Online-Webseiten und -Dateien](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) für die Verwendung von Vertraulichkeitsbezeichnungen
+-  [Die Lightweight-Basiskonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md) und [Die simulierte Unternehmensbasiskonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) für neue Testabonnement-Verfahren
+- 
 
 ## <a name="november-2019"></a>November 2019
 
