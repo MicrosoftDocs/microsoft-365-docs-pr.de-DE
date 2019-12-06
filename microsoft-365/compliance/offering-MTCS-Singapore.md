@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 95f3d0a8a502dc1a3100366d9c73419b2e7d06d4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: df2c929523f651b7220fb0546928509dd8c0b6ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195426"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859585"
 ---
-# <a name="compliance-offering-multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Complianceangebot: Multi-Tier Cloud Security (MTCS) Standard für Singapur
+# <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Multi-Tier Cloud Security (MTCS) Standard für Singapur
 
 ## <a name="mtcs-overview"></a>MTCS-Übersicht
 

@@ -11,20 +11,20 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c7f001f094c610d15e5e4775dc9ae94216a7ff56
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 433082c5fac3f1fef4aa680ebaeb8f4897d88569
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39268750"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859635"
 ---
-# <a name="compliance-offering-financial-supervision-authority-knf-poland"></a>Compliance-Angebot: Polnische Finanzaufsichtsbehörde (KNF)
+# <a name="financial-supervision-authority-knf-poland"></a>Polnische Finanzaufsichtsbehörde (KNF)
 
 ## <a name="about-the-knf"></a>Informationen zur KNF
 
 Die [polnische Finanzaufsichtsbehörde](https://www.knf.gov.pl/en/) ([Komisja Nadzoru Finansowego](https://www.knf.gov.pl/), KNF) ist die Aufsichtsbehörde für Finanzen in Polen, die den Finanzmarkt beaufsichtigt, was die Aufsicht über die Banken, Kapitalmärkte, Versicherungen, Pensionssysteme und E-Geld-Institute mit einschließt.
 
-Die KNF handelt in Abstimmung mit der [Europäischen Bankaufsichtsbehörde](https://eba.europa.eu/about-us) (EBA), die „eine unabhängige Behörde ist, die sich für eine wirksame und kohärente aufsichtsrechtliche Regulierung und Aufsicht im gesamten EU-Bankensektor einsetzt“. Zu diesem Zweck veröffentlichte die EBA ihre [Empfehlungen zum Outsourcing ab Cloud-Dienstanbieter](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362), die einen umfassenden Ansatz für das Cloud Computing durch Finanzinstitute in der EU vorgaben.
+Die KNF handelt in Abstimmung mit der [Europäischen Bankaufsichtsbehörde](https://eba.europa.eu/about-us) (EBA), die „eine unabhängige Behörde ist, die sich für eine wirksame und kohärente aufsichtsrechtliche Regulierung und Aufsicht im gesamten EU-Bankensektor einsetzt“. Zu diesem Zweck veröffentlichte die EBA ihre [Empfehlungen zum Outsourcing an Cloud-Dienstanbieter](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362), die einen umfassenden Ansatz für das Cloud Computing durch Finanzinstitute in der EU vorgeben.
 
 Es gibt mehrere Voraussetzungen und Richtlinien, die Finanzinstitute in Polen beachten sollten, wenn sie ihre Geschäftsfunktionen und Daten in die Cloud verlagern:
 
