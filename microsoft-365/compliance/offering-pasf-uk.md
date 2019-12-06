@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690513"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859295"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>Compliance-Angebot: Polizei gesicherte sichere Einrichtungen (PASF) Vereinigtes Königreich
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Polizei gesicherte Anlagen (PASF) Vereinigtes Königreich
 
 ## <a name="about-pasf"></a>Informationen zu PASF
 
@@ -34,17 +34,17 @@ Microsoft verwendet einen ganzheitlichen verteidigungsbezogenen Ansatz für die 
 
 Diese Zertifizierungen werden durch die Maßnahmen unterstützt, die wir ergreifen, um die physische Sicherheit unserer Rechenzentren zu schützen. Wir nehmen einen mehrstufigen Ansatz an, der mit der Planung, Erstellung und dem Betrieb von Rechenzentren beginnt, um den physischen Zugriff auf die Bereiche, in denen Kundendaten gespeichert sind, streng zu kontrollieren. Rechenzentren, die von Microsoft verwaltet werden, verfügen über umfangreiche Schutzebenen mit Zugriffsgenehmigung, die für den Umkreis der Einrichtung, den Umkreis des Gebäudes, den Gebäudebereich und den Datencenter-Boden erforderlich sind. Dadurch wird das Risiko verringert, dass nicht autorisierte Benutzer physischen Zugriff auf Daten und Rechenzentrumsressourcen erhalten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Das NPIRMT überwacht jedes Jahr ein Azure-Rechenzentrum, das jährlich durch die vier Microsoft-Rechenzentren in Großbritannien geleitet wird. Die NPIRMT-Bewertung, dass Microsoft-Rechenzentren PASF sind, steht über das Home Office für Strafverfolgungs Kunden zur Verfügung, die eine eigene Risikobewertung von Azure und anderen Microsoft Cloud-Diensten durchführen.
 
-## <a name="how-to-implement"></a>Vorgehensweise implementieren
+## <a name="how-to-implement"></a>Implementierung
 
 - [Azure UK Official Blueprint](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): hilft britischen Kunden, IaaS-und PaaS-Bereitstellungen von kompatiblen Arbeitsauslastungen in Azure zu beschleunigen.
 
@@ -59,9 +59,9 @@ Ja. Die Strafverfolgungsbehörden können die NPIRMT-Bewertung von Azure verwend
 - [Akkreditierungs Richtlinie für nationale Policing](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure-Einrichtungen,-Räumlichkeiten und physische Sicherheit](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft-und ISO/IEC 27001:2013-ISM-Standards](offering-iso-27001.md)
-- [Microsoft Online Services-Bedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf) herunter.

@@ -15,20 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686086"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866357"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
-
-**Prinzipal Autor** <br/>
-Paul Cunningham, Microsoft MVP <br/>
-[Praktisches 365](https://practical365.com/) <br/>
-[@Practical365](https://twitter.com/practical365)<br/>
-__________________________________________________
 
 Bei der Verhinderung von Datenverlust handelt es sich um ein Compliance-Feature von Office 365, das Ihre Organisation bei der Vermeidung der beabsichtigten oder versehentlichen Exposition vertraulicher Informationen an unerwünschte Personen unterstützen soll. DLP hat seine Wurzeln in Exchange Server und Exchange Online und gilt auch für SharePoint Online und OneDrive für Unternehmen.
 
