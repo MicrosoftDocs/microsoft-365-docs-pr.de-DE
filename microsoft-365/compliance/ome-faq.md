@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818847"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866417"
 ---
 # <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
 
@@ -119,6 +119,10 @@ Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sicher
 
 Not yet. OneDrive für Unternehmen Anlagen werden nicht unterstützt, und Endbenutzer können keine e-Mails verschlüsseln, die eine Cloud OneDrive für Unternehmen Anlage enthalten.
   
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>Welche e-Mail-Clients unterstützen die Vorschau von verschlüsselten Anlagen in geschützten e-Mails?
+
+Wenn Anlagen mit einer geschützten e-Mail geschützt sind, bieten Outlook-Clients die Möglichkeit, das Dokument direkt anzuzeigen. Outlook unterstützt die Vorschau von Office-Dokumenten (DOCX, xlsx, PPTX, doc, xls, PPT). Outlook im Internet unterstützt die Vorschau von Office-Dokumenten (DOCX, xlsx, PPTX) und PDF.  
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Kann ich Nachrichten automatisch verschlüsseln, indem ich Richtlinien einrichte?
 
 Ja. Verwenden von Nachrichtenfluss Regeln in Exchange Online zum automatischen Verschlüsseln einer Nachricht basierend auf bestimmten Bedingungen. Sie können beispielsweise Richtlinien erstellen, die auf der Empfänger-ID, der Empfängerdomäne oder auf dem Inhalt im Textkörper oder Betreff der Nachricht basieren. Siehe [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).

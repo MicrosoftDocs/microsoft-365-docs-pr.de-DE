@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690499"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859405"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>Compliance-Angebot: US DOE 10 CFR Part 810
+# <a name="us-doe-10-cfr-part-810"></a>US DOE 10 CFR Part 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft und DOE 10 CFR Part 810
 
@@ -31,12 +31,12 @@ FedRAMP bietet eine geeignete Basis, um sicherzustellen, dass Azure Government K
 
 Darüber hinaus ist Azure Government eine Community-Cloud der US-Regierung, die physisch von der Azure-Cloud getrennt ist. Es bietet zusätzliche Zusicherungen hinsichtlich spezifischer Anforderungen im Hinblick auf die Hintergrundprüfung durch die US-Regierung, einschließlich bestimmter Kontrollen, die den Zugriff auf Informationen und Systeme einschränken, um die US-Bürger unter Azure Operationspersonal zu überprüfen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="how-to-implement"></a>Vorgehensweise implementieren
+## <a name="how-to-implement"></a>Implementierung
 
 - [NERC CIP-Standards #a0 Cloud Computing](https://aka.ms/AzureNERC): Leitfaden für elektrische Hilfsprogramme und registrierte Entitäten, die Arbeitslasten für Azure oder Azure Government bereitstellen.
 
@@ -63,9 +63,9 @@ Kunden, die Daten für Azure Government bereitstellen, sind für den eigenen Sic
 - [Azure Cloud Services und US-Export Steuerelemente](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - [Microsoft und FedRAMP](offering-fedramp.md)
 - [Microsoft und DoD](offering-dod-disa-l2-l4-l5.md)
-- [Microsoft Government-Cloud](https://www.microsoft.com/enterprise/government)
+- [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf) herunter.

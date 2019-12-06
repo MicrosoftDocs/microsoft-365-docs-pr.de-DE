@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a79b56bc5f6150439cd945f99b53a69b34a04a45
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690492"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859785"
 ---
-# <a name="compliance-offering-united-kingdom-government-cloud-g-cloud"></a>Compliance-Angebot: Vereinigtes Königreich Government-Cloud (G-Cloud)
+# <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
 ## <a name="uk-g-cloud-overview"></a>UK G-Cloud (Übersicht)
 
@@ -38,18 +38,18 @@ Erfahren Sie mehr über die Vorteile von Großbritannien g-Cloud V6 in der Micro
 
 Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen des Azure Blueprint UK g-Cloud-Prinzips – Implementierungsanleitung](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Cloud-App-Sicherheit
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow Cloud-Dienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossen
+- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Office 365: Exchange Online, SharePoint Online und Skype for Business Online
-- PowerApps-clouddienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossener Service
-- Power BI Cloud Service entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
+- Der PowerApps-Clouddienst ist entweder als eigenständiger Dienst oder als Bestandteil eines Plans oder einer Suite von Office 365 oder Dynamics 365 verfügbar
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Um zu bestätigen, dass Microsoft Cloud Services ihre Einhaltung von G-Cloud-Vereinbarungen aufrecht erhalten, kann der GDS-Akkreditierungsdienst nach eigenem Ermessen jederzeit nachweisen.
 
@@ -102,7 +102,7 @@ Zusätzlich zu den Großbritannien-Rechenzentren verfügt Microsoft Cloud Servic
 
 **Wie kann ich Kopien der Berichte des Auditors erhalten?**
 
-Das [Dienst Vertrauensstellungs Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) stellt unabhängig überwachte Konformitätsberichte bereit. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Microsoft-Ergebnisse mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
+Das [Vertrauensstellungsportal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Microsoft-Ergebnisse mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
 ## <a name="resources"></a>Ressourcen
 
@@ -113,6 +113,6 @@ Das [Dienst Vertrauensstellungs Portal](https://support.office.com/article/Get-s
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf) herunter.

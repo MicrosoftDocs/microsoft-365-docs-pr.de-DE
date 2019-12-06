@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b603cc6b946f62a8ca6b7cfa5c0dd7faf64dfbe4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690487"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859745"
 ---
-# <a name="compliance-offering-health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Compliance-Angebot: Portabilität und Verantwortlichkeit für die Krankenversicherung (HIPAA) #a0 HITECH Act
+# <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Krankenversicherung Portabilität und Verantwortlichkeit (HIPAA) #a0 HITECH Akte
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>HIPAA und HITECH Act (Übersicht)
 
@@ -48,18 +48,18 @@ Microsoft Enterprise Cloud Services werden auch durch FedRAMP Assessments abgede
 
 Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [-Cloud: Lesen der Zwanger-Pesiri-Radiologie-Kunden Geschichte](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Cloud-App-Sicherheit
 - Microsoft Health bot-Dienst
 - Microsoft Stream
-- Microsoft Professional Services: Premier und lokal für Azure, Dynamics 365, InTune und für mittelständische Unternehmen und Unternehmenskunden von Office 365
-- [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Microsoft Flow Cloud-Dienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossen
+- Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Office 365
+- [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Intune
-- [Office 365, Office 365 US-Regierung und Office 365 u.s. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps-clouddienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossener Service
+- [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Der PowerApps-Clouddienst ist entweder als eigenständiger Dienst oder als Bestandteil eines Plans oder einer Suite von Office 365 oder Dynamics 365 verfügbar
 - Power BI Cloud Service entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite integrierte
 - Azure DevOps Services
 
@@ -89,7 +89,7 @@ Microsoft kann die HIPAA-Baa nicht ändern, da Microsoft-Dienste für alle Kunde
 
 **Wie kann ich Kopien der Berichte des Auditors erhalten?**
 
-Das [Dienst Vertrauensstellungs Portal](https://www.microsoft.com/trustcenter/STP/default.aspx) stellt unabhängig überwachte Konformitätsberichte bereit. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Cloud-Dienst Ergebnisse von Microsoft mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
+Das [Vertrauensstellungsportal](https://www.microsoft.com/trustcenter/STP/default.aspx) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Cloud-Dienst Ergebnisse von Microsoft mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
 **Wie kann ich mehr über die Einhaltung von HIPAA und das HITECH Act erfahren?**
 
@@ -102,13 +102,13 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft diese Leitfäden ve
 ## <a name="resources"></a>Ressourcen
 
 - [HIPAA-Omnibus Regel](https://aka.ms/HIPAA-omnibus) (die endgültigen Verordnungen – ändern von HIPAA-Regeln)
-- [Microsoft Common Controls – Hub-Compliance-Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services-Bedingungen](https://aka.ms/Online-Services-Terms)
-- [Microsoft Government-Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Grundlegendes zur HIPAA-Konformität mit Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19. Mai 2016)
 - [Anleitung zur Implementierung von Azure HIPAA](https://aka.ms/azure-hipaa-guide)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf) herunter.

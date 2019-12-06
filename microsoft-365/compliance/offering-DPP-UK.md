@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ac12047420e29a0c096dffac884ab584a38fad9b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690456"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859965"
 ---
-# <a name="compliance-offering-digital-production-partnership-dpp-united-kingdom"></a>Compliance-Angebot: digitale Produktionspartnerschaft (DPP) Vereinigtes Königreich
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>Digitale Produktionspartnerschaft (DPP) Vereinigtes Königreich
 
 ## <a name="about-the-dpp"></a>Informationen zum DPP
 
@@ -32,18 +32,18 @@ Microsoft Azure wurde mit dem DPP Committed to Security Mark für Broadcast nach
   
 Dies bedeutet, dass Sender und andere Medien Kunden, die Azure verwenden, zuversichtlich sein können, dass seine robuste Sicherheits-und widerstandsfähigen Dienste zur Erfüllung der einzigartigen Anforderungen der Broadcast Branche von der Programmentwicklung bis hin zur Übertragung beitragen können.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Die Azure-Übertragungs Marke gilt für ein Jahr und wird jährlich erneuert.
 
 - [Prüfliste für Azure naba DPP Broadcaster Security Requirements](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP, der für Sicherheitsunternehmen zugesichert wurde, die die Marken vergeben haben](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>Vorgehensweise implementieren
+## <a name="how-to-implement"></a>Implementierung
 
 - [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): Best Practices in Azure schützen Vorabversionen von Inhalten vor nicht autorisierter Offenlegung, Änderung oder Löschung.
 - [Azure Media Services](https://docs.microsoft.com/azure/media-services/): Erstellen von Lösungen, die eine High-Definition-Videocodierung und Video Streaming in Broadcast Qualität erzielen.
@@ -54,6 +54,6 @@ Die Azure-Übertragungs Marke gilt für ein Jahr und wird jährlich erneuert.
 - [NABA und DPP-Sender vereinen sich zur Förderung von Cyber-Sicherheitsanforderungen für Zulieferer](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf) herunter.

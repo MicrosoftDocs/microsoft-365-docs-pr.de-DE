@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690485"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859655"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>Compliance-Angebot: Internationaler Handel mit Rüstungs Vorschriften (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>Internationaler Handel mit Rüstungs Vorschriften (ITAR)
 
 ## <a name="itar-overview"></a>ITAR-Übersicht
 
@@ -36,10 +36,10 @@ Die ITAR hat bestimmte Verpflichtungen zum Melden von Verstößen, die bestimmte
   
 Kunden, die ITAR-geregelte Daten hosten möchten, sollten mit Ihren Microsoft-Konto-und Lizenzierungs Teams zusammenarbeiten, um weitere Informationen zu erhalten, geeignete Vereinbarungen zu treffen und auf relevante Systemarchitektur Informationen zuzugreifen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
-- [Office 365 Verteidigung der US-Regierung](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -56,6 +56,6 @@ Wenden Sie sich an Ihren Microsoft-Konto Vertreter.
 - [Office 365 US-Regierung](https://products.office.com/government/office-365-web-services-for-government)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf) herunter.

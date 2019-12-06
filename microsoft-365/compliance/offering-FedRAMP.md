@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5edd043db7d5f8c401aa287032ddf7cfd9b63982
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690496"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859805"
 ---
-# <a name="compliance-offering-federal-risk-and-authorization-management-program-fedramp"></a>Compliance-Angebot: Bundes Risiko-und Autorisierungs Management Programm (FedRAMP)
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>FedRAMP (Federal Risk and Authorization Management Program)
 
 ## <a name="fedramp-overview"></a>FedRAMP-Übersicht
 
@@ -62,25 +62,25 @@ Sobald eine P-ATO erteilt wurde, benötigt ein CSP weiterhin eine Autorisierung 
 - Office 365 (Enterprise-und Business-Pläne) und Office 365 US-Regierung haben eine FedRAMP Agency ATO auf der moderaten Impact-Ebene aus dem Department of Health and Human Services (DHHS) Büro des Generalinspektors. Office 365 US-Regierung war der erste Cloud-basierte e-Mail-und Zusammenarbeits Dienst, um diese Autorisierung zu erhalten.
 - Jeder Kunde, der O365 US-Regierungs Verteidigung konsumieren möchte, kann die DISA P-ATO verwenden, um eine Agentur ATO zu generieren, um Ihre Akzeptanz von O365 zu dokumentieren.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 und Office 365 US-Regierung](https://aka.ms/o365-compliance-framework)
-- Office 365 Verteidigung der US-Regierung
-- Power BI Cloud Service entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
+- [Office 365 und Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
+- Office 365 U.S. Government Defense
+- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
 - Microsoft Defender ATP
 
 > [!NOTE]
 > Die Verwendung von Azure Active Directory in Azure Government erfordert die Verwendung von Komponenten, die außerhalb von Azure Government in der Azure Public Cloud bereitgestellt werden.
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Microsoft muss seine Cloud-Dienste jedes Jahr erneut zertifizieren, um seine P-ATO und ATOs beizubehalten. Dazu muss Microsoft seine Sicherheitskontrollen kontinuierlich überwachen und bewerten und nachweisen, dass die Sicherheit seiner Dienste in Übereinstimmung bleibt.
 
 - [Microsoft Cloud Services-Autorisierungen](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
-- [Microsoft FedRAMP-Überwachungsberichte](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
+- [FedRAMP-Prüfberichte für Microsoft](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
 
 ## <a name="ramp-up-your-fedramp-solutions-on-azure-government"></a>Ramp up your FedRAMP Solutions on Azure Government
 
@@ -109,11 +109,11 @@ Ja. Sie können die Zertifizierungen von Microsoft Cloud Services als Grundlage 
 ## <a name="resources"></a>Ressourcen
 
 - [Bundes Risiko-und Autorisierungs Verwaltungsprogramm](https://www.fedramp.gov/)
-- [Microsoft Common Controls – Hub-Compliance-Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Government-Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP-Sicherheits Bewertungs Framework](https://go.microsoft.com/fwlink/p/?linkid=2099507)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf) herunter.

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1a3fe8adac9dae1b2dcbc04430e9d7d3f49bc201
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 378f03c5c579939abed84cfdea436845f37292af
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690458"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859895"
 ---
-# <a name="compliance-offering-federation-against-copyright-theft-fact"></a>Compliance-Angebot: Partnerverbund gegen Copyright-Diebstahl (Fakt)
+# <a name="federation-against-copyright-theft-fact"></a>Partnerverbund gegen Copyright Diebstahl (Fakt)
 
 ## <a name="fact-overview"></a>Faktenübersicht
 
@@ -32,11 +32,11 @@ Basierend auf der freiwilligen Übermittlung durch Microsoft an eine Fact Audit,
 
 Erfahren Sie mehr über die Vorteile von Fact in der Microsoft-Cloud: [herunterladen des Fact Backgrounders](https://aka.ms/fact-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 [Azure und Azure Government](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Die Azure-Zertifizierung wird jährlich erneuert: [Azure Fact Certificate](https://aka.ms/azurefactcert)
 
@@ -57,9 +57,9 @@ Die Einhaltung ist zwar freiwillig, Microsoft hat sich jedoch für eine unabhän
 - [CDSA-Zertifizierung von Azure Media Services](https://aka.ms/cdsa-cert)
 - [Azure ISO 27001-Zertifizierung](https://aka.ms/Azure-BSI-Cert)
 - [MPAA-Bewertung](offering-mpaa.md)
-- [Azure-Antworten auf CSA CAIQ v 3.0.1](https://aka.ms/csacaiqresponses)
+- [Azure-Antworten auf CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf) herunter.

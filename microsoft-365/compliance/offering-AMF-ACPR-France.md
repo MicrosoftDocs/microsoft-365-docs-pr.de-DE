@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5b0571c9605a85d9b12df56c11612c5deca34908
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 208c6105e684bedb2b59b31a849486e131bbce59
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622470"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860115"
 ---
-# <a name="compliance-offering-financial-authority-amf-and-prudential-authority-acpr-france"></a>Compliance-Angebot: Finanzaufsichtsbehörde (AMF) und die Aufsichts- und Beschlussaufsichtsbehörde (ACPR) Frankreich
+# <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>Die Finanzaufsichtsbehörde (AMF) und die Aufsichts- und Beschlussaufsichtsbehörde (ACPR) Frankreich
 
 ## <a name="about-the-amf-and-acpr"></a>Über AMF und ACPR
 

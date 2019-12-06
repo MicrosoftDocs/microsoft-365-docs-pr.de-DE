@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 86973d36149a938507c93938b9d97a99761ece8b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 044e92561c86829477339dbd6db2a5fde2da87bb
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690502"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859465"
 ---
-# <a name="compliance-offering-us-section-508"></a>Compliance-Angebot: U.S.-Abschnitt 508
+# <a name="us-section-508"></a>U.S.-Abschnitt 508
 
 ## <a name="about-us-section-508"></a>Informationen zum US-Abschnitt 508
 
@@ -30,28 +30,28 @@ Da es sich um einen großen Software-und Cloud-Service-Anbieter für US-Bundes-u
 
 Die Einhaltung des US-Abschnitts 508-Verordnung durch Microsoft weist auf die Verpflichtung hin, Technologien und Daten für alle Kunden zugänglich zu machen. US-Abschnitt 508 ist die US-spezifische Zugänglichkeits Anforderung, die die EN 301 549 (Europa) und die WCAG (International) ergänzt.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
-- Dynamics 365 und Dynamics 365 U.S. Government
+- Dynamics 365 und Dynamics 365 U.S. Government
 - Intune
-- [Office 365 und Office 365 US-Regierung](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- [Office 365 Verteidigung der US-Regierung](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Windows Server 2016
+- [Office 365 und Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Windows Server 2016
 
-## <a name="microsoft-accessibility-conformance-reports"></a>Konformitätsberichte für Microsoft-Eingabehilfen
+## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft Konformitätsberichte zur Barrierefreiheit
 
-Hier finden Sie [Konformitätsberichte](https://go.microsoft.com/fwlink/p/?linkid=2050974) für alle unsere Produkte und Dienstleistungen.
+[Konformitätsberichte](https://go.microsoft.com/fwlink/p/?linkid=2050974) für alle unsere Produkte und Dienstleistungen suchen.
 
 ## <a name="resources"></a>Ressourcen
 
 - [Microsoft Accessibility Page](https://go.microsoft.com/fwlink/p/?linkid=2051579): erkunden Sie die Möglichkeiten, wie Microsoft Innovationen durchführen kann, damit jeder die Möglichkeit hat, mehr zu erreichen.
-- [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365 Ressourcen für Personen mit Behinderungen.
-- [Enterprise Invaliden-Antwort Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedizierter Support für Enterprise-Kunden mit Fragen zur Barrierefreiheit über unsere Produkte und Dienstleistungen oder Compliance.
+- [Office 365-Barrierefreiheitscenter](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365-Ressourcen für Menschen mit Behinderungen.
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedizierter Support für Unternehmenskunden mit Fragen zur Barrierefreiheit unserer Produkte und Dienstleistungen oder zur Compliance.
 - [DHS Trusted Tester-Programm](https://go.microsoft.com/fwlink/?linkid=2052171): Informationen zum Trusted Tester-Programm des US-amerikanischen Department of Homeland Security (DHS) erhalten, an dem Microsoft teilnimmt.
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) herunter.

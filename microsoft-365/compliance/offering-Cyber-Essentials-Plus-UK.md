@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f30ec3181a90f259d6cafd9a3548d7a1ad5852
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 795a8b94c53aa94731d6c55786312b1baef6a685
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690470"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859985"
 ---
-# <a name="compliance-offering-united-kingdom-cyber-essentials-plus"></a>Compliance-Angebot: Vereinigtes Königreich Cyber Essentials Plus
+# <a name="united-kingdom-cyber-essentials-plus"></a>Vereinigtes Königreich Cyber Essentials Plus
 
 ## <a name="uk-cyber-essentials-plus-overview"></a>UK Cyber Essentials Plus (Übersicht)
 
@@ -39,7 +39,7 @@ Microsoft Azure hat das Cyber Essentials Plus-Abzeichen erreicht und erfüllt di
 
 Das [Azure Cyber Essentials Plus-Zertifikat](https://aka.ms/AzureCyberEPlusCert), das für unsere globale Funktion von Azure gilt, steht zum Download bereit.
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 - [Azure Cyber Essentials Plus-Konformitätsbericht](https://aka.ms/AzureCyberEPlusReport)
 - [Azure Cyber Essentials Plus-Zertifizierung](https://aka.ms/AzureCyberEPlusCert)
@@ -49,6 +49,6 @@ Das [Azure Cyber Essentials Plus-Zertifikat](https://aka.ms/AzureCyberEPlusCert)
 - [Cyber Essentials-Schema: Assurance Framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf) herunter.

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 34e20578d09079031d4a41bafdf199d055ced09a
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690477"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859575"
 ---
-# <a name="compliance-offering-ministry-of-electronics-and-information-technology-meity"></a>Compliance-Angebot: Ministerium für Elektronik und Informationstechnologie (MeitY)
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministerium für Elektronik und Informationstechnologie (MeitY)
 
 ## <a name="meity-overview"></a>MeitY-Übersicht
 
@@ -38,12 +38,12 @@ Im November 2017 wurde Microsoft einer der ersten globalen Cloud-Dienstanbieter,
 
 Die MeitY-Akkreditierung von Microsoft war das Ergebnis einer rigorosen Überwachung, die von der Direktion für Standardisierungs Tests und Qualitätszertifizierungen (STQC), einer Regierungsorganisation, die Qualitäts Sicherungsdienste bereitstellt, mithilfe eines Evaluierungs Frameworks durchgeführt wurde. basierend auf der Arbeit der MeghRaj-Cloud-Initiative. Über Microsoft Azure können Organisationen des öffentlichen Sektors nun auf eine breite Palette von Bereitstellungsmodellen und Dienst angeboten zurückgreifen, einschließlich der Infrastruktur als Dienst (IaaS), Plattform als Dienst (PaaS), Notfallwiederherstellung, DevOps und verwalteter Sicherung.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 - Microsoft-Cloud-Akkreditierung unter [dem Überwachungs Status von Cloud-Dienstanbietern](https://meity.gov.in/content/gi-cloud-meghraj)
 
@@ -60,6 +60,6 @@ Die Bereitstellung von öffentlichen Diensten für Bürger Online ist ein wichti
 - [Zugelassene Cloud-Dienstanbieter](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf) herunter.

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 02259b8c9e957e29ce695330a80b2a252478c0e1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690451"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859865"
 ---
-# <a name="compliance-offering-family-educational-rights-and-privacy-act-ferpa"></a>Compliance-Angebot: Family Education Rights and Privacy Act (FERPA)
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>Family Educational Rights and Privacy Act (FERPA)
 
 ## <a name="ferpa-overview"></a>FERPA-Übersicht
 
@@ -40,19 +40,19 @@ Aufgrund dieser vertraglichen Verpflichtungen können Kunden, die FERPA unterlie
 
 Erfahren Sie mehr über die Vorteile von FERPA in der Microsoft-Cloud: [Laden Sie das FERPA Backgrounder herunter](https://aka.ms/ferpa-compliance) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 Dienste, für die Microsoft zustimmt, als "Schul Beamter" mit berechtigten Bildungs Interessen in Kundendaten festgelegt zu werden, umfassen Folgendes:
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365, Office 365 US-Regierung und Office 365 u.s. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps und Microsoft Flow entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
 - Azure DevOps Services
 - Windows Defender ATP
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 FERPA erfordert oder erkennen keine Überwachungen oder Zertifizierungen.
 
@@ -74,9 +74,9 @@ Dieses US-Bundesgesetz beauftragt den Schutz der Privatsphäre der Bildungsunter
 - [Bundes Register: FERPA-Abschluss Regel](https://aka.ms/ferpa-reg)
 - [FERPA-Implementierungshandbuch für Microsoft Azure](https://aka.ms/azureferpa)
 - [Azure FERPA Compliance Framework-Zuordnung](https://aka.ms/AzureFERPAMapping)
-- [Microsoft Online Services-Bedingungen](https://aka.ms/Online-Services-Terms)
+- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf) herunter.

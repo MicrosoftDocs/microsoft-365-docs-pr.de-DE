@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: de25c210fb5b361cf9bba1d7efe15e27d386e200
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690462"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859975"
 ---
-# <a name="compliance-offering-defense-federal-acquisition-regulation-supplement-dfars"></a>Compliance-Angebot: Defense Federal Acquisition Regulation Supplement (DFARS)
+# <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Defense Federal Acquisition Regulation Supplement (DFARS)
 
 ## <a name="dfars-overview"></a>DFARS-Übersicht
 
@@ -32,18 +32,18 @@ Microsoft Government Cloud Services unterstützen die US-amerikanische Rüstungs
   
 Erfahren Sie, wie Sie Ihre DFARS-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [Download the Azure-Blueprint DFARS Customer Responsibilities Matrix](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 Abgedeckte Dienste für DoD-Impact Level 5
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 US Government and Office 365 US Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 - [Microsoft Cloud Services-Autorisierungen](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Azure P-ATO Letter signed 3. März 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-- [Siehe zusätzliche Überwachungsberichte](https://aka.ms/auditreports)
+- [Weitere Prüfberichte anzeigen](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -75,7 +75,7 @@ Darüber hinaus werden Microsoft-Angebote außerhalb der FedRAMP-zertifizierten 
 ## <a name="resources"></a>Ressourcen
 
 - [Defense Federal Acquisition Regulation Supplement (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
-- [Microsoft-Cloud für Behörden](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Onlinedienstbedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Kontrollierte nicht klassifizierte Informationen (CUI)](https://www.archives.gov/cui/registry/category-list)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

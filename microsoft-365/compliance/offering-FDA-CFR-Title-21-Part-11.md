@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d37557c1df1edfc026960b5a7d256d5d3fbc7a0b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7e8d24aecb2343ed03a1d224b21060619426717f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690454"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859875"
 ---
-# <a name="compliance-offering-food-and-drug-administration-cfr-title-21-part-11"></a>Compliance-Angebot: Food and Drug Administration CFR Title 21 Part 11
+# <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Title 21 Part 11
 
 ## <a name="fda-cfr-title-21-overview"></a>Übersicht über den FDA CFR Title 21
 
@@ -42,16 +42,16 @@ Kunden können über Ihren Microsoft-Konto Vertreter oder über das [Dienst Vert
 
 Erfahren Sie, wie Sie Ihre FDA CFR Title 21-Bereitstellung beschleunigen: [herunterladen des Azure FDA 21-Qualifizierungs Handbuchs](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 Obwohl es keine Zertifizierung für die Einhaltung des CFR-Titels 21 Teil 11 gibt, wurden die folgenden Microsoft Enterprise Cloud-Dienste unabhängigen Drittanbieter-Überprüfungen unterzogen, die Kunden bei ihren Compliance-Bemühungen unterstützen können. Diese Dienste umfassen Folgendes:
 
 - Azure: Cloud-Dienste, Speicher, Datenverkehrs Manager, virtuelle Computer und virtuelles Netzwerk
 - Intune
-- [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- [Office 365 und Office 365 US-Regierung](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- [Office 365 und Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Die Überwachungsberichte für SOC 1 und SOC 2 Type 2, ISO/IEC 27001 und ISO/IEC 27018-Standards bescheinigen der Effektivität der von Microsoft implementierten Steuerelemente und können Kunden bei der Einhaltung von FDA CFR Title 21 Part 11 unterstützen.
 
@@ -69,7 +69,7 @@ Von Microsoft implementierte überwachte Steuerelemente tragen zur Sicherstellun
 
 **Wie kann ich Kopien der Berichte des Auditors erhalten?**
 
-Das [Dienst Vertrauensstellungs Portal](https://aka.ms/stphelp) stellt unabhängig überwachte Konformitätsberichte bereit. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Cloud-Dienst Ergebnisse von Microsoft mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
+Das [Vertrauensstellungsportal](https://aka.ms/stphelp) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Cloud-Dienst Ergebnisse von Microsoft mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
 **Kann ich die Compliance von Microsoft im Zertifizierungsprozess für meine Organisation verwenden?**
 
@@ -86,11 +86,11 @@ Microsoft stellt sicher, dass die Enterprise Cloud-Dienste die in den Regeln fü
 - [FDA-Leitfaden für die Industrie in teil11: elektronische Aufzeichnungen und Signaturen](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Qualifizierungs Richtlinien für Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Qualifizierungs Richtlinien für Office 365](https://aka.ms/o365-qualification-guideline)
-- [Microsoft Common Controls – Hub-Compliance-Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Online Services-Bedingungen](https://aka.ms/Online-Services-Terms)
-- [Microsoft-Cloud für Behörden](https://aka.ms/govt-cloud)
+- [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
+- [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) herunter.

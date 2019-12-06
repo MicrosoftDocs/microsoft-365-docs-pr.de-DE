@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 2f496db53cde8779dd45f7d15cc9d6bd7789a75c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690503"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859475"
 ---
-# <a name="compliance-offering-sarbanes-oxley-act-of-2002-sox"></a>Compliance-Angebot: Sarbanes-Oxley Act of 2002 (SOX)
+# <a name="sarbanes-oxley-act-of-2002-sox"></a>Sarbanes-Oxley Act von 2002 (SOX)
 
 ## <a name="sox-overview"></a>Übersicht über Sox
 
@@ -40,15 +40,15 @@ Bei Microsoft teilen wir die Verantwortung für die Einhaltung unserer Kunden. W
 
 Erfahren Sie mehr über die Verwendung von Microsoft Azure Kompatibilitätsberichten bei der Erfüllung ihrer SOX-Compliance-Verpflichtungen: [Laden Sie die Azure-Anleitung für Sarbanes-Oxley herunter](https://aka.ms/Azure-SOX-Guide) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI Cloud Service entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
+- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 [SOC 1 Typ 2](offering-SOC.md) Berichte für:
 
@@ -65,12 +65,12 @@ Wenn Sie Ihre Anwendungen und Daten zu abgedeckten Microsoft Cloud-Diensten migr
 ## <a name="resources"></a>Ressourcen
 
 - [Azure-Anleitung für Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
-- [Compliance-Programm für Microsoft Financial Services](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Einhaltung von Finanzdienstleistungen in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft Business Cloud-Dienste und-Finanzdienste](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Gemeinsame Zuständigkeiten für Cloud Computing](https://aka.ms/sharedresponsibility)
+- [Microsoft Compliance-Programm für Finanzdienstleiter](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Finanzdienstleister-Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft-Clouddienste für Unternehmen und Finanzdienstleistungen](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Die gemeinsame Verantwortung beim Cloud Computing](https://aka.ms/sharedresponsibility)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf) herunter.

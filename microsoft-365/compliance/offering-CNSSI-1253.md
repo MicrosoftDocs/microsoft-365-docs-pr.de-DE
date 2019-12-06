@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 232d8ddcdcd108d069247bc76850d7d17f18b629
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690472"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860035"
 ---
-# <a name="compliance-offering-committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Compliance-Angebot: Ausschuss für nationale Sicherheitssysteme – Anweisung Nr. 1253 (CNSSI 1253)
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Ausschuss für nationale Sicherheitssysteme – Anweisung Nr. 1253 (CNSSI 1253)
 
 ## <a name="about-cnss-instruction-1253"></a>Informationen zur CNSS-Anweisung 1253
 
@@ -36,15 +36,15 @@ Azure Government verfügt derzeit über eine FedRAMP hohe provisorische Autorisi
   
 Die Einhaltung von Azure Government mit den anspruchsvollen CNSSI 1253-Anforderungen bedeutet, dass Azure Kunden aus dem öffentlichen Sektor in den USA eine umfassende Palette von Diensten bieten kann, die mit CNSSI 1253 kompatibel sind, sodass Sie von den Kosteneinsparungen und rigorosen Vorteilen profitieren können. Sicherheit der Microsoft-Cloud.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-bezogene Cloud-Dienste
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>Überwachungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Azure Government CNSSI 1253 Bescheinigung der Einhaltung der CNSSI 1253 High-High-High-Baseline
 
-## <a name="how-to-implement"></a>Vorgehensweise implementieren
+## <a name="how-to-implement"></a>Implementierung
 
 - [Azure Government Documentation](https://docs.microsoft.com/azure/azure-government/): Tutorials und Anleitungen helfen Entwicklern beim Bereitstellen und Verwalten von Diensten mithilfe von Azure Government.
 
@@ -64,9 +64,9 @@ Azure Government (FedRAMP Package ID F1603087869) wurde erneut getestet diese St
 - [Azure-Regierung](https://aka.ms/Azure-Government)
 - [Microsoft und FedRAMP](offering-fedramp.md)
 - [Provisorische Autorisierung von Microsoft und DoD](offering-DoD-DISA-L2-L4-L5.md)
-- [Microsoft Government-Cloud](https://www.microsoft.com/enterprise/government)
+- [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Herunterladen des Angebots Backgrounders
+## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 
-Benötigen Sie das Backgrounder-Dokument für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)herunter.
+Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf) herunter.
