@@ -291,7 +291,7 @@
               href: view-label-activity-for-documents.md
             - name: Anzeigen der Data Governance-Berichte
               href: view-the-data-governance-reports.md
-        - name: Ereignisse
+        - name: Veranstaltungen
           items:
             - name: Ereignisbasierte Aufbewahrung
               href: event-driven-retention.md
@@ -1071,7 +1071,7 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: Australien/Pazifik
           items:
-            - name: CCSL/IRAP (Australien)
+            - name: IRAP/CCSL (Australien)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Netzwerk (Neuseeland)
               href: offering-nz-cc-framework-nz.md
