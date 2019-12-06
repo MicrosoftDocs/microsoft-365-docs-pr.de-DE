@@ -14,18 +14,18 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: Diese Artikel helfen externen Absendern beim Verbessern ihres Rufs und ihrer Fähigkeit zum Übermitteln von E-Mails an Benutzer in Office 365. Sie bieten auch einige Informationen zum Melden von Junk-E-Mails und Phishingversuchen, auch wenn Sie selbst kein Office 365-Benutzer sind.
-ms.openlocfilehash: 335118eb49a078b79ae36f4813c530fe15643bae
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: da19605f97c906fae158bb8299339ffb82755faf
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032080"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872031"
 ---
 # <a name="sending-mail-to-office-365"></a>Senden von E-Mails an Office 365
 
 Diese Artikel helfen externen Absendern beim Verbessern ihres Rufs und ihrer Fähigkeit zum Übermitteln von E-Mails an Benutzer in Office 365. Sie bieten auch einige Informationen zum Melden von Junk-E-Mails und Phishingversuchen, auch wenn Sie selbst kein Office 365-Benutzer sind.
 
-Wenn Sie kein Office 365-Kunde sind, aber versuchen, eine E-Mail an einen Office 365-Kunden zu senden, sind Sie an der richtigen Stelle. Wenn Sie ein Office 365-Administrator sind und Hilfe bei der Bekämpfung von Spam benötigen, ist dies jedoch nicht der richtige Abschnitt für Sie. Wechseln Sie stattdessen zu [Anti-spam and anti-malware protection](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx).
+Wenn Sie kein Office 365-Kunde sind, aber versuchen, eine E-Mail an einen Office 365-Kunden zu senden, sind Sie an der richtigen Stelle. Wenn Sie ein Office 365-Administrator sind und Hilfe bei der Bekämpfung von Spam benötigen, ist dies jedoch nicht der richtige Abschnitt für Sie. Wechseln Sie stattdessen zu [Antispam-und Antischadsoftware-Schutz in Office 365](anti-spam-and-anti-malware-protection.md).
 
 |**Inhalt**|**Sieh...**|
 |:-----|:-----|

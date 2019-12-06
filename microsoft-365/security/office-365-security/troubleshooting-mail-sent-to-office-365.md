@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme haben, E-Mails an Postfächer in Office 365 zu senden, und bewährte Methoden für Massenmailings an Office 365-Kunden.
-ms.openlocfilehash: b87b0745c95cd043987f49ed7f21118339d3e592
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 44fe5b984c22a4560da6cf8d63096775f5b47095
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030699"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872011"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden
 
@@ -71,7 +71,7 @@ Wir akzeptieren möglicherweise keine E-Mail-Nachrichten von Absendern, für die
 
 Einige Probleme bei der Übermittlung sind das Ergebnis der IP-Adresse des Absenders, die von Microsoft blockiert wird, oder weil das Benutzerkonto als gesperrter Absender aufgrund von vorherigen Spam-Aktivitäten identifiziert wird. Wenn Sie glauben, dass Sie den NDR irrtümlich erhalten haben, führen Sie zunächst alle Anweisungen in der NDR-Nachricht aus, um das Problem zu beheben.
 
-Weitere Informationen zu dem Fehler, den Sie erhalten haben, finden Sie in der vollständigen Liste der SMTP-Fehlercodes in [DSNs and NDRs in On-Premises Exchange 2013 and Office 365](https://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
+Weitere Informationen zu dem Fehler, den Sie erhalten haben, finden Sie in der Liste der Fehlercodes in [e-Mail-Unzustellbarkeitsberichten in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
  Wenn Sie z. B. den folgenden Unzustellbarkeitsbericht erhalten haben, wurde die IP-Adresse des Absenders wahrscheinlich durch Microsoft blockiert.
 

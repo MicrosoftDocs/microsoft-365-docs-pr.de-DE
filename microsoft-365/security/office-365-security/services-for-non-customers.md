@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt.
-ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f98044b65b49bd9594708ea9e6f798156037ac34
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031770"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871261"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Dienste für Nicht-Kunden, die E-Mails an Office 365 senden
 
@@ -50,7 +50,7 @@ Microsoft bietet verschiedene Supportoptionen für Personen an, die Probleme bei
 
 - Wenden Sie sich unter Verwendung einer anderen Methode an den Office 365-Kunden, an den Sie E-Mails senden möchten, und bitten Sie ihn, den Microsoft-Support zu kontaktieren und ein Supportticket in Ihrem Auftrag zu öffnen. In einigen Fällen muss der Microsoft-Support aus rechtlichen Gründen direkt mit dem Absender kommunizieren, dem der gesperrte die IP-Adressraum gehört. Allerdings können Nicht-Kunden in der Regel keine Supporttickets öffnen.
 
-  Weitere Informationen zum technischen Microsoft-Support für Office 365 finden Sie unter [Support](https://technet.microsoft.com/library/office-365-support.aspx).
+  Weitere Informationen zum technischen Microsoft-Support für Office 365 finden Sie unter [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
 ## <a name="office-365-anti-spam-ip-delist-portal"></a>Office 365-Anti-Spam-IP-Delist-Portal
 

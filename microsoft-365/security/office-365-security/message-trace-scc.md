@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
-ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
+ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37993730"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871761"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -131,7 +131,7 @@ Die verfügbaren Berichtstypen sind:
 
 - **Zusammenfassung**: verfügbar, wenn der Zeitbereich weniger als 10 Tage beträgt und keine zusätzlichen Filteroptionen erforderlich sind. Die Ergebnisse stehen fast unmittelbar nach dem Klicken auf **Suchen**zur Verfügung.
 
-- **Erweiterte Zusammenfassung** oder **Erweiterung**: Diese Berichte stehen nur als herunterladbare CSV-Dateien zur Verfügung und erfordern eine oder mehrere der folgenden Filteroptionen unabhängig vom Zeitbereich: **von diesen Personen**, **für diese Personen**oder ** Nachrichten-ID**. Sie können Platzhalter für die Absender oder die Empfänger verwenden (beispielsweise \*@contoso. com).
+- **Erweiterte Zusammenfassung** oder **Erweiterung**: Diese Berichte sind nur als herunterladbare CSV-Dateien verfügbar und erfordern eine oder mehrere der folgenden Filteroptionen unabhängig vom Zeitbereich: **durch diese Personen**, **für diese Personen**oder nach **richten-ID**. Sie können Platzhalter für die Absender oder die Empfänger verwenden (beispielsweise \*@contoso. com).
 
 **Hinweise**:
 
@@ -139,7 +139,7 @@ Die verfügbaren Berichtstypen sind:
 
 - Sie können zwar eine erweiterte Zusammenfassung oder einen erweiterten Bericht für einen beliebigen Datums-und Zeitbereich auswählen, die letzten vier Stunden archivierter Daten sind jedoch für diese beiden Berichtstypen noch nicht verfügbar.
 
-Wenn Sie auf **weiter**klicken, wird eine Zusammenfassungsseite mit den ausgewählten Filteroptionen, einem eindeutigen (bearbeitbaren) Titel für den Bericht und der e-Mail-Adresse angezeigt, die die Benachrichtigung erhält, wenn die Nachrichtenablaufverfolgung abgeschlossen wird (auch bearbeitbar, und muss sich in einer der akzeptierten Domänen Ihrer Organisation befinden). Klicken Sie auf **Bericht vorbereiten** , um die Nachrichtenablaufverfolgung zu senden. Auf der Hauptseite der **Nachrichtenablaufverfolgung** können Sie den Status des Berichts im Abschnitt **Berichte zum Herunterladen** anzeigen.
+Wenn Sie auf **weiter**klicken, wird eine Zusammenfassungsseite mit den ausgewählten Filteroptionen, einem eindeutigen (bearbeitbaren) Titel für den Bericht und der e-Mail-Adresse angezeigt, die die Benachrichtigung erhält, wenn die Nachrichtenablaufverfolgung abgeschlossen wird (auch bearbeitbar und muss sich in einer der akzeptierten Domänen der Organisation befinden). Klicken Sie auf **Bericht vorbereiten** , um die Nachrichtenablaufverfolgung zu senden. Auf der Hauptseite der **Nachrichtenablaufverfolgung** können Sie den Status des Berichts im Abschnitt **Berichte zum Herunterladen** anzeigen.
 
 Weitere Informationen zu den Informationen, die in den verschiedenen Berichtstypen zurückgegeben werden, finden Sie im nächsten Abschnitt.
 
@@ -235,7 +235,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias*@*Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -249,7 +249,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **message_id**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Thema beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-- **network_message_id**: ein eindeutiger Nachrichten-ID-Wert, der über alle Kopien der Nachricht hinweg gespeichert wird, die aufgrund einer Verzweigung oder Verteilergruppenerweiterung möglicherweise erstellt werden. Ein Beispielwert ist `1341ac7b13fb42ab4d4408cf7f55890f`.
+- **network_message_id**: ein eindeutiger Nachrichten-ID-Wert, der über alle Kopien der Nachricht, die aufgrund von Verzweigung oder Verteilergruppenerweiterung erstellt werden können, gespeichert wird. Ein Beispielwert ist `1341ac7b13fb42ab4d4408cf7f55890f`.
 
 - **original_client_ip**: die IP-Adresse des Clients des Absenders.
 
@@ -273,13 +273,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
   - `AGENT`
 
@@ -289,7 +289,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **event_id**: Diese entsprechen den **Nachrichtenereignis** Werten, die im Abschnitt [verwandte Datensätze für diese Nachricht suchen](#find-related-records-for-this-message) erläutert werden.
 
-- **internal_message_id**: ein Nachrichtenbezeichner, der vom Exchange Online Server zugewiesen wird, der die Nachricht derzeit verarbeitet.
+- **internal_message_id**: eine Nachrichten-ID, die vom Exchange Online Server zugewiesen wird, der die Nachricht derzeit verarbeitet.
 
 - **recipient_address**: die e-Mail-Adressen der Empfänger der Nachricht. Mehrere E-Mail-Adressen sind durch ein Semikolon (;) getrennt.
 
@@ -297,27 +297,27 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit `EXPAND` `REDIRECT`-,- `RESOLVE` und-Ereignissen verwendet, um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
-  - **DSN**: enthält den Bericht Link, bei dem es sich um den **message_id** -Wert der Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn ein DSN im Anschluss an dieses Ereignis generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** -Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
+  - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
-  - **Expand**: enthält den **related_recipient_address** -Wert der zugehörigen Nachrichten.
+  - **Expand**: enthält den **related_recipient_address** Wert der zugehörigen Nachrichten.
 
-  - **Receive**: enthält möglicherweise den **message_id** -Wert der zugehörigen Nachricht, wenn die Nachricht von anderen Prozessen generiert wurde (beispielsweise Posteingangsregeln).
+  - **Receive**: enthält möglicherweise den **message_id** Wert der zugehörigen Nachricht, wenn die Nachricht von anderen Prozessen generiert wurde (beispielsweise Posteingangsregeln).
 
-  - **Send**: enthält den **internal_message_id** -Wert aller DSN-Nachrichten.
+  - **Send**: enthält den **internal_message_id** Wert aller DSN-Nachrichten.
 
-  - **Übertragung**: enthält den **internal_message_id** -Wert der Nachricht, die verzweigt wird (beispielsweisedurch Inhaltskonvertierung, Empfänger Grenzwerte für Nachrichten oder Agents).
+  - **Übertragung**: enthält den **internal_message_id** Wert der Nachricht, die verzweigt wird (beispielsweisedurch Inhaltskonvertierung, Empfänger Grenzwerte für Nachrichten oder Agents).
 
-  - **MAILBOXRULE**: enthält den **internal_message_id** -Wert der eingehenden Nachricht, die bewirkt hat, dass die Posteingangsregel die ausgehende Nachricht generiert hat.
+  - **MAILBOXRULE**: enthält den **internal_message_id** Wert der eingehenden Nachricht, die bewirkt hat, dass die Posteingangsregel die ausgehende Nachricht generiert hat.
 
     Für andere Ereignistypen ist dieses Feld zumeist leer.
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
-  - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Stunde `mm` , = Minute `ss` , = Sekunde `fff` , = Brüche einer Sekunde und `Z` bedeutet `Zulu`, was eine andere Möglichkeit zum bezeichnen von UTC ist.
+  - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Hour `mm` , = Minute `ss` , = Second `fff` , = Brüche einer Sekunde, und `Z` `Zulu`eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 
   - Authentifizierungsfehler. Beispielsweise können Sie den Wert `11a` und den Typ der Authentifizierung sehen, der beim Auftreten des Authentifizierungsfehlers verwendet wurde.
 
@@ -327,13 +327,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **custom_data**: enthält Daten im Zusammenhang mit bestimmten Ereignistypen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
-#### <a name="custom_data-values"></a>custom_data-Werte
+#### <a name="custom_data-values"></a>custom_data Werte
 
-Das **custom_data** -Feld für `AGENTINFO` ein Ereignis wird von einer Vielzahl von Exchange Online-Agents verwendet, um Details zur Nachrichtenverarbeitung zu protokollieren. Einige der interessantesten Agents werden in den folgenden Abschnitten beschrieben.
+Das **custom_data** Feld für ein `AGENTINFO` Ereignis wird von einer Vielzahl von Exchange Online-Agents verwendet, um Details zur Nachrichtenverarbeitung zu protokollieren. Einige der interessantesten Agents werden in den folgenden Abschnitten beschrieben.
 
 #### <a name="spam-filter-agent"></a>Spam Filter-Agent
 
-Ein **custom_data** -Wert, der `S:SFA` mit beginnt, ist vom Spamfilter-Agent. Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
+Ein **custom_data** Wert, der mit `S:SFA` beginnt, ist vom Spamfilter-Agent. Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
@@ -341,26 +341,26 @@ Ein **custom_data** -Wert, der `S:SFA` mit beginnt, ist vom Spamfilter-Agent. Di
 |`SFV=SPM`|Die Nachricht wurde vom Inhaltsfilter als Spam markiert.|
 |`SFV=BLK`|Die Filterung wurde übergangen, und die Nachricht wurde gesperrt, da sie von einem gesperrten Absender stammt.|
 |`SFV=SKS`|Die Nachricht wurde bereits als Spam markiert, noch bevor sie vom Inhaltsfilter verarbeitet wurde Dies beinhaltet Nachrichten, bei denen die Nachricht einer Transportregel entsprach, die diese automatisch als Spam markiert und alle zusätzlichen Filterungen umgeht.|
-|`SCL=<number>`|Weitere Informationen zu den verschiedenen SCL-Werten und deren Bedeutung finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](https://technet.microsoft.com/library/jj200686.aspx).|
-|`PCL=<number>`|Der PCL-Wert (Phishing Confidence Level) der Nachricht. Diese Werte können auf die gleiche Weise interpretiert werden wie die in [SCL-Bewertungen (Spam Confidence Level)](https://technet.microsoft.com/library/jj200686.aspx) dokumentierten SCL-Werte.  |
+|`SCL=<number>`|Weitere Informationen zu den verschiedenen SCL-Werten und deren Bedeutung finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).|
+|`PCL=<number>`|Der PCL-Wert (Phishing Confidence Level) der Nachricht. Diese Werte können auf die gleiche Weise interpretiert werden wie die in [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md) dokumentierten SCL-Werte.  |
 |`DI=SB`|Der Absender der Nachricht wurde blockiert.|
 |`DI=SQ`|Die Nachricht wurde unter Quarantäne gestellt.|
 |`DI=SD`|Die Nachricht wurde gelöscht.|
 |`DI=SJ`|Die Nachricht wurde an den Ordner "Junk-E-Mail" des Empfängers gesendet.|
-|`DI=SN`|Die Nachricht wurde durch den Pool für besonders riskante Zustellungen geleitet. Weitere Informationen finden Sie unter [hochriskanter Zustellungs Pool für ausgehende Nachrichten](https://technet.microsoft.com/library/jj200746.aspx).|
+|`DI=SN`|Die Nachricht wurde durch den Pool für besonders riskante Zustellungen geleitet. Weitere Informationen finden Sie unter [hochriskanter Zustellungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md).|
 |`DI=SO`|Die Nachricht wurde durch den normalen Pool für ausgehende Zustellungen geleitet.|
 |`SFS=[a]|SFS=[b]`|Dies bedeutet, dass Übereinstimmungen mit den Spam-Regeln gefunden wurden.|
 |`IPV=CAL`|Die Nachricht wurde durch die Spam-Filter gelassen, weil die IP-Adrese in einer IP-Zulassungsliste im Verbindungsfilter angegeben wurde.|
 |`H=<EHLOstring>`|Die HELO-oder EHLO-Zeichenfolge des Verbindungs-e-Mail-Servers.|
 |`PTR=<ReverseDNS>`|Der PTR-Eintrag der IP-Adresse des Absenders, auch bekannt als Reverse-DNS-Adresse.|
 
-Ein Beispiel für einen **custom_data** -Wert für eine Nachricht, die nach Spam wie der folgenden gefiltert wird:
+Ein Beispiel **custom_data** Wert für eine Nachricht, die nach Spam wie folgt gefiltert wird:
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
 #### <a name="malware-filter-agent"></a>Filter-Agent für Schadsoftware
 
-Ein **custom_data** -Wert, der `S:AMA` mit beginnt, ist vom Filter-Agent für Schadsoftware. Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
+Ein **custom_data** Wert, der mit `S:AMA` beginnt, ist vom Filter-Agent für Schadsoftware. Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
@@ -377,21 +377,21 @@ Ein **custom_data** -Wert, der `S:AMA` mit beginnt, ist vom Filter-Agent für Sc
 |`Name=<malware>`|Der Name der Schadsoftware, die gefunden wurde.|
 |`File=<filename>`|Der Name der Datei, welche die Schadsoftware enthielt.|
 
-Ein Beispiel für einen **custom_data** -Wert für eine Nachricht, die Malware enthält, sieht wie folgt aus:
+Ein Beispiel **custom_data** Wert für eine Nachricht, die Malware enthält, sieht wie folgt aus:
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 
 #### <a name="transport-rule-agent"></a>Transport Regel-Agent
 
-Ein **custom_data** -Wert, der`S:TRA` mit beginnt, ist vom Transportregel-Agent für Nachrichtenfluss Regeln (auch bekannt als Transportregeln). Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
+Ein **custom_data** Wert, der mit`S:TRA` beginnt, ist vom Transportregel-Agent für Nachrichtenfluss Regeln (auch bekannt als Transportregeln). Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|Die ID der Regel, die abgeglichen wurde.|
 |`St=<datetime>`|Das Datum und die Uhrzeit in UTC, als die Regelübereinstimmung aufgetreten ist.|
-|`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind: <br/>• **Erzwingen**: alle Aktionen für die Regel werden erzwungen. <br/>• **Test mit Richtlinien Tipps:**: alle richtlinientipp Aktionen werden gesendet, aber andere Durchsetzungs Aktionen werden nicht ausgeführt. <br/>• **Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgeführt, aber die Absender werden nicht benachrichtigt, und es werden keine Durchsetzungs Aktionen ausgeführt.|
 
-Ein Beispiel für einen **custom_data** -Wert für Nachrichten, der den Bedingungen einer e-Mail-Fluss Regel entspricht, sieht folgendermaßen aus:
+Ein Beispiel **custom_data** Wert für eine Nachricht, die mit den Bedingungen einer e-Mail-Fluss Regel übereinstimmt, sieht wie folgt aus:
 
 `S:TRA=ETR|ruleId=19a25eb2-3e43-4896-ad9e-47b6c359779d|st=7/17/2017 12:31:25 AM|action=ApplyHtmlDisclaimer|sev=1|mode=Enforce`
