@@ -1,7 +1,7 @@
 ---
 title: ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
 description: Der ISO/IEC 27701-Standard, der Verantwortlichkeiten im Datenschutz und die Einhaltung gesetzlicher Vorschriften für Controller und Verarbeiter innerhalb der globalen Datenverarbeitungs-Lieferkette regelt.
-keywords: Microsoft 365, Compliance, Portfolio
+keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8deb153fa7dd22c7a4346cf8098e1b184d76e4b7
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233478"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859375"
 ---
-# <a name="compliance-offering-isoiec-27701-privacy-information-management-system-pims"></a>Compliance-Portfolio: ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
+# <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
 
 ## <a name="privacy-information-management-system-pims-overview"></a>Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS), Übersicht
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6009eb0300515e14444d8389df77c8705cb95a22
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 6e9aea06e6479a0aa4ec83d35d1fc8c7704e8b0f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622454"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859905"
 ---
-# <a name="compliance-offering-eu-us-and-swiss-us-privacy-shield-frameworks"></a>Complianceangebot: EU-US und Swiss-US Privacy Shield Frameworks
+# <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>EU-US und Swiss-US Privacy Shield Frameworks
 
 ## <a name="about-the-eu-us-and-swiss-us-privacy-shield-frameworks"></a>Informationen zu den EU-US und Swiss-US Privacy Shield Frameworks
 
@@ -71,7 +71,7 @@ Bei der Übertragung personenbezogener Daten aus der EU in die Vereinigten Staat
 
 **Inwiefern ist Microsoft für personenbezogene Daten in der EU verantwortlich, die an Dritte übertragen werden?**
 
-Die Microsoft-Verantwortlichkeit für personenbezogene Daten, die Microsoft im Rahmen des Privacy Shield empfängt und später an Dritte überträgt, wird in den Privacy Shield Principles beschrieben. Insbesondere bleibt Microsoft verantwortlich und haftbar, wenn Agenten von Drittanbietern, an die sich Microsoft zur Verarbeitung der personenbezogenen Daten wendet, dies in einer Weise tun, die den Grundsätzen widerspricht. Microsoft haftet jedoch nicht, wenn belegt werden kann, dass Microsoft nicht für das Ereignis verantwortlich ist, das zu dem Schaden führt.
+Die Verantwortlichkeit von Microsoft für personenbezogene Daten, die Microsoft im Rahmen des Privacy Shield empfängt und später an Dritte überträgt, wird in den Privacy Shield Principles beschrieben. Insbesondere bleibt Microsoft verantwortlich und haftbar, wenn Agenten von Drittanbietern, an die sich Microsoft zur Verarbeitung der personenbezogenen Daten wendet, dies in einer Weise tun, die den Grundsätzen widerspricht. Microsoft haftet jedoch nicht, wenn belegt werden kann, dass Microsoft nicht für das Ereignis verantwortlich ist, das zu dem Schaden führt.
 
 **Erfüllt die Übertragung von Daten gemäß dem EU-US und Swiss-US Privacy Shield die Anforderungen der DSGVO?**
 
