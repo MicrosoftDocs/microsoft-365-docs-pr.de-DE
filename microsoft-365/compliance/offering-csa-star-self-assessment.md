@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f526845ccaee4ea914c3859d4a2a9c34068048
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: 73a21ba3089646df55ad51a7918749f29691aad8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38763031"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859425"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-self-assessment"></a>Complianceangebot: Cloud Security Alliance (CSA) STAR-Selbstbewertung
+# <a name="cloud-security-alliance-csa-star-self-assessment"></a>Cloud Security Alliance (CSA) STAR Selbsteinschätzung
 
 ## <a name="csa-star-self-assessment-overview"></a>Übersicht über die CSA STAR-Selbstbewertung
 

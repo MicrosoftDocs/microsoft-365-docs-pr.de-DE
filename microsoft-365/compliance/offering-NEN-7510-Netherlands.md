@@ -11,18 +11,18 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 51d167a4aea3abcbef6348cf2a7b9c7fde52d6ea
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 168519277be7b19d0d3e864e39aa506b1bf0ed0d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39268752"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859545"
 ---
-# <a name="compliance-offering-nen-7510"></a>Complianceangebot: NEN 7510
+# <a name="nen-7510"></a>NEN 7510
 
 ## <a name="nen-7510-overview"></a>Übersicht über NEN 7510
 
-Organisationen in den Niederlanden, die Gesundheitsdaten von Patienten verarbeiten, müssen nachweisen, dass sie die Kontrolle über diese Daten haben und die im Standard NEN 7510 festgelegten Anforderungen erfüllen. Microsoft unterliegt zwar nicht selbst dem NEN 7510-Standard, aber seine Cloudkunden im Gesundheitswesen müssen Compliance mit NEN 7510 für Lösungen auf Basis der Microsoft Cloud nachweisen. Microsoft-Clouddienste werden regelmäßig verschiedenen Zertifizierungen und Prüfung unterzogen. Einige dieser Zertifizierungen und Prüfungen enthalten Elemente, die eng an den im Standard NEN 7510 festgelegten Anforderungen ausgerichtet sind.
+Organisationen in den Niederlanden, die Gesundheitsdaten von Patienten verarbeiten, müssen nachweisen, dass sie die Kontrolle über diese Daten haben und die im Standard NEN 7510 festgelegten Anforderungen erfüllen. Microsoft unterliegt zwar nicht selbst dem NEN 7510-Standard, aber seine Cloudkunden im Gesundheitswesen müssen Compliance mit NEN 7510 für Lösungen auf Basis der Microsoft Cloud nachweisen. Microsoft-Clouddienste werden regelmäßig verschiedenen Zertifizierungen und Prüfungen unterzogen. Einige dieser Zertifizierungen und Prüfungen enthalten Elemente, die eng an den im Standard NEN 7510 festgelegten Anforderungen ausgerichtet sind.
 
 ## <a name="microsoft-and-nen-75102011"></a>Microsoft und NEN 7510:2011
 
@@ -49,14 +49,14 @@ Der Nachweis der NEN-Compliance liegt in der Verantwortung der Organisation aus 
 
 **Hat Microsoft Compliance mit NEN 7510 erzielt?**
 
-Die Verantwortung für die Compliance mit NEN 7510 liegt bei niederländischen Organisationen im Gesundheitswesen. Das Unternehmen muss ein Managementsystem für Informationssicherheit einrichten und Risiken mit entsprechenden technischen und betrieblichen Maßnahmen entgegenwirken. Für Microsoft in seiner Rolle als Clouddienstanbieter ist Compliance mit NEN 7510 weder das Ziel noch technisch machbar. Wenn ein Kunde Microsoft Online Services implementiert oder verwendet, können diese Dienste zum Umfang einer NEN 7510-Bewertung gehören. Die Organisation muss jedoch ihre eigenen (zusätzlichen) Kontrollen, Wahlmöglichkeiten und Prozesse hinzufügen, die Teil der NEN 7510-Gesamtbewertung sind. Ziel des Berichts ist der Nachweis, dass eine Organisation aus dem Gesundheitssektor die Microsoft Online Services auf eine Weise nutzen kann, die die NEN 7510-Complianceanforderungen erfüllt.
+Die Verantwortung für die Compliance mit NEN 7510 liegt bei niederländischen Organisationen im Gesundheitswesen. Das Unternehmen muss ein Managementsystem für Informationssicherheit einrichten und Risiken mit entsprechenden technischen und betrieblichen Maßnahmen entgegenwirken. Für Microsoft in seiner Rolle als Clouddienstanbieter ist Compliance mit NEN 7510 weder das Ziel noch technisch machbar. Wenn ein Kunde Microsoft-Onlinedienste implementiert oder verwendet, können diese Dienste zum Umfang einer NEN 7510-Bewertung gehören. Die Organisation muss jedoch ihre eigenen (zusätzlichen) Kontrollen, Wahlmöglichkeiten und Prozesse hinzufügen, die Teil der NEN 7510-Gesamtbewertung sind. Ziel des Berichts ist der Nachweis, dass eine Organisation aus dem Gesundheitssektor die Microsoft-Onlinedienste auf eine Weise nutzen kann, die die NEN 7510-Complianceanforderungen erfüllt.
 
 **Der Bericht weist keine 100-prozentige Abdeckung nach. Kann die NEN 7510-Compliance nicht erzielt werden?**
 
-Microsoft Online Services bieten viele Kontrollen, die Organisationen im niederländischen Gesundheitswesen bei der Erreichung von NEN 7510-Compliance unterstützen. Das Unternehmen muss diese Anbieterfunktionen trotzdem mit eigenen Implementierungsmöglichkeiten, zusätzlichen technologischen Kontrollen und Verwaltungsprozessen erweitern. Der Bericht weist bereits eine direkte 94%ige Abdeckung der gesamten Liste der anwendbaren Kontrollen auf. Für die verbleibenden Kontrollen stellt Microsoft im Bericht Anweisungen zur Verfügung, wie Compliance mit diesen Kontrollen nachgewiesen werden kann.
+Microsoft-Onlinedienste bieten viele Kontrollen, die Organisationen im niederländischen Gesundheitswesen bei der Erreichung von NEN 7510-Compliance unterstützen. Das Unternehmen muss diese Anbieterfunktionen trotzdem mit eigenen Implementierungsmöglichkeiten, zusätzlichen technologischen Kontrollen und Verwaltungsprozessen erweitern. Der Bericht weist bereits eine direkte 94-prozentige Abdeckung der gesamten Liste der anwendbaren Kontrollen auf. Für die verbleibenden Kontrollen stellt Microsoft im Bericht Anweisungen zur Verfügung, wie Compliance mit diesen Kontrollen nachgewiesen werden kann.
 
 > [!NOTE]
-> Die Implementierung der vollständigen Kontrollliste ist nicht der primäre Zweck von NEN 7510 (allerdings ist die umfassende Abdeckung von Microsoft Online Services hilfreich). NEN 7510 ordnet die Implementierung eines risikobasierten Informationssicherheitssystems an, mit dessen Hilfe eine Organisation ermitteln kann, welche Kontrollen für sie relevant sind.
+> Die Implementierung der vollständigen Kontrollliste ist nicht der primäre Zweck von NEN 7510 (allerdings ist die umfassende Abdeckung der Microsoft-Onlinedienste hilfreich). NEN 7510 ordnet die Implementierung eines risikobasierten Informationssicherheitssystems an, mit dessen Hilfe eine Organisation ermitteln kann, welche Kontrollen für sie relevant sind.
 
 **Ist der NEN 7510-Abdeckungsbericht ein rechtlich bindendes Dokument?**
 
@@ -70,7 +70,7 @@ Microsoft hat seine globalen Mechanismen den Kontrollen des NEN 7510-Standards 
 
 Der Bericht wird Ihnen im Rahmen einer Vertraulichkeitsvereinbarung (Non Disclosure Agreement, NDA) unter der Voraussetzung zur Verfügung gestellt, dass er nur der Information von Kunden dient und weder kopiert noch über andere Kanäle als das Microsoft Service Trust Portal offengelegt wird.
 
-Kunden können den Bericht m Rahmen ihrer Compliance- oder Assurance-Prozesse an ihren eigenen internen oder externen Prüfer weitergeben.
+Kunden können den Bericht im Rahmen ihrer Compliance- oder Assurance-Prozesse an ihren eigenen internen oder externen Prüfer weitergeben.
 
 ## <a name="resources"></a>Ressourcen
 

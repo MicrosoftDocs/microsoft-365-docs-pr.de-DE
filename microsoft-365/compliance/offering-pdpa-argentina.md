@@ -11,22 +11,22 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3c1bfd0d77eb2dd1a928355441cd8bb1ca5d574c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3bb251b888ba98bd1a815bde0aed0584a4a9bc13
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39625291"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859305"
 ---
-# <a name="compliance-offering-personal-data-protection-act-pdpa-argentina"></a>Compliance-Angebot: Personal Data Protection Act (PDPA) Argentinien
+# <a name="personal-data-protection-act-pdpa-argentina"></a>Datenschutzgesetz (Personal Data Protection Act, PDPA) Argentinien
 
 ## <a name="about-the-pdpa"></a>Über PDPA
 
-In Übereinstimmung mit der argentinischen Nationalverfassung wurde im Jahr 2000 das [Gesetz zum Schutz personenbezogener Daten 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) erlassen, um zum Schutz der personenbezogenen Daten beizutragen und Einzelpersonen Zugang zu allen in öffentlichen und privaten Datenbanken und Registern gespeicherten Informationen zu gewähren. Die argentinische Agentur für den Zugang zu öffentlichen Informationen ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) innerhalb des Kabinettschefs der Ministerien ist für die Durchsetzung dieses Gesetzes zuständig.
+In Übereinstimmung mit der argentinischen Nationalverfassung wurde im Jahr 2000 das [Gesetz zum Schutz personenbezogener Daten 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) erlassen, um zum Schutz der personenbezogenen Daten beizutragen und Einzelpersonen Zugang zu allen in öffentlichen und privaten Datenbanken und Registern gespeicherten Informationen zu gewähren. Die argentinische Agentur für den Zugang zu öffentlichen Informationen ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) innerhalb des Kabinettschefs der Ministerien ist für die Durchsetzung dieses Gesetzes zuständig.
 
 Die PDPA steht im Einklang mit dem europäischen Gesetzgebungsmodell zum Datenschutz, und Argentinien war das erste Land Lateinamerikas, das eine Qualifizierung als „angemessen“ für Datenübertragungen aus der EU erhielt.
 
-Im Jahr 2016 erließ das AAIP eine neue Verordnung, die [Provision 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanisch), welche die grenzüberschreitende Übermittlung personenbezogener Daten regelt. Im Rahmen dieser Richtlinie genehmigte sie Musterformulare (die teilweise auf dem Datenübertragungsmodell in der EU basieren) für solche Übertragungen an für die Datenverarbeitung Verantwortliche und Datenverarbeiter.
+Im Jahr 2016 erließ das AAIP eine neue Verordnung, die [Provision 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanisch), welche die grenzüberschreitende Übermittlung personenbezogener Daten regelt. Im Rahmen dieser Richtlinie genehmigte sie Musterformulare (die teilweise auf dem Datenübertragungsmodell in der EU basieren) für solche Übertragungen an für die Datenverarbeitung Verantwortliche und Datenverarbeiter.
 
 ## <a name="microsoft-and-the-pdpa"></a>Microsoft und die PDPA
 

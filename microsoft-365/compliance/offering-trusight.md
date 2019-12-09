@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 73c8a187b018a2471a933a13062c1d3e4505ea02
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: ea0732693f01f2c2898a3bb2f5067b406e613fa0
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233678"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859275"
 ---
-# <a name="compliance-offering-trusight"></a>Complianceangebot: TruSight
+# <a name="trusight"></a>TruSight
 
 ## <a name="about-trusight"></a>Informationen zu TruSight
 

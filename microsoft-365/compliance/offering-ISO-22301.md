@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d04a087ee0c58ec544128c6b8a510da1e1ae9bce
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 1f4bfd1c219de2126bc6cb9443f3b899b99945c6
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233558"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859695"
 ---
-# <a name="compliance-offering-iso-223012012-business-continuity-management-standard"></a>Compliance-Angebot: ISO 22301:2012 – Geschäftskontinuitätsmanagement-Standard
+# <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 – Standard für Business Continuity Management 
 
 ## <a name="iso-22301-overview"></a>ISO 22301-Übersicht
 

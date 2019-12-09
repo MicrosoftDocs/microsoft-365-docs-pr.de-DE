@@ -11,20 +11,20 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d91663a2217f3ff1f1753f9f94a44de9c1536d8c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9ca6323d5c5ffd019c7d79f283b98cb25816cf62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39233718"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859525"
 ---
-# <a name="compliance-offering-office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Compliance-Angebot: Office of the Superintendent of Financial Institutions (OSFI) in Kanada
+# <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Office of the Superintendent of Financial Institutions (OSFI) in Kanada
 
 ## <a name="about-the-osfi"></a>Über OSFI
 
-Das [Office of the Superintendent of Financial Institutions](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) ist eine unabhängige Behörde der kanadischen Regierung, die für die aufsichtsrechtliche Regulierung und Aufsicht von staatlich regulierten Finanzinstituten und Pensionsplänen in Kanada zuständig ist.
+Das [Office of the Superintendent of Financial Institutions](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) ist eine unabhängige Behörde der kanadischen Regierung, die für die aufsichtsrechtliche Regulierung und Aufsicht von staatlich regulierten Finanzinstituten und Pensionsplänen in Kanada zuständig ist.
 
-In seiner Aufsichtsfunktion hat OSFI die Richtlinien B-10 für das [Outsourcing von Geschäftsaktivitäten, Funktionen und Prozessen veröffentlicht](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Sie etablierten „umsichtige Praktiken, Verfahren oder Standards“ für staatlich regulierte Finanzinstitute, um das mit der Auslagerung ihres Geschäfts an einen Dienstleister verbundene Risiko zu bewerten und zu steuern. Ein anschließendes OSFI-Memorandum, [Neue technologiebasierte Outsourcing-Anforderungen](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), erinnerte diese Institutionen daran, dass die Richtlinien B-10 aktuell bleiben und dass sie die Erwartungen der OSFI an wesentliche Outsourcing-Vereinbarungen erfüllen müssen.
+In seiner Aufsichtsfunktion hat OSFI die Richtlinien B-10 für das [Outsourcing von Geschäftsaktivitäten, Funktionen und Prozessen veröffentlicht](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Sie etablierten „umsichtige Praktiken, Verfahren oder Standards“ für staatlich regulierte Finanzinstitute, um das mit der Auslagerung ihres Geschäfts an einen Dienstleister verbundene Risiko zu bewerten und zu steuern. Ein anschließendes OSFI-Memorandum, [Neue technologiebasierte Outsourcing-Anforderungen](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), erinnerte diese Institutionen daran, dass die Richtlinien B-10 aktuell bleiben und dass sie die Erwartungen der OSFI an wesentliche Outsourcing-Vereinbarungen erfüllen müssen.
 
 Darüber hinaus muss die Nutzung von Cloud-Diensten durch Finanzinstitute in Übereinstimmung mit dem [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) und in einigen Fällen mit den Datenschutzgesetzen der Provinzen erfolgen.
 
@@ -32,7 +32,7 @@ Darüber hinaus muss die Nutzung von Cloud-Diensten durch Finanzinstitute in Üb
 
 Um Finanzinstitute in Kanada bei der Auslagerung von Geschäftsfunktionen in die Cloud zu unterstützen, hat Microsoft die Publikation [Navigieren auf dem Weg in die Cloud: Eine Compliance-Checkliste für Finanzinstitute in Kanada](https://aka.ms/Azure-Canada-Compliance) veröffentlicht. Durch die Überprüfung und Vervollständigung der Checkliste können Finanzunternehmen Microsoft Business Cloud Services mit der Gewissheit übernehmen, dass sie die geltenden gesetzlichen Anforderungen erfüllen.
 
-Wenn kanadische Finanzinstitute Geschäftsaktivitäten outsourcen, müssen sie die vom Office of the Superintendent of Financial Institutions (OSFI) veröffentlichten Richtlinien B-10 für das [Outsourcing von Geschäftsaktivitäten, Funktionen und Prozessen](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) sowie die kanadischen Datenschutzgesetze, einschließlich des [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA), erfüllen.
+Wenn kanadische Finanzinstitute Geschäftsaktivitäten outsourcen, müssen sie die vom Office of the Superintendent of Financial Institutions (OSFI) veröffentlichten Richtlinien B-10 für das [Outsourcing von Geschäftsaktivitäten, Funktionen und Prozessen](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) sowie die kanadischen Datenschutzgesetze, einschließlich des [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA), erfüllen.
 
 Die Microsoft-Checkliste unterstützt kanadische Finanzunternehmen bei der Durchführung von Due-Diligence-Prüfungen von Microsoft Business Cloud Services und umfasst:
 
@@ -58,7 +58,7 @@ Die Microsoft-Checkliste unterstützt kanadische Finanzunternehmen bei der Durch
 
 Nein. Es besteht keine Verpflichtung zur vorherigen Benachrichtigung, Konsultation oder Genehmigung. Die Nutzung von öffentlichem Cloud-Computing ist zulässig, sofern die OSFI-Anforderungen stets eingehalten werden.
 
-Die [OSFI Richtlinien B-10](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) zeigen, dass OSFI von einem Finanzinstitut erwartet, dass es ein Risikomanagementprogramm entwirft, das für alle seine Outsourcing-Vereinbarungen gilt, wobei die Risikominderung den damit verbundenen Risiken angemessen ist. Allerdings müssen nur wesentliche Outsourcing-Vereinbarungen durch einen schriftlichen Vertrag dokumentiert werden, der die in den Richtlinien festgelegten Garantien regelt. Teil 2 der Microsoft-[Checkliste](https://aka.ms/Azure-Canada-Compliance) (Seite 53) bildet diese mit den Abschnitten in den Microsoft-Vertragsdokumenten ab, an die sie gerichtet sind.
+Die [OSFI Richtlinien B-10](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) zeigen, dass OSFI von einem Finanzinstitut erwartet, dass es ein Risikomanagementprogramm entwirft, das für alle seine Outsourcing-Vereinbarungen gilt, wobei die Risikominderung den damit verbundenen Risiken angemessen ist. Allerdings müssen nur wesentliche Outsourcing-Vereinbarungen durch einen schriftlichen Vertrag dokumentiert werden, der die in den Richtlinien festgelegten Garantien regelt. Teil 2 der Microsoft-[Checkliste](https://aka.ms/Azure-Canada-Compliance) (Seite 53) bildet diese mit den Abschnitten in den Microsoft-Vertragsdokumenten ab, an die sie gerichtet sind.
 
 **Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Cloud-Dienstanbieter aufgenommen werden müssen?**
 
