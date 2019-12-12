@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425738"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962622"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Arbeiten mit Microsoft Consulting Services
 
@@ -35,7 +35,7 @@ Um mit MCS App Packaging arbeiten zu können, **müssen Sie diese Elemente berei
 
 Starten Sie den Verpackungsprozess, indem Sie die APP-Informationen in das Microsoft Managed Desktop Portal hochladen. Das Packaging-Team prüft jeden Donnerstag neue Übermittlungen. Nach Überprüfung und Verpackung werden die gepackten apps am nächsten Freitag ausgeliefert. Es können bis zu fünf apps pro Woche gepackt werden, aber der Dienst kann entsprechend Ihren Anforderungen skaliert werden.
 
-![Kalender mit App-Review, Verpackung und Zustellungsdatum](images/MCS-cal.png)
+![Kalender mit App-Zufluss an einem Donnerstag (dem 21. in diesem Beispiel), Medienüberprüfung am nächsten Tag, Verpacken am folgenden Montag (25.) und App-Zustellung am darauffolgenden Freitag (29.)](images/MCS-cal.png)
 
 Sobald die APP zugestellt wurde, werden Sie benachrichtigt. An diesem Ort haben Sie 21 Tage Zeit, um Akzeptanztests durchzuführen und sich bei der Arbeit im Microsoft Managed Desktop Portal abzumelden. Wenn Sie während der Akzeptanztests ein Problem mit der APP entdecken, lehnen Sie die APP im Microsoft Managed Desktop Portal ab, und Sie werden über e-Mail mit einem MCS-paketor verbunden, um das Problem zu verstehen und zu beheben.
 

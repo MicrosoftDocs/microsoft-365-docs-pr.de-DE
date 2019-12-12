@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt.
-ms.openlocfilehash: 2754efb6edee577eca351da0486ac54912ec4b5b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: f8d7d0820685671c4cbe9ae7671058cc60d8e637
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872081"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971553"
 ---
 # <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
@@ -27,7 +27,7 @@ Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten 
 
  **F. Wie verwalte ich Nachrichten mit Schadsoftware in Quarantäne?**
 
-Sie müssen das Security &amp; Compliance Center verwenden, um Nachrichten anzuzeigen und zu bearbeiten, die an die Quarantäne gesendet wurden, da Sie Schadsoftware enthalten. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Sie müssen das Security &amp; Compliance Center verwenden, um Nachrichten anzuzeigen und zu bearbeiten, die an die Quarantäne gesendet wurden, da Sie Schadsoftware enthalten. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
 
  **F. Wie wird der Dienst konfiguriert, damit Spamnachrichten in Quarantäne gesendet werden?**
 

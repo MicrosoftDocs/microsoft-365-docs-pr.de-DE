@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012300"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962242"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -40,11 +40,12 @@ In diesen Anweisungen wird ein Desktop Hintergrundbild angezeigt. Nachdem Sie ei
 3. Wählen Sie im Bereich **Bereitstellungsstatus** die Einstellung aus, die Sie bereitstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus.
 4. Wählen Sie **Bereitstellen** aus, um die Änderung an einer der Bereitstellungsgruppen bereitzustellen.
 
-![Konfigurierbare Einstellungen Bereitstellungs](images/1deployedit.png) Statusübersicht Microsoft Managed Desktop empfiehlt die Bereitstellung in Bereitstellungsgruppen in dieser Reihenfolge: Test, erste, schnell und dann breit. 
+![Bereitstellungsstatus Arbeitsbereich. Bereich vertrauenswürdige Websites auf der rechten Seite. Im Abschnitt Bereitstellungsgruppen sind drei Spalten enthalten: Bereitstellungsgruppen, Geräte und Status. In der Spalte Status wird "Deploy" hervorgehoben.](images/1deployedit.png)
+Wir empfehlen die Bereitstellung in Bereitstellungsgruppen in dieser Reihenfolge: Test, erste, schnelle und dann breit. 
 
 Wenn Änderungen in jeder Gruppe abgeschlossen werden, ändert sich der Status in **abgeschlossen**.
 
-![Bereitstellung der konfigurierbaren Einstellungen abgeschlossen](images/2completeedit.png)
+![Bereitstellungsstatus Arbeitsbereich mit Spalten für aktualisiertes Datum, Version, Test, erste, schnelle und Breite. Die Proxy Zeile wird erweitert und zeigt eine datierte Einstellung an, die in jeder der vier Bereitstellungsgruppen als "abgeschlossen" gekennzeichnet ist.](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Wiederherstellen der Bereitstellung
 
@@ -56,10 +57,10 @@ Wir zeigen die Schritte zum Rückgängigmachen einer Änderung mithilfe des Desk
 1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
 2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
 3. Wählen Sie im Arbeitsbereich **Bereitstellungsstatus** die Einstellung aus, die Sie wiederherstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus, die wiederhergestellt werden soll.
-4. Wählen Sie unter **Notwendigkeit zum Rückgängigmachen dieser Änderung**die Option **Bereitstellung rückgängig**machen aus.
+4. Wählen Sie unter **Notwendigkeit, diese Änderung wiederherzustellen?** die Option **Bereitstellung rückgängig**machen aus.
 
-![Bereitstellung konfigurierbarer Einstellungen wiederherstellen](images/3revert.png) 
+![Bereitstellungsstatus Arbeitsbereich. Browser Startseiten werden ausgewählt, wobei ein Bereich auf der rechten Seite mit Daten über die übermittelte Änderung und deren Status geöffnet wird. Unten sehen Sie den Bereich "diese Änderung muss wiederhergestellt werden", in dem Sie "Bereitstellung wiederherstellen" auswählen können.](images/3revert.png) 
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md)
 - [Referenz der konfigurierbaren Einstellungen](config-setting-ref.md) 

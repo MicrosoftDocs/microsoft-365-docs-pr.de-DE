@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die mit der Nachrichtenzustellung in Office 365 (auch als Nachrichtenfluss-Intelligence bezeichnet) verbunden sind.
-ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
-ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
+ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886858"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971773"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligente Nachrichtenübermittlung in Office 365
 
@@ -42,7 +42,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 versucht haben, eine Verbi
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Fehlercode: 450 4.4.315 Timeout bei der Verbindung
 
-Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
+Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Beispiel:
 
 - Der lokale e-Mail-Server ist nicht verfügbar.
 
@@ -60,7 +60,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Wie behebe ich den Fehlercode 450 4.4.316?
 
-- Wenn Sie über Postfächer in Ihrer lokalen Umgebung verfügen, müssen Sie Ihre Firewalleinstellungen so ändern, dass Verbindungen zwischen Office 365-IP-Adressen an TCP-Port 25 und Ihren lokalen e-Mail-Servern zulässig sind. Eine Liste der Office 365-IP-Adressen finden Sie unter [Office 365-URLs und -IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx).
+- Wenn Sie über Postfächer in Ihrer lokalen Umgebung verfügen, müssen Sie Ihre Firewalleinstellungen so ändern, dass Verbindungen zwischen Office 365-IP-Adressen an TCP-Port 25 und Ihren lokalen e-Mail-Servern zulässig sind. Eine Liste der Office 365-IP-Adressen finden Sie unter [Office 365-URLs und -IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 - Wenn keine weiteren Nachrichten an Ihre lokale Umgebung übermittelt werden sollen, klicken Sie in der Warnung auf **Jetzt korrigieren**, damit Office 365 die Nachrichten mit ungültigen Empfängern sofort ablehnen kann. Dadurch wird das Risiko verringert, dass das Kontingent für ungültige Empfänger Ihrer Organisation überschritten wird, wodurch die normale Nachrichtenübermittlung beeinträchtigt werden könnte. Alternativ können Sie das Problem mit den folgenden Anweisungen manuell beheben:
 
@@ -74,7 +74,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
        - Deaktivieren Sie den Connector, indem Sie auf](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) bearbeiten-Symbol **Bearbeiten** ![klicken und deaktivieren **aktivieren**.
 
-  - Ändern Sie die akzeptierte Domäne in Office 365, die Ihrer lokalen e-Mail-Umgebung vom **internen Relay** an **autorisierend**zugeordnet ist. Anweisungen finden Sie unter [Manage accepted domains in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=785428).
+  - Ändern Sie die akzeptierte Domäne in Office 365, die Ihrer lokalen e-Mail-Umgebung vom **internen Relay** an **autorisierend**zugeordnet ist. Anweisungen finden Sie unter [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Hinweis**: in der Regel dauern diese Änderungen zwischen 30 Minuten und einer Stunde, um wirksam zu werden. Vergewissern Sie sich nach einer Stunde, dass der Fehler nicht mehr angezeigt wird.
 
@@ -82,7 +82,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Fehlercode: 450 4.4.317 Fehler beim Herstellen der Verbindung mit Remote-Server
 
-Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
+Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Beispiel:
 
 - Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, der angibt, dass der Server die Kommunikation mit Office 365 nicht aufrecht erhalten kann.
 

@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 88abd7bd8b2b4a9af37a1daf5579ac6268a9f927
-ms.sourcegitcommit: e5aa684dab9b4dbe92002d31e69e7225bd8f95a1
+ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348879"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962342"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Managed Desktop-Produktlebenszyklus
 
@@ -19,7 +19,7 @@ Microsoft Managed Desktop profitiert von Endbenutzern, die sicherstellen, dass S
 In diesem Thema wird der Lebenszyklus von Geräten erläutert, die dem genehmigten Katalog hinzugefügt und daraus entfernt wurden. 
 
 > [!NOTE]
-> In diesem Thema wird eine Unterscheidung zwischen einem "Gerät" und einem "Produkt" vorgenommen. Mit "Gerät" meinen wir einen einzelnen spezifischen Computer. Beispiel: "Serial number 1234", "Bill es Laptop", "Shared VM XYZ" finden Sie unter Specific Devices. Ein "Produkt" hingegen bezieht sich auf eine Sammlung oder eine Gerätefamilie. Beispiel: "Fabrikam Laptop", "adatum ZX450 Laptop" usw. Dies ist wichtig, da Produkte unserer genehmigten [Liste](device-list.md)oder dem Katalog hinzugefügt werden, und Geräte sind, was Sie in Microsoft Managed Desktop registriert haben.
+> In diesem Thema wird eine Unterscheidung zwischen einem "Gerät" und einem "Produkt" vorgenommen. Mit "Gerät" meinen wir einen einzelnen spezifischen Computer. Beispiel: "Serial number 1234", "Bill es Laptop", "Shared VM XYZ" finden Sie unter Specific Devices. Ein "Produkt" hingegen bezieht sich auf eine Sammlung oder eine Gerätefamilie. Beispiel: "Fabrikam Laptop", "adatum ZX450 Laptop" usw. Dies ist wichtig, da Produkte unserer [genehmigten Liste](device-list.md)oder dem Katalog hinzugefügt werden, und Geräte sind, was Sie in Microsoft Managed Desktop registriert haben.
 
 ## <a name="product-lifecycle"></a>Produktlebenszyklus
 
@@ -33,9 +33,9 @@ In diesem Thema wird der Lebenszyklus von Geräten erläutert, die dem genehmigt
 
 Die gesamte Sequenz wird in dieser Abbildung dargestellt:
 
-![Lebenszyklus-Zeitachse](images/non-dark1-edits.PNG)
+![Lifecycle Timeline: beginnend mit der allgemeinen Verfügbarkeit des Produkts dauert die "primäre Verfügbarkeit" zwei Jahre. Während dieser Zeit endet das Zertifizierungs Fenster und an einem bestimmten Punkt ist das Gerät an Bord. Am Ende der primären Verfügbarkeit wird das Produkt archiviert, und die "Kulanzzeit" von drei Jahren beginnt. Ab dem Zeitpunkt, an dem das Gerät an Bord ist, hat es eine Nutzungsdauer von drei Jahren, bis es aus der Verwaltung entfernt wurde. Am Ende der Kulanzzeit entfernen wir das Produkt aus dem Katalog.](images/non-dark1-edits.PNG)
 
-Die Produkte verbleiben bis zu 24 Monate im Katalog, die *Geräte* bleiben jedoch auf drei Jahre basierend auf Ihren individuellen Anmeldedaten unter Verwaltung. Jedes Produkt hat tatsächlich drei wichtige Daten, aber jedes Gerät hat nur einen. Bei Produkten werden alle drei Datumsangaben basierend auf dem *Genehmigungsdatum*berechnet, daher veröffentlichen wir diese Daten nach Genehmigung, sodass Sie immer nach vorn schauen und den gesamten Lebenszyklus des Produkts entsprechend planen können.
+Die Produkte verbleiben bis zu 24 Monate im Katalog, die <em>Geräte</em> bleiben jedoch auf drei Jahre basierend auf Ihren individuellen Anmeldedaten unter Verwaltung. Jedes Produkt hat tatsächlich drei wichtige Daten, aber jedes Gerät hat nur einen. Bei Produkten werden alle drei Datumsangaben basierend auf dem <em>Genehmigungsdatum</em>berechnet, daher veröffentlichen wir diese Daten nach Genehmigung, sodass Sie immer nach vorn schauen und den gesamten Lebenszyklus des Produkts entsprechend planen können.
 
 In dieser Tabelle sind die Beispieldaten für ein theoretisches Produkt aufgeführt:
 
@@ -75,7 +75,7 @@ Dieser Zeitraum stellt den Kern der Produktverfügbarkeit dar:
 
 Jedes Gerät, das während dieses Zeitraums registriert ist, erhält die volle dreijährige Unterstützung von Microsoft Managed Desktop (wie in der blauen Zeitachse gezeigt). Dieser Zeitraum dauert bis zu einem Enddatum, das von dem allgemeinen Verfügbarkeitsdatum auf 24 Monate festgelegt wurde.
 
-Sie können sich diesen Zeitraum als effektiv "offene Registrierung" vorstellen, um den Wert von Microsoft Managed Desktop zu maximieren, sollten Sie Ihre Beschaffungsmodelle und ausgewählten Produkte in diesem Zeitraum abzielen. Ein kleines Beispiel: ein Kunde sollte es vermeiden, mit einem Produkt, das sich in seinem letzten Monat der primären Verfügbarkeit befindet, einen zweijährigen Rollout durchführen zu müssen – die meisten dieser Geräte erhalten nicht die vollständige dreijährige Microsoft Managed Desktop-Verwaltung (siehe [Grace Zeitraum](#product-grace-period) für weitere Informationen).  
+Sie können sich diesen Zeitraum als effektiv "offene Registrierung" vorstellen, um den Wert von Microsoft Managed Desktop zu maximieren, sollten Sie Ihre Beschaffungsmodelle und ausgewählten Produkte in diesem Zeitraum abzielen. Ein kleines Beispiel: ein Kunde sollte es vermeiden, mit einem Produkt, das sich in seinem letzten Monat der primären Verfügbarkeit befindet, einen zweijährigen Rollout durchführen zu müssen – die meisten dieser Geräte erhalten nicht die vollständige dreijährige Microsoft Managed Desktop-Verwaltung (Weitere Informationen finden Sie unter [Grace Period](#product-grace-period) ).  
 
 ## <a name="product-grace-period"></a>Produkt Kulanzzeit
 

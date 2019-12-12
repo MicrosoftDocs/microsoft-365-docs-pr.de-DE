@@ -1,32 +1,39 @@
 ---
-title: Hunt for Malware and other Threats in Microsoft 365
-description: Beschreibt, wie Sie nach kompromittierten Konten, weniger Schadsoftware, verdächtigen e-Mails und vielem mehr suchen können.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Jagd, Jagd, Microsoft Defender ATP, Office 365 ATP, Azure ATP
-ms.prod: w10
+title: Hunt for other Threats in Microsoft 365
+description: Verwenden von Threat Hunting-Funktionen im Microsoft 365 Security Center zum proaktiven Auffinden von Verstößen und anderen Bedrohungen
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Jagd, Jagd, Microsoft Defender ATP, Office 365 ATP, Azure ATP, Advanced Hunting
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: lomayor
+author: lomayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 218c78cd8737c3a963386ae0a58a79824ef1615f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 795a7d88c2b6021a5bdd665b3787644b50fb346a
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034387"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909425"
 ---
-# <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>Hunt for Malware and other Threats in Microsoft 365
+# <a name="hunt-for-threats-in-microsoft-365"></a>Hunt for Threats in Microsoft 365
 
-Durch die Jagd erhalten Sicherheitsteams eine Übersicht über mögliche Bedrohungen in Ihrer Organisation über e-Mail und Daten, Geräte und Identitäten hinweg. In Microsoft Defender ATP, Office 365 ATP und Azure ATP Portals können Sie nach kompromittierten Konten, weniger Schadsoftware, verdächtigen e-Mails und vielem mehr suchen.
+Mit Threat Hunting-Funktionen im Microsoft 365 Security Center können Sie proaktiv Bedrohungen in Ihrer Organisation finden, die sich auf e-Mails und Daten, Geräte und Identitäten auswirken. Auf dem Bildschirm " **Jagd** " können Sie auf von verschiedenen Lösungen zur Verfügung gestellten Bedrohungen-Jagd Tools zugreifen:
+- Office 365 ATP – [Hunt for Threats to e-Mail and Data](../office-365-security/office-365-atp.md)
+- Microsoft Defender ATP – [Jagd auf Bedrohungen für Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)
+- Azure ATP – [jagen nach Bedrohungen für Identitäten](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)
 
-![Jagd Seite](../media/security-docs/hunt.png)
+![Jagd Seite](../images/hunt.png)
 
-Weitere Informationen:
 
-* [Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) in Microsoft Defender Advanced Threat Protection
-* [E-Mail und Daten](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection
-* [Identitäten](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection
+## <a name="hunt-with-microsoft-threat-protection"></a>Hunt mit Microsoft Threat Protection
+
+[Aktivieren Sie Microsoft Threat Protection](mtp-enable.md) , um die erweiterte Hunting-Abfrageschnittstelle direkt im Microsoft 365 Security Center zu erhalten. Mit [Advanced Hunting](advanced-hunting-overview.md)können Sie einzelne Abfragen erstellen, die Daten von Microsoft Defender ATP untersuchen, Daten von Onboarding-Geräten abdecken und Office 365 ATP Bereitstellen von Daten aus e-Mails.
+
+## <a name="related-topics"></a>Verwandte Themen
+- [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
+- [Microsoft Threat Protection (Übersicht)](microsoft-threat-protection.md)
+- [Aktivieren von Microsoft Threat Protection](mtp-enable.md)

@@ -13,18 +13,21 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837329"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971543"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
 **Exchange Online Protection (EoP)** ist der Kern der Sicherheit für Office 365 Abonnements und verhindert, dass böswillige e-Mails die Posteingänge ihrer Mitarbeiter erreichen. Bei neuen, anspruchsvolleren Angriffen, die täglich auftreten, sind häufig verbesserte Schutzmaßnahmen erforderlich. **Office 365 Advanced Threat Protection (ATP)** ATP-Plan 1 oder ATP-Plan 2 enthalten zusätzliche Features, die Administratoren mehr Ebenen der Sicherheit, Steuerung und Untersuchung bieten.
 
 Obwohl wir Sicherheitsadministratoren die Möglichkeit geben, Ihre Sicherheitseinstellungen anzupassen, gibt es zwei Sicherheitsstufen in EoP und Office 365 ATP, die wir empfehlen: **Standard** und **Strict**. Die Umgebung und die Anforderungen jedes Kunden unterscheiden sich, aber wir glauben, dass diese Ebenen der e-Mail-Filterkonfigurationen dazu beitragen können, dass unerwünschte e-Mails in den meisten Fällen den Posteingang Ihrer Mitarbeiter erreichen.
+
+> [!IMPORTANT]
+> Die Junk-e-Mail-Konfiguration muss für das Postfach aktiviert sein, damit die Filterung ordnungsgemäß funktioniert. Diese Option ist standardmäßig aktiviert, sollte jedoch überprüft werden, wenn die Filterung nicht zu funktionieren scheint. Lesen Sie [MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) , um weitere Informationen zu erhalten. 
 
 In diesem Thema werden diese von Microsoft empfohlenen Einstellungen beschrieben, die zum Schutz Ihrer Office 365 Benutzer beitragen.
 
@@ -41,7 +44,7 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 |Phishing-e-Mail-erkennungsaktion|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Phishing-e-Mail-erkennungsaktion mit hoher Zuverlässigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Massen-e-Mail-erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Schwellenwert für Massen-e-Mail festlegen|6|4|Der Standardwert ist derzeit 7, es wird jedoch empfohlen, dass die meisten Organisationen ihn auf mindestens 6 zurücksetzen.|
+|Schwellenwert für Massen-e-Mail festlegen|6 |4 |Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level Values](bulk-complaint-level-values.md).|
 |Aufbewahrungszeitraum für Quarantäne|30 Tage|30 Tage||
 |Sicherheitstipps|Ein|Ein||
 |Zugelassene Absender|Keine|Keine||
@@ -163,4 +166,3 @@ Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken|Deaktiviert|Deaktiv
 |ATP-sichere Anlagen unbekannte Malware Antwort|Block|Block||
 |Umleitungs Anlage bei der Erkennung|Aktiviert|Aktiviert|Umleitung zur e-Mail-Adresse eines Sicherheitsadministrators, der weiß, wie Sie feststellen können, ob die Anlage Schadsoftware ist oder nicht|
 |Antwort bei ATP Safe Attachments, wenn Malwarescans für Anlagen ein Timeout oder ein Fehler auftritt|Aktiviert|Aktiviert||
-

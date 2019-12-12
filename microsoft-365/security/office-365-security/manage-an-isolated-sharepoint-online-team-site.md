@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Zusammenfassung: Mit diesen Verfahren können Sie Ihre isolierte SharePoint Online-Teamwebsite verwalten.'
-ms.openlocfilehash: fd34a8af35b546266cf5d7cf308dbd387207eb1e
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1b033d8c08b4b263c854213ce7b2a9fc2c0baede
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202446"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971733"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Verwalten einer isolierten SharePoint Online-Teamwebsite
 
@@ -146,7 +146,7 @@ In manchen Fällen benötigt eine Teilmenge der Personen, die innerhalb der isol
   
 Gehen Sie zum Erstellen eines Dokumentunterordners mit benutzerdefinierten Berechtigungen folgendermaßen vor:
   
-1. Melden Sie sich bei Office 365 mit einem Konto an, das ein Mitglied der Zugriffsgruppe der Websiteadministratoren ist. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich bei Office 365 mit einem Konto an, das ein Mitglied der Zugriffsgruppe der Websiteadministratoren ist. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Wechseln Sie zu der isolierten Teamwebsite, und klicken Sie auf **Dokumente**.
     

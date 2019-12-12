@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032000"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970111"
 ---
 # <a name="set-up-your-eop-service"></a>Einrichten Ihres EOP-Diensts
 
 In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> In diesem Thema wird davon ausgegangen, dass lokale Postfächer verwendet werden, die mit EOP geschützt werden sollen - dies wird als eigenständiges Szenario bezeichnet. Wenn Sie mit Exchange Online alle Postfächer in der Cloud hosten möchten, müssen Sie nicht alle hier beschriebenen Schritte ausführen. Rufen Sie [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312) auf, um sich anzumelden und Cloudpostfächer zu erwerben. Wenn Sie die Postfächer teils lokal und teils in der Cloud hosten möchten, handelt es sich um ein hybrides Szenario. Für ein solches Szenario sind erweiterte Nachrichtenflusseinstellungen erforderlich. [Exchange Server hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-hybrid) erläutert den Hybriden Nachrichtenfluss und enthält Links zu Ressourcen, die zeigen, wie es eingerichtet wird.
+> In diesem Thema wird davon ausgegangen, dass lokale Postfächer verwendet werden, die mit EOP geschützt werden sollen - dies wird als eigenständiges Szenario bezeichnet. Wenn Sie mit Exchange Online alle Postfächer in der Cloud hosten möchten, müssen Sie nicht alle hier beschriebenen Schritte ausführen. Wechseln Sie zu [Exchange Online Pläne](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) zum Registrieren und kaufen von Cloud-Postfächern. Wenn Sie die Postfächer teils lokal und teils in der Cloud hosten möchten, handelt es sich um ein hybrides Szenario. Für ein solches Szenario sind erweiterte Nachrichtenflusseinstellungen erforderlich. [Exchange Server hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-hybrid) erläutert den Hybriden Nachrichtenfluss und enthält Links zu Ressourcen, die zeigen, wie es eingerichtet wird.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -30,7 +30,7 @@ In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (E
 
 - Wenn Sie Connectors konfigurieren möchten, muss Ihr Konto ein globales Administratorkonto für Office 365 oder ein Exchange-Unternehmensadministratorkonto (Rollengruppe "Organisationsverwaltung") sein. Weitere Informationen finden Sie unter [Feature Permissions in EoP](feature-permissions-in-eop.md).
 
-- Wenn Sie sich noch nicht bei EOP registriert haben, rufen Sie [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=282660) auf, und erwerben oder testen Sie den Dienst.
+- Wenn Sie sich noch nicht bei EOP registriert haben, rufen Sie [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) auf, und erwerben oder testen Sie den Dienst.
 
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -39,7 +39,7 @@ In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (E
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Center zum Hinzufügen und Überprüfen Ihrer Domäne
 
-1. Wechseln Sie im [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=521888)zu **Setup** , um Ihre Domäne dem Dienst hinzuzufügen.
+1. Wechseln Sie im [Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)zu **Setup** , um Ihre Domäne dem Dienst hinzuzufügen.
 
 2. Befolgen Sie die Schritte, um Ihrem DNS-Hostinganbieter die entsprechenden DNS-Datensätze hinzuzufügen, um die Domäneneigentümerschaft zu überprüfen.
 

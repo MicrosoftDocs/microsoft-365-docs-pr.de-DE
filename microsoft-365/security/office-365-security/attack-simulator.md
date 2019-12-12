@@ -14,24 +14,24 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als Office 365 globaler Administrator können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: bb68850587647f7e96c940de10e3da23cd5e83de
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306179"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971933"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
-**Zusammenfassung** Wenn Sie ein Office 365 globaler Administrator oder Sicherheitsadministrator sind und Ihre Organisation Office 365 Advanced Threat Protection Plan 2, einschließlich der Funktionen zur [Ermittlung und Reaktion von Bedrohungen](office-365-ti.md), verfügt, können Sie den Angriffs Simulator zum Ausführen verwenden. realistische Angriffsszenarien in Ihrer Organisation. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Endergebnis wirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
+**Zusammenfassung** Wenn Sie ein Office 365 globaler Administrator oder Sicherheitsadministrator sind und Ihre Organisation Office 365 Advanced Threat Protection Plan 2, einschließlich der Funktionen zur [Ermittlung und Reaktion von Bedrohungen](office-365-ti.md), verwendet, können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Auf diese Weise können Sie Benutzer mit Sicherheitslücken leichter identifizieren und finden, bevor ein echter Angriff passiert. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 ## <a name="the-attacks"></a>Die Angriffe
 
 Derzeit stehen drei Arten von Angriffssimulationen zur Verfügung:
 
-- [Anzeigename Spear-Phishing-Angriff](#display-name-spear-phishing-attack)
+- [Speer-Phishing-Angriff (Anzeigename)](#display-name-spear-phishing-attack)
 
-- [Kenn Wort Sprüh Angriff](#password-spray-attack)
+- [Kennwort-Spray-Angriff](#password-spray-attack)
 
 - [Brute-Force-Kennwortangriff](#brute-force-password-attack)
 
@@ -47,13 +47,13 @@ Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen f
 
 - Sie sind ein Office 365 globaler Administrator oder Sicherheitsadministrator
 
-- [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) ist aktiviert, für mindestens das Office 365 globales Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
+- [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) ist aktiviert, für mindestens das Office 365 globales Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
 
 - Ihre Organisation verfügt über [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), in dem der Angriffs &amp; Simulator im Security Compliance Center sichtbar ist (zu **Threat Management** \> **Attack Simulator**wechseln).
 
     ![Threat Management – Angriffs Simulator](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>Anzeigename Spear-Phishing-Angriff
+## <a name="display-name-spear-phishing-attack"></a>Spear-Phishing-Angriff (Anzeigename)
 
 Phishing ist ein generischer Ausdruck für eine große Sammlung von Angriffen, die als Angriffs für soziale Technik bezeichnet werden. Dieser Angriff konzentriert sich auf Speer-Phishing, einen gezielteren Angriff, der auf eine bestimmte Gruppe von Personen oder eine Organisation abzielt. Normalerweise wird ein benutzerdefinierter Angriff mit einiger Aufklärung durchgeführt und ein Anzeigename verwendet, der eine Vertrauensstellung für den Empfänger generiert, beispielsweise eine e-Mail-Nachricht, die aussieht, als käme sie von einer Führungskraft in Ihrer Organisation.
 
@@ -85,7 +85,7 @@ Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst od
 
 6. Geben Sie Text oder das Feld **von** an. Dies ist das Feld, das als e-Mail-Adresse des Absenders im empfangenden e-Mail-Client angezeigt wird.
 
-   Sie können in Ihrer Organisation einen vorhandenen e-Mail-Namespace eingeben (Dadurch wird die e-Mail-Adresse tatsächlich im empfangenden Client aufgelöst, wodurch ein sehr hohes Vertrauensmodell erleichtert wird), oder Sie können eine externe e-Mail-Adresse eingeben. Die angegebene e-Mail-Adresse muss nicht tatsächlich vorhanden sein, Sie muss jedoch dem Format einer gültigen SMTP-Adresse folgen, beispielsweise `user@domainname.extension`.
+   Sie können in Ihrer Organisation einen vorhandenen e-Mail-Namespace eingeben (Dadurch wird die e-Mail-Adresse tatsächlich im empfangenden Client aufgelöst, wodurch ein sehr hohes Vertrauensmodell erleichtert wird), oder Sie können eine externe e-Mail-Adresse eingeben. Die angegebene e-Mail-Adresse muss nicht tatsächlich vorhanden sein, Sie muss jedoch dem Format einer gültigen SMTP-Adresse wie `user@domainname.extension`.
 
 7. Wählen Sie mithilfe der Dropdownauswahl eine URL für den Phishing-Anmeldeserver aus, die die Art der Inhalte widerspiegelt, die Sie in ihrem Angriff haben werden. Es werden mehrere Themen-URLs bereitgestellt, aus denen Sie auswählen können, beispielsweise Dokumentzustellung, technische, Lohnbuchhaltung usw. Dies ist effektiv die URL, auf die Zielbenutzer klicken müssen.
 
@@ -101,7 +101,7 @@ Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst od
 
 11. Klicken Sie auf **weiter und** anschließend auf **Fertig stellen** , um den Angriff zu starten. Die Phishing-e-Mail-Nachricht wird an die Postfächer ihrer Zielempfänger übermittelt.
 
-## <a name="password-spray-attack"></a>Kenn Wort Sprüh Angriff
+## <a name="password-spray-attack"></a>Kennwort-Spray-Angriff
 
 Ein Kenn Wort Sprüh Angriff auf eine Organisation wird in der Regel verwendet, nachdem ein schlechter Akteur eine Liste gültiger Benutzer aus dem Mandanten erfolgreich erworben hat. Der fehlerhafte Akteur weiß um häufige Kennwörter, die von Benutzern verwendet werden. Dies ist ein weit verbreiteter Angriff, da es sich um einen günstigen Angriff handelt und schwerer zu erkennen ist als Brute-Force-Ansätze.
 

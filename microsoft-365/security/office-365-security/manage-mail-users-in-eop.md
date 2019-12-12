@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871771"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971743"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
@@ -63,13 +63,13 @@ In diesem Abschnitt finden Sie weitere Informationen zum Verwalten von E-Mail-Be
 
   - **Spamquarantäne für Endbenutzer**: um auf die Spamquarantäne für Endbenutzer zugreifen zu können, benötigen Endbenutzer eine gültige Office 365 Benutzer-ID und ein Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein.
 
-  - **Nachrichtenfluss Regeln**: Wenn Sie die Verzeichnissynchronisierung verwenden, werden Ihre vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, die auf bestimmte Benutzer und/oder Gruppen abzielen, ohne Sie manuell über die Exchange-Verwaltungskonsole oder Exchange Online Protection PowerShell hinzufügen zu müssen. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://go.microsoft.com/fwlink/?LinkId=507569) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
+  - **Nachrichtenfluss Regeln**: Wenn Sie die Verzeichnissynchronisierung verwenden, werden Ihre vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, die auf bestimmte Benutzer und/oder Gruppen abzielen, ohne Sie manuell über die Exchange-Verwaltungskonsole oder Exchange Online Protection PowerShell hinzufügen zu müssen. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
 
-Rufen Sie die erforderlichen Berechtigungen ab, und bereiten Sie die Verzeichnissynchronisierung vor, wie unter [Vorbereiten der Verzeichnissynchronisierung](https://go.microsoft.com/fwlink/p/?LinkId=308908) beschrieben.
+Rufen Sie die erforderlichen Berechtigungen ab, und bereiten Sie die Verzeichnissynchronisierung vor, wie unter [Was ist Hybrid Identität mit Azure Active Directory beschrieben?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>So synchronisieren Sie Benutzerverzeichnisse mit Azure Active Directory Connect (AAD Connect)
 
-Um Benutzer mit Azure Active Directory (AAD) zu synchronisieren, müssen Sie zunächst die **Verzeichnissynchronisierung aktivieren**, wie unter [Activate Directory Synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308909)beschrieben.
+Um Benutzer mit Azure Active Directory (AAD) zu synchronisieren, müssen Sie zunächst die **Verzeichnissynchronisierung aktivieren**, wie in [Azure AD Connect Sync: Understand and Customize Synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)beschrieben.
 
 Im nächsten Schritt wird die Installation und Konfiguration eines lokalen Computers ausgeführt, um Aad Connect auszuführen (falls Sie noch nicht über einen verfügen – was sich vor der Zeit lohnt). Bei der [Einrichtung von Aad Connect, dem Thema Express Way,](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) erfahren Sie, wie Sie Ihre Konten lokal und Azure AD mit Aad Connect einrichten und synchronisieren.
 

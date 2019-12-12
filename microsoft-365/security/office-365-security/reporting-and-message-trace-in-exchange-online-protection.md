@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) bietet viele verschiedene Berichte an, mit deren Hilfe Sie den allgemeinen Status und die Integrität Ihrer Organisation ermitteln können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften. In der folgenden Tabelle sind die für EOP-Administratoren verfügbaren Berichte und Problembehandlungstools beschrieben.
-ms.openlocfilehash: 81b4ce3d22fbf33dc2f22a4b0a73a3459b1874ee
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 251286fca4ed54b87809c46e6e0f47ea618df747
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441412"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971508"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection
 
@@ -33,13 +33,13 @@ Microsoft Exchange Online Protection (EOP) bietet viele verschiedene Berichte an
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Office 365 von Berichten im Admin Center – Office 365 Gruppen](https://go.microsoft.com/fwlink/p/?linkid=861610)
+- [Office 365 von Berichten im Admin Center – Office 365 Gruppen](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Office 365-Berichte im Admin Center - E-Mail-Aktivitäten](https://go.microsoft.com/fwlink/p/?linkid=859706)
+- [Office 365-Berichte im Admin Center - E-Mail-Aktivitäten](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Office 365-Berichte im Admin Center - Nutzung der E-Mail-Apps](https://go.microsoft.com/fwlink/p/?linkid=859707)
+- [Office 365-Berichte im Admin Center - Nutzung der E-Mail-Apps](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Office 365-Berichte im Admin Center - Postfachnutzung](https://go.microsoft.com/fwlink/p/?linkid=859708)
+- [Office 365-Berichte im Admin Center - Postfachnutzung](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Security #a0 Compliance Reports im Microsoft 365 Admin Center
 
@@ -49,17 +49,15 @@ Diese erweiterten Berichte bieten eine interaktive Berichterstellung für EOP-Ad
 
 **EoP**: Anzeigen von Informationen zu Malwareerkennungen, gefälschten e-Mails, Spamerkennungen und dem Nachrichtenfluss zu und von Ihrer Organisation.
 
-[Anzeigen der Berichte zu Advanced Threat Protection und Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409)
+[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Benutzerdefinierte Berichte mit Microsoft Graph
 
-Programmgesteuertes Erstellen von Berichten, die im Microsoft 365 Admin Center mithilfe von Microsoft Graph verfügbar sind siehe Unterthemen [Arbeiten mit Office 365 Verwendungsberichten in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135)
+Programmgesteuertes Erstellen von Berichten, die im Microsoft 365 Admin Center mithilfe von Microsoft Graph verfügbar sind. Lesen Sie die Unterthemen zum [Arbeiten mit Office 365 Verwendungsberichten in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
 
-## <a name="custom-reports-using-reporting-web-services"></a>Benutzerdefinierte Berichte mit Berichtswebdiensten
+## <a name="custom-reports-using-microsoft-graph"></a>Benutzerdefinierte Berichte mit Microsoft Graph
 
-Programmgesteuertes Erstellen von Berichten aus den verfügbaren Exchange Online Protection PowerShell Reporting-Cmdlets mithilfe der Rest/ODATA2-Abfrage Filterung.
-
-Siehe [Office 365 Berichts Webdienste](https://go.microsoft.com/fwlink/p/?LinkId=279926)
+Programmgesteuertes Erstellen von Berichten. Siehe [Übersicht über Microsoft Graph](https://docs.microsoft.com/graph/overview).
 
 ## <a name="message-trace"></a>Nachrichtenablaufverfolgung
 

@@ -15,17 +15,17 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre ATP-Richtlinien für sichere Links einrichten, können Sie eine "do-not-rewrite"-Liste mit URLs einfügen, um es einigen Personen in Ihrer Organisation zu ermöglichen, Websites zu besuchen, die Sie in Ihre Liste aufnehmen.
-ms.openlocfilehash: ca1927871b834459a05c1c36e5b15d3d47aa242b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: b823ac1e995177a6f576d01c3ef686288ed47cbf
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866577"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971463"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe Office 365 sicherer ATP-Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation eine [benutzerdefinierte Blockierte URL](set-up-a-custom-blocked-urls-list-wtih-atp.md)haben, wenn Personen in e-Mail-Nachrichten oder bestimmten Office-Dokumenten auf Webadressen (URLs) klicken, wird verhindert, dass Sie zu diesen URLs wechseln. Ihre Organisation kann auch benutzerdefinierte Listen für bestimmte Gruppen in Ihrer Organisation erstellen. Eine Liste "nicht umschreiben" ermöglicht einigen Benutzern das Aufrufen von URLs, die ansonsten durch [ATP-sichere Links in Office 365](atp-safe-links.md)blockiert werden. 
   

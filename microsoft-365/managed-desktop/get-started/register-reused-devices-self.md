@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074737"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962602"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
@@ -208,7 +208,7 @@ Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Her
 
 Wählen Sie im linken Navigationsbereich **Geräte** aus dem Microsoft Managed Desktop [Azure-Portal](https://aka.ms/mmdportal)aus. Select **+ Register Devices**; das Einfliegen wird geöffnet:
 
-[![Einfliegen nach Auswahl von Register Geräten](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Einfliegen nach Auswahl von Register Geräten, Auflisten von Geräten mit Spalten für zugewiesene Benutzer, Seriennummer, Status, zuletzt gesehenes Datum und Alter](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (Leider ist dies nicht der Fall. Wir können diese Notiz entfernen – aber jetzt so lange, bis wir eine Möglichkeit haben, darüber zu chatten.)

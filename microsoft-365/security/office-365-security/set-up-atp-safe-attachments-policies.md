@@ -15,17 +15,17 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails.
-ms.openlocfilehash: 0c81c8323db417d6e462812efe8686389139e915
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 65552e990eb5e12d2a624eea1e1bdbb74454b44f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866637"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971423"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Anlagen in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Anlagen in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder böswillig ist, indem nur eine e-Mail-Nachricht angezeigt wird. Und das letzte, was Sie möchten, ist eine böswillige Anlage, die durchkommt und verheerende Verwüstungen für Ihre Organisation anrichtet. Glücklicherweise kann [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hilfreich sein. Sie können Richtlinien für [ATP-sichere Anlagen](atp-safe-attachments.md) einrichten, um sicherzustellen, dass Ihre Organisation vor Angriffen durch nicht sichere e-Mail-Anlagen geschützt ist. 
   

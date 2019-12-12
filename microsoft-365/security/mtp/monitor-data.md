@@ -1,8 +1,8 @@
 ---
-title: Datenüberwachung und-Berichterstellung im Microsoft 365-Sicherheitscenter
+title: Datenüberwachung und-Berichterstellung im Microsoft 365 Security Center
 description: Beschreibt, wie Sie Benutzeraktivitäten nachverfolgen können, die zu nicht autorisierter Datenweitergabe führen könnten.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Daten
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,22 +12,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 8c4b94eb286e1d226f9854c1de03909a94d44fca
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9952500b625599f4db588a5c9dc85404be383b6b
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082740"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910188"
 ---
-# <a name="data-monitoring-and-reporting-in-microsoft-365-security-center"></a>Datenüberwachung und-Berichterstellung im Microsoft 365-Sicherheitscenter
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Datenüberwachung und-Berichterstellung im Microsoft 365 Security Center
 
-Die **Daten** Kategorie hilft beim Nachverfolgen von Benutzeraktivitäten, die zu nicht autorisierter Datenweitergabe führen könnten. Dabei handelt es sich um die überarbeiten vorhandener Office 365 DLP-Richtlinien Berichte sowie einen DLP-Richtlinien Übereinstimmungs Bericht eines Drittanbieters.
+Die Kategorie **Daten** hilft beim Nachverfolgen von Benutzeraktivitäten, die zu einer nicht autorisierten Datenweitergabe führen könnten. Dabei handelt es sich um die überarbeiten vorhandener Office 365 DLP-Richtlinien Berichte sowie einen DLP-Richtlinien Übereinstimmungs Bericht eines Drittanbieters.
 
-Sie können Folgendes sehen:
+Sie sehen Folgendes:
 
-* Benutzer, die die meisten Dateien in Cloud-apps freigeben
+* Benutzer, die die meisten Dateien aus Cloud-Apps teilen
 * Wie viele DLP-Richtlinien Übereinstimmungen aufgetreten sind
-* Wie viele DLP-Richtlinien außer Kraft setzen oder falsch positive Ergebnisse gemeldet werden
+* Anzahl der gemeldeten DLP-Richtlinien-Außerkraftsetzungen oder falsch positiven Meldungen
 * Wie viele DLP-Richtlinien Übereinstimmungen in Cloud-Diensten von Drittanbietern über die Microsoft Cloud-App-Sicherheit aufgetreten sind
 
-![Seite "Datenkategorie der Berichte"](../media/security-docs/data.png)
+![Seite "Datenkategorie der Berichte"](../images/data.png)

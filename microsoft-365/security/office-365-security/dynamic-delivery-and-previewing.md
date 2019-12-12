@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre Richtlinien für ATP-sichere Anlagen einrichten, wählen Sie dynamische Zustellung aus, um Verzögerungen bei der Nachrichtenübermittlung zu vermeiden und Benutzern das Anzeigen einer Vorschau von Anlagen zu ermöglichen, die gescannt werden.
-ms.openlocfilehash: 203f5082701f1f3eeea36b385918328cb85deb81
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3cf914325b493098f61c84f27c102dd64fd7d8e9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081330"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970780"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit Office 365 sicheren ATP-Anlagen
 
@@ -45,7 +45,7 @@ Bei den meisten PDFs und Office-Dokumenten kann im abgesicherten Modus eine Vors
 
 Bei dynamischer Zustellung können Personen sofort auf Ihre e-Mail-Nachrichten lesen und Antworten, während Ihre Anlagen analysiert werden. 
 
-Die Überprüfung der ATP-Tresoranlagen erfolgt in derselben Region, in der sich Ihre Office 365 Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All) 
+Die Überprüfung der ATP-Tresoranlagen erfolgt in derselben Region, in der sich Ihre Office 365 Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All)
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Was passiert, wenn jemand eine e-Mail weiterleitet, die eine Anlage enthält?
 

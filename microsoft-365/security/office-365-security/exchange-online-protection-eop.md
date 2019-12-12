@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Hier sind einige Dinge, die Sie beachten sollten, bevor Sie mit der Arbeit mit EoP beginnen.
-ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: ae08ff17a3ef25f0b0903d02ffe396cd201bd06c
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441562"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970521"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Willkommen beim gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) von Microsoft. Bevor Sie mit EOP arbeiten und diesen Inhalt verwenden, sollten Sie Folgendes beachten:
 
-- Weitere Informationen zu EOP finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?LinkId=320619). Andere hilfreiche Ressourcen sind [Exchange Online Protection im Überblick](exchange-online-protection-overview.md), [EOP - Allgemeine häufig gestellte Fragen](eop-general-faq.md) und [EOP-Funktionen](eop-features.md) sowie die [Exchange Online Protection-Homepage](https://go.microsoft.com/fwlink/?LinkId=279912).
+- Weitere Informationen zu EoP finden Sie in der [Beschreibung des Exchange Online Protection-Diensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Andere hilfreiche Ressourcen sind [Exchange Online Protection im Überblick](exchange-online-protection-overview.md), [EOP - Allgemeine häufig gestellte Fragen](eop-general-faq.md) und [EOP-Funktionen](eop-features.md) sowie die [Exchange Online Protection-Homepage](https://products.office.com/exchange/exchange-email-security-spam-protection).
 
 - Informationen zu den ersten Schritten mit EOP finden neue Kunden unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md). Dieses Thema enthält Schritte zum Erleichtern des Einstiegs in EOP.
 
@@ -67,6 +67,6 @@ Der Hilfeinhalt zur Unterstützung der EOP-Endbenutzer beim Umgang mit Spam umfa
 
 - [Übermitteln von Schadsoftware und nicht-Schadsoftware an Microsoft zur Analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Beschreibt, wie Endbenutzer Schadsoftware übermitteln können, die Sie an den Filtern vorbei gemacht hat, oder eine Datei übermitteln, die fälschlicherweise als Schadsoftware identifiziert wurde.
 
-- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder einer Liste blockierter Absender hinzufügen, indem Sie Ihre Junk-e-Mail-Einstellungen in Outlook oder Outlook im Internet konfigurieren. Beachten Sie, dass Nachrichten, die von blockierten Absendern gesendet werden, als Spam gekennzeichnet und nicht abgelehnt werden, was bedeutet, dass Sie aus dem Junk-e-Mail-Ordner oder aus der Quarantäne abgerufen werden können (je nachdem, wo der Administrator den Dienst zum Senden von Spam konfiguriert hat). Weitere Informationen finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder einer Liste blockierter Absender hinzufügen, indem Sie Ihre Junk-e-Mail-Einstellungen in Outlook oder Outlook im Internet konfigurieren. Beachten Sie, dass Nachrichten, die von blockierten Absendern gesendet werden, als Spam gekennzeichnet und nicht abgelehnt werden, was bedeutet, dass Sie aus dem Junk-e-Mail-Ordner oder aus der Quarantäne abgerufen werden können (je nachdem, wo der Administrator den Dienst zum Senden von Spam konfiguriert hat). Weitere Informationen finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support.

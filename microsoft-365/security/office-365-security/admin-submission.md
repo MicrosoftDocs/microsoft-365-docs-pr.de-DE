@@ -1,5 +1,5 @@
 ---
-title: Übermittlungen von Administratoren in Office 365, O365-Übermittlungen, Office 365 Spam Problem, O365 falsch negativ, Phishing in Office 365, Senden von e-Mails zum Scannen, verdächtige e-Mails in Office 365, e-Mails scannen, Microsoft-Scan für Phishing, Microsoft-Scan für Spam, Submit e-Mail, e-Mail senden
+title: Übermittlungen von Administratoren in Office 365, O365-Übermittlungen, Office 365 Spam Problem, O365 falsch negativ, Phishing in Office 365, Senden von e-Mails zum Scannen, verdächtige e-Mails in Office 365, e-Mails scannen, Microsoft-Scan für Phishing, Microsoft-Scan für Spam, Submit e-Mail, Senden von e-Mails, fragwürdige e-Mails, fehlerhafte Nachrichtenübermittlung, verdächtige, nicht vertrauenswürdige e-Mail
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie verdächtige e-Mails, verdächtige Phishing-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien von Ihrem Office 365-Mandanten zur Überprüfung an Microsoft übermitteln.
-ms.openlocfilehash: 5ca5eab2feab1243a83eb60c9320fd48dfb59f12
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
+ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082731"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39915216"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Vorgehensweise übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft für Office 365-Scans
 
@@ -26,11 +26,11 @@ Administratoren können e-Mails mithilfe von Datei-oder Netzwerknachrichten-ID, 
 
 Wenn Sie eine e-Mail übermitteln, erhalten Sie Informationen zu allen Richtlinien, die möglicherweise die eingehenden e-Mails in ihren Mandanten zugelassen haben, sowie über die Untersuchung von URLs und Anlagen in der e-Mail. Richtlinien, die möglicherweise eine e-Mail zugelassen haben, enthalten die Liste sicherer Absender eines einzelnen Benutzers sowie Richtlinien auf Mandantenebene wie ETR-Regeln. 
 
-## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a>Vorgehensweise zum Übermitteln von Inhalten an Microsoft für Office 365-Scans
+## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Vorgehensweise zum direkten verdächtigen von Inhalten an Microsoft für Office 365-Scans
 
 Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neue Übermittlung** in der linken oberen Ecke der Seite Übermittlungen. Ein Flyout auf der rechten Seite der Seite wird mit der Option zum Senden einer e-Mail, einer URL oder einer Datei angezeigt. 
 
-### <a name="submit-an-email-to-microsoft"></a>Senden einer e-Mail an Microsoft
+### <a name="submit-a-questionable-email-to-microsoft"></a>Senden einer fragwürdigen e-Mail an Microsoft
 ![Beispiel für eine e-Mail-Übermittlung](../media/submission-flyout-email.PNG)
 1. Um eine e-Mail zu senden, wählen Sie **e-Mail** und geben Sie die e-Mail- **Netzwerknachrichten-ID** an, oder laden Sie die e-Mail-Datei 
 
@@ -44,7 +44,7 @@ Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neu
 
 4. Klicken Sie auf die Schaltfläche **Absenden** .
 
-### <a name="submit-a-url-to-microsoft"></a>Übermitteln einer URL an Microsoft
+### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 ![Beispiel für eine e-Mail-Übermittlung](../media/submission-url-flyout.png)
 1. So übermitteln Sie eine URL wählen Sie **URL** aus dem Flyout aus. Geben Sie die vollständige URL einschließlich des Protokolls (**https://**) ein. 
 
@@ -53,7 +53,7 @@ Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neu
 2. Klicken Sie auf die Schaltfläche **Absenden** . 
 
 
-### <a name="submit-a-file-to-microsoft"></a>Senden einer Datei an Microsoft
+### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer vermuteten Datei an Microsoft
 ![Beispiel für eine e-Mail-Übermittlung](../media/submission-file-flyout.PNG)
 1. Um eine Datei zu übermitteln, wählen Sie **Datei** aus dem Flyout aus, und laden Sie die Datei hoch, die Sie überprüfen möchten. 
 
@@ -62,7 +62,7 @@ Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neu
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md)
+[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)
   
 [Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
   

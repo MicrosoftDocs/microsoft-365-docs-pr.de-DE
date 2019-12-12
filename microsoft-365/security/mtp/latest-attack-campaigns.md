@@ -1,8 +1,8 @@
 ---
-title: Grundlegendes zu den neuesten Angriffs Kampagnen und-Techniken mit Bedrohungsanalysen
-description: Beschreibung interaktiver Berichte zu Threat Analytics
+title: Grundlegendes zu den neuesten Angriffs Kampagnen und-Techniken mit Threat Analytics im Microsoft 365 Security Center
+description: Beschreibung interaktiver Threat Analytics-Berichte im Microsoft 365 Security Center
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Bedrohungsanalyse, Microsoft Defender ATP, Cyber, Sicherheitsposition, neue Bedrohungen
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24d4e5c227ddcb3366e5573b8b04b04a52437873
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fca4a16c2b5526cf5fe004e0d836921a7d5c9b84
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082780"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910536"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Grundlegendes zu den neuesten Angriffs Kampagnen und-Techniken mit Threat Analytics
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Grundlegendes zu den neuesten Angriffs Kampagnen und-Techniken mit Threat Analytics 
 
 Cyber-Bedrohungen werden immer häufiger und anspruchsvoller. Es ist wichtig, dass Organisationen ihre Sicherheitslage und die Ausfallsicherheit vor bestimmten neuen Bedrohungen schnell bewerten.
 

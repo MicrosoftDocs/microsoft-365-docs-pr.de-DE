@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Übersicht über die Installationsschritte für Microsoft 365 Business.
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812776"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967621"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -50,14 +50,16 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
   
   Zusätzlich zu den Sicherheitseinstellungen im Setup-Assistenten können Sie die Sicherheit durch Hinzufügen der folgenden Einstellungen verbessern:
 
-      - **E-Mail-Schutz vor Schadsoftware**
-      - **ATP-Anti-Phishing**
-      - **Exchange Online-Archivierung**
-      - **Azure Information Protection (plan1**)
 
-          Für erste Schritte siehe [Einrichten von erweiterten Sicherheitsrichtlinien](set-up-advanced-security.md).
+- **E-Mail-Schutz vor Schadsoftware**
+- **ATP-Anti-Phishing**
+- **Exchange Online-Archivierung**
+- **Azure Information Protection (plan1**)
 
-        Eine Übersicht über die besten Sicherheitsmethoden finden Sie auch unter [Top 10 Ways to Secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) .
+
+Für erste Schritte siehe [Einrichten von erweiterten Sicherheitsrichtlinien](set-up-advanced-security.md).
+
+Eine Übersicht über die besten Sicherheitsmethoden finden Sie auch unter [Top 10 Ways to Secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) .
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Schritt 3: Einrichten und Verwalten von Windows 10-Geräten
 

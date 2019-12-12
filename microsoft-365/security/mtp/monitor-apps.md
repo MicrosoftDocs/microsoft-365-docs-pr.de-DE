@@ -1,8 +1,8 @@
 ---
-title: App-Überwachung und Berichterstellung im Microsoft 365-Sicherheitscenter
+title: App-Überwachung und Berichterstellung im Microsoft 365 Security Center
 description: Beschreibt, wie Sie mehr Einblicke in die Cloud-App-Verwendung in Ihrer Organisation erhalten können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Monitor, Bericht, Apps
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,22 +12,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 29dd1f4ebb8d65bb6079cdc4467f1aa5e33ae906
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8688088508f57fca1ba62dd41c28cd204df5c05e
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082755"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910278"
 ---
-# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>App-Überwachung und Berichterstellung im Microsoft 365-Sicherheitscenter
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>App-Überwachung und Berichterstellung im Microsoft 365 Security Center
 
 Diese Berichte bieten einen besseren Einblick in die Verwendung von Cloud-apps in Ihrer Organisation, einschließlich der Arten von apps, des Risikos und der Warnungen.
 
-## <a name="monitor-email-accounts-at-risk"></a>Überwachen von gefährdeten e-Mail-Konten
+## <a name="monitor-email-accounts-at-risk"></a>Überwachung von gefährdeten E-Mail-Konten
 
 **E-Mail-Schutz** zeigt e-Mail-Konten gefährdet an. Sie können auf ein Konto klicken, um es im Sicherheits Center von Microsoft Defender weiter zu untersuchen.
 
-![E-Mail-Schutzkarte](../media/security-docs/email-protection.png)
+![E-Mail-Schutzkarte](../images/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Überwachen der von Benutzern erteilten App-Berechtigungen
 
@@ -35,25 +35,25 @@ Diese Berichte bieten einen besseren Einblick in die Verwendung von Cloud-apps i
 
 Die Risikofaktoren beginnen mit allgemeinen Informationen wie dem App-Herausgeber für Sicherheitsmaßnahmen und-Steuerelemente, beispielsweise, ob die APP die Verschlüsselung in Ruhe unterstützt oder ein Überwachungsprotokoll der Benutzeraktivität bereitstellt.
 
-![Cloud App Security OAuth apps Card](../media/security-docs/cloud-app-security-oauth-apps.png)
+![Cloud App Security OAuth apps Card](../images/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>Überwachen von Cloud-App-Benutzerkonten
 
 **Cloud-App-Konten für die Überprüfung** listet Konten auf, die möglicherweise Aufmerksamkeit erfordern.
 
-![Cloud-App-Konten für Überprüfungs Karte](../media/security-docs/cloud-app-accounts-for-review.png)
+![Cloud-App-Konten für Überprüfungs Karte](../images/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Grundlegendes zu den verwendeten Cloud-apps
 
 **Erkannte Cloud-Apps (Kategorien)** zeigen, welche Arten von apps in Ihrer Organisation verwendet werden, und Links zum Cloud Discovery-Dashboard in der Cloud-App-Sicherheit. Weitere Informationen finden Sie unter [Quick Start: Arbeiten mit entdeckten apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
-![Entdeckte Cloud Apps-Kategorien Karte](../media/security-docs/discovered-cloud-apps-categories.png)
+![Entdeckte Cloud Apps-Kategorien Karte](../images/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>Überwachen der Benutzer auf Cloud-apps
 
 **Cloud-App-Aktivitäts Speicherorte** zeigen an, wo Benutzer auf Cloud-apps zugreifen.
 
-![Cloud-App-Aktivitäts Speicherkarte](../media/security-docs/cloud-app-activity-locations.png)
+![Cloud-App-Aktivitäts Speicherkarte](../images/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Überwachen der Integrität von Infrastruktur Auslastungen
 
@@ -63,4 +63,4 @@ Azure Security Center bietet einheitliches Sicherheitsmanagement und fortschritt
 
 Weitere Informationen finden Sie unter [Azure Security Center-Dokumentation](https://docs.microsoft.com/azure/security-center/).
 
-![Infrastruktur-Integritäts Karte](../media/security-docs/infrastructure-health.png)
+![Infrastruktur-Integritäts Karte](../images/infrastructure-health.png)

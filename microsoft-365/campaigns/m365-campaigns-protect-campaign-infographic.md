@@ -21,15 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Was Sie Unternehmen können, um Ihre Kampagne vor digitalen Angriffen zu schützen.
-ms.openlocfilehash: 625b72b5bb677769b6ef5cdd3aa2fa10819c5ba2
-ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
+ms.openlocfilehash: ed41ecdbf1fb6284f79cda0468bc50dbba086e63
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37662531"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909281"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografik: schützen Sie sich und Ihre Kampagne vor digitalen Bedrohungen 
-
 Die folgenden Links für PowerPoint und PDF können heruntergeladen und im Tabloid-Format (auch Ledger, 11 x 17 oder a3 genannt) gedruckt werden.
 
 [![Image für Secure your help schützen Ihrer Kampagnen Infografik](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)

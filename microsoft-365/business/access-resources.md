@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Hier erfahren Sie, wie Sie Zugriff auf lokale Ressourcen wie Branchen-apps, Dateifreigaben und Drucker aus einem Azure-Active Directory, dem Windows 10-Gerät beigetreten ist.
-ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668786"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967161"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um die Azure AD verbundenen Geräte Ihre
     
 Es sind keine weiteren Schritte erforderlich, um Zugriff auf lokale Ressourcen für Azure AD verbundene Geräte zu erhalten. Diese Funktionalität ist in Windows 10 integriert. 
 
-Wenn Sie Pläne zur Anmeldung auf dem AADJ-Gerät als Kenn Wort Methode wie PIN/Bio-Metric über WHFB Credential Login haben und dann auf lokale Ressourcen (Freigaben, Drucker.. usw.), bitte beachten Siehttps://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+Wenn Sie Pläne zur Anmeldung auf dem AADJ-Gerät als Kenn Wort Methode wie PIN/Bio-Metric über WHFB Credential Login haben und dann auf lokale Ressourcen (Freigaben, Drucker.. usw.), bitte beachten Siehttps://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 Wenn Ihre Organisation nicht bereit ist, die oben beschriebene Bereitstellung in der Azure AD beigefügten Gerätekonfiguration vorzulegen, sollten Sie die [Konfiguration einer hybriden Azure AD verbundenen Gerätekonfiguration](manage-windows-devices.md)in prüfen.
   

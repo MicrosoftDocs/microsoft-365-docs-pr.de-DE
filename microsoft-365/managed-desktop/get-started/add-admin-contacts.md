@@ -1,19 +1,19 @@
 ---
-title: Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal
+title: Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
 description: Teilen Sie uns mit, an wen Sie sich für jeden Bereich des Fokus wenden müssen.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012066"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962612"
 ---
-# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
 
 Es gibt mehrere Möglichkeiten, wie Microsoft Managed Desktop Service mit Kunden kommuniziert. Um die Kommunikation zu rationalisieren und sicherzustellen, dass die richtigen Personen überprüft werden, müssen Sie eine Reihe von Administrator Kontakten bereitstellen. Microsoft Managed Desktop-IT-Vorgänge wenden sich an diese Personen, um Hilfe bei der Problembehandlung für Ihren Mandanten zu erhalten.
 
@@ -52,25 +52,25 @@ Administrator Kontakte sind erforderlich, wenn Sie [eine Support Anfrage übermi
 
 2.  Wählen Sie unter **Support**die Option **Administrator Kontakte**aus. 
 
-    ![Support Menü, Administrator Kontakte](images/admincontacts.png)
+    ![Support-Menü, Administrator Kontakte in der Nähe der oben ausgewählten](images/admincontacts.png)
 
 3. Klicken Sie auf **Hinzufügen**.
 
-    ![Schaltfläche "Admin-Portal hinzufügen"](images/adminadd.png)
+    ![Verwaltungsportal, Schaltfläche hinzufügen, Links von Export und Aktualisierung](images/adminadd.png)
 
 4.  Wählen Sie einen **Fokusbereich** aus, und geben Sie die Informationen für den Kontakt ein. 
 
-    ![die Liste der Fokusbereiche](images/areaoffocus.png)
+    ![die Liste der Fokusbereiche, beispielsweise andere, Apps und Sicherheit](images/areaoffocus.png)
 
 5. Wiederholen Sie diese Schritte für jeden Bereich des Fokus. 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
 
 1. Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal (in diesem Thema)
-2. [Anpassen des bedingten Zugriffs](conditional-access.md)
+2. [Bedingten Zugriff anpassen](conditional-access.md)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
 4. [Installieren des InTune-Unternehmensportals auf auf Geräten](company-portal.md)
-5. [Aktivieren des Enterprise-Status-Roaming](enterprise-state-roaming.md)
+5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Einrichten von Microsoft Managed Desktop-Geräten](set-up-devices.md)
 7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
 8. [Bereitstellen von apps auf Geräten](deploy-apps.md)

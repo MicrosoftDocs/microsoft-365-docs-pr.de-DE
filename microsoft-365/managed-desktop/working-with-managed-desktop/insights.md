@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: be8eb8e513ca244aaef45f6fb4aa61ec57e37e8a
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257143"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962322"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
@@ -26,18 +26,18 @@ Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden fin
 
 Wenn Sie über das Microsoft 365 Admin Center auf diese Ansichten zugreifen möchten, wählen Sie Details im Bereich **Berichte** **anzeigen** aus:
 
-![Übersicht über den Insights-Bereich](images/insights_overview.png)
+![Admin Center mit Berichtsbereich in der oberen rechten Ecke, einschließlich der Geräte Berichts Karte und des Links "Details anzeigen".](images/insights_overview.png)
 
 
 
-## <a name="usage-insights"></a>Einblicke in die Nutzung
+## <a name="usage-insights"></a>Benutzungseinblicke
 In dieser Ansicht werden Verwendungs Metriken für Ihre von Microsoft verwalteten Desktop Geräte bereitgestellt. 
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte **Nutzung** aus.
 
 Erfahren Sie mehr über [Einblicke](usage-insights.md)in die Nutzung.
 
-## <a name="reliability-insights"></a>Zuverlässigkeits Einblicke
+## <a name="reliability-insights"></a>Zuverlässigkeitseinblicke
 In dieser Ansicht erhalten Sie eine Zusammenfassung der Integrität Ihrer verwalteten Geräte. Um Zuverlässigkeitsdaten anzuzeigen, wählen Sie die Registerkarte **Zuverlässigkeit** aus.
 
 Erfahren Sie mehr über [Zuverlässigkeits Einblicke](reliability-insights.md)

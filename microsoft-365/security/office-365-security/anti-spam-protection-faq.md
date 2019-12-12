@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 04cffc6c6e09794e4c92653c1a09dd43718f38c0
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871991"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971967"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -93,11 +93,7 @@ A. Ja, Sie können einen anderen Filterdienst für Spam und Schadsoftware konfig
 
  **F. Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?**
 
-A. Ja, lesen Sie dazu die folgenden Artikel:
-
-[Informationen zu Phishing, Lotteriebetrug und andere Arten von Betrug](https://go.microsoft.com/fwlink/p/?LinkId=325606)
-
-[E-Mail- und Internetbetrügereien: So schützen Sie sich](https://go.microsoft.com/fwlink/p/?LinkID=325607)
+A. Ja, wir tun, lesen Sie bitte [schützen Sie Ihre Privatsphäre im Internet](https://support.microsoft.com/help/4091455)
 
  **F. Werden Spam- und Malwarenachrichten darauf untersucht, wer sie gesendet hat, oder werden sie an Strafverfolgungsbehörden weitergeleitet?**
 
@@ -125,7 +121,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
 
     [Einrichten von SPF in Office 365 zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-    [Häufig gestellte Fragen zu Domänen](/office365/admin/setup/domains-faq)
+    [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 5. **Wenn Sie E-Mails mit DKIM signieren, melden Sie sich mit eingeschränkter Kanonisierung an.**
 
@@ -159,25 +155,25 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
 
     Bei einem Anmeldungsverfahren in zwei Schritten muss ein Benutzer zwei Aktionen durchführen, um sich für die Marketing-E-Mails zu registrieren:
 
-1. Zuerst muss der Benutzer auf ein zuvor deaktiviertes Kontrollkästchen klicken, um sich für weitere Angebote oder E-Mails von dem Händler anzumelden.
+   1. Zuerst muss der Benutzer auf ein zuvor deaktiviertes Kontrollkästchen klicken, um sich für weitere Angebote oder E-Mails von dem Händler anzumelden.
 
-2. Dann sendet der Händler eine Bestätigungs-E-Mail an die E-Mail-Adresse, die der Benutzer bereitgestellt hat. Darin wird der Benutzer aufgefordert, auf einen zeitlich begrenzt gültigen Link zu klicken, um die Bestätigung abzuschließen.
+   2. Dann sendet der Händler eine Bestätigungs-E-Mail an die E-Mail-Adresse, die der Benutzer bereitgestellt hat. Darin wird der Benutzer aufgefordert, auf einen zeitlich begrenzt gültigen Link zu klicken, um die Bestätigung abzuschließen.
 
-    Ein Anmeldungsverfahren in zwei Schritten trägt zum guten Ruf eines Versenders von Massen-E-Mail bei.
+      Ein Anmeldungsverfahren in zwei Schritten trägt zum guten Ruf eines Versenders von Massen-E-Mail bei.
 
 10. **Massenversender sollten transparente Inhalte erstellen, für die sie zur Verantwortung gezogen werden können:**
 
-1. Textpassagen, in denen die Empfänger aufgefordert werden, den Absender zum Adressbuch hinzuzufügen, sollten deutlich mitteilen, dass dies keine Übermittlungsgarantie darstellt.
+    1. Textpassagen, in denen die Empfänger aufgefordert werden, den Absender zum Adressbuch hinzuzufügen, sollten deutlich mitteilen, dass dies keine Übermittlungsgarantie darstellt.
 
-2. Verwenden Sie bei der Erstellung von Umleitungen im Nachrichtentext ein konsistentes Format für die Links.
+    2. Verwenden Sie bei der Erstellung von Umleitungen im Nachrichtentext ein konsistentes Format für die Links.
 
-3. Senden Sie keine großen Bilder oder Anlagen und keine Nachrichten, die nur aus einem Bild bestehen.
+    3. Senden Sie keine großen Bilder oder Anlagen und keine Nachrichten, die nur aus einem Bild bestehen.
 
-4. Wenn Sie Nachverfolgungspixel (Web-Bugs oder Beacons) verwenden, machen Sie dies in Ihren öffentlichen Datenschutz- oder P3P-Einstellungen deutlich bekannt.
+    4. Wenn Sie Nachverfolgungspixel (Web-Bugs oder Beacons) verwenden, machen Sie dies in Ihren öffentlichen Datenschutz- oder P3P-Einstellungen deutlich bekannt.
 
 11. **Formatieren Sie ausgehende Benachrichtigungen über den Übermittlungsstatus.**
 
-    Beim Generieren von Benachrichtigungen über den Übermittlungsstatus sollten Absender das Format für eine Unzustellbarkeitsnachricht verwenden, das in [RFC 3464](https://go.microsoft.com/fwlink/?LinkId=279715) spezifiziert ist.
+    Beim Generieren von Benachrichtigungen über den Übermittlungsstatus sollten Absender das Format für eine Unzustellbarkeitsnachricht verwenden, das in [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt) spezifiziert ist.
 
 12. **Entfernen Sie E-Mail-Adressen, an die Nachrichten nicht zugestellt werden können, weil die Benutzer nicht vorhanden sind.**
 
@@ -189,12 +185,10 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Antispamschutz für Office 365-E-Mails](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
 
 [Listen sicherer und blockierter Absender in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)
 
 [Rückläufernachrichten und EOP](backscatter-messages-and-eop.md)
-
-

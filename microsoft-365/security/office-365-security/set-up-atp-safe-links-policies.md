@@ -15,17 +15,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 09a9a47610915244ade77e1410024d7f055e390f
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 29e0c8d485d89498fe952d29d8b68f808c4aaaf3
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866617"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970131"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP-sichere Links](atp-safe-links.md), ein Feature von [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), können Ihnen helfen, Ihre Organisation vor bösartigen Links zu schützen, die in Phishing-und anderen Angriffen verwendet werden. Wenn Sie über die erforderlichen [Berechtigungen für das Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Richtlinien für ATP-sichere Links einrichten, um sicherzustellen, dass Ihre Organisation geschützt ist, wenn Personen auf Webadressen (URLs) klicken. Ihre Richtlinien für ATP-sichere Links können so konfiguriert werden, dass Sie URLs in e-Mails und URLs in Office-Dokumenten überprüfen.
   

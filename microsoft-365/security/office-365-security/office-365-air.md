@@ -4,7 +4,6 @@ keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bed
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +12,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Erste Schritte mit der Verwendung von automatisierten Vorfall Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
+ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813865"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967988"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
 
 ## <a name="overview"></a>Übersicht
 
-In Abhängigkeit von Ihrem Abonnement kann [Office 365 Advanced Threat Protection](office-365-atp.md) die Funktion "Automated Incident Response (Air)" enthalten, mit der Sie die Zeit und den Aufwand für Sicherheitsvorgänge im Umgang mit Warnungen und Bedrohungen speichern können.
+In Abhängigkeit von Ihrem Abonnement kann [Office 365 Advanced Threat Protection](office-365-atp.md) automatisierte Untersuchungen und Antwortfunktionen (Air) umfassen, mit denen Sie die Zeit und den Aufwand für Sicherheitsvorgänge im Umgang mit Warnungen und Bedrohungen speichern können.
 
-- Verwenden Sie diesen Artikel, um die Verwendung von Air-Funktionen in Office 365 zu beginnen. 
-- Wenn Sie einen Überblick über die Funktionsweise von Air erhalten möchten, finden Sie weitere Informationen unter [Automated Incident Response (Air) in Office 365](automated-investigation-response-office.md).
+- Verwenden Sie diesen Artikel, um erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 zu erhalten. 
+- Eine Übersicht über die Funktionsweise finden Sie unter [Automatische Untersuchung und Antwort in Office 365](automated-investigation-response-office.md).
 
-Wenn bestimmte Warnungen ausgelöst werden, werden ein oder mehrere Sicherheits-Textbuch initiiert, und die automatische Untersuchung beginnt. Während und nach einem automatisierten Ermittlungsprozess können Administratoren und Sicherheitsteams folgende Aufgaben ausführen:
+> [!TIP]
+> Haben Sie Microsoft 365 E5 oder Microsoft 365 E3 zusammen mit Identity #a0 Threat Protection? In diesem Fall sollten Sie die [Automatische Untersuchung und Reaktion (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md)testen.
+
+Mit automatisierten Ermittlungs-und Antwortfunktionen, wenn bestimmte Warnungen ausgelöst werden, werden mindestens ein Sicherheits Textbuch initiiert, und der automatische Ermittlungsprozess wird gestartet. Während und nach einem automatisierten Ermittlungsprozess kann Ihr Sicherheitsteam folgende Aufgaben ausführen:
 
 - [Anzeigen der Details einer Untersuchung](#view-details-of-an-investigation)
 - [Überprüfen und Genehmigen von Aktionen als Ergebnis einer Untersuchung](#review-and-approve-actions) 
 - [Anzeigen von Details zu einer Warnung im Zusammenhang mit einer Untersuchung](#view-details-about-an-alert-related-to-an-investigation)
 
+> [!IMPORTANT]
+> Damit Sie die in diesem Artikel beschriebenen Aufgaben ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen sein. Siehe [erforderliche Berechtigungen für die Verwendung von Air-Funktionen](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
-1. Wechseln Sie als Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser zu und melden [https://protection.office.com](https://protection.office.com) Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
 
 2. Führen Sie einen der folgenden Schritte aus:
 
@@ -60,7 +65,7 @@ Wenn bestimmte Warnungen ausgelöst werden, werden ein oder mehrere Sicherheits-
 
 In Office 365 führen automatisierte Untersuchungen normalerweise zu einer oder mehreren empfohlenen Aktionen. Es werden jedoch keine Aktionen ausgeführt, bis Sie vom Sicherheits Betriebsteam genehmigt wurden. Verwenden Sie das folgende Verfahren, um Aktionen zu überprüfen und zu genehmigen.
 
-1. Wechseln Sie als Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser zu und melden [https://protection.office.com](https://protection.office.com) Sie sich an. 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. 
 
 2. Wechseln Sie zu **Threat Management** > **Investigations**.
 
@@ -76,7 +81,7 @@ In Office 365 führen automatisierte Untersuchungen normalerweise zu einer oder 
 
 Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Office 365 aus. Weitere Informationen finden Sie unter [Alerts](automated-investigation-response-office.md#alerts). Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
 
-1. Wechseln Sie als Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser zu und melden [https://protection.office.com](https://protection.office.com) Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
 
 2. Wechseln Sie zu **Threat Management** > **Investigations**.
 
@@ -107,7 +112,7 @@ Verwenden Sie die folgenden Ressourcen, um dies einzurichten:
 |[Office 365-Verwaltungsaktivitäts-API – Referenz](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |Sie können die Office 365-Verwaltungs Aktivitäts-API verwenden, um Informationen zu Benutzer-, Verwaltungs-, System-und Richtlinienaktionen und-Ereignissen aus Office 365-und Azure AD-Aktivitätsprotokollen abzurufen. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.        |
 |[Office 365-Verwaltungsaktivitäts-API –Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Erhalten Sie einen Überblick über das [allgemeine Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) und das [Office 365 ATP-und Threat-Ermittlungs-und-Antwortschema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) , um sich über bestimmte Arten von Daten zu informieren, die über die API für die Office 365-Verwaltungsaktivität verfügbar sind.         |
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 - [Erfahren Sie, wie Sie Air abrufen und die erforderlichen Berechtigungen anzeigen können.](automated-investigation-response-office.md#how-to-get-air)
 - [Weitere Informationen zu Warnungen](../../compliance/alert-policies.md)

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Dieser Artikel soll Ihnen helfen, den Prozess für die Umstellung auf Exchange Online Schutz (EoP) von einer lokalen e-Mail-Hygiene-Appliance oder einem Cloud-basierten Schutzdienst zu verstehen und Ihnen dann Hilferessourcen für den Einstieg bereitzustellen.
-ms.openlocfilehash: ebb06951513f742b5b1a1917513960ffa144d127
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: c9d8bc73ee6226bececed7d8a4fc66b0eccfa6e1
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441202"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971394"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Wechseln zu EOP von Google Postini, Barracuda Spam & Virus Firewall oder Cisco IronPort
 
@@ -25,7 +25,7 @@ Wenn Sie neu in EoP sind und eine Übersicht über seine Funktionen lesen möcht
 
 Bevor Sie zu EOP wechseln, sollten Sie zuerst überlegen, ob Sie die EOP-geschützten Postfächer in der Cloud, mit Exchange Online, lokal oder in einem hybriden Szenario hosten möchten. (Bei einem hybriden Szenario werden Postfächer teils lokal und teils mit Exchange Online gehostet.) Jedes dieser Hostingszenarios - cloudbasiert, lokal oder hybrid - ist möglich, wird jedoch u. U. unterschiedlich eingerichtet. Die folgenden Überlegungen sollen Ihnen bei der Wahl der richtigen Bereitstellung helfen:
 
-- **EoP-Schutz mit lokalen Postfächern**: Dieses Szenario eignet sich, wenn Sie über eine vorhandene e-Mail-Hosting-Infrastruktur verfügen oder geschäftliche Anforderungen haben, um Postfächer lokal zu verwalten und EOP als Cloud-basierte e-Mail verwenden möchten. Schutz. Eine genauere Beschreibung dieses Szenarios finden Sie unter [Wechseln zu EOP als eigenständige Lösung](#switch-to-eop-standalone).
+- **EoP-Schutz mit lokalen Postfächern**: Dieses Szenario eignet sich, wenn Sie über eine vorhandene e-Mail-Hosting-Infrastruktur verfügen oder geschäftliche Anforderungen haben, um Postfächer lokal zu verwalten, und Sie möchten EoP als cloudbasierten e-Mail-Schutz verwenden. Eine genauere Beschreibung dieses Szenarios finden Sie unter [Wechseln zu EOP als eigenständige Lösung](#switch-to-eop-standalone).
 
 - **EoP-Schutz mit Exchange Online Postfächern**: Dieses Szenario ist geeignet, wenn EoP-Schutz und alle ihre Postfächer in der Cloud gehostet werden sollen. Dadurch verringert sich die Komplexität, da Sie keine lokalen Messagingserver unterhalten müssen. Dieses Szenario wird unter [Wechseln zu Exchange Online](#switch-to-exchange-online) beschrieben.
 
@@ -37,7 +37,7 @@ Wenn Sie Postfächer derzeit lokal hosten und eine lokale Schutzvorrichtung oder
 
 ## <a name="switch-to-exchange-online"></a>Wechseln zu Exchange Online
 
-Vielleicht haben Sie lokale Postfächer, die von einer lokalen Vorrichtung geschützt werden, und möchten auf cloudgehostete Exchange Online-Postfächer und EOP-Schutz umsteigen, um die Vorteile der cloudbasierten Messaging- und Schutzfunktionen von Office 365 zu nutzen. Als Erstes können Sie sich bei Office 365 anmelden und Ihre Domäne hinzufügen. In diesem Szenario müssen Sie keine Connectors einrichten, da kein Routing an lokale Postfächer erfolgt. Beginnen Sie auf der [Office 365-Anmeldeseite](https://www.microsoft.com/office365/online-software.aspx). [Erste Schritte mit Office 365](https://go.microsoft.com/fwlink/p/?LinkId=275407) stellt Ressourcen bereit, mit denen Sie sich mit den Funktionen vertraut machen können.
+Vielleicht haben Sie lokale Postfächer, die von einer lokalen Vorrichtung geschützt werden, und möchten auf cloudgehostete Exchange Online-Postfächer und EOP-Schutz umsteigen, um die Vorteile der cloudbasierten Messaging- und Schutzfunktionen von Office 365 zu nutzen. Als Erstes können Sie sich bei Office 365 anmelden und Ihre Domäne hinzufügen. In diesem Szenario müssen Sie keine Connectors einrichten, da kein Routing an lokale Postfächer erfolgt. Beginnen [Sie mit dem Abrufen der neuesten erweiterten Features mit Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) , um sich anzumelden und sich mit den Funktionen vertraut zu machen.
 
 Während der Einrichtung von Office 365 erstellen Sie cloudbasierte Postfachbenutzer.
 

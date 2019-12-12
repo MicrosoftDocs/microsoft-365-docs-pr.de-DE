@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema werden die Schritte zur Problembehandlung für Endbenutzer und Administratoren beschrieben, und Sie erhalten Informationen zum Kontaktieren des technischen Supports.
-ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441192"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971623"
 ---
 # <a name="troubleshooting-and-support-information"></a>Problembehandlung und Supportinformationen
 
@@ -86,6 +86,6 @@ Wenn Sie Hilfe bei der Installation, Konfiguration oder Deinstallation des Add-I
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Aktivieren des Berichtsnachrichts-Add-Ins](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Aktivieren des Berichtsnachrichts-Add-Ins](enable-the-report-message-add-in.md)
 
 [Melden von Junk-E-Mails an Microsoft](report-junk-email-messages-to-microsoft.md)
