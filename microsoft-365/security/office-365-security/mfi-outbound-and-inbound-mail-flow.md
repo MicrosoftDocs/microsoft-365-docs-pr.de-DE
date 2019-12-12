@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 'Administratoren können sich über das Widget für ausgehende und eingehende Nachrichten im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: 91e582accdf7556d26e5678335eda42cc3f1f174
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ceb85b9e83596c6c300c35ba471b04282074c82f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082467"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970801"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Fluss eingehender und ausgehender E-Mails
 
@@ -25,9 +25,9 @@ Das Widget für **ausgehende und eingehende Nachrichtenübermittlung** kombinier
 
 Die Informationen im Widget beziehen sich auf Konnektoren und TLS-Nachrichtenschutz in Office 365. Weitere Informationen finden Sie unter den folgenden Themen:
 
-- [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
+- [Konfigurieren des Nachrichtenflusses mit Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
-- [Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
+- [Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Nachricht ist bei der Übertragung geschützt (durch TLS)
 
@@ -37,7 +37,7 @@ Das Widget für **ausgehende und eingehende Nachrichtenübermittlung** zeigt die
 
 Derzeit ist TLS 1,2 die sicherste Version von TLS, die von Office 365 angeboten wird. Häufig müssen Sie die TLS-Verschlüsselung kennen, die für Compliance-Überprüfungen verwendet wird. Sie haben wahrscheinlich keine direkte Beziehung zu den meisten Quell-und Ziel-e-Mail-Servern (Sie besitzen diese nicht und auch nicht Microsoft), sodass Sie nicht viele Optionen zum Verbessern der TLS-Verschlüsselung haben, die von diesen Servern verwendet wird.
 
-Sie können jedoch [Connectors](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx) verwenden, um den bestmöglichen TLS-Schutz für Nachrichten sicherzustellen, die zwischen Ihren e-Mail-Servern und Office 365 gesendet werden. Der e-Mail-Fluss zwischen Office 365 und ihren eigenen e-Mail-Servern oder Servern, die zu ihren Partnern gehören, ist häufig wichtiger und sensibler als reguläre Nachrichten, daher sollten Sie zusätzliche Sicherheit und Wachsamkeit für diese Nachrichten anwenden. Sie können ein Upgrade oder eine Korrektur ihrer eigenen e-Mail-Server durchführen, um die verwendete TLS-Verschlüsselung zu verbessern oder Ihre Partner zu erreichen, um dasselbe zu tun. Im **Bericht "Connector** " werden sowohl das Nachrichtenfluss Volumen als auch die TLS-Verschlüsselung für Nachrichten angezeigt, die Ihre Office 365-Konnektoren verwenden.
+Sie können jedoch [Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) verwenden, um den bestmöglichen TLS-Schutz für Nachrichten sicherzustellen, die zwischen Ihren e-Mail-Servern und Office 365 gesendet werden. Der e-Mail-Fluss zwischen Office 365 und ihren eigenen e-Mail-Servern oder Servern, die zu ihren Partnern gehören, ist häufig wichtiger und sensibler als reguläre Nachrichten, daher sollten Sie zusätzliche Sicherheit und Wachsamkeit für diese Nachrichten anwenden. Sie können ein Upgrade oder eine Korrektur ihrer eigenen e-Mail-Server durchführen, um die verwendete TLS-Verschlüsselung zu verbessern oder Ihre Partner zu erreichen, um dasselbe zu tun. Im **Bericht "Connector** " werden sowohl das Nachrichtenfluss Volumen als auch die TLS-Verschlüsselung für Nachrichten angezeigt, die Ihre Office 365-Konnektoren verwenden.
 
 ## <a name="connector-report"></a>Connector-Bericht
 
@@ -45,7 +45,7 @@ Wenn Sie auf den Link **connectorbericht** im Flyout **Nachricht Protected in Tr
 
 In der Ansicht **Nachrichtenfluss** wird die Anzahl der Nachrichten über den Connector für die vergangene Woche angezeigt. Sie können den Datumsbereich ändern, indem Sie **Filter** auswählen, in dem Sie den Bereich auf maximal 30 Tage erweitern können. In der Ansicht " **alle e-Mail-Fluss** " wird der gesamte Nachrichtenfluss zu und von Ihrer Office 365 Organisation über alle Connectors angezeigt. Sie können einen bestimmten Konnektor im Dropdownmenü nach Namen auswählen.
 
-Sie können die Ansicht **TLS-Einsatz** in der Dropdownliste auswählen, um die Aufschlüsselung des TLS-Schutzes für Nachrichten über den Connector anzuzeigen. Wie beim Bericht **über TLS** -Übersichtsberichte wird in dieser Ansicht der Prozentsatz der verschiedenen TLS-Versionen angezeigt. Für TLS 1,0-Verbindungen müssen Sie Ihren e-Mail-Server oder den Server Ihres Partners wirklich aktualisieren oder reparieren lassen, um Probleme zu vermeiden, wenn die TLS 1,0-Unterstützung in Office 365 endgültig veraltet ist. Weitere Informationen finden Sie unter [technische Referenzdetails zur Verschlüsselung in Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
+Sie können die Ansicht **TLS-Einsatz** in der Dropdownliste auswählen, um die Aufschlüsselung des TLS-Schutzes für Nachrichten über den Connector anzuzeigen. Wie beim Bericht **über TLS** -Übersichtsberichte wird in dieser Ansicht der Prozentsatz der verschiedenen TLS-Versionen angezeigt. Für TLS 1,0-Verbindungen müssen Sie Ihren e-Mail-Server oder den Server Ihres Partners wirklich aktualisieren oder reparieren lassen, um Probleme zu vermeiden, wenn die TLS 1,0-Unterstützung in Office 365 endgültig veraltet ist. Weitere Informationen finden Sie unter [technische Referenzdetails zur Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption).
 
 Einblicke verweisen auf Connectors, um Ihre Aufmerksamkeit auf mögliche TLS-Verschlüsselungsprobleme für den Connector zu lenken. Die Einblicke sind: **kein TLS ist über 25%** oder **TLS 1,0 liegt über 50%**. Wenn diese Einblicke angezeigt werden, müssen Sie die dem Connector zugeordneten e-Mail-Server überprüfen oder Ihre Partnerorganisation erreichen.
 

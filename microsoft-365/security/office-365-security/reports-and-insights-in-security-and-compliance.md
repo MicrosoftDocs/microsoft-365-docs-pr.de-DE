@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Hier erhalten Sie eine Übersicht über Berichte und Einblicke &amp; in avialable im Security Compliance Center.
-ms.openlocfilehash: 5c6ef13bbbb46de63dfb0cfecfa0824d8e50547d
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034176"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967968"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Intelligente Berichte und Einblicke im Office 365 &amp; Security Compliance Center
 
@@ -50,7 +50,7 @@ Im Security &amp; Compliance Center steht eine Vielzahl von Berichten zur Verfü
 |:-----|:-----|:-----|
 |**Security &amp; Compliance Center-Berichte** (alle nach oben)  <br/> Wichtige Einblicke und Empfehlungen sowie Links zu &amp; Sicherheits Kompatibilitätsberichten, einschließlich Berichten zur Verhinderung von Datenverlusten, Bezeichnungen, e-Mail-Sicherheitsberichten, Advanced Threat Protection-Berichten und mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> - **Dashboard** <br/> |[Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center](../mtp/monitoring-and-reporting.md) <br/> |
 |**Verhinderung von Datenverlust** <br/> Übereinstimmungen der DLP-Richtlinie, falsch positive Ergebnisse und Überschreibungen sowie Links zum Erstellen oder Bearbeiten von Richtlinien  <br/> |Wechseln Sie im &amp; Security Compliance Center zur \> **Richtlinie** zur **Verhinderung von Datenverlust** <br/> |[Anzeigen der Berichte zur Verhinderung von Datenverlust](../../compliance/view-the-dlp-reports.md) <br/> |
-|**Datensteuerung** <br/> Informationen zur Anwendung von Beschriftungen, Bezeichnungen, die als Datensätze klassifiziert werden, Beschriftungs Trends und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zum **Data Governance** \> - **Dashboard** . <br/> |[Anzeigen der Datengovernanceberichte](../../compliance/view-the-data-governance-reports.md) <br/> |
+|**Datensteuerung** <br/> Informationen zur Anwendung von Beschriftungen, Bezeichnungen, die als Datensätze klassifiziert werden, Beschriftungs Trends und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Information Governance** \> - **Dashboard** . <br/> |[Anzeigen der Datengovernanceberichte](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Threat Management Dashboard** (Dies wird auch als Sicherheits Dashboard und das Threat Intelligence-Dashboard bezeichnet)  <br/> Bedrohungserkennungen, Malware Trends, Benutzer mit höchster Zielgruppe, Details zu gesendeten und empfangenen e-Mail-Nachrichten und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Dashboard** . <br/> |[Übersicht über das Sicherheitsdashboard](security-dashboard.md) <br/> |
 |**Threat Explorer** (auch als Explorer bezeichnet) oder **Echtzeiterkennung** <br/> Verdächtige Schadsoftware, die in e-Mails und Dateien in Office 365 erkannt wurde  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Explorer** oder **Real-Time Detections** .<br/> |[Sicherheitsrisiken-Explorer (oder Echtzeit-Erkennung)](threat-explorer.md) <br/> |
 |**Erweiterte Bedrohungsschutz-und e-Mail-Sicherheitsberichte** <br/> Berichte zu e-Mail-Sicherheit und Bedrohungsschutz (einschließlich Schadsoftware, Spam, Phishing und Spoofing-Berichten)  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> - **Dashboard** <br/> |[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](../../compliance/view-email-security-reports.md) <br/> |

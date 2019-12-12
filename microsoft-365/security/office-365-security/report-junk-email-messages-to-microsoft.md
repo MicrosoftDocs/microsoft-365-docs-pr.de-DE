@@ -14,67 +14,65 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'Das Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook" bietet mehrere Möglichkeiten zum Melden von Junk-E-Mails:'
-ms.openlocfilehash: 4b53f6df11f2b0ee8fe6b20d3797d6e317c9a73e
-ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
+ms.openlocfilehash: f77f9298058897b60345651a35289f6be88a47a8
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37964441"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970291"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Melden von Junk-E-Mails an Microsoft
 
 Das Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook" bietet mehrere Möglichkeiten zum Melden von Junk-E-Mails:
-  
+
 - Über das Outlook-Menüband
-    
+
 - Über den Posteingang
-    
+
 - Aus einer geöffneten E-Mail
-    
-Mit dem Add-In Junk-E-Mail-Berichtsprogramm können Sie Berichte an den Microsoft gesendet Exchange Online Protection (EOP)-Dienst senden. Wenn Ihr Postfach nicht vom Dienst geschützt ist, haben Ihre Übermittlungen von Junk-E-Mail-Berichten keine Auswirkungen auf Ihren Spamfilter. Administratoren erhalten weitere Informationen zu Spameinstellungen, die für eine gesamte Organisation am gelten, unter [Wie kann sichergestellt werden, dass eine Nachricht nicht Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung falsch negativer Ergebnisse](https://go.microsoft.com/fwlink/p/?LinkId=534225). Diese sind hilfreich, wenn Sie Administratorebenen-Kontrolle haben und falsch positive oder falsch negative Ergebnisse vermeiden möchten.
-  
+
+Mit dem Add-In Junk-E-Mail-Berichtsprogramm können Sie Berichte an den Microsoft gesendet Exchange Online Protection (EOP)-Dienst senden. Wenn Ihr Postfach nicht vom Dienst geschützt ist, haben Ihre Übermittlungen von Junk-E-Mail-Berichten keine Auswirkungen auf Ihren Spamfilter. Administratoren können mehr über Spameinstellungen erfahren, die für eine ganze Organisation gelten, indem Sie verhindern, dass [gute e-Mails in Office 365 als Spam markiert werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) , oder [wie Sie Spam-e-Mails in Office 365 reduzieren](reduce-spam-email.md). Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
+
 > [!TIP]
-> Sie können auch Spamnachrichten direkt an Microsoft übermitteln, indem Sie die [Junk@office365.Microsoft.com](mailto:junk@office365.microsoft.com) -e-Mail-Adresse und falsch positive (nicht-Spam)-Nachrichten mithilfe der [not_junk@office365.Microsoft.com](mailto:not_junk@office365.microsoft.com) -e-Mail-Adresse verwenden. Weitere Informationen finden Sie unter [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
-  
+> Sie können auch Spamnachrichten direkt an Microsoft übermitteln, indem Sie die [Junk@office365.Microsoft.com](mailto:junk@office365.microsoft.com) -e-Mail-Adresse und falsch positive (nicht-Spam)-Nachrichten mithilfe der [not_junk@office365.Microsoft.com](mailto:not_junk@office365.microsoft.com) -e-Mail-Adresse verwenden. Weitere Informationen finden Sie unter [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+
 ### <a name="to-report-junk-email-messages-from-outlook"></a>So melden Sie Junk-e-Mails in Outlook
 
-[Verwenden des Add-Ins "Berichtsnachricht"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) 
-  
+[Verwenden des Add-Ins "Berichtsnachricht"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+
 ### <a name="to-report-junk-email-messages-from-your-inbox"></a>So melden Sie Junk-E-Mails über den Posteingang
 
 1. Klicken Sie mit der rechten Maustaste auf die Nachricht(en), die Sie als Junk melden möchten.
-    
+
 2. Wählen Sie **Junk**, und klicken Sie dann auf **Junk-E-Mails melden**.
     ![Melden von Junk-E-Mails über den Posteingang](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
-  
+
 3. Das Dialogfeld **Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook"** wird geöffnet. Wenn Sie sicher sind, dass Sie die als Junk ausgewählten Nachrichten senden möchten, klicken Sie auf **Ja**.
     ![Meldung als Junk bestätigen](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-  
+
     > [!NOTE]
-    > Wenn Sie die Bestätigungsmeldung, die daraufhin angezeigt wird, in Zukunft nicht mehr erhalten möchten, aktivieren Sie **Diese Meldung nicht mehr anzeigen**. 
-  
-Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und in den Ordner "Junk-E-Mail" verschoben. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten. 
-  
+    > Wenn Sie die Bestätigungsmeldung, die daraufhin angezeigt wird, in Zukunft nicht mehr erhalten möchten, aktivieren Sie **Diese Meldung nicht mehr anzeigen**.
+
+Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und in den Ordner "Junk-E-Mail" verschoben. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
+
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>So melden Sie eine Junk-E-Mail aus einer geöffneten Nachricht
 
 1. Klicken Sie in der geöffneten Nachricht im Nachrichtenband auf **Junk-E-Mails melden**. Klicken Sie beispielsweise **auf** \> Junk- **Report** ![-Junk-e-Mail-Junk-e-Mails in einer Nachricht](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
-  
+
 2. Das Dialogfeld **Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook"** wird geöffnet. Wenn Sie sicher sind, dass Sie die als Junk ausgewählten Nachricht senden möchten, klicken Sie auf **Ja**.
     ![Meldung als Junk bestätigen](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-  
+
     > [!NOTE]
-    > Wenn Sie die Bestätigungsmeldung, die daraufhin angezeigt wird, in Zukunft nicht mehr erhalten möchten, aktivieren Sie **Diese Meldung nicht mehr anzeigen**. 
-  
-Die ausgewählte Nachricht wird zur Analyse an Microsoft gesendet und in den Ordner "Junk-E-Mail" verschoben. Wenn Sie überprüfen möchten, ob die Nachricht gesendet wurde, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendete Nachricht angezeigt werden sollte. 
-  
+    > Wenn Sie die Bestätigungsmeldung, die daraufhin angezeigt wird, in Zukunft nicht mehr erhalten möchten, aktivieren Sie **Diese Meldung nicht mehr anzeigen**.
+
+Die ausgewählte Nachricht wird zur Analyse an Microsoft gesendet und in den Ordner "Junk-E-Mail" verschoben. Wenn Sie überprüfen möchten, ob die Nachricht gesendet wurde, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendete Nachricht angezeigt werden sollte.
+
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Aktivieren des Berichtsnachrichts-Add-Ins](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
-  
-[Problembehandlung und Supportinformationen](troubleshooting-and-support-information.md)
-  
-[So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224)
-  
-[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](https://go.microsoft.com/fwlink/p/?LinkId=534225)
-  
+[Aktivieren des Berichtsnachrichts-Add-Ins](enable-the-report-message-add-in.md)
 
+[Problembehandlung und Supportinformationen](troubleshooting-and-support-information.md)
+
+[Vorgehensweise verhindern, dass gute e-Mails in Office 365 als Spam gekennzeichnet werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+
+[Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)

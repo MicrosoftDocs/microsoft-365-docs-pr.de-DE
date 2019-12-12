@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: e02723b0c8e2d5b5309054babf27f0f3e9587a88
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441112"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970421"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -23,17 +23,17 @@ In den hier aufgeführten Informationen des technischen Supports finden Sie Antw
 
 ## <a name="self-support-options"></a>Optionen zur Selbsthilfe
 
-Bei der Anmeldung stellt das Office 365-Portal Informationen zum Status der Dienste Ihrer Organisation bereit. Zudem enthält der Dienststatus-Abschnitt von Office 365 den aktuellen Status der Dienste, Details zu Unterbrechungen und Ausfällen sowie geplante Wartungszeiten. Das Office 365-Portal bietet auch Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienststatus-Bereich von Office 365 finden Sie unter [Dienststatus](https://go.microsoft.com/fwlink/?LinkId=394289). Mit den hier aufgeführten Tools, Foren und Community-Websites können Sie Probleme möglicherweise selbst lösen.
+Bei der Anmeldung stellt das Office 365-Portal Informationen zum Status der Dienste Ihrer Organisation bereit. Zudem enthält der Dienststatus-Abschnitt von Office 365 den aktuellen Status der Dienste, Details zu Unterbrechungen und Ausfällen sowie geplante Wartungszeiten. Das Office 365-Portal bietet auch Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienst Integritätsbereich von Office 365 finden Sie unter [Service Health and Continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mit den hier aufgeführten Tools, Foren und Community-Websites können Sie Probleme möglicherweise selbst lösen.
 
-[Produktübersicht Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=279912)
+[Produktübersicht Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Office 365- und Exchange Online-Support](https://go.microsoft.com/fwlink/?LinkId=299655)
+[Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Office 365-Community](https://go.microsoft.com/fwlink/?LinkId=299656)
+[Office 365-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Office 365 Do It Yourself (DIY)-Problembehandlung](https://go.microsoft.com/fwlink/?LinkId=299657)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Schritt-für-Schritt-Anleitung für den Office 365-Nachrichtenfluss](https://go.microsoft.com/fwlink/?LinkId=323470)
+[Nachrichtenfluss-Problembehandlung](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Persönlicher Support von Microsoft
 
@@ -43,7 +43,7 @@ Sie können Hilfe von Microsoft erhalten, indem Sie eine neue Dienstanforderung 
 
 Wenn Sie ein EOP-Kunde sind und zudem einen Microsoft Premier Support-Vertrag abgeschlossen haben, können Sie über die normalen Microsoft Premier Support Channel unterstützt werden. Hierdurch erhalten Sie Zugriff auf alle für Premier Support-Kunden verfügbaren Prozesse und Ressourcen wie einen Premier Technical Account Manager (TAM) und Fallübermittlung. Der Premier Support für Microsoft Online Services erweitert den Premier Support-Gesamtvertrag auf lokale Produkte für Online-Dienste, die Ihnen eine einheitliche Unterstützung für alle Produkte und Dienstleistungen bieten. Mit diesem Service wird sichergestellt, dass Kunden Probleme schnell lösen können, und er vereinfacht die Verwaltung der Unterstützung für unterschiedliche Komponente einer IT-Infrastruktur.
 
-Weitere Informationen dazu, wie Ihre Organisation ihre IT-Investitionen mit Premier Support maximal ausschöpfen kann, finden Sie unter [Microsoft Premier Support](https://go.microsoft.com/fwlink/?LinkId=317437).
+Weitere Informationen darüber, wie Ihnen der Premier-Support bei Ihrer Organisation den größtmöglichen Nutzen aus Ihren IT-Investitionen ausschöpfen kann, finden Sie unter [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
 ### <a name="ask-for-help-on-the-web"></a>Unterstützung im Internet
 

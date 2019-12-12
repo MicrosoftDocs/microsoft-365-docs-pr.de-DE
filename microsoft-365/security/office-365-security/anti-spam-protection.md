@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Hier finden Sie Informationen zu den Antispameinstellungen und-Filtern, mit denen Sie Spam in Exchange Online und Office 365 verhindern können. Sie werden zu viel Spam in Office 365 einholen? Sie können Ihre Spamfilter und Anti-Spam-Richtlinieneinstellungen anpassen.
-ms.openlocfilehash: b18ec01419e73923b4c37d9666da97423b0cb81b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871971"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970901"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365-Antispamschutz für E-Mails
 
@@ -32,9 +32,9 @@ Dieser Artikel richtet sich an Office 365 Administratoren. Wenn Sie kein Adminis
 
  **Verbindungsfilterung**: Wenn Sie die Verbindungsfilterung verwenden, überprüft Office 365 die Reputation des Absenders, bevor eine Nachricht eingeht. Sie können eine Zulassungsliste oder eine Liste sicherer Absender erstellen, um sicherzustellen, dass Sie alle an Sie gesendeten Nachrichten von einer bestimmten IP-Adresse oder einem IP-Adressbereich empfangen. Sie können auch eine Liste der IP-Adressen erstellen, aus denen Nachrichten blockiert werden, die als Sperrliste bezeichnet werden. Weitere Informationen finden Sie unter [Configure the connection filter policy](configure-the-connection-filter-policy.md). Wenn Sie über Spam in Office 365 besorgt sind, verwenden Sie die Verbindungsfilterung, um Spam zu verhindern.
 
-Für Kunden, die Office 365 Enterprise E5 haben oder Advanced Threat Protection (ATP)-Lizenzen erworben haben, wird die Verbindungsfilterung von Spoof Intelligence verwendet, um Zulassungs-und Sperrlisten von Absendern zu erstellen, die Ihre Domäne Spoofing durchführen. Weitere Informationen finden Sie unter [erfahren Sie mehr über Spoof Intelligence](https://go.microsoft.com/fwlink/?LinkID=735009).
+Für Kunden, die Office 365 Enterprise E5 haben oder Advanced Threat Protection (ATP)-Lizenzen erworben haben, wird die Verbindungsfilterung von Spoof Intelligence verwendet, um Zulassungs-und Sperrlisten von Absendern zu erstellen, die Ihre Domäne Spoofing durchführen. Weitere Informationen finden Sie unter [erfahren Sie mehr über Spoof Intelligence](learn-about-spoof-intelligence.md).
 
- **Spamfilterung**: Office 365 sucht nach Nachrichtenmerkmalen, die mit Spam im Einklang stehen, indem Sie die Spamfilterung verwenden. Sie können ändern, welche Aktionen für Nachrichten, die als Spam identifiziert werden, durchführen, und auswählen, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen verfasst wurden oder aus bestimmten Ländern oder Regionen gesendet werden. Sie können auch erweiterte Spamfilter Optionen aktivieren, wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten. Darüber hinaus können Sie Spambenachrichtigungen für Endbenutzer so konfigurieren, dass Benutzer informiert werden, wenn die für Sie vorgesehenen Nachrichten stattdessen an die Quarantäne gesendet wurden. (Das Senden von Nachrichten an die Quarantäne ist eine der konfigurierbaren Aktionen.) Aus diesen Benachrichtigungen können Endbenutzer falsch positive Ergebnisse freigeben und diese an Microsoft zur Analyse melden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](https://go.microsoft.com/fwlink/p/?LinkId=617147). Um Spam in Office 365 zu verhindern, verwenden Sie Spamfilterung, wenn Sie über zu viel Spam in Office 365 besorgt sind, verwenden Sie die Verbindungsfilterung, um Spam zu verhindern.
+ **Spamfilterung**: Office 365 sucht nach Nachrichtenmerkmalen, die mit Spam im Einklang stehen, indem Sie die Spamfilterung verwenden. Sie können ändern, welche Aktionen für Nachrichten, die als Spam identifiziert werden, durchführen, und auswählen, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen verfasst wurden oder aus bestimmten Ländern oder Regionen gesendet werden. Sie können auch erweiterte Spamfilter Optionen aktivieren, wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten. Darüber hinaus können Sie Spambenachrichtigungen für Endbenutzer so konfigurieren, dass Benutzer informiert werden, wenn die für Sie vorgesehenen Nachrichten stattdessen an die Quarantäne gesendet wurden. (Das Senden von Nachrichten an die Quarantäne ist eine der konfigurierbaren Aktionen.) Aus diesen Benachrichtigungen können Endbenutzer falsch positive Ergebnisse freigeben und diese an Microsoft zur Analyse melden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Um Spam in Office 365 zu verhindern, verwenden Sie Spamfilterung, wenn Sie über zu viel Spam in Office 365 besorgt sind, verwenden Sie die Verbindungsfilterung, um Spam zu verhindern.
 
 > [!NOTE]
 > Für EoP-eigenständige Kunden: Standardmäßig senden die EoP-Spamfilter Spam-erkannte Nachrichten an den Junk-e-Mail-Ordner jeder Empfänger. Um jedoch sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu erkennen. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -45,7 +45,7 @@ Das folgende Video bietet eine Übersicht über die Konfiguration der Spamfilter
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
 
-Weitere Informationen finden Sie im Thema [configure Spamfilter Policies](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
+Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
 
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Überprüfen der ausgehenden Nachrichten, um Spam in Office 365 zu verhindern
 
@@ -65,11 +65,11 @@ Weitere Informationen finden Sie im Thema [configure Spamfilter Policies](https:
 
 Wenn Sie sich Sorgen über Spam, Phishing und Spoofing in Office 365 machen, verwenden Sie SPF, DKIM und DMARC zusammen, um Spam und unerwünschte Spoofing zu verhindern.
 
- **Verwaltete Einstellungen für Endbenutzer**: Wenn Sie Informationen dazu benötigen, wie Endbenutzer ihre eigenen Spameinstellungen verwalten können, lesen Sie [Übersicht über den Junk-e-Mail-Filter](https://go.microsoft.com/fwlink/?LinkId=270065) (für Microsoft Outlook Benutzer) oder [erfahren Sie mehr über Junk-e-Mails und Phishing](https://go.microsoft.com/fwlink/?LinkId=270068) (für Benutzer von Outlook im Internet). Wenn Sie EoP zum Schutz von lokalen Postfächern verwenden, müssen Sie unbedingt die Verzeichnissynchronisierung verwenden, um sicherzustellen, dass diese Einstellungen mit dem Dienst synchronisiert werden. Weitere Informationen zum Einrichten der Verzeichnissynchronisierung finden Sie unter "Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung" in [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).
+ **Verwaltete Einstellungen für Endbenutzer**: Wenn Sie Informationen dazu benötigen, wie Endbenutzer ihre eigenen Spameinstellungen verwalten können, lesen Sie [Übersicht über den Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (für Microsoft Outlook Benutzer) oder [erfahren Sie mehr über Junk-e-Mails und Phishing](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31) (für Benutzer von Outlook im Internet). Wenn Sie EoP zum Schutz von lokalen Postfächern verwenden, müssen Sie unbedingt die Verzeichnissynchronisierung verwenden, um sicherzustellen, dass diese Einstellungen mit dem Dienst synchronisiert werden. Weitere Informationen zum Einrichten der Verzeichnissynchronisierung finden Sie unter "Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung" in [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Blog: Warum erhalten Spam und Phishing Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
+[Blog: Warum erhalten Spam und Phishing Office 365?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [Häufig gestellte Fragen zum Antispamschutz](anti-spam-protection-faq.md)
 
@@ -85,8 +85,8 @@ Wenn Sie sich Sorgen über Spam, Phishing und Spoofing in Office 365 machen, ver
 
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-[Abrufen von Hilfe bei den Office 365-Community-Foren](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[Abrufen von Hilfe bei den Office 365-Community-Foren](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Administratoren: Melden Sie sich an, und erstellen Sie eine Serviceanfrage](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[Administratoren: Melden Sie sich an, und erstellen Sie eine Serviceanfrage](https://portal.office.com/AdminPortal/Home?ref=support)
 
-[Administratoren: Rufen Sie den Support an](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[AContact-Unterstützung für Business-Produkte – Administratorhilfe](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)

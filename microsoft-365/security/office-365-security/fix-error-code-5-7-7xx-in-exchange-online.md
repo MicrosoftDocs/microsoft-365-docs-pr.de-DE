@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Probleme für den Fehlercode 5.7.7 XX in Exchange Online beheben (vom Senden von e-Mails blockierte Mandanten).
-ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865847"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970451"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
 
@@ -51,23 +51,23 @@ Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für da
 
 1. Stellen Sie sicher, dass Sie alle Ihre Domänen im Microsoft 365 Admin Center registrieren. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Suchen Sie nach ungewöhnlichen Konnektoren. Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrem Office 365 Mandanten, um Spam zu senden. Weitere Informationen zum Überprüfen der Connectors finden Sie [hier](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector). 
+2. Suchen Sie nach ungewöhnlichen Konnektoren. Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrem Office 365 Mandanten, um Spam zu senden. Weitere Informationen zum Überprüfen der Connectors finden Sie [hier](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
 
 3. Sperren Sie Ihre lokalen Server, und stellen Sie sicher, dass Sie nicht beeinträchtigt werden.
 
-> [!TIP]
-> Es gibt viele Faktoren, vor allem, wenn es sich um Drittanbieterserver handelt. Unabhängig davon müssen Sie in der Lage sein zu bestätigen, dass alle e-Mails, die Ihre Server verlassen, legitim sind.
+   > [!TIP]
+   > Es gibt viele Faktoren, vor allem, wenn es sich um Drittanbieterserver handelt. Unabhängig davon müssen Sie in der Lage sein zu bestätigen, dass alle e-Mails, die Ihre Server verlassen, legitim sind.
 
-4. Sobald Sie fertig sind, müssen Sie den Microsoft-Support anrufen und bitten, ihren Mandanten aufheben zu lassen, dass er von nicht registrierten Domänen erneut gesendet wird.  Die Bereitstellung des Fehlercodes ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert ist und dass kein Spam mehr gesendet wird. Weitere Informationen zum Öffnen eines Support Falls finden Sie [hier](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
-  
+4. Sobald Sie fertig sind, müssen Sie den Microsoft-Support anrufen und bitten, ihren Mandanten aufheben zu lassen, dass er von nicht registrierten Domänen erneut gesendet wird.  Die Bereitstellung des Fehlercodes ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert ist und dass kein Spam mehr gesendet wird. Weitere Informationen zum Öffnen eines Support Falls finden Sie [hier](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+
 ## <a name="for-more-information"></a>Weitere Informationen
 
 [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
 
-[Unzustellbarkeitsberichte für E-Mails in Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[Unzustellbarkeitsberichte für E-Mails in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
 [Konfigurieren der E-Mail-Weiterleitung für ein Postfach](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Einrichten eines Multifunktionsgeräts oder einer Anwendung zum Senden von E-Mails mit Office 365](https://support.office.com/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Einrichten eines Multifunktionsgeräts oder einer Anwendung zum Senden von E-Mails mit Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3)
 
 [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

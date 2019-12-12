@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie Ihre Zulassungsliste in einer Spamfilter Richtlinie im Exchange Admin Center anpassen.
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793679"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970851"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
 
@@ -74,7 +74,7 @@ Fügen Sie keine Domänen, die Sie besitzen, oder beliebte Domänen ( `microsoft
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Verwenden von sicheren Outlook-Absendern (Endbenutzer verwaltet)
 
-Anstatt eine Adresse, eine Domäne oder eine IP-Adresse Global zu autorisieren, können Endbenutzer auch das Senden von Adressen über Outlook-sichere Absender zulassen. Die Schritte zum Einrichten dieser Einstellung unterscheiden sich zwischen [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) und dem [Outlook-Client](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Wenn Nachrichten aufgrund sicherer Absender erfolgreich autorisiert wurden, wird SFV: SFE im X-Forefront-Antispam-Report angezeigt** , der angibt, dass die Spam/Spoof/Phishing-Filterung umgangen wird.
+Anstatt eine Adresse, eine Domäne oder eine IP-Adresse Global zu autorisieren, können Endbenutzer auch das Senden von Adressen über Outlook-sichere Absender zulassen. Die Schritte zum Einrichten dieser Einstellung unterscheiden sich zwischen [Outlook im Internet](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) und dem [Outlook-Client](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Wenn Nachrichten aufgrund sicherer Absender erfolgreich autorisiert wurden, wird SFV: SFE im X-Forefront-Antispam-Report angezeigt** , der angibt, dass die Spam/Spoof/Phishing-Filterung umgangen wird.
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Verwenden von IP-Zulassungslisten für Anti-Spam-Richtlinien
 

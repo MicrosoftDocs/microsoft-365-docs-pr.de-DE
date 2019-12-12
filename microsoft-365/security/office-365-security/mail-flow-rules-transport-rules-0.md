@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Office 365 Organisation fließen.
-ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 604e2c7cb0b2cc34021e6708ae9f08769e8e6e91
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441532"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970341"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
@@ -41,7 +41,7 @@ Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von
 
 - [Reduzieren von Schadsoftwarebedrohungen durch das Blockieren von Dateianlagen in Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von E-Mail-Nachrichten](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von e-Mails in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 Das folgende Video bietet eine Demonstration zum Einrichten von Nachrichtenfluss Regeln in Exchange Online Schutz.
 
@@ -106,9 +106,9 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 |**Nachrichtentyp**|**Kann eine Regel angewendet werden?**|
 |:-----|:-----|
 |**Reguläre Nachrichten**: Nachrichten, die ein einzelnes Rich-Text-Format (RTF), HTML oder nur-Text-Nachrichtentext oder eine mehrteilige oder alternative Gruppe von Nachrichtentexten enthalten.|Ja|
-|**Office 365 Nachrichtenverschlüsselung**: Nachrichten, die von Office 365 Nachrichtenverschlüsselung in Office 365 verschlüsselt wurden. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=392525).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Transportentschlüsselung](https://go.microsoft.com/fwlink/p/?linkid=848060).  <br/><br/> Sie können auch eine Regel erstellen, die verschlüsselte Nachrichten automatisch entschlüsselt. Weitere Informationen finden Sie unter [Definieren von Regeln zum Ver- oder Entschlüsseln von E-Mail-Nachrichten](https://go.microsoft.com/fwlink/p/?Linkid=402846).  |
+|**Office 365 Nachrichtenverschlüsselung**: Nachrichten, die von Office 365 Nachrichtenverschlüsselung in Office 365 verschlüsselt wurden. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME-Verschlüsselte Nachrichten**|Regeln können nur auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Regeln mit Bedingungen, die eine Untersuchung des Nachrichteninhalts erfordern, oder Aktionen, die den Inhalt der Nachricht ändern, können nicht verarbeitet werden.|
-|**RMS-geschützte nach**richten: Nachrichten, für die eine Active Directory Rights Management Services (AD RMS) oder eine Azure Rights Management (RMS)-Richtlinie angewendet wurde.|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Damit eine Regel den Inhalt einer RMS-geschützten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Transportentschlüsselung](https://go.microsoft.com/fwlink/p/?linkid=848060).  |
+|**RMS-geschützte nach**richten: Nachrichten, für die eine Active Directory Rights Management Services (AD RMS) oder eine Azure Rights Management (RMS)-Richtlinie angewendet wurde.|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Damit eine Regel den Inhalt einer RMS-geschützten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional").|
 |**Clear-signed Messages**: signierte, aber nicht verschlüsselte Nachrichten.|Ja|
 |**Um-Nachrichten**: Nachrichten, die vom Unified Messaging-Dienst erstellt oder verarbeitet werden, wie Voicemail, Fax, Benachrichtigungen über verpasste Anrufe und Nachrichten, die mit Microsoft Outlook Voice Access erstellt oder weitergeleitet wurden.|Ja|
 |**Anonyme nach**richten: von anonymen Absendern gesendete Nachrichten.|Ja|
@@ -126,4 +126,4 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 
 [E-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
 
-[Journal-, Transport- und Posteingangsregelgrenzen](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal-, Transport- und Posteingangsregelgrenzen](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

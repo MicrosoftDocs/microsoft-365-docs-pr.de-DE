@@ -3,7 +3,6 @@ title: Threat Explorer und Echt Zeit Erkennungen, neu in Threat Explorer, Änder
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,22 +14,22 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 4507155acf3a973484f8228803660abf65167121
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 64ebfef5c0d5540acf74d0d6f5a864461e83f82f
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866367"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967938"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
-Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echt Zeit Erkennungen** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-real-time-detections)!). Wechseln Sie im Security #a0 Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
+Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echt Zeit Erkennungen** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security #a0 Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
 
 |Mit ATP-Plan 2 sehen Sie Folgendes:  |Mit ATP-Plan 1 sehen Sie Folgendes:  |
 |---------|---------|
 |![Bedrohungs-Explorer](../media/threatmgmt-explorer.png)      |![Echt Zeit Erkennungen](../media/threatmgmt-realtimedetections.png)         |
 
-Mit Explorer (oder Echtzeiterkennung) haben Sie einen leistungsfähigen Bericht, mit dem Ihr Sicherheits Betriebsteam Bedrohungen effektiv und effizient untersuchen und darauf reagieren kann, und es ähnelt dem folgenden Bild: 
+Mit Explorer (oder Echtzeiterkennung) haben Sie einen leistungsfähigen Bericht, der es Ihrem Sicherheitsteam ermöglicht, Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren. Der Bericht ähnelt dem folgenden Bild: 
 
 ![Wechseln Sie zu Threat \> Management Explorer](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
@@ -40,13 +39,20 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 - [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur ATP-Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
 
-## <a name="new-features-in-real-time-detections"></a>Neue Features in Echt Zeit Erkennungen
+## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Neue Features in Threat Explorer und Echt Zeit Erkennungen
 
-Im folgenden werden drei neue Features in Threat Explorer erläutert.
+Drei neue Features in Threat Explorer und Echt Zeit Erkennungen hinzugefügt:
+- [E-Mail-Kopfzeile anzeigen und e-Mail-Textkörper downloaden](#preview-email-header-and-download-email-body)
+- [E-Mail-Zeitachse](#email-timeline)
+- [Export-URL klicken Sie auf Daten](#export-url-click-data)
 
-Zunächst sind **die e-Mail-Kopfzeilen Vorschau und der Download des e-Mail-Texts** neue Features, die in Threat Explorer zur Verfügung stehen. Administratoren können heruntergeladene Kopfzeilen/e-Mails nach Bedrohungen analysieren. Da das Herunterladen von e-Mails die Gefährdung von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (Roles-Based Access Control, RBAC) gesteuert. Eine neue Rolle mit dem Namen "Vorschau" muss in einer anderen Office 365 Rollengruppe (beispielsweise in sec-Vorgänge oder in der SEC-Verwaltung) hinzugefügt werden, um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "all-Email" zu gewähren.
+Diese neuen Features werden unten erläutert.
 
-Aber Explorer (und Echtzeit-Erkennungen) fügt auch neue neue Felder entwickelt, um Ihnen ein vollständiges Bild, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
+### <a name="preview-email-header-and-download-email-body"></a>E-Mail-Kopfzeile anzeigen und e-Mail-Textkörper downloaden
+
+Die Möglichkeit zum Anzeigen einer e-Mail-Kopfzeile und zum Herunterladen des e-Mail-Texts sind neue Features, die in Threat Explorer verfügbar sind. Administratoren können heruntergeladene Kopfzeilen/e-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von e-Mail-Nachrichten die Exposition von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau*, muss einer anderen Office 365 Rollengruppe (beispielsweise Sicherheitsvorgänge oder Sicherheits Administrator) hinzugefügt werden, um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "All-e-Mail-Nachrichten" zu gewähren.
+
+Durch Explorer (und Echtzeiterkennung) werden jedoch auch neue Felder hinzugefügt, mit denen Sie ein vollständigeres Bild davon erhalten, wo Ihre e-Mail-Nachrichten landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsmitarbeiter einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mail-Nachrichten auf einen Blick zu erkennen ist.
 
 Wie wird das gemacht? Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
 
@@ -57,7 +63,7 @@ Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erk
 
 |Geliefert  |Ausrangierten  |Gesperrt  |Ersetzt  |
 |---------|---------|---------|---------|
-|E-Mail wurde im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.    | E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mails in diesen Ordnern.       | Alle e-Mails, die unter Quarantäne gestellt wurden, die nicht erfolgreich waren oder gelöscht wurden. Auf diesen Zugriff kann der Benutzer vollständig zugreifen!     | Jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, die den Status der Anlage aufweisen, war bösartig.     |
+|E-Mail wurde an den Posteingang des Benutzers oder einen anderen Ordner zugestellt, und der Benutzer kann direkt darauf zugreifen.    | E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mail-Nachrichten in diesen Ordnern.       | Alle e-Mail-Nachrichten, die isoliert, fehlerhaft oder gelöscht wurden und auf die der Benutzer nicht zugreifen kann.     | Alle e-Mail-Nachrichten, bei denen böswillige Anlagen durch txt-Dateien ersetzt wurden, in denen die Anlagen als schädlich eintraten.     |
 
 Und hier ist, was der Benutzer sehen kann und was er nicht kann:
 
@@ -68,28 +74,31 @@ Und hier ist, was der Benutzer sehen kann und was er nicht kann:
 
 Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden sind die möglichen Werte für den Zustellungs Speicherort zu finden:
 
-1. Posteingang oder Ordner – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
-2. On-Prem oder External – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
-3. Junk-Ordner – die e-Mail im Ordner Junk eines Benutzers.
-4. Ordner "Gelöschte Elemente" – die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
-5. Quarantine – die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
-6. Fehler – die e-Mail konnte das Postfach nicht erreichen.
-7. Fallen gelassen – die e-Mail wird irgendwo in der Nachrichtenübermittlung verloren.
+- **Posteingang oder Ordner**: die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
+- **On-Prem oder extern**: das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
+- **Junk-Ordner**: die e-Mail befindet sich im Ordner Junk eines Benutzers.
+- **Ordner "Gelöschte Elemente"**: die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
+- **Quarantine**: die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
+- **Fehler**: die e-Mail konnte das Postfach nicht erreichen.
+- **Abgelegt**: die e-Mail wird irgendwo im Nachrichtenfluss verloren.
+
+### <a name="email-timeline"></a>E-Mail-Zeitachse
 
 Die **e-Mail-Zeitachse** ist eine weitere neue Explorer-Funktion, mit der die Jagd Erfahrung für Administratoren verbessert werden soll. Es reduziert die Zufallsgenerierung, da die Überprüfung verschiedener Standorte kürzer ist, um zu versuchen, das Ereignis zu verstehen. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. In der Tat werden einige Ereignisse, die nach der Zustellung an Ihre e-Mails geschehen, in der Spalte "spezielle Aktion" erfasst. Durch die Kombination der Informationen aus der Zeitachse dieser e-Mail mit der speziellen Aktion, die Sie für die e-Mail-Zustellung durchführen, erhalten Administratoren einen Einblick in die Funktionsweise Ihrer Richtlinien, wo die e-Mails schließlich weitergeleitet wurden, und in einigen Fällen was die abschließende Bewertung war.
 
-Weitere Informationen zur Untersuchung böswilliger e-Mails finden Sie unter [Suchen und untersuchen von in Office 365 zugestellten böswilligen](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered)e-Mails.
+Weitere Informationen zur Untersuchung schädlicher e-Mail-Nachrichten finden Sie unter [Suchen und untersuchen von böswilligen e-Mails, die in Office 365 bereitgestellt wurden](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
+### <a name="export-url-click-data"></a>Export-URL klicken Sie auf Daten
 
-Außerdem können Sie nun **Berichte für URL-Klicks** in Microsoft Excel exportieren, um sowohl die Netzwerknachrichten-ID als auch das Klick Urteil anzuzeigen, um zu verstehen, wo Ihre URL auf den Datenverkehr fällt. So funktioniert es. Klicken Sie auf der Office 365-Schnellstartleiste in Threat Management auf diese Kette:
+Außerdem können Sie nun Berichte für URL-Klicks in Microsoft Excel exportieren, um sowohl die Netzwerknachrichten-ID als auch das Klick Urteil anzuzeigen, um zu verstehen, wo Ihre URL auf den Datenverkehr fällt. So funktioniert es. Klicken Sie auf der Office 365-Schnellstartleiste in Threat Management auf diese Kette:
 
-**Explorer-#a0 anzeigen von Phishing-#a1 Klicks auf #a2 häufigsten URLs oder URLs am oberen Rand #a3 klicken auf einen beliebigen Datensatz zum Öffnen des URL-Flyouts**
+**Explorer** > -**Ansicht Phish** > **Klicks** > **Top URLs oder URL Top Klicks** > **Klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout zu öffnen** .
 
 Wenn Sie auf eine URL in der Liste klicken, wird im Ausklappbereich eine neue Schaltfläche Exportieren angezeigt. Verwenden Sie diese Schaltfläche, um Daten zur einfacheren Berichterstellung in eine Excel-Tabelle zu migrieren.
 
-Sie können den gleichen Speicherort in Echt Zeit Erkennungen wie folgt abrufen:
+Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie folgt abrufen:
 
-**Explorer #a0 Echt Zeit Erkennungen #a1 anzeigen von Phishing-#a2 URLs #a3 oberen URLs oder oberen Klicks #a4 klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout zu öffnen, > navigieren Sie zur Registerkarte Klicks.**
+**Explorer** > -**Echt Zeit Erkennungen** > **Anzeigen von Phishing** > -**URLs** > **Top-URLs oder oberen Klicks** > **Klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout** > **zu öffnen, navigieren Sie zur Registerkarte Klicks.**
 
 > [!TIP]
 > Network Message ID ordnet den Klick zurück zu bestimmten Mails zu, wenn Sie über den Explorer oder zugeordnete Tools von Drittanbietern über die Netzwerknachrichten-ID suchen. Durch die Suche über die Netzwerknachrichten-ID erhalten Administratoren die spezifische e-Mail-Adresse, die mit einem Klick Ergebnis verknüpft ist. Für eine schnellere und leistungsstärkere Analyse durch den Export mit wird die korrelierte Identifikation der Netzwerknachrichten-ID ermöglicht.
@@ -130,11 +139,11 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
    - Zu den **wichtigsten Klicks** gehören die eingebundenen URLs, auf die geklickt wurde, sortiert nach der Gesamtanzahl der Klick Zähler (diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen). Gesamtanzahl Zählungen nach Spalte geben Sie die sichere Links klicken Sie auf Urteils Zählung für jede URL, auf die geklickt wurde. In der Phishing-e-Mail-Ansicht sind dies häufiger verdächtige oder böswillige URLs, aber Sie können auch saubere URLs in Phishing-Nachrichten enthalten. URL Klicks auf unverpackte Links werden hier nicht angezeigt.
    
-   Die beiden URLs Tabellen zeigen Top-URLs in Phishing-e-Mails nach Zustellung Aktion und Ort, und Sie zeigen URL Klicks, die blockiert wurden (oder besucht, obwohl eine Warnung), damit Sie verstehen, welche potenziellen schlechten Links wurden von Benutzern empfangen und mit den Benutzern interagieren. Von hier aus können Sie weitere Analysen durchführen. Beispielsweise können Sie unter dem Diagramm die häufigsten URLs in e-Mails sehen, die in der Umgebung Ihrer Organisation blockiert wurden.
+   Die zwei URL-Tabellen zeigen die wichtigsten URLs in Phishing-e-Mails nach Zustellungs Aktion und Speicherort an, und Sie zeigen URL-Klicks an, die blockiert wurden (oder trotz einer Warnung besucht wurden), sodass Sie verstehen, welche möglichen fehlerhaften Links von Benutzern empfangen und mit den Benutzern in Interaktion stehen. Von hier aus können Sie weitere Analysen durchführen. Beispielsweise können Sie unter dem Diagramm die häufigsten URLs in e-Mail-Nachrichten sehen, die in der Umgebung Ihrer Organisation blockiert wurden.
    
    ![Blockierte Explorer-URLs](../media/ExplorerPhishClickVerdictURLs.png)
    
-   Wählen Sie eine URL aus, um ausführlichere Informationen anzuzeigen. Beachten Sie, dass im Dialogfeld URL-Flyout die Filterung von e-Mails entfernt wird, um Ihnen die vollständige Ansicht der URL-Exposition in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie e-Mails im Explorer nach bestimmten URLs filtern, die potenzielle Bedrohungen darstellen, und dann Ihr Verständnis der URL-Exposition in Ihrer Umgebung erweitern (über das Dialogfeld "URL-Details"), ohne dass Sie der URL-Filter hinzufügen müssen. Explorer-Ansicht selbst.
+   Wählen Sie eine URL aus, um ausführlichere Informationen anzuzeigen. **Hinweis**: im Dialogfeld URL-Flyout wird die Filterung für e-Mail-Nachrichten entfernt, um Ihnen die vollständige Ansicht der URL-Exposition in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach e-Mail-Nachrichten im Explorer nach bestimmten URLs suchen, die potenzielle Bedrohungen darstellen, und dann Ihr Verständnis der URL-Exposition in Ihrer Umgebung (über das Dialogfeld "URL-Details") erweitern, ohne dass Sie URL-Filter hinzufügen müssen. die Explorer-Ansicht selbst.
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 
@@ -153,9 +162,9 @@ Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die
 ## <a name="start-automated-investigation-and-response"></a>Starten der automatischen Untersuchung und Antwort
 
 > [!NOTE]
-> In **Office 365 ATP-Plan 2** und **Office 365 E5**sind die Funktionen für die automatische Vorfall Antwort verfügbar.
+> In **Office 365 ATP-Plan 2** und **Office 365 E5**stehen automatisierte Ermittlungs-und Antwortfunktionen zur Verfügung.
 
-(Neu!) Durch die [Automatische Vorfall Antwort](automated-investigation-response-office.md) können Sie Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim untersuchen und verringern von Cyberangriffe speichern. Zusätzlich zum Konfigurieren von Warnungen, die ein Sicherheits Textbuch auslösen können, können Sie einen automatisierten Ermittlungs-und Antwortprozess aus einer Ansicht im Explorer starten. 
+(Neu!) Durch [Automatische Untersuchung und Antwort](automated-investigation-response-office.md) können Sie Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim untersuchen und verringern von Cyberangriffe speichern. Zusätzlich zum Konfigurieren von Warnungen, die ein Sicherheits Textbuch auslösen können, können Sie einen automatisierten Ermittlungs-und Antwortprozess aus einer Ansicht im Explorer starten. 
 
 Ausführliche Informationen hierzu finden Sie unter [Beispiel: ein Sicherheitsadministrator löst eine Untersuchung im Explorer aus](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -171,7 +180,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen viele 
 Sie benötigen [Office 365 ATP](office-365-atp.md) , um den Explorer oder Echt Zeit Erkennungen zu erhalten.
 - Der Explorer ist in Office 365 ATP-Plan 2 enthalten. 
 - Der Bericht über Echt Zeit Erkennungen ist in Office 365 ATP-Plan 1 enthalten.
-- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die durch ATP geschützt werden sollen. (Bei Explorer-oder Echt Zeit Erkennungen werden Erkennungsdaten für lizenzierte Benutzer angezeigt.)
+- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die durch Office 365 ATP geschützt werden sollen. (Explorer-oder Echt Zeit Erkennungen zeigen Erkennungsdaten für lizenzierte Benutzer.)
 
 Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie über die entsprechenden Berechtigungen verfügen, beispielsweise solche, die einem Sicherheitsadministrator oder Sicherheits Leser erteilt werden. 
 

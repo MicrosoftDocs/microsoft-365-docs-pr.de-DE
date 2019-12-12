@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
-ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866437"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970931"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
 
-> [!NOTE] 
+> [!NOTE]
 > Diese Updates werden jetzt ausgerollt und sind möglicherweise noch nicht für alle Benutzer verfügbar. Dieses Feature wird für Benutzer von Enterprise-Outlook.com unterstützt. Es steht derzeit nicht für Consumer-Outlook.com zur Verfügung.
 
 Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
@@ -36,12 +36,11 @@ Outlook.com und Outlook im Internet zeigen Indikatoren an, wenn der Absender ein
 
 ## <a name="you-see-a--in-the-sender-image"></a>Im Absender Bild wird ein "?" angezeigt.
 
-Wenn Outlook.com und Outlook im Internet die Identität des Absenders nicht mithilfe von e-Mail-Authentifizierungstechniken überprüfen können, wird im Absender Foto ein "?" angezeigt. 
+Wenn Outlook.com und Outlook im Internet die Identität des Absenders nicht mithilfe von e-Mail-Authentifizierungstechniken überprüfen können, wird im Absender Foto ein "?" angezeigt.
 
 ![Nachricht hat die Überprüfung nicht übergeben](../media/message-did-not-pass-verification.jpg)
 
 Nicht jede Nachricht, die nicht authentifiziert werden kann, ist bösartig. Sie sollten jedoch mit der Interaktion mit Nachrichten vorsichtig sein, die nicht authentifiziert werden, wenn Sie den Absender nicht erkennen. Oder wenn Sie einen Absender erkennen, der normalerweise nicht über ein "?" im Absender Bild verfügt, aber Sie ihn plötzlich sehen, könnte dies ein Zeichen sein, bei dem der Absender gefälscht wird.
-
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Vorgehensweise Verwalten der Nachrichten, die nicht überprüfte Absender Behandlung erhalten 
 
@@ -52,10 +51,10 @@ Wenn Sie ein Office 365er Kunde sind, können Sie diese Funktion über das Secur
     ![Bearbeiten von nicht authentifizierten Absendern in der grafischen Benutzeroberfläche.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Wenn ein Administrator ein falsch positives Ergebnis erkannt hat und ein Absender nicht überprüfte Absender Behandlung erhalten soll, können Sie eine der folgenden Aktionen ausführen, um den Absender zur Spoof-Zulassungsliste "Spoof Intelligence" hinzuzufügen:
-        
-    - Fügen Sie das Domänenpaar über die Spoof Intelligence-Einblicke hinzu. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Spoof Intelligence Insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
-                
-    - Fügen Sie das Domänenpaar über das PhishFilterPolicy-Cmdlet hinzu. Weitere Informationen finden Sie unter [festlegen-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) und [Einrichten Office 365 ATP-Anti-Phishing-und Anti-Phishing-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+
+  - Fügen Sie das Domänenpaar über die Spoof Intelligence-Einblicke hinzu. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Spoof Intelligence Insight](walkthrough-spoof-intelligence-insight.md).
+
+  - Fügen Sie das Domänenpaar über das PhishFilterPolicy-Cmdlet hinzu. Weitere Informationen finden Sie unter [festlegen-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) und [Einrichten Office 365 ATP-Anti-Phishing-und Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md).
 
 Darüber hinaus wenden wir die nicht überprüfte Absender Behandlung nicht an, wenn Sie über eine Liste der zugelassenen Administratoren an den Posteingang übermittelt wurde, einschließlich e-Mail-Transport Regeln (ETRs), Liste sicherer Domänen (Anti-Spam-Richtlinie), Liste sicherer Absender oder ein Benutzer hat diesen Benutzer als "sicheren Absender" in ihrer festgelegt Inbox.
 
@@ -81,6 +80,6 @@ Nicht unbedingt. Outlook.com und Outlook im Internet haben möglicherweise ander
 
 [Schützen Ihres Outlook.com-e-Mail-Kontos](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-[Umgang mit Missbrauch, Phishing oder Spoofing in Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
+[Umgang mit Phishing oder Spoofing in Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
 [Filtern von Junk-e-Mails und Spam in Outlook im Internet](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)

@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Teilt Office 365-und EOP-Administratoren mit, wie Sicherheitstipps in e-Mail-Nachrichten aktiviert und deaktiviert werden.
-ms.openlocfilehash: f812ac1a81dfed6061fe404893e3be2e19a75212
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: da91ec595697c7cfb1fdd5150a4c04e05cd91b0a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871881"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970601"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
 
@@ -69,7 +69,7 @@ Inhalt dieses Themas:
 
 Administratoren können Exchange Online PowerShell verwenden, um Sicherheitstipps zu aktivieren oder zu deaktivieren. Verwenden Sie das Cmdlet "hostedcontentfilterpolicy dient zum", um Sicherheitstipps in einer Spamfilter Richtlinie zu aktivieren oder zu deaktivieren.
 
-1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Führen Sie das Cmdlet "hostedcontentfilterpolicy dient zum" aus, um Sicherheitstipps zu aktivieren oder zu deaktivieren:
 

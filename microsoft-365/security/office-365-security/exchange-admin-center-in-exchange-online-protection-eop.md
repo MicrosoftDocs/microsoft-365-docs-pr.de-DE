@@ -14,12 +14,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 6ef800b9f440f67d45f3eaa08b4731989fcf2652
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 58f339e2ebbb566b8656eed68453841ca011a72f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871861"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970551"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Admin Center in Exchange Online Protection
 
@@ -96,7 +96,7 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 
 ## <a name="supported-browsers"></a>Unterstützte Browser
 
-Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und zu den Systemanforderungen für den Dienst finden Sie unter [Office 365-Systemanforderungen](https://go.microsoft.com/fwlink/p/?LinkID=402699).
+Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und Systemanforderungen für den Dienst finden Sie unter [System Requirements for Office](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-languages-in-eop"></a>Unterstützte Sprachen in EOP
 

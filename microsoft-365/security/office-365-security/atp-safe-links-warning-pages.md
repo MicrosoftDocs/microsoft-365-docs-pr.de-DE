@@ -14,19 +14,19 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: 50f72c02596c317e3b5090b00382c6caef6ff746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2c14947f9d9b988eb4f5086500da0d4455f50a43
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081710"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970951"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 Warn Seiten für ATP-sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die [Office 365 Advanced Threat Protection](office-365-atp.md)haben. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und Informationen zu sicheren Links in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anhänge](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt. 
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt. 
   
 Lesen Sie diesen Artikel, um Beispiele für Warn Seiten anzuzeigen, die möglicherweise zusammen mit den neuesten Updates für Warn Seiten angezeigt werden.
   

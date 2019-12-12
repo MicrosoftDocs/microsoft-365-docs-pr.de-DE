@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Das Feature "sichere Links" bietet eine Zeit-für-Mausklick-Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing und anderen Angriffen zu schützen.
-ms.openlocfilehash: 2418704c7d3d1eced0194418e98f9833cf2f962b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865905"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970911"
 ---
 # <a name="office-365-atp-safe-links"></a>ATP-sichere Links in Office 365
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Übersicht über Office 365 sichere ATP-Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und Informationen zu sicheren Links in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und Informationen zu sicheren Links in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Office 365 ATP-sichere Links (Teil von [Advanced Threat Protection](office-365-atp.md)) können zum Schutz Ihrer Organisation beitragen, indem Sie die Zeit-für-Klick-Überprüfung von Webadressen (URLs) in [e-Mail-Nachrichten](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) und [Office-Dokumenten](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)ermöglichen. Der Schutz wird durch [Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md) definiert, die von Ihrem Office 365 Sicherheitsteam festgelegt werden.
   

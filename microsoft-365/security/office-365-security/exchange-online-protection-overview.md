@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, mit dem Sie Ihre Organisation vor Spam und Schadsoftware schützen können.
-ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 2083b71655b1d5bbf30adbb7bfff3229cfb07525
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772269"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970491"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -38,7 +38,7 @@ Die Funktionsweise von EOP lässt sich am besten an der Verarbeitung eingehender
 
 ![E-Mail-Prozessdiagramm.](../media/GitHubBugs/emailprocessingineop1.png)
 
-Eine eingehende Nachricht übergibt zunächst die Verbindungsfilterung, die die Reputation des Absenders überprüft und die Nachricht auf Schadsoftware überprüft. Die Mehrzahl der Spam-Mails wird an dieser Position angehalten und von EoP gelöscht. Nachrichten werden durch die Richtlinienfilterung fortgesetzt, wobei Nachrichten anhand von benutzerdefinierten Nachrichtenfluss Regeln (auch bekannt als Transportregeln) ausgewertet werden, die Sie aus einer Vorlage erstellen oder erzwingen. Beispielsweise können Sie eine Regel haben, die eine Benachrichtigung an einen Vorgesetzten sendet, wenn e-Mails von einem bestimmten Absender eintreffen. (Verhinderung von Datenverlust-Überprüfungen treten auch zu diesem Zeitpunkt auf, wenn Sie dieses Feature haben; Informationen zur Verfügbarkeit von Features finden Sie in der [Beschreibung des Exchange Online Protection-Diensts](https://go.microsoft.com/fwlink/p/?LinkId=320619)). Anschließend passieren Nachrichten die Inhaltsfilterung, wobei der Inhalt auf die Terminologie oder die Eigenschaften überprüft wird, die für Spam häufig verwendet werden. Eine Nachricht, die vom Inhaltsfilter als Spam eingestuft wurde, kann basierend auf Ihren Einstellungen an den Junk-e-Mail-Ordner eines Benutzers oder an die Quarantäne gesendet werden, neben anderen Optionen (einschließlich Posteingang oder benutzerdefinierter Ordner). Nachdem eine Nachricht alle diese Schutzschichten erfolgreich übergeben hat, wird Sie an den Empfänger übermittelt.
+Eine eingehende Nachricht übergibt zunächst die Verbindungsfilterung, die die Reputation des Absenders überprüft und die Nachricht auf Schadsoftware überprüft. Die Mehrzahl der Spam-Mails wird an dieser Position angehalten und von EoP gelöscht. Nachrichten werden durch die Richtlinienfilterung fortgesetzt, wobei Nachrichten anhand von benutzerdefinierten Nachrichtenfluss Regeln (auch bekannt als Transportregeln) ausgewertet werden, die Sie aus einer Vorlage erstellen oder erzwingen. Beispielsweise können Sie eine Regel haben, die eine Benachrichtigung an einen Vorgesetzten sendet, wenn e-Mails von einem bestimmten Absender eintreffen. (Verhinderung von Datenverlust-Überprüfungen treten auch zu diesem Zeitpunkt auf, wenn Sie dieses Feature haben; Informationen zur Verfügbarkeit von Features finden Sie in der [Beschreibung des Exchange Online Protection-Diensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)). Anschließend passieren Nachrichten die Inhaltsfilterung, wobei der Inhalt auf die Terminologie oder die Eigenschaften überprüft wird, die für Spam häufig verwendet werden. Eine Nachricht, die vom Inhaltsfilter als Spam eingestuft wurde, kann basierend auf Ihren Einstellungen an den Junk-e-Mail-Ordner eines Benutzers oder an die Quarantäne gesendet werden, neben anderen Optionen (einschließlich Posteingang oder benutzerdefinierter Ordner). Nachdem eine Nachricht alle diese Schutzschichten erfolgreich übergeben hat, wird Sie an den Empfänger übermittelt.
 
 ### <a name="eop-datacenters"></a>EOP-Datencenter
 
@@ -64,7 +64,7 @@ Die verfügbaren EoP-Abonnement Pläne lauten wie folgt:
 
 - **Exchange Enterprise CAL mit Diensten**: Wenn Sie über eine lokale Exchange-Organisation verfügen, in der Sie zusätzliche Lizenzen für Exchange Enterprise CAL mit Diensten erworben haben, ist EoP Teil der enthaltenen Dienste.
 
-Weitere Informationen zu Anforderungen, wichtigen Grenzwerten und Verfügbarkeit von Funktionen in allen EOP-Abonnementplänen finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?LinkId=320619).
+Informationen zu Anforderungen, wichtigen Grenzwerten und Verfügbarkeit von Funktionen in allen EoP-Abonnement Plänen finden Sie in der [Beschreibung des Exchange Online Protection-Diensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ## <a name="setting-up-eop"></a>Einrichten von EOP
 
