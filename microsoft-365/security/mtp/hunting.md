@@ -1,32 +1,39 @@
 ---
-title: Hunt for Malware and other Threats in Microsoft 365
-description: Beschreibt, wie Sie nach kompromittierten Konten, weniger Schadsoftware, verdächtigen e-Mails und vielem mehr suchen können.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Jagd, Jagd, Microsoft Defender ATP, Office 365 ATP, Azure ATP
-ms.prod: w10
+title: Hunt for other Threats in Microsoft 365
+description: Verwenden von Threat Hunting-Funktionen im Microsoft 365 Security Center zum proaktiven Auffinden von Verstößen und anderen Bedrohungen
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Jagd, Jagd, Microsoft Defender ATP, Office 365 ATP, Azure ATP, Advanced Hunting
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: lomayor
+author: lomayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 218c78cd8737c3a963386ae0a58a79824ef1615f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 795a7d88c2b6021a5bdd665b3787644b50fb346a
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034387"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909425"
 ---
-# <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a><span data-ttu-id="0c5b7-104">Hunt for Malware and other Threats in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0c5b7-104">Hunt for malware and other threats in Microsoft 365</span></span>
+# <a name="hunt-for-threats-in-microsoft-365"></a><span data-ttu-id="90d5b-104">Hunt for Threats in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="90d5b-104">Hunt for threats in Microsoft 365</span></span>
 
-<span data-ttu-id="0c5b7-105">Durch die Jagd erhalten Sicherheitsteams eine Übersicht über mögliche Bedrohungen in Ihrer Organisation über e-Mail und Daten, Geräte und Identitäten hinweg.</span><span class="sxs-lookup"><span data-stu-id="0c5b7-105">Hunting provides security teams a view into possible threats in your organization across email and data, devices, and identities.</span></span> <span data-ttu-id="0c5b7-106">In Microsoft Defender ATP, Office 365 ATP und Azure ATP Portals können Sie nach kompromittierten Konten, weniger Schadsoftware, verdächtigen e-Mails und vielem mehr suchen.</span><span class="sxs-lookup"><span data-stu-id="0c5b7-106">Within Microsoft Defender ATP, Office 365 ATP, and Azure ATP portals you can look for compromised accounts, file less malware, suspicious emails, and more.</span></span>
+<span data-ttu-id="90d5b-105">Mit Threat Hunting-Funktionen im Microsoft 365 Security Center können Sie proaktiv Bedrohungen in Ihrer Organisation finden, die sich auf e-Mails und Daten, Geräte und Identitäten auswirken.</span><span class="sxs-lookup"><span data-stu-id="90d5b-105">With threat hunting capabilities in the Microsoft 365 security center, you can proactively find threats in your organization affecting email and data, devices, and identities.</span></span> <span data-ttu-id="90d5b-106">Auf dem Bildschirm " **Jagd** " können Sie auf von verschiedenen Lösungen zur Verfügung gestellten Bedrohungen-Jagd Tools zugreifen:</span><span class="sxs-lookup"><span data-stu-id="90d5b-106">From the **Hunting** screen, you can access threat hunting tools made available by various solutions:</span></span>
+- <span data-ttu-id="90d5b-107">Office 365 ATP – [Hunt for Threats to e-Mail and Data](../office-365-security/office-365-atp.md)</span><span class="sxs-lookup"><span data-stu-id="90d5b-107">Office 365 ATP — [hunt for threats to email and data](../office-365-security/office-365-atp.md)</span></span>
+- <span data-ttu-id="90d5b-108">Microsoft Defender ATP – [Jagd auf Bedrohungen für Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span><span class="sxs-lookup"><span data-stu-id="90d5b-108">Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span></span>
+- <span data-ttu-id="90d5b-109">Azure ATP – [jagen nach Bedrohungen für Identitäten](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span><span class="sxs-lookup"><span data-stu-id="90d5b-109">Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span></span>
 
-![Jagd Seite](../media/security-docs/hunt.png)
+![Jagd Seite](../images/hunt.png)
 
-<span data-ttu-id="0c5b7-108">Weitere Informationen:</span><span class="sxs-lookup"><span data-stu-id="0c5b7-108">Learn more:</span></span>
 
-* <span data-ttu-id="0c5b7-109">[Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) in Microsoft Defender Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="0c5b7-109">[Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) in Microsoft Defender Advanced Threat Protection</span></span>
-* <span data-ttu-id="0c5b7-110">[E-Mail und Daten](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="0c5b7-110">[Email and data](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection</span></span>
-* <span data-ttu-id="0c5b7-111">[Identitäten](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="0c5b7-111">[Identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection</span></span>
+## <a name="hunt-with-microsoft-threat-protection"></a><span data-ttu-id="90d5b-111">Hunt mit Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="90d5b-111">Hunt with Microsoft Threat Protection</span></span>
+
+<span data-ttu-id="90d5b-112">[Aktivieren Sie Microsoft Threat Protection](mtp-enable.md) , um die erweiterte Hunting-Abfrageschnittstelle direkt im Microsoft 365 Security Center zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="90d5b-112">[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center.</span></span> <span data-ttu-id="90d5b-113">Mit [Advanced Hunting](advanced-hunting-overview.md)können Sie einzelne Abfragen erstellen, die Daten von Microsoft Defender ATP untersuchen, Daten von Onboarding-Geräten abdecken und Office 365 ATP Bereitstellen von Daten aus e-Mails.</span><span class="sxs-lookup"><span data-stu-id="90d5b-113">With [advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="90d5b-114">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="90d5b-114">Related topics</span></span>
+- [<span data-ttu-id="90d5b-115">Übersicht über die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="90d5b-115">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="90d5b-116">Microsoft Threat Protection (Übersicht)</span><span class="sxs-lookup"><span data-stu-id="90d5b-116">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
+- [<span data-ttu-id="90d5b-117">Aktivieren von Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="90d5b-117">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)

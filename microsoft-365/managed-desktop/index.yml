@@ -71,7 +71,14 @@ sections:
             title: '[E-Book] Begeistern Ihres Unternehmens mit einem modernen Arbeitsplatz'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
   - title: Videos
     items:
+      - type: paragraph
+        text: Erfahren Sie mehr über die Vorteile von Microsoft Managed Desktop aus dem VP of Technology der Indiana Pacers.
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: Der General Manager von Microsoft Managed Desktop teilt alle Highlights des Diensts auf der jährlichen Ignite-Konferenz.
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
