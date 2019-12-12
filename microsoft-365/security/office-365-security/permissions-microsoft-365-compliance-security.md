@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe des Microsoft 365 Security Centers oder des Microsoft 365 Compliance Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit und Compliance verwalten.
-ms.openlocfilehash: 2a5f5b13bcf00c8a8c17042efbf241028aac2263
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37343368"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971583"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Berechtigungen im neuen Microsoft 365 Compliance Center und Microsoft 365 Security Center
 
@@ -58,7 +58,7 @@ Benutzer mit dieser Rolle verfügen über Berechtigungen zum Verwalten von Compl
 |:-----|:-----|
 |[**Microsoft 365 Compliance Center**](https://compliance.microsoft.com/)|Schützen und Verwalten Ihrer Organisationsdaten für Microsoft 365-Dienste <br/><br/> Verwalten von Konformitätwarnungen|
 |[**Compliance-Manager**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Nachverfolgen, Zuweisen und Überprüfen der Einhaltung gesetzlicher Vorschriften durch Ihre Organisation|
-|[**Office 365 Security & Compliance Center**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Verwalten der Datengovernance <br/><br/> Durchführen von Untersuchungen zu rechtlichen Aspekten und Daten <br/><br/> Verwalten von DRS-Anforderungen.|
+|[**Office 365 Security & Compliance Center**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Verwalten der Datengovernance <br/><br/> Durchführen von Untersuchungen zu rechtlichen Aspekten und Daten <br/><br/> Verwalten von DRS-Anforderungen.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen aller Intune-Überwachungsdaten|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Verfügt über schreibgeschützten Zugriff und kann Warnungen verwalten <br/><br/> Kann Dateirichtlinien erstellen und ändern und Dateigovernanceaktionen zulassen <br/><br/> Kann alle unter „Datenverwaltung“ integrierten Berichte anzeigen|
 
@@ -70,7 +70,7 @@ Benutzer mit dieser Rolle verfügen über Berechtigungen zum Schützen und Nachv
 |:-----|:-----|
 |[**Microsoft 365 Compliance Center**](https://compliance.microsoft.com/)|Schützen und Verwalten Ihrer Organisationsdaten für Microsoft 365-Dienste <br/><br/> Verwalten von Konformitätwarnungen <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
 |[**Compliance-Manager**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Nachverfolgen, Zuweisen und Überprüfen der Einhaltung gesetzlicher Vorschriften durch Ihre Organisation|
-|[**Office 365 Security & Compliance Center**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Verwalten der Datengovernance <br/><br/> Durchführen von Untersuchungen zu rechtlichen Aspekten und Daten <br/><br/> Verwalten von DRS-Anforderungen. <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
+|[**Office 365 Security & Compliance Center**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Verwalten der Datengovernance <br/><br/> Durchführen von Untersuchungen zu rechtlichen Aspekten und Daten <br/><br/> Verwalten von DRS-Anforderungen. <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (in Kürze verfügbar)|Anzeigen aller Intune-Überwachungsdaten|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Verwenden von schreibgeschützten Berechtigungen zum Anzeigen von Informationen <br/>Verwalten von Benachrichtigungen <br/><br/> Erstellen und Ändern von Dateirichtlinien und Zulassen von Dateigovernanceaktionen <br/><br/> Anzeigen aller unter „Datenverwaltung“ integrierten Berichte|
 
@@ -83,7 +83,7 @@ Benutzer mit dieser Rolle haben Berechtigungen zur Verwaltung sicherheitsrelevan
 |[**Microsoft 365 Security Center**](https://security.microsoft.com/)|Überwachen von sicherheitsrelevanten Richtlinien in Microsoft 365-Diensten <br/><br/>  Verwalten von Sicherheitsbedrohungen und Warnungen <br/><br/> Anzeigen von Berichten <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
 |**Identity Protection Center**|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen plus Durchführung aller  Identity Protection Center-Vorgänge, mit Ausnahme des Zurücksetzens von Kennwörtern.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen <br/><br/> **Kann keine** Azure AD-Rollenzuweisungen oder -einstellungen verwalten.|
-|[**Office 365 Security & Compliance Center**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Verwalten von Sicherheitsrichtlinien <br/><br/> Anzeigen, Untersuchen und Reagieren auf Sicherheitsbedrohungen <br/><br/> Anzeigen von Berichten <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
+|[**Office 365 Security & Compliance Center**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Verwalten von Sicherheitsrichtlinien <br/><br/> Anzeigen, Untersuchen und Reagieren auf Sicherheitsbedrohungen <br/><br/> Anzeigen von Berichten <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
 |**Azure Advanced Threat Protection**|Überwachen und Reagieren auf verdächtige Sicherheitsaktivitäten|
 |**Windows Defender ATP und EDR**|Zuweisen von Rollen <br/><br/> Verwalten von Computergruppen <br/><br/> Konfigurieren der Endpunkt-Bedrohungserkennung und der automatisierten Korrektur <br/><br/> Anzeigen, Untersuchen und Reagieren auf Warnungen|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen von Benutzern, Geräten, Registrierung, Konfiguration und Anwendungsinformationen <br/><br/> Kann **keine** Änderungen an Intune vornehmen|
@@ -100,13 +100,13 @@ Benutzer mit dieser Rolle können Warnungen verwalten und besitzen globalen schr
 |[**Microsoft 365 Security Center**](https://security.microsoft.com/)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen <br/><br/> Anzeigen, Untersuchen und Reagieren auf Sicherheitswarnungen|
 |**Identity Protection Center** (in Kürze verfügbar)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen|
-|[**Office 365 Security & Compliance Center**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen <br/><br/> Anzeigen, Untersuchen und Reagieren auf Sicherheitsbedrohungen|
+|[**Office 365 Security & Compliance Center**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen <br/><br/> Anzeigen, Untersuchen und Reagieren auf Sicherheitsbedrohungen|
 |**Windows Defender ATP und EDR**|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen <br/><br/> Anzeigen, Untersuchen und Reagieren auf Warnungen|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen von Benutzern, Geräten, Registrierung, Konfiguration und Anwendungsinformationen <br/><br/> Kann **keine** Änderungen an Intune vornehmen|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen plus Anzeigen und Schließen von Warnungen|
 |[**Office 365-Dienstintegrität**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
 
-### <a name="security-reader"></a>Benutzer mit Leseberechtigung für Sicherheitsfunktionen
+### <a name="security-reader"></a>Sicherheitsleseberechtigter
 
 Benutzer mit dieser Rolle besitzen globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features, einschließlich alle Informationen in Microsoft 365 Security Center, Azure Active Directory, Identity Protection, und Privileged Identity Management, sowie die Möglichkeit zum Lesen von Azure Active Directory-Anmeldeberichten und Überwachungsprotokollen und für das Office 365 Security & Compliance Center.
 
@@ -115,7 +115,7 @@ Benutzer mit dieser Rolle besitzen globalen schreibgeschützten Zugriff auf sich
 |[**Microsoft 365 Security Center**](https://security.microsoft.com/)|Anzeigen von sicherheitsrelevanten Richtlinien in Microsoft 365-Diensten <br/><br/> Anzeigen von Sicherheitsbedrohungen und Warnungen <br/><br/> Anzeigen von Berichten|
 |**Identity Protection Center**|Lesen Sie alle Sicherheitsberichte und Einstellungsinformationen für Sicherheitsfeatures: Antispam, Verschlüsselung, Verhinderung von Datenverlust (DLP), Antimalware, Advanced Threat Protection (ATP), Anti-Phishing-und Nachrichtenflussregeln (auch als Transportregeln bezeichnet).|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Verwenden Sie schreibgeschützten Zugriff, um alle eingeblendeten Informationen in Azure AD PIM anzuzeigen: Richtlinien und Berichte für Azure AD-Rollenzuweisungen, Sicherheitsüberprüfungen und ( in Zukunft) Richtliniendaten und Berichte für andere Szenarien als die Azure AD-Rollenzuweisung. <br/><br/> **Kann sich nicht** für Azure AD PIM registrieren oder Änderungen durchführen. Im PIM-Portal oder über PowerShell können Personen mit dieser Rolle zusätzliche Rollen (z.B. globaler Administrator oder Administrator für privilegierte Rollen) aktivieren, wenn der Benutzer für sie geeignet ist.|
-|[**Office 365 Security & Compliance Center**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Anzeigen von Sicherheitsrichtlinien <br/><br/> Anzeigen und Untersuchen von Sicherheitsbedrohungen <br/><br/> Anzeigen von Berichten|
+|[**Office 365 Security & Compliance Center**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Anzeigen von Sicherheitsrichtlinien <br/><br/> Anzeigen und Untersuchen von Sicherheitsbedrohungen <br/><br/> Anzeigen von Berichten|
 |**Windows Defender ATP und EDR**|Anzeigen und Untersuchen von Warnungen|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen von Benutzern, Geräten, Registrierung, Konfiguration und Anwendungsinformationen <br/><br/> Kann **keine** Änderungen an Intune vornehmen|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Verwenden von schreibgeschützten Berechtigungen zum Anzeigen von Informationen <br/><br/> Verwalten von Benachrichtigungen|
