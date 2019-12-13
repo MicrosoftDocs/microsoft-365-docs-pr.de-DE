@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: 182b422f5ebfac440777eeb975732fe7cd48822b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871981"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971993"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -103,7 +103,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Grund**|**Beschreibung**|
-|0xx |Die zusammengesetzte Authentifizierung für die Nachricht ist fehlgeschlagen.<br/>**000** gibt an, dass DMARC für die Nachricht mit einer Aktion der Ablehnung oder Quarantäne fehlgeschlagen ist.  <br/>**001** gibt an, dass die implizite E-Mail-Authentifizierung für die Nachricht fehlgeschlagen ist. Das bedeutet, dass die sendende Domäne keinen E-Mail-Authentifizierungsdatensätze veröffentlicht hat, oder wenn sie sie veröffentlicht hat, sie eine schwächere Fehlerrichtlinie hatten (SPF Soft Fail oder neutral, DMARC-Richtlinie von p = none).  <br/>**002** gibt an, dass die Organisation über eine Richtlinie für das Absender/Domänepaar verfügt, für die das Senden von gefälschten E-Mails explizit untersagt ist. Diese Einstellung wird manuell vom Administrator festgelegt.  <br/>**010** gibt an, dass DMARC für die Nachricht mit einer Aktion der Ablehnung oder Quarantäne fehlgeschlagen ist und die sendende Domäne eine der in der Organisation zulässigen Domänen ist (Dies ist Teil von Self-to-Self Spoofing oder organisationsinternem Spoofing). <br/> |
+|0xx |Die zusammengesetzte Authentifizierung für die Nachricht ist fehlgeschlagen.<br/>**000** gibt an, dass DMARC für die Nachricht mit einer Aktion der Ablehnung oder Quarantäne fehlgeschlagen ist.  <br/>**001** gibt an, dass die implizite E-Mail-Authentifizierung für die Nachricht fehlgeschlagen ist. Das bedeutet, dass die sendende Domäne keinen E-Mail-Authentifizierungsdatensätze veröffentlicht hat, oder wenn sie sie veröffentlicht hat, sie eine schwächere Fehlerrichtlinie hatten (SPF Soft Fail oder neutral, DMARC-Richtlinie von p = none).  <br/>**002** gibt an, dass die Organisation über eine Richtlinie für das Absender/Domänepaar verfügt, für die das Senden von gefälschten E-Mails explizit untersagt ist. Diese Einstellung wird manuell vom Administrator festgelegt.  <br/>**010** gibt an, dass DMARC für die Nachricht mit einer Aktion der Ablehnung oder Quarantäne fehlgeschlagen ist und die sendende Domäne eine der in der Organisation zulässigen Domänen ist (Dies ist Teil von Self-to-Self Spoofing oder organisationsinternem Spoofing).|
 |1xx, 2xx, 3xx, 4xx und 5xx|Entspricht verschiedenen internen Codes, warum die implizite Authentifizierung für eine Nachricht erfolgreich war oder warum keine Authentifizierung stattgefunden hat, aber keine Aktion angewendet wurde.|
 |6xx|Gibt an, dass die implizite E-Mail-Authentifizierung für die Nachricht fehlgeschlagen ist und die sendende Domäne eine der in der Organisation zulässigen Domänen ist (Dies ist Teil von Self-to-Self Spoofing oder organisationsinternem Spoofing).|
 
@@ -257,9 +257,9 @@ Es gibt viele verschiedene Typen von Spoofing (siehe [Unterscheidung zwischen ve
 
 |**Spoofingtyp**|**Kategorie**|**Sicherheitstipp hinzugefügt?**|**Gilt für**|
 |:-----|:-----|:-----|:-----|
-|DMARC fehlgeschlagen (Quarantäne oder ablehnen)  <br/> |HSPM (Standard), kann auch SPM oder PHSH sein  <br/> |Nein (derzeit nicht)  <br/> |Alle Office 365-Kunden, Outlook.com  <br/> |
-|Self-to-Self  <br/> |SPM  <br/> |Ja  <br/> |Alle Office 365-Organisationen, Outlook.com  <br/> |
-|Domänenübergreifend  <br/> |SPOOF  <br/> |Ja  <br/> |Office 365 Advanced Threat Protection (ATP)- und E5-Kunden  <br/> |
+|DMARC fehlgeschlagen (Quarantäne oder ablehnen)|HSPM (Standard), kann auch SPM oder PHSH sein|Nein (derzeit nicht)|Alle Office 365-Kunden, Outlook.com|
+|Self-to-Self|SPM|Ja|Alle Office 365-Organisationen, Outlook.com|
+|Domänenübergreifend|SPOOF|Ja|Office 365 Advanced Threat Protection (ATP)- und E5-Kunden|
 
 ### <a name="changing-your-anti-spoofing-settings"></a>Ändern der Antispoofing-Einstellungen
 
@@ -319,8 +319,8 @@ Sie sollten den Antispoofingschutz nur deaktivieren, wenn Sie einen anderen E-Ma
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
 > Wenn der erste Hop des E-Mail-Pfads Office 365 ist und zu viele seriöse E-Mails als Spoof gekennzeichnet werden, sollten Sie zunächst Absender festlegen, die Spoofing-E-Mails an Ihre Domäne senden dürfen (siehe Abschnitt *„Verwalten seriöser Absender, die nicht authentifiziert E-Mails senden“*). Wenn Sie immer noch zu viele falsch positive Ergebnisse erhalten (d. h. wenn seriöse Nachrichten als Spoofingnachrichten gekennzeichnet werden), wird nicht empfohlen, den Antispoofingschutz vollständig zu deaktivieren. In diesem Fall wird empfohlen, grundlegenden Schutz anstelle von hohem Schutz auszuwählen. Es ist besser, sich durch falsch positive Ergebnisse durchzuarbeiten, als Ihre Organisation Spoofing-E-Mails auszusetzen, die langfristig deutlich höhere Kosten verursachen könnten.
 
@@ -330,15 +330,15 @@ Office 365 verfolgt, wer nicht authentifizierte E-Mails an Ihre Organisation sen
 
 Als Administrator können Sie jedoch angeben, welche Absender Spoofingnachrichten senden dürfen und die Einstufung von Office 365 außer Kraft setzen.
 
-**Methode 1: Einrichten der E-Mail-Authentifizierung, wenn Ihre Organisation die Domäne besitzt**
+#### <a name="method-1---if-your-organization-owns-the-domain-set-up-email-authentication"></a>Methode 1: Einrichten der E-Mail-Authentifizierung, wenn Ihre Organisation die Domäne besitzt
 
 Diese Methode kann verwendet werden, um Probleme mit organisationsinternem und domänenübergreifendem Spoofing zu beheben, wenn Sie mehrere Mandanten besitzen oder mit diesen interagieren. Sie kann auch zum Beheben von Problemen mit domänenübergreifenden Spoofing verwendet werden, wenn Sie Nachrichten an andere Kunden innerhalb von Office 365 und an Drittanbieter senden, die von anderen Anbietern gehostet werden.
 
 Weitere Informationen finden Sie unter [Office 365-Kunden](#customers-of-office-365).
 
-**Methode 2: Verwenden der Spoofingintelligenz zum Konfigurieren zulässiger Absender nicht authentifizierter E-Mails**
+#### <a name="method-2---use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Methode 2: Verwenden der Spoofingintelligenz zum Konfigurieren zulässiger Absender nicht authentifizierter E-Mails
 
-Sie können Sie auch [Spoofingintelligenz](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) verwenden, damit Absender nicht authentifizierte Nachrichten an Ihre Organisation senden können.
+Sie können Sie auch [Spoofingintelligenz](learn-about-spoof-intelligence.md) verwenden, damit Absender nicht authentifizierte Nachrichten an Ihre Organisation senden können.
 
 Für externe Domänen ist der gefälschte Benutzer die Domäne in der „Von“-Adresse. Die sendende Infrastruktur ist entweder die sendende IP-Adresse (aufgeteilt in CIDR-Bereiche von /24) oder die Organisationsdomäne des PTR-Eintrags (im folgenden Screenshot könnte die sendende IP 131.107.18.4 lauten, deren PTR-Eintrag outbound.mail.protection.outlook.com ist. Dies wird als outlook.com für die sendende Infrastruktur angezeigt).
 
@@ -373,13 +373,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 Auf diese Weise kann bing.com nun nicht authentifizierte E-Mails von \*. outlook.com senden.
 
-**Methode 3: Erstellen eines Zulassungseintrags für das Absender/Empfängerpaar**
+#### <a name="method-3---create-an-allow-entry-for-the-senderrecipient-pair"></a>Methode 3: Erstellen eines Zulassungseintrags für das Absender/Empfängerpaar
 
 Sie können auch festlegen, dass alle Spamfilterungen für einen bestimmten Absender umgangen werden. Weitere Informationen hierzu finden Sie unter [Sicheres Hinzufügen eines Absenders zur Liste zugelassener Kontakte in Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
 
 Wenn Sie diese Methode verwenden, werden Spam- und einige Phishingfilterungen übersprungen, jedoch nicht die Malwarefilterung.
 
-**Methode 4: Kontaktieren des Absenders und Bitten um Einrichtung einer E-Mail-Authentifizierung**
+#### <a name="method-4---contact-the-sender-and-ask-them-to-set-up-email-authentication"></a>Methode 4: Kontaktieren des Absenders und Bitten um Einrichtung einer E-Mail-Authentifizierung
 
 Aufgrund des Problems mit Spam und Phishing wird von Microsoft empfohlen, dass alle Absender eine E-Mail-Authentifizierung einrichten. Wenn Sie den Administrator der sendenden Domäne kennen, wenden Sie sich an ihn, und fordern Sie ihn an E-Mail-Authentifizierungsdatensätze einzurichten, damit Sie keine Überschreibungen hinzufügen müssen. Weitere Informationen finden Sie im weiteren Verlauf dieses Artikels unter [Administratoren von Domänen, die keine Office 365-Kunden sind](#administrators-of-domains-that-are-not-office-365-customers).
 
@@ -654,7 +654,7 @@ Die Antispoofingtechnologie von Microsoft wurde ursprünglich für die Organisat
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
 
-Sie können entweder das [Add-In „Nachricht melden“ für Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) verwenden oder, falls es nicht installiert ist, [Spamnachrichten, Nachrichten, die kein Spam sind, und Phishingnachrichten zur Analyse an Microsoft übermitteln](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Sie können entweder das [Add-In „Nachricht melden“ für Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) verwenden oder, falls es nicht installiert ist, [Spamnachrichten, Nachrichten, die kein Spam sind, und Phishingnachrichten zur Analyse an Microsoft übermitteln](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Ich bin ein Domänenadministrator, der nicht alle Absender kennt.
 
