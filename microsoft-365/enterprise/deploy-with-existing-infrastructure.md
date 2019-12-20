@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die Beendigungskriterien für die Bereitstellung von Microsoft 365 Enterprise, wenn Sie eine vorhandene Infrastruktur haben.
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148509"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801930"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>Bereitstellung von Microsoft 365 Enterprise mit vorhandener Infrastruktur
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>Bereitstellung von Microsoft 365 Enterprise mit vorhandener Infrastruktur
 
-Viele Organisationen verfügen über vorhandene Netzwerke, Identität und andere Komponenten oder lokale Microsoft-Produkte und cloudbasierte Dienste. In diesem Artikel werden Sie schrittweise durch die einzelnen Phasen der Bereitstellung von Microsoft 365 Enterprise geleitet, damit Sie schnell ermitteln können, wie Sie Ihre vorhandene Infrastruktur anpassen oder ändern.
+Viele Organisationen verfügen über vorhandene Netzwerke, Identität und andere Komponenten oder lokale Microsoft-Produkte und cloudbasierte Dienste. In diesem Artikel werden Sie schrittweise durch die einzelnen Phasen der Bereitstellung von Microsoft 365 Enterprise geleitet, damit Sie schnell ermitteln können, wie Sie Ihre vorhandene Infrastruktur anpassen oder ändern können.
 
-Bevor Sie die einzelnen Phasen beenden können, müssen Sie deren Beendigungskriterien untersuchen, bei denen es sich um eine Reihe von erforderlichen Bedingungen handelt, die Sie erfüllen müssen, und optionale zu berücksichtigende Kriterien. Beendigungskriterien für die einzelnen Phasen stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die resultierende End-to-End-Konfiguration die Anforderungen für eine Bereitstellung von Microsoft 365 Enterprise erfüllen.
+Bevor Sie die einzelnen Phasen beenden können, müssen Sie deren Beendigungskriterien prüfen, bei denen es sich um eine Reihe von erforderlichen Bedingungen handelt, die Sie erfüllen müssen, und um optionale zu berücksichtigende Kriterien. Beendigungskriterien für die einzelnen Phasen stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die resultierende End-to-End-Konfiguration die Anforderungen für eine Bereitstellung von Microsoft 365 Enterprise erfüllen.
 
 > [!Note] 
 > FastTrack (im Rahmen Ihres Abonnements kostenlos verfügbar) bietet einen fortlaufenden und wiederholbaren Vorteil: Microsoft Techniker unterstützen Sie beim Wechsel zur Cloud in Ihrem eigenen Tempo.FastTrack bietet bei Bedarf auch Zugang zu kompetenten Partnern für zusätzliche Dienste. Für mehr als 40.000 Kunden maximiert FastTrack aktuell den ROI, beschleunigt die Bereitstellung und steigert die Akzeptanz in der Organisation.Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).

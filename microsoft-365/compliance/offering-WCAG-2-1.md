@@ -1,6 +1,6 @@
 ---
-title: Richtlinien für barrierefreie Webinhalte 2.1
-description: Microsoft veröffentlicht WCAG 2.1 AA-Berichte, die das gesamte Produkt bzw. den gesamten Dienst oder Teile des Produkts wiedergeben, die separat installiert werden können.
+title: Richtlinien für barrierefreie Webinhalte
+description: Microsoft veröffentlicht WCAG-Berichte, die das gesamte Produkt bzw. den gesamten Dienst oder Teile des Produkts wiedergeben, die separat installiert werden können.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -11,30 +11,31 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a1887bd2b6c04836ebb11d224fcc59debcd88e55
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 316347bb212e415848586c88936bd345fd5d1a94
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859445"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804208"
 ---
-# <a name="web-content-accessibility-guidelines-21"></a>Richtlinien für barrierefreie Webinhalte 2.1
+# <a name="web-content-accessibility-guidelines"></a>Richtlinien für barrierefreie Webinhalte
 
-## <a name="about-wcag-21"></a>Informationen zu WCAG 2.1
+## <a name="about-wcag"></a>Informationen zu WCAG
 
-WCAG 2.1 stellen ein Framework für die Entwicklung von Webinhalten bereit, das die Barrierefreiheit für Menschen mit Behinderungen sowie für Benutzer von Geräten mit eingeschränkten grafischen Fähigkeiten verbessert. WCAG 2.0 wurde 2008 vom World Wide Web Consortium (W3C) veröffentlicht, einer internationalen Organisation, die sich dem Aufstellen von Webstandards verschrieben hat, und im Juni 2018 auf WCAG 2.1 aktualisiert. 2012 wurde WCAG 2.0 auch von der International Organization for Standardization (ISO) als ISO/IEC 40500:2012 veröffentlicht.  
-  
-Inhalte, die mit WCAG 2.1 konform sind, entsprechen auch WCAG 2.0. Bei Richtlinien, die Konformität mit WCAG 2.0 erfordern, kann WCAG 2.1 als alternative Konformitätsmethode betrachtet werden.  
-  
-Die Konformitätsanforderungen für die einzelnen Richtlinien werden auf drei Ebenen gemessen: A, AA und AAA. Da Microsoft ein bedeutender Software- und Cloud-Dienstanbieter für Staaten und Regierungen auf der ganzen Welt ist, verpflichtet sich das Unternehmen zur Einhaltung aller relevanten [staatlichen Standards und Compliance-Kontrollen](https://go.microsoft.com/fwlink/p/?linkid=2052226). Durch die Einhaltung dieser weitreichenden Barrierefreiheitsstandards stellt Microsoft sicher, dass alle Kunden – sowohl innerhalb als auch außerhalb der Regierung – die Microsoft-Dienste und -Produkte nutzen können.  
+Die Richtlinien für barrierefreie Webinhalte (WCAG) bieten ein Framework zur Barrierefreiheit von Webinhalten für Personen mit Behinderungen. WCAG Version 2.0 wurde 2008 vom World Wide Web Consortium (W3C) veröffentlicht, einer internationalen Organisation, die sich dem Aufstellen von Webstandards verschrieben hat, und im Juni 2018 auf WCAG 2.1 aktualisiert. 2012 wurde WCAG 2.0 auch von der International Organization for Standardization (ISO) als ISO/IEC 40500:2012 veröffentlicht.
 
-## <a name="microsoft-and-wcag-21"></a>Microsoft und WCAG 2.1
+Inhalte, die mit WCAG 2.1 konform sind, entsprechen auch WCAG 2.0. Bei Richtlinien, die Konformität mit WCAG 2.0 erfordern, kann WCAG 2.1 als alternative Konformitätsmethode betrachtet werden.
 
-Die Einhaltung von dem WCAG 2.1-Standard (ISO/IEC 40500) seitens Microsoft verweist auf seine Verpflichtung, Technologien und Daten für alle Kunden zugänglich zu machen. WCAG 2.1 (ISO/IEC 40500) ist das internationale Zugänglichkeitserfordernis, die die EN 301 549 (Europa) und Abschnitt 508 (USA) ergänzt.  
+Microsoft ist ein führender Anbieter von Software und Cloud-Services für Verbraucher, Unternehmen und Regierungen weltweit. Um Kunden bei der Kaufentscheidung zu unterstützen, veröffentlicht Microsoft Konformitätsberichte zur Barrierefreiheit, die beschreiben, inwieweit unsere Produkte und Dienste die WCAG-Kriterien unterstützen. Anhand dieser Informationen können Microsoft-Kunden ermitteln, ob ein bestimmtes Produkt oder eine bestimmte Dienstleistung den spezifischen Bedürfnissen gerecht wird.
   
-Microsoft veröffentlicht WCAG 2.1-Berichte, die das gesamte Produkt oder den gesamten Dienst beschreiben. Wir erstellen im Allgemeinen keinen Bericht für einzelne Funktionen oder Komponenten. In einigen Fällen veröffentlicht Microsoft möglicherweise eine neue Komponente für ein vorhandenes Produkt oder eine neue Version einer vorhandenen Komponente, die Benutzer getrennt installieren können. Für solche Komponenten oder Versionen veröffentlicht Microsoft möglicherweise auch einen WCAG 2.1 AA-Bericht.  
-  
-[Laden Sie die WCAG 2.1 (ISO/IEC 40500) Barrierefreiheitsstandards herunter](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+## <a name="microsoft-and-wcag"></a>Microsoft und WCAG
+
+Microsofts Berücksichtigung des WCAG-Standards in der Entwicklung von Produkten und Dienstleistungen verweist auf sein Engagement, Technologien und Daten allen Kunden zugänglich zu machen.
+
+Microsoft veröffentlicht WCAG-Berichte, die das gesamte Produkt oder die gesamte Dienstleistung beschreiben. Im Allgemeinen wird kein Bericht für einzelne Funktionen oder Komponenten erstellt. In einigen Fällen veröffentlicht Microsoft möglicherweise eine neue Komponente für ein vorhandenes Produkt oder eine neue Version einer vorhandenen Komponente, die Benutzer getrennt installieren können. Für solche Komponenten oder Versionen veröffentlicht Microsoft möglicherweise auch einen WCAG-Bericht.
+
+[Laden Sie die WCAG (ISO/IEC 40500)-Barrierefreiheitsstandards herunter](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
@@ -48,21 +49,14 @@ Microsoft veröffentlicht WCAG 2.1-Berichte, die das gesamte Produkt oder den g
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft Konformitätsberichte zur Barrierefreiheit
 
-WCAG-Berichte für alle unsere Produkte und Dienstleistungen suchen.
-
-[**Weitere Informationen**](https://go.microsoft.com/fwlink/p/?linkid=2050974)
+WCAG-Berichte für [alle unsere Produkte und Dienstleistungen](https://go.microsoft.com/fwlink/p/?linkid=205097) lesen.
 
 ## <a name="resources"></a>Ressourcen
 
-Microsoft-Website zur Barrierefreiheit — Informieren Sie sich über die Verwendung von Barrierefreiheitsfunktionen und erfahren Sie, wie Microsoft innovativ ist, um allen zu helfen, mehr zu erreichen.
-
-[Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-    - Office 365-Ressourcen für Personen mit Behinderungen.
-
-[Answer Desk für Benutzer mit Behinderungen in Unternehmen](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-    - Dedizierter Support für Unternehmenskunden mit Fragen zur Barrierefreiheit unserer Produkte und Dienstleistungen oder zur Compliance.
-
-[Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft-Website zur Barrierefreiheit](https://www.microsoft.com/accessibility) – Informieren Sie sich über die Verwendung von Barrierefreiheitsfunktionen und erfahren Sie, wie Microsoft innovativ ist, um allen zu helfen, mehr zu erreichen.
+- [Office 365-Barrierefreiheitscenter](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365-Ressourcen für Menschen mit Behinderungen.
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedizierter Support für Unternehmenskunden mit Fragen zur Barrierefreiheit unserer Produkte und Dienstleistungen oder zur Compliance.
+- [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
 

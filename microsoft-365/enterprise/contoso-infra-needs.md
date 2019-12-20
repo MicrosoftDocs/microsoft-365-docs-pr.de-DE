@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt wurden.
-ms.openlocfilehash: 157aa17e6ea5c345c1c1c5bdc9a2588f6384277d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673191"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802070"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>IT-Infrastruktur und geschäftliche Anforderungen von Contoso
 
@@ -112,7 +112,7 @@ Verwaltung:
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Zuordnen der Geschäftsanforderungen von Contoso zu Microsoft 365 Enterprise
 
-Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuordnung von Geschäftsanforderungen zu den Features von Microsoft 365 Enterprise E5 vorgenommen:
+Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuordnung von Geschäftsanforderungen zu den Features von Microsoft 365 E5 vorgenommen:
 
 ||||
 |:-------|:-----|:-----|

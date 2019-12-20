@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: Erstellen Sie ein simuliertes standortübergreifendes virtuelles Netzwerk in Microsoft Azure als Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 69e269de55aa7cd06dc5e26edbd29ae981fb9683
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 4293975fc6c2cd2583fe8e0dd7bbf54536f6c93c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694082"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801320"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Simuliertes standortübergreifendes virtuelles Netzwerk in einer Microsoft 365-Testumgebung
 
@@ -27,7 +27,7 @@ ms.locfileid: "38694082"
 
 Dieser Artikel führt Sie schrittweise durch das Erstellen einer simulierten Hybrid-Cloudumgebung mit Microsoft Azure unter Verwendung von zwei virtuellen Azure-Netzwerken. Nachfolgend sehen Sie die daraus resultierende Konfiguration. 
   
-![Phase 3 des simulierten standortübergreifenden virtuellen Netzwerks in der Entwicklungs-/Testumgebung mit dem virtuellen DC2-Computer im XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 des simulierten standortübergreifenden virtuellen Netzwerks in der Testumgebung mit dem virtuellen DC2-Computer im XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Dies simuliert eine Hybrid Cloud-Produktionsumgebung in Azure IaaS und besteht aus Folgendem:
   
@@ -45,7 +45,7 @@ Dies liefert eine Grundlage und einen Einstiegspunkt für Folgendes:
     
 - Erstellen von Testkonfigurationen von Computer, einige innerhalb des virtuellen TestLab-Netzwerks und einige innerhalb des virtuellen XPrem-Netzwerks, um Hybrid Cloud-basierte IT-Arbeitslasten zu simulieren.
     
-Es gibt drei Hauptphasen bei der Einrichtung dieser Entwicklungs-/Testumgebung:
+Es gibt drei Hauptphasen bei der Einrichtung dieser Testumgebung:
   
 1. Konfigurieren des virtuellen TestLab-Netzwerks
     
@@ -126,7 +126,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 Dies ist Ihre aktuelle Konfiguration. 
   
-![Phase 2 des simulierten standortübergreifenden virtuellen Netzwerks in der Entwicklungs-/Testumgebung mit der XPrem VNet- und der VNet-Peeringbeziehung.](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Phase 2 des simulierten standortübergreifenden virtuellen Netzwerks in der Testumgebung mit der XPrem VNet- und der VNet-Peeringbeziehung.](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>Phase 3: Konfigurieren von DC2
 
@@ -198,7 +198,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 Dies ist Ihre aktuelle Konfiguration. 
   
-![Phase 3 des simulierten standortübergreifenden virtuellen Netzwerks in der Entwicklungs-/Testumgebung mit dem virtuellen DC2-Computer im XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 des simulierten standortübergreifenden virtuellen Netzwerks in der Testumgebung mit dem virtuellen DC2-Computer im XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Ihre simulierte Hybrid Cloud-Umgebung für Azure kann nun getestet werden.
   

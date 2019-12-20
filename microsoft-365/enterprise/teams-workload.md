@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier finden Sie Informationen zu Microsoft Teams und dessen Einführung in Ihrem Unternehmen.
-ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033600"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801240"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Bereitstellen von Microsoft Teams für Microsoft 365 Enterprise
 
@@ -43,7 +43,7 @@ Informationen zu den ersten Teams-Funktionen finden Sie unter [Chat, Teams, Kan�
 Erweiterte Teams-Funktionen finden Sie unter:
 
 - [Besprechungen und Konferenzen](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [Cloud Voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (erfordert Microsoft 365 Enterprise E5)
+- [Cloud Voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (erfordert Microsoft 365 E5)
 
 Informationen zum Überwachen der Verwendung von Teams in Ihrer Organisation finden Sie unter:
 
