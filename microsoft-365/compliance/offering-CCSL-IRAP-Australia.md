@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0b4c31408f14bfca45358086678cb2d4e4f7eaae
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4be943b83d1b2286a01731de87dd2b0af34cb322
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860085"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805478"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Australian Government Information Security registered Auditor Program (IRAP)
 
@@ -60,7 +61,7 @@ Wie immer können zusätzliche Kompensations Kontrollen von einzelnen Agenturen 
 
 Die IRAP-Bewertung der Dienste von Microsoft trägt dazu bei, dass Kunden aus dem öffentlichen Sektor in der Regierung und ihren Partnern sicherstellen, dass Microsoft geeignete und effektive Sicherheitskontrollen für die Verarbeitung, Speicherung und Übertragung geschützter und unter Verschluss Informationen. Dies umfasst die Mehrzahl der staatlichen, Gesundheits-und Bildungsdaten in Australien.
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Dynamics](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

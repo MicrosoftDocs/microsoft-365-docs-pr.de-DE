@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866417"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962562"
 ---
 # <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
 
@@ -69,10 +69,10 @@ Die neuen Funktionen für Office 365 Nachrichtenverschlüsselung stellen eine We
 
 |**Funktion**|**Frühere Versionen von OM**|**IRM**|**Neue OM-Funktionen**|
 |:-----|:-----|:-----|:-----|
-|**Senden einer verschlüsselten e-Mail**|Nur über Exchange-Nachrichtenfluss Regeln|Von Outlook für PC, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Exchange-Nachrichtenfluss Regeln|Von Outlook für PC, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Nachrichtenfluss Regeln|
+|**Senden einer verschlüsselten e-Mail**|Nur über Exchange-Nachrichtenfluss Regeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Exchange-Nachrichtenfluss Regeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Nachrichtenfluss Regeln|
 |**Rechteverwaltung**|-|Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option "nicht weiterleiten", Option "nur verschlüsseln", Standard-und benutzerdefinierte Vorlagen|
 |**Unterstützte Empfängertypen**|Nur externe Empfänger|Nur interne Empfänger|Interne und externe Empfänger|
-|**Erfahrung für Empfänger**|Externe Empfänger haben eine HTML-Nachricht erhalten, die Sie heruntergeladen und in einem Browser geöffnet oder Mobile App heruntergeladen haben.|Interne Empfänger haben nur verschlüsselte e-Mails in Outlook für PC, Outlook für Mac und Outlook im Internet erhalten.|Interne und externe Empfänger empfangen e-Mails in Outlook für PC, Outlook für Mac, Outlook im Internet, Outlook für Android und Outlook für IOS oder über ein Webportal, unabhängig davon, ob Sie sich in derselben Office 365 Organisation oder in einer Office 365 Organisation. Das OM-Portal erfordert keinen separaten Download.|
+|**Erfahrung für Empfänger**|Externe Empfänger haben eine HTML-Nachricht erhalten, die Sie heruntergeladen und in einem Browser geöffnet oder Mobile App heruntergeladen haben.|Interne Empfänger haben nur verschlüsselte e-Mails in Outlook für Windows, Outlook für Mac und Outlook im Internet erhalten.|Interne und externe Empfänger empfangen e-Mails in Outlook für Windows, Outlook für Mac, Outlook im Internet, Outlook für Android und Outlook für IOS oder über ein Webportal, unabhängig davon, ob Sie sich in derselben Office 365 Organisation oder in einer Office 365 Organisation. Das OM-Portal erfordert keinen separaten Download.|
 |**Holen Sie sich Ihre eigene Schlüssel Unterstützung**|Nicht verfügbar|Nicht verfügbar| BYOK unterstützt|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>Wie aktiviere ich die neuen OM-Funktionen für meine Organisation?
@@ -93,11 +93,11 @@ Lokale Benutzer können verschlüsselte e-Mails mit Exchange Online Nachrichtenf
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Welchen e-Mail-Client muss ich verwenden, um eine OM-verschlüsselte Nachricht zu erstellen? Welche Anwendungen werden für das Senden geschützter Nachrichten unterstützt?
 
-Sie können geschützte Nachrichten aus Outlook 2016 und Outlook 2013 für PC und Mac und aus Outlook im Internet erstellen.
+Sie können geschützte Nachrichten aus Outlook 2016 und Outlook 2013 für Windows und Mac und aus Outlook im Internet erstellen.
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Welche e-Mail-Clients werden zum Lesen und beantworten geschützter e-Mails unterstützt?
 
-Sie können Outlook für PC und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und darauf antworten, wenn Sie ein Office 365er Benutzer sind. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie ein nicht Office 365er Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
+Sie können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und Antworten, wenn Sie ein Office 365er Benutzer sind. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie ein nicht Office 365er Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten e-Mail-Nachrichten unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten e-Mails zugeordnet sind?
 
@@ -135,18 +135,6 @@ Administratoren können eine e-Mail-Fluss Regel einrichten, um die Verschlüssel
 
 Ja! Sie können Nachrichtenfluss Regeln in Exchange Online oder mithilfe von DLP im Security &amp; Compliance Center einrichten.
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Kann ich an ein freigegebenes Postfach gesendete verschlüsselte Nachrichten öffnen?
-
-Ja! Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt.
-
-- Benutzer können geschützte e-Mail-Nachrichten in einem freigegebenen Postfach öffnen, in dem das freigegebene Postfach eine geschützte e-Mail als Teil einer Verteilergruppe erhalten hat.
-
-- Benutzer können Anlagen anzeigen, die den Schutz von e-Mails erben, wenn Sie Outlook für Windows, Outlook für Mac und Outlook im Internet verwenden.
-
-## <a name="is-delegated-access-supported"></a>Wird Delegierter Zugriff unterstützt?
-
-Diese Funktion kann gegenwärtig nicht verwendet werden.
-
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Kann ich verschlüsselte Nachrichten mit dem Branding meines Unternehmens anpassen?
 
 Ja! Informationen zum Anpassen von e-Mail-Nachrichten und zum OM-Portal finden Sie unter Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu verschlüsselten Nachrichten](add-your-organization-brand-to-encrypted-messages.md).
@@ -162,3 +150,32 @@ Ja. Alle verschlüsselten e-Mail-Nachrichten können durch Office 365 Compliance
 ## <a name="can-i-remove-encryption-from-email"></a>Kann ich die Verschlüsselung aus e-Mails entfernen?
 
 Administratoren können eine e-Mail-Fluss Regel einrichten, um die Verschlüsselung aus ausgehenden e-Mails zu entfernen. Sie können die Verschlüsselung nicht mithilfe einer e-Mail-Fluss Regel aus eingehenden Nachrichten entfernen.
+
+## <a name="is-delegated-access-supported"></a>Wird Delegierter Zugriff unterstützt?
+
+Diese Funktion kann gegenwärtig nicht verwendet werden.
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Kann ich an ein freigegebenes Postfach gesendete verschlüsselte Nachrichten öffnen?
+
+Ja! Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt.
+
+- Benutzer können geschützte e-Mail-Nachrichten in einem freigegebenen mMailbox öffnen, in dem das freigegebene Postfach eine geschützte e-Mail als Teil einer Verteilergruppe erhalten hat.
+
+- Benutzer können Anlagen anzeigen, die den Schutz von e-Mails erben, wenn Sie Outlook für Windows, Outlook für Mac und Outlook im Internet verwenden.
+
+In der folgenden Tabelle sind die unterstützten Clients für freigegebene Postfächer aufgeführt.
+
+| Plattform | E-Mail lesen | Anzeigen von e-Mail-Anlagen |
+|----------|-----------|------------------------|
+| Outlook im Web | Ja | Ja                |
+| Outlook für Windows| Ja | Ja                |
+| Outlook für Mac    | Ja | Ja                |
+| Outlook für Android| Ja | Nein                 |
+| Outlook für iOS    | Ja | Nein                 |
+|
+
+Derzeit gibt es zwei bekannte Einschränkungen:
+
+- Wir unterstützen nur den Zugriff, der durch direkte Benutzerzuweisung auf das freigegebene Postfach bereitgestellt wird. Die Zuweisung über eine e-Mail-aktivierte Sicherheitsgruppe wird nicht unterstützt.
+
+- Sie können keine Anlagen in e-Mails öffnen, die Sie auf mobilen Geräten mithilfe von Outlook Mobile empfangen.

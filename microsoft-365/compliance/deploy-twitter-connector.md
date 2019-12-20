@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen eines Connectors zum Archivieren von Twitter-Daten in Office 365
+title: Bereitstellen eines Connectors zum Archivieren von Twitter-Daten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Twitter-Daten in Office 365 einrichten. Nachdem diese Daten in Office 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Twitter-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686179"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806148"
 ---
-# <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Bereitstellen eines Connectors zum Archivieren von Twitter-Daten in Office 365
+# <a name="deploy-a-connector-to-archive-twitter-data"></a>Bereitstellen eines Connectors zum Archivieren von Twitter-Daten
 
 Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connectors, der den Office 365 Import Dienst verwendet, um Daten aus dem Twitter-Konto Ihrer Organisation in Office 365 zu importieren. Eine allgemeine Übersicht über diesen Prozess und eine Liste der erforderlichen Voraussetzungen für die Bereitstellungeines Twitter-Konnektors finden Sie unter [Verwenden eines Beispiel-Konnektors zum Archivieren von Twitter-Daten in Office 365 (Preview)](archive-twitter-data-with-sample-connector.md). 
 
@@ -206,7 +206,7 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security-and-compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security and Compliance Center
 
-1.  Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Data Governance \> Import \> Archivieren von drittanbieterdaten**.
+1.  Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Information Governance \> Import \> Archivieren von drittanbieterdaten**.
 
     ![Wechseln zur Seite "Archivieren von drittanbieterdaten" im Security and Compliance Center](media/TCimage36.png)
 

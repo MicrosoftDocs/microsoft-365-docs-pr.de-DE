@@ -1,5 +1,5 @@
 ---
-title: Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten in Office 365 (Vorschau)
+title: Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten (Vorschau)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 9479734fd1fcc65b4db7fd7e9a1ffc0f2c5fda59
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 83b85408afcb4613705691d5bd5a3b72365cb11a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615595"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808180"
 ---
-# <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten in Office 365 (Vorschau)
+# <a name="use-a-sample-connector-to-archive-facebook-data-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten (Vorschau)
 
 Das Sample Connector-Feature zum Archivieren von Facebook-Daten in Office 365 befindet sich in der Vorschau.
 

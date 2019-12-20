@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202356"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962252"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -78,7 +78,7 @@ Updates für sichere Bewertungen können für alle Aktionen automatisch aktivier
 
 2. Wählen Sie in der oberen Menüleiste des Dienst Vertrauensstellungs Portals die Option **Administrator** aus, und wählen Sie dann **Einstellungen**aus.
 
-4. Wählen Sie auf der Registerkarte **sichere Punktzahl** die entsprechende Schaltfläche für die gewählte Einstellung aus.
+4. Wählen Sie auf der Registerkarte **sichere Punktzahl** die entsprechende Schaltfläche für die gewünschte Einstellung aus.
 
 **Hinweis:** Nur der globale Administrator kann automatische Updates für alle Aktionen aktivieren oder deaktivieren. Der Compliance-Manager-Administrator kann automatische Updates für einzelne Aktionen aktivieren, jedoch nicht für alle Aktionen Global.
 
@@ -429,7 +429,7 @@ Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enth
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
-    Beispiel:
+    Zum Beispiel:
 
     ```Markdown
     Product::Office 365;;Certification::NIST CSF
@@ -463,7 +463,7 @@ Vorlagen und Bewertungen unterstützen die Verwendung von Abschriften Sprache f�
 - Hyperlinks
 - Fettdruck
 
-Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Beispiel:
+Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Zum Beispiel:
 
 ```Markdown
 * Item A
@@ -471,7 +471,7 @@ Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählun
 * Item C
 ```
 
-Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Beispiel:
+Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Zum Beispiel:
    1. Element A
    2. Element B
       1. Unterelement A
@@ -482,7 +482,7 @@ Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei L
       2. Unterelement B
    5. Element E
 
-Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Beispiel:
+Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Zum Beispiel:
 
 ```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
@@ -491,7 +491,7 @@ Dieser Text wird wie folgt gerendert: Klicken Sie [hier](https://www.microsoft.c
 
 Wie im obigen Beispiel dargestellt, rendert Compliance Manager keine URLs mit Unterstreichung.
 
-Fett formatierter Text ist zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Beispiel:
+Fett formatierter Text ist zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Zum Beispiel:
 
 ```Markdown
 **This text will render in bold**
@@ -553,7 +553,7 @@ Vorlagen können mithilfe der zusätzlichen benutzerdefinierten Steuerelemente a
 
 ### <a name="export-a-template-to-json"></a>Exportieren einer Vorlage in JSON
 
-Compliance-Manager (Preview) unterstützt auch das Exportieren von Vorlagen in JavaScript Object Notation (JSON) Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
+Compliance-Manager (Preview) unterstützt auch das Exportieren von Vorlagen in das JavaScript Object Notation (JSON)-Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
 
 ## <a name="reports"></a>Berichte
 

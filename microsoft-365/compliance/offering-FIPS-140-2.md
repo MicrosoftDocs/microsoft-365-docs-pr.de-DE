@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: c87618648c4b34553312a91d5633164fee316e52
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859825"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804998"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>FIPS-Publikation 140-2 (Federal Information Processing Standard)
 
@@ -32,7 +33,7 @@ Microsoft hält eine aktive Verpflichtung zur Erfüllung der 140-2-Anforderungen
 
 Technische Informationen zu Microsoft Windows Cryptographic Modules, die Sicherheitsrichtlinie für jedes Modul und den Katalog mit CMVP-Zertifikatdetails finden Sie unter [Windows und Windows Server FIPS 140-2-Inhalt](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 Während der aktuelle CMVP FIPS 140-2-Implementierungsleitfaden eine FIPS 140-2-Validierung für einen clouddienst selbst ausschließt; Cloud-Dienstanbieter können sich dafür entscheiden, FIPS 140 validierte kryptografische Module für die Datenverarbeitungs Elemente, die ihren clouddienst umfassen, zu erhalten und zu betreiben. Zu den Microsoft Online Services, die Komponenten enthalten, die FIPS 140-2 validiert wurden, gehören unter anderem:
 

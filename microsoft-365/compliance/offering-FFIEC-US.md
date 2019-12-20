@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6b1b852ee79b377b5d67ada8a5a4de602a74e466
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859855"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805033"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Federal Financial Institutions Examination Council (FFIEC)
 
@@ -39,12 +40,12 @@ Damit Kunden von Finanzinstituten ihre FFIEC-Compliance-Anforderungen mit Azure 
 
 Zur weiteren Unterstützung bei der Erfüllung der FFIEC-Anforderungen bieten Microsoft Cloud Services [SOC-Bestätigungs Berichte](offering-SOC.md) , die von einer unabhängigen CPA-Firma erstellt wurden. Die Zertifizierung für SOC 1 Typ 2 basiert beispielsweise auf dem AICPA SSAE 18-Standard (siehe Abschnitt "at-C" 105), der SAS 70 ersetzt hat und für die Berichterstellung über bestimmte Steuerelemente für die Finanzberichterstattung geeignet ist. Die SoC-Berichte enthalten die Stellungnahme des Auditors zur Effektivität von Microsoft-Steuerelementen bei der Erreichung der zugehörigen Kontrollziele während des angegebenen Überwachungszeitraums. Finanzinstitute können diese formelle Überwachung bei der Verfolgung von FFIEC-spezifischen Compliance-Verpflichtungen für in Azure, Power BI und Office 365 bereitgestellte Ressourcen verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 

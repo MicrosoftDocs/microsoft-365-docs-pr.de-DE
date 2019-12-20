@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
-ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 5c5aafebf0dabfd43487c0c410088fe2a50aef35
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699685"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808500"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|**Beispiele**|**Von den Beispielen zurückgegebene Suchergebnisse**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|Nachrichten, die in der Anlage eine Datei mit dem Namen „Jahresbericht.ppt“ haben. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort „Jahresbericht“ im Dateinamen einer Anlage zurückgegeben.|
+|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames: PPTX|Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort "Jahresbericht" im Dateinamen eines Anhangs zurückgegeben. Im dritten Beispiel werden alle Anlagen mit der PPTX-Dateierweiterung zurückgegeben.|
 |Bcc|Das Feld "Bcc" einer e-Mail-Nachricht. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|In allen Beispielen werden Nachrichten mit dem Namen "Pilar Pinilla" im Bcc-Feld zurückgegeben.|
 |Kategorie| Die Kategorien, nach denen gesucht wird. Kategorien können von Benutzern mithilfe von Outlook oder Outlook im Internet (früher bekannt als Outlook Web App) definiert werden. Die folgenden Werte sind möglich:  <br/><br/>  blau  <br/>  grün  <br/>  orange  <br/>  violett  <br/>  rot  <br/>  gelb|`category:"Red Category"`|Nachrichten, denen in den Quellpostfächern die rote Kategorie zugewiesen wurde.|
 |Cc|Das Feld "CC" einer e-Mail-Nachricht. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In beiden Beispielen werden Nachrichten mit Pilar Pinilla im Feld CC angegeben.|
@@ -192,7 +192,7 @@ Erstellen Sie eine Bedingung mithilfe allgemeiner Eigenschaften beim Durchsuchen
 |Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden.|
 |Größe (in Byte)|Für e-Mail und Dokumente die Größe des Elements (in Byte).|
 |Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden.|
-|Compliancetag|Für e-Mails und Dokumente werden Bezeichnungen, die Nachrichten und Dokumenten automatisch durch Bezeichnungsrichtlinien oder Bezeichnungen zugewiesen wurden, die manuell von Benutzern zugewiesen wurden. Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Datensteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf der Klassifizierung durchzusetzen, die von der Bezeichnung definiert wird. Sie können einen Teil des Bezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Beschriftungsnamen eingeben. Weitere Informationen finden Sie unter [Overview of Labels in Office 365](labels.md).|
+|Konformitäts Bezeichnung|Für e-Mails und Dokumente werden Aufbewahrungs Bezeichnungen, die Nachrichten und Dokumenten automatisch durch Bezeichnungsrichtlinien oder Aufbewahrungs Bezeichnungen zugewiesen wurden, die manuell von Benutzern zugewiesen wurden. Aufbewahrungs Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Informationssteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Namens der Aufbewahrungs Bezeichnung eingeben und einen Platzhalter verwenden oder den vollständigen Namen der Bezeichnung eingeben. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungs Bezeichnungen](labels.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Bedingungen für E-Mail-Eigenschaften
@@ -313,7 +313,6 @@ In diesem Beispiel werden e-Mail-Elemente oder Dokumente zurückgegeben, die das
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### <a name="example-3"></a>Beispiel 3
-<a name="conditionexamples"> </a>
 
 In diesem Beispiel werden e-Mail-Nachrichten oder Kalender Besprechungen zurückgegeben, die zwischen 12/1/2016 und 11/30/2016 gesendet wurden und die Wörter enthalten, die mit "Phone" oder "Smartphone" beginnen.
   

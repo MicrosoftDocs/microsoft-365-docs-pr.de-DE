@@ -3,6 +3,7 @@ title: Grundlegendes zur Ähnlichkeit von Dokumenten in Office 365 Advanced eDis
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Lesen Sie, wie der Ähnlichkeitswert von Dokumenten, die minimale Ähnlichkeit zweier Dateien, die als nahe Duplikate betrachtet werden müssen, in Office 365 Advanced eDiscovery funktioniert. '
-ms.openlocfilehash: 78e4ab7d39600522370cd91f3d6561ff2fbdcf60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 29a9eef44f8eb46f53099f457c8cc86afe64dea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081858"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802638"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Grundlegendes zur Ähnlichkeit von Dokumenten in Office 365 Advanced eDiscovery
 

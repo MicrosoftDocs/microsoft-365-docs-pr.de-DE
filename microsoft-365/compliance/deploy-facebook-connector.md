@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen eines Connectors zum Archivieren von Facebook-Daten in Office 365
+title: Bereitstellen eines Connectors zum Archivieren von Facebook-Daten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Facebook-Geschäfts Seiten in Office 365 einrichten. Nachdem diese Daten in Office 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Facebook-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 786ff97c558a5618643783de803c742c50185f00
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686177"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806258"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Bereitstellen eines Connectors zum Archivieren von Facebook-Daten in Office 365
+# <a name="deploy-a-connector-to-archive-facebook-data"></a>Bereitstellen eines Connectors zum Archivieren von Facebook-Daten
 
 Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connectors, der den Office 365 Import Dienst verwendet, um Daten von Facebook-Geschäfts Seiten in Office 365 zu importieren. Eine allgemeine Übersicht über diesen Prozess und eine Liste der erforderlichen Voraussetzungen für die Bereitstellungeines Facebook-Konnektors finden Sie unter [Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten in Office 365 (Preview)](archive-facebook-data-with-sample-connector.md). 
 
@@ -232,9 +232,9 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center
 
-1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Data Governance \> Import \> Archivieren von drittanbieterdaten**.
+1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Information Governance \> Import \> Archivieren von drittanbieterdaten**.
 
-   ![Wechseln Sie zum Security and Compliance Center, und klicken Sie auf Data Governance #a0 Import #a1 Archivieren von drittanbieterdaten](media/FBCimage44.png)
+   ![Wechseln Sie zum Security and Compliance Center, und klicken Sie auf Information Governance #a0 Import #a1 Archivieren von drittanbieterdaten](media/FBCimage44.png)
 
 2.  Klicken Sie auf **Connector hinzufügen** , und klicken Sie dann auf **Facebook-Seiten**.
 

@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Archivieren von LinkedIn Daten in Office 365 (Vorschau)
+title: Einrichten eines Connectors zum Archivieren von LinkedIn Daten (Vorschau)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn Unternehmensseite in Office 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Kompatibilität der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 6aff67ea9112b8215ba5b10dbdd6ce3a08876984
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615625"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807790"
 ---
-# <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Einrichten eines Connectors zum Archivieren von LinkedIn Daten in Office 365 (Vorschau)
+# <a name="set-up-a-connector-to-archive-linkedin-data-preview"></a>Einrichten eines Connectors zum Archivieren von LinkedIn Daten (Vorschau)
 
 Das Feature "Connector" zum Archivieren von Daten aus LinkedIn Unternehmensseiten in Office 365 befindet sich in der Vorschau.
 
@@ -35,7 +35,7 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
 
 ## <a name="create-a-linkedin-connector"></a>Erstellen eines LinkedIn Connectors
 
-1. Wechseln Sie <https://protection.office.com> zu und wählen Sie dann **Data Governance \> Import** aus, und wählen Sie dann **Archivieren von drittanbieterdaten**aus.
+1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Information Governance \> Import #a0 Archivieren von drittanbieterdaten**.
 
 2. Wählen Sie auf der Seite **drittanbieterdaten archivieren** die Option **Connector hinzufügen**aus, und wählen Sie dann **LinkedIn**aus.
 
@@ -73,7 +73,7 @@ Um weitere Details anzuzeigen, wählen Sie den Konnektor in der Liste auf der Da
    
    > von: "Contoso Company page"
 
-    Oder:
+    Oder
 
    > Betreff: "Contoso Company page"
 

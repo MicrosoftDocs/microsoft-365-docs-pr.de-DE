@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Dispositions Überprüfungen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: 22079fc92cabc902cd7afee7e187b7e186aa2328
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080730"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806068"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
 
@@ -116,7 +116,7 @@ Auf der Seite **ausstehende Disposition** können Sie ausstehende und abgeschlos
   
 - Die **ausstehende Disposition** zeigt Elemente an, die das Ende Ihres Aufbewahrungszeitraums erreicht haben und eine Dispositions Überprüfung erfordern. Nachdem Sie jedes Element überprüft haben, entscheiden Sie, ob Sie eine andere Aufbewahrungs Bezeichnung anwenden möchten, den Aufbewahrungszeitraum verlängern oder endgültig löschen möchten. Sie können mehrere Elemente auswählen.
     
-- Auf der Registerkarte " **verworfene Elemente** " werden Dispositionen angezeigt, die während einer Dispositions Überprüfung zum Löschen genehmigt wurden und jetzt endgültig gelöscht werden. Elemente, für die eine andere Aufbewahrungs Bezeichnung verwendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfung erweitert wurde, werden hier nicht angezeigt.
+- Auf der Registerkarte " **verworfene Elemente** " werden Dispositionen angezeigt, die während einer Dispositions Überprüfung zum Löschen genehmigt wurden und jetzt endgültig gelöscht werden oder Elemente als Datensätze markiert wurden, die nun gelöscht wurden. Elemente, für die eine andere Aufbewahrungs Bezeichnung verwendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfung erweitert wurde, werden hier nicht angezeigt.
 
 ![Dispositions Registerkarten](media/Retention-Disposition-tabs.png)
     

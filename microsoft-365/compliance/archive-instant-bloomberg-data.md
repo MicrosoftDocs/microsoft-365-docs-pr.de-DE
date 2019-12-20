@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten in Office 365
+title: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector einrichten, um Daten aus dem Chat-Tool von Instant Bloomberg in Office 365 zu importieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 55b0acf6a2643fed4a994604e92e4c0e218da5d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615605"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807750"
 ---
-# <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten in Office 365
+# <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
 
 Verwenden Sie einen nativen Connector im Security #a0 Compliance Center in Office 365 zum Importieren und Archivieren von Finanz Dienstleistungs-Chat Daten aus dem Tool " [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) Collaboration". Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit der Bloomberg Secure FTP Site (SFTP) Ihrer Organisation her, wandelt den Inhalt von Chatnachrichten in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Postfächer in Office 365.
 
@@ -73,7 +73,7 @@ Viele der erforderlichen Implementierungsschritte zum Archivieren von Instant Bl
 
 Der erste Schritt besteht darin, eine Kopie der öffentlichen Schlüssel für Secure Shell (SSH) und Pretty Good Privacy (PGP) zu erhalten. Sie verwenden diese Schlüssel in Schritt 2, um die Bloomberg-SFTP-Website so zu konfigurieren, dass der in Schritt 3 erstellte Connector eine Verbindung mit der SFTP-Website herstellen und die Instant Bloomberg-Chat Daten an Office 365 Postfächer übertragen kann. Außerdem erhalten Sie in diesem Schritt eine IP-Adresse, die Sie beim Konfigurieren der Bloomberg SFTP-Website verwenden.
 
-1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Data Governance \> Import** , und klicken Sie dann auf **Archivieren von drittanbieterdaten**.
+1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Information Governance \> Import** > **Archivieren von drittanbieterdaten**.
 
 2. Klicken Sie auf der Seite **drittanbieterdaten archivieren** auf **Connector hinzufügen**, und klicken Sie dann auf **Instant Bloomberg**.
 
@@ -100,7 +100,7 @@ Der nächste Schritt besteht darin, die öffentlichen SSH-und PGP-Schlüssel sow
 
 Der letzte Schritt besteht darin, einen Instant Bloomberg-Konnektor im Security #a0 Compliance Center zu erstellen. Der Connector verwendet die von Ihnen bereitgestellten Informationen, um eine Verbindung mit der Bloomberg SFTP-Website herzustellen und Chatnachrichten an die entsprechenden Benutzerpostfach-Postfächer in Office 365 zu übertragen. 
 
-1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Data Governance \> Import** , und klicken Sie dann auf **Archivieren von drittanbieterdaten**.
+1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Information Governance \> Import** > **Archivieren von drittanbieterdaten**.
 
 2. Klicken Sie auf der Seite **drittanbieterdaten archivieren** auf **Connector hinzufügen**, und klicken Sie dann auf **Instant Bloomberg**.
 

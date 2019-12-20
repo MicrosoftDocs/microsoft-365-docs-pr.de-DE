@@ -3,6 +3,7 @@ title: Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in 
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Hier erfahren Sie, wie Sie benutzerdefinierte Stichwörter zur Relevanz hinzufügen können, um relevante Dateien bei der Kennzeichnung in Office 365 Advanced eDiscovery zu identifizieren und Kosten Parameter anzugeben.  '
-ms.openlocfilehash: 4542e80e5324a35df2e7dc8e7e0cf09f37ae1ef4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 967258c152c12692cc5eb51f6553317161efa695
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071348"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806128"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Office 365 Advanced eDiscovery
 

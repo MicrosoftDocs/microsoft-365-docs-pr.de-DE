@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit der Verhinderung von Datenverlust (Data Loss Prevention, DLP) in SharePoint Online können Sie Dokumente ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten. Nach der Ermittlung der Dokumente können Sie mit deren Besitzern zusammenarbeiten, um die Daten zu schützen. In diesem Thema wird das Erstellen einer Abfrage zur Suche nach vertraulichen Daten behandelt.
-ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686194"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823647"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 
@@ -88,7 +88,7 @@ Nicht alle Abfragen sind gleich. In der folgenden Tabelle sind Beispiele für Ab
 
 [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
   
-[Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
+[Ausführen einer Inhaltssuche](content-search.md)
   
 [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
   
