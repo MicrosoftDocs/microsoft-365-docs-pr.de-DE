@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 26276567ec2a7f5bf7594ffdf91e7ead21135e17
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859495"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804318"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Reserve Bank of India (RBI) und Insurance Regulatory and Development Authority of India (irdai)
 
@@ -40,7 +41,7 @@ Wenn indische Finanzinstitute Geschäftsaktivitäten in die Cloud auslagern, mü
 
 Die Microsoft-Prüfliste hilft Finanzunternehmen in Indien, die Due-Diligence-Bewertungen von Microsoft Business Cloud Services durchführen, und umfasst Folgendes:
 
-- Eine Übersicht über die aufsichtsrechtliche Landschaft für den Kontext.
+- eine Übersicht über die aufsichtsrechtliche Landschaft für den Kontext.
 - Eine Checkliste, in der die zu behandel enden Probleme und Karten Microsoft Azure, Microsoft Dynamics 365 und Microsoft Office 365-Dienste gegen diese regulatorischen Verpflichtungen dargelegt werden. Die Checkliste dazu verwendet werden, die Compliance anhand eines regulatorischen Rahmens zu messen und eine interne Struktur für die Dokumentation der Compliance bereitzustellen; sie kann Kunden auch bei der Durchführung ihrer eigenen Risikobewertungen von Microsoft Business-Clouddiensten unterstützen.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
@@ -52,12 +53,12 @@ Die Microsoft-Prüfliste hilft Finanzunternehmen in Indien, die Due-Diligence-Be
 ## <a name="how-to-implement"></a>Implementierung
 
 - [Compliance-Checkliste für Indien](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Finanzunternehmen können Unterstützung bei der Durchführung von Risikobewertungen von Microsoft Business Cloud Services erhalten.
-- [Leitfaden für Risikobewertung und Compliance](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
+- [Leitfaden für Risikobewertung und Compliance](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Regulierungsbehörden.
 - [Finanzielle Anwendungsfälle für Azure](https://docs.microsoft.com/azure/industry/financial/): Verwenden von Fallübersichten, Lernprogrammen und anderen Ressourcen zum Erstellen von Azure-Lösungen für Finanzdienstleistungen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Clouddienstanbieter aufgenommen werden müssen?**
+**Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Cloud-Dienstanbieter aufgenommen werden müssen?**
 
 Ja. In den oben genannten Richtlinien sind einige spezifische Punkte aufgeführt, die Finanzinstitute in Ihre Cloud-Dienstleistungsverträge einbeziehen müssen. Teil 2 der [Prüfliste](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (Seite 70) ordnet diese gegen die Abschnitte in den Microsoft-Vertragsdokumenten an, in denen Sie behandelt werden.
 

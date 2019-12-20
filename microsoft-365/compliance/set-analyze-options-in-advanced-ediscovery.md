@@ -3,6 +3,7 @@ title: Festlegen von Analyseoptionen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Office 365 Advanced eDiscovery, einschließlich nahe Dubletten, e-Mail-Threads und Designs.  '
-ms.openlocfilehash: 6d853d701613fcbe61c6e98b3bf55ae99eefd901
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b6155814a4540f4cc619382d82cee34c471390d1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081806"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802738"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Festlegen von Analyseoptionen in Office 365 Advanced eDiscovery
 

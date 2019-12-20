@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Workflowtools in Microsoft Compliance Score die Compliance für Ihre Organisation verwalten können.
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686029"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802133"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Arbeiten mit Microsoft Compliance Score (Vorschau)
 
@@ -193,7 +193,7 @@ Auf dieser Seite können Sie schnell wichtige Informationen zu den einzelnen Bew
 
 ### <a name="default-assessments"></a>Standardbewertungen
 
-Standardmäßig wird die Microsoft 365-Datenschutz-Basisbewertung auf der Seite "Bewertungen" angezeigt. Wenn Sie weitere Bewertungen hinzufügen möchten, um andere Vorschriften und Standards abzudecken, können Sie Assessments im Compliance-Manager verwalten. Compliance Score bietet mehr als zehn out-of-Box-Bewertungen, einschließlich derer für dsgvo, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA ccm, FFIEC, HIPAA/HITECH und FedRAMP.
+Standardmäßig wird die Microsoft 365-Datenschutz-Basisbewertung auf der Seite "Bewertungen" angezeigt. Compliance Score bietet auch mehrere Out-of-Box-Bewertungen ([vollständige Liste anzeigen](compliance-score.md#templates)). Wenn Sie weitere Bewertungen hinzufügen möchten, um zusätzliche Vorschriften und Standards abzudecken, können Sie dies im Compliance-Manager tun.
 
 ### <a name="managing-assessments"></a>Verwalten von Bewertungen
 

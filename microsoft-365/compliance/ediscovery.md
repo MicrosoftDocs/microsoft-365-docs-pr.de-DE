@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 bietet eine Reihe von eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an verschiedenen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Office 365 Gruppen und Skype for Business-Unterhaltungen gefunden wurden.
-ms.openlocfilehash: b21ed978762819e73493d1ca409f922e695cf29d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33d3ca2e86a1ee4a2c191e72198d80c4c52c69e9
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081348"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823757"
 ---
 # <a name="ediscovery-in-office-365"></a>eDiscovery in Office 365
 
@@ -38,7 +38,7 @@ Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung des In
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ausführen einer Inhaltssuche im Security #a0 Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe des Inhalts Such Tools Postfächer, öffentliche Ordner, Office 365 Gruppen, Microsoft Teams, SharePoint Online Websites, ein Laufwerk für Geschäftsstandorte und Skype for Business Unterhaltungen in Ihrer Office 365 Organisation in einer einzigen Suche durchsuchen.  <br/> |
+|[Ausführen einer Inhaltssuche](content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe des Inhalts Such Tools Postfächer, öffentliche Ordner, Office 365 Gruppen, Microsoft Teams, SharePoint Online Websites, ein Laufwerk für Geschäftsstandorte und Skype for Business Unterhaltungen in Ihrer Office 365 Organisation in einer einzigen Suche durchsuchen.  <br/> |
 |[Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md) <br/> |Erfahren Sie mehr über die e-Mail-und Dateieigenschaften und Suchbedingungen, die Sie verwenden können, um nach Inhalten in Postfächern und Websites in Ihrer Office 365 Organisation zu suchen.  <br/> |
 |[Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe von Suchstatistiken die Statistiken für eine oder mehrere Inhalts suchen anzeigen und vergleichen sowie neue und vorhandene Suchvorgänge konfigurieren können, um Statistiken für jedes Keyword in der Suchabfrage zurückzugeben.  <br/> |
 |[Massenbearbeitung von Inhalts suchen im Security #a0 Compliance Center](bulk-edit-content-searches.md) <br/> |Hier erfahren Sie, wie Sie die Suchabfragen und inhaltsspeicherorte einer oder mehrerer Inhalts suchen Massen bearbeiten.  <br/> |
@@ -64,7 +64,7 @@ Die folgende Tabelle enthält Links zu Themen, in denen Sie eDiscovery-Fälle im
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Verwalten von eDiscovery-Fällen im Security #a0 Compliance Center](manage-ediscovery-cases.md) <br/> |Informationen zum Erstellen und Verwalten von eDiscovery-Fällen im Security #a0 Compliance Center.  <br/> |
+|[Verwalten von eDiscovery-Fällen im Security #a0 Compliance Center](ediscovery-cases.md) <br/> |Informationen zum Erstellen und Verwalten von eDiscovery-Fällen im Security #a0 Compliance Center.  <br/> |
 |[Zuweisen von eDiscovery-Berechtigungen im Office 365 Security #a0 Compliance Center](assign-ediscovery-permissions.md) <br/> |Erfahren Sie, wie Sie eDiscovery-Berechtigungen im Security #a0 Compliance Center zuweisen. Sie können Berechtigungen zuweisen, um Benutzern das Erstellen von eDiscovery-Fällen, das Erstellen von Haltebereichen, die einem eDiscovery-Fall zugeordnet sind, das Ausführen von Inhalts suchen, die Vorschau von Suchergebnissen und das Exportieren von Suchergebnissen.  <br/> |
 |[Erstellen eines Berichts über Aufbewahrungen in eDiscovery-Fällen in Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel einen Bericht generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Security #a0 Compliance Center zugeordnet sind.  <br/> |
 |[Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem eDiscovery-Fall im Security #a0 Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel schnell die Postfächer und OneDrive für Unternehmen Websites für eine Liste von Benutzern zu einem neuen Haltebereich hinzufügen, der einem eDiscovery-Fall im Security #a0 Compliance Center zugeordnet ist.  <br/> |
@@ -74,4 +74,4 @@ Die folgende Tabelle enthält Links zu Themen, in denen Sie eDiscovery-Fälle im
 
 Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365 auf. Diese neue Lösung, die als *Erweiterte eDiscovery*bezeichnet wird, bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können Legal Teams den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren. 
 
-Weitere Informationen finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
+Weitere Informationen finden Sie unter [Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).

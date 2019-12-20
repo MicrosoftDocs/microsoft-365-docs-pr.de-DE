@@ -3,6 +3,7 @@ title: Importieren nicht Office 365der Inhalte für die erweiterte eDiscovery-An
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Vorgehensweise zum Importieren von Inhalten, die nicht in O365 gespeichert sind, in ein Azure-BLOB, damit es mit AeD analysiert werden kann
-ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081381"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823787"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importieren nicht Office 365der Inhalte für die erweiterte eDiscovery-Analyse
 
@@ -39,7 +40,7 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
     
 - Ein vorhandener eDiscovery-Fall
     
-- Alle Dateien für das Hochladen wurden in Ordner gesammelt, in denen ein Ordner pro Depotbank vorhanden ist, und der Name des Ordners ist in diesem Format *Alias @ Domain* Name. *Bei dem Alias @ Domain Name* muss es sich um Benutzer Office 365 Alias und Domäne handeln. Sie können alle Alias- *@ Domain Name* -Ordner in einem Stammordner sammeln. Der Stammordner darf nur die Ordner *Alias @ Domain Name* enthalten, es dürfen keine losen Dateien im Stammordner vorhanden sein. 
+- Alle Dateien für das Hochladen wurden in Ordner gesammelt, in denen pro Depot ein Ordner vorhanden ist und der Name des Ordners in diesem Format *Alias@Domainname* . Die *Alias@Domainname* müssen Benutzer Office 365 Alias und Domäne sein. Sie können alle *Alias@Domainname* Ordner in einem Stammordner sammeln. Der Stammordner kann nur die *Alias@Domainname* Ordner enthalten, es dürfen keine losen Dateien im Stammordner vorhanden sein. 
     
 - Ein Konto, das entweder eDiscovery-Manager oder eDiscovery-Administrator ist
     
@@ -47,7 +48,8 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
     
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Hochladen nicht Office 365er Inhalte in die erweiterte eDiscovery
 
-1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator **eDiscovery**, und öffnen Sie den Fall, dass die nicht Office 365 Daten hochgeladen werden. Wenn Sie einen Fall erstellen müssen, finden Sie weitere Informationen unter [Verwalten von eDiscovery- &amp; Fällen im Office 365 Security Compliance Center](manage-ediscovery-cases.md)
+
+1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator **eDiscovery**, und öffnen Sie den Fall, dass die nicht Office 365 Daten hochgeladen werden. Wenn Sie einen Fall erstellen müssen, finden Sie weitere Informationen unter [Verwalten von eDiscovery- &amp; Fällen im Office 365 Security Compliance Center](ediscovery-cases.md)
     
 2. Klicken Sie auf **zu Advanced eDiscovery wechseln** .
     
@@ -76,7 +78,7 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
     Weitere Informationen zur Azcopy-Syntax finden Sie unter [übertragen von Daten mit dem Azcopy unter Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
     > [!IMPORTANT]
-    > Es muss einen Stammordner pro Benutzer geben, und der Ordnername muss im *Alias @ Domain* Name Format liegen. 
+    > Pro Benutzer muss ein Stammordner vorhanden sein, und der Ordnername muss das *Alias@Domainname* Format aufweisen. 
   
 8. Nachdem die Ordner fertig hochgeladen wurden, wechseln Sie zurück zu Advanced eDiscovery. Der Inhalt in den Ordnern, die Sie hochgeladen haben, ist nun für die Verarbeitung in Advanced eDiscovery verfügbar. Wählen Sie den Container aus, und klicken Sie auf die Schaltfläche Prozess. Weitere Informationen zur erweiterten eDiscovery-Verarbeitung finden Sie unter [Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md) .
     
@@ -84,6 +86,4 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
     > Nachdem der Container in Advanced eDiscovery erfolgreich verarbeitet wurde, können Sie dem SAS-Speicher in Azure keine neuen Inhalte mehr hinzufügen. Wenn Sie zusätzliche Inhalte erfassen und Sie dem Fall für die erweiterte eDiscovery-Analyse hinzufügen möchten, müssen Sie einen neuen **nicht-Office 365-Daten** Container erstellen und dieses Verfahren wiederholen. 
   
     > [!NOTE]
-    > Wenn der Container *aufgrund von Ordner Benennungs Problemen nicht erfolgreich verarbeitet* wird und Sie dann die Probleme beheben, müssen Sie weiterhin einen neuen Container erstellen und die wiederherstellen und erneut mit den Verfahren in diesem Artikel hochladen. 
-  
-
+    > Wenn der Container *aufgrund von Ordner Benennungs Problemen nicht erfolgreich verarbeitet* wird und Sie dann die Probleme beheben, müssen Sie weiterhin einen neuen Container erstellen und die wiederherstellen und erneut mit den Verfahren in diesem Artikel hochladen.

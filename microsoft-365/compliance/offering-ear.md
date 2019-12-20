@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: ae28d96416f46a45c0d271b9c291040c2e9d8b31
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859395"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804128"
 ---
 # <a name="us-export-administration-regulations-ear"></a>US-Export Verwaltungsvorschriften (EAR)
 
@@ -46,7 +47,7 @@ Die US-Commerce-Abteilung, die das Ohr erzwingt, hat die Position übernommen, d
 - **End-to-End-Verschlüsselung**. Durch die Nutzung der End-to-End-Verschlüsselung Safe Harbor für physikalische Speicherorte, die im Ohr angegeben sind, bieten Microsoft-bezogene Cloud-Dienste Verschlüsselungsfunktionen, die zum Schutz vor Export Steuerungs Risiken beitragen können. Sie bieten Kunden außerdem eine [Breite Palette von Optionen zum Verschlüsseln von Daten](https://aka.ms/Azure-Encryption-Overview) in der Übertragung und im Ruhezustand sowie die Flexibilität, zwischen Verschlüsselungsoptionen auszuwählen.
 - **Tools und Protokolle zur Verhinderung nicht autorisierter Exporte**. Die Verwendung von Verschlüsselung hilft auch vor potenziellen Exporten (oder als Wiederexport) unter dem Ohr zu schützen, da selbst wenn eine nicht-US-Person Zugriff auf verschlüsselte Daten hat, nichts offenbart wird, wenn Sie die Daten nicht lesen oder verstehen können, während Sie verschlüsselt werden; Daher gibt es keine "Freigabe" von kontrollierten Daten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 Government (gcc-High und DoD)](https://aka.ms/Office-365-Export-Controls)

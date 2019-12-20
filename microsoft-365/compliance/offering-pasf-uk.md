@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 476d1b63cfba4c3c9d31fd38c4ad526ca167f7d7
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859295"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803988"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Polizei gesicherte Anlagen (PASF) Vereinigtes Königreich
 
@@ -34,7 +35,7 @@ Microsoft verwendet einen ganzheitlichen verteidigungsbezogenen Ansatz für die 
 
 Diese Zertifizierungen werden durch die Maßnahmen unterstützt, die wir ergreifen, um die physische Sicherheit unserer Rechenzentren zu schützen. Wir nehmen einen mehrstufigen Ansatz an, der mit der Planung, Erstellung und dem Betrieb von Rechenzentren beginnt, um den physischen Zugriff auf die Bereiche, in denen Kundendaten gespeichert sind, streng zu kontrollieren. Rechenzentren, die von Microsoft verwaltet werden, verfügen über umfangreiche Schutzebenen mit Zugriffsgenehmigung, die für den Umkreis der Einrichtung, den Umkreis des Gebäudes, den Gebäudebereich und den Datencenter-Boden erforderlich sind. Dadurch wird das Risiko verringert, dass nicht autorisierte Benutzer physischen Zugriff auf Daten und Rechenzentrumsressourcen erhalten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)

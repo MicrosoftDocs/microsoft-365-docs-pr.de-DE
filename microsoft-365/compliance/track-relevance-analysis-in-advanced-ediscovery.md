@@ -3,6 +3,7 @@ title: Nachverfolgen der Relevanz-Analyse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'In diesem Artikel erfahren Sie, wie Sie den Status und die Ergebnisse von Relevanz-Schulungen für Fall Probleme in Office 365 Advanced eDiscovery anzeigen und interpretieren.  '
-ms.openlocfilehash: 1018b414d0192491feebfbec25d865d4463fa26a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b5d8777cdf54741f585fc6af587e9220a8daf0c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081877"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802648"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Nachverfolgen der Relevanz-Analyse in Office 365 Advanced eDiscovery
 

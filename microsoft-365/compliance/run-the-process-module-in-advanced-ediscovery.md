@@ -3,6 +3,7 @@ title: Ausführen des Prozess Moduls in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Erfahren Sie mehr über die Richtlinien für die Vorbereitung von Fall Dateien Office 365 Daten für die Analyse mit Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081975"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802908"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ausführen des Prozess Moduls in Office 365 Advanced eDiscovery
 
@@ -47,7 +48,7 @@ Fall Dateien werden während des **Vorbereitungs** \> **Prozesses**in die erweit
     
 - **Dateipfad**: Advanced eDiscovery kann Dateien mit Pfad Längen von bis zu 400 Zeichen laden.
     
-- **Textextraktion**: beim Extrahieren von Text aus systemeigenen Dateien, zusätzlich zum normalen Text, werden auch die folgenden extrahiert: verborgener Text (Excel und. doc), ausgeblendete Spalten (Excel), Nachverfolgen von Änderungen (doc), referentennotizen (PPT), eingebettete Objekte (beispielsweise Excel-Objekte in einer PPT). Diese können im Text-Editor angezeigt werden.
+- **Textextraktion**: beim Extrahieren von Text aus systemeigenen Dateien, zusätzlich zum normalen Text, werden auch die folgenden extrahiert: verborgener Text (Excel und. doc), ausgeblendete Spalten (Excel), Nachverfolgen von Änderungen (doc), referentennotizen (PPT), eingebettete Objekte (beispielsweise Excel-Objekte in a. ppt). Diese können im Text-Editor angezeigt werden.
     
 - **Text ignorieren**: dieses optionale Feature wird nach dem Ausführen des Prozesses und vor der Analyse definiert. Ignore Text sollte mit Vorsicht verwendet werden, da seine Verwendung die Leistung der Dateianalyse verringern kann.
     
