@@ -15,14 +15,14 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 5f2f6b9fb137cf9d1ea9dc21ca12a3792d79e249
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 42cc3b5572352a4bf83b50e964fd04dd527506cd
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757834"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801640"
 ---
-# <a name="microsoft-365-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
 *Dies gilt sowohl für Microsoft 365 Enterprise als auch Office 365 Enterprise.*
 
@@ -36,7 +36,7 @@ Testumgebungsanleitungen ermöglichen die Erstellung repräsentativer Umgebungen
 
 Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
 
-[![Der Stapel der Testumgebungsanleitungen für Microsoft 365 Enterprise](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![Testumgebungsanleitungen für Microsoft 365 Enterprise](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Standardkonfiguration
 

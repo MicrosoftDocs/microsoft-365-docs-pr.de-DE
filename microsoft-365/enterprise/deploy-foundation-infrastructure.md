@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise-Foundation-Infrastruktur
+title: Microsoft 365 Enterprise Foundation-Infrastruktur
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370352"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801960"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise Foundation-Infrastruktur
 
 Wenn Sie die End-to-End-Bereitstellung von Microsoft 365 Enterprise selbst durchführen, sollten Sie zunächst eine solide Grundlage schaffen, auf der Anwendungen und Dienste Kreativität und Teamarbeit in einer sicheren Umgebung freisetzen können. Diese Grundlage wird manchmal als die *zentrale Bereitstellung* bezeichnet.
 
-Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese Phasen verwenden, um die Basisinfrastruktur von Microsoft 365 Enterprise zu planen und bereitzustellen:
+Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese Phasen verwenden, um die Foundation-Infrastruktur von Microsoft 365 Enterprise zu planen und bereitzustellen:
 
 | | Phase | Ergebnisse |
 |:-------|:-----|:-----|
@@ -48,19 +48,19 @@ Sie haben jedoch die Flexibilität, die Phasen oder Schritte innerhalb der Phase
 
 -  **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
 
-Am Ende jeder Phase sollten Sie die *Beendigungskriterien* prüfen, einschließlich der erforderlichen Bedingungen, die Sie erfüllen müssen, und der optionalen Bedingungen, die Sie berücksichtigen müssen. Die Beendigungskriterien für jede Phase stellen sicher, dass Ihre lokale und Cloud-Infrastruktur und die daraus resultierende End-to-End-Konfiguration die Anforderungen für eine Microsoft 365 Enterprise Bereitstellung erfüllen.
+Am Ende jeder Phase sollten Sie die *Beendigungskriterien* prüfen, einschließlich der erforderlichen Bedingungen, die Sie erfüllen müssen, und der optionalen Bedingungen, die Sie berücksichtigen müssen. Die Beendigungskriterien für jede Phase stellen sicher, dass Ihre lokale und Cloudinfrastruktur und die daraus resultierende End-to-End-Konfiguration die Anforderungen für eine Microsoft 365 Enterprise-Bereitstellung erfüllen.
 
 Um zu erfahren, wie der Inhalt strukturiert ist, schauen Sie sich dieses kurze Video an.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-Hier ist die Foundation-Infrastruktur im gesamten Microsoft 365 Enterprise Bereitstellungshandbuch:
+Hier finden Sie die Foundation-Infrastruktur im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
 
-![Die Foundation-Infrastruktur im gesamten Microsoft 365 Enterprise Bereitstellungshandbuch](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Foundation-Infrastruktur im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>Auf einen Blick
 
-Das [Poster "Microsoft 365 Enterprise-Foundation-Infrastruktur"](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) bietet einen gute Übersicht über die einzelnen Phasen:
+Das [Poster "Microsoft 365 Enterprise Foundation-Infrastruktur"](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) bietet einen gute Übersicht über die einzelnen Phasen:
 
 - Allgemeinen Ziele der Phase für Administratoren und Benutzer
 - Dienste, Features und Tools
@@ -69,7 +69,7 @@ Das [Poster "Microsoft 365 Enterprise-Foundation-Infrastruktur"](media/deploy-fo
 - Vorgehensweise für das Onboarding eines neuen Benutzers
 - Überwachen und Aktualisieren
 
-[![Bild für das Microsoft 365 Enterprise-Foundation-Infrastruktur-Poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Abbildung des Posters zur Microsoft 365 Enterprise Foundation-Infrastruktur](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 

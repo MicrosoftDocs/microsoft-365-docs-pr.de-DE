@@ -1,5 +1,5 @@
 ---
-title: Bereitstellungsstrategien für die Foundation-Infrastruktur von Microsoft 365 Enterprise
+title: Strategien zur Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, wie Sie die Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise bereitstellen können.
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369436"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801890"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Bereitstellungsstrategien für die Foundation-Infrastruktur von Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategien zur Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise
 
 Es gibt viele Möglichkeiten, die Phasen der [Foundation-Infrastruktur](deploy-foundation-infrastructure.md) von Microsoft 365 Enterprise zu nutzen und ihre Funktionen, Software und Dienste für Ihre Benutzer bereitzustellen. Um mit dem Projektmanagement dieses Vorhabens zu beginnen, das je nach Größe Ihres Unternehmens und der vorhandenen Infrastruktur groß und komplex sein kann, sollten Sie die folgenden Bereitstellungsstrategien in Betracht ziehen:
 

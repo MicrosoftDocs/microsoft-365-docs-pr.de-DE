@@ -1,9 +1,9 @@
 ---
-title: Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
+title: Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: bf7cda762d2ac7a8fd57135b985d893ee03c0646
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831826"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801560"
 ---
-# <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
+# <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
 
 ## <a name="december-2019"></a>Dezember 2019
 
@@ -31,14 +31,13 @@ ms.locfileid: "39831826"
 ### <a name="updates-and-enhancements"></a>Updates und Verbesserungen
 
 - [Speichern von SharePoint-Online-Webseiten und -Dateien](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) für die Verwendung von Vertraulichkeitsbezeichnungen
--  [Die Lightweight-Basiskonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md) und [Die simulierte Unternehmensbasiskonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) für neue Testabonnement-Verfahren
-- 
+-  Aktualisierung der [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md) 
 
 ## <a name="november-2019"></a>November 2019
 
 ### <a name="new-content"></a>Neue Inhalte 
 
-- [Migrieren von Microsoft 365 Business zu Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Migrieren von Microsoft 365 Business zu Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Team für ein streng geheimes Projekt in der Contoso Corporation](contoso-team-for-top-secret-project.md)
 

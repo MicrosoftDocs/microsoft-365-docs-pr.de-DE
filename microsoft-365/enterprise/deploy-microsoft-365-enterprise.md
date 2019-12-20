@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 35f5c789d4e8db13cb46a568fc58f49bce4d3c96
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031960"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801920"
 ---
-# <a name="deploy-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
+# <a name="deploy-microsoft-365-for-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
 Microsoft 365 Enterprise ist eine Kombination aus lokalen und cloudbasierten Produktivitäts-Apps und -Diensten mit Windows 10 Enterprise, und bietet folgende Features:  
 
@@ -35,25 +35,25 @@ Es gibt drei Hauptmöglichkeiten zum Bereitstellen von Microsoft 365 Enterprise:
 
 - In Zusammenarbeit mit Microsoft-Technikern über [FastTrack für Microsoft 365](#fasttrack-for-microsoft-365).
 - Mit Hilfe der Microsoft Consulting Services oder eines [Microsoft-Partners](https://partner.microsoft.com/).
-- Alleine unter Verwendung des [Microsoft 365 Enterprise-Bereitstellungshandbuchs](#microsoft-365-enterprise-deployment-guide).
+- Alleine unter Verwendung des [Microsoft 365 Enterprise-Bereitstellungshandbuchs](#microsoft-365-for-enterprise-deployment-guide).
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack für Microsoft 365
 
 FastTrack bietet fortlaufend und wiederholt einen Vorteil und ist* im Rahmen Ihres Abonnements kostenlos verfügbar*. Microsoft-Techniker unterstützen Sie beim Wechsel in die Cloud in Ihrem eigenen Tempo. FastTrack bietet auch Zugang zu kompetenten Partnern für zusätzliche Dienste. Für mehr als 40.000 Kunden maximiert FastTrack aktuell den ROI, beschleunigt die Bereitstellung und steigert die Akzeptanz in der Organisation. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Wenn Sie von FastTrack für die Bereitstellung von Microsoft 365 Enterprise profitieren möchten, können Sie den FastTrack [Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) für Anleitung zum Bereitstellen und Einrichten Ihrer Foundation-Infrastruktur verwenden. Sie müssen als globaler Administrator in einem Office 365- oder Microsoft 365-Mandanten angemeldet sein, um auf diese Seite zugreifen zu können.
+Wenn Sie von FastTrack für die Bereitstellung von Microsoft 365 Enterprise profitieren möchten, können Sie den FastTrack [Microsoft 365-Bereitstellungsratgeber](https://aka.ms/microsoft365setupguide) für Anleitung zum Bereitstellen und Einrichten Ihrer Foundation-Infrastruktur verwenden. Sie müssen als globaler Administrator in einem Office 365- oder Microsoft 365-Mandanten angemeldet sein, um auf diese Seite zugreifen zu können.
 
 Beginnen Sie Ihre End-to-End-Bereitstellung mit FastTrack [hier](https://fasttrack.microsoft.com/microsoft365).
 
-## <a name="microsoft-365-enterprise-deployment-guide"></a>Microsoft 365 Enterprise-Bereitstellungshandbuch
+## <a name="microsoft-365-for-enterprise-deployment-guide"></a>Microsoft 365 Enterprise-Bereitstellungshandbuch
 
-Das Microsoft 365 Enterprise-Bereitstellungshandbuch leitet Sie durch die korrekte und erforderliche Konfiguration von Microsoft 365 Enterprise-Produkten und -Funktionen.
+Das Microsoft 365 Enterprise-Bereitstellungshandbuch leitet Sie durch die korrekte und erforderliche Konfiguration von Microsoft 365 Enterprise-Produkten und -Features.
 
 Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
 - die erforderliche [Foundation-Infrastruktur](deploy-foundation-infrastructure.md) für integrierte Sicherheit und Integration für eine vereinfachte Verwaltung bereitstellen. Dies vereinfacht die Aktualisierung Ihrer Client-Software mit den neuesten Produktivitäts- und Sicherheitsverbesserungen. 
  
-  Die Foundation-Infrastruktur ist als eine Reihe von nummerierten Phasen organisiert, die aufeinander aufbauen und eine Umgebung bilden, die Microsoft 365 Enterprise-Arbeitslasten und -Szenarien unterstützt. 
+  Die Foundation-Infrastruktur ist als eine Reihe von nummerierten Phasen organisiert, die aufeinander aufbauen und eine Umgebung schaffen, die Microsoft 365 Enterprise-Workloads und -Szenarien unterstützt. 
 
   **Wenn Sie eine kleinere oder neuere Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen.
 
@@ -75,7 +75,7 @@ Beginnen Sie Ihre End-to-End-Bereitstellung [hier](deploy-foundation-infrastruct
 
 „*Es gibt Dinge, die wir lernen müssen, bevor wir sie tun können. Und wir lernen sie, indem wir sie tun.*“ - Aristoteles
 
-Wenn Sie Microsoft 365 Enterprise oder ein bestimmtes Produkt oder Feature nicht kennen, ist eine der besten Methoden, es selbst zu konfigurieren und zu sehen, wie es funktioniert.
+Wenn Sie Microsoft 365 Enterprise oder einem bestimmten Produkt oder Feature noch nicht kennen, besteht eine der besten Möglichkeiten, sich damit vertraut zu machen, darin, eine Testumgebung zu erstellen und auszuprobieren.
 
 Wir haben dies mit Testumgebungsanleitungen einfacher gestaltet, die Sie durch die Konfiguration der Infrastruktur oder einer Funktion in einer vereinfachten, aber repräsentativen Testumgebung über Testversionen oder bezahlte Abonnements unterstützen.
 
@@ -91,7 +91,7 @@ Einen besseren Überblick darüber, wie Sie Ihre gesamte Organisation auf die Pr
 
 [![Poster zur Überführung Ihrer Organisation zu Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-Dieses zweiseitige Poster ist eine schnelle Methode, um eine Aufstellung Ihrer vorhandenen Infrastruktur zu erstellen und die Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise zu finden. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
+Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
 Sie können [das Poster zur Überführung auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
@@ -99,9 +99,9 @@ Sie können [das Poster zur Überführung auch herunterladen](https://github.com
 
 Verwenden Sie diese Ressourcen, um zu verstehen, wie andere Personen Microsoft 365 Enterprise bereitgestellt haben und verwenden.
 
-### <a name="how-customers-use-microsoft-365-enterprise"></a>Wie Kunden Microsoft 365 Enterprise verwenden
+### <a name="how-customers-use-microsoft-365-for-enterprise"></a>Verwendung von Microsoft 365 Enterprise bei Kunden
 
-Auf der Website „Erfahrungsberichte von Kunden“ erfahren Sie, wie Microsoft-Kunden Microsoft 365 Enterprise verwenden.
+Auf der Website "Erfahrungsberichte von Kunden" erfahren Sie, wie Microsoft-Kunden Microsoft 365 Enterprise verwenden.
 
 1. Wechseln Sie zu[https://customers.microsoft.com/](https://customers.microsoft.com/) und klicken Sie auf **Suchen**.
 2. Wählen Sie im linken Bereich unter **Sprache** Ihre Sprache aus.
@@ -109,7 +109,7 @@ Auf der Website „Erfahrungsberichte von Kunden“ erfahren Sie, wie Microsoft-
 4. Wählen Sie unter **Produkt** **Microsoft 365** aus.
 5. Klicken Sie auf eine Karte für die Fallstudie des Kunden.
 
-### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Funktionsweise von Microsoft 365 Enterprise bei Microsoft
+### <a name="how-microsoft-uses-microsoft-365-for-enterprise"></a>Verwendung von Microsoft 365 Enterprise bei Microsoft
 
 Die Definition einer digitalen Kultur hat für jede Führungskraft, die sich für einen modernen Arbeitsplatz einsetzt, höchste Priorität. Microsoft 365 wurde entwickelt, um diese Art von kulturellem Wandel zu unterstützen und Führungskräften dabei zu helfen, alle Mitarbeiter in ihren Unternehmen zu befähigen, Kreativität und Zusammenarbeit zu entfalten. Die Etablierung der Foundation-Infrastruktur von Microsoft hat genau diese Art von digitalem Kulturwandel ausgelöst. Die Implementierung von Microsoft 365 Enterprise hat es uns ermöglicht, Technologien für die Zusammenarbeit wie Microsoft Teams und Exchange Online einzusetzen und sensible Daten online über sichere SharePoint-Intranetseiten zu teilen.
 
@@ -120,9 +120,9 @@ Erfahren Sie, wie Core Services Engineering and Operations (ehemals Microsoft IT
 > [!Note]
 > Diese Webseite steht nur in Englisch zur Verfügung.
 
-### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise für die Contoso Corporation
+### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Bereitstellung von Microsoft 365 Enterprise für die Contoso Corporation
 
-Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie [Contoso Microsoft 365 Enterprise bereitgestellt](contoso-case-study.md) und dabei wichtige Designentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Office 365 ProPlus, Verwaltung mobiler Geräte, Datenschutz und Sicherheit berücksichtigt. 
+Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie [Contoso Microsoft 365 Enterprise bereitgestellt](contoso-case-study.md) und dabei wichtige Designentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Office 365 ProPlus, Verwaltung mobiler Geräte, Datenschutz und Sicherheit berücksichtigt hat. 
 
 ## <a name="stay-current-with-deployment-content"></a>Immer auf dem neuesten Stand mit Bereitstellungsinhalten
 

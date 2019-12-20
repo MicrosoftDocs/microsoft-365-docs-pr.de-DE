@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
+title: Microsoft 365 Enterprise-Workloads und -Szenarien
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/21/2019
@@ -11,17 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsarbeitslasten von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsworkloads von Microsoft 365 Enterprise ein.
+ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608596"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801900"
 ---
-# <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Arbeitslasten und -Szenarien
+# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Workloads und -Szenarien
 
-Um die Vorteile für Kreativität und Teamwork von Microsoft 365 Enterprise zu realisieren, stellen Sie die folgenden Arbeitslasten über Ihre Foundation-Infrastruktur bereit:
+Um die Vorteile für Kreativität und Teamwork von Microsoft 365 Enterprise zu realisieren, stellen Sie die folgenden Workloads über Ihre Foundation-Infrastruktur bereit:
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
@@ -45,9 +45,9 @@ Informationen zum Schutz dieser Daten vor internen und externen Bedrohungen, fin
 
 Diese Szenarien leiten Sie durch die Konfiguration eines Microsoft Teams-Teams oder einer SharePoint-Website, um Ihre wertvollsten Daten sicher zu speichern.
 
-Dies sind die Arbeitslasten und Szenarios im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
+Dies sind die Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
 
-![Arbeitslasten und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Weitere Szenarien finden Sie in der [Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)). 
 

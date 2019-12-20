@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Enterprise-Foundation-Infrastruktur für Nicht-Unternehmen
+title: Microsoft 365 Enterprise Foundation-Infrastruktur für Nicht-Unternehmen
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die vereinfachten Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise für Nicht-Unternehmen.
-ms.openlocfilehash: 4006980de5341c53d9c6a2d827613015c000fab0
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369576"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802030"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur für Nicht-Unternehmen
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise Foundation-Infrastruktur für Nicht-Unternehmen
 
-Nicht-Unternehmen können auch Microsoft 365 Enterprise einsetzen und den Geschäftswert einer integrierten und sicheren Infrastruktur erkennen, die Teamarbeit ermöglicht und Kreativität freisetzt. Ein Nicht-Unternehmen hat in der Regel:
+Auch Nicht-Unternehmen können Microsoft 365 Enterprise einsetzen und den Geschäftswert einer integrierten und sicheren Infrastruktur nutzen, die Teamarbeit ermöglicht und Kreativität freisetzt. Ein Nicht-Unternehmen hat in der Regel:
 
 - Eine kleine oder gar keine lokale IT-Infrastruktur, wie E-Mail- und Dateiserver und eine Active Directory Domain Services (AD DS)-Domäne.
 - Ein kleines IT-Team, von dem die meisten Informatiker sind, und nicht Spezialisten für eine bestimmte Technologie oder Arbeitsbelastung wie Vernetzung oder E-Mail senden.
@@ -65,11 +65,11 @@ Jeder Mitarbeiter Ihrer Organisation muss sich anmelden können, was ein Benutze
 
 Schützen Sie Ihre globalen Administrator-Benutzerkonten, indem Sie sichere Kennwörter und Multi-Faktor-Authentifizierung (MFA) erfordern. Weitere Informationen finden Sie unter [Schützen von globalen Administratorkonten](identity-create-protect-global-admins.md#protect-global-administrator-accounts).
 
-Wenn Ihre Organisation hohe Sicherheitsanforderungen hat und Sie über Microsoft 365 Enterprise E5 verfügen, verwenden Sie Azure AD Privileged Identity Management, um den Just-in-time-Administratorzugriff zu ermöglichen. Weitere Informationen finden Sie unter [Einrichten von globalen Administratoren bei Bedarf](identity-create-protect-global-admins.md#identity-pim).
+Wenn Ihre Organisation hohe Sicherheitsanforderungen hat und Sie über Microsoft 365 E5 verfügen, verwenden Sie Azure AD Privileged Identity Management, um den Just-in-Time-Administratorzugriff zu ermöglichen. Weitere Informationen finden Sie unter [Einrichten von globalen Administratoren bei Bedarf](identity-create-protect-global-admins.md#identity-pim).
 
 ### <a name="recommendations-for-groups"></a>Empfehlungen für Gruppen
 
-Wenn Sie eine lokale AD DS-Domäne haben, verwenden Sie diese Gruppen in Microsoft 365 Enterprise weiterhin als Gruppen in Azure AD.
+Wenn Sie über eine lokale AD DS-Domäne verfügen, verwenden Sie diese Gruppen in Microsoft 365 Enterprise weiterhin als Gruppen in Azure AD.
 
 Wenn Sie keine lokale AD DS-Domäne haben, erstellen Sie Sicherheitsgruppen in Azure AD mit diesen Sicherheitsebenen.
 
@@ -112,15 +112,15 @@ Hier ist die Liste der Richtlinien für den bedingten Zugriff von Azure AD, die 
 |:------|:-----|
 | Basisplan-Richtlinie: MFA für Administratoren erforderlich | Diese Richtlinie gilt für Administratorrollen, daher müssen keine Gruppen angegeben werden. Diese Richtlinie muss nur aktiviert werden. Alle nachfolgenden Richtlinien müssen erstellt und aktiviert werden. |
 | Sperrt Clients, die moderne Authentifizierung nicht unterstützen | Wählen Sie in den Richtlinieneinstellungen "alle Benutzer" aus. |
-| Eine MFA ist erforderlich, wenn das Anmelde-Risiko mittel oder hoch ist (erfordert Microsoft 365 Enterprise E5). | BASISPLAN |
-| Eine MFA ist erforderlich, wenn das Anmelde-Risiko niedrig, mittel oder hoch ist (erfordert Microsoft 365 Enterprise E5). | VERTRAULICH |
+| MFA anfordern, wenn das Anmelderisiko mittel oder hoch ist (erfordert Microsoft 365 E5). | BASISPLAN |
+| MFA anfordern, wenn das Anmelde-Risiko niedrig, mittel oder hoch ist (erfordert Microsoft 365 E5). | VERTRAULICH |
 | Eine MFA ist immer erforderlich | STRENG GEREGELT |
 | Genehmigte Apps auf iOS- und Android-Geräten erforderlich | BASISPLAN, VERTRAULICH, STRENG GEREGELT |
 | Kompatible PCs erforderlich | BASISPLAN |
 | Kompatible PCs und iOS- und Android-Geräte erforderlich | VERTRAULICH, STRENG GEREGELT |
 |||
 
-Hier ist die Azure AD Identity Protection-Richtlinie zum Benutzerrisiko (erfordert Microsoft 365 Enterprise E5), um dies zu erstellen und zu aktivieren.
+Hier ist die Azure AD Identity Protection-Richtlinie zum Benutzerrisiko (erfordert Microsoft 365 E5), um dies zu erstellen und zu aktivieren.
 
 | Azure AD Identity Protection-Richtlinie zum Benutzerrisiko | Gruppen, auf die Sie angewendet wird |
 |:------|:-----|
@@ -140,11 +140,11 @@ Hier sind einige Features, die Ihnen die Gruppen- und Lizenzverwaltung erleichte
 | Gruppenbasierte Lizenzierung | Verwenden Sie die Gruppenmitgliedschaft, um Lizenzen automatisch den Benutzerkonten zuzuordnen oder aufzuheben. Weitere Informationen finden Sie unter [Gruppenbasierte Lizenzierung](identity-use-group-management.md#set-up-automatic-licensing). |
 |  |  |
 
-Wenn Sie eine gruppenbasierte Lizenzierung verwenden, erstellen Sie eine Gruppe mit dem Namen LIZENZIERT, die Benutzerkontennamen enthält, denen eine Microsoft 365 Enterprise-Lizenz zugeordnet ist.
+Wenn Sie gruppenbasierte Lizenzierung verwenden, erstellen Sie eine Gruppe mit dem Namen LIZENZIERT, die Benutzerkontonamen enthält, denen eine Microsoft 365 Enterprise-Lizenz zugeordnet ist.
 
 ### <a name="monitor-user-access"></a>Überwachen des Benutzerzugriffs
 
-Wenn Sie über Microsoft 365 Enterprise E5 verfügen, können Sie Azure AD Identity Protection verwenden, um die Benutzeranmeldungen zu überwachen und zu analysieren. Weitere Informationen hierzu finden Sie unter [Schutz vor Kompromittierung von Anmeldeinformationen](identity-secure-user-sign-ins.md#protect-against-credential-compromise).
+Wenn Sie über Microsoft 365 E5 verfügen, können Sie Azure AD Identity Protection verwenden, um die Benutzeranmeldungen zu überwachen und zu analysieren. Weitere Informationen hierzu finden Sie unter [Schutz vor Kompromittierung von Anmeldeinformationen](identity-secure-user-sign-ins.md#protect-against-credential-compromise).
 
 ### <a name="your-configuration-so-far"></a>Ihre bisherige Konfiguration
 
@@ -276,7 +276,7 @@ Die neuen und hervorgehobenen Elemente für die Verwaltung mobiler Geräte umfas
 
 ## <a name="phase-6-information-protection"></a>Phase 6: Informationsschutz
 
-Microsoft 365 Enterprise verfügt über eine Vielzahl von Features zum Informationsschutz, mit denen Sie Klassifizierungen von Daten unterschiedlich behandeln können, indem Sie verschiedene Ebenen der Governance, Sicherheit und des Schutzes anwenden. 
+Microsoft 365 Enterprise verfügt über eine Vielzahl von Features zum Informationsschutz, mit denen Sie Klassifizierungen von Daten unterschiedlich behandeln können, indem Sie verschiedene Ebenen von Governance, Sicherheit und Schutz anwenden. 
 
 So benötigt beispielsweise die normale Korrespondenz zwischen den meisten Mitarbeitern und den Dokumenten, an denen sie arbeiten, eine gewisse Basis-Schutzebene. Finanzunterlagen, Kundendaten und Ihr geistiges Eigentum benötigen eine höhere Schutzebene.
 
@@ -310,14 +310,14 @@ Basierend auf diesen Ebenen der Datensicherheit ist der nächste Schritt die Ide
 
 Weitere Informationen hierzu finden Sie unter [Microsoft 365-Klassifizierungstypen](infoprotect-configure-classification.md#microsoft-365-classification-types).
 
-Wenn Sie Vertraulichkeitsbezeichnungen mit Berechtigungen verwenden, müssen Sie möglicherweise zusätzliche Azure AD-Sicherheitsgruppen erstellen, um zu definieren, wer was mit E-Mails und Dokumenten tun darf, auf die die Vertraulichkeitsbezeichnung angewendet wurde. 
+Wenn Sie Vertraulichkeitsbezeichnungen mit Berechtigungen verwenden, müssen Sie möglicherweise zusätzliche Office 365-Sicherheitsgruppen erstellen, um zu definieren, wer was mit E-Mails und Dokumenten tun darf, auf die die Vertraulichkeitsbezeichnung angewendet wurde. 
 
 Beispielsweise müssen Sie eine Vertraulichkeitsbezeichnung FORSCHUNG erstellen, um die E-Mails und Dokumente Ihres Forschungsteams zu schützen. Sie bestimmen Folgendes:
 
 - Forscher müssen die Möglichkeit haben, Dokumente zu ändern, die mit der Vertraulichkeitsbezeichnung "FORSCHUNG" gekennzeichnet sind.
 - Angestellte, die nicht der Forschungsabteilung angehören, müssen Dokumente, die mit der Vertraulichkeitsbezeichnung "FORSCHUNG" gekennzeichnet sind, anzeigen können. 
 
-Dies bedeutet, dass Sie zwei zusätzliche Gruppen erstellen und verwalten müssen:
+Dies bedeutet, dass Sie zwei zusätzliche Office 365-Gruppen erstellen und verwalten müssen:
 
 - FORSCHUNG – ALLE
 - FORSCHUNG – ANZEIGEN
@@ -369,7 +369,7 @@ Der bestehende Mitarbeiter sollte bereits zu den entsprechenden Arbeitsgruppen, 
 
 Sie können ein Benutzerkonto zu mehreren Azure Ad-Gruppen im Microsoft 365 Admin Center hinzufügen. Klicken Sie in den Eigenschaften des Benutzerkontos auf **Gruppen verwalten > Mitgliedschaften hinzufügen**.
 
-Wenn Sie PowerShell verwenden möchten, schauen Sie sich diese [herunterladbare Excel-Arbeitsmappe](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true) an, die die PowerShell-Befehle basierend auf einem angegebenen Benutzerkonto und ausgewählten Gruppennamen generiert.
+Wenn Sie PowerShell verwenden möchten, schauen Sie sich diese [herunterladbare Excel-Arbeitsmappe](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx) an, die die PowerShell-Befehle basierend auf einem angegebenen Benutzerkonto und ausgewählten Gruppennamen generiert.
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>Neuer Mitarbeiter mit einem reinen Cloudbenutzerkonto
 
@@ -403,7 +403,7 @@ Nach dem Aufbau und der Konfiguration Ihrer Microsoft 365 Enterprise-Infrastrukt
   - BEDINGTEN ZUGRIFF AUSSCHLIEßEN
   - Die entsprechenden AD DS- oder Azure AD-Sicherheitsgruppen, die auch Mitglieder der Azure AD-Gruppen BASISPLAN, VERTRAULICH und STRENG GEREGELT sind 
   - Arbeitsgruppen-, Abteilungs- und Regionalgruppen
-  - Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
+  - Office 365-Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
 - Azure AD-Richtlinien für den bedingten Zugriff melden sich an, der die Azure AD-Gruppen BASISPLAN, VERTRAULICH und STRENG GEREGELT sowie BEDINGTEN ZUGRIFF AUSSCHLIEßEN verwenden.
 - Intune-Richtlinien für Anwendungen und Gerätekompatibilität.
 - Benutzerdefinierte Typen vertraulicher Informationen (nach Bedarf).
@@ -427,7 +427,7 @@ Nach dem Onboarding sollte jeder Mitarbeiter Folgendes haben:
    - LIZENZIERT
    - Die entsprechenden AD DS- oder Azure AD-Sicherheitsgruppen, die auch Mitglieder der Azure AD-Gruppen BASISPLAN, VERTRAULICH und STRENG GEREGELT für Richtlinien für den bedingten Zugriff sind. 
    - Die entsprechenden Arbeitsgruppen-, Abteilungs- und Regionalgruppen
-   - Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
+   - Office 365-Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
 - Ein Windows 10 Enterprise-Gerät, das:
    - Mit dem Azure AD-Mandanten (nur Cloud) oder mit dem Azure AD-Mandanten und Ihrer AD DS-Domäne (Hybrid) verbunden ist.
    - Sich automatisch mit den neuesten Produktverbesserungen und Sicherheitserweiterungen von Windows 10 Enterprise aktualisiert.
@@ -436,4 +436,4 @@ Nach dem Onboarding sollte jeder Mitarbeiter Folgendes haben:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Bereitstellen Ihrer [Arbeitslasten und Szenarien](deploy-workloads.md), um von den Features und der Konfiguration Ihrer Microsoft 365 Enterprise Foundation-Infrastruktur zu profitieren.
+Bereitstellen Ihrer [Workloads und Szenarien](deploy-workloads.md), um von den Features und der Konfiguration Ihrer Microsoft 365 Enterprise Foundation-Infrastruktur zu profitieren.

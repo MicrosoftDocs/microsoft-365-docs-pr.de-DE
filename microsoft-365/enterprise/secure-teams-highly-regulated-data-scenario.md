@@ -3,7 +3,7 @@ title: Teams für streng regulierte Daten
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie ein sicheres Team zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: fe397dbd091415b15bbc48d54bfa59c432437788
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631265"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801420"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams für streng regulierte Daten
 
@@ -38,29 +38,21 @@ Die Elemente der Konfiguration für ein Team für streng regulierte Daten sind:
   - Dass Nicht-Mitglieder der Website Zugriff auf die Website anfordern.
 - Eine Office 365-Aufbewahrungsbezeichnung für die zugrunde liegende SharePoint-Website, die automatisch auf neue Dateien auf der Website angewendet wird, als Standardmethode zum Definieren von Aufbewahrungsrichtlinien.
 - Eine DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust), die anhand der Aufbewahrungsbezeichnung Benutzer daran hindert, Dateien für Empfänger außerhalb der Organisation freizugeben oder an diese zu senden.
-- Eine Office 365-Vertraulichkeitsbezeichnung oder eine Unterbezeichnung einer streng regulierten Bezeichnung, für die Verschlüsselung aktiviert ist und die über Co-Autor-Berechtigungen für die Office 365-Gruppe des Teams verfügt. Benutzer wenden die Bezeichnung oder Unterbezeichnung über die Menüleistenoption "Vertraulichkeit" in Word, Excel und PowerPoint auf Dateien an, die im Abschnitt **Dateien** des Teams gespeichert sind.
+- Eine Office 365-Vertraulichkeitsbezeichnung oder eine Unterbezeichnung einer streng regulierten Bezeichnung, für die Verschlüsselung aktiviert ist und die über Co-Autor-Berechtigungen für die Office 365-Gruppe des Teams verfügt. Benutzer wenden die Bezeichnung oder Unterbezeichnung über die Menüleistenoption **Vertraulichkeit** in Word, Excel und PowerPoint auf Dateien an, die im Abschnitt **Dateien** des Teams gespeichert sind.
 
 Hier sehen Sie die resultierende Konfiguration mit einer Vertraulichkeitsbezeichnung.
 
 ![Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+
+Sehen Sie sich dieses kurze Video an, um eine kurze Übersicht zu erhalten.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios finden Sie auf dem [Poster für Teams für streng regulierte Daten](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
 [![Poster für Teams für streng regulierte Daten](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
-
-
-<!--
-
-[Quick-Learn test (vertical): PDF](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pdf)
-
-[Quick-Learn test: PowerPoint](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pptx)
-
-[Horizontal PDF (Quick Start)](./media/secure-teams-highly-regulated-data-scenario/Sideways.pdf)
-
---> 
-
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Phase 1: Konfigurieren eines Teams für stark regulierte Daten
 
