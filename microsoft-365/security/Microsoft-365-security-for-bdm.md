@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: die häufigsten Bedrohungs-und Angriffsszenarien, mit denen Organisationen derzeit in Ihren Microsoft 365-Umgebungen konfrontiert sind, sowie Empfohlene Aktionen zur Minderung dieser Risiken.
-ms.openlocfilehash: 7a8e593a1e4280327b82802bb08a57370e4db652
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030519"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801250"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business-Entscheidungsträger (BDMs)
 
@@ -25,7 +25,7 @@ Dieser Artikel ist nach Priorität von Arbeit organisiert, beginnend mit dem Sch
 
 [![Thumb Image Microsoft 365 BDM Security Recommendations Spreadsheet](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft stellt Ihnen das sichere Bewertungstool in Ihrem Mandanten zur Verfügung, mit dem Sie Ihre Sicherheitsposition basierend auf Ihren regulären Aktivitäten automatisch analysieren, eine Bewertung zuweisen und Empfehlungen zur Sicherheitsverbesserung stellen können. Beachten Sie vor dem Ausführen der in diesem Artikel empfohlenen Aktionen die aktuellen Ergebnisse und Empfehlungen. Die in diesem Artikel empfohlenen Aktionen verbessern Ihre Punktzahl. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich nicht negativ auf die Produktivität Ihrer Benutzer auswirken. Siehe [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+Microsoft stellt Ihnen das sichere Bewertungstool in Ihrem Mandanten zur Verfügung, mit dem Sie Ihre Sicherheitsposition basierend auf Ihren regulären Aktivitäten automatisch analysieren, eine Bewertung zuweisen und Empfehlungen zur Sicherheitsverbesserung stellen können. Beachten Sie vor dem Ausführen der in diesem Artikel empfohlenen Aktionen die aktuellen Ergebnisse und Empfehlungen. Die in diesem Artikel empfohlenen Aktionen verbessern Ihre Punktzahl. Das Ziel besteht nicht darin, die maximale Punktzahl zu erreichen, sondern sich der Möglichkeiten bewusst zu sein, Ihre Umgebung so zu schützen, dass die Produktivität Ihrer Benutzer nicht beeinträchtigt wird. Siehe [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
 Noch eine Sache, bevor wir anfangen. . . Achten Sie darauf, [das Office 365 Überwachungsprotokoll einzuschalten](../compliance/search-the-audit-log-in-security-and-compliance.md). Sie benötigen diese Daten später, für den Fall, dass Sie einen Vorfall oder eine Verletzung untersuchen müssen. 
 
@@ -46,14 +46,14 @@ Das folgende Diagramm veranschaulicht diese Funktionen.
 Weitere Empfehlungen:
 - Stellen Sie sicher, dass Konten, die von lokal synchronisiert werden, nicht den Administratorrollen für Cloud-Dienste zugewiesen sind. Dadurch kann verhindert werden, dass ein Angreifer lokale Konten nutzt, um administrativen Zugriff auf Cloud-Dienste zu erhalten. 
 - Stellen Sie sicher, dass Dienstkonten keine Administratorrollen zugewiesen sind. Diese Konten werden häufig nicht überwacht und mit Kennwörtern festgelegt, die nicht ablaufen. Stellen Sie zunächst sicher, dass die AADConnect-und ADFS-Dienste-Konten standardmäßig keine globalen Administratoren sind.
-- Entfernen von Lizenzen von Administratorkonten. Wenn es keinen bestimmten Benutzer Fall gibt, um Lizenzen bestimmten Administratorkonten zuzuweisen, entfernen Sie Lizenzen von diesen Konten. 
+- Entfernen von Lizenzen von Administratorkonten. Wenn es keinen bestimmten Anwendungsfall gibt, um Lizenzen bestimmten Administratorkonten zuzuweisen, entfernen Sie Lizenzen von diesen Konten. 
 
 ## <a name="reduce-the-surface-of-attack"></a>Verringern der Angriffsfläche
 
 Im nächsten Fokusbereich wird die Angriffsfläche reduziert. Dies kann mit minimalem Aufwand und Auswirkungen auf Ihre Benutzer und Dienste erreicht werden. Durch die Verringerung der Angriffsfläche haben Angreifer weniger Möglichkeiten, einen Angriff auf Ihre Organisation zu starten.
 
 Im Folgenden finden Sie einige Beispiele:
-- Deaktivieren Sie POP3-, IMAP-und SMTP-Protokolle. Die meisten modernen Organisationen verwenden diese älteren Protokolle nicht mehr. Sie können diese sicher deaktivieren und bei Bedarf nur Ausnahmen zulassen. 
+- Deaktivieren Sie POP3-, IMAP-und SMTP-Protokolle. Die meisten modernen Organisationen verwenden diese älteren Protokolle nicht mehr. Sie können diese sicher deaktivieren und Ausnahmen nur bei Bedarf zulassen. 
 - Verringern Sie die Anzahl globaler Administratoren im Mandanten, und halten Sie Sie auf das absolut erforderliche Minimum. Dadurch wird die Angriffsfläche für alle Cloud-Anwendungen direkt reduziert. 
 - Zurückziehen von Servern und Anwendungen, die in Ihrer Umgebung nicht mehr verwendet werden. 
 - Implementieren Sie einen Prozess zum Deaktivieren und Löschen von Konten, die nicht mehr verwendet werden. 

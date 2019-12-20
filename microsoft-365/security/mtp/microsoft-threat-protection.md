@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 01a81d5f4ac68d72095f86de93b727c60d28393f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910221"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808580"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Microsoft Threat Protection ist eine einheitliche Prä-und Post-Sicherheitsverletzung der Enterprise Defense-Suite, die sich nativ in Endpunkt, Identität, e-Mail und Anwendungen integriert, um anspruchsvolle Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch zu reagieren.  
 
@@ -74,6 +74,6 @@ Zu den produktübergreifenden Microsoft Threat Protection-Features gehören:
 
 
 ## <a name="get-started"></a>Erste Schritte
-Kunden mit einer Microsoft 365 E5 oder einer gleichwertigen Lizenz können Microsoft Threat Protection verwenden. Aktivieren Sie zunächst den Dienst im Microsoft 365 Security Center unter [Security.Microsoft.com](https://security.microsoft.com). Weitere Informationen finden Sie unter:
+Kunden, die über eine Microsoft 365 E5- oder eine entsprechende Lizenz verfügen, können Microsoft Threat Protection verwenden. Aktivieren Sie zunächst den Dienst im Microsoft 365 Security Center unter [Security.Microsoft.com](https://security.microsoft.com). Weitere Informationen finden Sie unter:
 - [Lizenzanforderungen](prerequisites.md#licensing-requirements)
 - [Aktivieren von Microsoft Threat Protection](mtp-enable.md)

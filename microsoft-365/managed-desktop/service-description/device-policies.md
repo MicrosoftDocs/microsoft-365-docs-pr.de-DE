@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eb91a45d844863b27ee208bda2bee812789851e
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 479aa8888a3a8e67c51cb7edf14747c840295a4f
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813845"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823717"
 ---
 # <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -35,7 +35,7 @@ Richtlinie | Beschreibung
 --- | ---
 Sicherheitsbasislinie | [Microsoft-Sicherheitsbasis](https://docs.microsoft.com/windows/device-security/windows-security-baselines) für MDM ist für alle von Microsoft verwalteten Desktop Geräte konfiguriert. Dieser Basisplan ist die Industriestandard Konfiguration. Es wird öffentlich veröffentlicht, gut getestet und von Microsoft-Sicherheitsexperten überprüft, um die Sicherheit von Microsoft-Desktop Geräten und-apps am modernen Arbeitsplatz zu gewährleisten. <br><br>Um Bedrohungen in der ständig wachsenden Sicherheits Bedrohungslandschaft zu verringern, wird die Microsoft-Sicherheitsbasislinie mit jeder Windows 10-Feature-Aktualisierung auf Microsoft Managed Desktop-Geräten aktualisiert und bereitgestellt.<br><br>Weitere Informationen finden Sie unter [Security Baseline for Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
 Empfohlene Sicherheitsvorlage für Microsoft Managed Desktop | Eine Reihe empfohlener Änderungen an der Sicherheitsbasislinie, die die Benutzerfreundlichkeit optimieren.  Diese Änderungen sind im [Sicherheits Nachtrag](#security-addendum)dokumentiert. Updates für den Richtlinien Nachtrag werden auf der Grundlage der erforderlichen Anforderungen ausgeführt.  
-Update Bereitstellung | Verwenden Sie Windows Update für Unternehmen, um die schrittweise Bereitstellung von Softwareupdates durchzuführen. IT-Administratoren können Einstellungen für die Bereitstellungsgruppen Richtlinien nicht ändern. Weitere Informationen zur gruppenbasierten Bereitstellung finden Sie unter [How Updates are Handling](../working-with-managed-desktop/updates.md).
+Update Bereitstellung | Verwenden Sie Windows Update für Unternehmen, um die schrittweise Bereitstellung von Softwareupdates durchzuführen. IT-Administratoren können Einstellungen für die Bereitstellungsgruppen Richtlinien nicht ändern. Weitere Informationen zur gruppenbasierten Bereitstellung finden Sie unter [How Updates are handled in Microsoft Managed Desktop](updates.md).
 Diagnosedaten | Geräte werden so konfiguriert, dass Microsoft unter einer bekannten kommerziellen ID erweiterte Diagnosedaten bereitstellt. Als Teil von Microsoft Managed Desktop können IT-Administratoren diese Einstellungen nicht ändern. Für Kunden in dsgvo-Regionen (allgemeine Datenschutzverordnung) können Endbenutzer den Grad der bereitgestellten Diagnosedaten reduzieren, aber es wird eine Verringerung der Dienstleistung geben. Beispielsweise kann Microsoft Managed Desktop die erforderlichen Daten zum Durchlaufen von Einstellungen und Richtlinien nicht erfassen, um Leistungs-und Sicherheitsanforderungen optimal zu erfüllen. Weitere Informationen finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 Gemessene Verbindungen | Standardmäßig sind Aktualisierungen über gemessene Verbindungen (wie LTE-Netzwerke) deaktiviert, obwohl jeder Benutzer dieses Feature in **Einstellungen #a0 Updates #a1 Erweiterte Optionen**unabhängig voneinander aktivieren kann. Wenn Sie zulassen möchten, dass alle Benutzer Aktualisierungen über gemessene Verbindungen aktivieren, [Senden Sie eine Änderungsanforderung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support), die diese Einstellung für alle Geräte aktiviert.
 

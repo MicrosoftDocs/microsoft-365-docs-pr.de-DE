@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe für die durchgeführten Phishing-Nachrichten zu identifizieren und zu verhindern, dass mehr Phishing-Nachrichten in der Zukunft vermieden werden.
-ms.openlocfilehash: bbcd57f649485cb753e3917a073ffec2b94cba24
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082607"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823847"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Optimieren des Schutzes gegen Phishing in Office 365
 
@@ -23,7 +23,7 @@ Obwohl Office 365 eine Vielzahl von Antiphishingfunktionen enthält, die standar
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>First things first: befassen Sie sich mit kompromittierten Konten und stellen Sie sicher, dass Sie das durchlaufen weiterer Phishing-Nachrichten blockieren.
 
-Wenn ein Empfängerkonto aufgrund der Phishing-Nachricht kompromittiert wurde, führen Sie die Schritte unter [Antworten auf ein kompromittiertes e-Mail-Konto in Office 365](../../compliance/responding-to-a-compromised-email-account.md)aus.
+Wenn ein Empfängerkonto aufgrund der Phishing-Nachricht kompromittiert wurde, führen Sie die Schritte unter [Antworten auf ein kompromittiertes e-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)aus.
 
 Wenn Ihr Abonnement Advanced Threat Protection (ATP) enthält, können Sie [Office 365 Threat Intelligence](office-365-ti.md) verwenden, um andere Benutzer zu identifizieren, die auch die Phishing-Nachricht erhalten haben. Sie haben zusätzliche Optionen zum Blockieren von Phishing-Nachrichten:
 
@@ -71,7 +71,7 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
 
   - [Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden](use-dkim-to-validate-outbound-email.md)
 
-  - [Verwenden von DMARC zum Überprüfen von e-Mails in Office 365](use-dmarc-to-validate-email.md)
+  - [Verwenden von DMARC zum Validieren von E-Mails in Office 365](use-dmarc-to-validate-email.md)
 
 - Wann immer möglich, wird empfohlen, e-Mails für Ihre Domäne direkt an Office 365 zu übertragen. Mit anderen Worten, richten Sie den MX-Eintrag Ihrer Office 365 Domäne auf Office 365. Exchange Online Protection (EoP) ist in der Lage, den besten Schutz für Ihre Cloud-Benutzer bereitzustellen, wenn Ihre e-Mails direkt an Office 365 übermittelt werden. Wenn Sie vor EoP ein e-Mail-Hygienesystem eines Drittanbieters verwenden müssen, stellen Sie sicher, dass Sie die Anleitung [hier](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)befolgt haben.
 

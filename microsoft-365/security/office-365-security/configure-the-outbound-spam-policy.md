@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Die Filterung ausgehender Spamnachrichten ist immer aktiviert, wenn Sie den Dienst für das Senden ausgehender E-Mails verwenden und dadurch Organisationen, die den Dienst nutzen, und ihre jeweiligen Empfänger schützen.
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970871"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808440"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Konfigurieren der Richtlinie für ausgehende Spamnachrichten
 
@@ -61,11 +61,11 @@ Verwenden Sie das folgende Verfahren, um die Standardrichtlinie für ausgehende 
 
    Der Administrator der Domäne, der in dieser Einstellung angegeben ist, wird darüber informiert, dass ausgehende Nachrichten für diesen Benutzer blockiert werden.  Ein Beispiel für diese Benachrichtigung finden Sie unter [Beispielbenachrichtigung, wenn ein Absender aufgrund des Versendens von ausgehendem Spam blockiert wird](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
 
-   [Hinweis!] Außerdem wird eine Systemwarnung generiert, die angibt, dass der Benutzer eingeschränkt wurde.  Weitere Informationen zur Warnung und zum Wiederherstellen des Benutzers finden Sie unter [Entfernen eines Benutzers aus dem Portal für eingeschränkte Benutzer nach dem Senden von Spam-e-Mails](removing-user-from-restricted-users-portal-after-spam.md).
+   > [Hinweis!] Außerdem wird eine Systemwarnung generiert, die angibt, dass der Benutzer eingeschränkt wurde.  Weitere Informationen zur Warnung und zum Wiederherstellen des Benutzers finden Sie unter [Entfernen eines Benutzers aus dem Portal für eingeschränkte Benutzer nach dem Senden von Spam-e-Mails](removing-user-from-restricted-users-portal-after-spam.md).
 
 4. Erweitern Sie den Abschnitt **Empfänger Grenzwerte** , um die maximale Anzahl von Empfängern anzugeben, die ein Benutzer pro Stunde für interne und externe Empfänger zusammen mit der maximalen Anzahl pro Tag senden kann.
 
-    [Hinweis!] Die maximal zulässige Anzahl von Eingaben beträgt 10.000.  Weitere Informationen finden Sie unter [empfangen und Senden von Grenzwerten in Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
+    > [Hinweis!] Die maximal zulässige Anzahl von Eingaben beträgt 10.000.  Weitere Informationen finden Sie unter [empfangen und Senden von Grenzwerten in Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
 
 7. Geben Sie die Aktion an, die **ausgeführt** werden soll, wenn ein Benutzer die angegebenen Grenzwerte überschreitet.  Die folgenden Aktionen sind möglich:
     * **Beschränken Sie den Benutzer am Senden von e-Mails bis zum nächsten Tag**.  Sobald die Sende Grenze überschritten ist (intern, extern oder täglich), wird eine Warnung für den Administrator generiert, und der Benutzer kann keine weiteren e-Mails an den folgenden Tag senden, basierend auf UTC-Zeit. Es gibt keine Möglichkeit für den Administrator, diesen Block außer Kraft zu setzen.

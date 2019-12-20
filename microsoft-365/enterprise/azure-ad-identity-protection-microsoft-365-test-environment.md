@@ -3,7 +3,7 @@ title: Azure AD Identitätsschutz für Ihre Microsoft 365 Enterprise-Testumgebun
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,25 +13,25 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie Azure AD Identitätsschutz, und analysieren Sie die aktuellen Konten in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: bc98ebbdd45e06481e2d95687fb4eb8c986533a3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: c0d364eaef9cfd37531d9f9e1803db66739a7984
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673241"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802100"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identitätsschutz für Ihre Microsoft 365 Enterprise-Testumgebung
 
-*Diese Test Umgebungs Anleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Testumgebungsanleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
 
-Mit Azure AD Identity Protection können Sie potenzielle Sicherheitsrisiken erkennen, die sich auf die Identitäten Ihrer Organisation auswirken, automatisierte Antworten konfigurieren und Vorfälle untersuchen. In diesem Artikel wird beschrieben, wie Sie Azure AD Identitätsschutz aktivieren und die Analyse Ihrer Test Umgebungs Konten anzeigen können.
+Azure Active Directory (Azure AD) Identity Protection ermöglicht Ihnen das Erkennen potenzieller Sicherheitsanfälligkeiten, die sich auf die Identitäten Ihrer Organisation auswirken, automatische Antworten konfigurieren und Vorfälle untersuchen. In diesem Artikel wird beschrieben, wie Sie Azure AD Identitätsschutz verwenden, um die Analyse Ihrer Test Umgebungs Konten anzuzeigen.
 
 Es gibt zwei Phasen zum Einrichten Azure AD Identitätsschutzes in Ihrer Microsoft 365 Enterprise-Testumgebung:
 
 1. Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
-2. Aktivieren und verwenden Sie Azure AD Identity Protection.
+2. Verwenden Sie Azure AD Identitätsschutz.
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
@@ -43,19 +43,19 @@ Wenn Sie Azure AD Identitätsschutz nur auf einfache Weise mit den Mindestanford
 Wenn Sie Azure AD Identitätsschutz in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Für das Testen Azure AD Identitätsschutzes ist keine simulierte Enterprise-Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Azure AD Identitätsschutz testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
+> Das Testen Azure AD Identitätsschutzes erfordert keine simulierte Enterprise-Testumgebung, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Azure AD Identitätsschutz testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
   
-## <a name="phase-2-enable-and-use-azure-ad-identity-protection"></a>Phase 2: Aktivieren und Verwenden von Azure AD Identitätsschutz
+## <a name="phase-2-use-azure-ad-identity-protection"></a>Phase 2: Verwenden von Azure AD Identitätsschutz
 
 1. Öffnen Sie eine private Instanz Ihres Browsers, und melden Sie sich beim Azure- [https://portal.azure.com](https://portal.azure.com) Portal unter mit dem globalen Administratorkonto Ihrer Microsoft 365 Enterprise-Testumgebung an.
-2. Klicken Sie im Azure-Portal auf **alle Dienste #a0 Marketplace**.
-3. Geben Sie **Azure AD Identitätsschutz** ein, und klicken Sie darauf.
-4. Klicken Sie auf dem Blade **Erste Schritte** unter **Einstellungen**auf **Onboard** , klicken Sie auf **an Dashboard anheften**, und klicken Sie dann auf **Erstellen**.
-5. Klicken Sie im Azure-Portal im Dashboard auf **Azure AD Identitätsschutz** . 
+2. Geben Sie im Azure-Portal **Identity Protection** in das Suchfeld ein, und klicken Sie dann auf **Azure AD Identitätsschutz**.
+3. Klicken Sie im Blatt **Identitätsschutz – Übersicht** auf die einzelnen Berichte, um zu sehen, was Sie berichten.
+4. Klicken Sie unter **Benachrichtigen**auf **Benutzer bei Risiko erkannte Warnungen**.
+5. Wählen Sie im Bereich **Benutzer bei Risiko erkannte Warnungen** die Option **Mittel**aus.
+6. Wenn **e-Mails an die folgenden Benutzer gesendet werden**, klicken Sie auf **einschließen** , und vergewissern Sie sich, dass sich ihr globales Administratorkonto in der Liste der ausgewählten Mitglieder befindet.
+7. Klicken Sie auf **Speichern**.
 
-   Es sollte ein **Azure AD-Blatt mit Identitätsschutz – Übersicht** mit einem Dashboard angezeigt werden. Beachten Sie bei **Sicherheitsanfälligkeiten**, dass die Anzahl der Benutzerkonten ohne mehrstufige Authentifizierungs Registrierung ermittelt wurde. Diese Nummer variiert je nach den zuvor durchgeführten Microsoft 365 Enterprise Test Lab Guides.
-
-6. Klicken Sie durch die Kategorien für **untersuchen** , um zu ermitteln, ob Benutzer oder Ereignisse erkannt wurden.
+Klicken Sie auf die verschiedenen Richtlinien unter **Protect** , um zu erfahren, wie Sie konfiguriert werden. Wenn Sie eine Richtlinie erstellen und aktivieren, müssen Sie sicherstellen, dass der Zugriff für einen zu weiten Bereich von Bedingungen nicht blockiert wird, oder Sie können sich nicht selbst als globaler Administrator anmelden.
 
 Weitere Tests und Experimente finden Sie unter [Simulieren von Risikoereignissen](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962612"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823837"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
 
@@ -44,7 +44,7 @@ Andere | Für Probleme, die nicht von anderen Bereichen abgedeckt werden
 
 **Wer auch immer Sie für diese Kontakte ausgewählt haben, muss über das Wissen und die Autorität verfügen, um Entscheidungen für Ihre von Microsoft verwaltete Desktop Umgebung zu treffen.** Wenn Sie Ihre Microsoft Managed Desktop-Umgebung an Bord haben, werden Sie aufgefordert, Kontakte für den lokalen Helpdesk und die Sicherheit hinzuzufügen. 
 
-Administrator Kontakte sind erforderlich, wenn Sie [eine Support Anfrage übermitteln](../working-with-managed-desktop/support.md). Sie benötigen einen Administratorkontakt für den Fokusbereich der Support Anfrage. 
+Administrator Kontakte sind erforderlich, wenn Sie [eine Support Anfrage übermitteln](../service-description/support.md). Sie benötigen einen Administratorkontakt für den Fokusbereich der Support Anfrage. 
 
 **So fügen Sie Administrator Kontakte hinzu**
 

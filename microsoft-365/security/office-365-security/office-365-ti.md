@@ -3,7 +3,7 @@ title: Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen in Office 365 Adv
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sicherheitsrisiken in Ihrer Organisation erforschen, auf Schadsoftware, Phishing und andere Angriffe reagieren können, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen. Indikatoren.
-ms.openlocfilehash: 1e8a3cee67a3fdb56042bc83dac7b09367241bf3
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967998"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808120"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen in Office 365
 
@@ -38,7 +38,7 @@ Die Funktionen zur Ermittlung und Reaktion auf Bedrohungen werden &amp; im Secur
 - [Threat-Dashboard](#threat-dashboard)
 - [Explorer](#threat-explorer)
 - [Vorfälle](#incidents)
-- [Angriffs Simulator](#attack-simulator)
+- [Angriffssimulator](#attack-simulator)
 - [Automatische Untersuchung und Reaktion](automated-investigation-response-office.md)
 
 ### <a name="threat-dashboard"></a>Threat-Dashboard
@@ -67,7 +67,7 @@ Um die Liste der aktuellen Vorfälle für Ihre Organisation anzuzeigen, wechseln
   
 ![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management Review aus.](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
-### <a name="attack-simulator"></a>Angriffs Simulator
+### <a name="attack-simulator"></a>Angriffssimulator
 
 Verwenden Sie den Angriffs Simulator zum Einrichten und ausführen realistischer Cyberangriffe in Ihrer Organisation, und identifizieren Sie gefährdete Personen, bevor sich ein echter Cyberangriff auf Ihr Unternehmen auswirkt. Weitere Informationen finden Sie unter [Attack Simulator in Office 365](attack-simulator.md).
 
@@ -87,7 +87,7 @@ Office 365 Threat-Ermittlungs-und-Antwortfunktionen sind in Office 365 Advanced 
 
 ## <a name="required-roles-and-permissions"></a>Erforderliche Rollen und Berechtigungen
 
-Office 365 Advanced Threat Protection verwendet rollenbasierte Zugriffssteuerung. Berechtigungen werden über Rollen in Azure Active Directory, dem Microsoft 365 Admin Center oder dem Office 365 Security #a0 Compliance Center zugewiesen.
+Office 365 Advanced Threat Protection verwendet rollenbasierte Zugriffssteuerung. Berechtigungen werden über bestimmte Rollen in Azure Active Directory, dem Microsoft 365 Admin Center oder dem Office 365 Security #a0 Compliance Center zugewiesen.
 
 > [!TIP]
 > Obwohl einige Rollen, wie etwa der Sicherheits Administrator, im Office 365 Security #a0 Compliance Center zugewiesen werden können, sollten Sie stattdessen entweder das Microsoft 365 Admin Center oder Azure Active Directory verwenden. Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie in den folgenden Ressourcen:

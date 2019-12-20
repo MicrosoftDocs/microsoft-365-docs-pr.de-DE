@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: 10c03fe0370732e9cb1a10a55767648ae0ddb80b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 46387f82a38c33debdc24a6825479bf3183f0283
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971723"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808430"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
 
@@ -101,7 +101,7 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimm
 
 3. Öffnen Sie eine PowerShell-Instanz als Administrator, und öffnen Sie den Ordner, in dem Sie das Skript gespeichert haben.
 
-4. Stellen Sie mithilfe des [Connect-AzureAD-](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) Cmdlets eine Verbindung zu Ihrem Verzeichnis her.
+4. Stellen Sie mithilfe des [Connect-AzureAD-](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) Cmdlets eine Verbindung zu Ihrem Verzeichnis her.
 
 5. Führen Sie diesen PowerShell-Befehl aus:
 
@@ -140,9 +140,9 @@ Nachdem Sie eine Anwendung mit unzulässigen Berechtigungen identifiziert haben,
 
   - Klicken Sie im Drilldown auf **Entfernen** .
 
-- Sie können die OAuth-Zustimmungs Erteilung mit PowerShell widerrufen, indem Sie die Schritte unter [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant?view=azureadps-2.0)ausführen.
+- Sie können die OAuth-Zustimmungs Erteilung mit PowerShell widerrufen, indem Sie die Schritte unter [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)ausführen.
 
-- Sie können die Rollenzuweisung für die Dienstanwendung mithilfe von PowerShell widerrufen, indem Sie die Schritte unter [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment?view=azureadps-2.0)ausführen.
+- Sie können die Rollenzuweisung für die Dienstanwendung mithilfe von PowerShell widerrufen, indem Sie die Schritte unter [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment)ausführen.
 
 - Sie können die Anmeldung für das betroffene Konto auch ganz deaktivieren, wodurch wiederum der APP-Zugriff auf die Daten in diesem Konto deaktiviert wird. Dies ist natürlich nicht ideal für die Produktivität des Endbenutzers, aber wenn Sie die Auswirkungen schnell begrenzen möchten, kann es sich um eine praktikable kurzfristige Behebung handeln.
 
@@ -150,7 +150,7 @@ Nachdem Sie eine Anwendung mit unzulässigen Berechtigungen identifiziert haben,
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
 
-Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Office 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden für die Sicherung Ihres Office 365 Mandanten zu implementieren.
+Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten. Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

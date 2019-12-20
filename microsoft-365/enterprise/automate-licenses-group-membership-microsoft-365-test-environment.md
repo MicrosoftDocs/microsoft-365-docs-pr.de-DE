@@ -3,7 +3,7 @@ title: Automatisieren der Lizenzierung und der Gruppenmitgliedschaft für Ihre M
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/21/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die Gruppenbasierte Lizenzierung und die dynamische Gruppenmitgliedschaft in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202476"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802120"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatisieren der Lizenzierung und der Gruppenmitgliedschaft für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -43,34 +43,32 @@ Wenn Sie die automatische Lizenzierung und Gruppenmitgliedschaft nur auf einfach
 Wenn Sie die automatische Lizenzierung und Gruppenmitgliedschaft in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Für das Testen der automatischen Lizenzierung und der Gruppenmitgliedschaft ist keine simulierte Enterprise-Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie die automatisierte Lizenzierung und Gruppenmitgliedschaft testen und in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
+> Für das Testen der automatischen Lizenzierung und Gruppenmitgliedschaft ist keine simulierte Enterprise-Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie die automatisierte Lizenzierung und Gruppenmitgliedschaft testen und in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Phase 2: Konfigurieren und Testen der dynamischen Gruppenmitgliedschaft und der automatischen Lizenzierung
 
 Zunächst erstellen Sie eine neue Gruppe "Sales" und fügen eine dynamische Gruppen Mitgliedschaftsregel hinzu, sodass Benutzerkonten mit der Abteilung "Sales" automatisch der Gruppe "Sales" hinzugefügt werden.
 
-1. Melden Sie sich mit einer privaten Instanz Ihres Internet Browsers beim Office 365-Portal unter [https://portal.office.com](https://portal.office.com) mit dem globalen Administratorkonto Ihres Office 365 E5 Test Lab-Abonnements an.
+1. Melden Sie sich mit einer privaten Instanz Ihres Internet Browsers beim Office 365-Portal unter [https://portal.office.com](https://portal.office.com) mit dem globalen Administratorkonto Ihres Microsoft 365 E5 Test Lab-Abonnements an.
 2. Wechseln Sie auf einer separaten Registerkarte Ihres Browsers zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com).
-3. Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.
-4. Klicken Sie auf dem Blatt **alle Gruppen** auf **neue Gruppe**.
+3. Geben Sie im Azure-Portal **Gruppen** in das Suchfeld ein, und klicken Sie dann auf **Gruppen**.
+4. Klicken Sie im Bereich **alle Gruppen** auf **neue Gruppe**.
 5. Wählen Sie unter **Gruppentyp**die Option **Office 365**aus.
 6. Geben Sie unter **Gruppenname den Namen** **Sales**ein.
-7. Wählen Sie im **Typ Mitgliedschaft**die Option **dynamischer Benutzer** aus.
-8. Klicken Sie auf **Dynamische Abfrage hinzufügen**.
-9. Wählen Sie unter **Benutzer hinzufügen**die Option **Abteilung** aus.
-10. Wählen Sie im nächsten Feld **Gleich** aus.
-11. Geben Sie im nächsten Feld **Umsatz**ein.
-12. Klicken Sie auf **Abfrage hinzufügen**, und klicken Sie dann auf **Erstellen**.
-13. Schließen Sie die Blades **Gruppe** und **Gruppen – alle Gruppen** .
+7. Wählen Sie im **Typ Mitgliedschaft**die Option **dynamischer Benutzer**aus.
+8. Klicken Sie auf **dynamische Benutzer Mitglieder**.
+9. Im Bereich **Dynamische Mitgliedschaftsregeln** : 
+   - Wählen Sie die Eigenschaft **Department** aus.
+   - Wählen Sie den **Equals** -Operator aus.
+   - Geben Sie **Umsatz** in **value**ein.
+10. Klicken Sie auf **Speichern**.
+11. Klicken Sie auf **Erstellen**.
 
 Als Nächstes konfigurieren Sie die Gruppe "Sales" so, dass Mitgliedern automatisch die Microsoft 365 E5-Lizenz zugewiesen wird.
 
-1. Klicken Sie auf der Active Directory **Übersicht** Blade for Azure auf **Lizenzen #a0 alle Produkte**.
-2. Wählen Sie in der Liste **Micrsooft 365 E5**aus, und klicken Sie dann auf **zuweisen**.
-3. Klicken Sie auf dem Blatt **Lizenz zuweisen** auf **Benutzer und Gruppen**.
-4. Wählen Sie in der Liste der Gruppen die Gruppe **Vertrieb** aus.
-5. Klicken Sie auf **Auswählen** und dann auf **Zuweisen**.
-6. Schließen Sie die Registerkarte für das Azure Portal in Ihrem Browser.
+1. Klicken Sie auf die Gruppe **Vertrieb** , und klicken Sie dann auf **Lizenzen**.
+2. Wählen Sie im Bereich **Lizenzzuweisungen aktualisieren** die Option **Microsoft 365 E5**aus, und klicken Sie dann auf **Speichern**.
+3. Schließen Sie die Registerkarte für das Azure Portal in Ihrem Browser.
 
 Als nächstes testen Sie die dynamische Gruppenmitgliedschaft und die automatische Lizenzierung für das Benutzerkonto 4. 
 

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9f6a4aa68826133bee0437116b2fbf3fde4e7e00
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911126"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808720"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Die Tabelle `EmailAttachmentInfo` im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu Anlagen in von Office 365 ATP verarbeiteten E-Mails. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
@@ -35,7 +35,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
+| `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `AttachmentId` | string | Eindeutiger Bezeichner für die E-Mail-Anlage |
 | `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Office 365 generierte E-Mail |
 | `SenderFromAddress` | string | Für E-Mail-Empfänger im E-Mail-Client in der FROM-Kopfzeile angezeigte Absender-E-Mail-Adresse |

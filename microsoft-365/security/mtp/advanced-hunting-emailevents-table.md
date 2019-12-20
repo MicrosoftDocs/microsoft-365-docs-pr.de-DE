@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911143"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808710"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **Gilt für:**
 - Microsoft-Bedrohungsschutz
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Die `EmailEvents`-Tabelle im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu Ereignissen, denen die Verarbeitung von E-Mails auf Office 365 ATP angehört. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
@@ -35,7 +35,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
+| `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `EmailId` | string | Eindeutige E-Mail- und Empfänger-ID |
 | `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Office 365 generierte E-Mail |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |

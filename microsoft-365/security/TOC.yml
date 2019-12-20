@@ -157,7 +157,7 @@
             - name: Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: Das neue Microsoft 365 Security Center
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
             - name: Berechtigungen im Security & Compliance Center
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: Freigeben des Benutzerzugriffs auf das Security Center
@@ -405,7 +405,7 @@
             - name: Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: Nachrichtenübermittlung
           items:
             - name: Aktivieren des Berichtsnachrichts-Add-Ins

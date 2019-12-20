@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: In dieser Lösung erfahren Sie, wie die häufigsten Cyber-Angriffe in Office 365 Aussehen und wie Sie darauf reagieren können.
-ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971593"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823827"
 ---
 # <a name="office-365-security-incident-response"></a>Reaktion auf Sicherheitsvorfälle in Office 365
 
@@ -51,11 +51,11 @@ Diese Artikelreihe hilft Ihnen zu verstehen, wie ein bestimmter Angriffs in Offi
 
 ## <a name="incident-response-articles"></a>Vorfall Antwort Artikel
 
-- [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](~/compliance/responding-to-a-compromised-email-account.md)
+- [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
 
-Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Office 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden für die Sicherung Ihres Office 365 Mandanten zu implementieren.
+Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten.  Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 
