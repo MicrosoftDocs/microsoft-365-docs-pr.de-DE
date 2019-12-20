@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ceb8679ccdd5c1fb41772a8b48d9474665922f39
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 871f659074c4f8386746e341db4d3500c5e80a31
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911100"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807004"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="optimize-query-performance"></a>Optimieren der Abfrageleistung
 Wenden Sie diese Empfehlungen an, um Ergebnisse schneller zu erhalten und Timeouts bei der Ausführung komplexer Abfragen zu vermeiden:
@@ -47,15 +47,15 @@ Wenden Sie diese Empfehlungen an, um Ergebnisse schneller zu erhalten und Timeou
 ### <a name="queries-with-process-ids"></a>Abfragen mit Prozess-IDs
 Prozess-IDs (PIDs) werden in Windows für neue Prozesse wiederverwendet. Allein können sie nicht als eindeutige Identifikatoren für bestimmte Prozesse dienen.
 
-Um einen eindeutiger Bezeichner für einen Prozess auf einer bestimmten Maschine abzurufen, verwenden Sie die Prozess-ID zusammen mit der Prozesserstellungszeit. Wenn Sie Daten um Prozesse zusammenführen oder zusammenfassen, fügen Sie Spalten für die Maschinenkennung (entweder `MachineId` oder`ComputerName`), die Prozess-ID (`ProcessId`oder`InitiatingProcessId`) und die Prozesserstellungszeit (`ProcessCreationTime` oder`InitiatingProcessCreationTime`) hinzu.
+Um einen eindeutiger Bezeichner für einen Prozess auf einer bestimmten Maschine abzurufen, verwenden Sie die Prozess-ID zusammen mit der Prozesserstellungszeit. Wenn Sie Daten um Prozesse zusammenführen oder zusammenfassen, fügen Sie Spalten für die Maschinenkennung (entweder `DeviceId` oder`DeviceName`), die Prozess-ID (`ProcessId`oder`InitiatingProcessId`) und die Prozesserstellungszeit (`ProcessCreationTime` oder`InitiatingProcessCreationTime`) hinzu.
 
 Die folgende Beispielabfrage findet Prozesse, die über Port 445 (SMB) auf mehr als 10 IP-Adressen zugreifen und möglicherweise nach Dateifreigaben suchen.
 
 Beispielabfrage:
 ```
-NetworkCommunicationEvents
-| where RemotePort == 445 and EventTime > ago(12h) and InitiatingProcessId !in (0, 4)
-| summarize RemoteIPCount=dcount(RemoteIP) by ComputerName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
+DeviceNetworkEvents
+| where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
+| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
 | where RemoteIPCount > 10
 ```
 
@@ -78,17 +78,17 @@ Die folgenden Beispiele zeigen verschiedene Möglichkeiten, eine Abfrage zu erst
 
 ```
 // Non-durable query - do not use
-ProcessCreationEvents
+DeviceProcessEvents
 | where ProcessCommandLine == "net stop MpsSvc"
 | limit 10
 
 // Better query - filters on filename, does case-insensitive matches
-ProcessCreationEvents
-| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+DeviceProcessEvents
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
 
 // Best query also ignores quotes
-ProcessCreationEvents
-| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe")
+DeviceProcessEvents
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```

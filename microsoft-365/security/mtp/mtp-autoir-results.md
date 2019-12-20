@@ -16,19 +16,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 7d3923a3032653f9bfc4a59dc98fe06953975bac
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967918"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806984"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Anzeigen der Details und Ergebnisse einer automatischen Untersuchung
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Wenn eine automatische Untersuchung in Microsoft Threat Protection stattfindet, stehen während und nach der automatischen Ermittlung Details zu dieser Untersuchung zur Verfügung. Wenn Sie über die [erforderlichen Berechtigungen](mtp-action-center.md#required-permissions-for-action-center-tasks) verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Die Anzeige mit Untersuchungsdetails bieten Ihnen den aktuellen Status sowie die Möglichkeit, ausstehende Aktionen zu genehmigen. 
 

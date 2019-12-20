@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
+title: Dokumentation und Ressourcen zu Microsoft 365 für Unternehmen
 summary: Best-in-Class-Produktivitäts-apps mit intelligenten Cloud-Diensten, die ihre Arbeitsweise transformieren.
 brand: m365
 metadata:
-  title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
-  description: Erfahren Sie mehr über die Produktdokumentation und die Ressourcen, die für IT-Experten, Information Worker und Partner für Microsoft 365 Enterprise verfügbar sind.
+  title: Dokumentation und Ressourcen zu Microsoft 365 für Unternehmen
+  description: Erfahren Sie mehr über die Produktdokumentation und die Ressourcen, die Microsoft 365 für Unternehmen für IT-Experten, Information Worker und Partner zur Verfügung stehen.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -13,15 +13,15 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: 945412e8e66fe558971ceacf3a57023b5bba6e5f
-  ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+  ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
+  ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/03/2019
-  ms.locfileid: "39669537"
+  ms.lasthandoff: 12/19/2019
+  ms.locfileid: "40801670"
 highlightedContent:
   items:
-  - title: Informationen zu Microsoft 365 Enterprise
+  - title: Informationen zu Microsoft 365 für Unternehmen
     itemType: get-started
     url: microsoft-365-overview.md
   - title: Schnellere Bereitstellung mit schnellerem Einsatz
@@ -31,8 +31,8 @@ highlightedContent:
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: Erhalten von Hilfe zu Microsoft 365 Enterprise und anderen Ressourcen
-  summary: Untersuchen Sie Microsoft 365 Enterprise-Bereitstellungsanleitungen,-Features und-Dienste.
+  title: Erhalten von Hilfe zu Microsoft 365 für Unternehmen und andere Ressourcen
+  summary: Untersuchen Sie Microsoft 365 für Enterprise-Bereitstellungsanleitungen,-Features und-Dienste.
   items:
   - title: Befolgter Bereitstellungswegweiser
     links:
@@ -58,7 +58,7 @@ conceptualContent:
       text: Windows 10 Enterprise
     - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
       itemType: deploy
-      text: Office 365 ProPlus
+      text: Office 365 ProPlus
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
@@ -76,14 +76,14 @@ conceptualContent:
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
       text: Office-Client-und Server-und Windows-Migration
-  - title: Verwalten von Microsoft 365 Enterprise
+  - title: Verwalten von Microsoft 365 für Unternehmen
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide
       text: Windows 10 Enterprise
     - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
       itemType: concept
-      text: Office 365 ProPlus
+      text: Office 365 ProPlus
     - url: https://docs.microsoft.com/intune/apps/app-management
       itemType: get-started
       text: Apps mit InTune

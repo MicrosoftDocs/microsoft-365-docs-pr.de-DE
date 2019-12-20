@@ -1,8 +1,8 @@
-- name: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
+- name: Dokumentation und Ressourcen zu Microsoft 365 für Unternehmen
   href: index.yml
-- name: Übersicht zu Microsoft 365 Enterprise
+- name: Microsoft 365 für Unternehmen (Übersicht)
   href: microsoft-365-overview.md
-- name: Bereitstellen von Microsoft 365 Enterprise
+- name: Bereitstellen von Microsoft 365 für Unternehmen
   href: deploy-microsoft-365-enterprise.md
   items:
     - name: Bereitstellen grundlegender Infrastruktur
@@ -186,7 +186,7 @@
           href: contoso-team-for-top-secret-project.md
         - name: SharePoint-Website für Daten mit strengen Sicherheitsbestimmungen
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Änderungen betreffend Microsoft 365 Enterprise-Bereitstellungsinhalte
+    - name: Änderungen an Microsoft 365 für Enterprise-Bereitstellungs Inhalte
       href: microsoft-365-deploment-guide-changes.md
 - name: Bereitstellungscenter für modernen Desktop
   href: desktop-deployment-center-home.md
@@ -217,11 +217,11 @@
       href: modern-desktop-deployment-and-management-lab.md
     - name: Hilfe für Ihre Bereitstellung
       href: find-help-for-modern-desktop-deployment.md
-- name: Microsoft 365 Compliance
+- name: Microsoft 365-Konformität
   href: ../compliance/index.yml
-- name: Sicherheit in Microsoft 365
+- name: Microsoft 365-Sicherheit
   href: ../security/index.yml
-- name: Enterprise Business Continuity-Verwaltung (EBCM) mit Clouddiensten
+- name: Enterprise Business Continuity-Verwaltung (EBCM) mit Cloud-Diensten
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: EBCM-Verantwortlichkeit von Kunden und Cloudpartnern

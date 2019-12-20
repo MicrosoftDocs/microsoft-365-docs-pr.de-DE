@@ -13,12 +13,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
-ms.openlocfilehash: 9ea96a0187a1f4bec9c71dc02478375a4c13b371
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 9a5d7548608cb44befb271e63420e7eb84b2e399
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837961"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805748"
 ---
 # <a name="manage-billing-accounts"></a>Verwalten von Abrechnungskonten
 
@@ -46,6 +46,15 @@ In der folgenden Tabelle sind die wichtigen Begriffe aufgeführt, die auf der De
 | Steuer-ID | Wenn Sie sich außerhalb der USA befinden, müssen Sie eine Mehrwertsteuer oder eine lokale Entsprechung angeben. Weitere Informationen finden Sie unter [Steuerinformationen](#tax-information). |
 | Vertrag | Wenn ein Abrechnungskonto entweder über eine Direktbestellung oder eine Volumenlizenzvereinbarung erstellt wird, akzeptiert ein Unterzeichner für die Organisation eine Vereinbarung, die die Bedingungen #a0 Bedingungen des Kontos umreißt. Wenn zutreffend, wird in dieser Ansicht eine Vereinbarungs Historie aufgeführt. Wenn Sie aktualisierte Bedingungen akzeptieren müssen, wird ein Link zur **Genehmigungs Vereinbarung** angezeigt. |
 | Abrechnungsprofile | Ein Abrechnungsprofil definiert die Eigenschaften Ihrer Rechnung, zum Beispiel wer die Rechnung erhält, wie die Rechnung zugestellt wird, Zahlungsbedingungen und eine Bestellnummer. Um die Abrechnung in Ihrer Organisation zu verteilen, können Sie mehrere Abrechnungsprofile erstellen und das entsprechende Abrechnungsprofil zum Zeitpunkt des Erwerbs ermitteln. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Verwalten von Abrechnungs Profilen](../billing-and-payments/manage-billing-profiles.md). |
+
+> [!NOTE] 
+> Wenn Sie den **verkauften** Namen oder die Adresse ändern möchten, jedoch keinen **Bearbeitungs** Link sehen, müssen Sie sich an den [Support wenden](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) , um ihn zu ändern. Für Anforderungen für eine Änderung **an einem verkauften** Namen ist eine Bonitätsprüfung erforderlich. Wenn Sie sich an den Support wenden, müssen Sie eines der folgenden Dokumente vorbereiten:
+>
+> - Externes Ankündigungs Dokument, das eine Änderung des Firmennamens oder der Unternehmensstruktur angibt
+> - Behördlich ausgestelltes Dokument oder Registrierungs schreiben
+> - Drucken aus der Registrierung des lokalen Unternehmens
+>
+> Die Unterstützung kann bei Namen-und Adressänderungen helfen, wenn sich nur der Kundenname ändert, aber die Entität bleibt unverändert. In der bereitgestellten Dokumentation sollte eindeutig angegeben werden, dass nur der Name der Entität geändert wurde. Wenn die Änderung im Zusammenhang mit einer Transaktion wie einem Geschäftsverkauf oder einer Veräußerung oder einem "Spin-off" eines Kunden Partners besteht, wenden Sie sich an Ihren Microsoft-Verkäufer.
 
 ## <a name="shipping-addresses"></a>Versandadressen
 

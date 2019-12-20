@@ -1,7 +1,8 @@
 ---
-title: Microsoft-Empfehlungen für EoP und Office 365 ATP-Sicherheitseinstellungen, Empfehlungen, Sender Policy Framework, domänenbasierte Nachrichtenberichterstattung und Konformität, DomainKeys identifizierte e-Mails, Schritte, wie funktioniert Sie usw.
+title: Microsoft-Empfehlungen für EoP und Office 365 ATP-Sicherheitseinstellungen, Empfehlungen, Sender Policy Framework, domänenbasierte Nachrichtenberichterstattung und Konformität, DomainKeys identifizierte e-Mails, Schritte, Arbeitsweise, Sicherheitsbasislinien, Baselines für EoP, Baselines für ATP, Setup ATP, Setup EoP, configure ATP, configure EoP, Security Configuration
 ms.author: tracyp
 author: MSFTTracyP
+ms.date: 12/12/2019
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -13,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 60042d5903a9dadd178fe68b3a73a3a2b9148798
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971543"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807970"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -44,7 +45,7 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 |Phishing-e-Mail-erkennungsaktion|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Phishing-e-Mail-erkennungsaktion mit hoher Zuverlässigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Massen-e-Mail-erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Schwellenwert für Massen-e-Mail festlegen|6 |4 |Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level Values](bulk-complaint-level-values.md).|
+|Schwellenwert für Massen-e-Mail festlegen|6 |4|Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level Values](bulk-complaint-level-values.md).|
 |Aufbewahrungszeitraum für Quarantäne|30 Tage|30 Tage||
 |Sicherheitstipps|Ein|Ein||
 |Zugelassene Absender|Keine|Keine||
@@ -57,23 +58,23 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 
 In der Antispampolitik "Advanced Spamfilter" gibt es verschiedene andere Parameter, die zum Zeitpunkt des Schreibens veraltet sind. Unsere empfohlenen Einstellungen für diese sind, Sie für Standard mäßige und strenge Stufen **zu deaktivieren:**
 
-|Name des Sicherheitsfeatures|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|Name des Sicherheitsfeatures| Kommentare |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>EoP-Einstellungen für ausgehende Spamfilter Richtlinien
 
@@ -166,3 +167,14 @@ Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken|Deaktiviert|Deaktiv
 |ATP-sichere Anlagen unbekannte Malware Antwort|Block|Block||
 |Umleitungs Anlage bei der Erkennung|Aktiviert|Aktiviert|Umleitung zur e-Mail-Adresse eines Sicherheitsadministrators, der weiß, wie Sie feststellen können, ob die Anlage Schadsoftware ist oder nicht|
 |Antwort bei ATP Safe Attachments, wenn Malwarescans für Anlagen ein Timeout oder ein Fehler auftritt|Aktiviert|Aktiviert||
+
+
+## <a name="related-topics"></a>Verwandte Themen
+
+- Suchen Sie nach bewährten Methoden mit **Exchange-Nachrichtenfluss/Exchange-Transport Regeln**? Ausführliche Informationen finden Sie in [diesem Artikel](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
+
+- Senden Sie verdächtige e-Mails, verdächtige Spam-Mails, Phishing-Nachrichten oder URLs für Scans an Microsoft. Verwenden Sie die Anweisungen für den **Administrator Übermittlungen** in [diesem Artikel](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+
+- Verwenden Sie diese Links, um Informationen zum **Einrichten** des [EoP-Diensts](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)und zum **Konfigurieren** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)zu erhalten. (Vergessen Sie nicht, die hilfreichen Anweisungen unter "[Protect Against Threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" anzuzeigen.)
+
+- **Sicherheitsgrundlagen für Windows** [finden Sie hier für GPO](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) /lokale Optionen und für die Intune-basierte Sicherheit [hier](https://docs.microsoft.com/intune/protect/security-baselines). Schließlich ist [hier](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)ein Vergleich zwischen Microsoft Defender Advanced Threat Protection (ATP) und Windows InTune-Sicherheitsbasislinien.

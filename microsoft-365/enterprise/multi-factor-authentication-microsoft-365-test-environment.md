@@ -3,7 +3,7 @@ title: Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumge
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die mehrstufige Authentifizierung mit Textnachrichten, die an ein Smartphone in Ihrer Microsoft 365 Enterprise-Testumgebung gesendet werden.
-ms.openlocfilehash: af4ae63f52fa74084dfddf0e6861c5ae3ba2aedb
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ea87ab6f169829d74339b64b6edb3978bea9ca9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673261"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801400"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
-*Diese Test Umgebungs Anleitung kann sowohl für Microsoft 365 Enterprise-als auch für Office 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Testumgebungsanleitung kann für Microsoft 365 Enterprise- und Office 365 Enterprise-Testumgebungen verwendet werden.*
 
-Für eine zusätzliche Sicherheitsstufe für die Anmeldung bei Office 365 oder einem Dienst oder einer Anwendung, die den Azure AD-Mandanten für Ihre Organisation verwenden, können Sie die Azure-mehrstufige Authentifizierung aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort zum Überprüfen benötigt. Konto. Bei der mehrstufigen Authentifizierung müssen Benutzer einen Telefonanruf bestätigen, einen in einer Textnachricht gesendeten Bestätigungscode eingeben oder ein App-Kennwort auf dem Smartphone angeben, nachdem Sie die entsprechenden Kennwörter korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde. 
+Für eine zusätzliche Sicherheitsstufe für die Anmeldung bei Microsoft 365 oder für einen Dienst oder eine Anwendung, die den Azure AD Mandanten für Ihr Abonnement verwendet, können Sie die Azure-mehrstufige Authentifizierung aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort erfordert, um die Überprüfung einer Konto. 
+
+Bei der mehrstufigen Authentifizierung müssen Benutzer einen Telefonanruf bestätigen, einen in einer Textnachricht gesendeten Bestätigungscode eingeben oder ein App-Kennwort auf dem Smartphone angeben, nachdem Sie die entsprechenden Kennwörter korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde. 
   
-In diesem Artikel wird beschrieben, wie Sie die Textnachrichten basierte Authentifizierung für ein bestimmtes Konto aktivieren und testen.
+In diesem Artikel wird beschrieben, wie Sie die Textnachrichten basierte Authentifizierung für ein bestimmtes Benutzerkonto aktivieren und testen.
   
 Es gibt zwei Phasen zum Einrichten der mehrstufigen Authentifizierung für ein Konto in Ihrer Microsoft 365 Enterprise-Testumgebung:
   
@@ -34,7 +36,9 @@ Es gibt zwei Phasen zum Einrichten der mehrstufigen Authentifizierung für ein K
     
 2. Aktivieren und Testen von Multi-Factor Authentication für das Konto „Benutzer 2“
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+3. Aktivieren und testen Sie die mehrstufige Authentifizierung mit einer Richtlinie für bedingten Zugriff (optional).
+
+![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
@@ -46,7 +50,7 @@ Wenn Sie die mehrstufige Authentifizierung nur auf einfache Weise mit den Mindes
 Wenn Sie die mehrstufige Authentifizierung in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Zum Testen der mehrstufigen Authentifizierung ist keine simulierte Enterprise-Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie Multi-Factor Authentication testen und damit in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
+> Zum Testen der mehrstufigen Authentifizierung ist keine simulierte Enterprise-Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie Multi-Factor Authentication testen und damit in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Phase 2: Aktivieren und Testen von Multi-Factor Authentication für das Konto „Benutzer 2“
 
@@ -56,7 +60,7 @@ Aktivieren Sie Multi-Factor Authentication für das Konto „Benutzer 2“ mit d
     
 2. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
-3. Klicken Sie im Bereich aktive Benutzer auf **mehr #a0 Setup**für die mehrstufige Authentifizierung.
+3. Klicken Sie im Bereich aktive Benutzer auf **mehr**stufige Authentifizierung.
     
 4. Wählen Sie in der Liste das Konto **Benutzer 2** aus.
     
@@ -96,6 +100,38 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
     
     Das Office-Portal für Benutzer 2 sollte auf der Registerkarte **Microsoft Office Startseite** Ihres Browsers angezeigt werden.
 
+## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Phase 3: Aktivieren und Testen der mehrstufigen Authentifizierung mit einer Richtlinie für bedingten Zugriff
+
+*Diese Phase kann nur für eine Microsoft 365 Enterprise-Testumgebung verwendet werden.*
+
+In dieser Phase aktivieren Sie die mehrstufige Authentifizierung für das Konto "Benutzer 3" mithilfe einer Gruppenrichtlinie und einer Richtlinie für den bedingten Zugriff.
+
+Erstellen Sie als nächstes eine neue Gruppe mit dem Namen MFAUsers, und fügen Sie das Benutzerkonto 3 hinzu.
+
+1. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** im linken Navigationsbereich auf **Gruppen** , und klicken Sie dann auf **Gruppen**.
+2. Klicken Sie auf **Gruppe hinzufügen**.
+3. Wählen Sie im Bereich **Gruppentyp auswählen** die Option **Sicherheit**aus, und klicken Sie dann auf **weiter**.
+4. Klicken Sie im Bereich **Grundlagen einrichten** auf **Gruppe erstellen**, und klicken Sie dann auf **Schließen**.
+5. Geben Sie im Bereich **überprüfen und Abschließen der Gruppe hinzufügen** **MFAUsers**ein, und klicken Sie dann auf **weiter**.
+6. Klicken Sie in der Liste der Gruppen auf die Gruppe **MFAUsers** .
+7. Klicken Sie im Bereich **MFAUsers** auf **Mitglieder**, und klicken Sie dann auf **Alle anzeigen und Mitglieder verwalten**.
+8. Klicken Sie im Bereich **MFAUsers** auf **Mitglieder hinzufügen**, wählen Sie das Konto **Benutzer 3** aus, und klicken Sie dann auf **speichern #a0 schließen #a1 schließen**.
+
+Erstellen Sie als nächstes eine Richtlinie für den bedingten Zugriff, um die mehrstufige Authentifizierung für Mitglieder der MFAUsers-Gruppe zu erfordern.
+
+1. Wechseln Sie auf einer neuen Registerkarte Ihres Browsers zu [https://portal.azure.com](https://portal.azure.com).
+2. Klicken Sie auf **Azure Active Directory #a0 Sicherheits #a1 bedingten Zugriff**.
+3. Klicken Sie im Bereich **bedingter Zugriff – Richtlinien** auf **neue Richtlinie**.
+4. Geben Sie im **neuen** Bereich **MFA für Benutzerkonten** unter **Name**ein.
+5. Klicken Sie im Abschnitt **Zuweisungen** auf **Benutzer und Gruppen**.
+6. Klicken Sie im Bereich **Benutzer und Gruppen** auf der Registerkarte **einschließen** auf Benutzer und Gruppen **#a0 Benutzer und Gruppen auswählen #a1 auswählen**.
+7. Klicken Sie im Bereich **auswählen** auf die Gruppe **MFAUsers** , und klicken Sie dann auf **#a0 fertig wählen**.
+8. Klicken Sie im Abschnitt **Zugriffssteuerung** des **neuen** Bereichs auf **erteilen**.
+9. Klicken Sie im Bereich **Grant** auf **mehrstufige Authentifizierung erfordern**, und klicken Sie dann auf **auswählen**.
+10. Klicken Sie im Bereich **neu** **auf** für **Richtlinie aktivieren**, und klicken Sie dann auf **Erstellen**.
+11. Schließen Sie die Registerkarten **Azure-Portal** und **Microsoft 365 Admin Center** .
+
+Um diese Richtlinie zu testen, melden Sie sich ab, und melden Sie sich mit dem Benutzerkonto 3 an. Sie sollten aufgefordert werden, MFA zu konfigurieren. Dies zeigt, dass die MFAUsers-Richtlinie angewendet wird.
 
 Informationen und Links zum Bereitstellen der mehrstufigen Authentifizierung in der Produktionsumgebung finden Sie im Schritt zum [Einrichten der mehr](identity-secure-user-sign-ins.md#identity-mfa) stufigen Authentifizierung in der Identitäts Phase.
     

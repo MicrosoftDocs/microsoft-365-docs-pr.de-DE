@@ -5,10 +5,6 @@
       items:
         - name: Microsoft 365 Security für geschäftliche Entscheidungsträger
           href: Microsoft-365-security-for-bdm.md
-        - name: Sicherheitsbewertung
-          href: ./mtp/microsoft-secure-score.md
-        - name: Secure Score (Vorschau)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: 'Chief Informationen Security Officer (CISO) – Workshop-Schulung '
           href: ./office-365-security/ciso-workshop.md
           items:
@@ -71,7 +67,7 @@
               items:
                 - name: Luft Übersicht
                   href: mtp/mtp-autoir.md
-                - name: Wechseln zum Aktionscenter
+                - name: Aufrufen des Info-Centers
                   href: mtp/mtp-action-center.md
                 - name: Anzeigen von Luft Ergebnissen
                   href: mtp/mtp-autoir-results.md
@@ -83,7 +79,7 @@
                   href: mtp/hunting.md
                 - name: Übersicht über die erweiterte Suche
                   href: mtp/advanced-hunting-overview.md
-                - name: Informationen zur Abfragesprache
+                - name: Lernen der Abfragesprache
                   href: mtp/advanced-hunting-query-language.md
                 - name: Verwenden freigegebener Abfragen
                   href: mtp/advanced-hunting-shared-queries.md
@@ -92,24 +88,24 @@
                 - name: Grundlegendes zum Schema
                   href: mtp/advanced-hunting-schema-tables.md
                   items:
-                    - name: MachineInfo
-                      href: mtp/advanced-hunting-machineinfo-table.md
-                    - name: MachineNetworkInfo
-                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
-                    - name: ProcessCreationEvents
-                      href: mtp/advanced-hunting-processcreationevents-table.md
-                    - name: NetworkCommunicationEvents
-                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
-                    - name: FileCreationEvents
-                      href: mtp/advanced-hunting-filecreationevents-table.md
-                    - name: RegistryEvents
-                      href: mtp/advanced-hunting-registryevents-table.md
-                    - name: LogonEvents
-                      href: mtp/advanced-hunting-logonevents-table.md
-                    - name: ImageLoadEvents
-                      href: mtp/advanced-hunting-imageloadevents-table.md
-                    - name: MiscEvents
-                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -124,7 +120,7 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                - name: Anwenden von Abfrage bewährten Methoden
+                - name: Anwenden bewährter Methoden für Abfragen
                   href: mtp/advanced-hunting-best-practices.md
             - name: Sicherheitsbewertung
               items:
@@ -357,7 +353,9 @@
                   items:
                     - name: 'Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: Verstehen der neuesten Angriffskampagnen mithilfe von Bedrohungsanalyse
+            - name: Kampagnen Ansichten
+              href: ./office-365-security/campaigns.md
+            - name: Grundlegendes zu neuesten Angriffen mit Threat Analytics
               href: ./mtp/latest-attack-campaigns.md
             - name: Anzeigen und Lesen Ihrer ATP-Berichte
               href: ./office-365-security/view-reports-for-atp.md
@@ -569,5 +567,5 @@
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
         - name: Office 365 Business
           href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
-    - name: Microsoft 365-Konformität
+    - name: Microsoft 365 Compliance
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'
