@@ -1,5 +1,6 @@
 ---
-title: Kommunikations Kompatibilität in Microsoft 365 (Vorschau)
+title: Kommunikations Kompatibilität (Vorschau)
+description: Informationen zur Kommunikations Kompatibilität in Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Informationen zur Kommunikations Kompatibilität in Microsoft 365
-ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 2e54a9d6e0cb74d7e58cda9869548214a7c69582
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633664"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807354"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Kommunikations Kompatibilität in Microsoft 365 (Vorschau)
 
@@ -93,7 +93,7 @@ Mithilfe neuer interaktiver Dashboards für Warnungen, Richtlinien Übereinstimm
 
 Compliance-Richtlinien für die Kommunikation überprüfen und Erfassen von Nachrichten über mehrere Kommunikationskanäle, damit Sie Compliance-Probleme schnell überprüfen und beheben können:
 
-- **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen für öffentliche und private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) -Kanäle und einzelne Chats werden in der Kommunikations Konformität als eigenständige Kanal Quelle oder mit anderen Microsoft 365-Diensten unterstützt. Richtlinien überprüfen jetzt automatisch alle Microsoft Teams-Kanäle und-Teams für bestimmte Benutzer, die in einer Richtlinie definiert sind, sodass keine separate Zuordnungsliste für Microsoft Teams-Zuordnungen mehr erforderlich ist.
+- **Microsoft Teams**: Chat Kommunikation für öffentliche und private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) -Kanäle und einzelne Chats werden in der Kommunikations Konformität als eigenständige Kanal Quelle oder mit anderen Microsoft 365-Diensten unterstützt. Richtlinien überprüfen jetzt automatisch alle Microsoft Teams-Kanäle und-Teams für bestimmte Benutzer, die in einer Richtlinie definiert sind, sodass keine separate Zuordnungsliste für Microsoft Teams-Zuordnungen mehr erforderlich ist.
 - **Exchange Online**: alle Postfächer, die auf [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort für die Überwachung und in Aufsichtsberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und wird in Kommunikationsrichtlinien nicht mehr benötigt.
 - **Skype for Business Online**: communication Compliance Policies unterstützen die Scan Chat Kommunikation und zugehörige Anlagen in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Drittanbieterquellen**: Sie können Nachrichten aus [Drittanbieterquellen](archiving-third-party-data.md) für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Communication Compliance unterstützt Verbindungen zu verschiedenen gängigen Plattformen, einschließlich Instant Bloomberg, Facebook, Twitter und andere.
@@ -111,6 +111,9 @@ Zum Identifizieren und Beheben von Kompatibilitätsproblemen mit der Kommunikati
 ### <a name="configure"></a>Konfigurieren
 
 In diesem Workflow Schritt ermitteln Sie die Compliance-Anforderungen und konfigurieren entsprechende Richtlinien für die Kommunikations Konformität. Richtlinienvorlagen sind eine hervorragende Möglichkeit, nicht nur schnell eine neue Konformitätsrichtlinie zu konfigurieren, sondern auch schnell Richtlinien zu ändern und zu aktualisieren, wenn sich Ihre Anforderungen ändern. Beispielsweise können Sie eine Richtlinie für eine anstößige Sprache und gegen Belästigung für eine kleine Gruppe von Benutzern schnell testen, bevor Sie eine Richtlinie für alle Benutzer in Ihrer Organisation konfigurieren.
+
+> [!Important]
+> Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Informationen zum Aktivieren von Berechtigungen für Kommunikations Kompatibilitätsfunktionen finden Sie unter [Stellen der Kommunikation Compliance in Ihrer Organisation zur Verfügung](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
 
 Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorlagen auswählen:
 

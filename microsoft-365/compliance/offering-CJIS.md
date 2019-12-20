@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8d28327e4627351c27140e954c2fa26571d1689d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: cdaf19b59960745e32e00b6833cea5edfd6258a5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860045"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805408"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Sicherheitsrichtlinie für Strafverfolgungs-Informationsdienste (CJIS)
 
@@ -40,7 +41,7 @@ Erfahren Sie mehr über die Vorteile der CJIS-Sicherheitsrichtlinie in der Micro
 
 Erfahren Sie, wie Sie Ihre CJIS-Sicherheitsrichtlinie mit unserem Azure Security and Compliance Blueprint beschleunigen: [Laden Sie die CJIS-Implementierungsrichtlinien für Microsoft Government Cloud Services herunter](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)

@@ -1,5 +1,6 @@
 ---
 title: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)
+description: Untersuchen und Beheben von Benachrichtigungen zur Kommunikations Konformität in Microsoft 365.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Untersuchen und Beheben von Benachrichtigungen zur Kommunikations Konformität in Microsoft 365.
-ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633684"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807384"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)
 

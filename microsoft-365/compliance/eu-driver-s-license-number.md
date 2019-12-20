@@ -1,7 +1,7 @@
 ---
 title: EU-Führerscheinnummer
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp des EU-Führerscheins für die Lizenznummer erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df025caf8d06c617e09a3b53dc6c82d69aaf5a8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081483"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805958"
 ---
 # <a name="eu-drivers-license-number"></a>EU-Führerscheinnummer
 
@@ -33,7 +33,7 @@ Acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -57,7 +57,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_austria_eu_driver's_license_number**|
+|**Keywords_austria_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/>  Führerscheinnummer  <br/> dlno #  <br/> fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
    
@@ -73,7 +73,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -97,7 +97,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords__belgium_eu_driver's_license_number**|
+|**Keywords__belgium_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> Fuehrerschein-Nr  <br/> Fuehrerschein-Nr  <br/> |
    
@@ -113,7 +113,7 @@ Neun Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -137,7 +137,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_bulgaria_eu_driver's_license_number**|
+|**Keywords_bulgaria_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
@@ -153,7 +153,7 @@ Acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -177,7 +177,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_croatia_eu_driver's_license_number**|
+|**Keywords_croatia_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
@@ -193,7 +193,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -216,7 +216,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_cyprus_eu_driver's_license_number**|
+|**Keywords_cyprus_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
@@ -238,7 +238,7 @@ Acht Buchstaben und Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -262,7 +262,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_czech_republic_eu_driver's_license_number**|
+|**Keywords_czech_republic_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
@@ -302,7 +302,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_denmark_eu_driver's_license_number**|
+|**Keywords_denmark_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
@@ -322,7 +322,7 @@ Zwei Buchstaben und sechs Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -345,7 +345,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_estonia_eu_driver's_license_number**|
+|**Keywords_estonia_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conduire  <br/> |
    
@@ -367,7 +367,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -390,7 +390,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_finland_eu_driver's_license_number**|
+|**Keywords_finland_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> ajokortti  <br/> |
    
@@ -414,7 +414,7 @@ Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -437,7 +437,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_greece_eu_driver's_license_number**|
+|**Keywords_greece_eu_driver ' s_license_number**|
 |:-----|
 |dlL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
@@ -457,7 +457,7 @@ Zwei Buchstaben und sechs Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -480,7 +480,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_hungary_eu_driver's_license_number**|
+|**Keywords_hungary_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
@@ -500,7 +500,7 @@ Sechs Ziffern und vier Buchstaben:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -523,7 +523,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_ireland_eu_driver's_license_number**|
+|**Keywords_ireland_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
    
@@ -547,7 +547,7 @@ Drei Buchstaben und sechs Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -570,7 +570,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_latvia_eu_driver's_license_number**|
+|**Keywords_latvia_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
@@ -586,7 +586,7 @@ Acht Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -609,7 +609,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_lithuania_eu_driver's_license_number**|
+|**Keywords_lithuania_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Vairuotojo pažymėjimas  <br/> |
    
@@ -625,7 +625,7 @@ Sechs Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -648,7 +648,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_luxemburg_eu_driver's_license_number**|
+|**Keywords_luxemburg_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
    
@@ -674,7 +674,7 @@ Kombination aus zwei Zeichen und sechs Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -697,7 +697,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_malta_eu_driver's_license_number**|
+|**Keywords_malta_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Liċenzja TAS-Sewqan  <br/> |
    
@@ -713,7 +713,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -736,7 +736,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_netherlands_eu_driver's_license_number**|
+|**Keywords_netherlands_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
@@ -762,7 +762,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -785,7 +785,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_poland_eu_driver's_license_number**|
+|**Keywords_poland_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Prawo jazdy  <br/> |
    
@@ -811,7 +811,7 @@ Zwei Buchstaben, gefolgt von sieben Zahlen mit Sonderzeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -834,7 +834,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_portugal_eu_driver's_license_number**|
+|**Keywords_portugal_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Carteira de motorista  <br/> |
    
@@ -854,7 +854,7 @@ Ein Zeichen gefolgt von acht Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -877,7 +877,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_romania_eu_driver's_license_number**|
+|**Keywords_romania_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conducere  <br/> |
    
@@ -897,7 +897,7 @@ Ein Zeichen gefolgt von sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -920,7 +920,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_slovakia_eu_driver's_license_number**|
+|**Keywords_slovakia_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
@@ -936,7 +936,7 @@ Neun Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -959,7 +959,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_slovenia_eu_driver's_license_number**|
+|**Keywords_slovenia_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
@@ -1002,7 +1002,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_spain_eu_driver's_license_number**|
+|**Keywords_spain_eu_driver ' s_license_number**|
 |:-----|
 |dlno #  <br/> DL #  <br/> Treiber lic.  <br/> Treiber Lizenz  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> Führerschein  <br/> driving license  <br/> Führerscheinnummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Lizenznummer für Treiber  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerschein  <br/> Führerscheinnummer  <br/> Permiso de conducción  <br/> permiso conducción  <br/> número licencia Conducir  <br/> número de carnet de Conducir  <br/> número Carnet Conducir  <br/> licencia Conducir  <br/> número de Permiso de Conducir  <br/> número de Permiso Conducir  <br/> número Permiso Conducir  <br/> Permiso Conducir  <br/> licencia de Manejo  <br/> El Carnet de Conducir  <br/> Carnet Conducir  <br/> |
    
@@ -1024,7 +1024,7 @@ Zehn Ziffern mit einem Bindestrich:
     
 ### <a name="checksum"></a>Prüfsumme
 
-No
+Nein
   
 ### <a name="definition"></a>Definition
 
@@ -1047,7 +1047,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_sweden_eu_driver's_license_number**|
+|**Keywords_sweden_eu_driver ' s_license_number**|
 |:-----|
 |DL #  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> körkort  <br/> |
    

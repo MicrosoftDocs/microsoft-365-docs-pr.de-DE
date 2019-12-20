@@ -1,5 +1,6 @@
 ---
-title: Konfigurieren der Kommunikations Kompatibilität für Microsoft 365 (Vorschau)
+title: Konfigurieren der Kommunikations Kompatibilität (Vorschau)
+description: Einrichten von Richtlinien für die Kommunikations Konformität zum Konfigurieren der Mitarbeiterkommunikation für die Überprüfung.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Einrichten von Richtlinien für die Kommunikations Konformität zum Konfigurieren der Mitarbeiterkommunikation für die Überprüfung.
-ms.openlocfilehash: 24b821158ca0f6d7486d1177256f5b1ce9123479
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633624"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807374"
 ---
-# <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Konfigurieren der Kommunikations Kompatibilität für Microsoft 365 (Vorschau)
+# <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Konfigurieren der Kommunikationscompliance in Microsoft 365 (Vorschau)
 
 > [!IMPORTANT]
 > Dieses Thema bezieht sich auf die Konfiguration der Kommunikations Kompatibilität in einem Microsoft 365-Abonnement. Wenn Sie Aufsichtsrichtlinien für ein Office 365-Abonnement konfigurieren möchten, finden Sie weitere Informationen unter [configure Supervision for Office 365](supervision-policies.md).
@@ -38,7 +38,7 @@ Führen Sie die folgenden Schritte aus, um die Kommunikations Konformität in Ih
   
 - **Schritt 1 (optional)**: Einrichten [von Gruppen für die Kommunikations Kompatibilität](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Bevor Sie mit der Kommunikation beginnen, müssen Sie ermitteln, wer die Kommunikation überprüft und wer Überprüfungen verfügt. Wenn Sie mit nur wenigen Benutzern beginnen möchten, um zu sehen, wie die Kommunikations Kompatibilität funktioniert, können Sie das Einrichten von Gruppen jetzt überspringen.
+    Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer die Kommunikation überprüft und wer Prüfungen durchführt. Wenn Sie mit nur wenigen Benutzern beginnen möchten, um zu sehen, wie die Kommunikations Kompatibilität funktioniert, können Sie das Einrichten von Gruppen jetzt überspringen.
 
 - **Schritt 2 (erforderlich)**: [Stellen Sie die Kommunikations Konformität in Ihrer Organisation zur Verfügung](#step-2-make-communication-compliance-available-in-your-organization-required) .
 
@@ -46,7 +46,7 @@ Führen Sie die folgenden Schritte aus, um die Kommunikations Konformität in Ih
 
 - **Schritt 3 (erforderlich)**: [Einrichten einer Kommunikations Konformitätsrichtlinie](#step-3-create-a-communication-compliance-policy-required)
 
-    Sie erstellen Richtlinien für die Kommunikations Konformität im Microsoft 365 Compliance Center. Diese Richtlinien definieren, welche Kommunikation in Ihrer Organisation überprüft werden muss und gibt an, wer Überprüfungen durchführt. Zu den Kommunikationen Gehören e-Mail, Microsoft Teams, Skype for Business und Platt Form Kommunikation von Drittanbietern (wie Facebook, Twitter usw.).
+    Sie erstellen Richtlinien für die Kommunikations Konformität im Microsoft 365 Compliance Center. Diese Richtlinien definieren, welche Kommunikation in Ihrer Organisation überprüft werden muss, und gibt an, wer Prüfungen durchführt. Zu den Kommunikationen Gehören e-Mail, Microsoft Teams, Skype for Business und Platt Form Kommunikation von Drittanbietern (wie Facebook, Twitter usw.).
 
 - **Schritt 4 (optional)**: [Erstellen von Notiz Vorlagen für Mitarbeiter](#step-4-create-employee-notice-templates-optional)
 
@@ -55,6 +55,10 @@ Führen Sie die folgenden Schritte aus, um die Kommunikations Konformität in Ih
 - **Schritt 5 (optional)**: [Testen der Konformitätsrichtlinie für die Kommunikation](#step-5-test-your-communication-compliance-policy-optional)
 
     Testen Sie Ihre Kommunikations Konformitätsrichtlinie, um sicherzustellen, dass Sie wie gewünscht funktioniert. Es ist wichtig sicherzustellen, dass Ihre Konformitäts Strategie ihre Standards erfüllt.
+
+- **Schritt 6 (optional)**: [Aktivieren der Überwachung für Ihre Kommunikationsrichtlinien](#step-6-enable-auditing-for-your-communication-compliance-policies-optional)
+
+    Aktivieren Sie die Überwachung für Ihre Organisation, um Verwaltungsaktivitäten für Kommunikations Konformitätsrichtlinien aufzuzeichnen.
 
 ## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a>Schritt 1: Einrichten von Gruppen für die Kommunikations Kompatibilität (optional)
 
@@ -76,6 +80,9 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 - [Übersicht über Office 365 Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Schritt 2: Bereitstellen der Kommunikations Kompatibilität in Ihrer Organisation (erforderlich)
+
+> [!Important]
+> Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikations Kompatibilitätsfeatures zugegriffen werden kann.
 
 Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle " **Aufsichts Überprüfungs Administrator** " zugewiesen sein. Um Nachrichten mit Richtlinien Übereinstimmungen zu untersuchen und zu beheben, müssen Sie darüber hinaus eine Gruppe für Bearbeiter mit dem **Aufsichts Überprüfungs Administrator**, der **Fallverwaltung**und der **Überprüfungs** Rolle erstellen.
 
@@ -122,8 +129,8 @@ Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Bere
     - Wählen Sie die zu scannenden Kommunikationskanäle aus, einschließlich Exchange, Microsoft Teams oder Skype for Business. Sie können auch Drittanbieterquellen überprüfen, wenn Sie einen Connector in Microsoft 365 konfiguriert haben.
     - Wählen Sie die zu überwachende Kommunikationsrichtung, einschließlich eingehende, ausgehende oder interne Kommunikation.
     - Definieren Sie die [Bedingungen](communication-compliance-feature-reference.md#ConditionalSettings)für die Kommunikation-Konformitätsrichtlinie. Sie können zwischen Nachrichtenadresse, Stichwort, Dateitypen und Größen Übereinstimmungsbedingungen wählen.
-    - Wählen Sie aus, ob Sie vertrauliche Informationstypen einbeziehen möchten. Hier können Sie Standard-und benutzerdefinierte vertrauliche Informationstypen auswählen. Wählen Sie unter vorhandene benutzerdefinierte vertrauliche Informationstypen oder benutzerdefinierte Schlüsselwörter Wörterbücher im Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien aus. Sie können diese Elemente erstellen, bevor Sie den Assistenten ausführen, falls erforderlich. Sie können auch neue vertrauliche Informationstypen aus dem Assistenten für Kommunikations Konformitätsrichtlinien erstellen.
-    - Wählen Sie aus, ob Sie das anstößige Sprachmodell aktivieren möchten. Dadurch wird eine ungeeignete Sprache erkannt, die im Textkörper von e-Mail-Nachrichten gesendet oder empfangen wird.
+    - Wählen Sie aus, ob Sie vertrauliche Informationstypen einbeziehen möchten. In diesem Schritt können Sie Standard-und benutzerdefinierte vertrauliche Informationstypen auswählen. Wählen Sie unter vorhandene benutzerdefinierte vertrauliche Informationstypen oder benutzerdefinierte Schlüsselwörter Wörterbücher im Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien aus. Sie können diese Elemente erstellen, bevor Sie den Assistenten ausführen, falls erforderlich. Sie können auch neue vertrauliche Informationstypen aus dem Assistenten für Kommunikations Konformitätsrichtlinien erstellen.
+    - Wählen Sie aus, ob Sie die Klassifizierung für anstößige Sprachen aktivieren möchten. Diese Klassifizierung erkennt unangemessene Sprachen, die im Textkörper von e-Mail-Nachrichten gesendet oder empfangen wurden.
     - Definieren Sie den Prozentsatz der zu überprüfenden Kommunikation.
     - Überprüfen Sie Ihre Richtlinienauswahl und erstellen Sie die Richtlinie.
 
@@ -158,7 +165,7 @@ Nachdem Sie eine Kommunikations Konformitätsrichtlinie erstellt haben, empfiehl
 Führen Sie die folgenden Schritte aus, um die Konformitätsrichtlinie für Kommunikation zu testen:
 
 1. Öffnen Sie einen e-Mail-Client oder Microsoft Teams, während Sie sich als überwachten Benutzer angemeldet haben, der in der Richtlinie definiert ist, die Sie testen möchten.
-2. Senden Sie eine e-Mail oder einen Microsoft Teams-Chat, die die Kriterien erfüllen, die Sie in der Kommunikations Konformitätsrichtlinie definiert haben. Hierbei kann es sich um ein Stichwort, eine Anlagengröße, eine Domäne usw. handeln. Stellen Sie sicher, dass Sie feststellen, ob ihre konfigurierten bedingten Einstellungen in der Richtlinie zu restriktiv oder zu nachsichtig sind.
+2. Senden Sie eine e-Mail oder einen Microsoft Teams-Chat, die die Kriterien erfüllen, die Sie in der Kommunikations Konformitätsrichtlinie definiert haben. Bei diesem Test kann es sich um ein Stichwort, eine Anlagegröße, eine Domäne usw. handeln. Stellen Sie sicher, dass Sie feststellen, ob ihre konfigurierten bedingten Einstellungen in der Richtlinie zu restriktiv oder zu nachsichtig sind.
 
     > [!NOTE]
     > Die Kommunikation in allen Quellkanälen kann bis zu 24 Stunden in Anspruch nehmen, um eine Richtlinie vollständig zu verarbeiten.
@@ -166,3 +173,12 @@ Führen Sie die folgenden Schritte aus, um die Konformitätsrichtlinie für Komm
 3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikations Konformitätsrichtlinie festgelegt ist. Navigieren Sie zu **Kommunikation Compliance** > **Alerts** , um die Warnungen für Ihre Richtlinien anzuzeigen.
 
 4. Beheben Sie die Warnung mithilfe der Korrektur Steuerelemente, und stellen Sie sicher, dass die Warnung ordnungsgemäß aufgelöst wurde.
+
+## <a name="step-6-enable-auditing-for-your-communication-compliance-policies-optional"></a>Schritt 6: Aktivieren der Überwachung für Ihre Kommunikationsrichtlinien (optional)
+
+Nachdem Sie Ihre Richtlinien getestet haben, können Sie die Überwachung aktivieren, damit Aktivitäten im Zusammenhang mit der Kommunikation Compliance-Verwaltung aufgezeichnet werden. Dabei kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert.
+
+Wenn die Überwachung aktiviert ist, verfügen Kommunikationsrichtlinien zur Konformitätsüberwachung über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Sie können das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie verwenden, um eine Überwachungsdatei zu generieren oder Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll anzuzeigen, wenn die Überwachung aktiviert ist.
+
+Klicken Sie zum Aktivieren der Überwachung auf der Seite **Überwachungsprotokoll Suche** im Office 365 Security #a0 Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . Wird dieser Link nicht angezeigt, wurde die Überprüfung für Ihre Organisation bereits aktiviert. Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Dieser Vorgang ist nur einmal erforderlich. Weitere Informationen zum Überwachungsprotokoll finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
+

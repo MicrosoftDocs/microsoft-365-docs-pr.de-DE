@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633584"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805968"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
 
@@ -35,15 +35,15 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 
 - Eine Beschreibung des Felds "Meta Data" (in der **Spalte "Description**").
 
-| Feldname | Durchsuchbarer Feldname | Name des exportierten Felds | Anzeigefeld Name | Beschreibung |
-| :- |  :- |  :- |  :- |  :- |
+|Feldname|Durchsuchbarer Feldname|Name des exportierten Felds|Anzeigefeld Name|Beschreibung|
+|:-|:-|:-|:-|:-|
 | Anlageninhalts-ID | AttachmentContentId |  | Anlageninhalts-ID | Anlageninhalts-ID des Elements. |
 | Anlagennamen | AttachmentNames | Attachment_Names | Anlagennamen | Liste der Namen von Anlagen. |
 | Anwalts Kunde-Berechtigungs Bewertung | AttorneyClientPrivilegeScore |  | Anwalts Kunde-Berechtigungs Bewertung | Inhalts Ergebnis des Anwalts-Client-Berechtigungsmodells. |
 | Ursprung | Ursprung | Doc_authors | Ursprung | Autor aus den Dokumentmetadaten. |
 | BCC | Bcc | Email_bcc | BCC | BCC-Feld für Nachrichtentypen.  Das Format **ist \<DisplayName SMTPAddress>**. |
 | CC | Cc | Email_cc | CC | Feld CC für Nachrichtentypen.  Das Format **ist \<DisplayName SMTPAddress>**. |
-| Konformitäts Bezeichnungen | ComplianceLabels | Compliance_labels | Konformitäts Bezeichnungen | In Office 365 angewendete Kompatibilitäts Bezeichnungen. |
+| Konformitäts Bezeichnungen | ComplianceLabels | Compliance_labels | Konformitäts Bezeichnungen |[Aufbewahrungs Bezeichnungen](labels.md) , die auf Inhalte in Office 365 angewendet werden. |
 | Zusammengesetzter Pfad | CompoundPath | Compound_path | Zusammengesetzter Pfad | Mensch lesbarer Pfad, der die Quelle des Elements beschreibt. |
 | Inhalt | Inhalt |  |  | Extrahierter Text des Elements. |
 | Unterhaltungs Text | Unterhaltungs Text |  | Unterhaltungs Text | Unterhaltungs Text des Elements. |

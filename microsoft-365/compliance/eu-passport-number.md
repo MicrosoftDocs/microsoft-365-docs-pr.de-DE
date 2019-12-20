@@ -1,7 +1,7 @@
 ---
 title: EU-Passport-Nummer
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp EU-Passport-Nummern erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
-ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
+ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39662800"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805948"
 ---
 # <a name="eu-passport-number"></a>EU-Passport-Nummer
 
@@ -39,7 +39,7 @@ Eine Kombination aus einem Buchstaben, sieben Ziffern und einem Leerzeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -78,7 +78,7 @@ Zwei Buchstaben und gefolgt von sechs Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -488,7 +488,7 @@ Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -570,7 +570,7 @@ Acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -687,7 +687,7 @@ Neun Buchstaben oder Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -902,7 +902,7 @@ Eine Kombination aus Buchstaben und Zahlen aus acht oder neun Zeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 

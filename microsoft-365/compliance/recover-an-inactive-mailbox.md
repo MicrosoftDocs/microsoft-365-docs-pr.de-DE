@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Wenn ein ehemaliger Mitarbeiter in Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt ist, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
-ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6589c8b75e7d17720848ed221e9625c77b867503
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686295"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803712"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Wiederherstellen eines inaktiven Postfachs in Office 365
 
@@ -34,7 +34,7 @@ Im Abschnitt [Weitere Informationen](#more-information) finden Sie weitere Detai
 > [!NOTE]
 > Wir haben die Frist für die Erstellung neuer in-Place-Speicher verschoben, damit ein Postfach inaktiv wird. Aber irgendwann in der Zukunft werden Sie nicht in der Lage sein, neue in-Place-Aufbewahrungen in Exchange Online zu erstellen. Zu diesem Zeitpunkt können nur Beweissicherungsverfahren und Office 365 Aufbewahrungsrichtlinien verwendet werden, um ein inaktives Postfach zu erstellen. Vorhandene inaktive Postfächer, die sich in-situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können die in-situ-Speicher für inaktive Postfächer weiterhin verwalten. Dies umfasst das Ändern der Dauer eines in-situ-Speichers und das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des in-situ-Speichers. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Zum Rückspeichern eines inaktiven Postfachs müssen Sie Exchange Online PowerShell verwenden. Das Exchange Admin Center (EAC) kann hierfür nicht verwendet werden. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
@@ -45,9 +45,7 @@ Im Abschnitt [Weitere Informationen](#more-information) finden Sie weitere Detai
     ```
 
     Verwenden Sie die von diesem Befehl zurückgegebenen Informationen, um ein bestimmtes inaktives Postfach wiederherzustellen.
-    
-- Weitere Informationen zu inaktiven Postfächern finden Sie unter [inactive Mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
-    
+
 ## <a name="recover-an-inactive-mailbox"></a>Wiederherstellen eines inaktiven Postfachs
 
 Verwenden Sie das Cmdlet **New-Mailbox** mit dem Parameter *InactiveMailbox* , um ein inaktives Postfach wiederherzustellen. 
@@ -101,5 +99,5 @@ Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 3
 
     Wenn die Eigenschaft **ExternalDirectoryObjectId** keinen Wert hat, ist die Aufbewahrungszeit abgelaufen, und Sie können das inaktive Postfach wiederherstellen, indem Sie den Befehl **New-Mailbox -InactiveMailbox** ausführen. Wenn die Eigenschaft **ExternalDirectoryObjectId** einen Wert hat, ist die Aufbewahrungszeit für vorläufig gelöschte Postfächer nicht abgelaufen, und Sie müssen das inaktive Postfach wiederherstellen, indem Sie das Office 365-Benutzerkonto wiederherstellen. Siehe [Löschen oder Wiederherstellen von Benutzern](https://go.microsoft.com/fwlink/p/?LinkId=279162)
     
-- **Erwägen Sie das Aktivieren des Archivpostfachs, nachdem Sie ein inaktives Postfach wiederhergestellt haben.** Auf diese Weise kann der zurückkehrende Benutzer oder neue Mitarbeiter alte Nachrichten in das Archivpostfach verschieben. Wenn das Anhalten der Aufbewahrungszeit abgelaufen ist, verschiebt die Archivrichtlinie, die Teil der Exchange Online-Postfächern zugewiesenen standardmäßigen Exchange-Aufbewahrungsrichtlinie ist, Elemente, die zwei Jahre oder älter sind, in das Archivpostfach. Wenn Sie das Archivpostfach nicht aktivieren, verbleiben Elemente, die älter als zwei Jahre sind, im primären Postfach des Benutzers. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern im Office 365 &amp; Security Compliance Center](enable-archive-mailboxes.md).
+- **Erwägen Sie das Aktivieren des Archivpostfachs, nachdem Sie ein inaktives Postfach wiederhergestellt haben.** Auf diese Weise kann der zurückkehrende Benutzer oder neue Mitarbeiter alte Nachrichten in das Archivpostfach verschieben. Wenn das Anhalten der Aufbewahrungszeit abgelaufen ist, verschiebt die Archivrichtlinie, die Teil der Exchange Online-Postfächern zugewiesenen standardmäßigen Exchange-Aufbewahrungsrichtlinie ist, Elemente, die zwei Jahre oder älter sind, in das Archivpostfach. Wenn Sie das Archivpostfach nicht aktivieren, verbleiben Elemente, die älter als zwei Jahre sind, im primären Postfach des Benutzers. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern](enable-archive-mailboxes.md).
  

@@ -3,6 +3,7 @@ title: Vorbereiten von Daten für Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Erfahren Sie, wie Sie das Microsoft 365 &amp; Security Compliance Center verwenden, um Office 365 Daten für die Analyse mit Office 365 Advanced eDiscovery vorzubereiten. '
-ms.openlocfilehash: be778acb3356071e9575ed708623a0b94e2b3c7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0429c957035068074a571c97cf430b27f9ad5904
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081954"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803822"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Vorbereiten von Daten für Office 365 Advanced eDiscovery
 
@@ -29,7 +30,7 @@ In diesem Thema wird beschrieben, wie Sie die Ergebnisse einer Inhaltssuche in e
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten Office 365 Daten für Advanced eDiscovery
 
-Zum Analysieren von Daten mit Advanced eDiscovery können Sie die Ergebnisse einer Inhaltssuche verwenden, die Sie im Microsoft 365 Security &amp; Compliance Center (aufgeführt auf der Seite " **Inhaltssuche** " im Microsoft 365 Security &amp; Compliance Center) oder in einem Suche, die einem eDiscovery-Fall zugeordnet ist ( **** aufgeführt auf der Seite " &amp; eDiscovery" im Security Compliance Center) 
+Zum &amp; Analysieren von Daten mit Advanced eDiscovery können Sie die Ergebnisse einer Inhaltssuche verwenden, die Sie im Microsoft 365 Security Compliance Center (aufgeführt auf der Seite " **Inhaltssuche** " im Microsoft 365 Security &amp; Compliance Center) oder einer Suche im Zusammenhang mit einem eDiscovery-Fall (aufgeführt auf der Seite " **eDiscovery** " im Security &amp; Compliance Center) ausführen. 
   
 Die detaillierten Schritte zum Vorbereiten von Suchergebnissen für die Analyse in Advanced eDiscovery finden Sie unter [Vorbereiten von Suchergebnissen für Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
@@ -42,7 +43,7 @@ Nachdem Sie die Suchergebnisse im Security &amp; Compliance Center für die Anal
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts- oder Schul-/Unikonto bei Office 365 an.
     
 3. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     

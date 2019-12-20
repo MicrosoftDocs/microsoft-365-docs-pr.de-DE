@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859975"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805248"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Defense Federal Acquisition Regulation Supplement (DFARS)
 
@@ -32,7 +33,7 @@ Microsoft Government Cloud Services unterstützen die US-amerikanische Rüstungs
   
 Erfahren Sie, wie Sie Ihre DFARS-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [Download the Azure-Blueprint DFARS Customer Responsibilities Matrix](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 Abgedeckte Dienste für DoD-Impact Level 5
 

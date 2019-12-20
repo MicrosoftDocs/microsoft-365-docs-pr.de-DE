@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633654"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807334"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -51,7 +51,7 @@ Das Diagramm zeigt die Beziehungen zwischen den primären Komponenten von Compli
 
 ## <a name="assessments"></a>Bewertungen
 
-Bei [Assessments](working-with-compliance-manager.md#assessments) handelt es sich um Container, mit denen Sie Steuerelemente für Verantwortlichkeiten zwischen Microsoft und Ihrer Organisation für die Bewertung der Sicherheits-und Compliance-Risiken von Cloud-Diensten organisieren können. Mithilfe von Assessments können Sie Datenschutzgarantien implementieren, die durch einen Compliance-Standard und entsprechende Datenschutzstandards, Verordnungen oder Gesetze festgelegt sind. Sie unterstützen Sie beim Erkennen Ihrer Datenschutz-und Compliance-Haltung gegenüber dem ausgewählten Industriestandard für den ausgewählten Microsoft Cloud-Dienst. Die Bewertungen werden durch die Implementierung von Steuerelementen vervollständigt, die in der Bewertung enthalten sind, die einem Zertifizierungsstandard zugeordnet ist.
+Bei [Assessments](working-with-compliance-manager.md#assessments) handelt es sich um Container, mit denen Sie Steuerelemente basierend auf den Zuständigkeiten zwischen Microsoft und Ihrer Organisation für die Bewertung der Sicherheits-und Konformitätsrisiken von Cloud-Diensten organisieren können. Mithilfe von Assessments können Sie Datenschutzgarantien implementieren, die durch einen Compliance-Standard und entsprechende Datenschutzstandards, Verordnungen oder Gesetze festgelegt sind. Sie unterstützen Sie beim Erkennen Ihrer Datenschutz-und Compliance-Haltung gegenüber dem ausgewählten Industriestandard für den ausgewählten Microsoft Cloud-Dienst. Die Bewertungen werden durch die Implementierung von Steuerelementen vervollständigt, die in der Bewertung enthalten sind, die einem Zertifizierungsstandard zugeordnet ist.
 
 Standardmäßig erstellt Compliance-Manager die folgenden Bewertungen für Ihre Organisation:
 
@@ -124,7 +124,7 @@ Es gibt keine standardmäßige **Gastzugriffs** Rolle mehr. Jedem Benutzer muss 
   
 ## <a name="manage-evidence"></a>Verwalten von beweisen
 
-Compliance-Manager kann Beweise für Ihre Implementierungsaufgaben zum Ausführen von Tests und zur Validierung von von Kunden verwalteten Steuerelementen speichern. Evidence enthält Dokumente, Tabellenkalkulationen, Screenshots, Bilder, Skripts, Skriptausgabe Dateien und andere Dateien. Compliance-Manager erhält auch automatisch Telemetrie und erstellt einen Evidence Record für Aktionselemente, die mit Secure Score integriert sind. Alle Daten, die als Beweismaterial in den Compliance-Manager hochgeladen wurden, werden in den USA auf Microsoft-Cloud-Speicher Standorten gespeichert. Diese Daten werden in Azure-Regionen in Südostasien und Westeuropa repliziert.
+Compliance-Manager kann Beweise für Ihre Implementierungsaufgaben zum Testen und zur Validierung von von Kunden verwalteten Steuerelementen speichern. Evidence enthält Dokumente, Tabellenkalkulationen, Screenshots, Bilder, Skripts, Skriptausgabe Dateien und andere Dateien. Compliance-Manager erhält auch automatisch Telemetrie und erstellt einen Evidence Record für Aktionselemente, die mit Secure Score integriert sind. Alle Daten, die als Beweismaterial in den Compliance-Manager hochgeladen wurden, werden in den USA auf Microsoft-Cloud-Speicher Standorten gespeichert. Diese Daten werden in Azure-Regionen in Südostasien und Westeuropa repliziert.
 
 ## <a name="templates"></a>Vorlagen
 
@@ -134,16 +134,18 @@ Die im Compliance-Manager enthaltenen vorkonfigurierten Vorlagen lauten wie folg
 
 1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST-Cyber-Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST-Cyber-Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / -[HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP moderat](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [Dsgvo der Europäischen Union](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [California Consumer Privacy Act (CCPA) – Vorschau](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / -[HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP moderat](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [Dsgvo der Europäischen Union](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Vorschau)
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Vorschau)
+14. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>Kompatibilitätsbewertung
 

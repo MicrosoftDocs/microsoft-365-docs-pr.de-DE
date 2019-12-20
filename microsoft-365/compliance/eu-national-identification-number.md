@@ -1,7 +1,7 @@
 ---
 title: EU-nationale Identifikationsnummer
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-nationale Identifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081475"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805938"
 ---
 # <a name="eu-national-identification-number"></a>EU-nationale Identifikationsnummer
 
@@ -37,7 +37,7 @@ Eine Kombination aus Buchstaben, Ziffern und Sonderzeichen mit einer 24 Zeichen 
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -175,7 +175,7 @@ Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -676,7 +676,7 @@ Mens KODAS.
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -749,7 +749,7 @@ Sieben Ziffern, gefolgt von einem Buchstaben:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
@@ -1108,7 +1108,7 @@ Sieben Ziffern, gefolgt von einem Zeichen
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Nicht anwendbar
   
 ### <a name="definition"></a>Definition
 
