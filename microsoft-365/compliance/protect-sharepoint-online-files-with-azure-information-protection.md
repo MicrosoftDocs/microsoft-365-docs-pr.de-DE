@@ -18,17 +18,19 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Zusammenfassung: Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite.'
-ms.openlocfilehash: 19fab529a9a8fb60afef1a419323d7544eeace88
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 99f6882c37337369fe082314af000f83bfef9aa5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668823"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803752"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Schützen von SharePoint Online-Dateien mit Azure Information Protection
 
- **Zusammenfassung:** Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite.
-  
+>[!Note]
+>Die aktuelle Lösung für Dateien auf einer hochgradig vertraulichen SharePoint Online-Teamwebsite verwendet Office 365-Vertraulichkeitsbezeichnungen. Weitere Einzelheiten finden Sie in [diesem Artikel](protect-sharepoint-online-files-with-sensitivity-label.md).
+>
+
 Konfigurieren Sie anhand der Schritte in diesem Artikel Azure Information Protection, um eine Verschlüsselung und Berechtigungen für Dateien bereitzustellen. Die Dateien können zu einer SharePoint-Bibliothek hinzugefügt werden, die für die Schutzebene „streng vertraulich“ konfiguriert wurde. Sie können eine Datei auch direkt über die Website öffnen und den Azure Information Protection-Client verwenden, um eine Verschlüsselung hinzuzufügen. Der Verschlüsselungs- und Berechtigungsschutz einer Datei bleibt auch dann bestehen, wenn die Datei von der Website heruntergeladen wird. 
 
 Diese Schritte sind Teil einer umfangreicheren Lösung zur Konfiguration eines Schutzes streng vertraulicher Daten für SharePoint-Websites und die Dateien innerhalb dieser Websites. Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
@@ -49,9 +51,7 @@ Konfigurieren Sie anschließend Azure Information Protection mit einer neuen ber
     
 2. Wechseln Sie auf einer separaten Registerkarte im Browser zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com).
     
-3. Wenn Sie Azure Information Protection zum ersten Mal konfigurieren, befolgen Sie diese [Anweisungen](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-
-4. Klicken Sie im Listenbereich auf **Alle Dienste**, geben Sie **Information** ein, und klicken Sie dann auf **Azure Information Protection**.
+4. Geben Sie im Suchfeld die **Information** ein, klicken Sie dann auf **Azure Information Protection**.
 
 5. Klicken Sie auf **Etiketten**.
     
@@ -113,6 +113,6 @@ Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gew�
 
 [Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

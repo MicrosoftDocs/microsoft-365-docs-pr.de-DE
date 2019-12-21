@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 828c4f7faaae1225d438a4d34b159d981b31b141
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749799"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806518"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Dynamics 365-Prüfliste zu den Verantwortlichkeiten für die DSGVO
 
@@ -26,7 +27,7 @@ ms.locfileid: "38749799"
 
 Diese Prüfliste zu den Verantwortlichkeiten ist eine bequeme Möglichkeit, um auf Informationen zuzugreifen, die Sie bei Verwendung von Microsoft Dynamics 365 zur Unterstützung der DSGVO unter Umständen benötigen. Die Prüfliste ist basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) Anforderungen für die Sicherheitstechnik.
+- [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) für Anforderungen an die Sicherheitstechnik.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für Datenschutzanforderungen.
 
 Sie können die Elemente in dieser Checkliste mit dem Compliance-Manager[[15](gdpr-arc-Dynamics365.md#15)] verwalten, indem Sie auf die Kontroll-ID und den Kontrolltitel unter *Vom Kunden verwaltete Steuerelemente* in der DSGVO-Kachel verweisen.

@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die Datensätze
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Strategie für die Datensatzverwaltung in Ihrer Office 365- oder Microsoft-Organisation implementieren möchten, verwenden Sie Aufbewahrungsbezeichnungen, um Inhalte als Datensatz zu kennzeichnen. Veröffentlichen oder wenden Sie dann die Aufbewahrungsbezeichnungen für den Datensatz automatisch an.
-ms.openlocfilehash: 37f23dcd9c2b94edce99fa55977cb26e1faa4d8e
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39637821"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803832"
 ---
 # <a name="overview-of-records"></a>Übersicht über die Datensätze
 
@@ -62,7 +62,7 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
     ![Nachricht, dass das Element nicht aus SharePoint gelöscht wurde](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    Wenn ein Benutzer versucht, einen Datensatz in OneDrive zu löschen, wird das Element in das permanentes Dokumentarchiv verschoben, entsprechend der Beschreibung in  [Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten am Speicherort](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
+    Wenn ein Benutzer versucht, einen Datensatz in OneDrive zu löschen, wird das Element in das permanente Dokumentarchiv verschoben, entsprechend der Beschreibung in [Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten am Speicherort](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
 
   - **Datensatzbezeichnungen können nicht entfernt werden.** Sobald eine Datensatzbezeichnung auf ein Element angewendet wurde, kann nur der Administrator dieses Speicherorts (beispielsweise ein Websitesammlungsadministrator einer SharePoint-Website) diese Datensatzbezeichnung entfernen.
 
@@ -76,7 +76,7 @@ Wenn Sie eine Aufbewahrungsbezeichnung erstellen, haben Sie die Möglichkeit, di
 
    ![Aktivieren Sie das Kontrollkästchen „Bezeichnung zum Klassifizieren von Inhalt als „Datensatz“ verwenden“](media/recordversioning6.png)
 
-3. [Veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) Sie oder [wenden Sie](labels.md#applying-a-retention-label-automatically-based-on-conditions) die Aufbewahrungsbezeichnung auf SharePoint-Websites und/ oder OneDrive-Konten automatisch an. 
+3. [Veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) Sie oder [wenden Sie](labels.md#applying-a-retention-label-automatically-based-on-conditions) die Aufbewahrungsbezeichnung auf SharePoint-Websites und/ oder OneDrive-Konten automatisch an.
 
 ### <a name="applying-a-retention-label-to-content"></a>Anwenden einer Aufbewahrungsbezeichnung auf Inhalte
 
@@ -85,7 +85,7 @@ Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach eine Datens
 Es sieht so aus, als ob eine Datensatzbezeichnung auf ein Dokument auf einer SharePoint-Website oder ein OneDrive-Konto angewendet wurde.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning7.png" alt-text="Detailbereich für ein als Datensatz markiertes Dokument":::
+![Detailbereich für ein als Datensatz markiertes Dokument](media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>Datensatzversionsverwaltung
 
@@ -102,7 +102,7 @@ Wenn Sie die Datensatzversionsverwaltung verwenden möchten, müssen Sie im erst
 Die Datensatzversionsverwaltung steht für alle Dokumente mit einer Aufbewahrungsbezeichnung , die das Element als Datensatz kennzeichnet, automatisch zur Verfügung. Wenn ein Benutzer die Dokumenteigenschaften über den Detailbereich anzeigt, wechselt er **Datensatzstatus** von **Gesperrt** zu **Entsperrt**. Dieser einzelne Klick erstellt einen Datensatz im Ordner „Datensätze des permanenten Dokumentenarchiv, in dem er sich für den Rest des Aufbewahrungszeitraums befindet. Während das Dokument entsperrt ist, kann jeder Benutzer mit Berechtigungen die Datei bearbeiten. Benutzer können die Datei jedoch nicht löschen, weil Sie als gekennzeichneter Datensatz betrachtet wird. Nachdem die erforderlichen Änderungen vorgenommen wurden, kann der Benutzer den **Datensatzstatus** von **Entsperrt** auf **Gesperrt**wechseln, sodass das Dokument erneut als Datensatz gekennzeichnet wird und nicht bearbeitet werden kann.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning8.png" alt-text="Datensatzstatus-Eigenschaft in einem Dokument, das als Datensatz gekennzeichnet ist":::
+![Datensatzstatus-Eigenschaft in einem Dokument, das als Datensatz gekennzeichnet ist](media/recordversioning8.png)
 
 > [!NOTE]
 > Für die Datensatzversionsverwaltung ist eine Office 365 Enterprise E5-Lizenz für jeden Benutzer erforderlich, der die Berechtigung zum Bearbeiten von Inhalten hat, die in einer SharePoint-Website oder in einem OneDrive-Konto als Datensatz gekennzeichnet wurden. Benutzer, die schreibgeschützten Zugriff haben, benötigen keine Lizenz.
@@ -112,7 +112,7 @@ Die Datensatzversionsverwaltung steht für alle Dokumente mit einer Aufbewahrung
 Nachdem einem Dokument eine Datensatzbezeichnung zugeordnet wurde, kann jeder Benutzer in der Standardgruppe „Mitglieder“ (Berechtigungsstufe „Mitwirken“) einen Datensatz entsperren oder einen entsperrten Datensatz sperren.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning9.png" alt-text="Der Datensatzstatus zeigt, dass das Datensatzdokument entsperrt ist":::
+![Der Datensatzstatus zeigt, dass das Datensatzdokument entsperrt ist](media/recordversioning9.png)
 
 Wenn ein Benutzer einen Datensatz entsperrt, werden die folgenden Aktionen ausgeführt:
 
@@ -133,7 +133,7 @@ Wenn ein Benutzer einen Datensatz sperrt, kann das ursprüngliche Dokument erneu
 Jedes Mal, wenn ein Benutzer einen Datensatz entsperrt, wird die aktuelle Version in den Ordner Datensätze in dem permanenten Dokumentarchiv kopiert, und diese Version enthält den Wert **Datensatz** im Feld **Kommentare** des Versionsverlaufs.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning10.png" alt-text="Datensatz, der in dem permanenten Dokumentarchiv angezeigt wird":::
+![Datensatz, der in dem permanenten Dokumentarchiv angezeigt wird](media/recordversioning10.png)
 
 Um den Versionsverlauf anzuzeigen, wählen Sie ein Dokument in der Dokumentbibliothek aus, und klicken Sie dann im Element „Menü“ auf **Versionsverlauf**.
 
@@ -142,11 +142,11 @@ Um den Versionsverlauf anzuzeigen, wählen Sie ein Dokument in der Dokumentbibli
 Die Datensätze werden im Ordner „Datensätze“ in dem permanenten Dokumentarchiv auf der Website auf oberster Ebene in der Websitesammlung gespeichert. Wählen Sie in der linken Navigationsleiste auf der Website auf oberster Ebene **Websiteinhalte** \> **Permanentes Dokumentarchiv** aus.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning11.png" alt-text="Permanentes Dokumentarchiv":::
+![Permanentes Dokumentarchiv](media/recordversioning11.png)
 
 <br/><br/>
 
-:::image type="content" source="media/recordversioning12.png" alt-text="Datensatzordner in dem permanenten Dokumentarchiv":::
+![Datensatzordner in dem permanenten Dokumentarchiv](media/recordversioning12.png)
 
 Das permanente Dokumentarchiv ist nur für Websitesammlungsadministratoren sichtbar. Außerdem ist das permanente Dokumentarchiv nicht standardmäßig vorhanden. Er wird nur erstellt, wenn Inhalte, die einer Aufbewahrungsbezeichnung oder einer Aufbewahrungsrichtlinie unterliegen, zum ersten Mal in der Websitesammlung gelöscht werden.
 
@@ -155,6 +155,6 @@ Das permanente Dokumentarchiv ist nur für Websitesammlungsadministratoren sicht
 Die Aktionen zum Sperren und Entsperren von Datensätzen werden im Office 365-Überwachungsprotokoll protokolliert. Sie können nach den spezifischen Aktivitäten **Datensatzstatus auf „gesperrt“ geändert** und **Datensatzstatus auf „entsperrt“ geändert** suchen, die sich im Abschnitt **Datei- und Seitenaktivitäten** auf der Dropdownliste **Aktivitäten** auf der Seite **Überprüfungsprotokoll durchsuchen** im Security & Compliance Center befinden.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning13.png" alt-text="Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung":::
+![Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung](media/recordversioning13.png)
 
 Weitere Informationen zum Durchsuchen dieser Ereignisse finden Sie im Abschnitt „Datei- und Seitenaktivitäten“ im [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).

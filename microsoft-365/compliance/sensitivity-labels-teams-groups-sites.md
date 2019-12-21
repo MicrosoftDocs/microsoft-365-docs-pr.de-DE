@@ -1,185 +1,255 @@
 ---
 title: Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 ms.author: krowley
-author: kccross
+author: cabailey
 manager: laurawi
-ms.date: 12/05/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
-description: Sie können Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: e69968ad5939069ca8ae1611f3bbdc674f9dd7de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
-ms.translationtype: MT
+description: Sie können Bezeichnungen auf Microsoft Teams, Office 365-Gruppen und SharePoint-Websites anwenden.
+ms.openlocfilehash: edaa13a21d5eb9069c6e4dce509c13456dec3d89
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871251"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802878"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
-Wenn Sie Sensitivitäts Bezeichnungen im [Microsoft 365 Compliance Center](https://protection.office.com/)erstellen, können Sie diese nun auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden. Sie können den Beschriftungen Richtlinien zuordnen, um Sie zu steuern:
+Wenn Sie im [Microsoft 365 Compliance Center](https://protection.office.com/) Vertraulichkeitsbezeichnungen erstellen, können Sie diese jetzt auf Microsoft Teams, Office 365-Gruppen und SharePoint-Websites anwenden. Sie können den Bezeichnungen Richtlinien zuordnen, um Folgendes zu steuern:
 
-- Öffentliche/private Einstellungen
+- Öffentliche/private-Einstellungen
 - Gastzugriff
-- Zugriff von nicht verwalteten Geräten
+- Zugriff von nicht verwalteten Geräten aus
 
-Wenn Sie eine Bezeichnung auf ein Team oder eine Gruppe anwenden, gilt die Bezeichnung automatisch für die verbundene SharePoint-Teamwebsite und umgekehrt.
+Wenn Sie eine Bezeichnung auf ein Team oder eine Gruppe anwenden, wird die Bezeichnung automatisch auf die verbundene SharePoint-Teamwebsite und umgekehrt angewendet.
 
-Nun können Sie auch Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren. [Weitere Informationen](sensitivity-labels-sharepoint-onedrive-files.md).
+Außerdem können Sie Vertraulichkeitsbezeichnungen jetzt auch für Office-Dateien in SharePoint und OneDrive aktivieren. Weitere Informationen finden Sie unter [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Informationen zur öffentlichen Vorschau für Microsoft Teams, Office 365 Gruppen und SharePoint-Websites
+## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Informationen zur öffentlichen Vorschau für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites
 
-Vertraulichkeits Bezeichnungen für Microsoft Teams, Office 365 Gruppen und SharePoint-Websites werden schrittweise für Mandanten bereitgestellt und können vor der endgültigen Version geändert werden.
+Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites werden schrittweise für Mandanten bereitgestellt und können sich vor der endgültigen Version ändern.
 
-Die öffentliche Vorschau funktioniert nicht mit Office 365 Inhalts Zustellungs Netzwerken (CDNs).
+Diese öffentliche Vorschau kann nicht mit Office 365-Netzwerken für die Inhaltsübermittlung (Content Delivery Network, CDN) verwendet werden.
 
 ## <a name="overview"></a>Übersicht
 
-Wenn Sie Vertraulichkeits Bezeichnungen veröffentlichen, haben Benutzer in Office 365 Zugriff auf dieselbe Liste von Bezeichnungen.
+Wenn Sie Vertraulichkeitsbezeichnungen veröffentlichen, haben alle Benutzer in Office 365 Zugriff auf dieselbe Liste von Bezeichnungen.
 
-Diese Bilder zeigen:
+Die folgenden Bilder verdeutlichen:
 
-- Wie die Liste angezeigt wird, wenn Sie eine neue Teamwebsite aus SharePoint erstellen
+- Wie die Liste aussieht, wenn eine neue Teamwebsite in SharePoint erstellt wird
 
-- Wenn Sie die Liste in Word anzeigen
+- Wann die Liste in Word angezeigt wird
 
-![Eine Vertraulichkeits Bezeichnung beim Erstellen einer Teamwebsite aus SharePoint](media/sensitivity-label-new-team-site.png)
+Beispiel:
 
-![Eine Vertraulichkeits Bezeichnung, die in der Word-Desktop-App angezeigt wird](media/sensitivity-label-word.png)
+![Eine Vertraulichkeitsbezeichnung beim Erstellen einer Teamwebsite in SharePoint](media/sensitivity-label-new-team-site.png)
 
-## <a name="enable-this-preview-by-using-azure-powershell"></a>Aktivieren dieser Vorschau mithilfe von Azure PowerShell
+![Eine in der Word-Desktop-App angezeigte Vertraulichkeitsbezeichnung](media/sensitivity-label-word.png)
 
-1. Melden Sie sich mit Azure PowerShell als globaler Administrator bei Azure an. Anweisungen finden Sie unter [Anmelden mit Azure PowerShell](/powershell/azure/authenticate-azureps).
+## <a name="enable-this-preview"></a>Aktivieren dieser Vorschau
 
-2. Führen Sie den folgenden Befehl aus:
+Sie müssen die Vorschauversion von [Azure Active Directory PowerShell für Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) (Modulname **AzureADPreview**) verwenden, um diese Vorschau von Vertraulichkeitsbezeichnungen mit Microsoft Teams, Office 365-Gruppen und SharePoint-Websites zu aktivieren:
 
-```powershell
-  Connect-AzureAD
-  $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
-  if ($setting -eq $null)
-  {
-    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
-    $setting = $template.CreateDirectorySetting()
-    $setting["EnableMIPLabels"] = "True"
-    New-AzureADDirectorySetting -DirectorySetting $setting
-  }
-  else
-  {
-    $setting["EnableMIPLabels"] = "True"
-    Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
-  }
-```
+- Wenn Sie zuvor noch keine Version des Azure AD PowerShell-Moduls installiert haben, lesen Sie [Installieren des Azure AD-Moduls](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module), und folgen Sie den Anweisungen zum Installieren der öffentlichen Vorschauversion.
 
-Office 365 verwendet die alten Klassifizierungen für neue Gruppen und SharePoint-Websites nicht mehr, wenn Sie diese Vorschau aktivieren. Wenn Sie [Azure AD Site Klassifizierung](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificationlist"]) verwendet haben, zeigen vorhandene Gruppen und Websites weiterhin die alten Klassifizierungen an. Um die neuen Klassifizierungen anzuzeigen, konvertieren Sie Sie. Informationen zum Konvertieren dieser Website finden Sie unter [Wenn Sie klassische Azure AD Site Klassifizierung verwendet](#if-you-used-classic-azure-ad-site-classification)haben. 
+- Wenn Sie die allgemein verfügbare Version 2.0 des Azure AD PowerShell-Moduls (AzureAD) installiert haben, müssen Sie sie deinstallieren, indem Sie `Uninstall-Module AzureAD` in ihrer PowerShell-Sitzung ausführen, und dann mit `Install-Module AzureADPreview` die Vorschauversion installieren.
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Festlegen von Standort-und Gruppeneinstellungen beim Erstellen oder Bearbeiten von Vertraulichkeits Bezeichnungen
+- Wenn Sie die Vorschauversion bereits installiert haben, führen Sie `Install-Module AzureADPreview` aus, um sicherzustellen, dass es sich um die neueste Version dieses Moduls handelt.
 
-Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus, um Vertraulichkeits Bezeichnungen zu erstellen oder zu bearbeiten. Sie müssen diese Schritte ausführen, damit die neuen Sensitivitäts Bezeichnungen mit Websites und Gruppen arbeiten können, auch wenn bereits Beschriftungen definiert sind. Änderungen an diesen Einstellungen können bis zu 24 Stunden synchron dauern.
+Jetzt sind Sie bereit zum Aktivieren der Vorschau der Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites:
 
-1. Wählen Sie im Microsoft 365 Compliance Center **Klassifizierungs** > **Sensitivitäts Bezeichnungen**aus.
+1. Stellen Sie in einer PowerShell-Sitzung unter Verwendung eines Geschäfts-, Schul-, oder Unikontos mit globalen Administratorberechtigungen eine Verbindung mit Azure Active Directory her. Führen Sie beispielsweise den folgenden Befehl aus:
+    
+        Connect-AzureAD
+    
+    Vollständige Anweisungen finden Sie unter [Herstellen einer Verbindung mit Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
-2. Wählen Sie **Beschriftung erstellen**aus. Wenn Sie bereits über eine Bezeichnung verfügen, fahren Sie mit dem nächsten Schritt fort.
+2. Führen Sie die folgenden Befehle aus:
+    
+    ```powershell
+    $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
+    if ($setting -eq $null)
+    {
+    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
+    $setting = $template.CreateDirectorySetting()
+    $setting["EnableMIPLabels"] = "True"
+    New-AzureADDirectorySetting -DirectorySetting $setting
+    }
+    else
+    {
+    $setting["EnableMIPLabels"] = "True"
+    Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
+    }
+    ```
+    
+    > [!NOTE]
+    > Wenn Sie diese Vorschau aktivieren, verwendet Office 365 die alten Klassifizierungen nicht mehr für neue Gruppen und SharePoint-Websites. Wenn Sie die [Azure Ad-Websiteklassifizierung](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]) verwendet haben, zeigen vorhandene Gruppen und Websites weiterhin die alten Klassifizierungen an. Um die neuen Klassifizierungen anzuzeigen, konvertieren Sie sie. Informationen zur Konvertierung finden Sie unter [Sie haben die klassische Azure AD-Websiteklassifizierung verwendet](#if-you-used-classic-azure-ad-site-classification). 
 
-3. Wählen Sie die gewünschten Optionen aus, und wählen Sie dann auf der Registerkarte **Website und Gruppeneinstellungen** Folgendes aus:
+3. Stellen Sie in derselben PowerShell-Sitzung nun mithilfe eines Geschäfts-, Schul- oder Unikontos, das über globale Administratorberechtigungen verfügt, eine Verbindung mit dem Security & Compliance Center her. Anweisungen hierzu finden Sie unter [Herstellen einer Verbindung mit Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-    - Datenschutz (öffentlich/privat): Private bedeutet, dass nur genehmigte Mitglieder in Ihrer Organisation sehen können, was sich innerhalb der Gruppe befindet. Jeder andere in Ihrer Organisation kann nicht sehen, was in der Gruppe ist. [Weitere Informationen](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
-    - Gastzugriff: Sie können steuern, ob Gäste zu einer Gruppe hinzugefügt werden können. [Informationen zum Verwalten des Gastzugriffs in Office 365 Gruppen](/office365/admin/create-groups/manage-guest-access-in-groups)
-    - Nicht verwaltete Geräte: mit dieser Einstellung können Sie den Zugriff auf SharePoint-Inhalte von Geräten blockieren oder begrenzen, die in InTune nicht mit Hybrid-AD verbunden oder kompatibel sind. Wenn Sie nicht verwaltete Geräte auswählen, müssen Sie zu Azure AD gehen, um die Einrichtung der Richtlinie abzuschließen. Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](/sharepoint/control-access-from-unmanaged-devices).
+4. Führen Sie die folgenden Befehle aus:
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    Execute-AzureAdLabelSync
+    ```
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Festlegen von Website- und Gruppeneinstellungen beim Erstellen oder Bearbeiten von Vertraulichkeitsbezeichnungen
 
-![Die Registerkarte "Website" und "Gruppeneinstellungen"](media/edit-sensitivity-label-site-group.png)
+Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus, um Vertraulichkeitsbezeichnungen zu erstellen oder zu bearbeiten. Sie müssen diese Schritte ausführen, damit die neuen Vertraulichkeitsbezeichnungen mit Websites und Gruppen verwendet werden können, auch wenn Sie bereits Bezeichnungen definiert haben. Die Synchronisierung der Änderungen an diesen Einstellungen kann bis zu 24 Stunden dauern.
+
+1. Wählen Sie im Microsoft 365 Compliance Center **Klassifizierung** > **Vertraulichkeitsbezeichnungen** aus.
+
+2. Wählen Sie **Bezeichnung erstellen** aus. Wenn Sie bereits über eine Bezeichnung verfügen, fahren Sie mit dem nächsten Schritt fort.
+
+3. Wählen Sie die gewünschten Optionen und dann auf der Registerkarte **Website- und Gruppeneinstellungen** die folgenden Optionen aus:
+    
+    - Datenschutz (Öffentlich/Privat): "Privat" bedeutet, dass nur genehmigte Mitglieder in Ihrer Organisation die Inhalte der Gruppe sehen können. Alle anderen Benutzer in Ihrer Organisation können keine Inhalte der Gruppe anzeigen. [Weitere Informationen](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
+    - Gastzugriff: Sie können steuern, ob Gäste einer Gruppe hinzugefügt werden können. [Weitere Informationen zum Verwalten des Gastzugriffs in Office 365-Gruppen](/office365/admin/create-groups/manage-guest-access-in-groups)
+    - Nicht verwaltete Geräte: Mit dieser Einstellung können Sie den Zugriff auf SharePoint-Inhalte von Geräten aus, die keine in Azure AD eingebundenen Hybridgeräte oder nicht Intune-konform sind, blockieren oder einschränken. Wenn Sie "Nicht verwaltete Geräte" auswählen, müssen Sie zu Azure AD wechseln, um das Einrichten der Richtlinie abzuschließen. Informationen hierzu finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices).
+    
+    ![Die Registerkarte "Website- und Gruppeneinstellungen"](media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
-> Nur die Standort-und Gruppeneinstellungen werden wirksam, wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder einen Standort anwenden. Andere Einstellungen wie Verschlüsselung und Inhalts Markierung werden nicht auf alle Inhalte innerhalb des Teams, der Gruppe oder der Website angewendet. Wenn Sie eine Bezeichnung erstellen und die Einstellungen für die Website und die Gruppe nicht aktivieren, ist die Bezeichnung auch dann verfügbar, wenn Benutzer Teams, Gruppen und Websites erstellen, es wird jedoch nichts tun, wenn Benutzer Sie anwenden.
+> Wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder eine Website anwenden, werden nur die Website- und Gruppeneinstellungen wirksam. Andere Einstellungen (z. B. Verschlüsselung und Inhaltskennzeichnung) werden nicht auf alle Inhalte innerhalb des Teams, der Gruppen oder der Website angewendet.
+> 
+> Ähnlich verhält es sich, wenn Sie eine Bezeichnung erstellen und Website- und Gruppeneinstellungen nicht aktivieren. Die Bezeichnung ist dann weiterhin verfügbar, wenn Benutzer Teams, Gruppen und Websites erstellen, aber die Klassifizierung erfolgt ohne Anwendung irgendwelcher Einstellungen.
 
-[Informationen zum Veröffentlichen einer Vertraulichkeits Bezeichnung](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+[Weitere Informationen zum Veröffentlichen von Vertraulichkeitsbezeichnungen](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
-## <a name="troubleshoot-sensitivity-label-deployment"></a>Problembehandlung bei der Sensitivitäts Bezeichnungs Bereitstellung
+## <a name="sensitivity-label-management"></a>Verwaltung von Vertraulichkeitsbezeichnungen
 
-Wenn beim Erstellen eines Teams oder Office 365 Gruppe Probleme auftreten, nachdem Sie diese Einstellungen aktiviert oder die Beschreibung einer Sensitivitäts Bezeichnung geändert haben, speichern Sie die Beschriftung, warten Sie einige Stunden, und versuchen Sie dann erneut, das Team oder die Office 365 Gruppe zu erstellen. Weitere Informationen finden Sie unter [Planen des Rollouts nach dem Erstellen oder Ändern einer Vertraulichkeits Bezeichnung](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+> [!WARNING]
+> Das Erstellen, Ändern und Löschen von Vertraulichkeitsbezeichnungen, die Sie für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites verwenden, erfordert eine sorgfältige Abstimmung mit der Veröffentlichung von Bezeichnungsrichtlinien für Benutzer. 
 
-Wenn Sie die neue Sensitivitäts Bezeichnung immer noch nicht in SharePoint Online sehen können, wenden Sie sich umgehend an den Microsoft-Support.
+Vermeiden Sie Erstellungsfehler für Websites und Gruppen, die sich auf alle Benutzer auswirken, indem Sie die nachstehenden Anweisungen beachten.
 
-## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Anwenden einer Vertraulichkeits Bezeichnung auf ein neues Team
+**Erstellen und Veröffentlichen von Bezeichnungen:**
 
-Benutzer können Sensitivitäts Bezeichnungen auswählen, wenn Sie neue Teams in Microsoft Teams erstellen. Wenn Sie die Empfindlichkeitsstufe auswählen, ändert sich die Datenschutzeinstellung bei Bedarf. Abhängig von der Einstellung für den Gastzugriff, die Sie für die Bezeichnung ausgewählt haben, können Benutzer Personen außerhalb der Organisation dem Team hinzufügen.
+Nach der Erstellung und Veröffentlichung einer Vertraulichkeitsbezeichnung kann es bis zu 24 Stunden dauern, bis die Bezeichnung für Benutzer in Teams, Gruppen und Websites sichtbar wird. Führen Sie die folgenden Schritte aus, um eine Bezeichnung für alle Benutzer im Mandanten zu veröffentlichen:
 
-![Die Datenschutzeinstellung beim Erstellen eines neuen Teams](media/privacy-setting-new-team.png)
+1. Erstellen Sie die Vertraulichkeitsbezeichnung, und veröffentlichen Sie sie nur für einige Benutzerkonten im Mandanten.
 
-Nachdem Sie das Team erstellt haben, wird die Sensitivitäts Bezeichnung in der oberen rechten Ecke aller Kanäle angezeigt.
+2. Warten Sie 24 Stunden.
 
-![Die Vertraulichkeits Bezeichnung wird im Team angezeigt.](media/privacy-setting-teams.png)
+3. Nach Ablauf dieser 24 Stunden erstellen Sie mit einem der in Schritt 1 angegebenen Benutzerkonten ein Team, eine Office 365-Gruppe oder eine SharePoint-Website mit der Bezeichnung, die Sie in Schritt 1 erstellt haben.
 
-Der Dienst wendet die gleiche Vertraulichkeits Bezeichnung automatisch auf die Office 365 Gruppe und die verbundene SharePoint-Teamwebsite an.
+4. Wenn während des Erstellungsvorgangs für Schritt 3 keine Fehler auftreten, veröffentlichen Sie die Bezeichnung für alle Benutzer in Ihrem Mandanten. Wenn Fehler auftreten, wenden Sie sich an den Microsoft-Support.
 
-## <a name="apply-a-sensitivity-label-to-a-new-group"></a>Anwenden einer Sensitivitäts Bezeichnung auf eine neue Gruppe
+**Ändern und Löschen von veröffentlichten Bezeichnungen:**
 
-In Outlook im Internet enthält das Feld neue **Vertraulichkeit** veröffentlichte Bezeichnungen. Wenn Benutzer weitere Informationen wünschen, können Sie auf das Hilfesymbol klicken, um Details zu den verfügbaren Bezeichnungen und zugehörigen Richtlinien zu lesen.
+Wenn Sie eine Vertraulichkeitsbezeichnung ändern oder löschen, die in einer oder mehreren Bezeichnungsrichtlinien enthalten ist, kann dies zu Erstellungsfehlern für alle Teams, Gruppen und Websites führen. Folgen Sie dieser Anleitung, um dieses Problem zu vermeiden:
 
-![Erstellen einer Gruppe und Auswählen einer Option unter Sensitivität](media/sensitivity-label-new-group.png)
+1. Entfernen Sie die Vertraulichkeitsbezeichnung aus allen Bezeichnungsrichtlinien, in denen die Bezeichnung enthalten ist.
 
-## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Anwenden einer Vertraulichkeits Bezeichnung auf eine neue Website
+2. Warten Sie 48 Stunden.
 
-Administratoren und Endbenutzer können Sensitivitäts Bezeichnungen auswählen, wenn Sie moderne Teamwebsites und Kommunikationswebsites erstellen.
+3. Versuchen Sie nach 48 Stunden, ein Team, eine Gruppe oder eine Website zu erstellen, und vergewissern Sie sich, dass die Bezeichnung nicht mehr angezeigt wird.
 
-[Erfahren Sie, wie Sie eine Website im neuen SharePoint Admin Center erstellen.](/sharepoint/create-site-collection)
+4. Wenn die Vertraulichkeitsbezeichnung nicht angezeigt wird, können Sie sie jetzt bedenkenlos ändern oder löschen. Wird die Bezeichnung weiterhin angezeigt, wenden Sie sich an den Microsoft-Support.
 
-Wenn Benutzer moderne Team-und Kommunikationswebsites erstellen, ist standardmäßig bereits eine Vertraulichkeits Bezeichnung ausgewählt. Benutzer können das Hilfesymbol auswählen, um weitere Informationen zu den Beschriftungen zu erhalten.
+## <a name="troubleshoot-sensitivity-label-deployment"></a>Problembehandlung bei der Bereitstellung von Vertraulichkeitsbezeichnungen
 
-![Erstellen einer Website und Auswählen einer Option unter Vertraulichkeit](media/sensitivity-label-new-communication-site.png)
+### <a name="labels-not-visible-after-publishing"></a>Bezeichnungen sind nach der Veröffentlichung nicht sichtbar
+Wenn beim Erstellen eines Teams oder einer Office 365-Gruppe Probleme auftreten, nachdem Sie diese Einstellungen aktiviert oder die Beschreibung einer Vertraulichkeitsbezeichnung geändert haben, speichern Sie die Bezeichnung, warten Sie ein paar Stunden, und versuchen Sie dann erneut, das Team oder die Gruppe zu erstellen. Informationen hierzu finden Sie unter [Planen des Rollouts nach Erstellung oder Änderung einer Vertraulichkeitsbezeichnung](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
-Wenn Benutzer die Website durchsuchen, können Sie den Namen der Bezeichnung und die angewendeten Richtlinien anzeigen.
+Wenn die neue Vertraulichkeitsbezeichnung in SharePoint Online weiterhin nicht angezeigt wird, wenden Sie sich an den Microsoft-Support.
 
-![Eine Website, auf der eine Vertraulichkeits Bezeichnung angewendet wurde](media/sensitivity-label-site.png)
+### <a name="team-group-or-sharepoint-site-creation-errors"></a>Fehler beim Erstellen von Teams, Gruppen oder SharePoint-Websites
+Wenn während der öffentlichen Vorschau Erstellungsfehler auftreten, haben Sie zwei Möglichkeiten:
 
-## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Verwalten von Sensitivitäts Bezeichnungen im SharePoint Admin Center
+- Stellen Sie sicher, dass Vertraulichkeitsbezeichnungen für keinen Benutzer obligatorisch sind.
 
-Verwenden Sie zum Anzeigen und Bearbeiten der Bezeichnungen die Seite aktive Websites im neuen SharePoint Admin Center.
+- Sie können Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites unter Verwendung der Anweisungen im Abschnitt [Aktivieren dieser Vorschau](#enable-this-preview) auf dieser Seite deaktivieren. Wenn Sie die Vorschau jedoch deaktivieren, müssen Sie nach der Zeile `$setting["EnableMIPLabels"] = "True"` suchen und den Wert **True** in **False** ändern.
 
-![Die Spalte "Vertraulichkeit" auf der Seite "aktive Websites"](media/manage-site-sensitivity-labels.png)
+## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Anwenden einer Vertraulichkeitsbezeichnung auf ein neues Team
 
-[Erfahren Sie mehr über das Verwalten von Websites im neuen SharePoint Admin Center](/sharepoint/manage-sites-in-new-admin-center).
+Benutzer können Vertraulichkeitsbezeichnungen auswählen, wenn sie neue Teams in Microsoft Teams erstellen. Beim Auswählen der Vertraulichkeitsstufe werden die Datenschutzeinstellung bei Bedarf entsprechend geändert. Abhängig von der für die Bezeichnung festgelegten Einstellung für den Gastzugriff können Benutzer Personen außerhalb der Organisation zum Team hinzufügen oder nicht.
 
-## <a name="change-site-and-group-settings-for-a-label"></a>Ändern von Standort-und Gruppeneinstellungen für eine Bezeichnung
+[Weitere Informationen Vertraulichkeitsbezeichnungen für Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-Als bewährte Methode sollten Sie die Einstellungen nicht ändern, nachdem Sie eine Bezeichnung auf mehrere Teams, Gruppen oder Websites angewendet haben. Wenn Sie eine Änderung vornehmen müssen, müssen Sie ein Azure AD PowerShell-Skript verwenden, um Updates manuell zu übernehmen. Mit dieser Methode wird sichergestellt, dass alle vorhandenen Teams, Websites und Gruppen die neue Einstellung erzwingen.
+![Datenschutzeinstellung beim Erstellen eines neuen Teams](media/privacy-setting-new-team.png)
 
-## <a name="support-for-the-new-sensitivity-labels"></a>Unterstützung für die neuen Sensitivitäts Bezeichnungen
+Nachdem Sie das Team erstellt haben, wird die Vertraulichkeitsbezeichnung in der oberen rechten Ecke aller Kanäle angezeigt.
 
-Die folgenden apps und Dienste unterstützen die Sensitivitäts Bezeichnungen in dieser Vorschau:
+![Die Vertraulichkeitsbezeichnung wird im Team angezeigt](media/privacy-setting-teams.png)
+
+Der Dienst wendet auf die Office 365-Gruppe und die verbundene SharePoint-Teamwebsite automatisch die gleiche Vertraulichkeitsbezeichnung an.
+
+## <a name="apply-a-sensitivity-label-to-a-new-group"></a>Anwenden einer Vertraulichkeitsbezeichnung auf eine neue Gruppe
+
+In Outlook im Web enthält das neue Feld **Vertraulichkeit** veröffentlichte Bezeichnungen. Wenn Benutzer weitere Informationen benötigen, können sie auf das Hilfesymbol klicken, um Details zu den verfügbaren Bezeichnungen und den zugehörigen Richtlinien anzuzeigen.
+
+![Erstellen einer Gruppe und Auswählen einer Option unter "Vertraulichkeit"](media/sensitivity-label-new-group.png)
+
+## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Anwenden einer Vertraulichkeitsbezeichnung auf eine neue Website
+
+Administratoren und Endbenutzer können beim Erstellen moderner Teamwebsites und Kommunikationswebsites Vertraulichkeitsbezeichnungen auswählen.
+
+[Weitere Informationen zum Erstellen einer Website im neuen SharePoint Admin Center](/sharepoint/create-site-collection).
+
+Wenn Benutzer moderne Teamwebsites und Kommunikationswebsites erstellen, ist standardmäßig bereits eine Vertraulichkeitsbezeichnung aktiviert. Benutzer können das Hilfesymbol auswählen, um weitere Informationen zu den Bezeichnungen zu erhalten.
+
+![Erstellen einer Website und Auswählen einer Option unter "Vertraulichkeit"](media/sensitivity-label-new-communication-site.png)
+
+Wenn Benutzer zu der Website navigieren, werden der Name der Bezeichnung und die angewendeten Richtlinien angezeigt.
+
+![Eine Website, auf die eine Vertraulichkeitsbezeichnung angewendet wurde](media/sensitivity-label-site.png)
+
+## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Verwalten von Vertraulichkeitsbezeichnungen im SharePoint Online Admin Center
+
+Wenn Sie die Bezeichnung anzeigen und bearbeiten möchten, verwenden Sie die Seite "Aktive Websites" im neuen SharePoint Admin Center.
+
+![Die Spalte "Vertraulichkeit" auf der Seite "Aktive Websites"](media/manage-site-sensitivity-labels.png)
+
+[Weitere Informationen zum Verwalten von Websites im neuen SharePoint Admin Center](/sharepoint/manage-sites-in-new-admin-center).
+
+## <a name="change-site-and-group-settings-for-a-label"></a>Ändern von Website- und Gruppeneinstellungen für eine Bezeichnung
+
+Es wird empfohlen, die Einstellungen nicht zu ändern, nachdem Sie eine Bezeichnung auf mehrere Teams, Gruppen oder Websites angewendet haben. Wenn eine Änderung erforderlich wird, müssen Sie Updates manuelle mithilfe eines Azure AD PowerShell-Skripts anwenden. Diese Methode stellt sicher, dass alle vorhandenen Teams, Websites und Gruppen die neue Einstellung erzwingen.
+
+## <a name="support-for-the-new-sensitivity-labels"></a>Unterstützung der neuen Vertraulichkeitsbezeichnungen
+
+Die folgenden Apps und Dienste unterstützen die Vertraulichkeitsbezeichnungen in dieser Vorschau:
 
 - Microsoft 365 Compliance Center
 - SharePoint
 - Outlook im Web
-- Teams
+- Microsoft Teams
 - SharePoint Admin Center
 - Azure AD Admin Center
 
-Sie können die folgenden apps und Dienste nicht verwenden, um Office 365 Gruppen mit den neuen Vertraulichkeits Bezeichnungen zu erstellen:
+Die folgenden Apps und Dienste können Sie nicht verwenden, um Office 365-Gruppen mit den neuen Vertraulichkeitsbezeichnungen zu erstellen:
 
 - Outlook für Mac
 - Outlook Mobile  
-- Outlook-Desktop für Windows
-- Formulare  
+- Outlook Desktop für Windows
+- Forms  
 - Dynamics 365  
 - Yammer  
 - Stream  
 - Planner  
 - Project  
 - PowerBI  
-- Teams-Verwaltungskonsole  
+- Teams Admin Center  
 - Microsoft 365 Admin Center  
 - Exchange Admin Center
 
-## <a name="if-you-used-classic-azure-ad-site-classification"></a>Wenn Sie klassische Azure Ad Website Klassifizierung verwendet haben
+## <a name="if-you-used-classic-azure-ad-site-classification"></a>Sie haben die klassische Azure AD-Websiteklassifizierung verwendet
 
-Office 365 unterstützt die alten Klassifizierungen für neue Gruppen und SharePoint-Websites nicht mehr, wenn Sie diese Vorschau aktivieren. Vorhandene Gruppen und Websites zeigen jedoch weiterhin die alten Klassifizierungen an, es sei denn, Sie konvertieren Sie. Zu den alten Klassifizierungen gehören die von Ihnen festgelegte "moderne" Website Klassifizierung, möglicherweise über Azure AD PowerShell oder die PNP- `ClassificationList` Kernbibliothek, mit der die Werte für die Einstellung definiert wurden.
+Wenn Sie diese Vorschau aktivieren, unterstützt Office 365 die alten Klassifizierungen nicht mehr für neue Gruppen und SharePoint-Websites. Bei vorhandenen Gruppen und Websites werden die alten Klassifizierungen jedoch weiterhin angezeigt, es sei denn, Sie konvertieren sie. Alte Klassifizierungen schließen die Klassifizierung von "modernen" Websites ein, die Sie möglicherweise über Azure AD PowerShell oder die PnP Core-Bibliothek eingerichtet haben, in der Werte für die `ClassificationList`-Einstellung definiert werden.
 
 Beispielsweise in PowerShell:
 
@@ -187,51 +257,51 @@ Beispielsweise in PowerShell:
    ($setting["ClassificationList"])
 ```
 
-Weitere Informationen zur alten Klassifizierungsmethode finden Sie unter [SharePoint "Modern" Site Classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+Weitere Informationen zur alten Klassifizierungsmethode finden Sie unter ["" ](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
-Basierend auf Ihrer aktuellen Bereitstellung haben Sie zwei Optionen, um Ihre alten Klassifizierungen in die neuen Klassifizierungen zu konvertieren.
+Basierend auf Ihrer aktuellen Bereitstellung stehen Ihnen zwei Optionen zum Konvertieren Ihrer alten Klassifizierungen in die neuen Klassifizierungen zur Verfügung.
 
-### <a name="if-you-never-used-sensitivity-labels-unified-microsoft-information-protection-labels-for-files-and-email"></a>Wenn Sie für Dateien und e-Mails keine Sensitivitäts Bezeichnungen (Unified Microsoft Information Protection-Bezeichnungen) verwendet haben
+### <a name="if-you-never-used-sensitivity-labels-unified-microsoft-information-protection-labels-for-files-and-email"></a>Sie haben noch nie Vertraulichkeitsbezeichnungen (einheitliche Microsoft Information Protection-Bezeichnungen) für Dateien und E-Mail verwendet
 
 Wir empfehlen, dass Sie wie folgt vorgehen:
 
-1. Erstellen Sie neue Sensitivitäts Bezeichnungen im Microsoft 365 Compliance Center mit den gleichen Namen wie Ihre vorhandenen Klassifizierungen.
-2. Verwenden Sie PowerShell, um die neuen Bezeichnungen auf vorhandene Office 365 Gruppen und SharePoint-Websites mithilfe der Namenszuordnung anzuwenden.
+1. Erstellen Sie im Microsoft 365 Compliance Center neue Vertraulichkeitsbezeichnungen mit denselben Namen wie Ihre vorhandenen Klassifizierungen.
+2. Verwenden Sie PowerShell, um die neuen Bezeichnungen mithilfe von Namenszuordnung auf vorhandene Office 365-Gruppen und SharePoint-Websites anzuwenden.
 3. Löschen Sie die alten Klassifizierungen.
 
-Apps und Dienste, die die neuen Sensitivitäts Bezeichnungen unterstützen, werden angezeigt. Sie erstellen neue Teams, Gruppen und Websites mit den neuen Bezeichnungen. Benutzer können weiterhin Gruppen aus apps und Diensten erstellen, die die neuen Bezeichnungen nicht unterstützen. Benutzer können diese Gruppen jedoch nicht mit einer Bezeichnung versehen. Verwenden Sie PowerShell, um die neuen Vertraulichkeits Bezeichnungen auf diese Gruppen anzuwenden.
+Apps und Dienste, die die neuen Vertraulichkeitsbezeichnungen unterstützen, werden angezeigt. Sie erstellen neue Teams, Gruppen und Websites mit den neuen Bezeichnungen. Benutzer können weiterhin Gruppen aus Apps und Diensten erstellen, die die neuen Bezeichnungen nicht unterstützen. Benutzer können jedoch keine Bezeichnung auf diese Gruppen anwenden. Verwenden Sie PowerShell, um die neuen Vertraulichkeitsbezeichnungen auf diese Gruppen anzuwenden.
 
-Sie können Ihre alten Klassifizierungen beibehalten. Es wird jedoch dringend empfohlen, die neuen Vertraulichkeits Bezeichnungen für diese Gruppen mithilfe von PowerShell anzuwenden.
+Sie können Ihre alten Klassifizierungen beibehalten. Allerdings wird dringend empfohlen, PowerShell zu verwenden, um auf diese Gruppen die neuen Vertraulichkeitsbezeichnungen anzuwenden.
 
-Apps und Dienste, die die neuen Sensitivitäts Bezeichnungen unterstützen, werden mit den neuen Beschriftungen erstellt. Wenn Benutzergruppen aus apps und Diensten erstellen, die die neuen Bezeichnungen nicht unterstützen, können Sie eine Klassifizierung auswählen.
+Apps und Dienste, die die neuen Vertraulichkeitsbezeichnungen unterstützen, werden mit den neuen Bezeichnungen erstellt. Wenn Benutzer Gruppen aus Apps und Diensten erstellen, die die neuen Bezeichnungen nicht unterstützen, können sie eine Klassifizierung auswählen.
 
-### <a name="if-you-use-sensitivity-labels-unified-microsoft-information-protection-labels-for-files-and-email"></a>Wenn Sie für Dateien und e-Mails Vertraulichkeits Bezeichnungen (Unified Microsoft Information Protection-Bezeichnungen) verwenden
+### <a name="if-you-use-sensitivity-labels-unified-microsoft-information-protection-labels-for-files-and-email"></a>Sie verwenden bereits Vertraulichkeitsbezeichnungen (einheitliche Microsoft Information Protection-Bezeichnungen) für Dateien und E-Mail
 
-Sobald Sie diese Vorschau aktiviert haben, wechseln Sie zu jeder Bezeichnung im Microsoft 365 Compliance Center, und wenden Sie die gewünschten Richtlinien für Websites und Gruppen an. Benutzer beginnen mit dem Anzeigen vorhandener Beschriftungen für Websites und Gruppen.
+Nachdem Sie diese Vorschau aktiviert haben, wechseln Sie zu den einzelnen Bezeichnungen im Microsoft 365 Compliance Center, und wenden Sie die gewünschten Richtlinien für Websites und Gruppen an. Benutzer sehen nun Ihre vorhandenen Bezeichnungen, die für Websites und Gruppen zur Verfügung stehen.
 
-### <a name="prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups"></a>Vorbereiten der SharePoint Online Verwaltungsshell vor dem neuetikettieren von Office 365 Gruppen
+### <a name="prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups"></a>Vorbereiten der SharePoint Online-Verwaltungsshell vor dem Anwenden neuer Bezeichnungen auf Office 365-Gruppen
 
-Vergewissern Sie sich vor dem Anwenden neuer Bezeichnungen, dass Sie die neueste SharePoint Online-Verwaltungsshell ausführen. Wenn Sie bereits über die neueste Version verfügen, können Sie [Office 365 Gruppen mit neuen Sensitivitäts Bezeichnungen neu bezeichnen](#relabel-office-365-groups-with-new-sensitivity-labels).
+Bevor Sie neue Bezeichnungen anwenden, stellen Sie sicher, dass Sie die neueste SharePoint Online-Verwaltungsshell ausführen. Wenn Sie bereits über die neueste Version verfügen, können Sie fortfahren und [Office 365-Gruppen neue Vertraulichkeitsbezeichnungen zuweisen](#relabel-office-365-groups-with-new-sensitivity-labels).
 
-So bereiten Sie die SharePoint Online Management-Shell für die Vorschau vor:
+So bereiten Sie die SharePoint Online-Verwaltungsshell für die Vorschau vor
 
-1. Wenn Sie eine frühere Version der SharePoint Online-Verwaltungsshell installiert haben, wechseln Sie zu **Software hinzufügen oder entfernen** , und deinstallieren Sie "SharePoint Online Verwaltungsshell".
+1. Wenn Sie eine frühere Version der SharePoint Online-Verwaltungsshell installiert haben, wechseln Sie zu **Software hinzufügen oder entfernen**, und deinstallieren Sie die "SharePoint Online-Verwaltungsshell".
 
-2. Wechseln Sie in einem Webbrowser zur Seite Download Center, und [Laden Sie die neueste SharePoint Online Verwaltungsshell herunter](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+2. Wechseln Sie in einem Webbrowser zur Download Center-Seite, und [laden Sie die neueste SharePoint Online-Verwaltungsshell herunter](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-3. Wählen Sie Ihre Sprache aus, und klicken Sie dann auf **herunterladen**.
+3. Wählen Sie die gewünschte Sprache aus, und klicken Sie auf **Download**.
 
-4. Wählen Sie zwischen der Datei x64 und x86. msi aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows oder die x86-Datei ausführen, wenn Sie die 32-Bit-Version ausführen. Wenn Sie nicht wissen, finden Sie unter [welche Version des Windows-Betriebssystems soll ich ausführen?](https://support.microsoft.com/help/13443/windows-which-operating-system).
+4. Wählen Sie zwischen der x64- und der x86-Version der MSI-Datei aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows ausführen, bzw. die x86-Datei, wenn Sie die 32-Bit-Version ausführen. Wenn Sie sich nicht sicher sind, ziehen Sie [Welche Version des Windows-Betriebssystems verwende ich?](https://support.microsoft.com/help/13443/windows-which-operating-system) zurate.
 
-5. Nachdem Sie die Datei heruntergeladen haben, führen Sie die Datei aus, und führen Sie die Schritte im Setup-Assistenten aus.
+5. Nachdem Sie die Datei heruntergeladen haben, führen Sie sie aus, und folgen Sie den Schritten im Setup-Assistenten.
 
-### <a name="relabel-office-365-groups-with-new-sensitivity-labels"></a>Neuetikettieren von Office 365 Gruppen mit neuen Sensitivitäts Bezeichnungen
+### <a name="relabel-office-365-groups-with-new-sensitivity-labels"></a>Zuweisen der neuen Vertraulichkeitsbezeichnungen zu Office 365-Gruppen
 
-1. Stellen Sie sicher, dass Sie die neueste Version der SharePoint Online Management-Shell verwenden. Anweisungen finden Sie unter [Prepare the SharePoint Online Management Shell, bevor Sie Office 365 Gruppen umetikettieren](#prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups).
+1. Stellen Sie sicher, dass Sie die neueste Version der SharePoint Online-Verwaltungsshell verwenden. Anweisungen finden Sie unter [Vorbereiten der SharePoint Online-Verwaltungsshell vor dem Anwenden neuer Bezeichnungen auf Office 365-Gruppen](#prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups).
 
-2. Stellen Sie mithilfe eines Geschäfts-oder Schul Kontos mit globalen Administrator-oder SharePoint-Administratorrechten in Office 365 eine Verbindung mit SharePoint Online Verwaltungsshell her. Eine Anleitung dazu finden Sie unter [Erste Schritte mit der SharePoint Online-Verwaltungsshell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+2. Stellen Sie unter Verwendung eines Geschäfts-, Schul- oder Unikontos, das über globale Administrator- oder SharePoint-Administratorberechtigungen in Office 365 verfügt, eine Verbindung mit der SharePoint Online-Verwaltungsshell her. Eine Anleitung dazu finden Sie unter [Erste Schritte mit der SharePoint Online-Verwaltungsshell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-3. Führen Sie den folgenden Befehl aus, um die Liste der Vertraulichkeits Bezeichnungen und deren GUIDs abzurufen.
+3. Führen Sie den folgenden Befehl aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen.
 
     ```PowerShell
     Set-ExecutionPolicy RemoteSigned
@@ -243,16 +313,17 @@ So bereiten Sie die SharePoint Online Management-Shell für die Vorschau vor:
 
 4. Notieren Sie sich die GUID für die Bezeichnung, die Sie überschreiben möchten. Beispielsweise die Bezeichnung "Allgemein".
 
-5. Verwenden Sie den folgenden Befehl, um die Liste der Gruppen abzurufen, die die "allgemeine" Klassifizierung aufweisen. Wenn Sie diesen Befehl ausführen, stellen Sie eine Verbindung mit Exchange Online PowerShell her und führen das Cmdlet Get-Unifiedgroup aus.
+5. Verwenden Sie den folgenden Befehl, um die Liste der Gruppen abzurufen, die die Klassifizierung "Allgemein" aufweisen. Wenn Sie diesen Befehl ausführen, stellen Sie eine Verbindung mit Exchange Online PowerShell her und führen das Cmdlet "Get-UnifiedGroup" aus.
 
    ```PowerShell
    Set-ExecutionPolicy RemoteSigned
    $UserCredential = Get-Credential
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
    Import-PSSession $Session
+   $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. Fügen Sie für jede Gruppe die neue GUID der Sensitivitäts Bezeichnung hinzu.
+6. Fügen Sie für jede Gruppe die neue Vertraulichkeitsbezeichnungs-GUID hinzu.
 
     ```PowerShell
     foreach ($g in $groups)

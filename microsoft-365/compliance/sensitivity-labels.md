@@ -1,9 +1,9 @@
 ---
 title: Übersicht über Vertraulichkeitsbezeichnungen
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 5bc15b1ba18dbc52f9db554f8037cb59187b88fc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: f411cf5ac91581526c54f718ee83d0beaaaa2d73
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39232898"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802838"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -130,7 +130,7 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
 - **Anwenden einer Standardbezeichnung** auf alle neuen Dokumente und E-Mails, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt werden. Durch diese Standardbezeichnung kann eine Basisstufe an Schutzeinstellungen festgelegt werden, die auf alle Ihre Inhalte angewendet werden soll.
 
-- **Begründung für das Ändern einer Bezeichnung anfordern** Sie können festlegen, dass wenn Inhalte als vertraulich gekennzeichnet sind und ein Benutzer diese Bezeichnung entfernen oder durch eine niedrigere Klassifizierung (z. B. durch eine Bezeichnung als "öffentlich") ersetzen möchte, er eine Begründung für diese Aktion angeben muss. Diese Begründungen können vom Administrator überprüft werden.
+- **Begründung für das Ändern einer Bezeichnung anfordern** Sie können festlegen, dass wenn Inhalte als vertraulich gekennzeichnet sind und ein Benutzer diese Bezeichnung entfernen oder durch eine niedrigere Klassifizierung (z. B. durch eine Bezeichnung als "öffentlich") ersetzen möchte, er eine Begründung für diese Aktion angeben muss. Aktuell wird die Begründung nicht zur [Analyse der Bezeichnungen](label-analytics.md) an den Administrator gesendet. Allerdings sendet der [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) diese Informationen an [Azure Information Protection-Analysen](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Eingabeaufforderung, in der Benutzer eine Begründung eingeben](media/Sensitivity-label-justification-required.png)
 
@@ -163,7 +163,7 @@ Wenn ein Benutzer oder eine Gruppe in Ihrer Organisation keine Option in der von
 
 ![Option „Verschieben“ auf der Seite für Vertraulichkeits Bezeichnungsrichtlinien](media/sensitivity-label-policy-priority.png)
 
-Prioritäten wirken sich zwar auf Vertraulichkeits-Bezeichnungsrichtlinien aus, **nicht** jedoch auf Aufbewahrungsbezeichnungsrichtlinien. Wie in [Grundsätze der Aufbewahrung oder was Vorrang hat](labels.md#the-principles-of-retention-or-what-takes-precedence) erklärt, können Inhalte mehreren Aufbewahrungsrichtlinien unterliegen.
+Prioritäten wirken sich zwar auf Vertraulichkeitsbezeichnungsrichtlinien aus, **nicht** jedoch auf Aufbewahrungsbezeichnungsrichtlinien. Wie in [Grundsätze der Aufbewahrung oder was Vorrang hat](labels.md#the-principles-of-retention-or-what-takes-precedence) erklärt, können Inhalte mehreren Aufbewahrungsrichtlinien unterliegen.
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 

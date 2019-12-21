@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: 9e9ad76d2bdd7f74368121346f7e04d1208803ff
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: 8a795e0582599dc3160f896a6361b773caa6c4e4
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818857"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823797"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Verwenden des Daten Inhalts-Explorers zur Datenklassifizierung (Vorschau)
 
@@ -36,6 +36,8 @@ Mithilfe einer [DLP-Richtlinie](data-loss-prevention-policies.md) können vertra
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
 Eine [Vertraulichkeitsbezeichnung](sensitivity-labels.md) ist einfach ein Tag, das den Wert des Elements für Ihre Organisation angibt. Sie kann manuell oder automatisch angewendet werden. Sobald sie angewendet wurde, wird sie in das Dokument eingebettet und mit diesem überall hin weitergebenen. Eine Vertraulichkeitsbezeichnung aktiviert verschiedene Schutzmaßnahmen, z. B. ein obligatorisches Wasserzeichen oder die Verschlüsselung. Mit aktiviertem Endpunktschutz können Sie sogar verhindern, dass ein Element die Kontrolle Ihrer Organisation verlässt.
+
+Vertraulichkeitsbezeichnungen müssen für Dateien in SharePoint und OneDrive aktiviert sein, damit die entsprechenden Daten in der Datenklassifizierungsseite eingeblendet werden können. Weitere Informationen finden Sie unter [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ### <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
 
