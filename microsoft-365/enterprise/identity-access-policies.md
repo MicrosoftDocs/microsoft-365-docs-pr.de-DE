@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
-ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
+ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37590499"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37746551"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -50,7 +50,7 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, empfehlen wir, die Basisr
 |        |[Kompatible PCs erforderlich](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs.|
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](#require-mfa-based-on-sign-in-risk)| |
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](#require-compliant-pcs-and-mobile-devices)|Erzwingt die Intune-Verwaltung für PCs und Telefon/Tablets.|
-|**Streng geregelt**|[*Immer* MFA erforderlich](#require-mfa-based-on-sign-in-risk)|
+|**Hochgradig reguliert**|[*Immer* MFA erforderlich](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Zuweisen von Richtlinien zu Benutzern
@@ -102,9 +102,9 @@ Wenden Sie die Einstellungen basierend auf der Schutzebene an, auf die Sie Ziele
 
 |Eigenschaft|Schutzniveau|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Risikostufe|Baseline|Hoch, Mmittel|Aktivieren Sie beide|
+|Risikostufe|Basisplan|Hoch, Mmittel|Aktivieren Sie beide|
 | |Vertraulich|Hoch, Mittel, niedrig|Alle drei aktivieren|
-| |Streng geregelt| |Alle Optionen deaktiviert lassen, um MFA immer zu erzwingen|
+| |Hochgradig reguliert| |Alle Optionen deaktiviert lassen, um MFA immer zu erzwingen|
 
 **Zugriffssteuerung**
 
@@ -162,7 +162,7 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für den bedingten
 ## <a name="high-risk-users-must-change-password"></a>Benutzer mit hohem Risiko müssen das Kennwort ändern
 Um sicherzustellen, dass alle gefährdeten Benutzerkonten mit hohem Risiko gezwungen werden, beim Anmelden eine Kennwortänderung durchzuführen, müssen Sie die folgende Richtlinie anwenden.
 
-Melden Sie sich im [Microsoft Azure-Portal (http://portal.azure.com)](http://portal.azure.com/) mit Ihren Administratoranmeldeinformationen an, und wechseln Sie dann zu **Azure AD Identity Protection > Richtlinie zum Benutzerrisiko**.
+Melden Sie sich im [Microsoft Azure-Portal (https://portal.azure.com)](https://portal.azure.com/) mit Ihren Administratoranmeldeinformationen an, und wechseln Sie dann zu **Azure AD Identity Protection > Richtlinie zum Benutzerrisiko**.
 
 **Aufgaben**
 
@@ -225,7 +225,7 @@ In den folgenden Tabellen werden die empfohlenen Einstellungen beschrieben:
 |Zugriff|PIN für Zugriff anfordern|Ja||
 ||Typ auswählen|Numeric||
 ||Einfache PIN zulassen|Nein||
-||PIN-Länge|6||
+||PIN-Länge|6 ||
 ||Fingerabdruck anstelle von PIN zulassen|Ja||
 ||App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird|Ja||
 ||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|Nein||
@@ -280,7 +280,7 @@ Erstellen Sie eine Richtlinie für jede Plattform:
 - Windows 8.1 und höher
 - Windows 10 und höher
 
-Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure Portal an, und navigieren Sie dann zu **InTune #a0 Device Compliance**. Wählen Sie **Richtlinie erstellen**aus.
+Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure Portal an, und navigieren Sie dann zu **InTune #a0 Device Compliance**. Wählen Sie **Richtlinie erstellen** aus.
 
 Die folgenden Einstellungen werden für Windows 10 empfohlen.
 
@@ -308,8 +308,8 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 |Kennwort|Anfordern eines Kennworts zum Entsperren mobiler Geräte|Erforderlich||
 ||Einfache Kennwörter|Block||
 ||Kennwort-Typ|Geräte Standard||
-||Minimale Kennwortlänge|6||
-||Maximale Anzahl von Minuten Inaktivität, bevor Kennwort erforderlich ist|15|Diese Einstellung wird für die Android-Versionen 4,0 und höher oder für Knox 4,0 und höher unterstützt. Für IOS-Geräte wird diese für IOS 8,0 und höher unterstützt.|
+||Minimale Kennwortlänge|6 ||
+||Maximale Anzahl von Minuten Inaktivität, bevor Kennwort erforderlich ist|15 |Diese Einstellung wird für die Android-Versionen 4,0 und höher oder für Knox 4,0 und höher unterstützt. Für IOS-Geräte wird diese für IOS 8,0 und höher unterstützt.|
 ||Kennwortablauf (Tage)|41||
 ||Anzahl der vorherigen Kennwörter zur Verhinderung der Wiederverwendung|5||
 ||Kennwort anfordern, wenn das Gerät vom Leerlaufzustand zurückkehrt (Mobil und holographisch)|Erforderlich|Verfügbar für Windows 10 und höher|
@@ -326,7 +326,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Medium||
+|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets)
 Bevor Sie eine Richtlinie hinzufügen, die kompatible PCs erfordert, müssen Sie die Geräte für die Verwaltung in InTune registrieren. Die Verwendung der mehrstufigen Authentifizierung wird empfohlen, bevor Geräte in InTune registriert werden, um sicher zu sein, dass das Gerät im Besitz des beabsichtigten Benutzers ist. 

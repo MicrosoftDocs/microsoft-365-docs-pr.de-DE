@@ -3,7 +3,7 @@ title: SharePoint-Website für hoch vertrauliche digitale Objekte der Contoso Co
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: wie Contoso eine SharePoint-Website für hochregulierte Daten zur einfacheren Zusammenarbeit zwischen den Forschungsteams implementiert hat.'
-ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: caad341c6a44b3270f2bdecd4ab4d8378c11db2c
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672711"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699713"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>SharePoint-Website für hoch vertrauliche digitale Objekte der Contoso Corporation
 
@@ -55,7 +55,7 @@ Als nächstes haben Sie eine neue Office 365 DLP-Richtlinie mit dem Namen " **Fo
 
 Informationen zu den Konfigurationsdetails finden Sie unter [Schützen von SharePoint-Dateien mit Aufbewahrungs Bezeichnungen und DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-4-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Schritt 4: Erstellen einer sublabelgruppe für Office 365 Sensitivität für die Website
+## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Schritt 3: Erstellen einer sublabelgruppe für Office 365 Sensitivität für die Website
 
 Contoso-Administratoren haben eine neue unter Bezeichnung für Office 365 Sensitivität namens " **Research Teams** of the **streng Confidential** Label" erstellt, die:
 
@@ -78,11 +78,11 @@ Hier ist ein Beispiel für eine Datei, die auf der **Forschungs** Website gespei
 ![Die resultierende Konfiguration der Forschungsteam Website für streng vertrauliche Ressourcen](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Schritt 5: Migrieren der lokalen SharePoint-Forschungsdaten
+## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>Schritt 4: Migrieren der lokalen SharePoint-Forschungsdaten
 
 Contoso-Administratoren haben alle lokalen Forschungs Dateien in der lokalen SharePoint Server 2016-Website in Ordner in der neuen **Research** -SharePoint-Website verschoben.
 
-## <a name="step-6-trained-their-researchers"></a>Schritt 6: Ausbildung ihrer Forscher
+## <a name="step-5-trained-their-researchers"></a>Schritt 5: Ausbildung ihrer Forscher
 
 Contoso-Sicherheitsmitarbeiter haben die Mitglieder der Gruppe " **Research** Office 365" in einem obligatorischen Kurs geschult, der Sie schrittweise durchlaufen hat:
 
@@ -100,6 +100,6 @@ Wenn ein Forschungsdokument mit der unter Bezeichnung " **Research Teams** " den
 
 [Bereitstellen](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise in Ihrer Organisation.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
