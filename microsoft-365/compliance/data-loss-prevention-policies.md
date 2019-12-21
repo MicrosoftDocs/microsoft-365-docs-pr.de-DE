@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39266132"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806618"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,9 @@ Angenommen, Sie verfügen über eine DLP-Richtlinie zur Erkennung von Informatio
 Eine DLP-Richtlinie kann vertrauliche Informationen überall in Office 365 finden und schützen, egal, ob diese sich in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können festlegen, dass Inhalte in Exchange-E-Mails, in Microsoft Teams-Chats und Kanalnachrichten sowie in allen SharePoint- oder OneDrive-Bibliotheken geschützt werden sollen, oder bestimmte Orte für eine Richtlinie auswählen.
   
 ![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
-  
+
+ Wenn Sie sich dazu entscheiden, bestimmte Verteilergruppen in Exchange einzubeziehen, wird die DLP-Richtlinie nur auf Mitglieder dieser Gruppe beschränkt. Ebenso wenn Sie eine Verteilergruppe ausschließen, werden auch alle Mitglieder dieser Verteilergruppe aus der Richtlinienauswertung ausgeschlossen. Sie können eine Richtlinie auf die Mitglieder von Verteilerlisten, dynamischen Verteilergruppen und Sicherheitsgruppen beschränken. Eine DLP-Richtlinie darf nicht mehr als 50 solche Einschlüsse und Ausschlüsse enthalten.
+
 Wenn Sie festlegen, dass bestimmte SharePoint-Websites oder OneDrive-Konten berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 solcher Einschlüsse und Ausschlüsse enthalten kann. Diese Grenzwerte bestehen zwar, sie können jedoch durch das Anwenden einer organisationsweiten oder einer für ganze Speicherorte geltenden Richtlinie übergangen werden.
   
 ### <a name="rules"></a>Regeln
@@ -166,7 +168,9 @@ In der E-Mail-Benachrichtigung und dem Richtlinientipp wird erläutert, warum ei
 So sieht ein Richtlinientipp in einem OneDrive for Business-Konto aus.
   
 ![Richtlinientipp für ein Dokument in einem OneDrive-Konto](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-  
+
+ Weitere Informationen zu Benachrichtigungen der Benutzer und Richtlinientipps in den DLP-Richtlinien finden Sie in [Verwenden von Benachrichtigungen und Richtlinientipps](use-notifications-and-policy-tips.md).
+
 #### <a name="incident-reports"></a>Schadensberichte
 
 Bei einer Übereinstimmung mit einer Regel können Sie einen Schadensbericht mit Details zum Ereignis an Ihren Compliance Officer (oder eine beliebige andere Person) senden. Dieser Bericht enthält Informationen zum Element, für das eine Übereinstimmung gefunden wurde, zum Inhalt, der mit der Regel übereinstimmte, und zum Namen der Person, die den Inhalt zuletzt geändert hat. Bei E-Mail-Nachrichten wird dem Bericht außerdem die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht, als Anlage beigefügt.
@@ -221,7 +225,7 @@ Die integrierte **U.S. HIPAA**-Richtlinie enthält beispielsweise eine Regel mit
 
 Wenn Sie in einer Richtlinie Regeln erstellen, wird jeder Regel eine Priorität in der Reihenfolge ihrer Erstellung zugewiesen, was bedeutet, dass die zuerst erstellte Regel oberste Priorität, die danach erstellte Regel die zweite Priorität usw. erhält. 
   
-![Regeln nach Priorität](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
+![Regeln nach Priorität](media/dlp-rules-in-priority-order.png)
   
 Nachdem Sie mehr als eine DLP-Richtlinie eingerichtet haben, können Sie die Priorität einer oder mehrerer Richtlinien ändern. Wählen Sie dazu eine Richtlinie aus, wählen Sie **Richtlinie bearbeiten** aus, und verwenden Sie die **Prioritätsliste**, um deren Priorität anzugeben.
 

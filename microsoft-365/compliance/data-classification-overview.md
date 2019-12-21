@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: cb728c4e6a88fc7bb47716a40addd01f9828208f
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "39622622"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823737"
 ---
 # <a name="data-classification-overview-preview"></a>Übersicht über die Datenklassifizierung (Vorschau)
 
@@ -59,6 +59,8 @@ Wenn Sie eine Vertraulichkeitsbezeichnung auf ein Element über Microsoft 365 od
 - Das Vorhandensein der Kennzeichnung ermöglicht verschiedene Schutzmaßnahmen, z. B. ein obligatorisches Wasserzeichen oder die Verschlüsselung. Mit aktiviertem Endpunktschutz können Sie sogar verhindern, dass ein Element die Kontrolle Ihrer Organisation verlässt.
 
 Weitere Informationen zu Vertraulichkeitsbezeichnungen finden Sie unter [Übersicht über Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
+
+Vertraulichkeitsbezeichnungen müssen für Dateien in SharePoint und OneDrive aktiviert sein, damit die entsprechenden Daten in der Datenklassifizierungsseite eingeblendet werden können. Weitere Informationen finden Sie unter [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Auf der Karte mit der Vertraulichkeitsbezeichnung wird die Anzahl von Elementen (E-Mail oder Dokument) nach Vertraulichkeitsgrad angezeigt.
 

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Suchen und Finden personenbezogener Daten in Office 365.
-ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 75c6afaae18cddc0c8e63cac671ac1140e3fa303
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710046"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802858"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 
@@ -33,9 +33,7 @@ Artikel 4: Definitionen
 
 In diesem Artikel wird veranschaulicht, wie in SharePoint Online und OneDrive for Business (was die Websites für alle Office 365-Gruppen und Microsoft Teams umfasst) gespeicherte personenbezogene Daten zu finden sind.
 
-Das Suchen nach personenbezogenen Daten, die der DSGVO unterliegen, basiert auf Typen vertraulicher Informationen in Office 365. Diese definieren, wie bestimmte Informationstypen, z. B. Kreditkartennummern, vom automatisierten Prozess erkannt werden. Derzeit können diese nicht zur Suche nach Daten in ruhenden Exchange-Postfächern verwendet werden. Jedoch können Typen vertraulicher Informationen mit DLP-Richtlinien verwendet werden, um personenbezogene Daten in E-Mails bei der Übertragung zu finden.
-
-Während Sie also derzeit die Inhaltssuche nicht zur Suche nach personenbezogenen Daten in ruhenden Exchange Online-Postfächern verwenden können, können Sie die Typen vertraulicher Informationen, die Sie für DSGVO zusammenstellen, zur Suche und zum Schutz persönlicher Informationen beim Versenden per E-Mail nutzen.
+Das Suchen nach personenbezogenen Daten, das der DSGVO unterliegt, stützt sich auf die Verwendung von vertraulichen Informationstypen in Office 365. Sie legen fest, wie bestimmte Informationstypen (z. B. Krankenversicherungsnummern und Kreditkartennummern) von einem automatisierten Prozess erkannt werden. Sie können die Richtlinien zur Verhinderung von Datenverlust einsetzen, um personenbezogene Daten während der Übertragung zu finden. Sie können die vertraulichen Informationstypen, die Sie für GDPR zusammenstellen, verwenden, um personenbezogene Informationen zu finden und zu schützen, während sie per E-Mail versendet werden. Siehe auch [Verwalten von Anträgen betroffener Personen nach der DSGVO mit dem Anfragetool für Anträge betroffener Personen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
 ## <a name="use-content-search-to-find-personal-data"></a>Verwenden der Inhaltssuche zum Suchen nach personenbezogenen Daten
 

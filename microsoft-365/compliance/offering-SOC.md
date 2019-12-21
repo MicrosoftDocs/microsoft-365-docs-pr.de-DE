@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859485"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804258"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -108,7 +109,7 @@ Anhand der Berichte können Ihre Prüfer die Ergebnisse der Microsoft-Clouddiens
 
 **Wie oft werden Azure SOC-Berichte erstellt?**
 
-SOC-Berichte für Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream und Microsoft Datacenter werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte erscheinen quartalsweise. Die häufigere Überprüfung ermöglicht eine pünktlichere Abdeckung der Prüfzeiträume durch einen SOC-Bericht, der bessere Sicherheit als ein Bridge Letter bietet, da ein externer Prüfer involviert ist. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
+SOC-Berichte für Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream und Microsoft Datacenter werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte erscheinen halbjährlich (Ende dieses Zeitraums ist jeweils der 31. März und der 30. September). Bridge Letters werden im Januar herausgegeben, um den Zeitraum von 1.10. – 31.12. abzudecken und im Juli, um den Zeitraum vom 1.4. – 30.6. abzudecken. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
 
 **Muss ich eine eigene Prüfung der Microsoft-Datencenter durchführen?**
 
