@@ -12,12 +12,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 66a3478ed625b3c7453992e04070d57beef173eb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: c31107588e6d7841e93c3a1cd653790f3937c21e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749802"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808530"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Prüfliste zu den Verantwortlichkeiten für die DSGVO für Microsoft Office 365
 
@@ -31,7 +32,7 @@ Außerdem bieten die Elemente dieser Checkliste unter *5.* *Datenschutz und -sic
 
 Die Prüfliste und der Compliance-Manager wurden basierend auf den Titeln und der Referenznummer (für jedes Prüflistenthema in Klammern) einer Gruppe von Datenschutz- und Sicherheitskontrollen für Verarbeiter von personenbezogenen Daten aufgebaut gemäß:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) Anforderungen für die Sicherheitstechnik.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) für Anforderungen an die Sicherheitstechnik.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für Datenschutzanforderungen.
 
 Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen Steuerelemente zu organisieren, die Microsoft 365 zur Unterstützung der DSGVO implementiert. Diese können Sie vom [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen.
