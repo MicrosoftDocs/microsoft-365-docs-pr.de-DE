@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Ihre globalen Administratorkonten benötigen eine spezielle Behandlung, um sie vor der Kompromittierung von Anmeldeinformationen zu schützen.
-ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627081"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801830"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Schritt 1: Erstellen und Schützen Ihrer globalen Administratorkonten
 
@@ -72,7 +72,7 @@ In diesem Abschnitt richten Sie Azure AD Privileged Identity Management (PIM) ei
 
 Statt dass Ihre Administratorkonten permanente Administratoren sind, werden sie zu berechtigten Administratoren. Die Administratorrolle ist so lange inaktiv, bis sie von jemandem benötigt wird. Dann wird ein Aktivierungsvorgang ausgeführt, um dem Administratorkonto die Administratorrolle für einen bestimmten Zeitraum hinzuzufügen. Wenn die Zeit abgelaufen ist, entfernt PIM die Administratorrolle aus dem Administratorkonto.
 
-PIM ist im Lieferumfang von Azure Active Directory Premium P2 verfügbar, das im Lieferumfang von Microsoft 365 Enterprise E5 enthalten ist. Alternativ hierzu können Sie einzelne Azure Active Directory Premium P2-Lizenzen für Ihre Administratorkonten erwerben.
+PIM ist im Lieferumfang von Azure Active Directory Premium P2 verfügbar, das im Lieferumfang von Microsoft 365 E5 enthalten ist. Alternativ hierzu können Sie einzelne Azure Active Directory Premium P2-Lizenzen für Ihre Administratorkonten erwerben.
 
 Weitere Informationen zum Aktivieren von Azure PIM für Ihren Azure AD-Mandanten und für Administratorkonten finden Sie unter [Schritte zum Konfigurieren von PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
 

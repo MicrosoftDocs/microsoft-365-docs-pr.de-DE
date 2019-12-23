@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 'Als Office 365-Benutzer können Sie Ihre eigenen in Spamquarantäne befindlichen Nachrichten auf eine von zwei Arten verwalten: Sie können entweder auf direkt an Sie gesendete Spambenachrichtigungen reagieren (sofern Ihr Administrator dieses Feature eingerichtet hat) oder im Security &amp; Compliance Center die Spamquarantänefunktion verwenden.'
-ms.openlocfilehash: c912c19571cde31c39f4ca3f44c7628ba8b29526
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970461"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808000"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365
 
@@ -36,7 +36,7 @@ Als Office 365-Benutzer können Sie Nachrichten, die unter Quarantäne gestellt 
 2. Erweitern Sie auf der linken Seite **Bedrohungsverwaltung**, wählen Sie **Überprüfen** und dann **Quarantäne** aus.
 
     > [!TIP]
-    > Um direkt zur **Quarantäne**-Seite im Security &amp; Compliance Center zu wechseln, verwenden Sie diese URL:> [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Um direkt zur **Quarantäne**-Seite im Security &amp; Compliance Center zu wechseln, verwenden Sie diese URL:[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 Standardmäßig werden im Security &amp; Compliance Center alle E-Mail-Nachrichten, die isoliert wurden, als Spam angezeigt. Die Nachrichten werden von der neuesten zur ältesten sortiert, basierend auf dem **Datum**, an dem die Nachricht empfangen wurde. Für jede Nachricht werden außerdem der **Absender**, das **Betreff** und das Ablaufdatum (unter **Läuft ab**) angezeigt. Sie können schnell nach einem Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift klicken; klicken Sie erneut auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren.
 

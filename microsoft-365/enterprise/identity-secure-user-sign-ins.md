@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie können die Benutzeranmeldungen auf Windows-Geräten und auf Microsoft 365 sicherer machen.
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370192"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801730"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Schritt 3: Absichern und Verwalten von Benutzeranmeldungen
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370192"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>Windows Hello for Business
 
-*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365*
 
 Windows Hello for Business in Windows 10 Enterprise ersetzt Kennwörter durch eine starke zweistufige Authentifizierung, wenn sich jemand auf einem Windows-Gerät anmeldet. Beide Faktoren zählen zu neuen Arten von Benutzeranmeldeinformationen, die mit einem Gerät verknüpft sind und biometrische Daten oder eine PIN erfordern.
 
@@ -38,7 +38,7 @@ Weitere Informationen finden Sie unter [Windows Hello for Business](https://docs
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>Einrichten der mehrstufigen Azure-Authentifizierung
 
-*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365*
 
 Im Rahmen dieses Schritts richten Sie die mehrstufige Azure-Authentifizierung (Multi-Factor Authentication, MFA) ein, um eine zweite Sicherheitsebene zu Benutzeranmeldungen und -transaktionen hinzuzufügen. Die mehrstufige Authentifizierung erfordert eine zusätzliche Überprüfungsmethode, nachdem die Benutzer ihr Kennwort korrekt eingegeben haben. Ohne MFA ist das Kennwort die einzige Überprüfungsmethode. Das Problem bei Kennwörtern ist, dass viele von ihnen durch einen Angreifer leicht erraten oder unwissentlich mit nicht vertrauenswürdigen Parteien geteilt werden.
 
