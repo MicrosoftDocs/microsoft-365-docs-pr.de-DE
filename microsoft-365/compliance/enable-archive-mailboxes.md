@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Im Security & Compliance Center in Office 365 können Sie Archivpostfächer aktivieren, um den Anforderungen Ihrer Organisation hinsichtlich Nachrichtenarchivierung, eDiscovery und Aufbewahrung gerecht zu werden.
-ms.openlocfilehash: 63c6986e3bf053f09ce4c4925735e920da3b5ed4
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 29c90b85b4f8d05664ea6d28f8997265b7e14b49
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793669"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967358"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von Archivpostfächern im Security & Compliance Center
   
@@ -39,9 +39,9 @@ Ihnen muss die Rolle "E-Mail-Empfänger" in Exchange Online zugewiesen sein, dam
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts- oder Schul-/Unikonto bei Office 365 an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Data Governance** \> **Archiv**.
+3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Information Governance** \> **Archiv**.
     
     Die Seite **Archiv** wird angezeigt. Die Spalte **Archivpostfach** gibt für jeden Benutzer an, ob das Archivpostfach aktiviert oder deaktiviert ist. 
     
@@ -70,9 +70,9 @@ So deaktivieren Sie ein Archivpostfach:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts- oder Schul-/Unikonto bei Office 365 an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Data Governance** \> **Archiv**.
+3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Information Governance** \> **Archiv**.
     
     Die Seite **Archiv** wird angezeigt. Die Spalte **Archivpostfach** gibt für jeden Benutzer an, ob das Archivpostfach aktiviert oder deaktiviert ist. 
     

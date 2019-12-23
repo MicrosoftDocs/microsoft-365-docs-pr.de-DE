@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen nach Inhalten zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39266134"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967518"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
@@ -310,7 +310,7 @@ Bedingungen sind durch den Operator **AND** logisch mit der Schlüsselwortabfrag
   
 ### <a name="searching-inactive-mailboxes"></a>Durchsuchen von inaktiven Postfächern
 
-Im Rahmen einer Inhaltssuche können auch inaktive Postfächer durchsucht werden. Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen Sie in Exchange Online PowerShell den Befehl `Get-Mailbox -InactiveMailboxOnly` aus. Alternativ können Sie im Security & Compliance Center zu **Data governance**\> **Aufbewahrung** wechseln, und dann auf **Weitere**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktive Postfächer** klicken.
+Im Rahmen einer Inhaltssuche können auch inaktive Postfächer durchsucht werden. Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen Sie in Exchange Online PowerShell den Befehl `Get-Mailbox -InactiveMailboxOnly` aus. Alternativ können Sie im Security & Compliance Center zu **Information governance**\> **Aufbewahrung** wechseln, und dann auf **Weitere**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktive Postfächer** klicken.
   
 Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
 
