@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 4e932b160f6c203d65070706bc485fe6582ba4cc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749793"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806458"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft-Support, Dienstleistungen und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -35,7 +36,7 @@ Microsoft Professional Services setzt sich für den Schutz seiner Kunden ein und
 
 Unser Benachrichtigungsprozess im Hinblick auf die Verletzung des Schutzes personenbezogener Daten beginnt, wenn wir deklarieren, dass eine [Verletzung des Schutzes personenbezogener Daten] stattgefunden hat.
 
-Damit eine Datenschutzverletzung deklariert werden kann, muss das Microsoft-Team für die Reaktion auf Datenschutzverletzungen bestimmen, dass eine Datenschutzverletzung entsprechend der obenstehenden Definition erfolgt ist oder sehr wahrscheinlich erfolgt ist. Die Deklaration erfolgt, sobald alle relevanten Informationen verfügbar sind, damit bestimmt werden kann, dass eine Datenschutzverletzung aufgetreten ist.
+Damit eine Datenschutzverletzung deklariert werden kann, muss das Microsoft-Team für die Reaktion auf Datenschutzverletzungen festlegen, dass eine Datenschutzverletzung entsprechend der obenstehenden Definition erfolgt ist. Die Deklaration erfolgt, sobald alle relevanten Informationen verfügbar sind, damit festgelegt werden kann, dass eine Datenschutzverletzung aufgetreten ist.
 
 In Professional Services sind einige Ereignisse, die scheinbar Microsoft-Datenschutzverletzungen darstellen, in Wirklichkeit keine, da sie durch Aktionen des Kunden oder auf den Systemen eines Kunden aufgetreten sind. Microsoft führt keine Überwachungs- oder Reaktionsmaßnahmen für Datenschutzverletzungen durch, die im Verantwortlichkeitsbereich des Kunden auftreten. Wenn Microsoft jedoch eine kundengesteuerte Datenschutzverletzung erkennt, wird diese als kundengesteuerte Datenschutzverletzung klassifiziert, die das Team für die Reaktion auf Datenschutzverletzungen als "Ereignis" bezeichnet, der Kunde wird entsprechend informiert und erhält auf Anfrage Unterstützung bei den Reaktionsmaßnahmen, soweit dies im Rahmen der kundenseitigen Interaktion mit Microsoft vorgesehen ist. Einige Beispiele für kundenbezogene Datenschutzverletzungen sind das versehentliche Senden von Kundenkennwörtern und anderen sensiblen Daten an Microsoft, Anfragen zum Löschen von Daten und Betrugsfälle, denen der Kunde zum Opfer fällt.
 
@@ -76,11 +77,11 @@ Es werden regelmäßige Online-Schulungen angeboten, die von allen Mitarbeitern 
 
 Wenn die Microsoft Professional Services-Organisation eine Datenschutzverletzung erkennt, befolgt sie einen dokumentierten Reaktionsplan entsprechend Branchenstandards. Der erste Schritt ist die Bestimmung, dass die Kriterien einer Datenschutzverletzung erfüllt sind. Wenn eine Datenschutzverletzung auftritt, wird diese in der Regel direkt nach der Selektierung erklärt, je nach Komplexität kann die Erklärung aber zu einem beliebigen Zeitpunkt erfolgen, wenn ausreichend Informationen verfügbar sind, selbst nach der Untersuchungsstufe. Andererseits kann das Team nach eigenem Ermessen eine Datenschutzverletzung basierend auf lediglich einem begründeten Verdacht des Auftretens deklarieren. Das Team kann im Verlauf der Untersuchung auch zwischen den verschiedenen Stufen wechseln.
 
-Microsoft nimmt auch eine interne nachträgliche Analyse zu Datenschutzverletzungen vor. Im Rahmen dieser Übung wird die Angemessenheit von Reaktions- und Betriebsverfahren bewertet und es werden etwaige notwendige Updates an dem *Standardbetriebsverfahren für die Reaktion auf Datenschutzverletzungen* oder zugehörigen Prozessen identifiziert und implementiert. Interne nachträgliche Analysen zu Datenschutzverletzungen sind streng vertrauliche Datensätze, auf die Kunden keinen Zugriff haben. Diese Analysen können allerdings in zusammengefasster Form in Kundenbenachrichtigungen zu Ereignissen aufgenommen werden. Im Rahmen eines routinemäßigen Auditzyklus werden nachträgliche Analyseprozesse durch externe Auditoren geprüft, um die Nachverfolgung sicherzustellen.
+Je nach Schweregrad der Datenschutzverletzung nimmt Microsoft auch interne nachträgliche Analysen zu Datenschutzverletzungen vor. Im Rahmen dieser wird die Angemessenheit von Reaktions- und Betriebsverfahren bewertet und es werden etwaige notwendige Updates des*Standardbetriebsverfahrens für die Reaktion auf Datenschutzverletzungen* oder von zugehörigen Prozessen identifiziert und implementiert. Interne nachträgliche Analysen zu Datenschutzverletzungen sind streng vertrauliche Datensätze, auf die Kunden keinen Zugriff haben. Diese Analysen können allerdings in zusammengefasster Form in Kundenbenachrichtigungen zu Ereignissen aufgenommen werden. Im Rahmen eines routinemäßigen Auditzyklus werden nachträgliche Analyseprozesse durch externe Auditoren geprüft, um die Nachverfolgung sicherzustellen.
 
 ### <a name="notification"></a>Benachrichtigung
 
-Wenn Microsoft Professional Services eine Datenschutzverletzung gemäß der DSGVO deklariert, senden wir unseren Kunden innerhalb von 72 Stunden eine Benachrichtigung. Diese Pflicht zur Meldung innerhalb von 72 Stunden ist in den Richtlinien von Professional Services festgelegt. Es ist keine gesetzliche Anforderung unter der DSGVO.
+Wenn Microsoft Professional Services ein Datenschutz-Ereignis gemäß DSGVO meldet, sind wir bestrebt, unsere Kunden innerhalb von 72 Stunden zu benachrichtigten. 
 
 Nach der Deklaration einer Datenschutzverletzung wird der Benachrichtigungsprozess so rasch wie möglich in Gang gesetzt, wobei auch die Sicherheitsrisiken eines schnellen Handelns berücksichtigt werden. Um sicherzustellen, dass die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde sicherstellen, dass die administrativen Kontaktinformationen für jedes entsprechende Konto und Abonnement sowie im Online Services-Portal korrekt sind. Zwar besteht das Ziel darin, genaue, umsetzbare und zeitnahe Informationen zu übermitteln, jedoch enthält die erste Benachrichtigung aufgrund der Verpflichtung zur Meldung innerhalb von 72 Stunden möglicherweise keine vollständigen Details, da diese in den frühen Phasen einer Datenschutzverletzung häufig nicht verfügbar sind. Darüber hinaus kann es aufgrund der Umstände der Datenschutzverletzung erforderlich sein, dass Microsoft einige Details zurückhält. Beispielsweise kann es notwendig sein, Details zurückzuhalten, wenn deren Übermittlung das Risiko für andere Kunden erhöht oder verhindert, dass Microsoft oder die Strafverfolgung eine Person mit böswilligen Absichten fasst.
 
@@ -97,4 +98,4 @@ Bei der Benachrichtigung von Kunden über eine Verletzung des Schutzes personenb
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen zu den Microsoft Professional Services erhalten Sie im Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). 
+Weitere Informationen zu den Microsoft Professional Services (<https://aka.ms/pstrust>). 

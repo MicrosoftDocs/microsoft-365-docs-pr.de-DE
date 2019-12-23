@@ -2,22 +2,23 @@
 title: Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
 description: Wie Microsoft-Support und Professional Services Daten für Anträge betroffener Personen für die DSGVO und den CCPA bearbeiten.
 keywords: Professional Services, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
-author: robmazz
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: b54f3ceb056d182951ea7c2d8d21ffa2eeda2db3
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 60e567f5c5a0c63218b7e9d3aae19d127a1ae98e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268525"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806348"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
 
@@ -25,7 +26,7 @@ ms.locfileid: "39268525"
 
 Microsoft Professional Services umfasst eine heterogene Gruppe aus technischen Architekten, Technikern, Beratern und Supportmitarbeitern, welche die Mission von Microsoft unterstützen, Kunden zu befähigen, mehr zu tun und mehr zu erreichen. Unser Professional Services-Team umfasst insgesamt mehr als 21000 Berater, Berater für digitale Angelegenheiten, Premier-Support, Techniker und Vertriebsmitarbeiter in mehr als 191 Ländern, die 46 unterschiedliche Sprachen sprechen, mehrere Millionen Engagements pro Monat absolvieren und vor Ort oder über Telefon, Internet, Community und automatisierte Tools mit Kunden und Partnern interagieren. Die Organisation liefert umfangreiche Kenntnisse über das gesamte Spektrum des Microsoft-Portfolios hinweg, wofür ein weiteres Partnernetzwerk, technische Communities, Tools, Diagnosen und Kanäle genutzt werden, die uns mit unseren Unternehmenskunden verbinden.
 
-Weitere Informationen zu Microsoft Professional Services erhalten Sie im Abschnitt zu Microsoft Professional Services im Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). Microsoft Professional Services nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Die Informationen in diesem Dokument dienen zur Beantwortung von Kundenfragen, wie die Support- und Beratungsangebote von Microsoft den Data Subject Request(DSR)-Verpflichtungen im Rahmen der DSGVO gerecht werden und Kunden in dieser Hinsicht unterstützen.
+Weitere Informationen zu Microsoft Professional Services erhalten Sie unter der [Webseite Microsoft Professional Services Security Documentation ](https://www.microsoft.com/en-us/professionalservices/overview). Microsoft Professional Services nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Die Informationen in diesem Dokument dienen zur Beantwortung von Kundenfragen, wie die Support- und Beratungsangebote von Microsoft den Data Subject Request(DSR)-Verpflichtungen im Rahmen der DSGVO gerecht werden und Kunden in dieser Hinsicht unterstützen.
 
 ### <a name="introduction-to-dsrs"></a>Einführung in Anträge betroffener Personen 
 
@@ -33,11 +34,11 @@ Die Datenschutz-Grundverordnung (DSGVO) gewährt Personen (die in den Bestimmung
 
 In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
-In diesem Leitfaden wird erläutert, wie Sie personenbezogene Daten, die sich in IT-Systemen von Microsoft befinden und möglicherweise erfasst wurden, um Support und andere Professional Services-Angebote bereitzustellen, finden, aufrufen und im Sinne der DSGVO verarbeiten können.
+In diesem Leitfaden wird erläutert, wie Sie personenbezogene Daten, die sich in IT-Systemen von Microsoft befinden und möglicherweise erfasst wurden, um Support und andere Professional Services-Angebote bereitzustellen, finden, aufrufen und verarbeiten können.
 
 Bei der Entwicklung und Implementierung einer festen Vorgehensweise für die Reaktion auf Anträge betroffener Personen müssen Kunden von Microsoft wissen, dass Support- und Beratungsdaten getrennt von Kundendaten in den Onlinediensten oder anderen Daten, die sie oder ihre betroffenen Personen an Microsoft übermittelt haben, gespeichert werden. Tools und Prozesse, die für Onlinedienste, das Microsoft-Datenschutz-Dashboard oder andere Microsoft-Systeme für die Reaktion auf Anträge betroffener Personen bereitgestellt wurden, können nicht verwendet werden, um auf Anträge betroffener Personen bezüglich personenbezogener Daten zu reagieren, die im Besitz von Microsoft-Support oder Professional Services sind.
 
-Sämtliche Anträge müssen wie nachfolgend beschrieben über einen Supportmitarbeiter erfolgen. Es gibt derzeit kein Tool, mit dem Kunden Zugriff auf personenbezogene Daten in den Professional Services-Organisationen erhalten könnten.
+Sämtliche Anträge müssen wie nachfolgend beschrieben über einen Supportmitarbeiter erfolgen. Es gibt derzeit kein Selbstbedienungstool, mit dem Kunden Zugriff auf personenbezogene Daten in den Professional Services-Organisationen erhalten könnten.
 
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>Übersicht über die in diesem Leitfaden beschriebenen Prozesse
 
@@ -81,7 +82,7 @@ Die personenbezogenen Daten des Kundenkontakts sind Teil der Geschäftsbeziehung
 
 Kunden müssen wissen, dass Anträge betroffener Personen nur die personenbezogenen Daten des Kundenkontakts abdecken und keine Änderungen oder Löschungen an Daten des Kunden vorgenommen werden, die im Rahmen des Engagements übermittelt wurden (z. B. Transkripte, Fallbeschreibungen, Dateien, Arbeitsergebnis), da Microsoft der Datenauftragsverarbeiter ist. Zudem werden zur Beibehaltung historischer Datensätze des Engagements keinerlei Änderungen an geschlossenen Engagements vorgenommen, einschließlich des Datensatzes desjenigen, der das Engagement eröffnet hat.
 
-Bei Eingang einer Anfrage eines Kundenkontakts zu einem Antrag einer betroffenen Person, leiten Microsoft-Mitarbeiter den Kundenkontakt zum [Datenschutz-Support von Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116) weiter. Dies ist der primäre Eingabemechanismus von Microsoft für Anfragen und Beschwerden im Bereich des Datenschutzes. Bei Eingang einer Anfrage identifiziert das Datenschutzteam von Microsoft, dass diese Teil eines kommerziellen oder Organisationskontos ist, und reagiert entsprechend.
+Bei Eingang einer Anfrage eines Kundenkontakts zu einem Antrag einer betroffenen Person, leiten Microsoft-Mitarbeiter den Kundenkontakt zum [Datenschutz-Support-Center von Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116) weiter. Dies ist der primäre Eingabemechanismus von Microsoft für Anfragen und Beschwerden im Bereich des Datenschutzes. Bei Eingang einer Anfrage identifiziert das Datenschutz-Support-Center, dass diese Teil eines kommerziellen oder Organisationskontos ist, und reagiert entsprechend.
 
 Damit auf Seiten des Kunden keine Betriebsunterbrechung entsteht, bearbeitet Microsoft Anträge betroffener Personen in Verbindung mit einem Engagement erst dann, wenn ein Ersatzkontakt bestätigt wurde. Nach Bestätigung eines neuen Kontakts ersetzt Microsoft den alten Kontakt in offenen Engagements durch den neuen Kontakt.
 
@@ -89,7 +90,7 @@ Kunden können wählen, Änderungen an ihren während Professional Service-Engag
 
 ***Beispiel zur Veranschaulichung***
 
-John ist IT-Admin für einen Office 365-Enterprise-Kunden mit einem offenen Support-Engagement und zwei geschlossenen Engagements. Jetzt verlässt John das Unternehmen und möchte, dass seine Daten gelöscht werden. John wendet sich an den PRC, der ihn als IT-Admin identifiziert. John wird informiert, dass sein Name nicht aus den früheren (geschlossenen) Engagements oder Daten in dem offenen Engagement gelöscht werden kann. Der PRC kann John jedoch als Kontakt für das aktuell offene Ticket ersetzen, sofern er einen Ersatzkontakt benennt. John teilt Microsoft mit, dass Jane sein Ersatzkontakt sein wird, woraufhin Microsoft die Änderung in allen Support-Systemen vornimmt.
+John ist IT-Admin für einen Office 365-Enterprise-Kunden mit einem offenen Support-Engagement und zwei geschlossenen Engagements. Jetzt verlässt John das Unternehmen und möchte, dass seine Daten gelöscht werden. John wendet sich an das Privacy Response Center (PRC), das ihn als IT-Admin identifiziert. John wird informiert, dass sein Name nicht aus den früheren (geschlossenen) Engagements oder aus etwaigen Daten in dem offenen Engagement gelöscht werden kann. Das PRC kann John jedoch als Kontakt für das aktuell offene Ticket ersetzen, sofern er einen Ersatzkontakt benennt. John teilt Microsoft mit, dass Jane sein Ersatzkontakt ist, woraufhin Microsoft die Änderung in allen Support-Systemen vornimmt.
 
 ## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Antrag einer betroffenen Person für einen Endbenutzer gegenüber Microsoft
 
@@ -117,7 +118,7 @@ Der erste Schritt, um Unterstützung von Microsoft bei der Beantwortung eines An
 
 Nachdem der Kunde die Daten gefunden hat, kann er die entsprechende Aktion ausführen, um auf den Antrag der betroffenen Person zu reagieren. Die gewünschte Aktion bestimmt den Umfang der Ermittlung, die der Kunde durchführen muss.
 
-Wenn Microsoft einen Kunden bei der Reaktion auf einen Antrag einer betroffenen Person unterstützt, handelt es sich um eine Geschäftsfunktion, und der Antrag wird über Ihren regulären Support-Kanal gestellt und nicht über eine Anfrage beim Datenschutzteam von Microsoft.
+Wenn Microsoft einen Kunden bei der Reaktion auf einen Antrag einer betroffenen Person unterstützt, handelt es sich um eine Geschäftsfunktion, und der Antrag wird über Ihren regulären Support-Kanal gestellt und nicht über eine Anfrage beim Datenschutz-Support-Center.
 
 Während er relevante Daten ausfindig macht und sich die Unterstützung von Microsoft sichert, hat ein Kunde mehrere Optionen, den Antrag einer betroffenen Person zu bearbeiten:
 
@@ -170,7 +171,6 @@ Kunden können die Löschung der personenbezogenen Daten einer betroffenen Perso
 
 *Option A – Microsoft-Support-übergreifender Antrag einer betroffenen Person durch den Kunden*. Bei einem systemübergreifenden Antrag einer betroffenen Person muss der Kunde die personenbezogenen Daten bereitstellen, die Microsoft benötigt, um die erforderlichen Daten ermitteln zu können (z. B. E-Mail-Adresse, Telefonnummer). Microsoft korreliert oder recherchiert keine Datensätze und sucht nur direkt nach den vom Kunden bereitgestellten Kennzeichnern. Wenn Daten gefunden werden, löscht Microsoft alle Engagements und alle zugehörigen Daten.
 
-> [!IMPORTANT]
 > Wichtiger Hinweis: **Dies kann dazu führen, dass historische Datensätze, die für die Organisation des Kunden wichtig sind, verloren gehen.
 
 *Option B – spezifische Kundenengagements.* Für spezifische Engagements, die der Kunde identifiziert hat und löschen lassen möchte, dürfen Sie keine Tickets aus SMC löschen. Dies kann sonst dazu führen, dass personenbezogene Daten in Protokollen und nachgelagerten Systemen verbleiben und nicht innerhalb des erforderlichen Zeitrahmens gelöscht werden. Identifizieren Sie stattdessen das Ticket oder die personenbezogenen Daten in dem Ticket, die gelöscht werden müssen, und wenden Sie sich an den Microsoft-Support, um sich beim Löschen dieser Daten unterstützen zu lassen.
@@ -200,7 +200,7 @@ Außerdem vermutet er, dass es ein Chatgespräch mit Supportmitarbeitern gab, in
 
 Er weiß auch, dass sich Janes personenbezogene Daten in der SQL-Datenbank befinden. Da die SQL-VM vor weniger als 90 Tagen in DTM verschoben wurde, bittet er seinen TAM separat um Unterstützung bei der umgehenden Löschung der Datenbank aus DTM.
 
-Und da er weiß, dass Daten während der Supportleistung möglicherweise aus der DTM-Datei entfernt wurden, bittet er Microsoft, alle IT-Systeme auf die personenbezogenen Daten von Jane aus der SQL-Datenbank zu prüfen.
+Und da er letztlich weiß, dass Daten während der Supportleistung möglicherweise aus der DTM-Datei entfernt wurden, bittet er Microsoft, alle IT-Systeme auf die personenbezogenen Daten von Jane aus der SQL-Datenbank zu prüfen.
 
 Der Microsoft-Support führt all diese Löschungen durch, und der TAM stellt ihm basierend auf dem Kundenantrag einen Nachweis über die Löschung der erforderlichen Daten bereit.
 
@@ -212,7 +212,7 @@ Der Microsoft-Support führt all diese Löschungen durch, und der TAM stellt ihm
 
 Für Microsoft Consulting Services-Engagements, für die der Nachtrag zum Datenschutz von Microsoft Professional Services (<https://aka.ms/professionalservicesdpa>) gilt.
 
-Microsoft ist der Datenverantwortliche für Kundenkontakte, die mit dem Engagement-Team arbeiten. Diese Personen müssen sich an den [Datenschutz-Support von Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116) wenden, um Rechte betroffener Personen zu erfüllen.
+Microsoft ist der Datenverantwortliche für Kundenkontakte, die mit dem Engagement-Team arbeiten. Diese Personen müssen sich an das [Datenschutz-Support-Center](https://go.microsoft.com/fwlink/?LinkId=321116) wenden, um Rechte betroffener Personen zu erfüllen.
 
 Microsoft ist der Datenauftragsverarbeiter für einen Antrag einer betroffenen Person, der sich auf Daten bezieht, die während eines Beratungsengagements übermittelt wurden. Der Kunde muss den Engagement-Manager kontaktieren, um einen Plan für die Unterstützung bei der Reaktion auf Anträge betroffener Personen basierend auf den erfassten Daten und dem spezifischen Typ der bereitgestellten Beratungsdienste zu erstellen. Soweit Ihr Antrag einen Aufwand darstellt, der innerhalb eines Microsoft Consulting Services-Engagements typisch ist, ist möglicherweise eine zusätzliche Bestellung erforderlich. Darüber hinaus werden personenbezogene Daten nach jedem Beratungsengagement innerhalb eines Zeitrahmens gelöscht, der von der Art des Beratungsengagements abhängt. Der Kunde kann beantragen, dass Daten eher gelöscht werden, und einen Nachweis über die Löschung anfordern.
 
@@ -230,4 +230,4 @@ Wenn Sie ein Office 365-Benutzerkonto als Reaktion auf einen Antrag einer betrof
 
 ## <a name="other-consulting-services"></a>Sonstige Beratungsdienste
 
-Kunden, die andere Professional Services von Microsoft nutzen, sollten mit dem Engagement-Team zusammenarbeiten, um alle DSGVO-Anforderungen zu erfüllen. Wenn das Engagement-Team keine klaren Anweisungen zur Erfüllung von Anträgen betroffener Personen gemäß der DSGVO geben kann, können Kunden den [Datenschutz-Support von Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116) um Unterstützung bitten.
+Kunden, die andere Professional Services von Microsoft nutzen, sollten mit dem Engagement-Team zusammenarbeiten, um alle DSGVO-Anforderungen zu erfüllen. Wenn das Engagement-Team keine klaren Anweisungen zur Erfüllung von Anträgen betroffener Personen gemäß der DSGVO geben kann, können Kunden das [Datenschutz-Support-Center](https://go.microsoft.com/fwlink/?LinkId=321116) um Unterstützung bitten.
