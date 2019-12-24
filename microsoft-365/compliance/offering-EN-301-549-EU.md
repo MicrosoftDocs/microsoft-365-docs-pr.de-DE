@@ -1,5 +1,5 @@
 ---
-title: Europäische Standards EN 301 549 Berichte
+title: Europäische Normen EN 301 549
 description: Die Microsoft Cloud umfasst viele Dienste und ist in vielen individuellen Konformitätsberichten enthalten.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
@@ -11,26 +11,27 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3bb38720caaa27b0f8deba26046410c0d8f25d6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859935"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805208"
 ---
-# <a name="european-standards-en-301-549-reports"></a>Europäische Normen EN 301 549 Berichte
+# <a name="european-standards-en-301-549"></a>Europäische Normen EN 301 549
 
 ## <a name="about-en-301-549"></a>Über EN 301 549
 
-„Anforderungen an die Barrierefreiheit bei der Vergabe öffentlicher Aufträge für Produkte und Dienstleistungen im IKT-Bereich“ sind in der EN 301 549 festgelegt, die eine Sammlung von Standards für IKT-Produkte darstellt einschließlich Websites, Software und digitaler Geräte. EN 301 549 wurde 2014 vom European Telecommunications Standards Institute (ETSI) auf Verlangen der Europäischen Kommission veröffentlicht und soll in Beschaffungsverfahren von Regierungsbehörden und wurde 2018 mit der Version 2.1.2 aktualisiert. Er soll in Beschaffungsverfahren von Regierungsbehörden und Organisation im öffentlichen Sektor eingesetzt werden. EN 301 549 nimmt die Webstandards zur Barrierefreiheit der WCAG 2.1 in Klausel 9.2 auf.
+Die Barrierefreiheitsanforderungen für Produkte und Dienste der Informations- und Kommunikationstechnologie (IKT) sind in EN 301 549 festgelegt, einer Reihe von Normen für IKT-Produkte und -Dienste, einschließlich Websites, Software und digitaler Geräte. Die EN 301 549 wurde 2014 vom Europäischen Institut für Telekommunikationsnormen (ETSI) auf Ersuchen der Europäischen Kommission veröffentlicht und zuletzt im November 2019 auf Version 3.1.1 aktualisiert. EN 301 549 3.1.1 enthält die [WCAG](offering-WCAG-2-1.md)-Standards für die Barrierefreiheit im Internet.
 
-Da Microsoft ein bedeutender Software- und Cloud-Dienstanbieter für europäische Staaten ist, verpflichtet sich das Unternehmen zur Einhaltung aller relevanten [staatlichen Standards und Compliance-Kontrollen](https://go.microsoft.com/fwlink/p/?linkid=2051708). Durch die Einhaltung dieser weitreichenden Barrierefreiheitsstandards stellt Microsoft sicher, dass alle Kunden – sowohl innerhalb als auch außerhalb der Regierung – die Microsoft-Dienste und -Produkte nutzen können.
+Microsoft ist ein bedeutender Anbieter von Software und Cloud-Diensten für europäische Staaten. Microsoft veröffentlicht Accessibility Conformance Reports (ACRs), in denen beschrieben wird, inwieweit unsere Produkte und Dienstleistungen die Kriterien von EN 301 549 erfüllen, um Regierungskunden bei ihren Beschaffungsentscheidungen zu unterstützen. Mithilfe der Informationen in den ACRs können Microsoft-Kunden feststellen, ob ein Produkt oder eine Dienstleistung ihren spezifischen Anforderungen entspricht.
 
 ## <a name="microsoft-and-en-301-549"></a>Microsoft und EN 301 549
 
-Die Einhaltung des Standards EN 301 549 durch Microsoft zeigt, dass Microsoft sich für die Zugänglichkeit für alle Kunden einsetzt. EN 301 549 ist der europäische Standard für die Zugänglichkeit, der Abschnitt 508 (USA) und WCAG 2.1 (international) ergänzt.
+Die Berücksichtigung von EN 301 549 durch Microsoft bei der Entwicklung von Produkten und Diensten zeigt, dass sich Microsoft für die Barrierefreiheit für alle Kunden einsetzt.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
