@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Für Administratoren: Hier erfahren Sie, wie Sie die automatisch erweiterte Archivierung in Office 365 aktivieren, wodurch Ihren Benutzern Unbegrenzter Speicherplatz für Ihre Exchange Online Postfächer zur Verfügung steht. Sie können die automatisch expandierende Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38627091"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850889"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Unbegrenzte Archivierung in Office 365 aktivieren – Administratorhilfe
 
 Sie können das Exchange Online automatisch expandierende Archivierungsfeature in Office 365 verwenden, um unbegrenzten Speicherplatz für Archivpostfächer zu aktivieren. Wenn die automatisch expandierende Archivierung aktiviert ist, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn er sich dem Speichergrenzwert nähert. Das Ergebnis ist eine unbegrenzte Speicherkapazität für Postfächer. Sie können die automatisch expandierende Archivierung für jeden in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation oder ein Mitglied der Rollengruppe Organisationsverwaltung in Ihrer Exchange Online Organisation sein, um die automatisch expandierende Archivierung für Ihre gesamte Organisation oder für bestimmte Benutzer zu aktivieren. Alternativ müssen Sie Mitglied einer Rollengruppe sein, der die Rolle "e-Mail-Empfänger" zugewiesen ist, um die automatisch erweiterte Archivierung für bestimmte Benutzer zu aktivieren.
     
@@ -124,4 +124,4 @@ Beachten Sie nach Aktivierung der automatisch expandierenden Archivierung Folgen
 - Administratoren können das Speicherkontingent nicht anpassen.
 
 > [!IMPORTANT]
-> Die automatisch expandierende Archivierung wird nur für Postfächer unterstützt, die für einzelne Benutzer oder freigegebene Postfächer mit einer Wachstumsrate von nicht mehr als 1 GB pro Tag verwendet werden. Das Verwenden von Journaling, Transportregeln oder Regeln für die automatische Weiterleitung zum Kopieren von Nachrichten in ein Archivpostfach ist für Archivierungszwecke nicht zulässig. Das Archivpostfach eines Benutzers ist nur für diesen Benutzer vorgesehen. Microsoft behält sich das Recht vor, die uneingeschränkte Archivierung dann zu verweigern, wenn das Archivpostfach eines Benutzers zum Speichern von Archivdaten für andere Benutzer verwendet wird.
+> Die automatisch expandierende Archivierung wird nur für Postfächer unterstützt, die für einzelne Benutzer oder freigegebene Postfächer mit einer Wachstumsrate von nicht mehr als 1 GB pro Tag verwendet werden. Das Verwenden von Journaling, Transportregeln oder Regeln für die automatische Weiterleitung zum Kopieren von Nachrichten in ein Archivpostfach ist für Archivierungszwecke nicht zulässig. Das Archivpostfach eines Benutzers ist nur für diesen Benutzer vorgesehen. Microsoft behält sich das Recht vor, eine unbegrenzte Archivierung in Fällen zu verweigern, in denen das Archivpostfach eines Benutzers zum Speichern von Archivdaten für andere Benutzer oder in anderen Fällen ungeeigneter Verwendung verwendet wird.

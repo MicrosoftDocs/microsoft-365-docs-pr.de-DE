@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 'Verwenden Sie das Security #a0 Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Advanced eDiscovery vorbereiten.'
-ms.openlocfilehash: cf880e6f54f2ab91bae23c3ecf468f88627f3025
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686263"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854060"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>eDiscovery-Fälle im Security #a0 Compliance Center
 
@@ -57,7 +57,10 @@ Verwenden Sie den folgenden Workflow zum Einrichten und Verwenden von eDiscovery
 
 Der erste Schritt besteht darin, Personen die entsprechenden eDiscovery-bezogenen Berechtigungen zuzuweisen, damit Sie Sie in Schritt 2 zu einem eDiscovery-Fall hinzufügen können. Sie müssen Mitglied der Rollengruppe "Organisationsverwaltung" (oder der Rolle "Rollenverwaltung" zugewiesen) im Sicherheits #a0 Compliance Center sein, um eDiscovery-Berechtigungen zuzuweisen. In der folgenden Liste werden die eDiscovery-bezogenen Rollengruppen im Security #a0 Compliance Center beschrieben. 
   
-- **Prüfer.** Diese Rollengruppe verfügt über die restriktivsten Berechtigungen in Bezug auf eDiscovery. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in Office 365 Advanced eDiscovery zu gestatten. Mitglieder dieser Gruppe können die Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center nur anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security and Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Sie können keine Fälle erstellen, einem Fall Mitglieder hinzufügen, Aufbewahrungen erstellen, Suchergebnisse in der Vorschau anzeigen, Suchergebnisse exportieren oder Ergebnisse für Advanced eDiscovery vorbereiten. 
+- **Prüfer.** Diese Rollengruppe verfügt über die restriktivsten Berechtigungen in Bezug auf eDiscovery. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in [Office 365 Advanced](office-365-advanced-ediscovery.md) eDiscovery (auch bekannt als *Advanced eDiscovery v1*) zu ermöglichen. Mitglieder dieser Gruppe können die Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center nur anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security and Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Sie können keine Fälle erstellen, einem Fall Mitglieder hinzufügen, Aufbewahrungen erstellen, Suchergebnisse in der Vorschau anzeigen, Suchergebnisse exportieren oder Ergebnisse für Advanced eDiscovery vorbereiten. 
+
+   > [!NOTE]
+   > Zu diesem Zeitpunkt können Benutzer, die Mitglied der Rollengruppe Prüfer sind, nicht auf Daten in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery v2*) zugreifen. Wenn Sie einem Fall in Advanced eDiscovery v2 Mitglieder hinzufügen möchten, damit Sie die Falldaten überprüfen können, muss ein Benutzer Mitglied der Rollengruppe "eDiscovery-Manager" sein.
     
 - **eDiscovery-Manager.** Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, inhaltsspeicherorte in der Warteschleife platzieren, Inhalts suchen, die einem Fall zugeordnet sind, erstellen und bearbeiten, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. In dieser Rollengruppe gibt es zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
     
@@ -82,7 +85,7 @@ Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen vo
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
 3. Klicken Sie im Security #a0 Compliance Center auf **Berechtigungen**, und führen Sie eine der folgenden Aktionen basierend auf den eDiscovery-Berechtigungen aus, die Sie zuweisen möchten.
     
@@ -100,7 +103,7 @@ Der nächste Schritt besteht darin, einen eDiscovery-Fall zu erstellen. Sie müs
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
 3. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery**, und klicken Sie ![dann auf](media/ITPro-EAC-AddIcon.gif) Symbol hinzufügen, **um eine Anfrage zu erstellen**.
     
@@ -524,7 +527,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
   |Maximale Anzahl von Fall Behältern für eine Organisation  <br/> |10.000  <br/> |
-  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1,000  <br/> |
+  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1.000  <br/> |
   |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites in einem einzigen Aufbewahrungs Fall  <br/> |100  <br/> |
    
 - **Was geschieht mit Fällen, die auf der Seite Fallverwaltung in Advanced eDiscovery erstellt wurden?** Sie können auf eine Liste älterer erweiterter eDiscovery-Fälle zugreifen, indem Sie auf der Seite **eDiscovery** im Security #a0 Compliance Center auf den Link unten klicken. Um jedoch in einem älteren Fall arbeiten zu können, müssen Sie sich an Office 365 Support wenden und die Anfrage dazu stellen, dass der Fall in einen neuen eDiscovery-Fall im Security #a0 Compliance Center verschoben wird. 

@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Genau wie Funktionen im Microsoft 365 Compliance Center entwickeln sich unsere Hilfeinhalte ständig weiter. Wir erstellen ständig neue Artikel, aktualisieren vorhandene und nehmen Änderungen basierend auf Ihrem Feedback vor. Finden Sie heraus, was in diesem Monat neu und aktualisiert wurde.
-ms.openlocfilehash: 497088cf5ad9da848879cf2c7197059917be6b07
-ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
+ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686079"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850879"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aktuelle Updates für den Microsoft 365-Kompatibilitäts Inhalt
 
@@ -147,10 +147,6 @@ Neue Anleitungen zu den folgenden Artikeln zum California Consumer Privacy Act (
 
 [Inhaltssuche in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment) (aktualisiert)<br>
 [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments) (aktualisiert)<br>Details zu beiden Artikeln zur Suche nach Inhalten in Multi-Geo-Umgebungen in SharePoint hinzugefügt.
-
-### <a name="data-governance"></a>Datengovernance
-
-[Übersicht über die unbegrenzte Archivierung in Office 365](unlimited-archiving.md#how-auto-expanding-archiving-works) (aktualisiert)<br>Details dazu hinzugefügt, wie Office 365 maximal 20 zusätzliche Archive für insgesamt 1 TB zusätzlichen Speicher hinzufügt.
 
 ### <a name="data-investigations"></a>Datenuntersuchungen
 
