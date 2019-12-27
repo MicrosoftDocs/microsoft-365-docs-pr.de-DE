@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Wenn Benutzer ständig E-Mails von Office 365 senden, die als Spam klassifiziert werden, werden sie für das Senden von E-Mails gesperrt.
-ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808030"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823817"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränktem Zugriff nach dem Senden von Spam-E-Mails
 
@@ -79,7 +79,7 @@ Die PowerShell-Befehle für eingeschränkte Benutzer sind:
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Auf ein kompromittiertes E-Mail-Konto reagieren](../../compliance/responding-to-a-compromised-email-account.md)
+[Auf ein kompromittiertes E-Mail-Konto reagieren](responding-to-a-compromised-email-account.md)
 
 [Grundlegendes zu der Benachrichtigung über zum Senden von E-Mails gesperrte Benutzer](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 

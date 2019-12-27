@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren der erhöhten Sicherheit für Microsoft 365
-ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370172"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801680"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365
 
@@ -43,7 +43,7 @@ Ein zusätzliches Sicherheitsfeature ist [Office 365 Advanced Threat Protection 
 - [Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) und [Anlagen](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) in E-Mails geschützt werden. 
 - Spoofintelligenz und Anti-Phishing-Funktionen für E-Mails in Exchange Online und [Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams) bereitgestellt wird. 
 
-Office 365 ATP ist nur mit Microsoft 365 Enterprise E5 verfügbar.
+Office 365 ATP ist nur mit Microsoft 365 E5 verfügbar.
 
 |||
 |:-------|:-----|

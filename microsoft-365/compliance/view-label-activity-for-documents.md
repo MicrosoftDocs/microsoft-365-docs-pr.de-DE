@@ -1,7 +1,7 @@
 ---
 title: Anzeigen der Bezeichnungsaktivität für Dokumente
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
-ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 9c34cde4d9dde96b8fb1251e9d2be449031cc58a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38710054"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802230"
 ---
 # <a name="view-label-activity-for-documents"></a>Anzeigen der Bezeichnungsaktivität für Dokumente
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie müssen für Ihre gesamte Organisation sichere Kennwörter verwenden, und die Kennwortverwaltung einfach gestalten.
-ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746511"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801740"
 ---
 # <a name="step-2-secure-your-passwords"></a>Schritt 2: Schützen von Kennwörtern
 
@@ -27,7 +27,7 @@ ms.locfileid: "37746511"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Verhindern unsicherer Kennwörter
 
-*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365.*
 
 Alle Benutzer Ihrer Organisation sollten bei der Erstellung der Kennwörter für ihre Benutzerkonten die [Kennwortrichtlinien von Microsoft](https://www.microsoft.com/research/publication/password-guidance/) anwenden.
 
@@ -46,7 +46,7 @@ Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-cri
 <a name="identity-pw-reset"></a>
 ## <a name="simplify-password-resets"></a>Vereinfachen der Kennwortzurücksetzung
 
-*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
+*Dies ist optional und gilt für die Versionen E3 und E5 von Microsoft 365.*
 
 In diesem Abschnitt können Sie mit der Self-Service-Kennwortzurücksetzung (SSPR) Benutzern erlauben, ihre Kennwörter oder Konten zurückzusetzen oder zu entsperren. Um über eine fehlerhafte oder missbräuchliche Nutzung informiert zu werden, können Sie die ausführliche Berichterstellung verwenden, bei der der Benutzerzugriff auf das System nachverfolgt wird. Sie müssen das Rückschreiben des Kennworts aktivieren, bevor Sie das Zurücksetzen von Kennwörtern bereitstellen können.
 

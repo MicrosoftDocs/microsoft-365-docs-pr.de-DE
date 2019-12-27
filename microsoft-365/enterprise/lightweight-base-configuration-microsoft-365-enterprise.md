@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Verwenden Sie diese Tetstumgebungsanleitung zum Erstellen einer einfachen Testumgebung für das Testen von Microsoft 365 Enterprise.
-ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202306"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801650"
 ---
 # <a name="the-lightweight-base-configuration"></a>Die einfache Standardkonfiguration
 
@@ -43,13 +43,13 @@ Wir beginnen mit einem Office 365 E5-Testabonnement und fügen dann das Microsof
 
 Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Unternehmensnamen und ein neues Microsoft-Konto.
   
-1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: ![](./media/Common-Images/TableLine.png).
+1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: . ![Zeile](./media/Common-Images/TableLine.png)
     
 2. Wenn Sie sich für ein neues Microsoft-Konto registrieren möchten, wechseln Sie zu [https://outlook.com](https://outlook.com), und erstellen Sie ein Konto mit neuem E-Mail-Konto und neuer E-Mail-Adresse. Dieses Konto wird für die Registrierung für Office 365 verwendet.
     
-  - Notieren Sie hier den Vor- und Nachnamen des Kontos: ![](./media/Common-Images/TableLine.png)
+  - Notieren Sie hier den Vor- und Nachnamen des Kontos:  ![Zeile](./media/Common-Images/TableLine.png)
     
-  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![Zeile](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrieren für ein Office 365 E5-Testabonnement
 
@@ -58,8 +58,8 @@ Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Un
 2. Geben Sie auf der Seite **Vielen Dank, dass Sie sich für Office 365 E5 entschieden haben** in Schritt 1 die Adresse Ihres neuen E-Mail-Kontos an.
 3. Geben Sie in Schritt 2 des Testabonnementprozesses die gewünschten Informationen ein, und führen Sie dann die Überprüfung durch.
 4. Geben Sie in Schritt 3 einen Organisationsnamen ein und dann einen Kontonamen, der als globaler Administrator für das Abonnement verwendet werden soll. 
-5. Notieren Sie hier für Schritt 4 die Anmeldeseite (auswählen und kopieren): ![](./media/Common-Images/TableLine.png) 
-6. Notieren Sie hier die Benutzer-ID: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. Notieren Sie hier für Schritt 4 die Anmeldeseite (auswählen und kopieren): ![Zeile](./media/Common-Images/TableLine.png) 
+6. Notieren Sie hier die Benutzer-ID: ![Line](./media/Common-Images/TableLine.png).onmicrosoft.com  
    Notieren Sie das verwendete Kennwort, und bewahren Sie es an einem sicheren Ort auf.
    Dieser Wert wird **Name des globalen Office 365-Administrators** genannt.
 8. Klicken Sie auf **Zu Setup wechseln**.
@@ -119,11 +119,11 @@ Sie können diesen Artikel auch ausdrucken, um die speziellen Informationen zu n
 
 Notieren Sie diese Werte:
   
-- Name des globalen Office 365-Administrators: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 6 von Phase 1)
+- Name des globalen Office 365-Administrators:  ![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 6 von Phase 1)
     
     Notieren Sie auch das Kennwort für dieses Konto, und bewahren Sie es an einem sicheren Ort auf.
     
-- Organisationsname für das Testabonnement: ![](./media/Common-Images/TableLine.png) (aus Schritt 4 von Phase 1)
+- Organisationsname für das Testabonnement: ![Zeile](./media/Common-Images/TableLine.png) (aus Schritt 4 von Phase 1)
     
 - Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung den folgenden Befehl aus, um die Konten für Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5 anzuzeigen:
     
@@ -133,13 +133,13 @@ Notieren Sie diese Werte:
 
     Notieren Sie hier die Kontonamen:
     
-  - Kontoname für Benutzer 2: benutzer2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 2 Kontoname: user2@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Kontoname für Benutzer 3: benutzer3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 3 Kontoname: user3@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Kontoname für Benutzer 4: benutzer4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 4 Kontoname: user4@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Kontoname für Benutzer 5: benutzer5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 5 Kontoname: user5@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Notieren Sie auch das gemeinsame Kennwort für diese Konten, und bewahren Sie es an einem sicheren Ort auf.
    

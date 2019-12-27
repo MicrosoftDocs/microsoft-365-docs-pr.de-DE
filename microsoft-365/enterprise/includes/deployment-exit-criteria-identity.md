@@ -1,4 +1,4 @@
-Unter [Voraussetzungen](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) finden Sie weitere Empfehlungen zur Identitätsinfrastruktur.
+Unter [Voraussetzungen](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) finden Sie weitere Empfehlungen zur Identitätsinfrastruktur.
 
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Erforderlich: Ihre globalen Administratorkonten sind geschützt 
@@ -14,7 +14,7 @@ Gegebenenfalls hilft Ihnen [Schritt 1](../identity-create-protect-global-admins.
 Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Administratorkonten geschützt haben:
 
 1. Führen Sie den folgenden Azure Active Directory PowerShell für Graph-Befehl an der PowerShell-Eingabeaufforderung aus. Es sollte nur die Liste der dedizierten globalen Administratorkonten angezeigt werden.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Melden Sie sich bei Office 365 mit jedem der Konten aus Schritt 1 an. Bei jeder Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation verlangt werden.
@@ -93,7 +93,7 @@ Gegebenenfalls hilft Ihnen [Schritt 3](../identity-secure-user-sign-ins.md#ident
 5.  Löschen Sie das Testbenutzerkonto.
 
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>Optional: Azure AD Identity Protection ist zum Schutz vor Gefährdung der Anmeldeinformationen aktiviert (nur Microsoft 365 Enterprise E5)
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Optional: Azure AD Identity Protection ist zum Schutz vor Gefährdung der Anmeldeinformationen aktiviert (nur Microsoft 365 E5)
 
 Sie haben Azure AD Identity Protection zu folgenden Zwecken aktiviert:
 

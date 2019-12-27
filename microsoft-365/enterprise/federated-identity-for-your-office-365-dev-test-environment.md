@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 895d6b825a3e2928fee1e9f68ce2195b92117e37
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1158109a4d42a7434a1d66750b2182f940d511b9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202260"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801850"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Verbundidentität für Ihre Microsoft 365-Testumgebung
 
@@ -41,7 +41,7 @@ Diese Konfiguration besteht aus:
     
 - Einem vereinfachten Unternehmensintranet, das mit dem Internet verbunden ist, bestehend aus fünf virtuellen Computern in einem Subnetz eines virtuellen Azure-Netzwerks (DC1, APP1, CLIENT1, ADFS1 und PROXY1). Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten in der Active Directory Domain Services-Domäne mit Office 365 zu synchronisieren. PROXY1 erhält die eingehenden Authentifizierungsanfragen. ADFS1 überprüft Anmeldeinformationen mit DC1 und gibt Sicherheitstoken aus.
     
-Das Einrichten dieser Entwicklungs-/Testumgebung besteht aus fünf Phasen:
+Das Einrichten dieser Testumgebung besteht aus fünf Phasen:
   
 1. Erstellen Sie die simulierte Testunternehmensumgebung mit Kennworthashsynchronisierung.
     
