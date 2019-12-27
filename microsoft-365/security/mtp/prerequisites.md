@@ -1,7 +1,7 @@
 ---
 title: Voraussetzungen für Microsoft Threat Protection
 description: Hier lernen Sie die Lizenz-, Hardware- und Softwareanforderungen sowie andere Konfigurationseinstellungen für Microsoft Threat Protection kennen.
-keywords: Anforderungen, Voraussetzungen, Hardware, Software, Browser
+keywords: Anforderungen, Voraussetzungen, Hardware, Software, Browser, MTP, M365, Lizenz
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 28ecc159023bb9c86739b78c8a3a34e6d401b8ed
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2175ca328678e271056ae75d1bcbb7dc70a2198d
+ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806894"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "40881966"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Voraussetzungen für Microsoft Threat Protection
 
