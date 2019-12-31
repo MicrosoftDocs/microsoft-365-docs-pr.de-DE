@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40832048"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910116"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -31,6 +31,9 @@ Obwohl wir Sicherheitsadministratoren die Möglichkeit geben, Ihre Sicherheitsei
 > Die Junk-e-Mail-Konfiguration muss für das Postfach aktiviert sein, damit die Filterung ordnungsgemäß funktioniert. Diese Option ist standardmäßig aktiviert, sollte jedoch überprüft werden, wenn die Filterung nicht zu funktionieren scheint. Lesen Sie [MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) , um weitere Informationen zu erhalten. 
 
 In diesem Thema werden diese von Microsoft empfohlenen Einstellungen beschrieben, die zum Schutz Ihrer Office 365 Benutzer beitragen.
+
+> [!TIP]
+> Es gibt ein neues PowerShell-Modul, das Sie als Office 365 Advanced Threat Protection Recommended Configuration Analyzer (Orca) herunterladen können, mit dem einige dieser Einstellungen ermittelt werden können. Wenn Sie als Administrator in Ihrem Mandanten ausgeführt wird, hilft Get-ORCAReport bei der Erstellung einer Bewertung der Anti-Spam-, Anti-Phishing-und anderer Nachrichten Hygiene Einstellungen. Sie können dieses Modul unter https://www.powershellgallery.com/packages/ORCA/herunterladen.
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Antispam-, Antischadsoftware-und Anti-Phishing-Schutz in EoP
 
@@ -45,7 +48,7 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 |Phishing-e-Mail-erkennungsaktion|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Phishing-e-Mail-erkennungsaktion mit hoher Zuverlässigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
 |Massen-e-Mail-erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Schwellenwert für Massen-e-Mail festlegen|6 |4|Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level Values](bulk-complaint-level-values.md).|
+|Schwellenwert für Massen-e-Mail festlegen|6 |4 |Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level Values](bulk-complaint-level-values.md).|
 |Aufbewahrungszeitraum für Quarantäne|30 Tage|30 Tage||
 |Sicherheitstipps|Ein|Ein||
 |Zugelassene Absender|Keine|Keine||
@@ -80,9 +83,9 @@ In der Antispampolitik "Advanced Spamfilter" gibt es verschiedene andere Paramet
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---------|---------|---------|---------|
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|500|400||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|1000|800||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|1000|800||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|400|500||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|800|1000||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|800|1000||
 |Aktion, wenn ein Benutzer die Grenzwerte überschreitet|Einschränken des Sendens von e-Mails durch den Benutzer|Einschränken des Sendens von e-Mails durch den Benutzer||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EoP-Anti-Malware-Richtlinieneinstellungen

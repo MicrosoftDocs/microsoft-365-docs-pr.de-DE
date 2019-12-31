@@ -2,7 +2,7 @@
 title: Microsoft 365 Security for Business-Entscheidungsträger (BDMs)
 ms.author: bcarter
 author: brendacarter
-manager: ''
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: die häufigsten Bedrohungs-und Angriffsszenarien, mit denen Organisationen derzeit in Ihren Microsoft 365-Umgebungen konfrontiert sind, sowie Empfohlene Aktionen zur Minderung dieser Risiken.
-ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9ad9d05cf29dba5aa3a7d14063db6fa2b4dd3bc4
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801250"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910136"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business-Entscheidungsträger (BDMs)
 
@@ -134,7 +134,7 @@ Die letzte, aber nicht zuletzt kontinuierliche Überwachung und Überwachung der
 |Verwenden Sie **Office 365 ATP** -Tools:<br>• Untersuchung und Antwortfunktionen für Bedrohungen<br> • Automatische Untersuchung und Antwort |         |![grünes Häkchen](../images/green-check-mark.png)|
 |Verwenden Sie **Microsoft Defender ATP**:<br> • [Endpunkterkennung und-Antwort](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> • Sichere Bewertung für automatisierte Untersuchungen und Korrekturen <br>• [Erweiterte Suche](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![grünes Häkchen](../images/green-check-mark.png)|
 |Verwenden Sie **Microsoft Cloud App Security** , um ungewöhnliches Verhalten in Cloud-apps zu erkennen, um Ransomware, kompromittierte Benutzer oder nicht autorisierte Anwendungen zu identifizieren, die Verwendung von hohem Risiko zu analysieren und automatisch zu beheben, um das Risiko für Ihre Organisation zu begrenzen.|         |![grünes Häkchen](../images/green-check-mark.png)|
-|Verwenden Sie **Microsoft Azure Sentinel** oder Ihr **Aktuelles Siem** -Tool, um Bedrohungen in Ihrer Umgebung zu überwachen. Azure Sentinel kann während des Vorschauzeitraums kostenlos verwendet werden. |         |![grünes Häkchen](../images/green-check-mark.png)|
+|Verwenden Sie **Microsoft Azure Sentinel** oder Ihr aktuelles Siem-Tool, um Bedrohungen in Ihrer Umgebung zu überwachen. |         |![grünes Häkchen](../images/green-check-mark.png)|
 |**Bereitstellen von [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ** zum Überwachen und schützen von Bedrohungen, die auf Ihre lokale Active Directory Umgebung zugeschnitten sind.   |         |![grünes Häkchen](../images/green-check-mark.png) |
 |Verwenden Sie das **Azure-Sicherheits Center** , um Bedrohungen für Hybrid-und Cloud-Arbeitslasten zu überwachen. Das Azure-Sicherheits Center umfasst eine ﻿kostenlose Funktionsebene und eine Standardebene von Funktionen, die basierend auf Ressourcenstunden oder Transaktionen bezahlt werden.|         |         |
 
