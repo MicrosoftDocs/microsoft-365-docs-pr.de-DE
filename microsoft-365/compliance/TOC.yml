@@ -120,7 +120,7 @@
           href: custom-sensitive-info-types.md
         - name: Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: 'Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security #a0 Compliance Center'
+        - name: Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -291,7 +291,7 @@
               href: view-label-activity-for-documents.md
             - name: Anzeigen der Data Governance-Berichte
               href: view-the-data-governance-reports.md
-        - name: Veranstaltungen
+        - name: Ereignisse
           items:
             - name: Ereignisbasierte Aufbewahrung
               href: event-driven-retention.md
@@ -1097,6 +1097,7 @@
             - name: G-Cloud (Vereinigtes Königreich)
               href: offering-g-cloud-uk.md
             - name: IDW PS 951 (Deutschland)
+              href: 'https://www.idw.de/the-idw/about-the-idw'
             - name: IT Grundschutz Arbeitshandbuch (Deutschland)
               href: offering-it-grundschutz-workbook-germany.md
             - name: LOPD (Spanien)
