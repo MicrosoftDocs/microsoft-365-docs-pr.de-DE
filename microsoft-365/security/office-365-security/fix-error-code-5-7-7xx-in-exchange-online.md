@@ -3,7 +3,7 @@ title: Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/11/2019
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Probleme für den Fehlercode 5.7.7 XX in Exchange Online beheben (vom Senden von e-Mails blockierte Mandanten).
-ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970451"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959653"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
 
@@ -27,42 +27,52 @@ In diesem Thema wird beschrieben, was Sie tun können, wenn Sie den Statuscode 5
 
 ## <a name="57705-tenant-has-exceeded-threshold-restriction-what-you-need-to-know"></a>5.7.705: Mandant hat die Schwellenwertbeschränkung überschritten: was Sie wissen müssen
 
-Interne Absender können diesen Unzustellbarkeitsbericht sehen, wenn Sie versuchen, e-Mails zu senden, wenn Ihr Mandant kompromittiert wurde. Dies ist in der Regel occus, wenn der Großteil des Datenverkehrs von Ihrem Mandanten als verdächtig erkannt wurde und zu einem Verbot der Sende Fähigkeit für den Mandanten geführt hat. Dies kann auch auftreten, wenn Ihre Benutzer eine große Menge an Massen-e-Mails von Office 365 senden. Wie in der Dienstbeschreibung erwähnt, sollten Exchange Online Kunden, die legitime kommerzielle Massen-e-Mails senden müssen (beispielsweise Kunden Newsletters), Drittanbieter verwenden, die sich auf diese Dienste spezialisieren.
+Sobald Ihre Benutzer (gemeinsam, als Organisation) eine bestimmte Menge verdächtiger e-Mails über den Dienst senden, können alle Benutzer daran gehindert werden, eine e-Mail zu senden, bis das Problem behoben ist. Dies ist normalerweise das Ergebnis eines Kompromisses (am häufigsten) oder das Senden zu viel Massen-e-Mail. Benutzer erhalten einen NDR, der besagt:
 
-Wenn Ihre Benutzer gemeinsam als Mandant eine bestimmte Menge verdächtiger e-Mails über den Dienst senden, können alle Benutzer daran gehindert werden, e-Mails zu senden, bis das Problem behoben ist. Benutzer erhalten einen Unzustellbarkeitsbericht (Non-Delivery Report, NDR), der Folgendes angibt:
+`550 5.7.705 Access denied, tenant has exceeded threshold`
 
-- 550 5.7.705-Zugriff verweigert, Mandanten Schwellenwert überschritten
+In seltenen Fällen kann dies auch passieren, wenn Sie Ihr Abonnement erneuern, nachdem es bereits abgelaufen ist. Es dauert Zeit, bis der Dienst die neuen Abonnementinformationen synchronisiert (normalerweise nicht mehr als einen Tag), aber Ihre Organisation könnte in der Zwischenzeit daran gehindert werden, e-Mails zu senden. Die beste Möglichkeit, dies zu verhindern, besteht darin, sicherzustellen, dass Ihr Abonnement nicht abläuft.
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750: nicht registrierte Domänen-e-Mail-Einschränkung: was Sie wissen müssen
 
-Office 365 ermöglicht Mandanten das Weiterleiten einiger Nachrichten über Exchange Online Protection (EoP). Ein unterstütztes Beispiel hierfür wäre, wenn Benutzer ein Office 365 Postfach haben und eine externe Person e-Mails sendet, die e-Mail-Weiterleitung jedoch so konfiguriert ist, dass Sie an das externe Postfach des Benutzers zurückgeht. Dies ist am häufigsten in Bildungsumgebungen, in denen Kursteilnehmer ihre persönliche e-Mail-Schnittstelle nutzen, aber immer noch e-Mails im Zusammenhang mit der Schule erhalten möchten. Ein weiteres Beispiel ist, wenn sich Kunden in einem Hybrid Szenario befinden und über lokale Server verfügen, die e-Mails aus EoP senden.
+Office 365 ermöglicht Mandanten das Weiterleiten einiger Nachrichten über Exchange Online Protection (EoP). Beispiel:
+
+- Ein Office 365 Postfach empfängt e-Mails von einem externen Absender. Die e-Mail-Weiterleitung ist für das Office 365 Postfach konfiguriert, sodass die Nachricht an die externe e-Mail-Adresse des Benutzers zurückgeht. Dieses Szenario ist am häufigsten in Bildungsumgebungen, in denen Kursteilnehmer ihre persönlichen e-Mail-Konten zum Anzeigen von schulbezogenen Nachrichten verwenden möchten.
+
+- Hybrid Umgebungen mit lokalen e-Mail-Servern, die ausgehende e-Mails über EoP senden.
 
 ### <a name="problems-with-unregistered-domains"></a>Probleme mit nicht registrierten Domänen
 
-Das Problem besteht darin, dass lokale Server kompromittiert werden und am Ende eine große Menge an Spam von EoP weitergeleitet werden. In fast allen Fällen werden die richtigen Connectors eingerichtet, aber e-Mails werden von nicht registrierten, auch als Nichtbereitstellung bezeichneten Domänen gesendet. Office 365 ermöglicht eine angemessene Menge an e-Mails aus nicht registrierten Domänen, aber eine akzeptierte Domäne sollte im Admin Center für jede Domäne konfiguriert werden, von der Sie den Versand planen.
+Das Problem besteht darin, dass kompromittierte lokale e-Mail-Server eine große Menge von Spam über EoP weiterleiten. In fast allen Fällen sind die Connectors ordnungsgemäß eingerichtet, aber e-Mails werden von nicht registrierten Domänen (auch als Nichtbereitstellung bezeichnet) gesendet. Office 365 eine angemessene Menge an e-Mails aus nicht registrierten Domänen zulässt, sollten Sie jedoch jede Domäne konfigurieren, die Sie zum Senden von e-Mails als akzeptierte Domäne verwenden.
 
-Nachdem die Mandanten kompromittiert wurden, wird verhindert, dass ausgehende e-Mails für nicht registrierte Domänen gesendet werden. Benutzer erhalten einen Unzustellbarkeitsbericht (Non-Delivery Report, NDR), der Folgendes angibt:
+Nachdem die Mandanten kompromittiert wurden, wird verhindert, dass ausgehende e-Mails für nicht registrierte Domänen gesendet werden. Benutzer erhalten einen NDR, der besagt:
 
-- 550 5.7.750-Dienst ist nicht verfügbar. Vom Senden von nicht registrierten Domänen blockierter Client
+`550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
 ## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Gewusst wie Aufheben der Blockierung von Mandanten, um erneut zu senden
 
-Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für das Senden von e-Mails blockiert wird:
+Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für das Senden von e-Mails gesperrt ist:
 
-1. Stellen Sie sicher, dass Sie alle Ihre Domänen im Microsoft 365 Admin Center registrieren. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Stellen Sie sicher, dass alle Ihre e-Mail-Domänen registriert sind. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) und [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Suchen Sie nach ungewöhnlichen Konnektoren. Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrem Office 365 Mandanten, um Spam zu senden. Weitere Informationen zum Überprüfen der Connectors finden Sie [hier](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
+2. Suchen Sie nach ungewöhnlichen [Konnektoren](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrer Office 365 Organisation, um Spam zu senden. Informationen zum Anzeigen der vorhandenen Connectors finden Sie unter [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-3. Sperren Sie Ihre lokalen Server, und stellen Sie sicher, dass Sie nicht beeinträchtigt werden.
+3. Suchen Sie nach kompromittierten Benutzern, wie unter [Antworten auf ein kompromittiertes e-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)beschrieben.
+
+4. [Aktivieren Sie MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) für alle Administratoren in Ihrer Office 365 Organisation.
+
+5. Sperren Sie Ihre lokalen e-Mail-Server, und stellen Sie sicher, dass Sie nicht beeinträchtigt werden.
 
    > [!TIP]
-   > Es gibt viele Faktoren, vor allem, wenn es sich um Drittanbieterserver handelt. Unabhängig davon müssen Sie in der Lage sein zu bestätigen, dass alle e-Mails, die Ihre Server verlassen, legitim sind.
+   > Es gibt viele Faktoren, vor allem, wenn Sie Drittanbieterserver verwenden. Unabhängig davon müssen Sie sicherstellen, dass alle ausgehenden e-Mails jetzt legitim sind.
 
-4. Sobald Sie fertig sind, müssen Sie den Microsoft-Support anrufen und bitten, ihren Mandanten aufheben zu lassen, dass er von nicht registrierten Domänen erneut gesendet wird.  Die Bereitstellung des Fehlercodes ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert ist und dass kein Spam mehr gesendet wird. Weitere Informationen zum Öffnen eines Support Falls finden Sie [hier](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+6. Wenden Sie sich an den Microsoft-Support, und bitten Sie den Mandanten, die Blockierung für das Senden von nicht registrierten Domänen wieder aufzuheben. Der Fehlercode ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert wurde und keine Spamnachrichten senden kann. Informationen zum Öffnen eines Support Falls finden Sie unter [kontaktieren des Supports für Geschäftsprodukte-Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
 [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
+
+[Massen-e-Mail-Anleitung im Abschnitt Senden von Grenzwerten der Exchange Online Dienstbeschreibung](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Unzustellbarkeitsberichte für E-Mails in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
