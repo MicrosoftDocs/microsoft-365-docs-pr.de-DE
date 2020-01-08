@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da985621c1cee3fe5aa30d961380ef3f3d83de8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 86b082baf5af34449f9981b92ccd8ea01aba29df
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808750"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966868"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Suche nach Bedrohungen auf Geräten und in E-Mails
 
@@ -34,7 +34,7 @@ Die [erweiterte Suche](advanced-hunting-overview.md) in Microsoft Threat Protect
 ## <a name="obtain-user-accounts-from-email-addresses"></a>Abrufen von Benutzerkonten aus E-Mail-Adressen
 Beim Erstellen von Abfragen über [Tabellen, die Geräte und E-Mail-Nachrichten enthalten](advanced-hunting-schema-tables.md), müssen Sie wahrscheinlich Benutzerkontonamen aus E-Mail-Adressen von Absendern oder Empfängern abrufen. Verwenden Sie dazu den *lokalen Host* aus der E-Mail-Adresse:
 
-```
+```kusto
 AccountName = tostring(split(SenderFromAddress, "@")[0])
 ```
 
@@ -45,7 +45,7 @@ Diese Normalisierungstechnik wird in den folgenden Szenarien verwendet.
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Überprüfen, ob Dateien bekannter bösartiger Absender auf Ihren Geräten vorhanden sind
 Angenommen, Sie kennen eine E-Mail-Adresse, von der aus schädliche Dateien gesendet werden, dann können Sie diese Abfrage ausführen, um zu ermitteln, ob Dateien von diesem Absender auf Ihren Geräten vorhanden sind. Sie können die Abfrage beispielsweise verwenden, um die Anzahl der von einer Schadsoftware-Verteilungskampagne betroffenen Geräte zu ermitteln.
 
-```
+```kusto
 //Get prevalence of files sent by a malicious sender in your organization
 EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
@@ -59,7 +59,7 @@ DeviceFileEvents
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>Überprüfen von Anmeldeversuchen nach dem Empfang von bösartigen E-Mails
 Diese Abfrage ermittelt die 10 neuesten Anmeldungen, die von E-Mail-Empfängern innerhalb von 30 Minuten nach dem Empfang bekannter bösartiger E-Mails ausgeführt wurden. Sie können diese Abfrage verwenden, um zu überprüfen, ob die Konten der E-Mail-Empfänger kompromittiert wurden.
 
-```
+```kusto
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
@@ -76,7 +76,7 @@ DeviceLogonEvents
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Überprüfen von PowerShell-Aktivitäten nach dem Empfang von E-Mails von bekannten bösartigen Absendern
 Bösartige E-Mail-Nachrichten enthalten häufig Dokumente und andere speziell gestaltete Anlagen, die PowerShell-Befehle ausführen, um zusätzliche Nutzlasten zu übertragen. Wenn Sie wissen, dass Sie E-Mail-Nachrichten eines bekannten bösartigen Absenders erhalten haben, können Sie diese Abfrage verwenden, um PowerShell-Aktivitäten aufzulisten und zu überprüfen, die innerhalb von 30 Minuten nach dem Empfang einer E-Mail von diesem Absender ausgeführt wurden.  
 
-```
+```kusto
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
