@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
-ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
+ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "40881976"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970853"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
 
@@ -67,7 +67,7 @@ Stellen Sie sicher, dass Microsoft Cloud App Security und die Azure ATP-Integrat
 ## <a name="turn-off-microsoft-threat-protection"></a>Deaktivieren von Microsoft Threat Protection
 Wenn Sie Microsoft Threat Protection nicht länger verwenden möchten, wechseln Sie zu **Einstellungen** > **Microsoft Threat Protection** > **Aktivieren/Deaktivieren** im Microsoft 365 Security Center. Heben Sie die Auswahl **Microsoft Threat Protection aktivieren** auf, und speichern Sie die Änderung.
 
-Die Daten werden dauerhaft gelöscht, und die entsprechenden Funktionen werden aus dem Microsoft 365 Security Center entfernt.
+Daten werden endgültig gelöscht, und die entsprechenden Features werden aus dem Microsoft 365 Security Center entfernt.
 
 ## <a name="get-assistance"></a>Unterstützung erhalten
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 943c32aa535a319829bd93bde190a5fead12ef08
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910514"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970913"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -60,21 +60,21 @@ Um über die Berechtigung zum Zugriff auf Microsoft Secure Score verfügen zu k�
 
 Mit Lese-und Schreibzugriff können Sie Änderungen vornehmen und direkt mit Secure Score interagieren. Sie können auch anderen Benutzern schreibgeschützten Zugriff zuweisen.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Globaler Administrator
+* Sicherheitsadministrator
+* Exchange-Administrator
+* SharePoint-Administrator
 
 ### <a name="read-only-roles"></a>Schreibgeschützte Rollen
 
 Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für eine Verbesserungs Aktion nicht bearbeiten, Bewertungs Zonen bearbeiten oder benutzerdefinierte Vergleiche bearbeiten.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Helpdesk-Administrator
+* Benutzeradministrator
+* Service-Administrator
+* Sicherheitsleseberechtigter
+* Sicherheitsoperator
+* Globaler Leser
 
 ### <a name="graph-api"></a>Graph-API
 
@@ -146,7 +146,7 @@ Aus diesen Gründen werden alle Verbesserungs Aktionen, die nicht erzielt wurden
 
 Um Punkte über mehrere Erfahrungen hinweg zu standardisieren, werden alle Aktionspunkte für eine sichere Punktzahl verbessert, sodass Sie 10 oder mehr Punkte Wert haben. Es ist erforderlich, dass die gesamte Breite Verschnaufpause von Sicherheitskontrollen konsistenter ist, die wir heute haben, und diejenigen, die wir in Zukunft hinzufügen werden. Dies ist zwar eine wesentliche Änderung, und es wird eine Verringerung der Gesamtzahl der Punkte angezeigt, aber ihre Sicherheitsposition wird nicht geändert.  
 
-### <a name="preview-features"></a>Vorschau-Features
+### <a name="preview-features"></a>Vorschaufeatures
 
 Die folgenden Features werden in der Vorschauversion enthalten sein:
 

@@ -14,20 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Verwenden Sie das Erkennungs Modell "Attorney-Client-Berechtigung", um die Lern basierte Erkennung privilegierter Inhalte zu verwenden, wenn Sie Inhalte in einem erweiterten eDiscovery-Fall überprüfen.
-ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+description: Verwenden Sie das Erkennungs Modell für Anwalts Client-Berechtigungen, um die Computer Lern basierte Erkennung von privilegierten Inhalten zu verwenden, wenn Inhalte in einem erweiterten eDiscovery-Fall überprüft werden.
+ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603779"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970863"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Einrichten der Erkennung von Anwalts Mandanten-Berechtigungen in Advanced eDiscovery
 
 Ein wichtiger und kostspieliger Aspekt der Überprüfungsphase eines eDiscovery-Prozesses besteht darin, Dokumente für privilegierte Inhalte zu überprüfen. Advanced eDiscovery bietet eine maschinelle Lern basierte Erkennung von privilegierten Inhalten, um diesen Prozess effizienter zu gestalten. Dieses Feature wird als *Anwalts Client-Berechtigungs Erkennung*bezeichnet.
-
-> [!NOTE]
-> Sie müssen sich für das Erkennungs Modell für Anwalts-und Client Rechte entscheiden, bevor Sie es verwenden können. Anweisungen finden Sie in [Schritt 1](#step-1-opt-in-to-attorney-client-privilege-detection) .
 
 ## <a name="how-does-it-work"></a>Wie funktioniert das?
 
@@ -53,11 +50,11 @@ Diese drei Eigenschaften können auch innerhalb eines Überprüfungs Satzes durc
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Einrichten des Erkennungs Modells für Anwalts Client-Berechtigungen
 
-Um das Erkennungs Modell für das Attorney-Client-Privileg zu aktivieren, muss Ihre Organisation sich anmelden und dann eine anwaltsliste hochladen.
+Um das Erkennungs Modell für das Attorney-Client-Privileg zu aktivieren, muss Ihre Organisation es aktivieren und dann eine anwaltsliste hochladen.
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Schritt 1: Anmelden bei der Erkennung von Anwalts-Client-Berechtigungen
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Schritt 1: Aktivieren der Erkennung der Anwalts Client-Berechtigungen
 
-Wie bereits erwähnt, befindet sich das Erkennungs Modell für das Anwalts Client-Recht in der Vorschau. Daher muss sich eine Person in Ihrem Unternehmen eDiscovery Administrator (ein Mitglied der Untergruppe eDiscovery Administrator in der Rollengruppe eDiscovery-Manager) anmelden, um das Modell in ihren erweiterten eDiscovery-Fällen zur Verfügung zu stellen.
+Eine Person, die ein eDiscovery-Administrator in Ihrer Organisation ist (ein Mitglied der Untergruppe eDiscovery Administrator in der Rollengruppe eDiscovery-Manager), muss das Modell in ihren erweiterten eDiscovery-Fällen verfügbar machen.
 
 1. Wechseln Sie im Security #a0 Compliance Center zu **eDiscovery #a1 Advanced eDiscovery**.
 

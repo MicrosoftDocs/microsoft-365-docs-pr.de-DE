@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38690531"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970843"
 ---
 # <a name="define-policies-for-information-barriers"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -51,7 +51,7 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 |[Teil 1: Segmentieren von Benutzern in Ihrer Organisation](#part-1-segment-users)     |-Bestimmen der erforderlichen Richtlinien<br/>-Eine Liste der zu definierenden Segmente erstellen<br/>-Bestimmen der zu verwendenden Attribute<br/>-Definieren von Segmenten in Bezug auf Richtlinienfilter        |
 |[Abschnitt 2: Definieren von Richtlinien für Informationsbarrieren](#part-2-define-information-barrier-policies)     |-Definieren Ihrer Richtlinien (noch nicht gültig)<br/>-Auswählen aus zwei Arten (blockieren oder zulassen) |
 |[Abschnitt 3: Anwenden von Richtlinien für Informationsbarrieren](#part-3-apply-information-barrier-policies)     |-Festlegen von Richtlinien auf aktiven Status<br/>-Ausführen der Richtlinienanwendung<br/>-Anzeigen des Richtlinienstatus         |
-|(Nach Bedarf) [Bearbeiten eines Segments oder einer Richtlinie](information-barriers-edit-segments-policies.md.md)    |-Bearbeiten eines Segments<br/>-Bearbeiten oder Entfernen einer Richtlinie<br/>-Die Richtlinienanwendung erneut ausführen<br/>-Anzeigen des Richtlinienstatus         |
+|(Nach Bedarf) [Bearbeiten eines Segments oder einer Richtlinie](information-barriers-edit-segments-policies.md)    |-Bearbeiten eines Segments<br/>-Bearbeiten oder Entfernen einer Richtlinie<br/>-Die Richtlinienanwendung erneut ausführen<br/>-Anzeigen des Richtlinienstatus         |
 |(Nach Bedarf) [Problembehandlung](information-barriers-troubleshooting.md)|-Maßnahmen ergreifen, wenn die Dinge nicht wie erwartet funktionieren|
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -260,11 +260,11 @@ Ressourcen stehen zur Verfügung, um Sie bei der Verwaltung ihrer Informations B
 
 - Wenn mit Informationsbarrieren etwas schief geht, finden Sie weitere Informationen unter [Troubleshooting Information Barriers](information-barriers-troubleshooting.md).
 
-- Informationen zum Beenden der Anwendung von Richtlinien finden Sie unter [Beenden einer Richtlinienanwendung](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+- Informationen zum Beenden der Anwendung von Richtlinien finden Sie unter [Beenden einer Richtlinienanwendung](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 
-- Informationen zum Entfernen einer Richtlinie zu Informationsbarrieren finden Sie unter [Remove a Policy](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+- Informationen zum Entfernen einer Richtlinie zu Informationsbarrieren finden Sie unter [Remove a Policy](information-barriers-edit-segments-policies.md#remove-a-policy).
 
-- Informationen zum vornehmen von Änderungen an Segmenten oder Richtlinien finden Sie unter [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md.md).
+- Informationen zum vornehmen von Änderungen an Segmenten oder Richtlinien finden Sie unter [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Beispiel: Abteilungen, Segmente und Richtlinien von Contoso
 

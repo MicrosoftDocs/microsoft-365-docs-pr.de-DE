@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
-ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 352f101a443b015840b09b82626f7dbee9cfb79e
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690438"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970833"
 ---
 # <a name="information-barriers"></a>Informationsbarrieren
 
@@ -59,7 +59,7 @@ Informationsbarrieren werden jetzt ausgerollt und in Abonnements eingeschlossen,
 
 - Microsoft 365 E5
 - Office 365 E5
-- Office 365 Erweiterte Compliance
+- Office 365 Advanced Compliance
 - Microsoft 365 E5 – Informationsschutz und Compliance
 
 Weitere Informationen finden Sie unter [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
@@ -83,5 +83,4 @@ Sie müssen mit PowerShell-Cmdlets vertraut sein, um Richtlinien für Informatio
 
 - [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
 
-- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md.md) 
-
+- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md) 

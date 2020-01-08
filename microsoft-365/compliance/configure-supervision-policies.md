@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806628"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959623"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
-> [!IMPORTANT]
-> Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Office 365 Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).
+>[!IMPORTANT]
+>Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Office 365 Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).
 
 Verwenden Sie Aufsichtsrichtlinien zum Erfassen von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zum Überwachen der Kommunikation in Ihrer Organisation mithilfe von Aufsichtsrichtlinien finden Sie unter [Aufsichtsrichtlinien in Office 365](supervision-policies.md).
 
-> [!NOTE]
-> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein.
-> Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!NOTE]
+>Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein.
+>Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 Organisation einzurichten und zu verwenden:
   
@@ -182,8 +182,8 @@ Nachdem Sie eine Richtlinie für die Kommunikationsüberwachung erstellt haben, 
 1. Öffnen Sie einen e-Mail-Client oder Microsoft Teams, der als überwachten Benutzer angemeldet ist, der in der Richtlinie definiert ist, die Sie testen möchten.
 2. Senden Sie eine e-Mail oder einen Microsoft Teams-Chat, die die Kriterien erfüllen, die Sie in der Aufsichtsrichtlinie definiert haben. Hierbei kann es sich um ein Stichwort, eine Anlagegröße, eine Domäne usw. handeln. Stellen Sie sicher, dass Sie feststellen, ob die konfigurierten bedingten Einstellungen in der Richtlinie zu restriktiv oder zu nachsichtig sind.
 
-    > [!NOTE]
-    > E-Mails, die bestimmten Richtlinien unterliegen, werden nahezu in Echtzeit verarbeitet und können unmittelbar nach der Konfiguration der Richtlinie getestet werden. Chats in Microsoft Teams können bis zu 24 Stunden in Anspruch nehmen, um eine Richtlinie vollständig zu verarbeiten. 
+    >[!NOTE]
+    >E-Mails, die bestimmten Richtlinien unterliegen, werden nahezu in Echtzeit verarbeitet und können unmittelbar nach der Konfiguration der Richtlinie getestet werden. Chats in Microsoft Teams können bis zu 24 Stunden in Anspruch nehmen, um eine Richtlinie vollständig zu verarbeiten. 
 
 3. Melden Sie sich bei Ihrem Office 365-Mandanten als Prüfer an, der in der Kommunikations Aufsichtsrichtlinie angegeben ist. Navigieren Sie zu **Beaufsichtigung** > *Ihre benutzerdefinierte Richtlinie* > **geöffnet** , um den Bericht für die Richtlinie anzuzeigen.
 

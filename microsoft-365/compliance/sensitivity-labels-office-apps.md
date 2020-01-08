@@ -3,7 +3,7 @@ title: Vertraulichkeitsbezeichnungen in Office-Apps
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: a904f1adde6ea8df6d7225ed368f77790b21161a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 092c8510acac5cafa6417f93eae19731db5df270
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802848"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970953"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -40,7 +40,7 @@ Benutzern muss mindestens eine der folgenden Lizenzen zugewiesen sein:
 
 - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) oder höher
 
-Der integrierte Office-Labeling-Client unterstützt Sensitivitäts Bezeichnungen mit einer Abonnementversion von Office. Der Client unterstützt keine eigenständigen Versionen, beispielsweise Office 2016 oder Office 2019.
+Der integrierte Office-Labeling-Client unterstützt Sensitivitäts Bezeichnungen mit einer Abonnement Edition von Office. Dieser Bezeichnungs Client unterstützt keine eigenständigen Editionen von Office, wie Office 2016 oder Office 2019. Um Sensitivitäts Bezeichnungen mit diesen Editionen von Office auf Windows-Computern zu verwenden, installieren Sie den Azure Information Protection Unified Labeling-Client.
 
 Für die Verwendung der automatischen oder empfohlenen Vertraulichkeits Kennzeichnung benötigen die Benutzer eine der folgenden Lizenzen:
 
@@ -48,31 +48,35 @@ Für die Verwendung der automatischen oder empfohlenen Vertraulichkeits Kennzeic
 
 - [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) oder höher
 
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) oder höher
+- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Unterstützung für Sensitivitäts Bezeichnungs Funktionen in Word, Excel und PowerPoint
 
-Für jede Funktion enthält die folgende Tabelle die Mindestversion, die Sie für diese APP benötigen. Das bedeutet, dass Sie diese Funktion nicht auf dieser Plattform verwenden können.
+Für jede Funktion enthält die folgende Tabelle die Mindestversion, die Sie benötigen, damit die APP Sensitivitäts Bezeichnungen mithilfe der integrierten Beschriftung unterstützt.
+
+Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protection Unified Labeling-Client installieren, der nur auf Windows-Computern ausgeführt wird. Weitere Informationen finden Sie unter [vergleichen der Bezeichnungs Clients für Windows-Computer](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Netz                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manuelles zuweisen, ändern oder Entfernen von Bezeichnungen](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Standardbezeichnung anwenden](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | Noch nicht festgelegt                                                        |
+|[Standardbezeichnung anwenden](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | Unter Review                                                        |
 |[Begründung zum Ändern einer Bezeichnung erforderlich](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Hilfe Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Inhalt markieren](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Noch nicht festgelegt            | Noch nicht festgelegt        | Noch nicht festgelegt   | Noch nicht festgelegt         | Noch nicht festgelegt                                                        |
-|[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Noch nicht festgelegt            | Noch nicht festgelegt        | Noch nicht festgelegt   | Noch nicht festgelegt         | Noch nicht festgelegt                                                        |
+|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
+|[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
 |
-  [Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels.md#what-label-policies-can-do)   | Noch nicht festgelegt            | Noch nicht festgelegt        | Noch nicht festgelegt   | Noch nicht festgelegt         | Noch nicht festgelegt                                                        |
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Vorschau: in Rollout für [Office Insider](https://office.com/insider)                                  | Noch nicht festgelegt | Noch nicht festgelegt | Noch nicht festgelegt | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Unterstützen des [automatischen Speicherns](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) und der gemeinsamen [Dokumenterstellung](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) für beschriftete und geschützte Dokumente | Noch nicht festgelegt | Noch nicht festgelegt | Noch nicht festgelegt | Noch nicht festgelegt | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+  [Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels.md#what-label-policies-can-do)   | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Vorschau: in [Office Insider](https://office.com/insider)                                  | Unter Review | Unter Review | Unter Review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Unterstützen des [automatischen Speicherns](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) und der gemeinsamen [Dokumenterstellung](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) für beschriftete und geschützte Dokumente | Unter Review | Unter Review | Unter Review | Unter Review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 ## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>Unterstützung für Sensitivitäts Bezeichnungs Funktionen in Outlook
 
-Für jede Funktion enthält die folgende Tabelle die Mindestversion, die Sie für diese APP benötigen. Das bedeutet, dass Sie diese Funktion nicht auf dieser Plattform verwenden können.
+Für jede Funktion enthält die folgende Tabelle die Mindestversion, die Sie für diese APP benötigen.
+
+Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protection Unified Labeling-Client installieren, der nur auf Windows-Computern ausgeführt wird. Weitere Informationen finden Sie unter [vergleichen der Bezeichnungs Clients für Windows-Computer](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Funktion                                                                                                        |Outlook auf Windows-Desktop |Outlook auf dem Mac-Desktop  |Outlook unter iOS |Outlook unter Android |Outlook im Web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
@@ -83,10 +87,10 @@ Für jede Funktion enthält die folgende Tabelle die Mindestversion, die Sie fü
 |[Inhalt markieren](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Ja               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Ja               |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Ja               |
-|[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Noch nicht festgelegt                       | Noch nicht festgelegt                    | Noch nicht festgelegt           | Noch nicht festgelegt               | Noch nicht festgelegt               |
+|[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review                       | Unter Review                    | Unter Review           | Unter Review               | Unter Review               |
 |
-  [Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels.md#what-label-policies-can-do)   | Noch nicht festgelegt                       | Noch nicht festgelegt                    | Noch nicht festgelegt           | Noch nicht festgelegt               | Noch nicht festgelegt               |
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Noch nicht festgelegt                       | Noch nicht festgelegt                    | Noch nicht festgelegt           | Noch nicht festgelegt               | Vorschau: in Rollout zur [zielgerichteten Veröffentlichung](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+  [Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels.md#what-label-policies-can-do)   | Unter Review                       | Unter Review                    | Unter Review           | Unter Review               | Unter Review               |
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Unter Review                       | Unter Review                    | Unter Review           | Unter Review               | Vorschau: in Rollout zur [zielgerichteten Veröffentlichung](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
 |
 
 ## <a name="about-the-office-built-in-labeling-client"></a>Informationen zum integrierten Labeling-Client für Office

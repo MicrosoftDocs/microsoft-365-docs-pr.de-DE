@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807930"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959613"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Referenz zur Kommunikations Kompatibilitätsfunktion (Vorschau)
 
@@ -29,8 +29,8 @@ ms.locfileid: "40807930"
 
 Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Wenn Sie über eine Office 365 Organisation verfügen, [Konfigurieren Sie Aufsichtsrichtlinien](configure-supervision-policies.md) im Office 365 Security #a0 Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
 
-> [!NOTE]
-> Aufsichtsrichtlinien, die im Office 365 Security and Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
+>[!NOTE]
+>Aufsichtsrichtlinien, die im Office 365 Security and Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
 
 ## <a name="policy-templates"></a>Richtlinienvorlagen
 
@@ -46,8 +46,8 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 
 Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Office 365 Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Überprüfung mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen ausschließen.
 
-> [!IMPORTANT]
-> Für Benutzer, die von Kommunikationsrichtlinien Richtlinien abgedeckt werden, muss entweder eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Kommunikations Kompatibilität testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Für Benutzer, die von Kommunikationsrichtlinien Richtlinien abgedeckt werden, muss entweder eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Kommunikations Kompatibilität testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Prüfer
 
@@ -198,8 +198,8 @@ Wenn Sie mehr als eine einfache textbasierte e-Mail-Nachricht für Benachrichtig
 </html>
 ```
 
-> [!NOTE]
-> Die HTML-href-Attribut Implementierung in den Benachrichtigungsvorlagen für die Kommunikations Konformität unterstützt derzeit nur einfache Anführungszeichen anstelle von doppelten Anführungszeichen für URL-Verweise.
+>[!NOTE]
+>Die HTML-href-Attribut Implementierung in den Benachrichtigungsvorlagen für die Kommunikations Konformität unterstützt derzeit nur einfache Anführungszeichen anstelle von doppelten Anführungszeichen für URL-Verweise.
 
 ## <a name="filters"></a>Filter
 
@@ -232,8 +232,8 @@ Für Kommunikations Konformitätsrichtlinien sind die folgenden Warnungsrichtlin
 | Schwellenwert | 4 Aktivitäten |
 | Fenster | 60 Minuten |
 
-> [!Note]
-> Die Einstellungen für den Warnungsrichtlinien Schwellenwert für Aktivitäten unterstützen einen Mindestwert von 3 oder höher für Kommunikationsrichtlinien.
+>[!Note]
+>Die Einstellungen für den Warnungsrichtlinien Schwellenwert für Aktivitäten unterstützen einen Mindestwert von 3 oder höher für Kommunikationsrichtlinien.
 
 Sie können die Standardeinstellungen für Auslöser für die Anzahl der Aktivitäten, den Zeitraum für die Aktivitäten und für bestimmte Benutzer in Warnungsrichtlinien auf der Seite **Warnungsrichtlinien** im Office 365 Security #a0 Compliance Center ändern.
 
@@ -259,8 +259,8 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 
 In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Dabei kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
 
-> [!Important]
-> Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>[!Important]
+>Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Dadurch wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 5ce06f582966f7209d4b539f9de41e8045b98519
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676802"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970923"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
@@ -63,21 +63,21 @@ Um über die Berechtigung zum Zugriff auf Microsoft Secure Score verfügen zu k�
 
 Mit Lese-und Schreibzugriff können Sie Änderungen vornehmen und direkt mit Secure Score interagieren. Sie können auch anderen Benutzern schreibgeschützten Zugriff zuweisen.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Globaler Administrator
+* Sicherheitsadministrator
+* Exchange-Administrator
+* SharePoint-Administrator
 
 ### <a name="read-only-roles"></a>Schreibgeschützte Rollen
 
 Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für eine Verbesserungs Aktion nicht bearbeiten, Bewertungs Zonen bearbeiten oder benutzerdefinierte Vergleiche bearbeiten.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Helpdesk-Administrator
+* Benutzeradministrator
+* Service-Administrator
+* Sicherheitsleseberechtigter
+* Sicherheitsoperator
+* Globaler Leser
 
 ### <a name="graph-api"></a>Graph-API
 

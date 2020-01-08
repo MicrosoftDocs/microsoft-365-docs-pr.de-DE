@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803998"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959534"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>New Zealand Government Cloud Computing-Sicherheits-und Datenschutzüberlegungen
 
@@ -37,7 +37,7 @@ Erfahren Sie mehr über die Vorteile von NZ CC Framework in der Microsoft-Cloud:
 
 Erfahren Sie, wie Sie Ihre NZ CC Framework-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen der Azure-Antwort auf das NZ CC-Framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -62,7 +62,7 @@ Wenn Ihre Agentur im Rahmen des [neuseeländischen Informations Sicherheitshandb
 - [Microsoft Azure Compliance im Kontext der neuseeländischen Sicherheits-und Datenschutzanforderungen](https://aka.ms/azurecompliancenewzealand)
 - [NZ Government ICT Strategy 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [NZ Government Requirements for Cloud Computing](https://aka.ms/NZ-Cloud-Requirements)
-- [Cloud Computing: Überlegungen zu Sicherheit und Datenschutz (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [Cloud Computing: Überlegungen zu Sicherheit und Datenschutz (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Office 365: e-Mail-Integration und Referenzarchitektur](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (zusätzliche Microsoft NZ-Anleitungen für die Einführung in Cloud Services)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

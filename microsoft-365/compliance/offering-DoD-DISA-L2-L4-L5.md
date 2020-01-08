@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805228"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959554"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>US Department of Defense (DoD) provisorische Autorisierung auf Impact Levels 2, 4 und 5
 
@@ -56,7 +56,7 @@ Basierend auf FedRAMP-Autorisierungen gewährte DISA Cloud Service Support eine 
 
 Impact Level 2 umfasst nicht kontrollierte nicht klassifizierte Informationen – Daten, die für eine öffentliche Veröffentlichung autorisiert sind. Außerdem werden andere nicht klassifizierte Informationen behandelt, die zwar nicht als "unternehmenskritisch" eingestuft werden, aber dennoch eine minimale Zugriffssteuerung erfordern. Mit dieser Autorisierung können US-Bundesregierung-Kunden nicht vertrauliche Informationen und grundlegende Verteidigungsanwendungen und Websites im Rahmen von Microsoft Cloud-Diensten bereitstellen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Abgedeckte Dienste für DoD-Impact Level 5
 
@@ -100,7 +100,7 @@ Darüber hinaus werden Microsoft-Angebote außerhalb der FedRAMP-zertifizierten 
 ## <a name="resources"></a>Ressourcen
 
 - [Sicherheitsanforderungen für DoD-Cloud-Computing (SRG) und andere Dokumente](https://public.cyber.mil/dccs/dccs-documents/)
-- [Unterstützung von DISA Cloud Service](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [Unterstützung von DISA Cloud Service](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Schützen von kontrollierten nicht klassifizierten Informationen in nicht föderalen Informationssystemen und Organisationen](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST-Cyber-Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 1ae0b469e2edd6970f3384f2777bb9bdc5cad2a6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802668"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959524"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -68,8 +68,8 @@ Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien defin
 
 Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Office 365 Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
 
-> [!IMPORTANT]
-> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Prüfer
 
@@ -129,11 +129,11 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 
 Überwachen von gesendeten oder empfangenen e-Mail-Nachrichten in Ihrer Organisation für anstößige Sprachen Das Modell verwendet eine Kombination aus maschinellem lernen, künstlicher Intelligenz und Stichwörtern, um die Sprache in e-Mail-Nachrichten zu identifizieren, die gegen Belästigung und Mobbing-Richtlinien verstoßen. Das Offensive Sprachmodell unterstützt derzeit englische Stichwörter und überwacht den Textkörper von e-Mail-Nachrichten.
 
-> [!NOTE]
-> Erstellen Sie eine [Richtlinie zur Verhinderung von Datenverlust](create-test-tune-dlp-policy.md) mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) blockierter Ausdrücke, wenn Sie Folgendes benötigen:
+>[!NOTE]
+>Erstellen Sie eine [Richtlinie zur Verhinderung von Datenverlust](create-test-tune-dlp-policy.md) mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) blockierter Ausdrücke, wenn Sie Folgendes benötigen:
 >
-> - Überwachen der Kommunikation von Microsoft Teams in Ihrer Organisation für anstößige Sprachen
-> - verhindern oder blockieren anstößiger Sprachen in der Kommunikation in Ihrer Organisation
+>- Überwachen der Kommunikation von Microsoft Teams in Ihrer Organisation für anstößige Sprachen
+>- verhindern oder blockieren anstößiger Sprachen in der Kommunikation in Ihrer Organisation
 
 Beachten Sie, dass das Modell keine erschöpfende Liste mit anstößigen Sprachen bereitstellt. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, das Modell nach eigenem Ermessen zu aktualisieren. Das Modell unterstützt Ihre Organisation möglicherweise bei der Überwachung anstößiger Sprache, aber das Modell ist nicht dazu gedacht, die einzige Möglichkeit zu bieten, diese Sprache zu überwachen oder zu adressieren. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit der Überwachung und Sperrung anstößiger Sprachen verantwortlich.
 
@@ -235,8 +235,8 @@ Verwenden Sie die Überwachungsberichte, um die Überprüfungsaktivität auf der
 2. Wechseln Sie zu **Berichts** \> **Dashboard** oder **Überwachung** , um das Widget für die Beaufsichtigung von Berichten für eine Zusammenfassung der aktuellen Aufsichtsrichtlinien Aktivitäten anzuzeigen.
 3. Wählen Sie das **Aufsichts** widget aus, um die Seite detaillierter Bericht zu öffnen.
 
-> [!NOTE]
-> Wenn Sie nicht auf die Seite **Berichte** zugreifen können, überprüfen Sie, dass Sie ein Mitglied der Rollengruppe aufsichtsüberprüfung sind, wie unter [machen Sie die Überwachung in Ihrer Organisation verfügbar](configure-supervision-policies.md)beschrieben. Mit der Aufnahme in diese Rollengruppe können Sie Aufsichtsrichtlinien erstellen und verwalten und den Bericht ausführen.
+>[!NOTE]
+>Wenn Sie nicht auf die Seite **Berichte** zugreifen können, überprüfen Sie, dass Sie ein Mitglied der Rollengruppe aufsichtsüberprüfung sind, wie unter [machen Sie die Überwachung in Ihrer Organisation verfügbar](configure-supervision-policies.md)beschrieben. Mit der Aufnahme in diese Rollengruppe können Sie Aufsichtsrichtlinien erstellen und verwalten und den Bericht ausführen.
   
 ### <a name="how-to-use-the-report"></a>Verwenden des Berichts
 
@@ -260,8 +260,8 @@ Im folgenden finden Sie eine Aufschlüsselung der Werte, die in der Spalte **Tag
 | **In Zuständigkeitsbereich** | Die Gesamtzahl (täglich) von Nachrichten von Exchange, von Teams und von Drittanbieter-Datenquellen, die von einer Aufsichtsrichtlinie überprüft wurden. |
 | **Resolved** | Die Gesamtzahl der Nachrichten von Exchange, Microsoft Teams und Drittanbieter-Datenquellen, die als **aufgelöst** klassifiziert wurden.|
 
-> [!NOTE]
-> Aufsichtsrichtlinien müssen vor der Anzeige in Berichten eingerichtet werden. Wenn Richtlinien gelöscht werden, werden Verlaufsdaten weiterhin angezeigt. Sie werden jedoch als "nicht vorhandene Richtlinie" angezeigt, und die **Export** Funktion ist nicht verfügbar.
+>[!NOTE]
+>Aufsichtsrichtlinien müssen vor der Anzeige in Berichten eingerichtet werden. Wenn Richtlinien gelöscht werden, werden Verlaufsdaten weiterhin angezeigt. Sie werden jedoch als "nicht vorhandene Richtlinie" angezeigt, und die **Export** Funktion ist nicht verfügbar.
 
 ## <a name="audit"></a>Überwachungs
 
@@ -288,4 +288,3 @@ Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellte
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
 Informationen zum Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation finden Sie unter [configure Supervision Policies](configure-supervision-policies.md).
-

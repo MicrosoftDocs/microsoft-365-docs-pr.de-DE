@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
-ms.openlocfilehash: 47549029ffbaa5ead028c18e97850b30f8072011
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080631"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970803"
 ---
 # <a name="troubleshooting-information-barriers"></a>Problembehandlung bei Informationsbarrieren
 
@@ -71,7 +71,7 @@ Bestimmen Sie, ob die Benutzer von einer Informations Sperrrichtlinie betroffen 
     |---------|---------|
     |`Get-OrganizationSegment`<p>Verwenden Sie dieses Cmdlet mit einem Identity-Parameter.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>In diesem Beispiel werden Informationen zu dem Segment abgerufen, das über GUID- *c96e0837-C232-4a8a-841e-ef45787d8fcd*verfügt.         |
 
-    Überprüfen Sie die Details für das Segment. Bearbeiten Sie bei Bedarf [ein Segment](information-barriers-edit-segments-policies.md.md#edit-a-segment), und verwenden Sie dann das `Start-InformationBarrierPoliciesApplication` Cmdlet erneut.
+    Überprüfen Sie die Details für das Segment. Bearbeiten Sie bei Bedarf [ein Segment](information-barriers-edit-segments-policies.md#edit-a-segment), und verwenden Sie dann das `Start-InformationBarrierPoliciesApplication` Cmdlet erneut.
 
     **Wenn Sie weiterhin Probleme mit ihrer Richtlinie zu Informationsbarrieren haben, wenden Sie sich an den Support**.
 
@@ -99,8 +99,8 @@ Stellen Sie sicher, dass die fraglichen Benutzer in einer Informations Sperrrich
     
     |Ergebnisse  |Nächste Schritte  |
     |---------|---------|
-    |Für die ausgewählten Benutzer werden keine Segmente aufgeführt.     |Führen Sie einen der folgenden Schritte aus:<br/>– Zuweisen von Benutzern zu einem vorhandenen Segment durch Bearbeiten der Benutzerprofile in Azure Active Directory. (Weitere Informationen finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Definieren eines Segments mithilfe eines [unterstützten Attributs für Informationsbarrieren](information-barriers-attributes.md). Definieren Sie dann entweder [eine neue Richtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) , oder [Bearbeiten Sie eine vorhandene Richtlinie](information-barriers-edit-segments-policies.md.md#edit-a-policy) , um dieses Segment einzubeziehen.  |
-    |Segmente werden aufgelistet, aber diesen Segmenten werden keine Richtlinien für Informationsbarrieren zugewiesen.     |Führen Sie einen der folgenden Schritte aus:<br/>- [Definieren einer neuen Informations Sperrrichtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) für jedes betreffende Segment<br/>- [Bearbeiten einer vorhandenen Richtlinie für Informationsbarrieren](information-barriers-edit-segments-policies.md.md#edit-a-policy) , um Sie dem richtigen Segment zuzuweisen         |
+    |Für die ausgewählten Benutzer werden keine Segmente aufgeführt.     |Führen Sie einen der folgenden Schritte aus:<br/>– Zuweisen von Benutzern zu einem vorhandenen Segment durch Bearbeiten der Benutzerprofile in Azure Active Directory. (Weitere Informationen finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Definieren eines Segments mithilfe eines [unterstützten Attributs für Informationsbarrieren](information-barriers-attributes.md). Definieren Sie dann entweder [eine neue Richtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) , oder [Bearbeiten Sie eine vorhandene Richtlinie](information-barriers-edit-segments-policies.md#edit-a-policy) , um dieses Segment einzubeziehen.  |
+    |Segmente werden aufgelistet, aber diesen Segmenten werden keine Richtlinien für Informationsbarrieren zugewiesen.     |Führen Sie einen der folgenden Schritte aus:<br/>- [Definieren einer neuen Informations Sperrrichtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) für jedes betreffende Segment<br/>- [Bearbeiten einer vorhandenen Richtlinie für Informationsbarrieren](information-barriers-edit-segments-policies.md#edit-a-policy) , um Sie dem richtigen Segment zuzuweisen         |
     |Segmente werden aufgelistet, und jede Richtlinie enthält eine Informations Barriere.     |-Führen Sie `Get-InformationBarrierPolicy` das Cmdlet aus, um sicherzustellen, dass Richtlinien für Informationsbarrieren aktiv sind.<br/>-Führen Sie `Get-InformationBarrierPoliciesApplicationStatus` das Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet werden<br/>-Ausführen des `Start-InformationBarrierPoliciesApplication` Cmdlets zum Anwenden aller Active Information Barrier-Richtlinien          |
     
 
@@ -147,7 +147,7 @@ Beachten Sie, dass beim Ausführen des Cmdlets für die Richtlinienanwendung fü
     |Status  |Nächster Schritt  |
     |---------|---------|
     |**Nicht gestartet**     |Wenn es mehr als 45 Minuten seit dem **Start-InformationBarrierPoliciesApplication-** Cmdlet ausgeführt wurde, überprüfen Sie Ihr Überwachungsprotokoll, um zu sehen, ob es Fehler in Richtlinien Definitionen gibt, oder aus einem anderen Grund, warum die Anwendung noch nicht gestartet wurde. |
-    |**Fehlgeschlagen**     |Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Ihr Überwachungsprotokoll. Überprüfen Sie auch ihre Segmente und Richtlinien. Sind alle Benutzer mehr als einem Segment zugeordnet? Sind Segmente mit mehr als einem poliicy zugeordnet? Bearbeiten Sie gegebenenfalls [Segmente](information-barriers-edit-segments-policies.md.md#edit-a-segment) und/oder [Bearbeiten Sie Richtlinien](information-barriers-edit-segments-policies.md.md#edit-a-policy), und führen Sie dann das Cmdlet **Start-InformationBarrierPoliciesApplication** erneut aus.  |
+    |**Fehlgeschlagen**     |Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Ihr Überwachungsprotokoll. Überprüfen Sie auch ihre Segmente und Richtlinien. Sind alle Benutzer mehr als einem Segment zugeordnet? Sind Segmente mit mehr als einem poliicy zugeordnet? Bearbeiten Sie gegebenenfalls [Segmente](information-barriers-edit-segments-policies.md#edit-a-segment) und/oder [Bearbeiten Sie Richtlinien](information-barriers-edit-segments-policies.md#edit-a-policy), und führen Sie dann das Cmdlet **Start-InformationBarrierPoliciesApplication** erneut aus.  |
     |**In Bearbeitung**     |Wenn die Anwendung noch ausgeführt wird, lassen Sie mehr Zeit für ihre Ausführung zu. Wenn es sich um mehrere Tage handelt, erfassen Sie die Überwachungsprotokolle, und wenden Sie sich an den Support. |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problem: Richtlinien für Informationsbarrieren werden nicht angewendet.

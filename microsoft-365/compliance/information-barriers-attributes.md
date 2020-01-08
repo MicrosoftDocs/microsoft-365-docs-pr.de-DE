@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Referenz für verschiedene Attribute, die Sie in Richtlinien für Informationsbarrieren verwenden können.
-ms.openlocfilehash: 4198728d412062edced6238604b2b891da22aeac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081537"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970783"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
@@ -25,7 +25,7 @@ Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benut
 In diesem Artikel wird beschrieben, wie Sie Attribute mit Informationsbarrieren verwenden, und es wird eine Liste der Attribute bereitgestellt, die verwendet werden können. Wenn Sie mehr über Informationsbarrieren erfahren möchten, lesen Sie die folgenden Ressourcen:
 - [Informationsbarrieren](information-barriers.md)
 - [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
-- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md.md)
+- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Verwenden von Attributen in Richtlinien für Informationsbarrieren
 
@@ -87,7 +87,7 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
 |UserPrincipalName  |UserPrincipalName  |
-|E-Mail   |WindowsEmailAddress    |
+|Mail   |WindowsEmailAddress    |
 |Beschreibung    |Beschreibung    |
 |MemberOf   |MemberOfGroup  |
 
