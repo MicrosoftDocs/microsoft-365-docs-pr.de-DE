@@ -3,7 +3,7 @@ title: Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können Bezeichnungen auf Microsoft Teams, Office 365-Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: edaa13a21d5eb9069c6e4dce509c13456dec3d89
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802878"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966893"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -70,7 +70,9 @@ Jetzt sind Sie bereit zum Aktivieren der Vorschau der Vertraulichkeitsbezeichnun
 
 1. Stellen Sie in einer PowerShell-Sitzung unter Verwendung eines Geschäfts-, Schul-, oder Unikontos mit globalen Administratorberechtigungen eine Verbindung mit Azure Active Directory her. Führen Sie beispielsweise den folgenden Befehl aus:
     
-        Connect-AzureAD
+    ```powershell
+    Connect-AzureAD
+    ````
     
     Vollständige Anweisungen finden Sie unter [Herstellen einer Verbindung mit Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
@@ -97,7 +99,7 @@ Jetzt sind Sie bereit zum Aktivieren der Vorschau der Vertraulichkeitsbezeichnun
 
 3. Stellen Sie in derselben PowerShell-Sitzung nun mithilfe eines Geschäfts-, Schul- oder Unikontos, das über globale Administratorberechtigungen verfügt, eine Verbindung mit dem Security & Compliance Center her. Anweisungen hierzu finden Sie unter [Herstellen einer Verbindung mit Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-4. Führen Sie die folgenden Befehle aus:
+4. Führen Sie die folgenden Befehle aus, um Ihre Bezeichnungen mit Azure AD zu synchronisieren, damit sie mit Office 365-Gruppen verwendet werden können:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -218,7 +220,36 @@ Wenn Sie die Bezeichnung anzeigen und bearbeiten möchten, verwenden Sie die Sei
 
 ## <a name="change-site-and-group-settings-for-a-label"></a>Ändern von Website- und Gruppeneinstellungen für eine Bezeichnung
 
-Es wird empfohlen, die Einstellungen nicht zu ändern, nachdem Sie eine Bezeichnung auf mehrere Teams, Gruppen oder Websites angewendet haben. Wenn eine Änderung erforderlich wird, müssen Sie Updates manuelle mithilfe eines Azure AD PowerShell-Skripts anwenden. Diese Methode stellt sicher, dass alle vorhandenen Teams, Websites und Gruppen die neue Einstellung erzwingen.
+Wenn Sie eine Änderung an den Website- und Gruppeneinstellungen für eine Bezeichnung vornehmen, müssen Sie die folgenden PowerShell-Befehle ausführen, damit Ihre Teams, Websites und Gruppen die neuen Einstellungen verwenden können. Es wird empfohlen, die Website- und Gruppeneinstellungen für eine Bezeichnung nicht zu ändern, nachdem Sie die Bezeichnung auf mehrere Teams, Gruppen oder Websites angewendet haben.
+
+1. Führen Sie die folgenden Befehle aus, um eine Verbindung mit PowerShell im Office 365 Security & Compliance Center herzustellen und die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen.
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
+    Import-PSSession $Session
+    Get-Label |ft Name, Guid
+    ```
+
+2. Notieren Sie sich die GUID für die Bezeichnung(en), die Sie geändert haben.
+
+3. Stellen Sie jetzt eine Verbindung mit Exchange Online PowerShell her, und führen Sie das Cmdlet "Get-UnifiedGroup" aus. Geben Sie dabei die GUID der Bezeichnung anstelle der Beispiel-GUID "e48058ea-98e8-4940-8db0-ba1310fd955e" an: 
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
+
+4. Wenden Sie die Vertraulichkeitsbezeichnung für jede Gruppe unter Verwendung der Bezeichnungs-GUID anstelle der Beispiel-GUID "e48058ea-98e8-4940-8db0-ba1310fd955e" erneut an:
+    
+    ```powershell
+    foreach ($g in $groups)
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
 
 ## <a name="support-for-the-new-sensitivity-labels"></a>Unterstützung der neuen Vertraulichkeitsbezeichnungen
 

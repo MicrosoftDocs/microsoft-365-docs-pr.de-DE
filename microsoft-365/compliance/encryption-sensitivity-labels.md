@@ -1,7 +1,7 @@
 ---
 title: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: aae46b8a6fa18c9af32005bca87ad80638b5b6c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 55a4096fb802608ac8c0e9777dc20b1026ba6b60
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708100"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962314"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -51,7 +51,7 @@ Die Verschlüsselung verwendet Azure Rights Management (Azure RMS). Azure RMS ve
 Setzen Sie zunächst **Verschlüsselung** auf **Ein**, und wählen Sie dann eine der folgenden Optionen aus:
 
 - **Berechtigungen sofort zuweisen**, damit Sie genau bestimmen können, welche Benutzer welche Berechtigungen für Inhalte mit dieser Bezeichnung erhalten. Weitere Informationen hierzu finden Sie im nächsten Abschnitt [Berechtigungen sofort zuweisen](#assign-permissions-now).
-- **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn sie die Bezeichnung auf Inhalte anwenden. Auf diese Weise ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können. Weitere Informationen hierzu finden Sie weiter unten im Abschnitt [Benutzern die Zuweisung von Berechtigungen überlassen](#let-users-assign-permissions).
+- **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn sie die Bezeichnung auf Inhalte anwenden. Auf diese Weise ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können. Weitere Informationen hierzu finden Sie auf dieser Seite im Abschnitt [Benutzern die Zuweisung von Berechtigungen überlassen](#let-users-assign-permissions).
 
 Liegt beispielsweise eine Vertraulichkeitsbezeichnung namens **Streng vertraulich** vor, die auf Ihre vertraulichsten Inhalte angewendet wird, können Sie jetzt festlegen, wer welche Art von Berechtigungen für diese Inhalte erhält.
 
@@ -113,9 +113,9 @@ Weitere Informationen zu den einzelnen Berechtigungen finden Sie unter [Nutzungs
 
 ![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](media/Sensitivity-Choose-permissions-settings.png)
 
-Beachten Sie, dass dieselbe Bezeichnung unterschiedlichen Benutzern unterschiedliche Berechtigungen erteilen kann. Eine einzelne Bezeichnung kann beispielsweise einige Benutzer als „Überprüfer“ und einen anderen Benutzer als „Mitverfasser“ zuweisen, wie nachfolgend dargestellt.
+Beachten Sie, dass dieselbe Bezeichnung unterschiedlichen Benutzern unterschiedliche Berechtigungen erteilen kann. Eine einzelne Bezeichnung kann beispielsweise einige Benutzer als "Überprüfer" und einen anderen Benutzer als "Mitverfasser" zuweisen, wie im folgenden Screenshot dargestellt.
 
-Weisen Sie hierfür Benutzern und Gruppen Berechtigungen zu, und speichern Sie die Einstellungen. Wiederholen Sie dann diese Schritte, und fügen Sie jedes Mal Benutzer hinzu, weisen diesen Berechtigungen zu, und speichern die Einstellungen. Sie können dies so oft wie erforderlich wiederholen, um unterschiedliche Berechtigungen für unterschiedliche Benutzer zu definieren.
+Weisen Sie hierfür Benutzern und Gruppen Berechtigungen zu, und speichern Sie die Einstellungen. Wiederholen Sie dann diese Schritte, und fügen Sie jedes Mal Benutzer hinzu, weisen diesen Berechtigungen zu, und speichern die Einstellungen. Sie können diese Konfiguration so oft wie erforderlich wiederholen, um unterschiedliche Berechtigungen für unterschiedliche Benutzer zu definieren.
 
 ![Unterschiedliche Benutzer mit unterschiedlichen Berechtigungen](media/Sensitivity-Multiple-users-permissions.png)
 
@@ -147,7 +147,7 @@ Durch diese Optionen wird festgelegt, in welchen Apps die Vertraulichkeitsbezeic
 Eine Vertraulichkeitsbezeichnung, bei der Benutzer Berechtigungen zuweisen können, kann nur manuell von Benutzern angewendet werden. Sie kann nicht automatisch angewendet oder als empfohlene Bezeichnung genutzt werden.
 
 > [!NOTE]
-> Das Zulassen der Zuweisung von Berechtigungen durch Benutzer erfordert ein Azure Information Protection-Abonnement. Wenn Sie dieses Feature in Word, PowerPoint und Excel verwenden möchten, müssen Sie den [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) herunterladen und installieren. Wir arbeiten an der systeminternen Unterstützung dieses Features in diesen Office-Apps, sodass Sie dafür nicht den Azure Information Protection-Client benötigen. Außerdem kann der Client nur unter Windows ausgeführt werden, sodass dieses Feature unter Mac, iOS, Android oder Office im Web noch nicht unterstützt wird.
+> Das Zulassen der Zuweisung von Berechtigungen durch Benutzer erfordert ein Azure Information Protection-Abonnement. Wenn Sie dieses Feature in Word, PowerPoint und Excel verwenden möchten, müssen Sie den [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) herunterladen und installieren. Wir arbeiten an der systeminternen Unterstützung dieses Features in diesen Office-Apps, sodass Sie dafür nicht den Azure Information Protection-Client benötigen. Außerdem kann dieser Client nur unter Windows ausgeführt werden, sodass dieses Feature unter Mac, iOS, Android oder Office im Web noch nicht unterstützt wird.
 
 ![Verschlüsselungseinstellungen für benutzerdefinierte Berechtigungen](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
@@ -215,5 +215,5 @@ Benutzer können beispielsweise geschützte E-Mails nicht auf Mobiltelefonen ode
 
 Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
 
-- Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
 - For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 

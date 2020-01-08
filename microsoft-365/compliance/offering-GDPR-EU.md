@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859775"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959603"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>DSGVO (EU-Datenschutz-Grundverordnung)
 
@@ -67,9 +68,13 @@ Erfahren Sie, wie der Microsoft-Kunde INAIL die DSGVO umsetzt und dabei vertraul
 
 Verwenden Sie den [Compliance-Manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) zur kontinuierlichen Risikobewertung, erhalten Sie verwertbare Informationen und vereinfachen Sie Ihre Complianceprozesse.
 
-### <a name="security-and-compliance-center"></a>Security & Compliance Center
+### <a name="microsoft-365-compliance-center"></a>Microsoft 365 Compliance Center
 
-Im Microsoft 365 [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) finden Sie umfassende Kontrollen für Sicherheit und Compliance.
+Im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) können Sie Compliancekontrollen erkunden.
+
+### <a name="microsoft-365-security-center"></a>Microsoft 365 Security Center
+
+Im [Microsoft 365 Security Center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) können Sie Sicherheitskontrollen erkunden.
 
 ### <a name="discover-compliance-solutions"></a>Compliancelösungen entdecken
 
