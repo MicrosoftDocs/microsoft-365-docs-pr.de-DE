@@ -199,23 +199,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filtern von Daten beim Importieren von PST-Dateien
           href: filter-data-when-importing-pst-files.md
-        - name: Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: Häufig gestellte Fragen zum Importieren von PST-Dateien
           href: faqimporting-pst-files-to-office-365.md
-        - name: Archivieren von drittanbieterdaten
-          href: archiving-third-party-data.md
-          items:
-            - name: Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten
-              href: archive-twitter-data-with-sample-connector.md
-            - name: Einrichten eines Connectors zum Archivieren von LinkedIn-Daten
-              href: archive-linkedin-data.md
-            - name: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
-              href: archive-instant-bloomberg-data.md
-            - name: Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: Archivieren von drittanbieterdaten
+      href: archiving-third-party-data.md
+      items:
+        - name: Einrichten eines Connectors zum Archivieren von Facebook-Daten
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Einrichten eines Connectors zum Archivieren von Twitter-Daten
+          href: archive-twitter-data-with-sample-connector.md
+        - name: Einrichten eines Connectors zum Archivieren von LinkedIn-Daten
+          href: archive-linkedin-data.md
+        - name: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
+          href: archive-instant-bloomberg-data.md
+        - name: Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten
+          href: work-with-partner-to-archive-third-party-data.md
     - name: Speichern von Daten
       items:
         - name: Aktivieren von Archivpostfächern
