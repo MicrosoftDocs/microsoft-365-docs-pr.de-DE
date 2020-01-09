@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Übersicht über die Installationsschritte für Microsoft 365 Business.
-ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850802"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995248"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -36,7 +36,7 @@ Sehen Sie sich ein kurzes Video über Microsoft 365 Business Setup an.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber auch die anderen Optionen werden aufgelistet.
 
@@ -61,7 +61,7 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
 - **Exchange Online-Archivierung**
 - **Azure Information Protection (plan1**)
 
-Die ersten Schritte finden Sie unter [Einrichten von erweiterten Sicherheitsrichtlinien](set-up-advanced-security.md).
+Informationen zu den ersten Schritten finden Sie unter [Erweitern des Bedrohungsschutzes](increase-threat-protection.md) und [Einrichten von Kompatibilitätsfeatures](set-up-compliance.md).
 
 Eine Übersicht über die besten Sicherheitsmethoden finden Sie auch unter [Top 10 Ways to Secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) .
 
@@ -91,4 +91,4 @@ Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien,
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

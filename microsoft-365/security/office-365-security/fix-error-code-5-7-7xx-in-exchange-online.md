@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Probleme für den Fehlercode 5.7.7 XX in Exchange Online beheben (vom Senden von e-Mails blockierte Mandanten).
-ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989530"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995228"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
 
@@ -57,7 +57,7 @@ Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für da
 
 2. [Aktivieren Sie MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) für alle Administratoren in Ihrer Office 365 Organisation.
 
-3. Stellen Sie sicher, dass alle Ihre e-Mail-Domänen registriert sind. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) und [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+3. Stellen Sie sicher, dass alle Ihre e-Mail-Domänen registriert sind. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) und [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 4. Suchen Sie nach ungewöhnlichen [Konnektoren](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrer Office 365 Organisation, um Spam zu senden. Informationen zum Anzeigen der vorhandenen Connectors finden Sie unter [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 

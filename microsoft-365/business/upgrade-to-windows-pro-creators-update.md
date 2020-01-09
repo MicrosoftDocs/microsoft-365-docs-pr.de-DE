@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren von Windows-Geräten auf Windows Pro Creators Update
+title: Aktualisieren von Windows-Geräten auf Windows 10 pro
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: 'Hier erfahren Sie, wie Sie Windows-Geräte auf Windows 10 pro Creators Update aktualisieren. '
-ms.openlocfilehash: e8399ad94ef58ad8fa5386d4ab0ed7fa4b8627a0
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: 'Informationen zum Aktualisieren von Windows-Geräten auf Windows 10 pro. '
+ms.openlocfilehash: acad4a393e0870299df768fd4c821d9c1e83ecac
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831191"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995268"
 ---
-# <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Aktualisieren von Windows-Geräten auf Windows Pro Creators Update
+# <a name="upgrade-windows-devices-to-windows-10-pro"></a>Aktualisieren von Windows-Geräten auf Windows 10 pro
 
 Sehen Sie sich ein kurzes Video über das Upgrade von Windows-Geräten auf Windows 10 pro an.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
-## <a name="upgrade-to-windows-10-pro-creators-update"></a>Aktualisieren auf Windows 10 pro Creators-Update
+## <a name="upgrade-to-windows-10-pro"></a>Upgrade auf Windows 10 pro
   
-Um ein Upgrade auf Windows 10 pro Creators Update durchführen zu können, stehen Ihnen mehrere Optionen zur Verfügung. Sie können:
+Um ein Upgrade auf Windows 10 pro durchführen zu können, stehen Ihnen mehrere Optionen zur Verfügung. Sie können:
     
 - Installieren des Upgrades von der [Microsoft-Software Download Website](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; wählen Sie diese Option aus, wenn sich das Gerät, auf dem Sie angemeldet sind, auf dem Gerät befindet, das Sie aktualisieren möchten. 
 
@@ -50,7 +50,7 @@ Um ein Upgrade auf Windows 10 pro Creators Update durchführen zu können, stehe
     - Lesen Sie die Anweisungen zur Verwendung des Tools und zum Erstellen Ihrer Installationsmedien. 
 
 > [!NOTE]
-> Wenn Sie über Windows-Geräte mit Windows 7 pro, Windows 8 pro oder Windows 8.1 pro verfügen, berechtigt Ihr Microsoft 365 Business-Abonnement zu einem Windows 10-Upgrade; Sie benötigen keinen Product Key.
+> Wenn Sie über Windows-Geräte mit Windows 7 pro, Windows 8 pro oder Windows 8.1 pro verfügen, berechtigt Ihr Microsoft 365 Business-Abonnement zu einem Windows pro 10-Upgrade; Sie benötigen keinen Product Key.
     
 Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md) zum Abschließen der Einrichtung von Windows 10-Geräten. 
   
@@ -58,4 +58,4 @@ Weitere Informationen finden Sie unter [Einrichten von mobilen Geräten für Mic
   
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
