@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Probleme für den Fehlercode 5.7.7 XX in Exchange Online beheben (vom Senden von e-Mails blockierte Mandanten).
-ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962304"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989530"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
 
@@ -35,7 +35,7 @@ In seltenen Fällen kann dies auch passieren, wenn Sie Ihr Abonnement erneuern, 
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750: nicht registrierte Domänen-e-Mail-Einschränkung: was Sie wissen müssen
 
-Office 365 ermöglicht Mandanten das Weiterleiten einiger Nachrichten über Exchange Online Protection (EoP). Beispiel:
+Office 365 ermöglicht Mandanten das Weiterleiten einiger Nachrichten über Exchange Online Protection (EoP). Zum Beispiel:
 
 - Ein Office 365 Postfach empfängt e-Mails von einem externen Absender. Die e-Mail-Weiterleitung ist für das Office 365 Postfach konfiguriert, sodass die Nachricht an die externe e-Mail-Adresse des Benutzers zurückgeht. Dieses Szenario ist am häufigsten in Bildungsumgebungen, in denen Kursteilnehmer ihre persönlichen e-Mail-Konten zum Anzeigen von schulbezogenen Nachrichten verwenden möchten.
 
@@ -55,18 +55,20 @@ Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für da
 
 1. Stellen Sie sicher, dass alle Ihre e-Mail-Domänen registriert sind. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) und [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Suchen Sie nach ungewöhnlichen [Konnektoren](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrer Office 365 Organisation, um Spam zu senden. Informationen zum Anzeigen der vorhandenen Connectors finden Sie unter [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
+2. [Aktivieren Sie MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) für alle Administratoren in Ihrer Office 365 Organisation.
 
-3. Suchen Sie nach kompromittierten Benutzern, wie unter [Antworten auf ein kompromittiertes e-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)beschrieben.
+3. Stellen Sie sicher, dass alle Ihre e-Mail-Domänen registriert sind. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) und [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-4. [Aktivieren Sie MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) für alle Administratoren in Ihrer Office 365 Organisation.
+4. Suchen Sie nach ungewöhnlichen [Konnektoren](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrer Office 365 Organisation, um Spam zu senden. Informationen zum Anzeigen der vorhandenen Connectors finden Sie unter [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-5. Sperren Sie Ihre lokalen e-Mail-Server, und stellen Sie sicher, dass Sie nicht beeinträchtigt werden.
+5. Suchen Sie nach kompromittierten Benutzern, wie unter [Antworten auf ein kompromittiertes e-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)beschrieben.
+
+6. Sperren Sie Ihre lokalen e-Mail-Server, und stellen Sie sicher, dass Sie nicht beeinträchtigt werden.
 
    > [!TIP]
    > Es gibt viele Faktoren, vor allem, wenn Sie Drittanbieterserver verwenden. Unabhängig davon müssen Sie sicherstellen, dass alle ausgehenden e-Mails jetzt legitim sind.
 
-6. Wenden Sie sich an den Microsoft-Support, und bitten Sie den Mandanten, die Blockierung für das Senden von nicht registrierten Domänen wieder aufzuheben. Der Fehlercode ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert wurde und keine Spamnachrichten senden kann. Informationen zum Öffnen eines Support Falls finden Sie unter [kontaktieren des Supports für Geschäftsprodukte-Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+7. Rufen Sie den Microsoft-Support an, und bitten Sie den Mandanten, die Blockierung aufzuheben, um e-Mails erneut zu senden. Der Fehlercode ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert wurde und keine Spamnachrichten senden kann. Informationen zum Öffnen eines Support Falls finden Sie unter [kontaktieren des Supports für Geschäftsprodukte-Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

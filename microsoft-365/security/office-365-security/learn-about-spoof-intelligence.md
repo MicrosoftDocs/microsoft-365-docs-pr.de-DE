@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie Spoof Intelligence im Security &amp; Compliance Center auf der Seite Anti-Spam-Einstellungen, um alle Absender zu überprüfen, die entweder Spoofing von Domänen sind, die Teil Ihrer Organisation sind, oder Spoofing externer Domänen. Spoof Intelligence steht als Teil von Office 365 Enterprise E5 oder separat im Rahmen von Advanced Threat Protection und Exchange Online Protection zur Verfügung.
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970431"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989490"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Wissenswertes zur Spoofintelligenz
 
@@ -79,9 +79,9 @@ Sie können die Absender, die Ihre Domäne Spoofing durchführen, oder externe D
 
     ![Screenshot mit Zugriff auf die Anti-Spam-Seite](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. Wählen Sie auf der Seite **Anti-Spam-Einstellungen** im rechten Bereich die Registerkarte **Benutzerdefiniert** aus, und führen Sie einen Bildlauf nach unten durch, und erweitern Sie **Spoof Intelligence Policy**.
+4. Scrollen Sie auf der Seite **Anti-Spam-Einstellungen** im rechten Bereich nach unten, und erweitern Sie **Spoof Intelligence Policy**.
 
-    ![Screenshot mit Zugriff auf die benutzerdefinierten Anti-Spam-Einstellungen](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![Spoofing](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. Um die Liste der Absender anzuzeigen, die Ihre Domäne Spoofing haben, wählen Sie **neue Absender überprüfen** und dann die Registerkarte **Domänen** aus.
 

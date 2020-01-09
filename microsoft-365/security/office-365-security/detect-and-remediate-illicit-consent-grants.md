@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: 46387f82a38c33debdc24a6825479bf3183f0283
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0f4569a4ef8496a07fc1dc52f500ee91a6590fdd
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808430"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989540"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
 
@@ -32,6 +32,7 @@ Bei einem Angriff mit unerlaubter Zustimmung erstellt der Angreifer eine Azure-r
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Wie sieht ein Angriff der illegalen Zustimmungs Erteilung in Office 365 aus?
 
 Sie müssen das Office 365 **Überwachungsprotokoll** durchsuchen, um nach Zeichen zu suchen, die auch als Indikatoren für Kompromisse (IOC) dieses Angriffs bezeichnet werden. Für Organisationen mit vielen Azure-registrierten Anwendungen und einer großen Benutzerbasis besteht die bewährte Methode darin, die Genehmigungs Stipendien für Organisationen auf wöchentlicher Basis zu überprüfen.
+
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Schritte zum Auffinden von Anzeichen für diesen Angriff
 
 1. Öffnen Sie das **Security and Compliance Center** in Ihrem Office 365 Mandanten.

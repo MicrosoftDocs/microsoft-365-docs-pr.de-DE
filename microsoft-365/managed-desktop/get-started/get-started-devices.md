@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
-ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
+ms.openlocfilehash: 59cdb911c46fbb2ad5dd998810297a5502c8fa0c
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38697158"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989550"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Vorbereiten Ihrer Benutzer für die Verwendung von Geräten
 
@@ -23,7 +23,7 @@ Um dies noch einfacher zu machen, bieten wir eine Anleitung, die Ihre Benutzer d
 ## <a name="to-prepare-the-guide"></a>So bereiten Sie das Handbuch vor
 
 1. Laden Sie die für Ihre Organisation geeignete Version herunter:
-- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (Hilfe Version abrufen)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) – verwenden Sie diese Version, wenn Ihre Endbenutzer das Microsoft-Support System verwenden werden.
+- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (Hilfe Version abrufen)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) – verwenden Sie diese Version, wenn Ihre Endbenutzer das Microsoft-Support System verwenden werden.
 - [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) – verwenden Sie diese Version, wenn Ihre Endbenutzer das Microsoft-Unterstützungssystem *nicht* verwenden werden.
 2. Verwenden Sie eine beliebige APP, die PDF-Dateien öffnen kann, um für Ihre Organisation relevante Details auszufüllen:
     - Der Name des Netzwerks, mit dem die Benutzer eine Verbindung herstellen sollen, um das Setup fortzusetzen (Schritt 3 im Handbuch)
@@ -33,9 +33,9 @@ Um dies noch einfacher zu machen, bieten wir eine Anleitung, die Ihre Benutzer d
 
 ## <a name="ready-to-use-guide"></a>"Ready-to-use Guide"
 
-Außerdem stellen wir eine allgemeinere Version des Handbuchs für die Organisationen bereit, die diese nicht anpassen müssen. Es gibt zwei Versionen, eine für Organisationen, die das Support System von Microsoft verwenden (die Get-Hilfe-APP), eine für Personen, die ihre eigene interne Endbenutzer Unterstützung bereitstellen.
+Außerdem stellen wir eine allgemeinere Version des Handbuchs für die Organisationen bereit, die diese nicht anpassen müssen. Es gibt zwei Versionen, eine für Organisationen, die das Support System von Microsoft verwenden (die Get-Hilfe-APP), eine für diejenigen, die Alternative Unterstützung für Ihre Benutzer bereitstellen. 
 
-- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (Hilfe Version-Soforteinsatz fähig)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) – verwenden Sie diese Version, wenn Ihre Endbenutzer das Microsoft-Support System verwenden werden.
+- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (Hilfe Version-Soforteinsatz fähig)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) – verwenden Sie diese Version, wenn Ihre Endbenutzer das Microsoft-Support System verwenden werden.
 - [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (einsatzfähig)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) – verwenden Sie diese Version, wenn Ihre Endbenutzer das Microsoft-Support System *nicht* verwenden.
 
 Jetzt können Sie mit der Bereitstellung von apps fortfahren:
