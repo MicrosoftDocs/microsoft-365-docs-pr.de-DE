@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: 309fde077cdf456ba33656c29f9e325aac1820e3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e58be4e90429c2d39bbcf4c5ef362e659764d63
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807124"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995285"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 

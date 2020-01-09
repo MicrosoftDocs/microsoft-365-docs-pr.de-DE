@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Office 365 ausführen.'
-ms.openlocfilehash: 4354e0c630066204811f98cce53d6b0f041b20ad
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: a66655fd03a379d56e31ca0960f433d659265edc
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854070"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995295"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "40854070"
   
 Nachfolgend finden Sie die Schritt-für-Schritt-Anleitungen zum Ausführen eines Massenimports mehrerer PST-Dateien in Office 365-Postfächer unter Verwendung des Netzwerkupload. Häufig gestellte Fragen zur Verwendung des Netzwerkuploads zum Ausführen eines Massenimports von PST-Dateien in Office 365-Postfächer finden Sie unter [Häufig gestellte Fragen zum Importieren von PST-Dateien unter Verwendung des Netzwerkuploads](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files).
   
-[Schritt 1: Kopieren der SAS-URL und Installieren von Azure AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
+[Schritt 1: Kopieren der SAS-URL und Installieren von AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
 [Schritt 2: Hochladen Ihrer PST-Dateien in Office 365](#step-2-upload-your-pst-files-to-office-365)
 
@@ -57,39 +57,39 @@ Sie müssen Schritt 1 nur einmal ausführen, um PST-Dateien in Office 365-Postf�
   - Sie müssen ein globaler Administrator innerhalb Ihrer Office 365-Organisation sein.
     
   > [!TIP]
-    > Erwägen Sie, in Exchange Online eine neue Rollengruppe speziell zum Importieren von PST-Dateien nach Office 365 zu erstellen. Legen Sie für die neue Rollengruppe als mindestens erforderliche Berechtigungen zum Importieren von PST-Dateien die Rollen "Postfachimport/-export" und "E-Mail-Empfänger" fest, und fügen Sie anschließend Mitglieder hinzu. 
+    > Erwägen Sie, in Exchange Online eine neue Rollengruppe speziell zum Importieren von PST-Dateien nach Office 365 zu erstellen. Legen Sie für die neue Rollengruppe als mindestens erforderliche Berechtigungen zum Importieren von PST-Dateien die Rollen "Postfachimport/-export" und "E-Mail-Empfänger" fest, und fügen Sie anschließend Mitglieder hinzu.
   
-- Die einzige unterstützte Methode zum Importieren von PST-Dateien in Office 365 ist die Verwendung des Azure AzCopy-Tools, wie in diesem Thema beschrieben. Sie können den Azure Storage-Explorer nicht verwenden, um PST-Dateien direkt in den Azure-Speicherbereich hochzuladen.
+- Die einzige unterstützte Methode zum Importieren von PST-Dateien in Office 365 ist die Verwendung des AzCopy-Tools, wie in diesem Thema beschrieben. Sie können den Azure Storage-Explorer nicht verwenden, um PST-Dateien direkt in den Azure-Speicherbereich hochzuladen.
     
-- Sie müssen die PST-Dateien, die Sie in Office 365 importieren möchten, auf einem Dateiserver oder einem freigegebenen Ordner in Ihrer Organisation speichern. In Schritt 2 führen Sie das Azure AzCopy-Tool aus, das die PST-Dateien in Office 365 hochlädt, die auf diesem Dateiserver in einem freigegebenen Ordner gespeichert sind.
+- Sie müssen die PST-Dateien, die Sie in Office 365 importieren möchten, auf einem Dateiserver oder einem freigegebenen Ordner in Ihrer Organisation speichern. In Schritt 2 führen Sie das AzCopy-Tool aus, um die PST-Dateien in Office 365 hochzuladen, die auf diesem Dateiserver in einem freigegebenen Ordner gespeichert sind.
     
 - Große PST-Dateien können sich auf die Leistung des PST-Importprozesses auswirken. Deshalb empfehlen wir, dass jede PST-Datei, die Sie in Schritt 2 in den Azure-Speicherort hochladen, nicht größer als 20 GB sein sollte.
 
-- Diese Vorgehensweise umfasst das Kopieren und Speichern einer Kopie einer URL, die einen Zugriffsschlüssel enthält. Diese Informationen werden in Schritt 2 zum Hochladen Ihrer PST-Dateien und in Schritt 3 verwendet, wenn Sie eine Liste der PST-Dateien anzeigen möchten, die in Office 365 hochgeladen wurden. Schützen Sie diese URL unbedingt genauso wie Kennwörter und andere sicherheitsbezogene Informationen. Sie können sie beispielsweise in einem kennwortgeschützten Microsoft Word-Dokument vermerken oder auf einem verschlüsselten USB-Laufwerk speichern. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ein Beispiel für diese Kombination aus Schlüssel und URL. 
+- Diese Vorgehensweise umfasst das Kopieren und Speichern einer Kopie einer URL, die einen Zugriffsschlüssel enthält. Diese Informationen werden in Schritt 2 zum Hochladen Ihrer PST-Dateien und in Schritt 3 verwendet, wenn Sie eine Liste der PST-Dateien anzeigen möchten, die in Office 365 hochgeladen wurden. Schützen Sie diese URL unbedingt genauso wie Kennwörter und andere sicherheitsbezogene Informationen. Sie können sie beispielsweise in einem kennwortgeschützten Microsoft Word-Dokument vermerken oder auf einem verschlüsselten USB-Laufwerk speichern. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ein Beispiel für diese Kombination aus Schlüssel und URL.
     
 - Sie können PST-Dateien in ein inaktives Postfach in Office 365 importieren. Geben Sie hierzu den GUID des inaktiven Postfachs im Parameter `Mailbox` in der PST-Importzuordnungsdatei an. Informationen hierzu finden Sie in diesem Thema auf der Registerkarte **Anweisungen** im Schritt 4. 
     
 - In einer Exchange-Hybridumgebung können Sie PST-Dateien für einen Benutzer, dessen primäres Postfach lokal gehostet wird, in ein cloudbasiertes Archivpostfach importieren. Gehen Sie hierzu in der PST-Importzuordnungsdatei folgendermaßen vor:
     
-  - Geben Sie die E-Mail-Adresse des lokalen Postfachs des Benutzers im Parameter `Mailbox` an. 
+  - Geben Sie die E-Mail-Adresse des lokalen Postfachs des Benutzers im Parameter `Mailbox` an.
     
-  - Geben Sie den Wert **TRUE** im Parameter `IsArchive` an. 
+  - Geben Sie den Wert **TRUE** im Parameter `IsArchive` an.
     
-    Weitere Informationen finden Sie unter [Schritt 4](#step-4-create-the-pst-import-mapping-file). 
+    Weitere Informationen finden Sie unter [Schritt 4](#step-4-create-the-pst-import-mapping-file).
     
-- Nachdem PST-Dateien in ein Office 365-Postfach importiert wurden, wird die Einstellung zum Anhalten der Aufbewahrungszeit für das Postfach für eine unbestimmte Dauer aktiviert. Dies bedeutet: Die dem Postfach zugewiesene Aufbewahrungsrichtlinie wird erst verarbeitet, nachdem Sie das Anhalten der Aufbewahrungszeit deaktiviert oder aber ein Datum zum Deaktivieren des Anhaltens festgelegt haben. Warum tun wir dies? Wenn die in ein Postfach importierten Nachrichten alt sind, werden sie möglicherweise endgültig gelöscht, weil ihr Aufbewahrungszeitraum, basierend auf den für das Postfach konfigurierten Aufbewahrungseinstellungen, abgelaufen ist. Wenn Sie das Postfach auf Anhalten der Aufbewahrungszeit setzen, erhält der Postfachbesitzer Zeit zum Verwalten dieser neu importierten Nachrichten, oder Sie erhalten Zeit zum Ändern der Aufbewahrungseinstellungen für das Postfach. Im Abschnitt[Weitere Informationen](#more-information) finden Sie Vorschläge, wie Sie die Aufbewahrungszeit verwalten können. 
+- Nachdem PST-Dateien in ein Office 365-Postfach importiert wurden, wird die Einstellung zum Anhalten der Aufbewahrungszeit für das Postfach für eine unbestimmte Dauer aktiviert. Dies bedeutet: Die dem Postfach zugewiesene Aufbewahrungsrichtlinie wird erst verarbeitet, nachdem Sie das Anhalten der Aufbewahrungszeit deaktiviert oder aber ein Datum zum Deaktivieren des Anhaltens festgelegt haben. Warum tun wir dies? Wenn die in ein Postfach importierten Nachrichten alt sind, werden sie möglicherweise endgültig gelöscht, weil ihr Aufbewahrungszeitraum, basierend auf den für das Postfach konfigurierten Aufbewahrungseinstellungen, abgelaufen ist. Wenn Sie das Postfach auf Anhalten der Aufbewahrungszeit setzen, erhält der Postfachbesitzer Zeit zum Verwalten dieser neu importierten Nachrichten, oder Sie erhalten Zeit zum Ändern der Aufbewahrungseinstellungen für das Postfach. Im Abschnitt[Weitere Informationen](#more-information) finden Sie Vorschläge, wie Sie die Aufbewahrungszeit verwalten können.
     
-- Standardmäßig beträgt die maximale Nachrichtengröße, die von einem Office 365-Postfach empfangen werden kann, 35 MB. Der Grund hierfür ist, dass der Standardwert für die Eigenschaft *MaxReceiveSize* für ein Postfach auf 35 MB festgelegt ist. Der Grenzwert für die maximale Größe empfangener Nachrichten in Office 365 beträgt jedoch 150 MB. Wenn Sie also eine PST-Datei importieren, die ein Element enthält, das größer als 35 MB ist, ändert der Office 365-Importdienst den Wert der Eigenschaft *MaxReceiveSize* für das Zielpostfach automatisch in "150 MB". Dadurch können Nachrichten mit bis zu 150 MB in Benutzerpostfächer importiert werden. 
+- Standardmäßig beträgt die maximale Nachrichtengröße, die von einem Office 365-Postfach empfangen werden kann, 35 MB. Der Grund hierfür ist, dass der Standardwert für die Eigenschaft *MaxReceiveSize* für ein Postfach auf 35 MB festgelegt ist. Der Grenzwert für die maximale Größe empfangener Nachrichten in Office 365 beträgt jedoch 150 MB. Wenn Sie also eine PST-Datei importieren, die ein Element enthält, das größer als 35 MB ist, ändert der Office 365-Importdienst den Wert der Eigenschaft *MaxReceiveSize* für das Zielpostfach automatisch in "150 MB". Dadurch können Nachrichten mit bis zu 150 MB in Benutzerpostfächer importiert werden.
     
     > [!TIP]
-    > Wenn Sie die Größe empfangener Nachrichten für ein Postfach ermitteln möchten, können Sie diesen Befehl in Exchange Online PowerShell ausführen: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
+    > Wenn Sie die Größe empfangener Nachrichten für ein Postfach ermitteln möchten, können Sie diesen Befehl in Exchange Online PowerShell ausführen: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`.
 
-## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Schritt 1: Kopieren der SAS-URL und Installieren von Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azcopy"></a>Schritt 1: Kopieren der SAS-URL und Installieren von AzCopy
 
-Im ersten Schritt laden Sie das Azure AzCopy-Tool herunter (das Tool, das Sie in Schritt 2 ausführen, um PST-Dateien in Office 365 hochzuladen) und installieren es. Sie kopieren außerdem die SAS-URL für Ihre Organisation. Diese URL ist eine Kombination aus der Netzwerk-URL des Azure Storage-Speicherorts in der Microsoft-Cloud Ihrer Organisation und einem SAS-Schlüssel (Shared Access Signature). Mit diesem Schlüssel erhalten Sie die notwendigen Berechtigungen zum Hochladen von PST-Dateien an Ihren Azure Storage-Speicherort. Achten Sie darauf, dass Sie entsprechende Vorsichtsmaßnahmen ergreifen, um die SAS-URL zu schützen. Sie ist für Ihre Organisation eindeutig und wird in Schritt 2 verwendet.
+Im ersten Schritt laden Sie das AzCopy-Tool herunter (das Tool, das Sie in Schritt 2 ausführen, um PST-Dateien in Office 365 hochzuladen) und installieren es. Sie kopieren außerdem die SAS-URL für Ihre Organisation. Diese URL ist eine Kombination aus der Netzwerk-URL des Azure Storage-Speicherorts in der Microsoft-Cloud Ihrer Organisation und einem SAS-Schlüssel (Shared Access Signature). Mit diesem Schlüssel erhalten Sie die notwendigen Berechtigungen zum Hochladen von PST-Dateien an Ihren Azure Storage-Speicherort. Achten Sie darauf, dass Sie entsprechende Vorsichtsmaßnahmen ergreifen, um die SAS-URL zu schützen. Sie ist für Ihre Organisation eindeutig und wird in Schritt 2 verwendet.
 
 > [!IMPORTANT]
-> Wenn Sie PST-Dateien mit der Netzwerkuploadmethode importieren möchten, empfehlen wir, die Version von Azure AzCopy zu verwenden, die in Schritt 6b im folgenden Verfahren heruntergeladen werden kann.
+> Wenn Sie PST-Dateien mit der in diesem Artikel beschriebenen Netzwerkuploadmethode und Befehlssyntax importieren möchten, müssen Sie die Version von AzCopy verwenden, die in Schritt 6b im folgenden Verfahren heruntergeladen werden kann. Sie können die gleiche Version von AzCopy auch [hier](https://aka.ms/downloadazcopy) herunterladen. Die Verwendung einer anderen Version von AzCopy wird nicht unterstützt.
   
 1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365-Organisation an. 
     
@@ -110,11 +110,11 @@ Im ersten Schritt laden Sie das Azure AzCopy-Tool herunter (das Tool, das Sie in
   
 6. Führen Sie auf der Seite **Daten importieren** einen der folgenden Schritte aus: 
     
-    ![Kopieren der SAS-URL und Herunterladen des Azure AzCopy-Tools auf der Seite "Daten importieren"](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![Kopieren der SAS-URL und Herunterladen des AzCopy-Tools auf der Seite "Daten importieren"](media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
     a. Klicken Sie in Schritt 2 auf **SAS-URL für Netzwerkupload anzeigen**. Nachdem die SAS-URL angezeigt wird, klicken Sie auf **In die Zwischenablage kopieren**, fügen Sie die URL in eine Datei ein, und speichern Sie diese, damit Sie später darauf zugreifen können.
     
-    b. Klicken Sie in Schritt 3 auf ** herunterladen**, um das Azure AzCopy-Tool herunterzuladen und zu installieren. Klicken Sie im Popupfenster auf **Ausführen**, um AzCopy zu installieren. 
+    b. Klicken Sie in Schritt 3 auf **Azure AzCopy herunterladen**, um das AzCopy-Tool herunterzuladen. Klicken Sie im Popupfenster auf **Ausführen**, um AzCopy zu installieren. 
     
 > [!NOTE]
 > Sie können die Seite **Daten importieren** geöffnet lassen (für den Fall, dass Sie die SAS-URL erneut kopieren müssen), oder Sie können auf **Abbrechen** klicken, um sie zu schließen. 
@@ -267,7 +267,7 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Off
     
     ![Klicken Sie auf "Überprüfen", um die CSV-Datei auf Fehler zu überprüfen.](media/4680999d-5538-4059-b878-2736a5445037.png)
   
-    Die CSV-Datei muss erfolgreich überprüft werden, um einen PST-Importauftrag zu erstellen. Der Dateiname wird grün angezeigt, wenn die Überprüfung der Datei erfolgreich war. Wenn die Überprüfung fehlschlägt, klicken Sie auf den Link **Protokoll anzeigen**. Der Bericht mit den Überprüfungsfehlern wird geöffnet, in dem für jede Zeile in der Datei, in der ein Fehler aufgetreten ist, eine Fehlermeldung aufgeführt ist. 
+    Die CSV-Datei muss erfolgreich überprüft werden, um einen PST-Importauftrag zu erstellen. Der Dateiname wird grün angezeigt, wenn die Überprüfung der Datei erfolgreich war. Wenn die Überprüfung fehlschlägt, klicken Sie auf den Link **Protokoll anzeigen**. Der Bericht mit den Überprüfungsfehlern wird geöffnet, in dem für jede Zeile in der Datei, in der ein Fehler aufgetreten ist, eine Fehlermeldung aufgeführt ist.
     
 9. Nachdem die PST-Zuordnungsdatei erfolgreich überprüft wurde, lesen Sie das Dokument mit den allgemeinen Geschäftsbedingungen, und aktivieren Sie dann das Kontrollkästchen.
     
@@ -317,7 +317,7 @@ Es folgen eine Darstellung und eine Beschreibung des Netzwerkuploadprozesses, in
   
 ![Workflow des Netzwerkuploadprozesses zum Importieren von PST-Dateien in Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **PST-Importtool und Schlüssel für den privaten Azure Storage-Speicherort herunterladen**: Der erste Schritt besteht darin, das Befehlszeilentool Azure AzCopy und einen Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien in einen Azure Storage-Speicherort in der Microsoft Cloud hochzuladen. Sie erhalten das Tool und den Schlüssel über die Seite **Import** im Security & Compliance Center. Der Schlüssel, der als SAS-Schlüssel (Shared Access Signature) bezeichnet wird, stellt Ihnen die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure Storage-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien in Office 365 ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
+1. **PST-Importtool und Schlüssel für den privaten Azure Storage-Speicherort herunterladen**: Der erste Schritt besteht darin, das Befehlszeilentool AzCopy und einen Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien in einen Azure Storage-Speicherort in der Microsoft Cloud hochzuladen. Sie erhalten das Tool und den Schlüssel über die Seite **Import** im Security & Compliance Center. Der Schlüssel, der als SAS-Schlüssel (Shared Access Signature) bezeichnet wird, stellt Ihnen die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure Storage-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien in Office 365 ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
     
 2. **PST-Dateien in den Azure Storage-Speicherort hochladen**: Der nächste Schritt besteht darin, mit dem (in Schritt 1 heruntergeladenen) Tool "AzCopy.exe" Ihre PST-Dateien in einen Azure Storage-Speicherort hochzuladen, der sich im selben regionalen Microsoft-Datencenter befindet wie Ihre Office 365-Organisation. Damit Sie die PST-Dateien, die Sie in Office 365 importieren möchten, hochladen können, müssen sich diese in einer Dateifreigabe oder auf einem Dateiserver in Ihrer Organisation befinden.
     

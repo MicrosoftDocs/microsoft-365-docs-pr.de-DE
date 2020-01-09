@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die ereignisgesteuerte Aufbewahrung
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Aufbewahrungsbezeichnungen können Sie einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "39268506"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989571"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
@@ -61,7 +61,7 @@ Um die ereignisgesteuerte Aufbewahrung erfolgreich zu verwenden, müssen Sie die
     
   - Schlüsselwörter (für Exchange-Elemente). In diesem Beispiel verwendet das Unternehmen einen Produktcode in Nachrichten, die Produktdatensätze enthalten, sodass das Schlüsselwort für Exchange-Elemente der Objekt-ID für SharePoint- und OneDrive-Dokumente entspricht.
     
-  - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann nur das aktuelle Datum oder ein zukünftiges Datum sein, jedoch kein zurückliegendes Datum.
+  - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann das aktuelle, ein vergangenes oder ein zukünftiges Datum sein.
     
 4. Nach dem Erstellen eines Ereignisses wird das Ereignisdatum mit den gesamten Inhalten synchronisiert, die über eine Bezeichnung mit diesem Ereignistyp verfügen und die die angegebene Asset-ID oder das Stichwort enthalten. Wie bei jeder anderen Bezeichnung kann diese Synchronisierung bis zu sieben Tage dauern. Im oben aufgeführten Diagramm wird für alle Elemente, die rot eingekreist sind, der Aufbewahrungszeitraum durch dieses Ereignis ausgelöst. Anderes ausgedrückt: Wenn dieses Produkt das Ende seiner Lebensdauer erreicht hat, löst das Ereignis den Aufbewahrungszeitraum für die Datensätze dieses Produkts aus.
     
