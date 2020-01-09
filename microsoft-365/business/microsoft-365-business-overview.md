@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 Business.
-ms.openlocfilehash: 1d4eb62a31cc44ab8dc75964c038f0a3deef4005
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: eafd03be90c128051c8c91bc339af69a0a613136
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831431"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999552"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Übersicht über Microsoft 365 Business
 
@@ -42,7 +42,7 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 36
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an. 
 
 Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 
@@ -99,7 +99,7 @@ Ihre **Geräte sind gesichert** durch:
 
 - Verwenden vereinfachter Steuerelemente zum Verwalten von Richtlinien für alle Windows 10-PCs in Ihrem Unternehmen, erzwingen der BitLocker-Verschlüsselung und automatische Installation wichtiger Windows-Updates (Erzwingen von Windows Update-Richtlinien).
 
-Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 365 Business Security Features](security-features.md). Nach dem [Einrichten von Microsoft 365 Business](set-up.md)finden Sie unter [Set up Advanced Security Policies](set-up-advanced-security.md) to Get Started with the Security Features, die nicht als Bestandteil der geführten Einrichtung enthalten sind. Lesen Sie auch die [Top 10 Ways to Secure Office 365 und Microsoft 365 Business Plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) für einen guten Überblick über die Einrichtung von Schutzmaßnahmen gegen Cyber-Kriminelle und Hacker.
+Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 365 Business Security Features](security-features.md). Nachdem Sie [Microsoft 365 Business eingerichtet](set-up.md)haben, finden Sie weitere Informationen unter [Erweitern des Bedrohungsschutzes](increase-threat-protection.md) und [Einrichten von Kompatibilitätsfeatures](set-up-compliance.md) für die ersten Schritte mit den Sicherheitsfeatures, die nicht Bestandteil der geführten Einrichtung sind. Lesen Sie auch die [Top 10 Ways to Secure Office 365 und Microsoft 365 Business Plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) für einen guten Überblick über die Einrichtung von Schutzmaßnahmen gegen Cyber-Kriminelle und Hacker.
 
 ## <a name="get-microsoft-365-business"></a>Abrufen von Microsoft 365 Business
 
@@ -114,4 +114,4 @@ Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 3
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
