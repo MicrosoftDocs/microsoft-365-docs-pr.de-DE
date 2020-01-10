@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202346"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004818"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Abfragen der Daten in einem Prüfdateisatz
 
@@ -27,7 +27,7 @@ In den meisten Fällen ist es hilfreich, die Daten in einer Überprüfungsgruppe
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Erstellen und Durchführen einer Abfrage in einem Überprüfungs Satzes
 
-Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungs Satzes erstellen und ausführen möchten, klicken Sie in der Überprüfungsgruppe auf **neue Abfrage** . Nachdem Sie die Abfrage benannt und die Bedingungen definiert haben, klicken Sie auf **Speichern** , um die Abfrage zu speichern und auszuführen. Wenn Sie eine zuvor gespeicherte Abfrage ausführen möchten, klicken Sie auf eine gespeicherte Abfrage. 
+Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungs Satzes erstellen und ausführen möchten, klicken Sie in der Überprüfungsgruppe auf **neue Abfrage** . Nachdem Sie die Abfrage benannt und die Bedingungen definiert haben, klicken Sie auf **Speichern** , um die Abfrage zu speichern und auszuführen. Wenn Sie eine zuvor gespeicherte Abfrage ausführen möchten, klicken Sie auf eine gespeicherte Abfrage.
 
 ![Überprüfen von Mengen Abfragen](media/AeDReviewSetQueries.png)
 

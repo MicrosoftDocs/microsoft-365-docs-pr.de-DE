@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 'Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security #a0 Compliance Centers.'
-ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: 548af12811287dce3461e5ce7d5f1ffa905eef73
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854040"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004840"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center
 
@@ -128,7 +128,7 @@ Diese Rolle ermöglicht Benutzern den Zugriff auf Falldaten in [Office 365 Advan
 
 ### <a name="rms-decrypt"></a>RMS-Entschlüsselung
 
-Mit dieser Rolle können Benutzer RMS-verschlüsselte e-Mail-Nachrichten beim Exportieren von Suchergebnissen oder beim Vorbereiten von Suchergebnissen für die Analyse in Advanced eDiscovery entschlüsseln. Weitere Informationen zum Entschlüsseln von Suchergebnissen während des Exports finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).
+Mit dieser Rolle können Benutzer durch Rechte geschützte e-Mail-Nachrichten beim Exportieren von Suchergebnissen oder beim Vorbereiten von Suchergebnissen für die Analyse in Advanced eDiscovery entschlüsseln. Weitere Informationen zum Entschlüsseln von Suchergebnissen während des Exports finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).
 
 ### <a name="search-and-purge"></a>Suchen und löschen
 
