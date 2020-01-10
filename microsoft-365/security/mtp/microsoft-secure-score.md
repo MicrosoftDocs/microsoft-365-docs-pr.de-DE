@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970913"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012188"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -135,6 +135,21 @@ Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposi
 ## <a name="whats-coming"></a>Was kommt?
 
 Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen und die Benutzerfreundlichkeit zu verbessern, werden wir in naher Zukunft einige Änderungen vornehmen. Ihre Punktzahl und die maximal mögliche Punktzahl ändern sich. Dies impliziert jedoch keine Änderung ihrer Sicherheitsposition.
+
+### <a name="mfa-improvement-action-updates"></a>Aktualisierung der MFA-Verbesserungs Aktionen
+
+Um den Anforderungen an Unternehmen Rechnung zu tragen, beim Anwenden von Richtlinien, die mit Ihrem Unternehmen zusammenarbeiten, die höchste Sicherheit zu gewährleisten, entfernt Microsoft Secure Score drei Verbesserungs Aktionen, die sich auf die mehrstufige Authentifizierung konzentrieren, und fügt zwei hinzu.
+
+Die drei, die entfernt werden:
+- Registrieren aller Benutzer für mehrstufige Authentifizierung
+- MFA für alle Benutzer erforderlich
+- MFA für Azure AD privilegierten Rollen erforderlich
+
+Neue Verbesserungs Aktionen:
+- Sicherstellen, dass alle Benutzer mehrstufige Authentifizierung für sicheren Zugriff ausführen können
+- MFA für Administratorrollen erforderlich
+
+ Für diese neuen Verbesserungs Aktionen müssen Sie die Benutzer oder Administratoren für die mehrstufige Authentifizierung (MFA) in Ihrem Verzeichnis registrieren und die richtigen Richtlinien festlegen, die Ihren organisatorischen Anforderungen entsprechen. Das Hauptziel besteht in der Flexibilität bei gleichzeitiger Sicherstellung, dass alle Benutzer und Administratoren sich mit mehreren Faktoren oder mit risikobasierten Identitäts Überprüfungs Ansagen authentifizieren können. Dies kann in Form von Sicherheitsstandards festgelegt werden, mit denen Microsoft entscheiden kann, wann die Benutzer für MFA herausgefordert werden sollen, oder dass mehrere Richtlinien für bereichsbezogene Entscheidungen gelten.
 
 ### <a name="removing-not-scored-and-review-improvement-actions"></a>Entfernen von Verbesserungs Aktionen für "nicht bewertet" und "überprüfen"
 
