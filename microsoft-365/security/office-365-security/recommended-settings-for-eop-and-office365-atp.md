@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910116"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021831"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -59,33 +59,35 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 |Automatische Bereinigung ohne Stunde|Ein|Ein|Für Spam und Phishing zap|
 |MarkAsSpamBulkMail|Ein|Ein|Diese Einstellung ist nur in PowerShell verfügbar.|
 
-In der Antispampolitik "Advanced Spamfilter" gibt es verschiedene andere Parameter, die zum Zeitpunkt des Schreibens veraltet sind. Unsere empfohlenen Einstellungen für diese sind, Sie für Standard mäßige und strenge Stufen **zu deaktivieren:**
+In der Anti-Spam-Richtlinie "Advanced Spamfilter (ASF)" gibt es mehrere weitere Parameter, die derzeit veraltet sind. Weitere Informationen zu den Zeitrahmen für die Abschreibung dieser Features werden außerhalb dieses Themas mitgeteilt.
+ 
+ Es wird empfohlen, dass Sie diese **Einstellungen sowohl** für Standard mäßige als auch für Strict-Stufen deaktivieren:
 
-|Name des Sicherheitsfeatures| Kommentare |
+|Name des Sicherheitsfeatures|Kommentare|
 |---------|---------|
-|IncreaseScoreWithImageLinks| |
-|IncreaseScoreWithNumericIps| |
-|IncreaseScoreWithRedirectToOtherPort| |
-|IncreaseScoreWithBizOrInfoUrls| |
-|MarkAsSpamEmptyMessages| |
-|MarkAsSpamJavaScriptInHtml| |
-|MarkAsSpamFramesInHtml| |
-|MarkAsSpamObjectTagsInHtml| |
-|MarkAsSpamEmbedTagsInHtml| |
-|MarkAsSpamFormTagsInHtml| |
-|MarkAsSpamWebBugsInHtml| |
-|MarkAsSpamSensitiveWordList| |
-|MarkAsSpamFromAddressAuthFail| |
-|MarkAsSpamNdrBackscatter| |
-|MarkAsSpamSpfRecordHardFail| |
+|IncreaseScoreWithImageLinks||
+|IncreaseScoreWithNumericIps||
+|IncreaseScoreWithRedirectToOtherPort||
+|IncreaseScoreWithBizOrInfoUrls||
+|MarkAsSpamEmptyMessages||
+|MarkAsSpamJavaScriptInHtml||
+|MarkAsSpamFramesInHtml||
+|MarkAsSpamObjectTagsInHtml||
+|MarkAsSpamEmbedTagsInHtml||
+|MarkAsSpamFormTagsInHtml||
+|MarkAsSpamWebBugsInHtml||
+|MarkAsSpamSensitiveWordList||
+|MarkAsSpamFromAddressAuthFail||
+|MarkAsSpamNdrBackscatter||
+|MarkAsSpamSpfRecordHardFail||
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>EoP-Einstellungen für ausgehende Spamfilter Richtlinien
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---------|---------|---------|---------|
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|400|500||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|800|1000||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|800|1000||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|500|400||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|1000|800||
+|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|1000|800||
 |Aktion, wenn ein Benutzer die Grenzwerte überschreitet|Einschränken des Sendens von e-Mails durch den Benutzer|Einschränken des Sendens von e-Mails durch den Benutzer||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EoP-Anti-Malware-Richtlinieneinstellungen

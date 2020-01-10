@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Als Administrator können Sie in Office 365 falsch positive unter Quarantäne gestellte Nachrichten anzeigen, freigeben und melden. Sie können Richtlinien so einrichten, dass Nachrichten von Office 365 gefiltert und aus verschiedenen Gründen an die Quarantäne gesendet werden: weil Sie als Spam, Massen, Phishing, Schadsoftware oder als Übereinstimmung mit einer Nachrichtenfluss Regel identifiziert wurden. '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970933"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021861"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 
@@ -31,26 +31,15 @@ Standardmäßig sendet Office 365 Phishingnachrichten und Nachrichten mit Schads
 
 Sie müssen über globale Administratorberechtigungen (GA) in Office 365 verfügen oder Mitglied einer oder mehrerer Rollengruppen für Sicherheits #a0 Compliance Center sein, um mit isolierten Nachrichten oder isolierten Dateien zu arbeiten. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) .
 
-> [!IMPORTANT]
-> Standardmäßig werden Spam, Massen-und Phishing-Nachrichten 30 Tage lang in Quarantäne aufbewahrt. Nachrichten, die unter Quarantäne gestellt werden, weil Sie einer Nachrichtenfluss Regel entsprechen, werden für 7 Tage in Quarantäne aufbewahrt. Schadsoftware-Nachrichten werden 15 Tage lang in Quarantäne aufbewahrt. Sie können die Spamquarantäne Zeit in den Antispam-Einstellungen im Security #a0 Compliance Center anpassen. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, kann die Nachricht nicht wiederhergestellt werden. Wenn Sie möchten, können Sie den Aufbewahrungszeitraum für isolierte Nachrichten in ihren Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen des Aufbewahrungszeitraums für die Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime).
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>Welche Berechtigungen sind für den Zugriff auf die Administrator Quarantäne erforderlich?
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
+Die Berechtigungen zum Verwalten der Quarantäne werden durch die Mitgliedschaft in den Rollengruppen **Security #a0 Compliance Center* gesteuert. Weitere Informationen zu Rollengruppen im Security #a0 Compliance Center finden Sie unter [Permissions in the Office 365 Security #a1 Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Obwohl sich die Quarantäne im Security #a0 Compliance Center befindet, werden die Berechtigungen zum Verwalten von Nachrichten in der Quarantäne durch die Mitgliedschaft in **Exchange Online** Rollengruppen gesteuert. Weitere Informationen zu Rollengruppen in Exchange Online finden Sie unter [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+Die Sicherheits #a0-Compliance-Rollengruppen, die Berechtigungen zum Verwalten der Quarantäne erteilen, sind:
 
-Die Exchange Online Rollengruppen, die Berechtigungen zum Verwalten von Quarantänedateien erteilen, sind:
-
-- **Organisationsverwaltung**: globale Administratoren sind automatisch Mitglieder dieser Gruppe.
+- **Quarantäne Administrator**
 
 - **Sicherheits Administrator**
-
-- **Verwaltung von Nachrichtenschutz**
-
-Die Exchange Online Rollengruppen, die Berechtigungen zum Anzeigen von Quarantänedateien gewähren, sind:
-
-- **View-Only Organization Management**
-
-- **Sicherheitsleseberechtigter**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>Anzeigen der isolierten Nachrichten Ihrer Organisation
 
