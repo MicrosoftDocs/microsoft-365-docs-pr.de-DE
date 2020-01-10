@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823837"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004920"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
 
@@ -25,7 +25,7 @@ Es gibt mehrere Möglichkeiten, wie Microsoft Managed Desktop Service mit Kunden
 Microsoft Managed Desktop Admin Portal erfordert, dass Personen, die auf das Portal zugreifen, über eine dieser Azure Active Directory (AD)-Rollen verfügen:
 - Globaler Administrator
 - InTune-Dienst Administrator
-- Abrechnungs Administrator
+- Globaler Leser
 - Dienst Support Administrator
 
 Der globale Administrator muss der einzige sein, der Ihre Organisation in Microsoft Managed Desktop registriert. Alle fünf Rollen haben im Administratorportal denselben Zugriff, um Aufgaben zu initiieren und anzuzeigen. Weitere Informationen zum Zuweisen dieser Rollen in Azure AD finden Sie unter [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
