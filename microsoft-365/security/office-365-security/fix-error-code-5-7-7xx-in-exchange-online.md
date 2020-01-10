@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Probleme für den Fehlercode 5.7.7 XX in Exchange Online beheben (vom Senden von e-Mails blockierte Mandanten).
-ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
+ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995228"
+ms.locfileid: "41002975"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
 
@@ -49,11 +49,11 @@ Nachdem die Mandanten kompromittiert wurden, wird verhindert, dass ausgehende e-
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Gewusst wie Aufheben der Blockierung von Mandanten, um erneut zu senden
+## <a name="unblocking-tenant-in-order-to-send-again"></a>Aufheben der Blockierung von Mandanten, um erneut zu senden
 
 Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für das Senden von e-Mails gesperrt ist:
 
-1. Stellen Sie sicher, dass alle Ihre e-Mail-Domänen registriert sind. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) und [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Ändern Sie das Kennwort für Ihre Administratorkonten. Wenn ein Mandant vom senden blockiert wird, ist es wahrscheinlich, dass ein Administratorkonto kompromittiert wurde. Das Ändern von Kennwörtern ist der erste Schritt, um zu verhindern, dass der Angreifer mehr Schaden anrichtet.
 
 2. [Aktivieren Sie MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) für alle Administratoren in Ihrer Office 365 Organisation.
 
@@ -66,7 +66,7 @@ Es gibt verschiedene Dinge, die Sie ausführen müssen, wenn Ihr Mandant für da
 6. Sperren Sie Ihre lokalen e-Mail-Server, und stellen Sie sicher, dass Sie nicht beeinträchtigt werden.
 
    > [!TIP]
-   > Es gibt viele Faktoren, vor allem, wenn Sie Drittanbieterserver verwenden. Unabhängig davon müssen Sie sicherstellen, dass alle ausgehenden e-Mails jetzt legitim sind.
+   > Es gibt viele Faktoren, vor allem, wenn Sie Drittanbieterserver verwenden. Unabhängig davon müssen Sie sicherstellen, dass Ihre ausgehende e-Mail keinen Spam enthält.
 
 7. Rufen Sie den Microsoft-Support an, und bitten Sie den Mandanten, die Blockierung aufzuheben, um e-Mails erneut zu senden. Der Fehlercode ist hilfreich, aber Sie müssen nachweisen, dass Ihre Umgebung gesichert wurde und keine Spamnachrichten senden kann. Informationen zum Öffnen eines Support Falls finden Sie unter [kontaktieren des Supports für Geschäftsprodukte-Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
