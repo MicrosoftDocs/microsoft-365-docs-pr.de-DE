@@ -1,9 +1,9 @@
 ---
-title: Anzeigen von Berichten für Office 365 Advanced Threat Protection
+title: Anzeigen von Berichten für Office 365 Advanced Threat Protection, Schadsoftware-Berichte, Phishing-Berichte, kompromittierte Konten, URL-Schutzstatus, Threat Reporting, melden von Bedrohungen
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 01/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Hier erfahren Sie, wie Sie Berichte für Office 365 Advanced Threat Protection im Security &amp; Compliance Center finden und verwenden können.
-ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
+ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866407"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022385"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -41,7 +41,27 @@ Lesen Sie diesen Artikel, um eine Übersicht über ATP-Berichte und deren Verwen
 
 Der **Status Bericht "Threat Protection** " ist eine einzelne Ansicht, in der Informationen zu böswilligen Inhalten und böswilligen e-Mails zusammengefasst werden, die durch [Exchange Online Schutz](exchange-online-protection-overview.md) (EoP) und [Office 365 ATP](office-365-atp.md)erkannt und blockiert wurden. Dieser Bericht eignet sich zum Anzeigen von Erkennungen im Laufe der Zeit (bis zu 90 Tage) und ermöglicht es Sicherheitsadministratoren, Trends zu identifizieren oder zu bestimmen, ob Richtlinien angepasst werden müssen. 
 
-Der Status Bericht zum Bedrohungsschutz enthält eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die durch das Anti-Malware-Modul, die [Zero-Hour-automatische Bereinigung (AUTOPURGE)](zero-hour-auto-purge.md)und ATP-Features wie [ATP-sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [ATP-Antiphishingfunktionen](atp-anti-phishing.md)blockiert wurden. 
+Der Bericht enthält eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die durch das Anti-Malware-Modul, die [Zero-Hour-automatische Bereinigung (AUTOPURGE)](zero-hour-auto-purge.md)und ATP-Features wie [ATP-sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [ATP-Anti-Phishing-Funktionen](atp-anti-phishing.md)blockiert wurden. 
+
+Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kategorisierung der Informationen in diesem Bericht. Insbesondere gibt es ein Menü "Aufteilen von" für *e-Mails #a0 Phishing* -und *e-Mail-#a1 Malware-Ansichten*. Die Daten werden in folgendem aufgeschlüsselt:
+
+| |  |
+|---------|---------|
+|Nach Erkennungstyp    | Welche Richtlinien haben dazu beigetragen, diese Bedrohungen zu erfassen?         |
+|Nach Erkennungstechnologie     | Welche zugrunde liegende Microsoft-Technologie hat die Bedrohung erfasst?        |
+|Nach Zustellungsstatus     | Was geschah mit den e-Mail-Nachrichten, die als Bedrohungen erkannt wurden?         |
+| | |
+
+> [!TIP]
+> Sowohl die e-Mail-#a0 Phishing | Schadsoftware-Ansichten weisen eine granulare Aufschlüsselung der angezeigten Erkennungstechnologien auf, wobei Kategorien wie *ATP-generierte dateireputation*, *Datei Detonation*, *URL-Detonation*, *Antispoofing: DMARC-Fehler*hilfreich ist, um genau zu ermitteln, welche Funktion Ihre Organisation veranlasst hat, Bedrohungen einzufangen.
+
+![Dropdown mit dem Status Bericht zum Bedrohungsschutz mit "aufschlüsseln nach".](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+
+Diese Ansichten bieten Ihnen die Möglichkeit, über eine Schaltfläche per Mausklick (in e-Mail #a0 Phishing, e-Mail-#a1 Schadsoftware und Inhalte #a2 Malware Ansichten) zu exportieren. Die aggregierten Daten, die auf Ihren Computer exportiert werden, können in Excel geöffnet werden.
+
+![Diese Grafik zeigt den Export als Option im Menü für die Malware-Ansicht, rechts zwischen Create Schedule und Request Report.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+In den Ansichten Übersicht und e-Mails werden Informationen innerhalb von Stunden nach der Verarbeitung und nicht in 24 Stunden angezeigt (Demand Re. erhöhte Geschwindigkeiten hier war ein deutliches Signal)!
 
 > [!NOTE]
 > Ein Status Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Threat Protection-Status Bericht für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten, als EoP-Kunden möglicherweise sehen. Der Threat Protection-Status Bericht für ATP-Kunden enthält beispielsweise Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden. Solche Informationen gelten nur für ATP, sodass Kunden, die über EoP, aber nicht ATP verfügen, diese Details nicht in Ihrem Threat Protection-Status Bericht sehen.
@@ -61,7 +81,28 @@ Standardmäßig zeigt der Status Bericht zum Bedrohungsschutz Daten für die let
 Sie können auch das Menü " **Daten anzeigen nach** " verwenden, um zu ändern, welche Informationen im Bericht angezeigt werden. 
   
 ![Anzeigen von Optionen für den Status Bericht für den ATP-Bedrohungsschutz](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## <a name="url-protection-status-report"></a>Status Bericht über den URL-Schutz
+
+In diesem Bericht werden gesammelte Daten und erkannte Bedrohungen pro Klick erstellt (während die meisten anderen e-Mail-Bedrohungs bezogenen Berichte pro Nachrichtendaten sind). Dieser Bericht dient zum Anzeigen von Bedrohungen, die durch Hyperlinks in e-Mail-Nachrichten und Dokumenten pro Klick entstehen. Es gibt zwei Ansichten:
+
+|  |  |
+|---------|---------|
+|Aktion "URL-Klick Schutz"   | Sehen Sie sich die Anzahl der blockierten URLs an, die mit einem Mausklick durch einen Benutzer außer Kraft gesetzt, aber mit einem Mausklick durch einen Benutzer überschrieben und zulässig sind.        |
+|URL-Klick nach Anwendung     | Sehen Sie sich die Anwendung an, auf die die URL geklickt hat.        |
+|  |  |
+
+In der Detailtabelle können Sie weitere Informationen zu Klick Zeiten und Benutzerinformationen anzeigen. Denken Sie daran, dass der Status Bericht über den URL-Schutz den Schutz vor dem Feature für ATP-sichere Links anzeigt, sodass nur Kunden, die ATP-sichere Links aktiviert haben, Daten in diesem Bericht anzeigen können.
+
+> [!NOTE]
+> Hierbei handelt es sich um einen *Schutz Trendbericht*, was bedeutet, dass Datentrends in einem größeren DataSet darstellen. Die Berichterstellung steht hier in Echtzeit nicht zur Verfügung. Für die Echt Zeit URL klicken Sie auf Daten, und verwenden Sie weiterhin die URL-Ablaufverfolgung.
+
+## <a name="compromised-users-report"></a>Bericht über kompromittierte Benutzer
+
+Dieser Bericht, der für alle Personen mit Exchange Online Schutz verfügbar ist, zeigt die Anzahl der Benutzerkonten, die als verdächtige oder eingeschränkte Benutzer gekennzeichnet sind, Daten, die besonders nützlich sind, wenn Konten in einen der Zustände eingeben, die darauf hindeuten, dass das Benutzerkonto problematisch sein kann, oder sogar gefährdet. Bei häufiger Verwendung kann der kompromittierte Benutzerbericht Spitzen und sogar Trends in Konten erkennen, die in verdächtigen oder eingeschränkten Zuständen markiert sind, was Hinweise gibt, dass ein Problem mit Sicherheit und dem Wohlbefinden Ihres Mandanten auftreten kann.
+
+![Der Bericht "kompromittierte Benutzer" wird in Office 365 angezeigt.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="atp-file-types-report"></a>ATP-Dateitypenbericht
 
 Der Bericht " **ATP-Dateitypen** " zeigt Ihnen den Typ der Dateien, die von [ATP-Safe-Anlagen](atp-safe-attachments.md)als bösartig erkannt wurden.
@@ -106,7 +147,7 @@ Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden k�
 - Für das Security &amp; Compliance Center müssen Sie eine der folgenden Rollen zugewiesen haben:
     - Organisationsverwaltung
     - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-    - Sicherheits Leser
+    - Sicherheitsleseberechtigter
 
 - Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
     - Organisationsverwaltung
