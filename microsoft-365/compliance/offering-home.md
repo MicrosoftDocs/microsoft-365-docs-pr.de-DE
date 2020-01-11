@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7aabeb51ef2a72452320b059ab51f72ca0d9f49f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 93018d855565a441543e2f2d65109bf85526bc4f
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804058"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022410"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft Compliance-Angebote
 
@@ -168,8 +168,9 @@ Microsoft bietet eine umfassende Reihe von Compliance-angeboten, mit denen Ihre 
                         <p><a href="offering-eu-model-clauses.md">EU Musterklauseln</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
-                        <p><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
+                        <p><a href="gdpr.md">GDPR (EU)</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud (Vereinigtes Königreich)</a></p>
+                        <p><a href="https://www.idw.de/the-idw/about-the-idw">IDW PS 951 (Deutschland)</a></p>
                         <p><a href="offering-ISMS-korea.md">ISMS (Korea)</a></p>
                         <p><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Arbeitshandbuch (Deutschland)</a></p>
                         <p><a href="offering-lopd-spain.md">LOPD (Spanien)</a></p>
