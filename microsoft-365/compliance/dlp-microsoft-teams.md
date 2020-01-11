@@ -13,19 +13,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt DLP-Richtlinien auf Chats und Kanäle von Microsoft Teams anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 9c8c122a84a739a0cc2942f63ff319121510415b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080733"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022360"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
 
 > [!NOTE]
-> Funktionen zur Verhinderung von Datenverlust wurden vor kurzem Microsoft Teams Chat-und Kanal Nachrichten für Benutzer mit Lizenz für Office 365 Advanced Compliance hinzugefügt, die als eigenständige Option zur Verfügung stehen und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten sind. Office 365 und Microsoft 365 E3 umfassen DLP-Schutz für SharePoint Online, OneDrive und Exchange Online. Dies umfasst auch Dateien, die über Teams freigegeben werden, da Microsoft Teams SharePoint Online und OneDrive zum Freigeben von Dateien verwendet.
+> Kürzlich wurden Funktionen zur Verhinderung von Datenverlust zu den Microsoft Teams-Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 Advanced Compliance lizensiert sind. Sie sind als eigenständige Option verfügbar und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten. Office 365 und Microsoft 365 E3 umfassen DLP-Schutz für SharePoint Online, OneDrive und Exchange Online. Dies umfasst auch Dateien, die über Teams freigegeben werden, da Microsoft Teams SharePoint Online und OneDrive zum Freigeben von Dateien verwendet.
 Für die Unterstützung des DLP-Schutzes im Teamchat ist E5 erforderlich.
-Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste für die Lizenzierung auf Mandantenebene](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Übersicht über DLP für Microsoft Teams
 
@@ -109,6 +109,7 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, d
 5. Behalten Sie auf der Registerkarte **Speicherorte** die Standardeinstellung alle Speicherorte bei, oder wählen Sie die Option **bestimmte Speicherorte**auswählen aus, und klicken Sie dann auf **weiter**.<br/>Wenn Sie bestimmte Standorte ausgewählt haben, wählen Sie diese für ihre DLP-Richtlinie aus, und klicken Sie dann auf **weiter**.<br/>![DLP-Richtlinienspeicher Orte](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Wenn Sie sicherstellen möchten, dass Dokumente, die vertrauliche Informationen enthalten, nicht ungeeignet freigegeben werden, stellen Sie sicher, dass **SharePoint-Websites** und **OneDrive-Konten** zusammen mit Microsoft **Teams-Chat und Kanal Nachrichten**aktiviert sind.
+    > Kanäle in Microsoft Teams hängen stark von Exchange Online Funktionalität ab. Stellen Sie sicher, dass der **Exchange-e-Mail-** Speicherort auch für die Richtlinien aktiviert ist, die auf den Inhalt der Kanäle angewendet werden sollen.  
 <br/>
 
 6. Behalten Sie auf der Registerkarte **Richtlinieneinstellungen** unter **Anpassen des Inhaltstyps, den Sie schützen möchten**, die standardmäßigen einfachen Einstellungen bei, oder wählen Sie **Erweiterte Einstellungen verwenden**aus, und klicken Sie dann auf **weiter**. Wenn Sie erweiterte Einstellungen auswählen, können Sie Regeln für Ihre Richtlinie erstellen oder bearbeiten. (Informationen dazu finden Sie unter [einfache Einstellungen im Vergleich zu erweiterten Einstellungen](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)

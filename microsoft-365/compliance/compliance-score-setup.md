@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und das Dashboard für Microsoft Compliance Score verstehen, das die Vereinfachung und Automatisierung von Risikobewertungen erleichtert.
-ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831178"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021911"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
@@ -48,10 +48,10 @@ In der folgenden Tabelle wird gezeigt, wie die einzelnen Rollen des Compliance-C
 | Benutzer kann Folgendes: | Microsoft 365 Compliance Center-Rolle | Compliance-Manager-Rolle | 
 | :------------- | :-------------: | :------------: |
 | **Lesen, aber nicht bearbeiten von Daten**| Azure AD globaler Leser  | Azure AD globaler Leser | 
-| **Lesen, aber nicht bearbeiten von Daten**| Benutzer mit Leseberechtigung für Sicherheitsfunktionen | Compliance-Manager-Leser  | 
-| **Bearbeiten von Daten**| Compliance-Administrator | Compliance-Manager-Mitwirkender | 
-| **Bearbeiten von Testergebnissen**| Compliance-Administrator | Auditor für Compliance-Manager | 
-| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Compliance-Administrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
+| **Lesen, aber nicht bearbeiten von Daten**| Sicherheitsleseberechtigter | Compliance-Manager-Leser  | 
+| **Bearbeiten von Daten**| Complianceadministrator | Compliance-Manager-Mitwirkender | 
+| **Bearbeiten von Testergebnissen**| Complianceadministrator | Auditor für Compliance-Manager | 
+| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Complianceadministrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
 | **Zuweisen von Benutzern**| Globaler Administrator | Portal Administrator | 
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Das Compliance Score-Dashboard bietet Ihnen einen Überblick über Ihre aktuelle
 
 ### <a name="overall-compliance-score"></a>Gesamtergebnis der Konformität
 
-Ihr Konformitäts Bewertungspunkt, der oben im Vordergrund steht, zeigt einen Prozentsatz basierend auf Punkten, die für die Durchführung von Verbesserungs Aktionen zur Behandlung wichtiger Datenschutzstandards und-Vorschriften erreichbar sind. 
+Ihr Konformitäts Bewertungspunkt, der oben im Vordergrund steht, zeigt einen Prozentsatz basierend auf Punkten, die für die Durchführung von Verbesserungs Aktionen zur Behandlung wichtiger Datenschutzstandards und-Vorschriften erreichbar sind.
 
 Wenn Sie zum ersten Mal auf die Konformitätsbewertung stoßen, basiert Ihr anfängliches Ergebnis auf der integrierten Microsoft 365-Datenschutz Basislinie – einer Reihe von Steuerelementen, die allgemeine Branchenvorschriften und-Standards umfassen. Da durch das Kompatibilitäts Ergebnis Ihr System vorhandener Microsoft 365-Lösungen überprüft wird, erhalten Sie eine erste Bewertung Ihrer Compliance-Haltung basierend auf den derzeit von Ihrer Organisation aktivierten Datenschutz-und Sicherheitseinstellungen.
 
@@ -95,14 +95,14 @@ In diesem Abschnitt erhalten Sie zwei verschiedene Möglichkeiten, um eine detai
 
 ### <a name="filtering-your-dashboard-view"></a>Filtern der Dashboardansicht
 
-Sie können die Dashboardansicht filtern, um nur die Elemente anzuzeigen, die sich auf bestimmte Vorschriften und Standards, Lösungen, Aktionstypen, Gruppen oder Datenschutzkategorien beziehen. Durch das Filtern der Ansicht auf diese Weise wird auch die Bewertung in Ihrem Dashboard gefiltert, und es wird angezeigt, wie viele Punkte Sie je nach den Filterkriterien aus insgesamt möglichen Punkten erzielt haben.
+Sie können die Dashboardansicht filtern, um nur die Elemente anzuzeigen, die sich auf bestimmte Vorschriften und Standards, Lösungen, Aktionstypen, [von Ihnen eingestellte Bewertungsgruppen](working-with-compliance-manager.md#groups)oder Datenschutzkategorien beziehen. Durch das Filtern der Ansicht auf diese Weise wird auch die Bewertung in Ihrem Dashboard gefiltert, und es wird angezeigt, wie viele Punkte Sie je nach den Filterkriterien aus insgesamt möglichen Punkten erzielt haben.
 
 So wenden Sie Filter an:
 
 1. Wählen Sie in der oberen rechten Ecke des Dashboards den **Filter** aus.
 2. Wählen Sie **im Bereich flyoutfilter die Filterkriterien** aus, und klicken Sie dann auf über **nehmen**.
 
-Ihre Punktzahl wird in Echtzeit angepasst, und es werden nur Verbesserungs Aktionen, Lösungen und Bewertungs Aufgliederungs Informationen angezeigt, die Ihren Filterkriterien entsprechen. Wenn Sie sich bei der Konformitätsbewertung abmelden, bleibt die gefilterte Ansicht erhalten, wenn Sie sich wieder anmelden.
+Nachdem ein Filter angewendet wurde, wird das Ergebnis in Echtzeit angepasst. Der Prozentsatz der Konformitätsbewertung und die Aufschlüsselung sowie die Verbesserungs Aktionen und-Lösungen beziehen sich jetzt nur auf Daten, die von Ihren Filterkriterien abgedeckt werden. Wenn Sie sich bei der Konformitätsbewertung abmelden, bleibt die gefilterte Ansicht erhalten, wenn Sie sich wieder anmelden.
 
 So entfernen Sie Filter:
 

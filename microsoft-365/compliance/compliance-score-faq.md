@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Microsoft-Konformitäts Bewertungspunkten, die Organisationen dabei helfen, Risikobewertungen zu vereinfachen und zu automatisieren.
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625397"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021981"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft Compliance Score (Preview): häufig gestellte Fragen
 
@@ -41,7 +41,7 @@ Compliance-Score und Compliance-Manager verwenden dasselbe Back-End, aber Sie be
 
 Das Kompatibilitäts Ergebnis ist für alle Benutzer in Ihrer Organisation hilfreich, die bei der Überwachung der Compliance und der Durchführung von Aktivitäten zur Unterstützung der Einhaltung behördlicher Standards eine Rolle spielen. Mit dem Kompatibilitäts Faktor müssen Sie sich nicht mit Vorschriften und Standards vertraut machen, um den Datenschutz in Ihrer Organisation zu verbessern. Compliance Score ist der optimale Ausgangspunkt für alle Benutzer. Von hier aus können Sie das Kompatibilitäts Ergebnis sehen, erfahren, welche empfohlenen Aktionen zur Minimierung von Risiken beitragen können, und in vielen Fällen direkt in die Lösungen einführen, um diese Aktionen auszuführen.
 
-Vorerst ist Compliance-Manager der Ort, an dem Benutzerbewertungen verwalten und benutzerdefinierte Vorlagen erstellen können, um Bewertungen zu erstellen. Erfahren Sie mehr darüber [, welche Aktionen nur von Compliance-Manager während der öffentlichen Vorschau unterstützt werden](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) .
+Vorerst ist Compliance-Manager der Ort, an dem Benutzerbewertungen verwalten und benutzerdefinierte Vorlagen erstellen können, um Bewertungen zu erstellen. Erfahren Sie mehr darüber [, welche Aktionen nur von Compliance-Manager während der öffentlichen Vorschau unterstützt werden](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) .
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Wenn ich über eine hohe Punktzahl verfüge, bedeutet dies, dass ich vollständig konform bin?
 

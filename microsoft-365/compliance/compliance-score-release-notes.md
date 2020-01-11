@@ -12,26 +12,36 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise und bekannte Probleme für Microsoft Compliance Score (Preview), ein Feature im M365 Compliance Center, das das vereinfachen und Automatisieren von Risikobewertungen erleichtert.
-ms.openlocfilehash: d46e8a621b6f4daa1275a78b5cc1e6917e0a997c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793639"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021931"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Versionshinweise zu Microsoft Compliance Score (Preview)
 
-Die Public Preview of Microsoft Compliance Score bietet Ihnen frühzeitigen Zugriff auf bevorstehende Funktionen und Updates.
+Die Public Preview of Microsoft Compliance Score bietet Ihnen frühzeitigen Zugriff auf bevorstehende Funktionen und Updates. Überprüfen Sie diese Seite häufig, um Neuigkeiten zu erfahren.
 
 Compliance Score ist ein neues Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , das eine risikobasierte Bewertung berechnet und den Fortschritt bei der Durchführung von empfohlenen Aktionen misst, die zur Verringerung der Compliance-Risiken beitragen.
 
-## <a name="compliance-score-and-compliance-manager-relationship"></a>Compliance-Score und Compliance-Manager-Beziehung
+## <a name="whats-new"></a>Neuerungen
+
+### <a name="new-templates-for-assessments"></a>Neue Vorlagen für Bewertungen
+
+Neue vorkonfigurierte Vorlagen für Bewertungen werden in Produktion für das Kompatibilitäts Ergebnis (Preview) veröffentlicht, sobald diese verfügbar werden. Überprüfen Sie die [vollständige Liste der Vorlagen hier](compliance-score.md#templates). Zu den zuletzt hinzugefügten Vorlagen gehören:
+
+- ISO 27701:2019
+- IRAP/australische Regierung ISM (Vorschau)
+
+
+### <a name="compliance-score-relationship-to-compliance-manager"></a>Kompatibilitäts Bewertungspunkt-Beziehung zum Compliance-Manager
 
 Viele der Compliance-Funktionen, die im Compliance-Manager behandelt werden, können jetzt in der Kompatibilitätsbewertung ausgeführt werden. Einige Funktionen befinden sich jedoch weiterhin nur im Compliance-Manager, und einige frühere Funktionen im Compliance-Manager werden während des öffentlichen Vorschauzeitraums geändert. 
 
 Beachten Sie beim Arbeiten mit dem Kompatibilitäts Bewertungs-und Compliance-Manager während der öffentlichen Vorschau die folgenden Punkte:
 
-- **Verwalten von Bewertungen**: Benutzer können Bewertungen und deren Statusdetails in der Kompatibilitätsbewertung anzeigen. Benutzer können jedoch nur Assessment-Verwaltungsaufgaben im Compliance-Manager ([Anweisungen anzeigen](working-with-compliance-manager.md#assessments)) und Aufgaben ausführen und sind auf Folgendes beschränkt:
+- **Verwalten von Bewertungen**: Benutzer können Bewertungen und deren Statusdetails in der Kompatibilitätsbewertung anzeigen. Benutzer können jedoch nur Assessment-Verwaltungsaufgaben im Compliance-Manager ausführen ([Anweisungen anzeigen](working-with-compliance-manager.md#assessments)), und die Aufgaben sind auf Folgendes beschränkt:
     - Neue Bewertungen hochladen, jedoch vorhandene Bewertungen nicht ändern. Wenn Sie eine vorhandene Bewertung ändern müssen, müssen Sie eine neue Vorlage hochladen.
     - Export Bewertungen
     - Archiv Bewertungen
@@ -40,7 +50,7 @@ Beachten Sie beim Arbeiten mit dem Kompatibilitäts Bewertungs-und Compliance-Ma
    - Benutzer müssen zum Compliance-Manager wechseln, um neue Vorlagen zu erstellen und vorhandene Vorlagen zu exportieren. 
    - Vorhandene Vorlagen können nicht angepasst werden. Lesen Sie Anweisungen zum [Verwalten von Vorlagen im Compliance-Manager](working-with-compliance-manager.md#templates).
    - Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
- - **Festlegen von Berechtigungen**: Konformitäts Bewertungs Benutzer, denen zuvor keine Berechtigungen im Compliance-Manager erteilt wurden, müssen Ihre Berechtigungen im Microsoft 365 Compliance Center festgelegt haben. Benutzer, deren Rollen zuvor im Compliance-Manager festgelegt wurden, können dieselbe Zugriffsebene verwenden, wenn Sie in der Kompatibilitätsbewertung arbeiten.
+ - **Festlegen von Berechtigungen**: Konformitäts Bewertungs Benutzer, denen zuvor keine Berechtigungen im Compliance-Manager erteilt wurden, müssen Ihre Berechtigungen im Microsoft 365 Compliance Center festgelegt haben ([Weitere Informationen](compliance-score-setup.md#set-user-permissions-and-assign-roles)). Benutzer, deren Rollen zuvor im Compliance-Manager festgelegt wurden, können dieselbe Zugriffsebene verwenden, wenn Sie in der Kompatibilitätsbewertung arbeiten.
 - **Übertragung von Daten**: Organisationen mit Daten, die sich im Compliance-Manager befinden, sehen diese Daten in der Kompatibilitätsbewertung und umgekehrt.
 - **Anmelden beim Compliance-Manager aus Kompatibilitätsbewertung**: Wenn ein Benutzer bei der Kompatibilitätsbewertung angemeldet ist und einen Link auswählt, um zum Compliance-Manager zu wechseln, muss sich der Benutzer nicht erneut anmelden. Nachdem Sie auf den Link geklickt haben, wird in Ihrem Browser eine neue Registerkarte mit einem Dialogfeld geöffnet. Im oberen Abschnitt mit dem Header "bereits Microsoft Cloud Services-Kunde? Melden Sie sich bei Ihrem Konto an, "wählen Sie die Schaltfläche **Anmelden** aus, um sich automatisch beim Compliance-Manager anzumelden.
 
@@ -50,7 +60,7 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 
 ### <a name="launch-now-links-in-certain-improvement-actions"></a>Jetzt starten Links in bestimmten Verbesserungs Aktionen
 
-Bei bestimmten Verbesserungs Aktionen wird beim Auswählen des Hyperlinks **jetzt starten** , der unterhalb der Implementierungsanweisungen angezeigt wird, ein Fehler ausgegeben. Führen Sie die folgenden Schritte aus, um auf das richtige Ziel, das SharePoint Admin Center, zuzugreifen:
+Bei bestimmten Verbesserungs Aktionen wird beim Auswählen des Hyperlinks **jetzt starten** , der unterhalb der Implementierungsanweisungen angezeigt wird, ein Fehler ausgegeben. Führen Sie die folgenden Schritte aus, um auf das richtige Ziel (SharePoint Admin Center) zuzugreifen:
 
 1. Wechseln Sie zum [Microsoft 365 Admin Center](https://admin.microsoft.com).
 2. Wählen Sie im linken Navigationsmenü die Option **Alle anzeigen**aus.

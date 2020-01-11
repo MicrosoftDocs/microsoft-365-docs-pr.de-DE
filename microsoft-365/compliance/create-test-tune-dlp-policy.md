@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
-ms.translationtype: HT
+ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866357"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021971"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -101,7 +101,7 @@ Als eher einfaches Beispiel für die TFN-Erkennung: Eine E-Mail-Nachricht mit de
 
 ![Australische Steuernummer, die die Prüfsumme nicht zurückgibt](media/DLP-create-test-tune-email-test1.png)
 
-Dagegen wird eine E-Mail mit dem Wort "Steuernummer" und einer gültigen TFN, welche die Prüfsumme zurückgibt, die Richtlinie auslösen. Die TFN, die ich hier verwende, wurde übrigens über eine Website erstellt, die gültige, aber nicht echte TFNs generiert. Es gibt ähnliche Websites, die [gültige, aber unechte Kreditkartennummern](https://www.fakecreditcardgenerator.net/)generieren. Solche Websites sind sehr hilfreich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie darin besteht, eine gefälschte Zahl zu verwenden, die ungültig ist und deshalb die Prüfsumme nicht zurückgibt (weshalb die Richtlinie auch nicht ausgelöst wird).
+Dagegen wird eine E-Mail mit dem Wort "Steuernummer" und einer gültigen TFN, welche die Prüfsumme zurückgibt, die Richtlinie auslösen. Die TFN, die ich hier verwende, wurde übrigens über eine Website erstellt, die gültige, aber nicht echte TFNs generiert. Solche Websites sind sehr hilfreich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie darin besteht, eine gefälschte Zahl zu verwenden, die ungültig ist und deshalb die Prüfsumme nicht zurückgibt (weshalb die Richtlinie auch nicht ausgelöst wird).
 
 ![Australische Steuernummer, die die Prüfsumme zurückgibt](media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,6 @@ Der Benutzer kann die falsch positiven Informationen melden, und der Administrat
 
 Dieser Führerscheinfall ist ein gutes Beispiel, das wir uns näher anschauen sollten. Der Grund für diese falsch positive Meldung ist, dass der Typ "australischer Führerschein" von einer beliebigen 9-stelligen Zeichenfolge (also auch einer, die Teil einer 10-stelligen Zeichenfolge ist) ausgelöst wird, die innerhalb 300 Zeichen Entfernung zu den Schlüsselwörtern "Sydney NSW" (schreibungsunabhängig) vorkommt. Hier wird sie also durch die Telefonnummer und die E-Mail-Signatur ausgelöst, nur weil der Benutzer zufällig in Sydney ist.
 
-Interessanterweise wird die DLP-Richtlinie nicht ausgelöst, wenn "Sydney, NSW" ein Komma enthält. Ich weiß nicht, warum ein Komma hier einen Unterschied macht, und warum andere australische Städte und Staaten nicht in die Schlüsselwörter für den australischen Führerschein-Informationstyp einbezogen wurden, aber so ist es nunmal. Was kann man in diesem Fall tun? Es gibt verschiedene Optionen.
 
 Eine besteht darin, den Informationstyp "australischer Führerschein" aus der Richtlinie zu entfernen. Sie ist darin enthalten, weil sie Teil der DLP-Richtlinienvorlage ist, wir sind jedoch nicht gezwungen, sie zu verwenden. Wenn Sie nur an Steuernummern und nicht an Führerscheinnummern interessiert sind, können Sie diesen Informationstyp einfach entfernen. So können Sie ihn beispielsweise aus der Regel zu geringen Mengen in der Richtlinie entfernen, ihn in der Regel zu großen Mengen hingegen belassen, sodass Listen mehrerer Führerscheinnummern weiterhin erkannt werden.
 
@@ -191,7 +190,7 @@ Zusätzlich zum Ändern der Instanzenanzahl können Sie auch die Übereinstimmun
 
 Und falls Sie schließlich an noch fortgeschritteneren Maßnahmen interessiert sind – Sie können jeden vertraulichen Informationstyp anpassen. So können Sie z. B. "Sydney NSW" aus der Liste der Schlüsselwörter für [australischer Führerschein](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)entfernen, um die weiter oben ausgelöste falsch positive Meldung zu eliminieren. Informationen dazu, wie das unter Verwendung von XML und PowerShell geht, finden Sie in dem Beitrag [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md).
 
-## <a name="turn-off-a-dlp-policy"></a>Deaktivieren einer DLP-Richtlinie
+## <a name="turn-on-a-dlp-policy"></a>Aktivieren einer DLP-Richtlinie
 
 Wenn Ihre DLP-Richtlinie vertrauliche Informationstypen genau und effektiv zu Ihrer Zufriedenheit erkennt und Ihre Endbenutzer ausreichend auf den Umgang mit den Richtlinien vorbereitet sind, können Sie die Richtlinie aktivieren.
 

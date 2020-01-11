@@ -12,26 +12,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Score unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
-ms.openlocfilehash: c13b4e345f5ab9bee7a0edd134aea73c23d84036
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d7dfb40434ad3f6da0c728015f53580034ecfdfd
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806658"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021891"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft-Konformitätsbewertung (Vorschau)
 
-Das Microsoft-Kompatibilitäts Ergebnis hilft Ihnen, die Verwaltung der Compliance zu vereinfachen und Compliance-Risiken durch eine benutzerfreundliche Erfahrung zu verringern. Das Kompatibilitäts Ergebnis steht nun für die öffentliche Vorschau im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)zur Verfügung. Lesen Sie diesen Artikel, um zu verstehen, welche Konformitätsbewertung vorliegt, wie Sie die Compliance für Ihre Organisation verwalten können und wie Sie mit den ersten Schritten beginnen.
+Das Microsoft-Kompatibilitäts Ergebnis hilft Ihnen, die Verwaltung der Compliance zu vereinfachen und Compliance-Risiken durch eine benutzerfreundliche Erfahrung zu verringern. Das Kompatibilitäts Ergebnis steht nun für die öffentliche Vorschau im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)zur Verfügung.
+
+**In diesem Artikel:** Lesen Sie diesen Artikel, um zu verstehen, welche Kompatibilitätsbewertung vorliegt und wie Sie Sie für Ihre Organisation einrichten.
+
+Informationen **zu Updates:** Informationen zu den neuen und bekannten Problemen mit der Vorschauversion des Kompatibilitäts Bewertungsergebnisses finden Sie in den Versionshinweisen zur [Kompatibilitätsbewertung](compliance-score-release-notes.md) .
 
 ## <a name="what-is-compliance-score"></a>Was ist Konformitätsbewertung
 
 Microsoft Compliance Score ist eine Vorschaufunktion im Microsoft 365 Compliance Center, die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern.
 
-Sie können die Kompatibilitätsbewertung als Tool verwenden, um alle ihre Risikobewertungen nachzuverfolgen. Es bietet Workflowfunktionen, mit denen Sie Ihre Risikobewertungen effizient durch ein allgemeines Tool durchführen und abschließen können.
+Sie können die Kompatibilitätsbewertung als Tool verwenden, um alle ihre Risikobewertungen nachzuverfolgen. Es bietet Workflowfunktionen, die Sie bei der effizienten Durchführung ihrer Risikobewertungen mithilfe eines allgemeinen Tools unterstützen.
 
 Wenn Sie den [Compliance-Manager](compliance-manager-overview.md)derzeit verwenden, werden Sie feststellen, dass das Kompatibilitäts Ergebnis nun ein eigenständiges Feature mit einem einfacheren, benutzerfreundlicheren Design ist, mit dem Sie die Compliance einfacher verwalten können. 
 
-Die Hauptseite der Kompatibilitätsbewertung ist Ihr benutzerdefiniertes Dashboard. Es zeigt Ihre aktuelle Punktzahl, hilft Ihnen zu sehen, was Aufmerksamkeit benötigt, und führt Sie zu Aktionen zur Verbesserung ihrer Gäste. Das Dashboard für die Konformitätsbewertung sieht folgendermaßen aus:
+Die Hauptseite der Kompatibilitätsbewertung ist Ihr benutzerdefiniertes Dashboard. Es zeigt Ihre aktuelle Punktzahl, hilft Ihnen zu sehen, was Aufmerksamkeit benötigt, und führt Sie zu Aktionen zur Verbesserung ihrer Gäste. Das Dashboard für die Konformitätsbewertung sieht wie folgt aus:
 
 ![Compliance Score-Dashboard](media/compliance-score-dashboard.png "Konformitäts Bewertungs Dashboard")
 
@@ -58,7 +62,7 @@ Weitere Informationen zur Beziehung zwischen Compliance Score und Compliance-Man
 
 ## <a name="understanding-your-score"></a>Grundlegendes zur Partitur
 
-Mit der Kompatibilitätsbewertung erhalten Sie eine vordefinierte Bewertung basierend auf der Microsoft 365-Datenschutz Basis, bei der es sich um eine Reihe von Steuerelementen handelt, die allgemeine Branchenvorschriften und-Standards enthält. Diese Bewertung ist zwar ein guter Ausgangspunkt für die Bewertung Ihrer Compliance-Haltung, aber die Konformitätsbewertung wird für Sie leistungsfähiger, wenn Sie Bewertungen hinzufügen, die für Ihre Organisation relevanter sind.
+Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die allgemeine Branchenvorschriften und-Standards umfassen. Diese Bewertung ist zwar ein guter Ausgangspunkt für die Bewertung Ihrer Compliance-Position, aber die Konformitätsbewertung wird leistungsfähiger, wenn Sie Bewertungen hinzufügen, die für Ihre Organisation relevanter sind.
 
 Wenn Ihre Organisation beispielsweise zur Finanzdienstleistungsbranche gehört, möchten Sie möglicherweise die FFIEC-Bewertung hinzufügen. Wenn Ihre Organisation der Healthcare-Branche angehört, können Sie die HIPAA/HITECH-Bewertung hinzufügen. Hier erfahren Sie, wie [Sie Assessments im Compliance-Manager hinzufügen](working-with-compliance-manager.md#assessments).
 
@@ -77,8 +81,8 @@ Ein Steuerelement definiert, wie Sie die Systemkonfiguration, den Organisationsp
 
 Das Kompatibilitäts Ergebnis verfolgt zwei Arten von Steuerelementen:
 
-1. Von **Microsoft verwaltete Steuerelemente**: Dies sind Steuerelemente für Microsoft Cloud-Dienste, die von Microsoft für die Implementierung zuständig sind.
-2. Vom **Kunden verwaltete Steuerelemente**: Dies sind von Ihrer Organisation verwaltete Steuerelemente, die Sie für die Implementierung von
+1. Von **Microsoft verwaltete Steuer**Elemente: Steuerelemente für Microsoft Cloud-Dienste, die von Microsoft für die Implementierung zuständig sind
+2. Vom **Kunden verwaltete**Steuerelemente: von Ihrer Organisation verwaltete Steuerelemente, die Sie für die Implementierung zuständig sind
  
 ### <a name="assessments"></a>Bewertungen
 
@@ -126,12 +130,12 @@ Die vorkonfigurierten Vorlagen für die Konformitätsbewertung lauten wie folgt:
 
 ### <a name="groups"></a>Gruppen
 
-Mit Gruppen können Sie Bewertungen so organisieren, dass Sie logisch sind. Sie können beispielsweise nach Jahr, Kompatibilitätsstandard, Dienst, Teams in Ihrer Organisation oder auf andere Weise Gruppenbewertungen auswählen. 
+Mit Gruppen können Sie Bewertungen so organisieren, dass Sie logisch sind. Sie können beispielsweise nach Jahr, Kompatibilitätsstandard, Dienst, Teams in Ihrer Organisation oder auf andere Weise Gruppenbewertungen auswählen.
 
 Wenn zwei unterschiedliche Bewertungen in derselben Gruppe von Kunden verwaltete Aktionen gemeinsam nutzen, werden der Abschluss der Implementierungsdetails, Tests und der Status der Aktion in einem Test automatisch mit derselben Aktion in einer anderen Bewertung in der Gruppe synchronisiert. Dadurch werden die zugewiesenen Verbesserungs Aktionen in der gesamten Gruppe vereinheitlicht und Arbeits Duplikate reduziert.
 
-Informationen zum [Erstellen von Gruppen im Compliance-Manager](working-with-compliance-manager.md#groups).
+Informationen zum [Erstellen von Gruppen im Compliance-Manager](working-with-compliance-manager.md#groups). Nachdem Sie Gruppen erstellt haben, können Sie das Dashboard für die [Konformitätsbewertung Filtern](compliance-score-setup.md#filtering-your-dashboard-view) , um die Bewertung von einer oder mehreren Gruppen anzuzeigen.
 
-## <a name="next-step"></a>Nächster Schritt
+## <a name="next-step-begin-setup"></a>Nächster Schritt: Setup starten
 
-Melden Sie sich an, legen Sie Berechtigungen fest, und erfahren Sie mehr über das Konformitäts Bewertungs Dashboard im [Setup der Kompatibilitätsbewertung](compliance-score-setup.md).
+Melden Sie sich an, richten Sie Berechtigungen ein, und erfahren Sie mehr über das Konformitäts Bewertungs Dashboard unter [Compliance Score Setup](compliance-score-setup.md).

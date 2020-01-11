@@ -3,7 +3,7 @@ title: Verwalten von isolierten Nachrichten und Dateien als Administrator in Off
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Als Administrator können Sie in Office 365 falsch positive unter Quarantäne gestellte Nachrichten anzeigen, freigeben und melden. Sie können Richtlinien so einrichten, dass Nachrichten von Office 365 gefiltert und aus verschiedenen Gründen an die Quarantäne gesendet werden: weil Sie als Spam, Massen, Phishing, Schadsoftware oder als Übereinstimmung mit einer Nachrichtenfluss Regel identifiziert wurden. '
-ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021861"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023329"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 
@@ -33,9 +33,11 @@ Sie müssen über globale Administratorberechtigungen (GA) in Office 365 verfüg
 
 ## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>Welche Berechtigungen sind für den Zugriff auf die Administrator Quarantäne erforderlich?
 
-Die Berechtigungen zum Verwalten der Quarantäne werden durch die Mitgliedschaft in den Rollengruppen **Security #a0 Compliance Center* gesteuert. Weitere Informationen zu Rollengruppen im Security #a0 Compliance Center finden Sie unter [Permissions in the Office 365 Security #a1 Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Die Berechtigungen zum Verwalten der Quarantäne werden durch die Mitgliedschaft in *Sicherheits #a0 Compliance Center* -Rollengruppen (insbesondere die **Quarantäne** Rolle) gesteuert. Weitere Informationen zu Rollen und Rollengruppen im Security #a0 Compliance Center finden Sie unter [Permissions in the Office 365 Security #a1 Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-Die Sicherheits #a0-Compliance-Rollengruppen, die Berechtigungen zum Verwalten der Quarantäne erteilen, sind:
+Die Rollengruppen Security #a0 Compliance, die standardmäßig Berechtigungen zum Verwalten der Quarantäne erteilen, sind:
+
+- **Organisationsverwaltung** (globale Administratoren)
 
 - **Quarantäne Administrator**
 

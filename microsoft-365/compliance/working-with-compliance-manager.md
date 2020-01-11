@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Compliance-Manager ermöglicht das Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
+ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962252"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022011"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -30,11 +30,11 @@ Sie können über das Service Trust Portal auf den Compliance-Manager zugreifen.
   
 1. Wechseln Sie zu [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
-2. Melden Sie sich mit Ihrem Microsoft-Dienstkonto an. Dies ist Ihr Office 365-, Microsoft 365-oder Azure Active Directory (Azure AD)-Benutzerkonto.
+2. Melden Sie sich mit Ihrem Microsoft-Dienstkonto an, bei dem es sich um das Benutzerkonto Office 365, Microsoft 365 oder Azure Active Directory (Azure AD) handelt.
 
-3. Wählen Sie im Dienst Vertrauensstellungs Portal **Compliance-Manager**aus. Dies ist die Vorschauversion von Compliance-Manager. **Compliance-Manager (klassisch)** ist der Link zur vorherigen Version von Compliance-Manager.
+3. Im Dienst Vertrauensstellungs Portal wird empfohlen, den **Compliance-Manager**auszuwählen, bei dem es sich um die Vorschauversion mit den neuesten Features handelt. **Compliance-Manager (klassisch)** führt Sie zur vorherigen Version von Compliance-Manager.
 
-4. Wenn die Geheimhaltungsvereinbarung angezeigt wird, lesen Sie Sie, und wählen Sie **bestätigen** aus, um den Vorgang fortzusetzen. Sie müssen einmal zustimmen, und dann wird das Compliance-Manager-Dashboard angezeigt.
+4. Wenn die Geheimhaltungsvereinbarung angezeigt wird, lesen Sie Sie und wählen Sie **agree**, die dann Ihr Compliance-Manager-Dashboard anzeigt.
 
 Um Ihnen den Einstieg zu erleichtern, wird eine ISO/IEC 27001:2103-Bewertung für Office 365 standardmäßig für Ihre Organisation angezeigt.
 
@@ -84,25 +84,40 @@ Updates für sichere Bewertungen können für alle Aktionen automatisch aktivier
 
 ## <a name="groups"></a>Gruppen
 
-Mit Gruppen können Sie Bewertungen logisch organisieren und gemeinsame Informations-und Workflowaufgaben Zwischenbewertungen mit denselben oder Verwandten, vom Kunden verwalteten Steuerelementen freigeben. Sie können Bewertungen nach Jahr, Standard, Dienst, Team, Abteilung oder Agenturen in Ihrer Organisation gruppieren, um die von Kunden verwalteten Aktionen zu minimieren:
+Gruppen sind Container, die es Ihnen ermöglichen, Bewertungen zu organisieren und allgemeine Informations-und Workflowaufgaben Zwischenbewertungen mit denselben oder Verwandten, vom Kunden verwalteten Steuerelementen freizugeben.
+
+Sie können Bewertungen auf eine Weise gruppieren, die für Sie logisch ist, beispielsweise nach Jahr, Standard, Dienst oder basierend auf den Teams, Abteilungen oder Geographien Ihrer Organisation. Im folgenden finden Sie Beispiele aus zwei Gruppen und deren zugrunde liegenden Bewertungen:
   
-- **FFIEC ist Assessments 2019**
+- **FFIEC ist Assessments 2020**
   - Office 365 + FFIEC ist
   - InTune + FFIEC ist
 - **Datenschutzbewertungen**
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-Wenn Sie eine neue Bewertung erstellen, müssen Sie eine neue Gruppe für die Bewertung erstellen oder die Bewertung einer vorhandenen Gruppe zuweisen. Gruppen können nicht als eigenständige Entitäten erstellt werden. Es wird empfohlen, *vor* dem Hinzufügen neuer Bewertungen eine Gruppierungs Strategie für Ihre Organisation zu ermitteln. Standardmäßig steht für Ihre anfänglichen Bewertungen eine Gruppe mit dem Namen "Default Group" zur Verfügung. Gruppen haben keine Sicherheitseigenschaften. Alle Berechtigungen sind Assessments zugeordnet.
+> [!NOTE]
+> Es wird empfohlen, eine Gruppierungs Strategie für Ihre Organisation zu ermitteln, *bevor* Sie neue Bewertungen hinzufügen. Standardmäßig steht für Ihre anfänglichen Bewertungen eine Gruppe mit dem Namen "Default Group" zur Verfügung.
 
-Beachten Sie beim Arbeiten mit Gruppen Folgendes:
+### <a name="how-to-create-a-group"></a>Vorgehensweise Erstellen einer Gruppe
+
+Gruppen können nicht als eigenständige Entitäten erstellt werden. Eine Gruppe muss immer mindestens eine Bewertung enthalten, um eine Gruppe zu erstellen, müssen Sie zunächst eine Bewertung erstellen, die in der Gruppe platziert werden soll. Führen Sie die folgenden Schritte aus, um eine Gruppe zu erstellen:
+
+1. Erstellen Sie eine neue Bewertung, indem Sie am oberen Rand des Dashboards **+ Assessment hinzufügen** auswählen.
+2. Geben Sie im Bereich " **Bewertungs** Flyout" einen Titel für Ihre Bewertung ein, und wählen Sie im Dropdownmenü eine Vorlage aus.
+3. Wenn Sie **eine Gruppe auswählen oder eine neue Gruppe hinzufügen**möchten, wählen Sie **neue Gruppe hinzufügen** aus, und geben Sie Ihren Gruppennamen in das Feld unten ein.
+4. Wenn Sie Informationen aus einer vorhandenen Gruppe kopieren möchten, aktivieren Sie die Option **möchten Sie die Daten aus einer vorhandenen Gruppe kopieren?** **.** Wählen Sie im Dropdownmenü darunter die Gruppe aus, die Sie kopieren möchten, und aktivieren Sie die Kontrollkästchen aller Felder, die Sie in die neue Bewertung in ihrer neuen Gruppe übertragen möchten.
+5. Klicken Sie auf **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und die neue Gruppe wird automatisch in Ihrem Dashboard angezeigt.
+
+Was Sie beim Arbeiten mit Gruppen wissen sollten:
   
-- Zugehörige bewertungssteuerelemente in unterschiedlichen Bewertungen innerhalb derselben Gruppe werden automatisch aktualisiert, wenn Sie abgeschlossen werden.
-- Neue Gruppen können Informationen aus einer vorhandenen Gruppe kopieren, wenn Sie eine neue Bewertung erstellen. Alle Informationen, die den Implementierungs Details und Test Plan-und Verwaltungs Antwortfeldern von von Kunden verwalteten Steuerelementen aus Bewertungen in der Gruppe hinzugefügt wurden, von der Sie kopieren, werden in die gleichen (oder verwandten) von Kunden verwalteten Steuerelemente in der neuen Bewertung. Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen aus Bewertungen in dieser Gruppe in die neue Bewertung kopiert.
 - Gruppennamen (auch *Gruppen-IDs*genannt) müssen innerhalb Ihrer Organisation eindeutig sein.
-- Gruppen können Bewertungen für die gleiche Zertifizierung/Regulierung enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Cloud Service/Zertifizierungs Paar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und das NIST-GfK enthalten. Eine Gruppe kann nur dann mehrere Bewertungen für denselben clouddienst enthalten, wenn die entsprechende Zertifizierung/Regulierung für jede einzelne unterschiedlich ist.
-- Nachdem eine Bewertung zu einer Bewertungsgruppe hinzugefügt wurde, kann die Gruppierung nicht mehr geändert werden. Sie können die Bewertungsgruppe umbenennen, die den Namen der Bewertungs Gruppierung für alle dieser Gruppe zugeordneten Bewertungen ändert. Sie können eine neue Bewertung und eine neue Bewertungsgruppe erstellen und Informationen aus einer vorhandenen Bewertung kopieren. Auf diese Weise wird effektiv ein Duplikat dieser Bewertung in einer anderen Bewertungsgruppe erstellt.
-- Durch das Archivieren einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen. Alle weiteren Updates zu anderen verwandten Bewertungen werden in der archivierten Bewertung nicht mehr berücksichtigt.
+- Gruppen haben keine Sicherheitseigenschaften. Alle Berechtigungen sind Assessments zugeordnet.
+- Nachdem Sie eine Bewertung zu einer Gruppe hinzugefügt haben, kann die Gruppierung nicht mehr geändert werden. Sie können die Bewertungsgruppe umbenennen, die den Namen der Bewertungs Gruppierung für alle dieser Gruppe zugeordneten Bewertungen ändert.
+- Zugehörige bewertungssteuerelemente in unterschiedlichen Bewertungen innerhalb derselben Gruppe werden automatisch aktualisiert, wenn Sie abgeschlossen werden.
+- Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen aus Bewertungen in dieser Gruppe in die neue Bewertung kopiert.
+- Gruppen können Bewertungen für dieselbe Zertifizierung oder Regel enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produkt-Zertifizierungs Paar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und das NIST-GfK enthalten. Eine Gruppe kann mehrere Bewertungen für dasselbe Produkt nur dann enthalten, wenn die entsprechende Zertifizierung oder Regulierung für jede andere unterschiedlich ist.
+- Durch das Ausblenden einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen. Weitere Aktualisierungen anderer verwandter Bewertungen werden nicht mehr in der ausgeblendeten Bewertung wiedergegeben. ([Hier erfahren Sie, wie Sie Bewertungen ausblenden.](#hide-a-template-or-an-assessment))
+- Gruppen können nicht gelöscht werden.
 
 ## <a name="tenant-management"></a>Mandantenverwaltung
 
@@ -553,7 +568,7 @@ Vorlagen können mithilfe der zusätzlichen benutzerdefinierten Steuerelemente a
 
 ### <a name="export-a-template-to-json"></a>Exportieren einer Vorlage in JSON
 
-Compliance-Manager (Preview) unterstützt auch das Exportieren von Vorlagen in das JavaScript Object Notation (JSON)-Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
+Compliance-Manager (Preview) unterstützt auch das Exportieren von Vorlagen in JavaScript Object Notation (JSON) Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
 
 ## <a name="reports"></a>Berichte
 
