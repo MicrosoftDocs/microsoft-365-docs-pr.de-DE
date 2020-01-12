@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634042"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022021"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -65,7 +65,7 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 
 Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsprotokolls von Office 365 beginnen.
 
-- Sie (oder ein anderer Administrator) müssen zuerst die Überwachungsprotokollierung aktivieren, bevor Sie mit dem Durchsuchen des Office 365-Überwachungsprotokolls beginnen können. Zum Aktivieren klicken Sie einfach im Security und Compliance Center auf der Seite **Durchsuchen des Überwachungsprotokolls** auf **Aufzeichnung von Benutzer- und Administratoraktivitäten starten**. (Wenn Sie diesen Link nicht sehen, wurde die Überwachungsprotokollierung für Ihre Organisation bereits aktiviert.) Daraufhin teilt Ihnen eine Meldung mit, dass das Überwachungsprotokoll vorbereitet wird und Sie in ein paar Stunden nach Abschluss der Vorbereitung eine Suche durchführen können. Dieser Vorgang ist nur einmal erforderlich.
+- Sie (oder ein anderer Administrator) müssen zuerst die Überwachungsprotokollierung aktivieren, bevor Sie mit dem Durchsuchen des Office 365-Überwachungsprotokolls beginnen können. Zum Aktivieren klicken Sie **Überwachung aktivieren** auf der Seite **Durchsuchen des Überwachungsprotokolls** im Security und Compliance Center. (Wenn Sie diesen Link nicht sehen, wurde die Überwachungsprotokollierung für Ihre Organisation bereits aktiviert.) Daraufhin teilt Ihnen eine Meldung mit, dass das Überwachungsprotokoll vorbereitet wird und Sie in ein paar Stunden nach Abschluss der Vorbereitung eine Suche durchführen können. Dieser Vorgang ist nur einmal erforderlich. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
   > [!NOTE]
   > Wir sind dabei, die Überwachung standardmäßig zu aktivieren. Bis dahin können Sie diese Option gemäß der obigen Beschreibung aktivieren.
@@ -335,6 +335,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |(keine)|FileModifiedExtended|Dies bezieht sich auf die Aktivität "Datei geändert" (FileModified). Wenn dieselbe Person während eines längeren Zeitraums (bis zu 3 Stunden) eine Datei ständig ändert, wird ein FileModifiedExtended-Ereignis protokolliert. <br/><br/> Die Protokollierung von FileModifiedExtended-Ereignissen dient dazu, die Anzahl von FileModified-Ereignissen zu verringern, die bei ständiger Änderung einer Datei protokolliert werden. Auf diese Weise lässt sich der Stördatenverkehr von mehreren FileModified-Einträgen besser reduzieren, bei denen die Benutzeraktivität im Wesentlichen identisch ist, sodass Sie sich auf das ursprüngliche (und wichtigere) FileModified-Ereignis konzentrieren können.|
 |Datei verschoben|FileMoved|Der Benutzer verschiebt ein Dokument von seinem aktuellen Speicherort auf einer Website an einen neuen Speicherort.|
 |(keine)|FilePreviewed|Ein Benutzer zeigt eine Vorschau einer Datei auf einer SharePoint- oder OneDrive for Business-Website an. Diese Ereignisse treten in der Regel in großem Umfang basierend auf einer einzelnen Aktivität auf, z. B. der Anzeige einer Bildergalerie.|
+|Suchabfrage durchgeführt|SearchQueryPerformed|Der Benutzer oder das Systemkonto nimmt eine Suche auf einer SharePoint- oder OneDrive for Business-Website vor. Einige häufige Szenarios, in denen ein Dienstkonto eine Suchabfrage ausführt, umfassen das Anwenden einer eDiscovery-Sperre oder einer Aufbewahrungsrichtlinie auf Websites und OneDrive-Konten, und wenn Aufbewahrungs- oder Vertraulichkeitsbezeichnungen automatisch auf Websiteinhalte angewendet werden. In vielen Fällen ist der Name des Dienstkontos, das im Feld „Benutzer“ des Überwachungsdatensatzes protokolliert wird, **app@sharePoint**. </br></br> **Tipp:** die Felder „ApplicationDisplayName“ und „EventData“ im Überwachungsdatensatz für die Aktivität der durchgeführten Suchabfrage helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, mit dem dieses Ereignis ausgelöst wurde.|
 |Alle Nebenversionen einer Datei in den Papierkorb verschoben|FileVersionsAllMinorsRecycled|Benutzer löscht alle Nebenversionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.|
 |Alle Versionen der Datei in den Papierkorb|FileVersionsAllRecycled|Benutzer löscht alle Versionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.|
 |Dateiversion in den Papierkorb|FileVersionRecycled|Benutzer löscht eine Version aus dem Versionsverlauf einer Datei. Die gelöschte Version wird in den Papierkorb der Website verschoben.|
