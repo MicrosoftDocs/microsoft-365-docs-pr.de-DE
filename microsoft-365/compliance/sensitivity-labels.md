@@ -3,7 +3,7 @@ title: Übersicht über Vertraulichkeitsbezeichnungen
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 01/06/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen einschließlich Verschlüsselung und Wasserzeichen für bezeichnete Inhalte anwenden.
-ms.openlocfilehash: 465b22b7d57718e5b1f38951804d2f76c10ebb3f
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962344"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023349"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
 Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Personen innerhalb und außerhalb der Organisation zusammenarbeiten. Dies bedeutet, dass Inhalte nicht mehr durch eine Firewall geschützt sind – sie können zwischen verschiedenen Geräten, Apps und Diensten hin- und herbewegt werden. Dies soll auf sichere und geschützte Weise geschehen, die den geschäftlichen Anforderungen und Compliancerichtlinien Ihrer Organisation entspricht.
 
 Mithilfe von Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird.
+
+> [!NOTE]
+> Vertralichkeitsbezeichnungen sind in US Government Community (GCC)-Organisationen nicht verfügbar.
 
 Beispiel für die Anzeige von Vertraulichkeitsbezeichnungen:
 
@@ -102,9 +105,9 @@ Alle diese Optionen sind verfügbar, wenn Sie eine Vertraulichkeitsbezeichnung e
 
 Wenn Sie Ihre Vertraulichkeitsbezeichnungen in Ihrem Admin Center erstellen, werden sie in einer Liste auf der Registerkarte **Vertraulichkeit** auf der Seite **Bezeichnungen** angezeigt. In dieser Liste ist die Reihenfolge der Beschriftungen wichtig, da diese ihre Priorität widerspiegelt. Die restriktivste Vertraulichkeitsbezeichnung, z. B. Streng vertraulich, soll **am Ende** der Liste angezeigt werden, die am wenigsten restriktivste Vertraulichkeitsbezeichnung, z. B. Öffentlich, soll **am Anfang** der Liste angezeigt werden.
 
-Sie können nur eine Vertraulichkeitsbezeichnung auf ein einzelnes Dokument oder eine E-Mail anwenden. Wenn Sie festlegen, dass Benutzer eine Begründung für die Änderung der Bezeichnung zu einer niedrigeren Klassifizierung angeben müssen, werden in der Reihung dieser Liste die niedrigeren Klassifizierungen angegeben.
+Sie können nur eine Vertraulichkeitsbezeichnung auf ein einzelnes Dokument oder eine E-Mail anwenden. Wenn Sie eine Option festlegen, die bestimmt, dass Benutzer eine Begründung für die Änderung der Bezeichnung zu einer niedrigeren Klassifizierung angeben müssen, werden in der Reihung dieser Liste die niedrigeren Klassifizierungen angegeben. Diese Option gilt jedoch nicht für Unterbezeichnungen.
 
-Die Priorität der Bezeichnungen gilt auch für Untertitel.
+Die Reihenfolge der Unterbezeichnungen wird allerdings mit [automatischen Bezeichnungen](apply-sensitivity-label-automatically.md) verwendet. Wenn Sie Bezeichnungen so konfigurieren, dass Sie automatisch oder als Empfehlung angewendet werden, können daraus mehrere Übereinstimmungen für mehrere Bezeichnungen resultieren. Anhand der Bezeichnungsreihenfolge wird die Bezeichnung ermittelt, die angewendet oder empfohlen werden soll: Die letzte vertrauliche Bezeichnung wird ausgewählt, und dann, falls zutreffend, die letzte Unterbezeichnung.
 
 ![Option zum Erstellen einer Unterbezeichnung](media/Sensitivity-label-sublabel-options.png)
 
@@ -189,11 +192,7 @@ Im Folgenden werden die grundlegenden Schritte des Administrators, des Benutzers
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Anzeige von Vertraulichkeitsbezeichnungen
 
-Vertraulichkeitsbezeichnungen werden auf der Benutzeroberfläche von Office-Apps angezeigt. Verwenden Sie die folgenden Tabellen, um die aktuelle Verfügbarkeit von integrierten Bezeichnungen für bestimmte Apps und Plattformen anzuzeigen:
-
-- [Unterstützung der Funktion Vertraulichkeitsbezeichnungen in Word, Excel und PowerPoint](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [Unterstützung der Funktion Vertraulichkeitsbezeichnungen in Outlook](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+Vertraulichkeitsbezeichnungen werden auf der Benutzeroberfläche von Office-Apps angezeigt und können mit der Schaltfläche **Vertraulichkeit** auf der Registerkarte "Start" im Menüband ausgewählt werden. Informationen zum Anzeigen der aktuellen Verfügbarkeit integrierter Bezeichnungen für bestimmte Apps und Plattformen finden Sie unter [Unterstützung der Funktion "Vertraulichkeitsbezeichnungen" in Apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Wenn Sie den Assistenten für einheitliche Bezeichnungen von Azure Information Protection für Ihre Windows-Computer verwenden, stehen zusätzliche Funktionen für Vertraulichkeitsbezeichnungen zur Verfügung. Weitere Informationen finden Sie unter [Vergleichen der Bezeichnungs-Assistenten für Windows-Computer](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -240,10 +239,7 @@ Azure Information Protection-Benutzer können Inhalte unter Windows mithilfe des
 - Ihre vorhandenen Azure Information Protection-Bezeichnungen für Dokumente und E-Mails beibehalten.
 - Ihre vorhandene Azure Information Protection-Bezeichnungskonfiguration beibehalten.
 
-Wenn Sie Azure Information Protection-Bezeichnungen verwenden, weil Ihr Mandant noch nicht auf der [vereinheitlichten Bezeichnungs-Plattform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)ist, empfehlen wir, dass Sie das Erstellen neuer Bezeichnungen in anderen Admin Centern vermeiden, bis Sie die einheitliche Bezeichnungen aktiviert haben. Weitere Informationen zu diesem Vorgang finden Sie unter [Wie kann man Azure Information Protection-Bezeichnungen zu einheitlichen Vertraulichkeitsbezeichnungen migrieren](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). 
-
-> [!NOTE]
-> Die Unterstützung der Verwaltung von Bezeichnungen für Azure Information Protection-Bezeichnungen im Azure-Portal wird ab dem**31. März 2021**eingestellt. Weitere Informationen finden Sie in der offiziellen [Benachrichtigung über die Einstellung](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108).
+Wenn Sie Azure Information Protection-Bezeichnungen verwenden, weil Ihr Mandant noch nicht auf der [vereinheitlichten Bezeichnungs-Plattform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)ist, empfehlen wir, dass Sie das Erstellen neuer Bezeichnungen in anderen Admin Centern vermeiden, bis Sie die einheitliche Bezeichnungen aktiviert haben. Weitere Informationen zu diesem Vorgang finden Sie unter [Wie kann man Azure Information Protection-Bezeichnungen zu einheitlichen Vertraulichkeitsbezeichnungen migrieren](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>Vertraulichkeitsbezeichnungen und der Azure Information Protection-Client
 

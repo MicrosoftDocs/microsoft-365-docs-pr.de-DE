@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Aufbewahrungsbezeichnungen
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aufbewahrungsbezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Aufbewahrungsbezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621108"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023369"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -55,7 +55,7 @@ Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
    - Benutzer müssen nicht mehr über Governance-Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
 
   > [!NOTE]
-  > Die Möglichkeit, Bezeichnungen automatisch anzuwenden, erfordert eine Office 365 Enterprise E5-Lizenz für jeden Benutzer, der die Berechtigung zum Bearbeiten von Inhalten hat, die auf einer Website oder in einem Postfach automatisch mit Bezeichnungen versehen wurden. Benutzer, die nur Schreibzugriff haben, benötigen keine Lizenz.
+  > Die Möglichkeit, Bezeichnungen automatisch anzuwenden, erfordert eine Office 365 Enterprise E5-Lizenz für jeden Benutzer, der die Berechtigung zum Bearbeiten von Inhalten hat, die auf einer Website automatisch mit Bezeichnungen versehen wurden oder deren Postfach für automatische Bezeichnungen ausgewählt wurde. Benutzer, die nur Schreibzugriff auf Inhalte haben oder auf beschriftete E-Mails antworten, benötigen keine Lizenz.
       
 - **Implementieren Sie die Datensatzverwaltung im gesamten Office 365**, darunter E-Mails und Dokumente. Sie können eine Aufbewahrungsbezeichnung verwenden, um Inhalt als Datensatz zu klassifizieren. In diesem Fall kann die Bezeichnung nicht geändert oder entfernt werden, und der Inhalt kann nicht bearbeitet oder gelöscht werden. 
 
