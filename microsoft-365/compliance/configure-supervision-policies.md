@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: a04d97cf887a14d89052d03ffdf3353f62cd612f
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959623"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111929"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
@@ -123,7 +123,7 @@ Dazu können Sie sich selbst als Mitglied der Rollengruppe aufsichtsüberprüfun
 
 ### <a name="create-a-new-role-group"></a>Erstellen einer neuen Rollengruppe
 
-1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an.
+1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an.
 
 2. Wechseln Sie im Office 365 Security and Compliance Center zu **Berechtigungen** , und klicken Sie dann auf**+** hinzufügen ().
 

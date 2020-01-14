@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 92a786f40c10170cf0eb5f91f765bad4dc044c97
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831688"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112669"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3: Windows 10 Enterprise
 
@@ -39,7 +39,7 @@ Es gibt mehrere Möglichkeiten, wie Sie Windows 10 Enterprise für Ihre Organisa
 
 | Bereitstellungsszenario | Verwendungszweck |
 |:--- |:--- |
-| [Verwenden von Microsoft Endpoint Configuration Manager als direktes Upgrade](windows10-deploy-inplaceupgrade.md) | Wählen Sie diese Option aus, wenn Sie Windows 7 oder Windows 8.1 Computer auf die <a href="https://aka.ms/windows-10-release-information" target="_blank">aktuelle Version</a> von Windows 10 Enterprise aktualisieren müssen und ihre Computer derzeit mit <a href="https://aka.ms/introtosccm" target="_blank">Configuration Manager (Current Branch)</a>verwaltet werden. |
+| [Verwenden von Microsoft Endpoint Configuration Manager als direktes Upgrade](windows10-deploy-inplaceupgrade.md) | Wählen Sie diese Option aus, wenn Sie Windows 7 oder Windows 8.1 Computer auf die <a href="https://aka.ms/windows-10-release-information" target="_blank">aktuelle Version</a> von Windows 10 Enterprise aktualisieren müssen und ihre Computer derzeit mit <a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">Configuration Manager (Current Branch)</a>verwaltet werden. |
 | [Verwenden von Windows Autopilot](windows10-deploy-autopilot.md) | Wählen Sie diese Option aus, wenn Sie neue Windows-Computer einrichten, auf denen Windows 10 Enterprise, Version 1703 oder höher, bereits vorinstalliert ist. Endbenutzer initiieren das Setup mithilfe Ihrer gewünschten Konfiguration, indem Sie die Anmeldeinformationen für Ihr Büro oder Ihr Schulkonto eingeben. |
 
 Wenn diese Bereitstellungsszenarien nicht den Anforderungen Ihrer Organisation entsprechen, können Sie sich über andere Szenarien informieren und die Möglichkeiten und Einschränkungen der einzelnen [Windows 10-Bereitstellungsszenarien](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)kennen. Sie können <a href="https://aka.ms/planforwin10deployment" target="_blank">die Bereitstellung von Windows 10 auch selbst planen</a>.

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 E3 migrieren.
-ms.openlocfilehash: dc715bbf4cef8a742a28a6452e83b6e8d2f7cdd8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805618"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111869"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 E3
 
@@ -74,10 +74,10 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 | Office 365 Verhinderung von Datenverlust, Azure Information Protection-Plan 1  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | Schutz von Fenster Informationen für Endpunkt-DLP    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | **Client Zugriffslizenz (CAL-Rechte)**    | | |   
-| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, Windows Rights Management)| |        ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
+| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |       ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | **Compliance**        | | | 
 | Unbegrenzte e-Mail-Archivierung | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
-| Compliance-Manager    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
+| Der Compliance-Manager    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | eDiscovery    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | Compliance-Aufbewahrungs-und Beweissicherungsverfahren | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | Aufbewahrungstags und Aufbewahrungsrichtlinien für die Messaging-Datensatzverwaltung  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Als Office 365 Administrator können Sie bestimmte e-Mails widerrufen, die mit Office 365 erweiterter Nachrichtenverschlüsselung verschlüsselt wurden.
-ms.openlocfilehash: 7adc5713c8753e0caf780bbacf98519665458c52
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d3d449c969b2fa5d21042779ebad11e3807d1d3e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435549"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112519"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Widerrufen von E-Mails, die von der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden
 
@@ -59,7 +59,7 @@ Es gibt mehrere Möglichkeiten, die Nachrichten-ID der e-Mail zu finden, die Sie
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>So identifizieren Sie die Nachrichten-ID der e-Mail, die Sie mithilfe von Office-Nachrichten Verschlüsselungs Berichten im &amp; Security Compliance Center widerrufen möchten
 
-1. Navigieren Sie im &amp; Security Compliance Center zum **Nachrichten Verschlüsselungs Bericht**. Informationen zu diesem Bericht finden Sie unter [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md).
+1. Navigieren Sie im &amp; Security Compliance Center zum **Nachrichten Verschlüsselungs Bericht**. Informationen zu diesem Bericht finden Sie unter [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](../security/office-365-security/view-email-security-reports.md).
 
 2. Wählen Sie die Tabelle **Details anzeigen** aus, und identifizieren Sie die Nachricht, die Sie widerrufen möchten.
 
@@ -71,7 +71,7 @@ Um zu überprüfen, ob Sie eine Nachricht widerrufen können, überprüfen Sie, 
 
 Führen Sie die folgenden Schritte aus, um zu überprüfen, ob Sie eine bestimmte e-Mail-Nachricht mithilfe von Windows PowerShell widerrufen können.
 
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anweisungen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet Get-OMEMessageStatus wie folgt aus:
 
@@ -87,7 +87,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob Sie eine bestimmt
      “Test message”  True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Schritt 3: E-Mail widerrufen
+### <a name="step-3-revoke-the-mail"></a>SCHRITT 3: E-Mail widerrufen
 
 Wenn Sie die Nachrichten-ID der zu widerrufenden e-Mail kennen und sichergestellt haben, dass die Nachricht widerruflich ist, können Sie die e-Mail mithilfe des Security &amp; Compliance Centers oder von Windows PowerShell widerrufen.
 

@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Hier erhalten Sie eine Übersicht über Berichte und Einblicke &amp; in avialable im Security Compliance Center.
-ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 88a6cb080b0550274e86dcebb0e96be69e170317
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967968"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111919"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Intelligente Berichte und Einblicke im Office 365 &amp; Security Compliance Center
 
@@ -53,7 +53,7 @@ Im Security &amp; Compliance Center steht eine Vielzahl von Berichten zur Verfü
 |**Datensteuerung** <br/> Informationen zur Anwendung von Beschriftungen, Bezeichnungen, die als Datensätze klassifiziert werden, Beschriftungs Trends und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Information Governance** \> - **Dashboard** . <br/> |[Anzeigen der Datengovernanceberichte](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Threat Management Dashboard** (Dies wird auch als Sicherheits Dashboard und das Threat Intelligence-Dashboard bezeichnet)  <br/> Bedrohungserkennungen, Malware Trends, Benutzer mit höchster Zielgruppe, Details zu gesendeten und empfangenen e-Mail-Nachrichten und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Dashboard** . <br/> |[Übersicht über das Sicherheitsdashboard](security-dashboard.md) <br/> |
 |**Threat Explorer** (auch als Explorer bezeichnet) oder **Echtzeiterkennung** <br/> Verdächtige Schadsoftware, die in e-Mails und Dateien in Office 365 erkannt wurde  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Explorer** oder **Real-Time Detections** .<br/> |[Sicherheitsrisiken-Explorer (oder Echtzeit-Erkennung)](threat-explorer.md) <br/> |
-|**Erweiterte Bedrohungsschutz-und e-Mail-Sicherheitsberichte** <br/> Berichte zu e-Mail-Sicherheit und Bedrohungsschutz (einschließlich Schadsoftware, Spam, Phishing und Spoofing-Berichten)  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> - **Dashboard** <br/> |[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](../../compliance/view-email-security-reports.md) <br/> |
+|**Erweiterte Bedrohungsschutz-und e-Mail-Sicherheitsberichte** <br/> Berichte zu e-Mail-Sicherheit und Bedrohungsschutz (einschließlich Schadsoftware, Spam, Phishing und Spoofing-Berichten)  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> - **Dashboard** <br/> |[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md) <br/> |
 |**Nachrichtenfluss** <br/> Informationen zu gesendeten und empfangenen E-Mail-Nachrichten, neuesten Warnungen, häufigsten Absendern und Empfängern, E-Mail-Weiterleitungsberichten und vieles mehr.  <br/> |Wechseln Sie im &amp; Security Compliance Center zum **Nachrichtenfluss** \> - **Dashboard** . <br/> |[Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights-v2.md)<br/> |
 |**Einhaltung der DSGVO** <br/> Informationen zur dsgvo-Compliance, einschließlich Links zu Datensubjekten, Bezeichnungs &amp; Trends und aktiven geschlossenen Fällen  <br/> |Wechseln Sie im &amp; Security Compliance Center zum **Datenschutz** \> - **dsgvo-Dashboard** <br/> |[Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**Überwachungsprotokoll** <br/> Informationen zu Office 365-Aktivitäten, Benutzern, Dateien oder Ordnern usw.  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Search &amp; Investigation** \> **Audit Log Search** . <br/> |[Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |

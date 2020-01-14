@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: c0cef17acf0028472a9b92352afd51786a8ae25c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970823"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107904"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -59,7 +59,7 @@ Die folgenden Abschnitte in diesem Artikel enthalten Anleitungen zu jedem Featur
 
 Gemäß der ursprünglichen Ankündigung am 1. Juli 2017 wird die in-situ-eDiscovery-#a0-Funktion in der Exchange-Verwaltungskonsole (EAC) zurückgezogen. Auf der Seite in-situ-eDiscovery-#a0 in der Exchange-Verwaltungskonsole können Sie Inhalte aus Exchange Online durchsuchen, speichern und exportieren. Mit Compliance-eDiscovery können Sie auch Suchergebnisse in ein Discovery-Postfach kopieren, sodass Sie oder andere eDiscovery-Manager Inhalte überprüfen und für rechtliche, regulatorische und öffentliche Anforderungen zur Verfügung stellen können.
 
-Da alle diese Funktionen (mit Ausnahme des Kopierens von Suchergebnissen in ein Discovery-Postfach) jetzt in der Inhaltssuche, eDiscovery und erweiterten eDiscovery-Tools im [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) verfügbar sind (mit einer verbesserten Funktionalität, Zuverlässigkeit und Unterstützung für eine breite Palette von Microsoft 365-Diensten), wird empfohlen, diese Tools so schnell wie möglich zu verwenden. Um Sie beim Übergang zu diesen anderen eDiscovery-Tools zu unterstützen, werden in der folgenden Tabelle die Tools aufgelistet, die Sie anstelle von in-situ-eDiscovery und in-situ-Speicher verwenden können.
+Da alle diese Funktionen (mit Ausnahme des Kopierens von Suchergebnissen in ein Discovery-Postfach) jetzt in der Inhaltssuche, eDiscovery und erweiterten eDiscovery-Tools im [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) verfügbar sind (mit einer verbesserten Funktionalität, Zuverlässigkeit und Unterstützung für eine breite Palette von Microsoft 365-Diensten), sollten Sie diese Tools so schnell wie möglich verwenden. Um Sie beim Übergang zu diesen anderen eDiscovery-Tools zu unterstützen, werden in der folgenden Tabelle die Tools aufgelistet, die Sie anstelle von in-situ-eDiscovery und in-situ-Speicher verwenden können.
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
     
@@ -114,7 +114,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <li>
 <p>Anwenden von Richtlinien auf Ihre gesamte Organisation </p>
 </li><li>
-<p>Anwenden von Policies auf bestimmte inhaltsspeicherorte wie Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft Teams und Office 365 Gruppen</p></li>
+<p>Anwenden von Richtlinien auf bestimmte inhaltsspeicherorte wie Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft Teams und Office 365 Gruppen</p></li>
 <li>
 <p>Anwenden von Richtlinien auf bestimmte Benutzer</p></li></ul>
 <p>Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">Übersicht über Aufbewahrungsrichtlinien</a>.</td>
@@ -168,7 +168,7 @@ Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Cen
     
 - 1. April 2020: Sie können **New-MailboxSearch** nicht zum Erstellen neuer Compliance-eDiscovery-suchen und in-Place-Speicher verwenden, aber Sie können Cmdlets zum Ausführen, bearbeiten und Löschen vorhandener Suchvorgänge und-Aufbewahrungen auf eigenes Risiko verwenden. Der Microsoft-Support bietet keine Unterstützung mehr für diese Art von Suche und Aufbewahrung.
     
-- 1. Juli 2020: wie bereits erwähnt, wird die in-situ-eDiscovery-#a0, in der die Exchange-Verwaltungskonsole Funktionen enthält, in den schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie gewohnt sein können, die Cmdlets **New-MailboxSearch**, **Start-MailboxSearch**oder **setMailboxSearch** zu verwenden. Sie können nur vorhandene suchen und Aufbewahrungen abrufen und entfernen.
+- 1. Juli 2020: wie bereits erwähnt, wird die in-situ-eDiscovery-#a0, in der die Exchange-Verwaltungskonsole Funktionen enthält, in den schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie die Cmdlets **New-MailboxSearch**, **Start-MailboxSearch**oder **setMailboxSearch** nicht verwenden können. Sie können nur vorhandene suchen und Aufbewahrungen abrufen und entfernen.
 
 ### <a name="alternative-tools"></a>Alternative Tools
 
@@ -268,7 +268,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Löschen von Inhalten zu unterstützen. Sie können eine Suche mit <strong>New-ComplianceSearch</strong> -und <strong>New-ComplianceSearch</strong> -Cmdlets erstellen und ausführen und dann den Inhalt mithilfe des Befehls <strong>New-ComplianceSearchAction-Purge und-purgetype</strong> löschen.</p>
+<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Löschen von Inhalten zu unterstützen. Sie können eine Suche mit <strong>New-ComplianceSearch</strong> -und <strong>New-ComplianceSearch</strong> -Cmdlets erstellen und ausführen, und dann können Sie den Inhalt mithilfe des Befehls <strong>New-ComplianceSearchAction-Purge-purgetype</strong> löschen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Suchen nach und Löschen von Nachrichten</span></a>.</p>
 </td>
 </tr>
 <tr class="odd">
@@ -317,7 +317,7 @@ Zu diesem Zeitpunkt wird empfohlen, dass Sie mit dem Übergang Ihres eDiscovery-
     
 - 1. April 2020: Sie können keine neuen erweiterten eDiscovery v 1.0-Fälle erstellen.
     
-- 1. Juli 2020: der Microsoft-Support bietet keine Unterstützung. Beachten Sie [diesen Hinweis](https://go.microsoft.com/fwlink/?linkid=2113221). Sie können in keinem Fall neue Daten hinzufügen (Suchergebnisse für Advanced eDiscovery vorbereiten). Sie können die Datenverarbeitung in vorhandenen Fällen auf eigenes Risiko fortsetzen.
+- 1. Juli 2020: der Microsoft-Support bietet keine Unterstützung. Siehe [diesen Hinweis](https://go.microsoft.com/fwlink/?linkid=2113221). Sie können in keinem Fall neue Daten hinzufügen (Suchergebnisse für Advanced eDiscovery vorbereiten). Sie können die Datenverarbeitung in vorhandenen Fällen auf eigenes Risiko fortsetzen.
 
 ### <a name="alternative-tools"></a>Alternative Tools
     

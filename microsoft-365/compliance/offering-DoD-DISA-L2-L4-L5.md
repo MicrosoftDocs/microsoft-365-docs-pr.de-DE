@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959554"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112499"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>US Department of Defense (DoD) provisorische Autorisierung auf Impact Levels 2, 4 und 5
 
@@ -36,7 +36,7 @@ Die Government Cloud Services von Microsoft erfüllen die anspruchsvollen Anford
 - Erfahren Sie mehr über die Vorteile von DoD DISA L2, L4, L5 in der Microsoft-Cloud: [herunterladen des Department of Defense DISA Backgrounder](https://aka.ms/disa-backgrounder)
 - Erfahren Sie, wie Sie Ihre DoD DISA L2-, L4-und L5-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen der Azure DoD Level 5-Sicherheits Steuerungs Implementierungen](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## <a name="dod-impact-level-5-provisional-authorization"></a>[Provisorische Autorisierung für DoD Impact Level 5
+## <a name="dod-impact-level-5-provisional-authorization"></a>Provisorische Autorisierung für DoD-Auswirkung Ebene 5
 
 Bei der Unterstützung von DISA Cloud Service wurde für Microsoft Azure Government für DoD ein DoD-Impact Level 5 PA erteilt. DISA hat auch Office 365 US-Verteidigungsministerium eine DoD-Wirkungs Stufe von 5 PA erteilt. Impact Level 5 umfasst kontrollierte nicht klassifizierte Informationen (CUI), die gesetzlich vorgesehen sind, andere behördliche Bestimmungen oder die Agentur, die die Informationen besitzt und ein höheres Schutzniveau benötigt als Stufe 4. Darüber hinaus werden nicht klassifizierte nationale Sicherheitssysteme behandelt.
 

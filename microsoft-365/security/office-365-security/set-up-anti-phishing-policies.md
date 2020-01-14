@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Anti-Phishing-Schutz mit umfassendem Schutz als Bestandteil von Office 365 Advanced Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Schutz helfen, Ihre Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen zu schützen. und andere Phishing-Angriffe.
-ms.openlocfilehash: c3efed345baec7b0350d089a56e931006a4724a6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 235bac70380d8eadb006ce0c903036a1fd471cff
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970271"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112629"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing
 
@@ -147,7 +147,7 @@ Sie können benutzerdefinierte Richtlinien löschen, die Sie mithilfe des &amp; 
 
 Sobald Ihre Anti-Phishing-Richtlinien vorhanden sind, können Sie sehen, wie ihre Funktionen zum Schutz vor Bedrohungen für Ihre Organisation funktionieren, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Anzeigen von Berichten für Office 365 ATP](view-reports-for-atp.md) oder [Anzeigen von e-Mail-Sicherheitsberichten](../../compliance/view-email-security-reports.md)
+- [Anzeigen von Berichten für Office 365 ATP](view-reports-for-atp.md) oder [Anzeigen von e-Mail-Sicherheitsberichten](view-email-security-reports.md)
 
 - [Verwenden von Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md)
 

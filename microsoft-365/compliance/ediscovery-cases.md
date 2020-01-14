@@ -1,5 +1,5 @@
 ---
-title: 'eDiscovery-Fälle im Security #a0 Compliance Center'
+title: Verwalten von eDiscovery-Fällen im Security & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,21 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: 'Verwenden Sie das Security #a0 Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Advanced eDiscovery vorbereiten.'
-ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+description: 'Verwenden Sie das Security #a0 Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Office 365 Advanced eDiscovery vorbereiten.'
+ms.openlocfilehash: 3d5e67edf30f1b1f78e6c4992760c18d1493e108
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854060"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107914"
 ---
-# <a name="ediscovery-cases-in-the-security--compliance-center"></a>eDiscovery-Fälle im Security #a0 Compliance Center
+# <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Verwalten von eDiscovery-Fällen im Security & Compliance Center
 
 Sie können eDiscovery-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um zu steuern, wer eDiscovery-Fälle in Ihrer Organisation erstellen, auf Sie zugreifen und diese verwalten kann. Wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt, können Sie auch mithilfe von eDiscovery-Fällen Suchergebnisse mithilfe Office 365 Advanced eDiscovery analysieren.
   
 Mit einem eDiscovery-Fall können Sie einem Fall Mitglieder hinzufügen, Steuern, welche Arten von Aktionen von bestimmten Fall Mitgliedern ausgeführt werden können, Aufbewahrungsmöglichkeiten für für einen Rechtsfall relevanter Inhaltsspeicher platzieren und mehrere Inhalts suchen mit einem einzigen Fall verknüpfen. Sie können auch die Ergebnisse einer beliebigen Inhaltssuche exportieren, die einem Fall zugeordnet ist, oder Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. eDiscovery-Fälle sind eine gute Möglichkeit, um zu beschränken, wer Zugriff auf Inhaltssuchen und Suchergebnisse für einen bestimmten Rechtsfall in Ihrer Organisation hat.
   
-Verwenden Sie den folgenden Workflow zum Einrichten und Verwenden von eDiscovery-Fällen im Security #a0 Compliance Center und in Advanced eDiscovery.
+Verwenden Sie den folgenden Workflow, um eDiscovery-Fälle im Security #a0 Compliance Center und in Advanced eDiscovery einzurichten und zu verwenden.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -148,7 +148,7 @@ Nachdem Sie einen Fall erstellt haben, besteht der nächste Schritt darin, der A
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Schritt 4: Platzieren von Inhaltsspeicherorten in der Warteschleife
 
-Sie können einen eDiscovery-Fall zum Erstellen von Haltebereichen verwenden, um Inhalte beizubehalten, die möglicherweise für den Fall relevant sind. Sie können die Postfächer und OneDrive für Unternehmen Websites von Personen, die für den Fall Verwalter sind, aufbewahren. Sie können auch das Gruppenpostfach, die SharePoint-Website und die OneDrive für Unternehmen Website für eine Office 365 Gruppe aufbewahren. Ebenso können Sie das Postfach und die Website, die Microsoft Teams zugeordnet sind, aufbewahren. Wenn Sie inhaltsspeicherorte in der Warteschleife platzieren, wird der Inhalt so lange aufbewahrt, bis Sie den Haltebereich vom Inhaltsspeicherort entfernen oder bis Sie den Haltebereich löschen.
+Sie können einen eDiscovery-Fall zum Erstellen von Haltebereichen verwenden, um Inhalte beizubehalten, die möglicherweise für den Fall relevant sind. Sie können die Postfächer und OneDrive für Unternehmen Websites von Personen, die für den Fall Verwalter sind, aufbewahren. Sie können auch das Gruppenpostfach, die SharePoint-Website und die OneDrive für Unternehmen Website für eine Office 365 Gruppe aufbewahren. Ebenso können Sie die Postfächer und Websites, die Microsoft Teams oder Jammer Gruppen zugeordnet sind, aufbewahren. Wenn Sie inhaltsspeicherorte in der Warteschleife platzieren, wird der Inhalt so lange aufbewahrt, bis Sie den Haltebereich vom Inhaltsspeicherort entfernen oder bis Sie den Haltebereich löschen.
 
 > [!NOTE]
 > Nachdem Sie die Aufbewahrungsdauer eines Inhalts gespeichert haben, dauert es bis zu 24 Stunden, bis der Haltestatus wirksam wird. 
@@ -186,14 +186,14 @@ So erstellen Sie einen Aufbewahrungsplatz für einen eDiscovery-Fall:
     
     ![Wählen Sie Inhaltsspeicherorte aus, die im Haltebereich platziert werden sollen.](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Exchange-e-Mail.** Klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . zur Angabe von Postfächern, die in den Haltebereich verschoben werden. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für eine Office 365 Gruppe oder ein Microsoft-Team aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+   a. **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . zur Angabe von Postfächern, die in den Haltebereich verschoben werden. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für ein Microsoft-Team, eine Jammer Gruppe oder eine Office 365 Gruppe aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
     > [!NOTE]
     > Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um festzulegende Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen. 
-  
-   b. **SharePoint-Websites.** Klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites anzugeben, die in der Warteschleife platziert werden sollen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365 Gruppe oder ein Microsoft-Team hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+
+   b. **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites für die Aufbewahrung festzulegen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, eine Jammer Gruppe oder eine Office 365 Gruppe hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
-    Im Abschnitt [Weitere Informationen](#more-information) finden Sie Tipps zum Platzieren von Office 365 Gruppen und Microsoft Teams in der Warteschleife. 
+    Im Abschnitt [Weitere Informationen](#more-information) finden Sie Tipps zum Platzieren von Microsoft Teams, Jammer Gruppen und Office 365 Gruppen in der Warteschleife. 
     
     > [!NOTE]
     > Im seltenen Fall, dass der Benutzerprinzipalname (UPN) einer Person geändert wird, wird die URL für Ihr OneDrive-Konto ebenfalls geändert, um den neuen UPN zu integrieren. In diesem Fall müssen Sie den Haltebereich ändern, indem Sie die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen. 
@@ -272,7 +272,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     ![Speicherorte, Aufbewahrungsorte](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Alle Standorte.** Wählen Sie diese Option aus, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Wenn Sie diese Option auswählen, können Sie auswählen, dass alle Exchange-Postfächer durchsucht werden sollen (einschließlich der Postfächer für alle Office 365 Gruppen und Microsoft Teams), alle SharePoint-und OneDrive für Unternehmen-Websites (einschließlich der Websites für alle Office 365 Gruppen und Microsoft Teams) und alle öffentlichen Ordner.
+    - **Alle Standorte** – wählen Sie diese Option aus, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Wenn Sie diese Option auswählen, können Sie auswählen, dass alle Exchange-Postfächer durchsucht werden sollen (einschließlich der Postfächer für alle Microsoft Teams, Jammer Gruppen und Office 365 Gruppen), alle SharePoint-und OneDrive für Unternehmen-Websites (einschließlich der Websites für alle Microsoft Teams, Jammer Gruppen und Office 365 Gruppen) und alle öffentlichen Ordner.
     
     - **Alle Aufbewahrungsorte.** Wählen Sie diese Option aus, um alle inhaltsspeicherorte zu durchsuchen, die in der Anfrage gespeichert wurden. Wenn die Groß-/Kleinschreibung mehrere Haltestatus enthält, werden die inhaltsspeicherorte aus allen Haltebereichen durchsucht, wenn Sie diese Option auswählen. Wenn ein Inhaltsspeicherort in einem abfragebasierten Speicherplatz gefunden wurde, werden beim Ausführen der Inhaltssuche, die Sie in diesem Schritt erstellen, nur die Elemente durchsucht, die in der Warteschleife gespeichert sind. Wenn beispielsweise ein Benutzer auf Abfrage basiertem Case Hold gesetzt wurde, der Elemente aufrecht erhält, die vor einem bestimmten Datum gesendet oder erstellt wurden, werden nur diese Elemente mithilfe der Suchkriterien der Inhaltssuche durchsucht. Dies wird erreicht, indem die Case Hold-Abfrage und die Inhalts Suchabfrage durch einen **and-** Operator verbunden werden. Weitere Informationen zum Suchen von Fall Inhalten finden Sie im Abschnitt [Weitere Informationen](#more-information) am Ende dieses Artikels. 
     
@@ -288,9 +288,9 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
       - Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um die zu durchsuchenden Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Klicken Sie zum Hinzufügen von Empfängern zu dieser Liste auf **Benutzer, Gruppen oder Teams auswählen**, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, aktivieren Sie das Kontrollkästchen neben dem Namen, und klicken Sie dann auf **auswählen**. 
     
-      - Sie können inaktive Postfächer, Office 365 Gruppen, Microsoft Teams und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Office 365 Gruppen oder Microsoft Teams hinzufügen, wird das Gruppen-oder Team Postfach durchsucht. Die Postfächer der Gruppenmitglieder werden nicht durchsucht.
+      - Sie können inaktive Postfächer, Microsoft Teams, Jammer Gruppen, Office 365 Gruppen und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Microsoft Teams, Jammer Gruppen oder Office 365 Gruppen hinzufügen, wird das Gruppen-oder Team Postfach durchsucht. die Postfächer der Gruppenmitglieder werden nicht durchsucht.
     
-      - Klicken Sie zum Hinzufügen von Websites auf **Websites auswählen**, dann auf **Websites erneut auswählen** , und geben Sie dann die URL für jede Website ein, die Sie durchsuchen möchten. Sie können auch die URL für die SharePoint-Website für Office 365 Gruppen und Microsoft Teams hinzufügen. 
+      - Klicken Sie zum Hinzufügen von Websites auf **Websites auswählen**, dann auf **Websites erneut auswählen** , und geben Sie dann die URL für jede Website ein, die Sie durchsuchen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, eine Jammer Gruppe oder eine Office 365 Gruppe hinzufügen. 
     
 10. Nachdem Sie die zu durchsuchenden inhaltsspeicherorte ausgewählt haben, klicken Sie auf **Fertig** und dann auf **Speichern**.
     
@@ -519,6 +519,30 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
     
     Wenn der Prozess abgeschlossen ist, wird der Status des Falles in **Active** auf der **eDiscovery** -Seite geändert. 
   
+## <a name="optional-step-11-delete-a-case"></a>Optional Schritt 11: Löschen einer Anfrage
+
+Sie können auch aktive und abgeschlossene Fälle löschen. Wenn Sie einen Fall löschen, werden alle Suchvorgänge und Exporte gelöscht und aus der Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center entfernt. Sie können einen gelöschten Fall nicht erneut öffnen. 
+
+Bevor Sie einen Fall löschen können (ob er aktiv oder geschlossen ist), müssen Sie zunächst *alle* Haltestatus löschen, die mit der Groß-/Kleinschreibung verknüpft sind. Dies umfasst das Löschen von Haltebereichen mit dem Status **Off**. 
+
+So löschen Sie einen Haltestatus:
+
+1. Wechseln Sie zur Registerkarte halte **Status** , falls Sie löschen möchten.
+
+2. Klicken Sie auf den Haltestatus, den Sie löschen möchten.
+
+3. Klicken Sie auf der Flyout-Seite auf **Haltestatus löschen**.
+
+So löschen Sie einen Fall:
+
+1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+    
+2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie löschen möchten.
+
+3. Klicken Sie unter **Fall Status verwalten** auf der Flyout-Seite auf **Fall löschen**.
+
+Wenn der Fall, den Sie löschen möchten, noch enthält, wird eine Fehlermeldung angezeigt. Sie müssen alle dem Fall zugeordneten haltebereiche löschen und dann erneut versuchen, die Groß-/Kleinschreibung zu löschen.
+
 ## <a name="more-information"></a>Weitere Informationen
 
 - **Gibt es Einschränkungen für eDiscovery-Fälle oder haltebereiche, die einem eDiscovery-Fall zugeordnet sind?** In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Case-Holds aufgeführt.
@@ -527,7 +551,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
   |Maximale Anzahl von Fall Behältern für eine Organisation  <br/> |10.000  <br/> |
-  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1.000  <br/> |
+  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1,000  <br/> |
   |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites in einem einzigen Aufbewahrungs Fall  <br/> |100  <br/> |
    
 - **Was geschieht mit Fällen, die auf der Seite Fallverwaltung in Advanced eDiscovery erstellt wurden?** Sie können auf eine Liste älterer erweiterter eDiscovery-Fälle zugreifen, indem Sie auf der Seite **eDiscovery** im Security #a0 Compliance Center auf den Link unten klicken. Um jedoch in einem älteren Fall arbeiten zu können, müssen Sie sich an Office 365 Support wenden und die Anfrage dazu stellen, dass der Fall in einen neuen eDiscovery-Fall im Security #a0 Compliance Center verschoben wird. 
@@ -558,7 +582,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
     
 - **Wenn ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto, das in der Warteschleife ist, in eine andere Region in einer Multi-Geo-Umgebung verschoben wird, wird der Haltebereich dennoch angewendet?** In allen Fällen werden die Inhalte in einem Postfach-, Standort-oder OneDrive-Konto weiterhin beibehalten. Die Aufbewahrungs Statistik enthält jedoch keine Elemente mehr von einem Inhaltsspeicherort, der in eine andere Region verschoben wurde. Wenn Sie Aufbewahrungs Statistiken für einen verschobenen Inhaltsspeicherort einschließen möchten, müssen Sie den Aufbewahrungsplatz bearbeiten und die URL (oder SMTP-Adresse eines Postfachs) aktualisieren, damit der Inhaltsspeicherort wieder in die halte Statistik aufgenommen wird. 
     
-- **Was ist mit dem Platzieren eines Haltestatus für Office 365 Gruppen und Microsoft Teams?** Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es ähnlich, dass Sie in einem eDiscovery-Fall in den Haltebereich versetzt werden. Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte. 
+- **Was ist mit dem Platzieren eines Haltestatus für Office 365 Gruppen und Microsoft Teams?** Microsoft Teams ist auf Office 365 Gruppen aufgebaut. Daher ist es ähnlich, dass Sie in einem eDiscovery-Fall in den Haltebereich versetzt werden. Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte. 
     
   - Zum Platzieren von Inhalten in Office 365 Gruppen und in Microsoft Teams müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind.
     

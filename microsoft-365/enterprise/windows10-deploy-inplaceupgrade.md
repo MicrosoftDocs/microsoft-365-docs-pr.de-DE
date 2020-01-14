@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 08d10dae35023d3e1d9f1e98d36e52f283ec04fa
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669680"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112689"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
@@ -27,7 +27,7 @@ Der einfachste Weg zum Upgrade von PCs, auf denen Windows 7 oder Windows 8.1 auf
 
 Wenn Sie über vorhandene Computer verfügen, auf denen Windows 7 oder Windows 8.1 läuft, wird dieser Pfad empfohlen, wenn Ihre Organisation Windows 10 bereitstellt. Dadurch wird das Windows-Installationsprogramm (Setup. exe) verwendet, um ein direktes Upgrade durchzuführen, mit dem alle Daten, Einstellungen, Anwendungen und Treiber aus der vorhandenen Betriebssystemversion automatisch beibehalten werden. Dies erfordert den geringsten IT-Aufwand, da keine komplexe Bereitstellungsinfrastruktur erforderlich ist.
 
-Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Image mithilfe von Configuration Manager als direktes Upgrade zu konfigurieren und bereitzustellen.
+Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Image mithilfe von Microsoft Endpoint Configuration Manager als direktes Upgrade zu konfigurieren und bereitzustellen.
 
 ## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Die Windows 10-Bereitstellung mit dem Configuration Manager-Poster
 
@@ -45,7 +45,7 @@ Weitere Informationen, erste Schritte, Verwendung und Problembehandlung für das
 
 Führen Sie als nächstes die Anleitung aus, um Configuration Manager (Current Branch) zu verwenden, um Windows 7 oder höheres Betriebssystem auf Windows 10 zu aktualisieren. Wie bei jeder Bereitstellung mit hohem Risiko wird empfohlen, die Benutzerdaten zu sichern, bevor Sie fortfahren. OneDrive Cloud Storage ist für lizenzierte Microsoft 365-Benutzer einsatzfähig und kann verwendet werden, um Ihre Dateien sicher zu speichern. Weitere Informationen finden Sie unter [OneDrive-Schnellstarthandbuch](https://aka.ms/ODfBquickstartguide). Um auf diese Seite zugreifen zu können, müssen Sie sich als mandantenadministrator oder globaler Administrator in einem Office 365-oder Microsoft 365-Mandanten anmelden.
 
-Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für Configuration Manager](https://aka.ms/supportforwin10sccm).
+Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **So überprüfen Sie die Bereitschaft zum Upgrade von Windows**
 
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte aus, um eine Aktualisierungstask Sequenz zu e
 Nachdem Sie die Aktualisierungstask Sequenz erstellt haben, müssen Sie eine Sammlung erstellen, die die zu aktualisierbaren Geräte enthält.
 
 > [!NOTE]
-> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gerätegruppen einzuschließen, wenn Sie dazu fähig sind. Weitere Informationen finden Sie unter [How to Create Collections in Configuration Manager](https://aka.ms/sccm-create-collections).
+> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gerätegruppen einzuschließen, wenn Sie dazu fähig sind. Weitere Informationen finden Sie unter [How to Create Collections in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
 
 1. Klicken Sie in der Configuration Manager-Konsole im Arbeitsbereich **Ressourcen und Kompatibilität** mit der rechten Maustaste auf **gerätesammlungen**, und wählen Sie dann **gerätesammlung erstellen**aus. 
 2. Geben Sie im Assistenten zum Erstellen von gerätesammlungen auf der Seite **Allgemein** die folgenden Einstellungen ein, und wählen Sie dann **weiter**aus:

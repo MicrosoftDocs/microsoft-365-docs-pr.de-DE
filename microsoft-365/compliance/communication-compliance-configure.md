@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8627a46ee861751799e1175c7e030e1b28c6d935
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807374"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111883"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Konfigurieren der Kommunikationscompliance in Microsoft 365 (Vorschau)
 
@@ -42,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um die Kommunikations Konformität in Ih
 
 - **Schritt 2 (erforderlich)**: [Stellen Sie die Kommunikations Konformität in Ihrer Organisation zur Verfügung](#step-2-make-communication-compliance-available-in-your-organization-required) .
 
-    Fügen Sie sich selbst der **Aufsichts Überprüfungs Administrator** Rolle hinzu, damit Sie Richtlinien einrichten können. Sie müssen außerdem eine Gruppe mit den **Aufsichts Überprüfungs Administratoren**, der **Fallverwaltung**und den **Überprüfungs** Rollen für Personen oder Gruppen erstellen, die Ermittlungs-und Korrekturaktionen für Nachrichten mit Richtlinien Übereinstimmungen durchführen sollen. Jeder, dem diese Rollen zugewiesen sind, kann im Microsoft 365 Compliance Center auf die Seite " **Kommunikations Kompatibilität** " zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
+    Fügen Sie sich selbst der **Aufsichts Überprüfungs Administrator** Rolle hinzu, damit Sie Richtlinien einrichten können. Außerdem müssen Sie eine neue Gruppe mit dem **Aufsichts Überprüfungs Administrator**, der **Fallverwaltung**und den **Überprüfungs** Rollen für Personen oder Gruppen erstellen, die Ermittlungs-und Korrekturaktionen für Nachrichten mit Richtlinien Übereinstimmungen durchführen sollen. Jeder, dem diese Rollen zugewiesen sind, kann im Microsoft 365 Compliance Center auf die Seite " **Kommunikations Kompatibilität** " zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
 
 - **Schritt 3 (erforderlich)**: [Einrichten einer Kommunikations Konformitätsrichtlinie](#step-3-create-a-communication-compliance-policy-required)
 
@@ -88,15 +88,17 @@ Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance 
 
 ### <a name="create-a-new-role-group"></a>Erstellen einer neuen Rollengruppe
 
-1. Melden Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an.
+1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
-2. Wechseln Sie im Microsoft 365 Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+2. Wechseln Sie im Microsoft Office 365 Security and Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
 3. Wählen Sie **Erstellen** aus.
 
 4. Geben Sie der neuen Rollengruppe im Feld **Name** einen Anzeigenamen. Wählen Sie **Weiter** aus.
 
 5. Wählen Sie **Rollen auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für **Aufsichts Überprüfungs Administrator**, **Fallverwaltung**und **Überprüfung**, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
+
+    ![Kommunikation Compliance erforderlich Rollengruppen](media/communication-compliance-role-groups.png)
 
 6. Wählen Sie **Mitglieder auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
 

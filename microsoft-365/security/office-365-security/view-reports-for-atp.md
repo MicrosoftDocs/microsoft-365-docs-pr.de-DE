@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
-ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
+ms.openlocfilehash: 1ddb5a549551e674fb257e4f78c81c5df1eb1a10
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41022385"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112729"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -134,7 +134,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen verschie
 |Bericht (e)  |Details  |
 |---------|---------|
 |**Explorer** oder **Echtzeiterkennung** (Office 365 ATP-Plan 2-Kunden haben Explorer; Office 365 ATP-Plan 1 haben Kunden Echt Zeit Erkennungen.)| [Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)       |
-|**E-Mail-Sicherheitsberichte**wie ein Bericht über die wichtigsten Absender und Empfänger, ein spoof-e-Mail-Bericht und ein Spam Erkennungs Bericht. | [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](../../compliance/view-email-security-reports.md)        |
+|**E-Mail-Sicherheitsberichte**wie ein Bericht über die wichtigsten Absender und Empfänger, ein spoof-e-Mail-Bericht und ein Spam Erkennungs Bericht. | [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md)        |
 |**URL-Ablaufverfolgung für ATP-sichere Links** (Dies ist ein Bericht, den Sie mithilfe von PowerShell generieren.) In diesem Bericht werden die Ergebnisse der Aktionen für ATP-sichere Links in den letzten sieben (7) Tagen dargestellt. |[Get-UrlTrace-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace) |
 |**EoP und ATP-Ergebnisse** (Dies ist ein benutzerdefinierter Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Informationen wie Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.  | [Get-MailTrafficATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport) |
 |**EoP und ATP-Erkennungen** (Dies ist ein benutzerdefinierter Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Details zu bösartigen Dateien oder URLs, Phishing-versuchen, Identitätswechsel und anderen potenziellen Bedrohungen in e-Mails oder Dateien.   | [Get-MailDetailATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)        |

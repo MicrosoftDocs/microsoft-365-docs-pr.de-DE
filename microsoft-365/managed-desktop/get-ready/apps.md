@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913046"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112659"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Apps in Microsoft Managed Desktop
 
@@ -32,7 +32,7 @@ In Ihrer Microsoft Managed Desktop-Lizenz enthalten sind 64-Bit-Versionen der ap
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Was Microsoft zur Unterstützung der von uns bereitgestellten apps tut
 
-Microsoft stellt den vollständigen Dienst für die Bereitstellung, das Update und den Support für die enthaltenen Office 365 ProPlus-apps bereit. Klick-und-Los-Versionen von Microsoft Project und Visio sind *nicht* standardmäßig enthalten, aber Microsoft Managed Desktop stellt Bereitstellungsgruppen bereit, mit denen Ihr IT-Administrator Lizenzen verwalten und diese Anwendungen entsprechend für Ihre Organisation. Microsoft unterstützt Endbenutzer dieser Anwendungen über die Microsoft Managed Desktop-Supportkanäle.
+Microsoft stellt den vollständigen Dienst für die Bereitstellung, das Update und den Support für die enthaltenen Office 365 ProPlus-apps bereit. Klick-und-Los-Versionen von Microsoft Project und Visio sind *nicht* standardmäßig enthalten, aber Microsoft Managed Desktop stellt Bereitstellungsgruppen zur Verfügung, mit denen Ihr IT-Administrator Lizenzen verwalten und diese Anwendungen entsprechend für Ihre Organisation bereitstellen kann. Microsoft unterstützt Endbenutzer dieser Anwendungen über die Microsoft Managed Desktop-Supportkanäle.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Was Sie zur Unterstützung der von uns bereitgestellten apps tun müssen
 
@@ -46,7 +46,7 @@ Es gibt immer noch bestimmte Dinge, die Sie mit diesen apps tun müssen:
 
 Natürlich haben Sie wahrscheinlich eine Reihe anderer apps, die Sie für Ihre Geschäftsvorgänge benötigen. Diese können nur auf von Microsoft verwalteten Desktop Geräten mithilfe der Bereitstellungs Pipeline von Microsoft InTune bereitgestellt werden. Wenn die APP dies benötigt, können Sie Sie von einem Anbieter verpacken lassen (Dies kann ein Anbieter von Drittanbietern oder Microsoft Consulting Services (MCS) sein), oder wenn Sie über die Mittel verfügen, können Sie diese selbst verpacken. Anschließend fügen Sie diese Pakete dem Microsoft Managed Desktop Portal hinzu und weisen Sie Azure Active Directory Gruppen zu, um die Bereitstellung auszulösen. 
 
-Wenn Sie Ihre apps derzeit mithilfe von System Center Configuration Manager bereitstellen, können Sie von Microsoft Managed Desktop eine Abfrage zur Bewertung Ihrer Apps und zum ermitteln, welche für die Migration zu Microsoft InTune bereit sind und welche möglicherweise eine gewisse Anpassung erforderlich machen. .
+Wenn Sie Ihre apps derzeit mithilfe von Microsoft Endpoint Configuration Manager bereitstellen, kann Ihnen von Microsoft Managed Desktop eine Abfrage zur Bewertung Ihrer Apps und zum ermitteln, welche für die Migration zu Microsoft InTune bereit sind und welche möglicherweise einige erfordern, bereitgestellt werden. Anpassung.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Vorbereiten Ihrer eigenen Apps für die Integration in Microsoft Managed Desktop

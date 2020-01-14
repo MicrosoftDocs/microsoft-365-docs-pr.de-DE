@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962602"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112709"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
@@ -43,10 +43,10 @@ Microsoft Managed Desktop identifiziert jedes Gerät eindeutig, indem es auf sei
 
 #### <a name="configuration-manager"></a>Configuration Manager
 
-Sie können den System Center Configuration Manager verwenden, um die Hardware Hashes von vorhandenen Geräten zu erfassen, die Sie bei Microsoft Managed Desktop registrieren möchten.
+Sie können den Microsoft Endpoint Configuration Manager verwenden, um die Hardware Hashes von vorhandenen Geräten zu erfassen, die Sie bei Microsoft Managed Desktop registrieren möchten.
 
 > [!IMPORTANT]
-> Für alle Geräte, für die Sie diese Informationen abrufen möchten, muss Windows 10, Version 1703 oder höher, installiert sein. Sie benötigen auch ein Gerät, bei dem es sich um einen Configuration Manager-Client handelt, der mit dem aktuellen Zweigstellenstandort von System Center verbunden ist Sie benötigen auch die Reporting Points-Standort System Rolle, die in Ihrer Umgebung mit aktivierter SQL Server Reporting Services eingerichtet wurde. 
+> Für alle Geräte, für die Sie diese Informationen abrufen möchten, muss Windows 10, Version 1703 oder höher, installiert sein. Sie benötigen außerdem ein Gerät, bei dem es sich um einen Configuration Manager-Client handelt, der mit dem Configuration Manager-Standort (Current Branch) verbunden ist. Sie benötigen auch die Reporting Points-Standort System Rolle, die in Ihrer Umgebung mit aktivierter SQL Server Reporting Services eingerichtet wurde. 
 
 Wenn Sie alle diese Voraussetzungen erfüllt haben, können Sie die Informationen mit den folgenden Schritten erfassen:
 
@@ -148,7 +148,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. Greifen Sie auf alle Verzeichnisse zu, in denen Einträge für die Geräte vorhanden sein können. Entfernen Sie Einträge für jedes Gerät aus *allen* Verzeichnissen, einschließlich Windows Server Active Directory-Domänendienste und Azure Active Directory. Beachten Sie, dass diese Entfernung einige Stunden dauern kann, um den Vorgang vollständig zu verarbeiten.
-4. Access Management Services, bei denen Einträge für die Geräte vorhanden sein können. Entfernen Sie Einträge für jedes Gerät aus *allen* Verwaltungsdiensten, einschließlich System Center Configuration Manger, Microsoft InTune und Windows Autopilot. Beachten Sie, dass diese Entfernung einige Stunden dauern kann, um den Vorgang vollständig zu verarbeiten.
+4. Access Management Services, bei denen Einträge für die Geräte vorhanden sein können. Entfernen Sie Einträge für jedes Gerät aus *allen* Verwaltungsdiensten, einschließlich Microsoft Endpoint Configuration Manger, Microsoft InTune und Windows Autopilot. Beachten Sie, dass diese Entfernung einige Stunden dauern kann, um den Vorgang vollständig zu verarbeiten.
 
 Jetzt können Sie mit dem [Registrieren von Geräten](#register-devices)fortfahren.
 

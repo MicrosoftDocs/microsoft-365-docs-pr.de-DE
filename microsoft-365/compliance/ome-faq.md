@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962562"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111859"
 ---
 # <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
 
@@ -141,7 +141,7 @@ Ja! Informationen zum Anpassen von e-Mail-Nachrichten und zum OM-Portal finden S
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Gibt es Berichtsfunktionen oder Einblicke in verschlüsselte e-Mails?
 
-Es gibt einen Verschlüsselungs Bericht im Security and Compliance Center. Weitere Informationen finden Sie unter [Anzeigen von e-Mail-Sicherheitsberichten im Security #a0 Compliance Center](view-email-security-reports.md).
+Es gibt einen Verschlüsselungs Bericht im Security and Compliance Center. Weitere Informationen finden Sie unter [Anzeigen von e-Mail-Sicherheitsberichten im Security #a0 Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Kann ich Nachrichtenverschlüsselung mit Compliance-Features wie eDiscovery verwenden?
 

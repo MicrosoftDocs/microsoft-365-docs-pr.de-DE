@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie diesen Artikel als Leitfaden zum Konfigurieren der Features für den Bedrohungsschutz jetzt.
-ms.openlocfilehash: b4e3aba1b03d9c5df9eae50813169a9b9d394f6f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2c2e67334f90b24ec60bc7af01451805b32037cc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808050"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112009"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
@@ -205,7 +205,7 @@ Weitere Informationen finden Sie unter [Zero-Hour Auto Purge – Schutz vor Spam
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>Überwachungsprotokollierung für die Berichterstellung und Untersuchung
 
-Die Überwachungsprotokollierung steht in Abonnements zur Verfügung, die [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)umfassen. Um Daten in Threat Protection-Berichten wie dem [Sicherheits Dashboard](security-dashboard.md), [e-Mail-Sicherheitsberichten](../../compliance/view-email-security-reports.md)und dem [Explorer](threat-explorer.md)anzuzeigen, muss die Überwachungsprotokollierung für Ihre Organisation aktiviert sein. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
+Die Überwachungsprotokollierung steht in Abonnements zur Verfügung, die [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)umfassen. Um Daten in Threat Protection-Berichten wie dem [Sicherheits Dashboard](security-dashboard.md), [e-Mail-Sicherheitsberichten](view-email-security-reports.md)und dem [Explorer](threat-explorer.md)anzuzeigen, muss die Überwachungsprotokollierung für Ihre Organisation aktiviert sein. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="post-setup-tasks"></a>Aufgaben nach dem Setup
 
@@ -213,6 +213,6 @@ Nachdem Sie die Features für den Schutz vor Bedrohungen konfiguriert haben, mü
 
 |Nächste Schritte|Ressourcen mit mehr Informationen|
 |---------|---------|
-|Erfahren Sie, wie die Features für den Schutz von Bedrohungen für Ihre Organisation durch Anzeigen von Berichten funktionieren.|[Sicherheits Dashboard](security-dashboard.md)<br/>[E-Mail-Sicherheitsberichte](../../compliance/view-email-security-reports.md)<br/>[Reportagen für Office 365 ATP](view-reports-for-atp.md)<br/>[Sicherheitsrisiken-Explorer](threat-explorer.md)|
+|Erfahren Sie, wie die Features für den Schutz von Bedrohungen für Ihre Organisation durch Anzeigen von Berichten funktionieren.|[Sicherheits Dashboard](security-dashboard.md)<br/>[E-Mail-Sicherheitsberichte](view-email-security-reports.md)<br/>[Reportagen für Office 365 ATP](view-reports-for-atp.md)<br/>[Sicherheitsrisiken-Explorer](threat-explorer.md)|
 |Regelmäßige Überprüfung und Überarbeitung ihrer Threat Protection-Richtlinien nach Bedarf|[Sicherheitsbewertung](../mtp/microsoft-secure-score.md)<br/>[Intelligente Berichte und Einblicke](reports-and-insights-in-security-and-compliance.md)<br/>[Untersuchung und Antwortfunktionen für Office 365 Bedrohungen](keep-users-safe-with-office-365-ti.md)|
 |Überwachen neuer Features und dienstupdates|[Standard mäßige und gezielte Veröffentlichungsoptionen](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Nachrichtencenter](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Dienstbeschreibungen](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
