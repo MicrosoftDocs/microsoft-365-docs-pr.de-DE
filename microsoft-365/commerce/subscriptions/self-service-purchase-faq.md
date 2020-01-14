@@ -13,17 +13,19 @@ search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806238"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120156"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
 > [!NOTE]
 > Die Informationen in diesem Artikel gelten nur für Microsoft Power Platform-Abonnements (Power BI, Power apps und Power automatisieren).
+
+Self-Service-Käufe stehen jetzt für Power BI in den USA zur Verfügung.
 
 ## <a name="general"></a>Allgemein
 
@@ -39,9 +41,9 @@ Ab dem 14. Januar 2020 werden Self-Service Purchase-, Subscription-und License M
 
 In der heutigen Welt suchen Endbenutzer und Abteilungen zunehmend nach und kaufen Technologielösungen ein. Wir haben zahlreiche Anfragen von diesen Kunden erhalten, um Self-Service-Erwerb von Power Platform-Produkten zu ermöglichen. Wir reagieren auf diese Kundenanforderung und gleichzeitig die Anforderungen von IT-Administratoren, die häufig die Sichtbarkeit und Kontrolle verlieren, wenn Personen innerhalb Ihrer Organisation Lösungen von Drittanbietern ohne Ihr Wissen einführen. Mit der anstehenden Self-Service-Funktion für Power Platform-Produkte haben IT-Administratoren vollständige Sichtbarkeit für alle Self-Service-Käufe innerhalb Ihrer Organisation, und auf Organisationsebene festgelegte Daten Steuerungsrichtlinien werden für Abonnements, die über Self-Service erworben wurden. Administratoren können auch vorhandene Lizenzen oder zusätzliche Abonnements von Power Platform-Produkten über vorhandene Vereinbarungen und Preise für Benutzer, die Self-Service-Käufen zugewiesen sind, zuweisen. Nach dem Zuweisen dieser zentral erworbenen Lizenzen können Administratoren dann anfordern, dass die Käufer Ihre vorhandenen Abonnements kündigen. Microsoft untersucht Möglichkeiten zur Vereinfachung und Rationalisierung dieses Prozesses für Administratoren in der Zukunft.
 
-### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>Wann ist Self-Service-Erwerb für die Produkte der Power Platform verfügbar?
+### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>Welche Power Platform-Produkte stehen für Self-Service-Käufe zur Verfügung?
 
-Microsoft startet Self-Service-Kauf für Power BI am 14. Januar 2020 an Kunden in den Vereinigten Staaten, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. Power apps und Power Automation werden in den folgenden Wochen hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
+Microsoft hat Self-Service-Kauf für Power BI für Kunden in den USA gestartet, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. Power apps und Power Automation werden für Kunden in den Vereinigten Staaten am 28. Januar 2020 hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Kann Self-Service-Einkauf für Dienste außerhalb der Power Platform-Produkte aktiviert werden?
 

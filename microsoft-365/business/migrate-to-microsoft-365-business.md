@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Schritte zum Upgrade Ihres Unternehmens von Office 365 Business Premium auf Microsoft 365 Business.
-ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640559"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120139"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Upgrade auf Microsoft 365 Business von Office 365 Business Premium
 
@@ -68,7 +68,7 @@ Es dauert ein paar Minuten, bis Microsoft die neuen Dienstpläne eingerichtet ha
 1. Sobald Ihr Plan fertig ist, müssen Sie möglicherweise einige zusätzliche Setupschritte im Admin Center ausführen. Wählen Sie im Navigationsbereich die Option **Home** aus, um alle weiteren Setupschritte abzuschließen.
 
 > [!NOTE]
-> Sie erhalten eine anteilige Erstattung für die Ofifce 365-Lizenzen, die Sie nicht mehr benötigen. Ihr Bankkonto oder Ihre Kreditkarte wird etwa zwei Tage nach der Einrichtung des neuen Plans belastet.
+> Sie erhalten eine anteilige Erstattung für die Office 365 Lizenzen, die Sie nicht mehr benötigen. Ihr Bankkonto oder Ihre Kreditkarte wird etwa zwei Tage nach der Einrichtung des neuen Plans belastet.
   
 ## <a name="protect-user-devices-and-files"></a>Schützen von Benutzergeräten und-Dateien
 
