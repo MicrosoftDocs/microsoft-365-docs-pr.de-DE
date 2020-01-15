@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
-ms.openlocfilehash: d76f92de4b41c7f6f0494af36a7e1aee953b9896
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911473"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123656"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -328,6 +328,12 @@ In diesem Beispiel werden e-Mail-Nachrichten oder Kalender Besprechungen zurück
   
  `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
   
+## <a name="special-characters"></a>Spezielle Zeichen
+
+Einige Sonderzeichen sind nicht im Suchindex enthalten und können daher nicht durchsucht werden. Dies umfasst auch die Sonderzeichen, die Suchoperatoren in der Suchabfrage darstellen. Im folgenden finden Sie eine Liste spezieller Zeichen, die entweder durch ein leeres Leerzeichen in der tatsächlichen Suchabfrage ersetzt werden oder einen Suchfehler verursachen.
+
+`+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Suchen nach Websiteinhalten, die für externe Benutzer freigegeben sind
 
 Sie können auch das Feature für die Inhaltssuche im Security #a0 Compliance Center verwenden, um nach Dokumenten zu suchen, die in SharePoint gespeichert sind, und OneDrive für Unternehmen Websites, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dies kann Ihnen helfen, vertrauliche oder proprietäre Informationen zu identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Sie können dies tun, indem Sie `ViewableByExternalUsers` die-Eigenschaft in einer Stichwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die für externe Benutzer freigegeben wurden, indem Sie eine der folgenden Freigabemethoden verwenden: 
@@ -400,21 +406,19 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 ## <a name="search-tips-and-tricks"></a>Tipps und Tricks für die Suche
 
 - Bei Stichwort suchen wird die Groß-/Kleinschreibung nicht beachtet. Beispielsweise geben **katze** und **KATZE** dieselben Ergebnisse zurück. 
-    
-- Die booleschen Operatoren **and**, **or**, **Not**, **near**und **ONEAR** müssen groß geschrieben sein. 
-    
-- A space between two keywords or two  `property:value` expressions is the same as using **AND**. `from:"Sara Davis" subject:reorganization` Gibt beispielsweise alle von Sara Davis gesendeten Nachrichten zurück, die das Wort Reorganization in der Betreffzeile enthalten. 
-    
-- Verwenden Sie eine Syntax, `property:value` die mit dem Format übereinstimmt. Bei Werten wird die Groß-/Kleinschreibung nicht beachtet, und nach dem Operator kann kein Leerzeichen vorhanden sein. Wenn ein Leerzeichen vorhanden ist, handelt es sich bei dem vorgesehenen Wert um eine Volltextsuche. Beispielsweise `to: pilarp` wird nach "pilarp" als Schlüsselwort gesucht, statt an Nachrichten, die an pilarp gesendet wurden. 
-    
-- Wenn Sie nach einer Empfängereigenschaft wie An, Von, Cc oder Empfänger suchen, können Sie eine SMTP-Adresse, einen Alias oder einen Anzeigenamen verwenden, um einen Empfänger anzugeben. Sie können z. B. pilarp@contoso.com, pilarp oder "Pilar Pinilla" verwenden.
-    
-- Sie können nur Präfix-Platzhaltersuchen verwenden; beispielsweise **Cat\* ** oder **Sets\***. Suffix-suchen (**\*Cat**), Infix-suchen (**\*c t**) und Teil Zeichenfolgensuchen (**\*Cat\***) werden nicht unterstützt. 
-    
-- Verwenden Sie beim Durchsuchen einer Eigenschaft doppelte Anführungszeichen (""), wenn der Suchwert aus mehreren Wörtern besteht. Gibt Beispiels `subject:budget Q1` Weise Nachrichten zurück, die das **Budget** in der Betreffzeile enthalten und das **Q1** an einer beliebigen Stelle in der Nachricht oder in einer der Nachrichteneigenschaften enthalten. Using `subject:"budget Q1"` gibt alle Nachrichten zurück, die das **Budget Q1** an beliebiger Position in der Betreffzeile enthalten. 
-    
-- Wenn Sie Inhalte mit einem bestimmten Eigenschaftswert in den Suchergebnissen ausschließen möchten, fügen Sie ein Minuszeichen (-) vor dem Namen der Eigenschaft hinzu. `-from:"Sara Davis"` Schließt beispielsweise alle von Sara Davis gesendeten Nachrichten aus.
 
-- Einige Sonderzeichen sind nicht im Suchindex enthalten und sind daher nicht durchsuchbar, dazu gehören die Operatoren für die Suche (+-=:) und die folgenden Zeichen, die entweder durch ein $Null ersetzt werden oder Fehler verursachen können, wenn nachgesucht wird! @ #% ^ &; _ / ?
+- Die booleschen Operatoren **and**, **or**, **Not**, **near**und **ONEAR** müssen groß geschrieben sein. 
+
+- A space between two keywords or two  `property:value` expressions is the same as using **AND**. `from:"Sara Davis" subject:reorganization` Gibt beispielsweise alle von Sara Davis gesendeten Nachrichten zurück, die das Wort Reorganization in der Betreffzeile enthalten. 
+
+- Verwenden Sie eine Syntax, `property:value` die mit dem Format übereinstimmt. Bei Werten wird die Groß-/Kleinschreibung nicht beachtet, und nach dem Operator kann kein Leerzeichen vorhanden sein. Wenn ein Leerzeichen vorhanden ist, handelt es sich bei dem vorgesehenen Wert um eine Volltextsuche. Beispielsweise `to: pilarp` wird nach "pilarp" als Schlüsselwort gesucht, statt an Nachrichten, die an pilarp gesendet wurden. 
+
+- Wenn Sie nach einer Empfängereigenschaft wie An, Von, Cc oder Empfänger suchen, können Sie eine SMTP-Adresse, einen Alias oder einen Anzeigenamen verwenden, um einen Empfänger anzugeben. Sie können z. B. pilarp@contoso.com, pilarp oder "Pilar Pinilla" verwenden.
+
+- Sie können nur Präfix-Platzhaltersuchen verwenden; beispielsweise **Cat\* ** oder **Sets\***. Suffix-suchen (**\*Cat**), Infix-suchen (**\*c t**) und Teil Zeichenfolgensuchen (**\*Cat\***) werden nicht unterstützt.
+
+- Verwenden Sie beim Durchsuchen einer Eigenschaft doppelte Anführungszeichen (""), wenn der Suchwert aus mehreren Wörtern besteht. Gibt Beispiels `subject:budget Q1` Weise Nachrichten zurück, die das **Budget** in der Betreffzeile enthalten und das **Q1** an einer beliebigen Stelle in der Nachricht oder in einer der Nachrichteneigenschaften enthalten. Using `subject:"budget Q1"` gibt alle Nachrichten zurück, die das **Budget Q1** an beliebiger Position in der Betreffzeile enthalten.
+
+- Wenn Sie Inhalte mit einem bestimmten Eigenschaftswert in den Suchergebnissen ausschließen möchten, fügen Sie ein Minuszeichen (-) vor dem Namen der Eigenschaft hinzu. `-from:"Sara Davis"` Schließt beispielsweise alle von Sara Davis gesendeten Nachrichten aus.
 
 - Sie können Elemente auf der Grundlage des Nachrichtentyps exportieren. Um beispielsweise Skype-Unterhaltungen und-Chats in Microsoft Teams zu exportieren `kind:im`, verwenden Sie die Syntax. Wenn Sie nur e-Mail-Nachrichten `kind:email`zurückgeben möchten, verwenden Sie. Um Chats, Besprechungen und Anrufe in Microsoft Teams zurückzugeben, `kind:microsoftteams`verwenden Sie.
