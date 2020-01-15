@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatisierte Upgrades von Windows 7 auf Windows 10 für große Organisationen
-ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078084"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112699"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>In-Place-Upgrades von Windows 7 auf Windows 10 für große Organisationen
 
@@ -40,7 +40,7 @@ In-Place-Upgrades auf Windows 10 sind ein zuverlässiger Ansatz zum Aktualisiere
 
 Der Upgradeprozess sichert Ihre vorherige Windows-Installation standardmäßig als Teil des Upgrades, damit bei einem Upgradefehler oder falls ein Gerät oder eine Anwendung nach dem Upgrade nicht ordnungsgemäß funktionieren sollte, ein Rollback auf Windows 7 möglich ist. Bei aktualisierten PCs haben Sie standardmäßig 10 Tage Zeit, um bei Bedarf manuell einen Rollback auf Windows 7 einleiten zu können.
 
-In-Place-Upgrades lassen sich mit Betriebssystem-Bereitstellungstools wie [System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) oder dem [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit) automatisieren. In diesem Artikel werden die automatisierten Ansätze und Optimierungen. Er enthält außerdem Links zu verwandten Ressourcen für zusätzliche Hilfe.
+In-Place-Upgrades lassen sich mit Betriebssystem-Bereitstellungstools wie [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) oder dem [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit) automatisieren. In diesem Artikel werden die automatisierten Ansätze und Optimierungen. Er enthält außerdem Links zu verwandten Ressourcen für zusätzliche Hilfe.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Aktualisieren einer kleinen Anzahl von Computern
 
@@ -48,7 +48,7 @@ Bei einem einzelnen oder einer geringen Anzahl Computer ist die manuelle Methode
 
 ## <a name="how-to-upgrade-many-computers"></a>So führen Sie ein Upgrade vieler Computer durch
 
-Wenn Sie Dutzende oder Tausende von Computern verwalten, empfiehlt es sich, In-Place-Upgrades mithilfe der Aufgabensequenz-Automatisierung mit System Center Configuration Manager oder dem Microsoft Deployment Toolkit durchzuführen. Der Vorgang ist in den meisten Situationen sehr zuverlässig, je nach Anzahl der PCs, die Sie upgraden, ist es trotzdem sinnvoll, über die erforderlichen Tests und Steuerelemente zu verfügen, um das Upgrade bei großen Umfängen zu sichern.
+Wenn Sie Dutzende oder Tausende von Computern verwalten, empfiehlt es sich, In-Place-Upgrades mithilfe der Tasksequenz-Automatisierung mit Microsoft Endpoint Configuration Manager oder dem Microsoft Deployment Toolkit durchzuführen. Der Vorgang ist in den meisten Situationen sehr zuverlässig, je nach Anzahl der PCs, die Sie upgraden, ist es trotzdem sinnvoll, über die erforderlichen Tests und Steuerelemente zu verfügen, um das Upgrade bei großen Umfängen zu sichern.
 
 Dies bedeutet, dass Sie die Verzeichnisuntersuchung oder Aufgaben, die Azure Active Directory, Office und Branchen-App-Zustellung und Paketerstellung sowie der Migration von Benutzerdateien zugeordnet sind, überspringen können, da diese Elemente als Teil des Upgrades beibehalten werden und die Sicherheitsmaßnahmen zumindest übernommen werden sollten. Diese Bereiche können im Verlauf der Zeit erweitert werden.
 
@@ -78,13 +78,13 @@ Zu den häufigsten Gründen, warum Upgrades möglicherweise nicht abgeschlossen 
 
   - Codelösungen auf niedriger Stufe, z. B. Antischadsoftware, VPN oder Virtualisierung
 
-Die Vorlagen für [Upgrade-Aufgabensequenzen](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sind in System Center Configuration Manager (Current Branch) integriert und seit mehreren Versionen verfügbar. Die Technologie von System Center Configuration Manager wurde bei aktuellen Versionen erheblich verbessert, um den Prozess noch effizienter zu gestalten im Hinblick auf die Ermittlung der Kompatibilität von Geräten und Office, die Reduzierung des Netzwerkdatenverkehrs und die Konfiguration neuer Optionen wie etwa OneDrive Backup. Sehen Sie sich diese [Microsoft Mechanics-Präsentation](https://youtu.be/CYRnAmCD7ls) an, um mehr über die neuesten Updates für die System Center Configuration Manager-BS-Bereitstellung zu erfahren.
+Die Vorlagen für [Upgrade-Tasksequenzen](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sind in Microsoft Endpoint Configuration Manager (Current Branch) integriert und seit mehreren Versionen verfügbar. Die Technologie von Configuration Manager wurde bei aktuellen Versionen erheblich verbessert, um den Prozess noch effizienter zu gestalten im Hinblick auf die Ermittlung der Kompatibilität von Geräten und Office, die Reduzierung des Netzwerkdatenverkehrs und die Konfiguration neuer Optionen wie etwa OneDrive Backup. Sehen Sie sich diese [Microsoft Mechanics-Präsentation](https://youtu.be/CYRnAmCD7ls) an, um mehr über die neuesten Updates für die Configuration Manager-BS-Bereitstellung zu erfahren.
 
-Wenn Sie System Center Configuration Manager nicht verwenden, können Sie mithilfe des Microsoft Deployment Toolkits Aufgabensequenzen für die Aktualisierungsbereitstellung erstellen und ausführen.
+Wenn Sie Microsoft Endpoint Configuration Manager nicht verwenden, können Sie mithilfe des Microsoft Deployment Toolkits Tasksequenzen für die Upgradebereitstellung erstellen und ausführen.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Upgrades durch vorabzwischengespeicherte Aufgabensequenzen
 
-Clients können mithilfe des [Features „vorgeschalteter Cache“ (pre-cache, Vorabzwischenspeicherung)](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) für Bereitstellungsaufgabensequenzen in Configuration Manager relevante Paketinhalte des BS-Upgrades herunterladen, bevor die Aufgabensequenz das Betriebssystem aktualisiert. Bisher wurde durch das Initiieren der Aufgabensequenz der Download von Paketinhalten gestartet. Vorabzwischengespeicherte Inhalte bieten Clients zudem die Möglichkeit, nur das jeweils zutreffende BS-Upgrade-Paket sowie alle anderen referenzierten Inhalte herunterzuladen, sobald die Bereitstellung empfangen wird.
+Clients können mithilfe des [Features „vorgeschalteter Cache“ (pre-cache, Vorabzwischenspeicherung)](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) für Bereitstellungsaufgabensequenzen in Configuration Manager relevante Paketinhalte des BS-Upgrades herunterladen, bevor die Aufgabensequenz das Betriebssystem aktualisiert. Bisher wurde durch das Initiieren der Aufgabensequenz der Download von Paketinhalten gestartet. Vorabzwischengespeicherte Inhalte bieten Clients zudem die Möglichkeit, nur das jeweils zutreffende BS-Upgrade-Paket sowie alle anderen referenzierten Inhalte herunterzuladen, sobald die Bereitstellung empfangen wird.
 
 Vorabzwischengespeicherte Aufgabensequenzen in Kombination mit Kompatibilitätsüberprüfungen
 

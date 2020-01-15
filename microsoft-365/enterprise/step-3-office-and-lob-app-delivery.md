@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Liefern von Office- und Branchen-Apps.
-ms.openlocfilehash: fdb16aa9d92e3fd2608ca3738dc5af80389f18ea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031530"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112587"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Schritt 3: Liefern von Office- und Branchen-Apps
 
@@ -49,7 +49,7 @@ Es gibt viele Methoden und Modelle für die Installation von Apps unter Windows.
 
 Für Ihre Branchen-Apps verwenden Sie wahrscheinlich MSI-basierte Pakete oder ausführbare Dateien, und Sie installieren Apps als Teil einer Aufgabensequenz für die Betriebssystembereitstellung. In Windows 10 werden diese Pakete weiterhin verwendet.
 
-Software-Bereitstellungstools wie System Center Configuration Manager und Microsoft Intune sind ebenfalls für die Lieferung von Apps in MSI-Paketen optimiert. Nachdem Sie Ihre Apps unter Windows 10 geprüft haben, können Sie System Center Configuration Manager (aktueller Zweig) für die App-Lieferung verwenden. Wenn Sie das Unternehmensportal in Microsoft Intune verwenden, können Sie die Auswahl der von der IT genehmigten Apps, die Ihrer Organisation zu Verfügung stehen, erweitern, sodass auch die neuesten Anwendungen enthalten sind. Benutzer können dann selbst auswählen, was sie benötigen.
+Software-Bereitstellungstools wie Microsoft Endpoint Configuration Manager und Microsoft Intune sind ebenfalls für die Lieferung von Apps in MSI-Paketen optimiert. Nachdem Sie Ihre Apps unter Windows 10 geprüft haben, können Sie Microsoft Endpoint Configuration Manager (Current Branch) für die App-Lieferung verwenden. Wenn Sie das Unternehmensportal in Microsoft Intune verwenden, können Sie die Auswahl der von der IT genehmigten Apps, die Ihrer Organisation zu Verfügung stehen, erweitern, sodass auch die neuesten Anwendungen enthalten sind. Benutzer können dann selbst auswählen, was sie benötigen.
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
@@ -61,7 +61,7 @@ Eine andere häufig verwendete Methode der App-Bereitstellung ist PC-Imageerstel
 
 Wenn Sie Office 365 ProPlus in das Image einbeziehen möchten, denken Sie daran, dass dies eine benutzerbasierte Aktivierung erfordert. Es kann nicht vom Systemadministrator bereits aktiviert werden. Verwenden Sie das Office-Bereitstellungstool auf dem Gerät, von dem Sie ein Image erstellen, und überspringen Sie die Benutzeranmeldung. Nach der Bereitstellung des Images können sich Endbenutzer mit ihren Office 365-Anmeldeinformationen anmelden und Office 365 ProPlus aktivieren.
 
-[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 [Bereitstellen von Office 365 ProPlus als Bestandteil eines Betriebssystemabbilds](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
@@ -75,7 +75,7 @@ Microsoft empfiehlt die Verwendung des [Office-Anpassungstools](https://config.o
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Wenn Sie System Center Configuration Manager verwenden, können Sie dies weiter für die allgemeine Bereitstellung von Office 365 ProPlus verwenden. System Center Configuration Manager (aktueller Zweig) hat native Unterstützung für das aktualisierte Office Customization Tool, Paketanpassung für Klick-und-Los zum Installationszeitpunkt und native Unterstützung für die Verwaltung von Software-Updates nach der Installation.
+Wenn Sie Configuration Manager verwenden, können Sie dies weiter für die allgemeine Bereitstellung von Office 365 ProPlus verwenden. Configuration Manager (Current Branch) hat native Unterstützung für das aktualisierte Office-Anpassungstool, Paketanpassung für Klick-und-Los zum Installationszeitpunkt und native Unterstützung für die Verwaltung von Software-Updates nach der Installation.
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
@@ -83,7 +83,7 @@ Wenn Sie System Center Configuration Manager verwenden, können Sie dies weiter 
 
 [Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Verwalten von Office 365 ProPlus mit Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Verwalten von Office 365 ProPlus mit Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

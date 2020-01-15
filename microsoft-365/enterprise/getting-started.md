@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Einführung in den Desktopbereitstellungsprozess.
-ms.openlocfilehash: 89aeb74eddad4b973854e9900800e1fbcf262f9e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030970"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112529"
 ---
 # <a name="getting-started---desktop-deployment"></a>Erste Schritte – Desktopbereitstellung
 
@@ -63,9 +63,9 @@ Sehen wir uns zunächst an, was sich seit Ihrer letzten Desktopbereitstellung ge
 
 **Sichere Pre-Boot-Umgebung:** 64-Bit-UEFI-Firmware ersetzt das BIOS. Dies sorgt nicht nur für einen schnelleren Start, sondern ist auch erforderlich, um viele moderne Sicherheitsfunktionen in Windows 10 zu aktivieren. Obwohl Windows 10 unter BIOS ausgeführt werden kann, wird UEFI dringend empfohlen. Wenn Sie noch nicht vom BIOS zu UEFI gewechselt haben und eine 64-Bit-Version verwenden, ist es nun an der Zeit dies zu tun. Es gibt Tools, mit denen dieser Wechsel entweder während eines Upgrades auf Windows 10 oder danach erfolgen kann.
 
-**Cloudbasierte Geräteverwaltung:** Dienste wie Microsoft Intune helfen Ihnen dabei, Windows 10-Geräte wie andere Mobilgeräte von einem zentralen Ort zu verwalten. Was Microsoft Intune einzigartig macht, ist die Möglichkeit, Windows 10-Geräte mit System Center Configuration Manager gemeinsam zu verwalten. Sie können System Center Configuration Manager verwenden, um zu Windows 10 zu wechseln und dann Microsoft Intune hinzuzufügen. Bei der Zusammenarbeit wird System Center Configuration Manager zum intelligenten Edge in Ihrer Organisation, der mit der intelligenten Microsoft Cloud verbunden ist. Dadurch können Sie die Geräte Ihrer Benutzer sicher verwalten, egal, wo sie sich befinden und ob sie mit der Infrastruktur der Organisation verbunden oder mit der öffentlichen Cloud verbunden sind.
+**Cloudbasierte Geräteverwaltung:** Dienste wie Microsoft Intune helfen Ihnen dabei, Windows 10-Geräte wie andere Mobilgeräte von einem zentralen Ort zu verwalten. Was Microsoft Intune einzigartig macht, ist die Möglichkeit, Windows 10-Geräte mit Microsoft Endpoint Configuration Manager gemeinsam zu verwalten. Sie können Configuration Manager verwenden, um zu Windows 10 zu wechseln und dann Microsoft Intune hinzuzufügen. Bei der Zusammenarbeit wird Microsoft Endpoint Configuration Manager zum intelligenten Edge in Ihrer Organisation, der mit der intelligenten Microsoft Cloud verbunden ist. Dadurch können Sie die Geräte Ihrer Benutzer sicher verwalten, egal, wo sie sich befinden und ob sie mit der Infrastruktur der Organisation verbunden oder mit der öffentlichen Cloud verbunden sind.
 
-[Mitverwaltung für Windows 10-Geräte](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+[Mitverwaltung für Windows 10-Geräte](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 
 **Cloudbasierter Bereitstellungsdienst:** Wenn Sie neue PCs kaufen, wurde bei diesen ein neuer Clouddienst namens Windows Autopilot-Bereitstellungsdienst eingeführt, mit dem Sie Microsoft 365-Geräte verwalten können. Autopilot ist bei Hardwareanbietern integriert, und neue PCs werden automatisch in Autopilot registriert, sodass sie direkt an den Endbenutzer gesendet werden können. Wenn der Computer das erste Mal eingeschaltet wird, ist die gewünschte Konfiguration Ihrer Organisation schnell konfiguriert und an die Bedürfnisse des Benutzers angepasst.
 
@@ -73,7 +73,7 @@ Sehen wir uns zunächst an, was sich seit Ihrer letzten Desktopbereitstellung ge
 
 **Klick-und-Los-Bereitstellungen:** Bei der Bereitstellung von Office-Desktop-Apps ist Office 365 ProPlus die bevorzugte Option. Mit dieser Option erhalten Sie Zugriff auf die neuesten Innovationen in Office, sobald sie entwickelt sind, und müssen nicht Jahre lang warten, um neue Funktionen zu erhalten. Sie verwenden auch eine neue Installation, die als Klick-und-Los bezeichnet wird.
 
-Klick-und-Los unterscheidet sich stark von den MSI-basierten Paketen in der Vergangenheit. Klick-und-Los ist schneller und einfacher und unterstützt die Aktualisierung im Hintergrund ohne Auswirkungen auf die Benutzer. Es ist weiterhin eine lokale Kopie von Office, und Sie können weiterhin für die Bereitstellung und Konfiguration der Apps Ihre vorhandenen Bereitstellungstools wie System Center Configuration Manager verwenden.
+Klick-und-Los unterscheidet sich stark von den MSI-basierten Paketen in der Vergangenheit. Klick-und-Los ist schneller und einfacher und unterstützt die Aktualisierung im Hintergrund ohne Auswirkungen auf die Benutzer. Es ist weiterhin eine lokale Kopie von Office, und Sie können weiterhin für die Bereitstellung und Konfiguration der Apps Ihre vorhandenen Bereitstellungstools wie Microsoft Endpoint Configuration Manager verwenden.
 
 [Bereitstellungshandbuch für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
@@ -83,7 +83,7 @@ Klick-und-Los unterscheidet sich stark von den MSI-basierten Paketen in der Verg
 
 Bevor Sie beginnen, sollten Sie einen allgemeinen Plan erstellen und die erforderlichen Sponsoren ins Boot holen. Unser Bereitstellungsprozess beschreibt wichtige Schritte, anhand der Sie die wichtigsten Teammitglieder und Ressourcen in den folgenden Bereitstellungsbereichen verwalten können.
 
-**[Schritt 1: Geräte- und App-Bereitschaft](https://aka.ms/mdd1)** Für eine erfolgreiche Bereitstellung müssen Sie zunächst wissen, was Sie haben. Das bedeutet, dass eine Bestandsaufnahme Ihrer Geräte und Apps und eine Überprüfung der Kompatibilität erforderlich ist. Zur Unterstützung können Sie dabei die Tools nutzen, die in unserem cloudbasierten Dienst, Desktop Analytics, verfügbar sind. Mit Desktop Analytics können Sie auf Kompatibilitätsintelligenz und Diagnosedaten von Hunderten von Millionen Computern zugreifen, um die auf Ihrem Gerät ausgeführten Apps und Treiber zu bewerten, damit Sie die Bereitschaft Ihres Desktops sicherstellen können. Sie können aus Desktop Analytics eine Liste der Computer, die für die Bereitstellung bereit sind, in System Center Configuration Manager exportieren, wenn Sie es verwenden, sodass Sie datengesteuerte Sammlungen der entsprechenden Computer erstellen können, sobald diese bereit sind.
+**[Schritt 1: Geräte- und App-Bereitschaft](https://aka.ms/mdd1)** Für eine erfolgreiche Bereitstellung müssen Sie zunächst wissen, was Sie haben. Das bedeutet, dass eine Bestandsaufnahme Ihrer Geräte und Apps und eine Überprüfung der Kompatibilität erforderlich ist. Zur Unterstützung können Sie dabei die Tools nutzen, die in unserem cloudbasierten Dienst, Desktop Analytics, verfügbar sind. Mit Desktop Analytics können Sie auf Kompatibilitätsintelligenz und Diagnosedaten von Hunderten von Millionen Computern zugreifen, um die auf Ihrem Gerät ausgeführten Apps und Treiber zu bewerten, damit Sie die Bereitschaft Ihres Desktops sicherstellen können. Sie können aus Desktop Analytics eine Liste der Computer, die für die Bereitstellung bereit sind, in Configuration Manager exportieren, wenn Sie es verwenden, sodass Sie datengesteuerte Sammlungen der entsprechenden Computer erstellen können, sobald diese bereit sind.
 
 [Erste Schritte mit der Upgradebereitschaft](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started)
 
@@ -97,7 +97,7 @@ Bevor Sie beginnen, sollten Sie einen allgemeinen Plan erstellen und die erforde
 
 **[Schritt 4: Migration von Benutzerdateien und -einstellungen](https://aka.ms/mdd4)** Dies ist bei jedem PC-Austausch oder Aktualisierungszyklus ein entscheidender Schritt: Sie müssen sicherstellen, dass die Dateien, Daten und Einstellungen von Benutzern erfolgreich verschoben und bei der Migration beibehalten werden. Dieser Schritt enthält die verfügbaren Optionen für manuelle oder automatisierte Migrationen, einschließlich bekannter und neuer Optionen.
 
-Wie in vorherigen Upgrades ist das Migrtionstool für den Benutzerstatus (USMT) weiterhin hilfreich, um diesen Prozess zu automatisieren, und bleibt ein wesentlicher Bestandteil der Migrationen, die mit System Center Configuration Manager oder dem Microsoft Deployment Toolkit koordiniert werden. Das Verschieben all dieser Daten bei der Migration kann jedoch einen zeitlichen Engpass für den PC-Austausch bedeuten, da Hunderte von Gigabyte pro Computer zwei mal übertragen werden müssen, erst vom vorhandenen Desktop und dann auf den neuen Desktop. Eine neue Option von OneDrive ist die Verschiebung bekannter Ordner, die zum Synchronisieren von Benutzerdokumenten, Bildern und Desktopdateien, in der Cloud und vor der Bereitstellung verwendet wird.
+Wie in vorherigen Upgrades ist das Migrationstool für den Benutzerstatus (USMT) weiterhin hilfreich, um diesen Prozess zu automatisieren, und bleibt ein wesentlicher Bestandteil der Migrationen, die mit Microsoft Endpoint Configuration Manager oder dem Microsoft Deployment Toolkit koordiniert werden. Das Verschieben all dieser Daten bei der Migration kann jedoch einen zeitlichen Engpass für den PC-Austausch bedeuten, da Hunderte von Gigabyte pro Computer zwei mal übertragen werden müssen, erst vom vorhandenen Desktop und dann auf den neuen Desktop. Eine neue Option von OneDrive ist die Verschiebung bekannter Ordner, die zum Synchronisieren von Benutzerdokumenten, Bildern und Desktopdateien, in der Cloud und vor der Bereitstellung verwendet wird.
 
 [Umleiten und Verschieben von bekannten Windows-Ordnern in OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
@@ -107,7 +107,7 @@ Wie in vorherigen Upgrades ist das Migrtionstool für den Benutzerstatus (USMT) 
 
 **[Schritt 6: Bereitstellung des Betriebssystems und Featureupdates](https://aka.ms/mdd6)** Wenn alles vorbereitet ist, besteht der nächste Schritt darin, die Betriebssystemabbilder bereitzustellen. Ein Großteil der Arbeit kann mithilfe der Aufgabensequenzen und der Infrastruktur von System Center Configuration Manager erledigt werden. Der empfohlene Ansatz besteht in einer stufenweisen Bereitstellung, bei der Sie sich zuerst auf eine Gruppe von „Early Adoptern“ konzentrieren, die einen repräsentativen Satz von Hardware und Apps verwenden. Sie können dann die Daten von diesen Geräten und Benutzern verwenden, um sich schrittweise immer mehr PCs vorzunehmen.
 
-[Einführung in die Betriebssystembereitstellung in System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+[Einführung in die Betriebssystembereitstellung in Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Schritt 7: Windows und Office-as-a-Service](https://aka.ms/mdd7)** Dies steht für eine bedeutende Änderung in der Weise, wie Desktops verwaltet werden. Mit diesem Umstieg auf Windows 10 und Office 365 ProPlus können Sie zur Windows und Office-as-a-Service-Verwaltung wechseln. Anstelle eines großen Technologiewechsel alle paar Jahre können Sie Benutzern kontinuierlich neue Funktionen, Erfahrungen und Schutzfunktionen bereitstellen. Halbjährliche Featureupdates liefern neue Funktionen im Herbst und Frühling eines jeden Jahres, während monatliche kumulative Updates weiterhin Sicherheit, Zuverlässigkeit und Fehlerbehebungen enthalten. Sie können zwar den Office 2019-Client bereitstellen, es wird jedoch dringend ein Wechsel zu Office 365 ProPlus empfohlen. Dies folgt einem ähnlichen Serviceplan wie Windows, sodass Benutzer Updates für die Office-Apps in regelmäßigen Abständen erhalten.
 

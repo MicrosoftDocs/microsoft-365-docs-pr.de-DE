@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Dateien und Einstellungen von Benutzern migrieren.
-ms.openlocfilehash: 8b9bde4eb1ddf0951a2ab27795dadef9965f6a1c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031490"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112569"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Schritt 4: Migration von Benutzerdateien und -einstellungen
 
@@ -51,7 +51,7 @@ Wenn Sie sich für eine manuelle Migration entscheiden, müssen Sie möglicherwe
 
 ## <a name="automated-migration-using-usmt"></a>Automatisierte Migration mit USMT 
 
-Für umfangreiche Bereitstellungen können Sie einen Großteil des Prozesses mit automatisierten Bereitstellungstools, die auf Aufgabensequenzen basieren, automatisieren, wie z. B. System Center Configuration Manager oder das Microsoft Deployment Toolkit (MDT). Beide Lösungen verwenden USMT (User State Migration Tool, Migtrationstool für den Benutzerstatus) als Teil ihre Ende-zu-Ende-Bereitstellungsprozesses. USMT ist Teil des [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+Für umfangreiche Bereitstellungen können Sie einen Großteil des Prozesses mit automatisierten Bereitstellungstools, die auf Tasksequenzen basieren, automatisieren, wie z. B. Microsoft Endpoint Configuration Manager oder das Microsoft Deployment Toolkit (MDT). Beide Lösungen verwenden USMT (User State Migration Tool, Migtrationstool für den Benutzerstatus) als Teil ihres End-to-End-Bereitstellungsprozesses. USMT ist Teil des [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 USMT erfasst Benutzerkonten, Benutzerdateien, Betriebssystemeinstellungen und Anwendungseinstellungen und migriert diese in eine neue Windows-Installation. Darüber hinaus ermöglicht es Ihnen als IT-Administrator die genaue Kontrolle darüber, was migriert wird, und Sie können optional unerwünschte Dateitypen (z. B. Audio- und Videodateien) oder ausführbare Dateien ausschließen.
 

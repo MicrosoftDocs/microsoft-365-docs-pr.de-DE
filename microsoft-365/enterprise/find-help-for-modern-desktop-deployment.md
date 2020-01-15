@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wo Sie Hilfe und Support zur Bereitstellung von Windows 10 und Office 365 ProPlus finden.
-ms.openlocfilehash: a6064fb49f6bdd44275a9038eeb8b264638ea618
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7eb30e8a9b5b46635793e9c79e2609467d87848
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031020"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112539"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Hilfe zur Bereitstellung von Windows 10 und Office 365 ProPlus 
 
@@ -49,7 +49,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Liefern von Office- und Branchen-Apps</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>-Konfiguration und -Bereitstellung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen, bei der Konfiguration der Installation, beim Aktualisieren der Einstellungen für Klick-und-Los und beim Erstellen von Paketen bereitstellen, wenn Ihre Organisation System Center Configuration Manager verwendet.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>-Konfiguration und -Bereitstellung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen, bei der Konfiguration der Installation, beim Aktualisieren der Einstellungen für Klick-und-Los und beim Erstellen von Paketen bereitstellen, wenn Ihre Organisation Microsoft Endpoint Configuration Manager verwendet.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>Bereitstellung des Betriebssystems und Featureupdates</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung bei der Bereitstellung von Benutzerlizenzen und bei der Konfiguration von Windows Autopilot für neue Geräte, MDM-Richtlinien für Windows 10 und andere Mobilgeräte, einschließlich App-Bereitstellung, Wi-Fi und VPN-Profilen, gemeinsamer Verwaltung mit System Center Configuration Manager und mehr.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung bei der Bereitstellung von Benutzerlizenzen und bei der Konfiguration von Windows Autopilot für neue Geräte, MDM-Richtlinien für Windows 10 und andere Mobilgeräte, einschließlich App-Bereitstellung, WLAN und VPN-Profilen, gemeinsamer Verwaltung mit Microsoft Endpoint Configuration Manager und mehr.</p></li>
 </ul></td>
 </tr>
 <tr class="even">

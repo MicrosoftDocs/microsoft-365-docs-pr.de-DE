@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801560"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111973"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
 
@@ -65,9 +65,9 @@ ms.locfileid: "40801560"
 
   Sie können dieses Poster auch in [PDF-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) oder [Visio-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) Format herunterladen.
 
-- [Das Poster „Windows 10-Bereitstellung mit dem Microsoft Endpoint Configuration Manager“](windows10-deploy-inplaceupgrade.md)
+- [Das Poster „Windows 10-Bereitstellung mit Configuration Manager“](windows10-deploy-inplaceupgrade.md)
 
-  [![Das Poster "Windows 10-Bereitstellung mit System Center Configuration Manager"](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![Das Poster „Windows 10-Bereitstellung mit Configuration Manager“](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   Sie können dieses Poster auch in [PDF-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) oder [Visio-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) Format herunterladen.
 

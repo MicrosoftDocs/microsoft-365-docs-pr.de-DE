@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zu den Optionen für die Bereitstellung des Betriebssystems und Featureupdates.
-ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031670"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112679"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Schritt 6: Bereitstellung des Betriebssystems und Featureupdates
 
@@ -49,13 +49,13 @@ Die meisten Organisationen verwenden das Verfahren des PC-Imagings zum Konfiguri
 
 Wenn Sie den Weg der Imageerfassung wählen, sollten Sie so viele Aufgaben wie möglich automatisieren, damit Sie ein Image von höchster Qualität erhalten und einen wiederholbaren Prozess einrichten. Bei den meisten Bereitstellungen ist es ebenfalls empfehlenswert, vor dem Erfassen so wenige Anpassungen und vorinstallierte Apps in das Windows-Image aufzunehmen. Dies wir auch als „Thin Image“-Ansatz bezeichnet, durch den Bandbreite im Netzwerk gespart werden kann, indem die Anzahl der Apps im Image reduziert wird. Wenn Sie mit einem einfachen Image beginnen, können Sie die erforderlichen Apps, Sprachen und Konfigurationen in Layern hinzufügen, die dynamisch auf die Benutzer zugeschnitten werden können.
 
-Während des Erstellungs- und Erfassungsvorgangs verwenden Tools wie der System Center Configuration Manager (Current Branch) und das Microsoft Deployment Toolkit das Systemvorbereitungstool (auch als „Sysprep“ bezeichnet) zusammen mit dem Befehl zum Generalisieren, um das Image vor dem Erfassen der Windows 10-Installation als Image wieder zu versiegeln.
+Während des Erstellungs- und Erfassungsvorgangs verwenden Tools wie der Microsoft Endpoint Configuration Manager (Current Branch) und das Microsoft Deployment Toolkit das Systemvorbereitungstool (auch als „Sysprep“ bezeichnet) zusammen mit dem Befehl zum Generalisieren, um das Image vor dem Erfassen der Windows 10-Installation als Image wieder zu versiegeln.
 
-Das erfasste Image hat das Windows-Image-Format (WIM), wie jedes standardmäßige Windows-Installationsmedium. Sobald Sie Ihre eigene WIM-Datei erstellt haben, können Sie eine andere Aufgabensequenz als Teil der Betriebssystembereitstellung im System Center Configuration Manager oder Microsoft Deployment Toolkit verwenden, um mit der Bereitstellung zusammenhängenden Aufgaben durchzuführen, das Image anzuwenden und Aufgaben vor und nach der Anwendung des Windows-Images auszuführen.
+Das erfasste Image hat das Windows-Image-Format (WIM), wie jedes standardmäßige Windows-Installationsmedium. Sobald Sie Ihre eigene WIM-Datei erstellt haben, können Sie eine andere Tasksequenz als Teil der Betriebssystembereitstellung im Configuration Manager oder Microsoft Deployment Toolkit verwenden, um mit der Bereitstellung zusammenhängenden Aufgaben durchzuführen, das Image anzuwenden und Aufgaben vor und nach der Anwendung des Windows-Images auszuführen.
 
 [Erstellen eines Windows 10-Referenzimages](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Erstellen einer Tasksequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Bereitstellungsarten
 
@@ -73,7 +73,7 @@ Alle drei dieser Szenarien haben eines gemeinsam: Sie verwenden für die Ausfüh
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Direktes Upgrade durch Aufgabensequenz-Automatisierung
 
-Zusätzlich zu diesen Bereitstellungstypen gibt es nun eine neue Option als eine Aufgabensequenz von System Center Configuration Manager (Current Branch) in Windows 10: das direkte Upgrade mit der Upgrade-Aufgabensequenz.
+Zusätzlich zu diesen Bereitstellungstypen gibt es nun eine neue Option als eine Tasksequenz von Microsoft Endpoint Configuration Manager (Current Branch) in Windows 10: das direkte Upgrade mit der Upgrade-Tasksequenz.
 
 Direkte Upgrades von einer vorherigen Version von Windows erfordern keine Aufgabensequenz. Dieser Ansatz wird jedoch empfohlen, wenn Sie die Bereitstellung auf Unternehmensebene durchführen. bei einem direkten Upgrade können Sie kein benutzerdefiniertes Image mit Anwendungen verwenden. Sie können jedoch die standardmäßige install.wim anhand von Offline-Servicing aktualisieren. Sie können beispielsweise sicherstellen, dass vor dem Upgrade die neuesten Windows-Updates angewendet wurden.
 
@@ -87,7 +87,7 @@ Das Szenario des direkten Upgrades kann zum Migrieren von älteren Versionen von
 
 [Durchführen eines direkten Upgrades auf Windows 10 mit dem Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Erstellen einer Aufgabensequenz für ein Betriebssystemupgrade in Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Erstellen einer Aufgabensequenz für ein Betriebssystemupgrade in Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Phasenweise Bereitstellung
 
@@ -95,11 +95,11 @@ Beim Planen der Bereitstellung sehen Sie bestimmte Computer für die Bare-Metal-
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Empfohlenen Tools: System Center Configuration Manager (Current Branch) und das Microsoft Deployment Toolkit
+### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Empfohlenen Tools: Microsoft Endpoint Configuration Manager (Current Branch) und das Microsoft Deployment Toolkit
 
 Unabhängig vom gewählten Bereitstellungstyp müssen Sie sicherstellen, dass er so weit wie möglich automatisiert ist, damit eine gewisse Vorhersagbarkeit und Wiederholbarkeit gegeben ist. Microsoft bietet zwei Lösungen zum Automatisieren der Betriebssystembereitstellung mit automatisieren Aufgabensequenzen an:
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction) ** (ConfigMgr) bietet integrierte Funktionen für die Betriebssystembereitstellung, die die Funktionen für die Softwareverteilung und die Verwaltung von Softwareupdates ergänzen. ConfigMgr wird von zahlreichen Organisationen aller Größen genutzt und unterstützt alle vier Arten der Windows-Bereitstellung. Optional können Sie ConfigMgr mit Microsoft Intune integrieren, um weitere Funktionen für die Bereitstellung und Geräteverwaltung nutzen zu können.
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) bietet integrierte Funktionen für die Betriebssystembereitstellung, die die Funktionen für die Softwareverteilung und die Verwaltung von Softwareupdates ergänzen. ConfigMgr wird von zahlreichen Organisationen aller Größen genutzt und unterstützt alle vier Arten der Windows-Bereitstellung. Optional können Sie ConfigMgr mit Microsoft Intune integrieren, um weitere Funktionen für die Bereitstellung und Geräteverwaltung nutzen zu können.
 
   - Eine weitere beliebte Bereitstellungsmethode ist das kostenlose ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT), das in der Regel von kleinen und mittleren Organisationen für die Betriebssystembereitstellung verwendet wird. Das MDT benötigt nur sehr wenig Infrastruktur. MDT kann in Windows Deployment Services (WDS) für das Booten im Netzwerk integriert werden. Es unterstützt alle vier Bereitstellungstypen sowie die Installation von Anwendungen, Treibern und Einstellungen. Darüber hinaus kann MDT natürlich auch in Configuration Manager integriert werden.
 
@@ -117,7 +117,7 @@ Wenn sich ein Benutzer dann während des Setups mit seinen Azure AD-Anmeldedaten
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update for Business für Featureupdates
 
-Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
+Windows Update for Business ist ein kostenloser Dienst, mit dem IT-Experten Windows 10-Geräte immer auf dem neuesten Stand halten können, indem Sie die Geräte direkt an den Windows Update-Dienst anschließen. Windows Update for Business kann über Gruppenrichtlinien oder MDM-Lösungen wie Microsoft Intune konfiguriert werden und ermöglicht es IT-Experten, [Bereitstellungsringe](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) zu erstellen, um neue Builds zu überprüfen. Es ist in vorhandene Verwaltungstools wie Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager (Current Branch) und Microsoft Intune integriert. Darüber hinaus unterstützt Windows Update for Business Peer-to-Peer-Übermittlung, um die Bandbreiteneffizienz zu optimieren und die Überlastung des Netzwerks zu reduzieren.
 
 Ausführlichere Informationen zu Windows Update for Business finden Sie in der folgenden Dokumentation:
 

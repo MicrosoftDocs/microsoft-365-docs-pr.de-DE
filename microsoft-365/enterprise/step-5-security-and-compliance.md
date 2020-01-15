@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über wichtige Überlegungen zu Windows- und Office-Sicherheit und -Compliance.
-ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031690"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112559"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Schritt 5: Überlegungen zu Sicherheit und Compliance
 
@@ -117,7 +117,7 @@ Zusätzlich dazu gehen **[sichere Anlagen](https://docs.microsoft.com/office365/
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fungiert als ein cloudbasierter Verwaltungsdienst für Szenarien mit mobilen Geräten, einschließlich iOS-, Android- und Windows-Geräten. Es kann nun für die gemeinsame Verwaltung konfiguriert werden, um Steuerungen für bestimmte Workloads zu ergänzen und zu erweitern, die von System Center Configuration Manager verwaltet werden. Ein Vorteil hierbei ist, dass für Geräte, die auf geschützte Ressourcen zugreifen, durchgesetzt werden kann, dass sie sich bei der Geräteverwaltung registrieren, auch wenn es sich um nicht verwaltete Geräte oder Geräte, die nicht der Domäne oder Azure AD beigetreten sind, handelt. Sie können auch die Vorteile einer granularen Konfiguration und der Erzwingung von Compliance-Richtlinien auf Ebene des Betriebssystems und von Anwendungen nutzen. Anwendungsrichtlinien und Einstellungen können zentral konfiguriert und für Office 365 ProPlus und Store-Apps in Windows 10 mit Microsoft Intune durchgesetzt werden.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fungiert als ein cloudbasierter Verwaltungsdienst für Szenarien mit Mobilgeräten, einschließlich iOS-, Android- und Windows-Geräten. Es kann nun für die gemeinsame Verwaltung konfiguriert werden, um Steuerungen für bestimmte Workloads zu ergänzen und zu erweitern, die von Configuration Manager verwaltet werden. Ein Vorteil hierbei ist, dass für Geräte, die auf geschützte Ressourcen zugreifen, durchgesetzt werden kann, dass sie sich bei der Geräteverwaltung registrieren, auch wenn es sich um nicht verwaltete Geräte oder Geräte, die nicht der Domäne oder Azure AD beigetreten sind, handelt. Sie können auch die Vorteile einer granularen Konfiguration und der Erzwingung von Compliance-Richtlinien auf Ebene des Betriebssystems und von Anwendungen nutzen. Anwendungsrichtlinien und Einstellungen können zentral konfiguriert und für Office 365 ProPlus und Store-Apps in Windows 10 mit Microsoft Intune durchgesetzt werden.
 
 ## <a name="next-step"></a>Nächster Schritt
 
