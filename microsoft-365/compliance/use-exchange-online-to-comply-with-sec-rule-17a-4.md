@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie Exchange Online und das Security & Compliance Center, um die SEC-Richtlinie 17a-4 einzuhalten
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates bestätigt, dass Exchange Online und das Security & Compliance Center bei der empfohlenen Konfiguration die relevanten Speicheranforderungen der CFTC-Richtlinie 1.31(c)-(d), der FINRA-Richtlinie 4511 und der SEC-Richtlinie 17a-4 erfüllen. Sie können die Bewertung herunterladen.
-ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081834"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122424"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Verwenden Sie Exchange Online und das Security & Compliance Center, um die SEC-Richtlinie 17a-4 einzuhalten
 
@@ -65,7 +65,7 @@ Sie können eine Aufbewahrungsrichtlinie über PowerShell sperren. Weitere Infor
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-Einige Einschränkungen in Exchange Online sind uns bekannt. Wir arbeiten aktiv daran und gehen davon aus, im Juli 2019 Support für folgende Szenarien zu bieten:
+Derzeit gibt es einige Einschränkungen für Exchange Online:
 
 - Überwachung auf Elementebene in Office 365-Gruppen-Postfächern ist nicht verfügbar.
 - Unterhaltungsfäden stehen nicht für Chats und Kanal Nachrichten in Teams zur Verfügung.

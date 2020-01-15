@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für DLP im Security & Compliance Center erstellen und importieren.
-ms.openlocfilehash: b2dbc9bdef01c349e7c9dc7e3716c661775d2a81
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: d470d6c8184f87af1ad78aae2979c6b87ca81676
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "39266130"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122454"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell
 
@@ -350,6 +350,8 @@ Beachten Sie, dass Sie im Security &amp;Compliance Center das  Cmdlet **[New-Dlp
   
 ## <a name="upload-your-rule-package"></a>Hochladen des Regelpakets
 
+
+
 Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
   
 1. Speichern Sie es als XML-Datei mit Unicode-Codierung.
@@ -359,18 +361,21 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
 3. Verwenden Sie die folgende Syntax:
 
 ```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte) -ReadCount 0
 ```
 
     This example uploads the Unicode XML file named MyNewRulePack.xml from C:\My Documents.
 
 ```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte)
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte) -ReadCount 0
 ```
 
     For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage).
 
-5. Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erstellt haben, führen Sie einen der folgenden Schritte aus:
+> [!NOTE]
+> Die Grenze für benutzerdefinierte Sammlungen sensibler Informationstypen liegt bei 10.
+
+4. Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erstellt haben, führen Sie einen der folgenden Schritte aus:
 
   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) aus, um zu überprüfen, ob das neue Regelpaket aufgeführt wird:
 
