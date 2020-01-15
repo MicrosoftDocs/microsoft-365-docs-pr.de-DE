@@ -3,7 +3,7 @@ title: Antispoofingschutz in Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
-ms.date: 08/30/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 1bcf6b954c69297981eafecef192cab0e55a7684
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971993"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112739"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -113,31 +113,25 @@ Anhand der Kopfzeilen einer Nachricht kann ein Administrator oder ein Endbenutze
 
 Microsoft unterscheidet zwei verschiedene Typen von Spoofingnachrichten:
 
- **Organisationsinternes Spoofing**
+#### <a name="intra-org-spoofing"></a>Organisationsinternes Spoofing
 
 Dies wird auch als Self-to-Self-Spoofing bezeichnet und tritt auf, wenn die Domäne in der „Von:“-Adresse der Empfängerdomäne oder wenn die Empfängerdomäne eine der in der Organisation [akzeptierten Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) entspricht oder wenn die Domäne in der „Von:“-Adresse Teil der gleichen Organisation ist.
 
 Im folgenden Beispiel weist der Absender und der Empfänger die gleiche Domäne (contoso.com) auf. Leerzeichen werden in die E-Mail-Adresse eingefügt, um das Spambot-Harvesting auf dieser Seite zu verhindern):
 
-Von: absender @ contoso.com
-
-An: empfänger @ contoso.com
+> Von: absender @ contoso.com <br/> An: empfänger @ contoso.com
 
 Im Folgenden weisen die Absender- und Empfängerdomäne die Organisationsdomäne (fabrikam.com) auf:
 
-Von: absender @ foo.fabrikam.com
-
-An: empfänger @ bar.fabrikam.com
+> Von: absender @ foo.fabrikam.com <br/> An: empfänger @ bar.fabrikam.com
 
 Im folgenden Beispiel sind die Absender- und Empfängerdomänen unterschiedlich (microsoft.com und bing.com), sie gehören jedoch derselben Organisation an (d. h. beide sind Teil der in der Organisation akzeptierten Domänen):
 
-Von: absender @ microsoft.com
-
-An: empfänger @ bing.com
+> Von: absender @ microsoft.com <br/> An: empfänger @ bing.com
 
 Nachrichten, für die das organisationsinternte Spoofing fehlschlägt, enthalten die folgenden Werte im Nachrichtenkopf:
 
-X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11
+`X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
 CAT ist die Kategorie der Nachricht. Sie wird in der Regel als SPM (Spam) gekennzeichnet, gelegentlich kann dies jedoch HSPM (Nachricht mit hoher Spamwahrscheinlichkeit) oder PHISH (Phishing) sein, je nachdem, welche anderen Typen von Mustern in der Nachricht auftreten.
 
@@ -145,13 +139,13 @@ SFTY ist die Sicherheitsstufe der Nachricht. Die erste Ziffer (9) gibt an, dass 
 
 Es gibt keinen spezifischen Ursachencode für die zusammengesetzte Authentifizierung für organisationsinternes Spoofing, der später in 2018 gekennzeichnet ist (Zeitachse noch nicht definiert).
 
- **Domänenübergreifendes Spoofing**
+#### <a name="cross-domain-spoofing"></a>Domänenübergreifendes Spoofing
 
 Dies tritt auf, wenn die sendende Domäne in der „Von“-Adresse eine externe Domäne für die empfangende Organisation ist. Nachrichten, für die die zusammengesetzte Authentifizierung aufgrund von domänenübergreifendem Spoofing fehlschlägt, enthalten die folgenden Werte in der Nachrichtenkopfzeile:
 
-Authentication-Results: … compauth=fail reason=000/001
+`Authentication-Results: ... compauth=fail reason=000/001`
 
-X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22
+`X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
 In beiden Fällen ist die Nachricht mit einem roten Sicherheitstipp oder einer Entsprechung gekennzeichnet, die an die Sprache des Empfängerpostfachs angepasst ist:
 
@@ -171,74 +165,74 @@ Der neue Antispoofingschutz basiert auf der E-Mail-Authentifizierung (SPF, DKIM 
 
 Bevor Antispoofing bereitgestellt wurde, sah eine Nachricht ohne SPF-, DKIM- und DMARC-Datensatz möglicherweise wie folgt aus:
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com;
-From: sender @ example.com
+  action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
+
 Nach dem Antispoofing wies sie den folgenden CompAuth-Wert auf, wenn Office 365 Enterprise E5, EOP oder ATP verwendet wurde:
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com; compauth=fail reason=001
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=fail reason=001
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
-
 ```
 
-Wenn example.com dies durch Einrichten eines SPF-Eintrags, aber nicht eines DKIM-Eintrags behoben hat, würde die Nachricht die zusammengesetzte Authentifizierung bestehen, da die Domäne, die SPF übergeben hat, der Domäne in der „Von-Adresse entspricht:
+Wenn fabrikam.com dies durch Einrichten eines SPF-Eintrags, aber nicht eines DKIM-Eintrags behoben hat, würde die Nachricht die zusammengesetzte Authentifizierung bestehen, da die Domäne, die SPF übergeben hat, der Domäne in der „Von“-Adresse entspricht:
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
 Wenn ein DKIM-Eintrag jedoch nicht ein SPF-Eintrag eingerichtet wurde, würde die Nachricht die zusammengesetzte Authentifizierung auch bestehen, da die Domäne in der DKIM-Signatur der Domäne in der „Von“-Adresse entspricht:
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=pass
-  (signature was verified) header.d=outbound.example.com;
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
+  (signature was verified) header.d=outbound.fabrikam.com;
   contoso.com; dmarc=bestguesspass action=none
-  header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-Ein Phisher kann möglicherweise auch SPF und DKIM einrichten und die Nachricht mit einer eigenen Domäne signieren, jedoch eine andere Domäne in der „Von“-Adresse angeben. Weder SPF noch DKIM erfordert, dass die Domäne mit der Domäne in der „Von“-Adresse übereinstimmt. Solange also example.com keine DMARC-Datensätze veröffentlicht hat, wird die Nachricht unter Verwendung von DMARC nicht als Spoofnachricht gekennzeichnet:
+Ein Phisher kann möglicherweise auch SPF und DKIM einrichten und die Nachricht mit einer eigenen Domäne signieren, jedoch eine andere Domäne in der „Von“-Adresse angeben. Weder SPF noch DKIM erfordert, dass die Domäne mit der Domäne in der „Von“-Adresse übereinstimmt. Solange also fabrikam.com keine DMARC-Datensätze veröffentlicht hat, wird die Nachricht unter Verwendung von DMARC nicht als Spoofnachricht gekennzeichnet:
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=example.com;
-From: sender @ example.com
+  contoso.com; dmarc=none action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-Im E-Mail-Client (Outlook, Outlook im Web oder einem anderen E-Mail-Client) wird nur die „Von“-Domäne angezeigt, nicht die Domäne in SPF oder DKIM. Dies kann dazu führen, dass der Benutzer in die Irre geführt wird und davon ausgeht, dass die Nachricht von example.com gesendet wurde, während sie jedoch tatsächlich von maliciousDomain.com stammt.
+Im E-Mail-Client (Outlook, Outlook im Web oder einem anderen E-Mail-Client) wird nur die „Von“-Domäne angezeigt, nicht die Domäne in SPF oder DKIM. Dies kann dazu führen, dass der Benutzer in die Irre geführt wird und davon ausgeht, dass die Nachricht von fabrikam.com gesendet wurde, während sie jedoch tatsächlich von maliciousDomain.com stammt.
 
 ![Authentifizierte Nachricht, „Von“-Domäne stimmt jedoch nicht mit der Domäne überein, die von SPF oder DKIM übergeben wurde](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 Aus diesem Grund erfordert Office 365, dass die Domäne in der „Von“-Adresse der Domäne in der SPF- oder DKIM-Signatur entspricht. Wenn dies nicht der Fall ist, muss sie andere interne Signale aufweisen, die darauf hindeuten, dass es sich dabei um eine seriöse Nachricht handelt. Andernfalls wäre die zusammengesetzte Authentifizierung für die Nachricht fehlgeschlagen.
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
   contoso.com; dmarc=none action=none header.from=contoso.com;
   compauth=fail reason=001
 From: sender@contoso.com
-To: someone@example.com
+To: someone@fabrikam.com
 ```
 
 Der Antispoofingschutz von Office 365 schützt folglich vor Domänen ohne Authentifizierung und Domänen, die eine Authentifizierung eingerichtet haben, die Domäne in der „Von“-Adresse jedoch nicht der Domäne entspricht, die dem Benutzer als Absender der Nachricht angezeigt wird. Dies gilt sowohl für Domänen außerhalb und innerhalb Ihrer Organisation.
@@ -322,7 +316,7 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 ```
 
 > [!IMPORTANT]
-> Wenn der erste Hop des E-Mail-Pfads Office 365 ist und zu viele seriöse E-Mails als Spoof gekennzeichnet werden, sollten Sie zunächst Absender festlegen, die Spoofing-E-Mails an Ihre Domäne senden dürfen (siehe Abschnitt *„Verwalten seriöser Absender, die nicht authentifiziert E-Mails senden“*). Wenn Sie immer noch zu viele falsch positive Ergebnisse erhalten (d. h. wenn seriöse Nachrichten als Spoofingnachrichten gekennzeichnet werden), wird nicht empfohlen, den Antispoofingschutz vollständig zu deaktivieren. In diesem Fall wird empfohlen, grundlegenden Schutz anstelle von hohem Schutz auszuwählen. Es ist besser, sich durch falsch positive Ergebnisse durchzuarbeiten, als Ihre Organisation Spoofing-E-Mails auszusetzen, die langfristig deutlich höhere Kosten verursachen könnten.
+> Wenn der erste Hop des E-Mail-Pfads Office 365 ist und zu viele seriöse E-Mails als Spoof gekennzeichnet werden, sollten Sie zunächst Absender festlegen, die Spoofing-E-Mails an Ihre Domäne senden dürfen (siehe Abschnitt [Verwalten seriöser Absender, die nicht authentifizierte E-Mails senden](#managing-legitimate-senders-who-are-sending-unauthenticated-email)). Wenn Sie immer noch zu viele falsch positive Ergebnisse erhalten (d. h. wenn seriöse Nachrichten als Spoofingnachrichten gekennzeichnet werden), wird nicht empfohlen, den Antispoofingschutz vollständig zu deaktivieren. In diesem Fall wird empfohlen, grundlegenden Schutz anstelle von hohem Schutz auszuwählen. Es ist besser, sich durch falsch positive Ergebnisse durchzuarbeiten, als Ihre Organisation Spoofing-E-Mails auszusetzen, die langfristig deutlich höhere Kosten verursachen könnten.
 
 ### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Verwalten seriöser Absender, die nicht authentifizierte E-Mails senden
 
@@ -350,9 +344,6 @@ Sie können auch PowerShell verwenden, um bestimmten Absendern das Spoofing Ihre
 
 ```powershell
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
-```
-
-```powershell
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
@@ -443,12 +434,12 @@ Wenn Sie nicht sicher sind, ob Ihre empfangende Domäne einer Empfängerumschrei
 
 a) Schauen Sie zunächst auf die Kopfzeilen der Nachricht für die Empfängerdomäne im Authentication-Results-Header:
 
-```
+```text
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; office365.contoso.net; dkim=fail
-  (body hash did not verify) header.d=simple.example.com;
+  smtp.mailfrom=fabrikam.com; office365.contoso.net; dkim=fail
+  (body hash did not verify) header.d=simple.fabrikam.com;
   office365.contoso.net; dmarc=none action=none
-  header.from=example.com; compauth=fail reason=001
+  header.from=fabrikam.com; compauth=fail reason=001
 ```
 
 Die Empfängerdomäne ist oben als fettformatierter roter Text gekennzeichnet, in diesem Fall ist dies office365.contoso.net. Diese kann möglicherweise von dem Empfänger im „An“-Feld abweichen:
@@ -477,29 +468,28 @@ Beachten Sie, dass Sie Antispoofing nicht deaktivieren sollten, wenn der erste H
 
 ### <a name="how-to-disable-anti-spoofing"></a>Deaktivieren von Antispoofing
 
-Wenn Sie bereits eine Antiphishingrichtlinie erstellt haben, legen Sie den EnableAntispoofEnforcement-Parameter auf $false fest:
+Wenn Sie bereits eine Antiphishingrichtlinie erstellt haben, legen Sie den *EnableAntispoofEnforcement*-Parameter auf „$false“ fest:
 
-```
+```powershell
 $name = "<name of policy>"
 Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
-
 ```
 
 Wenn Sie den Namen der Richtlinie (oder Richtlinien) nicht kennen, die deaktiviert werden soll, können Sie diesen anzeigen:
 
-```
-Get-AntiphishPolicy | fl Name
+```powershell
+Get-AntiphishPolicy | Format-List Name
 ```
 
 Wenn Sie noch keine Antiphishingrichtlinien erstellt haben, können Sie eine erstellen und sie dann deaktivieren (selbst wenn Sie über keine Richtlinie verfügen, wird Antispoofing weiterhin angewendet; später in 2018 wird eine Standardrichtlinie erstellt, die Sie dann deaktivieren können, statt eine neue zu erstellen). Dazu müssen Sie die folgenden Schritte ausführen:
 
-```
+```powershell
 $org = Get-OrganizationConfig
 $name = "My first anti-phishing policy for " + $org.Name
 # Note: If the name is more than 64 characters, you will need to choose a smaller one
 ```
 
-```
+```powershell
 # Next, create a new anti-phishing policy with the default values
 New-AntiphishPolicy -Name $Name
 # Select the domains to scope it to
@@ -509,7 +499,6 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 # Finally, scope the anti-phishing policy to the domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
-
 ```
 
 Antispoofing kann nur mit dem Cmdlet deaktiviert werden (später ist dies auch über das Security &amp; Compliance Center möglich). Wenn Sie keinen Zugriff auf PowerShell haben, erstellen Sie ein Supportticket.
@@ -520,35 +509,20 @@ Beachten Sie, dass dies nur für Domänen mit indirektem Routing beim Senden an 
 
 Einzelne Benutzer können nur eingeschränkt mit Antispoofing-Sicherheitstipps interagieren. Es gibt jedoch mehrere Möglichkeiten, Probleme bei allgemeinen Szenarien zu beheben.
 
-### <a name="common-scenario-1---discussion-lists"></a>Allgemeines Szenario Nr. 1 – Diskussionslisten
+### <a name="common-scenario-discussion-lists"></a>Allgemeines Szenario: Diskussionslisten
 
 Bei Diskussionslisten sind Probleme mit Antispoofing bekannt, die darin begründet sind, wie Nachrichten weitergeleitet und Inhalte geändert werden, wobei die ursprüngliche „Von“-Adresse beibehalten wird.
 
-Beispiel: Ihre E-Mail-Adresse lautet „user@contoso.com“, Sie interessieren sich für Vögelbeobachtung und treten der Diskussionsliste birdwatchers@example.com bei. Wenn Sie eine Nachricht an die Diskussionsliste senden, wird diese möglicherweise auf folgende Weise gesendet:
+Nehmen Sie beispielsweise an, dass Gabriela Laureano (glaureano @ contoso.com) sich für Vogelbeobachtung interessiert und sich der Diskussionsliste „birdwatchers @ fabrikam.com“ anschließt. Wenn Sie eine Nachricht an die Diskussionsliste sendet, sieht dies wie folgt aus:
 
-**Von:** John Doe \<user @ contoso.com\>
+> **Von:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **An:** Diskussionsliste für Vogelbeobachtung \<birdwatchers @ fabrikam.com\> <br/> 
+**Betreff:** Großartiger Blick auf Blauhäher auf dem Mount Rainier diese Woche <br/><br/>Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
 
-**An:** Diskussionsliste für Vögelbeobachtung \<birdwatchers @ example.com\>
+Wenn die E-Mail-Liste die Nachricht erhält, wird die Nachricht formatiert, ihr Inhalt geändert und an die restlichen Mitglieder der Diskussionsliste gesendet, die aus Teilnehmern vieler verschiedener E-Mail-Empfänger besteht.
 
-**Betreff:** Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche
+> **Von:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **An:** Diskussionsliste für Vogelbeobachtung \<birdwatchers @ fabrikam.com\> <br/> **Betreff:** [BIRDWATCHERS] Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <br/><br/> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier? <br/><br/> Diese Nachricht wurde an die Diskussionsgruppe Vögelbeobachtung gesendet. Sie können sich jederzeit wieder abmelden.
 
-Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
-
-Wenn die E-Mail-Liste die Nachricht erhält, wird die Nachricht formatiert, der Inhalt der Nachricht wird geändert und sie wird an die Mitglieder der Diskussionsliste gesendet, die aus Teilnehmern vieler verschiedener E-Mail-Empfänger besteht.
-
-**Von:** John Doe \<user @ contoso.com\>
-
-**An:** Diskussionsliste für Vögelbeobachtung \<birdwatchers @ example.com\>
-
-**Betreff:** [BIRDWATCHERS] Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche
-
-Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
-
----
-
-Diese Nachricht wurde an die Diskussionsgruppe Vögelbeobachtung gesendet. Sie können sich jederzeit wieder abmelden.
-
-Die oben angezeigte Nachricht hat die gleiche „Von“-Adresse (user @ contoso.com), die ursprüngliche Nachricht wurde jedoch geändert, indem der Betreffzeile ein Tag und eine Fußzeile am Ende der Nachricht hinzugefügt wurde. Diese Art von Nachrichtänderung ist in Mailinglisten üblich und kann zu falsch positiven Ergebnissen führen.
+In diesem Beispiel hat die angezeigte Nachricht die gleiche „Von“-Adresse (glaureano @ contoso.com), die ursprüngliche Nachricht wurde jedoch geändert, indem der Betreffzeile ein Tag und eine Fußzeile am Ende der Nachricht hinzugefügt wurde. Diese Art von Nachrichtänderung ist in Mailinglisten üblich und kann zu falsch positiven Ergebnissen führen.
 
 Wenn Sie oder andere Personen in Ihrer Organisation Administrator der Mailingliste sind, können Sie sie möglicherweise konfigurieren, damit sie die Antispoofingprüfungen besteht.
 
@@ -558,13 +532,13 @@ Wenn Sie oder andere Personen in Ihrer Organisation Administrator der Mailinglis
 
 - Ziehen Sie es in Erwägung, Updates für diesen Mailinglistserver zu installieren, damit ARC unterstützt wird. Informationen dazu finden Sie unter [https://arc-spec.org](https://arc-spec.org/)
 
-Wenn Sie nicht Besitzer der Mailingliste sind:
+Wenn Sie die Adressenliste nicht besitzen:
 
-- Sie können den Verwalter der Mailingliste dazu auffordern, eine der genannten Optionen zu implementieren (er sollte auch eine E-Mail-Authentifizierung für die Domäne einrichten, von der diese Mailingliste gesendet wird).
+- Sie können den Verwalter der Mailingliste dazu auffordern, eine der vorherigen Optionen zu implementieren (er sollte auch eine E-Mail-Authentifizierung für die Domäne einrichten, von der diese Adressenliste gesendet wird).
 
-- Sie können in Ihrem E-Mail-Client Postfachregeln zum Verschieben von Nachrichten in den Posteingang erstellen. Sie können auch den Administrator Ihrer Organisation auffordern, Zulassungsregeln einzurichten oder diese außer Kraft zu setzen, wie im Abschnitt „Verwalten seriöser Absender, die nicht authentifizierte E-Mails senden“ beschrieben.
+- Sie können in Ihrem E-Mail-Client Postfachregeln zum Verschieben von Nachrichten in den Posteingang erstellen. Sie können auch die Administratoren Ihrer Organisation auffordern, Zulassungsregeln einzurichten oder diese außer Kraft zu setzen, wie im Abschnitt [Verwalten seriöser Absender, die nicht authentifizierte E-Mails senden](#managing-legitimate-senders-who-are-sending-unauthenticated-email) beschrieben.
 
-- Sie können ein Supportticket für Office 365 erstellen, um eine Außerkraftsetzung für die Mailingliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird.
+- Sie können ein Supportticket für Office 365 erstellen, um eine Außerkraftsetzung für die Adressenliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird.
 
 ### <a name="other-scenarios"></a>Sonstige Szenarien
 
@@ -574,7 +548,7 @@ Wenn Sie nicht Besitzer der Mailingliste sind:
 
 3. Wenn Sie wissen, wer der Absender ist und darauf vertrauen, dass dieser nicht gespooft wurde, können Sie diesem Absender antworten und angeben, dass er Nachrichten von einem E-Mail-Server sendet, der nicht authentifiziert ist. Dies führt manchmal dazu, der ursprüngliche Absender den IT-Administrator kontaktiert, der die erforderlichen E-Mail-Authentifizierungsdatensätze einrichtet.
 
-Wenn genügend Absender den Domänenbesitzern antworten und darum bitten, E-Mail-Authentifizierungsdatensätze einzurichten, werden diese möglicherweise dazu angespornt, die entsprechenden Maßnahmen zu ergreifen. Microsoft arbeitet zwar auch mit Domänenbesitzern zusammen, um die erforderlichen Datensätze zu veröffentlichen, es hilft jedoch, wenn einzelne Benutzer sie zusätzlich dazu auffordern.
+   Wenn genügend Absender den Domänenbesitzern antworten und darum bitten, E-Mail-Authentifizierungsdatensätze einzurichten, werden diese möglicherweise dazu angespornt, die entsprechenden Maßnahmen zu ergreifen. Microsoft arbeitet zwar auch mit Domänenbesitzern zusammen, um die erforderlichen Datensätze zu veröffentlichen, es hilft jedoch, wenn einzelne Benutzer sie zusätzlich dazu auffordern.
 
 4. Fügen Sie optional den Absender der Liste der sicheren Absender hinzu. Bedenken Sie jedoch, dass wenn dieses Konto von einem Phisher gespooft wurde, wird die Nachricht an Ihr Postfach übermittelt. Daher sollte diese Option nur in Ausnahmefällen verwendet werden.
 
@@ -610,9 +584,11 @@ Wenn Sie ein Domänenadministrator, jedoch kein Office 365-Kunde sind:
 
 ### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>Was tun, wenn ich nicht weiß, wer E-Mails als meine Domäne sendet?
 
-Viele Domänen veröffentlichen keine SPF-Einträge, da sie nicht wissen, wer all die Absender sind. Das ist in Ordnung. Sie müssen sie nicht alle kennen. Sie sollten stattdessen damit beginnen, einen SPF-Eintrag für diejenigen zu veröffentlichen, die Sie kennen, insbesondere diejenigen, wo sich der Datenverkehr Ihres Unternehmens befindet, und eine neutrale SPF-Richtlinie veröffentlichen: ?all:
+Viele Domänen veröffentlichen keine SPF-Einträge, da sie nicht wissen, wer all die Absender sind. Das ist in Ordnung. Sie müssen sie nicht alle kennen. Sie sollten stattdessen damit beginnen, einen SPF-Eintrag für diejenigen zu veröffentlichen, die Sie kennen, insbesondere diejenigen, bei denen sich der Datenverkehr Ihres Unternehmens befindet, und eine neutrale SPF-Richtlinie veröffentlichen: `?all`:
 
-example.com IN TXT "v=spf1 include:spf.example.com ?all"
+```text
+fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
+```
 
 Eine neutrale SPF-Richtlinie bedeutet, dass jede E-Mail, die von Ihrer Unternehmensinfrastruktur stammt, die E-Mail-Authentifizierung bei allen anderen E-Mail-Empfängern besteht. Eine E-Mail, die von Absendern stammt, die Sie nicht kennen, fällt auf neutral zurück, was fast damit gleichzusetzen ist, dass keine SPF-Einträge veröffentlicht wurden.
 
@@ -622,7 +598,7 @@ Sobald Sie mit einem SPF-Eintrag mit einer Fallbackrichtlinie von „?all“ beg
 
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Was tun, wenn ich der Besitzer der Mailingliste bin?
 
-Siehe [Allgemeines Szenario Nr. 1 – Diskussionslisten](#common-scenario-1---discussion-lists).
+Lesen Sie hierzu den Abschnitt [Allgemeines Szenario: Diskussionslisten](#common-scenario-discussion-lists) weiter oben in diesem Thema.
 
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Was tun, wenn ich ein Infrastrukturanbieter wie Internetdienstanbieter (ISP), E-Mail-Dienstanbieter (ESP) oder gehosteter Clouddienst bin?
 
