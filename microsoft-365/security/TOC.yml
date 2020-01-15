@@ -412,6 +412,8 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
             - name: Nachrichtenablaufverfolgung im Security & Compliance Center
               href: ./office-365-security/message-trace-scc.md
+            - name: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
+              href: ./office-365-security/view-email-security-reports.md
             - name: Nachrichtenübermittlung und Einblicke im Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
