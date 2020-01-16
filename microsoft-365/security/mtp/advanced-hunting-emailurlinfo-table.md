@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailUrlInfo" im Schema "Erweiterte Suche"
 description: Hier erfahren Sie mehr über die URL- oder Linkinformationen in der Tabelle "EmailUrlInfo" des Schemas "Erweiterte Suche".
-keywords: erweiterte Suche, Suche nach Bedrohungen, Suche nach Cyberbedrohungen, Suche, Anfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailUrlInfo, Netzwerkmeldungs-ID, URL, Link
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailUrlInfo, Netzwerknachrichten-ID, URL, Link
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,35 +15,35 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da9712d1f3465c28d2ba880997a52434723a297d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42b7d1734c5925ba493f647268852637072fc4a3
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808670"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210330"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="88799-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="88799-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="ef947-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="ef947-104">EmailUrlInfo</span></span>
 
-<span data-ttu-id="88799-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="88799-105">**Applies to:**</span></span>
-- <span data-ttu-id="88799-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="88799-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="ef947-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="ef947-105">**Applies to:**</span></span>
+- <span data-ttu-id="ef947-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="ef947-106">Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="88799-107">Die Tabelle `EmailUrlInfo` im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu URLs in von Office 365 ATP verarbeiteten E-Mails und Anlagen.</span><span class="sxs-lookup"><span data-stu-id="88799-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="88799-108">Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="88799-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="ef947-107">Die Tabelle `EmailUrlInfo` im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu URLs in von Office 365 ATP verarbeiteten E-Mails und Anlagen.</span><span class="sxs-lookup"><span data-stu-id="ef947-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="ef947-108">Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="ef947-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="88799-109">Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="88799-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="ef947-109">Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="ef947-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="88799-110">Spaltenname</span><span class="sxs-lookup"><span data-stu-id="88799-110">Column name</span></span> | <span data-ttu-id="88799-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="88799-111">Data type</span></span> | <span data-ttu-id="88799-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="88799-112">Description</span></span> |
+| <span data-ttu-id="ef947-110">Spaltenname</span><span class="sxs-lookup"><span data-stu-id="ef947-110">Column name</span></span> | <span data-ttu-id="ef947-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="ef947-111">Data type</span></span> | <span data-ttu-id="ef947-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ef947-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="88799-113">datetime</span><span class="sxs-lookup"><span data-stu-id="88799-113">datetime</span></span> | <span data-ttu-id="88799-114">Datum und Uhrzeit der Aufzeichnung des Ereignisses</span><span class="sxs-lookup"><span data-stu-id="88799-114">Date and time when the event was recorded</span></span> |
-| `UrlId` | <span data-ttu-id="88799-115">string</span><span class="sxs-lookup"><span data-stu-id="88799-115">string</span></span> | <span data-ttu-id="88799-116">Eindeutiger Bezeichner für die URL in der Betreffzeile, im Textkörper oder in der Anlage der E-Mail</span><span class="sxs-lookup"><span data-stu-id="88799-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="88799-117">string</span><span class="sxs-lookup"><span data-stu-id="88799-117">string</span></span> | <span data-ttu-id="88799-118">Eindeutiger Bezeichner für die von Office 365 generierte E-Mail</span><span class="sxs-lookup"><span data-stu-id="88799-118">Unique identifier for the email, generated by Office 365</span></span> |
-| `Url` | <span data-ttu-id="88799-119">string</span><span class="sxs-lookup"><span data-stu-id="88799-119">string</span></span> | <span data-ttu-id="88799-120">Vollständige URL in der Betreffzeile, im Textkörper oder in der Anlage der E-Mail</span><span class="sxs-lookup"><span data-stu-id="88799-120">Full URL in the email subject, body, or attachment</span></span> |
+| `Timestamp` | <span data-ttu-id="ef947-113">datetime</span><span class="sxs-lookup"><span data-stu-id="ef947-113">datetime</span></span> | <span data-ttu-id="ef947-114">Datum und Uhrzeit der Aufzeichnung des Ereignisses</span><span class="sxs-lookup"><span data-stu-id="ef947-114">Date and time when the event was recorded</span></span> |
+| `UrlId` | <span data-ttu-id="ef947-115">string</span><span class="sxs-lookup"><span data-stu-id="ef947-115">string</span></span> | <span data-ttu-id="ef947-116">Eindeutiger Bezeichner für die URL in der Betreffzeile, im Textkörper oder in der Anlage der E-Mail</span><span class="sxs-lookup"><span data-stu-id="ef947-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="ef947-117">string</span><span class="sxs-lookup"><span data-stu-id="ef947-117">string</span></span> | <span data-ttu-id="ef947-118">Eindeutiger Bezeichner für die von Office 365 generierte E-Mail</span><span class="sxs-lookup"><span data-stu-id="ef947-118">Unique identifier for the email, generated by Office 365</span></span> |
+| `Url` | <span data-ttu-id="ef947-119">string</span><span class="sxs-lookup"><span data-stu-id="ef947-119">string</span></span> | <span data-ttu-id="ef947-120">Vollständige URL in der Betreffzeile, im Textkörper oder in der Anlage der E-Mail</span><span class="sxs-lookup"><span data-stu-id="ef947-120">Full URL in the email subject, body, or attachment</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="88799-121">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="88799-121">Related topics</span></span>
-- [<span data-ttu-id="88799-122">Vorbeugende Suche nach Bedrohungen</span><span class="sxs-lookup"><span data-stu-id="88799-122">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="88799-123">Lernen der Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="88799-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="88799-124">Verwenden freigegebener Abfragen</span><span class="sxs-lookup"><span data-stu-id="88799-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="88799-125">Suche nach Bedrohungen auf Geräten und in E-Mails</span><span class="sxs-lookup"><span data-stu-id="88799-125">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="88799-126">Grundlegendes zum Schema</span><span class="sxs-lookup"><span data-stu-id="88799-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="88799-127">Anwenden bewährter Methoden für Abfragen</span><span class="sxs-lookup"><span data-stu-id="88799-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="ef947-121">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="ef947-121">Related topics</span></span>
+- [<span data-ttu-id="ef947-122">Vorbeugende Suche nach Bedrohungen</span><span class="sxs-lookup"><span data-stu-id="ef947-122">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="ef947-123">Lernen der Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="ef947-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="ef947-124">Verwenden freigegebener Abfragen</span><span class="sxs-lookup"><span data-stu-id="ef947-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="ef947-125">Suche nach Bedrohungen auf Geräten und in E-Mails</span><span class="sxs-lookup"><span data-stu-id="ef947-125">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="ef947-126">Grundlegendes zum Schema</span><span class="sxs-lookup"><span data-stu-id="ef947-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="ef947-127">Anwenden bewährter Methoden für Abfragen</span><span class="sxs-lookup"><span data-stu-id="ef947-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
