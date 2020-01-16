@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970853"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173821"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
 
@@ -41,7 +41,7 @@ Kunden, die über eine Microsoft 365 E5- oder eine entsprechende Lizenz verfüge
 ## <a name="start-using-the-service"></a>Verwenden des Diensts – erste Schritte
 Durch die Aktivierung des Microsoft Threat Protection-Diensts werden Daten aus den verschiedenen integrierten Diensten zusammengeführt. Diese Daten werden zentral verarbeitet und gespeichert, um neue Erkenntnisse zu gewinnen und um zentralisierte Reaktionsabläufe zu ermöglichen.
 
-Vor der Aktivierung des Dienstes werden im Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) die Optionen **Vorfälle** und **Info-Center** nicht im Menü angezeigt.
+Bevor Sie den Dienst einschalten, zeigt das Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) keine **Vorfälle** und **Aktionscenter** Optionen im Menü an.
 
 ![Abbildung des Microsoft 365 Security Center-Menüs ohne Microsoft Threat Protection-Funktionen](../images/mtp-off.png)
 *Microsoft 365 Security Center mit deaktiviertem Microsoft Threat Protection*
@@ -71,7 +71,7 @@ Daten werden endgültig gelöscht, und die entsprechenden Features werden aus de
 
 ## <a name="get-assistance"></a>Unterstützung erhalten
 
-Microsoft-Mitarbeiter können Sie dabei unterstützen, den Dienst und die zugehörigen Ressourcen in Ihrem Mandanten bereitzustellen oder die Bereitstellung aufzuheben. Wenn Sie Hilfe benötigen, wenden Sie sich an den [Premier Support](https://go.microsoft.com/fwlink/?LinkID=733758).
+Microsoft-Mitarbeiter können Sie dabei unterstützen, den Dienst und die zugehörigen Ressourcen in Ihrem Mandanten bereitzustellen oder die Bereitstellung aufzuheben. Um Unterstützung zu erhalten, wählen Sie **need help?** im Microsoft 365 Security Center aus. Erwähnen Sie bei der Beschreibung Ihrer Bedenken "Microsoft Threat Protection".
 
 ## <a name="related-topics"></a>Verwandte Themen
 
