@@ -1,7 +1,7 @@
 ---
 title: DeviceFileEvents-Tabelle im Advanced Hunting-Schema
 description: Informationen zu dateibezogenen Ereignissen in der DeviceFileEvents-Tabelle des Advanced Hunting-Schemas
-keywords: Erweiterte Jagd, Bedrohungs Jagd, Cyber Threat Hunting, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, filecreationevents, DeviceFileEvents, Files, Path, Hash, SHA1, SHA256, MD5
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, filecreationevents, DeviceFileEvents, Dateien, Pfad, Hash, SHA1, SHA256, MD5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ed0ccbaaf6b06f29eb241d8ddcc38361d1e802bb
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b772f1adccfcab52709fbedd872cb48b1c15f4e2
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809310"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210487"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 

@@ -1,7 +1,7 @@
 ---
 title: DeviceImageLoadEvents-Tabelle im Advanced Hunting-Schema
 description: Informationen zu dll-Lade Ereignissen in der DeviceImageLoadEvents-Tabelle des Advanced Hunting-Schemas
-keywords: Erweiterte Jagd, Bedrohungs Jagd, Cyber Threat Hunting, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, imageloadevents, DeviceImageLoadEvents, DLL-laden, Bibliothek, Dateiabbild
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, imageloadevents, DeviceImageLoadEvents, DLL-laden, Bibliothek, Datei Image
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fdb69ee2e53372fdc486679831704c98202dddfe
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d2ff86977343aac1fdb5c201e3eb786bf968e545
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809295"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210457"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 

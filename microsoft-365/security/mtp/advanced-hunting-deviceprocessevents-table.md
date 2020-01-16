@@ -1,7 +1,7 @@
 ---
 title: DeviceProcessEvents-Tabelle im Advanced Hunting-Schema
 description: Erfahren Sie mehr über das Prozess Laichen oder Erstellen von Ereignissen in der DeviceProcessEventstable des Advanced Hunting-Schemas.
-keywords: Erweiterte Jagd, Bedrohungs Jagd, Cyber Threat Hunting, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, processcreationevents, DeviceProcessEvents, Prozess-ID, Befehlszeile, DeviceProcessEvents
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, processcreationevents, DeviceProcessEvents, Prozess-ID, Befehl DeviceProcessEvents-Reihe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7899d06d9107ed5fdbaf67d507ed69a034329b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e65231b28e6baeff71ce8bc448b2955d062a46e9
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809303"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210380"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

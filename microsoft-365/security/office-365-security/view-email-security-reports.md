@@ -1,9 +1,9 @@
 ---
-title: Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
+title: Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center, kompromittierten Benutzern, Verschlüsselung, Bedrohungsschutz Status, Malwareerkennungen, Top-Schadsoftware, Spam Erkennung, gesendete und empfangene e-Mails, von Benutzern gemeldete Nachrichten, Lesen von Berichten, Erkennung, Sicherheitsdaten, Sicherheitsinformationen
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112383"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209950"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -29,7 +29,8 @@ Im [ &amp; Security Compliance Center](https://protection.office.com) steht eine
 ![Dashboard, in dem Sie sehen, wie Advanced Threat Protection funktioniert](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
-- [Verschlüsselungs Bericht](#encryption-report) (neu!)
+- [Bericht "kompromittierte Benutzer" (**neu!**)](#compromised-users-report-new)
+- [Verschlüsselungs Bericht](#encryption-report)
 - [Threat Protection-Statusbericht](#threat-protection-status-report) 
 - [Bericht über Schadsoftware-Erkennungen](#malware-detections-report) 
 - [Höchst schädlicher Bericht](#top-malware-report)
@@ -38,10 +39,17 @@ Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
 - [Spam Erkennungs Bericht](#spam-detections-report)
 - [Gesendete und empfangene e-Mail-Berichte](#sent-and-received-email-report)
 - [Bericht über vom Benutzer gemeldete Nachrichten](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>Bericht "kompromittierte Benutzer" (**neu!**) 
+
+Dieser Bericht, der für alle Personen mit Exchange Online Schutz verfügbar ist, zeigt die Anzahl der Benutzerkonten, die als verdächtige oder eingeschränkte Benutzer gekennzeichnet sind, Daten, die besonders nützlich sind, wenn Konten in einen der Zustände eingeben, die darauf hindeuten, dass das Benutzerkonto problematisch sein kann, oder sogar gefährdet. Bei häufiger Verwendung kann der kompromittierte Benutzerbericht Spitzen und sogar Trends in Konten erkennen, die in verdächtigen oder eingeschränkten Zuständen markiert sind, was Hinweise gibt, dass ein Problem mit Sicherheit und dem Wohlbefinden Ihres Mandanten auftreten kann.
+
+![Der Bericht "kompromittierte Benutzer" wird in Office 365 angezeigt.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-(**Neu!**) Im **Verschlüsselungs Bericht** werden Informationen über e-Mail-Nachrichten angezeigt, die entweder über die Richtlinien Ihrer Organisation oder durch Endbenutzer Steuerelemente verschlüsselt wurden. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen.
+Im **Verschlüsselungs Bericht** werden Informationen über e-Mail-Nachrichten angezeigt, die entweder über die Richtlinien Ihrer Organisation oder durch Endbenutzer Steuerelemente verschlüsselt wurden. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen.
 
 Um diesen Bericht anzuzeigen, wechseln Sie im Security #a0 Compliance Center zu **Berichte** \> - **Dashboard** \> - **Verschlüsselungs Bericht**.
 

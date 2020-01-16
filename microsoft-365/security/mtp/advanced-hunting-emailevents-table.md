@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailEvents" im Schema "Erweiterte Suche"
 description: Erfahren Sie mehr über die Ereignisse, die Office 365-E-Mails in der Tabelle "EmailEvents" des Schemas „Erweiterte Suche“ zugeordnet sind.
-keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyber-Bedrohungen, Suche, Abfrage, Telemetrie, Schema-Referenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerk-Nachrichten-ID, Absender, Empfänger, Anlage-ID, Name der Anlage, Malware-Beurteilung, Phishing-Beurteilung, Anlagenanzahl, Verknüpfungsanzahl, URL-Anzahl
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Malware-Urteil, Phishing-Urteil, ANLAGENANZAHL, Verknüpfungsanzahl, URL-Anzahl
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d30772fa756369971bde747825028b50e9540b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808710"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210360"
 ---
 # <a name="emailevents"></a>EmailEvents
 
