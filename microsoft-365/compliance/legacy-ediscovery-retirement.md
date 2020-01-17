@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
-ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
+ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41107904"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210060"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -45,7 +45,7 @@ Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 3
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
-   
+
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
 - [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), bei dem es sich um die erste Version von Advanced eDiscovery handelt, auf die über einen eDiscovery-Fall im Office 365 Security #a0 Compliance Center zugegriffen wird.
@@ -62,7 +62,7 @@ Gemäß der ursprünglichen Ankündigung am 1. Juli 2017 wird die in-situ-eDisco
 Da alle diese Funktionen (mit Ausnahme des Kopierens von Suchergebnissen in ein Discovery-Postfach) jetzt in der Inhaltssuche, eDiscovery und erweiterten eDiscovery-Tools im [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) verfügbar sind (mit einer verbesserten Funktionalität, Zuverlässigkeit und Unterstützung für eine breite Palette von Microsoft 365-Diensten), sollten Sie diese Tools so schnell wie möglich verwenden. Um Sie beim Übergang zu diesen anderen eDiscovery-Tools zu unterstützen, werden in der folgenden Tabelle die Tools aufgelistet, die Sie anstelle von in-situ-eDiscovery und in-situ-Speicher verwenden können.
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
-    
+
 - Office 365-und Microsoft 365-Unternehmensorganisationen
 
 - Office 365-und Microsoft 365-Bildungseinrichtungen
@@ -71,11 +71,10 @@ Da alle diese Funktionen (mit Ausnahme des Kopierens von Suchergebnissen in ein 
 
 - Office 365 Deutschland
 
-
 ### <a name="timeline-for-retirement"></a>Zeitachse für den Ruhestand
-    
+
 - 1. April 2020: Sie können keine neuen suchen und Aufbewahrungen erstellen, aber Sie können vorhandene Suchvorgänge auf eigenes Risiko ausführen, bearbeiten und löschen. Der Microsoft-Support kann keine Compliance-eDiscovery-#a0 mehr in der Exchange-Verwaltungskonsole bereitstellen.
-    
+
 - 1. Juli 2020: die in-situ-eDiscovery-#a0, in der die Exchange-Verwaltungskonsole Funktionen enthält, wird in den schreibgeschützten Modus versetzt. Dies bedeutet, dass Sie nur vorhandene suchen und Haltestatus entfernen können.
 
 ### <a name="alternative-tools"></a>Alternative Tools
@@ -87,7 +86,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <tr class="header">
 <th><strong>Funktionalität</strong></th>
 <th><strong>Alternatives Tool</strong></th>
-<th><strong>Kommentare</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -131,6 +130,11 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <p>
 <p>Alternativ können Sie die Suchergebnisse in PST-Dateien exportieren und dann den Microsoft 365-Import Dienst verwenden, um das PST in ein Discovery-Postfach zu importieren. Eine Schritt-für-Schritt-Anleitung finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien in Office 365</a>.
 </tr>
+<tr class="even">
+<td>Wiederherstellen von Elementen aus dem Ordner "Wiederherstellbare Elemente"</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td>Sie können endgültig gelöschte Elemente (auch als <i>vorläufig gelöschte</i> Elemente bezeichnet) in Postfächern wiederherstellen, solange der Aufbewahrungszeitraum für gelöschte Elemente für ein Element nicht abgelaufen ist. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Ordner "refundable Items" in Exchange Online</a>.</td>
+</tr>
 </tbody>
 </table>
 
@@ -155,7 +159,7 @@ Gemäß dem ursprünglichen Hinweis, der am 1. Juli 2017 in der Exchange-Verwalt
 Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) und Office 365 Security #a0 Compliance Center PowerShell mit verbesserter Leistung und Skalierbarkeit verfügbar sind, sollten Sie diese verbesserten Cmdlets verwenden. Zu diesen Cmdlets gehören [<span class="underline"> \*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline"> \*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline"> \*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)und [<span class="underline"> \*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
-    
+
 - Office 365-und Microsoft 365-Unternehmensorganisationen
 
 - Office 365-und Microsoft 365-Bildungseinrichtungen
@@ -165,9 +169,9 @@ Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Cen
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
-    
+
 - 1. April 2020: Sie können **New-MailboxSearch** nicht zum Erstellen neuer Compliance-eDiscovery-suchen und in-Place-Speicher verwenden, aber Sie können Cmdlets zum Ausführen, bearbeiten und Löschen vorhandener Suchvorgänge und-Aufbewahrungen auf eigenes Risiko verwenden. Der Microsoft-Support bietet keine Unterstützung mehr für diese Art von Suche und Aufbewahrung.
-    
+
 - 1. Juli 2020: wie bereits erwähnt, wird die in-situ-eDiscovery-#a0, in der die Exchange-Verwaltungskonsole Funktionen enthält, in den schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie die Cmdlets **New-MailboxSearch**, **Start-MailboxSearch**oder **setMailboxSearch** nicht verwenden können. Sie können nur vorhandene suchen und Aufbewahrungen abrufen und entfernen.
 
 ### <a name="alternative-tools"></a>Alternative Tools
@@ -179,7 +183,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <tr class="header">
 <th><strong>Funktionalität</strong></th>
 <th><strong>Alternative Tools</strong></th>
-<th><strong>Kommentare</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -239,7 +243,7 @@ Das Cmdlet **Search-Mailbox** in Exchange Online PowerShell wird wie ursprüngli
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
-    
+
 -  1. April 2020: das Cmdlet **Search-Mailbox** ist nicht mehr verfügbar, und der Microsoft-Support bietet keine Unterstützung mehr.
 
 ### <a name="alternative-tools"></a>Alternative Tools
@@ -251,7 +255,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <tr class="header">
 <th><strong>Funktionalität</strong></th>
 <th><strong>Alternative Tools</strong></th>
-<th><strong>Kommentare</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -314,11 +318,11 @@ Zu diesem Zeitpunkt wird empfohlen, dass Sie mit dem Übergang Ihres eDiscovery-
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
-    
+
 - 1. April 2020: Sie können keine neuen erweiterten eDiscovery v 1.0-Fälle erstellen.
-    
-- 1. Juli 2020: der Microsoft-Support bietet keine Unterstützung. Siehe [diesen Hinweis](https://go.microsoft.com/fwlink/?linkid=2113221). Sie können in keinem Fall neue Daten hinzufügen (Suchergebnisse für Advanced eDiscovery vorbereiten). Sie können die Datenverarbeitung in vorhandenen Fällen auf eigenes Risiko fortsetzen.
+
+- 1. Juli 2020: Sie können keine neuen Daten hinzufügen (Suchergebnisse für erweiterte eDiscovery) auf alle Fälle vorbereiten. Sie können die Datenverarbeitung in vorhandenen Fällen auf eigenes Risiko fortsetzen. Der Microsoft-Support kann keine Unterstützung mehr leisten. 
 
 ### <a name="alternative-tools"></a>Alternative Tools
-    
+
 Die [Erweiterte eDiscovery-Lösung](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) im Microsoft 365 Compliance Center.
