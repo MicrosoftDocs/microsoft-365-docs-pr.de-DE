@@ -5,7 +5,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/01/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802828"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41218585"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)
 
@@ -39,35 +39,37 @@ Wenn Sie zuvor Sensitivitäts Bezeichnungen angewendet haben, die die Verschlüs
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-Sie können jetzt auch Vertraulichkeits Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden. [Weitere Informationen](sensitivity-labels-teams-groups-sites.md).
+Sie können jetzt auch Vertraulichkeits Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden. Weitere Informationen zu dieser separaten Vorschau finden Sie unter [use Sensitivity Labels with Microsoft Teams, Office 365 Groups, and SharePoint Sites (Public Preview)](sensitivity-labels-teams-groups-sites.md).
 
-Bei Bedarf können Sie die Vorschau jederzeit deaktivieren.
+Sie haben jederzeit die Möglichkeit, diese Vorschau jederzeit zu deaktivieren.
 
 ## <a name="requirements"></a>Anforderungen
 
-Diese Features funktionieren nur mit [Sensitivitäts Bezeichnungen](sensitivity-labels.md). Wenn Sie Azure Information Protection-Bezeichnungen verwendet haben, können Sie diese in Sensitivitäts Bezeichnungen umwandeln, um diese Funktionen für neue Dateien, die Sie hochladen, zu aktivieren. [Erfahren Sie, wie](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+Diese Features funktionieren nur mit [Vertraulichkeits Bezeichnungen](sensitivity-labels.md) . Wenn Sie derzeit über Azure Information Protection-Bezeichnungen verfügen, migrieren Sie Sie zunächst zu Sensitivitäts Bezeichnungen, sodass Sie diese Funktionen für neue Dateien, die Sie hochladen, aktivieren können. Anweisungen finden Sie unter [How to migrate Azure Information Protection Labels to Unified Sensitivity Labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
-Verwenden Sie für diese Vorschau die OneDrive-Synchronisierungs-App-Version 19.002.0121.0008 oder höher unter Windows und Version 19.002.0107.0008 oder höher unter Mac. Beide Versionen wurden am 28. Januar 2019 veröffentlicht und sind derzeit für alle Ringe freigegeben. [Weitere Informationen finden Sie in den OneDrive-Versions](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)hinweisen. Nachdem Sie diese Vorschau aktiviert haben, werden Benutzer, die eine ältere Version der Synchronisierungs-app ausführen, zur Aktualisierung aufgefordert.
+Verwenden Sie für diese Vorschau die OneDrive-Synchronisierungs-App-Version 19.002.0121.0008 oder höher unter Windows und Version 19.002.0107.0008 oder höher unter Mac. Beide Versionen wurden am 28. Januar 2019 veröffentlicht und sind derzeit für alle Ringe freigegeben. Weitere Informationen finden Sie in den [Anmerkungen zur OneDrive-Version](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Nachdem Sie diese Vorschau aktiviert haben, werden Benutzer, die eine ältere Version der Synchronisierungs-app ausführen, aufgefordert, Sie zu aktualisieren.
 
 ## <a name="limitations"></a>Einschränkungen
 
-- Wenn Sie diese Vorschau aktivieren, können Benutzer, die mithilfe des Office-Desktops oder Mobile Apps eine Bezeichnung auf eine Datei anwenden, möglicherweise keine weiteren Änderungen speichern, die Sie an der Datei vorgenommen haben. Stattdessen werden Benutzer von der APP aufgefordert, lokale Änderungen zu speichern oder zu verwerfen. Führen Sie eine der folgenden Aktionen aus, um einen Verlust der Arbeit zu vermeiden:
-
-  - Verwenden Sie die Webversionen der Office-Apps, um Bezeichnungen anzuwenden.
-
-  - Schließen Sie eine Datei, nachdem Sie eine Bezeichnung angewendet haben, und öffnen Sie die Datei erneut, um weitere Änderungen vorzunehmen.
+- Wenn Sie diese Vorschau aktivieren, können Benutzer, die eine Bezeichnung in eine Datei in einem OneDrive-synchronisierungsordner ändern, möglicherweise keine anderen an der Datei vorgenommenen Änderungen speichern.  Benutzer sehen einen [roten Kreis mit einem weißen Kreuz Symbol Fehler](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), und Sie werden aufgefordert, neue Änderungen als separate Kopie zu speichern.  Neben Bezeichnungsänderungen, die von Benutzern initiiert werden, kann dasselbe Verhalten auftreten, wenn ein Administratoreinstellungen für eine veröffentlichte Bezeichnung ändert, die bereits auf Dateien angewendet wird, die auf den synchronisierungsclient des Benutzers heruntergeladen wurden.
+    
+    Führen Sie eine der folgenden Aktionen aus, um den Verlust von Arbeit für diese Szenarien zu vermeiden:
+    - Verwenden Sie die Webversionen der Office-Apps, um Bezeichnungen anzuwenden.
+    - Schließen Sie eine Datei, nachdem Sie eine Bezeichnung angewendet haben, und öffnen Sie die Datei erneut, um weitere Änderungen vorzunehmen.
 
 - SharePoint wendet die neuen Bezeichnungen nicht automatisch auf vorhandene Dateien an, die Sie bereits mithilfe von Azure Information Protection-Bezeichnungen verschlüsselt haben. Um die Funktionen zu erhalten, nachdem Sie diese Vorschau aktiviert haben, müssen Sie die folgenden Aufgaben ausführen:
+    
+    1. Stellen Sie sicher, dass Sie die Azure Information Protection-Bezeichnungen zu Sensitivitäts Bezeichnungen migriert und diese im Microsoft 365 Compliance Center oder in einer entsprechenden Bezeichnungs Verwaltungskonsole veröffentlicht haben.
+    
+    2. Laden Sie die Dateien herunter, und laden Sie Sie in SharePoint hoch.
 
-  - Konvertieren Sie die Azure Information Protection-Bezeichnungen in Sensitivitäts Bezeichnungen.
+- In SharePoint können keine verschlüsselten Dateien verarbeitet werden, wenn die Bezeichnung, auf die die Verschlüsselung angewendet wird, eine der folgenden Konfigurationen für die Verschlüsselung aufweist:
+    - **Zulassen, dass Benutzerberechtigungen zuweisen, wenn Sie die Bezeichnung anwenden** , und **in Word, PowerPoint und Excel Benutzer zur Angabe von Berechtigungen auffordern**
+    - Der **Benutzer Zugriff auf Inhalts Ablauf** wird auf einen anderen Wert als **Never**festgelegt.
 
-  - Laden Sie die Dateien herunter, und laden Sie Sie in SharePoint hoch.
+- Für ein verschlüsseltes Dokument, das Bearbeitungsberechtigungen für einen Benutzer gewährt, kann das Kopieren in den Webversionen der Office-Apps nicht blockiert werden.
 
-- SharePoint kann keine Beschriftungen mit benutzerdefinierten Berechtigungen und Beschriftungen mit Ablaufdaten verarbeiten.
-
-- Wenn Benutzer über Bearbeitungsberechtigungen verfügen, können die Webversionen der Office-Apps unabhängig von der Einstellung der Kopierrichtlinie in der Bezeichnung kopiert werden.
-
-- RMS-Sperrung,-Nachverfolgung und-Berichterstellung werden nicht unterstützt.
+- Die Dokument Verfolgungs Website für Azure Information Protection wird nicht unterstützt.
 
 - Office-Desktop-Apps und Mobile Apps unterstützen nicht die gemeinsame Dokumenterstellung. Stattdessen öffnen diese apps weiterhin Dateien im exklusiven Bearbeitungsmodus.
 
@@ -85,11 +87,11 @@ Vergewissern Sie sich vor dem Aktivieren der Vorschau, dass SharePoint Online Ve
 
 2. Wenn Sie eine frühere Version der SharePoint Online Management Shell aus dem Microsoft Download Center installiert haben, können Sie auch zum **Hinzufügen oder Entfernen von Software** wechseln und die SharePoint Online Management Shell deinstallieren.
 
-3. Wechseln Sie in einem Webbrowser zur Seite Download Center, und [Laden Sie die neueste SharePoint Online Verwaltungsshell herunter](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+3. Wechseln Sie in einem Webbrowser zur Download Center-Seite, und [laden Sie die neueste SharePoint Online-Verwaltungsshell herunter](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-4. Wählen Sie Ihre Sprache aus, und klicken Sie dann auf **herunterladen**.
+4. Wählen Sie die gewünschte Sprache aus, und klicken Sie auf **Download**.
 
-5. Wählen Sie zwischen der Datei x64 und x86. msi aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows oder die x86-Datei ausführen, wenn Sie die 32-Bit-Version ausführen. Wenn Sie nicht wissen, finden Sie unter [welche Version des Windows-Betriebssystems soll ich ausführen?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Wählen Sie zwischen der x64- und der x86-Version der MSI-Datei aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows oder die x86-Datei ausführen, wenn Sie die 32-Bit-Version ausführen. Wenn Sie nicht wissen, finden Sie unter [welche Version des Windows-Betriebssystems soll ich ausführen?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 
 6. Nachdem Sie die Datei heruntergeladen haben, führen Sie die Datei aus, und führen Sie die Schritte im Setup-Assistenten aus.
