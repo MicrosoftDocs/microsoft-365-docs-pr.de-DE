@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210150"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230193"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -170,6 +170,7 @@ Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede V
 - Aktivieren der Aufzeichnung von Überwachungsdaten
 - Ermitteln riskanter und nicht kompatibler Shadow-IT-Anwendungen
 - Überprüfen von Berechtigungen #a0 blockieren riskanter OAuth-Anwendungen, die mit Ihrer Umgebung verbunden sind
+- Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
 
 ### <a name="mfa-improvement-action-updates"></a>Aktualisierung der MFA-Verbesserungs Aktionen
 
