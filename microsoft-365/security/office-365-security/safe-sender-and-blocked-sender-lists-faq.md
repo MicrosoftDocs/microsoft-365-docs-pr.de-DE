@@ -13,18 +13,18 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird. Eine Möglichkeit hierzu ist das Erstellen von Listen mit sicheren Absendern und blockierten Absendern für die Personen in Ihrer Organisation.
-ms.openlocfilehash: 5530fa8c8ee5a83c4e8515a8f31f91e45b2ec97b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971673"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238392"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listen sicherer und blockierter Absender in Exchange Online
 
 Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird. Eine Möglichkeit hierzu ist das Erstellen von Listen mit sicheren Absendern und blockierten Absendern für die Personen in Ihrer Organisation.
 
-*Lesen Sie die aktualisierte Version der Tipps und Verfahren für die Verwendung dieser Listen als Administrator* , [um zu verhindern, dass gute e-Mails in Office 365 als Spam gekennzeichnet werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam).
+*Lesen Sie die aktualisierte Version der Tipps und Verfahren für die Verwendung dieser Listen als Administrator* , [um zu verhindern, dass gute e-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md).
 
 Wenn Sie kein Administrator sind und nur Ihre eigenen Junk-e-Mails in Outlook mithilfe einer Liste sicherer Absender verwalten möchten, lesen Sie die Schritte in der Übersicht über[den Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

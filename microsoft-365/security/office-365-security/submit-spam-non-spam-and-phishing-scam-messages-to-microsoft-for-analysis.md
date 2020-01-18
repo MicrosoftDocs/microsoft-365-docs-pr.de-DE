@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959643"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238432"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 
@@ -68,7 +68,7 @@ So leiten Sie Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingver
 
 Wenn eine Nachricht fälschlicherweise als Junk identifiziert wurde, können Sie die Meldung "falsch positiv" an das Microsoft-Spam Analyse Team übermitteln. Die Analysten werden die Nachricht bewerten und analysieren. Abhängig vom Ergebnis der Analyse werden die Filterregeln für Spaminhalte des Diensts angepasst, damit die Nachricht zugestellt werden kann.
   
-Administratoren können weitere Informationen zur Spam Einstellung überprüfen, die für eine ganze Organisation gelten. Hier erfahren Sie [, wie Sie sicherstellen können, dass eine Nachricht nicht als Spam gekennzeichnet ist](../../compliance/prevent-email-from-being-marked-as-spam.md). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
+Administratoren können weitere Informationen zur Spam Einstellung überprüfen, die für eine ganze Organisation gelten. Hier erfahren Sie [, wie Sie sicherstellen können, dass eine Nachricht nicht als Spam gekennzeichnet ist](prevent-email-from-being-marked-as-spam.md). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
   
 Leiten Sie Nichtspamnachrichten wie folgt weiter:
   
@@ -122,7 +122,7 @@ Die Spambewertung ist ein kontinuierlicher Prozess, der unabhängig von der ursp
 
 [Schutz vor Spam und Schadsoftware](anti-spam-and-anti-malware-protection.md)
   
-[So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](prevent-email-from-being-marked-as-spam.md)
   
 [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
   

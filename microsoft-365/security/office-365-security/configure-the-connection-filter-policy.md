@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Um sicherzustellen, dass e-Mails, die von vertrauenswürdigen Personen gesendet werden, nicht blockiert werden, können Sie die Verbindungsfilter Richtlinie verwenden, um eine Zulassungsliste (auch als Liste sicherer Absender bezeichnet) von IP-Adressen zu erstellen, denen Sie vertrauen. Sie können auch eine Liste blockierter Absender erstellen.
-ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971833"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238422"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
 
@@ -29,7 +29,7 @@ Die meisten von uns haben Freunde und Geschäftspartnern, denen wir vertrauen. E
 
 - Eine Verbindungsfilter Richtlinie zum Erstellen einer Sperrliste kann stattdessen als Abfangen von less-oder nicht vertrauenswürdigen Konten im Filter betrachtet werden.
 
- Weitere Spameinstellungen, die für die gesamte Organisation gelten, sehen Sie sich an, [wie Sie verhindern können, dass gute e-Mail-Nachrichten in Office 365 als Spam gekennzeichnet werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) , oder [wie Spam-e-Mails in Office 365 reduziert](reduce-spam-email.md)werden. Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
+ Weitere Spameinstellungen, die für die gesamte Organisation gelten, sehen Sie sich an, [wie Sie verhindern können, dass gute e-Mail-Nachrichten in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md) , oder [wie Spam-e-Mails in Office 365 reduziert](reduce-spam-email.md)werden. Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
 
 > [!TIP]
 > Möglicherweise möchten Sie das Erstellen von [Listen für zugelassene (oder sichere Absender)](create-safe-sender-lists-in-office-365.md) und [Blockieren von Listen](create-block-sender-lists-in-office-365.md)anhalten und lesen.
@@ -157,6 +157,6 @@ Dies ist im Wesentlichen die gleiche Regel Erstellungs Prozedur aus dem vorherig
 
 [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
 
-[Vorgehensweise verhindern, dass gute e-Mails in Office 365 als Spam gekennzeichnet werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md)
 
 [Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)

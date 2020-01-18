@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Hier finden Sie Informationen zu den Antispameinstellungen und-Filtern, mit denen Sie Spam in Exchange Online und Office 365 verhindern können. Sie werden zu viel Spam in Office 365 einholen? Sie können Ihre Spamfilter und Anti-Spam-Richtlinieneinstellungen anpassen.
-ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970901"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238532"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365-Antispamschutz für E-Mails
 
@@ -34,7 +34,7 @@ Dieser Artikel richtet sich an Office 365 Administratoren. Wenn Sie kein Adminis
 
 Für Kunden, die Office 365 Enterprise E5 haben oder Advanced Threat Protection (ATP)-Lizenzen erworben haben, wird die Verbindungsfilterung von Spoof Intelligence verwendet, um Zulassungs-und Sperrlisten von Absendern zu erstellen, die Ihre Domäne Spoofing durchführen. Weitere Informationen finden Sie unter [erfahren Sie mehr über Spoof Intelligence](learn-about-spoof-intelligence.md).
 
- **Spamfilterung**: Office 365 sucht nach Nachrichtenmerkmalen, die mit Spam im Einklang stehen, indem Sie die Spamfilterung verwenden. Sie können ändern, welche Aktionen für Nachrichten, die als Spam identifiziert werden, durchführen, und auswählen, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen verfasst wurden oder aus bestimmten Ländern oder Regionen gesendet werden. Sie können auch erweiterte Spamfilter Optionen aktivieren, wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten. Darüber hinaus können Sie Spambenachrichtigungen für Endbenutzer so konfigurieren, dass Benutzer informiert werden, wenn die für Sie vorgesehenen Nachrichten stattdessen an die Quarantäne gesendet wurden. (Das Senden von Nachrichten an die Quarantäne ist eine der konfigurierbaren Aktionen.) Aus diesen Benachrichtigungen können Endbenutzer falsch positive Ergebnisse freigeben und diese an Microsoft zur Analyse melden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Um Spam in Office 365 zu verhindern, verwenden Sie Spamfilterung, wenn Sie über zu viel Spam in Office 365 besorgt sind, verwenden Sie die Verbindungsfilterung, um Spam zu verhindern.
+ **Spamfilterung**: Office 365 sucht nach Nachrichtenmerkmalen, die mit Spam im Einklang stehen, indem Sie die Spamfilterung verwenden. Sie können ändern, welche Aktionen für Nachrichten, die als Spam identifiziert werden, durchführen, und auswählen, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen verfasst wurden oder aus bestimmten Ländern oder Regionen gesendet werden. Sie können auch erweiterte Spamfilter Optionen aktivieren, wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten. Darüber hinaus können Sie Spambenachrichtigungen für Endbenutzer so konfigurieren, dass Benutzer informiert werden, wenn die für Sie vorgesehenen Nachrichten stattdessen an die Quarantäne gesendet wurden. (Das Senden von Nachrichten an die Quarantäne ist eine der konfigurierbaren Aktionen.) Aus diesen Benachrichtigungen können Endbenutzer falsch positive Ergebnisse freigeben und diese an Microsoft zur Analyse melden. Weitere Informationen finden Sie unter [Konfigurieren Ihrer Richtlinien für Spamfilter](configure-your-spam-filter-policies.md). Um Spam in Office 365 zu verhindern, verwenden Sie Spamfilterung, wenn Sie über zu viel Spam in Office 365 besorgt sind, verwenden Sie die Verbindungsfilterung, um Spam zu verhindern.
 
 > [!NOTE]
 > Für EoP-eigenständige Kunden: Standardmäßig senden die EoP-Spamfilter Spam-erkannte Nachrichten an den Junk-e-Mail-Ordner jeder Empfänger. Um jedoch sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu erkennen. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -73,7 +73,7 @@ Wenn Sie sich Sorgen über Spam, Phishing und Spoofing in Office 365 machen, ver
 
 [Häufig gestellte Fragen zum Antispamschutz](anti-spam-protection-faq.md)
 
-[Verwenden einer Liste sicherer IP-Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Verwenden einer Liste sicherer IP-Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](prevent-email-from-being-marked-as-spam.md)
 
 [Vorgehensweise Einrichten von Office 365 Spamfilterung zur Unterstützung der Blockierung von Junk-e-Mails](reduce-spam-email.md)
 
