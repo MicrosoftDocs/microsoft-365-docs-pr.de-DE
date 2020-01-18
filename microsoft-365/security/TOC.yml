@@ -176,7 +176,7 @@
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                 - name: Häufig gestellte Fragen zum Schutz vor Schadsoftware
                   href: ./office-365-security/anti-malware-protection-faq-eop.md
-                - name: "Antispam- und Antischadsoftwareschutz in Office\_365"
+                - name: Schutz vor Schadsoftware
                   href: ./office-365-security/anti-malware-protection.md
                 - name: Häufig gestellte Fragen zum Antispamschutz
                   href: ./office-365-security/anti-spam-protection-faq.md

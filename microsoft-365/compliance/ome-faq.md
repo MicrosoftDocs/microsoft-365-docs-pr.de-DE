@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0afb27854e6e080963d7133fb32ecbd5532ae9b2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111859"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233846"
 ---
 # <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
 
@@ -85,7 +85,7 @@ Sie können die vorherige Version von OM weiterhin verwenden, Sie wird derzeit n
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Kann meine Organisation Active Directory Rechteverwaltung verwenden?
 
-Nein. Wenn Sie Exchange Online mit Active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zunächst in Azure Information Protection migrieren](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . 
+Nein. Wenn Sie Exchange Online mit Active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zunächst in Azure Information Protection migrieren](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) .
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Meine Organisation verfügt über eine Exchange-Hybrid Bereitstellung. Kann ich dieses Feature verwenden?
 
@@ -97,7 +97,7 @@ Sie können geschützte Nachrichten aus Outlook 2016 und Outlook 2013 für Windo
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Welche e-Mail-Clients werden zum Lesen und beantworten geschützter e-Mails unterstützt?
 
-Sie können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und Antworten, wenn Sie ein Office 365er Benutzer sind. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie ein nicht Office 365er Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
+Office 365 Benutzer können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und darauf antworten. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie ein nicht Office 365er Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten e-Mail-Nachrichten unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten e-Mails zugeordnet sind?
 

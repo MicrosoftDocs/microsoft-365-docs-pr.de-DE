@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Verwenden Sie das Erkennungs Modell für Anwalts Client-Berechtigungen, um die Computer Lern basierte Erkennung von privilegierten Inhalten zu verwenden, wenn Inhalte in einem erweiterten eDiscovery-Fall überprüft werden.
-ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970863"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233720"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Einrichten der Erkennung von Anwalts Mandanten-Berechtigungen in Advanced eDiscovery
 
@@ -36,11 +36,11 @@ Wenn die Erkennung der Anwalts-Client-Rechte aktiviert ist, werden alle Dokument
 
 Das Modell erzeugt für jedes Dokument die folgenden drei Eigenschaften:
 
-- **AttorneyClientPrivilegeScore** – die Wahrscheinlichkeit, dass das Dokument in der Natur legal ist; die Werte für die Partitur liegen zwischen **0** und **1**.
+- **AttorneyClientPrivilegeScore:** Die Wahrscheinlichkeit, dass das Dokument in der Natur legal ist; die Werte für die Partitur liegen zwischen **0** und **1**.
 
-- **HasAttorney** – diese Eigenschaft wird auf **true** festgelegt, wenn einer der Dokument Teilnehmer in der anwaltsliste aufgeführt ist; Andernfalls ist der Wert **false**. Der Wert ist auch auf " **false** " festgelegt, wenn Ihre Organisation keine anwaltsliste hochgeladen hat.
+- **HasAttorney:** Diese Eigenschaft wird auf **true** festgelegt, wenn einer der Dokument Teilnehmer in der anwaltsliste aufgeführt ist; Andernfalls ist der Wert **false**. Der Wert ist auch auf " **false** " festgelegt, wenn Ihre Organisation keine anwaltsliste hochgeladen hat.
 
-- **Isprivilege** – diese Eigenschaft wird auf **true** festgelegt, wenn der Wert für **AttorneyClientPrivilegeScore** oberhalb des Schwellenwerts liegt *oder* wenn das Dokument über einen Anwalts Teilnehmer verfügt; Andernfalls wird der Wert auf **false**festgelegt.
+- **Isprivilege:** Diese Eigenschaft wird auf **true** festgelegt, wenn der Wert für **AttorneyClientPrivilegeScore** oberhalb des Schwellenwerts liegt *oder* wenn das Dokument über einen Anwalts Teilnehmer verfügt; Andernfalls wird der Wert auf **false**festgelegt.
 
 Diese Eigenschaften (und die entsprechenden Werte) werden den Datei Metadaten der Dokumente in einem Überprüfungs Satzes hinzugefügt, wie im folgenden Screenshot dargestellt:
 
@@ -58,11 +58,11 @@ Eine Person, die ein eDiscovery-Administrator in Ihrer Organisation ist (ein Mit
 
 1. Wechseln Sie im Security #a0 Compliance Center zu **eDiscovery #a1 Advanced eDiscovery**.
 
-2. Wählen Sie auf der Seite für die **Erweiterte eDiscovery** -Homepage auf der Kachel **Einstellungen** die Option **experimentelle Features konfigurieren**aus.
+2. Klicken Sie auf der Seite für die **Erweiterte eDiscovery** -Homepage auf der Kachel **Einstellungen** auf **globale Analyse Einstellungen konfigurieren**.
 
    ![Wählen Sie "experimentelle Features konfigurieren" aus.](media/AeDExperimentalFeatures.png)
 
-3. Wählen Sie auf der Registerkarte **experimentelle Features** die Option **Attorney-Client-Berechtigungseinstellungen verwalten**aus.
+3. Wählen Sie auf der Registerkarte **Analytics-Einstellungen** die Option **Attorney-Client-Berechtigungen verwalten**aus.
 
 4. Verwenden Sie auf der Seite " **Attorney-Client-Privilege-** Flyout" die Umschaltfläche, um das Feature zu aktivieren, und wählen Sie dann **Speichern**aus.
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230213"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233876"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Verwalten von Tickets über ServiceNow
 
@@ -107,7 +107,7 @@ Legen Sie die Tabellen Konfigurationen "Anwendungs Registrierungen" auf "Standar
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Überprüfen der OAuth-Entität, die für Microsoft 365 Security #a0 Compliance Connector erstellt wurde
 
-Wechseln Sie zur Tabelle Anwendungs Registrierungstabellen (Menü #a0 System OAuth #a1 Anwendungsregistrierung) in ServiceNow, und suchen Sie nach der von Ihnen erstellten OAuth-Entität (Name, den Sie Ihr zugewiesen haben).
+Wechseln Sie zur Tabelle Anwendungs Registrierungstabellen (**Menü #a0 System OAuth #a1 Anwendungsregistrierung**) in ServiceNow, und suchen Sie nach der von Ihnen erstellten OAuth-Entität mit dem Namen, den Sie Ihr zugewiesen haben.
 
 ### <a name="logging-in-as-the-integration-user"></a>Anmelden als Integrationsbenutzer
 
@@ -121,13 +121,13 @@ Bevor Sie die Verbindung zwischen dem Microsoft 365 Security Center und ServiceN
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Überprüfen des Integrations Benutzers, der mit der Installationsprüfliste für Microsoft 365 Security #a0 Compliance Connector erstellt wurde
 
-Wechseln Sie zu Benutzertabelle (Menü #a0 Benutzerverwaltung #a1 Benutzer) in ServiceNow, und suchen Sie nach dem von Ihnen erstellten Integrationsbenutzer (Name, den Sie ihm zugewiesen haben).
+Wechseln Sie zu Benutzertabelle **(Menü #a0 Benutzerverwaltung #a1 Benutzer**) in ServiceNow, und suchen Sie den von Ihnen erstellten Integrationsbenutzer mit dem Namen, den Sie ihm zugewiesen haben.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Ihr Unternehmen verfügt über ein einmaliges Anmelden, das verhindert, dass Sie sich über das Microsoft 365 Security Center mit ServiceNow verbinden.
 
 Wenn Ihr Unternehmen einmaliges Anmelden aktiviert hat und Sie eine Fehlermeldung erhalten oder die Anmeldung nicht erfolgreich war, führen Sie eine der beiden Lösungen aus.
 
-#### <a name="logging-into-servicenow-as-the-integration-user"></a>Anmelden bei ServiceNow als Integrationsbenutzer
+#### <a name="log-into-servicenow-as-the-integration-user"></a>Melden Sie sich als Integrationsbenutzer bei ServiceNow an.
 
 1. Navigieren Sie zurück zur Autorisierungs Seite in ServiceNow.
 2. Klicken Sie in der rechten oberen Ecke auf den Link **Not You** .
@@ -142,4 +142,5 @@ Wenn Ihr Unternehmen einmaliges Anmelden aktiviert hat und Sie eine Fehlermeldun
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>Die Installation ist abgeschlossen, es werden jedoch keine Tickets angezeigt und können nicht freigegeben werden
 
-Wenn die Installations-und Setupschritte abgeschlossen wurden, die ServiceNow-Karten jedoch nicht auf der Startseite angezeigt werden und nicht von Microsoft Secure Score an ServiceNow freigegeben werden können, überprüfen Sie den Status der https://security.microsoft.com/ticketProvisioningSeite Bereitstellung unter. Wählen Sie **Speichern** und zur Startseite zurückkehren aus. Die Karten sollten angezeigt werden.
+Wenn die Installations-und Setupschritte abgeschlossen wurden, die ServiceNow-Karten jedoch nicht auf der Startseite angezeigt werden und nicht von Microsoft Secure Score an ServiceNow freigegeben werden können, überprüfen Sie den Status der https://security.microsoft.com/ticketProvisioningSeite Bereitstellung unter. Wählen Sie **autorisieren** und zur Startseite zurückkehren. Die Karten sollten angezeigt werden.
+

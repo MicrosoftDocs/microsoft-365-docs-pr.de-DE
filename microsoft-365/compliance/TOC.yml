@@ -65,6 +65,8 @@
     - name: Vertraulichkeitsbezeichnungen
       href: sensitivity-labels.md
       items:
+        - name: Erstellen und Veröffentlichen von Sensitivitäts Bezeichnungen
+          href: create-sensitivity-labels.md
         - name: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
           href: encryption-sensitivity-labels.md
         - name: Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
