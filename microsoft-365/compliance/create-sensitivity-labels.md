@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.
-ms.openlocfilehash: 200b101b0083abbba90eaced9720db854ff02bbb
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: edcfcf5a4f4891e4e1159c4c42327e59ceb35449
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233860"
+ms.locfileid: "41238402"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -30,7 +30,18 @@ Erstellen und konfigurieren Sie zunächst die Vertraulichkeitsbezeichnungen, die
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen
 
-1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu **Klassifizierung** > **Vertraulichkeitsbezeichnungen**.
+1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu Vertraulichkeitsbezeichnungen:
+    
+    - Microsoft 365 Compliance Center: 
+        - **Lösungen** > **Informationsschutz (Vorschau)**
+        
+        Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
+    
+    - Microsoft 365 Security Center: 
+        - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
+    
+    - Office 365 Security & Compliance Center:
+        - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
 2. Wählen Sie auf der Registerkarte **Bezeichnungen** die Option **+ Bezeichnung erstellen**, um den Assistenten **Neue Vertraulichkeitsbezeichnung** zu starten.
 

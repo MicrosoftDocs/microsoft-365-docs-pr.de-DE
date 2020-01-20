@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 350a8aa793270522b3ca79b9f0fda09c49f21a62
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971643"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233776"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -60,9 +60,6 @@ Inhalt dieses Artikels:
 - [Einrichten von DKIM, damit ein Drittanbieterdienst E-Mails im Auftrag Ihrer benutzerdefinierten Domäne senden oder fälschen kann](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
 
 - [Nächste Schritte: Nach dem Einrichten von DKIM für Office 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
-
-> [!NOTE]
-> Microsoft 365 unterstützt den Benutzer von entweder 1024-Bit-Schlüsseln oder 2048-Bit-DKIM. Wenn Sie 1024-Bit-Schlüssel verwenden und 2048-Bit-DKIM konfigurieren möchten, schauen Sie sich die Schritte zum Wechseln Ihrer DKIM-Signaturkonfiguration in diesem Artikel an. Noch vor Ende 2019 wird Microsoft standardmäßig 2048-Bit-Schlüssel für alle Kunden unterstützen.
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>So funktioniert DKIM besser als SPF, um Spoofing in Office 365 zu verhindern
 <a name="HowDKIMWorks"> </a>
