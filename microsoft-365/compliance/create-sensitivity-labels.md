@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.
-ms.openlocfilehash: edcfcf5a4f4891e4e1159c4c42327e59ceb35449
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 964fd20d6ada935d2a76ca0bffccc5bf46161c58
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238402"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247458"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -53,7 +53,10 @@ Erstellen und konfigurieren Sie zunächst die Vertraulichkeitsbezeichnungen, die
 
 5. Wenn Sie alle benötigten Bezeichnungen erstellt haben, bringen Sie sie bei Bedarf durch Verschieben nach oben oder unten in die gewünschte Reihenfolge. Wenn Sie die Reihenfolge der Bezeichnungen ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters) aus den Übersichtsinformationen.
 
-Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann **Bezeichnung bearbeiten** aus. Dadurch wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können. Wenn die Bezeichnung bereits mithilfe einer Bezeichnungsrichtlinie veröffentlicht wurde, sind keine weiteren Schritte erforderlich, aber es können bis zu 24 Stunden vergehen, bis die Änderungen an Benutzer und Standorte repliziert wurden.
+Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann **Bezeichnung bearbeiten** aus. Dadurch wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können. 
+
+> [!NOTE]
+> Wenn Sie eine Bezeichnung bearbeiten, die bereits mit einer Bezeichnungsrichtlinie veröffentlicht wurde, sind nach Abschluss des Assistenten keine zusätzlichen Schritte erforderlich. Sie müssen sie beispielsweise nicht zu einer neuen Bezeichnungsrichtlinie hinzufügen. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für Benutzer und Dienste repliziert wurden.
 
 Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in Apps oder für Services nicht zur Verfügung. Um die Bezeichnungen zu veröffentlichen, müssen sie zu einer Bezeichnungsrichtlinie hinzugefügt werden.
 
@@ -67,7 +70,18 @@ Mit diesem Cmdlet können Sie auch [erweiterte Einstellungen](https://docs.micro
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie
 
-1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu **Klassifizierung** > **Vertraulichkeitsbezeichnungen**.
+1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu Vertraulichkeitsbezeichnungen:
+    
+    - Microsoft 365 Compliance Center: 
+        - **Lösungen** > **Informationsschutz (Vorschau)**
+        
+        Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
+    
+    - Microsoft 365 Security Center: 
+        - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
+    
+    - Office 365 Security & Compliance Center:
+        - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
 2. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** aus.
 
@@ -87,7 +101,9 @@ Mit diesem Cmdlet können Sie auch [erweiterte Einstellungen](https://docs.micro
 
 Nach Abschluss des Assistenten wird die Bezeichnungsrichtlinie automatisch veröffentlicht. Um Änderungen an einer veröffentlichten Richtlinie vorzunehmen, bearbeiten Sie diese einfach. Es gibt keine spezielle Aktion zum Veröffentlichen oder Wiederveröffentlichen, die Sie auswählen können.
 
-Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und wählen Sie dann **Richtlinie bearbeiten** aus. Hierdurch wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch auf die ausgewählten Benutzer und Standorte repliziert. Es kann bis zu 24 Stunden dauern, bis die Replikation abgeschlossen ist.
+Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und wählen Sie dann **Richtlinie bearbeiten** aus. Hierdurch wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch für die ausgewählten Benutzer und Dienste repliziert.
+
+Normalerweise werden die Bezeichnungen innerhalb weniger Stunden in den entsprechenden Office-Apps angezeigt. Es kann jedoch bis zu 24 Stunden dauern, bis Ihre Bezeichnungsrichtlinien und daran vorgenommene Änderungen für alle Benutzer und Dienste repliziert wurden.
 
 ### <a name="additional-label-policy-settings-with-office-365-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Office 365 Security & Compliance Center PowerShell
 
