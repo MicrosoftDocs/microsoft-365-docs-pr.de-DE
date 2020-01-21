@@ -1,5 +1,5 @@
 ---
-title: Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten (Vorschau)
+title: Einrichten eines Connectors zum Archivieren von Facebook-Daten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,28 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 83b85408afcb4613705691d5bd5a3b72365cb11a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f942df5401c14e3067d664aab41e6cac14542bc0
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808180"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247608"
 ---
-# <a name="use-a-sample-connector-to-archive-facebook-data-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-facebook-data"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten
 
-Das Sample Connector-Feature zum Archivieren von Facebook-Daten in Office 365 befindet sich in der Vorschau.
-
-Verwenden Sie einen Beispiel-Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus Facebook-Geschäfts Seiten in Office 365 zu importieren und zu archivieren. Nachdem Sie einen Sample Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
+Verwenden Sie einen Daten Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus Facebook-Geschäfts Seiten in Office 365 zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
 
 Nachdem Sie die Facebook-Daten importiert haben, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, [Kommunikations Konformität](communication-compliance.md)und Office 365-Aufbewahrungsrichtlinien auf die Facebook-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Facebook-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Facebook-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von Facebook-Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
-> [!NOTE]
-> Zu diesem Zeitpunkt stehen nur die Beispiel-Konnektoren für Facebook-Geschäfts Seiten und [Twitter](archive-twitter-data-with-sample-connector.md) für die Vorschau zur Verfügung. Weitere Beispiel-Konnektoren werden in Kürze verfügbar sein.
-
-
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Voraussetzungen für das Einrichten eines Connectors für Facebook-Geschäfts Seiten
 
-Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Beispiel-Konnektor im Security #a0 Compliance Center einrichten und konfigurieren können, um Daten aus den Facebook-Geschäfts Seiten Ihrer Organisation zu importieren und zu archivieren. 
+Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Security #a0 Compliance Center einrichten und konfigurieren können, um Daten aus den Facebook-Geschäfts Seiten Ihrer Organisation zu importieren und zu archivieren. 
 
 - Sie benötigen ein Facebook-Konto für die Geschäfts Seiten Ihrer Organisation (Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector einrichten). Derzeit können Sie nur Daten von Facebook-Geschäfts Seiten archivieren; Sie können keine Daten aus einzelnen Facebook-Profilen archivieren.
 
@@ -42,7 +36,7 @@ Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Beispiel-Konnek
     - [Registrieren für ein Pay-as-you-go Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Das [﻿Kostenlose Azure Active Directory-Abonnement](use-your-free-azure-ad-subscription-in-office-365.md) , das in Ihrem Office 365-Abonnement enthalten ist, unterstützt die Beispiel-Konnektoren im Security #a0 Compliance Center nicht.
+    > Das [﻿Kostenlose Azure Active Directory-Abonnement](use-your-free-azure-ad-subscription-in-office-365.md) , das in Ihrem Office 365-Abonnement enthalten ist, unterstützt die Connectors im Security #a0 Compliance Center nicht.
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an.
 

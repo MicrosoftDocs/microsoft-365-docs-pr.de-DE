@@ -16,24 +16,10 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Planen von Sicherheit und Compliance in Office 365
       href: plan-for-security-and-compliance.md
-- name: Verwalten interner Risiken
+- name: Verwalten von Insider Risiken
   items:
     - name: Schutz von Benutzer- und Gerätezugriff
       href: protect-access-to-data-and-services.md
-    - name: Kunden-Lockbox
-      href: customer-lockbox-requests.md
-    - name: Privileged Access Management
-      items:
-        - name: Informationen zu Privileged Access Management
-          href: privileged-access-management-overview.md
-        - name: Konfigurieren von Privileged Access Management
-          href: privileged-access-management-configuration.md
-    - name: Kundenschlüssel
-      items:
-        - name: Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
-          href: controlling-your-data-using-customer-key.md
-        - name: Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
-          href: service-encryption-with-customer-key-faq.md
     - name: Kommunikations Kompatibilität (Vorschau)
       items:
         - name: Informationen zur Kommunikationscompliance (Vorschau)
@@ -59,13 +45,27 @@
           href: information-barriers-troubleshooting.md
         - name: Bearbeiten von Richtlinien für Informationsbarrieren
           href: information-barriers-edit-segments-policies.md
+    - name: Privileged Access Management
+      items:
+        - name: Informationen zu Privileged Access Management
+          href: privileged-access-management-overview.md
+        - name: Konfigurieren von Privileged Access Management
+          href: privileged-access-management-configuration.md
+    - name: Kundenschlüssel
+      items:
+        - name: Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
+          href: controlling-your-data-using-customer-key.md
+        - name: Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
+          href: service-encryption-with-customer-key-faq.md
+    - name: Kunden-Lockbox
+      href: customer-lockbox-requests.md
 - name: Verwalten des Informationsschutzes
   href: protect-information.md
   items:
     - name: Vertraulichkeitsbezeichnungen
       href: sensitivity-labels.md
       items:
-        - name: Erstellen und Veröffentlichen von Sensitivitäts Bezeichnungen
+        - name: Erstellen und Veröffentlichen von Vertraulichkeitsbezeichnungen
           href: create-sensitivity-labels.md
         - name: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
           href: encryption-sensitivity-labels.md
@@ -214,6 +214,8 @@
           href: archive-linkedin-data.md
         - name: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
           href: archive-instant-bloomberg-data.md
+        - name: Einrichten eines Connectors zum Importieren von HR-Daten
+          href: import-hr-data.md
         - name: Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten
           href: work-with-partner-to-archive-third-party-data.md
     - name: Speichern von Daten

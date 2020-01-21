@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über den Microsoft 365-Lösungskatalog, einschließlich dessen, was er enthält, wie Sie ihn erhalten und wie Sie die nächsten Schritte durchführen.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b881e51f08e201f2870ea979e3f6c8181ab2ea02
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831638"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247598"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Übersicht über den Microsoft 365-Lösungskatalog (Vorschau)
 
@@ -51,13 +51,14 @@ Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
 ## <a name="insider-risk-management-section"></a>Abschnitt "Insider Risikomanagement"
 
-Im Abschnitt **Insider Risk Management** auf der Startseite erfahren Sie auf einen Blick, wie Ihre Organisation interne Risiken erkennen, analysieren und beheben kann, bevor Sie Schaden anrichten.
+Im Abschnitt **Insider Risk Management** auf der Startseite erfahren Sie auf einen Blick, wie Ihre Organisation interne Risiken erkennen, analysieren und einleiten kann, bevor Sie Schaden anrichten.
 
-![Abschnitt "Insider Risk Management" des Microsoft 365-Lösungskatalogs](media/m365-solution-catalog-internal-risk-management.png)
+![Abschnitt "Insider Risk Management" des Microsoft 365-Lösungskatalogs](media/m365-solution-catalog-insider-risk-management.png)
 
-Von hier aus können Sie zu einer Karte für die folgende Lösung wechseln:
+Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
-- [Kommunikation Compliance](communication-compliance.md): minimiert Kommunikationsrisiken, indem es Ihnen hilft, unangemessene Nachrichten automatisch zu erfassen, mögliche Richtlinienverletzungen zu untersuchen und Schritte zur Korrektur zu ergreifen.
+- [Kommunikation Compliance](communication-compliance.md): minimiert Kommunikationsrisiken durch die automatische Erfassung unangemessener Nachrichten, Untersuchung möglicher Richtlinienverstöße und Maßnahmen zur Minimierung von Schäden.
+- [Insider Risikomanagement](insider-risk-management.md): erkennen Sie riskante Aktivitäten in Ihrer Organisation, damit Sie Insider Risiken und-Bedrohungen schnell erkennen, untersuchen und Maßnahmen ergreifen können.
 
 ## <a name="discovery--response-section"></a>Abschnitt "Discovery #a0 Response"
 
@@ -92,9 +93,11 @@ Im Microsoft 365 Compliance Center und im Lösungskatalog werden weiterhin Funkt
 
 Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie immer auf Lösungen im vorhandenen Office 365 Security and Compliance Center zugreifen, indem Sie zu [https://protection.office.com](https://protection.office.com)wechseln. Alternativ können Sie auf die Registerkarte **Weitere Ressourcen** im linken Navigationsbereich des Microsoft 365 Compliance Centers klicken und die Karte Office 365 Security and Compliance Center auswählen.  
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 - **Überprüfen Sie Ihre Microsoft-Kompatibilitäts**Bewertung, eine personalisierte, risikobasierte Bewertung, die Ihnen hilft, den Zustand Ihrer Organisation bezüglich der Einhaltung wichtiger Standards und Vorschriften zu verstehen. Es enthält empfohlene Maßnahmen, die Sie ergreifen können, um Ihre allgemeine Compliance-Haltung zu stärken, und bietet Workflowfunktionen, die Sie bei der effizienten Ausführung dieser Aktionen unterstützen. Weitere Informationen finden Sie unter [Compliance Score (Preview)](compliance-score.md).
+
+- **Konfigurieren Sie Richtlinien für das Insider Risikomanagement** , um interne Risiken zu minimieren und Ihnen die Möglichkeit zu geben, riskante Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und Maßnahmen zu ergreifen. Siehe [Insider Risk Management](insider-risk-management.md).
 
 - **Microsoft Information Protection**: erfahren Sie, wie Sie mithilfe von Microsoft 365-Lösungen vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen.
     - **Machen Sie sich mit Microsoft Cloud App Security vertraut und richten Sie Sie**ein. Weitere Informationen finden Sie unter [Quick Start: Erste Schritte mit Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
