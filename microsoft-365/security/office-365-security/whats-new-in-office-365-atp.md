@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807940"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260223"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -30,10 +30,6 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 > [!TIP]
 > Sie haben noch keine Office 365 ATP? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644).
-
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 und Plan 2
-
-Office 365 ATP ist in zwei Plänen verfügbar: Office 365 ATP-Plan 1 und Office 365 ATP-Plan 2. [Weitere Informationen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="december-2019"></a>Dezember 2019
 
@@ -65,8 +61,14 @@ Office 365 ATP ist in zwei Plänen verfügbar: Office 365 ATP-Plan 1 und Office 
 
 - [Anzeigen von Daten zu Phishing-URLs und klicken auf Urteil](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP-Plan 1 oder Plan 2)
 
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 und Plan 2
+
+Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? Es gibt Office 365 ATP-Plan 1 und Office 365 ATP-Plan 2. [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+
 ## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Automatische Untersuchung und Reaktion in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

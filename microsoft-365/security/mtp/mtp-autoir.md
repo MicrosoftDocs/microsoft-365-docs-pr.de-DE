@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ea3201838e625969a239aee4339e0de605d95c55
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9459b1b8ff431624045c5b57ade531288d41866e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808610"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260183"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Automatische Untersuchung und Reaktion (AIR) in Microsoft Threat Protection
 
@@ -38,24 +38,26 @@ Stellen Sie sich vor, Sie haben in Ihrem Sicherheitsteam auf Ebene 1/Ebene 2 ein
 
 Mit AIR können Ihre Sicherheitsteams die Kapazität Ihrer Organisation im Umgang mit Sicherheitswarnungen und Vorfällen erheblich verbessern. Mit AIR können Sie die Kosten für die Bearbeitung von Untersuchungs- und Wartungsaktionen reduzieren und Ihre Threat Protection-Suite optimal nutzen. AIR unterstützt Ihr Sicherheitsteam bei folgenden Aktivitäten:
 
-1.  Ermitteln, ob eine Bedrohung eine Aktion erfordert;
-2.  Durchführen (oder Empfehlen) aller erforderlichen Wartungsmaßnahmen;
-3.  Ermitteln, welche weiteren Untersuchungen stattfinden sollten und
-4.  Wiederholen des Vorgangs für andere Warnungen.
+1. Ermitteln, ob eine Bedrohung eine Aktion erfordert;
+2. Durchführen (oder Empfehlen) aller erforderlichen Wartungsmaßnahmen;
+3. Ermitteln, welche weiteren Untersuchungen stattfinden sollten und
+4. Wiederholen des Vorgangs für andere Warnungen.
 
 ## <a name="the-automated-investigation-process"></a>Der Prozess der automatischen Untersuchung
 
 **Warnung** > **Vorfall** > **automatische Untersuchung** > **Urteil** > **Wartungsaktion**
 
-Im Allgemeinen ist es so, dass eine ausgelöste Warnung einen Vorfall erstellt, der wiederum eine automatische Untersuchung starten kann. Diese Untersuchung kann zu einer oder mehreren Wartungsaktionen führen. In Microsoft Threat Protection korreliert jede automatische Untersuchung Signale in Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) und Office 365 Advanced Threat Protection (Office 365 ATP), wie in der folgenden Tabelle zusammengefasst: 
+Bei einer ausgelösten Warnung wird ein Vorfall erstellt, der eine automatisierte Untersuchung starten kann. Diese Untersuchung kann zu einer oder mehreren Wartungsaktionen führen. In Microsoft Threat Protection korreliert jede automatische Untersuchung Signale in Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) und Office 365 Advanced Threat Protection (Office 365 ATP), wie in der folgenden Tabelle zusammengefasst: 
 
 |Entitäten |Dienste für den Bedrohungsschutz  |
 |---------|---------|
 |Geräte (auch als Endpunkte bezeichnet)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |E-Mail-Inhalte (Dateien und Nachrichten in Postfächern)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-
 Jede Untersuchung generiert für jeden untersuchten Nachweis Urteile (*Bösartig*, *Verdächtig* oder *Sauber*). Je nach Art der Bedrohung und des resultierenden Urteils erfolgen Wartungsaktionen automatisch oder nach Genehmigung durch das Sicherheitsteam Ihrer Organisation. Ausstehende und abgeschlossene Aktionen werden im [Info-Center](mtp-action-center.md) aufgelistet.
+
+> [!TIP]
+> Wenn Sie glauben, dass durch automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection etwas übersehen oder fälschlicherweise erkannt wurde, lassen Sie es uns wissen! Weitere Informationen finden Sie unter [How to Report false positives/negatives in Automated Investigation and Response (Air) Funktionen in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 Während eine Untersuchung läuft, werden alle anderen zugehörigen Warnungen zur Untersuchung hinzugefügt, bis diese abgeschlossen ist. Wenn eine beschuldigte Entität an anderer Stelle angezeigt wird, wird auch diese Entität in die automatische Untersuchung aufgenommen, und es wird ein allgemeines Sicherheitsplaybook ausgeführt. 
 

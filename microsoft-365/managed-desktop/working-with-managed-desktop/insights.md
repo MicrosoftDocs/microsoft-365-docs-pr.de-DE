@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962322"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260103"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
@@ -40,4 +40,9 @@ Erfahren Sie mehr über [Einblicke](usage-insights.md)in die Nutzung.
 ## <a name="reliability-insights"></a>Zuverlässigkeitseinblicke
 In dieser Ansicht erhalten Sie eine Zusammenfassung der Integrität Ihrer verwalteten Geräte. Um Zuverlässigkeitsdaten anzuzeigen, wählen Sie die Registerkarte **Zuverlässigkeit** aus.
 
-Erfahren Sie mehr über [Zuverlässigkeits Einblicke](reliability-insights.md)
+Erfahren Sie mehr über [Zuverlässigkeits Einblicke](reliability-insights.md).
+
+## <a name="battery-insights"></a>Akku Einblicke
+Diese Ansicht zeigt Ihnen Informationen über den Energieverbrauch von apps und die voraussichtliche Lebensdauer der Batterie für Geräte in Ihrer Umgebung. Um diese Informationen anzuzeigen, wählen Sie die Registerkarte **Akku** aus.
+
+Erfahren Sie mehr über [Batterie Einblicke](battery-insights.md).
