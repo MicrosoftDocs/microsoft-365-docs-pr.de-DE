@@ -14,12 +14,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 64ebfef5c0d5540acf74d0d6f5a864461e83f82f
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: ef605fcc7a76cb2432357856b814453b149a5296
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967938"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261879"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -27,7 +27,7 @@ Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md
 
 |Mit ATP-Plan 2 sehen Sie Folgendes:  |Mit ATP-Plan 1 sehen Sie Folgendes:  |
 |---------|---------|
-|![Bedrohungs-Explorer](../media/threatmgmt-explorer.png)      |![Echt Zeit Erkennungen](../media/threatmgmt-realtimedetections.png)         |
+|![Bedrohungs-Explorer](../media/threatmgmt-explorer.png)      |![Echtzeiterkennungen](../media/threatmgmt-realtimedetections.png)         |
 
 Mit Explorer (oder Echtzeiterkennung) haben Sie einen leistungsfähigen Bericht, der es Ihrem Sicherheitsteam ermöglicht, Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren. Der Bericht ähnelt dem folgenden Bild: 
 
@@ -187,7 +187,7 @@ Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie �
 - Für das Security &amp; Compliance Center müssen Sie eine der folgenden Rollen zugewiesen haben:
     - Organisationsverwaltung
     - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-    - Sicherheits Leser
+    - Sicherheitsleseberechtigter
 
 - Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
     - Organisationsverwaltung
@@ -200,7 +200,7 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 - [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs Exporteur und Echt Zeit Erkennungen
+## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs-Explorer und Echt Zeit Erkennungen
 
  - Der Bericht über **Echt Zeit Erkennungen** steht in Office 365 ATP-Plan 1 zur Verfügung, während **Threat Explorer** in Office 365 ATP-Plan 2 zur Verfügung steht.
  - Der Bericht über **Echt Zeit Erkennungen** ermöglicht das Anzeigen von Erkennungen in Echtzeit. Dieser Vorgang wird auch von **Threat Explorer** durchgesetzt, aber Sie können auch zusätzliche Details für einen bestimmten Angriff anzeigen.
