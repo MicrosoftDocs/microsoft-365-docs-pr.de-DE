@@ -38,7 +38,7 @@
       href: security-features.md
       items:
         - name: Einrichten von MFA
-          href: set-up-mfa.md
+          href: /Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
         - name: Erhöhen des Bedrohungsschutzes
           href: increase-threat-protection.md
         - name: Einrichten von Compliancefeatures
