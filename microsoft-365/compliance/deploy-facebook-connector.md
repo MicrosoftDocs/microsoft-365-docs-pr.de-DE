@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen eines Connectors zum Archivieren von Facebook-Daten
+title: Bereitstellen eines Connectors zum Archivieren von Facebook-Geschäfts Seiten Daten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,286 +10,224 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Facebook-Geschäfts Seiten in Office 365 einrichten. Nachdem diese Daten in Office 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Facebook-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+description: Administratoren können einen systemeigenen Connector einrichten, um Facebook-Geschäfts Seiten in Microsoft 365 zu importieren und zu archivieren. Nachdem diese Daten in Microsoft 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Facebook-Daten Ihrer Organisation zu verwalten.
+ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247478"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269416"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data"></a><span data-ttu-id="f3bb3-104">Bereitstellen eines Connectors zum Archivieren von Facebook-Daten</span><span class="sxs-lookup"><span data-stu-id="f3bb3-104">Deploy a connector to archive Facebook data</span></span>
+# <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a><span data-ttu-id="a68c0-104">Bereitstellen eines Connectors zum Archivieren von Facebook-Geschäfts Seiten Daten</span><span class="sxs-lookup"><span data-stu-id="a68c0-104">Deploy a connector to archive Facebook Business pages data</span></span>
 
-<span data-ttu-id="f3bb3-105">Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connectors, der den Office 365 Import Dienst verwendet, um Daten von Facebook-Geschäfts Seiten in Office 365 zu importieren.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-105">This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Office 365.</span></span> <span data-ttu-id="f3bb3-106">Eine allgemeine Übersicht über diesen Prozess und eine Liste der erforderlichen Voraussetzungen für die Bereitstellungeines Facebook-Konnektors finden Sie unter [Verwenden eines Connectors zum Archivieren von Facebook-Daten in Office 365 (Preview)](archive-facebook-data-with-sample-connector.md).</span><span class="sxs-lookup"><span data-stu-id="f3bb3-106">For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Use a connector to archive Facebook data in Office 365 (Preview)](archive-facebook-data-with-sample-connector.md).</span></span> 
+<span data-ttu-id="a68c0-105">Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connectors, der den Microsoft 365-Import Dienst verwendet, um Daten von Facebook-Geschäfts Seiten nach Microsoft 365 zu importieren.</span><span class="sxs-lookup"><span data-stu-id="a68c0-105">This article contains the step-by-step process to deploy a connector that uses the Microsoft 365 Import service to import data from Facebook Business pages to Microsoft 365.</span></span> <span data-ttu-id="a68c0-106">Eine allgemeine Übersicht über diesen Prozess und eine Liste der Voraussetzungen, die für die Bereitstellungeines Facebook-Konnektors erforderlich sind, finden Sie unter [Einrichten eines Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md).</span><span class="sxs-lookup"><span data-stu-id="a68c0-106">For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md).</span></span> 
 
-## <a name="step-1-download-the-package"></a><span data-ttu-id="f3bb3-107">Schritt 1: Herunterladen des Pakets</span><span class="sxs-lookup"><span data-stu-id="f3bb3-107">Step 1: Download the package</span></span>
+## <a name="step-1-create-an-app-in-azure-active-directory"></a><span data-ttu-id="a68c0-107">Schritt 1: Erstellen einer APP in Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="a68c0-107">Step 1: Create an app in Azure Active Directory</span></span>
 
-<span data-ttu-id="f3bb3-108">Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository unter <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>herunter.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-108">Download the prebuilt package from the Release section in the GitHub repository at <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>.</span></span> <span data-ttu-id="f3bb3-109">Laden Sie die ZIP-Datei mit dem Namen **SampleConnector. zip**unter der neuesten Version herunter.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-109">Under the latest release, download the zip file named **SampleConnector.zip**.</span></span> <span data-ttu-id="f3bb3-110">Sie laden diese ZIP-Datei in Schritt 4 in Azure hoch.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-110">You upload this zip file to Azure in Step 4.</span></span>
-
-## <a name="step-2-create-an-app-in-azure-active-directory"></a><span data-ttu-id="f3bb3-111">Schritt 2: Erstellen einer APP in Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="f3bb3-111">Step 2: Create an app in Azure Active Directory</span></span>
-
-1. <span data-ttu-id="f3bb3-112">Wechseln Sie <https://portal.azure.com> zu, und melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administratorkontos an.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-112">Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.</span></span>
+1. <span data-ttu-id="a68c0-108">Wechseln Sie <https://portal.azure.com> zu, und melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administratorkontos an.</span><span class="sxs-lookup"><span data-stu-id="a68c0-108">Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.</span></span>
 
     ![Erstellen einer APP in Aad](media/FBCimage1.png)
 
-2. <span data-ttu-id="f3bb3-114">Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-114">In the left navigation pane, click **Azure Active Directory**.</span></span>
+2. <span data-ttu-id="a68c0-110">Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-110">In the left navigation pane, click **Azure Active Directory**.</span></span>
 
     ![Klicken Sie auf Azure Active Directory](media/FBCimage2.png)
 
-3. <span data-ttu-id="f3bb3-116">Klicken Sie im linken Navigationsbereich auf **App-Registrierungen (Vorschau)** , und klicken Sie dann auf **neue Registrierung**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-116">In the left navigation pane, click **App registrations (Preview)** and then click **New registration**.</span></span>
+3. <span data-ttu-id="a68c0-112">Klicken Sie im linken Navigationsbereich auf **App-Registrierungen (Vorschau)** , und klicken Sie dann auf **neue Registrierung**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-112">In the left navigation pane, click **App registrations (Preview)** and then click **New registration**.</span></span>
 
     ![Klicken Sie auf \* \* App-Registrierungen (Vorschau) \* \* und dann auf \* \* neue Registrierung \* \*](media/FBCimage3.png)
 
-4. <span data-ttu-id="f3bb3-118">Registrieren Sie die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-118">Register the application.</span></span> <span data-ttu-id="f3bb3-119">Wählen Sie unter Umleitungs-URI die Option Webin der Dropdownliste <https://portal.azure.com> Anwendungstyp aus, und geben Sie dann in das Feld für den URI ein.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-119">Under Redirect URI, select Web in the application type dropdown list and then type <https://portal.azure.com> in the box for the URI.</span></span>
+4. <span data-ttu-id="a68c0-114">Registrieren Sie die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="a68c0-114">Register the application.</span></span> <span data-ttu-id="a68c0-115">Wählen Sie unter Umleitungs-URI die Option Webin der Dropdownliste <https://portal.azure.com> Anwendungstyp aus, und geben Sie dann in das Feld für den URI ein.</span><span class="sxs-lookup"><span data-stu-id="a68c0-115">Under Redirect URI, select Web in the application type dropdown list and then type <https://portal.azure.com> in the box for the URI.</span></span>
 
    ![Registrieren der App](media/FBCimage4.png)
 
-5. <span data-ttu-id="f3bb3-121">Kopieren Sie die Anwendungs-ID **(Client) ID** und **Verzeichnis (Mandanten)** , und speichern Sie Sie in einer Textdatei oder an einem anderen sicheren Ort.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-121">Copy the **Application (client) ID** and **Directory (tenant) ID** and save them to a text file or other safe location.</span></span> <span data-ttu-id="f3bb3-122">Sie verwenden diese IDs in späteren Schritten.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-122">You use these IDs in later steps.</span></span>
+5. <span data-ttu-id="a68c0-117">Kopieren Sie die Anwendungs-ID **(Client) ID** und **Verzeichnis (Mandanten)** , und speichern Sie Sie in einer Textdatei oder an einem anderen sicheren Ort.</span><span class="sxs-lookup"><span data-stu-id="a68c0-117">Copy the **Application (client) ID** and **Directory (tenant) ID** and save them to a text file or other safe location.</span></span> <span data-ttu-id="a68c0-118">Sie verwenden diese IDs in späteren Schritten.</span><span class="sxs-lookup"><span data-stu-id="a68c0-118">You use these IDs in later steps.</span></span>
 
    ![Kopieren Sie die Anwendungs-ID und die Verzeichnis-ID, und speichern Sie Sie.](media/FBCimage5.png)
 
-6. <span data-ttu-id="f3bb3-124">Wechseln Sie zu **Zertifikaten #a0 Geheimnisse für die neue APP.**</span><span class="sxs-lookup"><span data-stu-id="f3bb3-124">Go to **Certificates & secrets for the new app.**</span></span>
+6. <span data-ttu-id="a68c0-120">Wechseln Sie zu **Zertifikaten #a0 Geheimnisse für die neue APP.**</span><span class="sxs-lookup"><span data-stu-id="a68c0-120">Go to **Certificates & secrets for the new app.**</span></span>
 
    ![Wechseln Sie zu Zertifikaten #a0 Geheimnisse für die neue APP.](media/FBCimage6.png)
 
-7. <span data-ttu-id="f3bb3-126">Klicken Sie auf **neuer geheimer Client Schlüssel**</span><span class="sxs-lookup"><span data-stu-id="f3bb3-126">Click **New client secret**</span></span>
+7. <span data-ttu-id="a68c0-122">Klicken Sie auf **neuer geheimer Client Schlüssel**</span><span class="sxs-lookup"><span data-stu-id="a68c0-122">Click **New client secret**</span></span>
 
    ![Klicken Sie auf neuer geheimer Client Schlüssel](media/FBCimage7.png)
 
-8. <span data-ttu-id="f3bb3-128">Erstellen Sie einen neuen geheimen Schlüssel.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-128">Create a new secret.</span></span> <span data-ttu-id="f3bb3-129">Geben Sie im Feld Beschreibung den geheimen Schlüssel ein, und wählen Sie dann einen Ablaufzeitraum aus.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-129">In the description box, type the secret and then choose an expiration period.</span></span> 
+8. <span data-ttu-id="a68c0-124">Erstellen Sie einen neuen geheimen Schlüssel.</span><span class="sxs-lookup"><span data-stu-id="a68c0-124">Create a new secret.</span></span> <span data-ttu-id="a68c0-125">Geben Sie im Feld Beschreibung den geheimen Schlüssel ein, und wählen Sie dann einen Ablaufzeitraum aus.</span><span class="sxs-lookup"><span data-stu-id="a68c0-125">In the description box, type the secret and then choose an expiration period.</span></span> 
 
     ![Geben Sie den geheimen Schlüssel ein, und wählen Sie dann einen Ablaufzeitraum](media/FBCimage8.png)
 
-9. <span data-ttu-id="f3bb3-131">Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn in einer Textdatei oder an einem anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-131">Copy the value of the secret and save it to a text file or other storage location.</span></span> <span data-ttu-id="f3bb3-132">Dies ist der geheime Aad-Anwendungsschlüssel, den Sie in späteren Schritten verwenden.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-132">This is the AAD application secret that you use in later steps.</span></span>
+9. <span data-ttu-id="a68c0-127">Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn in einer Textdatei oder an einem anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="a68c0-127">Copy the value of the secret and save it to a text file or other storage location.</span></span> <span data-ttu-id="a68c0-128">Dies ist der geheime Aad-Anwendungsschlüssel, den Sie in späteren Schritten verwenden.</span><span class="sxs-lookup"><span data-stu-id="a68c0-128">This is the AAD application secret that you use in later steps.</span></span>
 
    ![Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn.](media/FBCimage9.png)
 
-10. <span data-ttu-id="f3bb3-134">Wechseln Sie zu **Manifest** , und kopieren Sie die identifierUris (die auch als Aad Application URI bezeichnet wird) wie im folgenden Screenshot hervorgehoben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-134">Go to **Manifest** and copy the identifierUris (which is also called the AAD application Uri) as highlighted in the following screenshot.</span></span> <span data-ttu-id="f3bb3-135">Kopieren Sie den Aad-Anwendungs-URI in eine Textdatei oder einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-135">Copy the AAD application Uri to a text file or other storage location.</span></span> <span data-ttu-id="f3bb3-136">Sie verwenden Sie in Schritt 6.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-136">You use it in Step 6.</span></span>
+10. <span data-ttu-id="a68c0-130">Wechseln Sie zu **Manifest** , und kopieren Sie die identifierUris (die auch als Aad Application URI bezeichnet wird) wie im folgenden Screenshot hervorgehoben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-130">Go to **Manifest** and copy the identifierUris (which is also called the AAD application Uri) as highlighted in the following screenshot.</span></span> <span data-ttu-id="a68c0-131">Kopieren Sie den Aad-Anwendungs-URI in eine Textdatei oder einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="a68c0-131">Copy the AAD application Uri to a text file or other storage location.</span></span> <span data-ttu-id="a68c0-132">Sie verwenden Sie in Schritt 6.</span><span class="sxs-lookup"><span data-stu-id="a68c0-132">You use it in Step 6.</span></span>
 
-   ![Wechseln Sie zu Manifest, und kopieren Sie den Aad-Anwendungs-URI.](media/FBCimage10.png)
+    ![Wechseln Sie zu Manifest, und kopieren Sie den Aad-Anwendungs-URI.](media/FBCimage10.png)
 
-## <a name="step-3-create-an-azure-storage-account"></a><span data-ttu-id="f3bb3-138">Schritt 3: Erstellen eines Azure-speicherkontos</span><span class="sxs-lookup"><span data-stu-id="f3bb3-138">Step 3: Create an Azure storage account</span></span>
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a><span data-ttu-id="a68c0-134">Schritt 2: Bereitstellen des Connector-Webdiensts von GitHub in Ihrem Azure-Konto</span><span class="sxs-lookup"><span data-stu-id="a68c0-134">Step 2: Deploy the connector web service from GitHub to your Azure account</span></span>
 
-1. <span data-ttu-id="f3bb3-139">Wechseln Sie zur Azure-Startseite für Ihre Organisation.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-139">Go to the Azure home page for your organization.</span></span>
+1. <span data-ttu-id="a68c0-135">Wechseln Sie zu [dieser GitHub-Website](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) , und klicken Sie auf **in Azure bereitstellen**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-135">Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and click **Deploy to Azure**.</span></span>
 
-    ![Wechseln zur Azure-Startseite](media/FBCimage11.png)
+    ![Klicken Sie auf in Azure bereitstellen](media/FBCimage11.png)
 
-2. <span data-ttu-id="f3bb3-141">Klicken Sie auf **Ressource erstellen** , und geben Sie dann **Speicherkonto** in das Suchfeld ein.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-141">Click **Create a resource** and then type **storage account** in the search box.</span></span>
+2. <span data-ttu-id="a68c0-137">Nachdem Sie auf **in Azure bereitstellen**klicken, werden Sie zu einem Azure-Portal mit einer benutzerdefinierten Vorlagenseite umgeleitet.</span><span class="sxs-lookup"><span data-stu-id="a68c0-137">After you click **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page.</span></span> <span data-ttu-id="a68c0-138">Füllen Sie die Details **Grundlagen** und **Einstellungen** aus, und klicken Sie dann auf **kaufen**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-138">Fill in the **Basics** and **Settings** details and then click **Purchase**.</span></span>
 
-    ![Klicken Sie auf Ressource erstellen, und geben Sie Speicherkonto ein.](media/FBCimage12.png)
+    - <span data-ttu-id="a68c0-139">**Abonnement:** Wählen Sie Ihr Azure-Abonnement aus, für das Sie den Facebook Business Pages-Connector-Webdienst bereitstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="a68c0-139">**Subscription:** Select your Azure subscription that you want to deploy the Facebook Business pages connector web service to.</span></span>
+    
+    - <span data-ttu-id="a68c0-140">**Ressourcengruppe:** Wählen oder erstellen Sie eine neue Ressourcengruppe.</span><span class="sxs-lookup"><span data-stu-id="a68c0-140">**Resource group:** Choose or create a new resource group.</span></span> <span data-ttu-id="a68c0-141">Eine Ressourcengruppe ist ein Container, der verwandte Ressourcen für eine Azure-Lösung bereit hält.</span><span class="sxs-lookup"><span data-stu-id="a68c0-141">A resource group is a container that holds related resources for an Azure solution.</span></span>
 
-3. <span data-ttu-id="f3bb3-143">Klicken Sie auf **Speicher**, und klicken Sie dann auf **Speicherkonto**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-143">Click **Storage**, and then click **Storage account**.</span></span>
+    - <span data-ttu-id="a68c0-142">**Speicherort:** Wählen Sie einen Speicherort aus.</span><span class="sxs-lookup"><span data-stu-id="a68c0-142">**Location:** Choose a location.</span></span>
 
-    ![Klicken Sie auf Speicher, und klicken Sie dann auf Speicherkonto](media/FBCimage13.png)
+    - <span data-ttu-id="a68c0-143">**Name der Webanwendung:** Geben Sie einen eindeutigen Namen für die Connector-Webanwendung an.</span><span class="sxs-lookup"><span data-stu-id="a68c0-143">**Web App Name:** Provide a unique name for the connector web app.</span></span> <span data-ttu-id="a68c0-144">Th Name muss zwischen 3 und 18 Zeichen lang sein.</span><span class="sxs-lookup"><span data-stu-id="a68c0-144">Th name must be between 3 and 18 characters in length.</span></span> <span data-ttu-id="a68c0-145">Dieser Name wird zum Erstellen der Azure-App-Dienst-URL verwendet. Wenn Sie beispielsweise den Namen der Webanwendung von **FBconnector** angeben, wird die Azure-App-Dienst-URL **FBconnector.azurewebsites.net**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-145">This name is used to create the Azure app service URL; for example, if you provide the Web app name of **fbconnector** then the Azure app service URL  will be **fbconnector.azurewebsites.net**.</span></span>
+    
+    - <span data-ttu-id="a68c0-146">**Mandanten** -Nr: Die Mandanten-ID Ihrer Microsoft 365-Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 1 kopiert haben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-146">**tenantId:** The tenant ID of your Microsoft 365 organization that you copied after creating the Facebook connector app in Azure Active Directory in Step 1.</span></span>
+    
+   - <span data-ttu-id="a68c0-147">**APISecretKey:** Sie können einen beliebigen Wert als geheimen Schlüssel eingeben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-147">**APISecretKey:** You can type any value as the secret.</span></span> <span data-ttu-id="a68c0-148">Dies wird verwendet, um in Schritt 5 auf die Connector-Webanwendung zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="a68c0-148">This is used to access the connector web app in Step 5.</span></span>
+   
+     ![Klicken Sie auf Ressource erstellen, und geben Sie Speicherkonto ein.](media/FBCimage12.png)
 
-4. <span data-ttu-id="f3bb3-145">Wählen Sie auf der Seite **Speicherkonto erstellen** im Feld Abonnement die Option **Pay-as-you-go** oder **﻿Kostenlose Testversion** je nach Typ des Azure-Abonnements aus.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-145">On the **Create storage account** page, in the Subscription box, select **Pay-As-You-Go** or **Free Trial** depending on which type of Azure subscription you have.</span></span> <span data-ttu-id="f3bb3-146">Wählen Sie dann eine Ressourcengruppe aus, oder erstellen Sie eine.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-146">Then select or create a resource group.</span></span>
+3. <span data-ttu-id="a68c0-150">Nachdem die Bereitstellung erfolgreich war, sieht die Seite ähnlich wie der folgende Screenshot aus:</span><span class="sxs-lookup"><span data-stu-id="a68c0-150">After the deployment is successful, the page will look similar to the following screenshot:</span></span>
 
-    ![Wählen Sie Pay-as-you-go oder ﻿kostenlose Testversion aus.](media/FBCimage14.png)
+     ![Klicken Sie auf Speicher, und klicken Sie dann auf Speicherkonto](media/FBCimage13.png)
 
-5. <span data-ttu-id="f3bb3-148">Geben Sie einen Namen für das Speicherkonto ein.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-148">Type a name for the storage account.</span></span>
+## <a name="step-3-register-the-facebook-app"></a><span data-ttu-id="a68c0-152">Schritt 3: Registrieren der Facebook-App</span><span class="sxs-lookup"><span data-stu-id="a68c0-152">Step 3: Register the Facebook app</span></span>
 
-    ![Geben Sie einen Namen für das Speicherkonto ein.](media/FBCimage15.png)
-
-6. <span data-ttu-id="f3bb3-150">Überprüfen Sie, und klicken Sie dann auf **Erstellen** , um das Speicherkonto zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-150">Review and then click **Create** to create the storage account.</span></span>
-
-    ![Erstellen des speicherkontos](media/FBCimage16.png)
-
-7. <span data-ttu-id="f3bb3-152">Klicken Sie nach einigen Momenten auf **Aktualisieren** , und klicken Sie dann auf **Ressource wechseln** , um zum Speicherkonto zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-152">After a few moments, click **Refresh** and then click **Go to resource** to navigate to the storage account.</span></span>
-
-    ![Navigieren Sie zum Speicherkonto.](media/FBCimage17.png)
-
-8. <span data-ttu-id="f3bb3-154">Klicken Sie im linken Navigationsbereich auf **Zugriffstasten** .</span><span class="sxs-lookup"><span data-stu-id="f3bb3-154">Click **Access keys** in the left navigation pane.</span></span>
-
-    ![Klicken Sie auf Zugriffstasten](media/FBCimage18.png)
-
-9. <span data-ttu-id="f3bb3-156">Kopieren Sie eine **Verbindungszeichenfolge** , und speichern Sie Sie in einer Textdatei oder an einem anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-156">Copy a **Connection string** and save it to a text file or other storage location.</span></span> <span data-ttu-id="f3bb3-157">Verwenden Sie diese Option, wenn Sie eine Webanwendungs Ressource erstellen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-157">You use this when creating a web app resource.</span></span>
-
-    ![Kopieren einer Verbindungszeichenfolge und speichern](media/FBCimage19.png)
-
-## <a name="step-4-create-a-new-web-app-resource-in-azure"></a><span data-ttu-id="f3bb3-159">Schritt 4: Erstellen einer neuen webapp-Ressource in Azure</span><span class="sxs-lookup"><span data-stu-id="f3bb3-159">Step 4: Create a new web app resource in Azure</span></span>
-
-1. <span data-ttu-id="f3bb3-160">Klicken Sie auf der **Start** Seite im Azure-Portal auf **Ressource \> : alles \> -Webanwendung erstellen**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-160">On the **Home** page in the Azure portal, click **Create a resource \> Everything \> Web app**.</span></span> <span data-ttu-id="f3bb3-161">Klicken Sie auf der Seite **Webanwendung** auf **Erstellen**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-161">On the **Web app** page, click **Create**.</span></span> 
-
-   ![Erstellen einer neuen webapp-Ressource](media/FBCimage20.png)
-
-2. <span data-ttu-id="f3bb3-163">Geben Sie die Details ein (wie unten dargestellt), und erstellen Sie dann die Webanwendung.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-163">Fill in the details (as shown below) and then create the Web app.</span></span> <span data-ttu-id="f3bb3-164">Beachten Sie, dass der Name, den Sie im Feld **App-Name** eingeben, zum Erstellen der Azure-App-Dienst-URL verwendet wird. Beispiel: FBconnector.azurewebsites.net.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-164">Note that the name that you enter in the **App name** box is used to create the Azure app service URL; for example, fbconnector.azurewebsites.net.</span></span>
-
-   ![Geben Sie die Details ein, und erstellen Sie dann die Webanwendung.](media/FBCimage21.png)
-
-3. <span data-ttu-id="f3bb3-166">Wechseln Sie zur neu erstellten Webanwendungs-Ressource, und klicken Sie im linken Navigationsbereich auf **Anwendungseinstellungen** .</span><span class="sxs-lookup"><span data-stu-id="f3bb3-166">Go to the newly created web app resource, click **Application Settings** in the left navigation pane.</span></span> <span data-ttu-id="f3bb3-167">Klicken Sie unter Anwendungseinstellungen auf neue Einstellung hinzufügen, und fügen Sie die folgenden drei Einstellungen hinzu: Verwenden Sie die Werte (die Sie in die Textdatei aus den vorherigen Schritten kopiert haben):</span><span class="sxs-lookup"><span data-stu-id="f3bb3-167">Under Application settings, click Add new setting and add the following three settings: Use the values (that you copied to the text file from the previous steps):</span></span> 
-
-    - <span data-ttu-id="f3bb3-168">**APISecretKey** – Sie können einen beliebigen Wert als geheimen Schlüssel eingeben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-168">**APISecretKey** – You can type any value as the secret.</span></span> <span data-ttu-id="f3bb3-169">Dieser wird für den Zugriff auf die Connector-Webanwendung in Schritt 7 verwendet.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-169">This is used to access the connector web app in Step 7.</span></span>
-
-    - <span data-ttu-id="f3bb3-170">**StorageAccountConnectionString** – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-170">**StorageAccountConnectionString** — The connection string Uri that you copied after creating the Azure storage account in Step 3.</span></span>
-
-    - <span data-ttu-id="f3bb3-171">**Mandanten** Kennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 2 kopiert haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-171">**tenantId** – The tenant ID of your Office 365 organization that you copied after creating the Facebook connector app in Azure Active Directory in Step 2.</span></span>
-
-    ![Geben Sie die Anwendungseinstellungen ein.](media/FBCimage22.png)
-
-4. <span data-ttu-id="f3bb3-173">Klicken Sie unter **Allgemeine Einstellungen** **auf neben** dem **immer ein**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-173">Under **General settings**, click **On** next to the **Always On**.</span></span> <span data-ttu-id="f3bb3-174">Klicken Sie oben auf der Seite auf **Speichern** , um die Anwendungseinstellungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-174">Click **Save** at the top of the page to save the application settings.</span></span>
-
-   ![Speichern der Anwendungseinstellungen](media/FBCimage23.png)
-
-5. <span data-ttu-id="f3bb3-176">Der letzte Schritt besteht darin, den Quellcode der Connector-app in Azure hochzuladen, den Sie in Schritt 1 heruntergeladen haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-176">The final step is to upload the connector app source code to Azure that you downloaded in Step 1.</span></span> <span data-ttu-id="f3bb3-177">Wechseln Sie in einem Webbrowser zu https://<AzureAppResourceName>. SCM.azurewebsites.net/ZipDeployUi.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-177">In a web browser, go to https://<AzureAppResourceName>.scm.azurewebsites.net/ZipDeployUi.</span></span> <span data-ttu-id="f3bb3-178">Wenn beispielsweise der Name Ihrer Azure-App-Ressource (die Sie in Schritt 2 in diesem Abschnitt genannt haben) **FBconnector**lautet, gehen Sie zu https://fbconnector.scm.azurewebsites.net/ZipDeployUi.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-178">For example, if the name of your Azure app resource (which you named in step 2 in this section) is **fbconnector**, then you would go to https://fbconnector.scm.azurewebsites.net/ZipDeployUi.</span></span> 
-
-6. <span data-ttu-id="f3bb3-179">Ziehen Sie das SampleConnector. zip-Menü (das Sie in Schritt 1 heruntergeladen haben) auf diese Seite.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-179">Drag and drop the SampleConnector.zip (that you downloaded in Step 1) to this page.</span></span> <span data-ttu-id="f3bb3-180">Nachdem die Dateien hochgeladen wurden und die Bereitstellung erfolgreich war, sieht die Seite wie im folgenden Screenshot aus:</span><span class="sxs-lookup"><span data-stu-id="f3bb3-180">After the files are uploaded and the deployment is successful, the page will look similar to the following screenshot:</span></span>
-
-   ![Drag & Drop der SampleConnector. zip auf diese Seite](media/FBCimage24.png)
-
-## <a name="step-5-register-the-facebook-app"></a><span data-ttu-id="f3bb3-182">Schritt 5: Registrieren der Facebook-App</span><span class="sxs-lookup"><span data-stu-id="f3bb3-182">Step 5: Register the Facebook app</span></span>
-
-1. <span data-ttu-id="f3bb3-183">Wechseln Sie <https://developers.facebook.com>zu, melden Sie sich mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an, und klicken Sie dann auf **neue APP hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-183">Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization’s Facebook Business pages, and then click **Add New App**.</span></span>
+1. <span data-ttu-id="a68c0-153">Wechseln Sie <https://developers.facebook.com>zu, melden Sie sich mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an, und klicken Sie dann auf **neue APP hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-153">Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization’s Facebook Business pages, and then click **Add New App**.</span></span>
 
    ![Hinzufügen einer neuen App für Facebook-Geschäftsseite](media/FBCimage25.png)
 
-2. <span data-ttu-id="f3bb3-185">Erstellen Sie eine neue APP-ID.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-185">Create a new app ID.</span></span>
+2. <span data-ttu-id="a68c0-155">Erstellen Sie eine neue APP-ID.</span><span class="sxs-lookup"><span data-stu-id="a68c0-155">Create a new app ID.</span></span>
 
    ![Erstellen einer neuen APP-ID](media/FBCimage26.png)
 
-3. <span data-ttu-id="f3bb3-187">Klicken Sie im linken Navigationsbereich auf **Produkte hinzufügen** , und klicken Sie dann auf der **Facebook-Anmelde** Kachel auf **Einrichten** .</span><span class="sxs-lookup"><span data-stu-id="f3bb3-187">In the left navigation pane, click **Add Products** and then click **Set Up** in the **Facebook Login** tile.</span></span>
+3. <span data-ttu-id="a68c0-157">Klicken Sie im linken Navigationsbereich auf **Produkte hinzufügen** , und klicken Sie dann auf der **Facebook-Anmelde** Kachel auf **Einrichten** .</span><span class="sxs-lookup"><span data-stu-id="a68c0-157">In the left navigation pane, click **Add Products** and then click **Set Up** in the **Facebook Login** tile.</span></span>
 
    ![Klicken Sie auf Produkte hinzufügen.](media/FBCimage27.png)
 
-4. <span data-ttu-id="f3bb3-189">Klicken Sie auf der Seite Facebook-Anmeldung einbinden auf **Website**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-189">On the Integrate Facebook Login page, click **Web**.</span></span>
+4. <span data-ttu-id="a68c0-159">Klicken Sie auf der Seite Facebook-Anmeldung einbinden auf **Website**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-159">On the Integrate Facebook Login page, click **Web**.</span></span>
 
    ![Klicken Sie auf der Seite Facebook-Anmeldung integrieren auf Website.](media/FBCimage28.png)
 
-5. <span data-ttu-id="f3bb3-191">Hinzufügen der Azure-App-Dienst-URL zum Beispiel `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-191">Add the Azure app service URL; for example `https://fbconnector.azurewebsites.net`.</span></span>
+5. <span data-ttu-id="a68c0-161">Hinzufügen der Azure-App-Dienst-URL zum Beispiel `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="a68c0-161">Add the Azure app service URL; for example `https://fbconnector.azurewebsites.net`.</span></span>
 
    ![Hinzufügen der Azure-App-Dienst-URL](media/FBCimage29.png)
 
-6. <span data-ttu-id="f3bb3-193">Schließen Sie den Abschnitt Quick Start im Facebook-Anmelde Setup ab.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-193">Complete the QuickStart section of the Facebook Login setup.</span></span>
+6. <span data-ttu-id="a68c0-163">Schließen Sie den Abschnitt Quick Start im Facebook-Anmelde Setup ab.</span><span class="sxs-lookup"><span data-stu-id="a68c0-163">Complete the QuickStart section of the Facebook Login setup.</span></span>
 
    ![Abschließen des Schnellstart-Abschnitts](media/FBCimage30.png)
 
-7. <span data-ttu-id="f3bb3-195">Klicken Sie im linken Navigationsbereich unter **Facebook-Anmeldung**auf **Einstellungen**, und fügen Sie den OAuth-Umleitungs-URI im Feld **gültige OAuth-Umleitungs-URIs** hinzu.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-195">In the left navigation pane under **Facebook Login**, click **Settings**, and add the OAuth redirect URI in the **Valid OAuth Redirect URIs** box.</span></span> <span data-ttu-id="f3bb3-196">Verwenden Sie das Format \*\* \<connectorserviceuri>/views/facebookoauth\*\*, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist. Beispiel: `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-196">Use the format **\<connectorserviceuri>/Views/FacebookOAuth**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example, `https://fbconnector.azurewebsites.net`.</span></span>
+7. <span data-ttu-id="a68c0-165">Klicken Sie im linken Navigationsbereich unter **Facebook-Anmeldung**auf **Einstellungen**, und fügen Sie den OAuth-Umleitungs-URI im Feld **gültige OAuth-Umleitungs-URIs** hinzu.</span><span class="sxs-lookup"><span data-stu-id="a68c0-165">In the left navigation pane under **Facebook Login**, click **Settings**, and add the OAuth redirect URI in the **Valid OAuth Redirect URIs** box.</span></span> <span data-ttu-id="a68c0-166">Verwenden Sie das Format \*\* \<connectorserviceuri>/views/facebookoauth\*\*, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist. Beispiel: `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="a68c0-166">Use the format **\<connectorserviceuri>/Views/FacebookOAuth**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example, `https://fbconnector.azurewebsites.net`.</span></span>
 
    ![Fügen Sie den OAuth-Umleitungs-URI zum Feld gültige OAuth-Umleitungs-URIs hinzu](media/FBCimage31.png)
 
-8. <span data-ttu-id="f3bb3-198">Klicken Sie im linken Navigationsbereich auf **Produkte hinzufügen** , und klicken Sie dann auf **webhooks.**</span><span class="sxs-lookup"><span data-stu-id="f3bb3-198">In the left navigation pane, click **Add Products** and then click **Webhooks.**</span></span> <span data-ttu-id="f3bb3-199">Klicken Sie im Pulldown-Menü **Seite** auf **Seite**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-199">In the **Page** pull-down menu, click **Page**.</span></span> 
+8. <span data-ttu-id="a68c0-168">Klicken Sie im linken Navigationsbereich auf **Produkte hinzufügen** , und klicken Sie dann auf **webhooks.**</span><span class="sxs-lookup"><span data-stu-id="a68c0-168">In the left navigation pane, click **Add Products** and then click **Webhooks.**</span></span> <span data-ttu-id="a68c0-169">Klicken Sie im Pulldown-Menü **Seite** auf **Seite**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-169">In the **Page** pull-down menu, click **Page**.</span></span> 
 
    ![Klicken Sie auf Produkte hinzufügen, und klicken Sie dann auf \* \* webhooks.](media/FBCimage32.png)
 
-9. <span data-ttu-id="f3bb3-201">Fügen Sie die webhooks-Rückruf-URL hinzu, und fügen Sie ein Verify-Token hinzu.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-201">Add Webhooks Callback URL and add a verify token.</span></span> <span data-ttu-id="f3bb3-202">Das Format der Rückruf-URL, verwenden Sie das Format \*\* <connectorserviceuri>/API/FbPageWebhook\*\*, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist. zum Beispiel `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-202">The format of the callback URL, use the format **<connectorserviceuri>/api/FbPageWebhook**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`.</span></span> 
+9. <span data-ttu-id="a68c0-171">Fügen Sie die webhooks-Rückruf-URL hinzu, und fügen Sie ein Verify-Token hinzu.</span><span class="sxs-lookup"><span data-stu-id="a68c0-171">Add Webhooks Callback URL and add a verify token.</span></span> <span data-ttu-id="a68c0-172">Das Format der Rückruf-URL, verwenden Sie das Format \*\* <connectorserviceuri>/API/FbPageWebhook\*\*, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist. zum Beispiel `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="a68c0-172">The format of the callback URL, use the format **<connectorserviceuri>/api/FbPageWebhook**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`.</span></span> 
 
-    <span data-ttu-id="f3bb3-203">Das Verify-Token sollte einem starken Kennwort ähneln.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-203">The verify token should similar to a strong password.</span></span> <span data-ttu-id="f3bb3-204">Kopieren Sie das Verify-Token in eine Textdatei oder einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-204">Copy the verify token to a text file or other storage location.</span></span>
+    <span data-ttu-id="a68c0-173">Das Verify-Token sollte einem starken Kennwort ähneln.</span><span class="sxs-lookup"><span data-stu-id="a68c0-173">The verify token should similar to a strong password.</span></span> <span data-ttu-id="a68c0-174">Kopieren Sie das Verify-Token in eine Textdatei oder einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="a68c0-174">Copy the verify token to a text file or other storage location.</span></span>
 
         ![Add the verify token](media/FBCimage33.png)
 
-10. <span data-ttu-id="f3bb3-205">Testen und Abonnieren des Endpunkts für Feeds.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-205">Test and subscribe to the endpoint for feed.</span></span>
+10. <span data-ttu-id="a68c0-175">Testen und Abonnieren des Endpunkts für Feeds.</span><span class="sxs-lookup"><span data-stu-id="a68c0-175">Test and subscribe to the endpoint for feed.</span></span>
 
     ![Testen und Abonnieren des Endpunkts](media/FBCimage34.png)
 
-11. <span data-ttu-id="f3bb3-207">Fügen Sie eine Datenschutz-URL, ein App-Symbol und eine geschäftliche Verwendung hinzu.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-207">Add a privacy URL, app icon, and business use.</span></span> <span data-ttu-id="f3bb3-208">Kopieren Sie außerdem die APP-ID und den App-Schlüssel in eine Textdatei oder einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-208">Also, copy the app ID and app secret to a text file or other storage location.</span></span>
+11. <span data-ttu-id="a68c0-177">Fügen Sie eine Datenschutz-URL, ein App-Symbol und eine geschäftliche Verwendung hinzu.</span><span class="sxs-lookup"><span data-stu-id="a68c0-177">Add a privacy URL, app icon, and business use.</span></span> <span data-ttu-id="a68c0-178">Kopieren Sie außerdem die APP-ID und den App-Schlüssel in eine Textdatei oder einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="a68c0-178">Also, copy the app ID and app secret to a text file or other storage location.</span></span>
 
     ![Hinzufügen einer Datenschutz-URL, eines App-Symbols und einer geschäftlichen Verwendung](media/FBCimage35.png)
 
-12. <span data-ttu-id="f3bb3-210">Machen Sie die APP öffentlich.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-210">Make the app public.</span></span>
+12. <span data-ttu-id="a68c0-180">Machen Sie die APP öffentlich.</span><span class="sxs-lookup"><span data-stu-id="a68c0-180">Make the app public.</span></span>
 
     ![Veröffentlichen der APP](media/FBCimage36.png)
 
-13. <span data-ttu-id="f3bb3-212">Fügen Sie der Administrator-oder Tester-Rolle einen Benutzer hinzu.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-212">Add user to the admin or tester role.</span></span>
+13. <span data-ttu-id="a68c0-182">Fügen Sie der Administrator-oder Tester-Rolle einen Benutzer hinzu.</span><span class="sxs-lookup"><span data-stu-id="a68c0-182">Add user to the admin or tester role.</span></span>
 
     ![Hinzufügen eines Benutzers zur Administrator-oder Tester-Rolle](media/FBCimage37.png)
 
-14. <span data-ttu-id="f3bb3-214">Fügen Sie die **Seite öffentliche Inhalts Zugriffs** Berechtigung hinzu.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-214">Add the **Page Public Content Access** permission.</span></span>
+14. <span data-ttu-id="a68c0-184">Fügen Sie die **Seite öffentliche Inhalts Zugriffs** Berechtigung hinzu.</span><span class="sxs-lookup"><span data-stu-id="a68c0-184">Add the **Page Public Content Access** permission.</span></span>
 
     ![DD die Seite öffentliche Inhalts Zugriffsberechtigung](media/FBCimage38.png)
 
-15. <span data-ttu-id="f3bb3-216">Berechtigung zum Hinzufügen von Seiten verwalten.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-216">Add Manage Pages permission.</span></span>
+15. <span data-ttu-id="a68c0-186">Berechtigung zum Hinzufügen von Seiten verwalten.</span><span class="sxs-lookup"><span data-stu-id="a68c0-186">Add Manage Pages permission.</span></span>
 
     ![Berechtigung zum Hinzufügen von Seiten verwalten](media/FBCimage39.png)
 
-16. <span data-ttu-id="f3bb3-218">Holen Sie sich die Anwendung von Facebook überprüft.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-218">Get the application reviewed by Facebook.</span></span>
+16. <span data-ttu-id="a68c0-188">Holen Sie sich die Anwendung von Facebook überprüft.</span><span class="sxs-lookup"><span data-stu-id="a68c0-188">Get the application reviewed by Facebook.</span></span>
 
     ![Abrufen der von Facebook überprüften Anwendung](media/FBCimage40.png)
 
-## <a name="step-6-configure-the-connector-web-app"></a><span data-ttu-id="f3bb3-220">Schritt 6: Konfigurieren der Connector-Webanwendung</span><span class="sxs-lookup"><span data-stu-id="f3bb3-220">Step 6: Configure the connector web app</span></span>
+## <a name="step-4-configure-the-connector-web-app"></a><span data-ttu-id="a68c0-190">Schritt 4: Konfigurieren der Connector-Webanwendung</span><span class="sxs-lookup"><span data-stu-id="a68c0-190">Step 4: Configure the connector web app</span></span>
 
-1. <span data-ttu-id="f3bb3-221">Wechseln Sie zu\<https://AzureAppResourceName>. azurewebsites.net (wobei AzureAppResourceName der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben) Wenn beispielsweise der Name **FBconnector**lautet `https://fbconnector.azurewebsites.net`, wechseln Sie zu.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-221">Go to https://\<AzureAppResourceName>.azurewebsites.net (where AzureAppResourceName is the name of your Azure app resource that you named in Step 4) For example, if the name is **fbconnector**, go to `https://fbconnector.azurewebsites.net`.</span></span> <span data-ttu-id="f3bb3-222">Die Startseite der APP sieht wie im folgenden Screenshot aus:</span><span class="sxs-lookup"><span data-stu-id="f3bb3-222">The home page of the app will look like the following screenshot:</span></span>
+1. <span data-ttu-id="a68c0-191">Wechseln Sie zu\<https://AzureAppResourceName>. azurewebsites.net (wobei AzureAppResourceName der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben) Wenn beispielsweise der Name **FBconnector**lautet `https://fbconnector.azurewebsites.net`, wechseln Sie zu.</span><span class="sxs-lookup"><span data-stu-id="a68c0-191">Go to https://\<AzureAppResourceName>.azurewebsites.net (where AzureAppResourceName is the name of your Azure app resource that you named in Step 4) For example, if the name is **fbconnector**, go to `https://fbconnector.azurewebsites.net`.</span></span> <span data-ttu-id="a68c0-192">Die Startseite der APP sieht wie im folgenden Screenshot aus:</span><span class="sxs-lookup"><span data-stu-id="a68c0-192">The home page of the app will look like the following screenshot:</span></span>
 
    ![Wechseln Sie zur Connector-Webanwendung](media/FBCimage41.png)
 
-2. <span data-ttu-id="f3bb3-224">Klicken Sie auf **Konfigurieren** , um eine Anmeldeseite anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-224">Click **Configure** to display a sign in page.</span></span>
+2. <span data-ttu-id="a68c0-194">Klicken Sie auf **Konfigurieren** , um eine Anmeldeseite anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="a68c0-194">Click **Configure** to display a sign in page.</span></span>
  
    ![Klicken Sie auf konfigurieren, um eine Anmeldeseite anzuzeigen.](media/FBCimage42.png)
 
-3. <span data-ttu-id="f3bb3-226">Geben Sie in das Feld Mandanten-ID die Mandanten-ID ein, die Sie in Schritt 2 erhalten haben, oder fügen Sie Sie ein.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-226">In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2).</span></span> <span data-ttu-id="f3bb3-227">Geben Sie in das Feld Kennwort den APISecretKey (den Sie in Schritt 2 erhalten haben) ein, oder fügen Sie ihn ein, und klicken Sie dann auf **Konfigurationseinstellungen festlegen** , um die Seite **Konfigurations Details** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-227">In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the **Configuration Details** page.</span></span>
+3. <span data-ttu-id="a68c0-196">Geben Sie in das Feld Mandanten-ID die Mandanten-ID ein, die Sie in Schritt 2 erhalten haben, oder fügen Sie Sie ein.</span><span class="sxs-lookup"><span data-stu-id="a68c0-196">In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2).</span></span> <span data-ttu-id="a68c0-197">Geben Sie in das Feld Kennwort den APISecretKey (den Sie in Schritt 2 erhalten haben) ein, oder fügen Sie ihn ein, und klicken Sie dann auf **Konfigurationseinstellungen festlegen** , um die Seite Konfigurationsdetails anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="a68c0-197">In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the configuration details page.</span></span>
 
     ![Melden Sie sich mit Ihrer Mandanten-ID und Ihrem Kennwort an, und wechseln Sie zur Seite Konfigurationsdetails.](media/FBCimage43.png)
 
-4. <span data-ttu-id="f3bb3-229">Geben Sie unter **Konfigurations Details**die folgenden Konfigurationseinstellungen ein:</span><span class="sxs-lookup"><span data-stu-id="f3bb3-229">Under **Configuration Details**, enter the following configuration settings</span></span> 
+4. <span data-ttu-id="a68c0-199">Geben Sie die folgenden Konfigurationseinstellungen ein:</span><span class="sxs-lookup"><span data-stu-id="a68c0-199">Enter the following configuration settings</span></span> 
 
-   - <span data-ttu-id="f3bb3-230">**Facebook-Anwendungs-ID** – die APP-ID für die Facebook-Anwendung, die Sie in Schritt 5 erhalten haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-230">**Facebook application ID** – The app ID for the Facebook application that you obtained in Step 5.</span></span>
-   - <span data-ttu-id="f3bb3-231">**Facebook-Anwendungs Geheimnis** – der APP-Schlüssel für die Facebook-Anwendung, die Sie in Schritt 5 erhalten haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-231">**Facebook application secret** – The app secret for the Facebook application that you obtained in Step 5.</span></span>
-   - <span data-ttu-id="f3bb3-232">**Facebook webhooks Überprüfen des Tokens** – das Überprüfen-Token, das Sie in Schritt 5 erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-232">**Facebook webhooks verify token** – The verify token that you created in Step 5.</span></span>
-   - <span data-ttu-id="f3bb3-233">**Aad-Anwendungs-ID** – die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 2 erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-233">**AAD application ID** – The application ID for the Azure Active Directory app that you created in Step 2.</span></span>
-   - <span data-ttu-id="f3bb3-234">**Aad-Anwendungs Geheimnis** – der Wert für den geheimen Schlüssel "APISecretKey", den Sie in Schritt 4 erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-234">**AAD application secret** – The value for the APISecretKey secret that you created in Step 4.</span></span>
-   - <span data-ttu-id="f3bb3-235">**Aad-Anwendungs-URI** – der in Schritt 2 abgerufene Aad-Anwendungs-URI; Beispiel: `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-235">**AAD application Uri** – The AAD application Uri obtained in Step 2; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.</span></span>
-   - <span data-ttu-id="f3bb3-236">**App Insights Instrumentation Key** – lassen Sie dieses Feld leer.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-236">**App insights instrumentation key** – Leave this box blank.</span></span>
+   - <span data-ttu-id="a68c0-200">**Facebook-Anwendungs-ID:** Die APP-ID für die Facebook-Anwendung, die Sie in Schritt 3 erhalten haben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-200">**Facebook application ID:** The app ID for the Facebook application that you obtained in Step 3.</span></span>
+   
+   - <span data-ttu-id="a68c0-201">**Geheime Facebook-Anwendung:** Der APP-Schlüssel für die Facebook-Anwendung, die Sie in Schritt 3 erhalten haben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-201">**Facebook application secret:** The app secret for the Facebook application that you obtained in Step 3.</span></span>
+   
+   - <span data-ttu-id="a68c0-202">**Facebook webhooks überprüfen Token:** Das Überprüfen-Token, das Sie in Schritt 3 erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-202">**Facebook webhooks verify token:** The verify token that you created in Step 3.</span></span>
+   
+   - <span data-ttu-id="a68c0-203">**Aad-Anwendungs-ID:** Die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 1 erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-203">**AAD application ID:** The application ID for the Azure Active Directory app that you created in Step 1.</span></span>
+   
+   - <span data-ttu-id="a68c0-204">**Aad-Anwendungsschlüssel:** Der Wert für den geheimen APISecretKey, den Sie in Schritt 1 erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-204">**AAD application secret:** The value for the APISecretKey secret that you created in Step 1.</span></span>
 
-5. <span data-ttu-id="f3bb3-237">Klicken Sie auf **Speichern** , um die Verbindungseinstellungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-237">Click **Save** to save the connector settings.</span></span>
+5. <span data-ttu-id="a68c0-205">Klicken Sie auf **Speichern** , um die Verbindungseinstellungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="a68c0-205">Click **Save** to save the connector settings.</span></span>
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a><span data-ttu-id="f3bb3-238">Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center</span><span class="sxs-lookup"><span data-stu-id="f3bb3-238">Step 7: Set up a custom connector in the Security & Compliance Center</span></span>
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a><span data-ttu-id="a68c0-206">Schritt 5: Einrichten eines Facebook-Connectors im Microsoft 365 Compliance Center</span><span class="sxs-lookup"><span data-stu-id="a68c0-206">Step 5: Set up a Facebook connector in the Microsoft 365 compliance center</span></span>
 
-1. <span data-ttu-id="f3bb3-239">Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Information Governance \> Import \> Archivieren von drittanbieterdaten**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-239">Go to <https://protection.office.com> and then click **Information governance \> Import \> Archive third-party data**.</span></span>
+1. <span data-ttu-id="a68c0-207">Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .</span><span class="sxs-lookup"><span data-stu-id="a68c0-207">Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.</span></span>
 
-   ![Wechseln Sie zum Security and Compliance Center, und klicken Sie auf Information Governance #a0 Import #a1 Archivieren von drittanbieterdaten](media/FBCimage44.png)
+2. <span data-ttu-id="a68c0-208">Klicken Sie auf der Seite **Daten Konnektoren (Vorschau)** unter **Facebook Business Pages**auf **Ansicht**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-208">On the **Data connectors (preview)** page under **Facebook Business pages**, click **View**.</span></span>
 
-2.  <span data-ttu-id="f3bb3-241">Klicken Sie auf **Connector hinzufügen** , und klicken Sie dann auf **Facebook-Seiten**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-241">Click **Add a connector** and then click **Facebook pages**.</span></span>
+3. <span data-ttu-id="a68c0-209">Klicken Sie auf der Seite **Facebook-Geschäfts Seiten** auf **Connector hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-209">On the **Facebook business pages** page, click **Add connector**.</span></span>
 
-    ![Hinzufügen eines Facebook-Connectors konfigurieren des Connectors](media/FBCimage46.png)
+4. <span data-ttu-id="a68c0-210">Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-210">On the **Terms of service** page, click **Accept**.</span></span>
 
-3.  <span data-ttu-id="f3bb3-243">Geben Sie auf der Seite " **Connector-app hinzufügen** " die folgenden Informationen ein, und klicken Sie dann auf **Connector überprüfen**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-243">On the **Add Connector App** page, enter the following information and then click **Validate connector**.</span></span>
+5.  <span data-ttu-id="a68c0-211">Geben Sie auf der Seite **Anmeldeinformationen für ihre Connector-app hinzufügen** die folgenden Informationen ein, und klicken Sie dann auf **Verbindung überprüfen**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-211">On the **Add credentials for your connector app** page, enter the following information and then click **Validate connection**.</span></span>
 
-    - <span data-ttu-id="f3bb3-244">Geben Sie im ersten Feld einen Namen für den Connector ein, beispielsweise **Facebook**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-244">In the first box, type a name for the connector, such as **Facebook**.</span></span>
-    - <span data-ttu-id="f3bb3-245">Geben Sie im zweiten Feld den Wert des APISecretKey ein, den Sie in Schritt 4 hinzugefügt haben, oder fügen Sie ihn ein.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-245">In the second box, type or paste the value of the APISecretKey that you added in Step 4.</span></span>
-    - <span data-ttu-id="f3bb3-246">Geben Sie im dritten Feld die Azure-App-Dienst-URL ein, oder fügen Sie Sie ein. zum Beispiel `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-246">In the third box, type or paste the Azure app service URL; for example `https://fbconnector.azurewebsites.net`.</span></span>
- 
-    <span data-ttu-id="f3bb3-247">Nachdem der Connector erfolgreich überprüft wurde, klicken Sie auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-247">After the connector is successfully validated, click **Next**.</span></span>
+    ![Eingeben von Connector-App-Anmeldeinformationen](media/TCimage38.png)
+
+    - <span data-ttu-id="a68c0-213">Geben Sie im Feld **Name** einen Namen für den Connector ein, beispielsweise **Facebook-Nachrichtenseite**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-213">In the **Name** box, type a name for the connector, such as **Facebook news page**.</span></span>
     
-    ![Klicken Sie auf Weiter, nachdem der Connector erfolgreich überprüft wurde](media/FBCimage47.png)
+    - <span data-ttu-id="a68c0-214">Geben Sie im Feld **Verbindungs-URL** die Azure-App-Dienst-URL ein, oder fügen Sie Sie ein. zum Beispiel `https://fbconnector.azurewebsites.net`.</span><span class="sxs-lookup"><span data-stu-id="a68c0-214">In the **Connection URL** box, type or paste the Azure app service URL; for example `https://fbconnector.azurewebsites.net`.</span></span>
+    
+    - <span data-ttu-id="a68c0-215">Geben Sie in das Feld **Kennwort** den Wert des APISecretKey ein, den Sie in Schritt 2 hinzugefügt haben, oder fügen Sie ihn ein.</span><span class="sxs-lookup"><span data-stu-id="a68c0-215">In the **Password** box, type or paste the value of the APISecretKey that you added in Step 2.</span></span>
+    
+    - <span data-ttu-id="a68c0-216">Geben Sie in das Feld **Azure-APP-ID** den Wert der Anwendungs-ID Application (Client) ein, die auch als Aad-Anwendungs-ID bezeichnet wird, die Sie in Schritt 1 erstellt haben, oder fügen Sie ihn ein.</span><span class="sxs-lookup"><span data-stu-id="a68c0-216">In the **Azure App ID** box, type or paste the value of the Application (client) ID also called as AAD Application ID that you created in Step 1.</span></span>
+ 
+6. <span data-ttu-id="a68c0-217">Nachdem die Verbindung erfolgreich überprüft wurde, klicken Sie auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-217">After the connection is successfully validated, click **Next**.</span></span>
 
-4.  <span data-ttu-id="f3bb3-249">Klicken Sie auf **Anmeldung mit der Connector-App**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-249">Click **Login with Connector App**.</span></span>
+7. <span data-ttu-id="a68c0-218">Geben Sie auf der Seite **Microsoft 365 zum Importieren von Daten autorisieren** den APISecretKey erneut ein, oder fügen Sie ihn ein, und klicken Sie dann auf **Login-webapp**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-218">On the **Authorize Microsoft 365 to import data** page, type or paste the APISecretKey again and then click **Login web app**.</span></span>
 
-    ![Klicken Sie auf Anmeldung mit der Connector-App](media/FBCimage45.png)
+8. <span data-ttu-id="a68c0-219">Klicken Sie auf der Seite **Facebook Connector-App konfigurieren** auf **Anmeldung bei Facebook** , und melden Sie sich mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an.</span><span class="sxs-lookup"><span data-stu-id="a68c0-219">On the **Configure Facebook connector app** page, click **Login with Facebook** and log in using the credentials for the account for your organization's Facebook Business pages.</span></span> <span data-ttu-id="a68c0-220">Stellen Sie sicher, dass das Facebook-Konto, an dem Sie sich angemeldet haben, der Administratorrolle für die Facebook-Geschäfts Seiten Ihrer Organisation zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="a68c0-220">Make sure the Facebook account that you logged in to is assigned the admin role for your organization's Facebook Business pages.</span></span>
 
-5. <span data-ttu-id="f3bb3-251">Geben Sie den APISecretKey erneut ein, oder fügen Sie ihn ein, und klicken Sie dann auf **Login to Connector Service**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-251">Type or paste the APISecretKey again and then click  **Login to Connector Service**.</span></span>
+   ![Melden Sie sich bei Facebook an.](media/FBCimage50.png)
 
-   ![Geben oder fügen Sie den APISecretKey ein, und klicken Sie dann auf die Schaltfläche anmelden.](media/FBCimage48.png)
-
-6. <span data-ttu-id="f3bb3-253">Klicken Sie auf **Anmelden bei Facebook**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-253">Click **Login with Facebook**.</span></span>
-
-   ![Klicken Sie auf \* \* Login bei Facebook](media/FBCimage49.png)
-
-7. <span data-ttu-id="f3bb3-255">Melden Sie sich auf der Seite **Anmelden bei Facebook** mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-255">On the **Log in to Facebook** page, log in using the credentials for the account for your organization’s Facebook Business pages.</span></span> <span data-ttu-id="f3bb3-256">Stellen Sie sicher, dass das Facebook-Konto, an dem Sie sich angemeldet haben, der Administratorrolle für die Facebook-Geschäfts Seiten Ihrer Organisation zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-256">Make sure the Facebook account that you logged in to is assigned the admin role for your organization’s Facebook Business pages</span></span>
-
-   ![Melden Sie sich bei Facebook an](media/FBCimage50.png)
-
-8. <span data-ttu-id="f3bb3-258">Klicken Sie auf **Seiten auswählen** , um die Geschäfts Seiten Ihrer Organisation auszuwählen, die Sie in Office 365 archivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-258">Click **Select Pages** to choose your organization’s business pages that you want to archive in Office 365.</span></span>
-
-   ![Klicken Sie auf Seiten auswählen, um die Geschäfts Seiten Ihrer Organisation anzuzeigen.](media/FBCimage51.png)
-
-9. <span data-ttu-id="f3bb3-260">Eine Liste der Geschäfts Seiten, die von dem Facebook-Konto verwaltet werden, in dem Sie sich angemeldet haben, wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-260">A list of the Business pages managed by the Facebook account that you logged in to is displayed.</span></span> <span data-ttu-id="f3bb3-261">Wählen Sie die zu archivierende Seite aus, und klicken Sie dann auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-261">Select the page to archive and then click **Save**.</span></span>
+9. <span data-ttu-id="a68c0-222">Eine Liste der Geschäfts Seiten, die von dem Facebook-Konto verwaltet werden, in dem Sie sich angemeldet haben, wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="a68c0-222">A list of the business pages managed by the Facebook account that you logged in to is displayed.</span></span> <span data-ttu-id="a68c0-223">Wählen Sie die zu archivierende Seite aus, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-223">Select the page to archive and then click **Next**.</span></span>
 
     ![Wählen Sie die Geschäftsseite der Organisation aus, die Sie archivieren möchten.](media/FBCimage52.png)
 
-10. <span data-ttu-id="f3bb3-263">Klicken Sie auf **Fertig stellen** , um das Setup der Connector-Dienst-APP zu beenden.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-263">Click **Finish** to exit the setup of the connector service app.</span></span>
+10. <span data-ttu-id="a68c0-225">Klicken Sie auf **weiter** , um das Setup der Connector-Dienst-APP zu beenden.</span><span class="sxs-lookup"><span data-stu-id="a68c0-225">Click **Continue** to exit the setup of the connector service app.</span></span>
 
-    ![Klicken Sie auf Fertig stellen, um die Connector Service-APP zu beenden.](media/FBCimage53.png)
+11. <span data-ttu-id="a68c0-226">Auf der Seite **Filter festlegen** können Sie einen Filter anwenden, um Elemente anfänglich zu importieren, die ein bestimmtes Alter aufweisen.</span><span class="sxs-lookup"><span data-stu-id="a68c0-226">On the **Set filters** page, you can apply a filter to initially import items that are a certain age.</span></span> <span data-ttu-id="a68c0-227">Wählen Sie ein Alter aus, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-227">Select an age, and then click **Next**.</span></span>
 
-11. <span data-ttu-id="f3bb3-265">Auf der Seite **Filter festlegen** können Sie einen Filter anwenden, um Elemente zu importieren (und archivieren), die ein bestimmtes Alter aufweisen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-265">On the **Set Filters** page, you can apply a filter to import (and archive) items that are a certain age.</span></span> <span data-ttu-id="f3bb3-266">Klicken Sie auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-266">Click **Next**.</span></span>
+12. <span data-ttu-id="a68c0-228">Geben Sie auf der Seite Speicherort **auswählen** die e-Mail-Adresse des Microsoft 365-Postfachs ein, in das die Facebook-Elemente importiert werden sollen, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="a68c0-228">On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Facebook items will be imported to, and then click **Next**.</span></span>
 
-    ![Anwenden eines Filters zum Importieren von Elementen, die ein bestimmtes Alter aufweisen](media/FBCimage54.png)
+13. <span data-ttu-id="a68c0-229">Klicken Sie im die **Zustimmung des Administrators bereit**stellen auf **Zustimmung erteilen** , und führen Sie dann die Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="a68c0-229">On the **Provide admin consent**, click **Provide consent** and then follow the steps.</span></span> <span data-ttu-id="a68c0-230">Sie müssen ein globaler Administrator sein, um die Zustimmung des Office 365-Import Diensts für den Zugriff auf Daten in Ihrer Organisation zu geben.</span><span class="sxs-lookup"><span data-stu-id="a68c0-230">You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.</span></span>
 
-12. <span data-ttu-id="f3bb3-268">Wählen Sie auf der Seite **Speicherkonto festlegen** das Office 365 Postfach aus, in das die Elemente der Facebook-Geschäfts Seiten importiert werden, die Sie zuvor ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-268">On the **Set Storage Account** page, select the Office 365 mailbox that the items from the Facebook Business pages that you previously selected will be imported to.</span></span>
+14. <span data-ttu-id="a68c0-231">Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="a68c0-231">Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.</span></span>
 
-    ![Angeben einer Office 365 Post Fach Archiv Elemente, die von Facebook importiert wurden](media/FBCimage55.png)
-
-13. <span data-ttu-id="f3bb3-270">Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup im Security #a0 Compliance Center abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-270">Review your settings and then click **Finish** to complete the connector setup in the Security & Compliance Center.</span></span>
-
-    ![Überprüfen der Verbindungseinstellungen](media/FBCimage56.png)
-
-14. <span data-ttu-id="f3bb3-272">Wechseln Sie zur Seite **Archivieren von drittanbieterdaten** , um den Fortschritt des Importvorgangs anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="f3bb3-272">Go to the **Archive third-party data** page to see the progress of the import process.</span></span>
-
-    ![Wechseln Sie zur Seite Archivieren von drittanbieterdaten, um den Importprozess nachzuverfolgen.](media/FBCimage58.png)
+15. <span data-ttu-id="a68c0-232">Wechseln Sie im Compliance Center zur Seite **Daten Konnektoren** , und klicken Sie auf die Registerkarte **Connectors** , um den Status des Importvorgangs anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="a68c0-232">In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.</span></span>
