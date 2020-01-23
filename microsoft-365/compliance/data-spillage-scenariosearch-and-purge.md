@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie Office 365 eDiscovery-und Such Tools, um einen Vorfall zur Verschütten von Daten in Ihrer Organisation zu verwalten und zu reagieren.
-ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686262"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259421"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung
 
@@ -54,7 +54,7 @@ Hier erfahren Sie, wie Sie einen Vorfall mit Datenüberlauf verwalten:
     
 - Zum Erstellen eines Falles müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein oder Mitglied einer benutzerdefinierten Rollengruppe sein, der die Fall Verwaltungsrolle zugewiesen ist. Wenn Sie kein Mitglied sind, bitten Sie einen Office 365 Administrator, [Sie der Rollengruppe "eDiscovery-Manager" hinzuzufügen](assign-ediscovery-permissions.md).
     
-- Um Daten zu löschen, die in Ihrer Organisation verschüttet sind, müssen Sie den Befehl [Search-Mailbox-Option deletecontent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) in Exchange Online PowerShell verwenden. Um den *Option deletecontent* -Parameter verwenden zu können, müssen Sie außerdem Mitglied einer Rollengruppe in Exchange Online sein, der die Rolle "Post Fach Import Export" zugewiesen ist. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" unter [Manage Role](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx)Groups.
+- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe für eDiscovery-Manager sein, oder Ihnen muss die Compliancesuche-Verwaltungsrolle zugewiesen sein. Um Nachrichten löschen zu können, müssen Sie Mitglied der Rollengruppe „Organisationsverwaltung“ sein, oder Ihnen muss die Verwaltungsrolle zum Suchen und Löschen zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Um die Office 365 Überwachungsprotokoll-eDiscovery-Aktivitäten in Schritt 8 durchsuchen zu können, muss die Überwachung für Ihre Organisation aktiviert werden. Sie können nach Aktivitäten suchen, die in den letzten 90 Tagen durchgeführt wurden. Weitere Informationen zum Aktivieren und Verwenden von Überwachung finden Sie im Abschnitt [Auditing the Data Spilling Investigation Process](#auditing-the-data-spillage-investigation-process) in Schritt 8. 
     
@@ -84,7 +84,7 @@ Nachdem Sie eine Inhaltssuche erstellt haben, müssen Sie die Suchergebnisse üb
   
 Wenn Sie mehr als 1.000 Postfächer oder mehr als 100 e-Mail-Nachrichten pro Postfach zur Überprüfung haben, können Sie die anfängliche Suche mithilfe zusätzlicher Stichwörter oder Bedingungen wie Datumsbereich oder Absender/Empfänger in mehrere Suchvorgänge unterteilen und die Ergebnisse jeder Suche einzeln überprüfen. Achten Sie darauf, alle Suchabfragen zu notieren, die beim Löschen von Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)verwendet werden sollen.
 
-Wenn einer Depotbank oder einem Endbenutzer eine Office 36 E5-Lizenz zugewiesen ist, können Sie bis zu 10.000 Suchergebnisse gleichzeitig mit Office 365 Advanced eDiscovery untersuchen. Wenn mehr als 10.000 e-Mail-Nachrichten zu überprüfen sind, können Sie die Suchabfrage nach Datumsbereich aufteilen und jedes Ergebnis einzeln überprüfen, da die Suchergebnisse nach Datum sortiert sind. In Advanced eDiscovery können Sie Suchergebnisse mit dem Feature **Bezeichnung als** im Vorschaufenster markieren und das Suchergebnis nach dem Tag filtern, mit dem Sie beschriftet haben. Dies ist hilfreich, wenn Sie mit einem sekundären Bearbeiter zusammenarbeiten. Durch die Verwendung zusätzlicher Analysetools in Advanced eDiscovery, wie der optischen Zeichenerkennung, des e-Mail-Threadings und der Vorhersage Codierung können Sie schnell Tausende von Nachrichten verarbeiten und überprüfen und Sie zur weiteren Überprüfung markieren. Weitere Informationen finden Sie unter [Quick Setup für Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
+Wenn einer Depotbank oder einem Endbenutzer eine Office 365 E5-Lizenz zugewiesen ist, können Sie bis zu 10.000 Suchergebnisse gleichzeitig mit Office 365 Advanced eDiscovery untersuchen. Wenn mehr als 10.000 e-Mail-Nachrichten zu überprüfen sind, können Sie die Suchabfrage nach Datumsbereich aufteilen und jedes Ergebnis einzeln überprüfen, da die Suchergebnisse nach Datum sortiert sind. In Advanced eDiscovery können Sie Suchergebnisse mit dem Feature **Bezeichnung als** im Vorschaufenster markieren und das Suchergebnis nach dem Tag filtern, mit dem Sie beschriftet haben. Dies ist hilfreich, wenn Sie mit einem sekundären Bearbeiter zusammenarbeiten. Durch die Verwendung zusätzlicher Analysetools in Advanced eDiscovery, wie der optischen Zeichenerkennung, des e-Mail-Threadings und der Vorhersage Codierung können Sie schnell Tausende von Nachrichten verarbeiten und überprüfen und Sie zur weiteren Überprüfung markieren. Weitere Informationen finden Sie unter [Quick Setup für Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
 Wenn Sie eine e-Mail-Nachricht finden, die verschüttete Daten enthält, überprüfen Sie die Empfänger der Nachricht, um festzustellen, ob Sie extern freigegeben wurde. Zur weiteren Ablaufverfolgung einer Nachricht können Sie Absenderinformationen und den Datumsbereich erfassen, sodass Sie die in [Schritt 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)beschriebenen Protokolle der Nachrichtenablaufverfolgung verwenden können.
 
@@ -136,7 +136,7 @@ Es gibt zwei Möglichkeiten, eine Liste der e-Mail-Adressen von Postfächern mit
     
 2. Klicken Sie auf der Seite Flyout auf **Ergebnisse anzeigen**.
     
-3. Klicken Sie in der Dropdownliste **einzelne Ergebnisse** auf **Suchstatistik**.
+3. Klicken Sie in der Dropdownliste **Einzelne Ergebnisse** auf **Suchstatistiken**.
     
 4. Klicken Sie in der Dropdownliste **Typ** auf **obere Standorte**.
     
@@ -168,31 +168,9 @@ Stellen Sie sicher, dass das Postfach auf frühere Konfigurationen zurückgesetz
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Schritt 7: Dauerhaftes Löschen der verschütteten Daten
 
-Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage zum Auffinden von e-Mail-Nachrichten, die die verschütteten Daten enthalten, können Sie nun die verschütteten Daten endgültig löschen. Wie bereits erläutert, müssen Sie in Exchange Online die Rolle "Post Fach Import Export" zugewiesen sein, um Nachrichten mit dem folgenden Verfahren zu löschen.
-  
-1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554).
-    
-2. Führen Sie den folgenden Befehl aus:
-    
-    ```powershell
-    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
-    ```
+Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage zum Auffinden von e-Mail-Nachrichten, die die verschütteten Daten enthalten, können Sie nun die verschütteten Daten endgültig löschen.  Wie bereits erläutert, müssen Sie ein Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rolle Search and Purge Management zugewiesen sein, um Nachrichten zu löschen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-3. Führen Sie den vorherigen Befehl für jedes Postfach erneut aus, das die verschütteten Daten enthält, indem Sie den Wert für den Parameter Identity ersetzen. Zum Beispiel:
-
-    ```powershell
-    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-    ```powershell
-    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-   ```powershell
-   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-   ```
-
-Wie bereits erwähnt, können Sie auch ein [PowerShell-Skript](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) erstellen und es für eine Liste von Postfächern ausführen, sodass das Skript die verschütteten Daten in jedem Postfach löscht.
+Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 #a0 3 unter [Suchen und Löschen von e-Mail-Nachrichten in Ihrer Office 365 Organisation](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization) .
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, stellen Sie einen Nachweis für die Löschung bereit, und überwachen
 
@@ -214,12 +192,9 @@ Wenn die Schlüsselwörter in der Suchabfrage, die Sie in Schritt 3 erstellt und
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Überwachen des Ermittlungsprozesses für Datenüberlauf
 
-Sie können das Office 365 Überwachungsprotokoll nach den eDiscovery-Aktivitäten durchsuchen, die während der Untersuchung durchgeführt wurden. Sie können auch das Überwachungsprotokoll durchsuchen, um die Überwachungseinträge zurückzugeben, die erstellt wurden, als Sie den Befehl **Search-Mailbox-Option deletecontent** ausgeführt haben, um die verschütteten Daten zu löschen. Weitere Informationen finden Sie unter:
+Sie können das Office 365 Überwachungsprotokoll nach den eDiscovery-Aktivitäten durchsuchen, die während der Untersuchung durchgeführt wurden. Sie können das Überwachungsprotokoll auch durchsuchen, um die Überwachungseinträge für den Befehl **New-ComplianceSearchAction-Purge** zurückzugeben, den Sie in Schritt 7 ausgeführt haben, um die verschütteten Daten zu löschen. Weitere Informationen finden Sie unter:
 
 - [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md)
 
 - [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
-
-- Informationen zum Suchen nach Überwachungsdatensätzen im Zusammenhang mit der Ausführung von Cmdlets in Exchange Online finden Sie im Abschnitt "geprüfte Aktivitäten-Exchange-Verwaltungs Überwachungsprotokoll" unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#audited-activities) .
   
-

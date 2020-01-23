@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b14ef9970aa709ad5e23fdae467992497a1331e8
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260145"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269386"
 ---
 # <a name="battery-insights"></a>Akku Einblicke
 Diese Ansicht enthält Metriken für Energie, Akku und App-Nutzung für Ihre von Microsoft verwalteten Desktop Geräte. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
@@ -43,8 +43,6 @@ Im Bereich der **oberen Energieverbraucher** finden Sie die apps in Ihrer Umgebu
 - Andere
 
 "Sonstiges" könnte den Energieverbrauch durch eine Vielzahl von Quellen wie Datenträgeraktivität, mobile Breitbandnutzung und Energieverlust im internen Widerstand einschließen. 
-
-Die in * * Top Energy Consumers angezeigten apps
 
 Sie können diese Ansicht filtern, um nur Vordergrund-apps, Hintergrund-Apps oder beides anzuzeigen, indem Sie das Menü in der oberen rechten Ecke verwenden. Apps im Vordergrund sind solche, die in den letzten 28 Tagen Benutzerinteraktion hatten, beispielsweise das Auswählen von etwas mit einer Maus.
 

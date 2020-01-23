@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 3b8522dea71cd0ece5ec63f07a733e1eb5283a43
-ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
+ms.openlocfilehash: 611497bd485435d5705552cbbffe59286e2b27c8
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41123626"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259963"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -28,7 +28,7 @@ Inhalt dieses Artikels
 - Welche Empfindlichkeits Beschriftungsfunktionen von jeder Office-App unterstützt werden.
 - Was geschieht, wenn Sie Sensitivitäts Bezeichnungen mit anderen Microsoft-Sicherheits-und-Konformitäts Technologien kombinieren, die mit Office-apps funktionieren.
 - Wie Personen in Ihrer Organisation Sensitivitäts Bezeichnungen verwenden können, wenn Sie mit Office-Apps für Windows und Office-Apps für das Internet arbeiten.
-- Wohin Sie gehen, um Personen in Ihrer Organisation mit Sensitivitäts Bezeichnungen zu starten.
+- Zusätzliche Ressourcen, damit Benutzer in Ihrer Organisation mit der Verwendung von Sensitivitäts Bezeichnungen beginnen können.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Abonnement-und Lizenzierungsanforderungen für Sensitivitäts Bezeichnungen
 
@@ -66,7 +66,7 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 |[Standardbezeichnung anwenden](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | Unter Review                                                        |
 |[Begründung zum Ändern einer Bezeichnung erforderlich](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Hilfe Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Inhalt markieren](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
@@ -95,15 +95,13 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 
 ## <a name="about-the-office-built-in-labeling-client"></a>Informationen zum integrierten Labeling-Client für Office
 
-Der integrierte Office-Bezeichnungs Client lädt Bezeichnungen und Richtlinieneinstellungen aus den folgenden Verwaltungszentren herunter:
-
-- Office 365 Security & Compliance Center
-
-- Microsoft 365 Security Center
+Der integrierte Office-Bezeichnungs Client lädt Vertraulichkeits Bezeichnungen und Richtlinieneinstellungen für die Sensitivitäts Bezeichnung aus den folgenden Verwaltungszentren herunter:
 
 - Microsoft 365 Compliance Center
+- Microsoft 365 Security Center
+- Office 365 Security & Compliance Center
 
-Um den integrierten Office-Labeling-Client verwenden zu können, müssen Sie mindestens eine [Bezeichnungsrichtlinie](sensitivity-labels.md#what-label-policies-can-do) haben, die von einem der aufgelisteten Admin Center für Benutzer veröffentlicht wurde.
+Um den integrierten Office-Labeling-Client verwenden zu können, müssen Sie mindestens eine [Bezeichnungsrichtlinie](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) haben, die von einem der aufgelisteten Admin Center für Benutzer veröffentlicht wurde.
 
 Wenn Benutzer jedoch einen der Azure Information Protection-Clients installiert haben ([Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) oder [Classic Client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), ist der integrierte Bezeichnungs Clientstandard mäßig in Ihren Office-Apps deaktiviert. Um die integrierte Kennzeichnung anstelle des Azure Information Protection-Clients für Office-Apps zu verwenden, deaktivieren oder deinstallieren Sie das Office-Add-in für Azure Information Protection:
 
@@ -143,11 +141,11 @@ Wenn Sie eine e-Mail-Nachricht mit Anlagen bezeichnen, erben die Anlagen nicht d
 
 Um den integrierten Office-Bezeichnungs Client in Office im Internet verwenden zu können, muss sich das Dokument in einer OneDrive für Unternehmen-oder SharePoint Online-Instanz befinden, die sich für die [Aktivierung von Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)entschieden hat.
 
-## <a name="when-office-365-applies-marks-and-encryption-to-content"></a>Wenn Office 365 Marken und Verschlüsselung auf Inhalte anwendet
+## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>Wenn Office 365 Inhalts Markierung und-Verschlüsselung auf Inhalte anwendet
 
-Office 365 wendet Inhalts Markierungen oder die Verschlüsselung mit einer Sensitivitäts Bezeichnung je nach verwendeter Anwendung unterschiedlich an.
+Office 365 wendet die Inhalts Markierung und-Verschlüsselung mit einer Sensitivitäts Bezeichnung unterschiedlich an, abhängig von der verwendeten app.
 
-| Anwendung | Inhaltskennzeichnung | Verschlüsselung |
+| App | Inhaltskennzeichnung | Verschlüsselung |
 | --- | --- | --- |
 | Word, Excel, PowerPoint auf allen Plattformen | Sofort | Sofort |
 | Outlook für PC und Mac | Nachdem Exchange Online die e-Mail gesendet hat | Sofort |
@@ -156,6 +154,6 @@ Office 365 wendet Inhalts Markierungen oder die Verschlüsselung mit einer Sensi
 
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-[Häufig gestellte Fragen zur Klassifizierung und zu Bezeichnungen in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
+[Anwenden von Vertraulichkeits-Beschriftungen auf Ihre Dokumente und E-Mails in Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
-[Anwenden von Vertraulichkeitsbezeichnungen auf Ihre Dokumente und E-Mails in Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Bekannte Probleme beim Anwenden von Vertraulichkeits-Beschriftungen auf Ihren Office-Dateien](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)

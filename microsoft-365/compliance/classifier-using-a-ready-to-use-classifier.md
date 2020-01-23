@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 verfügt über eine Reihe von einsatzfähigen Computer Lern-Klassifizierungen, mit denen Sie Inhalte in Ihrer Organisation identifizieren und bezeichnen können. In diesem Thema wird erläutert, wie Sie diese bereit für die Verwendung von Klassifizierungen vorbereiten.
-ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807414"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259431"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
 
@@ -45,7 +45,7 @@ Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispielda
 
 2. Erstellen eines dedizierten SharePoint Online Ordners; warten Sie mindestens eine Stunde, bis der Ordner dem Suchindex hinzugefügt wurde. Notieren Sie sich die Ordner-URL.
 
-3. Melden Sie sich bei Microsoft 365 Compliance Center mit dem Zugriff auf Compliance Admin oder Sicherheitsadministrator Rolle an, und öffnen Sie das **Microsoft 365 Compliance Center** oder das **Microsoft 365 Security Center** > **Records Management (Preview)** > **Label Policies** Tab.
+3. Melden Sie sich bei Microsoft 365 Compliance Center mit Compliance Admin oder Security Admin Role Access an, und öffnen Sie **Microsoft 365 Compliance Center** > **Records Management (Preview)** > **Label Policies** Tab.
 
 4. Wählen `Auto-apply a label`Sie aus.
 

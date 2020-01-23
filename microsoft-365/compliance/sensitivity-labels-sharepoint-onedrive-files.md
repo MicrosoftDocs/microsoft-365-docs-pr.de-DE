@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: fea28683136ae72603b3e7a6954d7d6ecf0ffbe4
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41218585"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263337"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)
 
-Wenn Sie zuvor Sensitivitäts Bezeichnungen angewendet haben, die die Verschlüsselung in Office-Dateien in SharePoint und OneDrive gespeichert haben, konnte der Dienst den Inhalt dieser Dateien nicht verarbeiten. Die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, Suche, vertiefen und anderen kollaborativen Features funktionierte unter diesen Umständen nicht. In dieser Vorschau werden diese Funktionen aktiviert:
+Vor dieser Vorschau haben Sie bei der Anwendung von Sensitivitäts Bezeichnungen, die die Verschlüsselung in Office-Dateien in SharePoint und OneDrive gespeichert haben, den Inhalt dieser Dateien nicht verarbeiten können. Die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, Suche, vertiefen und anderen kollaborativen Features funktionierte unter diesen Umständen nicht. In dieser Vorschau werden diese Funktionen aktiviert, wenn die Verschlüsselung mit einem cloudbasierten Schlüssel angewendet wurde:
 
 - SharePoint erkennt Vertraulichkeits Bezeichnungen, die auf Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive angewendet werden. SharePoint erzwingt auch die Einstellungen, die mit den einzelnen Bezeichnungen übereinstimmen.
 
@@ -39,9 +39,16 @@ Wenn Sie zuvor Sensitivitäts Bezeichnungen angewendet haben, die die Verschlüs
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
+> [!NOTE]
+> Wenn die Verschlüsselung nicht mit einem cloudbasierten Schlüssel, sondern mit einem lokalen Schlüssel, einer wichtigen Verwaltungstopologie, die häufig als "eigenen Schlüssel halten" (Hyok), verwendet wurde, ändert sich das SharePoint-Verhalten bei dieser Vorschau nicht. 
+
 Sie können jetzt auch Vertraulichkeits Bezeichnungen auf Microsoft Teams, Office 365 Gruppen und SharePoint-Websites anwenden. Weitere Informationen zu dieser separaten Vorschau finden Sie unter [use Sensitivity Labels with Microsoft Teams, Office 365 Groups, and SharePoint Sites (Public Preview)](sensitivity-labels-teams-groups-sites.md).
 
 Sie haben jederzeit die Möglichkeit, diese Vorschau jederzeit zu deaktivieren.
+
+Sehen Sie sich das folgende Video (kein Audio) an, um diese neuen Funktionen in Aktion anzuzeigen:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 ## <a name="requirements"></a>Anforderungen
 

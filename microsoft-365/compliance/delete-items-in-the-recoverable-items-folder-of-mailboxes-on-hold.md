@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 'Für Administratoren: Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen, auch wenn das Postfach legal aufbewahrt wird. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die versehentlich in Office 365 verschüttet wurden.'
-ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: "Für Administratoren: Elemente in einem löschen \n\nder Ordner \"refundable Items\" von er für ein Exchange Online Postfach, auch wenn das Postfach legal aufbewahrt wird. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die versehentlich in Office 365 verschüttet wurden."
+ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686260"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259673"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife – Administratorhilfe
 
@@ -45,17 +45,13 @@ Der Ordner "refundable Items" für ein Exchange Online Postfach ist vorhanden, u
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-- Sie müssen in Exchange Online beide der folgenden Verwaltungsrollen zugewiesen sein, um nach Nachrichten aus dem Ordner "Wiederherstellbare Elemente" in Schritt 5 zu suchen und zu löschen.
-    
-  - **Postfachsuche** – mit dieser Rolle können Sie Postfächer in Ihrer Organisation durchsuchen. Exchange-Administratoren wird diese Rolle nicht standardmäßig zugewiesen. Um diese Rolle selbst zuzuweisen, fügen Sie sich selbst als Mitglied der Rollengruppe "Discoveryverwaltung" in Exchange Online hinzu. 
-    
-  - **Post Fach Import Export** – mit dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers löschen. Diese Rolle ist standardmäßig keiner Rollengruppe zugewiesen. Um Nachrichten aus den Postfächern von Benutzern zu löschen, können Sie die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. 
+- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe für eDiscovery-Manager sein, oder Ihnen muss die Compliancesuche-Verwaltungsrolle zugewiesen sein. Um Nachrichten löschen zu können, müssen Sie Mitglied der Rollengruppe „Organisationsverwaltung“ sein, oder Ihnen muss die Verwaltungsrolle zum Suchen und Löschen zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Das in diesem Artikel beschriebene Verfahren wird nicht für inaktive Postfächer unterstützt. Das liegt daran, dass Sie nach dem Entfernen eines Haltestatus (oder Office 365 einer Aufbewahrungsrichtlinie) nicht auf ein inaktives Postfach erneut anwenden können. Wenn Sie einen Haltebereich aus einem inaktiven Postfach entfernen, wird er in ein normales, vorläufig gelöschtes Postfach geändert und dauerhaft aus Ihrer Organisation gelöscht, nachdem es vom Assistenten für verwaltete Ordner verarbeitet wurde.
     
 - Sie können dieses Verfahren nicht für ein Postfach ausführen, das einer Office 365 Aufbewahrungsrichtlinie zugewiesen wurde, die mit einer Aufbewahrungs Sperre gesperrt wurde. Das liegt daran, dass Sie durch eine Aufbewahrungs Sperre verhindert werden, dass Sie das Postfach aus der Office 365 Aufbewahrungsrichtlinie entfernen oder ausschließen und den Assistenten für verwaltete Ordner für das Postfach deaktivieren. Weitere Informationen zum Sperren von Aufbewahrungsrichtlinien finden Sie unter [Sperren einer Aufbewahrungsrichtlinie](retention-policies.md#locking-a-retention-policy).
     
-- Wenn ein Postfach nicht in der Warteschleife abgelegt wird (oder wenn die Wiederherstellung einzelner Elemente nicht aktiviert ist), können Sie die Elemente einfach aus dem Ordner "Wiederherstellbare Elemente" löschen. Weitere Informationen zur Vorgehensweise finden Sie unter [Suchen nach und Löschen von Nachrichten ](https://go.microsoft.com/fwlink/?linkid=852453).
+- Wenn ein Postfach nicht in der Warteschleife abgelegt wird (oder wenn die Wiederherstellung einzelner Elemente nicht aktiviert ist), können Sie die Elemente einfach aus dem Ordner "Wiederherstellbare Elemente" löschen. Weitere Informationen zur Vorgehensweise finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Office 365 Organisation](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Schritt 1: Erfassen von Informationen zum Postfach
 
@@ -247,88 +243,35 @@ Nachdem Sie den Namen des eDiscovery-Falls und des Haltestatus identifiziert hab
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Schritt 4: Entfernen der Verzögerungs Sperre aus dem Postfach
 
-Nach dem Entfernen eines beliebigen haltebereichs aus einem Postfach wird der Wert der *DelayHoldApplied* -Postfacheigenschaft auf **true**festgelegt. Dies tritt auf, wenn der Assistent für verwaltete Ordner das nächste Mal das Postfach verarbeitet und erkennt, dass ein Haltebereich entfernt wurde. Dies wird als *Verzögerungs* Speicher bezeichnet und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage verzögert wird, um zu verhindern, dass Daten endgültig aus dem Postfach gelöscht werden. (Der Zweck einer Verzögerungs Sperre besteht darin, Administratoren die Möglichkeit zu geben, nach Postfachelementen zu suchen oder diese wiederherzustellen, die nach dem Entfernen eines Haltestatus gelöscht werden.)  Wenn ein Verzögerungs Speicher auf das Postfach gesetzt wird, wird das Postfach weiterhin für unbegrenzte Dauer aufbewahrt, als ob das Postfach ein Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Office 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die *DelayHoldApplied* -Eigenschaft auf **false**festgelegt wird), sodass der Haltestatus tatsächlich entfernt wird. 
+Nachdem ein Aufbewahrungs aus einem Postfach entfernt wurde, wird der Wert der *DelayHoldApplied* -oder *DelayReleaseHoldApplied* -Postfacheigenschaft auf **true**festgelegt. Dies tritt auf, wenn der Assistent für verwaltete Ordner das nächste Mal das Postfach verarbeitet und erkennt, dass ein Haltebereich entfernt wurde. Dies wird als *Verzögerungs* Speicher bezeichnet und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage verzögert wird, um zu verhindern, dass Daten endgültig aus dem Postfach gelöscht werden. (Der Zweck einer Verzögerungs Sperre besteht darin, Administratoren die Möglichkeit zu geben, nach Postfachelementen zu suchen oder diese wiederherzustellen, die nach dem Entfernen eines Haltestatus gelöscht werden.)  Wenn ein Verzögerungs Speicher auf das Postfach gesetzt wird, wird das Postfach weiterhin für unbegrenzte Dauer aufbewahrt, als ob das Postfach ein Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Office 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die *DelayHoldApplied* -oder *DelayReleaseHoldApplied* -Eigenschaft auf **false**festgelegt wird), damit der Haltestatus tatsächlich entfernt wird. Weitere Informationen zu einem Verzögerungs Speicher finden Sie im Abschnitt "Verwalten von Postfächern in Verzögerungs speichern" in [How to identify the Art of Hold in a Exchange Online Mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
-Bevor Sie Elemente in Schritt 5 löschen können, müssen Sie die Verzögerungszeit aus dem Postfach entfernen. Ermitteln Sie zunächst, ob die Verzögerungszeit auf das Postfach angewendet wird, indem Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
+Bevor Sie Elemente in Schritt 5 löschen können, müssen Sie eine Verzögerung aus dem Postfach entfernen. Ermitteln Sie zunächst, ob die Verzögerungszeit auf das Postfach angewendet wird, indem Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 ```
 
-Wenn der Wert der *DelayHoldApplied* -Eigenschaft auf **false**festgelegt ist, wurde ein Verzögerungs Speicher nicht auf das Postfach gesetzt. Sie können zu Schritt 5 wechseln und Elemente im Ordner "Wiederherstellbare Elemente" löschen.
+Wenn der Wert der *DelayHoldApplied* -oder der *DelayReleaseHoldApplied* -Eigenschaft auf **false**festgelegt ist, wurde ein Verzögerungs Speicher nicht auf das Postfach gesetzt. Sie können zu Schritt 5 wechseln und Elemente im Ordner "Wiederherstellbare Elemente" löschen.
 
-Wenn der Wert der *DelayHoldApplied* -Eigenschaft auf **true**festgelegt ist, führen Sie den folgenden Befehl aus, um die Verzögerung zu entfernen:
+Wenn der Wert der *DelayHoldApplied* -oder *DelayReleaseHoldApplied* -Eigenschaft auf **true**festgelegt ist, führen Sie einen der folgenden Befehle aus, um die Verzögerung zu entfernen:
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Beachten Sie, dass der Rolle "Legal Hold" in Exchange Online zugewiesen werden muss, um den *RemoveDelayHoldApplied* -Parameter verwenden zu können.
+Oder
+
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
+
+Beachten Sie, dass der Rolle "Legal Hold" in Exchange Online zugewiesen werden muss, um den *RemoveDelayHoldApplied* -oder *RemoveDelayReleaseHoldApplied* -Parameter zu verwenden.
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Schritt 5: Löschen von Elementen im Ordner "Wiederherstellbare Elemente"
 
-Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" mithilfe des Cmdlets [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) in Exchange Online PowerShell tatsächlich löschen. Sie haben drei Optionen, wenn Sie das Cmdlet **Search-Mailbox** ausführen. 
-  
-- Kopieren Sie Elemente vor dem Löschen in ein Zielpostfach, damit Sie die Elemente vor dem Löschen ggf. überprüfen können.
-    
-- Kopieren Sie Elemente in ein Zielpostfach, und löschen Sie Sie in demselben Befehl.
-    
-- Elemente löschen, ohne Sie in ein Zielpostfach zu kopieren. 
-    
-Beachten Sie, dass Elemente im Ordner "Wiederherstellbare Elemente" im primären Archivpostfach des Benutzers ebenfalls gelöscht werden, wenn Sie das Cmdlet **Search-Mailbox** ausführen. Um dies zu verhindern, können Sie die Option  *DoNotIncludeArchive*  einschließen. Wenn die automatisch expandierende Archivierung für das Postfach aktiviert ist, werden von dem * *-Cmdlet "Search-Mailbox * *" keine Elemente in einem zusätzlichen Archivpostfach gelöscht, wie bereits erwähnt. Weitere Informationen zum automatisch wachsenden Archiv finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
-  
-> [!NOTE]
-> Wenn Sie eine Suchabfrage (durch Verwendung des Parameters  *SearchQuery*  ) einschließen, gibt das Cmdlet **Search-Mailbox** maximal 10.000 Elemente in den Suchergebnissen zurück. Wenn Sie also eine Suchabfrage einschließen, müssen Sie den Befehl **Search-Mailbox** möglicherweise mehrere Male ausführen, um mehr als 10.000 Elemente zu löschen. 
-  
-Die folgenden Beispiele zeigen die Befehlssyntax für jede dieser Optionen. In diesen Beispielen wird `-SearchQuery size>0` der Parameterwert verwendet, mit dem alle Elemente aus allen Unterordnern im Ordner "refundable Items" gelöscht werden. Wenn Sie nur Elemente löschen müssen, die bestimmten Bedingungen entsprechen, können Sie auch den *SearchQuery* -Parameter verwenden, um andere Bedingungen anzugeben, beispielsweise den Betreff einer Nachricht oder einen Datumsbereich. Weitere Beispiele finden Sie unter [Verwenden des SearchQuery-Parameters](#other-examples-of-using-the-searchquery-parameter) . 
-  
-### <a name="example-1"></a>Beispiel 1
+Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" mithilfe der Cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch) und [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) im Security #a0 Compliance Center tatsächlich löschen. 
 
-In diesem Beispiel werden alle Elemente im Ordner "refundable Items" des Benutzers in einen Ordner im Discovery-Such Postfach Ihrer Organisation kopiert. Auf diese Weise können Sie die Elemente überprüfen, bevor Sie sie endgültig löschen.
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
-```
-
-Im vorherigen Beispiel ist es nicht erforderlich, Elemente in das Ermittlungs Such Postfach zu kopieren. Sie können Nachrichten in ein beliebiges Zielpostfach kopieren. Um jedoch den Zugriff auf potenziell vertrauliche Postfachdaten zu verhindern, wird empfohlen, Nachrichten in ein Postfach zu kopieren, das auf autorisiertes Personal beschränkt ist. Standardmäßig ist der Zugriff auf das standardmäßige Ermittlungs Such Postfach auf Mitglieder der Rollengruppe Ermittlungsverwaltung in Exchange Online beschränkt. 
-  
-### <a name="example-2"></a>Beispiel 2
-
-In diesem Beispiel werden alle Elemente im Ordner "Wiederherstellbare Elemente" des Benutzers in einen Ordner im Discovery-Such Postfach Ihrer Organisation kopiert, und anschließend werden die Elemente aus dem Ordner "Wiederherstellbare Elemente" des Benutzers gelöscht.
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
-```
-
-### <a name="example-3"></a>Beispiel 3
-
-In diesem Beispiel werden alle Elemente im Ordner "refundable Items" des Benutzers gelöscht, ohne Sie in ein Zielpostfach zu kopieren. 
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
-```
-
-### <a name="other-examples-of-using-the-searchquery-parameter"></a>Weitere Beispiele für die Verwendung des SearchQuery-Parameters
-
-Im folgenden finden Sie einige Beispiele für die Verwendung des *SearchQuery* -Parameters zum Suchen nach bestimmten Nachrichten. Wenn Sie den *SearchQuery* -Parameter verwenden, um nach bestimmten Elementen zu suchen, sollten Sie die Suchergebnisse in ein Zielpostfach kopieren, sodass Sie die Suchergebnisse überprüfen und die Abfrage gegebenenfalls überarbeiten können, bevor Sie die Ergebnisse einer Suche löschen. 
-  
-In diesem Beispiel werden Nachrichten zurückgegeben, die einen bestimmten Ausdruck im Subject-Feld enthalten.
-  
-```powershell
-SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
-```
-
-In diesem Beispiel werden Nachrichten zurückgegeben, die innerhalb des angegebenen Datumsbereichs gesendet wurden.
-  
-```powershell
-SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
-```
-
-In diesem Beispiel werden Nachrichten zurückgegeben, die an die angegebene Person gesendet wurden.
-
-```powershell
-SearchQuery 'to:garthf@alpinehouse.com'
-```
+Informationen dazu finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
 ### <a name="verify-that-items-were-deleted"></a>Überprüfen, ob Elemente gelöscht wurden
 

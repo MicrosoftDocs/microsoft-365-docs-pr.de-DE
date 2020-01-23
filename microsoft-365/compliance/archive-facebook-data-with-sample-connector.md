@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen systemeigenen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: f942df5401c14e3067d664aab41e6cac14542bc0
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+description: Administratoren können einen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
+ms.openlocfilehash: f0e7e7e040debd489e538c9075925db29bfe8f9f
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247608"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269436"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten
 
-Verwenden Sie einen Daten Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus Facebook-Geschäfts Seiten in Office 365 zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
+Verwenden Sie einen Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Daten von Facebook-Geschäfts Seiten nach Microsoft 365. Nachdem Sie den Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Microsoft 365.
 
-Nachdem Sie die Facebook-Daten importiert haben, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, [Kommunikations Konformität](communication-compliance.md)und Office 365-Aufbewahrungsrichtlinien auf die Facebook-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Facebook-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Facebook-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von Facebook-Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
+Nachdem die Facebook-Daten importiert wurden, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Kommunikations Konformität und Microsoft 365-Aufbewahrungsrichtlinien auf die Facebook-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Facebook-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Facebook-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von Facebook-Daten in Microsoft 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Voraussetzungen für das Einrichten eines Connectors für Facebook-Geschäfts Seiten
 
-Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Security #a0 Compliance Center einrichten und konfigurieren können, um Daten aus den Facebook-Geschäfts Seiten Ihrer Organisation zu importieren und zu archivieren. 
+Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Microsoft 365 Compliance Center einrichten und konfigurieren können, um Daten aus den Facebook-Geschäfts Seiten Ihrer Organisation zu importieren und zu archivieren. 
 
 - Sie benötigen ein Facebook-Konto für die Geschäfts Seiten Ihrer Organisation (Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector einrichten). Derzeit können Sie nur Daten von Facebook-Geschäfts Seiten archivieren; Sie können keine Daten aus einzelnen Facebook-Profilen archivieren.
 
@@ -40,87 +40,80 @@ Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Se
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
-- Der Benutzer, der den benutzerdefinierten Connector in der Security #a0 Compliance (in Schritt 7) einrichtet, muss die Rolle "Post Fach Import Export" in Exchange Online zugewiesen haben. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den benutzerdefinierten Connector im Microsoft 365 Compliance Center (in Schritt 5) einrichtet, muss in Exchange Online über die Rolle "Post Fach Import-Export" verfügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Schritt 1: Herunterladen des vorab erstellten Connector-App-Pakets von GitHub
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Schritt 1: Erstellen einer APP in Azure Active Directory
 
-Der erste Schritt besteht darin, den Quellcode für die vordefinierte Facebook-Connector-APP herunterzuladen, die eine Facebook-API verwendet, um eine Verbindung zu ihren Facebook-Geschäfts Seiten herzustellen und Facebook-Daten zu extrahieren, damit Sie Sie in Office 365 importieren können.
+Der erste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu registrieren. Diese APP entspricht der Webanwendungs Ressource, die Sie in Schritt 4 und Schritt 5 für den Facebook-Connector implementieren. 
 
-1. Wechseln Sie zu [dieser GitHub-Website](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases). 
-2. Wählen Sie unter der letzten Version die Datei **SampleConnector. zip** aus.
-3. Speichern Sie die ZIP-Datei an einem Speicherort auf Ihrem lokalen Computer. Sie laden diese ZIP-Datei in Schritt 4 in Azure hoch.
-
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>Schritt 2: Erstellen einer APP in Azure Active Directory
-
-Der nächste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu registrieren. Diese APP entspricht der Webanwendungs Ressource, die Sie in Schritt 4 für den Facebook-Connector implementieren. 
-
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen einer APP in Azure Active Directory](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen einer APP in Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
 
 Während des Abschlusses dieses Schritts (mit den vorherigen schrittweisen Anweisungen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden in späteren Schritten im Bereitstellungsprozess verwendet.
 
 - Aad-Anwendungs-ID
+
 - Aad-Anwendungs Geheimnis
+
 - Aad-Anwendungs-URI
+
 - Mandanten-ID
 
-## <a name="step-3-create-an-azure-storage-account"></a>Schritt 3: Erstellen eines Azure-speicherkontos
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Schritt 2: Bereitstellen des Connector-Webdiensts von GitHub in Ihrem Azure-Konto
 
-Der Facebook-Connector, den Sie für Ihre Organisation bereitstellen, lädt die Elemente von ihren Facebook-Geschäfts Seiten an den Azure-Speicherort hoch, den Sie in diesem Schritt erstellen. Nachdem Sie einen benutzerdefinierten Connector im Security #a0 Compliance Center (in Schritt 7) erstellt haben, kopiert der Office 365-Import Dienst die Facebook-Daten aus dem Azure-Speicherort in ein Postfach in Office 365. Wie zuvor im Abschnitt [Voraussetzungen](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) erläutert, benötigen Sie ein gültiges Azure-Abonnement, um ein Azure-Speicherkonto zu erstellen.
+Der nächste Schritt besteht darin, den Quellcode für die Facebook Business Pages-Connector-App bereitzustellen, mit der die Facebook-API verwendet wird, um eine Verbindung mit Ihrem Facebook-Konto herzustellen und Daten zu extrahieren, damit Sie Sie in Microsoft 365 importieren können. Der Facebook-Connector, den Sie für Ihre Organisation bereitstellen, lädt die Elemente von ihren Facebook-Geschäfts Seiten an den in diesem Schritt erstellten Azure-Speicherort hoch. Nachdem Sie einen Facebook Business Pages-Connector im Microsoft 365 Compliance Center (in Schritt 5) erstellt haben, kopiert der Import Dienst die Daten der Facebook-Geschäfts Seiten aus dem Azure-Speicherort in ein Postfach in Ihrer Microsoft 365-Organisation. Wie zuvor im Abschnitt [Voraussetzungen](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) erläutert, benötigen Sie ein gültiges Azure-Abonnement, um ein Azure-Speicherkonto zu erstellen.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen eines Azure-speicherkontos](deploy-facebook-connector.md#step-3-create-an-azure-storage-account).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Bereitstellen des Connector-Webdiensts von GitHub in Ihrem Azure-Konto](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
-Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie den generierten Verbindungszeichenfolgen-URI. Verwenden Sie diese Zeichenfolge beim Erstellen einer webapp-Ressource in Azure in Schritt 4.
+In den Schritt-für-Schritt-Anleitungen zum Ausführen dieses Schritts geben Sie die folgenden Informationen an:
 
-## <a name="step-4-create-a-web-app-resource-in-azure"></a>Schritt 4: Erstellen einer webapp-Ressource in Azure
+- APISecretKey: Sie erstellen diesen Schlüssel während des Abschlusses dieses Schritts. Sie wird in Schritt 5 verwendet.
 
-Der nächste Schritt besteht darin, eine Webanwendungs Ressource in Azure für den Facebook-Connector zu erstellen. 
+- Mandantenkennung: die Mandanten-ID Ihrer Microsoft 365-Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 1 kopiert haben.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen einer neuen webapp-Ressource in Azure](deploy-facebook-connector.md#step-4-create-a-new-web-app-resource-in-azure).
+Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Azure-App-Dienst-URL kopieren https://fbconnector.azurewebsites.net)(beispielsweise. Sie müssen diese URL verwenden, um Schritt 3, Schritt 4 und Schritt 5 abzuschließen.
 
-Während Sie die schrittweisen Anweisungen zum Ausführen dieses Schritts befolgen, geben Sie die folgenden Informationen (die Sie nach Abschluss der vorherigen Schritte in eine Textdatei kopiert haben) beim Erstellen der webapp-Ressource an.
+## <a name="step-3-register-the-web-app-on-facebook"></a>Schritt 3: Registrieren der Webanwendung auf Facebook
 
-- APISecretKey: Sie erstellen diesen Schlüssel während des Abschlusses dieses Schritts. Sie wird in Schritt 7 verwendet.
-- StorageAccountConnectionString: der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
-- Mandantenkennung: die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
+Der nächste Schritt besteht darin, eine neue APP auf Facebook zu erstellen und zu konfigurieren. Der Facebook Business Pages-Konnektor, den Sie in Schritt 5 erstellen, verwendet die Facebook-Webanwendung, um mit der Facebook-API zu interagieren und Daten von den Facebook-Geschäfts Seiten Ihrer Organisation zu erhalten.
 
-Darüber hinaus laden Sie die SampleConnector. zip-Datei (die Sie in Schritt 1 heruntergeladen haben) in diesem Schritt hoch, um den Quellcode für die Facebook-Connector-App bereitzustellen.
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Registrieren der Facebook-App](deploy-facebook-connector.md#step-3-register-the-facebook-app).
 
-Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die APP-Dienst-URL kopieren ( https://fbconnector.azurewebsites.net)beispielsweise. Sie müssen diese URL verwenden, um Schritt 5, Schritt 6 und Schritt 7 abzuschließen.
-
-## <a name="step-5-register-the-web-app-on-facebook"></a>Schritt 5: Registrieren der Webanwendung auf Facebook
-
-Der nächste Schritt besteht darin, eine neue APP auf Facebook zu erstellen und zu konfigurieren. Der benutzerdefinierte Connector, den Sie in Schritt 7 erstellen, verwendet die Facebook-Webanwendung für die Interaktion mit der Facebook-API, um Daten von den Facebook-Geschäfts Seiten Ihrer Organisation zu erhalten.
-
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Registrieren der Facebook-App](deploy-facebook-connector.md#step-5-register-the-facebook-app).
-
-Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Die Werte werden verwendet, um die Facebook-Connector-app in Schritt 6 zu konfigurieren.
+Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden verwendet, um die Facebook-Connector-app in Schritt 4 zu konfigurieren.
 
 - Facebook-Anwendungs-ID
+
 - Geheimnis der Facebook-Anwendung
+
 - Facebook webhooks – Überprüfen des Tokens
 
-## <a name="step-6-configure-the-facebook-connector-app"></a>Schritt 6: Konfigurieren der Facebook-Connector-App
+## <a name="step-4-configure-the-facebook-connector-app"></a>Schritt 4: Konfigurieren der Facebook-Connector-App
 
-Im nächsten Schritt fügen Sie der Facebook Connector-App Konfigurationseinstellungen hinzu, die Sie beim Erstellen der Azure-Webanwendung-Ressource in Schritt 4 hochgeladen haben. Gehen Sie dazu auf die Startseite Ihrer Connector-APP, und konfigurieren Sie Sie.
+Im nächsten Schritt fügen Sie der Facebook Connector-App Konfigurationseinstellungen hinzu, die Sie beim Erstellen der Azure-Webanwendung-Ressource in Schritt 1 hochgeladen haben. Gehen Sie dazu auf die Startseite Ihrer Connector-APP, und konfigurieren Sie Sie.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 6: Konfigurieren der Connector-Webanwendung](deploy-facebook-connector.md#step-6-configure-the-connector-web-app).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [configure the Facebook Connector App](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app).
 
 Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) geben Sie die folgenden Informationen an (die Sie nach Abschluss der vorherigen Schritte in eine Textdatei kopiert haben):
 
-- Facebook-Anwendungs-ID (in Schritt 5 abgerufen)
-- Geheimer Facebook-Anwendungsschlüssel (in Schritt 5 abgerufen)
-- Überprüfen des Tokens in Facebook-webhooks (in Schritt 5 erhalten)
-- Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 2 abgerufen wurde)
-- Azure Active Directory Application Secret (der in Schritt 2 abgerufene Aad-Anwendungsschlüssel)
-- Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweise`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
+- Facebook-Anwendungs-ID (in Schritt 3 abgerufen)
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center
+- Geheimer Facebook-Anwendungsschlüssel (in Schritt 3 abgerufen)
 
-Der letzte Schritt besteht darin, den benutzerdefinierten Connector im Security #a0 Compliance Center einzurichten, mit dem Daten von ihren Facebook-Geschäfts Seiten in ein angegebenes Postfach in Office 365 importiert werden. Nachdem Sie diesen Schritt ausgeführt haben, startet der Office 365-Import Dienst mit dem Importieren von Daten von ihren Facebook-Geschäfts Seiten in Office 365. 
+- Überprüfen des Tokens in Facebook-webhooks (in Schritt 3 abgerufen)
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center). 
+- Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 1 abgerufen wurde)
+
+- Azure Active Directory Application Secret (der in Schritt 1 abgerufene Aad-Anwendungsschlüssel)
+
+## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>Schritt 5: Einrichten eines Facebook Business Pages-Connectors im Microsoft 365 Compliance Center
+
+Der letzte Schritt besteht darin, den Connector im Microsoft 365 Compliance Center einzurichten, mit dem Daten von ihren Facebook-Geschäfts Seiten in ein angegebenes Postfach in Microsoft 365 importiert werden. Nachdem Sie diesen Schritt abgeschlossen haben, beginnt der Microsoft 365-Import Dienst mit dem Importieren von Daten von ihren Facebook-Geschäfts Seiten nach Microsoft 365.
+
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 5: Einrichten eines Facebook-Connectors im Microsoft 365 Compliance Center](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center). 
 
 Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) geben Sie die folgenden Informationen an (die Sie nach Abschluss der Schritte in eine Textdatei kopiert haben).
 
-- Azure-App-Dienst-URL (abgerufen in Schritt 4; Beispiel:https://fbconnector.azurewebsites.net)
-- APISecretKey (das Sie in Schritt 4 erstellt haben)
+- Aad-Anwendungs-ID (in Schritt 1 abgerufen)
+
+- Azure-App-Dienst-URL (in Schritt 1 abgerufen, beispielsweisehttps://fbconnector.azurewebsites.net)
+
+- APISecretKey (das Sie in Schritt 2 erstellt haben)

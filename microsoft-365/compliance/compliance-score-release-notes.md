@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise und bekannte Probleme für Microsoft Compliance Score (Preview), ein Feature im M365 Compliance Center, das das vereinfachen und Automatisieren von Risikobewertungen erleichtert.
-ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 370c714c927d09a16272f8ab265c7b0c4e36381a
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021931"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261869"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Versionshinweise zu Microsoft Compliance Score (Preview)
 
@@ -31,9 +31,11 @@ Compliance Score ist ein neues Feature im [Microsoft 365 Compliance Center](micr
 
 Neue vorkonfigurierte Vorlagen für Bewertungen werden in Produktion für das Kompatibilitäts Ergebnis (Preview) veröffentlicht, sobald diese verfügbar werden. Überprüfen Sie die [vollständige Liste der Vorlagen hier](compliance-score.md#templates). Zu den zuletzt hinzugefügten Vorlagen gehören:
 
-- ISO 27701:2019
+- Brasilien – allgemeine Datenschutz Gesetze (LGPD)
 - IRAP/australische Regierung ISM (Vorschau)
-
+- ISO 27701:2019
+- SOC 1
+- SOC 2
 
 ### <a name="compliance-score-relationship-to-compliance-manager"></a>Kompatibilitäts Bewertungspunkt-Beziehung zum Compliance-Manager
 

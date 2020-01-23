@@ -9,23 +9,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen systemeigenen Connector einrichten, um Twitter-Daten in Office 365 zu importieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 083c293e869cb35b428592717b7cf3810e7fea8c
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+description: Administratoren können einen systemeigenen Connector zum Importieren von Twitter-Daten in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
+ms.openlocfilehash: cba4509c9752fbfefd8aadfdeac679aa45159711
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247558"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269376"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>Einrichten eines Connectors zum Archivieren von Twitter-Daten
 
-Verwenden Sie einen Connector im Security #a0 Compliance Center in Office 365, um Daten aus Twitter zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem Twitter-Konto Ihrer Organisation her (planmäßig), konvertiert den Inhalt eines Elements in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
+Verwenden Sie einen Connector im Microsoft 365 Compliance Center, um Daten aus Twitter in Microsoft 365 zu importieren und zu archivieren. Nachdem Sie den Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem Twitter-Konto Ihrer Organisation her (planmäßig), konvertiert den Inhalt eines Elements in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Microsoft 365.
+
+Nachdem die Twitter-Daten importiert wurden, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung und Microsoft 365-Aufbewahrungsrichtlinien auf die Twitter-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Twitter-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Twitter-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Durch die Verwendung eines Connectors zum Importieren und Archivieren von Twitter-Daten in Microsoft 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
 
 Nachdem Sie Twitter-Daten importiert haben, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Kommunikations Konformität und Office 365 Aufbewahrungsrichtlinien auf die im Postfach gespeicherten Daten anwenden. Beispielsweise können Sie Twitter-Daten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von twitterdaten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Voraussetzungen für das Einrichten eines Connectors für Twitter
 
-Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Security #a0 Compliance Center einrichten und konfigurieren können, um Daten aus dem Twitter-Konto Ihrer Organisation zu importieren und zu archivieren. 
+Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Microsoft 365 Compliance Center einrichten und konfigurieren können, um Daten aus dem Twitter-Konto Ihrer Organisation zu importieren und zu archivieren.
 
 - Sie benötigen ein Twitter-Konto für Ihre Organisation; Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector einrichten.
 
@@ -40,89 +42,74 @@ Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Se
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
-- Der Benutzer, der den benutzerdefinierten Connector in der Security #a0 Compliance (in Schritt 7) einrichtet, muss die Rolle "Post Fach Import Export" in Exchange Online zugewiesen haben. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Dem Benutzer, der den Twitter Connector im Microsoft 365 Compliance Center (in Schritt 5) eingerichtet hat, muss in Exchange Online die Rolle "Post Fach Import Export" zugewiesen sein. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Schritt 1: Herunterladen des vorab erstellten Connector-App-Pakets von GitHub
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Schritt 1: Erstellen einer APP in Azure Active Directory
 
-Der erste Schritt besteht darin, den Quellcode für die Twitter-Connector-APP herunterzuladen, die eine Twitter-API verwendet, um eine Verbindung mit Ihrem Twitter-Konto herzustellen und Daten zu extrahieren, damit Sie Sie in Office 365 importieren können.
+Der erste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu registrieren. Diese APP entspricht der Webanwendungs Ressource, die Sie in Schritt 2 für den Twitter-Connector implementieren.
 
-1. Wechseln Sie zu [dieser GitHub-Website](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases). 
-2. Wählen Sie unter der letzten Version die Datei **SampleConnector. zip** aus.
-3. Speichern Sie die ZIP-Datei an einem Speicherort auf Ihrem lokalen Computer. Sie laden diese ZIP-Datei in Schritt 4 in Azure hoch.
-
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>Schritt 2: Erstellen einer APP in Azure Active Directory
-
-Der nächste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu registrieren. Diese APP entspricht der Webanwendungs Ressource, die Sie in Schritt 4 für den Twitter-Connector implementieren. 
-
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 2: Erstellen einer APP in Azure Active Directory](deploy-twitter-connector.md#step-2-create-an-app-in-azure-active-directory).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen einer APP in Azure Active Directory](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory).
 
 Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden in späteren Schritten im Bereitstellungsprozess verwendet.
 
 - Aad-Anwendungs-ID
-- Aad-Anwendungs Geheimnis
-- Aad-Anwendungs-URI
 - Mandanten-ID
 
-## <a name="step-3-create-an-azure-storage-account"></a>Schritt 3: Erstellen eines Azure-speicherkontos
+## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>Schritt 2: Bereitstellen des Connector-Webdiensts aus dem GitHub-Repository in Ihrem Azure-Konto
+
+Der nächste Schritt ist die Bereitstellung des Quellcodes für die Twitter-Connector-APP, die Twitter-API verwendet, um eine Verbindung mit Ihrem Twitter-Konto herzustellen und Daten zu extrahieren, damit Sie Sie in Microsoft 365 importieren können. Der Twitter-Connector, den Sie für Ihre Organisation bereitstellen, lädt die Elemente aus dem Twitter-Konto Ihrer Organisation an den Azure-Speicherplatz hoch, der in diesem Schritt erstellt wird. Nachdem Sie einen Twitter-Konnektor im Microsoft 365 Compliance Center (in Schritt 5) erstellt haben, kopiert der Office 365-Import Dienst die Twitter-Daten aus dem Azure-Speicherort in ein Postfach in Microsoft 365. Wie zuvor im Abschnitt [Voraussetzungen](#prerequisites-for-setting-up-a-connector-for-twitter) erläutert, benötigen Sie ein gültiges Azure-Abonnement, um ein Azure-Speicherkonto zu erstellen.
 
 Der Twitter-Konnektor, den Sie für Ihre Organisation bereitstellen, lädt die Elemente von Twitter auf den Azure-Speicherplatz hoch, den Sie in diesem Schritt erstellen. Nachdem Sie einen benutzerdefinierten Connector im Security #a0 Compliance Center (in Schritt 7) erstellt haben, kopiert der Office 365-Import Dienst die Twitter-Daten aus dem Azure-Speicherort in ein Postfach in Office 365. Wie zuvor im Abschnitt [Voraussetzungen](#prerequisites-for-setting-up-a-connector-for-twitter) erläutert, benötigen Sie ein gültiges Azure-Abonnement, um ein Azure-Speicherkonto zu erstellen.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 3: Erstellen eines Azure-speicherkontos](deploy-twitter-connector.md#step-3-create-an-azure-storage-account).
+Zur Bereitstellung des Quellcodes für die Twitter-Connector-App
 
-Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie den generierten Verbindungszeichenfolgen-URI. Verwenden Sie diese Zeichenfolge beim Erstellen einer webapp-Ressource in Azure in Schritt 4.
+1. Wechseln Sie zu [dieser GitHub-Website](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
+2. Klicken Sie auf auf Azure-Schaltfläche **Bereitstellen**
 
-## <a name="step-4-create-a-web-app-resource-in-azure"></a>Schritt 4: Erstellen einer webapp-Ressource in Azure
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Bereitstellen des Connector-Webdiensts von GitHub in Ihrem Azure-Konto](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
-Der nächste Schritt besteht darin, eine Webanwendungs Ressource in Azure für den Twitter-Connector zu erstellen. 
+Wenn Sie die schrittweisen Anleitungen zum Ausführen dieses Schritts befolgen, geben Sie die folgenden Informationen an:
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 4: Erstellen einer neuen webapp-Ressource in Azure](deploy-twitter-connector.md#step-4-create-a-new-web-app-resource-in-azure).
+- APISecretKey: Sie erstellen diesen Schlüssel während des Abschlusses dieses Schritts. Sie wird in Schritt 5 verwendet.
+- Mandantenkennung: die Mandanten-ID Ihrer Microsoft 365-Organisation, die Sie nach dem Erstellen der Twitter-app in Azure Active Directory in Schritt 1 kopiert haben.
 
-Während des Abschlusses dieses Schritts (mit den schrittweisen Anweisungen) geben Sie die folgenden Informationen (die Sie nach Abschluss der vorherigen Schritte in eine Textdatei kopiert haben) beim Erstellen der Ressource für die Webanwendung an.
+Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die APP-Dienst-URL kopieren ( https://twitterconnector.azurewebsites.net)beispielsweise. Sie müssen diese URL verwenden, um Schritt 3, Schritt 4 und Schritt 5 abzuschließen.
 
-- APISecretKey – Sie erstellen diesen Schlüssel während des Abschlusses dieses Schritts; Sie wird in Schritt 7 verwendet.
-- StorageAccountConnectionString – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
-- Mandantenkennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Twitter Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
-
-Sie können auch die SampleConnector. zip-Datei (die Sie in Schritt 1 heruntergeladen haben) in diesem Schritt hochladen, um den Quellcode für die Twitter Connector-App bereitzustellen.
-
-Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Azure-App-Dienst-URL kopieren `https://twitterconnector.azurewebsites.net`(beispielsweise). Sie müssen diese URL verwenden, um Schritt 5, Schritt 6 und Schritt 7 abzuschließen.
-
-## <a name="step-5-create-developer-app-on-twitter"></a>Schritt 5: Erstellen der Entwickler-App auf Twitter
+## <a name="step-3-create-developer-app-on-twitter"></a>Schritt 3: Erstellen der Entwickler-App auf Twitter
 
 Der nächste Schritt besteht darin, eine Entwickler-App auf Twitter zu erstellen und zu konfigurieren. Der benutzerdefinierte Connector, den Sie in Schritt 7 erstellen, verwendet die Twitter-APP für die Interaktion mit der Twitter-API, um Daten aus dem Twitter-Konto Ihrer Organisation zu erhalten.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 5: Erstellen der Twitter-APP](deploy-twitter-connector.md#step-5-create-the-twitter-app).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Create the Twitter APP](deploy-twitter-connector.md#step-3-create-the-twitter-app).
 
-Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden verwendet, um die Twitter Connector-app in Schritt 6 zu konfigurieren.
+Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden verwendet, um die Twitter Connector-app in Schritt 4 zu konfigurieren.
 
 - Twitter-API-Schlüssel
 - Geheimer Twitter-API-Schlüssel
 - Twitter-Zugriffs Token
 - Twitter-Zugriffs Token Secret
 
-## <a name="step-6-configure-the-twitter-connector-app"></a>Schritt 6: Konfigurieren der Twitter Connector-App
+## <a name="step-4-configure-the-twitter-connector-app"></a>Schritt 4: Konfigurieren der Twitter Connector-App
 
-Im nächsten Schritt fügen Sie der Twitter Connector-App Konfigurationseinstellungen hinzu, die Sie beim Erstellen der Azure-Webanwendung-Ressource in Schritt 4 hochgeladen haben. Gehen Sie dazu auf die Startseite Ihrer Connector-APP, und konfigurieren Sie Sie.
+Im nächsten Schritt fügen Sie der Twitter Connector-APP, die Sie in Schritt 2 bereitgestellt haben, Konfigurationseinstellungen hinzu. Gehen Sie dazu auf die Startseite Ihrer Connector-APP, und konfigurieren Sie Sie.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 6: Konfigurieren der Connector-Webanwendung](deploy-twitter-connector.md#step-6-configure-the-connector-web-app).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [configure the Connector Internet app](deploy-twitter-connector.md#step-4-configure-the-connector-web-app).
 
 Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anweisungen befolgen) geben Sie die folgenden Informationen an (die Sie nach Abschluss der vorherigen Schritte in eine Textdatei kopiert haben):
 
-- Twitter-API-Schlüssel (in Schritt 5 abgerufen)
-- Geheimer Twitter-API-Schlüssel (in Schritt 5 erhalten)
-- Twitter-Zugriffs Token (in Schritt 5 abgerufen)
-- Twitter-Zugriffs Token Secret (in Schritt 5 erhalten)
-- Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 2 abgerufen wurde)
-- Azure Active Directory Application Secret (der in Schritt 2 abgerufene Aad-Anwendungsschlüssel)
-- Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweise`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
+- Twitter-API-Schlüssel (in Schritt 3 abgerufen)
+- Geheimer Twitter-API-Schlüssel (in Schritt 3 abgerufen)
+- Twitter-Zugriffs Token (in Schritt 3 abgerufen)
+- Twitter-Zugriffs Token Secret (in Schritt 3 abgerufen)
+- Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 1 abgerufen wurde)
+- Azure Active Directory Application Secret (der in Schritt 1 abgerufene Aad-Anwendungsschlüssel)
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center
+## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Schritt 5: Einrichten eines Twitter-Konnektors im Microsoft 365 Compliance Center
 
-Der letzte Schritt besteht darin, den benutzerdefinierten Connector im Security #a0 Compliance Center einzurichten, mit dem Daten aus dem Twitter-Konto Ihrer Organisation in ein angegebenes Postfach in Office 365 importiert werden. Nachdem Sie diesen Schritt erfolgreich abgeschlossen haben, startet der Office 365 Import Dienst mit dem Importieren von Daten aus Twitter in Office 365. 
+Der letzte Schritt besteht darin, den Twitter-Konnektor im Microsoft 365 Compliance Center einzurichten, mit dem Daten aus dem Twitter-Konto Ihrer Organisation in ein angegebenes Postfach in Microsoft 365 importiert werden. Nachdem Sie diesen Schritt ausgeführt haben, startet der Office 365-Import Dienst mit dem Importieren von Daten aus dem Twitter-Konto Ihrer Organisation nach Microsoft 365.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security and Compliance Center](deploy-twitter-connector.md#step-7-set-up-a-custom-connector-in-the-security-and-compliance-center). 
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Einrichten eines Twitter-Konnektors im Microsoft 365 Compliance Center](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
 
 Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anweisungen befolgen) geben Sie die folgenden Informationen an (die Sie nach Abschluss der Schritte in eine Textdatei kopiert haben).
 
-- Azure-App-Dienst-URL (abgerufen in Schritt 4; `https://twitterconnector.azurewebsites.net`zum Beispiel)
-- APISecretKey (das Sie in Schritt 4 erstellt haben)
+- Azure-App-Dienst-URL (in Schritt 2 abgerufen, `https://twitterconnector.azurewebsites.net`beispielsweise)
+- APISecretKey (das Sie in Schritt 2 erstellt haben)
