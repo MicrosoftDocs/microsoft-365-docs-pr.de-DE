@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022021"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265893"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -51,13 +51,13 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 
 - Aktivitäten von Benutzern und Administratoren in Yammer
 
-- Aktivitäten von Benutzern und Administratoren in Microsoft Flow
+- Aktivitäten von Benutzern und Administratoren in Microsoft Power Automate
 
 - Aktivitäten von Benutzern und Administratoren in Microsoft Stream
 
 - Aktivitäten von Analysten und Administratoren in Microsoft Workplace Analytics
 
-- Aktivitäten von Benutzern und Administratoren in Microsoft PowerApps
+- Aktivitäten von Benutzern und Administratoren in Microsoft Power Apps
 
 - Aktivitäten von Benutzern und Administratoren in Microsoft Forms
 
@@ -118,7 +118,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Dynamics 365 CRM|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |eDiscovery|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Flow|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Project|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -305,7 +305,7 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Rollenverwaltungsaktivitäten](#role-administration-activities)|[Verzeichnisverwaltungsaktivitäten](#directory-administration-activities)|[eDiscovery-Aktivitäten](#ediscovery-activities)|
 |[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Yammer-Aktivitäten](#yammer-activities)|
-|[Microsoft Flow-Aktivitäten für Abläufe](#microsoft-flow-activities)|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
+|[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
 |[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
 ||||
 
@@ -770,13 +770,13 @@ In der folgenden Tabelle sind die in Yammer von Benutzern und Administratoren au
 |Datei angezeigt|FileVisited|Ein Benutzer zeigt eine Datei an.|
 ||||
 
-### <a name="microsoft-flow-activities"></a>Microsoft Flow-Aktivitäten
+### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate-Aktivitäten
 
-Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Diese Aktivitäten umfassen das Erstellen, Bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Informationen zum Überwachen von Flow-Aktivitäten finden Sie im Blog [Microsoft Flow-Überwachungsereignissen jetzt im Security and Compliance Center verfügbar](https://flow.microsoft.com/blog/security-and-compliance-center).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Power Automate (früher Microsoft Flow) durchsuchen. Diese Aktivitäten umfassen das Erstellen, Bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Informationen zum Überwachen von Power Automate-Aktivitäten finden Sie im Blog [Microsoft Flow audit events now available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center) (Microsoft Flow-Überwachungsereignissen jetzt im Security and Compliance Center verfügbar).
 
-### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps-Aktivitäten
 
-Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft PowerApps durchsuchen. Diese Aktivitäten umfassen das Erstellen, Starten und Veröffentlichen einer App. Das Zuweisen von Berechtigungen zu Apps wird ebenfalls überwacht. Eine Beschreibung aller PowerApps-Aktivitäten finden Sie unter [Aktivitätsprotokollierung für PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Power Apps durchsuchen. Diese Aktivitäten umfassen das Erstellen, Starten und Veröffentlichen einer App. Das Zuweisen von Berechtigungen zu Apps wird ebenfalls überwacht. Eine Beschreibung aller Power Apps-Aktivitäten finden Sie unter [Aktivitätsprotokollierung für Power Apps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream-Aktivitäten
 

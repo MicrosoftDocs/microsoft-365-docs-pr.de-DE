@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 300a6c5d43bdb3653426b451abb3c82709194039
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 5f22e7a1dccff1d278ee07adaa56ea7d11de4cd3
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859675"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260003"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>ISO/IEC 27018-Verhaltenskodex zum Schutz von personenbezogenen Daten in der Cloud
 
@@ -49,7 +50,8 @@ Erfahren Sie mehr über die Vorteile von ISO/IEC-27018 für die Microsoft Cloud:
 - Graph
 - Health Bot
 - Intune
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
+- Microsoft Managed Desktop
+- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Deutschland
 - OMS Service Map
@@ -67,9 +69,9 @@ Microsoft-Clouddienste und technische Commercial Support-Dienste werden einmal i
 
 ### <a name="audits-and-reports"></a>Prüfungen und Berichte
 
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft-Rechenzentren – ISO 27001- und 27018-Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft-Rechenzentren – ISO 27001- und 27018-Prüfbericht](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft-Rechenzentren – ISO 27001- und 27018-Erklärung zur Anwendbarkeit 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft-Rechenzentren – ISO 27001- und 27018-Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2078016)
+- [Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft-Rechenzentren – ISO 27001- und 27018-Prüfbericht](https://go.microsoft.com/fwlink/p/?linkid=2078020)
+- [Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft-Rechenzentren – ISO 27001- und 27018-Erklärung zur Anwendbarkeit (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 - [Azure – Deutschland ISO 27018 – Verhaltenskodex zum Schutz von personenbezogenen Daten in der Cloud – Zertifikat](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365

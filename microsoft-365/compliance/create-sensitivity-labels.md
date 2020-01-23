@@ -15,18 +15,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.
-ms.openlocfilehash: 964fd20d6ada935d2a76ca0bffccc5bf46161c58
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: bef9841da49e24a99a038e9df906d523fe40e044
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247458"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259291"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
 Um Ihre [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) zu erstellen und zu veröffentlichen, gehen Sie zu Ihrem Admin Center für Bezeichnungen, z. B. zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Sie können auch das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center verwenden.
 
 Erstellen und konfigurieren Sie zunächst die Vertraulichkeitsbezeichnungen, die Sie in Office-Anwendungen und für Dienste zur Verfügung stellen möchten. Erstellen Sie dann eine oder mehrere Bezeichnungsrichtlinien mit den von Ihnen konfigurierten Bezeichnungen und Richtlinieneinstellungen. Es ist die Bezeichnungsrichtlinie, die die Bezeichnungen und Einstellungen für die von Ihnen ausgewählten Benutzer und Standorte veröffentlicht.
+
+## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Für das Erstellen und Verwalten von Vertraulichkeitsbezeichnungen erforderliche Berechtigungen
+
+Mitglieder Ihres Complianceteams, die Vertraulichkeitsbezeichnungen erstellen, benötigen Berechtigungen für das Microsoft 365 Compliance Center, das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center. 
+
+Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diese Admin Center und kann Compliance Officer und anderen Personen Zugriff gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu erteilen. Um diesen delegierten eingeschränkten Administratorzugriff zu erhalten, tun Sie Folgendes: Gehen Sie zur Seite **Berechtigungen** des jeweiligen Admin Centers und fügen Sie dann der Rollengruppe **Compliancedatenadministrator**, **Complianceadministrator** deor **Sicherheitsadministrator** Mitglieder hinzu.
+
+Anweisungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+
+Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Bezeichnungsrichtlinien erforderlich. Sie müssen die Bezeichnungen in Apps oder Diensten nicht anwenden.
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen
 
@@ -56,17 +66,47 @@ Erstellen und konfigurieren Sie zunächst die Vertraulichkeitsbezeichnungen, die
 Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann **Bezeichnung bearbeiten** aus. Dadurch wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können. 
 
 > [!NOTE]
-> Wenn Sie eine Bezeichnung bearbeiten, die bereits mit einer Bezeichnungsrichtlinie veröffentlicht wurde, sind nach Abschluss des Assistenten keine zusätzlichen Schritte erforderlich. Sie müssen sie beispielsweise nicht zu einer neuen Bezeichnungsrichtlinie hinzufügen. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für Benutzer und Dienste repliziert wurden.
+> Wenn Sie eine Bezeichnung bearbeiten, die bereits mit einer Bezeichnungsrichtlinie veröffentlicht wurde, sind nach Abschluss des Assistenten keine zusätzlichen Schritte erforderlich. Sie brauchen sie beispielsweise keiner neuen Bezeichnungsrichtlinie hinzufügen, um die Änderungen für dieselben Benutzer verfügbar zu machen. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für Benutzer und Dienste repliziert wurden.
 
-Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in Apps oder für Services nicht zur Verfügung. Um die Bezeichnungen zu veröffentlichen, müssen sie zu einer Bezeichnungsrichtlinie hinzugefügt werden.
+Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in Apps oder für Services nicht zur Verfügung. Um die Bezeichnungen zu veröffentlichen, müssen sie [zu einer Bezeichnungsrichtlinie hinzugefügt](#publish-sensitivity-labels-by-creating-a-label-policy) werden.
 
 ### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungseinstellungen mit Office 365 Security & Compliance Center PowerShell
 
 Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
-Verwenden Sie z. B. den Parameter *LocaleSettings*, um verschiedene Sprachen für Ihre Bezeichnungsnamen und QuickInfos festzulegen. 
+Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und QuickInfo in der jeweiligen lokalen Sprache sehen. Eine Beispielkonfiguration finden Sie im folgenden Abschnitt. 
 
 Mit diesem Cmdlet können Sie auch [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) für den Azure Information Protection-Client für einheitliche Bezeichnungen festlegen. Diese erweiterten Einstellungen umfassen das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft bei Auswahl einer Bezeichnung. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungsrichtlinien](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
+
+#### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Beispielkonfiguration zur Konfiguration einer Vertraulichkeitsbezeichnung für verschiedene Sprachen
+
+Das folgende Beispiel zeigt die PowerShell-Konfiguration für eine Bezeichnung mit dem Namen "Öffentlich" mit Platzhaltertext für die QuickInfo. In diesem Beispiel ist der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch konfiguriert.
+
+Als Ergebnis dieser Konfiguration sehen Benutzer, die Office-Apps mit einer dieser Anzeigesprachen verwenden, ihre Bezeichnungsnamen und QuickInfos in derselben Sprache. Entsprechend gilt: Wenn Sie den Azure Information Protection-Client für einheitliche Bezeichnungen installiert haben, um Dateien über den Datei-Explorer Bezeichnungen zuzuweisen, werden Bezeichnungsnamen und QuickInfos für Benutzer mit diesen Sprachversionen von Windows bei Verwendung der Rechtsklick-Aktionen zum Zuweisen von Bezeichnungen in deren lokaler Sprache angezeigt.
+
+Für die zu unterstützenden Sprachen verwenden Sie die Office [Sprachen-IDs](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (auch als Sprach-Tags bezeichnet), und geben Sie Ihre eigene Übersetzung für den Bezeichnungsnamen und die QuickInfo an.
+
+Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Office 365 Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+
+```powershell
+$Languages = @("fr-fr","it-it","de-de")
+$DisplayNames=@("Publique","Publico","Oeffentlich")
+$Tooltips = @("Texte Français","Testo italiano","Deutscher text")
+$label = "Public"
+$DisplayNameLocaleSettings = [PSCustomObject]@{LocaleKey='DisplayName';
+Settings=@(
+@{key=$Languages[0];Value=$DisplayNames[0];}
+@{key=$Languages[1];Value=$DisplayNames[1];}
+@{key=$Languages[2];Value=$DisplayNames[2];})}
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress)
+$TooltipLocaleSettings = [PSCustomObject]@{LocaleKey='Tooltip';
+Settings=@(
+@{key=$Languages[0];Value=$Tooltips[0];}
+@{key=$Languages[1];Value=$Tooltips[1];}
+@{key=$Languages[2];Value=$Tooltips[2];})}
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+```
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie
 
