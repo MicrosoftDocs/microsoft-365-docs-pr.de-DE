@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 758e7d0f3e82afa6cfd4b90501bd84080d8f6303
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859685"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260013"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Verhaltenskodex für Informationssicherheitskontrollen
 
@@ -48,6 +49,7 @@ Erfahren Sie mehr über die Vorteile von ISO/IEC-27017 für die Microsoft Cloud:
 - Genomics
 - Graph
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense und Office 365 Deutschland
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
@@ -60,7 +62,7 @@ Microsoft-Clouddienste werden einmal jährlich im Rahmen des Zertifizierungsproz
 
 - [Azure ISO 27017-Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Azure ISO 27017-Bewertungsbericht](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017-Erklärung zur Anwendbarkeit](https://aka.ms/azureiso27017StatementofApplicability)
+- [Azure ISO 27017-Erklärung zur Anwendbarkeit](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Office 365 ISO 27001, 27018- und 27017-Prüfbericht](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen

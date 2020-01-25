@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center in Office 365 die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39218860"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259973"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Suchen nach und Löschen von E-Mail-Nachrichten in der Office 365-Organisation
 
@@ -39,7 +39,7 @@ Mit der Inhaltssuche in Office 365 können Sie alle Postfächer Ihrer Organisati
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe **eDiscovery-Manager** sein oder über die Verwaltungsrolle **Compliancesuche** verfügen. Um Nachrichten zu löschen, müssen Sie Mitglied der Rollengruppe **Organisationsverwaltung** sein, oder über die Verwaltungsrolle **Suchen und Löschen** verfügen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Gewähren des Zugriffs auf das Security and Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe **eDiscovery-Manager** sein oder über die Verwaltungsrolle **Compliancesuche** verfügen. Um Nachrichten zu löschen, müssen Sie Mitglied der Rollengruppe **Organisationsverwaltung** sein, oder über die Verwaltungsrolle **Suchen und Löschen** verfügen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).
     
 - Sie müssen Security & Compliance Center PowerShell verwenden, um Nachrichten zu löschen. Anweisungen zum Herstellen einer Verbindung finden Sie unter [Schritt 2](#step-2-connect-to-security--compliance-center-powershell).
     

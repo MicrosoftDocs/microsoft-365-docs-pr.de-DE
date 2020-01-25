@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Compliance-Manager ermöglicht das Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
-ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022011"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515866"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -72,13 +72,25 @@ Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Steuern automatischer Bewertungen für sichere Gäste
 
-Updates für sichere Bewertungen können für alle Aktionen automatisch aktiviert werden, können für alle Aktionen deaktiviert werden oder können durch einzelne Aktionen festgelegt werden.
+Updates für sichere Bewertungen können für alle Aktionen automatisch aktiviert, für alle Aktionen deaktiviert oder durch eine einzelne Aktion durch Ausführen der folgenden Schritte festgelegt werden.
 
 1. Melden Sie sich mit ihrem globalen Administratorkonto beim [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com) an.
 
-2. Wählen Sie in der oberen Menüleiste des Dienst Vertrauensstellungs Portals die Option **Administrator** aus, und wählen Sie dann **Einstellungen**aus.
+2. Wählen Sie in der oberen Menüleiste des Dienst Vertrauensstellungs Portals unter **Weitere**die Option **Administrator** aus, und wählen Sie dann **Einstellungen**aus.
 
-4. Wählen Sie auf der Registerkarte **sichere Punktzahl** die entsprechende Schaltfläche für die gewünschte Einstellung aus.
+3. Wählen Sie auf der Registerkarte **sichere Punktzahl** die entsprechende Schaltfläche aus, um **für alle Aktionen**aktiviert, **für alle Aktionen**oder **pro Aktion festlegen** zu deaktivieren.
+
+Wenn Sie die Option **pro Aktion festlegen auswählen,** führen Sie die folgenden zusätzlichen Schritte aus, um für einzelne Aktionen sichere Bewertungs Aktualisierungen zu aktivieren:
+
+4. Wählen Sie im oberen Menü den Eintrag **Compliance-Manager** aus (Hinweis: Wählen Sie nicht "Compliance-Manager (klassisch)") aus.
+
+5. Wählen Sie in der oberen rechten Ecke des Bildschirms **Mandantenverwaltung** aus.
+
+6. Suchen Sie im Bereich **Kundenaktionen** die gewünschte Aktion mit einem Auslassungszeichen (**..**.) unter der Spalte **betroffene Aktionen** . Klicken Sie auf die Ellipsen, und wählen Sie **Bearbeiten aus.**
+
+7. Wechseln Sie zur Option **Secure Score Continuous Update** Toggle to **on.**
+
+8. Wählen Sie **Speichern aus.** Secure Score die kontinuierliche Überwachung ist nun für diese Aktion aktiviert.
 
 **Hinweis:** Nur der globale Administrator kann automatische Updates für alle Aktionen aktivieren oder deaktivieren. Der Compliance-Manager-Administrator kann automatische Updates für einzelne Aktionen aktivieren, jedoch nicht für alle Aktionen Global.
 

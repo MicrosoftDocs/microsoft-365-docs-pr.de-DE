@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89804f5f5f10d06879effd411cec4a7c52037620
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 02cde8915691565614e3d1d04a1fc57ed9a718cb
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859795"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263327"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>Finanzaufsichtsbehörde (FSA) Dänemark
 
@@ -36,7 +37,7 @@ Richtlinien des Ministeriums für Industrie, Handel und Finanzen:
 
 ## <a name="microsoft-and-the-fsa"></a>Microsoft und die FSA
 
-Um Finanzinstitute in Dänemark beim Outsourcing von Geschäftsfunktionen in die Cloud zu unterstützen, hat Microsoft die Publikation [Eine Compliance-Checkliste für Finanzinstitute in Dänemark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362) veröffentlicht. Durch die Überprüfung und Vervollständigung der Checkliste können Finanzunternehmen Microsoft Business-Clouddienste mit der Gewissheit einführen, dass sie die geltenden gesetzlichen Anforderungen erfüllen.
+Um Finanzinstitute in Dänemark beim Outsourcing von Geschäftsfunktionen in die Cloud zu unterstützen, hat Microsoft die Publikation [Eine Compliance-Checkliste für Finanzinstitute in Dänemark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf) veröffentlicht. Durch die Überprüfung und Vervollständigung der Checkliste können Finanzunternehmen Microsoft Business Cloud Services mit der Gewissheit übernehmen, dass sie die geltenden gesetzlichen Anforderungen erfüllen.
 
 Wenn dänische Finanzinstitute Geschäftsaktivitäten auslagern, müssen sie die Anforderungen der Finanzaufsichtsbehörde (FSA) erfüllen und im Rahmen des allgemeinen Richtlinienrahmen der Europäischen Bankaufsichtsbehörde (EBA) arbeiten. Insbesondere geht es bei diesen Anforderungen darum, wie vertragliche Vereinbarungen zwischen Finanzdienstleistern und Cloud-Anbietern eine angemessene Kontrolle der Outsourcing-Aktivitäten sicherstellen können.
 

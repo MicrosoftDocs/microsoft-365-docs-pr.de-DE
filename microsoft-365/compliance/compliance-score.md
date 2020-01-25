@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Score unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
-ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261859"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515676"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft-Konformitätsbewertung (Vorschau)
 
@@ -141,4 +141,4 @@ Informationen zum [Erstellen von Gruppen im Compliance-Manager](working-with-com
 
 ## <a name="next-step-begin-setup"></a>Nächster Schritt: Setup starten
 
-Melden Sie sich an, richten Sie Berechtigungen ein, und erfahren Sie mehr über das Konformitäts Bewertungs Dashboard unter [Compliance Score Setup](compliance-score-setup.md).
+Hier erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und Updates und Dashboard-Ansichten im [Setup der Kompatibilitätsbewertung](compliance-score-setup.md)konfigurieren.

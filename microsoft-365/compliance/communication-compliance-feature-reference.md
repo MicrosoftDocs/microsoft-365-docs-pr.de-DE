@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111849"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515786"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Referenz zur Kommunikations Kompatibilitätsfunktion (Vorschau)
 
@@ -84,6 +84,16 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
     - [Benutzerdefinierter Daten-Konnektor](archiving-third-party-data.md)
 
 Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikations Konformitätsrichtlinie zuweisen können. Im Abschnitt **3rd Party sources** des Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien werden derzeit konfigurierte Connectors von Drittanbietern angezeigt.
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
+
+Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden und den Übergang zu Kommunikationsrichtlinien in Microsoft 365 planen, müssen diese wichtigen Punkte verstehen:
+
+- Beide Lösungen können nebeneinander in Ihrer Organisation verwendet werden, aber Richtlinien, die in jeder Lösung verwendet werden, müssen eindeutige Richtliniennamen aufweisen. Gruppen und benutzerdefinierte Schlüsselwörter Wörterbücher können während eines Übergangszeitraums Zwischenlösungen freigegeben werden.
+- Nachrichten, die in Office 365 Richtlinien Übereinstimmungen gespeichert wurden, können nicht in der Kommunikations Kompatibilität in Microsoft 365 verschoben oder freigegeben werden.
+- Die Überwachungslösung in Office 365 wird vollständig durch die Kommunikations kompatibilitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien in der Kommunikations Kompatibilität zu erstellen, die die gleichen Einstellungen wie die vorhandenen Aufsichtsrichtlinien aufweisen, um die neuen Untersuchungen und Korrektur Verbesserungen zu verwenden. Beim Übergang zur Kommunikations Kompatibilität in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Beaufsichtigung in Office 365 zu exportieren, wenn Sie über interne Compliance-Aufbewahrungsrichtlinien Anforderungen verfügen.
+
+Informationen zur Beaufsichtigung in Office 365 finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap) für Vorsorge Informationen.
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 
@@ -219,6 +229,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |
+| **Klassifizierungen** | Der Name der integrierten und benutzerdefinierten Klassifizierungen, die auf die Nachricht angewendet werden. Einige Beispiele sind *beleidigende Sprache*, *gezielte Belästigung*, *Profanität*, *Bedrohung*und vieles mehr.
 
 ## <a name="alert-policies"></a>Warnungsrichtlinien
 

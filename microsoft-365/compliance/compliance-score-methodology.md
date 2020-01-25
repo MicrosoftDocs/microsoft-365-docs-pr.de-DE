@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
-ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793659"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515576"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Berechnung der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
@@ -43,11 +43,13 @@ Mit der Kompatibilitätsbewertung erhalten Sie eine vordefinierte Bewertung basi
 
 ## <a name="how-compliance-score-continuously-assesses-controls"></a>So beurteilt Compliance Score kontinuierlich Steuerelemente
 
-Compliance Score scannt automatisch Ihre Microsoft 365-Umgebung und erkennt Ihre Systemeinstellungen, und aktualisiert Ihren technischen Steuerungsstatus kontinuierlich und automatisch. Wenn Sie beispielsweise die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) im Azure AD-Portal aktiviert haben, erkennt das Kompatibilitäts Ergebnis die Einstellung und gibt die Informationen in den Details des Steuerelements für den Zugriff auf die Lösung wieder. Wenn Sie sich umgekehrt nicht für MFA aktiviert haben, kennzeichnet das Konformitäts Bewertungsergebnis dies als empfohlene Aktion, die Sie ergreifen sollten.
+Compliance Score scannt automatisch Ihre Microsoft 365-Umgebung und erkennt Ihre Systemeinstellungen, und aktualisiert Ihren technischen Steuerungsstatus kontinuierlich und automatisch. Compliance Score verwendet Secure Score als das zugrunde liegende Modul, das die Überwachung ausführt. [Erfahren Sie mehr über Secure Score und wie es funktioniert](../security/mtp/microsoft-secure-score.md).
 
-Die Kompatibilitätsbewertung aktualisiert Ihren Steuerelementstatus alle 24 Stunden. Nachdem Sie eine Empfehlung zur Implementierung eines Steuerelements befolgt haben, wird der Status des Steuerelements am nächsten Tag aktualisiert.
+Ihr Steuerelementstatus wird alle 24 Stunden auf dem Dashboard für die Konformitätsbewertung aktualisiert. Nachdem Sie eine Empfehlung zur Implementierung eines Steuerelements befolgt haben, wird der Status des Steuerelements am nächsten Tag aktualisiert.
 
-Während der öffentlichen Vorschau steht eine kontinuierliche Bewertung für einen Teilsteuerelemente, jedoch nicht für alle zur Verfügung.
+Wenn Sie beispielsweise die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) im Azure AD-Portal aktivieren, erkennt die Konformitätsbewertung die Einstellung und spiegelt diese in den Details des Steuerelements für den Zugriff auf die Lösung wider. Wenn Sie sich umgekehrt nicht für MFA aktiviert haben, kennzeichnet das Konformitäts Bewertungsergebnis dies als empfohlene Aktion, die Sie ergreifen sollten.
+
+Während der öffentlichen Vorschau steht eine kontinuierliche Bewertung für einen Teil der Steuerelemente, jedoch nicht für alle zur Verfügung.
   
 ## <a name="control-types-and-points"></a>Steuerelementtypen und-Punkte
 
@@ -77,9 +79,9 @@ Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend au
 |**Typ**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
-| Vorbeugender Ermessensspielraum | 9  |
-| Detektiv erforderlich | 3  |
-| Detektiv-diskretionäres | 1  |
-| Korrektur Pflicht | 3  |
-| Korrigierendes diskretionäre | 1  |
+| Vorbeugender Ermessensspielraum | 9 |
+| Detektiv erforderlich | 3 |
+| Detektiv-diskretionäres | 1 |
+| Korrektur Pflicht | 3 |
+| Korrigierendes diskretionäre | 1 |
   

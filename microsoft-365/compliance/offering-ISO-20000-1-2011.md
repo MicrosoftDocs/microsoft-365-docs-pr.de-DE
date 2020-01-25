@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859705"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260043"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 – IT Service Management
 
@@ -37,6 +38,7 @@ Ein unabhängiges, externes Auditunternehmen führt strenge Prüfungen von Micro
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - Cloud-App-Sicherheit
 - Intune
+- Microsoft Managed Desktop
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -46,7 +48,7 @@ Ein unabhängiges, externes Auditunternehmen führt strenge Prüfungen von Micro
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
-2017 ISO 20000-1 Dokumentation für Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft Datacenter
+2017 ISO 20000-1 Dokumentation für Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft Datacenter
 
 - [Bewertungsbericht](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2077815)

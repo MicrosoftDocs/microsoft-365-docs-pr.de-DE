@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Windows 10-PCs sichern, nachdem Sie Microsoft 365 Business eingerichtet haben.
-ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 3c558132f1e370a19735a38f9caa09ddb8e1f9f4
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837319"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515586"
 ---
 # <a name="secure-windows-10-computers"></a>Sichere Windows 10-Computer
 
@@ -34,12 +34,12 @@ In diesem Video erfahren Sie, wie Sie Richtlinien zum Sichern Ihrer Windows 10-C
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="to-secure-your-windows-10-pcs"></a>So sichern Sie Ihre Windows 10-PCs
 
 1. Melden Sie sich mit ihren globalen Administratoranmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an. 
-2. Wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann unter **Sing-in und Sicherheit** **die Option Sichern Ihrer Windows 10-Computer**aus. Wählen Sie **Ansicht** für erste Schritte aus.
+2. Wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann unter **Anmeldung und Sicherheit** **die Option Sichern Ihrer Windows 10-Computer**aus. Wählen Sie **Ansicht** für erste Schritte aus.
 3. Lesen Sie auf der Seite **Ihre Windows 10-Computer sichern** alle Informationen, um zu verstehen, was Sie einschalten und welche Auswirkungen die Benutzer haben.
 
     Klicken Sie oben auf der Seite auf **Erste Schritte**.

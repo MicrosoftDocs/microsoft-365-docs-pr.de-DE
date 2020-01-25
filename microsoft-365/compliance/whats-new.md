@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: d9ef94323eb054b5f3c815b3fac114a1175d104e
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 5d9a4dbd1339fdcf44d1169e5dedc4ea5e0a9f09
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962414"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515856"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -55,6 +55,7 @@ Hier ist eine Zusammenfassung der neuen Lösungen, die Sie finden. Halten Sie Au
 |Lösungskatalog (Vorschau) <br/>|Der Lösungskatalog ist Ihr One-Stop-Shop zum entdecken, kennenlernen und schnellen Einstieg in unsere Compliance-und Risikomanagement-Lösungen. Der Katalog ist in drei Kompatibilitäts Kategorien unterteilt, die jeweils Details zu den Lösungen enthalten, aus denen sich diese Kategorie zusammensetzen kann. Zu den Kategorien gehören Informationsschutz #a0 Steuerung, Insider Risikomanagement und Ermittlungs #a1 Antwort. <br/>|[Übersicht über den Lösungskatalog (Vorschau)](microsoft-365-solution-catalog.md)|
 |Kommunikations Kompatibilität (Vorschau) <br/>|Communication Compliance ist Teil der neuen Kategorie "Insider Risikomanagement", mit der Sie Kommunikationsrisiken minimieren können, indem Sie Ihnen helfen, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu ergreifen. Die Lösung erweitert die Funktionen von Aufsichtsrichtlinien in Office 365 durch die Einführung mehrerer neuer Verbesserungen wie intelligente Vorlagen, flexible Korrektur Workflows und umsetzbare Einblicke. <br/>|[Kommunikations Kompatibilität in Microsoft 365 (Vorschau)](communication-compliance.md)|
 |Datenklassifizierung (Vorschau) <br/>|Unsere neue Daten Klassifikations Seite enthält leistungsstarke Einblicke und Tools, mit denen Sie ermitteln und bewerten können, wie vertrauliche Informationen und Beschriftungen (Aufbewahrung und Vertraulichkeit) in den Inhalten Ihrer Organisation verwendet werden. Überprüfen Sie Inhalte, die vertrauliche Informationen enthalten oder Bezeichnungen angewendet haben, bezeichnen Sie Aktivitäten in Microsoft 365-Speicherorten, erstellen Sie benutzerdefinierte vertrauliche Informationstypen und vieles mehr.<br/>|[Übersicht über die Datenklassifizierung (Vorschau)](data-classification-overview.md)|
+|Schulungsable Klassifizierungen (Vorschau) <br/>|Dieses leistungsstarke neue Tool verwendet unsere lernmaschine für Computer, um Kategorien von Inhalten in Ihrer Organisation zu identifizieren, wie regulatorische Dokumente oder Mitarbeiter Vereinbarungen. Nach der Erstellung können Klassifizierungen in mehreren Kompatibilitätslösungen verwendet werden, um verwandte Inhalte zu erkennen und zu klassifizieren, zu schützen, aufzubewahren und vieles mehr.<br/>|[Erste Schritte mit lernbaren Klassifizierungen (Vorschau)](classifier-getting-started-with.md)|
 
 #### <a name="updated-compliance-solutions"></a>Aktualisierte Kompatibilitätslösungen
 
@@ -82,7 +83,7 @@ Wenn Sie das Office 365 Security #a0 Compliance Center für Ihre Compliance-Anfo
 |Bezeichnungs Aktivitäts-Explorer|Information Governance #a0 Bezeichnungs Aktivitäts-Explorer <br/> https://protection.office.com/labelexplorer |Registerkarte "Datenklassifizierung #a0 Aktivitäts-Explorer" <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten mit beschrifteten Inhalten (Vorschau)](data-classification-activity-explorer.md)|
 |Aufbewahrungs Bezeichnungen und Bezeichnungsrichtlinien |Klassifizierung #a0 Aufbewahrungs Bezeichnungen #a1 Registerkarten Bezeichnungen und Bezeichnungsrichtlinien <br/> https://protection.office.com/retentionlabels |Registerkarten für die Informationssteuerung #a0 Bezeichnungen und Bezeichnungsrichtlinien <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](labels.md)|
 |Aufbewahrungsrichtlinien|Informationssteuerung #a0 Aufbewahrung <br/> https://protection.office.com/retention |Registerkarte "Informationssteuerung #a0 Aufbewahrung" <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)|
-|Typen vertraulicher Informationen|Klassifizierungs #a0 vertrauliche Informationstypen <br/> https://protection.office.com/sensitivetypes |Registerkarte "Datenklassifizierung #a0 vertraulichen Informationstypen" <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)|
+|Typen vertraulicher Informationen|Klassifizierungs #a0 vertrauliche Informationstypen <br/> https://protection.office.com/sensitivetypes |Registerkarte "Datenklassifizierung #a0 vertraulichen Informationstypen" <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)|
 |Vertraulichkeits Bezeichnungen und Bezeichnungsrichtlinien|Klassifikations #a0 Sensitivitäts Bezeichnungen #a1 Registerkarten Bezeichnungen und Bezeichnungsrichtlinien <br/> https://protection.office.com/sensitivity |Registerkarten für Informationsschutz #a0 Bezeichnungen und Bezeichnungsrichtlinien <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Übersicht über Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
 |Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zu diesem Zeitpunkt kann nur auf Dienst Assurance-Ressourcen im Office 365 Security #a0 Compliance Center zugegriffen werden. |[Dienst Assurance im Security #a0 Compliance Center](service-assurance.md)|
 |Aufsicht|Aufsicht <br/> https://protection.office.com/supervisoryreviewv2 |Kommunikationscompliance <br/> https://compliance.microsoft.com/supervisoryreview |[Kommunikations Kompatibilität in Microsoft 365 (Vorschau)](communication-compliance.md) |

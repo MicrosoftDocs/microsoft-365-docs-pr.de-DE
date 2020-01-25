@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804258"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259983"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -52,6 +52,7 @@ Erfahren Sie mehr über die Vorteile von SOC 1, 2, 3 für die Microsoft Cloud: [
 - Dynamics 365 und Dynamics 365 U.S. Government [detaillierte Liste](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Office 365, Office 365 U.S. Government und Office 365 U.S. Government Defense [detaillierte Liste](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer hat einen SOC 1-Bericht (Typ 1) erhalten.
 - Office 365 Deutschland
@@ -66,7 +67,8 @@ Erfahren Sie mehr über die Vorteile von SOC 1, 2, 3 für die Microsoft Cloud: [
 - Cloud-App-Sicherheit
 - Graph
 - Intune
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
+- Microsoft Managed Desktop
+- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI
 - Stream
