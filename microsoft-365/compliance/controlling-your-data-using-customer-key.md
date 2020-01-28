@@ -121,7 +121,7 @@ ms.locfileid: "38686182"
     
 4. <span data-ttu-id="40c03-185">Wählen Sie **Weitere Informationen** zu dem für Sie geltenden Angebot:</span><span class="sxs-lookup"><span data-stu-id="40c03-185">Choose **Learn More** for the offer that applies to you:</span></span> 
     
-  - <span data-ttu-id="40c03-186">**Exchange Online und Skype for Business:** Wählen Sie \*\* Weitere Informationen \*\* zum Angebot **Customer Key für Exchange**.</span><span class="sxs-lookup"><span data-stu-id="40c03-186">**Exchange Online and Skype for Business:** Choose **Learn More** on the **Customer Key for Exchange** offer.</span></span> 
+  - <span data-ttu-id="40c03-186">**Exchange Online und Skype for Business:** Wählen Sie **Weitere Informationen** zum Angebot **Customer Key für Exchange**.</span><span class="sxs-lookup"><span data-stu-id="40c03-186">**Exchange Online and Skype for Business:** Choose **Learn More** on the **Customer Key for Exchange** offer.</span></span> 
     
   - <span data-ttu-id="40c03-187">**SharePoint Online und OneDrive for Business:** Wählen Sie **Weitere Informationen** zum Angebot **Customer Key für SharePoint und OneDrive for Business**.</span><span class="sxs-lookup"><span data-stu-id="40c03-187">**SharePoint Online and OneDrive for Business:** Chose **Learn More** on the **Customer Key for SharePoint and OneDrive for Business** offer.</span></span> 
     
