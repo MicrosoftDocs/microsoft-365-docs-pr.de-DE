@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 E3 migrieren.
-ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111869"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558042"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 E3
 
@@ -48,7 +48,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 |:-------|:-----|:-----|
 | **Lokal**       | | | 
 | Windows 10    | Windows 10 Business  |    Windows 10 Enterprise E3| 
-| Office-Apps *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
+| Office-Apps *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **Apps für die Cloud-Produktivität**       | | | 
 | Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
 | Microsoft Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
@@ -77,7 +77,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |       ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | **Compliance**        | | | 
 | Unbegrenzte e-Mail-Archivierung | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
-| Der Compliance-Manager    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
+| Kompatibilitätsbewertung/Compliance-Manager   | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | eDiscovery    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | Compliance-Aufbewahrungs-und Beweissicherungsverfahren | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | Aufbewahrungstags und Aufbewahrungsrichtlinien für die Messaging-Datensatzverwaltung  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 

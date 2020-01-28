@@ -9,26 +9,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: cf0b69d691b3071ee35119f67e389e49ccbb13ad
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970331"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558612"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
 ## <a name="overview"></a>Übersicht
 
-Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center folgt e-Mail-Nachrichten, wenn Sie über Ihre Exchange Online Organisation Reisen. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+Die Nachrichtenablaufverfolgung im Office 365 Security #a0 Compliance Center folgt e-Mail-Nachrichten bei der Reise durch Ihre Exchange Online Organisation. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+
+Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert sich auf die ursprüngliche Nachrichtenablaufverfolgung, die in der Exchange-Verwaltungskonsole verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen zu den Ereignissen in Bezug auf Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 > [!NOTE]
-> Um die Nachrichtenablaufverfolgung durchführen zu können, muss der Administrator Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein.
-
-Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert die Nachrichtenablaufverfolgung, die im Exchange Admin Center (EAC) zur Verfügung stand. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen über das geschehen mit ihren Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
-
-> [!NOTE]
-> Nur die ersten 50000-Nachrichten werden in den Ergebnissen angezeigt. Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+> • Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) .) Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
@@ -63,7 +60,7 @@ Die Standardwerte sind **alle Absender** und **alle Empfänger**, aber Sie könn
 - **Für diese Personen**: Klicken Sie in dieses Feld, um einen oder mehrere Empfänger in Ihrer Organisation auszuwählen.
 
 > [!NOTE]
-> Sie können auch die e-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt (beispielsweise `*@contoso.com`), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.<br/>Sie können mehrere Absender oder Empfängerlisten durch Semikolons getrennt einfügen (`;`). Leerzeichen`\s`(), Carriage Returns (`\r`) oder Next Lines`\n`().
+> Sie können auch die e-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt (beispielsweise `*@contoso.com`), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden. <br/><br/> Sie können mehrere Absender oder Empfängerlisten durch Semikolons getrennt einfügen (`;`). Leerzeichen`\s`(), Carriage Returns (`\r`) oder Next Lines`\n`().
 
 ### <a name="time-range"></a>Zeitbereich
 
@@ -71,17 +68,17 @@ Der Standardwert ist **2 Tage**, aber Sie können Datum/Uhrzeit Bereiche von bis
 
 - Standardmäßig wählen Sie den Zeitbereich in der **Slider** -Ansicht mithilfe eines Zeitlineals aus. Sie können nur die angezeigten Tages-oder Zeiteinstellungen auswählen. Wenn Sie versuchen, einen dazwischen liegenden Wert auszuwählen, wird die Start-und endblase an die nächstgelegene angezeigte Einstellung andocken.
 
-   ![Einen Slider-Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Einen Slider-Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-   Sie können aber auch zur **benutzerdefinierten** Ansicht wechseln, in der Sie die Werte **Start Datum** und **Enddatum** (einschließlich Uhrzeiten) angeben können, und Sie können auch die **Zeitzone für den** Bereich Datum/Uhrzeit auswählen. Beachten Sie, dass die **Zeit Zonen** Einstellung sowohl für Ihre Abfrage Eingaben als auch für Ihre Abfrageergebnisse gilt.
+  Sie können aber auch zur **benutzerdefinierten** Ansicht wechseln, in der Sie die Werte **Start Datum** und **Enddatum** (einschließlich Uhrzeiten) angeben können, und Sie können auch die **Zeitzone für den** Bereich Datum/Uhrzeit auswählen. Beachten Sie, dass die **Zeit Zonen** Einstellung sowohl für Ihre Abfrage Eingaben als auch für Ihre Abfrageergebnisse gilt.
 
-   ![Ein benutzerdefinierter Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Ein benutzerdefinierter Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
-   Für mindestens 10 Tage sind die Ergebnisse sofort als **Zusammenfassungs** Bericht verfügbar. Wenn Sie einen Zeitbereich angeben, der sogar etwas größer als 10 Tage ist, werden die Ergebnisse verzögert, da Sie nur als herunterladbare CSV-Datei ( **Erweiterte Zusammenfassung** oder **Erweiterte** Berichte) verfügbar sind.
+  Für mindestens 10 Tage sind die Ergebnisse sofort als **Zusammenfassungs** Bericht verfügbar. Wenn Sie einen Zeitbereich angeben, der sogar etwas größer als 10 Tage ist, werden die Ergebnisse verzögert, da Sie nur als herunterladbare CSV-Datei ( **Erweiterte Zusammenfassung** oder **Erweiterte** Berichte) verfügbar sind.
 
-   Weitere Informationen zu den verschiedenen Berichtstypen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) in diesem Thema.
+  Weitere Informationen zu den verschiedenen Berichtstypen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) in diesem Thema.
 
-   **Hinweis**: verbesserte Zusammenfassung und erweiterte Berichte werden mithilfe von archivierten Nachrichtenablauf Verfolgungsdaten vorbereitet, und es kann bis zu mehreren Stunden dauern, bis Ihr Bericht zum Download verfügbar ist. Je nachdem, wie viele andere Administratoren auch Berichtsanforderungen zur gleichen Zeit übermittelt haben, wird möglicherweise auch eine Verzögerung festgestellt, bevor die Verarbeitung für Ihre in die Warteschlange stehende Anforderung beginnt.
+  **Hinweis**: verbesserte Zusammenfassung und erweiterte Berichte werden mithilfe von archivierten Nachrichtenablauf Verfolgungsdaten vorbereitet, und es kann bis zu mehreren Stunden dauern, bis Ihr Bericht zum Download verfügbar ist. Je nachdem, wie viele andere Administratoren auch Berichtsanforderungen zur gleichen Zeit übermittelt haben, wird möglicherweise auch eine Verzögerung festgestellt, bevor die Verarbeitung für Ihre in die Warteschlange stehende Anforderung beginnt.
 
 - Beim Speichern einer Abfrage in der **Slider** -Ansicht wird der relative Zeitbereich gespeichert (beispielsweise 3 Tage ab heute). Beim Speichern einer Abfrage in der **benutzerdefinierten** Ansicht wird der absolute Datum/Zeitbereich gespeichert (beispielsweise 2018-05-06 13:00 bis 2018-05-08 18:00).
 
@@ -129,9 +126,9 @@ Sie können die Ergebnisse nach Client-IP-Adresse einfeilen, um Hacker Computer 
 
 Die verfügbaren Berichtstypen sind:
 
-- **Zusammenfassung**: verfügbar, wenn der Zeitbereich weniger als 10 Tage beträgt und keine zusätzlichen Filteroptionen erforderlich sind. Die Ergebnisse stehen fast unmittelbar nach dem Klicken auf **Suchen**zur Verfügung.
+- **Zusammenfassung**: verfügbar, wenn der Zeitbereich weniger als 10 Tage beträgt und keine zusätzlichen Filteroptionen erforderlich sind. Die Ergebnisse stehen fast unmittelbar nach dem Klicken auf **Suchen**zur Verfügung. Der Bericht gibt bis zu 20000 Ergebnisse zurück.
 
-- **Erweiterte Zusammenfassung** oder **Erweiterung**: Diese Berichte sind nur als herunterladbare CSV-Dateien verfügbar und erfordern eine oder mehrere der folgenden Filteroptionen unabhängig vom Zeitbereich: **durch diese Personen**, **für diese Personen**oder nach **richten-ID**. Sie können Platzhalter für die Absender oder die Empfänger verwenden (beispielsweise \*@contoso. com).
+- **Erweiterte Zusammenfassung** oder **Erweiterung**: Diese Berichte sind nur als herunterladbare CSV-Dateien verfügbar und erfordern eine oder mehrere der folgenden Filteroptionen unabhängig vom Zeitbereich: **durch diese Personen**, **für diese Personen**oder nach **richten-ID**. Sie können Platzhalter für die Absender oder die Empfänger verwenden (beispielsweise \*@contoso. com). Der erweiterte Zusammenfassungsbericht gibt bis zu 50000 Ergebnisse zurück. Der erweiterte Bericht gibt bis zu 1000 Ergebnisse zurück.
 
 **Hinweise**:
 
@@ -235,7 +232,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias*@*Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -273,13 +270,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
   - `AGENT`
 
@@ -297,7 +294,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit `EXPAND` `REDIRECT`-,- `RESOLVE` und-Ereignissen verwendet, um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -315,7 +312,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Hour `mm` , = Minute `ss` , = Second `fff` , = Brüche einer Sekunde, und `Z` `Zulu`eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 

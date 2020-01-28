@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804188"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558602"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -37,7 +37,7 @@ Für kommerzielle Kunden, die in Kalifornien Geschäfte tätigen, wird Microsoft
 
 Wie in der Ost dargelegt, erfüllt Microsoft alle Gesetze und Verordnungen, die für die Online Dienste gelten, einschließlich der CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure-Entwicklungs-OPS
@@ -51,7 +51,7 @@ Wie in der Ost dargelegt, erfüllt Microsoft alle Gesetze und Verordnungen, die 
 
 Hier sind einige Schritte, die Sie ausführen können, um sich für die CCPA vorzubereiten:
 
-- Nutzen Sie die DSGVO-Bewertung im Compliance-Manager als Teil Ihres CCPA-Datenschutzprogramms.
+- Beginnen Sie mit der Nutzung der dsgvo-Bewertung in [Compliance Score](compliance-score.md) als Teil Ihres CCPA-Datenschutzprogramms.
 - Einrichten eines Prozesses zur effizienten Reaktion auf Datensubjekt-Zugriffsanforderungen (DSARs) mithilfe des Tools für Datensubjekt Anforderungen.
 - Richten Sie Etiketten und Richtlinien ein, um vertrauliche Daten mit Microsoft Information Protection zu erkennen, zu klassifizieren und zu kennzeichnen und zu schützen.
 - Verwenden Sie E-Mail-Verschlüsselungsfunktionen, um vertrauliche Informationen weiter zu kontrollieren.

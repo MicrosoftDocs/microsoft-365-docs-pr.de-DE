@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 877c0017359ab9193c4cae81cbef4240909053a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bb65745f92d1f77e6cc3224832c0a9871e567ca5
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082550"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558472"
 ---
 # <a name="generate-search-term-report-for-a-review-set"></a>Generieren eines Suchausdrucks Berichts für eine Überprüfungsgruppe
 
@@ -46,7 +46,7 @@ Wählen Sie dann bis zu drei Pivots für die Berichterstellung aus, und klicken 
 
 Pivots ist die Art und Weise, wie der Bericht organisiert wird. Sehen Sie sich das folgende Beispiel an:
 
-- Die gespeicherte Abfrage ruft 10 Dokumente ab: DOC1 Thru doc10.
+- Die gespeicherte Abfrage ruft 10 Dokumente ab: DOC1 bis doc10.
 
 - DOC1, Dokument2, doc3, doc4, doc5, doc6 und DOC7 enthalten den Begriff "eDiscovery".
 

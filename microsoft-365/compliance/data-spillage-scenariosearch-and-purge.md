@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie Office 365 eDiscovery-und Such Tools, um einen Vorfall zur Verschütten von Daten in Ihrer Organisation zu verwalten und zu reagieren.
-ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259421"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558362"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung
 
@@ -54,7 +54,7 @@ Hier erfahren Sie, wie Sie einen Vorfall mit Datenüberlauf verwalten:
     
 - Zum Erstellen eines Falles müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein oder Mitglied einer benutzerdefinierten Rollengruppe sein, der die Fall Verwaltungsrolle zugewiesen ist. Wenn Sie kein Mitglied sind, bitten Sie einen Office 365 Administrator, [Sie der Rollengruppe "eDiscovery-Manager" hinzuzufügen](assign-ediscovery-permissions.md).
     
-- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe für eDiscovery-Manager sein, oder Ihnen muss die Compliancesuche-Verwaltungsrolle zugewiesen sein. Um Nachrichten löschen zu können, müssen Sie Mitglied der Rollengruppe „Organisationsverwaltung“ sein, oder Ihnen muss die Verwaltungsrolle zum Suchen und Löschen zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe für eDiscovery-Manager sein, oder Ihnen muss die Compliancesuche-Verwaltungsrolle zugewiesen sein. Um Nachrichten löschen zu können, müssen Sie Mitglied der Rollengruppe „Organisationsverwaltung“ sein, oder Ihnen muss die Verwaltungsrolle zum Suchen und Löschen zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Um die Office 365 Überwachungsprotokoll-eDiscovery-Aktivitäten in Schritt 8 durchsuchen zu können, muss die Überwachung für Ihre Organisation aktiviert werden. Sie können nach Aktivitäten suchen, die in den letzten 90 Tagen durchgeführt wurden. Weitere Informationen zum Aktivieren und Verwenden von Überwachung finden Sie im Abschnitt [Auditing the Data Spilling Investigation Process](#auditing-the-data-spillage-investigation-process) in Schritt 8. 
     
@@ -124,7 +124,7 @@ Sie können die Nachrichtenablaufverfolgung im Security and Compliance Center ve
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Schritt 6: Vorbereiten der Postfächer
 
-Nachdem Sie überprüft und überprüft haben, dass die Suchergebnisse nur die zu löschenden Nachrichten enthalten, müssen Sie eine Liste der e-Mail-Adressen der betroffenen Postfächer sammeln, die in Schritt 7 verwendet werden, wenn Sie den Befehl **Search-Mailbox-Option deletecontent** ausführen. Möglicherweise müssen Sie auch die Postfächer vorbereiten, bevor Sie e-Mail-Nachrichten dauerhaft löschen können, je nachdem, ob die Wiederherstellung einzelner Elemente in den Postfächern aktiviert ist, die die verschütteten Daten enthalten, oder ob sich diese Postfächer in der Warteschleife befinden.
+Nachdem Sie überprüft und überprüft haben, dass die Suchergebnisse nur die zu löschenden Nachrichten enthalten, müssen Sie eine Liste der e-Mail-Adressen der betroffenen Postfächer sammeln, die in Schritt 7 verwendet werden, wenn Sie die verschütteten Daten löschen. Möglicherweise müssen Sie auch die Postfächer vorbereiten, bevor Sie e-Mail-Nachrichten dauerhaft löschen können, je nachdem, ob die Wiederherstellung einzelner Elemente in den Postfächern aktiviert ist, die die verschütteten Daten enthalten, oder ob sich diese Postfächer in der Warteschleife befinden.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Abrufen einer Liste von Adressen von Postfächern mit verschütteten Daten
 
@@ -168,9 +168,9 @@ Stellen Sie sicher, dass das Postfach auf frühere Konfigurationen zurückgesetz
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Schritt 7: Dauerhaftes Löschen der verschütteten Daten
 
-Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage zum Auffinden von e-Mail-Nachrichten, die die verschütteten Daten enthalten, können Sie nun die verschütteten Daten endgültig löschen.  Wie bereits erläutert, müssen Sie ein Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rolle Search and Purge Management zugewiesen sein, um Nachrichten zu löschen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage zum Auffinden von e-Mail-Nachrichten, die die verschütteten Daten enthalten, können Sie nun die verschütteten Daten endgültig löschen.  Wie bereits erläutert, müssen Sie ein Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rolle Search and Purge Management zugewiesen sein, um Nachrichten zu löschen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 #a0 3 unter [Suchen und Löschen von e-Mail-Nachrichten in Ihrer Office 365 Organisation](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization) .
+Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 #a0 3 unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, stellen Sie einen Nachweis für die Löschung bereit, und überwachen
 

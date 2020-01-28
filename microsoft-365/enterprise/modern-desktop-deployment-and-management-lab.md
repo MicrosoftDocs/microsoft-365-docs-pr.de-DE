@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112509"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558582"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
@@ -56,7 +56,7 @@ Oder:
 
 ## <a name="step-by-step-labs"></a>**Schritt-für-Schritt-Übungen**
 
-Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarios, einschließlich:
+Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarien. Die Übungen wurden für die neuesten Versionen von Intune und Configuration Manager (Version 1910) aktualisiert.  
 
 ### <a name="device-and-app-readiness"></a>**Geräte- und App-Bereitschaft**
 
@@ -116,9 +116,12 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Verwaltung von Office 365 ProPlus-Updates in Configuration Manager
   - Mobile Device Management für Windows 10 mit Microsoft Intune
 
+### <a name="new-windows-virtual-desktop"></a>**NEU! Windows Virtual Desktop**
+  - Windows Virtual Desktop: Vorbereiten, Bereitstellen, Optimieren 
+
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Herunterladen des Deployment Lab Kit für Windows und Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 15. Februar 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 18. April 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>**Zusätzliche Anleitung**
 

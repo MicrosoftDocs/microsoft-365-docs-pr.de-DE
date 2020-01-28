@@ -16,28 +16,28 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfach in Office 365 erstellen, indem Sie eine Aufbewahrungsrichtlinie für halten oder Office 365 auf das Postfach anwenden und dann das entsprechende Office 365 Benutzerkonto löschen. Elemente in einem inaktiven Postfach werden für die Dauer des Haltestatus oder der Aufbewahrungsrichtlinie aufbewahrt, die auf Sie angewendet wurde, bevor Sie inaktiv gemacht wurde. Um ein inaktives Postfach endgültig zu löschen, entfernen Sie einfach die Aufbewahrungsrichtlinie.
-ms.openlocfilehash: cf2484dad9e9fda105985e9291a16a5f8a83f5c3
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b9ec4056e806211591cc4b6682b24b622302152b
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686216"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558372"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Erstellen und Verwalten inaktiver Postfächer in Office 365
 
-Office 365 ermöglicht es Ihnen, den Inhalt gelöschter Postfächer beizubehalten. Dieses Feature heißt [inaktive Postfächer](inactive-mailboxes-in-office-365.md). In inaktiven Postfächern können Sie E-Mails früherer Mitarbeiter aufbewahren, nachdem sie Ihre Organisation verlassen haben. Ein Postfach wird inaktiv, wenn ein Beweissicherungsverfahren oder eine Office 365 Aufbewahrungsrichtlinie (erstellt im Security and Compliance Center in Office 365 oder Microsoft 365) auf das Postfach angewendet wird, bevor das entsprechende Office 365 Benutzerkonto gelöscht wird. Die Inhalte eines inaktiven Postfachs werden für die Dauer der Archivierung beibehalten, die für das Postfach aktiviert wurde, bevor es inaktiv gemacht wurde. Auf diese Weise können Administratoren, Compliance Officer und Datensatzverwalter die Inhaltssuche verwenden, um die Inhalte eines inaktiven Postfachs zu durchsuchen und zu exportieren. Inaktive Postfächer können keine E-Mails empfangen und werden nicht im freigegebenen Adressbuch Ihrer Organisation oder in anderen Listen angezeigt.
+Office 365 ermöglicht es Ihnen, den Inhalt gelöschter Postfächer beizubehalten. Dieses Feature heißt [inaktive Postfächer](inactive-mailboxes-in-office-365.md). In inaktiven Postfächern können Sie E-Mails früherer Mitarbeiter aufbewahren, nachdem sie Ihre Organisation verlassen haben. Ein Postfach wird inaktiv, wenn ein Beweissicherungsverfahren oder eine Office 365 Aufbewahrungsrichtlinie (erstellt im Security and Compliance Center in Office 365 oder Microsoft 365) auf das Postfach angewendet wird, bevor das entsprechende Office 365 Benutzerkonto gelöscht wird. Die Inhalte eines inaktiven Postfachs werden für die Dauer der Archivierung beibehalten, die für das Postfach aktiviert wurde, bevor es inaktiv gemacht wurde. Auf diese Weise können Administratoren, Compliance Officer und Datensatzverwalter die Inhaltssuche verwenden, um die Inhalte eines inaktiven Postfachs zu durchsuchen und zu exportieren. Inaktive Postfächer können keine E-Mails empfangen und werden im freigegebenen Adressbuch Ihrer Organisation oder in anderen Listen nicht angezeigt.
   
-> [!NOTE]
-> Wir haben den Stichtag (1. Juli 2017) zum Erstellen von neuem In-Situ-Speicher, um ein Postfach als inaktiv zu markieren, nach hinten verlegt. Ende dieses Jahres oder Anfang des nächsten Jahres können Sie keinen neuen In-Situ-Speicher in Exchange Online mehr erstellen. Es können dann nur noch das Beweissicherungsverfahren und Office 365-Aufbewahrungsrichtlinien zum Erstellen eines inaktiven Postfachs verwendet werden. Vorhandene inaktive Postfächer, die sich im In-Situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können weiterhin die In-Situ-Speicher für inaktive Postfächer verwalten. Dazu zählen das Ändern der Dauer eines In-Situ-Speichers sowie das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des In-Situ-Speichers. 
+> [!IMPORTANT]
+> Da wir weiterhin auf verschiedene Arten investieren, um Postfachinhalte beizubehalten, kündigen wir den Ruhestand von in-Place-Speicher in der Exchange-Verwaltungskonsole an. Das bedeutet, dass Sie das Beweissicherungsverfahren und Office 365 Aufbewahrungsrichtlinien verwenden sollten, um ein inaktives Postfach zu erstellen. Ab dem 1. April 2020 können Sie in Exchange Online keine neuen in-Place-Aufbewahrungsorte erstellen. Sie können jedoch weiterhin die Aufbewahrungsdauer eines in-situ-Speichers ändern, der in einem inaktiven Postfach platziert wird. Ab dem 1. Juli 2020 können Sie die Aufbewahrungsdauer jedoch nicht ändern. Sie können ein inaktives Postfach nur löschen, indem Sie den in-situ-Speicher entfernen. Vorhandene inaktive Postfächer, die sich im Compliance-Archiv befinden, werden weiterhin beibehalten, bis die Aufbewahrung aufgehoben wird. Weitere Informationen zum Ruhestand von in-Place-Archiven finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md).
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um ein Postfach inaktiv zu machen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen sein, damit ein Beweissicherungsverfahren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht wird. Exchange Online Plan 2-Lizenzen sind Teil eines Office 365 Enterprise E3-und E5-Abonnements. Wenn einem Postfach eine Exchange Online Plan 1 oder Exchange Online Kiosk Lizenz (die Teil eines Office 365 E1-und F1-Abonnements sind) zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, damit ein Haltebereich auf das Postfach b angewendet werden kann. evor es wird gelöscht. Weitere Informationen finden Sie unter [Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=286153).
-    
+
 - Die dem gelöschten Exchange Online Postfach zugeordneten Lizenzen sind verfügbar, nachdem Sie das entsprechende Office 365 Benutzerkonto gelöscht haben. Sie können [Diese Lizenzen dann einem anderen Benutzer zuweisen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
-    
+
 - Wenn ein Beweissicherungsverfahren oder eine Office 365 Aufbewahrungsrichtlinie (die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden) nicht auf ein Postfach angewendet wird, bevor es gelöscht wird, wird der Inhalt des Postfachs nicht beibehalten oder kann nicht erkannt werden. Das gelöschte Postfach kann jedoch innerhalb von 30 Tagen nach dem Löschen wiederhergestellt werden, aber das Postfach und dessen Inhalte werden nach 30 Tagen endgültig gelöscht, wenn es nicht wiederhergestellt wird.
-    
+
 - Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Weitere Informationen zu Office 365-Aufbewahrungsrichtlinien finden Sie unter [Übersicht über Aufbewahrungsrichtlinien in Office 365](retention-policies.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Erstellen eines inaktiven Postfachs
@@ -71,7 +71,7 @@ Nachdem die Archivierung für das Postfach aktiviert wurde oder eine Office 365-
 
 So zeigen Sie eine Liste der inaktiven Postfächer in Ihrer Organisation an:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an. 
+1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365-Organisation an. 
     
 2. Klicken Sie auf **Informations Verwaltungs** > **Beibehaltung**.
     
