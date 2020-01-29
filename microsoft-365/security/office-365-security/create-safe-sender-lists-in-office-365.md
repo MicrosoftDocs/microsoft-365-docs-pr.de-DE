@@ -11,36 +11,36 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie Ihre Zulassungsliste in einer Spamfilter Richtlinie im Exchange Admin Center anpassen.
-ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie die Zulassungsliste in einer Spamfilter Richtlinie anpassen.
+ms.openlocfilehash: 02457a863445cf9544f75682aa2df3bf2b7e765a
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970851"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573002"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
 
-Wenn Sie sicherstellen möchten, dass Benutzer e-Mails von einem bestimmten Absender oder Absender empfangen, weil Sie Ihnen und ihren Nachrichten Vertrauen, stehen Ihnen mehrere Methoden zur Verfügung, aus denen Sie auswählen können. Zu diesen Optionen gehören Exchange-Transport Regeln (ETRs), Outlook-sichere Absender, IP-Zulassungslisten, Absender-/Domänen Zulassungslisten für Spam Schutz.
+Wenn Sie sicherstellen möchten, dass Benutzer e-Mails von einem bestimmten Absender oder Absender empfangen, weil Sie Ihnen und ihren Nachrichten Vertrauen, stehen Ihnen mehrere Methoden zur Verfügung, aus denen Sie auswählen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, IP-Zulassungslisten, Absender-und Domänen Zulassungslisten für Spam Schutz.
 
 > [!IMPORTANT]
 > Zwar können Organisations Zulassungslisten verwendet werden, um falsch positive Ergebnisse zu beheben, dies sollte jedoch als vorübergehende Lösung betrachtet und nach Möglichkeit vermieden werden. Die Verwaltung von falsch positiven Ergebnissen mithilfe von Zulassungslisten wird nicht empfohlen, da Sie Ihre Organisation versehentlich bis hin zu Spoofing, Identitätswechsel und anderen Angriffen öffnen kann. Wenn Sie für diesen Zweck eine Zulassungsliste verwenden, müssen Sie wachsam sein und den Artikel zum [Senden von Spam-, nicht-Spam-und Phishing-Mails an Microsoft zur Analyse](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)parat halten.
 
-Die empfohlene Methode zum Konfigurieren einer Liste sicherer Absender ist die Verwendung von Exchange-Transport Regeln (ETRs), da dies die meiste Flexibilität bietet, um sicherzustellen, dass nur die richtigen Nachrichten zugelassen werden. Die e-Mail-Adresse und *domänenbasierte Zulassungslisten* für *Anti-Spam-Richtlinien* sind nicht so sicher wie *IP-Adress basierte Listen* , da Domänen einfach gefälscht werden können. Aber auch die IP-basierten Listen für Anti-Spam-Richtlinien stellen Risiken dar, da Sie es allen Domänen ermöglichen, die über diese IP gesendet werden, um die Spamfilterung zu umgehen. Achten Sie darauf, dass *alle* getroffenen Ausnahmen sorgfältig überwacht werden.
+Die empfohlene Methode zum Konfigurieren einer Liste sicherer Absender ist die Verwendung von Nachrichtenfluss Regeln, da dies die meiste Flexibilität bietet, um sicherzustellen, dass nur die richtigen Nachrichten zugelassen werden. Die e-Mail-Adresse und *domänenbasierte Zulassungslisten* für *Anti-Spam-Richtlinien* sind nicht so sicher wie *IP-Adress basierte Listen* , da Domänen einfach gefälscht werden können. Aber auch die IP-basierten Listen für Anti-Spam-Richtlinien stellen Risiken dar, da Sie es allen Domänen ermöglichen, die über diese IP gesendet werden, um die Spamfilterung zu umgehen. Achten Sie darauf, dass *alle* getroffenen Ausnahmen sorgfältig überwacht werden.
 
 > [!IMPORTANT]
 > Informationen zum Erstellen einer **Liste blockierter Absender** finden Sie [hier](create-block-sender-lists-in-office-365.md).
 
 ## <a name="options-from-most-to-least-recommended"></a>Optionen von den meisten zu den am wenigsten empfohlenen
 
-Sie sollten ihre Zulassungslisten immer einschränken, da Sie viele Sicherheitsmaßnahmen umgehen. Sie müssen alle Zulassungslisten als Bestandteil ihrer Standardwartung erneut überprüfen, damit Sie wissen, wer umgehen darf. Die Empfehlung besteht darin, nach Möglichkeit restriktiven ETRs zu verwenden.
+Sie sollten ihre Zulassungslisten immer einschränken, da Sie viele Sicherheitsmaßnahmen umgehen. Sie müssen alle Zulassungslisten als Bestandteil ihrer Standardwartung erneut überprüfen, damit Sie wissen, wer umgehen darf. Die Empfehlung besteht darin, nach Möglichkeit restriktiven Nachrichtenfluss Regeln zu verwenden.
 
-- Exchange-Transport Regeln (ETRs auch als Nachrichtenfluss Regeln bezeichnet)
+- Exchange-Nachrichtenfluss Regeln
 - Outlook-sichere Absender
 - Anti-Spam-Richtlinie: IP-Zulassungslisten
 - Anti-Spam-Richtlinie: Zulassungslisten für Absender/Domänen
 
-## <a name="using-exchange-transport-rules-etrs-to-allow-specific-senders-recommended"></a>Verwenden von Exchange-Transport Regeln (ETRs) zum Zulassen bestimmter Absender (empfohlen)
+## <a name="using-exchange-mail-flow-rules-to-allow-specific-senders-recommended"></a>Verwenden von Exchange-Nachrichtenfluss Regeln zum Zulassen bestimmter Absender (empfohlen)
 
 Um sicherzustellen, dass nur berechtigte Nachrichten in Ihrer Organisation zulässig sind, sollte die Bedingung einer der folgenden sein:
 
@@ -59,7 +59,7 @@ Die Aktion für die Regel muss diesem Muster entsprechen:
 
 1. Legen Sie die SCL-Bewertung (Spam Confidence Level) auf-1 (Spamfilterung umgehen) fest.
 
-2. Fügen Sie einen X-Header hinzu, um zu sagen, was die Regel bewirkt. Im folgenden Beispiel können Sie einen einfachen Header "X-ETR: Bypass Spam Filtering for authenticated Sender `contoso.com`" hinzufügen. Wenn Sie mehr als eine Domäne in dieser Regel haben, können Sie den Kopfzeilentext entsprechend ändern. **Wenn eine Nachricht die Filterung aufgrund eines ETR überspringt, stempelt Sie SFV: SKN in der Kopfzeile X-Forefront-Antispam-Report** (**Wenn Sie sich in einer IP-Zulassungsliste befindet, stempelt Sie auch IPV: Cal**). Dies hilft bei der Problembehandlung.
+2. Fügen Sie einen X-Header hinzu, um zu sagen, was die Regel bewirkt. Im folgenden Beispiel können Sie eine einfache Kopfzeile `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`hinzufügen. Wenn Sie mehr als eine Domäne in dieser Regel haben, können Sie den Kopfzeilentext entsprechend ändern. **Wenn eine Nachricht die Filterung aufgrund einer e-Mail-Fluss Regel überspringt, stempelt Sie SFV: SKN im X-Forefront-Antispam-Report-Header** (**Wenn Sie sich in einer IP-Zulassungsliste befindet, stempelt Sie auch IPV: Cal**). Dies hilft bei der Problembehandlung.
 
 ![GUI zur Umgehung der Spamfilterung.](../media/1-AllowList-SkipFilteringFromContoso.png)
 
@@ -70,7 +70,7 @@ Die Aktion für die Regel muss diesem Muster entsprechen:
 
 Fügen Sie keine Domänen, die Sie besitzen, oder beliebte Domänen ( `microsoft.com`beispielsweise) zur Nachrichtenfluss Regel als Bedingung hinzu. Dies wird als hohes Risiko betrachtet, da es Gelegenheiten für fehlerhafte Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden.
 
-[Klicken Sie für die Schritte zum Erstellen einer ETR, die auch als Nachrichtenfluss Regeln bezeichnet](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)werden.
+Weitere Informationen finden Sie unter [Verwenden von Nachrichtenfluss Regeln zum Festlegen der SCL-Bewertung in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Verwenden von sicheren Outlook-Absendern (Endbenutzer verwaltet)
 
@@ -78,7 +78,7 @@ Anstatt eine Adresse, eine Domäne oder eine IP-Adresse Global zu autorisieren, 
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Verwenden von IP-Zulassungslisten für Anti-Spam-Richtlinien
 
-Wenn es nicht möglich ist, ETRs zu verwenden, um einen bestimmten Absender Global zuzulassen, während die Absenderauthentifizierung überprüft wird, oder indem Sie eine Domäne und eine IP zusammenbinden, ist die nächste beste Option das Hinzufügen des Absenders zur *IP-Zulassungsliste für Anti-Spam-Richtlinien*. [Die detaillierten Schritte finden Sie unter Configure the Connection Filter Policy Document](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy). Es ist wichtig, die Liste der zulässigen IP-Adressen möglichst gering zu halten und keine IP-Adressbereiche zu verwenden. Vermeiden Sie das Hinzufügen von IP-Adressbereichen, die zu Consumer-Diensten oder gemeinsam genutzten Infrastrukturen gehören, und stellen Sie außerdem *sicher* , dass Sie die Liste der zulässigen IP-Adressen regelmäßig überprüfen und die nicht mehr benötigten entfernen.
+Wenn es nicht möglich ist, Nachrichtenfluss Regeln zu verwenden, um einen bestimmten Absender Global zuzulassen, während die Absenderauthentifizierung überprüft wird, oder indem Sie eine Domäne und eine IP zusammenbinden, ist die nächste beste Option das Hinzufügen des Absenders zur *IP-Zulassungsliste für Anti-Spam-Richtlinien*. Die detaillierten Schritte unter [Konfigurieren der Verbindungsfilter Richtlinie](configure-the-connection-filter-policy.md)finden Sie unter. Es ist wichtig, die Anzahl der zulässigen IP-Adressen auf ein Minimum zu beschränken, sodass keine gesamten IP-Adressbereiche verwendet werden. Außerdem sollten Sie keine IP-Adressbereiche hinzufügen, die zu Consumer Services oder gemeinsam genutzten Infrastrukturen gehören, und Sie sollten außerdem *sicherstellen* , dass Sie die Liste der zulässigen IP-Adressen regelmäßig überprüfen und die nicht mehr benötigten Objekte entfernen.
 
 > [!CAUTION]
 > Wenn Sie Anti-Spam Policies so konfigurieren, dass Sie nur basierend auf der IP-Adresse des Absenders zugelassen werden, wird die Spam Filterung für alle Nachrichten von dieser IP-Adresse in der Zulassungsregel übersprungen. Dies führt zu einem hohen Risiko, dass ungültige Akteure e-Mails senden, die andernfalls herausgefiltert würden. Diese Methode überspringt auch alle Spamfilterung, Absender Authentifizierungsprüfungen und die Nachricht landet im Posteingang eines Benutzers, wodurch das Risiko erhöht wird.
@@ -89,10 +89,5 @@ Die am wenigsten wünschenswerte Option besteht darin, nach Absender/Domäne zu 
 
 Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
 
-> [!CAUTION]
-> Das Konfigurieren von Antispam-Policies zum *Zulassen der Absender-zuzulassen-Domäne* führt dazu, dass Nachrichten Spam Filterung für a) Nachrichten von Absendern in der Zulassungsliste oder b) alle Absender aus einer zulässigen Domäne überspringen. Diese Methode erhöht erheblich das Risiko, dass Spammer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse imitieren), die alle Spamfilterung, Absender Authentifizierungsprüfungen überspringt und die Nachricht direkt an den Posteingang einer Person sendet.
-> 
-> Fügen Sie keine Domänen, die Sie besitzen oder beliebter `microsoft.com`Domänen (beispielsweise) zur Nachrichtenfluss Regel als Bedingung hinzu. Diese Methode wird als hohes Risiko betrachtet, da Sie Gelegenheiten für fehlerhafte Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden, wodurch das Risiko erhöht würde.
-
 > [!IMPORTANT]
-> Informationen zum Erstellen einer **Liste blockierter Absender** finden Sie [hier](create-block-sender-lists-in-office-365.md).
+> • Das Konfigurieren von Anti-Spam-Richtlinien zum *Zulassen der Absender-/Zulassungs Domäne* führt dazu, dass Nachrichten Spam Filterung für a) Nachrichten von Absendern in der Zulassungsliste oder b) alle Absender aus einer zulässigen Domäne überspringen. Diese Methode erhöht erheblich das Risiko, dass Spammer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse imitieren), die alle Spamfilterung, Absender Authentifizierungsprüfungen überspringt und die Nachricht direkt an den Posteingang einer Person sendet. <br/><br/>• Fügen Sie keine Domänen, die Sie besitzen oder beliebter `microsoft.com`Domänen (beispielsweise) zur Nachrichtenfluss Regel als Bedingung hinzu. Diese Methode wird als hohes Risiko betrachtet, da Sie Gelegenheiten für fehlerhafte Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden, wodurch das Risiko erhöht würde. <br/><br/>• Informationen zum Erstellen einer **Liste blockierter Absender** finden Sie [hier](create-block-sender-lists-in-office-365.md).

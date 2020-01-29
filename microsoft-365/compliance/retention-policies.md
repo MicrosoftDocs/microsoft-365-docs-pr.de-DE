@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 5bc131b98bbc0af5cdc9629e029c06f20a003d5f
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989600"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558592"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -116,7 +116,7 @@ Nachdem einem Postfach oder einem öffentlichen Ordner eine Aufbewahrungsrichtli
 
 Die Versionsverwaltung ist ein Feature aller Dokumentbibliotheken in SharePoint Online und in OneDrive for Business. Standardmäßig werden bei der Versionsverwaltung mindestens 500 Hauptversionen beibehalten, Sie können diese Beschränkung jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Eine Aufbewahrungsregelung (Aufbewahrungsrichtlinie, im Rahmen derer Inhalte nicht einfach nur gelöscht sondern auch aufbewahrt werden können) umfasst alle Versionen eines Dokuments in einer SharePoint-Websitesammlung oder einem OneDrive-Konto. Jedes Mal, wenn ein Dokument, das einer Aufbewahrungsregelung untersteht, bearbeitet wird, wird die bestehende Version des Dokuments in das permanente Dokumentarchiv kopiert und dort aufbewahrt. Jedes Mal, wenn ein Dokument, das einer Aufbewahrungsregelung untersteht, gelöscht wird, werden alle bestehenden Versionen in das permanente Dokumentarchiv kopiert. Vorrausetzung hierfür ist, dass die Versionsverwaltung aktiviert sein muss. Jede Version eines Dokuments im permanenten Dokumentarchiv bleibt in ihrem jeweiligen Aufbewahrungszeitraum als eigenständiges Element bestehen:
+Eine Aufbewahrungsregelung (Aufbewahrungsrichtlinie, im Rahmen derer Inhalte nicht einfach nur gelöscht sondern auch aufbewahrt werden können) umfasst alle Versionen eines Dokuments in einer SharePoint-Websitesammlung oder einem OneDrive-Konto. Wenn ein Dokument, das einer Aufbewahrungsrichtlinie untersteht, zum ersten Mal bearbeitet wird, wird eine Version des ursprünglichen Dokuments in das permanente Dokumentarchiv kopiert und dort aufbewahrt. Wenn ein Dokument, das einer Aufbewahrungsregelung untersteht, gelöscht wird, werden alle bestehenden Versionen in das permanente Dokumentarchiv kopiert. Vorrausetzung hierfür ist, dass die Versionsverwaltung aktiviert sein muss. Jede Version eines Dokuments im permanenten Dokumentarchiv bleibt in ihrem jeweiligen Aufbewahrungszeitraum als eigenständiges Element bestehen:
   
 - Wenn die Aufbewahrungsrichtlinie darauf basiert, wann der Inhalt erstellt wurde, verfügt jede Version über das gleiche Ablaufdatum wie das ursprüngliche Dokument. Das ursprüngliche Dokument und dessen Versionen laufen gleichzeitig ab.
     
@@ -193,7 +193,7 @@ Eines der leistungsstärksten Features einer Aufbewahrungsrichtlinie ist, dass s
     
 - OneDrive-Konten
     
-- Office 365-Gruppen (gilt für Inhalte in Postfach, Website, Dokumenten der Gruppe. Unterstützung für Inhalte in Planner, Yammer, CRM Microsoft Teams, PowerBI, Stream, Exchange und SharePoint-Teamwebsites wird in Kürze zur Verfügung stehen.)
+- Office 365-Gruppen (gilt für Inhalte in Postfach und zugehöriger Website der Gruppe)
     
 - Öffentliche Exchange-Ordner
     

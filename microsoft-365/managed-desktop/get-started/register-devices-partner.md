@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: ceda5765ca6450959c99222daf457cf7584401ba
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: eb7ff76ef51078e423201b41cf24780b822ba452
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074727"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572241"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Schritte für Partner zum Registrieren von Geräten
 
@@ -25,7 +25,7 @@ Bevor Sie die Registrierung für einen Kunden abschließen, müssen Sie zunächs
 Um die Registrierung für Ihren Kunden abzuschließen, erstellen Sie zunächst eine CSV-Datei.
 
 >[!NOTE]
->Für Ihre Bequemlichkeit können Sie eine [Vorlage](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx) für diese *Partner Version* der CSV-Datei herunterladen.
+>Zur Vereinfachung können Sie eine [CSV-Beispieldatei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv) für diese *Partner Version*herunterladen.
 
 Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Hersteller, Modell usw.) enthalten, aber ihre eigenen Daten für die anderen Zeilen. Wenn Sie die Vorlage verwenden, öffnen Sie Sie in einem Textbearbeitungstool wie Notepad, und lassen Sie alle Daten in Zeile 1 allein, und geben Sie nur Daten in Zeilen 2 und darunter ein. 
     

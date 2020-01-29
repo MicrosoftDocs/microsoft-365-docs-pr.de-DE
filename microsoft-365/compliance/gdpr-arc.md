@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749796"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558072"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Unterstützung des DSGVO-Programms mit Prüflisten zu den Verantwortlichkeiten
 
@@ -36,7 +37,7 @@ Es gibt einen spezifischen Leitfaden für vier Microsoft-Produkt- und Dienstfami
 - [Azure](gdpr-arc-Azure.md)
 - [Microsoft-Support und Professional Services](gdpr-arc-prof-services.md)
 
-Sie können die Elemente in dieser Checkliste mit dem [Compliance-Manager](https://servicetrust.microsoft.com/ComplianceManager)verwalten, indem Sie auf die Kontroll-ID und den Kontrolltitel unter Vom Kunden verwaltete Steuerelemente in der DSGVO-Kachel verweisen.
+Sie können die Elemente in dieser Checkliste mit [Compliance-Score](compliance-score.md) verwalten, indem Sie sich auf die „Kontroll-ID“ und den „Kontrolltitel“ unter „Vom Kunden verwaltete Steuerelemente“ in der DSGVO-Kachel beziehen.
 
 Die Prüflisten umfassen die vier grundlegenden Kategorien von Überlegungen für ein Datenschutzprogramm zur Unterstützung der DSGVO. Diese sind nachstehend aufgeführt, zusammen mit Beispielanforderungen.
 

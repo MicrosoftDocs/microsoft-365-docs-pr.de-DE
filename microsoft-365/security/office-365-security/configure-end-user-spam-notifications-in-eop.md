@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren.
-ms.openlocfilehash: ea65081b1b312af3ee15335721ec042dc9d3b1da
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 0fd58d1d59217fb25d29a550fba7e313bd53799a
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022001"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572721"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
   

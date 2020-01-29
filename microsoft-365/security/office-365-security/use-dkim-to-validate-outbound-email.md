@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: a6d45dbcb5015be1b688cad562a234c555d0ef66
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233776"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572691"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -134,7 +134,7 @@ Office 365 führt die automatische Schlüsselrotation unter Verwendung der beide
 Verwenden Sie für CNAME-Einträge das folgende Format.
 
 > [!IMPORTANT]
-> Wenn Sie zu unseren GCC High-Kunden gehören, berechnen wir _domainGuid_ anders! Anstatt den MX-Eintrag für Ihre _initialDomain_ zur Berechnung von _domainGuid_ zu suchen, wird diese direkt aus der angepassten Domäne heraus berechnet. Wenn Ihre benutzerdefinierte Domäne z. B. "contoso.com" lautet, wird Ihre "domainGuid" zu "contoso-com", wobei alle Punkte durch Bindestriche ersetzt werden. Unabhängig von dem MX-Eintrag, auf den Ihre "initialDomain" verweist, verwenden Sie also immer die oben genannte Methode, um die in den CNAME-Einträgen verwendete "domainGuid" zu berechnen.
+> Wenn Sie zu unseren GCC High-Kunden gehören, berechnen wir _domainGuid_ anders! Anstatt den MX-Eintrag für Ihre _initialDomain_ zur Berechnung von _domainGuid_ zu suchen, wird diese direkt aus der angepassten Domäne heraus berechnet. Wenn Ihre benutzerdefinierte Domäne z. B. "contoso.com" lautet, wird Ihre "domainGuid" zu "contoso-com", wobei alle Punkte durch Bindestriche ersetzt werden. Unabhängig von dem MX-Eintrag, auf den Ihre „initialDomain“ verweist, verwenden Sie also immer die oben genannte Methode, um die in den CNAME-Einträgen verwendete „domainGuid“ zu berechnen.
 
 ```text
 Host name:          selector1._domainkey

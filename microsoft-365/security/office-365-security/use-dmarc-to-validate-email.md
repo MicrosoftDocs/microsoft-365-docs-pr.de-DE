@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Office 365-Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 42238ce7d5129d933b28238f07a9e24ba05ff395
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: a812003df72cfb3697a5b114acb37aede4268b21
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515906"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572681"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Validieren von E-Mails in Office 365
 
@@ -77,7 +77,7 @@ Der DMARC-TXT-Eintrag von Microsoft sieht in etwa wie folgt aus:
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft sendet seine DMARC-Berichte an [Agari](https://agari.com), einen Drittanbieter. Agari sammelt und analysiert DMARC-Berichte. Außerdem bietet Valimail [﻿kostenlose DMARC-Überwachungsdienste für Office 365](https://go.valimail.com/microsoft.html).
+Microsoft sendet seine DMARC-Berichte an [Agari](https://agari.com), einen Drittanbieter. Agari sammelt und analysiert DMARC-Berichte. Außerdem bietet Valimail [kostenlose DMARC-Überwachungsdienste für Office 365](https://go.valimail.com/microsoft.html).
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>Implementieren von DMARC für eingehende E-Mail-Nachrichten
 <a name="implementDMARCinbound"> </a>

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können.
-ms.openlocfilehash: c1d73baef939ec69a69e63d26b7a204c353ca95a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d4e84e6a3fc1020f3eecda6eb72e3d02a9f66555
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082254"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558502"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Übersicht über Office 365 Information Protection für die DSGVO
 
@@ -41,13 +41,13 @@ Diese Lösung soll Organisationen beim Erkennen und Schützen der personenbezoge
 
 Der erste Schritt in Richtung DSGVO-Compliance ist, zu beurteilen, ob die DSGVO für Ihre Organisation zutrifft, und wenn ja, in welchem Umfang. Bei dieser Analyse wird untersucht, welche Daten in Ihrer Organisation verarbeitet und wo sie gespeichert werden.
 
-### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>Schritt 1 – Verwenden des Compliance-Managers zum Anzeigen der gesetzlichen Anforderungen und zum Nachverfolgen Ihres Fortschritts
+### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>Schritt 1 – Verwenden der Compliancebewertung zum Anzeigen der gesetzlichen Anforderungen und zum Nachverfolgen Ihres Fortschritts
 
-Der Compliance-Manager bietet Tools zum Nachverfolgen, Implementieren und Verwalten der Überwachungssteuerelemente, mit denen Ihre Organisation die Einhaltung verschiedener Standards, auch der DSGVO, leichter erreichen kann.
+Die Compliancebewertung bietet Tools zum Nachverfolgen, Implementieren und Verwalten der Überwachungssteuerelemente, mit denen Ihre Organisation die Einhaltung verschiedener Standards, auch der DSGVO, leichter erreichen kann.
 
-![Verwenden des Compliance-Managers zum Anzeigen von Anforderungen und zum Nachverfolgen des Fortschritts](Media/Overview-image1.png)
+![Verwenden von Compliancebewertung und Compliance-Manager zum Anzeigen von Anforderungen und zum Nachverfolgen des Fortschritts](Media/Overview-image1.png)
 
-Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers im Service Trust Portal](https://servicetrust.microsoft.com/ComplianceManager). 
+Weitere Informationen finden Sie unter [Compliancebewertung](compliance-score.md).
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Schritt 2 – Verwenden der Inhaltssuche und vertraulicher Informationstypen für die Suche nach personenbezogenen Daten 
 

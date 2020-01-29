@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f2eadfaf23c4485e6b50b6550f0a884690a79548
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031900"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572982"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -42,11 +42,11 @@ Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 
 Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenkopfzeilen oder das Herunterladen von e-Mail-Nachrichteninhalten, müssen Sie eine neue Rolle mit dem Namen *Preview* haben, die einer anderen geeigneten Office 365 Rollengruppe hinzugefügt wird. In der folgenden Tabelle werden die erforderlichen Rollen und Berechtigungen erläutert.
 
-|Aktivität  |Rollengruppe |Vorschau-Rolle erforderlich?  |
+|Activity  |Rollengruppe |Vorschau-Rolle erforderlich?  |
 |---------|---------|---------|
-|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen     |Globaler Office 365-Administrator <br> Sicherheitsadministrator <br> Sicherheits Leser     | Nein   |
-|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.    |Globaler Office 365-Administrator <br> Sicherheitsadministrator <br>Sicherheits Leser   |       Nein  |
-|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails     |Globaler Office 365-Administrator <br>Sicherheitsadministrator <br> Sicherheits Leser <br> Vorschau   |   Ja      |
+|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen     |Globaler Office 365-Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter     | Nein   |
+|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.    |Globaler Office 365-Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter   |       Nein  |
+|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails     |Globaler Office 365-Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau   |   Ja      |
 
 > [!NOTE]
 > *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der Office 365 globalen Administrator Rolle wird das Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Office 365 Security #a0 Compliance Center ([https://protection.office.com](https://protection.office.com)) zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md).

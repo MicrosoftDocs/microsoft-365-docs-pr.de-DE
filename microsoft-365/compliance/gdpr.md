@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749777"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557982"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -99,7 +100,7 @@ Als Datenauftragsverarbeiter stellt Microsoft sicher, dass unsere Kunden die DSG
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Prüflisten zu Rechenschaftspflicht für die DSGVO
 
-Diese [Prüflisten](gdpr-arc.md) ermöglichen einen bequemen Zugriff auf Informationen, die Sie bei der Einhaltung der DSGVO bei Verwendung von Microsoft-Produkten benötigen. Sie können die Elemente in dieser Prüfliste mit dem [Compliance-Manager](https://servicetrust.microsoft.com/ComplianceManager) verwalten, indem Sie auf die Kontroll-ID und den Kontrolltitel unter den vom Kunden verwalteten Steuerelementen in der DSGVO-Kachel verweisen.
+Diese [Prüflisten](gdpr-arc.md) ermöglichen einen bequemen Zugriff auf Informationen, die Sie bei der Einhaltung der DSGVO bei Verwendung von Microsoft-Produkten benötigen. Sie können die Elemente in dieser Prüfliste mit [Microsoft Compliance-Score](compliance-score.md) verwalten, indem Sie auf die „Kontroll-ID“ und den „Kontrolltitel“ unter den „Vom Kunden verwalteten Steuerelementen“ in der DSGVO-Kachel verweisen.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

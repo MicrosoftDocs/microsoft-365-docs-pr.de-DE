@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 34d36b6782d1f3dd8a5b12beb7be681e07518170
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676772"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558092"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Azure-Prüfliste zu den Verantwortlichkeiten für die DSGVO
 
@@ -29,9 +30,9 @@ Diese Prüfliste zu den Verantwortlichkeiten ist eine bequeme Möglichkeit, um a
 - [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) Anforderungen für die Sicherheitstechnik.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für Datenschutzanforderungen.
 
-Sie können die Elemente in dieser Checkliste mit dem Compliance-Manager [16] verwalten, indem Sie sich auf die Kontroll-ID und den Kontrolltitel unter „Vom Kunden verwaltete Steuerelemente“ in der DSGVO-Kachel beziehen. Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen Steuerelemente zu organisieren, die Microsoft Azure zur Unterstützung der DSGVO implementiert. Diese können Sie vom [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen.
+Sie können die Elemente in dieser Checkliste mit dem Compliance-Score [16] verwalten, indem Sie sich auf die „Kontroll-ID“ und den „Kontrolltitel“ unter „Vom Kunden verwaltete Steuerelemente“ in der DSGVO-Kachel beziehen. Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen Steuerelemente zu organisieren, die Microsoft Azure zur Unterstützung der DSGVO implementiert. Diese können Sie vom [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen.
 
-Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der [internen Steuerelemente zu organisieren, die Microsoft Dynamics 365 zur Unterstützung der DSGVO implementiert](https://aka.ms/GDPRControls).
+Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der [internen Steuerelemente zu organisieren, die Microsoft Dynamics 365 zur Unterstützung der DSGVO implementiert](https://aka.ms/gdprcontrols).
 
 Weitere Dokumentationen im Zusammenhang mit der DSGVO finden Sie unter [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted).
 
@@ -143,7 +144,7 @@ Weitere Dokumentationen im Zusammenhang mit der DSGVO finden Sie unter [https://
 | 13 <a name="13"> </a> | [Microsoft Azure (gesamt) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Microsoft Trust Center – Complianceangebote](offering-home.md)  |
 | 15 <a name="15"> </a> | [Datenschutz und personenbezogene Daten in Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
-| 16 <a name="16"> </a> | [Kompletter downloadbarer Azure DSGVO-Steuersatz](https://aka.ms/GDPRControls) oder über das [Compliance-Manager-Tool](https://servicetrust.microsoft.com/ComplianceManager) |
+| 16 <a name="16"> </a> | [Kompletter downloadbarer Azure DSGVO-Steuersatz](https://aka.ms/GDPRControls) oder über das [Compliance-Score](compliance-score.md) |
 | 17 <a name="17"> </a> | [Microsoft DPO Information](https://aka.ms/GDPRDPO) |
 
 ## <a name="learn-more"></a>Weitere Informationen

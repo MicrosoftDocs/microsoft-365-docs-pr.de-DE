@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959603"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558522"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>DSGVO (EU-Datenschutz-Grundverordnung)
 
@@ -37,7 +37,7 @@ Entdecken Sie Best Practices für Ihr Datenschutzprogramm, und informieren Sie s
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Wie sich Abrona mit Microsoft 365 auf die DSGVO vorbereitet
 
-Erfahren Sie, wie sich der niederländische Gesundheitsdienstleister Abrona mithilfe von Microsoft-Technologien wie Compliance-Manager und Azure Information Protection auf die DSGVO vorbereitet.
+Erfahren Sie, wie sich der niederländische Gesundheitsdienstleister Abrona mithilfe von Microsoft-Technologien wie Compliance-Score und Azure Information Protection auf die DSGVO vorbereitet.
 
 [Jetzt ansehen](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -62,11 +62,11 @@ Erfahren Sie, wie der Microsoft-Kunde INAIL die DSGVO umsetzt und dabei vertraul
 
 ### <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
 
-[Mehr erfahren](offering-iso-27701.md)
+[Weitere Informationen](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>Der Compliance-Manager
+### <a name="compliance-score"></a>Compliance-Score
 
-Verwenden Sie den [Compliance-Manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) zur kontinuierlichen Risikobewertung, erhalten Sie verwertbare Informationen und vereinfachen Sie Ihre Complianceprozesse.
+Verwenden Sie [Compliance-Score](compliance-score.md) zur kontinuierlichen Risikobewertung, erhalten Sie verwertbare Informationen und vereinfachen Sie Ihre Complianceprozesse.
 
 ### <a name="microsoft-365-compliance-center"></a>Microsoft 365 Compliance Center
 

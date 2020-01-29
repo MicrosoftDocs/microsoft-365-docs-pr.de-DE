@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
-ms.openlocfilehash: 65b9d1dd3eb1a764867103710448255be96cd183
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: b2f66e3aa275c01baf2b8bde3bcca2c3072b5443
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173511"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572701"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
 

@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 08f05939e6cd4ebdff81fb2fd2fda47bac05e882
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: c872aa647496dcd81031418c71f2bcc6728cadfa
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260033"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558542"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 – Standard für Business Continuity Management 
 
@@ -75,7 +75,7 @@ Ja. Wenn Ihr Unternehmen eine Zertifizierung nach ISO 22301 für Installationen 
 - [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Beschreibung des Microsoft Enterprise-Programms für das Geschäftskontinuitätsmanagement](https://go.microsoft.com/fwlink/p/?linkid=2092212)
-- [Compliance-Manager](https://go.microsoft.com/fwlink/p/?linkid=2092329)
+- [Compliance-Score](compliance-score.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen

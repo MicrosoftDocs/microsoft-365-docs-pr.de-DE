@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto in Office 365 erkennen und darauf reagieren.
-ms.openlocfilehash: 76ce2cd9b942403f5d25b7f356740cce6c2acad7
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971507"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572711"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
@@ -56,9 +56,11 @@ Benutzer stellen möglicherweise ungewöhnliche Aktivitäten in ihren Office 365
 
 Wenn ein Benutzer eines der oben genannten Symptome meldet, sollten Sie weitere Untersuchungen durchführen. Das Microsoft 365 Security & Compliance Center und das Azure-Portal bieten Tools, mit denen Sie die Aktivität eines Benutzerkontos untersuchen können, von dem Sie vermuten, dass es angegriffen wurde.
 
-- Office 365 Unified Audit Logs im Security & Compliance Center: Überprüfen Sie alle Aktivitäten des verdächtigen Kontos, indem Sie die Ergebnisse nach dem Datumsbereich (unmittelbar vor dem Auftreten der verdächtigen Aktivität bis zum aktuellen Datum) filtern. Filtern Sie die Aktivitäten nicht während der Suche.
+- **Office 365 Unified Audit Logs im Security & Compliance Center**: Überprüfen Sie alle Aktivitäten des verdächtigen Kontos, indem Sie die Ergebnisse nach dem Datumsbereich (unmittelbar vor dem Auftreten der verdächtigen Aktivität bis zum aktuellen Datum) filtern. Filtern Sie die Aktivitäten nicht während der Suche.
 
-- Verwenden Sie die Azure AD-Anmeldeprotokolle und andere Risikoberichte, die im Azure AD-Portal zur Verfügung stehen. Überprüfen Sie die Werte in diesen Spalten:
+- **Office 365-Administratorüberwachungsprotokolle im EAC**: In Exchange Online können Sie im Exchange Admin Center (EAC) Einträge im Administratorüberwachungsprotokoll durchsuchen und anzeigen. Im Administratorüberwachungsprotokoll werden bestimmte Aktionen aufgezeichnet, die basierend auf den jeweiligen Exchange Online PowerShell-Cmdlets von Administratoren und Benutzern mit Administratorrechten ausgeführt werden. In Einträgen im Administratorüberwachungsprotokoll finden Sie Informationen dazu, welches Cmdlet ausgeführt wurde, welche Parameter verwendet wurden, wer das Cmdlet ausgeführt hat und welche Objekte betroffen sind.
+
+- **Azure AD-Anmeldeprotokolle und andere Risikoberichte im Azure AD-Portal**: Überprüfen Sie die Werte in den folgenden Spalten:
 
   - IP-Adresse überprüfen
 
@@ -92,7 +94,7 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 - Wenn Ihre lokale Identität mit Office 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
 
 > [!TIP]
-> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen finden Sie [hier](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie [hier](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2: Entfernen Sie verdächtige E-Mail-Weiterleitungsadressen.
 

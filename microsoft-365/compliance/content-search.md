@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen nach Inhalten zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen nach Inhalten zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967518"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558402"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
@@ -35,8 +35,10 @@ Mithilfe des eDiscovery-Tools für die Inhaltssuche im Compliance Center in Offi
 - Skype for Business-Unterhaltungen
     
 - Microsoft Teams 
-    
+
 - Office 365-Gruppen
+
+- Yammer-Gruppen 
     
 Nach dem Ausführen einer Inhaltssuche werden die Anzahl der Inhaltsspeicherorte und die geschätzte Anzahl der Suchergebnisse in den Suchstatistiken angezeigt. Sie können auch schnell Statistiken anzeigen, beispielsweise zu den inhaltsspeicherorten mit den meisten Elementen, die der Suchabfrage entsprechen. Nach dem Ausführen einer Suche können Sie eine Vorschau der Ergebnisse anzeigen oder Sie auf einen lokalen Computer exportieren.
 
@@ -81,9 +83,9 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
        - **Speicherorte:** Wählen Sie die Inhaltsspeicherorte aus, die durchsucht werden sollen.
     
-      - **Alle Speicherorte:**  Wählen Sie diese Option aus, um sämtliche Inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Dazu zählen E-Mails in allen Exchange-Postfächern (einschließlich aller inaktiven Postfächer, Postfächer für alle Office 365-Gruppen, Postfächer für alle Microsoft Teams), alle Skype for Business-Unterhaltungen, alle SharePoint- und OneDrive for Business-Websites (einschließlich der Websites für alle Office 365-Gruppen und Microsoft Teams) sowie Elemente in allen öffentlichen Exchange-Ordnern.
+      - **Alle Speicherorte:**  Wählen Sie diese Option aus, um sämtliche Inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Dazu zählen E-Mails in allen Exchange-Postfächern (einschließlich aller inaktiven Postfächer, Postfächer für alle Microsoft Teams, Yammer-Gruppen und Office 365-Gruppen), alle Skype for Business-Unterhaltungen, alle SharePoint- und OneDrive for Business-Websites (einschließlich der Websites für Microsoft Teams, Yammer-Gruppen und Office 365-Gruppen) sowie Elemente in allen öffentlichen Exchange-Ordnern.
     
-      - **Bestimmte Speicherorte:**  Wählen Sie diese Option aus, um bestimmte Inhaltsspeicherorte zu durchsuchen. Sie können alle inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (z. B. alle Exchange-Postfächer oder alle SharePoint-Websites durchsuchen), oder in jedem der angezeigten Office 365-Dienste bestimmte Speicherorte durchsuchen. 
+      - **Bestimmte Speicherorte:**  Wählen Sie diese Option aus, um bestimmte Inhaltsspeicherorte zu durchsuchen. Sie können alle Inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (z. B. alle Exchange-Postfächer oder alle SharePoint-Websites durchsuchen), oder bestimmte Speicherorte in jedem der angezeigten Office 365-Dienste nach Inhalten durchsuchen. 
     
         ![Die Benutzeroberfläche zum Auswählen der Inhaltsspeicherorte, die durchsucht werden sollen](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
        > [!NOTE]
        > Wenn Sie alle Postfach-Speicherorte oder nur bestimmte Postfächer durchsuchen, werden beim Exportieren der Ergebnisse einer Inhaltssuche auch Daten aus anderen Office 365-Anwendungen, die in Benutzerpostfächern gespeichert sind, einbezogen. Diese Daten werden nicht in die geschätzten Suchergebnisse einbezogen und sind für die Vorschau nicht verfügbar. Sie in den Suchergebnisse enthalten, wenn Sie diese exportieren und herunterladen. Weitere Informationen finden Sie unter [In Exchange Online-Postfächern gespeicherte Inhalte](what-is-stored-in-exo-mailbox.md).
-
-    
+   
 6. Nachdem Sie Ihre Suchabfrage eingerichtet haben, klicken Sie auf **Speichern und ausführen**.
     
 7. Geben Sie auf der Seite **Suche speichern** einen Namen für diese Suche ein sowie eine optionale Beschreibung, durch die Sie sie leichter identifizieren können. Der Name der Suche darf in Ihrer Organisation nur einmalig vorkommen. 
@@ -176,6 +177,8 @@ Weitere Informationen zu Inhaltssuchen finden Sie in den folgenden Abschnitten.
 [Durchsuchen von OneDrive-Konten](#searching-onedrive-accounts)
   
 [Durchsuchen von Microsoft Teams and Office 365-Gruppen](#searching-microsoft-teams-and-office-365-groups)
+
+[Durchsuchen von Yammer-Gruppen](#searching-yammer-groups)
   
 [Durchsuchen von inaktiven Postfächern](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ Beachten Sie die folgenden Punkte, wenn Sie in Microsoft Teams und Office 365-Gr
 
 Bedingungen sind durch den Operator **AND** logisch mit der Schlüsselwortabfrage verknüpft. Dies bedeutet, dass ein Element sowohl der Schlüsselwortabfrage als auch der Suchbedingung entsprechen muss, damit es in den Suchergebnissen zurückgegeben wird. Weitere Informationen finden Sie im Abschnitt "Richtlinien für die Verwendung von Bedingungen" unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
+### <a name="searching-yammer-groups"></a>Durchsuchen von Yammer-Gruppen
+
+Sie können die **ItemClass**-E-Mail-Eigenschaft oder die **Typ**-Suchbedingung verwenden, um gezielt nach Unterhaltungselementen in Yammer-Gruppen zu suchen.
+
+  - Wenn Sie die **ItemClass**-Eigenschaft als Teil der Schlüsselwort-Suchabfrage verwenden möchten, können Sie im Feld **Schlüsselwort** einer Suchabfrage eine (oder alle) der folgenden Eigenschaft:Wert-Paare eingeben:
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    Sie können z. B. die folgende Suchabfrage verwenden, um Yammer-Nachrichten und -Lob-Elemente zurückzugeben:
+
+    ![Verwenden Sie die ItemClass-Eigenschaft, um nach Yammer-Elementen zu suchen](media/YammerContentSearch1.png)
+  
+  - Alternativ hierzu können Sie die **Typ**-E-Mail-Bedingung verwenden und **Yammer-Nachrichten** auswählen, um Yammer-Elemente zurückzugeben. Die folgende Suchabfrage gibt beispielsweise alle Yammer-Unterhaltungen zurück, die das Schlüsselwort "vertraulich" enthalten. 
+
+    ![Verwenden Sie die Typ-Bedingungskarte, um nach Yammer-Unterhaltungselementen zu suchen](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>Durchsuchen von inaktiven Postfächern
 
 Im Rahmen einer Inhaltssuche können auch inaktive Postfächer durchsucht werden. Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen Sie in Exchange Online PowerShell den Befehl `Get-Mailbox -InactiveMailboxOnly` aus. Alternativ können Sie im Security & Compliance Center zu **Information governance**\> **Aufbewahrung** wechseln, und dann auf **Weitere**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktive Postfächer** klicken.
@@ -321,7 +343,7 @@ Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
 - Sie können die Security & Compliance Center-PowerShell verwenden, um eine Inhaltssuche zum Durchsuchen eines inaktiven Postfachs zu erstellen. Dazu müssen Sie vor der E-Mail-Adresse des inaktiven Postfachs einen Punkt ( . ) einfügen. Mit dem folgenden Befehl wird beispielsweise eine Inhaltssuche erstellt, die ein inaktives Postfach mit der E-Mail-Adresse pavelb@contoso.onmicrosoft.com durchsucht:
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - Es wird dringend empfohlen, die Verwendung der gleichen SMTP-Adresse für ein aktives und ein inaktives Postfach zu vermeiden. Wenn eine SMTP-Adresse, die derzeit einem inaktiven Postfach zugeordnet ist, wiederverwendet werden soll, wird empfohlen, das inaktive Postfach oder dessen Inhalt in einem aktiven Postfach (bzw. im Archiv eines aktiven Postfachs) rückzuspeichern, und das inaktive Postfach anschließend zu löschen. Weitere Informationen hierzu finden Sie in einem der folgenden Beiträge:

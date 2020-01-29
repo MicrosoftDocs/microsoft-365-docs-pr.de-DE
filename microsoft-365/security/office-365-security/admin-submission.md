@@ -13,59 +13,62 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie verdächtige e-Mails, verdächtige Phishing-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien von Ihrem Office 365-Mandanten zur Überprüfung an Microsoft übermitteln.
-ms.openlocfilehash: 54cb42f8c02f2f41ad583d640a090509817911ee
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c46017becfed546557fbf59c0dbbe12e9af53aa0
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808550"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573032"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Vorgehensweise übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft für Office 365-Scans
 
-Administratoren können e-Mails mithilfe von Datei-oder Netzwerknachrichten-ID, URLs und Dateien für die Überprüfung durch Microsoft in Office 365 senden. Der Abschnitt aktualisierte Übermittlungen enthält weiterhin von Benutzern gemeldete Nachrichten und steht allen Kunden mit EoP zur Verfügung.
+Administratoren können e-Mails mithilfe von Datei-oder Netzwerknachrichten-ID, URLs und Dateien für die Überprüfung durch Microsoft in Office 365 senden.
+Der Abschnitt aktualisierte Übermittlungen enthält weiterhin von Benutzern gemeldete Nachrichten und steht allen Kunden mit EoP zur Verfügung.
 
-Wenn Sie eine e-Mail übermitteln, erhalten Sie Informationen zu allen Richtlinien, die möglicherweise die eingehenden e-Mails in ihren Mandanten zugelassen haben, sowie über die Untersuchung von URLs und Anlagen in der e-Mail. Richtlinien, die möglicherweise eine e-Mail zugelassen haben, enthalten die Liste sicherer Absender eines einzelnen Benutzers sowie Richtlinien auf Mandantenebene wie ETR-Regeln. 
+Wenn Sie eine e-Mail übermitteln, erhalten Sie Informationen zu allen Richtlinien, die möglicherweise die eingehenden e-Mails in ihren Mandanten zugelassen haben, sowie über die Untersuchung von URLs und Anlagen in der e-Mail. Richtlinien, die möglicherweise eine e-Mail erlaubt haben, enthalten die Liste sicherer Absender eines einzelnen Benutzers sowie Richtlinien auf Mandantenebene wie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln).
 
 ## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Vorgehensweise zum direkten verdächtigen von Inhalten an Microsoft für Office 365-Scans
 
-Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neue Übermittlung** in der linken oberen Ecke der Seite Übermittlungen. Ein Flyout auf der rechten Seite der Seite wird mit der Option zum Senden einer e-Mail, einer URL oder einer Datei angezeigt. 
+Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neue Übermittlung** in der linken oberen Ecke der Seite Übermittlungen. Ein Flyout auf der rechten Seite der Seite wird mit der Option zum Senden einer e-Mail, einer URL oder einer Datei angezeigt.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Senden einer fragwürdigen e-Mail an Microsoft
+
 ![Beispiel für eine e-Mail-Übermittlung](../media/submission-flyout-email.PNG)
-1. Um eine e-Mail zu senden, wählen Sie **e-Mail** und geben Sie die e-Mail- **Netzwerknachrichten-ID** an, oder laden Sie die e-Mail-Datei 
 
-2. Geben Sie die Empfänger an, für die Sie die Richtlinienüberprüfung ausführen möchten. Durch die Richtlinienüberprüfung wird ermittelt, ob die e-Mail-Überprüfung aufgrund von Richtlinien auf Benutzer-oder Mandantenebene umgangen wurde. 
+1. Um eine e-Mail zu senden, wählen Sie **e-Mail** und geben Sie die e-Mail- **Netzwerknachrichten-ID** an, oder laden Sie die e-Mail-Datei
 
-3. Geben Sie an, ob die e-Mail-Nachricht blockiert werden sollte. Wenn die e-Mail blockiert wurde, geben Sie an, ob Sie als Spam, Phishing oder Schadsoftware blockiert werden soll. Wenn Sie nicht sicher sind, welche Art Sie haben könnten, verwenden Sie Ihr Bestes Urteil.  
+2. Geben Sie die Empfänger an, für die Sie die Richtlinienüberprüfung ausführen möchten. Durch die Richtlinienüberprüfung wird ermittelt, ob die e-Mail-Überprüfung aufgrund von Richtlinien auf Benutzer-oder Mandantenebene umgangen wurde.
 
-* Wenn der Filter aufgrund von Richtlinien bei der Übermittlung umgangen wurde, werden Informationen zu dieser Richtlinie angezeigt.
+3. Geben Sie an, ob die e-Mail-Nachricht blockiert werden sollte. Wenn die e-Mail blockiert wurde, geben Sie an, ob Sie als Spam, Phishing oder Schadsoftware blockiert werden soll. Wenn Sie nicht sicher sind, welche Art Sie haben könnten, verwenden Sie Ihr Bestes Urteil.
 
-* Wenn der Filter aufgrund einer oder mehrerer Richtlinien nicht umgangen wurde, wird die Überprüfung in einigen Minuten abgeschlossen. Sie erhalten zusätzliche Informationen über die Übermittlung, indem Sie auf den Link Status klicken. Dies beinhaltet die Ergebnisse der Richtlinienüberprüfung und das Ergebnis der erneuten Überprüfung. Hinweis Dadurch wird die e-Mail-Nachricht nicht über den Office 365 ATP-voll Filter Stapel erneut ausgeführt, es wird jedoch ein partieller erneuter Scan auf der Grundlage bestimmter Attribute der e-Mail, der URL oder der Datei ausgeführt. 
+   - Wenn der Filter aufgrund von Richtlinien bei der Übermittlung umgangen wurde, werden Informationen zu dieser Richtlinie angezeigt.
+
+   - Wenn der Filter aufgrund einer oder mehrerer Richtlinien nicht umgangen wurde, wird die Überprüfung in einigen Minuten abgeschlossen. Sie erhalten zusätzliche Informationen über die Übermittlung, indem Sie auf den Link Status klicken. Dies beinhaltet die Ergebnisse der Richtlinienüberprüfung und das Ergebnis der erneuten Überprüfung. Hinweis Dadurch wird die e-Mail-Nachricht nicht über den Office 365 ATP-voll Filter Stapel erneut ausgeführt, es wird jedoch ein partieller erneuter Scan auf der Grundlage bestimmter Attribute der e-Mail, der URL oder der Datei ausgeführt.
 
 4. Klicken Sie auf die Schaltfläche **Absenden** .
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
+
 ![Beispiel für eine e-Mail-Übermittlung](../media/submission-url-flyout.png)
-1. So übermitteln Sie eine URL wählen Sie **URL** aus dem Flyout aus. Geben Sie die vollständige URL einschließlich des Protokolls (**https://**) ein. 
 
-* Wenn Sie die Option **gefiltert haben ausgewählt haben**, geben Sie an, ob die URL Phishing oder Schadsoftware ist.
+1. So übermitteln Sie eine URL wählen Sie **URL** aus dem Flyout aus. Geben Sie die vollständige URL einschließlich des Protokolls (**https://**) ein.
 
-2. Klicken Sie auf die Schaltfläche **Absenden** . 
-
-
-### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer vermuteten Datei an Microsoft
-![Beispiel für eine e-Mail-Übermittlung](../media/submission-file-flyout.PNG)
-1. Um eine Datei zu übermitteln, wählen Sie **Datei** aus dem Flyout aus, und laden Sie die Datei hoch, die Sie überprüfen möchten. 
+   Wenn Sie die Option **gefiltert haben ausgewählt haben**, geben Sie an, ob die URL Phishing oder Schadsoftware ist.
 
 2. Klicken Sie auf die Schaltfläche **Absenden** .
 
+### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer vermuteten Datei an Microsoft
+
+![Beispiel für eine e-Mail-Übermittlung](../media/submission-file-flyout.PNG)
+
+1. Um eine Datei zu übermitteln, wählen Sie **Datei** aus dem Flyout aus, und laden Sie die Datei hoch, die Sie überprüfen möchten.
+
+2. Klicken Sie auf die Schaltfläche **Absenden** .
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)
-  
-[Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
-  
-[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)
-  
 
+[Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
+
+[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)

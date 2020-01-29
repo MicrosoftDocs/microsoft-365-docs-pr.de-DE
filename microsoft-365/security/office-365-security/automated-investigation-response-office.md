@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: d36215c83c926f96b23e930f888e5c8dca40dc60
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808480"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573042"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
@@ -111,7 +111,7 @@ Sie können:
 Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Während der Untersuchung wird der Status geändert, um anzugeben, ob Bedrohungen gefunden wurden und ob Aktionen genehmigt wurden. 
 
 
-|Status  |Was das bedeutet  |
+|Status  |Bedeutung  |
 |---------|---------|
 |Wird gestartet | Die Untersuchung wird in Kürze in die Warteschlange gestellt. |
 |Wird ausgeführt | Die Untersuchung wurde gestartet und führt die Analyse aus. |
@@ -122,7 +122,7 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 |Bereinigt | Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
 |Teilweise behoben | Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
 |Vom Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
-|Failed | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
+|Fehlgeschlagen | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
 |Durch Drosselung in der Warteschlange | Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
 |Durch Drosselung beendet | Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
 

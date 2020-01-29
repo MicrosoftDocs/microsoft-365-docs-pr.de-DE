@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a1dbb5708cad32a0e37ddc25c97c70a765580f86
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 4472f665faa658349813d9aaeb50596f2a868b35
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962522"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572271"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
@@ -65,13 +65,12 @@ Microsoft Managed Desktop identifiziert jedes Gerät eindeutig, indem es auf sei
 Sie müssen die Daten in den CSV-Dateien in einer einzigen Datei zusammenfassen, um die Registrierung abzuschließen. Hier ist ein Beispiel für PowerShell-Skripts, um dies zu vereinfachen:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
-
 ### <a name="register-devices"></a>Registrieren von Geräten
 
 Die CSV-Datei muss sich in einem bestimmten Format für die Registrierung befinden. Wenn Sie die Daten in den vorherigen Schritten selbst gesammelt haben, sollte die Datei bereits im richtigen Format vorhanden sein. Wenn Sie die Datei von einem Lieferanten beziehen, müssen Sie das Format möglicherweise anpassen.
 
 >[!NOTE]
->Für Ihre Bequemlichkeit können Sie eine [Vorlage](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) für diese CSV-Datei herunterladen.
+>Zur Vereinfachung können Sie eine [CSV-Beispieldatei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)herunterladen.
 
 Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Hersteller, Modell usw.) enthalten, aber ihre eigenen Daten für die anderen Zeilen. Wenn Sie die Vorlage verwenden, öffnen Sie Sie in einem Textbearbeitungstool wie Notepad, und lassen Sie alle Daten in Zeile 1 allein, und geben Sie nur Daten in Zeilen 2 und darunter ein. 
     

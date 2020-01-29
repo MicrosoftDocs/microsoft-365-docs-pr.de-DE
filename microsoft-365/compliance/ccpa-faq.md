@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 567c104fcb960cce3bd09cd636fed8814cdbeb4c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 9323cce022af6c624b76b56a27fe35ff55c3519f
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637830"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558422"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>California Consumer Privacy Act (CCPA) – häufig gestellte Fragen
 
@@ -98,7 +98,7 @@ Da Microsoft DSGVO-bezogene DSRs weltweit implementiert hat, sind wir derzeit he
 
 **Was sind einige Tools, die meiner Organisation bei der Vorbereitung für CCPA helfen können?**
 
-- Nutzen Sie die DSGVO-Bewertung im Compliance-Manager als Teil Ihres CCPA-Datenschutzprogramms.
+- Nutzen Sie die DSGVO-Bewertung im Compliance-Score als Teil Ihres CCPA-Datenschutzprogramms.
 - Richten Sie einen Prozess ein, um effizient auf Verbraucheranfragen zu reagieren.
 - Richten Sie Etiketten und Richtlinien ein, um vertrauliche Daten mit Microsoft Information Protection zu erkennen, zu klassifizieren und zu kennzeichnen und zu schützen.
 - Verwenden Sie E-Mail-Verschlüsselungsfunktionen, um vertrauliche Informationen weiter zu kontrollieren.
