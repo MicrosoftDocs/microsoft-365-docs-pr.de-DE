@@ -1,5 +1,7 @@
 ---
 title: Exportieren von Daten aus einer Untersuchung
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ab74e339800b91b1952d26a424192246d9eb6c53
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 173249af0625b24337d3115bde808fd5817b6ae9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081446"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41588775"
 ---
-# <a name="export-data-from-an-investigation"></a><span data-ttu-id="10a8f-102">Exportieren von Daten aus einer Untersuchung</span><span class="sxs-lookup"><span data-stu-id="10a8f-102">Export data from an investigation</span></span>
+# <a name="export-data-from-an-investigation"></a><span data-ttu-id="f8b7e-102">Exportieren von Daten aus einer Untersuchung</span><span class="sxs-lookup"><span data-stu-id="f8b7e-102">Export data from an investigation</span></span>
 
-<span data-ttu-id="10a8f-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="10a8f-103">Content coming soon.</span></span>
+<span data-ttu-id="f8b7e-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="f8b7e-103">Content coming soon.</span></span>
