@@ -1,5 +1,7 @@
 ---
 title: 'Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool im Security #a0 Compliance Center'
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Das dsgvo gibt EU-Bürgern (sogenannte Datensubjekte) bestimmte Rechte für Ihre personenbezogenen Daten. Diese Rechte umfassen das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen im elektronischen Format. Eine formelle Anforderung einer betroffenen Person, eine Aktion für Ihre personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686232"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582934"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool im Security #a0 Compliance Center
 
@@ -53,7 +55,7 @@ Mit dem DSR Case-Tool können Sie Folgendes tun:
     
 - Exportieren von Daten als Reaktion auf eine DSR-Zugriffs-oder Exportanforderung.
     
-- Löschvorgänge, wenn der DSR-Untersuchungsprozess abgeschlossen ist. Dadurch werden alle Suchvorgänge und Exportaufträge entfernt, die mit der Anfrage verknüpft sind.
+- Löschen Sie Fälle, wenn die Untersuchung eines Antrags einer betroffenen Person abgeschlossen wurde. Dadurch werden alle Suchvorgänge und Exportaufträge entfernt, die mit der Anfrage verknüpft sind.
     
 Hier ist der allgemeine Prozess für die Verwendung des DSR-Fall Tools zum Verwalten von DSR-Untersuchungen:
   

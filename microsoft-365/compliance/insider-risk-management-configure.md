@@ -5,17 +5,19 @@ keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5d32e28d53fccbb16d935bbd9348ad7c12bac365
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: aea8c4a8dff0581b9286880d646728eb9a8dd555
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259843"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590666"
 ---
 # <a name="get-started-with-insider-risk-management-preview"></a>Erste Schritte mit dem Insider Risikomanagement (Vorschau)
 
@@ -24,7 +26,7 @@ Verwenden Sie Richtlinien für Insider-Risikomanagement, um riskante Aktivitäte
 >[!IMPORTANT]
 >Die Microsoft 365 Insider Risk Management-Lösung bietet eine Mandantenebene, mit der Kunden die interne Steuerung auf Benutzerebene vereinfachen können. Administratoren auf Mandantenebene können Berechtigungen einrichten, um den Zugriff auf diese Lösung für Mitglieder Ihrer Organisation bereitzustellen und Daten-Konnektoren im Microsoft 365 Compliance Center einzurichten, um relevante Daten zu importieren, um die Identifizierung von potentiellen Benutzern auf Benutzerebene zu unterstützen. riskante Aktivität. Kunden bestätigen Einblicke in Bezug auf das Verhalten, den Charakter oder die Leistung der einzelnen Benutzer, die wesentlich im Zusammenhang mit der Beschäftigung stehen, können vom Administrator berechnet und anderen Benutzern in der Organisation zur Verfügung gestellt werden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr Microsoft 365-Abonnement bestätigen. Benutzer, die in Richtlinien für das Insider Risikomanagement enthalten sind, müssen über eine Microsoft 365 E5-Konformitäts Lizenz verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein.
 

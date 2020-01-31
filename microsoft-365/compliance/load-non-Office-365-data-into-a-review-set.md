@@ -1,5 +1,7 @@
 ---
 title: Laden von Nicht-Office 365-Daten in einen Prüfdateisatz
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importieren Sie nicht Office 365 Daten in einen Überprüfungs in einem erweiterten eDiscovery-Fall.
-ms.openlocfilehash: 508346c3fe3a8f67addfed4ced08693daa2d49e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081634"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585684"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Laden von Nicht-Office 365-Daten in einen Prüfdateisatz
 
@@ -28,7 +30,7 @@ Nicht alle Dokumente, die Sie in Advanced eDiscovery analysieren müssen, befind
 >[!Note]
 >Advanced eDiscovery erfordert ein Microsoft 365-oder Office 365 E5-Abonnement für Ihre Organisation oder ein E3-Abonnement mit dem Add-on-Abonnement für erweiterte Kompatibilität. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bei Verwendung der in diesem Artikel beschriebenen Funktion "nicht Office 365 hochladen" müssen Sie über Folgendes verfügen:
 
@@ -40,7 +42,7 @@ Bei Verwendung der in diesem Artikel beschriebenen Funktion "nicht Office 365 ho
 
 - Nicht Office 365 Daten müssen einen Dateityp aufweisen, der von Advanced eDiscovery unterstützt wird. Weitere Informationen finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-- Alle Dateien, die in einen Überprüfungs Sätze hochgeladen werden, müssen sich in Ordnern befinden, in denen jeder Ordner einer bestimmten Depotbank zugeordnet ist. Für die Namen dieser Ordner muss das folgende Benennungsformat verwendet werden: *Alias @ Domain*Name. Der Alias @ Domain Name muss der Office 365 Alias und die Domäne des Benutzers sein. Sie können alle Alias-@ Domain Name-Ordner in einem Stammordner sammeln. Der Stammordner kann nur die Ordner Alias @ Domain Name enthalten. Lose Dateien im Stammordner werden nicht unterstützt.
+- Alle Dateien, die in einen Überprüfungs Sätze hochgeladen werden, müssen sich in Ordnern befinden, in denen jeder Ordner einer bestimmten Depotbank zugeordnet ist. Für die Namen dieser Ordner muss Folgendes Benennungsformat verwendet werden: *Alias@Domainname*. Das Alias@Domainname muss der Office 365 Alias und die Domäne des Benutzers sein. Sie können alle Alias@Domainname Ordner in einem Stammordner sammeln. Der Stammordner kann nur die Alias@Domainname Ordner enthalten. Lose Dateien im Stammordner werden nicht unterstützt.
 
    Die Ordnerstruktur für die nicht Office 365 Daten, die Sie hochladen möchten, würde dem folgenden Beispiel ähneln:
 
@@ -67,7 +69,7 @@ Bei Verwendung der in diesem Artikel beschriebenen Funktion "nicht Office 365 ho
 
 4. Klicken Sie auf **Dateien hochladen** , um den nicht Office 365 Datenimport-Assistenten zu starten.
 
-   ![Hochladen von Dateien](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![Dateien hochladen](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    Im ersten Schritt des Assistenten wird ein sicherer von Microsoft bereitgestellter Azure-Speicherort für den Upload der Dateien vorbereitet.  Wenn die Vorbereitung abgeschlossen ist, wird die Schaltfläche **Weiter: Dateien hochladen** aktiviert.
 

@@ -1,5 +1,7 @@
 ---
 title: Erweiterte eDiscovery-Grenzwerte
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über die Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten. Dies umfasst Fall Grenzen, Indizierungs Grenzwerte und Such Grenzwerte, wenn das Such Tool zum Sammeln von Falldaten verwendet wird.
-ms.openlocfilehash: 622d2669457a2a1e84909aadae9b653ca37684ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081518"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585714"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
@@ -29,10 +31,10 @@ In der folgenden Tabelle sind die Grenzwerte für Fälle in Advanced eDiscovery 
 
 |**Beschreibung der Beschränkung**|**Grenzwert**|
 |:-----|:-----|
-|Gesamtzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Überprüfungs Sätze in einem Fall).  <br/> |1 Million  <br/> |
+|Gesamtzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Überprüfungs Sätze in einem Fall).  <br/> |1 Mio.  <br/> |
 |Gesamtdateigröße pro Lastsatz.  <br/> |100 GB  <br/> |
 |Die Gesamtmenge der Daten, die pro Tag in einen Fall geladen wurden.<br/> |2 TB <br/> |
-|Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15 <br/> |
+|Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15  <br/> |
 |Maximale Anzahl von Überprüfungs Sätzen pro Fall.  <br/> |20 <br/> |
 |||
 
@@ -56,13 +58,13 @@ Die in diesem Abschnitt beschriebenen Grenzwerte beziehen sich auf die Verwendun
 |:-----|:-----|
 |Maximale Anzahl von Postfächern oder Websites, die in einer einzigen Suche durchsucht werden können.  <br/> |Keine Begrenzung  <br/> |
 |Maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> | 
-|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10   <br/> | 
+|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10    <br/> | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen).  <br/> |**Postfächer**: 10.000<br/>**Websites**: 4.000 beim Durchsuchen aller Websites oder 2.000 bei der Suche bis zu 20 Websites <sup>2</sup> <br/> |
-|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel **\* eins** oder **festgelegt\***. <br/> |3  <br/> |  
+|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel **\* eins** oder **festgelegt\***. <br/> |3   <br/> |  
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn Präfix Platzhalter zum Suchen nach einem genauen Ausdruck oder bei Verwendung eines Präfix Platzhalters und des **near** -oder **ONEAR** -booleschen Operators verwendet wird.  <br/> |10.000 <sup>3</sup> <br/> |
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.   <br/> |100  <br/> |
-|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1,000  <br/> |
-|Maximale Anzahl von Postfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann.  Wenn mehr als 1000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1.000-Postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.<br/> |1,000  <br/> |
+|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1.000  <br/> |
+|Maximale Anzahl von Postfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann.  Wenn mehr als 1000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1.000-Postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.<br/> |1.000  <br/> |
 |Maximale Anzahl von Elementen aus SharePoint und OneDrive für Unternehmen Websites, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.  <br/> |200  <br/> |
 |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites, für die eine Vorschau für Suchergebnisse angezeigt werden kann. Wenn es mehr als 200 Websites gibt, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die Top 200-Websites mit den meisten Ergebnissen für die Vorschau zur Verfügung.  <br/> |200  <br/> |
 |Maximale Anzahl von Elementen pro Postfach für Öffentliche Ordner, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |100  <br/> |

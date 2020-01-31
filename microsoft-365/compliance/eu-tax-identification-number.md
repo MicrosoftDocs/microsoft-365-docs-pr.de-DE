@@ -1,5 +1,7 @@
 ---
 title: EU-Steueridentifikationsnummer
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-Steueridentifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805848"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41591016"
 ---
 # <a name="eu-tax-identification-number"></a>EU-Steueridentifikationsnummer
 
@@ -108,7 +110,7 @@ Steuernummer
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -296,7 +298,7 @@ Acht Ziffern und ein Buchstabe:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -363,7 +365,7 @@ Neun oder zehn Ziffern mit einem optionalen backslashl:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -636,7 +638,7 @@ Neun Ziffern für Entitäten
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -758,7 +760,7 @@ Neun Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -909,7 +911,7 @@ Sieben Ziffern, gefolgt von einem Buchstaben:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -1124,7 +1126,7 @@ nodokļu identifikācija numurs
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -1272,7 +1274,7 @@ Nicht-maltesische Staatsangehörige und maltesische Entitäten: 9 Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -1576,7 +1578,7 @@ número de identificação Fiscal
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -1632,7 +1634,7 @@ numărul de identificare fiscală
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 

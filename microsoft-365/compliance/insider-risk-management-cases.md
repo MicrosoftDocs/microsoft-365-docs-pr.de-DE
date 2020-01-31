@@ -5,17 +5,19 @@ keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e6fd3dd08ff5170a3b0e2afcd97ec788c2aebd93
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259871"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590676"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Insider Risikomanagement-Fälle (Vorschau)
 
@@ -72,7 +74,7 @@ Der Bereich **Fall Details** ist auf allen Registerkarten für die Fallverwaltun
 Auf der Registerkarte **Benachrichtigungen** werden die aktuellen Warnungen zusammengefasst, die in der Anfrage enthalten sind. Neue Warnungen werden möglicherweise zu einem vorhandenen Fall hinzugefügt, und Sie werden der **Benachrichtigungs** Warteschlange hinzugefügt, sobald Sie zugewiesen sind. Die folgenden Warnungs Attribute werden in der Warteschlange aufgeführt:
 
 - Status
-- Schweregrad
+- Severity
 - Erkannte Zeit
 
 Wählen Sie in der Warteschlange eine Warnung aus, um die **Warnungs Detail** Seite anzuzeigen.
@@ -80,7 +82,7 @@ Wählen Sie in der Warteschlange eine Warnung aus, um die **Warnungs Detail** Se
 Verwenden Sie das Search-Steuerelement, um Warnungsnamen nach bestimmten Text zu durchsuchen, und verwenden Sie den Warnungsfilter, um Fälle anhand der folgenden Attribute zu sortieren:
 
 - Status
-- Schweregrad
+- Severity
 - Erkannte Zeit, Startdatum und Enddatum
 
 ### <a name="user-activity"></a>Benutzeraktivität
