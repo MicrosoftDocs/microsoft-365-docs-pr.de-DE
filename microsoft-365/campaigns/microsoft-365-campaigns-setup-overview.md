@@ -1,5 +1,7 @@
 ---
 title: Setup Übersicht für Microsoft 365 für Kampagnen
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Setup Übersicht für Microsoft 365 für Kampagnen
-ms.openlocfilehash: 882ca516d0e06658e24f675d5a1fe2b21a3c98b3
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: cca8866241a3759c022a362d39f7b208dff72580
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772332"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594173"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Einrichten von Microsoft 365 für Kampagnen
 

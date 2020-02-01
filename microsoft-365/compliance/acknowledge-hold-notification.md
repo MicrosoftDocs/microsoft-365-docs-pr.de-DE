@@ -1,5 +1,7 @@
 ---
 title: Bestätigen einer Aufbewahrungsbenachrichtigung
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Möglicherweise müssen Sie die Verwalter über ihre Pflicht informieren, elektronisch gespeicherte Informationen im Rahmen der rechtlichen Untersuchung aufzubewahren. Mit Advanced eDiscovery können Sie den Aufbewahrungs Benachrichtigungsprozess ganz einfach verwalten.
-ms.openlocfilehash: 477396e9b249de0edbbe52c5310abe21a825a3e8
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962368"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594068"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Bestätigen einer Aufbewahrungsbenachrichtigung
 

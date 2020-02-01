@@ -1,5 +1,7 @@
 ---
 title: EU-nationale Identifikationsnummer
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-nationale Identifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805938"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41592236"
 ---
 # <a name="eu-national-identification-number"></a>EU-nationale Identifikationsnummer
 
@@ -37,7 +39,7 @@ Eine Kombination aus Buchstaben, Ziffern und Sonderzeichen mit einer 24 Zeichen 
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -175,7 +177,7 @@ Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -676,7 +678,7 @@ Mens KODAS.
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -749,7 +751,7 @@ Sieben Ziffern, gefolgt von einem Buchstaben:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -1108,7 +1110,7 @@ Sieben Ziffern, gefolgt von einem Zeichen
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 

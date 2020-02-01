@@ -1,5 +1,7 @@
 ---
 title: Verschieben von Dateien auf OneDrive for Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Hier erfahren Sie, wie Sie Dateien in OneDrive migrieren.
-ms.openlocfilehash: 597192a352009abf93b507a82f800d56f20c84e8
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 0417325f93582ac5445cb739f9ca877a34f1d1c4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831321"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593657"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business
 
@@ -33,7 +35,7 @@ Sehen Sie sich ein kurzes Video über das Verschieben von Dateien in OneDrive f�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Wenn Sie dieses Video hilfreich finden, sehen Sie sich die [komplette Schulungsreihe für kleine Unternehmen und die neuen Microsoft 365 an](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business
@@ -50,4 +52,4 @@ Um das Benutzerprofil und wichtige Dateien zu übertragen, können Sie ein Dritt
   
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business Training Videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

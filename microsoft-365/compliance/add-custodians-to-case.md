@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc8002d900c38dee1b8487bbc0167b956f63b97f
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257053"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594058"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
@@ -29,7 +31,7 @@ Verwenden Sie den folgenden Workflow, um Verwalter in erweiterten eDiscovery-Fä
 
 ![Registerkarte "Depotverwaltung"](media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Um einem Fall Verwalter hinzuzufügen, müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein. Auf diese Weise erhalten Sie die erforderlichen Berechtigungen zum Hinzufügen von Bewahrern zu einem Fall und zum Aufbewahren der Datenquellen für den Freiheitsentzug.
 

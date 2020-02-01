@@ -1,5 +1,7 @@
 ---
 title: Erhöhen des Bedrohungsschutzes
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365 Business.
-ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748306"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594850"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -79,7 +81,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 6. Klicken Sie auf **Speichern**.
     
-|**Setting**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
+|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/>  |
 |Wenden Sie diese Regel an, wenn. . .  <br/> |Jede Anlage. . . Dateierweiterung entspricht. . .  <br/> |
@@ -113,7 +115,7 @@ Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video
     
 6. Klicken Sie auf **Speichern**.
     
-|**Setting**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
+|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
 |:-----|:-----|
 |Name  <br/> |Verhindern der automatischen Weiterleitung von e-Mails an externe Domänen  <br/> |
 |Diese Regel anwenden, wenn...  <br/> |Absender. . . ist extern/intern. . . Innerhalb der Organisation  <br/> |

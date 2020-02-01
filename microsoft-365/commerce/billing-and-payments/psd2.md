@@ -1,5 +1,7 @@
 ---
 title: Payment Services-Direktive 2 und starke Kundenauthentifizierung für kommerzielle Kunden
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: Ab dem 14. September 2019 werden Banken in den 31 Ländern des Europäischen Wirtschaftsraums aufgefordert, die Identität der Person zu überprüfen, die Online kauft, bevor die Zahlung verarbeitet werden kann.
 keywords: Payment Services-Direktive 2, starke Kundenauthentifizierung, mehrstufige Authentifizierung
-ms.openlocfilehash: 1e9272803fd592062676e3324d172560b6b2219b
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646430"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594706"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Payment Services-Direktive 2 und starke Kundenauthentifizierung für kommerzielle Kunden
 

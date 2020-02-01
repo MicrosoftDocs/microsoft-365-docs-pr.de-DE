@@ -1,5 +1,7 @@
 ---
 title: Veraltete Office 365-Nachrichten Verschlüsselungs-Viewer-App
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 ms.date: 6/29/2018
@@ -14,12 +16,12 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: Am 15. August 2018 werden wir die Office 365 Nachrichtenverschlüsselung (OM)-Anzeige Mobile App von Android Stores und Apple Stores entfernen. Das Office 365 Nachrichten Verschlüsselungs-Viewer-Mobile App war zum Lesen von e-Mail-Nachrichten und Anlagen erforderlich, die mit der vorherigen Version von OM auf Apple-und Android-Telefonen verschlüsselt wurden. Neben dem Entfernen der OM Viewer-App nehmen wir keine weiteren Änderungen an der vorherigen Version von OM vor.
-ms.openlocfilehash: 3b5c92d4fa700a1ae8d7b104e33100301cf43506
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080760"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595270"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>Veraltete Office 365-Nachrichten Verschlüsselungs-Viewer-App
 

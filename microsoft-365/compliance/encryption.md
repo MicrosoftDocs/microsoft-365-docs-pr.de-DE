@@ -1,5 +1,7 @@
 ---
 title: Verschlüsselung in Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und in der Übertragung mit der stärksten Verschlüsselung, den verfügbaren Protokollen und Technologien verschlüsselt. Erhalten Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686093"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593176"
 ---
 # <a name="encryption-in-office-365"></a>Verschlüsselung in Office 365
 
@@ -81,4 +83,4 @@ Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 
 [Planen der Office 365 Funktionen für Sicherheits-und Informationsschutz](plan-for-security-and-compliance.md)
 
-[Die 10 wichtigsten Möglichkeiten zum Sichern von Office 365-und Microsoft 365-Geschäftsplänen](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[Top 10 Methoden zum Sichern von Office 365 und Microsoft 365 Business-Pläne](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)

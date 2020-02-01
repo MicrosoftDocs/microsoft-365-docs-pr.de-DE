@@ -1,5 +1,7 @@
 ---
 title: Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie sich Microsoft 365 für Kampagnen auf Ihre Benutzer auswirkt.
-ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753594"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594756"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
 

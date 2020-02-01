@@ -2,6 +2,8 @@
 title: Häufig gestellte Fragen zu Microsoft 365 Business 
 description: Hier finden Sie Antworten auf die am häufigsten gestellten Fragen zu Microsoft 365 Business, einer neuen Lösung für kleine und mittelständische Unternehmen (SMB). 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -10,16 +12,16 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Microsoft 365, SMB, FAQ, häufig gestellte Fragen, Antworten, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748369"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594226"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft 365 Business
 
-## <a name="general"></a>Allgemein
+## <a name="general"></a>Allgemeines
 
 ### <a name="what-is-microsoft-365-business"></a>Was ist Microsoft 365 Business? 
 Microsoft 365 ist eine integrierte Lösung, die erstklassige Produktivitätstools, Sicherheits-und Geräteverwaltungsfunktionen für kleine und mittelständische Unternehmen vereint. Sie umfasst Folgendes:

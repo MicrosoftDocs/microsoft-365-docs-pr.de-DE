@@ -1,5 +1,7 @@
 ---
 title: FAQ zum Self-Service-Kauf
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,21 +15,21 @@ search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120156"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594099"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
 > [!NOTE]
 > Die Informationen in diesem Artikel gelten nur für Microsoft Power Platform-Abonnements (Power BI, Power apps und Power automatisieren).
 
-Self-Service-Käufe stehen jetzt für Power BI in den USA zur Verfügung.
+Self-Service-Käufe sind jetzt für Power Platform in den Vereinigten Staaten verfügbar.
 
-## <a name="general"></a>Allgemein
+## <a name="general"></a>Allgemeines
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Welche Änderungen hat Microsoft rund um Self-Service Purchases für die Power Platform-Produkte angekündigt?
 
@@ -43,7 +45,7 @@ In der heutigen Welt suchen Endbenutzer und Abteilungen zunehmend nach und kaufe
 
 ### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>Welche Power Platform-Produkte stehen für Self-Service-Käufe zur Verfügung?
 
-Microsoft hat Self-Service-Kauf für Power BI für Kunden in den USA gestartet, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. Power apps und Power Automation werden für Kunden in den Vereinigten Staaten am 28. Januar 2020 hinzugefügt. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
+Microsoft hat Self-Service-Kauf für Power-Plattform (Power BI, Power apps und Power Automation) an Kunden in den Vereinigten Staaten gestartet, wobei in den kommenden Monaten zusätzliche Märkte verfügbar werden. Diese Funktion steht derzeit nicht für Mandanten in den USA zur Verfügung, die zu diesem Zeitpunkt Regierungs-, gemeinnützige oder Bildungseinrichtungen sind.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Kann Self-Service-Einkauf für Dienste außerhalb der Power Platform-Produkte aktiviert werden?
 

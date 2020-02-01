@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen Ihrer Unternehmensmarke zu verschlüsselten Nachrichten
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Als Office 365 globaler Administrator können Sie das Branding Ihrer Organisation auf die verschlüsselten e-Mail-Nachrichten Ihrer Organisation und auf den Inhalt des Verschlüsselungs Portals anwenden.
-ms.openlocfilehash: 118bf93f7bdcb7dc522f95978eb5bb4456e90d5b
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256742"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594026"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Hinzufügen der Marke Ihres Unternehmens zu Ihren verschlüsselten Nachrichten
 
@@ -97,7 +99,7 @@ So erstellen Sie eine neue benutzerdefinierte Branding-Vorlage:
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
 
-   For example,
+   Beispiele:
 
    ```powershell
    New-OMEConfiguration -Identity "Custom branding template"
@@ -136,7 +138,7 @@ So entfernen Sie eine benutzerdefinierte Branding-Vorlage:
    Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
    ```
 
-   For example,
+   Beispiele:
 
    ```powershell
    Remove-OMEConfiguration -Identity "Branding template 1"

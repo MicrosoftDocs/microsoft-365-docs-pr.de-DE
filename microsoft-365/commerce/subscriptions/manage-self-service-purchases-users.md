@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Self-Service-Käufen (Benutzer)
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -12,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: 6cf62a3968738f3367c5ed6a681e7f225f1dae8b
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 1535784350b719b606dca9417f9cdb192060adf1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120219"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594656"
 ---
 # <a name="manage-self-service-purchases-users"></a>Verwalten von Self-Service-Käufen (Benutzer)
 
@@ -41,7 +43,7 @@ Sie können eine Liste aller erworbenen Self-Service-Abonnements anzeigen. Wechs
 3. Wählen Sie **Lizenzen hinzufügen/entfernen**aus.
 
 4. Geben Sie im Feld **Gesamt Lizenzen** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Speichern**aus.
-Wenn Sie beispielsweise 100 Lizenzen haben und 5 weitere hinzufügen möchten, geben Sie 105.
+Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein.
 
 ## <a name="assign-or-unassign-licenses"></a>Zuweisen oder Aufheben der Zuweisung von Lizenzen
 

@@ -1,5 +1,7 @@
 ---
 title: Herunterladen vorhandener Berichte im Security &amp; Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Hier erfahren Sie, wie Sie einen oder mehrere vorhandene Berichte im &amp; Security Compliance Center herunterladen.
-ms.openlocfilehash: 05290d58be7b9d1770040d883b6eef9269cf0419
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5f381a5e59f7cb6348bdc96572dfa37c4919500
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080711"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595170"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Herunterladen vorhandener Berichte im Security &amp; Compliance Center
 

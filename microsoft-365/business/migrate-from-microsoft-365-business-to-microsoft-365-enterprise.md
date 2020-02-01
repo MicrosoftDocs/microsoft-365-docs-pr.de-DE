@@ -1,5 +1,7 @@
 ---
 title: Migrieren von Microsoft 365 Business zu Microsoft 365 E3
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 E3 migrieren.
-ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558042"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593694"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 E3
 
@@ -48,7 +50,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 |:-------|:-----|:-----|
 | **Lokal**       | | | 
 | Windows 10    | Windows 10 Business  |    Windows 10 Enterprise E3| 
-| Office-Apps *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
+| Office-Apps *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **Apps für die Cloud-Produktivität**       | | | 
 | Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
 | Microsoft Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 

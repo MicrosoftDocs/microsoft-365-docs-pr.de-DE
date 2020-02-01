@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei gängigen eDiscovery-Problemen
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: Untersuchen, beheben und beheben Sie häufige Probleme in Office 365 eDiscovery.
 siblings_only: true
-ms.openlocfilehash: 37e92e480759601f9dfe61430bdd647b20df051d
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686253"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595130"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme
 

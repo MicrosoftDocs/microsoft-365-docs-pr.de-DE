@@ -1,5 +1,7 @@
 ---
 title: Migrieren zu Microsoft 365 Business von Office 365 E3
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informationen zum Migrieren Ihres Unternehmens zu Microsoft 365 Business von Office 365 E3.
-ms.openlocfilehash: f624ee7ef7c00ac4d1fe413500d0cd081a156748
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640576"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593704"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business 
 

@@ -1,5 +1,7 @@
 ---
 title: Bump up Security Protection für Ihre Kampagne
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihre Kampagne schützen, indem Sie Ihre Sicherheit mit Microsoft 365 für Kampagnen erhöhen.
-ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: f2d57fe0cbc6765b359a759c3d33c6482d86bb06
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772412"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594786"
 ---
 # <a name="bump-up-security-protection-for-your-campaign"></a>Bump up Security Protection für Ihre Kampagne
 
@@ -39,7 +41,7 @@ Sehen Sie sich dieses Video an, um zu erfahren, wie Sie Ihre Kampagne schützen 
 
 
 Führen Sie dann die folgenden Schritte aus:
-- [Schutz vor Schadsoftware und anderen Bedrohungen](m365-campaigns-increase-protection.md)
+- [Schützen vor Schadsoftware und anderen Bedrohungen](m365-campaigns-increase-protection.md)
 - [Schützen des Zugriffs auf Ihre Kampagnendaten](m365-campaigns-conditional-access.md) durch Schützen Ihrer Konten und Apps
 - [Schützen von Administratorkonten](m365-campaigns-protect-admin-accounts.md)
 - [Einrichten von mobilen Geräten](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
