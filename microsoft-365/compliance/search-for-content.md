@@ -1,5 +1,7 @@
 ---
 title: Suchen nach Inhalten in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 'Verwenden Sie das eDiscovery-Tool für die Inhaltssuche im Security #a0 Compliance Center, um e-Mails in Exchange-Postfächern, Dokumenten in SharePoint-Websites und OneDrive-Speicherorten und Chatnachrichten in Skype for Business schnell zu finden.'
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082199"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601542"
 ---
 # <a name="search-for-content-in-office-365"></a>Suchen nach Inhalten in Office 365
 
@@ -77,7 +79,7 @@ Die Inhaltssuche ist einfach zu verwenden, ist aber auch ein leistungsfähiges T
 
 Manchmal müssen Sie erweiterte, komplexere und sich wiederholende Inhalts Suchaufgaben durchführen. In diesen Fällen ist es einfacher und schneller, PowerShell-Befehle im Security #a0 Compliance Center zu verwenden. Um dies zu vereinfachen, haben wir eine Reihe von Security #a0 Compliance Center PowerShell-Skripts erstellt, die Sie bei der Durchführung komplexer Inhaltssuche-bezogener Aufgaben unterstützen.
   
-- [Durchsuchen bestimmter Post Fach-und Websiteordner](use-content-search-for-targeted-collections.md) (" *Targeted Collection* " genannt), wenn Sie sicher sind, dass sich auf einen Fall reagierende Elemente in diesem Ordner befinden 
+- [Durchsuchen bestimmter Post Fach-und Websiteordner](use-content-search-for-targeted-collections.md) (als *gezielte Sammlung* bezeichnet), wenn Sie sicher sind, dass sich auf einen Fall reagierende Elemente in diesem Ordner befinden 
     
 - [Durchsuchen des Post Fach-und OneDrive-Speicherorts](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) nach einer Liste von Benutzern 
     

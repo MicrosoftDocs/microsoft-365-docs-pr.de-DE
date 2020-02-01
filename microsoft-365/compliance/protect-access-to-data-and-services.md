@@ -1,5 +1,7 @@
 ---
 title: Schutz von Benutzer- und Gerätezugriff
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Startseite für den Schutz des Zugriffs auf O365-Daten und-Dienste
-ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082224"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601702"
 ---
 # <a name="protect-user-and-device-access"></a>Schutz von Benutzer- und Gerätezugriff
 
@@ -53,7 +55,7 @@ Mehrstufige Authentifizierung (MFA) und Richtlinien für bedingten Zugriff sind 
 - Mult-Factor-Authentifizierung
 - Bedingter Zugriff
 - InTune-App-Schutz (app und Datenschutz für Geräte)
-- InTune-Geräte Konformität
+- Intune-Gerätekompatibilität
 - Azure AD Identity Protection
 
 Die Implementierung der InTune-Gerätekompatibilität erfordert die Geräteregistrierung. Durch die Verwaltung von Geräten können Sie sicherstellen, dass Sie ordnungsgemäß und kompatibel sind, bevor Sie Ihnen den Zugriff auf Ressourcen in Ihrer Umgebung ermöglichen. Siehe [Registrieren von Geräten für die Verwaltung in InTune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)

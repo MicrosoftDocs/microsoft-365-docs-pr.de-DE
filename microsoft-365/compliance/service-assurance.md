@@ -1,5 +1,7 @@
 ---
 title: 'Dienst Assurance im Security #a0 Compliance Center'
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Laden Sie Drittanbieter Überwachungen herunter, erfahren Sie, wie Microsoft Kundendaten schützt und wie Sie ISO, HIPAA, FINRA und FedRAMP einhalten können, wenn Sie Office 365 verwenden.
-ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082565"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601522"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Dienst Assurance im Security #a0 Compliance Center
 
@@ -47,15 +49,15 @@ Sie können auch herausfinden, wie Office 365 Kunden bei der Einhaltung von Stan
  **O365-Abonnement Mitglieder** können standardmäßig auf den Abschnitt Service Assurance im Office365 Protection Center zugreifen, wenn der Dienst Assurance Roles-Based Access nicht in Ihrem Abonnement implementiert wurde. Service Assurance stellt Berichte und Dokumente bereit, in denen die Sicherheitspraktiken von Microsoft für Kundendaten beschrieben werden, die in Office 365 gespeichert sind. Darüber hinaus werden unabhängige Überwachungsberichte von Drittanbietern für Office 365 bereitgestellt. 
   
 > [!NOTE]
-> Hinweis: Wenn Ihr Unternehmen den Service Assurance Roles-Based Access in Ihrem Office 365-Abonnement implementiert hat (Dies könnte der Fall sein, wenn Ihre Organisation Zugriff auf benutzerdefinierte Berichte erhalten hat), und Sie Zugriff auf Service Assurance benötigen, aber nicht im linken Teil Bereich des Security #a0 Compliance Centers, bitten Sie Ihren Office 365-Administrator, Sie zur Dienst Assurance-Benutzerrollen Gruppe auf der Seite **Berechtigungen** hinzuzufügen. Weitere Informationen finden Sie unter Onboard other Service Assurance users or groups. 
+> Hinweis: Wenn Ihr Unternehmen den Service Assurance Roles-Based Access in Ihrem Office 365-Abonnement implementiert hat (Dies könnte der Fall sein, wenn Ihr Unternehmen Zugriff auf benutzerdefinierte Berichte erhalten hat), und Sie Zugriff auf Service Assurance benötigen, aber nicht im linken Bereich des Security #a0 Compliance Center enthalten sind, bitten Sie Ihren Office 365 Administrator, Sie auf der Seite **Berechtigungen** zur Benutzerrollen Gruppe Service Assurance hinzu Weitere Informationen finden Sie unter Onboard other Service Assurance users or groups. 
   
- **Dienst Assurance Roles-Based Access-Benutzer** mit vorgegebenen Funktionen Wenn Ihr Unternehmen Service Assurance Roles-Based Access implementiert hat, können Sie den Dienst Assurance-Zugriff auf alle Sicherheits-und Compliance-Mitarbeiter einschließlich Informationssicherheit, Risikomanagement, Compliance und Überwachungsteams und Mitarbeiter in Ihrem Organisation. Ausführliche Informationen finden Sie unter [Onboard other Service Assurance users or groups](service-assurance.md#addother).
+ **Dienst Assurance Roles-Based Access-Benutzer** mit vorgegebenen Funktionen Wenn Ihr Unternehmen Service Assurance Roles-Based Access implementiert hat, können Sie Dienst Assurance-Zugriff auf alle Sicherheits-und Compliance-Mitarbeiter einschließlich Informationssicherheit, Risikomanagement, Compliance und Überwachungsteams und Mitarbeiter in Ihrer Organisation bereitstellen. Ausführliche Informationen finden Sie unter [Onboard other Service Assurance users or groups](service-assurance.md#addother).
   
 Der Zugriff auf die Dienst Assurance erfolgt über das Security #a0 Compliance Center. Hier erfahren Sie, wie Sie dorthin gelangen.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. 
     
 3. Wählen Sie im linken Bereich **Dienst Assurance**aus. [Wählen Sie als nächstes Ihre Branchen-und Ländereinstellungen](service-assurance.md#Chooseyourindustryregional) und [andere Dienst Assurance-Benutzer oder-Gruppen an Bord](service-assurance.md#addother)aus.
     
@@ -120,7 +122,7 @@ Für den Zugriff auf Standardberichte, die in allen Microsoft-Cloud-Abonnements 
     
     ![Dienst Assurance-Benutzer hinzufügen](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
-3. Suchen Sie im nächsten Dialogfeld nach Personen oder Gruppen, die Service Assurance-Konformitätsberichte und vertrauenswürdige Ressourcen anzeigen müssen, und wählen Sie Sie aus, und klicken Sie dann **in der** rechten oberen Ecke des Bereichs auf **Hinzufügen** , um Sie sind fertig. 
+3. Suchen Sie im nächsten Dialogfeld nach Personen oder Gruppen, die Service Assurance-Konformitätsberichte und vertrauenswürdige Ressourcen anzeigen müssen, und wählen Sie dann für jede Auswahl, die Sie vornehmen, die Option **Add** aus, und klicken Sie nach Abschluss des Vorgangs auf das **X** in der oberen rechten Ecke des Bereichs. 
     
     ![Dienst Assurance-Benutzer – Benutzer auswählen](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   

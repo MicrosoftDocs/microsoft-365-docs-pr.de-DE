@@ -1,5 +1,7 @@
 ---
 title: Definieren von Richtlinien für Informationsbarrieren
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 15b17dba38a8e34bebf8d128c669fb7fa1f0ebd1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970843"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600602"
 ---
 # <a name="define-policies-for-information-barriers"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -293,7 +295,7 @@ Es ist nicht erforderlich, Richtlinien für HR oder Marketing zu definieren.
 
 Contoso wird das Department-Attribut in Azure Active Directory verwenden, um Segmente wie folgt zu definieren:
 
-|Abteilung  |Segment Definition  |
+|Department  |Segment Definition  |
 |---------|---------|
 |HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
 |Sales     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |

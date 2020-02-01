@@ -5,6 +5,8 @@ keywords: Office 365, Anträge betroffener Personen, Microsoft 365, Microsoft 36
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 685e653d7f0b8d31990724c58eccafe9a25ae6a5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004930"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628121"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Office 365 im Rahmen der DSGVO und des CCPA
 
@@ -90,7 +92,7 @@ Eine schnelle Möglichkeit zum Identifizieren der Office 365-Anwendungen, die Pe
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>Reagieren auf Anträge betroffener Personen mit dem eDiscovery-Tool für die Inhaltssuche
 
-Bei der Suche nach personenbezogenen Daten innerhalb des größeren Satzes von Daten, die Ihre Organisation bei der Verwendung von Office 365 erstellt und speichert, sollten Sie zuerst die Anwendungen berücksichtigen, die Personen vermutlich verwendet haben, um die Daten zu erstellen, nach denen Sie suchen. Microsoft schätzt, dass mehr als 90 % der Daten einer Organisation, die in Office 365 gespeichert sind, in Word, Excel, PowerPoint, OneNote und Outlook erstellt werden. In diesen Office-Programmen erstellte Dokumente sind höchstwahrscheinlich auf einer SharePoint Online-Website, im OneDrive for Business-Konto eines Benutzers oder im Exchange Online-Postfach eines Benutzers gespeichert, auch wenn sie über Office 365 ProPlus oder eine unbefristete Office-Lizenz erworben wurden. Dies bedeutet, dass Sie das eDiscovery-Tool für die Inhaltssuche verwenden können, um in SharePoint Online-Websites, OneDrive for Business-Konten und Exchange Online-Postfächern (einschließlich der mit Office 365-Gruppen, Microsoft Teams, EDU-Aufgaben und StaffHub verknüpften Websites und Postfächer) nach Dokumenten und Postfachelementen zu suchen (oder andere Aktionen im Zusammenhang mit Anträgen betroffener Personen auszuführen), die für den von Ihnen untersuchten Antrag einer betroffenen Person relevant sein könnten. Sie können das Tool für die Inhaltssuche auch verwenden, um Kundendaten zu ermitteln, die in anderen Office 365-Anwendungen erstellt wurden.
+Bei der Suche nach personenbezogenen Daten innerhalb des größeren Satzes von Daten, die Ihre Organisation bei der Verwendung von Office 365 erstellt und speichert, sollten Sie zuerst die Anwendungen berücksichtigen, die Personen vermutlich verwendet haben, um die Daten zu erstellen, nach denen Sie suchen. Microsoft schätzt, dass mehr als 90 % der Daten einer Organisation, die in Office 365 gespeichert sind, in Word, Excel, PowerPoint, OneNote und Outlook erstellt werden. In diesen Office-Programmen erstellte Dokumente sind höchstwahrscheinlich auf einer SharePoint Online-Website, im OneDrive for Business-Konto eines Benutzers oder im Exchange Online-Postfach eines Benutzers gespeichert, auch wenn sie über Office 365 ProPlus oder eine unbefristete Office-Lizenz erworben wurden. Dies bedeutet, dass Sie das eDiscovery-Tool für die Inhaltssuche verwenden können, um in SharePoint Online-Websites, OneDrive for Business-Konten und Exchange Online-Postfächern (einschließlich der mit Office 365-Gruppen, Microsoft Teams und EDU-Aufgaben verknüpften Websites und Postfächer) nach Dokumenten und Postfachelementen zu suchen (oder andere Aktionen im Zusammenhang mit Anträgen betroffener Personen auszuführen), die für den von Ihnen untersuchten Antrag einer betroffenen Person relevant sein könnten. Sie können das Tool für die Inhaltssuche auch verwenden, um Kundendaten zu ermitteln, die in anderen Office 365-Anwendungen erstellt wurden.
 
 In der folgenden Tabelle sind die Office 365-Anwendungen aufgeführt, mit denen Personen Kundeninhalte erstellen, die über die Inhaltssuche ermittelt werden können. In diesem Abschnitt des Leitfadens zu Anträgen betroffener Personen wird erläutert, wie Sie mit diesen Office 365-Anwendungen erstellte Daten ermitteln, exportieren und löschen können und wie Sie darauf zugreifen können.
 
@@ -631,9 +633,8 @@ Während die meisten Kundendaten mit den im vorherigen Abschnitt beschriebenen A
 | ![Access-Symbol](media/o365-access-64x64.png) <br> [Access](#access) | ![Office-Symbol](media/O365-DSR-Doc_image22.png) <br> [Business App <br> für Office 365](#business-apps-for-office-365) | ![Office-Symbol](media/O365-DSR-Doc_image22.png) <br> [Bildung](#education)|
 | ![Flow-Symbol](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Symbol "Formulare"](media/o365-forms-64x64.png) <br> [Formulare](#forms) |![Kaizala-Symbol](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
 | ![Planner-Symbol](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps-Symbol](media/o365-powerapps-64x64.png) <br> [PowerApps](#powerapps) |![Power BI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project-Symbol](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher-Symbol](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![StaffHub-Symbol](media/o365-staffhub-64x64.png) <br> [StaffHub](#staffhub) |
-|![Stream-Symbol](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard-Symbol](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-||![Yammer-Symbol](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+|![Project-Symbol](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher-Symbol](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream-Symbol](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard-Symbol](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer-Symbol](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access
@@ -1164,33 +1165,6 @@ Sie können einer betroffenen Person die tatsächliche Publisher-Datei bereitste
 #### <a name="delete"></a>Löschen
 
 Sie können Inhalte aus einer Publikation löschen, ganze Seiten löschen oder eine ganze Publisher-Datei löschen. Siehe [Hinzufügen oder Löschen von Seiten](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08).
-
-### <a name="staffhub"></a>StaffHub
-
-In den folgenden Abschnitten wird erläutert, wie die In-App-Funktion in Microsoft StaffHub verwendet werden kann, um personenbezogene Daten zu suchen, auf sie zuzugreifen, sie zu exportieren und zu löschen.
-
-#### <a name="discover"></a>Ermittlung
-
-Die meisten dieser Daten in StaffHub stehen allen StaffHub-Teammitgliedern und -Managern zur Verfügung. Um Daten in StaffHub zu prüfen, muss ein Manager oder ein Teammitglied <https://staffhub.office.com> aufrufen, um nach Daten zu suchen, die potenziell für den Antrag einer betroffenen Person relevant sind, oder Sie als Teammitglied hinzufügen, damit Sie in StaffHub direkt nach Daten suchen können, die für einen Antrag einer betroffenen Person relevant sind.
-
-#### <a name="access"></a>Zugriff
-
-Nachdem relevanter StaffHub-Inhalt gefunden wurde, können Sie diese anzeigen und Screenshots der relevanten Daten erstellen, die Sie and die betroffene Person in der Anwendung senden möchten, oder diese herunterladen.
-
-- **Planungsinformationen**: Auf der Registerkarte **Terminplan** in StaffHub finden Sie sowohl eine **Personen-** als auch eine **Schicht-Ansicht**, die Ihnen die Anzeige von Tages-, Wochen- und monatlichen Zeitplänen nach Teammitgliedern oder nach Arbeitsschichten ermöglicht. Diese Ansichten können ausgedruckt oder nach Excel heruntergeladen werden. Wählen Sie hierzu die drei Punkte (Auslassungspunkte) in der oberen linken Ecke der StaffHub Web-App aus und klicken Sie auf **Zeitplan exportieren**.
-- **Freigegebene Dateien:** Alle Dateien in StaffHub werden in SharePoint Online gespeichert. Daher können Sie diese mithilfe der Inhaltssuche durchsuchen, exportieren und auf diese zugreifen. Sie können sie auch in StaffHub unter der Registerkarte **Dateien** anzeigen.
-- **Nachrichtenübermittlung:** Zurzeit können Sie auf Nachrichten zugreifen, indem Sie die Schritte zum Zugreifen auf benutzerspezifische Daten im nächsten Element ausführen. In Zukunft werden alle Nachrichten in StaffHub in Microsoft Teams gespeichert, was bedeutet, dass Sie das Tool für die Inhaltssuche verwenden können, um darauf zuzugreifen.
-- **Benutzerspezifische Daten:** Benutzerspezifische Daten bestehen aus Benutzereinstellungen, Benutzer-Aktivitätsfeeds und Schichtanfragen-Verläufen. Diese können weder von Teammitgliedern noch von Administratoren eingesehen werden. Wenn Sie auf benutzerspezifische Daten zugreifen oder diese exportieren möchten, muss sich hierzu die betroffene Person in ihrem StaffHub-Konto anmelden. Sollte die betroffene Person Ihre Organisation verlassen haben, können Sie auf diese Daten auch zugreifen, indem Ihr Administrator das Benutzerkennwort für den betroffenen Benutzer zurücksetzt, sodass Sie oder der Administrator sich bei seinem Konto anmelden können.
-- **Kronos:** StaffHub unterstützt Verbindungen zu [Kronos](https://www.kronos.com/), einem Drittanbieter-Tool für die Verwaltung von Mitarbeitern. StaffHub und Kronos sind unabhängige Datenverarbeiter und verarbeiten die Daten Ihrer Organisation gemäß den Bedingungen, die Sie mit der jeweiligen Vertragspartei vereinbart haben. Wenn der an Sie herangetragene Antrag einer betroffenen Person von Kronos gespeicherte Daten betrifft, müssen Sie sich an Kronos wenden, um diesbezüglich Hilfe zu erhalten. Dasselbe gilt im umgekehrten Fall.
-
-#### <a name="delete"></a>Löschen
-
-- Die meisten in StaffHub verwalteten In-App-Dateninhalte können von einem Teammanager aus der App selbst gelöscht werden. Wie bereits im Abschnitt Ermittlung für StaffHub erläutert, können Sie sich selbst als Teammanager hinzufügen und die Daten löschen.
-- Wenn ein Benutzerkonto dauerhaft gelöscht wurde, bearbeitet StaffHub den Namen, die Telefonnummer, die E-Mail-Adresse und das Profilbild des Benutzers innerhalb von 30 Tagen nach der Löschung des Kontos.
-
-#### <a name="export"></a>Exportieren
-
-Informationen dazu finden Sie im Abschnitt [Zugriff](#access-12) zu StaffHub.
 
 ### <a name="stream"></a>Stream
 
@@ -1794,8 +1768,9 @@ In der folgende Tabelle sind die Änderungen an dem Leitfaden für Office 365-An
 |18.09.2018 | [Whiteboard](#whiteboard) |Whiteboard Preview ist nicht mehr in der Vorschau und wurde für allgemeine Verfügbarkeit veröffentlicht. Daher wurde der Abschnitt zur Whiteboard-Vorschau in „Whiteboard für PC, Surface Hub und andere Plattformen“ umbenannt; Vorgehensweisen zum Zugreifen auf Daten, zum Exportieren und Löschen von Daten wurden aus diesem Abschnitt entfernt und durch einen Link zum Whiteboard-Support-Artikel ersetzt.|
 |08.11.2018 | [Workplace Analytics](#workplace-analytics) |Schrittweise Anleitung für den Abschnitt „Löschen“ mit Informationen zum Entfernen einer betroffenen Person aus Workplace Analytics und zum Entfernen von Informationen über eine betroffene Person aus einem Workplace Analytics-Bericht.|
 |12.11.2018| Alle| Fehlerhafte Lesezeichen und fehlerhafte Links zu externen Themen wurden korrigiert.|
-|09. Januar 2019|[StaffHub](#staffhub)|Im Abschnitt "Löschen" wurde die Beschreibung aktualisiert, was passiert, wenn ein Benutzerkonto dauerhaft gelöscht wird.|
+|09. Januar 2019| StaffHub |Im Abschnitt "Löschen" wurde die Beschreibung aktualisiert, was passiert, wenn ein Benutzerkonto dauerhaft gelöscht wird.|
 |8.5.2019| [Publisher](#publisher)|Informationen zur Reaktion auf Anträge betroffener Personen in Publisher wurden hinzugefügt.|
 |11.7.2019| [MyAnalytics](#myanalytics)|Die Möglichkeit für einen Administrator, das Falltool für Anträge betroffener Personen im Office 365 Security & Compliance Center zum Exportieren von myAnalytics-Daten zu verwenden, wurde entfernt, da alle Benutzer ihre Daten jetzt in der myAnalytics-App anzeigen können. |
 |06.11.2019|[Bildung](#education)|Mit neuen Themen zur Verwendung von PowerShell-Skripts zum Abrufen einer Liste der Kurse für einen bestimmten Kursteilnehmer verknüpft, um diese dann zu exportieren oder zu löschen.|
+|28.01.2020| Alle | StaffHub aus Dokument entfernt; StaffHub wurde eingestellt. |
 ||||

@@ -1,5 +1,7 @@
 ---
 title: Suche und Kennzeichnung
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery können Sie mit dem Such-und Markierungs Modul die Dokumente in Ihrem Fall durchsuchen, in der Vorschau anzeigen und organisieren. Derzeit befindet sich dieses Modul in der Betaphase.
-ms.openlocfilehash: f5e192988519a9190aa53efef35a8e584e0987cc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802898"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601712"
 ---
 # <a name="search-and-tagging"></a>Suche und Kennzeichnung
 
@@ -51,7 +53,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, nach denen Sie mith
 |**sender** <br/> | Der Absender einer e-Mail. <br/> |
 |**LastModifiedDate** <br/> | Das Datum der letzten Änderung eines Website Dokuments. <br/> |
 |**Gesendet** <br/> | Das gesendete Datum einer e-Mail. <br/> |
-|**to** <br/> | Der Empfänger, der im Feld an einer e-Mail aufgeführt ist. <br/> |
+|**An** <br/> | Der Empfänger, der im Feld an einer e-Mail aufgeführt ist. <br/> |
 |**Autor** <br/> | Der Autor eines Website Dokuments. <br/> |
 |**title** <br/> | Der Titel eines Website Dokuments. <br/> |
 |**dominanttheme**\* <br/> | Das dominante Design eines Elements. <br/> |

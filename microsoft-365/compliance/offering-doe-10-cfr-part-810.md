@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804178"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601972"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DOE 10 CFR Part 810
 
@@ -32,7 +34,7 @@ FedRAMP bietet eine geeignete Basis, um sicherzustellen, dass Azure Government K
 
 Darüber hinaus ist Azure Government eine Community-Cloud der US-Regierung, die physisch von der Azure-Cloud getrennt ist. Es bietet zusätzliche Zusicherungen hinsichtlich spezifischer Anforderungen im Hinblick auf die Hintergrundprüfung durch die US-Regierung, einschließlich bestimmter Kontrollen, die den Zugriff auf Informationen und Systeme einschränken, um die US-Bürger unter Azure Operationspersonal zu überprüfen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - Intune

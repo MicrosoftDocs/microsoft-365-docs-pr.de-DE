@@ -1,5 +1,7 @@
 ---
 title: Verschlüsselung in der Microsoft-Cloud
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Eine Übersicht über die Verschlüsselung in der Microsoft-Cloud.
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690443"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601822"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Verschlüsselung in der Microsoft-Cloud
 
@@ -40,8 +42,8 @@ FIPS 140-2 ist ein Standard, der speziell für das Validieren von Produktmodulen
 Microsoft bescheinigt die zugrunde liegenden kryptografischen Module, die in unseren Cloud-Diensten verwendet werden, mit jeder neuen Version des Windows-Betriebssystems:
 
 - Azure und Azure U.S. Government
-- Dynamics 365 und Dynamics 365 U.S. Government
-- Office 365, Office 365 US-Regierung und Office 365 u.s. Government Defense
+- Dynamics 365 und Dynamics 365 U.S. Government
+- Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense
 
 Verschlüsselung von Office 365-Kundendaten im Ruhezustand wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage-Dienstverschlüsselung und Dienstverschlüsselung in Exchange Online, Skype for Business, OneDrive for Business und SharePoint Online. Office 365 Dienst Verschlüsselung enthält eine Option zur Verwendung von Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese vom Kunden verwaltete Schlüssel Option, die als [Office 365-Kundenschlüssel](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)bezeichnet wird, steht für Exchange Online, SharePoint Online, Skype for Business und OneDrive für Unternehmen zur Verfügung.
 

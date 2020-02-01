@@ -1,5 +1,7 @@
 ---
 title: Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-situ-Speicher, Beweissicherungsverfahren und Office 365 Aufbewahrungsrichtlinien können Sie Postfachinhalte beibehalten, um die behördlichen Vorschriften und eDiscovery-Anforderungen einzuhalten.
-ms.openlocfilehash: 46ec9f39f4fe5629ca1854fab44304f30784dbf4
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 3d128016e89a5e1eadeae4e2c189588c4b2951a3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38686154"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601752"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery
   
@@ -82,7 +84,7 @@ A. Nein. Diese Informationen sind nicht in den Nachrichtenkopfzeilen enthalten u
   
  **F. wie kann ich sicherstellen, dass erweiterte Verteilergruppenempfänger immer beibehalten werden?**
   
-A. Um sicherzustellen, dass erweiterte Verteilergruppenmitglieder immer mit einer Nachricht beibehalten werden, [platzieren Sie alle Postfächer in der Warteschleife](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) , oder erstellen Sie eine organisationsweite Office 365 Aufbewahrungsrichtlinie. 
+A: Um sicherzustellen, dass erweiterte Verteilergruppenmitglieder immer mit einer Nachricht beibehalten werden, [platzieren Sie alle Postfächer in der Warteschleife](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) , oder erstellen Sie eine organisationsweite Office 365 Aufbewahrungsrichtlinie. 
   
  **F. Welche Arten von Gruppen werden unterstützt?**
   

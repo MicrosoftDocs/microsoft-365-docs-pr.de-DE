@@ -1,5 +1,7 @@
 ---
 title: Suchen nach eDiscovery-Aktivitäten im Office 365 Überwachungsprotokoll
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 'Hier erfahren Sie, wie Sie das Office 365 Überwachungsprotokoll nach Ereignissen durchsuchen, die protokolliert werden, wenn Compliance-Administratoren Inhaltssuche-und eDiscovery-Fall Aufgaben im Security #a0 Compliance Center ausführen.'
-ms.openlocfilehash: 7be0cbd5a6cbdad0158228b808802200034265d5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081953"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601532"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Office 365 Überwachungsprotokoll
 
@@ -25,13 +27,13 @@ Die Inhaltssuche und eDiscovery-bezogene Aktivitäten, die im Sicherheits #a0 Co
   
 - Erstellen und Verwalten von eDiscovery-Fällen
     
-- Erstellen, starten und Bearbeiten von Inhalts suchen
+- Erstellen, Starten und Bearbeiten von Inhaltssuchen
     
-- Ausführen von Inhalts Suchaktionen wie Vorschau, Export und Löschen von Suchergebnissen
+- Durchführen von Aktionen bei der Inhaltssuche, wie Vorschau, Exportieren und Löschen von Suchergebnissen
     
-- Konfigurieren der Berechtigungs Filterung für die Inhaltssuche
+- Konfigurieren von Berechtigungsfiltern für die Inhaltssuche
     
-- Verwalten der eDiscovery-Administrator Rolle
+- Verwalten der eDiscovery-Administratorrolle
     
 > [!IMPORTANT]
 > Die in diesem Artikel beschriebenen Aktivitäten sind nur das Ergebnis von eDiscovery-Aufgaben, die mithilfe des Security #a0 Compliance Centers ausgeführt werden. eDiscovery-Aufgaben, die mit dem in-Place-eDiscovery-Tool in Exchange Online oder dem eDiscovery Center in SharePoint Online durchgeführt wurden, sind nicht enthalten. 
@@ -44,7 +46,7 @@ Derzeit müssen Sie einige spezifische Aufgaben durchführen, um eDiscovery-Akti
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
 3. Klicken Sie im linken Bereich auf **Suchen**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
     
@@ -57,7 +59,7 @@ Derzeit müssen Sie einige spezifische Aufgaben durchführen, um eDiscovery-Akti
     
 6. Wählen Sie im Feld **Benutzer** einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer zurückzugeben. 
     
-7. Klicken Sie auf **Suchen** , um die Suche mit Ihren Suchkriterien auszuführen. 
+7. Klicken Sie auf **Suchen**, um die Suche anhand der Suchkriterien auszuführen.  
     
 8. Nachdem die Suchergebnisse angezeigt wurden, können Sie auf **Filterergebnisse** klicken, um die resultierenden Aktivitätsdatensätze zu filtern oder zu sortieren. Leider können Sie das Filtern nicht verwenden, um bestimmte Aktivitäten explizit auszuschließen. 
     
@@ -68,7 +70,7 @@ Derzeit müssen Sie einige spezifische Aufgaben durchführen, um eDiscovery-Akti
   
 ## <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
 
-In der folgenden Tabelle werden die Inhaltssuche und eDiscovery-bezogene Aktivitäten beschrieben, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität mithilfe des Security #a0 Compliance Center oder durch Ausführen des entsprechenden Cmdlets in Remote ausführt. PowerShell, die mit dem Sicherheits #a1 Compliance Center Ihres Unternehmens verbunden ist. 
+In der folgenden Tabelle werden die Inhaltssuche und die eDiscovery-bezogenen Aktivitäten beschrieben, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität mithilfe des Security #a0 Compliance Center ausführt oder das entsprechende Cmdlet in der Remote-PowerShell ausführt, die mit dem Security #a1 Compliance Center Ihrer Organisation verbunden ist. 
   
 > [!NOTE]
 > Die in diesem Abschnitt beschriebenen eDiscovery-Aktivitäten bieten ähnliche Informationen zu den im nächsten Abschnitt beschriebenen eDiscovery-Cmdlet-Aktivitäten. Es wird empfohlen, die in diesem Abschnitt beschriebenen eDiscovery-Aktivitäten zu verwenden, da Sie innerhalb von 30 Minuten in den Überwachungsprotokoll-Suchergebnissen angezeigt werden. Es dauert bis zu 24 Stunden, bis die eDiscovery-Cmdlet-Aktivitäten in Überwachungsprotokoll-Suchergebnissen angezeigt werden. 
@@ -112,7 +114,7 @@ In der folgenden Tabelle werden die Inhaltssuche und eDiscovery-bezogene Aktivit
   
 ## <a name="ediscovery-cmdlet-activities"></a>eDiscovery-Cmdlet-Aktivitäten
 
-In der folgenden Tabelle sind die Cmdlet-Überwachungsprotokolleinträge aufgeführt, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität mithilfe des Security #a0 Compliance Center ausführt oder das entsprechende Cmdlet in der Remote-PowerShell ausführt, die mit verbunden ist. das Sicherheits #a1 Compliance Center Ihrer Organisation. Beachten Sie, dass die detaillierten Informationen im Überwachungsprotokolleintrag für die in dieser Tabelle aufgeführten Cmdlet-Aktivitäten und die im vorherigen Abschnitt beschriebenen eDiscovery-Aktivitäten unterschiedlich sind. 
+In der folgenden Tabelle sind die Cmdlet-Überwachungsprotokolleinträge aufgeführt, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität mithilfe des Security #a0 Compliance Center ausführt oder das entsprechende Cmdlet in der Remote-PowerShell ausführt, die mit dem Security #a1 Compliance Center Ihrer Organisation verbunden ist. Beachten Sie, dass die detaillierten Informationen im Überwachungsprotokolleintrag für die in dieser Tabelle aufgeführten Cmdlet-Aktivitäten und die im vorherigen Abschnitt beschriebenen eDiscovery-Aktivitäten unterschiedlich sind. 
   
 Wie bereits erwähnt, dauert es bis zu 24 Stunden, bis eDiscovery-Cmdlet-Aktivitäten in den Überwachungsprotokoll-Suchergebnissen angezeigt werden.
   
@@ -174,7 +176,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die enthalten sin
 |OrganizationId  <br/> |Die GUID für Ihre Office 365 Organisation.  <br/> |
 |Parameter  <br/> |Der Name und der Wert für die Parameter, die mit dem entsprechenden Cmdlet verwendet wurden.  <br/> |
 |PublicFolderLocations  <br/> |Die Speicherorte für Öffentliche Ordner in Exchange Online, die in einer Inhaltssuche enthalten sind oder in einem eDiscovery-Fall in den Haltebereich gestellt werden.  <br/> |
-|Abfrage  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder ein abfragebasierter Haltestatus.  <br/> |
+|Query  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder ein abfragebasierter Haltestatus.  <br/> |
 |RecordType  <br/> |Der vom Datensatz angegebene Vorgangstyp. Der Wert **18** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Aktivitäten des eDiscovery-Cmdlets](#ediscovery-cmdlet-activities) aufgeführt ist. Der Wert **24** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Vorgehensweise zum Suchen und Anzeigen von eDiscovery-Aktivitäten](#how-to-search-for-and-view-ediscovery-activities) aufgeführt ist.  <br/> |
 |ResultStatus  <br/> |Gibt an, ob die Aktion (in der Eigenschaft "Operation" angegeben) erfolgreich war oder nicht.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Gibt an, dass es sich bei der Aktivität um ein Sicherheits #a0 Compliance Center-Ereignis handelt. Für diese Eigenschaft wird für alle eDiscovery-Aktivitäten der Wert **0 (null** ) verwendet.  <br/> |
@@ -185,4 +187,4 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die enthalten sin
 |UserServicePlan  <br/> |Das Office 365 Abonnement, das von Ihrer Organisation verwendet wird. Für eDiscovery-Aktivitäten ist diese Eigenschaft normalerweise leer.  <br/> |
 |UserType  <br/> |Der Typ des Benutzers, der den Vorgang ausgeführt hat. Die folgenden Werte geben den Benutzertyp an.  <br/> 0 ein regulärer Benutzer. 2 ein Administrator in Ihrer Office 365 Organisation. 3 ein Microsoft Datacenter-Administrator-oder Datacenter-Systemkonto. 4 ein Systemkonto. 5 eine Anwendung. 6 ein Dienstprinzipal. |
 |Version  <br/> |Gibt die Versionsnummer der Aktivität an (identifiziert durch die Operation-Eigenschaft), die protokolliert wird.  <br/> |
-|Arbeitslast  <br/> |Der Office 365 Dienst, in dem die Aktivität aufgetreten ist. Für eDiscovery-Aktivitäten lautet der Wert **SecurityComplianceCenter**.  <br/> |
+|Arbeitslast  <br/> |Der Office 365-Dienst, in dem die Aktivität stattgefunden hat. Für eDiscovery-Aktivitäten lautet der Wert **SecurityComplianceCenter**.  <br/> |

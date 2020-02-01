@@ -1,5 +1,7 @@
 ---
 title: Grenzwerte für Daten Ermittlungen
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ff11d03adf8afb0ce76151ff67a238cce342f9df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2666b1f4add1a55453162d1555e9b7e1f01eada7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080619"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600772"
 ---
 # <a name="data-investigations-preview-limits"></a>Grenzwerte für Daten Ermittlungen (Vorschau)
 
@@ -32,7 +34,7 @@ In der folgenden Tabelle sind die Grenzwerte für Untersuchungen in Daten Unters
   |**Beschreibung der Beschränkung**|**Grenzwert**|
   |:-----|:-----|
   |Maximale Anzahl von Untersuchungen.  <br/> |50  <br/> |
-  |Gesamtzahl der Dokumente, die einer Untersuchung hinzugefügt werden können (für alle Beweis Sätze in der Untersuchung).  <br/> |1 Million  <br/> |
+  |Gesamtzahl der Dokumente, die einer Untersuchung hinzugefügt werden können (für alle Beweis Sätze in der Untersuchung).  <br/> |1 Mio.  <br/> |
   |Gesamtdateigröße pro Auslastung.  <br/> |100 GB  <br/> |
   |Maximale Größe einer einzelnen Datei.   <br/> |100 MB <sup>1</sup> <br/> |
   |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen <sup>1</sup> <br/> |

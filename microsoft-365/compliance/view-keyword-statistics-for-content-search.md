@@ -1,5 +1,7 @@
 ---
 title: Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 'Verwenden Sie das Feature Suchstatistik, um Statistiken für mehrere Inhalts suchen im Security #a0 Compliance Center anzuzeigen und zu vergleichen. Sie können die Keyword-Liste auch konfigurieren, wenn Sie eine Suchabfrage erstellen oder bearbeiten, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern oder Schlüsselwörtern entsprechen.'
-ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082094"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601252"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
 
-Nachdem Sie eine Inhaltssuche erstellt und ausgeführt haben, können Sie Statistiken zu den geschätzten Suchergebnissen anzeigen. Dies umfasst eine Zusammenfassung der Suchergebnisse (ähnlich der Zusammenfassung der geschätzten Suchergebnisse, die im Detailbereich angezeigt werden), die Abfragestatistik, beispielsweise die Anzahl der inhaltsspeicherorte mit Elementen, die mit der Suchabfrage übereinstimmen, und der Name der inhaltsspeicherorte. mit den am besten übereinstimmenden Elementen. Sie können Statistiken für eine oder mehrere Inhalts suchen anzeigen. Auf diese Weise können Sie die Ergebnisse für mehrere Suchvorgänge schnell vergleichen und Entscheidungen hinsichtlich der Effektivität ihrer Suchabfragen treffen.
+Nachdem Sie eine Inhaltssuche erstellt und ausgeführt haben, können Sie Statistiken zu den geschätzten Suchergebnissen anzeigen. Dies umfasst eine Zusammenfassung der Suchergebnisse (ähnlich der Zusammenfassung der geschätzten Suchergebnisse, die im Detailbereich angezeigt werden), die Abfragestatistik, beispielsweise die Anzahl der inhaltsspeicherorte mit Elementen, die mit der Suchabfrage übereinstimmen, und der Name der inhaltsspeicherorte. mit den am besten übereinstimmenden Elementen. Sie können Statistiken für eine oder mehrere Inhaltssuchen anzeigen. Auf diese Weise können Sie die Ergebnisse für mehrere Suchvorgänge schnell vergleichen und Entscheidungen hinsichtlich der Effektivität ihrer Suchabfragen treffen.
   
 Darüber hinaus können Sie neue und vorhandene Suchvorgänge so konfigurieren, dass Statistiken für jedes Schlüsselwort in einer Suchabfrage zurückgegeben werden. Auf diese Weise können Sie die Anzahl der Ergebnisse für jedes Keyword in einer Abfrage vergleichen und die Keyword-Statistik von mehreren Suchvorgängen vergleichen.
   
-Sie können auch die Suchstatistik und die Keyword-Statistik in eine CSV-Datei herunterladen. Auf diese Weise können Sie die Filter-und Sortierfunktionen in Excel verwenden, um Ergebnisse zu vergleichen und Berichte für Ihre Suchergebnisse vorzubereiten.
+Sie können auch die Such- und Schlüsselwortstatistik in einer CSV-Datei herunterladen. Auf diese Weise können Sie die Filter- und Sortierfunktionen in Excel dazu verwenden, um Ergebnisse zu vergleichen und Berichte für Ihre Suchergebnisse vorzubereiten.
   
 ## <a name="get-statistics-for-content-searches"></a>Abrufen von Statistiken für Inhalts suchen
 
@@ -88,7 +90,7 @@ So zeigen Sie Statistiken für die Inhaltssuche an:
     
     **Top-Standorte**
     
-    Auf dieser Seite werden Statistiken zur Anzahl der Elemente angezeigt, die mit der Suchabfrage in jedem durchsuchten Inhaltsspeicherort übereinstimmen. Die oberen 1.000-Speicherorte werden angezeigt. Wenn Sie Statistiken für mehrere Suchvorgänge anzeigen, werden die oberen 1.000 Speicherorte für jede Suche angezeigt. Beachten Sie, dass ein Inhaltsspeicherort auf dieser Seite nicht enthalten ist, wenn er keine Elemente enthält, die mit der Suchabfrage übereinstimmen.
+    Auf dieser Seite werden Statistiken zur Anzahl der Elemente angezeigt, die mit der Suchabfrage in jedem durchsuchten Inhaltsspeicherort übereinstimmen. Es werden die ersten 1.000 Speicherorte angezeigt. Wenn Sie Statistiken für mehrere Suchvorgänge anzeigen, werden die oberen 1.000 Speicherorte für jede Suche angezeigt. Beachten Sie, dass ein Inhaltsspeicherort auf dieser Seite nicht enthalten ist, wenn er keine Elemente enthält, die mit der Suchabfrage übereinstimmen.
     
     ![Statistiken zur Anzahl der Elemente, die in den durchsuchten Inhaltsspeicherorten gefunden wurden](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   

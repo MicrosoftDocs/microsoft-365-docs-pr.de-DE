@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 E3 migrieren.
-ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593694"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627981"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 E3
 
@@ -56,7 +56,6 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Micr
 | Microsoft Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | OneDrive for Business | 1 TB Speichergrenzwert pro Benutzer   | Unbegrenzt | 
 | Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
-| StaffHub  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](./media/check-mark.png) | 
 | Outlook-Kunden Manager, MileIQ  | ![Im Lieferumfang von Microsoft 365 Business enthalten](./media/check-mark.png)   | | 
 | **Bedrohungsschutz**     | | | 
 | Funktionen zur Verringerung der Angriffsfläche | [Siehe diese Liste](#threat-protection) | Unternehmensverwaltung der hardwarebasierten Isolierung für Microsoft Edge | 

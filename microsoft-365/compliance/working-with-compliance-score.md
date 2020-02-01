@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit dem Microsoft Compliance Score
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Workflowtools in Microsoft Compliance Score die Compliance für Ihre Organisation verwalten können.
-ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802133"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601192"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Arbeiten mit Microsoft Compliance Score (Vorschau)
 

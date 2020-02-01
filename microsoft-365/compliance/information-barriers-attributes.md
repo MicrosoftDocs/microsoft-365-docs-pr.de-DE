@@ -1,5 +1,7 @@
 ---
 title: Attribute für Richtlinien für Informationsbarrieren
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Referenz für verschiedene Attribute, die Sie in Richtlinien für Informationsbarrieren verwenden können.
-ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970783"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600622"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
@@ -57,8 +59,8 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 |Name der Azure Active Directory-Eigenschaft<br/>(LDAP-Anzeigename)  |Exchange-Eigenschaftsname  |
 |---------|---------|
 |Gemeinsame Dokument       | Gemeinsame Dokument        |
-|Company     |Company         |
-|Abteilung     |Abteilung         |
+|Unternehmen     |Unternehmen         |
+|Department     |Department         |
 |ExtensionAttribute1 |CustomAttribute1  |
 |ExtensionAttribute2 |CustomAttribute2  |
 |ExtensionAttribute3 |CustomAttribute3  |
@@ -87,7 +89,7 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
 |UserPrincipalName  |UserPrincipalName  |
-|Mail   |WindowsEmailAddress    |
+|E-Mail   |WindowsEmailAddress    |
 |Beschreibung    |Beschreibung    |
 |MemberOf   |MemberOfGroup  |
 

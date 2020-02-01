@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 476d1b63cfba4c3c9d31fd38c4ad526ca167f7d7
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 292e565064a91d2256dc62831dc1f0957a9b96eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803988"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601872"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Polizei gesicherte Anlagen (PASF) Vereinigtes Königreich
 
@@ -35,7 +37,7 @@ Microsoft verwendet einen ganzheitlichen verteidigungsbezogenen Ansatz für die 
 
 Diese Zertifizierungen werden durch die Maßnahmen unterstützt, die wir ergreifen, um die physische Sicherheit unserer Rechenzentren zu schützen. Wir nehmen einen mehrstufigen Ansatz an, der mit der Planung, Erstellung und dem Betrieb von Rechenzentren beginnt, um den physischen Zugriff auf die Bereiche, in denen Kundendaten gespeichert sind, streng zu kontrollieren. Rechenzentren, die von Microsoft verwaltet werden, verfügen über umfangreiche Schutzebenen mit Zugriffsgenehmigung, die für den Umkreis der Einrichtung, den Umkreis des Gebäudes, den Gebäudebereich und den Datencenter-Boden erforderlich sind. Dadurch wird das Risiko verringert, dass nicht autorisierte Benutzer physischen Zugriff auf Daten und Rechenzentrumsressourcen erhalten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)

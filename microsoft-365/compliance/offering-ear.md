@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ae28d96416f46a45c0d271b9c291040c2e9d8b31
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1adf0bab35c921dd416028747b0309e5ad5f3055
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804128"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601962"
 ---
 # <a name="us-export-administration-regulations-ear"></a>US-Export Verwaltungsvorschriften (EAR)
 
@@ -47,7 +49,7 @@ Die US-Commerce-Abteilung, die das Ohr erzwingt, hat die Position übernommen, d
 - **End-to-End-Verschlüsselung**. Durch die Nutzung der End-to-End-Verschlüsselung Safe Harbor für physikalische Speicherorte, die im Ohr angegeben sind, bieten Microsoft-bezogene Cloud-Dienste Verschlüsselungsfunktionen, die zum Schutz vor Export Steuerungs Risiken beitragen können. Sie bieten Kunden außerdem eine [Breite Palette von Optionen zum Verschlüsseln von Daten](https://aka.ms/Azure-Encryption-Overview) in der Übertragung und im Ruhezustand sowie die Flexibilität, zwischen Verschlüsselungsoptionen auszuwählen.
 - **Tools und Protokolle zur Verhinderung nicht autorisierter Exporte**. Die Verwendung von Verschlüsselung hilft auch vor potenziellen Exporten (oder als Wiederexport) unter dem Ohr zu schützen, da selbst wenn eine nicht-US-Person Zugriff auf verschlüsselte Daten hat, nichts offenbart wird, wenn Sie die Daten nicht lesen oder verstehen können, während Sie verschlüsselt werden; Daher gibt es keine "Freigabe" von kontrollierten Daten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 Government (gcc-High und DoD)](https://aka.ms/Office-365-Export-Controls)

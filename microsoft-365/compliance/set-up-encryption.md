@@ -1,5 +1,7 @@
 ---
 title: Einrichten von Verschlüsselung in Office 365 Enterprise
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Bei Office 365 sind einige Verschlüsselungsfunktionen standardmäßig aktiviert. andere Funktionen können so konfiguriert werden, dass bestimmte Compliance-oder gesetzliche Anforderungen erfüllt werden.
-ms.openlocfilehash: f758bc026ee1ef8b071b92d29c950c3f436305a3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c52610b1fb3bb1fd727e05c950a3354f25a93ace
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686102"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601472"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Einrichten von Verschlüsselung in Office 365 Enterprise
 

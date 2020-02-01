@@ -1,10 +1,12 @@
 ---
 title: ISO/IEC 27001:2013 Information Security Management Standards
 description: Microsoft ist im Hinblick auf seine Umsetzung dieser Standards für Information Security Management zertifiziert.
-keywords: Microsoft 365, Compliance, Portfolio
+keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,14 +14,14 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260113"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602252"
 ---
-# <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>Compliance-Portfolio: ISO/IEC 27001:2013 Information Security Management Standards
+# <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards
 
 ## <a name="isoiec-27001-overview"></a>ISO/IEC 27001 – Übersicht
 

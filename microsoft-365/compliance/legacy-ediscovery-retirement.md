@@ -1,5 +1,7 @@
 ---
 title: Ruhestand von vorversions-eDiscovery-Tools
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,18 +12,18 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210060"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600562"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
 Im Laufe der Jahre hat Microsoft eDiscovery-Tools bereitgestellt, mit denen Sie e-Mail-Inhalte aus Exchange Online durchsuchen, in einer Vorschau anzeigen und exportieren können. Diese Tools bieten jedoch nicht mehr die Möglichkeit, nach nicht-Exchange-Inhalten in anderen Office 365 Diensten wie SharePoint Online und Office 365 Gruppen zu suchen. Um dies zu beheben, bietet Microsoft weitere eDiscovery-Tools, die Sie bei der Suche nach einer Vielzahl von Office 365 Inhalten unterstützen. Und wir arbeiten hart daran, die aktuellsten und leistungsfähigsten eDiscovery-Funktionen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu integrieren. Auf diese Weise können Organisationen auf rechtliche, interne und andere Dokumentanforderungen für Inhalte in vielen Office 365 Diensten, einschließlich Exchange Online, reagieren.
 
-Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 365 Compliance Center werden die folgenden eDiscovery-bezogenen Funktionen und Funktionen im Zusammenhang mit der Suche nach e-Mail-Inhalten in den Ruhestand gehen:
+Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 365 Compliance Center werden die folgenden eDiscovery-bezogenen Features und Funktionen im Zusammenhang mit der Suche nach e-Mail-Inhalten in Exchange Online und Office 365 in den Ruhestand gehen:
 
 - In [-Place-eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) und [in-Place-](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) Speicher in der Exchange-Verwaltungskonsole.
 

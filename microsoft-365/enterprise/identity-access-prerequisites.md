@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 667dfe355aca61eff99a85c2a2c29ee0b57e74c5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030960"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601022"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -68,7 +70,7 @@ Die folgenden e-Mail-Clients unterstützen moderne Authentifizierung und bedingt
 |Plattform|Client|Version/Hinweise|
 |:-------|:-----|:------------|
 |**Windows**|Outlook|2016, 2013 [Aktivieren der modernen Authentifizierung](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [erforderliche Updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
-|**iOS**|Outlook für iOS|[Neueste Version](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
+|**IOS**|Outlook für iOS|[Neueste Version](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook für Android|[Neueste Version](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
 |**Linux**|Nicht unterstützt||
@@ -80,12 +82,12 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 
 |Plattform|Word/Excel/PowerPoint|OneNote|OneDrive-App|SharePoint-App|OneDrive-Synchronisierungsclient|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|Unterstützt|Unterstützt|Nicht zutreffend|N/V|Vorschau<sup>*</sup>|
-|Windows 8.1|Unterstützt|Unterstützt|Nicht zutreffend|N/V|Vorschau<sup>*</sup>|
-|Windows 10|Unterstützt|Unterstützt|Nicht zutreffend|N/V|Vorschau<sup>*</sup>|
+|Windows 7|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Vorschau<sup>*</sup>|
+|Windows 8.1|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Vorschau<sup>*</sup>|
+|Windows 10|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Vorschau<sup>*</sup>|
 |Windows Phone 10|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|
-|Android|Unterstützt|Unterstützt|Unterstützt|Unterstützt|Nicht zutreffend|
-|iOS|Unterstützt|Unterstützt|Unterstützt|Unterstützt|Nicht zutreffend|
+|Android|Unterstützt|Unterstützt|Unterstützt|Unterstützt|N/V|
+|iOS|Unterstützt|Unterstützt|Unterstützt|Unterstützt|N/V|
 |macOS|Öffentliche Vorschau|Öffentliche Vorschau|Nicht zutreffend|Nicht zutreffend|Nicht unterstützt|
 |Linux|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|
 

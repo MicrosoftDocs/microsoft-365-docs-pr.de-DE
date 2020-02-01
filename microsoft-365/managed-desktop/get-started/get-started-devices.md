@@ -4,15 +4,17 @@ description: ''
 keywords: Microsoft Managed Desktop, Gerät, erste Schritte, Microsoft 365
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 59cdb911c46fbb2ad5dd998810297a5502c8fa0c
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: ab04fb0523d44dd04a002ab9fbf095b88b28fb31
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989550"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602862"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Vorbereiten Ihrer Benutzer für die Verwendung von Geräten
 

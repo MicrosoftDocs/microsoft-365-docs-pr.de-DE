@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das Microsoft 365 Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das Microsoft 365 Compliance Center, einschließlich dessen, was es enthält, wie Sie es erhalten, und Ihre nächsten Schritte.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f1a779037b283d2b03b48890dc8eb8423d90c147
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247583"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602782"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Übersicht über das Microsoft 365 Compliance Center
 

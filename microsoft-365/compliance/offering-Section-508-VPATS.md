@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6d7bcb6beccc9059d3a7f75fc52b307648f314c2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804228"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602022"
 ---
 # <a name="us-section-508"></a>U.S.-Abschnitt 508
 
@@ -25,13 +27,13 @@ ms.locfileid: "40804228"
 
 Der US-amerikanische Kongreß hat das Rehabilitationsgesetz in 1998 und 2000 so geändert, dass Bundesbehörden ihre Produkte für elektronische und Informationstechnologien (ETI) wie Software, Hardware, elektronische Inhalte und Support Dokumentation für Personen mit Behinderungen. In Abschnitt 508 des United States Workforce Rehabilitation Act von 1973 (29 US Code § 794d), geändert, wird festgeschrieben, dass die Bundesbehörden das ETI in einer Weise beschaffen, verwalten und nutzen, die sicherstellt, dass Bundesangestellte mit Behinderungen vergleichbaren Zugriff auf und die Verwendung von haben. Daten und EIT im Verhältnis zu anderen Bundesangestellten.
 
-Microsoft ist ein wichtiger Anbieter von Software und Cloud-Diensten für US-Bundes-und Landesregierungen.  Um Regierungskunden bei der Entscheidungsfindung bei der Beschaffung zu unterstützen, veröffentlicht Microsoft Zugänglichkeits Konformitätsberichte, in denen beschrieben wird, in welchem Ausmaß unsere Produkte und Dienste die Kriterien von Abschnitt 508 unterstützen.  Anhand dieser Informationen können Microsoft-Kunden ermitteln, ob ein bestimmtes Produkt oder eine bestimmte Dienstleistung ihren spezifischen Anforderungen entspricht.
+Microsoft ist ein wichtiger Anbieter von Software und Cloud-Diensten für US-Bundes-und Landesregierungen.  Um Regierungskunden bei der Entscheidungsfindung bei der Beschaffung zu unterstützen, veröffentlicht Microsoft Zugänglichkeits Konformitätsberichte, in denen beschrieben wird, in welchem Ausmaß unsere Produkte und Dienste die Kriterien von Abschnitt 508 unterstützen.  Anhand dieser Informationen können Microsoft-Kunden ermitteln, ob ein bestimmtes Produkt oder eine bestimmte Dienstleistung den spezifischen Bedürfnissen gerecht wird.
 
 ## <a name="microsoft-and-us-section-508"></a>Microsoft und US-Abschnitt 508
 
 Die Überlegungen von Microsoft zum US-Abschnitt 508 bei der Entwicklung von Produkten und Diensten zeigen, dass die Technologie und Daten für alle Kunden zugänglich sind.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services

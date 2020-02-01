@@ -1,5 +1,7 @@
 ---
 title: Verwenden Sie Exchange Online und das Security & Compliance Center, um die SEC-Richtlinie 17a-4 einzuhalten
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates bestätigt, dass Exchange Online und das Security & Compliance Center bei der empfohlenen Konfiguration die relevanten Speicheranforderungen der CFTC-Richtlinie 1.31(c)-(d), der FINRA-Richtlinie 4511 und der SEC-Richtlinie 17a-4 erfüllen. Sie können die Bewertung herunterladen.
-ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122424"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628591"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Verwenden Sie Exchange Online und das Security & Compliance Center, um die SEC-Richtlinie 17a-4 einzuhalten
 
@@ -40,7 +42,7 @@ Sie können [hier die Bewertung von Cohasset herunterladen](https://servicetrust
 
 Beachten Sie, dass diese Bewertung auf Exchange Online beschränkt ist. Die Bewertung umfasst keine anderen Office 365-Dienste wie SharePoint Online oder OneDrive for Business, obwohl in Zukunft der Support für diese Dienste unter Einhaltung der SEC 17a-4 geplant ist.
 
-Es ist wichtig zu wissen, dass Skype for Business und Teams auch Daten Exchange Online speichert. Daher deckt die Bewertung auch Nachrichten von Skype for Business sowie Kanal- und Chatnachrichten von Teams ab.
+Es ist wichtig zu wissen, dass Skype for Business und Microsoft Teams auch Daten in Exchange Online speichern. Daher deckt die Bewertung Nachrichten von Skype for Business sowie Kanal- und Chatnachrichten von Microsoft Teams ab.
 
 ## <a name="using-preservation-lock-is-key-to-the-recommended-configuration"></a>Die Verwendung der Erhaltungssperre ist für die empfohlene Konfiguration essentiell
 
@@ -67,6 +69,8 @@ Sie können eine Aufbewahrungsrichtlinie über PowerShell sperren. Weitere Infor
 
 Derzeit gibt es einige Einschränkungen für Exchange Online:
 
-- Überwachung auf Elementebene in Office 365-Gruppen-Postfächern ist nicht verfügbar.
 - Unterhaltungsfäden stehen nicht für Chats und Kanal Nachrichten in Teams zur Verfügung.
 - Für Teams Chat- und Kanalnachrichten werden „gefällt mir“-Angaben nicht gespeichert.
+
+> [!NOTE]
+> Überwachung auf Elementebene für Office 365-Gruppen-Postfächer ist jetzt verfügbar. Weitere Informationen finden Sie unter [Verwalten der Postfachüberwachung](enable-mailbox-auditing.md).

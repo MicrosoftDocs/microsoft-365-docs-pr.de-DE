@@ -1,5 +1,7 @@
 ---
 title: Office 365 von Kunden verwalteten Verschlüsselungsfeatures
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Office 365.'
-ms.openlocfilehash: f96e87199b4f09ecce5c4c5b49212d4320b5ce8c
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: 1a5618d14c0a88c7e3643e441b874b7ac97e07de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690521"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601832"
 ---
 # <a name="customer-managed-encryption-features-in-office-365"></a>Von Kunden verwaltete Verschlüsselungsfeatures in Office 365
 

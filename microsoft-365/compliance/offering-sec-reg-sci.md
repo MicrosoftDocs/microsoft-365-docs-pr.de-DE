@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: de28f982fe7615d0ca81af756af81b3c25fc9de1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807702"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601862"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: Regulation Systems Compliance and Integrity (SCI)
 
@@ -41,7 +43,7 @@ Zur Unterstützung von US-Finanzdienstleistungskunden, die diese Verordnung einh
 
 Dieses Dokument enthält eine umfassende Prüfliste der kritischen regelmäßigen Sci-Fokusbereiche. Diese Prüfliste hilft Finanzinstituten zu verstehen, wie Sie Azure einsetzen können, um Ihren Regulatoren, Kunden und Führungskräften zu helfen, dass Sie die geltenden behördlichen Anforderungen einhalten können.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -50,7 +52,7 @@ Dieses Dokument enthält eine umfassende Prüfliste der kritischen regelmäßige
 - [Reglement Sci Implementation Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): Maps Azure-Funktionen gegen die Verordnung und Details der gemeinsamenverantwortung für die Compliance.
 - [Entwerfen von zuverlässigen Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/resiliency/): eine kurze Übersicht über das Erstellen von Zuverlässigkeit in jedem Schritt des Azure-Anwendungsdesigns.
 - [Entwerfen hoch verfügbarer Anwendungen](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): wie Entwickler helfen können, sicherzustellen, dass Ihre Azure-Speicheranwendungen hoch verfügbar sind.
-- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Regulierungsbehörden.
+- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

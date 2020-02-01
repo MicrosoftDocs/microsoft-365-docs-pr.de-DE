@@ -1,5 +1,7 @@
 ---
 title: Unterstützte Dateitypen in Data Investigations (Preview)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 055104a5b7f60fe54b421e7236143aa9af08b57f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081904"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601432"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Unterstützte Dateitypen in Data Investigations (Preview)
 
@@ -28,7 +30,7 @@ Data Investigations (Preview) unterstützt viele Dateitypen auf verschiedene Art
 | MIME-Typ | File-Klasse | Nativer Viewer | Text Anzeige | Annotations-Viewer | Container Extraktion | Erweiterungen |
 | :- | :- | :- | :- | :- | :- | :- |
 | application/msword | Dokument | Ja | Ja | Ja | Nein | . doc;. dat |
-| application/pdf | Dokument | Ja | Ja | Ja | Nein | .pdf |
+| application/pdf | Dokument | Ja | Ja | Ja | Nein | .PDF |
 | Application/RTF | Dokument | Ja | Ja | Ja | Nein | . RTF;. doc |
 | application/vnd. MS-Excel | Dokument | Ja | Ja | Ja | Nein | xls; DAT |
 | application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Produktivität/Open Document Format | Ja | Ja | Nein | Nein | . xlsb |
@@ -54,7 +56,7 @@ Data Investigations (Preview) unterstützt viele Dateitypen auf verschiedene Art
 | Application/x-Msaccess | Dokument | Ja | Ja | Ja | Nein | MDB |
 | Application/x-mspublisher | Dokument | Ja | Ja | Ja | Nein | . pub |
 | Application/x-rar-komprimiert | Archiv/Container | Nein | Nein | Nein | Ja | . rar |
-| Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | . zip |
+| Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | .ZIP |
 | Bild/BMP | Image | Ja | Ja | Ja | Nein | BMP |
 | Bild/EMF | Image | Ja | Ja | Ja | Nein | . EMF |
 | image/gif | Dokument | Ja | Ja | Ja | Nein | .gif |
@@ -63,7 +65,7 @@ Data Investigations (Preview) unterstützt viele Dateitypen auf verschiedene Art
 | Bild/TIFF | Image | Ja | Ja | Ja | Nein | TIF |
 | Image/vnd. DWG | Dokument | Ja | Ja | Ja | Nein | . dwg;. DXF |
 | Image/WMF | Dokument | Ja | Ja | Ja | Nein | . WMF |
-| Nachricht/RFC822 | Produktivität/Zusammenarbeit | Nein | Nein | Nein | Nein | EML |
+| Nachricht/RFC822 | Produktivität/Zusammenarbeit | Nein | Nein | Nein | Nein | .EML |
 | Text/CSV | Dokument | Ja | Ja | Ja | Nein | . CSV |
 | Text/HTML | Dokument | Ja | Ja | Ja | Nein | . html;. shtml;. htm |
 | text/plain | Dokument | Ja | Ja | Ja | Nein | txt; CSS;. con;. pl;. CSV;. dat |

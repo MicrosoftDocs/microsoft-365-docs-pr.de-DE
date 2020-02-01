@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 6: Konfigurieren der E-Mail-Verschlüsselung'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Verstehen und Konfigurieren von Privileged Access Management für Office 365.
-ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370432"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600922"
 ---
 # <a name="step-6-configure-email-encryption"></a>Schritt 6: Konfigurieren der E-Mail-Verschlüsselung
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 6: Informationsschutz](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Es gibt drei Arten von e-Mail-Verschlüsselung in Microsoft 365.
 
@@ -62,7 +64,7 @@ Weitere Informationen finden Sie unter [Verwaltung von Informationsrechten in Ex
 
 ## <a name="smime"></a>S/MIME
 
-S/MIME ist eine digitale zertifikatbasierte e-Mail-basierte Schutzlösung, mit der Sie eine Nachricht sowohl verschlüsseln als auch digital signieren können. Durch die Nachrichtenverschlüsselung kann sichergestellt werden, dass nur der vorgesehene Empfänger die Nachricht öffnen und lesen kann. Eine digitale Signatur hilft dem Empfänger, die Identität des Absenders zu überprüfen und festzustellen, ob der Absender ihn nur gesendet hätte.
+S/MIME ist eine digitale zertifikatbasierte e-Mail-basierte Schutzlösung, mit der Sie eine Nachricht sowohl verschlüsseln als auch digital signieren können. Die Nachrichtenverschlüsselung hilft Ihnen bei der Sicherstellung, dass nur der beabsichtigte Empfänger die Nachricht öffnen und lesen kann. Eine digitale Signatur hilft dem Empfänger, die Identität des Absenders zu überprüfen und festzustellen, ob der Absender ihn nur gesendet hätte.
 
 ![S/MIME-Schutz für e-Mail-Nachrichten](./media/infoprotect-email-encryption/smime-protection.png)
 

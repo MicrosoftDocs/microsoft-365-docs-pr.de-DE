@@ -1,5 +1,7 @@
 ---
 title: Einrichten eines Connectors zum Importieren von HR-Daten
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,24 +12,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: ba673f6328751a7eee10d5ab4097aa334c09f339
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247652"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600692"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von HR-Daten
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) zu importieren, beispielsweise das Datum, an dem ein Mitarbeiter seinen Rücktritt gesendet hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der neuen [Insider Risiko-Verwaltungslösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, indem Sie eine CSV-Zuordnungsdatei erstellt, die Ihre HR-Daten enthält, einen Data Connector im Compliance Center erstellt und dann ein Skript ausführt (auf einem geplante Basis), die die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Der Data Connector verwendet dann Microsoft-Compliance-Lösungen (wie Insider Risk Management), um auf die in Ihre Microsoft 365-Organisation importierten HR-Daten zuzugreifen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den HR-Connector in Schritt 3 erfolgreich erstellen können.
 
 - Dem Benutzer, der den HR-Connector in Schritt 3 erstellt, muss in Exchange Online die Rolle "Post Fach Import Export" zugewiesen sein. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-- Sie müssen bestimmen, wie Sie die Daten aus dem HR-System Ihrer Organisation (regelmäßig) abrufen oder exportieren und die CSV-Datei hinzufügen, die in Schritt 2 beschrieben wird. Mit dem in Schritt 4 ausgeführten Skript werden die HR-Daten in der CSV-Datei in die Microsoft-Cloud hochgeladen.
+- Sie müssen bestimmen, wie die Daten aus dem HR-System Ihrer Organisation (regelmäßig) abgerufen oder exportiert und der CSV-Datei hinzugefügt werden, die in Schritt 2 beschrieben wird. Mit dem in Schritt 4 ausgeführten Skript werden die HR-Daten in der CSV-Datei in die Microsoft-Cloud hochgeladen.
 
 - Mit dem in Schritt 4 ausgeführten Beispielskript werden HR-Daten in die Microsoft-Cloud hochgeladen, sodass Sie von anderen Microsoft-Tools wie der Lösung für das Insider Risiko-Management verwendet werden können. Dieses Beispielskript wird unter keinem Microsoft Standard Support Programm oder-Dienst unterstützt. Das Beispielskript wird ohne jegliche Gewährleistung bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das aus der Verwendung oder der Leistung des Beispielskripts und der Dokumentation erwachsen, bleibt bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
 
@@ -64,7 +66,7 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei beschrieb
 |**LastWorkingDate**|Gibt den letzten Tag der Arbeit für den terminierten Mitarbeiter an. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf einem lokalen Computer oder Netzwerkspeicherort, der beim Ausführen des Skripts in Schritt 4 angegeben werden kann. Sie sollten auch eine Updatestrategie implementieren, damit die CSV-Datei immer die aktuellsten Informationen enthält, sodass unabhängig von der Ausführung des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
+Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf dem lokalen Computer, auf dem Sie das Skript ausführen, in Schritt 4. Sie sollten auch eine Updatestrategie implementieren, um sicherzustellen, dass die CSV-Datei immer die aktuellsten Informationen enthält, sodass bei jedem Ausführen des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
 
 ## <a name="step-3-create-the-hr-connector"></a>Schritt 3: Erstellen des HR-Connectors
 
@@ -104,7 +106,7 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Schritt 4: Ausführen des Beispielskripts zum Hochladen Ihrer HR-Daten
 
-Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispielskript auszuführen, mit dem die HR-Daten in der CSV-Datei (die Sie in Schritt 2 erstellt haben) in die Microsoft-Cloud hochgeladen werden. Nachdem Sie das Skript ausgeführt haben, kann der in Schritt 3 erstellte HR-Konnektor auf die Daten in Ihrer Microsoft 365-Organisation zugreifen und diese importieren, wo Sie von anderen Compliance-Tools wie der Insider Risikomanagement-Lösung aufgerufen werden kann. Nachdem Sie das Skript ausgeführt haben, sollten Sie eine Aufgabe so planen, dass Sie täglich automatisch ausgeführt wird, damit die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden. Siehe [Planen des automatischen Ausführens des Skripts](#optional-step-6-schedule-the-script-to-run-automatically).
+Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispielskript auszuführen, mit dem die HR-Daten in der CSV-Datei (die Sie in Schritt 2 erstellt haben) in die Microsoft-Cloud hochgeladen werden. Das Skript lädt die Daten insbesondere in den HR-Konnektor hoch. Nachdem Sie das Skript ausgeführt haben, importiert der in Schritt 3 erstellte HR-Konnektor die HR-Daten in Ihre Microsoft 365-Organisation, in der der Zugriff über andere Compliance-Tools wie die Insider Risiko-Management Lösung möglich ist. Nachdem Sie das Skript ausgeführt haben, sollten Sie eine Aufgabe so planen, dass Sie täglich automatisch ausgeführt wird, damit die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden. Siehe [Planen des automatischen Ausführens des Skripts](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Wechseln Sie zu [dieser GitHub-Website](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) , um auf das Beispielskript zuzugreifen.
 
@@ -132,7 +134,7 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
    |`appId` |Dies ist die Aad-Anwendungs-ID für die APP, die Sie in Schritt 1 in Azure AD erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. | 
    |`appSecret`|Dies ist der Aad-Anwendungsschlüssel für die APP, die Sie in Schritt 1 in Azure AD erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
    |`jobId`|Dies ist die Auftrags-ID für den HR-Konnektor, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die HR-Daten, die in die Microsoft-Cloud hochgeladen werden, mit dem HR-Connector zuzuordnen.|
-   |`csvFilePath`|Dies ist der Dateipfad auf dem lokalen Computer (den Sie zum Ausführen des Skripts verwenden) für die CSV-Datei, die Sie in Schritt 2 erstellt haben. Wenn sich die CSV-Datei an einem freigegebenen Netzwerkspeicherort befindet, müssen Sie den vollständigen Dateipfad für diesen Speicherort angeben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
+   |`csvFilePath`|Dies ist der Dateipfad auf dem lokalen Computer (den Sie zum Ausführen des Skripts verwenden) für die CSV-Datei, die Sie in Schritt 2 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
    |||
    
    Im folgenden finden Sie ein Beispiel für die Syntax für das HR-Connector-Skript mit Istwerten für jeden Parameter:

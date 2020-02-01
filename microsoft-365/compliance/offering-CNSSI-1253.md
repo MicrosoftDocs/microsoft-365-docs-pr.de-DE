@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7e5d72b6a8992b8db91820c04b451979b474aeb9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805418"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602592"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Ausschuss für nationale Sicherheitssysteme – Anweisung Nr. 1253 (CNSSI 1253)
 
@@ -37,7 +39,7 @@ Azure Government verfügt derzeit über eine FedRAMP hohe provisorische Autorisi
   
 Die Einhaltung von Azure Government mit den anspruchsvollen CNSSI 1253-Anforderungen bedeutet, dass Azure Kunden aus dem öffentlichen Sektor in den USA eine umfassende Palette von Diensten bieten kann, die mit CNSSI 1253 kompatibel sind, sodass Sie von den Kosteneinsparungen und rigorosen Vorteilen profitieren können. Sicherheit der Microsoft-Cloud.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 

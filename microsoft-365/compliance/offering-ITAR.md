@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 045f6c177acd3f5feb0645fb56d25426632638e7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804608"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602192"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Internationaler Handel mit Rüstungs Vorschriften (ITAR)
 
@@ -37,7 +39,7 @@ Die ITAR hat bestimmte Verpflichtungen zum Melden von Verstößen, die bestimmte
   
 Kunden, die ITAR-geregelte Daten hosten möchten, sollten mit Ihren Microsoft-Konto-und Lizenzierungs Teams zusammenarbeiten, um weitere Informationen zu erhalten, geeignete Vereinbarungen zu treffen und auf relevante Systemarchitektur Informationen zuzugreifen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)

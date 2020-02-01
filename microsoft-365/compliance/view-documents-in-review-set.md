@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Dokumenten in einem Prüfdateisatz
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,24 +14,24 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: e9d5b73307d371ac221b42a67368f358a37dde60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aa61c9c2fd79625249384f12a2545f976fdae538
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082096"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601242"
 ---
 # <a name="view-documents-in-a-review-set"></a>Anzeigen von Dokumenten in einem Prüfdateisatz
 
 Advanced eDiscovery zeigt Inhalte über mehrere Betrachter mit jeweils unterschiedlichen Zwecken an. Die verschiedenen Viewer können verwendet werden, indem Sie auf ein beliebiges Dokument in einem Überprüfungs Satzes klicken. Die derzeit bereitgestellten Viewer sind:
 
-- Datei Metadaten
+- Dateimetadaten
 - Systemeigene Ansicht
 - Text Ansicht
 - Ansicht mit Anmerkungen versehen
 - Konvertierte Ansicht
 
-## <a name="file-metadata"></a>Datei Metadaten
+## <a name="file-metadata"></a>Dateimetadaten
 
 Dieser Bereich kann ein-/Ausschalten aktiviert/deaktiviert werden, um verschiedene Metadaten anzuzeigen, die mit dem Dokument verknüpft sind. Obwohl das Suchergebnis Raster für die Anzeige bestimmter Metadaten angepasst werden kann, gibt es Fälle, in denen das horizontale Scrollen beim Überprüfen von Daten schwierig sein kann. Der Datei Metadatenbereich ermöglicht einem Benutzer das Umschalten einer Ansicht innerhalb des Viewers.
 

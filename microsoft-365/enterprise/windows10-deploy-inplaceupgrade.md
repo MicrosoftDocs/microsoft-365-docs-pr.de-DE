@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112689"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602852"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
@@ -29,7 +31,7 @@ Wenn Sie über vorhandene Computer verfügen, auf denen Windows 7 oder Windows 8
 
 Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Image mithilfe von Microsoft Endpoint Configuration Manager als direktes Upgrade zu konfigurieren und bereitzustellen.
 
-## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Die Windows 10-Bereitstellung mit dem Configuration Manager-Poster
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Das Poster „Windows 10-Bereitstellung mit Configuration Manager“
 
 Das Poster des Configuration Managers ist eine Seite im Querformatmodus (17x11). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
 
