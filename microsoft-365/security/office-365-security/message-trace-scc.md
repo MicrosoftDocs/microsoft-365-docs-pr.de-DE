@@ -1,5 +1,7 @@
 ---
 title: Nachrichtenablaufverfolgung im Security & Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: cf0b69d691b3071ee35119f67e389e49ccbb13ad
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558612"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598922"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -232,7 +234,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias*@*Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -270,13 +272,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
 
   - `AGENT`
 
@@ -294,7 +296,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit `EXPAND` `REDIRECT`-,- `RESOLVE` und-Ereignissen verwendet, um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -312,7 +314,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Hour `mm` , = Minute `ss` , = Second `fff` , = Brüche einer Sekunde, und `Z` `Zulu`eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 

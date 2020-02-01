@@ -1,5 +1,7 @@
 ---
 title: Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden.
-ms.openlocfilehash: 4081c5ec67dc88429fd748014534830c42a816f8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: cfd83b8558ed4cec3a48b536437e0a0dbe75aeaa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971603"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598772"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 

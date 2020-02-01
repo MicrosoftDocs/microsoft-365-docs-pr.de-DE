@@ -1,5 +1,7 @@
 ---
 title: CISO-Workshop (Chief Information Security Officer)
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012420"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599652"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Workshop-Schulung für Chief Information Security Officer (CISO)
 
@@ -38,4 +40,4 @@ Die ciso Workshop-Videos und PDF/PowerPoint-Download Inhalte sind modular aufgeb
 
 - [Modul 4B: Threat Protection-Strategie, Teil II](ciso-workshop-module-4b.md): in diesem Modul werden die Entwicklung und die Flugbahn der Security Operations Center (SoC), die von den Billionen von Signalen im Microsoft Intelligent Security Graph angetrieben werden, überprüft.
 
-- [Modul 5: Informationsschutz](ciso-workshop-module-5.md): Hier erfahren Sie, wie Sie vertrauliche Informationen überall dort schützen, wo Sie mit automatischer Klassifizierung, beständiger Verschlüsselung auf Geräten und einer kontinuierlichen Überwachung von Daten auf mobilen Geräten, Cloud-Diensten und anderen Systemen verläuft. Unternehmensobjekte.
+- [Modul 5: Informationsschutz](ciso-workshop-module-5.md): Hier erfahren Sie, wie Sie vertrauliche Informationen überall dort schützen, wo Sie mit automatischer Klassifizierung, beständiger Verschlüsselung auf Geräten und einer kontinuierlichen Überwachung von Daten auf mobilen Geräten, Cloud-Diensten und anderen Unternehmens Objekten zusammenhängen.

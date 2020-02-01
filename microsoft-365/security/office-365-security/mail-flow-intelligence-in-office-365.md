@@ -1,5 +1,7 @@
 ---
 title: Mail Flow Intelligence in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die mit der Nachrichtenzustellung in Office 365 (auch als Nachrichtenfluss-Intelligence bezeichnet) verbunden sind.
-ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971773"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599052"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligente Nachrichtenübermittlung in Office 365
 
@@ -42,7 +44,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 versucht haben, eine Verbi
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Fehlercode: 450 4.4.315 Timeout bei der Verbindung
 
-Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Beispiel:
+Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
 
 - Der lokale e-Mail-Server ist nicht verfügbar.
 
@@ -82,7 +84,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Fehlercode: 450 4.4.317 Fehler beim Herstellen der Verbindung mit Remote-Server
 
-Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Beispiel:
+Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
 
 - Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, der angibt, dass der Server die Kommunikation mit Office 365 nicht aufrecht erhalten kann.
 

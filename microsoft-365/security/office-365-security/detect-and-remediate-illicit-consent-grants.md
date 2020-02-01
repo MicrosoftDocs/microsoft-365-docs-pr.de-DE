@@ -1,5 +1,7 @@
 ---
 title: Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: ae26656cdfcb6f17bbe4caa1016f6428f3bd655e
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572992"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599452"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
 

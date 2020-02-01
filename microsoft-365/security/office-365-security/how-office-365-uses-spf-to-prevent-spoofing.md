@@ -1,5 +1,7 @@
 ---
 title: Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
+f1.keywords:
+- CSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: a849be21aea5d6ab44af33a8271827da41094a2f
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970831"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599192"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 

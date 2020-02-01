@@ -1,5 +1,7 @@
 ---
 title: Exchange Online Protection im Überblick
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, mit dem Sie Ihre Organisation vor Spam und Schadsoftware schützen können.
-ms.openlocfilehash: 2083b71655b1d5bbf30adbb7bfff3229cfb07525
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 6728139c5a2bd925e6090a69aa745206d2988233
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970491"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599332"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 

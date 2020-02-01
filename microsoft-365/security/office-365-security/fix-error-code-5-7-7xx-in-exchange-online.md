@@ -1,5 +1,7 @@
 ---
 title: Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Probleme für den Fehlercode 5.7.7 XX in Exchange Online beheben (vom Senden von e-Mails blockierte Mandanten).
-ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
-ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
+ms.openlocfilehash: e8e134793db946ddfc3ef09d0adc19b2a04df30b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41002975"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599282"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Beheben von Problemen mit der Zustellung von e-Mails bei Fehlercode 5.7.7 XX in Exchange Online
 
@@ -35,7 +37,7 @@ In seltenen Fällen kann dies auch passieren, wenn Sie Ihr Abonnement erneuern, 
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750: nicht registrierte Domänen-e-Mail-Einschränkung: was Sie wissen müssen
 
-Office 365 ermöglicht Mandanten das Weiterleiten einiger Nachrichten über Exchange Online Protection (EoP). Zum Beispiel:
+Office 365 ermöglicht Mandanten das Weiterleiten einiger Nachrichten über Exchange Online Protection (EoP). Beispiel:
 
 - Ein Office 365 Postfach empfängt e-Mails von einem externen Absender. Die e-Mail-Weiterleitung ist für das Office 365 Postfach konfiguriert, sodass die Nachricht an die externe e-Mail-Adresse des Benutzers zurückgeht. Dieses Szenario ist am häufigsten in Bildungsumgebungen, in denen Kursteilnehmer ihre persönlichen e-Mail-Konten zum Anzeigen von schulbezogenen Nachrichten verwenden möchten.
 

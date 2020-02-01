@@ -1,5 +1,7 @@
 ---
-title: SMTP-Authentifizierungsclients (Bericht)
+title: SMTP-Auth-Clientbericht
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können sich im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center über den Bericht über SMTP-Authentifizierungsclients informieren.'
-ms.openlocfilehash: a273da9e0ebe7987a22669c54f3ebfe103e5933c
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 7dee70de4000b23302348d964010801c8e097744
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306029"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598832"
 ---
-# <a name="smtp-auth-clients-report"></a>SMTP-Authentifizierungsclients (Bericht)
+# <a name="smtp-auth-clients-report"></a>SMTP-Auth-Clientbericht
 
 Der Bericht über **SMTP-Authentifizierungsclients** zeigt die Verwendung des SMTP-Authentifizierungs Client-Übermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation an. Dieses Legacy Protokoll (das den Endpunkt SMTP.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig für die Verwendung durch kompromittierte Konten zum Senden von e-Mails.  In diesem Bericht können Sie nach ungewöhnlichen Aktivitäten suchen. Außerdem werden die TLS-Nutzungsdaten für Clients oder Geräte mithilfe der SMTP-Authentifizierung angezeigt.
 

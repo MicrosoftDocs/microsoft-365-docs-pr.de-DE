@@ -1,5 +1,7 @@
 ---
 title: Nachrichtenübermittlung und Einblicke im Security & Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 'Administratoren können sich über das Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: a8bc8dbc2dcd25e3b26b35221cadf9534f9f668b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081198"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599042"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenübermittlung und Einblicke im Security & Compliance Center
 
@@ -22,17 +24,17 @@ Administratoren können das Nachrichtenfluss-Dashboard im Security #a0 Complianc
 
 Die im e-Mail-Fluss-Dashboard verfügbaren Einblicke, Berichte und Widgets sind:
 
-- [Nachrichtenfluss-Zuordnungsbericht](mfi-mail-flow-map-report.md)
+- [Nachrichtenfluss-Bericht](mfi-mail-flow-map-report.md)
 
 - [Einblick in den Domänen Nachrichtenflussstatus](mfi-domain-mail-flow-status-insight.md)
 
-- [SMTP-Authentifizierungsclients (Bericht)](mfi-smtp-auth-clients-report.md)
+- [SMTP-Auth-Clientbericht](mfi-smtp-auth-clients-report.md)
 
 - [Absenderdomänen Einblicke](mfi-sender-domain-insight.md)
 
 - [Unzustellbarkeitsbericht](mfi-non-delivery-report.md)
 
-- [Bericht über nicht akzeptierte Domänen](mfi-non-accepted-domain-report.md)
+- [Bericht "nicht akzeptierte Domäne"](mfi-non-accepted-domain-report.md)
 
 - [Fluss eingehenden und ausgehender E-Mails](mfi-outbound-and-inbound-mail-flow.md)
 

@@ -1,5 +1,7 @@
 ---
 title: EOP - Allgemeine häufig gestellte Fragen
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Hier werden die häufigsten allgemeinen Fragen zum cloudgehosteten E-Mail-Filterdienst Microsoft Exchange Online Protection (EOP) beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:'
-ms.openlocfilehash: 131085f148e7a44bfad8cb253fa9b3f115c627bb
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 03fb070b2a40ad1e363138124eb0225e64fd5702
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871871"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599382"
 ---
 # <a name="eop-general-faq"></a>EOP – Allgemeine häufig gestellte Fragen
 
@@ -87,4 +89,4 @@ A. Ja. Weitere Informationen zu Grenzen in EOP finden Sie unter [Beschränkungen
 
 **F. unterstützt EoP PowerShell?**
 
-A. Ja, die vollständige EoP-Funktionalität ist über PowerShell verfügbar. Weitere Informationen finden Sie unter [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).
+A: Ja, die vollständige EoP-Funktionalität ist über PowerShell verfügbar. Weitere Informationen finden Sie unter [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).

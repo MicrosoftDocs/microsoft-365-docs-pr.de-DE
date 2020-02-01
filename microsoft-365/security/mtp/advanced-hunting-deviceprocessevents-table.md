@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e65231b28e6baeff71ce8bc448b2955d062a46e9
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 460c1e76020457fb4f640c32df39c09adaaba32a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210380"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600402"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

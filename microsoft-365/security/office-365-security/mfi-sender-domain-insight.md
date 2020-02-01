@@ -1,5 +1,7 @@
 ---
-title: Korrigieren der Absenderdomänen Einblicke
+title: Einblick in Absenderdomäne
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können sich über das Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: bda6482b2c9264337db9e95f84ff41ce08582363
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306149"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598822"
 ---
-# <a name="fix-sender-domain-insight"></a>Korrigieren der Absenderdomänen Einblicke
+# <a name="fix-sender-domain-insight"></a>Einblick in Absenderdomäne
 
 Office 365 erfordert, dass Nachrichten, die von internen lokalen e-Mail-Umgebungen gesendet werden, Office 365 werden, um bestimmte Sicherheitskriterien zu erfüllen:
 
@@ -32,7 +34,7 @@ Office 365 erfordert, dass Nachrichten, die von internen lokalen e-Mail-Umgebung
 
 Nachrichten, die die Kriterien nicht erfüllen, werden nicht der Organisation zugeordnet und können zurückgewiesen werden.
 
-Das **Fix Sender Domain** Insight zeigt Ihnen e-Mails von Ihrer lokalen Umgebung, die die Kriterien nicht erfüllen, unterstützt Sie bei der Ermittlung potenziell gefährdeter Computer und Benutzerkonten in Ihrer lokalen e-Mail-Umgebung und unterstützt Sie bei der Durchführung Korrekturaktionen.
+Das **Fix Sender Domain** Insight zeigt Ihnen e-Mails von Ihrer lokalen Umgebung, die die Kriterien nicht erfüllen, unterstützt Sie bei der Ermittlung potenziell gefährdeter Computer und Benutzerkonten in Ihrer lokalen e-Mail-Umgebung und unterstützt Sie bei der Durchführung von Korrekturaktionen.
 
 ![Der Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](../media/sender-domain-insight-selected.png)
 

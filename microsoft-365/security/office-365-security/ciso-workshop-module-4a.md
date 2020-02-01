@@ -1,5 +1,7 @@
 ---
 title: 'Workshop zum Chief Information Security Officer (CISO), Modul 4a: Bedrohungsschutz Strategie'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517574"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599692"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO Workshop-Modul 4a: Bedrohungsschutz Strategie
 

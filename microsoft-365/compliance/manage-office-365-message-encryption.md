@@ -1,5 +1,7 @@
 ---
 title: Verwalten der Office 365-Nachrichtenverschlüsselung
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche Protect in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
-ms.openlocfilehash: 6222825872dc512918b512d0dfc1918dd8a0cbe3
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: fa328abc36ffa0d22bb2c96114b3bbb3dfa12ed3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813113"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600512"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
@@ -185,7 +187,7 @@ Wenn Sie Office 365 erweiterte Nachrichtenverschlüsselung haben, können Sie be
    New-OMEConfiguration -Identity "<template name>" -ExternalMailExpiryInDays 7
    ```
 
-   Hierbei `template name` ist der Name, den Sie für die benutzerdefinierte Branding-Vorlage für die Office 365 Nachrichtenverschlüsselung verwenden möchten. For example,
+   Hierbei `template name` ist der Name, den Sie für die benutzerdefinierte Branding-Vorlage für die Office 365 Nachrichtenverschlüsselung verwenden möchten. Beispiele:
 
    ```powershell
    New-OMEConfiguration -Identity "<One week expiration>" -ExternalMailExpiryInDays 7

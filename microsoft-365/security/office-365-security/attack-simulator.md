@@ -1,5 +1,7 @@
 ---
 title: Angriffssimulator in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als Office 365 globaler Administrator können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971933"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599822"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 

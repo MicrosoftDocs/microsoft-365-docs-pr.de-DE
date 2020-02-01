@@ -1,5 +1,7 @@
 ---
-title: Überblick über den Nachrichtenflussstatus der oberen Domäne
+title: Übersicht über den Top-Domain-e-Mail-Datenstrom
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können sich im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center über den Nachrichtenflussstatus "Top Domain" informieren.'
-ms.openlocfilehash: b193eea87a76ad45e91c98511627b24b04d48fb5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1fb22ac1543c490dcbd316464803f5393003d503
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082164"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598882"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>Überblick über den Nachrichtenflussstatus der oberen Domäne
+# <a name="top-domain-mail-flow-status-insight"></a>Übersicht über den Top-Domain-e-Mail-Datenstrom
 
 In der **oberen Domäne der Nachrichtenflussstatus** Insight erhalten Sie den aktuellen Status für die Domänen Ihrer Organisation im Hinblick auf den Nachrichtenfluss. Diese Einblicke helfen Ihnen bei der Identifizierung und Problembehandlung von Domänen, die sich auf Probleme mit dem ***e-Mail-Fluss auswirken*** (beispielsweise kann keine externe e-Mail empfangen werden), vor allem Domänen Ablauf oder Domänen mit falschen MX-Einträgen.
 

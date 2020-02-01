@@ -1,5 +1,7 @@
 ---
 title: Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Spam an Benutzer-Junk-e-Mail-Ordner in Exchange Online Schutz weiterleiten.
-ms.openlocfilehash: f47b7821fd6cceb02501c559a0a776c4cdaf315f
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 6d1fd625669e8b638a408b2db1993f45fa653ffb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866767"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599362"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird
 
@@ -61,6 +63,6 @@ Wenn die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** nicht verwendet 
 > [!TIP]
 > Wenn Sie die Aktion **Nachricht in Junk-e-Mail-Ordner bewegen** nicht verwenden möchten, können Sie eine andere Aktion in den Inhaltsfilter Richtlinien im Exchange Admin Center auswählen. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Weitere Informationen zu diesen Feldern in der Nachrichtenkopfzeile finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)

@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5b2e1fdb49a5ae3730a7a7e67090e09430a8c999
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 708e55db1c39d85501b1c42f9a46821bbc2eff9e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210625"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600432"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -67,7 +69,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu denen das übergeordnete Element des für das Ereignis Verantwortlichen Prozesses gestartet wurde. |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte zusammen mit den Gerätename-und timestamp-Spalten verwendet werden. |
 | `AppGuardContainerId` | string | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
-| `IsLocalAdmin` | Boolescher Wert | Boolescher Indikator dafür, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
+| `IsLocalAdmin` | boolean | Boolescher Indikator dafür, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Vorbeugende Suche nach Bedrohungen](advanced-hunting-overview.md)

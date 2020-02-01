@@ -1,5 +1,7 @@
 ---
 title: Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Office 365 Organisation fließen.
-ms.openlocfilehash: 604e2c7cb0b2cc34021e6708ae9f08769e8e6e91
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 42b55893a9884b547a0d2d36e901169153d290d7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970341"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599022"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 

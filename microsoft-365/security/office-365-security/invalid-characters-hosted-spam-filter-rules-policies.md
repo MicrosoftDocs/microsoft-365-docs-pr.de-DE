@@ -1,5 +1,7 @@
 ---
 title: Vermeiden von ungültigen Zeichen in ihren Spamfilterregeln und der Spamfilterrichtlinie
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Enthält Hilfestellung für Administratoren, die ungültige Zeichen in ihrer Antispamsoftware haben und bei der Verwendung des Security &amp; Compliance Centers in Problemen ausgeführt werden.
-ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: f1841eb86583a48acecde0770f030b626323fa8e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866717"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599112"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Vermeiden von ungültigen Zeichen in ihren spamfilterregeln und Spamfilter Richtlinien 
 

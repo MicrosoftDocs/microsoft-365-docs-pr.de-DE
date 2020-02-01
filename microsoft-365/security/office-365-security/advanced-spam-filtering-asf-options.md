@@ -1,5 +1,7 @@
 ---
 title: Erweiterte Spamfilterungsoptionen
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Erweiterte Spamfilter Optionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
-ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793699"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599962"
 ---
 # <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
 

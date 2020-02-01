@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Zeitplänen für mehrere Berichte im &amp; Security Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Hier erfahren Sie, wie Sie Zeitpläne für Berichte im Security &amp; Compliance Center anzeigen, bearbeiten und verwalten können.
-ms.openlocfilehash: d9858de4d51653a44eb310572a1f4ce457210066
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38fd211a20c86fffc564c8b4fbe86e963da7fe05
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082507"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598932"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Verwalten von Zeitplänen für mehrere Berichte im &amp; Security Compliance Center
 
@@ -30,7 +32,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und Einblicke](repo
   
 ![Wählen Sie im &amp; Security Compliance Center die Option \> Berichte Manage Schedules aus.](../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. Dadurch gelangen Sie zum Security #a0 Compliance Center.
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Dadurch gelangen Sie zum Security #a0 Compliance Center.
 
 2. Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> **Manage Schedules**.
     

@@ -5,6 +5,8 @@ keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, sicheres Ergebnis, Sic
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -15,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 284efd5224f3e48ab718c0de0c877f68fc0bdecc
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210477"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600192"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
@@ -189,6 +191,6 @@ Aus diesen Gründen wurden alle Verbesserungs Aktionen vorübergehend entfernt, 
 
 Um Punkte über mehrere Erfahrungen hinweg zu standardisieren, wurden alle Aktionspunkte für eine sichere Ergebnisverbesserung auf 10 oder mehr Punkte aktualisiert. Es ist erforderlich, dass die gesamte Breite Verschnaufpause von Sicherheitskontrollen konsistenter ist, die wir heute haben, und diejenigen, die wir in Zukunft hinzufügen werden. Dies ist zwar eine wesentliche Änderung, und es wird eine Verringerung der Gesamtzahl der Punkte angezeigt, aber ihre Sicherheitsposition wird nicht geändert.
 
-## <a name="we-want-to-hear-from-you"></a>Wir möchten von Ihnen hören
+## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
 Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Sicherheits-, Datenschutz-#a0 Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.

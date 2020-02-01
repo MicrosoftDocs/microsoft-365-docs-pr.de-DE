@@ -1,6 +1,8 @@
 ---
 title: Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 keywords: TIMailData-Inline, Sicherheitsvorfall, Vorfall, ATP PowerShell, e-Mail-Schadsoftware, kompromittierte Benutzer, e-Mail-Phishing, e-Mail-Schadsoftware, e-Mail-Header lesen, Kopfzeilen lesen, offene e-Mail
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: f2eadfaf23c4485e6b50b6550f0a884690a79548
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 77a0c3e23413a31f2d87d5bf19216edec40a305c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572982"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599142"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 

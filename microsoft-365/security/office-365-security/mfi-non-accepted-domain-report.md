@@ -1,5 +1,7 @@
 ---
-title: Bericht über nicht akzeptierte Domänen
+title: Bericht "nicht akzeptierte Domäne"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: 6d256eb99a573b3dc9a6e1bcd14bffdd0800081c
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 7872f454f10c8f8b7bb2f79fd62671e200463f7b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306169"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599212"
 ---
-# <a name="non-accepted-domain-report"></a>Bericht über nicht akzeptierte Domänen
+# <a name="non-accepted-domain-report"></a>Bericht "nicht akzeptierte Domäne"
 
 Ähnlich wie bei der **Absenderdomänen** Einsicht identifiziert die **nicht akzeptierte Domäne** Insight Nachrichten von Ihrer lokalen e-Mail-Organisation, aber die Domäne des Absenders ist nicht als akzeptierte Domäne in Ihrer Office 365 Organisation konfiguriert.
 
@@ -32,6 +34,6 @@ Wenn Sie eine Zeile in der Tabelle auswählen, werden weitere Details in einem F
 
 ![Auswählen einer Zeile in der Tabelle "Details" im Bericht "nicht akzeptierte Domäne"](../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security #a0 Compliance Center](mail-flow-insights-v2.md).

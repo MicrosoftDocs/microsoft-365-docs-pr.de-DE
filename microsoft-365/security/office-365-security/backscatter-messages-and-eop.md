@@ -1,5 +1,7 @@
 ---
 title: Rückläufernachrichten und EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Backscatter-Nachrichten sind automatische Bounce-Nachrichten, die an gefälschte e-Mail-Adressen gesendet werden. Die Rückläufer-DNSBL identifiziert Server, die Rück Streu Nachrichten senden (die viele legitime e-Mail-Quellen enthalten können). Da es sich nicht um eine Spammer-Liste handelt, versuchen wir nicht, uns selbst aus dem BACKSCATTERER-DNSBL zu entfernen.
-ms.openlocfilehash: f6e8398565837f7a380c8a6a5c4cd8de422cc215
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 3dc83c303e861c8762f2276de521e1b550ae2e59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840164"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599732"
 ---
 # <a name="backscatter-messages-and-eop"></a>Rückläufernachrichten und EOP
 

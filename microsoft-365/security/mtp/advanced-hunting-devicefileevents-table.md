@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b772f1adccfcab52709fbedd872cb48b1c15f4e2
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 035efb5b2404708010f5fbfd4c419d59df088393
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210487"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600472"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -66,7 +68,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AppGuardContainerId` | string | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
 | `SensitivityLabel` | string | Bezeichnung, die auf eine e-Mail, Datei oder andere Inhalte angewendet wird, um Sie für den Schutz von Informationen zu klassifizieren |
 | `SensitivitySubLabel` | string | Unter Bezeichnung, die auf eine e-Mail, Datei oder andere Inhalte angewendet wird, um Sie für den Schutz von Informationen zu klassifizieren; Sensitivitäts-Sublabel werden unter Sensitivitäts Bezeichnungen gruppiert, jedoch unabhängig voneinander behandelt. |
-| `IsAzureInfoProtectionApplied` | Boolescher Wert | Gibt an, ob die Datei durch Azure Information Protection verschlüsselt wird. |
+| `IsAzureInfoProtectionApplied` | boolean | Gibt an, ob die Datei durch Azure Information Protection verschlüsselt wird. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Vorbeugende Suche nach Bedrohungen](advanced-hunting-overview.md)

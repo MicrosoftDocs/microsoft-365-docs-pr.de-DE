@@ -1,5 +1,7 @@
 ---
 title: 'Erteilen von Benutzern den Zugriff auf das Compliance Center für Office 365 Security #a0'
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 'Benutzer müssen Berechtigungen im Office 365 Security #a0 Compliance Center zugewiesen werden, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können.'
-ms.openlocfilehash: 698a319b4297a00e0c248df495b7013fa3ae3542
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 625fe036e8f8b00201abd0f5cb6a8f0003c597f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970441"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599252"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Erteilen von Benutzern den Zugriff auf das Compliance Center für Office 365 Security #a0
 

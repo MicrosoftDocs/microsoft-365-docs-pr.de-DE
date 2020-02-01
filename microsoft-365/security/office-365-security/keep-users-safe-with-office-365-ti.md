@@ -1,5 +1,7 @@
 ---
 title: Schützen Ihrer Organisation mit Office 365 Ermittlungs-und Reaktionsfunktionen für Bedrohungen
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen Ihrer Organisation dabei helfen können, Eindringlinge und Bedrohungen zu erkennen und Bedrohungen schnell zu verringern und wiederherzustellen.
-ms.openlocfilehash: f51a4de9b0bd1da43ccbd2d5e814f0fa6ef87459
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971783"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599102"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Schützen Ihrer Organisation mit Office 365 Ermittlungs-und Reaktionsfunktionen für Bedrohungen
 

@@ -1,5 +1,7 @@
 ---
 title: Dynamische Zustellung und Vorschau mit Office 365 sicheren ATP-Anlagen
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre Richtlinien für ATP-sichere Anlagen einrichten, wählen Sie dynamische Zustellung aus, um Verzögerungen bei der Nachrichtenübermittlung zu vermeiden und Benutzern das Anzeigen einer Vorschau von Anlagen zu ermöglichen, die gescannt werden.
-ms.openlocfilehash: 221ae4fa5968723fa790cbfb9c26f0e80a827730
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808330"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599422"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit Office 365 sicheren ATP-Anlagen
 
@@ -79,6 +81,6 @@ Es gibt bestimmte Szenarien, in denen die dynamische Zustellung nicht unterstüt
 
 - Umgebungen, in denen ein Exchange Online Administrator den ausrufenden aktiviert hat. Informationen zum Beheben dieses Problem finden Sie unter [Nachrichten mit Anlagen werden nicht zugestellt, wenn die dynamische ATP-Zustellung und der Einsatz des ausrufens verwendet werden](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery) .
 
-- Mit [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)verschlüsselte Nachrichten
+- Mit [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)verschlüsselte Nachrichten)
 
 - In Fällen, in denen die dynamische Zustellung nicht unterstützt wird, werden keine e-Mail-Nachrichten durch ATP-sichere Anlagen überprüft. Das Übermitteln von e-Mail-Nachrichten mit Anlagen, die URLs enthalten, wird jedoch überprüft, je nachdem, wie Ihre [ATP-Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) konfiguriert werden. In diesen Fällen werden URLs in e-Mail-Nachrichten und Office-Dateien überprüft.

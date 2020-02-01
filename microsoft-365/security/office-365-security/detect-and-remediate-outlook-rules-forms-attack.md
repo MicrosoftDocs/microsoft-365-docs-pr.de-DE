@@ -1,5 +1,7 @@
 ---
 title: Erkennen und Beheben von Outlook-Regeln und benutzerdefinierten Formularen Injektionsangriffe in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
-ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970791"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599442"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365
 
@@ -234,7 +236,7 @@ Kunden mit lokalen Exchange-Installationen sollten in Betracht gezogen, ältere 
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
 
-Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Office 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden für die Sicherung Ihres Office 365 Mandanten zu implementieren.
+Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten. Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

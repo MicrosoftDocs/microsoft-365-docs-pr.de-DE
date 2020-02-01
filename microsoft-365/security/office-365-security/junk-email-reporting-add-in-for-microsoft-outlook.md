@@ -1,5 +1,7 @@
 ---
 title: Add-In „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 'Mit dem Add-in "Junk-e-Mail-Berichterstellung für Microsoft Outlook" können Benutzer von Exchange Online und Exchange Online Schutz einfach Spam-e-Mails an Microsoft zur Analyse melden, um die Anzahl und den Einfluss künftiger von dem Dienst gefilterter Junk-e-Mails zu verringern. Das Melde-Add-In ist mit Microsoft Outlook 2013, Outlook 2010 und Outlook 2007 mit Windows 7, Windows 8 und Windows 10 kompatibel und bietet die folgenden Vorteile:'
-ms.openlocfilehash: f92f4308b14d8512eeef534124e4d5dde518c603
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea616cd56fc1e5e7e98e627a8c99c8490c47f164
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081212"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599072"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Add-In „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook
 

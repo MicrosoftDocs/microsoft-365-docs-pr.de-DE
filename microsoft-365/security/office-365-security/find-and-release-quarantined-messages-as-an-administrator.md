@@ -1,5 +1,7 @@
 ---
 title: Finden und Freigeben von Nachrichten in Quarantäne als Administrator
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC).
-ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971753"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599392"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Finden und Freigeben von Nachrichten in Quarantäne als Administrator
 
@@ -67,7 +69,7 @@ Im Exchange Admin Center (EAC) können Sie mithilfe der erweiterten Suche anhand
    6. **Expires**: Sie können auswählen, dass die Nachricht innerhalb der nächsten 24 Stunden ( **heute**) aus der Quarantäne gelöscht wird, innerhalb der nächsten 48 Stunden ( **Nächste 2 Tage**), innerhalb der nächsten Woche ( **Nächste 7 Tage**), oder Sie können ein benutzerdefiniertes Zeitintervall auswählen, in dem die Nachricht aus der Quarantäne gelöscht wird.
 
       > [!IMPORTANT]
-      > Spam isolierte Nachrichten werden standardmäßig 30 Tage lang in Quarantäne aufbewahrt, während isolierte Nachrichten, die einer e-Mail-Fluss Regel entsprechen, bis zu 30 Tage lang in der Quarantäne aufbewahrt werden, basierend auf dem in der standardmäßigen Inhaltsfilter Richtlinie festgelegten Aufbewahrungszeitraum. Nach dieser Zeitspanne Office 365 die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
+      > Spam isolierte Nachrichten werden standardmäßig 30 Tage lang in Quarantäne aufbewahrt, während isolierte Nachrichten, die einer e-Mail-Fluss Regel entsprechen, bis zu 30 Tage lang in der Quarantäne aufbewahrt werden, basierend auf dem in der standardmäßigen Inhaltsfilter Richtlinie festgelegten Aufbewahrungszeitraum. Nach dieser Zeitspanne Office 365 die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren Ihrer Richtlinien für Spamfilter](configure-your-spam-filter-policies.md).
 
    7. **Geben** Sie Sie können angeben, ob nach isolierten Nachrichten gesucht werden soll, die als **Spam**identifiziert wurden, oder ob nach Nachrichten gesucht werden soll, die mit einer Nachrichtenfluss Regel übereinstimmen (**Transport Regel**).
 

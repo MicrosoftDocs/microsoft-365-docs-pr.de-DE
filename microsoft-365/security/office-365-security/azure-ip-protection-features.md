@@ -1,5 +1,7 @@
 ---
 title: Schutzfunktionen in Azure Information Protection, die in vorhandene Office 365 Mandanten Einrollen
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: Um mit dem ersten Schritt beim Schutz Ihrer Informationen zu helfen, werden ab Juli 2018 alle Azure Information Protection-berechtigten Mandanten die Schutzfunktionen in Azure Information Protection standardmäßig aktiviert haben. Die Schutzfunktionen in Azure Information Protection waren früher in Office 365 als Rights Management oder Azure RMS bekannt. Wenn Ihre Organisation über einen Office E3-Dienstplan oder einen höheren Service Plan verfügt, erhalten Sie jetzt einen Head-Start Schutz für Informationen durch Azure Information Protection, wenn wir diese Features bereitstellen.
-ms.openlocfilehash: 760cce8d9089df5ef4cd05285af171d83b1cb9a1
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 6ff4ecb4dc9b0e2b0a4e8dd7a2d9573326afc6a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871961"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599772"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Schutzfunktionen in Azure Information Protection, die in vorhandene Office 365 Mandanten Einrollen
 

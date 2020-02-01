@@ -1,5 +1,7 @@
 ---
 title: Featureberechtigungen in EOP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Die erforderlichen Berechtigungen zum Ausführung von Verwaltungsaufgaben für Microsoft Exchange Online Protection (EOP) variieren abhängig davon, welche Funktion verwaltet werden soll.
-ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871851"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599312"
 ---
 # <a name="feature-permissions-in-eop"></a>Featureberechtigungen in EOP
 
@@ -33,7 +35,7 @@ In der folgenden Tabelle sind die Berechtigungen aufgeführt, die für die Verwa
 |Antispam|Organisationsverwaltung <br/><br/> Nachrichtenschutz|
 |Nachrichtenflussregeln|Organisationsverwaltung <br/><br/> Datensatzverwaltung|
 |Domänen|Organisationsverwaltung <br/><br/> Organisationsverwaltung – nur Leserechte|
-|Advanced Threat Protection (ATP)|Organisationsverwaltung <br/><br/> Nachrichtenschutz|
+|Advanced Threat Protection, ATP|Organisationsverwaltung <br/><br/> Nachrichtenschutz|
 |Office 365-Connectors|Organisationsverwaltung|
 |Nachrichtenablaufverfolgung|Organisationsverwaltung <br/><br/> Organisationsverwaltung – nur Leserechte|
 |Organisationskonfiguration|Organisationsverwaltung|

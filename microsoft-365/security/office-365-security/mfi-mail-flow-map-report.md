@@ -1,5 +1,7 @@
 ---
-title: Nachrichtenfluss-Zuordnungsbericht
+title: Nachrichtenfluss-Bericht
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 'Administratoren können Informationen zum Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center erhalten.'
-ms.openlocfilehash: a72cfed9bca57a0f3cecd13d83a6c87f05d40a1a
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 266626b46e3e1db559178c66a716a5a8ce347986
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306139"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598892"
 ---
-# <a name="mail-flow-map-report"></a>Nachrichtenfluss-Zuordnungsbericht
+# <a name="mail-flow-map-report"></a>Nachrichtenfluss-Bericht
 
 Dieser Bericht gibt Einblicke in die Art und Weise, wie e-Mails durch Ihre Office 365 Organisation fließen. Sie können diese Informationen verwenden, um Muster zu erfahren, Anomalien zu identifizieren und Probleme zu beheben, wenn diese auftreten.
 

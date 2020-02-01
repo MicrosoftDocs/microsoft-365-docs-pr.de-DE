@@ -1,5 +1,7 @@
 ---
 title: Verwalten von rechtlichen Untersuchungen in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 'Verwenden Sie eDiscovery-Fälle im Security #a0 Compliance Center in Office 365, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten weiter analysieren, indem Sie die Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery verwenden.'
-ms.openlocfilehash: ce476c93e9c33d949c5615f872b8399a97420bba
-ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
+ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "38685999"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600532"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Untersuchungen in Office 365
 
@@ -52,7 +54,7 @@ Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDis
 
 Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Office 365-oder Microsoft 365-Organisation. Alternativ benötigen Benutzer mit einer E3-Lizenz das Add-on-Abonnement für erweiterte Kompatibilität, damit Sie Sie als Verwalter in einem erweiterten eDiscovery-Fall verwalten können.
 
-Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
+Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
 
 - [Erstellen einer Anfrage](create-new-ediscovery-case.md) für erste Schritte
 

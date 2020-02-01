@@ -1,5 +1,7 @@
 ---
 title: Benachrichtigungen im Office 365 Security &amp; Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Informieren Sie sich über Warnungen, die Sie bei der Sicherheit in Office 365 unterstützen können.
-ms.openlocfilehash: a04514b272c4fbe87b56b8475d4c57a3222a5387
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 24b00eab79c9dbc67e913ea05a7d8b34b54293c4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082354"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599942"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Benachrichtigungen im Office 365 Security &amp; Compliance Center
 
@@ -34,13 +36,13 @@ Warnungen in Office 365 befinden sich im Security &amp; Compliance Center. Hier 
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. 
     
 3. Klicken Sie im linken Bereich auf **Warnungen** , um die Benachrichtigungsfunktionen anzuzeigen. 
     
  **So wechseln Sie mithilfe des &amp; Office 365-App-Startprogramms zum Security Compliance Center:**
   
-1. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
+1. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. 
     
 2. Klicken Sie in der oberen linken Ecke auf das App-Startfeld, und klicken Sie dann auf **Sicherheits &amp; Kompatibilität**.
     

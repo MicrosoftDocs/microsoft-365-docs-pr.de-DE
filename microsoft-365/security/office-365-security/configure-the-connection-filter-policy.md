@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren der Verbindungsfilter Richtlinie, Zulassungsliste, Sperrliste
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Um sicherzustellen, dass e-Mails, die von vertrauenswürdigen Personen gesendet werden, nicht blockiert werden, können Sie die Verbindungsfilter Richtlinie verwenden, um eine Zulassungsliste (auch als Liste sicherer Absender bezeichnet) von IP-Adressen zu erstellen, denen Sie vertrauen. Sie können auch eine Liste blockierter Absender erstellen.
-ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238422"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599592"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
 
@@ -48,7 +50,7 @@ Im folgenden Video wird die Vorgehensweise zur Konfiguration der Verbindungsfilt
 
 - E-Mails, die von einer IP-Adresse aus der IP-Sperrliste gesendet werden, werden abgelehnt, nicht als Spam gekennzeichnet, und es werden keine weiteren Filter angewendet.
 
-- Das folgende Verbindungsfilterverfahren kann auch über Remote-PowerShell erfolgen. Mit dem Cmdlet [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) können Sie Ihre Einstellungen überprüfen und mit dem Cmdlet [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) Ihre Einstellungen für die Verbindungsfilterrichtlinie bearbeiten. Wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online Protection herstellen, können Sie unter [Verbinden mit Exchange Online Protection mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) nachlesen. Wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online herstellen, können Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) nachlesen.
+- Das folgende Verbindungsfilterverfahren kann auch über Remote-PowerShell erfolgen. Mit dem Cmdlet [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) können Sie Ihre Einstellungen überprüfen und mit dem Cmdlet [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) Ihre Einstellungen für die Verbindungsfilterrichtlinie bearbeiten. Wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online Protection herstellen, können Sie unter [Verbinden mit Exchange Online Protection mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) nachlesen. Wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online herstellen, können Sie unter [Mit Exchange Online PowerShell verbinden](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) nachlesen.
 
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole
 

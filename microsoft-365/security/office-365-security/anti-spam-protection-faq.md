@@ -1,5 +1,7 @@
 ---
 title: Häufig gestellte Fragen zum Antispamschutz
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9be51b4967a558aec254262052d7c01446a7d643
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971967"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599872"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -71,7 +73,7 @@ A. Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kei
 
  **F. Kann ich Spamberichte abrufen?**
 
-A. Ja, beispielsweise können Sie einen Spam Erkennungs Bericht im Microsoft 365 Admin Center erhalten. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
+A: Ja, beispielsweise können Sie einen Spam Erkennungs Bericht im Microsoft 365 Admin Center erhalten. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
 
 Exchange Online Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
 
@@ -79,7 +81,7 @@ Kunden von Exchange Online Protection: [Berichterstellung und Nachrichtenablaufv
 
  **F. Jemand hat mir eine Nachricht gesendet, aber ich finde sie nicht. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?**
 
-A. Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+A: Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
  **F. Schränkt der Dienst meine E-Mail ein (begrenzt ihre Rate), wenn die Benutzer ausgehenden Spam senden?**
 
@@ -89,7 +91,7 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
 
  **F. Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?**
 
-A. Ja, Sie können einen anderen Filterdienst für Spam und Schadsoftware konfigurieren, um Ihre Exchange Online Postfächer zu schützen. Um dies bei eingehenden e-Mails zu tun, sollten Sie Ihre e-Mail-Nachrichten an den Drittanbieter umleiten, indem Sie Ihre MX-Einträge so ändern, dass Sie auf den Drittanbieter verweisen, und die Nachrichten dann zur weiteren Verarbeitung an EoP umleiten. Um dies für ausgehende e-Mails zu tun, konfigurieren Sie das Nachrichten Zustellungsziel für den Drittanbieter (Smarthost).
+A: Ja, Sie können einen anderen Filterdienst für Spam und Schadsoftware konfigurieren, um Ihre Exchange Online Postfächer zu schützen. Um dies bei eingehenden e-Mails zu tun, sollten Sie Ihre e-Mail-Nachrichten an den Drittanbieter umleiten, indem Sie Ihre MX-Einträge so ändern, dass Sie auf den Drittanbieter verweisen, und die Nachrichten dann zur weiteren Verarbeitung an EoP umleiten. Um dies für ausgehende e-Mails zu tun, konfigurieren Sie das Nachrichten Zustellungsziel für den Drittanbieter (Smarthost).
 
  **F. Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?**
 
