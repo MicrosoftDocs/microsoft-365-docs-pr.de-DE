@@ -1,5 +1,7 @@
 ---
 title: Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
-ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686190"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597282"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 
@@ -95,11 +97,11 @@ Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Frei
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
 3. Klicken Sie im linken Bereich des Security #a0 Compliance Centers auf **Such**  > **Überwachungsprotokoll Suche**.
     
-    Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
+    Die Seite **Überwachungsprotokollsuche** wird angezeigt. 
     
 4. Klicken Sie unter **Aktivitäten**auf **Freigabe-und Zugriffs Anforderungs Aktivitäten** , um nach Freigabe bezogenen Ereignissen zu suchen. 
     

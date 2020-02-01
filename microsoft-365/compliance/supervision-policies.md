@@ -1,6 +1,8 @@
 ---
 title: Aufsichtsrichtlinien
 description: Informationen zu Aufsichtsrichtlinien in Office 365
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: aaeb73553d023ac1664ba3bbff10d7edbb4dea54
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 2e060ab7c404ccf3538a8b250cbd03429c6e2a4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515876"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597392"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -259,7 +261,7 @@ In diesem Bericht werden die einzelnen Richtlinien und die Anzahl der Kommunikat
 
 Im folgenden finden Sie eine Aufschlüsselung der Werte, die in der Spalte **Tag Type** angezeigt werden.
   
-|**Tagtyp**|**Was das bedeutet**|
+|**Tagtyp**|**Bedeutung**|
 |:-----|:-----|
 | **Nicht überprüft** | Die Anzahl der e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Dashboard für die Office 365 Aufsicht.
 | **Compliant** | Die Anzahl der überprüften und als konform gekennzeichneten e-Mails. Diese Nachrichten benötigen noch eine Lösung. |

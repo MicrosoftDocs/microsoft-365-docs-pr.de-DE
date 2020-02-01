@@ -1,5 +1,7 @@
 ---
 title: Quarantine
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die gehostete Quarantäne für Exchange Online und Exchange Online Schutz.
-ms.openlocfilehash: 8d35d198f60e5fbaef9bef4e924e8643251132d6
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872071"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598652"
 ---
 # <a name="quarantine"></a>Quarantine
 

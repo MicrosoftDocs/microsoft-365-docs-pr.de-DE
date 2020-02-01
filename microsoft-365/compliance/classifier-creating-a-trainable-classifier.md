@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Schulungs klassifizierten Klassifizierung (Vorschau)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Schulungs fähige Klassifizierungen, wenn eine der Feld Klassifizierungen von Ready to use Ihren Anforderungen nicht entspricht. Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Thema wird gezeigt, wie Sie eine benutzerdefinierte Klassifizierung erstellen.
-ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
-ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
+ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39891086"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595912"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Erstellen einer Schulungs Klassifizierer (Vorschau)
 

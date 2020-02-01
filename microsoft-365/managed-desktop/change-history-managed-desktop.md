@@ -5,15 +5,17 @@ keywords: Änderungsverlauf
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260123"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596582"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 

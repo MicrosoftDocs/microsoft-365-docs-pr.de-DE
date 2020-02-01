@@ -1,5 +1,7 @@
 ---
 title: Kunden-Lockbox-Anfragen in Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: a9f7f6116d4667e294666afc71747a6fad1efb33
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233766"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595502"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 
@@ -149,7 +151,7 @@ Wenn eine Person in Ihrer Organisation eine Kunden-Lockbox-Anforderung genehmigt
 | Datum       | Das Datum und die Uhrzeit, zu der die Kunden-Lockbox-Anforderung genehmigt oder verweigert wurde.
 | IP-Adresse | Die IP-Adresse des Computers, den die genehmigende Person verwendet hat, um eine Anforderung zu genehmigen oder zu verweigern. |
 | Benutzer       | Das Dienstkonto BOXServiceAccount@\[customerforest\]. Prod.Outlook.com.            |
-| Aktivität   | Festlegen-AccessToCustomerDataRequest; Dies ist die Überwachungsaktivität, die protokolliert wird, wenn Sie eine Kunden-Lockbox-Anforderung genehmigen oder verweigern.                                |
+| Activity   | Festlegen-AccessToCustomerDataRequest; Dies ist die Überwachungsaktivität, die protokolliert wird, wenn Sie eine Kunden-Lockbox-Anforderung genehmigen oder verweigern.                                |
 | Element       | Die GUID der Kunden-Lockbox-Anforderung                             |
 
 Der folgende Screenshot zeigt ein Beispiel für einen Überwachungsprotokolleintrag, der einer genehmigten Kunden-Lockbox-Anforderung entspricht. Wenn eine Kunden-Lockbox-Anforderung verweigert wurde, lautet der Wert des **ApprovalDecision** -Parameters **Deny**.
@@ -168,7 +170,7 @@ Die Aktionen, die von einem Microsoft-Techniker ausgeführt werden, nachdem eine
 | Datum       | Datum Uhrzeit, zu der die Aktion ausgeführt wurde. Beachten Sie, dass die Zeit, für die diese Aktion ausgeführt wurde, innerhalb von 4 Stunden nach der Genehmigung der Kunden-Lockbox-Anforderung erfolgt.              |
 | IP-Adresse | Die IP-Adresse des Computers, den Microsoft-Techniker verwendet hat. |
 | Benutzer       | Microsoft-Operator; Dieser Wert gibt an, dass dieser Datensatz mit einer Kunden-Lockbox-Anforderung verknüpft ist.                                  |
-| Aktivität   | Name der Aktivität, die von Microsoft Engineer ausgeführt wird.|
+| Activity   | Name der Aktivität, die von Microsoft Engineer ausgeführt wird.|
 | Element       | \<leer\>                                             |
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen

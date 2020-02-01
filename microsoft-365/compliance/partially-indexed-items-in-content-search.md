@@ -1,5 +1,7 @@
 ---
 title: Teilweise indizierte Elemente in der Inhaltssuche in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security #a0 Compliance Center ausgeführt wird. '
-ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081957"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597782"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Teilweise indizierte Elemente in der Inhaltssuche in Office 365
 
 Eine Inhaltssuche, die Sie im Security #a0 Compliance Center in Office 365 ausführen, enthält bei der Ausführung einer Suche automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, der nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine Suche ausführen: 
   
-- Der Dateityp wird für die Indizierung nicht erkannt oder nicht unterstützt.
+- Der Dateityp wird nicht erkannt oder wird nicht für die Indizierung unterstützt.
     
 -  Nachrichten weisen eine angefügte Datei ohne einen gültigen Handler auf, beispielsweise Bilddateien; Dies ist die häufigste Ursache für teilweise indizierte e-Mail-Elemente. 
     
@@ -81,7 +83,7 @@ Beachten Sie bei teilweise indizierten Elementen Folgendes:
     
 - Wenn es sich bei der Suche, aus der Sie Ergebnisse exportieren, um die Suche nach bestimmten Inhaltsspeicherorten oder um alle inhaltsspeicherorte in Ihrer Organisation handelt, werden nur die nicht indizierten Elemente aus Inhaltsspeicherorten exportiert, die Elemente enthalten, die mit den Suchkriterien übereinstimmen. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Der Grund hierfür ist, dass das Exportieren von teilweise indizierten Elementen aus vielen Orten in der Organisation die Wahrscheinlichkeit von Exportfehlern erhöht und die Zeit für den Export und den Download der Suchergebnisse erhöht.
     
-    Wenn Sie teilweise indizierte Elemente aus allen Inhaltsspeicherorten für eine Suche exportieren möchten, konfigurieren Sie die Suche so, dass alle Elemente zurückgegeben werden (indem Sie Stichwörter aus der Suchabfrage entfernen), und exportieren Sie dann nur teilweise indizierte Elemente, wenn Sie die Suchergebnisse exportieren (nur durch Klicken auf ** Elemente, die ein nicht erkanntes Format aufweisen, werden verschlüsselt oder aus anderen Gründen** unter **Ausgabeoptionen**nicht indiziert).
+    Um teilweise indizierte Elemente aus allen Inhaltsspeicherorten für eine Suche zu exportieren, konfigurieren Sie die Suche so, dass alle Elemente zurückgegeben werden (indem Sie Stichwörter aus der Suchabfrage entfernen), und exportieren Sie dann nur teilweise indizierte Elemente, wenn Sie die Suchergebnisse exportieren (indem Sie auf **nur Elemente mit einem unbekannten Format, verschlüsselt oder aus anderen Gründen** unter **Ausgabeoptionen**indiziert wurden).
     
 - Wenn Sie alle Postfachelemente in die Suchergebnisse einschließen möchten oder wenn eine Suchabfrage keine Stichwörter oder nur einen Datumsbereich angibt, werden teilweise indizierte Elemente möglicherweise nicht in die PST-Datei kopiert, die die teilweise indizierten Elemente enthält. Dies liegt daran, dass alle Elemente, einschließlich der teilweise indizierten Elemente, automatisch in die regulären Suchergebnisse eingeschlossen werden.
     
@@ -123,7 +125,7 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 |Maximale Parser-Ausgabe  <br/> |2 Millionen Zeichen  <br/> |Die maximale Textausgabe des indizierten Parsers. Wenn der Parser beispielsweise 8 Millionen Zeichen aus einem Dokument extrahiert hat, werden nur die ersten 2 Millionen Zeichen indiziert.  <br/> |
 |Maximale Anmerkungs Token  <br/> |2 Millionen  <br/> |Wenn eine e-Mail-Nachricht indiziert wird, wird jedes Wort mit unterschiedlichen Verarbeitungsanweisungen versehen, die angeben, wie dieses Wort indiziert werden soll. Jeder Sätze von Verarbeitungsanweisungen wird als Anmerkungs Token bezeichnet. Um die Dienstqualität in Office 365 beizubehalten, gibt es einen Grenzwert von 2 Millionen-Anmerkungs Token für eine e-Mail-Nachricht.  <br/> |
 |Maximale Körpergröße im Index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtzahl der Zeichen im Textkörper einer e-Mail-Nachricht und aller Anlagen. Wenn eine e-Mail-Nachricht indiziert wird, wird der gesamte Text im Nachrichtentext und in allen Anlagen in einer einzigen Zeichenfolge verkettet. Die maximale Größe dieser Zeichenfolge, die indiziert wird, ist 67 Millionen Zeichen.  <br/> |
-|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Million  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck `"cat, mouse, bird, dog, dog"` enthält beispielsweise 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
+|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck `"cat, mouse, bird, dog, dog"` enthält beispielsweise 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
    
 
   

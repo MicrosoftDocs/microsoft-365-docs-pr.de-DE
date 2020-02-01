@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
-ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69ff4846e3daeef39310aa63961e0b3f5ccb9875
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370242"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596592"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Schritt 1: Vorbereiten Ihrer Organisation auf Windows 10 Enterprise
 
@@ -43,9 +45,9 @@ Verwenden Sie den entsprechenden Wert in der Tabelle unten, wenn Sie die Verwalt
 | Ebene | Gesammelte Daten | Wert |
 |:--- |:--- |:--- |
 | Sicherheit | Nur Sicherheitsdaten. | 0 |
-| Basic | Sicherheitsdaten und grundlegende System-und Qualitätsdaten. | 1 |
-| Verbesserte | Sicherheitsdaten, grundlegende System-und Qualitätsdaten sowie erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten. | 2 |
-| Vollständig | Sicherheitsdaten, grundlegende System-und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3 |
+| Basic | Sicherheitsdaten und grundlegende System-und Qualitätsdaten. | 1  |
+| Verbesserte | Sicherheitsdaten, grundlegende System-und Qualitätsdaten sowie erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten. | 2  |
+| Vollständig | Sicherheitsdaten, grundlegende System-und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3  |
 
 Sie können Diagnosedaten mit einer der folgenden Methoden aktivieren:
 

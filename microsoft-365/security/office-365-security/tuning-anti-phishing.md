@@ -1,5 +1,7 @@
 ---
 title: Optimieren des Schutzes gegen Phishing in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe für die durchgeführten Phishing-Nachrichten zu identifizieren und zu verhindern, dass mehr Phishing-Nachrichten in der Zukunft vermieden werden.
-ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: b7ce09ff85c0341ea8cb901942e87dbe10ba0435
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823847"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598142"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Optimieren des Schutzes gegen Phishing in Office 365
 

@@ -1,5 +1,7 @@
 ---
 title: Set up Information Rights Management (IRM) in SharePoint admin center
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: In diesem Artikel erfahren Sie, wie Sie SharePoint Online IRM über Microsoft Azure Active Directory Rights Management Services (RMS) zum Schutz von SharePoint-Listen und-Dokumentbibliotheken verwenden.
-ms.openlocfilehash: 4ed50b5c683215394222628153c03c58ee23e6a0
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 47321ea6151b51ac3637b3c044af37fbbc032d56
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686195"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597442"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +40,7 @@ Melden Sie sich nach dem Aktivieren des Rights Management-Diensts beim SharePoin
     
 2. Wählen Sie das Symbol für das App-Startfeld ![The app launcher icon in Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in der oberen linken Ecke und dann **Administrator** aus, um das Microsoft 365 Admin Center zu öffnen. (Wenn die Kachel „Administrator“ nicht angezeigt wird, verfügen Sie in Ihrem Unternehmen nicht über Office 365-Administratorberechtigungen.) 
     
-3. Wählen Sie im linken Bereich **Admin Center** \> **SharePoint**aus.
+3. Wählen Sie im linken Bereich **Admin Center** \>**SharePoint** aus.
     
 4. Klicken Sie im linken Bereich auf **Einstellungen**, und wählen Sie dann die **Seite klassische Einstellungen**aus.
     

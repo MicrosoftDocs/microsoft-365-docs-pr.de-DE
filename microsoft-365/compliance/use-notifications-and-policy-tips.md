@@ -1,5 +1,7 @@
 ---
 title: Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn jemand mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686188"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597352"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -52,7 +54,7 @@ Wenn Sie eine DLP-Richtlinie erstellen, sind sowohl e-Mail-Benachrichtigungen al
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
     
 3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
     
@@ -91,7 +93,7 @@ Für jede Regel in einer DLP-Richtlinie haben Sie folgende Möglichkeiten:
   
 - Senden Sie die Benachrichtigung an die Personen, die Sie auswählen. Diese Personen können den Besitzer des Inhalts, die Person, die den Inhalt zuletzt geändert hat, den Besitzer der Website, auf der der Inhalt gespeichert ist, oder einen bestimmten Benutzer einschließen.
     
-- Passen Sie den Text an, der in der Benachrichtigung enthalten ist, indem Sie HTML oder Token verwenden. Weitere Informationen finden Sie im Abschnitt weiter unten.
+- Passen Sie den Text an, der in der Benachrichtigung enthalten ist, indem Sie HTML oder Token verwenden. Weitere Informationen hierzu finden Sie im nachstehenden Abschnitt.
     
 > [!NOTE]
 >  E-Mail-Benachrichtigungen können nur an einzelne Empfänger gesendet werden, nicht an Gruppen oder Verteilerlisten. Nur neue Inhalte können eine e-Mail-Benachrichtigung auslösen. Durch das Bearbeiten vorhandener Inhalte werden Richtlinien Tipps ausgelöst, jedoch keine e-Mail-Benachrichtigung. 
@@ -152,9 +154,9 @@ Hier sind einige feine Punkte, die Sie bei der Verwendung eines Richtlinien Tipp
   
 - Die Option zum außer Kraft setzen ist pro Regel und setzt alle Aktionen in der Regel außer Kraft (mit Ausnahme des Sendens einer Benachrichtigung, die nicht überschrieben werden kann).
     
-- Es ist möglich, dass Inhalte mehreren Regeln in einer DLP-Richtlinie entsprechen, aber nur der richtlinientipp aus der restriktivsten, die höchste Priorität Regel wird angezeigt. Beispielsweise wird ein richtlinientipp von einer Regel, die den Zugriff auf Inhalte blockiert, über einen richtlinientipp aus einer Regel angezeigt, die einfach eine Benachrichtigung sendet. Dadurch wird verhindert, dass Benutzer eine Kaskade von Richtlinien Tipps sehen.
+- Es ist möglich, dass Inhalte mehreren Regeln in einer DLP-Richtlinie entsprechen, aber nur der richtlinientipp aus der restriktivsten, die höchste Priorität Regel wird angezeigt. So hat beispielsweise der Richtlinientipp zu einer Regel, die Zugriff auf Inhalte blockiert, Vorrang gegenüber dem Richtlinientipp zu einer Regel, die einfach nur eine Benachrichtigung sendet. Dadurch wird verhindert, dass Benutzern eine umfangreiche Liste von Richtlinientipps angezeigt wird.
     
-- Wenn die Richtlinien Tipps in der restriktivsten Regel es Benutzern ermöglichen, die Regel außer Kraft zu setzen, setzt das Überschreiben dieser Regel auch andere Regeln außer Kraft, die mit dem Inhalt übereinstimmten.
+- Wenn die Richtlinientipps in der restriktivsten Regel Benutzern erlauben, die Regel außer Kraft zu setzen, werden dadurch auch alle anderen Regeln überschrieben, die für den Inhalt gelten.
     
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Richtlinien Tipps für OneDrive für Unternehmen Websites und SharePoint Online Websites
 
@@ -281,8 +283,8 @@ Sie können den Text für Richtlinien Tipps separat von der e-Mail-Benachrichtig
     
 - [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
     
-- [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften](protect-documents-that-have-fci-or-other-properties.md)
+- [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI- oder anderen Eigenschaften](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Inhalt der DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
+- [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
+- [Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)

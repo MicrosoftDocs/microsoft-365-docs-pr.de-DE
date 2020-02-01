@@ -1,5 +1,7 @@
 ---
-title: Team für ein streng geheimes Projekt der Contoso Corporation
+title: Team für ein streng geheimes Projekt in der Contoso Corporation
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: Hier erfahren Sie, wie Contoso ein Team für streng geregelte Daten für ein streng geheimes Projekt verwendet, um eine neue Produkt-und Dienst Suite zu entwickeln.'
-ms.openlocfilehash: 23a967ea7ffdb3497d705a3ddda4d3c56e415b8e
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699894"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597072"
 ---
-# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team für ein streng geheimes Projekt der Contoso Corporation
+# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team für ein streng geheimes Projekt in der Contoso Corporation
 
 Nach einem externen Geschäftsführer ordnete der CEO von Contoso die Entwicklung einer neuen Produkt-und Dienst Suite an, die die Gewinne von Contoso in den nächsten fünf Jahren verdoppeln könnte. Das streng geheime Projekt zur Entwicklung des Geschäfts-, Ingenieur-und Marktplans wurde mit dem Namen **Project 2X** und den wichtigsten Mitarbeitern im gesamten Unternehmen rekrutiert. 
 

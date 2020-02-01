@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines rechtlichen Aufbewahrungs Vermerks
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c34271f5dce3bc830241ba0fa5bad70cd294ba22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080897"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595622"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen eines rechtlichen Aufbewahrungs Vermerks
 

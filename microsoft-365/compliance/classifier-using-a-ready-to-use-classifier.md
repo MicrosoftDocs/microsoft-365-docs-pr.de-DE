@@ -1,5 +1,7 @@
 ---
 title: Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 verfügt über eine Reihe von einsatzfähigen Computer Lern-Klassifizierungen, mit denen Sie Inhalte in Ihrer Organisation identifizieren und bezeichnen können. In diesem Thema wird erläutert, wie Sie diese bereit für die Verwendung von Klassifizierungen vorbereiten.
-ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: c6659bc32131948c57ad0bf7c8e3a30fbce125d9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259431"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595892"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
 

@@ -1,5 +1,7 @@
 ---
 title: Überprüfen der Inhaltssuchabfrage auf Fehler
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Überprüfen Sie Ihre Stichwortabfrage auf die Inhaltssuche nach Fehlern und Tippfehlern, wie nicht unterstützten Zeichen und booleschen Kleinbuchstaben Operatoren, bevor Sie die Suche ausführen. Wenn ein Fehler vorliegt, schlagen wir eine überarbeitete Abfrage vor.
-ms.openlocfilehash: 1d2c9a9f3e2204fa65fe29c9adaffe818d2f7a4c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633992"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595922"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Überprüfen der Inhaltssuchabfrage auf Fehler
 

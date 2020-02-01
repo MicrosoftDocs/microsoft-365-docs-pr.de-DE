@@ -1,5 +1,7 @@
 ---
 title: Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 'Verwenden Sie das Tool für die Inhaltssuche im Security #a0 Compliance Center zum Suchen und Exportieren von verläuft-Chat Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung.'
-ms.openlocfilehash: 5c757ee16232cb0e70b8adf57ab6888fb972368e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676822"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597572"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
 

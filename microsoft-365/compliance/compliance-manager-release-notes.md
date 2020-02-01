@@ -1,5 +1,7 @@
 ---
 title: Anmerkungen zur Microsoft Compliance-Manager-Version
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: c988a727bc48a5b27146168a66a0831c9b57b216
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806688"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595782"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Anmerkungen zur Version für Compliance-Manager (Vorschau)
 
@@ -42,7 +44,7 @@ Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microso
 
 In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorstehenden Versionen von Compliance-Manager behoben werden sollten.
 
-### <a name="compliance-score"></a>Kompatibilitätsbewertung
+### <a name="compliance-score"></a>Compliancebewertung
 
 - Bei Aktionselementen, die als " **nicht im Bereich**" gekennzeichnet sind, wird das dem Aktionselement zugewiesene Ergebnis nicht aus der Berechnung der Konformitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** markiert sind, verbessern nicht Ihre Konformitätsbewertung.
 
@@ -76,7 +78,7 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 - Archivierte Vorlagen sind bearbeitbar und sollten nicht bearbeitbar sein.
 - Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 
-### <a name="export"></a>Export
+### <a name="export"></a>Exportieren
 
 - Der Vorlagenexport in JSON schlägt fehl, wenn der Vorlagenstatus auf " **importiert** " oder " **Ausstehende Genehmigung**" festgelegt ist.
 

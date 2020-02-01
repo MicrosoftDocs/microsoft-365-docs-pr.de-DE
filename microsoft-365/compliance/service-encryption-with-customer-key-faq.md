@@ -1,5 +1,7 @@
 ---
 title: Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Zusätzlich zur standardmäßigen Verschlüsselung auf Volumen Ebene, die über BitLocker und den Distributed Key Manager (DKM) aktiviert ist, bietet Office 365 eine zusätzliche Verschlüsselungsebene auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich Daten aus Exchange Online, Skype for Business, SharePoint Online und OneDrive für Unternehmen. Dies wird als Dienst Verschlüsselung bezeichnet.
-ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: a2285db4bd5ff5594c6b766dcad8909f0442d3ce
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686176"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597452"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
 
@@ -81,7 +83,7 @@ Der Verfügbarkeits Schlüssel ist ein Stammschlüssel, der bereitgestellt wird,
 
  **Exchange Online und Skype for Business:** Sie können bis zu 50 DEPs erstellen. 
   
- **SharePoint Online und OneDrive für Unternehmen:** Eine DEP gilt für Daten an einem geografischen Standort, der auch als Geo bezeichnet wird. Wenn Sie das Multi-Geo-Feature von Office 365 verwenden, können Sie eine DEP pro Geo erstellen. Wenn Sie keine Multi-Geo-Daten verwenden, können Sie eine DEP erstellen.
+ **SharePoint Online und OneDrive für Unternehmen:** Eine DEP gilt für Daten an einem geografischen Standort, der auch als Geo bezeichnet wird. Wenn Sie das Multi-Geo-Feature von Office 365 verwenden, können Sie eine Datenverschlüsselungsrichtlinie (DEP) pro Geo erstellen. Wenn Sie keine Multi-Geo-Daten verwenden, können Sie eine DEP erstellen.
   
 ## <a name="can-i-assign-a-data-encryption-policy-before-migrating-a-mailbox-to-the-cloud"></a>Kann ich eine Daten Verschlüsselungsrichtlinie zuweisen, bevor Sie ein Postfach in die Cloud migrieren?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>

@@ -1,5 +1,7 @@
 ---
 title: Office 365 Verschlüsselung in Microsoft Dynamics 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Grundlegendes zur Verschlüsselung in Microsoft Dynamics 365.'
-ms.openlocfilehash: 58afc2d35ece4b5bfd7594aad483606e6f867823
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690442"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597852"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Office 365 Verschlüsselung in Microsoft Dynamics 365
 

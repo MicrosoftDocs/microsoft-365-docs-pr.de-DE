@@ -1,5 +1,7 @@
 ---
 title: Widerrufen von E-Mails, die von der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Als Office 365 Administrator können Sie bestimmte e-Mails widerrufen, die mit Office 365 erweiterter Nachrichtenverschlüsselung verschlüsselt wurden.
-ms.openlocfilehash: d3d449c969b2fa5d21042779ebad11e3807d1d3e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112519"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597602"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Widerrufen von E-Mails, die von der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden
 
@@ -79,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob Sie eine bestimmt
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
      ```
 
-   Gibt den Betreff der Nachricht zurück und gibt an, ob die Nachricht widerruflich ist. For example,
+   Gibt den Betreff der Nachricht zurück und gibt an, ob die Nachricht widerruflich ist. Beispiele:
 
      ```text
      Subject IsRevocable

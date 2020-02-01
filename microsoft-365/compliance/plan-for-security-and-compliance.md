@@ -1,5 +1,7 @@
 ---
 title: Planen der Sicherheits &amp; Konformität in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Zielseite für die Planung von Sicherheit und Compliance
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 784cf4a2fec64a8156d8761942091fec066e5ae7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38686150"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597752"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planen der Sicherheits &amp; Konformität in Office 365
 

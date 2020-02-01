@@ -1,6 +1,8 @@
 ---
 title: Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967988"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598762"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
 
@@ -30,7 +32,7 @@ In Abhängigkeit von Ihrem Abonnement kann [Office 365 Advanced Threat Protectio
 - Eine Übersicht über die Funktionsweise finden Sie unter [Automatische Untersuchung und Antwort in Office 365](automated-investigation-response-office.md).
 
 > [!TIP]
-> Haben Sie Microsoft 365 E5 oder Microsoft 365 E3 zusammen mit Identity #a0 Threat Protection? In diesem Fall sollten Sie die [Automatische Untersuchung und Reaktion (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md)testen.
+> Verwenden Sie Microsoft 365 E5 oder Microsoft 365 E3 zusammen mit Identitäts- und Bedrohungsschutz? In diesem Fall sollten Sie die [Automatische Untersuchung und Reaktion (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md)testen.
 
 Mit automatisierten Ermittlungs-und Antwortfunktionen, wenn bestimmte Warnungen ausgelöst werden, werden mindestens ein Sicherheits Textbuch initiiert, und der automatische Ermittlungsprozess wird gestartet. Während und nach einem automatisierten Ermittlungsprozess kann Ihr Sicherheitsteam folgende Aufgaben ausführen:
 
@@ -43,7 +45,7 @@ Mit automatisierten Ermittlungs-und Antwortfunktionen, wenn bestimmte Warnungen 
 
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
 
 2. Führen Sie einen der folgenden Schritte aus:
 
@@ -65,7 +67,7 @@ Mit automatisierten Ermittlungs-und Antwortfunktionen, wenn bestimmte Warnungen 
 
 In Office 365 führen automatisierte Untersuchungen normalerweise zu einer oder mehreren empfohlenen Aktionen. Es werden jedoch keine Aktionen ausgeführt, bis Sie vom Sicherheits Betriebsteam genehmigt wurden. Verwenden Sie das folgende Verfahren, um Aktionen zu überprüfen und zu genehmigen.
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. 
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. 
 
 2. Wechseln Sie zu **Threat Management** > **Investigations**.
 
@@ -81,7 +83,7 @@ In Office 365 führen automatisierte Untersuchungen normalerweise zu einer oder 
 
 Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Office 365 aus. Weitere Informationen finden Sie unter [Alerts](automated-investigation-response-office.md#alerts). Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
 
 2. Wechseln Sie zu **Threat Management** > **Investigations**.
 

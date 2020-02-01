@@ -1,5 +1,7 @@
 ---
 title: Warnungsrichtlinien im Security and Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen. Anschließend können Sie die Warnungen anzeigen und verwalten, die generiert werden, wenn Benutzeraktivitäten ausführen, die den Bedingungen einer Warnungs Richtlinie entsprechen.
-ms.openlocfilehash: 8d76a93c569093f6a632984ec96db0d0aeb9c218
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 025bf927b194a7faa6357dbabc12a424fe3f3124
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233796"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596102"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security and Compliance Center
 
@@ -180,7 +182,7 @@ Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugew
 |Geräteverwaltung|||||||
 |Dispositionsverwaltung|||||||
 |DLP-Konformitätsverwaltung||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Export|||||||
+|Exportieren|||||||
 |Hold|||||||
 |Benachrichtigungen verwalten||||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Organisationskonfiguration||||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

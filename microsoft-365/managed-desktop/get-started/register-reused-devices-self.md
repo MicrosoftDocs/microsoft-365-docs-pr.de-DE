@@ -3,14 +3,16 @@ title: Selbstregistrieren vorhandener Geräte
 description: Wiederverwendete Geräte registrieren, die Sie möglicherweise bereits haben, damit Sie von Microsoft Managed Desktop verwaltet werden können
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112709"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596532"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 

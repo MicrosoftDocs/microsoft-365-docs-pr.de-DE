@@ -1,5 +1,7 @@
 ---
 title: Einrichten von Smarttags in Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Mit Smarttags können Sie die Lernfunktionen für Computer anwenden, wenn Sie Inhalte in einem erweiterten eDiscovery-Fall überprüfen. Verwenden Sie smarttaggruppen, um die Ergebnisse von Computer Lern-Erkennungs Modellen anzuzeigen, beispielsweise das Anwalts-Client-Berechtigungsmodell.
-ms.openlocfilehash: 68b558cc2282cc388387f8d61825b9ee569ff32a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b3e1310baa06f53a3ee1dab5c371fb67d6ab95c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081913"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597402"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Einrichten von Smarttags in Advanced eDiscovery
 

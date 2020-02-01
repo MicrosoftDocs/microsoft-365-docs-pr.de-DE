@@ -1,5 +1,7 @@
 ---
 title: Häufig gestellte Fragen (FAQ) zur Quarantäne
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt.
-ms.openlocfilehash: d275a919e58d2a908fb10d4dff412ebe0859662f
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: b4112bf785a6ee2f4c833ab08d2c199388585093
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021841"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598662"
 ---
 # <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
@@ -35,7 +37,7 @@ A. Standardmäßig werden durch die Inhaltsfilterung abgefangene Nachrichten an 
 
  **F. Bietet der Dienst Administrator- und Endbenutzerverwaltung von Nachrichten in der Spamquarantäne?**
 
-A. Als Administrator können Sie im Security and Compliance Center (SCC) nach Details zu allen isolierten e-Mail-Nachrichten suchen und diese anzeigen. Nach dem Auffinden der Nachricht können Sie sie für bestimmte Benutzer freigeben und dem Microsoft-Spamanalyseteam optional als falsch positiv (kein Junk) melden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md).
+A: Als Administrator können Sie im Security and Compliance Center (SCC) nach Details zu allen isolierten e-Mail-Nachrichten suchen und diese anzeigen. Nach dem Auffinden der Nachricht können Sie sie für bestimmte Benutzer freigeben und dem Microsoft-Spamanalyseteam optional als falsch positiv (kein Junk) melden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md).
 
 Als Endbenutzer können Sie Ihre eigenen Nachrichten in der Spamquarantäne verwalten über:
 
@@ -43,15 +45,15 @@ Als Endbenutzer können Sie Ihre eigenen Nachrichten in der Spamquarantäne verw
 
  **F. wie erteile ich dem Benutzer Zugriff auf Quarantäne?**
 
-A. Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EoP Kunden, die lokale Postfächer schützen, müssen gültige e-Mail-Benutzer sein, die über die Verzeichnissynchronisierung oder die Exchange-Verwaltungskonsole erstellt werden. Weitere Informationen zum Verwalten von Benutzern finden Sie in den EoP-Administratoren unter [Verwalten von e-Mail-Benutzern in EoP](manage-mail-users-in-eop.md). Für EoP-eigenständige Kunden empfehlen wir die Verwendung der Verzeichnissynchronisierung und die Aktivierung der verzeichnisbasierten Edge-Blockierung; Weitere Informationen finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.
+A: Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EoP Kunden, die lokale Postfächer schützen, müssen gültige e-Mail-Benutzer sein, die über die Verzeichnissynchronisierung oder die Exchange-Verwaltungskonsole erstellt werden. Weitere Informationen zum Verwalten von Benutzern finden Sie in den EoP-Administratoren unter [Verwalten von e-Mail-Benutzern in EoP](manage-mail-users-in-eop.md). Für EoP-eigenständige Kunden empfehlen wir die Verwendung der Verzeichnissynchronisierung und die Aktivierung der verzeichnisbasierten Edge-Blockierung; Weitere Informationen finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.
 
  **F. welche Nachrichten können Endbenutzern in der Quarantäne zugreifen?**
 
-A. Endbenutzer können auf Ihre eigenen Phishing-, Spam-und Massen-e-Mails zugreifen. Endbenutzer können nicht auf Ihre eigene Schadsoftware, Phishing mit hoher Zuverlässigkeit oder Nachrichten zugreifen, die mit einer Nachrichtenfluss Regel übereinstimmen (auch als Transportregel bezeichnet); Diese sind nur in der Administrator Quarantäne verfügbar. 
+A: Endbenutzer können auf Ihre eigenen Phishing-, Spam-und Massen-e-Mails zugreifen. Endbenutzer können nicht auf Ihre eigene Schadsoftware, Phishing mit hoher Zuverlässigkeit oder Nachrichten zugreifen, die mit einer Nachrichtenfluss Regel übereinstimmen (auch als Transportregel bezeichnet); Diese sind nur in der Administrator Quarantäne verfügbar. 
 
  **F. Wie lange bleiben Nachrichten in der Quarantäne?**
 
-A. Standardmäßig werden Spam isolierte Nachrichten 30 Tage lang in der Quarantäne aufbewahrt, während isolierte Nachrichten, die einer e-Mail-Fluss Regel entsprechen, in der Quarantäne für bis zu 30 Tage aufbewahrt werden, basierend auf dem in der standardmäßigen Inhaltsfilter Richtlinie festgelegten Aufbewahrungszeitraum. Nach dieser Zeitspanne werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren Ihrer Richtlinien für Spamfilter](configure-your-spam-filter-policies.md).
+A: Standardmäßig werden Spam isolierte Nachrichten 30 Tage lang in der Quarantäne aufbewahrt, während isolierte Nachrichten, die einer e-Mail-Fluss Regel entsprechen, in der Quarantäne für bis zu 30 Tage aufbewahrt werden, basierend auf dem in der standardmäßigen Inhaltsfilter Richtlinie festgelegten Aufbewahrungszeitraum. Nach dieser Zeitspanne werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren Ihrer Richtlinien für Spamfilter](configure-your-spam-filter-policies.md).
 
  **F. Kann ich mehr als eine Quarantänenachricht gleichzeitig freigeben oder melden?**
 

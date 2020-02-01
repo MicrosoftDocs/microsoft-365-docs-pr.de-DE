@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Berichten für Office 365 Advanced Threat Protection, Schadsoftware-Berichte, Phishing-Berichte, kompromittierte Konten, URL-Schutzstatus, Threat Reporting, melden von Bedrohungen
+f1.keywords:
+- CSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: 74ed1387af7792d8cb41d6f890deb89be07fc9fc
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: a1db932dda8b49d2d17805e605e11bc654c0e318
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210507"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598072"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 

@@ -1,5 +1,7 @@
 ---
 title: Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sicherheitsrisiken in Ihrer Organisation erforschen, auf Schadsoftware, Phishing und andere Angriffe reagieren können, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen. Indikatoren.
-ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808120"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598752"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen in Office 365
 
@@ -95,7 +97,7 @@ Office 365 Advanced Threat Protection verwendet rollenbasierte Zugriffssteuerung
 > - [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 
-|Aktivität |Rollen und Berechtigungen |  
+|Activity |Rollen und Berechtigungen |  
 |:-----|:-----|
 |Verwenden des Threat-Dashboards (oder des neuen [Sicherheits Dashboards](security-dashboard.md))<br/> <br/>Anzeigen von Informationen zu aktuellen oder aktuellen Bedrohungen  <br/> |Eine der folgenden Varianten: <br/>- **Office 365 globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen werden. |
 |Verwenden von [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) zum Analysieren von Bedrohungen  <br/> |Eine der folgenden Varianten: <br/>- **Office 365 globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen werden. |

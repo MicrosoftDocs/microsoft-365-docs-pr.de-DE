@@ -1,5 +1,7 @@
 ---
 title: Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatische Erweiterung der Archivierung, um die Größe des Ordners "Wiederherstellbare Elemente" für ein Postfach in Office 365 zu erhöhen. '
-ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686242"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597932"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 
@@ -31,7 +33,7 @@ Um die Wahrscheinlichkeit zu verringern, diesen Grenzwert zu überschreiten, wir
   
 |**Speicherort des Ordners "refundable Items"**|**Nicht in der Warteschleife gehaltene Postfächer**|**Aufbewahrung von Postfächern**|
 |:-----|:-----|:-----|
-|Primäres Postfach  <br/> |30 GB  <br/> |100 GB  <br/> |
+|Primäres Postfach  <br/> |30 GB  <br/> |100 GB  <br/> |
 |Archivpostfach<sup>\*</sup> <br/> |Unbegrenzt  <br/> |Unbegrenzt  <br/> |
 |**Gesamtes Speicherkontingent für den Ordner "refundable Items"** <br/> |Unbegrenzt  <br/> |Unbegrenzt  <br/> |
    
@@ -61,7 +63,7 @@ Im weiteren Verlauf dieses Themas werden die schrittweisen Verfahren zum Erstell
 
 Der erste Schritt besteht darin, für den Ordner "Wiederherstellbare Elemente" ein benutzerdefiniertes Aufbewahrungstags (als Aufbewahrungsrichtlinientag oder RPT bezeichnet) zu erstellen. Wie bereits erläutert, verschiebt dieser RPT Elemente aus dem Ordner "refundable Items" im primären Postfach des Benutzers in den Ordner "refundable Items" im Archivpostfach des Benutzers. Sie müssen PowerShell verwenden, um eine RPT für den Ordner "Wiederherstellbare Elemente" zu erstellen. Sie können nicht die Exchange-Verwaltungskonsole (EAC) verwenden. 
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Führen Sie den folgenden Befehl aus, um eine neue RPT für den Ordner "Wiederherstellbare Elemente" zu erstellen: 
     
@@ -84,7 +86,7 @@ Im nächsten Schritt erstellen Sie eine neue Aufbewahrungsrichtlinie und fügen 
   
 Bevor Sie die neue Aufbewahrungsrichtlinie erstellen, müssen Sie die zusätzlichen Aufbewahrungstags bestimmen, die Sie hinzufügen möchten. Eine Liste der Aufbewahrungstags, die der Standard-MRM-Richtlinie hinzugefügt werden, sowie Informationen zum Erstellen neuer Aufbewahrungstags finden Sie in den folgenden Themen:
   
-- [Standardmäßige Aufbewahrungsrichtlinie in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- [Standardaufbewahrungsrichtlinie in Exchange Online ](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - [Standardordner, die Aufbewahrungsrichtlinientags unterstützen](https://go.microsoft.com/fwlink/p/?LinkId=746957)
     

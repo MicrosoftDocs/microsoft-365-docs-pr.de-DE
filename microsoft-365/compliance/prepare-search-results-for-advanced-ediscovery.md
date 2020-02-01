@@ -1,5 +1,7 @@
 ---
 title: Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,18 +17,21 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 'In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center in Office 365 für weitere Analysen mit dem erweiterten eDiscovery-Tool vorbereiten.'
-ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082237"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597742"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
 
-Nachdem eine Suche, die einem eDiscovery-Fall im Security #a0 Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse zur weiteren Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie große, unstrukturierte Datasets analysieren und verringern Sie die Datenmenge, die für einen juristischen Fall relevant ist. Zu den erweiterten eDiscovery-Features gehören:
+> [!IMPORTANT]
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v 1.0*) an. Wenn Sie noch Advanced eDiscovery v 1.0 verwenden, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365*bezeichnet). Advanced eDiscovery 2,0 enthält ähnliche Funktionen wie in Advanced eDiscovery v 1.0, bietet aber auch viele neue Features wie Depotverwaltung, Kommunikationsverwaltung und Überprüfungs Sätze. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+
+Nachdem eine Suche, die einem eDiscovery-Fall im Security #a0 Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse zur weiteren Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie große, unstrukturierte Datasets analysieren und die für einen juristischen Fall relevante Datenmenge reduzieren können. Zu den erweiterten eDiscovery-Features gehören:
   
-- **Optische Zeichenerkennung** – Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, extrahiert die OCR-Funktion (Optical Character Recognition) automatisch Text aus Bildern und schließt diese mit den Suchergebnissen ein, die in geladen werden. Erweiterte eDiscovery für Analyse. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Auf diese Weise können Sie die Textanalyse Funktionen von Advanced eDiscovery (Near-Duplicates, e-Mail-Threading, Themes und Predictive Coding) auf den Textinhalt in Bilddateien anwenden. Die erweiterte eDiscovery-OCR unterstützt die folgenden Formate für Bilddateien:
+- **Optische Zeichenerkennung** – Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, extrahiert die optische Zeichenerkennung (OCR)-Funktion automatisch Text aus Bildern und enthält diese mit den Suchergebnissen, die in Advanced eDiscovery for Analysis geladen werden. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Auf diese Weise können Sie die Textanalyse Funktionen von Advanced eDiscovery (Near-Duplicates, e-Mail-Threading, Themes und Predictive Coding) auf den Textinhalt in Bilddateien anwenden. Die erweiterte eDiscovery-OCR unterstützt die folgenden Formate für Bilddateien:
 
     - GIF
     - JPEG
@@ -44,7 +49,7 @@ Nachdem eine Suche, die einem eDiscovery-Fall im Security #a0 Compliance Center 
     
 - **Exportieren von Daten für Überprüfungs Anwendungen** -Sie können Daten aus Advanced eDiscovery und Office 365 exportieren, nachdem Sie Ihre Analyse abgeschlossen und das DataSet reduziert haben. Das Exportpaket enthält eine CSV-Datei, die die Eigenschaften aus den exportierten Inhalts-und Analyse Metadaten enthält. Dieses Exportpaket kann dann in eine eDiscovery-Überprüfungs Anwendung importiert werden. 
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die Fällen zugeordnet sind, und Verwenden von Advanced eDiscovery zum Analysieren von Daten benötigen keine E5-Lizenz. 
     

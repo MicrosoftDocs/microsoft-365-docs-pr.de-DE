@@ -1,5 +1,7 @@
 ---
 title: Azure AD Identitätsschutz für Ihre Microsoft 365 Enterprise-Testumgebung
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie Azure AD Identitätsschutz, und analysieren Sie die aktuellen Konten in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: c0d364eaef9cfd37531d9f9e1803db66739a7984
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 376fc838191314e93ae37accb7fc5066456499fb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802100"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597162"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identitätsschutz für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -31,7 +33,7 @@ Es gibt zwei Phasen zum Einrichten Azure AD Identitätsschutzes in Ihrer Microso
 1. Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
 2. Verwenden Sie Azure AD Identitätsschutz.
 
-![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
@@ -43,7 +45,7 @@ Wenn Sie Azure AD Identitätsschutz nur auf einfache Weise mit den Mindestanford
 Wenn Sie Azure AD Identitätsschutz in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Pass-Through-Authentifizierung](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Das Testen Azure AD Identitätsschutzes erfordert keine simulierte Enterprise-Testumgebung, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Azure AD Identitätsschutz testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
+> Für das Testen Azure AD Identitätsschutzes ist keine simulierte Enterprise-Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Azure AD Identitätsschutz testen und mit dieser in einer Umgebung experimentieren können, die eine typische Organisation darstellt. 
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>Phase 2: Verwenden von Azure AD Identitätsschutz
 

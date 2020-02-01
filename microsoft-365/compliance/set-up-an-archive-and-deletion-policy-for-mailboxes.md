@@ -1,5 +1,7 @@
 ---
 title: Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967768"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597482"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 
@@ -44,7 +46,7 @@ In den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsrich
     
 Sie können einige oder alle Schritte in diesem Artikel befolgen, um eine Archivierungs-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess auf einigen Postfächern zu testen, bevor er für alle Postfächer in Ihrer Organisation implementiert wird.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
@@ -309,7 +311,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
     
 - In der folgenden Tabelle finden Sie weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die durch Befolgen der Schritte in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungstags**|**Funktionsweise dieses Tags**|**Integriert oder Benutzerdefiniert?**|**Type**|
+    |**Aufbewahrungstags**|**Funktionsweise dieses Tags**|**Integriert oder Benutzerdefiniert?**|**Typ**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Jahre Umstellung auf Archiv  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpines Haus 7 Jahre dauerhaft löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |

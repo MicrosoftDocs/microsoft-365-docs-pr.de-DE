@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme haben, E-Mails an Postfächer in Office 365 zu senden, und bewährte Methoden für Massenmailings an Office 365-Kunden.
-ms.openlocfilehash: 44fe5b984c22a4560da6cf8d63096775f5b47095
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5a672eacacafdb1d9660c2218aa54ac1947acb32
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872011"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598162"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden
 

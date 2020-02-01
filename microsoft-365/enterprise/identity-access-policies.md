@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37746551"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596952"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -231,7 +233,7 @@ In den folgenden Tabellen werden die empfohlenen Einstellungen beschrieben:
 ||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|Nein||
 ||Erneutes Überprüfen der Zugriffsanforderung nach (Minuten)|30||
 ||Bildschirmaufnahme und Android-Assistenten blockieren|Nein|Bei iOS ist diese Option nicht verfügbar.|
-|Anmelde Sicherheitsanforderungen|Max. Pin-Versuche|5|PIN zurücksetzen|
+|Anmelde Sicherheitsanforderungen|Max. Pin-Versuche|5 |PIN zurücksetzen|
 ||Offline-Toleranzperiode|720|Zugriff blockieren|
 ||Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden|90|Daten löschen|
 ||Jailbroken/verwurzelte Geräte| |Daten löschen|
@@ -311,7 +313,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 ||Minimale Kennwortlänge|6 ||
 ||Maximale Anzahl von Minuten Inaktivität, bevor Kennwort erforderlich ist|15 |Diese Einstellung wird für die Android-Versionen 4,0 und höher oder für Knox 4,0 und höher unterstützt. Für IOS-Geräte wird diese für IOS 8,0 und höher unterstützt.|
 ||Kennwortablauf (Tage)|41||
-||Anzahl der vorherigen Kennwörter zur Verhinderung der Wiederverwendung|5||
+||Anzahl der vorherigen Kennwörter zur Verhinderung der Wiederverwendung|5 ||
 ||Kennwort anfordern, wenn das Gerät vom Leerlaufzustand zurückkehrt (Mobil und holographisch)|Erforderlich|Verfügbar für Windows 10 und höher|
 |Verschlüsselung|Verschlüsselung der Datenspeicherung auf dem Gerät|Erforderlich||
 |Gerätesicherheit|Firewall|Erforderlich||

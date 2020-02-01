@@ -1,7 +1,9 @@
 ---
 title: Verwalten Sie den Lebenszyklus von in SharePoint Online gespeicherten Produktdokumenten mit Aufbewahrungsbezeichnungen
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Office 365-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Office 365-Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: 3c9afd05fd4f59a5136ab12dbd7558ade3073e43
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637839"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596372"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
 
@@ -278,82 +280,38 @@ In diesem Szenario verwenden wir den folgenden Flow, um das Ereignis auszulösen
 
 ![Konfigurieren des Flows, der das Ereignis auslöst](media/SPRetention24.png)
 
-Starten Sie zum Erstellen dieses Flows einen SharePoint-Connector, und wählen Sie den Auslöser **Wenn ein Element erstellt oder geändert wird** aus. Geben Sie die Site-Adresse und den Listennamen an und fügen Sie dann eine Bedingung hinzu, die darauf basiert, dass der Wert der Spalte **In Produktion** auf **Nein** gesetzt ist (oder auf der Bedingungskarte gleich „false“ ist). Fügen Sie dann eine Aktion hinzu, die auf der integrierten HTTP-Vorlage basiert. Verwenden Sie die Werte in der folgenden Tabelle, um die HTTP-Aktion zu konfigurieren. Sie können die Werte für die Eigenschaften URI und Body aus der folgenden Tabelle kopieren und dann in die Vorlage einfügen.
+Starten Sie zum Erstellen dieses Flows einen SharePoint-Connector, und wählen Sie den Auslöser **Wenn ein Element erstellt oder geändert wird** aus. Geben Sie die Site-Adresse und den Listennamen an und fügen Sie dann eine Bedingung hinzu, die darauf basiert, dass der Wert der Spalte **In Produktion** auf **Nein** gesetzt ist (oder auf der Bedingungskarte gleich „false“ ist). Fügen Sie dann eine Aktion hinzu, die auf der integrierten HTTP-Vorlage basiert. Verwenden Sie die Werte im folgenden Abschnitt, um die HTTP-Aktion zu konfigurieren. Sie können die Werte für die Eigenschaften URI und Textkörper aus dem folgenden Abschnitt kopieren und dann in die Vorlage einfügen.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>Wert</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Methode</td>
-<td>POST</td>
-<tr class="even">
-<td>URI</td>
-<td><a href="https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Kopfzeile</td>
-<td>Schlüssel = Inhaltstyp, Wert = application/atom+xml</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Body</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;Product Cessation&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}&quot;&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;@{formatDateTime(utcNow(),'yyyy-MM-dd')}&lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;</p></td>
-<td></td>
-</tr>
+- **Methode**: POST
+- **URI**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+- **Body**:
 
-</tbody>
-</table>
+```HTML
+<?xml version='1.0' encoding='utf-8' standalone='yes'>
+<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
+<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
+<updated>9/9/2017 10:50:00 PM</updated>
+<content type='application/xml'>
+<m:properties>
+<d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
+<d:EventType>Product Cessation&lt;</d:EventType>
+<d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
+<d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
+</m:properties>
+</content&gt>
+</entry>
+```
 
-In der folgenden Tabelle werden die Parameter in der Body-Eigenschaft der Aktion beschrieben, die speziell für dieses Szenario konfiguriert werden müssen. 
+Im folgenden Abschnitt werden die Parameter in der Eigenschaft *Body* der Aktion beschrieben, die speziell für dieses Szenario konfiguriert werden müssen.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>Beschreibung</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Name</td>
-<td>Dieser Parameter gibt den Namen des Ereignisses an, das im Sicherheits- und Compliance-Center erstellt wird. In diesem Szenario lautet der Name "Einstellung der Produktion xxx", wobei xxx der Wert der zuvor erstellten verwaltete Eigenschaft ProductName ist. </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EventType</td>
-<td>Der Wert für diesen Parameter entspricht dem Ereignistyp, auf den das erstellte Ereignis angewendet wird. Dieser Ereignistyp wurde beim Erstellen der Aufbewahrungsbezeichnung definiert. In diesem Szenario lautet der Ereignistyp "Produkteinstellung".</td>
-</tr>
-<tr class="even">
-<td>SharePointAssetIdQuery</td>
-<td>Dieser Parameter definiert die Objekt-ID für das Ereignis. Die ereignisbasierte Aufbewahrung benötigt eine eindeutige Kennung für das Dokument. Wir können Objekt-IDs verwenden, um die Dokumente zu identifizieren, auf die ein bestimmtes Ereignis anwendbar ist, oder, wie in diesem Szenario, eine Metadatenspalte, unseren eigenen Produktnamen. Dazu müssen wir eine neue verwaltete Eigenschaft namens ProductName erstellen, die in der KQL-Abfrage verwendet werden kann (alternativ hätten wir RefinableString00 verwenden können, anstatt eine neue verwaltete Eigenschaft zu erstellen). Wir müssen diese neue verwaltete Eigenschaft auch der durchforsteten Eigenschaft „ows_Product_x0020_Name“ zuordnen. Hier ist ein Screenshot dieser verwalteten Eigenschaft.
+- **Name**: Dieser Parameter gibt den Namen des Ereignisses an, das im Security and Compliance Center erstellt wird. In diesem Szenario lautet der Name "Einstellung der Produktion xxx", wobei xxx der Wert der zuvor erstellten verwaltete Eigenschaft ProductName ist.
+- **EventType**: Der Wert für diesen Parameter entspricht dem Ereignistyp, auf den das erstellte Ereignis angewendet wird. Dieser Ereignistyp wurde beim Erstellen der Aufbewahrungsbezeichnung definiert. In diesem Szenario lautet der Ereignistyp "Produkteinstellung".
+- **SharePointAssetIdQuery**: Dieser Parameter definiert die Objekt-ID für das Ereignis. Die ereignisbasierte Aufbewahrung benötigt eine eindeutige Kennung für das Dokument. Wir können Objekt-IDs verwenden, um die Dokumente zu identifizieren, auf die ein bestimmtes Ereignis anwendbar ist, oder, wie in diesem Szenario, eine Metadatenspalte, unseren eigenen Produktnamen. Dazu müssen wir eine neue verwaltete Eigenschaft namens ProductName erstellen, die in der KQL-Abfrage verwendet werden kann (alternativ hätten wir RefinableString00 verwenden können, anstatt eine neue verwaltete Eigenschaft zu erstellen). Wir müssen diese neue verwaltete Eigenschaft auch der durchforsteten Eigenschaft „ows_Product_x0020_Name“ zuordnen. Hier ist ein Screenshot dieser verwalteten Eigenschaft.
 
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
-</tr>
-<tr class="odd">
-<td>EventDateTime</td>
-<td>Dieser Parameter definiert das Datum, an dem das Ereignis eintritt. Verwenden Sie das aktuelle Datumsformat: <strong>formatDateTime(utcNow(),'yyyy-MM-dd'<strong>)</strong></td>
-</tr>
-</tbody>
-</table>
+    ![Verwaltete Eigenschaft "Aufbewahrung"](media/SPRetention25.png)
+
+- **EventDateTime**: Dieser Parameter definiert das Datum, an dem das Ereignis eintritt. Verwenden Sie das aktuelle Datumsformat: *formatDateTime(utcNow(),'yyyy-MM-dd'*)
 
 ### <a name="putting-it-all-together"></a>Zusammenfassung
 
@@ -390,9 +348,3 @@ Im vorherigen Screenshot sehen Sie auch, dass es eine andere verwaltete Eigensch
 ## <a name="summary"></a>Zusammenfassung
 
 In diesem Artikel wurde ein Dokumentverwaltungsszenario veranschaulicht, in dem automatisch eine Aufbewahrungbezeichnung basierend auf einer Sitespalte in SharePoint angewendet wurde. Anschließend haben wir die ereignisbasierte Aufbewahrung und Microsoft Flow verwendet, um den Beginn des Aufbewahrungszeitraums basierend auf einem externen Ereignis automatisch auszulösen.
-
-## <a name="credits"></a>Mitwirkende
-
-Dieses Szenario wurde verfasst von:
-
-Frederic Lapierre<br/>Hauptberater, Microsoft Services

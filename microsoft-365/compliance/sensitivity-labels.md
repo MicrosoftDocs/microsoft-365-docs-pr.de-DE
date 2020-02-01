@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Vertraulichkeitsbezeichnungen
+f1.keywords:
+- CSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen einschließlich Verschlüsselung und Wasserzeichen für bezeichnete Inhalte anwenden.
-ms.openlocfilehash: aa0c379e7d1209fb4ac9afc2924500f7b1af82e2
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1cf7b47fbb9161b8000f5cfcce0bb36b86d0aa50
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515886"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597522"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -74,25 +76,35 @@ Jedem Inhaltselement kann eine Vertraulichkeitsbezeichnung zugewiesen werden. Au
 
 ## <a name="what-sensitivity-labels-can-do"></a>Wirkung von Vertraulichkeitsbezeichnungen
 
-Zusätzlich zu E-Mails und Dokumenten stehen Vertraulichkeitsbezeichnungen in mehreren öffentlichen Vorschauversionen zur Verfügung. Weitere Informationen dazu, wie Vertraulichkeitsbezeichnungen für Dateien, Teams, Gruppen und Websites verwendet werden können, finden Sie in den folgenden Artikeln:
-
-- [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md)
-
-- [Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md)
+> [!NOTE]
+> Zusätzlich zum Anwenden von Bezeichnungen auf E-Mails und Dokumente in Office-Apps sind nun auch Vertraulichkeitsbezeichnungen in den folgenden öffentlichen Vorschaureleases verfügbar:
+> 
+> - [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md)
+> - [Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md)
 
 Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angewendet wurde, werden alle konfigurierten Schutzeinstellungen für diese Bezeichnung auf den Inhalt erzwungen. Mit einer Vertraulichkeitsbezeichnung können Sie folgende Aktionen auslösen:
 
-- **Verschlüsseln** Sie nur E-Mails oder E-Mails und Dokumente. Sie können auswählen, welche Benutzer oder Gruppen über Berechtigungen zum Ausführen welcher Aktionen verfügen, und wie lange diese Berechtigungen gültig sind. Sie können z. B. festlegen, dass Benutzer in einer bestimmten Gruppe in einer anderen Organisation nach der Festlegung der Bezeichnung für den Inhalt nur sieben Tage lang berechtigt sind, den Inhalt zu überprüfen. Alternativ können Sie, statt Berechtigungen durch einen Administrator zu definieren, Ihren Benutzern das Zuweisen von Berechtigungen für den Inhalt erlauben, wenn sie die Bezeichnung anwenden. Weitere Informationen finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md).
+- **Verschlüsseln** Sie nur E-Mails oder E-Mails und Dokumente. Sie können auswählen, welche Benutzer oder Gruppen über Berechtigungen zum Ausführen welcher Aktionen verfügen, und wie lange diese Berechtigungen gültig sind. Sie können z. B. festlegen, dass Benutzer in einer bestimmten Gruppe in einer anderen Organisation nach der Festlegung der Bezeichnung für den Inhalt nur sieben Tage lang berechtigt sind, den Inhalt zu überprüfen. Alternativ können Sie, statt Berechtigungen durch einen Administrator zu definieren, Ihren Benutzern das Zuweisen von Berechtigungen für den Inhalt erlauben, wenn sie die Bezeichnung anwenden. 
+    
+    Weitere Informationen zu den Einstellungen für die **Verschlüsselungs** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md).
 
-- **Markieren Sie die Inhalte** beim Verwenden von Office Apps durch Hinzufügen von Wasserzeichen, Kopf- oder Fußzeilen zu E-Mails oder Dokumenten, denen die Bezeichnung zugewiesen wurde. Wasserzeichen können nur auf Dokumente, nicht aber auf E-Mails angewendet werden und sind auf 255 Zeichen beschränkt. Kopf-und Fußzeilen sind (mit Ausnahme von Excel) auf 1024 Zeichen beschränkt.  Bei Excel liegt der Höchstwert bei 255 Zeichen für Kopf-und Fußzeilen, aber in dieser Beschränkung sind nicht sichtbare Zeichen, wie z. B. Formatierungscodes, enthalten. Wenn dieser Wert erreicht ist, wird die eingegebene Zeichenfolge in Excel nicht angezeigt. Informationen darüber, wann die Inhaltskennzeichnungen angewendet werden, finden Sie unter [Wann wendet Office 365 die Inhaltskennzeichnung und -verschlüsselung auf Inhalte an](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+- **Markieren Sie die Inhalte** beim Verwenden von Office Apps durch Hinzufügen von Wasserzeichen, Kopf- oder Fußzeilen zu E-Mails oder Dokumenten, denen die Bezeichnung zugewiesen wurde. Beispiel:
     
     ![Auf Dokument angewendetes Wasserzeichen und Kopfzeile](media/Sensitivity-label-watermark-header.png)
+    
+    Informationen darüber, wann die Inhaltskennzeichnungen angewendet werden, finden Sie unter [Wann wendet Office 365 die Inhaltskennzeichnung und -verschlüsselung auf Inhalte an](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    
+    Weitere Informationen zu den Einstellungen für die **Inhaltskennzeichnung** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung: Wasserzeichen können nur auf Dokumente, nicht aber auf E-Mails angewendet werden und sind auf 255 Zeichen beschränkt.. Kopf-und Fußzeilen sind (mit Ausnahme von Excel) auf 1024 Zeichen beschränkt. Bei Excel liegt der Höchstwert bei 255 Zeichen für Kopf-und Fußzeilen, aber in dieser Beschränkung sind nicht sichtbare Zeichen, wie z. B. Formatierungscodes, enthalten. Wenn dieser Wert erreicht ist, wird die eingegebene Zeichenfolge in Excel nicht angezeigt.
 
-- **Verhindern Sie Datenverlust** durch Aktivieren des Endpunktschutzes in Intune. Wenn vertrauliche Inhalte heruntergeladen werden, können Sie den Verlust von Daten von Windows-Geräten verhindern. So können beispielsweise mit Bezeichnungen versehene Inhalte nicht in Dropbox, Gmail oder auf ein USB-Laufwerk kopiert werden. Bevor Ihre Vertraulichkeitsbezeichnungen Windows Information Protection (WIP) nutzen können, müssen Sie zuerst eine App-Schutzrichtlinie im Azure-Portal erstellen. Weitere Informationen hierzu finden Sie unter [Wie Windows Information Protection Dateien mit einer Vertraulichkeitsbezeichnung schützt](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+- **Verhindern Sie Datenverlust** durch Aktivieren des Endpunktschutzes in Intune. Wenn vertrauliche Inhalte heruntergeladen werden, können Sie den Verlust von Daten von Windows-Geräten verhindern. So können beispielsweise mit Bezeichnungen versehene Inhalte nicht in Dropbox, Gmail oder auf ein USB-Laufwerk kopiert werden. Bevor Ihre Vertraulichkeitsbezeichnungen Windows Information Protection (WIP) nutzen können, müssen Sie zuerst eine App-Schutzrichtlinie im Azure-Portal erstellen. 
+    
+    Weitere Informationen zu den Einstellungen für die**Verhinderung von Datenverlust** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung, beispielsweise wichtige Voraussetzungen, finden Sie unter [So schützt Windows Information Protection (WIP) Dateien mit einer Vertraulichkeitsbezeichnung](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Automatisches Anwenden der Bezeichnung auf Inhalte anwenden, die vertrauliche Informationen enthalten. ** Sie können festlegen, für welchen Typ vertraulicher Informationen die Bezeichnung angewendet werden soll. Die Bezeichnung kann entweder automatisch angewendet werden oder Benutzer werden aufgefordert, die empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, wird in der Aufforderung der entsprechende Text angezeigt. Weitere Informationen finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md).
-
+- **Automatisches Anwenden der Bezeichnung auf Inhalte anwenden, die vertrauliche Informationen enthalten**. Sie können festlegen, für welchen Typ vertraulicher Informationen die Bezeichnung angewendet werden soll. Die Bezeichnung kann entweder automatisch angewendet werden, oder Benutzer werden aufgefordert, die empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, wird in der Aufforderung der entsprechende Text angezeigt, zum Beispiel:
+    
     ![Auffordern zum Zuweisen einer erforderlichen Bezeichnung](media/Sensitivity-label-Prompt-for-required-label.png)
+    
+    Weitere Informationen zu den Einstellungen für die **automatische Anwendung von Bezeichnungen für Office-Apps** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md).
 
 ### <a name="label-priority-order-matters"></a>Priorität der Bezeichnungen (Reihenfolge wesentlich)
 
@@ -181,11 +193,11 @@ Die Metadaten beider Bezeichnungstypen sind kompatibel, sodass Sie Dokumente und
 
 ### <a name="azure-information-protection-clients"></a>Azure Information Protection-Clients
 
-Wenn Sie Vertraulichkeitsbezeichnungen in Office 365 ProPlus-Apps auf Windows-Computern verwenden, haben Sie die Wahl, einen Azure Information Protection-Client oder die in Office integrierte Bezeichnung zu verwenden. 
+Wenn Sie Vertraulichkeitsbezeichnungen in Office 365 ProPlus-Apps auf Windows-Computern verwenden, haben Sie die Wahl, einen Azure Information Protection-Client oder die in Office integrierte Bezeichnung zu verwenden.
 
-Die integrierte Bezeichnung wird in diesen Apps standardmäßig deaktiviert, wenn der Azure Information Protection-Client installiert ist. Weitere Informationen dazu finden Sie unter [Der in Office integrierte Bezeichnungs-Client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+Die integrierte Bezeichnung wird in diesen Apps standardmäßig deaktiviert, wenn der Azure Information Protection-Client installiert ist. Weitere Informationen, einschließlich der Möglichkeit, dieses Standardverhalten zu ändern, finden Sie unter [Informationen zu den in Office integrierten Bezeichnungs-Assistenten](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
-Wenn Sie Hilfe bei der Entscheidung für den zu verwendenden Kennzeichnungs Client benötigen, lesen Sie [Auswählen eines Bezeichnungs-Clients für Windows-Computer](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) aus der Dokumentation zu Azure Information Protection aus.
+Wenn Sie noch nicht mit Azure Information Protection vertraut sind, oder wenn Sie ein vorhandener Azure Information Protection-Kunde sind und gerade Ihre Bezeichnungen migriert haben, finden Sie weitere Informationen unter [Auswählen des Bezeichnungsclients, der für Windows-Computer verwendet werden soll](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) in Dokumentation zu Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Vertraulichkeitsbezeichnungen und Microsoft Cloud App Security
 
@@ -193,11 +205,11 @@ Mit Cloud App Security (CAS) können Sie Inhalte in Drittanbieter-Diensten und -
 
 Cloud App Security arbeitet sowohl mit Azure Information Protection-Bezeichnungen als auch mit Vertraulichkeitsbezeichnungen zusammen:
 
-- Wenn die Bezeichnungs-Admin Center dieselben Bezeichnungen wie im Azure-Portal aufweisen, werden Vertraulichkeitsbezeichnungen verwendet. Um diese Bezeichnungen in der Cloud App Security auszuwählen, muss mindestens eine Bezeichnung für mindestens einen Benutzer [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) werden.
+- Wenn die Bezeichnungs-Admin Center über ein oder mehrere Vertraulichkeitsbezeichnungen verfügen, die mindestens für einen Benutzer [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) wurden: Es werden Vertraulichkeitsbezeichnungen verwendet.
 
-- Wenn die Bezeichnungs-Admin Center nicht über die gleichen Bezeichnungen wie im Azure-Portal verfügen: Vertraulichkeitsbezeichnungen werden nicht aus den Bezeichnungs-Admin Center verwendet. Stattdessen werden Azure Information Protection-Bezeichnungen aus dem Azure-Portal abgerufen.
+- Wenn die Bezeichnungs-Admin Center über keine veröffentlichten Vertraulichkeitsbezeichnungen verfügen: Es werden Azure Information Protection-Bezeichnungen verwendet.
 
-Eine Anleitung, wie Sie Cloud App Security mit diesen Bezeichnungen verwenden können, finden Sie unter [Automatisches Anwenden von Klassifizierungdbezeichnungen für Azure Information Protection](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
+Eine Anleitung, wie Sie Cloud App Security mit diesen Bezeichnungen verwenden können, finden Sie unter [Azure Information Protection-Integration](https://docs.microsoft.com/cloud-app-security/azip-integration).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Vertraulichkeitsbezeichnungen und der Microsoft Information Protection SDK
 

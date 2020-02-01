@@ -1,8 +1,11 @@
 ---
 title: Schnelleinrichtung für Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Informationen zum Zugriff auf Office 365 Advanced eDiscovery im Office 365 Security &amp; Compliance Center und Erläuterung des üblichen Workflows für die Verwendung von Advanced eDiscovery.  '
-ms.openlocfilehash: 6b73177a0bd98dfb0d9e2f9127e682911f82703f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082203"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597672"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Schnelleinrichtung für Office 365 Advanced eDiscovery
 
+> [!IMPORTANT]
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir die Deaktivierung von Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v1.0*). Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+
 In diesem Setup-Abschnitt werden einem Microsoft 365 Security &amp; Compliance Center eDiscovery-Manager die ersten Schritte mit Advanced eDiscovery gezeigt. Es wird davon ausgegangen, dass in beiden Bereichen Grundkenntnisse vorhanden sind.
-  
-> [!NOTE]
-> Advanced eDiscovery erfordert Office 365 E3 mit dem Advanced Compliance-Add-on oder ein E5-Abonnement für Ihr Unternehmen. Wenn Sie nicht über diesen Tarif verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Aufrufen eines Falls in Advanced eDiscovery
 
-Sie rufen Advanced eDiscovery über das Security &amp; Compliance Center auf. Sie müssen ein Mitglied eines eDiscovery-Falls im Security &amp; Compliance Center sein, um den Fall in Advanced eDiscovery aufzurufen. Anweisungen zum Zuweisen von eDiscovery-Fallrechten und Hinzufügen von Benutzern zu einem eDiscovery-Fall finden Sie unter [Verwalten von eDiscovery-Fällen in Office 365](manage-ediscovery-cases.md). 
+
+Sie rufen Advanced eDiscovery über das Security &amp; Compliance Center auf. Sie müssen ein Mitglied eines eDiscovery-Falls im Security &amp; Compliance Center sein, um den Fall in Advanced eDiscovery aufzurufen. Anweisungen zum Zuweisen von eDiscovery-Fallrechten und Hinzufügen von Benutzern zu einem eDiscovery-Fall finden Sie unter [Verwalten von eDiscovery-Fällen in Office 365](ediscovery-cases.md). 
   
 So navigieren Sie zu einem Fall in Advanced eDiscovery: 
   

@@ -1,5 +1,7 @@
 ---
 title: Archivieren von drittanbieterdaten
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Administratoren können Daten von Drittanbietern aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Postfächern in Ihrer Microsoft 365-Organisation importieren. Auf diese Weise können Sie Daten aus Facebook, Twitter und anderen Datenquellen von Drittanbietern in Microsoft 365 archivieren. Anschließend können Sie Microsoft 365-Kompatibilitätsfeatures (wie Legal Hold, eDiscovery, in-situ-Archivierung und Aufbewahrungsrichtlinien) für drittanbieterdaten verwenden und anwenden.
-ms.openlocfilehash: b2931a018dedb6ac85d7896bef345654cb07ca5b
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247548"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596002"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von drittanbieterdaten
 

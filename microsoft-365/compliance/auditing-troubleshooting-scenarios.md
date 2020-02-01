@@ -1,5 +1,7 @@
 ---
 title: Durchsuchen des Office 365 Überwachungsprotokolls zur Problembehandlung bei allgemeinen Szenarien
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können das Office 365 Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie das Untersuchen eines kompromittierten Kontos zu beheben, herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat, oder zu ermitteln, warum sich ein externer Benutzer erfolgreich bei Ihrer Organisation angemeldet hat.
-ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603789"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595972"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Office 365 Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
 

@@ -1,5 +1,7 @@
 ---
 title: Vorbereiten einer CSV-Datei für eine ID-Listeninhalts Suche in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Verwenden Sie die CSV-Datei "results. csv" oder "nicht indexierte Elemente" aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die eine bestimmte e-Mail-Nachricht zurückgibt. ID-Listen suchen werden normalerweise verwendet, um teilweise indizierte Postfachelemente zurückzugeben.
-ms.openlocfilehash: caeb1874b113c601135531a1913bdcdda424a3d8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806538"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595522"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Vorbereiten einer CSV-Datei für eine ID-Listeninhalts Suche in Office 365
 

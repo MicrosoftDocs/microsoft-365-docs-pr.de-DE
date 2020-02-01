@@ -1,5 +1,7 @@
 ---
 title: 'Ausführen eines Administrator-Rollengruppenberichts in EOP '
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Administratoren können erfahren, wie Sie einen Administratorrollengruppen Bericht in Exchange Online Protection (EoP) ausführen. Dieser Bericht protokolliert, wenn ein Administrator Mitglieder zu Administratorrollengruppen hinzufügt oder diese entfernt, protokolliert Microsoft Exchange Online Schutz (EoP) jedes Vorkommen.
-ms.openlocfilehash: 59557f6fab2281cd36569b40afcf3e0225bd9347
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441402"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598542"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP
 

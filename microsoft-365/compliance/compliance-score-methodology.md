@@ -1,5 +1,7 @@
 ---
 title: Berechnung der Konformitätsbewertung
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
-ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515576"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596242"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Berechnung der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
@@ -79,9 +81,9 @@ Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend au
 |**Typ**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
-| Vorbeugender Ermessensspielraum | 9 |
-| Detektiv erforderlich | 3 |
-| Detektiv-diskretionäres | 1 |
-| Korrektur Pflicht | 3 |
-| Korrigierendes diskretionäre | 1 |
+| Vorbeugender Ermessensspielraum | 9  |
+| Detektiv erforderlich | 3  |
+| Detektiv-diskretionäres | 1  |
+| Korrektur Pflicht | 3  |
+| Korrigierendes diskretionäre | 1  |
   

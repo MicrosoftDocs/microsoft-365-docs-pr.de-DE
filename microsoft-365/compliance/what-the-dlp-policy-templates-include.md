@@ -1,5 +1,7 @@
 ---
 title: Inhalt der DLP-Richtlinienvorlagen
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Datenverlust Verhinderung (DLP) im Office 365 &amp; Security Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die allgemeine Compliance-Anforderungen erfüllen, beispielsweise zum Schutz vertraulicher Informationen unterliegen dem U.S.-Krankenversicherungsgesetz ( HIPAA), u.s. Gramm-Leach-Bliley Act (GLBA) oder u.s. Patriot Act. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
-ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Bei der Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Office 365 Security Compliance Center stehen vorgefertigte Richtlinienvorlagen zur Verfügung, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem US-Krankenversicherungsgesetz (HIPAA), u.s. Gramm-Leach-Bliley Act (GLBA) oder u.s. Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
+ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082042"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597172"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Inhalt der DLP-Richtlinienvorlagen
 
-Datenverlust Verhinderung (DLP) im Office 365 &amp; Security Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die allgemeine Compliance-Anforderungen erfüllen, beispielsweise zum Schutz vertraulicher Informationen unterliegen dem U.S.-Krankenversicherungsgesetz ( HIPAA), u.s. Gramm-Leach-Bliley Act (GLBA) oder u.s. Patriot Act. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. In diesem Thema werden nicht alle Details zur Konfiguration der einzelnen Richtlinienvorlagen berücksichtigt. Stattdessen stellt das Thema genügend Informationen bereit, damit Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen entsprechend Ihren spezifischen Anforderungen anpassen können.
+Bei der Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Office 365 Security Compliance Center stehen vorgefertigte Richtlinienvorlagen zur Verfügung, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem US-Krankenversicherungsgesetz (HIPAA), u.s. Gramm-Leach-Bliley Act (GLBA) oder u.s. Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. In diesem Thema werden nicht alle Details zur Konfiguration der einzelnen Richtlinienvorlagen berücksichtigt. Stattdessen stellt das Thema genügend Informationen bereit, damit Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen entsprechend Ihren spezifischen Anforderungen anpassen können.
   
 ## <a name="australia-financial-data"></a>Finanzdaten – Australien
 
@@ -283,7 +285,7 @@ Datenverlust Verhinderung (DLP) im Office 365 &amp; Security Compliance Center u
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|Inhalt entspricht US-HIPAA  <br/> | Enthält eine der folgenden vertraulichen Informationen:  <br/>  US-Sozialversicherungsnummer (SSN) – min. Count 1, Max count any  <br/>  Drug Enforcement Agency (DEA) number-min count 1, Max count any  <br/> **AND** <br/>  Inhalt enthält einen der folgenden Begriffe:  <br/>  Internationale Klassifikation von Krankheiten (ICD-9-cm) – min count 1, Max count any  <br/>  Internationale Klassifikation von Krankheiten (ICD-10-cm) – min count 1, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|Inhalt entspricht US-HIPAA  <br/> | Enthält eine der folgenden vertraulichen Informationen:  <br/>  US-Sozialversicherungsnummer (SSN) – min. Count 1, Max count any  <br/>  Drug Enforcement Agency (DEA) number-min count 1, Max count any  <br/> **UND** <br/>  Inhalt enthält einen der folgenden Begriffe:  <br/>  Internationale Klassifikation von Krankheiten (ICD-9-cm) – min count 1, Max count any  <br/>  Internationale Klassifikation von Krankheiten (ICD-10-cm) – min count 1, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
    
 ## <a name="us-patriot-act"></a>Patriot Act – USA
 

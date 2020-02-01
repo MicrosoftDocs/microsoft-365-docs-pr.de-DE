@@ -1,5 +1,7 @@
 ---
 title: Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60436db997d75d92e7d17fc27f66eb3944b419d8
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 5705edcc4015460a8c6c5a2edc6ebf922dabbb2f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256902"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596152"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 

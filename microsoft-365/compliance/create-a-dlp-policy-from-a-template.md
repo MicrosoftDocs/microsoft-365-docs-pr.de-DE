@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer DLP-Richtlinie aus einer Vorlage
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 'Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
+ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38686021"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595662"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
-Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. Sie können eine der folgenden Vorlagen verwenden oder die Regeln anpassen, um die spezifischen Compliance-Anforderungen Ihrer Organisation zu erfüllen.
+Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. Sie können eine der folgenden Vorlagen verwenden oder die Regeln anpassen, um die spezifischen Compliance-Anforderungen Ihrer Organisation zu erfüllen.
   
 Office 365 umfasst mehr als 40 verwendungsbereite Vorlagen, mit denen Sie eine Vielzahl von allgemeinen behördlichen und geschäftlichen Richtlinienanforderungen erfüllen können. Es gibt z. B. DLP-Richtlinienvorlagen für:
   
@@ -56,7 +58,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
     
 3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
     
@@ -82,7 +84,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     Um nur bestimmte SharePoint-Websites oder OneDrive für Unternehmen Konten einzuschließen, wechseln Sie den **Status** auf ein, und klicken Sie dann auf die Links unter **einschließen** , um bestimmte Websites oder Konten auszuwählen. Wenn Sie eine Richtlinie auf eine Website anwenden, werden die in dieser Richtlinie konfigurierten Regeln automatisch auf alle Unterwebsites dieser Website angewendet. 
     
-    ![Optionen für Standorte, an denen eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+    ![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
     Wenn Sie in diesem Beispiel vertrauliche Informationen schützen möchten, die in allen OneDrive für Unternehmen Konten gespeichert sind, deaktivieren Sie den **Status** für **Exchange-e-Mails** und **SharePoint-Websites**, und belassen Sie den **Status** für **OneDrive-Konten**.
     
@@ -140,7 +142,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
      Bevor Sie DLP-Richtlinien erstellen, sollten Sie sie erst einmal nach und nach bereitstellen, um die Auswirkungen beurteilen und ihre Effektivität testen zu können, bevor Sie sie vollständig durchsetzen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende von Dokumenten blockiert, die für Personen erforderlich sind, damit Sie Ihre Arbeit erledigen können. 
     
-    Wenn Sie DLP-Richtlinien mit einer großen potenziellen Auswirkung erstellen, wird empfohlen, diese Sequenz zu folgen:
+    Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen haben können, empfehlen wir, in der folgenden Reihenfolge vorzugehen:
     
 17. Beginnen Sie im Testmodus ohne Richtlinientipps, und werten Sie die Auswirkungen dann anhand der DLP-Berichte aus. In den DLP-Berichten werden die Anzahl von Richtlinienübereinstimmungen, der Ort des Vorkommens, der Typ und der Schweregrad aufgeführt. Auf Grundlage der Ergebnisse können Sie die Regeln nach Bedarf genauer anpassen. Im Testmodus haben DLP-Richtlinien keinen Einfluss auf die Produktivität der Mitarbeiter in Ihrer Organisation. 
     
@@ -148,7 +150,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
 19. Aktivieren Sie die Richtlinien, damit die Regeln erzwungen werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
     
-    ![Optionen für die Verwendung des Testmodus und das Aktivieren der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 20. Überprüfen Sie die Einstellungen für \> diese Richtlinie **Create**.
     
@@ -186,9 +188,9 @@ Darüber hinaus können Sie jede Regel einzeln deaktivieren, indem Sie die Richt
     
 - [Senden von Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien](use-notifications-and-policy-tips.md)
     
-- [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften](protect-documents-that-have-fci-or-other-properties.md)
+- [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI- oder anderen Eigenschaften](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Inhalt der DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
+- [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
 - [Verfügbare Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md)
     

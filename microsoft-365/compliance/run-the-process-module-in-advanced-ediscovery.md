@@ -1,5 +1,7 @@
 ---
 title: Ausführen des Prozess Moduls in Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Erfahren Sie mehr über die Richtlinien für die Vorbereitung von Fall Dateien Office 365 Daten für die Analyse mit Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 779f9ae4f93933063139b2d7d65deb2500b263e1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802908"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597582"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ausführen des Prozess Moduls in Office 365 Advanced eDiscovery
 

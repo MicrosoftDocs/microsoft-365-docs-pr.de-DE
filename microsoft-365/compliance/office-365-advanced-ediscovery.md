@@ -1,5 +1,7 @@
 ---
 title: Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,23 +15,26 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Erfahren Sie, wie Office 365 Advanced eDiscovery Ihnen dabei helfen kann, Daten in Office 365 zu analysieren, Dokumentüberprüfungen zu rationalisieren und Entscheidungen für effiziente eDiscovery zu treffen.
-ms.openlocfilehash: 4c72444765f75a77d3b62dbd2675b0c277d3d6ba
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803792"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597892"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 
-> [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> [!IMPORTANT]
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v 1.0*) an. Wenn Sie noch Advanced eDiscovery v 1.0 verwenden, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365*bezeichnet). Advanced eDiscovery 2,0 enthält ähnliche Funktionen wie in Advanced eDiscovery v 1.0, bietet aber auch viele neue Features wie Depotverwaltung, Kommunikationsverwaltung und Überprüfungs Sätze. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 Mit Advanced eDiscovery können Sie Ihre Office 365 Daten besser verstehen und ihre eDiscovery-Kosten reduzieren. Mit Advanced eDiscovery können Sie unstrukturierte Daten in Office 365 analysieren, eine effizientere Dokumentüberprüfung durchführen und Entscheidungen treffen, um die Daten für eDiscovery zu reduzieren. Sie können mit Daten arbeiten, die in Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Office 365 Gruppen und Microsoft Teams gespeichert sind. Sie können eine eDiscovery-Suche im Security and Compliance Center durchführen, um nach Inhalten in Gruppen, einzelnen Postfächern und Websites zu suchen und dann die Suchergebnisse mit Advanced eDiscovery zu analysieren. Wenn Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten, ermöglicht die optische Zeichenerkennung das Extrahieren von Text aus Bildern. Mit dieser Funktion können die leistungsstarken Textanalyse Funktionen von Advanced eDiscovery auf Bilddateien angewendet werden.
   
 Advanced eDiscovery rationalisiert und beschleunigt den Dokument Überprüfungsprozess, indem redundante Informationen mit Features wie Erkennung in der Nähe von Duplikaten und e-Mail-Thread Analyse identifiziert werden. Das Feature Relevanz wendet Vorhersage Codierungs Technologie an, um relevante Dokumente zu identifizieren. Advanced eDiscovery lernt anhand ihrer Markierungs Entscheidungen in Beispiel Dokumenten und wendet statistische und selbstlernende Techniken an, um die Relevanz der einzelnen Dokumente im DataSet zu berechnen. Auf diese Weise können Sie sich auf wichtige Dokumente konzentrieren, schnelle und fundierte Entscheidungen zur Fall Strategie, zu cull-Daten und zur Priorisierung von Überprüfungen treffen.
   
- **Warum Advanced eDiscovery?** Office 365 Advanced eDiscovery baut auf den vorhandenen eDiscovery-Funktionen in Office 365 auf. Beispielsweise können Sie die Suchfunktion im Office 365 Security &amp; Compliance Center verwenden, um eine erste Suche aller Inhaltsquellen in Ihrer Organisation durchzuführen, um die Daten zu identifizieren und zu sammeln, die für einen bestimmten Rechtsfall relevant sein können. Anschließend können Sie Analysen zu diesen Daten durchführen, indem Sie die Textanalyse, das maschinelle Lernen und die Relevanz/vorausschauenden Codierungsfunktionen von Advanced eDiscovery anwenden. Dies kann dazu beitragen, dass Ihre Organisation Tausende von e-Mail-Nachrichten, Dokumenten und anderen Arten von Daten schnell verarbeitet, um nach diesen Elementen zu suchen, die für einen bestimmten Fall höchstwahrscheinlich relevant sind. Die reduzierte Datenmenge kann dann aus Office 365 zur weiteren Überprüfung exportiert werden. 
+ **Warum Advanced eDiscovery?** Office 365 Advanced eDiscovery baut auf den vorhandenen eDiscovery-Funktionen in Office 365 auf. Beispielsweise können Sie die Suchfunktion im Office 365 Security &amp; Compliance Center verwenden, um eine erste Suche aller Inhaltsquellen in Ihrer Organisation durchzuführen, um die Daten zu identifizieren und zu sammeln, die für einen bestimmten Rechtsfall relevant sein können. Anschließend können Sie Analysen zu diesen Daten durchführen, indem Sie die Textanalyse, das maschinelle Lernen und die Relevanz/vorausschauenden Codierungsfunktionen von Advanced eDiscovery anwenden. Dies kann dazu beitragen, dass Ihre Organisation Tausende von e-Mail-Nachrichten, Dokumenten und anderen Arten von Daten schnell verarbeitet, um die Elemente zu finden, die für einen bestimmten Zweck am ehesten relevant sind. 
+ 
+> [!NOTE]
+> Advanced eDiscovery erfordert eine Office 365 E3 mit dem Advanced Compliance-Add-on oder ein E5-Abonnement für Ihre Organisation. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). Fall. Die reduzierte Datenmenge kann dann aus Office 365 zur weiteren Überprüfung exportiert werden. 
   
 ## <a name="get-started"></a>Erste Schritte
 

@@ -1,5 +1,7 @@
 ---
 title: Office 365-Dienstverschlüsselung
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Office 365.'
-ms.openlocfilehash: 7fec40db9ce12b52d37f2003d7ee8db68739aa41
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e746db47003dc391ba8a0751a924ba21ac7b8136
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690440"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597832"
 ---
 # <a name="office-365-service-encryption"></a>Office 365-Dienstverschlüsselung
 

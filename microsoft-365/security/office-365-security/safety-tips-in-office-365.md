@@ -1,5 +1,7 @@
 ---
 title: Sicherheitstipps in E-Mail-Nachrichten in Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die durch den Spamfilter von EoP und Office 365 gefiltert werden.
-ms.openlocfilehash: b8200b88c83e0280dde2ea5780592eaa0dba91a8
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 244b2ceb8ccf5e2e49b56fdebd370f75033f652b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872041"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598522"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sicherheitstipps in E-Mail-Nachrichten in Office 365
 
@@ -60,7 +62,7 @@ Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jed
 
 Wenn Sie nicht einverstanden sind, wie Office 365 und EOP eine Nachricht kategorisiert haben (das heißt, es handelt sich nicht um Spam oder es ist nicht legitim), können Sie die Nachrichten zur Analyse übermitteln, um ihre Benutzerfreundlichkeit zu verbessern. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden und uns dabei zu verbessern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md)
 

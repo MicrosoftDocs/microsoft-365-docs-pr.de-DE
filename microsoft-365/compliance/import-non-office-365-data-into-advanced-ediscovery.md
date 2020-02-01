@@ -1,5 +1,7 @@
 ---
 title: Importieren nicht Office 365der Inhalte für die erweiterte eDiscovery-Analyse
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Vorgehensweise zum Importieren von Inhalten, die nicht in O365 gespeichert sind, in ein Azure-BLOB, damit es mit AeD analysiert werden kann
-ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 8417382bc37b5bb3515e893ff2043019525b3f72
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823787"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597972"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importieren nicht Office 365der Inhalte für die erweiterte eDiscovery-Analyse
 
@@ -30,7 +32,7 @@ Nicht alle Dokumente, die Sie möglicherweise mit Office 365 Advanced eDiscovery
 > [!NOTE]
 > Sie können ein Office 365 erweitertes eDiscovery Data Storage-Add-on-Abonnement für Ihre nicht Office 365 Inhalte erwerben. Dies steht ausschließlich für Inhalte zur Verfügung, die mit Advanced eDiscovery analysiert werden sollen. Führen Sie die Schritte in [kaufen oder bearbeiten und Add-on für Office 365 für Unternehmen](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) aus, und kaufen Sie das Office 365 Advanced eDiscovery Storage Add-on. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrieben verwenden, benötigen Sie Folgendes:
   

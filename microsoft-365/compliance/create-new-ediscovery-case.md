@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines neuen Falls in Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7860128ef8024a51f3cd25169dfd93116fd07c8f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7d507730e3e5301446889e52e4bbd5d85660da36
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080872"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596112"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery"></a>Erstellen eines neuen Falls in Advanced eDiscovery  
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
 3. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery #a1 Advanced eDiscovery**.
  

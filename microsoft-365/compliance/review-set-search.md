@@ -1,5 +1,7 @@
 ---
 title: Abfragen der Daten in einem Prüfdateisatz
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004818"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597612"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Abfragen der Daten in einem Prüfdateisatz
 

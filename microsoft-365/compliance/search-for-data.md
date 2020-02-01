@@ -1,5 +1,7 @@
 ---
 title: Suchen nach Daten in einer Untersuchung
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcd7f3f38f53ef22fc50823f3d2e3564af333431
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62d42c29182a81cfa133c5d8863add56aba29be3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080602"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597552"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Suchen nach Daten in einer Untersuchung
 
@@ -27,7 +29,7 @@ Auf der Registerkarte **Suchen** in einer Datenermittlung können Sie in Office 
 
 Nachdem Sie eine Suche ausgeführt haben, können Sie Statistiken zu den von der Suche zurückgegebenen Elementen anzeigen, beispielsweise die inhaltsspeicherorte mit den meisten Elementen, die mit der Suchabfrage übereinstimmen. Sie können auch eine Vorschau einer Teilmenge der Ergebnisse anzeigen. Nachdem Sie den zu untersuchenden Dokumentensatz identifiziert haben, können Sie die Ergebnisse der Suche einem Beweissatz hinzufügen, um Sie weiter zu verarbeiten und zu analysieren.
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>Erstellen einer Suche
 
 1. Klicken Sie in einer Untersuchung auf die Registerkarte **Suchen** , und klicken Sie dann auf **neue Suche**. 
 

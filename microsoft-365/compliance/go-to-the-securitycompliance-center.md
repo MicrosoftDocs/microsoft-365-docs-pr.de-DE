@@ -1,5 +1,7 @@
 ---
 title: Wechseln zum Office 365 Security & Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: 'Bevor Sie das Security #a0 Compliance Center verwenden können, benötigen Sie die richtigen Berechtigungen. Ihrem Arbeits-oder Schulkonto muss entweder die Office 365 globale Administratorrolle zugewiesen sein oder einer oder mehreren Sicherheits #a0 Compliance Center-Rollengruppen von einem globalen Administrator zugewiesen worden sein.'
-ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807114"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596522"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>Wechseln zum Office 365 Security & Compliance Center
 
@@ -36,6 +38,6 @@ Hier ist die direkteste Möglichkeit, um zum Security #a0 Compliance Center zu g
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
 
-2. Melden Sie sich mit Ihrem Geschäfts- oder Schul-/Unikonto bei Office 365 an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
 
 ![Office 365 Security #a0 Compliance Center-Startseite](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

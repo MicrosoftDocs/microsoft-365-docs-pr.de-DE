@@ -1,5 +1,7 @@
 ---
-title: Exemplarische Vorgehensweise Spoof Intelligence Insight
+title: Exemplarische Vorgehensweise für Erkenntnisse der Spoofintelligenz
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die neue Spoof Intelligence-Einblicke funktioniert.
-ms.openlocfilehash: 652dde07d615a4eef98074fb8d2b5c676f65d633
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082152"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598012"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Exemplarische Vorgehensweise: Spoof Intelligence Insight
 

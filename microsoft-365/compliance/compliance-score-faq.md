@@ -1,5 +1,7 @@
 ---
 title: FAQ zur Microsoft-Konformitätsbewertung
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Microsoft-Konformitäts Bewertungspunkten, die Organisationen dabei helfen, Risikobewertungen zu vereinfachen und zu automatisieren.
-ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 81541c66f1bc1ec179faa0180b3135f9b623d319
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021981"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595772"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft Compliance Score (Preview): häufig gestellte Fragen
 

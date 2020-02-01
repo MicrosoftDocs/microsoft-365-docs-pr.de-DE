@@ -1,5 +1,7 @@
 ---
 title: Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 'Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security #a0 Compliance Center in Office 365.'
-ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686267"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595572"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
@@ -68,7 +70,7 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
    
 3. Speichern Sie die Excel-Datei als CSV-Datei in einem Ordner auf Ihrem lokalen Computer. Das in Schritt 3 erstellte Skript verwendet die Informationen in dieser CSV-Datei, um die Suchvorgänge zu erstellen. 
   
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit der Security #a0 Compliance Center PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center-PowerShell
 
 Im nächsten Schritt stellen Sie eine Verbindung mit der Security #a0 Compliance Center PowerShell für Ihre Organisation her.
   

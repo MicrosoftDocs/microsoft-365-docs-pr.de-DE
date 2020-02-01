@@ -1,5 +1,7 @@
 ---
 title: Löschen von Elementen am ursprünglichen Speicherort
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 'In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für neue Daten Untersuchungen (Vorschau) im Security #a0 Compliance Center Elemente aus ihren ursprünglichen Speicherorten löschen.'
-ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38686205"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595320"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Löschen von Elementen aus dem ursprünglichen Speicherort (Vorschau)
 
@@ -76,7 +78,7 @@ Wenn Sie jetzt Elemente aus Ihrem ursprünglichen Inhaltsspeicherort löschen, w
 
 - **Postfächer:** Wenn ein Postfachelement vorläufig gelöscht wird, wird es in den Ordner "refundable Items" im Postfach verschoben. Dieses Verhalten ähnelt dem, wenn ein Benutzer ein Element aus dem Ordner "Gelöschte Elemente" löscht oder ein Element dauerhaft durch Drücken von UMSCHALT + ENTF löscht. An diesem Punkt kann der Benutzer das Element bis zum Ablauf des Aufbewahrungszeitraums für gelöschte Elemente wiederherstellen. In Office 365 ist der Aufbewahrungszeitraum für gelöschte Elemente standardmäßig 14 Tage, aber ein Administrator kann den Aufbewahrungszeitraum auf 30 Tage verlängern. Nach Ablauf des Aufbewahrungszeitraums wird das Element in einen verborgenen Ordner verschoben (als *Lösch* Ordner bezeichnet). Das Element wird beim nächsten verarbeiten des Postfachs dauerhaft aus Office 365 entfernt. Postfächer werden einmal alle sieben Tage verarbeitet).
 
-- **SharePoint-und OneDrive-Websites:** Wenn eine Datei oder ein Dokument auf einer Website vorläufig gelöscht wird, wird Sie in den Papierkorb der Website verschoben (auch als *erst stufiger* Papierkorb bezeichnet). Das Element bleibt für 93 Tage (der Aufbewahrungszeitraum für gelöschte Elemente für Websites in Office 365) im Papierkorb. Während des Zeitraums von 93 Tagen können gelöschte Elemente weiterhin von einem Websitesammlungsadministrator in SharePoint oder vom Benutzer oder Administrator in OneDrive wiederhergestellt werden. Elemente können auch aus dem Papierkorb der ersten Stufe gelöscht werden. In diesem Fall werden die Elemente in den Papierkorb für die Websitesammlung verschoben, die als *endgültigen* Papierkorb bezeichnet wird. Der Aufbewahrungszeitraum beträgt 93 Tage für Papierkörbe der ersten und der endgültigen Phase. Das bedeutet, dass die Beibehaltung des endgültigen Papierkorbs beginnt, wenn das Element anfänglich gelöscht wird. Das bedeutet, dass die maximale Aufbewahrungszeit für beide Papierkörbe 93 Tage beträgt. Wenn ein Element aus dem endgültigen Papierkorb gelöscht wird (entweder manuell durch einen Administrator oder automatisch, wenn der Aufbewahrungszeitraum abläuft), ist der Zugriff durch einen Administrator nicht mehr möglich.
+- **SharePoint-und OneDrive-Websites:** Wenn eine Datei oder ein Dokument auf einer Website vorläufig gelöscht wird, wird Sie in den Papierkorb der Website verschoben (auch als *erst stufiger* Papierkorb bezeichnet). Das Element verbleibt 93 Tage im Papierkorb (dies ist der Aufbewahrungszeitraum für Websites in Office 365). Während des Zeitraums von 93 Tagen können gelöschte Elemente weiterhin von einem Websitesammlungsadministrator in SharePoint oder vom Benutzer oder Administrator in OneDrive wiederhergestellt werden. Elemente können auch aus dem Papierkorb der ersten Stufe gelöscht werden. In diesem Fall werden die Elemente in den Papierkorb für die Websitesammlung verschoben, die als *endgültigen* Papierkorb bezeichnet wird. Der Aufbewahrungszeitraum beträgt 93 Tage für Papierkörbe der ersten und der endgültigen Phase. Das bedeutet, dass die Beibehaltung des endgültigen Papierkorbs beginnt, wenn das Element anfänglich gelöscht wird. Das bedeutet, dass die maximale Aufbewahrungszeit für beide Papierkörbe 93 Tage beträgt. Wenn ein Element aus dem endgültigen Papierkorb gelöscht wird (entweder manuell durch einen Administrator oder automatisch, wenn der Aufbewahrungszeitraum abläuft), ist der Zugriff durch einen Administrator nicht mehr möglich.
 
 ## <a name="what-happens-if-a-content-location-is-on-hold"></a>Was geschieht, wenn ein Inhaltsspeicherort gespeichert ist
 

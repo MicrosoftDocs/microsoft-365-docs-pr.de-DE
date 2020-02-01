@@ -1,5 +1,7 @@
 ---
 title: Schutz vor Bedrohungen in Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie diesen Artikel als Leitfaden zum Konfigurieren der Features für den Bedrohungsschutz jetzt.
-ms.openlocfilehash: 2c2e67334f90b24ec60bc7af01451805b32037cc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112009"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598682"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 

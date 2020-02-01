@@ -1,5 +1,7 @@
 ---
 title: Klonen einer Inhaltssuche
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel, um schnell eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 zu klonen. Beim Klonen einer Suche wird eine neue Suche (mit einem neuen Namen) erstellt, die die gleichen Eigenschaften wie die ursprüngliche Suche enthält. Anschließend können Sie die neue Suche bearbeiten, indem Sie die Stichwortabfrage oder den Datumsbereich ändern und diese dann ausführen.
-ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 59fdaab7cf12bc0f5c4b08cbac1834803e5a8d98
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633844"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595882"
 ---
 # <a name="clone-a-content-search"></a>Klonen einer Inhaltssuche
 
@@ -32,7 +34,7 @@ Gründe für das Klonen von Inhalts suchen
     
 - , Um die Größe der Suchergebnisse zu verringern. Wenn Sie beispielsweise eine Suche haben, die zu viele zu exportierende Ergebnisse zurückgibt, können Sie die Suche Klonen und dann eine Suchbedingung basierend auf einem Datumsbereich hinzufügen, um die Anzahl der Suchergebnisse zu reduzieren.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security #a0 Compliance Center sein, um das in diesem Thema beschriebene Skript auszuführen.
     

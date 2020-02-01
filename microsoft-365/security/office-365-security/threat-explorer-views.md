@@ -1,5 +1,7 @@
 ---
 title: Ansichten im Threat Explorer und Echt Zeit Erkennungen
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,18 +14,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die verschiedenen Arten von Ansichten, die in Threat Explorer und in Echtzeit erkannt werden können.
-ms.openlocfilehash: 7c3d78c5b5d4b1708fc57adba6951b4e352f0eaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082609"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598252"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 
 ![Sicherheitsrisiken-Explorer](../media/ThreatExplorerFirstOpened.png)
 
-[Bedrohungs-Explorer](threat-explorer.md) (und der Bericht über Echt Zeit Erkennungen) ist ein leistungsfähiges, near-Echt Zeit Tool zur Untersuchung und Reaktion von Sicherheitsteams auf Bedrohungen &amp; im Security Compliance Center. Explorer (und der Bericht über Echt Zeit Erkennungen) zeigt Informationen zu mutmaßlicher Schadsoftware und Phishing in e-Mails und Dateien in Office 365 sowie andere Sicherheitsrisiken und Risiken für Ihre Organisation an. 
+[Threat Explorer](threat-explorer.md) (und der Bericht über Echt Zeit Erkennungen) ist ein leistungsfähiges, near-Echt Zeit Tool, um Sicherheitsteams beim untersuchen und reagieren auf Bedrohungen &amp; im Security Compliance Center zu unterstützen. Explorer (und der Bericht über Echt Zeit Erkennungen) zeigt Informationen zu mutmaßlicher Schadsoftware und Phishing in e-Mails und Dateien in Office 365 sowie andere Sicherheitsrisiken und Risiken für Ihre Organisation an. 
 
 - Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2 haben, haben Sie den Explorer.
 - Wenn Sie Office 365 ATP-Plan 1 haben, haben Sie Echt Zeit Erkennungen.

@@ -1,5 +1,7 @@
 ---
 title: Übersicht über den Microsoft Compliance-Manager
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807334"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595792"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -147,7 +149,7 @@ Die im Compliance-Manager enthaltenen vorkonfigurierten Vorlagen lauten wie folg
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Vorschau)
 14. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
-## <a name="compliance-score"></a>Kompatibilitätsbewertung
+## <a name="compliance-score"></a>Compliancebewertung
 
 [Microsoft Compliance Score (Preview)](compliance-score.md) ist ein Feature im Microsoft 365 Compliance Center, das Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern. Die Kenntnis ihrer allgemeinen Konformitätsbewertung hilft Ihrer Organisation, die Compliance zu verstehen und zu verwalten. Grundlegendes [zur Berechnung der Konformitätsbewertung](compliance-score-methodology.md)
   

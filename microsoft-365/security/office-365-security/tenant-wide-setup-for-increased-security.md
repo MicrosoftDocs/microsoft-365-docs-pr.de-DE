@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365 Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: f5df416b71cd3b4885033786d83160644b6d7b1a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971453"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598202"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -122,10 +124,11 @@ Weitere Informationen:
 
 ![Cloud App Security-Dashboard](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Diese Artikel und Leitfäden bieten zusätzliche Informationen zum Sichern der Office 365 Umgebung:
 
-- [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere Agile Organisationen](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance) (Sie können diese Empfehlung in jeder Umgebung verwenden, insbesondere in Cloud-Umgebungen)
+- [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere Agile Organisationen](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (Sie können diese Empfehlung in jeder Umgebung verwenden, insbesondere in Cloud-Umgebungen)
+
 
 - [Empfohlene Sicherheitsrichtlinien und-Konfigurationen für Identitäten und Geräte](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (diese Empfehlungen enthalten Hilfe für AD FS-Umgebungen)

@@ -5,6 +5,8 @@ author: MicrosoftHeidi
 manager: serdars
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: heidip
 ms.date: 10/31/2019
 ms.reviewer: anmorgan
@@ -14,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 645abf48297ddcf186d8971a422588d46f7b2fef
-ms.sourcegitcommit: 7c977771fc295ca1e4e9b16a6d05faee8edeadad
+ms.openlocfilehash: 258e116e2d51a5fde9f6e9c3273824994b9dcfa6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37913118"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596662"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinien Empfehlungen für das Sichern von teamchats,-Gruppen und-Dateien
 
@@ -47,7 +49,7 @@ Das folgende Diagramm veranschaulicht die empfohlenen Richtlinien für den Schut
 
 Hierbei handelt es sich um die abhängigen Dienste, die in die Zuweisung von Cloud-Apps für Teams einbezogen werden sollen:
 
-- Microsoft Teams
+- Microsoft Teams
 - SharePoint Online und OneDrive for Business
 - Exchange Online
 - Skype for Business Online
@@ -67,7 +69,7 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die erneut besucht we
 |        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.|
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Microsoft Teams verfügt über Gastzugriff und Regeln für den externen Zugriff, die Sie später in diesem Artikel erfahren sollten. Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.|
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.|
-|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Unabhängig von der Benutzeridentität wird MFA von Ihrer Organisation verwendet. Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.
+|**Hochgradig reguliert**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Unabhängig von der Benutzeridentität wird MFA von Ihrer Organisation verwendet. Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>Architektur der Teams-abhängigen Dienste
