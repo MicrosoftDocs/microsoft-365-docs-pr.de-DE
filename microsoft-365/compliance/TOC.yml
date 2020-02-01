@@ -136,7 +136,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=852306'
         - name: Anpassen eines benutzerdefinierten vertraulichen Informationstyps
           href: customize-a-built-in-sensitive-information-type.md
-        - name: Benutzerdefinierten Typen vertraulicher Informationen
+        - name: Benutzerdefinierte Typen vertraulicher Informationen
           href: custom-sensitive-info-types.md
         - name: Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
@@ -1088,6 +1088,8 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: Australien/Pazifik
           items:
+            - name: APRA (Australien)
+              href: offering-APRA-Australia.md
             - name: IRAP/CCSL (Australien)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Netzwerk (Neuseeland)

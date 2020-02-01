@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Beweis Sätzen in Daten Untersuchungen
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01d0657744eb503d8d0819ee0b90997380f41722
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e82f3c90dd931fc23635710c13e5727b1b3add79
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081598"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600542"
 ---
-# <a name="manage-evidence-sets-in-data-investigations-preview"></a><span data-ttu-id="292d3-102">Verwalten von Beweis Sätzen in Daten Untersuchungen (Vorschau)</span><span class="sxs-lookup"><span data-stu-id="292d3-102">Manage evidence sets in Data Investigations (Preview)</span></span>  
+# <a name="manage-evidence-sets-in-data-investigations-preview"></a><span data-ttu-id="2642d-102">Verwalten von Beweis Sätzen in Daten Untersuchungen (Vorschau)</span><span class="sxs-lookup"><span data-stu-id="2642d-102">Manage evidence sets in Data Investigations (Preview)</span></span>  
 
-<span data-ttu-id="292d3-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="292d3-103">Content coming soon.</span></span>
+<span data-ttu-id="2642d-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="2642d-103">Content coming soon.</span></span>
 
   
 
