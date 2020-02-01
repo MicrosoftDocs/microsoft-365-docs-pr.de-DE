@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602312"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628091"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Krankenversicherung Portabilität und Verantwortlichkeit (HIPAA) #a0 HITECH Akte
 
@@ -54,7 +54,7 @@ Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Cloud-App-Sicherheit
 - Microsoft Health bot-Dienst
 - Microsoft Stream
 - Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Office 365
@@ -62,7 +62,7 @@ Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI Cloud Service entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite integrierte
 - Azure DevOps Services
 
@@ -70,7 +70,7 @@ Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [
 
 Beginnen Sie mit dem Nutzen der Cloud für Integritätsdaten Lösungen mit dem Azure Security and Compliance Blueprint – HIPAA/HITRUST-Integritätsdaten und AI. Dieser Blueprint enthält Tools und Anleitungen für die ersten Schritte beim Erstellen von HIPAA/HITRUST-Lösungen.
 
-[Verwenden von Azure HIPAA/HITRUST Blueprint](https://aka.ms/healthblueprint)
+[Verwenden von Azure HIPAA/HITRUST Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -106,7 +106,7 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft diese Leitfäden ve
 
 - [HIPAA-Omnibus Regel](https://aka.ms/HIPAA-omnibus) (die endgültigen Verordnungen – ändern von HIPAA-Regeln)
 - [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Grundlegendes zur HIPAA-Konformität mit Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19. Mai 2016)
 - [Anleitung zur Implementierung von Azure HIPAA](https://aka.ms/azure-hipaa-guide)

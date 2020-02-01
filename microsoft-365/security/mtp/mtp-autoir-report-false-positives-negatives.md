@@ -11,6 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
+ms.date: 01/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d9175e78326832a2be874359babae5ae9c689420
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 44c90c6c9394b1f9fee34b8eb068bb7c232c4d78
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600082"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627971"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -32,17 +33,52 @@ ms.locfileid: "41600082"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Haben [automatisierte Ermittlungs-und Antwortfunktionen](mtp-autoir.md) im Microsoft Threat Protection-Vorgang fehl am oder falsch erkannt? Sie können diesen Bericht an Microsoft melden oder Ihre Benachrichtigungen anpassen (falls erforderlich). Verwenden Sie die folgende Tabelle als Leitfaden: 
+Haben [automatisierte Ermittlungs-und Antwortfunktionen](mtp-autoir.md) im Microsoft Threat Protection-Vorgang fehl am oder falsch erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
+- [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Passen Sie Ihre Benachrichtigungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) an (falls erforderlich); und 
+- [Rückgängigmachen von auf Geräten ausgeführten Korrekturaktionen](#undo-a-remediation-action-that-was-taken-on-a-device) 
 
+Verwenden Sie diesen Artikel als Leitfaden. 
 
-|Element  |Erkannt von  |Vorgehensweise melden  |
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Melden einer falsch positiven/negativen Meldung an Microsoft zur Analyse
+
+|Element verpasst oder falsch erkannt |Dienst  |Nächste Schritte  |
 |---------|---------|---------|
-|E-Mail <br/>E-Mail-Anlage <br/>URL in einer e-Mail-Nachricht oder Office-Datei      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft für Office 365-Scans](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-E-Mail-Nachricht <br/>-E-Mail-Anlage <br/>-URL in einer e-Mail-Nachricht<br/>-URL in einer Office-Datei      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft für Office 365-Scans](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |Datei oder App auf einem Gerät    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Übermitteln einer Datei an Microsoft zur Analyse von Schadsoftware](https://www.microsoft.com/wdsi/filesubmission)         |
-|Warnung durch legitime Verwendung ausgelöst <br/>Falsche Warnung    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> oder <br/>[Erkennung erweiterter Azure-Bedrohungen](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Verwalten von Benachrichtigungen im Cloud-App-Sicherheitsportal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Anpassen einer Warnung, um zu verhindern, dass falsch positive Ergebnisse wiederholt werden
+
+|Szenario |Dienst |Nächste Schritte |
+|--------|--------|--------|
+|-Eine Warnung wird durch eine legitime Verwendung ausgelöst. <br/>-Eine Warnung ist falsch    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> oder <br/>[Erkennung erweiterter Azure-Bedrohungen](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Verwalten von Benachrichtigungen im Cloud-App-Sicherheitsportal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+|Eine Datei, IP-Adresse, URL oder Domäne wird auf einem Gerät als Schadsoftware behandelt, auch wenn Sie sicher ist.|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Erstellen eines benutzerdefinierten Indikators mit einer Aktion "zulassen"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Rückgängigmachen einer auf einem Gerät ausgeführten Korrekturaktion
+
+Wenn auf einem Gerät (beispielsweise einem Windows 10-Gerät) und dem tatsächlich sauberen Element eine Korrekturaktion ausgeführt wurde, kann Ihr Sicherheits Betriebsteam die Korrekturaktion im [Wartungscenter](mtp-action-center.md)rückgängig machen.
+
+> [!IMPORTANT]
+> Stellen Sie sicher, dass Sie über die [erforderlichen Berechtigungen](mtp-action-center.md#required-permissions-for-action-center-tasks) verfügen, bevor Sie versuchen, die folgende Aufgabe auszuführen.
+
+1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
+
+2. Wählen Sie im Navigationsbereich **Info-Center** aus. 
+
+3. Wählen Sie auf der Registerkarte **Verlauf** eine Aktion aus, die Sie rückgängig machen möchten. Dadurch wird ein Flyout geöffnet.<br/>
+    > [!TIP]
+    > Verwenden Sie Filter, um die Ergebnisliste einzugrenzen. 
+
+4. Wählen Sie im Flyout für das ausgewählte Element die Option **Untersuchungs Seite öffnen**aus.
+
+5. Wählen Sie in der Ansicht Details der Untersuchung die Registerkarte **Aktionen** aus.
+
+6. Wählen Sie ein Element mit dem Status **abgeschlossen**aus, und suchen Sie in der Spalte **Decisions** nach einem Link, beispielsweise **genehmigt**. Dadurch wird ein Flyout mit weiteren Details zur Aktion geöffnet.
+
+7. Um die Aktion rückgängig zu machen, wählen Sie **Korrektur löschen**aus.
+
+## <a name="related-articles"></a>Verwandte Artikel
 
 - [Genehmigen oder Ablehnen von Aktionen im Zusammenhang mit der automatischen Untersuchung und Reaktion](mtp-autoir-actions.md)
 - [Erfahren Sie mehr über das Info-Center](mtp-action-center.md)

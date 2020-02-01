@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602302"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628101"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Integritätsinformationen Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -56,7 +56,7 @@ Die HITRUST CSF-Zertifizierung von Azure und Office 365 gilt für zwei Jahre.
 
 Beginnen Sie mit dem Nutzen der Cloud für Integritätsdaten Lösungen mit dem Azure Security and Compliance Blueprint – HIPAA/HITRUST-Integritätsdaten und AI. Dieser Blueprint enthält Tools und Anleitungen für die ersten Schritte beim Erstellen von HIPAA/HITRUST-Lösungen.
 
-[Verwenden von Azure HIPAA/HITRUST Blueprint](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[Verwenden von Azure HIPAA/HITRUST Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Beschleunigen der HIPAA/HITRUST-Compliance bei Verwendung von Office 365
 
