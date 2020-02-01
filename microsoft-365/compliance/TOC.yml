@@ -34,7 +34,7 @@
           href: insider-risk-management-content-explorer.md
         - name: Hinzufügen von Benutzern zu Insider Risikorichtlinien (Vorschau)
           href: insider-risk-management-users.md
-        - name: Erstellen von Insider Risiko Benachrichtigungen (Vorschau)
+        - name: Erstellen von Insider Risiko-Benachrichtigungsvorlagen (Vorschau)
           href: insider-risk-management-notices.md
     - name: Kommunikations Kompatibilität (Vorschau)
       items:
@@ -852,7 +852,7 @@
           href: offering-csa-star-attestation.md
         - name: CSA STAR-Zertifizierung
           href: offering-csa-star-certification.md
-        - name: CSA-STAR-Eigenbewertung
+        - name: Selbsteinschätzung von CSA-Star
           href: offering-csa-star-self-assessment.md
         - name: ISO 20000-1-2011
           href: offering-iso-20000-1-2011.md
