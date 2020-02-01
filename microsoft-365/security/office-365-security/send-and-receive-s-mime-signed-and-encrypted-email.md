@@ -1,5 +1,7 @@
 ---
 title: Senden und empfangen von S/MIME-signierten und verschlüsselten e-Mails in Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht.
-ms.openlocfilehash: ccea4e3359ecb9a5b214e4d19afa3e188b1b2865
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a7050ed2b2cd37b08bd2e95b90577f36086f0e85
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970281"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598422"
 ---
-# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="6dc77-103">Senden und empfangen von S/MIME-signierten und verschlüsselten e-Mails in Exchange Online</span><span class="sxs-lookup"><span data-stu-id="6dc77-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
+# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="8481e-103">Senden und empfangen von S/MIME-signierten und verschlüsselten e-Mails in Exchange Online</span><span class="sxs-lookup"><span data-stu-id="8481e-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
 
-<span data-ttu-id="6dc77-104">Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht.</span><span class="sxs-lookup"><span data-stu-id="6dc77-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="6dc77-105">Weitere Informationen zum Lesen oder Senden von s/MIME-verschlüsselten Nachrichten von einem e-Mail-Programm wie Outlook im Internet (früher bekannt als Outlook Web App) finden Sie unter [Verschlüsseln von Nachrichten mithilfe von s/MIME in Outlook im Internet](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).</span><span class="sxs-lookup"><span data-stu-id="6dc77-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).</span></span>
+<span data-ttu-id="8481e-104">Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht.</span><span class="sxs-lookup"><span data-stu-id="8481e-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="8481e-105">Weitere Informationen zum Lesen oder Senden von s/MIME-verschlüsselten Nachrichten von einem e-Mail-Programm wie Outlook im Internet (früher bekannt als Outlook Web App) finden Sie unter [Verschlüsseln von Nachrichten mithilfe von s/MIME in Outlook im Internet](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).</span><span class="sxs-lookup"><span data-stu-id="8481e-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="6dc77-106">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="6dc77-106">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="8481e-106">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="8481e-106">For more information</span></span>
 
-[<span data-ttu-id="6dc77-107">S/MIME für die Nachrichtensignierung und -verschlüsselung</span><span class="sxs-lookup"><span data-stu-id="6dc77-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+[<span data-ttu-id="8481e-107">S/MIME für die Nachrichtensignierung und -verschlüsselung</span><span class="sxs-lookup"><span data-stu-id="8481e-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
