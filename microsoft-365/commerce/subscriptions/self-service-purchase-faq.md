@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594099"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661907"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
@@ -29,7 +29,7 @@ ms.locfileid: "41594099"
 
 Self-Service-Käufe sind jetzt für Power Platform in den Vereinigten Staaten verfügbar.
 
-## <a name="general"></a>Allgemeines
+## <a name="general"></a>Allgemein
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Welche Änderungen hat Microsoft rund um Self-Service Purchases für die Power Platform-Produkte angekündigt?
 
@@ -101,7 +101,7 @@ Die Person, die das Abonnement über Self-Service Purchase kauft, wird in Rechnu
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>Welche Funktionen hat ein Administrator für Self-Service-Käufe?
 
-Administratoren können alle Self-Service-Käufe anzeigen, die in Ihrer Organisation im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>vorgenommen wurden. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Bestellverlauf, den Kaufpreis und die zugewiesenen Benutzer für jeden Self-Service-Kauf anzeigen. Wenn es für Ihre Organisation erforderlich ist, können Administratoren Self-Service-Einkauf pro Produkt über PowerShell deaktivieren. Administratoren haben die gleiche Datenverwaltung und Zugriffsrichtlinien für Produkte, die über Self-Service Purchase oder zentral erworben wurden.
+Administratoren können alle Self-Service-Käufe anzeigen, die in Ihrer Organisation im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>vorgenommen wurden. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Bestellverlauf, den Kaufpreis und die zugewiesenen Benutzer für jeden Self-Service-Kauf anzeigen. Im Power Platform Admin Center können Administratoren auch die Kapazität für Self-Service-Käufe anzeigen. Wenn es für Ihre Organisation erforderlich ist, können Administratoren Self-Service-Einkauf pro Produkt über PowerShell deaktivieren. Administratoren haben die gleiche Datenverwaltung und Zugriffsrichtlinien für Produkte, die über Self-Service Purchase oder zentral erworben wurden.
 
 Administratoren können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe tätigen können. Weitere Informationen finden Sie unter [use AllowSelfServicePurchase for the MSCommerce PowerShell Module](allowselfservicepurchase-powershell.md).
 
