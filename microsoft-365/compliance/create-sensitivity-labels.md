@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.
-ms.openlocfilehash: 3ce1f729853d514a85852221eb997c456a379dcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 73df1928a89218a419a9d774a7830ecad4aceb6d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595532"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661861"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -45,7 +45,7 @@ Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkei
 1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu Vertraulichkeitsbezeichnungen:
     
     - Microsoft 365 Compliance Center: 
-        - **Lösungen** > **Informationsschutz (Vorschau)**
+        - **Lösungen** > **Informationsschutz**
         
         Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
     
@@ -118,7 +118,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu Vertraulichkeitsbezeichnungen:
     
     - Microsoft 365 Compliance Center: 
-        - **Lösungen** > **Informationsschutz (Vorschau)**
+        - **Lösungen** > **Informationsschutz**
         
         Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
     
