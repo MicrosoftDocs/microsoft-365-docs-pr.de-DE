@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: 8dafaf45df0d681880ef513c9feab6b833c99cb8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595230"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661931"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
 
@@ -128,7 +128,7 @@ Auf der Seite **ausstehende Disposition** können Sie ausstehende und abgeschlos
   
 - Die **ausstehende Disposition** zeigt Elemente an, die das Ende Ihres Aufbewahrungszeitraums erreicht haben und eine Dispositions Überprüfung erfordern. Nachdem Sie jedes Element überprüft haben, entscheiden Sie, ob Sie eine andere Aufbewahrungs Bezeichnung anwenden möchten, den Aufbewahrungszeitraum verlängern oder endgültig löschen möchten. Sie können mehrere Elemente auswählen.
     
-- Auf der Registerkarte " **verworfene Elemente** " werden Dispositionen angezeigt, die während einer Dispositions Überprüfung zum Löschen genehmigt wurden und jetzt endgültig gelöscht werden oder Elemente als Datensätze markiert wurden, die nun gelöscht wurden. Elemente, für die eine andere Aufbewahrungs Bezeichnung verwendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfung erweitert wurde, werden hier nicht angezeigt.
+- Auf der Registerkarte " **verworfene Elemente** " werden endgültig gelöschte Elemente angezeigt, die bereits über eine Dispositions Überprüfung durchgeführt wurden. Sie werden hier angezeigt, da der permanente Löschvorgang mehrere Tage dauern kann, wie im obigen Abschnitt beschrieben. Elemente, für die eine andere Aufbewahrungs Bezeichnung angewendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfung verlängert wurde, werden hier nicht angezeigt.
 
 ![Dispositions Registerkarten](media/Retention-Disposition-tabs.png)
     

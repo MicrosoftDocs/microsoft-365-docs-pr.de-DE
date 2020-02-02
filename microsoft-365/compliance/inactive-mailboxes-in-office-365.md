@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: In diesem Artikel erfahren Sie, wie Sie Postfachinhalte für frühere Mitarbeiter beibehalten, indem Sie das Postfach in ein inaktives Postfach umwandeln. Sie können dies tun, indem Sie das Postfach in einem Beweissicherungsverfahren platzieren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach anwenden und dann das entsprechende Office 365 Konto entfernen.
-ms.openlocfilehash: 7b60ce92382c0b8111dcf4c1b8d9fb4c793717c6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ede1ae199bdecfea2662a187c3965cc2b676d7
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597942"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661880"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Übersicht über inaktive Postfächer in Office 365
 
@@ -85,7 +85,7 @@ Umgekehrt werden einem inaktiven Postfach zugewiesene Archivrichtlinien (mit der
   
 ## <a name="creating-an-inactive-mailbox"></a>Erstellen eines inaktiven Postfachs
 
-Damit ein Postfach inaktiv ist, muss ihm eine Exchange Online Plan 2-Lizenz (oder eine Exchange Online Plan 1-Lizenz mit einer Exchange Online-Archivierungs-Add-on-Lizenz) zugewiesen sein, damit ein Beweissicherungsverfahren oder Office 365 Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht. Nachdem das Postfach gelöscht wurde, stehen ihm zugeordnete Exchange Online Lizenzen zur Verfügung, die einem neuen Benutzer zugewiesen werden können. Für inaktive Postfächer sind keine laufenden Lizenzen erforderlich.
+Damit ein Postfach inaktiv ist, muss ihm eine Exchange Online Plan 2-Lizenz (oder eine Exchange Online Plan 1-Lizenz mit einer Exchange Online-Archivierungs-Add-on-Lizenz) zugewiesen sein, damit ein Beweissicherungsverfahren oder Office 365 Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht. Nachdem das Postfach gelöscht wurde, stehen ihm zugeordnete Exchange Online Lizenzen zur Verfügung, die einem neuen Benutzer zugewiesen werden können.
   
 Die folgende Tabelle enthält eine Übersicht über das Verfahren, mit dem ein inaktives Postfach in verschiedenen Aufbewahrungsszenarios erstellt wird. Weitere Informationen finden Sie unter [Verwalten inaktiver Postfächer in Office 365](create-and-manage-inactive-mailboxes.md).
   

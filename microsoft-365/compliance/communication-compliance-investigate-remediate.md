@@ -1,5 +1,5 @@
 ---
-title: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)
+title: Untersuchen und Beheben von Kommunikations Konformitätswarnungen
 description: Untersuchen und Beheben von Benachrichtigungen zur Kommunikations Konformität in Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0bf47842945d904c30c8a034d2ed255a743332ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595822"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661951"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Kommunikations Konformitätswarnungen
 
 Nachdem Sie die Richtlinien für die Kommunikations Konformität konfiguriert haben, erhalten Sie Warnungen im Microsoft 365 Compliance Center für Nachrichten Probleme, die ihren Richtlinienbedingungen entsprechen. Befolgen Sie die hier beschriebenen Workflowanweisungen, um Warnungs Probleme zu untersuchen und zu beheben.
 
@@ -70,7 +70,7 @@ Eine vollständige Liste der Filter und Feld Details finden Sie unter [Filter](c
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Verwenden von Near und Exact Duplicate Analysis
 
-Compliance-Richtlinien für die Kommunikation überprüfen und konfigurieren automatisch nahe und exakte Nachrichtenduplikate ohne zusätzliche Konfigurationsschritte. Auf diese Weise können Sie ähnliche Nachrichten einzeln oder als Gruppe schnell beheben, wodurch die Belastung der Nachrichten Ermittlung für Bearbeiter reduziert wird. Wenn Duplikate erkannt werden, werden die Steuerelemente **nahe Duplikate** und/oder **exakte Duplikate** auf der Symbolleiste für die Behebungsaktion angezeigt.
+Compliance-Richtlinien für die Kommunikation überprüfen und konfigurieren automatisch nahe und exakte Nachrichtenduplikate ohne zusätzliche Konfigurationsschritte. Diese Ansicht ermöglicht es Ihnen, gleichzeitig oder als Gruppe schnell Nachrichten zu beheben, wodurch die Belastung der Nachrichten Ermittlung für Bearbeiter reduziert wird. Wenn Duplikate erkannt werden, werden die Steuerelemente **nahe Duplikate** und/oder **exakte Duplikate** auf der Symbolleiste für die Behebungsaktion angezeigt.
 
 #### <a name="to-remediate-duplicates"></a>So beheben Sie Duplikate
 
@@ -116,5 +116,6 @@ Unabhängig davon, wo Sie mit der Überprüfung von Warnungen oder der von Ihnen
     - **Tag as**: kennzeichnen der Nachricht als *konform*, *nicht konform*oder als *fragwürdig* , da Sie sich auf die Richtlinien und Standards für Ihre Organisation bezieht. Durch das Hinzufügen von Tags und Markierungs Kommentaren können Sie Richtlinienwarnungen für Eskalationen oder als Teil anderer interner Überprüfungsprozesse mikrofiltern. Nachdem die Markierung abgeschlossen ist, können Sie die Nachricht auch auflösen, um Sie aus der Warteschlange für ausstehende Überprüfungen zu entfernen.
     - **Notify**: Sie können das **Notify** -Steuerelement verwenden, um der Warnung eine benutzerdefinierte Notizvorlage zuzuweisen und eine Warnmeldung an den Benutzer zu senden. Wählen Sie die entsprechende Notizvorlage aus, und wählen Sie senden aus, um eine Erinnerung an den Mitarbeiter, der die Nachricht gesendet hat, per e-Mail zu **senden** und das Problem zu beheben.
     - **Eskalieren**: mithilfe des **Eskalations** Steuerelements können Sie auswählen, welche Person in Ihrer Organisation die Nachricht überprüfen soll. Wählen Sie aus einer Liste konfigurierter Bearbeiter aus, um eine e-Mail-Benachrichtigung zu senden und eine zusätzliche Überprüfung der Nachrichten Benachrichtigung anzufordern. Der ausgewählte Bearbeiter kann einen Link in der e-Mail-Benachrichtigung verwenden, um direkt zu den Elementen zu gelangen, die zur Überarbeitung eskaliert wurden.
+    - **Erstellen eines Falles**: mit dem **Create a Case** -Steuerelement können Sie einen neuen [erweiterten eDiscovery-Fall](overview-ediscovery-20.md) für einzelne oder mehrere Nachrichten erstellen. Sie geben einen Namen und Notizen für den neuen Fall an, und Benutzer, der die Nachricht gesendet hat, die der Richtlinie entspricht, werden automatisch als Fall Verwalter zugewiesen. Sie benötigen keine zusätzlichen Berechtigungen, um den Fall zu verwalten. Durch das Erstellen einer Groß-/Kleinschreibung wird kein neues Tag für die Nachricht aufgelöst oder erstellt.
 
 4. **Ermitteln, ob Nachrichtendetails außerhalb der Kommunikations Kompatibilität archiviert werden sollen**: Nachrichtendetails können exportiert oder heruntergeladen werden, wenn Sie die Nachrichten in einer separaten Speicherlösung archivieren müssen. Durch die Auswahl des **Download** -Steuerelements werden ausgewählte Nachrichten automatisch zu a hinzugefügt. ZIP-Datei, die im Speicher außerhalb von Microsoft 365 gespeichert werden kann.

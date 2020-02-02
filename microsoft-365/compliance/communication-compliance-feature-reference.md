@@ -1,5 +1,5 @@
 ---
-title: Referenz zur Kommunikations Kompatibilitätsfunktion (Vorschau)
+title: Referenz zur Kommunikation Compliance-Feature
 description: Funktionsreferenz für die Kommunikations Kompatibilität in Microsoft 365. Hier finden Sie Details und Spezifikationen für die einzelnen Feature-Komponenten.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b844003b2cf0da80588d9fe2622c3353a57d73b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595832"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661961"
 ---
-# <a name="communication-compliance-feature-reference-preview"></a>Referenz zur Kommunikations Kompatibilitätsfunktion (Vorschau)
+# <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
 ## <a name="policies"></a>Richtlinien
 
@@ -67,14 +67,14 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
 
 - **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelne Chats können gescannt werden. Microsoft Teams-Chats, die den Bedingungen für die Kommunikationsrichtlinien Richtlinie entsprechen, werden einmal alle 24 Stunden verarbeitet und stehen dann in Kommunikations Kompatibilitätsberichten zur Verfügung. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
-    - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Dies gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
+    - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
     - **Für Teams-Kanal Kommunikation:** Weisen Sie jedem Microsoft Team-Kanal oder Office 365 Gruppe, die Sie überprüfen möchten, die einen bestimmten Benutzer enthält, die Kommunikations Konformitätsrichtlinie zu. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Office 365 Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
 
 - **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. E-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort in Kommunikations Kompatibilitätsberichten verfügbar. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Skype for Business Online**: Chat Kommunikation und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Richtlinien für die Kommunikationsrichtlinien Übereinstimmung erfüllen, werden einmal alle 24 Stunden verarbeitet und stehen dann in Kommunikations Kompatibilitätsberichten zur Verfügung. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
 
-    - **Für Skype for Business Online Chat Kommunikation**: zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Dies gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
+    - **Für Skype for Business Online Chat Kommunikation**: zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
 
 - **Drittanbieterquellen**: Sie können die Kommunikation von Drittanbieterquellen für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Connectors unterstützen die folgenden Drittanbieterressourcen:
 
@@ -85,7 +85,7 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Benutzerdefinierter Daten-Konnektor](archiving-third-party-data.md)
 
-Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikations Konformitätsrichtlinie zuweisen können. Im Abschnitt **3rd Party sources** des Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien werden derzeit konfigurierte Connectors von Drittanbietern angezeigt.
+Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikations Konformitätsrichtlinie zuweisen können. Im Abschnitt " **Drittanbieterquellen** " des Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien werden derzeit konfigurierte Connectors von Drittanbietern angezeigt.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
 
@@ -223,7 +223,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **File-Klasse** | Die Klasse der Nachricht auf der Grundlage des Nachrichtentyps, entweder *Nachricht* oder *Anlage*. |
 | **Weist eine Anlage auf** | Das Attachment-vorhanden sein in der Nachricht. |
 | **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloonmberg usw. |
-| **Empfängerdomänen** | Die Domäne, an die die Nachricht gesendet wurde. Dies ist normalerweise Ihre Microsoft 365-Abonnement Domäne standardmäßig. |
+| **Empfängerdomänen** | Die Domäne, an die die Nachricht gesendet wurde. Diese Domäne ist normalerweise Ihre Microsoft 365-Abonnement Domäne standardmäßig. |
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Absender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
@@ -270,19 +270,19 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 
 ## <a name="audit"></a>Überwachungs
 
-In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Dabei kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
+In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Bei diesen Informationen kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
 
 >[!Important]
->Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
 
-Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Dadurch wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
+Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
 |**Field**|**Details**|
 |:-----|:-----|
-| **CreationDate** | Wenn die Aktivität in einer Richtlinie ausgeführt wurde. |
+| **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |
 | **Operations** | Die für die Richtlinie ausgeführten Vorgänge. |
-| **Auditdata** | Dies ist das Hauptdatenquellen Feld für alle Richtlinien Aktivitäten. Alle Aktivitäten werden durch Kommata-Trennzeichen aufgezeichnet und getrennt. |
+| **Auditdata** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinien Aktivitäten. Alle Aktivitäten werden durch Kommata-Trennzeichen aufgezeichnet und getrennt. |
 
 Sie können auch Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) anzeigen.
 

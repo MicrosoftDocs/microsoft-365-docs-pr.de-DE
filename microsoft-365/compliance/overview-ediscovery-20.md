@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird die neue Version von Advanced eDiscovery in Microsoft 365 beschrieben.
-ms.openlocfilehash: 0057b77b140d05093686029addc29e72e59cae11
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601772"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662011"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365
 
@@ -84,8 +84,11 @@ Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge für in-Place-Frei
 Auf der Registerkarte **Überprüfungs Sätze** können Sie die Inhalte, die Sie im Live-System gesammelt und einem Überprüfungs Satz hinzugefügt haben, überprüfen und analysieren. Ein *Überprüfungs Satz* ist eine statische Sammlung dieser Daten (mit anderen Worten: eine Offlinekopie von Daten) von Daten für den Freiheitsentzug (und, falls zutreffend, Daten ohne Freiheitsentzug), die Sie in der vorherigen Phase des eDiscovery-Workflows gesammelt haben. Wenn Sie einer Überprüfungsgruppe Suchergebnisse hinzufügen, wird ein Prozess ausgelöst, der Dateien aus Containern extrahiert, Metadaten extrahiert und Text extrahiert. Wenn dieser Vorgang abgeschlossen ist, erstellt das System einen neuen Index aller Daten, die von den Verwaltern gesammelt wurden, und fügt ihn dem Überprüfungs-Datensatz hinzu. Nachdem die Daten dem Überprüfungs Sätzen hinzugefügt wurden, können Sie weitere Abfragen ausführen, um die Falldaten einzuschränken, Daten als Text oder im systemeigenen Dateiformat anzuzeigen und Dokumente in der Überprüfungsgruppe mit Anmerkungen, redact und Tags zu versehen. Sie können auch erweiterte Analysen durchführen, beispielsweise das Identifizieren von Dokument Duplikaten, e-Mail-Threads und Designs. Nachdem Sie die Daten nur auf das, was für den Fall relevant ist, abgeschlachtet haben, können Sie Dokumente entweder direkt herunterladen oder zusammen mit Datei Metadaten, Anmerkungen und Tags exportieren. Weitere Informationen finden Sie unter:
 
 - [Anzeigen von Dokumenten in einem Prüfdateisatz](view-documents-in-review-set.md)
+
 - [Abfragen der Daten in einem Prüfdateisatz](review-set-search.md)
+
 - [Markieren von Dokumenten in einem Prüfdateisatz](tagging-documents.md)
+
 - [Analysieren von Daten in einem Überprüfungs Satzes](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Exportieren von Daten zur Überprüfung und Präsentation
@@ -99,3 +102,7 @@ Verwenden Sie die Registerkarte **Aufträge** , um langwierige Prozesse für ber
 ## <a name="configuring-case-settings"></a>Konfigurieren von Falleinstellungen
 
 Verwenden Sie die Registerkarte **Einstellungen** , um Einstellungen für Groß-/Kleinschreibung zu konfigurieren. Dies umfasst das Hinzufügen von Mitgliedern zu einem Fall, das Schließen oder Löschen eines Falls und das Konfigurieren von Such-und Analyse Einstellungen.
+
+## <a name="advanced-ediscovery-reports"></a>Erweiterte eDiscovery-Berichte
+
+Sie können die erweiterten eDiscovery-Berichte auf der Startseite verwenden, um Ihre Organisation bei der Verfolgung von Aktivitäten und Status in allen erweiterten eDiscovery-Fällen zu unterstützen. Das Feature für erweiterte eDiscovery-Berichte aggregiert Informationen zu Fällen, Depotbanken, Datenquellen und Kommunikation. Sie können die Berichtsdaten anhand verschiedener Kriterien filtern und die aggregierten Informationen zur weiteren Analyse in eine CSV-Datei exportieren.  Weitere Informationen finden Sie unter [Advanced eDiscovery Reports](advanced-ediscovery-reports.md).

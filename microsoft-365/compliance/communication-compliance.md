@@ -1,5 +1,5 @@
 ---
-title: Kommunikations Kompatibilität (Vorschau)
+title: Kommunikationscompliance
 description: Informationen zur Kommunikations Kompatibilität in Microsoft 365
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8aa7beeea621ccbb0014059766fe217c1a25e2a2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595812"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661941"
 ---
-# <a name="communication-compliance-in-microsoft-365-preview"></a>Kommunikations Kompatibilität in Microsoft 365 (Vorschau)
+# <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
 Communication Compliance ist Teil der neuen Lösung für Insider Risiken in Microsoft 365, die das Minimieren von Kommunikationsrisiken unterstützt, indem Sie Ihnen hilft, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu entgegennehmen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Überprüfer können gescannte e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
 
@@ -114,8 +114,8 @@ Zum Identifizieren und Beheben von Kompatibilitätsproblemen mit der Kommunikati
 
 In diesem Workflow Schritt ermitteln Sie die Compliance-Anforderungen und konfigurieren entsprechende Richtlinien für die Kommunikations Konformität. Richtlinienvorlagen sind eine hervorragende Möglichkeit, nicht nur schnell eine neue Konformitätsrichtlinie zu konfigurieren, sondern auch schnell Richtlinien zu ändern und zu aktualisieren, wenn sich Ihre Anforderungen ändern. Beispielsweise können Sie eine Richtlinie für eine anstößige Sprache und gegen Belästigung für eine kleine Gruppe von Benutzern schnell testen, bevor Sie eine Richtlinie für alle Benutzer in Ihrer Organisation konfigurieren.
 
-> [!Important]
-> Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Informationen zum Aktivieren von Berechtigungen für Kommunikations Kompatibilitätsfunktionen finden Sie unter [Stellen der Kommunikation Compliance in Ihrer Organisation zur Verfügung](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
+>[!Important]
+>Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Informationen zum Aktivieren von Berechtigungen für Kommunikations Kompatibilitätsfunktionen finden Sie unter [Stellen der Kommunikation Compliance in Ihrer Organisation zur Verfügung](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
 Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorlagen auswählen:
 
@@ -143,6 +143,7 @@ Der nächste Schritt besteht darin, mit den folgenden Optionen Kompatibilitätsp
 - **Benutzer benachrichtigen**: häufig verletzen Benutzer versehentlich oder versehentlich eine Kommunikations Konformitätsrichtlinie. Sie können die Notify-Funktion verwenden, um dem Benutzer eine Warnmeldung zu geben und das Problem zu beheben.
 - **Eskalieren an einen anderen**Prüfer: in einigen Fällen benötigt der erste Bearbeiter eines Problems Eingaben von anderen Prüfern, die zur Lösung des Vorfalls beitragen. Sie können Probleme mit Nachrichten problemlos an Bearbeiter in anderen Bereichen Ihrer Organisation im Rahmen des Lösungsprozesses eskalieren.
 - **Als falsch positiv kennzeichnen**: Nachrichten, die fälschlicherweise als Übereinstimmungen von Konformitätsrichtlinien erkannt werden, werden gelegentlich durch den Überprüfungsprozess hindurch gerutscht. Sie können diese Warnungstypen als falsch positive Signale markieren und das Problem automatisch beheben.
+- **Erstellen eines Falles**: in den schwerwiegendsten Situationen müssen Sie möglicherweise Kommunikations Kompatibilitätsinformationen für andere Bearbeiter in Ihrer Organisation freigeben. Die Kompatibilität der Kommunikation ist eng mit anderen Microsoft 365-Kompatibilitätsfeatures integriert, die Ihnen bei der End-to-End-Risiko Lösung helfen. Wenn Sie einen Fall für eine Untersuchung eskalieren, können Sie Daten und die Verwaltung der Anfrage in Microsoft 365 auf Advanced eDiscovery übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Sie ermöglicht es juristischen Teams, den gesamten Benachrichtigungs Workflow für rechtliche Aufbewahrungen zu verwalten. Weitere Informationen zu erweiterten eDiscovery-Fällen finden Sie unter [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Überwachen
 
