@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: Erstellen von Insider Risiko-Benachrichtigungsvorlagen (Vorschau)
           href: insider-risk-management-notices.md
-    - name: Kommunikations Kompatibilität (Vorschau)
+    - name: Kommunikationscompliance
       items:
-        - name: Informationen zur Kommunikationscompliance (Vorschau)
+        - name: Informationen zur Kommunikation Compliance
           href: communication-compliance.md
-        - name: Konfigurieren der Kommunikationscompliance in Microsoft 365 (Vorschau)
+        - name: Erste Schritte mit der Kommunikation Compliance
           href: communication-compliance-configure.md
-        - name: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance (Vorschau)
+        - name: Untersuchen und Beheben von Kommunikations Konformitätswarnungen
           href: communication-compliance-investigate-remediate.md
-        - name: Funktionsreferenz für Kommunikationsrichtlinien (Vorschau)
+        - name: Funktionsreferenz für die Kommunikations Konformität
           href: communication-compliance-feature-reference.md
         - name: Aufsichtsrichtlinien in Office 365
           href: supervision-policies.md
@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: DLP-Funktionen für vertrauliche Informationen
           href: what-the-dlp-functions-look-for.md
-        - name: Ansehen eines erweiterten Überblicks über das Anpassen von DLP
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
     - name: E-Mail-Verschlüsselung
       href: email-encryption.md
       items:
@@ -454,6 +452,8 @@
               href: tagging-documents.md
             - name: Erkennung für anwaltliche Schweigepflicht einstellen
               href: attorney-privilege-detection.md
+            - name: Verwenden des Dashboards für Überprüfungs Sätze (Vorschau)
+              href: advanced-ediscovery-dashboard.md
         - name: Analysieren von Falldaten
           href: analyzing-data-in-review-set.md
           items:
@@ -494,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Unterhaltungs-Prüfdateisätze
               href: conversation-review-sets.md
+            - name: Erweiterte eDiscovery-Berichte (Vorschau)
+              href: advanced-ediscovery-reports.md
             - name: Problembehandlung bei AzCopy
               href: troubleshooting-azcopy.md
     - name: Verwalten von eDiscovery-Fällen
