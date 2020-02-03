@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259983"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662021"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -47,29 +49,29 @@ Erfahren Sie mehr über die Vorteile von SOC 1, 2, 3 für die Microsoft Cloud: [
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Im Umfang von SOC 1 und SOC 2 enthaltene Dienste
 
-- Azure, Azure Government und Azure Deutschland [detaillierte Liste](https://aka.ms/AzureCompliance)
+- [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
 - Cloud-App-Sicherheit
-- Dynamics 365 und Dynamics 365 U.S. Government [detaillierte Liste](https://aka.ms/d365-compliance-list)
+- [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Microsoft Managed Desktop
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
-- Office 365, Office 365 U.S. Government und Office 365 U.S. Government Defense [detaillierte Liste](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer hat einen SOC 1-Bericht (Typ 1) erhalten.
-- Office 365 Deutschland
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
 - Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>Im Umfang von SOC 3 enthaltene Dienste
 
-- Azure, Azure Government und Azure Deutschland [detaillierte Liste](https://aka.ms/AzureCompliance)
+- [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
 - Cloud-App-Sicherheit
 - Graph
 - Intune
 - Microsoft Managed Desktop
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
+- [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -93,11 +95,13 @@ Microsoft Cloud Services werden mindestens jährlich anhand der Standards SOC 1
 
 #### <a name="office-365"></a>Office 365
 
-- [Office 365 SOC 1 SSAE 16-Auditbericht (Typ II)](https://aka.ms/office365soc1auditreport)
-- [Office 365 SOC 2 AT 101-Auditbericht (Typ II)](https://aka.ms/Office365SOC2AuditReport)
+- [Office 365 Core – SSAE 18 SOC 1-Bericht](https://aka.ms/o365SOC-1)
+- [Office 365 Core – SSAE 18 SOC 2-Bericht](https://aka.ms/o365SOC-2)
+- [Office 365 Core – SSAE 18 SOC 3-Bericht](https://aka.ms/o365SOC-3)
+- [Office 365 Microservices T1 – SSAE 18 SOC2-Bericht (Typ I)](https://aka.ms/o365-MS-SOC-2-type1)
 - [Office 365 Kunden-Lockbox SOC 1 SSAE 16-Auditbericht](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Yammer SOC 2 AT 101-Auditbericht (Typ II)](https://aka.ms/YammerSOC2AuditReport)
 - [Yammer SOC 2 AT 101-Auditbericht (Typ I)](https://aka.ms/YammerSOC2Type1AuditReport)
+- [Yammer SOC 2-Bericht (Typ II)](https://aka.ms/yammerSOC-2)
 - [Siehe Bridge Letters und zusätzliche Auditberichte](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -127,15 +131,10 @@ Das [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) ist eine
 
 ## <a name="resources"></a>Ressourcen
 
- - [Besserer Schutz Ihrer Daten durch Microsoft Cloud Services](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [Service Organization Control (SOC) – Berichte](https://aka.ms/mssocreports)
- - [SSAE 16 Auditing Standard](https://www.ssae-16.com/)
- - [ISAE 3402 Standard](https://isae3402.com/)
- - [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
- - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf) herunter.
+- [Besserer Schutz Ihrer Daten durch Microsoft Cloud Services](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [Service Organization Control (SOC) – Berichte](https://aka.ms/mssocreports)
+- [SSAE 16 – Übersicht](http://ssae16.com/SSAE16_overview.html)
+- [ISAE 3402 – Übersicht](http://isae3402.com/ISAE3402_overview.html)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
