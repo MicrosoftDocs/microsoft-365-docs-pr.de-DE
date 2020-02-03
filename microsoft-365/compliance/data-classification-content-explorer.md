@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: 71ec7b4e27a6f125754e693ecb5239c66404a9ad
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628079"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661904"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Verwenden des Daten Inhalts-Explorers zur Datenklassifizierung (Vorschau)
 
@@ -51,11 +51,13 @@ Mithilfe einer [Aufbewahrungbezeichnung](labels.md) können Sie festlegen, wie l
 
 Es gibt zwei Rollen, die den Zugriff auf den Inhalts-Explorer gewähren:
 
-- **Inhalts Explorer-Listenanzeige**: Durch die Mitgliedschaft in dieser Rollengruppe können Sie jedes Element und dessen Speicherort anzeigen.
+- **Inhalts Explorer-Listenanzeige**: Durch die Mitgliedschaft in dieser Rollengruppe können Sie jedes Element und dessen Speicherort anzeigen. Die Rolle `data classification list viewer` wurde dieser Rollengruppe bereits zugewiesen.
 
-- **Inhalts-Explorer-Inhaltsanzeige**: Durch die Mitgliedschaft in dieser Rollengruppe können Sie die Inhalte aller Elemente in der Liste anzeigen.
+- **Inhalts-Explorer-Inhaltsanzeige**: Durch die Mitgliedschaft in dieser Rollengruppe können Sie die Inhalte aller Elemente in der Liste anzeigen. Die Rolle `data classification content viewer` wurde dieser Rollengruppe bereits zugewiesen.
 
 Das Konto, das Sie für den Zugriff auf den Inhalts-Explorer verwenden, muss einer oder beiden Rollengruppen angehören. Hierbei handelt es sich um unabhängige Rollengruppen, die nicht kumulativ sind. Wenn Sie beispielsweise einem Konto die Möglichkeit geben möchten, nur die Elemente und deren Speicherorte anzuzeigen, erteilen Sie Inhalts-Explorer-Listenanzeige-Rechte. Wenn Sie möchten, dass dasselbe Konto auch in der Lage ist, die Inhalte der Elemente in der Liste anzuzeigen, erteilen Sie zusätzlich Inhalts-Explorer-Inhaltsanzeige-Rechte.
+
+Sie können auch eine oder beide Rollen einer benutzerdefinierten Rollengruppe zuweisen, um den Zugriff auf den Inhalts-Explorer anzupassen.
 
 ### <a name="how-to-use-content-explorer"></a>Verwendung des Inhalts-Explorers
 

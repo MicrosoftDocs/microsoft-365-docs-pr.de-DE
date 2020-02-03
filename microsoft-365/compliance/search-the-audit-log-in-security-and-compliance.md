@@ -1,5 +1,7 @@
 ---
 title: Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265893"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662001"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -122,6 +124,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Microsoft Project|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power-Apps|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Security & Compliance Center|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online und OneDrive for Business|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -335,7 +338,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |(keine)|FileModifiedExtended|Dies bezieht sich auf die Aktivität "Datei geändert" (FileModified). Wenn dieselbe Person während eines längeren Zeitraums (bis zu 3 Stunden) eine Datei ständig ändert, wird ein FileModifiedExtended-Ereignis protokolliert. <br/><br/> Die Protokollierung von FileModifiedExtended-Ereignissen dient dazu, die Anzahl von FileModified-Ereignissen zu verringern, die bei ständiger Änderung einer Datei protokolliert werden. Auf diese Weise lässt sich der Stördatenverkehr von mehreren FileModified-Einträgen besser reduzieren, bei denen die Benutzeraktivität im Wesentlichen identisch ist, sodass Sie sich auf das ursprüngliche (und wichtigere) FileModified-Ereignis konzentrieren können.|
 |Datei verschoben|FileMoved|Der Benutzer verschiebt ein Dokument von seinem aktuellen Speicherort auf einer Website an einen neuen Speicherort.|
 |(keine)|FilePreviewed|Ein Benutzer zeigt eine Vorschau einer Datei auf einer SharePoint- oder OneDrive for Business-Website an. Diese Ereignisse treten in der Regel in großem Umfang basierend auf einer einzelnen Aktivität auf, z. B. der Anzeige einer Bildergalerie.|
-|Suchabfrage durchgeführt|SearchQueryPerformed|Der Benutzer oder das Systemkonto nimmt eine Suche auf einer SharePoint- oder OneDrive for Business-Website vor. Einige häufige Szenarios, in denen ein Dienstkonto eine Suchabfrage ausführt, umfassen das Anwenden einer eDiscovery-Sperre oder einer Aufbewahrungsrichtlinie auf Websites und OneDrive-Konten, und wenn Aufbewahrungs- oder Vertraulichkeitsbezeichnungen automatisch auf Websiteinhalte angewendet werden. In vielen Fällen ist der Name des Dienstkontos, das im Feld „Benutzer“ des Überwachungsdatensatzes protokolliert wird, **app@sharePoint**. </br></br> **Tipp:** die Felder „ApplicationDisplayName“ und „EventData“ im Überwachungsdatensatz für die Aktivität der durchgeführten Suchabfrage helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, mit dem dieses Ereignis ausgelöst wurde.|
+|Suchabfrage durchgeführt|SearchQueryPerformed|Der Benutzer oder das Systemkonto nimmt eine Suche auf einer SharePoint- oder OneDrive for Business-Website vor. Einige häufige Szenarios, in denen ein Dienstkonto eine Suchabfrage ausführt, umfassen das Anwenden einer eDiscovery-Sperre oder einer Aufbewahrungsrichtlinie auf Websites und OneDrive-Konten, und wenn Aufbewahrungs- oder Vertraulichkeitsbezeichnungen automatisch auf Websiteinhalte angewendet werden. In vielen Fällen ist der Name des Dienstkontos, das im Feld „Benutzer“ des Überwachungsdatensatzes protokolliert wird, **app\@sharePoint**. </br></br> **Tipp:** die Felder „ApplicationDisplayName“ und „EventData“ im Überwachungsdatensatz für die Aktivität der durchgeführten Suchabfrage helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, mit dem dieses Ereignis ausgelöst wurde.|
 |Alle Nebenversionen einer Datei in den Papierkorb verschoben|FileVersionsAllMinorsRecycled|Benutzer löscht alle Nebenversionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.|
 |Alle Versionen der Datei in den Papierkorb|FileVersionsAllRecycled|Benutzer löscht alle Versionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.|
 |Dateiversion in den Papierkorb|FileVersionRecycled|Benutzer löscht eine Version aus dem Versionsverlauf einer Datei. Die gelöschte Version wird in den Papierkorb der Website verschoben.|
