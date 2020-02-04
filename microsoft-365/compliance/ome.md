@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/03/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Mit Office 365 Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die e-Mail-Nachrichtenverschlüsselung hilft sicherzustellen, dass nur vorgesehene Empfänger Nachrichteninhalte anzeigen können.
-ms.openlocfilehash: 9da6084348a4bdc89f620eb894c9ffa113d64292
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d3688fbc30923e204b9cba338b61bc955b8f95
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601782"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680094"
 ---
 # <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
 
@@ -30,12 +30,38 @@ Häufig werden vertrauliche Informationen wie Finanzdaten, Verträge, vertraulic
 
 Mit Office 365 Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Office 365 Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen e-Mail-Diensten. Die e-Mail-Nachrichtenverschlüsselung hilft sicherzustellen, dass nur vorgesehene Empfänger Nachrichteninhalte anzeigen können.
 
+## <a name="important-updates-to-ome-to-enhance-email-authenticity---action-required"></a>Wichtige Updates für OM zur Verbesserung der e-Mail-Authentizität – Aktion erforderlich
+
+Ab Februar 2020 werden Verbesserungen an OM durchlaufen, die die e-Mail-Authentizität von om-e-Mails verbessern, indem Sie die Absenderadressen ändern, die von OM verwendet werden. Ohne diese Verbesserungen haben einige Organisationen vom System generierte e-Mail-Nachrichten aus OM zurückgewiesen, wie beispielsweise einmaliges Senden von e-Mail-und Portal Antworten, da die Absenderadresse aus dem Domänen Messaging.onmicrosoft.com stammt. Bei dieser Änderung werden diese vom System generierten e-Mails von den benutzerdefinierten Domänen Ihrer Organisation anstelle von onmicrosoft.com gesendet. Um diese Verbesserung zu implementieren, müssen Sie die Nachrichtenfluss Regeln aktualisieren.
+
+Für Exchange Online müssen Sie jede Nachrichtenfluss Regel aktualisieren, die nach den alten om-e-Mail-Adressen sucht, oder einer Adresse außerhalb Ihrer Organisation, um nach den neuen OM-Adressen zu suchen. Da die neuen om-e-Mails (One-Time-Pass-Code und Portal Antwort) aus Ihrer benutzerdefinierten Domäne stammen, qualifizieren Sie sich nicht mehr als von außerhalb der Organisation kommend.
+
+Wenn Sie Lösungen von Drittanbietern verwenden, die mit lokalen oder Exchange Online von Exchange arbeiten, müssen Sie alle alten OM-Regeln aktualisieren, um die neuen e-Mail-Adressen für OM widerzuspiegeln. Wenn Sie beispielsweise die vorherigen e-Mail-Adressen in der Liste whitelisted haben, müssen Sie die neuen e-Mails zur Liste der in der Liste der Whitelists gestellten e-Mails hinzufügen.
+
+### <a name="changes-to-ome-email-addresses"></a>Änderungen an om-e-Mail-Adressen
+
+Absenderadresse des einmaligen Pass Codes:
+
+- Alte Adresse:``onetimepasscode@messaging.onmicrosoft.com``
+
+- Neue Adresse:``onetimepasscode@<yourdomain.com>``
+
+OM-Antworten aus dem OM-Portal:
+
+- Alte Adresse:``omeportal@messaging.onmicrosoft.com``
+
+- Neue Adresse:``omeportal@<yourdomain.com>``
+
+### <a name="errors-routing-mail-from-exchange-online-through-exchange-on-premises-to-external-recipients"></a>Fehler beim Weiterleiten von e-Mails von Exchange Online über Exchange lokal an externe Empfänger
+
+Wenn Sie e-Mails von Exchange Online über lokale Exchange-Adressen an Empfänger weiterleiten, die sich außerhalb Ihrer Organisation befinden, werden einige Drittanbietersysteme DMARC-Fehler zurückgegeben und die e-Mail nicht angenommen. Beispielsweise gibt Gmail einen DMARC-Fehler zurück, wenn Sie Ihre e-Mails auf diese Weise weiterleiten. Um dieses Problem zu umgehen, leiten Sie e-Mails direkt von Exchange Online an externe Empfänger weiter, wobei Exchange lokal umgangen wird.
+
+## <a name="how-office-365-message-encryption-works"></a>Funktionsweise von Office 365 Nachrichtenverschlüsselung
+
 Der Rest dieses Artikels gilt für die neuen OM-Funktionen.
 
 > [!NOTE]
 > Stellvertretungen, die über Vollzugriff auf ein Postfach verfügen, können verschlüsselte Nachrichten lesen, die an das Postfach gesendet werden.
-
-## <a name="how-office-365-message-encryption-works"></a>Funktionsweise von Office 365 Nachrichtenverschlüsselung
 
 Office 365 Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) basiert, das Teil von Azure Information Protection ist. Dies umfasst Verschlüsselungs-, Identitäts-und Autorisierungsrichtlinien, um Ihre e-Mails zu schützen. Sie können Nachrichten mithilfe von Vorlagen für die Rechteverwaltung, der [Option "nicht weiterleiten"](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)und der [Option "nur verschlüsseln](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)" verschlüsseln.
 

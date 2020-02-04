@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Lösungsanbietern
+title: Verwalten von Partnerbeziehungen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -7,86 +7,92 @@ author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
 ms.topic: article
-ms.service: o365-administration <!-- need to figure out what this value should be -->
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce <!-- probably need to change this -->
+- commerce
 ms.custom: ''
 search.appverid:
 - MET150
-description: Sie können mit Microsoft-zertifizierten Lösungsanbietern zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten.
+description: In diesem Artikel erfahren Sie, wie Sie mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten.
 keywords: Partner, Lösungsanbieter
-ms.openlocfilehash: 341a353247635eab491eb0962273eeed09b31599
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 43965e6a245384043fb7607a37d8a831f4e0d752
+ms.sourcegitcommit: e89f4ce9a472c9c6c066d5c632e8e7b6afcc2066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594119"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41712043"
 ---
-# <a name="working-with-solution-providers-in-microsoft-store-for-business"></a>Arbeiten mit Lösungsanbietern in Microsoft Store for Business
+# <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
 
-Sie können mit Microsoft-zertifizierten Lösungsanbietern zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. Es gibt ein paar Schritte, um die Dinge einzurichten. 
+Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. Es gibt ein paar Schritte, wenn es darum geht, Dinge einzurichten.
 
-Der Vorgang geht wie folgt vor:
-- Administratoren suchen und kontaktieren einen Lösungsanbieter, indem Sie **einen Lösungsanbieter** in Microsoft Store for Business finden. 
-- Lösungsanbieter senden eine Anforderung vom Partner Center an die Kunden, um deren Lösungsanbieter zu werden.
-- Kunden akzeptieren die Einladung in Microsoft Store for Business und beginnen mit dem Lösungsanbieter zu arbeiten.
-- Kunden können Einstellungen für die Beziehung mit dem Partner in Microsoft Store for Business verwalten. 
+- Administratoren suchen und kontaktieren einen Partner mithilfe des Formulars unter <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
+- Partner senden eine e-Mail-Anforderung an Kunden, um eine Partnerbeziehung herzustellen.
+- Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit dem Partner zu arbeiten.
 
-## <a name="what-can-a-solution-provider-do-for-my-organization-or-school"></a>Was kann ein Lösungsanbieter für meine Organisation oder Schule tun?
+## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Was kann ein Partner für meine Organisation oder Schule tun?
 
-Es gibt mehrere Möglichkeiten, mit denen ein Lösungsanbieter zusammenarbeiten kann. Lösungsanbieter wählen eine dieser Lösungen aus, wenn Sie Ihre Anforderung als Partner mit Ihnen arbeiten senden.
+Es gibt verschiedene Möglichkeiten, mit denen ein Partner zusammenarbeiten kann. Basierend auf den von Ihnen angegebenen geschäftlichen Anforderungen wählen Sie einen dieser Typen aus, wenn Sie Ihre Anforderung zur Zusammenarbeit senden.
 
-| Lösungsanbieter Funktion | Beschreibung | 
-| ------ | ------------------- | 
-| Händler | Lösungsanbieter verkaufen Microsoft-Produkte in Ihrer Organisation oder Schule. |
-| Delegierter Administrator | Lösungsanbieter verwaltet Produkte und Dienste für Ihre Organisation oder Schule. In Azure Active Directory (AD) ist der Partner ein globaler Administrator für den Mandanten. Auf diese Weise können Sie Dienste wie das Erstellen von Benutzerkonten, das zuweisen und Verwalten von Lizenzen sowie das Zurücksetzen von Kennwörtern verwalten. |
-| Reseller #a0 Delegierter Administrator | Lösungsanbieter, die Microsoft-Produkte und-Dienste an Ihre Organisation oder Schule verkaufen und verwalten. |
-| Partner | Sie können Ihrem Lösungsanbieter ein Benutzerkonto in Ihrem Mandanten geben und in Ihrem Auftrag mit anderen Microsoft-Diensten arbeiten. |
-| Microsoft Products #a0 Service Agreement (MPSA)-Partner | Wenn Sie mit mehreren Lösungsanbietern über das MPSA-Programm zusammengearbeitet haben, können Sie es Partnern ermöglichen, die von einander getätigten Käufe anzuzeigen. |
-| OEM-PC-Partner | Lösungsanbieter können Geräte-IDs für PCs hochladen, die Sie [mit Autopilot verwalten](https://docs.microsoft.com/microsoft-store/add-profile-to-devices).   |
-| Branchenpartner (Linien of Business) | Lösungsanbieter können Branchen-apps speziell für Ihre Organisation oder Schule entwickeln, übermitteln und verwalten. |
+| Verbundpartnertyp | Beschreibung |
+| ------ | ------------------- |
+| Händler | Partner, die Microsoft-Produkte an Ihre Organisation oder Schule verkaufen. |
+| Delegierter Administrator | Partner, die Produkte und Dienste für Ihre Organisation oder Schule verwalten. In Azure Active Directory (AD) ist der Partner ein globaler Administrator für Ihren Mandanten. Diese Rolle ermöglicht Ihnen das Verwalten von Diensten wie das Erstellen von Benutzerkonten, das zuweisen und Verwalten von Lizenzen und das Zurücksetzen von Kennwörtern. |
+| Reseller #a0 Delegierter Administrator | Partner, die Microsoft-Produkte und-Dienste an Ihre Organisation oder Schule verkaufen und verwalten. |
+| Partner | Sie geben Ihrem Partner ein Benutzerkonto in Ihrem Mandanten und arbeiten mit anderen Microsoft-Diensten in Ihrem Auftrag zusammen. |
+| Advisor | Partner können Kennwörter zurücksetzen und Supportvorfälle für Sie verarbeiten. |
+| Microsoft Products #a0 Service Agreement (MPSA)-Partner | Wenn Sie mit mehreren Partnern über das MPSA-Programm zusammengearbeitet haben, können Sie zulassen, dass die Einkäufe voneinander angezeigt werden. |
+| OEM-PC-Partner | Partner können Geräte-IDs für PCs hochladen, die Sie [mit Autopilot verwalten](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
+| Branchenpartner (Linien of Business) | Partner können Branchen-apps entwickeln, übermitteln und verwalten, die für Ihre Organisation oder Schule spezifisch sind. |
 
-## <a name="find-a-solution-provider"></a>Suchen eines Lösungsanbieters
+## <a name="find-a-partner"></a>Partner suchen
 
-Sie können Partner im Microsoft Store for Business und Education finden. 
+1. Wechseln Sie zu <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
+2. Geben Sie Ihren Standort ein, wählen Sie Ihre Organisationsgröße aus, fügen Sie Stichwörter für den gewünschten Diensttyp hinzu, und wählen Sie dann **wechseln**aus.
+3. Wählen Sie einen oder mehrere Partner aus, und wählen Sie **ausgewählte Anbieter kontaktieren**aus.
+4. Füllen Sie das Formular aus, um Ihre geschäftlichen Anforderungen zu beschreiben, und wählen Sie dann **senden**aus.
 
-1. Melden Sie sich bei [Microsoft Store for Business](https://businessstore.microsoft.com/) oder [Microsoft Store für Bildungseinrichtungen](https://educationstore.microsoft.com/)an.
-2. Wählen Sie **Lösungsanbieter suchen**aus.
-<!---
-    ![Image shows Find a solution provider option in Microsoft Store for Business.](images/msfb-find-partner.png)
--->
-3. Verfeinern Sie die Liste, oder suchen Sie nach einem Lösungsanbieter. 
-<!---
-    ![Image shows Find a solution provider option in Microsoft Store for Business.](images/msfb-provider-list.png)
--->
-4. Wenn Sie einen Lösungsanbieter gefunden haben, mit dem Sie zusammenarbeiten möchten, klicken Sie auf **Kontakt**.
-5. Füllen Sie das Formular aus, und senden Sie es.
+Der Partner kontaktiert Sie und gibt Ihnen die Möglichkeit, mehr über diese zu erfahren. Wenn Sie sich für eine Zusammenarbeit entscheiden, erhalten Sie eine e-Mail-Einladung zum Einrichten einer Partnerbeziehung.
 
-Der Lösungsanbieter wird sich mit Ihnen in Verbindung setzen. Sie haben die Möglichkeit, mehr über diese zu erfahren. Wenn Sie sich für die Zusammenarbeit mit dem Lösungsanbieter entscheiden, erhalten Sie eine e-Mail-Einladung aus dem Partner Center. 
+## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Überprüfen und akzeptieren einer Partnerbeziehung und eines Microsoft-Kundenvertrags
 
-## <a name="work-with-a-solution-provider"></a>Arbeiten mit einem Lösungsanbieter
+Nachdem Sie einen Partner gefunden haben und sich für die Zusammenarbeit entschieden haben, erhalten Sie eine e-Mail-Einladung.
 
-Nachdem Sie einen Lösungsanbieter gefunden und sich für die Zusammenarbeit entschieden haben, erhalten Sie eine Einladung zur Zusammenarbeit im Partner Center. In Microsoft Store for Business oder Education müssen Sie die Einladung annehmen. Danach können Sie Ihre Berechtigungen verwalten.
+1. Wählen Sie in der e-Mail den Link aus, um zum Microsoft 365 Admin Center zu gelangen.
+2. Wählen Sie auf der Seite **akzeptieren #a0 Autorisieren des Vertrags** den Link für die **Microsoft-Kundenvereinbarung**aus, und lesen Sie das Dokument.
+3. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie den Vertrag gelesen haben.
+4. Wählen Sie **akzeptieren #a0 autorisieren**aus.
+5. Die Liste der Partner, mit denen Sie gerade arbeiten, wird angezeigt. Wählen Sie einen Partner aus, um Details anzuzeigen.
 
-**So akzeptieren Sie eine Einladung des Lösungsanbieters**
-1. **E-Mail-Link anschließen** – Sie erhalten eine e-Mail mit einem Link, um die Einladung des Lösungsanbieters von Ihrem Lösungsanbieter zu akzeptieren. Über den Link gelangen Sie zum Microsoft Store for Business oder Education.
-2. Einladung **annehmen** – wählen Sie bei **Annahme Partner Einladung**die Option **autorisieren** aus, um die Einladung anzunehmen, akzeptieren Sie die Bedingungen der Microsoft-Cloud-Vereinbarung, und beginnen Sie mit dem Lösungsanbieter zu arbeiten. 
-<!---
-![Image shows accepting an invitation from a solution provider in Microsoft Store for Business.](images/msft-accept-partner.png)
---> 
-## <a name="delegate-admin-privileges"></a>Delegieren von Administratorrechten
+## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Überprüfen und akzeptieren eines Microsoft-Kundenvertrags
 
-In Abhängigkeit von der vom Lösungsanbieter vorgenommenen Anforderung umfasst ein Teil der Annahme der Einladung die Zustimmung, dass delegierte Administratorrechte an den Lösungsanbieter übergeben werden. Dies geschieht, wenn die Lösungsanbieter Anforderung das fungieren als Delegierter Administrator umfasst. Weitere Informationen finden Sie unter [Delegierte Administratorrechte in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). 
+Wenn Sie bereits über einen Partner verfügen, aber noch keinen Microsoft-Kundenvertrag unterzeichnet haben, müssen Sie den Vertrag akzeptieren, bevor er Käufe tätigen oder Ihre Abonnements in Ihrem Auftrag verwalten kann.
 
-Wenn Sie keine Administratorrechte an den Lösungsanbieter delegieren möchten, müssen Sie die Einladung absagen, anstatt Sie zu akzeptieren. 
+1. Wenn Sie eine e-Mail von Ihrem Partner erhalten haben, wählen Sie den Link aus, um zum Microsoft 365 Admin Center zu wechseln, oder wechseln Sie zur Seite <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">akzeptieren des Vertrags</a> .
+2. Wählen Sie den Link für die **Microsoft-Kundenvereinbarung** aus, und lesen Sie das Dokument.
+3. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie den Vertrag gelesen haben.
+4. Wählen Sie **akzeptieren**aus.
+5. Die Liste der Partner, mit denen Sie gerade arbeiten, wird angezeigt. Wählen Sie einen Partner aus, um Details anzuzeigen.
 
-Wenn Sie Administratorrechte an einen Lösungsanbieter delegieren, können Sie diesen später entfernen. 
+## <a name="remove-partner-admin-privileges"></a>Entfernen von Partneradministrator rechten
 
-**So entfernen Sie Stellvertretungs-Administratorberechtigungen**
-1. Melden Sie sich bei [Microsoft Store for Business](https://businessstore.microsoft.com/) oder [Microsoft Store für Bildungseinrichtungen](https://educationstore.microsoft.com/)an.
-2. **Partner** auswählen
-3. Wählen Sie den Partner aus, den Sie verwalten möchten.
-4. Wählen Sie **Entfernen Delegierter Berechtigungen**aus. 
+Je nach Anforderung des Partners umfasst ein Teil der Annahme der Einladung, dass delegierte Administratorprivilegien für diese erteilt werden. Weitere Informationen finden Sie unter [Delegierte Administratorrechte in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-Der Lösungsanbieter kann weiterhin mit Ihnen zusammenarbeiten, beispielsweise als Reseller. 
+Wenn Sie keine Administratorrechte an den Partner delegieren möchten, können Sie die Einladung abbrechen, anstatt Sie zu akzeptieren.
+
+Wenn Sie Administratorrechte an einen Partner delegieren, können Sie diese Berechtigungen jederzeit entfernen. Durch das Entfernen von Administratorrechten wird die Partnerbeziehung nicht entfernt. Sie können auch weiterhin mit Ihnen zusammenarbeiten, beispielsweise als Reseller.
+
+1. Wechseln Sie im Admin Center zur Seite **Rechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
+2. Wählen Sie auf der Seite **Abrechnungskonten** die Registerkarte **Partner Beziehungen** aus.
+3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
+4. Wählen Sie auf der Seite Partner die Option **Administratorrollen entfernen**aus.
+
+## <a name="delete-a-partner-relationship"></a>Löschen einer Partnerbeziehung
+
+Wenn Sie entscheiden, dass Sie nicht mehr mit einem Partner zusammenarbeiten möchten, können Sie die Beziehung beenden. Sie können jedoch nur Beziehungen löschen, bei denen es sich bei dem Partner entweder um einen delegierten Administrator oder einen Berater handelt. Wenden Sie sich für alle anderen Partnertypen an Ihren Partner, um die Beziehung zu beenden.
+
+1. Wechseln Sie im Admin Center zur Seite **Rechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
+2. Wählen Sie auf der Seite **Abrechnungskonten** die Registerkarte **Partner Beziehungen** aus.
+3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
+4. Wählen Sie auf der Seite Partner Detail die Option **Partner löschen**aus.
