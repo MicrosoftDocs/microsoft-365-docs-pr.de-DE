@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598922"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678935"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -31,13 +31,9 @@ Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert sic
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
-1. [Melden Sie sich bei Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+1. Öffnen Sie das Office 365 Security #a0 Compliance Center <https://protection.office.com>unter.
 
-2. Wählen Sie das Symbol für das App-Startfeld ![Symbol für Office 365-App-Startfeld](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) in der oberen linken Ecke und dann **Administrator** aus.
-
-3. Erweitern Sie in der linken oberen Navigationsleiste **Admin Center** , und wählen Sie **Sicherheits #a0 Kompatibilität**aus.
-
-4. Erweitern Sie auf der Seite **Sicherheit #a0 Kompatibilität** , die geöffnet wird, den Eintrag Nachrichten **Fluss**, und wählen Sie **Nachrichtenablaufverfolgung**aus.
+2. Erweitern Sie Nachrichten **Fluss**, und wählen Sie dann **Nachrichtenablaufverfolgung**aus.
 
 ## <a name="message-trace-page"></a>Seite "Nachrichtenablaufverfolgung"
 
@@ -234,7 +230,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias*@*Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -272,13 +268,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
   - `AGENT`
 
@@ -296,7 +292,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit `EXPAND` `REDIRECT`-,- `RESOLVE` und-Ereignissen verwendet, um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -314,7 +310,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Hour `mm` , = Minute `ss` , = Second `fff` , = Brüche einer Sekunde, und `Z` `Zulu`eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 
