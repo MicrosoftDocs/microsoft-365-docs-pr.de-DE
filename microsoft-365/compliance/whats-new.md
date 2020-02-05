@@ -17,19 +17,20 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: 78c2d2da6c8925e86bcba6c498682b72c9292922
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597182"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774201"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
 Wir fügen dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Sehen Sie sich unten an, was heute für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlichen Geschwindigkeiten bereit gesetzt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich der [zielgerichteten Version](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)hinzuzufügen.
 
 > [!TIP]
-> Möchten Sie wissen, was in anderen Admin Center passiert? Lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Neuerungen im SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+> Möchten Sie wissen, was in anderen Admin Center passiert? Lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Neuerungen im SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+Und besuchen Sie den [Microsoft 365-Fahrplan](https://www.microsoft.com/en-us/microsoft-365/roadmap) , um mehr über die Features von Microsoft 365 zu erfahren, die gestartet wurden, sich ausrollen, sich in der Entwicklung befinden, abgesagt oder bereits veröffentlicht wurden.
 
 ## <a name="november--december-2019"></a>November #a0 Dezember 2019
 
@@ -79,7 +80,7 @@ Wenn Sie das Office 365 Security #a0 Compliance Center für Ihre Compliance-Anfo
 |Verhinderung von Datenverlust|Verhinderung von Datenverlust <br/> https://protection.office.com/datalossprevention |Verhinderung von Datenverlust <br/> https://compliance.microsoft.com/datalossprevention |[Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)|
 |Datensubjektanforderungen |Datenschutz #a0 Datensubjekt Anforderungen <br/> https://protection.office.com/dsrcases |Datensubjektanforderungen <br/> https://compliance.microsoft.com/datasubjectrequest |[Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery #a0 eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery #a0 Kern <br/> https://compliance.microsoft.com/classicediscovery |[Verwalten von eDiscovery-Fällen](ediscovery-cases.md) |
-|Ereignisse|> Ereignisse für die Datensatzverwaltung <br/> https://protection.office.com/events |Registerkarte "Datensatzverwaltung #a0 Ereignisse" <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md)|
+|Veranstaltungen|> Ereignisse für die Datensatzverwaltung <br/> https://protection.office.com/events |Registerkarte "Datensatzverwaltung #a0 Ereignisse" <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md)|
 |Dateiplan|Datensatzverwaltung #a0 Dateiplan <br/> https://protection.office.com/fileplan |Registerkarte "Datensatzverwaltung #a0 Dateiplan" <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Übersicht über den Dateiplan-Manager](file-plan-manager.md)|
 |Importieren von PST-Dateien|Information Governance #a0 Importieren von PST-Dateien <br/> https://protection.office.com/importV2 |Registerkarte "Informationssteuerung" #a0 "Importieren" <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Übersicht über das Importieren der PST-Dateien Ihrer Organisation](importing-pst-files-to-office-365.md)|
 |Bezeichnungs Aktivitäts-Explorer|Information Governance #a0 Bezeichnungs Aktivitäts-Explorer <br/> https://protection.office.com/labelexplorer |Registerkarte "Datenklassifizierung #a0 Aktivitäts-Explorer" <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten mit beschrifteten Inhalten (Vorschau)](data-classification-activity-explorer.md)|

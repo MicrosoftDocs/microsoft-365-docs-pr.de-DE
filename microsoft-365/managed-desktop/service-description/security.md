@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243936"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774231"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicherheit in Microsoft Managed Desktop
 
@@ -19,25 +19,12 @@ ms.locfileid: "36243936"
 
 Microsoft Managed Desktop verwendet mehrere Microsoft-Technologien, um die Sicherung verwalteter Geräte und Daten zu unterstützen. Insbesondere gilt: 
 
-- [Datensicherheit](#data-security) -Arten von Daten, die von Microsoft Managed Desktop erfasst werden und wo Sie sicher gespeichert werden
+
 - [Gerätesicherheit](#device-security) – Sicherheit und Schutz auf Microsoft Managed Desktop-Geräten
 - [Identitäts-und Zugriffsverwaltung](#identity-and-access-management) – Verwalten der sicheren Verwendung von Geräten über Azure Active Directory Identitätsdienste
 - [Netzwerksicherheit](#network-security) – empfohlene Lösung und Einstellungen für VPN-Informationen und Microsoft Managed Desktop
 - [Informationssicherheit](#information-security) – optional verfügbare Dienste für den weiteren Schutz vertraulicher Informationen 
 
-## <a name="data-security"></a>Datensicherheit
-
-Daten, die von Kundenmandanten gesammelt werden (wodurch Microsoft Managed Desktop-IT-Dienste und-Vorgänge aktiviert wird), werden in Azure SQL-Datenbanken in dem Microsoft-Mandanten gespeichert, der in den Vereinigten Staaten von Amerika gehostet wird.
-
-Weitere Informationen finden Sie unter [Microsoft Azure Security](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-Nachfolgend finden Sie die Datentypen, die von Ihrem Mandanten übertragen werden:
-
-- Geräteupdate-, Nutzungs-und Zuverlässigkeitsdaten
-- App-Bereitstellungs-und Zuverlässigkeitsdaten
-- Update-und Sicherheitsrichtlinien Bereitstellungsdaten
-- Benutzern zugewiesenen Geräten
-- Sicherheitsprotokolle von Ihrem Mandanten im Zusammenhang mit den Konten, die von Microsoft Managed Desktop zum Verwalten des Diensts verwendet wurden
 
 
 
