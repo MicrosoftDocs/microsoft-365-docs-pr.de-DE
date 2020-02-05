@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Aufbewahrungsrichtlinien
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558592"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774221"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -54,7 +56,9 @@ Sie erstellen und verwalten Aufbewahrungsrichtlinien auf der:
 
 - Seite **Richtlinien** im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
 - Seite **Aufbewahrung** unter **Informationsgovernance** im [Office 365 Security&amp; Compliance Center](https://protection.office.com/).
-  
+
+**Wenn Sie die Möglichkeit haben möchten, Inhalte zu überprüfen, bevor sie endgültig gelöscht werden, **sollten Sie die Verwendung von [Aufbewahrungsbezeichnungen](labels.md) anstelle einer Aufbewahrungsrichtlinie in Betracht ziehen. Wenn Sie eine Aufbewahrungsbezeichnung erstellen, können Sie eine [Löschungsprüfung](disposition-reviews.md) einrichten, um den Inhalt am Ende der Aufbewahrungsfrist zu überprüfen.
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten
 
 Wenn Sie einen Speicherort, z. B. eine Website oder ein Postfach in eine Aufbewahrungsrichtlinie einschließen, verbleibt der Inhalt an seinem ursprünglichen Speicherort. Benutzer können weiter mit ihren Dokumenten oder E-Mails arbeiten, als ob sich nichts geändert hätte. Wenn sie jedoch Inhalte bearbeiten oder löschen, die von der Richtlinie abgedeckt sind, wird eine Kopie des Inhalts in seinem Zustand zum Zeitpunkt der Anwendung der Richtlinie beibehalten.
