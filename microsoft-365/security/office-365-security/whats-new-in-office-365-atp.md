@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 98a658febe6c20904f82fb2f152bb6cc115cce49
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597956"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784702"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -49,7 +49,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 - [Integration in Office 365 automatische ATP-Untersuchung und Antwortereignisse mithilfe der Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP-Plan 2)
 
-- [Anzeigen der e-Mail-Kopfzeilen und Herunterladen des e-Mail-Texts](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (Office 365 ATP-Plan 1 oder Plan 2)
+- [Anzeigen der e-Mail-Kopfzeilen und Herunterladen des e-Mail-Texts](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP-Plan 1 oder Plan 2)
 
 ## <a name="august-2019"></a>August 2019
 
