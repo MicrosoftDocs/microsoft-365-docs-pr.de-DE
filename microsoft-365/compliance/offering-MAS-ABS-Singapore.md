@@ -5,18 +5,21 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e8755b89184b52b128e2f3c1060db6cf32e2f9e4
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 2dafb9d99e1042b1cd810d35ed726fad72c7116a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859615"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602182"
 ---
 # <a name="monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>Die Währungsbehörde von Singapur (Monetary Authority of Singapore, MAS) und die Bankvereinigung von Singapur (Association of Banks in Singapore, ABS)
 

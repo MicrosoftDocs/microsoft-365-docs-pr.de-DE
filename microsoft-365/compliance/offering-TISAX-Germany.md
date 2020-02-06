@@ -5,18 +5,21 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89656556e4cba8fca12708e558aef3254c37bfba
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3c7d3c6a710141972c1e54a7c67bfccd59c378d6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859455"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602012"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Trusted Information Security Assessment Exchange (TISAX) Deutschland
 
@@ -26,7 +29,7 @@ Um die immer weiter zunehmende Vernetzung in der Automobilindustrie zu sichern, 
 
 VDA-Mitgliedsunternehmen nutzten dieses Instrument sowohl für interne Sicherheitsbewertungen als auch für Bewertungen von Lieferanten, Dienstleistern und anderen Partnern, die sensible Informationen in ihrem Auftrag verarbeiten. Da diese Auswertungen jedoch von jedem Unternehmen einzeln durchgeführt wurden, verursachte dies eine Belastung der Partner und doppelten Aufwand der VDA-Mitglieder.
 
-Um die Bewertungen zu rationalisieren, hat der VDA einen gemeinsamen Bewertungs- und Austauschmechanismus, den [Trusted Information Security Assessment Exchange](https://www.enx.com/tisax/) (TISAX), eingerichtet. Der Katalog der zugrunde liegenden TISAX-Anforderungen, Fragebogen zur Überprüfung der Bewertung der Informationssicherheit und des Informationssicherheitsmanagements, Vers. 4 ([Deutsch](https://www.vda.de/de/services/Publikationen.html) und [Englisch](https://www.vda.de/en/services/Publications.html)), bietet gemeinsame Standards für IT-Sicherheitsmaßnahmen und ermöglicht es in TISAX registrierten Unternehmen, die Ergebnisse der Bewertung auszutauschen. Der VDA beauftragte einen neutralen Drittanbieter, die [ENX Association](https://portal.enx.com/de-DE/en-en/TISAX/tisaxassessmentresults/), mit der Implementierung von TISAX. In diesem Zusammenhang akkreditiert sie Prüfungsanbieter (Prüfer), hält die Akkreditierungskriterien und Bewertungsanforderungen ein und überwacht die Qualität der Umsetzung und der Bewertungsergebnisse.
+Um die Bewertungen zu rationalisieren, hat der VDA einen gemeinsamen Bewertungs- und Austauschmechanismus, den [Trusted Information Security Assessment Exchange](https://www.enx.com/tisax/) (TISAX), eingerichtet. Der Katalog der zugrunde liegenden TISAX-Anforderungen, Fragebogen zur Überprüfung der Bewertung der Informationssicherheit und des Informationssicherheitsmanagements, Vers. 4 ([Deutsch](https://www.vda.de/de/services/Publikationen.html) und [Englisch](https://www.vda.de/en/services/Publications.html)), bietet gemeinsame Standards für IT-Sicherheitsmaßnahmen und ermöglicht es in TISAX registrierten Unternehmen, die Ergebnisse der Bewertung auszutauschen. Der VDA beauftragte einen neutralen Drittanbieter, die [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/), mit der Implementierung von TISAX. In diesem Zusammenhang akkreditiert sie Prüfungsanbieter (Prüfer), hält die Akkreditierungskriterien und Bewertungsanforderungen ein und überwacht die Qualität der Umsetzung und der Bewertungsergebnisse.
 
 ## <a name="microsoft-and-tisax"></a>Microsoft und TISAX
 
@@ -50,7 +53,7 @@ Die TISAX-Bewertung konzentrierte sich auf die folgenden Microsoft-Dienste:
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
-Branchenvertreter, die bei ENX registriert sind, finden Details zur TISAX-Bewertung von Microsoft Cloud Services im Leistungsumfang auf dem [ENX-Portal](https://portal.enx.com/de-DE/). Um nach Microsoft-Bewertungsergebnissen zu suchen, melden Sie sich bei Ihrem bestehenden TISAX-Konto an und suchen Sie nach Microsoft. Alternativ können Sie Ihre Suche auch über die folgenden Informationen einschränken:
+Branchenvertreter, die bei ENX registriert sind, finden Details zur TISAX-Bewertung von Microsoft Cloud Services im Leistungsumfang auf dem [ENX-Portal](https://portal.enx.com/en-US/). Um nach Microsoft-Bewertungsergebnissen zu suchen, melden Sie sich bei Ihrem bestehenden TISAX-Konto an und suchen Sie nach Microsoft. Alternativ können Sie Ihre Suche auch über die folgenden Informationen einschränken:
 
 - Microsoft Participant ID: PGKYK0
 - Microsoft Corp. EU Assessment Level (AL) 3 scope ID: SY869K
@@ -72,7 +75,7 @@ ENX stellt die Zertifizierungsbestätigung nur registrierten Branchenvertretern 
 
 ## <a name="resources"></a>Ressourcen
 
-- [TISAX häufig gestellte Fragen](https://portal.enx.com/de-DE/TISAX/faqs/)
+- [TISAX häufig gestellte Fragen](https://portal.enx.com/en-US/TISAX/faqs/)
 - [Volkswagen und Microsoft kündigen strategische Partnerschaft an](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [Office in Ihrem Auto: BMW bietet Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (Deutsch)
 - [Fahrzeuge für Langstreckenfahrten vernetzen: Daimler](https://customers.microsoft.com/story/daimlertrucks)

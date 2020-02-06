@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c872aa647496dcd81031418c71f2bcc6728cadfa
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558542"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602262"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 – Standard für Business Continuity Management 
 

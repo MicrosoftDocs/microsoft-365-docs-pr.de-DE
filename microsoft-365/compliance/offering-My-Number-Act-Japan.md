@@ -5,18 +5,21 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859565"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602132"
 ---
 # <a name="my-number-act-japan"></a>„My Number“-Gesetz (Japan)
 
@@ -70,7 +73,7 @@ Microsoft Business Cloud Services unterstützt daher die Vorschriften des „My 
 ## <a name="resources"></a>Ressourcen
 
 - [Azure-Compliance und die Sicherheits- und Datenschutzanforderungen Japans](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Datenschutz bei Microsoft](https://privacy.microsoft.com/de-DE/)
+- [Datenschutz bei Microsoft](https://privacy.microsoft.com/en-US/)
 - [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement)
 - [Berücksichtigung des Datenschutzes in der Cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

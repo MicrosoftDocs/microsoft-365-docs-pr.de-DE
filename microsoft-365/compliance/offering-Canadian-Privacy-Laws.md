@@ -5,18 +5,21 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 22703f7c9589a246464b16a3088036a858f59475
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859995"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602572"
 ---
 # <a name="canadian-privacy-laws"></a>Kanadische Datenschutzgesetze
 
@@ -24,7 +27,7 @@ ms.locfileid: "39859995"
 
 Die kanadischen Datenschutzgesetze wurden erlassen, um die Privatsphäre von Personen zu schützen und ihnen den Zugriff auf die über ihre Person gesammelten Daten zu ermöglichen. Das [Office of the Privacy Commissioner of Canada](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPCC) beaufsichtigt die Einhaltung dieser Gesetze.
 
-Das [Datenschutzgesetz](https://privacy.microsoft.com/de-DE/#heading-0-0-2-1) regelt, wie Bundesbehörden personenbezogene Informationen, einschließlich der Daten von Bundesbediensteten, sammeln, nutzen und offen legen. Das [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) enthält die entsprechenden Regelungen für kommerzielle gewinnorientierte Unternehmen und die Mitarbeiter von staatlich regulierten Unternehmen wie Banken, Fluggesellschaften und Telekommunikationsunternehmen.
+Das [Datenschutzgesetz](https://privacy.microsoft.com/en-US/#heading-0-0-2-1) regelt, wie Bundesbehörden personenbezogene Informationen, einschließlich der Daten von Bundesbediensteten, sammeln, nutzen und offen legen. Das [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) enthält die entsprechenden Regelungen für kommerzielle gewinnorientierte Unternehmen und die Mitarbeiter von staatlich regulierten Unternehmen wie Banken, Fluggesellschaften und Telekommunikationsunternehmen.
 
 Das PIPEA basiert auf 10 [fairen Informationsprinzipien](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/), die Unternehmen befolgen müssen, um die Anforderungen zu erfüllen. Aus dem Grundsatz der Einwilligung ergibt sich beispielsweise die PIPEDA-Anforderung, dass Organisationen die Einwilligung einer Person einholen müssen, um deren persönliche Daten sammeln und verwenden zu dürfen. Individuen haben das Recht, sowohl auf diese persönlichen Daten zuzugreifen als auch deren Richtigkeit zu hinterfragen (basierend auf dem Grundsatz "Individueller Zugang"). Das Prinzip "Zu Zwecken der Identifizierung" führt zu der Regelung, dass personenbezogene Daten nur für den vereinbarten Zwecken verwendet werden dürfen.
 

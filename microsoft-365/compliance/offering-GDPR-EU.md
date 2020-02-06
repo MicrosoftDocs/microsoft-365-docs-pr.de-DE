@@ -5,6 +5,8 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 7b6489f146da3268190a5c56fda6a73ea0e0d151
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558522"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602342"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>DSGVO (EU-Datenschutz-Grundverordnung)
 

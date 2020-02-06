@@ -5,18 +5,21 @@ keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6e9aea06e6479a0aa4ec83d35d1fc8c7704e8b0f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859905"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602472"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>EU-US und Swiss-US Privacy Shield Frameworks
 
@@ -79,7 +82,7 @@ Beim Privacy Shield handelt es sich nicht um einen Mechanismus zur Einhaltung de
 
 **Wie behandelt Microsoft Beschwerden im Rahmen des EU-US und Swiss-US Privacy Shield?**
 
-Wenn Sie eine Beschwerde im Zusammenhang mit dem Privacy Shield haben, teilen Sie uns dies bitte über den Abschnitt [Kontakt](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule) der [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) mit. Bei allen Beschwerden, die Sie nicht direkt mit Microsoft lösen können, arbeiten wir mit Datenschutzbehörden in der EU zusammen und befolgen deren Ratschläge. Kontaktieren Sie uns, um an die relevanten Datenschutzbehörden weitergeleitet zu werden. Wie in den [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) erläutert, können Sie die Vorteile einer verbindlichen Schiedsklausel nutzen, um Beschwerden zu behandeln, die nicht anderweitig gelöst werden konnten.
+Wenn Sie eine Beschwerde im Zusammenhang mit dem Privacy Shield haben, teilen Sie uns dies bitte über den Abschnitt [Kontakt](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule) der [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) mit. Bei allen Beschwerden, die Sie nicht direkt mit Microsoft lösen können, arbeiten wir mit Datenschutzbehörden in der EU zusammen und befolgen deren Ratschläge. Kontaktieren Sie uns, um an die relevanten Datenschutzbehörden weitergeleitet zu werden. Wie in den [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) erläutert, können Sie die Vorteile einer verbindlichen Schiedsklausel nutzen, um Beschwerden zu behandeln, die nicht anderweitig gelöst werden konnten.
 
 ## <a name="resources"></a>Ressourcen
 
