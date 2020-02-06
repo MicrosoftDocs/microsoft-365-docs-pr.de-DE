@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: Konfigurieren von Privileged Access Management
           href: privileged-access-management-configuration.md
-    - name: Kundenschlüssel
-      items:
-        - name: Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
-          href: controlling-your-data-using-customer-key.md
-        - name: Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
-          href: service-encryption-with-customer-key-faq.md
     - name: Schutz von Benutzer- und Gerätezugriff
       href: protect-access-to-data-and-services.md
     - name: Kunden-Lockbox
@@ -85,7 +79,7 @@
       items:
         - name: Erstellen und Veröffentlichen von Vertraulichkeitsbezeichnungen
           href: create-sensitivity-labels.md
-        - name: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
+        - name: Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivitäts Bezeichnungen zum Anwenden der Verschlüsselung
           href: encryption-sensitivity-labels.md
         - name: Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
           href: apply-sensitivity-label-automatically.md
@@ -150,6 +144,18 @@
           href: document-fingerprinting.md
         - name: DLP-Funktionen für vertrauliche Informationen
           href: what-the-dlp-functions-look-for.md
+    - name: Kundenschlüssel
+      items:
+        - name: Dienst Verschlüsselung mit Kundenschlüssel in Office 365
+          href: customer-key-overview.md
+        - name: Einrichten des Kunden Schlüssels für Office 365
+          href: customer-key-set-up.md
+        - name: Verwalten des Kunden Schlüssels für Office 365
+          href: customer-key-manage.md
+        - name: Rollen oder Drehen eines Kunden Schlüssels oder eines Verfügbarkeits Schlüssels
+          href: customer-key-availability-key-roll.md
+        - name: Informationen zum Verfügbarkeits Schlüssel für Office 365 Kundenschlüssel
+          href: customer-key-availability-key-understand.md
     - name: E-Mail-Verschlüsselung
       href: email-encryption.md
       items:
@@ -309,7 +315,7 @@
               href: view-label-activity-for-documents.md
             - name: Anzeigen der Data Governance-Berichte
               href: view-the-data-governance-reports.md
-        - name: Ereignisse
+        - name: Veranstaltungen
           items:
             - name: Ereignisbasierte Aufbewahrung
               href: event-driven-retention.md

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9371429caedfe2081331fab1aebbe0e1ec761e81
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661971"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784692"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Konfigurieren der Kommunikations Kompatibilität in Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "41661971"
 
 Verwenden Sie Kommunikationsrichtlinien zur Erfassung von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zur Überwachung der Kommunikation in Ihrer Organisation mithilfe von Kommunikationsrichtlinien finden Sie unter [Communication Compliance Policies in Microsoft 365](communication-compliance.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie mit der Kommunikation Compliance beginnen, sollten Sie Ihr Microsoft 365-Abonnement bestätigen. Benutzer, die in Kommunikations Konformitätsrichtlinien enthalten sind, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein.
 
@@ -67,7 +67,14 @@ Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance 
 
 Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen im Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## <a name="step-2-optional-set-up-groups-for-communication-compliance"></a>Schritt 2 (optional): Einrichten von Gruppen für die Kommunikations Kompatibilität
+## <a name="step-2-required-enable-the-office-365-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Office 365 Überwachungsprotokolls
+
+Für die Kommunikations Kompatibilität müssen Überwachungsprotokolle Warnungen anzeigen und von den Prüfern vorgenommene Korrekturaktionen nachverfolgen. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer definierten Organisationsrichtlinie zugeordnet sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert.
+
+Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
+
+
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Schritt 3 (optional): Einrichten von Gruppen für die Kommunikations Kompatibilität
 
  Wenn Sie eine Konformitätsrichtlinie für die Kommunikation erstellen, definieren Sie, wer Ihre Kommunikation überprüft hat und wer Prüfungen durchführt. In der Richtlinie verwenden Sie e-Mail-Adressen, um Personen oder Gruppen von Personen zu identifizieren. Um das Setup zu vereinfachen, können Sie Gruppen für Personen erstellen, die Ihre Kommunikation überprüft haben, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überwachen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
@@ -86,7 +93,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 - [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Übersicht über Office 365 Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-3-required-create-a-communication-compliance-policy"></a>Schritt 3 (erforderlich): Erstellen einer Kommunikations Konformitätsrichtlinie
+## <a name="step-4-required-create-a-communication-compliance-policy"></a>Schritt 4 (erforderlich): Erstellen einer Kommunikations Konformitätsrichtlinie
   
 1. Melden Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
@@ -120,7 +127,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 6. Die Seite **Ihre Richtlinie wurde erstellt** wird mit Richtlinien angezeigt, wenn die Richtlinie aktiviert wird und welche Kommunikation aufgezeichnet wird.
 
-## <a name="step-4-optional-create-employee-notice-templates"></a>Schritt 4 (optional): Erstellen von Notiz Vorlagen für Mitarbeiter
+## <a name="step-5-optional-create-employee-notice-templates"></a>Schritt 5 (optional): Erstellen von Notiz Vorlagen für Mitarbeiter
 
 Wenn Sie die Möglichkeit haben möchten, auf eine Richtlinien Warnung zu reagieren, indem Sie eine Erinnerungs Benachrichtigung an den zugeordneten Mitarbeiter senden, müssen Sie in Ihrer Organisation mindestens eine Notice-Vorlage erstellen. Die Notiz Vorlagenfelder können bearbeitet werden, bevor Sie als Teil des Warnungs Korrekturprozesses gesendet werden, und es wird empfohlen, eine benutzerdefinierte Benachrichtigungsvorlage für jede Kommunikations Konformitätsrichtlinie zu erstellen.
 
@@ -140,7 +147,7 @@ Wenn Sie die Möglichkeit haben möchten, auf eine Richtlinien Warnung zu reagie
 
 5. Wählen Sie **Speichern** aus, um die Benachrichtigungsvorlage zu erstellen und zu speichern.
 
-## <a name="step-5-optional-test-your-communication-compliance-policy"></a>Schritt 5 (optional): Testen der Konformitätsrichtlinie für die Kommunikation
+## <a name="step-6-optional-test-your-communication-compliance-policy"></a>Schritt 6 (optional): Testen der Konformitätsrichtlinie für die Kommunikation
 
 Nachdem Sie eine Kommunikations Konformitätsrichtlinie erstellt haben, empfiehlt es sich, diese zu testen, um sicherzustellen, dass die von Ihnen definierten Bedingungen von der Richtlinie ordnungsgemäß erzwungen werden. Möglicherweise möchten Sie auch [Ihre Datenverlust Verhinderung (DLP)-Richtlinien testen](create-test-tune-dlp-policy.md) , wenn ihre Kommunikations Konformitätsrichtlinien vertrauliche Informationstypen enthalten. Stellen Sie sicher, dass Ihre Richtlinien Zeit zur Aktivierung geben, damit die zu testende Kommunikation erfasst wird.
 
@@ -155,11 +162,3 @@ Führen Sie die folgenden Schritte aus, um die Konformitätsrichtlinie für Komm
 3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikations Konformitätsrichtlinie festgelegt ist. Navigieren Sie zu **Kommunikation Compliance** > **Alerts** , um die Warnungen für Ihre Richtlinien anzuzeigen.
 
 4. Beheben Sie die Warnung mithilfe der Korrektur Steuerelemente, und stellen Sie sicher, dass die Warnung ordnungsgemäß aufgelöst wurde.
-
-## <a name="step-6-optional-enable-auditing-for-your-communication-compliance-policies"></a>Schritt 6 (optional): Aktivieren der Überwachung für Ihre Kommunikationsrichtlinien
-
-Nachdem Sie Ihre Richtlinien getestet haben, können Sie die Überwachung aktivieren, damit Aktivitäten im Zusammenhang mit der Kommunikation Compliance-Verwaltung aufgezeichnet werden. Bei dieser Überwachung kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert.
-
-Wenn die Überwachung aktiviert ist, verfügen Kommunikationsrichtlinien zur Konformitätsüberwachung über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Sie können das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie verwenden, um eine Überwachungsdatei zu generieren oder Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll anzuzeigen, wenn die Überwachung aktiviert ist.
-
-Klicken Sie zum Aktivieren der Überwachung auf der Seite **Überwachungsprotokoll Suche** im Office 365 Security #a0 Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . Wird dieser Link nicht angezeigt, wurde die Überprüfung für Ihre Organisation bereits aktiviert. Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zum Überwachungsprotokoll finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).

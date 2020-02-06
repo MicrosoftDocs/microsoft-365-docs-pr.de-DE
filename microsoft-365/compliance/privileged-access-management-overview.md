@@ -17,19 +17,19 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über die Verwaltung privilegierter Zugriffsrechte in Office 365
-ms.openlocfilehash: 0c9d8ba22f57c7f6a576f1995e8df92be7478073
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29436c9f647de2844f95f05e66b3b6c05527352b
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597732"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784662"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privileged Access Management in Office 365
 
 > [!IMPORTANT]
 > In diesem Thema werden Bereitstellungs-und Konfigurationsanleitungen für Features behandelt, die derzeit in Office 365 E5 und Advanced Compliance SKUs verfügbar sind.
 
-Die privilegierte Zugriffsverwaltung ermöglicht eine granulare Zugriffssteuerung über privilegierte Verwaltungsaufgaben in Office 365. Damit können Sie Ihre Organisation vor Verstößen schützen, die vorhandene privilegierte Administratorkonten mit einem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden. Für die privilegierte Zugriffsverwaltung müssen Benutzer Just-in-Time-Zugriff anfordern, um erhöhte und privilegierte Aufgaben über einen umfangreichen und zeitgebundenen Genehmigungsworkflow abzuschließen. Dadurch erhalten Benutzer einfach genug Zugriff, um die Aufgabe zur Hand zu haben, ohne dass vertrauliche Daten oder wichtige Konfigurationseinstellungen gefährdet werden. Durch die Aktivierung der privilegierten Zugriffsverwaltung in Office 365 kann Ihre Organisation mit NULL stehenden rechten arbeiten und eine Verteidigungsstufe gegenständige administrative Zugriffs Sicherheitsrisiken bieten.
+Die privilegierte Zugriffsverwaltung ermöglicht eine granulare Zugriffssteuerung über privilegierte Verwaltungsaufgaben in Office 365. Damit können Sie Ihre Organisation vor Verstößen schützen, die vorhandene privilegierte Administratorkonten mit einem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden. Für die privilegierte Zugriffsverwaltung müssen Benutzer Just-in-Time-Zugriff anfordern, um erhöhte und privilegierte Aufgaben über einen umfangreichen und zeitgebundenen Genehmigungsworkflow abzuschließen. Mit dieser Konfiguration können Benutzer einfach genug auf die Aufgabe zugreifen, ohne dass vertrauliche Daten oder wichtige Konfigurationseinstellungen gefährdet werden. Durch die Aktivierung der privilegierten Zugriffsverwaltung in Office 365 kann Ihre Organisation mit NULL stehenden rechten arbeiten und eine Verteidigungsstufe gegenständige administrative Zugriffs Sicherheitsrisiken bieten.
 
 Eine kurze Übersicht über den integrierten Workflow für die integrierte kundensperre und den privilegierten Zugriffs Verwaltungsdienst finden Sie [in dieser Customer Lockbox und der privilegierten Zugriffsverwaltung in Office 365 Video](https://go.microsoft.com/fwlink/?linkid=2066800).
 
@@ -76,18 +76,23 @@ Für eine genehmigte Anforderung wird die Aufgabe von der Exchange-Verwaltungs-R
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Welche SKUs können in Office 365 privilegierten Zugriff verwenden?
+
 Für Kunden mit Office 365 E5-und Advanced Compliance-SKUs steht eine privilegierte Zugriffsverwaltung zur Verfügung.
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>Wann unterstützt der privilegierte Zugriff Office 365 Arbeitsauslastungen jenseits von Exchange?
+
 Die privilegierte Zugriffsverwaltung steht in Kürze in anderen Office 365 Arbeitsauslastungen zur Verfügung. Weitere Informationen finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) .
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>Meine Organisation benötigt mehr als 30 privilegierte Zugriffsrichtlinien, wird dieser Grenzwert erhöht?
+
 Ja, das Erhöhen der aktuellen Grenze von 30 privilegierten Zugriffsrichtlinien pro Office 365 Organisation erfolgt in der Feature-Roadmap.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Muss ich ein globaler Administrator sein, um den privilegierten Zugriff in Office 365 zu verwalten?
-Nein, Sie müssen die Rolle "Exchange-Rollenverwaltung" Konten zuweisen, die den privilegierten Zugriff in Office 365 verwalten. Wenn Sie die Rolle "Rollenverwaltung" nicht als eigenständige Konto Berechtigung konfigurieren möchten, umfasst die globale Administrator Rolle standardmäßig diese Rolle und kann den privilegierten Zugriff verwalten. Benutzer, die in der Gruppe einer genehmigenden Person enthalten sind, müssen kein globaler Administrator sein, oder es ist die Rolle "Rollenverwaltung" zum Überprüfen und Genehmigen von Anforderungen zugewiesen.
+
+Nein, Sie müssen die Rolle "Exchange-Rollenverwaltung" Konten zuweisen, die den privilegierten Zugriff in Office 365 verwalten. Wenn Sie die Rolle "Rollenverwaltung" nicht als eigenständige Konto Berechtigung konfigurieren möchten, umfasst die globale Administrator Rolle standardmäßig diese Rolle und kann den privilegierten Zugriff verwalten. Benutzer, die in der Gruppe einer genehmigenden Person enthalten sind, müssen kein globaler Administrator sein oder die Rolle "Rollenverwaltung" zugewiesen haben, um Anforderungen mit PowerShell zu überprüfen und zu genehmigen.
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Wie wird die privilegierte Zugriffsverwaltung in Office 365 im Zusammenhang mit Kunden-Lockbox?
+
 [Kunden-Lockbox](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) ermöglicht eine Ebene der Zugriffssteuerung für Organisationen, wenn Microsoft auf Daten zugreift. Die privilegierte Zugriffsverwaltung in Office 365 ermöglicht eine granulare Zugriffssteuerung in einer Organisation für alle Office 365 privilegierten Aufgaben.
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?

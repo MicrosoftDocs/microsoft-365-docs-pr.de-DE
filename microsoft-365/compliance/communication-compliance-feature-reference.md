@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 02534cf9dcd342f0872e755aec622f8028b235f8
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661961"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784672"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -185,7 +185,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder definieren können:
 
-|**Field**|**Required**| **Details** |
+|**Feld**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht an den Mitarbeiter mit einer Richtlinienübereinstimmung senden, die aus dem Active Directory für Ihr Abonnement ausgewählt wird. |
@@ -225,9 +225,9 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloonmberg usw. |
 | **Empfängerdomänen** | Die Domäne, an die die Nachricht gesendet wurde. Diese Domäne ist normalerweise Ihre Microsoft 365-Abonnement Domäne standardmäßig. |
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
-| **Absender** | Die Person, die die Nachricht gesendet hat. |
+| **Sender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
-| **Größe** | Die Größe der Nachricht in KB. |
+| **Size** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |
@@ -273,11 +273,11 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Bei diesen Informationen kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
 
 >[!Important]
->Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
+>Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [Aktivieren des Office 365 Überwachungsprotokolls](communication-compliance-configure.md#step-2-required-enable-the-office-365-audit-log).
 
 Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Field**|**Details**|
+|**Feld**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |

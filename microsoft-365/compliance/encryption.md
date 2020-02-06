@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und in der Übertragung mit der stärksten Verschlüsselung, den verfügbaren Protokollen und Technologien verschlüsselt. Erhalten Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 782b7f3b64c6fdabd2e94a91de3d2ef67b1573f0
+ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593176"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41800085"
 ---
 # <a name="encryption-in-office-365"></a>Verschlüsselung in Office 365
 
@@ -51,7 +51,7 @@ Mit Office 365 arbeiten mehrere Ebenen und Verschlüsselungstypen zusammen, um I
   
 |**Arten von Inhalten**|**Verschlüsselungstechnologien**|**Ressourcen mit mehr Informationen**|
 |:-----|:-----|:-----|
-|Dateien auf einem Gerät. Diese Dateien können e-Mail-Nachrichten enthalten, die in einem Ordner gespeichert sind, auf einem Computer, einem Tablet oder einem Telefon gespeicherte Office-Dokumente oder in der Microsoft-Cloud gespeicherte Daten.  <br/> |BitLocker in Microsoft-Datencentern. BitLocker kann auch auf Clientcomputern verwendet werden, wie Windows-Computer und Tablets  <br/> Distributed Key Manager (DKM) in Microsoft-Rechenzentren  <br/> Kundenschlüssel für Office 365  <br/> |[Windows-IT-Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Verschlüsselung](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud Security Controls Series: Verschlüsseln von Daten im Ruhezustand](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Schützen von vertraulichen Inhalten in E-Mails mit Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md) <br/> |
+|Dateien auf einem Gerät. Diese Dateien können e-Mail-Nachrichten enthalten, die in einem Ordner gespeichert sind, auf einem Computer, einem Tablet oder einem Telefon gespeicherte Office-Dokumente oder in der Microsoft-Cloud gespeicherte Daten.  <br/> |BitLocker in Microsoft-Datencentern. BitLocker kann auch auf Clientcomputern verwendet werden, wie Windows-Computer und Tablets  <br/> Distributed Key Manager (DKM) in Microsoft-Rechenzentren  <br/> Kundenschlüssel für Office 365  <br/> |[Windows-IT-Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Verschlüsselung](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud Security Controls Series: Verschlüsseln von Daten im Ruhezustand](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Schützen von vertraulichen Inhalten in E-Mails mit Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Dienst Verschlüsselung mit Kundenschlüssel in Office 365](customer-key-overview.md) <br/> |
 |Dateien während der Übertragung zwischen Benutzern. Diese Dateien können Office-Dokumente oder SharePoint-Listenelemente enthalten, die von Benutzern gemeinsam verwendet werden.  <br/> |TLS für Dateien während der Übertragung  <br/> |[Datenverschlüsselung in OneDrive for Business und SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online: Sicherheit und Archivierung](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |E-Mails während der Übertragung zwischen Empfängern. Diese e-Mail enthält e-Mails, die von Exchange Online gehostet werden.  <br/> |Office 365 Nachrichtenverschlüsselung mit Azure Rights Management, S/MIME und TLS für e-Mails bei der Übertragung  <br/> |[Office 365-Nachrichtenverschlüsselung (OME)](ome.md) <br/> [E-Mail-Verschlüsselung in Office 365](email-encryption.md) <br/> [Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 
@@ -67,7 +67,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
-- [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
+- [Dienst Verschlüsselung mit Kundenschlüssel in Office 365](customer-key-overview.md)
 
 ## <a name="how-do-i"></a>Gewusst wie...
 
