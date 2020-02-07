@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661931"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836715"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
 
@@ -37,7 +37,7 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere
     
 Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security #a0 Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
   
-- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Bei diesen Prüfern kann es sich um einzelne Benutzer, Verteilungs-oder Sicherheitsgruppen oder Office 365 Gruppen handeln. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
+- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
     
 - Die Bearbeiter wechseln zur Seite " **Disposition** " im Security &amp; Compliance Center, um den Inhalt zu überprüfen. Die Bearbeiter können sehen, wie viele Elemente für jede Aufbewahrungs Bezeichnung auf die Disposition warten, und wählen dann eine Aufbewahrungs Bezeichnung aus, um den gesamten Inhalt mit dieser Bezeichnung anzuzeigen.
     
@@ -72,7 +72,7 @@ Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Overview 
 ![Aufbewahrungseinstellungen für eine Bezeichnung](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> Wenn Sie die Option " **diese Personen Benachrichtigen" angeben, wenn Elemente zur Überarbeitung verfügbar sind**, geben Sie einen Benutzer oder eine e-Mail-aktivierte Sicherheitsgruppe an. Für diese Option werden Office 365 Gruppen nicht unterstützt.
+> Wenn Sie die Option " **diese Personen Benachrichtigen" angeben, wenn Elemente zur Überarbeitung verfügbar sind**, geben Sie einen Benutzer an. Für diese Option werden Office 365 Gruppen nicht unterstützt.
 
 ## <a name="disposing-content"></a>Freigeben von Inhalten
 
@@ -100,15 +100,13 @@ Beachten Sie außerdem, dass alle Dispositionsaktionen überwacht werden. Um die
   
 ## <a name="permissions-for-disposition"></a>Berechtigungen für die Disposition
 
-Um Zugriff auf die **Dispositions** Seite zu erhalten, müssen Bearbeiter Mitglieder der **Dispositions-Verwaltungs** Rolle und der Rolle " **Überwachungsprotokolle nur anzeigen** " sein. Es wird empfohlen, eine neue Rollengruppe mit dem Namen **Dispositions Prüfer**zu erstellen und diese beiden Rollen zu dieser Rollengruppe hinzuzufügen. 
+Um auf die Seite " **Disposition** " zugreifen zu können, müssen Sie der Dispositions **Verwaltungs** Rolle und der Rolle " **Überwachungsprotokolle** mit Leserechten" zugewiesen sein. [Zeigt Anweisungen](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) zum Zuweisen von Rollen an.
 
 Spezifisch für die Rolle " **nur Ansichts Überwachungsprotokolle** ":
 
 - Da es sich bei dem zugrunde liegenden Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt, müssen Sie Benutzer diese Rolle mithilfe des [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center)anstatt mithilfe der Seite **Berechtigungen** im Security #a0 Compliance Center zuweisen. Anweisungen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Office 365 Gruppen werden für diese Rolle nicht unterstützt. Weisen Sie stattdessen Benutzerpostfächer, e-Mail-Benutzer oder e-Mail-aktivierte Sicherheitsgruppen zu.
-
-Anweisungen zum Erteilen von Benutzern der **Dispositions Verwaltungs** Rolle und zum Erstellen Ihrer neuen Funktion " **Dispositions Prüfer** " finden Sie unter [Erteilen von Benutzern den Zugriff auf das Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Office 365 Gruppen werden für diese Rolle nicht unterstützt. Weisen Sie stattdessen Benutzerpostfächer oder e-Mail-Benutzer zu.
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Wie lange, bis verworfene Inhalte endgültig gelöscht werden
 
