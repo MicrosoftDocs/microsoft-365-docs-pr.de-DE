@@ -1,5 +1,7 @@
 ---
 title: Erste Schritte mit der Datenklassifizierung (Vorschau)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823737"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595452"
 ---
 # <a name="data-classification-overview-preview"></a>Übersicht über die Datenklassifizierung (Vorschau)
 

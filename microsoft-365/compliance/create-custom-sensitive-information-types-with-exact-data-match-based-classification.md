@@ -1,5 +1,7 @@
 ---
 title: Erstellen benutzerdefinierter vertraulicher Informationstypen mit genauer Datenübereinstimmung
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung.
-ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515666"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836725"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -72,10 +74,12 @@ Beim Einrichten und Konfigurieren der EDM-basierten Klassifizierung werden vertr
 
 2. Strukturieren Sie die vertraulichen Daten in der CSV-Datei so, dass die erste Zeile die Namen der für die EDM-basierte Klassifizierung verwendeten Felder enthält. Möglicherweise gibt es in Ihrer CSV-Datei Feldnamen, wie z. B. "SSN", "Geburtsdatum", "Vorname", "Nachname" usw. Im Beispiel nennen wir unsere CSV-Datei *PatientRecords.csv*, und die Spalten beinhalten *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* und mehr.
 
-3. Definieren Sie das Schema für die Datenbank mit vertraulichen Informationen im XML-Format (ähnlich wie in unserem Beispiel unten). Nennen Sie diese Schemadatei „edm.xml“ und konfigurieren Sie sie so, dass für jede Spalte in der Datenbank eine Zeile mit der Syntax \<Field name="" searchable=""/\> verwendet wird.
+3. Definieren Sie das Schema für die Datenbank mit vertraulichen Informationen im XML-Format (ähnlich wie in unserem Beispiel unten). Benennen Sie diese Schemadatei  **edm.xml** und konfigurieren Sie sie so, dass für jede Spalte in der Datenbank eine Zeile mit der folgenden Syntax verwendet wird: 
 
-      - Verwenden Sie Spaltennamen für *Field name*-Werte.
-      - Verwenden Sie *searchable="true* für maximal 5 Felder, die durchsuchbar sein sollen. Sie müssen mindestens ein Feld als durchsuchbar festlegen.
+`\<Field name="" searchable=""/\>`.
+
+- Verwenden Sie Spaltennamen für *Field name*-Werte.
+- Verwenden Sie *searchable="true* für maximal 5 Felder, die durchsuchbar sein sollen. Sie müssen mindestens ein Feld als durchsuchbar festlegen.
 
 Im folgenden Beispiel definiert die XML-Datei das Schema für eine Datenbank mit Patientendatensätzen, wobei fünf Felder als durchsuchbar angegeben werden: *PatientID*, *MRN*, *SSN*, *Phone* und *DOB*.
 
@@ -126,9 +130,9 @@ Nachdem das Schema für Ihre Datenbank mit vertraulichen Informationen definiert
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Bearbeiten des Schemas für die EDM-basierte Klassifikation
 
-Wenn Sie Änderungen an Ihrer edm.xml-Datei vornehmen und z. B. ändern möchten, welche Felder für die EDM-basierte Klassifikation verwendet werden, führen Sie die folgenden Schritte aus:
+Wenn Sie Änderungen an Ihrer **edm.xml**-Datei vornehmen und z. B. ändern möchten, welche Felder für die EDM-basierte Klassifikation verwendet werden, führen Sie die folgenden Schritte aus:
 
-1. Bearbeiten Sie Ihre edm.mxl-Datei (die Datei, die im Abschnitt [Definieren des Schemas](#define-the-schema-for-your-database-of-sensitive-information) in diesem Artikel behandelt wird).
+1. Bearbeiten Sie Ihre **edm.xml**-Datei (die Datei, die im Abschnitt [Definieren des Schemas](#define-the-schema-for-your-database-of-sensitive-information) in diesem Artikel behandelt wird).
 
 2. [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -184,7 +188,7 @@ Sie werden zu folgenden Bestätigungen aufgefordert:
 
 1. Erstellen Sie ein Regelpaket im XML-Format (mit Unicode-Codierung), ähnlich wie im folgenden Beispiel. (Sie können das Beispiel kopieren, ändern und verwenden.)
 
-Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei und die edm.xml-Datei korrekt referenzieren. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
+Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei und die **edm.xml**-Datei korrekt referenzieren. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
 
 - **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
 
@@ -249,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 Sie haben die EDM-basierte Klassifizierung nun eingerichtet. Im nächsten Schritt werden die vertraulichen Daten indiziert und dann hochgeladen.
 
-Wie Sie im vorherigen Verfahren erfahren haben, wurden im PatientRecords-Schema fünf Felder als durchsuchbar definiert: *PatientID*, *MRN*, *SSN*, *Phone* und *DOB*. Unser Beispiel für ein Regelpaket enthält diese Felder und verweist auf die Datenbankschemadatei (edm.xml), mit einem *ExactMatch*-Element pro durchsuchbarem Feld. Sehen Sie sich das folgende ExactMatch-Element an:
+Wie Sie im vorherigen Verfahren erfahren haben, wurden im PatientRecords-Schema fünf Felder als durchsuchbar definiert: *PatientID*, *MRN*, *SSN*, *Phone* und *DOB*. Unser Beispiel für ein Regelpaket enthält diese Felder und verweist auf die Datenbankschemadatei (**edm.xml**), mit einem  *ExactMatch* -Element pro durchsuchbarem Feld. Sehen Sie sich das folgende ExactMatch-Element an:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -287,18 +291,18 @@ In dieser Phase richten Sie eine benutzerdefinierte Sicherheitsgruppe, ein Benut
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Einrichten der Sicherheitsgruppe und des Benutzerkontos
 
-1. Wechseln Sie als globaler Administrator zum Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com/)) und [erstellen Sie eine Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) mit dem Namen „EDM\_DataUploaders“.
+1. Wechseln Sie als globaler Administrator zum Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com/)) und [erstellen Sie eine Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) mit dem Namen  **EDM\_DataUploaders**.
 
-2. Fügen Sie einen oder mehrere Benutzer zur *EDM\_DataUploaders*-Sicherheitsgruppe hinzu. (Diese Benutzer verwalten die Datenbank mit vertraulichen Informationen.)
+2. Fügen Sie einen oder mehrere Benutzer zur **EDM\_DataUploaders**-Sicherheitsgruppe hinzu. (Diese Benutzer verwalten die Datenbank mit vertraulichen Informationen.)
 
 3. Stellen Sie sicher, dass jeder Benutzer, der die vertraulichen Daten verwaltet, ein lokaler Administrator auf dem Computer ist, der für den EDM-Upload-Agent verwendet wird.
 
 #### <a name="set-up-the-edm-upload-agent"></a>Einrichten des EDM-Upload-Agenten
 
 >[!NOTE]
-> Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass Sie Mitglied der Sicherheitsgruppe *EDM\_DataUploaders* und lokaler Administrator auf Ihrem Computer sind.
+> Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass Sie Mitglied der Sicherheitsgruppe **EDM\_DataUploaders** und lokaler Administrator auf Ihrem Computer sind.
 
-1. Laden Sie den [EDM-Upload-Agenten](https://go.microsoft.com/fwlink/?linkid=2088639) herunter und installieren Sie ihn. Standardmäßig sollte der Installationsspeicherort C:\\Programme\\Microsoft\\EdmUploadAgent sein.
+1. Laden Sie den [EDM-Upload-Agenten](https://go.microsoft.com/fwlink/?linkid=2088639) herunter und installieren Sie ihn. Standardmäßig sollte der Installationsspeicherort  **C:\\Programmdateien\\Microsoft\\EdmUploadAgent** sein.
 
 > [!TIP]
 > Um eine Liste der unterstützten Befehlsparameter zu erhalten, führen Sie den Agenten ohne Argumente aus. Zum Beispiel "EdmUploadAgent.exe".
@@ -313,7 +317,7 @@ Im nächsten Schritt verwenden Sie den EDM-Upload-Agent, um die vertraulichen Da
 
 #### <a name="index-and-upload-the-sensitive-data"></a>Indizieren und Hochladen der vertraulichen Daten
 
-Speichern Sie die Datei mit den vertraulichen Daten (unser Beispiel ist wie erwähnt *PatientRecords.csv*) auf dem lokalen Laufwerk Ihres Computers. (Die Beispieldatei *PatientRecords.csv* wurde in C:\\Edm\\Data gespeichert.)
+Speichern Sie die Datei mit den vertraulichen Daten (unser Beispiel ist wie erwähnt **PatientRecords.csv**) auf dem lokalen Laufwerk Ihres Computers. (Die Beispieldatei  **PatientRecords.csv** wurde unter  **C:\\Edm\\Data** gespeichert.)
 
 Um die vertraulichen Daten zu indizieren und hochzuladen, führen Sie den folgenden Befehl in der Windows-Eingabeaufforderung aus:
 
@@ -327,13 +331,17 @@ Um die vertraulichen Daten zu indizieren, führen Sie den folgenden Befehl in de
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-Beispiel: **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+zum Beispiel
 
-Um die vertraulichen Daten hochzuladen, führen Sie den folgenden Befehl in der Windows-Eingabeaufforderung aus:
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+
+Um die indizierten Daten hochzuladen, führen Sie den folgenden Befehl in der Windows-Eingabeaufforderung aus:
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-Beispiel: **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+zum Beispiel 
+
+> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 Um zu überprüfen, ob Ihre vertraulichen Daten hochgeladen wurden, führen Sie den folgenden Befehl in der Windows-Eingabeaufforderung aus:
 

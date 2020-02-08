@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, D
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ebe888f993f805621051e42503ae40b1b321dfc1
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: b0815a81e1131d45cda2e0cc267c5bedd366c75d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558032"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594516"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Dynamics 365-Prüfliste zu den Verantwortlichkeiten für die DSGVO
 

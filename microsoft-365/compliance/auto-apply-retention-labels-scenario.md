@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Office 365-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Office 365-Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596372"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628111"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
 
@@ -348,3 +348,9 @@ Im vorherigen Screenshot sehen Sie auch, dass es eine andere verwaltete Eigensch
 ## <a name="summary"></a>Zusammenfassung
 
 In diesem Artikel wurde ein Dokumentverwaltungsszenario veranschaulicht, in dem automatisch eine Aufbewahrungbezeichnung basierend auf einer Sitespalte in SharePoint angewendet wurde. Anschließend haben wir die ereignisbasierte Aufbewahrung und Microsoft Flow verwendet, um den Beginn des Aufbewahrungszeitraums basierend auf einem externen Ereignis automatisch auszulösen.
+
+## <a name="credits"></a>Mitwirkende
+
+Dieses Szenario wurde verfasst von: 
+
+Frederic Lapierre<br/>Hauptberater, Microsoft Services

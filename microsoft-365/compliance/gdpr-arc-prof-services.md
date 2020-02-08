@@ -5,6 +5,8 @@ keywords: Prüflisten zu den Verantwortlichkeiten, Microsoft 365, Microsoft 365 
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d199f9fc846886610badebc3a6a0e47e2bc303c3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e9efb9117acba88b4baa8d91d8b3af2a1dc82049
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807244"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594475"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Prüfliste für Microsoft-Support und Dienstleistungen zu den Verantwortlichkeiten für die DSGVO
 

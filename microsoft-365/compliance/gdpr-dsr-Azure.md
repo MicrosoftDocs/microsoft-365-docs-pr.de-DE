@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentatio
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d54867ad5a469fb429d3edbe012aab9288d76e0f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268528"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594344"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Azure im Rahmen der DSGVO und des CCPA
 

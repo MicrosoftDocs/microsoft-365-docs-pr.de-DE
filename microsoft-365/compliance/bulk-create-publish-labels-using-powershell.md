@@ -1,7 +1,9 @@
 ---
 title: Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 ms.date: ''
 audience: Admin
 ms.topic: article
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In Office 365 können Sie Aufbewahrungsbezeichnungen verwenden, um einen Aufbewahrungszeitplan für Ihr Unternehmen zu implementieren. Mithilfe des bereitgestellten Skripts und der CSV-Dateien können Sie Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien per Massenvorgang mit PowerShell erstellen und veröffentlichen.
-ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: f14e08176a4d7f4531c79f4aa8aebadf2fe0b3b4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631595"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596282"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 
@@ -183,7 +185,7 @@ Function Create-Log
     }
     $date = Get-Date -Format 'MMddyyyy_HHmmss'
     $logfilePath = "$logFolderPath\Log_{0}_{1}.txt" -f $LogFunction, $date
-    Write-Verbose "Log file is writen to: $logfilePath"
+    Write-Verbose "Log file is written to: $logfilePath"
     $logfile = New-Item $logfilePath  -type file
     return $logfilePath
 }
@@ -205,7 +207,7 @@ Function Create-ResultCSV
     }
     $date = Get-Date -Format 'MMddyyyy_HHmmss'
     $retfilePath = "$retFolderPath\Result_{0}_{1}.csv" -f $ResultFunction, $date
-    Write-Verbose "Result file is writen to: $retfilePath"
+    Write-Verbose "Result file is written to: $retfilePath"
     $retfile = New-Item $retfilePath  -type file
     return $retfilePath
 }

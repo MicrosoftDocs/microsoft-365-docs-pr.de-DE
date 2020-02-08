@@ -1,5 +1,7 @@
 ---
 title: Verwalten der Postfächern
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist in Office 365 standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 059039205e82ea63b1dc14a8be5e768e9cdba069
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: db36e285878a5afb9c6efcc9b173188452f267fa
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515566"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862065"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -37,7 +39,7 @@ Hier sind einige Vorteile der postfachüberwachung standardmäßig aktiviert:
 - Sie verfügen über eine konsistente Überwachungsrichtlinie für Postfächer in Ihrer Organisation (da Sie die gleichen Aktionen für alle Postfächerüber Wachen).
 
 > [!NOTE]
->• Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts tun, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen. <br><br>• Nur Post Fach Überwachungsereignisse für E5-Benutzer stehen in Überwachungsprotokoll suchen im Security #a0 Compliance Center oder über die API für die Office 365-Verwaltungsaktivität zur Verfügung. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) in diesem Thema.
+>• Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts tun, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen. <br><br>• Standardmäßig sind nur Post Fach Überwachungsereignisse für E5-Benutzer in Überwachungsprotokoll suchen im Security #a0 Compliance Center oder über die Office 365-Verwaltungs Aktivitäts-API verfügbar. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) in diesem Thema.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die postfachüberwachung standardmäßig aktiviert ist
 
@@ -106,10 +108,12 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**ApplyRecord**|Ein Element wird als Datensatz gekennzeichnet.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Kopieren**|Eine Nachricht wurde in einen anderen Ordner kopiert.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|Ein Element wurde im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt (beispielsweise wird eine neue Besprechungsanfrage erstellt). Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Auch das Erstellen eines Postfachordners wird nicht überwacht.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Standard**||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**MailItemsAccessed**|Auf e-Mail-Daten wird über e-Mail-Protokolle und-Clients zugegriffen. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [High-Value-Überwachungsereignisse](https://docs.microsoft.com/microsoft-365/compliance/advanced-audit#high-value-audit-events) .|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MailboxLogin**|Der Benutzer hat sich bei seinem Postfach angemeldet. |||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|Eine Nachricht wurde im Vorschaufenster angezeigt oder geöffnet.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|Eine Nachricht wurde im Vorschaubereich angezeigt oder von einem Administrator geöffnet. **Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, werden diese Aktionen nicht mehr protokolliert.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions** -Aktion enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
 |**Verschieben**|Eine Nachricht wurde in einen anderen Ordner verschoben.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -120,6 +124,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**SoftDelete**|Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|Eine Nachricht oder deren Eigenschaften wurden geändert.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Eine Kalender Delegierung wurde einem Postfach zugewiesen. Der Stellvertretungszugriff gibt anderen Personen in der gleichen Organisation die Berechtigung zum Verwalten des Kalenders des Postfachbesitzers.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|Eine andere Aufbewahrungs Bezeichnung wird auf ein e-Mail-Element angewendet (einem Element kann nur eine Aufbewahrungs Bezeichnung zugewiesen werden).|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**UpdateFolderPermissions**|Eine Ordnerberechtigung wurde geändert. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Ordner in einem Postfach zugreifen können und welche Nachrichten sich in diesen Ordnern befinden.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. Posteingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen zu ergreifen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen angegebenen Ordner oder das Löschen einer Nachricht.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
@@ -183,7 +188,7 @@ Weitere Informationen finden Sie im Abschnitt [ändern oder Wiederherstellen von
 Wenn Sie die Postfachaktionen anzeigen möchten, die derzeit für Benutzerpostfächer oder freigegebene Postfächer angemeldet sind, ersetzen \<Sie Mailbox Identity\> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle in Exchange Online PowerShell aus.
 
 > [!NOTE]
-> Obwohl Sie den `-GroupMailbox` Schalter den folgenden **Get-Mailbox-** Befehlen für Office 365 Gruppen Postfächer hinzufügen können, sind die Werte, die Sie sehen, nicht zu glauben. Die standardmäßigen und statischen Postfachaktionen, die für Office 365 Gruppen Postfächern überwacht werden, werden im Abschnitt [Postfachaktionen für Office 365 Gruppen Postfächer](#mailbox-actions-for-office-365-group-mailboxes) weiter oben in diesem Thema beschrieben.
+> Obwohl Sie den `-GroupMailbox` Schalter den folgenden **Get-Mailbox-** Befehlen für Office 365 Gruppen Postfächer hinzufügen können, glauben Sie nicht, welche Werte zurückgegeben werden. Die standardmäßigen und statischen Postfachaktionen, die für Office 365 Gruppen Postfächern überwacht werden, werden im Abschnitt [Postfachaktionen für Office 365 Gruppen Postfächer](#mailbox-actions-for-office-365-group-mailboxes) weiter oben in diesem Thema beschrieben.
 
 #### <a name="owner-actions"></a>Besitzer Aktionen
 
@@ -334,9 +339,11 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Obwohl die postfachüberwachungsprotokollierung standardmäßig für alle Organisationen aktiviert ist, werden nur Benutzer mit E5-Lizenzen postfachüberwachungsprotokoll Ereignisse in [Überwachungsprotokoll suchen im Security #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md) oder über die [Office 365 Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)zurückgeben.
+- Obwohl die postfachüberwachungsprotokollierung standardmäßig für alle Organisationen aktiviert ist, werden nur Benutzer mit E5-Lizenzen postfachüberwachungsprotokoll Ereignisse in [Überwachungsprotokoll suchen im Sicherheits #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md) oder über die API für die [Office 365-Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **standardmäßig**zurückgeben.
 
   Zum Abrufen von postfachüberwachungsprotokoll Einträgen für Benutzer ohne E5-Lizenzen haben Sie folgende Möglichkeiten:
+
+  - Verwenden Sie Überwachungsprotokoll suchen im Security #a0 Compliance Center oder über die Office 365-Verwaltungs Aktivitäts-API, **nachdem** Sie die postfachüberwachung für die einzelnen Postfächer manuell aktiviert haben.
 
   - Verwenden Sie die folgenden Cmdlets in Exchange Online PowerShell:
 

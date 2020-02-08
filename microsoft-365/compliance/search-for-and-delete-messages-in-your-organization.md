@@ -1,5 +1,7 @@
 ---
 title: Suchen nach und Löschen von E-Mail-Nachrichten in der Office 365-Organisation
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center in Office 365 die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259973"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601552"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Suchen nach und Löschen von E-Mail-Nachrichten in der Office 365-Organisation
 
@@ -43,7 +45,7 @@ Mit der Inhaltssuche in Office 365 können Sie alle Postfächer Ihrer Organisati
     
 - Sie müssen Security & Compliance Center PowerShell verwenden, um Nachrichten zu löschen. Anweisungen zum Herstellen einer Verbindung finden Sie unter [Schritt 2](#step-2-connect-to-security--compliance-center-powershell).
     
-- Aus jedem Postfach können maximal 10 Elemente gleichzeitig entfernt werden. Da die Funktion zum Suchen und Entfernen von Nachrichten ein Tool zur Reaktion auf Vorfälle sein soll, stellt dieser Höchstwert sicher, dass Nachrichten schnell aus Postfächern entfernt werden können. Das Feature ist nicht zum Bereinigen von Benutzerpostfächern vorgesehen. Wenn Sie mehr als 10 Elemente löschen möchten, können Sie den Befehl **Search-Mailbox -DeleteConten** in Exchange Online PowerShell verwenden. Siehe [Suchen nach und Löschen von Nachrichten](search-for-and-delete-messagesadmin-help.md).
+- Aus jedem Postfach können maximal 10 Elemente gleichzeitig entfernt werden. Da die Funktion zum Suchen und Entfernen von Nachrichten ein Tool zur Reaktion auf Vorfälle sein soll, stellt dieser Höchstwert sicher, dass Nachrichten schnell aus Postfächern entfernt werden können. Das Feature ist nicht zum Bereinigen von Benutzerpostfächern vorgesehen.
     
 - Die maximale Anzahl von Postfächern in einer Inhaltssuche, aus denen Sie Elemente löschen können, indem Sie eine "Suchen und löschen"-Aktion ausführen, beträgt 50.000. Wenn die Inhaltssuche (die Sie in [Schritt 1](#step-1-create-a-content-search-to-find-the-message-to-delete)erstellen) mehr als 50.000 Quellpostfächer umfasst, schlägt die Löschaktion (die Sie in Schritt 3 erstellen) fehl. Im Abschnitt [Weitere Informationen](#more-information) finden Sie einen Tipp zur Durchführung eines Such- und Löschvorgangs über mehr als 50.000 Postfächer. 
     

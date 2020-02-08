@@ -5,6 +5,8 @@ keywords: ARC Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokum
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 34d36b6782d1f3dd8a5b12beb7be681e07518170
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 7c3be3d13e40c3a758edeb224aa2b8383908dd1f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558092"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594526"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Azure-Prüfliste zu den Verantwortlichkeiten für die DSGVO
 

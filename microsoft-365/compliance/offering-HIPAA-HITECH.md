@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602312"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851892"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Krankenversicherung Portabilität und Verantwortlichkeit (HIPAA) #a0 HITECH Akte
 
@@ -51,10 +51,10 @@ Microsoft Enterprise Cloud Services werden auch durch FedRAMP Assessments abgede
 
 Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [-Cloud: Lesen der Zwanger-Pesiri-Radiologie-Kunden Geschichte](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Cloud-App-Sicherheit
 - Microsoft Health bot-Dienst
 - Microsoft Stream
 - Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Office 365
@@ -62,7 +62,7 @@ Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI Cloud Service entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite integrierte
 - Azure DevOps Services
 
@@ -70,7 +70,7 @@ Erfahren Sie mehr über die Vorteile von HIPAA und der HITECH in der Microsoft [
 
 Beginnen Sie mit dem Nutzen der Cloud für Integritätsdaten Lösungen mit dem Azure Security and Compliance Blueprint – HIPAA/HITRUST-Integritätsdaten und AI. Dieser Blueprint enthält Tools und Anleitungen für die ersten Schritte beim Erstellen von HIPAA/HITRUST-Lösungen.
 
-[Verwenden von Azure HIPAA/HITRUST Blueprint](https://aka.ms/healthblueprint)
+[Verwenden von Azure HIPAA/HITRUST Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -78,7 +78,7 @@ Beginnen Sie mit dem Nutzen der Cloud für Integritätsdaten Lösungen mit dem A
 
 Microsoft bietet qualifizierten Unternehmen oder ihren Lieferanten eine Baa an, die den Umfang von Microsoft-Diensten umfasst.
 
-Für Microsoft-Cloud-Dienste: die [HIPAA-Geschäftspartner Vereinbarung](https://aka.ms/BAA) steht standardmäßig über die Online Dienste-Bedingungen für alle Kunden zur Verfügung, die unter HIPAA über verdeckte Entitäten oder Geschäftspartner sind. Siehe "Microsoft in-Scope Cloud Services" auf dieser Webseite für die Liste der Cloud-Dienste, die von dieser Baa abgedeckt werden.
+Für Microsoft-Cloud-Dienste: die [HIPAA-Geschäftspartner Vereinbarung](https://aka.ms/BAA) steht standardmäßig über die Online Dienste-Bedingungen für alle Kunden zur Verfügung, die unter HIPAA über verdeckte Entitäten oder Geschäftspartner sind. Eine Liste der von dieser Baa abgedeckten Cloud-Dienste finden Sie auf dieser Webseite unter "Microsoft in-Scope Cloud Services".
 
 Für Microsoft Professional Services-Dienste: die HIPAA-Geschäfts Associate Amendment ist für in-Scope Microsoft Professional Services auf Anforderung an Ihren Microsoft-Dienstmitarbeiter verfügbar.
 
@@ -101,6 +101,10 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft diese Leitfäden ve
 - *HIPAA/HITECH Act-Implementierungsanleitung* für [Azure](https://aka.ms/azurehipaaguidance) und [Dynamics 365 und Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Geschrieben für Datenschutz-, Sicherheits-und Compliance-Verantwortliche und andere, die für die Implementierung von HIPAA-und HITECH-Act zuständig sind, werden konkrete Schritte beschrieben, die Ihre Organisation zur Einhaltung der Compliance ausführen kann.
 - Ein [praktischer Leitfaden zum Entwerfen sicherer Integritäts Lösungen mithilfe von Microsoft Azure](https://aka.ms/azureindustrysecurity) hilft Ihnen, besser zu verstehen, was für eine sichere Einführung eines Cloud-Diensts benötigt wird.
 - [Die Adressierung der HIPAA-Sicherheits-und Datenschutzanforderungen in der Microsoft-Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) bietet eine kurze Übersicht über die Regel Anforderungen. Außerdem wird eine detaillierte Analyse der Funktionsweise von Cloud-Diensten von Microsoft mit Methoden erstellt, die diesen Anforderungen entsprechen, sowie Anleitungen zum Erstellen von Compliance-fähigen Lösungen.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+
+[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [HIPAA Office 365-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118005) und die [HIPAA InTune-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118006) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

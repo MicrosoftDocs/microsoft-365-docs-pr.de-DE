@@ -1,6 +1,8 @@
 ---
 title: Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/18/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sehen Sie sich die neuen Inhalte und Änderungen an den Inhalten im Microsoft 365-Bereitstellungshandbuch an.
-ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 73ce204352af92e1380b57b9a58e04323fb7a987
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111973"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855460"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
 
@@ -30,7 +32,6 @@ ms.locfileid: "41111973"
 
 ### <a name="updates-and-enhancements"></a>Updates und Verbesserungen
 
-- [Speichern von SharePoint-Online-Webseiten und -Dateien](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) für die Verwendung von Vertraulichkeitsbezeichnungen
 -  Aktualisierung der [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md) 
 
 ## <a name="november-2019"></a>November 2019

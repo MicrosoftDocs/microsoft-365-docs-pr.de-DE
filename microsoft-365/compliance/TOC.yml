@@ -695,12 +695,14 @@
   items:
     - name: Durchsuchen des Überwachungsprotokolls
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: Verwalten von Warnungsrichtlinien
-      href: alert-policies.md
+    - name: Erweiterte Überwachung
+      href: advanced-audit.md
     - name: Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
       href: turn-audit-log-search-on-or-off.md
     - name: Verwalten der Postfächern
       href: enable-mailbox-auditing.md
+    - name: Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
+      href: audit-log-retention-policies.md
     - name: Detaillierte Eigenschaften im Überwachungsprotokoll
       href: detailed-properties-in-the-office-365-audit-log.md
     - name: 'Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen'
@@ -711,6 +713,8 @@
       href: use-sharing-auditing.md
     - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
       href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Verwalten von Warnungsrichtlinien
+      href: alert-policies.md
 - name: Verwalten von Compliancerisiken
   items:
     - name: Microsoft Service Trust Portal
@@ -797,7 +801,8 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: Schutz von Daten
+        - name: |
+            Schutz von Daten
           href: gdpr-information-protection.md
         - name: Datensubjektanforderungen
           items:

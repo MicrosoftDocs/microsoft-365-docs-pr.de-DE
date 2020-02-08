@@ -1,5 +1,7 @@
 ---
 title: Sichern von SharePoint Online-Websites und -Dateien
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -19,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: c175e0e480670f9e5ce00a701704cedf1abeff26
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572351"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830989"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -158,7 +160,7 @@ Die Schritte zum Konfigurieren von Aufbewahrungsbezeichnungen und DLP-Richtlinie
 
 Falls dies für Ihr Sicherheitsszenario notwendig sein sollte, können Sie Vertraulichkeitsbezeichnungen verwenden, um Schutzfunktionen anzuwenden, die die Dateien immer und überall begleiten. Vertraulichkeitsbezeichnungen im Microsoft 365 Compliance Center und Azure Information Protection-Bezeichnungen sind identisch. Für diese Lösung empfehlen wir, dass Sie eine Vertraulichkeitsbezeichnungen oder eine Unterbezeichnung der Vertraulichkeitsbezeichnung "Streng Vertraulich" verwenden, um Dateien, die der höchsten Schutzebene bedürfen, zu verschlüsseln und Berechtigungen für diese zu erteilen.
 
-Beachten Sie Folgendes: Wenn Verschlüsselung mit Vertraulichkeitsbezeichnungen auf Dateien in Office 365 angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur mit den Metadaten (einschließlich Aufbewahrungsbezeichnungen) funktionieren, aber nicht mit den Inhalten dieser Dateien (wie Kreditkartennummern in Dateien).
+Falls in Ihrer Organisation keine [Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau) aktiviert](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) wurden, beachten Sie Folgendes: Wenn Verschlüsselung mit Vertraulichkeitsbezeichnungen auf in Office 365 gespeicherte Dateien angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur mit den Metadaten (einschließlich Aufbewahrungsbezeichnungen) funktionieren, aber nicht mit den Inhalten dieser Dateien (wie Kreditkartennummern in Dateien).
 
 Weitere Informationen finden Sie unter [Übersicht über Vertraulichkeitsbezeichnungen](../../compliance/sensitivity-labels.md).
 

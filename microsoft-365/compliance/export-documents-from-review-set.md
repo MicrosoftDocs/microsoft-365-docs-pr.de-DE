@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0448082ce6dcbcd9d1cee52557a78b2d7913a034
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588355"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862075"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Prüfdateisatz
 
@@ -45,7 +45,7 @@ Mit dem Export können Benutzer die Inhalte anpassen, die im Downloadpaket entha
 
 ### <a name="metadata-file"></a>Metadaten-Datei
 
-Dies kann als ihre "Laden Datei" betrachtet werden, die Metadaten enthält, die den exportierten Dateien zugeordnet sind. Eine Liste der in der Metadatendatei verfügbaren Felder \[finden\]Sie unter Link. Diese Datei kann normalerweise von drei<sup>Remote</sup> Tools von Drittanbietern aufgenommen werden.
+Dies kann als ihre "Laden Datei" betrachtet werden, die Metadaten enthält, die den exportierten Dateien zugeordnet sind. Eine Liste der exportierten Felder, die in der Metadatendatei zur Verfügung stehen, finden Sie unter [Document Metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Diese Datei kann normalerweise von Tools von Drittanbietern aufgenommen werden.
 
 ### <a name="tag-data"></a>Tag-Daten
 
@@ -53,13 +53,13 @@ Dieser Inhalt würde als Felder in der Metadatendatei hinzugefügt werden. Sie e
 
 ### <a name="text-files"></a>Textdateien
 
-Text Dateien können für jede Datei generiert werden, die aus einem Überprüfungs Satz exportiert wurde. Häufig sind diese Dateien für Service Partner erforderlich, wenn Sie Daten<sup>in Drittanbieter</sup> -Tools nach Downstream aufnehmen.
+Text Dateien können für jede Datei generiert werden, die aus einem Überprüfungs Satz exportiert wurde. Häufig sind diese Dateien für Service Partner erforderlich, wenn Sie Daten in Drittanbietertools aufnehmen.
 
 ### <a name="redacted-files"></a>Behandelte Dateien
 
-Wenn während der Überprüfung redigierte PDFs generiert werden, stehen diese Dateien während des Exports zur Verfügung. Benutzer können entscheiden, ob Sie systemeigene Dateien exportieren oder natives ersetzen möchten, bei denen die in PDFs gebrannt wurden.
+Wenn während der Überprüfung redigierte PDF-Dateien generiert werden, stehen diese Dateien während des Exports zur Verfügung. Sie können entscheiden, ob Sie nur systemeigene Dateien exportieren oder die systemeigenen Dateien ersetzen möchten, die für die PDF-Dateien erforderlich sind, die die tatsächlichen Aktionen enthalten.
 
-### <a name="export-location"></a>Exportspeicherort
+### <a name="export-location"></a>Export Speicherort
 
 Exportierte Inhalte werden entweder an ein von Microsoft bereitgestelltes Azure-BLOB zugestellt, oder das BLOB eines Kunden kann verwendet werden, wenn die Details beim Export angegeben werden.
 

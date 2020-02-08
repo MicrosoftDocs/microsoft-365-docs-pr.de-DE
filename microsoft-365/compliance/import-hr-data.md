@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600692"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862035"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von HR-Daten
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) zu importieren, beispielsweise das Datum, an dem ein Mitarbeiter seinen Rücktritt gesendet hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der neuen [Insider Risiko-Verwaltungslösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, indem Sie eine CSV-Zuordnungsdatei erstellt, die Ihre HR-Daten enthält, einen Data Connector im Compliance Center erstellt und dann ein Skript ausführt (auf einem geplante Basis), die die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Der Data Connector verwendet dann Microsoft-Compliance-Lösungen (wie Insider Risk Management), um auf die in Ihre Microsoft 365-Organisation importierten HR-Daten zuzugreifen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den HR-Connector in Schritt 3 erfolgreich erstellen können.
 
@@ -211,6 +211,6 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
    ![Die neue Aufgabe wird in der Aufgabenplanungsbibliothek angezeigt.](media/HRConnectorTaskSchedulerLibrary.png)
 
-   Das letzte Mal und das nächste Mal, wenn das Skript ausgeführt wird, ist die Ausführung geplant wird angezeigt. Sie können auf den Vorgang doppelklicken, um ihn zu bearbeiten.
+   Die Uhrzeit, zu der das Skript zuletzt ausgeführt wurde, wird angezeigt, wenn das nächste Mal geplant wird. Sie können auf den Vorgang doppelklicken, um ihn zu bearbeiten.
 
    Sie können auch überprüfen, wann das Skript zuletzt auf der Flyout-Seite des entsprechenden HR-Konnektors im Compliance Center ausgeführt wurde.

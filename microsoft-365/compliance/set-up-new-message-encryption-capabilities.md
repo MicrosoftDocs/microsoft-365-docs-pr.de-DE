@@ -1,5 +1,7 @@
 ---
 title: Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Mit den neuen Office 365-Nachrichtenverschlüsselungsfunktionen (Office 365 Message Encryption, OME), die auf Azure Information Protection aufbauen, kann Ihre Organisation geschützte E-Mail-Kommunikation mit Personen innerhalb und außerhalb der Organisation nutzen. Die neuen OME-Funktionen arbeiten mit anderen Office 365-Organisationen, Outlook.com, Gmail und anderen E-Mail-Diensten zusammen.
-ms.openlocfilehash: c772151250d30e62a3f2689df5cd853536af3ede
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39218734"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680084"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
 
@@ -84,7 +86,7 @@ Sie können überprüfen, ob Ihr Office 365-Mandant für die Verwendung der neue
      Die Ergebnisse sollten in etwa folgendermaßen aussehen:
 
      ```text
-    Results : Acquiring RMS Templates ...
+     Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
             Verifying encryption ...
@@ -95,7 +97,7 @@ Sie können überprüfen, ob Ihr Office 365-Mandant für die Verwendung der neue
                 - PASS: IRM verified successfully.
 
             OVERALL RESULT: PASS
-    ```
+     ```
 
    - Der Name Ihrer Office 365-Organisation ersetzt *Contoso*.
 

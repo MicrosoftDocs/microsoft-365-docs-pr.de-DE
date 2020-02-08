@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600892"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855384"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -122,7 +122,7 @@ In diesem Leitfaden erfahren Sie, wie Sie eine Reihe von Richtlinien implementie
 
 - [Konfigurieren Sie Ihren Office 365 Mandanten für mehr Sicherheit](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): Diese Empfehlungen gelten für die grundlegende Sicherheit Ihres Office 365 Mandanten.
 - [Office 365 Security Roadmap: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): Diese Empfehlungen umfassen Protokollierung, Datensteuerung, Administratorzugriff und Bedrohungsschutz.
-- [Sichere SharePoint Online Websites und Dateien](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files): in diesem Satz von Artikeln wird beschrieben, wie Sie Dateien und Websites auf geeigneten Ebenen für den Schutz von Baseline, vertraulich und streng vertraulich schützen.
+
 
 ### <a name="windows-10-and-office-365-proplus"></a>Windows 10 und Office 365 ProPlus
 

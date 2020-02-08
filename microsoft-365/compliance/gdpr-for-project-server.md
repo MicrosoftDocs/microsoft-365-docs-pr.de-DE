@@ -1,5 +1,8 @@
 ---
 title: DSGVO für Project Server
+description: Erfahren Sie, wie Sie mit DSGVO-Anforderungen in lokalen Project Server-Installationen umgehen.
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: Erfahren Sie, wie Sie mit DSGVO-Anforderungen in lokalen Project Server-Installationen umgehen.
-ms.openlocfilehash: 8fb29c2d383c03c79d619d2c78df75cffb4eab27
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: a9fff9f085fd42f28801a82c3f83d6bdd1f74ff6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081390"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596412"
 ---
 # <a name="gdpr-for-project-server"></a>DSGVO für Project Server
 

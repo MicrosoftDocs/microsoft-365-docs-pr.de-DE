@@ -1,7 +1,9 @@
 ---
 title: Anzeigen der Data Governance-Berichte
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den Data Governance-Berichten im Office 365 Security &amp; Compliance Center können Sie schnell anzeigen, ob Ihre Bezeichnungen wie gewünscht auf Inhalte angewendet werden.
-ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813905"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597212"
 ---
 # <a name="view-the-data-governance-reports"></a>Anzeigen der Data Governance-Berichte
 

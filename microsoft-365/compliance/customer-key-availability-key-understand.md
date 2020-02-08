@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informationen zum Verfügbarkeits Schlüssel, der zum Wiederherstellen von verloren gegangenen Office 365 Kunden Schlüsseln verwendet wird.
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845364"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862085"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Informationen zum Verfügbarkeits Schlüssel für Office 365 Kundenschlüssel
 
@@ -94,7 +94,7 @@ Dieser Vorgang ist proportional zur Anzahl der Websites in Ihrer Organisation. N
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Verwenden des Verfügbarkeits Schlüssels für Exchange Online und Skype for Business
 
-Wenn Sie eine DEP mit dem Kundenschlüssel erstellen, generiert Office 365 einen Daten Verschlüsselungsrichtlinien Schlüssel (DEP-Schlüssel), der dieser DEP zugeordnet ist. Der Dienst verschlüsselt den DEP-Schlüssel dreimal: einmal mit jedem Kundenschlüssel und einmal mit dem Verfügbarkeits Schlüssel. Nur die verschlüsselten Versionen des DEP-Schlüssels werden gespeichert, und ein DEP-Schlüssel kann nur mit den Kunden Schlüsseln oder dem Verfügbarkeits Schlüssel entschlüsselt werden. Der DEP-Schlüssel wird dann zum Verschlüsseln von Post Fach Schlüsseln verwendet, die dann zum Verschlüsseln einzelner Postfächer verwendet werden.
+Wenn Sie eine DEP mit dem Kundenschlüssel erstellen, generiert Office 365 einen Daten Verschlüsselungsrichtlinien Schlüssel (DEP-Schlüssel), der dieser DEP zugeordnet ist. Der Dienst verschlüsselt den DEP-Schlüssel dreimal: einmal mit jedem Kundenschlüssel und einmal mit dem Verfügbarkeits Schlüssel. Nur die verschlüsselten Versionen des DEP-Schlüssels werden gespeichert, und ein DEP-Schlüssel kann nur mit den Kunden Schlüsseln oder dem Verfügbarkeits Schlüssel entschlüsselt werden. Der DEP-Schlüssel wird dann zum Verschlüsseln von Post Fach Schlüsseln verwendet, die einzelne Postfächer verschlüsseln.
   
 Office 365 folgt diesem Prozess zum Entschlüsseln und Bereitstellen von Daten, wenn Kunden den Dienst verwenden:
   
@@ -171,7 +171,7 @@ Automatisierte Systeme in Office 365 verarbeiten alle Daten, die durch das Syste
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online-und Skype for Business-verfüg barkeits Schlüsselprotokollierung
 
-Exchange Online und Skype for Business verwenden den Verfügbarkeits Schlüssel automatisch bei vorübergehenden Fehlern. Wenn dieses Fallback auftritt, veröffentlicht Office 365 Kunden sichtbare Protokolle, auf die über das Security and Compliance Center zugegriffen werden kann. Ein Überwachungsprotokolleintrag für den Verfügbarkeits Schlüssel Vorgang wird jedes Mal generiert, wenn diese Dienste mit dem Verfügbarkeits Schlüssel wechseln. Ein neuer Datensatztyp namens "Customer Key Service Encryption" mit Aktivitätstyp "Fallback auf Verfügbarkeits Taste" ermöglicht Administratoren das Filtern von [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) -Suchergebnissen, um die Verfügbarkeits Schlüsseldaten Sätze anzuzeigen. Der Schlüsseldatensatz für die Verfügbarkeit wird nur generiert, wenn der Kundenschlüssel für den Zugriff auf die Daten verwendet wird und nicht für Microsoft-Dienst verwaltete Schlüssel.
+Exchange Online und Skype for Business verwenden den Verfügbarkeits Schlüssel automatisch bei vorübergehenden Fehlern. Wenn dieses Fallback auftritt, veröffentlicht Office 365 Kunden sichtbare Protokolle, auf die über das Security and Compliance Center zugegriffen werden kann. Ein Überwachungsprotokolleintrag für den Vorgang des Verfügbarkeits Schlüssels wird jedes Mal generiert, wenn diese Dienste den Verfügbarkeits Schlüssel verwenden. Ein neuer Datensatztyp namens "Customer Key Service Encryption" mit Aktivitätstyp "Fallback auf Verfügbarkeits Taste" ermöglicht Administratoren das Filtern von [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) -Suchergebnissen, um die Verfügbarkeits Schlüsseldaten Sätze anzuzeigen. Der Schlüsseldatensatz für die Verfügbarkeit wird nur generiert, wenn der Kundenschlüssel für den Zugriff auf die Daten verwendet wird und nicht für Microsoft-Dienst verwaltete Schlüssel.
 
 Protokolldatensätze umfassen Attribute wie Datum, Uhrzeit, Aktivität, Organisations-ID und Daten Verschlüsselungsrichtlinien-ID. Der Datensatz ist im Rahmen Office 365 einheitlichen Überwachungsprotokollen verfügbar und kann über die Registerkarte Suche im Office 365 Security and Compliance Center-Überwachungsprotokoll abgerufen werden.
 

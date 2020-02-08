@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, D
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 915e80a07d77e5ce2200228a1c3f5b77511d5f1d
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: e95abf5972a67f9330c26840e223eff69ae1436a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749770"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594405"
 ---
 # <a name="microsofts-data-protection-officer"></a>Datenschutzbeauftragter von Microsoft
 

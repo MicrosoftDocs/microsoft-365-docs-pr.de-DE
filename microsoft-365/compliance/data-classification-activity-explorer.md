@@ -1,5 +1,7 @@
 ---
 title: Verwenden des Datenklassifizierungsaktivitäten-Explorers
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Aktivitäten-Explorer rundet die Funktionalität der Datenklassifizierungsfunktion ab, indem Sie die Aktionen, die Benutzer mit Ihren beschrifteten Inhalten durchführen, anzeigen und filtern können.
-ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233696"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595472"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>Anzeigen von Aktivitäten mit beschrifteten Inhalten (Vorschau)
 
@@ -47,7 +49,6 @@ Jedem Konto, das auf den Aktivitäten-Explorer zugreift und diesen verwendet, mu
 - Office 365 (E5)
 - Advanced Compliance (E5)-Add-on
 - Advanced Threat Intelligence (E5)-Add-on
-- Advanced Threat Protection (E5)-Add-on
 
 ## <a name="activity-type"></a>Aktivitätstyp
 

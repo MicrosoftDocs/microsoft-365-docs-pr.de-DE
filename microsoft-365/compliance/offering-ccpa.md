@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 24217ed5782d14cc67277bc980e4a94b7bc904f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601982"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851842"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
 ## <a name="ccpa-overview"></a>CCPA-Übersicht
 
-Das California Consumer Privacy Act (CCPA) ist das erste umfassende Datenschutzgesetz in den Vereinigten Staaten. Sie bietet kalifornischen Verbrauchern eine Vielzahl von Datenschutz rechten.  Unternehmen, die von der CCPA reguliert werden, haben eine Reihe von Verpflichtungen gegenüber diesen Verbrauchern, einschließlich Angaben, allgemeiner Datenschutzverordnung (dsgvo) – wie Verbraucher-Datensubjekt Rechte (DSRs), ein "Opt-out" für bestimmte Datentransfers und ein "Opt-in". Voraussetzung für Minderjährige.
+Das California Consumer Privacy Act (CCPA) ist das erste umfassende Datenschutzgesetz in den Vereinigten Staaten. Sie bietet kalifornischen Verbrauchern eine Vielzahl von Datenschutz rechten.  Unternehmen, die vom CCPA reguliert werden, haben eine Reihe von Verpflichtungen gegenüber diesen Verbrauchern, einschließlich Angaben, allgemeiner Datenschutzverordnung (dsgvo) – wie Verbraucher-Datensubjekt Rechte (DSRs), ein "Opt-out" für bestimmte Datentransfers und ein "Opt-in". Voraussetzung für Minderjährige.
 
 Die CCPA gilt nur für Unternehmen, die in Kalifornien Geschäfte tätigen, die eine oder mehrere der folgenden Kriterien erfüllen: (1) einen Bruttojahresumsatz von mehr als $25 Millionen, oder (2) mehr als 50% ihres Jahreseinkommens aus dem Verkauf von California Consumer Personal ableiten. Informationen, oder (3) kaufen, verkaufen oder Teilen Sie die persönlichen Informationen von mehr als 50.000 kalifornischen Verbrauchern jährlich.
 
@@ -35,11 +35,11 @@ Die California AG wird das CCPA erzwingen und wird befugt sein, Nichteinhaltung 
 
 ## <a name="microsoft-and-the-ccpa"></a>Microsoft und das CCPA
 
-Für kommerzielle Kunden, die in Kalifornien Geschäfte tätigen, wird Microsoft als "Dienstleistungsanbieter" in Bezug auf unsere Online-Dienste und das professionelle Dienstangebot fungieren.  Die Bestimmungen der Online Services Terms (Ost) und des Microsoft Professional Services Data Protection Addendum (MSDPA) erfüllen bereits die Anforderungen für Dienstanbieter im Rahmen des CCPA und sind im allgemeinen ausreichend, um Kunden die Weitergabe von Daten zu ermöglichen. zu unseren Online-Diensten. Daher sind keine weiteren vertraglichen Änderungen erforderlich, damit sich Kunden auf Microsoft als Dienstanbieter unter dem CCPA verlassen können.
+Für kommerzielle Kunden, die in Kalifornien tätig sind, wird Microsoft als "Dienstleistungsanbieter" im Hinblick auf unsere Online-Dienste und das professionelle Dienstangebot fungieren.  Die Bestimmungen der Online Services Terms (Ost) und des Microsoft Professional Services Data Protection Addendum (MSDPA) erfüllen bereits die Anforderungen für Dienstanbieter im Rahmen des CCPA und sind im allgemeinen ausreichend, um Kunden die Weitergabe von Daten zu ermöglichen. zu unseren Online-Diensten. Daher sind keine weiteren vertraglichen Änderungen erforderlich, damit sich Kunden auf Microsoft als Dienstanbieter unter dem CCPA verlassen können.
 
 Wie in der Ost dargelegt, erfüllt Microsoft alle Gesetze und Verordnungen, die für die Online Dienste gelten, einschließlich der CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure-Entwicklungs-OPS
@@ -73,9 +73,9 @@ Es gibt viele Unterschiede. Es ist einfacher, sich auf die Gemeinsamkeiten zu ko
 - Transparenz/Offenlegungspflichten;
 - Verbraucher-Rechte für den Zugriff, Löschung und Empfang einer Kopie von Daten,
 - Definition von "Dienstanbietern", die dem entspricht, wie dsgvo "Prozessoren" mit einer ähnlichen vertraglichen Verpflichtung definiert und
-- Definition von "Unternehmen", die die dsgvo Definition von "Controllern" umfasst.
+- Definition von "Unternehmen", die die dsgvo-Definition von "Controllern" umfasst.
 
-Der größte Unterschied im CCPA besteht in der Kernanforderung, ein Opt-out vom Verkauf von Daten an Drittanbieter zu ermöglichen (wobei „Verkauf“ allgemein definiert ist, um die gemeinsame Nutzung von Daten als wertvolle Gegenleistung zu beinhalten).
+Der größte Unterschied in CCPA ist die zentrale Voraussetzung, um ein Opt-out aus dem Verkauf von Daten an Dritte zu ermöglichen (wobei "sale" im allgemeinen definiert ist, um die gemeinsame Nutzung von Daten für wertvolle Überlegungen einzubeziehen).
 
 **Welche Rechte müssen Unternehmen laut der CCPA gewähren?**
 
@@ -92,6 +92,10 @@ Das CCPA erfordert unter anderem regulierte Unternehmen, die persönliche Inform
 
 - CCPA führt elterliche Zustimmungsverpflichtungen im Einklang mit dem Children's Online Privacy Protection Act (COPPA) für Kinder unter 13 Jahren ein.
 - Für Kinder zwischen 13 und 16 Jahren auferlegt CCPA eine neue Verpflichtung, die Zustimmung des Kindes zu erhalten.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+
+[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [CCPA-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118004) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

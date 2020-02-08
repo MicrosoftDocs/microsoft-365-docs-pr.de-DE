@@ -1,5 +1,7 @@
 ---
 title: Schutz von Informationen in Office 365 für die DSGVO
+f1.keywords:
+- CSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Diese Lösung veranschaulicht, wie vertrauliche Daten, die in Office 365-Diensten gespeichert sind, geschützt werden können.
-ms.openlocfilehash: 9540eb41c6603a7ee09cb5499d09f464353d9fd9
-ms.sourcegitcommit: 4d9a075f4c890fa5bbd1751740a5540edbc1b999
+ms.openlocfilehash: a6bc231c82e65e7361cdcda7c2087bc48a55dcc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "38710044"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597842"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Schutz von Informationen in Office 365 für die DSGVO
 
