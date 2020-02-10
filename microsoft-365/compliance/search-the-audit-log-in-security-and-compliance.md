@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662001"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862125"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -77,17 +77,17 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   > [!IMPORTANT]
   > Wenn Sie einem Benutzer auf der Seite **Berechtigungen** im Security and Compliance Center die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zuweisen, kann er das Office 365-Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Der Grund dafür ist, dass es sich bei dem zugrundeliegenden Cmdlet, das für die Durchsuchung des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt.
 
-- Wenn eine überwachte Aktivität von einem Benutzer oder Administrator ausgeführt wird, wird ein Überwachungsdatensatz erstellt und im Office 365-Überwachungsprotokoll Ihrer Organisation gespeichert. Die Zeitdauer, die ein Überwachungsdatensatz aufbewahrt (und im Überwachungsprotokoll durchsuchbar) ist, hängt von Ihrem Office 365-Abonnement und insbesondere vom Lizenztyp ab, der einem bestimmten Benutzer zugewiesen ist.
+- Wenn eine überwachte Aktivität von einem Benutzer oder Administrator ausgeführt wird, wird ein Überwachungsdatensatz erstellt und im Office 365-Überwachungsprotokoll Ihrer Organisation gespeichert. Die Zeitdauer, die ein Überwachungsdatensatz aufbewahrt (und im Überwachungsprotokoll durchsuchbar) ist, hängt von Ihrem Office 365- oder Microsoft 365-Abonnement und insbesondere vom Lizenztyp ab, der einem bestimmten Benutzer zugewiesen ist.
 
-  - **Office 365 E3:** Überwachungsdatensätze werden 90 Tage lang aufbewahrt. Sie können das Überwachungsprotokoll also nach Aktivitäten durchsuchen, die innerhalb der letzten 90 Tage ausgeführt wurden.
+  - **Office 365- und Microsoft 365 E3:** Überwachungsdatensätze werden 90 Tage lang aufbewahrt. Sie können das Überwachungsprotokoll also nach Aktivitäten durchsuchen, die innerhalb der letzten 90 Tage ausgeführt wurden.
 
     > [!NOTE]
     > Die Überwachung von Postfächern ist zwar standardmäßig aktiviert, möglicherweise stellen Sie aber fest, dass Postfachüberwachungsereignisse für einige Benutzer beim Durchsuchen von Überwachungsprotokollen im Security & Compliance Center oder über die Office 365-Verwaltungsaktivitäts-API nicht zu finden sind. Weitere Informationen finden Sie unter [Weitere Informationen zur Postfachüberwachungsprotokollierung](enable-mailbox-auditing.md#more-information).
 
-  - **Office 365 E5:** Überwachungsdatensätze werden 90 Tage lang aufbewahrt. Die Möglichkeit zur Aufbewahrung von Überwachungsdatensätzen für ein Jahr kann möglicherweise für E5-Benutzer und Benutzer mit einer E3-Lizenz und einer Office 365 Advanced Compliance-Add-on-Lizenz verfügbar sein.
+  - **Office 365- oder Microsoft 365 E5-Benutzer oder Benutzer mit einer Microsoft 365 E5 Compliance-Add-On-Lizenz:** Überwachungsdatensätze für Azure Active Directory-, Exchange- und SharePoint-Aktivitäten werden standardmäßig ein Jahr lang aufbewahrt. Organisationen können auch Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen, um Überwachungsdatensätze für Aktivitäten in anderen Diensten bis zu ein Jahr lang aufzubewahren. Weitere Informationen finden Sie unter [Verwalten der Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md).
 
     > [!NOTE]
-    > Das private Preview-Programm für die einjährige Aufbewahrungszeit für Überwachungseinträge für E5-Organisationen (oder für Benutzer in E3-Organisationen, die über erweiterte Compliance-Add-on-Lizenzen verfügen) ist für Neuregistrierungen nicht mehr verfügbar. Dieser Artikel wird aktualisiert, wenn der einjährige Aufbewahrungszeitraum in der öffentlichen Vorschau verfügbar oder zur allgemeinen Verfügbarkeit freigegeben ist.
+    > Wenn Ihre Organisation am privaten Vorschauprogramm für die einjährige Aufbewahrung von Überwachungsdatensätzen teilgenommen hat, wird die Aufbewahrungsdauer für Überwachungsdatensätze, die vor dem Datum des Rollouts zur allgemeinen Verfügbarkeit generiert wurden, nicht zurückgesetzt.
 
 - Wenn Sie die Überwachungsprotokollsuche in Office 365 für Ihre Organisation deaktivieren möchten, können Sie in der mit Ihrer Exchange Online-Organisation verbundenen Remote-PowerShell den folgenden Befehl ausführen:
 
@@ -851,10 +851,6 @@ Nachfolgend finden Sie einige Tipps für die Suche nach Exchange-Administratorak
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Wo finde ich Informationen zu den Funktionen, die der Überwachungsdienst in Office 365 bietet?**
-
-Weitere Informationen zu den Funktionen für Überwachung und Berichterstellung in Office 365 finden Sie unter [Überwachung und Berichterstellung in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview).
-
 **Welche verschiedenen Office 365-Dienste werden zur Zeit überwacht?**
 
 Die am häufigsten verwendeten Office 365-Dienste wie Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection und Power BI werden überwacht. Eine Liste der Dienste mit Überwachung finden Sie [am Anfang dieses Artikels ](search-the-audit-log-in-security-and-compliance.md).
@@ -869,16 +865,13 @@ Die meisten Überwachungsdaten sind innerhalb von 30 Minuten verfügbar, aber es
 
 **Wie lange werden die Überwachungseinträge aufbewahrt?**
 
-Wie zuvor erläutert, hängt der Aufbewahrungszeitraum für Überwachungseinträge vom Office 365-Abonnement Ihrer Organisation ab.
+Wie zuvor erläutert, hängt der Aufbewahrungszeitraum für Überwachungseinträge vom Office 365- oder Microsoft-Abonnement Ihrer Organisation ab.
 
-- **Office 365 E3:** Überwachungsdatensätze werden 90 Tage lang aufbewahrt.
+  - **Office 365- und Microsoft 365 E3:** Überwachungsdatensätze werden 90 Tage lang aufbewahrt. Sie können das Überwachungsprotokoll also nach Aktivitäten durchsuchen, die innerhalb der letzten 90 Tage ausgeführt wurden.
 
-- **Office 365 E5:** Überwachungsdatensätze werden 90 Tage lang aufbewahrt. Die Möglichkeit zur Aufbewahrung von Überwachungsdatensätzen für ein Jahr kann möglicherweise für E5-Benutzer und Benutzer mit einer E3-Lizenz und einer Office 365 Advanced Compliance-Add-on-Lizenz verfügbar sein.
+  - **Office 365- oder Microsoft 365 E5-Benutzer oder Benutzer mit einer Microsoft 365 E5 Compliance-Add-On-Lizenz:** Überwachungsdatensätze für Azure Active Directory-, Exchange- und SharePoint-Aktivitäten werden standardmäßig ein Jahr lang aufbewahrt. Organisationen können auch Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen, um Überwachungsdatensätze für Aktivitäten in anderen Diensten bis zu ein Jahr lang aufzubewahren. Weitere Informationen finden Sie unter [Verwalten der Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md).
 
-  > [!NOTE]
-  > Wie zuvor erläutert, ist das private Vorschauprogramm für die einjährige Aufbewahrungszeit für Überwachungseinträge für E5-Organisationen (oder für Benutzer in E3-Organisationen, die über erweiterte Compliance-Add-on-Lizenzen verfügen) für Neuregistrierungen nicht mehr verfügbar. Dieser Artikel wird aktualisiert, wenn der einjährige Aufbewahrungszeitraum in der öffentlichen Vorschau verfügbar oder zur allgemeinen Verfügbarkeit freigegeben ist.
-
-Beachten Sie auch, dass die Dauer des Aufbewahrungszeitraums für Überwachungsdatensätze auf der Lizenzierung pro Benutzer basiert. Wenn z. b. einem Benutzer in Ihrer Organisation eine Office 365 E3-oder E5-Lizenz zugewiesen worden ist, werden die Überwachungseinträge für von diesem Benutzer ausgeführte Aktivitäten 90 Tage lang aufbewahrt.
+Beachten Sie auch, dass die Dauer des Aufbewahrungszeitraums für Überwachungsdatensätze auf der Lizenzierung pro Benutzer basiert. Wenn z. b. einem Benutzer in Ihrer Organisation eine Office 365 E3-Lizenz zugewiesen worden ist, werden die Überwachungseinträge für von diesem Benutzer ausgeführte Aktivitäten 90 Tage lang aufbewahrt.
 
 **Kann ich programmgesteuert auf die Überwachungsdaten zugreifen?**
 
@@ -902,4 +895,6 @@ Nein. Zurzeit stellen wir Audit-Pipelines in den Regionen NA (Nordamerika), EMEA
 
 **Sind die Überwachungsdaten verschlüsselt?**
 
-Überwachungsdaten werden in Exchange-Postfächern (ruhende Daten) in derselben Region gespeichert, in der die Überwachungspipeline bereitgestellt wird. Diese Daten sind nicht verschlüsselt. Zu übertragende Daten werden jedoch immer verschlüsselt.
+Überwachungsdaten werden in Exchange-Postfächern (ruhende Daten) in derselben Region gespeichert, in der die einheitlichen Überwachungspipeline bereitgestellt wird. Ruhende Postfachdaten werden durch Exchange nicht verschlüsselt. Bei der Verschlüsselung auf Dienstebene werden jedoch alle Postfachdaten verschlüsselt, da Exchange-Server in Microsoft-Rechenzentren über BitLocker verschlüsselt werden. Weitere Informationen finden Sie unter [Office 365-Verschlüsselung in Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md).
+
+E-Mail- Daten werden während der Übertragung jedoch immer verschlüsselt.

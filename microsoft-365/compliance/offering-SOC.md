@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662021"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851882"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -128,6 +128,10 @@ Ja. Wenn Sie Ihre Anwendungen und Daten zu im Umfang enthaltenen Microsoft Cloud
 **Wo beginne ich mit dem Complianceprozess für meine eigene Organisation?**
 
 Das [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) ist eine nützliche Ressource, um die SOC-Berichterstellungsprozesse zu verstehen und ihren Einsatz in Ihrer Organisation zu fördern.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [SOC 1-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117918) und die [SOC 2-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117919), mit denen Sie dafür sorgen können, dass Ihre Organisation die Anforderungen dieser Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

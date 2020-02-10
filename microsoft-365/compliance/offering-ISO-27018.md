@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 016d0f9fdd0795ea709f168a0fc8ba027f029e8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602232"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851872"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>ISO/IEC 27018-Verhaltenskodex zum Schutz von personenbezogenen Daten in der Cloud
 
@@ -106,7 +106,7 @@ Dieser Verhaltenskodex gilt für CSPs, die PII im Auftrag anderer Organisationen
 
 Im Kontext von ISO/IEC 27018:
 
-- „Controller” kontrollieren die Sammlung, Vorhaltung, Verarbeitung oder die Verwendung von personenbezogenen Informationen. Eingeschlossen sind dabei Controller, die im Auftrag eines anderen Unternehmens tätig sind.
+- „Controller” kontrollieren die Sammlung, Beibehaltung, Verarbeitung oder die Verwendung von personenbezogenen Informationen. Hierzu zählen auch Controller, die im Auftrag eines anderen Unternehmens tätig sind.
 - „Datenverarbeiter” verarbeiten Informationen im Auftrag von Controllern. Sie treffen keine Entscheidungen im Hinblick auf die Verwendung der Informationen oder die Zwecke der Verarbeitung. Microsoft – als Zulieferer – ist im Hinblick auf die Bereitstellung seiner Enterprise Cloud Services ein Datenverarbeiter.
 
 **Wo finde ich die Complianceinformationen von Microsoft für ISO/IEC 27018?**
@@ -120,6 +120,10 @@ Im Kontext von ISO/IEC 27018:
 Ja. Wenn Compliance mit ISO/IEC 27018 für Ihr Unternehmen und die in einem der im Umfang von Microsoft Enterprise Cloud enthaltenen Dienste wichtig ist, können Sie die Compliancebescheinigung von Microsoft für ISO/IEC 27018 mit der entsprechenden Zertifizierung von Microsoft nach ISO/IEC 27001 für Ihre Compliancebewertung verwenden.
 
 Sie sind jedoch dafür verantwortlich, einen Auditor mit der Prüfung Ihrer Implementierung unter Wahrung der Compliance zu beauftragen. Außerdem sind Sie für die Kontrollen und Prozesse in Ihrer eigenen Organisation zuständig.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [ISO 27018-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117523), mit der Sie dafür sorgen können, dass Ihre Organisation die Anforderungen dieser Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 
