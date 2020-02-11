@@ -202,6 +202,8 @@
           href: data-classification-content-explorer.md
         - name: Beschriftungs-Aktivität anzeigen (Vorschau)
           href: data-classification-activity-explorer.md
+        - name: Datenklassifizierung Public Preview Release Notes (Vorschau)
+          href: data-classification-pub-preview-relnotes.md
         - name: Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
           href: classifier-getting-started-with.md
         - name: Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
@@ -797,7 +799,7 @@
               href: gdpr-arc-azure.md
             - name: Dynamics 365
               href: gdpr-arc-dynamics365.md
-            - name: 'Microsoft Support #a0 Professional Services'
+            - name: Microsoft Support & Professional Services
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
@@ -816,7 +818,7 @@
               href: gdpr-dsr-dynamics365.md
             - name: Intune
               href: gdpr-dsr-intune.md
-            - name: 'Microsoft Support #a0 Professional Services'
+            - name: Microsoft Support & Professional Services
               href: gdpr-dsr-prof-services.md
             - name: Office 365
               href: gdpr-dsr-office365.md
@@ -826,9 +828,9 @@
           items:
             - name: Benachrichtigung bei Sicherheitsverletzungen
               href: gdpr-breach-notification.md
-            - name: 'Azure #a0 Dynamics 365'
+            - name: Azure & Dynamics 365
               href: gdpr-breach-azure-dynamics.md
-            - name: 'Microsoft Support #a0 Professional Services'
+            - name: Microsoft Support & Professional Services
               href: gdpr-breach-microsoft-support-professional-services.md
             - name: Office 365
               href: gdpr-breach-office365.md
@@ -840,7 +842,7 @@
               href: gdpr-dpia-azure.md
             - name: Dynamics 365
               href: gdpr-dpia-dynamics.md
-            - name: 'Microsoft Support #a0 Professional Services'
+            - name: Microsoft Support & Professional Services
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
