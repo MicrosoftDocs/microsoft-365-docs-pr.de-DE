@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: ddf37ec091aace486b2e4f199cf31f3c720d93a1
-  ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+  ms.openlocfilehash: f55a1404a76b55aab6ed6c0b46874fcc80dbbf87
+  ms.sourcegitcommit: d718a3a3ad293ca533ba355047a461b3ab6d4aa3
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/14/2019
-  ms.locfileid: "38627061"
+  ms.lasthandoff: 02/10/2020
+  ms.locfileid: "41882880"
 highlightedContent:
   items:
   - title: Schulung für Administratoren und IT-Experten
@@ -49,19 +49,19 @@ additionalContent:
       url: ./business/index.yml
     - title: Microsoft 365 Enterprise
       summary: Für große Organisationen entwickelt. Schützen Sie Ihr Unternehmen und transformieren Sie die Arbeitsweise mit Office-Apps, Windows 10 und Enterprise Mobility + Security.
-      url: ./enterprise/index.md
+      url: ./enterprise/index.yml
     - title: Microsoft 365 Education
       summary: Entwickelt für Pädagogen zum Entsperren von Kreativität, zur Förderung der Zusammenarbeit und zur Bereitstellung einer einfachen und sicheren Erfahrung in einer einzigen, erschwinglichen Lösung, die für Bildungseinrichtungen entwickelt wurde.
       url: https://docs.microsoft.com/education/
-    - title: Microsoft 365-Konformität
+    - title: Microsoft 365 Compliance
       summary: Unterstützen Sie Ihre Organisation beim Steuern von Informationen, beim Schutz vor Risiken und bei der Einhaltung gesetzlicher oder behördlicher Standards.
       url: ./compliance/index.yml
-    - title: Microsoft 365-Sicherheit
+    - title: Microsoft 365 Security
       summary: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihre Organisation besser auf Angriffsflächen schützen können.
       url: ./security/index.yml
     - title: Microsoft 365 für Kampagnen
       summary: Schützen Sie Ihre Kampagnen-oder Geschäftsdaten und-Kommunikation mit dieser empfohlenen Konfiguration für Microsoft 365 Business.
       url: ./campaigns/index.md
-    - title: Neu – Schulung und Zertifizierung von Microsoft 365 bei Microsoft Learn
-      summary: Brandneue Lernpfade, um Ihre Kenntnisse in Microsoft 365 zu verbessern und Zertifizierungen zu erwerben.
-      url: https://docs.microsoft.com/learn/m365/
+    - title: Microsoft Managed Desktop
+      summary: Microsoft Managed Desktop vereint Microsoft 365 Enterprise, Cloud-basierte Geräteverwaltung von Microsoft und Sicherheitsüberwachung, sodass Sie Ihre IT-Teams freigeben können, um sich auf die Kerngeschäfts Anforderungen zu konzentrieren.
+      url: ./managed-desktop/index.yml
