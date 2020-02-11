@@ -144,7 +144,7 @@
                   href: mtp/monitor-devices.md
                 - name: App-Überwachung und Berichterstellung
                   href: mtp/monitor-apps.md
-            - name: 'Berechtigungen #a0 Einstellungen'
+            - name: Berechtigungen & Einstellungen
               items:
                 - name: Verwalten des Zugriffs
                   href: mtp/mtp-permissions.md
@@ -172,14 +172,21 @@
             - name: Antispam- und Antischadsoftwareschutz
               href: ./office-365-security/anti-spam-and-anti-malware-protection.md
               items:
+                - name: Schutz vor Schadsoftware
+                  href: ./office-365-security/anti-malware-protection.md
+                  items:
+                    - name: Häufig gestellte Fragen zum Schutz vor Schadsoftware
+                      href: ./office-365-security/anti-malware-protection-faq-eop.md
+                    - name: Konfigurieren von Richtlinien für Antischadsoftware
+                      href: ./office-365-security/configure-anti-malware-policies.md
+                    - name: Schadsoftware und Nicht-Schadsoftware zur Analyse an Microsoft einreichen
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: Virenerkennung in SharePoint Online
+                      href: ./office-365-security/virus-detection-in-spo.md
                 - name: Erweiterte Spamfilterungsoptionen
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: Pool für besonders riskante Zustellungen für ausgehende Nachrichten
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: Häufig gestellte Fragen zum Schutz vor Schadsoftware
-                  href: ./office-365-security/anti-malware-protection-faq-eop.md
-                - name: Schutz vor Schadsoftware
-                  href: ./office-365-security/anti-malware-protection.md
                 - name: Häufig gestellte Fragen zum Antispamschutz
                   href: ./office-365-security/anti-spam-protection-faq.md
                 - name: Vermeiden von ungültigen Zeichen in ihren Spamfilterregeln und der Spamfilterrichtlinie
@@ -194,8 +201,6 @@
                   href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
                 - name: 'Bekämpfung von Junk-E-Mails, die an Office 365 gesendet werden'
                   href: ./office-365-security/fighting-junk-email.md
-                - name: Virenerkennung in SharePoint Online
-                  href: ./office-365-security/virus-detection-in-spo.md
                 - name: Office 365-Antispamschutz für E-Mails
                   href: ./office-365-security/anti-spam-protection.md
                 - name: Kombination von Richtlinien und Schutzmaßnahmen
@@ -214,8 +219,6 @@
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                 - name: Verwalten sicherer Absenderlisten für Absender von Massen-E-Mails
                   href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: Konfigurieren von Richtlinien für Antischadsoftware
-                  href: ./office-365-security/configure-anti-malware-policies.md
                 - name: Konfigurieren der Antispamrichtlinien
                   href: ./office-365-security/configure-the-anti-spam-policies.md
                 - name: Erstellen-von-Listen-blockierter-Sender-in-Office-365
@@ -240,8 +243,6 @@
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Administratorübermittlungen in Office 365
                   href: ./office-365-security/admin-submission.md
-                - name: Schadsoftware und Nicht-Schadsoftware zur Analyse an Microsoft einreichen
-                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: 'Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen'
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
                 - name: Antispam-Nachrichtenkopfzeilen
