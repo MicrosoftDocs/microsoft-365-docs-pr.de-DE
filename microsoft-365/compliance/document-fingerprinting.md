@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte hinter dem Dokument Fingerabdruck und das Erstellen eines mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: 6aea349495aa31eba8c9b57abffb92131d00864c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595200"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41892028"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -25,25 +25,25 @@ Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags v
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Grundlegendes Szenario für Dokumentfingerabdrücke
 
-Dokument Fingerabdruck ist eine DLP-Funktion (Data Loss Prevention, Verhinderung von Datenverlust), die ein Standardformular in einen vertraulichen Informationstyp umwandelt, das Sie in den Regeln ihrer DLP-Richtlinien verwenden können. Sie können beispielsweise einen Dokument Fingerabdruck basierend auf einer leeren Patent Vorlage erstellen und anschließend eine DLP-Richtlinie erstellen, mit der alle ausgehenden Patent Vorlagen mit vertraulichen Inhalten erkannt und blockiert werden. Optional können Sie [Richtlinien Tipps](use-notifications-and-policy-tips.md) einrichten, um Absender zu benachrichtigen, dass Sie möglicherweise vertrauliche Informationen senden, und der Absender sollte überprüfen, ob die Empfänger qualifiziert sind, die Patente zu erhalten. Dieser Vorgang funktioniert mit allen textbasierten Formularen, die in Ihrer Organisation verwendet werden. Weitere Beispiele für Formulare, die Sie hochladen können, sind: 
+Dokument Fingerabdruck ist eine DLP-Funktion (Data Loss Prevention, Verhinderung von Datenverlust), die ein Standardformular in einen vertraulichen Informationstyp umwandelt, das Sie in den Regeln ihrer DLP-Richtlinien verwenden können. Sie können beispielsweise einen Dokument Fingerabdruck basierend auf einer leeren Patent Vorlage erstellen und anschließend eine DLP-Richtlinie erstellen, mit der alle ausgehenden Patent Vorlagen mit vertraulichen Inhalten erkannt und blockiert werden. Optional können Sie [Richtlinien Tipps](use-notifications-and-policy-tips.md) einrichten, um Absender zu benachrichtigen, dass Sie möglicherweise vertrauliche Informationen senden, und der Absender sollte überprüfen, ob die Empfänger qualifiziert sind, die Patente zu erhalten. Dieser Vorgang funktioniert mit allen textbasierten Formularen, die in Ihrer Organisation verwendet werden. Weitere Beispiele für Formulare, die Sie hochladen können, sind:
   
 - Regierungsformulare
-    
-- HIPAA (Health Insurance Portability and Accountability Act)-kompatible Formulare
-    
+- HIPAA (Health Insurance Portability and Accountability Act)-kompatible Formulare  
 - Formulare mit Mitarbeiterinformationen für die Personalabteilung
-    
 - Speziell für Ihre Organisation erstellte benutzerdefinierte Formulare
-    
+
 Ideal wäre es, wenn es in Ihrer Organisation bereits eine etablierte Routine beim Umgang mit der Versendung vertraulicher Informationen gäbe. Nachdem Sie ein leeres Formular hochgeladen haben, um es in einen Fingerabdruck zu konvertieren und eine entsprechende Richtlinie einzurichten, erkennt DLP alle Dokumente in ausgehenden e-Mails, die mit diesem Fingerabdruck übereinstimmen.
-  
+
 ## <a name="how-document-fingerprinting-works"></a>Funktionsweise von Dokumentfingerabdrücken
 
 Wahrscheinlich haben Sie schon erraten, dass sich auf den Dokumenten keine echten Fingerabdrücke befinden - aber der Name erklärt sehr gut die Funktion. Genauso, wie der Fingerabdruck eines Menschen einzigartige Muster hat, haben Dokumente eine einzigartige Wortstruktur. Wenn Sie eine Datei hochladen, identifiziert DLP das eindeutige Wortmuster im Dokument, erstellt einen Dokument Fingerabdruck basierend auf diesem Muster und verwendet diesen Dokument Fingerabdruck, um ausgehende Dokumente zu erkennen, die dasselbe Muster enthalten. Aus diesem Grund werden die effektivsten Dokumentfingerabdrücke durch Hochladen von Formularen oder Vorlagen erstellt. Jede Person, die ein Formular ausfüllt, verwendet denselben Originalsatz von Wörtern und fügt dann ihre eigenen Wörter in das Dokument ein. Solange das ausgehende Dokument nicht kennwortgeschützt ist und den gesamten Text aus dem ursprünglichen Formular enthält, kann DLP ermitteln, ob das Dokument mit dem Fingerabdruck des Dokuments übereinstimmt.
-  
+
+> [!IMPORTANT]
+> Im Moment kann DLP Dokument Fingerabdruck als Erkennungsmethode nur in Exchange Online verwenden.
+
 Im folgenden Beispiel wird gezeigt, was passiert, wenn Sie einen Dokumentfingerabdruck auf Grundlage einer Patentvorlage erstellen. Sie können aber auch jedes andere Formular dafür verwenden.
   
-**Beispiel für ein Patentdokument, das zum Fingerabdruck einer Patentvorlage passt**
+### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Beispiel für ein Patentdokument, das zum Fingerabdruck einer Patentvorlage passt
 
 ![Document-Fingerprinting-Diagram. png](media/Document-Fingerprinting-diagram.png)
   
@@ -60,14 +60,12 @@ Die Dokument Fingerabdruckunterstützung unterstützt die gleichen Dateitypen, d
 Das Dokumentieren von Fingerabdrücken erkennt in den folgenden Fällen keine vertraulichen Informationen:
   
 - Kennwortgeschützte Dateien
-    
 - Dateien, die nur Bilder enthalten
-    
 - Dokumente, die nicht den gesamten Text aus dem Originalformular enthalten, aus dem der Dokumentfingerabdruck erstellt wurde
-    
+
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Verwenden von PowerShell zum Erstellen eines Klassifizierungsregel Pakets basierend auf dem Dokument Fingerabdruck
 
-Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security &amp; Compliance Center einen Dokument Fingerabdruck erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security &amp; Compliance Center einen Dokument Fingerabdruck erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP verwendet Klassifizierungsregel Pakete, um vertrauliche Inhalte zu erkennen. Zum Erstellen eines Klassifizierungsregel Pakets basierend auf einem Dokument Fingerabdruck verwenden Sie die Cmdlets **New-DlpFingerprint** und **New-DlpSensitiveInformationType** . Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Daten Klassifizierungsregel gespeichert werden, führen Sie immer **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **festlegen-DlpSensitiveInformationType** in derselben PowerShell-Sitzung aus. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können.
   

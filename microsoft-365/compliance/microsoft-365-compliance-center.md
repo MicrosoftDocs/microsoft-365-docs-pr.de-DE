@@ -1,5 +1,5 @@
 ---
-title: Übersicht über das Microsoft 365 Compliance Center
+title: Microsoft 365 Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das Microsoft 365 Compliance Center, einschließlich dessen, was es enthält, wie Sie es erhalten, und Ihre nächsten Schritte.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62c70fc4e7ea8a491db23a4fc9695b2b11b283ac
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602782"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916930"
 ---
-# <a name="overview-of-the-microsoft-365-compliance-center"></a>Übersicht über das Microsoft 365 Compliance Center
-
-## <a name="overview"></a>Übersicht
+# <a name="microsoft-365-compliance-center"></a>Microsoft 365 Compliance Center
 
 Wenn Sie an der Compliance-Haltung ihrer Organisation interessiert sind, werden Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com)lieben. Das Microsoft 365 Compliance Center bietet einfachen Zugriff auf die Daten und Tools, die Sie benötigen, um die Compliance-Anforderungen Ihrer Organisation zu bewältigen.
 
@@ -60,7 +58,7 @@ Sie können auch das Feature " **Karten hinzufügen** " verwenden, um zusätzlic
 
 ## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Einfache Navigation zu mehr Compliance-Features und-Funktionen
 
-Zusätzlich zu den Links in Karten auf der Startseite sehen Sie einen Navigationsbereich auf der linken Seite des Bildschirms, der Ihnen einfachen Zugriff auf Ihre [Benachrichtigungen](../security/office-365-security/alerts.md), [Berichte](reports-in-security-and-compliance.md), [Richtlinien](alert-policies.md), Compliance-Lösungen und vieles mehr bietet.
+Zusätzlich zu den Links in Karten auf der Startseite sehen Sie einen Navigationsbereich auf der linken Seite des Bildschirms, der Ihnen einfachen Zugriff auf Ihre [Benachrichtigungen](../security/office-365-security/alerts.md), [Berichte](reports-in-security-and-compliance.md), [Richtlinien](alert-policies.md), Compliance-Lösungen und vieles mehr bietet. Verwenden Sie zum Hinzufügen oder Entfernen von Optionen für einen benutzerdefinierten Navigationsbereich das Navigationssteuerelement **Anpassen** im Navigationsbereich. Dadurch werden die Einstellungen des **Navigationsbereichs anpassen** geöffnet, sodass Sie konfigurieren können, welche Elemente im Navigationsbereich angezeigt werden.
 
 |  |  |
 |---------|---------|
@@ -74,9 +72,9 @@ Zusätzlich zu den Links in Karten auf der Startseite sehen Sie einen Navigation
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Warum werde ich zum Office 365 Security #a0 Compliance Center gebracht, um einige Aufgaben wie das Definieren bestimmter Richtlinien abzuschließen?**
+**Warum werde ich zum Office 365 Security & Compliance Center gebracht, um einige Aufgaben wie das Definieren bestimmter Richtlinien abzuschließen?**
 
-Wir entwickeln weiterhin das Microsoft 365 Compliance Center und fügen in den kommenden Monaten weitere Funktionen und Lösungen hinzu. In der Zwischenzeit müssen einige Aufgaben im Office 365 Security #a0 Compliance Center ([https://protection.office.com](https://protection.office.com)) erfüllt sein. In diesen Fällen werden Sie automatisch an den Standort geleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
+Wir entwickeln weiterhin das Microsoft 365 Compliance Center und fügen in den kommenden Monaten weitere Funktionen und Lösungen hinzu. In der Zwischenzeit müssen einige Aufgaben im Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) erfüllt sein. In diesen Fällen werden Sie automatisch an den Standort geleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
 
 **Warum wird das neue Microsoft 365 Compliance Center noch nicht angezeigt?**
 
@@ -84,9 +82,9 @@ Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Ber
 
 **Einige meiner Kompatibilitätsfunktionen sind im Microsoft 365 Compliance Center nicht verfügbar. Was soll ich tun?**
 
-Wir fügen dem Microsoft 365 Compliance Center weiterhin Funktionalität hinzu. Wenn Sie nicht fündig werden, wie beispielsweise die Überwachungsprotokoll Suche, verwenden Sie das Office 365 Security #a0[https://protection.office.com](https://protection.office.com)Compliance Center (). Ihre Konfigurationen werden im vorhandenen Office 365 Security #a0 Compliance Center und im neuen Microsoft 365 Compliance Center automatisch gespeichert.
+Wir fügen dem Microsoft 365 Compliance Center weiterhin Funktionalität hinzu. Wenn Sie nicht fündig werden, wie beispielsweise die Überwachungsprotokoll Suche, verwenden Sie das Office 365 Security &[https://protection.office.com](https://protection.office.com)Compliance Center (). Ihre Konfigurationen werden im vorhandenen Office 365 Security & Compliance Center und im neuen Microsoft 365 Compliance Center automatisch gespeichert.
 
-Um dorthin zu gelangen, wählen Sie im Microsoft 365 Compliance Center im Navigationsbereich auf der linken Seite des Bildschirms **Weitere Ressourcen**aus, und wählen Sie dann unter **Office 365 Security #a0 Compliance Center**die Option **Öffnen**aus.
+Um dorthin zu gelangen, wählen Sie im Microsoft 365 Compliance Center im Navigationsbereich auf der linken Seite des Bildschirms **Weitere Ressourcen**aus, und wählen Sie dann unter **Office 365 Security & Compliance Center**die Option **Öffnen**aus.
 
 ![Weitere Ressourcen](media/m365-compliance-center-more-resources.png)
 
