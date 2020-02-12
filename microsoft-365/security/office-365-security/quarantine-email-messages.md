@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Sie können eine Quarantäne für eingehende e-Mail-Nachrichten in Office 365 einrichten, in der eingehende e-Mail-Nachrichten, die als Spam gefiltert wurden, Massen, Phishing-e-Mails und Schadsoftware, für eine spätere Überprüfung aufbewahrt werden können.
-ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598672"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957430"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>In Quarantäne stellen von E-Mail-Nachrichten in Office 365
 
@@ -34,7 +34,7 @@ Standardmäßig werden Nachrichten, die nach Phishing-, Malware-und Nachrichtenf
 Sowohl Benutzer als auch Administratoren können mit unter Quarantäne gestellten Nachrichten arbeiten. Benutzer können nur mit ihren eigenen gefilterten Nachrichten in Quarantäne arbeiten. Administratoren können Nachrichten in Quarantäne für alle Benutzer suchen und verwalten.
 
 > [!NOTE]
-> Vertrauenswürdige Phishing-Nachrichten und Nachrichten, die in Nachrichtenfluss Regelaktionen unter Quarantäne gestellt werden, sind nur in der Administrator Quarantäne verfügbar. Benutzer können auf Ihre eigenen Phishing-, Spam-und Massen-e-Mail-Nachrichten zugreifen. 
+> Schadsoftware, Phishing-Nachrichten mit hoher Zuverlässigkeit und Nachrichten, die in Nachrichtenfluss Regelaktionen unter Quarantäne gestellt werden, sind nur in der Administrator Quarantäne verfügbar. Benutzer können auf Ihre eigenen Phishing-, Spam-und Massen-e-Mail-Nachrichten zugreifen. 
   
 Erfahren Sie mehr über das Arbeiten mit isolierten Nachrichten:
   

@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als Office 365 globaler Administrator können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599822"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957410"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
@@ -31,13 +31,15 @@ ms.locfileid: "41599822"
 
 Derzeit stehen drei Arten von Angriffssimulationen zur Verfügung:
 
-- [Speer-Phishing-Angriff (Anzeigename)](#display-name-spear-phishing-attack)
+- [Anmeldeinformationen: Ernte Speer-Phishing-Angriff](#credential-harvest-spear-phishing-attack)
+
+- [Attachment Spear-Phishing-Angriff](#attachment-spear-phishing-attack)
 
 - [Kennwort-Spray-Angriff](#password-spray-attack)
 
 - [Brute-Force-Kennwortangriff](#brute-force-password-attack)
 
-Damit ein Angriff erfolgreich gestartet werden kann, müssen Sie sicherstellen, dass das Konto, mit dem Simulierte Angriffe ausgeführt werden, die mehrstufige Authentifizierung verwendet. Darüber hinaus müssen Sie ein Office 365 globaler Administrator oder Sicherheitsadministrator sein. (Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md).)
+Damit ein Angriff erfolgreich gestartet werden kann, müssen Sie sicherstellen, dass das Konto, mit dem Simulierte Angriffe ausgeführt werden, die mehrstufige Authentifizierung verwendet. Darüber hinaus müssen Sie ein Office 365 globaler Administrator oder Sicherheitsadministrator sein. (Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
 Um auf &amp; den Angriffs Simulator zuzugreifen, wählen Sie im Security Compliance Center **Threat Management** \> **Attack Simulator**aus.
 
@@ -49,13 +51,15 @@ Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen f
 
 - Sie sind ein Office 365 globaler Administrator oder Sicherheitsadministrator
 
+- Bei Phishing-Kampagnen werden Ereignisse für einen Zeitraum von 30 Tagen gesammelt und verarbeitet, historische Kampagnendaten werden bis zu 90 Tage nach dem Start der Kampagne verfügbar sein.
+
 - [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) ist aktiviert, für mindestens das Office 365 globales Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
 
 - Ihre Organisation verfügt über [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), in dem der Angriffs &amp; Simulator im Security Compliance Center sichtbar ist (zu **Threat Management** \> **Attack Simulator**wechseln).
 
     ![Threat Management – Angriffs Simulator](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>Spear-Phishing-Angriff (Anzeigename)
+## <a name="credential-harvest-spear-phishing-attack"></a>Anmeldeinformationen: Ernte Speer-Phishing-Angriff
 
 Phishing ist ein generischer Ausdruck für eine große Sammlung von Angriffen, die als Angriffs für soziale Technik bezeichnet werden. Dieser Angriff konzentriert sich auf Speer-Phishing, einen gezielteren Angriff, der auf eine bestimmte Gruppe von Personen oder eine Organisation abzielt. Normalerweise wird ein benutzerdefinierter Angriff mit einiger Aufklärung durchgeführt und ein Anzeigename verwendet, der eine Vertrauensstellung für den Empfänger generiert, beispielsweise eine e-Mail-Nachricht, die aussieht, als käme sie von einer Führungskraft in Ihrer Organisation.
 
@@ -103,11 +107,25 @@ Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst od
 
 11. Klicken Sie auf **weiter und** anschließend auf **Fertig stellen** , um den Angriff zu starten. Die Phishing-e-Mail-Nachricht wird an die Postfächer ihrer Zielempfänger übermittelt.
 
+## <a name="attachment-spear-phishing-attack"></a>Attachment Spear-Phishing-Angriff
+
+Phishing ist ein generischer Ausdruck für eine große Sammlung von Angriffen, die als Angriffs für soziale Technik bezeichnet werden. Dieser Angriff konzentriert sich auf Attachment Spear Phishing, einen gezielteren Angriff, der auf eine bestimmte Gruppe von Individuen oder eine Organisation abzielt. Normalerweise wird ein benutzerdefinierter Angriff mit einiger Aufklärung durchgeführt und ein Anzeigename verwendet, der eine Vertrauensstellung für den Empfänger generiert, beispielsweise eine e-Mail-Nachricht, die aussieht, als käme sie von einer Führungskraft in Ihrer Organisation.
+
+Dieser Angriff konzentriert sich darauf, dass Sie manipulieren können, von wem die Nachricht anscheinend stammt, indem Sie den Anzeigenamen und die Quelladresse ändern, aber diesmal im Gegensatz zum anbieten einer URL, um den Endbenutzer zum Klicken zu locken, bieten wir eine Anlage an, die wir versuchen, t zu erhalten. der Endbenutzer wird geöffnet. 
+
+### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>So simulieren Sie einen Anlagen Speer-Phishing-Angriff
+
+1. Befolgen Sie die Schritte von oben, wobei dieser Zeitpunkt auf **Attachment Attack** auf der Zielseite geklickt wurde.
+
+2. Während Sie den Assistenten Fortschreiten, werden zwei Optionen zum Konfigurieren angezeigt. Der **Anlagentyp**, wir unterstützen zwei Anlagentypen, **. docx** oder **. PDF**. **Name der Anlage**verwenden Sie dieses Feld, um einen aussagekräftigen Anlagennamen für die Kampagne zu erstellen.
+
 ## <a name="password-spray-attack"></a>Kennwort-Spray-Angriff
 
 Ein Kenn Wort Sprüh Angriff auf eine Organisation wird in der Regel verwendet, nachdem ein schlechter Akteur eine Liste gültiger Benutzer aus dem Mandanten erfolgreich erworben hat. Der fehlerhafte Akteur weiß um häufige Kennwörter, die von Benutzern verwendet werden. Dies ist ein weit verbreiteter Angriff, da es sich um einen günstigen Angriff handelt und schwerer zu erkennen ist als Brute-Force-Ansätze.
 
 Dieser Angriff konzentriert sich darauf, dass Sie ein gemeinsames Kennwort für eine große Zieldatenbank von Benutzern angeben können.
+
+**Wichtiger Hinweis** das Durchführen des Kenn Wort Sprüh Angriffs für Endbenutzerkonten, die bereits über mehrstufige Authentifizierung verfügen, führt zu einem erfolglosen Versuch für diese Konten in der Berichterstellung. Dies ist darauf zurückzuführen, dass die mehrstufige Authentifizierung eine der primären mechanims ist, die zum Schutz vor Kenn Wort Sprüh Angriffen verwendet werden sollen.
 
 ### <a name="to-simulate-a-password-spray-attack"></a>So simulieren Sie einen Kenn Wort Sprüh Angriff
 
@@ -125,6 +143,8 @@ Dieser Angriff konzentriert sich darauf, dass Sie ein gemeinsames Kennwort für 
 
 Ein Brute-Force-Kennwortangriff auf eine Organisation wird in der Regel verwendet, nachdem ein schlechter Akteur erfolgreich eine Liste mit wichtigen Benutzern aus dem Mandanten abgerufen hat. Dieser Angriff konzentriert sich auf das Ausprobieren einer Gruppe von Kennwörtern für das Konto eines einzelnen Benutzers.
 
+**Wichtiger Hinweis** das Durchführen der Brute-Force-Kennwortangriffe für Endbenutzerkonten, die bereits über mehrstufige Authentifizierung verfügen, führt zu einem erfolglosen Versuch für diese Konten in der Berichterstellung. Dies ist darauf zurückzuführen, dass die mehrstufige Authentifizierung eine der primären mechanims ist, die zum Schutz vor Brute-Force-Kennwortangriffen verwendet werden, was daher erwartet wird.
+
 ### <a name="to-simulate-a-brute-force-password-attack"></a>So simulieren Sie einen Brute-Force-Kennwortangriff
 
 1. Wählen Sie [im &amp; Security Compliance Center](https://protection.office.com) **Threat Management** \> **Attack Simulator**aus.
@@ -137,19 +157,7 @@ Ein Brute-Force-Kennwortangriff auf eine Organisation wird in der Regel verwende
 
 5. Wählen Sie **Fertig stellen** aus, um den Angriff zu starten.
 
-## <a name="new-features-in-attack-simulator"></a>Neue Features in Attack Simulator
 
-Neue Features wurden kürzlich dem Angriffs Simulator hinzugefügt. Zu diesen zählen:
-
-- Erweiterte Berichtsfunktionen. Die Möglichkeit, Daten wie die schnellste (oder langsamste) Zeit anzuzeigen, um eine e-Mail-Nachricht zur Angriffssimulation zu öffnen, die schnellste (oder langsamste) Zeit zum Klicken auf einen Link in der Nachricht und weitere Visualisierungen.
-
-- E-Mail-Vorlageneditor. Die Möglichkeit zum Erstellen einer benutzerdefinierten, wiederverwendbaren e-Mail-Vorlage, die Sie für zukünftige Angriffssimulationen verwenden können.
-
-- CSV-Empfänger Import. Die Möglichkeit, eine CSV-Datei zu verwenden, um Ihre Zielempfänger Liste zu importieren, anstatt die Adressbuch Auswahl zu verwenden.
-
-Weitere neue Features kommen in Kürze zum Angriff Simulator. Zu diesen zählen:
-
-- Phishing-Simulation für Anlagen Nutzlast. Die Möglichkeit, eine Anlage als Nutzlast für die Phishing-Simulation anstelle einer URL zu verwenden.
 
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was sich in der Entwicklung befindet, was sich ausrollt und was bereits gestartet wurde.
 

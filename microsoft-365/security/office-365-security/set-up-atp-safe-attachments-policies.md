@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails.
-ms.openlocfilehash: 6ec78f8734fd655d71d9ce2877baa8ebde2e50ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598342"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957180"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
@@ -43,13 +43,13 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
 - Stellen Sie sicher, dass Ihre Organisation über [Office 365 Advanced Threat Protection](office-365-atp.md)verfügt.
 
-- Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren oder zu bearbeiten, muss Ihnen eine entsprechende Rolle zugewiesen sein. In der folgenden Tabelle werden einige Beispiele beschrieben:
+- Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren (oder zu bearbeiten), müssen Sie entweder eine Exchange Online Organisations Verwaltungsrolle zugewiesen sein (Office 365 globaler Administrator ist standardmäßig dieser Rolle zugewiesen) oder sowohl Exchange Online Hygiene Management-als auch Sicherheits Administrator Rollen. Weitere Informationen finden Sie in der folgenden Tabelle:
 
   |Rolle|Wo/wie zugewiesen|
   |---------|---------|
   |Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-  |Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |Exchange Online Organisationsverwaltung, Exchange Online Hygiene Management |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
   Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -89,7 +89,7 @@ Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter
 
 |**Option**|**Effect**|**Verwenden Sie Folgendes, wenn Sie möchten:**|
 |:-----|:-----|:-----|
-|**Aus**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren der Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur bekannte, gute Anlagen senden werden  <br/> Verhindern unnötiger Verzögerungen beim Weiterleiten interner e-Mail  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Damit können Sie für eine kleine Gruppe von internen Absendern das abscansen sicherer Anhänge durch ATP deaktivieren.**|
+|**Off**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren der Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur bekannte, gute Anlagen senden werden  <br/> Verhindern unnötiger Verzögerungen beim Weiterleiten interner e-Mail  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Damit können Sie für eine kleine Gruppe von internen Absendern das abscansen sicherer Anhänge durch ATP deaktivieren.**|
 |**Monitor**|Sendet Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht.|Ermitteln, wo erkannte Schadsoftware in Ihrer Organisation eingeht|
 |**Block**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen fortgesetzt werden  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen|Schützen Ihrer Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen|
 |**Replace**|Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.|Erhöhen der Sichtbarkeit für Empfänger, die Anlagen aufgrund erkannter Schadsoftware entfernt haben|

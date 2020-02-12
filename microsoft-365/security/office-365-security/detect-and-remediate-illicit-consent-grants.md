@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599452"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957150"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
 
@@ -39,11 +39,13 @@ Sie müssen das Office 365 **Überwachungsprotokoll** durchsuchen, um nach Zeich
 
 1. Öffnen Sie das **Security and Compliance Center** in Ihrem Office 365 Mandanten.
 
-2. Navigieren Sie zum Knoten **Suche #a0 Untersuchung** , und wählen Sie **Überwachungsprotokoll** Suche aus.
+2. Navigieren Sie zu **Suchen** , und wählen Sie **Überwachungsprotokoll Suche**aus.
 
-3. Erstellen Sie eine Suche (alle Aktivitäten und alle Benutzer), und Filtern Sie die Ergebnisse zur Zustimmung zur Anwendung, und fügen Sie OAuth2PermissionGrant hinzu.
+3. Suche (alle Aktivitäten und alle Benutzer), und geben Sie bei Bedarf das Startdatum und das Enddatum ein, und klicken Sie dann auf **Suchen**. 
 
-4. Untersuchen Sie die erweiterten Eigenschaften, und überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
+4. Filtern Sie die Ergebnisse zur Zustimmung zur Anwendung, und fügen Sie OAuth2PermissionGrant hinzu.
+
+5. Klicken Sie auf das Ergebnis, um die Details der Aktivität anzuzeigen. Klicken Sie auf **Weitere Informationen** , um Details zur Aktivität abzurufen. Überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
 
 > [!NOTE]
 > • Es kann bis zu 30 Minuten oder bis zu 24 Stunden dauern, bis ein Ereignis eintritt, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. <br/><br/> • Der Zeitraum, in dem ein Überwachungsdatensatz aufbewahrt und im Überwachungsprotokoll durchsucht werden kann, hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).

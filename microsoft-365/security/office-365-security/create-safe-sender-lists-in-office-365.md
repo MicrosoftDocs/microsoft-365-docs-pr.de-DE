@@ -14,24 +14,24 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie die Zulassungsliste in einer Spamfilter Richtlinie anpassen.
-ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599532"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957260"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
 
 Wenn Sie sicherstellen möchten, dass Benutzer e-Mails von einem bestimmten Absender oder Absender empfangen, weil Sie Ihnen und ihren Nachrichten Vertrauen, stehen Ihnen mehrere Methoden zur Verfügung, aus denen Sie auswählen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, IP-Zulassungslisten, Absender-und Domänen Zulassungslisten für Spam Schutz.
 
 > [!IMPORTANT]
-> Zwar können Organisations Zulassungslisten verwendet werden, um falsch positive Ergebnisse zu beheben, dies sollte jedoch als vorübergehende Lösung betrachtet und nach Möglichkeit vermieden werden. Die Verwaltung von falsch positiven Ergebnissen mithilfe von Zulassungslisten wird nicht empfohlen, da Sie Ihre Organisation versehentlich bis hin zu Spoofing, Identitätswechsel und anderen Angriffen öffnen kann. Wenn Sie für diesen Zweck eine Zulassungsliste verwenden, müssen Sie wachsam sein und den Artikel zum [Senden von Spam-, nicht-Spam-und Phishing-Mails an Microsoft zur Analyse](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)parat halten.
+> Zwar können Organisations Zulassungslisten verwendet werden, um falsch positive Ergebnisse zu beheben, dies sollte jedoch als vorübergehende Lösung betrachtet und nach Möglichkeit vermieden werden. Die Verwaltung von falsch positiven Ergebnissen mithilfe von Zulassungslisten wird nicht empfohlen, da Sie Ihre Organisation versehentlich bis hin zu Spoofing, Identitätswechsel und anderen Angriffen öffnen kann. Wenn Sie für diesen Zweck eine Zulassungsliste verwenden, müssen Sie wachsam sein und den Artikel zum [Senden von Spam-, nicht-Spam-und Phishing-Mails an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)parat halten.
 
 Die empfohlene Methode zum Konfigurieren einer Liste sicherer Absender ist die Verwendung von Nachrichtenfluss Regeln, da dies die meiste Flexibilität bietet, um sicherzustellen, dass nur die richtigen Nachrichten zugelassen werden. Die e-Mail-Adresse und *domänenbasierte Zulassungslisten* für *Anti-Spam-Richtlinien* sind nicht so sicher wie *IP-Adress basierte Listen* , da Domänen einfach gefälscht werden können. Aber auch die IP-basierten Listen für Anti-Spam-Richtlinien stellen Risiken dar, da Sie es allen Domänen ermöglichen, die über diese IP gesendet werden, um die Spamfilterung zu umgehen. Achten Sie darauf, dass *alle* getroffenen Ausnahmen sorgfältig überwacht werden.
 
 > [!IMPORTANT]
-> Informationen zum Erstellen einer **Liste blockierter Absender** finden Sie [hier](create-block-sender-lists-in-office-365.md).
+> • Informationen zum Erstellen einer **Liste blockierter Absender** finden Sie [hier](create-block-sender-lists-in-office-365.md). <br/><br/> • Wenn Sie zulassen möchten, dass eine Absenderdomäne nicht authentifizierte e-Mails sendet (Schutz vor Spoofing schützt), aber keine Anti-Spam-und Anti-Malware-Überprüfungen umgeht, können Sie Sie der [Liste sicherer Absender von AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)hinzufügen.
 
 ## <a name="options-from-most-to-least-recommended"></a>Optionen von den meisten zu den am wenigsten empfohlenen
 
@@ -46,7 +46,7 @@ Sie sollten ihre Zulassungslisten immer einschränken, da Sie viele Sicherheitsm
 
 Um sicherzustellen, dass nur berechtigte Nachrichten in Ihrer Organisation zulässig sind, sollte die Bedingung einer der folgenden sein:
 
-- Verwenden Sie den Absender Authentifizierungsstatus der sendenden Domäne. Hierzu überprüfen Sie die Kopfzeile der Authentifizierungsergebnisse, um sicherzustellen, dass Sie "dmarc = Pass" oder "dmarc = bestguesspass" enthält. Dadurch wird sichergestellt, dass die sendende Domäne authentifiziert wurde und nicht gefälscht ist. Klicken Sie hier, um weitere Informationen zur e-Mail-Authentifizierung [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)und [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) zu erhalten.
+- Verwenden Sie den Absender Authentifizierungsstatus der sendenden Domäne. Hierzu überprüfen Sie die Kopfzeile der Authentifizierungsergebnisse, um sicherzustellen, dass Sie "dmarc = Pass" oder "dmarc = bestguesspass" enthält. Dadurch wird sichergestellt, dass die sendende Domäne authentifiziert wurde und nicht gefälscht ist. Klicken Sie hier, um weitere Informationen zur e-Mail-Authentifizierung [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md) zu erhalten.
 
 - Wenn die sendende Domäne keine Authentifizierung aufweist, verwenden Sie die sendende Domäne *sowie* eine sendende IP-Adresse (oder einen IP-Bereich). Stellen Sie sicher, dass Sie so *restriktiv wie möglich*sind, das Ziel ist, dass Sie dies so sicher wie möglich tun. Ein IP-Bereich größer als/24 wird *nicht* empfohlen. Vermeiden Sie das Hinzufügen von IP-Adressbereichen, die zu Consumer-Diensten oder gemeinsam genutzten Infrastrukturen gehören.
 
@@ -87,7 +87,7 @@ Wenn es nicht möglich ist, Nachrichtenfluss Regeln zu verwenden, um einen besti
 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>Verwenden von Absender-/Domänen Zulassungslisten für Anti-Spam-Richtlinien
 
-Die am wenigsten wünschenswerte Option besteht darin, nach Absender/Domäne zu autorisieren. Diese Option sollte *möglichst vermieden werden, da* Spam/Spoof/Phishing-Schutz vollständig umgangen wird und die Absenderauthentifizierung nicht ausgewertet wird. Diese Methode erhöht das Risiko, dass e-Mails von fehlerhaften Akteuren empfangen werden, und wird am besten vorübergehend und nur beim Testen empfohlen. Die detaillierten Schritte finden [Sie unter Configure your Spamfilter Policies](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) Document.
+Die am wenigsten wünschenswerte Option besteht darin, nach Absender/Domäne zu autorisieren. Diese Option sollte *möglichst vermieden werden, da* Spam/Spoof/Phishing-Schutz vollständig umgangen wird und die Absenderauthentifizierung nicht ausgewertet wird. Diese Methode erhöht das Risiko, dass e-Mails von fehlerhaften Akteuren empfangen werden, und wird am besten vorübergehend und nur beim Testen empfohlen. Die detaillierten Schritte finden Sie im Thema [configure your Spamfilter Policies](configure-your-spam-filter-policies.md) .
 
 Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
 

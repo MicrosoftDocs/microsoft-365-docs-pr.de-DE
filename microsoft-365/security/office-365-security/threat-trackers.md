@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598182"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957360"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -55,7 +55,7 @@ In der Regel werden bemerkenswerte Tracker nur für ein paar Wochen veröffentli
   
 ### <a name="trending-trackers"></a>Trend-Tracker
 
-Trending Tracker (früher als Kampagnen bezeichnet) zeigen neue Bedrohungen an, die in der letzten Woche nicht in der e-Mail-Adresse Ihres Unternehmens gesehen wurden.
+Trending Tracker (früher als Kampagnen bezeichnet) zeigen neue Bedrohungen an, die in der letzten Woche in der e-Mail-Adresse Ihrer Organisation eingegangen sind.
   
 ![Beispiel für Trending Malware Campaigns widget](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   

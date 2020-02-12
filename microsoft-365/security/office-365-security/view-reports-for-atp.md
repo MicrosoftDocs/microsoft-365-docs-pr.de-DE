@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/10/2020
+ms.date: 02/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: a1db932dda8b49d2d17805e605e11bc654c0e318
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a7ee065447c7351f02d1ff88239b1c41b7e874b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598072"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957380"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -45,7 +45,7 @@ Der **Status Bericht "Threat Protection** " ist eine einzelne Ansicht, in der In
 
 Der Bericht enthält eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die durch das Anti-Malware-Modul, die [Zero-Hour-automatische Bereinigung (AUTOPURGE)](zero-hour-auto-purge.md)und ATP-Features wie [ATP-sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [ATP-Anti-Phishing-Funktionen](atp-anti-phishing.md)blockiert wurden. 
 
-Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kategorisierung der Informationen in diesem Bericht. Insbesondere gibt es ein Menü "Aufteilen von" für *e-Mails #a0 Phishing* -und *e-Mail-#a1 Malware-Ansichten*. Die Daten werden in folgendem aufgeschlüsselt:
+Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kategorisierung der Informationen in diesem Bericht. Insbesondere gibt es ein Menü "Aufteilen von" für *e-Mails > Phishing* -und *e-Mail-> Malware-Ansichten*. Die Daten werden in folgendem aufgeschlüsselt:
 
 | |  |
 |---------|---------|
@@ -55,11 +55,11 @@ Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kate
 | | |
 
 > [!TIP]
-> Sowohl die e-Mail-#a0 Phishing | Schadsoftware-Ansichten weisen eine granulare Aufschlüsselung der angezeigten Erkennungstechnologien auf, wobei Kategorien wie *ATP-generierte dateireputation*, *Datei Detonation*, *URL-Detonation*, *Antispoofing: DMARC-Fehler*hilfreich ist, um genau zu ermitteln, welche Funktion Ihre Organisation veranlasst hat, Bedrohungen einzufangen.
+> Sowohl die e-Mail-> Phishing | Schadsoftware-Ansichten weisen eine granulare Aufschlüsselung der angezeigten Erkennungstechnologien auf, wobei Kategorien wie *ATP-generierte dateireputation*, *Datei Detonation*, *URL-Detonation*, *Antispoofing: DMARC-Fehler*hilfreich ist, um genau zu ermitteln, welche Funktion Ihre Organisation veranlasst hat, Bedrohungen einzufangen.
 
 ![Dropdown mit dem Status Bericht zum Bedrohungsschutz mit "aufschlüsseln nach".](../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Diese Ansichten bieten Ihnen die Möglichkeit, über eine Schaltfläche per Mausklick (in e-Mail #a0 Phishing, e-Mail-#a1 Schadsoftware und Inhalte #a2 Malware Ansichten) zu exportieren. Die aggregierten Daten, die auf Ihren Computer exportiert werden, können in Excel geöffnet werden.
+Diese Ansichten bieten Ihnen die Möglichkeit, über eine Schaltfläche per Mausklick (in e-Mail > Phishing, e-Mail-> Schadsoftware und Inhalte > Malware Ansichten) zu exportieren. Die aggregierten Daten, die auf Ihren Computer exportiert werden, können in Excel geöffnet werden.
 
 ![Diese Grafik zeigt den Export als Option im Menü für die Malware-Ansicht, rechts zwischen Create Schedule und Request Report.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
@@ -143,6 +143,7 @@ Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden k�
 - Für das Security &amp; Compliance Center müssen Sie eine der folgenden Rollen zugewiesen haben:
     - Organisationsverwaltung
     - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
+    - Sicherheits Operator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
     - Sicherheitsleseberechtigter
 
 - Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
@@ -168,5 +169,7 @@ Wenn Sie keine Daten in ihren ATP-Berichten sehen, überprüfen Sie, ob Ihre Ric
 [Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center](create-a-schedule-for-a-report.md)
   
 [Einrichten und Herunterladen eines benutzerdefinierten Berichts im Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
+
+[Rollen Berechtigungen (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
   
 
