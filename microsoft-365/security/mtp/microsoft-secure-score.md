@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600172"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932305"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -74,7 +74,7 @@ Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für ein
 * Helpdesk-Administrator
 * Benutzeradministrator
 * Service-Administrator
-* Sicherheitsleseberechtigter
+* Benutzer mit Leseberechtigung für Sicherheitsfunktionen
 * Sicherheitsoperator
 * Globaler Leser
 
@@ -89,7 +89,7 @@ Für den Zugriff auf die Graph-API benötigen Sie zusätzlich zu einer Rolle ein
 
 Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Verbesserungs Aktionen in Gruppen gegliedert:
 
-* Identität (Azure Ad Konten #a0 Rollen, wobei Azure ATP in Kürze verfügbar ist)
+* Identität (Azure Ad Konten & Rollen, wobei Azure ATP in Kürze verfügbar ist)
 * Data (Microsoft Information Protection)
 * Device (Microsoft Defender ATP Devices, demnächst verfügbar)
 * App (e-Mail-und Cloud-apps, einschließlich Office 365 und Microsoft Cloud-App-Sicherheit)
@@ -124,7 +124,7 @@ Wenn Sie eine bestimmte Verbesserungs Aktion auswählen, wird ein verfliegt ange
 
 ![Beispiel für sichere Ergebnis Verbesserungs Aktion](../media/secure-score/secure-score1x450.png) ![Beispiel zur Verbesserung der Sicherheit Score-Überarbeitungs Aktion](../media/secure-score/secure-score2x450.png)
 
-*Abbildungen 2 #a0 3: Flyouts zur Verbesserungs Aktion*
+*Abbildungen 2 & 3: Flyouts zur Verbesserungs Aktion*
 
 ## <a name="monitor-improvements-over-time"></a>Überwachen von Verbesserungen
 
@@ -133,6 +133,16 @@ Auf der Registerkarte **Verlauf** können Sie ein Diagramm der Bewertung Ihrer O
 ## <a name="risk-awareness"></a>Risikobewusstsein
 
 Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposition basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist keine absolute Maßeinheit dafür, wie wahrscheinlich ein System oder Daten verletzt werden. Sie stellt vielmehr das Ausmaß dar, in dem Sie Sicherheitssteuerelemente in Ihrer Microsoft-Umgebung übernommen haben, wodurch das Risiko eines Sicherheits übertretungs ausgeglichen werden kann. Kein Onlinedienst ist vollständig gegen Sicherheitsverletzungen geschützt, und die sichere Bewertung sollte nicht als Garantie gegen Sicherheitsverletzungen in irgendeiner Weise interpretiert werden.
+
+## <a name="whats-new"></a>Was ist neu?
+
+Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen, haben wir einige Änderungen vorgenommen.
+
+### <a name="removed-not-scored-improvement-actions"></a>Verbesserungs Aktionen "nicht bewertet" entfernt
+
+Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar.  
+
+Aus diesen Gründen wurden alle nicht erzielten Verbesserungs Aktionen entfernt. Ihrerseits ist keine Aktion erforderlich.
 
 ## <a name="whats-coming"></a>Was kommt?
 
@@ -171,8 +181,13 @@ Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede V
 
 - Aktivieren der Aufzeichnung von Überwachungsdaten
 - Ermitteln riskanter und nicht kompatibler Shadow-IT-Anwendungen
-- Überprüfen von Berechtigungen #a0 blockieren riskanter OAuth-Anwendungen, die mit Ihrer Umgebung verbunden sind
+- Überprüfen von Berechtigungen & blockieren riskanter OAuth-Anwendungen, die mit Ihrer Umgebung verbunden sind
 - Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
+- Speichern von Benutzerdokumenten in OneDrive für Unternehmen
+- Post Fach Delegierung nicht zulassen
+- Zulassen von anonymen Gast Freigabelinks für Websites und Dokumente
+- Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
+- Einrichten Office 365 sicherer Links zum Überprüfen von URLs
 
 ### <a name="mfa-improvement-action-updates"></a>Aktualisierung der MFA-Verbesserungs Aktionen
 
@@ -191,11 +206,11 @@ Neue Verbesserungs Aktionen hinzugefügt:
 
  Für diese neuen Verbesserungs Aktionen müssen Sie die Benutzer oder Administratoren für die mehrstufige Authentifizierung (MFA) in Ihrem Verzeichnis registrieren und die richtigen Richtlinien festlegen, die Ihren organisatorischen Anforderungen entsprechen. Das Hauptziel besteht in der Flexibilität bei gleichzeitiger Sicherstellung, dass alle Benutzer und Administratoren sich mit mehreren Faktoren oder mit risikobasierten Identitäts Überprüfungs Ansagen authentifizieren können. Dies kann in Form von Sicherheitsstandards festgelegt werden, mit denen Microsoft entscheiden kann, wann die Benutzer für MFA herausgefordert werden sollen, oder dass mehrere Richtlinien für bereichsbezogene Entscheidungen gelten.
 
-### <a name="removing-not-scored-and-review-improvement-actions"></a>Entfernen von Verbesserungs Aktionen für "nicht bewertet" und "überprüfen"
+### <a name="removing-review-improvement-actions"></a>Entfernen von Verbesserungs Aktionen für "überprüfen"
 
-Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar, und Überprüfungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.  
+Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Überarbeitungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.  
 
-Aus diesen Gründen werden alle Verbesserungs Aktionen, die nicht erzielt wurden oder die eine Überarbeitungs Kadenz erforderten, vorübergehend entfernt. Ihrerseits ist keine Aktion erforderlich.
+Aus diesen Gründen werden alle Verbesserungs Aktionen, die eine Überarbeitungs Kadenz erforderten, vorübergehend entfernt. Ihrerseits ist keine Aktion erforderlich.
 
 ### <a name="simplification-of-the-point-system"></a>Vereinfachung des Punktesystems
 
@@ -214,4 +229,4 @@ Die folgenden Features werden in der [Vorschauversion](microsoft-secure-score-pr
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Sicherheits-, Datenschutz-#a0 Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.
+Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Sicherheits-, Datenschutz-& Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.

@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 1a8cea3b11ecdc6e3ac6d382dc8ffe92c84e187a
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661907"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932275"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
 > [!NOTE]
 > Die Informationen in diesem Artikel gelten nur für Microsoft Power Platform-Abonnements (Power BI, Power apps und Power automatisieren).
 
-Self-Service-Käufe sind jetzt für Power Platform in den Vereinigten Staaten verfügbar.
+Self-Service-Käufe sind jetzt für Power Platform in den Vereinigten Staaten, Australien, Kanada und Japan verfügbar.
 
 ## <a name="general"></a>Allgemein
 
@@ -119,7 +119,7 @@ Administratoren können vorhandene Lizenzen zuweisen oder zusätzliche Abonnemen
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>Wo sieht der Administrator Self-Service-Käufe?
 
-Globale und Abrechnungs Administratoren können Abonnements, die über Self-Service Purchase in **Billing** > Products erworben wurden,**#a0 Dienste** im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> zusammen mit allen anderen Abonnements anzeigen, die über die zentrale Beschaffung erworben wurden. Sie können die Liste nur auf die Abonnements filtern, die über die zentrale Beschaffung erworben wurden, oder auch Abonnements, die über Self-Service Purchase erworben wurden.
+Globale und Abrechnungs Administratoren können Abonnements, die über Self-Service Purchase in **Billing** > Products erworben wurden,**& Dienste** im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> zusammen mit allen anderen Abonnements anzeigen, die über die zentrale Beschaffung erworben wurden. Sie können die Liste nur auf die Abonnements filtern, die über die zentrale Beschaffung erworben wurden, oder auch Abonnements, die über Self-Service Purchase erworben wurden.
 
 Administratoren können das Produkt, den Käufer Namen, das erworbene Abonnement, das Ablaufdatum, den Bestellverlauf, den Kaufpreis und die zugewiesenen Benutzer sehen.
 
