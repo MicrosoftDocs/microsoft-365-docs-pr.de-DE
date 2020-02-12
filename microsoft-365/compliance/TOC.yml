@@ -8,7 +8,7 @@
       href: recently-updated-topics-mcc.md
     - name: Microsoft 365 Compliance Center
       href: microsoft-365-compliance-center.md
-    - name: Microsoft 365-Lösungskatalog (Vorschau)
+    - name: Microsoft 365-Lösungskatalog
       href: microsoft-365-solution-catalog.md
     - name: Wechseln zum Security & Compliance Center
       href: go-to-the-securitycompliance-center.md
@@ -79,7 +79,7 @@
       items:
         - name: Erstellen und Veröffentlichen von Vertraulichkeitsbezeichnungen
           href: create-sensitivity-labels.md
-        - name: Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivitäts Bezeichnungen zum Anwenden der Verschlüsselung
+        - name: Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung
           href: encryption-sensitivity-labels.md
         - name: Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
           href: apply-sensitivity-label-automatically.md
@@ -458,8 +458,6 @@
               href: review-set-search.md
             - name: Markieren von Dokumenten in einem Prüfdateisatz
               href: tagging-documents.md
-            - name: Erkennung für anwaltliche Schweigepflicht einstellen
-              href: attorney-privilege-detection.md
             - name: Verwenden des Dashboards für Überprüfungs Sätze (Vorschau)
               href: advanced-ediscovery-dashboard.md
         - name: Analysieren von Falldaten
@@ -500,6 +498,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Dokumentmetadatenfelder
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Erkennung für anwaltliche Schweigepflicht einstellen
+              href: attorney-privilege-detection.md
             - name: Unterhaltungs-Prüfdateisätze
               href: conversation-review-sets.md
             - name: Erweiterte eDiscovery-Berichte (Vorschau)
