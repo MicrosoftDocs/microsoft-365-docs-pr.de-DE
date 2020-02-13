@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: db05b598fb0dab3cac9420b33b0bd4e12b6b7e9a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602792"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957190"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrieren von Legacy-eDiscovery-suchen und-Archiven zum Microsoft 365 Compliance Center
 
@@ -28,20 +28,20 @@ Damit Kunden die neuen und verbesserten Funktionen nutzen können, bietet dieser
 > [!NOTE]
 > Da es viele unterschiedliche Szenarien gibt, finden Sie in diesem Artikel Allgemeine Anleitungen für Übergangs suchen und-Aufbewahrungen in einem zentralen eDiscovery-Fall im Microsoft 365 Compliance Center. Die Verwendung von eDiscovery-Fällen ist nicht immer erforderlich, aber Sie fügen eine zusätzliche Sicherheitsebene hinzu, indem Sie Berechtigungen zuweisen, um zu steuern, wer Zugriff auf die eDiscovery-Fälle in Ihrer Organisation hat.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
-- Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Office 365 Security #a0 Compliance Center sein, um die in diesem Artikel beschriebenen PowerShell-Befehle auszuführen. Außerdem müssen Sie Mitglied der Rollengruppe "Discoveryverwaltung" in der Exchange-Verwaltungskonsole sein.
+- Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Office 365 Security & Compliance Center sein, um die in diesem Artikel beschriebenen PowerShell-Befehle auszuführen. Außerdem müssen Sie Mitglied der Rollengruppe "Discoveryverwaltung" in der Exchange-Verwaltungskonsole sein.
 
 - Dieser Artikel enthält Anleitungen zum Erstellen eines eDiscovery-Haltestatus. Die Aufbewahrungsrichtlinie wird über einen asynchronen Prozess auf Postfächer angewendet. Wenn Sie einen eDiscovery-Speicher erstellen, müssen Sie sowohl eine CaseHoldPolicy als auch eine CaseHoldRule erstellen, andernfalls wird der Haltebereich nicht erstellt, und es werden keine inhaltsspeicherorte gespeichert.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-office-365-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit Exchange Online PowerShell und Office 365 Security #a0 Compliance Center PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-office-365-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit Exchange Online PowerShell und Office 365 Security & Compliance Center PowerShell
 
-Der erste Schritt besteht darin, eine Verbindung mit Exchange Online PowerShell und Office 365 Security #a0 Compliance Center PowerShell herzustellen. Sie können das folgende Skript kopieren, in ein PowerShell-Fenster einfügen und dann ausführen. Sie werden zur Eingabe von Anmeldeinformationen für die Organisation aufgefordert, mit der Sie eine Verbindung herstellen möchten. 
+Der erste Schritt besteht darin, eine Verbindung mit Exchange Online PowerShell und Office 365 Security & Compliance Center PowerShell herzustellen. Sie können das folgende Skript kopieren, in ein PowerShell-Fenster einfügen und dann ausführen. Sie werden zur Eingabe von Anmeldeinformationen für die Organisation aufgefordert, mit der Sie eine Verbindung herstellen möchten. 
 
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -77,7 +77,7 @@ Die Ausgabe dieser beiden Befehle ist wie folgt:
 ![Beispiel für eine PowerShell-Ausgabe mit Get-MailboxSearch für eine individuelle Suche](media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> Die Dauer des in-situ-Speichers in diesem Beispiel ist unbestimmt (*ItemHoldPeriod: Unlimited*). Dies ist typisch für eDiscovery-und rechtliche Ermittlungs Szenarien. Wenn die Aufbewahrungsdauer einen anderen Wert als unbegrenzt hat, liegt der Grund wahrscheinlich daran, dass der Haltebereich zum Beibehalten von Inhalt in einem Aufbewahrungs Szenario verwendet wird. Anstatt die eDiscovery-Cmdlets in Office 365 Security #a0 Compliance Center PowerShell für Aufbewahrungs Szenarien zu verwenden, empfehlen wir die Verwendung von [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) und [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) , um Inhalte beizubehalten. Das Ergebnis der Verwendung dieser Cmdlets ähnelt der Verwendung von **New-CaseHoldPolicy** und **New-CaseHoldRule**, aber Sie können einen Aufbewahrungszeitraum und eine Aufbewahrungsaktion angeben, beispielsweise das Löschen von Inhalten nach Ablauf des Aufbewahrungszeitraums. Darüber hinaus ist es für die Verwendung der Aufbewahrungs-Cmdlets nicht erforderlich, die Aufbewahrungszeiträume einem eDiscovery-Fall zuzuordnen.
+> Die Dauer des in-situ-Speichers in diesem Beispiel ist unbestimmt (*ItemHoldPeriod: Unlimited*). Dies ist typisch für eDiscovery-und rechtliche Ermittlungs Szenarien. Wenn die Aufbewahrungsdauer einen anderen Wert als unbegrenzt hat, liegt der Grund wahrscheinlich daran, dass der Haltebereich zum Beibehalten von Inhalt in einem Aufbewahrungs Szenario verwendet wird. Anstatt die eDiscovery-Cmdlets in Office 365 Security & Compliance Center PowerShell für Aufbewahrungs Szenarien zu verwenden, empfehlen wir die Verwendung von [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) und [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) , um Inhalte beizubehalten. Das Ergebnis der Verwendung dieser Cmdlets ähnelt der Verwendung von **New-CaseHoldPolicy** und **New-CaseHoldRule**, aber Sie können einen Aufbewahrungszeitraum und eine Aufbewahrungsaktion angeben, beispielsweise das Löschen von Inhalten nach Ablauf des Aufbewahrungszeitraums. Darüber hinaus ist es für die Verwendung der Aufbewahrungs-Cmdlets nicht erforderlich, die Aufbewahrungszeiträume einem eDiscovery-Fall zuzuordnen.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Schritt 4: Erstellen eines Falls im Microsoft 365 Compliance Center
 
@@ -87,23 +87,19 @@ Um einen eDiscovery-Speicher zu erstellen, müssen Sie einen eDiscovery-Fall ers
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![Beispiel für das Ausführen des Befehls "New-ComplianceCase"](media/MigrateLegacyeDiscovery3.png)
-
 ## <a name="step-5-create-the-ediscovery-hold"></a>Schritt 5: Erstellen des eDiscovery-Haltestatus
 
 Nachdem der Fall erstellt wurde, können Sie den Haltebereich erstellen und ihn der Groß-/Kleinschreibung zuordnen, die Sie im vorherigen Schritt erstellt haben. Es ist wichtig zu beachten, dass Sie sowohl eine Case Hold-Richtlinie als auch eine Case Hold-Regel erstellen müssen. Wenn die Case Hold-Regel nicht erstellt wird, nachdem Sie die Case Hold-Richtlinie erstellt haben, wird der eDiscovery-Speicher nicht erstellt, und alle Inhalte werden nicht gespeichert.
 
-Führen Sie die folgenden Befehle aus, um die eDiscovery-Aufbewahrung neu zu erstellen, die Sie migrieren möchten. In diesen Beispielen werden die Eigenschaften von in-situ-Speicher aus Schritt 3 verwendet, den Sie migrieren möchten.
+Führen Sie die folgenden Befehle aus, um die eDiscovery-Aufbewahrung neu zu erstellen, die Sie migrieren möchten. In diesen Beispielen werden die Eigenschaften von in-situ-Speicher aus Schritt 3 verwendet, den Sie migrieren möchten. Der erste Befehl erstellt eine neue Case Hold-Richtlinie und speichert die Eigenschaften in einer Variablen. Der zweite Befehl erstellt die entsprechende Fall halte Regel.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![Beispiel für die Verwendung von NewCaseHoldPolicy-und NewCaseHoldRule-Cmdlets](media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Schritt 6: Überprüfen des eDiscovery-Haltestatus
 
@@ -131,7 +127,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Schritt 8: Überprüfen der Groß-/Kleinschreibung, des Haltestatus und der Suche im Microsoft 365 Compliance Center
 
-Um sicherzustellen, dass alles ordnungsgemäß eingerichtet ist, wechseln Sie zum Microsoft 365 Compliance [https://compliance.microsoft.com](https://compliance.microsoft.com)Center unter, und klicken Sie auf **eDiscovery #a0 Core**.
+Um sicherzustellen, dass alles ordnungsgemäß eingerichtet ist, wechseln Sie zum Microsoft 365 Compliance [https://compliance.microsoft.com](https://compliance.microsoft.com)Center unter, und klicken Sie auf **eDiscovery > Core**.
 
 ![Microsoft 365 Compliance Center eDiscovery](media/MigrateLegacyeDiscovery7.png)
 
@@ -147,7 +143,7 @@ Wenn Sie eine Compliance-eDiscovery-Suche migrieren, diese aber keinem eDiscover
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Weitere Informationen zum Compliance-eDiscovery #a0 im Exchange Admin Center finden Sie unter:
+- Weitere Informationen zum Compliance-eDiscovery & im Exchange Admin Center finden Sie unter:
   
   - [Compliance-eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
