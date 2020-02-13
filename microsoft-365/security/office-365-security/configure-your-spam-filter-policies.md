@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren von Spamfilterrichtlinien
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
-ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
+ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "40929791"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957200"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
 Zu den Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen. Die Einstellungen für die Spamfilterrichtlinie werden nur auf eingehende Nachrichten angewendet. Es gibt zwei Optionen:
@@ -138,7 +140,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Optimieren Ihrer Spamfilterrichtlinie, um falsch positive Ergebnisse und falsch negative Ergebnisse zu verhindern
 
-Sie können erweiterte Spamfiltertechniken aktivieren, wenn Sie einen aggressiveren Ansatz für die Spamfilterung verfolgen möchten. Allgemeine Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Verhindern, dass echte E-Mails als Spam in Office 365 markiert werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](reduce-spam-email.md). Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
+Sie können erweiterte Spamfiltertechniken aktivieren, wenn Sie einen aggressiveren Ansatz für die Spamfilterung verfolgen möchten. Allgemeine Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Verhindern, dass echte E-Mails als Spam in Office 365 markiert werden](prevent-email-from-being-marked-as-spam.md) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](reduce-spam-email.md). Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
 
 ## <a name="allowblock-lists"></a>Zulassungs- und Sperrlisten
 
@@ -160,6 +162,9 @@ Sowohl Zulassungs- als auch Sperrlisten werden als Elemente einer Kunden-Antispa
    - Fügen Sie der Absendersperrliste unerwünschte Absender hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Sperrlisten** zurückzukehren.
 
    - Fügen Sie der Domänensperrliste unerwünschte Domänen hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Sperrlisten** zurückzukehren.
+   
+     > [!NOTE]
+     > In der Spamfilterrichtlinie können Sie ganze Domänen oder bestimmte Absender blockieren, aber Sie können keine Platzhalter (\*) verwenden. 
 
 > [!TIP]
 > Es kann vorkommen, dass Ihre Organisation mit einer Bewertung von Seiten des Dienstes nicht einverstanden ist. In diesem Fall können Sie die Zulassungs- bzw. Sperrlisteneinträge dauerhaft beibehalten. Wenn Sie allerdings beabsichtigen, eine Domäne einer Zulassungsliste für längere Zeiträume hinzuzufügen, sollten Sie den Sender bitten, sicherzustellen, dass seine Domäne authentifiziert ist und, falls dies nicht der Fall ist, die DMARC-Option „Ablehnen“ dafür festlegen.
@@ -171,7 +176,7 @@ Sowohl Zulassungs- als auch Sperrlisten werden als Elemente einer Kunden-Antispa
 
 [Quarantäne](quarantine.md)
 
-[Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md)
 
 [Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)
 

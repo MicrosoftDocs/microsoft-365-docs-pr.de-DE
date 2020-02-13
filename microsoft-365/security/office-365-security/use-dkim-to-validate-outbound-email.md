@@ -1,5 +1,7 @@
 ---
 title: Verwenden von DKIM in Ihrer benutzerdefinierten Domäne in Office 365, 2048-Bit, 1024-Bit, Funktionsweise, SPF, DMARC
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: a6d45dbcb5015be1b688cad562a234c555d0ef66
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 496089ff46d66df3382895626831023610c706be
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572691"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957160"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -114,7 +116,7 @@ Um DKIM zu konfigurieren, müssen Sie diese Schritte ausführen:
 
 Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, müssen Sie zwei CNAME-Einträge veröffentlichen.
 
-Führen Sie die folgenden Befehle aus:
+Führen Sie die folgenden Befehle aus, um die Selektor-Einträge zu erstellen:
 
 ```powershell
     New-DkimSigningConfig -DomainName <domain> -Enabled $false
@@ -126,8 +128,6 @@ Erstellen von CNAMEs, auf die in der Get-DkimSigningConfig-Ausgabe verwiesen wir
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-
-Die CNAME-Einträge in Ihrem DNS verweisen auf bereits erstellte DKIM TXT-Datensätze, die im DNS auf den Microsoft-DNS-Servern für Office 365 vorhanden sind.
 
 Office 365 führt die automatische Schlüsselrotation unter Verwendung der beiden eingerichteten Datensätze durch. Wenn Sie neben der ersten Domäne zusätzliche benutzerdefinierte Domänen in Office 365 bereitgestellt haben, müssen Sie zwei CNAME-Einträge für jede zusätzliche Domäne veröffentlichen. Wenn Sie also zwei Domänen haben, müssen Sie zwei zusätzliche CNAME-Einträge veröffentlichen usw.
 
@@ -177,6 +177,9 @@ Host name:          selector2._domainkey
 Points to address or value: selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 ```
+
+> [!NOTE]
+> Es ist wichtig, den zweiten Eintrag zu erstellen, aber zum Zeitpunkt der Erstellung wird möglicherweise nur einer der Selektoren verfügbar sein. Im Wesentlichen verweist der zweite Selektor möglicherweise auf eine noch nicht erstellte Adresse. Es empfiehlt sich trotzdem, den zweiten CNAME-Eintrag zu erstellen, da Ihre Schlüsselrotation dann nahtlos ausgeführt wird und Sie selbst keine Schritte manuell ausführen müssen.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>Aktivieren der DKIM-Signierung für Ihre benutzerdefinierte Domäne in Office 365
 <a name="EnableDKIMinO365"> </a>

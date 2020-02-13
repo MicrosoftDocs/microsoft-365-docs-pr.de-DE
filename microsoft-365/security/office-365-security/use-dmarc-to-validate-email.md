@@ -1,5 +1,7 @@
 ---
 title: Verwenden von DMARC zum Überprüfen von E-Mails in Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,17 +15,20 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Office 365-Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: a812003df72cfb3697a5b114acb37aede4268b21
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572681"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957350"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Validieren von E-Mails in Office 365
 
 [DMARC](https://dmarc.org) (Domain-based Message Authentication, Reporting, and Conformance) verwendet SPF (Sender Policy Framework) und DKIM (DomainKeys Identified Mail) zum Authentifizieren von E-Mail-Absendern, und um sicherzustellen, dass Ziel-E-Mail-Systeme die von Ihrer Domäne gesendeten E-Mail-Nachrichten als vertrauenswürdig einstufen. Die Implementierung von DMARC zusammen mit SPF und DKIM bietet zusätzlichen Schutz vor Spoofing- und Phishing-E-Mails. DMARC unterstützt die E-Mail-Systeme der Empfänger bei der Behandlung von Nachrichten, die von Ihrer Domäne gesendet wurden, jedoch die SPF- oder DKIM-Prüfungen nicht bestanden haben.
-  
+
+> [!TIP]
+> Besuchen Sie den [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog)-Katalog, um zu sehen, welche Drittanbieter DMARC-Berichterstellung für Office 365 bieten. 
+
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>Wie arbeiten SPF und DMARC zusammen, um E-Mails in Office 365 zu schützen?
 <a name="SPFandDMARC"> </a>
 
@@ -77,7 +82,7 @@ Der DMARC-TXT-Eintrag von Microsoft sieht in etwa wie folgt aus:
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft sendet seine DMARC-Berichte an [Agari](https://agari.com), einen Drittanbieter. Agari sammelt und analysiert DMARC-Berichte. Außerdem bietet Valimail [kostenlose DMARC-Überwachungsdienste für Office 365](https://go.valimail.com/microsoft.html).
+Microsoft sendet seine DMARC-Berichte an [Agari](https://agari.com), einen Drittanbieter. Agari erfasst und analysiert DMARC-Berichte. Besuchen Sie den [MISA-Katalog](https://www.microsoft.com/misapartnercatalog), um zu sehen, welche weiteren Drittanbieter DMARC-Berichterstellung für Office 365 bieten.
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>Implementieren von DMARC für eingehende E-Mail-Nachrichten
 <a name="implementDMARCinbound"> </a>
