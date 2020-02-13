@@ -378,6 +378,8 @@
               href: ./office-365-security/office-365-air.md
             - name: 'Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden'
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Sichere Dokumente in Office 365 ATP
+              href: ./office-365-security/safe-docs.md
             - name: Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)
               href: ./office-365-security/threat-explorer.md
               items:
