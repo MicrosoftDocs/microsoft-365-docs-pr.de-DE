@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentatio
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268509"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916910"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
 Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md).
 
-In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Der CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Umsatz" eingestuft werden.  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Anfragen von betroffenen Personen (Datensubjekten) im Rahmen der DSGVO unter Verwendung von Microsoft-Produkten und -Diensten.
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGVO entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Anfragen von betroffenen Personen (Datensubjekten) im Rahmen der DSGVO unter Verwendung von Microsoft-Produkten und -Diensten.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -50,7 +49,7 @@ Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet 
 
 Die Allgemeine Datenschutz-Grundverordnung (DSGVO) räumt natürlichen Personen (in der Verordnung als betroffene Personen bezeichnet) das Recht ein, vom Arbeitgeber oder einer anderen Einrichtung oder Organisation ( Datenverantwortlicher oder Verantwortlicher) erhobene personenbezogene Daten zu verwalten. Die DSGVO gewährt betroffenen Personen bestimmte Rechte an ihren personenbezogenen Daten. Es sind dies das Recht auf Erhalt einer Kopie dieser Daten, das Recht auf Korrektur der Daten, das Recht auf Beschränkung der Bearbeitung dieser Daten und das Recht auf Empfang dieser Daten in einem elektronischen Format, sodass sie an einen anderen Verantwortlichen übermittelt werden können.
 
-Der California Consumer Privacy Act (CCPA) bietet den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  
+Der California Consumer Privacy Act (CCPA) bietet den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGVO entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  
 
 Als Verantwortlicher sind Sie verpflichtet, jede Datensubjektanfrage sofort zu überprüfen und darauf zu reagieren, und zwar entweder, indem Sie die angeforderte Maßnahme ergreifen oder indem Sie erläutern, warum der Anfrage der betroffenen Person seitens des Verantwortlichen nicht nachgekommen werden kann. Ein Verantwortlicher sollte sich mit seinen eigenen Rechts- oder Complianceberatern hinsichtlich der geeigneten Disposition bezüglich einer bestimmten Datensubjektanfrage beraten.
 
@@ -79,9 +78,9 @@ Protokolle und verwandte Daten, die von Microsoft generiert werden, enthalten m�
 
 ### <a name="yammer-and-kaizala"></a>Yammer und Kaizala
 
-Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle für Yammer und Kaizala nicht entfernt. Siehe die folgenden Links, um Daten aus diesen Anwendungen zu entfernen:
+Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle für Yammer und Kaizala nicht entfernt. Siehe die folgenden Ressourcen, um Daten aus diesen Anwendungen zu entfernen:
 
-- [Verwalten von DSGVO-Datensubjektanfragen in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
+- [Verwalten von DSGVO-Datensubjektanforderungen in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Exportieren oder Löschen von Organisationsdaten eines Benutzers in Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
 
 ### <a name="national-clouds"></a>Nationale Clouds
@@ -99,6 +98,12 @@ Unter bestimmten Umständen greifen die Benutzer Ihrer Organisation auf Microsof
 ### <a name="third-party-products"></a>Produkte von Drittanbietern
 
 Datensubjektanfragen für Produkte und Dienste von Drittanbietern, auf die über die Microsoft-Kontoauthentifizierung zugegriffen wird, sollten direkt an den entsprechenden Drittanbieter gerichtet werden.
+
+## <a name="data-subject-request-admin-tools"></a>Werkzeuge zur Verwaltung von Anträgen betroffener Personen
+
+- **Security & Compliance Center**: Vom Benutzer generierte Daten werden aus dem [Security & Compliance Center](https://aka.ms/stpsecurityandcompliance) oder durch anwendungsinterne Features exportiert.
+- **Azure AD Admin Center**: Löschen Sie ein Datensubjekt aus Azure Active Directory und den zugehörigen Diensten mithilfe von [Azure AD Admin Center](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/).
+- **Microsoft-Datenprotokollexport**: Vom System generierte Protokolle können von Mandantenadministratoren mithilfe von [Microsoft-Datenprotokollexport](https://aka.ms/MicrosoftGDPR) exportiert werden.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

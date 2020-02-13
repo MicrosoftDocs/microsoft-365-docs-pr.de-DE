@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ffd5bd81542e2d39a928789c8575178c1b9a7633
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594425"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916920"
 ---
 # <a name="gdpr-breach-notification"></a>Benachrichtigung über DSGVO-Verstöße
 
-Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Unternehmen, Regierungsbehörden, gemeinnützige Organisationen sowie andere Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren. Die DSGVO gilt unabhängig von Ihrem Wohnsitz und dem Sitz Ihres Unternehmens. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Benachrichtigungen über Verstöße gegen die DSGVO unter Verwendung von Microsoft-Produkten und -Diensten.
+Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Unternehmen, Regierungsbehörden, gemeinnützige Organisationen sowie andere Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren. Die DSGVO gilt unabhängig von Ihrem Wohnsitz und dem Sitz Ihres Unternehmens. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md). Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Benachrichtigungen über Verstöße gegen die DSGVO unter Verwendung von Microsoft-Produkten und -Diensten.
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>Was stellt eine Verletzung personenbezogener Daten im Rahmen der DSGVO dar?
 
@@ -47,7 +43,7 @@ Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet 
 
 Microsoft nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Ein Sicherheitsvorfall/eine Datenverletzung bezieht sich auf Ereignisse wie rechtswidrige Zugriffe auf Kundendaten, die auf einem Microsoft-Gerät oder in Microsoft-Einrichtungen gespeichert sind, oder auf unbefugte Zugriffe, die zum Verlust, zur Offenlegung oder zur Änderung von Kundendaten führen können.
 
-Als Datenverarbeiter stellt Microsoft sicher, dass die Kunden unserer Dienste die Anforderungen der DSGVO an Benachrichtigungen bei Datenschutzverletzungen als Datenverantwortliche erfüllen können. Unsere Benachrichtigung enthält die Informationen, die erforderlich sind, um diese Einschätzung durchführen zu können. Microsoft benachrichtigt Kunden über jegliche Verletzung personenbezogener Daten, mit Ausnahme von Fällen, in denen personenbezogene Daten nicht lesbar sind (z. B. stark verschlüsselte Daten, bei denen die Integrität der Schlüssel bestätigt ist).
+Als Datenverarbeiter stellt Microsoft sicher, dass die Kunden unserer Dienste die Anforderungen der DSGVO an Benachrichtigungen bei Datenschutzverletzungen als Datenverantwortliche erfüllen können. Unsere Benachrichtigung enthält die Informationen, die erforderlich sind, um diese Einschätzung durchführen zu können. Microsoft benachrichtigt Kunden über jegliche Verletzung personenbezogener Daten, mit Ausnahme von Fällen, in denen personenbezogene Daten nicht lesbar sind (z. B. verschlüsselte Daten, bei denen die Integrität der Schlüssel bestätigt ist).
 
 Die Datenverantwortlichen sind dafür verantwortlich, die Datenschutzrisiken zu bewerten und zu beurteilen, ob ein Kunde über eine Datenschutzverletzung benachrichtigt werden muss. Microsoft stellt die erforderlichen Informationen zusammen mit der DSGVO-Compliancerichtlinie bereit, damit diese Einschätzung durchgeführt werden kann.
 
@@ -73,12 +69,16 @@ Details zur Benachrichtigung über Datenschutzverletzungen für bestimmte Micros
     - *Kundenbenachrichtigung*: Microsoft Azure benachrichtigt Kunden und Aufsichtsbehörden bei Bedarf über Datenschutzverstöße. Ab dem Zeitpunkt, an dem wir eine Datenschutzverletzung deklarieren, vergehen nicht mehr als 72 Stunden, bis wir unsere Kunden informieren, mit Ausnahme der folgenden Situationen:
 
         - Microsoft ist der Meinung, dass eine Benachrichtigung das Risiko für andere Kunden erhöht.
-        - Im Verlauf des 72-Stunden-Zeitlimits ergeben sich möglicherweise neue Erkenntnisse zum Vorfall. Diese werden Ihnen bei im Verlauf der Untersuchung bereitgestellt.
+        - Im Verlauf des 72-Stunden-Zeitlimits ergeben sich möglicherweise neue Erkenntnisse zum Vorfall. Diese Details werden Ihnen bei im Verlauf der Untersuchung bereitgestellt.
 
         Weitere Details finden Sie unter [Kundenbenachrichtigung](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification).
 
 3. **[Microsoft-Support und Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     Aufgrund der Arbeitsweise von Professional Services fallen einige Datenschutzvorfälle in den Zuständigkeitsbereich des Kunden. Wenn Microsoft Professional Services einen Datenschutzvorfall identifiziert, wird der dokumentierte, standardmäßige Reaktionsplan der Branche befolgt, der unter [Umfang und Grenzen des Prozesses für die Reaktion auf Datenschutzverletzungen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process) beschrieben ist.
+
+## <a name="breach-notification-admin-tools"></a>Administratortools zur Benachrichtigung bei Sicherheitsverletzungen
+
+- **Legen Sie den Datenschutzkontakt Ihrer Organisation fest**: Mandantenadministratoren können das [Azure Active Directory-Verwaltungsportal](https://go.microsoft.com/fwlink/p/?linkid=2052736) verwenden, um den Datenschutzkontakt Ihrer Organisation für den Fall zu definieren, dass Microsoft mit diesen Personen kommunizieren muss.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

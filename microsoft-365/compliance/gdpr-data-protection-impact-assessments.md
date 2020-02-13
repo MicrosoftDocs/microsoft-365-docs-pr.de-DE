@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: cc633dc261594607a87e7aae7da03e0a427a2492
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0a62cf2ef40bbf9da219309cf75eed27ea8739e4
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594415"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916900"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>Datenschutz-Folgenabschätzungen im Rahmen der DSGVO
 
-Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md). <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
-
-Dieses Dokument bietet Ihnen Informationen bezüglich Datenschutz-Folgenabschätzungen unter der DSGVO, während Sie Microsoft-Produkte und -Dienste verwenden.
+Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md). Dieses Dokument bietet Ihnen Informationen bezüglich Datenschutz-Folgenabschätzungen unter der DSGVO, während Sie Microsoft-Produkte und -Dienste verwenden.
 
 ## <a name="terminology"></a>Begrifflichkeiten
 
@@ -41,32 +37,36 @@ Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet 
 
 ## <a name="what-is-a-dpia"></a>Was ist Datenschutz-Folgenabschätzung?
 
-Unter der DSGVO sind Datenverantwortliche dazu aufgerufen, eine Datenschutz-Folgenabschätzung (Data Protection Impact Assessment, DPIA) für Vorgänge vorzubereiten, die "wahrscheinlich zu einem hohen Risiko für die Rechte und Freiheiten natürlicher Personen führen". Microsoft-Produkte und -Dienste verfügen über nichts Inhärentes, das eine DPIA erforderlich machen würde. Da Microsoft-Produkte und-Dienste jedoch hochgradig anpassbar sind, kann je nach den Details Ihrer Microsoft-Konfiguration eine DPIA erforderlich sein. Microsoft hat keine Kontrolle über und wenig oder gar keine Einsichten in solche Informationen. Sie als Datenverantwortlicher müssen die geeignete Verwendung der Daten ermitteln.
+Unter der DSGVO sind Datenverantwortliche dazu aufgerufen, eine Datenschutz-Folgenabschätzung (Data Protection Impact Assessment, DPIA) für Vorgänge vorzubereiten, die „wahrscheinlich zu einem hohen Risiko für die Rechte und Freiheiten natürlicher Personen führen“. Microsoft-Produkte und -Dienste an sich machen keine Datenschutzfolgenabschätzung erforderlich. Da Microsoft-Produkte und-Dienste jedoch hochgradig anpassbar sind, kann je nach den Details Ihrer Microsoft-Konfiguration eine DPIA erforderlich sein. Microsoft hat keine Kontrolle über und wenig oder gar keine Einsichten in solche Informationen. Sie als Datenverantwortlicher müssen die geeignete Verwendung der Daten ermitteln.
 
 ## <a name="dpia-in-action"></a>Angewendete DPIA
 
 Der DPIA-Leitfaden gilt für Office 365, Azure, Dynamics 365 und Microsoft-Support sowie Professional Services. Der Leitfaden umfasst Folgendes:
 
-1. **Wann ist eine DPIA erforderlich?** Die nachstehend aufgeführten Risikofaktoren sollten bei den Überlegungen zur Durchführung einer DPIA berücksichtigt werden. Weitere potenzielle Faktoren und weitere Details finden Sie in Teil 1 der einzelnen Richtlinien.  
+**Wann ist eine DPIA erforderlich**
 
-    - Eine systematische und umfassende Auswertung von Daten auf der Grundlage einer automatisierten Verarbeitung.  
-    - Verarbeitung spezieller Kategorien von Daten (Daten, aus denen Informationen hervorgehen, anhand derer eine natürliche Person eindeutig identifiziert werden kann) bzw. personenbezogener Daten über strafrechtliche Verurteilungen und Straftaten.
-    - Systematische Überwachung eines öffentlich zugänglichen Bereichs.
+Die nachstehend aufgeführten Risikofaktoren sollten bei den Überlegungen zur Durchführung einer DPIA berücksichtigt werden. Weitere potenzielle Faktoren und weitere Details finden Sie in Teil 1 der einzelnen Richtlinien.  
 
-    Die DSGVO stellt Folgendes klar: "Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein."
+- Eine systematische und umfassende Auswertung von Daten auf der Grundlage einer automatisierten Verarbeitung.  
+- Verarbeitung spezieller Kategorien von Daten (Daten, aus denen Informationen hervorgehen, anhand derer eine natürliche Person eindeutig identifiziert werden kann) bzw. personenbezogener Daten über strafrechtliche Verurteilungen und Straftaten.
+- Systematische Überwachung eines öffentlich zugänglichen Bereichs.
 
-2. **Was ist erforderlich, um eine DPIA durchzuführen?** Eine DPIA sollte spezifische Informationen zur beabsichtigten Verarbeitung bereitstellen. Darauf wird in Teil 2 des Leitfadens genauer eingegangen. Dazu gehören:
+Die DSGVO stellt Folgendes klar: „Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein.“
 
-    - Eine Bewertung der Notwendigkeit und Verhältnismäßigkeit der Datenverarbeitung in Bezug auf den Zweck der DPIA.  
-    - Bewertung der Risiken für die Rechte und Grundfreiheiten natürlicher Personen.
-    - Vorgesehene Maßnahmen zum Umgang mit den Risiken, Sicherheitsvorkehrungen, Sicherheitsmaßnahmen und Mechanismen zur Sicherstellung des Schutzes personenbezogener Daten und zur Veranschaulichung der Einhaltung des DSGVO.
-    - Zwecke der Verarbeitung  
-    - Kategorien verarbeiteter personenbezogener Daten  
-    - Datenaufbewahrung  
-    - Speicherort und Übermittlung personenbezogener Daten  
-    - Teilen von Daten mit Dritten  
-    - Teilen von Daten mit unabhängigen Dritten  
-    - Rechte betroffener Personen
+**Was ist für die Durchführung einer Datenschutzfolgenabschätzung erforderlich?**
+
+Eine DPIA sollte spezifische Informationen zur beabsichtigten Verarbeitung bereitstellen. Darauf wird in Teil 2 des Leitfadens genauer eingegangen. Dazu gehören:
+
+- Eine Bewertung der Notwendigkeit und Verhältnismäßigkeit der Datenverarbeitung in Bezug auf den Zweck der DPIA.  
+- Bewertung der Risiken für die Rechte und Grundfreiheiten natürlicher Personen.
+- Vorgesehene Maßnahmen zum Umgang mit den Risiken, Sicherheitsvorkehrungen, Sicherheitsmaßnahmen und Mechanismen zur Sicherstellung des Schutzes personenbezogener Daten und zur Veranschaulichung der Einhaltung des DSGVO.
+- Zwecke der Verarbeitung  
+- Kategorien verarbeiteter personenbezogener Daten  
+- Datenaufbewahrung  
+- Speicherort und Übermittlung personenbezogener Daten  
+- Teilen von Daten mit Dritten  
+- Teilen von Daten mit unabhängigen Dritten  
+- Rechte betroffener Personen
 
 ## <a name="additional-considerations"></a>Weitere Überlegungen
 
