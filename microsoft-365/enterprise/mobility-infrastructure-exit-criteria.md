@@ -15,31 +15,31 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e8013426983584783488e6f937f8ba5b02d7a1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600882"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066786"
 ---
-# <a name="mobile-device-management-infrastructure-exit-criteria"></a><span data-ttu-id="a53f6-105">Beendigungskriterien für die Infrastruktur der mobilen Geräteverwaltung</span><span class="sxs-lookup"><span data-stu-id="a53f6-105">Mobile device management infrastructure exit criteria</span></span>
+# <a name="mobile-device-management-infrastructure-exit-criteria"></a><span data-ttu-id="42b19-105">Beendigungskriterien für die Infrastruktur der mobilen Geräteverwaltung</span><span class="sxs-lookup"><span data-stu-id="42b19-105">Mobile device management infrastructure exit criteria</span></span>
 
-![Phase 5: Verwaltung mobiler Geräte](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![Phase 5: Verwaltung mobiler Geräte](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
-<span data-ttu-id="a53f6-107">*Dies gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="a53f6-107">*This applies to the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="42b19-107">*Dies gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="42b19-107">*This applies to the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
-<span data-ttu-id="a53f6-108">Stellen Sie sicher, dass Ihre Konfiguration die folgenden Anforderungen für die Infrastruktur zur Verwaltung mobiler Geräte erfüllt.</span><span class="sxs-lookup"><span data-stu-id="a53f6-108">Ensure that your configuration meets the following requirements for mobile device management infrastructure.</span></span>
+<span data-ttu-id="42b19-108">Stellen Sie sicher, dass Ihre Konfiguration die folgenden Anforderungen für die Infrastruktur zur Verwaltung mobiler Geräte erfüllt.</span><span class="sxs-lookup"><span data-stu-id="42b19-108">Ensure that your configuration meets the following requirements for mobile device management infrastructure.</span></span>
 
-- <span data-ttu-id="a53f6-109">InTune ist eingerichtet, einschließlich der Erstellung von Azure Active Directory (Azure AD)-Benutzern und-Gruppen, um die Regeln Ihrer Organisation für Geräte anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="a53f6-109">Intune is set up, including the creation of Azure Active Directory (Azure AD) users and groups to apply your organization's rules for devices.</span></span>
-- <span data-ttu-id="a53f6-110">Sie haben Geräte in Intune registriert, damit die Geräte die von Ihnen erstellten Richtlinien empfangen können.</span><span class="sxs-lookup"><span data-stu-id="a53f6-110">You have enrolled devices in Intune so that the devices can receive the policies you create.</span></span>
-- <span data-ttu-id="a53f6-111">Apps werden Geräten hinzugefügt, damit Ihre Benutzer Zugriff auf die Microsoft 365-Clouddienste Ihrer Organisation erhalten, z. B. Exchange Online und SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="a53f6-111">Apps are added to devices so your users get access to your organization's Microsoft 365 cloud services, such as Exchange Online and SharePoint Online.</span></span>
-- <span data-ttu-id="a53f6-112">Features und Einstellungen werden konfiguriert und mithilfe der erstellten Azure AD-Benutzer und -Gruppen auf Ihre Geräte angewendet. Dazu gehört möglicherweise das Aktivieren von Antiviren-Apps sowie das Einschränken bestimmter Apps.</span><span class="sxs-lookup"><span data-stu-id="a53f6-112">Features and settings are configured and applied to your devices using the Azure AD users and groups you create, which might include enabling anti-virus and restricting specific apps.</span></span>
-- <span data-ttu-id="a53f6-113">Compliance-Richtlinien sind vorhanden, um eine Firewall oder eine Kennwortlänge auf einem Gerät zu erfordern.</span><span class="sxs-lookup"><span data-stu-id="a53f6-113">Compliance policies are in place to require a firewall or a password length on a device.</span></span> <span data-ttu-id="a53f6-114">Wenn Geräte nicht kompatibel sind, blockiert der bedingte Zugriff den Zugriff auf die Daten Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="a53f6-114">If devices aren't compliant, Conditional Access blocks access to your organization's data.</span></span>
+- <span data-ttu-id="42b19-109">InTune ist eingerichtet, einschließlich der Erstellung von Azure Active Directory (Azure AD)-Benutzern und-Gruppen, um die Regeln Ihrer Organisation für Geräte anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="42b19-109">Intune is set up, including the creation of Azure Active Directory (Azure AD) users and groups to apply your organization's rules for devices.</span></span>
+- <span data-ttu-id="42b19-110">Sie haben Geräte in Intune registriert, damit die Geräte die von Ihnen erstellten Richtlinien empfangen können.</span><span class="sxs-lookup"><span data-stu-id="42b19-110">You have enrolled devices in Intune so that the devices can receive the policies you create.</span></span>
+- <span data-ttu-id="42b19-111">Apps werden Geräten hinzugefügt, damit Ihre Benutzer Zugriff auf die Microsoft 365-Clouddienste Ihrer Organisation erhalten, z. B. Exchange Online und SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="42b19-111">Apps are added to devices so your users get access to your organization's Microsoft 365 cloud services, such as Exchange Online and SharePoint Online.</span></span>
+- <span data-ttu-id="42b19-112">Features und Einstellungen werden konfiguriert und mithilfe der erstellten Azure AD-Benutzer und -Gruppen auf Ihre Geräte angewendet. Dazu gehört möglicherweise das Aktivieren von Antiviren-Apps sowie das Einschränken bestimmter Apps.</span><span class="sxs-lookup"><span data-stu-id="42b19-112">Features and settings are configured and applied to your devices using the Azure AD users and groups you create, which might include enabling anti-virus and restricting specific apps.</span></span>
+- <span data-ttu-id="42b19-113">Compliance-Richtlinien sind vorhanden, um eine Firewall oder eine Kennwortlänge auf einem Gerät zu erfordern.</span><span class="sxs-lookup"><span data-stu-id="42b19-113">Compliance policies are in place to require a firewall or a password length on a device.</span></span> <span data-ttu-id="42b19-114">Wenn Geräte nicht kompatibel sind, blockiert der bedingte Zugriff den Zugriff auf die Daten Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="42b19-114">If devices aren't compliant, Conditional Access blocks access to your organization's data.</span></span>
 
-## <a name="results-and-next-steps"></a><span data-ttu-id="a53f6-115">Ergebnisse und nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="a53f6-115">Results and next steps</span></span>
+## <a name="results-and-next-steps"></a><span data-ttu-id="42b19-115">Ergebnisse und nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="42b19-115">Results and next steps</span></span>
 
-<span data-ttu-id="a53f6-116">Ihre Geräte sind in InTune registriert und mit den entsprechenden Richtlinien konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="a53f6-116">Your devices are enrolled in Intune and configured with the appropriate policies.</span></span>
+<span data-ttu-id="42b19-116">Ihre Geräte sind in InTune registriert und mit den entsprechenden Richtlinien konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="42b19-116">Your devices are enrolled in Intune and configured with the appropriate policies.</span></span>
 
 |||
 |:-------|:-----|
-|![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| <span data-ttu-id="a53f6-118">Wenn Sie die Phasen für die End-to-End-Bereitstellung von Microsoft 365 Enterprise ausführen, ist Ihre nächste Phase der [Informationsschutz](infoprotect-infrastructure.md).</span><span class="sxs-lookup"><span data-stu-id="a53f6-118">If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md).</span></span> |
+|![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| <span data-ttu-id="42b19-118">Wenn Sie die Phasen für die End-to-End-Bereitstellung von Microsoft 365 Enterprise ausführen, ist Ihre nächste Phase der [Informationsschutz](infoprotect-infrastructure.md).</span><span class="sxs-lookup"><span data-stu-id="42b19-118">If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md).</span></span> |
