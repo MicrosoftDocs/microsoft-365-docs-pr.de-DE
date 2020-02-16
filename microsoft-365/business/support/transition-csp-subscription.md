@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP-Abonnements übertragen
 ms.date: 11/01/2017
-ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595043"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057226"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Übertragen eines Microsoft 365 Business-CSP-Abonnements
 
@@ -29,33 +29,33 @@ Wenn Sie über ein Microsoft 365 Business-Vorschau-CSP-Abonnement verfügen, les
 
     Die Abonnements für Ihr Unternehmen werden aufgeführt.
 
-    ![Kundenabonnements im Partner Center](images/pc_customer_subscriptions_1.png)
+    ![Kundenabonnements im Partner Center](../../media/pc_customer_subscriptions_1.png)
     
 3. Wählen Sie auf der Seite **Abonnements** des Unternehmens **Abonnement hinzufügen**aus.
 4. Wählen Sie auf der Seite **Neues Abonnement** die Option **Small Business** aus, und wählen Sie dann **Microsoft 365 Business** aus der Liste aus.
 5. Fügen Sie die Anzahl der Lizenzen hinzu und wählen Sie dann **Weiter: Überprüfung** aus, um das Abonnement zu überprüfen. Wählen Sie **Übermitteln** aus.
 
-    ![Überprüfen Sie das neue Abonnement mit Microsoft 365 Business](images/pc_customer_reviewnewsubscription.png)
+    ![Überprüfen Sie das neue Abonnement mit Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
 
     Das **lizenzbasierte Abonnement** zeigt **Microsoft 365 Business-Vorschau** und **Microsoft 365 Business** an. Sie können das Vorschau-Abonnement als nächstes anhalten.
 
 6. Wählen Sie **Microsoft 365 Business-Vorschau** aus.
 7. Wählen Sie auf der Seite **Microsoft 365 Business Preview** die Option **angehalten** aus, um das Vorschau Abonnement anhalten zu können.
 
-    ![Anhalten des Vorschauabonnements mit Microsoft 365 Business](images/pc_customer_m365bpreview_suspend.png)
+    ![Anhalten des Vorschauabonnements mit Microsoft 365 Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Wählen Sie zur Bestätigung **Übermitteln** aus.
 
     Bestätigen Sie auf der Seite **Abonnements** , dass der Status **Microsoft 365 Business Preview** **angehalten**angezeigt wird.
 
-    ![Überprüfen Sie, ob der Vorschauabonnementstatus angehalten wird](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![Überprüfen Sie, ob der Vorschauabonnementstatus angehalten wird](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Optional können Sie auch den Lizenzvertrag überprüfen. Gehen Sie hierzu folgendermaßen vor:
     1. Wählen Sie **Benutzer und Lizenzen** aus der Unternehmensseite **Abonnements** aus.
     2. Wählen Sie auf der Seite **Benutzer und Lizenzen** einen Benutzer aus.
     3. Überprüfen Sie auf der Seite des Benutzers im Abschnitt **Lizenzen zuweisen** , und bestätigen Sie, dass **Microsoft 365 Business**angezeigt wird.
 
-        ![Stellen Sie sicher, dass dem Benutzer die Microsoft 365 Business-Lizenz zugewiesen wurde](images/pc_customer_userslicenses_m365b_validate.png)
+        ![Stellen Sie sicher, dass dem Benutzer die Microsoft 365 Business-Lizenz zugewiesen wurde](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>Auswirkungen auf Kunden und Benutzer während und nach der Umstellung
 
