@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365 Business.
-ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594850"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080656"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -160,27 +160,27 @@ Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinie
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Schutz vor böswilligen Anlagen, Dateien und Links mit Advanced Threat Protection (ATP)
 
-![Banner, auf das https://aka.ms/aboutM365previewverwiesen wird.](../business/media/m365admincenterchanging.png)
+![Banner, auf das https://aka.ms/aboutM365previewverwiesen wird.](../media/m365admincenterchanging.png)
 
 Stellen Sie zunächst sicher, <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> dass im Admin Center die neue Vorschau für das Admin Center aktiviert ist. Aktivieren Sie die Umschaltfläche neben dem Text **das neue Admin Center**.
 
-   ![Die neue Admin Center-Vorschau auf.](media/previewon.png)
+   ![Die neue Admin Center-Vorschau auf.](../media/previewon.png)
 
-Wenn die Seite **Setup** noch nicht mit Karten in Ihrem Mandanten angezeigt wird, finden Sie weitere Informationen unter Vorgehens &amp; Weise zum Ausführen dieser Schritte in Office 365 Security Compliance Center. Weitere Informationen finden Sie unter [Einrichten von ATP-Safe Attachments im Security #a0 Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) und [Einrichten von ATP-Safe-Links im Security #a1 Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+Wenn die Seite **Setup** noch nicht mit Karten in Ihrem Mandanten angezeigt wird, finden Sie weitere Informationen unter Vorgehens &amp; Weise zum Ausführen dieser Schritte in Office 365 Security Compliance Center. Weitere Informationen finden Sie unter [Einrichten von ATP-Safe Attachments im Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) und [Einrichten von ATP-Safe-Links im Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Klicken Sie im linken Navigationsbereich auf **Setup**.
 2. Wählen Sie auf der Seite **Setup** die Option **Ansicht** auf der Karte zum **Schutz vor fortgeschrittenen Bedrohungen vergrößern aus** .</br></br>
-    ![Klicken Sie auf der Seite zum Erweitern des Schutzes vor fortgeschrittenen Bedrohungen auf anzeigen.](media/startatp.png) 
+    ![Klicken Sie auf der Seite zum Erweitern des Schutzes vor fortgeschrittenen Bedrohungen auf anzeigen.](../media/startatp.png) 
 
 3. Wählen Sie auf der Seite **Schutz vor fortgeschrittenen Bedrohungen erweitern** die Option **Erste Schritte**aus.
 4. Aktivieren Sie im geöffneten Bereich die Kontrollkästchen neben **Links und Anlagen in e-Mail**, **Dateien in SharePoint, OneDrive**und Microsoft Teams überprüfen und **Links in Office Desktop-und Office Online-apps** unter **Scanelemente für böswillige Inhalte**scannen.
 
       - Geben Sie unter **Links und Anlagen in e-Mail**alle Benutzer oder die spezifischen Benutzer ein, deren e-Mail gescannt werden soll.
 
-    ![Aktivieren Sie alle Kontrollkästchen unter Schutz vor fortgeschrittenen Bedrohungen verbessern.](media/setatp.png)
+    ![Aktivieren Sie alle Kontrollkästchen unter Schutz vor fortgeschrittenen Bedrohungen verbessern.](../media/setatp.png)
 5. Wählen Sie **Richtlinien erstellen** aus, um ATP-sichere Anlagen und ATP-sichere Links zu aktivieren.
 
-### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Einrichten von ATP-Safe Attachments im Security #a0 Compliance Center
+### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Einrichten von ATP-Safe Attachments im Security & Compliance Center
 
 Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder böswillig ist, indem nur eine e-Mail-Nachricht angezeigt wird. Office 365 Advanced Threat Protection umfasst den Schutz von ATP-Sicherheitsanlagen, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, dass Sie eine neue Regel erstellen, um mit diesem Schutz zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
   
@@ -211,7 +211,7 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-### <a name="set-up-atp-safe-links-in-the-security--compliance-center"></a>Einrichten von ATP-Sicherheits Links im Security #a0 Compliance Center
+### <a name="set-up-atp-safe-links-in-the-security--compliance-center"></a>Einrichten von ATP-Sicherheits Links im Security & Compliance Center
 
 Hacker verbergen manchmal böswillige Websites in Links in e-Mails oder anderen Dateien. Office 365 ATP-sichere Links (ATP-sichere Links), ein Teil Office 365 Advanced Threat Protection, können zum Schutz Ihrer Organisation beitragen, indem Sie die Zeit-für-Klick-Überprüfung von Webadressen (URLs) in e-Mail-Nachrichten und Office-Dokumenten ermöglichen. Der Schutz wird durch Richtlinien für ATP-sichere Links definiert.
   
@@ -263,7 +263,7 @@ Sie müssen der Rolle Überwachungsprotokolle in Exchange Online zugewiesen sein
 1. Wenn Sie die Überwachungsprotokoll Suche aktivieren möchten, wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie dann im linken Navigationsbereich die Option **Compliance** unter **Admin Centers** aus. 
 2. Wählen Sie auf der Seite **Microsoft 365-Kompatibilität** **Weitere Ressourcen**aus, und **Öffnen** Sie dann auf der ** &amp; Office 365 Security Center** -Karte.
 
-    ![Wählen Sie im Office 365 Security #a0 Compliance Cars die Option Öffnen aus.](media/gotosecandcomp.png)
+    ![Wählen Sie im Office 365 Security & Compliance Cars die Option Öffnen aus.](../media/gotosecandcomp.png)
 3. Wählen Sie auf der Seite Sicherheit und Kompatibilität die Option **Suche** und dann **Überwachungsprotokoll Suche**aus.
 1. Wählen Sie oben auf der Seite **Überwachungsprotokoll Suche** die Option **Überwachung aktivieren**aus.
 
@@ -276,30 +276,30 @@ Nachdem das Feature aktiviert wurde, können Sie nach Dateien, Ordnern und viele
 2. Wechseln Sie im SharePoint Admin Center zu **Richtlinien** \> **Freigeben**.
 3. Wählen Sie auf der Seite **Freigabe** unter **Datei-und Ordner Links**die Option **bestimmte Personen**aus, und wählen Sie unter **Erweiterte Einstellungen für "jeder"** die Option **diese Links müssen innerhalb dieser vielen Tage ablaufen**, und geben Sie 14 ein (oder eine andere Anzahl von Tagen, auf die Sie die Link Lebensdauer beschränken möchten).
 
-    ![Wählen Sie bestimmte Personen aus, und legen Sie den Link Ablauf auf 14 Tage fest.](media/anyonelinks.png)
+    ![Wählen Sie bestimmte Personen aus, und legen Sie den Link Ablauf auf 14 Tage fest.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Aktivitäts Warnungen
 
 Sie können Aktivitäts Warnungen zum Nachverfolgen von Administrator-und Benutzeraktivitäten sowie zum Erkennen von Schadsoftware und Vorfällen zur Verhinderung von Datenverlust in Ihrer Organisation verwenden. Ihr Abonnement enthält eine Reihe von Standardrichtlinien, aber Sie können auch benutzerdefinierte Richtlinien erstellen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Wenn Sie beispielsweise eine wichtige Datei in SharePoint speichern, die nicht von allen Personen extern freigegeben werden soll, können Sie eine Benachrichtigung erstellen, mit der Sie benachrichtigt werden, wenn Sie von einer anderen Person freigegeben wird.
 
 In der folgenden Abbildung sind die Standardrichtlinien aufgeführt, die in Microsoft 365 Business enthalten sind. <br/><br/>
-    ![Standard Warnungsrichtlinien, die in Microsoft 365 Business enthalten sind.](media/alertpolicies.png)
+    ![Standard Warnungsrichtlinien, die in Microsoft 365 Business enthalten sind.](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Deaktivieren oder Verwalten der Kalenderfreigabe
 
 Sie können verhindern, dass Personen in Ihrer Organisation ihre Kalender freigeben, oder Sie können auch verwalten, was Sie freigeben können. Beispielsweise können Sie die Freigabe nur auf Frei/Gebucht-Zeiten beschränken.
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie **Einstellungen** \> **Dienste #a0 Add-ins**aus.
-2. Wählen Sie auf der Seite **Dienste #a0-Add-ins** die Option **Kalender**aus, und wählen Sie aus, ob Personen in Ihrer Organisation ihre Kalender für Personen freigeben können, die sich außerhalb von Office 365 oder Exchange oder mit anderen Personen befinden. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie **Einstellungen** \> **Dienste & Add-ins**aus.
+2. Wählen Sie auf der Seite **Dienste &-Add-ins** die Option **Kalender**aus, und wählen Sie aus, ob Personen in Ihrer Organisation ihre Kalender für Personen freigeben können, die sich außerhalb von Office 365 oder Exchange oder mit anderen Personen befinden. 
     Wenn Sie die Option für jeden freigeben auswählen, können Sie auch nur Frei/Gebucht-Informationen freigeben.
 
 3. Klicken Sie unten auf der Seite auf **Änderungen speichern** .
 
     Die folgende Abbildung zeigt, dass die Kalenderfreigabe nicht zulässig ist. </br></br>
-    ![Screenshot der Anzeige der externen Kalenderfreigabe als nicht zulässig.](media/nocalendarsharing.png)
+    ![Screenshot der Anzeige der externen Kalenderfreigabe als nicht zulässig.](../media/nocalendarsharing.png)
 
     In der folgenden Abbildung sind die Einstellungen dargestellt, wenn die Kalenderfreigabe mit einem e-Mail-Link nur mit Frei/Gebucht-Informationen zulässig ist.
 
-   ![Screenshot der frei/gebucht-Kalenderfreigabe für alle Benutzer.](media/sharefreebusy.png)
+   ![Screenshot der frei/gebucht-Kalenderfreigabe für alle Benutzer.](../media/sharefreebusy.png)
 
 Wenn Ihre Benutzer ihre Kalender freigeben dürfen, lesen Sie [diese Anweisungen](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) zum Freigeben von Outlook im Internet.

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596952"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067412"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -31,7 +31,7 @@ In diesem Leitfaden wird erläutert, wie die empfohlenen Richtlinien in einer ne
 
 Das folgende Diagramm zeigt die empfohlenen Richtlinien. Es wird angezeigt, auf welcher Schutzebene jede Richtlinie angewendet wird und ob die Richtlinien auf PCs oder Telefone und Tablets oder auf beide Gerätekategorien zutreffen. Außerdem wird angegeben, wo diese Richtlinien konfiguriert sind.
 
-![Allgemeine Richtlinien für das Konfigurieren des Identitäts-und Gerätezugriffs](../images/Identity_device_access_policies_byplan.png)
+![Allgemeine Richtlinien für das Konfigurieren des Identitäts-und Gerätezugriffs](../media/Identity_device_access_policies_byplan.png)
 
 
 Im Rest dieses Artikels wird beschrieben, wie Sie diese Richtlinien konfigurieren. 
@@ -62,13 +62,13 @@ Eine empfohlene Vorgehensweise besteht darin, eine Azure Ad Gruppe für bedingte
 
 Das folgende Diagramm enthält ein Beispiel für Benutzerzuweisungen und-Ausschlüsse.
 
-![Beispiel für eine Benutzerzuweisung und Ausschlüsse für MFA-Regeln](../images/identity-access-policies-assignment.png)
+![Beispiel für eine Benutzerzuweisung und Ausschlüsse für MFA-Regeln](../media/identity-access-policies-assignment.png)
 
 In der Abbildung wird dem "Top Secret Project X-Team" eine Richtlinie für den bedingten Zugriff zugewiesen, für die *immer*MFA erforderlich ist. Achten Sie bei der Anwendung eines höheren Schutzniveaus auf Benutzer mit Bedacht. Mitglieder dieses Projektteams müssen bei jeder Anmeldung zwei Formen der Authentifizierung bereitstellen, auch wenn Sie nicht hochregulierte Inhalte anzeigen.  
 
 Alle Azure Ad Gruppen, die als Teil dieser Empfehlungen erstellt wurden, müssen als Office 365 Gruppen erstellt werden. Dies ist insbesondere für die Bereitstellung von AIP (Azure Information Protection) beim Schützen von Dokumenten in SharePoint Online wichtig.
 
-![Bildschirmaufnahme zum Erstellen von Office 365 Gruppen](../images/identity-device-AAD-groups.png)
+![Bildschirmaufnahme zum Erstellen von Office 365 Gruppen](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>MFA basierend auf dem Anmelde Risiko erforderlich
@@ -84,7 +84,7 @@ So erstellen Sie eine neue bedingte Zugriffsrichtlinie:
 
 4. Wählen Sie **Neue Richtlinie** aus.
 
-![Grundlegende Richtlinie für bedingten Zugriff](./media/secure-email/CA-EXO-policy-1.png)
+![Grundlegende Richtlinie für bedingten Zugriff](../media/secure-email/CA-EXO-policy-1.png)
 
  In den folgenden Tabellen werden die Richtlinieneinstellungen für den bedingten Zugriff beschrieben, die für diese Richtlinie implementiert werden müssen.
 
@@ -202,7 +202,7 @@ Die empfohlene Liste von apps umfasst Folgendes:
 - PowerPoint
 - Excel
 - Word
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft SharePoint
 - Microsoft Visio Viewer
 - OneDrive
@@ -282,7 +282,7 @@ Erstellen Sie eine Richtlinie für jede Plattform:
 - Windows 8.1 und höher
 - Windows 10 und höher
 
-Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure Portal an, und navigieren Sie dann zu **InTune #a0 Device Compliance**. Wählen Sie **Richtlinie erstellen** aus.
+Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure Portal an, und navigieren Sie dann zu **InTune > Device Compliance**. Wählen Sie **Richtlinie erstellen** aus.
 
 Die folgenden Einstellungen werden für Windows 10 empfohlen.
 
@@ -307,7 +307,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Kennwort|Anfordern eines Kennworts zum Entsperren mobiler Geräte|Erforderlich||
+|Password|Anfordern eines Kennworts zum Entsperren mobiler Geräte|Erforderlich||
 ||Einfache Kennwörter|Block||
 ||Kennwort-Typ|Geräte Standard||
 ||Minimale Kennwortlänge|6 ||

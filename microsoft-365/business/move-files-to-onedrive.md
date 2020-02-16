@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Hier erfahren Sie, wie Sie Dateien in OneDrive migrieren.
-ms.openlocfilehash: 0417325f93582ac5445cb739f9ca877a34f1d1c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593657"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065213"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business
 
@@ -44,9 +44,9 @@ Wenn ein Benutzer einen Computer mit vielen persönlichen Dateien hat, sollten S
   
 1. Wechseln Sie zu "portal.office.com", und melden Sie sich mit den Microsoft 365 Business-Anmeldeinformationen des Benutzers an.
     
-2. Klicken Sie auf das App-Startfeld ![The app launcher icon in Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und wechseln Sie zu OneDrive. 
+2. Klicken Sie auf das App-Startfeld ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und wechseln Sie zu OneDrive. 
     
-3. Wählen Sie in der Menüleiste **Hochladen**![Upload](media/d9b963b8-10af-42e2-953d-360301b83d3c.png) aus, und navigieren Sie zu den Dateien, die Sie speichern möchten. 
+3. Wählen Sie in der Menüleiste **Hochladen**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) aus, und navigieren Sie zu den Dateien, die Sie speichern möchten. 
     
 Um das Benutzerprofil und wichtige Dateien zu übertragen, können Sie ein Drittanbietertool verwenden, z. B. ForensiT. Sie sollten auch die resultierenden Dateien auf OneDrive for Business hochladen.
   

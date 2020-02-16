@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten.
 keywords: Partner, Lösungsanbieter
-ms.openlocfilehash: 43965e6a245384043fb7607a37d8a831f4e0d752
-ms.sourcegitcommit: e89f4ce9a472c9c6c066d5c632e8e7b6afcc2066
+ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41712043"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080362"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
 
@@ -39,10 +39,10 @@ Es gibt verschiedene Möglichkeiten, mit denen ein Partner zusammenarbeiten kann
 | ------ | ------------------- |
 | Händler | Partner, die Microsoft-Produkte an Ihre Organisation oder Schule verkaufen. |
 | Delegierter Administrator | Partner, die Produkte und Dienste für Ihre Organisation oder Schule verwalten. In Azure Active Directory (AD) ist der Partner ein globaler Administrator für Ihren Mandanten. Diese Rolle ermöglicht Ihnen das Verwalten von Diensten wie das Erstellen von Benutzerkonten, das zuweisen und Verwalten von Lizenzen und das Zurücksetzen von Kennwörtern. |
-| Reseller #a0 Delegierter Administrator | Partner, die Microsoft-Produkte und-Dienste an Ihre Organisation oder Schule verkaufen und verwalten. |
+| Reseller & Delegierter Administrator | Partner, die Microsoft-Produkte und-Dienste an Ihre Organisation oder Schule verkaufen und verwalten. |
 | Partner | Sie geben Ihrem Partner ein Benutzerkonto in Ihrem Mandanten und arbeiten mit anderen Microsoft-Diensten in Ihrem Auftrag zusammen. |
 | Advisor | Partner können Kennwörter zurücksetzen und Supportvorfälle für Sie verarbeiten. |
-| Microsoft Products #a0 Service Agreement (MPSA)-Partner | Wenn Sie mit mehreren Partnern über das MPSA-Programm zusammengearbeitet haben, können Sie zulassen, dass die Einkäufe voneinander angezeigt werden. |
+| Microsoft Products & Service Agreement (MPSA)-Partner | Wenn Sie mit mehreren Partnern über das MPSA-Programm zusammengearbeitet haben, können Sie zulassen, dass die Einkäufe voneinander angezeigt werden. |
 | OEM-PC-Partner | Partner können Geräte-IDs für PCs hochladen, die Sie [mit Autopilot verwalten](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
 | Branchenpartner (Linien of Business) | Partner können Branchen-apps entwickeln, übermitteln und verwalten, die für Ihre Organisation oder Schule spezifisch sind. |
 
@@ -60,9 +60,9 @@ Der Partner kontaktiert Sie und gibt Ihnen die Möglichkeit, mehr über diese zu
 Nachdem Sie einen Partner gefunden haben und sich für die Zusammenarbeit entschieden haben, erhalten Sie eine e-Mail-Einladung.
 
 1. Wählen Sie in der e-Mail den Link aus, um zum Microsoft 365 Admin Center zu gelangen.
-2. Wählen Sie auf der Seite **akzeptieren #a0 Autorisieren des Vertrags** den Link für die **Microsoft-Kundenvereinbarung**aus, und lesen Sie das Dokument.
+2. Wählen Sie auf der Seite **akzeptieren & Autorisieren des Vertrags** den Link für die **Microsoft-Kundenvereinbarung**aus, und lesen Sie das Dokument.
 3. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie den Vertrag gelesen haben.
-4. Wählen Sie **akzeptieren #a0 autorisieren**aus.
+4. Wählen Sie **akzeptieren & autorisieren**aus.
 5. Die Liste der Partner, mit denen Sie gerade arbeiten, wird angezeigt. Wählen Sie einen Partner aus, um Details anzuzeigen.
 
 ## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Überprüfen und akzeptieren eines Microsoft-Kundenvertrags

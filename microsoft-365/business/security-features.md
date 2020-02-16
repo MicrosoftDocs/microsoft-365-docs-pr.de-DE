@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business geliefert werden.
-ms.openlocfilehash: 0e1823374ec1843b6caa3f080393ca013302bf72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593423"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064798"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 
@@ -35,7 +35,7 @@ Microsoft 365 Business bietet vereinfachte Sicherheitsfunktionen zum Schutz Ihre
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 Business Admin Center-Sicherheitsfeatures
 
-[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Sie können viele der Microsoft 365-Geschäfts Sicherheitsfeatures im Admin Center verwalten, wodurch Sie eine vereinfachte Möglichkeit zum Aktivieren oder Deaktivieren dieser Features erhalten. Im Admin Center können Sie folgendermaßen vorgehen:
   
@@ -123,6 +123,6 @@ Ja, diese Features stehen in allen Märkten zur Verfügung, in denen Microsoft 3
     
 2. Suchen Sie im linken Navigationsbereich **Admin Center** , und erweitern Sie es. 
     
-    ![Wählen Sie im linken Navigationsbereich im Microsoft 365 Admin Center die Option Admin Center aus.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![Wählen Sie im linken Navigationsbereich im Microsoft 365 Admin Center die Option Admin Center aus.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. Wählen **Sie &amp; Security Compliance** , um zum &amp; Security Compliance Center zu gelangen.

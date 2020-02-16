@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie MFA erfordern und Richtlinien für bedingten Zugriff für Microsoft 365 Business einrichten.
-ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594860"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056411"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Erzwingen der mehrstufigen Authentifizierung und Einrichten von Richtlinien für bedingten Zugriff
 
@@ -58,13 +58,13 @@ So legen Sie fest, dass sich alle Benutzer mit einem zweiten ID-Formular anmelde
 2. Wählen Sie auf der Seite Setup die Option **Ansicht** in **sicherer Karte anmelden** .
 
 
-    ![Anmelden sicherer Karten.](media/setupmfa.png)
+    ![Anmelden sicherer Karten.](../media/setupmfa.png)
 3. Wählen Sie auf der Seite Anmeldung sicherer gestalten die Option **Erste Schritte**aus.
  
 4. Aktivieren Sie im Bereich Anmeldesicherheit verstärken die Kontrollkästchen neben mehrstufiger **Authentifizierung für Administratoren erforderlich** , und fordern Sie die **Benutzer auf, die mehrstufige Authentifizierung zu registrieren und den Zugriff zu blockieren, wenn das Risiko erkannt wird**.
     Achten Sie darauf, das [Notfall](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) -oder "Break-Glass"-Administratorkonto aus der MFA-Anforderung im Feld **Benutzer suchen** auszuschließen.
     
-    ![Stärkung der Sing-in-Sicherheitsseite.](media/requiremfa.png)
+    ![Stärkung der Sing-in-Sicherheitsseite.](../media/requiremfa.png)
 
 5. Klicken Sie unten auf der Seite auf **Richtlinie erstellen** .
 
@@ -74,7 +74,7 @@ So legen Sie fest, dass sich alle Benutzer mit einem zweiten ID-Formular anmelde
     
     Die grundlegenden Richtlinien werden auf der Seite aufgeführt, und Sie können sehen, dass **MFA für Administratoren** und **Endbenutzer Schutz** erforderlich ist, nachdem Sie die Schritte in " [MFA erfordern](#require-mfa)" abgeschlossen haben.
 
-    ![Seite, auf der Basisrichtlinien für bedingten Zugriff aufgelistet werden.](media/casettings.png)
+    ![Seite, auf der Basisrichtlinien für bedingten Zugriff aufgelistet werden.](../media/casettings.png)
 2. Lesen Sie die folgenden spezifischen Anweisungen für jede Richtlinie:
 
     - [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Ab dem 14. September 2019 werden Banken in den 31 Ländern des Europäischen Wirtschaftsraums aufgefordert, die Identität der Person zu überprüfen, die Online kauft, bevor die Zahlung verarbeitet werden kann.
 keywords: Payment Services-Direktive 2, starke Kundenauthentifizierung, mehrstufige Authentifizierung
-ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53de6ce3158760299a3ed2a7bc840919babf20bd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594706"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080392"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Payment Services-Direktive 2 und starke Kundenauthentifizierung für kommerzielle Kunden
 
