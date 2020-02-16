@@ -17,12 +17,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einem Dashboard zu einer Einblicke mit empfohlenen Aktionen im &amp; Security Compliance Center wechseln können.
-ms.openlocfilehash: ceb00301ca8c58072f6f34b19c633a0d11565e77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f6a75e02f00cbc62e4907ea3a0ff54c72110a21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599302"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083159"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Exemplarische Vorgehensweise – Vom Dashboard zum Einblick
 
@@ -34,15 +34,15 @@ Dies ist eine von mehreren exemplarischen Vorgehens &amp; weisen für das Securi
 
 Lassen Sie uns den Fluss vom Dashboard zu einem Bericht zu einem Einblick und einer Aktion durchgehen. (Dies ist ein kurzes [Spoof Intelligence](learn-about-spoof-intelligence.md) -Beispiel.) 
   
-1. Wir beginnen mit dem Sicherheits Dashboard im [ &amp; Security Compliance Center](https://protection.office.com). (Wechseln Sie zu **Threat Management** \> **Dashboard**.)<br>![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management Dashboard aus.](../media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
+1. Wir beginnen mit dem Sicherheits Dashboard im [ &amp; Security Compliance Center](https://protection.office.com). (Wechseln Sie zu **Threat Management** \> **Dashboard**.)<br>![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management Dashboard aus.](../../media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
   
-2. In der Zeile **Insights** wird eine Erkenntnis angezeigt, die besagt, dass einige Domänen überprüft werden müssen, die möglicherweise verdächtig sind. (Klicken Sie in der Zeile **Insights** auf **Domänen Paare**.)<br>![In der Zeile "Insights" werden potenzielle Spoofing-Bedenken erwähnt](../media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
+2. In der Zeile **Insights** wird eine Erkenntnis angezeigt, die besagt, dass einige Domänen überprüft werden müssen, die möglicherweise verdächtig sind. (Klicken Sie in der Zeile **Insights** auf **Domänen Paare**.)<br>![In der Zeile "Insights" werden potenzielle Spoofing-Bedenken erwähnt](../../media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
   
-3. Wir erhalten eine Liste der Aktivitäten im Zusammenhang mit spoof Intelligence. Hierbei handelt es sich um Fälle, in denen e-Mail-Nachrichten gesendet wurden, die aussehen, als kämen Sie aus unserer Organisation, aber tatsächlich von einer anderen Organisation gesendet wurden. Das Ziel besteht darin zu ermitteln, ob die gefälschten Nachrichten autorisiert sind oder nicht.<br>![Einblicke in Spoof Intelligence](../media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>In dieser Liste können wir die Informationen nach Nachrichtenanzahl, Datum, an dem die Spoofing zuletzt erkannt wurde, und vieles mehr sortieren. (Klicken Sie auf Spaltenüberschriften wie **Nachrichtenanzahl** oder **zuletzt gesehen** , um zu sehen, wie die Sortierung funktioniert.) 
+3. Wir erhalten eine Liste der Aktivitäten im Zusammenhang mit spoof Intelligence. Hierbei handelt es sich um Fälle, in denen e-Mail-Nachrichten gesendet wurden, die aussehen, als kämen Sie aus unserer Organisation, aber tatsächlich von einer anderen Organisation gesendet wurden. Das Ziel besteht darin zu ermitteln, ob die gefälschten Nachrichten autorisiert sind oder nicht.<br>![Einblicke in Spoof Intelligence](../../media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>In dieser Liste können wir die Informationen nach Nachrichtenanzahl, Datum, an dem die Spoofing zuletzt erkannt wurde, und vieles mehr sortieren. (Klicken Sie auf Spaltenüberschriften wie **Nachrichtenanzahl** oder **zuletzt gesehen** , um zu sehen, wie die Sortierung funktioniert.) 
     
-4. Wenn Sie ein Element in der Liste auswählen, wird ein Detailbereich geöffnet, in dem zusätzliche Informationen angezeigt werden können, einschließlich ähnlicher e-Mail-Nachrichten, die erkannt wurden. (Klicken Sie auf ein Element in der Liste, und überprüfen Sie die Informationen und Empfehlungen.)<br>![Durch Auswählen eines Elements wird ein Detailbereich geöffnet.](../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
+4. Wenn Sie ein Element in der Liste auswählen, wird ein Detailbereich geöffnet, in dem zusätzliche Informationen angezeigt werden können, einschließlich ähnlicher e-Mail-Nachrichten, die erkannt wurden. (Klicken Sie auf ein Element in der Liste, und überprüfen Sie die Informationen und Empfehlungen.)<br>![Durch Auswählen eines Elements wird ein Detailbereich geöffnet.](../../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. Beachten Sie, dass oben im Bereich die Option zum Hinzufügen des Absenders zur Liste der zulässigen Absender der Organisation vorhanden ist. (Wählen Sie **Add to ' AllowedtoSpoof ' Sender Allow List** erst aus, wenn Sie sicher sind, dass Sie dies tun möchten. [Erfahren Sie mehr über Spoof Intelligence](learn-about-spoof-intelligence.md).)<br>![Sie können einen Absender autorisieren.](../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Beachten Sie, dass oben im Bereich die Option zum Hinzufügen des Absenders zur Liste der zulässigen Absender der Organisation vorhanden ist. (Wählen Sie **Add to ' AllowedtoSpoof ' Sender Allow List** erst aus, wenn Sie sicher sind, dass Sie dies tun möchten. [Erfahren Sie mehr über Spoof Intelligence](learn-about-spoof-intelligence.md).)<br>![Sie können einen Absender autorisieren.](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 Auf diese Weise können wir von einem Dashboard zu Insights und empfohlenen Aktionen übergehen.
   

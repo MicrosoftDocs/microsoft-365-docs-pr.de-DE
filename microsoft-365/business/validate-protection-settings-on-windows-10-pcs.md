@@ -1,5 +1,7 @@
 ---
 title: Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Erfahren Sie, wie Sie Microsoft 365 Business App Protection-Einstellungen in Windows 10-Geräten überprüfen.
-ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 577921f7f33eafbbe652dcf825a145d89f1ff556
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721858"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057237"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs
 
@@ -36,11 +38,11 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
 1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
-    ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
+    ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
 2. Auf der Seite **verwaltet nach** \<Mandantenname\> werden die **Verbindungsinformationen** angezeigt, die eine **Verwaltungs Server Adresse** enthalten, wie in der folgenden Abbildung dargestellt. 
     
-    ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
+    ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
  **Sicherstellen, dass keine Unternehmensdaten in eine nicht verwaltete app eingefügt werden können**
   
@@ -52,7 +54,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
     
     Sie erhalten eine Fehlermeldung, die besagt, dass die APP nicht auf Inhalte zugreifen kann.
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     Sie können den gleichen Inhalt jedoch in Word 2016 einfügen.
     
@@ -68,11 +70,11 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
     
 4. Wählen Sie auf der Seite **Auf Arbeits- oder Schulkonto zugreifen** die Option **Geschäfts-, Schul- oder Unikonto** und dann **Informationen** aus.
     
-    ![Klicken oder tippen Sie im Dialogfeld Arbeit oder Schulkonto auf Informationen.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Klicken oder tippen Sie im Dialogfeld Arbeit oder Schulkonto auf Informationen.](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
 5. Auf der Seite **Access work oder School** können Sie die **Verbindungsinformationen** sehen, die eine **Verwaltungs Server Adresse** enthalten, wie in der folgenden Abbildung dargestellt, und enthält die Wörter *WIP* und *MAM* in. 
     
-    ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
+    ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
  **Sicherstellen, dass keine Unternehmensdaten in eine nicht verwaltete app eingefügt werden können**
   
@@ -84,7 +86,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
     
     Sie erhalten eine Fehlermeldung, dass besagt, dass APP nicht auf Inhalte zugreifen kann.
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     Sie können den gleichen Inhalt jedoch in Word 2016 einfügen.
     

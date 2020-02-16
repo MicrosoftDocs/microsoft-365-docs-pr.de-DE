@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962342"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085834"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Managed Desktop-Produktlebenszyklus
 
@@ -33,7 +33,7 @@ In diesem Thema wird der Lebenszyklus von Geräten erläutert, die dem genehmigt
 
 Die gesamte Sequenz wird in dieser Abbildung dargestellt:
 
-![Lifecycle Timeline: beginnend mit der allgemeinen Verfügbarkeit des Produkts dauert die "primäre Verfügbarkeit" zwei Jahre. Während dieser Zeit endet das Zertifizierungs Fenster und an einem bestimmten Punkt ist das Gerät an Bord. Am Ende der primären Verfügbarkeit wird das Produkt archiviert, und die "Kulanzzeit" von drei Jahren beginnt. Ab dem Zeitpunkt, an dem das Gerät an Bord ist, hat es eine Nutzungsdauer von drei Jahren, bis es aus der Verwaltung entfernt wurde. Am Ende der Kulanzzeit entfernen wir das Produkt aus dem Katalog.](images/non-dark1-edits.PNG)
+![Lifecycle Timeline: beginnend mit der allgemeinen Verfügbarkeit des Produkts dauert die "primäre Verfügbarkeit" zwei Jahre. Während dieser Zeit endet das Zertifizierungs Fenster und an einem bestimmten Punkt ist das Gerät an Bord. Am Ende der primären Verfügbarkeit wird das Produkt archiviert, und die "Kulanzzeit" von drei Jahren beginnt. Ab dem Zeitpunkt, an dem das Gerät an Bord ist, hat es eine Nutzungsdauer von drei Jahren, bis es aus der Verwaltung entfernt wurde. Am Ende der Kulanzzeit entfernen wir das Produkt aus dem Katalog.](../../media/non-dark1-edits.PNG)
 
 Die Produkte verbleiben bis zu 24 Monate im Katalog, die <em>Geräte</em> bleiben jedoch auf drei Jahre basierend auf Ihren individuellen Anmeldedaten unter Verwaltung. Jedes Produkt hat tatsächlich drei wichtige Daten, aber jedes Gerät hat nur einen. Bei Produkten werden alle drei Datumsangaben basierend auf dem <em>Genehmigungsdatum</em>berechnet, daher veröffentlichen wir diese Daten nach Genehmigung, sodass Sie immer nach vorn schauen und den gesamten Lebenszyklus des Produkts entsprechend planen können.
 
@@ -58,7 +58,7 @@ In dieser Tabelle sind die Beispieldaten für theoretische *Geräte*aufgeführt:
 
 Der Produktlebenszyklus wird gestartet, wenn ein Hersteller das Produkt öffentlich veröffentlicht:
 
-![Lebenszyklus Zeitachse mit Veröffentlichungs-und Evaluierungszeitraum](images/non-dark3-edits.PNG)
+![Lebenszyklus Zeitachse mit Veröffentlichungs-und Evaluierungszeitraum](../../media/non-dark3-edits.PNG)
 
 In dieser Phase führt das Microsoft Managed Desktop Engineering-Team die Bewertung und Zertifizierung eines Produkts durch. Das Team bewertet unter anderem Zuverlässigkeit und Leistung mit Windows, die Einhaltung einer Hardwarebasis, Marktstimmung sowie Inventar-und Kanal Bereitschaft. Dieser Vorgang dauert in der Regel ungefähr 6 Wochen.
   
@@ -71,7 +71,7 @@ Am Ende dieser Phase wird das Produkt von Microsoft Managed Desktop zur [genehmi
 
 Dieser Zeitraum stellt den Kern der Produktverfügbarkeit dar:
 
-![Lebenszyklus Zeitachse mit primärer Verfügbarkeit](images/non-dark4-edits.PNG)
+![Lebenszyklus Zeitachse mit primärer Verfügbarkeit](../../media/non-dark4-edits.PNG)
 
 Jedes Gerät, das während dieses Zeitraums registriert ist, erhält die volle dreijährige Unterstützung von Microsoft Managed Desktop (wie in der blauen Zeitachse gezeigt). Dieser Zeitraum dauert bis zu einem Enddatum, das von dem allgemeinen Verfügbarkeitsdatum auf 24 Monate festgelegt wurde.
 
@@ -84,7 +84,7 @@ Die Produkt Kulanzfrist beträgt drei Jahre nach der primären Verfügbarkeit. I
 Wenn Sie vor der Anmeldung mit Microsoft Managed Desktop vor kurzem eine Reihe von genehmigten Geräten erworben haben, können Sie diese dennoch registrieren, jedoch erhalten Sie keine vollständige dreijährige Verwaltung. Stattdessen fallen Sie nicht unter Einhaltung des Renten Datums, unabhängig davon, wann Sie registriert wurden. Hinter den Kulissen werden diese Geräte von Microsoft Managed Desktop so behandelt, als wären Sie am letzten Tag der primären Verfügbarkeit registriert. In dieser Abbildung sehen Sie dieses Szenario, indem Sie feststellen, dass das blaue und das grüne Gerät trotz ihres einjährigen unter schiedes in der Registrierung am selben Tag enden:
 
 
-![Lebenszyklus Zeitachse mit Kulanzzeitraum](images/non-dark2-edits.PNG)
+![Lebenszyklus Zeitachse mit Kulanzzeitraum](../../media/non-dark2-edits.PNG)
 
 Das Beispiel für ein Fabrikam-Laptop aus der vorherigen Tabelle veranschaulicht diese Situation: 
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: 1535784350b719b606dca9417f9cdb192060adf1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080322"
 ---
 # <a name="manage-self-service-purchases-users"></a>Verwalten von Self-Service-Käufen (Benutzer)
 
@@ -32,11 +32,11 @@ Ihr Administrator hat eine schreibgeschützte Ansicht für alle Abonnements, die
 
 ## <a name="view-your-subscriptions"></a>Anzeigen Ihrer Abonnements
 
-Sie können eine Liste aller erworbenen Self-Service-Abonnements anzeigen. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte #a0 Dienste</a> .
+Sie können eine Liste aller erworbenen Self-Service-Abonnements anzeigen. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Mehr kaufen oder reduzieren von Lizenzen
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte #a0 Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Suchen Sie das Abonnement, für das Sie mehr kaufen oder Lizenzen reduzieren möchten.
 
@@ -76,17 +76,17 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ## <a name="cancel-a-subscription"></a>Kündigen eines Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte #a0 Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Suchen Sie das Abonnement, das Sie abbrechen möchten.
 
-3. Wählen Sie im Abschnitt **Einstellungen #a0 Aktionen** die Option **Abonnement kündigen**aus.
+3. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Abonnement kündigen**aus.
 
 4. Wählen Sie im Dialogfeld möchten **Sie das Abonnement wirklich kündigen?** die Option **Ja, Abbrechen**aus.
 
 ## <a name="manage-your-payment-details"></a>Zahlungsdetails verwalten
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > Bills **#a0 Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing Profiles</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing** > Bills **& Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing Profiles</a> .
 
 2. Wählen Sie in der Liste ein Abrechnungsprofil aus.
 
@@ -99,7 +99,7 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ### <a name="update-an-existing-payment-method"></a>Aktualisieren einer vorhandenen Zahlungsmethode
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills #a0 Zahlungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & Zahlungen</a> .
 
 2. Um eine vorhandene Zahlungsmethode zu bearbeiten, wählen Sie Sie aus der Liste aus.
 
@@ -109,7 +109,7 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ### <a name="add-a-new-payment-method"></a>Neue Zahlungsmethode hinzufügen
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills #a0 Zahlungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & Zahlungen</a> .
 
 2. Wählen Sie **Zahlungsmethode hinzufügen**aus.
 
@@ -117,7 +117,7 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ## <a name="view-your-invoices"></a>Anzeigen Ihrer Rechnungen
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills #a0 Zahlungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & Zahlungen</a> .
 
 2. Wählen Sie unter **Rechnungen** die Rechnung aus, die Sie anzeigen möchten.
 

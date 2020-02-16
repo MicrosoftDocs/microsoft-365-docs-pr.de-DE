@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihre Administratorkonten einrichten und schützen.
-ms.openlocfilehash: 6160f7458dc9a4c343c48f07d87776529c4f1326
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080577"
 ---
 # <a name="protect-your-administrator-accounts"></a>Schützen Ihrer Administratorkonten
 
@@ -48,18 +48,18 @@ So erstellen Sie zusätzliche Administratorkonten:
 
  1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Admin Center</a> , und wählen Sie dann **Benutzer** \> **aktive Benutzer** im linken Navigationsbereich aus.
 
-    ![Wählen Sie Benutzer und dann aktive Benutzer im linken Navigationsbereich aus.](media/Activeusers.png)
+    ![Wählen Sie Benutzer und dann aktive Benutzer im linken Navigationsbereich aus.](../media/Activeusers.png)
 
 2. Wählen Sie auf der Seite **aktive Benutzer** oben auf der Seite **einen Benutzer hinzufügen** aus, und geben Sie im Bereich **neuer Benutzer** den Namen und andere Informationen ein.
 3. Erweitern Sie den Abschnitt **Rollen** , und wählen Sie **globaler Administrator** aus, um diesem Benutzer den globalen Administratorzugriff zu gewähren. Sie können auch **benutzerdefinierten Administrator** auswählen und eine der Rollen auswählen, die angezeigt werden.
 
     Geben Sie eine Alternative e-Mail in das Textfeld **Alternative e-Mail-Adresse** ein. Sie können diese Adresse verwenden, um Ihre Kennwortinformationen wiederherzustellen, wenn Sie gesperrt werden. Für globale Administratoren wird auch eine Abrechnungs Anweisung an diese Adresse gesendet.
 
-    ![Auswählen der Administratorrolle](media/adminroles.png)
+    ![Auswählen der Administratorrolle](../media/adminroles.png)
     
 4. Stellen Sie im Abschnitt **Produktlizenzen** den Selektor für **Microsoft 365 Business** auf **aus** , und legen Sie den **Benutzer ohne Produktlizenz** auf **ein**.
 
-    ![Produktlizenz auswählen](media/productlicense.png)
+    ![Produktlizenz auswählen](../media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>Erstellen eines Notfall Administratorkontos
 

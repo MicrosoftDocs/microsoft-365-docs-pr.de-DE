@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Informationen zum Einrichten eines Zeitplans für einen Bericht im Security &amp; Compliance Center.
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599552"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083464"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center
 
@@ -55,7 +55,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und Einblicke](repo
     
 3. Wählen Sie in der oberen linken Ecke des Berichts **+ Zeitplan erstellen**aus. 
     
-    ![Zeitplan erstellen](../media/atpfiletypes-createschedule.png)
+    ![Zeitplan erstellen](../../media/atpfiletypes-createschedule.png)
 
     (Hinweis: nicht alle Berichte haben die Schaltfläche **+ Create Schedule** .)
   
@@ -63,7 +63,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und Einblicke](repo
     
 4. Behalten Sie die Standardeinstellungen bei, und wählen Sie **Zeitplan erstellen**aus, oder wählen Sie **Zeitplan anpassen**aus.
     
-    ![Sie können die Standardeinstellungen verwenden oder einen Berichtszeitplan anpassen.](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![Sie können die Standardeinstellungen verwenden oder einen Berichtszeitplan anpassen.](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     Wenn Sie Ihren Berichtszeitplan anpassen möchten, können Sie die Häufigkeit des Berichts, die e-Mail-Adresse des Absenders und die e-Mail-Adresse eines Empfängers angeben. 
     

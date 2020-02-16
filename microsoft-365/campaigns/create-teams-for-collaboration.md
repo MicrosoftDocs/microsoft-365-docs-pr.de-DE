@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Teams für die Zusammenarbeit
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie einen Bereich für die Zusammenarbeit für Ihr Team mit Microsoft Teams.
-ms.openlocfilehash: 9b501daa61998b0b2daedd84c333552b42e5338f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031350"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056350"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Erstellen von Teams für die Zusammenarbeit in Microsoft Teams
 
@@ -42,7 +44,7 @@ Kampagnen können beispielsweise die folgenden Teams zur sicheren Kommunikation 
 
 Sie können auch Teams für bestimmte Projekte erstellen und die richtige Menge an Schutz anwenden, basierend darauf, wer einbezogen werden sollte. 
 
-![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit zu ermöglichen](media/m365-democracy-teams-collab.png)
+![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit zu ermöglichen](../media/m365-democracy-teams-collab.png)
 
 Wenn Sie ein Team erstellen, erfahren Sie hier, was else erstellt wird:
 

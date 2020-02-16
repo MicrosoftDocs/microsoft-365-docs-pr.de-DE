@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie Richtlinien für bedingten Zugriff für Microsoft 365-Kampagnen einrichten.
-ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064606"
 ---
 # <a name="set-up-conditional-access-policies"></a>Einrichten von Richtlinien für bedingten Zugriff
 
@@ -52,7 +52,7 @@ Weitere Informationen zu diesen Richtlinien finden Sie unter [Was sind Basisrich
 1. Wechseln Sie [zu Azure-Portal](https://portal.azure.com), und navigieren Sie dann zu **Azure Active Directory** \> **bedingten Zugriff**.
     
     Die Basisrichtlinien werden auf der Seite aufgelistet. <br/> <br/>
-    ![Seite, auf der Basisrichtlinien für bedingten Zugriff aufgelistet werden.](media/baslinepolicies.png)
+    ![Seite, auf der Basisrichtlinien für bedingten Zugriff aufgelistet werden.](../media/baslinepolicies.png)
 1. Lesen Sie die folgenden spezifischen Anweisungen für jede Richtlinie:
 
   - [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

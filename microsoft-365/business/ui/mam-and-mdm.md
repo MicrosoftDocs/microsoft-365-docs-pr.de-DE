@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Unterschiede zwischen der Verwaltung mobiler Geräte und Mobile App Verwaltung oder MDM und MAM.
-ms.openlocfilehash: 569bb54c6228bd678140e692763d5d0c73f1a4bf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 590dc9522be7adc9c24c61091928133fb13d9027
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595030"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057136"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Unterschied zwischen MDM und MAM
 

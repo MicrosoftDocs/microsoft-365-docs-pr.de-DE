@@ -1,5 +1,7 @@
 ---
 title: Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Erfahren Sie, wie Sie Microsoft 365 Business App Protection-Einstellungen auf Windows 10-Geräten überprüfen.
-ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721798"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056657"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Überprüfen von Geräteschutzeinstellungen auf Windows 10-PCs
 
@@ -37,23 +39,23 @@ Nachdem Sie [Geräterichtlinien eingerichtet haben](protection-settings-for-wind
   
 1. Wechseln Sie **zu Einstellungen** \> **Update &amp; Security** \> **Windows Update** \> - **Neustartoptionen** , und vergewissern Sie sich, dass alle Einstellungen abgeblendet sind. 
     
-    ![Alle Neustartoptionen sind abgeblendet.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Alle Neustartoptionen sind abgeblendet.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. Wechseln Sie **zu Einstellungen** \> **Update &amp; Security** \> **Windows Update** \> **Erweiterte Optionen** , und vergewissern Sie sich, dass alle Einstellungen abgeblendet sind. 
     
-    ![Die Optionen für erweiterte Windows-Updates sind alle abgeblendet.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Die Optionen für erweiterte Windows-Updates sind alle abgeblendet.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
     Vergewissern Sie sich, dass die Nachricht (in rot) angezeigt wird, dass einige Einstellungen von Ihrer Organisation ausgeblendet oder verwaltet werden und alle Optionen abgeblendet sind.
     
-    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**. 
     
 5. Stellen Sie sicher, dass alle Optionen abgeblendet sind. 
     
-    ![Die Viren-und Bedrohungsschutz Einstellungen sind abgeblendet.](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![Die Viren-und Bedrohungsschutz Einstellungen sind abgeblendet.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>Verwandte Themen
 

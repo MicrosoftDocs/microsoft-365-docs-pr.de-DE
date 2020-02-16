@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Administratoren können sich mit der Verwaltung von Self-Service-Käufen von Benutzern in Ihrer Organisation vertraut machen.
-ms.openlocfilehash: 5db942b42f398e8951da43add7013569af52c53f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594109"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080332"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Verwalten von Self-Service purchases (Administrator)
 
@@ -29,7 +29,7 @@ Sie können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe 
 
 ## <a name="view-self-service-subscriptions"></a>Anzeigen von Self-Service-Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte #a0 Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Klicken Sie neben **Ergebnisse Verfeinern**in der Dropdownliste **Kontotyp** auf **Self-Service**.
 

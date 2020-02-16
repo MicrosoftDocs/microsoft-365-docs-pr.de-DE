@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigeben von Dateien und Videos in Ihrer Kampagne mit Microsoft Teams und SharePoint.
-ms.openlocfilehash: bd6fae6c728cee50efcb5094edd6c75f6bdf3b11
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b67b6f834fd9333814f1807567776644dd2826e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594726"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080416"
 ---
 # <a name="share-files-and-videos"></a>Freigeben von Dateien und Videos
 
 Wenn Sie steuern müssen, wer Ihre Dateien anzeigen kann und wer Sie bearbeiten kann, müssen Sie die Dateien an einem sicheren Ort speichern, wo Sie sicherstellen können, dass die Berechtigungen ordnungsgemäß angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern und die Dateien dann entweder innerhalb oder außerhalb Ihrer Kampagne mithilfe von Microsoft Teams oder durch Senden von SharePoint-Links freizugeben. Wenn Sie einen Link anstelle einer e-Mail-Anlage senden, wissen Sie, wer die Dateien anzeigt und ändert, und Sie können ohne Ihre Berechtigung nicht angezeigt oder geändert werden. 
 
-![Diagramm eines Microsoft Teams-Fensters, das Register "Dateien" und "Get Link" im Menü anzeigen](media/m365-democracy-teams-sharefiles.png)
+![Diagramm eines Microsoft Teams-Fensters, das Register "Dateien" und "Get Link" im Menü anzeigen](../media/m365-democracy-teams-sharefiles.png)
 
 Mit Ihren Dateien in Microsoft Teams und SharePoint können Sie die Dateien auch zusammen bearbeiten und sich gegenseitig die Änderungen ansehen. Verwenden Sie Microsoft Teams, um Dateien innerhalb einer politischen Kampagne freizugeben. Wenn Sie extern für Personen außerhalb der Kampagne freigeben möchten, können Sie diese als Gäste zu einem Team hinzufügen oder Ihnen eine sichere SharePoint-Verknüpfung senden.
 
@@ -68,4 +68,4 @@ Führen Sie die folgenden Schritte aus, um Videos zu erstellen und freizugeben.
 
 Laden Sie eine Infografik in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) oder [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) herunter, um einen schnellen Überblick über die Möglichkeiten zum Freigeben von Dateien zu erhalten.
 
-[![Eine Illustration zur Freigabe von Dateien für verschiedene Benutzer](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![Eine Illustration zur Freigabe von Dateien für verschiedene Benutzer](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

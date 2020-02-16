@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: Hier erfahren Sie, wie Contoso ein Team für streng geregelte Daten für ein streng geheimes Projekt verwendet, um eine neue Produkt-und Dienst Suite zu entwickeln.'
-ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597072"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068026"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team für ein streng geheimes Projekt in der Contoso Corporation
 
@@ -68,7 +68,7 @@ Contoso-Administratoren haben eine neue Office 365 Sensitivitäts Bezeichnung " 
 
 Hier ist die resultierende Konfiguration des Project 2X-Teams.
 
-![Die resultierende Konfiguration des Project 2X-Teams](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![Die resultierende Konfiguration des Project 2X-Teams](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 Dateien im Abschnitt "Dokumente" der zugrunde liegenden Project 2X SharePoint-Website wurden durch Folgendes geschützt:
 
@@ -79,7 +79,7 @@ Dateien im Abschnitt "Dokumente" der zugrunde liegenden Project 2X SharePoint-We
 
 Im folgenden finden Sie ein Beispiel für eine Datei, die im zugrunde liegenden Projekt 2X-Standort mit der streng regulierten Aufbewahrungs Bezeichnung und der zugewiesenen 2-fachen Vertraulichkeits Bezeichnung gespeichert ist
 
-![Ein Beispiel für eine Datei, die in der zugrunde liegenden Project 2X-Website gespeichert ist](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![Ein Beispiel für eine Datei, die in der zugrunde liegenden Project 2X-Website gespeichert ist](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## <a name="step-4-trained-project-2x-team-members"></a>Schritt 4: geschulte Project 2X-Teammitglieder
 

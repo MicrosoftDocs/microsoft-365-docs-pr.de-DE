@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: e6946c138cb6fde15e35374b447038d5c302187e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962242"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085757"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -26,7 +26,7 @@ Status  | Erklärung
 Bereitstellen | Ihre Änderung wartet auf die Bereitstellung für diese Gruppe.
 In Arbeit | Die Änderung wird auf aktive Geräte in dieser Gruppe angewendet. 
 Abschließen | Die Änderung, die für alle aktiven Geräte in dieser Gruppe abgeschlossen wurde. 
-Fehlgeschlagen | Die Änderung konnte auf 10 Prozent der aktiven Geräte in der Gruppe nicht ausgeführt werden, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanfrage wird automatisch mit Microsoft Managed Desktop Operations geöffnet, um die Bereitstellung zu beheben. 
+Failed | Die Änderung konnte auf 10 Prozent der aktiven Geräte in der Gruppe nicht ausgeführt werden, sodass die Bereitstellung angehalten wurde.<br><br> Eine Supportanfrage wird automatisch mit Microsoft Managed Desktop Operations geöffnet, um die Bereitstellung zu beheben. 
 Zurückgesetzt | Die Änderung wurde auf die letzte Änderung zurückgesetzt, die für alle Bereitstellungsgruppen erfolgreich bereitgestellt wurde.
 
 ## <a name="deploy-changes"></a>Bereitstellen von Änderungen
@@ -40,12 +40,15 @@ In diesen Anweisungen wird ein Desktop Hintergrundbild angezeigt. Nachdem Sie ei
 3. Wählen Sie im Bereich **Bereitstellungsstatus** die Einstellung aus, die Sie bereitstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus.
 4. Wählen Sie **Bereitstellen** aus, um die Änderung an einer der Bereitstellungsgruppen bereitzustellen.
 
-![Bereitstellungsstatus Arbeitsbereich. Bereich vertrauenswürdige Websites auf der rechten Seite. Im Abschnitt Bereitstellungsgruppen sind drei Spalten enthalten: Bereitstellungsgruppen, Geräte und Status. In der Spalte Status wird "Deploy" hervorgehoben.](images/1deployedit.png)
+> [!NOTE] 
+> Das orangefarbene Warnsymbol zeigt an, dass für die Bereitstellung eine frühere Gruppe zur Verfügung steht, da es empfehlenswert ist, das Rollout in der richtigen Reihenfolge auszuführen. 
+
+![Bereitstellungsstatus Arbeitsbereich. Bereich vertrauenswürdige Websites auf der rechten Seite. Im Abschnitt Bereitstellungsgruppen sind drei Spalten enthalten: Bereitstellungsgruppen, Geräte und Status. In der Spalte Status wird "Deploy" hervorgehoben.](../../media/1deployedit.png)
 Wir empfehlen die Bereitstellung in Bereitstellungsgruppen in dieser Reihenfolge: Test, erste, schnelle und dann breit. 
 
 Wenn Änderungen in jeder Gruppe abgeschlossen werden, ändert sich der Status in **abgeschlossen**.
 
-![Bereitstellungsstatus Arbeitsbereich mit Spalten für aktualisiertes Datum, Version, Test, erste, schnelle und Breite. Die Proxy Zeile wird erweitert und zeigt eine datierte Einstellung an, die in jeder der vier Bereitstellungsgruppen als "abgeschlossen" gekennzeichnet ist.](images/2completeedit.png)
+![Bereitstellungsstatus Arbeitsbereich mit Spalten für aktualisiertes Datum, Version, Test, erste, schnelle und Breite. Die Proxy Zeile wird erweitert und zeigt eine datierte Einstellung an, die in jeder der vier Bereitstellungsgruppen als "abgeschlossen" gekennzeichnet ist.](../../media/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Wiederherstellen der Bereitstellung
 
@@ -59,8 +62,8 @@ Wir zeigen die Schritte zum Rückgängigmachen einer Änderung mithilfe des Desk
 3. Wählen Sie im Arbeitsbereich **Bereitstellungsstatus** die Einstellung aus, die Sie wiederherstellen möchten, und wählen Sie dann die bereitgestellte Bereitstellung aus, die wiederhergestellt werden soll.
 4. Wählen Sie unter **Notwendigkeit, diese Änderung wiederherzustellen?** die Option **Bereitstellung rückgängig**machen aus.
 
-![Bereitstellungsstatus Arbeitsbereich. Browser Startseiten werden ausgewählt, wobei ein Bereich auf der rechten Seite mit Daten über die übermittelte Änderung und deren Status geöffnet wird. Unten sehen Sie den Bereich "diese Änderung muss wiederhergestellt werden", in dem Sie "Bereitstellung wiederherstellen" auswählen können.](images/3revert.png) 
+![Bereitstellungsstatus Arbeitsbereich. Browser Startseiten werden ausgewählt, wobei ein Bereich auf der rechten Seite mit Daten über die übermittelte Änderung und deren Status geöffnet wird. Unten sehen Sie den Bereich "diese Änderung muss wiederhergestellt werden", in dem Sie "Bereitstellung wiederherstellen" auswählen können.](../../media/3revert.png) 
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md)
 - [Referenz der konfigurierbaren Einstellungen](config-setting-ref.md) 

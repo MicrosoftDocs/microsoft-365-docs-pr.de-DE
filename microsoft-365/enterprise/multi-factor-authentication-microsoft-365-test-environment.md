@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die mehrstufige Authentifizierung mit Textnachrichten, die an ein Smartphone in Ihrer Microsoft 365 Enterprise-Testumgebung gesendet werden.
-ms.openlocfilehash: d99e22cdbd8b08f4752a953b63c2d5215a78ec6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596832"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066732"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -40,10 +40,10 @@ Es gibt zwei Phasen zum Einrichten der mehrstufigen Authentifizierung für ein K
 
 3. Aktivieren und testen Sie die mehrstufige Authentifizierung mit einer Richtlinie für bedingten Zugriff (optional).
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
@@ -117,17 +117,17 @@ Erstellen Sie als nächstes eine neue Gruppe mit dem Namen MFAUsers, und fügen 
 5. Geben Sie im Bereich **überprüfen und Abschließen der Gruppe hinzufügen** **MFAUsers**ein, und klicken Sie dann auf **weiter**.
 6. Klicken Sie in der Liste der Gruppen auf die Gruppe **MFAUsers** .
 7. Klicken Sie im Bereich **MFAUsers** auf **Mitglieder**, und klicken Sie dann auf **Alle anzeigen und Mitglieder verwalten**.
-8. Klicken Sie im Bereich **MFAUsers** auf **Mitglieder hinzufügen**, wählen Sie das Konto **Benutzer 3** aus, und klicken Sie dann auf **speichern #a0 schließen #a1 schließen**.
+8. Klicken Sie im Bereich **MFAUsers** auf **Mitglieder hinzufügen**, wählen Sie das Konto **Benutzer 3** aus, und klicken Sie dann auf **speichern > schließen > schließen**.
 
 Erstellen Sie als nächstes eine Richtlinie für den bedingten Zugriff, um die mehrstufige Authentifizierung für Mitglieder der MFAUsers-Gruppe zu erfordern.
 
 1. Wechseln Sie auf einer neuen Registerkarte Ihres Browsers zu [https://portal.azure.com](https://portal.azure.com).
-2. Klicken Sie auf **Azure Active Directory #a0 Sicherheits #a1 bedingten Zugriff**.
+2. Klicken Sie auf **Azure Active Directory > Sicherheits > bedingten Zugriff**.
 3. Klicken Sie im Bereich **bedingter Zugriff – Richtlinien** auf **neue Richtlinie**.
 4. Geben Sie im **neuen** Bereich **MFA für Benutzerkonten** unter **Name**ein.
 5. Klicken Sie im Abschnitt **Zuweisungen** auf **Benutzer und Gruppen**.
-6. Klicken Sie im Bereich **Benutzer und Gruppen** auf der Registerkarte **einschließen** auf Benutzer und Gruppen **#a0 Benutzer und Gruppen auswählen #a1 auswählen**.
-7. Klicken Sie im Bereich **auswählen** auf die Gruppe **MFAUsers** , und klicken Sie dann auf **#a0 fertig wählen**.
+6. Klicken Sie im Bereich **Benutzer und Gruppen** auf der Registerkarte **einschließen** auf Benutzer und Gruppen **> Benutzer und Gruppen auswählen > auswählen**.
+7. Klicken Sie im Bereich **auswählen** auf die Gruppe **MFAUsers** , und klicken Sie dann auf **> fertig wählen**.
 8. Klicken Sie im Abschnitt **Zugriffssteuerung** des **neuen** Bereichs auf **erteilen**.
 9. Klicken Sie im Bereich **Grant** auf **mehrstufige Authentifizierung erfordern**, und klicken Sie dann auf **auswählen**.
 10. Klicken Sie im Bereich **neu** **auf** für **Richtlinie aktivieren**, und klicken Sie dann auf **Erstellen**.

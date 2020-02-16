@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269386"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085729"
 ---
 # <a name="battery-insights"></a>Akku Einblicke
 Diese Ansicht enthält Metriken für Energie, Akku und App-Nutzung für Ihre von Microsoft verwalteten Desktop Geräte. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte **Akku** aus.
 
-![Batteriebereich: prognostizierte Batterielebensdauer pro Gerätemodell oben links, Top Energy Consumers (by APP) in der oberen rechten Ecke, Insights-Tabelle auf der unteren Seite. Link zur Dokumentation in der oberen rechten Ecke.](images/insights_battery.png)
+![Batteriebereich: prognostizierte Batterielebensdauer pro Gerätemodell oben links, Top Energy Consumers (by APP) in der oberen rechten Ecke, Insights-Tabelle auf der unteren Seite. Link zur Dokumentation in der oberen rechten Ecke.](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>Prognostizierte Akkulaufzeit
 

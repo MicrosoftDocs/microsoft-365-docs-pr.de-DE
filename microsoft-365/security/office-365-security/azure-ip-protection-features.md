@@ -16,12 +16,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: Um mit dem ersten Schritt beim Schutz Ihrer Informationen zu helfen, werden ab Juli 2018 alle Azure Information Protection-berechtigten Mandanten die Schutzfunktionen in Azure Information Protection standardmäßig aktiviert haben. Die Schutzfunktionen in Azure Information Protection waren früher in Office 365 als Rights Management oder Azure RMS bekannt. Wenn Ihre Organisation über einen Office E3-Dienstplan oder einen höheren Service Plan verfügt, erhalten Sie jetzt einen Head-Start Schutz für Informationen durch Azure Information Protection, wenn wir diese Features bereitstellen.
-ms.openlocfilehash: 6ff4ecb4dc9b0e2b0a4e8dd7a2d9573326afc6a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de3b233d4baac380608d3a209c2ffea274c20d5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599772"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083573"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Schutzfunktionen in Azure Information Protection, die in vorhandene Office 365 Mandanten Einrollen
 
@@ -41,7 +41,7 @@ Ab dem 1. Juli 2018 wird Microsoft die Schutzfunktion in Azure Information Prote
 
 Mandantenadministratoren können den Schutzstatus im Office 365 Administratorportal überprüfen.
 
-![Screenshot, der zeigt, dass die Rechteverwaltung in Office 365 aktiviert wird.](../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
+![Screenshot, der zeigt, dass die Rechteverwaltung in Office 365 aktiviert wird.](../../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
 
 ## <a name="why-are-we-making-this-change"></a>Warum machen wir diese Änderung?
 
@@ -85,6 +85,6 @@ Wenn Sie die bevorstehende Änderung deaktivieren möchten, führen Sie die folg
 
 Sobald diese Option aktiviert ist, können Sie, vorausgesetzt, Sie haben sich nicht entschieden, die neue Version von Office 365 Nachrichtenverschlüsselung verwenden, die bei [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) angekündigt wurde und die Verschlüsselungs-und Schutzfunktionen von Azure Information Protection nutzt.
 
-![Screenshot, der eine OM-geschützte Nachricht in Outlook im Internet zeigt.](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![Screenshot, der eine OM-geschützte Nachricht in Outlook im Internet zeigt.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 Weitere Informationen zu den neuen Verbesserungen finden Sie unter [Office 365 Nachrichtenverschlüsselung](../../compliance/ome.md).

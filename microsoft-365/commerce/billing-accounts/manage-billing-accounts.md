@@ -15,21 +15,21 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
-ms.openlocfilehash: d05b0c78da31ca0c829a71708906c34d6b54be97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37b9d8a9de8b187e5685f2b10fbb20d1589904b4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594152"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080402"
 ---
 # <a name="manage-billing-accounts"></a>Verwalten von Abrechnungskonten
 
-Wenn Sie sich für das Testen oder kaufen von Microsoft-Produkten registrieren, wird ein Abrechnungskonto erstellt. Sie verwenden Ihr Abrechnungskonto, um Ihre Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Käufe zu verwalten. Sie können Zugriff auf mehrere Abrechnungskonten haben. Beispielsweise haben Sie sich für Microsoft 365 direkt angemeldet oder Sie haben Zugriff auf die Enterprise-Vereinbarung des Unternehmens, die Microsoft Product #a0 Services-Vereinbarung oder den Microsoft-Kundenvertrag. Für jedes dieser Szenarien wäre ein separates Abrechnungskonto vorhanden.
+Wenn Sie sich für das Testen oder kaufen von Microsoft-Produkten registrieren, wird ein Abrechnungskonto erstellt. Sie verwenden Ihr Abrechnungskonto, um Ihre Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Käufe zu verwalten. Sie können Zugriff auf mehrere Abrechnungskonten haben. Beispielsweise haben Sie sich für Microsoft 365 direkt angemeldet oder Sie haben Zugriff auf die Enterprise-Vereinbarung des Unternehmens, die Microsoft Product & Services-Vereinbarung oder den Microsoft-Kundenvertrag. Für jedes dieser Szenarien wäre ein separates Abrechnungskonto vorhanden.
 
 Das Microsoft 365 Admin Center unterstützt derzeit die folgenden Arten von Abrechnungskonten:
 
 - Microsoft Online Services-Programm: dieses Abrechnungskonto wird erstellt, wenn Sie sich direkt für ein Microsoft 365-Abonnement registrieren.
-- Microsoft Products #a0 Service Agreement (MPSA)-Programm: dieses Abrechnungskonto wird erstellt, wenn Ihre Organisation einen MPSA-Volumenlizenz Vertrag zum Erwerb von Software und Onlinediensten signiert.
+- Microsoft Products & Service Agreement (MPSA)-Programm: dieses Abrechnungskonto wird erstellt, wenn Ihre Organisation einen MPSA-Volumenlizenz Vertrag zum Erwerb von Software und Onlinediensten signiert.
 - Microsoft-Kundenvereinbarung: dieses Abrechnungskonto wird erstellt, wenn Ihre Organisation mit einem Microsoft-Mitarbeiter, einem autorisierten Partner oder einem Einkauf unabhängig arbeitet.
 
 Auf der Seite " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Abrechnungskonten</a> " finden Sie eine Übersicht über Ihre geschäftlichen Konten bei Microsoft. Standardmäßig verfügt Ihre Organisation über mindestens ein Abrechnungskonto, das einer Vereinbarung zugeordnet ist, die entweder zum Zeitpunkt des direkten Erwerbs oder über eine Volumenlizenzvereinbarung angenommen wird.
@@ -46,7 +46,7 @@ In der folgenden Tabelle sind die wichtigen Begriffe aufgeführt, die auf der De
 | Segment | Ein schreibgeschütztes Feld, das das Geschäftssegment Ihrer Organisation (kommerziell, Bildung, Verwaltung oder gemeinnützig) identifiziert. |
 | Kontostatus | Ein schreibgeschütztes Feld, das den Status Ihres kommerziellen Kontos bei Microsoft angibt. |
 | Steuer-ID | Wenn Sie sich außerhalb der USA befinden, müssen Sie eine Mehrwertsteuer oder eine lokale Entsprechung angeben. Weitere Informationen finden Sie unter [Steuerinformationen](#tax-information). |
-| Vertrag | Wenn ein Abrechnungskonto entweder über eine Direktbestellung oder eine Volumenlizenzvereinbarung erstellt wird, akzeptiert ein Unterzeichner für die Organisation eine Vereinbarung, die die Bedingungen #a0 Bedingungen des Kontos umreißt. Wenn zutreffend, wird in dieser Ansicht eine Vereinbarungs Historie aufgeführt. Wenn Sie aktualisierte Bedingungen akzeptieren müssen, wird ein Link zur **Genehmigungs Vereinbarung** angezeigt. |
+| Vertrag | Wenn ein Abrechnungskonto entweder über eine Direktbestellung oder eine Volumenlizenzvereinbarung erstellt wird, akzeptiert ein Unterzeichner für die Organisation eine Vereinbarung, die die Bedingungen & Bedingungen des Kontos umreißt. Wenn zutreffend, wird in dieser Ansicht eine Vereinbarungs Historie aufgeführt. Wenn Sie aktualisierte Bedingungen akzeptieren müssen, wird ein Link zur **Genehmigungs Vereinbarung** angezeigt. |
 | Abrechnungsprofile | Ein Abrechnungsprofil definiert die Eigenschaften Ihrer Rechnung, zum Beispiel wer die Rechnung erhält, wie die Rechnung zugestellt wird, Zahlungsbedingungen und eine Bestellnummer. Um die Abrechnung in Ihrer Organisation zu verteilen, können Sie mehrere Abrechnungsprofile erstellen und das entsprechende Abrechnungsprofil zum Zeitpunkt des Erwerbs ermitteln. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Verwalten von Abrechnungs Profilen](../billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE] 
@@ -124,7 +124,7 @@ Diese Länder können Ihre MwSt-Nummer oder eine lokale Entsprechung auf Ihren A
 |------|----------------|
 | Australien | ABN (optional) |
 | Brasilien | CNPJ (erforderlich) |
-| Indien | GSTIN (optional), Pan-ID (erforderlich) |
+| India | GSTIN (optional), Pan-ID (erforderlich) |
 | Isle of Man | USt-ID (optional) |
 | JPRatingExplicitAllowed | GST-Registrierungsnummer (optional) |
 | Monaco | USt-ID (optional) |
@@ -151,7 +151,7 @@ Halten Sie die folgende Dokumentation für Sie parat:
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Zum Beispiel:
+Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 

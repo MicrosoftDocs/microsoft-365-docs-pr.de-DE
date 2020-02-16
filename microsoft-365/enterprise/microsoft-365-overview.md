@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 für Unternehmen.
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596852"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066890"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 für Unternehmen (Übersicht)
 
@@ -50,8 +50,8 @@ Microsoft 365 for Enterprise ist in drei Plänen verfügbar.
 
 Wenn Sie Microsoft 365 E3 haben, können Sie auch diese [Angebote](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)erhalten:
 
-- Identitäts #a0 Bedrohungsschutz
-- Informationsschutz #a0 Compliance
+- Identitäts & Bedrohungsschutz
+- Informationsschutz & Compliance
 
 Diese Angebote enthalten zusätzliche Funktionen, die in Microsoft 365 E5 enthalten sind.
 
@@ -59,7 +59,7 @@ Weitere Informationen finden Sie unter [Features und Funktionen für jeden Plan]
 
 ## <a name="get-the-big-picture"></a>Holen Sie sich das große Bild
 
-Das [Poster Microsoft 365 for Enterprise](media/m365-poster/Microsoft365Enterprise.pdf) ist ein zentraler Ort, an dem Sie Folgendes anzeigen können:
+Das [Poster Microsoft 365 for Enterprise](../media/m365-poster/Microsoft365Enterprise.pdf) ist ein zentraler Ort, an dem Sie Folgendes anzeigen können:
 
 - Die Vorteile von Microsoft 365 für Unternehmen und wie apps und Dienste ihren Wert stützen zuordnen
 - Microsoft 365 für Enterprise-Pläne und die darin enthaltenen Komponenten 
@@ -67,16 +67,16 @@ Das [Poster Microsoft 365 for Enterprise](media/m365-poster/Microsoft365Enterpri
 - Die [Microsoft 365-Produktivitäts Bibliothek](https://www.microsoft.com/microsoft-365/success/) und repräsentative Szenarien für einige allgemeine Organisationsabteilungen
 - Die Einführungs-Roadmap, die das Microsoft 365 for Enterprise [-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) hervorhebt
 
-[![Abbildung des Posters "Microsoft 365 Enterprise"](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Abbildung des Posters "Microsoft 365 Enterprise"](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Umstellung Ihrer gesamten Organisation
 
-Um ein besseres Bild davon zu erhalten, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste in Microsoft 365 for Enterprise umstellen können, laden Sie das [Transition-Poster](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)herunter.
+Um ein besseres Bild davon zu erhalten, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste in Microsoft 365 for Enterprise umstellen können, laden Sie das [Transition-Poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)herunter.
 
-[![Abbildung des Posters zur Umstellung auf Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Abbildung des Posters zur Umstellung auf Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
@@ -94,9 +94,9 @@ Die folgenden Produkte erreichen das Ende der Unterstützung am **13. Oktober 20
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und den Wechsel in die Cloud für diese Produkte finden Sie auf dem [Poster zum Ende des Supports](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und den Wechsel in die Cloud für diese Produkte finden Sie auf dem [Poster zum Ende des Supports](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
-[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Windows 7 und Office 2010 Client-und Serverprodukte das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Unterstützung in Microsoft 365 for Enterprise hervorgehoben sind.
 
@@ -142,7 +142,7 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 |||
 |:-------|:-----|
-![Microsoft 365-Grundlagentraining](./media/m365-poster/m365-fundamentals.svg)| Lassen Sie sich selbst geschult und auf eine Microsoft 365-Zertifizierung hinarbeiten. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Microsoft 365-Grundlagentraining](../media/m365-poster/m365-fundamentals.svg)| Lassen Sie sich selbst geschult und auf eine Microsoft 365-Zertifizierung hinarbeiten. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 
@@ -150,6 +150,6 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 Wenn Sie die Bereitstellung selbst ausführen, starten Sie die [Bereitstellungs Reise von Microsoft 365 für Enterprise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365 für Enterprise-Produktseite](https://www.microsoft.com/microsoft-365/enterprise)

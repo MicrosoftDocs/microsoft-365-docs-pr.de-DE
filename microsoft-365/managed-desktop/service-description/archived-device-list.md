@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f1389fd64efce16e81e02885127e65c8d1922c5b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602812"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085784"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -35,7 +35,9 @@ Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der fo
 
 | Modell  | Minimale Angaben  | Zusätzliche Anforderungen   | Ruhestands Datum |
 |---------|---------|---------|---------|
-| HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich  | **15. Februar 2023** |
+|HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich  | **15. Februar 2023** |
+|HP Elite x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS03AV, IR-Kamera erforderlich |**14. Mai 2023** |
+|HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich |**14. Mai 2023** |
 |DGM-Buch 2| 256 GB/Intel i5/8 GB RAM | Keine | **16. November 2022** |
 |Surface-Laptop| 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |
 |Surface pro| 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2022** |

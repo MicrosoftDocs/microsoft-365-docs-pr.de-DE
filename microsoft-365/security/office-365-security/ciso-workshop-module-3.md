@@ -12,19 +12,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 97ba2b0319f8a34bd6fe1cbdf597b85281810855
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f264bead74f6a087fc0cac93df18d02121fbe4c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599702"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083524"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>CISO Workshop-Modul 3: Identitäts-und NULL-vertrauenswürdiger Benutzer Zugriff
 
 Erfahren Sie, wie Sie Zero Trust mit Ihrer Identitäts-und Benutzerzugriffs Strategie voraussetzen, um Unternehmensdaten innerhalb und außerhalb Ihres Netzwerkperimeters besser zu schützen.
 
-- PDF-Zusammenfassung herunterladen: [Modul 3: Identitäts-und NULL-vertrauenswürdiger Benutzer Zugriff](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
-- Download von PowerPoint-Zusammenfassung: [Modul 3: Identitäts-und Zugriffsverwaltung](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
+- PDF-Zusammenfassung herunterladen: [Modul 3: Identitäts-und NULL-vertrauenswürdiger Benutzer Zugriff](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- Download von PowerPoint-Zusammenfassung: [Modul 3: Identitäts-und Zugriffsverwaltung](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>Abschnitt 1: Identitäts-und NULL-Vertrauensstellungs Verlauf (9:33)
 

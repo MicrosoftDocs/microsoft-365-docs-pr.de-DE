@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Sie können Exchange Online Protection (EOP) zur Erstellung E-Mail-aktivierter Gruppen für eine Exchange-Organisation verwenden. Sie können EOP auch verwenden, um Gruppeneigenschaften zu definieren oder zu aktualisieren, über die Mitgliedschaften, E-Mail-Adressen und andere Aspekte von Gruppen festgelegt werden.
-ms.openlocfilehash: ae4e0a8c39c97720cb51c0f5d7b69547258b11b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598992"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082892"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -55,7 +55,7 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
 
 1. Navigieren Sie in der EAC zu **Empfänger** \> **Gruppen**.
 
-2. Klicken **** ![Sie auf neues](../media/ITPro-EAC-AddIcon.gif)Symbol hinzufügen, und klicken Sie dann je nach Ihren Anforderungen auf **Verteilergruppe** oder **Sicherheitsgruppe**.
+2. Klicken **** ![Sie auf neues](../../media/ITPro-EAC-AddIcon.gif)Symbol hinzufügen, und klicken Sie dann je nach Ihren Anforderungen auf **Verteilergruppe** oder **Sicherheitsgruppe**.
 
 3. Konfigurieren Sie auf der Seite **neue Verteilergruppe** oder **neue Sicherheitsgruppe** die folgenden Einstellungen:
 
@@ -65,12 +65,12 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
 
    - **Beschreibung**: Geben Sie eine Beschreibung der Gruppe ein, damit Benutzer den Zweck der Gruppe kennen.
 
-   - **Besitzer**: Standardmäßig ist die Person, die die Gruppe erstellt, der Besitzer. Sie können einen Besitzer hinzufügen, indem Sie hinzu](../media/ITPro-EAC-AddIcon.gif)fügen **Symbol hinzufügen auswählen.** ![ Jede Gruppe muss mindestens einen Besitzer aufweisen.
+   - **Besitzer**: Standardmäßig ist die Person, die die Gruppe erstellt, der Besitzer. Sie können einen Besitzer hinzufügen, indem Sie hinzu](../../media/ITPro-EAC-AddIcon.gif)fügen **Symbol hinzufügen auswählen.** ![ Jede Gruppe muss mindestens einen Besitzer aufweisen.
 
      > [!NOTE]
      > Besitzer von Gruppen müssen kein Mitglied der jeweiligen Gruppe sein.
 
-   - **Mitglieder**: in diesem Abschnitt können Sie Gruppenmitglieder hinzufügen und angeben, ob eine Genehmigung erforderlich ist, damit Personen der Gruppe beitreten oder diese verlassen können. Um der Gruppe Mitglieder hinzuzufügen, klicken Sie auf Add](../media/ITPro-EAC-AddIcon.gif)-Symbol **Hinzufügen** ![.
+   - **Mitglieder**: in diesem Abschnitt können Sie Gruppenmitglieder hinzufügen und angeben, ob eine Genehmigung erforderlich ist, damit Personen der Gruppe beitreten oder diese verlassen können. Um der Gruppe Mitglieder hinzuzufügen, klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.gif)-Symbol **Hinzufügen** ![.
 
 4. Klicken Sie auf **OK**, um zur Ursprungsseite zurückzukehren.
 
@@ -82,9 +82,9 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
 
 2. Führen Sie einen der folgenden Schritte aus:
 
-   - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Gruppe, die Sie anzeigen oder ändern möchten, und **** ![klicken Sie dann](../media/ITPro-EAC-EditIcon.gif)auf Bearbeitungssymbol bearbeiten. Sie können allgemeine Einstellungen aktualisieren, Gruppenbesitzer hinzufügen oder entfernen sowie Gruppenmitglieder bei Bedarf hinzufügen oder entfernen.
+   - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Gruppe, die Sie anzeigen oder ändern möchten, und **** ![klicken Sie dann](../../media/ITPro-EAC-EditIcon.gif)auf Bearbeitungssymbol bearbeiten. Sie können allgemeine Einstellungen aktualisieren, Gruppenbesitzer hinzufügen oder entfernen sowie Gruppenmitglieder bei Bedarf hinzufügen oder entfernen.
 
-   - So entfernen Sie eine Gruppe: Wählen Sie die Gruppe **** ![aus, und](../media/ITPro-EAC-RemoveIcon.gif)klicken Sie auf entfernen-Symbol entfernen.
+   - So entfernen Sie eine Gruppe: Wählen Sie die Gruppe **** ![aus, und](../../media/ITPro-EAC-RemoveIcon.gif)klicken Sie auf entfernen-Symbol entfernen.
 
 3. Wenn Sie die Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 

@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
-ms.openlocfilehash: bbb3b56d72c0f67e7771c9a188df751aa3dd95ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594139"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080382"
 ---
 # <a name="close-your-account"></a>Konto schließen
 
@@ -40,11 +40,11 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Schritt 2: Abbrechen aller aktiven Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte #a0 Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten**aus.
 
-3. Suchen Sie ein aktives Abonnement, und wählen Sie im Abschnitt **Einstellungen #a0 Aktionen** die Option **Abonnement kündigen**aus.
+3. Suchen Sie ein aktives Abonnement, und wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Abonnement kündigen**aus.
 
 4. Befolgten Sie die Anweisungen, um den Vorgang abzuschließen.
 
@@ -52,13 +52,13 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Schritt 3: Löschen aller deaktivierten Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte #a0 Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten**aus.
 
 3. Wählen Sie neben **Abonnementstatus**die Option **deaktiviert**aus.
 
-4. Suchen Sie nach einem deaktivierten Abonnement, und wählen Sie im Abschnitt **Einstellungen #a0 Aktionen** die Option **Löschen**aus.
+4. Suchen Sie nach einem deaktivierten Abonnement, und wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Löschen**aus.
 
 5. Aktivieren Sie im Dialogfeld **Abonnement löschen** das Kontrollkästchen **Ich verstehe den Einfluss** , und wählen Sie dann **Abonnement löschen**aus.
 

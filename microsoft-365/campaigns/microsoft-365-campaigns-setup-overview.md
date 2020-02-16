@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Setup Übersicht für Microsoft 365 für Kampagnen
-ms.openlocfilehash: cca8866241a3759c022a362d39f7b208dff72580
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d2dac24488e5d29b0e888ba09f5359cba6b1f614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594173"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080482"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Einrichten von Microsoft 365 für Kampagnen
 
@@ -38,7 +38,7 @@ In diesem Artikel wird der Vorgang des Einrichtens von Microsoft 365 für Kampag
 ## <a name="admins-set-up-microsoft-365-for-campaigns"></a>Administratoren: Einrichten von Microsoft 365 für Kampagnen
 Im folgenden Diagramm wird beschrieben, wie Microsoft 365 für Kampagnen von Administratoren eingerichtet wurde.
 
-![Schritte zum Einrichten von Microsoft 365 für Kampagnen](media/M365-democracy-SetUpProcess.png)
+![Schritte zum Einrichten von Microsoft 365 für Kampagnen](../media/M365-democracy-SetUpProcess.png)
 
 Für Kampagnen, die sich für spezielle Preise qualifizieren, beginnen Sie mit dem [Anfordern einer Einladung von Microsoft](https://m365forcampaigns.microsoft.com/), und melden [Sie sich dann bei Microsoft 365 für Kampagnen](m365-campaigns-sign-up.md)an. Führen Sie zum Abschließen [des Setups den Setup-Assistenten](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) aus, um die Kerneinstellungen zu konfigurieren.
 
@@ -51,7 +51,7 @@ Stoßen Sie für alle Organisationen Sicherheitsschutz durch: [Schützen von Adm
  
 Benutzer müssen sich einige Minuten Zeit nehmen, um Geräte für die Verwendung dieser Umgebung einzurichten. Für Ihre Hauptbenutzer (diejenigen, die die höchsten Wert Ziele für Hacker sind) können Sie neue Geräte einrichten und vorab konfigurieren. Auf diese Weise können Sie beginnen, wenn Sie sich mit Ihren Microsoft 365-Anmeldeinformationen anmelden. 
 
-![Setupvorgang für Benutzer Geräte](media/m365-democracy-user-device-setup.png)
+![Setupvorgang für Benutzer Geräte](../media/m365-democracy-user-device-setup.png)
   
 So richten Sie Benutzer Geräte ein: 
 1. Jeder Benutzer [richtet seine mobilen Geräte](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)ein. 

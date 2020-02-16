@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: fefba1ddbf5feead873e0367502bbe2bcc530efb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594766"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080527"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -79,7 +79,7 @@ Wenn Sie bereits über ein vorhandenes Abonnement für Office 365 für Unternehm
 1. Wählen Sie in Ihrer Einladung zu Microsoft 365 für Kampagnen-e-Mails **die Option Ihre Organisation >registrieren **aus. Damit gelangen Sie zur Microsoft 365-Registrierung.
 2. Klicken oder tippen Sie auf der Seite **Willkommen, Let es Get to Know You** Page auf **möchten Sie dieses zu einem vorhandenen Abonnement hinzufügen? Melden Sie sich an**.
     
-    ![Wählen Sie in der oberen rechten Ecke anmelden aus.](media/addtoexisting.png)
+    ![Wählen Sie in der oberen rechten Ecke anmelden aus.](../media/addtoexisting.png)
 3. Geben Sie auf der Anmeldeseite den Administrator-Alias für Ihr vorhandenes Abonnement ein, Beispiels *Weise<span></span>Alice@VoteContoso. org*, wählen Sie **weiter**aus, geben Sie Ihr Kennwort ein, und klicken Sie dann auf **Anmelden**.
 4. Auf der Seite **wie sieht das aus?** geben Sie die Anzahl der Benutzer ein, die Sie haben, und klicken Sie **dann auf weiter**. Sie müssen hier keinen Promo-Code eingeben, da er bereits in der Einladungs-URL enthalten ist.
 5. Geben Sie auf der Seite **wie soll ich bezahlen?** die Zahlungsmethode ein, und wählen Sie **Bestellung platzieren**aus.

@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die neue Spoof Intelligence-Einblicke funktioniert.
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598012"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084354"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Exemplarische Vorgehensweise: Spoof Intelligence Insight
 
@@ -50,7 +50,7 @@ Dies ist eine von mehreren exemplarischen Vorgehens &amp; weisen für das Securi
 
 Die Einblicke in das Dashboard zeigt Ihnen Informationen wie diese.
   
-![Screenshot von Spoof Intelligence Insight](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![Screenshot von Spoof Intelligence Insight](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 Diese Einblicke umfasst zwei Modi:
   
@@ -82,7 +82,7 @@ Die Seite **Spoof Intelligence Insight** wird angezeigt und zeigt eine Liste von
     
 2. Wählen Sie ein Element in der Tabelle aus, um einen Detailbereich mit umfangreichen Informationen über das Domänenpaar zu öffnen, einschließlich der Gründe für diese Erfassung, was Sie tun müssen, eine Domänen Zusammenfassung, Whois-Daten über den Absender und ähnliche e-Mails, die wir in Ihrem Mandanten vom gleichen Absender gesehen haben. Von hier aus können Sie auch das Domänenpaar aus der Liste sicherer Absender von **AllowedToSpoof** hinzufügen oder entfernen. 
   
-![Screenshot einer Domäne im Detailbereich "Spoof Intelligence Insight"](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![Screenshot einer Domäne im Detailbereich "Spoof Intelligence Insight"](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Hinzufügen oder Entfernen einer Domäne aus der Liste sicherer Absender von AllowedToSpoof
 

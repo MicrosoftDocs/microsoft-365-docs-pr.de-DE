@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260103"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085689"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
@@ -26,7 +26,7 @@ Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden fin
 
 Wenn Sie über das Microsoft 365 Admin Center auf diese Ansichten zugreifen möchten, wählen Sie Details im Bereich **Berichte** **anzeigen** aus:
 
-![Admin Center mit Berichtsbereich in der oberen rechten Ecke, einschließlich der Geräte Berichts Karte und des Links "Details anzeigen".](images/insights_overview.png)
+![Admin Center mit Berichtsbereich in der oberen rechten Ecke, einschließlich der Geräte Berichts Karte und des Links "Details anzeigen".](../../media/insights_overview.png)
 
 
 

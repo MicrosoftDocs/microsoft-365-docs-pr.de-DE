@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erfahren Sie, wie Sie Microsoft 365 Business im Microsoft Partner Center erwerben.
-ms.openlocfilehash: 18af5b0aee378784199e91c8254b50fd1104172b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba6aa806e3e628e8c3478abb57c4529e4f5692bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593949"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065810"
 ---
 # <a name="get-microsoft-365-business"></a>Abrufen von Microsoft 365 Business
 
@@ -46,13 +46,13 @@ Sie können auch in einen [Microsoft Store](https://www.microsoft.com/en-us/stor
     
 2. Wählen Sie im Partner Dashboard **Kunden**aus, wählen Sie dann Ihren Kunden aus, oder fügen Sie einen neuen Kunden hinzu, bevor Sie Microsoft 365 Business erhalten.
     
-    ![Fügen Sie im Microsoft Partner Center einen Kunden hinzu.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![Fügen Sie im Microsoft Partner Center einen Kunden hinzu.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. Wählen Sie auf der Seite **Abonnement** des Kundenabonnement **Hinzufügen**aus, wählen Sie unter Katalog die Option Small Business aus, und wählen Sie dann **Microsoft 365 Business**aus.
     
     Wählen Sie die Anzahl der benötigten Lizenzen (max. 300) aus. Wenn Sie über mehr als 300 Benutzer verfügen, lesen Sie stattdessen [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) . 
     
-    ![Wählen Sie auf der Seite Neues Abonnement die Option Small Business aus.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![Wählen Sie auf der Seite Neues Abonnement die Option Small Business aus.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     Führen Sie die restlichen Schritte zum Hinzufügen eines neuen Kunden aus, einschließlich des Unternehmens namens.
     

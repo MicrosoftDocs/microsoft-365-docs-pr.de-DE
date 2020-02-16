@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook im Internetbenutzer können Junk-und Phishing-Scams mithilfe integrierter e-Mail-Berichterstellungsoptionen melden. Sie können Microsoft auch informieren, ob eine e-Mail fälschlicherweise als Junk (Spam) identifiziert wurde.
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082399"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-E-Mails und Phishing-Versuchen in Outlook im Web
 
@@ -33,7 +33,7 @@ So übermitteln Sie eine Junk-E-Mail an Microsoft
 
 1. Klicken Sie mit der rechten Maustaste auf die Junk-E-Mail, und klicken Sie dann in der Symbolleiste auf **Junk-E-Mail**. Dadurch wird die Nachricht in Ihren Junk-E-Mail-Ordner verschoben, und der Absender wird der Liste der blockierten Absender hinzugefügt.
 
-   ![Zeigt an, dass eine E-Mail von Outlook im Web eine Junk-E-Mail ist](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![Zeigt an, dass eine E-Mail von Outlook im Web eine Junk-E-Mail ist](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > Klicken Sie alternativ zum Anzeigen eines Menüs mit der rechten Maustaste auf eine Nachricht, und klicken Sie dann auf **Als Junk-E-Mail markieren**.
@@ -42,7 +42,7 @@ So übermitteln Sie eine Junk-E-Mail an Microsoft
 
 2. Es wird ein Dialogfeld geöffnet, in dem Sie gefragt werden, ob Sie eine Kopie der Junk-E-Mail zur Analyse an Microsoft senden möchten. Klicken Sie auf **Melden**, um die Nachricht an das Microsoft-Spamanalyseteam zu senden. Aktivieren Sie optional das Kontrollkästchen **Diese Meldung nicht mehr anzeigen**, wenn Sie künftige Junk-E-Mails ohne Bestätigung automatisch an Microsoft senden möchten.
 
-   ![Melden von Junk-E-Mails an Microsoft aus Outlook im Web](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![Melden von Junk-E-Mails an Microsoft aus Outlook im Web](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > Auch wenn Sie das Kontrollkästchen **Diese Meldung nicht mehr anzeigen** aktivieren, haben Sie später die Möglichkeit, Ihre Einstellungen für das Melden von Junk-E-Mails zu ändern, indem Sie in Outlook im Web auf die Anzeigeeinstellungen zugreifen. (Sie können auch über das Menü mit dem Zahnradsymbol neben Ihrem Anmeldenamen auf diese Einstellungen zugreifen.)
@@ -53,7 +53,7 @@ So übermitteln Sie eine Nachricht, die als betrügerischer Phishingversuch gilt
 
 1. Klicken Sie auf die Nachricht Phishing Scam, klicken Sie auf den Pfeil nach unten neben **Junk**, und klicken Sie dann auf der Symbolleiste auf **Phishing** . Der Absender wird von Office 365 nicht blockiert, da Absender von Phishing-Scam-Nachrichten normalerweise die Identität legitimer Absender annehmen. Wenn Sie es bevorzugen, fügen Sie den Absender zu Ihrer Liste blockierter Absender hinzu, indem Sie die Anweisungen im Thema [Filtern von Junk-e-Mails und Spam in Outlook im Internet](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)befolgen.
 
-   ![Zeigt an, dass eine E-Mail-Nachricht ist Phishingbetrug in Outlook im Web ist.](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![Zeigt an, dass eine E-Mail-Nachricht ist Phishingbetrug in Outlook im Web ist.](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    Alternativ können Sie zum Anzeigen eines Menüs mit der rechten Maustaste auf eine Nachricht und dann auf **Als betrügerischen Phishing-Versuch markieren** klicken.
 

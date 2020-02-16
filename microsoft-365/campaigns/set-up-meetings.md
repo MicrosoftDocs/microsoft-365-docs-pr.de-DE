@@ -1,5 +1,7 @@
 ---
 title: Einrichten von Onlinebesprechungen
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: twerner
 manager: scotv
@@ -22,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Onlinebesprechungen mit Microsoft Teams.
-ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 83ff561b4159ffe6785db8bb03314aa80668023a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753584"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080437"
 ---
 # <a name="set-up-meetings"></a>Einrichten von Besprechungen
 
 Besprechungen in Microsoft Teams umfassen Audio, Video und Freigabe. Und da Sie online sind, haben Sie immer einen Besprechungsraum und benötigen keinen Raum oder Projektor für Ihre Kampagne.Microsoft Teams-Besprechungen sind eine hervorragende Möglichkeit, um mit ihren Mitarbeitern und Freiwilligen innerhalb und außerhalb Ihrer Organisation zusammen zu kommen. Sie müssen kein Mitglied Ihrer Organisation sein oder sogar ein Konto haben, um an einer Besprechung teilzunehmen. Für ihre politische Kampagne können Sie Onlinebesprechungen mit Microsoft Teams planen und ausführen. Sie können Mitarbeiter, freiwillige und Gäste außerhalb Ihrer Organisation einbeziehen. Während einer Besprechung können Sie Ihren Bildschirm freigeben, Dateien freigeben, Aufgaben zuweisen und vieles mehr.
 
-[![Eine Illustration zweier Benutzer in einer Besprechung](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![Eine Illustration zweier Benutzer in einer Besprechung](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Laden Sie eine Infografik in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) oder [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) herunter, um einen schnellen Überblick über das beitreten oder Hosten einer Onlinebesprechung mit Microsoft Teams zu erhalten.
 

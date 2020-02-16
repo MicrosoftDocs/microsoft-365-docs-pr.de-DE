@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Schritte zum Upgrade Ihres Unternehmens von Office 365 Business Premium auf Microsoft 365 Business.
-ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e17ac2658c7276ba4a77de371847343866815c42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593677"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065273"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Upgrade auf Microsoft 365 Business von Office 365 Business Premium
 
@@ -49,13 +49,13 @@ Wir haben einen nebeneinander Vergleich dieser beiden Pläne zur [Microsoft 365 
 ## <a name="upgrade-to-microsoft-365-business"></a>Upgrade auf Microsoft 365 Business
 Kaufen Sie Ihre Lizenzen, indem Sie die folgenden Schritte im [neuen Admin Center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)ausführen:
 1. Melden Sie sich beim Admin Center <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>an.
-2. Wechseln Sie zum Navigationsbereich, und wählen Sie **Abrechnungs** \> **Produkte #a0 Dienste**aus. Suchen Sie Ihr Office 365 Abonnement, und wählen Sie es aus, um die Details anzuzeigen. 
+2. Wechseln Sie zum Navigationsbereich, und wählen Sie **Abrechnungs** \> **Produkte & Dienste**aus. Suchen Sie Ihr Office 365 Abonnement, und wählen Sie es aus, um die Details anzuzeigen. 
 
-    ![Ein Screenshot zeigt, wie Sie Ihr Abonnement im Admin Center finden und auswählen können.](media/FindYourSubscription.png)
+    ![Ein Screenshot zeigt, wie Sie Ihr Abonnement im Admin Center finden und auswählen können.](../media/FindYourSubscription.png)
 
 3. Wählen Sie auf der nächsten Seite **Upgrade**aus. 
 
-      ![Ein Screenshot zeigt, wo Sie das Upgrade im Admin Center auswählen können.](media/SelectUpgrade.png)
+      ![Ein Screenshot zeigt, wo Sie das Upgrade im Admin Center auswählen können.](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > Wenn eine Meldung angezeigt wird, die besagt, dass das **Upgrade Ihres Abonnements mit der gruppenbasierten Lizenzierung in Azure Active Directory nicht unterstützt wird**, können Sie diese ignorieren, es sei denn, Sie verfügen über eine sehr große Organisation. Organisationen, die diese Option ausgewählt haben, sind sich bewusst, dass Sie die Gruppenbasierte Lizenzierung verwenden.

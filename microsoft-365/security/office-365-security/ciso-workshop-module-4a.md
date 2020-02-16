@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 322ced9ae3a565e07de372d7775c176ba647301b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599692"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086544"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO Workshop-Modul 4a: Bedrohungsschutz Strategie
 
 Erkunden Sie wichtige Informationen zu Bedrohungsschutz, Sicherheitsentwicklung, Strategien und Sicherheits Straßenkarten.
 
-- PDF-Zusammenfassung herunterladen: [Modul 4a: Bedrohungsschutz Strategie](../media/ciso-workshop-4a-threat-protection.pdf)
+- PDF-Zusammenfassung herunterladen: [Modul 4a: Bedrohungsschutz Strategie](../../media/ciso-workshop-4a-threat-protection.pdf)
 - Herunterladen der PowerPoint-Zusammenfassung: [Modul 4a: Bedrohungsschutz Strategie](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>Einführung: Bedrohungsschutz Strategie (4:37)
@@ -50,7 +50,7 @@ Erkunden Sie wichtige Informationen zu Bedrohungsschutz, Sicherheitsentwicklung,
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMm]
 
-## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Abschnitt 6: Roadmap für die Anwendungsentwicklung #a0 Plattform as a Service (6:07)
+## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Abschnitt 6: Roadmap für die Anwendungsentwicklung & Plattform as a Service (6:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
 
