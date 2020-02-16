@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662051"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083724"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
 
@@ -45,7 +45,7 @@ Microsoft Threat Protection aggregiert Daten aus den verschiedenen integrierten 
 
 Bevor Sie den Dienst aktivieren, zeigt das Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) keine **Vorfälle** und **Aktionscenter** Optionen im Navigationsbereich an.
 
-![Bild des Microsoft 365 Security Center-Navigationsbereichs ohne Microsoft Threat Protection](../images/mtp-off.png)
+![Bild des Microsoft 365 Security Center-Navigationsbereichs ohne Microsoft Threat Protection](../../media/mtp-off.png)
 -Features*Microsoft 365 Security Center mit Microsoft Threat Protection deaktiviert*
 
 Um Microsoft Threat Protection zu aktivieren, wählen Sie im Navigationsbereich die Option **Einstellungen** aus. Wechseln Sie auf der **[Seite Einstellungen](https://security.microsoft.com/settings)** zu **Microsoft Threat Protection** > **Opt-in/Opt-out**.
@@ -65,7 +65,7 @@ Sobald der Dienst bereitgestellt ist, wird Folgendes hinzugefügt:
 - Ein Info-Center für die Verwaltung [automatisierter Untersuchungen und Reaktionen](mtp-autoir.md)
 - [Erweiterte Suchfunktionen](advanced-hunting-overview.md) für die bestehende **Such**-Seite
 
-![Bild des Microsoft 365 Security Center-Navigationsbereichs mit Microsoft Threat Protection](../images/mtp-on.png)
+![Bild des Microsoft 365 Security Center-Navigationsbereichs mit Microsoft Threat Protection](../../media/mtp-on.png)
  *-Features Microsoft 365 Security Center mit Incidents Management und anderen Microsoft Threat Protection-* Funktionen
 
 ### <a name="getting-azure-atp-data"></a>Abrufen von Azure ATP-Daten

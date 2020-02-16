@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600092"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083754"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Anzeigen der Details und Ergebnisse einer automatischen Untersuchung
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600092"
 
 Wenn eine automatische Untersuchung in Microsoft Threat Protection stattfindet, stehen während und nach der automatischen Ermittlung Details zu dieser Untersuchung zur Verfügung. Wenn Sie über die [erforderlichen Berechtigungen](mtp-action-center.md#required-permissions-for-action-center-tasks) verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Die Anzeige mit Untersuchungsdetails bieten Ihnen den aktuellen Status sowie die Möglichkeit, ausstehende Aktionen zu genehmigen. 
 
-![Untersuchungsdetails](../images/mtp-air-investdetails.png)
+![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>Öffnen der Anzeige mit Untersuchungsdetails
 
@@ -60,7 +60,7 @@ Verwenden Sie die Seite „Vorfalldetails“, um detaillierte Informationen zu e
 
 2. Wählen Sie im Navigationsbereich **Vorfälle** aus. 
 
-3. Wählen Sie ein Element in der Liste aus, um die Vorfalldetailsseite zu öffnen.<br/>![Vorfalldetails](../images/mtp-incidentdetails-tabs.png)
+3. Wählen Sie ein Element in der Liste aus, um die Vorfalldetailsseite zu öffnen.<br/>![Vorfalldetails](../../media/mtp-incidentdetails-tabs.png)
 
 4. Wählen Sie auf der Registerkarte **Untersuchung** eine Untersuchung in der Liste aus.
 
@@ -68,7 +68,7 @@ Verwenden Sie die Seite „Vorfalldetails“, um detaillierte Informationen zu e
 
 Verwenden Sie die Anzeige mit Untersuchungsdetails, um vergangene, aktuelle und ausstehende Aktivitäten im Zusammenhang mit einer Untersuchung anzuzeigen. Die Anzeige mit Untersuchungsdetails sieht wie in der folgenden Abbildung aus:
 
-![Untersuchungsdetails](../images/mtp-air-investdetails.png)
+![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
 In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuchungsdiagramm** sowie auf den Registerkarten **Benachrichtigungen**, **Geräte**, **Identitäten**, **Wichtige Erkenntnisse**, **Entitäten**, **Protokoll** und **Ausstehende Aktionen** anzeigen, die in der folgenden Tabelle beschrieben sind.
 

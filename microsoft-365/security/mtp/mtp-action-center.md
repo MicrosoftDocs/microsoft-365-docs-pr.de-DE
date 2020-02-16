@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a0b86240e09838ff290bb9c3b4b53f5cce3e2995
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600122"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083782"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Aufrufen des Info-Centers zum Anzeigen von Wartungsaktionen
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600122"
 
 ## <a name="a-single-pane-of-glass-experience"></a>Eine einzige Oberfläche
 
-![Info-Center](../images/air-actioncenter.png)
+![Info-Center](../../media/air-actioncenter.png)
 
 Verwenden Sie das Info-Center, um die Ergebnisse aktueller und früherer Untersuchungen auf den Geräten und in den Postfächern Ihrer Organisation anzuzeigen. Je nach Art der Bedrohung und des [resultierenden Urteils](mtp-autoir-results.md#remediation-actions-following-automated-investigation) erfolgen Wartungsaktionen automatisch oder nach Genehmigung durch das Sicherheitsteam Ihrer Organisation. Alle Wartungsaktionen – unabhängig davon, ob eine Genehmigung aussteht oder diese bereits genehmigt wurden – werden im Info-Center zusammengefasst. 
 
@@ -65,9 +65,9 @@ Die folgende Tabelle enthält eine Liste der Wartungsaktionen, die aktuell im In
 
     - Auf der Registerkarte **Verlauf** werden frühere Untersuchungen und Wartungsaktionen aufgeführt, die automatisch ausgeführt wurden. Sie können Daten für den vergangenen Tag, die letzte Woche, den letzten Monat oder die letzten sechs Monate anzeigen.
 
-4. Wenn nur bestimmte Spalten angezeigt werden sollen, wählen Sie **Spalten anpassen** aus.<br/>![Info-Center in Microsoft Threat Protection](../images/mtp-action-center.png)
+4. Wenn nur bestimmte Spalten angezeigt werden sollen, wählen Sie **Spalten anpassen** aus.<br/>![Info-Center in Microsoft Threat Protection](../../media/mtp-action-center.png)
 
-5. Wählen Sie ein Element in der Liste aus, um weitere Details zu einer Untersuchung anzuzeigen. Die Untersuchungsdetailansicht wird geöffnet.<br/>![Untersuchungsdetails](../images/mtp-air-investdetails.png)
+5. Wählen Sie ein Element in der Liste aus, um weitere Details zu einer Untersuchung anzuzeigen. Die Untersuchungsdetailansicht wird geöffnet.<br/>![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
     - Wenn es sich bei der Untersuchung um E-Mail-Inhalte (z. B. die Entität ist ein Postfach) handelt, werden die Untersuchungsdetails im Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)) geöffnet. 
 

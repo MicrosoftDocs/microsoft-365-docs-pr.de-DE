@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602852"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085584"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
 *Dieser Abschnitt gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Der einfachste Weg zum Upgrade von PCs, auf denen Windows 7 oder Windows 8.1 auf Windows 10 ausgeführt wird, ist ein direktes Upgrade. Sie können eine Konfigurations-Manager-Tasksequenz (Configuration Manager) verwenden, um den Prozess vollständig zu automatisieren. 
 
@@ -35,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um ein Windows 10 Enterprise-Image mithi
 
 Das Poster des Configuration Managers ist eine Seite im Querformatmodus (17x11). Klicken Sie auf das Bild unten, um eine PDF in Ihrem Browser anzuzeigen. 
 
-[![Bereitstellen von Windows 10 mit dem Configuration Manager-Poster](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+[![Bereitstellen von Windows 10 mit dem Configuration Manager-Poster](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
 Sie können dieses Poster auch in [PDF-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) oder [Visio-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) Format herunterladen.
 
@@ -151,4 +151,4 @@ Als Zwischenprüfung können Sie sich die [Beendigungskriterien](windows10-exit-
 
 |||
 |:-------|:-----|
-|![Schritt 3](./media/stepnumbers/Step3.png)| [Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Schritt 3](../media/stepnumbers/Step3.png)| [Bereitstellen von Windows 10 Enterprise für neue Geräte mittels Windows Autopilot](windows10-deploy-autopilot.md) |

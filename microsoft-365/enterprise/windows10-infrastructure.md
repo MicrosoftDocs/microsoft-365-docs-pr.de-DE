@@ -12,16 +12,16 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: a709971786dd85ff0f086c5c9d57c2d807391c65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596622"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085538"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3: Windows 10 Enterprise
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise umfasst Windows 10 Enterprise, das Ihnen die Tools bietet, um mehr zu tun und sicher zu bleiben. Windows 10 Enterprise:
 
@@ -80,10 +80,10 @@ Werfen Sie einen Blick in Microsoft, und erfahren Sie, wie das Unternehmen [Wind
 
 Sehen Sie sich an, wie die Contoso Corporation, ein fiktives, aber repräsentatives multinationales Unternehmen, [Windows 10 Enterprise bereitgestellt](contoso-win10.md)hat.
 
-![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![Schritt 1](./media/stepnumbers/Step1.png)| [Vorbereiten Ihrer Organisation auf Windows 10 Enterprise](windows10-prepare-your-org.md) |
+|![Schritt 1](../media/stepnumbers/Step1.png)| [Vorbereiten Ihrer Organisation auf Windows 10 Enterprise](windows10-prepare-your-org.md) |

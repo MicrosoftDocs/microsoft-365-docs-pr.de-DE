@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600192"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087572"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
@@ -77,7 +77,7 @@ Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für ein
 * Helpdesk-Administrator
 * Benutzeradministrator
 * Service-Administrator
-* Sicherheitsleseberechtigter
+* Benutzer mit Leseberechtigung für Sicherheitsfunktionen
 * Sicherheitsoperator
 * Globaler Leser
 
@@ -92,7 +92,7 @@ Für den Zugriff auf die Graph-API benötigen Sie zusätzlich zu einer Rolle ein
 
 Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Verbesserungs Aktionen in Gruppen gegliedert:
 
-* Identität (Azure Ad Konten #a0 Rollen, wobei Azure ATP in Kürze verfügbar ist)
+* Identität (Azure Ad Konten & Rollen, wobei Azure ATP in Kürze verfügbar ist)
 * Data (Microsoft Information Protection)
 * Gerät (Microsoft Defender ATP-Geräte)
 * App (e-Mail-und Cloud-apps, einschließlich Office 365 und Microsoft Cloud-App-Sicherheit)
@@ -100,7 +100,7 @@ Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Mi
 
 Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können.
 
-![Secure Score Homepage](../media/secure-score/secure-score-homepage.png)
+![Secure Score Homepage](../../media/secure-score/secure-score-homepage.png)
 *Abbildung 1: Übersicht über die Microsoft Secure Scores-Seite*
 
 ## <a name="take-action-to-improve-your-score"></a>Durchführen von Aktionen zur Verbesserung der Punktzahl
@@ -115,7 +115,7 @@ Die Rangfolge basiert auf der Anzahl der verbleibenden Punkte, die zum Erreichen
 
 Wenn Sie eine bestimmte Verbesserungs Aktion auswählen, wird ein ganzseitiges Flyout angezeigt.  
 
-![Verbesserungs Aktion-](../media/secure-score/secure-score-improvement-action.png)
+![Verbesserungs Aktion-](../../media/secure-score/secure-score-improvement-action.png)
 Flyout-Beispiel*Abbildung 2: Beispiel für ein Verbesserungs Aktion-Flyout*
 
 Um die Aktion abzuschließen, haben Sie einige Optionen:
@@ -139,7 +139,7 @@ In den Voraussetzungen im Abschnitt Implementierung werden alle Lizenzen aufgef�
 
 Auf der Registerkarte **Verlauf** können Sie ein Diagramm der Bewertung Ihrer Organisation über einen Zeitraum anzeigen. unter dem Graphen befindet sich eine Liste aller Aktionen, die im ausgewählten Zeitbereich und deren Attributen durchgeführt werden, beispielsweise Ergebnis Punkte und Kategorie. Sie können einen Datumsbereich anpassen und nach Kategorie filtern.
 
-Auf der Registerkarte **Metriken #a0 Trends** gibt es mehrere Diagramme und Diagramme, die Ihnen mehr Einblick in Trends geben und Ziele festlegen. Sie können den Datumsbereich für die gesamte Visualisierungs Seite festlegen. Die Visualisierungen umfassen Folgendes:
+Auf der Registerkarte **Metriken & Trends** gibt es mehrere Diagramme und Diagramme, die Ihnen mehr Einblick in Trends geben und Ziele festlegen. Sie können den Datumsbereich für die gesamte Visualisierungs Seite festlegen. Die Visualisierungen umfassen Folgendes:
 
 * **Ihre Secure Score Zone** – angepasst basierend auf den Zielen und Definitionen Ihrer Organisation für gute, ordnungsgemäße und ungültige Bewertungsbereiche.
 * **Regressions Trend** – eine Zeitskala mit Punkten, die aufgrund von Konfigurations-, Benutzer-oder Geräteänderungen zurückgegangen sind.  
@@ -193,4 +193,4 @@ Um Punkte über mehrere Erfahrungen hinweg zu standardisieren, wurden alle Aktio
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Sicherheits-, Datenschutz-#a0 Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.
+Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Sicherheits-, Datenschutz-& Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.

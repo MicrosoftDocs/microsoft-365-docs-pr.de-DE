@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957370"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087266"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -97,7 +97,7 @@ Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Mi
 
 Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können.
 
-![Secure Score Homepage](../media/secure-score/homepage-original.png)
+![Secure Score Homepage](../../media/secure-score/homepage-original.png)
 *Abbildung 1: Übersicht über die Microsoft Secure Scores-Seite*
 
 ## <a name="take-action-to-improve-your-score"></a>Durchführen von Aktionen zur Verbesserung der Punktzahl
@@ -122,7 +122,7 @@ Wenn Sie eine bestimmte Verbesserungs Aktion auswählen, wird ein verfliegt ange
 
 4. Wählen Sie **überprüfen** aus, da für die Verbesserungs Aktion regelmäßig ein Teil Ihrer Umgebung überprüft werden muss, um Punkte zu erhalten und zu erhalten. Beispielsweise sollten Post Fach Weiterleitungsregeln wöchentlich überprüft werden, um sicherzustellen, dass die Daten nicht von Ihrem Netzwerk extrahiert werden. Sie müssen keine Änderungen vornehmen, es muss jedoch eine Aktion ausgeführt werden. Wenn Sie die Regeln regelmäßig überprüfen, werden Sie die Punkte erhalten. Wenn dies nicht der Fall ist, wird das Ergebnis reduziert.
 
-![Beispiel für sichere Ergebnis Verbesserungs Aktion](../media/secure-score/secure-score1x450.png) ![Beispiel zur Verbesserung der Sicherheit Score-Überarbeitungs Aktion](../media/secure-score/secure-score2x450.png)
+![Beispiel für sichere Ergebnis Verbesserungs Aktion](../../media/secure-score/secure-score1x450.png) ![Beispiel zur Verbesserung der Sicherheit Score-Überarbeitungs Aktion](../../media/secure-score/secure-score2x450.png)
 
 *Abbildungen 2 & 3: Flyouts zur Verbesserungs Aktion*
 
@@ -140,7 +140,7 @@ Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition 
 
 ### <a name="removed-not-scored-improvement-actions"></a>Verbesserungs Aktionen "nicht bewertet" entfernt
 
-Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar.  
+Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Microsoft Secure Score ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Einfluss auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar.  
 
 Aus diesen Gründen wurden alle nicht erzielten Verbesserungs Aktionen entfernt. Ihrerseits ist keine Aktion erforderlich.
 
@@ -210,11 +210,7 @@ Neue Verbesserungs Aktionen hinzugefügt:
 
 Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Überarbeitungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.  
 
-Aus diesen Gründen werden alle Verbesserungs Aktionen, die eine Überarbeitungs Kadenz erforderten, vorübergehend entfernt. Ihrerseits ist keine Aktion erforderlich.
-
-### <a name="simplification-of-the-point-system"></a>Vereinfachung des Punktesystems
-
-Um Punkte über mehrere Erfahrungen hinweg zu standardisieren, werden alle Aktionspunkte für eine sichere Punktzahl verbessert, sodass Sie 10 oder mehr Punkte Wert haben. Es ist erforderlich, dass die gesamte Breite Verschnaufpause von Sicherheitskontrollen konsistenter ist, die wir heute haben, und diejenigen, die wir in Zukunft hinzufügen werden. Dies ist zwar eine wesentliche Änderung, und es wird eine Verringerung der Gesamtzahl der Punkte angezeigt, aber ihre Sicherheitsposition wird nicht geändert.  
+Aus diesen Gründen werden alle Verbesserungs Aktionen, die eine Überarbeitungs Kadenz erforderten, vorübergehend entfernt. Ihrerseits ist keine Aktion erforderlich. 
 
 ### <a name="preview-features"></a>Vorschaufeatures
 
@@ -225,6 +221,7 @@ Die folgenden Features werden in der [Vorschauversion](microsoft-secure-score-pr
 * Bessere Nachverfolgung und Überwachung für Ergebnis Regressionen
 * Filtern, markieren, suchen und Gruppieren von Verbesserungs Aktionen
 * Verwalten Ihrer zukünftigen Ziele mithilfe von Bewertungs Projektionen und geplanten Aktionen
+* Vereinfachung des Punktesystems
 * Und vieles mehr!
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback

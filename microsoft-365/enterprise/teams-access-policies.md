@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 258e116e2d51a5fde9f6e9c3273824994b9dcfa6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c72e340092bbd366277114a56aae7574d43dab5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596662"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085084"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinien Empfehlungen für das Sichern von teamchats,-Gruppen und-Dateien
 
@@ -45,11 +45,11 @@ Sie müssen abhängige Dienste nicht für den Einstieg in Microsoft Teams aktivi
 
 Das folgende Diagramm veranschaulicht die empfohlenen Richtlinien für den Schutz von Chat, Gruppen und Inhalten in Microsoft Teams. Das Bleistiftsymbol gibt an, welche Richtlinien erneut besucht werden müssen, um sicherzustellen, dass Teams und abhängige Dienste in der Zuweisung von Cloud-Apps enthalten sind.
 
-![Ein Diagramm, in dem gezeigt wird, wie Microsoft Teams auf verschiedenen Geräten verwendet werden.](../images/identity-access-ruleset-teams.png)
+![Ein Diagramm, in dem gezeigt wird, wie Microsoft Teams auf verschiedenen Geräten verwendet werden.](../media/identity-access-ruleset-teams.png)
 
 Hierbei handelt es sich um die abhängigen Dienste, die in die Zuweisung von Cloud-Apps für Teams einbezogen werden sollen:
 
-- Microsoft Teams
+- Microsoft Teams
 - SharePoint Online und OneDrive for Business
 - Exchange Online
 - Skype for Business Online
@@ -76,7 +76,7 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die erneut besucht we
 
 Als Referenz zeigt das folgende Diagramm die Dienste, auf denen Teams basiert. Weitere Informationen und weitere Illustrationen finden Sie unter [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
 
-![Diagramm mit Abhängigkeiten von Teams in SharePoint Online, OneDrive für Unternehmen und Exchange.](../images/identity-access-logical-architecture-teams.png)
+![Diagramm mit Abhängigkeiten von Teams in SharePoint Online, OneDrive für Unternehmen und Exchange.](../media/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Aktivieren von Gast-und externem Zugriff für Teams
 

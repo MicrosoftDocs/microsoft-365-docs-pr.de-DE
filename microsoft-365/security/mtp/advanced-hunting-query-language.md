@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 586b887c9c5c1e4c19623c89dd08ed62ba0d4bb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600342"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087463"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -53,7 +53,7 @@ DeviceProcessEvents
 
 So sieht es in der erweiterten Suche aus.
 
-![Abbildung einer erweiterten Suchabfrage in Microsoft Defender ATP](../images/advanced-hunting-query-example.png)
+![Abbildung einer erweiterten Suchabfrage in Microsoft Defender ATP](../../media/advanced-hunting-query-example.png)
 
 Die Abfrage beginnt mit einem kurzen Kommentar, der beschreibt, wofür die Abfrage dient. Dies ist hilfreich, wenn Sie sich später entscheiden, Ihre Abfrage zu speichern und sie für andere Personen in Ihrer Organisation freizugeben.
 
@@ -130,7 +130,7 @@ Daten in erweiterten Suchtabellen werden in der Regel in die folgenden Datentype
 
 Der Abschnitt **Erste Schritte** bietet einige einfache Abfragen mit häufig verwendeten Operatoren. Versuchen Sie, diese Abfragen auszuführen und kleine Änderungen daran vorzunehmen.
 
-![Abbildung eines erweiterten Suchfensters](../images/advanced-hunting-get-started.png)
+![Abbildung eines erweiterten Suchfensters](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen. Erkunden Sie die freigegebenen Abfragen auf der linken Seite oder das GitHub-Abfragerepository.

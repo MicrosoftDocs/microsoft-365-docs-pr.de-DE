@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: e8c2b10f3e1dd88703b15c326dedb164a686cfca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596732"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084309"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -34,7 +34,7 @@ Diese Empfehlungen erfordern, dass Ihre Benutzer moderne e-Mail-Clients verwende
 
 Das folgende Diagramm veranschaulicht die allgemeinen Richtlinien für Identitäts-und Geräte Zugriff und gibt an, welche Richtlinien aktualisiert werden müssen, um e-Mails zu schützen. Beachten Sie das Hinzufügen einer neuen Regel für Exchange Online zum Blockieren von ActiveSync-Clients. Dadurch wird die Verwendung von Outlook Mobile erzwungen.
 
-![Zusammenfassung der Richtlinienaktualisierungen zum Schutz von e-Mails](../images/identity-access-ruleset-mail.png)
+![Zusammenfassung der Richtlinienaktualisierungen zum Schutz von e-Mails](../media/identity-access-ruleset-mail.png)
 
 Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen haben, wenn Sie Sie eingerichtet haben, müssen Sie nur die neue Richtlinie erstellen, um ActiveSync-Clients zu blockieren. Überprüfen Sie die in der folgenden Tabelle aufgeführten Richtlinien, und nehmen Sie entweder die empfohlenen Ergänzungen vor, oder bestätigen Sie, dass diese bereits enthalten sind. Jede Regel enthält Links zu den zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) .
 
@@ -70,7 +70,7 @@ Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere bedingte Z
 
 8. Wählen Sie **Bedingungen**aus, und wählen Sie dann **Client-apps**aus.
 
-9. Wählen Sie für **configure**die Option **Ja**aus. Überprüfen Sie nur Folgendes: **Mobile Apps und Desktop Clients** und **Exchange ActiveSync-Clients**. Wählen Sie **Done** aus.
+9. Wählen Sie für **configure**die Option **Ja**aus. Überprüfen Sie nur Folgendes: **Mobile Apps und Desktop Clients** und **Exchange ActiveSync-Clients**. Klicken Sie auf **Fertig**.
 
 10. Wählen Sie im Abschnitt **Zugriffssteuerung** die Option **Erteilen** aus.
 

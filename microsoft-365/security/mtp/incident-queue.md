@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087299"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Priorisieren von Vorfällen in Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ Microsoft Threat Protection wendet Korrelationsanalysen an und fasst alle zugeh�
 In der **Vorfallswarteschlange** wird eine Auflistung von Vorfällen angezeigt, die auf allen Geräten, für alle Benutzer und in allen Postfächern gekennzeichnet wurden. Sie können damit Vorfälle sortieren, um eine fundierte Entscheidung im Hinblick auf eine geeignete Reaktion auf einen Cyberangriff zu treffen.
 
 
-![Abbildung einer Vorfallswarteschlange](../images/incidents-queue.png) 
+![Abbildung einer Vorfallswarteschlange](../../media/incidents-queue.png) 
 
 Standardmäßig werden in der Warteschlange im Microsoft 365 Security Center Vorfälle angezeigt, die in den letzten 30 Tagen aufgetreten sind, wobei der letzte Vorfall am Anfang der Liste angezeigt wird, sodass Sie die neuesten Vorfälle zuerst sehen können.
 
