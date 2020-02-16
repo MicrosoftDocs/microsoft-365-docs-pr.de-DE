@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595672"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078127"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Überprüfen von Unterhaltungen in Advanced eDiscovery 
 
@@ -39,7 +39,7 @@ Bei der Wiederherstellung von Unterhaltungen können Sie integrierte Funktionen 
 
 - Exportieren einzelner Nachrichten oder Thread Unterhaltungen
 
-## <a name="terminology"></a>Begrifflichkeiten
+## <a name="terminology"></a>Terminologie
 
 Hier sind einige Definitionen, die Sie beim Einstieg in die Wiederherstellung von Unterhaltungen unterstützen.
 
@@ -47,7 +47,7 @@ Hier sind einige Definitionen, die Sie beim Einstieg in die Wiederherstellung vo
 
 - Unter **Haltung:** Stellt eine Gruppierung von einer oder mehreren Nachrichten dar. In verschiedenen Anwendungen können Unterhaltungen auf verschiedene Weise dargestellt werden. In einigen Anwendungen gibt es eine explizite Aktion, die sich aus der Antwort auf eine vorhandene Nachricht ergibt. Unterhaltungen werden explizit als Ergebnis dieser Benutzeraktion gebildet. Hier ist beispielsweise ein Screenshot einer Kanal Unterhaltung in Microsoft Teams.
 
-   ![Microsoft Teams-Kanal Unterhaltung](media/threadedchat.png)
+   ![Microsoft Teams-Kanal Unterhaltung](../media/threadedchat.png)
 
    In anderen apps (wie 1xN Chatnachrichten in Microsoft Teams) gibt es keine formelle Antwort Kette, und stattdessen werden Nachrichten in einem einzelnen Thread als "Flat River of messages" angezeigt. In diesen Typen apps werden Unterhaltungen aus einer Gruppe von Nachrichten abgeleitet, die innerhalb eines bestimmten Zeitraums auftreten. Diese "weiche Gruppierung" von Nachrichten (im Gegensatz zu einer Antwort Kette) stellen die Unterhaltung "hin und her" zu einem bestimmten interessanten Thema dar. 
 
@@ -71,7 +71,7 @@ Nachdem Sie Ihre Suchabfrage überprüft und abgeschlossen haben, können Sie di
 
 Wenn Sie Daten aus Unterhaltungen zu einem Überprüfungs Sätze hinzufügen, können Sie die Optionen zum Abrufen von Unterhaltungen verwenden, um die Suche zu erweitern und kontextbezogene Nachrichten einzuschließen. Nachdem Sie die Optionen für den Abruf von Unterhaltungen festgelegt haben, können die folgenden Dinge passieren:
 
-  ![Unterhaltung abrufen](media/messagesandconversations.png)
+  ![Unterhaltung abrufen](../media/messagesandconversations.png)
   
 1. Bei Verwendung einer Schlüsselwort-und Datumsbereichs Abfrage hat die Suche einen Treffer bei *Nachricht 3*zurückgegeben. Diese Nachricht war Teil einer größeren Unterhaltung, illustriert von *CRC1*. 
   
@@ -99,13 +99,13 @@ Nachdem der Inhalt verarbeitet und dem Überprüfungs hinzugefügt wurde, könne
 
 In einer Standard Überprüfungsgruppe werden Nachrichten verarbeitet und als einzelne Elemente angezeigt, ähnlich wie Sie in einem Postfachordner gespeichert werden. In diesem Workflow wird jede Nachricht als separates Element verarbeitet. Daher sind die Optionen für den threaded Summary and Export in einer Standard Überprüfungsgruppe nicht verfügbar. 
 
-  ![Standard Überprüfungsgruppe](media/standardrs.PNG)
+  ![Standard Überprüfungsgruppe](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Überprüfen von Unterhaltungen in einer Konversations Überprüfungsgruppe
 
 In einer Konversations Überprüfungsgruppe werden einzelne Nachrichten mit einem Thread zusammengefasst und als Unterhaltungen dargestellt. Auf diese Weise können Sie kontextbezogene Unterhaltungen überprüfen und exportieren. 
 
-  ![Konversations Überprüfungsgruppe](media/ConversationRSOptions.PNG)
+  ![Konversations Überprüfungsgruppe](../media/ConversationRSOptions.PNG)
 
 In den folgenden Abschnitten wird das überprüfen und Exportieren von Unterhaltungen in einer Konversations Überprüfungsgruppe beschrieben.
 
@@ -127,14 +127,14 @@ In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen v
 
 - **Tagging:** Wenn Sie Unterhaltungen in einem Überprüfungs Satzes anzeigen, können Sie Tags anzeigen und anwenden, indem Sie im Coding Panel auf Markierungs **Bereich** klicken.
 
-- Unter **Haltungs Konvertierung erneut ausführen:** Wenn Nachrichten zu einer Konversations Überprüfungsgruppe hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Zusammenfassung mit Threads zu erstellen und Ansichten zu kommentieren. Wenn der Auftrag für die Wiederherstellung der Unterhaltung fehlschlägt, können Sie diesen Auftrag erneut ausführen, indem Sie auf **Aktion #a0 Erstellen von Unterhaltungs PDFs** in der Überprüfungsgruppe klicken.
+- Unter **Haltungs Konvertierung erneut ausführen:** Wenn Nachrichten zu einer Konversations Überprüfungsgruppe hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Zusammenfassung mit Threads zu erstellen und Ansichten zu kommentieren. Wenn der Auftrag für die Wiederherstellung der Unterhaltung fehlschlägt, können Sie diesen Auftrag erneut ausführen, indem Sie auf **Aktion > Erstellen von Unterhaltungs PDFs** in der Überprüfungsgruppe klicken.
 
 
 #### <a name="exporting-conversations"></a>Exportieren von Unterhaltungen
 
 In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen zum Exportieren von Unterhaltungen festlegen:
 
-![Exportieren](media/export.png)
+![Export](../media/export.png)
 
 a. Metadaten-Optionen
 

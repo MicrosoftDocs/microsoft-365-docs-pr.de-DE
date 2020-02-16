@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die Schaltfläche Wiederholen zum Auflösen von Inhalts suchen mit fehlerhaften Inhaltsverzeichnissen.
-ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601622"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081577"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicher Fehlers
 
@@ -46,7 +46,7 @@ Beim Durchsuchen einer großen Anzahl von Postfächern wird die Suche auf Tausen
 
 Das Neustarten der Suche führt häufig zu ähnlichen Fehlern auf unterschiedlichen Servern. Anstatt die Suche neu zu starten, klicken Sie auf die Schaltfläche wieder **holen** , die oben auf der Suchergebnisseite angezeigt wird.
 
-![Klicken Sie auf die Schaltfläche wiederholen, um Fehler des Inhaltsspeichers zu beheben](media/retrycontentsearch3.png)
+![Klicken Sie auf die Schaltfläche wiederholen, um Fehler des Inhaltsspeichers zu beheben](../media/retrycontentsearch3.png)
 
 Dies führt dazu, dass die Suche nur für die nicht erfolgreichen Postfächer erneut versucht wird. Wenn Sie die Suche wiederholen, werden die anderen Ergebnisse, die erfolgreich zurückgegeben wurden, beibehalten.
 

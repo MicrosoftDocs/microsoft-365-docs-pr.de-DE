@@ -20,18 +20,18 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
-ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596082"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079900"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Anwenden der Verwaltung von Informationsrechten (Information Rights Management, IRM) auf eine Liste oder Bibliothek
 
 Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Der Azure Rights Management Service (Azure RMS) von Azure Information Protection und die lokale Entsprechung, Active Directory Rights Management Services (AD RMS), unterstützen die Verwaltung von Informationsrechten für Websites. Es sind keine separaten oder zusätzlichen Installationen erforderlich.
     
@@ -47,13 +47,13 @@ Sie können die Verwaltung von Informationsrechten (Information Rights Managemen
 ## <a name="apply-irm-to-a-list-or-library"></a>Anwenden von IRM auf eine Liste oder Bibliothek
 <a name="__toc256598179"> </a>
 
-![Einstellungen für die Verwaltung von Informationsrechten](media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Einstellungen für die Verwaltung von Informationsrechten](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Wechseln Sie zu der Liste oder Bibliothek, für die Sie IRM konfigurieren möchten.
     
 2. Klicken Sie auf dem Menüband auf die Registerkarte **Bibliothek** , und klicken Sie dann auf **Bibliothekseinstellungen**. (Wenn Sie in einer Liste arbeiten, klicken Sie auf die Registerkarte **Liste** , und klicken Sie dann auf **Listeneinstellungen**).
     
-    ![Schaltflächen für die SharePoint-Bibliothekseinstellungen auf dem Menüband](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![Schaltflächen für die SharePoint-Bibliothekseinstellungen auf dem Menüband](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. Klicken Sie unter **Berechtigungen und Verwaltung**auf **Verwaltung von Informationsrechten**. Wenn der Link zur Verwaltung von Informationsrechten nicht angezeigt wird, ist IRM möglicherweise nicht für Ihre Website aktiviert. Wenden Sie sich an den Server Administrator, um zu prüfen, ob IRM für Ihre Website aktiviert werden kann. Der Link zur Verwaltung von Informationsrechten wird nicht für Bildbibliotheken angezeigt.
     

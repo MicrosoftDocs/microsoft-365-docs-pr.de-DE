@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662225"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079952"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Erweiterte eDiscovery-Berichte (Vorschau)
 
@@ -35,7 +35,7 @@ Erweiterte eDiscovery-Berichte unterstützen Sie bei der Aggregation von Falldat
 
 - Wie viele aktive und abgeschlossene Fälle gibt es in meiner Organisation?
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Um auf Erweiterte eDiscovery-Berichte zugreifen zu können, müssen Sie Mitglied der Rollengruppe "eDiscovery-Administrator" sein. Als Mitglied dieser Rollengruppe erhalten Sie die erforderlichen Berechtigungen zum Anzeigen, Filtern und Exportieren der Daten in den Berichten. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
 
@@ -47,15 +47,15 @@ So greifen Sie auf die erweiterten eDiscovery-Berichte zu:
   
 2. Melden Sie sich bei Office 365 mit ihrem geschäftlichen oder Schulkonto an.
   
-3. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery #a1 Advanced eDiscovery**.
+3. Klicken Sie im Security & Compliance Center auf **eDiscovery > Advanced eDiscovery**.
   
    Auf der **erweiterten eDiscovery** -Startseite werden die Registerkarten Case, Depot, Datenquelle und Kommunikationsbericht am oberen Rand der Seite angezeigt. 
   
-   ![Erweiterte eDiscovery-Berichte auf der Startseite](media/report-home.png)
+   ![Erweiterte eDiscovery-Berichte auf der Startseite](../media/report-home.png)
 
 5. Wenn Sie einen Bericht anzeigen möchten, klicken Sie auf eine Registerkarte Bericht, und führen Sie bei Bedarf eine der folgenden Aktionen aus:
 
-   ![Sie können Berichtsdaten filtern oder herunterladen.](media/AeDReportsFilterDownload.png)
+   ![Sie können Berichtsdaten filtern oder herunterladen.](../media/AeDReportsFilterDownload.png)
 
    a. Klicken Sie auf **Filter** , um die Berichtsdaten einzugrenzen. Sie können nach verschiedenen Eigenschaften für jeden Bericht filtern.
   

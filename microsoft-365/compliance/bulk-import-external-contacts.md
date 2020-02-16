@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Erfahren Sie, wie Administratoren Exchange Online PowerShell und eine CSV-Datei zum Massenimport externer Kontakte in die globale Adressliste verwenden können.
-ms.openlocfilehash: b6f7c430cef13985a679abf42a2f91d9605bf556
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596262"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078952"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Massenimport externer Kontakte in Exchange Online
 
@@ -123,7 +123,7 @@ Nachdem Sie den Befehl in Schritt 2 ausgeführt haben, werden die externen Konta
     
 1. Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**.
     
-2. Klicken Sie auf einen Kontakt, **** ![und klicken Sie](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) dann auf Bearbeitungssymbol bearbeiten, um die Eigenschaften des Kontakts anzuzeigen. 
+2. Klicken Sie auf einen Kontakt, **** ![und klicken Sie](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) dann auf Bearbeitungssymbol bearbeiten, um die Eigenschaften des Kontakts anzuzeigen. 
     
 Das ist alles. Benutzer können die Kontakte und die zusätzlichen Informationen im Adressbuch Outlook und Outlook im Internet anzeigen.
   

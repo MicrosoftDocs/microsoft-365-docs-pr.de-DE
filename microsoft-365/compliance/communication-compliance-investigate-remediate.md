@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661951"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078729"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Kommunikations Konformitätswarnungen
 
@@ -66,7 +66,7 @@ Eine vollständige Liste der Filter und Feld Details finden Sie unter [Filter](c
 
 8. Wenn Sie die ausgewählten Filter als Filterabfrage speichern möchten, wählen Sie **Speichern des Abfrage** Steuerelements aus, nachdem Sie mindestens einen Filterwert konfiguriert haben. Geben Sie einen Namen für die Filterabfrage ein, und wählen Sie **Speichern**aus. Dieser Filter ist nur für diese Richtlinie verfügbar und wird im Abschnitt **gespeicherte Filter Abfragen** auf der Seite **Filter** Details aufgeführt.
 
-    ![Filter Detailsteuerelemente für die Kommunikations Konformität](media/communication-compliance-filter-detail-controls.png)
+    ![Filter Detailsteuerelemente für die Kommunikations Konformität](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Verwenden von Near und Exact Duplicate Analysis
 
@@ -90,7 +90,7 @@ Compliance-Richtlinien für die Kommunikation überprüfen und konfigurieren aut
 
 8. Wählen Sie **Schließen** aus, nachdem Sie die Korrekturaktionen für die Nachrichten abgeschlossen haben.
 
-    ![Kommunikation Compliance Exact Duplikate Controls](media/communication-compliance-duplicates-controls.png)
+    ![Kommunikation Compliance Exact Duplikate Controls](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>Beheben von Warnungen
 
@@ -98,7 +98,7 @@ Unabhängig davon, wo Sie mit der Überprüfung von Warnungen oder der von Ihnen
 
 1. **Untersuchen Sie die Grundlagen der Nachricht**: Manchmal ist es von der Quelle oder vom Betreff her offensichtlich, dass eine Nachricht sofort korrigiert werden kann. Möglicherweise ist die Nachricht falsch oder fälschlicherweise mit einer Richtlinie abgeglichen und sollte als falsch positives Ergebnis aufgelöst werden. Wählen Sie das Steuerelement **falsch positiv** aus, um die Warnung sofort aufzulösen und aus der Warteschlange für ausstehende Warnungen zu entfernen. Anhand der Quell-oder Absenderinformationen wissen Sie möglicherweise bereits, wie die Nachricht unter diesen Umständen geroutet oder verarbeitet werden sollte. Verwenden Sie zum Zuweisen eines Tags zu entsprechenden Nachrichten oder zum Senden von Nachrichten an einen bestimmten Prüfer die Verwendung der **Tags als** oder **eskalieren** -Steuerelemente.
 
-    ![Steuerelemente für die Konformitäts Behebung für Kommunikation](media/communication-compliance-remediation-controls.png)
+    ![Steuerelemente für die Konformitäts Behebung für Kommunikation](../media/communication-compliance-remediation-controls.png)
 
 2. **Überprüfen Sie die Nachrichtendetails**: Nachdem Sie die Grundlagen der Nachricht überprüft haben, ist es an der Zeit, eine Nachricht zu öffnen, um die Details zu überprüfen und weitere Korrekturaktionen zu bestimmen. Wählen Sie eine Nachricht aus, um den vollständigen Nachrichtenkopf und die Textkörper Informationen anzuzeigen. Es stehen verschiedene Ansichten zur Verfügung, die Sie bei der Entscheidung über die richtige Vorgehensweise unterstützen:
 
@@ -107,7 +107,7 @@ Unabhängig davon, wo Sie mit der Überprüfung von Warnungen oder der von Ihnen
     - **Ansicht mit Anmerkungen versehen**: in dieser Ansicht können Bearbeiter Anmerkungen direkt in der Nachricht hinzufügen, die in der Ansicht der Nachricht gespeichert werden.
     - **Benutzer Historie**: Ansicht "Benutzerverlauf" zeigt alle anderen Warnungen an, die von einer Kommunikations Konformitätsrichtlinie für den Benutzer generiert werden, der die Nachricht sendet.
 
-    ![Kommunikation-Compliance-Nachrichten Ansichtssteuerelemente](media/communication-compliance-message-views.png)
+    ![Kommunikation-Compliance-Nachrichten Ansichtssteuerelemente](../media/communication-compliance-message-views.png)
 
 3. **Entscheiden Sie sich für eine Korrekturaktion**: Nachdem Sie nun die Details der Nachricht für die Warnung überprüft haben, können Sie mehrere Korrekturaktionen auswählen:
 

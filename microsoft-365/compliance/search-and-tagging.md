@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery können Sie mit dem Such-und Markierungs Modul die Dokumente in Ihrem Fall durchsuchen, in der Vorschau anzeigen und organisieren. Derzeit befindet sich dieses Modul in der Betaphase.
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601712"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081397"
 ---
 # <a name="search-and-tagging"></a>Suche und Kennzeichnung
 
@@ -69,7 +69,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, nach denen Sie mith
 
 Alternativ können Sie eine Bedingungs Karte im erweiterten eDiscovery-Such Tool verwenden, um einer Suchabfrage eine Bedingung (für ausgewählte Eigenschaften) hinzuzufügen. Im folgenden Screenshot sind die Bedingungen dargestellt, die einer Abfrage hinzugefügt werden können. Die Spalte **Group** gibt an, ob die Eigenschaft auf e-Mail, Website Dokumente oder beides angewendet wird (angegeben durch den *gemeinsamen*Wert). In dieser Spalte werden auch die durchsuchbaren Eigenschaften identifiziert, die nach dem Ausführen des Moduls Relevanz verfügbar sind.
 
-![Suchbedingungen im erweiterten eDiscovery-Such Tool](media/AeDSearchConditions.png)
+![Suchbedingungen im erweiterten eDiscovery-Such Tool](../media/AeDSearchConditions.png)
 
 Weitere Informationen zu durchsuchbaren Eigenschaften finden Sie unter [Keyword-Abfragen und Suchbedingungen](keyword-queries-and-search-conditions.md).
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7d507730e3e5301446889e52e4bbd5d85660da36
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 44bebc777b729984e9436ed7677e3da60145ac02
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596112"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077486"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery"></a>Erstellen eines neuen Falls in Advanced eDiscovery  
 
@@ -29,7 +29,7 @@ ms.locfileid: "41596112"
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery #a1 Advanced eDiscovery**.
+3. Klicken Sie im Security & Compliance Center auf **eDiscovery > Advanced eDiscovery**.
  
 4. Klicken Sie auf der Seite **Erweiterte eDiscovery** auf **Fall erstellen**.
     
@@ -49,4 +49,4 @@ ms.locfileid: "41596112"
 
     Die Registerkarte **Start** für die Anfrage wird angezeigt. Hier ist beispielsweise ein neuer Fall namens " *contoso Investigation*".
 
-    ![Die Registerkarte "Start" für einen neuen Fall in Advanced eDiscovery](media/newAeDcase.png)
+    ![Die Registerkarte "Start" für einen neuen Fall in Advanced eDiscovery](../media/newAeDcase.png)

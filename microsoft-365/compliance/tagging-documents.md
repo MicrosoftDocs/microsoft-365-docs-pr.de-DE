@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597412"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080972"
 ---
 # <a name="tag-documents-in-a-review-set"></a>Markieren von Dokumenten in einem Prüfdateisatz
 
@@ -47,11 +47,11 @@ Advanced eDiscovery bietet zwei Typen von Tags:
 
 Zusätzlich zu den Tag-Typen kann die Struktur der Organisation von Tags im Tag-Panel verwendet werden, um das Markieren von Dokumenten intuitiver zu gestalten. Tags werden nach Abschnitten gruppiert. überprüfen die Option "Suche festlegen" unterstützt die Suche nach Tag und Tag. Dies bedeutet, dass Sie eine Überprüfungs Sätze-Suche erstellen können, um Dokumente mit einem beliebigen Tag in einem Abschnitt abzurufen.
 
-![Markieren von Abschnitten im Tag-Panel](media/Tagtypes.png)
+![Markieren von Abschnitten im Tag-Panel](../media/Tagtypes.png)
 
 Tags können weiter organisiert werden, indem Sie in einem Abschnitt verschachtelt werden. Wenn beispielsweise privilegierte Inhalte identifiziert und markiert werden sollen, kann durch Verschachtelung deutlich gemacht werden, dass ein Benutzer ein Dokument als "privilegiert" markieren und den gewünschten Berechtigungstyp auswählen kann, indem das entsprechende geschachtelte Tag überprüft wird.
 
-![Geschachtelte Tags innerhalb eines Tag-Abschnitts](media/Nestingtags.png)
+![Geschachtelte Tags innerhalb eines Tag-Abschnitts](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>Anwenden von Tags
 
@@ -61,7 +61,7 @@ Es gibt verschiedene Möglichkeiten, ein Tag auf Inhalte anzuwenden.
 
 Wenn Sie ein Dokument in einem Überprüfungs Satzes anzeigen, können Sie die Tags anzeigen, die eine Überprüfung verwenden kann, indem Sie auf **Codierungs Bereich**klicken.
 
-![Klicken Sie auf Tag Panel, um das Tag-Panel anzuzeigen](media/Singledoctag.png)
+![Klicken Sie auf Tag Panel, um das Tag-Panel anzuzeigen](../media/Singledoctag.png)
 
 Auf diese Weise können Sie Tags auf das Dokument anwenden, das im Viewer angezeigt wird.
 
@@ -69,7 +69,7 @@ Auf diese Weise können Sie Tags auf das Dokument anwenden, das im Viewer angeze
 
 Das Massen-Tagging kann durch Auswählen mehrerer Dateien im Ergebnisraster und dann mithilfe der Tags im **Codierungs Bereich** wie das Markieren einzelner Dokumente erfolgen. Das Massen-UN-Tagging kann durch zweimaliges Markieren von Tags erfolgen. mit dem ersten Klick wird das Tag angewendet, und die zweite Auswahl stellt sicher, dass das Tag für alle ausgewählten Dateien gelöscht wird.
 
-![Ein Screenshot einer Handy Beschreibung, die automatisch generiert wird](media/Bulktag.png)
+![Ein Screenshot einer Handy Beschreibung, die automatisch generiert wird](../media/Bulktag.png)
 
 > [!NOTE]
 > Bei der Massen Markierung wird im Markierungsbereich die Anzahl der Dateien angezeigt, die für jedes Tag im Bereich markiert sind.
@@ -88,4 +88,4 @@ Hier erfahren Sie, wie Sie den **Codierungs Bereich** anzeigen, wenn Sie den **D
 
 3. Zum Markieren aller Dokumente wählen Sie im Bedienfeld " **Dokument Familie** " alle Dokumente aus, klicken Sie auf **Code Dokumente**, und wählen Sie dann die Tags aus, die auf die gesamte Dokumenten Familie angewendet werden sollen.
 
-![Screenshot einer sozialen Medien Bereitstellungs Beschreibung, die automatisch generiert wird](media/Relatedtag.png)
+![Screenshot einer sozialen Medien Bereitstellungs Beschreibung, die automatisch generiert wird](../media/Relatedtag.png)

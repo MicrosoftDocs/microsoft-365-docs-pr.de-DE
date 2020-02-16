@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Mit Customer Key können Sie die kryptografischen Schlüssel Ihrer Organisation steuern und dann Office 365 konfigurieren, um Ihre Daten im Ruhezustand in Microsoft-Rechenzentren mithilfe dieser Schlüssel zu verschlüsseln.
-ms.openlocfilehash: ee62065542ea50091d73362dd8d05f2e4e7dc337
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804799"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076922"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Dienst Verschlüsselung mit Kundenschlüssel in Office 365
 
@@ -49,7 +49,7 @@ Der Kundenschlüssel verschlüsselt nur Daten im Rest in der Cloud. Der Kundensc
 
 ## <a name="about-the-data-encryption-policy-dep"></a>Informationen zur Daten Verschlüsselungsrichtlinie (DEP)
 
-Eine Daten Verschlüsselungsrichtlinie definiert die Verschlüsselungshierarchie zum Verschlüsseln von Daten mit jedem der von Ihnen bereitgestellten Schlüssel sowie den von Microsoft geschützten Verfügbarkeits Schlüssel. Sie erstellen DEPs mithilfe von PowerShell-Cmdlets, die für jeden Dienst unterschiedlich sind, und weisen diese zum Verschlüsseln von Anwendungsdaten zu. Zum Beispiel:
+Eine Daten Verschlüsselungsrichtlinie definiert die Verschlüsselungshierarchie zum Verschlüsseln von Daten mit jedem der von Ihnen bereitgestellten Schlüssel sowie den von Microsoft geschützten Verfügbarkeits Schlüssel. Sie erstellen DEPs mithilfe von PowerShell-Cmdlets, die für jeden Dienst unterschiedlich sind, und weisen diese zum Verschlüsseln von Anwendungsdaten zu. Beispiel:
 
 **Exchange Online und Skype for Business** Sie können bis zu 50 DEPs pro Mandant erstellen. Sie ordnen DEPs ihren Kunden Schlüsseln in Azure Key Vault zu und weisen dann DEPs einzelnen Postfächern zu. Wenn Sie einer Datenausführungsverhinderung einem Postfach zuweisen:
 
@@ -71,11 +71,11 @@ Der Kundenschlüssel verwendet eine Vielzahl von Verschlüsselungs Chiffren zum 
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Verschlüsselungs Chiffren, die zum Verschlüsseln von Schlüsseln für Exchange Online und Skype for Business verwendet werden
 
-![Verschlüsselungs Chiffren für Exchange Online Kundenschlüssel](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Verschlüsselungs Chiffren für Exchange Online Kundenschlüssel](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Verschlüsselungs Chiffren, die zum Verschlüsseln von Schlüsseln für SharePoint Online-, OneDrive für Unternehmen-und Team Dateien verwendet werden
 
-![Verschlüsselungs Chiffren für SharePoint Online Kundenschlüssel](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Verschlüsselungs Chiffren für SharePoint Online Kundenschlüssel](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

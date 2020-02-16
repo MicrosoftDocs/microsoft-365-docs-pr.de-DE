@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081371"
 ---
 # <a name="search-statistics"></a>Suchstatistiken
 
 Eine effektive Möglichkeit zum Überprüfen Ihrer Suchergebnisse bei der Untersuchung eines Daten Vorfalls besteht darin, die Statistiken zu Ihren Suchergebnissen anzuzeigen, um sicherzustellen, dass Sie Ihren Erwartungen entsprechen. Wenn eine Suche als abgeschlossen ausgeführt wird, werden die folgenden allgemeinen Statistiken unter **Status** auf der Flyout-Seite "Suchdetails" angezeigt:
 
-![Statisics auf der Such Detail-Flyout-Seite suchen](media/SearchDetailsFlyout.png)
+![Statisics auf der Such Detail-Flyout-Seite suchen](../media/SearchDetailsFlyout.png)
 
 - Die geschätzte Anzahl und Größe der Elemente, die mit den Suchkriterien übereinstimmen.
 
@@ -37,7 +37,7 @@ Eine effektive Möglichkeit zum Überprüfen Ihrer Suchergebnisse bei der Unters
 
 Wenn Sie detailliertere Statistiken anzeigen möchten, klicken Sie auf der Flyout-Seite mit den Suchdetails auf **Statistik** . Auf der Seite **Suchstatistik** können Sie die Suchzusammenfassung, die erste Position mit Elementen, die mit den Suchergebnissen übereinstimmen, und detaillierte Statistiken zur Suchabfrage anzeigen.
 
-![Dropdownliste "Suchstatistik"](media/SearchStatisticsDropDownList.png)
+![Dropdownliste "Suchstatistik"](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>Zusammenfassung
 

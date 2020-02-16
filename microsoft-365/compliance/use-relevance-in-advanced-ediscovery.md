@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Office 365 Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.  '
-ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601302"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080712"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Verwenden des Moduls "Relevanz" in Office 365 Advanced eDiscovery
 
@@ -30,7 +30,7 @@ ms.locfileid: "41601302"
   
 In Advanced eDiscovery umfasst das Modul Relevanz das Relevanz-Training und die Überprüfung von Dateien im Zusammenhang mit einem Fall. Der Relevanz-Workflow wird wie folgt dargestellt und beschrieben:
   
-![Relevanz-Workflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Relevanz-Workflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Zyklen der Bewertung und Nachverfolgung**:
     

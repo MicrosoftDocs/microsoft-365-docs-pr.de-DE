@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'In diesem Artikel erfahren Sie, wie Sie erweiterte Einstellungen, einschließlich nahe Duplikate, e-Mail-Threads und Designs, für den Analyseprozess in Office 365 Advanced eDiscovery konfigurieren. '
-ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601512"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081267"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Festlegen von erweiterten Einstellungen für die Analyse in Office 365 Advanced eDiscovery
 
@@ -32,7 +32,7 @@ Advanced eDiscovery bietet standardmäßig erweiterte Parameter für Analysemodu
   
 1. Klicken Sie auf der Registerkarte **analyze \> \> -Setup vorbereiten** auf **Erweiterte Einstellungen** (unten auf der Seite). Der folgende Bereich wird angezeigt. 
     
-    ![Erweiterte Einstellungen für ANALYZE festlegen](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![Erweiterte Einstellungen für ANALYZE festlegen](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. Wählen Sie im **Parameter near-Duplicates und e-Mail-Threads**nach Bedarf Werte für Folgendes aus:
     

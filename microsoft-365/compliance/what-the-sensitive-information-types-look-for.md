@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Die Verhinderung von Datenverlust (Data Loss &amp; Prevention, DLP) im Office 365 Security Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: efd5d2f8003bd79620118a6a058576e5593699b1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601212"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084334"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
@@ -578,7 +578,7 @@ Die Zeichenfolge "DocumentDb" gefolgt von den Zeichen und Zeichenfolgen, die im 
 
 - Die Zeichenfolge "DocumentDb"
 - Eine beliebige Kombination von zwischen 3-200 unter-oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
-- Ein größer als-Symbol (#a0), ein Gleichheitszeichen (=), ein Anführungszeichen (") oder ein Apostroph (')
+- Ein größer als-Symbol (>), ein Gleichheitszeichen (=), ein Anführungszeichen (") oder ein Apostroph (')
 - Eine beliebige Kombination von 86 unter-oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
 - Zwei Gleichheitszeichen (=)
 
@@ -1014,7 +1014,7 @@ Eine beliebige Kombination von 86 unter-oder Großbuchstaben, Ziffern, den Schr�
 
 ### <a name="pattern"></a>Muster
 
-- 0-1 des größer als-Symbols (#a0), Apostroph ('), Gleichheitszeichen (=), Anführungszeichen (") oder Nummernzeichen (#)
+- 0-1 des größer als-Symbols (>), Apostroph ('), Gleichheitszeichen (=), Anführungszeichen (") oder Nummernzeichen (#)
 - Eine beliebige Kombination von 86 Zeichen mit unter-oder Großbuchstaben, Ziffern, dem Schrägstrich (/) oder Pluszeichen (+)
 - Zwei Gleichheitszeichen (=)
 
@@ -1221,7 +1221,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Legal entities 
 - Registration Status 
 - Business 
-- Unternehmen
+- Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -5008,7 +5008,7 @@ Die Zeichenfolge "Benutzer-ID", "Benutzer-ID", "UID" oder "UserID", gefolgt von 
 - Eine beliebige Kombination von zwischen 1-200 unter-oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - Die Zeichenfolge "Password" oder "pwd", wobei "pwd" kein Kleinbuchstabe vorangestellt ist
 - Ein Gleichheitszeichen (=)
-- Ein beliebiges Zeichen, das kein Dollarzeichen ($), Prozentzeichen (%), größer als das Symbol (#a0), Symbol (@), Anführungszeichen ("), Semikolon (;), linke geschweifte Klammer ([) oder linke Klammer ({) ist.
+- Ein beliebiges Zeichen, das kein Dollarzeichen ($), Prozentzeichen (%), größer als das Symbol (>), Symbol (@), Anführungszeichen ("), Semikolon (;), linke geschweifte Klammer ([) oder linke Klammer ({) ist.
 - Eine beliebige Kombination von 7-128 Zeichen, die kein Semikolon sind (;), Schrägstrich (/) oder Anführungszeichen (")
 - Ein Semikolon (;) oder Anführungszeichen (")
 
@@ -5054,9 +5054,9 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Password oder PWD gefolgt von 0-2 Leerzeichen, ein Gleichheitszeichen (=), 0-2 Leerzeichen und ein Sternchen (*)--oder--
 - Password oder PWD gefolgt von:
     - Gleichheitszeichen (=)
-    - Kleiner als-Symbol (#a0)
+    - Kleiner als-Symbol (<)
     - Eine beliebige Kombination von 1-200 Zeichen mit groß-oder Kleinbuchstaben, Ziffern, einem Sternchen (*), einem Bindestrich (-), einem Unterstrich (_) oder einem Leerzeichen
-    - Größer als-Symbol (#a0)
+    - Größer als-Symbol (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -5391,7 +5391,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Resident Cert. 
 - Identification card 
 - Alien Resident Certificate 
-- Bogens 
+- ARC 
 - Taiwan Area Resident Certificate 
 - TARC 
 - 居留證 
@@ -6116,92 +6116,40 @@ Nein
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
-- Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_unformatted_ssn sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
-- Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_randomized_formatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
-- Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
 Eine DLP-Richtlinie ist zu 55 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_randomized_unformatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
-- Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-- Die Funktion Func_us_address eine Adresse im richtigen Format findet.
 
-Eine DLP-Richtlinie ist 40% sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Sie in einer Nähe von 300 Zeichen:
-- Die Funktion Func_ssn findet Inhalte, die dem Muster entsprechen.
-- Die Funktion Func_unformatted_ssn findet keine Inhalte, die dem Muster entsprechen.
-- Die Funktion Func_randomized_unformatted_ssn findet keine Inhalte, die mit dem Muster übereinstimmen.
-- Ein Schlüsselwort aus Keyword_ssn wurde nicht gefunden.
- 
-Oder
-
-- Die Funktion Func_randomized_formatted_ssn findet Inhalte, die dem Muster entsprechen.
-- Die Funktion Func_unformatted_ssn findet keine Inhalte, die dem Muster entsprechen.
-- Die Funktion Func_randomized_unformatted_ssn findet keine Inhalte, die mit dem Muster übereinstimmen.
-- Ein Schlüsselwort aus Keyword_ssn wurde nicht gefunden.
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
   <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="55">
         <IdMatch idRef="Func_randomized_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-    </Entity>
+  </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Wenn ein neuer Mitarbeiter oder ein anderer Benutzer Zugriff auf die Inhalte eines inaktiven Postfachs in Office 365 benötigt, können Sie den Inhalt des inaktiven Postfachs in einem vorhandenen Postfach wiederherstellen (oder zusammenführen).
-ms.openlocfilehash: 7a12d34c175340a51ddaf39cdfffc945a0add203
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601632"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081601"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Rückspeichern eines inaktiven Postfachs in Office 365
 
@@ -33,7 +33,7 @@ Ein inaktives Postfach (eine Art vorläufig gelöschtes Postfach) wird verwendet
 
 Weitere Informationen zu den Unterschieden zwischen dem Wiederherstellen und der Wiederherstellung eines inaktiven Postfachs finden Sie im Abschnitt **Weitere Informationen** in diesem Artikel.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Zum Rückspeichern eines inaktiven Postfachs müssen Sie Exchange Online PowerShell verwenden. Das Exchange Admin Center (EAC) kann hierfür nicht verwendet werden. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
 
@@ -125,8 +125,8 @@ Wenn ein inaktives Postfach ein Archivpostfach enthält, können Sie es auch im 
 
     **Ordnerhierarchie im Zielpostfach, wenn der Parameter "TargetRootFolder" nicht verwendet wird**
 
-    ![Screenshot: Der Parameter „TargetRootFolder' wird nicht verwendet.](media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+    ![Screenshot: Der Parameter „TargetRootFolder' wird nicht verwendet.](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
   
     **Ordnerhierarchie im Zielpostfach, wenn der Parameter "TargetRootFolder" verwendet wird**
 
-    ![Screenshot: Der Parameter „TargetRootFolder' wird verwendet.](media/300da592-7323-48db-b8a4-07012259d113.png)
+    ![Screenshot: Der Parameter „TargetRootFolder' wird verwendet.](../media/300da592-7323-48db-b8a4-07012259d113.png)

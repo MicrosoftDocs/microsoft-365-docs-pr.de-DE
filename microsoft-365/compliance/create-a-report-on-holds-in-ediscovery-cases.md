@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind.
-ms.openlocfilehash: 415e484938a74620f0e3578bd1e00735232164de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595642"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077707"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Erstellen eines Berichts über Aufbewahrungen in eDiscovery-Fällen in Office 365
   
@@ -29,7 +29,7 @@ Mit dem Skript in diesem Artikel können eDiscovery-Administratoren und eDiscove
 
 Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) .
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Wenn Sie einen Bericht über alle eDiscovery-Fälle in Ihrer Organisation generieren möchten, müssen Sie ein eDiscovery-Administrator in Ihrer Organisation sein. Wenn Sie eDiscovery-Manager sind, enthält der Bericht nur Informationen zu den Fällen, auf die Sie zugreifen können. Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
@@ -37,9 +37,9 @@ Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden 
     
 - Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
     
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit der Security #a0 Compliance Center PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit der Security & Compliance Center PowerShell
 
-Der erste Schritt besteht darin, eine Verbindung mit dem Security #a0 Compliance Center für Ihre Organisation herzustellen.
+Der erste Schritt besteht darin, eine Verbindung mit dem Security & Compliance Center für Ihre Organisation herzustellen.
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `ConnectSCC.ps1`. 
     
@@ -63,7 +63,7 @@ Der erste Schritt besteht darin, eine Verbindung mit dem Security #a0 Compliance
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Schritt 2: Ausführen des Skripts zum Melden von Haltestatus für eDiscovery-Fälle
 
-Nachdem Sie sich mit Security #a0 Compliance Center PowerShell verbunden haben, besteht der nächste Schritt darin, das Skript zu erstellen und auszuführen, das Informationen über die eDiscovery-Fälle in Ihrer Organisation sammelt. 
+Nachdem Sie sich mit Security & Compliance Center PowerShell verbunden haben, besteht der nächste Schritt darin, das Skript zu erstellen und auszuführen, das Informationen über die eDiscovery-Fälle in Ihrer Organisation sammelt. 
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: CaseHoldsReport. ps1. 
     
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     Hier sehen Sie ein Beispiel für das Ausführen des CaseHoldsReport. ps1-Skripts. 
     
-    ![Die Ausgabe nach dem Ausführen des CaseHoldsReport. ps1-Skripts](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![Die Ausgabe nach dem Ausführen des CaseHoldsReport. ps1-Skripts](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Weitere Informationen
 

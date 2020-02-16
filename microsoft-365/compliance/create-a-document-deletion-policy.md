@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Organisationen müssen häufig Dokumente aufgrund von Konformitäts-, rechtlicher und anderer Bestimmungen für einen bestimmten Zeitraum aufbewahren. Wenn Dokumente aber länger als nötig aufbewahrt werden, kann dies für die Organisation rechtliche Folgen haben.
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596232"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077912"
 ---
 # <a name="create-a-document-deletion-policy"></a>Erstellen einer Dokumentlöschrichtlinie
 
@@ -32,19 +32,19 @@ Mit einer Richtlinie zum Löschen von Dokumenten können Sie das Risiko proaktiv
   
 Nach dem Erstellen einer Dokumentlöschrichtlinie können Sie sie einer Vorlage für Websitesammlung zuweisen, damit die Richtlinie für alle Websitesammlungen, die aus dieser Vorlage erstellt werden, verfügbar ist. Sie können außerdem einer bestimmten Websitesammlung eine Richtlinie zuweisen, die alle Richtlinien, die der Vorlage für diese Websitesammlung möglicherweise schon zugewiesen wurden, außer Kraft setzt.
   
-![Startseite des Dokument Löschrichtlinien Centers](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Startseite des Dokument Löschrichtlinien Centers](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>Richtlinienvorlagen
 
 Sie können eine Dokumentlöschrichtlinie von Grund auf neu erstellen oder eine unserer Beispielrichtlinien verwenden. Im Compliance Policy Center finden Sie Beispielrichtlinien, die Sie entweder sofort verwenden oder als Ausgangsbasis verwenden und umbenennen oder ändern können.
   
-![Beispiele für Dokument Löschungsrichtlinien](media/IP-Sample-deletion-policies.png)
+![Beispiele für Dokument Löschungsrichtlinien](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Beispiele
 
 Einer Websitesammlung oder einer websitesammlungsvorlage kann eine weitere Richtlinie zugewiesen sein, und jede dieser Richtlinien kann eine oder mehrere Regeln haben. Es kann jedoch nur eine Richtlinie pro Standort aktiv sein, und es kann immer nur eine Löschregel für die Bibliotheken innerhalb der Website aktiv sein.
   
-![Diagramm mit Beziehung zwischen Richtlinien](media/IP-Two-policies-four-rules.png)
+![Diagramm mit Beziehung zwischen Richtlinien](../media/IP-Two-policies-four-rules.png)
   
 Außerdem können Sie eine Richtlinie als obligatorisch oder Standard und eine Löschregel als Standardregel auswählen: 
   
@@ -68,7 +68,7 @@ Angenommen, Sie möchten eine Dokumentlöschrichtlinie für eine vielfältige Re
     
 In diesem Beispiel wird die Standardlöschregel auf alle Bibliotheken in allen Websitesammlungen angewendet, die aufgrund der Vorlage erstellt wurden, und die Websitebesitzer können die Richtlinie nicht abwählen. Dies ist die einfachste Möglichkeit, um eine Dokumentlöschrichtlinie umfassend und strikt zu erzwingen.
   
-![Diagramm mit einer einzelnen verbindlichen Richtlinie](media/IP-Example-1-doc-deletion-policies.png)
+![Diagramm mit einer einzelnen verbindlichen Richtlinie](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>Beispiel 2: Anwenden einer einzelnen Richtlinie mit mehreren Regeln auf eine websitesammlungsvorlage
 
@@ -84,7 +84,7 @@ Auch dann können Sie die Richtlinien noch zentral erstellen und verwalten. Sie 
     
 Websitebesitzer können eine der alternativen Löschregeln auswählen, die Richtlinie abwählen oder nichts unternehmen und die Standardrichtlinie und -regel übernehmen.
   
-![Diagramm, das eine Richtlinie mit vielen Regeln zeigt](media/IP-Example-2-doc-deletion-policies.png)
+![Diagramm, das eine Richtlinie mit vielen Regeln zeigt](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>Beispiel 3: Anwenden mehrerer Richtlinien mit mindestens einer Regel auf eine Websitesammlung
 
@@ -104,7 +104,7 @@ Um dieses Szenario einzurichten, können Sie wie folgt vorgehen:
     
 Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung angepasst, bei der die Websitebesitzer die Vererbung aufheben können, indem sie die Richtlinie und Regel auswählen, die sich am besten für ihre Website eignet.
   
-![Diagramm mit vielen Richtlinien und Regeln](media/IP-Example-3-doc-deletion-policies.png)
+![Diagramm mit vielen Richtlinien und Regeln](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>Erstellen einer Dokumentlöschrichtlinie
 
@@ -114,7 +114,7 @@ Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung 
     
 2. Wählen Sie **Löschrichtlinien**aus.
     
-    ![Löschrichtlinien (Option)](media/IP-Deletion-Policies-option.png)
+    ![Löschrichtlinien (Option)](../media/IP-Deletion-Policies-option.png)
   
 3. Wählen Sie **Neues Element** aus.
     
@@ -132,7 +132,7 @@ Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung 
     
   - Wählen Sie, ob die Regel eine Standardregel ist. Die erste Regel, die Sie erstellen, wird automatisch als die Standardregel festgelegt. Eine Standardregel wird automatisch auf alle Bibliotheken auf den Websites angewendet, die die Richtlinie verwenden.
     
-![Seite "neue Löschregel"](media/IP-New-deletion-rule.png)
+![Seite "neue Löschregel"](../media/IP-New-deletion-rule.png)
   
 7. Klicken Sie auf **Speichern**.
     
@@ -143,7 +143,7 @@ Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung 
     > [!NOTE]
     > Wenn Sie eine Regel löschen und die Richtlinie keine Standardregel enthält, wird für diese Richtlinie keine Regel angewendet, d. h., es werden keine Dokumente gelöscht. 
   
-![Bestätigen, dass die Regel aus der Richtlinien Meldung entfernt wird](media/IP-Remove-rule-from-policy-message.png)
+![Bestätigen, dass die Regel aus der Richtlinien Meldung entfernt wird](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>Zuweisen der Dokumentlöschrichtlinie zu einer Vorlage für Websitesammlung
 
@@ -155,7 +155,7 @@ Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegeben
     
 2. Wählen Sie **Richtlinienzuweisungen für Vorlagen**.
     
-    ![Option "Richtlinienzuweisungen für Vorlagen"](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![Option "Richtlinienzuweisungen für Vorlagen"](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. Wählen Sie **Neues Element** aus.
     
@@ -168,7 +168,7 @@ Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegeben
     > [!NOTE]
     > Wenn Sie eine Richtlinie zu einer Vorlage für Websitesammlung zuweisen, wird die Richtlinie für bereits vorhandene Websitesammlungen, die aufgrund dieser Vorlage erstellt wurden, und für künftige Websitesammlungen verfügbar gemacht. 
   
-![Auswählen einer Vorlagenseite mit OneDrive-Option](media/IP-Choose-a-template.png)
+![Auswählen einer Vorlagenseite mit OneDrive-Option](../media/IP-Choose-a-template.png)
   
 5. Klicken Sie auf **Speichern**.
     
@@ -177,7 +177,7 @@ Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegeben
   
 6. Wählen Sie **Zugewiesene Richtlinien verwalten** und die zuzuweisenden Richtlinien aus, und legen Sie dann fest, ob eine Richtlinie die Standardrichtlinie sein soll. Wenn Sie eine Standardrichtlinie festlegen, wird die Richtlinie für alle Websites, die der Richtlinie zugewiesen wurden, automatisch aktiv, ohne dass der Websitebesitzer eine Aktion durchführen muss.
     
-    ![Seite "Richtlinien hinzufügen und verwalten"](media/IP-Add-and-manage-policies-page.png)
+    ![Seite "Richtlinien hinzufügen und verwalten"](../media/IP-Add-and-manage-policies-page.png)
   
 7. Klicken Sie auf **Speichern**.
     
@@ -197,7 +197,7 @@ Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegeben
     
 2. Wählen Sie **Richtlinienzuweisungen für Websitesammlungen**.
     
-    ![Richtlinienzuweisungen für Websitesammlungen (Option)](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![Richtlinienzuweisungen für Websitesammlungen (Option)](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. Wählen Sie **Neues Element** aus.
     
@@ -206,11 +206,11 @@ Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegeben
     > [!NOTE]
     > Jeder Websitesammlung kann immer nur ein Satz von Richtlinien zugewiesen werden. Wenn ein Fehler angezeigt wird, der besagt, dass dieser Websitesammlung bereits Richtlinien zugewiesen wurden, wählen Sie **"** \> der **Websitesammlung zuweisen** " aus, und wählen Sie eine Websitesammlung aus, um den bereits zugewiesenen Satz von Richtlinien anzuzeigen und zu verwalten. 
   
-![Auswählen einer Website Sammlungsseite](media/IP-Choose-a-site-collection-page.png)
+![Auswählen einer Website Sammlungsseite](../media/IP-Choose-a-site-collection-page.png)
   
 5. Wählen Sie **Zugewiesene Richtlinien verwalten** und die zuzuweisenden Richtlinien aus, und legen Sie dann fest, ob eine Richtlinie die Standardrichtlinie sein soll. Wenn Sie eine Standardrichtlinie festlegen, wird die Richtlinie für alle Websites, die der Richtlinie zugewiesen wurden, automatisch aktiv, ohne dass der Websitebesitzer eine Aktion durchführen muss.
     
-    ![Seite "Richtlinien hinzufügen und verwalten"](media/IP-Add-and-manage-policies-page.png)
+    ![Seite "Richtlinien hinzufügen und verwalten"](../media/IP-Add-and-manage-policies-page.png)
   
 6. Klicken Sie auf **Speichern**.
     
@@ -230,7 +230,7 @@ Wenn Sie eine Zuweisung löschen, werden die zugewiesenen Richtlinien nicht mehr
     
 3. Wählen Sie das Zuordnungselement aus, und klicken Sie auf **Element löschen**.
     
-    ![Befehl "Element löschen" für Richtlinienzuweisung](media/IP-Delete-policy-assignment.png)
+    ![Befehl "Element löschen" für Richtlinienzuweisung](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>Löschen einer Richtlinie
 
@@ -240,17 +240,17 @@ Eine verwendete Richtlinie kann nicht gelöscht werden. Bevor Sie eine Richtlini
     
 2. Wählen Sie * * Löschrichtlinien * * aus.
     
-    ![Löschrichtlinien (Option)](media/IP-Deletion-Policies-option.png)
+    ![Löschrichtlinien (Option)](../media/IP-Deletion-Policies-option.png)
   
 3. Wählen Sie die Richtlinie aus.
     
 4. Entfernen Sie auf \> der Register \> Karte Menü Band **Elemente** die **Richtlinie**.
     
-    ![Schaltfläche ' Richtlinie entfernen ' auf dem Menüband](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![Schaltfläche ' Richtlinie entfernen ' auf dem Menüband](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. Wenn die Richtlinie verwendet wird, werden Sie gefragt, ob Sie die Richtlinie aus allen Websitesammlungen entfernen möchten, in denen Sie verwendet wird. Wenn Sie sich sicher sind, wählen Sie **OK**.
     
-    ![Bestätigungsnachricht für die Richtlinie löschen](media/IP-Delete-policy-confirmation.png)
+    ![Bestätigungsnachricht für die Richtlinie löschen](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596192"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077727"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen eines Beweissicherungsverfahrens
 
@@ -33,7 +33,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
     
 - Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
     
@@ -44,7 +44,7 @@ Hier finden Sie die Schritte zum Aufbewahren eines Postfachs für das Beweissich
 
 1. Wechseln Sie [https://outlook.office.com/ecp](https://outlook.office.com/ecp) zu, und melden Sie sich mit ihrem globalen Administratorkonto an.
 
-2. Klicken Sie im linken Navigationsbereich auf **Empfänger #a0 Postfächer** .
+2. Klicken Sie im linken Navigationsbereich auf **Empfänger > Postfächer** .
 
 3. Wählen Sie das Postfach aus, das Sie in das Beweissicherungsverfahren einordnen möchten, und klicken Sie dann auf **Bearbeiten**.
 
@@ -86,7 +86,7 @@ Ist für das Postfach das Beweissicherungsverfahren aktiviert, werden die Elemen
 
 Die folgende Abbildung zeigt die Unterordner in den Ordnern „Wiederherstellbare Elemente" und den Aufbewahrungsworkflowprozess.
 
-![Lebenszyklus von Beweissicherungsverfahren](media/LitigationHoldLifeCycle.png)
+![Lebenszyklus von Beweissicherungsverfahren](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > Wenn ein Haltebereich, der einem eDiscovery-Fall zugeordnet ist, in einem Postfach abgelegt wird, werden gelöschte Elemente aus dem Unterordner "Deletions" in den Unterordner DiscoveryHolds verschoben und bleiben erhalten, bis das Postfach aus der eDiscovery-Aufbewahrungsstelle freigegeben wird.

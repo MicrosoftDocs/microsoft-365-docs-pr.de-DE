@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1c0f174b29d49ec1d07c128f709ee3279c1b53ef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a6bd4672c75e2e633ede2ad54effb4c6562b822c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594048"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080181"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Hinzufügen von Daten zu einem Überprüfungs Satzes aus einer anderen Überprüfungsgruppe
 
@@ -29,7 +29,7 @@ In einigen Fällen kann es erforderlich sein, Dokumente aus einer Überprüfungs
 
 Führen Sie den Workflow in diesem Artikel aus, um Inhalte aus einem Überprüfungs Satz zu einem anderen zu hinzufügen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Bevor Sie beginnen, müssen Sie eine neue Überprüfungsgruppe erstellen, der die Daten hinzugefügt werden sollen.  Auf der Registerkarte **Überprüfungs Sätze** der Groß-/Kleinschreibung kann ein neuer Überprüfungs Satz hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen eines Überprüfungs Satzes](managing-review-sets.md#create-a-review-set).
 
@@ -37,12 +37,12 @@ Bevor Sie beginnen, müssen Sie eine neue Überprüfungsgruppe erstellen, der di
 
 Sie können Inhalte aus einer Überprüfungsgruppe hinzufügen, indem Sie bestimmte Dokumente in der Quell Überprüfungsgruppe auswählen oder indem Sie alle Elemente auswählen, die von der Abfrage zur Überprüfungs Menge zurückgegeben werden. Wenn Sie ausgewählte Elemente hinzufügen, wählen Sie die Elemente aus, wählen Sie **Aktion**aus, und wählen Sie dann **zu einem anderen Überprüfungs Satzes hinzufügen**aus.
 
-![Zu einem anderen Überprüfungs Satzes hinzufügen](media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
+![Zu einem anderen Überprüfungs Satzes hinzufügen](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>Schritt 2: Angeben von Optionen für das Hinzufügen zu einer anderen Überprüfungsgruppe
 
 Wählen Sie auf der Flyout-Seite **Add to other Review Sets Options** die Überprüfungsgruppe aus, der Sie die Elemente hinzufügen möchten. Wählen Sie aus, ob **alle Suchergebnisse** oder **ausgewählten Elemente**hinzugefügt werden sollen.  **Zusätzliche Informationen** bieten Optionen zum Einschließen aller Metadaten aus den Elementen und zum Einschließen der Tags (durch Aktivieren des Kontrollkästchens **Beschriftungen** ) aus dem Quell Überprüfungs Satzes, wenn die Dokumente zum neuen Überprüfungs Sätzen hinzugefügt werden.  
 
-![Zu einem anderen Überprüfungs Satzes hinzufügen](media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
+![Zu einem anderen Überprüfungs Satzes hinzufügen](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
 Nachdem Sie auf **OK**geklickt haben, wird ein neuer Auftrag (mit dem Namen **Hinzufügen von Daten zu einem anderen Überprüfungs Sätze**) erstellt, um den Inhalt zu einem anderen Überprüfungs Satzes hinzuzufügen. Sie können auf die Registerkarte **Aufträge** wechseln und den Status dieses Auftrags überwachen. Weitere Informationen finden Sie unter [Manage Jobs](managing-jobs-ediscovery20.md).

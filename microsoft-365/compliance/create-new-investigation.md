@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ef84380e17757f96bdf66307595c92d85a335930
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596162"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077467"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 
@@ -49,4 +49,4 @@ ms.locfileid: "41596162"
 
     Die Registerkarte **Start** für die Untersuchung wird angezeigt. Hier ist beispielsweise eine neue Untersuchung mit dem Namen *Critical: Tax Document und Finance Data Leak*.
 
-    ![Die Registerkarte "Start" für eine neue Untersuchung in Daten Untersuchungen](media/NewDataInvestigations.png)
+    ![Die Registerkarte "Start" für eine neue Untersuchung in Daten Untersuchungen](../media/NewDataInvestigations.png)

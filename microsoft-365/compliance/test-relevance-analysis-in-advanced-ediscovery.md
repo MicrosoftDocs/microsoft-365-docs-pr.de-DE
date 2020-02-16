@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Erfahren Sie, wie Sie die Registerkarte "Test" nach der Batch Berechnung in Office 365 Advanced eDiscovery verwenden, um die Gesamtqualität der Verarbeitung zu testen, zu vergleichen und zu validieren.  '
-ms.openlocfilehash: 0931e0ea6aabfb9fbeca04973f17395d4f245f41
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e07d02a0eff1e07cacbce5debd27d4057fe40db2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597372"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080932"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Test Relevanz Analysis in Office 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Dieser Test enthält Statistiken und einen Vergleich zwischen dem Überprüfungs
     
 2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld zum **Erstellen eines Tests** wird angezeigt, wie im folgenden Beispiel dargestellt. 
     
-    ![Relevanz Testen der Rest-Ergebnisse](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Relevanz Testen der Rest-Ergebnisse](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. Geben Sie unter **Test Name**und **Beschreibung**den Namen und die Beschreibung ein.
     
@@ -66,7 +66,7 @@ Dieser Test enthält Statistiken und einen Vergleich zwischen dem Überprüfungs
     
 11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. In der folgenden Abbildung ist ein Beispiel dargestellt. 
     
-    ![Testen der Rest-Ergebnisse](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![Testen der Rest-Ergebnisse](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 In der obigen Abbildung enthält der Abschnitt " **Sample Parameters** " der Tabelle Details zur Anzahl der Dateien im Beispiel, die vom Experten markiert wurden, sowie die Anzahl relevanter Dateien, die in diesem Beispiel gefunden wurden. 
   

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595782"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078652"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Anmerkungen zur Version für Compliance-Manager (Vorschau)
 
@@ -44,7 +44,7 @@ Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microso
 
 In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorstehenden Versionen von Compliance-Manager behoben werden sollten.
 
-### <a name="compliance-score"></a>Compliancebewertung
+### <a name="compliance-score"></a>Compliance-Score
 
 - Bei Aktionselementen, die als " **nicht im Bereich**" gekennzeichnet sind, wird das dem Aktionselement zugewiesene Ergebnis nicht aus der Berechnung der Konformitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** markiert sind, verbessern nicht Ihre Konformitätsbewertung.
 
@@ -78,7 +78,7 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 - Archivierte Vorlagen sind bearbeitbar und sollten nicht bearbeitbar sein.
 - Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 
-### <a name="export"></a>Exportieren
+### <a name="export"></a>Export
 
 - Der Vorlagenexport in JSON schlägt fehl, wenn der Vorlagenstatus auf " **importiert** " oder " **Ausstehende Genehmigung**" festgelegt ist.
 

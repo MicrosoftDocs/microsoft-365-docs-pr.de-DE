@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Microsoft-Konformitäts Bewertungspunkten, die Organisationen dabei helfen, Risikobewertungen zu vereinfachen und zu automatisieren.
-ms.openlocfilehash: 81541c66f1bc1ec179faa0180b3135f9b623d319
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a71abba7b38bcf1e39073133f82abaedfc0d270
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595772"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078642"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft Compliance Score (Preview): häufig gestellte Fragen
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Fügen Sie die Ergebnisse einer Suche hinzu, die einem erweiterten eDiscovery-Fall zugeordnet ist. Elemente werden von Ihrem ursprünglichen Speicherort kopiert und in einen von Microsoft bereitgestellten Azure-Speicher Speicherort kopiert. Außerdem werden Elemente erneut indiziert, und Advanced eDiscovery führt die optische Zeichenerkennung für Bilddateien durch und lädt den Bild Text zur Überprüfung und Analyse hoch.
-ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594636"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080151"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
 
@@ -37,11 +37,11 @@ Wenn Sie die Ergebnisse einer Suche zu einem Überprüfungs Satz hinzufügen (di
 
 Klicken Sie zum Hinzufügen von Daten zu einem Überprüfungs Satzes auf der Registerkarte **Suchen** auf eine Suche, und klicken Sie dann auf der Flyout-Seite auf **zu überprüfende Ergebnisse hinzufügen** .
 
-![Hinzufügen von Daten zu einem Überprüfungs Satzes](media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+![Hinzufügen von Daten zu einem Überprüfungs Satzes](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
 
 Sie können zu einer vorhandenen Überprüfungsgruppe hinzufügen oder einen neuen Überprüfungs erstellen.  Wenn Sie zu einem neuen Überprüfungs Sätze hinzufügen, geben Sie den Namen an, und klicken Sie dann auf **Hinzufügen**.
 
-![Auswählen eines Überprüfungs Satzes](media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+![Auswählen eines Überprüfungs Satzes](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 Das Hinzufügen von Daten zu einem Überprüfungs Satzes ist ein langwieriger Prozess. Dieser Prozess umfasst das Sammeln von Elementen aus den ursprünglichen Datenquellen in Office 365 (beispielsweise von Postfächern und Websites), das Kopieren dieser Elemente in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet) und anschließendes Erneutes Indizieren der Elemente. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** überwachen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen. Klicken Sie nach Abschluss der Überarbeitungs Satzverarbeitung auf die Registerkarte **Überprüfungs Sätze** für den Fall, und klicken Sie auf den Überprüfungs Satz, um das Filtern, überprüfen, markieren und Exportieren von Daten in der Überprüfungsgruppe zu starten.
 

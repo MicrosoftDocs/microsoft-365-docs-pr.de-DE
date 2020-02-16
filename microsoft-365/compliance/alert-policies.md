@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen. Anschließend können Sie die Warnungen anzeigen und verwalten, die generiert werden, wenn Benutzeraktivitäten ausführen, die den Bedingungen einer Warnungs Richtlinie entsprechen.
-ms.openlocfilehash: 025bf927b194a7faa6357dbabc12a424fe3f3124
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a5ac38f30d42ceff67f982c6c9ac9b03507d34cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596102"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080022"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security and Compliance Center
 
@@ -37,9 +37,9 @@ Warnungsrichtlinien erstellen und erweitern die Funktionalität von Aktivitäts 
 
 Im folgenden finden Sie einen kurzen Überblick über die Funktionsweise von Warnungsrichtlinien und die Warnungen, die ausgelöst werden, wenn Benutzer-oder Administratoraktivitäten mit den Bedingungen einer Warnungs Richtlinie übereinstimmen.
 
-![Übersicht über die Funktionsweise von Warnungsrichtlinien](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Übersicht über die Funktionsweise von Warnungsrichtlinien](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
-1. Ein Administrator in Ihrer Organisation erstellt, konfiguriert und aktiviert eine Warnungs Richtlinie mithilfe der Seite " **Warnungsrichtlinien** " im Security and Compliance Center. Sie können auch Warnungsrichtlinien erstellen, indem Sie das **New-protectionalert können-** Cmdlet in Security #a0 Compliance Center PowerShell verwenden. Zum Erstellen von Warnungsrichtlinien müssen Sie im Security and Compliance Center die Rolle "Warnungen verwalten" oder "Organisationskonfiguration" zugewiesen haben.
+1. Ein Administrator in Ihrer Organisation erstellt, konfiguriert und aktiviert eine Warnungs Richtlinie mithilfe der Seite " **Warnungsrichtlinien** " im Security and Compliance Center. Sie können auch Warnungsrichtlinien erstellen, indem Sie das **New-protectionalert können-** Cmdlet in Security & Compliance Center PowerShell verwenden. Zum Erstellen von Warnungsrichtlinien müssen Sie im Security and Compliance Center die Rolle "Warnungen verwalten" oder "Organisationskonfiguration" zugewiesen haben.
 
 2. Ein Benutzer führt eine Aktivität aus, die mit den Bedingungen einer Warnungs Richtlinie übereinstimmt. Im Fall von Malwareangriffen lösen infizierte e-Mail-Nachrichten, die an Benutzer in Ihrer Organisation gesendet werden, eine Warnung aus.
 
@@ -53,7 +53,7 @@ Eine Warnungs Richtlinie besteht aus einer Reihe von Regeln und Bedingungen, die
 
 Wechseln Sie zum Anzeigen und Erstellen von Warnungsrichtlinien [https://protection.office.com](https://protection.office.com) zu **und wählen Sie Alerts Alert** \> **Policies**aus.
 
-![Wählen Sie im Security and Compliance Center Alerts aus, und wählen Sie dann Warnungsrichtlinien zum Anzeigen und Erstellen von Warnungsrichtlinien aus.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+![Wählen Sie im Security and Compliance Center Alerts aus, und wählen Sie dann Warnungsrichtlinien zum Anzeigen und Erstellen von Warnungsrichtlinien aus.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
 Eine Warnungs Richtlinie besteht aus den folgenden Einstellungen und Bedingungen.
 
@@ -66,7 +66,7 @@ Eine Warnungs Richtlinie besteht aus den folgenden Einstellungen und Bedingungen
 
 - **Wenn die Warnung ausgelöst wird** , können Sie eine Einstellung konfigurieren, die definiert, wie oft eine Aktivität auftreten kann, bevor eine Warnung ausgelöst wird. Auf diese Weise können Sie eine Richtlinie einrichten, um eine Warnung jedes Mal zu generieren, wenn eine Aktivität mit den Richtlinienbedingungen übereinstimmt, wenn ein bestimmter Schwellenwert überschritten wird oder wenn das Auftreten der Aktivität, die die Warnung verfolgt, für Ihre Organisation ungewöhnlich wird.
 
-    ![Konfigurieren, wie Warnungen ausgelöst werden, basierend auf der Aktivität, einem Schwellenwert oder einer ungewöhnlichen Aktivität für Ihre Organisation](media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Konfigurieren, wie Warnungen ausgelöst werden, basierend auf der Aktivität, einem Schwellenwert oder einer ungewöhnlichen Aktivität für Ihre Organisation](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
 
     Wenn Sie die Einstellung basierend auf ungewöhnlichen Aktivitäten auswählen, legt Office 365 einen Baselinewert fest, der die normale Häufigkeit für die ausgewählte Aktivität definiert. Es dauert bis zu sieben Tage, diesen Basisplan einzurichten, während dessen keine Benachrichtigungen generiert werden. Nachdem der Basisplan eingerichtet wurde, wird eine Warnung ausgelöst, wenn die von der Warnungs Richtlinie verfolgte Häufigkeit der Aktivität den Basis Wert erheblich überschreitet. Für Überwachungsbezogene Aktivitäten (beispielsweise Datei-und Ordner Aktivitäten) können Sie einen Basisplan basierend auf einem einzelnen Benutzer oder basierend auf allen Benutzern in Ihrer Organisation einrichten. bei Malware bezogenen Aktivitäten können Sie einen Basisplan basierend auf einer einzelnen Schadsoftware-Familie, einem einzelnen Empfänger oder allen Nachrichten in Ihrer Organisation einrichten.
 
@@ -127,7 +127,7 @@ In der Tabelle werden außerdem die Office 365 Enterprise und Office 365 US Gove
 |**Ungewöhnlicher Umfang der Dateilöschung**|Generiert eine Warnung, wenn eine ungewöhnlich große Anzahl von Dateien in SharePoint oder OneDrive innerhalb eines kurzen Zeitrahmens gelöscht wird. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf.|Information Governance|E5/G5, Office 365 ATP P2 oder Advanced Compliance Add-on-Abonnement|
 |**Ungewöhnlich höhere e-Mail-Zuwachs Meldung als Phishing**|Generiert eine Warnung, wenn sich die Anzahl der Personen in Ihrer Organisation mit dem Berichtsnachrichten-Add-in in Outlook erheblich erhöht, um Nachrichten als Phishing-e-Mails zu melden. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen zu diesem Add-in finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Bedrohungsverwaltung|E5/G5 oder Office 365 Add-on-Abonnement für ATP P2|
 |**Benutzeridentitätswechsel – Phishing im Posteingang/Ordner**<sup>1,</sup><sup>2</sup>|Generiert eine Warnung, wenn Office 365 erkennt, dass eine Administrator-oder Benutzer Überschreibung die Zustellung einer Phishing-Nachricht für den Benutzeridentitätswechsel in den Posteingang (oder einen anderen Benutzer zugänglichen Ordner) eines Postfachs zulässig ist. Beispiele für Außerkraftsetzungen sind ein Posteingang oder eine Nachrichtenfluss Regel, die Nachrichten von einem bestimmten Absender oder einer bestimmten Domäne oder eine Antispampolitik zulässt, die Nachrichten von bestimmten Absendern oder Domänen zulässt. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Office 365 Add-on-Abonnement für ATP P2|
-|**Benutzer vom Senden von e-Mails eingeschränkt**|Generiert eine Warnung, wenn jemand in Ihrer Organisation vom Senden von ausgehenden e-Mails eingeschränkt ist. Dies ergibt sich normalerweise, wenn ein Konto kompromittiert wird und der Benutzer auf der Seite " **eingeschränkte Benutzer** " im Security #a0 Compliance Center aufgeführt ist. (Um auf diese Seite zuzugreifen, wechseln Sie zu **Threat Management #a0 überprüfen #a1 eingeschränkten Benutzern**). Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen zu eingeschränkten Benutzern finden Sie unter [Entfernen eines Benutzers, einer Domäne oder einer IP-Adresse aus einer Sperrliste nach dem Senden von Spam-e-Mails](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
+|**Benutzer vom Senden von e-Mails eingeschränkt**|Generiert eine Warnung, wenn jemand in Ihrer Organisation vom Senden von ausgehenden e-Mails eingeschränkt ist. Dies ergibt sich normalerweise, wenn ein Konto kompromittiert wird und der Benutzer auf der Seite " **eingeschränkte Benutzer** " im Security & Compliance Center aufgeführt ist. (Um auf diese Seite zuzugreifen, wechseln Sie zu **Threat Management > überprüfen > eingeschränkten Benutzern**). Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen zu eingeschränkten Benutzern finden Sie unter [Entfernen eines Benutzers, einer Domäne oder einer IP-Adresse aus einer Sperrliste nach dem Senden von Spam-e-Mails](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
 |||||
 
 > [!NOTE]
@@ -141,7 +141,7 @@ Wenn eine von Benutzern in Ihrer Organisation ausgeführte Aktivität mit den Ei
 
 Um Warnungen anzuzeigen, wechseln Sie [https://protection.office.com](https://protection.office.com) zu und wählen Sie **Alerts** \> Benachrichtigungen **anzeigen**aus.
 
-![Wählen Sie in der Sicherheits-und Konformitätsstufe Warnungen aus, und wählen Sie Warnungen anzeigen aus, um Warnungen anzuzeigen.](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![Wählen Sie in der Sicherheits-und Konformitätsstufe Warnungen aus, und wählen Sie Warnungen anzeigen aus, um Warnungen anzuzeigen.](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
 Sie können die folgenden Filter verwenden, um eine Teilmenge aller Benachrichtigungen auf der Seite **Benachrichtigungen anzeigen** anzuzeigen.
 
@@ -159,7 +159,7 @@ Sie können die folgenden Filter verwenden, um eine Teilmenge aller Benachrichti
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Erforderliche RBAC-Berechtigungen zum Anzeigen von Warnungen
 
-Die Berechtigungen für die rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC), die Benutzern in Ihrer Organisation zugewiesen sind, bestimmen, welche Warnungen ein Benutzer auf der Seite **Benachrichtigungen anzeigen** sehen kann. Wie wird dies erreicht? Die Verwaltungsrollen, die Benutzern zugewiesen sind (basierend auf Ihrer Mitgliedschaft in Rollengruppen im Security #a0 Compliance Center), bestimmen, welche Warnungs Kategorien ein Benutzer auf der Seite **Benachrichtigungen anzeigen** sehen kann. Im Folgenden finden Sie einige Beispiele:
+Die Berechtigungen für die rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC), die Benutzern in Ihrer Organisation zugewiesen sind, bestimmen, welche Warnungen ein Benutzer auf der Seite **Benachrichtigungen anzeigen** sehen kann. Wie wird dies erreicht? Die Verwaltungsrollen, die Benutzern zugewiesen sind (basierend auf Ihrer Mitgliedschaft in Rollengruppen im Security & Compliance Center), bestimmen, welche Warnungs Kategorien ein Benutzer auf der Seite **Benachrichtigungen anzeigen** sehen kann. Im Folgenden finden Sie einige Beispiele:
 
 - Mitglieder der Rollengruppe "Datensatzverwaltung" können nur die Warnungen anzeigen, die von Warnungsrichtlinien generiert werden, denen die Kategorie " **Information Governance** " zugewiesen ist.
 
@@ -169,7 +169,7 @@ Die Berechtigungen für die rollenbasierte Zugriffssteuerung (Role Based Access 
 
 Mit diesem Entwurf (basierend auf RBAC-Berechtigungen) können Sie bestimmen, welche Warnungen von Benutzern in bestimmten Auftrags Rollen in Ihrer Organisation angezeigt (und verwaltet) werden können.
 
-In der folgenden Tabelle sind die Rollen aufgeführt, die zum Anzeigen von Warnungen aus den sechs verschiedenen Warnungs Kategorien erforderlich sind. In der ersten Spalte in den Tabellen werden alle Rollen im Security #a0 Compliance Center aufgeführt.  Ein Häkchen zeigt an, dass ein Benutzer, dem diese Rolle zugewiesen ist, Warnungen aus der entsprechenden Warnungskategorie anzeigen kann, die in der obersten Zeile aufgeführt ist.
+In der folgenden Tabelle sind die Rollen aufgeführt, die zum Anzeigen von Warnungen aus den sechs verschiedenen Warnungs Kategorien erforderlich sind. In der ersten Spalte in den Tabellen werden alle Rollen im Security & Compliance Center aufgeführt.  Ein Häkchen zeigt an, dass ein Benutzer, dem diese Rolle zugewiesen ist, Warnungen aus der entsprechenden Warnungskategorie anzeigen kann, die in der obersten Zeile aufgeführt ist.
 
 Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugewiesen ist, finden Sie in der Tabelle im Abschnitt [standardmäßige Warnungsrichtlinien](#default-alert-policies) .
 
@@ -177,36 +177,36 @@ Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugew
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Überwachungsprotokolle|||||||
 |Fallverwaltung|||||||
-|Complianceadministrator|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Complianceadministrator|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Compliance-Suche|||||||
 |Geräteverwaltung|||||||
 |Dispositionsverwaltung|||||||
-|DLP-Konformitätsverwaltung||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Exportieren|||||||
+|DLP-Konformitätsverwaltung||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Export|||||||
 |Hold|||||||
-|Benachrichtigungen verwalten||||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Organisationskonfiguration||||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Benachrichtigungen verwalten||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Organisationskonfiguration||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Vorschau|||||||
-|Datensatzverwaltung|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Aufbewahrungsverwaltung|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Datensatzverwaltung|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Aufbewahrungsverwaltung|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |Überprüfung|||||||
 |RMS-Entschlüsselung|||||||
-|Rollenverwaltung||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Rollenverwaltung||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |Suchen und löschen|||||||
-|Sicherheitsadministrator||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Sicherheitsleseberechtigter||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Sicherheitsadministrator||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Sicherheitsleseberechtigter||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Service Assurance-Ansicht|||||||
 |Aufsichts Überprüfungs Administrator|||||||
 |Überwachungsprotokolle nur anzeigen|||||||
 |Geräteverwaltung mit Ansichts Schutz|||||||
-|DLP-Konformitätsverwaltung mit Ansichts Schutz||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Benachrichtigungen nur anzeigen verwalten||||||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Schreibgeschützte Empfänger|||  ![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Datensatzverwaltung mit Ansichts Schutz|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Aufbewahrungsverwaltung mit Ansichts Schutz|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|DLP-Konformitätsverwaltung mit Ansichts Schutz||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Benachrichtigungen nur anzeigen verwalten||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Schreibgeschützte Empfänger|||  ![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|Datensatzverwaltung mit Ansichts Schutz|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Aufbewahrungsverwaltung mit Ansichts Schutz|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**Tipp:** Führen Sie die folgenden Befehle in Security #a0 Compliance Center PowerShell aus, um die Rollen anzuzeigen, die den einzelnen Standardrollengruppen zugewiesen sind:
+**Tipp:** Führen Sie die folgenden Befehle in Security & Compliance Center PowerShell aus, um die Rollen anzuzeigen, die den einzelnen Standardrollengruppen zugewiesen sind:
 
 ```PowerShell
 $RoleGroups = Get-RoleGroup
@@ -216,7 +216,7 @@ $RoleGroups = Get-RoleGroup
 $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 ```
 
-Sie können auch die einer Rollengruppe zugewiesenen Rollen im Security #a0 Compliance Center anzeigen. Wechseln Sie zur Seite **Berechtigungen** , und wählen Sie eine Rollengruppe aus. Die zugewiesenen Rollen werden auf der Flyout-Seite aufgelistet.
+Sie können auch die einer Rollengruppe zugewiesenen Rollen im Security & Compliance Center anzeigen. Wechseln Sie zur Seite **Berechtigungen** , und wählen Sie eine Rollengruppe aus. Die zugewiesenen Rollen werden auf der Flyout-Seite aufgelistet.
 
 ## <a name="managing-alerts"></a>Verwalten von Warnungen
 
@@ -246,15 +246,15 @@ Nachdem Benachrichtigungen generiert und auf der Seite **Benachrichtigungen anze
 
 Warnungen, die von Office 365-Cloud-App-Sicherheitsrichtlinien ausgelöst werden, werden jetzt auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center angezeigt. Dies umfasst Warnungen, die von Aktivitätsrichtlinien und Warnungen ausgelöst werden, die durch anomale Erkennungsrichtlinien in Office 365 Cloud-App-Sicherheit ausgelöst werden. Dies bedeutet, dass Sie alle Benachrichtigungen im Security and Compliance Center anzeigen können. Office 365 Cloud-App-Sicherheit ist nur für Organisationen mit einem Office 365 Enterprise E5-oder Office 365 US Government G5-Abonnement verfügbar. Weitere Informationen finden Sie unter [Overview of Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
-Organisationen mit Microsoft Cloud App Security als Teil eines Enterprise Mobility + Security E5-Abonnements oder als eigenständiger Dienst können auch Cloud App-Sicherheitswarnungen anzeigen, die im Zusammenhang mit Office 365-apps und-Diensten im Security #a0 Compliance Center stehen.
+Organisationen mit Microsoft Cloud App Security als Teil eines Enterprise Mobility + Security E5-Abonnements oder als eigenständiger Dienst können auch Cloud App-Sicherheitswarnungen anzeigen, die im Zusammenhang mit Office 365-apps und-Diensten im Security & Compliance Center stehen.
 
 Wenn Sie nur Cloud-App-Sicherheitswarnungen im Security and Compliance Center anzeigen möchten, verwenden Sie den **Quell** Filter, und wählen Sie **Cloud App Security**aus.
 
-![Verwenden des Quell Filters zum Anzeigen nur von Cloud-App-Sicherheitswarnungen](media/FilterCASAlerts.png)
+![Verwenden des Quell Filters zum Anzeigen nur von Cloud-App-Sicherheitswarnungen](../media/FilterCASAlerts.png)
 
 Ähnlich wie bei einer Warnung, die durch eine Warnungs Richtlinie im Security and Compliance Center ausgelöst wurde, können Sie eine Cloud-App-Sicherheitswarnung auswählen, um eine Flyout-Seite mit Details zur Warnung anzuzeigen. Die Benachrichtigung enthält einen Link zum Anzeigen der Details und zum Verwalten der Warnung im Cloud-App-Sicherheitsportal und einen Link zu der entsprechenden Cloud-App-Sicherheitsrichtlinie, die die Warnung ausgelöst hat. Weitere Informationen finden Sie unter [Monitor Alerts in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
-![Warnungsdetails enthalten Links zum Cloud-App-Sicherheitsportal](media/CASAlertDetail.png)
+![Warnungsdetails enthalten Links zum Cloud-App-Sicherheitsportal](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Wenn Sie den Status einer Cloud App-Sicherheitswarnung im Security and Compliance Center ändern, wird der Auflösungsstatus für dieselbe Warnung im Cloud App Security-Portal nicht aktualisiert. Wenn Sie beispielsweise den Status der Warnung im Security and Compliance Center als **aufgelöst** kennzeichnen, wird der Status der Warnung im Cloud-App-Sicherheitsportal unverändert. Um eine Cloud-App-Sicherheitswarnung aufzulösen oder zu schließen, verwalten Sie die Warnung im Cloud-App-Sicherheitsportal.

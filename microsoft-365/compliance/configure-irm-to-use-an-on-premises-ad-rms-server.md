@@ -16,12 +16,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert.
-ms.openlocfilehash: 9af8de571285843a994c943ef33baa2f5966b328
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9d1dee8ca0992f1e2f9cb344baba4f245d3ca37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078497"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
@@ -167,4 +167,4 @@ Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD und einer erfo
   
 - Verwenden Sie das Cmdlet **Test-IRMConfiguration**, um die Funktionalität von IRM zu überprüfen. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
 
-- Erstellen Sie eine neue Nachricht in Outlook im Internet und IRM-Protect, indem Sie im erweiterten Menü die Option **Berechtigungen festlegen** auswählen ( ![weitere Optionen](media/ITPro-EAC-MoreOptionsIcon.gif)).
+- Erstellen Sie eine neue Nachricht in Outlook im Internet und IRM-Protect, indem Sie im erweiterten Menü die Option **Berechtigungen festlegen** auswählen ( ![weitere Optionen](../media/ITPro-EAC-MoreOptionsIcon.gif)).

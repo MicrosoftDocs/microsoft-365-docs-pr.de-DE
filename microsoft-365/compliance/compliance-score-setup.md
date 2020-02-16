@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und das Dashboard für Microsoft Compliance Score verstehen, das die Vereinfachung und Automatisierung von Risikobewertungen erleichtert.
-ms.openlocfilehash: a97fa1c0598fcab1660d71581fed2be8dafe8911
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595752"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078612"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Der globale Administrator von Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf das Kompatibilitäts Ergebnis zugreift. Wenn Sie das Kompatibilitäts Ergebnis zum ersten Mal besuchen, empfehlen wir die globale Administratoranmeldung, und legen Sie die Benutzerberechtigungen fest, wie unten beschrieben.
 
@@ -50,10 +50,10 @@ In der folgenden Tabelle wird gezeigt, wie die einzelnen Rollen des Compliance-C
 | Benutzer kann Folgendes: | Microsoft 365 Compliance Center-Rolle | Compliance-Manager-Rolle | 
 | :------------- | :-------------: | :------------: |
 | **Lesen, aber nicht bearbeiten von Daten**| Azure AD globaler Leser  | Azure AD globaler Leser | 
-| **Lesen, aber nicht bearbeiten von Daten**| Sicherheitsleseberechtigter | Compliance-Manager-Leser  | 
-| **Bearbeiten von Daten**| Complianceadministrator | Compliance-Manager-Mitwirkender | 
-| **Bearbeiten von Testergebnissen**| Complianceadministrator | Auditor für Compliance-Manager | 
-| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Complianceadministrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
+| **Lesen, aber nicht bearbeiten von Daten**| Benutzer mit Leseberechtigung für Sicherheitsfunktionen | Compliance-Manager-Leser  | 
+| **Bearbeiten von Daten**| Compliance-Administrator | Compliance-Manager-Mitwirkender | 
+| **Bearbeiten von Testergebnissen**| Compliance-Administrator | Auditor für Compliance-Manager | 
+| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Compliance-Administrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
 | **Zuweisen von Benutzern**| Globaler Administrator | Portal Administrator | 
 
 > [!NOTE]
@@ -102,7 +102,7 @@ Weitere Informationen finden Sie unter [Manage Secure Score Updates](compliance-
 
 Das Compliance Score-Dashboard bietet Ihnen einen Überblick über Ihre aktuelle Compliance-Position.
 
-![Compliance Score-Dashboard](media/compliance-score-dashboard.png "Konformitäts Bewertungs Dashboard")
+![Compliance Score-Dashboard](../media/compliance-score-dashboard.png "Konformitäts Bewertungs Dashboard")
 
 ### <a name="overall-compliance-score"></a>Gesamtergebnis der Konformität
 

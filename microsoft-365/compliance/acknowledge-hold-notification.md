@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Möglicherweise müssen Sie die Verwalter über ihre Pflicht informieren, elektronisch gespeicherte Informationen im Rahmen der rechtlichen Untersuchung aufzubewahren. Mit Advanced eDiscovery können Sie den Aufbewahrungs Benachrichtigungsprozess ganz einfach verwalten.
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594068"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080276"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Bestätigen einer Aufbewahrungsbenachrichtigung
 
@@ -52,4 +52,4 @@ Basierend auf der Konfiguration ihrer rechtlichen Aufbewahrungs Benachrichtigung
 
 Zusätzlich zu den e-Mail-Benachrichtigungen hat jede Depotbank Zugriff auf ein einzigartiges Compliance-Portal. Über das Portal kann jeder depotverwalter seine aktiven Aufbewahrungs Benachrichtigungen anzeigen, darauf zugreifen und diese bestätigen.
 
-![Compliance-Portal für eine Depotstelle](media/CustodianPortal.jpg)
+![Compliance-Portal für eine Depotstelle](../media/CustodianPortal.jpg)

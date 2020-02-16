@@ -18,18 +18,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 02534cf9dcd342f0872e755aec622f8028b235f8
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784672"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078762"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
 ## <a name="policies"></a>Richtlinien
 
-Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Wenn Sie über eine Office 365 Organisation verfügen, [Konfigurieren Sie Aufsichtsrichtlinien](configure-supervision-policies.md) im Office 365 Security #a0 Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
+Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Wenn Sie über eine Office 365 Organisation verfügen, [Konfigurieren Sie Aufsichtsrichtlinien](configure-supervision-policies.md) im Office 365 Security & Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
 
 >[!NOTE]
 >Aufsichtsrichtlinien, die im Office 365 Security and Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
@@ -185,7 +185,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder definieren können:
 
-|**Feld**|**Required**| **Details** |
+|**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht an den Mitarbeiter mit einer Richtlinienübereinstimmung senden, die aus dem Active Directory für Ihr Abonnement ausgewählt wird. |
@@ -248,7 +248,7 @@ Für Kommunikations Konformitätsrichtlinien sind die folgenden Warnungsrichtlin
 >[!Note]
 >Die Einstellungen für den Warnungsrichtlinien Schwellenwert für Aktivitäten unterstützen einen Mindestwert von 3 oder höher für Kommunikationsrichtlinien.
 
-Sie können die Standardeinstellungen für Auslöser für die Anzahl der Aktivitäten, den Zeitraum für die Aktivitäten und für bestimmte Benutzer in Warnungsrichtlinien auf der Seite **Warnungsrichtlinien** im Office 365 Security #a0 Compliance Center ändern.
+Sie können die Standardeinstellungen für Auslöser für die Anzahl der Aktivitäten, den Zeitraum für die Aktivitäten und für bestimmte Benutzer in Warnungsrichtlinien auf der Seite **Warnungsrichtlinien** im Office 365 Security & Compliance Center ändern.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Ändern des Schweregrads für eine Warnungs Richtlinie
 
@@ -258,7 +258,7 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 
 2. Wechseln Sie im Microsoft 365 Compliance Center zu **Richtlinien**.
 
-3. Wählen Sie auf der Seite **Richtlinien** **Office 365 Benachrichtigung** aus, um die Seite **Warnungsrichtlinien** im **Office 365 Security #a0 Compliance Center**zu öffnen.
+3. Wählen Sie auf der Seite **Richtlinien** **Office 365 Benachrichtigung** aus, um die Seite **Warnungsrichtlinien** im **Office 365 Security & Compliance Center**zu öffnen.
 
 4. Aktivieren Sie das Kontrollkästchen für die Kommunikations Konformitätsrichtlinie, die Sie aktualisieren möchten, und wählen Sie dann **Richtlinie bearbeiten**aus.
 
@@ -277,7 +277,7 @@ In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Infor
 
 Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |
@@ -300,4 +300,4 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for your Microsoft 365 Organization (Preview)](communication-compliance-configure.md).
+Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for your Microsoft 365 Organization](communication-compliance-configure.md).

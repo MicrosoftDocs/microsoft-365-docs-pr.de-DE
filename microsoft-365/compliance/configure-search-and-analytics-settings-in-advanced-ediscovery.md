@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Konfigurieren Sie erweiterte eDiscovery-Einstellungen, die für alle Überprüfungs Sätze in einem Fall gelten. Dies umfasst Einstellungen für Analyse und OCR.
-ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595712"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078322"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
 
@@ -41,11 +41,11 @@ So konfigurieren Sie Such-und Analyse Einstellungen für einen Fall:
 
 1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus.
 
-2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Search #a0 Analytics**auf **auswählen**.
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Search & Analytics**auf **auswählen**.
 
    Die Seite Fall Einstellungen wird angezeigt. Diese Einstellungen werden in einem Fall auf alle Überprüfungs Sätze angewendet.
 
-   ![Konfigurieren von Analyse-und Sucheinstellungen für einen erweiterten eDiscovery-Fall](media/AeDCaseSettings.png)
+   ![Konfigurieren von Analyse-und Sucheinstellungen für einen erweiterten eDiscovery-Fall](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Nahe Duplikate und e-Mail-Threading
 
@@ -73,7 +73,7 @@ In diesem Abschnitt können Sie Parameter für Designs festlegen. Weitere Inform
 
 Wenn Sie das Kontrollkästchen **für Überprüfung gespeicherte Suche nach Analyse automatisch erstellen** aktivieren, wird Advanced eDiscovery autogenet Review Sets Query benannt **zur Überprüfung.** 
 
-![Die automatisch generierte Abfrage zur Überprüfung](media/AeDForReviewQuery.png)
+![Die automatisch generierte Abfrage zur Überprüfung](../media/AeDForReviewQuery.png)
 
 Diese Abfrage filtert im wesentlichen doppelte Elemente aus dem Überprüfungs Satzes. Auf diese Weise können Sie die eindeutigen Elemente in der Überprüfungsgruppe überprüfen. Diese Abfrage wird nur erstellt, wenn Sie Analytics für eine Überprüfungsgruppe in dem Fall ausführen. Weitere Informationen zum Überprüfen von Mengen Abfragen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
 

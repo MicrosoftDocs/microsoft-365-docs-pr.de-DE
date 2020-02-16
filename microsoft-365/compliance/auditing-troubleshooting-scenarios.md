@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können das Office 365 Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie das Untersuchen eines kompromittierten Kontos zu beheben, herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat, oder zu ermitteln, warum sich ein externer Benutzer erfolgreich bei Ihrer Organisation angemeldet hat.
-ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595972"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079157"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Office 365 Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
 
@@ -49,7 +49,7 @@ In diesem Abschnitt werden die Grundlagen für die Erstellung und Ausführung vo
     
     Die Seite **Überwachungsprotokollsuche** wird angezeigt. 
     
-    ![Konfigurieren Sie Kriterien, und wählen Sie dann suchen aus, um die Suche auszuführen.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Konfigurieren Sie Kriterien, und wählen Sie dann suchen aus, um die Suche auszuführen.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. Sie können die folgenden Suchkriterien konfigurieren. Jedes Problembehandlungsszenario in diesem Artikel empfiehlt spezielle Anleitungen zum Konfigurieren dieser Felder.
     
@@ -106,11 +106,11 @@ Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses S
 
 Nachdem Sie die Suche ausgeführt haben, wählen Sie auf der Suchergebnisseite **Filter Ergebnisse** aus. Geben Sie in das Feld unter **Aktivitäts** Spaltenkopf die **Option Satz-Postfach** ein, sodass nur Überwachungseinträge im Zusammenhang mit dem CmdletSet **-Mailbox** angezeigt werden.
 
-![Filtern der Ergebnisse einer Überwachungsprotokoll Suche](media/emailforwarding1.png)
+![Filtern der Ergebnisse einer Überwachungsprotokoll Suche](../media/emailforwarding1.png)
 
 An dieser Stelle müssen Sie sich die Details jedes Überwachungsdatensatzes ansehen, um zu ermitteln, ob die Aktivität mit der e-Mail-Weiterleitung zusammenhängt. Wählen Sie den Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen**aus. Im folgenden Screenshot und den Beschreibungen werden die Informationen hervorgehoben, die angeben, dass die e-Mail-Weiterleitung im Postfach festgelegt wurde.
 
-![Ausführliche Informationen aus dem Überwachungsprotokoll](media/emailforwarding2.png)
+![Ausführliche Informationen aus dem Überwachungsprotokoll](../media/emailforwarding2.png)
 
 a. Im Feld **objectID** wird der Alias des Postfachs, auf dem die e-Mail-Weiterleitung festgelegt wurde, angezeigt. Dieses Postfach wird auch in der Spalte **Element** auf der Suchergebnisseite angezeigt.
 
@@ -152,11 +152,11 @@ Nachdem Sie die Suche ausgeführt haben, können Sie die Suchergebnisse filtern,
 
 **Beispiel für ein AffectedItems-Feld für vorläufig gelöschtes Element**
 
-![Überwachungseintrag für vorläufig gelöschtes Element](media/softdeleteditem.png)
+![Überwachungseintrag für vorläufig gelöschtes Element](../media/softdeleteditem.png)
 
 **Beispiel für ein AffectedItems-Feld für das hart gelöschte Element**
 
-![Überwachungseintrag für das hart gelöschte e-Mail-Element](media/harddeleteditem.png)
+![Überwachungseintrag für das hart gelöschte e-Mail-Element](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>Wiederherstellen gelöschter e-Mail-Elemente
 
@@ -186,7 +186,7 @@ Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses S
 
 Nachdem Sie die Suche ausgeführt haben, werden alle Überwachungseinträge für diese Aktivität in den Suchergebnissen angezeigt. Wählen Sie einen Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen**aus. Im Feld **Parameter** werden Informationen zu den Einstellungen für Posteingangsregeln angezeigt. Im folgenden Screenshot und den Beschreibungen werden die Informationen zu Posteingangsregeln hervorgehoben.
 
-![Überwachungseintrag für neue Posteingangsregel](media/NewInboxRuleRecord.png)
+![Überwachungseintrag für neue Posteingangsregel](../media/NewInboxRuleRecord.png)
 
 a. Im Feld **objectID** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (beispielsweise "Sarad") und den Namen der Posteingangsregel (beispielsweise "Nachrichten von Administrator verschieben").
 
@@ -207,7 +207,7 @@ Dieses Verhalten ist so beabsichtigt. Azure Active Directory (Azure AD), der Ver
 
 Im folgenden finden Sie ein Beispiel und Beschreibungen relevanter Eigenschaften in einem Überwachungseintrag für einen **angemeldeten Benutzer** , der ein Ergebnis der Pass-Through-Authentifizierung ist. Wählen Sie den Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen**aus.
 
-![Beispiel für einen Überwachungseintrag für die erfolgreiche Pass-Through-Authentifizierung](media/PassThroughAuth1.png)
+![Beispiel für einen Überwachungseintrag für die erfolgreiche Pass-Through-Authentifizierung](../media/PassThroughAuth1.png)
 
    a. Dieses Feld gibt an, dass der Benutzer, der versucht hat, auf eine Ressource in Ihrer Organisation zuzugreifen, nicht im Azure AD Ihrer Organisation gefunden wurde.
 
@@ -232,7 +232,7 @@ Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Thr
 
 - Durchsuchen Sie das Überwachungsprotokoll nach Aktivitäten, die von dem externen Benutzer ausgeführt werden, der im Überwachungseintrag für **angemeldete Benutzer** angegeben ist. Geben Sie den UPN für den externen Benutzer in das Feld **Benutzer** ein, und verwenden Sie einen Datumsbereich, falls relevant für Ihr Szenario. Sie können beispielsweise eine Suche mit den folgenden Suchkriterien erstellen:
 
-   ![Suchen nach allen Aktivitäten, die vom externen Benutzer ausgeführt werden](media/PassThroughAuth2.png)
+   ![Suchen nach allen Aktivitäten, die vom externen Benutzer ausgeführt werden](../media/PassThroughAuth2.png)
 
     Zusätzlich zu den **in Aktivitäten angemeldeten Benutzern** werden möglicherweise andere Überwachungseinträge zurückgegeben, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen mit dem externen Benutzer freigegeben hat und ob der externe Benutzer ein Dokument, das für Sie freigegeben wurde, aufgerufen, geändert oder heruntergeladen hat.
 

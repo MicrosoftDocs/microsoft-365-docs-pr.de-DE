@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Verwenden Sie die CSV-Datei "results. csv" oder "nicht indexierte Elemente" aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die eine bestimmte e-Mail-Nachricht zurückgibt. ID-Listen suchen werden normalerweise verwendet, um teilweise indizierte Postfachelemente zurückzugeben.
-ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595522"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077017"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Vorbereiten einer CSV-Datei für eine ID-Listeninhalts Suche in Office 365
 
@@ -27,7 +27,7 @@ Sie können mithilfe einer Liste von Exchange-IDs nach bestimmten Post Fachnachr
 
 Im folgenden finden Sie eine kurze Übersicht über den Prozess zum Erstellen einer ID-Listensuche.
 
-1. Erstellen Sie eine neue oder geführte Inhaltssuche im Security #a0 Compliance Center, und führen Sie Sie aus.
+1. Erstellen Sie eine neue oder geführte Inhaltssuche im Security & Compliance Center, und führen Sie Sie aus.
 
 2. Exportieren Sie die Inhalts Suchergebnisse, oder exportieren Sie den Bericht zur Inhaltssuche. Weitere Informationen finden Sie unter:
 
@@ -65,7 +65,7 @@ Beachten Sie, dass Sie eine CSV-Datei aus einer Suche verwenden können, die Sha
 
     Im folgenden finden Sie ein Beispiel für eine CSV-Datei, die für eine ID-Listeninhalts Suche gesendet werden kann.
 
-    ![Beispiel für eine CSV-Datei für eine gezielte Inhaltssuche](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![Beispiel für eine CSV-Datei für eine gezielte Inhaltssuche](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. Speichern Sie die CSV-Datei, oder **Speichern Sie die** Datei unter anderem Dateinamen speichern. In beiden Fällen müssen Sie die Datei im CSV-Format speichern.
 
@@ -76,11 +76,11 @@ Im nächsten Schritt erstellen Sie eine neue ID-Listeninhalts Suche und übermit
 > [!IMPORTANT]
 > Sie sollten eine ID-Listensuche nicht länger als 2 Tage nach dem Exportieren der Ergebnisse oder des Berichts aus einer Inhaltssuche erstellen. Wenn die Suchergebnisse oder der Bericht vor mehr als 2 Tagen exportiert wurden, sollten Sie die Suchergebnisse oder den Bericht erneut exportieren, um aktualisierte CSV-Dateien zu generieren. Anschließend können Sie eine der aktualisierten CSV-Dateien vorbereiten und Sie zum Erstellen einer ID-Listensuche verwenden.
 
-1. Wechseln Sie im Security #a0 Compliance Center zu **Such** \> **Inhaltssuche**.
+1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**.
 
-2. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![Symbol](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen, und klicken Sie dann auf **nach ID-Liste suchen**.
+2. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![Symbol](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen, und klicken Sie dann auf **nach ID-Liste suchen**.
 
-    ![Klicken Sie in der Dropdownliste neue Suche auf nach ID-Liste suchen.](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![Klicken Sie in der Dropdownliste neue Suche auf nach ID-Liste suchen.](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. Geben Sie im Flyout **Suche nach ID-Liste** den Namen der Suche ein (und beschreiben Sie Sie optional), und klicken Sie dann auf **Durchsuchen** , und wählen Sie dann die CSV-Datei aus, die Sie im vorherigen Schritt vorbereitet haben.
 
@@ -90,7 +90,7 @@ Im nächsten Schritt erstellen Sie eine neue ID-Listeninhalts Suche und übermit
 
     Im folgenden finden Sie ein Beispiel für die geschätzten Suchergebnisse und die Abfrage, die für eine ID-Listensuche generiert wurde.
 
-    ![Suchabfrage für eine gezielte Inhaltssuche im Detailbereich](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![Suchabfrage für eine gezielte Inhaltssuche im Detailbereich](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     Beachten Sie, dass die Anzahl der geschätzten Elemente, die in Statistik für die ID-Suche angezeigt werden, mit der Anzahl der Elemente übereinstimmen sollte, die Sie in der CSV-Datei ausgewählt haben.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Office 365 Advanced eDiscovery, einschließlich nahe Dubletten, e-Mail-Threads und Designs.  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597462"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081156"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Festlegen von Analyseoptionen in Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ Legen Sie in Advanced eDiscovery die Analyseoptionen vor der Ausführung von ANA
 
 Öffnen **Sie \> Prepare analyze** \> **Setup**. Das folgende Fenster wird angezeigt.
   
-![Festlegen von Analyseoptionen](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![Festlegen von Analyseoptionen](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **Nahe Duplikate und e-Mail-Threads** Aktivieren Sie dieses Kontrollkästchen, wenn Sie die Analyse ausführen möchten. Diese Option ist standardmäßig aktiviert. 
   
@@ -51,11 +51,11 @@ Legen Sie in Advanced eDiscovery die Analyseoptionen vor der Ausführung von ANA
     
     Wenn beispielsweise das vorgeschlagene Wort "Computer" lautet und Sie "2" als "maximale Anzahl von Designs" angegeben haben, versucht Advanced eDiscovery, zwei Designs zu generieren, die sich auf das Wort "Computer" beziehen. Die beiden Themen können beispielsweise "Computer Software" und "Computer Hardware" lauten. 
     
-    ![Hinzufügen eines vorgeschlagenen Designs](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Hinzufügen eines vorgeschlagenen Designs](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. Wenn Sie vorgeschlagene Designs anzeigen, hinzufügen oder bearbeiten möchten, klicken Sie auf **ändern**.
     
-2. Klicken Sie im Bereich **vorgeschlagene Designs** **auf das** ![Symbol Add Icon](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) hinzufügen, um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagenes Design hinzufügen** die Wörter hinzu, getrennt durch Kommas. 
+2. Klicken Sie im Bereich **vorgeschlagene Designs** **auf das** ![Symbol Add Icon](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) hinzufügen, um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagenes Design hinzufügen** die Wörter hinzu, getrennt durch Kommas. 
     
 3. Wählen Sie unter **Anzahl der Designs**einen Wert aus, um die Anzahl der Designs zu ermitteln, die Advanced eDiscovery für diese Wörter zu generieren versucht (Standard ist 1 Design).
     

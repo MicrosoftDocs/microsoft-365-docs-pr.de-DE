@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie eine Relevanz-Schulung in Office 365 Advanced eDiscovery durchführen.  '
-ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601462"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081096"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Einrichten von Lasten zum Hinzufügen importierter Dateien in Office 365 Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Alle importierten Dateien müssen zu einer Last hinzugefügt werden, die in Adva
   
 1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten**aus.
     
-    ![Registerkarte "Relevanz-Setup lädt"](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![Registerkarte "Relevanz-Setup lädt"](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **Dateien einschließen**: Wählen Sie eine Option für Dateien aus, die eingeschlossen werden sollen. Standardmäßig basiert das Hinzufügen von Dateien zur aktuellen Last auf der Auffüllung "alle Dateien".
     

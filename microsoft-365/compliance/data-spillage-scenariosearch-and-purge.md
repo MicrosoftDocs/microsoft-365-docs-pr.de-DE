@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie Office 365 eDiscovery-und Such Tools, um einen Vorfall zur Verschütten von Daten in Ihrer Organisation zu verwalten und zu reagieren.
-ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c143095ecd26d2a9c8f2271b9d28f75b1c71502c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595402"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076315"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung
 
@@ -37,7 +37,7 @@ Dieses Dokument enthält eine Liste mit Anweisungen zum endgültigen Entfernen e
 
 Hier erfahren Sie, wie Sie einen Vorfall mit Datenüberlauf verwalten:
 
-![Der 8-stufige Workflow zum Verwalten von Ereignissen mit Verschütten von Daten](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![Der 8-stufige Workflow zum Verwalten von Ereignissen mit Verschütten von Daten](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [Optional Schritt 1: Verwalten der Benutzer, die auf den Fall zugreifen und Compliance-Grenzen festlegen können](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Schritt 2: Erstellen eines eDiscovery-Falls](#step-2-create-an-ediscovery-case)<br/>
@@ -62,7 +62,7 @@ Hier erfahren Sie, wie Sie einen Vorfall mit Datenüberlauf verwalten:
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Optional Schritt 1: Verwalten der Benutzer, die auf den Fall zugreifen und Compliance-Grenzen festlegen können
 
-Je nach ihrer organisatorischen Vorgehensweise müssen Sie steuern, wer auf den eDiscovery-Fall zugreifen kann, der zur Untersuchung von Datenüberlauf Ereignissen und zum Einrichten von Compliance-Grenzen verwendet wird. Die einfachste Möglichkeit besteht darin, Ermittler als Mitglieder einer vorhandenen Rollengruppe im Security #a0 Compliance Center hinzuzufügen und die Rollengruppe dann als Mitglied des eDiscovery-Falls hinzuzufügen. Informationen zu den integrierten eDiscovery-Rollengruppen und zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
+Je nach ihrer organisatorischen Vorgehensweise müssen Sie steuern, wer auf den eDiscovery-Fall zugreifen kann, der zur Untersuchung von Datenüberlauf Ereignissen und zum Einrichten von Compliance-Grenzen verwendet wird. Die einfachste Möglichkeit besteht darin, Ermittler als Mitglieder einer vorhandenen Rollengruppe im Security & Compliance Center hinzuzufügen und die Rollengruppe dann als Mitglied des eDiscovery-Falls hinzuzufügen. Informationen zu den integrierten eDiscovery-Rollengruppen und zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
   
 Sie können auch eine neue Rollengruppe erstellen, die an Ihren organisatorischen Anforderungen ausgerichtet ist. Beispielsweise können Sie eine Gruppe von Daten verschüttenden Ermittlern in der Organisation für den Zugriff auf und die Zusammenarbeit bei allen Fällen von Daten verschütten möchten. Hierzu erstellen Sie eine Rollengruppe "Daten verschüttender Prüfer", indem Sie die entsprechenden Rollen zuweisen (exportieren, RMS-entschlüsseln, überprüfen, Vorschau, kompatibilitätssuche und Fallverwaltung) und die Daten verschüttende Ermittler zur Rollengruppe hinzufügen und dann die Rollengruppe als Mitglied des eDiscovery-Fall Daten Verschüttens. Ausführliche Anweisungen zur Vorgehensweise finden Sie unter [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](tagging-and-assessment-in-advanced-ediscovery.md) . 
   
@@ -96,11 +96,11 @@ Nachdem Sie die Suchergebnisse überprüft haben, möchten Sie möglicherweise I
   
 1. Wechseln Sie zur **Suchseite im** eDiscovery-Fall, und klicken Sie auf die Suche, für die Sie einen Bericht generieren möchten. 
     
-2. Klicken Sie auf der Seite Flyout auf **Weitere #a0 Bericht exportieren**.
+2. Klicken Sie auf der Seite Flyout auf **Weitere > Bericht exportieren**.
  
       Die Seite Bericht exportieren wird angezeigt.
 
-    ![Wählen Sie die Suche aus, und klicken Sie dann auf der Flyout-Seite auf Weitere #a0 Bericht exportieren.](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Wählen Sie die Suche aus, und klicken Sie dann auf der Flyout-Seite auf Weitere > Bericht exportieren.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Wählen Sie **alle Elemente aus, einschließlich derer, die nicht erkanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert** wurden, und klicken Sie dann auf **Bericht erstellen**.
 
@@ -108,7 +108,7 @@ Nachdem Sie die Suchergebnisse überprüft haben, möchten Sie möglicherweise I
 
 5. Klicken Sie auf den Exportauftrag, und klicken Sie dann auf der Flyout-Seite auf Bericht **herunterladen** .
  
-    ![Klicken Sie auf der Seite exportieren auf exportieren, und klicken Sie dann auf "Bericht herunterladen".](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![Klicken Sie auf der Seite exportieren auf exportieren, und klicken Sie dann auf "Bericht herunterladen".](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 Der Bericht " **Zusammenfassung exportieren** " enthält die Anzahl der gefundenen Speicherorte mit Ergebnissen und der Größe der Suchergebnisse. Sie können dies verwenden, um mit dem Bericht zu vergleichen, der nach dem Löschen generiert wurde, und als Nachweis für die Löschung anzugeben. Der Bericht **Ergebnisse** enthält eine detailliertere Zusammenfassung der Suchergebnisse, einschließlich Betreff, Absender, Empfänger, wenn die e-Mail gelesen wurde, Daten und die Größe der einzelnen Nachrichten. Wenn eine der Details in diesem Bericht die tatsächlich verschütteten Daten enthält, müssen Sie die CSV-Datei "Results" nach Abschluss der Untersuchung endgültig löschen.
 
@@ -122,7 +122,7 @@ Sie können die Nachrichtenablaufverfolgung im Security and Compliance Center ve
   
 - [Nachrichtenablaufverfolgung im Security & Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Neue Nachrichtenablaufverfolgung im Security #a0 Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Neue Nachrichtenablaufverfolgung im Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Schritt 6: Vorbereiten der Postfächer
 
@@ -142,7 +142,7 @@ Es gibt zwei Möglichkeiten, eine Liste der e-Mail-Adressen von Postfächern mit
     
 4. Klicken Sie in der Dropdownliste **Typ** auf **obere Standorte**.
     
-    ![Abrufen einer Liste von Postfächern, die Suchergebnisse auf der Seite "Top-Standorte" in den Suchstatistiken enthalten](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Abrufen einer Liste von Postfächern, die Suchergebnisse auf der Seite "Top-Standorte" in den Suchstatistiken enthalten](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     Eine Liste mit Postfächern, die Suchergebnisse enthalten, wird angezeigt. Die Anzahl der Elemente in jedem Postfach, die mit der Suchabfrage übereinstimmen, wird ebenfalls angezeigt.
     
@@ -172,7 +172,7 @@ Stellen Sie sicher, dass das Postfach auf frühere Konfigurationen zurückgesetz
 
 Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage zum Auffinden von e-Mail-Nachrichten, die die verschütteten Daten enthalten, können Sie nun die verschütteten Daten endgültig löschen.  Wie bereits erläutert, müssen Sie ein Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rolle Search and Purge Management zugewiesen sein, um Nachrichten zu löschen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 #a0 3 unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 & 3 unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, stellen Sie einen Nachweis für die Löschung bereit, und überwachen
 
@@ -190,7 +190,7 @@ Wenn die Schlüsselwörter in der Suchabfrage, die Sie in Schritt 3 erstellt und
     
 2. Klicken Sie auf der Seite Flyout auf **Löschen**.
 
-    ![Wählen Sie die Suche aus, und klicken Sie dann auf der Flyout-Seite auf Löschen.](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Wählen Sie die Suche aus, und klicken Sie dann auf der Flyout-Seite auf Löschen.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Überwachen des Ermittlungsprozesses für Datenüberlauf
 

@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: d0bd5411e99471ff326906f65747ec7a6f841545
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596202"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078292"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
 >[!IMPORTANT]
->Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Office 365 Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).
+>Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Office 365 Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365](communication-compliance-configure.md).
 
 Verwenden Sie Aufsichtsrichtlinien zum Erfassen von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zum Überwachen der Kommunikation in Ihrer Organisation mithilfe von Aufsichtsrichtlinien finden Sie unter [Aufsichtsrichtlinien in Office 365](supervision-policies.md).
 
@@ -149,7 +149,7 @@ Verwenden Sie einen Text-Editor (wie Notepad), um eine Datei zu erstellen, die d
 
 ### <a name="create-custom-sensitive-information-types"></a>Erstellen benutzerdefinierter vertraulicher Informationstypen
 
-1. Erstellen Sie einen neuen Typ für vertrauliche Informationen, und fügen Sie Ihr Benutzerwörterbuch im Office 365 Security #a0 Compliance Center hinzu. Navigieren Sie zu **Klassifikationen** \> **vertrauliche Informationstypen** , und führen Sie die Schritte im **Assistenten für neue vertrauliche Informationen**aus. Hier finden Sie:
+1. Erstellen Sie einen neuen Typ für vertrauliche Informationen, und fügen Sie Ihr Benutzerwörterbuch im Office 365 Security & Compliance Center hinzu. Navigieren Sie zu **Klassifikationen** \> **vertrauliche Informationstypen** , und führen Sie die Schritte im **Assistenten für neue vertrauliche Informationen**aus. Hier finden Sie:
 
     - Definieren eines Namens und einer Beschreibung für den Typ vertraulicher Informationen
     - Definieren der Nähe, Konfidenz Stufe und primärer Musterelemente

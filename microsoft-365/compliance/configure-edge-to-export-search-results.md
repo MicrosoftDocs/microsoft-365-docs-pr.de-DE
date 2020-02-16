@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Sie müssen die ClickOnce-Unterstützung aktivieren, um Microsoft Edge zum Exportieren von Suchergebnissen aus der Inhaltssuche und von eDiscovery im Security and Compliance Center zu verwenden.
-ms.openlocfilehash: 896d39d81fa56b3a118b2bee450476e422ac3921
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595732"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078570"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Verwenden des Office 365 eDiscovery-Export Tools in Microsoft Edge
 
@@ -30,29 +30,29 @@ Aufgrund der letzten Änderungen an Microsoft Edge ist die ClickOnce-Unterstütz
 
 2. Wenn der vorhandene Wert in der Dropdownliste auf **Standard** oder **deaktiviert** festgelegt ist, ändern Sie ihn in **aktiviert**.
     
-   ![](media/ClickOnceimage1.png)
+   ![](../media/ClickOnceimage1.png)
 
 3. Scrollen Sie nach unten zum Browserfenster, und klicken Sie auf **neu** starten, um Edge neu zu starten.
 
-   ![](media/ClickOnceimage2.png)
+   ![](../media/ClickOnceimage2.png)
 
 **Hinweis:** Organisationen können mithilfe von Gruppenrichtlinien die ClickOnce-Unterstützung deaktivieren. Um zu überprüfen, ob eine Organisationsrichtlinie für die ClickOnce-Unterstützung vorhanden ist, navigieren Sie zu **Edge://Policy**. Der folgende Screenshot zeigt, dass ClickOnce in der gesamten Organisation aktiviert ist. Wenn dieser Richtlinienwert auf **false**festgelegt ist, müssen Sie einen Administrator in Ihrer Organisation kontaktieren.
 
-![](media/ClickOnceimage3.png)
+![](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>Installieren und Ausführen des Office 365 eDiscovery-Export Tools
 
 1. Klicken Sie auf der Flyout-Seite eines Exports in Inhaltssuche oder eines eDiscovery-Falls auf " **Ergebnisse herunterladen** ".
 
-   ![Klicken Sie auf der Flyout-Seite auf Download Ergebnisse, um Suchergebnisse herunterzuladen.](media/ClickOnceExport1.png)
+   ![Klicken Sie auf der Flyout-Seite auf Download Ergebnisse, um Suchergebnisse herunterzuladen.](../media/ClickOnceExport1.png)
 
 2. Sie werden mit einer Bestätigung aufgefordert, das Tool zu starten, indem Sie auf **Öffnen**klicken.
 
-   ![Klicken Sie auf öffnen, um das eDiscovery-Export Tool zu starten](media/ClickOnceimage4.png)
+   ![Klicken Sie auf öffnen, um das eDiscovery-Export Tool zu starten](../media/ClickOnceimage4.png)
 
    Wenn das Microsoft Office-eDiscovery-Export Tool 365 nicht installiert ist, werden Sie mit einer Sicherheitswarnung aufgefordert, 
 
-   ![Klicken Sie auf installieren, um das eDiscovery-Export Tool zu installieren](media/ClickOnceimage5.png)
+   ![Klicken Sie auf installieren, um das eDiscovery-Export Tool zu installieren](../media/ClickOnceimage5.png)
 
 3. Klicken Sie auf **Installieren**. Nachdem die Installation erfolgt ist, wird das Export Tool automatisch gestartet.
 

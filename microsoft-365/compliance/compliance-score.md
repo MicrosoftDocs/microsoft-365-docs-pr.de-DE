@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Score unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
-ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078520"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft-Konformitätsbewertung (Vorschau)
 
@@ -39,7 +39,7 @@ Wenn Sie den [Compliance-Manager](compliance-manager-overview.md)derzeit verwend
 
 Die Hauptseite der Kompatibilitätsbewertung ist Ihr benutzerdefiniertes Dashboard. Es zeigt Ihre aktuelle Punktzahl, hilft Ihnen zu sehen, was Aufmerksamkeit benötigt, und führt Sie zu Aktionen zur Verbesserung ihrer Gäste. Das Dashboard für die Konformitätsbewertung sieht wie folgt aus:
 
-![Compliance Score-Dashboard](media/compliance-score-dashboard.png "Konformitäts Bewertungs Dashboard")
+![Compliance Score-Dashboard](../media/compliance-score-dashboard.png "Konformitäts Bewertungs Dashboard")
 
 ### <a name="simplified-compliance-management"></a>Vereinfachte Compliance-Verwaltung
 
@@ -75,7 +75,7 @@ Erfahren Sie mehr darüber [, wie Ihr Konformitäts Bewertungspunkt berechnet un
 
 Compliance Score verwendet mehrere Komponenten, die Sie bei der Verwaltung Ihrer Compliance-Aktivitäten unterstützen. Wenn Sie die Konformitätsbewertung verwenden, um Compliance-Aktivitäten zuzuweisen, zu testen und zu überwachen, ist es hilfreich, ein grundlegendes Verständnis dieser wichtigen Komponenten zu haben. Dieses Diagramm zeigt die Beziehungen zwischen diesen:
 
-![Beziehungen in Compliance-Manager, Version 3](media/compliance-manager-relationships.png "Kompatibilitäts Bewertungspunkte – Komponenten")
+![Beziehungen in Compliance-Manager, Version 3](../media/compliance-manager-relationships.png "Kompatibilitäts Bewertungspunkte – Komponenten")
 
 ### <a name="controls"></a>Steuerelemente
 

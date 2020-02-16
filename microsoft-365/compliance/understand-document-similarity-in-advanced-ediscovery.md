@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Lesen Sie, wie der Ähnlichkeitswert von Dokumenten, die minimale Ähnlichkeit zweier Dateien, die als nahe Duplikate betrachtet werden müssen, in Office 365 Advanced eDiscovery funktioniert. '
-ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597332"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080770"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Grundlegendes zur Ähnlichkeit von Dokumenten in Office 365 Advanced eDiscovery
 
@@ -44,11 +44,11 @@ Das Dokument F1 ähnelt jedoch möglicherweise dem Dokument F3 auf einer Ebene v
   
 Die Ähnlichkeits Grade werden wie folgt dargestellt:
   
-![Dokument Ähnlichkeit](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![Dokument Ähnlichkeit](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 Es wird davon ausgegangen, dass ein anderes Dokument, x1, jetzt eingefügt wird. Die Ähnlichkeit zwischen x1 und E3 beträgt 87%. Ähnlich ist die Ähnlichkeit zwischen x1 und F1 92%. Dadurch werden EquiSet-1, EquiSet-2 und x1 nun zu einem ND-Paket zusammengefasst.
   
-![Dokument Ähnlichkeit](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![Dokument Ähnlichkeit](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > Wenn zwei Dokumente einem ND-Satz zugewiesen werden, bleiben Sie in demselben ND-Satz zusammen, auch wenn dem Satz zusätzliche Dokumente hinzugefügt werden oder wenn die Sätze zusammengeführt werden. 

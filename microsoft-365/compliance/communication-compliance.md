@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661941"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078692"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -61,7 +61,7 @@ Communication Compliance in Microsoft 365 baut auf den Features von [Aufsichtsri
 - Flexible Korrektur Workflows
 - Umsetzbare Einblicke
 
-![Homepage zur Kommunikation-Compliance-Startseite](media/communication-compliance-home.png)
+![Homepage zur Kommunikation-Compliance-Startseite](../media/communication-compliance-home.png)
 
 ### <a name="intelligent-customizable-templates"></a>Intelligente anpassbare Vorlagen
 
@@ -108,7 +108,7 @@ Die Kommunikations Konformität hilft Ihnen bei der Behandlung von Problemen, di
 
 Zum Identifizieren und Beheben von Kompatibilitätsproblemen mit der Kommunikations Kompatibilität in Microsoft 365 wird der folgende Workflow verwendet:
 
-![Workflow für die Kommunikations Konformität](media/communication-compliance-workflow.png)
+![Workflow für die Kommunikations Konformität](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>Konfigurieren
 
@@ -153,4 +153,4 @@ Das Nachverfolgen und Verwalten von Compliance-Problemen, die durch Kommunikatio
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for Microsoft 365 (Preview)](communication-compliance-configure.md).
+Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for Microsoft 365](communication-compliance-configure.md).

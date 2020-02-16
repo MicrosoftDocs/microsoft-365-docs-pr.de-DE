@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie Stichwörter und Bedingungen, um den Umfang der Suche einzuschränken, wenn Sie mithilfe von Advanced eDiscovery in Microsoft 365 nach Daten suchen.
-ms.openlocfilehash: 7a6d175016053cd963b03cae91ff43f9c4b3336c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c704b338600c715193829e442e1bd6ba7c780455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596292"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079042"
 ---
 # <a name="build-search-queries"></a>Erstellen von Suchabfragen
 
 Beim Erstellen von Suchabfragen können Sie Schlüsselwörter verwenden, um bestimmte Inhalte und Bedingungen zu finden, um den Umfang der Suche einzuschränken, um Elemente zurückzugeben, die für ihre rechtliche Untersuchung am relevantesten sind.
 
-![Verwenden von Stichwörtern und Bedingungen zum Einschränken der Ergebnisse einer Suche](media/SearchQueryBox.png)
+![Verwenden von Stichwörtern und Bedingungen zum Einschränken der Ergebnisse einer Suche](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Stichwortsuche
 
@@ -35,7 +35,7 @@ Geben Sie eine Stichwortabfrage in das Feld **Schlüsselwörter** in der Suchabf
     
 Alternativ können Sie das Kontrollkästchen **Schlüsselwort Liste anzeigen** aktivieren und in jeder Zeile einen Stichwort-oder stichwortausdruck eingeben. Wenn Sie dies tun, werden die Schlüsselwörter in jeder Zeile durch einen logischen Operator (der in der Suchabfrage Syntax als *c:s* dargestellt wird) verbunden, der in der Funktionalität des **or** -Operators in der erstellten Suchabfrage ähnelt. Dies bedeutet, dass Elemente, die ein beliebiges Schlüsselwort in einer beliebigen Zeile enthalten, in den Suchergebnissen enthalten sind.
 
-![Verwenden der Stichwortliste zum Abrufen von Statistiken zu jedem Stichwort in der Abfrage](media/KeywordListSearch.png)
+![Verwenden der Stichwortliste zum Abrufen von Statistiken zu jedem Stichwort in der Abfrage](../media/KeywordListSearch.png)
 
 Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente in der Stichwortliste mit jedem Stichwort übereinstimmen. Dies kann Ihnen helfen, schnell die Schlüsselwörter zu identifizieren, die am häufigsten (und am wenigsten) effektiv sind. Sie können auch eine Stichwort Phrase (umgeben von Klammern) in einer Zeile in der Liste Stichwörter verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Suchstatistiken](search-statistics.md).
 

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informationen zum Verfügbarkeits Schlüssel, der zum Wiederherstellen von verloren gegangenen Office 365 Kunden Schlüsseln verwendet wird.
-ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862085"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076950"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Informationen zum Verfügbarkeits Schlüssel für Office 365 Kundenschlüssel
 
@@ -175,11 +175,11 @@ Exchange Online und Skype for Business verwenden den Verfügbarkeits Schlüssel 
 
 Protokolldatensätze umfassen Attribute wie Datum, Uhrzeit, Aktivität, Organisations-ID und Daten Verschlüsselungsrichtlinien-ID. Der Datensatz ist im Rahmen Office 365 einheitlichen Überwachungsprotokollen verfügbar und kann über die Registerkarte Suche im Office 365 Security and Compliance Center-Überwachungsprotokoll abgerufen werden.
 
-![Überwachungsprotokoll Suche nach Verfügbarkeits Schlüsselereignissen](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![Überwachungsprotokoll Suche nach Verfügbarkeits Schlüsselereignissen](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange Online-und Skype for Business-Verfügbarkeits Schlüsseleinträge verwenden das [allgemeine Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) der Office 365-Verwaltungsaktivität mit hinzugefügten benutzerdefinierten Parametern: Richtlinien-ID, Versions-ID des Bereichs Schlüssels und Anforderungs-ID.
 
-![Benutzerdefinierte Parameter für den Verfügbarkeits Schlüssel](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![Benutzerdefinierte Parameter für den Verfügbarkeits Schlüssel](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Datei Verfügbarkeits Schlüsselprotokollierung
 
@@ -195,11 +195,11 @@ Office 365 verwendet den Verfügbarkeits Schlüssel, um die Schlüssel Ebene tie
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Verschlüsselungs Chiffren, die zum Verschlüsseln von Schlüsseln für Exchange Online und Skype for Business verwendet werden
 
-![Verschlüsselungs Chiffren für Exchange Online Kundenschlüssel](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Verschlüsselungs Chiffren für Exchange Online Kundenschlüssel](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>Verschlüsselungs Chiffren, die zum Verschlüsseln von Schlüsseln für SharePoint Online und OneDrive für Unternehmen verwendet werden
 
-![Verschlüsselungs Chiffren für SharePoint Online Kundenschlüssel](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Verschlüsselungs Chiffren für SharePoint Online Kundenschlüssel](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

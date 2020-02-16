@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: a57fd1f1e079424f1494acc4b8944534c30359b2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661872"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081072"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -34,7 +34,7 @@ Mithilfe dieser Richtlinien können Sie auch viele moderne Anforderungen an die 
 
 - Überwachen der zunehmenden Typen von Kommunikationskanälen
 - Die zunehmende Menge an Nachrichtendaten
-- Regulatorische Durchsetzung #a0 das Risiko von Geldbußen
+- Regulatorische Durchsetzung & das Risiko von Geldbußen
 
 In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Office 365 unterstützt die Trennung zwischen der Konfiguration von Aufsichtsrichtlinien Features und der Konfiguration von Richtlinien für aufgezeichnete Kommunikationen. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
 
@@ -42,7 +42,7 @@ Eine kurze Übersicht über Aufsichtsrichtlinien finden Sie im [Video zur Aufsic
 
 Weitere Informationen zu Verbesserungen und Verfügbarkeit der Überwachungsfunktionen finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-Möchten Sie die neue Erfahrung mit der Kommunikations Konformität in Microsoft 365 testen? Sehen Sie sich die neuen und verbesserten Features an, die in [Communication Compliance in Microsoft 365 (Preview)](communication-compliance.md)zur Verfügung stehen.
+Möchten Sie die neue Erfahrung mit der Kommunikations Konformität in Microsoft 365 testen? Sehen Sie sich die neuen und verbesserten Features an, die in [Communication Compliance in Microsoft 365](communication-compliance.md)zur Verfügung stehen.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
 
@@ -196,7 +196,7 @@ Wenn Sie mehrere Bedingungen eingeben, verwendet Office 365 alle Bedingungen zus
 
 Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die einer Aufsichtsrichtlinie unterliegt. Aus dem Gesamtprozentsatz des Inhalts, der den ausgewählten Richtlinienbedingungen entspricht, wird ein Zufalls Beispiel für eine echt Zeitauswahl ausgewählt. Wenn Bearbeiter alle Elemente überprüfen möchten, können Sie in einer Aufsichtsrichtlinie **100%** eingeben.
 
-## <a name="monitor--manage"></a>Überwachen der #a0 verwalten
+## <a name="monitor--manage"></a>Überwachen der & verwalten
 
 Es ist einfach, die Ergebnisse ihrer Aufsichtsrichtlinien zu überwachen und ein Auflösungs-Tag anzuwenden. Sie können schnell sehen:
 

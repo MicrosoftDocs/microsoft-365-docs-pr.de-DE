@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn Unternehmensseite nach Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Kompatibilität der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596022"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079632"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Einrichten eines Connectors zum Archivieren von LinkedIn-Daten
 
@@ -45,13 +45,13 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
 
    Die LinkedIn-Anmeldeseite wird angezeigt.
 
-   ![LinkedIn Anmeldeseite](media/LinkedInSigninPage.png)
+   ![LinkedIn Anmeldeseite](../media/LinkedInSigninPage.png)
 
 5. Geben Sie auf der Seite LinkedIn anmelden die e-Mail-Adresse (oder Telefonnummer) und das Kennwort für das LinkedIn-Konto ein, das der Unternehmensseite zugeordnet ist, die Sie archivieren möchten, und klicken Sie dann auf **Anmelden**.
 
    Eine Assistentenseite wird mit einer Liste aller LinkedIn Unternehmensseiten angezeigt, die dem Konto zugeordnet sind, mit dem Sie sich angemeldet haben. Ein Connector kann nur für eine Unternehmensseite konfiguriert werden. Wenn Ihre Organisation über mehrere LinkedIn Unternehmensseiten verfügt, müssen Sie für jeden eine Verbindung erstellen.
 
-   ![Eine Seite mit einer Liste von LinkedIn Unternehmensseiten wird angezeigt](media/LinkedInSelectCompanyPage.png)
+   ![Eine Seite mit einer Liste von LinkedIn Unternehmensseiten wird angezeigt](../media/LinkedInSelectCompanyPage.png)
 
 6. Wählen Sie die Unternehmensseite aus, von der Sie Elemente archivieren möchten, und klicken Sie dann auf **weiter**.
 

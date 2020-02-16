@@ -16,21 +16,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: 'Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security #a0 Compliance Center in Office 365.'
-ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security & Compliance Center in Office 365.
+ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595572"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077199"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
- Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie sich mit den zugrunde liegenden Daten und dem Umfang und der Qualität Ihrer Suche vertraut machen möchten. Dazu bietet die Security #a0 Compliance Center PowerShell eine Reihe von Cmdlets zum Automatisieren zeitaufwändiger Inhalts Suchaufgaben. Diese Skripts bieten eine schnelle und einfache Möglichkeit zum Erstellen einer Reihe von Suchvorgängen und führen dann Berichte der geschätzten Suchergebnisse aus, mit denen Sie die Menge der fraglichen Daten bestimmen können. Sie können die Skripts auch verwenden, um verschiedene Versionen von Suchvorgängen zu erstellen, um die Ergebnisse zu vergleichen, die von jedem erstellt werden. Diese Skripts können Ihnen dabei helfen, Ihre Daten schnell und effizient zu identifizieren und zu pflücken. 
+ Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie sich mit den zugrunde liegenden Daten und dem Umfang und der Qualität Ihrer Suche vertraut machen möchten. Dazu bietet die Security & Compliance Center PowerShell eine Reihe von Cmdlets zum Automatisieren zeitaufwändiger Inhalts Suchaufgaben. Diese Skripts bieten eine schnelle und einfache Möglichkeit zum Erstellen einer Reihe von Suchvorgängen und führen dann Berichte der geschätzten Suchergebnisse aus, mit denen Sie die Menge der fraglichen Daten bestimmen können. Sie können die Skripts auch verwenden, um verschiedene Versionen von Suchvorgängen zu erstellen, um die Ergebnisse zu vergleichen, die von jedem erstellt werden. Diese Skripts können Ihnen dabei helfen, Ihre Daten schnell und effizient zu identifizieren und zu pflücken. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
-- Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security #a0 Compliance Center sein, um die in diesem Thema beschriebenen Skripts auszuführen. 
+- Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center sein, um die in diesem Thema beschriebenen Skripts auszuführen. 
     
 - Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehmen Websites in Ihrer Organisation, die Sie der CSV-Datei in Schritt 1 hinzufügen können, finden Sie unter [Erstellen einer Liste mit allen OneDrive-Speicherorten in Ihrer Organisation](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
     
@@ -72,7 +72,7 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center-PowerShell
 
-Im nächsten Schritt stellen Sie eine Verbindung mit der Security #a0 Compliance Center PowerShell für Ihre Organisation her.
+Im nächsten Schritt stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell für Ihre Organisation her.
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `ConnectSCC.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die CSV-Datei in Schritt 1 gespeichert haben.
     
@@ -191,7 +191,7 @@ So führen Sie das Skript aus
     
     Das Skript zeigt den Fortschritt beim Erstellen und Ausführen der Suchvorgänge an. Wenn das Skript abgeschlossen ist, wird es an die Eingabeaufforderung zurückgegeben. 
     
-    ![Beispielausgabe aus dem Ausführen des Skripts zum Erstellen mehrerer Kompatibilitäts Suchvorgänge](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![Beispielausgabe aus dem Ausführen des Skripts zum Erstellen mehrerer Kompatibilitäts Suchvorgänge](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Schritt 4: Ausführen des Skripts zum Melden der Such Schätzungen
 
@@ -266,7 +266,7 @@ Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin
     
     Das Skript zeigt den Fortschritt beim Erstellen und Ausführen der Suchvorgänge an. Wenn das Skript abgeschlossen ist, wird der Bericht angezeigt. 
     
-    ![Ausführen des Suchberichts zum Anzeigen der Schätzungen für die suchgruppe](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![Ausführen des Suchberichts zum Anzeigen der Schätzungen für die suchgruppe](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > Wenn das gleiche Postfach oder die gleiche Website als Inhaltsspeicherort in mehreren Suchergebnissen in einer suchgruppe angegeben ist, kann die Gesamtergebnis Schätzung im Bericht (sowohl für die Anzahl der Elemente als auch für die Gesamtgröße) Ergebnisse für dieselben Elemente enthalten. Das liegt daran, dass die gleiche e-Mail-Nachricht oder das gleiche Dokument mehr als einmal gezählt wird, wenn Sie mit der Abfrage für unterschiedliche Suchvorgänge in der suchgruppe übereinstimmt. 
@@ -301,4 +301,4 @@ Da Sie vielleicht viele Suchvorgänge erstellen, vereinfacht dieses letzte Skrip
     
     Das Skript zeigt den Namen jeder gelöschten Suche an.
     
-    ![Ausführen des Skripts zum Löschen der Suchvorgänge in der Gruppe "Suche"](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![Ausführen des Skripts zum Löschen der Suchvorgänge in der Gruppe "Suche"](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

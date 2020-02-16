@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 verfügt über eine Reihe von einsatzfähigen Computer Lern-Klassifizierungen, mit denen Sie Inhalte in Ihrer Organisation identifizieren und bezeichnen können. In diesem Thema wird erläutert, wie Sie diese bereit für die Verwendung von Klassifizierungen vorbereiten.
-ms.openlocfilehash: c6659bc32131948c57ad0bf7c8e3a30fbce125d9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595892"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078792"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
 
@@ -61,7 +61,7 @@ Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispielda
 
 9. Wählen `Apply label to content that matches a trainable classifier`Sie aus.
 
-![Auswählen der Klassifizierung als Bedingung](media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+![Auswählen der Klassifizierung als Bedingung](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
 10. Wählen Sie Ihre Klassifizierung aus der Liste aus, in diesem Fall`Source Code`
 

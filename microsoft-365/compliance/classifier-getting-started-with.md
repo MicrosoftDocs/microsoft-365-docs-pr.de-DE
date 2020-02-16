@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722026"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078814"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
 
@@ -74,7 +74,7 @@ Microsoft 365 ist mit sechs einsatzfähigen Klassifizierungen ausgestattet:
 
 Diese werden in der Ansicht " **Microsoft 365 Compliance Center** > **-Datenklassifizierung (Preview)** > "**trainable Klassifizierers** " `Ready to use`mit dem Status" angezeigt.
 
-![Klassifizierungen – einsatzfertige Klassifizierungen](media/classifiers-ready-to-use-classifiers.png)
+![Klassifizierungen – einsatzfertige Klassifizierungen](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Bitte beachten Sie, dass die beleidigende Sprache, Belästigung, Profanität und Bedrohungs Klassifizierungen nur mit durchsuchbarem Text funktionieren, die nicht erschöpfend oder vollständig sind.  Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von anstößigen und anderen Sprachen unterstützen können, befassen sich die Klassifizierungsverfahren nicht mit den Folgen dieser Sprache und dienen nicht dazu, die alleinigen Möglichkeiten Ihrer Organisation zur Überwachung oder Reaktion auf die Verwendung von zu bieten. solche Sprache. Ihre Organisation und nicht Microsoft oder ihre Niederlassungen bleiben für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Sperrung, Entfernung und Aufbewahrung von Inhalten, die von einer vorab ausgebildeten Klassifizierung identifiziert werden, verantwortlich.
@@ -83,7 +83,7 @@ Diese werden in der Ansicht " **Microsoft 365 Compliance Center** > **-Datenklas
 
 Bereit für die Verwendung von Klassifizierungen müssen Sie nicht geschult werden, Sie müssen jedoch sicherstellen, dass Sie die Inhaltstypen identifizieren, die Sie benötigen, bevor Sie Sie in Compliance-Lösungen verwenden können. Das Testen einer vorab ausgebildeten Klassifizierung folgt diesem Fluss.
 
-![Prozessfluss Test einer vorab ausgebildeten Klassifizierung](media/classifier-pre-trained-classifier-flow.png)
+![Prozessfluss Test einer vorab ausgebildeten Klassifizierung](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Grundlegendes zu Schulungs Klassifizierern
 
@@ -96,7 +96,7 @@ Wenn die verwendungsfähigen Klassifizierungen nicht Ihren Anforderungen entspre
 
 Das Erstellen und Veröffentlichen einer Schulungs Klassifizierer zur Verwendung in Compliance-Lösungen wie Aufbewahrungsrichtlinien und Kommunikationsüberwachung folgt diesem Fluss. Weitere Informationen zum Erstellen einer lernbaren Klassifizierung finden Sie unter [Creating a trainable Klassifizierer](classifier-creating-a-trainable-classifier.md).
 
-![Prozessablauf-schulungsable-Klassifizierung](media/classifier-trainable-classifier-flow.png)
+![Prozessablauf-schulungsable-Klassifizierung](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>Siehe auch
 
