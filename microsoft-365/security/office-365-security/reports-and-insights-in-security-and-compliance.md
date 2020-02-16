@@ -17,12 +17,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Hier erhalten Sie eine Übersicht über Berichte und Einblicke &amp; in avialable im Security Compliance Center.
-ms.openlocfilehash: edbc4cd53b5cd830996220c875a1b48565a96c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c205350ef57514c434ac75fae21c104a2c1706e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598562"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088144"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Intelligente Berichte und Einblicke im Office 365 &amp; Security Compliance Center
 
@@ -32,7 +32,7 @@ Wenn Sie zum Office 365 Sicherheitsteam Ihrer Organisation gehören und über di
 
 Die im Office 365 Security &amp; Compliance Center verfügbaren Überwachungsfunktionen umfassen intelligente Berichte und Einblicke, mit denen sich Ihre Sicherheits-und Compliance-Administratoren auf Probleme mit hoher Priorität konzentrieren können, beispielsweise Sicherheitsangriffe oder erhöhte verdächtige Aktivitäten. In einem Dashboard ähneln Smart Reports und Insights dem folgenden Bild:
   
-![Wählen Sie im &amp; Security Compliance Center die Option \> Berichte-Dashboard aus.](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![Wählen Sie im &amp; Security Compliance Center die Option \> Berichte-Dashboard aus.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 Neben der Hervorhebung von Problembereichen enthalten Smart Reports und Einblicke auch Empfehlungen und Links zum Anzeigen und Durchsuchen von Daten sowie zum Ausführen von schnell Aktionen. Wenn in Ihrer Organisation beispielsweise plötzlich eine große Anzahl von e-Mail-Nachrichten von Endbenutzern als Spam gekennzeichnet wird, empfiehlt es sich, Ihre Anti-Spam-Richtlinien erneut zu überprüfen, um sicherzustellen, dass die richtige Schutzebene vorhanden ist.
   

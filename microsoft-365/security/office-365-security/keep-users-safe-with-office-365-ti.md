@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen Ihrer Organisation dabei helfen können, Eindringlinge und Bedrohungen zu erkennen und Bedrohungen schnell zu verringern und wiederherzustellen.
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599102"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088672"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Schützen Ihrer Organisation mit Office 365 Ermittlungs-und Reaktionsfunktionen für Bedrohungen
 
@@ -35,7 +35,7 @@ Wissen Sie, welche Ihrer Office 365 Benutzer angegriffen oder schlechter gefähr
 
 Der Explorer unterstützt Administratoren auch beim Navigieren in den Beziehungen zwischen Benutzern und e-Mails. Kennen Sie eine bestimmte e-Mail-Nachricht, die schlecht war? Suchen Sie danach, um zu sehen, welche Benutzer die e-Mail erhalten haben, und verfolgen Sie dann die Reihe von Ereignissen, und sehen Sie, was diese Benutzer wiederum getan haben.
 
-![Screenshot des Threat-Explorers in Office 365, farblich codiert von der Malware-Familie](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Screenshot des Threat-Explorers in Office 365, farblich codiert von der Malware-Familie](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>Schnelles verringern und Wiederherstellen von Bedrohungen
 
@@ -43,7 +43,7 @@ Sobald Sicherheitsadministratoren verdächtige oder böswillige Ereignisse in Ih
 
  **Update:** Die Möglichkeit zum Löschen von e-Mail-Nachrichten (Soft oder Hard Delete) direkt aus dem Vorfall Framework wurde hinzugefügt. Zuvor konnten Administratoren nur e-Mails in den Junk-Ordner eines Benutzers migrieren, in dem Benutzer das Element wiederherstellen konnten. Mit den neu veröffentlichten Löschfunktionen können Sie nun sicherstellen, dass eine böswillige oder unerwünschte e-Mail-Nachricht dauerhaft entfernt wird.
 
-![Screenshot der e-Mail-Liste der Vorfall Korrektur](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Screenshot der e-Mail-Liste der Vorfall Korrektur](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Nutzen der Bedrohungs-Telemetrie von Microsoft
 

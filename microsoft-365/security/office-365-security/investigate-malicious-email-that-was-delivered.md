@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: 2f61860178de78302d6fb94309ff01127ac5ce33
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5fe9e06a582d72b46c4f90f13aee283050a06253
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784727"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088712"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen und beheben schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -51,7 +51,7 @@ Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenk
 |Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails     |Globaler Office 365-Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau   |   Ja      |
 
 > [!NOTE]
-> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der Office 365 globalen Administrator Rolle wird das Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Office 365 Security #a0 Compliance Center ([https://protection.office.com](https://protection.office.com)) zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der Office 365 globalen Administrator Rolle wird das Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Suchen und löschen verdächtiger e-Mails, die zugestellt wurden
 
@@ -61,13 +61,13 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
 2. Klicken Sie in der linken Navigations Schnellstartleiste auf **Threat Management** \> **Explorer**.
 
-    ![Explorer mit Felder Zustellungs Aktion und Zustellungs Speicherort.](../media/ThreatExFields.PNG)
+    ![Explorer mit Felder Zustellungs Aktion und Zustellungs Speicherort.](../../media/ThreatExFields.PNG)
 
     <!-- You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.-->
 
 3. **Ansichten im Bedrohungs-Explorer**: Wählen Sie im Menü **Ansicht** die Option **alle e-Mails**aus.
 
-    ![Threat Explorer-Menü "Ansicht" und e-Mail-Schadsoftware, Phishing, Übermittlungen und alle e-Mail-Optionen, auch Inhalts-Schadsoftware.](../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![Threat Explorer-Menü "Ansicht" und e-Mail-Schadsoftware, Phishing, Übermittlungen und alle e-Mail-Optionen, auch Inhalts-Schadsoftware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
     Die *Malware* -Ansicht ist derzeit die Standardeinstellung und erfasst e-Mails, bei denen eine Malwarebedrohung erkannt wird. Die *Phishing* -Ansicht funktioniert auf die gleiche Weise, für Phishing.
 
@@ -86,11 +86,11 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
    Die erweiterte Filterung ist eine hervorragende Ergänzung der Suchfunktionen. Ein boolescher **Not** -Filter wurde für die *Empfänger*-, *Absender* -und *Absenderdomäne* eingeführt, um Administratoren die Untersuchung durch Ausschließen von Werten zu ermöglichen. Diese Option wird unter Selection Parameter *Contains None of*angezeigt. **Not** lässt zu, dass Administratoren Warnungs Postfächer, standardmäßige Antwort Postfächer aus ihren Untersuchungen ausschließen, und ist nützlich für Fälle, in denen Administratoren nach einem bestimmten Betreff suchen (Subject = "ATTENTION"), wobei der Empfänger auf *keines von defaultMail@contoso.com*festgelegt werden kann. Dies ist eine exakte Wert Suche.
 
-   ![Die Empfänger-"enthält keinen der erweiterten Filter".](../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   ![Die Empfänger-"enthält keinen der erweiterten Filter".](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
    Das *Filtern nach Stunden* hilft dem Sicherheitsteam Ihres Unternehmens schnell. Die kürzeste zulässige Dauer beträgt 30 Minuten. Wenn Sie die verdächtige Aktion mit einem Zeitrahmen eingrenzen können (beispielsweise vor 3 Std.), wird dadurch der Kontext eingeschränkt und das Problem gezielt identifiziert.
 
-  ![Die Option nach Stunden filtern, um die Anzahl der zu verarbeitenden Daten Sicherheitsteams einzuschränken und deren kürzeste Dauer 30 Minuten beträgt.](../media/tp-InvestigateMalEmail-FilterbyHours.png)
+  ![Die Option nach Stunden filtern, um die Anzahl der zu verarbeitenden Daten Sicherheitsteams einzuschränken und deren kürzeste Dauer 30 Minuten beträgt.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
 6. **Fields in Threat Explorer**: Threat Explorer macht viel mehr sicherheitsbezogene e-Mail-Informationen wie *Zustellungs Aktionen*, *Zustellungsorte*, *spezielle Aktionen*, *Richtungs*-, *Außerkraftsetzungen*und *URL-Bedrohungen*verfügbar. Außerdem kann das Sicherheitsteam Ihrer Organisation mit höherer Sicherheit untersucht werden. 
 
@@ -189,31 +189,31 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
 4. In the **View** menu, choose **All email**.
 
-    ![Use the View menu to choose between Email and Content reports](../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+    ![Use the View menu to choose between Email and Content reports](../../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
-    ![Threat Explorer showing data for all email](../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+    ![Threat Explorer showing data for all email](../../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
     
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
     
 5. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
-    ![Clicking "Delivered to junk" removes that data from view](../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+    ![Clicking "Delivered to junk" removes that data from view](../../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
 6. Below the chart, review the **Email** list below the chart.
 
-    ![Below the chart, view a list of email messages that were detected](../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+    ![Below the chart, view a list of email messages that were detected](../../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
 7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
-    ![You can view additional information about an item](../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+    ![You can view additional information about an item](../../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
     
 9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
-    ![When you select one or more email messages, you can choose from several available actions](../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+    ![When you select one or more email messages, you can choose from several available actions](../../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
 
 ## Dealing with suspicious email messages
 
@@ -243,7 +243,7 @@ To access your message header and email download options, follow these steps:
 
     This opens the flyout, where both header preview and email download links are positioned.
 
-    ![Threat Explorer flyout with download and preview links on the page.](../media/ThreatExplorerDownloadandPreview.PNG)
+    ![Threat Explorer flyout with download and preview links on the page.](../../media/ThreatExplorerDownloadandPreview.PNG)
 
 > [!IMPORTANT]
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.

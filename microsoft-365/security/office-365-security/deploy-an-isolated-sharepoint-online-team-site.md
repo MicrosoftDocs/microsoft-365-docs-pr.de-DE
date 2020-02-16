@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
-ms.openlocfilehash: c49b8d2d0c69f76f284061e21c8be31ee2204a54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599522"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088796"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -89,7 +89,7 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
   
 Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen.
   
-![Die drei Zugriffsgruppen für die Bereitstellung einer isolierten SharePoint Online-Website.](../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![Die drei Zugriffsgruppen für die Bereitstellung einer isolierten SharePoint Online-Website.](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Schritt 5: Hinzufügen der Benutzerkonten zu den Zugriffsgruppen
 
@@ -151,7 +151,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen mit Benutzerkonten und -gruppen.
   
-![Die drei Zugriffsgruppen, mit Benutzerkonten ausgefüllt.](../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![Die drei Zugriffsgruppen, mit Benutzerkonten ausgefüllt.](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Phase 2: Erstellen und Konfigurieren der isolierten Teamwebsite
 
@@ -221,7 +221,7 @@ Die Ergebnisse dieser Berechtigungseinstellungen sehen folgendermaßen aus:
     
 Hier ist die resultierende Konfiguration mit den drei SharePoint-Gruppen für die Website, die für die Verwendung der Zugriffsgruppen konfiguriert ist, die mit Benutzerkonten oder Azure AD-Gruppen ausgefüllt werden.
   
-![Die endgültige Konfiguration der isolierten SharePoint Online-Website mit Zugriffsgruppen und Benutzerkonten.](../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![Die endgültige Konfiguration der isolierten SharePoint Online-Website mit Zugriffsgruppen und Benutzerkonten.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 Jetzt können Sie und die Mitglieder der Website über Gruppenmitgliedschaft in einer der Zugriffsgruppen zusammenarbeiten und die Ressourcen der Website nutzen.
   

@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'Das Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook" bietet mehrere Möglichkeiten zum Melden von Junk-E-Mails:'
-ms.openlocfilehash: a2a427f13c329c4c72f718bb19ecc0dce06f8f91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598572"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088249"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Melden von Junk-E-Mails an Microsoft
 
@@ -47,10 +47,10 @@ Mit dem Add-In Junk-E-Mail-Berichtsprogramm können Sie Berichte an den Microsof
 1. Klicken Sie mit der rechten Maustaste auf die Nachricht(en), die Sie als Junk melden möchten.
 
 2. Wählen Sie **Junk**, und klicken Sie dann auf **Junk-E-Mails melden**.
-    ![Melden von Junk-E-Mails über den Posteingang](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![Melden von Junk-E-Mails über den Posteingang](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. Das Dialogfeld **Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook"** wird geöffnet. Wenn Sie sicher sind, dass Sie die als Junk ausgewählten Nachrichten senden möchten, klicken Sie auf **Ja**.
-    ![Meldung als Junk bestätigen](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Meldung als Junk bestätigen](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > Wenn Sie die Bestätigungsmeldung, die daraufhin angezeigt wird, in Zukunft nicht mehr erhalten möchten, aktivieren Sie **Diese Meldung nicht mehr anzeigen**.
@@ -59,10 +59,10 @@ Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und in de
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>So melden Sie eine Junk-E-Mail aus einer geöffneten Nachricht
 
-1. Klicken Sie in der geöffneten Nachricht im Nachrichtenband auf **Junk-E-Mails melden**. Klicken Sie beispielsweise **auf** \> Junk- **Report** ![-Junk-e-Mail-Junk-e-Mails in einer Nachricht](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. Klicken Sie in der geöffneten Nachricht im Nachrichtenband auf **Junk-E-Mails melden**. Klicken Sie beispielsweise **auf** \> Junk- **Report** ![-Junk-e-Mail-Junk-e-Mails in einer Nachricht](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. Das Dialogfeld **Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook"** wird geöffnet. Wenn Sie sicher sind, dass Sie die als Junk ausgewählten Nachricht senden möchten, klicken Sie auf **Ja**.
-    ![Meldung als Junk bestätigen](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Meldung als Junk bestätigen](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > Wenn Sie die Bestätigungsmeldung, die daraufhin angezeigt wird, in Zukunft nicht mehr erhalten möchten, aktivieren Sie **Diese Meldung nicht mehr anzeigen**.

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die mit der Nachrichtenzustellung in Office 365 (auch als Nachrichtenfluss-Intelligence bezeichnet) verbunden sind.
-ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 849493cefecb3344eaf7b6db73be3930138c236c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599052"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088654"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligente Nachrichtenübermittlung in Office 365
 
@@ -44,7 +44,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 versucht haben, eine Verbi
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Fehlercode: 450 4.4.315 Timeout bei der Verbindung
 
-Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
+Dies bedeutet in der Regel, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen können. Die Fehlerdetails erläutern das Problem. Beispiel:
 
 - Der lokale e-Mail-Server ist nicht verfügbar.
 
@@ -72,9 +72,9 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
     2. Wählen Sie den Connector mit dem **from** -Wert **Office 365** und den **, um** den **e-Mail-Server Ihrer Organisation** zu schätzen, und führen Sie einen der folgenden Schritte aus:
 
-       - Löschen Sie den Connector, indem Sie auf **Löschen** ![Symbol Entfernen klicken.](../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Löschen Sie den Connector, indem Sie auf **Löschen** ![Symbol Entfernen klicken.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Deaktivieren Sie den Connector, indem Sie auf](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) bearbeiten-Symbol **Bearbeiten** ![klicken und deaktivieren **aktivieren**.
+       - Deaktivieren Sie den Connector, indem Sie auf](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) bearbeiten-Symbol **Bearbeiten** ![klicken und deaktivieren **aktivieren**.
 
   - Ändern Sie die akzeptierte Domäne in Office 365, die Ihrer lokalen e-Mail-Umgebung vom **internen Relay** an **autorisierend**zugeordnet ist. Anweisungen finden Sie unter [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -84,7 +84,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Verbindungsfehler be
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Fehlercode: 450 4.4.317 Fehler beim Herstellen der Verbindung mit Remote-Server
 
-Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
+Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Beispiel:
 
 - Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, der angibt, dass der Server die Kommunikation mit Office 365 nicht aufrecht erhalten kann.
 

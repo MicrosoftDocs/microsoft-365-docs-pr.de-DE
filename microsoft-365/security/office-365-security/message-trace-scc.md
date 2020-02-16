@@ -10,28 +10,28 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
+ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678935"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088618"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
 ## <a name="overview"></a>Übersicht
 
-Die Nachrichtenablaufverfolgung im Office 365 Security #a0 Compliance Center folgt e-Mail-Nachrichten bei der Reise durch Ihre Exchange Online Organisation. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+Die Nachrichtenablaufverfolgung im Office 365 Security & Compliance Center folgt e-Mail-Nachrichten bei der Reise durch Ihre Exchange Online Organisation. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
 
-Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert sich auf die ursprüngliche Nachrichtenablaufverfolgung, die in der Exchange-Verwaltungskonsole verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen zu den Ereignissen in Bezug auf Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
+Die Nachrichtenablaufverfolgung im Security & Compliance Center verbessert sich auf die ursprüngliche Nachrichtenablaufverfolgung, die in der Exchange-Verwaltungskonsole verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen zu den Ereignissen in Bezug auf Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 > [!NOTE]
-> • Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) .) Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+> • Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) .) Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
-1. Öffnen Sie das Office 365 Security #a0 Compliance Center <https://protection.office.com>unter.
+1. Öffnen Sie das Office 365 Security & Compliance Center <https://protection.office.com>unter.
 
 2. Erweitern Sie Nachrichten **Fluss**, und wählen Sie dann **Nachrichtenablaufverfolgung**aus.
 
@@ -66,11 +66,11 @@ Der Standardwert ist **2 Tage**, aber Sie können Datum/Uhrzeit Bereiche von bis
 
 - Standardmäßig wählen Sie den Zeitbereich in der **Slider** -Ansicht mithilfe eines Zeitlineals aus. Sie können nur die angezeigten Tages-oder Zeiteinstellungen auswählen. Wenn Sie versuchen, einen dazwischen liegenden Wert auszuwählen, wird die Start-und endblase an die nächstgelegene angezeigte Einstellung andocken.
 
-  ![Einen Slider-Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Einen Slider-Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security & Compliance Center](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
   Sie können aber auch zur **benutzerdefinierten** Ansicht wechseln, in der Sie die Werte **Start Datum** und **Enddatum** (einschließlich Uhrzeiten) angeben können, und Sie können auch die **Zeitzone für den** Bereich Datum/Uhrzeit auswählen. Beachten Sie, dass die **Zeit Zonen** Einstellung sowohl für Ihre Abfrage Eingaben als auch für Ihre Abfrageergebnisse gilt.
 
-  ![Ein benutzerdefinierter Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Ein benutzerdefinierter Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security & Compliance Center](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
   Für mindestens 10 Tage sind die Ergebnisse sofort als **Zusammenfassungs** Bericht verfügbar. Wenn Sie einen Zeitbereich angeben, der sogar etwas größer als 10 Tage ist, werden die Ergebnisse verzögert, da Sie nur als herunterladbare CSV-Datei ( **Erweiterte Zusammenfassung** oder **Erweiterte** Berichte) verfügbar sind.
 
@@ -146,7 +146,7 @@ Die verschiedenen Berichtstypen geben unterschiedliche Informationsebenen zurüc
 
 Nach dem Ausführen der Nachrichtenablaufverfolgung werden die Ergebnisse aufgelistet, sortiert nach absteigender Datums-und Zeitangabe (zuletzt zuerst).
 
-![Ergebnisse des Zusammenfassungsberichts für Nachrichtenablaufverfolgung im Security #a0 Compliance Center](../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Ergebnisse des Zusammenfassungsberichts für Nachrichtenablaufverfolgung im Security & Compliance Center](../../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 Der Zusammenfassungsbericht enthält die folgenden Informationen:
 
@@ -172,7 +172,7 @@ Sie können die Ergebnisse exportieren, nachdem Sie eine oder mehrere Zeilen aus
 
 Zugehörige Nachrichtendatensätze sind Datensätze, die dieselbe Nachrichten-ID gemeinsam verwendet haben. Denken Sie daran, dass auch eine einzelne Nachricht, die zwischen zwei Personen gesendet wird, mehrere Datensätze generieren kann. Die Anzahl der Datensätze steigt, wenn die Nachricht von Verteilergruppenerweiterung, Weiterleitung, Nachrichtenfluss Regeln (auch bekannt als Transportregeln) usw. betroffen ist.
 
-Nachdem Sie das Kontrollkästchen einer Zeile markiert haben, können Sie nach verwandten Datensätzen für die Nachricht suchen, indem Sie auf die Schaltfläche **Verwandte Suchen** klicken, oder indem Sie **Weitere Optionen** ![weitere](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Verwandte Einträge für diese Nachricht suchen**auswählen.
+Nachdem Sie das Kontrollkästchen einer Zeile markiert haben, können Sie nach verwandten Datensätzen für die Nachricht suchen, indem Sie auf die Schaltfläche **Verwandte Suchen** klicken, oder indem Sie **Weitere Optionen** ![weitere](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Verwandte Einträge für diese Nachricht suchen**auswählen.
 
 Weitere Informationen zur Nachrichten-ID finden Sie weiter oben in diesem Thema im Abschnitt Nachrichten-ID.
 
@@ -182,9 +182,9 @@ In der Ausgabe des Zusammenfassungsberichts können Sie mit einer der folgenden 
 
 - Wählen Sie die Zeile aus (Klicken Sie auf eine beliebige Stelle in der Zeile außer dem Kontrollkästchen).
 
-- Aktivieren Sie das Kontrollkästchen Zeile, und klicken Sie auf **Weitere Optionen** ![mehr](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Details zur Nachrichtenanzeige anzeigen**.
+- Aktivieren Sie das Kontrollkästchen Zeile, und klicken Sie auf **Weitere Optionen** ![mehr](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Details zur Nachrichtenanzeige anzeigen**.
 
-   ![Details nach dem Doppelklicken auf eine Zeile in der Zusammenfassungsbericht-Nachrichtenablauf Verfolgungsergebnisse im Security #a0 Compliance Center](../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Details nach dem Doppelklicken auf eine Zeile in der Zusammenfassungsbericht-Nachrichtenablauf Verfolgungsergebnisse im Security & Compliance Center](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 Die Nachrichtenablauf Verfolgungs Details enthalten die folgenden zusätzlichen Informationen, die im Zusammenfassungsbericht nicht vorhanden sind:
 
@@ -230,7 +230,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias*@*Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -268,13 +268,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
 
   - `AGENT`
 
@@ -292,7 +292,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit `EXPAND` `REDIRECT`-,- `RESOLVE` und-Ereignissen verwendet, um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -310,7 +310,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Hour `mm` , = Minute `ss` , = Second `fff` , = Brüche einer Sekunde, und `Z` `Zulu`eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 

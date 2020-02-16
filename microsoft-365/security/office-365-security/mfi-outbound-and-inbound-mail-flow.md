@@ -11,19 +11,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: 'Administratoren können sich über das Widget für ausgehende und eingehende Nachrichten im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
-ms.openlocfilehash: f4781777d90f2156b35dd0bfeab42084ef99d1a1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Administratoren können sich über das Widget für ausgehende und eingehende Nachrichten im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
+ms.openlocfilehash: 5c86db8e33ff3ee1dc4d9d126239465b3c84bde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598842"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088434"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Fluss eingehender und ausgehender E-Mails
 
 Das Widget für **ausgehende und eingehende Nachrichtenübermittlung** kombiniert die Informationen aus dem **connectorbericht** und dem früheren TLS-Übersichts **Bericht** an einer Stelle.
 
-![Der Bericht über den ausgehenden und eingehenden Nachrichtenfluss im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![Der Bericht über den ausgehenden und eingehenden Nachrichtenfluss im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 Die Informationen im Widget beziehen sich auf Konnektoren und TLS-Nachrichtenschutz in Office 365. Weitere Informationen finden Sie unter den folgenden Themen:
 
@@ -35,7 +35,7 @@ Die Informationen im Widget beziehen sich auf Konnektoren und TLS-Nachrichtensch
 
 Das Widget für **ausgehende und eingehende Nachrichtenübermittlung** zeigt die TLS-Verschlüsselung an, die für die Verbindung verwendet wird, wenn Nachrichten an und von Ihrer Office 365 Organisation übermittelt werden. Die Verbindungen, die mit anderen e-Mail-Diensten hergestellt werden, werden durch TLS verschlüsselt, wenn beide Seiten TLS anbieten. Das Widget bietet eine Momentaufnahme der letzten Woche des Nachrichtenflusses. Wenn Sie auf **Details anzeigen**klicken, zeigt das Flyout **Nachricht geschützt im Transit (über TLS)** den TLS-Schutz für Nachrichten an, die in Ihre Organisation eingehen und diese verlassen.
 
-![Das Flyout "Nachrichten in Transit (über TLS) geschützt im Security #a0 Compliance Center"](../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![Das Flyout "Nachrichten in Transit (über TLS) geschützt im Security & Compliance Center"](../../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 Derzeit ist TLS 1,2 die sicherste Version von TLS, die von Office 365 angeboten wird. Häufig müssen Sie die TLS-Verschlüsselung kennen, die für Compliance-Überprüfungen verwendet wird. Sie haben wahrscheinlich keine direkte Beziehung zu den meisten Quell-und Ziel-e-Mail-Servern (Sie besitzen diese nicht und auch nicht Microsoft), sodass Sie nicht viele Optionen zum Verbessern der TLS-Verschlüsselung haben, die von diesen Servern verwendet wird.
 
@@ -53,4 +53,4 @@ Einblicke verweisen auf Connectors, um Ihre Aufmerksamkeit auf mögliche TLS-Ver
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security #a0 Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
