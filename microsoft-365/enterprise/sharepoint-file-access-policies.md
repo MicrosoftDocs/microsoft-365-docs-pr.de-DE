@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600762"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084203"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinien Empfehlungen für das Sichern von SharePoint-Websites und-Dateien
 
@@ -35,7 +35,7 @@ Zusätzlich zur Implementierung dieser Anleitung müssen Sie sicherstellen, dass
 
 Das folgende Diagramm veranschaulicht die empfohlenen Richtlinien für den Schutz von Dateien in SharePoint Online und OneDrive für Unternehmen. Es gibt an, welche Richtlinien aktualisiert oder neu erstellt werden sollen, um den Schutz für SharePoint Online und OneDrive für Unternehmen hinzuzufügen.
 
-![Zusammenfassung der Richtlinien für SharePoint Online und OneDrive](../images/identity-access-ruleset-sharepoint.png)
+![Zusammenfassung der Richtlinien für SharePoint Online und OneDrive](../media/identity-access-ruleset-sharepoint.png)
 
 Wenn Sie SharePoint Online beim Erstellen der allgemeinen Richtlinien einbezogen haben, müssen Sie nur die neuen Richtlinien erstellen. Beim Konfigurieren von Regeln für bedingten Zugriff enthält SharePoint Online OneDrive für Unternehmen.
 
@@ -77,9 +77,9 @@ Es ist wichtig zu wissen, dass die Berechtigungen für SharePoint-Websites in de
 
 Die folgende Abbildung enthält ein Beispiel dafür, wie SharePoint-Gerätezugriffs Richtlinien den Zugriff auf Websites schützen.
 
-![Schützen von Websites durch SharePoint-Gerätezugriffs Richtlinien](../images/SharePoint-rules-scenario.png)
+![Schützen von Websites durch SharePoint-Gerätezugriffs Richtlinien](../media/SharePoint-rules-scenario.png)
 
-In der Darstellung sehen Sie Folgendes:
+In der Abbildung sehen Sie Folgendes:
 
 - James ist den bedingten Zugriffsrichtlinien im Zusammenhang mit dem grundlegenden Schutz zugeordnet, kann jedoch Zugriff auf SharePoint-Websites erhalten, die mit einem sensiblen oder stark regulierten Schutz verbunden sind.
 - Wenn James auf eine vertrauliche oder stark regulierte Website zugreift, die er bei der Verwendung seines PCs verwendet, wird sein Zugriff gewährt, solange sein PC konform ist.

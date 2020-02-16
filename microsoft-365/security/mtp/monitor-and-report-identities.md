@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e04f5f48edee663bd6b386d063b67af196e7a782
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2a84cc9c275db1579dfab5050672faf2463698e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600142"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084969"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitätsüberwachung und-Berichterstellung im Microsoft 365 Security Center
 
@@ -29,7 +29,7 @@ Sie können die Identitäten in Ihrer Organisation überwachen und verdächtige 
 * Anzahl der Benutzer, die mithilfe von Richtlinien für den bedingten Zugriff als gefährdet eingestuft wurden
 * Anzahl globaler Administratoren in Ihrer Organisation
 
-![Seite "Identitys category of Reports"](../images/identities.png)
+![Seite "Identitys category of Reports"](../../media/identities.png)
 
 Für Benutzer mit bestimmten Erkennungen können Sie die spezifische Warnung und Untersuchung im Microsoft Defender Security Center durchsuchen. Zu den Erkennungen gehören Anomalien wie Benutzer, die sich über unbekannte Speicherorte anmelden.
 
