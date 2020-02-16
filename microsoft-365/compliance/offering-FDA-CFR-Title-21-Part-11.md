@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602452"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071282"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Title 21 Part 11
 
@@ -50,9 +50,10 @@ Erfahren Sie, wie Sie Ihre FDA CFR Title 21-Bereitstellung beschleunigen: [herun
 Obwohl es keine Zertifizierung für die Einhaltung des CFR-Titels 21 Teil 11 gibt, wurden die folgenden Microsoft Enterprise Cloud-Dienste unabhängigen Drittanbieter-Überprüfungen unterzogen, die Kunden bei ihren Compliance-Bemühungen unterstützen können. Diese Dienste umfassen Folgendes:
 
 - Azure: Cloud-Dienste, Speicher, Datenverkehrs Manager, virtuelle Computer und virtuelles Netzwerk
+- Azure-DevOps
 - Intune
 - [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- [Office 365 und Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 und Office 365 U.S. Government
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 

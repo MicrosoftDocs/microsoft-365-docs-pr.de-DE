@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069567"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Tagging und Relevanz Training in Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
 
 1. Auf der Registerkarte **relevanztag \> ** wird der Bereich Tagging standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden jeweils einzeln für die Markierung angezeigt. 
     
-    ![Bereich "Relevanz-Tag"](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Bereich "Relevanz-Tag"](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     Auf der Registerkarte **Tag** wird der Anzeigename der Datei angezeigt. Hierbei kann es sich um den Pfad, den e-Mail-Betreff, den Titel oder den benutzerdefinierten Namen handeln. Die ID, der Dateipfad oder der Textpfad können kopiert werden, indem Sie mit der rechten Maustaste auf den Pfad der Datei klicken. 
     
@@ -58,7 +58,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
     
     Klicken Sie optional auf der Registerkarte **Tag** auf **Tag-Einstellungen** , um die folgenden Optionen festzulegen: 
     
-    ![Relevanz-Tag-Einstellungen](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![Relevanz-Tag-Einstellungen](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **Massentag**: Verwenden Sie diese Option, um mehrere Probleme für eine Datei zuzuweisen, indem Sie **alle** auswählen, um das Tag für die ausgewählte Datei für alle Probleme (Überschreibt bereits markierte Probleme) festzulegen, oder indem Sie **den Rest** auswählen, um das Tag auf die verbleibenden nicht markierten Probleme anzuwenden. Die ausgewählte Option bleibt für alle Fälle dieses Benutzers gültig, bis Sie von diesem Benutzer geändert wird (Einstellung ist pro Benutzer für alle Fälle des Benutzers). 
     
@@ -80,7 +80,7 @@ In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem
   
 1. Wählen Sie auf der Registerkarte **Relevanz \> -Tag** die Beispieldateien in der Dropdownliste Linker Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet. 
     
-    ![Liste mit Relevanz-Tag-Beispieldateien](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Liste mit Relevanz-Tag-Beispieldateien](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Wählen Sie eine bestimmte Stichprobe oder Dateinummer aus, indem Sie die entsprechende Nummer in den Feldern **Sample** oder **File** eingeben oder auswählen. 
     

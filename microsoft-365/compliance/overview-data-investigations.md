@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
-ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597792"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071077"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
 
@@ -37,7 +37,7 @@ Sie müssen Mitglied der Rollengruppe "Data Investigator" sein, um auf eine Date
 
 In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Workflows in Data Investigations (Preview) beschrieben. Der folgende Screenshot zeigt die Registerkarte **Startseite** einer Untersuchung mit dem Namen " *High Risk: Finance Documents Leak*". 
 
-![Workflow im Data Investigations-Tool](media/DataInvestigationsWorkflow.png)
+![Workflow im Data Investigations-Tool](../media/DataInvestigationsWorkflow.png)
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Suchen nach vertraulichen, böswilligen oder verlegenen Daten
 

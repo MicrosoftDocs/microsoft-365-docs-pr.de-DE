@@ -1,5 +1,7 @@
 ---
 title: Verwalten eines Ereignisses zur Verschütten von Daten in Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 'In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für die neue Daten Untersuchung (Preview) im Security #a0 Compliance Center einen Vorfall mit Datenüberlauf verwalten.'
-ms.openlocfilehash: 53193d3bd915562037a6409766e9be9d42d272c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für die neue Daten Untersuchung (Preview) im Security & Compliance Center einen Vorfall mit Datenüberlauf verwalten.
+ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081622"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072027"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Ereignisses zur Verschütten von Daten in Microsoft 365
 
@@ -54,9 +56,9 @@ Im folgenden finden Sie den Workflow für die Verwendung von Daten Untersuchunge
 5.  Schließen oder löschen Sie die Untersuchung.
 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
-- Um eine Datenermittlung durchführen, nach Inhalten suchen und verschüttete Daten löschen zu können, müssen Sie Mitglied der Rollengruppe "Daten Ermittler" im Security #a0 Compliance Center sein.
+- Um eine Datenermittlung durchführen, nach Inhalten suchen und verschüttete Daten löschen zu können, müssen Sie Mitglied der Rollengruppe "Daten Ermittler" im Security & Compliance Center sein.
 
 - Um zu steuern, welche Benutzerpostfächer und OneDrive-Konten ein Prüfer durchsuchen kann, kann Ihre Organisation Compliance-Grenzen einrichten. Weitere Informationen erhalten Sie, indem [Sie Compliance-Grenzen für eDiscovery-Untersuchungen einrichten](tagging-and-assessment-in-advanced-ediscovery.md). 
 
@@ -125,7 +127,7 @@ So löschen Sie Elemente aus ihren ursprünglichen Speicherorten:
  
 2. Klicken Sie auf **Aktion** und dann auf **Elemente aus ursprünglichen Speicherorten löschen**.
 
-   ![Klicken Sie auf Aktion und dann auf Elemente aus ursprünglichen Speicherorten löschen.](media/DataInvestigationsDeleteItems1.png)
+   ![Klicken Sie auf Aktion und dann auf Elemente aus ursprünglichen Speicherorten löschen.](../media/DataInvestigationsDeleteItems1.png)
 
 3. Überprüfen Sie auf der Seite Flyout die Anzahl der Elemente und zugehörigen untergeordneten Dokumente, die gelöscht werden sollen, und klicken Sie dann auf **Löschen**.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: Informationen zu BitLocker für die Verschlüsselung in der Cloud.'
-ms.openlocfilehash: dce56b0d4dedfa77a988d3cb6f8de6411fc258eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5cef13e6c0d267ced0e14c353fef6780c5c56372
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597882"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071202"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung
 
@@ -35,7 +35,7 @@ In der folgenden Tabelle wird die BitLocker-Schlüsselschutz Kette für einen be
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
 | Externer AES-Schlüssel 256-Bit | Pro Server | BitLocker-APIs | TPM oder geheimer Tresor | Lockbox/Zugriffssteuerung |
 |  |  |  | Post Fach Server-Registrierung | TPM verschlüsselt |
-| 48-stelliges numerisches Kennwort | Pro Datenträger | BitLocker-APIs | Active Directory | Lockbox/Zugriffssteuerung |
+| 48-stelliges numerisches Kennwort | Pro Datenträger | BitLocker-APIs | Active Directory Domain Services | Lockbox/Zugriffssteuerung |
 | X. 509-Zertifikat als Daten Wiederherstellungs-Agent (DRA), auch Public Key Protector genannt | Umgebung (z. b. Exchange Online Multimandanten) | Microsoft-Zertifizierungsstelle | Erstellungs System | Ein Benutzer hat nicht das vollständige Kennwort für den privaten Schlüssel. Das Kennwort ist unter physischem Schutz. |
 
 

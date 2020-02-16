@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird die neue Version von Advanced eDiscovery in Microsoft 365 beschrieben.
-ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662011"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071052"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365
 
@@ -31,7 +31,7 @@ Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDis
 
 Der integrierte Workflow von Advanced eDiscovery richtet sich an den eDiscovery-Prozess, der durch das Electronic Discovery Reference Model (EDRM) beschrieben wird. 
 
-![Das elektronische Discovery Reference Model (EDRM)](media/EDRMv1.png)
+![Das elektronische Discovery Reference Model (EDRM)](../media/EDRMv1.png)
 
 (Bildquelle mit freundlicher Genehmigung von EDRM.net. Das Quellbild wurde unter Creative Commons Attribution 3,0 Unported License zur Verfügung gestellt.)
 
@@ -57,7 +57,7 @@ In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Work
 
 Weitere Informationen zum End-to-End-Workflow in Advanced eDiscovery finden Sie in diesem [Microsoft Mechanics-Video](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Registerkarten in Advanced eDiscovery entsprechen dem EDRM-Workflow](media/aedisco-homepage-1.png)
+![Registerkarten in Advanced eDiscovery entsprechen dem EDRM-Workflow](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>Verwalten von Verwaltungsberechtigten
 

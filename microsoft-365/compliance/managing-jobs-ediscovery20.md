@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+description: Erweiterte eDiscovery-Aufträge unterstützen Sie beim Nachverfolgen des Status von langwierigen Prozessen im Zusammenhang mit der Ausführung verschiedener erweiterter eDiscovery-Aufgaben.
+ms.openlocfilehash: eca2eff32b54f783c6c983a8a20237db2faf2240
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960331"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071572"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Verwalten von Aufträgen in Advanced eDiscovery
 
@@ -40,7 +40,7 @@ Im folgenden finden Sie eine Liste der Aufträge (in der Regel langwierige Proze
 |Vorbereiten von Daten für den Export | Ein Benutzer exportiert Dokumente aus einem Überprüfungs Satzes. Wenn der Exportvorgang abgeschlossen ist, können Sie die exportierten Daten auf einen lokalen Computer herunterladen. Weitere Informationen finden Sie unter [Export Case Data](exporting-data-ediscover20.md). | 
 |Vorbereiten der Fehlerbehebung |Wenn ein Benutzer eine Datei auswählt und in der Fehleransicht auf der Registerkarte **Verarbeitung** eines Falls eine neue Fehlerkorrektur erstellt, besteht der erste Schritt im Prozess darin, die Datei mit dem Verarbeitungsfehler an einen Azure-Speicherort in der Microsoft-Cloud hochzuladen. Dieser Auftrag verfolgt den Fortschritt des Upload-Prozesses. Weitere Informationen zum Fehlerkorrektur-Workflow finden Sie unter [Fehlerbehebung bei der Verarbeitung von Daten](error-remediation.md). | 
 |Vorbereiten der Suchvorschau | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), bereitet das Such Tool eine Beispiel Teilmenge von Elementen vor, die mit der Suchabfrage übereinstimmen, die in der Vorschau angezeigt werden kann. Die Vorschau der Suchergebnisse hilft Ihnen bei der Ermittlung der Effektivität der Suche.  Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md#view-search-results-and-statistics). | 
-|Erneutes Indizieren von Depotdaten | Wenn Sie eine Depotbank zu einem Fall hinzufügen, werden alle teilweise indizierten Elemente in den ausgewählten Datenquellen der Depotbank durch einen Prozess mit dem Namen *Erweiterte Indizierung*neu indiziert. Dieser Auftrag wird auch ausgelöst, wenn Sie in der Indexansicht auf der Registerkarte **Verarbeitung** eines Falls auf **Index aktualisieren** klicken. Weitere Informationen finden Sie unter [Erweiterte Indizierung von Depotdaten](indexing-custodian-data.md).
+|Erneutes Indizieren von Depotdaten | Wenn Sie eine Depotbank zu einem Fall hinzufügen, werden alle teilweise indizierten Elemente in den ausgewählten Datenquellen der Depotbank durch einen Prozess mit dem Namen *Erweiterte Indizierung*neu indiziert. Dieser Auftrag wird auch ausgelöst, wenn Sie auf der Registerkarte **Verarbeitung** eines Falls auf **Index aktualisieren** klicken, und wenn Sie den Index für eine bestimmte Depotbank auf der Seite Depot Eigenschaften-Flyout aktualisieren. Weitere Informationen finden Sie unter [Erweiterte Indizierung von Depotdaten](indexing-custodian-data.md).
 |Durchführen von Analysen | Ein Benutzer analysiert Daten in einem Überprüfungs, indem er erweiterte eDiscovery Analytics-Tools ausführt, beispielsweise nahezu doppelte Erkennung, e-Mail-Threading-Analyse und Design Analyse. Weitere Informationen finden Sie unter [Analysieren von Daten in einem Überprüfungs Satzes](analyzing-data-in-review-set.md). | 
 |Markieren von Dokumenten | Dieser Auftrag wird ausgelöst, wenn ein Benutzer beim Überprüfen von Dokumenten in einem Überprüfungs **Bereich im taggingfenster auf "** **Tagging-Auftrag starten** " klickt. Ein Benutzer kann diesen Auftrag nach dem Markieren von Dokumenten in einem Überprüfungs Satzes starten und dann im Dokument Panel anzeigen. Weitere Informationen finden Sie unter [Tag Documents in a Review Sets](tagging-documents.md). | 
 |||

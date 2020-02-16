@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582904"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072012"
 ---
 # <a name="manage-hold-notifications"></a>Verwalten von Aufbewahrungsbenachrichtigungen
 
@@ -44,7 +44,7 @@ Im Flyout Kommunikationsdetails können Sie die Details zur rechtlichen Aufbewah
 Gelegentlich verlieren depotverwalter Ihre e-Mails in Ihrer alltäglichen Arbeit. Bei einem langwierigen Rechtsstreit kann ein depotverwalter möglicherweise einen Antrag stellen und Sie bitten, eine Nachricht erneut zu senden. Wenn Sie Ihren Workflow um rechtliche Aufbewahrungs Vermerke verwalten, müssen Sie möglicherweise erneut einen Hinweis senden, um ihn wieder an die "Oberseite des Postfachs eines Benutzers" zurückzusenden.
 
 Sie können einen Aufbewahrungs Bescheid erneut an Ihre Depotbank senden, indem Sie:
-1. Navigieren Sie zu einem Fall in **Security and Compliance #a0 Advanced eDiscovery**.
+1. Navigieren Sie zu einem Fall in **Security and Compliance > Advanced eDiscovery**.
 2. Nachdem Sie einen Fall ausgewählt haben, navigieren Sie zur Registerkarte **Kommunikationen** .
 3. Um eine rechtliche Aufbewahrungsfrist an eine Depotbank erneut zu senden, wählen Sie die Kommunikation aus, und klicken Sie auf die Option **erneut senden** .
 4. Wenn ein depotverwalter seine Aufbewahrungs Benachrichtigung noch nicht bestätigt hat, wird der Erinnerungs-und Eskalations Fluss neu gestartet. Wenn ein depotverwalter den Aufbewahrungs Bescheid bereits bestätigt hat, erhält der Verwalter lediglich eine Kopie des ursprünglichen Aufbewahrungs Bescheids.
@@ -60,7 +60,7 @@ Im Fall von Fortschritten müssen Verwalter möglicherweise zusätzliche oder we
 
 So aktualisieren Sie den Inhalt des ersten halte Vermerks:
 
-1. Navigieren Sie zu einem Fall in **Security and Compliance #a0 Advanced eDiscovery**.
+1. Navigieren Sie zu einem Fall in **Security and Compliance > Advanced eDiscovery**.
 2. Nachdem Sie einen Fall ausgewählt haben, navigieren Sie zur Registerkarte **Kommunikationen** .
 3. Wählen Sie den Aufbewahrungs Hinweis aus, den Sie aktualisieren möchten, und klicken Sie auf **Bearbeiten**.
 4. Wählen Sie im Workflow bearbeiten die Option **Portal Inhalt definieren** aus, und aktualisieren Sie den Inhalt des Benachrichtigungs Inhalts. 

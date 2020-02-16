@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Hier erfahren Sie, wo Sie die Ergebnisse des Analyseprozesses in Office 365 Advanced eDiscovery anzeigen können, einschließlich der Definitionen der angezeigten Aufgabenoptionen.  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069182"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Anzeigen von Analyseergebnissen in Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ In Advanced eDiscovery können Fortschritte und Ergebnisse für den Analyseproze
 
 In **Prepare \> Analyse \> results \> Task Status**wird der Status während und nach dem Analysieren der Prozessausführung angezeigt. 
   
-![Analysieren des Aufgabenstatus](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![Analysieren des Aufgabenstatus](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 Die angezeigten Aufgaben können je nach den ausgewählten Optionen variieren. 
   
@@ -73,7 +73,7 @@ In **den e-Mail-Ergebnissen werden** die Anzahl der inklusiv-, einschließlich-,
     
 In den **Anlagen** Ergebnissen wird die Anzahl der Anlagen angezeigt, die dem Typ "eindeutig" und "Duplikate" entsprechen. 
   
-![Nahe Duplikate und e-Mail-Threads](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Nahe Duplikate und e-Mail-Threads](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Siehe auch
 

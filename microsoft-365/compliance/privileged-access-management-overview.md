@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über die Verwaltung privilegierter Zugriffsrechte in Office 365
-ms.openlocfilehash: 29436c9f647de2844f95f05e66b3b6c05527352b
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784662"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070967"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privileged Access Management in Office 365
 
@@ -37,7 +37,7 @@ Eine kurze Übersicht über den integrierten Workflow für die integrierte kunde
 
 Die privilegierte Zugriffsverwaltung ergänzt andere Daten-und Zugriffs Funktionsschutz Funktionen in der Office 365 Sicherheitsarchitektur. Das Einschließen einer privilegierten Zugriffsverwaltung im Rahmen eines integrierten und mehrschichtigen Sicherheitsansatzes stellt ein Sicherheitsmodell bereit, das den Schutz vertraulicher Informationen und Office 365 Konfigurationseinstellungen maximiert. Wie im Diagramm dargestellt, basiert die Verwaltung privilegierter Zugriffe auf dem Schutz, der mit der systemeigenen Verschlüsselung von Office 365 Daten und dem Sicherheitsmodell der rollenbasierten Zugriffssteuerung Office 365 Dienste bereitgestellt wird. Bei Verwendung mit [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)bieten diese beiden Features Zugriffssteuerung mit Just-in-Time-Zugriff in unterschiedlichen Bereichen.
 
-![Mehrstufiger Schutz in Office 365](media/pam-layered-protection.png)
+![Mehrstufiger Schutz in Office 365](../media/pam-layered-protection.png)
 
 Die Verwaltung privilegierter Zugriffsrechte in Office 365 ist auf **Aufgaben** Ebene definiert und beschränkt, während Azure AD privilegierte Identitätsverwaltung den Schutz auf **Rollen** Ebene mit der Möglichkeit anwendet, mehrere Aufgaben auszuführen. Azure AD privilegierte Identitätsverwaltung ermöglicht in erster Linie das Verwalten von Zugriffsrechten für AD-Rollen und Rollengruppen, während die privilegierte Zugriffsverwaltung in Office 365 nur auf Aufgabenebene gilt.
 
@@ -53,25 +53,25 @@ Jeder der folgenden Prozessabläufe gibt einen Überblick über die Architektur 
 
 Wenn Sie eine Richtlinie für privilegierten Zugriff mit dem [Microsoft 365 Admin Center](https://admin.microsoft.com) oder der Exchange-Verwaltungskonsole konfigurieren, definieren Sie die Richtlinie und die Features für den privilegierten Zugriff und die Richtlinien Attribute im Office 365 Substrat. Die Aktivitäten werden im Office 365 Security and Compliance Center protokolliert. Die Richtlinie ist jetzt aktiviert und kann eingehende Anforderungen für Genehmigungen verarbeiten.
 
-![Schritt 1: Richtlinienerstellung](media/pam-step1-policy-creation.jpg)
+![Schritt 1: Richtlinienerstellung](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Schritt 2: Zugriffsanforderung
 
 Im [Microsoft 365 Admin Center](https://admin.microsoft.com) oder mit der Exchange-Verwaltungs-PowerShell können Benutzer Zugriff auf Erweiterte oder privilegierte Aufgaben anfordern. Das Feature für privilegierten Zugriff sendet die Anforderung an das Office 365 Substrat zur Verarbeitung mit der konfigurierten Zugriffsrichtlinie für Berechtigungen und zeichnet die Aktivität in den Protokollen des Office 365 Security and Compliance Center auf.
 
-![Schritt 2: Zugriffsanforderung](media/pam-step2-access-request.jpg)
+![Schritt 2: Zugriffsanforderung](../media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>Schritt 3: Zugriffsgenehmigung
 
 Eine Genehmigungsanforderung wird generiert, und die Benachrichtigung über ausstehende Anforderungen wird an genehmigende Personen gesendet. Wenn diese Berechtigung genehmigt wurde, wird die privilegierte Zugriffsanforderung als Genehmigung verarbeitet, und die Aufgabe ist fertig. Wenn die Aufgabe verweigert wird, wird der Vorgang blockiert, und dem Anforderer wird kein Zugriff gewährt. Der Anforderer wird über die Anforderungsgenehmigung oder Ablehnung per e-Mail-Nachricht benachrichtigt.
 
-![Schritt 3: Zugriffsgenehmigung](media/pam-step3-access-approval.jpg)
+![Schritt 3: Zugriffsgenehmigung](../media/pam-step3-access-approval.jpg)
 
 ### <a name="step-4-access-processing"></a>Schritt 4: Zugriffs Verarbeitung
 
 Für eine genehmigte Anforderung wird die Aufgabe von der Exchange-Verwaltungs-Remoterunspace verarbeitet. Die Genehmigung wird anhand der privilegierten Zugriffsrichtlinie überprüft und von der Office 365 Substrat verarbeitet. Alle Aktivitäten für den Vorgang werden im Office 365 Security and Compliance Center protokolliert.
 
-![Schritt 4: Zugriffs Verarbeitung](media/pam-step4-access-processing.jpg)
+![Schritt 4: Zugriffs Verarbeitung](../media/pam-step4-access-processing.jpg)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

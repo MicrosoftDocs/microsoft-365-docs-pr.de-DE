@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'In diesem Artikel erfahren Sie, wie Sie den Status und die Ergebnisse von Relevanz-Schulungen für Fall Probleme in Office 365 Advanced eDiscovery anzeigen und interpretieren.  '
-ms.openlocfilehash: 5fa9fe49f1a644f2a64321c1ec106b11c487c885
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601402"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069496"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Nachverfolgen der Relevanz-Analyse in Office 365 Advanced eDiscovery
 
@@ -44,7 +44,7 @@ In Advanced eDiscovery wird auf der Registerkarte Relevanz Track die berechnete 
     
     In dem Beispiel wird eine erfolgreich abgeschlossene Bewertung für ein Problem angezeigt, die durch den abgeschlossenen Farbverlaufs Indikator und das Häkchen gekennzeichnet ist. Tagging ist im Gange, aber der Fall wird weiterhin als instabil betrachtet (Stabilitäts Status wird auch in einem QuickInfo-Tool angezeigt). Die Empfehlung für den nächsten Schritt lautet "Training". 
     
-    ![Relevanz Track Training Schritt 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Relevanz Track Training Schritt 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     In der erweiterten Ansicht werden zusätzliche Informationen und Optionen angezeigt. Der angezeigte aktuelle Fehler Rand ist der Fehler Rand des Rückrufs im aktuellen Bewertungsstatus, da die vorhandenen (bereits markierten) Bewertungsdateien vorhanden sind.
     
@@ -55,7 +55,7 @@ In Advanced eDiscovery wird auf der Registerkarte Relevanz Track die berechnete 
     
     In **Relevanz** \> **Track**zeigen die trainingsfortschrittsanzeige und die QuickInfo die geschätzte Anzahl zusätzlicher Beispiele an, die für die Stabilität erforderlich sind. Diese Schätzung enthält eine Richtlinie für die erforderliche zusätzliche Schulung.
     
-    ![Relevanz Track Training](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Relevanz Track Training](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Wenn Sie die Markierung abgeschlossen haben und die Schulung fortsetzen möchten, klicken Sie auf **Training**. Ein weiterer Beispielsatz von Dateien wird aus dem geladenen Datei Satz für zusätzliche Schulungen generiert. Anschließend kehren Sie zur Registerkarte Tag zurück, um weitere Dateien zu markieren und zu Schulen.
     
@@ -100,13 +100,13 @@ Wenn es Inkonsistenzen bei der Dateikennzeichnung gibt, kann dies Auswirkungen a
 
 Erweitern Sie auf der Registerkarte **Relevanz \> Track** die Zeile eines Problems, und klicken Sie neben **detaillierte Ergebnisse**auf **Ansicht**. Die detaillierten Ergebnisbereiche werden angezeigt, wie im folgenden dargestellt und beschrieben.
   
-![Relevanz Training detaillierte Ergebnisse](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Relevanz Training detaillierte Ergebnisse](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Tagging-Zusammenfassung
 
  Im unten gezeigten Beispiel werden in der **Sammel Markierungs Zusammenfassung** die Gesamtwerte für die einzelnen Bewertungs-, Schulungs-und Catch-up-Datei Markierungs Prozesse angezeigt. 
   
-![Übersicht über die Relevanz von Track-Tags](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Übersicht über die Relevanz von Track-Tags](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Schlüsselwörter
 
@@ -120,7 +120,7 @@ Die erweiterte eDiscovery-Liste mit Stichwörtern kann verwendet werden, um eine
 
 Der Bereich **Trainingsfortschritt** enthält einen Fortschrittsdiagramm für den Trainingsfortschritt und eine Qualitätsanzeige, wie im folgenden Beispiel dargestellt. 
   
-![Relevanz Nachverfolgen des Schulungs Fortschritts](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Relevanz Nachverfolgen des Schulungs Fortschritts](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
  **Trainings Qualitätsindikator**: zeigt die Bewertung der Markierungs Konsistenz wie folgt an:
   
@@ -156,7 +156,7 @@ Der Bereich **Batch Berechnungsergebnisse** enthält die Anzahl der Dateien, die
 
 Im Bereich " **Trainingsstatistik** " werden Statistiken und Grafiken basierend auf Ergebnissen aus dem Advanced eDiscovery Relevanz Training angezeigt. 
   
-![Relevanz Track Training Statistics](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Relevanz Track Training Statistics](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 In dieser Ansicht wird Folgendes angezeigt:
   

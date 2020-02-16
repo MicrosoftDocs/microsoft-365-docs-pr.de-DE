@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601862"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071222"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: Regulation Systems Compliance and Integrity (SCI)
 
@@ -70,7 +70,7 @@ Finanzorganisationen oder Sci-Entitäten, die dieser Verordnung unterliegen, kö
 - [Business Continuity and Disaster Recovery (BCDR): Azure gepaart Regionen](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Compliance-Map der regulatorischen Prinzipien für Cloud Computing und Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
 - [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- [Financial Services Compliance in Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Compliance der Finanzdienstleistungs in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
 - [Microsoft-und sec-Regel 17a-4](offering-SEC-17a-4.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

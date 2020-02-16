@@ -16,27 +16,27 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: eac58e10e97b639a296717210f7a9576abef5e35
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59616247f284b76a4e180f315067f694ff861007
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597242"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068812"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Anzeigen der Überwachungsaktivität von Personen von Interesse
 
-Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Data Investigations (Preview) ist jetzt in das vorhandene Überwachungsprotokoll-Such Tool im Security #a0 Compliance Center integriert. Mithilfe dieser eingebetteten Benutzeroberfläche können Sie das Verwaltungstool "Daten Ermittlungen (Preview) People of Interest" verwenden, um Ihre Untersuchung zu vereinfachen, indem Sie die Aktivität für Personen, die in ihrer Untersuchung interessant sind, leicht aufrufen und durchsuchen.
+Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Data Investigations (Preview) ist jetzt in das vorhandene Überwachungsprotokoll-Such Tool im Security & Compliance Center integriert. Mithilfe dieser eingebetteten Benutzeroberfläche können Sie das Verwaltungstool "Daten Ermittlungen (Preview) People of Interest" verwenden, um Ihre Untersuchung zu vereinfachen, indem Sie die Aktivität für Personen, die in ihrer Untersuchung interessant sind, leicht aufrufen und durchsuchen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Office 365-Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite Berechtigungen. Um einem Benutzer die Möglichkeit zu geben, das Überwachungsprotokoll mit den Mindestberechtigungen zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Ansichts Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle" hinzufügen und dann den Benutzer als Mitglied der neuen Rolle "GR" hinzufügen. OUP. Weitere Informationen finden Sie unter Verwalten von Rollengruppen in Exchange Online.
 
 > [!IMPORTANT]
-> Wenn Sie einem Benutzer die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite Berechtigungen im Security #a0 Compliance Center zuweisen, kann er das Office 365 Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Der Grund dafür ist, dass es sich bei dem zugrundeliegenden Cmdlet, das für die Durchsuchung des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt.
+> Wenn Sie einem Benutzer die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite Berechtigungen im Security & Compliance Center zuweisen, kann er das Office 365 Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Der Grund dafür ist, dass es sich bei dem zugrundeliegenden Cmdlet, das für die Durchsuchung des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt.
 
 ## <a name="step-1-create-an-data-investigations-preview-audit-log-search"></a>Schritt 1: Erstellen einer Daten Untersuchung (Vorschau)-Überwachungsprotokoll Suche
 
-   1. Wählen Sie eine vorhandene Untersuchung im **Security #a0 Compliance Center #a1 Data Investigations (Preview)** aus.
+   1. Wählen Sie eine vorhandene Untersuchung im **Security & Compliance Center > Data Investigations (Preview)** aus.
    
    2. Navigieren Sie zur Registerkarte **interessante Personen** , und wählen Sie eine Person aus.
    

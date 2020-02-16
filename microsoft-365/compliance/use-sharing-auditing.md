@@ -20,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
-ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597282"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069237"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 
@@ -93,19 +93,19 @@ Eine häufige Anforderung an Administratoren ist das Erstellen einer Liste aller
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Schritt 1: Suchen nach Freigabe Ereignissen und Exportieren der Ergebnisse in eine CSV-Datei
 
-Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Freigabe Ereignissen zu durchsuchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Freigabe Ereignissen zu durchsuchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im linken Bereich des Security #a0 Compliance Centers auf **Such**  > **Überwachungsprotokoll Suche**.
+3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Suchen**   > **Überwachungsprotokollsuche**.
     
     Die Seite **Überwachungsprotokollsuche** wird angezeigt. 
     
 4. Klicken Sie unter **Aktivitäten**auf **Freigabe-und Zugriffs Anforderungs Aktivitäten** , um nach Freigabe bezogenen Ereignissen zu suchen. 
     
-    ![Wählen Sie unter Aktivitäten die Option Freigabe-und Zugriffs Anforderungs Aktivitäten aus.](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Wählen Sie unter Aktivitäten die Option Freigabe-und Zugriffs Anforderungs Aktivitäten aus.](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Wählen Sie einen Datums-und Zeitbereich aus, um die Freigabe Ereignisse zu finden, die innerhalb dieses Zeitraums aufgetreten sind. 
     
@@ -131,9 +131,9 @@ Nachdem Sie die Anweisungen im vorherigen Schritt zum Vorbereiten der CSV-Datei 
     
 1. Öffnen Sie die Excel-Datei, die Sie in Schritt 2 erstellt haben. 
 
-2. Klicken Sie auf der Registerkarte **Start** auf **#a0 Filter sortieren**, und klicken Sie dann auf **Filter**.
+2. Klicken Sie auf der Registerkarte **Start** auf **& Filter sortieren**, und klicken Sie dann auf **Filter**.
     
-3. Deaktivieren Sie in der Dropdownliste **Sort #a0 Filter** in der Spalte **Vorgänge** die Option Alle Optionen, und wählen Sie dann mindestens einen der folgenden Freigabe bezogenen Ereignisse aus, und klicken Sie dann auf **OK**.
+3. Deaktivieren Sie in der Dropdownliste **Sort & Filter** in der Spalte **Vorgänge** die Option Alle Optionen, und wählen Sie dann mindestens einen der folgenden Freigabe bezogenen Ereignisse aus, und klicken Sie dann auf **OK**.
  
    - **SharingInvitationCreated**
    
@@ -147,7 +147,7 @@ Nachdem Sie die Anweisungen im vorherigen Schritt zum Vorbereiten der CSV-Datei 
     
 4. Wechseln Sie zur Spalte mit dem Namen **TargetUserOrGroupType** , und wählen Sie Sie aus. 
     
-5. Deaktivieren Sie in der Dropdownliste **Sortier #a0 Filter** die Option alle Auswahlen, wählen Sie **TargetUserOrGroupType: Gast**aus, und klicken Sie dann auf **OK**.
+5. Deaktivieren Sie in der Dropdownliste **Sortier & Filter** die Option alle Auswahlen, wählen Sie **TargetUserOrGroupType: Gast**aus, und klicken Sie dann auf **OK**.
     
     In Excel werden nun die Zeilen für Freigabe Ereignisse und die Position des Zielbenutzers außerhalb Ihrer Organisation angezeigt, da externe Benutzer durch den Wert **TargetUserOrGroupType: Guest**identifiziert werden. 
   

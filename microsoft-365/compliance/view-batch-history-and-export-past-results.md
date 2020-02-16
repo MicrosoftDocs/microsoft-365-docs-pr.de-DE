@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Hier erfahren Sie, wie Sie detaillierte Informationen zu ausgewählten Export Batch Sitzungen anzeigen und wie Sie die letzte Export Sitzung in Office 365 Advanced eDiscovery rückgängig machen.  '
-ms.openlocfilehash: 0309c84bb28f4034f3a0ec8726a21ca2a4b4f22f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601262"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069118"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Anzeigen des Batch Verlaufs und exportieren vergangener Ergebnisse in Office 365 Advanced eDiscovery
 
@@ -38,19 +38,19 @@ Das Dialogfeld Export Verlauf enthält detaillierte Informationen zu ausgewählt
     
 2. Wählen Sie rechts neben dem Namen des Export Batches das Symbol für den **Batch Verlauf** aus: 
     
-    ![Stapel Verlauf exportieren (Symbol)](media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
+    ![Stapel Verlauf exportieren (Symbol)](../media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
     Das Dialogfeld Batch Historie wird angezeigt.
     
-    ![Stapel Verlauf exportieren](media/04c5b75c-348c-491d-b4fe-716659333890.png)
+    ![Stapel Verlauf exportieren](../media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
 3. Wenn es erforderlich ist, eine vorherige Sitzung zurückzusetzen, klicken Sie auf **letzte Sitzung rückgängig machen**. Rollback kann mehrmals ausgeführt werden, wodurch die letzte Sitzung abgebrochen wird.
     
-4. Wenn Sie Daten jederzeit aus einer zuvor ausgeführten Export Batch Sitzung herunterladen möchten, klicken Sie](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) auf das **Symbol Download Symbol** !["Stapel Verlauf herunterladen" neben dem gewünschten Export Batch, der exportiert werden soll. 
+4. Wenn Sie Daten jederzeit aus einer zuvor ausgeführten Export Batch Sitzung herunterladen möchten, klicken Sie](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) auf das **Symbol Download Symbol** !["Stapel Verlauf herunterladen" neben dem gewünschten Export Batch, der exportiert werden soll. 
     
 5. Wenn das Dialogfeld für die **gemeinsame zugriffssignatur** angezeigt wird, klicken Sie auf **in Zwischenablage kopieren** , um die Daten der Export Sitzung auf den lokalen Computer zu kopieren, und klicken Sie dann auf **Schließen**. Das Dialogfeld &amp; eDiscovery- **Export Tool** für Office 365 Security Compliance Center wird angezeigt. 
     
-    ![EDiscovery-Dialog Exportieren](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
+    ![EDiscovery-Dialog Exportieren](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
 6. Im Dialogfeld **eDiscovery-Export Tool** : 
     

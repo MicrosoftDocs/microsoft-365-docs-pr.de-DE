@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Mit Advanced eDiscovery können Sie den Workflow für rechtliche Aufbewahrungs Benachrichtigungen einfach verwalten, um Benachrichtigungsverwalter in rechtlichen Ermittlungen zu benachrichtigen.
-ms.openlocfilehash: ffad61d5bc00202f7f72f6f9021b4f62e81fef96
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca3e5a8e500f6a8e5a5483ccc3efd070c05c5cd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582744"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071582"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Arbeiten mit Kommunikationen in Advanced eDiscovery
 
@@ -51,13 +51,13 @@ Mit Advanced eDiscovery können Legal Teams ihren rechtlichen Aufbewahrungs Bena
 
 ## <a name="role-groups-and-permissions"></a>Rollengruppen und Berechtigungen 
 
-Zugelassene Teams können Ihre Fall Aktivitäten mithilfe von eDiscovery-bezogenen Rollengruppen und Berechtigungen im Security #a0 Compliance Center Steuern und trennen. 
+Zugelassene Teams können Ihre Fall Aktivitäten mithilfe von eDiscovery-bezogenen Rollengruppen und Berechtigungen im Security & Compliance Center Steuern und trennen. 
 
 Zum Erstellen und Verwalten von Benachrichtigungen über rechtliche Aufbewahrungsfristen muss ein Benutzer Teil der folgenden Rollengruppen sein:
 
 - **eDiscovery Manager** – Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, Aufbewahrungen und inhaltsspeicherorte in der Warteschleife platzieren, Benachrichtigungen für legale Aufbewahrungen verwalten, Inhalts Suchvorgänge erstellen und bearbeiten, die einem Fall zugeordnet sind, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced vorbereiten. eDiscovery. In dieser Rollengruppe gibt es zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
 
-  - **eDiscovery-Manager** -kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder Mitglied von sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der eDiscovery-Seite im Security #a0 Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen.
+  - **eDiscovery-Manager** -kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder Mitglied von sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der eDiscovery-Seite im Security & Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen.
 
   - **eDiscovery-Administrator** -kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
     
@@ -65,4 +65,4 @@ Zum Erstellen und Verwalten von Benachrichtigungen über rechtliche Aufbewahrung
     - Verwalten Sie alle Fälle in der Organisation, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.
     - Zugriffs Fall Daten in Advanced eDiscovery für jeden Fall in der Organisation.
 
-Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](assign-ediscovery-permissions.md).
+Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).

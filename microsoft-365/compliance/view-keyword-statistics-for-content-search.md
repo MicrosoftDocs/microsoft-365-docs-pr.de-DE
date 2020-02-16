@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: 'Verwenden Sie das Feature Suchstatistik, um Statistiken für mehrere Inhalts suchen im Security #a0 Compliance Center anzuzeigen und zu vergleichen. Sie können die Keyword-Liste auch konfigurieren, wenn Sie eine Suchabfrage erstellen oder bearbeiten, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern oder Schlüsselwörtern entsprechen.'
-ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Verwenden Sie das Feature Suchstatistik, um Statistiken für mehrere Inhalts suchen im Security & Compliance Center anzuzeigen und zu vergleichen. Sie können die Keyword-Liste auch konfigurieren, wenn Sie eine Suchabfrage erstellen oder bearbeiten, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern oder Schlüsselwörtern entsprechen.
+ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068950"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
 
@@ -35,11 +35,11 @@ Sie können auch die Such- und Schlüsselwortstatistik in einer CSV-Datei herunt
 
 So zeigen Sie Statistiken für die Inhaltssuche an:
   
-1. Wechseln Sie im Security #a0 Compliance Center zu **Such** \> **Inhaltssuche**.
+1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**.
     
-2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, ****![und klicken Sie dann auf](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen.
+2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, ****![und klicken Sie dann auf](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen.
     
-    ![Wählen Sie mehrere Suchvorgänge aus, und klicken Sie dann auf Suchstatistik](media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
+    ![Wählen Sie mehrere Suchvorgänge aus, und klicken Sie dann auf Suchstatistik](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
 3. Klicken Sie auf der Seite **Suchstatistik** auf einen der folgenden Links, um Statistiken zu den ausgewählten Suchvorgängen anzuzeigen. 
     
@@ -47,7 +47,7 @@ So zeigen Sie Statistiken für die Inhaltssuche an:
     
     Auf dieser Seite werden Statistiken angezeigt, die denen ähneln, die im Detailbereich auf der Seite **Inhaltssuche** angezeigt werden. Statistiken für alle ausgewählten Suchvorgänge werden angezeigt. Beachten Sie, dass Sie die ausgewählten Suchvorgänge auch auf dieser Seite erneut ausführen können, um die Statistiken zu aktualisieren. 
     
-    ![Zusammenfassung der Statistik für die ausgewählten Suchvorgänge](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
+    ![Zusammenfassung der Statistik für die ausgewählten Suchvorgänge](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
     a.  Der Name der Inhaltssuche. Wie bereits erwähnt, können Sie Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
     
@@ -63,7 +63,7 @@ So zeigen Sie Statistiken für die Inhaltssuche an:
     
     Auf dieser Seite werden Statistiken zur Suchabfrage angezeigt.
     
-    ![Suchabfrage Statistik für die ausgewählten Suchvorgänge](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
+    ![Suchabfrage Statistik für die ausgewählten Suchvorgänge](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
     a. Der Name der Inhaltssuche, für die die Zeile Abfragestatistiken enthält.
     
@@ -92,7 +92,7 @@ So zeigen Sie Statistiken für die Inhaltssuche an:
     
     Auf dieser Seite werden Statistiken zur Anzahl der Elemente angezeigt, die mit der Suchabfrage in jedem durchsuchten Inhaltsspeicherort übereinstimmen. Es werden die ersten 1.000 Speicherorte angezeigt. Wenn Sie Statistiken für mehrere Suchvorgänge anzeigen, werden die oberen 1.000 Speicherorte für jede Suche angezeigt. Beachten Sie, dass ein Inhaltsspeicherort auf dieser Seite nicht enthalten ist, wenn er keine Elemente enthält, die mit der Suchabfrage übereinstimmen.
     
-    ![Statistiken zur Anzahl der Elemente, die in den durchsuchten Inhaltsspeicherorten gefunden wurden](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
+    ![Statistiken zur Anzahl der Elemente, die in den durchsuchten Inhaltsspeicherorten gefunden wurden](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
     a. Der Name des Inhaltsspeicherorts.
     
@@ -107,13 +107,13 @@ Wie zuvor erläutert, zeigt die Seite **Abfragen** die Suchabfrage und die Anzah
 
 So erstellen Sie eine Stichwortliste und zeigen Schlüsselwort Statistiken für eine Inhaltssuche an:
   
-1. Wechseln Sie im Security #a0 Compliance Center zu **Such** \> **Inhaltssuche**.
+1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**.
     
-2. Klicken Sie in der Liste der Inhalts suchen auf und eine Suche, und klicken **** ![Sie dann auf](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Bearbeitungssymbol bearbeiten.
+2. Klicken Sie in der Liste der Inhalts suchen auf und eine Suche, und klicken **** ![Sie dann auf](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Bearbeitungssymbol bearbeiten.
     
 3. Klicken Sie auf **Abfrage** , und führen Sie dann die folgenden Schritte aus: 
     
-    ![Klicken Sie auf das Kontrollkästchen Schlüsselwortliste anzeigen, und geben Sie in jeder Zeile ein Schlüsselwort ein.](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
+    ![Klicken Sie auf das Kontrollkästchen Schlüsselwortliste anzeigen, und geben Sie in jeder Zeile ein Schlüsselwort ein.](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
     a. Aktivieren Sie das Kontrollkästchen **Schlüsselwort Liste anzeigen** . 
     
@@ -121,11 +121,11 @@ So erstellen Sie eine Stichwortliste und zeigen Schlüsselwort Statistiken für 
     
 4. Nachdem Sie die Schlüsselwörter hinzugefügt haben, für die Sie die Suche ausführen und Statistiken erhalten möchten, klicken Sie auf **Suchen** , um die überarbeitete Suche auszuführen. 
     
-5. Wenn die Suche abgeschlossen ist, wählen Sie Sie in der Liste der Suchvorgänge aus, **** ![und klicken Sie dann auf](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen. Sie können auch Keyword-Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
+5. Wenn die Suche abgeschlossen ist, wählen Sie Sie in der Liste der Suchvorgänge aus, **** ![und klicken Sie dann auf](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen. Sie können auch Keyword-Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
     
 6. Klicken Sie auf der Seite **Suchstatistik** auf **Abfrage** , um die schlüsselwortstatistik für die ausgewählten Suchvorgänge anzuzeigen. 
     
-    ![Die Statistik für jedes Keyword für die ausgewählten suchen wird angezeigt.](media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
+    ![Die Statistik für jedes Keyword für die ausgewählten suchen wird angezeigt.](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
   
     Wie im vorherigen Screenshot gezeigt, werden die Statistiken für jedes Keyword angezeigt; Dies umfasst Folgendes: 
     

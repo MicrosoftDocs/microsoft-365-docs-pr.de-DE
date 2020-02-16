@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center zum Suchen und Exportieren von verläuft-Chat Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung.
-ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957140"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070012"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
 
@@ -47,7 +47,7 @@ Wenn ein Microsoft Teams-aktivierter Benutzer über ein lokales Postfach verfüg
   
 Die folgende Grafik zeigt den Workflow, wie Microsoft Teams-Chat Daten für lokale Benutzer für die Suche, Vorschau und den Export zur Verfügung stehen.
   
-![Cloud-basierter Speicher für lokale Benutzer in Microsoft Teams](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Cloud-basierter Speicher für lokale Benutzer in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 Zusätzlich zu dieser neuen Funktion können Sie weiterhin die Inhaltssuche zum Durchsuchen, anzeigen und Exportieren von Microsoft Teams-Inhalten in der cloudbasierten SharePoint-Website und zum Exchange-Postfach verwenden, das den einzelnen Microsoft Teams-und 1xN-Team Chat Daten im Exchange Online Postfach für Cloud-basierte Benutzer.
 
@@ -71,7 +71,7 @@ Nachdem dieses Feature in Ihrer Office 365 Organisation bereitgestellt wurde, we
   
 - Das Kontrollkästchen **Office-App-Inhalt für lokale Benutzer hinzufügen** wird unter **der Suche nach Inhalten** hinzugefügt. 
     
-    ![Das Kontrollkästchen "Office-App-Inhalt für lokale Benutzer hinzufügen" wird der Benutzeroberfläche für die Inhaltssuche hinzugefügt.](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![Das Kontrollkästchen "Office-App-Inhalt für lokale Benutzer hinzufügen" wird der Benutzeroberfläche für die Inhaltssuche hinzugefügt.](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - Lokale Benutzer werden in der Auswahl für inhaltsspeicherorte angezeigt, die Sie zum Auswählen von zu durchsuchenden Benutzerpostfächern verwenden. 
 
@@ -81,7 +81,7 @@ Nachdem das Feature aktiviert wurde, können Sie die Inhaltssuche im Security & 
   
 1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**
     
-2. Klicken Sie **** ![auf der Seite Suche auf Symbol](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen.
+2. Klicken Sie **** ![auf der Seite Suche auf Symbol](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen.
     
     Wie bereits erläutert, wird das Kontrollkästchen **Office-App-Inhalt für lokale Benutzer hinzufügen** unter **Standorte**angezeigt. Sie ist standardmäßig ausgewählt.
     

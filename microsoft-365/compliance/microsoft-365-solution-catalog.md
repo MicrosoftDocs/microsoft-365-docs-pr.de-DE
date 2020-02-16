@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über den Microsoft 365-Lösungskatalog, einschließlich dessen, was er enthält, wie Sie ihn erhalten und wie Sie die nächsten Schritte durchführen.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41891978"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071346"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -30,17 +30,17 @@ Lesen Sie diesen Artikel, um sich mit dem neuen Lösungskatalog im Microsoft 365
 
 Der Lösungskatalog ist in Abschnitten organisiert, die Informationskarten für jede kompatibilitätslösung enthalten, die in Ihrem Microsoft 365-Abonnement verfügbar ist. Jeder Abschnitt enthält Karten für Lösungen, die nach Kompatibilitätsbereich gruppiert sind.
 
-![Startseite des Microsoft 365-Lösungskatalogs](media/m365-solution-catalog-home.png)
+![Startseite des Microsoft 365-Lösungskatalogs](../media/m365-solution-catalog-home.png)
 
 Wenn Sie für eine Lösung Karte **anzeigen** auswählen, werden ausführliche Informationen zur Compliance-Lösung und zu den ersten Schritten angezeigt. Diese Informationen umfassen eine Übersicht, vorkonfigurierte Anforderungen, Lernressourcen, Steuerelemente, mit denen Sie die Karte an den Navigationsbereich anheften können, sowie eine Option zum Freigeben der Lösung als Link, e-Mail oder Microsoft Teams-Nachricht.
 
-![Microsoft 365 Communication Compliance-Lösung](media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 Communication Compliance-Lösung](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>Abschnitt "Information Protection & Governance"
 
 Der Abschnitt **Information Protection & Governance** zeigt Ihnen auf einen Blick, wie Sie mithilfe von Microsoft 365-Kompatibilitätslösungen Daten in Ihrer Organisation schützen und steuern können.
 
-![Microsoft 365 Solution Catalog Information Protection und Governance Section](media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 Solution Catalog Information Protection und Governance Section](../media/m365-solution-catalog-information-protection-governance.png)
 
 Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
@@ -53,7 +53,7 @@ Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
 Im Abschnitt **Insider Risk Management** auf der Startseite erfahren Sie auf einen Blick, wie Ihre Organisation interne Risiken erkennen, analysieren und einleiten kann, bevor Sie Schaden anrichten.
 
-![Abschnitt "Insider Risk Management" des Microsoft 365-Lösungskatalogs](media/m365-solution-catalog-insider-risk-management.png)
+![Abschnitt "Insider Risk Management" des Microsoft 365-Lösungskatalogs](../media/m365-solution-catalog-insider-risk-management.png)
 
 Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
@@ -64,7 +64,7 @@ Von hier aus sehen Sie Karten für die folgenden Lösungen:
 
 Im Abschnitt **Discovery & Response** auf der Startseite erfahren Sie auf einen Blick, wie Ihre Organisation auf Compliance-Probleme mit relevanten Daten schnell suchen, diese untersuchen und auf diese reagieren kann.
 
-![Abschnitt "Discovery and Response" im Microsoft 365-Lösungskatalog](media/m365-solution-catalog-discovery-response.png)
+![Abschnitt "Discovery and Response" im Microsoft 365-Lösungskatalog](../media/m365-solution-catalog-discovery-response.png)
 
 Von hier aus sehen Sie Karten für die folgenden Lösungen:
 

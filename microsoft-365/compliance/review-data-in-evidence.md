@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 18d67983d4e5e934e606944c1502dd76331812a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dffbc68714470e65557c58ded710ae53d64a3868
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597632"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070082"
 ---
 # <a name="review-the-data-in-evidence"></a>Überprüfen von Nachweisdaten
 
@@ -48,14 +48,14 @@ In dieser Ansicht werden verschiedene Metadaten-Eigenschaften angezeigt, die mit
 
 Im folgenden finden Sie ein Beispiel für die Datei Metadaten für ein Dokument. Weitere Informationen zu den Metadaten-Feldern finden Sie unter [Document Metadata fields in Data Investigations (Preview)](document-metadata-fields.md).
 
-![Datei Metadaten-Bereich](media/Reviewimage2.png)
+![Datei Metadaten-Bereich](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Systemeigene Ansicht
 
 Der systemeigene Viewer zeigt die genaueste Ansicht eines Dokuments im systemeigenen Format an. Native View wird für Hunderte von Dateitypen unterstützt und ist für die Anzeige von Dokumenten in der wahrsten nativen Umgebung möglich. Für Microsoft Office Dateien verwendet der systemeigene Viewer die Webversion von Office-Apps. Auf diese Weise können Sie Inhalte wie Kommentare in verschiedenen Office-Dokumenten, Formeln und ausgeblendeten Zeilen/Spalten in Excel und die Notizenansicht in PowerPoint anzeigen.
 
 ![Systemeigene Ansicht
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Text Ansicht
 
@@ -70,12 +70,12 @@ Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eing
 **Beispiel für einen Leistungsindikator und eine Hervorhebung von Suchtreffern in Text und ScrollBar**
 
 ![Text Ansicht
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **Beispiel für die diff-Ansicht**
 
 ![Vergleichsansicht
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Ansicht mit Anmerkungen versehen
 
@@ -101,7 +101,7 @@ Die anmerkungsansicht bietet auch die folgende Navigationsfunktionalität:
 
 **Beispiel für die Ansicht "anmerken"**
 
-![Ansicht mit Anmerkungen versehen](media/Reviewimage1.png)
+![Ansicht mit Anmerkungen versehen](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Anmerkungen werden auf eine Kopie des Dokuments angewendet, die dem Beweissatz hinzugefügt wurde. Die ursprünglichen Dokumente im Live-Dienst werden nicht kommentiert.

@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall.
+ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582914"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071607"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall
 
 Die Registerkarte depotverwalter in Advanced eDiscovery enthält eine Liste aller depotverwalter, die dem Fall hinzugefügt wurden. Nachdem Sie einem Fall Verwalter hinzugefügt haben, werden Details zu jeder Depotbank automatisch aus Azure Active Directory gesammelt und in Advanced eDiscovery angezeigt.
 
-![Verwalten von Depotbanken](media/CustodianDetails.PNG)
+![Verwalten von Depotbanken](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>Anzeigen von Depot Details
 
@@ -37,7 +37,7 @@ Um die Details zu einer Depotbank anzuzeigen, klicken Sie in der Liste auf der R
 
   - **Anzeigename** : der Name, der im Adressbuch für die Depotbank angezeigt wird. Dies ist in der Regel die Kombination aus Vorname, Vornamen und Nachname des Depotbank.
   
-   - **Mail/SMTP** – die primäre SMTP-Adresse für die Depotstelle, beispielsweise brianj@contoso.onmicrosoft.com. Beachten Sie, dass der Benutzerprinzipalname (UPN) des Verwalters ebenfalls aufgeführt wird.
+   - **Mail/SMTP** – die primäre SMTP-Adresse für die Depotstelle, beispielsweise brianj@contoso.onmicrosoft.com. Der Benutzerprinzipalname (UPN) der Depotbank wird ebenfalls aufgeführt.
 
   - **Title** – die Position des Verwalters.
 
@@ -72,17 +72,17 @@ Um die Details zu einer Depotbank anzuzeigen, klicken Sie in der Liste auf der R
 
 ## <a name="edit-a-custodian"></a>Bearbeiten einer Depotstelle
 
-Wenn Ihr Fall fortschreitet, stellen Sie möglicherweise fest, dass für eine bestimmte Depotbank #a0 Ihrem Fall möglicherweise zusätzliche Datenquellen relevant sind. In anderen Szenarien möchten Sie möglicherweise bestimmte Datenquellen entfernen, die überprüft und als nicht relevant erachtet wurden.
+Wenn Ihr Fall fortschreitet, stellen Sie möglicherweise fest, dass für eine bestimmte Depotbank & Ihrem Fall möglicherweise zusätzliche Datenquellen relevant sind. In anderen Szenarien möchten Sie möglicherweise bestimmte Datenquellen entfernen, die überprüft und als nicht relevant erachtet wurden.
 
 So aktualisieren Sie die Datenquellen, die einer Depotbank zugeordnet sind:
 
-1. Wechseln Sie zu **eDiscovery #a0 Advanced eDiscovery** , und öffnen Sie die Anfrage.
+1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
   
 2. Klicken Sie auf die Registerkarte **depotverwalter** .
   
 3. Wählen Sie in der Liste eine Depotbank aus, und klicken Sie auf der Flyout-Seite auf **Bearbeiten** .
 
-    ![Bearbeiten von Datenquellen](media/EditCustodianDataSource.PNG)
+    ![Bearbeiten von Datenquellen](../media/EditCustodianDataSource.PNG)
   
 4. Klicken Sie auf **Datenquellen** Registerkarte auswählen, um die Einstellungen für das Exchange-Postfach und das OneDrive-Konto der Depotbank zu ändern, indem Sie auf **Datenquellen auswählen**klicken.
   
@@ -92,15 +92,15 @@ So aktualisieren Sie die Datenquellen, die einer Depotbank zugeordnet sind:
   
 6. Klicken Sie auf **Depot Platz** Halter, um den Haltebereich für die Depotbank zu aktivieren oder zu deaktivieren.
 
-## <a name="resolve-custodian-processing-errors"></a>Beheben von Depot Verarbeitungsfehlern
+## <a name="re-index-custodian-data"></a>Erneutes Indizieren von Depotdaten
 
 In den meisten eDiscovery-Workflows für rechtliche Untersuchungen wird eine Teilmenge der Daten eines Depotinhabers durchsucht, nachdem die Depotbank einem Rechtsfall hinzugefügt wurde. Aufgrund sehr großer Dateigrößen oder möglicher Datenbeschädigungen können einige Elemente in den Datenquellen, die einer Depotbank zugeordnet sind, teilweise indiziert werden. Mithilfe der [erweiterten Indizierungs](indexing-custodian-data.md) Funktion in der erweiterten eDiscovery können die meisten teilweise indizierten Elemente automatisch durch Erneutes Indizieren dieser Elemente bei Bedarf behoben werden.
 
-Wenn eine Depotstelle einem Fall hinzugefügt wird, werden die Daten, die sich in den Datenquellen befinden, die der Depotbank zugeordnet sind, automatisch erneut indiziert (durch den erweiterten Indizierungsprozess). Dies bedeutet, dass Sie die Daten in einem Ort lassen können, anstatt Sie herunterladen und korrigieren und dann offline durchsuchen zu müssen. Während des Lebenszyklus eines Rechts Falls können jedoch neue Datenquellen einer Depotbank zugeordnet werden. In diesem Fall indizieren Sie die Daten der Depotbank neu, indem Sie den erweiterten Indizierungsprozess erneut durchführen, um teilweise indizierte Elemente zu korrigieren und den Index für die Daten der Depotbank zu aktualisieren.
+Wenn eine Depotstelle einem Fall hinzugefügt wird, werden die Daten, die sich in den Datenquellen befinden, die der Depotbank zugeordnet sind, automatisch erneut indiziert (durch den erweiterten Indizierungsprozess). Dies bedeutet, dass Sie die Daten in einem Ort lassen können, anstatt Sie herunterladen und korrigieren und dann offline durchsuchen zu müssen. Während des Lebenszyklus eines Rechts Falls können neue Datenquellen jedoch einer Depotbank zugeordnet werden. In diesem Fall können Sie die Daten der Depotbank erneut indizieren, indem Sie den erweiterten Indizierungsprozess erneut durchführen, um teilweise indizierte Elemente zu korrigieren und den Index für die Daten der Depotbank zu aktualisieren.
 
 So lösen Sie den erneuten Indizierungsprozess zum Adressieren von teilweise indizierten Elementen aus:
 
-1. Wechseln Sie zu **eDiscovery #a0 Advanced eDiscovery** , und öffnen Sie die Anfrage.
+1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
 2. Klicken Sie auf die **Registerkarte depotverwalter**, und wählen Sie dann eine Depotbank aus, deren Daten neu indiziert werden müssen. 
 
@@ -124,7 +124,7 @@ Wenn Sie einen depotverwalter freigeben, nachdem ein Aufbewahrungs Bescheid ver�
 
 So veröffentlichen Sie eine Depotstelle: 
 
-1. Wechseln Sie zu **eDiscovery #a0 Advanced eDiscovery** , und öffnen Sie die Anfrage.
+1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
 2.  Wechseln Sie zur Registerkarte **depotverwalter** .
 
@@ -136,7 +136,7 @@ So veröffentlichen Sie eine Depotstelle:
 
 5. Klicken Sie auf **Ja** , um zu bestätigen, dass Sie die Depotbank freigeben möchten. 
 
-    Beachten Sie, dass der Status für diesen Benutzer auf der Registerkarte " **Verwalter** " auf " **freigegeben** " und der **Aufbewahrungs Status** auf der Flyout-Seite in " **false**" geändert wurde. 
+    Der Status für diesen Benutzer auf der Registerkarte " **Verwalter** " wird auf " **freigegeben** " festgelegt, und der **Aufbewahrungs Status** auf der Flyout-Seite wird auf " **false**" geändert. 
 
 > [!NOTE]
 > Eine Depotbank kann gleichzeitig in mehreren Rechtsfällen beteiligt sein. Wenn ein depotverwalter von einem Fall freigegeben wird, werden die Aufbewahrungs-und Benachrichtigungen in anderen Bereichen nicht beeinträchtigt.
@@ -145,4 +145,4 @@ So veröffentlichen Sie eine Depotstelle:
 
 Sie können den Massen-Editor verwenden, um mehrere Verwalter gleichzeitig zu bearbeiten. Wählen Sie dazu einfach mindestens zwei Verwalter auf der Registerkarte **depotverwalter** aus, um den Massen Editor anzuzeigen, und klicken Sie dann auf eine der Aufgaben.
 
-![Flyout-Seite zum Bearbeiten von Einstellungen mehrerer depotverwalter](media/AeDBulkEditCustodians.png)
+![Flyout-Seite zum Bearbeiten von Einstellungen mehrerer depotverwalter](../media/AeDBulkEditCustodians.png)
