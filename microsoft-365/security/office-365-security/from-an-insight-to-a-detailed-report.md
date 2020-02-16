@@ -17,12 +17,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einer einblickung zu einem detaillierten Bericht im &amp; Security Compliance Center durch ein Beispiel zur Verhinderung von Datenverlust navigieren können.
-ms.openlocfilehash: 80ef8622abbf35304a9d61ff8730b12a2a6e09e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599272"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083049"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
 
@@ -34,13 +34,13 @@ Dies ist eine von mehreren exemplarischen Vorgehensweisen für das [ &amp; Secur
 
 Lassen Sie uns den Fluss vom Dashboard zu einem Einblick in einen detaillierten Bericht für die Datenexploration durchgehen. (Dies ist ein Beispiel für eine kurze [Verhinderung von Datenverlust](../../compliance/data-loss-prevention-policies.md) .) 
   
-1. Wir beginnen mit einem Dashboard im [ &amp; Security Compliance Center](https://protection.office.com). (Wechseln Sie zum **Dashboard** **Berichte** \> .)<br/>![Wählen Sie im &amp; Security Compliance Center die Option \> Berichte-Dashboard aus.](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Wir beginnen mit einem Dashboard im [ &amp; Security Compliance Center](https://protection.office.com). (Wechseln Sie zum **Dashboard** **Berichte** \> .)<br/>![Wählen Sie im &amp; Security Compliance Center die Option \> Berichte-Dashboard aus.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-2. In der oberen linken Ecke des Dashboards, neben **Top Insights &amp; -Empfehlungen**, haben wir einen Link. (Klicken Sie auf **Alle anzeigen**.)<br/>![Wählen Sie im &amp; Security Compliance Center Dashboards \> für Berichte aus, um Ihre wichtigsten Einblicke anzuzeigen.](../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Dies führt uns zu einer Liste von Einblicken für unsere Organisation.<br/>![Im Security &amp; Compliance Center können Sie alle Einblicke in einer Liste anzeigen.](../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
+2. In der oberen linken Ecke des Dashboards, neben **Top Insights &amp; -Empfehlungen**, haben wir einen Link. (Klicken Sie auf **Alle anzeigen**.)<br/>![Wählen Sie im &amp; Security Compliance Center Dashboards \> für Berichte aus, um Ihre wichtigsten Einblicke anzuzeigen.](../../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Dies führt uns zu einer Liste von Einblicken für unsere Organisation.<br/>![Im Security &amp; Compliance Center können Sie alle Einblicke in einer Liste anzeigen.](../../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
-3. Wenn Sie ein Element in der Liste auswählen, wird ein Bereich geöffnet, in dem weitere Details zu diesem Element angezeigt werden. (Klicken Sie auf ein Element.)<br/>![Details für eine ausgewählte Einblicke](../media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Wir sehen Empfohlene Maßnahmen, die wir berücksichtigen sollten, wie das Überprüfen von Richtlinien. ([Weitere Informationen zu Richtlinien zur Verhinderung von Datenverlust](../../compliance/data-loss-prevention-policies.md))
+3. Wenn Sie ein Element in der Liste auswählen, wird ein Bereich geöffnet, in dem weitere Details zu diesem Element angezeigt werden. (Klicken Sie auf ein Element.)<br/>![Details für eine ausgewählte Einblicke](../../media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Wir sehen Empfohlene Maßnahmen, die wir berücksichtigen sollten, wie das Überprüfen von Richtlinien. ([Weitere Informationen zu Richtlinien zur Verhinderung von Datenverlust](../../compliance/data-loss-prevention-policies.md))
     
-4. Wir haben auch einen Link, um weitere Details anzuzeigen. (Klicken Sie **im Explorer auf verwandte Aktivität anzeigen**.)<br/>Dadurch werden wir zu einem Berichtstyp namens " [Threat Explorer" (und Echtzeiterkennung)](threat-explorer.md), auf dem wir Filter und Drilldowns auf bestimmte Details anwenden können.<br/>![Explorer-Ansicht mit ausführlicheren Details zu einer ausgewählten Einblicke](../media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. Wir haben auch einen Link, um weitere Details anzuzeigen. (Klicken Sie **im Explorer auf verwandte Aktivität anzeigen**.)<br/>Dadurch werden wir zu einem Berichtstyp namens " [Threat Explorer" (und Echtzeiterkennung)](threat-explorer.md), auf dem wir Filter und Drilldowns auf bestimmte Details anwenden können.<br/>![Explorer-Ansicht mit ausführlicheren Details zu einer ausgewählten Einblicke](../../media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 Auf diese Weise können wir leicht von einem Einblick in die zugrunde liegenden Details umstellen und fundiertere Entscheidungen zur Verhinderung von Datenverlust für eine Organisation treffen.
   

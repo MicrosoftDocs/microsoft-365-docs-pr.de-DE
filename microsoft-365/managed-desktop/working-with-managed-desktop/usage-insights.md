@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 43e1ec21719dd4dcab2d2e285197476d54734a13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962352"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085648"
 ---
 # <a name="usage-insights"></a>Benutzungseinblicke
 In dieser Ansicht werden Verwendungs Metriken für Ihre von Microsoft verwalteten Desktop Geräte bereitgestellt. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte **Nutzung** aus.
 
-![Verwendungsbereich. Geräte Nutzungs Diagramm (prozentuale Nutzung im Vergleich zur Zeit) oben links. Tabelle "Anwendungsverwendung" in der oberen rechten Ecke. Geräte Auflistungs Tabelle unten mit Spalten Gerätename, Modell, Seriennummer, Anzeigename, Benutzername, aktueller Status (aktiv, niedrig oder inaktiv), Gesamt Geräteauslastung in Stunden und Anzahl aktiver Tage.](images/insights_usage.png)
+![Verwendungsbereich. Geräte Nutzungs Diagramm (prozentuale Nutzung im Vergleich zur Zeit) oben links. Tabelle "Anwendungsverwendung" in der oberen rechten Ecke. Geräte Auflistungs Tabelle unten mit Spalten Gerätename, Modell, Seriennummer, Anzeigename, Benutzername, aktueller Status (aktiv, niedrig oder inaktiv), Gesamt Geräteauslastung in Stunden und Anzahl aktiver Tage.](../../media/insights_usage.png)
 
 ## <a name="device-usage"></a>Gerätenutzung
 

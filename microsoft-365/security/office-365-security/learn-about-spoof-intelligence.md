@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie Spoof Intelligence im Security &amp; Compliance Center auf der Seite Anti-Spam-Einstellungen, um alle Absender zu überprüfen, die entweder Spoofing von Domänen sind, die Teil Ihrer Organisation sind, oder Spoofing externer Domänen. Spoof Intelligence steht als Teil von Office 365 Enterprise E5 oder separat im Rahmen von Advanced Threat Protection und Exchange Online Protection zur Verfügung.
-ms.openlocfilehash: 82b3759290e4cf0024aaf74a066354f46ea3a303
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599092"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082961"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Wissenswertes zur Spoofintelligenz
 
@@ -79,7 +79,7 @@ Sie können die Absender, die Ihre Domäne Spoofing durchführen, oder externe D
 
 3. Erweitern Sie im &amp; Security Compliance Center den Knoten **Threat Management** \> **Policy** \> **Anti-Spam**.
 
-    ![Screenshot mit Zugriff auf die Anti-Spam-Seite](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Screenshot mit Zugriff auf die Anti-Spam-Seite](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
 4. Scrollen Sie auf der Seite **Anti-Spam-Einstellungen** im rechten Bereich nach unten, und erweitern Sie **Spoof Intelligence Policy**.
 
@@ -89,7 +89,7 @@ Sie können die Absender, die Ihre Domäne Spoofing durchführen, oder externe D
 
     Wenn Sie bereits Absender überprüft haben und einige der vorherigen Optionen ändern möchten, können Sie stattdessen die Option **mir Absender anzeigen auswählen, die ich bereits überprüft habe** . In beiden Fällen wird der folgende Bereich angezeigt.
 
-    ![Screenshot mit Zugriff auf die Registerkarte "gefälschte Absender"](../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Screenshot mit Zugriff auf die Registerkarte "gefälschte Absender"](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
     Jeder Spoofing-Benutzer wird in einer separaten Zeile angezeigt, sodass Sie auswählen können, ob der Absender jeden Benutzer einzeln Spoofing zulassen oder blockieren darf.
 
@@ -97,7 +97,7 @@ Sie können die Absender, die Ihre Domäne Spoofing durchführen, oder externe D
 
     Um die Richtlinie für Domänen festzulegen, die Ihnen nicht gehören, wählen Sie die Registerkarte **externe Domänen** aus. ändern Sie in der Spalte **zulässiges Spoofing** den Absender in **Ja** , um dem Absender das Senden nicht authentifizierter e-Mails an Ihre Organisation zu gestatten. Wenn Sie der Meinung sind, dass Office 365 einen Fehler gemacht hat, um dem Absender die Möglichkeit zu geben, gefälschte e-Mail-Nachrichten zu senden, ändern Sie die Spalte **zulässig in Spoof** auf **Nein**.
 
-    ![Screenshot, der angibt, ob ein Absender Spoofing zulässig ist](../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Screenshot, der angibt, ob ein Absender Spoofing zulässig ist](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
 
 6. Klicken Sie auf **Speichern** , um alle Änderungen zu speichern.
 
@@ -128,7 +128,7 @@ Auch wenn die Richtlinie zum Schutz vor Spoofing im Security &amp; Compliance Ce
 
 6. Konfigurieren Sie als nächstes die Aktionen, die ausgeführt werden sollen, wenn eine Nachricht als domänenübergreifendes Spoof erkannt wird. Das Standardverhalten besteht darin, die Nachricht in den Junk-e-Mail-Ordner des Empfängers zu verlagern. Die andere Option besteht darin, die Nachricht an die Quarantäne zu senden. Weitere Informationen zum Verwalten von Nachrichten, die an die Quarantäne gesendet werden, finden Sie unter [Quarantäne von e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
 
-    ![Screenshot mit Optionen zur Bearbeitung von Antispoofing-Richtlinien](../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+    ![Screenshot mit Optionen zur Bearbeitung von Antispoofing-Richtlinien](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
 
 7. Treffen Sie Ihre Auswahl, und wählen Sie dann **Speichern**aus.
 

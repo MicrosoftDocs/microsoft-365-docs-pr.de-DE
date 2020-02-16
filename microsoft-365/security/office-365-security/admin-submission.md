@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie verdächtige e-Mails, verdächtige Phishing-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien von Ihrem Office 365-Mandanten zur Überprüfung an Microsoft übermitteln.
-ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599982"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083629"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Vorgehensweise übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft für Office 365-Scans
 
@@ -35,7 +35,7 @@ Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neu
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Senden einer fragwürdigen e-Mail an Microsoft
 
-![Beispiel für eine e-Mail-Übermittlung](../media/submission-flyout-email.PNG)
+![Beispiel für eine e-Mail-Übermittlung](../../media/submission-flyout-email.PNG)
 
 1. Um eine e-Mail zu senden, wählen Sie **e-Mail** und geben Sie die e-Mail- **Netzwerknachrichten-ID** an, oder laden Sie die e-Mail-Datei
 
@@ -51,7 +51,7 @@ Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neu
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
-![Beispiel für eine e-Mail-Übermittlung](../media/submission-url-flyout.png)
+![Beispiel für eine e-Mail-Übermittlung](../../media/submission-url-flyout.png)
 
 1. So übermitteln Sie eine URL wählen Sie **URL** aus dem Flyout aus. Geben Sie die vollständige URL einschließlich des Protokolls (**https://**) ein.
 
@@ -61,7 +61,7 @@ Um Inhalte an Microsoft zu übermitteln, klicken Sie auf die Schaltfläche **neu
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer vermuteten Datei an Microsoft
 
-![Beispiel für eine e-Mail-Übermittlung](../media/submission-file-flyout.PNG)
+![Beispiel für eine e-Mail-Übermittlung](../../media/submission-file-flyout.PNG)
 
 1. Um eine Datei zu übermitteln, wählen Sie **Datei** aus dem Flyout aus, und laden Sie die Datei hoch, die Sie überprüfen möchten.
 

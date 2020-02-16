@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die Gruppenbasierte Lizenzierung und die dynamische Gruppenmitgliedschaft in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: 0575f2aa763f85a0042e6d02f9cce65e69064973
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 266ae8cb133eccf74ea75382b400ca8241782ec5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601182"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068502"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatisieren der Lizenzierung und der Gruppenmitgliedschaft für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -33,10 +33,10 @@ Es gibt zwei Phasen zum Einrichten der automatischen Lizenzierung und der dynami
 1. Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
 2. Konfigurieren und Testen der dynamischen Gruppenmitgliedschaft und der automatischen Lizenzierung.
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
@@ -78,11 +78,11 @@ Als nächstes testen Sie die dynamische Gruppenmitgliedschaft und die automatisc
 2. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** auf **aktive Benutzer**.
 3. Klicken Sie auf der Seite **aktive Benutzer** auf das Konto **Benutzer 4** .
 4. Klicken Sie im Bereich **Benutzer 4** auf für **Produktlizenzen** **Bearbeiten** .
-5. Deaktivieren Sie im Bereich **Produktlizenzen** die Lizenz **Microsoft 365 E5** , und klicken Sie dann auf **#a0 schließen speichern**.
+5. Deaktivieren Sie im Bereich **Produktlizenzen** die Lizenz **Microsoft 365 E5** , und klicken Sie dann auf **> schließen speichern**.
 6. Überprüfen Sie in den Eigenschaften des Benutzerkontos 4, dass keine Produktlizenzen zugewiesen wurden und keine Gruppenmitgliedschaften vorhanden sind.
 7. Klicken Sie auf **Bearbeiten** , um **Kontaktinformationen zu erhalten**.
 8. Klicken Sie im Bereich **Kontaktinformationen bearbeiten** auf **Kontaktinformationen**.
-9. Geben Sie im Feld **Abteilung** den Namen **Sales**ein, und klicken Sie dann auf **#a0 schließen speichern**.
+9. Geben Sie im Feld **Abteilung** den Namen **Sales**ein, und klicken Sie dann auf **> schließen speichern**.
 10. Warten Sie einige Minuten, und klicken Sie dann regelmäßig auf das Aktualisierungssymbol in der oberen rechten Ecke des Benutzer-4-Konto Bereichs. 
 
 In der Zeit sollte Folgendes angezeigt werden:

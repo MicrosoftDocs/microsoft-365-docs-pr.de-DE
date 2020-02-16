@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 64a2936b5a2f9e670a3d89c50424ca0322e99c13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011846"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085794"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Einrichten von Microsoft Managed Desktop-Geräten
 
@@ -38,11 +38,11 @@ Es wird empfohlen, mit einem unserer genehmigten Geräte Partner zusammenzuarbei
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
 
-1. [Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal](add-admin-contacts.md)
-2. [Anpassen des bedingten Zugriffs](conditional-access.md)
+1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
+2. [Bedingten Zugriff anpassen](conditional-access.md)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
-4. [Bereitstellen des InTune-Unternehmensportals](company-portal.md)
-5. [Aktivieren des Enterprise-Status-Roaming](enterprise-state-roaming.md)
+4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
+5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
 6. Einrichten von Geräten (dieses Thema)
 7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
 8. [Bereitstellen von Apps](deploy-apps.md)

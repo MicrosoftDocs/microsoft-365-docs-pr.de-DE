@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f06b2b895899973d071df384b53a090b766fd77f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598362"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082229"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -71,7 +71,7 @@ Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, verfü
     
 2. Wählen Sie im linken Navigationsbereich unter **Threat Management**die **Option \> Richtlinien** **sichere Links**aus.
     
-3. Wählen Sie in den **Richtlinien für den Abschnitt gesamte Organisation** die Option **Standard**aus, und klicken Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten ähnelt einem Bleistift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für den Schutz von sicheren Links zu bearbeiten.](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. Wählen Sie in den **Richtlinien für den Abschnitt gesamte Organisation** die Option **Standard**aus, und klicken Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten ähnelt einem Bleistift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für den Schutz von sicheren Links zu bearbeiten.](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. Geben Sie im Abschnitt **folgende URLs blockieren** eine oder mehrere URLs an, die verhindern sollen, dass Personen in Ihrer Organisation besucht werden. (Weitere Informationen finden Sie unter [Einrichten einer Liste benutzerdefinierter blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
     
@@ -89,7 +89,7 @@ Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bear
     
 3. Wählen Sie **sichere Links**aus.
     
-4. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** auswählen die Option **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()).<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** auswählen die Option **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()).<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Geben Sie den Namen, die Beschreibung sowie Einstellungen für Ihre Richtlinie an.<br/>**Beispiel:** Um eine Richtlinie mit dem Namen "kein direkter Mausklick" einzurichten, mit der Personen in einer bestimmten Gruppe in Ihrer Organisation nicht durch Klicken auf eine bestimmte Website ohne den Schutz vor ATP-Links geschützt werden können, geben Sie möglicherweise die folgenden empfohlenen Einstellungen an: 
     
@@ -135,7 +135,7 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 
 |Diese Option  |Funktion  |
 |---------|---------|
-|**Aus** <br/> |Überprüft URLs in e-Mail-Nachrichten nicht.  <br/> Ermöglicht das Definieren einer Ausnahmeregel, beispielsweise eine Regel, die URLs in e-Mail-Nachrichten für eine bestimmte Empfängergruppe nicht überprüft.  <br/> |
+|**Off** <br/> |Überprüft URLs in e-Mail-Nachrichten nicht.  <br/> Ermöglicht das Definieren einer Ausnahmeregel, beispielsweise eine Regel, die URLs in e-Mail-Nachrichten für eine bestimmte Empfängergruppe nicht überprüft.  <br/> |
 |**On** <br/> |Umschreibt URLs, um Benutzer über ATP-Safe-Links-Schutz zu leiten, wenn die Benutzer auf URLs in e-Mail-Nachrichten klicken und ATP-sichere Links in Outlook (C2R) unter Windows aktiviert.  <br/> Überprüft eine URL, wenn auf eine Liste blockierter oder böswilliger URLs geklickt wird, und löst asynchron eine Detonation der URL im Hintergrund aus, wenn die URL nicht über eine gültige Reputation verfügt.  <br/> |
 |**Übernehmen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen** <br/> |Wenn diese Option ausgewählt ist, werden verdächtige URLs und Links, die auf herunterladbaren Inhalt verweisen, überprüft.  <br/> |
 |**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht liefern** <br/> |Wenn diese Option ausgewählt ist, werden Nachrichten, die zu scannende URLs enthalten, bis zum Abschluss der Überprüfung der URLs aufbewahrt und bestätigt, dass Sie sicher sind, bevor die Nachrichten zugestellt werden.  <br/> |

@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 50566abfa7bec55fb42465132361971113453a06
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957360"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084469"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -34,11 +34,11 @@ ms.locfileid: "41957360"
 
 Threat Tracker sind informative Widgets und Ansichten, die Ihnen Informationen zu verschiedenen Cyber-Problemen bereitstellen, die sich auf Ihr Unternehmen auswirken könnten. Beispielsweise können Sie Informationen zu Trending-Schadsoftware-Kampagnen mithilfe von Threat Tracker anzeigen.
   
-![Beispiel für Threat Tracker mit Malware Kampagnen](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Beispiel für Threat Tracker mit Malware Kampagnen](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 Die meisten Tracker-Seiten umfassen Trend Nummern, die regelmäßig aktualisiert werden, Widgets, die Ihnen helfen zu verstehen, welche Probleme am größten sind oder am stärksten gewachsen sind, sowie einen Quick Link in der Spalte **Aktionen** , die Sie zum Explorer führt, in dem Sie ausführlichere Informationen anzeigen können. 
   
-![Beispiel für Kampagneninformationen im Explorer](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Beispiel für Kampagneninformationen im Explorer](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 Tracker sind nur einige der vielen tollen Funktionen, die Sie mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)erhalten. Zu den Gefahren Verfolgungen gehören [Noteworth-Tracker](#noteworthy-trackers), [Trend Tracker](#trending-trackers), nach [verfolgte Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
   
@@ -57,7 +57,7 @@ In der Regel werden bemerkenswerte Tracker nur für ein paar Wochen veröffentli
 
 Trending Tracker (früher als Kampagnen bezeichnet) zeigen neue Bedrohungen an, die in der letzten Woche in der e-Mail-Adresse Ihrer Organisation eingegangen sind.
   
-![Beispiel für Trending Malware Campaigns widget](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Beispiel für Trending Malware Campaigns widget](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 Trend Tracker geben Ihnen eine Vorstellung von neuen Bedrohungen, die Sie überprüfen sollten, um sicherzustellen, dass Ihre breitere Unternehmensumgebung gegen Angriffe vorbereitet ist.
   
@@ -65,13 +65,13 @@ Trend Tracker geben Ihnen eine Vorstellung von neuen Bedrohungen, die Sie überp
 
 Nachverfolgte Abfragen nutzen Ihre gespeicherten Abfragen, um Office 365 Aktivitäten in Ihrer Organisation regelmäßig zu bewerten. Dies gibt Ihnen Ereignis Trends, mit mehr in den kommenden Monaten kommen. Nachverfolgte Abfragen werden automatisch ausgeführt, sodass Sie aktuelle Informationen erhalten, ohne sich daran erinnern müssen, Ihre Abfragen erneut auszuführen.
   
-![Beispiel für nachverfolgte Abfragen mit einem ausgewählten](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Beispiel für nachverfolgte Abfragen mit einem ausgewählten](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>Gespeicherte Abfragen
 
 Gespeicherte Abfragen finden Sie auch im Abschnitt Trackers. Sie können gespeicherte Abfragen verwenden, um die allgemeinen Explorer-Suchvorgänge zu speichern, die Sie schneller und wiederholter wiederherstellen möchten, ohne die Suche jedes Mal neu erstellen zu müssen.
   
-![Beispiel für gespeicherte Abfragen mit einem ausgewählten](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Beispiel für gespeicherte Abfragen mit einem ausgewählten](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 Sie können eine bemerkenswerte Tracker-Abfrage oder eine ihrer eigenen Explorer-Abfragen jederzeit über die Schaltfläche **Abfrage speichern** oben auf der Explorer-Seite speichern. Alles, was dort gespeichert ist, wird in der Liste **gespeicherte Abfragen** auf der Seite Tracker angezeigt. 
   
@@ -81,13 +81,13 @@ Unabhängig davon, ob Sie e-Mails, Inhalte oder Office-Aktivitäten (in Kürze) 
   
 Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Office 365 Sicherheitsfeatures geben können, indem Sie auf die Schaltfläche **Feedback** in der unteren rechten Ecke der [Übersicht des Office 365 &amp; Security Compliance Center](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)klicken.
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Tracker und Office 365 Advanced Threat Protection
 
 Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [Office 365 sichere ATP-Anhänge](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und nicht [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) verwenden, sollten Sie in Ihrem Abonnement enthalten sein. ATP bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Anti-Spam-und [Office 365 ATP-sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365 erfolgt. 
   
-![ATP im Security &amp; Compliance Center](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP im Security &amp; Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature "ATP-sichere Anlagen" übernimmt e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Office 365 ATP-Funktionen diese Bedrohungen basierend auf Verhaltensweisen, dateireputation und einer Reihe von heuristischen Regeln.
   

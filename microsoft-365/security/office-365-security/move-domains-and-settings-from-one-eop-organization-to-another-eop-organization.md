@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden.
-ms.openlocfilehash: cfd83b8558ed4cec3a48b536437e0a0dbe75aeaa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598772"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088328"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
@@ -28,7 +28,7 @@ ms.locfileid: "41598772"
 
 Im folgenden Beispiel wurde Contoso, Ltd. mit Contoso Suites zusammengeführt. Auf dem folgenden Bild ist der Prozess für das Verschieben von Domänen, E-Mail-Benutzern und Gruppen sowie Einstellungen aus der EOP-Quellorganisation (contoso.onmicrosoft.com) zur EOP-Zielorganisation (contososuites.onmicrosoft.com) dargestellt:
 
-![EOP-Domänen und -Einstellungen verschieben](../media/EOP-Move-domains-and-settings.jpg)
+![EOP-Domänen und -Einstellungen verschieben](../../media/EOP-Move-domains-and-settings.jpg)
 
 Das Problem beim Verschieben von Domänen zwischen Organisationen besteht darin, dass eine überprüfte Domäne nicht gleichzeitig in zwei Organisationen vorhanden sein kann. Die folgenden Schritte unterstützen Sie bei diesem Prozess.
 

@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als Office 365 globaler Administrator können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957410"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083677"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
@@ -57,7 +57,7 @@ Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen f
 
 - Ihre Organisation verfügt über [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), in dem der Angriffs &amp; Simulator im Security Compliance Center sichtbar ist (zu **Threat Management** \> **Attack Simulator**wechseln).
 
-    ![Threat Management – Angriffs Simulator](../media/ThreatMgmt-AttackSimulator.png)
+    ![Threat Management – Angriffs Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## <a name="credential-harvest-spear-phishing-attack"></a>Anmeldeinformationen: Ernte Speer-Phishing-Angriff
 
@@ -67,7 +67,7 @@ Dieser Angriff konzentriert sich darauf, dass Sie den Anzeigenamen und die Quell
 
 ### <a name="to-simulate-a-spear-phishing-attack"></a>So simulieren Sie einen Speer-Phishing-Angriff
 
-![E-Mail-Textkörper erstellen](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![E-Mail-Textkörper erstellen](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst oder mit HTML-Quelle arbeiten.
 
@@ -75,15 +75,15 @@ Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst od
 
 2. Geben Sie einen aussagekräftigen Kampagnennamen für den Angriff an, oder wählen Sie eine Vorlage aus.
 
-   ![Phishing-Start Seite](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![Phishing-Start Seite](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. Geben Sie die Zielempfänger an. Hierbei kann es sich um Einzelpersonen oder Gruppen in Ihrer Organisation handeln. Jeder Zielempfänger muss über ein Exchange Online Postfach verfügen, damit der Angriff erfolgreich verläuft.
 
-   ![Empfängerauswahl](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![Empfängerauswahl](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. Konfigurieren Sie die Phishing-e-Mail-Details.
 
-   ![Konfigurieren von e-Mail-Details](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![Konfigurieren von e-Mail-Details](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    Die HTML-Formatierung kann so komplex oder einfach sein, wie Ihre Kampagne benötigt. Da das e-Mail-Format HTML ist, können Sie Bilder und Text einfügen, um die Glaubwürdigkeit erhöhen zu verbessern. Sie haben die Kontrolle darüber, wie die empfangene Nachricht im empfangenden e-Mail-Client aussehen wird.
 

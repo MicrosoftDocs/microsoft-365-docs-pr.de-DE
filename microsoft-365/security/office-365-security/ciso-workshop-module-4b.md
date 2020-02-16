@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 38f7a1af7592801a97fd8b5156dcbfaa1c5ebfdf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f187c00a7ce55bbcfe66171bbcc1668f431e3b25
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599682"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083514"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop-Modul 4B: Bedrohungsschutz Strategie 
 
 In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security Operations Center (SoC), die von Billionen von Signalen im Microsoft Intelligent Security Graph betrieben werden, überprüft.
 
-- PDF-Zusammenfassung herunterladen: [Modul 4B: Bedrohungsschutz Strategie](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- PDF-Zusammenfassung herunterladen: [Modul 4B: Bedrohungsschutz Strategie](../../media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - Herunterladen der PowerPoint-Zusammenfassung: [Modul 4B: Bedrohungsschutz Strategie](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>Einführung: Bedrohungsschutz Strategie (Detect-respond-Recover) (3:38)

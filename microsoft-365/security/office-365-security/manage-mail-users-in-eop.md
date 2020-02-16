@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: 53d47452979c42273fd485fa89642eea881bb21a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598982"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088584"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
@@ -32,7 +32,7 @@ Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Ex
 > [!NOTE]
 > Sie können Benutzer im Microsoft 365 Admin Center hinzufügen, jedoch können diese Benutzer nicht als e-Mail-Empfänger verwendet werden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -108,7 +108,7 @@ In diesem Abschnitt finden Sie Informationen über das Hinzufügen und Verwalten
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>Bearbeiten oder Entfernen eines e-Mail-Benutzers mithilfe der Exchange-Verwaltungskonsole
 
-- Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**. Klicken Sie in der Liste der Benutzer auf den Benutzer, den Sie anzeigen oder ändern möchten, und wählen **** ![Sie dann Bearbeitungs](../media/ITPro-EAC-EditIcon.gif) Symbol bearbeiten aus, um die Benutzereinstellungen nach Bedarf zu aktualisieren. Sie können den Benutzernamen, Aliasnamen oder die Kontaktinformationen ändern, und Sie können ausführliche Informationen zur Benutzerrolle in der Organisation eingeben. Sie können auch einen Benutzer auswählen und dann Remove **** ![-Symbol](../media/ITPro-EAC-RemoveIcon.gif) entfernen auswählen, um es zu löschen.
+- Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**. Klicken Sie in der Liste der Benutzer auf den Benutzer, den Sie anzeigen oder ändern möchten, und wählen **** ![Sie dann Bearbeitungs](../../media/ITPro-EAC-EditIcon.gif) Symbol bearbeiten aus, um die Benutzereinstellungen nach Bedarf zu aktualisieren. Sie können den Benutzernamen, Aliasnamen oder die Kontaktinformationen ändern, und Sie können ausführliche Informationen zur Benutzerrolle in der Organisation eingeben. Sie können auch einen Benutzer auswählen und dann Remove **** ![-Symbol](../../media/ITPro-EAC-RemoveIcon.gif) entfernen auswählen, um es zu löschen.
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Verwenden von Exchange Online Protection PowerShell zum Verwalten von e-Mail-Benutzern
 

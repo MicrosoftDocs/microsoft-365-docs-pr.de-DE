@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie die Zulassungsliste in einer Spamfilter Richtlinie anpassen.
-ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 727c0eec837627bdf7da05411f619f7705425fe7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957260"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083433"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
 
@@ -63,12 +63,12 @@ Die Aktion für die Regel muss diesem Muster entsprechen:
 
 2. Fügen Sie einen X-Header hinzu, um zu sagen, was die Regel bewirkt. Im folgenden Beispiel können Sie eine einfache Kopfzeile `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`hinzufügen. Wenn Sie mehr als eine Domäne in dieser Regel haben, können Sie den Kopfzeilentext entsprechend ändern. **Wenn eine Nachricht die Filterung aufgrund einer e-Mail-Fluss Regel überspringt, stempelt Sie SFV: SKN im X-Forefront-Antispam-Report-Header** (**Wenn Sie sich in einer IP-Zulassungsliste befindet, stempelt Sie auch IPV: Cal**). Dies hilft bei der Problembehandlung.
 
-![GUI zur Umgehung der Spamfilterung.](../media/1-AllowList-SkipFilteringFromContoso.png)
+![GUI zur Umgehung der Spamfilterung.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > Konfigurieren Sie Nachrichtenfluss Regeln nur mit *der Absenderdomäne* als Bedingung zum Überspringen der Spamfilterung. Diese Methode erhöht erheblich das Risiko, dass Spammer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse annehmen), alle Spamfilterung überspringen, Absender Authentifizierungsprüfungen und die Nachricht wird im Posteingang einer Person eingehen.
 
-![Vorgehensweise zum Festlegen des SCL auf minus eins.](../media/2-AllowList-SetsSCLMinus1.png)
+![Vorgehensweise zum Festlegen des SCL auf minus eins.](../../media/2-AllowList-SetsSCLMinus1.png)
 
 Fügen Sie keine Domänen, die Sie besitzen, oder beliebte Domänen ( `microsoft.com`beispielsweise) zur Nachrichtenfluss Regel als Bedingung hinzu. Dies wird als hohes Risiko betrachtet, da es Gelegenheiten für fehlerhafte Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden.
 

@@ -17,12 +17,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre ATP-Richtlinien für sichere Links einrichten, können Sie eine "do-not-rewrite"-Liste mit URLs einfügen, um es einigen Personen in Ihrer Organisation zu ermöglichen, Websites zu besuchen, die Sie in Ihre Liste aufnehmen.
-ms.openlocfilehash: 3a2fd98adc1eee36a984ac09b80546ae6b98e31d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1983e0ff2ea85092af483d4f7a563681a6441152
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598372"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082209"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe Office 365 sicherer ATP-Links
 
@@ -37,7 +37,7 @@ In diesem Artikel wird beschrieben, wie Sie eine Liste von URLs angeben, die von
 
 Der Schutz für ATP-Verknüpfungen verwendet mehrere Listen, einschließlich der Liste der blockierten URLs Ihrer Organisation und der Listen "nicht umschreiben" für Ausnahmen. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie die benutzerdefinierten Listen "nicht umschreiben" einrichten. Sie tun dies, wenn Sie Richtlinien für sichere Links hinzufügen oder bearbeiten, die für bestimmte Empfänger in Ihrer Organisation gelten.
 
-Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprechende Rolle zugewiesen sein. Die folgende Tabelle enthält einige Beispiele. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprechende Rolle zugewiesen sein. Die folgende Tabelle enthält einige Beispiele. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 |Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
@@ -46,7 +46,7 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 |Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>So zeigen Sie eine benutzerdefinierte Liste der URLs "nicht umschreiben" an oder bearbeiten diese
 
@@ -54,7 +54,7 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 
 2. Klicken Sie im linken Navigationsbereich unter **sichere Links**zur **Bedrohungs Verwaltungs** \> **Richtlinie** \> .
 
-3. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** festlegen die Option **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()), um eine neue Richtlinie zu erstellen. (Alternativ können Sie eine vorhandene Richtlinie bearbeiten.)<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** festlegen die Option **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()), um eine neue Richtlinie zu erstellen. (Alternativ können Sie eine vorhandene Richtlinie bearbeiten.)<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Geben Sie einen Namen und eine Beschreibung für Ihre Richtlinie an.
 

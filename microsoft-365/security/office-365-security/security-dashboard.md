@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie das neue Sicherheits Dashboard, um Office 365 Bedrohungsschutz Status zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: 04c146a90cacccee831edd8a825bff0139963e16
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85c616c717a85f9a6a47e63a48621a8703b487aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598462"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088189"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 
@@ -44,7 +44,7 @@ Um das Sicherheits Dashboard anzuzeigen, wechseln Sie im [Office 365 &amp; Secur
 
 Das Widget "Threat Management Summary" informiert Sie auf einen Blick, wie Ihre Organisation vor Bedrohungen in den letzten sieben (7) Tagen geschützt wurde.
 
-![Security Dashboard – Zusammenfassung zum Threat Management-Widget](../media/SecDash-ThreatMgmtSummary.png)
+![Security Dashboard – Zusammenfassung zum Threat Management-Widget](../../media/SecDash-ThreatMgmtSummary.png)
 
 Die Informationen, die Sie in der Zusammenfassung des Threat Managements sehen, hängen davon ab, was Ihr Abonnement enthält. In der folgenden Tabelle wird beschrieben, welche Informationen für Office 365 E3 und Office 365 E5 enthalten sind.
 
@@ -59,7 +59,7 @@ Zum Anzeigen oder zugreifen auf das Threat Management-Zusammenfassungs Widget be
 
 Das Threat Protection-Status-Widget zeigt die Effektivität des Bedrohungsschutzes mit einer Trend-und detaillierten Ansicht von Phishing und Schadsoftware. 
 
-![Widget "Bedrohungsschutz Status"](../media/tpswidget.png)
+![Widget "Bedrohungsschutz Status"](../../media/tpswidget.png)
 
 Die Details hängen davon ab, ob Ihr Office 365 Abonnement [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) mit oder ohne [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) enthält.
 
@@ -75,7 +75,7 @@ Zum Anzeigen oder zugreifen auf das Threat Protection-Status-widget benötigen S
  
 Das Global Weekly Threat Detections-Widget zeigt, wie viele Bedrohungen in e-Mail-Nachrichten in den letzten sieben (7) Tagen erkannt wurden.
 
-![Globales wöchentliches Threat Detections-widget](../media/globalweeklythreatdetections.png)
+![Globales wöchentliches Threat Detections-widget](../../media/globalweeklythreatdetections.png)
 
 Die Metriken werden wie in der folgenden Tabelle beschrieben berechnet:
 
@@ -90,13 +90,13 @@ Die Metriken werden wie in der folgenden Tabelle beschrieben berechnet:
 
 Malware-Widgets zeigen Details zu Malware Trends und Malware Familientypen in den letzten sieben (7) Tagen an.
 
-![Malware Trends und Familientypen](../media/malwarewidgetatpe5.png)
+![Malware Trends und Familientypen](../../media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>Insights
 
 Insights nicht nur grundlegende Probleme, die Sie überprüfen sollten, sondern auch Empfehlungen und zu berücksichtigende Maßnahmen. 
 
-![Intelligente Einblicke](../media/smartinsights.png)
+![Intelligente Einblicke](../../media/smartinsights.png)
 
 Beispielsweise können Sie sehen, dass Phishing-e-Mails zugestellt werden, weil einige Benutzer Ihre Junk-e-Mail-Optionen deaktiviert haben. Weitere Informationen zur Funktionsweise von Insights finden Sie unter [Reports and Insights in the Office 365 &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
@@ -104,14 +104,14 @@ Beispielsweise können Sie sehen, dass Phishing-e-Mails zugestellt werden, weil 
 
 Wenn das Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md)enthält, enthält Ihr Sicherheits Dashboard einen Abschnitt mit erweiterten Tools für die Untersuchung und Reaktion auf Bedrohungen. Das Sicherheitsteam Ihrer Organisation kann anhand der Informationen in diesem Abschnitt neue Kampagnen verstehen, Bedrohungen untersuchen und Vorfälle verwalten. 
   
-![Threat Intelligence hilft Ihnen beim verstehen von Angriffen, die auf Ihre Organisation zugeschnitten sind.](../media/threatintelwidget.png)
+![Threat Intelligence hilft Ihnen beim verstehen von Angriffen, die auf Ihre Organisation zugeschnitten sind.](../../media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>Trends
 
 Im unteren Bereich des Sicherheits Dashboards finden Sie einen Abschnitt **Trends** , in dem e-Mail-Fluss Trends für Ihre Organisation zusammengefasst werden. Berichte bieten Informationen zu e-Mail-Nachrichten, die als Spam, Schadsoftware, Phishing-Versuche und gute e-Mails kategorisiert werden. Klicken Sie auf eine Kachel, um ausführlichere Informationen im Bericht anzuzeigen. 
   
-![Im Abschnitt Trends werden die e-Mail-Fluss Trends für die Organisation zusammengefasst.](../media/trends.png)
+![Im Abschnitt Trends werden die e-Mail-Fluss Trends für die Organisation zusammengefasst.](../../media/trends.png)
   
 Wenn das Office 365 Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, haben Sie auch einen Bericht über **aktuelle Threat Management Alerts** in diesem Abschnitt, mit dem Ihr Sicherheitsteam Sicherheitswarnungen mit hoher Priorität anzeigen und ausführen kann. 
 

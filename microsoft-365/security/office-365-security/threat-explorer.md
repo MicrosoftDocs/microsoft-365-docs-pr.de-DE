@@ -16,24 +16,24 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598242"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082121"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
-Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echt Zeit Erkennungen** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security #a0 Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
+Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echt Zeit Erkennungen** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security & Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
 
 |Mit ATP-Plan 2 sehen Sie Folgendes:  |Mit ATP-Plan 1 sehen Sie Folgendes:  |
 |---------|---------|
-|![Bedrohungs-Explorer](../media/threatmgmt-explorer.png)      |![Echtzeiterkennungen](../media/threatmgmt-realtimedetections.png)         |
+|![Bedrohungs-Explorer](../../media/threatmgmt-explorer.png)      |![Echtzeiterkennungen](../../media/threatmgmt-realtimedetections.png)         |
 
 Mit Explorer (oder Echtzeiterkennung) haben Sie einen leistungsfähigen Bericht, der es Ihrem Sicherheitsteam ermöglicht, Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren. Der Bericht ähnelt dem folgenden Bild: 
 
-![Wechseln Sie zu Threat \> Management Explorer](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Wechseln Sie zu Threat \> Management Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Mit diesem Bericht haben Sie folgende Möglichkeiten:
 - [Siehe von Office 365 Sicherheitsfeatures erkannte Schadsoftware](#see-malware-detected-in-email-by-technology)
@@ -105,19 +105,19 @@ Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie 
 > [!TIP]
 > Network Message ID ordnet den Klick zurück zu bestimmten Mails zu, wenn Sie über den Explorer oder zugeordnete Tools von Drittanbietern über die Netzwerknachrichten-ID suchen. Durch die Suche über die Netzwerknachrichten-ID erhalten Administratoren die spezifische e-Mail-Adresse, die mit einem Klick Ergebnis verknüpft ist. Für eine schnellere und leistungsstärkere Analyse durch den Export mit wird die korrelierte Identifikation der Netzwerknachrichten-ID ermöglicht.
 
-![tp_ExportClickResultAndNetworkID. png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID. png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Malware nach Technologie
 
-Angenommen, Sie möchten die in e-Mail-nach Office 365-Technologie erkannte Malware sehen. Verwenden Sie dazu die [e-Mail-#a0](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
+Angenommen, Sie möchten die in e-Mail-nach Office 365-Technologie erkannte Malware sehen. Verwenden Sie dazu die [e-Mail->](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Schadsoftware**aus.<br/>![Menü "Ansicht" für Explorer](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Schadsoftware**aus.<br/>![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis** > **Erkennungstechnologie**aus.<br/>Ihre Erkennungstechnologien stehen nun als Filter für den Bericht zur Verfügung.<br/>![Technologien zur Erkennung von Malware](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis** > **Erkennungstechnologie**aus.<br/>Ihre Erkennungstechnologien stehen nun als Filter für den Bericht zur Verfügung.<br/>![Technologien zur Erkennung von Malware](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. Wählen Sie eine Option aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** , um diesen Filter anzuwenden.<br/>![Ausgewählte Erkennungstechnologie](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. Wählen Sie eine Option aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** , um diesen Filter anzuwenden.<br/>![Ausgewählte Erkennungstechnologie](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 Der Bericht wird aktualisiert, um die in e-Mail-Nachweise erkannten Ergebnisse mithilfe der ausgewählten Technologie-Option anzuzeigen. Von hier aus können Sie weitere Analysen durchführen.
 
@@ -125,15 +125,15 @@ Der Bericht wird aktualisiert, um die in e-Mail-Nachweise erkannten Ergebnisse m
 
 Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails sehen, einschließlich einer Liste von URLs, die zugelassen, blockiert und außer Kraft gesetzt wurden. Zum Identifizieren von URLs, auf die geklickt wurde, müssen [ATP-sichere Links](atp-safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md) zum Zeitpunkt des Klick Schutzes und zur Protokollierung von Klick urteilen durch ATP-sichere Links eingerichtet haben. 
 
-Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-#a0 Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
+Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-> Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option**Phishing** **per e-Mail** > aus.<br/>![Menü "Ansicht" für Explorer](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. Wählen Sie im Menü **Ansicht** die Option**Phishing** **per e-Mail** > aus.<br/>![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. Klicken Sie auf **Absender**, und wählen Sie dann **URLs** > **Klicken Sie auf Urteil**.
 
-4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben**", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)<br/>![URLs und Klick Urteile](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben**", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)<br/>![URLs und Klick Urteile](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     Der Bericht wird aktualisiert, um zwei unterschiedliche URL-Tabellen auf der Registerkarte URL unter dem Bericht anzuzeigen:
 
@@ -143,21 +143,21 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
    
    Die zwei URL-Tabellen zeigen die wichtigsten URLs in Phishing-e-Mails nach Zustellungs Aktion und Speicherort an, und Sie zeigen URL-Klicks an, die blockiert wurden (oder trotz einer Warnung besucht wurden), sodass Sie verstehen, welche möglichen fehlerhaften Links von Benutzern empfangen und mit den Benutzern in Interaktion stehen. Von hier aus können Sie weitere Analysen durchführen. Beispielsweise können Sie unter dem Diagramm die häufigsten URLs in e-Mail-Nachrichten sehen, die in der Umgebung Ihrer Organisation blockiert wurden.
    
-   ![Blockierte Explorer-URLs](../media/ExplorerPhishClickVerdictURLs.png)
+   ![Blockierte Explorer-URLs](../../media/ExplorerPhishClickVerdictURLs.png)
    
    Wählen Sie eine URL aus, um ausführlichere Informationen anzuzeigen. **Hinweis**: im Dialogfeld URL-Flyout wird die Filterung für e-Mail-Nachrichten entfernt, um Ihnen die vollständige Ansicht der URL-Exposition in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach e-Mail-Nachrichten im Explorer nach bestimmten URLs suchen, die potenzielle Bedrohungen darstellen, und dann Ihr Verständnis der URL-Exposition in Ihrer Umgebung (über das Dialogfeld "URL-Details") erweitern, ohne dass Sie URL-Filter hinzufügen müssen. die Explorer-Ansicht selbst.
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 
-Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die Ansicht [e-Mail #a0 Übermittlungen](threat-explorer-views.md#email--submissions) des Explorers (oder Echtzeiterkennung).
+Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die Ansicht [e-Mail > Übermittlungen](threat-explorer-views.md#email--submissions) des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus.<br/>![Menü "Ansicht" für Explorer](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus.<br/>![Menü "Ansicht" für Explorer](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Klicken Sie auf **Absender**, und wählen Sie **Standard** > **Berichtstyp**aus.
 
-4. Wählen Sie eine Option wie **Phishing**aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** . <br/>![Vom Benutzer gemeldetes Phishing](../media/EmailUserReportedReportType.png)<br/> 
+4. Wählen Sie eine Option wie **Phishing**aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** . <br/>![Vom Benutzer gemeldetes Phishing](../../media/EmailUserReportedReportType.png)<br/> 
 
 Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [ATP-Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md)anzupassen.
 

@@ -17,18 +17,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: 6a7ee065447c7351f02d1ff88239b1c41b7e874b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957380"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081885"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
 Wenn Ihre Organisation über [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-the-atp-reports)verfügen, können Sie mehrere ATP-Berichte im &amp; Security Compliance Center verwenden. (Wechseln Sie zum **Dashboard** **Berichte** \> .)
   
-![Das Security &amp; Compliance Center-Dashboard hilft Ihnen, zu sehen, wo Advanced Threat Protection funktioniert.](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Das Security &amp; Compliance Center-Dashboard hilft Ihnen, zu sehen, wo Advanced Threat Protection funktioniert.](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Zu den ATP-Berichten zählen folgende:
 - [Threat Protection-Statusbericht](#threat-protection-status-report)
@@ -57,11 +57,11 @@ Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kate
 > [!TIP]
 > Sowohl die e-Mail-> Phishing | Schadsoftware-Ansichten weisen eine granulare Aufschlüsselung der angezeigten Erkennungstechnologien auf, wobei Kategorien wie *ATP-generierte dateireputation*, *Datei Detonation*, *URL-Detonation*, *Antispoofing: DMARC-Fehler*hilfreich ist, um genau zu ermitteln, welche Funktion Ihre Organisation veranlasst hat, Bedrohungen einzufangen.
 
-![Dropdown mit dem Status Bericht zum Bedrohungsschutz mit "aufschlüsseln nach".](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+![Dropdown mit dem Status Bericht zum Bedrohungsschutz mit "aufschlüsseln nach".](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
 Diese Ansichten bieten Ihnen die Möglichkeit, über eine Schaltfläche per Mausklick (in e-Mail > Phishing, e-Mail-> Schadsoftware und Inhalte > Malware Ansichten) zu exportieren. Die aggregierten Daten, die auf Ihren Computer exportiert werden, können in Excel geöffnet werden.
 
-![Diese Grafik zeigt den Export als Option im Menü für die Malware-Ansicht, rechts zwischen Create Schedule und Request Report.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+![Diese Grafik zeigt den Export als Option im Menü für die Malware-Ansicht, rechts zwischen Create Schedule und Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
 In den Ansichten Übersicht und e-Mails werden Informationen innerhalb von Stunden nach der Verarbeitung und nicht in 24 Stunden angezeigt (Demand Re. erhöhte Geschwindigkeiten hier war ein deutliches Signal)!
 
@@ -70,19 +70,19 @@ In den Ansichten Übersicht und e-Mails werden Informationen innerhalb von Stund
   
 Wechseln Sie zum Anzeigen des Statusberichts für den Bedrohungsschutz im [ &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **Threat Protection Status**.
   
-![Status Bericht über den ATP-Bedrohungsschutz](../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+![Status Bericht über den ATP-Bedrohungsschutz](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
 Wenn Sie einen detaillierten Status für einen Tag erhalten möchten, zeigen Sie mit der Maus auf das Diagramm.
   
-![Status Daten für den ATP-Bedrohungsschutz für einen Tag](../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+![Status Daten für den ATP-Bedrohungsschutz für einen Tag](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
 Standardmäßig zeigt der Status Bericht zum Bedrohungsschutz Daten für die letzten sieben Tage an. Sie können jedoch **Filter** auswählen und den Datumsbereich ändern, um Daten für bis zu 90 Tage anzuzeigen. (Wenn Sie ein Testabonnement verwenden, sind die Daten möglicherweise auf 30 Tage eingeschränkt.)
   
-![Status Filter für den ATP-Bedrohungsschutz](../media/4f703369-642b-402b-9758-b9c828283410.png)
+![Status Filter für den ATP-Bedrohungsschutz](../../media/4f703369-642b-402b-9758-b9c828283410.png)
   
 Sie können auch das Menü " **Daten anzeigen nach** " verwenden, um zu ändern, welche Informationen im Bericht angezeigt werden. 
   
-![Anzeigen von Optionen für den Status Bericht für den ATP-Bedrohungsschutz](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+![Anzeigen von Optionen für den Status Bericht für den ATP-Bedrohungsschutz](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
 
 ## <a name="url-protection-status-report"></a>Status Bericht über den URL-Schutz
 
@@ -105,11 +105,11 @@ Der Bericht " **ATP-Dateitypen** " zeigt Ihnen den Typ der Dateien, die von [ATP
   
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **ATP-Dateitypen**.
   
-![ATP-Dateitypenbericht](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
+![ATP-Dateitypenbericht](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
 Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [ATP-sichere Anlagen](atp-safe-attachments.md) und [Anti &amp; -Spam-Schutz vor Schadsoftware in Office 365](anti-spam-and-anti-malware-protection.md)erkannt wurden.
   
-![ATP-Dateitypen-Berichtsdaten für einen Tag](../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+![ATP-Dateitypen-Berichtsdaten für einen Tag](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
 ## <a name="atp-message-disposition-report"></a>ATP-Bericht zum Nachrichtenstatus
 
@@ -117,11 +117,11 @@ Der Bericht " **ATP-Nachrichten Disposition** " zeigt die Aktionen an, die für 
   
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> **-Dashboard** \> **ATP-Nachrichten Disposition**.
   
-![Bericht zur ATP-Nachrichten Disposition](../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+![Bericht zur ATP-Nachrichten Disposition](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
 Wenn Sie mit dem Mauszeiger auf einen Balken im Diagramm zeigen, können Sie sehen, welche Aktionen für erkannte e-Mails an diesem Tag ausgeführt wurden.
   
-![ATP-Nachrichten Dispositions-Berichtsdaten für einen Tag](../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![ATP-Nachrichten Dispositions-Berichtsdaten für einen Tag](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
   
 ## <a name="additional-reports-to-view"></a>Zusätzliche Berichte zur Anzeige
 

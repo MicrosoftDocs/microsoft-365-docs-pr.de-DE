@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln in Exchange Online Schutz für Massen-e-Mail-Filterung verwenden.
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598042"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081818"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Konfigurieren der Massen-e-Mail-Filterung in Exchange Online Protection mithilfe von Nachrichtenfluss Regeln
 
@@ -35,11 +35,11 @@ Wenn Sie mehr Optionen zum Filtern von Massennachrichten wünschen, können Sie 
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
 
-2. Klicken Sie auf Add](../media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
+2. Klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
 
 3. Geben Sie einen Namen für die Regel ein.
 
-4. Klicken Sie auf **Weitere** ![Optionen mehr](../media/ITPro-EAC-MoreOptionsIcon.png)Optionen Symbol. Aktivieren Sie unter **Diese Regel anwenden, wenn,** die Option **Betreff oder Nachrichtentext** \> **Betreff oder Nachrichtentext entspricht diesen Textmustern**.
+4. Klicken Sie auf **Weitere** ![Optionen mehr](../../media/ITPro-EAC-MoreOptionsIcon.png)Optionen Symbol. Aktivieren Sie unter **Diese Regel anwenden, wenn,** die Option **Betreff oder Nachrichtentext** \> **Betreff oder Nachrichtentext entspricht diesen Textmustern**.
 
 5. Fügen Sie im Dialogfeld **Wörter oder Ausdrücke angeben** die folgenden regulären Ausdrücke hinzu, die häufig in Massen-e-Mails gefunden werden, und klicken Sie auf **OK** , wenn Sie fertig sind:
 
@@ -87,7 +87,7 @@ Wenn Sie mehr Optionen zum Filtern von Massennachrichten wünschen, können Sie 
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
 
-2. Klicken Sie auf Add](../media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
+2. Klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
 
 3. Geben Sie einen Namen für die Regel ein.
 

@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die durch den Spamfilter von EoP und Office 365 gefiltert werden.
-ms.openlocfilehash: 244b2ceb8ccf5e2e49b56fdebd370f75033f652b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598522"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082334"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sicherheitstipps in E-Mail-Nachrichten in Office 365
 
@@ -32,25 +32,25 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
 
 - Verdächtige e-Mails (roter Sicherheitshinweis).
 
-    ![Screenshot, der einen roten Sicherheitstipp zeigt.](../media/5078a0be-e556-44a1-b169-09d780d26898.png)
+    ![Screenshot, der einen roten Sicherheitstipp zeigt.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Ein roter Sicherheitstipp in einer e-Mail bedeutet, dass die Nachricht, die Sie erhalten haben, etwas Verdächtiges enthält, beispielsweise einen Phishing-Betrug. Es wird empfohlen, diese Art von e-Mail-Nachrichten aus dem Posteingang zu löschen, ohne Sie zu öffnen.
 
 - Spam (gelber Sicherheitstipp).
 
-    ![Screenshot, der eine gelbe Sicherheitsspitze zeigt.](../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
+    ![Screenshot, der eine gelbe Sicherheitsspitze zeigt.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
 
     Ein gelber Sicherheitstipp in einer e-Mail bedeutet, dass die Nachricht als Spam gekennzeichnet wurde. Wenn Sie den Absender der Nachricht nicht erkennen und ihm vertrauen, laden Sie keine Anlagen oder Bilder herunter, und klicken Sie auf keine Links in der Nachricht. In Outlook im Internet können Sie in der gelben Leiste eines Junk-e-Mail-Elements auf **IT es not Spam** klicken, um die Nachricht in Ihren Posteingang zu verschieben. Wenn der gelbe Sicherheitstipp in einer Nachricht angezeigt wird, die an Ihren Posteingang zugestellt wurde, ist Sie wahrscheinlich da, weil Sie das Verschieben von Spam in Ihren Junk-e-Mail-Ordner deaktiviert haben.
 
 - Safe Mail (grüner Sicherheitstipp).
 
-    ![Screenshot, der eine grüne Sicherheitsspitze zeigt.](../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+    ![Screenshot, der eine grüne Sicherheitsspitze zeigt.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     Neben unsicheren Nachrichten informieren wir Sie auch über gültige Nachrichten von Absendern, denen wir Vertrauen, mit einem grünen Sicherheitstipp. Ein grüner Sicherheitstipp in einer e-Mail bedeutet, dass wir den Absender der Nachricht überprüft und überprüft haben, dass Sie sicher ist. Microsoft verwaltet diese Liste vertrauenswürdiger Absender, die Finanzorganisationen und andere häufig gefälschte oder imitierte Personen umfassen.
 
 - Ungefiltertes Mail (grauer Sicherheitstipp).
 
-    ![Screenshot, der einen grauen Sicherheitstipp zeigt.](../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
+    ![Screenshot, der einen grauen Sicherheitstipp zeigt.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
 
     Wir sagen Ihnen auch, wann die Überprüfung einer e-Mail übersprungen wurde, da Sie von einem Absender stammt, dem Sie Ihre Liste sicherer Absender Vertrauen, oder wenn eine Nachrichtenfluss Regel zur Umgehung der Filterung vorhanden ist.
 
@@ -62,7 +62,7 @@ Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jed
 
 Wenn Sie nicht einverstanden sind, wie Office 365 und EOP eine Nachricht kategorisiert haben (das heißt, es handelt sich nicht um Spam oder es ist nicht legitim), können Sie die Nachrichten zur Analyse übermitteln, um ihre Benutzerfreundlichkeit zu verbessern. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden und uns dabei zu verbessern.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md)
 

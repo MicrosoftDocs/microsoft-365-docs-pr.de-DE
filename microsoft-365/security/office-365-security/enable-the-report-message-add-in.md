@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/26/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 77fa9c2766ee1e2392ad9ea962a43f4779238209
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599462"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086359"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtsnachrichts-Add-Ins
 
@@ -31,16 +30,22 @@ ms.locfileid: "41599462"
 
 ## <a name="overview"></a>Übersicht
 
-Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet ermöglicht Benutzern das einfache Melden von vertraulichen oder böswilligen e-Mail-Nachrichten an Microsoft und seine Partnerunternehmen zur Analyse. Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern. Wenn Ihre Organisation [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) oder [Plan 2](office-365-ti.md)verwendet, bietet das Add-in "Berichtsnachricht" außerdem nützliche Informationen zum Überprüfen und Aktualisieren von Sicherheitsrichtlinien, die dem Sicherheitsteam Ihrer Organisation zur Verfügung stehen.
+Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet (ehemals Outlook Web App genannt) ermöglicht Benutzern das einfache Melden von vertraulichen oder böswilligen e-Mail-Nachrichten an Microsoft und seine Partner zur Analyse. Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern. Wenn Ihre Organisation [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) oder [Plan 2](office-365-ti.md)verwendet, bietet das Add-in "Berichtsnachricht" außerdem nützliche Informationen zum Überprüfen und Aktualisieren von Sicherheitsrichtlinien, die dem Sicherheitsteam Ihrer Organisation zur Verfügung stehen.
 
 Nehmen wir beispielsweise an, dass Personen viele Nachrichten als Phishing melden. Diese Informationen werden im [Sicherheits Dashboard](security-dashboard.md) und in anderen Berichten unter Oberflächen angezeigt. Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Anhaltspunkt dafür verwenden, dass Anti-Phishing-Richtlinien möglicherweise aktualisiert werden müssen. Oder wenn Personen viele Nachrichten melden, die als Junk-e-Mail als nicht-Junk mithilfe des Berichtsnachrichten-Add-ins gekennzeichnet wurden, muss das Sicherheitsteam Ihrer Organisation möglicherweise [Anti-Spam-Richtlinien](configure-the-anti-spam-policies.md)anpassen.
 
-Das Add-in "Berichtsnachricht" kann mit Ihrem Office 365-Abonnement und den folgenden Produkten verwendet werden:
+Das Add-in "Berichtsnachricht" funktioniert mit den meisten Office 365-Abonnements und den folgenden Produkten:
+
  - Outlook im Web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 für Mac
  - Outlook im Lieferumfang von Office 365 ProPlus
+
+Das Add-in "Berichtsnachricht" steht derzeit nicht zur Verfügung für:
+
+ - Postfächer in lokalen Exchange-Organisationen
+ - Gcc-, gcc-High-oder DoD-Abonnements
 
 Ihr vorhandener Webbrowser sollte ausreichen, damit das Add-in "Berichtsnachricht" funktioniert. Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, versuchen Sie es mit einem anderen Browser.
 
@@ -54,7 +59,7 @@ Wenn Sie ein Office 365 globaler Administrator oder ein Exchange Online Administ
 
 2. Wählen Sie **get it now**aus.
 
-   ![Berichtsnachricht – jetzt abrufen](../media/ReportMessageGETITNOW.png)
+   ![Berichtsnachricht – jetzt abrufen](../../media/ReportMessageGETITNOW.png)
 
 3. Lesen Sie die Nutzungsbedingungen und Datenschutzrichtlinien. Wählen Sie dann **Continue** aus.
 
@@ -64,11 +69,11 @@ Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole
 
 - In Outlook sieht das Symbol wie folgt aus:
 
-  ![Add-in-Symbol für Berichtsnachricht für Outlook](../media/OutlookReportMessageIcon.png)
+  ![Add-in-Symbol für Berichtsnachricht für Outlook](../../media/OutlookReportMessageIcon.png)
 
 - In Outlook im Internet (früher bekannt als Outlook Web App) sieht das Symbol wie folgt aus:
 
-  ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 > [!TIP]
 > Im nächsten Schritt erfahren Sie, wie Sie [das Add-in "Berichtsnachricht" verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
@@ -78,37 +83,37 @@ Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole
 > [!IMPORTANT]
 > Sie müssen ein Office 365 globaler Administrator oder ein Exchange Online Administrator sein, um diese Aufgabe ausführen zu können. Darüber hinaus muss Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert sein, um weitere Informationen zu erhalten, siehe [Exchange-Anforderungen (zentralisierte Bereitstellung von Add-Ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
 
-1. Wechseln Sie zur [Seite Dienste #a0-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) im Microsoft 365 Admin Center.
+1. Wechseln Sie zur [Seite Dienste &-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) im Microsoft 365 Admin Center.
 
-   ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Wählen Sie **+ Deploy Add-in aus**.
 
-   ![Auswählen von "Add-in bereitstellen"](../media/ServicesAddIns-ChooseDeployAddIn.png)
+   ![Auswählen von "Add-in bereitstellen"](../../media/ServicesAddIns-ChooseDeployAddIn.png)
 
 3. Überprüfen Sie im **neuen Add-in-** Bildschirm die Informationen, und wählen Sie dann **weiter**aus.
 
-   ![Neue Add-in-Details](../media/NewAddInScreen1.png)
+   ![Neue Add-in-Details](../../media/NewAddInScreen1.png)
 
 4. Wählen Sie **Ich möchte ein Add-in aus dem Office Store hinzufügen aus**, und klicken Sie dann auf **weiter**.
 
-   ![Ich möchte ein neues Add-in hinzufügen](../media/NewAddInScreen2.png)
+   ![Ich möchte ein neues Add-in hinzufügen](../../media/NewAddInScreen2.png)
 
 5. Suchen Sie nach **Berichtsnachricht**, und wählen Sie in der Ergebnisliste neben dem **Add-in "Berichtsnachricht**" die Option **Hinzufügen**aus.
 
-   ![Suchen Sie nach Berichtsnachricht, und wählen Sie dann hinzufügen](../media/NewAddInScreen3.png)
+   ![Suchen Sie nach Berichtsnachricht, und wählen Sie dann hinzufügen](../../media/NewAddInScreen3.png)
 
 6. Überprüfen Sie auf dem Bildschirm **Bericht Meldung** die Informationen, und wählen Sie dann **weiter**aus.
 
-   ![Berichtsnachrichten Details](../media/ReportMessageAdd-InNewScreen4.png)
+   ![Berichtsnachrichten Details](../../media/ReportMessageAdd-InNewScreen4.png)
 
 7. Geben Sie die Standardeinstellungen des Benutzers für Outlook an, und klicken Sie dann auf **weiter**.
 
-   ![Berichtsnachrichten Standardeinstellungen für Outlook](../media/ReportMessageOptionsScreen5.png)
+   ![Berichtsnachrichten Standardeinstellungen für Outlook](../../media/ReportMessageOptionsScreen5.png)
 
 8. Geben Sie an, wer das Add-in "Berichtsnachricht" abruft, und wählen Sie dann **Speichern**aus.
 
-   ![Wer ruft das Add-in "Berichtsnachricht" ab](../media/ReportMessageOptionsScreen6.png)
+   ![Wer ruft das Add-in "Berichtsnachricht" ab](../../media/ReportMessageOptionsScreen6.png)
 
 > [!TIP]
 > Es [wird empfohlen, eine Regel einzurichten, um eine Kopie der von Ihren Benutzern gemeldeten e-Mail-Nachrichten zu erhalten](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).
@@ -117,11 +122,11 @@ Je nachdem, was Sie beim Einrichten des Add-Ins (Schritte 7-8 oben) ausgewählt 
 
 - In Outlook sieht das Symbol wie folgt aus:
 
-  ![Add-in-Symbol für Berichtsnachricht für Outlook](../media/OutlookReportMessageIcon.png)
+  ![Add-in-Symbol für Berichtsnachricht für Outlook](../../media/OutlookReportMessageIcon.png)
 
 - In Outlook im Internet sieht das Symbol wie folgt aus:
 
-  ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 > [!TIP]
 > Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie einen Link zur [Verwendung des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)hinzu.
@@ -143,19 +148,19 @@ Sie können eine Regel einrichten, um eine Kopie der von Benutzern in Ihrer Orga
 
 5. Klicken Sie im Bildschirm **Wörter oder Ausdrücke angeben** auf Hinzufügen `junk@office365.microsoft.com` , und `phish@office365.microsoft.com`wählen Sie dann **OK**aus.
 
-   ![Angeben der Junk-und Phishing-e-Mail-Adressen für die Regel](../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+   ![Angeben der Junk-und Phishing-e-Mail-Adressen für die Regel](../../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
 
 6. Wählen Sie in der Liste **ausführen die folgende...** die Option **Bcc die Nachricht an...** aus.
 
 7. Fügen Sie einen globalen Administrator, Sicherheitsadministrator und/oder Sicherheits Leser hinzu, der eine Kopie jeder e-Mail-Nachricht erhalten soll, die Personen an Microsoft melden, und wählen Sie dann **OK**aus.
 
-   ![Hinzufügen eines globalen oder Sicherheitsadministrators zum Empfangen einer Kopie jeder gemeldeten Nachricht](../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+   ![Hinzufügen eines globalen oder Sicherheitsadministrators zum Empfangen einer Kopie jeder gemeldeten Nachricht](../../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
 
 8. Wählen Sie **diese Regel mit Schweregrad überwachen**aus, und wählen Sie **Medium**aus.
 
 9. Wählen Sie unter **Modus für diese Regel auswählen die**Option **erzwingen**aus.
 
-   ![Einrichten einer Regel zum Abrufen einer Kopie jeder gemeldeten Nachricht](../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+   ![Einrichten einer Regel zum Abrufen einer Kopie jeder gemeldeten Nachricht](../../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
 
 10. Wählen Sie **Speichern** aus.
 
@@ -167,22 +172,22 @@ Siehe [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/art
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Überprüfen oder Bearbeiten der Einstellungen für das Add-in "Berichtsnachricht"
 
-Sie können die Standardeinstellungen für das Add-in "Berichtsnachricht" auf der [Seite Dienste #a0-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)überprüfen und bearbeiten.
+Sie können die Standardeinstellungen für das Add-in "Berichtsnachricht" auf der [Seite Dienste &-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)überprüfen und bearbeiten.
 
 > [!IMPORTANT]
 > Sie müssen ein Office 365 globaler Administrator oder ein Exchange Online Administrator sein, um diese Aufgabe ausführen zu können.
 
-1. Wechseln Sie zur [Seite Dienste #a0-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) im Microsoft 365 Admin Center.
+1. Wechseln Sie zur [Seite Dienste &-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) im Microsoft 365 Admin Center.
 
-   ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Suchen Sie das Add-in Berichtsnachricht, und wählen Sie es aus.
 
-   ![Suchen und auswählen des Add-Ins "Berichtsnachricht"](../media/FindReportMessageAddIn.png)
+   ![Suchen und auswählen des Add-Ins "Berichtsnachricht"](../../media/FindReportMessageAddIn.png)
 
 3. Überprüfen und bearbeiten Sie auf dem Bildschirm Bericht Meldung die Einstellungen entsprechend Ihrer Organisation.
 
-   ![Einstellungen für das Add-in "Berichtsnachricht"](../media/EditReportMessageAddIn.png)
+   ![Einstellungen für das Add-in "Berichtsnachricht"](../../media/EditReportMessageAddIn.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
 

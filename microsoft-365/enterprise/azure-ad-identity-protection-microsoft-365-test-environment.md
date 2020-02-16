@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie Azure AD Identitätsschutz, und analysieren Sie die aktuellen Konten in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: 376fc838191314e93ae37accb7fc5066456499fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f3740e42c7ec909f44a3c761dfc743359b3f030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597162"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068492"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identitätsschutz für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -33,10 +33,10 @@ Es gibt zwei Phasen zum Einrichten Azure AD Identitätsschutzes in Ihrer Microso
 1. Erstellen Sie die Microsoft 365 Enterprise-Testumgebung.
 2. Verwenden Sie Azure AD Identitätsschutz.
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 

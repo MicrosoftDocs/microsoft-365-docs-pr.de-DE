@@ -16,12 +16,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Teilt Office 365-und EOP-Administratoren mit, wie Sicherheitstipps in e-Mail-Nachrichten aktiviert und deaktiviert werden.
-ms.openlocfilehash: 6b94d34b6cf8bebc0aa4032f255b874fb7d4affb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8a3bc9811aa54b0c5ae4cc8a0e2eb9aa80aef0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599412"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086249"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
 
@@ -48,15 +48,15 @@ Inhalt dieses Themas:
 
 4. Wählen Sie auf der Seite **Richtlinie** **Anti-Spam**aus.
 
-    ![In diesem Screenshot wird gezeigt, wie Sie zur Seite Antispameinstellungen im Security &amp; Compliance Center gelangen.](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![In diesem Screenshot wird gezeigt, wie Sie zur Seite Antispameinstellungen im Security &amp; Compliance Center gelangen.](../../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
 
 5. Wählen Sie auf der Seite **Anti-Spam-Einstellungen** die Registerkarte **Benutzerdefiniert** aus.
 
-    ![Dieser Screenshot zeigt den Speicherort der benutzerdefinierten Registerkarte auf der Seite Anti-Spam-Einstellungen im &amp; Security Compliance Center.](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![Dieser Screenshot zeigt den Speicherort der benutzerdefinierten Registerkarte auf der Seite Anti-Spam-Einstellungen im &amp; Security Compliance Center.](../../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
 
 6. Wählen Sie bei Bedarf die Option **benutzerdefinierte Einstellungen** aus, um benutzerdefinierte Einstellungen zu aktivieren. Wenn die Option benutzerdefinierte Einstellungen auf **aus**festgelegt ist, können Sie keine Spamfilter Richtlinien ändern.
 
-    ![Dieser Screenshot zeigt, dass benutzerdefinierte Anti-Spam-Filterrichtlinien Einstellungen deaktiviert wurden.](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![Dieser Screenshot zeigt, dass benutzerdefinierte Anti-Spam-Filterrichtlinien Einstellungen deaktiviert wurden.](../../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
 
 7. Erweitern Sie die Spam Richtlinie, die Sie ändern möchten, und klicken Sie dann auf **Richtlinie bearbeiten**. Wählen Sie beispielsweise den Abwärtspfeil neben **Standard-Spamfilter Richtlinie**aus. Wenn Sie möchten, können Sie eine neue Richtlinie erstellen, indem Sie **eine Richtlinie hinzufügen**auswählen.
 

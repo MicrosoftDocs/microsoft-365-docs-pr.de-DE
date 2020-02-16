@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598762"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088314"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
 
@@ -45,7 +45,7 @@ Mit automatisierten Ermittlungs-und Antwortfunktionen, wenn bestimmte Warnungen 
 
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
-1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits & Compliance Center.
 
 2. Führen Sie einen der folgenden Schritte aus:
 
@@ -55,11 +55,11 @@ Mit automatisierten Ermittlungs-und Antwortfunktionen, wenn bestimmte Warnungen 
 
     Mit beiden Methoden gelangen Sie zu einer Liste von Untersuchungen.
 
-    ![Haupt Untersuchungs Seite für Air](../media/air-maininvestigationpage.png) 
+    ![Haupt Untersuchungs Seite für Air](../../media/air-maininvestigationpage.png) 
 
 3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus. Dadurch wird die Seite Ermittlungs Details geöffnet, beginnend mit dem unter Such Diagramm in der Ansicht.
 
-    ![Seite "Luft Untersuchungs Diagramm"](../media/air-investigationgraphpage.png)
+    ![Seite "Luft Untersuchungs Diagramm"](../../media/air-investigationgraphpage.png)
 
 4. Verwenden Sie die verschiedenen Registerkarten, um mehr über die Untersuchung zu erfahren.
 
@@ -83,7 +83,7 @@ In Office 365 führen automatisierte Untersuchungen normalerweise zu einer oder 
 
 Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Office 365 aus. Weitere Informationen finden Sie unter [Alerts](automated-investigation-response-office.md#alerts). Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
 
-1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits #a0 Compliance Center.
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits & Compliance Center.
 
 2. Wechseln Sie zu **Threat Management** > **Investigations**.
 

@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599402"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083272"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Admin Center in Exchange Online Protection
 
@@ -41,7 +41,7 @@ Sie können auch über den folgenden URL direkt auf das EAC-Zeichen auf der Seit
 
 In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Verwaltungskonsole beschrieben.
 
-![EoP-Admincenter](../media/EOP-AdminCenter.png)
+![EoP-Admincenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Featurebereich
 
@@ -67,14 +67,14 @@ Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie au
 
 |**Symbol**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Hinzufügen (Symbol)](../media/ITPro-EAC-AddIcon.gif)|Hinzufügen, Neu|Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.|
-|![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.gif)|Bearbeiten|Über dieses Symbol können Sie ein Objekt bearbeiten.|
-|![Löschen (Symbol)](../media/ITPro-EAC-DeleteIcon.gif)|Delete|Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.|
-|![Suchen (Symbol)](../media/ITPro-EAC-.gif)|Suche|Über dieses Symbol können Sie ein Suchfeld öffnen, in das Sie den Suchbegriff für ein zu suchendes Objekt eingeben können.|
-|![Aktualisieren (Symbol)](../media/ITPro-EAC-RefreshIcon.gif)|Aktualisieren|Über dieses Symbol können Sie die Listenansicht aktualisieren.|
-|![Weitere Optionen (Symbol)](../media/ITPro-EAC-MoreOptionsIcon.gif)|Weitere Optionen|Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  |
-|![NACH-OBEN-TASTE (Symbol)](../media/ITPro-EAC-UpArrowIcon.gif)![NACH-UNTEN-TASTE (Symbol)](../media/ITPro-EAC-DownArrowIcon.gif)|Pfeil nach oben und Pfeil nach unten|Mithilfe dieser Symbole können Sie die Priorität eines Objekts nach oben oder unten verschieben.|
-|![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.gif)|Entfernen|Über dieses Symbol können Sie Objekte aus einer Liste entfernen.|
+|![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif)|Hinzufügen, Neu|Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.|
+|![Bearbeitungssymbol](../../media/ITPro-EAC-EditIcon.gif)|Bearbeiten|Über dieses Symbol können Sie ein Objekt bearbeiten.|
+|![Löschen (Symbol)](../../media/ITPro-EAC-DeleteIcon.gif)|Delete|Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.|
+|![Suchen (Symbol)](../../media/ITPro-EAC-.gif)|Suche|Über dieses Symbol können Sie ein Suchfeld öffnen, in das Sie den Suchbegriff für ein zu suchendes Objekt eingeben können.|
+|![Aktualisieren (Symbol)](../../media/ITPro-EAC-RefreshIcon.gif)|Aktualisieren|Über dieses Symbol können Sie die Listenansicht aktualisieren.|
+|![Weitere Optionen (Symbol)](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Weitere Optionen|Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  |
+|![NACH-OBEN-TASTE (Symbol)](../../media/ITPro-EAC-UpArrowIcon.gif)![NACH-UNTEN-TASTE (Symbol)](../../media/ITPro-EAC-DownArrowIcon.gif)|Pfeil nach oben und Pfeil nach unten|Mithilfe dieser Symbole können Sie die Priorität eines Objekts nach oben oder unten verschieben.|
+|![Entfernen (Symbol)](../../media/ITPro-EAC-RemoveIcon.gif)|Entfernen|Über dieses Symbol können Sie Objekte aus einer Liste entfernen.|
 
 ### <a name="list-view"></a>Listenansicht
 
@@ -86,9 +86,9 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 
 ### <a name="me-tile-and-help"></a>Ich-Kachel und Hilfe
 
-Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Über das Dropdownmenü der **Hilfe**![Hilfe (Symbol)](../media/ITPro-EAC-HelpIcon.gif) können Sie folgende Aktionen ausführen:
+Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Über das Dropdownmenü der **Hilfe**![Hilfe (Symbol)](../../media/ITPro-EAC-HelpIcon.gif) können Sie folgende Aktionen ausführen:
 
-1. **Hilfe**: Klicken ![Sie auf](../media/ITPro-EAC-HelpIcon.gif) Hilfesymbol, um den Inhalt der Online Hilfe anzuzeigen.
+1. **Hilfe**: Klicken ![Sie auf](../../media/ITPro-EAC-HelpIcon.gif) Hilfesymbol, um den Inhalt der Online Hilfe anzuzeigen.
 
 2. **Hilfe Blase deaktivieren**: in der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfe Blase deaktivieren oder aktivieren, wenn Sie deaktiviert wurde.
 

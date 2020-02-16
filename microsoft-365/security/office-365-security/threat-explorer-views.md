@@ -14,16 +14,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die verschiedenen Arten von Ansichten, die in Threat Explorer und in Echtzeit erkannt werden können.
-ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e2d6ce0c51c6a43596885d9ccb529dc1464a052
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084866"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 
-![Sicherheitsrisiken-Explorer](../media/ThreatExplorerFirstOpened.png)
+![Sicherheitsrisiken-Explorer](../../media/ThreatExplorerFirstOpened.png)
 
 [Threat Explorer](threat-explorer.md) (und der Bericht über Echt Zeit Erkennungen) ist ein leistungsfähiges, near-Echt Zeit Tool, um Sicherheitsteams beim untersuchen und reagieren auf Bedrohungen &amp; im Security Compliance Center zu unterstützen. Explorer (und der Bericht über Echt Zeit Erkennungen) zeigt Informationen zu mutmaßlicher Schadsoftware und Phishing in e-Mails und Dateien in Office 365 sowie andere Sicherheitsrisiken und Risiken für Ihre Organisation an. 
 
@@ -34,65 +34,65 @@ Wenn Sie Explorer zum ersten Mal öffnen (oder den Bericht über Echt Zeit Erken
 
 Verwenden Sie das Menü **Ansicht** , um zu ändern, welche Informationen angezeigt werden. Mithilfe von QuickInfos können Sie bestimmen, welche Ansicht verwendet werden soll.
   
-![Ansicht im Menü "Bedrohungs-Explorer"](../media/ThreatExplorerViewMenu.png)
+![Ansicht im Menü "Bedrohungs-Explorer"](../../media/ThreatExplorerViewMenu.png)
 
 Nachdem Sie eine Ansicht ausgewählt haben, können Sie Filter anwenden und Abfragen einrichten, um eine weitere Analyse durchzuführen. Die folgenden Abschnitte bieten eine kurze Übersicht über die verschiedenen Ansichten, die in Explorer verfügbar sind (oder Echt Zeit Erkennungen).  
 
-## <a name="email--malware"></a>E-Mail-#a0 Schadsoftware
+## <a name="email--malware"></a>E-Mail-> Schadsoftware
 
 Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) die Option**e-Mail-** > **Schadsoftware** **anzeigen** > aus. In dieser Ansicht werden Informationen zu e-Mail-Nachrichten angezeigt, die als mit Schadsoftware gekennzeichnet wurden.  
 
-![Anzeigen von Daten zu e-Mails, die als Schadsoftware identifiziert wurden](../media/ExplorerEmailMalwareMenu.png) 
+![Anzeigen von Daten zu e-Mails, die als Schadsoftware identifiziert wurden](../../media/ExplorerEmailMalwareMenu.png) 
 
 Klicken Sie auf **Absender** , um die Liste der Anzeigeoptionen zu öffnen. Verwenden Sie diese Liste, um Daten nach Absender, Empfänger, Absenderdomäne, Betreff, Erkennungstechnologie, Schutzstatus und vielem mehr anzuzeigen. 
 
 Um beispielsweise zu sehen, welche Aktionen bei erkannten e-Mail-Nachrichten durchgeführt wurden, wählen Sie in der Liste **Schutzstatus** aus. Wählen Sie eine Option aus, und klicken Sie dann auf die Schaltfläche Aktualisieren, um diesen Filter auf Ihren Bericht anzuwenden.
 
-![Bedrohungsschutz-Status Optionen für Threat Explorer](../media/ThreatExplorerProtectionStatusOptions.png)
+![Bedrohungsschutz-Status Optionen für Threat Explorer](../../media/ThreatExplorerProtectionStatusOptions.png)
 
 Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Nachrichten an. Wenn Sie ein Element in der Liste auswählen, wird ein Ausklappbereich geöffnet, in dem Sie weitere Informationen zum ausgewählten Element erhalten. 
 
-![Threat Explorer mit geöffnetem Flyout](../media/ThreatExplorerMalwareItemSelectedFlyout.png)
+![Threat Explorer mit geöffnetem Flyout](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
-## <a name="email--phish"></a>E-Mail #a0 Phishing
+## <a name="email--phish"></a>E-Mail > Phishing
 
 Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) die Option**e-Mail-** > **Phishing** **anzeigen** > aus. Diese Ansicht zeigt e-Mail-Nachrichten, die als Phishing-Versuche identifiziert wurden.  
 
-![Anzeigen von Daten zu e-Mails, die als Phishing-Versuche identifiziert wurden](../media/ThreatExplorerEmailPhish.png) 
+![Anzeigen von Daten zu e-Mails, die als Phishing-Versuche identifiziert wurden](../../media/ThreatExplorerEmailPhish.png) 
 
 Klicken Sie auf **Absender** , um die Liste der Anzeigeoptionen zu öffnen. Verwenden Sie diese Liste, um Daten nach Absender, Empfänger, Absenderdomäne, Absender-IP, URL-Domäne, Klick Urteil und vieles mehr anzuzeigen. 
 
 Um beispielsweise zu sehen, welche Aktionen durchgeführt wurden, als Personen auf URLs geklickt haben, die als Phishing-Versuche identifiziert wurden, wählen Sie in der Liste **auf Urteil klicken** , wählen Sie eine oder mehrere Optionen aus, und klicken Sie dann auf die Schaltfläche Aktualisieren.
 
-![Klicken Sie auf Urteils Optionen für den Phish-Bericht](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Klicken Sie auf Urteils Optionen für den Phish-Bericht](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
 Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Nachrichten, URL-Klicks, URLs und e-Mail-Ursprung an. 
 
-![Als Phishing erkannte URLs in e-Mail-Nachrichten](../media/ThreatExplorerEmailPhishURLs.png)
+![Als Phishing erkannte URLs in e-Mail-Nachrichten](../../media/ThreatExplorerEmailPhishURLs.png)
 
 Wenn Sie ein Element in der Liste auswählen, beispielsweise eine erkannte URL, wird ein Ausklappbereich geöffnet, in dem Sie weitere Informationen zum ausgewählten Element erhalten. 
 
-![Details zu einer erkannten URL](../media/ThreatExplorerEmailPhishURLDetails.png)
+![Details zu einer erkannten URL](../../media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--submissions"></a>E-Mail #a0 Übermittlungen
+## <a name="email--submissions"></a>E-Mail > Übermittlungen
 
 Um diesen Bericht anzuzeigen, wählen Sie im Explorer (oder Echtzeiterkennung) die Option **** > **e-Mail-** > **Übermittlungen**anzeigen aus. In dieser Ansicht werden e-Mails angezeigt, die Benutzer als Junk-e-Mail, nicht als Junk oder als Phishing-e-Mails gemeldet haben. 
 
-![Von Benutzern gemeldete e-Mail-Nachrichten](../media/ThreatExplorerEmailUserReportedViewOptions.png) 
+![Von Benutzern gemeldete e-Mail-Nachrichten](../../media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
 Klicken Sie auf **Absender** , um die Liste der Anzeigeoptionen zu öffnen. Verwenden Sie diese Liste, um Informationen nach Absender, Empfänger, Berichtstyp anzuzeigen (die Bestimmung des Benutzers, dass es sich bei der e-Mail um Junk-e-Mails handelte, nicht um Junk-oder Phishing-Zwecke) und vieles mehr. 
 
 Wenn Sie beispielsweise Informationen zu e-Mail-Nachrichten anzeigen möchten, die als Phishing-Versuche gemeldet wurden, klicken Sie auf **Absender** > **Berichtstyp**, wählen Sie **Phishing**aus, und klicken Sie dann auf die Schaltfläche Aktualisieren.
 
-![Für den Berichtstyp Filter ausgewählter Phishing-Typ](../media/ThreatExplorerEmailUserReportedPhishSelected.png)
+![Für den Berichtstyp Filter ausgewählter Phishing-Typ](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
 Zeigen Sie unter dem Diagramm weitere Details zu bestimmten e-Mail-Nachrichten an, beispielsweise Betreffzeile, die IP-Adresse des Absenders, den Benutzer, der die Nachricht als Junk-e-Mail, nicht Junk oder Phishing gemeldet hat, und vieles mehr. 
 
-![Nachrichten, die als Phishing-Versuche gemeldet wurden](../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
+![Nachrichten, die als Phishing-Versuche gemeldet wurden](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
 
 Wählen Sie ein Element in der Liste aus, um weitere Details anzuzeigen.
 
-## <a name="email--all-email"></a>E-Mail #a0 alle e-Mails
+## <a name="email--all-email"></a>E-Mail > alle e-Mails
 
 Um diesen Bericht anzuzeigen, wählen Sie im Explorer die Option**e-Mail** > **alle e-Mails** **anzeigen** > aus. Diese Ansichten zeigen eine Gesamtansicht der e-Mail-Aktivität an, einschließlich e-Mails, die aufgrund von Phishing oder Schadsoftware als bösartig eingestuft wurden, sowie alle nicht-böswilligen e-Mails (normale e-Mail, Spam und Massen-e-Mails). 
 
@@ -101,17 +101,17 @@ Um diesen Bericht anzuzeigen, wählen Sie im Explorer die Option**e-Mail** > **a
 
 Wenn Sie einen Filter anwenden möchten, wählen Sie **Absender**aus, wählen Sie ein Element in der Liste aus, und klicken Sie dann auf die Schaltfläche Aktualisieren. In unserem Beispiel haben wir die **Erkennungstechnologie** als Filter verwendet (es stehen verschiedene Optionen zur Verfügung). Anzeigen von Informationen nach Absender, Domäne des Absenders, Empfänger, Betreff, Anlagendateiname, Malwarefamilie, Schutzstatus (Aktionen, die von den Bedrohungen geschützt sind, und Richtlinien in Office 365), Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und Weitere. 
 
-![Anzeigen von Daten zu erkannten e-Mails anhand von Erkennungstechnologien](../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
+![Anzeigen von Daten zu erkannten e-Mails anhand von Erkennungstechnologien](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
 Zeigen Sie unter dem Diagramm weitere Details zu bestimmten e-Mail-Nachrichten an, beispielsweise Betreff, Empfänger, Absender, Status usw. 
 
-## <a name="content--malware"></a>Inhalte #a0 Schadsoftware
+## <a name="content--malware"></a>Inhalte > Schadsoftware
 
 Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) die Option**Inhalts** > **Malware** **anzeigen** > aus. In dieser Ansicht werden Dateien angezeigt, die von [Office 365 Advanced Threat Protection in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams](atp-for-spo-odb-and-teams.md)als bösartig identifiziert wurden.
 
 Anzeigen von Informationen nach Malwarefamilie, Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und Arbeitsauslastung (OneDrive, SharePoint oder Teams). 
 
-![Anzeigen von Daten zu erkannter Schadsoftware](../media/d11dc568-b091-4159-b261-df13d76b520b.png)  
+![Anzeigen von Daten zu erkannter Schadsoftware](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)  
 
 Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Dateien an, beispielsweise Anlagendateiname, Arbeitsauslastung, Dateigröße, wer die Datei zuletzt geändert hat und vieles mehr. 
   
@@ -119,19 +119,19 @@ Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Dateien an, beispiel
 
 Mit Explorer (und Echtzeiterkennung) können Sie einen Filter in einem Klick anwenden. Klicken Sie auf ein Element in der Legende, und dieses Element wird zum Filter für den Bericht. Nehmen wir beispielsweise an, dass wir uns die Malware-Ansicht im Explorer ansehen:
   
-![Wechseln Sie zu Threat \> Management Explorer](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Wechseln Sie zu Threat \> Management Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Wenn Sie in diesem Diagramm auf **ATP-Detonation** klicken, wird eine Ansicht wie die folgende angezeigt: 
   
-![Explorer gefiltert, um nur ATP-detonations Ergebnisse anzuzeigen](../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer gefiltert, um nur ATP-detonations Ergebnisse anzuzeigen](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
 In dieser Ansicht betrachten wir nun Daten für Dateien, die von [Office 365 ATP-Sicherheitsanlagen](atp-safe-attachments.md)gezündet wurden. Unter dem Diagramm können Details zu bestimmten e-Mail-Nachrichten mit Anlagen angezeigt werden, die durch ATP-sichere Anlagen erkannt wurden.
   
-![Spezifische Details zu e-Mail-Nachrichten mit erkannten Anlagen](../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
+![Spezifische Details zu e-Mail-Nachrichten mit erkannten Anlagen](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
   
 Wenn Sie ein oder mehrere Elemente auswählen, wird das Menü **Aktionen** aktiviert, das mehrere Auswahlmöglichkeiten für die ausgewählten Elemente bietet. 
   
-![Durch die Auswahl eines Elements wird das Menü Aktionen aktiviert.](../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+![Durch die Auswahl eines Elements wird das Menü Aktionen aktiviert.](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
   
 Die Möglichkeit, mit einem Klick zu filtern und zu bestimmten Details zu navigieren, kann Ihnen viel Zeit bei der Untersuchung von Bedrohungen sparen.
 

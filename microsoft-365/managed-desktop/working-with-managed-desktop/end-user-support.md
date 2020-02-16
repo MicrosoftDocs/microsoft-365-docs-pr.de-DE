@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962202"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084989"
 ---
 # <a name="getting-help-for-end-users"></a>Aufrufen von Hilfe für Endbenutzer
 
@@ -24,7 +24,7 @@ Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung f
 
 Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine benutzerfreundliche Oberfläche, die in das endbenutzergerät integriert ist.  
 
-![Hilfe-App-Symbol abrufen](images/get-help.png)
+![Hilfe-App-Symbol abrufen](../../media/get-help.png)
 
 Hierbei handelt es sich um eine Anwendung, die auf allen von Microsoft verwalteten Desktop Geräten installiert ist und an der Taskleiste fixiert ist. 
 
@@ -59,7 +59,7 @@ Endbenutzer mit von Microsoft verwalteten Desktop Geräten haben auch Zugriff au
 >[!NOTE]
 >Sie müssen ihre organisatorische e-Mail-Adresse parat haben, wenn Sie anrufen, um Ihre Identität zu überprüfen. 
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md).
 - Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Ressourcen** des [Microsoft Managed Desktop admin-Portals](https://aka.ms/mwaasportal)ausführliche Verfahren, Ablauf, Arbeitsanweisungen und FAQs.

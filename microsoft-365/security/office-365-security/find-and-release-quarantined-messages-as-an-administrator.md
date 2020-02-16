@@ -16,18 +16,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC).
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599392"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083092"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Finden und Freigeben von Nachrichten in Quarantäne als Administrator
 
 In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC). Office 365 leitet Nachrichten in Quarantäne, da Sie entweder als Spam identifiziert wurden oder mit einer Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmten.
 
-Sie können die Sicherheits #a0 Compliance Center anstelle der Exchange-Verwaltungskonsole verwenden, um diese Aufgaben auch auszuführen. das Quarantäne Portal in der Exchange-Verwaltungskonsole (EAC) ist auf decommisioned festgelegt. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
+Sie können die Sicherheits & Compliance Center anstelle der Exchange-Verwaltungskonsole verwenden, um diese Aufgaben auch auszuführen. das Quarantäne Portal in der Exchange-Verwaltungskonsole (EAC) ist auf decommisioned festgelegt. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
 
 Isolierte Nachrichten werden im EAC auf der Seite **Quarantäne** aufgeführt. Standardmäßig sind die Nachrichten aufsteigend nach Alter im Feld **EMPFANGEN** sortiert. Auch die Werte **ABSENDER**, **BETREFF** und **LÄUFT AB** werden für jede Nachricht aufgelistet. Sie können nach jedem dieser Felder sortieren, indem Sie auf ihre Kopfzeile klicken. Durch ein zweites Klicken auf eine Spaltenüberschrift wird die Sortierreihenfolge umgekehrt. Auf der Seite **Quarantäne** können maximal 500 Nachrichten angezeigt werden.
 
@@ -137,7 +137,7 @@ Wenn Sie Nachrichten für Empfänger freigeben möchten, stehen dazu folgende M�
 
 2. Klicken Sie auf eine Nachricht, um Sie auszuwählen, und klicken Sie dann auf das Symbol **Nachricht freigeben** wie im folgenden Screenshot dargestellt.
 
-   ![Zeigt die Quarantäneseite an, auf der das Symbol zum Freigeben von Nachrichten hervorgehoben und die Freigabeoptionen angezeigt werden](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![Zeigt die Quarantäneseite an, auf der das Symbol zum Freigeben von Nachrichten hervorgehoben und die Freigabeoptionen angezeigt werden](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    Wählen Sie **Ausgewählte Nachricht freigeben und Absender zulassen** aus der Dropdownliste aus.
 
@@ -157,7 +157,7 @@ Wenn Sie Nachrichten für Empfänger freigeben möchten, stehen dazu folgende M�
 
 4. Klicken Sie auf **Freigeben**.
 
-Wenn **Sie auf Aktualisierungs** ![Symbol](../media/ITPro-EAC-RefreshIcon.gif) aktualisieren klicken, um Ihre Daten zu aktualisieren, und dann auf die Nachricht doppelklicken, sollten Sie sehen, dass Sie für die vorgesehenen Empfänger freigegeben wurde.
+Wenn **Sie auf Aktualisierungs** ![Symbol](../../media/ITPro-EAC-RefreshIcon.gif) aktualisieren klicken, um Ihre Daten zu aktualisieren, und dann auf die Nachricht doppelklicken, sollten Sie sehen, dass Sie für die vorgesehenen Empfänger freigegeben wurde.
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Freigeben einer oder mehrerer isolierten Nachrichten für alle Empfänger
 
@@ -184,7 +184,7 @@ Wenn **Sie auf Aktualisierungs** ![Symbol](../media/ITPro-EAC-RefreshIcon.gif) a
 > [!TIP]
 > Stellen Sie durch folgende Schritte in [Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md) sicher, dass eine Nachricht nicht als Spam markiert wird.
 
-Wenn Sie auf das Symbol **Aktualisieren**![Aktualisieren (Symbol)](../media/ITPro-EAC-RefreshIcon.gif) klicken, um Ihre Daten zu aktualisieren, und dann auf die Nachricht doppelklicken, sollte die Nachricht an die beabsichtigten Empfänger freigegeben werden.
+Wenn Sie auf das Symbol **Aktualisieren**![Aktualisieren (Symbol)](../../media/ITPro-EAC-RefreshIcon.gif) klicken, um Ihre Daten zu aktualisieren, und dann auf die Nachricht doppelklicken, sollte die Nachricht an die beabsichtigten Empfänger freigegeben werden.
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

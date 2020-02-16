@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599802"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086820"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
@@ -57,16 +57,16 @@ Derzeit werden Warnungen, die aus den folgenden Arten von Warnungsrichtlinien ge
 - Benutzer vom Senden von e-Mails eingeschränkt #
 
 > [!NOTE]
-> Die mit einem Sternchen (*) gekennzeichneten Warnungen werden in den jeweiligen Warnungsrichtlinien im Security #a0 Compliance Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden. Mit einem Hash (#) gekennzeichnete Warnungen sind allgemein verfügbare Warnungen für öffentliche Vorschau-Textbuch.
+> Die mit einem Sternchen (*) gekennzeichneten Warnungen werden in den jeweiligen Warnungsrichtlinien im Security & Compliance Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden. Mit einem Hash (#) gekennzeichnete Warnungen sind allgemein verfügbare Warnungen für öffentliche Vorschau-Textbuch.
 
-Um Warnungen anzuzeigen **, wählen Sie** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen.  
+Um Warnungen anzuzeigen **, wählen Sie** > im Security & Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen.  
 
 > [!NOTE]
 > Informationswarnungen werden standardmäßig in der Warnungsansicht ausgeblendet. Um diese anzuzeigen, ändern Sie die Warnungsfilterung so, dass Sie Informationswarnungen einschließt.
 
-Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignissen verwaltet, können Sie Office 365 Warnungen entweder per e-Mail-Benachrichtigung oder über die [Office 365 Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)an dieses System senden. Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security #a0 Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
+Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignissen verwaltet, können Sie Office 365 Warnungen entweder per e-Mail-Benachrichtigung oder über die [Office 365 Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)an dieses System senden. Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security & Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
 
-![Warnungen, die mit Untersuchungen verknüpft sind](../media/air-alerts-page-details.png) 
+![Warnungen, die mit Untersuchungen verknüpft sind](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>Sicherheits-Manuskripte
 
@@ -103,7 +103,7 @@ Jeder allgemeine Schritt enthält eine Reihe von unterschritten, die ausgeführt
 
 Die Seite Automatische Untersuchungen zeigt die Ermittlungen Ihrer Organisation und ihre aktuellen Status.
 
-![Haupt Untersuchungs Seite für Air](../media/air-maininvestigationpage.png) 
+![Haupt Untersuchungs Seite für Air](../../media/air-maininvestigationpage.png) 
   
 Sie können:
 - Navigieren Sie direkt zu einer Untersuchung (Wählen Sie eine **Ermittlungs-ID**aus).
@@ -124,7 +124,7 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 |Bereinigt | Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
 |Teilweise behoben | Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
 |Vom Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
-|Fehlgeschlagen | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
+|Failed | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
 |Durch Drosselung in der Warteschlange | Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
 |Durch Drosselung beendet | Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
 
@@ -132,7 +132,7 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 
 Wenn Sie eine bestimmte Untersuchung öffnen, wird die Seite "Ermittlungs Diagramm" angezeigt. Auf dieser Seite werden alle unterschiedlichen Entitäten angezeigt: e-Mail-Nachrichten, Benutzer (und deren Aktivitäten) und Geräte, die automatisch als Teil der ausgelösten Warnung untersuchtwurden.
 
-![Seite "Luft Untersuchungs Diagramm"](../media/air-investigationgraphpage.png)
+![Seite "Luft Untersuchungs Diagramm"](../../media/air-investigationgraphpage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die aktuelle Untersuchung.
@@ -144,7 +144,7 @@ Sie können:
 
 Auf der Registerkarte **Benachrichtigungen** für eine Untersuchung können Sie Warnungen anzeigen, die für die Untersuchung relevant sind. Details umfassen die Warnung, die die Untersuchung ausgelöst hat, und andere korrelierte Warnungen, wie etwa riskante Anmeldungen, DLP-Richtlinienverstöße usw., die mit der Untersuchung korreliert sind. Auf dieser Seite kann ein Sicherheitsanalytiker auch weitere Details zu einzelnen Benachrichtigungen anzeigen.
 
-![Seite "Luft Warnungen"](../media/air-investigationalertspage.png)
+![Seite "Luft Warnungen"](../../media/air-investigationalertspage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die aktuelle Auslöse Warnung und alle zugeordneten Warnungen.
@@ -177,14 +177,14 @@ E-Mail-Anzahlen werden zum Zeitpunkt der Untersuchung berechnet, und einige Zäh
 
 Als Beispiel wird das folgende Szenario betrachtet. Der erste Cluster von drei e-Mail-Nachrichten wurde als Phishing betrachtet. Ein weiterer Cluster ähnlicher Nachrichten mit derselben IP und demselben Betreff wurde gefunden und als bösartig eingestuft, da einige von Ihnen während der anfänglichen Erkennung als Phishing identifiziert wurden. 
 
-![Seite für die Untersuchung von Air e-Mail](../media/air-investigationemailpage.png)
+![Seite für die Untersuchung von Air e-Mail](../../media/air-investigationemailpage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die aktuellen Clustering-Ergebnisse und Bedrohungen, die gefunden wurden.
 - Klicken Sie auf eine Cluster Entität oder eine Bedrohungsliste, um eine Ausklappseite zu öffnen, auf der die vollständigen Warnungsdetails angezeigt werden.
 - Untersuchen Sie den e-Mail-Cluster weiter, indem Sie oben auf der Registerkarte "e-Mail-Cluster Details" auf den Link "in Explorer öffnen" klicken.
 
-![Air Investigation e-Mail mit Flyout-Details](../media/air-investigationemailpageflyoutdetails.png)
+![Air Investigation e-Mail mit Flyout-Details](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > Im Zusammenhang mit e-Mails wird möglicherweise als Teil der Untersuchung eine Bedrohungs Fläche für Volumen Anomalien angezeigt. Eine Volumen Anomalie gibt eine Spitze in ähnlichen e-Mail-Nachrichten um die Ermittlungsereignis Zeit im Vergleich zu früheren Zeitrahmen an. Diese Spitze im e-Mail-Datenverkehr mit ähnlichen Merkmalen (z. b. Betreff-und Absenderdomäne, Text Ähnlichkeit und Absender-IP) ist typisch für den Start von e-Mail-Kampagnen oder-Angriffen. Massen-, Spam-und legitime e-Mail-Kampagnen teilen diese Merkmale jedoch häufig. Volumen Anomalien stellen eine potenzielle Bedrohung dar und können dementsprechend im Vergleich zu Malware-oder Phishing-Bedrohungen, die mit Antiviren-Engines, Detonation oder böswilliger Reputation identifiziert werden, eine geringere schwere aufweisen.
@@ -195,7 +195,7 @@ Auf der Registerkarte **Benutzer** werden alle Benutzer angezeigt, die als Teil 
 
 In der folgenden Abbildung zeigt Air beispielsweise Indikatoren für Kompromisse und Anomalien basierend auf einer neuen Posteingangsregel, die erstellt wurde. Weitere Details (Beweise) der Untersuchung stehen über detaillierte Ansichten auf dieser Registerkarte zur Verfügung. Indikatoren für Kompromisse und Anomalien können auch anomale Erkennungen von [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)umfassen.
 
-![Seite "Air Investigation Users"](../media/air-investigationuserspage.png)
+![Seite "Air Investigation Users"](../../media/air-investigationuserspage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über identifizierte Benutzer Ergebnisse und gefundene Risiken.
@@ -205,7 +205,7 @@ Sie können:
 
 Auf der Registerkarte " **Computer** " werden alle Computer angezeigt, die als Teil der Untersuchung identifiziert wurden. 
 
-![Seite "Air Investigation Machine"](../media/air-investigationmachinepage.png)
+![Seite "Air Investigation Machine"](../../media/air-investigationmachinepage.png)
 
 Im Rahmen einiger Textbuch-Elemente korreliert Air e-Mail-Bedrohungen mit Geräten (z. b. gezappte Schadsoftware). Beispielsweise übergibt eine Untersuchung einen bösartigen Datei Hash an [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) , um zu untersuchen. Dies ermöglicht eine automatisierte Untersuchung relevanter Computer für Ihre Benutzer, um sicherzustellen, dass Bedrohungen sowohl in der Cloud als auch in ihren Endpunkten behandelt werden. 
@@ -220,19 +220,19 @@ Auf der Registerkarte **Entitäten** werden die Entitäten, die im Rahmen der Un
 
 Hier sehen Sie die untersuchten Entitäten und Details der Entitätstypen wie e-Mail-Nachrichten, Cluster, IP-Adressen, Benutzer und vieles mehr. Sie können auch sehen, wie viele Entitäten analysiert wurden, und die Bedrohungen, die jedem zugeordnet wurden. 
 
-![Seite "Air Investigation Entities"](../media/air-investigationentitiespage.png)
+![Seite "Air Investigation Entities"](../../media/air-investigationentitiespage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die gefundenen Ermittlungs Entitäten und-Bedrohungen.
 - Wählen Sie eine Entität aus, um eine Ausklappseite zu öffnen, auf der die zugehörigen Entitäts Details angezeigt werden.
 
-![Details zu Air Investigation Entities](../media/air-investigationsentitiespagedetails.png)
+![Details zu Air Investigation Entities](../../media/air-investigationsentitiespagedetails.png)
 
 ### <a name="playbook-log"></a>Manuskript Protokoll
 
 Auf der Registerkarte **Protokoll** werden alle Schritte im Textbuch angezeigt, die während der Untersuchung aufgetreten sind. Das Protokoll erfasst einen vollständigen bestand aller Analysatoren und Aktionen, die von Office 365 automatischen Ermittlungsfunktionen als Teil von Air abgeschlossen wurden. Es bietet eine klare Sicht auf alle Schritte, einschließlich der Aktion selbst, eine Beschreibung und die Dauer des tatsächlichen von Anfang bis Ende. 
 
-![Seite "Air Investigation log"](../media/air-investigationlogpage.png)
+![Seite "Air Investigation log"](../../media/air-investigationlogpage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die ausgeführten Schritte im Textbuch.
@@ -266,7 +266,7 @@ Auf der Registerkarte **Aktionen** werden alle Textbuch-Aktionen angezeigt, die 
 
 Durch Aktionen werden die Schritte erfasst, die Microsoft am Ende einer Untersuchung empfiehlt. Sie können hier Korrekturaktionen durch Auswählen einer oder mehrerer Aktionen durchführen. Durch Klicken auf **genehmigen** kann die Wiederherstellung beginnen. (Entsprechende Berechtigungen sind erforderlich – die Funktion "suchen und löschen" ist erforderlich, um Aktionen aus Explorer und Air auszuführen). Beispielsweise kann ein Sicherheits Leser Aktionen anzeigen, aber nicht genehmigen. Hinweis: Sie müssen nicht jede Aktion genehmigen. Wenn Sie mit der empfohlenen Aktion nicht einverstanden sind oder Ihre Organisation keine bestimmten Arten von Aktionen ausgewählt hat, können Sie die Aktionen **ablehnen** oder einfach ignorieren und keine Aktionen ausführen. Durch das genehmigen und/oder ablehnen aller Aktionen kann die Untersuchung vollständig abgeschlossen werden (der Status wird korrigiert), während einige Aktionen unvollständig sind und der unter Suchstatus in einen teilweise korrigierten Zustand wechselt.
 
-![Seite "Luft Ermittlungsaktionen"](../media/air-investigationactionspage.png)
+![Seite "Luft Ermittlungsaktionen"](../../media/air-investigationactionspage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die empfohlenen Aktionen im Textbuch.
@@ -319,11 +319,11 @@ Zusätzlich zu den automatischen Untersuchungen, die durch eine Warnung ausgelö
 
 Nehmen wir beispielsweise an, dass Sie Daten im Explorer zu vom Benutzer gemeldeten Nachrichten anzeigen. Sie können ein Element in der Ergebnisliste auswählen und dann im Menü Aktion auf **Recherchieren** (vorausgesetzt, Sie verfügen über entsprechende Korrektur Berechtigungen).
 
-![Vom Benutzer gemeldete Nachrichten im Explorer mit Schaltfläche "Recherchieren"](../media/Explorer-UserReported-Investigate.png)
+![Vom Benutzer gemeldete Nachrichten im Explorer mit Schaltfläche "Recherchieren"](../../media/Explorer-UserReported-Investigate.png)
 
 Nehmen Sie als weiteres Beispiel an, dass Sie Daten zu e-Mail-Nachrichten anzeigen, die als Schadsoftware erkannt wurden, und dass mehrere e-Mail-Nachrichten als Schadsoftware erkannt werden. Sie können die Registerkarte **e-Mail** auswählen, eine oder mehrere e-Mail-Nachrichten auswählen und dann im Menü **Aktionen** die Option **untersuchen**auswählen. 
 
-![Starten einer Untersuchung für Schadsoftware im Explorer](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Starten einer Untersuchung für Schadsoftware im Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Ähnlich wie Textbuch, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die aus einer Ansicht im Explorer ausgelöst werden, eine Stamm Ermittlung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie Empfohlene Aktionen zur Minderung dieser Bedrohungen.
 
@@ -346,8 +346,8 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 
 |Aufgabe |Erforderliche Rolle (n) |
 |--|--|
-|So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>- **Globaler Administrator**<br/>- **Sicherheits Administrator** <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
-|So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Compliance Center von Office 365 Security #a0](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) zugewiesen ist:<br/>- **Globaler Administrator** <br/>- **Sicherheits Administrator**<br/>- **Sicherheits Leser** <br/>--- und ---<br/>- **Suchen und löschen** (diese Rolle wird nur im [Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
+|So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>- **Globaler Administrator**<br/>- **Sicherheits Administrator** <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
+|So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Compliance Center von Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) zugewiesen ist:<br/>- **Globaler Administrator** <br/>- **Sicherheits Administrator**<br/>- **Sicherheits Leser** <br/>--- und ---<br/>- **Suchen und löschen** (diese Rolle wird nur im [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
