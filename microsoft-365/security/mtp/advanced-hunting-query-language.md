@@ -17,25 +17,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 586b887c9c5c1e4c19623c89dd08ed62ba0d4bb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600342"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087463"
 ---
-# <a name="learn-the-advanced-hunting-query-language"></a><span data-ttu-id="8ee17-104">Erlernen der Abfragesprache für die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="8ee17-104">Learn the advanced hunting query language</span></span>
+# <a name="learn-the-advanced-hunting-query-language"></a><span data-ttu-id="35768-104">Erlernen der Abfragesprache für die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="35768-104">Learn the advanced hunting query language</span></span>
 
-<span data-ttu-id="8ee17-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="8ee17-105">**Applies to:**</span></span>
-- <span data-ttu-id="8ee17-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="8ee17-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="35768-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="35768-105">**Applies to:**</span></span>
+- <span data-ttu-id="35768-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="35768-106">Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="8ee17-107">Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/).</span><span class="sxs-lookup"><span data-stu-id="8ee17-107">Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/).</span></span> <span data-ttu-id="8ee17-108">Sie können die Kusto-Syntax und -Operatoren verwenden, um Abfragen zu erstellen, die Informationen im [Schema](advanced-hunting-schema-tables.md) suchen, die speziell für die erweiterte Suche strukturiert sind.</span><span class="sxs-lookup"><span data-stu-id="8ee17-108">You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for advanced hunting.</span></span> <span data-ttu-id="8ee17-109">Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.</span><span class="sxs-lookup"><span data-stu-id="8ee17-109">To understand these concepts better, run your first query.</span></span>
+<span data-ttu-id="35768-107">Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/).</span><span class="sxs-lookup"><span data-stu-id="35768-107">Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/).</span></span> <span data-ttu-id="35768-108">Sie können die Kusto-Syntax und -Operatoren verwenden, um Abfragen zu erstellen, die Informationen im [Schema](advanced-hunting-schema-tables.md) suchen, die speziell für die erweiterte Suche strukturiert sind.</span><span class="sxs-lookup"><span data-stu-id="35768-108">You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for advanced hunting.</span></span> <span data-ttu-id="35768-109">Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.</span><span class="sxs-lookup"><span data-stu-id="35768-109">To understand these concepts better, run your first query.</span></span>
 
-## <a name="try-your-first-query"></a><span data-ttu-id="8ee17-110">Testen Ihrer ersten Abfrage</span><span class="sxs-lookup"><span data-stu-id="8ee17-110">Try your first query</span></span>
+## <a name="try-your-first-query"></a><span data-ttu-id="35768-110">Testen Ihrer ersten Abfrage</span><span class="sxs-lookup"><span data-stu-id="35768-110">Try your first query</span></span>
 
-<span data-ttu-id="8ee17-111">Wechseln Sie im Microsoft 365 Security Center zu **Hunting**, um Ihre erste Abfrage auszuführen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-111">in the Microsoft 365 security center, go to **Hunting** to run your first query.</span></span> <span data-ttu-id="8ee17-112">Verwenden Sie das folgende Beispiel:</span><span class="sxs-lookup"><span data-stu-id="8ee17-112">Use the following example:</span></span>
+<span data-ttu-id="35768-111">Wechseln Sie im Microsoft 365 Security Center zu **Hunting**, um Ihre erste Abfrage auszuführen.</span><span class="sxs-lookup"><span data-stu-id="35768-111">in the Microsoft 365 security center, go to **Hunting** to run your first query.</span></span> <span data-ttu-id="35768-112">Verwenden Sie das folgende Beispiel:</span><span class="sxs-lookup"><span data-stu-id="35768-112">Use the following example:</span></span>
 
 ```kusto
 // Finds PowerShell execution events that could involve a download.
@@ -51,32 +51,32 @@ DeviceProcessEvents
 | top 100 by Timestamp
 ```
 
-<span data-ttu-id="8ee17-113">So sieht es in der erweiterten Suche aus.</span><span class="sxs-lookup"><span data-stu-id="8ee17-113">This is how it will look like in advanced hunting.</span></span>
+<span data-ttu-id="35768-113">So sieht es in der erweiterten Suche aus.</span><span class="sxs-lookup"><span data-stu-id="35768-113">This is how it will look like in advanced hunting.</span></span>
 
-![Abbildung einer erweiterten Suchabfrage in Microsoft Defender ATP](../images/advanced-hunting-query-example.png)
+![Abbildung einer erweiterten Suchabfrage in Microsoft Defender ATP](../../media/advanced-hunting-query-example.png)
 
-<span data-ttu-id="8ee17-115">Die Abfrage beginnt mit einem kurzen Kommentar, der beschreibt, wofür die Abfrage dient.</span><span class="sxs-lookup"><span data-stu-id="8ee17-115">The query starts with a short comment describing what it is for.</span></span> <span data-ttu-id="8ee17-116">Dies ist hilfreich, wenn Sie sich später entscheiden, Ihre Abfrage zu speichern und sie für andere Personen in Ihrer Organisation freizugeben.</span><span class="sxs-lookup"><span data-stu-id="8ee17-116">This helps if you later decide to save your query and share it with others in your organization.</span></span>
+<span data-ttu-id="35768-115">Die Abfrage beginnt mit einem kurzen Kommentar, der beschreibt, wofür die Abfrage dient.</span><span class="sxs-lookup"><span data-stu-id="35768-115">The query starts with a short comment describing what it is for.</span></span> <span data-ttu-id="35768-116">Dies ist hilfreich, wenn Sie sich später entscheiden, Ihre Abfrage zu speichern und sie für andere Personen in Ihrer Organisation freizugeben.</span><span class="sxs-lookup"><span data-stu-id="35768-116">This helps if you later decide to save your query and share it with others in your organization.</span></span>
 
 ```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
 
-<span data-ttu-id="8ee17-117">Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-117">The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`).</span></span> <span data-ttu-id="8ee17-118">In diesem Beispiel beginnen wir, indem wir den Tabellennamen `DeviceProcessEvents` und bei Bedarf weitere Pipe-Elemente hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-118">In this example, we start by adding  with the table name `DeviceProcessEvents` and add piped elements as needed.</span></span>
+<span data-ttu-id="35768-117">Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen.</span><span class="sxs-lookup"><span data-stu-id="35768-117">The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`).</span></span> <span data-ttu-id="35768-118">In diesem Beispiel beginnen wir, indem wir den Tabellennamen `DeviceProcessEvents` und bei Bedarf weitere Pipe-Elemente hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="35768-118">In this example, we start by adding  with the table name `DeviceProcessEvents` and add piped elements as needed.</span></span>
 
-<span data-ttu-id="8ee17-119">Das erste Pipe-Element ist ein Zeitfilter, der in der letzten sieben Tagen festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="8ee17-119">The first piped element is a time filter scoped within the previous seven days.</span></span> <span data-ttu-id="8ee17-120">Wenn Sie den Zeitabschnitt so eng wie möglich lassen, wird sichergestellt, dass Abfragen gut ausgeführt werden, überschaubare Ergebnisse zurückgeben und keine Zeitüberschreitungen auftreten.</span><span class="sxs-lookup"><span data-stu-id="8ee17-120">Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.</span></span>
+<span data-ttu-id="35768-119">Das erste Pipe-Element ist ein Zeitfilter, der in der letzten sieben Tagen festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="35768-119">The first piped element is a time filter scoped within the previous seven days.</span></span> <span data-ttu-id="35768-120">Wenn Sie den Zeitabschnitt so eng wie möglich lassen, wird sichergestellt, dass Abfragen gut ausgeführt werden, überschaubare Ergebnisse zurückgeben und keine Zeitüberschreitungen auftreten.</span><span class="sxs-lookup"><span data-stu-id="35768-120">Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.</span></span>
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-<span data-ttu-id="8ee17-121">Auf den Zeitabschnitt folgt sofort eine Suche nach Dateien, die die PowerShell-Anwendung darstellen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-121">The time range is immediately followed by a search for files representing the PowerShell application.</span></span>
+<span data-ttu-id="35768-121">Auf den Zeitabschnitt folgt sofort eine Suche nach Dateien, die die PowerShell-Anwendung darstellen.</span><span class="sxs-lookup"><span data-stu-id="35768-121">The time range is immediately followed by a search for files representing the PowerShell application.</span></span>
 
 ```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
-<span data-ttu-id="8ee17-122">Anschließend sucht die Abfrage nach Befehlszeilen, die in der Regeln mit PowerShell verwendet werden, um Dateien herunterzuladen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-122">Afterwards, the query looks for command lines that are typically used with PowerShell to download files.</span></span>
+<span data-ttu-id="35768-122">Anschließend sucht die Abfrage nach Befehlszeilen, die in der Regeln mit PowerShell verwendet werden, um Dateien herunterzuladen.</span><span class="sxs-lookup"><span data-stu-id="35768-122">Afterwards, the query looks for command lines that are typically used with PowerShell to download files.</span></span>
 
 ```kusto
 | where ProcessCommandLine has "Net.WebClient"
@@ -86,62 +86,62 @@ DeviceProcessEvents
         or ProcessCommandLine contains "http:"
 ```
 
-<span data-ttu-id="8ee17-123">Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-123">Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like.</span></span> <span data-ttu-id="8ee17-124">`project` gibt bestimmte Spalten zurück, und `top` schränkt die Anzahl der Ergebnisse ein, sodass die Ergebnisse sinnvoll formatiert sind, eine angemessene Größe aufweisen und einfach zu verarbeiten sind.</span><span class="sxs-lookup"><span data-stu-id="8ee17-124">`project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.</span></span>
+<span data-ttu-id="35768-123">Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen.</span><span class="sxs-lookup"><span data-stu-id="35768-123">Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like.</span></span> <span data-ttu-id="35768-124">`project` gibt bestimmte Spalten zurück, und `top` schränkt die Anzahl der Ergebnisse ein, sodass die Ergebnisse sinnvoll formatiert sind, eine angemessene Größe aufweisen und einfach zu verarbeiten sind.</span><span class="sxs-lookup"><span data-stu-id="35768-124">`project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.</span></span>
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by Timestamp
 ```
 
-<span data-ttu-id="8ee17-125">Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-125">Click **Run query** to see the results.</span></span> <span data-ttu-id="8ee17-126">Sie können die Bildschirmansicht erweitern, damit Sie sich auf Ihre Suchabfrage und die Ergebnisse konzentrieren können.</span><span class="sxs-lookup"><span data-stu-id="8ee17-126">You can expand the screen view so you can focus on your hunting query and the results.</span></span>
+<span data-ttu-id="35768-125">Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="35768-125">Click **Run query** to see the results.</span></span> <span data-ttu-id="35768-126">Sie können die Bildschirmansicht erweitern, damit Sie sich auf Ihre Suchabfrage und die Ergebnisse konzentrieren können.</span><span class="sxs-lookup"><span data-stu-id="35768-126">You can expand the screen view so you can focus on your hunting query and the results.</span></span>
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a><span data-ttu-id="8ee17-127">Erlernen häufig verwendeter Operatoren für die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="8ee17-127">Learn common query operators for advanced hunting</span></span>
+## <a name="learn-common-query-operators-for-advanced-hunting"></a><span data-ttu-id="35768-127">Erlernen häufig verwendeter Operatoren für die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="35768-127">Learn common query operators for advanced hunting</span></span>
 
-<span data-ttu-id="8ee17-128">Da Sie nun Ihre erste Abfrage ausgeführt und eine allgemeine Vorstellung von deren Komponenten haben, gehen wir einen Schritt zurück und befassen uns mit ein paar Grundlagen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-128">Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics.</span></span> <span data-ttu-id="8ee17-129">Die von der erweiterten Suche verwendete Kusto-Abfragesprache unterstützt eine Reihe von Operatoren, darunter die folgenden allgemeinen Operatoren.</span><span class="sxs-lookup"><span data-stu-id="8ee17-129">The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.</span></span>
+<span data-ttu-id="35768-128">Da Sie nun Ihre erste Abfrage ausgeführt und eine allgemeine Vorstellung von deren Komponenten haben, gehen wir einen Schritt zurück und befassen uns mit ein paar Grundlagen.</span><span class="sxs-lookup"><span data-stu-id="35768-128">Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics.</span></span> <span data-ttu-id="35768-129">Die von der erweiterten Suche verwendete Kusto-Abfragesprache unterstützt eine Reihe von Operatoren, darunter die folgenden allgemeinen Operatoren.</span><span class="sxs-lookup"><span data-stu-id="35768-129">The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.</span></span>
 
-| <span data-ttu-id="8ee17-130">Operator</span><span class="sxs-lookup"><span data-stu-id="8ee17-130">Operator</span></span> | <span data-ttu-id="8ee17-131">Beschreibung und Verwendung</span><span class="sxs-lookup"><span data-stu-id="8ee17-131">Description and usage</span></span> |
+| <span data-ttu-id="35768-130">Operator</span><span class="sxs-lookup"><span data-stu-id="35768-130">Operator</span></span> | <span data-ttu-id="35768-131">Beschreibung und Verwendung</span><span class="sxs-lookup"><span data-stu-id="35768-131">Description and usage</span></span> |
 |--|--|
-| `where` | <span data-ttu-id="8ee17-132">Filtern einer Tabelle auf die Teilmenge von Zeilen, die einem Prädikat entsprechen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-132">Filter a table to the subset of rows that satisfy a predicate.</span></span> |
-| `summarize` | <span data-ttu-id="8ee17-133">Erstellen einer Tabelle, in der die Inhalte der Eingabetabelle gesammelt werden.</span><span class="sxs-lookup"><span data-stu-id="8ee17-133">Produce a table that aggregates the content of the input table.</span></span> |
-| `join` | <span data-ttu-id="8ee17-134">Zusammenführen der Zeilen von zwei Tabellen, um eine neue Tabelle zu erstellen, indem Werte der angegebenen Spalten aus jeder Tabelle zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="8ee17-134">Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.</span></span> |
-| `count` | <span data-ttu-id="8ee17-135">Zurückgeben der Anzahl von Datensätzen im Eingabedatensatz.</span><span class="sxs-lookup"><span data-stu-id="8ee17-135">Return the number of records in the input record set.</span></span> |
-| `top` | <span data-ttu-id="8ee17-136">Zurückgeben der ersten n Einträge, sortiert anhand der angegebenen Spalten.</span><span class="sxs-lookup"><span data-stu-id="8ee17-136">Return the first N records sorted by the specified columns.</span></span> |
-| `limit` | <span data-ttu-id="8ee17-137">Zurückkehren nach oben zur angegebenen Zeilenanzahl.</span><span class="sxs-lookup"><span data-stu-id="8ee17-137">Return up to the specified number of rows.</span></span> |
-| `project` | <span data-ttu-id="8ee17-138">Auswählen der Spalten, um neue berechnete Spalten aufzunehmen, umzubenennen, zu löschen oder einzufügen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-138">Select the columns to include, rename or drop, and insert new computed columns.</span></span> |
-| `extend` | <span data-ttu-id="8ee17-139">Erstellen von berechneten Spalten und Anfügen an das Resultset.</span><span class="sxs-lookup"><span data-stu-id="8ee17-139">Create calculated columns and append them to the result set.</span></span> |
-| `makeset` |  <span data-ttu-id="8ee17-140">Zurückgeben eines dynamischen (JSON)-Arrays der Gruppe eindeutiger Werte, die der Ausdruck in der Gruppe verwendet.</span><span class="sxs-lookup"><span data-stu-id="8ee17-140">Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group.</span></span> |
-| `find` | <span data-ttu-id="8ee17-141">Suchen von Zeilen, die mit einem Prädikat über eine Reihe von Tabellen hinweg übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-141">Find rows that match a predicate across a set of tables.</span></span> |
+| `where` | <span data-ttu-id="35768-132">Filtern einer Tabelle auf die Teilmenge von Zeilen, die einem Prädikat entsprechen.</span><span class="sxs-lookup"><span data-stu-id="35768-132">Filter a table to the subset of rows that satisfy a predicate.</span></span> |
+| `summarize` | <span data-ttu-id="35768-133">Erstellen einer Tabelle, in der die Inhalte der Eingabetabelle gesammelt werden.</span><span class="sxs-lookup"><span data-stu-id="35768-133">Produce a table that aggregates the content of the input table.</span></span> |
+| `join` | <span data-ttu-id="35768-134">Zusammenführen der Zeilen von zwei Tabellen, um eine neue Tabelle zu erstellen, indem Werte der angegebenen Spalten aus jeder Tabelle zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="35768-134">Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.</span></span> |
+| `count` | <span data-ttu-id="35768-135">Zurückgeben der Anzahl von Datensätzen im Eingabedatensatz.</span><span class="sxs-lookup"><span data-stu-id="35768-135">Return the number of records in the input record set.</span></span> |
+| `top` | <span data-ttu-id="35768-136">Zurückgeben der ersten n Einträge, sortiert anhand der angegebenen Spalten.</span><span class="sxs-lookup"><span data-stu-id="35768-136">Return the first N records sorted by the specified columns.</span></span> |
+| `limit` | <span data-ttu-id="35768-137">Zurückkehren nach oben zur angegebenen Zeilenanzahl.</span><span class="sxs-lookup"><span data-stu-id="35768-137">Return up to the specified number of rows.</span></span> |
+| `project` | <span data-ttu-id="35768-138">Auswählen der Spalten, um neue berechnete Spalten aufzunehmen, umzubenennen, zu löschen oder einzufügen.</span><span class="sxs-lookup"><span data-stu-id="35768-138">Select the columns to include, rename or drop, and insert new computed columns.</span></span> |
+| `extend` | <span data-ttu-id="35768-139">Erstellen von berechneten Spalten und Anfügen an das Resultset.</span><span class="sxs-lookup"><span data-stu-id="35768-139">Create calculated columns and append them to the result set.</span></span> |
+| `makeset` |  <span data-ttu-id="35768-140">Zurückgeben eines dynamischen (JSON)-Arrays der Gruppe eindeutiger Werte, die der Ausdruck in der Gruppe verwendet.</span><span class="sxs-lookup"><span data-stu-id="35768-140">Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group.</span></span> |
+| `find` | <span data-ttu-id="35768-141">Suchen von Zeilen, die mit einem Prädikat über eine Reihe von Tabellen hinweg übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="35768-141">Find rows that match a predicate across a set of tables.</span></span> |
 
-<span data-ttu-id="8ee17-142">Wenn Sie ein Beispiel für diese Operatoren sehen möchten, führen Sie diese im Abschnitt **Erste Schritte** in der erweiterten Suche aus.</span><span class="sxs-lookup"><span data-stu-id="8ee17-142">To see a live example of these operators, run them from the **Get started** section in advanced hunting.</span></span>
+<span data-ttu-id="35768-142">Wenn Sie ein Beispiel für diese Operatoren sehen möchten, führen Sie diese im Abschnitt **Erste Schritte** in der erweiterten Suche aus.</span><span class="sxs-lookup"><span data-stu-id="35768-142">To see a live example of these operators, run them from the **Get started** section in advanced hunting.</span></span>
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a><span data-ttu-id="8ee17-143">Grundlegendes zu Datentypen und deren Auswirkungen auf die Abfragesyntax</span><span class="sxs-lookup"><span data-stu-id="8ee17-143">Understand data types and their query syntax implications</span></span>
+## <a name="understand-data-types-and-their-query-syntax-implications"></a><span data-ttu-id="35768-143">Grundlegendes zu Datentypen und deren Auswirkungen auf die Abfragesyntax</span><span class="sxs-lookup"><span data-stu-id="35768-143">Understand data types and their query syntax implications</span></span>
 
-<span data-ttu-id="8ee17-144">Daten in erweiterten Suchtabellen werden in der Regel in die folgenden Datentypen unterteilt.</span><span class="sxs-lookup"><span data-stu-id="8ee17-144">Data in advanced hunting tables are generally classified into the following data types.</span></span>
+<span data-ttu-id="35768-144">Daten in erweiterten Suchtabellen werden in der Regel in die folgenden Datentypen unterteilt.</span><span class="sxs-lookup"><span data-stu-id="35768-144">Data in advanced hunting tables are generally classified into the following data types.</span></span>
 
-| <span data-ttu-id="8ee17-145">Datentyp</span><span class="sxs-lookup"><span data-stu-id="8ee17-145">Data type</span></span> | <span data-ttu-id="8ee17-146">Beschreibung und Auswirkungen der Abfrage</span><span class="sxs-lookup"><span data-stu-id="8ee17-146">Description and query implications</span></span> |
+| <span data-ttu-id="35768-145">Datentyp</span><span class="sxs-lookup"><span data-stu-id="35768-145">Data type</span></span> | <span data-ttu-id="35768-146">Beschreibung und Auswirkungen der Abfrage</span><span class="sxs-lookup"><span data-stu-id="35768-146">Description and query implications</span></span> |
 |--|--|
-| `datetime` | <span data-ttu-id="8ee17-147">Daten- und Zeitinformationen, die in der Regel Ereigniszeitstempel darstellen</span><span class="sxs-lookup"><span data-stu-id="8ee17-147">Data and time information typically representing event timestamps</span></span> |
-| `string` | <span data-ttu-id="8ee17-148">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="8ee17-148">Character string</span></span> |
-| `bool` | <span data-ttu-id="8ee17-149">„True“ oder „False“</span><span class="sxs-lookup"><span data-stu-id="8ee17-149">True or false</span></span> |
-| `int` | <span data-ttu-id="8ee17-150">Ein numerischer 32-Bit-Wert.</span><span class="sxs-lookup"><span data-stu-id="8ee17-150">32-bit numeric value</span></span>  |
-| `long` | <span data-ttu-id="8ee17-151">Ein numerischer 64-Bit-Wert.</span><span class="sxs-lookup"><span data-stu-id="8ee17-151">64-bit numeric value</span></span> |
+| `datetime` | <span data-ttu-id="35768-147">Daten- und Zeitinformationen, die in der Regel Ereigniszeitstempel darstellen</span><span class="sxs-lookup"><span data-stu-id="35768-147">Data and time information typically representing event timestamps</span></span> |
+| `string` | <span data-ttu-id="35768-148">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="35768-148">Character string</span></span> |
+| `bool` | <span data-ttu-id="35768-149">„True“ oder „False“</span><span class="sxs-lookup"><span data-stu-id="35768-149">True or false</span></span> |
+| `int` | <span data-ttu-id="35768-150">Ein numerischer 32-Bit-Wert.</span><span class="sxs-lookup"><span data-stu-id="35768-150">32-bit numeric value</span></span>  |
+| `long` | <span data-ttu-id="35768-151">Ein numerischer 64-Bit-Wert.</span><span class="sxs-lookup"><span data-stu-id="35768-151">64-bit numeric value</span></span> |
 
-## <a name="use-sample-queries"></a><span data-ttu-id="8ee17-152">Verwenden von Beispielabfragen</span><span class="sxs-lookup"><span data-stu-id="8ee17-152">Use sample queries</span></span>
+## <a name="use-sample-queries"></a><span data-ttu-id="35768-152">Verwenden von Beispielabfragen</span><span class="sxs-lookup"><span data-stu-id="35768-152">Use sample queries</span></span>
 
-<span data-ttu-id="8ee17-153">Der Abschnitt **Erste Schritte** bietet einige einfache Abfragen mit häufig verwendeten Operatoren.</span><span class="sxs-lookup"><span data-stu-id="8ee17-153">The **Get started** section provides a few simple queries using commonly used operators.</span></span> <span data-ttu-id="8ee17-154">Versuchen Sie, diese Abfragen auszuführen und kleine Änderungen daran vorzunehmen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-154">Try running these queries and making small modifications to them.</span></span>
+<span data-ttu-id="35768-153">Der Abschnitt **Erste Schritte** bietet einige einfache Abfragen mit häufig verwendeten Operatoren.</span><span class="sxs-lookup"><span data-stu-id="35768-153">The **Get started** section provides a few simple queries using commonly used operators.</span></span> <span data-ttu-id="35768-154">Versuchen Sie, diese Abfragen auszuführen und kleine Änderungen daran vorzunehmen.</span><span class="sxs-lookup"><span data-stu-id="35768-154">Try running these queries and making small modifications to them.</span></span>
 
-![Abbildung eines erweiterten Suchfensters](../images/advanced-hunting-get-started.png)
+![Abbildung eines erweiterten Suchfensters](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
-><span data-ttu-id="8ee17-156">Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen.</span><span class="sxs-lookup"><span data-stu-id="8ee17-156">Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios.</span></span> <span data-ttu-id="8ee17-157">Erkunden Sie die freigegebenen Abfragen auf der linken Seite oder das GitHub-Abfragerepository.</span><span class="sxs-lookup"><span data-stu-id="8ee17-157">Explore the shared queries on the left side of the page or the GitHub query repository.</span></span>
+><span data-ttu-id="35768-156">Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen.</span><span class="sxs-lookup"><span data-stu-id="35768-156">Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios.</span></span> <span data-ttu-id="35768-157">Erkunden Sie die freigegebenen Abfragen auf der linken Seite oder das GitHub-Abfragerepository.</span><span class="sxs-lookup"><span data-stu-id="35768-157">Explore the shared queries on the left side of the page or the GitHub query repository.</span></span>
 
-## <a name="access-query-language-documentation"></a><span data-ttu-id="8ee17-158">Zugreifen auf die Dokumentation zur Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="8ee17-158">Access query language documentation</span></span>
+## <a name="access-query-language-documentation"></a><span data-ttu-id="35768-158">Zugreifen auf die Dokumentation zur Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="35768-158">Access query language documentation</span></span>
 
-<span data-ttu-id="8ee17-159">Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren finden Sie unter [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/).</span><span class="sxs-lookup"><span data-stu-id="8ee17-159">For more information on Kusto query language and supported operators, see [Kusto query language documentation](https://docs.microsoft.com/azure/kusto/query/).</span></span>
+<span data-ttu-id="35768-159">Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren finden Sie unter [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/).</span><span class="sxs-lookup"><span data-stu-id="35768-159">For more information on Kusto query language and supported operators, see [Kusto query language documentation](https://docs.microsoft.com/azure/kusto/query/).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="8ee17-160">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="8ee17-160">Related topics</span></span>
-- [<span data-ttu-id="8ee17-161">Vorbeugende Suche nach Bedrohungen</span><span class="sxs-lookup"><span data-stu-id="8ee17-161">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="8ee17-162">Verwenden freigegebener Abfragen</span><span class="sxs-lookup"><span data-stu-id="8ee17-162">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="8ee17-163">Suche nach Bedrohungen auf Geräten und in E-Mails</span><span class="sxs-lookup"><span data-stu-id="8ee17-163">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="8ee17-164">Grundlegendes zum Schema</span><span class="sxs-lookup"><span data-stu-id="8ee17-164">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="8ee17-165">Anwenden bewährter Methoden für Abfragen</span><span class="sxs-lookup"><span data-stu-id="8ee17-165">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="35768-160">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="35768-160">Related topics</span></span>
+- [<span data-ttu-id="35768-161">Vorbeugende Suche nach Bedrohungen</span><span class="sxs-lookup"><span data-stu-id="35768-161">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="35768-162">Verwenden freigegebener Abfragen</span><span class="sxs-lookup"><span data-stu-id="35768-162">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="35768-163">Suche nach Bedrohungen auf Geräten und in E-Mails</span><span class="sxs-lookup"><span data-stu-id="35768-163">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="35768-164">Grundlegendes zum Schema</span><span class="sxs-lookup"><span data-stu-id="35768-164">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="35768-165">Anwenden bewährter Methoden für Abfragen</span><span class="sxs-lookup"><span data-stu-id="35768-165">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
