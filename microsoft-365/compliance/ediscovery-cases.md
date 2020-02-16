@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: 'Verwenden Sie das Security #a0 Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Office 365 Advanced eDiscovery vorbereiten.'
-ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+description: Verwenden Sie das Security & Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Office 365 Advanced eDiscovery vorbereiten.
+ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862105"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075055"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Verwalten von eDiscovery-Fällen im Security & Compliance Center
 
@@ -31,7 +31,7 @@ Sie können eDiscovery-Fälle im Compliance Center in Office 365 und Microsoft 3
   
 Mit einem eDiscovery-Fall können Sie einem Fall Mitglieder hinzufügen, Steuern, welche Arten von Aktionen von bestimmten Fall Mitgliedern ausgeführt werden können, Aufbewahrungsmöglichkeiten für für einen Rechtsfall relevanter Inhaltsspeicher platzieren und mehrere Inhalts suchen mit einem einzigen Fall verknüpfen. Sie können auch die Ergebnisse einer beliebigen Inhaltssuche exportieren, die einem Fall zugeordnet ist, oder Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. eDiscovery-Fälle sind eine gute Möglichkeit, um zu beschränken, wer Zugriff auf Inhaltssuchen und Suchergebnisse für einen bestimmten Rechtsfall in Ihrer Organisation hat.
   
-Verwenden Sie den folgenden Workflow, um eDiscovery-Fälle im Security #a0 Compliance Center und in Advanced eDiscovery einzurichten und zu verwenden.
+Verwenden Sie den folgenden Workflow, um eDiscovery-Fälle im Security & Compliance Center und in Advanced eDiscovery einzurichten und zu verwenden.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -57,16 +57,16 @@ Verwenden Sie den folgenden Workflow, um eDiscovery-Fälle im Security #a0 Compl
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern
 
-Der erste Schritt besteht darin, Personen die entsprechenden eDiscovery-bezogenen Berechtigungen zuzuweisen, damit Sie Sie in Schritt 2 zu einem eDiscovery-Fall hinzufügen können. Sie müssen Mitglied der Rollengruppe "Organisationsverwaltung" (oder der Rolle "Rollenverwaltung" zugewiesen) im Sicherheits #a0 Compliance Center sein, um eDiscovery-Berechtigungen zuzuweisen. In der folgenden Liste werden die eDiscovery-bezogenen Rollengruppen im Security #a0 Compliance Center beschrieben. 
+Der erste Schritt besteht darin, Personen die entsprechenden eDiscovery-bezogenen Berechtigungen zuzuweisen, damit Sie Sie in Schritt 2 zu einem eDiscovery-Fall hinzufügen können. Sie müssen Mitglied der Rollengruppe "Organisationsverwaltung" (oder der Rolle "Rollenverwaltung" zugewiesen) im Sicherheits & Compliance Center sein, um eDiscovery-Berechtigungen zuzuweisen. In der folgenden Liste werden die eDiscovery-bezogenen Rollengruppen im Security & Compliance Center beschrieben. 
   
-- **Prüfer.** Diese Rollengruppe verfügt über die restriktivsten Berechtigungen in Bezug auf eDiscovery. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in [Office 365 Advanced](office-365-advanced-ediscovery.md) eDiscovery (auch bekannt als *Advanced eDiscovery v1*) zu ermöglichen. Mitglieder dieser Gruppe können die Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center nur anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security and Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Sie können keine Fälle erstellen, einem Fall Mitglieder hinzufügen, Aufbewahrungen erstellen, Suchergebnisse in der Vorschau anzeigen, Suchergebnisse exportieren oder Ergebnisse für Advanced eDiscovery vorbereiten. 
+- **Prüfer.** Diese Rollengruppe verfügt über die restriktivsten Berechtigungen in Bezug auf eDiscovery. Der primäre Zweck dieser Rollengruppe besteht darin, Mitgliedern das Anzeigen und Zugreifen auf Falldaten in [Office 365 Advanced](office-365-advanced-ediscovery.md) eDiscovery (auch bekannt als *Advanced eDiscovery v1*) zu ermöglichen. Mitglieder dieser Gruppe können die Liste der Fälle auf der Seite " **eDiscovery** " im Security & Compliance Center nur anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security and Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery zuzugreifen und diese zu analysieren. Sie können keine Fälle erstellen, einem Fall Mitglieder hinzufügen, Aufbewahrungen erstellen, Suchergebnisse in der Vorschau anzeigen, Suchergebnisse exportieren oder Ergebnisse für Advanced eDiscovery vorbereiten. 
 
    > [!NOTE]
    > Zu diesem Zeitpunkt können Benutzer, die Mitglied der Rollengruppe Prüfer sind, nicht auf Daten in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery v2*) zugreifen. Wenn Sie einem Fall in Advanced eDiscovery v2 Mitglieder hinzufügen möchten, damit Sie die Falldaten überprüfen können, muss ein Benutzer Mitglied der Rollengruppe "eDiscovery-Manager" sein.
     
 - **eDiscovery-Manager.** Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, inhaltsspeicherorte in der Warteschleife platzieren, Inhalts suchen, die einem Fall zugeordnet sind, erstellen und bearbeiten, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. In dieser Rollengruppe gibt es zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
     
-  - **eDiscovery-Manager.** Kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder deren Mitglied Sie sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der **eDiscovery** -Seite im Security #a0 Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen. 
+  - **eDiscovery-Manager.** Kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder deren Mitglied Sie sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der **eDiscovery** -Seite im Security & Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen. 
     
   - **eDiscovery-Administrator *.** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
     
@@ -89,29 +89,29 @@ Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen vo
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im Security #a0 Compliance Center auf **Berechtigungen**, und führen Sie eine der folgenden Aktionen basierend auf den eDiscovery-Berechtigungen aus, die Sie zuweisen möchten.
+3. Klicken Sie im Security & Compliance Center auf **Berechtigungen**, und führen Sie eine der folgenden Aktionen basierend auf den eDiscovery-Berechtigungen aus, die Sie zuweisen möchten.
     
-    - Um Prüferberechtigungen zuzuweisen, wählen Sie die Rollengruppe **Prüfer** aus, und klicken Sie dann neben **Mitglieder**auf **Bearbeiten**. Klicken Sie auf **Mitglieder auswählen**, klicken Sie auf **Bearbeiten**, klicken Sie auf ![Symbol](media/ITPro-EAC-AddIcon.gif) **hinzu**fügen, wählen Sie den Benutzer aus, den Sie der Rollengruppe Prüfer hinzufügen möchten, und klicken Sie dann auf **hinzu**fügen.
+    - Um Prüferberechtigungen zuzuweisen, wählen Sie die Rollengruppe **Prüfer** aus, und klicken Sie dann neben **Mitglieder**auf **Bearbeiten**. Klicken Sie auf **Mitglieder auswählen**, klicken Sie auf **Bearbeiten**, klicken Sie auf ![Symbol](../media/ITPro-EAC-AddIcon.gif) **hinzu**fügen, wählen Sie den Benutzer aus, den Sie der Rollengruppe Prüfer hinzufügen möchten, und klicken Sie dann auf **hinzu**fügen.
     
-    - Um eDiscovery Manager-Berechtigungen zuzuweisen, wählen Sie die Rollengruppe **eDiscovery-** Manager aus, und klicken Sie dann neben **eDiscovery-Manager**auf **Bearbeiten**. Klicken Sie auf **eDiscovery-Manager auswählen**, klicken ![Sie auf](media/ITPro-EAC-AddIcon.gif) **Bearbeiten**, klicken Sie auf Symbol hinzufügen * * Add * *, wählen Sie den Benutzer aus, den Sie als eDiscovery-Manager hinzufügen möchten, und klicken Sie dann auf **Hinzufügen**.
+    - Um eDiscovery Manager-Berechtigungen zuzuweisen, wählen Sie die Rollengruppe **eDiscovery-** Manager aus, und klicken Sie dann neben **eDiscovery-Manager**auf **Bearbeiten**. Klicken Sie auf **eDiscovery-Manager auswählen**, klicken ![Sie auf](../media/ITPro-EAC-AddIcon.gif) **Bearbeiten**, klicken Sie auf Symbol hinzufügen * * Add * *, wählen Sie den Benutzer aus, den Sie als eDiscovery-Manager hinzufügen möchten, und klicken Sie dann auf **Hinzufügen**.
     
-    - Um eDiscovery-Administratorberechtigungen zuzuweisen, wählen Sie die Rollengruppe **eDiscovery-Manager** aus, und klicken Sie dann neben **eDiscovery-Administrator**auf **Bearbeiten**. Klicken Sie auf **eDiscovery-Administrator auswählen**, klicken ![Sie auf](media/ITPro-EAC-AddIcon.gif) **Bearbeiten**, klicken Sie **auf Symbol hinzufügen,** wählen Sie den Benutzer aus, den Sie als eDiscovery-Administrator hinzufügen möchten, und klicken Sie dann auf **hinzu**fügen.
+    - Um eDiscovery-Administratorberechtigungen zuzuweisen, wählen Sie die Rollengruppe **eDiscovery-Manager** aus, und klicken Sie dann neben **eDiscovery-Administrator**auf **Bearbeiten**. Klicken Sie auf **eDiscovery-Administrator auswählen**, klicken ![Sie auf](../media/ITPro-EAC-AddIcon.gif) **Bearbeiten**, klicken Sie **auf Symbol hinzufügen,** wählen Sie den Benutzer aus, den Sie als eDiscovery-Administrator hinzufügen möchten, und klicken Sie dann auf **hinzu**fügen.
     
 4. Nachdem Sie alle Benutzer hinzugefügt haben, klicken Sie auf **Fertig**, klicken Sie auf **Speichern** , um die Änderungen an der Rollengruppe zu speichern, und klicken Sie dann auf **Schließen**.
 
 ## <a name="step-2-create-a-new-case"></a>Schritt 2: Erstellen einer neuen Anfrage
 
-Der nächste Schritt besteht darin, einen eDiscovery-Fall zu erstellen. Sie müssen Mitglied der Rollengruppe „eDiscovery-Manager“ sein, um eDiscovery-Fälle zu erstellen. Wie bereits erläutert, können Sie (und andere Fall Mitglieder) nach dem Erstellen eines Falls im Security #a0 Compliance Center auf denselben Fall in Advanced eDiscovery zugreifen, wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt.
+Der nächste Schritt besteht darin, einen eDiscovery-Fall zu erstellen. Sie müssen Mitglied der Rollengruppe „eDiscovery-Manager“ sein, um eDiscovery-Fälle zu erstellen. Wie bereits erläutert, können Sie (und andere Fall Mitglieder) nach dem Erstellen eines Falls im Security & Compliance Center auf denselben Fall in Advanced eDiscovery zugreifen, wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery**, und klicken Sie ![dann auf](media/ITPro-EAC-AddIcon.gif) Symbol hinzufügen, **um eine Anfrage zu erstellen**.
+3. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery**, und klicken Sie ![dann auf](../media/ITPro-EAC-AddIcon.gif) Symbol hinzufügen, **um eine Anfrage zu erstellen**.
     
 4. Geben Sie auf der Seite **neuer Fall** einen Namen ein, geben Sie eine optionale Beschreibung ein, und klicken Sie dann auf **Speichern**. Der Case-Name muss in Ihrer Organisation eindeutig sein.
     
-    ![Erstellen einer Anfrage](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Erstellen einer Anfrage](../media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     Der neue Fall wird in der Liste der Fälle auf der **eDiscovery** -Seite angezeigt. Sie können den Mauszeiger über einen Fallnamen bewegen, um Informationen über den Fall anzuzeigen, einschließlich des Status der Anfrage (**aktiv** oder **geschlossen**), der Beschreibung des Falls (die im vorherigen Schritt erstellt wurde), und wenn der Fall zuletzt geändert wurde und wer ihn geändert hat.
     
@@ -122,17 +122,17 @@ Der nächste Schritt besteht darin, einen eDiscovery-Fall zu erstellen. Sie müs
 
 Nachdem Sie einen Fall erstellt haben, besteht der nächste Schritt darin, der Anfrage Mitglieder hinzuzufügen. Wie zuvor erläutert, können nur Benutzer, die Mitglieder der Rollengruppen Prüfer oder eDiscovery-Manager sind, als Mitglieder der Anfrage hinzugefügt werden. Der eDiscovery-Manager, der den Fall erstellt hat, wird automatisch als Mitglied hinzugefügt.
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie auf den Namen des Falls, dem Sie Mitglieder hinzufügen möchten.
     
     Die Dropdown Seite **diesen Fall verwalten** wird angezeigt. 
     
-    ![Verwalten einer Fall Flyout-Seite](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
+    ![Verwalten einer Fall Flyout-Seite](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. Klicken Sie ![unter **Mitglieder verwalten**auf Symbol](media/ITPro-EAC-AddIcon.gif) **hinzu** fügen, um der Anfrage Mitglieder hinzuzufügen. 
+3. Klicken Sie ![unter **Mitglieder verwalten**auf Symbol](../media/ITPro-EAC-AddIcon.gif) **hinzu** fügen, um der Anfrage Mitglieder hinzuzufügen. 
     
-    Sie können auch eine Rollengruppe zur Anfrage hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf ![Symbol](media/ITPro-EAC-AddIcon.gif) **hinzu**fügen.
+    Sie können auch eine Rollengruppe zur Anfrage hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf ![Symbol](../media/ITPro-EAC-AddIcon.gif) **hinzu**fügen.
     
     > [!NOTE]
     > Rollengruppen steuern, wer einem eDiscovery-Fall Mitglieder zuweisen kann. Das bedeutet, dass Sie den Rollengruppen, denen Sie angehören, nur eine Anfrage zuweisen können.
@@ -166,19 +166,19 @@ Wenn Sie einen Haltebereich erstellen, haben Sie die folgenden Optionen, um den 
   
 So erstellen Sie einen Aufbewahrungsplatz für einen eDiscovery-Fall:
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, in dem Sie die Aufbewahrungspflicht erstellen möchten, auf **Öffnen** . 
     
 3. Klicken Sie auf der **Start** Seite für den Fall auf die Registerkarte **halten** . 
     
-    ![Klicken Sie auf die Registerkarte halten](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
+    ![Klicken Sie auf die Registerkarte halten](../media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. Klicken Sie ![auf der Seite **Haltestatus** auf](media/ITPro-EAC-AddIcon.gif) Symbol **Erstellen**hinzufügen.
+4. Klicken Sie ![auf der Seite **Haltestatus** auf](../media/ITPro-EAC-AddIcon.gif) Symbol **Erstellen**hinzufügen.
     
 5. Geben Sie auf der Seite **Name Ihres Haltestatus** dem Haltestatus einen Namen. Der Name des haltebereichs muss in Ihrer Organisation eindeutig sein. 
     
-    ![Geben Sie Ihrem Haltestatus einen eindeutigen Namen.](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
+    ![Geben Sie Ihrem Haltestatus einen eindeutigen Namen.](../media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
 6. Optional Fügen Sie im Feld **Beschreibung** eine Beschreibung des Haltestatus hinzu. 
     
@@ -186,7 +186,7 @@ So erstellen Sie einen Aufbewahrungsplatz für einen eDiscovery-Fall:
     
 8. Wählen Sie die inhaltsspeicherorte aus, die Sie in die Warteschleife stellen möchten. Sie können Postfächer, Websites und öffentliche Ordner in der Warteschleife platzieren.
     
-    ![Wählen Sie Inhaltsspeicherorte aus, die im Haltebereich platziert werden sollen.](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Wählen Sie Inhaltsspeicherorte aus, die im Haltebereich platziert werden sollen.](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
    a. **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . zur Angabe von Postfächern, die in den Haltebereich verschoben werden. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für ein Microsoft-Team, eine Jammer Gruppe oder eine Office 365 Gruppe aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
@@ -200,18 +200,18 @@ So erstellen Sie einen Aufbewahrungsplatz für einen eDiscovery-Fall:
     > [!NOTE]
     > Im seltenen Fall, dass der Benutzerprinzipalname (UPN) einer Person geändert wird, wird die URL für Ihr OneDrive-Konto ebenfalls geändert, um den neuen UPN zu integrieren. In diesem Fall müssen Sie den Haltebereich ändern, indem Sie die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen. 
   
-   c. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![-Steuer](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Element der Umschaltfläche in die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
+   c. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![-Steuer](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Element der Umschaltfläche in die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
     
 9. Wenn Sie das Hinzufügen von Inhaltsspeicherorten in der Warteschleife abgeschlossen haben, klicken Sie auf **weiter**.
     
 10. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls auf **weiter** .
     
-    ![Erstellen eines abfragebasierten haltebereichs mit Bedingungen](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Erstellen eines abfragebasierten haltebereichs mit Bedingungen](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
        a. Geben Sie im Feld unter **Schlüsselwörter**eine Suchabfrage in das Feld ein, sodass nur der Inhalt, der die Suchkriterien erfüllt, in der Warteschleife gespeichert wird. Sie können Schlüsselwörter, Nachrichteneigenschaften oder Dokumenteigenschaften wie Dateinamen angeben. Sie können auch komplexere Abfragen verwenden, die einen booleschen Operator wie **and**, **or**oder **Not**verwenden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, aufbewahrt.
     
-    b. Klicken ![Sie auf](media/ITPro-EAC-AddIcon.gif) Symbol hinzufügen **Bedingungen** hinzufügen, um eine oder mehrere Bedingungen hinzuzufügen, um die Suchabfrage für den Haltebereich einzuschränken. Jede Bedingung fügt der KQL-Suchabfrage, die erstellt und ausgeführt wird, eine Klausel hinzu, wenn Sie den Haltebereich erstellen. Sie können beispielsweise einen Datumsbereich angeben, damit e-Mail-oder Website Dokumente, die innerhalb des Datumsbereichs erstellt wurden, in der Warteschleife gespeichert werden. Eine Bedingung ist durch **AND**-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Das bedeutet, dass Elemente sowohl die Stichwortabfrage als auch die Bedingung erfüllen müssen, die in der Warteschleife gespeichert werden soll.
+    b. Klicken ![Sie auf](../media/ITPro-EAC-AddIcon.gif) Symbol hinzufügen **Bedingungen** hinzufügen, um eine oder mehrere Bedingungen hinzuzufügen, um die Suchabfrage für den Haltebereich einzuschränken. Jede Bedingung fügt der KQL-Suchabfrage, die erstellt und ausgeführt wird, eine Klausel hinzu, wenn Sie den Haltebereich erstellen. Sie können beispielsweise einen Datumsbereich angeben, damit e-Mail-oder Website Dokumente, die innerhalb des Datumsbereichs erstellt wurden, in der Warteschleife gespeichert werden. Eine Bedingung ist durch **AND**-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Das bedeutet, dass Elemente sowohl die Stichwortabfrage als auch die Bedingung erfüllen müssen, die in der Warteschleife gespeichert werden soll.
 
     Weitere Informationen zum Erstellen einer Suchabfrage und zum Verwenden von Bedingungen finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
     
@@ -223,7 +223,7 @@ So erstellen Sie einen Aufbewahrungsplatz für einen eDiscovery-Fall:
 
 Nach einer Weile werden Informationen zum neuen Haltestatus im Detailbereich auf der Seite halte **Status** des ausgewählten haltebereichs angezeigt. Diese Informationen umfassen die Anzahl der zu speichernden Postfächer und Websites sowie Statistiken zu den Inhalten, die in der Warteschleife gespeichert wurden, beispielsweise die Gesamtanzahl und Größe der zu speichernden Elemente sowie die Uhrzeit, zu der die Aufbewahrungs Statistik zuletzt berechnet wurde. Diese Aufbewahrungs Statistiken helfen Ihnen zu ermitteln, wie viele Inhalte im Zusammenhang mit dem eDiscovery-Fall gehalten werden. 
   
-![Aufbewahrungs Statistik](media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Aufbewahrungs Statistik](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
   
 Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
   
@@ -231,7 +231,7 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
     
 - Die Anzahl der zu speichernden Elemente umfasst auch nicht indizierte Elemente, die an den Inhaltsspeicherorten gefunden wurden. Wenn Sie einen abfragebasierten Haltebereich erstellen, werden alle nicht indizierten Elemente in den Inhaltsspeicherorten in die Warteschleife gesetzt. Dies umfasst nicht indizierte Elemente, die nicht mit den Suchkriterien eines abfragebasierten haltebereichs und nicht indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Dies unterscheidet sich von dem, was passiert, wenn Sie eine Inhaltssuche ausführen, in der nicht indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen oder von einer Datumsbereichs Bedingung ausgeschlossen werden, nicht in den Suchergebnissen enthalten sind. Weitere Informationen zu nicht indizierten Elementen finden Sie unter [teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md).
     
-- Sie können die neuesten Aufbewahrungs Statistiken abrufen, indem Sie auf **Statistik aktualisieren** klicken, um eine Such Schätzung erneut auszuführen, mit der die aktuelle Anzahl der zu speichernden Elemente berechnet wird. Klicken Sie gegebenenfalls in ****![der Symbolleiste](media/O365-MDM-Policy-RefreshIcon.gif) auf Aktualisierungssymbol aktualisieren, um die Aufbewahrungs Statistiken im Detailbereich zu aktualisieren. 
+- Sie können die neuesten Aufbewahrungs Statistiken abrufen, indem Sie auf **Statistik aktualisieren** klicken, um eine Such Schätzung erneut auszuführen, mit der die aktuelle Anzahl der zu speichernden Elemente berechnet wird. Klicken Sie gegebenenfalls in ****![der Symbolleiste](../media/O365-MDM-Policy-RefreshIcon.gif) auf Aktualisierungssymbol aktualisieren, um die Aufbewahrungs Statistiken im Detailbereich zu aktualisieren. 
     
 - Es ist normal, dass die Anzahl der zu speichernden Elemente im Laufe der Zeit steigt, da Benutzer, deren Postfach oder Standort in der Warteschleife ist, normalerweise neue e-Mail-Nachrichten senden oder empfangen und neue SharePoint-und OneDrive für Unternehmen-Dokumente erstellen.
     
@@ -240,27 +240,27 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Schritt 5: Erstellen und Ausführen einer einem Fall zugeordneten Inhaltssuche
 
-Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenhang mit dem Fall gespeichert wurden, können Sie eine oder mehrere Inhalts Suchvorgänge erstellen und ausführen, die mit der Anfrage verknüpft sind. Inhalts Suchvorgänge, die einem Fall zugeordnet sind, werden nicht auf der Seite **Suchen** im Security #a0 Compliance Center aufgeführt. Dies bedeutet, dass der Zugriff auf Inhalts suchen, die einem Fall zugeordnet sind, nur von Fall Mitgliedern erreicht werden kann, die auch Mitglieder der eDiscovery-Manager-Rollengruppe sind. 
+Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenhang mit dem Fall gespeichert wurden, können Sie eine oder mehrere Inhalts Suchvorgänge erstellen und ausführen, die mit der Anfrage verknüpft sind. Inhalts Suchvorgänge, die einem Fall zugeordnet sind, werden nicht auf der Seite **Suchen** im Security & Compliance Center aufgeführt. Dies bedeutet, dass der Zugriff auf Inhalts suchen, die einem Fall zugeordnet sind, nur von Fall Mitgliedern erreicht werden kann, die auch Mitglieder der eDiscovery-Manager-Rollengruppe sind. 
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, in dem Sie eine Inhaltssuche erstellen möchten, auf **Öffnen** . 
     
 3. Klicken Sie auf der **Start** Seite für den Fall auf die Registerkarte **Suche** . 
     
-    ![Registerkarte "Suche"](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
+    ![Registerkarte "Suche"](../media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. Klicken Sie **** ![auf der Seite Suche auf Symbol](media/ITPro-EAC-AddIcon.gif) **neue Suche**hinzufügen. 
+4. Klicken Sie **** ![auf der Seite Suche auf Symbol](../media/ITPro-EAC-AddIcon.gif) **neue Suche**hinzufügen. 
     
 5. Auf der Seite **Neue Suche** können Sie Schlüsselwörter und Bedingungen zum Erstellen der Suchabfrage hinzufügen. 
     
-    ![Neue Suche](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+    ![Neue Suche](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
 6. Sie können Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, beispielsweise Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in die Suchergebnisse eingeschlossen. 
     
 7. Sie können auf das Kontrollkästchen **Schlüsselwortliste anzeigen** und in jede Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile durch den **or** -Operator in der erstellten Suchabfrage miteinander verbunden. 
     
-    ![Stichwortliste](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+    ![Stichwortliste](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
     Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Sie können auch einen (in Klammern eingeschlossenen) Schlüsselwortausdruck in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md).
     
@@ -272,7 +272,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
 9. Wählen Sie unter **Standorte: Aufbewahrungsorte**die inhaltsspeicherorte aus, die Sie durchsuchen möchten. Sie können Postfächer, Websites und öffentliche Ordner in derselben Suche durchsuchen.
     
-    ![Speicherorte, Aufbewahrungsorte](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+    ![Speicherorte, Aufbewahrungsorte](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
     - **Alle Standorte** – wählen Sie diese Option aus, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Wenn Sie diese Option auswählen, können Sie auswählen, dass alle Exchange-Postfächer durchsucht werden sollen (einschließlich der Postfächer für alle Microsoft Teams, Jammer Gruppen und Office 365 Gruppen), alle SharePoint-und OneDrive für Unternehmen-Websites (einschließlich der Websites für alle Microsoft Teams, Jammer Gruppen und Office 365 Gruppen) und alle öffentlichen Ordner.
     
@@ -280,7 +280,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     - **Bestimmte Standorte.** Wählen Sie diese Option aus, um die Postfächer und Websites auszuwählen, die Sie durchsuchen möchten. Wenn Sie diese Option auswählen und auf **ändern**klicken, wird eine Liste der Speicherorte angezeigt. Sie können auswählen, ob Sie einen oder alle Benutzer, Gruppen, Teams oder Website Standorte durchsuchen möchten.
     
-      ![Auswählen bestimmter Standorte](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Auswählen bestimmter Standorte](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
       Sie können auch alle öffentlichen Ordner in Ihrer Organisation durchsuchen, aber wenn Sie diese Option auswählen und einen beliebigen Inhaltsspeicherort in der Warteschleife durchsuchen, werden alle Abfragen von einem abfragebasierten Aufbewahrungs Fall nicht auf die Suchabfrage angewendet. In anderen Worten wird der gesamte Inhalt eines Standorts durchsucht, und nicht nur der Inhalt, der von einem abfragebasierten Aufbewahrungsplatz beibehalten wird.
     
@@ -304,7 +304,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     Die Suche beginnt. Nach einer Weile wird im Detailbereich eine Schätzung der Suchergebnisse angezeigt. Die Schätzung enthält die Gesamtgröße und die Anzahl der Elemente, die den Suchkriterien entsprechen. Die Such Schätzung enthält auch die Anzahl der nicht indizierten Elemente an den durchsuchten Inhaltsspeicherorten. Die Anzahl nicht indizierter Elemente, die den Suchkriterien nicht entsprechen, werden in die Suchstatistiken einbezogen, die im Detailbereich angezeigt werden. Wenn ein nicht indiziertes Element mit der Suchabfrage übereinstimmt (da andere Nachrichten-oder Dokumenteigenschaften die Suchkriterien erfüllen), wird es nicht in die geschätzte Anzahl nicht indexierter Elemente aufgenommen. Wenn ein nicht indiziertes Element durch die Suchkriterien ausgeschlossen wird, wird es auch nicht in die Schätzung nicht indexierter Elemente einbezogen.
     
-  Wenn die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzeigen. Klicken Sie bei Bedarf ****![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren, um die Informationen im Detailbereich zu aktualisieren. 
+  Wenn die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzeigen. Klicken Sie bei Bedarf ****![auf Aktualisierungssymbol](../media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren, um die Informationen im Detailbereich zu aktualisieren. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Schritt 6: Exportieren der Ergebnisse einer Inhaltssuche, die einer Anfrage zugeordnet ist
 
@@ -314,17 +314,17 @@ Sie können die Ergebnisse einer einzelnen Suche exportieren, die [einem Fall zu
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportieren der Ergebnisse einer einzelnen Suche, die einem Fall zugeordnet ist
 
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, aus dem Sie die Suche exportieren möchten, auf **Öffnen** . 
     
 3. Klicken Sie auf der **Start** Seite für den Fall auf **Suchen**.
     
-4. Klicken Sie in der Liste der Suchvorgänge auf die Suche, aus der Sie Suchergebnisse exportieren möchten, klicken Sie ![auf Suchergebnisse](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **exportieren, und**wählen Sie dann **Ergebnisse exportieren** aus der Dropdownliste aus. 
+4. Klicken Sie in der Liste der Suchvorgänge auf die Suche, aus der Sie Suchergebnisse exportieren möchten, klicken Sie ![auf Suchergebnisse](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **exportieren, und**wählen Sie dann **Ergebnisse exportieren** aus der Dropdownliste aus. 
     
     Die Seite **Ergebnisse exportieren** wird angezeigt. 
     
-    ![Seite "Ergebnisse exportieren"](media/ab0bb46d-310b-4374-8644-717146df6676.png)
+    ![Seite "Ergebnisse exportieren"](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
     Der Workflow zum Exportieren der Ergebnisse aus einer Inhaltssuche, die einem Fall zugeordnet ist, entspricht dem Exportieren der Suchergebnisse für eine Suche auf der Seite **Inhaltssuche** . Eine Schritt-für-Schritt-Anleitung finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).
     
@@ -333,9 +333,9 @@ Sie können die Ergebnisse einer einzelnen Suche exportieren, die [einem Fall zu
   
 5. Klicken Sie auf die Registerkarte **exportieren** , um die Liste der Exportaufträge anzuzeigen, die für diesen Fall vorhanden sind. 
     
-    ![Registerkarte "Exportieren"](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
+    ![Registerkarte "Exportieren"](../media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Möglicherweise müssen Sie **auf Aktualisierungs**![Symbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge so zu aktualisieren, dass der von Ihnen erstellte Exportauftrag angezeigt wird. Export Aufträge haben den gleichen Namen wie die entsprechende Inhaltssuche, wobei **_Export** an das Ende des Such namens angehängt wird. 
+    Möglicherweise müssen Sie **auf Aktualisierungs**![Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge so zu aktualisieren, dass der von Ihnen erstellte Exportauftrag angezeigt wird. Export Aufträge haben den gleichen Namen wie die entsprechende Inhaltssuche, wobei **_Export** an das Ende des Such namens angehängt wird. 
     
 6. Klicken Sie auf den soeben erstellten Exportauftrag, um Statusinformationen im Detailbereich anzuzeigen. Diese Informationen umfassen den Prozentsatz der Elemente, die in einen Azure-Speicherbereich in der Microsoft-Cloud übertragen wurden.
     
@@ -346,9 +346,9 @@ Sie können die Ergebnisse einer einzelnen Suche exportieren, die [einem Fall zu
 Als Alternative zum Exportieren der Ergebnisse einer einzelnen Inhaltssuche, die einem Fall zugeordnet ist, können Sie die Ergebnisse mehrerer Suchvorgänge aus demselben Fall in einem einzelnen Export exportieren. Das Exportieren der Ergebnisse von mehreren Suchvorgängen ist schneller und einfacher als das Exportieren der Ergebnisse um die Suche nach dem anderen.
   
 > [!NOTE]
-> Sie können die Ergebnisse mehrerer suchen nicht exportieren, wenn eine dieser Suchvorgänge so konfiguriert wurde, dass alle Fall Inhalte durchsucht werden. Exportieren Sie nur die Ergebnisse mehrerer Suchvorgänge nach Suchvorgängen, die einem eDiscovery-Fall zugeordnet sind. Sie können die Ergebnisse mehrerer Suchvorgänge, die auf der Seite **Inhaltssuche** im Security #a0 Compliance Center aufgeführt sind, nicht exportieren. 
+> Sie können die Ergebnisse mehrerer suchen nicht exportieren, wenn eine dieser Suchvorgänge so konfiguriert wurde, dass alle Fall Inhalte durchsucht werden. Exportieren Sie nur die Ergebnisse mehrerer Suchvorgänge nach Suchvorgängen, die einem eDiscovery-Fall zugeordnet sind. Sie können die Ergebnisse mehrerer Suchvorgänge, die auf der Seite **Inhaltssuche** im Security & Compliance Center aufgeführt sind, nicht exportieren. 
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, aus dem Sie Suchergebnisse exportieren möchten, auf **Öffnen** . 
     
@@ -361,10 +361,10 @@ Als Alternative zum Exportieren der Ergebnisse einer einzelnen Inhaltssuche, die
   
 5. Nachdem Sie die Suchvorgänge ausgewählt haben, wird die Seite **Massenaktionen** angezeigt. 
     
-    ![Klicken Sie auf der Seite Massenaktionen auf Ergebnisse exportieren.](media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
+    ![Klicken Sie auf der Seite Massenaktionen auf Ergebnisse exportieren.](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
   
     
-6. Klicken ![Sie auf Suchergebnis](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Symbol Export **Ergebnisse**exportieren.
+6. Klicken ![Sie auf Suchergebnis](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Symbol Export **Ergebnisse**exportieren.
 
 7. Geben Sie auf der Seite **Ergebnisse exportieren** den eindeutigen Namen exportieren ein, wählen Sie Ausgabeoptionen aus, und wählen Sie aus, wie Ihre Inhalte exportiert werden sollen. Klicken Sie auf **Exportieren**.
     
@@ -375,9 +375,9 @@ Als Alternative zum Exportieren der Ergebnisse einer einzelnen Inhaltssuche, die
   
 8. Nachdem Sie den Export gestartet haben, klicken Sie auf die Registerkarte **exportieren** , um die Liste der Exportaufträge für diesen Fall anzuzeigen. 
     
-    ![Registerkarte "Exportieren", mehrere Suchvorgänge](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
+    ![Registerkarte "Exportieren", mehrere Suchvorgänge](../media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Möglicherweise müssen Sie **auf Aktualisierungs** ![Symbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge zu aktualisieren, um den von Ihnen erstellten Exportauftrag anzuzeigen. Die Suchvorgänge, die in den Exportauftrag aufgenommen wurden, werden in der Spalte **Suchen** aufgeführt. 
+    Möglicherweise müssen Sie **auf Aktualisierungs** ![Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Liste der Exportaufträge zu aktualisieren, um den von Ihnen erstellten Exportauftrag anzuzeigen. Die Suchvorgänge, die in den Exportauftrag aufgenommen wurden, werden in der Spalte **Suchen** aufgeführt. 
     
 8. Klicken Sie auf den soeben erstellten Exportauftrag, um Statusinformationen im Detailbereich anzuzeigen. Diese Informationen umfassen den Prozentsatz der Elemente, die in einen Azure-Speicherbereich in der Microsoft-Cloud übertragen wurden.
     
@@ -410,15 +410,15 @@ Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, extrahiert die OCR
 > [!NOTE]
 > Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die Fällen zugeordnet sind, und Verwenden von Advanced eDiscovery zum Analysieren von Daten benötigen keine E5-Lizenz. 
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, für den Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten möchten, auf **Öffnen** . 
     
 3. Klicken Sie auf der **Start** Seite für den Fall auf **Suche**, und wählen Sie dann die Suche aus.
     
-4. Klicken Sie im Detailbereich auf ![Such](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Ergebnis Symbol exportieren**, und klicken Sie dann auf **für erweiterte eDiscovery vorbereiten**.
+4. Klicken Sie im Detailbereich auf ![Such](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Ergebnis Symbol exportieren**, und klicken Sie dann auf **für erweiterte eDiscovery vorbereiten**.
     
-    ![Vorbereiten der Ergebnisse für Advanced eDiscovery](media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
+    ![Vorbereiten der Ergebnisse für Advanced eDiscovery](../media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
   
 5. Wählen Sie auf der Seite **Advanced eDiscovery vorbereiten** eine der folgenden Optionen aus: 
     
@@ -438,30 +438,30 @@ Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, extrahiert die OCR
     
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Schritt 8: Wechseln zu der Groß-/Kleinschreibung in Advanced eDiscovery
 
-Nachdem Sie einen Fall im Security #a0 Compliance Center erstellt haben, können Sie in der erweiterten eDiscovery auf denselben Fall wechseln.
+Nachdem Sie einen Fall im Security & Compliance Center erstellt haben, können Sie in der erweiterten eDiscovery auf denselben Fall wechseln.
   
 So navigieren Sie zu einem Fall in Advanced eDiscovery:
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, zu dem Sie in Advanced eDiscovery wechseln möchten, auf **Öffnen** . 
     
 3. Klicken Sie auf der **Start** Seite für den Fall auf **zu Advanced eDiscovery wechseln**.
     
-    ![Wählen Sie zu Advanced eDiscovery wechseln aus.](media/d7e31558-e79c-4782-b841-2b735568a576.png)
+    ![Wählen Sie zu Advanced eDiscovery wechseln aus.](../media/d7e31558-e79c-4782-b841-2b735568a576.png)
   
     Die **Verbindung mit der erweiterten eDiscovery** -Statusleiste wird angezeigt. Wenn Sie mit Advanced eDiscovery verbunden sind, wird auf der Seite eine Liste mit Containern angezeigt. 
     
-    ![Erweiterte eDiscorvery-Statusanzeige](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
+    ![Erweiterte eDiscorvery-Statusanzeige](../media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
-    Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 7 zur Analyse in Advanced eDiscovery vorbereitet haben. Der Name des Containers hat den gleichen Namen wie die Inhaltssuche in dem Fall im Security #a0 Compliance Center. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen.
+    Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 7 zur Analyse in Advanced eDiscovery vorbereitet haben. Der Name des Containers hat den gleichen Namen wie die Inhaltssuche in dem Fall im Security & Compliance Center. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen.
     
 4. Wenn Sie die Suchergebnis Daten aus einem Container in den Fall in Advanced eDiscovery laden möchten, wählen Sie einen Container aus, und klicken Sie auf **verarbeiten**.
     
     Informationen zum Verarbeiten von Containern finden Sie unter [Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
     
 > [!TIP]
-> Klicken Sie auf **zu eDiscovery wechseln** , um zum gleichen Fall im Security #a0 Compliance Center zurückzukehren. 
+> Klicken Sie auf **zu eDiscovery wechseln** , um zum gleichen Fall im Security & Compliance Center zurückzukehren. 
   
 ## <a name="optional-step-9-close-a-case"></a>Optional Schritt 9: Schließen eines Falls
 
@@ -471,19 +471,19 @@ Wenn der von einem eDiscovery-Fall unterstützte rechtliche Fall oder die Unters
     
 - Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere haltebereiche an einem Inhaltsspeicherort platziert werden (beispielsweise ein Beweissicherungsverfahren. eine Erhaltungs Richtlinie oder ein Haltestatus aus einem anderen eDiscovery-Fall) diese Aufbewahrungen werden weiterhin beibehalten.
     
-- Der Fall wird weiterhin auf der Seite "eDiscovery" im Security #a0 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
+- Der Fall wird weiterhin auf der Seite "eDiscovery" im Security & Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
     
 - Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen, Suchergebnisse exportieren und das Suchergebnis für die Analyse in Advanced eDiscovery vorbereiten. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass die haltebereiche deaktiviert sind, wenn ein Fall geschlossen wird.
     
 So schließen Sie einen Fall:
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie schließen möchten.
     
     Die Dropdown Seite **diesen Fall verwalten** wird angezeigt. 
     
-3. Klicken Sie unter **Status der Groß-/Kleinschreibung verwalten**auf ![die Schaltfläche Peek-Taste](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **Schließen**.
+3. Klicken Sie unter **Status der Groß-/Kleinschreibung verwalten**auf ![die Schaltfläche Peek-Taste](../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **Schließen**.
     
     Es wird eine Warnung angezeigt, die besagt, dass die dem Fall zugeordneten Haltestatus deaktiviert werden.
     
@@ -493,7 +493,7 @@ So schließen Sie einen Fall:
     
 5. Schließen Sie die Seite **diesen Fall verwalten** . 
     
-6. Klicken Sie **** ![auf der Seite eDiscovery auf Symbol](media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des geschlossenen Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Abschlussprozess abgeschlossen ist. 
+6. Klicken Sie **** ![auf der Seite eDiscovery auf Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des geschlossenen Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Abschlussprozess abgeschlossen ist. 
     
     Wenn der Prozess abgeschlossen ist, wird der Status der Groß-/Kleinschreibung auf der **eDiscovery** -Seite in **geschlossen** geändert. Klicken Sie erneut auf den Namen der Anfrage, um die Flyout-Seite " **diesen Fall verwalten** " anzuzeigen, die Informationen dazu enthält, wann der Fall geschlossen wurde und wer ihn geschlossen hat. 
      
@@ -501,7 +501,7 @@ So schließen Sie einen Fall:
 
 Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen des Cases vorhanden waren, nicht automatisch wiederhergestellt. Nachdem der Fall erneut geöffnet wurde, müssen Sie zur **halte** Seite wechseln und die vorherigen Holds-Objekte aktivieren. Zum Aktivieren eines haltebereichs wählen Sie ihn aus, und klicken Sie im Detailbereich auf **Einschalten** . 
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie erneut öffnen möchten.
     
@@ -517,13 +517,13 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
     
 5. Schließen Sie die Seite **diesen Fall verwalten** . 
     
-6. Klicken Sie **** ![auf der Seite eDiscovery auf Symbol](media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des erneut geöffneten Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Vorgang zum erneuten Öffnen abgeschlossen ist. 
+6. Klicken Sie **** ![auf der Seite eDiscovery auf Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des erneut geöffneten Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Vorgang zum erneuten Öffnen abgeschlossen ist. 
     
     Wenn der Prozess abgeschlossen ist, wird der Status des Falles in **Active** auf der **eDiscovery** -Seite geändert. 
   
 ## <a name="optional-step-11-delete-a-case"></a>Optional Schritt 11: Löschen einer Anfrage
 
-Sie können auch aktive und abgeschlossene Fälle löschen. Wenn Sie einen Fall löschen, werden alle Suchvorgänge und Exporte gelöscht und aus der Liste der Fälle auf der Seite " **eDiscovery** " im Security #a0 Compliance Center entfernt. Sie können einen gelöschten Fall nicht erneut öffnen. 
+Sie können auch aktive und abgeschlossene Fälle löschen. Wenn Sie einen Fall löschen, werden alle Suchvorgänge und Exporte gelöscht und aus der Liste der Fälle auf der Seite " **eDiscovery** " im Security & Compliance Center entfernt. Sie können einen gelöschten Fall nicht erneut öffnen. 
 
 Bevor Sie einen Fall löschen können (ob er aktiv oder geschlossen ist), müssen Sie zunächst *alle* Haltestatus löschen, die mit der Groß-/Kleinschreibung verknüpft sind. Dies umfasst das Löschen von Haltebereichen mit dem Status **Off**. 
 
@@ -537,7 +537,7 @@ So löschen Sie einen Haltestatus:
 
 So löschen Sie einen Fall:
 
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie löschen möchten.
 
@@ -553,18 +553,18 @@ Wenn der Fall, den Sie löschen möchten, noch enthält, wird eine Fehlermeldung
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
   |Maximale Anzahl von Fall Behältern für eine Organisation  <br/> |10.000  <br/> |
-  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1.000  <br/> |
+  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1,000  <br/> |
   |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites in einem einzigen Aufbewahrungs Fall  <br/> |100  <br/> |
    
-- **Was geschieht mit Fällen, die auf der Seite Fallverwaltung in Advanced eDiscovery erstellt wurden?** Sie können auf eine Liste älterer erweiterter eDiscovery-Fälle zugreifen, indem Sie auf der Seite **eDiscovery** im Security #a0 Compliance Center auf den Link unten klicken. Um jedoch in einem älteren Fall arbeiten zu können, müssen Sie sich an Office 365 Support wenden und die Anfrage dazu stellen, dass der Fall in einen neuen eDiscovery-Fall im Security #a0 Compliance Center verschoben wird. 
+- **Was geschieht mit Fällen, die auf der Seite Fallverwaltung in Advanced eDiscovery erstellt wurden?** Sie können auf eine Liste älterer erweiterter eDiscovery-Fälle zugreifen, indem Sie auf der Seite **eDiscovery** im Security & Compliance Center auf den Link unten klicken. Um jedoch in einem älteren Fall arbeiten zu können, müssen Sie sich an Office 365 Support wenden und die Anfrage dazu stellen, dass der Fall in einen neuen eDiscovery-Fall im Security & Compliance Center verschoben wird. 
     
 - **Gründe für das Festlegen eines eDiscovery-Administrators** Wie bereits erwähnt, ist ein eDiscovery-Administrator Mitglied der Rollengruppe „eDiscovery-Manager“, die alle eDiscovery-Fälle in Ihrer Organisation anzeigen und auf diese zugreifen kann. Dieser Zugriff auf alle eDiscovery-Fälle dient zwei wichtigen Zwecken:
     
-  - Wenn eine Person, die das einzige Mitglied eines eDiscovery-Falls ist, die Organisation verlässt, kann niemand (einschließlich Mitglieder der Rollengruppe „Organisationsverwaltung“ oder andere Mitglieder der Rollengruppe „eDiscovery-Manager“) auf diesen eDiscovery-Fall zugreifen, da diese Personen keine Fallmitglieder sind. In diesem Fall gäbe es keine Möglichkeit, auf die Daten in dem Fall zuzugreifen. Da ein eDiscovery-Administrator jedoch auf alle eDiscovery-Fälle in der Organisation zugreifen kann, kann er den Fall im Security #a0 Compliance Center anzeigen und sich selbst oder einen anderen eDiscovery-Manager als Mitglied des Falles hinzufügen.
+  - Wenn eine Person, die das einzige Mitglied eines eDiscovery-Falls ist, die Organisation verlässt, kann niemand (einschließlich Mitglieder der Rollengruppe „Organisationsverwaltung“ oder andere Mitglieder der Rollengruppe „eDiscovery-Manager“) auf diesen eDiscovery-Fall zugreifen, da diese Personen keine Fallmitglieder sind. In diesem Fall gäbe es keine Möglichkeit, auf die Daten in dem Fall zuzugreifen. Da ein eDiscovery-Administrator jedoch auf alle eDiscovery-Fälle in der Organisation zugreifen kann, kann er den Fall im Security & Compliance Center anzeigen und sich selbst oder einen anderen eDiscovery-Manager als Mitglied des Falles hinzufügen.
     
   - Da ein eDiscovery-Administrator alle eDiscovery-Fälle anzeigen und darauf zugreifen kann, kann er alle Fälle und zugehörige Inhalts suchen überwachen und überwachen. So kann der Missbrauch von Inhaltssuchen oder anderen eDiscovery-Fällen verhindert werden. Und da eDiscovery-Administratoren in den Ergebnissen einer Inhaltssuche potenziell vertrauliche Informationen abrufen können, sollten Sie die Anzahl von Benutzern, die eDiscovery-Administratoren sind, einschränken.
     
-    Schließlich werden eDiscovery-Administratoren im Security #a0 Compliance Center automatisch als Administratoren in Advanced eDiscovery hinzugefügt, wie zuvor erläutert. Das bedeutet, dass eine Person, die ein eDiscovery-Administrator ist, administrative Aufgaben in Advanced eDiscovery ausführen kann, beispielsweise das Einrichten von Benutzern, das Erstellen von Fällen und das Hinzufügen von Daten zu Fällen.
+    Schließlich werden eDiscovery-Administratoren im Security & Compliance Center automatisch als Administratoren in Advanced eDiscovery hinzugefügt, wie zuvor erläutert. Das bedeutet, dass eine Person, die ein eDiscovery-Administrator ist, administrative Aufgaben in Advanced eDiscovery ausführen kann, beispielsweise das Einrichten von Benutzern, das Erstellen von Fällen und das Hinzufügen von Daten zu Fällen.
     
 - **Was sind die Lizenzierungsanforderungen zum Speichern von Inhaltsspeicherorten?** Im Allgemeinen benötigen Organisationen ein Office 365 E3-Abonnement oder höher, um inhaltsspeicherorte in der Warteschleife zu platzieren. Damit Postfächer aufbewahrt werden können, ist eine Exchange Online Plan 2-Lizenz für das Postfach erforderlich, das Sie in die Warteschleife setzen möchten.
     

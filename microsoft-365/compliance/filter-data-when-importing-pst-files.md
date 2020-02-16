@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Verwenden Sie die neue intelligente Importfunktion im Office 365 Import-Dienst, um die Elemente zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Mit dem intelligenten Import können Sie proaktiv entscheiden, welche Daten importiert werden sollen und was Sie zurücklassen müssen. Der intelligente Import bietet auch Einblicke in die Daten, die in Office 365 importiert werden. '
-ms.openlocfilehash: 0ac3b23443c42a53efc94faccc99991f608185b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 67ecce13dfad4d72fe43f6403606125102e9af74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594566"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073977"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtern von Daten beim Importieren von PST-Dateien in Office 365
 
@@ -43,9 +43,9 @@ Verwenden Sie die neue intelligente Importfunktion im Office 365 Import-Dienst, 
     
 Die folgende Grafik zeigt den intelligenten Import Vorgang und hebt die Aufgaben hervor, die Sie ausführen, sowie die Aufgaben, die von Office 365 ausgeführt werden.
   
-![Der intelligente Import Vorgang in Office 365](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
+![Der intelligente Import Vorgang in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - In den Schritten in diesem Thema wird davon ausgegangen, dass Sie einen PST-Importauftrag im Office 365 Import-Dienst mithilfe des Netzwerk-Uploads oder des Laufwerk Versands erstellt haben. Eine Schritt-für-Schritt-Anleitung finden Sie unter einem der folgenden Themen:
     
@@ -53,7 +53,7 @@ Die folgende Grafik zeigt den intelligenten Import Vorgang und hebt die Aufgaben
     
   - [Verwenden des Laufwerkversands zum Importieren von PST-Dateien in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Nachdem Sie einen Importauftrag mithilfe des Netzwerk Uploads erstellt haben, wird der Status für den Importauftrag auf der Seite importieren im Security #a0 Compliance Center auf **Analysis in Progress**festgelegt, was bedeutet, dass Office 365 die Daten in den PST-Dateien analysiert, die Sie hochgeladen haben. ![Klicken **Sie auf Aktualisierung aktualisieren**](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um den Status für den Importauftrag zu aktualisieren. 
+- Nachdem Sie einen Importauftrag mithilfe des Netzwerk Uploads erstellt haben, wird der Status für den Importauftrag auf der Seite importieren im Security & Compliance Center auf **Analysis in Progress**festgelegt, was bedeutet, dass Office 365 die Daten in den PST-Dateien analysiert, die Sie hochgeladen haben. ![Klicken **Sie auf Aktualisierung aktualisieren**](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um den Status für den Importauftrag zu aktualisieren. 
     
 - Für Importaufträge für den Laufwerk Versand werden die Daten von Office 365 analysiert, nachdem Microsoft-Rechenzentrumsmitarbeiter Ihre Festplatte erhalten haben und die PST-Dateien in den Azure-Speicherbereich Ihrer Organisation hochgeladen haben.
   
@@ -67,7 +67,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
     Die Importaufträge für Ihre Organisation werden auf der Seite **PST-Dateien importieren** aufgeführt. Beachten Sie, dass der Wert **Analyse abgeschlossen** in der Spalte **Status** die Importaufträge angibt, die von Office 365 analysiert wurden und für den Import bereit sind. 
     
-    ![Analysis Complete Status gibt an, Office 365 die Daten in PST-Dateien analysiert hat](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
+    ![Analysis Complete Status gibt an, Office 365 die Daten in PST-Dateien analysiert hat](../media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
 3. Klicken Sie auf **Ready to Import to Office 365** für den Importauftrag, den Sie abschließen möchten. 
     
@@ -77,7 +77,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
     Die Seite **Ihre Daten filtern** wird angezeigt. Sie enthält Daten Einblicke in die Daten in den PST-Dateien für den Importauftrag, einschließlich Informationen zum Alter der Daten. 
     
-    ![Auf der Seite Daten filtern werden Daten Einblicke in die PST-Dateien für den Importauftrag angezeigt.](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
+    ![Auf der Seite Daten filtern werden Daten Einblicke in die PST-Dateien für den Importauftrag angezeigt.](../media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
   
 5. Je nachdem, ob Sie die in Office 365 importierten Daten kürzen möchten, führen Sie unter möchten **Sie Ihre Daten filtern**aus einen der folgenden Schritte aus:
     
@@ -85,13 +85,13 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
     Die Seite **Daten in Office 365 Seite importieren** wird mit detaillierten Daten Einblicken aus der Analyse angezeigt, die ausgeführt Office 365. 
     
-    ![Office 365 zeigt detaillierte Daten Einblicke aus der Analyse der PST-Dateien an.](media/4881205f-0288-4c32-a440-37e2160295f2.png)
+    ![Office 365 zeigt detaillierte Daten Einblicke aus der Analyse der PST-Dateien an.](../media/4881205f-0288-4c32-a440-37e2160295f2.png)
   
     Im Diagramm auf dieser Seite wird die Menge der Daten angezeigt, die importiert werden. Informationen zu den einzelnen Nachrichtentypen, die in den PST-Dateien gefunden werden, werden im Diagramm angezeigt. Sie können den Mauszeiger über die einzelnen Balken bewegen, um bestimmte Informationen zu diesem Nachrichtentyp anzuzeigen. Es gibt auch eine Dropdownliste mit unterschiedlichen Alters Werten, die auf der Analyse der PST-Dateien basiert. Wenn Sie in der Dropdownliste ein Alter auswählen, wird das Diagramm so aktualisiert, dass angezeigt wird, wie viele Daten für das ausgewählte Alter importiert werden. 
     
     b. Klicken Sie auf **Weitere Filteroptionen**, um zusätzliche Filter zu konfigurieren, um die Menge der importierten Daten zu reduzieren.
     
-    ![Konfigurieren Sie die Filter auf der Seite Weitere Optionen, um die importierten Daten zu kürzen.](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
+    ![Konfigurieren Sie die Filter auf der Seite Weitere Optionen, um die importierten Daten zu kürzen.](../media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     Sie können diese Filter konfigurieren:
     
@@ -99,7 +99,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
       - **Type** – in diesem Abschnitt werden alle Nachrichtentypen angezeigt, die in den PST-Dateien für den Importauftrag gefunden wurden. Sie können ein Kontrollkästchen neben einem Nachrichtentyp deaktivieren, den Sie ausschließen möchten. Beachten Sie, dass Sie den anderen Nachrichtentyp nicht ausschließen können. Im Abschnitt [Weitere Informationen](#more-information) finden Sie eine Liste der Postfachelemente, die in der anderen Kategorie enthalten sind. 
     
-      - **Benutzer** – Sie können Nachrichten ausschließen, die von bestimmten Personen gesendet oder empfangen werden. Wenn Sie Personen ausschließen möchten, die im Feld von: Feld, an: oder im Feld CC: von Nachrichten angezeigt werden, klicken Sie neben diesem Empfängertyp auf **Benutzer ausschließen** . Geben Sie die e-Mail-Adresse (SMTP-Adresse) der Person ein](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , klicken Sie auf neues Symbol **Hinzufügen**![, um Sie der Liste der ausgeschlossenen Benutzer dieses Empfängertyps hinzuzufügen, und klicken Sie dann auf **Speichern** , um die Liste der ausgeschlossenen Benutzer zu speichern. 
+      - **Benutzer** – Sie können Nachrichten ausschließen, die von bestimmten Personen gesendet oder empfangen werden. Wenn Sie Personen ausschließen möchten, die im Feld von: Feld, an: oder im Feld CC: von Nachrichten angezeigt werden, klicken Sie neben diesem Empfängertyp auf **Benutzer ausschließen** . Geben Sie die e-Mail-Adresse (SMTP-Adresse) der Person ein](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , klicken Sie auf neues Symbol **Hinzufügen**![, um Sie der Liste der ausgeschlossenen Benutzer dieses Empfängertyps hinzuzufügen, und klicken Sie dann auf **Speichern** , um die Liste der ausgeschlossenen Benutzer zu speichern. 
     
         > [!NOTE]
         > In Office 365 werden keine Daten Einblicke angezeigt, die sich aus dem Festlegen des **Personen** Filters ergeben. Wenn Sie diesen Filter jedoch so festlegen, dass Nachrichten, die von bestimmten Personen gesendet oder empfangen werden, ausgeschlossen werden, werden diese Nachrichten während des tatsächlichen Importvorgangs ausgeschlossen. 
@@ -108,7 +108,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
     Die Daten Insights auf der Seite **Daten in Office 365 importieren** werden basierend auf Ihren Filtereinstellungen aktualisiert, einschließlich der Gesamtmenge der Daten, die basierend auf den Filtereinstellungen importiert werden. Beachten Sie, dass auch eine Zusammenfassung der Filtereinstellungen angezeigt wird. Sie können neben einem Filter auf **Bearbeiten** klicken, um die Einstellung bei Bedarf zu ändern. 
     
-    ![Die Daten Einblicke werden basierend auf Ihren Filtereinstellungen aktualisiert.](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
+    ![Die Daten Einblicke werden basierend auf Ihren Filtereinstellungen aktualisiert.](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
     d. Klicken Sie auf **Weiter**.
     
@@ -122,7 +122,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
     b. Klicken Sie auf der Seite **Daten in Office 365 importieren** auf **Daten importieren** , um den Import zu starten. Beachten Sie, dass die Gesamtmenge der importierten Daten angezeigt wird. 
     
-6. Klicken Sie auf der Seite **PST-Dateien importieren** ![auf](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Aktualisierung aktualisieren** . Der Status des importauftrags wird in der Spalte **Status** angezeigt. 
+6. Klicken Sie auf der Seite **PST-Dateien importieren** ![auf](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Aktualisierung aktualisieren** . Der Status des importauftrags wird in der Spalte **Status** angezeigt. 
     
 7. Klicken Sie auf den Auftrag importieren, um detailliertere Informationen anzuzeigen, beispielsweise den Status für jede PST-Datei und die von Ihnen konfigurierten Filtereinstellungen.
 

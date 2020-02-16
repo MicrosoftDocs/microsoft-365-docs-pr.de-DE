@@ -19,12 +19,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln, der für eine bestimmte Art von Inhalten gilt. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen steuern und nachverfolgen, wie lange Inhalt beibehalten wird oder welche Aktionen die Benutzer für diesen Inhalt ausführen können. Informationsverwaltungsrichtlinien können Organisationen helfen, gesetzliche oder behördliche Bestimmungen einzuhalten oder einfach interne Geschäftsprozesse erzwingen.
-ms.openlocfilehash: 3c3ca901674b9ae34aa990f320cf4eb550ea05b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7f977090b147eca427fcd2e4b536821890493950
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588035"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072687"
 ---
 # <a name="introduction-to-information-management-policies"></a>Einführung in Informationsverwaltungsrichtlinien
 
@@ -39,7 +39,7 @@ Informationen zu Vorgehensweise finden Sie unter [Erstellen und Anwenden von Inf
 
 Es gibt vier grundlegende Kategorien von vordefinierten Richtlinienfeatures, die Organisationen einzeln oder in Kombination verwenden können, um Inhalte und Prozesse zu verwalten. 
   
-![Arten von Inhaltsrichtlinien](media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Arten von Inhaltsrichtlinien](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
 Mit dem Überwachungsrichtlinienfeature können Organisationen analysieren, wie Ihre Inhaltsverwaltungssysteme durch Protokollierung von Ereignissen und Vorgängen, die für Dokumente und Listenelemente ausgeführt werden, verwendet werden. Sie können das Überwachungsrichtlinienfeature so konfigurieren, dass Ereignisse protokolliert werden, beispielsweise wenn ein Dokument oder Element bearbeitet, angezeigt, eingecheckt, ausgecheckt, gelöscht oder die Berechtigungen geändert wurden. Alle Überwachungsinformationen werden in einem einzigen Überwachungsprotokoll auf dem Server gespeichert, und Websiteadministratoren können Berichte dazu ausführen. 
   
@@ -56,21 +56,21 @@ Um eine Informationsverwaltungsrichtlinie zu implementieren, müssen Sie Sie ein
   
 Wenn Sie eine Websitesammlungsrichtlinie zu einem Websiteinhaltstyp hinzufügen und eine Instanz dieses Websiteinhaltstyps zu einer Liste oder Bibliothek hinzugefügt wird, kann der Besitzer dieser Liste oder Bibliothek die Websitesammlungsrichtlinie für die Liste oder Bibliothek nicht ändern. Das Hinzufügen einer Websitesammlungsrichtlinie zu einem Websiteinhaltstyp ist eine gute Möglichkeit, um sicherzustellen, dass Websitesammlungsrichtlinien auf jeder Ebene ihrer Websitehierarchie erzwungen werden.
   
-![Link zur Richtlinienvorlage "Inhaltstyp" auf der Seite "Websiteeinstellungen"](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Link zur Richtlinienvorlage "Inhaltstyp" auf der Seite "Websiteeinstellungen"](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
  **Erstellen Sie eine Informationsverwaltungsrichtlinie für einen Websiteinhaltstyp im Websiteinhaltstyp Katalog der obersten Ebene, und fügen Sie diesen Inhaltstyp dann einer oder mehreren Listen oder Bibliotheken hinzu.** Sie können auch eine Informationsverwaltungsrichtlinie direkt für einen Websiteinhaltstyp erstellen und dann eine Instanz dieses Websiteinhaltstyps mehreren Listen oder Bibliotheken zuordnen. Wenn Sie auf diese Weise eine Informationsverwaltungsrichtlinie erstellen, verfügt jedes Element in der Websitesammlung dieses Inhaltstyps oder eines Inhaltstyps, der von diesem Inhaltstyp erbt, über die Richtlinie. Wenn Sie jedoch eine Informationsverwaltungsrichtlinie direkt für einen Websiteinhaltstyp erstellen, ist es schwieriger, diese Informationsverwaltungsrichtlinie in anderen Websitesammlungen wiederzuverwenden, da Richtlinien, die auf diese Weise erstellt werden, nicht exportiert werden können. 
   
-![Link "Websiteinhaltstypen" auf der Seite "Websiteeinstellungen"](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Link "Websiteinhaltstypen" auf der Seite "Websiteeinstellungen"](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
-![Link "Informationsverwaltungsrichtlinie" auf der Seite "Einstellungen" für einen Websiteinhaltstyp](media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
+![Link "Informationsverwaltungsrichtlinie" auf der Seite "Einstellungen" für einen Websiteinhaltstyp](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
   
 Hinweis um zu steuern, welche Richtlinien in einer Websitesammlung verwendet werden, können Websitesammlungsadministratoren die Möglichkeit deaktivieren, Richtlinienfeatures direkt für einen Inhaltstyp festzulegen. Wenn diese Einschränkung wirksam ist, können Benutzer, die Inhaltstypen erstellen, nur Richtlinien aus der Liste der Websitesammlungsrichtlinien auswählen.
   
  **Erstellen einer Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek** Wenn Ihre Organisation eine bestimmte Informationsverwaltungsrichtlinie auf eine sehr beschränkte Menge an Inhalten anwenden muss, können Sie eine Informationsverwaltungsrichtlinie erstellen, die nur für eine einzelne Liste oder Bibliothek gilt. Diese Methode zum Erstellen einer Informationsverwaltungsrichtlinie ist die am wenigsten flexible, da die Richtlinie nur für einen Standort gilt und nicht für andere Speicherorte exportiert oder wieder verwendet werden kann. Manchmal müssen Sie jedoch möglicherweise eindeutige Informationsverwaltungsrichtlinien mit einer begrenzten Anwendbarkeit zur Behebung bestimmter Situationen erstellen. 
   
-![Link "Informationsverwaltungsrichtlinien" auf der Seite "Einstellungen" für Dokumentbibliothek](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Link "Informationsverwaltungsrichtlinien" auf der Seite "Einstellungen" für Dokumentbibliothek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-Notes 
+Hinweise 
   
 Sie können eine Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek nur dann erstellen, wenn diese Liste oder Bibliothek mehrere Inhaltstypen nicht unterstützt. Wenn eine Liste oder Bibliothek mehrere Inhaltstypen unterstützt, müssen Sie eine Informationsverwaltungsrichtlinie für jeden einzelnen Listeninhaltstyp definieren, der dieser Liste oder Bibliothek zugeordnet ist. (Instanzen eines Websiteinhaltstyps, die einer bestimmten Liste oder Bibliothek zugeordnet sind, werden als Listeninhaltstypen bezeichnet.)
   

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582874"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072743"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Insider Risikomanagement in Microsoft 365 (Vorschau)
 
@@ -56,7 +56,7 @@ Das Insider Risk Management hilft Ihnen dabei, interne Risiken in Ihrer Organisa
 
 Das identifizieren und beheben interner Risiko Aktivitäten und Compliance-Probleme mit dem Insider Risikomanagement in Microsoft 365 verwendet den folgenden Workflow:
 
-![Workflow für Insider Risikomanagement](media/insider-risk-workflow.png)
+![Workflow für Insider Risikomanagement](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>Richtlinien
 
@@ -70,7 +70,7 @@ Sie können aus den folgenden [Richtlinienvorlagen](insider-risk-management-poli
 
 Weitere Informationen finden Sie unter [Insider Risk Management Policies](insider-risk-management-policies.md).
 
-![Richtlinien-Dashboard für Insider Risikomanagement](media/insider-risk-policy-dashboard.png)
+![Richtlinien-Dashboard für Insider Risikomanagement](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>Warnungen
 
@@ -84,7 +84,7 @@ Warnungen werden automatisch von Risikoindikatoren generiert, die Richtlinienbed
 
 Weitere Informationen finden Sie unter [Insider Risk Management Alerts](insider-risk-management-alerts.md).
 
-![Alert-Dashboard für Insider-Risikomanagement](media/insider-risk-alerts-dashboard.png)
+![Alert-Dashboard für Insider-Risikomanagement](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>Auswahl
 
@@ -92,7 +92,7 @@ Bei neuen Aktivitäten, bei denen Untersuchungen erforderlich sind, werden autom
 
 Warnungen werden aufgelöst, indem ein neuer Fall geöffnet, die Warnung einem vorhandenen Fall zugewiesen oder die Warnung abgewiesen wird. Mithilfe von Warnungs Filtern ist es ganz einfach, Warnungen nach Status, Schweregrad oder erkannter Zeit schnell zu identifizieren. Im Rahmen des Triage-Prozesses können Bearbeiter Warnungsdetails für die Richtlinienübereinstimmung anzeigen, Benutzeraktivitäten anzeigen, die der Übereinstimmung zugeordnet sind, den Schweregrad der Warnung anzeigen und Benutzerprofilinformationen überprüfen.
 
-![Selektion von Insider Risikomanagement](media/insider-risk-triage.png)
+![Selektion von Insider Risikomanagement](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Prüfen
 
@@ -106,7 +106,7 @@ Wenn Sie im Case-Dashboard einen Fall auswählen, wird der Fall zur Untersuchung
 
 Weitere Informationen finden Sie unter [Insider Risk Management Cases](insider-risk-management-cases.md).
 
-![Untersuchung des Insider Risikomanagements](media/insider-risk-investigate.png)
+![Untersuchung des Insider Risikomanagements](../media/insider-risk-investigate.png)
 
 ### <a name="action"></a>Aktion
 

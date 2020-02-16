@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatische Erweiterung der Archivierung, um die Größe des Ordners "Wiederherstellbare Elemente" für ein Postfach in Office 365 zu erhöhen. '
-ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597932"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072922"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 
@@ -42,7 +42,7 @@ Um die Wahrscheinlichkeit zu verringern, diesen Grenzwert zu überschreiten, wir
   
 Wenn das Speicherkontingent für den Ordner "refundable Items" im primären Postfach eines aufbewahrten Postfachs nahe am Erreichen des Grenzwerts liegt, können Sie die folgenden Schritte ausführen:
   
-- **Aktivieren des Archivpostfachs und Aktivieren der automatisch wachsenden Archivierung** – Sie können eine unbegrenzte Speicherkapazität für den Ordner "Wiederherstellbare Elemente" einfach aktivieren, indem Sie das Archivpostfach aktivieren und dann das Feature für die automatische Erweiterung der Archivierung in Exchange Online aktivieren. Dies führt zu 110 GB für den Ordner "refundable Items" im primären Postfach und eine unbegrenzte Menge an Speicherkapazität für den Ordner "refundable Items" im Archiv des Benutzers. Weitere Informationen finden Sie unter Vorgehensweise: [Aktivieren von archivpostfächern im Security #a0 Compliance Center](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung in Office 365](enable-unlimited-archiving.md).
+- **Aktivieren des Archivpostfachs und Aktivieren der automatisch wachsenden Archivierung** – Sie können eine unbegrenzte Speicherkapazität für den Ordner "Wiederherstellbare Elemente" einfach aktivieren, indem Sie das Archivpostfach aktivieren und dann das Feature für die automatische Erweiterung der Archivierung in Exchange Online aktivieren. Dies führt zu 110 GB für den Ordner "refundable Items" im primären Postfach und eine unbegrenzte Menge an Speicherkapazität für den Ordner "refundable Items" im Archiv des Benutzers. Weitere Informationen finden Sie unter Vorgehensweise: [Aktivieren von archivpostfächern im Security & Compliance Center](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung in Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Nachdem Sie das Archiv für ein Postfach aktiviert haben, das das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" überschreitet, müssen Sie möglicherweise den Assistenten für verwaltete Ordner ausführen, um den Assistenten zum Verarbeiten des Postfachs manuell auszulösen, sodass abgelaufene Elemente verschoben werden. Ordner "refundable Items" im Archivpostfach. Anweisungen finden Sie in [Schritt 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Beachten Sie, dass andere Elemente im Postfach des Benutzers möglicherweise in das neue Archivpostfach verschoben werden. Sie sollten dem Benutzer mitteilen, dass dies möglicherweise geschieht, nachdem Sie das Archivpostfach aktiviert haben. 
@@ -96,15 +96,15 @@ Sie können die Exchange-Verwaltungskonsole oder Exchange Online PowerShell verw
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Erstellen einer Aufbewahrungsrichtlinie mithilfe der Exchange-Verwaltungskonsole
   
-1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Retention Policies**, und klicken](media/ITPro-EAC-AddIcon.gif)Sie dann auf Add Icon **Hinzufügen** ![.
+1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Retention Policies**, und klicken](../media/ITPro-EAC-AddIcon.gif)Sie dann auf Add Icon **Hinzufügen** ![.
     
 2. Geben Sie auf der Seite **neue Aufbewahrungsrichtlinie** unter **Name**einen Namen ein, der den Zweck der Aufbewahrungsrichtlinie beschreibt. beispielsweise **MRM-Richtlinie für Postfächer**, die aufbewahrt werden. 
     
-3. Klicken Sie unter **Aufbewahrungstags**auf Add](media/ITPro-EAC-AddIcon.gif)-Symbol **Hinzufügen** ![.
+3. Klicken Sie unter **Aufbewahrungstags**auf Add](../media/ITPro-EAC-AddIcon.gif)-Symbol **Hinzufügen** ![.
     
 4. Wählen Sie in der Liste der Aufbewahrungstags die wiederherstellbaren Elemente RPT aus, die Sie in Schritt 1 erstellt haben, und klicken Sie dann auf **Hinzufügen**.
     
-    ![Auswählen des Aufbewahrungstags für benutzerdefinierte Wiederherstellungselemente](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Auswählen des Aufbewahrungstags für benutzerdefinierte Wiederherstellungselemente](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. Wählen Sie zusätzliche Aufbewahrungstags aus, die der Aufbewahrungsrichtlinie hinzugefügt werden sollen. Beispielsweise können Sie die gleichen Tags hinzufügen, die in der standardmäßigen MRM-Richtlinie enthalten sind.
     
@@ -114,7 +114,7 @@ Sie können die Exchange-Verwaltungskonsole oder Exchange Online PowerShell verw
     
     Beachten Sie, dass die Aufbewahrungstags, die mit der Aufbewahrungsrichtlinie verknüpft sind, im Detailbereich angezeigt werden.
     
-    ![Im Detailbereich werden Aufbewahrungstags angezeigt, die mit der Aufbewahrungsrichtlinie verknüpft sind.](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![Im Detailbereich werden Aufbewahrungstags angezeigt, die mit der Aufbewahrungsrichtlinie verknüpft sind.](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Verwenden Exchange Online PowerShell zum Erstellen einer Aufbewahrungsrichtlinie
   
@@ -139,7 +139,7 @@ Der letzte Schritt besteht darin, die neue Aufbewahrungsrichtlinie, die Sie in S
   
 1. Navigieren Sie zu **Empfänger** \> **Postfächer**.
     
-2. Wählen Sie in der Listenansicht das Postfach aus, auf das die Aufbewahrungsrichtlinie angewendet werden soll, **** ![und klicken Sie](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)dann auf Bearbeitungssymbol bearbeiten.
+2. Wählen Sie in der Listenansicht das Postfach aus, auf das die Aufbewahrungsrichtlinie angewendet werden soll, **** ![und klicken Sie](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)dann auf Bearbeitungssymbol bearbeiten.
     
 3. Klicken Sie auf der Seite **Benutzerpostfach** auf **Postfachfunktionen**.
     

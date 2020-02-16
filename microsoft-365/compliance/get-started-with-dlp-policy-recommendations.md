@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Office 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der Startseite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine DLP-Richtlinie geschützt sind.
-ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596352"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073207"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
 
@@ -26,7 +26,7 @@ Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche In
   
 Sie können dieses Widget verwenden, um schnell eine angepasste DLP-Richtlinie mit nur einem Mausklick oder zwei zu erstellen, und nachdem Sie diese DLP-Richtlinie erstellt haben, ist sie vollständig anpassbar. Wenn die Empfehlung zunächst nicht angezeigt wird, klicken Sie im unteren Bereich des Abschnitts **empfohlen für Sie** auf **+ mehr** . 
   
-![Widget mit dem Namen "ungeschützte vertrauliche Informationen"](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![Widget mit dem Namen "ungeschützte vertrauliche Informationen"](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## <a name="create-the-recommended-dlp-policy"></a>Erstellen der empfohlenen DLP-Richtlinie
 
@@ -48,7 +48,7 @@ Sie können auch die DLP-Richtlinie festlegen:
     
 Wenn Sie diese Optionen später ändern möchten, können Sie die DLP-Richtlinie nach ihrer Erstellung bearbeiten. Beispielsweise können Sie die Richtlinie restriktiver machen, indem Sie auch Personen daran hindern, Inhalte freizugeben, die vertrauliche Informationen an erster Stelle enthalten-siehe den nächsten Abschnitt.
   
-![Einstellungen für das Widget mit dem Namen ungeschützte vertrauliche Informationen](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![Einstellungen für das Widget mit dem Namen ungeschützte vertrauliche Informationen](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Bearbeiten der empfohlenen DLP-Richtlinie
 
@@ -56,7 +56,7 @@ Nachdem Sie das Widget zum Erstellen einer DLP-Richtlinie verwendet haben, wird 
   
 Standardmäßig wird die Richtlinie **als System empfohlene Richtlinie für die Freigabe vertraulicher Informationen**bezeichnet. Diese Richtlinie ist vollständig anpassbar, genauso wie jede DLP-Richtlinie, die Sie selbst von Grund auf neu erstellen. Wenn Sie beispielsweise entschieden haben, bei der Verwendung des Widgets keine vorfallberichte und Richtlinien Tipps zu aktivieren, können Sie die Richtlinie jederzeit bearbeiten und diese Optionen jederzeit aktivieren.
   
-![Vom System empfohlene Richtlinie für die Freigabe vertraulicher Informationen](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![Vom System empfohlene Richtlinie für die Freigabe vertraulicher Informationen](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Wenn das Widget funktioniert und nicht angezeigt wird
 

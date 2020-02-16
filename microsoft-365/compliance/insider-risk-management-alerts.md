@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 80c5bb701c7805f673280d24903935c2951046b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590796"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072882"
 ---
 # <a name="insider-risk-management-alerts-preview"></a>Alerts für Insider-Risikomanagement (Vorschau)
 
@@ -34,7 +34,7 @@ Das Alert- **Dashboard** für Insider Risiken ermöglicht Ihnen das Anzeigen und
     - Durchschnittliche Zeit zum Auflösen mittlerer Dringlichkeits Warnungen, aufgeführt in Stunden, Tagen oder Monaten.
     - Durchschnittliche Zeit zum Beheben von Warnungen mit niedrigem Schweregrad, aufgeführt in Stunden, Tagen oder Monaten.
 
-![Alert-Dashboard für Insider-Risikomanagement](media/insider-risk-alerts-dashboard.png)
+![Alert-Dashboard für Insider-Risikomanagement](../media/insider-risk-alerts-dashboard.png)
 
 ## <a name="alert-status-and-severity"></a>Warnungsstatus und-Schweregrad
 

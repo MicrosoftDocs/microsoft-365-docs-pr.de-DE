@@ -13,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Verwenden Sie das Microsoft PST-Sammlungs Tool, um das Netzwerk Ihrer Organisation zu durchsuchen, um eine Bestandsaufnahme der PST-Dateien zu erhalten, die in Ihrer Organisation verstreut sind. Nachdem Sie PST-Dateien gefunden haben, können Sie das PST-Sammlungs Tool verwenden, um Sie an einem zentralen Speicherort zu kopieren, damit Sie Sie in Office 365 importieren können.
-ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594556"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073922"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Verwenden des PST-Sammlungs Tools zum Suchen, kopieren und Löschen von PST-Dateien in Ihrer Organisation
 
@@ -33,7 +33,7 @@ Eine andere Möglichkeit, die Sie mit dem PST-Sammlungs Tool tun können, ist, d
 
 Hier finden Sie eine kurze Übersicht über den Prozess der Verwendung des PST-Sammlungs Tools zum Suchen, Steuern, sammeln und Löschen von PST-Dateien in Ihrer Organisation.
   
-![Übersicht über den Prozess des PST-Sammlungs Tools](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![Übersicht über den Prozess des PST-Sammlungs Tools](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[Schritt 1: Suchen von PST-Dateien in Ihrem Netzwerk](#step-1-find-pst-files-on-your-network)** – Wenn Sie das Tool zum Auffinden von PST-Dateien ausführen, geben Sie einen Speicherort an, beispielsweise eine Organisationseinheit, die Active Directory-Objekte für Client-und Server Computer enthält. Sie können auch bestimmte Computer oder Netzwerkdateifreigaben durchsuchen. Wenn Sie das Tool ausführen, wird ein "Lightweight"-Sammlungs-Agent auf den Zielcomputern installiert. Dieser Agent durchsucht den Zielcomputer nach PST-Dateien und sendet dann Informationen zu jeder gefundenen PST-Datei zurück an das PST-Sammlungs Tool. Das Tool erstellt Protokolldateien, die Informationen zu den PST-Dateien enthalten, die an den angegebenen Speicherorten gefunden wurden. Diese Dateien werden verwendet, wenn Sie das Tool in späteren Schritten ausführen. 
     
@@ -45,7 +45,7 @@ Hier finden Sie eine kurze Übersicht über den Prozess der Verwendung des PST-S
     
 5. **[Schritt 5: Löschen der in Ihrem Netzwerk gefundenen PST](#step-5-delete-the-pst-files-found-on-your-network)** -Dateien – nachdem die gefundenen und gesammelten PST-Dateien in Office 365 in Exchange Online Postfächer importiert wurden, können Sie das PST-Sammlungs Tool verwenden, um die PST-Dateien von den ursprünglichen Speicherorten zu löschen, an denen Sie in Schritt 1 gefunden wurden. 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Führen Sie die folgenden Schritte aus, um das PST-Sammlungs Tool auf Ihren lokalen Computer herunterzuladen. 
     
@@ -240,7 +240,7 @@ Nachdem die gefundenen und gesammelten PST-Dateien in Office 365 in Exchange Onl
     
     |Parameter * * * *|****Beschreibung****|Beispiele * * * *|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |Gibt den Typ der zu suchenden Daten an. Derzeit können Sie das PST-Sammlungs Tool verwenden, um nach PST-Dateien zu suchen. ![um](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |Gibt den Typ der zu suchenden Daten an. Derzeit können Sie das PST-Sammlungs Tool verwenden, um nach PST-Dateien zu suchen. ![um](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |Gibt den Typ der Operation an, die vom Tool ausgeführt wird. Verwenden Sie den `Delete` -Wert, um die PST-Dateien zu löschen, die gefunden wurden, als Sie das Tool im Find-Modus ausgeführt haben.  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |Gibt den Namen eines vorhandenen PST-Sammlungs Auftrags an. Sie müssen den gleichen Auftragsnamen verwenden, den Sie beim Ausführen des Tools im Such Modus und im Sammelmodus in Schritt 1 und Schritt 3 verwendet haben. Dieser Auftragsname wird auch dem Namen der Protokolldatei hinzugefügt, die erstellt wird, wenn Sie das Tool im Löschmodus ausführen.  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |Gibt den Ordner an, der die XML-Konfigurationsdatei enthält, die erstellt wurde, als Sie das Tool im Sammelmodus ausgeführt haben. Verwenden Sie den gleichen Wert, den Sie in Schritt 3 für diesen Parameter verwendet haben.  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

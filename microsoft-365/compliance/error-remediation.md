@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aac2dc742af4491be8c7f30ed6e78c549a924f3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 524378ecb7ec7cd8285e7d1ccda5667aa6081f30
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592816"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074428"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Fehlerkorrektur beim Verarbeiten von Daten für eine Untersuchung
 
@@ -40,15 +40,15 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 3. Klicken Sie auf **+ neue Fehlerkorrektur**.
 
-    ![Fehlerbehebung](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Fehlerbehebung](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     Die Fehlerbehebungssitzung beginnt, beginnend mit einer Vorbereitungsphase, in der die Dateien mit Fehlern an einen sicheren Azure-Speicherort kopiert werden, damit Sie heruntergeladen werden können.
 
-    ![Vorbereiten der Fehlerbehebung](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Vorbereiten der Fehlerbehebung](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Nachdem die Vorbereitung abgeschlossen ist, klicken Sie auf **Weiter: Dateien herunterladen** , um den Download fortzusetzen.
 
-    ![Herunterladen von Dateien](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Herunterladen von Dateien](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Geben Sie zum Herunterladen von Dateien den **Ziel Pfad für den Download**an. Dies ist ein Pfad auf dem lokalen Computer, auf dem die Datei heruntergeladen werden soll.  Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers; Dies kann bei Bedarf geändert werden.
 
@@ -62,7 +62,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
     Die Dateien werden heruntergeladen.
 
-    ![Vorbereiten der Fehlerbehebung](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Vorbereiten der Fehlerbehebung](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Wenn beim Ausführen dieses Befehls Probleme auftreten, lesen Sie [Troubleshooting AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -74,13 +74,13 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 8. Kehren Sie nun zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Dateien hochladen**.  Dadurch gelangen Sie zum nächsten Schritt, in dem Sie die Dateien jetzt hochladen können.
 
-    ![Hochladen von Dateien](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Hochladen von Dateien](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Geben Sie den Speicherort der korrigierten Dateien in das Textfeld **Pfad zum Speicherort der Dateien** ein, und klicken Sie dann auf **in Zwischenablage kopieren**.
 
 10. Fügen Sie den Befehl in eine Windows-Eingabeaufforderung ein, und drücken **Sie die EINGABETASTE** , um die Dateien hochzuladen.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Kehren Sie schließlich zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Process files**.
 

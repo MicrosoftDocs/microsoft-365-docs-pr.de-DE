@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 161118bb8ff8a5c79ee507d329e20bad1421d8fd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac029959470d92fff9c0c5e942cd667f659e307d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072822"
 ---
 # <a name="insider-risk-management-policies-preview"></a>Richtlinien für das Insider Risikomanagement (Vorschau)
 
@@ -34,7 +34,7 @@ Mit dem **Richtlinien Dashboard** können Sie schnell die Richtlinien in Ihrer O
 - **Richtlinien Effektivität**: der Prozentsatz, der durch die insgesamt bestätigten Warnungen dividiert durch die Gesamtanzahl der Aktionen, die für Warnungen vorgenommen wurden, bestimmt wird (die Summe der Warnungen, die im letzten Jahr bestätigt oder entlassen wurden).
 - **Aktiv**: der Status des Falls, entweder *Ja* oder *Nein*.
 
-![Richtlinien-Dashboard für Insider Risikomanagement](media/insider-risk-policy-dashboard.png)
+![Richtlinien-Dashboard für Insider Risikomanagement](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-templates"></a>Richtlinienvorlagen
 

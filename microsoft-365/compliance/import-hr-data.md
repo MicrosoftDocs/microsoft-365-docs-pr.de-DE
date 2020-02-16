@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862035"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073019"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von HR-Daten
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) zu importieren, beispielsweise das Datum, an dem ein Mitarbeiter seinen Rücktritt gesendet hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der neuen [Insider Risiko-Verwaltungslösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, indem Sie eine CSV-Zuordnungsdatei erstellt, die Ihre HR-Daten enthält, einen Data Connector im Compliance Center erstellt und dann ein Skript ausführt (auf einem geplante Basis), die die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Der Data Connector verwendet dann Microsoft-Compliance-Lösungen (wie Insider Risk Management), um auf die in Ihre Microsoft 365-Organisation importierten HR-Daten zuzugreifen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den HR-Connector in Schritt 3 erfolgreich erstellen können.
 
@@ -86,7 +86,7 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
 5. Geben Sie auf der Seite **Dateizuordnung** die drei Spalten überschriftennamen ein (auch als *Parameter* aus der CSV-Datei, die Sie in Schritt 2 in jedem der entsprechenden Felder erstellt haben. Bei den Namen wird die Groß-/Kleinschreibung nicht beachtet. Wie bereits erläutert, müssen die Namen, die Sie in diese Felder eingeben, mit den Parameternamen in der CSV-Datei übereinstimmen. Im folgenden Screenshot sind beispielsweise die Parameternamen aus dem Beispiel in der CSV-Beispieldatei in Schritt 2 dargestellt.
 
-   ![Spaltenüberschrift Namen entsprechen denen in der CSV-Datei](media/HRConnectorWizard3.png)
+   ![Spaltenüberschrift Namen entsprechen denen in der CSV-Datei](../media/HRConnectorWizard3.png)
 
 6. Überprüfen Sie die Einstellungen auf der Seite **überprüfen** , und klicken Sie dann auf **Fertig stellen** , um den Connector zu erstellen.
 
@@ -98,7 +98,7 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
 8. Klicken Sie auf den soeben erstellten HR-Konnektor, um die Flyout-Seite anzuzeigen, die Eigenschaften und andere Informationen zum Connector enthält. 
 
-   ![Flyout-Seite für neuen HR-Connector](media/HRConnectorWizard7.png)
+   ![Flyout-Seite für neuen HR-Connector](../media/HRConnectorWizard7.png)
 
    Wenn Sie dies nicht bereits getan haben, können Sie die Werte für die **Azure-APP-ID** und die **Connector-Auftrags-ID**kopieren. Sie benötigen diese, um das Skript im nächsten Schritt auszuführen. Sie können das Skript auch über die Flyout-Seite herunterladen (oder es über den Link im nächsten Schritt herunterladen).
 
@@ -153,11 +153,11 @@ Nachdem Sie den HR-Connector erstellt und das Skript zum Hochladen Ihrer HR-Date
 
 2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den HF-Konnektor aus, um die Flyout-Seite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
 
-   ![Flyoutseite "HR-Konnektor" mit Eigenschaften und Status](media/HRConnectorFlyout1.png)
+   ![Flyoutseite "HR-Konnektor" mit Eigenschaften und Status](../media/HRConnectorFlyout1.png)
 
 3. Klicken Sie unter **Status**auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen über jedes Mal, wenn das Skript ausgeführt wird, und lädt die Daten aus der CSV-Datei in die Microsoft-Cloud hoch. 
 
-   ![Protokolldatei des HR-Konnektors zeigt Nummern Zeilen aus der CSV-Datei an, die hochgeladen wurden](media/HRConnectorLogFile.png)
+   ![Protokolldatei des HR-Konnektors zeigt Nummern Zeilen aus der CSV-Datei an, die hochgeladen wurden](../media/HRConnectorLogFile.png)
 
    Das Feld **RecordsSaved** gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise 4 Zeilen enthält, lautet der Wert der **RecordsSaved** -Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
 
@@ -193,7 +193,7 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
 7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
 
-   ![Aktionseinstellungen zum Erstellen eines neuen geplanten Tasks für das HR-Connector-Skript](media/HRConnectorScheduleTask1.png)
+   ![Aktionseinstellungen zum Erstellen eines neuen geplanten Tasks für das HR-Connector-Skript](../media/HRConnectorScheduleTask1.png)
 
    a. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
 
@@ -209,7 +209,7 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
    Die neue Aufgabe wird in der Aufgabenplanungsbibliothek angezeigt.
 
-   ![Die neue Aufgabe wird in der Aufgabenplanungsbibliothek angezeigt.](media/HRConnectorTaskSchedulerLibrary.png)
+   ![Die neue Aufgabe wird in der Aufgabenplanungsbibliothek angezeigt.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    Die Uhrzeit, zu der das Skript zuletzt ausgeführt wurde, wird angezeigt, wenn das nächste Mal geplant wird. Sie können auf den Vorgang doppelklicken, um ihn zu bearbeiten.
 

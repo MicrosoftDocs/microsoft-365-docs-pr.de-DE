@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b05eb190621dd0829c992cf5b47e8fbe8bcf99a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072806"
 ---
 # <a name="insider-risk-management-notice-templates-preview"></a>Insider Risk Management-Benachrichtigungsvorlagen (Vorschau)
 
@@ -29,7 +29,7 @@ Erstellen von Benachrichtigungsvorlagen, wenn Sie Benutzern eine e-Mail-Erinneru
 
 Das Benachrichtigungs **Vorlagen-Dashboard** zeigt eine Liste konfigurierter Benachrichtigungsvorlagen an und ermöglicht Ihnen das Erstellen neuer Benachrichtigungsvorlagen. Die Benachrichtigungsvorlagen werden in umgekehrter Datumsreihenfolge mit der zuletzt aufgelisteten Benachrichtigungsvorlage aufgeführt.
 
-![Hinweis Vorlagen-Dashboard für Insider Risk Management](media/insider-risk-notices-dashboard.png)
+![Hinweis Vorlagen-Dashboard für Insider Risk Management](../media/insider-risk-notices-dashboard.png)
 
 ## <a name="html-for-notices"></a>HTML für Benachrichtigungen
 

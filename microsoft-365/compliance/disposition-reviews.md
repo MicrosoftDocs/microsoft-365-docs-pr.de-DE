@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836715"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075394"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
 
@@ -35,7 +35,7 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere
     
 - Zurückgeben der Inhalte an Clients oder übertragen an eine andere Organisation.
     
-Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security #a0 Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
+Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security & Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
   
 - Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
     
@@ -56,20 +56,20 @@ Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im M
   
 Eine Dispositions Überprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Office 365 Gruppen enthalten. Inhalte, die auf eine Dispositions Überprüfung an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
   
-![Seite "Dispositions" im Security and Compliance Center](media/Retention-Dispositions-v2-page.png)
+![Seite "Dispositions" im Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
 
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Einrichten der Dispositions Überprüfung durch Erstellen einer Aufbewahrungs Bezeichnung
 
 Dies ist der grundlegende Workflow zum Einrichten einer Dispositions Überprüfung. Beachten Sie, dass dieser Fluss eine Aufbewahrungs Bezeichnung zeigt, die veröffentlicht und dann manuell von einem Benutzer angewendet wird. Alternativ kann eine Aufbewahrungs Bezeichnung, die eine Dispositions Überprüfung auslöst, automatisch auf Inhalte angewendet werden.
   
-![Diagramm zum Anzeigen des Ablaufs der Dispositions Funktion](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Diagramm zum Anzeigen des Ablaufs der Dispositions Funktion](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 Eine Dispositions Überprüfung ist eine Option, wenn Sie eine Aufbewahrungs Bezeichnung in Office 365 erstellen. Diese Option steht in einer Aufbewahrungsrichtlinie nicht zur Verfügung, sondern nur in einer Aufbewahrungs Bezeichnung, die für die Beibehaltung von Inhalt konfiguriert ist.
   
 Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Overview of Retention Labels](labels.md).
   
-![Aufbewahrungseinstellungen für eine Bezeichnung](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![Aufbewahrungseinstellungen für eine Bezeichnung](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
 > Wenn Sie die Option " **diese Personen Benachrichtigen" angeben, wenn Elemente zur Überarbeitung verfügbar sind**, geben Sie einen Benutzer an. Für diese Option werden Office 365 Gruppen nicht unterstützt.
@@ -80,7 +80,7 @@ Wenn ein Prüfer per e-Mail benachrichtigt wird, dass der Inhalt überprüft wer
 
 Nachdem Sie eine Aufbewahrungs Bezeichnung ausgewählt haben, werden auf der nächsten Seite alle ausstehenden Dispositionen für diese Bezeichnung angezeigt.
 
-![Dispositions Optionen](media/Retention-Disposition-options-v2.png)
+![Dispositions Optionen](../media/Retention-Disposition-options-v2.png)
 
 Der Prüfer kann dann: 
   
@@ -104,7 +104,7 @@ Um auf die Seite " **Disposition** " zugreifen zu können, müssen Sie der Dispo
 
 Spezifisch für die Rolle " **nur Ansichts Überwachungsprotokolle** ":
 
-- Da es sich bei dem zugrunde liegenden Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt, müssen Sie Benutzer diese Rolle mithilfe des [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center)anstatt mithilfe der Seite **Berechtigungen** im Security #a0 Compliance Center zuweisen. Anweisungen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Da es sich bei dem zugrunde liegenden Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt, müssen Sie Benutzer diese Rolle mithilfe des [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center)anstatt mithilfe der Seite **Berechtigungen** im Security & Compliance Center zuweisen. Anweisungen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
 - Office 365 Gruppen werden für diese Rolle nicht unterstützt. Weisen Sie stattdessen Benutzerpostfächer oder e-Mail-Benutzer zu.
   
@@ -128,18 +128,18 @@ Auf der Seite **ausstehende Disposition** können Sie ausstehende und abgeschlos
     
 - Auf der Registerkarte " **verworfene Elemente** " werden endgültig gelöschte Elemente angezeigt, die bereits über eine Dispositions Überprüfung durchgeführt wurden. Sie werden hier angezeigt, da der permanente Löschvorgang mehrere Tage dauern kann, wie im obigen Abschnitt beschrieben. Elemente, für die eine andere Aufbewahrungs Bezeichnung angewendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfung verlängert wurde, werden hier nicht angezeigt.
 
-![Dispositions Registerkarten](media/Retention-Disposition-tabs.png)
+![Dispositions Registerkarten](../media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtern der Dispositions Ansichten
 
 Sie können diese Ansichten nach Aufbewahrungs Bezeichnung oder Zeitbereich filtern. Für ausstehende Dispositionen basiert der Zeitbereich auf dem Ablaufdatum. Bei freigestellten Elementen basiert der Zeitbereich auf dem Löschdatum.
   
-![Optionen für den Dispositions Filter](media/Retention-filter-options.png)
+![Optionen für den Dispositions Filter](../media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Exportieren der Dispositionselemente
 
 Darüber hinaus können Sie die Elemente in jeder Ansicht als CSV-Datei exportieren, die Sie in Excel öffnen können.
   
-![Exportierte Dispositionsdaten in Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Exportierte Dispositionsdaten in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

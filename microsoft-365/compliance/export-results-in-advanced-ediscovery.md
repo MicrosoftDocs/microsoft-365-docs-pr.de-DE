@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Hier erfahren Sie, wie Sie Optionen für den Export von Ergebnissen aus Office 365 Advanced eDiscovery definieren, einschließlich der Vorgehensweise zum Angeben von Parametern für einen Export Batch. '
-ms.openlocfilehash: ae25c0aac64a437f902ec5533453a05b8bdb5be6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588315"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074302"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportieren von Ergebnissen in Office 365 Advanced eDiscovery
 
@@ -68,18 +68,18 @@ Das eDiscovery-Export Tool wird verwendet, um Suchergebnisse aus Advanced eDisco
     
     - Um Ergebnisse für neue Dateien zu exportieren, die Sie einem vorhandenen Fall hinzugefügt haben, fahren Sie mit dem aktuellen Batch fort. Wenn Sie eine Sitzung im Batch erstellen möchten, wählen Sie die gleiche Batchnummer aus, und klicken Sie auf **Create Export Session** . Sie können diese Option verwenden, um die gleichen Parameter wie der vorherige Batch in einer inkrementellen Weise zu exportieren. 
     
-    - Klicken Sie zum Exportieren in einen neuen Batch auf Add-](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)Symbol **Hinzufügen** ![, und geben Sie einen neuen Namen in **Batch Name** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
+    - Klicken Sie zum Exportieren in einen neuen Batch auf Add-](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)Symbol **Hinzufügen** ![, und geben Sie einen neuen Namen in **Batch Name** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
     
-    - Um einen Stapelverarbeitungs Namen oder eine Beschreibung zu bearbeiten, wählen Sie den Namen in **Export Batch**aus](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und ändern Sie dann die Felder.
+    - Um einen Stapelverarbeitungs Namen oder eine Beschreibung zu bearbeiten, wählen Sie den Namen in **Export Batch**aus](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und ändern Sie dann die Felder.
     
       > [!NOTE]
       > Nachdem Sie Sitzungen für einen Export Batch ausgeführt haben, können diese nicht gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, nachdem die erste Sitzung ausgeführt wurde. 
   
-    - Um einen doppelten Export Batch zu erstellen, wählen Sie **Duplicate** ![Export Batch Create a Duplicate Export](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Batch Icon aus, und geben Sie einen Namen und eine Beschreibung für den doppelten Batch im Bereich ein. 
+    - Um einen doppelten Export Batch zu erstellen, wählen Sie **Duplicate** ![Export Batch Create a Duplicate Export](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Batch Icon aus, und geben Sie einen Namen und eine Beschreibung für den doppelten Batch im Bereich ein. 
     
-    - Zum Löschen eines Export Batches wählen Sie **Delete** ![Export Batch Icon](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)aus.
+    - Zum Löschen eines Export Batches wählen Sie **Delete** ![Export Batch Icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)aus.
     
-    - Um den Verlauf eines Batches anzuzeigen, wählen Sie Verlaufs Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für **Stapel Verlauf** ![anzeigen aus.
+    - Um den Verlauf eines Batches anzuzeigen, wählen Sie Verlaufs Symbol](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für **Stapel Verlauf** ![anzeigen aus.
     
 2. Wählen Sie unter **Auffüllung**die Option **nur Dateien oberhalb des Relevanz-Trenn Ergebnisses einschließen** und/oder **Export Batch verfeinern** aus, wenn Sie die Einstellungen für den Export Batch optimieren möchten. 
     
@@ -111,7 +111,7 @@ Das eDiscovery-Export Tool wird verwendet, um Suchergebnisse aus Advanced eDisco
   
 6. Klicken Sie auf **ändern** , um die Feld Einstellungen für die Überprüfung festzulegen. 
     
-    ![Einrichten von Feld Einstellungen für die Überprüfung eines Export Batches](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Einrichten von Feld Einstellungen für die Überprüfung eines Export Batches](../media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
    - Wählen Sie unter **für Überarbeitungs Feld Einstellungen**in Dropdownliste **Szenario auswählen** das Szenario und den Umfang der Überprüfung aus. Die Einstellungen werden basierend auf Ihrer Auswahl angezeigt.
     
@@ -159,13 +159,13 @@ Das eDiscovery-Export Tool wird verwendet, um Suchergebnisse aus Advanced eDisco
     
 9. Klicken Sie im Fenster **Download Dateien** auf in die **Zwischenablage kopieren** , um den Export Schlüssel zu kopieren. 
     
-    ![Herunterladen von Dateien](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Herunterladen von Dateien](../media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Klicken Sie auf **Schließen**. 
     
     Das eDiscovery-Export Tool wird gestartet.
     
-    ![eDiscovery-Export Tool](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
+    ![eDiscovery-Export Tool](../media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
 11. Im **eDiscovery-Export Tool**:
     

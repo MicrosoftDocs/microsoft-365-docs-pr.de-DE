@@ -1,5 +1,7 @@
 ---
 title: Beheben von Fehlern beim Verarbeiten von Daten
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38686015"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074572"
 ---
 # <a name="error-remediation-when-processing-data"></a>Beheben von Fehlern beim Verarbeiten von Daten
 
@@ -34,7 +36,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
 1. Wählen Sie auf der Registerkarte **Verarbeitung** im erweiterten eDiscovery-Fall im Dropdown **Menü Ansicht** die Option **Fehler** aus, und wählen Sie dann im Dropdownmenü **Bereich** einen Überprüfungs Satz oder den gesamten Fall aus. In diesem Abschnitt werden alle Fehler aus dem Fall oder Fehler aus einem bestimmten Überprüfungs Satz angezeigt.
 
-   ![Fehlerbehebung](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+   ![Fehlerbehebung](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
 2. Wählen Sie die Fehler aus, die Sie korrigieren möchten, indem Sie auf das Optionsfeld neben dem Fehlertyp oder-Dateityp klicken.  Im folgenden Beispiel werden wir eine kennwortgeschützte Datei remediationieren.
 
@@ -42,11 +44,11 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
     Der Fehlerkorrektur-Workflow beginnt mit einer Vorbereitungsphase, in der die Dateien mit Fehlern in einen von Microsoft bereitgestellten Azure-Speicherort kopiert werden, damit Sie Sie auf den lokalen Computer herunterladen können, um Sie zu beheben.
 
-    ![Vorbereiten der Fehlerbehebung](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Vorbereiten der Fehlerbehebung](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Nachdem die Vorbereitung abgeschlossen ist, klicken Sie auf **Weiter: Dateien herunterladen** , um den Download fortzusetzen.
 
-    ![Herunterladen von Dateien](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Herunterladen von Dateien](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Geben Sie zum Herunterladen von Dateien den **Ziel Pfad für den Download**an. Dies ist ein Pfad zum übergeordneten Ordner auf dem lokalen Computer, auf dem die Datei heruntergeladen wird.  Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers. Sie können diesen Pfad bei Bedarf ändern. Wenn Sie es ändern, wird empfohlen, einen lokalen Dateipfad für die beste Leistung zu verwenden. Verwenden Sie keinen Remotenetzwerk Pfad. Sie können beispielsweise den Pfad **C:\Remediation**verwenden. 
 
@@ -54,7 +56,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
 6. Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken. Öffnen Sie eine Windows-Eingabeaufforderung, fügen Sie den AzCopy-Befehl ein, und drücken Sie dann die **Eingabe**Taste.  
 
-    ![Vorbereiten der Fehlerbehebung](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Vorbereiten der Fehlerbehebung](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
     > [!NOTE]
     > Sie müssen AzCopy v 8.1 verwenden, um den Befehl erfolgreich zu verwenden, der auf der Seite zum **Herunterladen von Dateien** bereitgestellt wird. Sie müssen auch AzCopy v 8.1 verwenden, um die Dateien in Schritt 10 hochzuladen. Informationen zum Installieren dieser Version von AzCopy finden Sie unter [übertragen von Daten mit der AzCopy v 8.1 unter Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -82,7 +84,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
 8. Kehren Sie zu Advanced eDiscovery und dem Fehlerkorrektur-Assistenten zurück, und klicken Sie dann auf **Weiter: Dateien hochladen**.  Diese wechselt zur nächsten Seite, auf der Sie nun die Dateien hochladen können.
 
-    ![Hochladen von Dateien](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Hochladen von Dateien](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Geben Sie den übergeordneten Ordner an, in dem sich die korrigierten Dateien im Textfeld **Pfad zum Speicherort der Dateien** befinden. Der übergeordnete Ordner muss wieder dieselbe Unterordnerstruktur aufweisen, die beim Herunterladen der Dateien erstellt wurde.
 
@@ -90,7 +92,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
 10. Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken. Öffnen Sie eine Windows-Eingabeaufforderung, fügen Sie den AzCopy-Befehl ein, und drücken Sie dann die **Eingabe**Taste. Laden Sie die Dateien hoch.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Nachdem Sie den AzCopy-Befehl ausgeführt haben, klicken Sie auf **Weiter: Process files**.
 

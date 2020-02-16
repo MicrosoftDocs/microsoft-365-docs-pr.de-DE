@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: In diesem Artikel erfahren Sie, wie Sie Postfachinhalte für frühere Mitarbeiter beibehalten, indem Sie das Postfach in ein inaktives Postfach umwandeln. Sie können dies tun, indem Sie das Postfach in einem Beweissicherungsverfahren platzieren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach anwenden und dann das entsprechende Office 365 Konto entfernen.
-ms.openlocfilehash: 75ede1ae199bdecfea2662a187c3965cc2b676d7
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661880"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072902"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Übersicht über inaktive Postfächer in Office 365
 
@@ -33,14 +33,14 @@ In Ihrer Organisation müssen möglicherweise die e-Mails der ehemaligen Mitarbe
 
 Wenn ein Mitarbeiter Ihre Organisation verlässt (oder ein längerer Abwesenheits beurlaub), können Sie Ihr Office 365 Konto entfernen. Die Postfachdaten des Mitarbeiters werden 30 Tage lang aufbewahrt, nachdem das Konto entfernt wurde. Während dieses Zeitraums können Sie die Postfachdaten weiterhin wiederherstellen, indem Sie das Löschen des Kontos Aufhebung. Nach 30 Tagen werden die Daten endgültig entfernt.
   
-Wenn Ihre Organisation jedoch Postfachinhalte für frühere Mitarbeiter aufbewahren muss, können Sie das Postfach in ein inaktives Postfach umwandeln, indem Sie das Postfach in einem Beweissicherungsverfahren speichern oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach im Security #a0 Compliance Center und anschließend das entsprechende Office 365 Konto entfernen. Der Inhalt eines inaktiven Postfachs wird für die Dauer des für das Postfach aktivierten Beweissicherungsverfahrens oder des Aufbewahrungszeitraums der Office 365-Aufbewahrungsrichtlinie aufbewahrt, die vor dem Löschen des Postfachs auf dieses angewendet wurde. Sie können das entsprechende Benutzerkonto innerhalb eines Zeitraums von 30 Tagen wiederherstellen. Nach 30 Tagen wird das inaktive Postfach jedoch in Office 365 aufbewahrt, bis die Aufbewahrungs-oder Aufbewahrungsrichtlinie entfernt wird. 
+Wenn Ihre Organisation jedoch Postfachinhalte für frühere Mitarbeiter aufbewahren muss, können Sie das Postfach in ein inaktives Postfach umwandeln, indem Sie das Postfach in einem Beweissicherungsverfahren speichern oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach im Security & Compliance Center und anschließend das entsprechende Office 365 Konto entfernen. Der Inhalt eines inaktiven Postfachs wird für die Dauer des für das Postfach aktivierten Beweissicherungsverfahrens oder des Aufbewahrungszeitraums der Office 365-Aufbewahrungsrichtlinie aufbewahrt, die vor dem Löschen des Postfachs auf dieses angewendet wurde. Sie können das entsprechende Benutzerkonto innerhalb eines Zeitraums von 30 Tagen wiederherstellen. Nach 30 Tagen wird das inaktive Postfach jedoch in Office 365 aufbewahrt, bis die Aufbewahrungs-oder Aufbewahrungsrichtlinie entfernt wird. 
   
 > [!IMPORTANT]
 > Da wir weiterhin auf verschiedene Arten investieren, um Postfachinhalte beizubehalten, kündigen wir den Ruhestand von in-Place-Speicher in der Exchange-Verwaltungskonsole an. Das bedeutet, dass Sie das Beweissicherungsverfahren und Office 365 Aufbewahrungsrichtlinien verwenden sollten, um ein inaktives Postfach zu erstellen. Ab dem 1. April 2020 können Sie in Exchange Online keine neuen in-Place-Aufbewahrungsorte erstellen. Sie können jedoch weiterhin die Aufbewahrungsdauer eines in-situ-Speichers ändern, der in einem inaktiven Postfach platziert wird. Ab dem 1. Juli 2020 können Sie die Aufbewahrungsdauer jedoch nicht ändern. Sie können ein inaktives Postfach nur löschen, indem Sie den in-situ-Speicher entfernen. Vorhandene inaktive Postfächer, die sich im Compliance-Archiv befinden, werden weiterhin beibehalten, bis die Aufbewahrung aufgehoben wird. Weitere Informationen zum Ruhestand von in-Place-Archiven finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md).
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>Inaktive Postfächer und Office 365-Aufbewahrungsrichtlinien
 
-Zusätzlich zum Beweissicherungsverfahren ist die Verwendung des neuen Office 365-Aufbewahrungsrichtlinien Features im Security #a0 Compliance Center eine weitere Möglichkeit, ein Postfach inaktiv zu machen. Um ein Postfach mithilfe einer Aufbewahrungsrichtlinie als inaktiv festzulegen, müssen Sie wie folgt vorgehen: 
+Zusätzlich zum Beweissicherungsverfahren ist die Verwendung des neuen Office 365-Aufbewahrungsrichtlinien Features im Security & Compliance Center eine weitere Möglichkeit, ein Postfach inaktiv zu machen. Um ein Postfach mithilfe einer Aufbewahrungsrichtlinie als inaktiv festzulegen, müssen Sie wie folgt vorgehen: 
   
 - Es muss so konfiguriert werden, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden. Wenn eine Aufbewahrungsrichtlinie so konfiguriert ist, dass nur Inhalte gelöscht werden, wird ein Postfach, auf das die Richtlinie angewendet wird, nicht inaktiv, wenn das Postfach gelöscht wird.
 
@@ -58,7 +58,7 @@ Sie können auch eine Office 365-Aufbewahrungsrichtlinie speziell für inaktive 
     
 - Es ist eine gute Möglichkeit, inaktive Postfächer zu identifizieren, da die Aufbewahrungsrichtlinie nur auf inaktive Postfächer angewendet wird.
     
-- Sie können die Aufbewahrungsrichtlinie, die inaktiven Postfächern in Ihrer Organisation zugewiesen ist, schnell identifizieren. Auf diese Weise können Sie die Aufbewahrungseinstellungen (oder Löschungen) bei Bedarf einfacher ändern. Außerdem ist es einfacher, ein inaktives Postfach endgültig zu löschen, da Sie es mithilfe des Security #a0 Compliance Center aus der Richtlinie entfernen können. Andernfalls müssen Sie Exchange Online PowerShell verwenden, um ein Beweissicherungsverfahren aus einem inaktiven Postfach zu entfernen, oder verwenden Sie Security #a0 Compliance Center PowerShell, um ein inaktives Postfach von einer organisationsweiten Office 365-Aufbewahrungsrichtlinie auszuschließen.
+- Sie können die Aufbewahrungsrichtlinie, die inaktiven Postfächern in Ihrer Organisation zugewiesen ist, schnell identifizieren. Auf diese Weise können Sie die Aufbewahrungseinstellungen (oder Löschungen) bei Bedarf einfacher ändern. Außerdem ist es einfacher, ein inaktives Postfach endgültig zu löschen, da Sie es mithilfe des Security & Compliance Center aus der Richtlinie entfernen können. Andernfalls müssen Sie Exchange Online PowerShell verwenden, um ein Beweissicherungsverfahren aus einem inaktiven Postfach zu entfernen, oder verwenden Sie Security & Compliance Center PowerShell, um ein inaktives Postfach von einer organisationsweiten Office 365-Aufbewahrungsrichtlinie auszuschließen.
     
 - Wenn Sie eine Office 365-Aufbewahrungsrichtlinie speziell für inaktive Postfächer erstellen, können Sie der Richtlinie maximal 1.000 Postfächer hinzufügen. Wenn Sie eine große Organisation sind, müssen Sie möglicherweise mehr als eine Office 365-Aufbewahrungsrichtlinie erstellen, die für inaktive Postfächer verwendet werden soll.
 
@@ -67,7 +67,7 @@ Sie können auch eine Office 365-Aufbewahrungsrichtlinie speziell für inaktive 
   
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Inaktive Postfächer und eDiscovery-Fallspeicher
 
-Wenn ein Haltestatus, der einem eDiscovery-Fall im Security #a0 Compliance Center zugeordnet ist, in einem Postfach gespeichert wird und das Postfach oder das Office 365 Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Die Verwendung von eDiscovery-Fallspeichern zum Festlegen eines Postfachs als inaktiv wird jedoch nicht empfohlen. Grund hierfür ist, dass eDiscovery-Fälle für bestimmte zeitgebundene Fälle im Zusammenhang mit einem rechtlichen Problem vorgesehen sind. An einem bestimmten Punkt wird ein Rechtsfall wahrscheinlich enden, die dem Fall zugeordneten Speicherverfahren werden entfernt, und der eDiscovery-Fall wird geschlossen. Wenn ein für ein inaktives Postfach festgelegtes Speicherverfahren einem eDiscovery-Fall zugeordnet ist und das Speicherverfahren anschließend aufgehoben oder der eDiscovery-Fall geschlossen (oder gelöscht) wird, wird das inaktive Postfach endgültig gelöscht. Außerdem können Sie keinen zeitbasierten eDiscovery-Haltebereich erstellen. Das bedeutet, dass Inhalte in einem inaktiven Postfach für immer aufbewahrt werden oder bis das Archiv entfernt wird und das inaktive Postfach gelöscht wird. Daher empfehlen wir die Verwendung eines Beweissicherungsverfahrens oder einer Office 365-Aufbewahrungsrichtlinie für inaktive Postfächer.
+Wenn ein Haltestatus, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, in einem Postfach gespeichert wird und das Postfach oder das Office 365 Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Die Verwendung von eDiscovery-Fallspeichern zum Festlegen eines Postfachs als inaktiv wird jedoch nicht empfohlen. Grund hierfür ist, dass eDiscovery-Fälle für bestimmte zeitgebundene Fälle im Zusammenhang mit einem rechtlichen Problem vorgesehen sind. An einem bestimmten Punkt wird ein Rechtsfall wahrscheinlich enden, die dem Fall zugeordneten Speicherverfahren werden entfernt, und der eDiscovery-Fall wird geschlossen. Wenn ein für ein inaktives Postfach festgelegtes Speicherverfahren einem eDiscovery-Fall zugeordnet ist und das Speicherverfahren anschließend aufgehoben oder der eDiscovery-Fall geschlossen (oder gelöscht) wird, wird das inaktive Postfach endgültig gelöscht. Außerdem können Sie keinen zeitbasierten eDiscovery-Haltebereich erstellen. Das bedeutet, dass Inhalte in einem inaktiven Postfach für immer aufbewahrt werden oder bis das Archiv entfernt wird und das inaktive Postfach gelöscht wird. Daher empfehlen wir die Verwendung eines Beweissicherungsverfahrens oder einer Office 365-Aufbewahrungsrichtlinie für inaktive Postfächer.
   
 Weitere Informationen zu eDiscovery-Fällen und-Haltestatus finden Sie unter [eDiscovery Cases](ediscovery-cases.md).
   

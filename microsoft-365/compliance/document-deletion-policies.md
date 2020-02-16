@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Möglicherweise ist es erforderlich, dass Ihre Organisation Dokumente für einen bestimmten Zeitraum aufbewahrt, da Compliance, rechtliche oder andere geschäftliche Anforderungen erfüllt sind. Wenn Ihre Organisation Dokumente jedoch länger als erforderlich aufrecht erhält, erstellen Sie unnötiges rechtliches Risiko. Mit einer Richtlinie zum Löschen von Dokumenten können Sie das Risiko proaktiv verringern, indem Sie Dokumente in einer Website nach einem bestimmten Zeitraum löschen (beispielsweise können Sie fünf Jahre nach dem Erstellen der Dokumente die OneDrive für Unternehmen Websites von Benutzern löschen.
-ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595210"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075207"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Übersicht über Dokumentlöschrichtlinien
 
@@ -40,7 +40,7 @@ Dokument Löschungsrichtlinien sind leistungsfähig und dennoch flexibel – Sie
     
 Sie erstellen und verwalten Dokument Löschungsrichtlinien mithilfe des Dokument Löschrichtlinien Centers. Alternativ können Sie das Richtlinien Center manuell erstellen, indem Sie [die Websitesammlung erstellen](https://go.microsoft.com/fwlink/p/?LinkID=404342) und auf der Registerkarte **Enterprise** die Option **Compliance Policy Center** auswählen. Jeder Mandant kann nur ein Dokument Löschrichtlinien Center haben. 
   
-![Startseite des Dokument Löschrichtlinien Centers](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Startseite des Dokument Löschrichtlinien Centers](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="when-to-use-document-deletion-policies"></a>Zeitpunkt für die Verwendung von Dokumentlöschrichtlinien
 
@@ -56,7 +56,7 @@ Die einzelnen Richtlinientypen eignen sich am besten für einen bestimmten Websi
   
 Dokument Löschungsrichtlinien ersetzen keine Datensatzverwaltung oder Informationsverwaltungsrichtlinien, die am besten mit strukturierten Daten und Inhaltstypen funktionieren. Stattdessen empfiehlt sich, Dokumentlöschrichtlinien zu verwenden, wenn Sie allgemein das automatische Löschen von unstrukturierten Daten, wie z. B. OneDrive for Business-Websites und Teamwebsites, verwalten müssen.
   
-![Diagramm mit Aufbewahrungsoptionen für Websiteinhalt](media/IP-Retention-policies-for-site-content.png)
+![Diagramm mit Aufbewahrungsoptionen für Websiteinhalt](../media/IP-Retention-policies-for-site-content.png)
   
 Wenn Sie eine Dokumentlöschrichtlinie auf eine Website anwenden, die bereits Inhaltstyprichtlinien oder Informationsverwaltungsrichtlinien für eine Liste oder Bibliothek verwendet, werden diese Richtlinien ignoriert, solange die Dokumentlöschrichtlinie aktiv ist. Das heißt, für eine Website dürfen nur Richtlinien verwendet werden, die für strukturierten oder unstrukturierten Inhalt bestimmt sind, aber nicht beides. Weitere Informationen dazu, wie Dokumentlöschrichtlinien andere Richtlinien außer Kraft setzen, finden Sie unter [Apply or remove a document deletion policy for a site](apply-or-remove-a-document-deletion-policy-for-a-site.md).
   
@@ -74,13 +74,13 @@ Eine Dokumentlöschrichtlinie enthält mindestens eine Löschregel, die Folgende
     
 Wenn eine Richtlinie mehr als eine Regel enthält, können Websitebesitzer die Regel auswählen, die sich am besten für ihren Inhalt eignet.
   
-![Seite "neue Löschregel"](media/IP-New-deletion-rule.png)
+![Seite "neue Löschregel"](../media/IP-New-deletion-rule.png)
   
 ## <a name="policies-and-assignments"></a>Richtlinien und Zuweisungen
 
 Nachdem Sie eine Dokument Löschrichtlinie erstellt haben, können Sie Sie einer websitesammlungsvorlage zuweisen, beispielsweise können Sie der OneDrive für Unternehmen Vorlage eine Richtlinie zuweisen, sodass Sie die OneDrive-Website jedes Benutzers enthält. Wenn Sie eine Richtlinie einer websitesammlungsvorlage zuweisen, gilt dies für alle Websitesammlungen, die bereits aus dieser Vorlage erstellt wurden, sowie für zukünftige Websitesammlungen, die in Zukunft aus dieser Vorlage erstellt werden.
   
-![Auswählen einer Vorlagenseite mit OneDrive-Option](media/IP-Choose-a-template.png)
+![Auswählen einer Vorlagenseite mit OneDrive-Option](../media/IP-Choose-a-template.png)
   
 Sie können außerdem einer bestimmten Websitesammlung eine Richtlinie zuweisen. Dadurch werden alle Richtlinien, die dieser Vorlage für Websitesammlung bereits zugewiesen wurden, außer Kraft gesetzt. Sie können zum Beispiel der Teamwebsitevorlage Richtlinien zuweisen, sie dann aber außer Kraft setzen, indem Sie einen anderen Satz von Richtlinien auf eine bestimmte Websitesammlung anwenden, die aus dieser Vorlage erstellt wurde.
   
@@ -106,7 +106,7 @@ Die grundlegende Beziehung ist:
   
 Einer Websitesammlung oder einer websitesammlungsvorlage kann mindestens eine Richtlinie zugewiesen sein, und jede dieser Richtlinien kann eine oder mehrere Regeln haben. Es kann jedoch nur eine Richtlinie pro Standort aktiv sein, und es kann immer nur eine Löschregel für die Bibliotheken innerhalb der Website aktiv sein.
   
-![Diagramm mit Beziehung zwischen Richtlinien](media/IP-Two-policies-four-rules.png)
+![Diagramm mit Beziehung zwischen Richtlinien](../media/IP-Two-policies-four-rules.png)
   
 ## <a name="document-deletion-policies-are-inherited"></a>Dokumentlöschrichtlinien werden vererbt.
 
