@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 15c507cd900d339b1de27389647e9f78c0aac4a6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9c978144df9e254ac3072e3d0d2ed4a0403fad43
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601602"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081552"
 ---
-# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="9b06f-102">Überprüfen von Case-Daten in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="9b06f-102">Review case data in Advanced eDiscovery</span></span>
+# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="622e6-102">Überprüfen von Case-Daten in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="622e6-102">Review case data in Advanced eDiscovery</span></span>
 
 
-<span data-ttu-id="9b06f-103">Bald verfügbar</span><span class="sxs-lookup"><span data-stu-id="9b06f-103">Coming soon</span></span>
+<span data-ttu-id="622e6-103">Bald verfügbar</span><span class="sxs-lookup"><span data-stu-id="622e6-103">Coming soon</span></span>
