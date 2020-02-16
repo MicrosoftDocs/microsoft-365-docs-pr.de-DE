@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ab7e48eaf582dbf6bc26d0393d26fea433da2253
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58fd70ce62fc2e15f703063d1f8efe62df02c57d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600442"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087974"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 

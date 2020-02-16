@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600182"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087608"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -48,13 +48,13 @@ Die einzigartige produktübergreifende Schicht von Microsoft Threat Protection e
 - Automatisieren der Antwort auf Kompromisse durch Auslösen der Selbstheilung für Betroffene Objekte durch automatische Behebung
 - Aktivieren von Sicherheitsteams für die Durchführung detaillierter und effektiver Bedrohungen bei der Suche über Endpunkt-und Office-Daten
 
-![Seite "Abbildung der Vorfall Übersicht"](../images/overview-incident.png) <br>
+![Seite "Abbildung der Vorfall Übersicht"](../../media/overview-incident.png) <br>
 Produktübergreifender Vorfall (Übersicht)
 
-![Bild der Warnungs Warteschlange](../images/incident-list.png)<br>
+![Bild der Warnungs Warteschlange](../../media/incident-list.png)<br>
 Alle zusammengehörigen Warnungen in allen Suite-Produkten korrelieren in einem einzelnen Vorfall (Warnungsansicht)
 
-![Bild der Vorfall Warteschlange](../images/advanced-hunting.png)<br>
+![Bild der Vorfall Warteschlange](../../media/advanced-hunting.png)<br>
 Abfragebasierte Suche über die Rohdaten von e-Mail-und Endpunkt Daten
 
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 56f584ce59f652767d0096e0b0e1056f88b7b14a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d43584ed9af9a0ac6154d593f4517d0a4152023
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600392"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087964"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 

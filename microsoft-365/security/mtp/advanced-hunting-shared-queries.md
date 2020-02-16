@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6e5dd8d1d80d08ed808bc607fcc7aba8a390a9ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6f6468117f73d6cf7079ce50e8ea951422bfc073
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600312"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087429"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Verwenden von freigegebenen Abfragen bei der erweiterten Suche
 
@@ -33,7 +33,7 @@ ms.locfileid: "41600312"
 
 [Erweiterte Suche](advanced-hunting-overview.md)-Abfragen können von Benutzern derselben Organisation geteilt werden. Sie können öffentlich freigegebene Abfragen auch auf GitHub finden. Mit diesen Abfragen können Sie bestimmte Bedrohungsszenarien schnell verfolgen, ohne dass Sie Abfragen von Grund auf neu erstellen müssen.
 
-![Abbildung freigegebener Abfragen](../images/advanced-hunting-shared-queries.png)
+![Abbildung freigegebener Abfragen](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>Speichern, Ändern und Freigeben einer Abfrage
 Sie können eine neue oder vorhandene Abfrage so speichern, dass Sie nur für Sie zugänglich oder für andere Benutzer in Ihrer Organisation freigegeben ist. 
@@ -44,7 +44,7 @@ Sie können eine neue oder vorhandene Abfrage so speichern, dass Sie nur für Si
     
 3. Geben Sie einen Namen für die Abfrage ein. 
 
-   ![Abbildung des Speicherns einer Abfrage](../images/advanced-hunting-save-query.png)
+   ![Abbildung des Speicherns einer Abfrage](../../media/advanced-hunting-save-query.png)
 
 4. Wählen Sie den Ordner aus, in dem Sie die Abfrage speichern möchten.
     - **Freigegebene Abfragen** – für alle Benutzer in Ihrer Organisation freigegeben
@@ -55,7 +55,7 @@ Sie können eine neue oder vorhandene Abfrage so speichern, dass Sie nur für Si
 ## <a name="delete-or-rename-a-query"></a>Löschen oder Umbenennen einer Abfrage
 1. Klicken Sie mit der rechten Maustaste auf eine Abfrage, die Sie umbenennen oder löschen möchten.
 
-    ![Abbildung des Löschens einer Abfrage](../images/advanced_hunting_delete_rename.png)
+    ![Abbildung des Löschens einer Abfrage](../../media/advanced_hunting_delete_rename.png)
 
 2. Wählen Sie **Löschen** aus, und bestätigen Sie Löschung. Oder wählen Sie **Umbenennen** aus und geben Sie einen neuen Namen für die Abfrage ein.
 

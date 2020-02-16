@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855384"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066849"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -59,25 +59,25 @@ Jede Branche verfügt auch über ihren eigenen Satz von spezialisierten Vorschri
 - **Vertraulicher Schutz**: einige Kunden verfügen über eine Teilmenge von Daten, die auf höheren Ebenen geschützt werden müssen, oder Sie erfordern möglicherweise, dass alle Daten auf einer höheren Ebene geschützt werden. Sie können den verstärkten Schutz auf alle oder bestimmte Datensätze in Ihrer Office 365-Umgebung anwenden. Es wird empfohlen, Identitäten und Geräte mit Zugriff auf sensible Daten mit einem vergleichbaren Grad an Sicherheit auszustatten.  
 - **Stark reguliert**: einige Organisationen haben möglicherweise eine kleine Menge an Daten, die streng klassifiziert, consititutes-Geschäftsgeheimnisse oder regulierte Daten sind. Microsoft stellt Funktionen bereit, die es Organisationen ermöglichen, diese Anforderungen zu erfüllen, wie etwa den zusätzlichen Schutz von Identitäten und Geräten.
 
-![Security Cone – alle Kunden #a0 einige Kunden #a1 bestimmte Kunden. Umfassende Anwendung für eine bestimmte Anwendung](../images/M365-idquality-threetiers.png)
+![Security Cone – alle Kunden > einige Kunden > bestimmte Kunden. Umfassende Anwendung für eine bestimmte Anwendung](../media/M365-idquality-threetiers.png)
 
 In diesem Leitfaden erfahren Sie, wie Sie den Schutz von Identitäten und Geräten für jede dieser Schutzebenen implementieren. Verwenden Sie diese Anleitung als Ausgangspunkt für Ihre Organisation, und passen Sie die Richtlinien an die spezifischen Anforderungen Ihrer Organisation an.
 
 Es ist wichtig, konsistente Schutzebenen für Ihre Daten, Identitäten und Geräte zu verwenden. Wenn Sie beispielsweise diesen Leitfaden implementieren, müssen Sie Ihre Daten auf vergleichbaren Ebenen schützen. Diese Architekturmodelle zeigen Ihnen, welche Funktionen vergleichbar sind.
 
 **Identität- und Geräteschutz für Office 365**<br/>
-![Miniaturansicht für Poster "Identitäts-und Geräteschutz für Office 365"](../images/O365_Identity_device_protection_thumb.png)<br/>
+![Miniaturansicht für Poster "Identitäts-und Geräteschutz für Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Lösungen zum Schutz von Dateien in Office 365**<br/>
-![Miniaturansicht für Poster "Dateischutz Lösungen in Office 365"](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![Miniaturansicht für Poster "Dateischutz Lösungen in Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>Kompromisse in den Bereichen Sicherheit und Produktivität
 
 Die Implementierung einer Sicherheitsstrategie erfordert Kompromisse zwischen Sicherheit und Produktivität. Es ist hilfreich, zu bewerten, wie sich jede Entscheidung auf das Gleichgewichtzwischen Sicherheit, Funktionalität und Benutzerfreundlichkeit auswirkt.
 
-![Security Triad Balancing Sicherheit, Funktionalität und Benutzerfreundlichkeit.](media/policies-configurations/security-triad.png)
+![Security Triad Balancing Sicherheit, Funktionalität und Benutzerfreundlichkeit.](../media/policies-configurations/security-triad.png)
 
 Die bereitgestellten Empfehlungen basieren auf folgenden Grundsätzen:
 

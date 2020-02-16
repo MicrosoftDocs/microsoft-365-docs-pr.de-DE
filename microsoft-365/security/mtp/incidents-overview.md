@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c0d3ea8cb4d8bb45cb51b1c71127c0f2bdb4827
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95934d9884328d4311abbd0f29b96e46e0c06894
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600222"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087629"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Übersicht über Vorfälle in Microsoft Threat Protection
 

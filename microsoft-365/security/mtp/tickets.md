@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 26e227b4b1e8047ca962ca9e65b139bacae55e03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599992"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086930"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Verwalten von Tickets über ServiceNow
 
@@ -45,7 +45,7 @@ Wenn Sie das Microsoft 365 Security Center mit ServiceNow verbinden, erhält Mic
 * Name der ServiceNow-Instanz
 * ServiceNow-Client-ID
 * Geheimer ServiceNow-Client
-* ServiceNow-Zugriffs #a0 Aktualisierungstoken
+* ServiceNow-Zugriffs & Aktualisierungstoken
 
 Wenn Sie ein ServiceNow-Ticket aus dem Microsoft 365 Security Center erstellen, werden die folgenden Daten an ServiceNow gesendet:
 
@@ -61,7 +61,7 @@ Wenn Sie ein ServiceNow-Ticket aus dem Microsoft 365 Security Center erstellen, 
 
 Navigieren Sie zur Microsoft 365-Sicherheitscenter-Startseite, um die ServiceNow-Verbindungskarte anzuzeigen.
 
-![Verwenden Sie ServiceNow](../images/do-you-use-servicenow-250.png)
+![Verwenden Sie ServiceNow](../../media/do-you-use-servicenow-250.png)
 
 Wählen Sie "mit ServiceNow verbinden" aus, um die ServiceNow-Setup Seite zu öffnen. Befolgen Sie die Anweisungen, um die Microsoft 365-Connector-APP zu autorisieren.
 
@@ -74,7 +74,7 @@ Nachdem Sie die Anweisungen befolgt und die Verbindung autorisiert haben, zeigen
 
 Nachdem die Integration eingerichtet wurde, erstellen Sie ServiceNow-Aufgaben basierend auf bestimmten Microsoft Secure Score-Verbesserungs Aktionen. Wechseln Sie zu einer Verbesserungs Aktion in Secure Score im Microsoft 365 Security Center-Portal, und wählen Sie das Symbol "freigeben" aus. Eine der Dropdownoptionen ist ServiceNow.
 
-![ServiceNow-Freigabe in sicherer Punktzahl](../images/servicenow-share.png)
+![ServiceNow-Freigabe in sicherer Punktzahl](../../media/servicenow-share.png)
 
 Es wird eine Aufgabe generiert, in der Sie die Priorität festlegen und den Namen, die Beschreibung oder das Fälligkeitsdatum bearbeiten können. Wenn alle erforderlichen Felder ausgefüllt sind, senden Sie die Aufgabe an ServiceNow.
 
@@ -84,7 +84,7 @@ Die Aufgabe ist in ServiceNow als Microsoft 365 Sicherheits-und Konfigurations �
 
 Nachdem ServiceNow Change Management-und Incident Management-Tickets erstellt wurden, werden diese auf Karten auf der Startseite von Microsoft 365 Security Center angezeigt. Auf diesen Karten können Sie ein Ticket erstellen, alle Tickets anzeigen oder die ServiceNow-Konfiguration verwalten.
 
-![ServiceNow Change Management-Tickets](../images/change-management-375.png)  ![ServiceNow Incident Management Tickets](../images/incident-management-375.png)
+![ServiceNow Change Management-Tickets](../../media/change-management-375.png)  ![ServiceNow Incident Management Tickets](../../media/incident-management-375.png)
 
 Um die ServiceNow-Integration in das Microsoft 365 Security Center erneut zu überwachen oder zu verwalten, wählen Sie auf beiden Karten die Option **Manage ServiceNow Configuration** aus. Entfernen Sie von dort die aktuelle ServiceNow-Verbindung, und passen Sie die Ticket Statusnamen an.
 
@@ -107,9 +107,9 @@ Legen Sie die Tabellen Konfigurationen "Anwendungs Registrierungen" auf "Standar
 * Zugänglich von = alle Anwendungsbereiche
 * Can read = Kontrollkästchen aktiviert
 
-### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Überprüfen der OAuth-Entität, die für Microsoft 365 Security #a0 Compliance Connector erstellt wurde
+### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Überprüfen der OAuth-Entität, die für Microsoft 365 Security & Compliance Connector erstellt wurde
 
-Wechseln Sie zur Tabelle Anwendungs Registrierungstabellen (**Menü #a0 System OAuth #a1 Anwendungsregistrierung**) in ServiceNow, und suchen Sie nach der von Ihnen erstellten OAuth-Entität mit dem Namen, den Sie Ihr zugewiesen haben.
+Wechseln Sie zur Tabelle Anwendungs Registrierungstabellen (**Menü > System OAuth > Anwendungsregistrierung**) in ServiceNow, und suchen Sie nach der von Ihnen erstellten OAuth-Entität mit dem Namen, den Sie Ihr zugewiesen haben.
 
 ### <a name="logging-in-as-the-integration-user"></a>Anmelden als Integrationsbenutzer
 
@@ -121,9 +121,9 @@ Bevor Sie die Verbindung zwischen dem Microsoft 365 Security Center und ServiceN
 4. Wählen Sie auf der Seite ServiceNow die Option **zulassen** aus, die fragt, ob der Security + Compliance-Konnektor eine Verbindung mit Ihrem ServiceNow-Konto herstellen kann.
 5. Fahren Sie mit den Setupschritten fort.
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Überprüfen des Integrations Benutzers, der mit der Installationsprüfliste für Microsoft 365 Security #a0 Compliance Connector erstellt wurde
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Überprüfen des Integrations Benutzers, der mit der Installationsprüfliste für Microsoft 365 Security & Compliance Connector erstellt wurde
 
-Wechseln Sie zu Benutzertabelle **(Menü #a0 Benutzerverwaltung #a1 Benutzer**) in ServiceNow, und suchen Sie den von Ihnen erstellten Integrationsbenutzer mit dem Namen, den Sie ihm zugewiesen haben.
+Wechseln Sie zu Benutzertabelle **(Menü > Benutzerverwaltung > Benutzer**) in ServiceNow, und suchen Sie den von Ihnen erstellten Integrationsbenutzer mit dem Namen, den Sie ihm zugewiesen haben.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Ihr Unternehmen verfügt über ein einmaliges Anmelden, das verhindert, dass Sie sich über das Microsoft 365 Security Center mit ServiceNow verbinden.
 

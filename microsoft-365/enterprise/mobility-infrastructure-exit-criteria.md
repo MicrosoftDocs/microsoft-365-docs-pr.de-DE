@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e8013426983584783488e6f937f8ba5b02d7a1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600882"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066786"
 ---
 # <a name="mobile-device-management-infrastructure-exit-criteria"></a>Beendigungskriterien für die Infrastruktur der mobilen Geräteverwaltung
 
-![Phase 5: Verwaltung mobiler Geräte](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![Phase 5: Verwaltung mobiler Geräte](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *Dies gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
@@ -42,4 +42,4 @@ Ihre Geräte sind in InTune registriert und mit den entsprechenden Richtlinien k
 
 |||
 |:-------|:-----|
-|![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Wenn Sie die Phasen für die End-to-End-Bereitstellung von Microsoft 365 Enterprise ausführen, ist Ihre nächste Phase der [Informationsschutz](infoprotect-infrastructure.md). |
+|![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Wenn Sie die Phasen für die End-to-End-Bereitstellung von Microsoft 365 Enterprise ausführen, ist Ihre nächste Phase der [Informationsschutz](infoprotect-infrastructure.md). |

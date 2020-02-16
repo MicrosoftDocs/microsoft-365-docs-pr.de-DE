@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600382"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087493"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection
 
@@ -61,14 +61,14 @@ Klicken Sie mit der rechten Maustaste auf einen Wert im Resultset, um die Abfrag
 - Ausschließen des ausgewählten Werts aus der Abfrage (`!=`)
 - Abrufen weiterer erweiterter Operatoren zum Hinzufügen des Werts zu Ihrer Abfrage, z. B. `contains`, `starts with` und `ends with` 
 
-![Abbildung eines erweiterten Suchresultsets in Microsoft Defender ATP](../images/advanced-hunting-results-filter.png)
+![Abbildung eines erweiterten Suchresultsets in Microsoft Defender ATP](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtern der Abfrageergebnisse
 Die rechts angezeigten Filter bieten eine Zusammenfassung des Resultsets. Jede Spalte verfügt über einen eigenen Abschnitt, in dem die für diese Spalte und die Anzahl der Instanzen eindeutigen Werte aufgelistet werden.
 
 Verfeinern Sie Ihre Abfrage, indem Sie die Schaltflächen „+“ oder „-“ für die Werte verwenden, die Sie ein- bzw. ausschließen möchten, und dann **Abfrage ausführen** auswählen.
 
-![Abbildung eines erweiterten Suchfilters](../images/advanced-hunting-filter.png)
+![Abbildung eines erweiterten Suchfilters](../../media/advanced-hunting-filter.png)
 
 Sobald der Filter zum Ändern der Abfrage angewendet und die Abfrage ausgeführt wurde, werden die Ergebnisse entsprechend aktualisiert.
 

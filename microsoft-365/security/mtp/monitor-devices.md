@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: cecc84c1df3ccba3eea75d29aa5f293909d5d51f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600162"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087811"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Geräteüberwachung und-Berichterstellung im Microsoft 365 Security Center
 
@@ -35,7 +35,7 @@ Jede Microsoft Defender-ATP-Warnung weist einen entsprechenden Schweregrad (hoch
 
 Verwenden Sie die **Geräte Warnungs schwere** Karte, um sich speziell auf Warnungen zu konzentrieren, die gravierender sind und möglicherweise sofort reagieren müssen. Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
 
-![Geräte Warnungen-Schweregrad Karte](../images/device-alerts-severity.png)
+![Geräte Warnungen-Schweregrad Karte](../../media/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>Grundlegendes zu Warnungs Quellen
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP nutzt Daten aus einer breiten Palette von Sicherheitssens
 
 Die Karte für die **Erkennung von Geräte Warnungen** zeigt die Verteilung von Benachrichtigungen nach Quelle an. Diese Karte kann Ihnen dabei helfen, Aktivitäten im Zusammenhang mit bestimmten Quellen, insbesondere ihren benutzerdefinierten Quellen, nachzuverfolgen. Sie können dies auch verwenden, um sich auf Warnungen zu konzentrieren, die von Sensoren stammen, die nicht so konfiguriert sind, dass böswillige Aktivitäten oder Komponenten automatisch blockiert werden.
 
-![Geräte Warnungs Erkennungsquellen-Karte](../images/device-alert-detection-sources.png)
+![Geräte Warnungs Erkennungsquellen-Karte](../../media/device-alert-detection-sources.png)
 
 Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
 
@@ -53,13 +53,13 @@ Microsoft Defender ATP sortiert jede Warnung in eine Kategorie, die eine bestimm
 
 Die Karte **Bedrohungskategorien für Geräte** zeigt die Verteilung von Warnungen in diesen Kategorien an. Sie können diese Informationen verwenden, um Bedrohungsaktivitäten zu identifizieren, wie beispielsweise Diebstahlversuche von Anmeldeinformationen, die im Vergleich zu Social Engineering-versuchen eine höhere Auswirkung haben können. Sie können diese Informationen auch verwenden, um potenziell destruktive Bedrohungen wie Ransomware zu überwachen.
 
-![Geräte Bedrohungskategorien-Karte](../images/device-threat-categories.png)
+![Geräte Bedrohungskategorien-Karte](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>Überwachen aktiver Warnungen
 
 Die **Geräte Warnungsstatus** Karte gibt die Anzahl der Warnungen an, die nicht aufgelöst wurden und möglicherweise beachtet werden müssen. Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
 
-![Geräte Warnungsstatus Karte](../images/device-alert-status.png)
+![Geräte Warnungsstatus Karte](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Überwachen der Klassifizierung der aufgelösten Warnungen
 
@@ -72,7 +72,7 @@ Die **Geräte Warnungs Klassifizierungs** Karte zeigt an, ob Ihre aufgelösten W
 
 Hinweis: in einigen Fällen stehen Klassifizierungsinformationen für bestimmte Warnungen nicht zur Verfügung.
 
-![Geräte Warnungs-Klassifikations Karte](../images/device-alert-classification.png)
+![Geräte Warnungs-Klassifikations Karte](../../media/device-alert-classification.png)
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>Überwachen der Ermittlung von aufgelösten Warnungen
 
@@ -89,13 +89,13 @@ Die Karte für die **Geräte Warnungs Ermittlung** zeigt die für jede Warnung v
 
 Auf dieser Karte können Sie weitere Informationen im Microsoft Defender Security Center anzeigen.
 
-![Karte für die Geräte Warnungs Ermittlung](../images/device-alert-determination.png)
+![Karte für die Geräte Warnungs Ermittlung](../../media/device-alert-determination.png)
 
 ### <a name="understand-which-devices-are-at-risk"></a>Grundlegendes zu den gefährdeten Geräten
 
 Der **Geräteschutz** zeigt die Risikostufe für Geräte an. Die Risikostufe basiert auf Faktoren wie dem Typ und dem Schweregrad von Warnungen auf dem Gerät.
 
-![Geräteschutz Karte](../images/device-protection.png)
+![Geräteschutz Karte](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Überwachen und melden des Status von InTune-verwalteten Geräten
 
@@ -114,43 +114,43 @@ Daten zu InTune-registrierten Geräten umfassen Folgendes:
 
 Die **Gerätekompatibilität** zeigt, wie viele Geräte, die in InTune registriert sind, den Konfigurationsrichtlinien entsprechen.
 
-![Geräte Kompatibilitäts Karte](../images/device-compliance.png)
+![Geräte Kompatibilitäts Karte](../../media/device-compliance.png)
 
 ### <a name="discover-devices-with-malware-detections"></a>Erkennen von Geräten mit Malwareerkennungen
 
 **Erkennungen von Geräte-Schadsoftware** liefern die Anzahl von InTune-registrierten Geräten mit Schadsoftware, die nicht vollständig aufgelöst wurden. Dies kann daran liegen, dass ausstehende Aktionen, ein Neustart, ein vollständiger Scan, manuelle Benutzeraktionen oder die Korrekturaktion nicht erfolgreich abgeschlossen wurde.
 
-![Karte für die Erkennung von Geräte-Schadsoftware](../images/device-malware-detections.png)
+![Karte für die Erkennung von Geräte-Schadsoftware](../../media/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>Grundlegendes zu den erkannten Malwaretypen
 
 **Typen von Schadsoftware auf Geräten** zeigen verschiedene Arten von Schadsoftware auf, die auf Geräten erkannt wurden, die in InTune registriert sind. Sie können jeden Typ im Microsoft 365 Security Center untersuchen.
 
-![Arten von Schadsoftware auf Geräte Karte](../images/types-of-malware-on-devices.png)
+![Arten von Schadsoftware auf Geräte Karte](../../media/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Grundlegendes zur spezifischen auf Ihren Geräten erkannten Malware
 
 **Malware auf Geräten** stellt eine Liste der auf Ihren Geräten erkannten spezifischen Malware zur Verfügung.
 
-![Malware auf Geräte Karte](../images/malware-on-devices.png)
+![Malware auf Geräte Karte](../../media/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>Verstehen, welche Geräte die meisten Schadsoftware aufweisen
 
 **Geräte mit Malwareerkennungen** zeigen, welche Geräte die meisten Malwareerkennungen aufweisen. im Microsoft 365 Security Center können Sie untersuchen, ob Schadsoftware aktiv ist, wer das Gerät verwendet und wie der Verwaltungsstatus in InTune.
 
-![Geräte mit Schadsoftware-Erkennungskarte](../images/devices-with-malware-detections.png)
+![Geräte mit Schadsoftware-Erkennungskarte](../../media/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Verstehen, welche Benutzer Geräte mit den meisten Schadsoftware besitzen
 
 **Benutzer mit Malwareerkennungen** zeigen Benutzern Geräte mit den meisten Malwareerkennungen. Im Microsoft 365 Security Center können Sie sehen, wie viele Geräte jedem Benutzer zugewiesen sind, und weitere Informationen zu jedem Gerät und dem Typ der Schadsoftware.
 
-![Benutzer mit der Malware Erkennungskarte](../images/users-with-malware-detections.png)
+![Benutzer mit der Malware Erkennungskarte](../../media/users-with-malware-detections.png)
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Überwachen und Verwalten der Bereitstellung und Erkennung von ASR-Regeln
 
 [Regeln für die Angriffsflächen Reduzierung (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) verhindern, dass Aktionen und apps, die in der Regel von Exploit sucht-Schadsoftware verwendet werden, Geräte infizieren. Mit diesen Regeln wird gesteuert, wann und wie ausführbare Dateien ausgeführt werden. So können Sie beispielsweise verhindern, dass JavaScript oder VBScript eine heruntergeladene ausführbare Datei startet, Win32-API-Aufrufe aus Office-Makros blockiert oder Prozesse blockiert, die von USB-Laufwerken ausgeführt werden.
 
-![Angriffsfläche reduziert Karte](../images/attack-surface-reduction-rules.png)
+![Angriffsfläche reduziert Karte](../../media/attack-surface-reduction-rules.png)
 
 Die Karte **Regeln zur Verringerung der Angriffsfläche** bietet einen Überblick über die Bereitstellung von Regeln auf Ihren Geräten.
 
@@ -166,7 +166,7 @@ Der untere Teil dieser Karte zeigt die Einstellungen nach Regeln auf Ihren Gerä
 
 Wenn Sie detaillierte Informationen zu ASR-Regel Erkennungen in Ihrem Netzwerk anzeigen möchten, wählen Sie die Option **Erkennungen** auf der **Angriffsflächen Reduzierungs** Regelkarte anzeigen aus. Die Registerkarte **Erkennungen** auf der Seite detaillierter Bericht wird geöffnet.
 
-![Registerkarte "Erkennungen"](../images/detections-tab.png)
+![Registerkarte "Erkennungen"](../../media/detections-tab.png)
 
 Im Diagramm oben auf der Seite werden Erkennungen im Laufe der Zeit angezeigt, die entweder blockiert oder überwacht wurden. Die Tabelle am unteren Rand listet die aktuellsten Erkennungen auf. Verwenden Sie die folgenden Informationen in der Tabelle, um die Art der Erkennungen zu verstehen:
 
@@ -179,7 +179,7 @@ Im Diagramm oben auf der Seite werden Erkennungen im Laufe der Zeit angezeigt, d
 
 Navigieren Sie auf der Seite " **Regeln für Angriffsfläche verringern** " zur Registerkarte " **Konfiguration** ", um die Regeleinstellungen für einzelne Geräte zu überprüfen. Wählen Sie ein Gerät aus, um detaillierte Informationen dazu zu erhalten, ob sich jede Regel im Blockmodus, im Überwachungsmodus oder ganz deaktiviert befindet.
 
-![Registerkarte "Konfiguration"](../images/configuration-tab.png)
+![Registerkarte "Konfiguration"](../../media/configuration-tab.png)
 
 Microsoft InTune bietet Verwaltungsfunktionen für Ihre ASR-Regeln. Wenn Sie Ihre Einstellungen aktualisieren möchten, wählen Sie unter **configure Devices** in the Tab **Erste Schritte** aus, um die Geräteverwaltung in InTune zu öffnen.
 
@@ -192,7 +192,7 @@ Die Ausschlüsse werden in Microsoft InTune verwaltet, das Microsoft 365 Securit
 >[!NOTE]  
 >Das Tool analysiert Erkennungen nach allen Regeln für die Angriffs Oberflächenreduzierung, aber [nur einige Regeln unterstützen Ausschlüsse](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
 
-![Registerkarte "Ausschlüsse hinzufügen"](../images/add-exclusions-tab.png)
+![Registerkarte "Ausschlüsse hinzufügen"](../../media/add-exclusions-tab.png)
 
 In der Tabelle sind alle Dateinamen aufgeführt, die von den Regeln für Angriffs Oberflächenreduzierung erkannt wurden. Sie können Dateien auswählen, um die Auswirkungen zu überprüfen, die Sie ausschließen:
 

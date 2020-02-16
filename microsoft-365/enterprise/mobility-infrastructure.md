@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 6ada378d63e9a04bd820808ea8a1d93cd7690ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596842"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066761"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
-![Phase 5: Verwaltung mobiler Geräte](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5: Verwaltung mobiler Geräte](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Dieses Feature gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
@@ -84,7 +84,7 @@ Die Registrierung ist ein wichtiger Schritt bei der Verwendung von InTune. [Ger�
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: IOS-und Android-Geräteregistrierung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: IOS-und Android-Geräteregistrierung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ Der Artikel [apps hinzufügen](https://docs.microsoft.com/intune/apps/apps-add) 
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: Geräte Konformitätsrichtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: Geräte Konformitätsrichtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Schritt 6: Aktivieren der Kompatibilität und des bedingten Zugriffs
@@ -159,7 +159,7 @@ Erfahren Sie, wie IT-Experten bei Microsoft [Geräte mit EMS verwalten](https://
 
 Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber repräsentatives multinationales Unternehmen, [Ihre Infrastruktur für Mobile Geräteverwaltung](contoso-mdm.md) mit Microsoft 365 Cloud Services bereitgestellt hat.
 
-![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

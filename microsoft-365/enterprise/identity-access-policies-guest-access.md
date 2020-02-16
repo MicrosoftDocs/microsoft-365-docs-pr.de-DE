@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601052"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067452"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Richtlinien für das Zulassen von Gast-und externen B2B-Zugriff
 In diesem Artikel wird beschrieben, wie Sie die empfohlenen allgemeinen Richtlinien für Identitäts-und Geräte Zugriff anpassen können, um B2B-Konto Zugriff zu ermöglichen (Gast und externe Benutzer). Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md).
@@ -33,7 +33,7 @@ Durch die Bereitstellungeines Pfads für B2B-Benutzer zur Authentifizierung bei 
 
 Das folgende Diagramm veranschaulicht die allgemeinen Richtlinien für Identitäts-und Geräte Zugriff und gibt (mit einem Bleistiftsymbol) an, welche Richtlinien zum Schutz von Gast und externem Zugriff hinzugefügt oder aktualisiert werden sollen. 
 
-![Zusammenfassung der Richtlinienupdates zum Schützen des Gastzugriffs](../images/identity-access-ruleset-guest.png)
+![Zusammenfassung der Richtlinienupdates zum Schützen des Gastzugriffs](../media/identity-access-ruleset-guest.png)
 
 In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder aktualisieren oder neu erstellen müssen. Die allgemeinen Richtlinien verweisen auf die zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) .
 
@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder aktu
 
 Zum einschließen oder Ausschließen von Gästen und externen Benutzern in Regeln für bedingten Zugriff klicken Sie auf die Registerkarte einschließen oder ausschließen, und aktivieren Sie **alle Gäste und externe Benutzer**.
 
-![Bildschirmaufzeichnung von Steuerelementen zum Ausschließen von Gästen](../images/identity-access-exclude-guests-ui.png)
+![Bildschirmaufzeichnung von Steuerelementen zum Ausschließen von Gästen](../media/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>Weitere Informationen
 
