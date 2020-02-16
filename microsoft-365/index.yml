@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: f55a1404a76b55aab6ed6c0b46874fcc80dbbf87
-  ms.sourcegitcommit: d718a3a3ad293ca533ba355047a461b3ab6d4aa3
+  ms.openlocfilehash: 412cc9059aa3f533643ea37295a513ead1a05ed7
+  ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 02/10/2020
-  ms.locfileid: "41882880"
+  ms.lasthandoff: 02/15/2020
+  ms.locfileid: "42085364"
 highlightedContent:
   items:
   - title: Schulung für Administratoren und IT-Experten
@@ -27,7 +27,7 @@ highlightedContent:
   - title: Schulung für Endbenutzer
     itemType: learn
     url: https://support.office.com/modernworkplace
-  - title: Schulung für kleine Unternehmen
+  - title: Einrichten Ihres Unternehmens in der Cloud
     itemType: learn
     url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
   - title: Testen von Übungsanleitungen für IT-Experten
@@ -44,6 +44,9 @@ additionalContent:
   - title: Erhalten von Hilfe mit Microsoft 365
     summary: Wählen Sie eine Karte aus, um weitere Informationen zu Microsoft 365 zu erhalten.
     items:
+    - title: Microsoft 365 Admin Center
+      summary: Einrichten und verwalten Sie Ihre Office 365 und Microsoft 365 for Business und Enteprise subspcriptions.
+      url: https://docs.microsoft.com/office365/admin/admin-home/
     - title: Microsoft 365 Business
       summary: Für kleine und mittelständische Unternehmen entwickelt. Führen Sie Ihr Unternehmen mit der neuesten Version von Windows und Office-Apps wie Excel und Outlook aus. Nutzen Sie den Datenschutz und die Sicherheit, die auf alle Ihre Geschäfts Geräte ausgedehnt werden.
       url: ./business/index.yml
@@ -53,10 +56,10 @@ additionalContent:
     - title: Microsoft 365 Education
       summary: Entwickelt für Pädagogen zum Entsperren von Kreativität, zur Förderung der Zusammenarbeit und zur Bereitstellung einer einfachen und sicheren Erfahrung in einer einzigen, erschwinglichen Lösung, die für Bildungseinrichtungen entwickelt wurde.
       url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 Compliance
+    - title: Microsoft 365-Konformität
       summary: Unterstützen Sie Ihre Organisation beim Steuern von Informationen, beim Schutz vor Risiken und bei der Einhaltung gesetzlicher oder behördlicher Standards.
       url: ./compliance/index.yml
-    - title: Microsoft 365 Security
+    - title: Microsoft 365-Sicherheit
       summary: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihre Organisation besser auf Angriffsflächen schützen können.
       url: ./security/index.yml
     - title: Microsoft 365 für Kampagnen
