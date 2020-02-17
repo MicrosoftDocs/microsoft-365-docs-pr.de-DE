@@ -84,7 +84,7 @@ Die Registrierung ist ein wichtiger Schritt bei der Verwendung von InTune. [Ger�
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: IOS-und Android-Geräteregistrierung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: IOS-und Android-Geräteregistrierung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ Der Artikel [apps hinzufügen](https://docs.microsoft.com/intune/apps/apps-add) 
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: Geräte Konformitätsrichtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Umgebungs Anleitung: Geräte Konformitätsrichtlinien](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Schritt 6: Aktivieren der Kompatibilität und des bedingten Zugriffs

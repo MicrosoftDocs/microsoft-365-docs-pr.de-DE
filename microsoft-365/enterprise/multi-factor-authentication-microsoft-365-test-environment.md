@@ -40,7 +40,7 @@ Es gibt zwei Phasen zum Einrichten der mehrstufigen Authentifizierung für ein K
 
 3. Aktivieren und testen Sie die mehrstufige Authentifizierung mit einer Richtlinie für bedingten Zugriff (optional).
 
-![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.

@@ -44,7 +44,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Offi
 | Office-Apps<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
 | **Apps für die Cloud-Produktivität**       | | | 
 | Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Microsoft Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
+| Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
 | OneDrive for Business | 1 TB Speichergrenzwert pro Benutzer   | Unbegrenzt | 
 | Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
 | StaffHub  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
