@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072848"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Insider Risikomanagement-Fälle (Vorschau)
 
@@ -41,7 +41,7 @@ In der Fall Warteschlange werden alle aktiven und geschlossenen Fälle für Ihre
 - **Last updated**: die Zeit, die vergangen ist, seit es eine zusätzliche Groß-/Kleinschreibung oder Änderung im Fall Status gegeben hat.
 - **Zuletzt aktualisiert von**: der Name des Insider Risk Management Analysts oder Investigators, der den Fall zuletzt aktualisiert hat.
 
-![Insider Risk Management Cases-Dashboard](media/insider-risk-cases-dashboard.png)
+![Insider Risk Management Cases-Dashboard](../media/insider-risk-cases-dashboard.png)
 
 Verwenden Sie das **Search** -Steuerelement, um nach bestimmten Text zu suchen, und verwenden Sie den Fallfilter, um Fälle anhand der folgenden Attribute zu sortieren:
 
@@ -67,7 +67,7 @@ Der Bereich **Fall Details** ist auf allen Registerkarten für die Fallverwaltun
 - **Benachrichtigungen bestätigt**: Liste der Benachrichtigungen für den Benutzer, die für den Fall bestätigt wurden.
 - **Inhalt in Gefahr**: Liste der Inhalte, sortiert nach Inhaltsquellen und Typen. Beispiel: für den Inhalt der Fall Benachrichtigung in SharePoint Online werden möglicherweise Ordner-oder Dateinamen aufgelistet, die der Risiko Aktivität für Warnungen in dem Fall zugeordnet sind.
 
-![Insider Risk Management-Fall Details](media/insider-risk-case-details.png)
+![Insider Risk Management-Fall Details](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>Warnungen
 
@@ -89,7 +89,7 @@ Verwenden Sie das Search-Steuerelement, um Warnungsnamen nach bestimmten Text zu
 
 Die Registerkarte **Benutzeraktivität** ist eines der leistungsstärksten Tools für die interne Risikoanalyse und-Untersuchung für Fälle in der Insider Risikomanagement-Lösung. Diese Registerkarte ist so strukturiert, dass eine schnelle Überprüfung eines Falls möglich ist, einschließlich einer Verlaufs Zeitachse aller Warnungen, aller Warnungsdetails, des aktuellen Risiko Werts für den Benutzer in dem Fall und der Steuerelemente, mit denen wirksame Maßnahmen zur Eindämmung der Risiken in dem Fall ergriffen werden.
 
-![Insider Risk Management-Benutzeraktivität](media/insider-risk-user-activities.png)
+![Insider Risk Management-Benutzeraktivität](../media/insider-risk-user-activities.png)
 
 1. **Datums-und Fenster Zeitfilter**: Standardmäßig werden die letzten sechs Monate der im Fall bestätigten Benachrichtigungen im Diagramm Benutzeraktivität angezeigt. Sie können die Diagrammansicht ganz einfach mit dem Schieberegler an beiden Enden des Diagrammfensters filtern oder indem Sie ein bestimmtes Start-und Enddatum im Diagramm Filter-Steuerelement definieren.
 2. **Risiko Warnungs Aktivität und Details**: Risiko Aktivitäten werden visuell als farbige Blasen im Diagramm Benutzeraktivität angezeigt. Blasen werden für verschiedene Risikokategorien erstellt, und die Blasengröße ist proportional zur Anzahl der Risiko Aktivitäten für die Kategorie. Wählen Sie eine Blase aus, um die Details für jede Risiko Aktivität anzuzeigen. Details umfassen:
@@ -107,7 +107,7 @@ Auf der Registerkarte **Inhalts-Explorer** können Risikoanalysten und Ermittler
 
 Der Inhalts-Explorer ist ein leistungsfähiges Tool mit einfachen und erweiterten Such-und Filterfunktionen. Weitere Informationen zur Verwendung des Inhalts-Explorers finden Sie unter [Insider Risk Management Content Explorer](insider-risk-management-content-explorer.md).
 
-![Risikomanagement für Insider Fälle Inhalts-Explorer](media/insider-risk-content-explorer.png)
+![Risikomanagement für Insider Fälle Inhalts-Explorer](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>Fallnotizen
 

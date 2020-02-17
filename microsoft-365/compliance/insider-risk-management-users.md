@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f79fcebf220f1aee98ba97c537ff80b65b6e3881
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582854"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072787"
 ---
 # <a name="insider-risk-management-users-preview"></a>Insider Risk Management-Benutzer (Vorschau)
 
@@ -29,7 +29,7 @@ Insider Risk Management-Benutzer sind Mitarbeiter in Ihrer Organisation, die in 
 - **Bestätigte Verstöße**: die Anzahl der Fälle, die als *bestätigte Richtlinienverletzung* für den Benutzer aufgelöst wurden.
 - **Case**: der aktuell aktive Fall für den Benutzer.
 
-![Benutzerdashboard für das Insider Risikomanagement](media/insider-risk-users-dashboard.png)
+![Benutzerdashboard für das Insider Risikomanagement](../media/insider-risk-users-dashboard.png)
 
 ## <a name="view-user-details"></a>Anzeigen von Benutzer Details
 

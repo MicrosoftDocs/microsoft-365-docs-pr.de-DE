@@ -10,16 +10,24 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c021654c99faf3104766dc05fe466ce9537d656
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596582"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091358"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 
 In diesem Thema werden neue und aktualisierte Themen in der [Dokumentation zu Microsoft Managed Desktop](index.yml)aufgelistet. "Aktualisierte" Themen sind solche, die Material Ergänzungen oder Korrekturen vorgenommen haben – kleinere Korrekturen wie die Korrektur von Tippfehlern, Formatvorlagen oder Formatierungsproblemen werden nicht aufgeführt. Sie können den Verlauf bestimmter Commits (einschließlich der Details aller Änderungen) jederzeit anzeigen, indem Sie das [Repo auf GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)besuchen.
+
+## <a name="january-2020"></a>Januar 2020
+Neues oder geändertes Thema | Beschreibung
+--- | ---
+[Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started/get-started-devices.md)| Aktualisiertes Thema
+[Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](get-started/add-admin-contacts.md) | Aktualisiertes Thema
+[Gerätekonfiguration](service-description/device-policies.md) | Aktualisiertes Thema
+
 
 ## <a name="december-2019"></a>Dezember 2019
 Neues oder geändertes Thema | Beschreibung
