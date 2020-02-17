@@ -1,5 +1,7 @@
 ---
 title: 'Phase 3: Beendigungskriterien für die Windows 10 Enterprise-Infrastruktur'
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für Windows 10 Enterprise erfüllt.
-ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801220"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085554"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3: Beendigungskriterien für die Windows 10 Enterprise-Infrastruktur
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Stellen Sie sicher, dass Ihre Windows 10 Enterprise-Infrastruktur die folgenden erforderlichen Kriterien erfüllt, und dass Sie die optionalen Kriterien berücksichtigt haben.
 
@@ -125,4 +127,4 @@ Ihre Windows 10 Enterprise-Infrastruktur ist für die Installation auf neuen Ger
 
 |||
 |:-------|:-----|
-|![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, folgt als nächstes die Phase [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, folgt als nächstes die Phase [Office 365 ProPlus](office365proplus-infrastructure.md). |

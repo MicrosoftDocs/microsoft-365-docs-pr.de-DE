@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 2: Verzeichnis- und Netzwerkbereitschaft'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Verzeichnis- und Netzwerkbereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112613"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085410"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Schritt 2: Verzeichnis- und Netzwerkbereitschaft
 
 Stellen Sie sicher, dass das Verzeichnis und das Netzwerk konfiguriert und bereit sind, den Wechsel zu Windows 10 und Office 365 ProPlus zu unterstützen. Hierzu muss Azure Active Directory Services für Benutzer aktiviert sein, und das Netzwerk muss in der Lage sein, den normalen Datenverkehr sowie die Bewegung von potenziell riesigen Mengen an Daten zu verarbeiten, während PCs aktualisiert und Benutzerdateien, Einstellungen und Anwendungen wiederhergestellt werden.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Schritt 2: Verzeichnis- und Netzwerkbereitschaft</strong></p>
 <p>Mit der Cloud verbundene Dienste in Office 365 ProPlus und neue Bereitstellungsoptionen wie Windows Autopilot erfordern Azure Active Directory. Netzwerk und Konnektivität sind auch wichtige Bereiche, die beim Verschieben von Windows-Abbildern, Apps, Treibern und zugehörigen Dateien auf Ihre Computer geplant werden müssen. Erfahren Sie, wie Sie mit neuen Tools und Bereitstellungsoptionen den Netzwerkverkehr reduzieren und optimieren können.</p></td>
-<td><a href="https://aka.ms/ddev2" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -85,7 +87,7 @@ Die Drosselung von bestimmtem Datenverkehr bedeutet, dass der normale Netzwerkda
 
 Glücklicherweise gibt es neue Tools, die es Ihnen erleichtern, die Auswirkungen umfangreicher Desktopbereitstellung auf das Netzwerk zu verwalten, einschließlich LEDBAT zur Optimierung der Nutzung der verfügbaren Bandbreite sowie Peer-zu-Peer-Optionen (P2P), mit denen der Bereitstellungsverkehr vom Zentrum des Netzwerks an die Peripherie verlagert wird.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
 ## <a name="scavenging-bandwidth"></a>Aufräumen der Bandbreite
 
@@ -95,7 +97,7 @@ LEDBAT (Low Extra Delay Background Transport), das in Windows Server 2019 and Mi
 
 Im Gegensatz zur herkömmlichen Drosselung kann LEDBAT die gesamte verfügbare Netzwerkbandbreite als Hintergrundaufgabe nutzen und sofort Bandbreite bereitstellen, wenn anderer Datenverkehr sie anfordert. Im Gegensatz zu BITS gibt es hierbei keine Verzögerung. Alles ist automatisiert, es ist keine manuelle Optimierung oder Planung erforderlich, und alles ist serverseitig eingerichtet. Dies ermöglicht potenziell riesige Leistungsgewinne.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## <a name="peer-to-peer-options"></a>Peer-zu-Peer-Optionen
 
@@ -111,7 +113,7 @@ Hinweis: BranchCache and Peercache ergänzen sich und können zusammen in dersel
 
 **Übermittlungsoptimierung** Die Übermittlungsoptimierung ist eine weitere Peer-zu-Peer Technologie für die Zwischenspeicherung, die auf dem Netzwerk basierende Steuerungen für Bereitstellungen bietet. Verwenden Sie die Windows 10-Übermittlungsoptimierung, um integrierte UWP-Apps zu aktualisieren und um Anwendungen aus dem Microsoft Store sowie Softwareupdates mit Express-Updates zu installieren. Sie ist seit den frühen Versionen von Windows 10 verfügbar, wurde jedoch erst kürzlich mit Microsoft Endpoint Configuration Manager (Current Branch) integriert. Seit Windows 10 Version 1803 bedeuten neue Konfigurationsoptionen, dass Sie jetzt unabhängig voneinander Bandbreitengrenzwerte für die Aktualisierung im Hintergrund und Vordergrundaufgaben wie das Installieren einer App aus dem Store festlegen können. Die Windows-Übermittlungsoptimierung unterstützt nun auch Office 365 ProPlus bei Clientupdates, verfügbar in allen unterstützten Office 365-Clientupdatekanälen. Unterstützung für Windows-Übermittlungsoptimierung bei der Erstinstallation von Office 365-Clients wird in Kürze folgen.  
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Weitere Aspekte für Office 365 ProPlus**
 
@@ -123,11 +125,11 @@ Zusätzlich zur Nutzung der Übermittlungsoptimierung finden Sie hier drei Eleme
 
 **Outlook-Datendateien** Outlook wird oft so konfiguriert, dass es das gesamte Postfach der Benutzer für die Offlineverwendung lokal zwischenspeichert. Dies gilt für alle Windows-Bereitstellungen, mit Ausnahme direkter Upgrades. Diese erfordern, dass sich die Outlook-Datendateien der Benutzer nach dem Upgrade selbst neu erstellen. Dies ist ein automatisierter Prozess, aber bei den Outlook-Postfachbeschränkungen, die normalerweise auf maximal 100 GB festgelegt sind, bedeutet das erneute lokale Zwischenspeichern des gesamten Postfachs für alle Benutzer eine Menge Datentransfer. Zum Reduzieren der Netzwerklast können Sie beispielsweise die Gruppenrichtlinie verwenden, um die Einstellung für "E-Mail im Offlinemodus" zu verringern. In Office 365 ProPlus oder Office 2016 ist der Standardwert für Outlook auf 12 Monate festgelegt. Um die Auswirkungen auf das Netzwerk zu reduzieren, sollten Sie für den Offlinecache eine Dauer von 1 bis 6 Monaten festlegen. Das Ändern dieser Einstellung hat keinen Einfluss auf die Größe des Onlinepostfachs, und das gesamte Postfach kann weiterhin über Outlook durchsucht werden, wenn es online ist.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
 **OneDrive-Dateien bei Bedarf und Verschieben von bekannten Ordnern** OneDrive ist eine hervorragende Möglichkeit zum Synchronisieren und Schützen von Benutzerdateien auf PCs und anderen Geräten in der Cloud. Mit der Option zum Verschieben von bekannten Ordnern können Sie die Synchronisierung von Dateien aus den Ordnern "Desktop", "Dokumente" und "Bilder" in OneDrive erzwingen, sodass diese Dateien zur Verfügung stehen, wenn der Benutzer sich bei einem neuen Gerät oder auf einem PC mit neuem Image anmeldet. Beachten Sie jedoch, dass Sie aufgrund der umfangreichen Größe an Dateien, die in den Ordnern "Desktop", "Dokumente" und "Bilder" gespeichert sind, das Rollout von Richtlinien, die OneDrive auf den PCs aktivieren und erzwingen, genau planen müssen. Eine Option besteht darin, die Gruppenrichtlinie-Netzwerksteuerungen zu verwenden, um die von OneDrive-Synchronisierungsdienst verwendete Bandbreite zu drosseln.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
 
 [Einrichten der Verschiebung bekannter Ordner](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 

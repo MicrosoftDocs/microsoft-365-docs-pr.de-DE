@@ -44,7 +44,7 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 36
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an. 
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an. 
 
 Microsoft 365 Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 

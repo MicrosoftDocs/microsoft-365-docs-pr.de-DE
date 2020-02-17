@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862125"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069932"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -113,25 +113,25 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
   |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection und Threat Intelligence|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (Benutzeranmeldungen)||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (Administratorereignisse)||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Verhinderung von Datenverlust|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |eDiscovery|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power-Apps|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Security & Compliance Center|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |SharePoint Online und OneDrive for Business|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Workplace Analytics|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Advanced Threat Protection und Threat Intelligence|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory (Benutzeranmeldungen)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Azure Active Directory (Administratorereignisse)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Verhinderung von Datenverlust|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |eDiscovery|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange Online|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Project|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power-Apps|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power BI|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Security & Compliance Center|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |SharePoint Online und OneDrive for Business|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Workplace Analytics|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (Azure AD) ist der Verzeichnisdienst von Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen- und Verzeichnisaktivitäten, die im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal ausgeführt wurden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsberichtsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -163,7 +163,7 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
     Die Seite **Überwachungsprotokollsuche** wird angezeigt.
 
-    ![Konfigurieren Sie die Suchkriterien, und klicken Sie dann auf „Suchen“, um den Bericht auszuführen.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Konfigurieren Sie die Suchkriterien, und klicken Sie dann auf „Suchen“, um den Bericht auszuführen.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > Sie müssen zuerst die Überwachungsprotokollierung aktivieren, bevor Sie eine Überwachungsprotokollsuche durchführen können. Wenn der Link zu **Aufzeichnung von Benutzer- und Administratoraktivitäten starten** angezeigt wird, klicken Sie darauf, um die Überwachung zu aktivieren. Wird dieser Link nicht angezeigt, wurde die Überprüfung für Ihre Organisation bereits aktiviert.
@@ -195,13 +195,13 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
    Die Suchergebnisse werden geladen und nach wenigen Augenblicken unter **Ergebnisse** angezeigt. Nach Abschluss der Suche wird die Anzahl der gefundenen Ergebnisse angezeigt. Im Bereich **Ergebnisse** werden maximal 5.000 Ereignisse in Schritten von jeweils 150 Ereignissen angezeigt. Wenn mehr als 5.000 Ereignisse die Suchkriterien erfüllen, werden die aktuellsten 5.000 Ereignisse angezeigt.
 
-   ![Die Anzahl der Ergebnisse wird nach Abschluss der Suche angezeigt.](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![Die Anzahl der Ergebnisse wird nach Abschluss der Suche angezeigt.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Tipps zum Suchen im Überwachungsprotokoll
 
 - Durch Klicken auf den Aktivitätsnamen können Sie bestimmte Aktivitäten auswählen, nach denen gesucht werden soll. Sie können auch auf den Gruppennamen klicken, um nach allen Aktivitäten in einer Gruppe (z. B. **Datei- und Ordneraktivitäten**) zu suchen. Wenn eine Aktivität ausgewählt ist, können Sie darauf klicken, um die Auswahl aufzuheben. Sie können auch das Suchfeld verwenden, um die Aktivitäten anzuzeigen, die das von Ihnen eingegebene Schlüsselwort enthalten.
 
-  ![Klicken Sie auf den Namen der Aktivitätsgruppe, um alle Aktivitäten auszuwählen.](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Klicken Sie auf den Namen der Aktivitätsgruppe, um alle Aktivitäten auszuwählen.](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - Sie müssen **Ergebnisse für alle Aktivitäten anzeigen** in der Liste **Aktivitäten** auswählen, um Einträge aus dem Exchange-Administrator-Überwachungsprotokoll anzuzeigen. Bei Ereignissen aus diesem Überwachungsprotokoll wird der Name eines Cmdlets (z. B. **Set-Mailbox**) in der Spalte **Aktivität** unter den Ergebnissen angezeigt. Um weitere Informationen zu erhalten, klicken Sie auf die Registerkarte **überwachte Aktivitäten** in diesem Thema, und dann auf **Exchange-Administratoraktivitäten**.
 
@@ -239,7 +239,7 @@ Die Ergebnisse enthalten die folgenden Informationen zu den einzelnen Ereignisse
 
 Sie können weitere Details zu einem Ereignis anzeigen, indem Sie in der Liste der Suchergebnisse auf den Ereigniseintrag klicken. Daraufhin wird die Seite **Details** mit detaillierten Eigenschaften des Ereigniseintrags angezeigt. Die angezeigten Eigenschaften sind von dem Office 365-Dienst abhängig, in dem das Ereignis auftritt. Zum Anzeigen weiterer Details klicken Sie auf **Weitere Informationen**. Beschreibungen finden Sie in [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
-![Klicken Sie auf „Weitere Informationen“, um die genauen Eigenschaften des Datensatzes für das Überwachungsprotokollereignis anzuzeigen.](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Klicken Sie auf „Weitere Informationen“, um die genauen Eigenschaften des Datensatzes für das Überwachungsprotokollereignis anzuzeigen.](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### <a name="step-3-filter-the-search-results"></a>Schritt 3: Filtern der Suchergebnisse
 
@@ -255,7 +255,7 @@ So filtern Sie die Ergebnisse:
 
 3. Klicken Sie auf eines der Felder unter einer Spaltenüberschrift, und geben Sie abhängig von der Spalte ein Wort oder einen Ausdruck ein, nach dem Sie filtern möchten. Die Ergebnisse werden dynamisch angepasst und die Ereignisse angezeigt, die den Filterkriterien entsprechen.
 
-   ![Geben Sie unter „Filtern“ ein Wort ein, um Ereignisse anzuzeigen, die dem Filter entsprechen.](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![Geben Sie unter „Filtern“ ein Wort ein, um Ereignisse anzuzeigen, die dem Filter entsprechen.](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. Zum Löschen eines Filters klicken Sie auf das **X** im Filterfeld oder auf **Filterung ausblenden**.
 
@@ -330,7 +330,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Datei aus Papierkorb gelöscht|FileDeletedFirstStageRecycleBin|Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.|
 |Datei aus endgültigem Papierkorb gelöscht|FileDeletedSecondStageRecycleBin|Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.|
 |Konformitätsrichtlinienbezeichnung gelöscht|ComplianceRecordDelete|Ein Dokument, das als Datensatz klassifiziert wurde, wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz klassifiziert, auf das Dokument angewendet wird.|
-|Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument hoch, das mit einer Vertraulichkeitskennzeichnung klassifiziert wurde, die eine höhere Priorität hat als der die Vertraulichkeitskennzeichnung, die auf die Website angewendet wird, auf die das Dokument hochgeladen wird. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf eine Website angewendete Vertraulichkeitskennzeichnung eine höhere Priorität hat als die auf ein Dokument, das auf die Website hochgeladen wurde, angewendete Vertraulichkeitskennzeichnung. Weitere Informationen zur Priorität von Vertraulichkeitskennzeichnungen finden Sie im Abschnitt „Prioritäten von Kennzeichen in [Übersicht über Vertraulichkeitsbezeichnungen](sensitivity-labels.md#label-priority-order-matters).|
+|Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument hoch, das mit einer Vertraulichkeitskennzeichnung klassifiziert wurde, die eine höhere Priorität hat als der die Vertraulichkeitskennzeichnung, die auf die Website angewendet wird, auf die das Dokument hochgeladen wird. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf eine Website angewendete Vertraulichkeitskennzeichnung eine höhere Priorität hat als die auf ein Dokument, das auf die Website hochgeladen wurde, angewendete Vertraulichkeitskennzeichnung. Weitere Informationen zur Priorität von Vertraulichkeitsbezeichnungen finden Sie im Abschnitt „Prioritäten von Bezeichnungen" in [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md#label-priority-order-matters).|
 |Malware in einer Datei erkannt|FileMalwareDetected|Der SharePoint-Virenschutz erkennt Schadsoftware in einer Datei.|
 |Auschecken einer Datei verworfen|FileCheckOutDiscarded|Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.|
 |Datei heruntergeladen|FileDownloaded|Der Benutzer lädt ein Dokument von einer Website herunter.|
@@ -744,7 +744,7 @@ In der folgenden Tabelle sind die in Microsoft Teams von Benutzern und Administr
 
 Wenn Ihre Organisation die [Patientenanwendung](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams verwendet, können Sie das Überwachungsprotokoll nach Aktivitäten im Zusammenhang mit der Patienten-App durchsuchen. Wenn Ihre Umgebung so konfiguriert ist, dass die Patienten-App unterstützt wird, steht in der Auswahlliste **Aktivitäten** eine weitere Aktivitätsgruppe für diese Aktivitäten zur Verfügung.
 
-![Microsoft Teams-Aktivitäten im Gesundheitswesen in der Auswahlliste "Aktivitäten"](media/TeamsHealthcareAuditActivities.png)
+![Microsoft Teams-Aktivitäten im Gesundheitswesen in der Auswahlliste "Aktivitäten"](../media/TeamsHealthcareAuditActivities.png)
 
 Eine Beschreibung der Patienten-App-Aktivitäten finden Sie unter [Überwachungsprotokolle für die Patienten-App](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -835,7 +835,7 @@ Nachfolgend finden Sie einige Tipps für die Suche nach Exchange-Administratorak
 
 - Zum Anzeigen von Ereignissen aus dem Exchange-Administratorüberwachungsprotokoll filtern Sie die Suchergebnisse, und geben Sie einen Bindestrich (**--**) in das Filterfeld **Aktivität** ein. Dadurch werden Cmdlet-Namen angezeigt, die in der Spalte **Aktivität** für Exchange-Administratorereignisse angegeben sind. Anschließend können Sie die Cmdlet-Namen alphabetisch sortieren.
 
-  ![Geben Sie einen Bindestrich in das Feld "Aktivitäten" ein, um Exchange-Administratorereignisse zu filtern.](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Geben Sie einen Bindestrich in das Feld "Aktivitäten" ein, um Exchange-Administratorereignisse zu filtern.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - Um Informationen darüber zu erhalten, welches Cmdlet ausgeführt wurde, welche Parameter und Parameterwerte verwendet wurden und welche Objekte betroffen waren, können Sie die Suchergebnisse exportieren, indem Sie die Option **Alle Ergebnisse herunterladen** auswählen. Weiter Informationen findn Sie unter[Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md).
 

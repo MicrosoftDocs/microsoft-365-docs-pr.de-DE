@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise für die öffentliche Vorschau der Datenklassifizierung.
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887337"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076362"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>Versionshinweise für die öffentliche Vorschau der Datenklassifizierung (Vorschau)
 
@@ -40,7 +40,7 @@ Beim Ausführen eines Drilldowns in Exchange-Postfächer wird ein kleiner QuickI
 
 ## <a name="seeing-guids-instead-of-label-names"></a>Anzeigen von GUIDs anstelle von Bezeichnungsnamen
 
-Bei Kunden der privaten Vorschau kam es vor, dass das Löschen einer Beschriftung, die bereits einem Inhalt zugeordnet wurde, dazu führt, dass die Bezeichnungsnamen im Inhalts Explorer und im Aktivitäts-Explorer in eine 32-Bit-GUID anstelle des Bezeichnungsnamens aufgelöst werden. 
+Bei Kunden der privaten Vorschau kam es vor, dass mit migrierten Bezeichnungen oder das Löschen einer Bezeichnung, die bereits einem Inhalt zugeordnet wurde, dazu führt, dass die Bezeichnungsnamen im Inhalts-Explorer und im Aktivitäts-Explorer in eine 32-Bit-GUID anstelle des Bezeichnungsnamens aufgelöst werden. 
 
 ## <a name="rendering-of-encrypted-documents"></a>Rendern von verschlüsselten Dokumenten
 

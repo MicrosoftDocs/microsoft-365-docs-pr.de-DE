@@ -1,5 +1,7 @@
 ---
 title: Automatisierte Upgrades von Windows 7 auf Windows 10
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatisierte Upgrades von Windows 7 auf Windows 10 für große Organisationen
-ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112699"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085622"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>In-Place-Upgrades von Windows 7 auf Windows 10 für große Organisationen
 
 Ab dem 14. Januar 2020 werden Sicherheitsupdates oder Support für PCs unter Windows 7 nicht mehr bereitgestellt. Es bleiben nur wenige Monate Zeit, um von Windows 7 auf Windows 10 zu wechseln, gleichzeitig gilt es, mehrere Optionen bereitzustellen. Deshalb lautet eine häufige Frage in der IT-Community: "Was ist der schnellste Weg, um von Windows 7 auf Windows 10 zu wechseln?" Die kurze Antwort lautet, In-Place-Upgrades für bestehende PCs durchzuführen, wodurch der Fokus hinsichtlich verschiedener Aspekte des Desktopbereitstellungsprozesses reduziert werden kann.
 
-<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
+<center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 Mithilfe von In-Place-Upgrades werden mehrere Desktopbereitstellungsprozesse erheblich in ihrem Umfang reduziert, insbesondere:
 
@@ -68,7 +70,7 @@ Die Option für die Upgrade-Bereitstellung wird in [Bereitstellung des Betriebss
 
   - Alle weiteren Konfigurationsaktionen, die Sie für einen verwendungsbereiten Status benötigen.
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
+![](../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
 
 Zu den häufigsten Gründen, warum Upgrades möglicherweise nicht abgeschlossen werden oder nicht möglich sind, zählen etwa Probleme mit:
 
