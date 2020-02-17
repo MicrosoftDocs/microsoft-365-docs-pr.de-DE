@@ -1,5 +1,7 @@
 ---
 title: Überwachen auf Lecks für personenbezogene Daten
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,18 +18,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
-ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572972"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088392"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
 
 Es gibt viele Tools, die zum Überwachen der Verwendung und Übertragung personenbezogener Daten verwendet werden können. In diesem Thema werden drei Tools beschrieben, die gut funktionieren.
 
-![Tools zum Überwachen der Verwendung und Übertragung personenbezogener Daten](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Tools zum Überwachen der Verwendung und Übertragung personenbezogener Daten](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 In der Abbildung sehen Sie Folgendes:
 
@@ -61,7 +63,7 @@ DLP-Berichte finden sich im Security Center und Compliance Center. Navigieren Si
 
 Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung von Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
-![Bericht mit DLP-Richtlinienübereinstimmungen](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Bericht mit DLP-Richtlinienübereinstimmungen](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="office-365-audit-log-and-alert-policies"></a>Office 365-Überwachungsprotokoll und Warnungsrichtlinien
 
@@ -103,7 +105,7 @@ Zum besseren Verständnis Ihrer Cloudumgebung bietet das Untersuchungsfeature vo
 
 Die folgende Abbildung veranschaulicht zwei Cloud App Security-Richtlinien, die für die DSGVO hilfreich sind.
 
-![Beispielrichtlinien für Cloud App Security](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Beispielrichtlinien für Cloud App Security](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 Die erste Richtlinie gibt eine Warnung aus, wenn Dateien mit einem vordefinierten PII-Attribut oder einem ausgewählten benutzerdefinierten Ausdruck außerhalb der Organisation von den ausgewählten SaaS-Apps freigegeben werden.
 
@@ -121,7 +123,7 @@ Wenn Sie Cloud App Security noch nicht verwenden, starten Sie es zunächst. So g
 
 Hinweis: Aktivieren Sie unbedingt „Automatisch Dateien auf Azure Information Protection-Klassifizierungsbezeichnungen überprüfen“ (in den allgemeinen Einstellungen), entweder bei den ersten Schritten mit Cloud App Security oder bevor Sie Bezeichnungen zuweisen. Nach der Installation überprüft Cloud App Security vorhandene Dateien erst wieder, wenn sie geändert werden.
 
-![Dashboard mit Informationen zu Warnungen](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Dashboard mit Informationen zu Warnungen](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Weitere Informationen:
 

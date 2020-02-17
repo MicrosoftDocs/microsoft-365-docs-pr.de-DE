@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.'
-ms.openlocfilehash: a5bce86ef7bce79d58628b78d95e02484051c389
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971843"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083484"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -185,11 +187,11 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die dynamische Gruppenmi
 
 Notieren Sie diese Werte für die Arbeit mit Office 365- und EMS-Testabonnements für diese Entwicklung-/Testumgebung:
 
-- Organisationsname für das Testabonnement: ![Unterstrichen](../media/Common-Images/TableLine.png)
+- Organisationsname für das Testabonnement: ![Unterstrichen](../../media/Common-Images/TableLine.png)
 
   Für den Domänennamen contoso.onmicrosoft.com des Testabonnements lautet der Name der Organisation zum Beispiel „contoso“.
 
-- Name des Globalen Office 365-Administrator:  ![Unterstrichen](../media/Common-Images/TableLine.png).onmicrosoft.com
+- Name des Globalen Office 365-Administrator:  ![Unterstrichen](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Notieren Sie sich das Kennwort für dieses Konto und das gemeinsame ursprüngliche Kennwort für die anderen Benutzerkonten, und bewahren Sie diese an einem sicheren Ort auf.
 

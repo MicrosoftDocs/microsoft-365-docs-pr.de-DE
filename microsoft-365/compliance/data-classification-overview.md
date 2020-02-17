@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595452"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076392"
 ---
 # <a name="data-classification-overview-preview"></a>Übersicht über die Datenklassifizierung (Vorschau)
 
@@ -41,11 +41,11 @@ Microsoft 365 enthält viele Definitionen von Typen vertraulicher Informationen,
 
 Auf der Karte mit den Typen vertraulicher Informationen werden die am häufigsten verwendeten Typen vertraulicher Informationen angezeigt, die in Ihrer Organisation gefunden und gekennzeichnet wurden.
 
-![Die am häufigsten verwendeten Typen vertraulicher Informationen](media/data-classification-sens-info-types-card.png)
+![Die am häufigsten verwendeten Typen vertraulicher Informationen](../media/data-classification-sens-info-types-card.png)
 
 Wenn Sie wissen möchten, wie viele Elemente in einer bestimmten Klassifizierungskategorie vorhanden sind, bewegen Sie den Mauszeiger über den Balken der jeweiligen Kategorie.
 
-![Details zu den wichtigsten Typen vertraulicher Informationen](media/data-classification-sens-info-types-hover.png)
+![Details zu den wichtigsten Typen vertraulicher Informationen](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
 > Wenn auf der Karte die Meldung angezeigt wird, dass keine Daten mit vertraulichen Informationen gefunden wurden, bedeutet das, dass in Ihrer Organisation keine Elemente vorhanden sind, die als Typ vertraulicher Informationen klassifiziert wurden oder dass keine Elemente durchsucht wurden. Informationen zu den ersten Schritten mit Bezeichnungen finden Sie unter:
@@ -60,13 +60,13 @@ Wenn Sie eine Vertraulichkeitsbezeichnung auf ein Element über Microsoft 365 od
 - Eine Kennzeichnung, die den Wert des Elements für Ihre Organisation angibt, wird in das Dokument eingebettet und begleitet es überall hin.
 - Das Vorhandensein der Kennzeichnung ermöglicht verschiedene Schutzmaßnahmen, z. B. ein obligatorisches Wasserzeichen oder die Verschlüsselung. Mit aktiviertem Endpunktschutz können Sie sogar verhindern, dass ein Element die Kontrolle Ihrer Organisation verlässt.
 
-Weitere Informationen zu Vertraulichkeitsbezeichnungen finden Sie unter [Übersicht über Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
+Weitere Informationen zu den Vertraulichkeitsbezeichnungen finden Sie unter [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 
 Vertraulichkeitsbezeichnungen müssen für Dateien in SharePoint und OneDrive aktiviert sein, damit die entsprechenden Daten in der Datenklassifizierungsseite eingeblendet werden können. Weitere Informationen finden Sie unter [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Auf der Karte mit der Vertraulichkeitsbezeichnung wird die Anzahl von Elementen (E-Mail oder Dokument) nach Vertraulichkeitsgrad angezeigt.
 
-![Screenshot mit Platzhalter für die Aufteilung des Inhalts nach Vertraulichkeitsbezeichnung mit Klassifizierung](media/data-classification-top-sensitivity-labels-applied.png)
+![Screenshot mit Platzhalter für die Aufteilung des Inhalts nach Vertraulichkeitsbezeichnung mit Klassifizierung](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > Wenn Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben oder keine Vertraulichkeitsbezeichnung auf Inhalte angewendet wurde, wird auf dieser Karte die Meldung angezeigt, dass keine Vertraulichkeitsbezeichnungen gefunden wurden. Informationen zu den ersten Schritten mit Bezeichnungen finden Sie unter:
@@ -78,7 +78,7 @@ Aufbewahrungsbezeichnungen werden verwendet, um die Bereitstellung von Inhalten 
 
 Die Karte mit den am häufigsten angewendeten Aufbewahrungsbezeichnungen zeigt, wie viele Elemente eine bestimmte Aufbewahrungsbezeichnung aufweisen.
 
-![Screenshot mit Platzhalter der am häufigsten angewendeten Aufbewahrungsbezeichnungen](media/data-classification-top-retention-labels-applied.png)
+![Screenshot mit Platzhalter der am häufigsten angewendeten Aufbewahrungsbezeichnungen](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Aufbewahrungsbezeichnungen gefunden wurden, bedeutet dies, dass Sie keine Aufbewahrungsbezeichnungen erstellt oder veröffentlicht haben oder keine Aufbewahrungsbezeichnung auf Inhalte angewendet wurde. Informationen zu den ersten Schritten mit Aufbewahrungsbezeichnungen finden Sie unter:

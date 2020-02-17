@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830949"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074626"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -63,7 +63,7 @@ Wenn Sie eine [Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-
 
 Konfigurieren der Verschlüsselungsoptionen:
 
-![Optionen für die Vertraulichkeitsbezeichnung zur Verschlüsselung](media/encrytion-options-sensitivity-label.png)
+![Optionen für die Vertraulichkeitsbezeichnung zur Verschlüsselung](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Bezeichnung angewendet wird
@@ -111,7 +111,7 @@ Wenn Sie hingegen über eine Vertraulichkeitsbezeichnung namens **Geschäftsvert
 
 Auswählen, ob Berechtigungen jetzt zugewiesen werden sollen oder ob Benutzer Berechtigungen zuweisen dürfen: 
 
-![Option zum Hinzufügen von benutzer- oder administratordefinierten Berechtigungen](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Option zum Hinzufügen von benutzer- oder administratordefinierten Berechtigungen](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>Berechtigungen sofort zuweisen
@@ -124,7 +124,7 @@ Steuern Sie über die folgenden Optionen, wer auf E-Mails oder Dokumente zugreif
 
 Einstellungen für die Zugriffssteuerung für verschlüsselte Inhalte:
 
-![Einstellungen für von Administratoren definierte Berechtigungen](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Einstellungen für von Administratoren definierte Berechtigungen](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Rights Management-Verwendungslizenz für den Offlinezugriff
 
@@ -146,7 +146,7 @@ Sie können bestimmten Personen Berechtigungen erteilen, sodass nur sie mit dem 
 
 Zuweisen von Berechtigungen:
 
-![Optionen zum Zuweisen von Berechtigungen zu Benutzern](media/Sensitivity-Assign-permissions-settings.png)
+![Optionen zum Zuweisen von Berechtigungen zu Benutzern](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>Hinzufügen von Benutzern und Gruppen
 
@@ -179,13 +179,13 @@ Wenn Sie die Berechtigungen für diese Benutzer oder Gruppen auswählen, können
 
 Weitere Informationen zu den einzelnen Berechtigungen finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](media/Sensitivity-Choose-permissions-settings.png)
+![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](../media/Sensitivity-Choose-permissions-settings.png)
 
 Beachten Sie, dass dieselbe Bezeichnung unterschiedlichen Benutzern unterschiedliche Berechtigungen erteilen kann. Eine einzelne Bezeichnung kann beispielsweise einige Benutzer als "Überprüfer" und einen anderen Benutzer als "Mitverfasser" zuweisen, wie im folgenden Screenshot dargestellt.
 
 Weisen Sie hierfür Benutzern und Gruppen Berechtigungen zu, und speichern Sie die Einstellungen. Wiederholen Sie dann diese Schritte, und fügen Sie jedes Mal Benutzer hinzu, weisen diesen Berechtigungen zu, und speichern die Einstellungen. Sie können diese Konfiguration so oft wie erforderlich wiederholen, um unterschiedliche Berechtigungen für unterschiedliche Benutzer zu definieren.
 
-![Unterschiedliche Benutzer mit unterschiedlichen Berechtigungen](media/Sensitivity-Multiple-users-permissions.png)
+![Unterschiedliche Benutzer mit unterschiedlichen Berechtigungen](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management-Aussteller (Benutzer, der die Vertraulichkeitsbezeichnung anwendet) hat immer Vollzugriff
 
@@ -207,7 +207,9 @@ Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweis
 
 - In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen. 
     > [!NOTE]
-    > Diese Option für Word, PowerPoint und Excel wird vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Bei Apps, die die integrierte Bezeichnung verwenden, ist die Unterstützung derzeit in [Preview für Windows und Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) bereitgestellt. Wenn diese Option ausgewählt ist, aber für die App eines Benutzers nicht unterstützt wird, wird diese Bezeichnung nicht für den Benutzer angezeigt.
+    > Diese Option für Word, PowerPoint und Excel wird vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Bei Apps, die integrierte Bezeichnungen verwenden, [wird die Unterstützung für Windows und Mac derzeit in der Vorschau bereitgestellt](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > 
+    > Ist diese Option ausgewählt, wird aber für die App eines Benutzers nicht unterstützt, wird die Bezeichnung entweder für den Benutzer nicht angezeigt oder die Bezeichnung wird zu Konsistenzzwecken angezeigt (Rollout erfolgt aktuell in der Vorschau für IOS und Android), kann jedoch nicht mit einer Erläuterung für Benutzer angewendet werden.
 
 Wenn die Optionen unterstützt werden, verwenden Sie die folgende Tabelle, um zu ermitteln, wann Benutzer die Vertraulichkeitsbezeichnung sehen:
 
@@ -222,13 +224,13 @@ Eine Vertraulichkeitsbezeichnung, bei der Benutzer Berechtigungen zuweisen könn
 
 Konfigurieren der dem Benutzer zugewiesenen Berechtigungen:
 
-![Verschlüsselungseinstellungen für benutzerdefinierte Berechtigungen](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Verschlüsselungseinstellungen für benutzerdefinierte Berechtigungen](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Einschränkungen in Outlook
 
 Wenn ein Benutzer in Outlook eine Vertraulichkeitsbezeichnung anwendet, die ihm das Zuweisen von Berechtigungen für eine Nachricht gestattet, entsprechen die Einschränkungen der Option "Nicht weiterleiten". Der Benutzer sieht oben in der Nachricht den Namen und die Beschreibung der Bezeichnung, die den Inhalt als geschützt ausweist. Anders als in Word, PowerPoint und Excel (mehr dazu im [nächsten Abschnitt](#word-powerpoint-and-excel-permissions)) werden die Benutzer hier nicht aufgefordert, bestimmte Berechtigungen auszuwählen.
 
-![Auf eine E-Mail angewendete Vertraulichkeitsbezeichnung in Outlook](media/sensitivity-label-outlook-protection-applied.png)
+![Auf eine E-Mail angewendete Vertraulichkeitsbezeichnung in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
 Wenn die Option "Nicht weiterleiten" auf eine E-Mail angewendet wird, wird diese E-Mail verschlüsselt und die Empfänger müssen authentifiziert werden. Die Empfänger können dann die Nachricht nicht weiterleiten, drucken oder kopieren. Wenn beispielsweise im Outlook-Client die Schaltfläche "Weiterleiten" nicht verfügbar ist, sind die Menüoptionen "Speichern unter" und "Drucken" ebenfalls nicht verfügbar, und Sie können in den Feldern "An", CC oder Bcc keine Empfänger hinzufügen oder ändern.
 
@@ -244,7 +246,7 @@ So können Die Benutzer mithilfe des Azure Information Protection-Clients mit ei
 - Er kann Benutzer, Gruppen oder Organisationen auswählen. Dies kann Personen innerhalb und außerhalb Ihrer Organisation umfassen.
 - Er kann ein Ablaufdatum festlegen, nach dem die ausgewählten Benutzer nicht mehr auf die betreffenden Inhalte zugreifen können. Weitere Informationen finden Sie im vorstehenden Abschnitt [Rights Management-Verwendungslizenz für den Offlinezugriff](#rights-management-use-license-for-offline-access).
 
-![Optionen für Benutzer für den Schutz durch benutzerdefinierte Berechtigungen](media/sensitivity-aip-custom-permissions-dialog.png)
+![Optionen für Benutzer für den Schutz durch benutzerdefinierte Berechtigungen](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 Bei der integrierten Bezeichnung sehen die Benutzer dasselbe Dialogfeld, wenn Sie Folgendes auswählen:
 

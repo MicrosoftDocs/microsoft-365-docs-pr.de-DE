@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 5: Überlegungen zu Sicherheit und Compliance'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über wichtige Überlegungen zu Windows- und Office-Sicherheit und -Compliance.
-ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112559"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085263"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Schritt 5: Überlegungen zu Sicherheit und Compliance
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Schritt 5: Überlegungen zu Sicherheit und Compliance</strong></p>
 <p>Windows 10 und Office 365 ProPlus bieten neue Methoden zum Schützen von Daten, Geräten und Benutzern und können schnell Bedrohungen erkennen und darauf reagieren. Erfahren Sie außerdem, wie Sie mit häufigen Problemen im Zusammenhang mit der Datenträgerverschlüsselung, Antischadsoftware-Apps und Richtlinien beim Umstieg auf Windows 10 umgehen.</p></td>
-<td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -63,7 +65,7 @@ Daher können diese Apps naturgemäß empfindlich sein, was Änderungen beim Üb
 
 Die Active Directory-Gruppenrichtlinieneinstellungen, die Sie für ältere Versionen von Windows und Office verwendet haben, können möglicherweise nicht direkt in Windows 10 und Office 365 ProPlus übernommen werden, und Sie müssen verschiedene Aspekte für die neueren Sicherheits- und Compliance-Funktionen berücksichtigen. Es empfiehlt sich, das Microsoft Security Compliance-Toolkit zu nutzen, um einen Grundeindruck der Sicherheitsrichtlinien für die aktuellen Versionen von Windows und Office zu erhalten. Darüber hinaus ist es sinnvoll, dass Sie sich die Richtlinien für die Verwaltung mobiler Geräte im Rahmen von Microsoft Intune ansehen.
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 

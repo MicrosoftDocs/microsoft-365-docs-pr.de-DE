@@ -21,12 +21,13 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830989"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082294"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -50,7 +51,7 @@ Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfo
 
 Empfehlungen für SharePoint Online-Teamwebsites greifen auf eine Vielzahl von Microsoft 365-Funktionen zurück. Die folgende Abbildung zeigt die empfohlenen Konfigurationen für vier SharePoint Online-Teamwebsites.
 
-![Empfohlene Konfiguration für die SharePoint-Websites](../media/SharePoint-site-configurations.png)
+![Empfohlene Konfiguration für die SharePoint-Websites](../../media/SharePoint-site-configurations.png)
 
 Erläuterung der Abbildung:
 
@@ -140,7 +141,7 @@ Das Verwenden von Aufbewahrungsbezeichnungen wird für Umgebungen mit vertraulic
 
 - Personen in Ihrer Organisation können eine Bezeichnung manuell auf Inhalte in Outlook im Web, Outlook 2010 und höher, OneDrive for Business, SharePoint Online und Office 365-Gruppen anwenden. Benutzer wissen häufig am besten, mit welcher Art von Inhalten sie arbeiten, sodass sie sie klassifizieren und die entsprechende DLP-Richtlinie anwenden lassen können.
 
-![Empfohlene Konfiguration für die SharePoint-Websites](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![Empfohlene Konfiguration für die SharePoint-Websites](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Aufbewahrungsbezeichnungen:
 

@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 8: Benutzerkommunikation und Schulung'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand von Benutzerkommunikation und Schulungen auf Windows 10 und Office 365 ProPlus vorbereiten.
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033660"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085120"
 ---
 # <a name="step-8-user-communications-and-training"></a>Schritt 8: Benutzerkommunikation und Schulung
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Schritt 8: Benutzerkommunikation und Schulung</strong></p>
 <p>Stellen Sie sicher, dass Ihre Benutzer über neue Oberflächen und neue Arbeitsmethoden informiert sind, wenn Sie Ihre Computer auf Windows 10 und Office 365 ProPlus umstellen. Erfahren Sie, wie Sie mit Microsoft FastTrack, Schulungsmaterialien und Kommunikationsvorlagen die Akzeptanz beim Endbenutzer beschleunigen können, und lernen Sie neue Möglichkeiten zur Überwachung der Benutzerakzeptanz und -verwendung kennen.</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ Wir fangen bei Office an: Wenn Sie Office 365 ProPlus das erste Mal bereitstelle
 
 Detaillierte Kommunikations- und Schulungsvorlagen stehen für diese und andere lokale oder browserbasierten Apps, wie Teams und Planer, zur Verfügung.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 Darüber hinaus stellen wir auch Leitfäden für neue In-App-Funktionen bereit, wie z. B. das Anfügen von mit OneDrive verknüpften Dateien in Outlook oder die Verwendung des neuen Folienübergangs „Morphen“ und der Designerfeatures in PowerPoint.
 
@@ -77,7 +79,7 @@ Das Konzept der phasenweisen Bereitstellung mit Bereitstellungsringen sieht wie 
 
 Erstellen Sie Bereitstellungsringen am besten in Zusammenarbeit mit den Geschäftsbereichen und deren Vorgesetzten. Sie müssen über wichtige Daten und Zeiten Bescheid wissen, die Sie bei der Bereitstellung oder dem Vornehmen von Änderungen berücksichtigen müssen. Ohne eine sorgfältige Planung und die Unterstützung der Prozessbeteiligten wird es schwierig, Benutzer ins Boot zu holen und sie an die Änderungen zu gewöhnen, die bevorstehen.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>Phase 1: Das IT Team und Early Adopter-Insider 
 
@@ -117,7 +119,7 @@ Diese Komponenten und Dienste können während der Pilotphase genauer abgestimmt
 
 Bei der Ausweitung des Pilotprojekts müssen Sie häufig gestellte Fragen und Self-Service-Inhalte dokumentieren und veröffentlichen, um so proaktiv dazu beizutragen, dass Support-Tickets und Helpdeskaktivitäten reduziert werden.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Phase 3 und weiter: Umfassende Produktionsbereitstellung 
 
