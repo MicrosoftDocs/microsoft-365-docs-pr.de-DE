@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche im Security & Compliance Center erstellen, ändern, entfernen und testen können.
-ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 726f21416a3e83a9c3024d810c4335ea263b3c20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596212"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078041"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center
@@ -69,7 +69,7 @@ Sehen Sie sich das folgende Szenario an: Sie möchten einen benutzerdefinierten 
 
 1. Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und klicken Sie auf **Erstellen**.
 
-    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Erstellen“](media/scc-cust-sens-info-type-new.png)
+    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Erstellen“](../media/scc-cust-sens-info-type-new.png)
 
 2. Geben Sie auf der Seite **Namen und Beschreibung auswählen**, die geöffnet wird, die folgenden Werte ein:
 
@@ -77,7 +77,7 @@ Sehen Sie sich das folgende Szenario an: Sie möchten einen benutzerdefinierten 
 
   - **Beschreibung**: Neunstellige Contoso-Mitarbeiter-ID-Nummern erkennen.
 
-    ![Seite „Name und Beschreibung“](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![Seite „Name und Beschreibung“](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -101,17 +101,17 @@ Sehen Sie sich das folgende Szenario an: Sie möchten einen benutzerdefinierten 
 
     - Behalten Sie den Standardwert 300 für den **Zeichenabstand** bei.
 
-    ![Seite „Anforderungen für Übereinstimmung“](media/scc-cust-sens-info-type-new-reqs.png)
+    ![Seite „Anforderungen für Übereinstimmung“](../media/scc-cust-sens-info-type-new-reqs.png)
 
     Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 4. Überprüfen Sie auf der Seite **Überprüfen und Abschließen** die Einstellungen, und klicken Sie auf **Fertig stellen**.
 
-    ![Seite „Überprüfen und Abschließen“](media/scc-cust-sens-info-type-new-review.png)
+    ![Seite „Überprüfen und Abschließen“](../media/scc-cust-sens-info-type-new-review.png)
 
 5. Auf der nächsten Seite werden Sie aufgefordert, den neuen benutzerdefinierten Typ für vertrauliche Informationen zu testen. Klicken Sie dazu auf **Ja**. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Information im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). Um die Regel später zu testen, klicken Sie auf **Nein**.
 
-    ![Testempfehlungsseite](media/scc-cust-sens-info-type-new-test.png)
+    ![Testempfehlungsseite](../media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -131,7 +131,7 @@ Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen ers
 
 Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und wählen Sie den benutzerdefinierten Typ vertraulicher Informationen aus, den Sie ändern möchten. Klicken Sie anschließend auf **Bearbeiten**.
 
-  ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Bearbeiten“](media/scc-cust-sens-info-type-edit.png)
+  ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Bearbeiten“](../media/scc-cust-sens-info-type-edit.png)
 
 Hier stehen die gleichen Optionen wie beim Erstellen des benutzerdefinierten Typs für vertrauliche Informationen im Security & Compliance Center zur Verfügung. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -155,7 +155,7 @@ Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erf
 
 2. Klicken Sie in dem Fenster, das geöffnet wird, auf **Löschen** (oder auf **Typen vertraulicher Informationen löschen**, wenn Sie mehrere ausgewählt haben).
 
-    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Löschen“](media/scc-cust-sens-info-type-delete.png)
+    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Löschen“](../media/scc-cust-sens-info-type-delete.png)
 
 3. Klicken Sie in der angezeigten Warnmeldung auf **Ja**.
 
@@ -169,14 +169,14 @@ Um sicherzustellen, dass Sie einen benutzerdefinierten Typ vertraulicher Informa
 
 2. Wählen Sie einen oder mehrere benutzerdefinierte Typen vertraulicher Informationen aus, die Sie testen möchten. Klicken Sie in dem Fenster, das geöffnet wird, auf **Typ testen** (oder auf **Typen vertraulicher Informationen testen**, wenn Sie mehrere ausgewählt haben).
 
-    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Typ testen“](media/scc-cust-sens-info-type-test.png)
+    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Typ testen“](../media/scc-cust-sens-info-type-test.png)
 
 3. Laden Sie auf der Seite **Zu testende Datei hochladen**, die geöffnet wird, per Drag & Drop ein zu testendes Dokument hoch, oder klicken Sie auf **Durchsuchen**, und wählen Sie eine Datei aus.
 
-    ![Seite „Zu testende Datei hochladen“](media/scc-cust-sens-info-type-test-upload.png)
+    ![Seite „Zu testende Datei hochladen“](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. Klicken Sie auf die Schaltfläche **Testen**, um das Dokument auf Musterübereinstimmungen in der Datei zu testen.
 
 5. Klicken Sie auf der Seite **Übereinstimmungsergebnisse** auf **Fertig stellen**.
 
-    ![Übereinstimmungsergebnisse](media/scc-cust-sens-info-type-test-results.png)
+    ![Übereinstimmungsergebnisse](../media/scc-cust-sens-info-type-test-results.png)

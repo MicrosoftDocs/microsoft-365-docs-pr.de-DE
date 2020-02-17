@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661904"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076427"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Verwenden des Daten Inhalts-Explorers zur Datenklassifizierung (Vorschau)
 
@@ -45,7 +45,7 @@ Vertraulichkeitsbezeichnungen müssen für Dateien in SharePoint und OneDrive ak
 
 Mithilfe einer [Aufbewahrungbezeichnung](labels.md) können Sie festlegen, wie lange ein entsprechend gekennzeichnetes Element aufbewahrt wird, und welche Schritte vor dem Löschen ausgeführt werden müssen. Aufbewahrungbezeichnungen können manuell oder automatisch über Richtlinien angewendet werden. Sie können Ihre Organisation dabei unterstützen, rechtliche und behördliche Vorschriften einzuhalten.
 
-![Screenshot des erweiterten Inhalts-Explorers](media/data-classification-content-explorer-1.png)
+![Screenshot des erweiterten Inhalts-Explorers](../media/data-classification-content-explorer-1.png)
 
 ### <a name="permissions"></a>Berechtigungen
 

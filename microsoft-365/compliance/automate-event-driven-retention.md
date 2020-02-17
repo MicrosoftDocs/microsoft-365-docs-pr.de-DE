@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Thema wird erläutert, wie Sie Geschäftsprozessabläufe über Ereignisse mithilfe der Microsoft 365-REST-API einrichten können, um die Aufbewahrung zu automatisieren.
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596322"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079081"
 ---
 # <a name="automate-event-based-retention"></a>Automatisieren der ereignisbasierten Aufbewahrung
 
@@ -121,13 +121,13 @@ Darüber hinaus muss für jeden dieser Mitarbeiter die Aufbewahrungsfrist als Da
 
 Das nachstehende Diagramm zeigt, dass mehrere Beschriftungen vorhanden sein können, die einem einzelnen Ereignis zugeordnet sind. Hier werden alle Dateien unter der Bezeichnung „Mitarbeitervergütung“ und alle Dateien unter der Bezeichnung „Leistungen“ mit einem einzelnen Ereignis verknüpft, und zwar, dass der Mitarbeiter das Unternehmen verlässt. Jede dieser unterschiedlichen Dateien weist unterschiedliche Aufbewahrungszeitpläne auf. Wenn ein Mitarbeiter das Unternehmen verlässt, haben diese Dateien innerhalb der einzelnen Bezeichnungen einen anderen Aufbewahrungszeitraum. Das Auslösen dieser unterschiedlichen Aufbewahrungszeitpläne für jeden Dateityp oder jede Bezeichnung für jeden Mitarbeiter ist eine große Herausforderung. Stellen Sie sich vor, dies für mehrere Mitarbeiter auszuführen.
 
-![Diagramm zu Ereignistypen, Ereignissen und Bezeichnungen](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![Diagramm zu Ereignistypen, Ereignissen und Bezeichnungen](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 Ein automatisierter Prozess zum Auslösen dieser unterschiedlicher Aufbewahrungszeiten für mehrere Mitarbeiter ist daher zeitsparend, fehlerfrei und äußerst effizient.
 
 **Konfigurieren der automatisierten ereignisbasierten Aufbewahrung für dieses Szenario:**
 
-![Diagramm zu Rollen und Aktionen für das Szenario, in dem Mitarbeiter aus dem Unternehmen austreten](media/automate-event-driven-retention-employee-termination-diagram.png)
+![Diagramm zu Rollen und Aktionen für das Szenario, in dem Mitarbeiter aus dem Unternehmen austreten](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - Der Administrator erstellt in der Dokumentenmappe mehrere Mitarbeiterordner, zum Beispiel Jane Doe, John Smith.
 
@@ -151,9 +151,9 @@ Ein automatisierter Prozess zum Auslösen dieser unterschiedlicher Aufbewahrungs
 
 Schritt 1: Erstellen eines Ablaufs zum Erstellen einer Ereignisses mithilfe der Microsoft 365-REST-API
 
-![Verwenden von Flow zum Erstellen eines Ereignisses](media/automate-event-driven-retention-flow-1.png)
+![Verwenden von Flow zum Erstellen eines Ereignisses](../media/automate-event-driven-retention-flow-1.png)
 
-![Verwenden des Ablaufs zum Aufrufen der REST-API](media/automate-event-driven-retention-flow-2.png)
+![Verwenden des Ablaufs zum Aufrufen der REST-API](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>Erstellen eines Ereignisses
 
@@ -423,7 +423,7 @@ Ein CRM-System kann mit Microsoft 365 verwendet werden und die Aufbewahrung für
 
 **Konfigurieren der automatisierten ereignisbasierten Aufbewahrung für dieses Szenario:**
 
-![Diagramm zu Rollen und Aufgaben für das Szenario zum Ablauf von Verträgen](media/automate-event-driven-retention-contract-expiration.png)
+![Diagramm zu Rollen und Aufgaben für das Szenario zum Ablauf von Verträgen](../media/automate-event-driven-retention-contract-expiration.png)
 
   - Der Administrator erstellt eine SharePoint-Bibliothek mit verschiedenen Ordnern für jeden Vertragstyp.
 
@@ -451,7 +451,7 @@ Ein ERP-System kann mit Microsoft 365 und Microsoft Flow verwendet werden, um di
 
 **Konfigurieren der automatisierten ereignisbasierten Aufbewahrung für dieses Szenario:**
 
-![Diagramm zu Rollen und Aufgaben für ein Produktlebenszyklusszenario](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![Diagramm zu Rollen und Aufgaben für ein Produktlebenszyklusszenario](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - Der Administrator erstellt in der Dokumentenmappe Produktordner wie Produkt 1, Produkt 2 usw.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informationen zum Zugriff auf Azure Active Directory, das in dem kostenpflichtigen Abonnement für Office 365 Ihrer Organisation enthalten ist.
-ms.openlocfilehash: c8c8ec63a59e5f2e689046a2e2cd7079d529fa19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601282"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069217"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Verwenden Ihres kostenlosen Azure Active Directory-Abonnements in Office 365
 
@@ -37,7 +37,7 @@ Verwenden Sie eine private Browsersitzung (keine gewöhnliche Sitzung), um auf d
 
 2. Klicken Sie im Azure-Portal im linken Navigationsbereich auf **Azure Active Directory**.
 
-    ![Klicken Sie im Azure-Portal im linken Navigationsbereich auf „Azure Active Directory“.](media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
+    ![Klicken Sie im Azure-Portal im linken Navigationsbereich auf „Azure Active Directory“.](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
     Das **Azure Active Directory** Admin Center wird angezeigt.
 

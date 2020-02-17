@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Office 365 ausführen.'
-ms.openlocfilehash: 2db98c36091e6cc5be2eb5fa451b76a66f8ac49f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4420c2a684b020053bab88a14f46a73a795bd37d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601342"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069331"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -100,7 +100,7 @@ Im ersten Schritt laden Sie das AzCopy-Tool herunter (das Tool, das Sie in Schri
     > [!NOTE]
     > Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Import** im Security & Compliance Center verfügen. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
     
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
+3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
     
     Der Assistent für Importaufträge wird angezeigt.
     
@@ -108,11 +108,11 @@ Im ersten Schritt laden Sie das AzCopy-Tool herunter (das Tool, das Sie in Schri
     
 5. Klicken Sie auf der Seite **Möchten Sie Daten hochladen oder ausliefern?** auf **Daten hochladen** und dann auf **Weiter**.
     
-    ![Klicken Sie auf "Daten hochladen", um einen Importauftrags für den Netzwerkupload zu erstellen.](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Klicken Sie auf "Daten hochladen", um einen Importauftrags für den Netzwerkupload zu erstellen.](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. Führen Sie auf der Seite **Daten importieren** einen der folgenden Schritte aus: 
     
-    ![Kopieren der SAS-URL und Herunterladen des AzCopy-Tools auf der Seite "Daten importieren"](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![Kopieren der SAS-URL und Herunterladen des AzCopy-Tools auf der Seite "Daten importieren"](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
     a. Klicken Sie in Schritt 2 auf **SAS-URL für Netzwerkupload anzeigen**. Nachdem die SAS-URL angezeigt wird, klicken Sie auf **In die Zwischenablage kopieren**, fügen Sie die URL in eine Datei ein, und speichern Sie diese, damit Sie später darauf zugreifen können.
     
@@ -181,7 +181,7 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
     
 2. Starten Sie den Microsoft Azure Storage-Explorer, klicken Sie im linken Bereich mit der rechten Maustaste auf **Speicherkonten**, und klicken Sie dann auf **Mit Azure Storage verbinden**.
     
-    ![Klicken Sie mit der rechten Maustaste auf "Speicherkonten", und klicken Sie dann auf "Mit Azure Storage verbinden".](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Klicken Sie mit der rechten Maustaste auf "Speicherkonten", und klicken Sie dann auf "Mit Azure Storage verbinden".](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 3. Klicken Sie auf **SAS-URI (Shared Access Signature) oder -Verbindungszeichenfolge verwenden**, und klicken Sie dann auf **Weiter**.
     
@@ -191,11 +191,11 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
     
     Der **Container** ingestiondata wird geöffnet. Er enthält die PST-Dateien, die Sie in Schritt 2 hochgeladen haben. Der Container **ingestiondata** befindet sich unter **Speicherkonten** \> **(SAS-Attached Services)** \> **BLOB-Container**. 
     
-    ![Im Azure Storage-Explorer wird eine Liste der PST-Dateien angezeigt, die Sie hochgeladen haben.](media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    ![Im Azure Storage-Explorer wird eine Liste der PST-Dateien angezeigt, die Sie hochgeladen haben.](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
 6. Wenn Sie mit der Verwendung des Microsoft Azure Storage-Explorers fertig sind, klicken Sie mit der rechten Maustaste auf **ingestiondata**, und klicken Sie dann auf **Trennen**, um die Verbindung mit dem Azure-Speicherbereich zu trennen. Andernfalls wird beim nächsten Anfügen eine Fehlermeldung angezeigt. 
     
-    ![Klicken Sie mit der rechten Maustaste auf "ingestion", und klicken Sie dann auf "Trennen", um die Verbindung von Ihrem Azure-Speicherbereich zu trennen.](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+    ![Klicken Sie mit der rechten Maustaste auf "ingestion", und klicken Sie dann auf "Trennen", um die Verbindung von Ihrem Azure-Speicherbereich zu trennen.](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>Schritt 4: Erstellen der PST-Importzuordnungsdatei
 
@@ -247,7 +247,7 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Off
     
 2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Information Governance > Import > Importieren von PST-Dateien**.
     
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
+3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
     
     **Hinweis:** Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Import** im Security & Compliance Center verfügen, um einen Importauftrag erstellen zu können. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
     
@@ -255,19 +255,19 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Off
     
 5. Klicken Sie auf der Seite **Möchten Sie Daten hochladen oder ausliefern?** auf **Daten hochladen** und dann auf **Weiter**.
     
-    ![Klicken Sie auf "Daten hochladen", um einen Importauftrags für den Netzwerkupload zu erstellen.](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Klicken Sie auf "Daten hochladen", um einen Importauftrags für den Netzwerkupload zu erstellen.](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. Klicken Sie in Schritt 4 auf der Seite zum **Importieren von Daten** auf die Kontrollkästchen zur Angabe, dass **das Hochladen der Dateien abgeschlossen ist** und **Zugriff auf die Zuordnungsdatei besteht**, und klicken Sie dann auf **Weiter**.
     
-    ![Klicken Aktivieren Sie die beiden Kontrollkästchen in Schritt 4.](media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
+    ![Klicken Aktivieren Sie die beiden Kontrollkästchen in Schritt 4.](../media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
 7. Klicken Sie auf der Seite **Auswählen der Zuordnungsdatei** auf **Zuordnungsdatei auswählen**, um die PST-Importzuordnungsdatei zu übermitteln, die Sie in Schritt 4 erstellt haben. 
     
-    ![Klicken Sie auf "Zuordnungsdatei auswählen", um die CSV-Datei zu übermitteln, die Sie für den Importvorgang erstellt haben.](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![Klicken Sie auf "Zuordnungsdatei auswählen", um die CSV-Datei zu übermitteln, die Sie für den Importvorgang erstellt haben.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 8. Wenn der Name der CSV-Datei unter **Name der Zuordnungsdatei** angezeigt wird, klicken Sie auf **Überprüfen**, um die CSV-Datei auf Fehler zu überprüfen. 
     
-    ![Klicken Sie auf "Überprüfen", um die CSV-Datei auf Fehler zu überprüfen.](media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![Klicken Sie auf "Überprüfen", um die CSV-Datei auf Fehler zu überprüfen.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     Die CSV-Datei muss erfolgreich überprüft werden, um einen PST-Importauftrag zu erstellen. Der Dateiname wird grün angezeigt, wenn die Überprüfung der Datei erfolgreich war. Wenn die Überprüfung fehlschlägt, klicken Sie auf den Link **Protokoll anzeigen**. Der Bericht mit den Überprüfungsfehlern wird geöffnet, in dem für jede Zeile in der Datei, in der ein Fehler aufgetreten ist, eine Fehlermeldung aufgeführt ist.
     
@@ -277,7 +277,7 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Off
     
     Es wird eine Status-Flyout-Seite mit dem Status **Analyse in Bearbeitung ** angezeigt, und der neue Importauftrag wird in der Liste auf der Seite **PST-Dateien importieren** angezeigt. 
     
-11. Klicken Sie auf **Aktualisieren** ![Aktualisieren-Symbol](media/O365-MDM-Policy-RefreshIcon.gif), um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, wird der Status in **Analyse abgeschlossen** geändert.
+11. Klicken Sie auf **Aktualisieren** ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif), um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, wird der Status in **Analyse abgeschlossen** geändert.
     
     Sie können auf den Importauftrag klicken, um die Status-Flyout-Seite anzuzeigen, die ausführlichere Informationen zu dem Importauftrag enthält, z. B. den Status jeder PST-Datei, die in der Zuordnungsdatei aufgeführt ist.
  
@@ -287,7 +287,7 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Office 365
   
 1. Klicken Sie auf der Seite **Import von PST-Dateien** im Security & Compliance Center auf **bereit zum Import in Office 365** für den Importvorgang, den Sie in Schritt 5 erstellt haben. 
     
-    ![Klicken Sie neben dem von Ihnen erstellten Importvorgang auf "Bereit für den Import in Office 365".](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Klicken Sie neben dem von Ihnen erstellten Importvorgang auf "Bereit für den Import in Office 365".](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     Nun wird eine Flyout-Seite mit Informationen zu den PST-Dateien und anderen Informationen zur Importaufgabe angezeigt.
     
@@ -295,7 +295,7 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Office 365
     
     Die Seite **Ihre Daten filtern** wird angezeigt. Sie enthält die Datenerkenntnisse, die sich aus der Analyse ergeben haben, die Office 365 für die PST-Dateien ausgeführt hat, einschließlich Informationen über das Alter der Daten. An diesem Punkt haben Sie die Möglichkeit, die zu importierenden Daten zu filtern oder alle Daten ungeändert zu importieren. 
     
-    ![Sie können die Daten in den PST-Dateien kürzen oder alles importieren](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![Sie können die Daten in den PST-Dateien kürzen oder alles importieren](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 3. Führen Sie einen der folgenden Schritte aus:
     
@@ -309,7 +309,7 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Office 365
     
 4. Wenn Sie sich entschieden haben, alle Daten zu importieren, klicken Sie auf **Daten importieren**, um den Importvorgang zu starten. 
     
-    Der Status des Importauftrags wird auf der Seite **Import von PST-Dateien** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden. 
+    Der Status des Importauftrags wird auf der Seite **Import von PST-Dateien** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden. 
 
 ## <a name="how-the-import-process-works"></a>Funktionsweise des Importvorgangs
   
@@ -317,7 +317,7 @@ Sie können die Netzwerkuploadoption und den Office 365-Importdienst verwenden, 
   
 Es folgen eine Darstellung und eine Beschreibung des Netzwerkuploadprozesses, in dem PST-Dateien in Postfächer in Office 365 importiert werden.
   
-![Workflow des Netzwerkuploadprozesses zum Importieren von PST-Dateien in Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
+![Workflow des Netzwerkuploadprozesses zum Importieren von PST-Dateien in Office 365](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
 1. **PST-Importtool und Schlüssel für den privaten Azure Storage-Speicherort herunterladen**: Der erste Schritt besteht darin, das Befehlszeilentool AzCopy und einen Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien in einen Azure Storage-Speicherort in der Microsoft Cloud hochzuladen. Sie erhalten das Tool und den Schlüssel über die Seite **Import** im Security & Compliance Center. Der Schlüssel, der als SAS-Schlüssel (Shared Access Signature) bezeichnet wird, stellt Ihnen die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure Storage-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien in Office 365 ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
     

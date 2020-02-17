@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
-ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597232"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068882"
 ---
 # <a name="view-label-activity-for-documents"></a>Anzeigen der Bezeichnungsaktivität für Dokumente
 
@@ -44,7 +44,7 @@ Den Bezeichnungsaktivitäten-Explorer finden Sie im Security &amp;Compliance Cen
   
 Beachten Sie, dass für den Bezeichnungsaktivitäten-Explorer ein Office 365 Enterprise E5-Abonnement erforderlich ist.
   
-![Bezeichnungsaktivitäten-Explorer](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Bezeichnungsaktivitäten-Explorer](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="view-label-activities-for-files-or-folders"></a>Anzeigen von Bezeichnungsaktivitäten für Dateien oder Ordner
 
@@ -52,7 +52,7 @@ Am oberen Rand des Bezeichnungsaktivitäten-Explorers können Sie auswählen, ob
   
 Sie möchten möglicherweise Bezeichnungsaktivitäten für Ordner anzeigen, da beim Anwenden einer Bezeichnung auf einen Ordner alle Dateien in diesem Ordner ebenfalls diese Bezeichnung erhalten (mit Ausnahme von Dateien, auf die bereits eine Bezeichnung explizit angewendet wurde). Daher kann das Anwenden einer Bezeichnung auf einen Ordner sich auf eine beträchtliche Anzahl von Dateien auswirken. Weitere Informationen finden Sie unter [Anwenden einer Standardaufbewahrungsbezeichnung auf den gesamten Inhalt einer SharePoint-Bibliothek, eines Ordners oder einer Dokumentenmappe](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
-![Dropdownmenü, in dem die Bezeichnungsaktivitäten für Dateien und Ordner angezeigt werden](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
+![Dropdownmenü, in dem die Bezeichnungsaktivitäten für Dateien und Ordner angezeigt werden](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
 ### <a name="label-activities"></a>Bezeichnungsaktivitäten
 
@@ -62,12 +62,12 @@ Sie möchten möglicherweise Bezeichnungsaktivitäten für Ordner anzeigen, da b
 
  **Bezeichnungsänderungen** umfassen die folgenden potenziell riskanten Aktionen: **Entfernen** oder **Ändern** einer Bezeichnung. Sie können diese Ansicht verwenden, um diese riskanten Aktionen sowie den Benutzer, der sie ausgeführt hat, auf einen Blick zu sehen. In der Aktivitätsliste unterhalb des Diagramms können Sie eine Datei auswählen, und dann im Detailbereich auf der rechten Seite auf einen Link zu dieser Datei klicken. 
   
-![Detailbereich für Bezeichnungsaktivität](media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
+![Detailbereich für Bezeichnungsaktivität](../media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
   
 ## <a name="filter-label-activity"></a>Filtern von Bezeichnungsaktivitäten
 
 Sie können die Daten mühelos filtern, um alle Bezeichnungsaktivitäten für bestimmte Bezeichnungen, Dateien oder Benutzer anzuzeigen. Sie können Bezeichnungsaktivitäten auch nach Speicherort (SharePoint oder OneDrive for Business) filtern und danach, ob die Bezeichnung manuell oder automatisch angewendet wurde.
   
-![Filter für Bezeichnungsaktivitäten](media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
+![Filter für Bezeichnungsaktivitäten](../media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
   
 

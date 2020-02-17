@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Aktivitäten-Explorer rundet die Funktionalität der Datenklassifizierungsfunktion ab, indem Sie die Aktionen, die Benutzer mit Ihren beschrifteten Inhalten durchführen, anzeigen und filtern können.
-ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595472"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076764"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>Anzeigen von Aktivitäten mit beschrifteten Inhalten (Vorschau)
 
 Auf den Registerkarten „Übersicht über die Datenklassifizierung“ und „Inhalts-Explorer“ erfahren Sie, welche Inhalte gefunden und beschriftet wurden und wo sich diese Inhalte befinden. Der Aktivitäten-Explorer rundet diese Funktionalitäten ab, indem Sie überwachen können, was mit Ihren beschrifteten Inhalten geschieht. Der Aktivitäten-Explorer bietet eine Verlaufsanzeige.
 
-![Platzhalter für den Screenshot „Übersicht über den Aktivitäten-Explorer“](media/data-classification-activity-explorer-1.png)
+![Platzhalter für den Screenshot „Übersicht über den Aktivitäten-Explorer“](../media/data-classification-activity-explorer-1.png)
 
 Sie können die Daten filtern nach:
 
@@ -71,11 +71,11 @@ Wenn Sie wissen, welche Aktionen mit Ihren vertraulichen beschrifteten Inhalten 
 
 Sobald Ihre Filter festgelegt sind, haben Sie folgende Möglichkeiten:
 
-- Zeigen Sie mit der Maus auf ein Segment des Balkendiagramms, um die Anzahl der Elemente anzuzeigen, die in diese Kategorie fallen ![Mauszeiger Aktivitäten-Explorer](media/data-classification-activity-explorer-hover-over-2.png)
+- Zeigen Sie mit der Maus auf ein Segment des Balkendiagramms, um die Anzahl der Elemente anzuzeigen, die in diese Kategorie fallen ![Mauszeiger Aktivitäten-Explorer](../media/data-classification-activity-explorer-hover-over-2.png)
 - Exportieren von Daten
 - Wählen Sie ein beliebiges Element in der Liste aus und zeigen Sie die Details der Aktion im Flyout an.
 
-![Flyout für Details des Aktivitäten-Explorers](media/data-classification-activity-explorer-fly-out-3.png)
+![Flyout für Details des Aktivitäten-Explorers](../media/data-classification-activity-explorer-fly-out-3.png)
 
 ## <a name="see-also"></a>Siehe auch
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)

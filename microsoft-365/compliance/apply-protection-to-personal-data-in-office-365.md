@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Verwenden von DLP-Richtlinien (Data Loss Prevention, Verhindern von Datenverlusten) zum Schutz personenbezogener Daten in Office 365.
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596062"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079751"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Anwenden des Schutzes auf personenbezogene Daten in Office 365
 
@@ -46,7 +46,7 @@ Mit DLP können Sie Folgendes:
 
 Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
-![Optionen zum Erstellen einer DLP-Richtlinie](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![Optionen zum Erstellen einer DLP-Richtlinie](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 Diese Abbildung zeigt die Optionen für das Erstellen einer DLP-Richtlinie:
 
@@ -172,7 +172,7 @@ Mit vertraulichen Informationstypen, Bezeichnungen und DLP-Richtlinien können D
 
 Die folgende Abbildung zeigt zusätzliche Schutzfunktionen im Detail, die Sie zum Schutz personenbezogener Daten anwenden können.
 
-![Zusätzlicher Schutz für geschützten Zugriff auf personenbezogene Daten](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![Zusätzlicher Schutz für geschützten Zugriff auf personenbezogene Daten](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Informationen wie die Abbildung.
 
@@ -222,7 +222,7 @@ Kunden-Lockbox – Mit Kunden-Lockbox können Sie den Zugriff auf Ihre Daten dur
 
 Verwenden Sie Berechtigungen in SharePoint, um Benutzerzugriff auf die Website oder deren Inhalte zu gewähren bzw. einzuschränken. Fügen Sie einzelne Benutzer oder Azure Active Directory-Gruppen zu standardmäßigen SharePoint-Gruppen hinzu. Sie können auch eine benutzerdefinierte Gruppe für differenziertere Steuerung erstellen.
 
-![Berechtigungsstufen von „Vollzugriff“ bis zu „Nur anzeigen“](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![Berechtigungsstufen von „Vollzugriff“ bis zu „Nur anzeigen“](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 Die Abbildung enthält die Berechtigungsstufen von „Vollzugriff“ bis hin zu „Nur anzeigen“. Die folgende Tabelle enthält die gleichen Informationen.
 
@@ -368,7 +368,7 @@ Informationen zu Hybrididentitätsumgebungen mit AD FS finden Sie unter [Empfohl
 
 Die folgende Abbildung beinhaltet die Beziehungen zwischen Clouddiensten (SaaS, PaaS), Kontotypen (Mandantendomänenkonten und B2B-Konten) und Funktionen für den Dienstzugriff. Es ist wichtig zu wissen, welche Funktionen mit B2B-Konten verwendet werden können.
 
-![Clouddienste, Kontotypen und Zugriffsfunktionen](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![Clouddienste, Kontotypen und Zugriffsfunktionen](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 Für Zwecke der Barrierefreiheit wird im übrigen Teil dieses Abschnitts die obige Abbildung beschrieben.
 

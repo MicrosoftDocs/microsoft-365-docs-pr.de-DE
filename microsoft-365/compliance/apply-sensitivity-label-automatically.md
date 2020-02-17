@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: ff4a236a56fc2e8259204e7a0202d67176d44964
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b2b78c6b028dc34040019f5087f1f8773eed768d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596052"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079692"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -39,7 +39,7 @@ Informationen zu Lizenzanforderungen finden Sie unter [Abonnements- und Lizenzie
 
 Die Bezeichnungseinstellungen sind verfügbar, wenn Sie eine Vertraulichkeitzbezeichnung im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security & Compliance Center unter **Klassifizierung** > **Vertraulichkeitsbezeichnungen** erstellen.
 
-![Automatische Bezeichnungsoptionen für Vertraulichkeitsbezeichnungen](media/Sensitivity-labels-Auto-labeling-options.png)
+![Automatische Bezeichnungsoptionen für Vertraulichkeitsbezeichnungen](../media/Sensitivity-labels-Auto-labeling-options.png)
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung basierend auf Kriterien
 
@@ -47,7 +47,7 @@ Eines der leistungsstärksten Features von Vertraulichkeitsbezeichnungen ist die
 
 Sie können festlegen, dass Vertraulichkeitsbezeichnungen automatisch auf Inhalte angewendet werden, wenn bestimmte Typen vertraulicher Informationen enthalten sind. Wenn Se festlegen, dass eine Vertraulichkeitsbezeichnung automatisch angewendet werden soll, wird dieselbe Liste mit Typen vertraulicher Informationen angezeigt wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust). So können Sie z. B. automatisch die Bezeichnung „Streng vertraulich“ auf Inhalte anwenden, die personenbezogene Kundendaten wie Kreditkartennummern oder Sozialversicherungsnummern enthalten.
 
-![Optionen für Instanzenanzahl und Übereinstimmungsgenauigkeit](media/Sensitivity-labels-instance-count-match-accuracy.png)
+![Optionen für Instanzenanzahl und Übereinstimmungsgenauigkeit](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
 Nachdem Sie die Typen vertraulicher Informationen ausgewählt haben, können Sie die Kriterien eingrenzen, indem Sie die Instanzenanzahl oder Übereinstimmungsgenauigkeit ändern. Weitere Informationen finden Sie unter [Optimieren von Regeln, um die Übereinstimmung zu vereinfachen oder zu erschweren](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -55,7 +55,7 @@ Darüber hinaus können Sie auswählen, ob eine Bedingung alle vertraulichen Inf
 
 Wenn eine Vertraulichkeitsbezeichnung automatisch angewendet wird, wird dem Benutzer eine Benachrichtigung in der Office-App angezeigt. Sie können **OK** auswählen, um die Benachrichtigung zu schließen.
 
-![Benachrichtigung darüber, dass ein Dokument automatisch mit einer Bezeichnung versehen wurde](media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![Benachrichtigung darüber, dass ein Dokument automatisch mit einer Bezeichnung versehen wurde](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Empfehlen des Anwendens einer Vertraulichkeitsbezeichnung
 
@@ -63,11 +63,11 @@ Wenn Sie es vorziehen, können Sie Ihren Benutzern empfehlen, die Bezeichnung an
 
 Empfohlene Bezeichnungen werden in Word, PowerPoint und Excel unterstützt (Azure Information Protection-Client für einheitliche Bezeichnungen muss installiert sein).
 
-![Option zum Empfehlen einer Vertraulichkeitsbezeichnung](media/Sensitivity-labels-Recommended-label-option.png)
+![Option zum Empfehlen einer Vertraulichkeitsbezeichnung](../media/Sensitivity-labels-Recommended-label-option.png)
 
 Im Folgenden finden Sie ein Beispiel für eine Aufforderung, wenn Sie Kriterien zum Anwenden einer Bezeichnung als empfohlene Aktion, und einen benutzerdefinierten Richtlinientipp. Sie können den Text festlegen, der im Richtlinientipp angezeigt wird.
 
-![Aufforderung zum Anwenden einer empfohlene Bezeichnung](media/Sensitivity-label-Prompt-for-required-label.png)
+![Aufforderung zum Anwenden einer empfohlene Bezeichnung](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>Anwenden automatischer oder empfohlener Bezeichnungen
 
