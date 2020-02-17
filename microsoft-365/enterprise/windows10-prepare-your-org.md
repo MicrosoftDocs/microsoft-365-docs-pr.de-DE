@@ -45,9 +45,9 @@ Verwenden Sie den entsprechenden Wert in der Tabelle unten, wenn Sie die Verwalt
 | Ebene | Gesammelte Daten | Wert |
 |:--- |:--- |:--- |
 | Sicherheit | Nur Sicherheitsdaten. | 0 |
-| Basic | Sicherheitsdaten und grundlegende System-und Qualitätsdaten. | 1  |
-| Verbesserte | Sicherheitsdaten, grundlegende System-und Qualitätsdaten sowie erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten. | 2  |
-| Vollständig | Sicherheitsdaten, grundlegende System-und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3  |
+| Basic | Sicherheitsdaten und grundlegende System-und Qualitätsdaten. | 1 |
+| Verbesserte | Sicherheitsdaten, grundlegende System-und Qualitätsdaten sowie erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten. | 2 |
+| Vollständig | Sicherheitsdaten, grundlegende System-und Qualitätsdaten, erweiterte Einblicke und erweiterte Zuverlässigkeitsdaten sowie vollständige Diagnosedaten. | 3 |
 
 Sie können Diagnosedaten mit einer der folgenden Methoden aktivieren:
 
