@@ -70,7 +70,7 @@ Finanzorganisationen oder Sci-Entitäten, die dieser Verordnung unterliegen, kö
 - [Business Continuity and Disaster Recovery (BCDR): Azure gepaart Regionen](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Compliance-Map der regulatorischen Prinzipien für Cloud Computing und Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
 - [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- [Compliance der Finanzdienstleistungs in Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Financial Services Compliance in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
 - [Microsoft-und sec-Regel 17a-4](offering-SEC-17a-4.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

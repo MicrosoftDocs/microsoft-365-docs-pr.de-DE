@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 700c5c9892d5cd04f3f56bf1f3d498cf5d2467af
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1a1e8b19ff214d29dc8a309cce4f79de92cf8155
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602392"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071292"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>FIPS-Publikation 140-2 (Federal Information Processing Standard)
 
