@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung.
-ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836725"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077601"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -38,7 +38,7 @@ Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp nutze
 - vertrauliche Informationen sicherer behandeln; 
 - Verwendbarkeit mit mehreren Microsoft Cloud Services.
 
-![EDM-basierte Klassifikation](media/EDMClassification.png)
+![EDM-basierte Klassifikation](../media/EDMClassification.png)
 
 Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrauliche Informationstypen zu erstellen, die sich auf genaue Werte in einer Datenbank mit vertraulichen Informationen beziehen. Die Datenbank kann täglich oder wöchentlich aktualisiert werden und bis zu 10 Millionen Datenzeilen enthalten. Mitarbeiter, Patienten oder Kunden kommen und gehen und Datensätze ändern sich, aber Ihre benutzerdefinierten vertraulichen Informationstypen bleiben aktuell und anwendbar. Darüber hinaus können Sie EDM-basierte Klassifikation mit Richtlinien verwenden, z. B. [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) (Data Loss Prevention, DLP) oder [Microsoft Cloud App Security-Dateirichtlinien](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
@@ -473,7 +473,7 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 
 9. Geben Sie im Abschnitt **Name** einen Namen und eine Beschreibung für die Regel ein.
 
-10. Wählen Sie im Abschnitt **Bedingungen** in der Liste **+ Bedingung hinzufügen**  **Inhalt enthält vertraulichen Typ** aus.<br/>![Inhalt enthält vertrauliche Informationstypen](media/edm-dlp-newrule-conditions.png)<br/>
+10. Wählen Sie im Abschnitt **Bedingungen** in der Liste **+ Bedingung hinzufügen**  **Inhalt enthält vertraulichen Typ** aus.<br/>![Inhalt enthält vertrauliche Informationstypen](../media/edm-dlp-newrule-conditions.png)<br/>
 
 11. Suchen Sie den vertraulichen Informationstyp, den Sie beim Einrichten Ihres Regelpakets erstellt haben, und wählen Sie dann **+ Hinzufügen** aus.  
     Wählen Sie dann **Fertig** aus.

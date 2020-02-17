@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
-ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
+ms.openlocfilehash: c7b945ea464cbb18ae19eaa9f9e4a8df0313b0c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41779030"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073637"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Office 365 im Rahmen der DSGVO und des CCPA
 
@@ -100,14 +100,14 @@ In der folgenden Tabelle sind die Office 365-Anwendungen aufgeführt, mit denen 
 
 | | |
 | :---: | :---:|
-![Kalendersymbol](media/O365-DSR-Doc-Final_image3.png) <br> Kalender | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> SharePoint  |
-| ![Excel-Symbol](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business-Symbol](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
-| ![Office Lens-Symbol](media/o365-lens-64x64.png) <br> Office Lens | ![Symbol "Aufgaben"](media/O365-DSR-Doc-Final_image8.png) <br> Aufgaben |
-| ![OneDrive-Symbol](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams-Symbol](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote-Symbol](media/o365-onenote-64x64.png) <br> OneNote| ![Symbol 'Aufgabe'](media/o365-todo-64x64.png) <br> Aufgabe |
-| ![Outlook-Symbol](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Videosymbol](media/O365-DSR-Doc-Final_image14.png) <br> Video |
-| ![Personensymbol](media/O365-DSR-Doc-Final_image15.png) <br> Personen | ![Visio-Symbol](media/o365-visio-64x64.png) <br> Visio |
-| ![PowerPoint-Symbol](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word-Symbol](media/o365-word-64x64.png) <br> Word
+![Kalendersymbol](../media/O365-DSR-Doc-Final_image3.png) <br> Kalender | ![SharePoint-Symbol](../media/o365-sharepoint-64x64.png) <br> SharePoint  |
+| ![Excel-Symbol](../media/o365-excel-64x64.png) <br> Excel | ![Skype for Business-Symbol](../media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
+| ![Office Lens-Symbol](../media/o365-lens-64x64.png) <br> Office Lens | ![Symbol "Aufgaben"](../media/O365-DSR-Doc-Final_image8.png) <br> Aufgaben |
+| ![OneDrive-Symbol](../media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams-Symbol](../media/o365-teams-64x64.png) <br> Teams |
+| ![OneNote-Symbol](../media/o365-onenote-64x64.png) <br> OneNote| ![Symbol 'Aufgabe'](../media/o365-todo-64x64.png) <br> Aufgabe |
+| ![Outlook-Symbol](../media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Videosymbol](../media/O365-DSR-Doc-Final_image14.png) <br> Video |
+| ![Personensymbol](../media/O365-DSR-Doc-Final_image15.png) <br> Personen | ![Visio-Symbol](../media/o365-visio-64x64.png) <br> Visio |
+| ![PowerPoint-Symbol](../media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word-Symbol](../media/o365-word-64x64.png) <br> Word
 ||
 
 >[!NOTE]
@@ -196,7 +196,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![Schlüsselwortdialog](media/O365-DSR-Doc_image18.png)
+![Schlüsselwortdialog](../media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>Beispiel 2
 
@@ -206,7 +206,7 @@ In diesem Beispiel werden Excel- oder Word-Dateien auf SharePoint Online-Website
 
 ***GUI***
 
-![Schlüsselwortdialog](media/O365-DSR-Doc_image19.png)
+![Schlüsselwortdialog](../media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>Beispiel 3
 
@@ -218,7 +218,7 @@ In diesem Beispiel werden E-Mail-Nachrichten zurückgegeben, die die angegebene 
 
 ***GUI***
 
-![Schlüsselwortdialog](media/O365-DSR-Doc_image20.png)
+![Schlüsselwortdialog](../media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Arbeiten mit teilweise indizierten Elemente in der Inhaltssuche
 
@@ -435,13 +435,13 @@ Wenn Sie die Ergebnisse einer Inhaltssuche exportieren, können E-Mail-Elemente 
 Um Elemente zu exportieren und herunterzuladen:
 
 1. Öffnen der Inhaltssuche im Security & Compliance Center.
-2. Klicken Sie auf der Fly-Out-Navigation auf der Seite der Suche auf ![Symbol herunterladen](media/o365-dsr_image21.png), **Mehr** und dann auf **Ergebnisse exportieren**. Sie können auch einen Bericht exportieren.
+2. Klicken Sie auf der Fly-Out-Navigation auf der Seite der Suche auf ![Symbol herunterladen](../media/o365-dsr_image21.png), **Mehr** und dann auf **Ergebnisse exportieren**. Sie können auch einen Bericht exportieren.
 3. Füllen Sie die Abschnitte auf der Fly-Out-Navigation der **Exportergebnisse** aus. Stellen Sie sicher, dass Sie Bildlaufleiste verwenden, um alle Exportoptionen anzuzeigen.
 4. Wechseln Sie wieder zur Seite der Inhaltssuche im Security & Compliance Center und klicken Sie auf die Registerkarte **Export**.
 5. Klicken Sie auf **aktualisieren**, um die Seite zu aktualisieren.
 6. Klicken Sie unter der Spalte **Name** auf den Exportauftrag, den Sie erstellt haben. Der Name des Exportauftrags ist der Name der Inhaltssuche gefolgt von der Endung **\_Export**.
 7. Klicken Sie auf der Fly-out-Navigation unter **Exportschlüssel** auf **In Zwischenablage kopieren**. Sie werden diesen Schlüssel in Schritt 10 nutzen, um die Suchergebnisse herunterzuladen.
-8. Klicken Sie oben auf der Fly-out-Navigation auf ![Symbol herunterladen](media/o365-dsr_image21.png) und **Ergebnisse herunterladen**.
+8. Klicken Sie oben auf der Fly-out-Navigation auf ![Symbol herunterladen](../media/o365-dsr_image21.png) und **Ergebnisse herunterladen**.
 9. Wenn Sie aufgefordert werden, das **Microsoft Office 365 eDiscovery Export Tool** zu installieren, klicken Sie auf **installieren**.
 10. Fügen Sie im **eDiscovery-Exporttool** den Export-Schlüssel, den Sie in Schritt 7 kopiert haben, in das entsprechende Feld ein.
 11. Klicken Sie auf **Durchsuchen**, um das Verzeichnis anzugeben, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen.
@@ -630,11 +630,11 @@ Während die meisten Kundendaten mit den im vorherigen Abschnitt beschriebenen A
 
 ||||
 |:-----:|:-----:|:-----:|:-----:|
-| ![Access-Symbol](media/o365-access-64x64.png) <br> [Access](#access) | ![Office-Symbol](media/O365-DSR-Doc_image22.png) <br> [Business App <br> für Office 365](#business-apps-for-office-365) | ![Office-Symbol](media/O365-DSR-Doc_image22.png) <br> [Bildung](#education)|
-| ![Flow-Symbol](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Symbol "Formulare"](media/o365-forms-64x64.png) <br> [Formulare](#forms) |![Kaizala-Symbol](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
-| ![Planner-Symbol](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps-Symbol](media/o365-powerapps-64x64.png) <br> [PowerApps](#powerapps) |![Power BI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project-Symbol](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher-Symbol](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream-Symbol](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard-Symbol](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-|![Yammer-Symbol](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+| ![Access-Symbol](../media/o365-access-64x64.png) <br> [Access](#access) | ![Office-Symbol](../media/O365-DSR-Doc_image22.png) <br> [Business App <br> für Office 365](#business-apps-for-office-365) | ![Office-Symbol](../media/O365-DSR-Doc_image22.png) <br> [Bildung](#education)|
+| ![Flow-Symbol](../media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Symbol "Formulare"](../media/o365-forms-64x64.png) <br> [Formulare](#forms) |![Kaizala-Symbol](../media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
+| ![Planner-Symbol](../media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps-Symbol](../media/o365-powerapps-64x64.png) <br> [PowerApps](#powerapps) |![Power BI-Symbol](../media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
+|![Project-Symbol](../media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher-Symbol](../media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream-Symbol](../media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway-Symbol](../media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard-Symbol](../media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer-Symbol](../media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access

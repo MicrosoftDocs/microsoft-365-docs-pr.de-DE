@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: 32bb9510d789b56bc48b133dee4abd948009e3a9
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 5e2a1e328888a6aadf5c3057bbe7882ac0f72fbe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079210"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -59,11 +59,11 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
     Die Seite **Überwachungsprotokollsuche** wird angezeigt.
 
-    ![Die Seite "Überwachungsprotokollsuche"](media/AuditLogRetentionPolicy1.png)
+    ![Die Seite "Überwachungsprotokollsuche"](../media/AuditLogRetentionPolicy1.png)
 
 3. Klicken Sie auf **Neue Aufbewahrungsrichtlinie**, und führen Sie dann auf der Flayoutseite die folgenden Felder aus:
 
-    ![Flyoutseite "Aufbewahrungsrichtlinien für Überwachungsprotokolle"](media/AuditLogRetentionPolicy2.png)
+    ![Flyoutseite "Aufbewahrungsrichtlinien für Überwachungsprotokolle"](../media/AuditLogRetentionPolicy2.png)
 
    a. **Name:** Der Name der Aufbewahrungsrichtlinie für Überwachungsprotokolle. Dieser Name muss in Ihrer Organisation eindeutig sein.
    

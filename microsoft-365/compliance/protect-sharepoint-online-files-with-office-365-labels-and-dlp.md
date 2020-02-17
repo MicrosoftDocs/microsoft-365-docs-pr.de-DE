@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: 75ecf551d4b675a1b1eef4d26742d833aea28059
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601692"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081748"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien Aufbewahrungsbezeichnungen und Verhindern von Datenverlust
 
@@ -118,7 +118,7 @@ Verwenden Sie die Schritte, um die Aufbewahrungsbezeichnungen auf die Dokumentor
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Aufbewahrungsbezeichnungen für die vier Arten von SharePoint Online-Teamwebsites.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![Aufbewahrungsbezeichnungen für die vier Arten von SharePoint Online-Teamwebsites.](../media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>DLP-Richtlinien für Ihre SharePoint Online-Websites
 
@@ -169,7 +169,7 @@ Gehen Sie wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer b
     
 Hier sehen Sie die sich ergebende Konfiguration für vertrauliche SharePoint Online-Teamwebsites.
   
-![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Aufbewahrungsbezeichnung „Vertraulich“.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Aufbewahrungsbezeichnung „Vertraulich“.](../media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Verwenden Sie anschließend diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benutzer blockiert, wenn sie ein Dokument auf einer vertraulichen SharePoint Online-Teamwebsite außerhalb einer Organisation freigeben.
   
@@ -215,7 +215,7 @@ Verwenden Sie anschließend diese Schritte, um eine DLP-Richtlinie zu konfigurie
     
 Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche SharePoint Online-Teamwebsites.
   
-![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Aufbewahrungsbezeichnung „Streng vertraulich“.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Aufbewahrungsbezeichnung „Streng vertraulich“.](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -223,9 +223,7 @@ Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche SharePo
     
 ## <a name="see-also"></a>Siehe auch
 
-[Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
-[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

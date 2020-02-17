@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 747959fcdf8840644e4b7de4de02eb250d062423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e16f206c858d35dd2894b44d398e375c0a59fde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596452"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073257"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>DSGVO für Office Web Apps Server und Office Online Server
 
@@ -24,7 +24,7 @@ Telemetriedaten von Office Online Server und Office Web Apps Server werden in Fo
 
 Jede Protokollzeile enthält eine CorrelationID. Verwandte Protokollzeilen teilen sich die gleiche CorrelationID. Jede CorrelationID ist mit einer einzelnen SessionID verknüpft, und eine SessionID kann mit vielen CorrelationIDs zusammenhängen. Jede SessionID kann mit einer einzelnen UserID verknüpft sein, wobei einige Sitzungen anonym sein können und daher keine zugehörige UserID besitzen. Um zu bestimmen, welche Daten einem bestimmten Benutzer zugeordnet sind, ist es daher möglich, Zuordnungen vorzunehmen von einer einzelnen UserID zu den diesem Benutzer zugeordneten SessionIDs, von diesen SessionIDs zu den zugehörigen CorrelationIDs und von diesen CorrelationIDs zu allen Protokollen in diesen Korrelationen. Im nachstehenden Diagramm sind die Beziehungen zwischen den unterschiedlichen IDs dargestellt.
 
-![](media/gdpr-for-office-online-server-image1.jpg)
+![](../media/gdpr-for-office-online-server-image1.jpg)
 
 ## <a name="gathering-logs"></a>Erfassen von Protokollen
 

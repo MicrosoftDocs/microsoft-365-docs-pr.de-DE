@@ -230,7 +230,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias*@*Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -268,13 +268,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
   - `AGENT`
 
@@ -292,7 +292,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit `EXPAND` `REDIRECT`-,- `RESOLVE` und-Ereignissen verwendet, um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -310,7 +310,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Hour `mm` , = Minute `ss` , = Second `fff` , = Brüche einer Sekunde, und `Z` `Zulu`eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 

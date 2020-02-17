@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den Data Governance-Berichten im Office 365 Security &amp; Compliance Center können Sie schnell anzeigen, ob Ihre Bezeichnungen wie gewünscht auf Inhalte angewendet werden.
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597212"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068792"
 ---
 # <a name="view-the-data-governance-reports"></a>Anzeigen der Data Governance-Berichte
 
@@ -38,10 +38,10 @@ Alle diese Berichte zeigen mit Bezeichnungen versehene Inhalte aus Exchange, Sha
   
 Sie finden diese Berichte im Security &amp; Compliance Center \> **Informationsgovernance** \> **Dashboard**.
   
-![Diagramm mit Bezeichnungstrends der letzten 90 Tage](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![Diagramm mit Bezeichnungstrends der letzten 90 Tage](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 Sie können die Data Governance-Berichte nach Datum (bis zu 90 Tage) und Speicherort (Exchange, SharePoint und OneDrive for Business) filtern. Es kann bis zu 24 Stunden dauern, bis die aktuellsten Daten in den Berichten angezeigt werden.
   
-![Filter für Data Governance-Berichte](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![Filter für Data Governance-Berichte](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

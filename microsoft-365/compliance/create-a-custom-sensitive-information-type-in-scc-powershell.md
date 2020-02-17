@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für DLP im Security & Compliance Center erstellen und importieren.
-ms.openlocfilehash: eba95bdb0bf442e143a3f7f3b701e8f46d641655
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05f43149485bb368f1082180031913293be6d8e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595682"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078211"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell
 
@@ -135,7 +135,7 @@ Eine Regel definiert eine oder mehrere Entitäten (vertrauliche Informationstype
 
 Hier sehen Sie das das einfachste Szenario. Sie möchten, dass Ihre DLP-Richtlinie Inhalt identifiziert, der die Mitarbeiter-ID Ihrer Organisation enthält. Diese ist als neunstellige Zahl formatiert. Das Muster bezieht sich also auf einen regulären Ausdruck, der in der Regel enthalten ist, die neunstellige Zahlen erkennt. Jeder Inhalt, der eine neunstellige Zahl beinhaltet, entspricht dem Muster.
   
-![Diagramm einer Entität mit einem Muster](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![Diagramm einer Entität mit einem Muster](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 Obwohl dieses Muster einfach ist, führt möglicherweise jedoch zu einer Menge falsch positiver Ergebnisse, indem es Inhalte mit einer neunstelligen Zahl erkennt, die nicht unbedingt eine Mitarbeiter-ID ist.
   
@@ -145,7 +145,7 @@ Aus diesem Grund wird eine Entität in der Regel mit mehr als einem Muster defin
   
 Um zum Beispiel die Wahrscheinlichkeit zu erhöhen, Inhalt zu erkennen, der eine Mitarbeiter-ID enthält, können Sie ein anderes Muster definieren, das z. B. auch ein Einstellungsdatum identifiziert. Sie können noch ein weiteres Muster definieren, das sowohl ein Einstellungsdatum als auch ein Stichwort (z. B. „Mitarbeiter-ID“) zusätzlich zur neunstelligen Zahl identifiziert.
   
-![Diagramm einer Entität mit mehreren Mustern](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![Diagramm einer Entität mit mehreren Mustern](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 Beachten Sie einige wichtige Aspekte dieser Struktur:
   
@@ -162,7 +162,7 @@ Eine Entität ist ein vertraulicher Informationstyp (z. B. eine Kreditkartennumm
   
 Als Nächstes generieren Sie eine GUID für die Entität. Es gibt mehrere Methoden zum Generieren von GUIDs, aber Sie können dies ganz einfach in PowerShell durch die Eingabe von „[guid]::NewGuid()“ durchführen. Später fügen Sie die Entitäts-GUID ebenfalls zum Abschnitt mit en lokalisierten Zeichenfolgen hinzu.
   
-![XML-Markup mit Regel- und Entitätselementen](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![XML-Markup mit Regel- und Entitätselementen](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Welches Muster möchten Sie abgleichen? [Muster-Element, IdMatch-Element, Regex-Element]
 
@@ -170,11 +170,11 @@ Das Muster enthält die Liste der Dinge, nach denen der vertrauliche Information
   
 Allen der folgenden Muster ist gemeinsam, dass sie sich alle auf denselben regulären Ausdruck beziehen, der nach einer neunstelligen Zahl sucht (\d{9}), die von Leerzeichen eingeschlossen ist (\s) ... (\s). Das Element "IdMatch" verweist auf diesen regulären Ausdruck, und er ist die allgemeine Anforderung für alle Muster, die nach der Mitarbeiter-ID-Entität suchen. „IdMatch“ ist der Bezeichner, für den das Muster eine Entsprechung sucht, wie z. B. die Mitarbeiter-ID, Kreditkartennummer oder Sozialversicherungsnummern. Ein Pattern-Element muss genau ein IdMatch-Element haben.
   
-![XML-Markup mit mehreren Pattern-Elementen, die auf ein einzelnes Regex-Element verweisen](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![XML-Markup mit mehreren Pattern-Elementen, die auf ein einzelnes Regex-Element verweisen](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 Wenn eine Übereinstimmung gefunden wurde, gibt ein Muster eine Anzahl und einen Zuverlässigkeitsgrad zurück, die Sie in den Bedingungen Ihrer DLP-Richtlinie verwenden können. Wenn Sie eine Bedingung zum Erkennen eines Typs vertraulicher Informationen zu einer DLP-Richtlinie hinzufügen, können Sie die Anzahl und den Zuverlässigkeitsgrad wie hier gezeigt bearbeiten. Der Zuverlässigkeitsgrad (auch als „Übereinstimmungsgenauigkeit“ bezeichnet) wird weiter unten in diesem Thema erläutert.
   
-![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Beim Erstellen des regulären Ausdrucks müssen Sie berücksichtigen, dass es potenzielle Probleme geben kann. Wenn Sie z. B. einen regulären Ausdruck schreiben und hochladen, der zu viel Inhalt erkennt, kann dies die Leistung beeinträchtigen. Weitere Informationen zu diesen potenziellen Problemen finden Sie im Abschnitt [Mögliche Überprüfungsprobleme, die Sie beachten müssen](#potential-validation-issues-to-be-aware-of).
   
@@ -186,7 +186,7 @@ Ein Muster kann mehrere "Match"-Elemente umfassen, die direkt im Element "Patter
   
 Sie können das optionale minCount-Attribut verwenden, um anzugeben, wie viele Instanzen einer Übereinstimmung für jedes der Match-Elemente gefunden werden müssen. Sie können z. B. angeben, dass eine Übereinstimmung mit einem Muster nur dann vorliegt, wenn mindestens zwei Stichwörter aus einer Stichwortliste gefunden werden.
   
-![XML-Markup mit Match-Element und minOccurs-Attribut](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![XML-Markup mit Match-Element und minOccurs-Attribut](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Stichwörter [Elemente „Keyword“, „Group“ und „Term“, matchStyle- und caseSensitive-Attribute]
 
@@ -200,7 +200,7 @@ Stichwörter werden als eine Liste von Term-Elementen in ein Group-Element einge
     
 Sie können auch das caseSensitive-Attribut des Term-Elements verwenden, um festzulegen, dass der Inhalt genau mit dem Stichwort übereinstimmen muss, einschließlich Groß- und Kleinschreibung.
   
-![XML-Markup mit Match-Elementen, die auf Stichwörter verweisen](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![XML-Markup mit Match-Elementen, die auf Stichwörter verweisen](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>Reguläre Ausdrücke [Element „Regex“]
 
@@ -214,7 +214,7 @@ Beispielsweise steht auf einem Mitarbeiterausweis außer der Mitarbeiter-ID auch
   
 Weitere Informationen finden Sie unter [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md).
   
-![XML-Markup mit Match-Element, das auf eine integrierte Funktion verweist](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![XML-Markup mit Match-Element, das auf eine integrierte Funktion verweist](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Verschiedene Kombinationen von Nachweisen [Element „Any“, minMatches- und maxMatches-Attribute]
 
@@ -276,15 +276,15 @@ In diesem Beispiel ist ein Muster für die Gehaltsrevision mit mindestens drei e
 
 Der Typ für vertrauliche Informationen sucht nach einem Muster, das eine Mitarbeiter-ID darstellt, und als Teil dieses Musters sucht er auch nach bestätigenden Nachweisen, wie z. B. dem Stichwort „ID“. Daraus folgt: Je näher dieser Nachweis bei der Entität liegt, desto wahrscheinlicher ist das Muster eine tatsächliche Mitarbeiter-ID. Sie können festlegen, wie nah andere Nachweise bei der Entität im Muster liegen müssen, indem Sie das erforderliche patternsProximity-Attribut des Entity-Elements verwenden.
   
-![XML-Markup mit patternsProximity-Attribut](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![XML-Markup mit patternsProximity-Attribut](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 Der patternsProximity-Attributwert definiert für jedes Muster in der Entität den Abstand (in Unicode-Zeichen) von der IdMatch-Position für alle anderen Übereinstimmungen, die für dieses Muster angegeben wurden. Das Näherungsfenster wird von der IdMatch-Position verankert, wobei das Fenster links und rechts von „IdMatch“ erweitert wird.
   
-![Diagramm des Näherungsfensters](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![Diagramm des Näherungsfensters](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 Im nachstehenden Beispiel wird gezeigt, in welcher Weise das Näherungsfenster den Musterabgleich beeinflusst, wobei das IdMatch-Element für die benutzerdefinierte Employee ID-Entität mindestens eine bestätigende Übereinstimmung von Stichwort oder Datum erfordert. Aufgrund von ID2 und ID3 gibt es nur eine Übereinstimmung für ID1, und im Näherungsfenster wird kein oder nur ein teilweise bestätigender Nachweis gefunden.
   
-![Diagramm von bestätigenden Nachweisen und Näherungsfenster](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagramm von bestätigenden Nachweisen und Näherungsfenster](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 Beachten Sie, dass bei E-Mails der Text und jede Anlage als separate Elemente behandelt werden. Dies bedeutet, dass sich das Näherungsfenster nicht über das Ende des jeweiligen Elements erstreckt. Für jedes Element (Anlage oder Text) muss sowohl idMatch als auch der bestätigende Nachweise vorhanden sein.
   
@@ -294,7 +294,7 @@ Je mehr Nachweise für ein Muster erforderlich sind, desto höher ist der Zuverl
   
 Das Pattern-Element hat ein erforderliches confidenceLevel-Attribut. Sie können sich den Wert für „confidenceLevel“ (eine ganze Zahl zwischen 1 und 100) als eine eindeutige ID für jedes Muster in einer Entität vorstellen – Sie müssen den Mustern in einer Entität unterschiedlichen Zuverlässigkeitsgrade zuweisen. Der genaue Wert der ganzen Zahl spielt keine Rolle – wählen Sie einfach Zahlen aus, die Ihrem Complianceteam sinnvoll erscheinen. Nachdem Sie den benutzerdefinierten Typ für vertrauliche Informationen hochgeladen und anschließend eine DLP-Richtlinie erstellt haben, können Sie in den Bedingungen der von Ihnen erstellten Regeln auf diese Zuverlässigkeitsgrade verweisen.
   
-![XML-Markup mit Pattern-Elementen und verschiedenen Werten für das confidenceLevel-Attribut](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![XML-Markup mit Pattern-Elementen und verschiedenen Werten für das confidenceLevel-Attribut](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 Zusätzlich zum confidenceLevel-Attribut für jedes Muster hat die Entität ein recommendedConfidence-Attribut. Das recommendedConfidence-Attribut kann als Standardzuverlässigkeitsgrad für die Regel angesehen werden. Wenn Sie beim Erstellen einer Regel in einer DLP-Richtlinie keinen Zuverlässigkeitsgrad angeben, nimmt die Regel die Übereinstimmung basierend auf dem empfohlenen Zuverlässigkeitsgrad für die Entität vor.
   
@@ -302,11 +302,11 @@ Zusätzlich zum confidenceLevel-Attribut für jedes Muster hat die Entität ein 
 
 Wenn Ihr Complianceteam Office 365 Security &amp; Compliance Center zum Erstellen von DLP-Richtlinien in verschiedenen Gebietsschemas und in verschiedenen Sprachen verwendet, können Sie lokalisierte Versionen des Namens und der Beschreibung Ihres benutzerdefinierten Typs für vertrauliche Informationen bereitstellen. Wenn Ihr Complianceteam Office 365 in einer anderen, von Ihnen unterstützten Sprache verwendet, wird der lokalisierte Name in der Benutzeroberfläche angezeigt.
   
-![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Das Rules-Element muss ein LocalizedStrings-Element enthalten, das ein Resource-Element enthält, das auf die GUID Ihrer benutzerdefinierten Entität verweist. Jedes Resource-Element enthält wiederum ein oder mehrere Name-Elemente und Description-Elemente, die jeweils das langcode-Attribut verwenden, um eine lokalisierte Zeichenfolge für eine bestimmte Sprache bereitzustellen.
   
-![XML-Markup mit Inhalt des LocalizedStrings-Elements](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![XML-Markup mit Inhalt des LocalizedStrings-Elements](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 Beachten Sie, dass Sie lokalisierte Zeichenfolgen nur für die Anzeige Ihres benutzerdefinierten Typs für vertrauliche Informationen in der Benutzeroberfläche von Security &amp; Compliance Center verwenden. Sie können keine lokalisierte Zeichenfolgen verwenden, um verschiedene lokalisierte Versionen einer Stichwortliste oder eines regulären Ausdrucks bereitzustellen.
   
@@ -342,7 +342,7 @@ Das Version-Element ist ebenfalls wichtig. Wenn Sie das Regelpaket zum ersten Ma
 
 Wenn es fertig ist, sollte das RulePack-Element wie folgt aussehen.
   
-![XML-Markup mit dem RulePack-Element](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![XML-Markup mit dem RulePack-Element](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
   
 ## <a name="changes-for-exchange-online"></a>Änderungen für Exchange Online
 

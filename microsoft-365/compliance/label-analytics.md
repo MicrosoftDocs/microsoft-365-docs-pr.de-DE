@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen erstellt haben, können Sie überprüfen, wie sie mandantenübergreifend verwendet werden. Mithilfe der Analyse der Bezeichnungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center können Sie schnell sehen, welche Bezeichnungen am häufigsten verwendet werden und wo sie angewendet werden.
-ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600582"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072286"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
 
@@ -36,7 +36,7 @@ Mit der Analyse der Bezeichnungen können Sie beispielsweise Folgendes anzeigen:
 
 Sie finden die Analyse der Bezeichnungen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/labelanalytics) oder [Microsoft 365 Security Center](https://security.microsoft.com/labelanalytics) > **Klassifizierung** > **Analyse der Bezeichnungen**.
 
-![Seite zur Analyse der Bezeichnungen](media/label-analytics-page.png)
+![Seite zur Analyse der Bezeichnungen](../media/label-analytics-page.png)
 
 ## <a name="sensitivity-label-usage"></a>Vertraulichkeitsbezeichnungsnutzung
 
@@ -50,7 +50,7 @@ Für die Vertraulichkeitsbezeichnungsnutzung:
 - Wenn Sie die Anzahl für jede Topbezeichnung anzeigen möchten, zeigen Sie auf das Balkendiagramm und lesen Sie die QuickInfo, die angezeigt wird.
 - Der Bericht zeigt, wo Vertraulichkeitsbezeichnungen pro App angewendet werden (während Aufbewahrungsbezeichnungen pro Standort angezeigt werden).
 
-![Bericht zur Vertraulichkeitsbezeichnungsnutzung](media/sensitivity-label-usage-report.png)
+![Bericht zur Vertraulichkeitsbezeichnungsnutzung](../media/sensitivity-label-usage-report.png)
 
 ## <a name="retention-label-usage"></a>Aufbewahrungsbezeichnungsnutzung
 
@@ -63,7 +63,7 @@ Für die Aufbewahrungsbezeichnungsnutzung:
 - Der Bericht zeigt, wo Aufbewahrungsbezeichnungen pro Standort angewendet werden (während Vertraulichkeitsbezeichnungen pro Standort angezeigt werden).
 - Bei Aufbewahrungsbezeichnungen ist dies eine Zusammenfassung der Daten in Ihrem Mandanten. Es wird nicht nach einem bestimmten Datumsbereich gefiltert. Im Gegensatz dazu zeigt der [Bezeichnungsaktivitäten-Explorer](view-label-activity-for-documents.md) nur Daten aus den letzten 30 Tagen.
 
-![Nutzungsbericht für Aufbewahrungsbezeichnungen](media/retention-label-usage-report.png)
+![Nutzungsbericht für Aufbewahrungsbezeichnungen](../media/retention-label-usage-report.png)
 
 ## <a name="view-all-content-with-a-specific-retention-label"></a>Anzeigen aller Inhalte mit einer bestimmten Aufbewahrungsbezeichnung
 
@@ -71,15 +71,15 @@ Im Nutzungsbericht für Aufbewahrungsbezeichnungen können Sie schnell alle Inha
 
 Wählen Sie zuerst **Details anzeigen** unten im Bericht aus.
 
-![Option „Details anzeigen“ unten im Nutzungsbericht für Aufbewahrungsbezeichnungen](media/retention-label-usage-view-details.png)
+![Option „Details anzeigen“ unten im Nutzungsbericht für Aufbewahrungsbezeichnungen](../media/retention-label-usage-view-details.png)
 
 Wählen Sie dann eine Aufbewahrungsbezeichnung > **Elemente erkunden** im rechten Bereich.
 
-![Option „Elemente erkunden“ im rechten Bereich](media/retention-label-usage-explore-items.png)
+![Option „Elemente erkunden“ im rechten Bereich](../media/retention-label-usage-explore-items.png)
 
 Für diese Bezeichnung können Sie die Registerkarte **Aktivität** auswählen, um die Anzahl der Elemente mit dieser Bezeichnung nach Standort anzuzeigen.
 
-![Registerkarte „Aktivität“ für eine Aufbewahrungsbezeichnung](media/retention-label-usage-activity-tab.png)
+![Registerkarte „Aktivität“ für eine Aufbewahrungsbezeichnung](../media/retention-label-usage-activity-tab.png)
 
 Sie können auch die Registerkarte **Elemente mit dieser Bezeichnung** auswählen. Dann können Sie eine Aufschlüsselung bestimmter Standorte anzeigen:
 
@@ -88,7 +88,7 @@ Sie können auch die Registerkarte **Elemente mit dieser Bezeichnung** auswähle
 
 Wenn Sie ein Postfach oder eine Websitesammlung auswählen, können Sie eine Liste mit Elementen mit dieser Aufbewahrungsbezeichnung an diesem Standort anzeigen.
 
-![Elemente mit dieser Bezeichnungsregisterkarte, die alle Elemente mit dieser Aufbewahrungsbezeichnung anzeigt](media/retention-label-usage-content-explorer.png)
+![Elemente mit dieser Bezeichnungsregisterkarte, die alle Elemente mit dieser Aufbewahrungsbezeichnung anzeigt](../media/retention-label-usage-content-explorer.png)
 
 ## <a name="permissions"></a>Berechtigungen
 

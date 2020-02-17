@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
-ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596092"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079797"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
 
@@ -41,7 +41,7 @@ Zu diesem Zeitpunkt wird die Verwendung der Azure Information Protection-Verschl
 
 Aufbewahrungsbezeichnungen können in Exchange Online auf E-Mail-Nachrichten angewendet werden, und diese Bezeichnungen verwenden den Schutz vor Datenverlust von Office 365. 
 
-![Bezeichnungen in Office 365 und Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Bezeichnungen in Office 365 und Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 In der Darstellung sehen Sie Folgendes:
@@ -55,7 +55,7 @@ In der Darstellung sehen Sie Folgendes:
 
 Die folgende Abbildung zeigt, wie Aufbewahrungsbezeichnungen und vertrauliche Informationstypen in Bezeichnungsrichtlinien, DLP-Richtlinien und mit Cloud App Security-Richtlinien verwendet werden können.
 
-![Office-Bezeichnungen und vertrauliche Informationstypen](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Office-Bezeichnungen und vertrauliche Informationstypen](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beispiele wie die Abbildung.
 
@@ -196,7 +196,7 @@ Erstellen Sie Bezeichnungen und Richtlinien im Security Center oder Compliance C
 
 Die folgende Abbildung zeigt, wie Sie eine automatisch angewendete Bezeichnung für die Bezeichnung „Kundendaten“ erstellen können.
 
-![Erstellen und Anwenden einer Bezeichnung für Kundendaten](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![Erstellen und Anwenden einer Bezeichnung für Kundendaten](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 In der Abbildung sehen Sie Folgendes:
 

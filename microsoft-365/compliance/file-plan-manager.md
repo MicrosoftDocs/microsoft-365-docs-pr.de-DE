@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen, Aufbewahrungsbezeichnungsrichtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594576"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074189"
 ---
 # <a name="overview-of-file-plan-manager"></a>Übersicht über den Dateiplan-Manager
 
@@ -29,7 +29,7 @@ Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungs
 
 Wenn Sie im Security & Compliance Center auf den Dateiplan-Manager zugreifen möchten, gehen Sie zu **Datensatzverwaltung** > **Dateiplan**.
 
-![Dateiplanseite](media/file-plan-page.png)
+![Dateiplanseite](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>Zugriff auf den Dateiplan-Manager
 
@@ -89,7 +89,7 @@ Auf den Registerkarten für die **Dateiplanbezeichnungen** sind die folgenden zu
     - Automatisch löschen
     - Überprüfung erforderlich (auch bezeichnet als Dispositionsprüfung)
 
-![Bezeichnungseinstellungen im Dateiplan](media/file-plan-label-columns.png)
+![Bezeichnungseinstellungen im Dateiplan](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>Spalten mit Dateiplanbeschreibungen für Aufbewahrungsbezeichnungen
 
@@ -99,11 +99,11 @@ Für den Einstieg stellt Dateiplan-Manager einige einsatzbereite Werte für Folg
 
 Nachfolgend finden Sie eine Übersicht der Dateiplanbeschreibungen beim Erstellen oder Bearbeiten einer Aufbewahrungsbezeichnung.
 
-![Dateiplanbeschreibungen](media/file-plan-descriptors.png)
+![Dateiplanbeschreibungen](../media/file-plan-descriptors.png)
 
 Nachfolgend finden Sie eine Übersicht über die Spalten mit Dateiplanbeschreibungen auf der Registerkarte **Bezeichnungen** des Dateiplan-Managers.
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exportieren aller vorhandenen Aufbewahrungsbezeichnungen zum Analysieren und/oder Durchführen von Offline Überprüfungen
 
@@ -111,11 +111,11 @@ Aus dem Dateiplan-Manager können Sie die Details aller Aufbewahrungsbezeichnung
 
 Um alle Aufbewahrungsbezeichnungen zu exportieren, gehen Sie zur Seite **Dateiplan** **Dateiplanaktionen** \> **Bezeichnungen exportieren**.
 
-![Option zum Exportieren des Dateiplans](media/file-plan-export-labels-option.png)
+![Option zum Exportieren des Dateiplans](../media/file-plan-export-labels-option.png)
 
 Es wird eine CSV-Datei mit allen vorhandenen Aufbewahrungsbeschriftungen geöffnet.
 
-![CSV-Datei, in der alle Aufbewahrungsbeschriftungen angezeigt werden](media/file-plan-csv-file.png)
+![CSV-Datei, in der alle Aufbewahrungsbeschriftungen angezeigt werden](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importieren von Aufbewahrungsbezeichnungen in Ihren Dateiplan
 
@@ -125,13 +125,13 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
 
 1. Wechseln Sie auf der Seite **Dateiplan** zu **Dateiplanaktionen** > **Bezeichnungen importieren**.
 
-   ![Option zum Importieren des Dateiplans](media/file-plan-import-labels-option.png)
+   ![Option zum Importieren des Dateiplans](../media/file-plan-import-labels-option.png)
 
-   ![Option zum Herunterladen einer leeren Vorlage für den Dateiplan](media/file-plan-blank-template-option.png)
+   ![Option zum Herunterladen einer leeren Vorlage für den Dateiplan](../media/file-plan-blank-template-option.png)
 
 2. Laden Sie eine leere Vorlage herunter, um neue Aufbewahrungsbezeichnungen zu importieren. Alternativ können Sie mit der CSV-Datei beginnen, die exportiert wird, wenn Sie die vorhandenen Aufbewahrungsbezeichnungen in Ihrer Organisation exportieren.
 
-   ![Leere Vorlage eines Dateiplans, geöffnet in Excel](media/file-plan-blank-template.png)
+   ![Leere Vorlage eines Dateiplans, geöffnet in Excel](../media/file-plan-blank-template.png)
 
 3. Füllen Sie die Vorlage aus. In der folgenden Tabelle werden die Eigenschaften und die gültigen Werte für jede Eigenschaft in der Dateiplanvorlage beschrieben.<br/>
 
@@ -159,16 +159,16 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
 
    Nachfolgend finden Sie ein Beispiel für die Vorlage mit den Informationen zu Aufbewahrungsbezeichnungen.
 
-   ![Dateiplanvorlage mit ausgefüllten Informationen](media/file-plan-filled-out-template.png)
+   ![Dateiplanvorlage mit ausgefüllten Informationen](../media/file-plan-filled-out-template.png)
 
 4. Klicken Sie auf der Assistentenseite zum Importieren des Dateiplans unter Schritt 3 auf **Nach Dateien suchen**, um die ausgefüllte Vorlage hochzuladen. 
 
    Die Einträge werden dann vom Dateiplan-Manager überprüft, und es werden Importstatistiken angezeigt.
 
-   ![Dateiplan-Importstatistiken](media/file-plan-import-statistics.png)
+   ![Dateiplan-Importstatistiken](../media/file-plan-import-statistics.png)
 
    Für den Fall, dass ein Überprüfungsfehler vorliegt, überprüft der Dateiplanimport weiterhin jeden Eintrag in der Importdatei und zeigt alle Fehler an, wobei er die Zeilen-/Reihennummern in der Importdatei referenziert und die angezeigten Fehlerergebnisse kopiert, damit Sie einfach zur Importdatei zurückkehren und die Fehler korrigieren können.
 
 5. Wenn der Importvorgang abgeschlossen ist, kehren Sie zum Dateiplan-Manager zurück, um neuen oder vorhandenen Aufbewahrungsbezeichnungsrichtlinien neue Aufbewahrungsbezeichnungen zuzuweisen.
 
-   ![Option zum Veröffentlichen von Bezeichnungen](media/file-plan-publish-labels-option.png)
+   ![Option zum Veröffentlichen von Bezeichnungen](../media/file-plan-publish-labels-option.png)

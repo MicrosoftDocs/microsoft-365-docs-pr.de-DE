@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774221"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070183"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -87,7 +87,7 @@ Beachten Sie, dass ein Benutzer eine Fehlermeldung erhält, wenn er versucht, Bi
   
 Nachdem einem OneDrive-Konto oder einer SharePoint-Website eine Aufbewahrungsrichtlinie zugewiesen wurde, können Inhalte einem von zwei Pfaden folgen:
 
-![Diagramm des Inhaltslebenszyklus in SharePoint und OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagramm des Inhaltslebenszyklus in SharePoint und OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **Wenn der Inhalt während des Aufbewahrungszeitraums geändert oder gelöscht wird**, wird eine Kopie des ursprünglichen Inhalts in der beim Zuweisen der Richtlinie vorhandenen Form im permanenten Dokumentarchiv erstellt. Dort wird in regelmäßigen Abständen ein Zeitgeberauftrag ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden in den endgültigen Papierkorb verschoben, von wo sie nach Ablauf von 93 Tagen dauerhaft gelöscht werden. Der endgültige Papierkorb wird den Endbenutzern nicht angezeigt (sie sehen nur den Standardpapierkorb), Websitesammlungsadministratoren können hingegen dessen Inhalte anzeigen und wiederherstellen.
 
@@ -110,7 +110,7 @@ Wenn ein Benutzer das Unternehmen verlässt und sein Postfach von einer Aufbewah
   
 Nachdem einem Postfach oder einem öffentlichen Ordner eine Aufbewahrungsrichtlinie zugewiesen wurde, können Inhalte einem von zwei Pfaden folgen:
 
-![Diagramm des Aufbewahrungsflusses in E-Mail- und öffentlichen Ordnern](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![Diagramm des Aufbewahrungsflusses in E-Mail- und öffentlichen Ordnern](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer geändert oder dauerhaft gelöscht wird** (entweder per UMSCHALT + ENTF oder aus gelöschte Elemente gelöscht), wird das Element in den Ordner "Wiederherstellbare Elemente" verschoben (oder, im Fall der Bearbeitung, kopiert). Dort wird in regelmäßigen Abständen ein Vorgang ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist, und diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass die Standardeinstellung 14 Tage beträgt, aber es können auch 30 Tage eingestellt werden.
     
@@ -139,7 +139,7 @@ Ebenso wird, wenn Sie Inhalte in einem Postfach für sieben Jahre aufbewahren m�
   
 Sie können wählen, ob der Inhalt am Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden soll. Mithilfe einer Aufbewahrungsrichtlinie können auch alte Inhalte gelöscht werden, ohne sie aufzubewahren. Informationen dazu finden Sie im nächsten Abschnitt.
   
-![Ordneraufbewahrungseinstellungen](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Ordneraufbewahrungseinstellungen](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## <a name="deleting-content-thats-older-than-a-specific-age"></a>Löschen von Inhalten, die ein bestimmtes Alter überschritten haben
 
@@ -147,19 +147,19 @@ Eine Aufbewahrungsrichtlinie kann Inhalte sowohl aufbewahren und dann löschen, 
   
 Wenn Ihre Aufbewahrungsrichtlinie Inhalte löscht, ist es wichtig, zu wissen, dass der für eine Aufbewahrungsrichtlinie festgelegte Zeitraum jedes Mal berechnet wird, wenn der betreffende Inhalt erstellt oder geändert wird.
   
-![Löscheinstellungen](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![Löscheinstellungen](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 Nehmen wir zum Beispiel an, dass Sie eine Aufbewahrungsrichtlinie erstellen, nach der Inhalte nach drei Jahren gelöscht werden, und diese Aufbewahrungsrichtlinie dann allen OneDrive-Konten zuweisen, die viele Inhalte enthalten, die vor vier oder fünf Jahren erstellt wurden. In einem solchen Fall werden viele der Inhalte schon bald nach der ersten Zuweisung der Aufbewahrungsrichtlinie gelöscht. Daher kann **eine Aufbewahrungsrichtlinie, nach der Inhalte gelöscht werden, wesentliche Auswirkungen auf Ihre Inhalte haben**. 
   
 Daher sollten Sie vor dem erstmaligen Zuweisen einer Richtlinie zu einer Websitesammlung zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen Inhalt bedenken. Sie können außerdem vor dem Zuweisen die Benutzer über die neue Richtlinie informieren, um ihnen Zeit zur Auswertung der möglichen Auswirkungen zu geben. Beachten Sie, dass folgende Warnung erscheint, wenn Sie die Einstellungen für Ihre Aufbewahrungsrichtlinie prüfen, bevor Sie sie erstellen.
   
-![Warnung zum Löschen von Inhalten](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![Warnung zum Löschen von Inhalten](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## <a name="advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions"></a>Erweiterte Einstellungen, nach denen eine Richtlinie nur auf Inhalte angewendet wird, die bestimmte Bedingungen erfüllen.
 
 Eine Aufbewahrungsrichtlinie kann für alle Inhalte an den von ihr abgedeckten Speicherorten gelten, oder Sie können auswählen, eine Aufbewahrungsrichtlinie nur auf Inhalte anzuwenden, die bestimmte Stichwörter oder [bestimmte Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md) enthalten.
   
-![Erweiterte Aufbewahrungsoptionen](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![Erweiterte Aufbewahrungsoptionen](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>Aufbewahren von Inhalten, die bestimmte Stichwörter enthalten
 
@@ -169,13 +169,13 @@ Unterstützung für das Hinzufügen durchsuchbarer Eigenschaften (z. B. **Betref
   
 Die abfragebasierte Aufbewahrung verwendet den Suchindex, um Inhalte zu identifizieren.
   
-![Abfrage-Editor](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![Abfrage-Editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### <a name="retain-content-that-contains-sensitive-information"></a>Aufbewahren von Inhalten, die vertrauliche Informationen enthalten
 
 Sie können eine Aufbewahrungsrichtlinie auch nur auf Inhalte anwenden, die [bestimmte Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md) enthalten. Sie können z. B. eindeutige Aufbewahrungsanforderungen nur auf Inhalte, die personenbezogene Informationen (PII) wie Steuernummern, Sozialversicherungsnummern oder Reisepassnummern enthalten, anwenden.
   
-![Seite „Typen vertraulicher Informationen“](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![Seite „Typen vertraulicher Informationen“](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 Hinweise:
   
@@ -201,7 +201,7 @@ Eines der leistungsstärksten Features einer Aufbewahrungsrichtlinie ist, dass s
     
 - Öffentliche Exchange-Ordner
     
-![Option „Alle Speicherorte“](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Option „Alle Speicherorte“](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 Weitere wichtige Features einer organisationsweiten Aufbewahrungsrichtlinie sind:
   
@@ -215,7 +215,7 @@ Beim Auswählen von Speicherorten können Sie einen ganzen Speicherort (z. B. Ex
   
 Wie auch bei organisationsweiten Richtlinien gilt, dass wenn eine Richtlinie für eine beliebige Kombination aus ganzen Speicherorten gilt, es keine Beschränkung für die Anzahl der Postfächer oder Websites gibt, die in der Richtlinie enthalten sein können. Wenn eine Richtlinie z. B. alle Exchange-E-Mail-Konten und alle SharePoint-Websites umfasst, werden alle Websites und Postfächer einbezogen, ganz gleich, wie viele es sind. Und bei Exchange erben alle neuen Postfächer, die erstellt werden, nachdem die Richtlinie angewendet wurde, die Richtlinie automatisch.
  
-![Seite „Speicherorte wählen“](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![Seite „Speicherorte wählen“](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Eine Richtlinie mit bestimmten eingeschlossenen oder ausgeschlossenen Elementen
 
@@ -235,7 +235,7 @@ Im Gegensatz zu Exchange-E-Mails kann der Status des Skype-Speicherorts nicht ei
   
 Wenn Sie Skype for Business-Benutzer auswählen, können Sie schnell alle Benutzer hinzufügen, indem Sie in der Spaltenüberschrift das Feld **Name** auswählen. Es ist jedoch wichtig zu wissen, dass jeder Benutzer als ein bestimmtes eingeschlossenes Element in der Richtlinie zählt. Wenn Sie also mehr als 1.000 Benutzer einschließen, gelten die im vorherigen Abschnitt angegebenen Grenzwerte. Wenn hier alle Skype-Benutzer ausgewählt werden, entspricht dies nicht dem standardmäßigen Einschließen aller Skype-Benutzer mithilfe einer organisationsübergreifenden Richtlinie. 
   
-![Seite „Skype-Benutzer auswählen“](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![Seite „Skype-Benutzer auswählen“](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 Beachten Sie, dass **Aufgezeichnete Unterhaltungen**, ein Ordner in Outlook, ein Feature ist, das nichts mit Skype-Archivierung zu tun hat. **Aufgezeichnete Unterhaltungen** kann vom Endbenutzer deaktiviert werden, Archivierung für Skype erfolgt jedoch durch das Speichern einer Kopie von Skype-Verbindungen in einem ausgeblendeten Ordner, auf den der Benutzer nicht zugreifen kann, der aber für eDiscovery verfügbar ist.
 
@@ -250,7 +250,7 @@ Aufbewahrungsrichtlinien, die auf Benutzer- oder Gruppenpostfächer in den Speic
   
 Nachdem einem Team eine Aufbewahrungsrichtlinie zugewiesen wurde, können Chat- und Kanalnachrichten einem von zwei Pfaden folgen:
 
-![Diagramm des Aufbewahrungsflusses für Microsoft Teams-Chat- und Kanalnachrichten](media/TeamsRetentionLifecycle.png)
+![Diagramm des Aufbewahrungsflusses für Microsoft Teams-Chat- und Kanalnachrichten](../media/TeamsRetentionLifecycle.png)
 
 1. **Wenn eine Chat- oder Kanalnachricht während des Aufbewahrungszeitraums vom Benutzer geändert oder gelöscht wird**, wird die Nachricht in den Ordner "SubstrateHolds" (ein ausgeblendeter Ordner in jedem Benutzer- oder Gruppenpostfach) verschoben bzw. bei Änderungen kopiert und bis zum Ablauf des Aufbewahrungszeitraums dort gespeichert. Nachrichten werden am Tag des Ablaufs des Aufbewahrungszeitraums dauerhaft gelöscht.
 
@@ -278,7 +278,7 @@ In einem Team werden in einem Chat freigegebene Dateien im OneDrive-Konto des Be
   
 Eine Aufbewahrungsrichtlinie, die für Teams gilt, kann die [Erhaltungssperre](#locking-a-retention-policy) nutzen.
   
-![Teams-Speicherorte für Chat- und Kanalnachrichten](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![Teams-Speicherorte für Chat- und Kanalnachrichten](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > Wenn Sie Aufbewahrungsrichtlinien für Skype- oder Microsoft Teams-Speicherorte in Ihrer Organisation erstellen, wird eine dieser Richtlinien als Standard-Ordnerrichtlinie angezeigt, wenn ein Benutzer die Eigenschaften eines Postfachordners im Outlook Desktop-Client einsieht. Hierbei handelt es sich um ein Anzeigeproblem in Outlook und [ein bekanntes Problem](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Als Standard-Ordnerrichtlinie sollte die Aufbewahrungsrichtlinie für Postfächer, die für den Ordner gilt, angezeigt werden. Die Aufbewahrungsrichtlinie für Skype oder Microsoft Teams wird nicht auf das Postfach des Benutzers angewendet.  
@@ -309,23 +309,23 @@ Stellen Sie [zunächst eine Verbindung mit Office 365 Security & Compliance Cent
 
 Führen Sie dann zum Anzeigen einer Liste von Aufbewahrungsrichtlinien und Suchen nach dem Namen der Richtlinie, die Sie sperren möchten, den Befehl `Get-RetentionCompliancePolicy` aus.
 
-![Liste der Aufbewahrungsrichtlinien in PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![Liste der Aufbewahrungsrichtlinien in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 Um eine Aufbewahrungssperre zu einer Aufbewahrungsrichtlinie hinzuzufügen, führen Sie den Befehl `Set-RetentionCompliancePolicy` aus, und legen Sie dabei den `RestrictiveRetention`-Parameter auf „true“ fest. Zum Beispiel:
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![RestrictiveRetention-Parameter in PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![RestrictiveRetention-Parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 Nachdem Sie das Cmdlet ausgeführt haben, werden Sie zur Bestätigung aufgefordert. Wählen Sie **Ja für alle** aus.
 
-![Aufforderung zur Bestätigung der Sperre einer Aufbewahrungsrichtlinie in PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![Aufforderung zur Bestätigung der Sperre einer Aufbewahrungsrichtlinie in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 Eine Aufbewahrungssperre wird jetzt zur Aufbewahrungsrichtlinie hinzugefügt. Wenn Sie `Get-RetentionCompliancePolicy`ausführen, legen Sie den Parameter `RestrictiveRetention`auf "true" fest. Zum Beispiel:
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![Gesperrte Richtlinie mit allen Parametern in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
+![Gesperrte Richtlinie mit allen Parametern in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="releasing-a-retention-policy"></a>Aufheben einer Aufbewahrungsrichtlinie
 
@@ -337,7 +337,7 @@ Diese 30-tägige Nachfrist in SharePoint und OneDrive entspricht dem 30-tägigen
 
 Es ist möglich oder sogar wahrscheinlich, dass auf Inhalte mehrere Aufbewahrungsrichtlinien angewendet werden, die jeweils mit einer anderen Aktion (aufbewahren, löschen oder beides) und einem anderen Aufbewahrungszeitraum verbunden sind. Was hat Vorrang? Ganz allgemein sei gesagt, dass Sie sich sicher sein können, dass Inhalte, die aufgrund einer Richtlinie aufbewahrt werden müssen, nicht von einer anderen Richtlinie dauerhaft gelöscht werden können.
   
-![Diagramm der Grundsätze der Aufbewahrung](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramm der Grundsätze der Aufbewahrung](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Um zu verstehen, wie verschiedene Aufbewahrungsrichtlinien auf Inhalte angewendet werden, sollten Sie diese Grundsätze der Aufbewahrung beachten:
   

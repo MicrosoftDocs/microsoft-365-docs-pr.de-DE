@@ -151,7 +151,7 @@ Halten Sie die folgende Dokumentation für Sie parat:
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Beispiel:
+Zum Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 
