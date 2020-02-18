@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070183"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093439"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -201,8 +201,9 @@ Eines der leistungsstärksten Features einer Aufbewahrungsrichtlinie ist, dass s
     
 - Öffentliche Exchange-Ordner
     
+
 ![Option „Alle Speicherorte“](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 Weitere wichtige Features einer organisationsweiten Aufbewahrungsrichtlinie sind:
   
 - Es gibt keine Beschränkung für die Anzahl der Postfächer oder Websites, die in der Richtlinie enthalten sein können.
