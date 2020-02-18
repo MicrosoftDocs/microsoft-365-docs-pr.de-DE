@@ -10,14 +10,15 @@ localization_priority: Priority
 ms.collection:
 - M365-collaboration
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint in Ihrem Unternehmen.
-ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031640"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "39886322"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint und OneDrive für Microsoft 365 Enterprise
 
