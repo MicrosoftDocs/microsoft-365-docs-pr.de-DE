@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Absichern und Verwalten von Benutzeranmeldungen'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie können die Benutzeranmeldungen auf Windows-Geräten und auf Microsoft 365 sicherer machen.
-ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801730"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067292"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Schritt 3: Absichern und Verwalten von Benutzeranmeldungen
 
-![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -53,7 +55,7 @@ Weitere Informationen finden Sie unter [Planen einer cloudbasierten Bereitstellu
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Mehrstufige Azure-Authentifizierung](multi-factor-authentication-microsoft-365-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Mehrstufige Azure-Authentifizierung](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-criteria.md#crit-identity-mfa) für diesen Abschnitt ansehen.
@@ -85,11 +87,11 @@ In diesem Schritt haben Sie Azure AD Identity Protection aktiviert und verwenden
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie sich die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-ident-prot) für diesen Abschnitt ansehen.
 
 |||
 |:-------|:-----|
-|![Schritt 4](./media/stepnumbers/Step4.png)| [Hinzufügen von Benutzerkonten](identity-add-user-accounts.md) |
+|![Schritt 4](../media/stepnumbers/Step4.png)| [Hinzufügen von Benutzerkonten](identity-add-user-accounts.md) |

@@ -27,7 +27,7 @@ ms.locfileid: "42068812"
 
 Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Data Investigations (Preview) ist jetzt in das vorhandene Überwachungsprotokoll-Such Tool im Security & Compliance Center integriert. Mithilfe dieser eingebetteten Benutzeroberfläche können Sie das Verwaltungstool "Daten Ermittlungen (Preview) People of Interest" verwenden, um Ihre Untersuchung zu vereinfachen, indem Sie die Aktivität für Personen, die in ihrer Untersuchung interessant sind, leicht aufrufen und durchsuchen.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Office 365-Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite Berechtigungen. Um einem Benutzer die Möglichkeit zu geben, das Überwachungsprotokoll mit den Mindestberechtigungen zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Ansichts Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle" hinzufügen und dann den Benutzer als Mitglied der neuen Rolle "GR" hinzufügen. OUP. Weitere Informationen finden Sie unter Verwalten von Rollengruppen in Exchange Online.
 

@@ -1,5 +1,7 @@
 ---
 title: Übersicht über die ereignisgesteuerte Aufbewahrung
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Aufbewahrungsbezeichnungen können Sie einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: da5e10735e8980199a829ac50d096052abe93d14
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989571"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074515"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
@@ -47,9 +49,9 @@ Eine ereignisbasierte Bezeichnung hat die gleichen Funktionen wie jede andere Be
 
 Um die ereignisgesteuerte Aufbewahrung erfolgreich zu verwenden, müssen Sie die Beziehung zwischen Ereignistypen, Bezeichnungen, Ereignissen und Asset-IDs verstehen, wie hier gezeigt. Es folgt eine Erläuterung des Diagramms.
   
-![Diagramm der Ereignistypen, Bezeichnungen, Ereignisse und Anlage IDs](media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![Diagramm der Ereignistypen, Bezeichnungen, Ereignisse und Anlage IDs](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![Diagramm der Ereignistypen, Bezeichnungen, Ereignisse und Anlage IDs](media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![Diagramm der Ereignistypen, Bezeichnungen, Ereignisse und Anlage IDs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. Sie erstellen Bezeichnungen für unterschiedliche Arten von Inhalten und ordnen sie dann einem Ereignistyp zu. Bezeichnungen für verschiedene Arten von Produktdateien und Datensätzen werden beispielsweise einem Ereignistyp mit der Bezeichnung „Product Lifetime“ zugeordnet, da diese Datensätze ab dem Ende des Produktlebenszyklus für zehn Jahre aufbewahrt werden müssen.
     
@@ -73,7 +75,7 @@ Denken Sie zum Schluss auch daran, dass jede Bezeichnung eigene Aufbewahrungsein
 
 Nachfolgend ist der allgemeine Arbeitsablauf für eine ereignisgesteuerte Aufbewahrung aufgeführt. Ausführlichere Schritte finden Sie weiter unten.
   
-![Diagramm des Arbeitsablaufs zum Einrichten der ereignisgesteuerten Aufbewahrung](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![Diagramm des Arbeitsablaufs zum Einrichten der ereignisgesteuerten Aufbewahrung](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
 > [!TIP]
 > Unter [Verwalten des Lebenszyklus von SharePoint-Dokumenten mithilfe von Aufbewahrungsbezeichnungen](auto-apply-retention-labels-scenario.md) finden Sie ein detailliertes Szenario zur Verwendung von verwalteten Eigenschaften in SharePoint, um Aufbewahrungsbezeichnungen automatisch anzuwenden und die ereignisgesteuerte Aufbewahrung zu implementieren.
@@ -92,7 +94,7 @@ Beachten Sie außerdem, dass für die ereignisgesteuerte Aufbewahrung Aufbewahru
     
 - den Inhalt automatisch löschen oder eine Dispositionsprüfung am Ende des Aufbewahrungszeitraums auslösen.
     
-![Option, um eine Bezeichnung auf einem Ereignis zu basieren](media/a4902281-5196-4194-9737-f30231d95861.png)
+![Option, um eine Bezeichnung auf einem Ereignis zu basieren](../media/a4902281-5196-4194-9737-f30231d95861.png)
   
 ### <a name="step-2-choose-an-event-type-for-that-label"></a>Schritt 2: Einen Ereignistyps für die Bezeichnung auswählen
 
@@ -102,13 +104,13 @@ Wenn Sie zum Beispiel einen Ereignistyp mit dem Namen „Product Lifetime“ hab
   
 Beachten Sie, dass der Ereignistyp nicht mehr geändert werden kann, sobald Sie einen Ereignistyp ausgewählt und die Bezeichnung erstellt haben.
   
-![Optionen zum Erstellen oder Auswählen eines Ereignistyps](media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
+![Optionen zum Erstellen oder Auswählen eines Ereignistyps](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Schritt 3: Bezeichnung veröffentlichen oder automatisch anwenden
 
 Wie jede Bezeichnung müssen Sie auch ereignisbasierte Bezeichnungen veröffentlichen oder automatisch zuweisen, damit es Inhalten manuell oder automatisch zugewiesen werden kann. Sie können dies unter **Klassifikation** > **Aufbewahrungsbezeichnungen** erledigen.
   
-![Optionen zum Veröffentlichen oder automatischen Anwenden einer Aufbewahrungsbezeichnung](media/options-to-publish-auto-apply-retention-label.png)
+![Optionen zum Veröffentlichen oder automatischen Anwenden einer Aufbewahrungsbezeichnung](../media/options-to-publish-auto-apply-retention-label.png)
 
 ### <a name="step-4-enter-an-asset-id"></a>Schritt 4: Eine Asset-ID eingeben
 
@@ -122,7 +124,7 @@ Nachdem eine ereignisgesteuerte Bezeichnung auf Inhalt angewendet wurde, können
     
 Vergessen Sie nicht, dass die Asset-ID einfach eine weitere Dokumenteigenschaft in SharePoint und OneDrive for Business ist. Ihre Organisation verwendet möglicherweise bereits andere Dokumenteigenschaften und IDs zum Klassifizieren von Inhalten. Wenn dies der Fall ist, können Sie auch diese Eigenschaften und Werte beim Erstellen eines Ereignisses verwenden, siehe Schritt 6 weiter unten. Der entscheidende Punkt ist, dass Ihre Organisation irgendeine Kombinationen aus Eigenschaft und Wert in den Dokumenteigenschaften verwenden muss, damit dieses Element einem Ereignistyp zugeordnet werden kann.
   
-![Textfeld zum Eingeben einer Asset-ID](media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![Textfeld zum Eingeben einer Asset-ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>Schritt 5: Erstellen eines Ereignisses
 
@@ -132,7 +134,7 @@ Wenn eine bestimmte Instanz dieses Ereignistyps eintritt (ein Produkt erreicht z
 
 Wenn Sie das Ereignis erstellen, wählen Sie den gleichen Ereignistyp aus, der von der Bezeichnung in Schritt 2 verwendet wird, z. B. „Product Lifetime“. Der Aufbewahrungszeitraum wird nur für Inhalt ausgelöst, auf den Bezeichnungen mit diesem Ereignistyp angewendet wurde.
   
-![Option in den Ereigniseinstellungen zum Auswählen eines Ereignistyps](media/11663591-5628-419e-9537-61eb8f5c741f.png)
+![Option in den Ereigniseinstellungen zum Auswählen eines Ereignistyps](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>Schritt 7: Stichwörter oder Asset-ID eingeben
 
@@ -146,7 +148,7 @@ Für Exchange-Elemente können Sie Stichwörter verwenden. Sie können Ihre Abfr
   
 Zum Schluss wählen Sie das Datum aus, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Nachdem Sie ein Ereignis erstellt haben, wird dieses Ereignisdatum für alle Inhalte mit einer Bezeichnung für den entsprechenden Ereignistyp, einer Asset-ID und Stichwörtern synchronisiert. Wie bei jeder anderen Bezeichnung kann die Synchronisierung bis zu sieben Tage dauern.
   
-![Seite „Ereigniseinstellungen“](media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![Seite „Ereigniseinstellungen“](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Verwenden der Inhaltssuche zum Suchen des gesamten Inhalts, dem eine bestimmte Bezeichnung oder Asset-ID zugewiesen ist
 

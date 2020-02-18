@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 5ef03851064104df6dcb00ac853bf7dff65cbfd3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e18db2e5c180bd896e82d98506e8a65831550bce
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596432"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073237"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>DSGVO für lokale Office-Server
 
@@ -40,7 +40,7 @@ Vor der Arbeit mit lokalen Daten wenden Sie sich an die Teams Ihrer Rechts- und 
 
 In der folgenden Abbildung werden empfohlene Funktionen aufgeführt, die in jedem dieser Workloads zum Ermitteln, Klassifizieren, Schützen und Überwachen personenbezogener Daten verwendet werden können. Weitere Informationen finden Sie in den Artikeln in diesem Abschnitt.
 
-![](media/gdpr-for-office-servers-image1.png)
+![](../media/gdpr-for-office-servers-image1.png)
 
 ## <a name="illustration-description"></a>Beschreibung der Abbildung
 

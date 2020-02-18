@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2cf0bafa45e96960b8d957d1b8905124223173ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9dc6f92ffdc5a676bd6f8895fe884b5493724963
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595542"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077077"
 ---
 # <a name="create-tag-groups"></a>Erstellen von Tag-Gruppen
 
@@ -31,17 +31,17 @@ So erstellen Sie eine Transpondergruppe:
 
 1.  Klicken Sie in einem Überprüfungs Satzes auf **Überarbeitungs Gruppe verwalten**.
 
-    ![Klicken Sie auf Überprüfungs Sätze verwalten](media/ED-managews.png)
+    ![Klicken Sie auf Überprüfungs Sätze verwalten](../media/ED-managews.png)
 
 2.  Klicken Sie auf der Kachel **Tags** auf **Tags verwalten**.
 
-    ![Klicken Sie auf Tags in der Kachel Tags verwalten.](media/ED-managetags.png)
+    ![Klicken Sie auf Tags in der Kachel Tags verwalten.](../media/ED-managetags.png)
 
 Innerhalb der Tag-Verwaltung können Tags erstellt werden, um die Anforderungen Ihres Falls zu erfüllen. Sie können zunächst eine Tag-Gruppe erstellen.
 
 1.  Klicken Sie auf **Abschnitt hinzufügen**.
 
-    ![Hinzufügen einer Transpondergruppe](media/ED-addtagsection.png)
+    ![Hinzufügen einer Transpondergruppe](../media/ED-addtagsection.png)
 
     Der Vorschau-Bildschirm wird aktualisiert, wenn Sie speichern, sodass Sie eine Vorschau des Tag-Panels anzeigen können, ohne den Tag-Verwaltungsbildschirm schließen und zurück zum Arbeitsmappen wechseln zu müssen.
 
@@ -49,7 +49,7 @@ Innerhalb der Tag-Verwaltung können Tags erstellt werden, um die Anforderungen 
 
 3. Um ein Tag in dieser Gruppe zu erstellen, klicken Sie auf die Ellipsen in der neuen Tag-Gruppe, um Tags in diesem neuen Abschnitt zu erstellen.
     
-    ![Erstellen von Tags in einer Transpondergruppe](media/ED-createtag.png)
+    ![Erstellen von Tags in einer Transpondergruppe](../media/ED-createtag.png)
 
    - Mit **options Tags** wird erzwungen, dass Benutzer ein Tag aus einer Gruppe von Tags auswählen.
    
@@ -59,5 +59,5 @@ Innerhalb der Tag-Verwaltung können Tags erstellt werden, um die Anforderungen 
 
 Zum Schachteln von Tags klicken Sie auf die Ellipsen neben einem Tag, und wählen Sie dann ein neues Tag aus, das hinzugefügt werden soll.
 
-![Verschachteln von Tags](media/ED-tagnesting.png)
+![Verschachteln von Tags](../media/ED-tagnesting.png)
 

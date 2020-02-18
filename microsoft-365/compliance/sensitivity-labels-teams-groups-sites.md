@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können Bezeichnungen auf Microsoft Teams, Office 365-Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601562"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069798"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -54,9 +54,9 @@ Die folgenden Bilder verdeutlichen:
 
 Beispiel:
 
-![Eine Vertraulichkeitsbezeichnung beim Erstellen einer Teamwebsite in SharePoint](media/sensitivity-label-new-team-site.png)
+![Eine Vertraulichkeitsbezeichnung beim Erstellen einer Teamwebsite in SharePoint](../media/sensitivity-label-new-team-site.png)
 
-![Eine in der Word-Desktop-App angezeigte Vertraulichkeitsbezeichnung](media/sensitivity-label-word.png)
+![Eine in der Word-Desktop-App angezeigte Vertraulichkeitsbezeichnung](../media/sensitivity-label-word.png)
 
 ## <a name="enable-this-preview"></a>Aktivieren dieser Vorschau
 
@@ -124,7 +124,7 @@ Nachdem Sie die Vorschau aktiviert haben, führen Sie die folgenden Schritte aus
     - Gastzugriff: Sie können steuern, ob Gäste einer Gruppe hinzugefügt werden können. [Weitere Informationen zum Verwalten des Gastzugriffs in Office 365-Gruppen](/office365/admin/create-groups/manage-guest-access-in-groups)
     - Nicht verwaltete Geräte: Mit dieser Einstellung können Sie den Zugriff auf SharePoint-Inhalte von Geräten aus, die keine in Azure AD eingebundenen Hybridgeräte oder nicht Intune-konform sind, blockieren oder einschränken. Wenn Sie "Nicht verwaltete Geräte" auswählen, müssen Sie zu Azure AD wechseln, um das Einrichten der Richtlinie abzuschließen. Informationen hierzu finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices).
     
-    ![Die Registerkarte "Website- und Gruppeneinstellungen"](media/edit-sensitivity-label-site-group.png)
+    ![Die Registerkarte "Website- und Gruppeneinstellungen"](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > Wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder eine Website anwenden, werden nur die Website- und Gruppeneinstellungen wirksam. Andere Einstellungen (z. B. Verschlüsselung und Inhaltskennzeichnung) werden nicht auf alle Inhalte innerhalb des Teams, der Gruppen oder der Website angewendet.
@@ -184,11 +184,11 @@ Benutzer können Vertraulichkeitsbezeichnungen auswählen, wenn sie neue Teams i
 
 [Weitere Informationen Vertraulichkeitsbezeichnungen für Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![Datenschutzeinstellung beim Erstellen eines neuen Teams](media/privacy-setting-new-team.png)
+![Datenschutzeinstellung beim Erstellen eines neuen Teams](../media/privacy-setting-new-team.png)
 
 Nachdem Sie das Team erstellt haben, wird die Vertraulichkeitsbezeichnung in der oberen rechten Ecke aller Kanäle angezeigt.
 
-![Die Vertraulichkeitsbezeichnung wird im Team angezeigt](media/privacy-setting-teams.png)
+![Die Vertraulichkeitsbezeichnung wird im Team angezeigt](../media/privacy-setting-teams.png)
 
 Der Dienst wendet auf die Office 365-Gruppe und die verbundene SharePoint-Teamwebsite automatisch die gleiche Vertraulichkeitsbezeichnung an.
 
@@ -196,7 +196,7 @@ Der Dienst wendet auf die Office 365-Gruppe und die verbundene SharePoint-Teamwe
 
 In Outlook im Web enthält das neue Feld **Vertraulichkeit** veröffentlichte Bezeichnungen. Wenn Benutzer weitere Informationen benötigen, können sie auf das Hilfesymbol klicken, um Details zu den verfügbaren Bezeichnungen und den zugehörigen Richtlinien anzuzeigen.
 
-![Erstellen einer Gruppe und Auswählen einer Option unter "Vertraulichkeit"](media/sensitivity-label-new-group.png)
+![Erstellen einer Gruppe und Auswählen einer Option unter "Vertraulichkeit"](../media/sensitivity-label-new-group.png)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Anwenden einer Vertraulichkeitsbezeichnung auf eine neue Website
 
@@ -206,17 +206,17 @@ Administratoren und Endbenutzer können beim Erstellen moderner Teamwebsites und
 
 Wenn Benutzer moderne Teamwebsites und Kommunikationswebsites erstellen, ist standardmäßig bereits eine Vertraulichkeitsbezeichnung aktiviert. Benutzer können das Hilfesymbol auswählen, um weitere Informationen zu den Bezeichnungen zu erhalten.
 
-![Erstellen einer Website und Auswählen einer Option unter "Vertraulichkeit"](media/sensitivity-label-new-communication-site.png)
+![Erstellen einer Website und Auswählen einer Option unter "Vertraulichkeit"](../media/sensitivity-label-new-communication-site.png)
 
 Wenn Benutzer zu der Website navigieren, werden der Name der Bezeichnung und die angewendeten Richtlinien angezeigt.
 
-![Eine Website, auf die eine Vertraulichkeitsbezeichnung angewendet wurde](media/sensitivity-label-site.png)
+![Eine Website, auf die eine Vertraulichkeitsbezeichnung angewendet wurde](../media/sensitivity-label-site.png)
 
 ## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Verwalten von Vertraulichkeitsbezeichnungen im SharePoint Online Admin Center
 
 Wenn Sie die Bezeichnung anzeigen und bearbeiten möchten, verwenden Sie die Seite "Aktive Websites" im neuen SharePoint Admin Center.
 
-![Die Spalte "Vertraulichkeit" auf der Seite "Aktive Websites"](media/manage-site-sensitivity-labels.png)
+![Die Spalte "Vertraulichkeit" auf der Seite "Aktive Websites"](../media/manage-site-sensitivity-labels.png)
 
 [Weitere Informationen zum Verwalten von Websites im neuen SharePoint Admin Center](/sharepoint/manage-sites-in-new-admin-center).
 

@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Bevor Sie sogar Ihre erste DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (unten abgebildet) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie darüber informiert werden, dass e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine Person außerhalb Ihrer Organisation freigegeben wurden.
-ms.openlocfilehash: 3ac2fef32c7ba20d906ec96e2510971c94ef2652
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596542"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073116"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Erste Schritte mit der DLP-Standardrichtlinie
 
@@ -30,7 +30,7 @@ Bevor Sie sogar Ihre erste DLP-Richtlinie (Data Loss Prevention, Verhinderung vo
   
 Sie können dieses Widget verwenden, um schnell anzuzeigen, wann und wie viel vertrauliche Informationen freigegeben wurden, und dann die standardmäßige DLP-Richtlinie in nur einem Mausklick oder zwei zu verfeinern. Sie können auch die standardmäßige DLP-Richtlinie jederzeit bearbeiten, da Sie vollständig anpassbar ist. Wenn die Empfehlung zunächst nicht angezeigt wird, klicken Sie im unteren Bereich des Abschnitts **empfohlen für Sie** auf **+ mehr** . 
   
-![Widget mit dem Namen weiter freigegebene Inhalte schützen](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget mit dem Namen weiter freigegebene Inhalte schützen](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Anzeigen des Berichts und verfeinern der standardmäßigen DLP-Richtlinie
 
@@ -58,7 +58,7 @@ Weitere Informationen zu Vorfall Berichten oder zum Einschränken des Zugriffs f
   
 Wenn Sie diese Optionen zu einem späteren Zeitpunkt ändern möchten, können Sie die standardmäßige DLP-Richtlinie jederzeit bearbeiten – siehe den nächsten Abschnitt.
   
-![Einstellungen für Widget "weiter zum Schutz von freigegebenen Inhalten"](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Einstellungen für Widget "weiter zum Schutz von freigegebenen Inhalten"](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Bearbeiten der standardmäßigen DLP-Richtlinie
 
@@ -66,7 +66,7 @@ Diese Richtlinie heißt **Standard Office 365 DLP-Richtlinie** und wird auf der 
   
 Diese Richtlinie ist vollständig anpassbar, genauso wie jede DLP-Richtlinie, die Sie selbst von Grund auf neu erstellen. Sie können die Richtlinie auch deaktivieren oder löschen, sodass Ihre Benutzer keine Richtlinien Tipps oder e-Mail-Benachrichtigungen mehr erhalten.
   
-![DLP-Richtlinie mit dem Namen Default Office 365 DLP-Richtlinie](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![DLP-Richtlinie mit dem Namen Default Office 365 DLP-Richtlinie](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Wenn das Widget funktioniert und nicht angezeigt wird
 

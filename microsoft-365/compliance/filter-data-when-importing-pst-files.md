@@ -45,7 +45,7 @@ Die folgende Grafik zeigt den intelligenten Import Vorgang und hebt die Aufgaben
   
 ![Der intelligente Import Vorgang in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - In den Schritten in diesem Thema wird davon ausgegangen, dass Sie einen PST-Importauftrag im Office 365 Import-Dienst mithilfe des Netzwerk-Uploads oder des Laufwerk Versands erstellt haben. Eine Schritt-für-Schritt-Anleitung finden Sie unter einem der folgenden Themen:
     
@@ -116,7 +116,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
     e. Klicken Sie auf **Daten importieren** , um den Import zu starten. Beachten Sie, dass die Gesamtmenge der importierten Daten angezeigt wird. 
     
-    Oder
+    Oder:
     
     a. Klicken Sie auf **Nein, ich möchte alles importieren** , um alle Daten in die PST-Dateien in Office 365 zu importieren, und klicken Sie dann auf **weiter**.
     

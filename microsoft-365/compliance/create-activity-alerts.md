@@ -33,7 +33,7 @@ Sie können eine Aktivitäts Warnung erstellen, mit der Sie eine e-Mail-Benachri
 > [!NOTE]
 > Es wird empfohlen, Warnungsrichtlinien im Security and Compliance Center zu verwenden, anstatt neue Aktivitäts Warnungen zu erstellen. Warnungsrichtlinien bieten zusätzliche Funktionen, beispielsweise die Möglichkeit, eine Warnungs Richtlinie zu erstellen, die eine Warnung auslöst, wenn ein beliebiger Benutzer eine bestimmte Aktivität ausführt, und Warnungen auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center anzuzeigen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](alert-policies.md).
   
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen die Rolle Organisationskonfiguration im Sicherheits & Compliance Center zugewiesen sein, um Aktivitäts Warnungen zu verwalten. Diese Rolle wird standardmäßig den Rollengruppen Compliance-Administrator und Organisationsverwaltung zugewiesen. Weitere Informationen zum Hinzufügen von Mitgliedern zu Rollengruppen finden Sie unter [Erteilen von Benutzern den Zugriff auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     

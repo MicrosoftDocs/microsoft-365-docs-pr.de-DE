@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 8d87367f86d3fd0f9ec5aab19ccd191a1cd20f17
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076571"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -57,7 +57,7 @@ Eine DLP-Richtlinie bietet Ihnen folgende Möglichkeiten:
     
 DLP-Richtlinien können Sie auf der Seite zur Verhinderung von Datenverlust im Office 365 Security &amp; Compliance Center erstellen und verwalten.
   
-![Seite für Verhinderung von Datenverlust im Office 365 Security &amp; Compliance Center](media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Seite für Verhinderung von Datenverlust im Office 365 Security &amp; Compliance Center](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Inhalt einer DLP-Richtlinie
 
@@ -75,13 +75,13 @@ Sie können eine Regel verwenden, um eine bestimmte Schutzanforderung zu erfüll
   
 Angenommen, Sie verfügen über eine DLP-Richtlinie zur Erkennung von Informationen, die dem Health Insurance-Portability and Accountability Act (HIPAA) unterliegen. Mithilfe dieser DLP-Richtlinie können HIPAA-Daten („Was“) auf allen SharePoint Online- und OneDrive for Business-Websites („Wo“) geschützt werden, denn diese sucht nach allen Dokumenten mit diesen vertraulichen Informationen, die für Personen außerhalb Ihrer Organisation („Bedingungen“) freigeben sind, sperrt dann den Zugriff auf die Dokumente und sendet eine Benachrichtigung („Aktionen“). Diese Anforderungen sind als einzelne Regeln gespeichert und in einer DLP-Richtlinie zusammengefasst, um die Verwaltung und die Berichterstellung zu vereinfachen.
   
-![Diagramm zeigt, dass DLP-Richtlinie Speicherorte und Regeln enthält](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagramm zeigt, dass DLP-Richtlinie Speicherorte und Regeln enthält](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>Orte
 
 Eine DLP-Richtlinie kann vertrauliche Informationen überall in Office 365 finden und schützen, egal, ob diese sich in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können festlegen, dass Inhalte in Exchange-E-Mails, in Microsoft Teams-Chats und Kanalnachrichten sowie in allen SharePoint- oder OneDrive-Bibliotheken geschützt werden sollen, oder bestimmte Orte für eine Richtlinie auswählen.
   
-![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
  Wenn Sie sich dazu entscheiden, bestimmte Verteilergruppen in Exchange einzubeziehen, wird die DLP-Richtlinie nur auf Mitglieder dieser Gruppe beschränkt. Ebenso wenn Sie eine Verteilergruppe ausschließen, werden auch alle Mitglieder dieser Verteilergruppe aus der Richtlinienauswertung ausgeschlossen. Sie können eine Richtlinie auf die Mitglieder von Verteilerlisten, dynamischen Verteilergruppen und Sicherheitsgruppen beschränken. Eine DLP-Richtlinie darf nicht mehr als 50 solche Einschlüsse und Ausschlüsse enthalten.
 
@@ -95,7 +95,7 @@ Eine Regel bietet auch Optionen, um Benutzer (mit Richtlinientipps und E-Mail-Be
   
 Nachfolgend eine Liste der Komponenten einer Regel mit entsprechenden Erläuterungen.
   
-![Abschnitte des DLP-Regel-Editors](media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
+![Abschnitte des DLP-Regel-Editors](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
   
 #### <a name="conditions"></a>Bedingungen
 
@@ -103,7 +103,7 @@ Mithilfe von Bedingungen werden die Arten von Informationen, nach denen Sie such
   
 Bedingungen konzentrieren sich auf den **Inhalt**, z. B. die Arten von vertraulichen Informationen, nach denen Sie suchen, und auch auf den **Kontext**, z. B. für wen das Dokument freigegeben ist. Sie können Bedingungen verwenden, um für unterschiedliche Risikostufen unterschiedliche Aktionen festzulegen. So können beispielsweise intern freigegebene vertrauliche Inhalte einer niedrigeren Risikostufe angehören und somit weniger Aktionen erfordern als vertrauliche Inhalte, die für Personen außerhalb Ihrer Organisation freigegeben sind. 
   
-![Liste mit verfügbaren DLP-Bedingungen](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
+![Liste mit verfügbaren DLP-Bedingungen](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
 Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
   
@@ -120,7 +120,7 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
 
 Mithilfe einer DLP-Richtlinie können vertrauliche Informationen geschützt werden, die als **vertraulicher Informationstyp** definiert sind. Office 365 enthält Definitionen für viele gängige Typen vertraulicher Informationen aus den verschiedensten Bereichen, die Sie direkt verwenden können, z. B. Kreditkartennummer, Bankkontonummer, National-ID-Nummer und Reisepassnummer. 
   
-![Liste der verfügbaren Typen vertraulicher Daten](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![Liste der verfügbaren Typen vertraulicher Daten](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
 Wenn eine DLP-Richtlinie nach einem vertraulichen Informationstyp wie z. B. einer Kreditkartennummer sucht, wird nicht einfach nach einer 16-stelligen Zahl gesucht. Jede Art vertraulicher Informationen wird durch eine Kombination der folgenden Elemente definiert und anhand dieser ermittelt:
   
@@ -138,23 +138,23 @@ Dadurch erzielt die DLP-Erkennung einen hohen Grad an Zuverlässigkeit, und die 
 
 Wenn ein Inhalt mit einer Bedingung in einer Regel übereinstimmt, können Sie Aktionen anwenden, um den Inhalt automatisch zu schützen.
   
-![Liste der verfügbaren DLP-Aktionen](media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
+![Liste der verfügbaren DLP-Aktionen](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
   
 Mit den nun verfügbaren Aktionen können Sie:
   
 - **Den Zugriff auf Inhalte einschränken** Für Seiteninhalte bedeutet dies, dass Berechtigungen für ein Dokument für alle Personen mit Ausnahme des primären Websitesammlungsadministrators, des Dokumentbesitzers und der Person, die zuletzt Änderungen am Dokument vorgenommen hat, eingeschränkt sind. Diese Personen können die vertraulichen Informationen aus dem Dokument entfernen oder andere Abhilfemaßnahmen ergreifen. Wenn das Dokument den Anforderungen entspricht, werden die ursprünglichen Berechtigungen automatisch wiederhergestellt. Wenn der Zugriff auf ein Dokument gesperrt ist, wird dieses Dokument in der Bibliothek auf der Website mit einem speziellen Richtlinientipp-Symbol angezeigt. 
     
-    ![Richtlinientipp, der zeigt, dass der Zugriff auf das Dokument gesperrt ist.](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+    ![Richtlinientipp, der zeigt, dass der Zugriff auf das Dokument gesperrt ist.](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
     Im Fall von E-Mail-Inhalten blockiert diese Aktion das Senden der Nachricht. Abhängig von der Konfiguration der DLP-Regel erhält der Absender einen Unzustellbarkeitsbericht (wenn die Regel eine Benachrichtigung verwendet), oder es wird ein Richtlinientipp angezeigt bzw. eine E-Mail-Benachrichtigung gesendet.
     
-    ![Warnung, dass nicht autorisierte Empfänger aus der Nachricht entfernt werden müssen](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+    ![Warnung, dass nicht autorisierte Empfänger aus der Nachricht entfernt werden müssen](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Benutzerbenachrichtigungen und Benutzeraußerkraftsetzungen
 
 Sie können Benutzerbenachrichtigungen und Benutzeraußerkraftsetzungen einsetzen, um Ihre Benutzer in Bezug auf DLP-Richtlinien zu schulen und sie dabei unterstützen, Bestimmungen kontinuierlich einzuhalten, ohne sie von ihrer Arbeit abzuhalten. Wenn Benutzer beispielsweise versuchen, ein Dokument mit vertraulichen Informationen freizugeben, kann ihnen über eine DLP-Richtlinie eine E-Mailbenachrichtigung gesendet und ein Richtlinientipp im Kontext der Dokumentbibliothek angezeigt werden, die es ihnen ermöglichen, die Richtlinie außer Kraft zu setzen, wenn sie dies geschäftlich begründen können.
   
-![DLP-Regel-Editor-Abschnitte für Benutzerbenachrichtigungen und Benutzeraußerkraftsetzungen](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+![DLP-Regel-Editor-Abschnitte für Benutzerbenachrichtigungen und Benutzeraußerkraftsetzungen](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
 Die E-Mail kann die Person, die den Inhalt gesendet, freigegeben oder zuletzt geändert hat, bzw. bei Websiteinhalten den primären Websitesammlungsadministrator und Dokumentbesitzer benachrichtigen. Darüber hinaus können Sie beliebige weitere Empfänger zur Benachrichtigungs-E-Mail hinzufügen oder entfernen.
   
@@ -170,7 +170,7 @@ In der E-Mail-Benachrichtigung und dem Richtlinientipp wird erläutert, warum ei
   
 So sieht ein Richtlinientipp in einem OneDrive for Business-Konto aus.
   
-![Richtlinientipp für ein Dokument in einem OneDrive-Konto](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
+![Richtlinientipp für ein Dokument in einem OneDrive-Konto](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
  Weitere Informationen zu Benachrichtigungen der Benutzer und Richtlinientipps in den DLP-Richtlinien finden Sie in [Verwenden von Benachrichtigungen und Richtlinientipps](use-notifications-and-policy-tips.md).
 
@@ -178,7 +178,7 @@ So sieht ein Richtlinientipp in einem OneDrive for Business-Konto aus.
 
 Bei einer Übereinstimmung mit einer Regel können Sie einen Schadensbericht mit Details zum Ereignis an Ihren Compliance Officer (oder eine beliebige andere Person) senden. Dieser Bericht enthält Informationen zum Element, für das eine Übereinstimmung gefunden wurde, zum Inhalt, der mit der Regel übereinstimmte, und zum Namen der Person, die den Inhalt zuletzt geändert hat. Bei E-Mail-Nachrichten wird dem Bericht außerdem die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht, als Anlage beigefügt.
   
-![Seite zum Konfigurieren von Vorfallberichten](media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Seite zum Konfigurieren von Vorfallberichten](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
   
 ## <a name="grouping-and-logical-operators"></a>Gruppieren und logische Operatoren
 
@@ -202,13 +202,13 @@ Solche lose definierten Daten lassen sich leicht mithilfe von Gruppierung und lo
 
 Mit einem Operator innerhalb einer Gruppe wählen Sie aus, ob eine oder alle Bedingungen in dieser Gruppe erfüllt sein müssen, damit der Inhalt der Regel entspricht.
   
-![Gruppe, mit den Operatoren innerhalb der Gruppe](media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
+![Gruppe, mit den Operatoren innerhalb der Gruppe](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
   
 ### <a name="adding-a-group"></a>Hinzufügen einer Gruppe
 
 Sie können eine Gruppe, die eigene Bedingungen und einen eigenen Operator innerhalb dieser Gruppe aufweisen kann, schnell und einfach hinzufügen.
   
-![Schaltfläche "Gruppe hinzufügen"](media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
+![Schaltfläche "Gruppe hinzufügen"](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
   
 ### <a name="choosing-the-operator-between-groups"></a>Auswählen des Operators zwischen Gruppen
 
@@ -222,17 +222,17 @@ Die integrierte **U.S. HIPAA**-Richtlinie enthält beispielsweise eine Regel mit
     
 - aus der Gruppe **Medizinische Begriffe** (mindestens ein ICD-9-CM-Schlüsselwort **ODER** ein ICD-10-CM-Schlüsselwort) 
     
-![Gruppen, mit dem Operator zwischen Gruppen](media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
+![Gruppen, mit dem Operator zwischen Gruppen](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Die Priorität, mit der Regeln verarbeitet werden
 
 Wenn Sie in einer Richtlinie Regeln erstellen, wird jeder Regel eine Priorität in der Reihenfolge ihrer Erstellung zugewiesen, was bedeutet, dass die zuerst erstellte Regel oberste Priorität, die danach erstellte Regel die zweite Priorität usw. erhält. 
   
-![Regeln nach Priorität](media/dlp-rules-in-priority-order.png)
+![Regeln nach Priorität](../media/dlp-rules-in-priority-order.png)
   
 Nachdem Sie mehr als eine DLP-Richtlinie eingerichtet haben, können Sie die Priorität einer oder mehrerer Richtlinien ändern. Wählen Sie dazu eine Richtlinie aus, wählen Sie **Richtlinie bearbeiten** aus, und verwenden Sie die **Prioritätsliste**, um deren Priorität anzugeben.
 
-![Festlegen der Priorität für eine Richtlinie](media/dlp-set-policy-priority.png)
+![Festlegen der Priorität für eine Richtlinie](../media/dlp-set-policy-priority.png)
 
 Wenn Inhalte anhand von Regeln ausgewertet werden, werden diese Regeln in der Reihenfolge ihrer Priorität verarbeitet. Wenn ein Inhalt mehreren Regeln entspricht, werden die Regeln in der Reihenfolge ihrer Priorität verarbeitet, und die jeweils restriktivste Aktion wird durchgeführt. Wenn ein Inhalt beispielsweise allen folgenden Regeln entspricht, wird Regel 3 angewandt, da sie die höchste Priorität hat und die restriktivste Regel ist:
   
@@ -280,7 +280,7 @@ Die Optimierung von Regeln mithilfe der Instanzenanzahl ist einfach:
     
 Normalerweise verwenden Sie in einer Regel mit einer geringeren Instanzenanzahl (beispielsweise 1-9) weniger restriktive Aktionen wie das Senden von Benachrichtigungen an Benutzer. In einer Regel mit einer höheren Instanzenanzahl (beispielsweise 10-beliebig) verwenden Sie restriktivere Aktionen wie das Einschränken des Zugriffs auf Inhalte, ohne Benutzeraußerkraftsetzung zuzulassen.
   
-![Instanzenwerte im Regel-Editor](media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![Instanzenwerte im Regel-Editor](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
   
 ### <a name="match-accuracy"></a>Treffergenauigkeit
 
@@ -312,7 +312,7 @@ Es ist wichtig zu verstehen, dass nur eine einzige Vertrauensstufe zurückgegebe
     
 Wenn Sie also zwei sich gegenseitig ausschließende Regeln für Kreditkarten erstellen möchten, eine für die 65 %ige Übereinstimmungsgenauigkeit und eine für die 85 %ige Übereinstimmungsgenauigkeit, sehen die Bereiche für die Übereinstimmungsgenauigkeit folgendermaßen aus: Mit der ersten Regel werden nur Übereinstimmungen mit dem 65 %igen Muster erfasst. Mit der zweiten Regel werden Übereinstimmungen mit **mindestens einer** 85 %igen Übereinstimmung erfasst, und sie **kann potenziell** auch weitere, niedrigere Vertrauensübereinstimmungen erfassen. 
   
-![Zwei Regeln mit unterschiedlichen Bereichen für die Übereinstimmungsgenauigkeit](media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![Zwei Regeln mit unterschiedlichen Bereichen für die Übereinstimmungsgenauigkeit](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
   
 Aus diesen Gründen lautet die Anleitung zum Erstellen von Regeln mit unterschiedlichen Übereinstimmungsgenauigkeiten wie folgt:
   
@@ -335,7 +335,7 @@ Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Auf
   
 Nachdem Sie eine Bezeichnung erstellt haben, können Sie diese Bezeichnung als Bedingung in Ihren DLP-Richtlinien verwenden. 
 
-![Bezeichnungen als Bedingung](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
 Dies kann beispielsweise in den folgenden Fällen wünschenswert sein:
   
@@ -364,13 +364,13 @@ Auf Inhalte mit vertraulichen Informationen können verschiedene Features angewe
     
 - Mit einer DLP-Richtlinie können Aktionen zum **Schutz** dieser Inhalte erzwungen werden. Und bevor diese Aktionen erzwungen werden, kann eine DLP-Richtlinie vorsehen, dass zusätzlich zum Inhalt mit einer Bezeichnung noch andere Bedingungen erfüllt werden müssen. 
     
-![Diagramm der Features, die Sie auf vertrauliche Informationen anwenden können](media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![Diagramm der Features, die Sie auf vertrauliche Informationen anwenden können](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
   
 Beachten Sie, dass eine DLP-Richtlinie eine umfangreichere Erkennungsfunktionalität aufweist als eine Bezeichnung oder Aufbewahrungsrichtlinie, die vertraulichen Informationen zugewiesen ist. Eine DLP-Richtlinie kann Schutzaktionen für Inhalte mit vertraulichen Informationen erzwingen. Wenn die vertraulichen Informationen aus dem Inhalt entfernt werden, erfolgt nach der nächsten Untersuchung des Inhalts die Aufhebung dieser Schutzaktionen. Wenn hingegen eine Aufbewahrungsrichtlinie oder Bezeichnung auf Inhalt mit vertraulichen Informationen angewendet wird, handelt es sich um eine einmalige Aktion, die nicht rückgängig gemacht wird, selbst wenn die vertraulichen Informationen entfernt wurden.
   
 Durch Verwenden einer Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie für Inhalte mit dieser Bezeichnung sowohl Aufbewahrungs- als auch Schutzaktionen erzwingen. Sie können sich Inhalte mit einer Bezeichnung exakt wie Inhalte mit vertraulichen Informationen vorstellen. Sowohl eine Bezeichnung als auch der vertrauliche Informationstyp sind Eigenschaften zum Klassifizieren von Inhalten, damit Sie Aktionen für diese erzwingen können.
   
-![Diagramm der DLP-Richtlinie mit einer Bezeichnung als Bedingung](media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![Diagramm der DLP-Richtlinie mit einer Bezeichnung als Bedingung](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
   
 ## <a name="simple-settings-vs-advanced-settings"></a>Die einfachen Einstellungen im Vergleich zu den erweiterten Einstellungen
 
@@ -388,7 +388,7 @@ Das bei Weitem häufigste DLP-Szenario ist das Erstellen einer Richtlinie, mit d
   
 Um dieses Ziel einfacher zu erreichen, können Sie beim Erstellen einer DLP-Richtlinie **Einfache Einstellungen verwenden** auswählen. Diese Einstellungen bieten alles, was Sie benötigen, um die am häufigsten verwendeten DLP-Richtlinien zu implementieren, ohne in den Regel-Editor wechseln zu müssen.
   
-![DLP-Optionen für einfache und erweiterte Einstellungen](media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![DLP-Optionen für einfache und erweiterte Einstellungen](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
   
 ### <a name="advanced-settings"></a>Erweiterte Einstellungen
 
@@ -398,7 +398,7 @@ Die erweiterten Einstellungen präsentieren Ihnen den Regel-Editor, mit dem Sie 
   
 Um schnell zu einem bestimmten Abschnitt zu springen, klicken Sie auf der oberen Navigationsleiste des Regel-Editors auf ein Element, um unten zum betreffenden Abschnitt zu wechseln.
   
-![Oberes Navigationsmenü des DLP-Regel-Editors](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
+![Oberes Navigationsmenü des DLP-Regel-Editors](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
 ## <a name="dlp-policy-templates"></a>DLP-Richtlinienvorlagen
 
@@ -406,7 +406,7 @@ Der erste Schritt beim Erstellen einer DLP-Richtlinie besteht in der Auswahl der
   
 Mithilfe einer vorkonfigurierten DLP-Richtlinienvorlage können spezifische Arten von vertraulichen Informationen ermittelt werden, wie z. B. HIPAA-Daten, PCI-DSS-Daten, Gramm-Leach-Bliley Act-Daten oder sogar standortspezifisch personenbezogene Informationen (PII). Damit Sie allgemeine Typen vertraulicher Informationen schnell ausfindig machen und schützen können, weisen die in Office 365 enthaltenen Richtlinienvorlagen bereits die gängigsten Typen vertraulicher Informationen auf, sodass Sie schnell einen Einstieg finden.
   
-![Liste der Vorlagen für Richtlinien zur Verhinderung von Datenverlust, wobei die Vorlage für das US-amerikanische Patriot Act hervorgehoben ist](media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Liste der Vorlagen für Richtlinien zur Verhinderung von Datenverlust, wobei die Vorlage für das US-amerikanische Patriot Act hervorgehoben ist](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
 Ihre Organisation weist aber möglicherweise ihre ganz eigenen speziellen Anforderungen auf. In diesem Fall können Sie eine DLP-Richtlinie auch von Grund auf neu erstellen, indem Sie die Option **Benutzerdefinierte Richtlinie** auswählen. Eine benutzerdefinierte Richtlinie ist leer und enthält keine vordefinierten Regeln. 
   
@@ -422,15 +422,15 @@ Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen ha
     
 3. **Beginnen Sie mit der vollständigen Durchsetzung der Richtlinien**, sodass die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
     
-![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 Sie können eine DLP-Richtlinie jederzeit deaktivieren. Dies wirkt sich auf alle Regeln in der Richtlinie aus. Jede Regel kann aber auch einzeln deaktiviert werden, indem ihr Status im Regel-Editor geändert wird.
   
-![Optionen für das Deaktivieren einer Regel in einer Richtlinie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+![Optionen für das Deaktivieren einer Regel in einer Richtlinie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
 Sie können auch die Priorität mehrerer Regeln in einer Richtlinie ändern. Öffnen Sie dazu eine Richtlinie zur Bearbeitung. Klicken Sie in einer Zeile für eine Regel auf die drei Auslassungspunkte (**...**), und wählen Sie dann eine Option aus, z. B. **Nach unten** oder **Nach ganz unten**.
 
-![Festlegen der Regelpriorität](media/dlp-set-rule-priority.png)
+![Festlegen der Regelpriorität](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP-Berichte
 
@@ -446,7 +446,7 @@ DLP-Berichte bieten Ihnen geschäftliche Einblicke und ermöglichen Ihnen Folgen
     
 Darüber hinaus können Sie die DLP-Berichte verwenden, um Ihre DLP-Richtlinien optimieren, wenn sie ausgeführt werden.
   
-![Dashboard "Berichte" im Security & Compliance Center](media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![Dashboard "Berichte" im Security & Compliance Center](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
   
 ## <a name="how-dlp-policies-work"></a>Funktionsweise von DLP-Richtlinien
 
@@ -480,7 +480,7 @@ Aus diesem Grund überprüfen DLP-Richtlinien Dokumente im Hintergrund regelmä�
  
 Während Dokumente auf Websites hinzugefügt oder geändert werden, werden die Inhalte vom Suchmodul überprüft, wodurch eine spätere Suche danach ermöglicht wird. Währenddessen wird der Inhalt auch auf vertrauliche Informationen und eine etwaige Freigabe überprüft. Alle gefundenen vertraulichen Informationen werden sicher im Suchindex gespeichert. Auf diesen kann nur das Complianceteam, nicht der normale Benutzer zugreifen. Jede aktivierte DLP-Richtlinie wird im Hintergrund (asynchron) ausgeführt. Dabei werden Suchergebnisse regelmäßig auf Inhalte überprüft, die mit einer Richtlinie übereinstimmen, und es werden Aktionen angewendet, um diese Inhalte vor einer versehentlichen Veröffentlichung zu schützen.
   
-![Diagramm, in dem dargestellt ist, wie eine DLP-Richtlinie Inhalte asynchron auswertet](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![Diagramm, in dem dargestellt ist, wie eine DLP-Richtlinie Inhalte asynchron auswertet](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 <!-- conflict with a DLP policy is bad wording --> Dokumente können jedoch nicht nur mit einer DLP-Richtlinie in Konflikt stehen, sondern es können auch Änderungen vorgenommen werden, die dazu führen, dass sie nun einer DLP-Richtlinie entsprechen. Wenn eine Person zum Beispiel einem Dokument Kreditkartennummern hinzufügt, kann dies dazu führen, dass die DLP-Richtlinie den Zugriff auf das Dokument automatisch sperrt. Wenn die Person jedoch später die vertraulichen Informationen entfernt, wird die Aktion (in diesem Fall die Sperre) automatisch entfernt, wenn das Dokument das nächste Mal anhand der Richtlinie ausgewertet wird.
   

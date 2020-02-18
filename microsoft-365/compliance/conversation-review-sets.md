@@ -134,7 +134,7 @@ In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen v
 
 In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen zum Exportieren von Unterhaltungen festlegen:
 
-![Export](../media/export.png)
+![Exportieren](../media/export.png)
 
 a. Metadaten-Optionen
 

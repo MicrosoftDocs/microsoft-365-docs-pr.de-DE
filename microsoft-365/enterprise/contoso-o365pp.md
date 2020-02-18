@@ -1,6 +1,8 @@
 ---
 title: Office 365 ProPlus-Bereitstellung für Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Office 365 ProPlus verwendet.
-ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 45c9933ea04632b255acfa1062ae7ecaf9810030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068317"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Office 365 ProPlus-Bereitstellung für Contoso
 
@@ -73,7 +75,7 @@ Da sich Contoso entschlossen hat, Geräte automatisch aus der Cloud zu aktualisi
 
 Hier ist die Bereitstellungsarchitektur von Contoso für die Office 365 ProPlus-Installation und fortlaufende Updates.
 
-![Office 365 ProPlus-Bereitstellungsinfrastruktur von Contoso](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Office 365 ProPlus-Bereitstellungsinfrastruktur von Contoso](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>Nächster Schritt
 

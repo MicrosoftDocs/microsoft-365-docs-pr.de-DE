@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 4: Konfigurieren von Windows Information Protection'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Bereitstellen von Windows Information Protection in Microsoft 365.
-ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627381"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067162"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Schritt 4: Konfigurieren von Windows Information Protection
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Da immer mehr persönliche Geräte für Arbeitszwecke verwendet werden, steigt das Risiko, dass Apps und Geräte private Unternehmensdaten preisgeben. Ein Mitarbeiter sendet beispielsweise versehentlich ein Bild eines Marketingplans für ein künftiges Produkt an eine Website für soziale Medien oder speichert eine Datei mit vertraulichen Informationen in seinem öffentlichen Cloudspeicher. 
 
@@ -49,6 +51,6 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![Schritt 5](./media/stepnumbers/Step5.png)|[Konfigurieren der Verhinderung von Datenverlust in Office 365](infoprotect-data-loss-prevention.md)|
+|![Schritt 5](../media/stepnumbers/Step5.png)|[Konfigurieren der Verhinderung von Datenverlust in Office 365](infoprotect-data-loss-prevention.md)|
 
 

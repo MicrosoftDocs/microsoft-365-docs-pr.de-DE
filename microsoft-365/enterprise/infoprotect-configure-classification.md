@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 2: Konfigurieren der Klassifizierung für Ihre Umgebung'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren verschiedener Methoden zum Klassifizieren von Daten in Ihrer Organisation.
-ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370412"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067252"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Schritt 2: Konfigurieren der Klassifizierung für Ihre Umgebung
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In diesem Schritt arbeiten Sie mit der Rechts- und Complianceabteilung zusammen, um ein Klassifizierungsschema für die Daten in Ihrer Organisation zu erstellen.
 
@@ -100,7 +102,7 @@ Ein Beispiel für ein Klassifizierungsschema, das personenbezogene Daten für di
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Klassifizierung von Daten](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Klassifizierung von Daten](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step2) für diesen Schritt betrachten.
@@ -109,5 +111,5 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![Schritt 3](./media/stepnumbers/Step3.png)|[Konfigurieren der erhöhten Sicherheit für Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![Schritt 3](../media/stepnumbers/Step3.png)|[Konfigurieren der erhöhten Sicherheit für Office 365](infoprotect-configure-increased-security-office-365.md)|
 

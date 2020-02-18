@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte hinter dem Dokument Fingerabdruck und das Erstellen eines mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892028"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074947"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -45,7 +45,7 @@ Im folgenden Beispiel wird gezeigt, was passiert, wenn Sie einen Dokumentfingera
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Beispiel für ein Patentdokument, das zum Fingerabdruck einer Patentvorlage passt
 
-![Document-Fingerprinting-Diagram. png](media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-Diagram. png](../media/Document-Fingerprinting-diagram.png)
   
 Die Patent Vorlage enthält die leeren Felder "Patent Title", "Inventors" und "Description" sowie Beschreibungen für jedes dieser Felder, also das Wortmuster. Wenn Sie die ursprüngliche Patent Vorlage hochladen, befindet Sie sich in einem der unterstützten Dateitypen und im nur-Text-Format. DLP wandelt dieses Wortmuster in einen Fingerabdruck des Dokuments um, bei dem es sich um eine kleine Unicode-XML-Datei mit einem eindeutigen Hashwert handelt, der den ursprünglichen Text darstellt, und der Fingerabdruck wird als Datenklassifizierung in Active Directory gespeichert. (Als Sicherheitsmaßnahme wird das Originaldokument selbst nicht im Dienst gespeichert; es wird nur der Hashwert gespeichert, und das ursprüngliche Dokument kann nicht aus dem Hashwert rekonstruiert werden.) Der Patent Fingerabdruck wird dann zu einem vertraulichen Informationstyp, den Sie einer DLP-Richtlinie zuordnen können. Nachdem Sie den Fingerabdruck einer DLP-Richtlinie zugeordnet haben, erkennt DLP alle ausgehenden e-Mails mit Dokumenten, die dem Patent Fingerabdruck entsprechen, und behandelt diese entsprechend der Richtlinie Ihrer Organisation. 
 

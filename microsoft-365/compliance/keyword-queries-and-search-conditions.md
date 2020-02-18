@@ -19,17 +19,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
-ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security & Compliance Center durchsuchen können.  '
+ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585914"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072398"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
-In diesem Thema werden die e-Mail-und Dokumenteigenschaften beschrieben, nach denen Sie in e-Mail-Elementen in Exchange Online suchen können, sowie Dokumente, die in SharePoint und OneDrive für Unternehmen Websites gespeichert sind, indem Sie die Inhaltssuche im Security #a0 Compliance Center verwenden. Sie können auch die ** \*-ComplianceSearch-** Cmdlets in Security #a0 Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Im Thema wird außerdem Folgendes beschrieben:   
+In diesem Thema werden die e-Mail-und Dokumenteigenschaften beschrieben, nach denen Sie in e-Mail-Elementen in Exchange Online suchen können, sowie Dokumente, die in SharePoint und OneDrive für Unternehmen Websites gespeichert sind, indem Sie die Inhaltssuche im Security & Compliance Center verwenden. Sie können auch die ** \*-ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Im Thema wird außerdem Folgendes beschrieben:   
   
 - Verwenden Sie boolesche Suchoperatoren, Suchbedingungen und andere Suchabfrage Techniken, um Ihre Suchergebnisse zu verfeinern.
     
@@ -41,11 +41,11 @@ Eine Schritt-für-Schritt-Anleitung zum Erstellen einer Inhaltssuche finden Sie 
 
   
 > [!NOTE]
-> Die Inhaltssuche im Security #a0 Compliance Center und die entsprechenden ** \*-ComplianceSearch-** Cmdlets in Security #a1 Compliance Center PowerShell verwenden die Schlüsselwortabfrage Sprache (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Die Inhaltssuche im Security & Compliance Center und die entsprechenden ** \*-ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden die Schlüsselwortabfrage Sprache (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Durchsuchbare E-Mail-Eigenschaften
 
-In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgeführt, die mithilfe der Inhalts Suchfunktion im Security #a0 Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese `property:value` Paare in das Feld Schlüsselwörter für eine Inhaltssuche eingeben. 
+In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgeführt, die mithilfe der Inhalts Suchfunktion im Security & Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese `property:value` Paare in das Feld Schlüsselwörter für eine Inhaltssuche eingeben. 
 
 > [!NOTE]
 > Beim Durchsuchen von e-Mail-Eigenschaften ist es nicht möglich, nach Elementen zu suchen, in denen die angegebene Eigenschaft leer oder leer ist. Wenn Sie beispielsweise die *Eigenschaft: Wert-* paar von **Subject: ""** verwenden, um nach e-Mail-Nachrichten mit einer leeren Betreffzeile zu suchen, werden keine Ergebnisse zurückgegeben. Dies gilt auch beim Durchsuchen von Website-und Kontakteigenschaften.
@@ -77,7 +77,7 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
 
 ## <a name="searchable-site-properties"></a>Durchsuchbare Websiteeigenschaften
 
-In der folgenden Tabelle sind einige der SharePoint-und OneDrive für Unternehmen-Eigenschaften aufgeführt, die mithilfe der Inhalts Suchfunktion im Security #a0 Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
+In der folgenden Tabelle sind einige der SharePoint-und OneDrive für Unternehmen-Eigenschaften aufgeführt, die mithilfe der Inhalts Suchfunktion im Security & Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
   
 Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden können, finden Sie unter [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Eigenschaften, die mit einem **Ja** in der **Queryable** -Spalte markiert sind, können durchsucht werden. 
   
@@ -97,7 +97,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer freigegeben wurden und auf der Seite für **mich freigegeben** auf der OneDrive für Unternehmen Website des Benutzers angezeigt werden. Dabei handelt es sich um Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Beim Exportieren von Dokumenten, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument gemeinsam mit dem angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Suchen nach Websiteinhalten, die in Ihrer Organisation freigegeben](#searching-for-site-content-shared-within-your-organization)sind.|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|In beiden Beispielen werden alle internen Dokumente zurückgegeben, die explizit für Garth fort freigegeben wurden und auf der Seite für **mich freigegeben** in Garth fort in OneDrive für Unternehmen Konto angezeigt werden.|
 |Website|Die URL einer Website oder Gruppen von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente aus den OneDrive für Unternehmen Websites für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Das erste Beispiel gibt Elemente zurück, die größer als 1 Byte sind. Das zweite Beispiel gibt Elemente von 1 bis 10.000 Bytes an Größe zurück.|
-|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
+|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
 |||||
    
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -112,7 +112,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |BusinessAddress|Die Adresse in der **Business Address** -Eigenschaft. Die-Eigenschaft wird auch auf der Seite Kontakteigenschaften als **Arbeits** Adresse bezeichnet.|
 |Businessphone|Die Telefonnummer in einer der **Geschäftstelefonnummer** -Eigenschaften.|
 |CompanyName|Der Name in der **Company** -Eigenschaft.|
-|Department|Der Name in der **Department** -Eigenschaft.|
+|Abteilung|Der Name in der **Department** -Eigenschaft.|
 |DisplayName|Der Anzeigename des Kontakts. Dies ist der Name in der **vollständigen Name** -Eigenschaft des Kontakts.|
 |EmailAddress|Die Adresse für eine beliebige e-Mail-Adress Eigenschaft für den Kontakt. Benutzer können mehrere e-Mail-Adressen für einen Kontakt hinzufügen. Wenn Sie diese Eigenschaft verwenden, werden Kontakte zurückgegeben, die mit den e-Mail-Adressen des Kontakts übereinstimmen.|
 |FileAs|Die Eigenschaft " **file as** ". Diese Eigenschaft wird verwendet, um anzugeben, wie der Kontakt in der Kontaktliste des Benutzers aufgeführt wird. Beispielsweise könnte ein Kontakt als *FirstName, LastName* oder *LastName, FirstName*aufgelistet werden.|
@@ -126,14 +126,14 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |OfficeLocation|Der Wert in der **Office** -oder **Office-Standort** Eigenschaft.|
 |OtherAddress|Der Wert für die **andere** Address-Eigenschaft.|
 |Nachname|Der Name in der **Last** Name-Eigenschaft.|
-|Title|Der Titel in der **Position Title** -Eigenschaft.|
+|Position|Der Titel in der **Position Title** -Eigenschaft.|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
 
-Sie können das Feature für die Inhaltssuche im Security and Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten auf SharePoint und OneDrive für Unternehmen Websites gespeichert sind. Sie können dies tun, indem Sie `SensitiveType` die-Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage `SensitiveType:"Credit Card Number"` gibt beispielsweise Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine Sozialversicherungsnummer der USA enthalten. Wenn Sie eine Liste der vertraulichen Datentypen anzeigen möchten, nach denen Sie suchen können, gehen Sie zu **Klassifizierungs** \> **Typen für vertrauliche Informationen** im Security #a0 Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** in der PowerShell Security #a0 Compliance Center verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen. 
+Sie können das Feature für die Inhaltssuche im Security and Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten auf SharePoint und OneDrive für Unternehmen Websites gespeichert sind. Sie können dies tun, indem Sie `SensitiveType` die-Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage `SensitiveType:"Credit Card Number"` gibt beispielsweise Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine Sozialversicherungsnummer der USA enthalten. Wenn Sie eine Liste der vertraulichen Datentypen anzeigen möchten, nach denen Sie suchen können, gehen Sie zu **Klassifizierungs** \> **Typen für vertrauliche Informationen** im Security & Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** in der PowerShell Security & Compliance Center verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen. 
   
-Sie können die `SensitiveType` -Eigenschaft auch verwenden, um nach dem Namen eines benutzerdefinierten vertraulichen Informationstyps zu suchen, den Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Sie können die Spalte **Publisher** auf der Seite **vertrauliche Informationstypen** im Security #a0 Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell) verwenden, um zwischen integrierten und benutzerdefinierten Typen vertraulicher Informationen zu unterscheiden. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md).
+Sie können die `SensitiveType` -Eigenschaft auch verwenden, um nach dem Namen eines benutzerdefinierten vertraulichen Informationstyps zu suchen, den Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Sie können die Spalte **Publisher** auf der Seite **vertrauliche Informationstypen** im Security & Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell) verwenden, um zwischen integrierten und benutzerdefinierten Typen vertraulicher Informationen zu unterscheiden. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md).
   
 Weitere Informationen zum Erstellen von Abfragen mithilfe der `SensitiveType` -Eigenschaft finden Sie unter [Formular Abfragen zum Auffinden vertraulicher Daten, die auf Websites gespeichert](form-a-query-to-find-sensitive-data-stored-on-sites.md)sind.
 
@@ -221,7 +221,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
 |**Bedingung**|**Beschreibung**|
 |:-----|:-----|
 |Ursprung|Das Feld Autor aus Office-Dokumenten, das bleibt, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und die e-Mails an eine andere Person weitergeben, die es dann in SharePoint hoch lädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
+|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dies ist die gleiche Eigenschaft wie die FileExtension-Website Eigenschaft.|
@@ -271,9 +271,9 @@ Beachten Sie Folgendes bei der Verwendung von Suchbedingungen:
     
 - Wie bereits beschrieben können bei einigen Bedingungseigenschaften mehrere Werte eingegeben werden. Diese Werte werden mit **OR**-Operator logisch verknüpft. Das Ergebnis ist das gleiche wie beim Verwenden mehrerer Instanzen der gleichen Bedingung, wobei jede jeweils einen einzelnen Wert aufweist. Die folgenden Abbildungen zeigen ein Beispiel für eine einzelne Bedingung mit mehreren Werten und ein Beispiel für mehrere Bedingungen (für dieselbe Eigenschaft) mit einem einzelnen Wert. Beide Beispiele ergeben dieselbe Abfrage:`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine bestimmte Bedingung erfüllt werden muss, verwenden Sie für jede Bedingung separate Regeln. Wenn Sie Nachrichten mit Anlagen und Nachrichten mit Inhalt, der einem Muster entspricht, z. B. die gleichen Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. Sie können eine Regel problemlos kopieren.](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine bestimmte Bedingung erfüllt werden muss, verwenden Sie für jede Bedingung separate Regeln. Wenn Sie Nachrichten mit Anlagen und Nachrichten mit Inhalt, der einem Muster entspricht, z. B. die gleichen Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. Sie können eine Regel problemlos kopieren.](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![Mehrere Suchkriterien für die gleiche Eigenschaft](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![Mehrere Suchkriterien für die gleiche Eigenschaft](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
 > Wenn für eine Bedingung mehrere Werte zulässig sind, wird empfohlen, eine einzelne Bedingung mit mehreren Werten (durch Kommas oder Semikolons getrennt) zu verwenden. Auf diese Weise können Sie leichter sicherstellen, dass Sie die gewünschte Abfragelogik erhalten. 
@@ -288,7 +288,7 @@ In diesem Beispiel werden Dokumente in SharePoint und OneDrive für Unternehmen 
   
  **GUI**
   
-![Erstes Beispiel für Suchbedingungen](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![Erstes Beispiel für Suchbedingungen](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
  **Suchabfragesyntax**
   
@@ -304,7 +304,7 @@ In diesem Beispiel werden e-Mail-Elemente oder Dokumente zurückgegeben, die das
   
  **GUI**
   
-![Zweites Beispiel für Suchbedingungen](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Zweites Beispiel für Suchbedingungen](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
  **Suchabfragesyntax**
   
@@ -320,7 +320,7 @@ In diesem Beispiel werden e-Mail-Nachrichten oder Kalender Besprechungen zurück
   
  **GUI**
   
-![Drittes Beispiel für Suchbedingungen](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Drittes Beispiel für Suchbedingungen](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
  **Suchabfragesyntax**
   
@@ -338,7 +338,7 @@ Einige Sonderzeichen sind nicht im Suchindex enthalten und können daher nicht d
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Suchen nach Websiteinhalten, die für externe Benutzer freigegeben sind
 
-Sie können auch das Feature für die Inhaltssuche im Security #a0 Compliance Center verwenden, um nach Dokumenten zu suchen, die in SharePoint gespeichert sind, und OneDrive für Unternehmen Websites, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dies kann Ihnen helfen, vertrauliche oder proprietäre Informationen zu identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Sie können dies tun, indem Sie `ViewableByExternalUsers` die-Eigenschaft in einer Stichwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die für externe Benutzer freigegeben wurden, indem Sie eine der folgenden Freigabemethoden verwenden: 
+Sie können auch das Feature für die Inhaltssuche im Security & Compliance Center verwenden, um nach Dokumenten zu suchen, die in SharePoint gespeichert sind, und OneDrive für Unternehmen Websites, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dies kann Ihnen helfen, vertrauliche oder proprietäre Informationen zu identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Sie können dies tun, indem Sie `ViewableByExternalUsers` die-Eigenschaft in einer Stichwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die für externe Benutzer freigegeben wurden, indem Sie eine der folgenden Freigabemethoden verwenden: 
   
 - Eine Freigabeeinladung, bei der sich Benutzer als authentifizierter Benutzer bei Ihrer Organisation anmelden müssen.
     
@@ -379,7 +379,7 @@ Wie bereits erläutert, können Sie die `SharedWithUsersOWSUser` -Eigenschaft ve
   
 Dokumente müssen explizit für einen bestimmten Benutzer freigegeben werden, der bei Verwendung der `SharedWithUsersOWSUser` Eigenschaft in Suchergebnissen zurückgegeben werden soll. Wenn beispielsweise eine Person ein Dokument in Ihrem OneDrive-Konto freigibt, haben Sie die Möglichkeit, Sie für jeden freizugeben (innerhalb oder außerhalb der Organisation), Sie nur für Personen innerhalb der Organisation freizugeben oder Sie für eine bestimmte Person freizugeben. Hier ist ein Screenshot des Fensters " **Freigeben** " in OneDrive, in dem die drei Freigabeoptionen angezeigt werden. 
   
-![Nur für bestimmte Personen freigegebene Dateien werden von einer Suchabfrage zurückgegeben, die die SharedWithUsersOWSUser-Eigenschaft verwendet.](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![Nur für bestimmte Personen freigegebene Dateien werden von einer Suchabfrage zurückgegeben, die die SharedWithUsersOWSUser-Eigenschaft verwendet.](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 Nur Dokumente, die mit der dritten Option (für **bestimmte Personen**freigegeben) freigegeben werden, werden von einer Suchabfrage zurückgegeben `SharedWithUsersOWSUser` , die die Eigenschaft verwendet. 
 
