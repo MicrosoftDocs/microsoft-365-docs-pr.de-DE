@@ -1,5 +1,7 @@
 ---
 title: 'Phase 6: Informationsschutz'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,55 +15,55 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Infrastruktur für Informationsschutz in Microsoft 365 Enterprise.
-ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 418506927885948cd917061d99bb69163b1e44a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030850"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067137"
 ---
-# <a name="phase-6-information-protection"></a><span data-ttu-id="283db-103">Phase 6: Informationsschutz</span><span class="sxs-lookup"><span data-stu-id="283db-103">Phase 6: Information protection</span></span>
+# <a name="phase-6-information-protection"></a><span data-ttu-id="e00ea-103">Phase 6: Informationsschutz</span><span class="sxs-lookup"><span data-stu-id="e00ea-103">Phase 6: Information protection</span></span>
 
-![Phase 6: Informationsschutz](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![Phase 6: Informationsschutz](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-<span data-ttu-id="283db-p101">Informationsschutz beinhaltet eine Reihe von Richtlinien und Technologien, die das Übermitteln, Speichern und Verarbeiten vertraulicher Informationen definieren. In Phase 6 werden Sie durch die Einstellungen und Funktionen für Identitätsschutz in Microsoft 365 Enterprise geführt, die Sie bei der Sicherung Ihrer Daten für cloudbasierte Arbeitslasten und Szenarien unterstützen.</span><span class="sxs-lookup"><span data-stu-id="283db-p101">Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.</span></span>
+<span data-ttu-id="e00ea-p101">Informationsschutz beinhaltet eine Reihe von Richtlinien und Technologien, die das Übermitteln, Speichern und Verarbeiten vertraulicher Informationen definieren. In Phase 6 werden Sie durch die Einstellungen und Funktionen für Identitätsschutz in Microsoft 365 Enterprise geführt, die Sie bei der Sicherung Ihrer Daten für cloudbasierte Arbeitslasten und Szenarien unterstützen.</span><span class="sxs-lookup"><span data-stu-id="e00ea-p101">Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.</span></span>
 
 >[!Note]
-><span data-ttu-id="283db-107">Wenn Sie bereits Informationsschutz bereitgestellt haben, lesen Sie bitte den Abschnitt zu den [Beendigungskriterien](infoprotect-exit-criteria.md) für diese Phase, um sicherzustellen, dass sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.</span><span class="sxs-lookup"><span data-stu-id="283db-107">If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+><span data-ttu-id="e00ea-107">Wenn Sie bereits Informationsschutz bereitgestellt haben, lesen Sie bitte den Abschnitt zu den [Beendigungskriterien](infoprotect-exit-criteria.md) für diese Phase, um sicherzustellen, dass sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.</span><span class="sxs-lookup"><span data-stu-id="e00ea-107">If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
 >
 
-## <a name="plan-and-deploy-your-microsoft-365-enterprise-information-protection-infrastructure"></a><span data-ttu-id="283db-108">Planen und Bereitstellen Ihrer Infrastruktur für Informationsschutz in Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="283db-108">Plan and deploy your Microsoft 365 Enterprise information protection infrastructure</span></span> 
+## <a name="plan-and-deploy-your-microsoft-365-enterprise-information-protection-infrastructure"></a><span data-ttu-id="e00ea-108">Planen und Bereitstellen Ihrer Infrastruktur für Informationsschutz in Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="e00ea-108">Plan and deploy your Microsoft 365 Enterprise information protection infrastructure</span></span> 
 
-<span data-ttu-id="283db-p102">Es ist wichtig, dass Sie in Zusammenarbeit mit Ihrer Rechts- und Complianceabteilung ermitteln, ob Ihre Organisation Compliancestandards wie HIPPA, CJIS oder DSGVO erfüllen muss. Sie sollten auch in Zusammenarbeit mit Ihrer Sicherheitsabteilung die Zielsetzungen für Informationsschutz für Ihre Organisation und Abteilungen oder Gruppen erarbeiten, die zusätzliche Sicherheit benötigen.</span><span class="sxs-lookup"><span data-stu-id="283db-p102">It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.</span></span>
+<span data-ttu-id="e00ea-p102">Es ist wichtig, dass Sie in Zusammenarbeit mit Ihrer Rechts- und Complianceabteilung ermitteln, ob Ihre Organisation Compliancestandards wie HIPPA, CJIS oder DSGVO erfüllen muss. Sie sollten auch in Zusammenarbeit mit Ihrer Sicherheitsabteilung die Zielsetzungen für Informationsschutz für Ihre Organisation und Abteilungen oder Gruppen erarbeiten, die zusätzliche Sicherheit benötigen.</span><span class="sxs-lookup"><span data-stu-id="e00ea-p102">It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.</span></span>
 
-<span data-ttu-id="283db-111">Verwenden Sie anschließend die folgenden Schritte zum Erstellen vom Informationsschutz für Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="283db-111">Next, use the following steps to build out information protection for Microsoft 365 Enterprise.</span></span>
-
-|||
-|:-------|:-----|
-|![Schritt 1](./media/stepnumbers/Step1.png)|[<span data-ttu-id="283db-113">Definieren von Sicherheits- und Informationsschutzebenen</span><span class="sxs-lookup"><span data-stu-id="283db-113">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
-|![Schritt 2](./media/stepnumbers/Step2.png)|[<span data-ttu-id="283db-115">Konfigurieren der Klassifizierung für Ihre Umgebung</span><span class="sxs-lookup"><span data-stu-id="283db-115">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
-|![Schritt 3](./media/stepnumbers/Step3.png)|[<span data-ttu-id="283db-117">Konfigurieren der erhöhten Sicherheit für Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="283db-117">Configure increased security for Microsoft 365</span></span>](infoprotect-configure-increased-security-office-365.md)|
-|![Schritt 4](./media/stepnumbers/Step4.png)|[<span data-ttu-id="283db-119">Konfigurieren der Windows Information Protection</span><span class="sxs-lookup"><span data-stu-id="283db-119">Configure Windows Information Protection</span></span>](infoprotect-deploy-windows-information-protection.md)|
-|![Schritt 5](./media/stepnumbers/Step5.png)|[<span data-ttu-id="283db-121">Konfigurieren der Verhinderung von Datenverlust in Office 365</span><span class="sxs-lookup"><span data-stu-id="283db-121">Configure Office 365 Data Loss Prevention</span></span>](infoprotect-data-loss-prevention.md)|
-|![Schritt 6](./media/stepnumbers/Step6.png)|[<span data-ttu-id="283db-123">Konfigurieren der E-Mail-Verschlüsselung</span><span class="sxs-lookup"><span data-stu-id="283db-123">Configure email encryption</span></span>](infoprotect-email-encryption.md)|
-|![Schritt 7](./media/stepnumbers/Step7.png)|[<span data-ttu-id="283db-125">Konfigurieren von Privileged Access Management für Office 365</span><span class="sxs-lookup"><span data-stu-id="283db-125">Configure privileged access management for Office 365</span></span>](infoprotect-configure-privileged-access-management.md)|
-|||
-
-<span data-ttu-id="283db-126">Wenn Sie diese Schritte abgeschlossen haben, wechseln Sie zu [Beendigungskriterien](infoprotect-exit-criteria.md) für diese Phase, um sicherzustellen, dass Sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.</span><span class="sxs-lookup"><span data-stu-id="283db-126">When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
-
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="283db-127">Funktionsweise von Microsoft 365 Enterprise bei Microsoft</span><span class="sxs-lookup"><span data-stu-id="283db-127">How Microsoft does Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="283db-128">Erfahren Sie, wie IT-Experten bei Microsoft [Azure Information Protection verwenden und Daten schützen](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span><span class="sxs-lookup"><span data-stu-id="283db-128">Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span></span>
-
-## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="283db-129">Wie Microsoft 365 Enterprise bei Contoso eingesetzt wird</span><span class="sxs-lookup"><span data-stu-id="283db-129">How Contoso did Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="283db-130">Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber multinationales, repräsentatives Unternehmen [Informationsschutz implementiert hat](contoso-info-protect.md) (mit Microsoft 365-Clouddiensten).</span><span class="sxs-lookup"><span data-stu-id="283db-130">See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.</span></span>
-
-![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
-
-## <a name="next-step"></a><span data-ttu-id="283db-132">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="283db-132">Next step</span></span>
+<span data-ttu-id="e00ea-111">Verwenden Sie anschließend die folgenden Schritte zum Erstellen vom Informationsschutz für Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="e00ea-111">Next, use the following steps to build out information protection for Microsoft 365 Enterprise.</span></span>
 
 |||
 |:-------|:-----|
-|![Schritt 1](./media/stepnumbers/Step1.png)|[<span data-ttu-id="283db-134">Definieren von Sicherheits- und Informationsschutzebenen</span><span class="sxs-lookup"><span data-stu-id="283db-134">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
+|![Schritt 1](../media/stepnumbers/Step1.png)|[<span data-ttu-id="e00ea-113">Definieren von Sicherheits- und Informationsschutzebenen</span><span class="sxs-lookup"><span data-stu-id="e00ea-113">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
+|![Schritt 2](../media/stepnumbers/Step2.png)|[<span data-ttu-id="e00ea-115">Konfigurieren der Klassifizierung für Ihre Umgebung</span><span class="sxs-lookup"><span data-stu-id="e00ea-115">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
+|![Schritt 3](../media/stepnumbers/Step3.png)|[<span data-ttu-id="e00ea-117">Konfigurieren der erhöhten Sicherheit für Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e00ea-117">Configure increased security for Microsoft 365</span></span>](infoprotect-configure-increased-security-office-365.md)|
+|![Schritt 4](../media/stepnumbers/Step4.png)|[<span data-ttu-id="e00ea-119">Konfigurieren der Windows Information Protection</span><span class="sxs-lookup"><span data-stu-id="e00ea-119">Configure Windows Information Protection</span></span>](infoprotect-deploy-windows-information-protection.md)|
+|![Schritt 5](../media/stepnumbers/Step5.png)|[<span data-ttu-id="e00ea-121">Konfigurieren der Verhinderung von Datenverlust in Office 365</span><span class="sxs-lookup"><span data-stu-id="e00ea-121">Configure Office 365 Data Loss Prevention</span></span>](infoprotect-data-loss-prevention.md)|
+|![Schritt 6](../media/stepnumbers/Step6.png)|[<span data-ttu-id="e00ea-123">Konfigurieren der E-Mail-Verschlüsselung</span><span class="sxs-lookup"><span data-stu-id="e00ea-123">Configure email encryption</span></span>](infoprotect-email-encryption.md)|
+|![Schritt 7](../media/stepnumbers/Step7.png)|[<span data-ttu-id="e00ea-125">Konfigurieren von Privileged Access Management für Office 365</span><span class="sxs-lookup"><span data-stu-id="e00ea-125">Configure privileged access management for Office 365</span></span>](infoprotect-configure-privileged-access-management.md)|
+|||
+
+<span data-ttu-id="e00ea-126">Wenn Sie diese Schritte abgeschlossen haben, wechseln Sie zu [Beendigungskriterien](infoprotect-exit-criteria.md) für diese Phase, um sicherzustellen, dass Sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.</span><span class="sxs-lookup"><span data-stu-id="e00ea-126">When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="e00ea-127">Funktionsweise von Microsoft 365 Enterprise bei Microsoft</span><span class="sxs-lookup"><span data-stu-id="e00ea-127">How Microsoft does Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="e00ea-128">Erfahren Sie, wie IT-Experten bei Microsoft [Azure Information Protection verwenden und Daten schützen](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span><span class="sxs-lookup"><span data-stu-id="e00ea-128">Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span></span>
+
+## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="e00ea-129">Wie Microsoft 365 Enterprise bei Contoso eingesetzt wird</span><span class="sxs-lookup"><span data-stu-id="e00ea-129">How Contoso did Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="e00ea-130">Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber multinationales, repräsentatives Unternehmen [Informationsschutz implementiert hat](contoso-info-protect.md) (mit Microsoft 365-Clouddiensten).</span><span class="sxs-lookup"><span data-stu-id="e00ea-130">See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.</span></span>
+
+![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+
+## <a name="next-step"></a><span data-ttu-id="e00ea-132">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="e00ea-132">Next step</span></span>
+
+|||
+|:-------|:-----|
+|![Schritt 1](../media/stepnumbers/Step1.png)|[<span data-ttu-id="e00ea-134">Definieren von Sicherheits- und Informationsschutzebenen</span><span class="sxs-lookup"><span data-stu-id="e00ea-134">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
 

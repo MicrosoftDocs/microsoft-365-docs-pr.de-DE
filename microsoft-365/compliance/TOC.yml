@@ -1,4 +1,4 @@
-- name: Microsoft 365 Compliance
+- name: Microsoft 365-Compliance
   href: index.yml
 - name: Erste Schritte
   items:
@@ -75,8 +75,11 @@
   href: protect-information.md
   items:
     - name: Vertraulichkeitsbezeichnungen
-      href: sensitivity-labels.md
       items:
+        - name: Weitere Informationen Vertraulichkeitsbezeichnungen
+          href: sensitivity-labels.md
+        - name: Erste Schritte mit Vertraulichkeitsbezeichnungen
+          href: get-started-with-sensitivity-labels.md
         - name: Erstellen und Veröffentlichen von Vertraulichkeitsbezeichnungen
           href: create-sensitivity-labels.md
         - name: Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Vertraulichkeitsbezeichnungen in Office-Apps
+        - name: Verwenden von Sensitivitäts Bezeichnungen in Office-Apps
           href: sensitivity-labels-office-apps.md
     - name: 'Verhinderung von Datenverlusten (Data Loss Prevention, DLP)'
       href: data-loss-prevention-policies.md
@@ -1153,5 +1156,5 @@
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: Office 365 Business
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Sicherheit in Microsoft 365
+- name: Microsoft 365-Sicherheit
   href: 'https://docs.microsoft.com/microsoft-365/security/'
