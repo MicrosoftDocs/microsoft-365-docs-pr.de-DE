@@ -1,5 +1,7 @@
 ---
 title: Erste Schritte – Desktopbereitstellung
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Einführung in den Desktopbereitstellungsprozess.
-ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112529"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067488"
 ---
 # <a name="getting-started---desktop-deployment"></a>Erste Schritte – Desktopbereitstellung
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Erste Schritte: Leitfaden zu Personen, Prozessen und Technologien</strong></p>
 <p>Entdecken Sie die Vorteile von Windows 10 und Office 365 ProPlus, von wesentlichen Änderungen und Überlegungen im Vergleich zu früheren Bereitstellungen und von bewährten Methoden, um einen reibungslosen Übergang zu Windows 10 und Office 365 ProPlus sicherzustellen.</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -111,7 +113,7 @@ Wie in vorherigen Upgrades ist das Migrationstool für den Benutzerstatus (USMT)
 
 **[Schritt 7: Windows und Office-as-a-Service](https://aka.ms/mdd7)** Dies steht für eine bedeutende Änderung in der Weise, wie Desktops verwaltet werden. Mit diesem Umstieg auf Windows 10 und Office 365 ProPlus können Sie zur Windows und Office-as-a-Service-Verwaltung wechseln. Anstelle eines großen Technologiewechsel alle paar Jahre können Sie Benutzern kontinuierlich neue Funktionen, Erfahrungen und Schutzfunktionen bereitstellen. Halbjährliche Featureupdates liefern neue Funktionen im Herbst und Frühling eines jeden Jahres, während monatliche kumulative Updates weiterhin Sicherheit, Zuverlässigkeit und Fehlerbehebungen enthalten. Sie können zwar den Office 2019-Client bereitstellen, es wird jedoch dringend ein Wechsel zu Office 365 ProPlus empfohlen. Dies folgt einem ähnlichen Serviceplan wie Windows, sodass Benutzer Updates für die Office-Apps in regelmäßigen Abständen erhalten.
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [Übersicht über Windows-as-a-Service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Übersicht über Office-as-a-Service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)

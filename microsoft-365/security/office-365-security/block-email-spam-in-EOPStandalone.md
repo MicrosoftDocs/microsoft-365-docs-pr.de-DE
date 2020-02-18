@@ -1,5 +1,7 @@
 ---
 title: Blockieren von Spam-E-Mails in EOP als eigenständige Lösung
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
@@ -16,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Dokument für Administratoren von EOP als eigenständige Lösung zum Verhindern falsch negativer Ergebnisse
-ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971903"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086584"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Anpassen des Office 365-Spamfilters mit diesen Einstellungen
 
@@ -41,7 +43,7 @@ Passen Sie Ihren Office 365-Spamfilter an, indem Sie die Absender-IP-Adresse zur
 
 Handelt es sich bei dem Spam in erster Linie um Massensendungen oder um Newsletters oder Werbesendungen? Sie können den Spamfilter in Office 365 anpassen, wenn Sie [E-Mail-Flussregeln verwenden, um das Herausfiltern von Massensendungen zu konfigurieren](use-transport-rules-to-configure-bulk-email-filtering.md), oder die Einstellung **Massensendungen** unter [Erweiterte Spamfilterungsoptionen](advanced-spam-filtering-asf-options.md) des Spamfilters aktivieren. Klicken Sie im Exchange Admin Center zunächst auf **Schutz** \> **Inhaltsfilter**, und doppelklicken Sie dann auf die Filterrichtlinie, die Sie anpassen möchten. Klicken Sie auf **Aktionen für Spam und Massensendungen**, um die Einstellungen wie hier gezeigt anzupassen.
 
-![Festlegen des Massen-E-Mail-Filters in Exchange Online](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+![Festlegen des Massen-E-Mail-Filters in Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Blockieren von Spam-E-Mails mithilfe von Spamfilter-Sperrlisten
 
@@ -51,7 +53,7 @@ Handelt es sich bei dem Spam in erster Linie um Massensendungen oder um Newslett
 
 Sie unterstützen Ihre Office 365-Antispammaßnahmen zur Vermeidung falsch negativer und Junk-E-Mails, wenn Sie Ihre Benutzer auffordern, die Spam-Absenderadresse ihrer Liste der blockierten Absender in [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) oder [Outlook im Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) hinzuzufügen. Klicken Sie zunächst in Outlook im Web auf **Einstellungen** \> **Optionen** \> **Blockieren oder zulassen**, und fügen Sie dann die Adresse der Liste **Blockierte Absender** hinzu, wie hier gezeigt.
 
-![Blockieren eines Absenders in der Outlook im Web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Blockieren eines Absenders in der Outlook im Web](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
 > Ausführlichere Informationen zu Listen mit sicheren Absendern finden Sie unter [Listen sicherer und blockierter Absender in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
@@ -87,4 +89,4 @@ Der EOP-Dienst ist darauf ausgelegt, die sicheren und blockierten Absender des B
 
 [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
 
-[Verwenden einer Liste sicherer IP-Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Verwenden einer Liste sicherer IP-Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](prevent-email-from-being-marked-as-spam.md)

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Sie haben die Möglichkeit, eDiscovery-Suchergebnisse zu deduplizieren, die exportiert werden, sodass nur eine Kopie einer e-Mail-Nachricht exportiert wird, obwohl möglicherweise mehrere Instanzen derselben Nachricht in unterschiedlichen Postfächern gefunden wurden.
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892038"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076271"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplizierung in eDiscovery-Suchergebnissen
 
@@ -45,11 +45,11 @@ Die folgenden Grafiken zeigen, wie doppelte Nachrichten in den Berichten **resul
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>Results. CSV-Bericht (in Excel angezeigt)
   
-![Anzeigen von Informationen zu doppelten Elementen im Bericht "results. csv"](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Anzeigen von Informationen zu doppelten Elementen im Bericht "results. csv"](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest. XML-Bericht (in Excel angezeigt)
   
-![Anzeigen von Informationen zu doppelten Elementen im Bericht "Manifest. xml"](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Anzeigen von Informationen zu doppelten Elementen im Bericht "Manifest. xml"](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Darüber hinaus sind andere Eigenschaften aus doppelten Nachrichten in den Export Berichten enthalten. Dies umfasst das Postfach, in dem sich die doppelte Nachricht befindet, ob die Nachricht an eine Verteilergruppe gesendet wurde und ob die Nachricht CC 'd oder Bcc an einen anderen Benutzer gesendet wurde.
   

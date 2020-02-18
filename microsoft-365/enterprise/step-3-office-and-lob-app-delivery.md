@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Liefern von Office- und Branchen-Apps'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Liefern von Office- und Branchen-Apps.
-ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112587"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085328"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Schritt 3: Liefern von Office- und Branchen-Apps
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Schritt 3: Liefern von Office- und Branchen-Apps</strong></p>
 <p>Stellen Sie sicher, dass Ihre Apps für eine automatische Installation verpackt und bereit sind. Erfahren Sie, wie Sie durch eine Klick-und-Los-Verpackung mit Office 365 ProPlus neue Optionen erhalten, um Ihre Office-Apps zu konfigurieren, zu liefern und auf dem neuesten Stand zu halten.</p></td>
-<td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -51,13 +53,13 @@ Für Ihre Branchen-Apps verwenden Sie wahrscheinlich MSI-basierte Pakete oder au
 
 Software-Bereitstellungstools wie Microsoft Endpoint Configuration Manager und Microsoft Intune sind ebenfalls für die Lieferung von Apps in MSI-Paketen optimiert. Nachdem Sie Ihre Apps unter Windows 10 geprüft haben, können Sie Microsoft Endpoint Configuration Manager (Current Branch) für die App-Lieferung verwenden. Wenn Sie das Unternehmensportal in Microsoft Intune verwenden, können Sie die Auswahl der von der IT genehmigten Apps, die Ihrer Organisation zu Verfügung stehen, erweitern, sodass auch die neuesten Anwendungen enthalten sind. Benutzer können dann selbst auswählen, was sie benötigen.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
 ## <a name="pc-imaging"></a>PC-Imageerstellung
 
 Eine andere häufig verwendete Methode der App-Bereitstellung ist PC-Imageerstellung. In diesem Fall werden Anwendungen entweder über die Tasksequenz oder manuell auf einem Beispiel-PC installiert. Dann wird ein Systemabbild mit den erforderlichen vorinstallierten Anwendungen aufgezeichnet. Der Imaging-Ansatz zur Erstellung und Erfassung kann bei der Bereitstellung neuer PCs Zeit sparen, aber denken Sie daran, dass Betriebssysteme und Apps innerhalb des Abbilds schnell veraltet sein können. Das kumulative Updatemodell in Windows 10 und Office 365 ProPlus hilft bei diesem Problem, beseitigt es aber nicht vollständig. Deshalb empfehlen wir einen schlanken Imaging-Ansatz, bei dem Ihre Anwendungen zur Bereitstellungszeit von außerhalb des Images installiert werden.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
 Wenn Sie Office 365 ProPlus in das Image einbeziehen möchten, denken Sie daran, dass dies eine benutzerbasierte Aktivierung erfordert. Es kann nicht vom Systemadministrator bereits aktiviert werden. Verwenden Sie das Office-Bereitstellungstool auf dem Gerät, von dem Sie ein Image erstellen, und überspringen Sie die Benutzeranmeldung. Nach der Bereitstellung des Images können sich Endbenutzer mit ihren Office 365-Anmeldeinformationen anmelden und Office 365 ProPlus aktivieren.
 
@@ -73,11 +75,11 @@ Per Klick-und-Los bereitgestellte Programme werden in einer virtuellen Anwendung
 
 Microsoft empfiehlt die Verwendung des [Office-Anpassungstools](https://config.office.com/) zum Anpassen der Bereitstellungseinstellungen und Erstellen Ihrer XML-Konfigurationsdatei. Über das Office-Anpassungstool können Sie festlegen, welche Anwendungen und Sprachen installiert und wie die Anwendungen aktualisiert werden. Außerdem können Sie damit die Anwendungs- und Installationsoberflächeneinstellungen vornehmen.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
 Wenn Sie Configuration Manager verwenden, können Sie dies weiter für die allgemeine Bereitstellung von Office 365 ProPlus verwenden. Configuration Manager (Current Branch) hat native Unterstützung für das aktualisierte Office-Anpassungstool, Paketanpassung für Klick-und-Los zum Installationszeitpunkt und native Unterstützung für die Verwaltung von Software-Updates nach der Installation.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
 [Bereitstellungshandbuch für Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 

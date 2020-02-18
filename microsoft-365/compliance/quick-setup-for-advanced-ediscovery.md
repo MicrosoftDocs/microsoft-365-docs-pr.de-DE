@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Informationen zum Zugriff auf Office 365 Advanced eDiscovery im Office 365 Security &amp; Compliance Center und Erläuterung des üblichen Workflows für die Verwendung von Advanced eDiscovery.  '
-ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e1af09caf57509bf472a766c9d9124ea969acc4e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597672"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070297"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Schnelleinrichtung für Office 365 Advanced eDiscovery
 
@@ -51,7 +51,7 @@ So navigieren Sie zu einem Fall in Advanced eDiscovery:
 
 Das folgende Diagramm zeigt den allgemeinen Workflow für die Verwaltung und Verwendung von eDiscovery-Fällen im Security &amp; Compliance Center und in Advanced eDiscovery. 
   
-![Diagramm zeigt den Workflow „Erweiterte eDiscovery in Office 365“, der aus den vier Phasen des Einrichtens, einschließlich Benutzern und Fällen, des Identifizierens der Falldaten, des Exportierens und des Verarbeitens und dann aus den Phasen der Analyse und des Exports auf den lokalen Computer besteht.](media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![Diagramm zeigt den Workflow „Erweiterte eDiscovery in Office 365“, der aus den vier Phasen des Einrichtens, einschließlich Benutzern und Fällen, des Identifizierens der Falldaten, des Exportierens und des Verarbeitens und dann aus den Phasen der Analyse und des Exports auf den lokalen Computer besteht.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 Dieser Setup-Abschnitt beschreibt die ersten vier Schritte im Workflow. Eine Beschreibung der anderen Schritte im Workflow finden Sie im Folgenden.
   

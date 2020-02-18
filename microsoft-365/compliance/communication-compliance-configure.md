@@ -32,7 +32,7 @@ ms.locfileid: "42078777"
 
 Verwenden Sie Kommunikationsrichtlinien zur Erfassung von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zur Überwachung der Kommunikation in Ihrer Organisation mithilfe von Kommunikationsrichtlinien finden Sie unter [Communication Compliance Policies in Microsoft 365](communication-compliance.md).
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie mit der Kommunikation Compliance beginnen, sollten Sie Ihr Microsoft 365-Abonnement bestätigen. Benutzer, die in Kommunikations Konformitätsrichtlinien enthalten sind, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein.
 

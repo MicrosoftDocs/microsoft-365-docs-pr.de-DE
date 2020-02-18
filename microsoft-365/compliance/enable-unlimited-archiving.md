@@ -18,28 +18,28 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Für Administratoren: Hier erfahren Sie, wie Sie die automatisch erweiterte Archivierung in Office 365 aktivieren, wodurch Ihren Benutzern Unbegrenzter Speicherplatz für Ihre Exchange Online Postfächer zur Verfügung steht. Sie können die automatisch expandierende Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074687"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Unbegrenzte Archivierung in Office 365 aktivieren – Administratorhilfe
 
 Sie können das Exchange Online automatisch expandierende Archivierungsfeature in Office 365 verwenden, um unbegrenzten Speicherplatz für Archivpostfächer zu aktivieren. Wenn die automatisch expandierende Archivierung aktiviert ist, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn er sich dem Speichergrenzwert nähert. Das Ergebnis ist eine unbegrenzte Speicherkapazität für Postfächer. Sie können die automatisch expandierende Archivierung für jeden in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation oder ein Mitglied der Rollengruppe Organisationsverwaltung in Ihrer Exchange Online Organisation sein, um die automatisch expandierende Archivierung für Ihre gesamte Organisation oder für bestimmte Benutzer zu aktivieren. Alternativ müssen Sie Mitglied einer Rollengruppe sein, der die Rolle "e-Mail-Empfänger" zugewiesen ist, um die automatisch erweiterte Archivierung für bestimmte Benutzer zu aktivieren.
     
-- Das Archivpostfach eines Benutzers muss aktiviert sein, damit die automatisch erweiterte Archivierung aktiviert werden kann. Einem Benutzer muss eine Exchange Online Plan 2-Lizenz zugewiesen sein, um das Archivpostfach zu aktivieren. Wenn einem Benutzer eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, um das Archivpostfach zu aktivieren. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern im Security #a0 Compliance Center](enable-archive-mailboxes.md).
+- Das Archivpostfach eines Benutzers muss aktiviert sein, damit die automatisch erweiterte Archivierung aktiviert werden kann. Einem Benutzer muss eine Exchange Online Plan 2-Lizenz zugewiesen sein, um das Archivpostfach zu aktivieren. Wenn einem Benutzer eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, um das Archivpostfach zu aktivieren. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern im Security & Compliance Center](enable-archive-mailboxes.md).
     
 - Sie können auch PowerShell zum Aktivieren von archivpostfächern verwenden. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ein Beispiel für den PowerShell-Befehl, mit dem Sie Archivpostfächer für alle Benutzer in Ihrer Organisation aktivieren können. 
     
 - Die Archivierung mit automatischer Erweiterung unterstützt auch freigegebene Postfächer. Um das Archiv für ein freigegebenes Postfach zu aktivieren, ist eine Exchange Online Plan 2-Lizenz oder eine Exchange Onlineplan 1-Lizenz mit einer Exchange Online-Archivierungslizenz erforderlich.
     
-- Sie können das Exchange-Verwaltungskonsole oder das Security #a0 Compliance Center nicht zum Aktivieren der automatisch wachsenden Archivierung verwenden. Sie müssen Exchange Online PowerShell verwenden. Informationen zum Herstellen einer Verbindung mit Ihrer Exchange Online Organisation mithilfe von Remote-PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Sie können das Exchange-Verwaltungskonsole oder das Security & Compliance Center nicht zum Aktivieren der automatisch wachsenden Archivierung verwenden. Sie müssen Exchange Online PowerShell verwenden. Informationen zum Herstellen einer Verbindung mit Ihrer Exchange Online Organisation mithilfe von Remote-PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Aktivieren der automatisch wachsenden Archivierung für Ihre gesamte Organisation
@@ -102,7 +102,7 @@ Beachten Sie nach Aktivierung der automatisch expandierenden Archivierung Folgen
     
 - Dementsprechend werden die Werte für die Postfacheigenschaften *ArchiveQuota* und *para ArchiveWarningQuota* nicht geändert, wenn Sie die automatisch expandierende Archivierung aktivieren. Wenn Sie die automatisch expandierende Archivierung für ein Benutzerpostfach aktivieren und die *AutoExpandingArchiveEnabled* -Eigenschaft auf `True`festgelegt ist, werden die Eigenschaften *ArchiveQuota* und *para ArchiveWarningQuota* ignoriert. Im folgenden finden Sie ein Beispiel für diese Postfacheigenschaften, nachdem die automatisch erweiterte Archivierung für das Postfach eines Benutzers aktiviert wurde. 
     
-    ![ArchiveQuota-und para ArchiveWarningQuota-Eigenschaften werden ignoriert, nachdem Sie die automatisch erweiterte Archivierung aktiviert haben.](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![ArchiveQuota-und para ArchiveWarningQuota-Eigenschaften werden ignoriert, nachdem Sie die automatisch erweiterte Archivierung aktiviert haben.](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## <a name="more-information"></a>Weitere Informationen

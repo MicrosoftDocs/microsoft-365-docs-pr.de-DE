@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Verwenden Sie den Massen Such-Editor im Security and Compliance Center in Office 365 oder Microsoft 365, um die Abfrage-und inhaltsspeicherorte für eine oder mehrere Inhalts suchen schnell zu ändern.
-ms.openlocfilehash: 40d3a6c04a57f368a4f53ae0bbc543b049b26d52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d1fd8a877ffb6c2012567583e46e561fb09836f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596272"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078982"
 ---
 # <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhalts suchen
 
@@ -30,13 +30,13 @@ Weitere Informationen zur Verwendung des Suchstatistik Tools finden Sie unter [A
 
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com)zu, und wählen Sie dann **Such** \> **Inhaltssuche**aus.
     
-2. Wählen Sie in der Liste der Suchvorgänge mindestens eine Suche aus, und wählen Sie dann Massen Such- **Editor** ![-](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)Massen Such-Editor-Schaltfläche aus.
+2. Wählen Sie in der Liste der Suchvorgänge mindestens eine Suche aus, und wählen Sie dann Massen Such- **Editor** ![-](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)Massen Such-Editor-Schaltfläche aus.
     
-    ![Wählen Sie eine oder mehrere Suchvorgänge aus, und wählen Sie dann Massen Such-Editor aus.](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![Wählen Sie eine oder mehrere Suchvorgänge aus, und wählen Sie dann Massen Such-Editor aus.](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
     Die folgenden Informationen werden auf der Seite **Abfragen** des Massen Such-Editors angezeigt. 
     
-    ![Auf der Seite Massensuche-Editor werden die Abfragen für die ausgewählten Suchvorgänge angezeigt.](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    ![Auf der Seite Massensuche-Editor werden die Abfragen für die ausgewählten Suchvorgänge angezeigt.](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
     a. In der Spalte **Suchen** wird der Name der Inhaltssuche angezeigt. Wie bereits erwähnt, können Sie die Abfrage für mehrere Suchvorgänge bearbeiten. 
     
@@ -46,7 +46,7 @@ Weitere Informationen zur Verwendung des Suchstatistik Tools finden Sie unter [A
     
    - Geben Sie die neue Abfrage in die Zelle ein. Sie können einen Teil der Abfrage nicht bearbeiten. Sie müssen die gesamte Abfrage eingeben.
     
-      Oder
+      Oder:
     
     - Fügt eine neue Abfrage in die Zelle ein. Dabei wird davon ausgegangen, dass Sie den Abfragetext aus einer Datei wie einer Textdatei oder einer Excel-Datei kopiert haben.
     
@@ -71,7 +71,7 @@ Hier finden Sie einige Tipps zum Bearbeiten von Abfragen mit dem Massen Such-Edi
     
     Die folgenden Informationen werden auf der Seite **Speicherorte** des Massen Such-Editors angezeigt. 
     
-    ![Wählen Sie Massen Speicherort-Editor aktivieren aus, und wählen Sie dann Standorte zum Hinzufügen oder Entfernen von Inhaltsspeicherorten aus.](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![Wählen Sie Massen Speicherort-Editor aktivieren aus, und wählen Sie dann Standorte zum Hinzufügen oder Entfernen von Inhaltsspeicherorten aus.](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
     a. **Zu durchsuchende Postfächer** In diesem Abschnitt wird eine Spalte für jede ausgewählte Inhaltssuche und eine Zeile für jedes Postfach angezeigt, das in der Suche enthalten ist. Ein Häkchen gibt an, dass das Postfach in die Suche einbezogen wird. Sie können einer Suche Postfächer hinzufügen, indem Sie die e-Mail-Adresse des Postfachs in eine leere Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, zu der Sie Sie hinzufügen möchten. Sie können ein Postfach auch aus einer Suche entfernen, indem Sie das Kontrollkästchen deaktivieren.
     

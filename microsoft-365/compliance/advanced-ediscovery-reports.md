@@ -35,7 +35,7 @@ Erweiterte eDiscovery-Berichte unterstützen Sie bei der Aggregation von Falldat
 
 - Wie viele aktive und abgeschlossene Fälle gibt es in meiner Organisation?
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um auf Erweiterte eDiscovery-Berichte zugreifen zu können, müssen Sie Mitglied der Rollengruppe "eDiscovery-Administrator" sein. Als Mitglied dieser Rollengruppe erhalten Sie die erforderlichen Berechtigungen zum Anzeigen, Filtern und Exportieren der Daten in den Berichten. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
 

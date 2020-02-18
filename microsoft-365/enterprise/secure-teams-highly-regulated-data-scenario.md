@@ -1,6 +1,8 @@
 ---
 title: Teams für streng regulierte Daten
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/13/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie ein sicheres Team zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e2499c6e9061704846f4649ade43f74bd5632e8b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084256"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams für streng regulierte Daten
 
@@ -42,15 +44,15 @@ Die Elemente der Konfiguration für ein Team für streng regulierte Daten sind:
 
 Hier sehen Sie die resultierende Konfiguration mit einer Vertraulichkeitsbezeichnung.
 
-![Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![Konfiguration des Szenarios eines sicheren Teams](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 Sehen Sie sich dieses kurze Video an, um eine kurze Übersicht zu erhalten.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios finden Sie auf dem [Poster für Teams für streng regulierte Daten](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
+<a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios finden Sie auf dem [Poster für Teams für streng regulierte Daten](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
-[![Poster für Teams für streng regulierte Daten](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![Poster für Teams für streng regulierte Daten](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
@@ -84,7 +86,7 @@ Wenn Sie ein privates Team erstellen, gelten die folgenden Standardberechtigunge
 
 Die folgenden Standardberechtigungen gelten für die Teamwebsite.
 
-![Die Standardberechtigungen der Teamwebsite](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
+![Die Standardberechtigungen der Teamwebsite](../media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >Wenn Sie die SharePoint-Gruppe "\<Teamname > Besitzer" für die Berechtigungsstufe "Bearbeiten" anzeigen, wird "\<Teamname > Besitzer" nicht angezeigt.
@@ -99,7 +101,7 @@ Die Verwaltung von Berechtigungen entspricht der Verwaltung von Teammitgliedern 
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration bis zu diesem Punkt.
 
-![Schritt 2 der Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
+![Schritt 2 der Konfiguration des Szenarios eines sicheren Teams](../media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### <a name="step-3-configure-the-underlying-sharepoint-site-for-additional-security"></a>Schritt 3: Konfigurieren der zugrunde liegenden SharePoint-Website für zusätzliche Sicherheit
 
@@ -114,7 +116,7 @@ Bei diesen Einstellungen ist die Möglichkeit, dass Teamgruppenmitglieder die Te
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration bis zu diesem Punkt.
 
-![Schritt 3 der Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+![Schritt 3 der Konfiguration des Szenarios eines sicheren Teams](../media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
 
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>Schritt 4: Erstellen Sie einer Aufbewahrungsbezeichnung und einer DLP-Richtlinie
@@ -127,7 +129,7 @@ Verwenden Sie [diese Anleitungen](https://docs.microsoft.com/microsoft-365/secur
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration bis zu diesem Punkt.
 
-![Schritt 4 der Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
+![Schritt 4 der Konfiguration des Szenarios eines sicheren Teams](../media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>Schritt 5: Erstellen einer Vertraulichkeitsbezeichnung oder einer Unterbezeichnung der streng regulierten Vertraulichkeitsbezeichnung
 
@@ -148,11 +150,11 @@ Verwenden Sie eine Vertraulichkeitsbezeichnung, wenn Sie nur eine kleine Anzahl 
 
 Hier sehen Sie die resultierende Konfiguration mit der neuen Bezeichnung.
 
-![Schritt 5 der Konfiguration des Szenarios eines sicheren Teams](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![Schritt 5 der Konfiguration des Szenarios eines sicheren Teams](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 Hier sehen Sie die Beziehung zwischen der Vertraulichkeitsbezeichnung und der Teamgruppe.
 
-![Beziehung zwischen der Teamgruppe und den Bezeichnungsberechtigungen](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+![Beziehung zwischen der Teamgruppe und den Bezeichnungsberechtigungen](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
 
 
 >[!Note]
@@ -178,7 +180,7 @@ Wenn einige Mitarbeiter den Inhalt von Dateien mit Bezeichnungen in der Teamwebs
 
 Hier sehen Sie die resultierenden Berechtigungen für die Bezeichnung.
 
-![Beispiel für benutzerdefinierte Berechtigungen zum Anzeigen von Dateien mit Bezeichnungen](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
+![Beispiel für benutzerdefinierte Berechtigungen zum Anzeigen von Dateien mit Bezeichnungen](../media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 Die Websitebesucher können direkt auf die Teamwebsite zugreifen und die Inhalte von Dateien anzeigen, auf die die Unterbezeichnung angewendet wurde. Da Sie aber keine Mitglieder der Teamgruppe sind, können sie nicht auf das Team oder die zugehörigen Ressourcen zugreifen.
 
@@ -191,7 +193,7 @@ Wenn das Team aktiv ist, ist es an der Zeit, die Benutzerakzeptanz dieses Teams 
 
 Mitglieder der Teamgruppe können auf das Team und alle zugehörigen Ressourcen zugreifen, b. B. Chats, Besprechungen und andere Apps. Wenn Sie mit Dateien aus dem Abschnitt **Dateien** eines Kanals arbeiten, müssen die Mitglieder der Teamgruppe den für das sichere Team erstellten Dateien die Vertraulichkeitsbezeichnung oder eine Unterbezeichnung zuweisen. Es folgt ein Beispiel.
 
-![Beispiel für eine Bezeichnung, die auf eine Datei in einem sicheren Team angewendet wurde](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+![Beispiel für eine Bezeichnung, die auf eine Datei in einem sicheren Team angewendet wurde](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 Wird die Bezeichnung auf eine Datei angewendet, ist diese abgesichert. Mitglieder der Teamgruppe können sie in Teams öffnen und in Echtzeit zusammenarbeiten. Sie wird verschlüsselt und umfasst die für die Teamgruppenmitglieder festgelegten Co-Autor-Berechtigungen. Wenn die Datei die Website verlässt und an einen böswilligen Benutzer weitergeleitet wird, lässt sich die Datei nur öffnen, und ihr Inhalt kann nur angezeigt werden, wenn die Anmeldeinformationen eines Benutzerkontos angegeben werden, das Mitglied der Teamgruppe ist. 
 
@@ -222,7 +224,7 @@ Ihre Benutzer bei Bedarf erneut schulen.
 
 Wenn Sie eine eigene Testumgebung zum Testen von Teams für sensible und streng vertrauliche Dateien erstellen möchten, lesen Sie [diese Anweisungen](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment). 
 
-![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Verwendung eines sicheren Teams für ein streng geheimes Projekt in der Contoso Corporation
 

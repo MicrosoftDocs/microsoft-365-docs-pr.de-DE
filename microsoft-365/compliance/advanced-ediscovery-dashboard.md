@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 127e2c9a04977bf6e902a1ce669fa9e4248e3ef2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662217"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080090"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>Erweitertes eDiscovery-Dashboard für Überprüfungs Sätze (Vorschau)
 
@@ -29,7 +29,7 @@ In einigen Fällen in Advanced eDiscovery ist möglicherweise eine große Menge 
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>Schritt 1: Erstellen eines Widgets im Dashboard für Überprüfungs Sätze
 
-1. Wechseln Sie im Security #a0 Compliance Center zu **eDiscovery #a1 Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Wechseln Sie im Security & Compliance Center zu **eDiscovery > Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
   
 2. Wählen Sie einen vorhandenen Fall aus.
   
@@ -37,15 +37,15 @@ In einigen Fällen in Advanced eDiscovery ist möglicherweise eine große Menge 
   
 4. Klicken Sie in der Dropdownliste **einzelne Ergebnisse** auf **Suchprofil Ansicht**. 
 
-   ![DashbordPivot](media/dashboardpivot.png)
+   ![DashbordPivot](../media/dashboardpivot.png)
 
    Die Seite **Suchprofil Ansicht** wird angezeigt; Wenn Sie diese Seite zum ersten Mal anzeigen, werden drei Standard-Widgets angezeigt.
 
-   ![Dashboard](media/dashboardonly.png)
+   ![Dashboard](../media/dashboardonly.png)
   
 5. Klicken Sie auf das **neue Widget** , und wählen Sie dann eines der folgenden Elemente aus:
 
-   ![Neue Widget-Dropdownliste](media/NewWidgetDropdownBox.png)
+   ![Neue Widget-Dropdownliste](../media/NewWidgetDropdownBox.png)
 
    - **Wählen Sie aus Bibliothek:** Zeigt eine Standardbibliothek von Widgets an. Klicken Sie auf ein Widget, und klicken Sie dann auf **Hinzufügen** , um es zu den Widgets auf der Seite **Suchprofil Ansicht** hinzuzufügen.
   
@@ -53,7 +53,7 @@ In einigen Fällen in Advanced eDiscovery ist möglicherweise eine große Menge 
 
 6. Um ein benutzerdefiniertes Widget zu erstellen, gehen Sie auf der Seite Widget-Flyout **Hinzufügen** wie folgt vor:
 
-   ![Widget erstellen](media/addwidget.png)
+   ![Widget erstellen](../media/addwidget.png)
 
     a. Geben Sie einen Namen für das Widget ein, der in der Titelleiste des Widgets angezeigt wird. Das Benennen eines Widgets ist erforderlich, es ist jedoch hilfreich, die widgetdaten zu identifizieren.
 
@@ -67,17 +67,17 @@ In einigen Fällen in Advanced eDiscovery ist möglicherweise eine große Menge 
 
 1. Klicken Sie auf der Titelleiste des Widgets auf **...** , und klicken Sie dann auf **Bedingung anwenden**.
 
-   ![Dashboard](media/searchprofilehome.png)
+   ![Dashboard](../media/searchprofilehome.png)
 
 2. Klicken Sie auf der Flyout-Seite auf ein Element in der Widget-Taste oder im Widget-Diagramm, um einen Filter zu erstellen.
 
-   ![Createfilter](media/applyconditionfilter.png)
+   ![Createfilter](../media/applyconditionfilter.png)
 
 3. Wiederholen Sie die Schritte 1-2 für andere Widgets mehrere Widgets. 
 
 4. Wenn Sie fertig sind, klicken Sie auf **als Abfrage speichern** , um Ihre Bedingungen als neue Suchabfrage für die Überprüfungsgruppe zu speichern.
 
-   ![Query](media/savequery.png)
+   ![Abfrage](../media/savequery.png)
 
 5. Schließen Sie die **Suchprofil Ansicht** , um zur Suchergebnis Ansicht zurückzukehren.
 

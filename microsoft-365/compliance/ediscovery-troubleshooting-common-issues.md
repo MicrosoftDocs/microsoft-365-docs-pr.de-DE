@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: Untersuchen, beheben und beheben Sie häufige Probleme in Office 365 eDiscovery.
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595130"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074811"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme
 
@@ -37,7 +37,7 @@ Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufüge
 
 Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-ID.
 
-1. Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)her.
+1. Stellen Sie eine Verbindung mit [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)her.
 
 2. Führen Sie den folgenden Befehl aus, um alle Instanzen des Benutzernamens abzurufen:
 
@@ -60,13 +60,13 @@ Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-
 Eine eDiscovery-oder Inhaltssuche kann den folgenden Fehler ergeben:
 >Diese Suche wurde mit (#) Fehlern abgeschlossen.  Möchten Sie die Suche an den fehlgeschlagenen Speicherorten wiederholen?
 
-![Screenshot der suchspezifischen Speicherort Fehler]( media/edisc-tshoot-specific-location-search-fails.png)
+![Screenshot der suchspezifischen Speicherort Fehler](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Auflösung
 
 Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte überprüfen, die bei der Suche fehlgeschlagen sind, und die Suche dann nur für die fehlerhaften Speicherorte erneut ausführen.
 
-1. Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
+1. Stellen Sie eine Verbindung mit [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -82,7 +82,7 @@ Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte über
 
 Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird `File Not Found` möglicherweise die Fehlermeldung angezeigt, obwohl sich die Datei auf der Website befindet. Dieser Fehler tritt in den Export Warnungen und Errors. CSV oder Skip Items. CSV auf. Dies kann vorkommen, wenn die Datei nicht auf der Website gefunden werden kann oder wenn der Index veraltet ist. Hier ist der Text eines tatsächlichen Fehlers (mit Nachdruck hinzugefügt).
   
-> 28.06.2019 10:02:19_FailedToExportItem_Failed zum Herunterladen von Inhalten. Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: Fehler beim Herunterladen aus dem Inhalts 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document. Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode:-2147024894---#a0 Microsoft. SharePoint. Client. ServerException: die ***Datei wurde nicht gefunden***. unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---Ende der internen Ausnahmestapelüberwachung---
+> 28.06.2019 10:02:19_FailedToExportItem_Failed zum Herunterladen von Inhalten. Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: Fehler beim Herunterladen aus dem Inhalts 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document. Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode:-2147024894---> Microsoft. SharePoint. Client. ServerException: die ***Datei wurde nicht gefunden***. unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---Ende der internen Ausnahmestapelüberwachung---
 
 ### <a name="resolution"></a>Auflösung
 
@@ -114,7 +114,7 @@ Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Sec
 
 1.  Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.  Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
+2.  Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -136,13 +136,13 @@ Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Sec
 
 Wenn eine eDiscovery-Suche ausgeführt wird und die Suche kontinuierlich fehlschlägt und Fehler wie "Internal Server Error (500)" aufgetreten sind, müssen Sie die Suche möglicherweise nur an bestimmten Postfachspeicher Orten erneut ausführen.
 
-![Interner Serverfehler 500 Screenshot](media/edisc-tshoot-error-500.png)
+![Interner Serverfehler 500 Screenshot](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Auflösung
 
 1. Unterbrechen Sie die Suche in kleinere suchen, und führen Sie die Suche erneut aus.  Versuchen Sie, einen kleineren Datumsbereich zu verwenden oder die Anzahl der durchsuchten Speicherorte zu begrenzen.
 
-2. Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
+2. Stellen Sie eine Verbindung mit [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
     ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ eDiscovery Case Hold Policy Sync-Verteilungsfehler. Der Fehler lautet:
 
 ### <a name="resolution"></a>Auflösung
 
-1.  Stellen Sie eine Verbindung mit [Office 365 Security #a0 Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl für einen eDiscovery-Aufbewahrungs Fall aus:
+1.  Stellen Sie eine Verbindung mit [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl für einen eDiscovery-Aufbewahrungs Fall aus:
 
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

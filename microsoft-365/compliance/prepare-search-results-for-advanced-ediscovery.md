@@ -16,20 +16,20 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: 'In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center in Office 365 für weitere Analysen mit dem erweiterten eDiscovery-Tool vorbereiten.'
-ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 für weitere Analysen mit dem erweiterten eDiscovery-Tool vorbereiten.
+ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071012"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
 
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v 1.0*) an. Wenn Sie noch Advanced eDiscovery v 1.0 verwenden, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365*bezeichnet). Advanced eDiscovery 2,0 enthält ähnliche Funktionen wie in Advanced eDiscovery v 1.0, bietet aber auch viele neue Features wie Depotverwaltung, Kommunikationsverwaltung und Überprüfungs Sätze. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir die Deaktivierung von Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v1.0*). Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
 
-Nachdem eine Suche, die einem eDiscovery-Fall im Security #a0 Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse zur weiteren Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie große, unstrukturierte Datasets analysieren und die für einen juristischen Fall relevante Datenmenge reduzieren können. Zu den erweiterten eDiscovery-Features gehören:
+Nachdem eine Suche, die einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse zur weiteren Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie große, unstrukturierte Datasets analysieren und die für einen juristischen Fall relevante Datenmenge reduzieren können. Zu den erweiterten eDiscovery-Features gehören:
   
 - **Optische Zeichenerkennung** – Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, extrahiert die optische Zeichenerkennung (OCR)-Funktion automatisch Text aus Bildern und enthält diese mit den Suchergebnissen, die in Advanced eDiscovery for Analysis geladen werden. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Auf diese Weise können Sie die Textanalyse Funktionen von Advanced eDiscovery (Near-Duplicates, e-Mail-Threading, Themes und Predictive Coding) auf den Textinhalt in Bilddateien anwenden. Die erweiterte eDiscovery-OCR unterstützt die folgenden Formate für Bilddateien:
 
@@ -49,17 +49,17 @@ Nachdem eine Suche, die einem eDiscovery-Fall im Security #a0 Compliance Center 
     
 - **Exportieren von Daten für Überprüfungs Anwendungen** -Sie können Daten aus Advanced eDiscovery und Office 365 exportieren, nachdem Sie Ihre Analyse abgeschlossen und das DataSet reduziert haben. Das Exportpaket enthält eine CSV-Datei, die die Eigenschaften aus den exportierten Inhalts-und Analyse Metadaten enthält. Dieses Exportpaket kann dann in eine eDiscovery-Überprüfungs Anwendung importiert werden. 
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die Fällen zugeordnet sind, und Verwenden von Advanced eDiscovery zum Analysieren von Daten benötigen keine E5-Lizenz. 
     
-- Sie müssen ein eDiscovery-Manager oder ein eDiscovery-Administrator im Security #a0 Compliance Center sein, um Suchergebnisse für Advanced eDiscovery vorzubereiten. Ein eDiscovery-Manager ist ein Mitglied der Rollengruppe "eDiscovery-Manager". Ein eDiscovery-Administrator ist ebenfalls Mitglied der Rollengruppe "eDiscovery-Manager", ihm wurden jedoch zusätzliche Berechtigungen zugewiesen. Anweisungen zum Zuweisen von eDiscovery-Administrator Berechtigungen finden Sie unter Schritt 1 in [eDiscovery-Fällen](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Sie müssen ein eDiscovery-Manager oder ein eDiscovery-Administrator im Security & Compliance Center sein, um Suchergebnisse für Advanced eDiscovery vorzubereiten. Ein eDiscovery-Manager ist ein Mitglied der Rollengruppe "eDiscovery-Manager". Ein eDiscovery-Administrator ist ebenfalls Mitglied der Rollengruppe "eDiscovery-Manager", ihm wurden jedoch zusätzliche Berechtigungen zugewiesen. Anweisungen zum Zuweisen von eDiscovery-Administrator Berechtigungen finden Sie unter Schritt 1 in [eDiscovery-Fällen](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten der Suchergebnisse für Advanced eDiscovery
 
 Sie können die Ergebnisse einer Suche vorbereiten, die einem eDiscovery-Fall zugeordnet ist. Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, werden die Daten hochgeladen und temporär in einem eindeutigen Windows Azure-Speicherbereich in der Microsoft-Cloud gespeichert. An dieser Position extrahiert die OCR-Funktion Text aus Bildern in den Suchergebnissen. In [Schritt 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery)werden dieser Text und die anderen Suchergebnis Daten in den Fall in Advanced eDiscovery geladen.
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, für den Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten möchten, auf **Öffnen** . 
     
@@ -87,24 +87,24 @@ Sie können die Ergebnisse einer Suche vorbereiten, die einem eDiscovery-Fall zu
 ## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Schritt 2: Hinzufügen der Suchergebnis Daten zu dem Fall in Advanced eDiscovery
 <a name="step2"> </a>
 
-Wenn die Vorbereitung abgeschlossen ist, besteht der nächste Schritt darin, zu Advanced eDiscovery zu wechseln und die Suchergebnis Daten (die in einen Azure-Speicherbereich in der Microsoft-Cloud hochgeladen wurden) in den Fall in Advanced eDiscovery zu laden. Wie bereits erläutert, müssen Sie für den Zugriff auf Advanced eDiscovery ein eDiscovery-Administrator im Security #a0 Compliance Center oder ein Administrator in Advanced eDiscovery sein.
+Wenn die Vorbereitung abgeschlossen ist, besteht der nächste Schritt darin, zu Advanced eDiscovery zu wechseln und die Suchergebnis Daten (die in einen Azure-Speicherbereich in der Microsoft-Cloud hochgeladen wurden) in den Fall in Advanced eDiscovery zu laden. Wie bereits erläutert, müssen Sie für den Zugriff auf Advanced eDiscovery ein eDiscovery-Administrator im Security & Compliance Center oder ein Administrator in Advanced eDiscovery sein.
   
 > [!NOTE]
-> Je nach der Größe der Ergebnisse der eDiscovery-Suche variiert die Zeit, die für die Daten aus dem Security #a0 Compliance Center zur Verfügung steht, um einem Fall in Advanced eDiscovery hinzuzufügen. 
+> Je nach der Größe der Ergebnisse der eDiscovery-Suche variiert die Zeit, die für die Daten aus dem Security & Compliance Center zur Verfügung steht, um einem Fall in Advanced eDiscovery hinzuzufügen. 
   
-1. Klicken Sie im Security #a0 Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, in dem Sie Daten laden möchten in Advanced eDiscovery auf **Öffnen** . 
     
 3. Klicken Sie auf der Seite **Start** für den Fall auf **Advanced eDiscovery**. 
     
-    ![Klicken Sie auf zu Erweiterte eDiscovery wechseln, um die Anfrage in Advanced eDiscovery zu öffnen.](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Klicken Sie auf zu Erweiterte eDiscovery wechseln, um die Anfrage in Advanced eDiscovery zu öffnen.](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     Die **Verbindung mit der erweiterten eDiscovery** -Statusleiste wird angezeigt. Wenn Sie mit Advanced eDiscovery verbunden sind, wird auf der Seite Setup für den Fall eine Liste mit Containern angezeigt. 
     
-    ![Der Fall wird in Advanced eDiscovery angezeigt.](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![Der Fall wird in Advanced eDiscovery angezeigt.](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Diese Container stellen die Suchergebnisse dar, die Sie für die Analyse in Advanced eDiscovery in Schritt 1 vorbereitet haben. Beachten Sie, dass der Name des Containers denselben Namen hat wie die Suche in dem Fall im Security #a0 Compliance Center. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen. 
+     Diese Container stellen die Suchergebnisse dar, die Sie für die Analyse in Advanced eDiscovery in Schritt 1 vorbereitet haben. Beachten Sie, dass der Name des Containers denselben Namen hat wie die Suche in dem Fall im Security & Compliance Center. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen. 
     
 4. Wenn Sie die Suchergebnis Daten aus einem Container in den Fall in Advanced eDiscovery laden möchten, wählen Sie einen Container aus, und klicken Sie dann auf **verarbeiten**.
     

@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 4: Migration von Benutzerdateien und -einstellungen'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Dateien und Einstellungen von Benutzern migrieren.
-ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112569"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085288"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Schritt 4: Migration von Benutzerdateien und -einstellungen
 
 Das Verschieben der Dateien und Einstellungen der Benutzer auf die neuen oder aktualisierten PCs ist in kritischer Vorgang, der auf keinen Fall fehlschlagen darf. Sie können die einzelnen PCs manuell migrieren oder eine der verschiedenen Möglichkeiten zur Automatisierung des Prozesses wählen. Unabhängig davon, welche Migrationsmethode Sie auswählen, müssen Sie drei Aspekte berücksichtigen: Die Übertragung der Benutzerdateien, der Einstellungen und die Verwaltung des Layouts von Startmenü und Taskleiste in Windows 10.
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>Schritt 4: Benutzerdateien und Einstellungen</strong></p>
 <p>Wenn Computer aktualisiert oder ersetzt werden, können Sie Zeit sparen, indem Sie das Sichern und Wiederherstellen des Benutzerstatus automatisieren. Mit neuen Optionen für die Synchronisierung von Clouddateien können Sie die Synchronisierung von Desktop-, Dokument- und Bildordnern mit OneDrive pro Benutzer erzwingen, sodass ein nahtloser Dateizugriff von neuen Windows-Installationen aus gewährleistet ist.</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 

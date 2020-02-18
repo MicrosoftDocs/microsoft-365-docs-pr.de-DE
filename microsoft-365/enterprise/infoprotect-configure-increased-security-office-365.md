@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren der erhöhten Sicherheit für Microsoft 365
-ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eabf0d60f3cfb61b7fffcc688a080ba99f83293e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067242"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Schritt 3: Konfigurieren der erhöhten Sicherheit für Microsoft 365
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 6: Schutz von Daten](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Um sicherzustellen, dass Ihr Microsoft-365-Abonnement und die zugehörigen Daten vor böswilligen Angriffen geschützt sind, konfigurieren Sie Folgendes:
 
@@ -47,7 +49,7 @@ Office 365 ATP ist nur mit Microsoft 365 E5 verfügbar.
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Konfigurieren der erhöhten Sicherheit von Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Konfigurieren der erhöhten Sicherheit von Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-criteria.md#crit-infoprotect-step3) für diesen Schritt betrachten.
@@ -57,6 +59,6 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![Schritt 4](./media/stepnumbers/Step4.png)|[Konfigurieren der Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Schritt 4](../media/stepnumbers/Step4.png)|[Konfigurieren der Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 

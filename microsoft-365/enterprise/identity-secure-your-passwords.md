@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 2: Schützen von Kennwörtern'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Sie müssen für Ihre gesamte Organisation sichere Kennwörter verwenden, und die Kennwortverwaltung einfach gestalten.
-ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801740"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067282"
 ---
 # <a name="step-2-secure-your-passwords"></a>Schritt 2: Schützen von Kennwörtern
 
-![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Verhindern unsicherer Kennwörter
@@ -54,7 +56,7 @@ Lesen Sie die [Anweisungen zum Rollout der Kennwortzurücksetzung](https://docs.
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Leitfaden für Testlabor: Kennwortzurücksetzung](password-reset-m365-ent-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Leitfaden für Testlabor: Kennwortzurücksetzung](password-reset-m365-ent-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-pw-reset) für diesen Abschnitt betrachten.
@@ -73,7 +75,7 @@ Lesen Sie die [Anweisungen zum Konfigurieren von Azure AD Seamless SSO](https://
 
 |||
 |:-------|:-----|
-|![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Nahtloses einmaliges Anmelden in Azure AD](single-sign-on-m365-ent-test-environment.md) |
+|![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testumgebungsanleitung: Nahtloses einmaliges Anmelden in Azure AD](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criteria.md#crit-identity-sso) für diesen Abschnitt betrachten.
@@ -98,4 +100,4 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](identity-exit-criter
 
 |||
 |:-------|:-----|
-|![Schritt 3](./media/stepnumbers/Step3.png)| [Absichern und Verwalten von Benutzeranmeldungen](identity-secure-user-sign-ins.md) |
+|![Schritt 3](../media/stepnumbers/Step3.png)| [Absichern und Verwalten von Benutzeranmeldungen](identity-secure-user-sign-ins.md) |

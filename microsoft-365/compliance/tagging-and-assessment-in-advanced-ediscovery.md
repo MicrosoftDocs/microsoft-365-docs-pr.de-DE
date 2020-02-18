@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Lesen Sie die Schritte zum Durchführen von Assessment-Schulungen, einschließlich Tagging-Dateien, und Überprüfen der Bewertungsergebnisse in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: b2eecb76416728f7319396f5c97054d0219b66e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 93780d42cd42ced692a81f5cfd739bcd8713c2c2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081037"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Tagging und Bewertung in Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     
     In diesem Verfahren wird beispielsweise ein Beispiel für einen assessmentsatz von 500-Dateien erstellt, und die Registerkarte " **Tag** " wird angezeigt, die den Markierungsbereich, den angezeigten Dateiinhalt und andere Kennzeichnungs Optionen enthält. 
     
-    ![Registerkarte "Relevanz-Tag" für Bewertung](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Registerkarte "Relevanz-Tag" für Bewertung](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Überprüfen Sie jede Datei im Beispiel, bestimmen Sie die Relevanz der Datei für die einzelnen Fall Probleme, und markieren Sie die Datei mit den Schaltflächen Relevanz (R), nicht relevant (Nr) und überspringen im Bereich **Tagging Panel** . 
     
@@ -47,14 +47,14 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     
     Die Bewertung Current Error Margin and Reichhaltigkeit werden berechnet und auf der Registerkarte **Relevanz Track** mit erweiterten Details pro Problem angezeigt, wie unten dargestellt. Weitere Details zu diesem Dialogfeld werden im späteren Abschnitt "Überprüfen der Ergebnisse der Bewertung" beschrieben. 
     
-    ![Relevanz Track-Assessment](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Relevanz Track-Assessment](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > Standardmäßig wird empfohlen, mit dem standardmäßigen nächsten Schritt fortzufahren, wenn der Indikator für die Status Bewertung des Problems abgeschlossen wurde, was bedeutet, dass das Bewertungs Beispiel überprüft und ausreichende relevante Dateien markiert wurden. > andernfalls können Sie, wenn Sie die Ergebnisse der Registerkarte **Track** anzeigen und den Fehlerbereich und den nächsten Schritt steuern möchten, auf neben **Nächster Schritt** **ändern** klicken, **Bewertung fortsetzen**auswählen und dann auf **OK**klicken. 
   
 1. Klicken Sie rechts neben dem Kontrollkästchen **Bewertung** auf **ändern** , um die Bewertungsparameter pro Problem anzuzeigen und anzugeben. Es wird ein Dialogfeld **Bewertungsebene** für jedes Problem angezeigt, wie im folgenden Beispiel dargestellt: 
     
-    ![Fall Problem bei Bewertungsebene](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Fall Problem bei Bewertungsebene](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     Die folgenden Parameter für das Problem werden berechnet und im Dialogfeld " **Bewertungsstufe** " angezeigt: 
     
@@ -72,7 +72,7 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     
 3. Klicken Sie im Dialogfeld **Bewertungsebene** auf **erweitert** , um die folgenden zusätzlichen Parameter und Details anzuzeigen: 
     
-    ![Fallbeispiel für Bewertungsebene erweiterte Ansicht](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Fallbeispiel für Bewertungsebene erweiterte Ansicht](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     **Geschätzter Reichtum**: Geschätzter Umfang gemäß den aktuellen Bewertungsergebnissen
     
@@ -92,7 +92,7 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     
     Wenn es mehrere Probleme gibt, wird, nachdem alle Probleme überprüft oder angepasst wurden, ein Dialogfeld " **Bewertungsstufe: Zusammenfassung** " angezeigt, wie im folgenden Beispiel dargestellt. 
     
-    ![Zusammenfassung der Bewertungsebene](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Zusammenfassung der Bewertungsebene](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Nach erfolgreichem Abschluss der Bewertung fahren Sie mit dem nächsten Schritt in Relevanz Training fort.
     
@@ -121,7 +121,7 @@ Wenn die Reichweite sehr gering ist, ist die Anzahl der zusätzlichen assessment
 In Ermangelung einer statistisch basierten Stabilisierung werden Ergebnisse mit einer niedrigeren Genauigkeitsstufe und Zuverlässigkeitsstufe erzielt. Diese Ergebnisse können jedoch zum Auffinden relevanter Dateien verwendet werden, wenn Sie den Prozentsatz relevanter gefundener Dateien nicht kennen müssen. In ähnlicher Weise kann dieser Status verwendet werden, um Probleme mit niedrigem Umfang auszubilden, wobei Relevanz Scores den Zugriff auf Dateien beschleunigen kann, die für ein bestimmtes Problem relevant sind.
   
 > [!TIP]
-> Auf der **Register \> Karte relevanzstatus** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: #a0 den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt**einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern**klicken und im **Dialogfeld Bewertungsebene**den **Ziel Fehler Rand für Rückruf Schätzungen**ändern und auf **Werte aktualisieren**klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert**klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht**klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
+> Auf der **Register \> Karte relevanzstatus** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: > den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt**einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern**klicken und im **Dialogfeld Bewertungsebene**den **Ziel Fehler Rand für Rückruf Schätzungen**ändern und auf **Werte aktualisieren**klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert**klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht**klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

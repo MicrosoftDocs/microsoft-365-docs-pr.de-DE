@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Compliance-Manager ermöglicht das Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
-ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597202"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083871"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -50,7 +50,7 @@ Sobald der Administrator anderen Benutzern Compliance-Manager-Rollen zuweist, k�
 
 Jede Compliance-Manager-Rolle verfügt über geringfügig unterschiedliche Berechtigungen. Sie können die jeder Rolle zugewiesenen Berechtigungen anzeigen, ermitteln, welche Benutzer sich in welchen Rollen befinden, und Benutzer aus dieser Rolle über das Dienst Vertrauensstellungs Portal hinzufügen oder entfernen. Wählen Sie das Menüelement **Admin** aus, und wählen Sie die anzuzeigenden **Einstellungen** aus.
   
-![STP-Verwaltungsmenü: ausgewählte Einstellungen](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![STP-Verwaltungsmenü: ausgewählte Einstellungen](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
   
@@ -66,11 +66,11 @@ Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
 
 6. Um Benutzer zu dieser Rolle hinzuzufügen, wählen Sie **Hinzufügen**aus. Wählen Sie im Dialogfeld **Benutzer hinzufügen** das Feld Benutzer aus. Sie können in der Liste der verfügbaren Benutzer einen Bildlauf durchführen oder mit der Eingabe des Benutzernamens beginnen, um die Liste basierend auf Ihrem Suchbegriff zu filtern. Wählen Sie den Benutzer aus, der dieses Konto der mit dieser Rolle bereitgestellten Liste **Benutzer** hinzufügen hinzugefügt werden soll. Wenn Sie mehrere Benutzer gleichzeitig hinzufügen möchten, beginnen Sie mit der Eingabe eines Benutzernamens, um die Liste zu filtern, und wählen Sie dann den Benutzer aus, der der Liste hinzugefügt werden soll. Wählen Sie **Speichern** aus, um die ausgewählte Rolle für diese Benutzer festzustellen. 
 
-    ![Compliance-Manager – hinzufügen von Benutzern](media/compliance-manager-add-users.png)
+    ![Compliance-Manager – hinzufügen von Benutzern](../media/compliance-manager-add-users.png)
   
 7. Wenn Sie Benutzer aus dieser Rolle entfernen möchten, wählen Sie die Benutzer aus, und klicken Sie dann auf **Löschen**.
 
-    ![Compliance-Manager – Löschen von Benutzern](media/compliance-manager-delete-users.png)
+    ![Compliance-Manager – Löschen von Benutzern](../media/compliance-manager-delete-users.png)
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Steuern automatischer Bewertungen für sichere Gäste
 
@@ -178,7 +178,7 @@ Ein Besitzername kann nicht bearbeitet werden, aber Sie können die Beschreibung
 
 Im Bereich Kundenaktionen werden alle Kundenaktionen für alle Vorlagen und Bewertungen im Compliance-Manager (Preview) angezeigt.
 
-![Compliance-Manager – hinzufügen von Benutzern](media/compliance-manager-customer-actions.png "Compliance-Manager-Kundenaktionen")
+![Compliance-Manager – hinzufügen von Benutzern](../media/compliance-manager-customer-actions.png "Compliance-Manager-Kundenaktionen")
 
 Auf einen Blick können Sie den Titel, den Besitzer, die Kategorie, die Erzwingung und das Ergebnis einer Aktion anzeigen und ermitteln, ob Sie mit Secure Score integriert ist. Sie können eine Aktion erweitern und dann **Read More** auswählen, um die Beschreibung der Aktion zu lesen und auf Links in der Beschreibung zuzugreifen. Sie können diese Schnittstelle auch verwenden, um die sichere Ergebnis Integration auf Aktionsbasis zu aktivieren und zu deaktivieren und benutzerdefinierte Aktionen hinzuzufügen. Aktionen mit einer Secure Score-Integrationsfunktion haben neben Ihnen ein Auslassungszeichen (...) (Beachten Sie, dass in benutzerdefinierten Aktionen neben Ihnen auch ein Auslassungszeichen steht).
 
@@ -223,7 +223,7 @@ Alle Aktionen, die nicht von der Integration von Secure Score unterstützt werde
     - Möchten **Sie die Daten aus einer vorhandenen Gruppe kopieren? (optional):** Umschalten des Steuerelements zum Aktivieren der Gruppen Kopie und dann:
         - **Wählen Sie eine Gruppe aus (optional):** Wenn die Gruppen Kopie aktiviert ist, wählen Sie die Gruppe aus, aus der kopiert werden soll.
             - **Implementierungs Details (optional):** Auswählen, um Implementierungsdetails in die neue Gruppe zu kopieren
-            - **Testplan #a0 zusätzliche Informationen (optional):** Wählen Sie diese Option aus, um den Testplan und weitere Informationsdetails in die neue Gruppe zu kopieren.
+            - **Testplan & zusätzliche Informationen (optional):** Wählen Sie diese Option aus, um den Testplan und weitere Informationsdetails in die neue Gruppe zu kopieren.
             - **Dokumente (optional):** Auswählen, um Dokumente in die neue Gruppe zu kopieren
 
 3. Wählen Sie **Speichern** aus, um die Bewertung zu erstellen.
@@ -241,7 +241,7 @@ Alle Aktionen, die nicht von der Integration von Secure Score unterstützt werde
 Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus einer vorhandenen Gruppe zu kopieren. Auf diese Weise können Sie die in die kopierte Bewertung eingegebenen Informationen auf dieselben Steuerelemente in der neuen Bewertung anwenden. Wenn Sie beispielsweise eine Gruppe für alle FFIEC-bezogenen Bewertungen in Ihrer Organisation haben, können Sie die folgenden Informationen aus vorhandenen Bewertungen kopieren:
 
 - Implementierungs Details
-- Testplan #a0 zusätzliche Informationen
+- Testplan & zusätzliche Informationen
 - Dokumente
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Kopieren von Informationen aus einer vorhandenen Bewertung in eine neue Bewertung
@@ -255,7 +255,7 @@ Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus
     - **Wählen Sie eine Gruppe aus, oder fügen Sie eine neue Gruppe hinzu (erforderlich):** Wählen Sie **neue Gruppe hinzufügen** aus, und geben Sie einen eindeutigen Gruppennamen an.
     - Möchten **Sie die Daten aus einer vorhandenen Gruppe kopieren? (optional):** schalten Sie das Steuerelement in ein ein, um die Gruppen Kopie zu aktivieren, und klicken Sie dann auf:- **Wählen Sie eine Gruppe aus (optional):** wenn Gruppen Kopie aktiviert ist, wählen Sie die Gruppe aus, aus der kopiert werden soll.
             - **Implementierungs Details (optional):** Wählen Sie diese Option aus, um Implementierungsdetails in die neue Gruppe zu kopieren.
-            - **Testplan #a0 zusätzliche Informationen (optional):** Wählen Sie diese Option aus, um den Testplan und weitere Informationsdetails in die neue Gruppe zu kopieren.
+            - **Testplan & zusätzliche Informationen (optional):** Wählen Sie diese Option aus, um den Testplan und weitere Informationsdetails in die neue Gruppe zu kopieren.
             - **Dokumente (optional):** Wählen Sie diese Option aus, um Dokumente in die neue Gruppe zu kopieren.
 
 3. Wählen Sie **Speichern** aus, um die Bewertung zu erstellen.
@@ -266,15 +266,15 @@ Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus
 
 Hier ist ein Beispiel für die Bewertung für Office 365 und ISO 27001. Die erste Ansicht zeigt die neue Ansicht "Aktionselemente" im Compliance-Manager (Preview).
 
-![Ansicht "Compliance-Manager-Aktionselemente"](media/compliance-manager-action-items.png)
+![Ansicht "Compliance-Manager-Aktionselemente"](../media/compliance-manager-action-items.png)
 
 Die Aktionen werden in alphabetischer Reihenfolge aufgeführt, und jeder Aktion wird ein Ergebnis und ein Besitzer zugewiesen. Klicken Sie auf den Link **Read More** , um die Details der einzelnen Aktionen zu lesen. 
 
-![Ansicht "Compliance-Manager-Aktionselemente"](media/compliance-manager-actions-read-more.png)
+![Ansicht "Compliance-Manager-Aktionselemente"](../media/compliance-manager-actions-read-more.png)
 
 Wählen Sie den Link **überprüfen** aus, um die Aktion zu verwalten, zuzuweisen, zu implementieren und zu testen. Unten sehen Sie eine Beispielaktion.
 
-![Aktionsansicht für Compliance-Manager](media/compliance-manager-action.png)
+![Aktionsansicht für Compliance-Manager](../media/compliance-manager-action.png)
 
 In früheren Versionen von Compliance-Manager wurde der Workflow zur Implementierung von Anforderungen auf der Ebene der Steuerung ausgeführt. Ein Compliance Officer würde einem Benutzer ein Steuerelement zuweisen, um das Steuerelement zu implementieren. Es gab zwei Nachteile:
 
@@ -295,7 +295,7 @@ Im Compliance-Manager (Preview) wurde der Workflowprozess von der Steuerelemente
 
 Compliance-Manager (Preview) enthält auch den Steuerelement basierten Pivot, der in früheren Versionen gefunden wurde. Wählen Sie das Dashboard **Steuerelemente Info** aus, um es anzuzeigen. Sie können Informationen zu Steuerelementen auf der Bewertungs-und Vorlagenebene anzeigen. Unten sehen Sie ein Beispiel für das Steuerelement-Info-Dashboard für Bewertungen.
 
-![Compliance-Manager-Steuerelement-Info-Ansicht](media/compliance-manager-controls-info.png)
+![Compliance-Manager-Steuerelement-Info-Ansicht](../media/compliance-manager-controls-info.png)
 
 Für Bewertungen wird im Dashboard Informationen für Steuerelemente angezeigt:
 
@@ -311,7 +311,7 @@ Für Bewertungen wird im Dashboard Informationen für Steuerelemente angezeigt:
     - **Ihre Aktionen** zeigt die Kundenaktionen an, die Sie ausführen können, um einige oder alle Anforderungen des Steuerelements zu erfüllen. Vielen Steuerelementen sind mehrere Aktionen zugeordnet, und alle einem Steuerelement zugeordneten Aktionen werden hier angezeigt. Die hier aufgeführten Aktionen weisen dieselbe Benutzeroberfläche auf wie die im Dashboard Aktionen.
     - **Microsoft-Aktionen** zeigt die Liste der Steuerelemente aus dem internen Microsoft-Framework an, die für das ausgewählte Zertifizierungs Steuerelement gelten. Wählen Sie für jedes interne Steuerelement **implementiert** aus, um die Implementierungs-und Testdetails von Microsoft sowie das Testergebnis und das Test Datum anzuzeigen, wie unten dargestellt.
 
-![Compliance-Manager-Microsoft-Aktionsansicht](media/compliance-manager-microsoft-action.png)
+![Compliance-Manager-Microsoft-Aktionsansicht](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="export-an-assessment"></a>Exportieren einer Bewertung
 
@@ -329,7 +329,7 @@ Der Bewertungsbericht wird als Excel-Datei in ihrer Browsersitzung heruntergelad
 
 Wenn Sie mit einer Vorlage oder Bewertung fertig sind und Sie nicht mehr für Compliance-Zwecke benötigen, können Sie Sie aus ihrer Ansicht ausblenden. Wenn eine Vorlage oder Bewertung ausgeblendet ist, wird Sie aus der Standardansicht entfernt, und Sie müssen das Kontrollkästchen **ausgeblendet einschließen** aktivieren, um es anzuzeigen.
 
-![Ansicht "verdeckte Vorlagen für Compliance-Manager"](media/compliance-manager-hidden-template.png "Verdeckte Vorlage für Compliance-Manager")
+![Ansicht "verdeckte Vorlagen für Compliance-Manager"](../media/compliance-manager-hidden-template.png "Verdeckte Vorlage für Compliance-Manager")
 
 > [!IMPORTANT]
 > Ausgeblendete Bewertungen behalten Ihre Links zu hochgeladenen Beweisdokumenten nicht bei. Es wird dringend empfohlen, dass Sie die Bewertung vor dem ausblenden exportieren, um Links zu den Beweisdokumenten im Bericht beizubehalten.
@@ -367,7 +367,7 @@ Steuerelemente und Aktionen sind die primären Daten Pivots, die in Compliance-M
 
 Steuerelemente können im Steuerelement-Info-Dashboard angezeigt werden. Steuerelemente stellen die Anforderungen aus Standard, Zertifizierung, Regulierung oder Framework dar. Um diese Anforderungen über mehrere Standards, Verordnungen usw. hinweg zuzuordnen und Aktionen zuzuordnen, wird alles so behandelt, als ob es sich um ein Steuerungsframework handeln würde. Beispielsweise sind wie ein Steuerelement Framework Regeln wie HIPAA nach Abschnitt aufgeschlüsselt worden, und die HIPAA-Steuerelemente im Compliance-Manager verwenden dasselbe Nummernschema wie in den folgenden Abschnitten dargestellt:
 
-![Details zu Compliance-Manager-Microsoft-Steuerelementen](media/compliance-manager-control-details.png)
+![Details zu Compliance-Manager-Microsoft-Steuerelementen](../media/compliance-manager-control-details.png)
 
 Es gibt drei Arten von Steuerelementen:
 
@@ -403,7 +403,7 @@ Mit dieser Funktion kann eine Organisation alle aktiven oder ausstehenden Abhän
 
 Eine Vorlage ist das Basisobjekt im Compliance-Manager (Preview), das einem Produkt und einer Zertifizierung (beispielsweise Standard, Regulierung, Steuerelement Framework usw.) zugeordnet ist. Vorlagen können angezeigt und aus dem Dashboard Vorlagen hinzugefügt werden.
 
-![Microsoft Template-Dashboard für Compliance-Manager](media/compliance-manager-template-dashboard.png)
+![Microsoft Template-Dashboard für Compliance-Manager](../media/compliance-manager-template-dashboard.png)
  
 Das Dashboard zeigt jede Vorlage zusammen mit der Zertifizierung und dem Produkt, das der Vorlage zugeordnet ist, den Datumsangaben, an denen die Vorlage erstellt und zuletzt geändert wurde, die Anzahl der von Kunden und von Microsoft verwalteten Steuerelemente, die maximale Konformitätsbewertung für den Vorlage und den Status der Vorlage (beispielsweise genehmigt, ausstehende Genehmigung, importiert).
 
@@ -594,7 +594,7 @@ Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihr
 2. Wählen Sie die Gruppe und die Bewertung in den Dropdownmenüs für die Bewertung aus, die Sie exportieren möchten.
 3. Wählen Sie exportieren aus. Der Bewertungsexport wird als Excel-Datei heruntergeladen.
 
-![Kompatibilitäts-Manager-Bewertung – Excel-Bericht](media/compliance-manager-assessment-report.png)
+![Kompatibilitäts-Manager-Bewertung – Excel-Bericht](../media/compliance-manager-assessment-report.png)
 
 ## <a name="permissions"></a>Berechtigungen
 

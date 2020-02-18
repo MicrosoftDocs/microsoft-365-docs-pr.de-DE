@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957200"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086274"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
 Zu den Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen. Die Einstellungen für die Spamfilterrichtlinie werden nur auf eingehende Nachrichten angewendet. Es gibt zwei Optionen:
@@ -109,10 +109,10 @@ Wenn Sie mehr benutzerdefinierte Einstellungen aktivieren oder benutzerdefiniert
 
 6. Klicken Sie auf **Speichern**. Im Bereich auf der rechten Seite wird eine Zusammenfassung der Richtlinieneinstellungen angezeigt.
 
-Sie können die Standardrichtlinie kann nicht deaktivieren oder löschen, und benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Kontrollkästchen in der Spalte **AKTIVIERT** aktivieren beziehungsweise deaktivieren, um Ihre benutzerdefinierten Richtlinien zu aktivieren oder zu deaktivieren. Standardmäßig sind alle Richtlinien aktiviert. Klicken Sie zum Löschen einer benutzerdefinierten Richtlinie auf**Löschen**![Symbol Löschen](../media/ITPro-EAC-DeleteIcon.gif), und bestätigen Sie dann, dass Sie die Richtlinie tatsächlich löschen möchten.
+Sie können die Standardrichtlinie kann nicht deaktivieren oder löschen, und benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Kontrollkästchen in der Spalte **AKTIVIERT** aktivieren beziehungsweise deaktivieren, um Ihre benutzerdefinierten Richtlinien zu aktivieren oder zu deaktivieren. Standardmäßig sind alle Richtlinien aktiviert. Klicken Sie zum Löschen einer benutzerdefinierten Richtlinie auf**Löschen**![Symbol Löschen](../../media/ITPro-EAC-DeleteIcon.gif), und bestätigen Sie dann, dass Sie die Richtlinie tatsächlich löschen möchten.
 
 > [!TIP]
-> Sie können die Priorität (Ausführungsreihenfolge) Ihrer benutzerdefinierten Richtlinien ändern, indem Sie auf den ![Symbol „Aufwärtspfeil“](../media/ITPro-EAC-UpArrowIcon.gif) Aufwärtspfeil bzw. den ![Symbol „Abwärtspfeil“](../media/ITPro-EAC-DownArrowIcon.gif) Abwärtspfeil klicken. Die Richtlinie mit einer **PRIORITÄT** von **0** wird zuerst ausgeführt, gefolgt von **1**, dann **2** usw.
+> Sie können die Priorität (Ausführungsreihenfolge) Ihrer benutzerdefinierten Richtlinien ändern, indem Sie auf den ![Symbol „Aufwärtspfeil“](../../media/ITPro-EAC-UpArrowIcon.gif) Aufwärtspfeil bzw. den ![Symbol „Abwärtspfeil“](../../media/ITPro-EAC-DownArrowIcon.gif) Abwärtspfeil klicken. Die Richtlinie mit einer **PRIORITÄT** von **0** wird zuerst ausgeführt, gefolgt von **1**, dann **2** usw.
 
 ## <a name="use-powershell-to-configure-spam-filter-policies"></a>Konfigurieren der Richtlinien für die Spamfilterung mit PowerShell
 
@@ -150,18 +150,18 @@ Sowohl Zulassungs- als auch Sperrlisten werden als Elemente einer Kunden-Antispa
 
 1. Im Abschnitt **Zulassungslisten** können Sie Einträge angeben, z. B. Absender oder Domänen, die immer an den Posteingang übermittelt werden. E-Mails von diesen Einträgen werden nicht vom Spamfilter verarbeitet.
 
-   - Fügen Sie der Zulassungsliste für Absender vertrauenswürdige Absender hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Zulassungslisten** zurückzukehren.
+   - Fügen Sie der Zulassungsliste für Absender vertrauenswürdige Absender hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Zulassungslisten** zurückzukehren.
 
-   - Fügen Sie der Zulassungsliste für Domänen vertrauenswürdige Domänen hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Zulassungslisten** zurückzukehren.
+   - Fügen Sie der Zulassungsliste für Domänen vertrauenswürdige Domänen hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Zulassungslisten** zurückzukehren.
 
    > [!CAUTION]
    > Sie sollten niemals akzeptierte Domänen (Ihre eigenen Domänen) oder allgemeine Domänen wie Microsoft.com, Office.com usw. in einer Zulassungsliste auflisten. Dies würde Spoofern das uneingeschränkte Senden von E-Mails in Ihre Organisation ermöglichen.
 
 2. Auf der Seite **Sperrlisten** können Sie Einträge, wie z. B. Absender oder Domänen, angeben, die immer als Spam markiert werden. Der Dienst wendet die konfigurierte Spamaktion bei hoher Vertrauenswürdigkeit auf E-Mails an, die diesen Einträgen entsprechen.
 
-   - Fügen Sie der Absendersperrliste unerwünschte Absender hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Sperrlisten** zurückzukehren.
+   - Fügen Sie der Absendersperrliste unerwünschte Absender hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Sperrlisten** zurückzukehren.
 
-   - Fügen Sie der Domänensperrliste unerwünschte Domänen hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Sperrlisten** zurückzukehren.
+   - Fügen Sie der Domänensperrliste unerwünschte Domänen hinzu. Klicken Sie auf **Bearbeiten**![Symbol „Hinzufügen“](../../media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **Speichern**, um zur Seite **Sperrlisten** zurückzukehren.
    
      > [!NOTE]
      > In der Spamfilterrichtlinie können Sie ganze Domänen oder bestimmte Absender blockieren, aber Sie können keine Platzhalter (\*) verwenden. 

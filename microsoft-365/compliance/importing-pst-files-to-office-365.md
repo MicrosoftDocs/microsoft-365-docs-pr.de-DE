@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600672"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072957"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -32,9 +32,9 @@ ms.locfileid: "41600672"
 
 Sie können den Importdienst im Security & Compliance Center verwenden, um PST-Dateien in einem Massenimportvorgang schnell in Exchange Online-Postfächer in Ihrer Office 365-Organisation zu importieren. Es gibt zwei Methoden zum Importieren von PST-Dateien in Office 365:
 
-- **Netzwerk-Upload** ![Cloud-Upload](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png): Laden Sie die PST-Dateien über das Netzwerk in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Verwenden Sie anschließend den Office 365-Importdienst, um die PST-Daten in Postfächer in Ihrer Office 365-Organisation zu importieren. 
+- **Netzwerk-Upload** ![Cloud-Upload](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png): Laden Sie die PST-Dateien über das Netzwerk in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Verwenden Sie anschließend den Office 365-Importdienst, um die PST-Daten in Postfächer in Ihrer Office 365-Organisation zu importieren. 
 
-- **Laufwerkversand** ![Festplatte](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png): Sie kopieren die PST-Dateien auf eine mit BitLocker verschlüsselte Festplatte und senden das Laufwerk dann physisch an Microsoft. Nachdem Microsoft die Festplatte erhalten hat, laden Mitarbeiter im Rechenzentrum die Daten in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Anschließend verwenden Sie den Office 365-Importdienst, um die Daten in Postfächer in Ihrer Office 365-Organisation zu importieren. 
+- **Laufwerkversand** ![Festplatte](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png): Sie kopieren die PST-Dateien auf eine mit BitLocker verschlüsselte Festplatte und senden das Laufwerk dann physisch an Microsoft. Nachdem Microsoft die Festplatte erhalten hat, laden Mitarbeiter im Rechenzentrum die Daten in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Anschließend verwenden Sie den Office 365-Importdienst, um die Daten in Postfächer in Ihrer Office 365-Organisation zu importieren. 
 
 ## <a name="step-by-step-instructions"></a>Schrittweise Anweisungen
   
@@ -48,7 +48,7 @@ Ausführliche schrittweise Anweisungen zum Massenimport von PST-Dateien Ihrer Or
 
 Es folgen eine Darstellung und Beschreibung des vollständigen PST-Importprozesses. In der Darstellung ist der wesentliche Workflow abgebildet und sind die Unterschiede zwischen den Methoden Netzwerkupload und Laufwerkversand hervorgehoben.
   
-![Workflow eines PST-Importprozesses](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![Workflow eines PST-Importprozesses](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
 1. **PST-Importtool und Schlüssel für den privaten Azure-Speicherort herunterladen**: Der erste Schritt besteht darin, das Tool und den Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien hochzuladen oder auf eine Festplatte zu kopieren. Sie erhalten das Tool und den Schlüssel über die Seite **Import** im Security & Compliance Center. Der Schlüssel stellt Ihnen (bzw. im Fall eines Laufwerkversands den Mitarbeitern im Microsoft-Rechenzentrum) die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien in Office 365 ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
     
