@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Benutzer mit Sensitivitäts Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069862"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101235"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Sensitivitäts Bezeichnungen in Office-Apps
 
-Wenn Sie Sensitivitäts Bezeichnungen aus dem Microsoft 365 Compliance Center oder einem entsprechenden Bezeichnungs Center veröffentlicht haben, werden diese in Office-Apps angezeigt, damit Benutzerdaten beim Erstellen oder bearbeiten klassifizieren und schützen können.
+Wenn Sie Sensitivitäts Bezeichnungen aus dem Microsoft 365 Compliance Center oder einem entsprechenden Bezeichnungs Center [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) haben, werden diese in Office-Apps angezeigt, damit Benutzerdaten beim Erstellen oder bearbeiten klassifizieren und schützen können.
 
-Verwenden Sie die Informationen in diesem Artikel, um Sie bei der erfolgreichen Verwaltung von use Sensitivity Labels in Office-Apps zu unterstützen. Beispielsweise die minimalen Versionen von apps, die Sie für die Unterstützung integrierter Beschriftungen, Interaktionen mit dem Azure Information Protection Unified Labeling-Client und Kompatibilität mit anderen apps und Diensten benötigen.
+Verwenden Sie die Informationen in diesem Artikel, um Sie bei der erfolgreichen Verwaltung von Sensitivitäts Bezeichnungen in Office-Apps zu unterstützen. Ermitteln Sie beispielsweise die Mindestversion von apps, die Sie zur Unterstützung der integrierten Kennzeichnung benötigen, und verstehen Sie die Interaktionen mit dem Azure Information Protection Unified Labeling-Client und der Kompatibilität mit anderen apps und Diensten.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Abonnement-und Lizenzierungsanforderungen für Sensitivitäts Bezeichnungen
 

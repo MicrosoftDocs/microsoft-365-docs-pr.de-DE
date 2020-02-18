@@ -1,6 +1,8 @@
 ---
 title: Identitäts- und Gerätezugriff für Ihre Microsoft 365-Testumgebung
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine Microsoft 365-Umgebung, um Identitäts- und Gerätezugriff zu testen.
-ms.openlocfilehash: e86ff814f0b2b986de7eb26e7de362f17cd355e9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: e43483afc9e17de9582b2998867b53cfff7d8492
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672591"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601002"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Identitäts- und Gerätezugriff für Ihre Microsoft 365-Testumgebung
 

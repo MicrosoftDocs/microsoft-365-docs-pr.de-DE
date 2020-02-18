@@ -1,6 +1,8 @@
 ---
 title: Überlegungen zum Managementplan der Geschäftskontinuität für Großunternehmen
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspekte, die bei der Entwicklung eines Cloud-bewussten Geschäftskontinuitätsplans berücksichtigt werden müssen.
-ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831668"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601092"
 ---
 # <a name="developing-your-continuity-plan"></a>Entwickeln Ihres Kontinuitätsplans
 

@@ -1,6 +1,8 @@
 ---
 title: Grundlegendes zur Enterprise Business Continuity-Verwaltung mit Clouddiensten
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier erfahren Sie, wie sich die Planung und Implementierung von Geschäftskontinuität ändert, wenn Clouddienste Bestandteil Ihres IT-Angebots sind.
-ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831836"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597002"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Enterprise Business Continuity-Verwaltung (EBCM) mit Clouddiensten
 
