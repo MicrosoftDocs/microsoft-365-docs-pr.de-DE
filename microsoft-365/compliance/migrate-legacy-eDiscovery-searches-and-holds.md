@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091383"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrieren von Legacy-eDiscovery-suchen und-Archiven zum Microsoft 365 Compliance Center
 
@@ -28,7 +28,7 @@ Damit Kunden die neuen und verbesserten Funktionen nutzen können, bietet dieser
 > [!NOTE]
 > Da es viele unterschiedliche Szenarien gibt, finden Sie in diesem Artikel Allgemeine Anleitungen für Übergangs suchen und-Aufbewahrungen in einem zentralen eDiscovery-Fall im Microsoft 365 Compliance Center. Die Verwendung von eDiscovery-Fällen ist nicht immer erforderlich, aber Sie fügen eine zusätzliche Sicherheitsebene hinzu, indem Sie Berechtigungen zuweisen, um zu steuern, wer Zugriff auf die eDiscovery-Fälle in Ihrer Organisation hat.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Office 365 Security & Compliance Center sein, um die in diesem Artikel beschriebenen PowerShell-Befehle auszuführen. Außerdem müssen Sie Mitglied der Rollengruppe "Discoveryverwaltung" in der Exchange-Verwaltungskonsole sein.
 
@@ -58,7 +58,7 @@ Get-MailboxSearch
 
 Die Ausgabe des Cmdlets ist wie folgt:
 
-![PowerShell-Beispiel Get-MailboxSearch](media/MigrateLegacyeDiscovery1.png)
+![PowerShell-Beispiel Get-MailboxSearch](../media/MigrateLegacyeDiscovery1.png)
 
 ## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Schritt 3: Abrufen von Informationen zu den Compliance-eDiscovery-suchen und in-Place-Archiven, die Sie migrieren möchten
 
@@ -74,7 +74,7 @@ $search | FL
 
 Die Ausgabe dieser beiden Befehle ist wie folgt:
 
-![Beispiel für eine PowerShell-Ausgabe mit Get-MailboxSearch für eine individuelle Suche](media/MigrateLegacyeDiscovery2.png)
+![Beispiel für eine PowerShell-Ausgabe mit Get-MailboxSearch für eine individuelle Suche](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
 > Die Dauer des in-situ-Speichers in diesem Beispiel ist unbestimmt (*ItemHoldPeriod: Unlimited*). Dies ist typisch für eDiscovery-und rechtliche Ermittlungs Szenarien. Wenn die Aufbewahrungsdauer einen anderen Wert als unbegrenzt hat, liegt der Grund wahrscheinlich daran, dass der Haltebereich zum Beibehalten von Inhalt in einem Aufbewahrungs Szenario verwendet wird. Anstatt die eDiscovery-Cmdlets in Office 365 Security & Compliance Center PowerShell für Aufbewahrungs Szenarien zu verwenden, empfehlen wir die Verwendung von [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) und [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) , um Inhalte beizubehalten. Das Ergebnis der Verwendung dieser Cmdlets ähnelt der Verwendung von **New-CaseHoldPolicy** und **New-CaseHoldRule**, aber Sie können einen Aufbewahrungszeitraum und eine Aufbewahrungsaktion angeben, beispielsweise das Löschen von Inhalten nach Ablauf des Aufbewahrungszeitraums. Darüber hinaus ist es für die Verwendung der Aufbewahrungs-Cmdlets nicht erforderlich, die Aufbewahrungszeiträume einem eDiscovery-Fall zuzuordnen.
@@ -86,6 +86,7 @@ Um einen eDiscovery-Speicher zu erstellen, müssen Sie einen eDiscovery-Fall ers
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+![Beispiel für das Ausführen des Befehls "New-ComplianceCase"](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>Schritt 5: Erstellen des eDiscovery-Haltestatus
 
@@ -101,6 +102,8 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
+![Beispiel für die Verwendung von NewCaseHoldPolicy-und NewCaseHoldRule-Cmdlets](../media/MigrateLegacyeDiscovery4.png)
+
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Schritt 6: Überprüfen des eDiscovery-Haltestatus
 
 Um sicherzustellen, dass beim Erstellen des Haltestatus keine Probleme aufgetreten sind, sollten Sie überprüfen, ob der halte Verteilungsstatus erfolgreich verläuft. Verteilung bedeutet, dass der Haltebereich auf alle im *ExchangeLocation* -Parameter im vorherigen Schritt angegebenen inhaltsspeicherorte angewendet wurde. Dazu können Sie das Cmdlet **Get-CaseHoldPolicy** ausführen. Da die Eigenschaften, die in der *$Policy* Variablen gespeichert wurden, die Sie im vorherigen Schritt erstellt haben, nicht automatisch in der Variablen aktualisiert werden, müssen Sie das Cmdlet erneut ausführen, um zu überprüfen, ob die Verteilung erfolgreich verläuft. Es kann zwischen 5 Minuten und 24 Stunden dauern, bis die Fall Aufbewahrungsrichtlinien erfolgreich verteilt wurden.
@@ -113,7 +116,7 @@ Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 
 Der Wert von **Success** für die *Eigenschaften distributionstatus* -Eigenschaft gibt an, dass der Haltebereich erfolgreich an den Inhaltsspeicherorten positioniert wurde. Wenn die Verteilung noch nicht abgeschlossen ist, wird der Wert **Ausstehend** angezeigt.
 
-![PowerShell-Get-CaseHoldPolicy-Beispiel](media/MigrateLegacyeDiscovery5.png)
+![PowerShell-Get-CaseHoldPolicy-Beispiel](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>Schritt 7: Erstellen der Suche
 
@@ -123,21 +126,21 @@ Der letzte Schritt besteht darin, die Suche neu zu erstellen, die Sie in Schritt
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
 ```
 
-![PowerShell New-ComplianceSearch-Beispiel](media/MigrateLegacyeDiscovery6.png)
+![PowerShell New-ComplianceSearch-Beispiel](../media/MigrateLegacyeDiscovery6.png)
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Schritt 8: Überprüfen der Groß-/Kleinschreibung, des Haltestatus und der Suche im Microsoft 365 Compliance Center
 
 Um sicherzustellen, dass alles ordnungsgemäß eingerichtet ist, wechseln Sie zum Microsoft 365 Compliance [https://compliance.microsoft.com](https://compliance.microsoft.com)Center unter, und klicken Sie auf **eDiscovery > Core**.
 
-![Microsoft 365 Compliance Center eDiscovery](media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365 Compliance Center eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
 Der in Schritt 3 erstellte Fall wird auf der **zentralen eDiscovery** -Seite aufgeführt. Öffnen Sie den Fall, und beachten Sie dann die in Schritt 4 erstellte Aufbewahrungszeit auf der Registerkarte halte **Status** . Sie können auf den Haltebereich klicken, um Details anzuzeigen, einschließlich der Anzahl der Postfächer, auf die der Haltebereich angewendet wird, und des Verteilungsstatus.
 
-![eDiscovery hält im Microsoft 365 Compliance Center](media/MigrateLegacyeDiscovery8.png)
+![eDiscovery hält im Microsoft 365 Compliance Center](../media/MigrateLegacyeDiscovery8.png)
 
 Die Suche, die Sie in Schritt 7 erstellt haben, wird auf der Registerkarte **Suchen** im eDiscovery-Fall aufgeführt.
 
-![eDiscovery-Fall Suche im Microsoft 365 Compliance Center](media/MigrateLegacyeDiscovery9.png)
+![eDiscovery-Fall Suche im Microsoft 365 Compliance Center](../media/MigrateLegacyeDiscovery9.png)
 
 Wenn Sie eine Compliance-eDiscovery-Suche migrieren, diese aber keinem eDiscovery-Fall zuordnen, wird Sie auf der Seite "Inhaltssuche" im Microsoft 365 Compliance Center aufgeführt.
 

@@ -1,6 +1,8 @@
 ---
 title: Identität für die Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
-ms.openlocfilehash: dc893fb1e632cf15a612ebf13e911173933d9af3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673211"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068452"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
 
@@ -30,7 +32,7 @@ Contoso verwendet eine einzelne Active Directory Domain Services(AD DS)-Gesamtst
 
 Hier sehen Sie die Contoso-Gesamtstruktur mit regionalen Domänen für die unterschiedlichen Regionen, die regionale Hubs enthalten.
 
-![Gesamtstruktur und Domänen von Contoso weltweit](./media/contoso-identity/contoso-identity-fig1.png)
+![Gesamtstruktur und Domänen von Contoso weltweit](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso wollte die Konten und Gruppen in der „contoso.com“-Gesamtstruktur zur Authentifizierung und Autorisierung seiner Microsoft 365-Arbeitslasten und -Dienste verwenden.
 
@@ -43,7 +45,7 @@ Contoso lässt Folgendes zu:
 
 Hier sehen Sie die Contoso-DMZ mit einer öffentlichen Website, einem Partnerextranet und einer Reihe von Active Directory-Verbunddienste-Servern (AD FS). Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
 
-![Unterstützung von Contoso für die Verbundauthentifizierung für Kunden und Partner](./media/contoso-identity/contoso-identity-fig2.png)
+![Unterstützung von Contoso für die Verbundauthentifizierung für Kunden und Partner](../media/contoso-identity/contoso-identity-fig2.png)
  
 AD FS-Server in der DMZ erleichtern das Authentifizieren von Kundenanmeldeinformationen durch den Identitätsanbieter für Zugriff auf die öffentliche Website und Partneranmeldeinformationen für Zugriff auf das Partnerextranet.
 
@@ -59,7 +61,7 @@ Um die laufende Verzeichnissynchronisierung durchzuführen, hat Contoso das Azur
 
 Hier sehen Sie den Server mit Azure AD Connect, das die AD DS-Gesamtstruktur von Contoso auf Änderungen abruft und diese Änderungen dann mit dem Azure AD-Mandanten synchronisiert.
 
-![Infrastruktur für die PHS-Verzeichnissynchronisierung von Contoso](./media/contoso-identity/contoso-identity-fig4.png)
+![Infrastruktur für die PHS-Verzeichnissynchronisierung von Contoso](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Richtlinien für bedingten Zugriff für Identitäts- und Gerätezugriff
 
@@ -71,7 +73,7 @@ Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zug
 
 Hier sehen Sie die resultierenden identitäts- und gerätebasierten Richtlinien für bedingten Zugriff von Contoso.
 
-![Identitäts- und gerätebasierte Richtlinien für bedingten Zugriff](./media/contoso-identity/contoso-identity-fig5.png)
+![Identitäts- und gerätebasierte Richtlinien für bedingten Zugriff](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Nächster Schritt
 

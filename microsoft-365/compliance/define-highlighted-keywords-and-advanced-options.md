@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Hier erfahren Sie, wie Sie benutzerdefinierte Stichwörter zur Relevanz hinzufügen können, um relevante Dateien bei der Kennzeichnung in Office 365 Advanced eDiscovery zu identifizieren und Kosten Parameter anzugeben.  '
-ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595362"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075926"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Office 365 Advanced eDiscovery
 
@@ -48,11 +48,11 @@ Wie im folgenden beschrieben, können Keyword-Listen hinzugefügt werden, und Fa
     
 6. Geben Sie in **Beschreibung**die Liste Stichwörter ein (optional).
     
-    ![Neue Schlüsselwörter hinzufügen](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![Neue Schlüsselwörter hinzufügen](../media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. Klicken Sie auf **OK** , wenn Sie fertig sind. Die erstellte Liste wird der Liste Schlüsselwörterliste hinzugefügt und kann bearbeitet oder gelöscht werden. 
     
-    ![Liste der Schlüsselwörter für Relevanz-Setup](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![Liste der Schlüsselwörter für Relevanz-Setup](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 Die benutzerdefinierten Schlüsselwörter werden im Tag angegebenen Farben in Relevanz \> angezeigt. 
   
@@ -68,7 +68,7 @@ Diese Einstellungen wirken sich auf den Track aus und entscheiden relevant für 
     
 2. Wählen Sie in der Liste **Anzahl der Dateien, die nach Stunden überprüft** werden den Betrag aus, oder übernehmen Sie den Standardwert. 
     
-    ![Parameter für die Relevanz-Einrichtungskosten](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![Parameter für die Relevanz-Einrichtungskosten](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
 3. Klicken Sie auf **Speichern**. Die ausgewählten Einstellungen werden gespeichert.
     

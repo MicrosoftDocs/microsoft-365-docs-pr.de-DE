@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 7: Konfigurieren der Identitätsgovernance'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Identitätsgovernance für Ihren Azure AD-Mandanten verstehen und konfigurieren.
-ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302922"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067352"
 ---
 # <a name="step-6-configure-identity-governance"></a>Schritt 6: Konfigurieren der Identitätsgovernance
 
-![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2: Identität](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Bei der Identitätsgovernance geht es um den Schutz, die Kontrolle und die Überwachung von Zugriffen auf kritische Ressourcen bei gleichzeitiger Sicherstellung der Mitarbeiterproduktivität. Beispielsweise können Sie mit Identitätsgovernance sicherstellen, dass die richtigen Benutzer den richtigen Zugriff auf die richtigen Ressourcen haben, und feststellen, ob sich dieser Zugriff im Laufe der Zeit ändert.
 

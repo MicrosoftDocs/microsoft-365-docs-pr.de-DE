@@ -13,18 +13,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Überprüfen Sie Ihre Stichwortabfrage auf die Inhaltssuche nach Fehlern und Tippfehlern, wie nicht unterstützten Zeichen und booleschen Kleinbuchstaben Operatoren, bevor Sie die Suche ausführen. Wenn ein Fehler vorliegt, schlagen wir eine überarbeitete Abfrage vor.
-ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595922"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078911"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Überprüfen der Inhaltssuchabfrage auf Fehler
 
 Wenn Sie eine Inhaltssuche erstellen oder bearbeiten, können Sie Office 365 Ihre Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren mit Kleinbuchstaben überprüfen lassen. Wie? Klicken Sie auf der Seite Abfrage einer Inhaltssuche einfach auf **Abfrage für Tippfehler überprüfen** . 
   
-![Klicken Sie auf "Abfrage für Tippfehler überprüfen", um Ihre Suchabfrage auf nicht unterstützte Zeichen zu überprüfen.](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![Klicken Sie auf "Abfrage für Tippfehler überprüfen", um Ihre Suchabfrage auf nicht unterstützte Zeichen zu überprüfen.](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 Im folgenden finden Sie eine Liste der nicht unterstützten Zeichen, die wir überprüfen. Nicht unterstützte Zeichen werden häufig ausgeblendet, und Sie verursachen in der Regel einen Suchfehler oder geben unbeabsichtigte Ergebnisse zurück.
   
@@ -40,7 +40,7 @@ Im folgenden finden Sie eine Liste der nicht unterstützten Zeichen, die wir üb
 
 Wenn in Ihrer Abfrage nicht unterstützte Zeichen gefunden werden, wird eine Warnmeldung angezeigt, die besagt, dass nicht unterstützte Zeichen gefunden wurden, und schlägt eine Alternative vor. Anschließend können Sie die ursprüngliche Abfrage beibehalten oder durch die vorgeschlagene geänderte Abfrage ersetzen. Hier ist ein Beispiel für die Warnmeldung, die angezeigt wird, nachdem Sie im vorherigen Screenshot auf **Abfrage für Tippfehler** für die Suchabfrage prüfen klicken. Beachten Sie, dass die ursprüngliche Abfrage intelligente Anführungszeichen und Kleinbuchstaben-boolesche Operatoren enthält. 
   
-![Eine Warnmeldung mit einer vorgeschlagenen Überarbeitung für Ihre Abfrage wird angezeigt.](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![Eine Warnmeldung mit einer vorgeschlagenen Überarbeitung für Ihre Abfrage wird angezeigt.](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Vorgehensweise verhindern, dass nicht unterstützte Zeichen in Ihren Suchabfragen
 

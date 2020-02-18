@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597482"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081210"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 
@@ -46,7 +46,7 @@ In den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsrich
     
 Sie können einige oder alle Schritte in diesem Artikel befolgen, um eine Archivierungs-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess auf einigen Postfächern zu testen, bevor er für alle Postfächer in Ihrer Organisation implementiert wird.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
@@ -66,7 +66,7 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. Wechseln Sie im Security #a0 Compliance Center zu **Information Governance** \> **Archive**.
+3. Wechseln Sie im Security & Compliance Center zu **Information Governance** \> **Archive**.
     
     Eine Liste der Postfächer in Ihrer Organisation wird angezeigt und ob das entsprechende Archivpostfach aktiviert oder deaktiviert ist. 
     
@@ -81,13 +81,13 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
     
 6. Klicken Sie auf **Ja** , um die Warnmeldung zu schließen, und starten Sie den Vorgang, um das Archivpostfach für jedes ausgewählte Postfach zu aktivieren. 
     
-7. Wenn der Prozess abgeschlossen ist, klicken **Sie** ![auf](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aktualisierung aktualisieren, um die Liste auf der **Archiv** Seite zu aktualisieren. 
+7. Wenn der Prozess abgeschlossen ist, klicken **Sie** ![auf](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aktualisierung aktualisieren, um die Liste auf der **Archiv** Seite zu aktualisieren. 
     
     Das Archivpostfach ist für alle Benutzer in Ihrer Organisation aktiviert.
     
-    ![Die Liste der Postfächer, für die das Archivpostfach aktiviert ist.](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
+    ![Die Liste der Postfächer, für die das Archivpostfach aktiviert ist.](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Lassen Sie das Sicherheits #a0 Compliance Center geöffnet. Sie verwenden Sie im nächsten Schritt.
+8. Lassen Sie das Sicherheits & Compliance Center geöffnet. Sie verwenden Sie im nächsten Schritt.
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Schritt 2: Erstellen neuer Aufbewahrungstags für die Archiv-und Löschrichtlinien
 
@@ -101,11 +101,11 @@ In diesem Schritt erstellen Sie die drei benutzerdefinierten Aufbewahrungstags, 
     
 Um neue Aufbewahrungstags zu erstellen, verwenden Sie das Exchange Admin Center (EAC) in Ihrer Exchange Online Organisation.
   
-1. Klicken Sie im Security #a0 Compliance Center auf das App-Startfeld in der oberen linken Ecke, und klicken Sie dann auf die Kachel **Admin** . 
+1. Klicken Sie im Security & Compliance Center auf das App-Startfeld in der oberen linken Ecke, und klicken Sie dann auf die Kachel **Admin** . 
     
 2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Admin Center auf **Admin**Center, und klicken Sie dann auf **Exchange**.
     
-    ![Screenshot zeigt das Microsoft 365 Admin Center, wobei die Option admin Centers erweitert und Exchange ausgewählt wurde.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot zeigt das Microsoft 365 Admin Center, wobei die Option admin Centers erweitert und Exchange ausgewählt wurde.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Wechseln Sie in der Exchange- **Verwaltungs** \> Konsole zu Compliance-Management- **Aufbewahrungstags**
     
@@ -115,11 +115,11 @@ Um neue Aufbewahrungstags zu erstellen, verwenden Sie das Exchange Admin Center 
   
 Zunächst erstellen Sie ein Standardrichtlinientag für ein benutzerdefiniertes Archiv, mit dem Elemente nach drei Jahren in das Archivpostfach übertragen werden. 
   
-1. Klicken Sie auf der Seite **Aufbewahrungstags** auf neues Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)für **neue Tags**![, und wählen Sie dann **automatisch auf gesamtes Postfach angewendet (Standard)** aus. 
+1. Klicken Sie auf der Seite **Aufbewahrungstags** auf neues Symbol](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)für **neue Tags**![, und wählen Sie dann **automatisch auf gesamtes Postfach angewendet (Standard)** aus. 
     
 2. Füllen Sie auf der Seite **Neues Tag wird automatisch auf gesamtes Postfach angewendet (Standard)** die folgenden Felder aus: 
     
-    ![Einstellungen zum Erstellen eines neuen Standardrichtlinientags für das Archiv](media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Einstellungen zum Erstellen eines neuen Standardrichtlinientags für das Archiv](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
 1. **Name** Geben Sie einen Namen für das neue Aufbewahrungs Tag ein. 
     
@@ -137,11 +137,11 @@ Zunächst erstellen Sie ein Standardrichtlinientag für ein benutzerdefiniertes 
   
 Als Nächstes erstellen Sie ein weiteres benutzerdefiniertes Standardrichtlinientag, wobei es sich dabei um eine Löschrichtlinie handelt, die Elemente nach 7 Jahren endgültig löscht.
   
-1. Klicken Sie auf der Seite **Aufbewahrungstags** auf neues Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)für **neue Tags**![, und wählen Sie dann **automatisch auf gesamtes Postfach angewendet (Standard)** aus. 
+1. Klicken Sie auf der Seite **Aufbewahrungstags** auf neues Symbol](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)für **neue Tags**![, und wählen Sie dann **automatisch auf gesamtes Postfach angewendet (Standard)** aus. 
     
 2. Füllen Sie auf der Seite **Neues Tag wird automatisch auf gesamtes Postfach angewendet (Standard)** die folgenden Felder aus: 
     
-    ![Einstellungen zum Erstellen eines neuen Standardrichtlinientags für das Löschen](media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Einstellungen zum Erstellen eines neuen Standardrichtlinientags für das Löschen](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
 1. **Name** Geben Sie einen Namen für das neue Aufbewahrungs Tag ein. 
     
@@ -159,11 +159,11 @@ Als Nächstes erstellen Sie ein weiteres benutzerdefiniertes Standardrichtlinien
   
 Das letzte Aufbewahrungs-Tag, das Sie erstellen, ist ein benutzerdefiniertes Aufbewahrungsrichtlinientag (rpt) für den Ordner "Gelöschte Elemente". Mit diesem Tag werden Elemente im Ordner "Gelöschte Elemente" nach 5 Jahren gelöscht, und es wird ein Wiederherstellungszeitraum bereitgestellt, wenn Benutzer das Tool zum Wiederherstellen von gelöschten Elementen zum Wiederherstellen eines Elements verwenden können.
   
-1. Klicken Sie auf der Seite **Aufbewahrungstags** auf neues Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)für **neue Tags** ![, und wählen Sie dann **automatisch auf einen Standardordner angewendet**aus. 
+1. Klicken Sie auf der Seite **Aufbewahrungstags** auf neues Symbol](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)für **neue Tags** ![, und wählen Sie dann **automatisch auf einen Standardordner angewendet**aus. 
     
 2. Füllen Sie auf der Seite **Neues, automatisch auf eine Standardordner angewendetes Tag** die folgenden Felder aus: 
     
-    ![Einstellungen zum Erstellen eines neuen Aufbewahrungsrichtlinientags für den Ordner "Gelöschte Elemente"](media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Einstellungen zum Erstellen eines neuen Aufbewahrungsrichtlinientags für den Ordner "Gelöschte Elemente"](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
 1. **Name** Geben Sie einen Namen für das neue Aufbewahrungs Tag ein. 
     
@@ -185,17 +185,17 @@ Nachdem Sie die benutzerdefinierten Aufbewahrungstags erstellt haben, besteht de
   
 1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Retention Policies**.
     
-2. Klicken Sie auf der Seite **Aufbewahrungsrichtlinien** auf **Neues** ![neues Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+2. Klicken Sie auf der Seite **Aufbewahrungsrichtlinien** auf **Neues** ![neues Symbol](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
     
 3. Geben Sie im Feld **Name** einen Namen für die neue Aufbewahrungsrichtlinie ein. Beispiel: **Alpine House-Archiv-und Löschrichtlinie**. 
     
-4. Klicken Sie unter **Aufbewahrungstags**auf neues](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)Symbol **Hinzufügen** ![.
+4. Klicken Sie unter **Aufbewahrungstags**auf neues](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)Symbol **Hinzufügen** ![.
     
     Eine Liste der Aufbewahrungstags in Ihrer Organisation wird angezeigt. Hinweis die benutzerdefinierten Tags, die Sie in Schritt 2 erstellt haben, werden angezeigt.
     
 5. Fügen Sie die 9 Aufbewahrungstags hinzu, die im folgenden Screenshot hervorgehoben sind (diese Tags werden im Abschnitt [Weitere Informationen](#more-information) ausführlicher beschrieben). Wählen Sie zum Hinzufügen eines Aufbewahrungstags die Option aus, und klicken Sie dann auf **Hinzufügen**. 
     
-    ![Hinzufügen von Aufbewahrungstags zur neuen Aufbewahrungsrichtlinie](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
+    ![Hinzufügen von Aufbewahrungstags zur neuen Aufbewahrungsrichtlinie](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
     > [!TIP]
     > Sie können mehrere Aufbewahrungstags auswählen, indem Sie die **STRG** -Taste gedrückt halten und dann auf die einzelnen Tags klicken. 
@@ -206,7 +206,7 @@ Nachdem Sie die benutzerdefinierten Aufbewahrungstags erstellt haben, besteht de
     
     Die neue Aufbewahrungsrichtlinie wird in der Liste angezeigt. Wählen Sie diese Option aus, um die im Detailbereich verknüpften Aufbewahrungstags anzuzeigen.
     
-    ![Die neue Aufbewahrungsrichtlinie und die Liste der verknüpften Aufbewahrungstags](media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
+    ![Die neue Aufbewahrungsrichtlinie und die Liste der verknüpften Aufbewahrungstags](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Schritt 4: Zuweisen der neuen Aufbewahrungsrichtlinie zu Benutzerpostfächern
 
@@ -228,7 +228,7 @@ Wenn ein neues Postfach erstellt wird, wird es standardmäßig einer Aufbewahrun
     
 7. Um zu überprüfen, ob die neue Aufbewahrungsrichtlinie Postfächern zugewiesen wurde, können Sie die folgenden Aktionen ausführen: Wählen Sie ein Postfach auf der Seite Postfächer aus, und klicken Sie dann auf Bearbeiten. 
     
-1. Wählen Sie auf der Seite **Postfächer** ein Postfach aus, **und klicken Sie** ![dann auf bearbeiten bearbeiten](media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png). 
+1. Wählen Sie auf der Seite **Postfächer** ein Postfach aus, **und klicken Sie** ![dann auf bearbeiten bearbeiten](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png). 
     
 2. Klicken Sie auf der Seite Postfacheigenschaften für den ausgewählten Benutzer auf **Postfachfunktionen**.
     

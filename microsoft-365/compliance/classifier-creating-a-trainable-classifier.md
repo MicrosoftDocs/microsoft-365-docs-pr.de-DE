@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Schulungs fähige Klassifizierungen, wenn eine der Feld Klassifizierungen von Ready to use Ihren Anforderungen nicht entspricht. Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Thema wird gezeigt, wie Sie eine benutzerdefinierte Klassifizierung erstellen.
-ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595912"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078866"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Erstellen einer Schulungs Klassifizierer (Vorschau)
 
@@ -29,7 +29,7 @@ Weitere Informationen zu den verschiedenen Klassifizierungstypen finden Sie unte
 
 Diese Zeitachse spiegelt eine Beispielbereitstellung wider.
 
-![Schulungs-und Klassifizierungs Zeitplan](media/trainable-classifier-deployment-timeline_border.png)
+![Schulungs-und Klassifizierungs Zeitplan](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > Das Anmelden ist zum ersten Mal für Schulungs orientierte Klassifizierungen erforderlich. Es dauert zwölf Tage, bis Microsoft 365 eine Basisbewertung ihrer organisationsinhalte abgeschlossen hat. Wenden Sie sich an ihren globalen Administrator, um den Opt-in-Prozess zu starten.
@@ -80,7 +80,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 10. Sie können die Seite Details jetzt anzeigen, indem Sie die Klassifizierung auswählen.
 
 
-![Schulungs fähige Klassifizierung zum Testen verfügbar](media/classifier-trainable-ready-to-test-detail.png)
+![Schulungs fähige Klassifizierung zum Testen verfügbar](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Sammeln Sie mindestens 200 Testinhalts Elemente. Microsoft empfiehlt 10.000, um optimale Ergebnisse zu erzielen. Dabei muss es sich um eine Mischung von Elementen handeln, die starke positive Ergebnisse aufweisen, starke negative und einige, die in ihrer Natur etwas weniger offensichtlich sind. Weitere Informationen finden Sie unter [standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) für die unterstützten Dateitypen.
 
@@ -100,13 +100,13 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 
 16. Wenn die ausbildende Klassifizierung die Verarbeitung Ihrer Testdateien abgeschlossen hat, wird der Status auf der Seite Details in `Ready to review`geändert. Wenn Sie die Größe des testsamples vergrößern möchten, `Add items to test` wählen Sie aus, und lassen Sie die Schulungs-Klassifizierung die zusätzlichen Elemente verarbeiten.
 
-![zur Überprüfung des Screenshot verfügbar](media/classifier-trainable-ready-to-review-detail.png)
+![zur Überprüfung des Screenshot verfügbar](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Klicken `Tested items to review` Sie auf die Registerkarte, um Elemente zu überprüfen.
 
 18. Microsoft 365 wird 30 Elemente gleichzeitig darstellen. Überprüfen Sie diese, `We predict this item is "Relevant". Do you agree?` und wählen Sie `Yes` im `No` Feld `Not sure, skip to next item`entweder oder oder aus. Die Modellgenauigkeit wird nach jeweils 30 Elementen automatisch aktualisiert.
 
-![Feld "Elemente überprüfen"](media/classifier-trainable-review-detail.png)
+![Feld "Elemente überprüfen"](../media/classifier-trainable-review-detail.png)
 
 19. Über *prüfen Sie mindestens 200* Elemente.
 
@@ -114,7 +114,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 
 20. Überprüfen Sie weiter, bis die Genauigkeit mindestens 70% erreicht und `Publish the classifier` der Status `Ready to use`lautet.
 
-![Genauigkeit und Veröffentlichungs bereit](media/classifier-trainable-review-ready-to-publish.png)
+![Genauigkeit und Veröffentlichungs bereit](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Veröffentlichen Sie die Klassifizierung.
 

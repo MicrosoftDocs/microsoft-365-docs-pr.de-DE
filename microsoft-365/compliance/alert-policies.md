@@ -182,7 +182,7 @@ Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugew
 |Geräteverwaltung|||||||
 |Dispositionsverwaltung|||||||
 |DLP-Konformitätsverwaltung||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Export|||||||
+|Exportieren|||||||
 |Hold|||||||
 |Benachrichtigungen verwalten||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Organisationskonfiguration||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

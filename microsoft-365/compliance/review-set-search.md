@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c1acdb515e278c40ca25d47e2d9fd24c23d51f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597612"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070060"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Abfragen der Daten in einem Prüfdateisatz
 
@@ -31,7 +31,7 @@ In den meisten Fällen ist es hilfreich, die Daten in einer Überprüfungsgruppe
 
 Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungs Satzes erstellen und ausführen möchten, klicken Sie in der Überprüfungsgruppe auf **neue Abfrage** . Nachdem Sie die Abfrage benannt und die Bedingungen definiert haben, klicken Sie auf **Speichern** , um die Abfrage zu speichern und auszuführen. Wenn Sie eine zuvor gespeicherte Abfrage ausführen möchten, klicken Sie auf eine gespeicherte Abfrage.
 
-![Überprüfen von Mengen Abfragen](media/AeDReviewSetQueries.png)
+![Überprüfen von Mengen Abfragen](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>Erstellen einer Überprüfungs Sätze-Abfrage
 
@@ -59,7 +59,7 @@ Zusätzlich zu den Konditions Karten können Sie eine KQL-ähnliche Abfragesprac
 
 Zusätzlich zu den Abfragen, die Sie speichern können, können Sie mithilfe von Filtersätzen für eine Überprüfungs Satz Abfrage schnell zusätzliche Bedingungen anwenden. Auf diese Weise können Sie die Ergebnisse, die von einer Abfrage mit Überprüfungs Sätzen angezeigt werden, weiter verfeinern.
 
-![Überprüfen von Filtersätzen](media/AeDReviewSetFilters.png)
+![Überprüfen von Filtersätzen](../media/AeDReviewSetFilters.png)
 
 Filter unterscheiden sich in zwei wichtigen Punkten von Abfragen:
 

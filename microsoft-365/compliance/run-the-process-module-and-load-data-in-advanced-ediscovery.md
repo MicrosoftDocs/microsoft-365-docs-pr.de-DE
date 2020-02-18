@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Erfahren Sie, wie Sie mit dem &amp; Office 365 Security Compliance Center auf Office 365 Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601592"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081522"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery
 
@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
     
 4. Wählen Sie in **Prepare** \> **Process** \> **Setup**einen Container aus der Liste der verfügbaren Container aus.
     
-    ![Klicken Sie auf Prozess, um dem Fall die Suchergebnisse hinzuzufügen.](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Klicken Sie auf Prozess, um dem Fall die Suchergebnisse hinzuzufügen.](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. Klicken Sie auf **Erweiterte Einstellungen...** , wenn Sie den Container als Seed-Dateien oder als Dateien mit vordefinierten Tags hinzufügen möchten. 
     
@@ -57,7 +57,7 @@ Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
     
     Verwenden Sie Pre-Tagged-Dateien, um die Relevanz-Schulung zu automatisieren. Sie sollten mindestens 1.500-Dateien markieren und den Anteil relevanter für unrelevante Dateien auf die gleiche Weise wie in der zur Relevanz hinzugefügten Sammlung beibehalten. Diese Dateien sollten manuell markiert werden, und Sie sollten in der Qualität von Tagging sicher sein.
     
-    ![Screenshot der Seite "Erweiterte Einstellungen" für die Verarbeitung von Batchdateien](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Screenshot der Seite "Erweiterte Einstellungen" für die Verarbeitung von Batchdateien](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - Im Abschnitt **Seed** : 
     

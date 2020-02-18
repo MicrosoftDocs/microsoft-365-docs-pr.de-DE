@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 1: Vorbereiten Ihres Netzwerks für Microsoft 365'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegende Informationen zur Internetbandbreite für die Clouddienste von Microsoft 365 Enterprise.
-ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 2f20542609c757c4fbccd2f9b0e4af59d9bc7566
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370292"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066519"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>Schritt 1: Vorbereiten Ihres Netzwerks für Microsoft 365
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 1 – Netzwerken](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 – Netzwerken](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Schritt 1:
 
@@ -40,5 +42,5 @@ Als Zwischenprüfung können Sie sich die [Beendigungskriterien](networking-exit
 
 |||
 |:-------|:-----|
-|![Schritt 2](./media/stepnumbers/Step2.png)|[Konfigurieren von lokalen Internetverbindungen für jedes Büro](networking-dns-resolution-same-location.md)|
+|![Schritt 2](../media/stepnumbers/Step2.png)|[Konfigurieren von lokalen Internetverbindungen für jedes Büro](networking-dns-resolution-same-location.md)|
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: f3421c62f0c7ac519ad44fc05174cd76872551d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9c12777669eeb9e723602db20e0827b278c0d9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601612"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081562"
 ---
 # <a name="generate-search-term-report-for-a-review-set"></a>Generieren eines Suchausdrucks Berichts für eine Überprüfungsgruppe
 
@@ -38,7 +38,7 @@ Es gibt zwei verschiedene Methoden zum Generieren eines Suchausdrucks Berichts: 
 
 - Um das Kontextmenü zu verwenden, öffnen Sie das Kontextmenü der gespeicherten Abfrage, die Sie in Schritt 1 erstellt haben, und klicken Sie auf **Suchausdrucks Bericht generieren**.
 
-- Um die Verwaltungskonsole zu verwenden, wechseln Sie zu **Manage Review Sets #a0 anzeigen von Suchbegriffs Berichten**, klicken Sie auf **neu**, und wählen Sie dann die gespeicherte Abfrage aus, die Sie in Schritt 1 erstellt haben.
+- Um die Verwaltungskonsole zu verwenden, wechseln Sie zu **Manage Review Sets > anzeigen von Suchbegriffs Berichten**, klicken Sie auf **neu**, und wählen Sie dann die gespeicherte Abfrage aus, die Sie in Schritt 1 erstellt haben.
 
 Geben Sie dann die Begriffe ein, über die Sie berichten möchten, getrennt durch NewLine; Wenn die gespeicherte Abfrage, die Sie in Schritt 1 verwendeter Stichwort-Konditions Karte erstellt haben, wird die Flyout-Seite vorab mit den Begriffen aus der ersten Keyword-Bedingungs Karte aufgefüllt, die in der gespeicherten Abfrage verwendet wird.
 

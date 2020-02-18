@@ -18,38 +18,38 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Verstehen Sie, warum geschätzte und tatsächliche Suchergebnisse bei Suchvorgängen mit eDiscovery-Tools in Office 365 variieren können. '
-ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595250"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075461"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Unterschiede zwischen geschätzten und tatsächlichen eDiscovery-Suchergebnissen in Office 365
 
 Dieses Thema bezieht sich auf Suchvorgänge, die Sie mit einem der folgenden Microsoft eDiscovery-Tools ausführen können: 
 
-- Inhaltssuche im Security #a0 Compliance Center  <br/>  
+- Inhaltssuche im Security & Compliance Center  <br/>  
 - In-Place-eDiscovery im Exchange Admin Center (EAC)  <br/>  
 - Das eDiscovery Center in SharePoint Online  <br/> 
    
-Wenn Sie eine eDiscovery-Suche ausführen, gibt das Tool, das Sie verwenden, eine Schätzung der Anzahl von Elementen (und deren Gesamtgröße) zurück, die den Suchkriterien entsprechen. Wenn Sie beispielsweise eine Suche im Security #a0 Compliance Center ausführen, werden die geschätzten Suchergebnisse im Detailbereich für die ausgewählte Suche angezeigt.
+Wenn Sie eine eDiscovery-Suche ausführen, gibt das Tool, das Sie verwenden, eine Schätzung der Anzahl von Elementen (und deren Gesamtgröße) zurück, die den Suchkriterien entsprechen. Wenn Sie beispielsweise eine Suche im Security & Compliance Center ausführen, werden die geschätzten Suchergebnisse im Detailbereich für die ausgewählte Suche angezeigt.
   
-![Schätzung der Ergebnisse, die im Detailbereich der ausgewählten Suche angezeigt werden](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![Schätzung der Ergebnisse, die im Detailbereich der ausgewählten Suche angezeigt werden](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
 Dies ist die gleiche Schätzung der Gesamtgröße und der Anzahl von Elementen, die im eDiscovery-Export Tool angezeigt wird, wenn Sie Ergebnisse auf einen lokalen Computer und im Export Zusammenfassungsbericht exportieren, der mit den Suchergebnissen heruntergeladen wird.
   
 **Geschätzte Ergebnisse im eDiscovery-Export Tool**
 
-![Geschätzte Ergebnisse im eDiscovery-Export Tool](media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![Geschätzte Ergebnisse im eDiscovery-Export Tool](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **Geschätzte Ergebnisse im Export Zusammenfassungsbericht**
 
-![Geschätzte Suchergebnisse sind im Export Zusammenfassungsbericht enthalten.](media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![Geschätzte Suchergebnisse sind im Export Zusammenfassungsbericht enthalten.](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 Wie Sie jedoch im vorherigen Screenshot des Export Zusammenfassungsberichts bemerken, unterscheiden sich die Größe und Anzahl der tatsächlichen Suchergebnisse, die tatsächlich heruntergeladen werden, von der Größe und Anzahl der geschätzten Suchergebnisse. 
   
-![Unterschied zwischen geschätzten und heruntergeladenen Suchergebnissen](media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![Unterschied zwischen geschätzten und heruntergeladenen Suchergebnissen](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 Hier sind einige Gründe für diese Unterschiede:
   
@@ -59,7 +59,7 @@ Hier sind einige Gründe für diese Unterschiede:
     
 - Nicht **indizierte Elemente** – Elemente, die für die Suche nicht indiziert sind, können Unterschiede zwischen geschätzten und tatsächlichen Suchergebnissen verursachen. Beispielsweise enthalten Compliance-eDiscovery in Exchange und das eDiscovery Center in SharePoint keine nicht indizierten Elemente (die die Suchkriterien nicht erfüllen), wenn Sie eine Suche ausführen, um die Suchergebnisse abzuschätzen. Sie können aber auch nicht indizierte Elemente einschließen, wenn Sie die Suchergebnisse exportieren. Wenn Sie nicht indizierte Elemente beim Exportieren von Suchergebnissen einbeziehen, werden möglicherweise weitere Elemente exportiert. Dies führt zu einem Unterschied zwischen den geschätzten und den exportierten Suchergebnissen. 
     
-    Wenn Sie das Tool für die Inhaltssuche im Security #a0 Compliance Center verwenden, haben Sie die Möglichkeit, nicht indizierte Elemente in die Such Schätzung einzubeziehen. Die Anzahl der nicht indizierten Elemente, die von der Suche zurückgegeben werden, wird im Detailbereich zusammen mit den anderen geschätzten Suchergebnissen aufgeführt. Alle nicht indizierten Elemente wären auch in der Gesamtgröße der geschätzten Suchergebnisse enthalten. Wenn Sie Suchergebnisse exportieren, haben Sie die Möglichkeit, nicht indizierte Elemente einzubeziehen oder nicht einzubeziehen. Die Art und Weise, wie Sie diese Optionen konfigurieren, kann zu Unterschieden zwischen den geschätzten und den tatsächlichen Suchergebnissen führen, die heruntergeladen werden. 
+    Wenn Sie das Tool für die Inhaltssuche im Security & Compliance Center verwenden, haben Sie die Möglichkeit, nicht indizierte Elemente in die Such Schätzung einzubeziehen. Die Anzahl der nicht indizierten Elemente, die von der Suche zurückgegeben werden, wird im Detailbereich zusammen mit den anderen geschätzten Suchergebnissen aufgeführt. Alle nicht indizierten Elemente wären auch in der Gesamtgröße der geschätzten Suchergebnisse enthalten. Wenn Sie Suchergebnisse exportieren, haben Sie die Möglichkeit, nicht indizierte Elemente einzubeziehen oder nicht einzubeziehen. Die Art und Weise, wie Sie diese Optionen konfigurieren, kann zu Unterschieden zwischen den geschätzten und den tatsächlichen Suchergebnissen führen, die heruntergeladen werden. 
     
 - **Exportieren der Ergebnisse einer Inhaltssuche, die alle inhaltsspeicherorte enthält** – wenn die Suche, aus der Sie Ergebnisse exportieren, eine Suche aller inhaltsspeicherorte in Ihrer Organisation war, werden nur die nicht indizierten Elemente aus Inhaltsspeicherorten exportiert, die Elemente enthalten, die mit den Suchkriterien übereinstimmen. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Nicht indizierte Elemente aller inhaltsspeicherorte (auch solche, die keine Elemente enthalten, die mit der Suchabfrage übereinstimmen) werden in die geschätzten Suchergebnisse aufgenommen. 
     

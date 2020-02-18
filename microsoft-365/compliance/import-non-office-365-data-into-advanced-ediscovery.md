@@ -32,7 +32,7 @@ Nicht alle Dokumente, die Sie möglicherweise mit Office 365 Advanced eDiscovery
 > [!NOTE]
 > Sie können ein Office 365 erweitertes eDiscovery Data Storage-Add-on-Abonnement für Ihre nicht Office 365 Inhalte erwerben. Dies steht ausschließlich für Inhalte zur Verfügung, die mit Advanced eDiscovery analysiert werden sollen. Führen Sie die Schritte in [kaufen oder bearbeiten und Add-on für Office 365 für Unternehmen](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) aus, und kaufen Sie das Office 365 Advanced eDiscovery Storage Add-on. 
   
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrieben verwenden, benötigen Sie Folgendes:
   

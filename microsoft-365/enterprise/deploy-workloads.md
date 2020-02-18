@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsworkloads von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801900"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067846"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Workloads und -Szenarien
 
@@ -47,7 +47,7 @@ Diese Szenarien leiten Sie durch die Konfiguration eines Microsoft Teams-Teams o
 
 Dies sind die Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
 
-![Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Weitere Szenarien finden Sie in der [Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)). 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit der Verhinderung von Datenverlust (Data Loss Prevention, DLP) in SharePoint Online können Sie Dokumente ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten. Nach der Ermittlung der Dokumente können Sie mit deren Besitzern zusammenarbeiten, um die Daten zu schützen. In diesem Thema wird das Erstellen einer Abfrage zur Suche nach vertraulichen Daten behandelt.
-ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c0b17ef8f1e6a10d095f4533867a108b937a56a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594546"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073897"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 
@@ -35,7 +35,7 @@ Benutzer speicher häufig vertrauliche Daten wie Kreditkarten- und Sozialversich
 
 Eine einfache DLP-Abfrage besteht aus drei Teilen: SensitiveType (Typ vertraulicher Informationen), Anzahlbereich und Konfidenzbereich. Wie in der folgenden Grafik dargestellt, ist **sensitivtype:\<"\>Type"** erforderlich, und beide**|\<Zähl Bereichs\> ** -und**|\<Konfidenz\> Bereiche** sind optional. 
   
-![Beispielabfrage unterteilt in Required und optional](media/DLP-query-example-text.png)
+![Beispielabfrage unterteilt in Required und optional](../media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>Typ vertraulicher Informationen - erforderlich
 

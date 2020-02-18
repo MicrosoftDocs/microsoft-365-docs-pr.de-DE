@@ -20,13 +20,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits #a0 auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
-ms.openlocfilehash: b1bd09777bd934cccf7f1247ed72201bcc4a081f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits & auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
+ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588195"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074032"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -36,9 +36,9 @@ Alle RMS-verschlüsselten e-Mail-Nachrichten, die in den Ergebnissen einer Inhal
   
 Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Ergebnisse und das anschließende herunterladen auf einen lokalen Computer.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Um Suchergebnisse zu exportieren, müssen Sie der Rolle "Exportverwaltung" im Security #a0 Compliance Center zugewiesen sein. Diese Rolle wird der integrierten eDiscovery-Manager-Rollengruppe zugewiesen. Sie wird nicht standardmäßig der Rollengruppe "Organisationsverwaltung" zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
+- Um Suchergebnisse zu exportieren, müssen Sie der Rolle "Exportverwaltung" im Security & Compliance Center zugewiesen sein. Diese Rolle wird der integrierten eDiscovery-Manager-Rollengruppe zugewiesen. Sie wird nicht standardmäßig der Rollengruppe "Organisationsverwaltung" zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
 - Der Computer, den Sie zum Exportieren der Suchergebnisse verwenden, muss die folgenden Voraussetzungen erfüllen:
     
@@ -89,7 +89,7 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
     
-3. Klicken Sie im linken Bereich des Security #a0 Compliance Centers auf **Such** \> **Inhaltssuche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Such** \> **Inhaltssuche**.
     
 4. Wählen Sie auf der Seite **Inhaltssuche** eine Suche aus. 
     
@@ -195,7 +195,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
  ### <a name="export-limits"></a>Exportgrenzwerte
   
-- Das Exportieren von Suchergebnissen aus dem Security #a0 Compliance Center hat folgende Grenzen:
+- Das Exportieren von Suchergebnissen aus dem Security & Compliance Center hat folgende Grenzen:
     
   - Sie können maximal 2 TB Daten aus einer einzelnen Inhaltssuche exportieren. Wenn die Suchergebnisse größer als 2 TB sind, sollten Sie die Verwendung von Datumsbereichen oder anderen Filtertypen verwenden, um die Gesamtgröße der Suchergebnisse zu verringern.
     
@@ -259,7 +259,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
 - Wenn Sie Postfachelemente aus einer Inhaltssuche exportieren, die alle Postfachelemente in den Suchergebnissen zurückgibt (da keine Stichwörter in der Suchabfrage enthalten sind), werden teilweise indizierte Elemente nicht in die PST-Datei kopiert, die die nicht indizierten Elemente enthält. Dies liegt daran, dass alle Elemente, einschließlich der teilweise indizierten Elemente, automatisch in die regulären Suchergebnisse eingeschlossen werden. Dies bedeutet, dass teilweise indizierte Elemente in einer PST-Datei (oder als einzelne Nachrichten) enthalten sein werden, die die anderen indizierten Elemente enthält.
     
-    Wenn Sie sowohl die indizierten als auch teilweise indizierten Elemente exportieren oder nur die indizierten Elemente aus einer Inhaltssuche exportieren, die alle Elemente zurückgibt, wird die gleiche Anzahl von Elementen heruntergeladen. Dies geschieht auch dann, wenn die geschätzten Suchergebnisse für die Inhaltssuche (angezeigt in den Suchstatistiken im Security #a0 Compliance Center) weiterhin eine separate Schätzung für die Anzahl der teilweise indizierten Elemente enthalten. Angenommen, die Schätzung für eine Suche, die alle Elemente (keine Stichwörter in der Suchabfrage) enthält, zeigt, dass 1.000 Elemente gefunden wurden und 200 teilweise indizierte Elemente ebenfalls gefunden wurden. In diesem Fall enthalten die 1.000-Elemente die teilweise indizierten Elemente, da die Suche alle Elemente zurückgibt. Mit anderen Worten: Es gibt 1.000 Gesamtelemente, die von der Suche zurückgegeben werden, und nicht 1.200 Elemente (wie Sie möglicherweise erwarten). Wenn Sie die Ergebnisse dieser Suche exportieren und indizierte und teilweise indizierte Elemente exportieren (oder nur teilweise indizierte Elemente exportieren), werden 1.000-Elemente heruntergeladen. Das liegt daran, dass teilweise indizierte Elemente in den regulären (indizierten) Ergebnissen enthalten sind, wenn Sie eine leere Suchabfrage verwenden, um alle Elemente zurückzugeben. Wenn Sie in diesem Beispiel nur teilweise indizierte Elemente exportieren, werden nur die 200 nicht indizierten Elemente heruntergeladen.
+    Wenn Sie sowohl die indizierten als auch teilweise indizierten Elemente exportieren oder nur die indizierten Elemente aus einer Inhaltssuche exportieren, die alle Elemente zurückgibt, wird die gleiche Anzahl von Elementen heruntergeladen. Dies geschieht auch dann, wenn die geschätzten Suchergebnisse für die Inhaltssuche (angezeigt in den Suchstatistiken im Security & Compliance Center) weiterhin eine separate Schätzung für die Anzahl der teilweise indizierten Elemente enthalten. Angenommen, die Schätzung für eine Suche, die alle Elemente (keine Stichwörter in der Suchabfrage) enthält, zeigt, dass 1.000 Elemente gefunden wurden und 200 teilweise indizierte Elemente ebenfalls gefunden wurden. In diesem Fall enthalten die 1.000-Elemente die teilweise indizierten Elemente, da die Suche alle Elemente zurückgibt. Mit anderen Worten: Es gibt 1.000 Gesamtelemente, die von der Suche zurückgegeben werden, und nicht 1.200 Elemente (wie Sie möglicherweise erwarten). Wenn Sie die Ergebnisse dieser Suche exportieren und indizierte und teilweise indizierte Elemente exportieren (oder nur teilweise indizierte Elemente exportieren), werden 1.000-Elemente heruntergeladen. Das liegt daran, dass teilweise indizierte Elemente in den regulären (indizierten) Ergebnissen enthalten sind, wenn Sie eine leere Suchabfrage verwenden, um alle Elemente zurückzugeben. Wenn Sie in diesem Beispiel nur teilweise indizierte Elemente exportieren, werden nur die 200 nicht indizierten Elemente heruntergeladen.
     
     Beachten Sie auch, dass im vorherigen Beispiel (wenn Sie indizierte und teilweise indizierte Elemente exportieren oder nur indizierte Elemente exportieren) der in den exportierten Suchergebnissen enthaltene **Export Zusammenfassungs** Bericht 1.000 Elemente mit den geschätzten Elementen und 1.000 heruntergeladenen Elementen aus den zuvor beschriebenen Gründen auflisten würde. 
     
@@ -267,11 +267,11 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
     
     Wenn Sie teilweise indizierte Elemente aus allen Inhaltsspeicherorten für eine Suche exportieren möchten, konfigurieren Sie die Suche so, dass alle Elemente zurückgegeben werden (indem Sie Stichwörter aus der Suchabfrage entfernen), und exportieren Sie dann nur teilweise indizierte Elemente, wenn Sie die Suchergebnisse exportieren.
     
-    ![Verwenden der dritten Exportoption zum Exportieren von nur nicht indizierten Elementen](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Verwenden der dritten Exportoption zum Exportieren von nur nicht indizierten Elementen](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - Beim Exportieren von Suchergebnissen aus SharePoint-oder OneDrive für Unternehmen-Websites hängt die Möglichkeit zum Exportieren von nicht indizierten Elementen auch von der ausgewählten Exportoption ab und davon, ob eine gesuchte Website ein indiziertes Element enthält, das den Suchkriterien entspricht. Wenn Sie beispielsweise bestimmte SharePoint-oder OneDrive für Unternehmen-Websites durchsuchen und keine Suchergebnisse gefunden werden, werden keine nicht indizierten Elemente dieser Websites exportiert, wenn Sie die zweite Exportoption zum Exportieren von indizierten und nicht indizierten Elementen auswählen. Wenn ein indiziertes Element von einer Website mit den Suchkriterien übereinstimmt, werden alle nicht indizierten Elemente dieser Website beim Exportieren von indizierten und nicht indizierten Elementen exportiert. In der folgenden Abbildung werden die Exportoptionen beschrieben, basierend darauf, ob eine Website ein indiziertes Element enthält, das den Suchkriterien entspricht.
     
-    ![Wählen Sie die Option Export aus, je nachdem, ob eine Website ein indiziertes Element enthält, das den Suchkriterien entspricht.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Wählen Sie die Option Export aus, je nachdem, ob eine Website ein indiziertes Element enthält, das den Suchkriterien entspricht.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. Nur indizierte Elemente, die den Suchkriterien entsprechen, werden exportiert. Es werden keine teilweise indizierten Elemente exportiert.

@@ -33,7 +33,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
     
 - Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
     
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
     

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595622"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077552"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen eines rechtlichen Aufbewahrungs Vermerks
 
 Mithilfe der erweiterten eDiscovery-Depotbank-Kommunikation können Organisationen ihren Workflow bei der Kommunikation mit Verwaltern verwalten. Über das Kommunikationstool können Legal-Teams rechtliche Aufbewahrungs Benachrichtigungen systematisch senden, erfassen und nachverfolgen. Mit dem flexiblen Erstellungsprozess können Teams auch den Aufbewahrungs Benachrichtigungs Workflow und den Inhalt in den an Verwalter gesendeten Benachrichtigungen anpassen. 
 
-![Seite "Kommunikationen"](media/CommunicationPage.PNG)
+![Seite "Kommunikationen"](../media/CommunicationPage.PNG)
 
 Der Artikel beschreibt die Schritte im Aufbewahrungs Benachrichtigungs Workflow.
 
@@ -35,9 +35,9 @@ Der Artikel beschreibt die Schritte im Aufbewahrungs Benachrichtigungs Workflow.
 
 Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufbewahrungs Vermerke oder andere Verwalter Kommunikationen anzugeben. 
 
-![Seite "namens Kommunikation"](media/NameCommunication.PNG)
+![Seite "namens Kommunikation"](../media/NameCommunication.PNG)
 
-1. Wechseln Sie im Security #a0 Compliance Center zu **eDiscovery #a1 Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Wechseln Sie im Security & Compliance Center zu **eDiscovery > Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
    
 2. Klicken Sie auf die Registerkarte **Kommunikation** , und klicken Sie dann auf **neue Kommunikation**.
    
@@ -53,7 +53,7 @@ Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufb
 
 Als nächstes können Sie den Inhalt des halte Vermerks erstellen und hinzufügen. Geben Sie auf der Seite **Portalinhalt definieren** im Assistenten zum **Erstellen von Kommunikation** den Inhalt des halte Vermerks an. Dieser Inhalt wird automatisch an die Bekanntmachungen für Ausstellung, erneutes ausgeben, Erinnerung und Eskalation angehängt. Darüber hinaus wird dieser Inhalt im Compliance-Portal des Depotbank angezeigt. 
 
-![Portal Inhaltsseite](media/PortalContent.PNG)
+![Portal Inhaltsseite](../media/PortalContent.PNG)
 
 So erstellen Sie den Portalinhalt:
 
@@ -127,7 +127,7 @@ So erstellen Sie eine Release-Benachrichtigung:
 
 Optional können Sie den Workflow für das Nachverfolgen mit nicht reagierenden Depotbanken vereinfachen, indem Sie automatische Mahnungs-und Eskalations Benachrichtigungen erstellen und planen.
 
-![Seite "Erinnerung/Eskalation"](media/ReminderEscalations.PNG)
+![Seite "Erinnerung/Eskalation"](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Erinnerungen
 
@@ -173,7 +173,7 @@ So planen Sie Eskalationen:
 
 Nachdem Sie den Inhalt für Benachrichtigungen finalisiert haben, wählen Sie die Verwalter aus, die Sie für die Benachrichtigungen senden möchten. 
 
-![Seite "Verwalter auswählen"](media/SelectCustodians.PNG)
+![Seite "Verwalter auswählen"](../media/SelectCustodians.PNG)
 
 So fügen Sie Verwalter hinzu:
 
