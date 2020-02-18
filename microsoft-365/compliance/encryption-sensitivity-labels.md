@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074626"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101265"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -44,15 +44,15 @@ Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezei
 
 Die Verschlüsselungseinstellungen sind verfügbar, wenn Sie [eine Vertraulichkeitzbezeichnung](create-sensitivity-labels.md) im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security & Compliance Center erstellen.
 
-## <a name="how-encryption-works"></a>Funktionsweise der Verschlüsselung
+## <a name="understand-how-the-encryption-works"></a>Grundlegendes zur Funktionsweise der Verschlüsselung
 
 Die Verschlüsselung verwendet den Azure Rights Management-Dienst (Azure RMS) aus Azure Information Protection. Diese Schutzlösung verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) in der Dokumentation zum Azure Information Protection. 
 
 Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Administrator** sichergestellt, dass autorisierte Personen und Dienste die Daten, die für Ihre Organisation verschlüsselt wurden, immer lesen und überprüfen können. Bei Bedarf kann die Verschlüsselung darauf entfernt oder geändert werden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Administratoren für Azure Dienste zur Informationssicherung und -Recherche oder Datenwiederherstellung](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## <a name="configuring-a-label-for-encryption"></a>Konfigurieren einer Bezeichnung für die Verschlüsselung
+## <a name="how-to-configure-a-label-for-encryption"></a>Konfigurieren einer Bezeichnung für die Verschlüsselung
 
-Wenn Sie eine [Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) erstellen oder bearbeiten, können Sie auf der Seite **Verschlüsselung** des Assistenten eine der folgenden Optionen auswählen:
+[Erstellen oder bearbeiten Sie eine Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), und wählen Sie auf der Seite **Verschlüsselung** des Assistenten eine der folgenden Optionen aus:
 
 - **Keine**: Die Standardeinstellung für eine neue Bezeichnung. Es wird keine neue Verschlüsselung angewendet.
 - **Anwenden**: Aktiviert die Verschlüsselung und danach geben Sie die Verschlüsselungseinstellungen an.
@@ -98,7 +98,7 @@ Wenn eine E-Mail-Nachricht mit einer beliebigen Methode verschlüsselt wird, erb
 
 Dokumente, die bereits verschlüsselt und dann als Anlagen hinzugefügt wurden, erhalten immer die ursprüngliche Verschlüsselung. 
 
-## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>Verschlüsselungseinstellungen für Vertraulichkeitsbezeichnungen konfigurieren
+## <a name="configure-encryption-settings"></a>Konfigurieren von Verschlüsselungseinstellungen
 
 Wenn Sie auf der Seite **Verschlüsselung** des Assistenten die Option **Anwenden** verwenden, um eine Vertraulichkeitsbezeichnung zu erstellen oder zu bearbeiten, wählen Sie eine der folgenden Optionen aus:
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069932"
+ms.locfileid: "42091368"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -109,7 +109,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
 - Wenn Sie programmgesteuert Daten aus dem Office 365-Überwachungsprotokoll herunterladen möchten, empfehlen wir die Verwendung der Office 365-Verwaltungsaktivitäts-API anstelle eines PowerShell-Skripts. Die Office 365-Verwaltungsaktivitäts-API ist ein REST-Webdienst, den Sie beim Entwickeln von Lösungen zur Überwachung von Vorgängen, der Sicherheit und Compliance für Ihre Organisation verwenden können. Weitere Informationen finden Sie in der [Referenz der Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
+- Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Ergebnissen der Überwachungsprotokollsuche angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
 
   |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
   |:-----|:-----:|:-----:|
@@ -117,14 +117,14 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Azure Active Directory (Benutzeranmeldungen)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (Administratorereignisse)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Verhinderung von Datenverlust|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |eDiscovery|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Microsoft Project|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power-Apps|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power-Apps||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Security & Compliance Center|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online und OneDrive for Business|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
