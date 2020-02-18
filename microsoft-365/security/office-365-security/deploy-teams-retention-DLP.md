@@ -1,5 +1,7 @@
 ---
 title: Schützen von Dateien in Teams mit Aufbewahrungsbezeichnungen und Schutz vor Datenverlust (DLP)
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für Dateien in Teams mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: 89320a074d5d52062268a7585081849ac42d2025
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 94d8a02d0ea88fa8a05cd6a2c95a2db866d72fad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925797"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083399"
 ---
 # <a name="protect-files-in-teams-with-retention-labels-and-dlp"></a>Schützen von Dateien in Teams mit Aufbewahrungsbezeichnungen und Schutz vor Datenverlust (DLP)
 
@@ -114,7 +116,7 @@ Verwenden Sie die Schritte, um die Aufbewahrungsbezeichnungen auf die Dokumentor
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Aufbewahrungsbezeichnungen für die vier Arten von zugrunde liegenden SharePoint-Teamwebsites.](../media/retention-labels.png)
+![Aufbewahrungsbezeichnungen für die vier Arten von zugrunde liegenden SharePoint-Teamwebsites.](../../media/retention-labels.png)
   
 ## <a name="dlp-policies-for-your-underlying-sharepoint-sites"></a>DLP-Richtlinien für Ihre zugrunde liegenden SharePoint-Websites
 
@@ -165,7 +167,7 @@ Gehen Sie wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer b
     
 Hier sehen Sie die sich ergebende Konfiguration für vertrauliche Teams.
   
-![DLP-Richtlinie für vertrauliche Teams, die die Aufbewahrungsbezeichnung „Vertraulich“ verwenden](../media/retention-labels-sensitive-dlp.png)
+![DLP-Richtlinie für vertrauliche Teams, die die Aufbewahrungsbezeichnung „Vertraulich“ verwenden](../../media/retention-labels-sensitive-dlp.png)
   
 Gehen Sie wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer blockiert, wenn sie ein Dokument auf einer zugrunde liegenden SharePoint-Website mit Benutzern außerhalb der Organisation teilen.
   
@@ -211,7 +213,7 @@ Gehen Sie wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer b
     
 Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche Teams an.
   
-![DLP-Richtlinie für ein streng vertrauliches Team mit der Aufbewahrungsbezeichnung „Streng vertraulich“](../media/retention-labels-highly-confidential-dlp.png)
+![DLP-Richtlinie für ein streng vertrauliches Team mit der Aufbewahrungsbezeichnung „Streng vertraulich“](../../media/retention-labels-highly-confidential-dlp.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 

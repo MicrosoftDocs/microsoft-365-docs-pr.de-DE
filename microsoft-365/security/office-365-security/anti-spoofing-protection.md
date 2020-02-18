@@ -1,5 +1,7 @@
 ---
 title: Antispoofingschutz in Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233896"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087099"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -41,13 +43,13 @@ Spoofingnachrichten weisen in der Praxis zwei negative Auswirkungen für Benutze
 
 Erstens kann eine gefälschte Nachricht einen Benutzer dazu bringen, auf einen Link zu klicken und seine Anmeldeinformationen anzugeben, Malware herunterzuladen oder auf eine Nachricht mit vertraulichen Inhalten zu antworten (Letzteres wird als Business Email Compromise bezeichnet). Es folgt ein Beispiel für eine Phishingnachricht mit einem gefälschten Absender msoutlook94@service.outlook.com:
 
-![Phishingnachricht, die die Identität von service.outlook.com angenommen hat](../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![Phishingnachricht, die die Identität von service.outlook.com angenommen hat](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
 Die obige Nachricht stammt nicht von service.outlook.com, sondern wurde vom Phisher gefälscht, damit es so aussieht, als würde sie von dieser Domäne gesendet. Mit dieser Nachricht wird versucht, einen Benutzer dazu zu bringen, auf den Link in der Nachricht zu klicken.
 
 Im nächsten Beispiel wurde die Identität von contoso.com angenommen:
 
-![Phishingnachricht – Business Email Compromise](../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![Phishingnachricht – Business Email Compromise](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
 Die Nachricht sieht seriös aus, in Wirklichkeit handelt es sich um Spoof. Diese Phishingnachricht ist eine Art von BEC-Angriffen (Business Email Compromise), die eine Unterkategorie von Phishing ist.
 
@@ -55,7 +57,7 @@ Die Nachricht sieht seriös aus, in Wirklichkeit handelt es sich um Spoof. Diese
 
 Zweitens sorgen gefälschte Nachrichten für Unsicherheit bei Benutzern, die sich mit Phishingnachrichten auskennen, jedoch nicht den Unterschied zwischen einer echten Nachricht und einer gefälschten Nachricht benennen können. Es folgt ein Beispiel für eine echte Nachricht zur Kennwortzurücksetzung von der E-Mail-Adresse des Microsoft Security-Kontos:
 
-![Seriöse Nachricht zur Kennwortzurücksetzung von Microsoft](../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Seriöse Nachricht zur Kennwortzurücksetzung von Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
 Die obige Nachricht wurde von Microsoft gesendet. Gleichzeitig sind Benutzer es Benutzer jedoch gewohnt, Phishingnachrichten zu erhalten, die Sie dazu bringen sollen, auf einen Link zu klicken und ihre Anmeldeinformationen anzugeben, Malware herunterzuladen oder auf eine Nachricht mit vertraulichen Inhalten zu antworten. Da es schwierig ist, zwischen einer echten Kennwortzurücksetzung und einer gefälschten zu unterscheiden, ignorieren viele Benutzer diese Nachrichten, melden sie als Spam oder senden diese Nachrichten als nicht erkannte Phishing-Versuche an Microsoft zurück.
 
@@ -63,7 +65,7 @@ Um Spoofing zu stoppen, wurden von der E-Mail-Filterungsbranche E-Mail-Authentif
 
 Das Problem ist jedoch, dass die E-Mail-Authentifizierungsdatensätze optional sind, nicht erforderlich. Während Domänen mit Richtlinien für sichere Authentifizierung wie microsoft.com und skype.com vor Spoofing geschützt sind, werden Domänen mit schwächeren oder ohne Authentifizierungsrichtlinien zum Ziel für Spoofing. Im März 2018 verfügen nur 9 % der Domänen der Fortune 500-Unternehmen über Richtlinien für sichere E-Mail-Authentifizierung. Die verbleibenden 91 % können von einem Phisher gefälscht werden und werden, wenn sie nicht von einem E-Mail-Filter anhand einer anderen Richtlinie als solche erkannt werden, an den Endbenutzer übermittelt und können diesen täuschen:
 
-![DMARC-Richtlinien von Fortune 500-Unternehmen](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![DMARC-Richtlinien von Fortune 500-Unternehmen](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 Der Anteil kleiner und mittelständischer Unternehmen, die keine Fortune 500-Unternehmen sind und Richtlinien für sichere E-Mail-Authentifizierung veröffentlichen, ist kleiner und noch kleiner für Domänen außerhalb von Nordamerika und Westeuropa.
 
@@ -149,7 +151,7 @@ Dies tritt auf, wenn die sendende Domäne in der „Von“-Adresse eine externe 
 
 In beiden Fällen ist die Nachricht mit einem roten Sicherheitstipp oder einer Entsprechung gekennzeichnet, die an die Sprache des Empfängerpostfachs angepasst ist:
 
-![Roter Sicherheitstipp – Betrugserkennung](../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![Roter Sicherheitstipp – Betrugserkennung](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
 
 Sie können anhand der „Von“-Adresse und der Empfänger-E-Mail-Adresse oder anhand der E-Mail-Kopfzeilen zwischen organisationsinternem oder domänenübergreifendem Spoofing unterscheiden.
 
@@ -221,7 +223,7 @@ To: receiver @ contoso.com
 
 Im E-Mail-Client (Outlook, Outlook im Web oder einem anderen E-Mail-Client) wird nur die „Von“-Domäne angezeigt, nicht die Domäne in SPF oder DKIM. Dies kann dazu führen, dass der Benutzer in die Irre geführt wird und davon ausgeht, dass die Nachricht von fabrikam.com gesendet wurde, während sie jedoch tatsächlich von maliciousDomain.com stammt.
 
-![Authentifizierte Nachricht, „Von“-Domäne stimmt jedoch nicht mit der Domäne überein, die von SPF oder DKIM übergeben wurde](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![Authentifizierte Nachricht, „Von“-Domäne stimmt jedoch nicht mit der Domäne überein, die von SPF oder DKIM übergeben wurde](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 Aus diesem Grund erfordert Office 365, dass die Domäne in der „Von“-Adresse der Domäne in der SPF- oder DKIM-Signatur entspricht. Wenn dies nicht der Fall ist, muss sie andere interne Signale aufweisen, die darauf hindeuten, dass es sich dabei um eine seriöse Nachricht handelt. Andernfalls wäre die zusammengesetzte Authentifizierung für die Nachricht fehlgeschlagen.
 
@@ -259,17 +261,17 @@ Es gibt viele verschiedene Typen von Spoofing (siehe [Unterscheidung zwischen ve
 
 Um die Antispoofing-Einstellungen zu erstellen oder zu ändern, navigieren Sie im Security &amp; Compliance Center unter der Registerkarte „Bedrohungsmanagement“ \> „Richtlinie“ zu „Antiphishing“ \> „Antispoofing-Einstellungen“. Wenn Sie noch keine Antiphishing-Einstellungen erstellt haben, müssen Sie sie erstellen:
 
-![Antiphishing – Erstellen einer neuen Richtlinie](../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Antiphishing – Erstellen einer neuen Richtlinie](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
 Wenn Sie bereits Einstellungen erstellt haben, können Sie sie zum Ändern auswählen:
 
-![Antiphishing – Ändern eines vorhandenen Richtlinie](../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Antiphishing – Ändern eines vorhandenen Richtlinie](../../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
 
 Wählen Sie die Richtlinie aus, die Sie soeben erstellt haben, und fahren Sie mit den Schritten unter [Weitere Informationen zu Spoofintelligenz](learn-about-spoof-intelligence.md) fort.
 
-![Aktivieren oder Deaktivieren von Antispoofing](../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Aktivieren oder Deaktivieren von Antispoofing](../../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
 
-![Aktivieren oder Deaktivieren von Antispoofing-Sicherheitstipps](../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![Aktivieren oder Deaktivieren von Antispoofing-Sicherheitstipps](../../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
 
 So erstellen Sie eine neue Richtlinie mithilfe von PowerShell:
 
@@ -295,11 +297,11 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 
 Später in 2018 wird eine Richtlinie erstellt, die für alle Empfänger in der Organisation gilt, statt dass sie eine Standardrichtlinie erstellen und manuell angeben müssen (die nachstehenden Screenshots können vor der endgültigen Implementierung geändert werden).
 
-![Standardrichtlinie für Antiphising](../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Standardrichtlinie für Antiphising](../../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
 
 Im Gegensatz zu einer Richtlinie, die Sie erstellen, können Sie die Standardrichtlinie weder löschen, noch ihre Priorität ändern noch Benutzer, Domänen oder Gruppen auswählen, für die diese gelten soll.
 
-![Details zur Antiphishing-Standardrichtlinie](../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Details zur Antiphishing-Standardrichtlinie](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
 
 So richten Sie den Standardschutz mithilfe von PowerShell ein:
 
@@ -338,7 +340,7 @@ Für externe Domänen ist der gefälschte Benutzer die Domäne in der „Von“-
 
 Damit dieser Absender nicht authentifizierte E-Mails senden kann, ändern Sie die Einstellung von **No** zu **Yes**.
 
-![Einrichten von zulässigen Spoofingabsendern](../media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Einrichten von zulässigen Spoofingabsendern](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 Sie können auch PowerShell verwenden, um bestimmten Absendern das Spoofing Ihrer Domäne zu gestatten:
 
@@ -347,13 +349,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Abrufen von Spoofingabsendern aus Powershell](../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Abrufen von Spoofingabsendern aus Powershell](../../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
 
 In der vorherigen Abbildung wurden zusätzliche Zeilenumbrüche hinzugefügt, damit dieses Screenshot an die Seite angepasst ist. Normalerweise stehen alle Werte in einer einzelnen Zeile.
 
 Bearbeiten Sie die Datei, und suchen Sie nach der Zeile, die outlook.com und bing.com entspricht, und ändern Sie den „AllowedToSpoof“-Eintrag von „No“ zu „Yes“:
 
-![Festlegen der Einstellung für Zulassen von Spoofing auf „Yes“ in PowerShell](../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Festlegen der Einstellung für Zulassen von Spoofing auf „Yes“ in PowerShell](../../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
 
 Speichern Sie die Datei, und führen Sie anschließend Folgendes aus:
 
@@ -380,7 +382,7 @@ Obwohl es am Anfang möglicherweise schwierig wird, sendende Domänen zur Authen
 
 Sobald Ihre Antispoofingrichtlinie aktiviert ist, können Sie die Funktionen der Bedrohungsuntersuchung und der Reaktion verwenden, um die Anzahl der Nachrichten anzurufen, die als Phishing eingestuft wurden. Wechseln Sie zu diesem Zweck zum Security &amp; Compliance Center (SCC) unter „Bedrohungsmanagement“ \> „Explorer“, legen Sie für Ansicht „Phishing“ fest, und gruppieren Sie nach Absenderdomäne oder Schutzstatus:
 
-![Anzeigen der Anzahl von Nachrichten, die als Phishing eingestuft wurden](../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![Anzeigen der Anzahl von Nachrichten, die als Phishing eingestuft wurden](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 Sie können die verschiedenen Berichte verwenden, um zu sehen, wie viele Nachrichten als Phishing eingestuft wurden, einschließlich Nachrichten, die als „SPOOF“ gekennzeichnet wurden. Weitere Informationen finden Sie unter [Erste Schritte mit der Office 365-Bedrohungsuntersuchung und -reaktion](office-365-ti.md).
 
@@ -388,7 +390,7 @@ Sie können derzeit jedoch nicht anzeigen, welche Nachrichten aufgrund von Spoof
 
 Im folgenden Screenshot finden Sie ein Beispiel dafür, wie diese Daten aussehen können:
 
-![Anzeigen von Phishingberichten nach Erkennungstyp](../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![Anzeigen von Phishingberichten nach Erkennungstyp](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
 Für Nicht-ATP- und E5-Kunden sind diese Berichte später unter Threat Protection-Statusberichten (TPS) verfügbar, die jedoch mindestens um 24 Stunden verzögert sind. Diese Seite wird aktualisiert, da diese im Security &amp; Compliance Center integriert werden.
 
@@ -398,9 +400,9 @@ Sobald Office 365 entsprechend aktualisiert wurde, dass Sie die Erzwingung von A
 
 Dieses Feature befindet sich zurzeit noch in der Entwicklung. Sobald weitere Details definiert sind, werden sowohl die Screenshots vom Security & Compliance Center als auch die PowerShell-Beispiele auf dieser Seite aktualisiert.
 
-![Was-wäre-wenn-Bericht zum Aktivieren von Antispoofing](../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![Was-wäre-wenn-Bericht zum Aktivieren von Antispoofing](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
 
-![Mögliche UX für das Zulassen eines gefälschten Absenders](../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![Mögliche UX für das Zulassen eines gefälschten Absenders](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
 
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Legitime Szenarien zum Deaktivieren von Antispoofing
 
@@ -410,23 +412,23 @@ Aus diesem Grund ist es besser, sich durch falsch positive Antispoofingergebniss
 
 Es gibt jedoch ein legitimes Szenario, in dem Antispoofing deaktiviert werden sollte, und zwar, wenn es zusätzliche E-Mail-Filterungsprodukte im Nachrichtenrouting gibt und Office 365 nicht der erste Hop im E-Mail-Pfad ist:
 
-![Benutzerdefinierter MX-Eintrag verweist nicht auf Office 365](../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![Benutzerdefinierter MX-Eintrag verweist nicht auf Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
 
 Der andere Server ist möglicherweise ein lokaler Exchange-E-Mail-Server, ein E-Mail-Filterungsgerät wie Ironport oder ein anderer in der Cloud gehosteter Dienst.
 
 Wenn der MX-Eintrag der Empfängerdomäne nicht auf Office 365 verweist, ist es nicht erforderlich, den Antispoofingschutz zu deaktivieren, da Office 365 nach dem MX-Eintrag der empfangenden Domäne sucht und Antispoofing unterdrückt, wenn dieser auf einen anderen Dienst verweist. Wenn Sie nicht wissen, ob Ihre Domäne über einen anderen Server davor verfügt. können Sie vor einem anderen Server enthält, können Sie eine Website wie MX Toolbox verwenden, um nach dem MX-Eintrag zu suchen. Dieser kann in etwa wie folgt aussehen:
 
-![MX-Eintrag gibt eine Domäne an, die nicht auf Office 365 verweist](../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![MX-Eintrag gibt eine Domäne an, die nicht auf Office 365 verweist](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
 
 Diese Domäne verfügt über einen MX-Eintrag, der nicht auf Office 365 verweist. Office 365 würde daher die Erzwingung von Antispoofing nicht anwenden.
 
 Wenn der MX-Eintrag der empfangenden Domäne auf Office 365 *verweist*, sollten Sie Antispoofing auch dann deaktivieren, wenn es einen anderen Dienst vor Office 365 gibt. Das häufigste Beispiel ist die Verwendung einer Empfängerumschreibung:
 
-![Routingdiagramm für die Empfängerumschreibung](../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![Routingdiagramm für die Empfängerumschreibung](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
 
 Der MX-Eintrag der Domäne contoso.com verweist auf den lokalen Server, während der MX-Eintrag der Domäne @office365.contoso.net auf Office 365 verweist, da \*., protection.outlook.com oder \*.eo.outlook.com im MX-Eintrag enthalten ist:
 
-![MX-Eintrag verweist auf Office 365, daher wahrscheinlich Empfängerumschreibung](../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![MX-Eintrag verweist auf Office 365, daher wahrscheinlich Empfängerumschreibung](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
 
 Unterscheiden Sie unbedingt, wann der MX-Eintrag einer empfangenden Domäne nicht auf Office 365 verweist und wann dieser einer Empfängerumschreibung unterzogen wurde. Es ist wichtig, den Unterschied zwischen diesen zwei Fällen zu erkennen.
 
@@ -452,11 +454,11 @@ Wenn diese Werte nicht enthalten sind, verweist der MX-Eintrag nicht auf Office 
 
 Bei diesem Beispiel besagt Folgendes, dass contoso.com, die Domäne, die wie der Empfänger aussieht, da sie im „An“-Feld enthalten war, einen MX-Eintrag aufweist, der auf einen lokalen Server verweist:
 
-![MX-Eintrag verweist auf lokalen Server](../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![MX-Eintrag verweist auf lokalen Server](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
 
 Der aktuelle Empfänger ist office365.contoso.net, dessen MX-Eintrag auf Office 365 verweist:
 
-![MX verweist auf Office 365, muss eine Empfängerumschreibung sein](../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX verweist auf Office 365, muss eine Empfängerumschreibung sein](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
 
 Daher wurde diese Nachricht wahrscheinlich einer Empfängerumschreibung unterzogen.
 

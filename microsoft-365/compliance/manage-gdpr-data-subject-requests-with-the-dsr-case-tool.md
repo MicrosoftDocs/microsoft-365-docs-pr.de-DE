@@ -182,7 +182,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
   - Microsoft Edge
     
-    Oder
+    Oder:
     
   - Microsoft Internet Explorer 10 und höhere Versionen
     

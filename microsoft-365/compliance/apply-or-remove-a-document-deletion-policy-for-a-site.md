@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Unternehmen unterliegen häufig compliancebezogenen, rechtlichen oder anderen Vorschriften, nach denen sie Dokumente eine bestimmte Zeit lang aufbewahren müssen. Werden Dokumente jedoch länger als erforderlich aufbewahrt, kann dies für das Unternehmen ein rechtliches Risiko darstellen. Daher hat Ihr Unternehmen für Ihre Website möglicherweise eine Dokumentlöschrichtlinie erstellt, nach der z. B. allgemeine Geschäftsdokumente fünf Jahre nach Erstellung gelöscht werden müssen.
-ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596072"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079842"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Anwenden oder Entfernen einer Dokumentlöschrichtlinie für eine Website
 
@@ -64,7 +64,7 @@ Ihr Unternehmen kann unterschiedlichen Websitesammlungen unterschiedliche Richtl
     
 Diese Liste ist schreibgeschützt und dient dem Websitesiteeigentümer dazu, alle verfügbaren Richtlinien und Regeln anzuzeigen. Informationen zum Anwenden einer Richtlinie finden Sie im nächsten Abschnitt.
   
-![Ansicht der einer Websitesammlung zugewiesenen Dokument Löschungsrichtlinien](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![Ansicht der einer Websitesammlung zugewiesenen Dokument Löschungsrichtlinien](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Anwenden oder Entfernen einer Dokumentlöschrichtlinie für eine Website
 
@@ -83,13 +83,13 @@ Für Sie als Besitzer einer Website oder Websitesammlung gibt es in Ihrem Untern
     
     In einer Website kann jeweils immer nur eine Richtlinie und eine Regel aktiv sein. Ihr Unternehmen stellt möglicherweise mehrere Richtlinien und Regeln zur Auswahl oder nur eine Richtlinie oder Regel bereit.
     
-    ![Option "Richtlinie auswählen"](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![Option "Richtlinie auswählen"](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **So deaktivieren Sie eine Richtlinie** Wählen Sie **Opt-out: Do Note DELETE** \> **Save**.
     
     Als Websitebesitzer können Sie eine Richtlinie für das Löschen von Dokumenten deaktivieren, wenn Sie feststellen, dass die Richtlinie nicht für den Inhalt Ihrer Website gilt. Sie können jedoch keine Richtlinie deaktivieren, die als **obligatorisch**gekennzeichnet wurde.
     
-    ![Opt-out-Option](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![Opt-out-Option](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>Dokumentlöschrichtlinien haben Vorrang vor anderen Richtlinien
 
@@ -113,7 +113,7 @@ Wenn Ihre Website Inhaltstyprichtlinien verwendet hat und nun diese Meldung ange
     
 2. Unter **Inhaltstyp Richtlinienvorlagen**für **Websiteverwaltung** \> .
     
-    ![Warnung vor der Website, dass Dokument Löschungsrichtlinien verwendet werden](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![Warnung vor der Website, dass Dokument Löschungsrichtlinien verwendet werden](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Prüfen, ob Informationsverwaltungsrichtlinien ignoriert werden
 
@@ -121,7 +121,7 @@ Wenn Ihre Website Informationsverwaltungsrichtlinien verwendet hat und nun diese
   
 - Für eine Liste oder Bibliothek auf der Registerkarte \> **** \> **Bibliothekseinstellungen** \> der Menü Bandbibliothek unter **Berechtigungen und Verwaltungs** \> **Informationsverwaltungsrichtlinien Einstellungen**.
     
-    ![Warnung vor der Website, dass Dokument Löschungsrichtlinien verwendet werden](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![Warnung vor der Website, dass Dokument Löschungsrichtlinien verwendet werden](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>Siehe auch
 

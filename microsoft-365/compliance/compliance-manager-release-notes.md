@@ -78,7 +78,7 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 - Archivierte Vorlagen sind bearbeitbar und sollten nicht bearbeitbar sein.
 - Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 
-### <a name="export"></a>Export
+### <a name="export"></a>Exportieren
 
 - Der Vorlagenexport in JSON schlägt fehl, wenn der Vorlagenstatus auf " **importiert** " oder " **Ausstehende Genehmigung**" festgelegt ist.
 

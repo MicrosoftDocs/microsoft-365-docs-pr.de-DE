@@ -1,5 +1,7 @@
 ---
 title: Einfache Standardkonfiguration
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Verwenden Sie diese Tetstumgebungsanleitung zum Erstellen einer einfachen Testumgebung für das Testen von Microsoft 365 Enterprise.
-ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801650"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067086"
 ---
 # <a name="the-lightweight-base-configuration"></a>Die einfache Standardkonfiguration
 
@@ -28,14 +30,14 @@ ms.locfileid: "40801650"
 
 In diesem Artikel erhalten Sie Schritt-für-Schritt-Anweisungen zum Erstellen einer vereinfachten Umgebung die ein Microsoft 365 E5-Abonnement und einen Computer mit Windows 10 Enterprise umfasst. 
 
-![Einfache Microsoft 365 Enterprise-Testumgebung](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Einfache Microsoft 365 Enterprise-Testumgebung](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Verwenden die resultierende Umgebung zum Testen der Features und Funktionen von [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Testumgebungsanleitungen für die Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Testumgebungsanleitungen für die Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Klicken Sie [hier](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Phase 1: Erstellen des Office 365 E5-Abonnements
 
@@ -43,13 +45,13 @@ Wir beginnen mit einem Office 365 E5-Testabonnement und fügen dann das Microsof
 
 Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Unternehmensnamen und ein neues Microsoft-Konto.
   
-1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: . ![Zeile](./media/Common-Images/TableLine.png)
+1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: . ![Zeile](../media/Common-Images/TableLine.png)
     
 2. Wenn Sie sich für ein neues Microsoft-Konto registrieren möchten, wechseln Sie zu [https://outlook.com](https://outlook.com), und erstellen Sie ein Konto mit neuem E-Mail-Konto und neuer E-Mail-Adresse. Dieses Konto wird für die Registrierung für Office 365 verwendet.
     
-  - Notieren Sie hier den Vor- und Nachnamen des Kontos:  ![Zeile](./media/Common-Images/TableLine.png)
+  - Notieren Sie hier den Vor- und Nachnamen des Kontos:  ![Zeile](../media/Common-Images/TableLine.png)
     
-  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![Zeile](./media/Common-Images/TableLine.png)@outlook.com
+  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![Zeile](../media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrieren für ein Office 365 E5-Testabonnement
 
@@ -58,8 +60,8 @@ Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Un
 2. Geben Sie auf der Seite **Vielen Dank, dass Sie sich für Office 365 E5 entschieden haben** in Schritt 1 die Adresse Ihres neuen E-Mail-Kontos an.
 3. Geben Sie in Schritt 2 des Testabonnementprozesses die gewünschten Informationen ein, und führen Sie dann die Überprüfung durch.
 4. Geben Sie in Schritt 3 einen Organisationsnamen ein und dann einen Kontonamen, der als globaler Administrator für das Abonnement verwendet werden soll. 
-5. Notieren Sie hier für Schritt 4 die Anmeldeseite (auswählen und kopieren): ![Zeile](./media/Common-Images/TableLine.png) 
-6. Notieren Sie hier die Benutzer-ID: ![Line](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. Notieren Sie hier für Schritt 4 die Anmeldeseite (auswählen und kopieren): ![Zeile](../media/Common-Images/TableLine.png) 
+6. Notieren Sie hier die Benutzer-ID: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    Notieren Sie das verwendete Kennwort, und bewahren Sie es an einem sicheren Ort auf.
    Dieser Wert wird **Name des globalen Office 365-Administrators** genannt.
 8. Klicken Sie auf **Zu Setup wechseln**.
@@ -119,11 +121,11 @@ Sie können diesen Artikel auch ausdrucken, um die speziellen Informationen zu n
 
 Notieren Sie diese Werte:
   
-- Name des globalen Office 365-Administrators:  ![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 6 von Phase 1)
+- Name des globalen Office 365-Administrators:  ![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 6 von Phase 1)
     
     Notieren Sie auch das Kennwort für dieses Konto, und bewahren Sie es an einem sicheren Ort auf.
     
-- Organisationsname für das Testabonnement: ![Zeile](./media/Common-Images/TableLine.png) (aus Schritt 4 von Phase 1)
+- Organisationsname für das Testabonnement: ![Zeile](../media/Common-Images/TableLine.png) (aus Schritt 4 von Phase 1)
     
 - Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung den folgenden Befehl aus, um die Konten für Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5 anzuzeigen:
     
@@ -133,13 +135,13 @@ Notieren Sie diese Werte:
 
     Notieren Sie hier die Kontonamen:
     
-  - Benutzer 2 Kontoname: user2@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 2 Kontoname: user2@![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Benutzer 3 Kontoname: user3@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 3 Kontoname: user3@![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Benutzer 4 Kontoname: user4@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 4 Kontoname: user4@![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Benutzer 5 Kontoname: user5@![Zeile](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Benutzer 5 Kontoname: user5@![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     Notieren Sie auch das gemeinsame Kennwort für diese Konten, und bewahren Sie es an einem sicheren Ort auf.
    
@@ -190,7 +192,7 @@ Ihre Testumgebung verfügt nun über Folgendes:
     
 Hier sehen Sie die daraus resultierende Konfiguration, die Microsoft 365 E5 hinzugefügt, das Office 365 und Enterprise Security + Management (EMS) umfasst.
   
-![Phase 3 der Microsoft 365 Enterprise-Testumgebung](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Phase 3 der Microsoft 365 Enterprise-Testumgebung](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>Phase 4: Erstellen eines Computers mit Windows 10 Enterprise
 
@@ -301,7 +303,7 @@ Installieren Sie im nächsten Schritt Office 365 ProPlus auf dem WIN10-Computer.
     
 Nachfolgend sehen Sie die daraus resultierende Umgebung.
 
-![Phase 5 der Microsoft 365 Enterprise-Testumgebung](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 5 der Microsoft 365 Enterprise-Testumgebung](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Dies schließt den WIN10-Computer mit ein:
 

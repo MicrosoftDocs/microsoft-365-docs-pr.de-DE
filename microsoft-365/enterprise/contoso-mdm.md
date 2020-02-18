@@ -1,6 +1,8 @@
 ---
 title: Verwaltung mobiler Geräte bei Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie, wie Contoso Microsoft Intune in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die darauf ausgeführt werden.
-ms.openlocfilehash: c486c9ef338ab1bd8959266183da6b79d62b3311
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7232c89cc105525cc57facd5a1b9de06426adbca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673181"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068366"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Verwaltung mobiler Geräte bei Contoso
 
@@ -65,7 +67,7 @@ Nach der Bereitstellung hat Contoso PCs sowie Smartphones und Tablets im Besitz 
 
 Hier ist Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte.
 
-![Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte](./media/contoso-mdm/contoso-mdm-fig1.png)
+![Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

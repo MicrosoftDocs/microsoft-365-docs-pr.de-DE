@@ -56,7 +56,7 @@ Im folgenden finden Sie den Workflow für die Verwendung von Daten Untersuchunge
 5.  Schließen oder löschen Sie die Untersuchung.
 
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um eine Datenermittlung durchführen, nach Inhalten suchen und verschüttete Daten löschen zu können, müssen Sie Mitglied der Rollengruppe "Daten Ermittler" im Security & Compliance Center sein.
 

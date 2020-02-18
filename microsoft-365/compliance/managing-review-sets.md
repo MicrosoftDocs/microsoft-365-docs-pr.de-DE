@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95c45034204e04a0b7fe6e0be5a9b3315c821b6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582734"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081785"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Verwalten von Überprüfungs Sätzen in Advanced eDiscovery
 
@@ -41,15 +41,15 @@ ms.locfileid: "41582734"
 
 Überprüfungs Sätze können auf der Registerkarte **Überprüfungs Sätze** erstellt werden, indem **Sie auf + Überprüfungs Satz hinzufügen**klicken.
 
-![Hinzufügen eines Überprüfungs Satzes](media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![Hinzufügen eines Überprüfungs Satzes](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
 Geben Sie auf der Seite Flyout- **Überprüfungs Satz hinzufügen** einen Namen für den Überprüfungs Satz ein, und klicken Sie dann auf **Speichern**. Der neue Überprüfungs Satz wird in der Liste auf der Registerkarte **Überprüfungs Sätze** angezeigt.
 
-![Neuer Überprüfungs Sätze auf der Registerkarte "Überarbeitungs Gruppe" aufgeführt](media/AeDnewreviewset.png)
+![Neuer Überprüfungs Sätze auf der Registerkarte "Überarbeitungs Gruppe" aufgeführt](../media/AeDnewreviewset.png)
 
 Es gibt drei verschiedene Möglichkeiten zum Hinzufügen von Daten zu einer Überprüfungsgruppe in einem erweiterten eDiscovery-Fall.
 
-![Drei Methoden zum Hinzufügen zu einem Überprüfungs Satz](media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![Drei Methoden zum Hinzufügen zu einem Überprüfungs Satz](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md)
 

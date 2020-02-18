@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Vermeiden von Spitzkehren für Netzwerke'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,22 +15,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und entfernen Sie Spitzkehren für Netzwerke für eine bessere Leistung.
-ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370332"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066710"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Schritt 3: Vermeiden von Spitzkehren für Netzwerke
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 1: Vernetzung](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1: Vernetzung](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Eine [Netzwerkhaarnadel](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) liegt vor, wenn der an ein Ziel gerichtete Datenverkehr zuerst an einen weiteren Zwischenstandort umgeleitet wird, z. B. an einen lokalen Sicherheitsstapel, einen Cloudzugriffsbroker oder ein cloudbasiertes Webgateway. Hier ein Beispiel:
 
-![Beispiel für eine Netzwerkhaarnadel](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+![Beispiel für eine Netzwerkhaarnadel](../media/networking-avoid-network-hairpins/network-hairpin-example.png)
 
 Eine Netzwerkhaarnadel kann auch durch unzureichendes Routing im Internet durch Netzwerkdienstanbieter verursacht werden. 
 
@@ -44,7 +46,7 @@ Wenn Sie cloudbasierte Netzwerk- oder Sicherheitsdienste für Microsoft 365-Date
 
 Wann immer möglich, konfigurieren Sie Ihre Edge-Router, um vertrauenswürdigen Microsoft 365-Datenverkehr direkt zu senden, statt ihn über eine Drittanbietercloud oder einen cloudbasierten Netzwerksicherheitsanbieterweiterzuleiten oder zu tunneln, der Ihren Internetdatenverkehr verarbeitet. 
 
-![Beispiel für die Umgehung einer Netzwerkhaarnadel](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+![Beispiel für die Umgehung einer Netzwerkhaarnadel](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-criteria.md#crit-networking-step3) für diesen Schritt betrachten.
 
@@ -52,4 +54,4 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-crit
 
 |||
 |:-------|:-----|
-|![Schritt 4](./media/stepnumbers/Step4.png)|[Konfigurieren von Datenverkehrumgehungen](networking-configure-proxies-firewalls.md)|
+|![Schritt 4](../media/stepnumbers/Step4.png)|[Konfigurieren von Datenverkehrumgehungen](networking-configure-proxies-firewalls.md)|

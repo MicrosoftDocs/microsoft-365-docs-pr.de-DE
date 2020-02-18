@@ -1,6 +1,8 @@
 ---
 title: Bereitstellung von Windows 10 Enterprise für Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Contoso Microsoft Endpoint Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
-ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5dc58a9090dd6976d7c521f7552181a10f22f5b2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672701"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068006"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Bereitstellung von Windows 10 Enterprise für Contoso
 
@@ -77,7 +79,7 @@ Um die Bereitstellung des direkten Upgrades von Windows 10 Enterprise abzuschlie
 
 Hier ist Contosos Bereitstellungsarchitektur für das direkte Upgrade und fortlaufende Updates.
 
-![Contosos Bereitstellungsinfrastruktur für Windows 10 Enterprise](./media/contoso-win10/contoso-win10-fig1.png)
+![Contosos Bereitstellungsinfrastruktur für Windows 10 Enterprise](../media/contoso-win10/contoso-win10-fig1.png)
 
 Diese Infrastruktur besteht aus:
 

@@ -1,6 +1,8 @@
 ---
 title: 'Verantwortlichkeiten von Kunden und Cloud-Partnern im Rahmen der Sicherung der Geschäftskontinuität '
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, was Microsoft bei Auftreten eines Dienstvorfalls unternimmt, um Ihre Pläne zur Sicherung der Geschäftskontinuität besser gestalten zu können.
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067670"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Verantwortlichkeiten von Kunden und Cloud-Partnern im Rahmen der Steuerung der Geschäftskontinuität 
 
@@ -53,7 +55,7 @@ Microsoft unterhält mehrere Kanäle für Statusmitteilungen zu Diensten, die Ku
  
 Das Bereitstellen von Microsoft 365 Online-Diensten begründet eine Partnerschaft zwischen Ihrer Organisation und Microsoft. Im folgenden Diagramm wird die Verteilung der Verantwortlichkeiten auf Microsoft ebenso wie auf die Kunden während eines Dienstvorfalls und während des normalen Betriebs zusammengefasst.
 
-![Verteilung der Verantwortlichkeiten der Kunden und von Microsoft](media/ebcm/responsibilities.png)
+![Verteilung der Verantwortlichkeiten der Kunden und von Microsoft](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>Ihre Umgebung – Dienstverfügbarkeit
 Achten Sie bei der Planung Ihrer Geschäftskontinuität auf Ereignisse, die sich auf Ihr Unternehmen und dessen gesamte Kommunikationsfähigkeit auswirken können. Auf hoher Ebene gibt es drei Faktoren, die sich auf Ihr Unternehmen auswirken können.
@@ -69,6 +71,6 @@ Microsoft veröffentlicht [Grundsätze zur Netzwerkkonnektivität](https://docs.
 Zahlreiche Lösungen zur Zusammenarbeit sind systemabhängig, wie z. B.von einem unternehmensweiten Netzwerk (WAN). Wie würde Ihre Organisation reagieren, wenn diese Systeme nicht verfügbar sind?
 Diese Grafik bildet Probleme ab, die sich auf mehr als einen Bereich auswirken können. Die zugehörige Tabelle enthält zu berücksichtigende Beispiele
 
-![Mengendiagramm](media/ebcm/venn-diagram.png)
+![Mengendiagramm](../media/ebcm/venn-diagram.png)
 
 Ihre Pläne zur Unternehmenskontinuität sollten jeden dieser Bereiche berücksichtigen. Zum Beispiel: Wenn Sie fordern, dass sich Benutzer im Unternehmensnetzwerk befinden und es kommt zu einem Schneesturm, wie erhalten diese Benutzer Zugriff auf die wichtigsten Ressourcen? Wenn der Schnee die Anreise in das Büro verhindert und Servicetechniker die Verbindung zum Unternehmensnetzwerk herstellen müssen, gibt es dann eine Richtlinie, die vorschreibt, dass sie die unternehmenseigenen Laptops zu Hause in Ihrem Besitz haben müssen?

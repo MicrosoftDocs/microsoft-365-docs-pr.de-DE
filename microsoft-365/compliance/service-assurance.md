@@ -1,5 +1,5 @@
 ---
-title: 'Dienst Assurance im Security #a0 Compliance Center'
+title: Dienst Assurance im Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Laden Sie Drittanbieter Überwachungen herunter, erfahren Sie, wie Microsoft Kundendaten schützt und wie Sie ISO, HIPAA, FINRA und FedRAMP einhalten können, wenn Sie Office 365 verwenden.
-ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601522"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081310"
 ---
-# <a name="service-assurance-in-the-security--compliance-center"></a>Dienst Assurance im Security #a0 Compliance Center
+# <a name="service-assurance-in-the-security--compliance-center"></a>Dienst Assurance im Security & Compliance Center
 
-Verwenden Sie Service Assurance im Security #a0 Compliance Center, um auf Dokumente zuzugreifen, in denen eine Vielzahl von Themen beschrieben wird, einschließlich: 
+Verwenden Sie Service Assurance im Security & Compliance Center, um auf Dokumente zuzugreifen, in denen eine Vielzahl von Themen beschrieben wird, einschließlich: 
   
 - Microsoft-Sicherheitsmethoden für Kundendaten, die in Office 365 gespeichert sind. 
     
@@ -49,11 +49,11 @@ Sie können auch herausfinden, wie Office 365 Kunden bei der Einhaltung von Stan
  **O365-Abonnement Mitglieder** können standardmäßig auf den Abschnitt Service Assurance im Office365 Protection Center zugreifen, wenn der Dienst Assurance Roles-Based Access nicht in Ihrem Abonnement implementiert wurde. Service Assurance stellt Berichte und Dokumente bereit, in denen die Sicherheitspraktiken von Microsoft für Kundendaten beschrieben werden, die in Office 365 gespeichert sind. Darüber hinaus werden unabhängige Überwachungsberichte von Drittanbietern für Office 365 bereitgestellt. 
   
 > [!NOTE]
-> Hinweis: Wenn Ihr Unternehmen den Service Assurance Roles-Based Access in Ihrem Office 365-Abonnement implementiert hat (Dies könnte der Fall sein, wenn Ihr Unternehmen Zugriff auf benutzerdefinierte Berichte erhalten hat), und Sie Zugriff auf Service Assurance benötigen, aber nicht im linken Bereich des Security #a0 Compliance Center enthalten sind, bitten Sie Ihren Office 365 Administrator, Sie auf der Seite **Berechtigungen** zur Benutzerrollen Gruppe Service Assurance hinzu Weitere Informationen finden Sie unter Onboard other Service Assurance users or groups. 
+> Hinweis: Wenn Ihr Unternehmen den Service Assurance Roles-Based Access in Ihrem Office 365-Abonnement implementiert hat (Dies könnte der Fall sein, wenn Ihr Unternehmen Zugriff auf benutzerdefinierte Berichte erhalten hat), und Sie Zugriff auf Service Assurance benötigen, aber nicht im linken Bereich des Security & Compliance Center enthalten sind, bitten Sie Ihren Office 365 Administrator, Sie auf der Seite **Berechtigungen** zur Benutzerrollen Gruppe Service Assurance hinzu Weitere Informationen finden Sie unter Onboard other Service Assurance users or groups. 
   
  **Dienst Assurance Roles-Based Access-Benutzer** mit vorgegebenen Funktionen Wenn Ihr Unternehmen Service Assurance Roles-Based Access implementiert hat, können Sie Dienst Assurance-Zugriff auf alle Sicherheits-und Compliance-Mitarbeiter einschließlich Informationssicherheit, Risikomanagement, Compliance und Überwachungsteams und Mitarbeiter in Ihrer Organisation bereitstellen. Ausführliche Informationen finden Sie unter [Onboard other Service Assurance users or groups](service-assurance.md#addother).
   
-Der Zugriff auf die Dienst Assurance erfolgt über das Security #a0 Compliance Center. Hier erfahren Sie, wie Sie dorthin gelangen.
+Der Zugriff auf die Dienst Assurance erfolgt über das Security & Compliance Center. Hier erfahren Sie, wie Sie dorthin gelangen.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
@@ -62,7 +62,7 @@ Der Zugriff auf die Dienst Assurance erfolgt über das Security #a0 Compliance C
 3. Wählen Sie im linken Bereich **Dienst Assurance**aus. [Wählen Sie als nächstes Ihre Branchen-und Ländereinstellungen](service-assurance.md#Chooseyourindustryregional) und [andere Dienst Assurance-Benutzer oder-Gruppen an Bord](service-assurance.md#addother)aus.
     
     > [!NOTE]
-    > Wenn Sie Zugriff auf Service Assurance benötigen und diese nicht im linken Bereich des Security #a0 Compliance Centers enthalten ist, bitten Sie Ihren Office 365-Administrator, Sie auf der Seite **Berechtigungen** zur Gruppe Dienst Assurance-Benutzerrollen hinzuzufügen. 
+    > Wenn Sie Zugriff auf Service Assurance benötigen und diese nicht im linken Bereich des Security & Compliance Centers enthalten ist, bitten Sie Ihren Office 365-Administrator, Sie auf der Seite **Berechtigungen** zur Gruppe Dienst Assurance-Benutzerrollen hinzuzufügen. 
   
 ## <a name="choose-your-industry-and-regional-settings"></a>Auswählen Ihrer Branchen-und Regionseinstellungen
 <a name="Chooseyourindustryregional"> </a>
@@ -71,7 +71,7 @@ Wenn Sie zum ersten Mal auf die Service Assurance zugreifen, besteht der erste S
   
 1. Nachdem Sie auf Service Assurance zugegriffen haben, wählen Sie **Einstellungen** und die Seite Regions-und Branchen Einstellungen wird angezeigt, wie im folgenden Screenshot dargestellt. 
     
-    ![Zeigt die Seite Protection Center-Einstellungen an.](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![Zeigt die Seite Protection Center-Einstellungen an.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. Wählen Sie auf der Seite **Einstellungen** den Abwärtspfeil neben **Region** aus, und überprüfen Sie die entsprechenden Regionen für Ihre Organisation. 
     
@@ -86,15 +86,15 @@ Zum Überprüfen und Herunterladen von Inhalten wählen Sie eine Option aus dem 
   
 - **Kompatibilitätsberichte** zum Anzeigen unabhängiger Überprüfungen und Bewertungen von Office 365 und anderen Microsoft Cloud-Diensten, wie im folgenden Screenshot gezeigt. 
     
-    ![Zeigt die Seite Service Assurance an: Dienst Kompatibilitätsberichte.](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![Zeigt die Seite Service Assurance an: Dienst Kompatibilitätsberichte.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **Trust Documents** zum Anzeigen von Informationen zur Funktionsweise von Microsoft Office 365 wie im folgenden Screenshot gezeigt. 
     
-    ![Zeigt die Seite Service Assurance: von Microsoft bereitgestellte vertrauenswürdige Dokumente](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Zeigt die Seite Service Assurance: von Microsoft bereitgestellte vertrauenswürdige Dokumente](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - Über **wachte Steuerelemente** zum Anzeigen von Informationen zur Einhaltung von Sicherheits-, Compliance-und Datenschutzanforderungen durch Office 365-Steuerelemente, wie im folgenden Screenshot gezeigt. 
     
-    ![Zeigt den Bildschirm Dienst Assurance-Überwachungssteuerelemente an.](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![Zeigt den Bildschirm Dienst Assurance-Überwachungssteuerelemente an.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 Wählen Sie den Bericht aus, den Sie herunterladen möchten, und klicken Sie auf **Speichern** , um ihn auf Ihren Computer herunterzuladen. Wählen Sie für überwachte Steuerelemente den gewünschten Bericht aus, und klicken Sie dann auf **herunterladen**. In der folgenden Tabelle werden die Berichte beschrieben, die auf den einzelnen Dienst Assurance-Seiten zu finden sind. 
   
@@ -114,19 +114,19 @@ Je nach ihrer spezifischen Einstellung haben die in ihrer Ansicht enthaltenen Op
 
 Für den Zugriff auf Standardberichte, die in allen Microsoft-Cloud-Abonnements allgemein verfügbar sind, müssen Sie das rollenbasierte Service Assurance-Zugriffsmodell nicht implementieren, und Sie können diesen Schritt überspringen. Wenn Ihre Organisation jedoch Zugriff auf benutzerdefinierte Berichte bereitgestellt hat, fügen Sie bitte weitere Benutzer oder Gruppen zu den Dienst Sicherungs Rollen hinzu. So fügen Sie andere Benutzer oder Gruppen hinzu:
   
-1. Wählen Sie im Sicherheits #a0 Compliance Center im linken Bereich **Berechtigungen** aus, wie im folgenden Screenshot dargestellt. 
+1. Wählen Sie im Sicherheits & Compliance Center im linken Bereich **Berechtigungen** aus, wie im folgenden Screenshot dargestellt. 
     
-    ![Security &amp; Compliance-Berechtigungsmenü](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![Security &amp; Compliance-Berechtigungsmenü](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. Wählen Sie im rechten Bereich **Dienst Assurance-Benutzer**aus, und wählen Sie dann **Rollengruppe bearbeiten**aus, und wählen Sie im Abschnitt **Mitglieder** die Option **Bearbeiten** aus, um der Dienst Assurance-Benutzerrolle Mitglieder hinzuzufügen, wie im folgenden Screenshot dargestellt. 
     
-    ![Dienst Assurance-Benutzer hinzufügen](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![Dienst Assurance-Benutzer hinzufügen](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. Suchen Sie im nächsten Dialogfeld nach Personen oder Gruppen, die Service Assurance-Konformitätsberichte und vertrauenswürdige Ressourcen anzeigen müssen, und wählen Sie dann für jede Auswahl, die Sie vornehmen, die Option **Add** aus, und klicken Sie nach Abschluss des Vorgangs auf das **X** in der oberen rechten Ecke des Bereichs. 
     
-    ![Dienst Assurance-Benutzer – Benutzer auswählen](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![Dienst Assurance-Benutzer – Benutzer auswählen](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
-4. Jeder Benutzer oder jede Gruppe, die Sie der Dienst Assurance-Benutzerrolle hinzugefügt haben, kann nun Dienst Assurance-und Download Berichte und andere Dokumente im Security #a0 Compliance Center finden.
+4. Jeder Benutzer oder jede Gruppe, die Sie der Dienst Assurance-Benutzerrolle hinzugefügt haben, kann nun Dienst Assurance-und Download Berichte und andere Dokumente im Security & Compliance Center finden.
     
 Kehren Sie zu jeder Zeit zur Seite **Berechtigungen** zurück, um weitere Benutzer hinzuzufügen oder vorhandene zu entfernen. 
   

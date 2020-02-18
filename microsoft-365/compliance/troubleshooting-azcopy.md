@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a012ec742d99a5b2ba35800c90e8614b503b93c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3153fc92cfae6e2feba122cc895e787c9b573ef7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597322"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080897"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Problembehandlung bei AzCopy in Advanced eDiscovery
 
 Beim Laden von nicht Office 365 Daten oder Dokumenten zur Fehlerbehebung in Advanced eDiscovery stellt die Benutzeroberfläche einen Azure AzCopy-Befehl bereit, der Parameter mit dem Speicherort enthält, an dem die Dateien, die Sie hochladen möchten, gespeichert werden und der Azure-Speicher Speicherort, in den die Dateien hochgeladen werden. Zum Hochladen Ihrer Dokumente kopieren Sie diesen Befehl und führen ihn dann an einer Eingabeaufforderung auf dem lokalen Computer aus.  Das folgende Screenshot zeigt ein Beispiel für einen AzCopy-Befehl:
 
-![Hochladen nicht Office 365er Dateien](media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Hochladen nicht Office 365er Dateien](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 Normalerweise funktioniert der Befehl, der bereitgestellt wird, wenn Sie ihn ausführen. Es kann jedoch vorkommen, dass der angezeigte Befehl nicht erfolgreich ausgeführt wird. Es folgen einige mögliche Gründe.
 

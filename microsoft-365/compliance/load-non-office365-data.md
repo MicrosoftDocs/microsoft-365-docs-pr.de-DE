@@ -30,7 +30,7 @@ Nicht alle Dokumente, die Sie möglicherweise in einer Datenuntersuchung analysi
 >[!Note]
 >Für die Untersuchung von Daten ist ein Office 365 E3 mit dem Advanced Compliance-Add-on oder einem E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrieben verwenden, benötigen Sie Folgendes:
 

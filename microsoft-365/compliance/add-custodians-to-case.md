@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594058"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080226"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
@@ -29,9 +29,9 @@ Verwenden Sie das integrierte Depot Verwaltungstool in Advanced eDiscovery, um I
 
 Verwenden Sie den folgenden Workflow, um Verwalter in erweiterten eDiscovery-Fällen hinzuzufügen und zu verwalten. 
 
-![Registerkarte "Depotverwaltung"](media/CustodianMgtPage.png)
+![Registerkarte "Depotverwaltung"](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Um einem Fall Verwalter hinzuzufügen, müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein. Auf diese Weise erhalten Sie die erforderlichen Berechtigungen zum Hinzufügen von Bewahrern zu einem Fall und zum Aufbewahren der Datenquellen für den Freiheitsentzug.
 
@@ -46,7 +46,7 @@ Der erste Schritt besteht darin, die Verwalter für den Fall zu identifizieren u
 
 3. Hier finden Sie die Verwalter, die dem Fall hinzugefügt werden sollen. Geben Sie den ersten Teil des Namens einer Person ein, um Benutzer aus der Azure-Active Directory Ihrer Organisation anzuzeigen. Wenn Sie die richtige Person gefunden haben, klicken Sie auf Ihren Namen, um Sie der Liste hinzuzufügen.
 
-   ![Ermitteln potenzieller depotverwalter](media/AddCustodianStep1.png)
+   ![Ermitteln potenzieller depotverwalter](../media/AddCustodianStep1.png)
  
 4. Nachdem Sie alle relevanten Verwalter hinzugefügt haben, klicken Sie auf **weiter** , um die primären Datenquellen der Depotbank auszuwählen.
   
@@ -58,7 +58,7 @@ So identifizieren Sie Depotbank-Datenquellen:
 
 1. Wenn Sie das Exchange-Postfach für alle Verwalter auswählen möchten, aktivieren Sie das Kontrollkästchen **Exchange** oben in der Spalte. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, um ein Postfach als Speicherort für die Freiheitsentzug zu entfernen. Alternativ können Sie das Kontrollkästchen **Exchange** oben in der Spalte deaktivieren und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
  
-   ![Auswählen von Datenquellen für sorgeberechtigte](media/AddCustodianStep2.png)
+   ![Auswählen von Datenquellen für sorgeberechtigte](../media/AddCustodianStep2.png)
  
 2. Wiederholen Sie die gleiche Sache für die OneDrive-Konten der Verwalter. 
 
@@ -74,7 +74,7 @@ So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
 
 1. Klicken Sie auf der Seite **Weitere Datenquellen auswählen** in der Zeile für die jeweilige Depotbank auf **Hinzufügen** . 
   
-   ![Zuordnen zusätzlicher Datenquellen](media/AddCustodianStep3.PNG)
+   ![Zuordnen zusätzlicher Datenquellen](../media/AddCustodianStep3.PNG)
 
 2. Auf der Flyout-Seite können Sie eine Datenquelle aus einem der folgenden Office 365 Dienste angeben:
   
@@ -85,9 +85,9 @@ So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
      
      - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um eine Liste der SharePoint-Websites in Ihrer Organisation anzuzeigen. Zum Zuordnen einer Website zur Depotbank können Sie eine Website in der Liste auswählen oder die URL einer anderen Website oder Website eingeben, die einer Office 365 Gruppe, einem Microsoft Team oder einem OneDrive-Konto zugeordnet ist.
      
-     - **Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft Teams anzuzeigen, bei denen die Depotbank derzeit Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrer Depotbank hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch #a0 wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+     - **Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft Teams anzuzeigen, bei denen die Depotbank derzeit Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrer Depotbank hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
-       ![Zuordnen von Datenquellen](media/AddCustodianStep4.PNG)
+       ![Zuordnen von Datenquellen](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > Wenn Sie ein zusätzliches Team einer Depotbank zuordnen möchten, müssen Sie das Postfach und den Standort, der dem Team zugeordnet ist, separat mithilfe der Speicherorte von **Exchange-e-Mail** und **SharePoint-Websites** hinzufügen.
@@ -102,7 +102,7 @@ So platzieren Sie die Depotstellen und Datenquellen in der Warteschleife:
 
 1. Aktivieren Sie auf der Seite **Aufbewahrungsplatz auf der ausgewählten Depotstelle** das Kontrollkästchen **halten** am oberen Rand der Spalte, um alle depotverwalter in den Haltebereich zu versetzen. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, die aus dem Haltestatus entfernt werden soll. Alternativ können Sie das Kontrollkästchen **halten** am oberen Rand der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
  
-   ![Platz hält](media/AddCustodianStep5.PNG)
+   ![Platz hält](../media/AddCustodianStep5.PNG)
 
 2. Überprüfen Sie die Aufbewahrungsoptionen, und klicken Sie dann auf **Fertig**stellen.
 

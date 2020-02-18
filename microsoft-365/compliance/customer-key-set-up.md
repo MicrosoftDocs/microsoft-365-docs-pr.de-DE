@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie den Kundenschlüssel für Office 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: a57fb5ee7eea1746a50ec0fb1e2c3e84495b4f2c
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804801"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091288"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>Einrichten des Kunden Schlüssels für Office 365
 
@@ -124,7 +124,7 @@ Führen Sie zur Übermittlung eines Angebots zum Aktivieren von Customer Key die
 
 Der vorübergehende oder dauerhafte Verlust von kryptografischen Schlüsseln kann für den Betrieb eines Dienstes sehr störend oder sogar katastrophal sein und zu Datenverlust führen. Aus diesem Grund ist für die mit Customer Key verwendeten Ressourcen ein starker Schutz erforderlich. Alle Azure-Ressourcen, die mit Customer Key verwendet werden, bieten Schutzmechanismen, die weit über die Standardkonfiguration hinaus gehen. Azure-Abonnements können derart gekennzeichnet oder registriert werden, dass eine sofortige und unwiderrufliche Kündigung vermieden wird. Dies wird als Registrierung eines obligatorischen Aufbewahrungszeitraums bezeichnet. Die für das Registrieren von Azure-Abonnements für einen obligatorischen Aufbewahrungszeitraum notwendigen Schritte erfordern die Zusammenarbeit mit dem Office 365-Team. Die Registrierung kann ab einen bis fünf Arbeitstage dauern. Bisher wurde diese Funktion zeitweise als „Nicht kündigen" bezeichnet.
   
-Vor dem Kontaktieren des Office 365 Teams müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit dem Kundenschlüssel verwenden. Stellen Sie sicher, dass Sie das Azure PowerShell AZ-Modul installiert haben,https://docs.microsoft.com/powershell/azure/new-azureps-module-azbevor Sie fortfahren (.
+Vor dem Kontaktieren des Office 365 Teams müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit dem Kundenschlüssel verwenden. Stellen Sie sicher, dass das [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) -Modul installiert ist, bevor Sie beginnen.
   
 1. Melden Sie sich mit Azure PowerShell an. Anweisungen finden Sie unter [Anmelden mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
@@ -132,7 +132,7 @@ Vor dem Kontaktieren des Office 365 Teams müssen Sie die folgenden Schritte fü
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
    ```
 
 3. Wenden Sie sich an Microsoft, damit der Prozess abgeschlossen wird. Um mit dem SharePoint- und OneDrive for Business-Team in Verbindung zu treten, wenden Sie sich bitte an [spock@microsoft.com](mailto:spock@microsoft.com). Für Exchange Online und Skype for Business wenden Sie sich bitte an [exock@microsoft.com](mailto:exock@microsoft.com). Teilen Sie uns in Ihrem E-Mail bitte Folgendes mit:
@@ -144,18 +144,18 @@ Vor dem Kontaktieren des Office 365 Teams müssen Sie die folgenden Schritte fü
 
    Die Service-Level-Vereinbarung (Service Level Agreement, SLA) für den Abschluss dieses Vorgangs beläuft sich auf fünf Werktage, nachdem Microsoft benachrichtigt wurde (und überprüft hat, dass Sie Ihre Abonnements für die Nutzung eines obligatorischen Aufbewahrungszeitraums registriert haben).
 
-4. Nachdem Sie eine Benachrichtigung von Microsoft erhalten haben, dass die Registrierung abgeschlossen ist, überprüfen Sie den Status Ihrer Registrierung, indem Sie das Cmdlet Get-AzProviderFeature wie folgt ausführen. Führen Sie diese Aktion für jedes Abonnement aus.
+4. Nachdem Sie eine Benachrichtigung von Microsoft erhalten haben, dass die Registrierung abgeschlossen ist, überprüfen Sie den Status Ihrer Registrierung, indem Sie den Befehl Get-AzProviderFeature wie folgt ausführen. Wenn überprüft, gibt der Befehl Get-AzProviderFeature den Wert **registered** für die **Registrierungsstatus** Eigenschaft zurück. Führen Sie diese Aktion für jedes Abonnement aus.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. Nachdem Sie überprüft haben, dass die **Registrierungsstatus** Eigenschaft aus dem Cmdlet Get-AzProviderFeature den Wert **registriert**zurückgibt, führen Sie den folgenden Befehl aus, um den Vorgang abzuschließen. Führen Sie diese Aktion für jedes Abonnement aus.
+5. Führen Sie den Befehl Register-AzResourceProvider aus, um den Vorgang abzuschließen. Führen Sie diese Aktion für jedes Abonnement aus.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"
+   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Erstellen eines Premium Azure Key Vault für jedes Abonnement

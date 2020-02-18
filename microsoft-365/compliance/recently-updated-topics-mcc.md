@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Genau wie Funktionen im Microsoft 365 Compliance Center entwickeln sich unsere Hilfeinhalte ständig weiter. Wir erstellen ständig neue Artikel, aktualisieren vorhandene und nehmen Änderungen basierend auf Ihrem Feedback vor. Finden Sie heraus, was in diesem Monat neu und aktualisiert wurde.
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601652"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081623"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aktuelle Updates für den Microsoft 365-Kompatibilitäts Inhalt
 
@@ -36,7 +36,7 @@ Genau wie Funktionen im Microsoft 365 Compliance Center entwickeln sich unsere H
 
 ### <a name="auditing"></a>Überwachung
 
-[Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md#microsoft-teams-healthcare-activities) (aktualisiert)<br>Abschnitt zu Microsoft Teams Healthcare Activities, die sich auf die Verwendung der Patienten-App beziehen, hinzugefügt.
+[Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#microsoft-teams-healthcare-activities) (aktualisiert)<br>Abschnitt zu Microsoft Teams Healthcare Activities, die sich auf die Verwendung der Patienten-App beziehen, hinzugefügt.
 
 ### <a name="communication-compliance-formerly-supervision"></a>Kommunikation Compliance (zuvor Überwachung)
 
@@ -117,13 +117,13 @@ Neue Anleitungen zu den folgenden Artikeln zum California Consumer Privacy Act (
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-[Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md) (aktualisiert)<br>Informationen zu anstehenden Unterstützung für empfohlene Bezeichnungen in Outlook entfernt. Doppelte Lizenzierungsinformationen wurden entfernt. Verweist nun auf autorisierende Informationen in [Vertraulichkeits Bezeichnungen in Office-Apps](sensitivity-labels-office-apps.md).
+[Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md) (aktualisiert)<br>Informationen zu anstehenden Unterstützung für empfohlene Bezeichnungen in Outlook entfernt. Doppelte Lizenzierungsinformationen wurden entfernt. Verweist nun auf autorisierende Informationen unter [use Sensitivity Labels in Office Apps](sensitivity-labels-office-apps.md).
 
 [Aktivieren von Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive (Public Preview)](sensitivity-labels-sharepoint-onedrive-files.md) (neu)<br>Anleitung zum Vorbereiten von SharePoint und OneDrive für die Anwendung von Sensitivitäts Bezeichnungen auf an diesen Speicherorten gespeicherte Inhalte.
 
 [Übersicht über Sensitivitäts Bezeichnungen](sensitivity-labels.md) (aktualisiert)<br>Weitere Details zur Unterstützung von Office-Apps im Internet, Microsoft Teams, Office 365 Gruppen, SharePoint-Websites und Office-Dateien in SharePoint und OneDrive hinzugefügt.
 
-[Vertraulichkeits Bezeichnungen in Office-Apps](sensitivity-labels-office-apps.md) (aktualisiert)<br>Mehrere Updates, einschließlich Details zu neu unterstützten apps, Abonnement-und Lizenzierungsanforderungen und Interaktion zwischen Administrator definierten Vorlagen (wie in Office 365 Nachrichtenverschlüsselung und Sensitivitäts Bezeichnungen).
+[Verwenden von Sensitivitäts Bezeichnungen in Office-Apps](sensitivity-labels-office-apps.md) (aktualisiert)<br>Mehrere Updates, einschließlich Details zu neu unterstützten apps, Abonnement-und Lizenzierungsanforderungen und Interaktion zwischen Administrator definierten Vorlagen (wie in Office 365 Nachrichtenverschlüsselung und Sensitivitäts Bezeichnungen).
 
 [Verwenden von Sensitivitäts Bezeichnungen mit Microsoft Teams, Office 365 Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md) (neu)<br>Details zum Einrichten und Anwenden von Sensitivitäts Bezeichnungen in Microsoft Teams, Office 365 Gruppen und SharePoint-Websites.
 
@@ -141,7 +141,7 @@ Neue Anleitungen zu den folgenden Artikeln zum California Consumer Privacy Act (
 
 [Durchsuchen des Office 365 Überwachungsprotokolls zur Problembehandlung bei allgemeinen Szenarien](auditing-troubleshooting-scenarios.md#investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization) (aktualisiert)<br>Neuer Abschnitt zur Verwendung der Pass-Through-Authentifizierung zur Untersuchung erfolgreicher Anmeldungen durch externe Benutzer.
 
-### <a name="content-search--ediscovery"></a>Inhaltssuche #a0 eDiscovery
+### <a name="content-search--ediscovery"></a>Inhaltssuche & eDiscovery
 
 [Konfigurieren der Berechtigungs Filterung für die Inhaltssuche](permissions-filtering-for-content-search.md#using-a-filters-list-to-combine-filter-types) (aktualisiert)<br>Details zur Verwendung einer Filterliste hinzugefügt, mit der Sie einem einzelnen Such Berechtigungsfilter ein Postfach und Website Filter hinzufügen können.
 

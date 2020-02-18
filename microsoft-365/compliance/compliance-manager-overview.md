@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595792"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078667"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -45,7 +45,7 @@ Compliance-Manager verwendet mehrere Komponenten, die Sie bei ihren Compliance-V
 
 Das Diagramm zeigt die Beziehungen zwischen den primären Komponenten von Compliance-Manager:
 
-![Beziehungen in Compliance-Manager, Version 3](media/compliance-manager-relationships.png)
+![Beziehungen in Compliance-Manager, Version 3](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>Gruppen
 
@@ -77,7 +77,7 @@ Die Bewertungen umfassen mehrere Komponenten:
 - **Artikel-ID**: Dieses Feld ist nur für dsgvo-Bewertungen und gibt die entsprechende dsgvo-Artikelnummer an.
 - **Description**: Text of Control aus der entsprechenden Zertifizierung oder Verordnung. Aufgrund von Copyright-Einschränkungen wird ein Link zu relevanten Informationen für ISO-Standards aufgeführt.
 
-![Steuerelemente in Compliance-Manager Version 3](media/compliance-manager-controls.png)
+![Steuerelemente in Compliance-Manager Version 3](../media/compliance-manager-controls.png)
 
 Es gibt drei Arten von Steuerelementen im Compliance-Manager, von **Microsoft verwaltete Steuer**Elemente, von **Kunden verwalteten**Steuerelementen und von Steuerelementen für **gemeinsame Verwaltung** .
 
@@ -149,7 +149,7 @@ Die im Compliance-Manager enthaltenen vorkonfigurierten Vorlagen lauten wie folg
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Vorschau)
 14. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
-## <a name="compliance-score"></a>Compliancebewertung
+## <a name="compliance-score"></a>Compliance-Score
 
 [Microsoft Compliance Score (Preview)](compliance-score.md) ist ein Feature im Microsoft 365 Compliance Center, das Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern. Die Kenntnis ihrer allgemeinen Konformitätsbewertung hilft Ihrer Organisation, die Compliance zu verstehen und zu verwalten. Grundlegendes [zur Berechnung der Konformitätsbewertung](compliance-score-methodology.md)
   

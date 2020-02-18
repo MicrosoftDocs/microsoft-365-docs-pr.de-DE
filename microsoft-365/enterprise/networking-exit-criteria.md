@@ -1,5 +1,7 @@
 ---
 title: 'Phase 1: Beendigungskriterien für die Netzwerkinfrastruktur'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für die Netzwerkinfrastruktur erfüllt.
-ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066622"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1: Beendigungskriterien für die Netzwerkinfrastruktur
 
-![Phase 1: Vernetzung](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1: Vernetzung](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Stellen Sie sicher, dass Ihre Netzwerkinfrastruktur die folgenden erforderlichen Kriterien erfüllt, und dass Sie die optionalen Kriterien berücksichtigt haben.
 
@@ -83,4 +85,4 @@ Ihre Intranetbenutzer sind nun bereit, Microsoft 365-Clouddienste über einen ef
 
 |||
 |:-------|:-----|
-|![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, folgt als nächstes die Phase [Identität](identity-infrastructure.md). |
+|![Phase 2: Identität](../media/deploy-foundation-infrastructure/identity_icon-small.png)| Wenn Sie den Phasen für die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise folgen, folgt als nächstes die Phase [Identität](identity-infrastructure.md). |

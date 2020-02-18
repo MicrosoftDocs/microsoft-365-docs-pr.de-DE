@@ -1,6 +1,8 @@
 ---
 title: SharePoint-Websites für streng regulierte Daten
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -11,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint-Teamwebsite zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699745"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085059"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>SharePoint-Websites für streng regulierte Daten
 
@@ -59,7 +62,7 @@ In der folgenden Tabelle sind die Anforderungen dieses Szenarios einem Feature v
 
 Hier sehen Sie eine Beispielkonfiguration für eine sichere SharePoint-Website.
 
-![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 Dieses Szenario erfordert, dass Sie Folgendes bereits bereitgestellt haben:
 
@@ -68,9 +71,9 @@ Dieses Szenario erfordert, dass Sie Folgendes bereits bereitgestellt haben:
 
 Die folgenden Phasen führen Sie schrittweise durch den Entwurf, die Konfiguration und das Fördern der Einführung für SharePoint-Websites für streng regulierte Daten.
 
-<a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios finden Sie auf dem [Poster für SharePoint-Websites für streng regulierte Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
+<a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios finden Sie auf dem [Poster für SharePoint-Websites für streng regulierte Daten](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
 
-[![SharePoint-Websites für streng regulierte Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+[![SharePoint-Websites für streng regulierte Daten](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
 Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
@@ -170,11 +173,11 @@ Sie haben Folgendes konfiguriert:
 
 Hier ist die resultierende Konfiguration, die eine Unterbezeichnung der Vertraulichkeitsbezeichnung verwendet.
 
-![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 In diesem Beispiel hat ein Benutzer die Unterbezeichnung auf eine auf der Website gespeicherte Datei angewendet.
 
-![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+![Die SharePoint-Websites für ein Szenario mit stark regulierten Daten](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
 
 ## <a name="phase-3-drive-user-adoption"></a>Phase 3: Fördern der Benutzerakzeptanz

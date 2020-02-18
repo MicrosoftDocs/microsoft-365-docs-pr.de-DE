@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können.
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597862"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071166"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Übersicht über Office 365 Information Protection für die DSGVO
 
@@ -47,7 +47,7 @@ Der erste Schritt in Richtung DSGVO-Compliance ist, zu beurteilen, ob die DSGVO 
 
 Die Compliancebewertung bietet Tools zum Nachverfolgen, Implementieren und Verwalten der Überwachungssteuerelemente, mit denen Ihre Organisation die Einhaltung verschiedener Standards, auch der DSGVO, leichter erreichen kann.
 
-![Verwenden von Compliancebewertung und Compliance-Manager zum Anzeigen von Anforderungen und zum Nachverfolgen des Fortschritts](Media/Overview-image1.png)
+![Verwenden von Compliancebewertung und Compliance-Manager zum Anzeigen von Anforderungen und zum Nachverfolgen des Fortschritts](../media/Overview-image1.png)
 
 Weitere Informationen finden Sie unter [Compliancebewertung](compliance-score.md).
 
@@ -59,7 +59,7 @@ Entdecken Sie personenbezogene Daten in Ihrer Umgebung, die der DSGVO unterliege
 
 - Optimieren vertraulicher Datentypen und anderer Abfragen, um alle personenbezogenen Daten in Ihrer Umgebung zu finden.
 
-![Verwenden der Inhaltssuche und vertraulicher Informationstypen zum Suchen nach personenbezogenen Daten](Media/Overview-image2.png)
+![Verwenden der Inhaltssuche und vertraulicher Informationstypen zum Suchen nach personenbezogenen Daten](../media/Overview-image2.png)
 
 Vertrauliche Informationstypen definieren, wie bestimmte Informationstypen, z. B. Kreditkartennummern, vom automatisierten Prozess erkannt werden. Dieser Artikel enthält einen Basissatz, den Sie als Ausgangspunkt verwenden können. Weitere vertrauliche Informationstypen werden in Kürze für personenbezogene Daten in EU-Ländern verfügbar sein.
 
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie unter [Suchen und Finden personenbezogener Date
 
 Einige der Funktionen zum Schutz von Informationen in Office 365 können auch zum Schutz vertraulicher Daten in anderen SaaS-Anwendungen verwendet werden.
 
-![Klassifizieren, Schützen und Überwachen von personenbezogenen Daten](Media/Overview-image3.png)
+![Klassifizieren, Schützen und Überwachen von personenbezogenen Daten](../media/Overview-image3.png)
 
 Diese Abbildung wird im restlichen Abschnitt beschrieben (Schritte 3 bis 5).
 

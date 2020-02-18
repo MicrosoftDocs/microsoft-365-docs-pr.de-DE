@@ -1,5 +1,7 @@
 ---
 title: Sichere Teams für Dateien in einer Entwicklungs-/Testumgebung
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Zusammenfassung: Erstellen von vertraulichen und streng vertraulichen Teams in Microsoft Teams für Dateien in einer Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202296"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082259"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Sichere Teams für Dateien in einer Entwicklungs-/Testumgebung
 
 In diesem Artikel finden Sie schrittweise Anleitungen zum Erstellen einer Entwicklungs-/Testumgebung, die die vertraulichen und streng vertraulichen Teams für die Lösung [Sichern von Dateien in Microsoft Teams](secure-files-in-teams.md) umfasst.
   
-![Vertrauliche und streng vertrauliche Teams in Microsoft Teams für Dateien.](../media/sensitive-highly-confidential-teams-dev-test.png)
+![Vertrauliche und streng vertrauliche Teams in Microsoft Teams für Dateien.](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 Verwenden Sie diese Entwicklungs-/Testumgebung, um Einstellungen für Ihre spezifischen Anforderungen auszuprobieren und zu optimieren, bevor Sie diese Arten von Teams in der Produktion bereitstellen.
   
@@ -86,7 +88,7 @@ Danach müssen Sie [eine Verbindung mit dem Azure Active Directory PowerShell f�
   
 Geben Sie den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle über die PowerShell-Eingabeaufforderung oder in der ISE-Umgebung (Integrated Script Environment) aus, um Benutzerkonten zu erstellen und sie zu den Gruppen hinzuzufügen:
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -167,7 +169,7 @@ In dieser Phase erstellen und konfigurieren Sie vertrauliche und streng vertraul
 
 Gehen Sie folgendermaßen vor, um ein Team auf der Ebene „Vertraulich“ für Mitglieder der Marketinggruppe zu erstellen, damit Sie an laufenden Marketingkampagnen zusammenarbeiten können:
 
-1. [Erstellen Sie ein neues privates Team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) mit dem Namen **Marketingkampagnen**.
+1. [Erstellen Sie ein neues privates Team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) mit dem Namen **Marketingkampagnen**.
 2. Öffnen Sie das Team **Marketingkampagnen**.
 3.  Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
 4.  Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
@@ -226,13 +228,13 @@ Konfigurieren Sie als Nächstes eine Richtlinie zur Verhinderung von Datenverlus
 
 Hier ist die resultierende Konfiguration für das Marketingkampagnenteam.
 
-![Konfiguration für das Marketingkampagnenteam.](../media/sensitive-team-config-dev-test.png)
+![Konfiguration für das Marketingkampagnenteam.](../../media/sensitive-team-config-dev-test.png)
   
 ### <a name="company-strategy-team-site"></a>Teamwebsite für Unternehmensstrategie
 
 Gehen Sie folgendermaßen vor, um ein Team auf der Ebene „Streng vertraulich“ für Mitglieder des Geschäftsleitungsteams zu erstellen, damit Sie an der Unternehmensstrategie zusammenarbeiten können:
 
-1. [Erstellen Sie ein neues privates Team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) mit dem Namen **Unternehmensstrategie**.
+1. [Erstellen Sie ein neues privates Team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) mit dem Namen **Unternehmensstrategie**.
 2. Öffnen Sie das Team **Unternehmensstrategie**.
 3.  Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
 4.  Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
@@ -300,7 +302,7 @@ Veröffentlichen Sie nach dem Erstellen die neue Bezeichnung. Wenn Sie sich als 
 
 Hier ist die resultierende Konfiguration für das Unternehmensstrategieteam.
 
-![Konfiguration für das Team „Unternehmensstrategie“.](../media/highlyconfidential-team-config-dev-test.png) 
+![Konfiguration für das Team „Unternehmensstrategie“.](../../media/highlyconfidential-team-config-dev-test.png) 
 
 Dateien im Abschnitt „Dokumente“ der zugrunde liegenden SharePoint-Website „Unternehmensstrategie“ wird die Aufbewahrungsbezeichnung „Streng vertraulich“ zugewiesen, und sie unterliegen der konfigurierten DLP-Richtlinie. Für Dateien kann auch die Vertraulichkeitsbezeichnung „Unternehmensstrategie“ zugewiesen werden.    
   

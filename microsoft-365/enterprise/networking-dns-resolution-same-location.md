@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 2: Konfigurieren von lokalen Internetverbindungen für jedes Büro'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Für eine bessere Leistung müssen Sie Ihre DNS-Auflösung nachvollziehen und konfigurieren können.
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370302"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066660"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Schritt 2: Konfigurieren von lokalen Internetverbindungen für jedes Büro
 
 *Dieser Schritt ist erforderlich und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
-![Phase 1 – Netzwerken](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 – Netzwerken](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Stellen Sie in Schritt 2 sicher, dass jedes Ihrer Büros über eine lokale Internetverbindung verfügt und lokale DNS-Server verwendet. Beides ist erforderlich, um Verbindungslatenz zu reduzieren und sicherzustellen, dass lokale Clientcomputer Verbindungen zum nächsten Einstiegspunkt für cloudbasierte Microsoft 365-Dienste herstellen.
 
@@ -32,13 +34,13 @@ In herkömmlichen Netzwerken für große Organisationen wird der Internetdatenve
 
 Das globale Microsoft-Netzwerk umfasst eine *Distributed Service Frontdoor-Infrastruktur*, ein hochgradig verfügbares und skalierbares Netzwerk-Edge mit geografisch verteilten Standorten. Es beendet die Endbenutzerverbindungen auf einem Frontdoor-Server und leitet den Endbenutzerdatenverkehr innerhalb des globalen Microsoft-Netzwerks effizient weiter.
 
-![Das Globale Microsoft-Netzwerk](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![Das Globale Microsoft-Netzwerk](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 Die beste Leistung wird erzielt, wenn lokale Clients auf einen Frontdoor-Standort zugreifen, der ihnen geografisch am nächsten ist, statt Datenverkehr über ein Netzwerk-Backbone und zum Frontdoor-Server zu senden, der der zentralen Internetverbindung der Organisation am nächsten ist.
 
 Hier ein Beispiel:
 
-![Beispiel für das Globale Microsoft-Netzwerk](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![Beispiel für das Globale Microsoft-Netzwerk](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 Ein Benutzer in der Pariser Zweigniederlassung möchte auf eine SharePoint Online-Website zugreifen:
 
@@ -61,4 +63,4 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-crit
 
 |||
 |:-------|:-----|
-|![Schritt 3](./media/stepnumbers/Step3.png)|[Vermeiden von Spitzkehren für Netzwerke](networking-avoid-network-hairpins.md)|
+|![Schritt 3](../media/stepnumbers/Step3.png)|[Vermeiden von Spitzkehren für Netzwerke](networking-avoid-network-hairpins.md)|

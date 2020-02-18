@@ -1,6 +1,8 @@
 ---
 title: Bereitstellen von Microsoft 365 Enterprise
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801920"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067957"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -65,7 +67,7 @@ Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
 Die Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien ist wie folgt.
 
-![Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Arbeitslasten und Szenarios agieren auf Grundlage der Foundation-Infrastruktur. Sie müssen jedoch nicht alle Phasen der Foundation-Infrastruktur vollständig durchlaufen haben, um Arbeitslasten für Produktivität und Zusammenarbeit verwenden zu können.
 
@@ -83,13 +85,13 @@ Mit Testumgebungsanleitungen können Sie eine Machbarkeitsstudie einer komplexen
 
 Weitere Informationen finden Sie unter [Microsoft 365 Enterprise-Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md).
 
-![Testumgebungsanleitungen für die Microsoft-Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>Umstellung Ihrer gesamten Organisation
 
-Einen besseren Überblick darüber, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste von Microsoft 365 Enterprise umstellen können, erhalten Sie auf dem Poster [Überführen Ihrer Organisation zu Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Einen besseren Überblick darüber, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste von Microsoft 365 Enterprise umstellen können, erhalten Sie auf dem Poster [Überführen Ihrer Organisation zu Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Poster zur Überführung Ihrer Organisation zu Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Poster zur Überführung Ihrer Organisation zu Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 

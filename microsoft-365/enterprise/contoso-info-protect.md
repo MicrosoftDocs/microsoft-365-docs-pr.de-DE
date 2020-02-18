@@ -1,6 +1,8 @@
 ---
 title: Informationsschutz für die Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Features für den Informationsschutz in Microsoft 365 Enterprise verwendet, um digitale Datenbestände in der Cloud zu sichern.
-ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831678"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068412"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -85,7 +87,7 @@ Contoso konfigurierte zusammen mit seiner Infrastruktur für die Verwaltung von 
 
 Hier sehen Sie den von Contoso erstellten Satz von Informationsschutzrichtlinien.
 
-![Bedinge Zugriffsrichtlinien für Geräte, Exchange Online und SharePoint](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Bedinge Zugriffsrichtlinien für Geräte, Exchange Online und SharePoint](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso konfigurierte darüber hinaus zusätzliche bedingte Zugriffsrichtlinien für Identität und Anmeldung. Siehe [Identität für die Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
@@ -113,7 +115,7 @@ Die folgende Tabelle ordnet die Datenstufen von Contoso zu den Informationsschut
 
 Hier sehen Sie die resultierende Informationsschutzkonfiguration von Contoso.
 
-![Resultierende Informationsschutzkonfiguration von Contoso](./media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Resultierende Informationsschutzkonfiguration von Contoso](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

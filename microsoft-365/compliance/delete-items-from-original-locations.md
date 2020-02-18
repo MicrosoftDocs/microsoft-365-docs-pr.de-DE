@@ -31,7 +31,7 @@ Das Feature zum Löschen von Elementen aus dem ursprünglichen Speicherort befin
 
 Mithilfe von Daten Untersuchungen können Sie Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer Organisation löschen können. Da Sie Elemente als Beweismaterial gesammelt haben, haben Sie Kopien der Elemente, die im Beweissatz aufbewahrt werden, zur weiteren Untersuchung oder als Referenz aufzubewahren.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um Elemente zu löschen, müssen Sie die **Such-und Lösch** Rolle im Security & Compliance Center zugewiesen haben. Diese Rolle wird standardmäßig der integrierten Data Investigator-Rollengruppe zugewiesen.
 

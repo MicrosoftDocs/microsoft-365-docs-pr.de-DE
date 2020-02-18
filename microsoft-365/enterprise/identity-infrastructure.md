@@ -1,5 +1,7 @@
 ---
 title: 'Phase 2: Identität'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung Ihrer Identitätsinfrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: 50c3321dfd8a552d7585606f654360b9cff35b3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f32df9a35e09b438b5034ad963523879a639a3fc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030890"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067326"
 ---
 # <a name="phase-2-identity"></a>Phase 2: Identität
 
-![Phase 2: Identität](./media/deploy-foundation-infrastructure/identity_icon.png)
+![Phase 2: Identität](../media/deploy-foundation-infrastructure/identity_icon.png)
 
 In Microsoft 365 Enterprise ebnet eine sorgfältig geplante und ausgeführte Identitätsinfrastruktur den Weg für stärkere Sicherheit und Zugriff auf Produktivitätsarbeitslasten und die zugehörigen Daten nur für authentifizierte Benutzer und Geräte.
 
@@ -36,9 +38,9 @@ Schauen Sie sich dieses Video an, um eine Übersicht über die Identitätsmodell
 >Wenn Sie bereits eine Identitätsinfrastruktur bereitgestellt haben, lesen Sie bitte den Artikel [Identitätsbeendigungskriterien](identity-exit-criteria.md) um sicherzustellen, dass Sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.
 >
 
-Informationen zu den Identitätsfeatures jedes Microsoft 365 Enterprise-Plans, zur Rolle von Azure Active Directory (Azure AD), zu lokalen und cloudbasierten Komponenten sowie zu den häufigsten Authentifizierungskonfigurationen finden Sie auf dem [Poster zur Identitätsinfrastruktur](media/identity-infrastructure/M365E-ID-Infra.pdf).
+Informationen zu den Identitätsfeatures jedes Microsoft 365 Enterprise-Plans, zur Rolle von Azure Active Directory (Azure AD), zu lokalen und cloudbasierten Komponenten sowie zu den häufigsten Authentifizierungskonfigurationen finden Sie auf dem [Poster zur Identitätsinfrastruktur](../media/identity-infrastructure/M365E-ID-Infra.pdf).
 
-[![Poster zur Identitätsinfrastruktur](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
+[![Poster zur Identitätsinfrastruktur](../media/identity-infrastructure/m365e-identity-arch-poster.png)](../media/identity-infrastructure/M365E-ID-Infra.pdf)
 
 Dieses zweiseitige Poster ist eine schnelle Möglichkeit, sich mit den Identitätskonzepten und -konfigurationen für Microsoft 365 Enterprise vertraut zu machen.
 
@@ -50,12 +52,12 @@ Verwenden Sie die folgenden Schritte zum Planen und Bereitstellen der neuen Iden
 
 |||
 |:-------|:-----|
-|![Schritt 1](./media/stepnumbers/Step1.png)| [Erstellen und Schützen Ihrer globalen Administratorkonten](identity-create-protect-global-admins.md) |
-|![Schritt 2](./media/stepnumbers/Step2.png)| [Schützen von Kennwörtern](identity-secure-your-passwords.md) |
-|![Schritt 3](./media/stepnumbers/Step3.png)| [Absichern und Verwalten von Benutzeranmeldungen](identity-secure-user-sign-ins.md) |
-|![Schritt 4](./media/stepnumbers/Step4.png)| [Hinzufügen von Benutzerkonten](identity-add-user-accounts.md) |
-|![Schritt 5](./media/stepnumbers/Step5.png)| [Verwenden von Gruppen zur Verwaltung](identity-use-group-management.md) |
-|![Schritt 6](./media/stepnumbers/Step6.png)| [Konfigurieren der Identitätsgovernance](identity-configure-identity-governance.md) |
+|![Schritt 1](../media/stepnumbers/Step1.png)| [Erstellen und Schützen Ihrer globalen Administratorkonten](identity-create-protect-global-admins.md) |
+|![Schritt 2](../media/stepnumbers/Step2.png)| [Schützen von Kennwörtern](identity-secure-your-passwords.md) |
+|![Schritt 3](../media/stepnumbers/Step3.png)| [Absichern und Verwalten von Benutzeranmeldungen](identity-secure-user-sign-ins.md) |
+|![Schritt 4](../media/stepnumbers/Step4.png)| [Hinzufügen von Benutzerkonten](identity-add-user-accounts.md) |
+|![Schritt 5](../media/stepnumbers/Step5.png)| [Verwenden von Gruppen zur Verwaltung](identity-use-group-management.md) |
+|![Schritt 6](../media/stepnumbers/Step6.png)| [Konfigurieren der Identitätsgovernance](identity-configure-identity-governance.md) |
 
 Wenn Sie diese Schritte abgeschlossen haben, wechseln Sie zu [Beendigungskriterien](identity-exit-criteria.md) für diese Phase, um sicherzustellen, dass Sie die erforderlichen und optionalen Kriterien für die Microsoft 365 Enterprise-Identität erfüllen.
 
@@ -74,11 +76,11 @@ Erfahren Sie, wie IT-Experten bei Microsoft [Identitäten verwalten und den Zugr
 
 Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber multinationales, repräsentatives Unternehmen [eine hybride Identitätsinfrastruktur bereitgestellt hat](contoso-identity.md) (für Microsoft 365-Clouddienste).
 
-![Die Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 
 ## <a name="next-step"></a>Nächster Schritt
 
 |||
 |:-------|:-----|
-|![Schritt 1](./media/stepnumbers/Step1.png)| [Erstellen und Schützen Ihrer globalen Administratorkonten](identity-create-protect-global-admins.md) |
+|![Schritt 1](../media/stepnumbers/Step1.png)| [Erstellen und Schützen Ihrer globalen Administratorkonten](identity-create-protect-global-admins.md) |

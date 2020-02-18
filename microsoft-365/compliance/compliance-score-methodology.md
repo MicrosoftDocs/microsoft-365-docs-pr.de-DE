@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
-ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca8615f8c15264104faa71d155d2656cd788bd53
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596242"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078632"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Berechnung der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
@@ -82,8 +82,8 @@ Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend au
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
 | Vorbeugender Ermessensspielraum | 9  |
-| Detektiv erforderlich | 3  |
-| Detektiv-diskretionäres | 1  |
-| Korrektur Pflicht | 3  |
-| Korrigierendes diskretionäre | 1  |
+| Detektiv erforderlich | 3 |
+| Detektiv-diskretionäres | 1 |
+| Korrektur Pflicht | 3 |
+| Korrigierendes diskretionäre | 1 |
   

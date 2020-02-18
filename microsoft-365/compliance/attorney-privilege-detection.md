@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Verwenden Sie das Erkennungs Modell für Anwalts Client-Berechtigungen, um die Computer Lern basierte Erkennung von privilegierten Inhalten zu verwenden, wenn Inhalte in einem erweiterten eDiscovery-Fall überprüft werden.
-ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595962"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079260"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Einrichten der Erkennung von Anwalts Mandanten-Berechtigungen in Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Das Modell erzeugt für jedes Dokument die folgenden drei Eigenschaften:
 
 Diese Eigenschaften (und die entsprechenden Werte) werden den Datei Metadaten der Dokumente in einem Überprüfungs Satzes hinzugefügt, wie im folgenden Screenshot dargestellt:
 
-![In Datei Metadaten angezeigte Anwalts-Client-Berechtigungs Eigenschaften](media/AeDAttorneyClientPrivilegeMetadata.png)
+![In Datei Metadaten angezeigte Anwalts-Client-Berechtigungs Eigenschaften](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 Diese drei Eigenschaften können auch innerhalb eines Überprüfungs Satzes durchsucht werden. Weitere Informationen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
 
@@ -58,11 +58,11 @@ Um das Erkennungs Modell für das Attorney-Client-Privileg zu aktivieren, muss I
 
 Eine Person, die ein eDiscovery-Administrator in Ihrer Organisation ist (ein Mitglied der Untergruppe eDiscovery Administrator in der Rollengruppe eDiscovery-Manager), muss das Modell in ihren erweiterten eDiscovery-Fällen verfügbar machen.
 
-1. Wechseln Sie im Security #a0 Compliance Center zu **eDiscovery #a1 Advanced eDiscovery**.
+1. Wechseln Sie im Security & Compliance Center zu **eDiscovery > Advanced eDiscovery**.
 
 2. Klicken Sie auf der Seite für die **Erweiterte eDiscovery** -Homepage auf der Kachel **Einstellungen** auf **globale Analyse Einstellungen konfigurieren**.
 
-   ![Wählen Sie "experimentelle Features konfigurieren" aus.](media/AeDExperimentalFeatures.png)
+   ![Wählen Sie "experimentelle Features konfigurieren" aus.](../media/AeDExperimentalFeatures.png)
 
 3. Wählen Sie auf der Registerkarte **Analytics-Einstellungen** die Option **Attorney-Client-Berechtigungen verwalten**aus.
 
@@ -80,7 +80,7 @@ So laden Sie eine anwaltsliste für das Erkennungs Modell "Attorney-Client-Berec
 
    Die Seite " **Attorney-Client-Privilege** " wird angezeigt, und die Option " **Anwalt-Client-Berechtigung erkennen** " ist aktiviert.
 
-   ![Flyout-Seite "Attorney-Client-Privilegien"](media/AeDUploadAttorneyList.png)
+   ![Flyout-Seite "Attorney-Client-Privilegien"](../media/AeDUploadAttorneyList.png)
 
 3. Wählen Sie **Durchsuchen** aus, und suchen Sie die CSV-Datei, die Sie in Schritt 1 erstellt haben, und wählen Sie Sie aus.
 
@@ -98,13 +98,13 @@ Eine der wichtigsten Methoden zum Anzeigen der Ergebnisse der Erkennung von Anwa
  
 2. Wählen Sie unter **Tags**die Dropdown Seite neben **Gruppe hinzufügen** aus, und wählen Sie dann **smarttaggruppe hinzufügen**aus.
 
-   ![Wählen Sie "smarttaggruppe hinzufügen" aus.](media/AeDCreateSmartTag.png)
+   ![Wählen Sie "smarttaggruppe hinzufügen" aus.](../media/AeDCreateSmartTag.png)
 
 3. Wählen Sie auf der Seite **Modell für Smarttag auswählen** die Option neben **Anwalt-Client-Privileg** **auswählen** aus.
 
    Es wird eine Transpondergruppe namens " **Attorney-Client Privilege** " angezeigt. Sie enthält zwei untergeordnete Tags mit dem Namen " **positiv** " und " **negativ**", die den möglichen Ergebnissen entsprechen, die das Modell erzeugt.
 
-   ![Smarttaggruppe "Attorney-Client Privilege"](media/AeDAttorneyClientSmartTagGroup.png)
+   ![Smarttaggruppe "Attorney-Client Privilege"](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. Benennen Sie die Tag-Gruppe und die Tags entsprechend ihrer Überprüfung um. Sie können beispielsweise " **positiv** " in " **privilegierte** " und " **negativ** " in " **nicht privilegierte**" umbenennen.
 
@@ -126,8 +126,8 @@ Wenn das Modell feststellt, dass ein Dokument keine Inhalte enthält, die in der
 
 Die folgenden Screenshots zeigen beispielsweise zwei Dokumente. Der erste enthält Inhalte, die in der Natur legal sind und einen Teilnehmer in der Liste der Rechtsanwälte gefunden haben. Der zweite enthält weder und daher keine Beschriftungen angezeigt.
 
-![Dokument mit Rechtsanwalt und rechtlichen Inhalts Bezeichnungen](media/AeDTaggingPanelLegalContentAttorney.png)
+![Dokument mit Rechtsanwalt und rechtlichen Inhalts Bezeichnungen](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Dokument ohne Beschriftungen](media/AeDTaggingPanelNegative.png)
+![Dokument ohne Beschriftungen](../media/AeDTaggingPanelNegative.png)
 
 Nachdem Sie ein Dokument überprüft haben, um festzustellen, ob es privilegierte Inhalte enthält, können Sie das Dokument mit dem entsprechenden Tag versehen.

@@ -17,12 +17,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c8c979e5d091204f8071c51a0662808652f59355
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595662"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077790"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
@@ -62,7 +62,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
 3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
     
-    ![Erstellen einer Richtlinien Schaltfläche](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Erstellen einer Richtlinien Schaltfläche](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen \> Informationen schützt, die Sie **als nächstes**benötigen.
     
@@ -70,7 +70,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     Wenn Sie eine Vorlage auswählen, können Sie die Beschreibung auf der rechten Seite lesen, um zu erfahren, welche Arten von vertraulichen Informationen die Vorlage schützt.
     
-    ![Seite zum Auswählen einer DLP-Richtlinienvorlage](media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+    ![Seite zum Auswählen einer DLP-Richtlinienvorlage](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
   
 5. Nennen Sie die \> Richtlinie **als nächstes**.
     
@@ -84,7 +84,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     Um nur bestimmte SharePoint-Websites oder OneDrive für Unternehmen Konten einzuschließen, wechseln Sie den **Status** auf ein, und klicken Sie dann auf die Links unter **einschließen** , um bestimmte Websites oder Konten auszuwählen. Wenn Sie eine Richtlinie auf eine Website anwenden, werden die in dieser Richtlinie konfigurierten Regeln automatisch auf alle Unterwebsites dieser Website angewendet. 
     
-    ![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+    ![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
     Wenn Sie in diesem Beispiel vertrauliche Informationen schützen möchten, die in allen OneDrive für Unternehmen Konten gespeichert sind, deaktivieren Sie den **Status** für **Exchange-e-Mails** und **SharePoint-Websites**, und belassen Sie den **Status** für **OneDrive-Konten**.
     
@@ -92,7 +92,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
 8. Eine DLP-Richtlinienvorlage enthält vordefinierte Regeln mit Bedingungen und Aktionen, die bestimmte Arten von vertraulichen Informationen erkennen und entsprechende Aktionen ausführen. Sie können eine der vorhandenen Regeln bearbeiten, löschen oder deaktivieren oder neue Regeln hinzufügen. Klicken Sie nach Abschluss des Vorganges auf **weiter**.
     
-    ![In der US-PII-Richtlinienvorlage Erweiterte Regeln](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![In der US-PII-Richtlinienvorlage Erweiterte Regeln](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
     In diesem Beispiel enthält die US-PII-Datenvorlage zwei vordefinierte Regeln:
     
@@ -104,23 +104,23 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     Erweitern Sie daher die Regel mit dem Namen " **Low Volume of Content detected U.S. PII** \> **Delete Rule**".
     
-    ![Schaltfläche "Regel löschen"](media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
+    ![Schaltfläche "Regel löschen"](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
 9. In diesem Beispiel müssen Sie nun zwei vertrauliche Informationstypen hinzufügen (US-Bank Kontonummern und US-Führerscheinnummern), Benutzern das außer Kraft setzen einer Regel ermöglichen und die Anzahl in jedes Vorkommen ändern. Sie können dies alles tun, indem Sie eine Regel bearbeiten, daher wählen Sie **hohe Anzahl von Inhalten, die in der US-PII** \> - **Bearbeitungsregel**erkannt wurden.
     
-    ![Schaltfläche ' Regel bearbeiten '](media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
+    ![Schaltfläche ' Regel bearbeiten '](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
 10. Zum Hinzufügen eines Typs für vertrauliche Informationen **** im Abschnitt \> Bedingungen **Hinzufügen oder Ändern von Typen**. Wählen Sie dann unter **Hinzufügen oder ändern Typen** \> die **** \> Option Select **US Bank Account Number** und **u.s. Driver es License Number** \> **Add** \> **done**aus.
     
-    ![Option zum Hinzufügen oder Ändern von Typen](media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
+    ![Option zum Hinzufügen oder Ändern von Typen](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
-    ![Bereich "Typen hinzufügen oder ändern"](media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
+    ![Bereich "Typen hinzufügen oder ändern"](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
 11. Wenn Sie die Anzahl der Instanzen von vertraulichen Informationen ändern möchten, die zum Auslösen der Regel erforderlich sind, wählen Sie unter **** **Instanz count** \> den Wert Min \> für jeden Typ 1 aus. Die minimale Anzahl darf nicht leer sein. Die maximale Anzahl kann leer sein; ein leerer **Max** -Wert, der in **any**konvertiert werden soll.
     
     Nach Abschluss des Vorgangs sollte die minimale Anzahl für alle Typen vertraulicher Informationen **1** sein, und die maximale Anzahl sollte **beliebig**sein. Mit anderen Worten: jedes Vorkommen dieses Typs vertraulicher Informationen erfüllt diese Bedingung.
     
-    ![Instanzenanzahl für Typen vertraulicher Informationen](media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
+    ![Instanzenanzahl für Typen vertraulicher Informationen](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
   
 12. Für die abschließende Anpassung möchten Sie nicht, dass ihre DLP-Richtlinien Personen daran hindern, ihre Arbeit zu tätigen, wenn Sie eine gültige geschäftliche Begründung haben oder ein falsch positives Ergebnis auftreten, sodass die Benutzerbenachrichtigung Optionen zum außer Kraft setzen der Blockierungsaktion enthalten soll.
     
@@ -128,7 +128,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     Im Abschnitt **User Overrides** können Sie sehen, dass Außerkraftsetzungen für eine geschäftliche Begründung aktiviert sind, aber Außerkraftsetzungen, um falsch positive Ergebnisse zu melden. Wählen Sie **die Regel automatisch außer Kraft setzen aus, wenn Sie Sie als falsch positives Ergebnis melden**.
     
-    ![Abschnitt "User Notifications" und "User Overrides"](media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+    ![Abschnitt "User Notifications" und "User Overrides"](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
   
 13. Ändern Sie oben im Regel-Editor den Namen dieser Regel von der standardmäßigen **hohen Menge an Inhalten** , die von US-PII erkannt wurden, in **alle mit US-PII erfassten Inhalte** , da diese nun durch alle Vorkommen Ihrer vertraulichen Informationstypen ausgelöst werden. 
     
@@ -150,7 +150,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
 19. Aktivieren Sie die Richtlinien, damit die Regeln erzwungen werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
     
-    ![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 20. Überprüfen Sie die Einstellungen für \> diese Richtlinie **Create**.
     
@@ -169,7 +169,7 @@ Nachfolgend werden die verschiedenen Statuswerte und deren Bedeutung beschrieben
 |**Testen, ohne Benachrichtigungen** <br/> |Die Richtlinie ist im Testmodus. Die Aktionen in einer Regel werden nicht angewendet, aber Richtlinienübereinstimmungen werden mithilfe der DLP-Berichte zusammengestellt und angezeigt. Benachrichtigungen über Richtlinienübereinstimmungen werden nicht an die angegebenen Empfänger gesendet.  <br/> |
 |**On** <br/> |Die Richtlinie ist aktiv und wird erzwungen. Die Richtlinie wurde erfolgreich für alle zugehörigen Inhaltsquellen bereitgestellt.  <br/> |
 |**Wird deaktiviert...** <br/> |Die Richtlinie wird gerade aus den Inhaltsquellen, die sie umfasst, entfernt. Die Richtlinie kann noch bei einigen Quellen aktiv sein und erzwungen werden. Das Deaktivieren einer Richtlinie kann bis zu 45 Minuten dauern.  <br/> |
-|**Aus** <br/> |Die Richtlinie ist nicht aktiv und wird nicht erzwungen. Die Einstellungen für die Richtlinie (Quellen, Schlüsselwörter, Dauer usw.) werden gespeichert.  <br/> |
+|**Off** <br/> |Die Richtlinie ist nicht aktiv und wird nicht erzwungen. Die Einstellungen für die Richtlinie (Quellen, Schlüsselwörter, Dauer usw.) werden gespeichert.  <br/> |
 |**Löschen...** <br/> |Die Richtlinie wird gerade gelöscht. Die Richtlinie ist nicht aktiv und wird nicht erzwungen. Es dauert normalerweise eine Stunde für eine Richtlinie zum delet <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Deaktivieren einer DLP-Richtlinie
@@ -178,7 +178,7 @@ Sie können eine DLP-Richtlinie jederzeit bearbeiten oder deaktivieren. Durch da
   
 Zum Bearbeiten oder Deaktivieren einer DLP-Richtlinie wählen Sie auf der \> Seite \> **Richtlinie** die Richtlinien **Bearbeitungs Richtlinie**aus.
   
-![Schaltfläche ' Richtlinie bearbeiten '](media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
+![Schaltfläche ' Richtlinie bearbeiten '](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   
 Darüber hinaus können Sie jede Regel einzeln deaktivieren, indem Sie die Richtlinie bearbeiten und dann den **Status** dieser Regel umschalten, wie oben beschrieben. 
   

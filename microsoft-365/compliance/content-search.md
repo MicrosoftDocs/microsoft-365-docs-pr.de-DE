@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen nach Inhalten zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595722"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078404"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
@@ -52,9 +52,9 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
 2. Klicken Sie auf **Suche** \> **Inhaltssuche**.
     
-3. Klicken Sie auf der Seite **Suche** auf den Pfeil neben ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Neue Suche**. 
+3. Klicken Sie auf der Seite **Suche** auf den Pfeil neben ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Neue Suche**. 
     
-    ![Die Dropdownliste "Neue Suche"](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![Die Dropdownliste "Neue Suche"](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     Sie können eine der folgenden Optionen auswählen:
     
@@ -70,7 +70,7 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
 5. Geben Sie unter **Suchabfrage** die folgenden Elemente an:
     
-    ![Geben Sie Schlüsselwörter, Bedingungen und zu durchsuchende Speicherorte an](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Geben Sie Schlüsselwörter, Bedingungen und zu durchsuchende Speicherorte an](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Zu suchende Schlüsselwörter:** Geben Sie eine Suchabfrage in das Feld **Schlüsselwörter** ein. Sie können Schlüsselwörter, Nachrichteneigenschaften wie das Sende- und Empfangsdatum oder Dokumenteigenschaften wie Dateinamen oder das Datum angeben, an dem ein Dokument zuletzt geändert wurde. Sie können auch komplexere Abfragen mit booleschen Operatoren wie **AND**, **OR**, **NOT** und **NEAR** verwenden. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte in den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen.
     
@@ -89,7 +89,7 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
       - **Bestimmte Speicherorte:**  Wählen Sie diese Option aus, um bestimmte Inhaltsspeicherorte zu durchsuchen. Sie können alle Inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (z. B. alle Exchange-Postfächer oder alle SharePoint-Websites durchsuchen), oder bestimmte Speicherorte in jedem der angezeigten Office 365-Dienste nach Inhalten durchsuchen. 
     
-        ![Die Benutzeroberfläche zum Auswählen der Inhaltsspeicherorte, die durchsucht werden sollen](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Die Benutzeroberfläche zum Auswählen der Inhaltsspeicherorte, die durchsucht werden sollen](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          Sie können auch Verteilergruppen zur Liste der zu durchsuchenden Exchange-Postfächer hinzufügen. Bei Verteilergruppen werden die Postfächer der Gruppenmitglieder durchsucht. Dynamische Verteilergruppen werden nicht unterstützt.
     
@@ -106,13 +106,13 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
 Um erneut auf diese Inhaltssuche oder auf andere Inhaltssuchen, die auf der Seite **Inhaltssuche** aufgelistet sind, zuzugreifen, wählen Sie die gewünschte Suche aus, und klicken Sie dann auf **Öffnen**. 
   
-Um die Ergebnisse zu löschen oder eine neue Suche zu erstellen, klicken Sie auf ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif) **Neue Suche**. 
+Um die Ergebnisse zu löschen oder eine neue Suche zu erstellen, klicken Sie auf ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif) **Neue Suche**. 
   
 ## <a name="preview-search-results"></a>Vorschau von Suchergebnissen anzeigen
 
 Es gibt zwei Einstellungsoptionen für die Vorschau der Suchergebnisse. Klicken Sie nach dem Ausführen einer neuen Suche oder dem Öffnen einer vorhandenen Suche auf **Einzelne Ergebnisse**, um die folgenden Vorschaueinstellungen anzuzeigen: 
   
-![Einstellungen für die Vorschau von Suchergebnissen](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Einstellungen für die Vorschau von Suchergebnissen](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **Vorschau der Ergebnisse automatisch anzeigen:** Bei dieser Einstellung werden die Suchergebnisse angezeigt, nachdem Sie eine Suche durchgeführt haben.
     
@@ -157,7 +157,7 @@ So exportieren Sie Suchergebnisse:
   
 1. Wählen Sie auf der Seite **Inhaltssuche** die Suche aus, deren Suchergebnisse Sie exportieren möchten. 
     
-2. Klicken Sie auf der Flyoutseite auf ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Mehr**, und klicken Sie dann auf **Ergebnisse exportieren**. Sie können auch einen Suchergebnisbericht exportieren.
+2. Klicken Sie auf der Flyoutseite auf ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Mehr**, und klicken Sie dann auf **Ergebnisse exportieren**. Sie können auch einen Suchergebnisbericht exportieren.
     
 3. Füllen Sie die Abschnitte auf der Flyoutseite **Ergebnisse exportieren** aus. Verwenden Sie die Bildlaufleiste, um alle Exportoptionen anzuzeigen. 
     
@@ -217,21 +217,21 @@ Bedenken Sie bei der Verwendung einer Schlüsselwortliste zum Erstellen einer Su
     
     **Falsch**
     
-    ![Falsche Methode zum Formatieren einer Schlüsselwortliste (indem Sie die Liste in das Schlüsselwortfeld einfügen)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![Falsche Methode zum Formatieren einer Schlüsselwortliste (indem Sie die Liste in das Schlüsselwortfeld einfügen)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Richtig**
     
-    ![Richtige Methode zum Formatieren einer Schlüsselwortliste (indem Sie das Kontrollkästchen aktivieren und die Liste anschließend einfügen)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![Richtige Methode zum Formatieren einer Schlüsselwortliste (indem Sie das Kontrollkästchen aktivieren und die Liste anschließend einfügen)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - Sie können auch eine Liste von Schlüsselwörtern oder Schlüsselwortausdrücken in einer Excel-Datei oder einer reinen Textdatei vorbereiten, und diese Liste dann kopieren und in die Schlüsselwortliste einfügen. Zu diesem Zweck müssen Sie das Kontrollkästchen **Schlüsselwortliste anzeigen** aktivieren. Klicken Sie dann auf die erste Zeile in der Schlüsselwortliste, und fügen Sie Ihre Liste ein. Jede Zeile aus der Excel- oder TXT-Datei wird in eine separate Zeile in der Schlüsselwortliste eingefügt. 
     
 - Nachdem Sie eine Abfrage mithilfe der Schlüsselwortliste erstellt haben, ist es ratsam, die Suchabfragesyntax zu überprüfen, um sicherzustellen, dass die Suchabfrage Ihren Vorstellungen entspricht. In der Suchabfrage, die im Detailbereich unter **Abfrage** angezeigt wird, sind die Schlüsselwörter durch den Text **(c:s)** voneinander getrennt. Dies weist darauf hin, dass die Schlüsselwörter durch einen logischen Operator verbunden sind, dessen Funktionsweise mit jener des **OR**-Operators vergleichbar ist. Wenn Ihre Suchabfrage Bedingungen enthält, sind die Schlüsselwörter und die Bedingungen entsprechend durch den Text **(c:c)** voneinander getrennt. Dies weist darauf hin, dass die Schlüsselwörter durch einen logischen Operator verbunden sind, dessen Funktionsweise mit jener des **AND**-Operators vergleichbar ist. Es folgt ein Beispiel für die (im Bereich "Details" angezeigte) Suchabfrage, die sich ergibt, wenn Sie die Schlüsselwortliste und eine Bedingung verwenden. 
     
-    ![Beispiel für die Abfrage, die unter Verwendung der Schlüsselwortliste und einer Bedingung erstellt wird](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Beispiel für die Abfrage, die unter Verwendung der Schlüsselwortliste und einer Bedingung erstellt wird](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - Wenn Sie eine Inhaltssuche ausführen, überprüft Office 365 die Suchabfrage automatisch auf nicht unterstützte Zeichen und boolesche Operatoren, die nicht groß geschrieben sind. Nicht unterstützte Zeichen sind häufig ausgeblendet und verursachen in der Regel einen Suchfehler, oder es werden unerwartete Ergebnisse zurückgegeben. Weitere Informationen zu den nicht unterstützten Zeichen, nach denen gesucht wird, finden Sie unter [Überprüfen der Inhaltssuchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
     
-- Wenn eine Suchabfrage Schlüsselwörter für nichtenglische Zeichen enthält (z. B. chinesische Zeichen), können Sie auf **Abfragesprache Land/Region**![Query language-country/region icon in Content search](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) klicken und einen Kulturcodewert für Sprache und Region für die Suche auswählen. Die standardmäßige Sprache/Region ist neutral. Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie sicher sind, dass bestimmte Inhaltsspeicherorte nichtenglische Zeichen enthalten, nach denen Sie suchen, die Suche jedoch keine Ergebnisse zurückgibt, könnte die Spracheinstellung die Ursache sein. 
+- Wenn eine Suchabfrage Schlüsselwörter für nichtenglische Zeichen enthält (z. B. chinesische Zeichen), können Sie auf **Abfragesprache Land/Region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) klicken und einen Kulturcodewert für Sprache und Region für die Suche auswählen. Die standardmäßige Sprache/Region ist neutral. Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie sicher sind, dass bestimmte Inhaltsspeicherorte nichtenglische Zeichen enthalten, nach denen Sie suchen, die Suche jedoch keine Ergebnisse zurückgibt, könnte die Spracheinstellung die Ursache sein. 
   
 ### <a name="searching-onedrive-accounts"></a>Durchsuchen von OneDrive-Konten
 
@@ -299,17 +299,17 @@ Beachten Sie die folgenden Punkte, wenn Sie in Microsoft Teams und Office 365-Gr
 
   In den Suchergebnissen werden Besprechungszusammenfassungen im Feld **Typ** als **Besprechung**und Anrufübersichten als **Anruf** gekennzeichnet. Außerdem werden Unterhaltungen, die zu einem Teams-Kanals gehören und 1xN-Chats sind, im Feld **Typ** als **Sofortnachricht** gekennzeichnet.
   
-  ![Teams-Besprechungen, Anrufe und 1xN-Chats sind im Feld "Typ" angegeben](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams-Besprechungen, Anrufe und 1xN-Chats sind im Feld "Typ" angegeben](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - Sie können die E-Mail-Eigenschaft **Art** oder die Suchbedingung **Art der Nachricht** verwenden, um gezielt nach Inhalten in Teams zu suchen. 
   
   - Wenn Sie die Eigenschaft **Art** als Teil der Keywordsuchabfrage verwenden möchten, geben Sie im Feld **Schlüsselwörter** bei einer Suchabfrage `kind:microsoftteams` ein.
 
-    ![Verwenden Sie "kind:microsoftteams" im Feld "Schlüsselwörter"](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Verwenden Sie "kind:microsoftteams" im Feld "Schlüsselwörter"](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - Wenn Sie eine Suchbedingung verwenden möchten, fügen Sie die Bedingung **Art der Nachricht** hinzu, und verwenden Sie den Wert `microsoftteams`. 
 
-    ![Verwenden Sie die Bedingung "Art der Nachricht" mit dem Wert "microsoftteams".](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Verwenden Sie die Bedingung "Art der Nachricht" mit dem Wert "microsoftteams".](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Bedingungen sind durch den Operator **AND** logisch mit der Schlüsselwortabfrage verknüpft. Dies bedeutet, dass ein Element sowohl der Schlüsselwortabfrage als auch der Suchbedingung entsprechen muss, damit es in den Suchergebnissen zurückgegeben wird. Weitere Informationen finden Sie im Abschnitt "Richtlinien für die Verwendung von Bedingungen" unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
@@ -326,15 +326,15 @@ Sie können die **ItemClass**-E-Mail-Eigenschaft oder die **Typ**-Suchbedingung 
   
     Sie können z. B. die folgende Suchabfrage verwenden, um Yammer-Nachrichten und -Lob-Elemente zurückzugeben:
 
-    ![Verwenden Sie die ItemClass-Eigenschaft, um nach Yammer-Elementen zu suchen](media/YammerContentSearch1.png)
+    ![Verwenden Sie die ItemClass-Eigenschaft, um nach Yammer-Elementen zu suchen](../media/YammerContentSearch1.png)
   
   - Alternativ hierzu können Sie die **Typ**-E-Mail-Bedingung verwenden und **Yammer-Nachrichten** auswählen, um Yammer-Elemente zurückzugeben. Die folgende Suchabfrage gibt beispielsweise alle Yammer-Unterhaltungen zurück, die das Schlüsselwort "vertraulich" enthalten. 
 
-    ![Verwenden Sie die Typ-Bedingungskarte, um nach Yammer-Unterhaltungselementen zu suchen](media/YammerContentSearch2.png)
+    ![Verwenden Sie die Typ-Bedingungskarte, um nach Yammer-Unterhaltungselementen zu suchen](../media/YammerContentSearch2.png)
 
 ### <a name="searching-inactive-mailboxes"></a>Durchsuchen von inaktiven Postfächern
 
-Im Rahmen einer Inhaltssuche können auch inaktive Postfächer durchsucht werden. Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen Sie in Exchange Online PowerShell den Befehl `Get-Mailbox -InactiveMailboxOnly` aus. Alternativ können Sie im Security & Compliance Center zu **Information governance**\> **Aufbewahrung** wechseln, und dann auf **Weitere**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktive Postfächer** klicken.
+Im Rahmen einer Inhaltssuche können auch inaktive Postfächer durchsucht werden. Um eine Liste der inaktiven Postfächer in Ihrer Organisation abzurufen, führen Sie in Exchange Online PowerShell den Befehl `Get-Mailbox -InactiveMailboxOnly` aus. Alternativ können Sie im Security & Compliance Center zu **Information governance**\> **Aufbewahrung** wechseln, und dann auf **Weitere**![Navigation Bar ellipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktive Postfächer** klicken.
   
 Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
 
