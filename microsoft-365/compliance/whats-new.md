@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068695"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106808"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -134,7 +134,7 @@ Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliance-Anford
 |Warnungsrichtlinien|Warnungen > Warnungsrichtlinien <br/> https://protection.office.com/alertpolicies |Zu diesem Zeitpunkt werden Warnungsrichtlinien nur im Office 365 Security & Compliance Center verwaltet. |[Warnungsrichtlinien im Security and Compliance Center](alert-policies.md) |
 |Warnungen|Warnungen > Warnungen anzeigen <br/> https://protection.office.com/viewalerts |Warnungen <br/> https://compliance.microsoft.com/compliancealerts |[Anzeigen von Benachrichtigungen](alert-policies.md#viewing-alerts)|
 |Archiv|> Archiv für die Informationssteuerung <br/> https://protection.office.com/archiving |Registerkarte "Informationssteuerung > Archiv" <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)|
-|Überwachungsprotokollsuche|Suche > Überwachungsprotokoll Suche <br/> https://protection.office.com/unifiedauditlog |Überwachungs <br/> https://compliance.microsoft.com/auditlogsearch| [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
+|Überwachungsprotokollsuche|Suche > Überwachungsprotokoll Suche <br/> https://protection.office.com/unifiedauditlog |Überwachungs <br/> https://compliance.microsoft.com/auditlogsearch | [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
 |Inhaltssuche|Suche > Inhaltssuche <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Inhaltssuche <br/> https://compliance.microsoft.com/contentsearch |[Suchen nach Inhalten in Office 365](search-for-content.md) |
 |Daten-Konnektoren|Information Governance > Archivieren von drittanbieterdaten <br/> https://protection.office.com/nativeconnector | Daten-Konnektoren <br/> https://compliance.microsoft.com/connectorlanding |[Archivieren von drittanbieterdaten](archiving-third-party-data.md)|
 |Verhinderung von Datenverlust|Verhinderung von Datenverlust <br/> https://protection.office.com/datalossprevention |Verhinderung von Datenverlust <br/> https://compliance.microsoft.com/datalossprevention |[Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)|
@@ -146,7 +146,7 @@ Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliance-Anford
 |Bezeichnungs Aktivitäts-Explorer|Information Governance > Bezeichnungs Aktivitäts-Explorer <br/> https://protection.office.com/labelexplorer |Registerkarte "Datenklassifizierung > Aktivitäts-Explorer" <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten mit beschrifteten Inhalten (Vorschau)](data-classification-activity-explorer.md)|
 |Aufbewahrungs Bezeichnungen und Bezeichnungsrichtlinien |Klassifizierung > Aufbewahrungs Bezeichnungen > Registerkarten Bezeichnungen und Bezeichnungsrichtlinien <br/> https://protection.office.com/retentionlabels |Registerkarten für die Informationssteuerung > Bezeichnungen und Bezeichnungsrichtlinien <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](labels.md)|
 |Aufbewahrungsrichtlinien|Informationssteuerung > Aufbewahrung <br/> https://protection.office.com/retention |Registerkarte "Informationssteuerung > Aufbewahrung" <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)|
-|Typen vertraulicher Informationen|Klassifizierungs > vertrauliche Informationstypen <br/> https://protection.office.com/sensitivetypes |Registerkarte "Datenklassifizierung > vertraulichen Informationstypen" <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)|
+|Typen vertraulicher Informationen|Klassifizierungs > vertrauliche Informationstypen <br/> https://protection.office.com/sensitivetypes |Registerkarte "Datenklassifizierung > vertraulichen Informationstypen" <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)|
 |Vertraulichkeits Bezeichnungen und Bezeichnungsrichtlinien|Klassifikations > Sensitivitäts Bezeichnungen > Registerkarten Bezeichnungen und Bezeichnungsrichtlinien <br/> https://protection.office.com/sensitivity |Registerkarten für Informationsschutz > Bezeichnungen und Bezeichnungsrichtlinien <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Weitere Informationen Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
 |Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zu diesem Zeitpunkt kann nur auf Dienst Assurance-Ressourcen im Office 365 Security & Compliance Center zugegriffen werden. |[Dienst Assurance im Security & Compliance Center](service-assurance.md)|
 |Aufsicht|Aufsicht <br/> https://protection.office.com/supervisoryreviewv2 |Kommunikationscompliance <br/> https://compliance.microsoft.com/supervisoryreview |[Kommunikations Kompatibilität in Microsoft 365 (Vorschau)](communication-compliance.md) |
