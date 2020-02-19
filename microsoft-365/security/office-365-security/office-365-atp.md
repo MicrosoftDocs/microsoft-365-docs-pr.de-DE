@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 7210cc2cfbb060ee6afe9042a5c8934ff6f53576
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598742"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106838"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -101,7 +101,7 @@ Office 365 ATP Plan 2 enthält erstklassige [Bedrohungsuntersuchung- und Antwort
 
 - Der **[Bedrohungs-Explorer (oder Echtzeit-Entdeckungen)](threat-explorer.md)** (auch als Explorer bezeichnet) ist ein Echtzeitbericht, der es Ihnen ermöglicht, aktuelle Bedrohungen zu erkennen und zu analysieren. Sie können Explorer so konfigurieren, dass Daten für benutzerdefinierte Zeiträume angezeigt werden.
 
-- Mit dem **[Angriffssimulator](attack-simulator.md)** können Sie realistische Angriffsszenarien in Ihrer Organisation ausführen, um Sicherheitsrisiken zu erkennen. Zur Verfügung stehen Simulationen aktueller Angriffstypen, einschließlich eines [Anzeigename – Spear-Phishing-Angriffs](attack-simulator.md#display-name-spear-phishing-attack), eines [Kennwort-Spray-Angriffs](attack-simulator.md#password-spray-attack), eines [Brute-Force-Kennwortangriffs](attack-simulator.md#brute-force-password-attack) und vieles mehr.
+- Mit dem **[Angriffssimulator](attack-simulator.md)** können Sie realistische Angriffsszenarien in Ihrer Organisation ausführen, um Sicherheitsrisiken zu erkennen. Zur Verfügung stehen Simulationen aktueller Angriffstypen, einschließlich eines [Diebstahl von Anmeldeinformationen – Spear-Phishing-Angriffs](attack-simulator.md#credential-harvest-spear-phishing-attack), eines [Kennwort-Spray-Angriffs](attack-simulator.md#password-spray-attack), eines [Brute-Force-Kennwortangriffs](attack-simulator.md#brute-force-password-attack) und vieles mehr.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Zeit sparen mit automatisierten Untersuchungen und Antworten
 
