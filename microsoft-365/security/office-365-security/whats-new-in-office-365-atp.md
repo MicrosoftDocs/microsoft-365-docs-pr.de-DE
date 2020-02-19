@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.date: 01/28/2020
+ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784702"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106848"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -33,15 +34,27 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 > [!TIP]
 > Sie haben noch keine Office 365 ATP? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="januaryfebruary-2020"></a>Januar/Februar 2020
+
+- Verbesserungen an [Threat Explorer](threat-explorer.md) , um zu ermöglichen, dass Security Operations Teams bei der Untersuchung von [e-Mails](investigate-malicious-email-that-was-delivered.md)nach mehreren Feldern suchen und Filtern können:
+    - Zustellungs Speicherort und spezielle Aktionen
+    - Direktionalität (eingehend, ausgehendes oder Intra-org)
+    - Außerkraftsetzungen (Benutzerblockierung oder zulassen)
+    - URL-Bedrohung (Schadsoftware, Phishing, Spam oder keine)
+    - Advanced not Filters (Dies sind Erweiterte Filteroptionen, die Include enthält, nicht enthalten, usw.)
+    - Granulare Zeitfilter (Tag, Stunde, halbe Stunde) 
+
+- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Office 365 Security & Compliance Center zu **Threat Management** > **Review**.)
+
 ## <a name="december-2019"></a>Dezember 2019
 
 - [URL exportieren klicken Sie auf Daten für Offlineanalyse](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-Plan 1 oder Plan 2)
 
-- [Kampagnen Ansichten in Office 365 ATP (**Vorschau**)](campaigns.md)
+- [Verwenden von Kampagnen Ansichten in Office 365 ATP (**Vorschau**)](campaigns.md)
 
 ## <a name="november-2019"></a>November 2019
 
-- [Sehen Sie sich neue kompromittierte Benutzererkennung und Antwortfunktionen (**Preview**)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) an (Office 365 ATP-Plan 2)
+- [Sehen Sie sich neue kompromittierte Benutzererkennung und Antwortfunktionen](address-compromised-users-quickly.md) (**Preview**) an (Office 365 ATP-Plan 2)
 
 ## <a name="september-2019"></a>September 2019
 
