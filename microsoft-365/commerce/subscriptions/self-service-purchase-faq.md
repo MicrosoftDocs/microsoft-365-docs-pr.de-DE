@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
-ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
+ms.openlocfilehash: b94a09757cf6e7126a6b7cc73ac5cc0930d1ea2e
+ms.sourcegitcommit: 08f9af6cd98e2de4bb634b90f5630e6a66676497
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155624"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42157377"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
@@ -151,4 +151,4 @@ Partner mit Delegierten Administratorrechten können Self-Service-Käufe im <a h
 
 ### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>In welchen Ländern kann ich einen Self-Service-Einkauf tätigen?
 
-Self-Service-Käufe stehen in den folgenden Ländern zur Verfügung: Australien, Kanada, Japan und USA.
+Self-Service-Käufe stehen in den folgenden Ländern zur Verfügung: Australien, Kanada, Frankreich, Deutschland, Japan, das Vereinigte Königreich und die Vereinigten Staaten.
