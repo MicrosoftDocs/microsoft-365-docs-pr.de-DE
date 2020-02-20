@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: a9e49f5b9b518711f72c9b9a29e690c55acf3861
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
+ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080307"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155624"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
 > [!NOTE]
 > Die Informationen in diesem Artikel gelten nur für Microsoft Power Platform-Abonnements (Power BI, Power apps und Power automatisieren).
 
-Self-Service-Käufe sind jetzt für Power Platform in den Vereinigten Staaten, Australien, Kanada und Japan verfügbar.
+Self-Service-Käufe stehen jetzt für Power Platform in mehreren Ländern zur Verfügung.
 
 ## <a name="general"></a>Allgemein
 
@@ -146,3 +146,9 @@ Gültige Benutzer haben weiterhin den vollständigen Gebrauch des Self-Service-K
 ### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>Welche Rolle spielen die Partner von Microsoft bei Self-Service-Käufen?
 
 Partner mit Delegierten Administratorrechten können Self-Service-Käufe im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>sehen, genau wie ein Administrator. Partner können zur Unterstützung einer Organisation beitragen, die Produkte zentralisieren möchte, die über Self-Service-Käufe erworben wurden. Darüber hinaus können Partnerlösungen anbieten, um die Funktionen eines Self-Service-Kaufs zu erweitern.
+
+## <a name="country-availability"></a>Länderverfügbarkeit
+
+### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>In welchen Ländern kann ich einen Self-Service-Einkauf tätigen?
+
+Self-Service-Käufe stehen in den folgenden Ländern zur Verfügung: Australien, Kanada, Japan und USA.
