@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083782"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175708"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Aufrufen des Info-Centers zum Anzeigen von Wartungsaktionen
 
 **Gilt für:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>Eine einzige Oberfläche
 
@@ -47,11 +45,6 @@ Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Info-Center
 
 ## <a name="remediation-actions"></a>Wartungsaktionen
 
-Die folgende Tabelle enthält eine Liste der Wartungsaktionen, die aktuell im Info-Center unterstützt werden: 
-
-|Wartungsaktionen für Endpunkte  |Wartungsaktionen für E-Mails  |
-|---------|---------|
-|Quarantänedatei<br/>Registrierungsschlüssel entfernen<br/>Prozess abbrechen <br/>Dienst beenden <br/>Registrierungsschlüssel entfernen <br/>Treiber deaktivieren <br/>Geplante Aufgabe entfernen      |E-Mail-Nachrichten oder Cluster vorläufig löschen<br/>URL blockieren (Zeitpunkt des Klickens)<br/>Externe E-Mail-Weiterleitung deaktivieren          |
 
 ## <a name="go-to-the-action-center"></a>Aufrufen des Info-Centers
 

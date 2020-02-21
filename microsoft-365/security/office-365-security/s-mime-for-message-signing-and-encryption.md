@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratoren können sich über die Verwendung von S/MIME in Exchange Online informieren.
-ms.openlocfilehash: b135a9dc2c5ad8fbf190b38f9fe10161b95a7531
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598532"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170495"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME für die Nachrichtensignierung und-Verschlüsselung in Exchange Online
 
@@ -39,15 +39,15 @@ Sie können S/MIME für alle der folgenden Endpunkte einrichten:
 
 Die Schritte, die Sie zum Einrichten von S/MIME mit jedem dieser Endpunkte durchführen, unterscheiden sich geringfügig. Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
 
-- Installieren Sie eine Windows-basierte Zertifizierungsstelle, und richten Sie eine öffentliche Schlüsselinfrastruktur zum Ausstellen von S/MIME-Zertifikaten ein. Zertifikate, die von Drittanbieter-Zertifikatanbietern ausgestellt werden, werden ebenfalls unterstützt. Details finden Sie unter [Active Directory-Zertifikatdienste: Übersicht](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. Installieren Sie eine Windows-basierte Zertifizierungsstelle, und richten Sie eine öffentliche Schlüsselinfrastruktur zum Ausstellen von S/MIME-Zertifikaten ein. Zertifikate, die von Drittanbieter-Zertifikatanbietern ausgestellt werden, werden ebenfalls unterstützt. Details finden Sie unter [Active Directory-Zertifikatdienste: Übersicht](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
-- Veröffentlichen Sie das Benutzerzertifikat in einem lokalen AD DS-Konto in den Attributen **UserSMIMECertificate** und/oder **userCertificate** .
+2. Veröffentlichen Sie das Benutzerzertifikat in einem lokalen AD DS-Konto in den Attributen **UserSMIMECertificate** und/oder **userCertificate** .
 
-- Synchronisieren Sie für Exchange Online Organisationen die Benutzerzertifikate von AD DS mit Azure Active Directory, indem Sie eine geeignete Version von DirSync verwenden. Diese Zertifikate werden dann von Azure Active Directory auf Exchange Online Verzeichnis synchronisiert und verwendet, wenn eine Nachricht an einen Empfänger verschlüsselt wird.
+3. Synchronisieren Sie für Exchange Online Organisationen die Benutzerzertifikate von AD DS auf Azure Active Directory, indem Sie eine geeignete Version von Azure AD Connect verwenden. Diese Zertifikate werden dann von Azure Active Directory auf Exchange Online Verzeichnis synchronisiert und verwendet, wenn eine Nachricht an einen Empfänger verschlüsselt wird.
 
-- Richten Sie eine virtuelle Zertifikatauflistung zum Validieren von S/MIME ein. Diese Informationen verwendet Outlook im Web beim Validieren der Signatur einer E-Mail und stellt sicher, dass sie von einem vertrauenswürdigen Zertifikat signiert wurde.
+4. Richten Sie eine virtuelle Zertifikatauflistung zum Validieren von S/MIME ein. Diese Informationen verwendet Outlook im Web beim Validieren der Signatur einer E-Mail und stellt sicher, dass sie von einem vertrauenswürdigen Zertifikat signiert wurde.
 
-- Richten Sie den Outlook- oder EAS-Endpunkt für die Verwendung von S/MIME ein.
+5. Richten Sie den Outlook- oder EAS-Endpunkt für die Verwendung von S/MIME ein.
 
 > [!NOTE]
 > Das S/MIME-Steuerelement kann nicht in Outlook im Internet unter Mac, Ios, Android oder anderen nicht-Windows-Geräten installiert werden. Weitere Informationen finden Sie unter [Verschlüsseln von Nachrichten mithilfe von S/MIME in Outlook im Internet](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).

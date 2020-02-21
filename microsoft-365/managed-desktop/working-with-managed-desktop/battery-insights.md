@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085729"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170595"
 ---
 # <a name="battery-insights"></a>Akku Einblicke
 Diese Ansicht enthält Metriken für Energie, Akku und App-Nutzung für Ihre von Microsoft verwalteten Desktop Geräte. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
@@ -33,7 +33,7 @@ Die Tabelle enthält die prognostizierte Batterielebensdauer (in Stunden), die d
 
 ## <a name="top-energy-consumers"></a>Top Energy Consumer
 
-Im Bereich der **oberen Energieverbraucher** finden Sie die apps in Ihrer Umgebung, die die meiste Energie in milliWatt-Stunden (MWh) verbrauchen. Die gezeigten apps sind pro spezifischem Gerät, das Sie im Abschnitt " **voraussichtliche Lebensdauer der Batterie** " Links auswählen. Wenn Sie beispielsweise den pro-App-Verbrauch für Ihre Microsft Surface Book 2-Geräte anzeigen möchten, wählen Sie diese Zeile im Batterie Nutzungsbereich aus. Wenn Sie kein Modell auswählen, werden die angezeigten App-Nutzungsdaten für alle apps angezeigt, für die wir Daten gemeinsam haben.
+Im Bereich der **oberen Energieverbraucher** finden Sie die apps in Ihrer Umgebung, die die meiste Energie in milliWatt-Stunden (MWh) verbrauchen. Die gezeigten apps sind pro spezifischem Gerät, das Sie im Abschnitt " **voraussichtliche Lebensdauer der Batterie** " Links auswählen. Wenn Sie beispielsweise den pro-App-Verbrauch für Ihre Microsoft Surface Book 2-Geräte anzeigen möchten, wählen Sie diese Zeile im Bereich Battery Life aus. Wenn Sie kein Modell auswählen, werden die angezeigten App-Nutzungsdaten für alle apps angezeigt, für die wir Daten gemeinsam haben.
 
  Für jede APP zeigen farbige Segmente die Verteilung der Energieverwendung der app in den folgenden Kategorien an:
 
