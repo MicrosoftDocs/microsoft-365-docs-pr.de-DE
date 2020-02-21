@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960241"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170515"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
 Die [einheitliche Überwachungsfunktionen](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 bieten Organisationen Einblick in viele Arten von überwachten Aktivitäten über viele verschiedene Dienste in Microsoft 365 hinweg. In diesem Release fügen wir der erweiterten Überwachung in Microsoft 365 nun neue Überwachungsfunktionen hinzu, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen können.
 
 > [!NOTE]
-> Die erweiterte Überwachung ist für Organisationen mit einem Office 365- oder Microsoft 365 Enterprise E5-Abonnement verfügbar. Darüber hinaus kann Benutzern ein Microsoft 365 E5 Compliance-Add-On-Abonnement zugewiesen werden, wenn für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und hochwertigen Überwachungsereignissen der Fall ist.
+> Die erweiterte Überwachung ist für Organisationen mit einem Office 365- oder Microsoft 365 Enterprise E5-Abonnement verfügbar. Darüber hinaus kann Benutzern ein Microsoft 365 E5 Compliance-Add-On-Abonnement zugewiesen werden, wenn für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugriff zu wichtigen Ereignissen für Untersuchungen der Fall ist.
 
 In diesem Artikel finden Sie eine Übersicht über diese erweiterten Überwachungsfunktionen.
 
@@ -49,7 +49,7 @@ Alle Überwachungsdatensätze, die in anderen Diensten generiert wurden, die nic
 
 Sie können auch festlegen, wie lange Überwachungsdatensätze, die der Richtlinie entsprechen, aufbewahrt werden, und eine Prioritätsstufe angeben, damit bestimmte Richtlinien Vorrang vor anderen Richtlinien haben. Beachten Sie außerdem, dass jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardaufbewahrungsrichtlinie für Überwachungsprotokolle hat, wenn Sie für einige oder alle Benutzer in Ihrer Organisation Exchange-, SharePoint- oder Azure Active Directory-Überwachungsdatensätze für weniger als ein Jahr lang aufbewahren möchten. Weitere Informationen finden Sie unter [Verwalten der Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md).
 
-## <a name="high-value-audit-events"></a>Hochwertige Überwachungsereignisse
+## <a name="access-to-crucial-events-for-investigations"></a>Zugriff auf wichtige Ereignisse für Untersuchungen
 
 Hochwertige sicherheits- und compliancebezogene Überwachungsereignisse sind Ereignisse, die Ihnen bei der Untersuchung möglicher Verstöße oder bei anderen forensischen Untersuchungen helfen können. Das erste solche hochwertige Ereignis, das wir veröffentlichen, ist das Postfachüberwachungsereignis *MailItemsAccessed*. Dieses Ereignis wird ausgelöst, wenn E-Mail-Protokolle und -Clients auf E-Mail-Daten zugreifen. Das MailItemsAccessed-Ereignis kann Ermittlern dabei helfen, Datenverstöße zu erkennen und den Umfang der Nachrichten zu ermitteln, die möglicherweise kompromittiert wurden. Wenn ein Angreifer Zugriff auf E-Mail-Nachrichten erlangt hat, wird das MailItemsAccessed-Ereignis ausgelöst, selbst wenn kein explizites Zeichen dafür vorliegt, dass diese tatsächlich gelesen wurden (mit anderen Worten: Die Art des Zugriffs, z. B. über Bindung oder Synchronisierung, wird im Überwachungsdatensatz erfasst).
 

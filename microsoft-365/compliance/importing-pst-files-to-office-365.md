@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072957"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170545"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -146,6 +146,9 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
  **Wo ist der Netzwerkupload verfügbar?**
   
 Der Netzwerkupload ist derzeit in den USA, Kanada, Brasilien, Großbritannien, Europa, Indien, Ostasien, Südostasien, Japan, der Republik Korea und Australien verfügbar. Der Netzwerkupload wird in Kürze in weiteren Regionen zur Verfügung gestellt.
+
+> [!NOTE]
+> Zurzeit ist der Netzwerkupload von PST-Dateien in Deutschland und der Schweiz nicht verfügbar. Diese Häufig gestellten Fragen werden aktualisiert, sobald der Netzwerkupload in diesen Ländern verfügbar ist.
   
  **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   
@@ -215,6 +218,9 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
  **Wo ist der Laufwerkversand verfügbar?**
   
 Der Laufwerkversand ist derzeit in den USA, Kanada, Brasilien, Vereinigtem Königreich, Europa, Indien, Ostasien, Südostasien, Japan, Republik Korea und Australien verfügbar. Der Laufwerkversand wird in Kürze in weiteren Regionen zur Verfügung gestellt.
+
+> [!NOTE]
+> Zurzeit ist der Laufwerkversand um PST-Dateien zu importieren in Deutschland und der Schweiz nicht verfügbar. Diese Häufig gestellten Fragen werden aktualisiert, sobald der Laufwerkversand in diesen Ländern verfügbar ist.
   
  **Welche kommerziellen Lizenzvereinbarungen unterstützen den Laufwerksversand?**
   
