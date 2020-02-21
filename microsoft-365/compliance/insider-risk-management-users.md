@@ -1,5 +1,5 @@
 ---
-title: Insider Risk Management-Benutzer (Vorschau)
+title: Benutzer für das Insider Risikomanagement
 description: Erfahren Sie mehr über Insider Risk Management-Benutzer in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072787"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179106"
 ---
-# <a name="insider-risk-management-users-preview"></a>Insider Risk Management-Benutzer (Vorschau)
+# <a name="insider-risk-management-users"></a>Benutzer für das Insider Risikomanagement
 
 Insider Risk Management-Benutzer sind Mitarbeiter in Ihrer Organisation, die in einem oder mehreren Richtlinien für das Insider Risikomanagement enthalten sind. Verwenden Sie das **benutzerdashboard** , um Risikoinformationen zu Mitarbeitern schnell zu überprüfen und einen Mitarbeiter zu einer vorhandenen Richtlinie für Insider Risikomanagement hinzuzufügen. Für jeden Benutzer, der in eine Richtlinie für das Insider Risikomanagement eingeschlossen ist, werden im **benutzerdashboard**folgende Informationen angezeigt:
 
 - **Users**: der Benutzername für einen Benutzer.
-- **Risikostufe**: 
+- **Risikostufe**: das aktuelle berechnete Risikoniveau des Benutzers. Diese Bewertung wird alle 24 Stunden berechnet und verwendet die Warnungs Risikobewertungen aller aktiven Warnungen, die dem Benutzer zugeordnet sind.
 - **Aktive Warnungen**: die Anzahl der aktiven Warnungen für alle Richtlinien.
 - **Bestätigte Verstöße**: die Anzahl der Fälle, die als *bestätigte Richtlinienverletzung* für den Benutzer aufgelöst wurden.
 - **Case**: der aktuell aktive Fall für den Benutzer.
@@ -54,5 +54,5 @@ Führen Sie die folgenden Schritte aus, um einen Benutzer zu einer vorhandenen I
 2. Wählen Sie auf der Symbolleiste **einen Benutzer zu einer Richtlinie hinzufügen** aus.
 3. Beginnen Sie im Dialogfeld **neuen Benutzer hinzufügen** mit der Eingabe eines Benutzernamens in das Feld **Benutzer** . Wählen Sie den Benutzer aus, den Sie einer Richtlinie hinzufügen möchten.
 4. Wählen Sie den Dropdownpfeil für das Feld **Richtlinie** aus, um konfigurierte Richtlinien für die Verwaltung von Insider Risiken anzuzeigen. Wählen Sie die Richtlinie aus, der der Benutzer hinzugefügt werden soll.
-5. Definieren Sie mit dem Slider-Steuerelement des **Überwachungsfensters** die...... Der Bereich für das Überwachungsfenster beträgt 5 bis 30 Tage.
+5. Verwenden Sie das Slider-Steuerelement des **Aktivierungsfensters** , um zu definieren, wie lange die Richtlinie für diesen Benutzer aktiv ist, und wird ausgelöst, wenn der Benutzer die erste Aktivität ausführt, die der Richtlinie entspricht. Der Bereich für das Überwachungsfenster beträgt 5 bis 30 Tage.
 6. Wählen Sie **Hinzufügen** und **bestätigen** Sie dann, um den Benutzer zur Richtlinie hinzuzufügen.

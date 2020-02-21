@@ -1,5 +1,5 @@
 ---
-title: Insider Risikomanagement-Fälle (Vorschau)
+title: Insider Risikomanagement-Fälle
 description: Informationen zu Insider Risikomanagement-Fällen in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072848"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179176"
 ---
-# <a name="insider-risk-management-cases-preview"></a>Insider Risikomanagement-Fälle (Vorschau)
+# <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
 Fälle sind das Herzstück des Insider Risikomanagements und ermöglichen es Ihnen, Probleme, die durch in ihren Richtlinien definierte Risikoindikatoren generiert werden, eingehend zu untersuchen und Maßnahmen zu ergreifen. Fälle werden manuell aus Warnungen in den Situationen erstellt, in denen weitere Aktionen erforderlich sind, um ein Compliance-bezogenes Problem für einen Mitarbeiter zu beheben. Bei jedem Fall handelt es sich um einen einzelnen Mitarbeiter, und mehrere Benachrichtigungen für den Mitarbeiter können einem vorhandenen Fall oder einem neuen Fall hinzugefügt werden. Nachdem Sie die Details eines Falles untersucht haben, können Sie eine Aktion durchführen, indem Sie dem Mitarbeiter eine Benachrichtigung senden, den Fall als gutartig auflösen oder an eine Daten-oder Mitarbeiter Ermittlung eskalieren.
 
@@ -96,7 +96,7 @@ Die Registerkarte **Benutzeraktivität** ist eines der leistungsstärksten Tools
     - **Datum** der Risiko Aktivität.
     - Die **Risiko Aktivitätskategorie**. *E-Mail-Nachrichten beispielsweise mit Anlagen, die außerhalb der Organisation* oder *von SharePoint Online heruntergeladen*wurden.
     - **Risikobewertung** für die Warnung. Diese Bewertung ist die numerische Bewertung für den Schweregrad des Warnungs Risikos.
-    - Die Anzahl der **Dateien** oder **e-Mails** , die der Warnung zugeordnet sind. Links zu jeder Datei oder e-Mail, die der Risiko Aktivität zugeordnet ist, sind ebenfalls verfügbar.
+    - Die Anzahl der Ereignisse, die der Warnung zugeordnet sind. Links zu jeder Datei oder e-Mail, die der Risiko Aktivität zugeordnet ist, sind ebenfalls verfügbar.
 3. **Legende zur Risiko Aktivität**: am unteren Rand des Benutzer Aktivitätsdiagramms können Sie mit einer farbcodierten Legende schnell die Risikokategorie für jede Warnung bestimmen.
 4. **Chronologie der Risiko Aktivität**: die vollständige Chronologie aller mit dem Fall verbundenen Risikowarnungen wird aufgeführt, einschließlich aller Details, die in der entsprechenden Warnungs Blase verfügbar sind.
 5. **Case-Aktionen**: Optionen zum Auflösen der Groß-/Kleinschreibung befinden sich auf der Symbolleiste für den Fall Vorgang. Sie können einen Fall lösen, eine e-Mail-Nachricht an den Mitarbeiter senden oder den Fall für eine Daten-oder Mitarbeiter Ermittlung eskalieren.

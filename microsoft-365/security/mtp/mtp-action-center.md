@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175708"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219176"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Aufrufen des Info-Centers zum Anzeigen von Wartungsaktionen
 
@@ -42,9 +42,6 @@ Das Info-Center bietet eine einzige Oberfläche für folgende Aufgaben:
 - Überprüfen abgeschlossener Wartungsaktionen
 
 Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Info-Center eine umfassende Übersicht über Microsoft Threat Protection bei der Arbeit bietet.
-
-## <a name="remediation-actions"></a>Wartungsaktionen
-
 
 ## <a name="go-to-the-action-center"></a>Aufrufen des Info-Centers
 

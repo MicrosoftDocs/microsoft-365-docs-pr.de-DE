@@ -13,19 +13,17 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: e3c8b712931c4225bff0a989b9846957f9a6be79
-  ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+  ms.openlocfilehash: 4e118d0aac0164370f7d7c2d403f15276268f8bf
+  ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 02/06/2020
-  ms.locfileid: "41800065"
+  ms.lasthandoff: 02/21/2020
+  ms.locfileid: "42179226"
 landingContent:
 - title: Verwalten des Informationsschutzes
   linkLists:
   - linkListType: overview
     links:
-    - text: Schützen von Informationen
-      url: protect-information.md
     - text: Vertraulichkeitsbezeichnungen
       url: sensitivity-labels.md
     - text: Verhinderung von Datenverlusten (Data Loss Prevention, DLP)
@@ -38,32 +36,36 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Verwalten von Datensätzen in Microsoft 365
+    - text: Aufbewahrungsbezeichnungen
+      url: labels.md
+    - text: Aufbewahrungsrichtlinien
+      url: retention-policies.md
+    - text: Datensatzverwaltung
       url: records-management.md
     - text: Dateiplan-Manager
       url: file-plan-manager.md
-    - text: Aufbewahrungsbezeichnungen
-      url: labels.md
     - text: Ereignisbasierte Aufbewahrung
       url: event-driven-retention.md
-    - text: Inaktive Postfächer
-      url: inactive-mailboxes-in-office-365.md
-    - text: Anzeigen von Data Governance-Berichten
+    - text: PST-Import
+      url: importing-pst-files-to-office-365.md
+    - text: Drittanbieter-Daten-Konnektoren
+      url: archiving-third-party-data.md
+    - text: Data Governance-Berichte
       url: view-the-data-governance-reports.md
-- title: Verwalten interner Risiken
+- title: Verwalten von Insider Risiken
   linkLists:
   - linkListType: overview
     links:
-    - text: Schutz von Benutzer- und Gerätezugriff
-      url: protect-access-to-data-and-services.md
-    - text: Privileged Access Management
-      url: privileged-access-management-overview.md
-    - text: Kunden-Lockbox
-      url: customer-lockbox-requests.md
+    - text: Insider Risikomanagement
+      url: insider-risk-management.md
     - text: Kommunikationscompliance
       url: communication-compliance.md
     - text: Informationsbarrieren
       url: information-barriers.md
+    - text: Privileged Access Management
+      url: privileged-access-management-overview.md
+    - text: Kunden-Lockbox
+      url: customer-lockbox-requests.md
     - text: Kundenschlüssel
       url: customer-key-overview.md
 - title: Entdecken und Antworten
@@ -72,17 +74,19 @@ landingContent:
     links:
     - text: Advanced eDiscovery
       url: overview-ediscovery-20.md
-    - text: Verwalten einer Datenermittlung
-      url: overview-data-investigations.md
-    - text: Suchen nach Inhalten
+    - text: Zentrale eDiscovery
+      url: ediscovery-cases.md
+    - text: Inhaltssuche
       url: search-for-content.md
-    - text: Durchsuchen des Überwachungsprotokolls
+    - text: Daten Untersuchungen (Vorschau)
+      url: overview-data-investigations.md
+    - text: Überwachung
       url: search-the-audit-log-in-security-and-compliance.md
 - title: Erste Schritte mit behördlicher Compliance
   linkLists:
   - linkListType: get-started
     links:
-    - text: Compliancebewertung
+    - text: Compliance-Score
       url: compliance-score.md
     - text: Dsgvo-Compliance-Aktionsplan
       url: gdpr-action-plan.md

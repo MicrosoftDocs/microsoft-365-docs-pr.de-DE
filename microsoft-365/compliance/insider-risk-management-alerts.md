@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072882"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179216"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>Alerts für Insider-Risikomanagement (Vorschau)
+# <a name="insider-risk-management-alerts"></a>Warnungen beim Insider Risikomanagement
 
 Alerts für Insider Risikomanagement werden automatisch durch Risikoindikatoren generiert, die in Richtlinien für das Insider Risikomanagement definiert sind. Diese Warnungen bieten Compliance-Analysten und Ermittlern eine Übersicht über den aktuellen Risikostatus und ermöglichen Ihrer Organisation das selektieren und Ausführen von Aktionen für entdeckte Risiken.
 
@@ -29,7 +29,7 @@ Das Alert- **Dashboard** für Insider Risiken ermöglicht Ihnen das Anzeigen und
 
 - **Zu über**prüfende Warnungen: die Gesamtzahl der Warnungen, die Überprüfung und Selektierung erforderlich sind, wird aufgeführt, einschließlich einer Aufteilung nach Warnungsschweregrad.
 - **Warnungen in den letzten 30 Tagen öffnen**: die Gesamtzahl der Warnungen, die von Richtlinien Übereinstimmungen in den letzten 30 Tagen erstellt wurden, sortiert nach hoch-, Mittel-und niedrigem Warnungsschweregrad.
-- **Durchschnittliche Zeit bis zu aufgelösten Warnungen**: eine Zusammenfassung der nützlichen Warnungs Statistiken:
+- **Durchschnittliche Zeit zum Auflösen von Warnungen**: eine Zusammenfassung der nützlichen Warnungs Statistiken:
     - Durchschnittliche Zeit zum Auflösen von Warnungen mit hohem Schweregrad, aufgeführt in Stunden, Tagen oder Monaten.
     - Durchschnittliche Zeit zum Auflösen mittlerer Dringlichkeits Warnungen, aufgeführt in Stunden, Tagen oder Monaten.
     - Durchschnittliche Zeit zum Beheben von Warnungen mit niedrigem Schweregrad, aufgeführt in Stunden, Tagen oder Monaten.

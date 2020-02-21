@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über den Microsoft 365-Lösungskatalog, einschließlich dessen, was er enthält, wie Sie ihn erhalten und wie Sie die nächsten Schritte durchführen.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071346"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179146"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -95,7 +95,7 @@ Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Co
 
 - **Überprüfen Sie Ihre Microsoft-Kompatibilitäts**Bewertung, eine personalisierte, risikobasierte Bewertung, die Ihnen hilft, den Zustand Ihrer Organisation bezüglich der Einhaltung wichtiger Standards und Vorschriften zu verstehen. Es enthält empfohlene Maßnahmen, die Sie ergreifen können, um Ihre allgemeine Compliance-Haltung zu stärken, und bietet Workflowfunktionen, die Sie bei der effizienten Ausführung dieser Aktionen unterstützen. Weitere Informationen finden Sie unter [Compliance Score (Preview)](compliance-score.md).
 
-- **Konfigurieren Sie Richtlinien für das Insider Risikomanagement** , um interne Risiken zu minimieren und Ihnen die Möglichkeit zu geben, riskante Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und Maßnahmen zu ergreifen. Siehe [Insider Risk Management (Preview)](insider-risk-management.md).
+- **Konfigurieren Sie Richtlinien für das Insider Risikomanagement** , um interne Risiken zu minimieren und Ihnen die Möglichkeit zu geben, riskante Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und Maßnahmen zu ergreifen. Siehe [Insider Risk Management](insider-risk-management.md).
 
 - **Erfahren Sie mehr über und erstellen Sie Richtlinien** für die Kommunikationsrichtlinien zur schnellen Erkennung und Korrektur von Richtlinienverstößen in Bezug auf Corporate Code of Conduct. Weitere Informationen finden Sie unter [Communication Compliance](communication-compliance.md).
 

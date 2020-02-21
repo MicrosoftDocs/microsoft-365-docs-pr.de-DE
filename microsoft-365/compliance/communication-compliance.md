@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078692"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179236"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -36,6 +36,8 @@ Compliance-Richtlinien für Kommunikation in Microsoft 365 helfen Ihnen, viele m
 - Regulatorische Durchsetzung und das Risiko von Geldbußen
 
 In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Microsoft 365 unterstützt die Trennung zwischen der Konfiguration der Kommunikations Kompatibilität und der Konfiguration von Richtlinien für die Überprüfung der Kommunikation. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Kommunikationsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
+
+Eine kurze Übersicht über die Kommunikations Kompatibilität finden Sie unter [Belästigung von Arbeitsplätzen erkennen und mit Kommunikations Konformität in Microsoft 365](https://youtu.be/z33ji7a7Zho) Video im [Microsoft Mechanics-Kanal](https://www.youtube.com/user/OfficeGarageSeries)Antworten.
 
 ## <a name="scenarios-for-communication-compliance"></a>Szenarien für die Kommunikations Konformität
 

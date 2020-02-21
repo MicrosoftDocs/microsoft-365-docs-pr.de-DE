@@ -1,5 +1,5 @@
 ---
-title: Richtlinien für das Insider Risikomanagement (Vorschau)
+title: Richtlinien für Insider-Risikomanagement
 description: Informationen zu Richtlinien für das Insider Risikomanagement in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ac029959470d92fff9c0c5e942cd667f659e307d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5e81c9ff65db6ecd4a1ac1995c8a592f4377ae1c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072822"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179096"
 ---
-# <a name="insider-risk-management-policies-preview"></a>Richtlinien für das Insider Risikomanagement (Vorschau)
+# <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
 Richtlinien für Insider-Risikomanagement bestimmen, welche Mitarbeiter im Bereich sind und welche Arten von Risikoindikatoren für Warnungen konfiguriert sind. Sie können schnell eine Richtlinie erstellen, die für alle Benutzer in Ihrer Organisation gilt, oder einzelne Benutzer oder Gruppen für die Verwaltung in einer Richtlinie definieren. Richtlinien unterstützen Inhalts Prioritäten, um Richtlinienbedingungen auf mehrere oder bestimmte Microsoft Teams, SharePoint-Websites, Daten Sensitivitäts Typen und Datenbeschriftungen zu konzentrieren. Die Verwendung von Vorlagen umfasst spezifische Risikoindikatoren und deren Gewichtung innerhalb einer Richtlinie, wobei die Gewichtung der einzelnen Warnungsauslöser in der Richtlinie effektiv bestimmt wird. Richtlinien-Fenster ermöglichen Ihnen, den Zeitrahmen zu definieren, um die Richtlinie auf Warnungs Aktivitäten anzuwenden, und werden verwendet, um die Dauer der Richtlinie nach der Aktivierung zu bestimmen. Die maximale Richtlinien Grenze beträgt fünf aktive Richtlinien gleichzeitig. Sie können jedoch weitere Richtlinien konfigurieren und Richtlinien bei Bedarf aktivieren und deaktivieren.
 
@@ -58,14 +58,51 @@ Das Schützen von Daten und das verhindern von Datenverlusten stellt für die me
 
 Das erkennen und ergreifen von Aktionen zur Vorbeugung gegen beleidigendes und missbräuchliches Verhalten ist eine wichtige Komponente zur Vermeidung von Risiken. Integrierte beleidigende sprach Klassifizierungen in Microsoft 365 können gesendete e-Mail-Nachrichten von Exchange Online Postfächern in Ihrer Organisation für unterschiedliche Arten von Kompatibilitätsproblemen überprüfen. Diese Klassifizierungen verwenden eine Kombination aus künstlicher Intelligenz und Stichwörtern, um die Sprache in e-Mails zu identifizieren, die gegen Belästigungs Richtlinien verstoßen dürften. Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die diese Klassifizierungen verwendet, um e-Mail-Nachrichteninhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen. Für das Insider Risikomanagement werden Klassifizierungen verwendet, die gesendete e-Mail-Nachrichten für anstößige Sprachen nach englischen sprach Begriffen und-Ansichten scannen.
 
-## <a name="monitoring-windows"></a>Überwachen von Fenstern
+## <a name="policy-settings"></a>Richtlinieneinstellungen
 
-Mithilfe von Richtlinien-Überwachungsfenstern können Sie Zeiträume definieren, die die Richtlinien Aktivierung basierend auf Ereignissen und Aktivitäten für die Richtlinien für Insider-Risiko-Management-Vorlagen auslösen. Je nach der ausgewählten Richtlinienvorlage stehen die folgenden Überwachungsfenster zur Verfügung:
+Die Einstellungen für Insider Risiken gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Einstellungen werden mit dem Steuerelement **Einstellungen für Insider Risiken* konfiguriert, das sich oben auf allen Registerkarten für das Insider Risikomanagement befindet. Mit diesen Einstellungen werden Datenschutz, Indikatoren, Überwachungsfenster und intelligente Erkennungen gesteuert.
 
-- **In-Scope TimeSpan**: verfügbar für alle Richtlinienvorlagen ist die *in-Scope-TimeSpan* die definierte Anzahl von Tagen, die das Fenster **nach** einem auslösendem Ereignis aktiviert. Das Fenster wird für 1 bis 30 Tage aktiviert, nachdem für einen Benutzer, der der Richtlinie zugewiesen ist, ein auslösendes Ereignis auftritt. Sie haben beispielsweise eine Richtlinie für das Risikomanagement für Insider konfiguriert und die *Gültigkeitszeit Spanne* auf 30 Tage festgelegt. Seit dem Konfigurieren der Richtlinie sind mehrere Monate vergangen, und für einen der in der Richtlinie enthaltenen Benutzer tritt ein auslösendes Ereignis ein. Das auslösende Ereignis aktiviert die *gültigkeitsbereichsbezogene TimeSpan* , und die Richtlinie ist für diesen Benutzer 30 Tage nach dem Auslösen des auslösendes Ereignisses aktiv.
-- **Historisches TimeSpan**: für alle Richtlinienvorlagen verfügbar ist die *historische TimeSpan* die definierte Anzahl von Tagen, die das Fenster **vor** einem auslösendem Ereignis aktiviert. Das Fenster wird für 0 bis 180 Tage aktiviert, bevor ein auslösendes Ereignis für einen Benutzer eintritt, der der Richtlinie zugewiesen ist. Sie haben beispielsweise eine Richtlinie für Insider-Risikoverwaltung konfiguriert und die *historische Zeitspanne* auf 90 Tage festgelegt. Seit dem Konfigurieren der Richtlinie sind mehrere Monate vergangen, und für einen der in der Richtlinie enthaltenen Benutzer tritt ein auslösendes Ereignis ein. Das auslösende Ereignis aktiviert die *historische TimeSpan* , und die Richtlinie sammelt historische Aktivitäten für diesen Benutzer 90 Tage vor dem auslösendem Ereignis.
-- **Fenster für die zukünftige Beendigung**: Diese Einstellung wird in der Scham Vorschau angezeigt, wird jedoch nicht auf alle Richtlinien angewendet und für die Produktionsversion dieser Lösung entfernt.
-- **Fenster für vergangene Beendigung**: Diese Einstellung wird in der Scham Vorschau angezeigt, wird jedoch nicht auf alle Richtlinien angewendet und für die Produktionsversion dieser Lösung entfernt.
+### <a name="privacy"></a>Datenschutz
+
+Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen ist wichtig und kann zur Förderung der Objektivität bei Daten Ermittlungs-und Analyse Überprüfungen für Insider Risikowarnungen beitragen. Bei Übereinstimmungen mit Insider Risikorichtlinien können Sie eine der folgenden Einstellungen auswählen:
+
+- **Anonyme Versionen von**Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Daten Ermittler und Prüfer sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einer randomisierten psuedonym wie "AnonIS8-988" in allen Bereichen der Insider Risikomanagement-Erfahrung angezeigt. Wenn Sie diese Einstellung auswählen, werden alle Benutzer mit aktuellen und früheren Richtlinien Übereinstimmungen anonymisiert und gilt für alle Richtlinien. Benutzerprofilinformationen in der Warnung zu Insider Risiken und Fall Details sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
+- **Anonyme Versionen von Benutzernamen nicht anzeigen**: Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Warnungen und Fälle angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Warnungen und Fälle im Insider Risikomanagement angezeigt.
+
+### <a name="indicators"></a>Indikatoren
+
+Vorlagen für Insider Risikorichtlinien definieren Sie die Art der Risiko Aktivitäten, die Sie erkennen und untersuchen möchten. Jede Richtlinienvorlage basiert auf spezifischen Indikatoren, die bestimmten Risiko Aktivitäten entsprechen, und Warnungen werden durch Richtlinien ausgelöst, wenn Benutzeraktivitäten im Zusammenhang mit diesen Indikatoren ausführen. In einigen Fällen möchten Sie möglicherweise die Indikatoren einschränken, die auf Insider Risikorichtlinien in Ihrer Organisation angewendet werden. Sie können die Indikatoren für bestimmte Bereiche deaktivieren, indem Sie Sie von allen Insider Risikorichtlinien deaktivieren.
+
+Um die Indikatoren zu definieren, die in allen Richtlinien aktiviert sind, navigieren Sie zu**Indikatoren** für **Insider Risiko Einstellungen** > , und wählen Sie ein oder mehrere Indikatoren aus. Die auf der Seite **indikatoreneinstellungen** ausgewählten Indikatoren können beim Erstellen oder Bearbeiten einer Insider Risiko Richtlinie im Richtlinien-Assistenten nicht individuell konfiguriert werden.
+
+>[!IMPORTANT]
+>Um Warnungen für riskante Aktivitäten zu erhalten, die in ihren Richtlinien definiert sind, müssen Sie vor dem Konfigurieren einer Insider Risiko Richtlinie ein oder mehrere Indikatoren auswählen.
+
+### <a name="policy-timeframes"></a>Richtlinienzeit Rahmen
+
+Mithilfe von Richtlinienzeit Rahmen können Sie vergangene und zukünftige Überprüfungszeiten definieren, die ausgelöst werden, nachdem die Richtlinien Übereinstimmungen basierend auf Ereignissen und Aktivitäten für die Richtlinien für Insider-Risikomanagement-Vorlagen ausgeführt wurden. Je nach der ausgewählten Richtlinienvorlage stehen die folgenden Richtlinienzeit Rahmen zur Verfügung:
+
+- **Aktivierungsfenster**: für alle Richtlinienvorlagen verfügbar ist das *Aktivierungsfenster* die festgelegte Anzahl von Tagen, die das Fenster **nach** einem auslösendem Ereignis aktiviert. Das Fenster wird für 1 bis 30 Tage aktiviert, nachdem für einen Benutzer, der der Richtlinie zugewiesen ist, ein auslösendes Ereignis auftritt. Sie haben beispielsweise eine Richtlinie für Insider-Risikoverwaltung konfiguriert und das *Aktivierungsfenster* auf 30 Tage festgelegt. Seit dem Konfigurieren der Richtlinie sind mehrere Monate vergangen, und für einen der in der Richtlinie enthaltenen Benutzer tritt ein auslösendes Ereignis ein. Das auslösende Ereignis aktiviert das *Aktivierungsfenster* , und die Richtlinie ist für diesen Benutzer 30 Tage lang aktiv, nachdem das auslösende Ereignis aufgetreten ist.
+- **Erkennung der letzten Aktivität**: für alle Richtlinienvorlagen verfügbar, ist die *vergangene Aktivitätserkennung* die festgelegte Anzahl von Tagen, die das Fenster **vor** einem auslösendem Ereignis aktiviert. Das Fenster wird für 0 bis 180 Tage aktiviert, bevor ein auslösendes Ereignis für einen Benutzer eintritt, der der Richtlinie zugewiesen ist. Sie haben beispielsweise eine Richtlinie für Insider-Risikomanagement konfiguriert und die *bisherige Aktivitätserkennung* auf 90 Tage festgelegt. Seit dem Konfigurieren der Richtlinie sind mehrere Monate vergangen, und für einen der in der Richtlinie enthaltenen Benutzer tritt ein auslösendes Ereignis ein. Das auslösende Ereignis aktiviert die *bisherige Aktivitätserkennung* , und die Richtlinie sammelt historische Aktivitäten für diesen Benutzer 90 Tage vor dem auslösendem Ereignis.
+
+### <a name="intelligent-detections"></a>Intelligente Erkennungen
+
+Intelligente Erkennungseinstellungen helfen bei der Verarbeitung der Erkennung riskanter Aktivitäten für Warnungen. Unter bestimmten Umständen müssen Sie möglicherweise Dateitypen definieren, die ignoriert werden sollen, oder Sie möchten einen Erkennungs Grad für Dateien erzwingen, um eine minimale Leiste für Warnungen zu definieren. Wenn Sie Richtlinien für anstößige Sprachen verwenden, müssen Sie möglicherweise die Erkennungsempfindlichkeit erweitern oder verringern, um die Menge der gemeldeten Richtlinien Übereinstimmungen zu steuern. Verwenden Sie diese Einstellungen zum Steuern von Dateitypen Ausschlüssen, Grenzwerten für Datei Volumina und der Empfindlichkeit bei der Erkennung anstößiger Sprachen.
+
+#### <a name="anomaly-detections"></a>Anomale Erkennungen
+
+Zu den anomalen Erkennungen gehören Einstellungen für Dateitypen Ausschlüsse und Datei Volumenbeschränkungen.
+
+- **Dateitypen Ausschlüsse**: um bestimmte Dateitypen aus allen Richtlinien für die Insider Risikoverwaltung auszuschließen, geben Sie die Dateitypen Erweiterungen durch Kommas getrennt ein. Wenn Sie beispielsweise bestimmte Typen von Musikdateien aus Richtlinien Übereinstimmungen ausschließen möchten, können Sie im Feld **Dateitypen Ausschlüsse** *AAC, MP3, WAV, WMA* eingeben. Dateien mit diesen Erweiterungen würden von allen Insider Risk Management-Richtlinien ignoriert.
+- **Grenzwert für Datei Volumenbegrenzung**: um eine mindestdateimenge zu definieren, bevor Aktivitäts Warnungen in Insider Risikorichtlinien gemeldet werden, geben Sie die Anzahl der Dateien ein. Beispielsweise würden Sie "10" eingeben, wenn Sie keine Insider Risikowarnungen generieren möchten, wenn ein Benutzer 10 Dateien oder weniger herunterlädt, selbst wenn die Richtlinien dies als Anomalie ansehen.
+
+#### <a name="offensive-language-detections"></a>Anstößige Spracherkennungen
+
+Wählen Sie eine der folgenden Einstellungen aus, um die Empfindlichkeit der Klassifizierung für anstößige Sprachen für Richtlinien mithilfe der Vorlage *anstößige Sprache in e-Mail* anzupassen:
+
+- **Niedrig**: die niedrigste Empfindlichkeitsstufe mit dem breitesten Bereich für Erkennungs Offensive Sprache und Sentiment. Die Wahrscheinlichkeit, dass falsch positive Ergebnisse für anstößige Sprachen übereinstimmen, wird erhöht.
+- **Mittel**: die Empfindlichkeitsstufe auf mittlerer Ebene mit einem ausgewogenen Bereich für Erkennungs Offensive Sprache und Sentiment. Die Wahrscheinlichkeit, dass falsch positive Ergebnisse für anstößige Sprachen übereinstimmen, ist durchschnittlich.
+- **High**: die höchste Empfindlichkeitsstufe mit einem engen Bereich für Erkennungs Offensive Sprache und Sentiment. Die Wahrscheinlichkeit, dass falsch positive Ergebnisse für anstößige Sprachen übereinstimmen, ist gering.
 
 ## <a name="create-a-new-policy"></a>Erstellen einer neuen Richtlinie
 
@@ -75,7 +112,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Richtlinie zu erstellen:
 
 1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Richtlinien** aus.
 2. Wählen Sie **Richtlinie erstellen** aus, um den richtlinienassistenten zu öffnen
-3. Füllen Sie auf der Seite **neue Insider Risiko Richtlinie** die folgenden Felder aus:
+3. Füllen Sie auf der Seite **Ihre Richtlinie benennen und eine Vorlage auswählen** die folgenden Felder aus:
     - **Name (erforderlich)**: Geben Sie einen Anzeigenamen für die Richtlinie ein.
     - **Description (optional)**: Geben Sie eine Beschreibung für die Richtlinie ein.
     - **Richtlinienvorlage auswählen (erforderlich)**: Wählen Sie eine der [Richtlinienvorlagen](insider-risk-management-policies.md#policy-templates) aus, um die Arten von Risikoindikatoren zu definieren, die von der Richtlinie überwacht werden.
@@ -84,14 +121,14 @@ Führen Sie die folgenden Schritte aus, um eine neue Richtlinie zu erstellen:
     >Wenn Sie die *Datenlecks* -Vorlage auswählen, müssen Sie mindestens eine DLP-Richtlinie konfigurieren, die Sie später im Assistenten zuweisen. Wenn Sie die *Datendiebstahl Vorlage "departing Employee* " auswählen, müssen Sie den HR-Connector so konfigurieren, dass er die vollständigen Signal Erkennungsfunktionen der Richtlinienvorlage verwendet.
 
 4. Wählen Sie **weiter** aus, um fortzufahren.
-5. Wählen Sie auf der Seite **Benutzer** die Option **Benutzer oder Gruppe hinzufügen** aus, um zu definieren, welche Benutzer in das Kontrollkästchen Richtlinie eingeschlossen sind, oder **alle Benutzer und e-Mail-aktivierten Gruppen** auswählen. Wählen Sie **weiter** aus, um fortzufahren.
-6. Auf der Seite geben Sie an, **welche Inhalte priorisiert werden sollen (optional)** , können Sie die Quellen zuweisen, um riskante Benutzeraktivitäten zu priorisieren:
-    - SharePoint-Websites: Wählen Sie **SharePoint-Website hinzufügen** und die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"*.
-    - Typ vertraulicher Informationen: Wählen Sie **vertraulichen Infotyp hinzufügen** aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
-    - Vertraulichkeits Bezeichnungen: Wählen Sie **Vertraulichkeits Bezeichnung hinzufügen** aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
+5. Wählen Sie auf der Seite **Benutzer und Gruppen** auswählen die Option **Benutzer oder Gruppen** auswählen aus, um festzulegen, welche Benutzer in der Richtlinie enthalten sind, oder aktivieren Sie das Kontrollkästchen **alle Benutzer und e-Mail-aktivierten Gruppen** . Wählen Sie **weiter** aus, um fortzufahren.
+6. Auf der Seite geben Sie an, **welche Inhalte priorisiert werden sollen (optional)** , können Sie der erkannten Aktivität höhere Risikobewertungen zuweisen, basierend darauf, wo sich der zugehörige Inhalt befindet, welche vertraulichen Informationen enthalten sind und welche Vertraulichkeits Bezeichnungen angewendet werden:
+    - SharePoint-Websites: Wählen Sie **SharePoint-Websites** auswählen, und wählen Sie die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"*.
+    - Typ vertraulicher Informationen: Wählen Sie **vertrauliche Informationstypen** auswählen aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
+    - Vertraulichkeits Bezeichnungen: Wählen Sie **Vertraulichkeits Bezeichnungen** auswählen aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 7. Wählen Sie **weiter** aus, um fortzufahren.
-8. Auf der Seite **Warnungsindikatoren auswählen** werden die Indikatoren angezeigt, die in der Vorlage enthalten sind, die Sie für diese Richtlinie ausgewählt haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
-9. Auf der Seite **Überwachungsfenster auswählen** definieren Sie die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#monitoring-windows) für die Richtlinie. Konfigurieren Sie die Überwachungsfenster entsprechend.
+8. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite**Indikatoren** für **Insider Risiko Einstellungen** > definiert haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
+9. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die Sie in den Einstellungen für Insider Risiken konfiguriert haben. Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
 10. Wählen Sie **weiter** aus, um fortzufahren.
 11. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **senden** aus, um die Richtlinie zu erstellen und zu aktivieren.
 
@@ -108,14 +145,14 @@ Führen Sie die folgenden Schritte aus, um eine vorhandene Richtlinie zu verwalt
     - **Name**: der Anzeigename für die Richtlinie
     - **Wählen Sie**Textbuch: die Vorlage, mit der die Typen von Risikoindikatoren definiert werden, die von der Richtlinie überwacht werden.
 5. Geben Sie eine neue Beschreibung für die Richtlinie in das Feld **Beschreibung** ein. Wählen Sie **weiter** aus, um fortzufahren.
-6. Wählen Sie auf der Seite **Benutzer** die Option **Benutzer oder Gruppe hinzufügen** aus, um zu definieren, welche Benutzer in das Kontrollkästchen Richtlinie eingeschlossen sind, oder **alle Benutzer und e-Mail-aktivierten Gruppen** auswählen. Wählen Sie **weiter** aus, um fortzufahren
+6. Wählen Sie auf der Seite **Benutzer und Gruppen** auswählen die Option **Benutzer oder Gruppen** auswählen aus, um festzulegen, welche Benutzer in der Richtlinie enthalten sind, oder aktivieren Sie das Kontrollkästchen **alle Benutzer und e-Mail-aktivierten Gruppen** . Wählen Sie **weiter** aus, um fortzufahren
 7. Aktualisieren Sie auf der Seite **Geben Sie an, welche Inhalte priorisiert werden sollen (optional)** die Quellen an, um Prioritäten für riskante Benutzeraktivitäten zu setzen:
-    - SharePoint-Websites: Wählen Sie **SharePoint-Website hinzufügen** und die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"*.
-    - Typ vertraulicher Informationen: Wählen Sie **vertraulichen Infotyp hinzufügen** aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
-    - Vertraulichkeits Bezeichnungen: Wählen Sie **Vertraulichkeits Bezeichnung hinzufügen** aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
+    - SharePoint-Websites: Wählen Sie **SharePoint-Websites** auswählen, und wählen Sie die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"*.
+    - Typ vertraulicher Informationen: Wählen Sie **vertrauliche Informationstypen** auswählen aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
+    - Vertraulichkeits Bezeichnungen: Wählen Sie **Vertraulichkeits Bezeichnungen** auswählen aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 8. Wählen Sie **weiter** aus, um fortzufahren.
-9. Auf der Seite **Warnungsindikatoren auswählen** werden die Indikatoren angezeigt, die in der Vorlage enthalten sind, die Sie für diese Richtlinie ausgewählt haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
-10. Auf der Seite **Überwachungsfenster auswählen** definieren Sie die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#monitoring-windows) für die Richtlinie. Konfigurieren Sie die Überwachungsfenster entsprechend.
+9. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite**Indikatoren** für **Insider Risiko Einstellungen** > definiert haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
+10. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die Sie in den Einstellungen für Insider Risiken konfiguriert haben. Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
 11. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **Submit** to Update aus, und aktivieren Sie die Änderungen in der Richtlinie.
 
 ## <a name="delete-a-policy"></a>Löschen einer Richtlinie

@@ -1,5 +1,5 @@
 ---
-title: Insider Risk Management-Benachrichtigungsvorlagen (Vorschau)
+title: Insider Risk Management-Benachrichtigungsvorlagen
 description: Informationen zu Insider Risk Management-Benachrichtigungsvorlagen in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072806"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179086"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>Insider Risk Management-Benachrichtigungsvorlagen (Vorschau)
+# <a name="insider-risk-management-notice-templates"></a>Insider Risk Management-Benachrichtigungsvorlagen
 
 Insider Risk Management-Benachrichtigungsvorlagen ermöglichen das Senden von e-Mail-Nachrichten an Mitarbeiter, wenn ihre Aktivitäten eine Richtlinienübereinstimmung und-Warnung generieren. In den meisten Fällen sind Mitarbeiter Aktionen, die Warnungen generieren, das Ergebnis von Fehlern oder versehentlichen Aktivitäten ohne böswillige Absicht. Benachrichtigungen dienen als einfache Erinnerungen an Mitarbeiter, um vorsichtiger zu sein oder um Links oder Informationen für Auffrischungsschulungen oder Unternehmensrichtlinien Ressourcen bereitzustellen. Benachrichtigungen können ein wichtiger Bestandteilihres internen Compliance-Schulungsprogramms sein und können bei der Erstellung eines dokumentierten Überwachungspfads für Mitarbeiter mit wiederkehrenden Risiko Aktivitäten behilflich sein.
 

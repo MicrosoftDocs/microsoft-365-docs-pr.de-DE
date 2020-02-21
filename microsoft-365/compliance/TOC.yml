@@ -18,23 +18,23 @@
       href: plan-for-security-and-compliance.md
 - name: Verwalten von Insider Risiken
   items:
-    - name: Insider Risikomanagement (Vorschau)
+    - name: Insider Risikomanagement
       items:
-        - name: Informationen zum Insider Risikomanagement (Vorschau)
+        - name: Informationen zum Insider-Risikomanagement
           href: insider-risk-management.md
-        - name: Erste Schritte mit dem Insider Risikomanagement (Vorschau)
+        - name: Erste Schritte mit dem Insider Risikomanagement
           href: insider-risk-management-configure.md
-        - name: Erstellen und Verwalten von Insider Risikorichtlinien (Vorschau)
+        - name: Erstellen und Verwalten von Insider Risikorichtlinien
           href: insider-risk-management-policies.md
-        - name: Untersuchen von Insider Risikowarnungen (Vorschau)
+        - name: Untersuchen von Insider Risikowarnungen
           href: insider-risk-management-alerts.md
-        - name: Aktionen für Insider Risiko Fälle ausführen (Vorschau)
+        - name: Durchführen von Aktionen bei Insider Risikofällen
           href: insider-risk-management-cases.md
-        - name: Überprüfen der Daten mit dem Insider Risiko-Inhalts-Explorer (Vorschau)
+        - name: Überprüfen der Daten mit dem Insider Risiko-Inhalts-Explorer
           href: insider-risk-management-content-explorer.md
-        - name: Hinzufügen von Benutzern zu Insider Risikorichtlinien (Vorschau)
+        - name: Hinzufügen von Benutzern zu Insider Risikorichtlinien
           href: insider-risk-management-users.md
-        - name: Erstellen von Insider Risiko-Benachrichtigungsvorlagen (Vorschau)
+        - name: Erstellen von Insider Risiko-Benachrichtigungsvorlagen
           href: insider-risk-management-notices.md
     - name: Kommunikationscompliance
       items:
@@ -92,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Verwenden von Sensitivitäts Bezeichnungen in Office-Apps
+        - name: Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
           href: sensitivity-labels-office-apps.md
     - name: 'Verhinderung von Datenverlusten (Data Loss Prevention, DLP)'
       href: data-loss-prevention-policies.md
@@ -133,7 +133,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=852306'
         - name: Anpassen eines benutzerdefinierten vertraulichen Informationstyps
           href: customize-a-built-in-sensitive-information-type.md
-        - name: Benutzerdefinierte Typen vertraulicher Informationen
+        - name: Benutzerdefinierten Typen vertraulicher Informationen
           href: custom-sensitive-info-types.md
         - name: Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
@@ -806,8 +806,7 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: |
-            Schutz von Daten
+        - name: Schutz von Daten
           href: gdpr-information-protection.md
         - name: Datensubjektanforderungen
           items:

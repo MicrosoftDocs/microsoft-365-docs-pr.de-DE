@@ -1,5 +1,5 @@
 ---
-title: Insider Risk Management-Inhalts-Explorer (Vorschau)
+title: Insider Risikomanagement-Inhalts-Explorer
 description: Informationen zum Insider Risk Management-Inhalts-Explorer in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8c1c77bdfa3236ce8f2222fd21a7fba0535f149
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68a472e4e6b7556fc1b738a49b3c82dcf4804842
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590646"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179076"
 ---
-# <a name="insider-risk-management-content-explorer-preview"></a>Insider Risk Management-Inhalts-Explorer (Vorschau)
+# <a name="insider-risk-management-content-explorer"></a>Insider Risikomanagement-Inhalts-Explorer
 
 Das Insider Risk Management Content Explorer ermöglicht Risikoanalysten und Ermittlern, den Kontext und die Details der in Warnungen erfassten Kommunikation zu untersuchen. Bei allen Warnungen werden Kopien von Daten und Nachrichtendateien als Momentaufnahme der Elemente archiviert, wobei die ursprünglichen Dateien und Nachrichten in den Speicherquellen beibehalten werden. Das Kopieren von Daten und Nachrichten ist für den der Warnung zugeordneten Mitarbeiter und den Besitzer des Inhalts transparent. Die Berechtigungseinstellungen und Zugriffsrechte für die Daten werden für den kopierten Inhalt und Nachrichten verwaltet, und Risikoanalysten und Ermittler benötigen diese Berechtigungen und Rechte, wenn Sie die Dateien öffnen und anzeigen müssen. Jeder Datei und jeder Nachricht wird im Fall des Insider Risikomanagements für Verwaltungszwecke automatisch eine eindeutige Datei-ID zugewiesen.
 
@@ -56,14 +56,14 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 | **Received** | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Empfangen“. |
 | **Empfänger** | Alle Empfängerfelder in einer e-Mail-Nachricht. Diese Felder sind to, CC und Bcc. |
 | **Vertreter-ID** | Numerischer Bezeichner der einzelnen Sätze exakter Duplikate. |
-| **Absender** | Der Absender einer E-Mail-Nachricht. |
+| **Sender** | Der Absender einer E-Mail-Nachricht. |
 | **Absender/Autor** | Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 | **Sent** | Das Datum, an dem eine E-Mail vom Absender gesendet wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Gesendet“. |
-| **Größe** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
+| **Size** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
 | **Betreff** | Der Text in der Betreffzeile einer E-Mail. |
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 | **Themenliste** | Für Analyse berechnete Themenliste. |
-| **Title** | Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments. |
+| **Titel** | Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments. |
 | **Ziel** | Der Empfänger einer e-Mail-Nachricht im Feld an. |
 
 ## <a name="advanced-search-conditions"></a>Erweiterte Suchbedingungen
@@ -101,7 +101,7 @@ Erweitern Sie für erweiterte Filter-und Such Tools den Bereich **Filter** auf d
 |:---------------------|:----------------|
 | **Date** | Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Für Dokumente das Datum, an dem ein Dokument zuletzt geändert wurde. |
 | **Absender/Autor** | Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden. |
-| **Größe** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
+| **Size** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Bei der Title-Eigenschaft in Documents handelt es sich um in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 
 ### <a name="email-property-conditions"></a>Bedingungen für die e-Mail-Eigenschaft
@@ -115,7 +115,7 @@ In der folgenden Tabelle sind die Eigenschaftenbedingungen für e-Mail-Nachricht
 | **E-Mail-Sicherheit** | Sicherheitseinstellung der Nachricht. |
 | **E-Mail-Empfindlichkeit** | Empfindlichkeitseinstellung der Nachricht. |
 | **E-Mail-ID festlegen** | Gruppen-ID für alle Nachrichten in derselben e-Mail-Gruppe. |
-| **Von** | Der Absender einer E-Mail-Nachricht. |
+| **From** | Der Absender einer E-Mail-Nachricht. |
 | **Weist eine Anlage auf** | Gibt an, ob eine Nachricht eine Anlage enthält. Verwenden Sie die Werte **true** oder **false**. |
 | **Importance** | Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Standardmäßig werden Nachrichten mit normaler Wichtigkeit gesendet, außer wenn der Absender die Wichtigkeit auf **Hoch** oder **Niedrig** setzt.   |
 | **Enddatum der Besprechung** | Termin für Besprechungsende für Besprechungen. |
@@ -125,7 +125,7 @@ In der folgenden Tabelle sind die Eigenschaftenbedingungen für e-Mail-Nachricht
 | **Teilnehmer** | Alle Personen Felder in einer e-Mail-Nachricht. Diese Felder sind von, in, CC und Bcc. |
 | **Received** | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. |
 | **Empfängerdomänen** | Liste aller Domänen der Empfänger einer Nachricht. |
-| **Absender** | Absenderfeld (von) für Nachrichtentypen.  Das Format **ist \<DisplayName SmtpAddress>**. |
+| **Sender** | Absenderfeld (von) für Nachrichtentypen.  Das Format **ist \<DisplayName SmtpAddress>**. |
 | **Absenderdomäne** | Domäne des Absenders. |
 | **Betreff** | Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden, gibt die Suche alle Nachrichten zurück, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten: die Abfrage gibt nicht nur die Nachrichten zurück, die eine exakte Übereinstimmung aufweisen. Wenn Sie beispielsweise nach suchen `subject:"Quarterly Financials"`, enthalten Ihre Ergebnisse Nachrichten mit dem Betreff "Quarterly Financials 2018". |
 | **Ziel** | Das Feld „An“ einer E-Mail-Nachricht. |
@@ -168,6 +168,6 @@ In der folgenden Tabelle sind die Dokumenteigenschaften Bedingungen aufgelistet,
 | **Vertreter-ID** | Numerischer Bezeichner der einzelnen Sätze exakter Duplikate. |
 | **Tags** | In einem Überprüfungs Satzes angewendete Tags. |
 | **Themenliste** | Für Analyse berechnete Themenliste. |
-| **Title** | Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments. |
+| **Titel** | Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments. |
 | **Wurde behoben** | True, wenn das Element behoben wurde, andernfalls false. |
 | **Wörter zählen** | Die Anzahl der Wörter in einer Datei. |

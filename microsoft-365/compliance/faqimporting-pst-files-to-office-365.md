@@ -15,13 +15,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: 'Häufig gestellte Fragen an Administratoren zur Verwendung des Office 365-Import Diensts zum Importieren der PST-Dateien Ihres Organizaiton in Office 365 Postfächer. '
-ms.openlocfilehash: dcbc496273a08ea133cc11bacbb62f55eee58917
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 'Häufig gestellte Fragen an Administratoren zur Verwendung des Office 365-Import Diensts zum Importieren der PST-Dateien Ihrer Organisation in Office 365 Postfächer. '
+ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594586"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170485"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>FAQ zum Importieren von PST-Dateien in Office 365
 
@@ -50,7 +50,10 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
   
  **Wo ist der Netzwerkupload verfügbar?**
   
-Netzwerk Upload ist derzeit in den Vereinigten Staaten, Kanada, Brasilien, Großbritannien, Frankreich, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea und Australien verfügbar. Network upload will be available in more regions soon.
+Netzwerk Upload ist derzeit in diesen Regionen verfügbar: USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea und Australien. Network upload will be available in more regions soon.
+
+> [!NOTE]
+> Zu diesem Zeitpunkt ist der Netzwerk Upload von PST-Dateien in Deutschland und in der Schweiz nicht verfügbar. Diese FAQ werden aktualisiert, wenn Netzwerk Uploads in diesen Ländern verfügbar sind.
   
  **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   
@@ -72,7 +75,7 @@ Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im
   
  **Wie lange dauert das Importieren einer PST-Datei in ein Postfach?**
   
-Das hängt von der Kapazität des Netzwerks ab, aber normalerweise dauert es mehrere Stunden für jedes Terabyte (TB) an Daten, bis es in den Azure-Speicherbereich für Ihr Unternehmen hochgeladen wurde. Nachdem die PST-Dateien in den Azure-Speicherbereich kopiert wurden, wird eine PST-Datei mit einer Übertragungsrate von mindestens 24 GB pro Tag in ein Office 365-Postfach importiert. Wenn diese Rate nicht Ihren Anforderungen entspricht, sollten Sie ggf. andere Methoden zum Migrieren von E-Mail-Daten zu Office 365 in Betracht ziehen. Weitere Informationen finden Sie unter [Methoden zum Migrieren von mehreren E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Das hängt von der Kapazität des Netzwerks ab, doch normalerweise dauert es mehrere Stunden für jedes Terabyte (TB) an Daten, bis es in den Azure-Speicherbereich für Ihr Unternehmen hochgeladen wurde. Nachdem die PST-Dateien in den Azure-Speicherbereich kopiert wurden, wird eine PST-Datei mit einer Übertragungsrate von mindestens 24 GB pro Tag in ein Office 365-Postfach importiert. Wenn diese Rate nicht Ihren Anforderungen entspricht, sollten Sie ggf. andere Methoden zum Migrieren von E-Mail-Daten zu Office 365 in Betracht ziehen. Weitere Informationen finden Sie unter [Methoden zum Migrieren von mehreren E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
   
 Wenn verschiedene PST-Dateien in unterschiedliche Zielpostfächer importiert werden, erfolgt der Importvorgang parallel, d. h. jedes PST-Postfach-Paar wird gleichzeitig importiert. Wenn mehrere PST-Dateien in dasselbe Postfach importiert werden, werden sie ebenfalls gleichzeitig importiert.
   
@@ -122,6 +125,9 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
  **Wo ist der Laufwerkversand verfügbar?**
   
 Der Laufwerkversand ist derzeit in den USA, Kanada, Brasilien, Vereinigtem Königreich, Europa, Indien, Ostasien, Südostasien, Japan, Republik Korea und Australien verfügbar. Der Laufwerkversand wird in Kürze in weiteren Regionen zur Verfügung gestellt.
+
+> [!NOTE]
+> Zu diesem Zeitpunkt ist der Laufwerk Versand zu Import-PST-Dateien in Deutschland und der Schweiz nicht verfügbar. Diese FAQ werden aktualisiert, wenn der Laufwerk Versand in diesen Ländern verfügbar ist.
   
  **Welche kommerziellen Lizenzvereinbarungen unterstützen den Laufwerksversand?**
   
@@ -148,7 +154,7 @@ Dies hängt von ein paar Dingen ab, z. B. von der Entfernung zum Microsoft-Reche
   
  **Wie lange dauert das Hochladen meiner PST-Dateien nach Azure, nachdem meine Festplatte im Microsoft Data Center eingetroffen ist?**
   
-Nachdem Ihre Festplatte im Microsoft-Rechenzentrum eingetroffen ist, werden die PST-Dateien innerhalb von 7 bis 10 Werktagen in den Microsoft Azure-Speicherbereich für Ihre Organisation hochgeladen. Die PST-Dateien werden in einen Azure-BLOB-Container mit dem Namen **ingestiondata**hochgeladen. 
+Nachdem Ihre Festplatte im Microsoft-Rechenzentrum empfangen wurde, dauert es zwischen 7 und 10 Werktage, bis Sie die PST-Dateien in den Azure-Speicherbereich Ihrer Organisation hochgeladen haben. Die PST-Dateien werden in einen Azure-BLOB-Container mit dem Namen **ingestiondata**hochgeladen. 
   
  **Wie lange dauert das Importieren einer PST-Datei in ein Postfach?**
   
@@ -158,7 +164,7 @@ Wenn verschiedene PST-Dateien in unterschiedliche Zielpostfächer importiert wer
   
  **Wie lange verbleiben meine PST-Dateien, nachdem Microsoft sie in Azure hochgeladen hat, in Azure, bevor sie gelöscht werden?**
   
-Alle PST-Dateien am Azure-Speicherort für Ihre Organisation (im BLOB-Container mit dem Namen **ingestiondata** ) werden 30 Tage nach dem Erstellen des letzten importauftrags auf der Seite **PST-Dateien importieren** im Security #a0 Compliance Center gelöscht. 
+Alle PST-Dateien am Azure-Speicherort für Ihre Organisation (im BLOB-Container mit dem Namen **ingestiondata**) werden 30 Tage nach dem Erstellen des letzten importauftrags auf der Seite **PST-Dateien importieren** im Security & Compliance Center gelöscht. 
   
 Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im Security & Compliance Center nicht mehr in der Dateiliste für einen abgeschlossenen Importauftrag angezeigt werden. Es kann zwar sein, dass auf der Seite **PST-Dateien importieren** im Security & Compliance Center ältere Importaufträge noch aufgeführt sind, die Liste der PST-Dateien könnte jedoch leer sein, wenn Sie die Details anzeigen. 
   
