@@ -1,4 +1,4 @@
-- name: Sicherheit in Microsoft 365
+- name: Microsoft 365-Sicherheit
   href: index.yml
   items:
     - name: Erste Schritte
@@ -67,9 +67,11 @@
               items:
                 - name: Luft Übersicht
                   href: mtp/mtp-autoir.md
-                - name: Aufrufen des Info-Centers
+                - name: Anzeigen von Korrekturaktionen
+                  href: mtp/mtp-remediation-actions.md
+                - name: Besuchen des Aktions Centers
                   href: mtp/mtp-action-center.md
-                - name: Anzeigen von Luft Ergebnissen
+                - name: Anzeigen von Untersuchungsergebnissen
                   href: mtp/mtp-autoir-results.md
                 - name: Genehmigen oder Ablehnen ausstehender Aktionen
                   href: mtp/mtp-autoir-actions.md
@@ -364,6 +366,20 @@
               href: ./office-365-security/campaigns.md
             - name: Grundlegendes zu neuesten Angriffen mit Threat Analytics
               href: ./mtp/latest-attack-campaigns.md
+            - name: Automatische Untersuchung und Reaktion
+              items:
+                - name: Übersicht über Air
+                  href: ./office-365-security/office-365-air.md
+                - name: Anzeigen von Details und Ergebnissen einer Untersuchung
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: Anzeigen und Genehmigen von Korrekturaktionen
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: Integrieren von Air mit einer benutzerdefinierten oder einer Drittanbieter-Berichtslösung
+                  href: ./office-365-security/air-custom-reporting.md
+            - name: Schnelles erkennen und adressieren kompromittierter Benutzerkonten
+              href: ./office-365-security/address-compromised-users-quickly.md
+            - name: Untersuchen und Beheben von böswilligen e-Mails
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Anzeigen und Lesen Ihrer ATP-Berichte
               href: ./office-365-security/view-reports-for-atp.md
             - name: Bedeutung von Warnungsseiten für ATP-sichere Links
@@ -372,12 +388,6 @@
               href: ./office-365-security/threat-trackers.md
             - name: Verwendung des Angriffssimulators in Office 365
               href: ./office-365-security/attack-simulator.md
-            - name: Schützen Sie Benutzer durch die Untersuchung von und Antwort auf Bedrohungen
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-            - name: Automatische Untersuchung und Reaktion auf Bedrohungen in Office 365
-              href: ./office-365-security/office-365-air.md
-            - name: 'Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden'
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Sichere Dokumente in Office 365 ATP
               href: ./office-365-security/safe-docs.md
             - name: Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)
@@ -393,6 +403,8 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Funktionsweise von ATP
               items:
+                - name: Funktionsweise von automatisierten Untersuchungen und Antworten
+                  href: ./office-365-security/automated-investigation-response-office.md
                 - name: Funktionsweise des ATP-Features für sichere Links
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: Funktionsweise von sicheren Anlagen in ATP
@@ -403,8 +415,6 @@
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: Wie die Untersuchung von und Antwort auf Bedrohungen funktioniert
                   href: ./office-365-security/office-365-ti.md
-                - name: Funktionsweise der automatischen Untersuchung und Reaktion
-                  href: ./office-365-security/automated-investigation-response-office.md
         - name: Verwalten von Sicherheitsvorfällen
           items:
             - name: Reaktion auf Sicherheitsvorfälle in Office 365
