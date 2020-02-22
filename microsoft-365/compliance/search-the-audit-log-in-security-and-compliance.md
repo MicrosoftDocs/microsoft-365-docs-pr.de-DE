@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091368"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219186"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -62,6 +62,8 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 - Aktivitäten von Benutzern und Administratoren in Microsoft Power Apps
 
 - Aktivitäten von Benutzern und Administratoren in Microsoft Forms
+
+- Benutzer- und Administratoraktivität für Vertraulichkeitsbezeichnungen für Websites, die SharePoint Online oder Microsoft Teams verwenden
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -309,7 +311,7 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Yammer-Aktivitäten](#yammer-activities)|
 |[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
-|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
+|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
@@ -330,7 +332,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Datei aus Papierkorb gelöscht|FileDeletedFirstStageRecycleBin|Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.|
 |Datei aus endgültigem Papierkorb gelöscht|FileDeletedSecondStageRecycleBin|Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.|
 |Konformitätsrichtlinienbezeichnung gelöscht|ComplianceRecordDelete|Ein Dokument, das als Datensatz klassifiziert wurde, wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz klassifiziert, auf das Dokument angewendet wird.|
-|Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument hoch, das mit einer Vertraulichkeitskennzeichnung klassifiziert wurde, die eine höhere Priorität hat als der die Vertraulichkeitskennzeichnung, die auf die Website angewendet wird, auf die das Dokument hochgeladen wird. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf eine Website angewendete Vertraulichkeitskennzeichnung eine höhere Priorität hat als die auf ein Dokument, das auf die Website hochgeladen wurde, angewendete Vertraulichkeitskennzeichnung. Weitere Informationen zur Priorität von Vertraulichkeitsbezeichnungen finden Sie im Abschnitt „Prioritäten von Bezeichnungen" in [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md#label-priority-order-matters).|
+|Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument auf eine Website hoch, die mit einer Vertraulichkeitsbezeichnung geschützt ist, und das Dokument weist eine niedrigere Vertraulichkeitsbezeichnung als die Website auf. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf die Website angewendete Vertraulichkeitsbezeichnung eine höhere Priorität hat als die angewendete Vertraulichkeitsbezeichnung auf ein Dokument, das auf die Website hochgeladen wurde. Weitere Informationen über die Priorität von Vertraulichkeitsbezeichnungen finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware in einer Datei erkannt|FileMalwareDetected|Der SharePoint-Virenschutz erkennt Schadsoftware in einer Datei.|
 |Auschecken einer Datei verworfen|FileCheckOutDiscarded|Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.|
 |Datei heruntergeladen|FileDownloaded|Der Benutzer lädt ein Dokument von einer Website herunter.|
@@ -350,6 +352,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Aufruf wird vom Client signalisiert|ClientViewSignaled|Ein Benutzerclient (z. b. eine Website oder einer mobile App) hat signalisiert, dass die angegebene Seite vom Benutzer aufgerufen wurde. Diese Aktivität wird häufig nach einem PagePrefetched-Ereignis für eine Seite protokolliert. <br/><br/>**Hinweis**: Da ClientViewSignaled-Ereignisse vom Client und nicht vom Server signalisiert werden, ist es möglich, dass das Ereignis nicht vom Server protokolliert wird und daher im Überwachungsprotokoll nicht auftaucht. Es ist auch möglich, dass die Informationen im Überwachungsdatensatz möglicherweise nicht zuverlässig sind. Da die Identität des Benutzers aber durch das Token überprüft wird, mit dem das Signal erstellt wurde, ist die im entsprechenden Überwachungsdatensatz aufgelistete Identität des Benutzers korrekt. |
 |(keine)|PagePrefetched|Der Client eines Benutzers (beispielsweise eine Website oder eine Mobile App) hat die angegebene Seite angefordert, um die Leistung zu verbessern, wenn der Benutzer zu ihr navigiert. Dieses Ereignis wird protokolliert, um anzugeben, dass der Seiteninhalt für den Client des Benutzers bereitgestellt wurden. Dieses Ereignis ist kein definitiver Hinweis darauf, dass der Benutzer zu der Seite navigiert ist. <br/><br/> Wenn der Seiteninhalt vom Client (gemäß der Anforderung des Benutzers) gerendert wird, sollte ein ClientViewSignaled-Ereignis generiert werden. Nicht alle Clients unterstützen Prefetches, und daher werden einige möglicherweise stattdessen als PageViewed-Ereignisse protokolliert.|
 ||||
+
 
 ### <a name="folder-activities"></a>Ordneraktivitäten
 
@@ -822,6 +825,18 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Gesendete Antwort|SubmitResponse|Ein Benutzer sendet eine Antwort auf ein Formular. <br><br>Eigenschaft IsInternalForm: Boolescher Wert gibt an, ob der Responder der gleichen Organisation angehört wie der Formularbesitzer.|
 ||||
 
+### <a name="sensitivity-label-activities"></a>Vertraulichkeitsbezeichnungsaktivitäten 
+
+In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsaktivitäten für SharePoint Online- und Teams-Websites ergeben.
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Vertraulichkeitsbezeichnung wurde auf Website angewendet|SensitivityLabelApplied|Auf eine SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung angewendet.|
+|Vertraulichkeitsbezeichnung wurde von Website entfernt|SensitivityLabelRemoved|Von einer SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung entfernt.|
+|Vertraulichkeitsbezeichnung wurde auf Datei angewendet|FileSensitivityLabelApplied|Unter Verwendung von Office im Web wurde eine Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
+|Auf Datei angewendete Vertraulichkeitsbezeichnung wurde geändert|FileSensitivityLabelChanged|Unter Verwendung von Office im Web wurde eine andere Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
+|Vertraulichkeitsbezeichnung wurde von Datei entfernt|FileSensitivityLabelRemoved|Unter Verwendung von Office im Web wurde eine Vertraulichkeitsbezeichnung von einem Dokument entfernt.|
+
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administratorüberwachungsprotokoll
 
 Mit der Exchange-Administratorüberwachungsprotokollierung, die in Office 365 standardmäßig aktiviert ist, wird ein Ereignis im Office 365--Überwachungsprotokoll erfasst, wenn ein Administrator (oder ein Benutzer, dem Administratorrechte zugewiesen wurden) eine Änderung in Ihrer Exchange Online-Organisation vornimmt. Änderungen, die im Exchange Admin Center oder durch Ausführen eines Cmdlets in der Exchange Online PowerShell vorgenommen werden, werden im Exchange-Administratorüberwachungsprotokoll erfasst. Cmdlets, die mit den Verben **Get-**, **Search-** oder **Test-** beginnen, werden nicht im Office 365-Überwachungsprotokoll protokolliert. Ausführlichere Informationen zur Administratorüberwachungsprotokollierung in Exchange finden Sie unter [Administratorüberwachungsprotokollierung](https://go.microsoft.com/fwlink/p/?LinkID=619225).
@@ -848,6 +863,7 @@ Nachfolgend finden Sie einige Tipps für die Suche nach Exchange-Administratorak
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    Bitte denken Sie daran, dass dieselben Exchange-Administratoraktivitäten sowohl im Exchange-Administratorüberwachungsprotokoll als auch im Office 365-Überwachungsprotokoll protokolliert werden.
+
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
