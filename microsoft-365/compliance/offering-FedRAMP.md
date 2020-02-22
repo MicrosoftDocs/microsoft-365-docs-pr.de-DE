@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851862"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222087"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -65,14 +65,14 @@ Sobald eine P-ATO erteilt wurde, benötigt ein CSP weiterhin eine Autorisierung 
 - Office 365 (Enterprise-und Business-Pläne) und Office 365 US-Regierung haben eine FedRAMP Agency ATO auf der moderaten Impact-Ebene aus dem Department of Health and Human Services (DHHS) Büro des Generalinspektors. Office 365 US-Regierung war der erste Cloud-basierte e-Mail-und Zusammenarbeits Dienst, um diese Autorisierung zu erhalten.
 - Jeder Kunde, der O365 US-Regierungs Verteidigung konsumieren möchte, kann die DISA P-ATO verwenden, um eine Agentur ATO zu generieren, um Ihre Akzeptanz von O365 zu dokumentieren.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 und Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
 - Office 365 U.S. Government Defense
-- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
 - Microsoft Defender ATP
 
 > [!NOTE]
@@ -109,9 +109,9 @@ Eine Übersicht über die Schritte, die Bundesbehörden ausführen müssen, um F
 
 Ja. Sie können die Zertifizierungen von Microsoft Cloud Services als Grundlage für jedes Programm oder jede Initiative verwenden, für die eine ATO-Instanz von einer Bundesregierung benötigt wird. Sie müssen jedoch eigene Berechtigungen für Komponenten außerhalb dieser Dienste erzielen.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [FedRAMP-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118102) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [FedRAMP-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118102) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

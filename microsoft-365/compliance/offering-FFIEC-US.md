@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851822"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222068"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Federal Financial Institutions Examination Council (FFIEC)
 
@@ -42,7 +42,7 @@ Damit Kunden von Finanzinstituten ihre FFIEC-Compliance-Anforderungen mit Azure 
 
 Zur weiteren Unterstützung bei der Erfüllung der FFIEC-Anforderungen bieten Microsoft Cloud Services [SOC-Bestätigungs Berichte](offering-SOC.md) , die von einer unabhängigen CPA-Firma erstellt wurden. Die Zertifizierung für SOC 1 Typ 2 basiert beispielsweise auf dem AICPA SSAE 18-Standard (siehe Abschnitt "at-C" 105), der SAS 70 ersetzt hat und für die Berichterstellung über bestimmte Steuerelemente für die Finanzberichterstattung geeignet ist. Die SoC-Berichte enthalten die Stellungnahme des Auditors zur Effektivität von Microsoft-Steuerelementen bei der Erreichung der zugehörigen Kontrollziele während des angegebenen Überwachungszeitraums. Finanzinstitute können diese formelle Überwachung bei der Verfolgung von FFIEC-spezifischen Compliance-Verpflichtungen für in Azure, Power BI und Office 365 bereitgestellte Ressourcen verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -59,9 +59,9 @@ Azure-und Office 365 SOC-Bestätigungs Berichte.
 
 Um Sie bei der Erfüllung dieser Verpflichtungen zu unterstützen, stellt Microsoft die Einzelheiten zur Einhaltung unserer SOC-Standards wie oben beschrieben zur Verfügung. Letztlich liegt es jedoch an Ihnen, festzustellen, ob unsere Dienste den spezifischen Gesetzen und Bestimmungen entsprechen, die für Ihre Institution gelten. Das FFIEC rät außerdem davon ab, dass Benutzer von Überwachungsberichten oder-Überprüfungen nicht allein auf die im Bericht enthaltenen Informationen Vertrauen sollten, um die interne Kontrollumgebung des TSP zu überprüfen. Sie sollten zusätzliche Überprüfungs-und Überwachungsverfahren verwenden, die in der [Broschüre "Outsourcing Technology](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) " des FFIEC-IT-Prüfungs Handbuchs näher erläutert werden. "
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [FFIEC Office 365 Vorlage](https://go.microsoft.com/fwlink/?linkid=2117912) und die [FFIEC InTune-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118101) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie im Dropdownmenü **Vorlage** die Vorlage vorkonfigurierte [FFIEC Office 365 Vorlage](https://go.microsoft.com/fwlink/?linkid=2117912) und [FFIEC InTune](https://go.microsoft.com/fwlink/?linkid=2118101) aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 
@@ -75,7 +75,7 @@ Um Sie bei der Erfüllung dieser Verpflichtungen zu unterstützen, stellt Micros
 ## <a name="other-microsoft-resources-for-financial-services"></a>Weitere Microsoft-Ressourcen für Finanzdienste
 
 - [Microsoft Compliance-Programm für Finanzdienstleiter](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Finanzdienstleister-Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Financial Services Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft-Clouddienste für Unternehmen und Finanzdienstleistungen](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Die gemeinsame Verantwortung beim Cloud Computing](https://aka.ms/sharedresponsibility)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

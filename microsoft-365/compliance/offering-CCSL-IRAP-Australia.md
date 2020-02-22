@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 98b669a216b5c3a875cb1a42fd0cc97fb6112f1b
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851852"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222107"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Australian Government Information Security registered Auditor Program (IRAP)
 
@@ -63,7 +63,7 @@ Wie immer können zusätzliche Kompensations Kontrollen von einzelnen Agenturen 
 
 Die IRAP-Bewertung der Dienste von Microsoft trägt dazu bei, dass Kunden aus dem öffentlichen Sektor in der Regierung und ihren Partnern sicherstellen, dass Microsoft geeignete und effektive Sicherheitskontrollen für die Verarbeitung, Speicherung und Übertragung geschützter und unter Verschluss Informationen. Dies umfasst die Mehrzahl der staatlichen, Gesundheits-und Bildungsdaten in Australien.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Dynamics](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -86,9 +86,9 @@ Beginnen Sie mit dem, [Was ist IRAP?](https://www.cyber.gov.au/irap/what-irap) u
 - [Wer bietet IRAP-Schulungen an?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informationen zu Compliance-und nicht Compliance-Anforderungen](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [IRAP-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117913) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [IRAP-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117913) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

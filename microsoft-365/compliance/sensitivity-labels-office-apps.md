@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Sensitivitäts Bezeichnungen in Office-Apps
+title: Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Benutzer mit Sensitivitäts Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101235"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225503"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Sensitivitäts Bezeichnungen in Office-Apps
+# <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
 Wenn Sie Sensitivitäts Bezeichnungen aus dem Microsoft 365 Compliance Center oder einem entsprechenden Bezeichnungs Center [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) haben, werden diese in Office-Apps angezeigt, damit Benutzerdaten beim Erstellen oder bearbeiten klassifizieren und schützen können.
 
@@ -123,10 +123,15 @@ Wenn Sie vorhandene Schutz Vorlagen in Bezeichnungen konvertieren müssen, verwe
 
 Benutzer können jeweils nur eine Bezeichnung für jedes Dokument oder jede e-Mail anwenden.
 
-Wenn Sie eine e-Mail-Nachricht mit Anlagen bezeichnen, erben die Anlagen nicht die Bezeichnung:
+Wenn Sie eine e-Mail-Nachricht mit Anlagen bezeichnen, erben die Anlagen die Bezeichnung nicht mit einer Ausnahme:
 
-- Wenn die Anlagen eine Bezeichnung aufweisen, behalten Sie diese separat angewendete Bezeichnung bei.
-- Wenn die Anlagen keine Bezeichnung aufweisen, verbleiben die Anlagen ohne Beschriftung. Wenn die Bezeichnung für die E-Mail-Adresse aber Schutz anwendet, wird dieser Schutz für Office-Anlagen übernommen.
+- Bei der Anlage handelt es sich um ein Office-Dokument mit einer Bezeichnung, die keine Verschlüsselung zulässt, und die auf die e-Mail-Nachricht angewendete Bezeichnung wendet die Verschlüsselung an. In diesem Fall erbt das e-Mail-Office-Dokument das Label der e-Mail mit seinen Verschlüsselungseinstellungen.
+
+Andernfalls: 
+
+- Wenn die Anlagen eine Bezeichnung aufweisen, behalten Sie Ihre ursprünglich angewendete Bezeichnung bei.
+- Wenn die Anlagen ohne Bezeichnung verschlüsselt sind, bleibt die Verschlüsselung erhalten, aber Sie werden nicht beschriftet.
+- Wenn die Anlagen keine Bezeichnung haben, bleiben Sie nicht gekennzeichnet.
 
 ## <a name="sensitivity-label-compatibility"></a>Kompatibilität mit Vertraulichkeits Bezeichnungen
 

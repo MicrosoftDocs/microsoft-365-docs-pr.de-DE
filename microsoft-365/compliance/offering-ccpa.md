@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851842"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222027"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -39,7 +39,7 @@ Für kommerzielle Kunden, die in Kalifornien tätig sind, wird Microsoft als "Di
 
 Wie in der Ost dargelegt, erfüllt Microsoft alle Gesetze und Verordnungen, die für die Online Dienste gelten, einschließlich der CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure-Entwicklungs-OPS
@@ -93,9 +93,9 @@ Das CCPA erfordert unter anderem regulierte Unternehmen, die persönliche Inform
 - CCPA führt elterliche Zustimmungsverpflichtungen im Einklang mit dem Children's Online Privacy Protection Act (COPPA) für Kinder unter 13 Jahren ein.
 - Für Kinder zwischen 13 und 16 Jahren auferlegt CCPA eine neue Verpflichtung, die Zustimmung des Kindes zu erhalten.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [CCPA-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118004) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [CCPA-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118004) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

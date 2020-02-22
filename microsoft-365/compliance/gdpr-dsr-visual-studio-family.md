@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596482"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225508"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
@@ -47,7 +47,7 @@ Unsere Methoden zur Datenverarbeitung sind in den Microsoft-Software-Lizenzbedin
 
 Als Datenauftragsverarbeiter im Rahmen der DSGVO erfasst Microsoft von Benutzern die Daten, die benötigt werden, um Benutzeroberflächen für Visual Studio und Visual Studio für Mac sowie für zugehörige Microsoft-Erweiterungen und Erweiterungen für Visual Studio Code bereitzustellen und zu verbessern. Es gibt zwei Kategorien von Daten: Kundendaten und vom System generierte Protokolle. Zu den Kundendaten gehören personenbezogene Transaktions- und Interaktionsdaten, die von diesen Produkten zum Bereitstellen des jeweiligen Diensts benötigt werden. Um Benutzern beispielsweise personalisierte Erfahrungen, z. B. Roamingeinstellungen, bieten zu können, müssen wir Benutzerkontoinformationen und Einstellungsdaten erfassen. Vom System generierte Protokolle umfassen Nutzungs- oder Diagnosedaten, die zum Identifizieren und Behandeln von Problemen und Verbessern unserer Produkte und Dienste verwendet werden. Außerdem können sie personenbezogene Endbenutzerinformationen enthalten, z. B. Benutzernamen. Die vom System generierten Protokolle werden maximal 18 Monate lang aufbewahrt. Beispielsweise werden vom System generierte Protokolle für jeden Tag der Produktnutzung aggregiert und enthalten das Nutzungsdatum, das verwendete Produkt (z.B. „Visual Studio 2017“), die durchgeführte Aktion (z.B. „vs/core/packagecostsummary/solutionload“) und eine Angabe dazu, wie häufig die Aktion durchgeführt wurde. Dies wird hier veranschaulicht:
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}

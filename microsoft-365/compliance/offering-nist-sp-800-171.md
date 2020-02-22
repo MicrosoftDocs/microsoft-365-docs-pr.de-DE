@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851782"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42221997"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -42,7 +42,7 @@ NIST SP 800 – 171 Anforderungen sind eine Teilmenge von NIST SP 800-53, dem St
 
 Jede Entität, die die US-Regierung Cui verarbeitet oder speichert – Forschungseinrichtungen, Beratungsunternehmen, Fertigungsunternehmen – muss den strengen Anforderungen von NIST SP 800 – 171 entsprechen. Diese Bestätigung bedeutet, dass Microsoft-basierte Cloud-Dienste Kunden bei der Bereitstellung von Cui-Arbeitsauslastungen mit der Gewissheit unterstützen können, dass Microsoft die vollständige Compliance vorsieht. Beispielsweise treffen alle DoD-Auftragnehmer, die "abgedeckte Verteidigungsinformationen" mit in-Scope-Microsoft Cloud-Diensten in ihren Informationssystemen verarbeiten, speichern oder übertragen, die DFARS-Klauseln des US-Verteidigungsministeriums, die die Einhaltung der Sicherheitsbestimmungen erfordern. Anforderungen von NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
@@ -63,9 +63,9 @@ Jede Entität, die die US-Regierung Cui verarbeitet oder speichert – Forschung
 
 Ja. Microsoft-Kunden können die überwachten Steuerelemente, die in den Berichten unabhängiger Drittanbieter-Assessment-Organisationen (3PAO) für FedRAMP-Standards beschrieben werden, als Teil ihrer eigenen FedRAMP-und NIST-Risikoanalyse-und Qualifizierungsmaßnahmen verwenden. Diese Berichte bestätigen die Effektivität der Steuerelemente, die von Microsoft in seinen in-Scope-Cloud-Diensten implementiert wurden. Kunden sind dafür verantwortlich sicherzustellen, dass Ihre Cui-Arbeitslasten den NIST-SP 800 – 171-Richtlinien entsprechen.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [NIST 800-171-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117526) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST 800-171-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117526) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

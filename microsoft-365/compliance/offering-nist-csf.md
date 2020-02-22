@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4aae95778a829203dc8d34fe1882528cf866b913
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851802"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222007"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -40,7 +40,7 @@ Erfahren Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance Sc
 - [Download der Azure Security and Compliance Blueprint-NIST CSF Risk Assessment Checkliste](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Weitere Informationen zur Bewertung des NIST-GFK für Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 für Government](https://aka.ms/d365-compliance-list)
@@ -97,9 +97,9 @@ Die in-Scope-Dienste der NIST CSF-Zertifizierung sind Exchange Online Archivieru
 
 Microsoft bietet die umfassendsten Angebote im Vergleich zu anderen Anbietern von Cloud-Diensten. Um mit unseren umfassenden Compliance-angeboten in verschiedenen Regionen und Branchen Schritt halten zu können, schließen wir Services im Rahmen unserer Assurance-Bemühungen basierend auf der Marktnachfrage, dem Kundenfeedback und dem Produktlebenszyklus ein. Wenn ein Dienst nicht im aktuellen Bereich eines bestimmten Compliance-Angebots enthalten ist, ist Ihre Organisation dafür verantwortlich, die Risiken anhand Ihrer Compliance-Verpflichtungen zu bewerten und die Art und Weise zu bestimmen, wie Sie Daten in diesem Dienst verarbeiten. Wir sammeln kontinuierlich Feedback von Kunden und arbeiten mit Regulatoren und Auditoren zusammen, um unsere Compliance-Abdeckung so zu erweitern, dass Ihre Sicherheits-und Compliance-Anforderungen erfüllt werden.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Bewerten des Risikos mithilfe der Microsoft-Kompatibilitätsbewertung
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, verwenden Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) , damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 
