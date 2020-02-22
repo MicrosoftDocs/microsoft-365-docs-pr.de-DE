@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 1a39ffb5bf57e0f4ffa38a210c299480d3081345
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175929"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228531"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Behebungsaktionen nach einer automatisierten Untersuchung in Office 365
 
@@ -42,14 +42,13 @@ Zu den [automatisierten Ermittlungs-und Antwortfunktionen](https://docs.microsof
 Während Sie die [Details einer Untersuchung](air-view-investigation-results.md)anzeigen, können Sie alle ausstehenden Korrekturaktionen genehmigen oder ablehnen. Wir empfehlen, dies so schnell wie möglich zu tun, damit Ihre automatisierten Untersuchungen abgeschlossen werden.
 
 > [!IMPORTANT]
-> Geeignete Berechtigungen sind erforderlich, um Korrekturaktionen zu genehmigen oder abzulehnen. Siehe [erforderliche Berechtigungen für die Verwendung von Air-Funktionen](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+> Geeignete Berechtigungen sind erforderlich, um Korrekturaktionen zu genehmigen oder abzulehnen. Siehe [erforderliche Berechtigungen für die Verwendung von Air-Funktionen](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 1. Klicken Sie auf die Registerkarte **Aktionen** .
 
 2. W?hlen Sie ein Element in der Liste aus. (Dadurch werden die Schaltflächen genehmigen und ablehnen aktiviert.)
 
 3. Überprüfen Sie die verfügbaren Informationen für die ausgewählten Elemente, und genehmigen oder lehnen Sie die Aktion (en) dann entweder ab. 
-
  - Mit **genehmigen** kann die Wiederherstellung beginnen.
  - **Reject** nimmt keine weiteren Aktionen vor
 

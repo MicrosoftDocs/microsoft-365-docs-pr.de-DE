@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
-ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.date: 02/21/2020
+ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106848"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230068"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -45,6 +45,8 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
     - Granulare Zeitfilter (Tag, Stunde, halbe Stunde) 
 
 - Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Office 365 Security & Compliance Center zu **Threat Management** > **Review**.)
+
+- [Sichere Dokumente in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(Vorschau)**
 
 ## <a name="december-2019"></a>Dezember 2019
 

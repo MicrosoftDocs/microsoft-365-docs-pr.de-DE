@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 73bb90a0537df8e6f23e4e0e50a748aebda3a487
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 65ace4bda091b3e000d25a984b706f26fe9c8696
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175927"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225483"
 ---
 # <a name="remediation-actions-in-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Korrekturaktionen in automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection
 
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden Korrekturaktionen zusammengefasst, die derzeit i
 
 |Wartungsaktionen für Endpunkte  |Wartungsaktionen für E-Mails  |
 |---------|---------|
-|Quarantänedatei<br/>Registrierungsschlüssel entfernen<br/>Prozess abbrechen <br/>Dienst beenden <br/>Registrierungsschlüssel entfernen <br/>Treiber deaktivieren <br/>Geplante Aufgabe entfernen      |E-Mail-Nachrichten oder Cluster vorläufig löschen<br/>URL blockieren (Zeitpunkt des Klickens)<br/>Externe E-Mail-Weiterleitung deaktivieren          |
+|Quarantänedatei<br/>Registrierungsschlüssel entfernen<br/>Prozess abbrechen <br/>Dienst beenden <br/>Treiber deaktivieren <br/>Geplante Aufgabe entfernen      |E-Mail-Nachrichten oder Cluster vorläufig löschen<br/>URL blockieren (Zeitpunkt des Klickens)<br/>Externe E-Mail-Weiterleitung deaktivieren          |
 
 Behebungsaktionen können im [Wartungs Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)angezeigt werden, unabhängig davon, ob Sie genehmigt wurden oder bereits abgeschlossen sind.
 
