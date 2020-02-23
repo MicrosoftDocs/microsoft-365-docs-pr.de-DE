@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851882"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222047"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -131,7 +131,7 @@ Das [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) ist eine
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [SOC 1-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117918) und die [SOC 2-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117919), mit denen Sie dafür sorgen können, dass Ihre Organisation die Anforderungen dieser Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [SOC 1-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117918) und die [SOC 2-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117919) aus dem Dropdownmenü **Vorlage**, um Ihrer Organisation zu helfen, die Anforderungen dieser Verordnung zu erfüllen.
 
 ## <a name="resources"></a>Ressourcen
 

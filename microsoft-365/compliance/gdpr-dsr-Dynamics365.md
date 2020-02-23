@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722016"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225523"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Auskunftsrecht betroffener Personen für Dynamics 365 im Rahmen der DSGVO und CCPA
 
@@ -82,10 +82,9 @@ Die angemessene Klassifizierung von Kundendaten ist der Grundstein für die Arbe
 
 Microsoft bietet Funktionen, die Sie bei der Reaktion auf Anträge betroffener Personen und in diesem Zusammenhang beim Zugriff auf Kundendaten unterstützen können. Es liegt jedoch in Ihrer Verantwortung, dafür zu sorgen, dass personenbezogenen Daten gefunden und klassifiziert werden.
 
-***Dynamics 365 for Customer Engagement*** bietet Ihnen mehrere Methoden, um in Datensätzen nach personenbezogenen Daten zu suchen, z. B.: Erweiterte Suche, Relevanzsuche und Suche nach Datensätzen. Diese Funktionen ermöglichen es Ihnen, personenbezogene Daten zu identifizieren (zu finden).
+***Dynamics 365 for Customer Engagement*** bietet Ihnen mehrere Methoden, um in Datensätzen nach personenbezogenen Daten zu suchen, z. B.: Erweiterte Suche und Suche nach Datensätzen. Diese Funktionen ermöglichen es Ihnen, personenbezogene Daten zu identifizieren (zu finden).
 
 - [Erweiterte Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [Relevanzsuche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results), die mithilfe von Dashboards als zukünftige Referenz gespeichert werden kann
 - [Suchen Sie nach Datensätzen](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records) für mehrere Typen von Datensätzen
 
 In Dynamics 365 for Marketing haben Sie die folgenden zusätzlichen Funktionen:

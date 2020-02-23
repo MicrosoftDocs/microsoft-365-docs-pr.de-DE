@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851832"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222017"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
 
@@ -74,7 +74,7 @@ Unabhängig von der Größe Ihrer Organisation und unabhängig davon, ob es sich
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [ISO 27701-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117915), mit der Sie dafür sorgen können, dass Ihre Organisation die Anforderungen dieser Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [ISO 27701-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117915) aus dem Dropdownmenü **Vorlage**, um Ihrer Organisation zu helfen, die Anforderungen dieser Verordnung zu erfüllen.
 
 ## <a name="resources"></a>Ressourcen
 
