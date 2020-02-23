@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 5bb3820222258a5b0b4b28c7476541b5d338f4b6
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851812"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222097"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards
 
@@ -144,7 +144,7 @@ Ja. Wenn Ihr Unternehmen eine Zertifizierung nach ISO/IEC 27001 für Installatio
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [ISO 27001-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117914), mit der Sie dafür sorgen können, dass Ihre Organisation die Anforderungen dieser Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [ISO 27001-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117914) aus dem Dropdownmenü **Vorlage**, um Ihrer Organisation zu helfen, die Anforderungen dieser Verordnung zu erfüllen.
 
 ## <a name="resources"></a>Ressourcen
 
