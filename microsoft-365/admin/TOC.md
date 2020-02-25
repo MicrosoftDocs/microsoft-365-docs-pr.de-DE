@@ -152,7 +152,7 @@
 ## Office 365, betrieben von 21Vianet
 ### [Informationen zu Office 365, betrieben von 21Vianet](services-in-china/services-in-china.md)
 ### [Erwerben oder Testen von Abonnements](services-in-china/buy-or-try-subscriptions.md)
-### [Laden Sie die Office-App für IOS für Office 365 betrieben von 21Vianet herunter.](services-in-china/download-office-app-for-iOS.md)
+### [Herunterladen der Office-App für iOS für Office 365, betrieben von 21Vianet](services-in-china/download-office-app-for-iOS.md)
 ### [Anzeigen Ihrer Rechnung oder Abrufen einer Fapiao-Rechnung](services-in-china/view-your-bill-or-get-a-fapiao.md)
 ### [Beantragen einer Fapiao-Rechnung](services-in-china/apply-for-a-fapiao.md)
 ### [Azure Information Protection-Parität](services-in-china/parity-between-azure-information-protection.md)

@@ -8,13 +8,13 @@
       href: sign-up.md
     - name: Voraussetzungen zum Schutz von Daten
       href: pre-requisites-for-data-protection.md
-    - name: Setup
+    - name: Einrichtung
       items:
         - name: Übersicht über die Einrichtung
           href: set-up-overview.md
         - name: Einrichten von Microsoft 365 Business
           href: set-up.md
-        - name: Sichere Windows 10-Computer
+        - name: Sichern von Windows 10-Computern
           href: secure-win-10-pcs.md
         - name: Aktualisieren auf Windows Pro Creators Update
           href: upgrade-to-windows-pro-creators-update.md
@@ -22,7 +22,7 @@
           href: prepare-for-office-client-deployment.md
         - name: Unterstützen von Benutzern beim Installieren von Office
           href: help-users-install-office.md
-        - name: Zugreifen auf lokale Ressourcen
+        - name: Zugriff auf lokale Ressourcen
           items:
             - name: 'Ermöglichen, dass der Domäne beigetretene Windows 10-Geräte verwaltet werden'
               href: manage-windows-devices.md
@@ -30,7 +30,7 @@
               href: access-resources.md
     - name: Einrichten der Benutzergeräte
       items:
-        - name: Einrichten von mobilen Geräten
+        - name: Einrichten mobiler Geräte
           href: set-up-mobile-devices.md
         - name: Einrichten von Windows-Geräten
           href: set-up-windows-devices.md
@@ -62,7 +62,7 @@
         - name: App-Schutzeinstellungen für Android und iOS
           href: app-protection-settings-for-android-and-ios.md
           items:
-            - name: Überprüfen der Einstellungen auf Android oder iOS
+            - name: Überprüfen der Einstellungen unter Android oder iOS
               href: validate-settings-on-android-or-ios.md
         - name: Geräteschutzeinstellungen für Windows 10-PCs
           href: protection-settings-for-windows-10-pcs.md
