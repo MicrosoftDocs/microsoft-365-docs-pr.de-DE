@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 46904323a1ec8f969355931f8b69a3ed0ebf4519
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600212"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235084"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Verwalten von Vorfällen in Microsoft-Bedrohungsschutz
 
 **Gilt für:**
 - Microsoft-Bedrohungsschutz
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Das Verwalten von Vorfällen ist entscheidend, um sicherzustellen, dass Bedrohungen eingedämmt und bearbeitet werden. Im Microsoft-Bedrohungsschutz haben Sie Zugriff auf die Verwaltung von Vorfällen auf Geräten, Benutzern und in Postfächern. 
 

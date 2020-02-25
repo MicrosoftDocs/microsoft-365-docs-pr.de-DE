@@ -2,27 +2,32 @@
   href: index.md
   expanded: true
   items:
-    - name: Produkte und Dienste
+    - name: Verwalten von Abonnements
       items:
         - name: Verwalten von Drittanbieter-apps
           href: manage-saas-apps.md
-        - name: Erwerben von Lizenzen
-          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Zuweisen von Lizenzen
-          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Aufheben der Zuweisung von Lizenzen
-          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Entfernen von Lizenzen aus Ihrem Abonnement
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Abonnements aktualisieren
-          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
+        - name: Verwalten von Self-Service-Käufen (Benutzer)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
+        - name: Verwalten von Self-Service purchases (Administrator)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
+    - name: Verwalten von Lizenzen
+      items:
+        - name: Erwerben von Lizenzen
+          href: /microsoft-365/commerce/licenses/buy-licenses
+        - name: Zuweisen von Lizenzen
+          href: /microsoft-365/admin/manage/assign-licenses-to-users
+        - name: Aufheben der Zuweisung von Lizenzen
+          href: /microsoft-365/admin/manage/remove-licenses-from-users
+        - name: Entfernen von Lizenzen aus Ihrem Abonnement
+          href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
     - name: Rechnungen und Zahlungen
-      expanded: true
       items:
         - name: Grundlegendes zur Ihrer Rechnung
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: Verwalten von Zahlungsmethoden
-          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
         - name: Verwalten von Abrechnungs Profilen
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Zahlungs Dienstleistungsrichtlinie 2 und starke Kundenauthentifizierung

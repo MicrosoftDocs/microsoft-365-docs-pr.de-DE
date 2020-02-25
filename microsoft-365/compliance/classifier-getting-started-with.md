@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078814"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266877"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
 
@@ -44,6 +44,8 @@ Vertraulichkeits-und Aufbewahrungs Bezeichnungen können dann automatisch angewe
 
 Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht einfach durch die manuellen oder automatisierten Mustervergleichsmethoden identifiziert werden können. Bei dieser Klassifizierungsmethode geht es um die Schulung einer Klassifizierung, um ein Element basierend auf dem Element zu identifizieren, nicht durch Elemente, die sich im Element befinden (Mustervergleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte Beispiele für die Inhalte ansehen, die Sie bei der Klassifizierung interessieren. Sie beginnen mit dem Füttern von IT-Beispielen, die definitiv in der Kategorie sind. Nachdem diese verarbeitet wurden, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen zuweisen. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse, sortieren die positiven, negativen, falsch positiven und falschen negative, um die Genauigkeit der Vorhersagen zu verbessern. Wenn Sie die geschulte Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert, und der Inhalt wird klassifiziert.
 
+<!-- add link in the below note to sensitivity label topic when carolb provides -->
+
 > [!IMPORTANT]
 > Beide Typen von Klassifizierungen stehen als Bedingung für die [automatische Anwendung von Aufbewahrungs Bezeichnungsrichtlinien basierend auf einer Bedingungs-](labels.md#applying-a-retention-label-automatically-based-on-conditions) und [Kommunikations Konformität](communication-compliance.md)zur Verfügung.
 
@@ -56,14 +58,14 @@ Auszubildende Klassifizierer sind ein Microsoft 365 E5-oder E5-Compliance-Featur
 
 ## <a name="types-of-classifiers"></a>Typen von Klassifizierungen
 
-Sie können Klassifizierungen und Schulungs fähige Klassifizierungen verwenden. Das Einholen einer lernbaren Klassifizierung in einen Veröffentlichungszustand erfordert eine Zeitinvestition für die Schulung. Für die ersten Schritte bei der Verwendung von Klassifizierungen ist Microsoft 365 mit einigen einsatzfähigen Klassifizierungen ausgestattet.
+Es gibt integrierte Klassifizierungen und Klassifizierer für Auszubildende. Das Einholen einer lernbaren Klassifizierung in einen Veröffentlichungszustand erfordert eine Zeitinvestition für die Schulung. Für die ersten Schritte bei der Verwendung von Klassifizierungen enthält Microsoft 365 einige integrierte Klassifizierungen.
 
 > [!NOTE]
-> Bevor Sie die Klassifizierung in Ihrem Klassifikations-und Beschriftungs Workflow verwenden, sollten Sie Sie anhand eines Beispiels ihrer organisationsinhalte testen, das Ihrer Meinung nach der Kategorie entspricht, um zu überprüfen, ob Ihre Klassifizierungs Vorhersagen Ihren Erwartungen entsprechen.
+> Bevor Sie eine integrierte Klassifizierung in Ihrem Klassifikations-und Beschriftungs Workflow verwenden, sollten Sie Sie anhand eines Beispiels ihrer organisationsinhalte testen, das Ihrer Meinung nach der Kategorie entspricht, um zu überprüfen, ob Ihre Klassifizierungs Vorhersagen Ihren Erwartungen entsprechen.
 
-### <a name="understanding-ready-to-use-classifiers"></a>Grundlegendes zu verwendungsfähigen Klassifizierungen
+### <a name="understanding-built-in-classifiers"></a>Grundlegendes zu integrierten Klassifizierungen
 
-Microsoft 365 ist mit sechs einsatzfähigen Klassifizierungen ausgestattet:
+Microsoft 365 verfügt über sechs integrierte Klassifizierungen:
 
 - **Anstößige Sprache**: erkennt Textelemente, die Profanität, Beleidigungen, verspottungen und verschleierte Ausdrücke enthalten (bei denen es sich um Ausdrücke handelt, die die gleiche Bedeutung wie ein beleidigender Ausdruck haben).
 - **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
@@ -79,15 +81,15 @@ Diese werden in der Ansicht " **Microsoft 365 Compliance Center** > **-Datenklas
 > [!IMPORTANT]
 > Bitte beachten Sie, dass die beleidigende Sprache, Belästigung, Profanität und Bedrohungs Klassifizierungen nur mit durchsuchbarem Text funktionieren, die nicht erschöpfend oder vollständig sind.  Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von anstößigen und anderen Sprachen unterstützen können, befassen sich die Klassifizierungsverfahren nicht mit den Folgen dieser Sprache und dienen nicht dazu, die alleinigen Möglichkeiten Ihrer Organisation zur Überwachung oder Reaktion auf die Verwendung von zu bieten. solche Sprache. Ihre Organisation und nicht Microsoft oder ihre Niederlassungen bleiben für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Sperrung, Entfernung und Aufbewahrung von Inhalten, die von einer vorab ausgebildeten Klassifizierung identifiziert werden, verantwortlich.
 
-#### <a name="process-flow-for-using-ready-to-use-classifiers"></a>Prozessablauf für die Verwendung von Klassifizierungen bereit
+#### <a name="process-flow-for-using-built-in-classifiers"></a>Prozessablauf für die Verwendung integrierter Klassifizierungen
 
-Bereit für die Verwendung von Klassifizierungen müssen Sie nicht geschult werden, Sie müssen jedoch sicherstellen, dass Sie die Inhaltstypen identifizieren, die Sie benötigen, bevor Sie Sie in Compliance-Lösungen verwenden können. Das Testen einer vorab ausgebildeten Klassifizierung folgt diesem Fluss.
+Integrierte Klassifizierungen müssen nicht geschult werden, Sie müssen jedoch sicherstellen, dass Sie die Inhaltstypen identifizieren, die Sie benötigen, bevor Sie Sie in Compliance-Lösungen verwenden können. Das Testen einer vorab ausgebildeten Klassifizierung folgt diesem Fluss.
 
 ![Prozessfluss Test einer vorab ausgebildeten Klassifizierung](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Grundlegendes zu Schulungs Klassifizierern
 
-Wenn die verwendungsfähigen Klassifizierungen nicht Ihren Anforderungen entsprechen, können Sie eigene Klassifizierungen erstellen und Schulen. Es gibt wesentlich mehr Arbeit bei der Erstellung Ihrer eigenen, aber Sie werden viel besser auf ihre Organisationen zugeschnitten werden muss. Weitere Informationen zur Verwendung einer vorgeschulten Klassifizierung finden Sie unter [using a ready to use Klassifizierer](classifier-using-a-ready-to-use-classifier.md)
+Wenn die integrierten Klassifizierungen nicht Ihren Anforderungen entsprechen, können Sie eigene Klassifizierungen erstellen und Schulen. Es gibt wesentlich mehr Arbeit bei der Erstellung Ihrer eigenen, aber Sie werden viel besser auf ihre Organisationen zugeschnitten werden muss. Weitere Informationen zur Verwendung einer vorgeschulten Klassifizierung finden Sie unter [using a built-in Klassifizierer](classifier-using-a-ready-to-use-classifier.md)
 
 > [!IMPORTANT]
 > Nur der Benutzer, der eine schulungsable-Klassifizierung erstellt, kann vorhersagen, die von dieser Klassifizierung vorgenommen werden, trainieren und überprüfen.

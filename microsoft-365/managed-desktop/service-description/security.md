@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774231"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250435"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicherheit in Microsoft Managed Desktop
 
@@ -26,7 +26,7 @@ Microsoft Managed Desktop verwendet mehrere Microsoft-Technologien, um die Siche
 - [Informationssicherheit](#information-security) – optional verfügbare Dienste für den weiteren Schutz vertraulicher Informationen 
 
 
-
+Weitere Informationen zum Security Operations-Team auf dem Microsoft Managed Desktop und zur Sicherheit Ihrer Geräte finden Sie unter Video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## <a name="device-security"></a>Gerätesicherheit
 
@@ -64,7 +64,7 @@ VPN | Kunden besitzen Ihre VPN-Infrastruktur, um sicherzustellen, dass beschrän
 
 ## <a name="information-security"></a>Informationssicherheit
 
-Kunden können diese optionalen Dienste für den Schutz von unternehmensübergreifenden hochwertigen Ressourcen konfigurieren. 
+Sie können diese optionalen Dienste zum Schutz von unternehmensübergreifenden hochwertigen Ressourcen konfigurieren. 
 
 Dienst | Beschreibung
 --- | ---

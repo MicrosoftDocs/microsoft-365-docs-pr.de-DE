@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085689"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250425"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
@@ -23,6 +23,10 @@ Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden fin
 - Welche apps werden am häufigsten verwendet und in welchen Zeiten?
 - Welche apps verursachen Probleme durch Absturz oder Aufhängen einer Menge?
 - Wie werden diese Probleme von Microsoft Managed Desktop Operations abgeschwächt oder behoben?
+- Welche apps verbrauchen die meiste Energie?
+- Was ist die prognostizierte Batterielebensdauer meiner Geräte?
+- Wie lautet der aktuelle Status von Sicherheitsupdates auf Geräten?
+- Wie lange dauert es, bis 95% der Geräte mit dem aktuellen Sicherheitsupdate auf dem neuesten Stand sind?
 
 Wenn Sie über das Microsoft 365 Admin Center auf diese Ansichten zugreifen möchten, wählen Sie Details im Bereich **Berichte** **anzeigen** aus:
 
@@ -46,3 +50,9 @@ Erfahren Sie mehr über [Zuverlässigkeits Einblicke](reliability-insights.md).
 Diese Ansicht zeigt Ihnen Informationen über den Energieverbrauch von apps und die voraussichtliche Lebensdauer der Batterie für Geräte in Ihrer Umgebung. Um diese Informationen anzuzeigen, wählen Sie die Registerkarte **Akku** aus.
 
 Erfahren Sie mehr über [Batterie Einblicke](battery-insights.md).
+
+## <a name="windows-security-update-insights"></a>Einblicke in Windows-Sicherheitsupdates
+
+In dieser Ansicht werden Informationen zum Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte angezeigt. Um diese Informationen anzuzeigen, wählen Sie die Registerkarte **Windows-Sicherheits-Udates** .
+
+Erfahren Sie mehr über [Einblicke in Sicherheitsupdates](security-update-insights.md).

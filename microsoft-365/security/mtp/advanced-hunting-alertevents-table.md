@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 02a3f50019321f68390d3eb9b76576f4e6dfdd8a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9f341705d8247183b7e8a5271231c82faf8b386a
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602772"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235094"
 ---
 # <a name="alertevents"></a>AlertEvents
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Die Tabelle `AlertEvents` im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu Microsoft Defender ATP-Warnungen. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 

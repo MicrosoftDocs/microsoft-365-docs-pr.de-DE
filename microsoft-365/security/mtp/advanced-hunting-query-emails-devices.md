@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 83a4b7b52508002ad9bc5c27e1ebf68677808444
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087934"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234724"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Suche nach Bedrohungen auf Geräten und in E-Mails
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Die [erweiterte Suche](advanced-hunting-overview.md) in Microsoft Threat Protection bietet Ihnen die Möglichkeit, auf Ihren Windows-Geräten und in Ihren Office 365-E-Mails proaktiv nach Bedrohungen zu suchen. Nachfolgend finden Sie einige Suchszenarien und Beispielabfragen, die Ihnen dabei helfen, zu verstehen, wie Sie Abfragen erstellen können, die sowohl Geräte als auch E-Mails umfassen.
 

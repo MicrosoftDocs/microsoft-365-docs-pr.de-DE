@@ -1,5 +1,5 @@
 ---
-title: Office 365 automatisierte Untersuchung und Antwort
+title: Automatische Untersuchung und Reaktion (Air) in Office 365
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228567"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262012"
 ---
-# <a name="office-365-automated-investigation-and-response"></a>Office 365 automatisierte Untersuchung und Antwort
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie Zeit und Aufwand für Sicherheitsvorgänge speichern können. Wenn bestimmte Warnungen ausgelöst werden, werden ein oder mehrere Sicherheits-Textbuch initiiert, und der automatische Ermittlungsprozess wird gestartet. Dadurch können sich Ihre Sicherheits Betriebsteams auf Aufgaben mit hoher Priorität konzentrieren, ohne ausgelöste Warnungen aus den Augen zu verlieren. 
+
+## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
 Auf hohem Niveau funktioniert der Luftstrom wie folgt:
 

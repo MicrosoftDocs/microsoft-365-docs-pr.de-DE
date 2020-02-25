@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4b3687fa3cf2ba65fabf11ee9ae18d5c0be5ca5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087514"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234784"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **Gilt für:**
 - Microsoft-Bedrohungsschutz
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Die `EmailEvents`-Tabelle im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu Ereignissen, denen die Verarbeitung von E-Mails auf Office 365 ATP angehört. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 

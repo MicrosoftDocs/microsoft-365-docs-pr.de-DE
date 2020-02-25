@@ -1,5 +1,5 @@
 ---
-title: Vorgehensweise Melden von falsch positiven oder falschen negativen Daten in Air in Microsoft Threat Protection
+title: Behandeln falsch positiver oder falscher negativer Daten in der Luft in Microsoft Threat Protection
 description: Wurde in Microsoft Threat Protection etwas übersehen oder fälschlicherweise von Air erkannt? Hier erfahren Sie, wie Sie falsch positive Ergebnisse oder falsch negative Informationen zur Analyse an Microsoft übermitteln.
 keywords: automatisiert, Untersuchung, Warnung, Auslöser, Aktion, Korrektur, falsch positiv, falsch negativ
 search.appverid: met150
@@ -19,23 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774191"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262002"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Behandeln von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 Haben [automatisierte Ermittlungs-und Antwortfunktionen](mtp-autoir.md) im Microsoft Threat Protection-Vorgang fehl am oder falsch erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
+
 - [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+
 - [Passen Sie Ihre Benachrichtigungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) an (falls erforderlich); und 
+
 - [Rückgängigmachen von auf Geräten ausgeführten Korrekturaktionen](#undo-a-remediation-action-that-was-taken-on-a-device) 
 
 Verwenden Sie diesen Artikel als Leitfaden. 
@@ -81,5 +82,7 @@ Wenn eine Korrekturaktion auf einem Gerät (beispielsweise einem Windows 10-Ger�
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Genehmigen oder Ablehnen von Aktionen im Zusammenhang mit der automatischen Untersuchung und Reaktion](mtp-autoir-actions.md)
+
 - [Erfahren Sie mehr über das Info-Center](mtp-action-center.md)
+
 - [Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection](advanced-hunting-overview.md)

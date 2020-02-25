@@ -1,5 +1,5 @@
 ---
-title: Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
+title: Verwenden einer integrierten Klassifizierung (Vorschau)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,15 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 verfügt über eine Reihe von einsatzfähigen Computer Lern-Klassifizierungen, mit denen Sie Inhalte in Ihrer Organisation identifizieren und bezeichnen können. In diesem Thema wird erläutert, wie Sie diese bereit für die Verwendung von Klassifizierungen vorbereiten.
-ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 enthält eine Reihe integrierter Klassifizierungen, die Sie zum Identifizieren und Beschriften von Inhalten in Ihrer Organisation verwenden können. In diesem Thema wird gezeigt, wie Sie die Verwendung dieser Klassifizierungen vorbereiten.
+ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078792"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266731"
 ---
-# <a name="using-a-ready-to-use-classifier-preview"></a>Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
+# <a name="using-a-built-in-classifier-preview"></a>Verwenden einer integrierten Klassifizierung (Vorschau)
 
 Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispieldatensätzen geschult und getestet, mit denen bestimmte Inhaltskategorien identifiziert werden können. Weitere Informationen finden Sie unter [Erste Schritte mit Schulungs Klassifizierern (Vorschau)](classifier-getting-started-with.md). Diese Klassifizierungen werden standardmäßig in `Ready to use` der Gruppe angezeigt.
 
@@ -33,14 +33,14 @@ Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispielda
 - **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden;
 
 > [!NOTE]
-> Bevor Sie die Klassifizierungstools in Ihrem Klassifikations-und Beschriftungs Workflow verwenden, sollten Sie Sie anhand eines Beispiels für die Inhalte Ihrer Organisation testen, das Ihrer Meinung nach der Kategorie entspricht, um zu überprüfen, ob Ihre Klassifizierungs Vorhersagen Ihren Erwartungen entsprechen.
+> Bevor Sie integrierte Klassifizierungen in Ihrem Klassifikations-und Bezeichnungs Workflow verwenden, sollten Sie Sie anhand eines Beispiels für die Inhalte Ihrer Organisation testen, das Ihrer Meinung nach der Kategorie entspricht, um sicherzustellen, dass Ihre Klassifizierungs Vorhersagen Ihren Erwartungen entsprechen.
 
 > [!IMPORTANT]
 > Bitte beachten Sie, dass die beleidigende Sprache, Belästigung, Profanität und Bedrohungs Klassifizierungen nur mit durchsuchbarem Text funktionieren, die nicht erschöpfend oder vollständig sind. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von anstößigen und anderen Sprachen unterstützen können, befassen sich die Klassifizierungsverfahren nicht mit den Folgen dieser Sprache und dienen nicht dazu, die alleinigen Möglichkeiten Ihrer Organisation zur Überwachung oder Reaktion auf die Verwendung von zu bieten. solche Sprache. Ihre Organisation und nicht Microsoft oder ihre Niederlassungen bleiben für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Sperrung, Entfernung und Aufbewahrung von Inhalten, die von einer vorab ausgebildeten Klassifizierung identifiziert werden, verantwortlich.
 
-## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>Vorgehensweise vorbereiten und Verwenden einer bereit zu verwendenden Klassifizierung
+## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Vorgehensweise vorbereiten und Verwenden einer integrierten Klassifizierung
 
-1. Sammeln Sie Inhaltselemente für den verfügbaren Test, die ihrer Meinung nach zur Kategorie der betriebsbereiten Klassifizierung gehören (positive Übereinstimmungen) und diejenigen, die nicht einbezogen werden sollten (negative Übereinstimmungen) in der Kategorie, die Sie testen.
+1. Sammeln Sie Inhaltselemente für den verfügbaren Test, die Sie in die Kategorie der integrierten Klassifizierung (positive Übereinstimmungen) und diejenigen, die nicht berücksichtigt werden sollten (negative Übereinstimmungen) in der Kategorie, die Sie testen, gehören.
 
 > [!IMPORTANT]
 > Die Beispielelemente dürfen nicht verschlüsselt werden und müssen in Englisch sein.
@@ -65,7 +65,7 @@ Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispielda
 
 10. Wählen Sie Ihre Klassifizierung aus der Liste aus, in diesem Fall`Source Code`
 
-11. Nennen Sie die Richtlinie, beispielsweise "Quellcode-fähig für den Klassifizierungs Test".
+11. Nennen Sie die Richtlinie, beispielsweise "Quellcode-integrierter Klassifizierungs Test".
 
 12. Wählen `Let me choose specific locations`Sie aus.
 

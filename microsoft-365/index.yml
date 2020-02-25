@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 412cc9059aa3f533643ea37295a513ead1a05ed7
-  ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+  ms.openlocfilehash: 0575321bf9ed7953389e5a6a8be6b8c21479326a
+  ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "42085364"
+  ms.lasthandoff: 02/24/2020
+  ms.locfileid: "42250465"
 highlightedContent:
   items:
   - title: Schulung für Administratoren und IT-Experten
@@ -46,7 +46,7 @@ additionalContent:
     items:
     - title: Microsoft 365 Admin Center
       summary: Einrichten und verwalten Sie Ihre Office 365 und Microsoft 365 for Business und Enteprise subspcriptions.
-      url: https://docs.microsoft.com/office365/admin/admin-home/
+      url: ./admin/admin-home.md
     - title: Microsoft 365 Business
       summary: Für kleine und mittelständische Unternehmen entwickelt. Führen Sie Ihr Unternehmen mit der neuesten Version von Windows und Office-Apps wie Excel und Outlook aus. Nutzen Sie den Datenschutz und die Sicherheit, die auf alle Ihre Geschäfts Geräte ausgedehnt werden.
       url: ./business/index.yml

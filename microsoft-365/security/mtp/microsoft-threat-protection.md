@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087608"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235074"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Microsoft Threat Protection ist eine einheitliche Prä-und Post-Sicherheitsverletzung der Enterprise Defense-Suite, die sich nativ in Endpunkt, Identität, e-Mail und Anwendungen integriert, um anspruchsvolle Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch zu reagieren.  
 

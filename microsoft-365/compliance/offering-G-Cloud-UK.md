@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602352"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236885"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -41,15 +41,15 @@ Erfahren Sie mehr über die Vorteile von Großbritannien g-Cloud V6 in der Micro
 
 Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen des Azure Blueprint UK g-Cloud-Prinzips – Implementierungsanleitung](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Cloud-App-Sicherheit
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Office 365: Exchange Online, SharePoint Online und Skype for Business Online
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
@@ -64,17 +64,17 @@ Um zu bestätigen, dass Microsoft Cloud Services ihre Einhaltung von G-Cloud-Ver
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Dynamics 365 UK G Cloud Risk-Umgebung](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Dynamics 365 UK G Cloud Risk-Umgebung](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [InTune UK G Cloud-Risikoumgebung](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [InTune UK G Cloud-Risikoumgebung](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [InTune UK G Cloud Rest Risk](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Azure UK G Cloud Security Assessment Zusammenfassung](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 UK G Cloud Risk Environment](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Office 365 UK G Cloud Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>Schnellere Bereitstellung von britischen G-Cloud-Lösungen auf Azure
 

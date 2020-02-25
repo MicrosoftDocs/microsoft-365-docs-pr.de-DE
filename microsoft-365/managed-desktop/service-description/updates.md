@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602752"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250475"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Behandlung von Updates in Microsoft Managed Desktop
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602752"
 
 <!--Update management -->
 
-Microsoft Managed Desktop verbindet alle Geräte mit einer modernen Cloud-basierten Infrastruktur. Windows, Office, Treiber, Firmware und Microsoft Store for Business-Anwendungen auf dem neuesten Stand zu halten ist ein Gleichgewichtzwischen Geschwindigkeit und Stabilität. Bereitstellungsgruppen werden verwendet, um sicherzustellen, dass Betriebssystemupdates und-Richtlinien auf sichere Weise ausgeführt werden. 
+Microsoft Managed Desktop verbindet alle Geräte mit einer modernen Cloud-basierten Infrastruktur. Windows, Office, Treiber, Firmware und Microsoft Store for Business-Anwendungen auf dem neuesten Stand zu halten ist ein Gleichgewichtzwischen Geschwindigkeit und Stabilität. Bereitstellungsgruppen werden verwendet, um sicherzustellen, dass Betriebssystemupdates und-Richtlinien auf sichere Weise ausgeführt werden. Weitere Informationen hierzu finden Sie unter Video [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Von Microsoft veröffentlichte Updates sind kumulativ und werden als Qualitäts-oder Feature-Updates kategorisiert.
 Weitere Informationen finden Sie unter [Windows Update für Unternehmen: Updatetypen](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
