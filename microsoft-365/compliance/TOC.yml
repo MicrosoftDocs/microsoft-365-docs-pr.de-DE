@@ -209,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
           href: classifier-getting-started-with.md
-        - name: Verwenden einer gebrauchsfertigen Klassifizierung (Vorschau)
+        - name: Verwenden einer integrierten Klassifizierung (Vorschau)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: Erstellen und Trainieren einer Klassifizierung (Vorschau)
           href: classifier-creating-a-trainable-classifier.md
@@ -320,7 +320,7 @@
               href: view-label-activity-for-documents.md
             - name: Anzeigen der Data Governance-Berichte
               href: view-the-data-governance-reports.md
-        - name: Veranstaltungen
+        - name: Ereignisse
           items:
             - name: Ereignisbasierte Aufbewahrung
               href: event-driven-retention.md
