@@ -1,5 +1,5 @@
 ---
-title: Genehmigen oder Ablehnen ausstehender Aktionen nach automatisierter Untersuchung
+title: Genehmigen oder Ablehnen ausstehender Aktionen im Anschluss an eine automatisierte Untersuchung
 description: Verwenden des Info-Centers zum Verwalten von Aktionen im Zusammenhang mit automatisierten Untersuchungen und Reaktionen
 keywords: Aktion, Center, autoair, automatisiert, Untersuchung, Reaktion, Problembehebung
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5118f7fddaee0fa768675597dee862eb75e4ed96
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225493"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261982"
 ---
-# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Genehmigen oder Ablehnen ausstehender Aktionen nach automatisierten Untersuchungen
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Genehmigen oder Ablehnen ausstehender Aktionen im Anschluss an eine automatisierte Untersuchung
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -35,9 +35,7 @@ Wenn eine automatisierte Untersuchung ausgeführt wird, kann dies zu einer oder 
 > [!TIP]
 > Wenn Sie glauben, dass durch automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection etwas übersehen oder fälschlicherweise erkannt wurde, lassen Sie es uns wissen! Weitere Informationen finden Sie unter [How to Report false positives/negatives in Automated Investigation and Response (Air) Funktionen in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Zur Überprüfung und Genehmigung ausstehender Aktionen können Sie eine der folgenden Methoden anwenden:
-- [Verwenden des Info-Centers](#review-a-pending-action-in-the-action-center)
-- [Verwenden der Untersuchungsdetailansicht](#review-a-pending-action-in-the-investigation-details-view)
+Ausstehende Aktionen können mithilfe des [Aktions Centers](#review-a-pending-action-in-the-action-center) oder der [Ansicht Details der Untersuchung](#review-a-pending-action-in-the-investigation-details-view)überprüft und genehmigt werden.
 
 > [!NOTE]
 > Sie müssen über [geeignete Berechtigungen verfügen](mtp-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können.
@@ -65,5 +63,7 @@ Zur Überprüfung und Genehmigung ausstehender Aktionen können Sie eine der fol
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Erfahren Sie mehr über das [Info-Center](mtp-action-center.md).
+
 - Erfahren Sie mehr über [Vorfälle](incidents-overview.md)
+
 - Erfahren Sie mehr zum Thema [Suche](advanced-hunting-overview.md)

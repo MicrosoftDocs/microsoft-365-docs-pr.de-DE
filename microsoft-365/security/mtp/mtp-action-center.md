@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219176"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262022"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>Aufrufen des Info-Centers zum Anzeigen von Wartungsaktionen
+# <a name="the-action-center"></a>Das Wartungscenter
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-## <a name="a-single-pane-of-glass-experience"></a>Eine einzige Oberfläche
+Verwenden Sie das Info-Center, um die Ergebnisse aktueller und früherer Untersuchungen auf den Geräten und in den Postfächern Ihrer Organisation anzuzeigen. Je nach Art der Bedrohung und dem daraus resultierenden Urteil werden [Korrekturaktionen](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) automatisch oder nach Genehmigung durch das Sicherheits Betriebsteam Ihrer Organisation durchgeführt. Alle Wartungsaktionen – unabhängig davon, ob eine Genehmigung aussteht oder diese bereits genehmigt wurden – werden im Info-Center zusammengefasst. 
 
 ![Info-Center](../../media/air-actioncenter.png)
 
-Verwenden Sie das Info-Center, um die Ergebnisse aktueller und früherer Untersuchungen auf den Geräten und in den Postfächern Ihrer Organisation anzuzeigen. Je nach Art der Bedrohung und des [resultierenden Urteils](mtp-autoir-results.md#remediation-actions-following-automated-investigation) erfolgen Wartungsaktionen automatisch oder nach Genehmigung durch das Sicherheitsteam Ihrer Organisation. Alle Wartungsaktionen – unabhängig davon, ob eine Genehmigung aussteht oder diese bereits genehmigt wurden – werden im Info-Center zusammengefasst. 
+## <a name="a-single-pane-of-glass-experience"></a>Eine einzige Oberfläche
 
 Das Info-Center bietet eine einzige Oberfläche für folgende Aufgaben:
 - Genehmigen ausstehender Wartungsaktionen
@@ -63,7 +63,6 @@ Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Info-Center
 
     - Wenn es bei der Untersuchung um ein Gerät geht, werden die Untersuchungsdetails im Security Center ([https://security.microsoft.com](https://security.microsoft.com)) geöffnet. 
 
-
 > [!TIP]
 > Wenn Sie glauben, dass durch automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection etwas übersehen oder fälschlicherweise erkannt wurde, lassen Sie es uns wissen! Weitere Informationen finden Sie unter [How to Report false positives/negatives in Automated Investigation and Response (Air) Funktionen in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
@@ -82,6 +81,8 @@ Um ausstehende Aktionen im Info-Center zu genehmigen oder abzulehnen, müssen Si
 ## <a name="next-steps"></a>Nächste Schritte 
 
 - [Weitere Informationen zu Vorfällen in Microsoft Threat Protection](incidents-overview.md)
+
 - [Anzeigen der Ergebnisse einer automatischen Untersuchung](mtp-autoir-results.md)
+
 - [Weitere Informationen zur Suche in Microsoft Threat Protection](advanced-hunting-overview.md)
 

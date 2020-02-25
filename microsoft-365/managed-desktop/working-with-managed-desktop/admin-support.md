@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085709"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266091"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administrator Unterstützung für Microsoft Managed Desktop
 
@@ -59,12 +59,7 @@ Wenn sich ein **Ticket im Status "** behoben" oder " **gelöst** " befindet, kö
 
 ![Feedback Formular](../../media/feedback_form.png)
 
-## <a name="provide-administrator-rights-to-specific-users"></a>Bereitstellen von Administratorrechten für bestimmte Benutzer
 
-Bei der Arbeit mit Supportmitarbeitern müssen Sie möglicherweise lokalen Administratorrechten für einen Benutzer auf einem Gerät zur Unterstützung der Problembehandlung zur Verfügung stellen. Hierzu müssen Sie bereits über globale Administrator-oder Geräteadministrator Rechte für Ihr eigenes Konto in Microsoft InTune verfügen. Führen Sie je nach Situation einen der folgenden Schritte aus:
-
-- Wenn Ihre Benutzer vom lokalen Active Directory-Konto synchronisiert werden, führen Sie **net localgroup Administrators/Add "Contoso\username"** über eine Eingabeaufforderung mit erhöhten Rechten aus.
-- Wenn Ihre Benutzer in Azure Active Directory erstellt wurden, führen Sie **net localgroup Administrators/Add "AzureAD\UserUpn"** an einer Eingabeaufforderung mit erhöhten Rechten aus.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Endbenutzer Unterstützung für Microsoft Managed Desktop](end-user-support.md). 
