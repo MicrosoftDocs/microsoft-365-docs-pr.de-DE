@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Hier erfahren Sie, wie Sie das Standarddesign von Office 365 ändern und an Ihr Firmen Logo oder Ihre Farbe anpassen können. '
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243946"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280183"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Anpassen des Office 365-Designs für Ihre Organisation
 
@@ -43,7 +43,7 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
   - **Verwenden eines benutzerdefinierten Logo Bilds**: Wählen Sie aus, ob ein Bild aus einer URL verwendet oder ein Bild hochgeladen werden soll. Wenn Sie eine URL verwenden, stellen Sie sicher, dass die URL HTTPS verwendet und 200 x 30 Pixel eines beliebigen Formats beliebiger Größe ist. Sie können ein Logo unter 10 KB hochladen, das 200 x 30 Pixel im Format JPG, PNG, GIF oder SVG ist.
 
     > [!NOTE]
-    > Damit das Logo in der SharePoint-Mobile App angezeigt wird, verwenden Sie nur SVG-Bilder. In einem anderen Format hochgeladene Bilder werden in der APP nicht angezeigt. 
+    > Damit das Logo in der SharePoint-Mobile App angezeigt wird, verwenden Sie nur SVG-Bilder. In einem anderen Format hochgeladene Bilder werden in der APP nicht angezeigt. Logos können in der mobilen SharePoint-APP nicht anklickbar sein.
     
   - **Logo klickbar machen**: Sie können Ihr Logo in der Navigationsleiste als Link zu einer beliebigen Unternehmensressource verwenden. Sie können hier die URL für das Logo eingeben, beginnend mit http://oder https://. Dieser Schritt ist optional.
     

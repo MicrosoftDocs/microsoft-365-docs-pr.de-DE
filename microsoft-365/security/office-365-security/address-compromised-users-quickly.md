@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/20/2020
+ms.date: 02/25/2020
 description: Erfahren Sie, wie Sie den Prozess der Erkennung und Adressierung kompromittierter Benutzerkonten mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection Plan 2 beschleunigen können.
-ms.openlocfilehash: 7dfa1db02e777e3fdb546ebf948ebc297f1caad5
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228564"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280213"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Antwort
 
-[Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) enthält leistungsstarke Funktionen für die [Automatische Untersuchung und Reaktion](office-365-air.md) (Air). Solche Funktionen können Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim Umgang mit Bedrohungen speichern. Microsoft verbessert weiterhin die Sicherheitsfunktionen. In letzter Zeit wurden die Air-Funktionen erweitert, um ein kompromittiertes Benutzer Sicherheits-Textbuch (derzeit in der Vorschau) einzuschließen. Lesen Sie diesen Artikel, um mehr über das kompromittierte User Security-Manuskript zu erfahren. Und lesen Sie den Blogbeitrag beschleunigen Sie die [Zeit zum erkennen und reagieren auf Benutzer Kompromisse und Grenzwerte für Verstöße mit Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) , um weitere Informationen zu erhalten.
+[Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) enthält leistungsstarke Funktionen für die [Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Solche Funktionen können Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim Umgang mit Bedrohungen speichern. Microsoft verbessert weiterhin die Sicherheitsfunktionen. In letzter Zeit wurden die Air-Funktionen erweitert, um ein kompromittiertes Benutzer Sicherheits-Textbuch (derzeit in der Vorschau) einzuschließen. Lesen Sie diesen Artikel, um mehr über das kompromittierte User Security-Manuskript zu erfahren. Und lesen Sie den Blogbeitrag beschleunigen Sie die [Zeit zum erkennen und reagieren auf Benutzer Kompromisse und Grenzwerte für Verstöße mit Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) , um weitere Informationen zu erhalten.
 
 ![Automatische Untersuchung für einen kompromittierten Benutzer](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -56,7 +56,7 @@ Wenn ein Benutzerkonto kompromittiert wird, werden Warnungen ausgelöst. In eini
 - [Anzeigen von Details zu automatisierten Untersuchungen](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> Sie müssen über die entsprechenden Berechtigungen zum Ausführen der folgenden Aufgaben verfügen. Siehe [erforderliche Berechtigungen für die Verwendung von Air-Funktionen](office-365-air.md#required-permissions-to-use-air-capabilities).
+> Sie müssen über die entsprechenden Berechtigungen zum Ausführen der folgenden Aufgaben verfügen. Siehe [erforderliche Berechtigungen für die Verwendung von Air-Funktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities).
 
 ### <a name="view-and-investigate-restricted-users"></a>Anzeigen und untersuchen eingeschränkter Benutzer
 
@@ -70,13 +70,13 @@ Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigi
    ![Widget "andere Warnungen"](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
    Dadurch wird die Liste der eingeschränkten Benutzer geöffnet.<br/>![Eingeschränkte Benutzer in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
 
-4. Wählen Sie ein Benutzerkonto in der Liste aus, um Details anzuzeigen und Aktionen durchführen zu können, beispielsweise [das Freigeben des eingeschränkten Benutzers](removing-user-from-restricted-users-portal-after-spam.md). 
+4. Wählen Sie ein Benutzerkonto in der Liste aus, um Details anzuzeigen und Aktionen durchführen zu können, beispielsweise [das Freigeben des eingeschränkten Benutzers](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam). 
 
 ### <a name="view-details-about-automated-investigations"></a>Anzeigen von Details zu automatisierten Untersuchungen
 
 Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Office 365 Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management** > **Investigations**, und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
 
-Weitere Informationen finden Sie unter [View Details of a Investigation](air-view-investigation-results.md#view-details-of-an-investigation).
+Weitere Informationen finden Sie unter [View Details of a Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
 ## <a name="keep-the-following-points-in-mind"></a>Beachten Sie die folgenden Punkte:
 
@@ -88,9 +88,9 @@ Weitere Informationen finden Sie unter [View Details of a Investigation](air-vie
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Überprüfen der erforderlichen Berechtigungen für die Verwendung von Air-Funktionen](office-365-air.md#required-permissions-to-use-air-capabilities)
+- [Überprüfen der erforderlichen Berechtigungen für die Verwendung von Air-Funktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)
 
-- [Suchen und untersuchen von böswilligen e-Mails in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Suchen und untersuchen von böswilligen e-Mails in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
 - [Informationen zu Air in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

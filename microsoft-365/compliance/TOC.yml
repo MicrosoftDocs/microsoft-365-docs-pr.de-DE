@@ -698,27 +698,30 @@
           href: manage-jobs.md
 - name: Verwalten von Überwachungs- und Warnungsrichtlinien
   items:
-    - name: Durchsuchen des Überwachungsprotokolls
-      href: search-the-audit-log-in-security-and-compliance.md
+    - name: Einheitliche Überwachung
+      items:
+        - name: Durchsuchen des Überwachungsprotokolls
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
+          href: turn-audit-log-search-on-or-off.md
+        - name: Detaillierte Eigenschaften im Überwachungsprotokoll
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: 'Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen'
+          href: export-view-audit-log-records.md
+        - name: 'Verwenden des Überwachungsprotokolls, um häufige Probleme zu untersuchen'
+          href: auditing-troubleshooting-scenarios.md
+        - name: Verwenden der Freigabeüberwachung im Überwachungsprotokoll
+          href: use-sharing-auditing.md
+        - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
+          href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Postfachüberwachung
+      href: enable-mailbox-auditing.md
     - name: Erweiterte Überwachung
       href: advanced-audit.md
-    - name: Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
-      href: turn-audit-log-search-on-or-off.md
-    - name: Verwalten der Postfächern
-      href: enable-mailbox-auditing.md
-    - name: Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
-      href: audit-log-retention-policies.md
-    - name: Detaillierte Eigenschaften im Überwachungsprotokoll
-      href: detailed-properties-in-the-office-365-audit-log.md
-    - name: 'Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen'
-      href: export-view-audit-log-records.md
-    - name: 'Verwenden des Überwachungsprotokolls, um häufige Probleme zu untersuchen'
-      href: auditing-troubleshooting-scenarios.md
-    - name: Verwenden der Freigabeüberwachung im Überwachungsprotokoll
-      href: use-sharing-auditing.md
-    - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
-      href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Verwalten von Warnungsrichtlinien
+      items:
+        - name: Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
+          href: audit-log-retention-policies.md
+    - name: Warnungsrichtlinien
       href: alert-policies.md
 - name: Verwalten von Compliancerisiken
   items:
