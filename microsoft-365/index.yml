@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365-Hilfecenter für Administratoren und IT-Experten
-summary: Erkunden Sie die Hilfe-und Schulungsressourcen von Microsoft 365.
+summary: Entdecken Sie die Hilfe-und Schulungsressourcen für Microsoft 365.
 brand: m365
 metadata:
   title: Microsoft 365-Hilfecenter für Administratoren und IT-Experten
-  description: Einrichten, bereitstellen und Verwalten von Microsoft 365 zur Unterstützung Ihrer Organisation, eines kleinen Unternehmens, einer Kampagne oder von Pädagogen und Kursteilnehmern
+  description: Einrichten, Bereitstellen und Verwalten von Microsoft 365 zur Unterstützung Ihrer Organisation, eines kleinen Unternehmens, einer Kampagne oder von Lehrkräften sowie Schülern und Studenten
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 0575321bf9ed7953389e5a6a8be6b8c21479326a
   ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 02/24/2020
   ms.locfileid: "42250465"
@@ -30,10 +30,10 @@ highlightedContent:
   - title: Einrichten Ihres Unternehmens in der Cloud
     itemType: learn
     url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: Testen von Übungsanleitungen für IT-Experten
+  - title: Testumgebungsanleitungen für IT-Experten
     itemType: how-to-guide
     url: ./enterprise/m365-enterprise-test-lab-guides.md
-  - title: Microsoft 365-Tech-Community
+  - title: Microsoft 365 Tech Community
     itemType: get-started
     url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
   - title: Ressourcen für Entwickler
@@ -41,30 +41,30 @@ highlightedContent:
     url: https://developer.microsoft.com/microsoft-365
 additionalContent:
   sections:
-  - title: Erhalten von Hilfe mit Microsoft 365
-    summary: Wählen Sie eine Karte aus, um weitere Informationen zu Microsoft 365 zu erhalten.
+  - title: Hilfe zu Microsoft 365
+    summary: Wählen Sie eine Karte aus, um mehr über Microsoft 365 zu erfahren.
     items:
     - title: Microsoft 365 Admin Center
-      summary: Einrichten und verwalten Sie Ihre Office 365 und Microsoft 365 for Business und Enteprise subspcriptions.
+      summary: Hier können Sie Ihre Office 365- und Microsoft 365 Business- und Enterprise Abonnements einrichten und verwalten.
       url: ./admin/admin-home.md
     - title: Microsoft 365 Business
-      summary: Für kleine und mittelständische Unternehmen entwickelt. Führen Sie Ihr Unternehmen mit der neuesten Version von Windows und Office-Apps wie Excel und Outlook aus. Nutzen Sie den Datenschutz und die Sicherheit, die auf alle Ihre Geschäfts Geräte ausgedehnt werden.
+      summary: Konzipiert für kleine und mittlere Unternehmen. Führen Sie Ihr Unternehmen mit der neuesten Version von Windows und Office-Apps wie Excel und Outlook. Nutzen Sie die Vorteile von Datenschutz und Sicherheit für alle Ihre Geräte im Unternehmen.
       url: ./business/index.yml
     - title: Microsoft 365 Enterprise
-      summary: Für große Organisationen entwickelt. Schützen Sie Ihr Unternehmen und transformieren Sie die Arbeitsweise mit Office-Apps, Windows 10 und Enterprise Mobility + Security.
+      summary: Konzipiert für große Organisationen. Schützen Sie Ihr Unternehmen, und verändern Sie die Art und Weise, wie Sie mit Office-App, Windows 10 und Enterprise Mobility + Security arbeiten.
       url: ./enterprise/index.yml
     - title: Microsoft 365 Education
-      summary: Entwickelt für Pädagogen zum Entsperren von Kreativität, zur Förderung der Zusammenarbeit und zur Bereitstellung einer einfachen und sicheren Erfahrung in einer einzigen, erschwinglichen Lösung, die für Bildungseinrichtungen entwickelt wurde.
+      summary: Konzipiert für Lehrkräfte, um Kreativität und Zusammenarbeit zu fördern sowie eine einfache und sichere Umgebung in einer einzelnen, bezahlbaren Lösung für das Bildungswesen bereitzustellen.
       url: https://docs.microsoft.com/education/
-    - title: Microsoft 365-Konformität
-      summary: Unterstützen Sie Ihre Organisation beim Steuern von Informationen, beim Schutz vor Risiken und bei der Einhaltung gesetzlicher oder behördlicher Standards.
+    - title: Microsoft 365 Compliance
+      summary: Unterstützen Sie Ihre Organisation bei der Verwaltung von Informationen, beim Schutz vor Risiken und bei der Einhaltung von gesetzlichen oder behördlichen Standards.
       url: ./compliance/index.yml
-    - title: Microsoft 365-Sicherheit
-      summary: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihre Organisation besser auf Angriffsflächen schützen können.
+    - title: Microsoft 365 Security
+      summary: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können.
       url: ./security/index.yml
     - title: Microsoft 365 für Kampagnen
-      summary: Schützen Sie Ihre Kampagnen-oder Geschäftsdaten und-Kommunikation mit dieser empfohlenen Konfiguration für Microsoft 365 Business.
+      summary: Mit dieser empfohlenen Konfiguration für Microsoft 365 Business sind Ihre Kampagnen- oder Geschäftsdaten und Ihre Kommunikation sicher.
       url: ./campaigns/index.md
     - title: Microsoft Managed Desktop
-      summary: Microsoft Managed Desktop vereint Microsoft 365 Enterprise, Cloud-basierte Geräteverwaltung von Microsoft und Sicherheitsüberwachung, sodass Sie Ihre IT-Teams freigeben können, um sich auf die Kerngeschäfts Anforderungen zu konzentrieren.
+      summary: Microsoft Managed Desktop bringt Microsoft 365 Enterprise, die cloudbasierte Geräteverwaltung von Microsoft und die Sicherheitsüberwachung zusammen und ermöglicht, dass sich Ihre IT-Teams auf die wichtigsten Geschäftsanforderungen konzentrieren können.
       url: ./managed-desktop/index.yml

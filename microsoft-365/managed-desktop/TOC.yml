@@ -4,7 +4,7 @@
     - name: Was ist Microsoft Managed Desktop?
       href: intro/index.md
       items:
-        - name: Rollen und Verantwortlichkeiten
+        - name: Rollen und Zuständigkeiten
           href: intro/roles-and-responsibilities.md
         - name: Technologien in Microsoft Managed Desktop
           href: intro/technologies.md
@@ -49,7 +49,7 @@
           href: get-ready/network.md
         - name: Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop
           href: get-ready/authentication.md
-        - name: Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop
+        - name: Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
           href: get-ready/mapped-drives.md
         - name: Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop
           href: get-ready/certs-wifi-lan.md
@@ -61,17 +61,17 @@
     - name: Erste Schritte mit Microsoft Managed Desktop
       href: get-started/index.md
       items:
-        - name: Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
+        - name: Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
           href: get-started/add-admin-contacts.md
         - name: Bedingten Zugriff anpassen
           href: get-started/conditional-access.md
-        - name: Zuweisen von Lizenzen
+        - name: Lizenzen zuweisen
           href: get-started/assign-licenses.md
         - name: Intune-Unternehmensportal bereitstellen
           href: get-started/company-portal.md
         - name: Aktivieren von Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
-        - name: Einrichten von Geräten
+        - name: Geräte einrichten
           href: get-started/set-up-devices.md
           items:
             - name: Selbstregistrieren neuer Geräte
@@ -98,9 +98,9 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: Zuverlässigkeitseinblicke
               href: working-with-managed-desktop/reliability-insights.md
-            - name: Akku Einblicke
+            - name: Akku-Einblicke
               href: working-with-managed-desktop/battery-insights.md
-            - name: Einblicke in Windows-Sicherheitsupdates
+            - name: Informationen zu Windows-Sicherheitsupdates
               href: working-with-managed-desktop/security-update-insights.md
         - name: Administratorunterstützung
           href: working-with-managed-desktop/admin-support.md
