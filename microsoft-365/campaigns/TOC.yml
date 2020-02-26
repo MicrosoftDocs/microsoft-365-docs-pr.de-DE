@@ -12,7 +12,7 @@
       href: microsoft-365-campaigns-setup-overview.md
     - name: Registrieren
       href: m365-campaigns-sign-up.md
-    - name: Einrichtung
+    - name: Einrichten
       href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
     - name: Anmelden
       href: m365-campaigns-sign-in.md
@@ -34,11 +34,11 @@
   items:
     - name: Einrichten einer mehrstufigen Authentifizierung
       href: m365-campaigns-multifactor-authenication.md
-    - name: Einrichten von mobilen Geräten
+    - name: Einrichten mobiler Geräte
       href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json
     - name: Schützen von PCs und Macs
       href: m365-campaigns-protect-pcs-macs.md
-    - name: Einrichten von verwalteten Windows-Geräten
+    - name: Einrichten verwalteter Windows-Geräte
       href: ../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json
 - name: E-Mail-Schutz für alle Mitarbeiter
   items:

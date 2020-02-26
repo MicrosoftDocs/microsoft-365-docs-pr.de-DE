@@ -1,22 +1,22 @@
-- name: Microsoft 365-Sicherheit
+- name: Microsoft 365 Security Center
   href: index.yml
   items:
     - name: Erste Schritte
       items:
         - name: Microsoft 365 Security für geschäftliche Entscheidungsträger
           href: Microsoft-365-security-for-bdm.md
-        - name: 'Chief Informationen Security Officer (CISO) – Workshop-Schulung '
+        - name: Chief Information Security Officer (CISO) – Workshop-Schulung
           href: ./office-365-security/ciso-workshop.md
           items:
             - name: 'Modul 1: Microsoft Internetsicherheit-Briefing'
               href: ./office-365-security/ciso-workshop-module-1.md
-            - name: 'Modul 2: Sicherheitsverwaltung'
+            - name: 'Modul 2: Security Management'
               href: ./office-365-security/ciso-workshop-module-2.md
             - name: Modul 3 – Identität und Zugriff für nicht vertrauenswürdige Benutzer
               href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'Modul 4a: Bedrohungsschutz Strategie, Teil I'
+            - name: 'Modul 4a: Bedrohungsschutzstrategie, Teil I'
               href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'Modul 4 b: Bedrohungsschutz Strategie, Teil II'
+            - name: 'Modul 4b: Bedrohungsschutzstrategie, Teil II'
               href: ./office-365-security/ciso-workshop-module-4b.md
             - name: 'Modul 5: Information Protection'
               href: ./office-365-security/ciso-workshop-module-5.md
@@ -41,17 +41,17 @@
           items:
             - name: Was ist Microsoft Threat Protection?
               href: mtp/microsoft-threat-protection.md
-            - name: Neuerungen in Microsoft Threat Protection
+            - name: Neues in Microsoft Threat Protection
               href: mtp/whats-new.md
             - name: Microsoft 365 Security Center
               href: mtp/overview-security-center.md
             - name: Voraussetzungen
               href: mtp/prerequisites.md
-            - name: Datensicherheit und Datenschutz
+            - name: Sicherheit und Datenschutz
               href: mtp/data-privacy.md
             - name: Behandeln von Problemen
               href: ./mtp/troubleshoot.md
-        - name: Anleitungen
+        - name: Schrittanleitungen
           items:
             - name: Aktivieren von Microsoft Threat Protection
               href: mtp/mtp-enable.md
@@ -67,17 +67,17 @@
                   href: mtp/manage-incidents.md
             - name: Automatische Untersuchung und Reaktion
               items:
-                - name: Luft Übersicht
+                - name: AIR-Übersicht
                   href: mtp/mtp-autoir.md
                 - name: Wartungsaktionen
                   href: mtp/mtp-remediation-actions.md
-                - name: Das Wartungscenter
+                - name: Das Info-Center
                   href: mtp/mtp-action-center.md
-                - name: Anzeigen automatischer Ermittlungs Details und Ergebnisse
+                - name: Anzeigen der Details und Ergebnisse einer automatischen Untersuchung
                   href: mtp/mtp-autoir-results.md
                 - name: Genehmigen oder Ablehnen ausstehender Aktionen
                   href: mtp/mtp-autoir-actions.md
-                - name: Melden von falsch positiven/negativen Ergebnissen
+                - name: Melden falsch-positiver/negativer Ergebnisse
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Erweiterte Suche
               items:
@@ -89,7 +89,7 @@
                   href: mtp/advanced-hunting-query-language.md
                 - name: Verwenden freigegebener Abfragen
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: Jagen auf Geräten und e-Mails
+                - name: Suchen auf Geräten und in E-Mails
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Grundlegendes zum Schema
                   href: mtp/advanced-hunting-schema-tables.md
@@ -134,9 +134,9 @@
               items:
                 - name: Sicherheitsbewertung
                   href: mtp/microsoft-secure-score.md
-                - name: Secure Score (Vorschau)
+                - name: Sicherheitsbewertung (Vorschau)
                   href: mtp/microsoft-secure-score-preview.md
-                - name: Was kommt
+                - name: Was in Kürze verfügbar ist
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Berichte
               items:
@@ -150,11 +150,11 @@
                   href: mtp/monitor-devices.md
                 - name: App-Überwachung und Berichterstellung
                   href: mtp/monitor-apps.md
-            - name: Berechtigungen & Einstellungen
+            - name: Berechtigungen und Einstellungen
               items:
-                - name: Verwalten des Zugriffs
+                - name: Zugriff verwalten
                   href: mtp/mtp-permissions.md
-                - name: Zeitzone festlegen
+                - name: Festlegen der Zeitzone
                   href: mtp/mtp-time-zone.md
             - name: Verwalten von Tickets über ServiceNow
               href: ./mtp/tickets.md
@@ -197,7 +197,7 @@
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                 - name: Häufig gestellte Fragen zum Antispamschutz
                   href: ./office-365-security/anti-spam-protection-faq.md
-                - name: Vermeiden von ungültigen Zeichen in ihren Spamfilterregeln und der Spamfilterrichtlinie
+                - name: Vermeiden ungültiger Zeichen in Ihren Spamfilterregeln und der Spamfilterrichtlinie
                   href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
                 - name: Listen sicherer und blockierter Absender in Exchange Online
                   href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
@@ -243,7 +243,7 @@
                   href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
                 - name: SCL-Bewertungen (Spam Confidence Level)
                   href: ./office-365-security/spam-confidence-levels.md
-                - name: Beheben des Fehlercodes 5.7.7 XX in Exchange Online
+                - name: Beheben des Fehlercodes 5.7.7xx in Exchange Online
                   href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
                 - name: Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
                   href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
@@ -258,7 +258,7 @@
             - name: Antiphishingschutz in Office 365
               href: ./office-365-security/anti-phishing-protection.md
               items:
-                - name: Optimieren des Schutz gegen Phishing
+                - name: Optimieren des Schutzes gegen Phishing
                   href: ./office-365-security/tuning-anti-phishing.md
                 - name: ATP-Antiphishingfunktionen in Office 365
                   href: ./office-365-security/atp-anti-phishing.md
@@ -294,7 +294,7 @@
                   href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
                 - name: Deaktivieren der Junk-E-Mail-Berichterstattung in Outlook im Web
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
-                - name: Worin besteht der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?
+                - name: Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
             - name: In Quarantäne stellen von E-Mail-Nachrichten in Office 365
               href: ./office-365-security/quarantine-email-messages.md
@@ -341,7 +341,7 @@
                       href: ./office-365-security/download-existing-reports.md
                 - name: Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
                   href: ./office-365-security/enable-or-disable-safety-tips.md
-                - name: Anzeigen von Informationen über schädlichen Dateien
+                - name: Anzeigen von Informationen über schädliche Dateien
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
@@ -362,33 +362,33 @@
                       href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
                     - name: Einrichten einer benutzerdefinierten Liste für blockierte URLs
                       href: ./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md
-                - name: Einrichtungsaufgaben für Rollenadministratoren
+                - name: Einrichtungsaufgaben für Rollen-Administratoren
                   items:
                     - name: 'Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: Kampagnen Ansichten
+            - name: Kampagnenansichten
               href: ./office-365-security/campaigns.md
-            - name: Grundlegendes zu neuesten Angriffen mit Threat Analytics
+            - name: Verstehen der neuesten Angriffe mithilfe von Bedrohungsanalyse
               href: ./mtp/latest-attack-campaigns.md
             - name: Automatische Untersuchung und Reaktion
               items:
-                - name: Luft Übersicht
+                - name: AIR-Übersicht
                   href: ./office-365-security/office-365-air.md
-                - name: Anzeigen automatischer Ermittlungs Details und Ergebnisse
+                - name: Anzeigen der Details und Ergebnisse einer automatischen Untersuchung
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: Genehmigen oder Ablehnen ausstehender Aktionen
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Integrieren von Air in eine benutzerdefinierte Lösung oder eine Drittanbieterlösung
+                - name: Integration von AIR in eine benutzerdefinierte Lösung oder Lösung von Drittanbietern
                   href: ./office-365-security/air-custom-reporting.md
-            - name: Schnelles erkennen und adressieren kompromittierter Benutzerkonten
+            - name: Schnelles Erkennen und Vorgehen gegen kompromittierte Benutzerkonten
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Untersuchen und Beheben von böswilligen e-Mails
+            - name: Untersuchen und Beseitigen bösartiger E-Mails
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Anzeigen und Lesen Ihrer ATP-Berichte
               href: ./office-365-security/view-reports-for-atp.md
             - name: Bedeutung von Warnungsseiten für ATP-sichere Links
               href: ./office-365-security/atp-safe-links-warning-pages.md
-            - name: Verwendung von Nachverfolgungslisten für Bedrohungen
+            - name: Verwendung von Bedrohungs-Trackern
               href: ./office-365-security/threat-trackers.md
             - name: Verwendung des Angriffssimulators in Office 365
               href: ./office-365-security/attack-simulator.md
@@ -401,23 +401,23 @@
                   href: ./office-365-security/threat-explorer-views.md
             - name: Mehr Sicherheit durch Integration
               items:
-                - name: Integration von Office 365 ATP mit Microsoft Defender ATP
+                - name: Integration von Office 365 ATP in Microsoft Defender ATP
                   href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
                 - name: SIEM-Integration in Office 365 ATP
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Funktionsweise von ATP
               items:
-                - name: Funktionsweise von automatisierten Untersuchungen und Antworten
+                - name: Funktionsweise der automatischen Untersuchung und Reaktion
                   href: ./office-365-security/automated-investigation-response-office.md
                 - name: Funktionsweise des ATP-Features für sichere Links
                   href: ./office-365-security/how-atp-safe-links-works.md
-                - name: Funktionsweise von sicheren Anlagen in ATP
+                - name: Funktionsweise sicherer Anlagen in ATP
                   href: ./office-365-security/how-atp-safe-attachments-works.md
                 - name: Details zu dynamischer Bereitstellung und Vorschau
                   href: ./office-365-security/dynamic-delivery-and-previewing.md
                 - name: 'ATP für SharePoint, OneDrive und Microsoft Teams'
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
-                - name: Wie die Untersuchung von und Antwort auf Bedrohungen funktioniert
+                - name: Wie die Untersuchung von und Reaktion auf Bedrohungen funktioniert
                   href: ./office-365-security/office-365-ti.md
         - name: Verwalten von Sicherheitsvorfällen
           items:
@@ -437,12 +437,12 @@
               href: ./office-365-security/message-trace-scc.md
             - name: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
-            - name: Nachrichtenübermittlung und Einblicke im Security & Compliance Center
+            - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
                 - name: Nachrichtenfluss-Bericht
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Übersicht über den Top-Domain-e-Mail-Datenstrom
+                - name: Einblick in den Top-Domain-Nachrichtenflussstatus
                   href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
                 - name: SMTP-Auth-Clientbericht
                   href: ./office-365-security/mfi-smtp-auth-clients-report.md
@@ -450,7 +450,7 @@
                   href: ./office-365-security/mfi-sender-domain-insight.md
                 - name: Unzustellbarkeitsbericht
                   href: ./office-365-security/mfi-non-delivery-report.md
-                - name: Bericht "nicht akzeptierte Domäne"
+                - name: Bericht zu nicht akzeptierten Domänen
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
                 - name: Fluss eingehender und ausgehender E-Mails
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
@@ -544,9 +544,9 @@
                       href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
                     - name: Berichterstellung und Nachrichtenablaufverfolgung
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
-                    - name: Intelligente Nachrichtenübermittlung in Office 365
+                    - name: Intelligenter Nachrichtenfluss in Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantäne
+                - name: Quarantine
                   href: ./office-365-security/quarantine.md
                   items:
                     - name: Finden und Freigeben von Nachrichten in Quarantäne als Administrator

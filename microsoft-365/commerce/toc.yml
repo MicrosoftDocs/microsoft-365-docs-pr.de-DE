@@ -1,44 +1,44 @@
-- name: Verwalten von Commerce-Käufen und-Rechnungen
+- name: Verwalten von Commerce-Käufen und -Abrechnungen
   href: index.md
   expanded: true
   items:
-    - name: Verwalten von Abonnements
+    - name: Abonnements verwalten
       items:
-        - name: Verwalten von Drittanbieter-apps
+        - name: Apps von Drittanbietern verwalten
           href: manage-saas-apps.md
-        - name: Abonnements aktualisieren
+        - name: Abonnements upgraden
           href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
-        - name: Verwalten von Self-Service-Käufen (Benutzer)
+        - name: Self-Service-Einkäufe (Benutzer) verwalten
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
-        - name: Verwalten von Self-Service purchases (Administrator)
+        - name: Self-Service-Einkäufe (Administrator) verwalten
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
     - name: Verwalten von Lizenzen
       items:
-        - name: Erwerben von Lizenzen
+        - name: Kaufen von Lizenzen
           href: /microsoft-365/commerce/licenses/buy-licenses
-        - name: Zuweisen von Lizenzen
+        - name: Lizenzen zuweisen
           href: /microsoft-365/admin/manage/assign-licenses-to-users
-        - name: Aufheben der Zuweisung von Lizenzen
+        - name: Zuweisung von Lizenzen aufheben
           href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: Entfernen von Lizenzen aus Ihrem Abonnement
           href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
-    - name: Rechnungen und Zahlungen
+    - name: Abrechnungen und Zahlungen
       items:
-        - name: Grundlegendes zur Ihrer Rechnung
+        - name: Informationen zu Ihrer Rechnung
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: Verwalten von Zahlungsmethoden
+        - name: Zahlungsmethoden verwalten
           href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
-        - name: Verwalten von Abrechnungs Profilen
+        - name: Verwalten von Abrechnungsprofilen
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: Zahlungs Dienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
+        - name: Zahlungsdienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Abrechnungskonten
       items:
-        - name: Verwalten von Abrechnungskonten
+        - name: Abrechnungskonten verwalten
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
         - name: Zuordnen eines Mandanten zu meinem Abrechnungskonto
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Verwalten von Beziehungen mit meinen Partnern
       href: manage-partners.md
-    - name: Konto schließen
+    - name: Schließen Ihres Kontos
       href: close-your-account.md
