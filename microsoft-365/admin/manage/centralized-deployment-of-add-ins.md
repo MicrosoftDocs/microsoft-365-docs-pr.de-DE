@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihre Office 365 Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: 4351658f2637b86c9b3233f55916d8e0ac0f8cfb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252891"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278761"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -82,9 +82,9 @@ Wenn Sie den Aktivierungsbericht nicht verwenden möchten, können Sie einen Ben
 Hilfe zu Office 365 ProPlus finden Sie unter [Tipps zum Behandeln von Problemen mit Office 365](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
-### <a name="exchange-requirements"></a>Exchange-Systemanforderungen
+### <a name="exchange-online-requirements"></a>Exchange Online Anforderungen
 
-Microsoft Exchange speichert die Add-In-Manifestdateien im Mandanten Ihrer Organisation. Der Administrator, der Add-Ins bereitstellt, und die Benutzer, die diese Add-Ins erhalten, müssen eine Version von Exchange Server verwenden, die die OAuth-Authentifizierung unterstützt. Standardmäßig unterstützen Exchange-Mehrmandanten- und VNext-Bereitstellungen OAuth. Dedizierte Exchange-Legacy- und hybride lokale Bereitstellungen können für die Unterstützung von OAuth konfiguriert werden. Dies ist jedoch nicht die Standardkonfiguration.
+Microsoft Exchange speichert die Add-in-Manifeste im Mandanten Ihrer Organisation. Der Administrator, der Add-ins bereitstellt, und die Benutzer, die diese Add-ins empfangen, müssen sich in einer Version von Exchange Online befinden, die die OAuth-Authentifizierung unterstützt. Standardmäßig unterstützen Exchange-Bereitstellungen mit mehreren Mandanten und dedizierten VNext OAuth. 
   
 Informieren Sie sich beim Exchange-Administrator Ihrer Organisation, um herauszufinden, welche Konfiguration verwendet wird. Die OAuth-Verbindung pro Benutzer kann überprüft werden, indem Sie das PowerShell-Cmdlet [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) verwenden. 
 

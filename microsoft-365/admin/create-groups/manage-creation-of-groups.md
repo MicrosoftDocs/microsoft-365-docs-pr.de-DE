@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Office 365-Gruppen erstellen können.
-ms.openlocfilehash: 1f0d3109d1102c740a9be0b670e618eac982e6e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241370"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277192"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Verwalten von Personen, die Office 365-Gruppen erstellen können
 
@@ -120,14 +120,20 @@ Als bewährte Methode empfehlen wir, *immer* die neueste Version zu verwenden: D
 2. Klicken Sie mit der rechten Maustaste auf **Windows PowerShell**, und klicken Sie dann auf **Als Administrator ausführen**.
     
     ![Öffnen Sie PowerShell mit „Als Administrator ausführen“.](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    
+3. Legen Sie die Richtlinie mithilfe von [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)auf RemoteSigned fest.
+    
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
   
-2. Überprüfen Sie das installierte Modul:
+4. Überprüfen Sie das installierte Modul:
     
     ```
     Get-InstalledModule -Name "AzureAD*"
     ```
 
-3. Führen Sie zum Deinstallieren einer früheren Version von AzureADPreview oder AzureAD diesen Befehl aus:
+5. Führen Sie zum Deinstallieren einer früheren Version von AzureADPreview oder AzureAD diesen Befehl aus:
   
     ```
     Uninstall-Module AzureADPreview
@@ -139,7 +145,7 @@ Als bewährte Methode empfehlen wir, *immer* die neueste Version zu verwenden: D
     Uninstall-Module AzureAD
     ```
 
-4. Führen Sie zum Installieren der aktuellsten Version von AzureADPreview diesen Befehl aus:
+6. Führen Sie zum Installieren der aktuellsten Version von AzureADPreview diesen Befehl aus:
   
     ```
     Install-Module AzureADPreview
