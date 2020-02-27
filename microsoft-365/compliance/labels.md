@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Aufbewahrungsbezeichnungen, um Daten organisationsweit für Governance zu klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchzusetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um eine Lösung zur Datensatzverwaltung für Microsoft 365 zu implementieren.
-ms.openlocfilehash: 0675601a888d19e6faaeb75169691909b071b92d
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179206"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277442"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -324,7 +324,7 @@ Wenn Sie eine Bezeichnung mithilfe dieser Option automatisch anwenden möchten, 
 
 Weitere Informationen zu Schulungs trainierbaren Klassifizierungen finden Sie unter [Erste Schritte mit trainierbaren Klassifizierungen (Vorschau)](classifier-getting-started-with.md).
 
-Eine Beispielkonfiguration finden Sie unter [Vorbereiten und Verwenden einer gebrauchsfertigen Klassifizierung](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
+Eine Beispielkonfiguration finden Sie unter [Vorbereiten und Verwenden einer eingebauten Klassifizierung](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Anwenden einer Standardaufbewahrungsbezeichnung auf alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einer Dokumentenmappe
 

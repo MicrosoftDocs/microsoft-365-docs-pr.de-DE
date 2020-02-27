@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266741"
+ms.locfileid: "42277222"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -795,6 +795,9 @@ In der folgenden Tabelle sind die in Microsoft Forms von Benutzern und Administr
 
 Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusätzliche Aktivitätsparameter.
 
+> [!NOTE]
+> Wenn eine Forms-Aktivität durch einen Mitautor oder anonymen Antwortenden ausgeführt wird, wird sie etwas anders protokolliert. Weitere Informationen hierzu finden Sie im Abschnitt [Forms-Aktivitäten, die von Mitautoren und anonymen Antwortenden durchgeführt werden](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Ersteller Kommentar|CreateComment|Der Formularbesitzer fügt Kommentare oder Bewertungen zu einem Quiz hinzu.|
@@ -826,7 +829,23 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Gesendete Antwort|SubmitResponse|Ein Benutzer sendet eine Antwort auf ein Formular. <br><br>Eigenschaft IsInternalForm: Boolescher Wert gibt an, ob der Responder der gleichen Organisation angehört wie der Formularbesitzer.|
 ||||
 
-### <a name="sensitivity-label-activities"></a>Vertraulichkeitsbezeichnungsaktivitäten 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Forms-Aktivitäten, die von Mitautoren und anonymen Antwortenden durchgeführt werden
+
+Forms unterstützt die Zusammenarbeit beim Entwerfen von Formularen und Analysieren von Antworten. Ein Mitwirkender an einem Formular wird als *Mitautor* bezeichnet. Mitautoren können alles erledigen, was der Besitzer eines Formulars tun kann, außer das Löschen oder Verschieben eines Formulars. Forms ermöglichen Ihnen außerdem, ein Formular zu erstellen, auf das anonym geantwortet werden kann. Dies bedeutet, dass der Antwortende nicht bei Ihrer Organisation angemeldet sein muss, um auf ein Formular zu antworten. 
+
+In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informationen im Überwachungsdatensatz für Aktivitäten beschrieben, die von Mitautoren und anonymen Antwortenden ausgeführt wurden.
+
+|**Aktivitätstyp**|**Interner oder externer Benutzer**|**Protokollierte Benutzer-ID**|**Angemeldet bei Organisation**|**Forms-Benutzertyp**|
+|:-----|:-----|:-----|:-----|:-----|
+|Gemeinsame Dokumenterstellungsaktivitäten|Intern|UPN|Organisation des Formularbesitzers|Mitautor|
+|Gemeinsame Dokumenterstellungsaktivitäten|Extern|UPN<br>|Organisation des Mitautors<br>|Mitautor|
+|Gemeinsame Dokumenterstellungsaktivitäten|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Mitautor|
+|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
+|Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
+|Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
+||||
+
+### <a name="sensitivity-label-activities"></a>Vertraulichkeitsbezeichnungsaktivitäten
 
 In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsaktivitäten für SharePoint Online- und Teams-Websites ergeben.
 
