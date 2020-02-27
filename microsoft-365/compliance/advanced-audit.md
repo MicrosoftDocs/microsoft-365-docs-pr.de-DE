@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170515"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280158"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -51,7 +51,7 @@ Sie können auch festlegen, wie lange Überwachungsdatensätze, die der Richtlin
 
 ## <a name="access-to-crucial-events-for-investigations"></a>Zugriff auf wichtige Ereignisse für Untersuchungen
 
-Hochwertige sicherheits- und compliancebezogene Überwachungsereignisse sind Ereignisse, die Ihnen bei der Untersuchung möglicher Verstöße oder bei anderen forensischen Untersuchungen helfen können. Das erste solche hochwertige Ereignis, das wir veröffentlichen, ist das Postfachüberwachungsereignis *MailItemsAccessed*. Dieses Ereignis wird ausgelöst, wenn E-Mail-Protokolle und -Clients auf E-Mail-Daten zugreifen. Das MailItemsAccessed-Ereignis kann Ermittlern dabei helfen, Datenverstöße zu erkennen und den Umfang der Nachrichten zu ermitteln, die möglicherweise kompromittiert wurden. Wenn ein Angreifer Zugriff auf E-Mail-Nachrichten erlangt hat, wird das MailItemsAccessed-Ereignis ausgelöst, selbst wenn kein explizites Zeichen dafür vorliegt, dass diese tatsächlich gelesen wurden (mit anderen Worten: Die Art des Zugriffs, z. B. über Bindung oder Synchronisierung, wird im Überwachungsdatensatz erfasst).
+Hochwertige sicherheits- und compliancebezogene Überwachungsereignisse sind Ereignisse, die Ihnen bei der Untersuchung möglicher Verstöße oder bei anderen forensischen Untersuchungen helfen können. Das erste solche hochwertige Ereignis, das wir veröffentlichen, ist die Postfachüberwachungsaktion *MailItemsAccessed*. Diese Aktion wird ausgelöst, wenn E-Mail-Protokolle und E-Mail-Clients auf E-Mail-Daten zugreifen. Die MailItemsAccessed-Aktion kann Ermittlern dabei helfen, Datenverstöße zu erkennen und den Umfang der Nachrichten zu ermitteln, die möglicherweise kompromittiert wurden. Wenn ein Angreifer Zugriff auf E-Mail-Nachrichten erlangt hat, wird die MailItemsAccessed-Aktion ausgelöst, selbst wenn kein explizites Zeichen dafür vorliegt, dass Nachrichten tatsächlich gelesen wurden (mit anderen Worten: Die Art des Zugriffs, z. B. Bindung oder Synchronisierung, wird im Überwachungsdatensatz erfasst).
 
 Die neue MailItemsAccessed-Postfachaktion ersetzt "MessageBind" in der Postfachüberwachungsprotokollierung in Exchange Online und bietet folgende Verbesserungen:
 
@@ -59,9 +59,17 @@ Die neue MailItemsAccessed-Postfachaktion ersetzt "MessageBind" in der Postfach�
 
 - "MessageBind" betraf nur den Zugriff durch einen E-Mail-Client. Es galt nicht für Synchronisierungsaktivitäten. MailItemsAccessed-Ereignisse werden sowohl durch Bindungs als auch Synchronisierungszugriffstypen ausgelöst.
 
-- MessageBind-Aktionen löste beim mehrfachen Zugriff auf dieselbe E-Mail-Nachricht mehrere Überwachungsdatensätze aus und führte dadurch zu überfüllten Überwachungsprotokollen. Im Gegensatz dazu werden MailItemsAccessed-Ereignisse in weniger Überwachungsdatensätzen aggregiert.
+- MessageBind-Aktionen löste beim mehrfachen Zugriff auf dieselbe E-Mail-Nachricht die Erstellung mehrerer Überwachungsdatensätze aus und führte dadurch zu überfüllten Überwachungsprotokollen. Im Gegensatz dazu werden MailItemsAccessed-Ereignisse in weniger Überwachungsdatensätzen aggregiert.
 
 Weitere Informationen zur Postfachüberwachungsprotokollierung finden Sie unter [Verwalten der Postfachüberwachungs](enable-mailbox-auditing.md).
+
+### <a name="search-for-mailitemsaccessed-audit-records"></a>Suchen nach MailItemsAccessed-Überwachungsdatensätzen
+
+Um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen, können Sie im Office 365 Security & Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Exchange-Postfachaktivitäten** nach der Aktivität **MailItemsAccessed** (Postfachelemente, auf die Zugegriffen wurde) suchen.
+
+![Suchen nach MailItemsAccessed-Aktionen im Überwachungsprotokoll-Suchtool](../media/MailItemsAccessedSCC1.png)
+
+Sie können auch die Befehle [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Zugriff mit hoher Bandbreite auf die Office 365-Verwaltungsaktivitäts-API
 
@@ -72,3 +80,53 @@ Mit der Veröffentlichung der erweiterten Überwachung wechseln wir von einem Gr
 Allen Organisationen ist anfänglich eine Baseline von 2.000-Anforderungen pro Minute zugeordnet. Dieser Wert wird abhängig von der Anzahl der Arbeitsplätze und Lizenzabonnements in einer Organisation dynamisch erhöht. E5-Organisationen erhalten ungefähr doppelt so viel Bandbreite wie Nicht-E5-Organisationen. Zum Schutz des Diensts gibt es auch eine Obergrenze für die maximale Bandbreite.
 
 Weitere Informationen finden Sie im Abschnitt "API-Drosselung" in der [Referenz der Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+
+## <a name="faqs-for-advanced-audit"></a>Häufig gestellte Fragen (FAQs) zur erweiterten Überwachung
+
+**Wo kann ich auf die erweiterte Überwachung zugreifen?**
+
+Nach der Einführung der erweiterten Überwachung für Ihre Organisation können Sie Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen und mithilfe des Überwachungsprotokoll-Suchtools im [Office 365 Security & Compliance Center](https://protection.office.com) nach MailItemsAccessed-Überwachungsdatensätzen suchen. Wir arbeiten daran, die erweiterte Überwachung in den kommenden Wochen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) bereitzustellen.
+
+**Benötigt jeder Benutzer eine E5-Lizenz, um von der erweiterten Überwachung profitieren zu können?**
+
+Dem Benutzer muss eine E5-Lizenz zugewiesen werden, um von der erweiterten Überwachung auf Benutzerebene profitieren zu können. Es gibt einige Funktionen, die überprüfen, ob die entsprechende Lizenz vorliegt, bevor dem Benutzer das Feature bereitgestellt wird. Wenn Sie beispielsweise die Überwachungseinträge für einen Benutzer beibehalten möchten, dem keine E5-Lizenz zugeordnet ist, die noch mindestens 90 Tage gültig ist, wird eine Fehlermeldung angezeigt.
+
+**Warum wird die erweiterte Überwachung in meiner Organisation nicht angezeigt, obwohl wir über ein E5-Abonnement und Benutzer mit E5-Lizenzen verfügen?**
+
+Es ist möglich, dass Features der erweiterten Überwachung (z. B. die Möglichkeit, Aufbewahrungsrichtlinien für Überwachungsprotokolle und die Protokollierung von MailItemsAccessed-Überwachungsdatensätzen zu erstellen) in Ihrer Organisation nicht verfügbar sind, selbst wenn die korrekte Lizenzierung vorhanden ist. Wenn Ihnen das passiert, liegt es daran, dass das Rollout des Pakets der erweiterten Überwachung für Ihre Organisation noch nicht erfolgt ist. Hierbei handelt es sich um ein vorübergehendes Problem des Lizenzabgleichs, das für die betroffenen Organisationen in den nächsten Wochen gelöst werden sollte. Um dieses Problem zu entschärfen, führen Sie bitte die folgenden Schritte für jeden E5-Benutzer durch:
+
+1. Wählen Sie im Microsoft 365 Admin Center unter **Benutzer > Aktive Benutzer** einen Benutzer aus.
+
+2. Klicken Sie auf der Benutzereigenschaften-Flyoutseite auf **Lizenzen und Apps**.
+
+3. Erweitern Sie den Abschnitt **Apps**, und führen Sie dann eine der folgenden Aktionen aus:
+
+   a. Wenn das Kontrollkästchen **Microsoft 365 – Erweiterte Überwachung** nicht aktiviert ist, aktivieren Sie es, und klicken Sie dann auf **Änderungen speichern**. Überwachungsdatensätze für MailItemsAccessed-Aktionen für diesen Benutzer sollten innerhalb von 24 Stunden durchsuchbar sein.
+
+   b. Wenn das Kontrollkästchen **Microsoft 365 – Erweiterte Überwachung** aktiviert ist, deaktivieren Sie es, und klicken Sie dann auf **Änderungen speichern**. Siehe Schritt 4.
+
+4. Wenn Sie das Kontrollkästchen in Schritt 3 deaktiviert haben, warten Sie 60 Minuten, und wiederholen Sie dann Schritt 3a, um die App "Microsoft 365 – Erweiterte Überwachung" zu aktivieren.
+
+**Was passiert, wenn meine Organisation die private Vorschauversion für die einjährige Aufbewahrung von Überwachungsdatensätze verwendet hat?**
+
+Ihre Aufbewahrungsrichtlinien für Überwachungsprotokolle aus dem Vorschauprogramm bleiben erhalten, solange Sie sie nicht durch benutzerdefinierte Aufbewahrungsrichtlinien für Überwachungsprotokolle außer Kraft setzen und ändern.
+
+**Was geschieht, wenn meine Organisation die Überwachungsprotokolle länger als ein Jahr aufbewahren will?**
+
+Wir untersuchen Optionen, wie und ob wir längere Aufbewahrungsfristen für Überwachungsdatensätze anbieten können. Feedback zu einer längeren Aufbewahrung von Überwachungsdatensätzen können Sie unter [Office 365 User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187) abgeben.
+
+**Meine Organisation verfügt über ein E5-Abonnement. Muss ich irgendetwas tun, um Zugriff auf den Überwachungsdatensätzen für MailItemsAccessed-Ereignisse zu erhalten?**
+
+Berechtigte Kunden müssen nichts tun, um Zugriff auf MailItemsAccessed-Ereignisse zu erhalten. Wie bereits zuvor in diesem Thema erläutert, verhindern die durch das Problem des Lizenzabgleichs verursachte Latenzzeit jedoch möglicherweise, dass Überwachungsdatensätze für das MailItemsAccessed-Ereignis beim Durchsuchen eines Überwachungsprotokolls zurückgegeben werden. Folgen Sie in diesem Fall den Anweisungen im Abschnitt "Suchen nach MailItemsAccessed-Überwachungsdatensätzen".
+
+**Planen Sie dieses Jahr zusätzliche Ereignisse zu veröffentlichen?**
+
+Ja, wir planen die Veröffentlichung neuer Ereignisse, die für die Untersuchungen in den kommenden Monaten entscheidend sind. Wir werden Informationen über diese neuen Ereignisse in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) veröffentlichen, sobald wir uns dem Veröffentlichungsdatum nähern.
+
+**Sind die neuen Ereignisse in der erweiterten Überwachung in der Office 365-Verwaltungsaktivitäts-API verfügbar?**
+
+Ja. Solange Überwachungsdatensätze für Benutzer mit der entsprechenden Lizenz generiert werden, können Sie auf diese Datensätze über die Office 365-Verwaltungsaktivitäts-API zugreifen.
+
+**Bedeutet eine höhere Bandbreite eine bessere Latenz oder eine höhere SLA?**
+
+Gegenwärtig bietet eine hohe Bandbreite eine bessere Pipeline, insbesondere für Organisationen mit einem hohen Volumen an Überwachungssignalen und signifikanten Verbrauchsmustern. Dies kann zu einer besseren Latenz führen. Aber es gibt keine SLA, die mit hoher Bandbreite verbunden ist. Die Standardlatenzen sind dokumentiert, und diese ändern sich mit der Veröffentlichung der erweiterten Überwachung nicht.
