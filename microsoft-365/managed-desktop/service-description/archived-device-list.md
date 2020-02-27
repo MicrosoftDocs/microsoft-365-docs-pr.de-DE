@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085784"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284366"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -35,9 +35,12 @@ Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der fo
 
 | Modell  | Minimale Angaben  | Zusätzliche Anforderungen   | Ruhestands Datum |
 |---------|---------|---------|---------|
+| Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | IR-Kamera erforderlich | **9. Januar 2023** |
+| Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB RAM   | IR-Kamera erforderlich | **9. Januar 2023** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdruck-Sensor erforderlich  | **15. Februar 2023** |
 |HP Elite x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS03AV, IR-Kamera erforderlich |**14. Mai 2023** |
 |HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich |**14. Mai 2023** |
+|HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | **23. Oktober 2023** |
 |DGM-Buch 2| 256 GB/Intel i5/8 GB RAM | Keine | **16. November 2022** |
 |Surface-Laptop| 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |
 |Surface pro| 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2022** |
@@ -47,7 +50,7 @@ Darüber hinaus muss das Gerät auch:
 
 - Lassen Sie ein Bild von Microsoft Managed Desktop genehmigen. Wenn Sie Geräte bestellen, stellen Sie sicher, dass Sie angeben, dass Sie mit Microsoft Managed Desktop verwendet werden.
 - Die Windows-Erstausführung wurde nicht abgeschlossen.
-- Mit der [Geräte Registrierungs](https://aka.ms/mmddrhelp) Funktion mit verwaltetem Destkop von Microsoft registriert werden
+- Bei Microsoft Managed Desktop mithilfe der [Geräte Registrierungs](https://aka.ms/mmddrhelp) Funktion registriert werden
 
 #### <a name="additional-help"></a>Weitere Hilfe
 

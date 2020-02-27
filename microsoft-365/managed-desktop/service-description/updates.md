@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250475"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284376"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Behandlung von Updates in Microsoft Managed Desktop
 
@@ -32,7 +32,7 @@ Weitere Informationen finden Sie unter [Windows Update für Unternehmen: Updatet
 
 Microsoft Managed Desktop verwendet vier Azure Ad Gruppen zum Verwalten von Updates:
 
-- **Test**: wird zum Validieren von Änderungen an Microsoft Managed Desktop-Richtlinien, Betriebssystemupdates, Feature-Updates und anderen an den Mandanten verschobenen Änderungen verwendet. Es dürfen keine Endbenutzer in der Testgruppe vorhanden sein. Die Testgruppe ist von allen etablierten Vereinbarungen zum Service Level und Endbenutzer Unterstützung ausgenommen. Diese Gruppe kann verwendet werden, um die Kompatibilität von Anwendungen mit neuen Richtlinien oder Betriebssystem hängen zu überprüfen.  
+- **Test**: wird zum Validieren von Änderungen an Microsoft Managed Desktop-Richtlinien, Betriebssystemupdates, Feature-Updates und anderen an den Mandanten verschobenen Änderungen verwendet. Es dürfen keine Endbenutzer in der Testgruppe vorhanden sein. Die Testgruppe ist von allen etablierten Vereinbarungen zum Service Level und Endbenutzer Unterstützung ausgenommen. Diese Gruppe kann verwendet werden, um die Kompatibilität von Anwendungen mit neuen Richtlinien oder Betriebssystemänderungen zu überprüfen.  
 - **Erstens**: enthält frühe Software Benutzer und Geräte, die vorab Updates unterliegen könnten. Geräte in dieser Gruppe können Ausfälle auftreten, wenn es Szenarien gibt, die während der Tests im testring nicht berücksichtigt wurden.
 - **Fast**: priorisiert die Geschwindigkeit über die Stabilität. Nützlich, um Qualitätsprobleme zu erkennen, bevor Sie für die breite Gruppe angeboten werden. Diese Gruppe dient als nächste Überprüfungsebene, ist jedoch im allgemeinen stabiler als der Test und die ersten Gruppen. 
 - **Allgemein**: letzte Gruppe, für die Feature-und Qualitäts Updates verfügbar sind. Diese Gruppe enthält die Mehrzahl der Benutzer im Mandanten und begünstigt daher die Stabilität über die Geschwindigkeit bei der Bereitstellung. Das Testen von apps sollte hier vorgenommen werden, da die Umgebung am stabilsten ist. 

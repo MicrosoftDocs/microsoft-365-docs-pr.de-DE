@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ba50572405da05359594fea85fdba2d28f3b141b
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235224"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288543"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Voraussetzungen für Microsoft Threat Protection
 
@@ -36,11 +36,11 @@ ms.locfileid: "42235224"
 Erfahren Sie mehr über die Lizenzierungs-, Hardware-und Softwareanforderungen und andere Konfigurationseinstellungen für die Einrichtung und Verwendung von Microsoft Threat Protection.
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
-Für die Verwendung von Microsoft Threat Protection benötigen Sie eine der folgenden Lizenzen oder eine Kombination von Lizenzen:
+Für die Verwendung von Microsoft Threat Protection benötigen Sie eine der folgenden Lizenzen oder *eine* Kombination von Lizenzen:
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Security
-- Office 365 E5, Enterprise Mobility + Security E5 und Windows E5
+- Office 365 E5 und "Enterprise Mobility + Security E5 (EMS E5)" und Windows E5
 
 [Anzeigen von Microsoft 365 Enterprise-Dienstplänen](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 

@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262012"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288473"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
@@ -28,7 +29,9 @@ ms.locfileid: "42262012"
 
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
-Auf hohem Niveau funktioniert der Luftstrom wie folgt:
+Eine Warnung wird ausgelöst, und ein Sicherheits-Textbuch wird initiiert, wodurch eine automatisierte Untersuchung gestartet wird. Oder ein Sicherheitsanalytiker löst eine automatisierte Untersuchung bei Verwendung von Threat Explorer aus. Die automatische Untersuchung wird ausgeführt, und in der Regel werden bestimmte Korrekturaktionen identifiziert. Diese Aktionen werden vom Sicherheits Betriebsteam überprüft und genehmigt, und die Untersuchung wird abgeschlossen. 
+
+In der folgenden Tabelle wird Schritt für Schritt durch den gesamten Luftstrom gewandert:
 
 |Schritt  |Aktionen  |
 |---------|---------|
