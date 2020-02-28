@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278771"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328122"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -155,7 +155,10 @@ Wenn Sie Berechtigungen zuweisen, können Sie folgende Optionen auswählen:
 - Jeder in Ihrem Unternehmen (alle Mandantenmitglieder). Diese Einstellung schließt Gastkonten aus.
 - Alle authentifizierten Benutzer. Stellen Sie sicher, dass Sie die [Voraussetzungen und Einschränkungen](#requirements-and-limitations-for-add-any-authenticated-users) dieser Einstellung verstehen, bevor Sie sie auswählen.
 - Bestimmte Benutzer oder E-Mail-aktivierte Sicherheitsgruppen, Verteilergruppen, Office 365-Gruppen oder dynamische Verteilergruppen. 
-- Eine E-Mail-Adresse oder Domäne außerhalb Ihrer Organisation, z. B. gmail.com, outlook.com oder hotmail.com. 
+- Beliebige E-Mail-Adresse oder Domäne. Verwenden Sie diese Option, um alle Benutzer in einer anderen Organisation, die Azure AD verwendet, anzugeben, indem Sie einen beliebigen Domänennamen aus dieser Organisation eingeben. Sie können diese Option auch für Anbieter sozialer Dienste verwenden, indem Sie deren Domänennamen eingeben, z. B. **gmail.com****hotmail.com** oder **Outlook.com**.
+
+> [!NOTE]
+> Wenn Sie eine Domäne aus einer Organisation angeben, die Azure AD verwendet, können Sie den Zugriff auf diese bestimmte Domäne nicht einschränken. Stattdessen werden alle überprüften Domänen in Azure AD für den Mandanten mit dem von Ihnen angegebenen Domänennamen automatisch einbezogen.
 
 Wenn Sie alle Mandantenmitglieder auswählen oder das Verzeichnis durchsuchen, müssen die Benutzer oder Gruppe eine E-Mail-Adresse aufweisen.
 
@@ -163,7 +166,7 @@ Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwende
 
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Voraussetzungen und Einschränkungen für **Hinzufügen von allen authentifizierten Benutzern**
 
-Diese Einstellung schränkt den Zugriff der Benutzer auf den Inhalt nicht ein, der von der Bezeichnung verschlüsselt wird, während sie den Inhalt weiterhin verschlüsselt und Ihnen Optionen zum Einschränken des Inhalts (Berechtigungen) und zum Zugriff auf (Ablauf und Offlinezugriff) bietet. Die Anwendung, die die verschlüsselten Inhalte öffnet, muss die verwendete Authentifizierung unterstützen können. Aus diesem Grund funktionieren Partner-Sozialnetwerkanbieter wie Google und die einmalige Kennungsauthentifizierung nur für E-Mail und nur dann, wenn Sie Exchange Online und die neuen Funktionen aus der Office 365-Nachrichtenverschlüsselung verwenden. Microsoft-Konten können mit Office 365-Apps und dem [Azure Information Protection-Viewer](https://portal.azurerms.com/#/download)verwendet werden.
+Diese Einstellung schränkt den Zugriff der Benutzer auf den Inhalt nicht ein, der von der Bezeichnung verschlüsselt wird, während sie den Inhalt weiterhin verschlüsselt und Ihnen Optionen zum Einschränken des Inhalts (Berechtigungen) und zum Zugriff auf (Ablauf und Offlinezugriff) bietet. Die Anwendung, die die verschlüsselten Inhalte öffnet, muss die verwendete Authentifizierung unterstützen können. Aus diesem Grund funktionieren Partner-Sozialnetwerkanbieter wie Google und die Authentifizierung mit einer Einmalkennung nur für E-Mail und nur dann, wenn Sie Exchange Online verwenden. Microsoft-Konten können mit Office 365-Apps und dem [Azure Information Protection-Viewer](https://portal.azurerms.com/#/download)verwendet werden.
 
 Einige typische Szenarien für die Einstellung "Alle authentifizierten Benutzer":
 - Es ist Ihnen egal, wer auf den Inhalt zugreift, aber Sie möchten die Verwendung einschränken. So möchten Sie beispielsweise nicht, dass der Inhalt bearbeitet, kopiert oder gedruckt wird.
@@ -175,9 +178,9 @@ Einige typische Szenarien für die Einstellung "Alle authentifizierten Benutzer"
 Wenn Sie die Berechtigungen für diese Benutzer oder Gruppen auswählen, können Sie folgende Optionen auswählen:
 
 - Eine [vordefinierte Berechtigungsstufe](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) mit einer bereits festgelegten Gruppen von Rechten, z. B. Mitverfasser oder Überprüfer.
-- Eine benutzerdefinierte Gruppe von Berechtigungen, aus der Sie beliebige Berechtigungen auswählen können.
+- Benutzerdefinierte Berechtigungen, wobei Sie ein oder mehrere Nutzungsrechte auswählen.
 
-Weitere Informationen zu den einzelnen Berechtigungen finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Weitere Informationen, die Ihnen bei der Auswahl der entsprechenden Berechtigungen helfen, finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -255,6 +258,97 @@ Bei der integrierten Bezeichnung sehen die Benutzer dasselbe Dialogfeld, wenn Si
 - MacOS: Registerkarte **Überprüfen** > **Schutz** > **Berechtigungen** > **eingeschränkter Zugriff**
 
 
+## <a name="example-configurations-for-the-encryption-settings"></a>Beispielkonfigurationen für die Verschlüsselungseinstellungen
+
+Führen Sie für jedes der folgenden Beispiele die Konfiguration über die Seite **Verschlüsselung** des Assistenten aus, wenn Sie eine [Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). Stellen Sie zunächst sicher, dass die **Verschlüsselung** auf **Übernehmen** festgelegt ist:
+
+![Anwenden der Verschlüsselungsoption im Assistenten für Vertraulichkeitsbezeichnungen](../media/apply-encryption-option.png)
+
+### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Beispiel 1: Bezeichnung, die "Nicht weiterleiten" beim Senden einer verschlüsselten E-Mail-Nachricht an ein Gmail-Konto anwendet
+
+Diese Bezeichnung steht nur in Outlook und Outlook im Web zur Verfügung, und Sie müssen Exchange Online verwenden. Weisen Sie Benutzer an, diese Bezeichnung auszuwählen, wenn sie eine verschlüsselte E-Mail an Personen senden müssen, die ein Gmail-Konto (oder ein anderes E-Mail-Konto außerhalb Ihrer Organisation) verwenden. 
+
+Ihre Benutzer geben die Gmail-Adresse in das Feld **An** ein.  Dann wählen sie die Bezeichnung aus, und die Option "Nicht weiterleiten" wird der E-Mail automatisch hinzugefügt. Das hat zur Folge, dass Empfänger die E-Mail nicht weiterleiten oder drucken, deren Inhalt nicht kopieren und die E-Mail nicht über die Option **Speichern unter** außerhalb Ihres Postfachs speichern können. 
+
+1. Auf der Seite **Verschlüsselung**: Wählen Sie für **Jetzt Berechtigungen zuweisen oder die Benutzer entscheiden lassen?** die Option **Benutzern die Zuweisung von Berechtigungen überlassen, wenn sie die Bezeichnung anwenden** aus.
+
+3. Aktivieren Sie das Kontrollkästchen **In Outlook Einschränkungen durchsetzen, die der Option "Nicht weiterleiten" entsprechen**.
+
+4. Wenn das Kontrollkästchen **In Word, PowerPoint und Excel die Benutzer auffordern, Berechtigungen anzugeben** aktiviert ist, deaktivieren Sie es.
+
+5. Wählen Sie **Weiter** aus, und schließen Sie den Assistenten ab.
+
+
+### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>Beispiel 2: Bezeichnung, die die Nur-Lese-Berechtigung auf alle Benutzer in einer anderen Organisation beschränkt
+
+Diese Bezeichnung eignet sich für die schreibgeschützte Freigabe streng vertraulicher Dokumente, wobei zum Anzeigen der Dokumente immer eine Internetverbindung benötigt wird.
+
+Diese Bezeichnung eignet sich nicht für E-Mails.
+
+1. Auf der Seite **Verschlüsselung**: Wählen Sie für **Jetzt Berechtigungen zuweisen oder die Benutzer entscheiden lassen?** die Option **Berechtigungen sofort zuweisen** aus.
+
+3. Wählen Sie für **Offlinezugriff zulassen** die Option **Nie** aus.
+
+4. Wählen Sie **Berechtigungen zuweisen** aus.
+
+3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Diese E-Mail-Adresse oder Domänen hinzufügen** aus.
+
+4. Geben Sie in das Textfeld den Namen einer Domäne der anderen Organisation ein, z. B. **fabrikam.com**. Wählen Sie dann **Hinzufügen** aus.
+
+5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
+
+6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** im Dropdownfeld **Viewer** und dann **Speichern** aus.
+
+6. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
+
+7. Wählen Sie auf der Seite **Verschlüsselung** die Option **Weiter** aus, und schließen Sie den Assistenten ab.
+
+
+### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>Beispiel 3: Hinzufügen externer Benutzer zu einer vorhandenen Bezeichnung, die Inhalt verschlüsselt
+
+Die neuen Benutzer, die Sie hinzufügen, können Dokumente und E-Mails öffnen, die bereits mit dieser Bezeichnung geschützt sind. Die Berechtigungen, die Sie diesen Benutzern gewähren, können sich von den Berechtigungen der vorhandenen Benutzer unterscheiden.
+
+1. Auf der Seite **Verschlüsselung**: Stellen Sie sicher, dass für **Jetzt Berechtigungen zuweisen oder die Benutzer entscheiden lassen?** die Option **Berechtigungen sofort zuweisen** ausgewählt ist.
+
+2. Wählen Sie **Berechtigungen zuweisen** aus.
+
+3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Diese E-Mail-Adresse oder Domänen hinzufügen** aus.
+
+4. Geben Sie in das Textfeld die E-Mail-Adresse des ersten hinzuzufügenden Benutzers (oder der ersten Gruppe) ein, und wählen Sie dann **Hinzufügen** aus.
+
+5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
+
+6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** die Berechtigungen für diesen Benutzer (oder die Gruppe) und dann **Speichern** aus.
+
+7. Wiederholen Sie im Bereich **Berechtigungen zuweisen** die Schritte 3 bis 6 für jeden Benutzer (oder jede Gruppe), zu dem bzw. der Sie diese Bezeichnung hinzufügen möchten. Klicken Sie dann auf **Speichern**.
+
+8. Wählen Sie auf der Seite **Verschlüsselung** die Option **Weiter** aus, und schließen Sie den Assistenten ab.
+
+
+### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Beispiel 4: Bezeichnung, die Inhalte verschlüsselt, aber nicht einschränkt, wer darauf zugreifen kann
+
+Diese Konfiguration hat den Vorteil, dass Sie zur Verschlüsselung einer E-Mail oder eines Dokuments keine Benutzer, Gruppen oder Domänen angeben müssen. Der Inhalt wird trotzdem verschlüsselt, und Sie können Nutzungsrechte, ein Ablaufdatum und Offlinezugriff festlegen. 
+
+Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer das geschützte Dokument oder die E-Mail öffnen kann. [Weitere Informationen zu dieser Einstellung](#requirements-and-limitations-for-add-any-authenticated-users)
+
+1. Auf der Seite **Verschlüsselung**: Stellen Sie sicher, dass für **Jetzt Berechtigungen zuweisen oder die Benutzer entscheiden lassen?** die Option **Berechtigungen sofort zuweisen** ausgewählt ist.
+
+2. Konfigurieren Sie die Einstellungen für **Benutzerzugriff auf Inhalte läuft ab** und **Offlinezugriff zulassen** wie erforderlich.
+
+3. Wählen Sie **Berechtigungen zuweisen** aus.
+
+4. Wählen Sie im Bereich **Berechtigungen zuweisen**die Option **Alle authentifizierten Benutzer hinzufügen** aus. 
+    
+    Für **Benutzer und Gruppen** wird **AuthenticatedUsers** automatisch hinzugefügt. Sie können diesen Wert nicht ändern, sondern nur löschen, wodurch die Auswahl **Alle authentifizierten Benutzer hinzufügen** aufgehoben wird.
+
+5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
+
+6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** im Dropdownfeld die gewünschte **Viewer**-Berechtigung und dann **Speichern** aus.
+
+7. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
+
+8. Wählen Sie auf der Seite **Verschlüsselung** die Option **Weiter** aus, und schließen Sie den Assistenten ab.
+
 ## <a name="considerations-for-encrypted-content"></a>Überlegungen zu verschlüsselten Inhalten
 
 Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie sicherstellen, dass nur autorisierte Personen auf diese Daten zugreifen können. Es müssen jedoch einige Überlegungen berücksichtigt werden:
@@ -291,9 +385,9 @@ Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protecti
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Konfigurieren von Exchange für Azure Information Protection
 
-Exchange muss nicht für Azure Information Protection konfiguriert werden, damit Benutzer Bezeichnungen in Outlook anwenden können, um E-Mails zu schützen. Bis Exchange aber für Azure Information Protection konfiguriert ist, können Sie nicht den vollen Funktionsumfang des Azure Information Protection-Schutzes in Exchange nutzen.
+Exchange muss nicht für Azure Information Protection konfiguriert werden, bevor Benutzer in Outlook zum Verschlüsseln ihrer E-Mails Bezeichnungen anwenden können. Solange Exchange jedoch nicht für Azure Information Protection konfiguriert ist, erhalten Sie nicht die volle Funktionalität des Azure Rights Management-Schutzes mit Exchange.
  
-Benutzer können beispielsweise geschützte E-Mails nicht auf Mobiltelefonen oder mit Outlook im Web anzeigen, geschützte E-Mails können nicht für die Suche indexiert werden, und Sie können Exchange Online DLP nicht für den Rights Management-Schutz konfigurieren. 
+Benutzer können beispielsweise verschlüsselte E-Mails nicht auf Mobiltelefonen oder mit Outlook im Web anzeigen, verschlüsselte E-Mails können nicht für die Suche indexiert werden, und Sie können Exchange Online DLP nicht für den Rights Management-Schutz konfigurieren. 
 
 Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
 
