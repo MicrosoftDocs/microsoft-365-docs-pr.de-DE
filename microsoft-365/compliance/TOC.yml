@@ -65,7 +65,7 @@
       items:
         - name: Informationen zu Privileged Access Management
           href: privileged-access-management-overview.md
-        - name: Konfigurieren von Privileged Access Management
+        - name: Erste Schritte mit privilegierter Zugriffsverwaltung
           href: privileged-access-management-configuration.md
     - name: Schutz von Benutzer- und Gerätezugriff
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Verwalten von Datenuntersuchungen
-  href: overview-data-investigations.md
   items:
+    - name: Übersicht über Daten Untersuchungen
+      href: overview-data-investigations.md
     - name: Verwalten von Datenüberläufen
       href: manage-data-spillage-incidents.md
+    - name: Zuweisen von Berechtigungen für Datenuntersuchungen
+      href: data-investigations-permissions.md
     - name: Erstellen einer neuen Untersuchung
       href: create-new-investigation.md
-    - name: Zuweisen von Berechtigungen für Datenuntersuchungen
-      href: permissions.md
     - name: Suchen nach Daten in einer Untersuchung
       href: search-for-data.md
       items:
