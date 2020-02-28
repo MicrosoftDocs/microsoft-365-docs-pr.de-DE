@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7c2a19a58dd616e2516ea70492f4f65ab211441
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916880"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322554"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -56,15 +56,11 @@ Die folgenden Aufgaben sind erforderlich, um die DSGVO-Standards zu erfüllen. F
 
 Wie weiter oben erwähnt, bieten der empfohlene DSGVO-Aktionsplan und die Prüflisten zu Rechenschaftspflicht einen Leitfaden zur Implementierung oder Bewertung der Konformität von DSGVO bei der Verwendung von Microsoft-Produkten und -Diensten.
 
-## <a name="the-gdpr-in-action"></a>Die DSGVO in Aktion
-
-In diesem Abschnitt finden Sie eine Übersicht und Punkte, die es bei der Erfüllung der oben erwähnten DSGVO-Aufgaben zu bedenken gilt. Der Abschluss dieser Aufgaben kann je nach Microsoft-Konfiguration variieren.
-
-### <a name="data-subject-request-dsr"></a>Antrag einer betroffenen Person
+## <a name="data-subject-request-dsr"></a>Antrag einer betroffenen Person
 
 Die DSGVO gewährt Personen bestimmte Rechte in Verbindung mit der Verarbeitung ihrer personenbezogenen Daten, einschließlich des Rechts zur Korrektur falscher Daten, zum Löschen von Daten bzw. zur Einschränkung ihrer Verarbeitung, zum Empfangen von Daten und zum Erfüllen einer Anforderung zur Übertragung der Daten an einen anderen Controller. Der Verantwortliche ist für die Bereitstellung einer zeitgerechten, DSGVO-konsistenten Antwort verantwortlich. Technische Details finden Sie unter [Anträge betroffener Personen](gdpr-data-subject-requests.md).  
 
-#### <a name="dsr-faqs"></a>Häufig gestellte Fragen (FAQs) zum Antrag einer betroffenen Person
+### <a name="dsr-faqs"></a>Häufig gestellte Fragen (FAQs) zum Antrag einer betroffenen Person
 
 **Welche Aktionen sind zum Durchführen eines Antrags einer betroffenen Person erforderlich?**
 
@@ -105,11 +101,11 @@ Eine Reihe von Artikeln zur DSGVO finden Sie hier. Sie wurden von Microsoft erst
 
 Online Services bietet ein breites Spektrum an Funktionalitäten, die Sie als Controller nutzen können, um auf Anfragen von Datensubjekten zu reagieren. Microsoft-Unternehmensonlinedienste und Administratorsteuerelemente unterstützen Sie dabei, auf personenbezogene Daten im Rahmen von Datenbetreffsanforderungen zu reagieren, sodass Sie personenbezogene Daten, die sich in den vom Controller verwalteten Daten befinden, die in der Cloud von Microsoft gespeichert sind, auffinden, korrigieren, einschränken, löschen, exportieren und darauf zugreifen können. Online Services stellt Daten bei Bedarf auch in maschinenlesbarer Form bereit.
 
-### <a name="data-protection-impact-assessment"></a>Datenschutzfolgenabschätzung
+## <a name="data-protection-impact-assessment"></a>Datenschutzfolgenabschätzung
 
 Unter der DSGVO sind Datenverantwortliche dazu aufgerufen, eine [Datenschutzfolgenabschätzung](gdpr-data-protection-impact-assessments.md) (Data Protection Impact Assessment, DPIA) für Prozesse vorzubereiten, die „wahrscheinlich zu einem hohen Risiko für die Rechte und Freiheiten natürlicher Personen führen“. Microsoft-Produkte und -Dienste an sich machen keine Datenschutzfolgenabschätzung erforderlich. Vielmehr hängt dies von den Details Ihrer Microsoft-Konfiguration ab. Eine Liste der Details, die in Office berücksichtigt werden müssen, finden Sie in [Inhalte einer Datenschutzfolgenabschätzung](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia).
 
-#### <a name="dpia-faqs"></a>Häufig gestellte Fragen zur Datenschutzfolgenabschätzung
+### <a name="dpia-faqs"></a>Häufig gestellte Fragen zur Datenschutzfolgenabschätzung
 
 **Wann sollten Sie eine Datenschutzfolgenabschätzung durchführen?**
 
@@ -142,11 +138,11 @@ Diese Datenschutzüberprüfungen sind in der Regel ausführlich – ein bestimmt
 
 In der Funktion des Datenverarbeiters ist Microsoft verpflichtet, Datencontroller dabei zu unterstützen, die in der DSGVO formulierten Anforderungen an Datenschutz-Folgenabschätzungen zu erfüllen. Zur Unterstützung unserer Kunden wurden die relevanten Abschnitte der DPIAs von Microsoft zusammengefasst und werden in diesem Abschnitt in künftigen Updates bereitgestellt, damit Controller die Microsoft-Dienste nutzen können, um die Zusammenfassungen für die Erstellung eigener DPIAs zu verwenden.
 
-### <a name="breach-notification"></a>Benachrichtigung bei Sicherheitsverletzungen
+## <a name="breach-notification"></a>Benachrichtigung bei Sicherheitsverletzungen
 
 Die DSGVO sieht für die Verletzung des Schutzes personenbezogener Daten eine Informationspficht für Datencontroller und Datenverarbeiter vor. Als Datenauftragsverarbeiter stellt Microsoft sicher, dass unsere Kunden die DSGVO-Anforderungen zur Benachrichtigung bei Sicherheitsverletzungen erfüllen. Die Datenverantwortlichen sind dafür verantwortlich, die Datenschutzrisiken zu bewerten und zu beurteilen, ob ein Kunde über eine Datenschutzverletzung benachrichtigt werden muss. Microsoft stellt die Informationen zur Verfügung, die für diese Einschätzung erforderlich sind. Weitere Informationen darüber, wie Microsoft eine Verletzung des Schutzes personenbezogener Daten erkennt und darauf reagiert, finden Sie in [Benachrichtigung bei Datenschutzverletzungen im Rahmen der DSGVO](gdpr-breach-notification.md).
 
-#### <a name="breach-notification-faqs"></a>Häufig gestellte Fragen zu Benachrichtigung bei Sicherheitsverletzungen
+### <a name="breach-notification-faqs"></a>Häufig gestellte Fragen zu Benachrichtigung bei Sicherheitsverletzungen
 
 **Was stellt eine Verletzung personenbezogener Daten im Rahmen der DSGVO dar?**
 
@@ -178,7 +174,7 @@ Für die Verletzung des Schutzes personenbezogener Daten bietet Microsoft Ihnen 
 
 Microsoft hat Richtlinien und Prozeduren implementiert, um Sie umgehend zu benachrichtigen. Damit Sie Ihrer Informationspflicht gegenüber der Datenschutzbehörde nachkommen können, stellen wir eine Beschreibung des Prozesses bereit, der befolgt wurde, um zu ermitteln, ob eine Verletzung des Schutzes personenbezogener Daten aufgetreten ist, ebenso wie eine Beschreibung der Art der Verletzung sowie der ergriffenen Gegenmaßnahmen.
 
-### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Prüflisten zu Rechenschaftspflicht für die DSGVO
+## <a name="accountability-readiness-checklists-for-the-gdpr"></a>Prüflisten zu Rechenschaftspflicht für die DSGVO
 
 Diese [Prüflisten](gdpr-arc.md) ermöglichen einen bequemen Zugriff auf Informationen, die Sie bei der Einhaltung der DSGVO bei Verwendung von Microsoft-Produkten benötigen. Sie können die Elemente in dieser Prüfliste mit [Microsoft Compliance-Score](compliance-score.md) verwalten, indem Sie auf die „Kontroll-ID“ und den „Kontrolltitel“ unter den „Vom Kunden verwalteten Steuerelementen“ in der DSGVO-Kachel verweisen.
 

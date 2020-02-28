@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266973"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322564"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Was kommt in Microsoft Secure Score vor?
 
@@ -59,7 +59,7 @@ Die folgenden InTune-Verbesserungs Aktionen werden entfernt:
 - Erfordern von erweiterten Sicherheitskonfigurationen für alle Geräte
 - Bericht überprüfen blockierter Geräte wöchentlich
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen 
 
 Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede Verbesserungs Aktion messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungs Aktionen.
 
@@ -93,7 +93,7 @@ Aus diesen Gründen werden alle Verbesserungs Aktionen, die eine Überarbeitungs
 
 ## <a name="march-16th-2020"></a>16. März 2020
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Entfernen von Verbesserungs Aktionen, die nicht den Erwartungen für eine zuverlässige Messung entsprechen oder keine sinnvolle Darstellung der Sicherheitsposition bieten
 
 Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede Verbesserungs Aktion messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungs Aktionen.
 
@@ -102,6 +102,7 @@ Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede V
 - Einrichten Office 365 sicherer Links zum Überprüfen von URLs
 - Post Fach Delegierung nicht zulassen
 - Zulassen von anonymen Gast Freigabelinks für Websites und Dokumente
+- Aktivieren der Cloud-App-Sicherheitskonsole
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Unterstützen von Sicherheitsstandards für Azure AD Verbesserungs Aktionen
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der privilegierten Zugriffsverwaltung in Office 365
+title: Erste Schritte mit privilegierter Zugriffsverwaltung
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: In diesem Thema erfahren Sie mehr über die Konfiguration der privilegierten Zugriffsverwaltung in Office 365
-ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In diesem Thema erfahren Sie mehr über die Konfiguration der privilegierten Zugriffsverwaltung.
+ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601732"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322526"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren der privilegierten Zugriffsverwaltung in Office 365
+# <a name="get-started-with-privileged-access-management"></a>Erste Schritte mit privilegierter Zugriffsverwaltung
 
 >[!IMPORTANT]
 >In diesem Thema werden Bereitstellungs-und Konfigurationsanleitungen für Features behandelt, die derzeit in Office 365 E5 und Advanced Compliance SKUs verfügbar sind.
@@ -80,7 +80,7 @@ Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgese
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen #a0 Einstellungen #a1 Security #a2 Privacy** > **privileged Access**.
+2. Wechseln Sie im Admin Center zu **Einstellungen > Einstellungen > Security & Privacy** > **privileged Access**.
 
 3. Aktivieren Sie das Steuerelement **erforderliche Genehmigungen für privilegierte Aufgaben** .
 
@@ -115,7 +115,7 @@ Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Office 365 Org
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit #a0 Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -161,7 +161,7 @@ Anforderungen für privilegierten Zugriff sind bis zu 24 Stunden nach der Überm
 
 1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit #a0 Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -201,7 +201,7 @@ Nach dem Erstellen einer Genehmigungsanforderung kann der Status der Ansichts An
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Ihren Anmeldeinformationen an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit #a0 Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -229,7 +229,7 @@ Wenn eine Genehmigungsanforderung erstellt wird, erhalten Mitglieder der entspre
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Ihren Anmeldeinformationen an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit #a0 Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -271,7 +271,7 @@ Wenn Sie in Ihrer Organisation nicht mehr benötigt wird, können Sie eine privi
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit #a0 Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -297,7 +297,7 @@ Bei Bedarf können Sie die privilegierte Zugriffsverwaltung für Ihre Organisati
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit #a0 Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
 
 3. Aktivieren Sie die **Berechtigung Genehmigungen für privilegierte Zugriffssteuerung erfordern** .
 

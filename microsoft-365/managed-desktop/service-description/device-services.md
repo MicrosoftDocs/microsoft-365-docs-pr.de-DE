@@ -7,18 +7,18 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b20c3b3be7c4582c7adbfae183698c2725de4e7f
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982486"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328087"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop-Geräte Dienste
 
 In diesem Thema werden die Dienste und Diensteinschränkungen für von Microsoft verwaltete Desktop Geräte aufgelistet.
 
-## <a name="device-services"></a>Geräte Dienste
+## <a name="device-services"></a>Gerätedienste
 
 Microsoft stellt diese Dienste für von Microsoft verwaltete Desktop Geräte bereit. Informationen zu Microsoft Managed Desktop-Programm Geräten finden Sie unter [Microsoft Managed Desktop Devices](device-list.md).
 
@@ -26,7 +26,7 @@ Microsoft stellt diese Dienste für von Microsoft verwaltete Desktop Geräte ber
  --- | ---
 Support | Support-Agents beantworten Fragen, die sich direkt auf Gerätefunktionen beziehen, und diagnostizieren Geräteprobleme.
 Bestandsaufnahme | Alle Geräte werden im Verwaltungsportal von Microsoft Managed Desktop zur Inventarisierung und Statusverfolgung nachverfolgt.
-Firmware/Treiberupdates | Standardmäßig werden von Microsoft verwaltete Desktop Gerätefirmware-und Treiberupdates von Windows Update empfangen. Nicht alle Hardware Partner stellen Ihre Updates über Windows Update bereit; Diese Updates können separat angefordert werden.
+Firmware/Treiberupdates | Standardmäßig werden von Microsoft verwaltete Desktop Gerätefirmware-und Treiberupdates von Windows Update empfangen. Nicht alle Hardware Partner stellen Ihre Updates über Windows Update bereit. Updates, die nicht als automatisch veröffentlicht werden, erfordern eine Ausnahme und müssen vom Kunden bereitgestellt werden.
 Zubehör | Zubehörteile, die mit Ihrem Gerät geliefert werden, werden von denselben Diensten wie das Gerät selbst abgedeckt, die Gewährleistungsbedingungen können jedoch unterschiedlich sein. Lesen Sie die Gewährleistungsbedingungen, die Sie bei der Auswahl Ihrer Geräte getroffen haben. 
 Geräte Einrichtung    | Geräte werden mit der aktuellen Version von Windows vorkonfiguriert und erhalten Ihre apps und Konfigurationen über die Cloud. 
 

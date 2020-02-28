@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ca08e84bf27a64ba7515b6f4c0307c94621601c
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280103"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328067"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop-App-Anforderungen
 
@@ -59,5 +59,5 @@ Sicherheit:
 
 Microsoft Managed Desktop unterstützt nur Gerätetreiber, die über Windows Update oder einen installierten Posteingang mit dem von Microsoft verwalteten Gerät zur Verfügung stehen. 
 
-Wenn für eine Anwendung eine bestimmte Treiber Ausführung erforderlich ist, wird Sie als eingeschränkte Anwendung betrachtet und erfordert eine Bereitstellung für Microsoft Managed Desktop. 
+Wenn eine Anwendung einen bestimmten Treiber benötigt, um Sie auszuführen, wird Sie als eingeschränkte Anwendung betrachtet und erfordert eine Ausnahme, bevor Sie in Microsoft Managed Desktop bereitgestellt wird. 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
-ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071077"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328077"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
 
@@ -31,7 +31,7 @@ In diesem Artikel wird die Verwendung der Funktionen im Tool für die neue Daten
 
 ## <a name="permissions"></a>Berechtigungen
 
-Sie müssen Mitglied der Rollengruppe "Data Investigator" sein, um auf eine Daten Untersuchung zugreifen und diese durchführen zu können. Weitere Informationen finden Sie unter [assign Permissions for Data Investigations](permissions.md).
+Sie müssen Mitglied der Rollengruppe "Data Investigator" sein, um auf eine Daten Untersuchung zugreifen und diese durchführen zu können. Weitere Informationen finden Sie unter [assign Permissions for Data Investigations](data-investigations-permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Workflow für Daten Untersuchungen (Vorschau) 
 
