@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Mit Customer Key können Sie die kryptografischen Schlüssel Ihrer Organisation steuern und dann Office 365 konfigurieren, um Ihre Daten im Ruhezustand in Microsoft-Rechenzentren mithilfe dieser Schlüssel zu verschlüsseln.
-ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Mit Kundenschlüssel können Sie die Verschlüsselungsschlüssel Ihrer Organisation steuern und dann Office 365 konfigurieren, um Ihre Daten im Ruhezustand in Microsoft-Rechenzentren zu verschlüsseln.
+ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076922"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333652"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Dienst Verschlüsselung mit Kundenschlüssel in Office 365
 
@@ -49,7 +49,7 @@ Der Kundenschlüssel verschlüsselt nur Daten im Rest in der Cloud. Der Kundensc
 
 ## <a name="about-the-data-encryption-policy-dep"></a>Informationen zur Daten Verschlüsselungsrichtlinie (DEP)
 
-Eine Daten Verschlüsselungsrichtlinie definiert die Verschlüsselungshierarchie zum Verschlüsseln von Daten mit jedem der von Ihnen bereitgestellten Schlüssel sowie den von Microsoft geschützten Verfügbarkeits Schlüssel. Sie erstellen DEPs mithilfe von PowerShell-Cmdlets, die für jeden Dienst unterschiedlich sind, und weisen diese zum Verschlüsseln von Anwendungsdaten zu. Beispiel:
+Eine Daten Verschlüsselungsrichtlinie definiert die Verschlüsselungshierarchie zum Verschlüsseln von Daten mit jedem der von Ihnen bereitgestellten Schlüssel sowie den von Microsoft geschützten Verfügbarkeits Schlüssel. Sie erstellen DEPs mithilfe von PowerShell-Cmdlets, die für jeden Dienst unterschiedlich sind, und weisen diese zum Verschlüsseln von Anwendungsdaten zu. Zum Beispiel:
 
 **Exchange Online und Skype for Business** Sie können bis zu 50 DEPs pro Mandant erstellen. Sie ordnen DEPs ihren Kunden Schlüsseln in Azure Key Vault zu und weisen dann DEPs einzelnen Postfächern zu. Wenn Sie einer Datenausführungsverhinderung einem Postfach zuweisen:
 

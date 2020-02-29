@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 02/28/2020
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Als Office 365 Administrator können Sie bestimmte e-Mails widerrufen, die mit Office 365 erweiterter Nachrichtenverschlüsselung verschlüsselt wurden.
-ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0e3ef031e61ed8bc7dd450e7ef61b6b7f41152c6
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070036"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333702"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Widerrufen von E-Mails, die von der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden
 
@@ -33,7 +33,7 @@ Wenn eine Nachricht mit Office 365 erweiterten Nachrichtenverschlüsselung versc
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Verschlüsselte e-Mails, die Sie widerrufen können
 
-Sie können verschlüsselte e-Mails widerrufen, wenn der Empfänger eine Linkbasierte, eingebrannte verschlüsselte e-Mail erhalten hat. Wenn der Empfänger eine systemeigene Inline Erfahrung in einem unterstützten Outlook-Client empfangen hat, können diese e-Mails nicht widerrufen werden.
+Sie können verschlüsselte e-Mails widerrufen, wenn der Empfänger eine Linkbasierte, eingebrannte verschlüsselte e-Mail erhalten hat. Wenn der Empfänger eine systemeigene Inline Erfahrung in einem unterstützten Outlook-Client empfangen hat, können Sie diese nicht widerrufen.
 
 Ob ein Empfänger eine Linkbasierte Erfahrung oder eine Inline-Erfahrung erhält, hängt vom Typ der Empfänger Identität ab: Office 365-und Microsoft-Konto Empfänger (beispielsweise Outlook.com-Benutzer) erhalten eine Inline-Erfahrung in unterstützten Outlook-Clients. Alle anderen Empfängertypen, wie etwa Gmail-Empfänger, erhalten eine Linkbasierte Benutzeroberfläche.
 
@@ -45,9 +45,17 @@ Sobald eine e-Mail widerrufen wurde, erhält der Empfänger eine Fehlermeldung, 
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Vorgehensweise widerrufen einer verschlüsselten e-Mail
 
+Office 365 Administratoren befolgen diese allgemeinen Schritte zum Widerrufen einer berechtigten verschlüsselten e-Mail:
+
+- Rufen Sie die Nachrichten-ID der e-Mail ab.
+- Stellen Sie sicher, dass Sie die Nachricht widerrufen können.
+- Die e-Mail widerrufen.
+
+Lesen Sie weiter für ausführliche Anweisungen für jeden Schritt im Sperrprozess.
+
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>Schritt 1: Abrufen der Nachrichten-ID der e-Mail
 
-Bevor Sie eine verschlüsselte e-Mail widerrufen können, erfassen Sie die Nachrichten-ID der e-Mail. Die MessageId weist normalerweise das folgende Format auf:
+Bevor Sie eine verschlüsselte e-Mail widerrufen können, müssen Sie die Nachrichten-ID der e-Mail erfassen. Die MessageId weist normalerweise das folgende Format auf:
 
 `<xxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.xxxx.prod.outlook.com>`  
 
@@ -81,25 +89,27 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob Sie eine bestimmt
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
      ```
 
-   Gibt den Betreff der Nachricht zurück und gibt an, ob die Nachricht widerruflich ist. Beispiele:
+   Dieser Befehl gibt den Betreff der Nachricht zurück und gibt an, ob die Nachricht widerruflich ist. Beispiele:
 
      ```text
-     Subject IsRevocable
-     ------- -----------
-     “Test message”  True
+     Subject        IsRevocable
+     -------        -----------
+     “Test message” True
      ```
 
 ### <a name="step-3-revoke-the-mail"></a>SCHRITT 3: E-Mail widerrufen
 
-Wenn Sie die Nachrichten-ID der zu widerrufenden e-Mail kennen und sichergestellt haben, dass die Nachricht widerruflich ist, können Sie die e-Mail mithilfe des Security &amp; Compliance Centers oder von Windows PowerShell widerrufen.
+Wenn Sie die Nachrichten-ID der zu widerrufenden e-Mail kennen und sichergestellt haben, dass die Nachricht widerruflich ist, können Sie die e-Mail mit dem Security &amp; Compliance Center oder Windows PowerShell widerrufen.
 
 So widerrufen Sie die Nachricht mit &amp; dem Security Compliance Center
 
-Wenn Sie die e-Mail im Security &amp; Compliance Center widerrufen möchten, wählen Sie im Verschlüsselungs Bericht in der Tabelle **Details** für die Nachricht die Option **Nachricht widerrufen**aus.
+1. Stellen Sie mithilfe eines Arbeits-oder Schul Kontos mit globalen Administratorberechtigungen in Ihrer Office 365 Organisation eine Verbindung zum Security & Compliance Center her.
 
-Sie können eine e-Mail mithilfe von Windows PowerShell widerrufen, indem Sie das Cmdlet "OMEMessageRevocation" verwenden.
+2. Wählen Sie im **Verschlüsselungs Bericht**in der Tabelle **Details** für die Nachricht die Option **Nachricht widerrufen**aus.
 
-1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://aka.ms/exopowershell).
+Verwenden Sie das Cmdlet "OMEMessageRevocation", um eine e-Mail mithilfe von Windows PowerShell zu widerrufen.
+
+1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://aka.ms/exopowershell), indem Sie ein Arbeits-oder Schulkonto verwenden, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt.
 
 2. Führen Sie das Cmdlet "OMEMessageRevocation" wie folgt aus:
 
