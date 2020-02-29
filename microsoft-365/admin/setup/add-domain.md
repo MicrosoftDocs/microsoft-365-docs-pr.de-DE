@@ -24,10 +24,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Fügen Sie Ihre Domäne zu Office 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie durch den Prozess.
+description: Fügen Sie Ihre Domäne zu Office 365 im Microsoft 365-Verwaltungszentrum hinzu, indem Sie einen DNS-Eintrag bei Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
 ms.openlocfilehash: 4170fd74ae734a6fda9e535c17086997b1db6f6b
 ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/24/2020
 ms.locfileid: "42243982"
@@ -36,9 +36,9 @@ ms.locfileid: "42243982"
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
- *Zum Hinzufügen, ändern oder Entfernen von Domänen **müssen** Sie ein **globaler Administrator** eines [Geschäfts-oder Unternehmensplans](https://products.office.com/business/office)sein. Diese Änderungen wirken sich auf den gesamten Mandanten aus, *benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
+ *Um Domänen hinzuzufügen, zu ändern oder zu entfernen, **müssen** Sie ein **globaler Administrator** eines [Geschäfts- oder Unternehmensplans](https://products.office.com/business/office) sein. Diese Änderungen betreffen den gesamten Mandanten. *Benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
 
- Führen Sie die folgenden Schritte aus, um eine Domäne hinzuzufügen, einzurichten oder weiter einzurichten. 
+ Führen Sie die folgenden Schritte aus, um eine Domäne hinzuzufügen, einzurichten oder die Einrichtung einer Domäne fortzusetzen. 
 
 ::: moniker range="o365-worldwide"
   
@@ -67,28 +67,28 @@ ms.locfileid: "42243982"
 
 ::: moniker-end
     
-2. Wechseln Sie zur Seite " **Einstellungs** > **Domänen** ". 
+2. Wechseln Sie zur Seite **Einstellungen** > **Domänen**. 
 
-3. Wählen Sie **Domäne hinzufügen**aus.
+3. Wählen Sie **Domäne hinzufügen** aus.
     
-4. Geben Sie den Namen der Domäne ein, die Sie hinzufügen möchten, und wählen Sie dann **weiter**aus.
+4. Geben Sie den Namen der Domäne ein, die Sie hinzufügen möchten, und wählen Sie **Weiter** aus.
     
-5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie der Besitzer der Domäne sind.
+5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie die Domäne besitzen.
     
-    1. Wenn Ihre Domäne bei GoDaddy oder 1&amp;1 registriert ist, wählen Sie**weiter** **Anmelden** > aus, und Office 365 [wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
+    1. Wenn Ihre Domäne bei GoDaddy oder 1&amp;1 registriert ist, wählen Sie **Anmelden** > **Weiter** aus. Office 365 [richtet Ihre Einträge dann automatisch ein](../get-help-with-domains/domain-connect.md).
     
-    2. Sie können auch eine E-Mail mit einem Prüfcode an den registrierten Kontakt für die Domäne senden lassen. Wenn Sie die zu erfassenden e-Mails nicht erkennen oder Zugriff auf diese haben, können Sie die dritte Option verwenden.
+    2. Sie können auch eine E-Mail mit einem Prüfcode an den registrierten Kontakt für die Domäne senden lassen. Wenn Sie diese E-Mail nicht erkennen oder keinen Zugriff darauf haben, können Sie die dritte Option verwenden.
     
-    3. Sie können einen TXT-Eintrag zur Überprüfung Ihrer Domäne verwenden. Wählen Sie diese Option aus, und klicken Sie auf **weiter** , um Anweisungen zum Hinzufügen dieses DNS-Eintrags zur Website der Registrierungsstelle anzuzeigen. Dies kann bis zu 30 Minuten dauern, um zu überprüfen, nachdem Sie den Eintrag hinzugefügt haben. 
+    3. Sie können einen TXT-Eintrag zur Überprüfung Ihrer Domäne verwenden. Wählen Sie dies und dann **Weiter** aus, um Anleitungen dazu anzuzeigen, wie Sie diesen DNS-Eintrag zur Website Ihrer Registrierungsstelle hinzufügen. Nachdem Sie den Eintrag hinzugefügt haben, kann die Überprüfung bis zu 30 Minuten dauern. 
     
-6. Wählen Sie aus, wie Sie die DNS-Änderungen vornehmen möchten, die für Office zur Verwendung Ihrer Domäne erforderlich sind.
+6. Wählen Sie aus, wie Sie die erforderlichen DNS-Änderungen vornehmen möchten, damit Office Ihre Domäne verwenden kann.
     
-    1. Wählen Sie **die Option DNS-Einträge hinzufügen aus** , wenn Office Ihre DNS automatisch konfigurieren soll. 
+    1. Wählen Sie **DNS-Einträge für mich hinzufügen** aus, wenn Office Ihr DNS automatisch konfigurieren soll. 
     
   
-    2. Wählen Sie **Ich werde die DNS-Einträge selbst hinzufügen** , wenn Sie nur bestimmte Office 365 Dienste an Ihre Domäne anfügen möchten oder wenn Sie diese für jetzt überspringen möchten und dies später tun möchten. **Wählen Sie diese Option aus, wenn Sie genau wissen, was Sie gerade tun.**
+    2. Wählen Sie **Ich füge die DNS-Einträge selbst hinzu** aus, wenn Sie nur bestimmte Office 365-Dienste an Ihre Domäne anfügen oder diesen Schritt zunächst überspringen und erst zu einem späteren Zeitpunkt ausführen möchten. **Wählen Sie diese Option aus, wenn Sie genau wissen, was Sie tun.**
     
-7. Wenn Sie *selbst DNS-Einträge hinzugefügt* haben, wählen Sie **weiter** aus, und es wird eine Seite mit allen Datensätzen angezeigt, die Sie Ihrer Registrierungsstellen Website hinzufügen müssen, um Ihre Domäne einzurichten. 
+7. Wenn Sie ausgewählt haben, dass Sie *DNS-Einträge selbst hinzufügen* möchten, wählen Sie **Weiter** aus. Anschließend wird eine Seite mit allen Einträgen angezeigt, die Sie zur Website Ihrer Registrierungsstelle hinzufügen müssen, um Ihre Domäne einzurichten. 
     
   
   
@@ -98,9 +98,9 @@ ms.locfileid: "42243982"
     
     Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Wenn Sie später warten möchten, führen Sie einen Bildlauf nach unten durch, und wählen Sie **diesen Schritt überspringen**aus.
+    Wenn Sie auf einen späteren Zeitpunkt warten möchten, scrollen Sie bis ans Ende, und wählen Sie **Diesen Schritt überspringen** aus.
     
-8. Wählen Sie **Fertig stellen** aus – Sie sind fertig! 
+8. Wählen Sie **Fertig stellen** aus. Sie haben es geschafft! 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
@@ -112,4 +112,4 @@ ms.locfileid: "42243982"
 
 [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Abrufen von Hilfe zu Office 365 Domänen](../get-help-with-domains/get-help-with-domains.md)
+[Hilfe zu Office 365-Domänen erhalten](../get-help-with-domains/get-help-with-domains.md)
