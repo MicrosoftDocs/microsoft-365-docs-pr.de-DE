@@ -24,7 +24,7 @@ ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Office 365-Gruppen erstellen können.
 ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
 ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/25/2020
 ms.locfileid: "42277192"
@@ -121,7 +121,7 @@ Als bewährte Methode empfehlen wir, *immer* die neueste Version zu verwenden: D
     
     ![Öffnen Sie PowerShell mit „Als Administrator ausführen“.](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
     
-3. Legen Sie die Richtlinie mithilfe von [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)auf RemoteSigned fest.
+3. Setzen Sie die Richtlinie mithilfe der [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)auf RemoteSigned.
     
     ```
     Set-ExecutionPolicy RemoteSigned

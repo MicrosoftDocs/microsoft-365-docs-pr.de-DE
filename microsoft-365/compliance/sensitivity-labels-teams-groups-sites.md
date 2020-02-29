@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können Bezeichnungen auf Microsoft Teams, Office 365-Gruppen und SharePoint-Websites anwenden.
-ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
-ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
+ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42313800"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333712"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -87,7 +87,7 @@ Auf dieser neuen Seite **Website- und Gruppeneinstellungen** können Sie die Ein
 > 
 > Ähnlich verhält es sich, wenn Sie eine Bezeichnung erstellen und diese Website- und Gruppeneinstellungen nicht aktivieren. Die Bezeichnung ist dann weiterhin verfügbar, wenn Benutzer Teams, Gruppen und Websites erstellen, aber nur der Bezeichnungsname wird angewendet.
 
-Wenn Ihre Bezeichnung noch nicht veröffentlicht wurde, veröffentlichen Sie es jetzt, indem Sie [die Bezeichnung einer Bezeichnungsrichtlinie hinzufügen](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Wenn Ihre Vertraulichkeitskennzeichnung noch nicht veröffentlicht wurde, veröffentlichen Sie diese jetzt, indem Sie sie[einer Richtlinie für Vertraulichkeitskennzeichnungen hinzufügen](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Diejenigen Benutzer, denen eine Richtlinie zur Vertraulichkeitskennzeichnung zugeordnet ist, die diese Kennzeichnung beinhaltet, können diese für Websites und Gruppen auswählen.
 
 ## <a name="sensitivity-label-management"></a>Verwaltung von Vertraulichkeitsbezeichnungen
 
