@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informationen zur Verwendung der Sicherheitsstandardeinstellungen zum Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer.
 monikerRange: o365-worldwide
-ms.openlocfilehash: bc906299e42929dd4dd09b94502a6d463a5971b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254204"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341250"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -88,11 +88,11 @@ Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Activ
 
 2. Klicken Sie im Abschnitt **aktive Benutzer** auf mehrstufige **Authentifizierung**.
 
-3. Wählen Sie auf der Seite mehrstufige **Authentifizierung** die Option **Benutzer** aus, wenn Sie dies für einen Benutzer aktivieren, oder Sie können eine **Massenaktualisierung**führen.
+3. Wählen Sie auf der Seite mehrstufige **Authentifizierung** die Option **Benutzer** aus, wenn Sie dies für einen Benutzer aktivieren, oder wählen Sie **Massenaktualisierung** aus, um mehrere Benutzer zu aktivieren.
 
 4. Klicken Sie unter **Quick Steps**auf **aktivieren** .
 
-5. Klicken Sie im Popupfenster auf CLickc, um die mehrstufige **Authentifizierung zu aktivieren**.
+5. Klicken Sie im Popupfenster auf **Aktivieren der mehr**stufigen Authentifizierung.
 
 Nachdem Sie die mehrstufige Authentifizierung für Ihre Organisation eingerichtet haben, müssen die Benutzer auf ihren Geräten die Prüfung in zwei Schritten einrichten. Weitere Informationen finden Sie unter [Einrichten der Prüfung in zwei Schritten für Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     

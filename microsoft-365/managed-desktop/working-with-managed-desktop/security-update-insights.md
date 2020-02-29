@@ -1,19 +1,19 @@
 ---
-title: Einblicke in Windows-Sicherheitsupdates
+title: Informationen zu Windows-Sicherheitsupdates
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254588"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341255"
 ---
-# <a name="windows-security-update-insights"></a>Einblicke in Windows-Sicherheitsupdates
+# <a name="windows-security-update-insights"></a>Informationen zu Windows-Sicherheitsupdates
 Diese Ansicht bietet eine Übersicht über den Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte. 
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte <strong>Windows-Sicherheitsupdates</strong> aus.
@@ -28,7 +28,7 @@ Die Geräteaktivität wird im Kontext von Windows Update mit den folgenden Begri
 
 - <strong>Aktiv:</strong> Geräte, die die minimalen Verwendungskriterien (sechs Stunden, zwei kontinuierlich) für die neueste Version des Sicherheitsupdates erfüllt haben und mindestens alle fünf Tage mit Microsoft InTune eingecheckt wurden
 - <strong>Synchronisiert:</strong> Geräte, die innerhalb der letzten 28 Tage mit InTune eingecheckt haben
-- Keine <strong>Synchronisierung</strong> – Geräte, die in den letzten 28 Tagen <i>nicht</i> mit InTune eingecheckt haben
+- <strong>Nicht synchron:</strong> Geräte, die in den letzten 28 Tagen <i>nicht</i> mit InTune eingecheckt haben
 
 
 

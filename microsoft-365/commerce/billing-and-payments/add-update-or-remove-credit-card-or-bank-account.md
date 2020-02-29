@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 7e217f5fcb7f93e91ec0ed3ab6d4a806597fbfb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242525"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341234"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden
 
@@ -42,6 +42,8 @@ Sie können nur Zahlungsmethoden verwalten, die Sie hinzugefügt haben.
 > Die Option zur Zahlung mit einem Bankkonto steht in einigen Ländern oder Regionen nicht zur Verfügung.
 >
 > Sie müssen eine Kreditkarte verwenden, die aus demselben Land wie Ihr Mandant ausgestellt wurde.
+
+**Stimmt die Schnittstelle, die Sie sehen, nicht mit dem in diesem Artikel beschriebenen überein?** Wenn dies der Fall ist, finden Sie unter [Manage Payment Methods](manage-payment-methods.md).
 
 ## <a name="add-a-payment-method"></a>Hinzufügen einer Zahlungsmethode
 
