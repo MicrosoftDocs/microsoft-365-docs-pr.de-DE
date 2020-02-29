@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328122"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341284"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -266,7 +266,7 @@ Führen Sie für jedes der folgenden Beispiele die Konfiguration über die Seite
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Beispiel 1: Bezeichnung, die "Nicht weiterleiten" beim Senden einer verschlüsselten E-Mail-Nachricht an ein Gmail-Konto anwendet
 
-Diese Bezeichnung steht nur in Outlook und Outlook im Web zur Verfügung, und Sie müssen Exchange Online verwenden. Weisen Sie Benutzer an, diese Bezeichnung auszuwählen, wenn sie eine verschlüsselte E-Mail an Personen senden müssen, die ein Gmail-Konto (oder ein anderes E-Mail-Konto außerhalb Ihrer Organisation) verwenden. 
+Diese Bezeichnung wird nur in Outlook und Outlook im Web angezeigt und Sie müssen Exchange Online verwenden. Weisen Sie Benutzer an, diese Bezeichnung auszuwählen, wenn sie eine verschlüsselte E-Mail an Personen senden müssen, die ein Gmail-Konto (oder ein anderes E-Mail-Konto außerhalb Ihrer Organisation) verwenden. 
 
 Ihre Benutzer geben die Gmail-Adresse in das Feld **An** ein.  Dann wählen sie die Bezeichnung aus, und die Option "Nicht weiterleiten" wird der E-Mail automatisch hinzugefügt. Das hat zur Folge, dass Empfänger die E-Mail nicht weiterleiten oder drucken, deren Inhalt nicht kopieren und die E-Mail nicht über die Option **Speichern unter** außerhalb Ihres Postfachs speichern können. 
 
