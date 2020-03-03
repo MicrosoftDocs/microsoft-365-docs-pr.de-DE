@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5c9e0a7c4f11ce552c99ea6a00a397fb67d09d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8ec91f0e9c0f61a03aff0faca4df3be5078afa79
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254483"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358516"
 ---
 # <a name="contact-support-for-guinea"></a>Wenden Sie sich an den Support für Guinea
 

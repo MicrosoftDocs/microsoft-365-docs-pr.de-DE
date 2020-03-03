@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Informieren Sie sich über die Gruppen und ihre Aktivitäten über einen Microsoft 365-Gruppenbericht.
-ms.openlocfilehash: efeb04753632447509580ca44b769d6524c0a30c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b76bd83dfbd215a6645bd73b2f9b2fb4be0c493b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241821"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353666"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen
 
@@ -43,7 +43,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 
 Sie können sich einen Überblick über die Aktivitäten von Gruppen verschaffen, indem Sie sich die Diagramme **Gruppen**, **Aktivität**, **Dateien** und **Speicher** ansehen. 
   
-![Microsoft 365 Reports-Gruppenaktivitäten](../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
+![Microsoft 365 Reports-Gruppenaktivitäten](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
 |||
 |:-----|:-----|
@@ -54,9 +54,9 @@ Sie können sich einen Überblick über die Aktivitäten von Gruppen verschaffen
 |5.  <br/> |In der Ansicht **Dateien** wird die Gesamtzahl der Dateien und die Anzahl der aktiven Dateien auf allen Gruppenwebsites angezeigt, die einer Gruppe zugeordnet sind.  <br/> |
 |6.  <br/> |In der Ansicht **Speicher** wird der gesamte von allen Gruppenpostfächern und Gruppenwebsites verwendete Speicherplatz angezeigt.  <br/> |
 |7.  <br/> | Im Diagramm **Gruppen** ist auf der Y-Achse die Anzahl der Gruppen dargestellt ("gesamt" im Vergleich zu "aktiv").  <br/>  Im Diagramm **Aktivität** ist auf der Y-Achse die Häufigkeit von Aktivitäten in Gruppen dargestellt.  <br/>  Im Diagramm **Dateien** stellt die Y-Achse die Gesamtzahl der Dateien oder die Anzahl der aktiven Dateien dar.  <br/>  Im Diagramm **Speicher** gibt die Y-Achse den Gesamtspeicher an, der vom Gruppenpostfach oder der Gruppenwebsite verwendet wird.  <br/>  Die X-Achse stellt in allen drei Diagrammen den ausgewählten Datumsbereich für den jeweiligen Bericht dar.  <br/> |
-|8.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Gruppen** die Option **Gesamt** oder **Aktiv**![Gesamtzahl der Gruppen und Anzahl der aktiven Gruppen](../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png), um nur die jeweils zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
+|8.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Gruppen** die Option **Gesamt** oder **Aktiv**![Gesamtzahl der Gruppen und Anzahl der aktiven Gruppen](../../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png), um nur die jeweils zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
 |9.  <br/> | Die Liste der angezeigten Gruppen wird von der Anzahl aller Gruppen bestimmt, die über den längsten Berichtszeitraum (180 Tage) vorhanden waren (nicht gelöscht wurden). Die Anzahl der Aktivitäten (E-Mail-Unterhaltungen, Yammer-Beiträge und SharePoint-Dateiaktivitäten) variiert entsprechend der Datumsauswahl.  <br/> HINWEIS: Möglicherweise werden nicht alle Elemente in der nachstehenden Liste in den Spalten angezeigt, solange Sie diese nicht hinzugefügt haben.<br/>**Gruppenname** ist der Name der Gruppe.  <br/> **Gelöscht** ist die Anzahl der gelöschten Gruppen. Wenn eine Gruppe gelöscht wird, die im Berichtszeitraum Aktivitäten ausgeführt hat, wird sie im Raster mit dieser auf TRUE festgelegten Kennzeichnung angezeigt.  <br/> **Gruppenbesitzer** ist der Name des Gruppenbesitzers.  <br/> **Datum der letzten Aktivität** ist das letzte Datum, an dem eine Nachricht von der Gruppe empfangen wurde. Dies ist das aktuellste Datum, an dem eine Aktivität in einer E-Mail-Unterhaltung, in Yammer oder auf der Website stattfand.  <br/> **Typ** ist der Typ der Gruppe. Es kann sich um eine private oder eine öffentliche Gruppe handeln.  <br/> **Mitglieder** ist die Anzahl der Mitglieder der Gruppe.  <br/> **Externe Mitglieder** ist die Anzahl der externen Benutzer in der Gruppe.  <br/> **Exchange** <br/> **Empfangene E-Mails** ist die Anzahl der von der Gruppe empfangenen Nachrichten.  <br/> **Summe Postfachelemente** ist die Gesamtzahl der Elemente im Postfach der Gruppe.  <br/> **Verwendeter Postfachspeicher** ist der vom Postfach der Gruppe verwendete Speicherplatz.  <br/> **SharePoint-Dateien** <br/> **Dateien gesamt** ist die Anzahl der in SharePoint-Gruppenwebsites gespeicherten Dateien.  <br/> **Aktive Dateien** ist die Anzahl der Dateien auf der SharePoint-Gruppenwebsite, die während des Berichtszeitraums bearbeitet (angezeigt oder geändert, synchronisiert, intern oder extern freigegeben) wurden.  <br/> **Verwendeter Websitespeicher (MB)** ist der während des Berichtszeitraums verwendete Speicherplatz.  <br/> **Yammer-Nachrichten** <br/> **Veröffentlicht** ist die Anzahl der während des Berichtszeitraums in der Yammer-Gruppe veröffentlichten Nachrichten.  <br/> **Gelesen** ist die Anzahl der während des Berichtszeitraums in der Yammer-Gruppe gelesenen Unterhaltungen.  <br/> **Mit "Gefällt mir" markiert** ist die Anzahl der während des Berichtszeitraums in der Yammer-Gruppe mit "Gefällt mir" markierten Nachrichten.  <br/>  Wenn die Richtlinien Ihrer Organisation eine Anzeige von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt zum **Ausblenden von Details auf Benutzerebene** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
-|10.  <br/> |Wählen oder tippen Sie neben einer Spaltenüberschrift auf die Schaltfläche **Weitere Aktionen**![Mobile OWA-Schaltfläche "Weitere Aktionen"](../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png), um im Bericht Spalten hinzuzufügen oder daraus zu entfernen.  <br/> ![Gruppenbericht – Spalten auswählen](../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
+|10.  <br/> |Wählen oder tippen Sie neben einer Spaltenüberschrift auf die Schaltfläche **Weitere Aktionen**![Mobile OWA-Schaltfläche "Weitere Aktionen"](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png), um im Bericht Spalten hinzuzufügen oder daraus zu entfernen.  <br/> ![Gruppenbericht – Spalten auswählen](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |||
    

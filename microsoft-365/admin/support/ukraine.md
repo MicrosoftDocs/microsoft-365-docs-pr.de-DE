@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 31e81e9ce8ca47726a50e20ab9bcd44fe5baca4d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 564c37283b47e9ac3fb42f48ec2bf2a7b6e53079
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254438"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355796"
 ---
 # <a name="contact-support-for-ukraine"></a>Kontaktieren des Supports für die Ukraine
 

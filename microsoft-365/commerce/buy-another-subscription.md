@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Hier erfahren Sie, wie Sie ein weiteres Office 365 für Unternehmen Abonnement für Ihre Organisation erwerben, wenn Sie bereits über ein Abonnement verfügen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242397"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354646"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Erwerben eines weiteren Office 365 Business-Abonnements
 
@@ -37,7 +37,7 @@ Wenn Sie ein weiteres Abonnement über das Admin Center kaufen, wird sichergeste
   
 Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die das Abonnement verwenden sollen, eine Benutzerlizenz dafür zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern in Office 365 für Unternehmen](../admin/manage/assign-licenses-to-users.md).
   
-## <a name="buy-another-subscription"></a>Erwerb eines weiteren Abonnements
+## <a name="buy-another-subscription"></a>Ein weiteres Abonnement kaufen
 
 ::: moniker range="o365-worldwide"
 
@@ -66,11 +66,11 @@ Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die 
 
     Es werden die für Ihre Organisation verfügbaren Abonnements angezeigt. Alle Abonnements, die Sie bereits erworben haben, werden auf diese Weise identifiziert.
 
-    ![Banner, das anzeigt, dass für diese Organisation bereits ein Abonnement gekauft wurde](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner, das anzeigt, dass für diese Organisation bereits ein Abonnement gekauft wurde](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Klicken Sie mit der Maus oder tippen Sie auf das Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen**aus.
 
-    ![Im Microsoft 365 Admin Center auf der Seite "Einkaufsdienste" den Link Jetzt kaufen.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Im Microsoft 365 Admin Center auf der Seite "Einkaufsdienste" den Link Jetzt kaufen.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Geben Sie die Anzahl der benötigten Benutzerlizenzen ein, wählen Sie aus, ob Sie monatlich oder für das ganze Jahr bezahlen möchten, und wählen Sie dann **zum Warenkorb hinzufügen**aus.
 
@@ -92,11 +92,11 @@ Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die 
 
     Es werden die für Ihre Organisation verfügbaren Abonnements angezeigt. Alle Abonnements, die Sie bereits erworben haben, werden auf diese Weise identifiziert.
 
-    ![Banner, das anzeigt, dass für diese Organisation bereits ein Abonnement gekauft wurde](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner, das anzeigt, dass für diese Organisation bereits ein Abonnement gekauft wurde](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Klicken Sie mit der Maus oder tippen Sie auf das Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen**aus.
 
-    ![Im Microsoft 365 Admin Center auf der Seite "Einkaufsdienste" den Link Jetzt kaufen.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Im Microsoft 365 Admin Center auf der Seite "Einkaufsdienste" den Link Jetzt kaufen.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Geben Sie die Anzahl der benötigten Benutzerlizenzen ein, wählen Sie aus, ob Sie monatlich oder für das ganze Jahr bezahlen möchten, und wählen Sie dann **zum Warenkorb hinzufügen**aus.
 

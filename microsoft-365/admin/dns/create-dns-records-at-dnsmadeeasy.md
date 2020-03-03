@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste bei DNSMadeEasy für Office 365 einrichten.
-ms.openlocfilehash: 7b94b8d4b3a02a0f436ba2af314eece8b7606ec2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 82244d216652b1957aefc3b81acd881ea4b32393
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244660"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42350316"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-office-365"></a>Erstellen von DNS-Einträgen für Office 365 bei DNSMadeEasy
 
@@ -95,13 +95,13 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     Wählen Sie auf der Seite **Verwaltungskonsole** im Bereich **der kürzlich aktualisierten Domänen** die Domäne aus, die Sie aktualisieren möchten. 
     
-    ![DNSMadeEasy-BP-Configure-1-2](../media/8d8f403e-d7cd-429e-913b-dacb1f4644a2.png)
+    ![DNSMadeEasy-BP-Configure-1-2](../../media/8d8f403e-d7cd-429e-913b-dacb1f4644a2.png)
   
 3. Wählen Sie auf der Seite **Managed DNS** im Bereich **MX Records** das Steuerelement **(+)** (**Add new**) aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-    ![DNSMadeEasy-BP-Configure-2-1](../media/404c73bf-1db4-4d68-82d8-68303f418ed4.png)
+    ![DNSMadeEasy-BP-Configure-2-1](../../media/404c73bf-1db4-4d68-82d8-68303f418ed4.png)
   
 4. Geben Sie im Bereich **Add MX Records** in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
@@ -111,23 +111,23 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |:-----|:-----|:-----|:-----|
     |(Dieses Feld leer lassen.)  <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> **Hinweis:** Rufen Sie Ihren \<*Domänen-Schlüssel*\> aus Ihrem Office 365-Konto ab. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1800  <br/> |
    
-    ![DNSMadeEasy-BP-Configure-2-2](../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
+    ![DNSMadeEasy-BP-Configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
 5. Wählen Sie **Submit** aus.
     
-    ![DNSMadeEasy-BP-Configure-2-3](../media/381054a6-bb85-4ebb-b576-42cbba78ed1b.png)
+    ![DNSMadeEasy-BP-Configure-2-3](../../media/381054a6-bb85-4ebb-b576-42cbba78ed1b.png)
   
 6. Wenn es im Abschnitt **MX Records** andere MX-Einträge gibt, löschen Sie alle Einträge, indem Sie sie alle auswählen. 
     
-    ![DNSMadeEasy-BP-Configure-2-4-1](../media/58a07769-0b30-4111-b555-bfc3b82a7d4c.png)
+    ![DNSMadeEasy-BP-Configure-2-4-1](../../media/58a07769-0b30-4111-b555-bfc3b82a7d4c.png)
   
 7. Wenn Sie alle Einträge markiert sind, wählen Sie **Delete selected** aus.
     
-    ![DNSMadeEasy-BP-Configure-2-4-2](../media/e9064c07-1ce7-4387-b47a-90d4193da374.png)
+    ![DNSMadeEasy-BP-Configure-2-4-2](../../media/e9064c07-1ce7-4387-b47a-90d4193da374.png)
   
 8. Wählen Sie im Dialogfeld **Delete MX Records** den Befehl **Delete** aus, um Ihre Änderungen zu bestätigen. 
     
-    ![DNSMadeEasy-BP-Configure-2-5](../media/03c405e5-868f-468f-b6d2-046d27b201fb.png)
+    ![DNSMadeEasy-BP-Configure-2-5](../../media/03c405e5-868f-468f-b6d2-046d27b201fb.png)
   
 ## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>Fügen Sie die für Office 365 erforderlichen fünf CNAME-Einträge hinzu.
 <a name="BKMK_add_CNAME"> </a>
@@ -140,7 +140,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-    ![DNSMadeEasy-BP-Configure-3-1](../media/a5feb238-690d-4b64-a625-91a82b3f4068.png)
+    ![DNSMadeEasy-BP-Configure-3-1](../../media/a5feb238-690d-4b64-a625-91a82b3f4068.png)
   
 4. Fügen Sie den ersten der fünf CNAME-Einträge hinzu.
     
@@ -154,11 +154,11 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1800  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1800  <br/> |
    
-    ![DNSMadeEasy-BP-Configure-3-2](../media/de6dddcd-bf0a-4993-ab4c-a6d10167bf34.png)
+    ![DNSMadeEasy-BP-Configure-3-2](../../media/de6dddcd-bf0a-4993-ab4c-a6d10167bf34.png)
   
 5. Wählen Sie **Submit** aus.
     
-    ![DNSMadeEasy-BP-Configure-3-3](../media/e44ef73e-99cb-41ce-a3f2-549cb2f29eef.png)
+    ![DNSMadeEasy-BP-Configure-3-3](../../media/e44ef73e-99cb-41ce-a3f2-549cb2f29eef.png)
   
 6. Fügen Sie die vier anderen CNAME-Einträge hinzu.
     
@@ -180,7 +180,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-    ![DNSMadeEasy-BP-Configure-4-1](../media/657b87a5-dcb4-4ae7-8f27-bd857f0f4189.png)
+    ![DNSMadeEasy-BP-Configure-4-1](../../media/657b87a5-dcb4-4ae7-8f27-bd857f0f4189.png)
   
 4. Geben Sie im Bereich **Add TXT Records** in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
@@ -188,11 +188,11 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |:-----|:-----|:-----|
     |(Dieses Feld leer lassen.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1800  <br/> |
    
-    ![DNSMadeEasy-BP-Configure-4-2](../media/b317bcb9-18c6-4609-a8f4-963823032669.png)
+    ![DNSMadeEasy-BP-Configure-4-2](../../media/b317bcb9-18c6-4609-a8f4-963823032669.png)
   
 5. Wählen Sie **Submit** aus.
     
-    ![DNSMadeEasy-BP-Configure-4-3](../media/8a1c53c3-1222-4127-a190-70f6f5059433.png)
+    ![DNSMadeEasy-BP-Configure-4-3](../../media/8a1c53c3-1222-4127-a190-70f6f5059433.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen zwei SRV-Einträge
 <a name="BKMK_add_SRV"> </a>
@@ -205,7 +205,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-    ![DNSMadeEasy-BP-Configure-5-1](../media/5c9e8f50-adbd-4f23-8ce3-2844b2896f3f.png)
+    ![DNSMadeEasy-BP-Configure-5-1](../../media/5c9e8f50-adbd-4f23-8ce3-2844b2896f3f.png)
   
 4. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
     
@@ -216,11 +216,11 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1800  <br/> |
     |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1800  <br/> |
    
-    ![DNSMadeEasy-BP-Configure-5-2](../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
+    ![DNSMadeEasy-BP-Configure-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   
 5. Wählen Sie **Submit** aus.
     
-    ![DNSMadeEasy-BP-Configure-5-3](../media/7eae54e1-08bd-4902-afdf-fd5cc251ab59.png)
+    ![DNSMadeEasy-BP-Configure-5-3](../../media/7eae54e1-08bd-4902-afdf-fd5cc251ab59.png)
   
 6. Fügen Sie den anderen SRV-Eintrag hinzu.
     

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 950ab593ae70a4f3fac1b73e603d264660181d4a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7b3f3ecc4d4291e0367535ae295920c67668a9c7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243802"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359716"
 ---
 # <a name="contact-support-for-bulgaria"></a>Kontaktieren des Supports für Bulgarien
 

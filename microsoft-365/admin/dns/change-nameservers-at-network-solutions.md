@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Erfahren Sie, wie Sie Ihre Office 365 benutzerdefinierte Domäne mit Netzwerklösungen einrichten, wenn Sie möchten, dass Ihre DNS-Einträge von Office 365 verwaltet werden. '
-ms.openlocfilehash: c9465da507e6b4dea35f9ead50b5bc7c14a1b38f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5eae7561baa6e0efb4436e6758d3fd972a2700cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242613"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351756"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-network-solutions"></a>Ändern von Namenservern zum Einrichten von Office 365 bei Network Solutions
 
@@ -48,42 +48,42 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     > [!IMPORTANT]
     > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus.
   
-    ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, die Sie ändern möchten.
     
-    ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. Wählen Sie **DNS bearbeiten**aus.
     
-    ![Wählen Sie Edit DNS aus.](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-    ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten**aus.
     
-    ![Bearbeiten von TXT-Einträgen auswählen](../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Bearbeiten von TXT-Einträgen auswählen](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
 |**Host**|**TTL**|**Text**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie jeweils Ihren Wert für **die Zieladresse bzw. die Adresse, auf die verwiesen wird** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)
    
     
-   ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+   ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. Wählen Sie **weiter**aus.
     
-    ![Wählen Sie weiter aus.](../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![Wählen Sie weiter aus.](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. Wählen Sie **Save Changes**aus.
     
-    ![Wählen Sie Save Changes aus.](../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![Wählen Sie Save Changes aus.](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -126,19 +126,19 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
     > [!IMPORTANT]
     > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus. 
   
-    ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, die Sie ändern möchten.
     
-    ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. Wählen Sie **DNS bearbeiten**aus.
     
-    ![Wählen Sie Edit DNS aus.](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Wählen Sie **DNS migrieren**aus.
     
-    ![NetworkSolutionsBP-redelegate-1-1](../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
+    ![NetworkSolutionsBP-redelegate-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
 5. Abhängig davon, ob auf der jetzt angezeigten Seite bereits Namenserver aufgelistet sind oder nicht, setzen Sie den Vorgang mit einem der beiden folgenden Verfahren fort:
     
@@ -150,7 +150,7 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
 
 1. Wählen Sie auf der Seite **Domains** im Abschnitt **Domain Name Servers angeben** die Option **Weitere Namenserver hinzufügen**aus.
     
-    ![NetworkSolutionsBP-redelegate-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 2. Geben Sie Nameserver-Werte aus der folgenden Tabelle auf der Seite **Domain Names** ein. Sie können die Werte auch kopieren und einfügen. 
     
@@ -162,15 +162,15 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
 |**Name Server 2** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-redelegate-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 3. Wählen Sie **DNS migrieren**aus.
     
-    ![NetworkSolutionsBP-redelegate-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 4. Wählen Sie **Save Changes**aus.
     
-    ![NetworkSolutionsBP-redelegate-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Office 365-E-Mails und andere Dienste für das Arbeiten mit Ihrer Domäne eingerichtet. 
@@ -182,11 +182,11 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
   
 1. If there are any other nameservers listed, delete each one by selecting it and then pressing the **Delete** key on your keyboard.
     
-    ![NetworkSolutions-BP-redelegate-1-5](../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
+    ![NetworkSolutions-BP-redelegate-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
 2. Wählen Sie **Weitere Namenserver hinzufügen**aus.
     
-    ![NetworkSolutionsBP-redelegate-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 3. Geben Sie Nameserver-Werte aus der folgenden Tabelle auf der Seite **Domain Names** ein. Sie können die Werte auch kopieren und einfügen.
  
@@ -199,15 +199,15 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
 |**Name Server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-redelegate-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 4. Wählen Sie **DNS migrieren**aus.
     
-    ![NetworkSolutionsBP-redelegate-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 5. Wählen Sie **Save Changes aus.**
     
-    ![NetworkSolutionsBP-redelegate-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Office 365-E-Mails und andere Dienste für das Arbeiten mit Ihrer Domäne eingerichtet.

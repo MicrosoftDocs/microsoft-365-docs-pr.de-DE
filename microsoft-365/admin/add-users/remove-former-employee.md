@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Office 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: a59ad66f6c188695e6794bd259668b97669f2217
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241593"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353116"
 ---
 # <a name="remove-a-former-employee-from-office-365"></a>Entfernen eines ehemaligen Mitarbeiters aus Office 365
   
@@ -44,7 +44,7 @@ Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 So entfernen Sie einen Mitarbeiter:
 
@@ -211,7 +211,7 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
     
 4. Wählen Sie den Benutzer aus, und wählen Sie unter **Mobile Geräte**die Option **Details anzeigen**aus. 
     
-5. Wählen Sie auf der Seite **Details für mobile Geräte** unter **Mobile Geräte**das Mobile Gerät aus, wählen Sie **Daten**![Zurücksetzungs Gerät](../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)wischen aus, und wählen Sie dann **blockieren**aus. 
+5. Wählen Sie auf der Seite **Details für mobile Geräte** unter **Mobile Geräte**das Mobile Gerät aus, wählen Sie **Daten**![Zurücksetzungs Gerät](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)wischen aus, und wählen Sie dann **blockieren**aus. 
     
 6. Klicken Sie auf **Speichern**. 
     

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a5f8b4e2c6a43b285a5f5230b8d8a92f61804bb6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4d20a6cccd8b5e9078d1f37af5b8f2b5c9a726a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253845"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358260"
 ---
 # <a name="contact-support-for-italy"></a>Kontakt Support für Italien
 

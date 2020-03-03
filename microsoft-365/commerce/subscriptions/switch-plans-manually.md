@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Wechseln Sie Office 365 für Unternehmen Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254363"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354707"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Manueller Wechsel von Office 365 Business-Plänen
 
@@ -74,7 +74,7 @@ Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen
 
    **Das neue Office 365 Business-Abonnement mit verfügbaren Lizenzen**
 
-    ![The subscription page showing the number of licenses for the new subscription.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **Überprüfen, dass ausreichend Lizenzen für jeden Benutzer bereitstehen**
 
@@ -115,7 +115,7 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
     > [!TIP]
     > Wenn Sie die für den Benutzer verfügbaren Dienste einschränken möchten, setzen Sie die Umschaltflächen für die Dienste, die Sie für diesen Benutzer entfernen möchten, auf die Stellung **Aus**. Soll der Benutzer beispielsweise Zugriff auf alle verfügbaren Dienste mit Ausnahme von Skype for Business Online haben, können Sie die Umschaltfläche für den Skype for Business Online-Dienst auf die Stellung **Aus** setzen.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. Wechseln Sie die Umschaltfläche für Lizenzen, die dieser Benutzer nicht mehr benötigt, in die Position **aus** .
 
@@ -141,7 +141,7 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
     > - Wenn Sie die für den Benutzer verfügbaren Dienste einschränken möchten, setzen Sie die Umschaltflächen für die Dienste, die Sie für diesen Benutzer entfernen möchten, auf die Stellung **Aus**. Soll der Benutzer beispielsweise Zugriff auf alle verfügbaren Dienste mit Ausnahme von Skype for Business Online haben, können Sie die Umschaltfläche für den Skype for Business Online-Dienst auf die Stellung **Aus** setzen.
     > - Alle vorherigen Lizenzzuweisungen für die ausgewählten Benutzer werden entfernt.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. Wählen Sie unten im Bereich **Vorhandene Produkte ersetzen** nacheinander **Ersetzen** \> **Schließen** aus.
 

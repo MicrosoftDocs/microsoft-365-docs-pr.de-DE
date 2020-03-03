@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Erfahren Sie, wie Sie Office 365 einrichten können, um Ihre DNS-Einträge bei Amazon Webdienste (AWS) zu verwalten. '
-ms.openlocfilehash: 08deba83738ba0e530e719cd6fd57bee423df5e0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9500522478c22277c57772ef64b4d0a4b87e8c44
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242870"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352486"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-amazon-web-services-aws"></a>Ändern von Namenservern zum Einrichten von Office 365 bei Amazon Web Services (AWS)
 
@@ -99,18 +99,18 @@ Zum Abschluss der Einrichtung Ihrer Domäne in Office 365 ändern Sie die NS-Ein
     
 4. Wählen Sie den **Namenserver**-Eintragssatz aus. 
     
-    ![Select the recordset](../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
+    ![Select the recordset](../../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
   
 5. In the **NS - Name server** record set in the **Value** box, delete all of the nameservers by selecting them all and then pressing the **Delete** key on your keyboard. 
     
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**oder **NS4.BDM.microsoftonline.com**sind.) 
   
-    ![Select and delete all of the nameservers in the Value box](../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
+    ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
 6. Wählen Sie in der **Gültigkeitsdauer (Sekunden):** **1H** (1 Stunde) aus. 
     
-    ![Wählen Sie 1H für eine Stunde aus.](../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
+    ![Wählen Sie 1H für eine Stunde aus.](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
   
 7. Geben Sie, weiterhin im Eintragssatz **NS - Name server**, in das Feld **Value** den Wert aus der **ersten Zeile** der folgenden Tabelle direkt oder durch Kopieren und Einfügen ein, drücken Sie dann die **EINGABETASTE**, und geben Sie den Wert der nächsten **Zeile** direkt oder durch Kopieren und Einfügen ein. 
     
@@ -124,11 +124,11 @@ Zum Abschluss der Einrichtung Ihrer Domäne in Office 365 ändern Sie die NS-Ein
 |**Dritte Zeile** <br/> |NS3.BDM.microsoftonline.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
 |**Vierte Zeile** <br/> |NS4.BDM.microsoftonline.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
    
-   ![Geben Sie den Wert der ersten Textreihe in das Feld Wert ein oder fügen Sie ihn ein.](../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
+   ![Geben Sie den Wert der ersten Textreihe in das Feld Wert ein oder fügen Sie ihn ein.](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
   
 8. Wählen Sie **Speichersatz speichern**aus.
     
-    ![Daten Satz Satz speichern auswählen](../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
+    ![Daten Satz Satz speichern auswählen](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
   
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Office 365-E-Mails und andere Dienste für das Arbeiten mit Ihrer Domäne eingerichtet. 

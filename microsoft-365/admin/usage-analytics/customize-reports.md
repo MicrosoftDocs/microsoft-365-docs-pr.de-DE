@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Erfahren Sie, wie Sie Berichte im Browser und in Power BI Desktop anpassen können.
-ms.openlocfilehash: 5fc3b399638b2f1e9b1b2726fbf58e22eda33e01
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244216"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355156"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Individuelles Anpassen der Berichte in Microsoft 365-Nutzungsanalysen
 
@@ -42,19 +42,19 @@ In diesem Beispiel wird gezeigt, wie Sie die Registerkarte **Aktivierung** inner
   
 1. Klicken Sie im Bericht **Aktivierung/Lizenzierung** auf die Registerkarte **Aktivierung**.
     
-2. Wechseln Sie in den Bearbeitungsmodus, indem Sie oben auf die Schaltfläche **Bearbeiten** der Schaltfläche ![Die Schaltfläche "Seite hinzufügen" in Power BI](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) klicken. 
+2. Wechseln Sie in den Bearbeitungsmodus, indem Sie oben auf die Schaltfläche **Bearbeiten** der Schaltfläche ![Die Schaltfläche "Seite hinzufügen" in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) klicken. 
     
-    ![Klicken Sie auf "Bericht bearbeiten" in der oberen rechten Navigationsleiste](../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Klicken Sie auf "Bericht bearbeiten" in der oberen rechten Navigationsleiste](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
 3. Klicken Sie oben rechts auf **Diese Seite duplizieren**.
     
-    ![Wählen Sie "Diese Seite duplizieren" aus](../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![Wählen Sie "Diese Seite duplizieren" aus](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
 4. Klicken Sie unten rechts auf eines der Balkendiagramme, in dem die Anzahl der Benutzer angezeigt wird, die basierend auf Betriebssystemen wie Android, iOS, Mac usw. eine Aktivierung vornehmen.
     
 5. Klicken Sie im Bereich **Visualisierungen** auf der rechten Seite, um die **Mac-Anzahl** aus dem visuellen Element zu entfernen, auf das **X** daneben.
 
-    ![Entfernen der Mac-Anzahl](../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![Entfernen der Mac-Anzahl](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>Erstellen eines neuen visuellen Elements
 
@@ -62,13 +62,13 @@ Im folgenden Beispiel sehen Sie, wie Sie ein neues visuelles Element zum Nachver
   
 1. Wechseln Sie mit der linken Navigationsleiste zum Bericht **Produktnutzung**, und klicken Sie auf die Registerkarte **Yammer**.
     
-2. Wechseln Sie in den Bearbeitungsmodus, indem Sie auf ](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)Die Schaltfläche "Seite hinzufügen" in Power BI![ und **Bearbeiten** klicken. 
+2. Wechseln Sie in den Bearbeitungsmodus, indem Sie auf ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)Die Schaltfläche "Seite hinzufügen" in Power BI![ und **Bearbeiten** klicken. 
     
-3. Klicken Sie am unteren Rand der Seite auf  ![Die Schaltfläche "Seite hinzufügen" in Power BI,](../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) um eine neue Seite zu erstellen.
+3. Klicken Sie am unteren Rand der Seite auf  ![Die Schaltfläche "Seite hinzufügen" in Power BI,](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) um eine neue Seite zu erstellen.
   
 4. Klicken Sie im Bereich **Visualisierungen** auf der rechten Seite auf **Gestapeltes Balkendiagramm** (obere Zeile, erstes Element von links).
 
-    ![Balkendiagramm auswählen](../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![Balkendiagramm auswählen](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. Klicken Sie auf die untere rechte Ecke dieser Visualisierung, und ziehen Sie, um sie zu vergrößern.
 
@@ -76,7 +76,7 @@ Im folgenden Beispiel sehen Sie, wie Sie ein neues visuelles Element zum Nachver
 
 7. Ziehen Sie **MonthName** (Monatsname) in den Bereich "Felder", direkt unterhalb der Überschrift **Achse** im Bereich **Visualisierungen**.
  
-    ![Monatsname ziehen](../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Monatsname ziehen](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
 8. Erweitern Sie im Bereich **Felder** auf der rechten Seite die Tabelle **TenantProductUsage** (MandantProduktVerwendung).
 
@@ -86,9 +86,9 @@ Im folgenden Beispiel sehen Sie, wie Sie ein neues visuelles Element zum Nachver
 
 11. Aktivieren Sie im Bereich **Filtertyp**, der dann angezeigt wird, das Kontrollkästchen **Yammer**.
 
-    ![Kontrollkästchen "Yammer" aktivieren](../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Kontrollkästchen "Yammer" aktivieren](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Klicken Sie unmittelbar unterhalb der Liste der Visualisierungen auf das Symbol **Format** ![Symbol "Format" in Power BI-Visualisierungen](../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
+12. Klicken Sie unmittelbar unterhalb der Liste der Visualisierungen auf das Symbol **Format** ![Symbol "Format" in Power BI-Visualisierungen](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
 
 13. Erweitern Sie "Titel", und ändern Sie den Wert **Titeltext** in **Yammer-Erstbenutzer nach Monat**.
     
@@ -112,7 +112,7 @@ Sie können zunächst eine direkte Verbindung mit den ODATA-Berichts-APIs von Mi
     
     **HINWEIS:** Die APIs zur Berichterstellung befinden sich in einer Vorschauphase und unterliegen bis zum Beginn der Produktion noch Änderungen. 
   
-    ![OData-Feed-URL für Power BI Desktop](../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData-Feed-URL für Power BI Desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
 3. Geben Sie Ihre Microsoft 365 (Organization oder School) Administratoranmeldeinformationen zur Authentifizierung bei Microsoft 365 ein, wenn Sie dazu aufgefordert werden.
     
@@ -124,7 +124,7 @@ Sie können zunächst eine direkte Verbindung mit den ODATA-Berichts-APIs von Mi
     
     Dadurch werden die Daten in Ihre Power BI Desktop-Instanz heruntergeladen. Speichern Sie diese Datei. Anschließend können Sie mit dem Erstellen der benötigten Berichte beginnen.
     
-    ![In der Berichts-API verfügbare ODATA-Werte](../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![In der Berichts-API verfügbare ODATA-Werte](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Verwenden der Vorlage für die Microsoft 365-Nutzungsanalyse
 
@@ -136,7 +136,7 @@ Sie können die Power BI-Vorlagendatei im Microsoft [Download Center](https://do
     
 2. Geben Sie im Dialogfeld den Wert für Ihre Mandanten-ID ein.
     
-    ![Geben Sie die Mandanten-ID ein, um die pbit-Datei zu öffnen](../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![Geben Sie die Mandanten-ID ein, um die pbit-Datei zu öffnen](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
 3. Geben Sie Ihre Administratoranmeldeinformationen für die Authentifizierung bei Microsoft 365 ein, wenn Sie dazu aufgefordert werden.
     

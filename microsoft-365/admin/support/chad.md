@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 71b44c16b33b39563ab6d38d5467e4f667c3d0d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 037851ad6a8ae6ef4b5808e00914039fa8975d36
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253974"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359546"
 ---
 # <a name="contact-support-for-chad"></a>Wenden Sie sich an den Support für Tschad
 

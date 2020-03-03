@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: 40660f8f04c51c61aeec2144f4e7f3da8fa39fd9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241677"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353266"
 ---
 # <a name="get-started-with-the-roles-page"></a>Erste Schritte mit der Seite "Rollen"
 
 Auf der Seite "Rollen" können Sie Benutzern Berechtigungen für Aufgaben in den Admin Centern erteilen. Auf diese Weise kann Ihre Organisation Aufgaben auf die entsprechenden Personen verteilen und Ihre Daten schützen.
 
-:::image type="content" source="../media/roles-main-page.png" alt-text="Eine Abbildung, in der Administratorrollen angezeigt werden":::
+:::image type="content" source="../../media/roles-main-page.png" alt-text="Eine Abbildung, in der Administratorrollen angezeigt werden":::
 
 > [!TIP]
 > Sind Sie an detaillierten Rollenbeschreibungen interessiert? Überprüfen Sie die [Administrator Rollen Berechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) und [über Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
@@ -38,7 +38,7 @@ Auf der Seite "Rollen" können Sie Benutzern Berechtigungen für Aufgaben in den
 
 Sie können die Administratorliste sowie die Suche und den Filter nach Rolle exportieren.
 
-:::image type="content" source="../media/admin-role-page-options.png" alt-text="Filtern oder Importieren von Administratorrollen":::
+:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filtern oder Importieren von Administratorrollen":::
 
 |||
 |:-----|:-----|
@@ -95,6 +95,6 @@ Im Admin Center:
 
 - Wählen Sie bis zu 3 Rollen aus, und wählen Sie **Rollen vergleichen** aus, um die Berechtigungen für jede Rolle anzuzeigen.
 
-:::image type="content" source="../media/compare-roles-list.png" alt-text="Eine Abbildung, die einen Vergleich der Administratorrollen zeigt":::
+:::image type="content" source="../../media/compare-roles-list.png" alt-text="Eine Abbildung, die einen Vergleich der Administratorrollen zeigt":::
 
 ::: moniker-end

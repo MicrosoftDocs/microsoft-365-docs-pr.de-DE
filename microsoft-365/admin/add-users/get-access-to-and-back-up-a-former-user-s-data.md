@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Hier erfahren Sie, wie Sie die Dateien und e-Mails eines Mitarbeiters beibehalten, wenn die Person Ihre Organisation verlässt.
-ms.openlocfilehash: 92e863e3b849f6a89e6d67d805fdb5024879999f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241634"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353196"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Zugreifen auf die und Sichern der Daten eines ehemaligen Mitarbeiters
 
@@ -143,15 +143,15 @@ Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemal
     
 2. Wählen Sie in Outlook **Datei**aus.
     
-    ![So sieht das Menüband in Outlook 2016 aus.](../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+    ![So sieht das Menüband in Outlook 2016 aus.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
 3. Wählen **Sie &amp; Open Export** \> **Import/Export**aus.
     
-    ![Befehl 'Importieren/Exportieren' in der Backstage-Ansicht](../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Befehl 'Importieren/Exportieren' in der Backstage-Ansicht](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Wählen Sie **in eine Datei exportieren**aus, und wählen Sie dann **weiter**aus.
     
-    ![Option zum Exportieren in eine Datei im Import/Export-Assistenten](../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Option zum Exportieren in eine Datei im Import/Export-Assistenten](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Wählen Sie **Outlook-Datendatei (PST)** aus, und wählen Sie dann **weiter**aus.
     
@@ -160,7 +160,7 @@ Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemal
     > [!NOTE]
     > Sie können immer ein Konto gleichzeitig exportieren. Wenn Sie mehrere Konten exportieren möchten, wiederholen Sie nach dem Export des einen Kontos diese Schritte. 
   
-    ![Dialogfeld 'Outlook-Datendatei exportieren' mit ausgewähltem Ordner der obersten Ebene und aktiviertem 'Unterordner einbeziehen'](../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Dialogfeld 'Outlook-Datendatei exportieren' mit ausgewähltem Ordner der obersten Ebene und aktiviertem 'Unterordner einbeziehen'](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Wählen Sie **Weiter** aus.
     
@@ -195,7 +195,7 @@ Um den Zugriff auf e-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehema
     
 2. Wählen Sie **aus einem anderen Programm oder einer anderen Datei importieren aus**, und wählen Sie dann **weiter**aus.
     
-    ![Import/Export-Assistent](../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Import/Export-Assistent](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Wählen Sie **Outlook-Datendatei (PST)** aus, und wählen Sie **weiter**aus.
     

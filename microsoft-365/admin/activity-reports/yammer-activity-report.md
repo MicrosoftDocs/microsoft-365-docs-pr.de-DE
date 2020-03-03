@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Rufen Sie den Yammer-Aktivitätsbericht ab. Dieser stellt Ihnen Informationen über die Anzahl der Benutzer bereit, die Yammer verwenden, um eine Nachricht zu posten, mit "Gefällt mir" zu kennzeichnen oder zu lesen.
-ms.openlocfilehash: 0b6e7feb1d80ddc56c9ea172fa3c7e91ea0903b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241749"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353516"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365-Berichte im Admin Center – Yammer-Aktivitätsbericht
 
@@ -44,7 +44,7 @@ Das Dashboard **Berichte** zeigt Ihnen als Microsoft 365-Administrator Ihre Date
 
 Sie erhalten einen Einblick in die Yammer-Aktivitäten Ihrer Benutzer, indem Sie sich die Diagramme "Aktivität" und "Benutzer" ansehen.
   
-![Yammer-Aktivitätsbericht](../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
+![Yammer-Aktivitätsbericht](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
   
 Der Aktivitätsbericht enthält die folgenden Informationen.
   
@@ -54,13 +54,13 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
 - Sie können das Diagramm **Aktivität** anzeigen, um den Trend in Hinsicht auf die Menge von Yammer-Aktivitäten in Ihrer Organisation zu erkennen. Sie können die Aufteilung von Nachrichten in "gepostet", "gelesen" oder "Gefällt mir" erkennen. 
     
-    ![Ansicht "Aktivität" im Yammer-Aktivitätsbericht](../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
+    ![Ansicht "Aktivität" im Yammer-Aktivitätsbericht](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
   
   - Im Diagramm **Aktivität** bezeichnet die y-Achse die Anzahl der Aktivitäten bei den geposteten, gelesenen oder mit "Gefällt mir" bewerteten Nachrichten. 
     
 - Sie können das Diagramm **Benutzer** anzeigen, um den Trend in Hinsicht auf die Anzahl eindeutiger Benutzer zu erkennen, die die Yammer-Aktivitäten generieren. Sie können sich den Trend von Benutzern anschauen, die Yammer-Nachrichten posten, lesen oder mit "Gefällt mir" bewerten. 
     
-    ![Ansicht "Benutzer" im Yammer-Aktivitätsbericht](../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
+    ![Ansicht "Benutzer" im Yammer-Aktivitätsbericht](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
   
   - Im Aktivitätsdiagramm **Benutzer** bezeichnet die y-Achse die Benutzer, die Yammer-Nachrichten posten, lesen oder mit "Gefällt mir" bewerten. 
     
@@ -68,7 +68,7 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
 - Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Aktivität** die Option **Gepostet**, **Gelesen** oder **Mit "Gefällt mir" markiert** aus, um nur die jeweils zugehörigen Informationen anzuzeigen. 
     
-    ![Optionen "Gepostet", "Gelesen" und "Mit 'Gefällt mir' markiert"](../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Optionen "Gepostet", "Gelesen" und "Mit 'Gefällt mir' markiert"](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.
     
@@ -76,7 +76,7 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
     Mithilfe des Menüs können Sie die Daten filtern und sortieren.
     
-    ![Menüoptionen für Yammer-Berichte](../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
+    ![Menüoptionen für Yammer-Berichte](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
   
     Sie können auch Spalten hinzufügen und entfernen. Die verfügbaren Spalten sind:
     

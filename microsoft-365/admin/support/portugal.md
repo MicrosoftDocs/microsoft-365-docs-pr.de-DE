@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b82abb4c9ff2cb176b7bdf7a3148d8d9a0a3e7fe
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a05f4cacda5d0d746c808e1e094a8e35059edf73
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244414"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356886"
 ---
 # <a name="contact-support-for-portugal"></a>Kontaktieren des Supports für Portugal
 

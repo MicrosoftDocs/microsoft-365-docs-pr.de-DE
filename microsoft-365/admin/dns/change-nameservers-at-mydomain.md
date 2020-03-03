@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: Erfahren Sie, wie Sie Office 365 einrichten können, um die DNS-Einträge Ihrer benutzerdefinierten Domäne bei mydomain zu verwalten.
-ms.openlocfilehash: 05681fb48cc4c06aa44421029739a71ef6e59871
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 90f1469bdf2f281be14e2a9e15a9fe7ac4a8cbee
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242685"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351616"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-mydomain"></a>Ändern von Namenservern zum Einrichten von Office 365 bei MyDomain
 
@@ -42,20 +42,20 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.mydomain.com/controlpanel) zu Ihrer Domänenseite bei MyDomain. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie im Abschnitt **Meine Favoriten** die Option **Domäne zentral**aus.
+2. Wählen Sie im Abschnitt **Meine Favorien** die Option **Domain Central** aus.
     
-3. Wählen Sie unter **Domäne**den Namen der Domäne aus, die Sie bearbeiten möchten.
+3. Wählen Sie unter **Domain** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-4. Wählen Sie in der Zeile **Übersicht** die Option **DNS**aus.
+4. Wählen Sie in der Zeile **Overview** die Option **DNS** aus.
     
-5. From the **Modify** drop-down list, choose **TXT/SPF Record**.
+5. Wählen Sie in der Dropdownliste **Modify** den Eintrag **TXT/SPF Record** aus.
     
-6. Under **Content**, in the box for the new record, type or copy and paste the value from the following table.
+6. Geben Sie unter **Content** im Feld für den neuen Eintrag den Wert aus der folgenden Tabelle ein. Sie können den Wert auch kopieren und einfügen.
     
 ||
 |:-----|
-|**Content** <br/> |
-|MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie jeweils Ihren Wert für **die Zieladresse bzw. die Adresse, auf die verwiesen wird** aus der Tabelle in Office 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+|**Inhalt** <br/> |
+|MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Klicken Sie auf **Hinzufügen**.
     
@@ -89,17 +89,17 @@ Zum Abschluss der Einrichtung Ihrer Domäne in Office 365 ändern Sie die NS-Ein
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.mydomain.com/controlpanel) zu Ihrer Domänenseite bei MyDomain. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie im Abschnitt **Meine Favoriten** die Option **Domäne zentral**aus.
+2. Wählen Sie im Abschnitt **Meine Favorien** die Option **Domain Central** aus.
     
-3. Wählen Sie unter **Domäne**den Namen der Domäne aus, die Sie bearbeiten möchten.
+3. Wählen Sie unter **Domain** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
 4. Wählen Sie in der Zeile **Übersicht** die Option Namen **Server**aus.
     
-    ![Mydomain-BP-redelegate-1-1](../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
+    ![Mydomain-BP-redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
 5. Wählen Sie im Abschnitt **Update Name Servers** die Option **Use different name servers** aus.
     
-    ![Mydomain-BP-redelegate-1-2-1](../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
+    ![Mydomain-BP-redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
 6. Je nachdem, ob auf der jetzt angezeigten Seite bereits Namenserver aufgelistet sind oder nicht, fahren Sie mit einem der beiden folgenden Verfahren fort.
     
@@ -107,7 +107,7 @@ Zum Abschluss der Einrichtung Ihrer Domäne in Office 365 ändern Sie die NS-Ein
 
 - Wenn die richtigen Namenserver bereits aufgelistet sind, können Sie diesen Schritt überspringen.
     
-    ![Mydomain-BP-redelegate-1-2-2](../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
+    ![Mydomain-BP-redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
   
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>Wenn die richtigen Namenserver noch NICHT aufgelistet sind
 
@@ -116,11 +116,11 @@ Zum Abschluss der Einrichtung Ihrer Domäne in Office 365 ändern Sie die NS-Ein
   
 1. Delete the existing nameservers by selecting each entry in the **Nameserver:** field, and then pressing the **Delete** key on your keyboard. 
     
-    ![Mydomain-BP-redelegate-1-3-1](../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
+    ![Mydomain-BP-redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
 2. Wählen Sie zweimal **Hinzufügen** aus, um zwei neue Nameserver-Zeilen hinzuzufügen. 
     
-    ![Mydomain-BP-redelegate-1-3-2](../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
+    ![Mydomain-BP-redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
 3. Geben Sie in die Felder für die Einträge die Namenserverwerte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -131,11 +131,11 @@ Zum Abschluss der Einrichtung Ihrer Domäne in Office 365 ändern Sie die NS-Ein
 |**Nameserver 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Mydomain-BP-redelegate-1-4](../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
+   ![Mydomain-BP-redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
 4. Klicken Sie auf **Speichern**.
     
-    ![Mydomain-BP-redelegate-1-5](../media/48473816-b881-47f0-9344-74622efa3bf8.png)
+    ![Mydomain-BP-redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Office 365-E-Mails und andere Dienste für das Arbeiten mit Ihrer Domäne eingerichtet. 

@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Verstehen Sie, was Sie wissen müssen, bevor Sie den Registrierungsprozess für Office 365 durchlaufen. '
-ms.openlocfilehash: 40d7084be08187a366733b6de39e1f534a73032e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241515"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352956"
 ---
 # <a name="how-to-sign-up-for-office-365---admin-help"></a>Registrieren bei Office 365 - Administratorhilfe
 
@@ -79,7 +79,7 @@ Sehen Sie sich ein kurzes Video zur Auswahl eines Office 365 Geschäftsplans an.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind.
   

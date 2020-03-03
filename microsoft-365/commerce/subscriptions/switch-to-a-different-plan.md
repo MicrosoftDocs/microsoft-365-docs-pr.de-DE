@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Hier erfahren Sie, wie Sie zu einem neuen Office 365 für Unternehmen Abonnement wechseln.
-ms.openlocfilehash: 22b1d187c18743a467e9e13abbb5d2635b62da40
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254513"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354466"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>Wechseln zu einem anderen Office 365 Business-Plan
 
@@ -95,4 +95,4 @@ Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie die [
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Kontaktieren Sie den Support, um Hilfe beim Wechseln von Plänen zu erhalten!
 
-![Telefon](../../admin/media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Anruf Unterstützung](../../admin/contact-support-for-business-products.md)
+![Telefon](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Anruf Unterstützung](../../admin/contact-support-for-business-products.md)

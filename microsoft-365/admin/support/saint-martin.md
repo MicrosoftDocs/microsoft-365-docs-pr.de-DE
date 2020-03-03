@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d9dec4a163f59e2b4e7ca0b1e70e6ba48a2cc00f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 34051ffea7721a9e524009fea932103e2999e422
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253641"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356706"
 ---
 # <a name="contact-support-for-saint-martin"></a>Wenden Sie sich an den Support für Saint Martin
 

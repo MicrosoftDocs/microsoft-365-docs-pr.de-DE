@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Nutzen Sie den Bericht zur Yammer-Gruppenaktivität, um sich über die Anzahl der Yammer-Gruppen, die in Ihrer Organisation erstellt und verwendet werden, sowie über deren Aktivitäten zu informieren.
-ms.openlocfilehash: 436387a7476a62293107e1a22d6fc15287d4faf0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 69b9be1b6f632f0e6fa212e5be6209097ccb6669
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241713"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353326"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Office 365-Berichte im Admin Center – der Bericht „Yammer-Gruppenaktivität“
 
@@ -42,7 +42,7 @@ Im Office 365 **Berichte**-Dashboard finden Sie eine Übersicht über die Aktivi
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>Interpretieren des Berichts "Yammer-Gruppenaktivität"
 
-Sie können sich einen Überblick über die Aktivitäten von Yammer-Gruppen verschaffen, indem Sie sich die Diagramme **Gruppen** und **Aktivität** ansehen.<br/>![Diagramm "Yammer-Gruppenaktivität"](../media/4ba4ea03-2f74-4d86-8c63-2b18477c9769.png)
+Sie können sich einen Überblick über die Aktivitäten von Yammer-Gruppen verschaffen, indem Sie sich die Diagramme **Gruppen** und **Aktivität** ansehen.<br/>![Diagramm "Yammer-Gruppenaktivität"](../../media/4ba4ea03-2f74-4d86-8c63-2b18477c9769.png)
   
 |||
 |:-----|:-----|
@@ -51,9 +51,9 @@ Sie können sich einen Überblick über die Aktivitäten von Yammer-Gruppen vers
 |3.  <br/> |In der Ansicht **Gruppen** wird die Gesamtanzahl der vorhanden Gruppen angezeigt, und Sie können sehen, wie viele an Gruppenunterhaltungen teilgenommen haben.  <br/> |
 |4.  <br/> |In der Ansicht **Aktivität** wird die Anzahl der veröffentlichten, gelesenen und mit "Gefällt mir" markierten Yammer-Nachrichten in Gruppen angezeigt.  <br/> |
 |5.  <br/> | Im Diagramm **Gruppen** gibt die Y-Achse die Anzahl der gesamten oder aktiven Gruppen an.  <br/>  Im Diagramm **Aktivität** stellt die Y-Achse die Anzahl der angegebenen Aktivität für Yammer-Gruppen dar.  <br/>  Die X-Achse stellt in allen drei Diagrammen den ausgewählten Datumsbereich für den jeweiligen Bericht dar.  <br/> |
-|6.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Gruppen** die Option **Gesamt** oder **Aktiv**![Gesamtzahl der Gruppen und Anzahl der aktiven Symbole](../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png), um nur die jeweils zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
+|6.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Gruppen** die Option **Gesamt** oder **Aktiv**![Gesamtzahl der Gruppen und Anzahl der aktiven Symbole](../../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png), um nur die jeweils zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
 |7.  <br/> | Die Liste der angezeigten Gruppen wird von der Anzahl aller Gruppen bestimmt, die über den längsten Berichtszeitraum (180 Tage) vorhanden waren (nicht gelöscht wurden). Die Anzahl der Aktivitäten (empfangenen Nachrichten) variiert entsprechend der Datumsauswahl.  <br/> HINWEIS: Möglicherweise werden nicht alle Elemente in der nachstehenden Liste in den Spalten angezeigt, solange Sie diese nicht hinzugefügt haben.<br/>**Gruppenname** ist der Name der Gruppe.  <br/> **Gruppenadministrator** ist der Name des Gruppenadministrators oder Besitzers.  <br/> **Gelöscht** ist die Anzahl der gelöschten Yammer-Gruppen. Wenn eine Gruppe gelöscht wird, die im Berichtszeitraum Aktivitäten ausgeführt hat, wird sie im Raster mit dieser auf TRUE festgelegten Kennzeichnung angezeigt.  <br/> **Typ** gibt den Typ der Gruppe zurück (öffentlich oder privat).  <br/> **Verbunden mit Office 365** gibt an, ob die Yammer-Gruppe auch eine Office 365-Gruppe ist.  <br/> **Datum der letzten Aktivität** ist das letzte Datum, an dem eine Nachricht von der Gruppe gelesen, veröffentlicht oder mit "Gefällt mir" markiert wurde.  <br/> **Mitglieder** ist die Anzahl der Mitglieder der Gruppe.  <br/> **Veröffentlicht** ist die Anzahl der während des Berichtszeitraums in der Yammer-Gruppe veröffentlichten Nachrichten.  <br/> **Gelesen** ist die Anzahl der während des Berichtszeitraums in der Yammer-Gruppe gelesenen Unterhaltungen.  <br/> **Mit "Gefällt mir" markiert** ist die Anzahl der während des Berichtszeitraums in der Yammer-Gruppe mit "Gefällt mir" markierten Nachrichten.  <br/>  Wenn die Richtlinien Ihrer Organisation eine Anzeige von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt zum **Ausblenden von Details auf Benutzerebene** in [Aktivitätsberichte im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
-|8.  <br/> |Wählen Sie **Spalten** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Aktivitäten in Yammer-Gruppen – Spalten auswählen](../media/31bd549b-363d-4888-a45d-7af6fedb3588.png)|
+|8.  <br/> |Wählen Sie **Spalten** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Aktivitäten in Yammer-Gruppen – Spalten auswählen](../../media/31bd549b-363d-4888-a45d-7af6fedb3588.png)|
 |9.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |||
    

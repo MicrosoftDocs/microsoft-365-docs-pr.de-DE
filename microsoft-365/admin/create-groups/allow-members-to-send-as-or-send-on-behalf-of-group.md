@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Hier erfahren Sie, wie Sie Mitgliedern das Senden von e-Mails als Office 365 Gruppe oder das Senden von e-Mails im Namen einer Office 365 Gruppe gestatten können.
-ms.openlocfilehash: c0dca3a3bbed6617874d9dfbca06a4ec5d6b4ebc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241424"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352756"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 
@@ -47,17 +47,17 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails al
   
 1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>zu **Empfänger** \> **Gruppen**.
     
-2. Wählen ****![Sie Edit Group Symbol](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) bearbeiten in der Gruppe aus, die Sie Benutzern erlauben möchten, als zu senden.   
+2. Wählen ****![Sie Edit Group Symbol](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) bearbeiten in der Gruppe aus, die Sie Benutzern erlauben möchten, als zu senden.   
     
 3. Wählen Sie **Gruppendelegierung** aus.
     
 4. Wählen Sie im Abschnitt **Senden als** das **+** Zeichen aus, um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
     
-    ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Office 365 Gruppe senden möchten.](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Office 365 Gruppe senden möchten.](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern**aus.
     
-    ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Zulassen, dass Mitglieder e-Mail-Nachrichten im Auftrag einer Gruppe senden
 
@@ -65,17 +65,17 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails im
   
 1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>zu **Empfänger** \> **Gruppen**.
     
-2. Wählen **** ![Sie Edit Group Icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) bearbeiten in der Gruppe aus, der Sie Benutzern das Senden als erlauben möchten. 
+2. Wählen **** ![Sie Edit Group Icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) bearbeiten in der Gruppe aus, der Sie Benutzern das Senden als erlauben möchten. 
     
 3. Wählen Sie **Gruppendelegierung** aus.
     
 4. Wählen Sie im Abschnitt Senden im Auftrag das **+** Vorzeichen aus, um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
     
-    ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Office 365 Gruppe senden möchten.](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Office 365 Gruppe senden möchten.](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern**aus.
     
-    ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

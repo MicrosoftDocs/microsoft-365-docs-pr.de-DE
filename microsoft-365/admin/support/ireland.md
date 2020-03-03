@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4249710c042ed49ef521a7bb84afeea7a500c068
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 16302a4aa2583d31db4b977ab2d542298c7d1f28
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253849"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358300"
 ---
 # <a name="contact-support-for-ireland"></a>Wenden Sie sich an den Support für Irland
 

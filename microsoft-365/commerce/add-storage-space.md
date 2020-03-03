@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Hier erfahren Sie, wie Sie den Dateispeicher in Ihrem Office 365-Abonnement hinzufügen und reduzieren. Bei zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive speichern.
-ms.openlocfilehash: 9bf87715cb5acbcc5c6dd34ccd023d5aa5ce6c2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 64e98ff830b592b12e25620e4c2e89e09a161a3e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242549"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354846"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
@@ -118,14 +118,14 @@ Wenn Sie noch keinen zusätzlichen Speicherplatz für Ihr Abonnement erworben ha
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, dem Sie Speicherplatz hinzufügen möchten, und wählen Sie dann **Add-ons**aus.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Wenn **Add-ons**nicht angezeigt werden und Ihr Abonnement über einen Partner erworben wurde, wählen Sie **Volume Licensing Service Center (VLSC)** aus.
   
 3. Wählen Sie **Add-ons kaufen**aus.
 
-    ![Link "Add-ons kaufen" auf der Seite "Abonnements" des Admin Centers.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Link "Add-ons kaufen" auf der Seite "Abonnements" des Admin Centers.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Klicken Sie auf der Seite " **Dienste kaufen** " mit der Maus oder tippen Sie auf **Office 365 zusätzlichen Dateispeicher**, und wählen Sie dann **Jetzt kaufen**aus.
   
@@ -143,14 +143,14 @@ Wenn Sie noch keinen zusätzlichen Speicherplatz für Ihr Abonnement erworben ha
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, dem Sie Speicherplatz hinzufügen möchten, und wählen Sie dann **Add-ons**aus.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Wenn **Add-ons**nicht angezeigt werden und Ihr Abonnement über einen Partner erworben wurde, wählen Sie **Volume Licensing Service Center (VLSC)** aus.
   
 3. Wählen Sie **Add-ons kaufen**aus.
 
-    ![Link "Add-ons kaufen" auf der Seite "Abonnements" des Admin Centers.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Link "Add-ons kaufen" auf der Seite "Abonnements" des Admin Centers.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Klicken Sie auf der Seite " **Dienste kaufen** " mit der Maus oder tippen Sie auf **Office 365 zusätzlichen Dateispeicher**, und wählen Sie dann **Jetzt kaufen**aus.
   
@@ -189,14 +189,14 @@ Wenn Sie bereits über das **Office 365 extra File Storage** -Add-on zusätzlich
 
 2. Wählen Sie auf der Seite **Abonnements** die Option **Add-ons**aus.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Wenn **Add-ons**nicht angezeigt werden und Ihr Abonnement über einen Partner erworben wurde, wählen Sie **Volume Licensing Service Center (VLSC)** aus.
   
 3. Wählen Sie unter **Office 365 zusätzlicher Dateispeicher**die Option **Menge ändern**aus.
 
-    ![Link "Menge ändern"](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Link "Menge ändern"](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. Geben Sie im rechten Bereich die Gesamtanzahl von Gigabytes ein, die Sie benötigen, und wählen Sie dann **Absenden**aus.
 
@@ -212,14 +212,14 @@ Wenn Sie bereits über das **Office 365 extra File Storage** -Add-on zusätzlich
 
 2. Wählen Sie auf der Seite **Abonnements** die Option **Add-ons**aus.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Wenn **Add-ons**nicht angezeigt werden und Ihr Abonnement über einen Partner erworben wurde, wählen Sie **Volume Licensing Service Center (VLSC)** aus.
   
 3. Wählen Sie unter **Office 365 zusätzlicher Dateispeicher**die Option **Menge ändern**aus.
 
-    ![Link "Menge ändern"](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Link "Menge ändern"](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. Geben Sie im rechten Bereich die Gesamtanzahl von Gigabytes ein, die Sie benötigen, und wählen Sie dann **Absenden**aus.
 

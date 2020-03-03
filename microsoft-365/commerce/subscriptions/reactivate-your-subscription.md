@@ -1,5 +1,5 @@
 ---
-title: Verlängern oder Reaktivieren Ihres Abonnements
+title: Reaktivieren Ihres Abonnements
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -25,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Hier erfahren Sie, wie Sie Ihr Office 365 Abonnement erneut aktivieren, wenn es abläuft, oder wenn es von Microsoft deaktiviert wird, oder wenn Sie es in der Mitte abbrechen.
-ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241887"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354606"
 ---
-# <a name="reactivate-your-subscription"></a>Verlängern oder Reaktivieren Ihres Abonnements
+# <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
 
 Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie es in der Mitte eines Abonnementzeitraums storniert haben, können Sie es im Admin Center reaktivieren.
   
@@ -67,7 +67,7 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 2. Suchen Sie das Abonnement, das Sie reaktivieren möchten, und wählen Sie dann **reactivate**aus.
 
-    ![Nahaufnahme einer Abonnementkarte, die deaktivierte und reduzierte Funktionalität mit einer reactivate-Schaltfläche besagt.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Nahaufnahme einer Abonnementkarte, die deaktivierte und reduzierte Funktionalität mit einer reactivate-Schaltfläche besagt.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Wenn **reaktivieren** nicht als verfügbare Aktion angezeigt wird, [rufen](../../admin/contact-support-for-business-products.md) Sie den Support an, um Ihr Abonnement zu reaktivieren.
 
@@ -88,7 +88,7 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 2. Suchen Sie das Abonnement, das Sie reaktivieren möchten, und wählen Sie dann **reactivate**aus.
 
-    ![Nahaufnahme einer Abonnementkarte, die deaktivierte und reduzierte Funktionalität mit einer reactivate-Schaltfläche besagt.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Nahaufnahme einer Abonnementkarte, die deaktivierte und reduzierte Funktionalität mit einer reactivate-Schaltfläche besagt.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Wenn **reaktivieren** nicht als verfügbare Aktion angezeigt wird, [rufen](../../admin/contact-support-for-business-products.md) Sie den Support an, um Ihr Abonnement zu reaktivieren.
 

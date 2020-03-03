@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Erfahren Sie, wie Sie ein Add-on erwerben, um Ihrem Office 365 für Unternehmen-Abonnement zusätzliche Funktionen hinzuzufügen. Sie können auch ein Add-on aktualisieren und entfernen.
 ms.custom: okr_SMB
-ms.openlocfilehash: 717290306eb981018739604d9491da9ab3372d70
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242366"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354806"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Kaufen oder Bearbeiten eines Add-Ons für Office 365 Business
 
@@ -69,7 +69,7 @@ ms.locfileid: "42242366"
 
 3. **Wählen** \> Sie in der unteren linken Ecke der Abonnementdetails Add-ons **Buy Add-ons**aus.
 
-    ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Klicken Sie auf der Seite **Dienste kaufen** mit der Maus oder tippen Sie auf das Add-on-Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen**aus.
 
@@ -91,7 +91,7 @@ ms.locfileid: "42242366"
 
 3. **Wählen** \> Sie in der unteren linken Ecke der Abonnementdetails Add-ons **Buy Add-ons**aus.
 
-    ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Klicken Sie auf der Seite **Dienste kaufen** mit der Maus oder tippen Sie auf das Add-on-Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen**aus.
 
@@ -143,14 +143,14 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 4. Wählen Sie den Link **Menge ändern** für das Add-on aus, das Sie aktualisieren möchten. 
 
-    !["Add-Ons"-Link und Link zum Ändern der Menge](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    !["Add-Ons"-Link und Link zum Ändern der Menge](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Geben Sie in das Feld die Anzahl der benötigten Benutzerlizenzen ein, und wählen Sie dann **Absenden**aus.
 
     > [!TIP]
     > Sie können die Menge der Benutzerlizenzen auch mithilfe des Aufwärts- und Abwärtspfeils ändern oder die gewünschte Anzahl einfach im Feld eingeben.
   
-    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -166,14 +166,14 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 4. Wählen Sie den Link **Menge ändern** für das Add-on aus, das Sie aktualisieren möchten. 
 
-    !["Add-Ons"-Link und Link zum Ändern der Menge](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    !["Add-Ons"-Link und Link zum Ändern der Menge](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Geben Sie in das Feld die Anzahl der benötigten Benutzerlizenzen ein, und wählen Sie dann **Absenden**aus.
 
     > [!TIP]
     > Sie können die Menge der Benutzerlizenzen auch mithilfe des Aufwärts- und Abwärtspfeils ändern oder die gewünschte Anzahl einfach im Feld eingeben.
   
-    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -201,7 +201,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
     > [!TIP]
     > Sie können auch den nach-oben-und nach-unten-Pfeil verwenden, um die Anzahl der Lizenzen zu ändern oder einfach die gewünschte Nummer in das Feld einzugeben.
   
-    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
     > [!TIP]
     > Sie können auch den nach-oben-und nach-unten-Pfeil verwenden, um die Anzahl der Lizenzen zu ändern oder einfach die gewünschte Nummer in das Feld einzugeben.
   
-    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 

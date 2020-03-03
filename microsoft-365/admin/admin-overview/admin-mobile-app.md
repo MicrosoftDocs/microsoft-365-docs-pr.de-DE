@@ -22,25 +22,25 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Holen Sie sich die Microsoft 365 admin-APP, und erfahren Sie, wie Sie Ihre Online-Organisation von Ihrem Telefon oder Tablet aus verwalten.
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241556"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353036"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informationen zum Microsoft 365-Administrator Mobile App
 
 Sind Sie ein Administrator, der normalerweise unterwegs ist? Dann schauen Sie sich die [Microsoft 365 admin-App](https://go.microsoft.com/fwlink/?LinkID=627216)an. Sie können die APP verwenden, um Ihre Online-Organisation von Ihrem Telefon oder Tablet aus zu verwalten. Sie können die APP aus dem Apple Store und aus Google Play abrufen. <br> 
 
-![Bildschirmaufnahme der Startseite des Admin Mobile Apps, Anzeigen von Such-, Nachrichten-, Integritäts-und schnell Links.](../media/admin-mobile-app-darkbg.png)
+![Bildschirmaufnahme der Startseite des Admin Mobile Apps, Anzeigen von Such-, Nachrichten-, Integritäts-und schnell Links.](../../media/admin-mobile-app-darkbg.png)
 
 Die admin-APP ist eine funktionsreiche App mit über 80 Funktionen, die Ihnen bei der Verwaltung Ihrer Organisation helfen, wenn Sie nicht an einen Computer gelangen können. Im folgenden finden Sie eine Liste mit wenigen Aufgaben, die Sie in der app ausführen können:
 
 - Abrufen von Dienstzustands-und Änderungsbenachrichtigungen
 - Erstellen einer Serviceanfrage
 - Zurücksetzen eines Benutzerkennworts
-- Zuweisen von Lizenzen
+- Lizenzen zuweisen
 - Hinzufügen oder Entfernen von Gruppenmitgliedschaften
 - Hinzufügen von Benutzern 
 
@@ -57,7 +57,7 @@ Sehen Sie sich ein kurzes Video über die Installation des Administrator Mobile 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
  
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Office 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: 5a7a9f9a67e8436a8d4120551e306a68a015bcb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241328"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352586"
 ---
 # <a name="office-365-group-expiration-policy"></a>Ablaufrichtlinie für Office 365-Gruppen
 
@@ -54,7 +54,7 @@ Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Admin
 |Rolle|Was Sie tun können|
 |---------|---------|
 |Office 365 globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder Löschen der Ablaufrichtlinien Einstellungen für Office 365 Gruppen.|
-|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Office 365 Gruppe|
+|User|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Office 365 Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 
@@ -66,7 +66,7 @@ Wenn die Gruppe nicht über einen Besitzer verfügt, werden die Ablauf-e-Mails a
 
 Sie können die Richtlinie für alle Gruppen oder nur für ausgewählte Gruppen festlegen oder vollständig deaktivieren, indem Sie **keine**auswählen. Beachten Sie, dass Sie derzeit keine unterschiedlichen Richtlinien für verschiedene Gruppen haben können.
 
-![Screenshot von Gruppen Ablaufeinstellungen in Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Screenshot von Gruppen Ablaufeinstellungen in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Funktionsweise des Ablaufs mit der Aufbewahrungsrichtlinie
 

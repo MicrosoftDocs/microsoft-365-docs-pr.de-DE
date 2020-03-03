@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2f96f2c58deb0ac68b86990480d3736c8818b5b7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 76710ff23d8bf3e73c910ba78b2e057417e16e91
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243688"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358946"
 ---
 # <a name="contact-support-for-falkland-islands"></a>Kontaktieren des Supports für Falkland-Inseln
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
 ms.custom: okr_SMB
-ms.openlocfilehash: e8871e5d10d86f7e0f45dc34dd824bae6fb2c007
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241491"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352826"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -52,13 +52,13 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 
 2. Wenn Sie nur über ein einziges Abonnement verfügen, wird es auf der Seite **Abonnements** angezeigt - zusammen mit seinem Namen, zugehörigen Informationen und dem Status. Im nachstehenden Screenshot können Sie sehen, dass ich über ein Office 365 Business-Abonnement verfüge.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. Wenn Sie über mehrere Abonnements verfügen, wird neben den detaillierten Informationen zum Abonnement eine Spalte angezeigt, in der die von Ihnen erworbenen Abonnements sowie alle Testabonnements aufgelistet sind. Standardmäßig ist das Abonnement am Anfang der Liste automatisch ausgewählt, und die detaillierten Informationen für dieses Abonnement werden gezeigt.
 
     Wenn Sie über mehrere Abonnements verfügen, wählen Sie diejenige aus, für die Sie detaillierte Informationen anzeigen möchten. Die Abonnementkarte wird mit Informationen zu diesem Abonnement aktualisiert.
 
-    ![Die Seite "Abonnements" des Admin Centers mit einer Liste von mehreren Abonnements, die nach Ihrem Status gruppiert sind.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![Die Seite "Abonnements" des Admin Centers mit einer Liste von mehreren Abonnements, die nach Ihrem Status gruppiert sind.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Wenn Sie über abgelaufene oder deaktivierte Abonnements verfügen, werden diese basierend auf ihrem aktuellen Status aufgelistet.
@@ -71,13 +71,13 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 
 2. Wenn Sie nur über ein einziges Abonnement verfügen, wird es auf der Seite **Abonnements** angezeigt - zusammen mit seinem Namen, zugehörigen Informationen und dem Status. Im nachstehenden Screenshot können Sie sehen, dass ich über ein Office 365 Business-Abonnement verfüge.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. Wenn Sie über mehrere Abonnements verfügen, wird neben den detaillierten Informationen zum Abonnement eine Spalte angezeigt, in der die von Ihnen erworbenen Abonnements sowie alle Testabonnements aufgelistet sind. Standardmäßig ist das Abonnement am Anfang der Liste automatisch ausgewählt, und die detaillierten Informationen für dieses Abonnement werden gezeigt.
 
     Wenn Sie über mehrere Abonnements verfügen, wählen Sie diejenige aus, für die Sie detaillierte Informationen anzeigen möchten. Die Abonnementkarte wird mit Informationen zu diesem Abonnement aktualisiert.
 
-    ![Die Seite "Abonnements" des Admin Centers mit einer Liste von mehreren Abonnements, die nach Ihrem Status gruppiert sind.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![Die Seite "Abonnements" des Admin Centers mit einer Liste von mehreren Abonnements, die nach Ihrem Status gruppiert sind.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Wenn Sie über abgelaufene oder deaktivierte Abonnements verfügen, werden diese basierend auf ihrem aktuellen Status aufgelistet.

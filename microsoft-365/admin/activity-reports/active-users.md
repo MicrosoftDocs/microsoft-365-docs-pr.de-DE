@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Erfahren Sie, wie Sie einen Bericht über aktive Benutzer mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten und erfahren, wie viele Produktlizenzen verwendet werden.
-ms.openlocfilehash: 23637a3aeb7b8e03cfdb3ee9f6fbf7969896981c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241077"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353956"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365-Berichte im Admin Center – aktive Benutzer
 
@@ -50,7 +50,7 @@ Sie können beispielsweise den Bericht **Aktive Benutzer** verwenden, um herausz
 |3.  <br/> |Das Diagramm **Aktive Benutzer** zeigt Ihnen nach Produkt sortiert die täglich aktiven Benutzer für den Berichtszeitraum an.  <br/> Das Diagramm **Dienste** zeigt Ihnen die Anzahl der Benutzer nach Aktivitätstyp und Dienst an.  <br/> |
 |4.  <br/> | Im Diagramm **Aktive Benutzer** zeigt die X-Achse den ausgewählten Berichtszeitraum und die Y-Achse die täglich aktiven Benutzer nach Lizenztyp sortiert und farblich gekennzeichnet an.  <br/>  Im Aktivitätsdiagramm **Dienste** zeigt die X-Achse die einzelnen Dienste an, für die Ihre Benutzer im festgelegten Zeitraum aktiviert sind, während die Y-Achse die Anzahl der Benutzer nach farblich gekennzeichnetem Aktivitätsstatus angibt.  <br/> |
 |5.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
-|6.  <br/> |Sie können die Berichtsdaten auch in eine Excel-Datei im CSV-Format exportieren, indem Sie auf den Link **Exportieren**![Exportieren Sie Ihre Daten in eine Excel-Datei](../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) klicken. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
+|6.  <br/> |Sie können die Berichtsdaten auch in eine Excel-Datei im CSV-Format exportieren, indem Sie auf den Link **Exportieren**![Exportieren Sie Ihre Daten in eine Excel-Datei](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) klicken. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |7.  <br/> |Mithilfe von Spaltensteuerelementen können Sie ändern, welche Informationen im Raster angezeigt werden.  <br/> Wenn Ihr Abonnement von 21Vianet betrieben wird, wird Yammer nicht angezeigt. <br/> <br/> |
 |||
 

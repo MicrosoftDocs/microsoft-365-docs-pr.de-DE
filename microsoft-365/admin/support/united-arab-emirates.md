@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7a628bc6eed4977727bd1e5421b3b1eabbbe7165
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e94c595909c570cb8e4a9b8df548983f75c6fb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253179"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355826"
 ---
 # <a name="contact-support-for-uae-united-arab-emirates"></a>Kontaktieren des Supports für uae (Vereinigte Arabische Emirate)
 

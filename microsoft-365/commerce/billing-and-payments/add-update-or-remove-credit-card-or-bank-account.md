@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 894b1cbf9033521c6978f54d0483fe61c3d6114d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341234"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354936"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden
 
@@ -172,11 +172,11 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 
 2. Wählen Sie das Abonnement aus, das Sie mit der neuen Kreditkarte oder dem Konto bezahlen möchten, und wählen Sie dann **Zahlungsdetails aktualisieren**aus.
 
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder Auswählen einer Zahlungsmethode**aus, und wählen Sie dann **neue Kreditkarte** oder **neues Bankkonto**aus.
 
-    ![Das Dropdownmenü, in dem die Optionen für neue Kreditkarten-und neue Bankkonten angezeigt werden.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![Das Dropdownmenü, in dem die Optionen für neue Kreditkarten-und neue Bankkonten angezeigt werden.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Geben Sie die Informationen für die neue Kreditkarte oder das Konto ein, und wählen Sie dann **Absenden**aus.
 
@@ -203,11 +203,11 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 
 2. Wählen Sie das Abonnement aus, das Sie mit der neuen Kreditkarte oder dem Konto bezahlen möchten, und wählen Sie dann **Zahlungsdetails aktualisieren**aus.
 
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder Auswählen einer Zahlungsmethode**aus, und wählen Sie dann **neue Kreditkarte** oder **neues Bankkonto**aus.
 
-    ![Das Dropdownmenü, in dem die Optionen für neue Kreditkarten-und neue Bankkonten angezeigt werden.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![Das Dropdownmenü, in dem die Optionen für neue Kreditkarten-und neue Bankkonten angezeigt werden.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Geben Sie die Informationen für die neue Kreditkarte oder das Konto ein, und wählen Sie dann **Absenden**aus.
 
@@ -230,17 +230,17 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
     > [!NOTE]
     > Wenn ein anderer Administrator das Abonnement erworben hat, können Sie die Kreditkarten- oder Bankkontoinformationen dafür nicht aktualisieren. Wenn die Kreditkarte bald abläuft und der andere Administrator Sie nicht aktualisieren kann, können Sie eine Dienstunterbrechung verhindern, wenn Sie eine andere Kreditkarte oder ein neues Bankkonto für das Abonnement hinzufügen.
   
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder wählen Sie eine Zahlungsmethode aus**. Wählen Sie die Kreditkarte oder das Bankkonto aus, das Sie aktualisieren möchten, und wählen Sie dann **Details bearbeiten**aus.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Aktualisieren Sie Ihre Kreditkarten-oder Bankkontoinformationen (Name auf der Kreditkarte oder Bankverbindung, Rechnungsadresse. Telefonnummer oder Ablaufdatum) bei Bedarf, und wählen Sie dann über **Mitteln**.
 
 5. Eine Bestätigungsaufforderung wird angezeigt. Falls das nicht der Fall ist, lesen Sie [Behandeln von Problemen mit Kreditkarten und Bankkonten](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![Die Bestätigungsmeldung: "Ihre Zahlungsmethode wurde erfolgreich aktualisiert."](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![Die Bestätigungsmeldung: "Ihre Zahlungsmethode wurde erfolgreich aktualisiert."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -258,17 +258,17 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
     > [!NOTE]
     > Wenn ein anderer Administrator das Abonnement erworben hat, können Sie die Kreditkarten- oder Bankkontoinformationen dafür nicht aktualisieren. Wenn die Kreditkarte bald abläuft und der andere Administrator Sie nicht aktualisieren kann, können Sie eine Dienstunterbrechung verhindern, wenn Sie eine andere Kreditkarte oder ein neues Bankkonto für das Abonnement hinzufügen.
   
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder wählen Sie eine Zahlungsmethode aus**. Wählen Sie die Kreditkarte oder das Bankkonto aus, das Sie aktualisieren möchten, und wählen Sie dann **Details bearbeiten**aus.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Aktualisieren Sie Ihre Kreditkarten-oder Bankkontoinformationen (Name auf der Kreditkarte oder Bankverbindung, Rechnungsadresse. Telefonnummer oder Ablaufdatum) bei Bedarf, und wählen Sie dann über **Mitteln**.
 
 5. Eine Bestätigungsaufforderung wird angezeigt. Falls das nicht der Fall ist, lesen Sie [Behandeln von Problemen mit Kreditkarten und Bankkonten](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![Die Bestätigungsmeldung: "Ihre Zahlungsmethode wurde erfolgreich aktualisiert."](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![Die Bestätigungsmeldung: "Ihre Zahlungsmethode wurde erfolgreich aktualisiert."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -279,20 +279,20 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 
 2. Wählen Sie ein beliebiges Abonnement aus, und wählen Sie **Zahlungsdetails aktualisieren**aus.
 
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder wählen Sie eine Zahlungsmethode aus**.
 
 4. Wählen Sie die Kreditkarte oder das Bankkonto aus, und wählen Sie dann **Entfernen**aus.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 5. Wählen Sie erneut **Entfernen** aus, um die Kreditkarte oder das Bankkonto zu löschen.
 
-    ![Die Schaltflächen entfernen und Abbrechen.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![Die Schaltflächen entfernen und Abbrechen.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > Sie können eine Kreditkarte oder ein Bankkonto nicht entfernen, wenn Sie zurzeit für ein Abonnement bezahlt werden. Wenn Sie versuchen, wird eine Meldung wie die folgende angezeigt ![: die Fehlermeldung, die angezeigt wird, wenn Sie versuchen, eine Zahlungsmethode zu entfernen, die derzeit für die Bezahlung eines aktiven Abonnements verwendet wird.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > Sie können eine Kreditkarte oder ein Bankkonto nicht entfernen, wenn Sie zurzeit für ein Abonnement bezahlt werden. Wenn Sie versuchen, wird eine Meldung wie die folgende angezeigt ![: die Fehlermeldung, die angezeigt wird, wenn Sie versuchen, eine Zahlungsmethode zu entfernen, die derzeit für die Bezahlung eines aktiven Abonnements verwendet wird.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Um die Kreditkarte oder das Bankkonto zu entfernen, wählen Sie **zurück** aus, und führen Sie die Schritte in diesem Artikel aus, um die Kreditkarte oder das Bankkonto zu ändern, mit dem Sie das Abonnement bezahlen. Versuchen Sie dann erneut, die Kreditkarte oder das Bankkonto zu entfernen.
 
 ::: moniker-end
@@ -304,20 +304,20 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 
 2. Wählen Sie ein beliebiges Abonnement aus, und wählen Sie **Zahlungsdetails aktualisieren**aus.
 
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder wählen Sie eine Zahlungsmethode aus**.
 
 4. Wählen Sie die Kreditkarte oder das Bankkonto aus, und wählen Sie dann **Entfernen**aus.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
 
 5. Wählen Sie erneut **Entfernen** aus, um die Kreditkarte oder das Bankkonto zu löschen.
 
-    ![Die Schaltflächen entfernen und Abbrechen.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![Die Schaltflächen entfernen und Abbrechen.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > Sie können eine Kreditkarte oder ein Bankkonto nicht entfernen, wenn Sie zurzeit für ein Abonnement bezahlt werden. Wenn Sie versuchen, wird eine Meldung wie die folgende angezeigt ![: die Fehlermeldung, die angezeigt wird, wenn Sie versuchen, eine Zahlungsmethode zu entfernen, die derzeit für die Bezahlung eines aktiven Abonnements verwendet wird.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > Sie können eine Kreditkarte oder ein Bankkonto nicht entfernen, wenn Sie zurzeit für ein Abonnement bezahlt werden. Wenn Sie versuchen, wird eine Meldung wie die folgende angezeigt ![: die Fehlermeldung, die angezeigt wird, wenn Sie versuchen, eine Zahlungsmethode zu entfernen, die derzeit für die Bezahlung eines aktiven Abonnements verwendet wird.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Um die Kreditkarte oder das Bankkonto zu entfernen, wählen Sie **zurück** aus, und führen Sie die Schritte in diesem Artikel aus, um die Kreditkarte oder das Bankkonto zu ändern, mit dem Sie das Abonnement bezahlen. Versuchen Sie dann erneut, die Kreditkarte oder das Bankkonto zu entfernen.
 
 ::: moniker-end
@@ -329,11 +329,11 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 
 2. Wählen Sie das Abonnement aus, das Sie mit der neuen Kreditkarte oder dem Konto bezahlen möchten, und wählen Sie dann **Zahlungsdetails aktualisieren**aus.
 
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder wählen Sie eine Zahlungsmethode** aus, und wählen Sie die Kreditkarte oder das Bankkonto aus, das Sie verwenden möchten.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Wählen Sie **Submit** aus. Wenn die gewünschte Kreditkarte oder das Konto, das Sie verwenden möchten, noch nicht aufgeführt ist, wählen Sie **neue Kreditkarte** oder **neues Bankkonto** aus, um Sie hinzuzufügen.
 
@@ -346,11 +346,11 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 
 2. Wählen Sie das Abonnement aus, das Sie mit der neuen Kreditkarte oder dem Konto bezahlen möchten, und wählen Sie dann **Zahlungsdetails aktualisieren**aus.
 
-    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![Der Abschnitt Zahlungsmethode auf der Seite Abonnement, auf der der Link Zahlungsdetails aktualisieren angezeigt wird.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Wählen Sie den Dropdownpfeil unter **Hinzufügen oder wählen Sie eine Zahlungsmethode** aus, und wählen Sie die Kreditkarte oder das Bankkonto aus, das Sie verwenden möchten.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Wählen Sie **Submit** aus. Wenn die gewünschte Kreditkarte oder das Konto, das Sie verwenden möchten, noch nicht aufgeführt ist, wählen Sie **neue Kreditkarte** oder **neues Bankkonto** aus, um Sie hinzuzufügen.
 

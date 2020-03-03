@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Hier erfahren Sie, wie Sie Gebühren, Abrechnung und Zahlungsinformationen auf Ihrer Office 365 für Unternehmen Rechnung interpretieren und wie Sie die Bestellnummer ändern.
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242422"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354686"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Office 365 Business
 
@@ -37,11 +37,11 @@ Jeden Monat erhalten Sie eine e-Mail, die Ihnen mitteilt, dass Ihre neue Abrechn
   
 Ihre Rechnung enthält zwei Seiten. Seite 1 ist die Zusammenfassung der Rechnung und enthält allgemeine Informationen über die Rechnung, den Auftrag, den fälligen Betrag sowie dazu, wie Sie eine Zahlung vornehmen und wie Sie Kontakt zum Support aufnehmen können.
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 Seite 2 enthält Details zur Abrechnungsaktivität für jedes Abonnement.
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 Beschreibungen der Felder und Ausdrücke, die auf einer Rechnung enthalten sind, finden Sie unter [Glossar der Rechnungsfelder](#invoice-field-glossary) weiter unten in diesem Artikel.
   

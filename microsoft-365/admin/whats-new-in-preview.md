@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: ec8b03c9d43fb44ec80f245aeac9f05463033955
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cf5f24f21385832b151cf6ddd2337f18f5431a5d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243514"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355336"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -54,7 +54,7 @@ Wenn wir den dunklen Modus zum ersten Mal ausgeführt haben, war er nur auf der 
 
 Administratoren möchten steuern, wie Microsoft "What es New" für Ihre Benutzer in den Office-Apps kommuniziert – und Sie verfügen nun über diese Kontrolle. Wechseln Sie zu **Einstellungen** \> in **Office What es New Management Preview**. Wählen Sie ein Feature aus, um die Details anzuzeigen, und klicken Sie dann auf die Schaltfläche **von Benutzern ausblenden** , wenn Sie nicht möchten, dass Ihre Benutzer eine bestimmte Nachricht "What es New" anzeigen können. Beispielsweise kann es sein, dass Ihre Organisation darauf wartet, dass Benutzer über ein Feature informiert werden, bis alle Personen in Ihrer Organisation darauf geschult sind.
 
-![Bildschirmaufzeichnung von Office What es New Preview mit dem Detailbereich eines Features geöffnet.](media/whatsnew-officemgmt-preview.png)
+![Bildschirmaufzeichnung von Office What es New Preview mit dem Detailbereich eines Features geöffnet.](../media/whatsnew-officemgmt-preview.png)
 
 Dieses Feature wurde erstmals für die Vorschau im November veröffentlicht, aber es wurden einige Feature-Updates vorgestellt, die Sie kennen sollten: [Office What es New Management Preview Updates now available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
 
@@ -87,7 +87,7 @@ Wir kombinieren die Neuigkeiten von November und Dezember, da wir nach dem entz�
 
 Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditkarte zu einer Rechnung zu ändern. Wechseln Sie zu **Abrechnungs** \> **Produkte & Dienste**, wählen Sie ein Abonnement aus, und wählen Sie dann den Link **Bearbeiten** neben der Kreditkartenzahlung aus.
 
-![Screen Capture: Abrechnungs Abschnitt der Abonnementkarte mit einer Kreditkarte als Zahlungsmethode.](media/MAC-BillingEditCreditCard.png)
+![Screen Capture: Abrechnungs Abschnitt der Abonnementkarte mit einer Kreditkarte als Zahlungsmethode.](../media/MAC-BillingEditCreditCard.png)
 
 Möchten Sie mehr darüber erfahren? [Ändern von Kreditkarten-oder Bankkonten auf Rechnung](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
 
@@ -106,7 +106,7 @@ Wir würden uns freuen, Ihr Feedback über die globale Leserrolle und alle rolle
 ### <a name="new-settings-page"></a>Seite "neue Einstellungen"
 
 Das **Organisationsprofil**, die **Sicherheit & Datenschutz**und **Dienste & Add-ins-** Seiten wurden alle zu einer Seite mit drei vertikalen Registerkarten kombiniert. Und der beste Teil – von einem einzigen Standort aus können Sie nun nach allen Einstellungen suchen.
-![Screen Capture: Seite "Einstellungen", wobei das Feld "alle Einstellungen Durchsuchen" oben auf der Seite markiert ist.](media/MAC-SettingsMultiPivotSearch.png)
+![Screen Capture: Seite "Einstellungen", wobei das Feld "alle Einstellungen Durchsuchen" oben auf der Seite markiert ist.](../media/MAC-SettingsMultiPivotSearch.png)
 
 ### <a name="training--docs"></a>Schulungs &-Dokumente
 
@@ -141,7 +141,7 @@ Es wurden viele Änderungen für Rollen im Admin Center vorgenommen, seit wir im
 
 - **Rollen vergleichen** – wählen Sie bis zu 3 Rollen aus, um die Berechtigungen für jeden zu vergleichen. Auf diese Weise können Sie die am wenigsten freizügige Rolle finden, die Sie Benutzern zuweisen können. Wechseln Sie zu **Rollen**, verwenden Sie das Kontrollkästchen Mehrfachauswahl in der ersten Spalte, um bis zu drei Rollen auszuwählen, und wählen Sie dann **Rollen vergleichen**aus.
 
-    ![Vergleichen der Rollen "Exchange-Administrator", "Helpdesk-Administrator" und "Benutzer Administrator"](media/RBAC-CompareRoles.png)
+    ![Vergleichen der Rollen "Exchange-Administrator", "Helpdesk-Administrator" und "Benutzer Administrator"](../media/RBAC-CompareRoles.png)
 
 - **Favoriten** – Sie können Ihren bevorzugten oder am häufigsten verwendeten Rollen einen Stern hinzufügen, damit Sie diese leicht finden können, indem Sie die Spalte sortieren oder einen Filter erstellen.
 - **Aktive Benutzer** > **Rollen verwalten** – diese wurde so aktualisiert, dass Sie mit den Änderungen in den Rollen übereinstimmt. Wie bei der Rollenliste haben wir die Standardliste der Rollen auf den nützlichsten Bereich beschränkt, aber Sie können alle Rollen anzeigen, indem Sie **Alle anzeigen nach Kategorie**erweitern.
@@ -181,7 +181,7 @@ Wir haben Ihr Feedback laut und deutlich gelesen, und wir haben die Möglichkeit
 - Dateien: Speichern Sie Ihre OneDrive-Dateien, und geben Sie jemand anderen Zugriff.
 - Berechtigungen: Entfernen von Berechtigungen, wenn andere Benutzer Zugriff auf dieses Postfach hatten.
 - Aliase: Entfernen Sie e-Mail-Aliase, damit Sie für einen anderen Benutzer sofort verwendet werden können.
-![Bildschirmaufnahme: Assistenten zum Löschen von Benutzern mit e-Mail-Aliasen, Berechtigungen, OneDrive und e-Mail-Optionen angezeigt](media/WhatsNew-DeleteUserWiz.png)
+![Bildschirmaufnahme: Assistenten zum Löschen von Benutzern mit e-Mail-Aliasen, Berechtigungen, OneDrive und e-Mail-Optionen angezeigt](../media/WhatsNew-DeleteUserWiz.png)
 
 ### <a name="initial-setup"></a>Ersteinrichtung
 
@@ -217,7 +217,7 @@ Wenn Sie von einem Problem betroffen sind, das nicht auf Ihrem Service-Integrit�
 
 Das Nachrichtencenter wurde auf das neue Design aktualisiert, und es sieht fantastisch aus! 
 
-![Bildschirmaufnahme: aktualisiertes Nachrichtencenter mit ausgewählter Registerkarte ' alle aktiven Nachrichten ' und geöffnetes Filter Menü.](media/MAC-MessageCenterUpdated.png)
+![Bildschirmaufnahme: aktualisiertes Nachrichtencenter mit ausgewählter Registerkarte ' alle aktiven Nachrichten ' und geöffnetes Filter Menü.](../media/MAC-MessageCenterUpdated.png)
 
 - Sie können jetzt **Nachrichten nach Status**anzeigen. Wählen Sie einfach eine der Registerkarten aus: **alle aktiven Nachrichten**, **hohe Wichtigkeit**, **Ungelesene nach**richten und **abgewiesene Nachrichten**.
 - Sie können auch nach Kategoriedaten- **Datenschutz**filtern, **Änderungen planen**, **Probleme verhindern oder beheben**und **informierte** Nachrichtenkategorien bleiben.
@@ -268,7 +268,7 @@ Das Anzeigen des Admin Centers im dunklen Modus erfolgt in der Vorschau! Sie kö
 ### <a name="roles-management"></a>Rollenverwaltung
 
 Ende Juni begannen wir mit der Einführung neuer Methoden zum Verwalten von Administratorrollen. Wenn es für Sie verfügbar ist, wechseln Sie zu **Rollen** > **Rollen**. Bis dahin werfen Sie einen Blick-IT es awesome!
-<br> ![Bildschirmaufnahme: Administratorrollen Liste mit hervorgehobenem Detailbereich für Benutzer-admin-Rollen.](media/MAC-AdminRoles-Featured.png) <br>
+<br> ![Bildschirmaufnahme: Administratorrollen Liste mit hervorgehobenem Detailbereich für Benutzer-admin-Rollen.](../media/MAC-AdminRoles-Featured.png) <br>
 
 Dank dieser neuen Benutzeroberfläche können Sie einfacher erkennen, wer Administratorberechtigungen hat, und Rollen zuweisen, die Ihren Administratoren die richtige Zugriffsebene gewähren. Außerdem wurden von Azure AD weitere Rollen hinzugefügt, sodass Sie keine Zeit verschwenden, an mehreren Verwaltungszentren teilhaben zu müssen.
 Was können Sie sonst noch tun?
@@ -305,7 +305,7 @@ Die Dinge sehen für das Admin Center gut aus. Wir haben Ihr Feedback und ihre V
 ### <a name="featured-feature---add-users"></a>Featured Feature – hinzufügen von Benutzern
 
 Für April haben wir den Assistenten zum **Hinzufügen von Benutzern** , der Sie durchläuft... warten Sie... Hinzufügen von Benutzern. Es ist ein Schritt-für-Schritt, um die grundlegenden Informationen des Benutzers wie e-Mail und Anzeigenamen hinzuzufügen, eine Lizenz und eine Rolle zuzuweisen, Ihre Kontaktinformationen hinzuzufügen und dann das Konto des Benutzers zu überprüfen, bevor Sie einen Commit ausführen. **Warum haben wir diese Änderung vorgenommen?** Wir haben Ihr Feedback gehört, dass Sie den fast unendlichen Bildlauf nicht gemocht haben, um Benutzer in der vorherigen Umgebung hinzuzufügen.
-<br> ![Bildschirmausschnitt des Assistenten zum Hinzufügen von Benutzern.](media/MAC-AddUserWizard.png) <br>
+<br> ![Bildschirmausschnitt des Assistenten zum Hinzufügen von Benutzern.](../media/MAC-AddUserWizard.png) <br>
 
 Es gibt zwei Möglichkeiten, Sie zu überprüfen: <br>
 
@@ -334,7 +334,7 @@ Wir haben einige weitere Änderungen an der **Benutzerverwaltung**vorgenommen, h
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>März 2019-wir haben das Admin Center offiziell veröffentlicht!
 
 Nun, wenn Sie die aufregenden Neuigkeiten verpasst haben, veröffentlichen wir offiziell das neue und verbesserte Microsoft 365 Admin Center! Hier ist der Blogbeitrag, in dem wir es angekündigt haben: [das neue Microsoft 365 Admin Center, das heute verfügbar](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/The-new-Microsoft-365-admin-center-available-today/ba-p/377870)ist. Für März verlassen wir uns auf den Blogbeitrag für Sie, um die Features veröffentlicht-Plus, können Sie auch den Beitrag für die Funktionen, die in naher Zukunft veröffentlicht werden, was wir nicht in Kerninhalten tun dürfen, zu lesen.
-<br> ![Bildschirmaufnahme der Startseite des Microsoft 365 Admin Center.](media/M365AC-HomePage.png) <br>
+<br> ![Bildschirmaufnahme der Startseite des Microsoft 365 Admin Center.](../media/M365AC-HomePage.png) <br>
 Wir haben eine Änderung am Bereich **Abrechnungs & Abonnements** , den wir erwähnen möchten. Ich meine, Ihr habt nicht gedacht, dass wir mit der Verbesserung fertig sind, oder? Weil wir es nicht sind! In diesem Monat haben wir hinzugefügt, dass Sie Ihre Partnerbeziehungen mit **Abrechnungs** > **Konten**verwalten können. Von hier aus können Sie Ihre Partnerbeziehungen über Berater, CSP und indirekte Händler hinweg überprüfen. Sie können auch neue Partner Beziehungs Anforderungen akzeptieren, einschließlich Delegierter Administratorberechtigungen.
 
 Ihr Feedback ist wie immer wichtig für uns, also halten Sie es auf dem neuesten Stand. Auf einer beliebigen Seite im Admin Center können Sie Feedback geben, indem Sie unten rechts **Feedback geben** auswählen, neben **benötigen Sie Hilfe?**
@@ -375,27 +375,27 @@ Check it out: **Benutzer > aktive Benutzer >** **Benutzer > Lizenzen und apps be
 
 ## <a name="november-2018"></a>November 2018
 
-- Das Suchfeld ist wieder da! Und wir haben ihn leicht verschoben. Sie befindet sich immer noch oben auf der Startseite, befindet sich aber jetzt auf der rechten Seite neben der Schaltfläche " **Karte hinzufügen** ". <br> ![Bildschirmaufnahme mit dem Hinweis, dass sich das Suchfeld in der oberen rechten Ecke der Startseite befindet.](media/M365PreviewSearchBox.png)
+- Das Suchfeld ist wieder da! Und wir haben ihn leicht verschoben. Sie befindet sich immer noch oben auf der Startseite, befindet sich aber jetzt auf der rechten Seite neben der Schaltfläche " **Karte hinzufügen** ". <br> ![Bildschirmaufnahme mit dem Hinweis, dass sich das Suchfeld in der oberen rechten Ecke der Startseite befindet.](../media/M365PreviewSearchBox.png)
 
 - Wir haben Karten für das Dashboard hinzugefügt. Wechseln Sie einfach zum Admin Center, und wählen Sie **Karte hinzufügen** aus, um die neuen Karten anzuzeigen:
   - **Office 365 Active Users Report** – überwachen Sie die Verwendung der Office 365 Dienste, die Sie erworben haben.
   - **Office 365 Software** – installieren oder bereitstellen Office 365 ProPlus-Software und sehen, wie viele lizenzierte Benutzer Sie aktiviert haben.
   - **Azure Active Directory** -ermöglicht den schnellen Zugriff auf häufige Azure AD Aufgaben wie das selbsttätige Zurücksetzen von Kennwörtern, das Anpassen der Anmeldung und das Hinzufügen von apps.
-- Die schnell Aufgabe **Benutzer exportieren** wurde der Befehlsleiste auf der Seite aktive Benutzer hinzugefügt. ![Bildschirmaufnahme mit Export Benutzern auf der Befehlsleiste neben Aktualisierung.](media/M365PreviewExportUsersQT.png)
-- Purchase Services bietet zusätzliche Verbesserungen für November. Und Sie sind alle gut! Um dorthin zu gelangen, gehen Sie zu Billing > Purchase Services. <br>![Bildschirmaufnahme mit der Seite "Kauf Dienste" mit 3 neuen Verbesserungen](media/M365PreviewBillingPurchasServices.png)
+- Die schnell Aufgabe **Benutzer exportieren** wurde der Befehlsleiste auf der Seite aktive Benutzer hinzugefügt. ![Bildschirmaufnahme mit Export Benutzern auf der Befehlsleiste neben Aktualisierung.](../media/M365PreviewExportUsersQT.png)
+- Purchase Services bietet zusätzliche Verbesserungen für November. Und Sie sind alle gut! Um dorthin zu gelangen, gehen Sie zu Billing > Purchase Services. <br>![Bildschirmaufnahme mit der Seite "Kauf Dienste" mit 3 neuen Verbesserungen](../media/M365PreviewBillingPurchasServices.png)
   > 1.  Oben auf der Seite können Sie zwischen Geschäfts-und Bildungsplänen pivotieren. Das hilft Ihnen bei der Suche nach dem, was Sie suchen.
   > 2.  Wir haben ein Suchfeld hinzugefügt, damit Sie nicht endlos scrollen müssen, um zu finden, wonach Sie suchen.
   > 3.  Schließlich haben wir die Pläne, die Sie in Abschnitte einkaufen können, logisch sortiert, die Sie erweitern und reduzieren können. Sie müssen keine der **Office-Apps und-Dienste**kaufen? Reduzieren Sie diesen Abschnitt, und konzentrieren Sie sich auf Microsoft 365-Pläne.
 
 ## <a name="october-2018"></a>Oktober 2018
 
-- Es gibt eine neue Möglichkeit, Abonnements im Microsoft 365 Admin Center zu kaufen. Wechseln Sie zu " **Dienste erwerben** ", um die vollständig neu gestaltete Einkaufserfahrung zu sehen, die das suchen, Vergleichen von Plänen und andere großartige neue Features erleichtert, mit denen das erwerben eines Abonnements erleichtert werden kann. <br/>![Kauf Dienstplan Vergleich im Microsoft 365 Admin Center Preview](media/0ad5acf1-8ffc-44bf-aac2-c21269910e65.png)
+- Es gibt eine neue Möglichkeit, Abonnements im Microsoft 365 Admin Center zu kaufen. Wechseln Sie zu " **Dienste erwerben** ", um die vollständig neu gestaltete Einkaufserfahrung zu sehen, die das suchen, Vergleichen von Plänen und andere großartige neue Features erleichtert, mit denen das erwerben eines Abonnements erleichtert werden kann. <br/>![Kauf Dienstplan Vergleich im Microsoft 365 Admin Center Preview](../media/0ad5acf1-8ffc-44bf-aac2-c21269910e65.png)
 
-- Die Seite **Dienste und Add-ins** wurde auf das neue Aussehen und Verhalten aktualisiert, aber alles andere funktioniert genau so. Natürlich sollten Sie die Befehlsleiste Auschecken, um zu sehen, was Sie tun können, wie das Filtern und Ändern der Liste in die Kompaktansicht. Wechseln Sie im Navigationsbereich zu **Einstellungen** \> **Dienste &amp; -Add-ins** , um es zu überprüfen. <br/>![Seite "Einstellungen und Add-Ins" in der Microsoft 365 Admin Center-Vorschau](media/af9a3ed3-bfe6-438b-b4b5-2ca4164f8e3f.png)
+- Die Seite **Dienste und Add-ins** wurde auf das neue Aussehen und Verhalten aktualisiert, aber alles andere funktioniert genau so. Natürlich sollten Sie die Befehlsleiste Auschecken, um zu sehen, was Sie tun können, wie das Filtern und Ändern der Liste in die Kompaktansicht. Wechseln Sie im Navigationsbereich zu **Einstellungen** \> **Dienste &amp; -Add-ins** , um es zu überprüfen. <br/>![Seite "Einstellungen und Add-Ins" in der Microsoft 365 Admin Center-Vorschau](../media/af9a3ed3-bfe6-438b-b4b5-2ca4164f8e3f.png)
 
 ## <a name="september-2018"></a>September 2018
 
-- **Hauptverbesserungen** Die Homepage wurde vollständig neu ausgeführt und wir können nicht warten, bis Sie Sie ausprobieren und sehen, was Sie denken. Dies ist Ihre persönliche Startseite, und Sie wirken sich nicht auf die Homepages anderer Administratoren in Ihrer Organisation aus. <br/>![Bildschirmaufnahme: Microsoft 365 Admin Center Preview-Startseite.](media/d1a497f1-30e6-4c1a-9bb2-d4d7895906da.png)
+- **Hauptverbesserungen** Die Homepage wurde vollständig neu ausgeführt und wir können nicht warten, bis Sie Sie ausprobieren und sehen, was Sie denken. Dies ist Ihre persönliche Startseite, und Sie wirken sich nicht auf die Homepages anderer Administratoren in Ihrer Organisation aus. <br/>![Bildschirmaufnahme: Microsoft 365 Admin Center Preview-Startseite.](../media/d1a497f1-30e6-4c1a-9bb2-d4d7895906da.png)
 
   - Sie können auf der Startseite Karten für Homepages hinzufügen, entfernen und bewegen. Wählen Sie **+ Add Card** in der oberen rechten Ecke aus, um zu sehen, welche Karten in der Kartenbibliothek verfügbar sind, und ziehen Sie Sie dann an eine beliebige Stelle auf der Startseite. Gefällt es Ihnen nicht, wo es landete? Ziehen Sie es an die gewünschte Position. Sie müssen nicht einmal mehr sparen.
 
@@ -403,22 +403,22 @@ Check it out: **Benutzer > aktive Benutzer >** **Benutzer > Lizenzen und apps be
 
   - Die meisten der Karten sind informativ und umsetzbare, was bedeutet, dass Sie mit Just-in-Time-Informationen zur Verfügung gestellt werden, damit Sie Ihre täglichen Aufgaben schneller und intelligenter erledigen können.
 
-  - Der Navigationsbereich wurde neu organisiert, und Sie können ihn für Ihre schnell ausgeführten Aufgaben anpassen. Klicken Sie einfach im unteren Bereich des Navigationsbereichs auf **Bearbeiten** , um das Customizing zu starten. <br/>![Microsoft 365 Admin Center Vorschau-Navigationsbereich](media/7d5568cc-9ce8-40b2-aa87-e777fcd455e3.png)
+  - Der Navigationsbereich wurde neu organisiert, und Sie können ihn für Ihre schnell ausgeführten Aufgaben anpassen. Klicken Sie einfach im unteren Bereich des Navigationsbereichs auf **Bearbeiten** , um das Customizing zu starten. <br/>![Microsoft 365 Admin Center Vorschau-Navigationsbereich](../media/7d5568cc-9ce8-40b2-aa87-e777fcd455e3.png)
 
 - **Abrechnung** Im Abschnitt "Abrechnung" werden Sie wahrscheinlich einige der größten Änderungen am Microsoft 365 Admin Center bemerken. Sie können Abonnements und apps, die Sie von Microsoft oder einem anderen Anbieter erworben haben, verwalten, einschließlich neuer Erfahrungen für die Bestandsverwaltung, Bestellhistorie, Zahlungsmethoden und Fakturierung.
 
-  - Die Abonnementverwaltung wurde neu gestaltet, sodass Sie eine neue Erfahrung mit der Bestandsverwaltung für weitere Produkttypen wie apps, Software und Add-Ins erhalten. Es heißt jetzt **Produkte &amp; -Dienste** , um die Unterstützung für neue Produkttypen besser widerzuspiegeln, die hinzugefügt werden. Sie können nun eine Karten-oder Tabellenansicht der Produkte und Dienste auswählen, und Sie können suchen und Filtern, um schnell zu finden, wonach Sie suchen. <br/>![Produkte und Dienste in der Microsoft 365 Admin Center-Vorschau](media/f1bba7dc-2034-4a53-b4ad-b7fbef3fb442.png)
+  - Die Abonnementverwaltung wurde neu gestaltet, sodass Sie eine neue Erfahrung mit der Bestandsverwaltung für weitere Produkttypen wie apps, Software und Add-Ins erhalten. Es heißt jetzt **Produkte &amp; -Dienste** , um die Unterstützung für neue Produkttypen besser widerzuspiegeln, die hinzugefügt werden. Sie können nun eine Karten-oder Tabellenansicht der Produkte und Dienste auswählen, und Sie können suchen und Filtern, um schnell zu finden, wonach Sie suchen. <br/>![Produkte und Dienste in der Microsoft 365 Admin Center-Vorschau](../media/f1bba7dc-2034-4a53-b4ad-b7fbef3fb442.png)
 
-  - Es ist jetzt einfacher als je zuvor, Ihren Benutzern eine Produktlizenz zuzuweisen. Wählen Sie Ihr erworbenes Produkt aus, und dann können Sie das Produkt zuweisen. Sie können auch sehen, welchen Benutzern bereits ein bestimmtes Produkt zugewiesen wurde. <br/>![Produkt Details aus der Abrechnung im Microsoft 365 Admin Center Preview](media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
+  - Es ist jetzt einfacher als je zuvor, Ihren Benutzern eine Produktlizenz zuzuweisen. Wählen Sie Ihr erworbenes Produkt aus, und dann können Sie das Produkt zuweisen. Sie können auch sehen, welchen Benutzern bereits ein bestimmtes Produkt zugewiesen wurde. <br/>![Produkt Details aus der Abrechnung im Microsoft 365 Admin Center Preview](../media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
 
   - **Switch-Pläne** werden jetzt als * * Upgrades * * bezeichnet und schließlich werden die Abonnement Upgrades hinter den Kulissen ausgeführt, damit Sie das Upgrade nicht abschließen müssen. Schließlich gibt es keine Lizenzbeschränkung mehr für Upgrades.
 
 - **Benutzerverwaltung** Wir haben viele Änderungen an der Benutzerverwaltung vorgenommen, damit Sie Ihre Arbeit schneller erledigen können. Wir haben die Seite * * Active Users * * und den Detailbereich des Benutzers aktualisiert. Hier einige der beeindruckendsten Änderungen:
 
-  - Die Seite **aktive Benutzer** enthält ein neues Design und ein neues Layout. Gefällt mir nicht, wie die Liste aussieht? Wählen Sie **Ansicht ändern** (neben **Filter**) aus, und Sie können die Liste von **normaler Liste** in **kompakte Liste**ändern. Die kompakte Liste ist besonders hilfreich, wenn Sie viele Benutzer in Ihrer Organisation haben. <br/>![Seite "aktive Benutzer" in der Vorschau](media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
+  - Die Seite **aktive Benutzer** enthält ein neues Design und ein neues Layout. Gefällt mir nicht, wie die Liste aussieht? Wählen Sie **Ansicht ändern** (neben **Filter**) aus, und Sie können die Liste von **normaler Liste** in **kompakte Liste**ändern. Die kompakte Liste ist besonders hilfreich, wenn Sie viele Benutzer in Ihrer Organisation haben. <br/>![Seite "aktive Benutzer" in der Vorschau](../media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
 
-  - Die Befehlsleiste (Where **Search** Lives) ist dynamisch, und die Liste der Aktionen ändert sich in Abhängigkeit von der Anzahl der ausgewählten Benutzer: keine Benutzer, ein Benutzer oder mehrere Benutzer. Außerdem sehen Sie, wie viele Benutzer Sie neben **Suchen**ausgewählt haben. <br/>![Microsoft 365-Befehlsleiste für aktive Benutzer Vorschau.](media/9576bd19-31a5-4e59-a8dd-0663a833def0.png)
+  - Die Befehlsleiste (Where **Search** Lives) ist dynamisch, und die Liste der Aktionen ändert sich in Abhängigkeit von der Anzahl der ausgewählten Benutzer: keine Benutzer, ein Benutzer oder mehrere Benutzer. Außerdem sehen Sie, wie viele Benutzer Sie neben **Suchen**ausgewählt haben. <br/>![Microsoft 365-Befehlsleiste für aktive Benutzer Vorschau.](../media/9576bd19-31a5-4e59-a8dd-0663a833def0.png)
 
   - Sie können schnelle Aufgaben wie das Zurücksetzen von Kennwörtern für einzelne oder mehrere Benutzer direkt in der Listenansicht ausführen.
 
-  - Die Details und Einstellungen des Benutzers werden nun von den folgenden Registerkarten organisiert: **Konto**, **Geräte**, **Lizenzen**, **apps**, **e-Mail**und **OneDrive**. Zuvor befanden sich viele dieser Einstellungen auf mehreren Bildschirmen. <br/>![Benutzerdetail Bereich in der Admin Center-Vorschau.](media/60c6b9d3-d62f-4b8d-97db-41ff247b1bf0.png)<br/>
+  - Die Details und Einstellungen des Benutzers werden nun von den folgenden Registerkarten organisiert: **Konto**, **Geräte**, **Lizenzen**, **apps**, **e-Mail**und **OneDrive**. Zuvor befanden sich viele dieser Einstellungen auf mehreren Bildschirmen. <br/>![Benutzerdetail Bereich in der Admin Center-Vorschau.](../media/60c6b9d3-d62f-4b8d-97db-41ff247b1bf0.png)<br/>

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Erfahren Sie, wie Sie Ihr Office 365 für Unternehmen Abonnement mit einem Product Key erneuern und die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
-ms.openlocfilehash: f9b80fa6cc28edbea955575016824532239ec2f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254372"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354576"
 ---
 # <a name="renew-office-365-for-business"></a>Verlängern Ihres Office 365 Business-Abonnements
 
@@ -80,7 +80,7 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
  
 3. Um die **wiederkehrende Abrechnung**zu aktivieren, schalten Sie die Umschaltfläche **auf ein ein**.
 
-    ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     Sie können die **wiederkehrende Abrechnung** deaktivieren, indem Sie die Umschaltfläche auf **aus**schalten.
 
@@ -103,7 +103,7 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
  
 3. Um die **wiederkehrende Abrechnung**zu aktivieren, schalten Sie die Umschaltfläche **auf ein ein**.
 
-    ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     Sie können die **wiederkehrende Abrechnung** deaktivieren, indem Sie die Umschaltfläche auf **aus**schalten.
 

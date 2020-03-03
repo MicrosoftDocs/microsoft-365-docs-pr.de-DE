@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Office 365 Berichten erhalten.
-ms.openlocfilehash: 1b337c7e6d7668c708bdd93185e8d0b034a29981
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 872cde92ccd66f4de5199a5035eaaa83b79f0cc0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241844"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353656"
 ---
 # <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Office 365 von Berichten im Admin Center – Microsoft Teams-Geräteverwendung
 
@@ -45,7 +45,7 @@ Im Office 365 **Berichte**-Dashboard finden Sie eine Übersicht über die Aktivi
 
 Die Microsoft Teams-App-Verwendung wird in den Diagrammen **Benutzer** und **Verteilung** grafisch dargestellt. 
   
-![Office 365 reports - Microsoft Teams app usage](../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|
@@ -54,9 +54,9 @@ Die Microsoft Teams-App-Verwendung wird in den Diagrammen **Benutzer** und **Ver
 |3.  <br/> |In der Ansicht **Benutzer** wird die tägliche Anzahl der eindeutigen Benutzer nach App angezeigt.  <br/> |
 |4.  <br/> |In der Ansicht **Verteilung** wird die Anzahl der eindeutigen Benutzer im ausgewählten Zeitraum nach App angezeigt.  <br/> |
 |5.  <br/> | Im Diagramm **Benutzer** stellt die Y-Achse die Anzahl der Benutzer pro App dar.  <br/>  Im Diagramm **Verteilung** stellt die Y-Achse die Anzahl der Benutzer der angegebenen App dar.  <br/>  Die X-Achse stellt in den Diagrammen den ausgewählten Datumsbereich für den jeweiligen Bericht dar.  <br/> |
-|6.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Benutzer** die Option **Windows**, **Mac**, **Anrufe**, **Internet**, **Android Phone**oder **Windows Phone** aus, um nur die zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> ![Sie können Microsoft Teams-App-Verwendungs Diagramme filtern, indem Sie den App-Typ auswählen.](../media/64ee1cb1-ca80-4964-8234-7fc671135c3d.png)|
+|6.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Benutzer** die Option **Windows**, **Mac**, **Anrufe**, **Internet**, **Android Phone**oder **Windows Phone** aus, um nur die zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> ![Sie können Microsoft Teams-App-Verwendungs Diagramme filtern, indem Sie den App-Typ auswählen.](../../media/64ee1cb1-ca80-4964-8234-7fc671135c3d.png)|
 |7.  <br/> | Die Liste der angezeigten Gruppen wird von der Anzahl aller Gruppen bestimmt, die über den längsten Berichtszeitraum (180 Tage) vorhanden waren (nicht gelöscht wurden). Die Anzahl der Aktivitäten variiert entsprechend der Datumsauswahl.  <br/> HINWEIS: Möglicherweise werden nicht alle Elemente in der nachstehenden Liste in den Spalten angezeigt, solange Sie diese nicht hinzugefügt haben.<br/> **Benutzername** ist die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren.  <br/> **Datum der letzten Aktivität (UTC)** bezieht sich auf das letzte Datum, an dem der Benutzer an einer Microsoft Teams-Aktivität in einer App teilgenommen hat.  <br/> **Gelöscht** gibt an, ob das Team gelöscht wurde. Wenn das Team gelöscht wurde, im Berichtszeitraum jedoch Aktivitäten ausgeführt wurden, wird es im Raster angezeigt, und die Gelöscht-Kennzeichnung ist auf TRUE festgelegt.  <br/> **Gelöscht am** ist das Datum, an dem das Team gelöscht wurde.  <br/> **Windows** ist ausgewählt, wenn der Benutzer während des angegebenen Zeitraums in der Windows-App aktiv war.  <br/> **Mac** ist ausgewählt, wenn der Benutzer während des angegebenen Zeitraums in einer Mac-App aktiv war.  <br/> **Web** ist ausgewählt, wenn der Benutzer während des angegebenen Zeitraums in einer Web-App aktiv war.  <br/> **iOS** ist ausgewählt, wenn der Benutzer während des angegebenen Zeitraums in einer iOS-App aktiv war.  <br/> **Android-Smartphone** ist ausgewählt, wenn der Benutzer während des angegebenen Zeitraums an einem Android-Smartphone aktiv war.  <br/> **Windows Phone** ist ausgewählt, wenn der Benutzer während des angegebenen Zeitraums an einem Windows Phone aktiv war.  <br/>  Wenn die Richtlinien Ihrer Organisation eine Anzeige von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt zum **Ausblenden von Details auf Benutzerebene** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
-|8.  <br/> |Wählen Sie **Spalten** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Teams uapp usage report - choose columns](../media/333f3077-696d-4829-b0a7-1046b3822222.png)|
+|8.  <br/> |Wählen Sie **Spalten** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Teams uapp usage report - choose columns](../../media/333f3077-696d-4829-b0a7-1046b3822222.png)|
 |9.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |||
    

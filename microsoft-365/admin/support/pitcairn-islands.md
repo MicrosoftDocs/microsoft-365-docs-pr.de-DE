@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 778cf24c76d00c02343f6b5f919bcbf1976f8de1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d910263bd7c6d5677baddf9c2de94d3cc907013d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244419"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356906"
 ---
 # <a name="contact-support-for-pitcairn-islands"></a>Kontaktieren des Supports für Pitcairn-Inseln
 

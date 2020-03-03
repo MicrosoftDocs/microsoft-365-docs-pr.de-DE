@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Erfahren Sie, wie Sie Ihr Testabonnement oder Ihr bezahltes Abonnement von Office 365 Business oder Microsoft 365 kündigen können.
-ms.openlocfilehash: d3590f224757265af3107566023413d276443c46
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-ms.translationtype: HT
+ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241898"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354596"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -64,7 +64,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 3. Wählen Sie im Menü **Weitere Aktionen** die Option **Abonnement kündigen** aus.
 
-    ![Nahansicht des Menüs "Weitere Aktionen".](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Nahansicht des Menüs "Weitere Aktionen".](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
 
@@ -80,7 +80,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 3. Wählen Sie im Menü **Weitere Aktionen** die Option **Abonnement kündigen** aus.
 
-    ![Nahansicht des Menüs "Weitere Aktionen".](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Nahansicht des Menüs "Weitere Aktionen".](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
 

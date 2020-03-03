@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Erhalten Sie einen Überblick darüber, wie Ihre Organisation Microsoft 365-Dienste zur Kommunikation und Zusammenarbeit einnimmt.
-ms.openlocfilehash: ce55d8374c4fd927914ae3fb63edbdf1f7df4089
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253530"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355276"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
 ---
@@ -49,7 +49,7 @@ Die Kurzfassung bietet auf einen Blick eine übergeordnete Ansicht der Berichte 
 
 In dieser Kurzfassung können Sie schnell Nutzungsmuster in Office erkennen und verstehen, wie und wo Ihre Mitarbeiter zusammenarbeiten.
 
-![Abbildung der Zusammenfassung von Microsoft 365 Usage Executive.](../media/office365usage-exec-summary.png)
+![Abbildung der Zusammenfassung von Microsoft 365 Usage Executive.](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>Übersicht
 

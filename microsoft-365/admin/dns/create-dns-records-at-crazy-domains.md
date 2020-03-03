@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste in Crazy Domains für Office 365 einrichten.
-ms.openlocfilehash: 5b344ebdc4a4608c27c0a84299ea171391c09ba0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 157c33a52403efbefe673bf11465de525ffb4f33
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244162"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351156"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-office-365"></a>Erstellen von DNS-Einträgen für Office 365 bei Crazy Domains
 
@@ -50,31 +50,31 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://manage.crazydomains.com/members/domains/) zu Ihrer Domänenseite bei Crazy Domains. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    ![CrazyDomains-BP-configure-1-1](../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
+    ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
 2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
     
-    ![CrazyDomains-BP-configure-1-2](../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
+    ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
 3. Wählen Sie auf der Seite **Domänennamen** im Abschnitt **Domäne** den Namen der Domäne aus, die Sie aktualisieren möchten. 
     
-    ![CrazyDomains-BP-configure-1-3](../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
+    ![CrazyDomains-BP-configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
 4. Wählen Sie im Abschnitt **DNS-Einstellungen** das Dropdownlisten-Symbol aus. 
     
-    ![CrazyDomains-BP-configure-1-4-1](../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
+    ![CrazyDomains-BP-configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
 5. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
-    ![CrazyDomains-BP-configure-1-4-2](../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
+    ![CrazyDomains-BP-configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
 6. Wählen Sie in der Dropdownliste **Add Record** den Eintrag **TXT Record** aus. 
     
-    ![CrazyDomains-BP-Verify-1-1](../media/f0ffdefb-d7a5-47df-bb5e-bf8a3bcc9b01.png)
+    ![CrazyDomains-BP-Verify-1-1](../../media/f0ffdefb-d7a5-47df-bb5e-bf8a3bcc9b01.png)
   
 7. Klicken Sie auf **Hinzufügen**.
     
-    ![CrazyDomains-BP-Verify-1-2](../media/b0cd623a-67f7-4bae-a5b5-507f5a106123.png)
+    ![CrazyDomains-BP-Verify-1-2](../../media/b0cd623a-67f7-4bae-a5b5-507f5a106123.png)
   
 8. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -82,11 +82,11 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
     |:-----|:-----|
     |(Dieses Feld leer lassen.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![CrazyDomains-BP-Verify-1-3](../media/3867de97-6a98-4475-9bda-470bac75d483.png)
+    ![CrazyDomains-BP-Verify-1-3](../../media/3867de97-6a98-4475-9bda-470bac75d483.png)
   
 9. Wählen Sie **Aktualisieren** aus.
     
-    ![CrazyDomains-BP-Verify-1-4](../media/0e416df6-b7a2-4dd7-971c-f1cc31df30da.png)
+    ![CrazyDomains-BP-Verify-1-4](../../media/0e416df6-b7a2-4dd7-971c-f1cc31df30da.png)
   
 10. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -117,31 +117,31 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://manage.crazydomains.com/members/domains/) zu Ihrer Domänenseite bei Crazy Domains. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    ![CrazyDomains-BP-configure-1-1](../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
+    ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
 2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
     
-    ![CrazyDomains-BP-configure-1-2](../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
+    ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
 3. Wählen Sie auf der Seite **Domänennamen** im Abschnitt **Domäne** den Namen der Domäne aus, die Sie aktualisieren möchten. 
     
-    ![CrazyDomains-BP-configure-1-3](../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
+    ![CrazyDomains-BP-configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
 4. Wählen Sie im Abschnitt **DNS-Einstellungen** das Dropdownlisten-Symbol aus. 
     
-    ![CrazyDomains-BP-configure-1-4-1](../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
+    ![CrazyDomains-BP-configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
 5. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
-    ![CrazyDomains-BP-configure-1-4-2](../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
+    ![CrazyDomains-BP-configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
 6. Wählen Sie in der Dropdownliste **Add Record:** den Eintrag **MX Record** aus. 
     
-    ![CrazyDomains-BP-configure-2-1](../media/63f7ab77-e686-4e7b-a3a2-1ac28a02d5f3.png)
+    ![CrazyDomains-BP-configure-2-1](../../media/63f7ab77-e686-4e7b-a3a2-1ac28a02d5f3.png)
   
 7. Klicken Sie auf **Hinzufügen**.
     
-    ![CrazyDomains-BP-configure-2-2](../media/a60680a1-2513-498c-b42f-8ffa575ee48e.png)
+    ![CrazyDomains-BP-configure-2-2](../../media/a60680a1-2513-498c-b42f-8ffa575ee48e.png)
   
 8. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -151,23 +151,23 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |:-----|:-----|:-----|
     |(Dieses Feld leer lassen.)  <br/> |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * aus Ihrem Office 365-Konto ab.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
        
-   ![CrazyDomains-BP-configure-2-3](../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
+   ![CrazyDomains-BP-configure-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
 9. Wählen Sie **Aktualisieren** aus.
     
-    ![CrazyDomains-BP-configure-2-4](../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
+    ![CrazyDomains-BP-configure-2-4](../../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
   
 10. Wenn im Abschnitt **MX Record** andere MX-Einträge aufgeführt sind, wählen Sie für einen dieser Einträge die Option **Modify** aus. 
     
-    ![CrazyDomains-BP-configure-2-5](../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
+    ![CrazyDomains-BP-configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
 11. Wählen Sie **Löschen**aus.
     
-    ![CrazyDomains-BP-configure-2-6](../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
+    ![CrazyDomains-BP-configure-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   
 12. Wählen Sie **Aktualisieren** aus, um den Löschvorgang zu bestätigen. 
     
-    ![CrazyDomains-BP-configure-2-7](../media/db751bfe-31c2-4632-a491-6893eda38a51.png)
+    ![CrazyDomains-BP-configure-2-7](../../media/db751bfe-31c2-4632-a491-6893eda38a51.png)
   
 13. Wiederholen Sie diesen Vorgang, um alle anderen MX-Einträge aus der Liste zu entfernen, bis nur noch der Eintrag übrig ist, den Sie zuvor in diesem Verfahren hinzugefügt haben.
     
@@ -176,31 +176,31 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://manage.crazydomains.com/members/domains/) zu Ihrer Domänenseite bei Crazy Domains. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    ![CrazyDomains-BP-configure-1-1](../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
+    ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
 2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
     
-    ![CrazyDomains-BP-configure-1-2](../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
+    ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
 3. Wählen Sie auf der Seite **Domänennamen** im Abschnitt **Domäne** den Namen der Domäne aus, die Sie aktualisieren möchten. 
     
-    ![CrazyDomains-BP-configure-1-3](../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
+    ![CrazyDomains-BP-configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
 4. Wählen Sie im Abschnitt **DNS-Einstellungen** das Dropdownlisten-Symbol aus. 
     
-    ![CrazyDomains-BP-configure-1-4-1](../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
+    ![CrazyDomains-BP-configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
 5. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
-    ![CrazyDomains-BP-configure-1-4-2](../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
+    ![CrazyDomains-BP-configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
 6. Wählen Sie in der Dropdownliste **Add Record** den Eintrag **CNAME Record** aus. 
     
-    ![CrazyDomains-BP-configure-3-1](../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
+    ![CrazyDomains-BP-configure-3-1](../../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
   
 7. Klicken Sie auf **Hinzufügen**.
     
-    ![CrazyDomains-BP-configure-3-2](../media/4c5929cf-1c21-4af9-899b-e36091f0f14d.png)
+    ![CrazyDomains-BP-configure-3-2](../../media/4c5929cf-1c21-4af9-899b-e36091f0f14d.png)
   
 8. Fügen Sie den ersten der sechs CNAME-Einträge hinzu.
     
@@ -214,11 +214,11 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![CrazyDomains-BP-configure-3-3](../media/81a7b837-3f4d-4565-89a9-380e4d318acf.png)
+    ![CrazyDomains-BP-configure-3-3](../../media/81a7b837-3f4d-4565-89a9-380e4d318acf.png)
   
 9. Wählen Sie **CNAME-Eintrag hinzufügen**aus.
     
-    ![CrazyDomains-BP-configure-3-4](../media/9bcba729-7085-4ebc-8183-ecde82f5c364.png)
+    ![CrazyDomains-BP-configure-3-4](../../media/9bcba729-7085-4ebc-8183-ecde82f5c364.png)
   
 10. Fügen Sie den zweiten CNAME-Eintrag hinzu.
     
@@ -228,41 +228,41 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
 11. Wählen Sie **Aktualisieren** aus, um die Änderungen zu speichern. 
     
-    ![CrazyDomains-BP-configure-3-5](../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
+    ![CrazyDomains-BP-configure-3-5](../../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://manage.crazydomains.com/members/domains/) zu Ihrer Domänenseite bei Crazy Domains. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    ![CrazyDomains-BP-configure-1-1](../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
+    ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
 2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
     
-    ![CrazyDomains-BP-configure-1-2](../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
+    ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
 3. Wählen Sie auf der Seite **Domänennamen** im Abschnitt **Domäne** den Namen der Domäne aus, die Sie aktualisieren möchten. 
     
-    ![CrazyDomains-BP-configure-1-3](../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
+    ![CrazyDomains-BP-configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
 4. Wählen Sie im Abschnitt **DNS-Einstellungen** das Dropdownlisten-Symbol aus. 
     
-    ![CrazyDomains-BP-configure-1-4-1](../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
+    ![CrazyDomains-BP-configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
 5. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
-    ![CrazyDomains-BP-configure-1-4-2](../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
+    ![CrazyDomains-BP-configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
 6. Wählen Sie in der Dropdownliste **Add Record:** den Eintrag **TXT Record** aus. 
     
-    ![CrazyDomains-BP-configure-4-1](../media/7f2461e2-0468-49bd-9eb0-981e9b2f72d6.png)
+    ![CrazyDomains-BP-configure-4-1](../../media/7f2461e2-0468-49bd-9eb0-981e9b2f72d6.png)
   
 7. Klicken Sie auf **Hinzufügen**.
     
-    ![CrazyDomains-BP-configure-4-2](../media/64ef9e1f-676d-46e2-9253-a83d9bcd1c4e.png)
+    ![CrazyDomains-BP-configure-4-2](../../media/64ef9e1f-676d-46e2-9253-a83d9bcd1c4e.png)
   
 8. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -270,42 +270,42 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |:-----|:-----|
     |(Dieses Feld leer lassen.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
    
-    ![CrazyDomains-BP-configure-4-3](../media/e7fd524a-c94b-4cdd-b264-67abb532a71b.png)
+    ![CrazyDomains-BP-configure-4-3](../../media/e7fd524a-c94b-4cdd-b264-67abb532a71b.png)
   
 9. Wählen Sie **Aktualisieren** aus.
     
-    ![CrazyDomains-BP-configure-4-4](../media/d4f378ee-0f14-46ae-ba32-1596660ecf91.png)
+    ![CrazyDomains-BP-configure-4-4](../../media/d4f378ee-0f14-46ae-ba32-1596660ecf91.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen zwei SRV-Einträge
 <a name="BKMK_add_SRV"> </a>
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://manage.crazydomains.com/members/domains/) zu Ihrer Domänenseite bei Crazy Domains. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    ![CrazyDomains-BP-configure-1-1](../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
+    ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
 2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
     
-    ![CrazyDomains-BP-configure-1-2](../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
+    ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
 3. Wählen Sie auf der Seite **Domänennamen** im Abschnitt **Domäne** den Namen der Domäne aus, die Sie aktualisieren möchten. 
     
-    ![CrazyDomains-BP-configure-1-3](../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
+    ![CrazyDomains-BP-configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
 4. Wählen Sie im Abschnitt **DNS-Einstellungen** das Dropdownlisten-Symbol aus. 
     
-    ![CrazyDomains-BP-configure-1-4-1](../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
+    ![CrazyDomains-BP-configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
 5. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
-    ![CrazyDomains-BP-configure-1-4-2](../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
+    ![CrazyDomains-BP-configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
 6. Wählen Sie in der Dropdownliste **Add Record:** den Eintrag **SRV Record** aus. 
     
-    ![CrazyDomains-BP-configure-5-1](../media/156acebc-7f6d-4b5e-8493-6bc62ca0ee27.png)
+    ![CrazyDomains-BP-configure-5-1](../../media/156acebc-7f6d-4b5e-8493-6bc62ca0ee27.png)
   
 7. Klicken Sie auf **Hinzufügen**.
     
-    ![CrazyDomains-BP-configure-5-2](../media/6a711df7-4215-49b2-b58f-1cf1a242b383.png)
+    ![CrazyDomains-BP-configure-5-2](../../media/6a711df7-4215-49b2-b58f-1cf1a242b383.png)
   
 8. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
     
@@ -316,11 +316,11 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     |SRV-Eintrag  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |SRV Record  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![CrazyDomains-BP-configure-5-3](../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
+    ![CrazyDomains-BP-configure-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   
 9. Wählen Sie **SRV-Eintrag hinzufügen**aus.
     
-    ![CrazyDomains-BP-configure-5-4](../media/de4ec312-6833-469a-b23a-f376140a35ca.png)
+    ![CrazyDomains-BP-configure-5-4](../../media/de4ec312-6833-469a-b23a-f376140a35ca.png)
   
 10. Fügen Sie den anderen SRV-Eintrag hinzu.
     
@@ -328,7 +328,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
 11. Wählen Sie **Aktualisieren** aus, um die Änderungen zu speichern. 
     
-    ![CrazyDomains-BP-configure-5-5](../media/f0bb1dd6-3772-4293-bf74-710f635e0658.png)
+    ![CrazyDomains-BP-configure-5-5](../../media/f0bb1dd6-3772-4293-bf74-710f635e0658.png)
   
 > [!NOTE]
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 

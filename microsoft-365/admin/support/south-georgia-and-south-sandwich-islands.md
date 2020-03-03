@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4c7e033eb5c792feeb0b2f96001e7e3f91ab891
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6401b5aaaea4ebeac73e1379efaa0811c5223b0d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253233"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356316"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>Kontakt Support für South Georgia and South Sandwich Islands
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Erfahren Sie, wie eine Benennungsrichtlinie für Office 365-Gruppen erstellt wird.
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241394"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352716"
 ---
 # <a name="office-365-groups-naming-policy"></a>Benennungsrichtlinie für Office 365-Gruppen
 
@@ -125,7 +125,7 @@ So richten Sie eine Benennungsrichtlinie ein:
 5. Wählen Sie zwischen **Attribut** und **Zeichenfolge** für jede Zeile aus, und geben Sie dann das Attribut oder die Zeichenfolge an.
 6. Wenn Sie die benötigten Präfixe und Suffixe hinzugefügt haben, klicken Sie auf **Speichern**.
 
-![Screenshot der Einstellungen für Benennungsrichtlinien für Gruppen in Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Screenshot der Einstellungen für Benennungsrichtlinien für Gruppen in Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>Benutzererfahrung der Benennungsrichtlinien in den einzelnen Office 365-Apps
 
@@ -135,7 +135,7 @@ Die Office 365-Apps wurden aktualisiert, um eine Vorschau des Benennungsrichtlin
 
 Outlook im Internet (früher bekannt als Outlook Web App oder OWA) zeigt den Benennungsrichtlinien ergänzten Namen an, wenn der Benutzer einen Gruppennamen oder Gruppen Alias eingibt. Wenn ein Benutzer ein benutzerdefiniertes blockiertes Wort eingibt, wird in der Benutzeroberfläche eine Fehlermeldung zusammen mit dem blockierten Wort angezeigt, sodass der Benutzer es entfernen kann. Im folgenden sind die Snapshots für Outlook im Webbrowser dargestellt.
 
-![Nebeneinander angeordnete Ansicht von Gruppenbenennungsrichtlinien in Office 365-Gruppen](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Nebeneinander angeordnete Ansicht von Gruppenbenennungsrichtlinien in Office 365-Gruppen](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Outlook Desktop
 
@@ -145,19 +145,19 @@ In Outlook Desktop erstellte Gruppen sind mit der Benennungsrichtlinie kompatibe
 
 Wenn der Benutzer einen Teamnamen eingibt, zeigt Microsoft Teams den von der Benennungsrichtlinie ergänzten Namen an. Wenn ein Benutzer ein benutzerdefiniertes blockiertes Wort eingibt, wird eine Fehlermeldung zusammen mit dem blockierten Wort angezeigt, sodass der Benutzer es entfernen kann.
 
-![Gruppenbenennungsrichtlinie in Microsoft Teams, blockiertes Beispiel](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Gruppenbenennungsrichtlinie in Microsoft Teams, blockiertes Beispiel](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 SharePoint zeigt den Namen gemäß der Benennungsrichtlinie an, wenn der Benutzer einen Websitenamen oder eine Gruppen-E-Mail-Adresse eingibt. Wenn ein Benutzer ein benutzerdefiniertes blockiertes Wort eingibt, wird eine Fehlermeldung zusammen mit dem blockierten Wort angezeigt, sodass der Benutzer es entfernen kann.
 
-![Gruppenbenennungsrichtlinie – Blockierter Name einer SharePoint-Website](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![Gruppenbenennungsrichtlinie – Blockierter Name einer SharePoint-Website](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 Microsoft Stream zeigt den gemäß der Benennungsrichtlinie ergänzten Namen an, wenn der Benutzer einen Gruppennamen oder einen Gruppen-E-Mail-Alias eingibt. Wenn ein Benutzer ein benutzerdefiniertes blockiertes Wort eingibt, wird eine Fehlermeldung mit dem blockierten Wort angezeigt, sodass der Benutzer es entfernen kann.
 
-![Gruppenbenennungsrichtlinie, blockiertes Beispiel für Microsoft Stream](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Gruppenbenennungsrichtlinie, blockiertes Beispiel für Microsoft Stream](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>Outlook iOS- und Android-App
 
@@ -167,13 +167,13 @@ In Outlook-Apps erstellte Gruppen sind mit der Benennungsrichtlinie kompatibel. 
 
 Planer ist mit den Benennungsrichtlinien kompatibel. Planner zeigt bei der Eingabe des Plannamens eine Vorschau des durch die Benennungsrichtlinie erzwungenen Namens an. Wenn ein Benutzer ein benutzerdefiniertes blockiertes Wort eingibt, wird beim Erstellen des Plans eine Fehlermeldung angezeigt, sodass der Benutzer das blockierte Wort entfernen kann.
 
-![Gruppenbenennungsrichtlinie – "Neuen Plan erstellen", blockiertes Beispiel](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![Gruppenbenennungsrichtlinie – "Neuen Plan erstellen", blockiertes Beispiel](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>Dynamics 365 for Customer Engagement
 
 Dynamics 365 for Customer Engagement ist mit der Benennungsrichtlinie konform. Dynamics 365 zeigt den durch die Benennungsrichtlinie ergänzten Namen an, wenn der Benutzer einen Gruppennamen oder den E-Mail-Alias einer Gruppe eingibt. Wenn ein Benutzer ein benutzerdefiniertes blockiertes Wort eingibt, wird eine Fehlermeldung mit dem blockierten Wort angezeigt, damit der Benutzer es entfernen kann.
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>School Data Sync (SDS)
 

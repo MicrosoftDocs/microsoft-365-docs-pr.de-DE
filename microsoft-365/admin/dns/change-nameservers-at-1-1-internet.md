@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Erfahren Sie, wie Sie Office 365, die von 21Vianet betrieben werden, zum Verwalten Ihrer DNS-Einträge einrichten können, wenn 1&1 Internet der DNS-Hostanbieter ist.
-ms.openlocfilehash: 907e4fe097634d28ad44e4d44ba8c6ff2da9164d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242933"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352566"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Ändern von Namenservern zum Einrichten von Office 365 mit 1&1 Ionos
 
@@ -62,7 +62,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Dieses Feld leer lassen.)  <br/> |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie jeweils Ihren Wert für **die Zieladresse bzw. die Adresse, auf die verwiesen wird** aus der Tabelle in Office 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Dieses Feld leer lassen.)  <br/> |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Wählen Sie **Speichern**und dann erneut **Speichern** aus. 
@@ -124,11 +124,11 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
 |:-----|:-----|
 |**Name server 1** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![Eingeben eines Werts in das Feld Name Server 1](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![Eingeben eines Werts in das Feld Name Server 1](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. Wählen Sie in der Dropdownliste **Additional name servers** den Eintrag **My secondary name servers** aus.
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. Geben Sie in den Feldern **Name server 2, 3 und 4** den Wert aus der folgenden Tabelle ein. Sie können den Wert auch kopieren und einfügen. 
     
@@ -138,15 +138,15 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Klicken Sie auf **Speichern**.
     
-    ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.
     
-    ![Auswählen von "Speichern" im Dialogfeld "DNS-Einstellungen bearbeiten"](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Auswählen von "Speichern" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Office 365-E-Mails und andere Dienste für das Arbeiten mit Ihrer Domäne eingerichtet. 
@@ -158,7 +158,7 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
   
 1. If there are already nameservers listed in the **Name server** boxes, delete each one by selecting it and then pressing the **Delete** key on your keyboard. 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. Geben Sie in den Feldern **Nameserver 1, 2, 3 und 4** die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
@@ -169,15 +169,15 @@ Sind Sie bereit, Ihre NS-Einträge so zu ändern, dass Office 365 Ihre Domäne e
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Eingeben von Namenserver Werten](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![Eingeben von Namenserver Werten](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
 3. Klicken Sie auf **Speichern**.
     
-    ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.
     
-    ![Auswählen von "Speichern" im Dialogfeld "DNS-Einstellungen bearbeiten"](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Auswählen von "Speichern" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Office 365-E-Mails und andere Dienste für das Arbeiten mit Ihrer Domäne eingerichtet. 

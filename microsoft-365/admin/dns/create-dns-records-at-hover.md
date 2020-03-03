@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Hover für Office 365 einrichten.
-ms.openlocfilehash: 54ff58963dcd66f692507f1d778fb9a8d24f82fa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 72df2d98f3446087a1e9796cd616293a91003ad9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244996"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42350106"
 ---
 # <a name="create-dns-records-at-hover-for-office-365"></a>Erstellen von DNS-Einträgen für Office 365 bei Hover
 
@@ -52,19 +52,19 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.hover.com/domains) zu Ihrer Domänenseite bei Hover. Sie werden aufgefordert, sich anzumelden.
     
-    ![Anmelden](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Anmelden](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Wählen Sie unter **Ihre Domänen verwalten**den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-    ![Auswählen einer Domäne](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Auswählen einer Domäne](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Wählen Sie die Registerkarte **DNS** aus. 
     
-    ![Wählen Sie die Registerkarte DNS aus.](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Wählen Sie die Registerkarte DNS aus.](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Wählen Sie **Neu hinzufügen**aus.
     
-    ![Wählen Sie Add New aus.](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Wählen Sie Add New aus.](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **TXT** for the **Record Type**, and then type or copy and paste the values from the following table.
     
@@ -73,11 +73,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     |Hostname  <br/> |Eintragstyp  <br/> |Value  <br/> |
     |@  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
+    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
 6. Klicken Sie auf **Speichern**.
     
-    ![Wählen Sie speichern aus.](../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
+    ![Wählen Sie speichern aus.](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
 7. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -109,19 +109,19 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.hover.com/domains) zu Ihrer Domänenseite bei Hover. Sie werden aufgefordert, sich anzumelden.
     
-    ![Anmelden](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Anmelden](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Wählen Sie unter **Ihre Domänen verwalten**den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-    ![Auswählen einer Domäne](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Auswählen einer Domäne](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Wählen Sie die Registerkarte **DNS** aus. 
     
-    ![Wählen Sie die Registerkarte DNS aus.](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Wählen Sie die Registerkarte DNS aus.](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Wählen Sie **Neu hinzufügen**aus.
     
-    ![Wählen Sie Add New aus.](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Wählen Sie Add New aus.](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. Wählen Sie in den Feldern für den neuen Eintrag für **Record Type** die Option **MX** aus, und geben Sie dann die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -129,21 +129,21 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * aus Ihrem Office 365-Konto ab.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
+    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
 6. Klicken Sie auf **Speichern**.
     
-    ![Wählen Sie speichern aus.](../media/266c30a4-6703-48fb-a919-b510ed966193.png)
+    ![Wählen Sie speichern aus.](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
 7. Wenn andere MX-Einträge vorhanden sind, führen Sie die beiden folgenden Schritte aus, um diese zu entfernen:
     
     Klicken Sie zuerst auf einen Datensatz, den Sie entfernen möchten, und wählen Sie dann **Löschen**aus.
     
-    ![Maus über und wählen Sie löschen](../media/2ddf4902-8cd2-4969-a418-2cb592741e86.png)
+    ![Maus über und wählen Sie löschen](../../media/2ddf4902-8cd2-4969-a418-2cb592741e86.png)
   
     Klicken Sie zweitens auf **Ja** , um den Löschvorgang zu bestätigen. 
     
-    ![Wählen Sie ja aus, um das Löschen zu bestätigen](../media/48756bd5-0205-4c4d-9803-9246795dbf4a.png)
+    ![Wählen Sie ja aus, um das Löschen zu bestätigen](../../media/48756bd5-0205-4c4d-9803-9246795dbf4a.png)
   
     Wiederholen Sie diesen Vorgang, bis Sie alle MX-Einträge mit Ausnahme des Eintrags, den Sie zuvor in diesem Verfahren hinzugefügt haben, gelöscht sind.
     
@@ -154,21 +154,21 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.hover.com/domains) zu Ihrer Domänenseite bei Hover. Sie werden aufgefordert, sich anzumelden.
     
-    ![Anmelden](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Anmelden](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Wählen Sie unter **Ihre Domänen verwalten**den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-    ![Auswählen einer Domäne](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Auswählen einer Domäne](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Wählen Sie die Registerkarte **DNS** aus. 
     
-    ![Wählen Sie die Registerkarte DNS aus.](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Wählen Sie die Registerkarte DNS aus.](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Fügen Sie den ersten der sechs CNAME-Einträge hinzu.
     
     Wählen Sie **Neu hinzufügen**aus.
     
-    ![Wählen Sie Add New aus.](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Wählen Sie Add New aus.](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. Wählen Sie in den leeren Feldern für den neuen Eintrag für **Record Type** die Option **CNAME** aus, und geben Sie dann die Werte aus der ersten Zeile in der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -180,11 +180,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
+    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
 6. Klicken Sie auf **Speichern**.
     
-    ![Wählen Sie speichern aus.](../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
+    ![Wählen Sie speichern aus.](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
 7. Fügen Sie die anderen fünf CNAME-Einträge hinzu, indem Sie die vorangegangenen drei Schritte mit den Werten aus den anderen fünf Zeilen in der Tabelle wiederholen.
     
@@ -192,25 +192,25 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.hover.com/domains) zu Ihrer Domänenseite bei Hover. Sie werden aufgefordert, sich anzumelden.
     
-    ![Anmelden](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Anmelden](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Wählen Sie unter **Ihre Domänen verwalten**den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-    ![Auswählen einer Domäne](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Auswählen einer Domäne](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Wählen Sie die Registerkarte **DNS** aus. 
     
-    ![Wählen Sie die Registerkarte DNS aus.](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Wählen Sie die Registerkarte DNS aus.](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Wählen Sie **Neu hinzufügen**aus.
     
-    ![Wählen Sie Add New aus.](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Wählen Sie Add New aus.](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **TXT** for the **Record Type**, and then type or copy and paste the values from the following table.
     
@@ -218,11 +218,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     |:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
    
-    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
+    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
 6. Klicken Sie auf **Speichern**.
     
-    ![Wählen Sie speichern aus.](../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
+    ![Wählen Sie speichern aus.](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen zwei SRV-Einträge
 <a name="BKMK_add_SRV"> </a>
@@ -231,21 +231,21 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.hover.com/domains) zu Ihrer Domänenseite bei Hover. Sie werden aufgefordert, sich anzumelden.
     
-    ![Anmelden](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Anmelden](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Wählen Sie unter **Ihre Domänen verwalten**den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-    ![Auswählen einer Domäne](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Auswählen einer Domäne](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Wählen Sie die Registerkarte **DNS** aus. 
     
-    ![Wählen Sie die Registerkarte DNS aus.](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Wählen Sie die Registerkarte DNS aus.](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
     
     Wählen Sie **Neu hinzufügen**aus.
     
-    ![Wählen Sie Add New aus.](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Wählen Sie Add New aus.](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. Wählen Sie in den leeren Feldern für den neuen Eintrag für **Record Type** die Option **SRV** aus, und geben Sie dann die Werte aus der ersten Zeile in der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -254,11 +254,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     |_sip._tls  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../media/67562cd6-c598-4c37-af53-626f153c0197.png)
+    ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
 6. Klicken Sie auf **Speichern**.
     
-    ![Wählen Sie speichern aus.](../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
+    ![Wählen Sie speichern aus.](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   
 7. Fügen Sie den anderen SRV-Eintrag hinzu, indem Sie die vorangegangenen drei Schritte mit den Werten aus der zweiten Zeile in der Tabelle wiederholen.
     

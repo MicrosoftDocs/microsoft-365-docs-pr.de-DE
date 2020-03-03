@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 53f4b25bc701e956815e2d95e413173843768856
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: dbc057fe24481ca5282656efcf83c2cf1005e5da
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243525"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355576"
 ---
 # <a name="contact-support-for-vietnam"></a>Kontaktieren des Supports für Vietnam
 

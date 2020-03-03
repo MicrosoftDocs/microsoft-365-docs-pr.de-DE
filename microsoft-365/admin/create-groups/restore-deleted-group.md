@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 'Hier erfahren Sie, wie Sie eine Office 365-Gruppe über das Exchange Admin Center wiederherstellen. '
-ms.openlocfilehash: 98eb00d90f5b607a58cd32728ce43cb4a1de1ff5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c88f10df27e5f3a0af79c93c7d0e347c5646abc9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242597"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352436"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>Wiederherstellen einer gelöschten Office 365-Gruppe
 
@@ -77,9 +77,9 @@ Sie benötigen globale Administratorberechtigungen für Office 365.
       
 4. Wählen Sie die Gruppe, die Sie wiederherstellen möchten, und dann das Symbol "Wiederherstellen" aus.
     
-    ![Wählen Sie die Gruppe, die Sie wiederherstellen möchten, und dann das Symbol "Wiederherstellen" aus.](../media/restore-group.png)
+    ![Wählen Sie die Gruppe, die Sie wiederherstellen möchten, und dann das Symbol "Wiederherstellen" aus.](../../media/restore-group.png)
   
-5. Wählen Sie "Aktualisieren" aus. ![Aktualisieren (Symbol)](../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) aus, um die Informationen auf der Seite zu aktualisieren. Ihre Gruppe wird als "Aktiv" angezeigt. Alle Formulare und Formulardaten, die mit Ihrer Gruppe verbunden sind, werden ebenfalls wiederhergestellt.
+5. Wählen Sie "Aktualisieren" aus. ![Aktualisieren (Symbol)](../../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) aus, um die Informationen auf der Seite zu aktualisieren. Ihre Gruppe wird als "Aktiv" angezeigt. Alle Formulare und Formulardaten, die mit Ihrer Gruppe verbunden sind, werden ebenfalls wiederhergestellt.
     
 ## <a name="restore-an-office-365-group-using-powershell"></a>Wiederherstellen einer Office 365-Gruppe mithilfe von PowerShell
 

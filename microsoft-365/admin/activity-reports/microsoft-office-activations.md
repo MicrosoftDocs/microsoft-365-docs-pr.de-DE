@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Erfahren Sie, wie Sie einen Office-Aktivierungsbericht erhalten, um zu erfahren, welche Benutzer Ihr Office-Abonnement aktiviert haben, und um Benutzer zu identifizieren, die möglicherweise zusätzliche Hilfe benötigen.
-ms.openlocfilehash: d7290831e18c0008325091bb74f7000a59f95572
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: de558c75009007bbc02a1c5ca51bb7c86a97c47a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241851"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353756"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-Berichte im Admin Center – Microsoft Office Aktivierungen
 
@@ -45,7 +45,7 @@ Im Bericht zu den Office-Aktivierungen wird angezeigt, welche Benutzer ihr Offic
 
 Sie erhalten einen Überblick über die Office-Aktivierungen Ihrer Organisation, wenn Sie sich die Diagramme **Aktivierungen** und **Benutzer** ansehen. 
   
-![Anzahl der Office-Aktivierungen](../media/8c0ae08d-2d71-4437-9147-12c345bb5e9d.png)
+![Anzahl der Office-Aktivierungen](../../media/8c0ae08d-2d71-4437-9147-12c345bb5e9d.png)
   
 |||
 |:-----|:-----|
@@ -54,8 +54,8 @@ Sie erhalten einen Überblick über die Office-Aktivierungen Ihrer Organisation,
 |3  <br/> |Im Diagramm **Aktivierungen** wird die Anzahl der Office-Aktivierungen auf Desktops und mobilen Geräten angezeigt.  <br/> |
 |4  <br/> |Im Diagramm **Benutzer** werden die Anzahl der aktivierten Benutzer und die Benutzer angezeigt, die das Office-Abonnement auf ihren Desktops oder mobilen Geräten aktiviert haben.  <br/> |
 |5  <br/> | Im Diagramm **Aktivierungen** wird auf der Y-Achse die Anzahl der Office-Aktivierungen dargestellt.  <br/>  Im Diagramm **Benutzer** wird auf der Y-Achse die vom Benutzer ausgeführte Aktivität der Aktivierung von Office dargestellt.  <br/>  Die X-Achse bezeichnet in beiden Diagrammen den ausgewählten Zeitraum für diesen bestimmten Bericht.  <br/> |
-|6   <br/> |Sie können Diagramme, die angezeigt werden, Filtern, indem Sie ein Element in der Legende auswählen. Wählen Sie beispielsweise im Diagramm **Aktivierungen** die Option **Windows OS**, **Mac OS**, **Windows 10 Mobile**, **IOS** oder **Android** aus, um nur die Informationen zu den einzelnen Funktionen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert. <br/> ![Aktivierungsdaten für Geräte](../media/59d3ec6e-2a6e-4b21-8aac-c73038c47b9f.png)  <br/> |
-|7   <br/> | In der Tabelle wird eine Aufschlüsselung der Office-Aktivierungen auf Benutzerebene angezeigt. Dabei handelt es sich um die Liste aller Benutzer, denen die jeweiligen Office-Produkte zugewiesen sind. Sie können der Tabelle weitere Spalten hinzufügen.  <br/> ![Verfügbare Spalten für Office-Aktivierungen](../media/410a4baa-cef8-4676-bf7c-02a907a3a575.png)<br/> **Benutzername** ist die E-Mail-Adresse des Benutzers.  <br/> **Anzeigename** ist der vollständige Name, wenn der Benutzer.  <br/> **Produktlizenzen** sind die Produkte, die diesem Benutzer zugewiesen sind.  <br/> **Datum der letzten Aktivierung** bezieht sich auf das Datum, an dem der Benutzer Office auf einem Desktop oder mobilen Gerät aktiviert hat.  <br/> Die **Aktivierung von gemeinsam** genutzten Computern ist true, wenn der Benutzer Office über die Aktivierung freigegebener Computer verwendet hat. <br/> **Windows** bezieht sich auf die Anzahl von Windows-Desktops, auf denen ein Benutzer Office aktiviert hat.  <br/> **Mac** bezieht sich auf die Anzahl von Mac-Desktops, auf denen ein Benutzer Office aktiviert hat.  <br/> **Windows 10 Mobile** bezieht sich auf die Anzahl von mobilen Windows 10-Geräten, auf denen ein Benutzer Office aktiviert hat.  <br/> **IOS** bezieht sich auf die Anzahl von IOS-Geräten, auf denen ein Benutzer Office aktiviert hat.  <br/> **Android** bezieht sich auf die Anzahl der Android-Geräte, auf denen ein Benutzer Office aktiviert hat.  <br/>  Wenn die Richtlinien Ihrer Organisation eine Anzeige von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie die **Informationen zum Ausblenden von Benutzerdaten im Abschnitt Berichte** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
+|6  <br/> |Sie können Diagramme, die angezeigt werden, Filtern, indem Sie ein Element in der Legende auswählen. Wählen Sie beispielsweise im Diagramm **Aktivierungen** die Option **Windows OS**, **Mac OS**, **Windows 10 Mobile**, **IOS** oder **Android** aus, um nur die Informationen zu den einzelnen Funktionen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert. <br/> ![Aktivierungsdaten für Geräte](../../media/59d3ec6e-2a6e-4b21-8aac-c73038c47b9f.png)  <br/> |
+|7  <br/> | In der Tabelle wird eine Aufschlüsselung der Office-Aktivierungen auf Benutzerebene angezeigt. Dabei handelt es sich um die Liste aller Benutzer, denen die jeweiligen Office-Produkte zugewiesen sind. Sie können der Tabelle weitere Spalten hinzufügen.  <br/> ![Verfügbare Spalten für Office-Aktivierungen](../../media/410a4baa-cef8-4676-bf7c-02a907a3a575.png)<br/> **Benutzername** ist die E-Mail-Adresse des Benutzers.  <br/> **Anzeigename** ist der vollständige Name, wenn der Benutzer.  <br/> **Produktlizenzen** sind die Produkte, die diesem Benutzer zugewiesen sind.  <br/> **Datum der letzten Aktivierung** bezieht sich auf das Datum, an dem der Benutzer Office auf einem Desktop oder mobilen Gerät aktiviert hat.  <br/> Die **Aktivierung von gemeinsam** genutzten Computern ist true, wenn der Benutzer Office über die Aktivierung freigegebener Computer verwendet hat. <br/> **Windows** bezieht sich auf die Anzahl von Windows-Desktops, auf denen ein Benutzer Office aktiviert hat.  <br/> **Mac** bezieht sich auf die Anzahl von Mac-Desktops, auf denen ein Benutzer Office aktiviert hat.  <br/> **Windows 10 Mobile** bezieht sich auf die Anzahl von mobilen Windows 10-Geräten, auf denen ein Benutzer Office aktiviert hat.  <br/> **IOS** bezieht sich auf die Anzahl von IOS-Geräten, auf denen ein Benutzer Office aktiviert hat.  <br/> **Android** bezieht sich auf die Anzahl der Android-Geräte, auf denen ein Benutzer Office aktiviert hat.  <br/>  Wenn die Richtlinien Ihrer Organisation eine Anzeige von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie die **Informationen zum Ausblenden von Benutzerdaten im Abschnitt Berichte** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
 |||
    
 

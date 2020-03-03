@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 39ca39c9b7341b9aa0e2df7add8c86199f68021a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d7d45a4a8b37d358e57fc6cf7687fdbf657c04d8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244647"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359046"
 ---
 # <a name="contact-support-for-estonia"></a>Kontaktieren des Supports für Estland
 
