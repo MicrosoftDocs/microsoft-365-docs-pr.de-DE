@@ -55,6 +55,8 @@
               href: ./mtp/troubleshoot.md
         - name: Schrittanleitungen
           items:
+            - name: Bereitstellen unterstützter Dienste
+              href: mtp/deploy-supported-services.md
             - name: Aktivieren von Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Vorfälle
