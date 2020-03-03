@@ -15,12 +15,12 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
 description: Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
-ms.openlocfilehash: ca11fecd3924ffa5aea87a7a681f2c5d39232094
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 098f9f2ccce8940cbaa608b20209f973e089e629
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253023"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362230"
 ---
 # <a name="email"></a>E-Mail
 
