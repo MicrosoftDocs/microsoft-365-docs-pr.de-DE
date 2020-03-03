@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Hier erfahren Sie, wie Sie e-Mail-Signaturen, rechtliche Hinweise oder Offenlegungserklärungen allen e-Mail-Nachrichten hinzufügen, die Ihre Organisation betreten oder verlassen.
-ms.openlocfilehash: 3d95e92c4994a99ab3426133580d70453a2f83eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254114"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360666"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
@@ -37,7 +37,7 @@ ms.locfileid: "42254114"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Erstellen einer Signatur, die auf alle Nachrichten angewendet wird
 
@@ -62,7 +62,7 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 
 ::: moniker-end
 
-1. Wählen Sie das App ![-Startprogramm Symbol in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)aus, und wählen Sie dann **Admin**aus.
+1. Wählen Sie das App ![-Startprogramm Symbol in Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)aus, und wählen Sie dann **Admin**aus.
    
     Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen. 
     

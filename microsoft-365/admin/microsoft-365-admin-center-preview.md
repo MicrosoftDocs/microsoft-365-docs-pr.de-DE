@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Erfahren Sie mehr über das neue Microsoft 365 Admin Center.
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254339"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361600"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informationen zum neuen Microsoft 365 Admin Center
 
@@ -50,9 +50,9 @@ Wir würden uns freuen, wenn Sie am neuen Microsoft 365 Admin Center teilnehmen,
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Wechseln zum neuen Admin Center und wieder zurück
 
-- Wenn Ihnen das neue Microsoft 365 Admin Center zur Verfügung steht, können Sie sich anmelden, indem Sie die Schaltfläche **Neues Admin Center** wechseln oben auf der Startseite auswählen. Wenn Sie sich beim Admin Center abmelden, merken wir Ihre Auswahl und melden sich wieder beim neuen Admin Center an. <br/><br/>![Die neue Admin Center-Umschaltfläche aus dem alten Admin Center](media/admin-center-toggle-off.png) 
+- Wenn Ihnen das neue Microsoft 365 Admin Center zur Verfügung steht, können Sie sich anmelden, indem Sie die Schaltfläche **Neues Admin Center** wechseln oben auf der Startseite auswählen. Wenn Sie sich beim Admin Center abmelden, merken wir Ihre Auswahl und melden sich wieder beim neuen Admin Center an. <br/><br/>![Die neue Admin Center-Umschaltfläche aus dem alten Admin Center](../media/admin-center-toggle-off.png) 
   
-- Wechseln Sie zurück zum alten Admin Center von der Startseite, indem Sie die Umschaltfläche auf **aus**umschalten. <br/><br/>![Die neue Admin Center-Umschaltfläche ist aktiviert](media/admin-center-toggle-on.png)
+- Wechseln Sie zurück zum alten Admin Center von der Startseite, indem Sie die Umschaltfläche auf **aus**umschalten. <br/><br/>![Die neue Admin Center-Umschaltfläche ist aktiviert](../media/admin-center-toggle-on.png)
 
 Während Sie sich im neuen Admin Center befinden, können Sie Microsoft Feedback zu ihren Erfahrungen geben, indem Sie **Feedback** direkt neben der Schaltfläche **need help?** unten auf jeder Seite auswählen. Sagen Sie uns, was Ihnen gefällt und was wir besser tun können. Darüber hinaus erhalten Sie möglicherweise von Zeit zu Zeit Popup-Umfragen, in denen Sie sich über Ihre Gesamt Impressionen oder eine bestimmte Erfahrung informieren, die neu veröffentlicht wurde. Sie können auch am Ende dieses Artikels Feedback geben, indem Sie die **Informationen hilfreich** ausgewählt haben?
   

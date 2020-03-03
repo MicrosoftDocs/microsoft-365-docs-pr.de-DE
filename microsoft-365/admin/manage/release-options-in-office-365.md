@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Erfahren Sie, wie Sie die Option "Release" für neue Produkt-und Funktionsupdates im Microsoft 365 Admin Center einrichten.
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252798"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361800"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Einrichten der Standard oder Targeted Release-Optionen in Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "42252798"
 
 Jede neue Version wird zuerst vom Feature-Team getestet und validiert, dann durch das gesamte Office 365-Feature-Team, gefolgt von Microsoft. Nach den internen Tests und Überprüfungen besteht der nächste Schritt in der Bereitstellung eines **Targeted Release** ("Gezielte Freigabe", vormals First Release) für Kunden, die die entsprechende Option aktivieren. Bei jedem Release Ring sammelt Microsoft Feedback und führt durch die Überwachung der wichtigsten Nutzungsmetriken weitere Qualitätsprüfungen durch. Diese Reihe von fortschreitenden Überprüfungen wurde eingeführt, um sicherzustellen, dass das weltweite Release so robust wie möglich ist. Die Releases sind in der folgenden Abbildung dargestellt. 
   
-![Freigeben von Gültigkeits Prüfungs Ringen für Office 365](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Freigeben von Gültigkeits Prüfungs Ringen für Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 Für wichtige Updates werden Office-Kunden zunächst durch die [Microsoft 365-Roadmap](https://products.office.com/business/office-365-roadmap)benachrichtigt. Wenn ein Update dem Rollout näher kommt, wird es über das [Office 365 Nachrichtencenter](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)kommuniziert.
 

@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Hier erfahren Sie, wie Sie Kontakte, Kalender, e-Mails von Gmail oder einem anderen e-Mail-Anbieter in Office 365 importieren. '
-ms.openlocfilehash: 6281e3b48249a67d3cf2754ebcfcaa9bc1789ef6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243934"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360706"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>Migrieren von E-Mails und Kontakten zu Office 365
 
@@ -69,7 +69,7 @@ Wenn Sie nur Kontakte exportieren/importieren möchten, führen Sie die folgende
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![Menü "Datei" in Outlook 2016](../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Befehl &amp; "Export öffnen" in Outlook 2016](../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Schaltfläche "Importieren/Exportieren" in Outlook 2016](../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Menü "Datei" in Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Befehl &amp; "Export öffnen" in Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Schaltfläche "Importieren/Exportieren" in Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Anzeigen anderer E-Mail-Konten in Outlook
 
@@ -83,7 +83,7 @@ Sie können ein Konto (z. B. Ihr privates Gmail-Konto) zu Outlook hinzufügen.
     
 Benötigen Sie detailliertere Schritte? Dann lesen Sie [Hinzufügen eines Kontos](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Screenshot showing Outlook account information page in the backstage view.](../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-office-365"></a>Mehrere Postfächer: Administratoren können einen Massenimport von E-Mails, Kontakten und Kalendern in Office 365 ausführen
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3fd62591e3e816e6ae4aaec8c3bb048f5f9ecaab
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e08e60153a60c66f13f80c2046b8d4f22f77049a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254010"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359796"
 ---
 # <a name="contact-support-for-bonaire"></a>Kontaktieren des Supports für Bonaire
 

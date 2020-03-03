@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 48bd1e8644c4ec38419922b536a992a130a153c9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e7950503fad3a8d0185ffdc8ec0b3456ba5b9034
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254026"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360076"
 ---
 # <a name="contact-support-for-bahrain-kingdom-of"></a>Wenden Sie sich an den Support für Bahrain, Kingdom of
 

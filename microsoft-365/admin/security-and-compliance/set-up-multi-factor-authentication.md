@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informationen zur Verwendung der Sicherheitsstandardeinstellungen zum Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer.
 monikerRange: o365-worldwide
-ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 4dc52c25c3a9351be1a9f4d094d664bc4ed527f9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341250"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361046"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -80,7 +80,7 @@ Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Activ
 
 2. Aktivieren Sie das Kontrollkästchen **Moderne Authentifizierung aktivieren** im Bereich **Moderne Authentifizierung**. 
 
-    ![Bereich "Moderne Authentifizierung" mit aktiviertem Kontrollkästchen "Moderne Authentifizierung aktivieren".](../media/enablemodernauth.png)
+    ![Bereich "Moderne Authentifizierung" mit aktiviertem Kontrollkästchen "Moderne Authentifizierung aktivieren".](../../media/enablemodernauth.png)
     
 ## <a name="enable-multi-factor-authentication-for-your-organization"></a>Aktivieren der mehrstufigen Authentifizierung für Ihre Organisation
     

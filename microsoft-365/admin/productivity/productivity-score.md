@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254222"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361316"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft Produktivitätsbewertung (Vorschau)
 
@@ -84,7 +84,7 @@ Sie können auf die Produktivitätsbewertung mithilfe der Benutzeroberfläche vo
 
 Auf der Startseite der Produktivitätsbewertung werden die aktuelle Bewertung und Bewertungshistorie als Prozentwert angezeigt. Die wichtigsten Einblicke in die einzelnen Kategorien werden durch Benchmarks ergänzt. 
 
-![Startseite der Microsoft Produktivitätsbewertung](../media/pslanding.png)
+![Startseite der Microsoft Produktivitätsbewertung](../../media/pslanding.png)
 
 1. Die **Produktivitätsbewertung** wird als Prozentwert sowie im <numerator>/<denominator>-Format angezeigt, sodass Sie sich auch Ihre absoluten Punkte (Zähler) und die höchste erreichbare Punktzahl anzeigen lassen können.  
 1. Mit dieser Pivotleiste können Sie die Bewertungskategorie auswählen, auf die Sie Ihr Hauptaugenmerk richten möchten. In der Vorschau können Sie sich nur die **Mitarbeitererfahrung** ansehen, diese Auswahl wird aber in Kürze erweitert und enthält dann auch die **Technologieerfahrung**. 
@@ -113,7 +113,7 @@ Darüber hinaus enthalten alle Einblicke die folgenden Elemente:
 
 ### <a name="area-detail-page--collaborating-on-content"></a>Detailseite für den Bereich „Zusammenarbeit an Inhalten“ 
 
-![Seite „Zusammenarbeit an Inhalten“](../media/pscollab.png)
+![Seite „Zusammenarbeit an Inhalten“](../../media/pscollab.png)
 
 Die Seite „Zusammenarbeit an Inhalten“ enthält die wichtigsten Einblicke von der Startseite der Produktivitätsbewertung. Sie hat die folgenden Komponenten:
 
@@ -134,7 +134,7 @@ Die für die Zusammenarbeit in Betracht gezogenen Dateitypen sind Word/Excel/Pow
 
 ### <a name="area-detail-page--working-anywhere"></a>Detailseite für den Bereich „Mobiles Arbeiten“ 
 
-![Seite „Mobiles Arbeiten“](../media/psflexibility.png)
+![Seite „Mobiles Arbeiten“](../../media/psflexibility.png)
 
 Die Seite „mobiles Arbeiten“ quantifiziert die Benutzer (als Prozentsatz und absoluten Wert), die mindestens eine Produktivitäts-App auf mindestens zwei Plattformen (Desktop, Mobil oder Web) verwendet haben. Benutzer erhalten eine höhere Bewertung, wenn sie mehr Apps und Plattformen nutzen. Die dabei in Betracht gezogenen Apps sind: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer und Skype. Die Basis des Einblicks sind Benutzer, die für Office 365 ProPlus, Exchange, Yammer, Skype oder Teams aktiviert sind.
 
@@ -147,7 +147,7 @@ Die Seite „mobiles Arbeiten“ quantifiziert die Benutzer (als Prozentsatz und
 
 Um die Handlungsflexibilität zu fördern, enthält jeder unterstützende Einblick spezielle Aktionen, mit deren Hilfe Sie die Mitarbeitererfahrung verändern können. Dazu zählen Konfigurationsänderungen oder Aufklärungskampagnen. Klicken Sie auf diese Handlungsaufforderungen, öffnen sich im Bereich „Empfohlene Aktionen“ passende Vorschläge. Zur Zeit sind die Aktionen in ** Zusammenarbeit an Inhalten** aktiviert.
 
-![Seite „ An Office-Dokumenten zusammenarbeiten“](../media/psactions1.png)
+![Seite „ An Office-Dokumenten zusammenarbeiten“](../../media/psactions1.png)
 
 1. **Aktionen anzeigen** führt Sie zu einem Bereich, in dem alle Aktionen im Zusammenhang mit der Zusammenarbeit an Inhalten aufgelistet sind.
 1. **Fordern Sie die Benutzer auf, zusammenzuarbeiten** führt zu einer Liste von Lehrvideos zur Zusammenarbeit mit Themen wie der gemeinsamen Erstellung von Dokumenten und @mentions. 
@@ -156,7 +156,7 @@ Um die Handlungsflexibilität zu fördern, enthält jeder unterstützende Einbli
 
 Wenn Sie eine der interaktiven Schaltflächen auswählen, wird auf der rechten Seite der Bereich **Empfohlene Aktionen** angezeigt. Dort finden Sie eine Zusammenfassung der einzelnen Aktionen sowie einen Link den Dokumentationsseiten.
 
-![Bereich „Empfohlene Aktionen“](../media/psacttions2.png)
+![Bereich „Empfohlene Aktionen“](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback 

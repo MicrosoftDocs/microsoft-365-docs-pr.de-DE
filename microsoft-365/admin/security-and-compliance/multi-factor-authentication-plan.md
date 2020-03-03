@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Office 365 und die Schritte, die Sie für die Einrichtung durchführen müssen.
-ms.openlocfilehash: c3d5e83b951e4fd4a05cb18408ecb3d26e397cf9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254213"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361176"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen
 
@@ -77,7 +77,7 @@ In der folgenden Abbildung wird veranschaulicht, wie die aktualisierten Office 2
     
 Dies wird in der folgenden Abbildung detailliert veranschaulicht:
   
-![Modern authentication for Office 2013 device apps.](../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
   
 ## <a name="software-requirements"></a>Softwareanforderungen
 
@@ -91,7 +91,7 @@ So ermitteln Sie, ob Ihre Office-Installation auf Klick-und-Los oder MSI basiert
     
 3. Für Klick-und-Los-Installationen von Outlook 2013 wird der Eintrag **Updateoptionen** angezeigt. Für MSI-basierte Installationen wird der Eintrag **Updateoptionen** nicht angezeigt. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
   
 ### <a name="click-to-run-based-installations"></a>Klick-und-Los-basierte Installationen
 

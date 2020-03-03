@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Erfahren Sie, wie Sie Administrator werden und Office 365 Abonnement für Ihre Organisation erhalten. '
-ms.openlocfilehash: 6fd85f79b32d0a51a5069cfbb55ca58e7cdb1b36
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254330"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361550"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Administrator werden und Office 365 für Ihre Organisation kaufen
 
@@ -55,16 +55,16 @@ Nachdem Sie Administrator geworden sind, können Sie bei Bedarf auch neue Benutz
   
 ## <a name="overview-of-the-steps"></a>Schritteübersicht
 
-![High-level view of the phases involved with becoming an admin and buying Office 365.](../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
+![High-level view of the phases involved with becoming an admin and buying Office 365.](../../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
   
 Ein Assistent führt Sie schrittweise durch den Vorgang, aber hier folgt eine Zusammenfassung der einzelnen Schritte.
   
 |||
 |:-----|:-----|
-|![Number one in a pink circle](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**Registrierung**: Bevor Sie Administrator werden können, müssen Sie mit Ihrer geschäftlichen E-Mail-Adresse bereits für Skype-Besprechungen registriert sein.  <br/> |
-|![Number two in a pink circle.](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Assistent ausführen**: Nach der Registrierung führen Sie den Assistenten aus, indem Sie einen der folgenden Schritte ausführen:  <br/>  Führen Sie den Assistenten **als Administrator werden** aus, der nach der Auswahl von **Administrator** im App-Startfeld angezeigt wird.  <br/>  ODER  <br/>  Wählen Sie ein **Upgrade auf Office 365** in Skype-Besprechungen aus, und wählen Sie dann das Office 365 Abonnement aus, auf das ein Upgrade ausgeführt werden soll.  <br/> |
-|![Number three in a pink circle.](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Domänenbesitz bestätigen**: Als nächstes bestätigen Sie für Office 365, dass Sie den Domänennamen (wie contoso.com) besitzen oder verwalten, der den E-Mail-Adressen Ihrer Organisation zugeordnet ist. Nur der Besitzer des Domänennamens verfügt über die Berechtigung zur Ausführung dieses Vorgangs.  <br/> |
-|![Number 4 in a pink circle.](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Lizenzen kaufen**: Im letzten Schritt des Assistenten kaufen Sie Office 365-Lizenzen für jede Person in Ihrer Organisation, die sich mit der E-Mail-Adresse ihres Geschäftskontos bei Skype-Besprechungen registriert hat.  <br/> Wenn sich beispielsweise zwei Benutzer mit der E-Mail-Adresse ihres Geschäftskontos für Skype-Besprechungen registriert haben, müssen Sie zwei Lizenzen kaufen - eine Lizenz pro Person.  <br/> > [!NOTE]> Sie können Office 365 nicht verwalten, bis Sie die Lizenzen gekauft haben.           |
+|![Number one in a pink circle](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**Registrierung**: Bevor Sie Administrator werden können, müssen Sie mit Ihrer geschäftlichen E-Mail-Adresse bereits für Skype-Besprechungen registriert sein.  <br/> |
+|![Number two in a pink circle.](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Assistent ausführen**: Nach der Registrierung führen Sie den Assistenten aus, indem Sie einen der folgenden Schritte ausführen:  <br/>  Führen Sie den Assistenten **als Administrator werden** aus, der nach der Auswahl von **Administrator** im App-Startfeld angezeigt wird.  <br/>  ODER  <br/>  Wählen Sie ein **Upgrade auf Office 365** in Skype-Besprechungen aus, und wählen Sie dann das Office 365 Abonnement aus, auf das ein Upgrade ausgeführt werden soll.  <br/> |
+|![Number three in a pink circle.](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Domänenbesitz bestätigen**: Als nächstes bestätigen Sie für Office 365, dass Sie den Domänennamen (wie contoso.com) besitzen oder verwalten, der den E-Mail-Adressen Ihrer Organisation zugeordnet ist. Nur der Besitzer des Domänennamens verfügt über die Berechtigung zur Ausführung dieses Vorgangs.  <br/> |
+|![Number 4 in a pink circle.](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Lizenzen kaufen**: Im letzten Schritt des Assistenten kaufen Sie Office 365-Lizenzen für jede Person in Ihrer Organisation, die sich mit der E-Mail-Adresse ihres Geschäftskontos bei Skype-Besprechungen registriert hat.  <br/> Wenn sich beispielsweise zwei Benutzer mit der E-Mail-Adresse ihres Geschäftskontos für Skype-Besprechungen registriert haben, müssen Sie zwei Lizenzen kaufen - eine Lizenz pro Person.  <br/> > [!NOTE]> Sie können Office 365 nicht verwalten, bis Sie die Lizenzen gekauft haben.           |
 
 ## <a name="your-office-365-subscription"></a>Ihr Office 365-Abonnement
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Erfahren Sie mehr über integrierte apps und wie Sie Sie aktivieren können, um Drittanbieter-apps den Zugriff auf die Office 365 Informationen von Benutzern zu ermöglichen.
-ms.openlocfilehash: 932a99ec2c65b14e903ccffb86d291dac20ddfcf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244095"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361386"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Aktivieren oder Deaktivieren von integrierten Apps
 
@@ -48,11 +48,11 @@ Wenn integrierte Apps aktiviert sind und eine App verwendet wird, fordert die Ap
 
 Es gibt zwei Arten von Berechtigungen, die bei der Verwendung integrierter Apps in Office 365 verwendet werden: Benutzerberechtigungen und Administratorberechtigungen. Wenn Ihre Organisation beispielsweise für integrierte Apps aktiviert ist und ein Benutzer eine App eines Drittanbieters verwendet, könnte die App vom Benutzer die Berechtigung zum Lesen seiner Benutzerprofildetails, zum Bearbeiten oder Löschen seiner Dateien, zum Lesen von in Websitesammlungen enthaltenen Elementen und zum Senden von E-Mail im Namen dieses Benutzers fordern.
 
-![Benutzerberechtigungen für integrierte Apps](../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
+![Benutzerberechtigungen für integrierte Apps](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 
 Wenn ein Administrator eine APP für alle Benutzer in einer Organisation registriert, wird er aufgefordert, diese APP auf Informationen und Ressourcen in der Organisation zugreifen zu lassen. Danach werden andere Benutzer in der Organisation, wenn sie diese App benutzen, nicht mehr um Berechtigungen gebeten. Wenn ein Administrator eine App registriert, muss dieser Administrator sicherstellen, dass der Herausgeber dieser App vertrauenswürdig ist. Details zum Registrieren einer App finden Sie unter [Hinzufügen, Aktualisieren und Entfernen einer Anwendung](https://go.microsoft.com/fwlink/p/?LinkID=518600).
 
-![Administratorberechtigungen für integrierte Apps](../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
+![Administratorberechtigungen für integrierte Apps](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
 
 Wenn integrierte Apps deaktiviert sind, werden Apps, die bereits installiert sind und Berechtigungen für den Zugriff auf Informationen nicht deinstalliert, und die Berechtigungen werden auch nicht entfernt. Selbst wenn integrierte Apps deaktiviert sind, können Administratoren immer noch Apps registrieren, um sie für ihre Benutzer verfügbar zu machen und diesen Apps zu gestatten, auf die Informationen der Benutzer zuzugreifen. Details zum Entfernen einer registrierten App mit ihren Berechtigungen finden Sie unter [Hinzufügen, Aktualisieren und Entfernen einer Anwendung](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).
 

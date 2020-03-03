@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Power BI und wie Benutzer in Ihrer Organisation diesen Business Analytics-Dienst verwenden können.
-ms.openlocfilehash: 56a6dd1c90b8dcb810e74c36b5e7f93ab6a0eb2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254270"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361336"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI in Ihrer Organisation
 
@@ -102,7 +102,7 @@ Wenn ein Mandant von Microsoft erstellt wurde, können Sie diesen mit den folgen
     
 4. Klicken Sie oben links auf das App-Startsymbol, und wählen Sie **Admin** aus.
     
-    ![The Office 365 app launcher with the Admin app highlighted](../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Lesen Sie die Anweisungen auf der Seite **Administrator werden** , und wählen Sie dann **Ja, ich möchte der Administrator sein**aus.
     
@@ -180,7 +180,7 @@ Wenn ein Benutzer sich für Power BI registriert hat, Sie aber nicht möchten, d
     
 3. Deaktivieren Sie auf der Registerkarte **Lizenzen und apps** das Kontrollkästchen **Microsoft Power BI** .
     
-4. Wählen Sie **Save Changes**aus.
+4. Wählen Sie **Änderungen speichern** aus.
 
 ::: moniker-end
 

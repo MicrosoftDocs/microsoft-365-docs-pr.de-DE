@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Hier erfahren Sie, wie Sie OneDrive und eine Teamwebsite für die Speicherung und Freigabe von Dateien verwenden.
-ms.openlocfilehash: ec55e54fb15113589d7c9b68add511d2cfa9bc97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254082"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360496"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>Einrichten der Speicherung und Freigabe von Dateien in Office 365
 
@@ -42,7 +42,7 @@ Sehen Sie sich ein kurzes Video darüber an, wo Dateien in Office 365 gespeicher
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="where-you-can-store-documents-in-office-365"></a>Speicherorte für Dokumente in Office 365
 
@@ -52,7 +52,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 Sowohl OneDrive-als auch Teamwebsites bieten beliebigen Zugriff für Sie und Ihre Mitarbeiter.
   
-![Ein Diagramm, das zeigt, wie Office 365-Produkte OneDrive oder Team Websites verwenden können](../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Ein Diagramm, das zeigt, wie Office 365-Produkte OneDrive oder Team Websites verwenden können](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Hier sind Empfehlungen dafür, was an jedem Standort gespeichert werden soll, wenn Sie OneDrive und Teamwebsites zusammen verwenden:
   
@@ -81,7 +81,7 @@ Hier erfahren Sie, wie jede Person in Ihrem Team OneDrive einrichten und Dateien
 
 3. In OneDrive können Teammitglieder ihre eigenen geschäftsbezogenen Dateien speichern. Sie können entweder einzelne Dateien oder einen ganzen Ordner freigeben. Wählen Sie eine Datei oder einen Ordner aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Freigeben**aus.
 
-    ![Freigeben eines Ordners](../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![Freigeben eines Ordners](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. Lassen Sie auf der Seite " **Link senden** " die Standardauswahl für **alle Personen, die über den Link angezeigt und bearbeitet werden können**.
 
@@ -89,15 +89,15 @@ Hier erfahren Sie, wie jede Person in Ihrem Team OneDrive einrichten und Dateien
 
     Wenn Sie eine eigene Kopie der e-Mail erhalten möchten, die gesendet wird, fügen Sie Ihre e-Mail-Adresse zur Liste hinzu.
 
-    ![Geben Sie ein Link-Dialogfeld mit Anzeigen der Eingabe und Auswählen eines Namens frei.](../media/877e6587-db9d-4903-a87b-11e570eee926.png)
+    ![Geben Sie ein Link-Dialogfeld mit Anzeigen der Eingabe und Auswählen eines Namens frei.](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
 5. Wenn Sie die Eingabe der Personen abgeschlossen haben, für die Sie freigeben möchten, wählen Sie **senden**aus. Die e-Mail wird sofort an die von Ihnen eingeladenen Personen gesendet.
 
-    ![Einen Link freigeben und eine Liste mit Namen anzeigen](../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Einen Link freigeben und eine Liste mit Namen anzeigen](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Hier sehen Sie, wie die e-Mail aussieht. 
 
-    ![E-Mail mit Link zum Freigeben des OneDrive-Ordners](../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![E-Mail mit Link zum Freigeben des OneDrive-Ordners](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Hochladen von Dateien auf eine Teamwebsite für die Online Zusammenarbeit
 
@@ -138,15 +138,15 @@ Führen Sie zum Synchronisieren von Dateien zwischen Ihrer Teamwebsite und Ihrem
   
 4. Wenn Sie dann eine **Setup-OneDrive** -Eingabeaufforderung erhalten, melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
 
-    ![OneDrive-Setupbildschirm](../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive-Setupbildschirm](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. Wenn Sie Ihre OneDrive noch nicht synchronisiert haben, sehen Sie möglicherweise den Bildschirm **Dies ist Ihr OneDrive-Ordner** . Überprüfen Sie den Pfad unter **Ihrem OneDrive-Ordner ist hier**. Wählen Sie **Speicherort ändern** aus, wenn Sie einen anderen Pfad verwenden möchten, und wählen Sie dann **weiter**aus.
 
-    ![Ändern des lokalen Ordners auf diesem Bildschirm](../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![Ändern des lokalen Ordners auf diesem Bildschirm](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. Die Dateien auf Ihren Teamwebsites werden im linken Bereich des Datei-Explorers unter dem Namen Ihrer Organisation angezeigt. Die Dateien in OneDrive werden unter "OneDrive- \<Name der Organisation\>" angezeigt.
 
-    ![Sehen Sie, was in Ihrem lokalen Ordner synchronisiert wurde.](../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![Sehen Sie, was in Ihrem lokalen Ordner synchronisiert wurde.](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. Testen Sie die Synchronisierung, indem Sie eine Datei im Teamordner auf Ihrem Computer öffnen. Nehmen Sie eine Änderung vor, und wählen Sie **Speichern** aus.
 

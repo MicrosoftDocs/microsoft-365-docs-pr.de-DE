@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Hier erfahren Sie, wie Sie das Standarddesign von Office 365 ändern und an Ihr Firmen Logo oder Ihre Farbe anpassen können. '
-ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360636"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Anpassen des Office 365-Designs für Ihre Organisation
 
 Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Administrator Ihres Office 365 Business-Abonnements können Sie das Standarddesign, das in der oberen Navigationsleiste angezeigt wird, für alle Mitglieder Ihrer Organisation ändern. Sie können Ihr Firmen Logo hinzufügen und die Farben so ändern, dass Sie mit dem Rest Ihrer Marke übereinstimmen. Sie können sogar einen Ziel Link hinzufügen, zu dem Benutzer navigieren, wenn Sie Ihr Logo auswählen. Sie können hier das Standarddesign und das benutzerdefinierte Design Ergebnis in Office 365 sehen.
   
-![Standard Office 365 Design und benutzerdefiniertes Office 365 Design](../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Standard Office 365 Design und benutzerdefiniertes Office 365 Design](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Anpassen des Designs im Admin Center
 
@@ -62,7 +62,7 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
       
   - **Anzeigen des Benutzernamens**: Wählen Sie aus, ob der vollständige Name eines Benutzers an der Einstiegsstelle für den Konto-Manager oben rechts auf der Seite angezeigt werden soll, wenn der Benutzer angemeldet ist. Standardmäßig werden Benutzern Ihr Foto oder Ihre Initialen angezeigt, wenn kein Foto hochgeladen wurde.
     
-4. Wählen Sie **Save Changes**aus.
+4. Wählen Sie **Änderungen speichern** aus.
     
 Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Office 365, einschließlich Outlook und SharePoint-Seiten. Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben jederzeit entfernen. Kehren Sie einfach zur Design Seite zurück, und wählen Sie **benutzerdefinierte Designs entfernen**aus.
   

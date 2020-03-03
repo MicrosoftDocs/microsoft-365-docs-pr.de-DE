@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Informationen zum Einrichten eines e-Mail-Kontos in Outlook für Windows und Mac sowie zum Installieren von Office-Apps und zum Online Zugriff auf e-Mails.
-ms.openlocfilehash: 87a1bd45f763b4a802b083eb4936d67c50a92df3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254255"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361236"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Einrichten von Outlook zum Lesen von E-Mails
 
@@ -64,7 +64,7 @@ Beim ersten Öffnen der Outlook-App wird der Assistent zum Einrichten des Postei
 
 Nachdem Sie sich bei Office 365 angemeldet haben, wählen Sie **Outlook**aus.
   
-![Die Office 365 Startseite mit hervorgehobener Outlook-App](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Die Office 365 Startseite mit hervorgehobener Outlook-App](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen. 
   

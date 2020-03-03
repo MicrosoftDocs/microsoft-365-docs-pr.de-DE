@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3c1c89be11ff24ed5871f28bbee61f7adbeef8f2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 57e00c1b30667b7047de96621aaa7313c879f675
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254046"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360156"
 ---
 # <a name="contact-support-for-aruba"></a>Wenden Sie sich an den Support für Aruba
 

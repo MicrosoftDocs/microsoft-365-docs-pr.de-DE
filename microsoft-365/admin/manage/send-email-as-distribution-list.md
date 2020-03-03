@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Erfahren Sie, wie Sie E-Mails als Verteilerliste in Office 365 senden können.
-ms.openlocfilehash: f165279cf6cfbedda4f122f453c2321c16f412d3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252741"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361740"
 ---
 # <a name="send-email-as-a-distribution-list-in-office-365"></a>Senden einer E-Mail als Verteilerliste in Office 365
 
@@ -43,10 +43,10 @@ Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie einer Office 365
     
 3. Wählen Sie **Antworten**aus. 
     
-4. Wählen Sie unten in der Nachricht **mehr** \> **anzeigen aus aus**.<br/> ![Wählen Sie mehr aus, und wählen Sie dann anzeigen aus](../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. Wählen Sie unten in der Nachricht **mehr** \> **anzeigen aus aus**.<br/> ![Wählen Sie mehr aus, und wählen Sie dann anzeigen aus](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Klicken Sie mit der rechten Maustaste auf die von- `Ina@weewalter.me` Adresse-wie-und wählen Sie **Entfernen**aus.<br/> ![Entfernen des from-Alias](../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Klicken Sie mit der rechten Maustaste auf die von- `Ina@weewalter.me` Adresse-wie-und wählen Sie **Entfernen**aus.<br/> ![Entfernen des from-Alias](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Geben Sie dann die Verteilerlisten Adresse wie support@contoso.com ein, und senden Sie die Nachricht. Wenn Sie das nächste Mal von der Verteilerliste Antworten, wird Ihre Adresse als Option in der Liste **von** angezeigt.<br/>![Alias des freigegebenen Postfachs wird angezeigt](../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Geben Sie dann die Verteilerlisten Adresse wie support@contoso.com ein, und senden Sie die Nachricht. Wenn Sie das nächste Mal von der Verteilerliste Antworten, wird Ihre Adresse als Option in der Liste **von** angezeigt.<br/>![Alias des freigegebenen Postfachs wird angezeigt](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   
 

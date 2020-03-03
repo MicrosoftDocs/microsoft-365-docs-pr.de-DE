@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Hier erfahren Sie, wie Sie einen Subscription Advisor-Partner als Partner von Record zum Zeitpunkt Office 365 Kaufs, Ändern des Partners oder Löschen eines Partners aus einem Abonnement hinzufügen.
-ms.openlocfilehash: 22b4108db8ecff1af14706ceede746bec8743d54
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244138"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361580"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 

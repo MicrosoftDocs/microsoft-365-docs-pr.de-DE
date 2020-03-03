@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'Hier erfahren Sie, wie Sie Cortana verwenden, wenn es in Office 365 integriert ist. Sie können Cortana im Admin Center deaktivieren, um den Zugriff auf die Daten Ihrer Organisation einzuschränken. '
-ms.openlocfilehash: 21de80d127498dd40db932923a8d650b87b8a24c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8f20c9b96ee57dcdf5da99dc08ffeb72465bc515
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254342"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361436"
 ---
 # <a name="cortana-in-office-365"></a>Cortana in Office 365
 
@@ -46,7 +46,7 @@ Cortana optionale verbundene Dienste können für Mitarbeiter in Ihrer Organisat
 
 4. Aktivieren Sie das Kontrollkästchen für **Cortana optionale verbundene Erfahrungen zulassen, um die von Microsoft gehosteten Daten Ihrer Organisation zu verwenden** , um Cortana verbundene Benutzeroberflächen zu aktivieren oder zu deaktivieren.
 
-5. Wählen Sie **Save Changes**aus.
+5. Wählen Sie **Änderungen speichern** aus.
 
 ## <a name="turn-off-cortana-ost-experiences"></a>Deaktivieren von Cortana Ost-Erlebnissen
 
