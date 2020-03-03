@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280158"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370484"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -61,7 +61,7 @@ Die neue MailItemsAccessed-Postfachaktion ersetzt "MessageBind" in der Postfach�
 
 - MessageBind-Aktionen löste beim mehrfachen Zugriff auf dieselbe E-Mail-Nachricht die Erstellung mehrerer Überwachungsdatensätze aus und führte dadurch zu überfüllten Überwachungsprotokollen. Im Gegensatz dazu werden MailItemsAccessed-Ereignisse in weniger Überwachungsdatensätzen aggregiert.
 
-Weitere Informationen zur Postfachüberwachungsprotokollierung finden Sie unter [Verwalten der Postfachüberwachungs](enable-mailbox-auditing.md).
+Informationen zu Überwachungsdatensätzen für MailItemsAccessed-Aktivitäten finden Sie unter [Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten](mailitemsaccessed-forensics-investigations.md).
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>Suchen nach MailItemsAccessed-Überwachungsdatensätzen
 
