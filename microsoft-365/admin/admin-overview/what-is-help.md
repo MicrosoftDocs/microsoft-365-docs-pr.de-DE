@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über die Möglichkeiten, wie Sie mithilfe des Microsoft 365 Admin Center Hilfe erhalten können.
-ms.openlocfilehash: 4aa2d46121aa1a817381592a02bbb9b875207427
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241503"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352976"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -43,7 +43,7 @@ Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microso
                     <a href="what-is-help.md#integrated-help">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -62,7 +62,7 @@ Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microso
                     <a href="what-is-help.md#modern-self-help-powered-by-ai">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -81,7 +81,7 @@ Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microso
                     <a href="what-is-help.md#guides-and-articles">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -98,7 +98,7 @@ Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microso
 ## <a name="integrated-help"></a>Integrierte Hilfe
 Die Hilfe ist im gesamten Admin Center integriert, daher ist Sie genau dort, wo Sie Sie benötigen. Oben auf vielen Seiten finden Sie einen Inline Hilfetext, der eine Informationsübersicht über die Aufgabe bietet, sowie Links zu Artikeln, in denen Sie schnell die offizielle Dokumentation für ein vertieftes lernen finden können.
 
-![Seite "Gruppen" mit Inline Hilfe und Links zu Artikeln](../media/integrated-help.png)
+![Seite "Gruppen" mit Inline Hilfe und Links zu Artikeln](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>Moderne Selbsthilfe powered by AI
 
@@ -106,7 +106,7 @@ Wenn Sie die Schaltfläche "Hilfe benötigen" im Microsoft 365 Admin Center ausw
 
 Oder verwenden Sie den Support-Assistenten, wenn Sie nicht genau wissen, wie Sie in ihrer spezifischen Situation etwas erledigen können. Diese Erfahrung ist derzeit nur in englischer Sprache verfügbar. Verwenden Sie einfach die Umschaltfläche oben im Bereich "Hilfe benötigen", um Sie zu aktivieren. Der Support-Assistent bietet eine Konversations Schnittstelle, um Hilfe zu erhalten. Geben Sie Ihre Abfrage ein, und der Chatbot stellt Klärungs Fragen zur Verfügung, damit Sie die richtige Antwort für Ihre spezifische Situation erhalten. Betrachten Sie es als Ihren virtuellen Helfer, um Lösungen zu entdecken und Aufgaben abzuschließen.
 
-![Moderne Selbsthilfe](../media/help-options.png)
+![Moderne Selbsthilfe](../../media/help-options.png)
 
 Natürlich sind manchmal Fragen am besten von Menschen beantwortet. Wenn unsere moderne Selbsthilfe keine Antwort hat, haben Sie immer die Möglichkeit, unsere Support-Mitarbeiter zu kontaktieren.
 

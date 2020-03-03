@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 950ab593ae70a4f3fac1b73e603d264660181d4a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7b3f3ecc4d4291e0367535ae295920c67668a9c7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243802"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359716"
 ---
-# <a name="contact-support-for-bulgaria"></a><span data-ttu-id="18c42-103">Kontaktieren des Supports für Bulgarien</span><span class="sxs-lookup"><span data-stu-id="18c42-103">Contact support for Bulgaria</span></span>
+# <a name="contact-support-for-bulgaria"></a><span data-ttu-id="dd727-103">Kontaktieren des Supports für Bulgarien</span><span class="sxs-lookup"><span data-stu-id="dd727-103">Contact support for Bulgaria</span></span>
 
-<span data-ttu-id="18c42-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="18c42-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="dd727-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="dd727-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="18c42-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="18c42-105">Phone number</span></span>
-<span data-ttu-id="18c42-106">00800 118 4446</span><span class="sxs-lookup"><span data-stu-id="18c42-106">00800 118 4446</span></span>
+## <a name="phone-number"></a><span data-ttu-id="dd727-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="dd727-105">Phone number</span></span>
+<span data-ttu-id="dd727-106">00800 118 4446</span><span class="sxs-lookup"><span data-stu-id="dd727-106">00800 118 4446</span></span>
 
-## <a name="hours"></a><span data-ttu-id="18c42-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="18c42-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="18c42-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="18c42-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="dd727-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="dd727-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="dd727-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="dd727-108">Billing Support:</span></span>
 
-<span data-ttu-id="18c42-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="18c42-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="dd727-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="dd727-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="18c42-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="18c42-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="dd727-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="dd727-110">Technical Support:</span></span>
 
-<span data-ttu-id="18c42-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="18c42-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="dd727-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="dd727-111">English: 24 hours a day, 7 days a week</span></span>

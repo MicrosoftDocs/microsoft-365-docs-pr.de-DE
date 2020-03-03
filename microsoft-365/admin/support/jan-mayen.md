@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 202bdbde46dcbf653595a61c19bc58a81aeea854
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e95c2ed9f88181d38aa0d84dd700186de5953ae8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253826"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358236"
 ---
-# <a name="contact-support-for-jan-mayen"></a><span data-ttu-id="fccba-103">Kontaktieren des Supports für Jan Mayen</span><span class="sxs-lookup"><span data-stu-id="fccba-103">Contact support for Jan Mayen</span></span>
+# <a name="contact-support-for-jan-mayen"></a><span data-ttu-id="c34a1-103">Kontaktieren des Supports für Jan Mayen</span><span class="sxs-lookup"><span data-stu-id="c34a1-103">Contact support for Jan Mayen</span></span>
 
-<span data-ttu-id="fccba-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="fccba-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c34a1-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="c34a1-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="fccba-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="fccba-105">Phone number</span></span>
-<span data-ttu-id="fccba-106">+ 1 312 843 5149</span><span class="sxs-lookup"><span data-stu-id="fccba-106">+1 312 843 5149</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c34a1-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c34a1-105">Phone number</span></span>
+<span data-ttu-id="c34a1-106">+ 1 312 843 5149</span><span class="sxs-lookup"><span data-stu-id="c34a1-106">+1 312 843 5149</span></span>
 
-## <a name="hours"></a><span data-ttu-id="fccba-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="fccba-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="fccba-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="fccba-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c34a1-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="c34a1-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c34a1-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="c34a1-108">Billing Support:</span></span>
 
-<span data-ttu-id="fccba-109">Englisch: Mo-Fr 9.00-18.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="fccba-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="c34a1-109">Englisch: Mo-Fr 9.00-18.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c34a1-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="fccba-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="fccba-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c34a1-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="c34a1-110">Technical Support:</span></span>
 
-<span data-ttu-id="fccba-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="fccba-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c34a1-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="c34a1-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="fccba-112">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="fccba-112">International call charges apply</span></span>
+<span data-ttu-id="c34a1-112">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="c34a1-112">International call charges apply</span></span>

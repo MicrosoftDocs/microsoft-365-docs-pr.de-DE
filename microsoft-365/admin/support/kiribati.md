@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b3cba61cddf11b1a33acb7a3312a06c33bb6845
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ffb1bd71d30cabf59e2ec837f532ff7291508c5d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253806"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358096"
 ---
-# <a name="contact-support-for-kiribati"></a><span data-ttu-id="aed08-103">Wenden Sie sich an den Support für Kiribati</span><span class="sxs-lookup"><span data-stu-id="aed08-103">Contact support for Kiribati</span></span>
+# <a name="contact-support-for-kiribati"></a><span data-ttu-id="27bac-103">Wenden Sie sich an den Support für Kiribati</span><span class="sxs-lookup"><span data-stu-id="27bac-103">Contact support for Kiribati</span></span>
 
-<span data-ttu-id="aed08-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="aed08-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="27bac-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="27bac-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="aed08-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="aed08-105">Phone number</span></span>
-<span data-ttu-id="aed08-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="aed08-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="27bac-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="27bac-105">Phone number</span></span>
+<span data-ttu-id="27bac-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="27bac-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="aed08-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="aed08-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="aed08-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="aed08-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="27bac-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="27bac-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="27bac-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="27bac-108">Billing Support:</span></span>
 
-<span data-ttu-id="aed08-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="aed08-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="27bac-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="27bac-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="aed08-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="aed08-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="27bac-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="27bac-110">Technical Support:</span></span>
 
-<span data-ttu-id="aed08-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="aed08-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="27bac-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="27bac-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="aed08-112">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="aed08-112">International call charges apply</span></span>
+<span data-ttu-id="27bac-112">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="27bac-112">International call charges apply</span></span>

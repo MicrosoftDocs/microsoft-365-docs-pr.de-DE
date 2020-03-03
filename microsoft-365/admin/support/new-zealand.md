@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 86db0428914b80a0a76c0837bb5d0d44e93ce150
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7f0238692caedaacdf7bb7b15efe540eee8db74e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253698"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357456"
 ---
-# <a name="contact-support-for-new-zealand"></a><span data-ttu-id="cbf4a-103">Kontaktieren des Supports für Neuseeland</span><span class="sxs-lookup"><span data-stu-id="cbf4a-103">Contact support for New Zealand</span></span>
+# <a name="contact-support-for-new-zealand"></a><span data-ttu-id="d2971-103">Kontaktieren des Supports für Neuseeland</span><span class="sxs-lookup"><span data-stu-id="d2971-103">Contact support for New Zealand</span></span>
 
-<span data-ttu-id="cbf4a-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="cbf4a-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d2971-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d2971-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="cbf4a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="cbf4a-105">Phone number</span></span>
-<span data-ttu-id="cbf4a-106">0800 194 197</span><span class="sxs-lookup"><span data-stu-id="cbf4a-106">0800 194 197</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d2971-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d2971-105">Phone number</span></span>
+<span data-ttu-id="d2971-106">0800 194 197</span><span class="sxs-lookup"><span data-stu-id="d2971-106">0800 194 197</span></span>
 
-## <a name="hours"></a><span data-ttu-id="cbf4a-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="cbf4a-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="cbf4a-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="cbf4a-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d2971-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="d2971-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d2971-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="d2971-108">Billing Support:</span></span>
 
-<span data-ttu-id="cbf4a-109">Englisch: Mo-Fr 9.00-18.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="cbf4a-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="d2971-109">Englisch: Mo-Fr 9.00-18.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="d2971-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="cbf4a-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="cbf4a-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d2971-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="d2971-110">Technical Support:</span></span>
 
-<span data-ttu-id="cbf4a-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="cbf4a-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d2971-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="d2971-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="cbf4a-112">Alternative Telefonnummer: 09 912 7298</span><span class="sxs-lookup"><span data-stu-id="cbf4a-112">Alternative Phone Number: 09 912 7298</span></span>
+<span data-ttu-id="d2971-112">Alternative Telefonnummer: 09 912 7298</span><span class="sxs-lookup"><span data-stu-id="d2971-112">Alternative Phone Number: 09 912 7298</span></span>
 
-<span data-ttu-id="cbf4a-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="cbf4a-113">Local call charges apply</span></span>
+<span data-ttu-id="d2971-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="d2971-113">Local call charges apply</span></span>

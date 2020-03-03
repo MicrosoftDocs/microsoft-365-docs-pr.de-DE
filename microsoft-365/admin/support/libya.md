@@ -12,37 +12,37 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ed5f4da6be98b3cdc2d4502f8a5ce21fb2b38938
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5db584d1d68c9c83ef5e4cf8732e0a1ce0772d4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253752"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357916"
 ---
-# <a name="contact-support-for-libya"></a><span data-ttu-id="771e2-103">Kontaktieren des Supports für Libyen</span><span class="sxs-lookup"><span data-stu-id="771e2-103">Contact support for Libya</span></span>
+# <a name="contact-support-for-libya"></a><span data-ttu-id="27b82-103">Kontaktieren des Supports für Libyen</span><span class="sxs-lookup"><span data-stu-id="27b82-103">Contact support for Libya</span></span>
 
-<span data-ttu-id="771e2-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="771e2-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="27b82-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="27b82-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="771e2-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="771e2-105">Phone number</span></span>
-<span data-ttu-id="771e2-106">+ 965 2243 1071</span><span class="sxs-lookup"><span data-stu-id="771e2-106">+965 2243 1071</span></span>
+## <a name="phone-number"></a><span data-ttu-id="27b82-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="27b82-105">Phone number</span></span>
+<span data-ttu-id="27b82-106">+ 965 2243 1071</span><span class="sxs-lookup"><span data-stu-id="27b82-106">+965 2243 1071</span></span>
 
-<span data-ttu-id="771e2-107">Option 2 auswählen</span><span class="sxs-lookup"><span data-stu-id="771e2-107">Select option 2</span></span>
+<span data-ttu-id="27b82-107">Option 2 auswählen</span><span class="sxs-lookup"><span data-stu-id="27b82-107">Select option 2</span></span>
 
-<span data-ttu-id="771e2-108">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="771e2-108">Select option 9</span></span>
+<span data-ttu-id="27b82-108">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="27b82-108">Select option 9</span></span>
 
-<span data-ttu-id="771e2-109">Geben Sie Code 7701</span><span class="sxs-lookup"><span data-stu-id="771e2-109">Enter code 7701</span></span>
+<span data-ttu-id="27b82-109">Geben Sie Code 7701</span><span class="sxs-lookup"><span data-stu-id="27b82-109">Enter code 7701</span></span>
 
-## <a name="hours"></a><span data-ttu-id="771e2-110">Stunden</span><span class="sxs-lookup"><span data-stu-id="771e2-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="771e2-111">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="771e2-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="27b82-110">Stunden</span><span class="sxs-lookup"><span data-stu-id="27b82-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="27b82-111">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="27b82-111">Billing Support:</span></span>
 
-<span data-ttu-id="771e2-112">Arabisch: So-Do 9.00-17.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="771e2-112">Arabic: Sun-Thu 9 AM-5 PM</span></span>
+<span data-ttu-id="27b82-112">Arabisch: So-Do 9.00-17.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="27b82-112">Arabic: Sun-Thu 9 AM-5 PM</span></span>
 
-<span data-ttu-id="771e2-113">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="771e2-113">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="27b82-113">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="27b82-113">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="771e2-114">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="771e2-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="27b82-114">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="27b82-114">Technical Support:</span></span>
 
-<span data-ttu-id="771e2-115">Arabisch: So-Do 9.00-17.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="771e2-115">Arabic: Sun-Thu 9 AM-5 PM</span></span>
+<span data-ttu-id="27b82-115">Arabisch: So-Do 9.00-17.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="27b82-115">Arabic: Sun-Thu 9 AM-5 PM</span></span>
 
-<span data-ttu-id="771e2-116">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="771e2-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="27b82-116">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="27b82-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="771e2-117">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="771e2-117">International call charges apply</span></span>
+<span data-ttu-id="27b82-117">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="27b82-117">International call charges apply</span></span>

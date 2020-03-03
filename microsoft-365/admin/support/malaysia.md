@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3dbcfce43d458be9a02b37d8e607e6ed5b760bb7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a8dc5b0b394ff14cdc1524a7056d69b2f71895d0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253740"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357816"
 ---
-# <a name="contact-support-for-malaysia"></a><span data-ttu-id="eb171-103">Kontakt Support für Malaysia</span><span class="sxs-lookup"><span data-stu-id="eb171-103">Contact support for Malaysia</span></span>
+# <a name="contact-support-for-malaysia"></a><span data-ttu-id="c356c-103">Kontakt Support für Malaysia</span><span class="sxs-lookup"><span data-stu-id="c356c-103">Contact support for Malaysia</span></span>
 
-<span data-ttu-id="eb171-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="eb171-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c356c-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="c356c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="eb171-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="eb171-105">Phone number</span></span>
-<span data-ttu-id="eb171-106">1800 22 0030</span><span class="sxs-lookup"><span data-stu-id="eb171-106">1800 22 0030</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c356c-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c356c-105">Phone number</span></span>
+<span data-ttu-id="c356c-106">1800 22 0030</span><span class="sxs-lookup"><span data-stu-id="c356c-106">1800 22 0030</span></span>
 
-## <a name="hours"></a><span data-ttu-id="eb171-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="eb171-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="eb171-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="eb171-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c356c-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="c356c-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c356c-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="c356c-108">Billing Support:</span></span>
 
-<span data-ttu-id="eb171-109">Englisch: Mo-Fr 9.00-18.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="eb171-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="c356c-109">Englisch: Mo-Fr 9.00-18.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c356c-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="eb171-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="eb171-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c356c-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="c356c-110">Technical Support:</span></span>
 
-<span data-ttu-id="eb171-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="eb171-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c356c-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="c356c-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="eb171-112">Alternative Telefonnummer: 03 6207 4606</span><span class="sxs-lookup"><span data-stu-id="eb171-112">Alternative Phone Number: 03 6207 4606</span></span>
+<span data-ttu-id="c356c-112">Alternative Telefonnummer: 03 6207 4606</span><span class="sxs-lookup"><span data-stu-id="c356c-112">Alternative Phone Number: 03 6207 4606</span></span>
 
-<span data-ttu-id="eb171-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="eb171-113">Local call charges apply</span></span>
+<span data-ttu-id="c356c-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="c356c-113">Local call charges apply</span></span>

@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2b0b81963ac2c2bf28e891d36952ef2112154eb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3758167723594916661ef4ffd14bf62e768c0c19
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244486"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357436"
 ---
-# <a name="contact-support-for-nauru"></a><span data-ttu-id="f7a14-103">Kontaktieren des Supports für Nauru</span><span class="sxs-lookup"><span data-stu-id="f7a14-103">Contact support for Nauru</span></span>
+# <a name="contact-support-for-nauru"></a><span data-ttu-id="a5e98-103">Kontaktieren des Supports für Nauru</span><span class="sxs-lookup"><span data-stu-id="a5e98-103">Contact support for Nauru</span></span>
 
-<span data-ttu-id="f7a14-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="f7a14-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="a5e98-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="a5e98-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f7a14-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f7a14-105">Phone number</span></span>
-<span data-ttu-id="f7a14-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="f7a14-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a5e98-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a5e98-105">Phone number</span></span>
+<span data-ttu-id="a5e98-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="a5e98-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f7a14-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="f7a14-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f7a14-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="f7a14-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a5e98-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="a5e98-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a5e98-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="a5e98-108">Billing Support:</span></span>
 
-<span data-ttu-id="f7a14-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="f7a14-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="a5e98-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="a5e98-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f7a14-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="f7a14-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a5e98-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="a5e98-110">Technical Support:</span></span>
 
-<span data-ttu-id="f7a14-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="f7a14-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a5e98-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="a5e98-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f7a14-112">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="f7a14-112">International call charges apply</span></span>
+<span data-ttu-id="a5e98-112">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="a5e98-112">International call charges apply</span></span>
