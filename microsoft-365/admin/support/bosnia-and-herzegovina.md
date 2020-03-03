@@ -12,33 +12,33 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c91de17041e032e7aefda25b83f5b57a852120b7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: af71764ce0379d6f5c0a2ec03357177cc24d3cb3
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243819"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359806"
 ---
-# <a name="contact-support-for-bosnia-and-herzegovnia"></a><span data-ttu-id="6e819-103">Kontaktieren des Supports für Bosnien und Herzegowina</span><span class="sxs-lookup"><span data-stu-id="6e819-103">Contact support for Bosnia and Herzegovnia</span></span>
+# <a name="contact-support-for-bosnia-and-herzegovnia"></a><span data-ttu-id="da091-103">Kontaktieren des Supports für Bosnien und Herzegowina</span><span class="sxs-lookup"><span data-stu-id="da091-103">Contact support for Bosnia and Herzegovnia</span></span>
 
-<span data-ttu-id="6e819-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6e819-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="da091-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="da091-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6e819-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="6e819-105">Phone number</span></span>
-<span data-ttu-id="6e819-106">0800 20 230</span><span class="sxs-lookup"><span data-stu-id="6e819-106">0800 20 230</span></span>
+## <a name="phone-number"></a><span data-ttu-id="da091-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="da091-105">Phone number</span></span>
+<span data-ttu-id="da091-106">0800 20 230</span><span class="sxs-lookup"><span data-stu-id="da091-106">0800 20 230</span></span>
 
-<span data-ttu-id="6e819-107">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="6e819-107">Select option 9</span></span>
+<span data-ttu-id="da091-107">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="da091-107">Select option 9</span></span>
 
-<span data-ttu-id="6e819-108">Geben Sie Code 7700</span><span class="sxs-lookup"><span data-stu-id="6e819-108">Enter code 7700</span></span>
+<span data-ttu-id="da091-108">Geben Sie Code 7700</span><span class="sxs-lookup"><span data-stu-id="da091-108">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6e819-109">Stunden</span><span class="sxs-lookup"><span data-stu-id="6e819-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6e819-110">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="6e819-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="da091-109">Stunden</span><span class="sxs-lookup"><span data-stu-id="da091-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="da091-110">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="da091-110">Billing Support:</span></span>
 
-<span data-ttu-id="6e819-111">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="6e819-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="da091-111">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="da091-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6e819-112">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="6e819-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="da091-112">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="da091-112">Technical Support:</span></span>
 
-<span data-ttu-id="6e819-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="6e819-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="da091-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="da091-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6e819-114">Alternative Telefonnummer: + 387 33 606 100</span><span class="sxs-lookup"><span data-stu-id="6e819-114">Alternative Phone Number: +387 33 606 100</span></span>
+<span data-ttu-id="da091-114">Alternative Telefonnummer: + 387 33 606 100</span><span class="sxs-lookup"><span data-stu-id="da091-114">Alternative Phone Number: +387 33 606 100</span></span>
 
-<span data-ttu-id="6e819-115">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="6e819-115">International call charges apply</span></span>
+<span data-ttu-id="da091-115">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="da091-115">International call charges apply</span></span>
