@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179216"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372013"
 ---
 # <a name="insider-risk-management-alerts"></a>Warnungen beim Insider Risikomanagement
 
@@ -35,6 +35,9 @@ Das Alert- **Dashboard** für Insider Risiken ermöglicht Ihnen das Anzeigen und
     - Durchschnittliche Zeit zum Beheben von Warnungen mit niedrigem Schweregrad, aufgeführt in Stunden, Tagen oder Monaten.
 
 ![Alert-Dashboard für Insider-Risikomanagement](../media/insider-risk-alerts-dashboard.png)
+
+>[!NOTE]
+>Das Insider-Risikomanagement verwendet die integrierte Warnungs Drosselung, um Ihre Risiko Ermittlungen zu schützen und zu optimieren und die Erfahrung zu überprüfen. Diese Einschränkung schützt vor Problemen, die zu einer Überlastung von Richtlinienwarnungen führen können, wie beispielsweise falsch konfigurierte Daten-Konnektoren oder DLP-Richtlinien. Dadurch kann es zu Verzögerungen beim Anzeigen neuer Benachrichtigungen für einen Benutzer kommen.
 
 ## <a name="alert-status-and-severity"></a>Warnungsstatus und-Schweregrad
 

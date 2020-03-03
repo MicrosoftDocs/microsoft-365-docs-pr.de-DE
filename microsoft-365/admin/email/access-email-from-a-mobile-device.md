@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie über Ihr mobiles Gerät auf e-Mails zugreifen.
-ms.openlocfilehash: b50b6986fe44cb19119831774b4357c6efd543d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253104"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362390"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Optionen für den Zugriff auf e-Mails von Ihrem mobilen Gerät
 
@@ -35,7 +35,7 @@ Die Outlook für Android und Outlook für IOS Mobile Apps sind für Ihre Arbeit 
   
 Ihre Organisation erfordert, dass Sie die Mobile Apps Outlook für Android oder Outlook für IOS verwenden, um auf Firmen-e-Mails, Kalender und Kontakte zuzugreifen. Nachdem Sie Outlook für Android oder Outlook für IOS heruntergeladen und installiert haben, werden Ihre Daten mit der Synchronisierung beginnen.
   
-![Beispiel-e-Mail zur Verwendung von Outlook zum Synchronisieren von e-Mails](../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Beispiel-e-Mail zur Verwendung von Outlook zum Synchronisieren von e-Mails](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
 Weitere Outlook-Funktionen finden Sie [unter Optimieren der Outlook-Mobile App für Ihr IOS-oder Android-Telefon](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx) . Und wechseln Sie zu [Outlook für IOS und Android Help Center](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx) , wenn Sie Probleme ausführen. 
   

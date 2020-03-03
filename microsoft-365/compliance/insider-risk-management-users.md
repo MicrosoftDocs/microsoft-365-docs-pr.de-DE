@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179106"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370494"
 ---
 # <a name="insider-risk-management-users"></a>Benutzer für das Insider Risikomanagement
 
@@ -30,6 +30,9 @@ Insider Risk Management-Benutzer sind Mitarbeiter in Ihrer Organisation, die in 
 - **Case**: der aktuell aktive Fall für den Benutzer.
 
 ![Benutzerdashboard für das Insider Risikomanagement](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>Die Anzahl der Benutzer, die im benutzerdashboard angezeigt werden, kann in einigen Fällen je nach Volumen aktiver Warnungen und übereinstimmender Richtlinien limitiert sein. Benutzer mit aktiven Warnungen werden angezeigt, wenn die Warnungen generiert werden, und es kann in seltenen Fällen vorkommen, dass die maximale Anzahl angezeigter Benutzer erreicht wird. In diesem Fall werden Benutzer mit aktiven Warnungen, die nicht angezeigt werden, dem benutzerdashboard hinzugefügt, da vorhandene Benachrichtigungen für Benutzer noch älter sind.
 
 ## <a name="view-user-details"></a>Anzeigen von Benutzer Details
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Hier finden Sie Informationen zum Verwalten von Message Center-Nachrichten, um die Änderungsverwaltung zu unterstützen.
-ms.openlocfilehash: f2c7c5324fe77d1d3dc13a235d7a2f391b09a603
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252813"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361930"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
@@ -51,7 +51,7 @@ Verwenden Sie das Dropdownmenü **Filter** , um eine gefilterte Ansicht von Nach
 
 Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In diesem Diagramm werden die Nachrichten beispielsweise nach dem Datum der **Handlung** sortiert.
 
-![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../media/message-center-filter-act-by.png)
+![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Verwenden Sie das Dropdownmenü **Ansichten** , um eine gefilterte Ansicht von N
  
 Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In dieser Abbildung werden beispielsweise die Nachrichten nach dem Datum der **Handlung** sortiert.
 
-![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../media/message-center-old-admin-center1.png)
+![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Verwenden Sie das Dropdownmenü **Ansichten** , um eine gefilterte Ansicht von N
  
 Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In dieser Abbildung werden beispielsweise die Nachrichten nach dem Datum der **Handlung** sortiert.
 
-![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../media/message-center-old-admin-center1.png)
+![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 

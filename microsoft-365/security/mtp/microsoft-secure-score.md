@@ -17,14 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8bcfd7229a6e27b2e68523754c2b29c1bb9c3cdc
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266101"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372023"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
+# <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
 Microsoft Secure Score ist ein Maß für die Sicherheitslage einer Organisation mit einer höheren Zahl, die mehr Verbesserungs Aktionen anzeigt. Wenn Sie die Sicherheits Bewertungsempfehlungen befolgen, können Sie Ihre Organisation vor Bedrohungen schützen. Von einem zentralisierten Dashboard im Microsoft 365 Security Center aus können Organisationen die Sicherheit Ihrer Microsoft 365-Identitäten, Daten, apps, Geräte und Infrastruktur überwachen und daran arbeiten.
 
@@ -74,7 +74,7 @@ Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für ein
 * Helpdesk-Administrator
 * Benutzeradministrator
 * Service-Administrator
-* Sicherheitsleseberechtigter
+* Benutzer mit Leseberechtigung für Sicherheitsfunktionen
 * Sicherheitsoperator
 * Globaler Leser
 
@@ -145,6 +145,65 @@ Informationen zu geplanten Änderungen finden Sie unter [What es Coming in Micro
 Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Microsoft Secure Score ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Einfluss auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar.  
 
 Aus diesen Gründen wurden alle nicht erzielten Verbesserungs Aktionen entfernt. Ihrerseits ist keine Aktion erforderlich.
+
+### <a name="removed-device-improvement-actions"></a>Entfernte Geräte Verbesserungs Aktionen
+
+Nach einer Evaluierung der Microsoft Secure Score-Gerätekategorie für Verbesserungs Aktionen wurde festgestellt, dass diese Aktionen derzeit den Richtlinienstatus und nicht den Konfigurationsstatus von Geräten bewerten. Da die Konfiguration direkt mit der Sicherheitsposition verbunden ist, wurden die vorhandenen Geräteaktionen bestimmt, um die organisatorische Haltung nicht vollständig darzustellen.  Wir werden die aktuellen Aktionen in der Gerätekategorie entfernen, wenn wir eine Reihe von Empfehlungen zur Verfügung stellen, mit denen Diagnosedaten direkt verwendet werden, um die Position der Gerätesicherheit in vollem Umfang darzustellen.
+
+Die folgenden Verbesserungs Aktionen wurden entfernt:
+
+- Aktivieren der Verwaltung von mobilen Geräten in Microsoft InTune
+- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für Android
+- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für Android for Work
+- Erstellen einer Microsoft InTune-App-Schutzrichtlinie für Android
+- Erstellen einer Microsoft InTune-App-Schutzrichtlinie für IOS
+- Geräte markieren, für die keine Microsoft InTune-Konformitätsrichtlinie als nicht kompatibel zugewiesen ist
+- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für IOS
+- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für macOS
+- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für Windows
+- Erstellen eines Microsoft InTune-Konfigurationsprofils für Android
+- Erstellen eines Microsoft InTune-Konfigurationsprofils für Android for Work
+- Erstellen eines Microsoft InTune-Konfigurationsprofils für macOS
+- Erstellen eines Microsoft InTune-Konfigurationsprofils für IOS
+- Erstellen eines Microsoft InTune-Konfigurationsprofils für Windows
+- Aktivieren der verbesserten Jailbreak-Erkennung in Microsoft InTune
+- Erfordern, dass alle Geräte gepatcht werden, Virenschutz und Firewalls aktiviert sind
+- Aktivieren der Integration von Windows Defender ATP in Microsoft InTune
+- Erstellen einer Microsoft InTune-Windows-Informationsschutz Richtlinie
+- Erfordern von erweiterten Sicherheitskonfigurationen für alle Geräte
+- Bericht überprüfen blockierter Geräte wöchentlich
+
+### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen
+
+Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede Verbesserungs Aktion messbar und zuverlässig ist, haben wir die folgenden Verbesserungs Aktionen entfernt:
+
+- Aktivieren der Aufzeichnung von Überwachungsdaten
+- Ermitteln riskanter und nicht kompatibler Shadow-IT-Anwendungen
+- Überprüfen von Berechtigungen & blockieren riskanter OAuth-Anwendungen, die mit Ihrer Umgebung verbunden sind
+- Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
+
+### <a name="mfa-improvement-action-updates"></a>Aktualisierung der MFA-Verbesserungs Aktionen
+
+Um den Anforderungen an Unternehmen Rechnung zu tragen, beim Anwenden von Richtlinien, die mit Ihrem Unternehmen zusammenarbeiten, die höchste Sicherheit zu gewährleisten, hat Microsoft Secure Score drei Verbesserungs Aktionen im Bereich der mehrstufigen Authentifizierung entfernt und zwei hinzugefügt.
+
+Verbesserungs Aktionen wurden entfernt:
+
+- Registrieren aller Benutzer für mehrstufige Authentifizierung
+- MFA für alle Benutzer erforderlich
+- MFA für Azure AD privilegierten Rollen erforderlich
+
+Verbesserungs Aktionen wurden hinzugefügt:
+
+- Sicherstellen, dass alle Benutzer mehrstufige Authentifizierung für sicheren Zugriff ausführen können
+- MFA für Administratorrollen erforderlich
+
+ Diese neuen Verbesserungs Aktionen erfordern das Registrieren Ihrer Benutzer oder Administratoren für mehrstufige Authentifizierung (MFA) in Ihrem Verzeichnis und das Festlegen der richtigen Richtlinien, die Ihren organisatorischen Anforderungen entsprechen. Das Hauptziel besteht in der Flexibilität bei gleichzeitiger Sicherstellung, dass alle Benutzer und Administratoren sich mit mehreren Faktoren oder mit risikobasierten Identitäts Überprüfungs Ansagen authentifizieren können. Dies kann die Form haben, dass mehrere Richtlinien mit bereichsbezogenen Entscheidungen angewendet werden oder Sicherheitsstandards (am 16. März) festgelegt werden, mit denen Microsoft entscheiden kann, wann die Benutzer für MFA herausgefordert werden sollen.
+
+### <a name="removed-review-improvement-actions"></a>Verbesserungs Aktionen "überprüfen" entfernt
+
+Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Überarbeitungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.  
+
+Aus diesen Gründen wurden alle Verbesserungs Aktionen, die eine Überarbeitungs Kadenz erforderten, vorübergehend entfernt. Ihrerseits ist keine Aktion erforderlich.
 
 ### <a name="preview-features"></a>Vorschaufeatures
 
