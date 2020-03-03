@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Erfahren Sie, wie Sie Ihr Abonnement für Office 365 Business Premium, Office 365 Business Essentials, Office 365 Business oder Office 365 Education einrichten.
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243921"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360446"
 ---
 # <a name="set-up-office-365-for-business"></a>Einrichten von Office 365 Business
 
@@ -168,7 +168,7 @@ Wenn Sie Office 365, betrieben von 21Vianet verwenden, melden Sie sich bei [http
 
 1. Wählen Sie **E-Mail** aus.
 
-2. Wählen Sie auf der Outlook-Navigationsleiste **Einstellungen**![Einstellungen: Profil aktualisieren, Software installieren und mit der Cloud verbinden](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> **Organisationsprofil** aus.
+2. Wählen Sie auf der Outlook-Navigationsleiste **Einstellungen**![Einstellungen: Profil aktualisieren, Software installieren und mit der Cloud verbinden](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> **Organisationsprofil** aus.
 
 3. Wählen Sie im linken Bereich **E-Mail** aus, und wählen Sie unter **Konten** die Option **Verbundene Konten** aus.
 

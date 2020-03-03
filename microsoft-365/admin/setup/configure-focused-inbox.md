@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Erfahren Sie, wie Sie den Posteingang mit Relevanz mit dem Posteingang für alle oder bestimmte Benutzer Ihrer Organisation konfigurieren. '
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254132"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360876"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurieren des Posteingangs mit Relevanz für jeden Benutzer in Ihrer Organisation
 
@@ -52,7 +52,7 @@ Get-OrganizationConfig
 
 4. Suchen Sie nach **FocusedInboxOn**, um die aktuelle Einstellung anzuzeigen: 
     
-    ![Antwort von PowerShell zum Status des Posteingangs mit Relevanz.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Antwort von PowerShell zum Status des Posteingangs mit Relevanz.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Führen Sie das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu deaktivieren.
     
@@ -74,11 +74,11 @@ Get-OrganizationConfig
 
 Der Posteingang mit Relevanz wird Benutzern erst nach dem Schließen und erneuten Starten von Outlook angezeigt. Beim Neustart von Outlook wird ein Tipp in der Outlook-Benutzeroberfläche angezeigt, der auf die Möglichkeit verweist, den neuen Posteingang mit Relevanz zu nutzen.
   
-![Die Abbildung zeigt, wie der Posteingang mit Relevanz aussieht, wenn ein Benutzer Outlook im Web zum ersten Mal öffnet.](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![Die Abbildung zeigt, wie der Posteingang mit Relevanz aussieht, wenn ein Benutzer Outlook im Web zum ersten Mal öffnet.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 Wenn Sie von "Clutter" zum Posteingang mit Relevanz wechseln, können sie entscheiden, ob sie ihn aktivieren ("Testen") oder das Feature schließen möchten. Wenn ein Benutzer über mehrere (unterstützte) Clients verfügt, kann er den Posteingang mit Relevanz für jeden Client einzeln aktivieren bzw. deaktivieren. Der Tipp sieht so aus:
   
-![So sieht der Posteingang mit Relevanz aus, wenn er für Ihre Benutzer bereitgestellt wurde und Outlook erneut geöffnet wird.](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![So sieht der Posteingang mit Relevanz aus, wenn er für Ihre Benutzer bereitgestellt wurde und Outlook erneut geöffnet wird.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 Wenn sich ein Benutzer zur Nutzung des Posteingangs mit Relevanz entscheidet, wird die Funktion "Clutter" automatisch deaktiviert. Der Ordner "Clutter" wird in einen Standardordner umgewandelt, sodass der Benutzer ihn umbenennen oder löschen kann.
   
@@ -98,7 +98,7 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 
 4. Suchen Sie nach "FocusedInboxOn", um die aktuelle Einstellung anzuzeigen:
     
-    ![Antwort von PowerShell zum Status des Posteingangs mit Relevanz.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Antwort von PowerShell zum Status des Posteingangs mit Relevanz.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Führen Sie das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu deaktivieren:
     
@@ -116,13 +116,13 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
     
-2. Navigieren Sie zu **Nachrichtenfluss** \> **Regeln**. Wählen Sie ![EAC Symbol hinzufügen](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) und wählen Sie dann **Neue Regel erstellen...** aus. 
+2. Navigieren Sie zu **Nachrichtenfluss** \> **Regeln**. Wählen Sie ![EAC Symbol hinzufügen](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) und wählen Sie dann **Neue Regel erstellen...** aus. 
     
 3. Nachdem Sie die neue Regel erstellt haben, wählen Sie **Speichern**, um die Regel zu starten. 
     
     Die folgende Abbildung zeigt ein Beispiel, bei dem alle Nachrichten vom „Lohnbuchhaltung“ an den Posteingang mit Relevanz zugestellt werden.
     
-    ![focusedinbox payroll](../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Verwenden von PowerShell, um für alle Benutzer eine Transportregel zum Weiterleiten von E-Mail-Nachrichten an die Ansicht "Relevant" zu erstellen
 

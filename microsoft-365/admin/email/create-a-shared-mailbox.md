@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Erstellen Sie ein freigegebenes Postfach, damit mehrere Benutzer in Ihrem Unternehmen die Verantwortung für das Lesen und Beantworten von E-Mails teilen, die an eine Adresse gesendet wurden.
-ms.openlocfilehash: 270894da77d9ddf2b35187d8409cd2fd878b0e6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2ceec37928eafab0c4f02382dd24aa3fa91aa9cd
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253044"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362300"
 ---
 # <a name="create-a-shared-mailbox"></a>Erstellen eines freigegebenen Postfachs 
 
@@ -64,17 +64,17 @@ Lesen Sie vor dem Erstellen eines freigegebenen Postfachs unbedingt [Information
     
 3. Wählen Sie auf der Seite **Freigegebene Postfächer****+ Postfach hinzufügen** aus. Geben Sie einen Namen für das freigegebene Postfach ein. Der Assistent wählt dann die E-Mail-Adresse aus, die Sie aber bearbeiten können.
     
-    ![Geben Sie Ihrem freigegebenen Postfach einen Namen.](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Geben Sie Ihrem freigegebenen Postfach einen Namen.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Klicken Sie auf **Hinzufügen**. Es kann ein paar Minuten dauern, bevor Sie Mitglieder hinzufügen können.
 
 5. Wählen Sie unter **Nächste Schritte** die Option **Mitglieder zu diesem Postfach hinzufügen** aus. Mitglieder sind die Personen, denen ermöglich wird, die eingehenden E-Mails für dieses freigegebene Postfach und die ausgehenden Antworten anzuzeigen.
 
-   ![Wählen Sie „Mitglieder hinzufügen“ aus](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Wählen Sie „Mitglieder hinzufügen“ aus](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Wählen Sie die Schaltfläche **+ Mitglieder hinzufügen** aus. Setzen Sie ein Häkchen neben diejenigen Personen, die dieses freigegebene Postfach nutzen sollen, und klicken Sie auf **Speichern**.
 
-   ![Weisen Sie dem freigegebenen Postfach Mitglieder zu](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Weisen Sie dem freigegebenen Postfach Mitglieder zu](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Wählen Sie **Schließen** aus.
 
@@ -95,7 +95,7 @@ Doch was passiert, wenn ein Administrator einfach das Kennwort für das freigege
 
 2. Suchen Sie in der Liste der Benutzerkonten nach dem Konto für das freigegebene Postfach (ändern Sie beispielsweise den Filter in **Nicht lizenzierte Benutzer**).
 
-3. Wählen Sie den Benutzer aus, dessen Eigenschaftenbereich Sie öffnen möchten, und wählen Sie dann das Symbol **Diesen Benutzer blockieren** ![Screenshot des Symbols „Diesen Benutzer blockieren](../media/block-user-icon.png).
+3. Wählen Sie den Benutzer aus, dessen Eigenschaftenbereich Sie öffnen möchten, und wählen Sie dann das Symbol **Diesen Benutzer blockieren** ![Screenshot des Symbols „Diesen Benutzer blockieren](../../media/block-user-icon.png).
 
    **Hinweis**: Wenn das Konto bereits blockiert ist, wird am oberen Rand **Anmeldung blockiert** angezeigt und das Symbol zeigt **Entsperren des Benutzers**.
 

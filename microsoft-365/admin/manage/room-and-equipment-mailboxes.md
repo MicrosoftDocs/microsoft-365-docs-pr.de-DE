@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Erstellen Sie ein Raum- oder Gerätepostfach, damit jeder im Unternehmen mithilfe von Outlook eine Reservierung für Besprechungen oder Ereignisse vornehmen. '
-ms.openlocfilehash: b9f1ce531cb8ce94238b3dd35f2bfdc214d7693f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252756"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361860"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Raum- und Gerätepostfächer
 
@@ -40,21 +40,21 @@ Zum Verwenden von Raum- oder Gerätepostfächern öffnen Sie Outlook auf Ihrem C
   
 1. Öffnen Sie** **Outlook auf Ihrem Computer 
     
-2. On the **Home** tab, choose **New Items** \> **Meeting**.<br/>![Um eine Besprechung zu planen, wählen Sie auf der Registerkarte "Start" in der Gruppe "Neu" die Option "Neue Elemente" und dann "Besprechung" aus.](../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Sie können auch einfach in Ihrem Kalender die Option **Neue Besprechung** auswählen.
+2. On the **Home** tab, choose **New Items** \> **Meeting**.<br/>![Um eine Besprechung zu planen, wählen Sie auf der Registerkarte "Start" in der Gruppe "Neu" die Option "Neue Elemente" und dann "Besprechung" aus.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Sie können auch einfach in Ihrem Kalender die Option **Neue Besprechung** auswählen.
     
-3. Geben Sie im Feld "An" zusätzlich zu den Teilnehmern, die Sie einladen möchten, auch den Namen des zu reservierenden Konferenzraums oder Geräts ein.<br/>Sie können auch auf **An** klicken und dann in der Liste auf den Konferenzraum oder das Gerät doppelklicken. Wählen Sie dann **OK** aus.<br/>![Postfach für Raumreservierung in Outlook](../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. Geben Sie im Feld "An" zusätzlich zu den Teilnehmern, die Sie einladen möchten, auch den Namen des zu reservierenden Konferenzraums oder Geräts ein.<br/>Sie können auch auf **An** klicken und dann in der Liste auf den Konferenzraum oder das Gerät doppelklicken. Wählen Sie dann **OK** aus.<br/>![Postfach für Raumreservierung in Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. Geben Sie in der Zeile **Betreff** den Zweck der Reservierung oder Besprechung ein. 
     
 5. Ändern Sie ggf. den Wert für **Ort**. 
     
-6. Ändern Sie die Zeiten für **Beginn** und **Ende**. Oder wählen Sie **Ganztägiges Ereignis** aus. Um die Besprechung oder Reservierung wiederholt einzutragen, wählen Sie oben **Serientyp** aus.<br/>![Reservieren von Besprechungszeit](../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Ändern Sie die Zeiten für **Beginn** und **Ende**. Oder wählen Sie **Ganztägiges Ereignis** aus. Um die Besprechung oder Reservierung wiederholt einzutragen, wählen Sie oben **Serientyp** aus.<br/>![Reservieren von Besprechungszeit](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Geben Sie eine Nachricht ein, die den Zweck beschreibt, und fügen Sie bei Bedarf Dateien an.
     
 8. Damit andere Personen online teilnehmen oder sich in die Besprechung einwählen können, klicken Sie auf **Skype-Besprechung**.
     
-9. Um sicherzustellen, dass der Raum, das Gerät und die eingeladenen Personen verfügbar sind, klicken Sie oben auf **Terminplanungs-Assistent**. Wählen Sie dann eine verfügbare Zeit im Kalender aus.<br/> ![Prüfen, ob Raum oder Gerät verfügbar ist](../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>Tipp: Im Terminplanungskalender bedeutet blau, dass der Raum oder das Gerät reserviert ist bzw. gerade verwendet wird. Wählen Sie einen weißen (leeren) Bereich im Kalender aus. 
+9. Um sicherzustellen, dass der Raum, das Gerät und die eingeladenen Personen verfügbar sind, klicken Sie oben auf **Terminplanungs-Assistent**. Wählen Sie dann eine verfügbare Zeit im Kalender aus.<br/> ![Prüfen, ob Raum oder Gerät verfügbar ist](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>Tipp: Im Terminplanungskalender bedeutet blau, dass der Raum oder das Gerät reserviert ist bzw. gerade verwendet wird. Wählen Sie einen weißen (leeren) Bereich im Kalender aus. 
   
 10. Wählen Sie anschließend **Senden**.
     
@@ -66,7 +66,7 @@ Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Mi
   
 2. Klicken Sie auf **Hinzufügen**.
     
-3. Füllen Sie die Felder für den Raum bzw. das Gerät aus:<br/>![Hinzufügen eines Raumpostfachs in Office 365](../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Füllen Sie die Felder für den Raum bzw. das Gerät aus:<br/>![Hinzufügen eines Raumpostfachs in Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Raum** oder **Gerät**: Der Postfachtyp, den Sie erstellen möchten.
     

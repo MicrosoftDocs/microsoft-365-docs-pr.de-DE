@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cfd0c127b7cea626d6e2ed571f8ed1913370c1db
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 04b14f913a9b513ee5235223315daa2611395854
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602712"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363031"
 ---
 # <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>Die Finanzaufsichtsbehörde (AMF) und die Aufsichts- und Beschlussaufsichtsbehörde (ACPR) Frankreich
 
 ## <a name="about-the-amf-and-acpr"></a>Über AMF und ACPR
 
-Die[Finanzbehörden](https://www.amf-france.org/en_US/?langSwitch=true)  ([Autorité des Marchés Financiers, AMF](https://amf-france.org/))und die[Aufsichtsbehörde](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) sind die primären Finanzaufsichtsbehörden in Frankreich. Als Börsenaufsichtsbehörde ist die AMF mit der Überwachung der Finanzmärkte und Wertpapierfirmen betraut. Die ACPR, eine unabhängige Verwaltungsbehörde der Zentralbank, die [Banque de France](https://www.banque-france.fr/), überwacht den Banken- und Versicherungssektor.  
+Die[Finanzbehörden](https://www.amf-france.org/en)  ([Autorité des Marchés Financiers, AMF](https://www.amf-france.org/))und die[Aufsichtsbehörde](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) sind die primären Finanzaufsichtsbehörden in Frankreich. Als Börsenaufsichtsbehörde ist die AMF mit der Überwachung der Finanzmärkte und Wertpapierfirmen betraut. Die ACPR, eine unabhängige Verwaltungsbehörde der Zentralbank, die [Banque de France](https://www.banque-france.fr/), überwacht den Banken- und Versicherungssektor.  
   
 Die AMF und die ACPR handelt in Abstimmung mit der Europäischen Bankaufsichtsbehörde (EBA), die „eine unabhängige Behörde ist, die sich für eine wirksame und kohärente aufsichtsrechtliche Regulierung und Aufsicht im gesamten EU-Bankensektor einsetzt“. Zu diesem Zweck veröffentlichte die EBA ihre [Empfehlungen zum Outsourcing ab Cloud-Dienstanbieter](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ), die einen umfassenden Ansatz für das Cloud Computing durch Finanzinstitute in der EU vorgaben.  
   

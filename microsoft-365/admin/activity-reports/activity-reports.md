@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Office 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241184"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353966"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitätsberichte im Microsoft 365 Admin Center
 
@@ -58,7 +58,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie
 ::: moniker-end
 
    
-2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch auf ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (E-Mail, OneDrive usw.) klicken, um weitere Informationen anzuzeigen. <br/>![Das Office 365-Dashboard "Verwendungsübersicht"](../media/usage-report-dashboard.png)
+2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch auf ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (E-Mail, OneDrive usw.) klicken, um weitere Informationen anzuzeigen. <br/>![Das Office 365-Dashboard "Verwendungsübersicht"](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Wer kann Berichte sehen
 
@@ -164,7 +164,7 @@ Wenn Sie beim Generieren von Berichten Benutzerinformationen ausblenden möchten
   
 Die Benutzerliste sieht wie folgt aus:
   
-![Office 365-Berichte – anonymisierte Benutzerliste](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Office 365-Berichte – anonymisierte Benutzerliste](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Es dauert ein paar Minuten, bis diese Änderungen für die Berichte im Dashboard wirksam werden. Diese Einstellung gilt auch für die Berichte-API.
   
