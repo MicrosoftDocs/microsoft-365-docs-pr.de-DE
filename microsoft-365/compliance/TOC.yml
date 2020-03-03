@@ -218,8 +218,9 @@
     - name: Verwalten der Informationsgovernance
       href: manage-information-governance.md
     - name: Importdaten
-      href: importing-pst-files-to-office-365.md
       items:
+        - name: Übersicht über das Importieren von PST-Dateien
+          href: importing-pst-files-to-office-365.md
         - name: Verwenden des Netzwerkuploads zum Importieren von PST-Dateien
           href: use-network-upload-to-import-pst-files.md
         - name: Verwenden des Laufwerkversands zum Importieren von PST-Dateien
@@ -231,8 +232,9 @@
         - name: Häufig gestellte Fragen zum Importieren von PST-Dateien
           href: faqimporting-pst-files-to-office-365.md
     - name: Archivieren von drittanbieterdaten
-      href: archiving-third-party-data.md
       items:
+        - name: Übersicht über das Archivieren von drittanbieterdaten
+          href: archiving-third-party-data.md
         - name: Einrichten eines Connectors zum Archivieren von Facebook-Daten
           href: archive-facebook-data-with-sample-connector.md
         - name: Einrichten eines Connectors zum Archivieren von Twitter-Daten
@@ -276,8 +278,9 @@
     - name: Freigeben von Daten
       href: disposition-reviews.md
     - name: Verwalten inaktiver Postfächer
-      href: inactive-mailboxes-in-office-365.md
       items:
+        - name: Übersicht über inaktive Postfächer
+          href: inactive-mailboxes-in-office-365.md
         - name: Erstellen und Verwalten inaktiver Postfächer
           href: create-and-manage-inactive-mailboxes.md
         - name: Ändern der Aufbewahrungsdauer für ein inaktives Postfach
@@ -718,10 +721,13 @@
     - name: Postfachüberwachung
       href: enable-mailbox-auditing.md
     - name: Erweiterte Überwachung
-      href: advanced-audit.md
       items:
+        - name: Übersicht über die erweiterte Überwachung
+          href: advanced-audit.md
         - name: Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
           href: audit-log-retention-policies.md
+        - name: Verwenden der erweiterten Überwachung zum untersuchen gefährdeter Konten
+          href: mailitemsaccessed-forensics-investigations.md
     - name: Warnungsrichtlinien
       href: alert-policies.md
 - name: Verwalten von Compliancerisiken
@@ -1159,5 +1165,5 @@
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: Office 365 Business
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Microsoft 365-Sicherheit
+- name: Microsoft 365 Security Center
   href: 'https://docs.microsoft.com/microsoft-365/security/'
