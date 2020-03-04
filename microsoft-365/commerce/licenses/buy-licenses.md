@@ -1,5 +1,5 @@
 ---
-title: Erwerben von Lizenzen für Ihr Office 365 Business-Abonnement
+title: Verwalten von Abonnementlizenzen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,28 +24,34 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Erfahren Sie, wie Sie weitere Lizenzen zu einem Office 365 Business-Abonnement hinzufügen können.
-ms.openlocfilehash: 9967ec9fc0e5f76d8b54f4875ac5944903b24da1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Hier erfahren Sie, wie Sie Lizenzen für Ihr Office 365 für Unternehmen Abonnement hinzufügen und entfernen.
+ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
+ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242334"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42410042"
 ---
-# <a name="buy-licenses-for-your-office-365-for-business-subscription"></a>Erwerben von Lizenzen für Ihr Office 365 Business-Abonnement
+# <a name="manage-subscription-licenses"></a>Verwalten von Abonnementlizenzen
+
+Mit den folgenden Schritten können Sie Lizenzen aus ihren Abonnements hinzufügen oder entfernen.
+
+[] Sie können eine Lizenz nicht aus einem Abonnement entfernen, wenn sie einem Benutzer zugewiesen ist. Wenn Sie eine Lizenz entfernen möchten, die derzeit einer Person zugewiesen ist, müssen Sie [Lizenzen von Benutzern entfernen](../../admin/manage/remove-licenses-from-users.md) , bevor Sie die Lizenz aus dem Abonnement entfernen können.
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
+## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Was Sie über den Erwerb von Lizenzen für Ihr Geschäfts Abonnement wissen müssen
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
-2. Suchen Sie auf der Seite **Produkte und Dienste** das Abonnement, zu dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen** aus.
+2. Suchen Sie auf der Seite **Produkte & Dienste** nach dem Abonnement, dem Sie Lizenzen hinzufügen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
 
     [Was geschieht, wenn der Link zum Hinzufügen/Entfernen von Lizenzen nicht angezeigt wird?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Geben Sie im Feld **Lizenzen insgesamt** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Änderung absenden** aus. Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein.
+3. Geben Sie im Feld **Lizenzen insgesamt** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Änderung absenden** aus. Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein. Wenn Sie 5 davon entfernen möchten, geben Sie 95 ein.
 
 Nachdem Sie neue Lizenzen erworben haben, stellen Sie sicher, dass Sie die [Lizenzen den Benutzern zuweisen](../../admin/manage/assign-licenses-to-users.md).
 
@@ -55,11 +61,11 @@ Nachdem Sie neue Lizenzen erworben haben, stellen Sie sicher, dass Sie die [Lize
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
-2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, zu dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen** aus.
+2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie Lizenzen hinzufügen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
 
     [Was geschieht, wenn der Link zum Hinzufügen/Entfernen von Lizenzen nicht angezeigt wird?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Geben Sie im Feld **Lizenzen insgesamt** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Absenden** \> **Schließen** aus. Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein.
+3. Geben Sie im Feld **Lizenzen insgesamt** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Absenden** \> **Schließen** aus. Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein. Wenn Sie 5 davon entfernen möchten, geben Sie 95 ein.
 
 Nachdem Sie neue Lizenzen erworben haben, stellen Sie sicher, dass Sie die [Lizenzen den Benutzern zuweisen](../../admin/manage/assign-licenses-to-users.md).
 
@@ -69,11 +75,11 @@ Nachdem Sie neue Lizenzen erworben haben, stellen Sie sicher, dass Sie die [Lize
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
-2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, zu dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen** aus.
+2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie Lizenzen hinzufügen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
 
     [Was geschieht, wenn der Link zum Hinzufügen/Entfernen von Lizenzen nicht angezeigt wird?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Geben Sie im Feld **Lizenzen insgesamt** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Absenden** \> **Schließen** aus. Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein.
+3. Geben Sie im Feld **Lizenzen insgesamt** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Absenden** \> **Schließen** aus. Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein. Wenn Sie 5 davon entfernen möchten, geben Sie 95 ein.
 
 Nachdem Sie neue Lizenzen erworben haben, stellen Sie sicher, dass Sie die [Lizenzen den Benutzern zuweisen](../../admin/manage/assign-licenses-to-users.md).
 
@@ -85,13 +91,13 @@ In dieser Tabelle werden die Gründe beschrieben, warum der Link **Lizenzen hinz
 
 |Grund  |Beschreibung  |Lösung  |
 |---------|---------|---------|
-|Eine Kreditwürdigkeitsprüfung steht aus. |Wenn eine Kreditwürdigkeitsprüfung aussteht, wird die Meldung "Kreditwürdigkeitsprüfung ausstehend" angezeigt, und Sie können erst nach Abschluss der Prüfung Lizenzen kaufen.  | Schauen Sie später wieder nach, ob die Kreditwürdigkeitsprüfung abgeschlossen wurde. Kreditwürdigkeitsprüfungen dauern in der Regel bis zu zwei Werktage bis zum Abschluss.<br>Nach Abschluss der Kreditwürdigkeitsprüfung sollte der Link **Lizenzen hinzufügen/entfernen** im Abschnitt **Benutzer** angezeigt werden. Sollte dies der Fall sein, navigieren Sie zu [Erwerben von Lizenzen für Ihr Office 365 Business-Abonnement](#buy-licenses-for-your-office-365-for-business-subscription). |
+|Eine Kreditwürdigkeitsprüfung steht aus. |Wenn eine Kreditwürdigkeitsprüfung aussteht, wird die Meldung "Kreditwürdigkeitsprüfung ausstehend" angezeigt, und Sie können erst nach Abschluss der Prüfung Lizenzen kaufen.  | Schauen Sie später wieder nach, ob die Kreditwürdigkeitsprüfung abgeschlossen wurde. Kreditwürdigkeitsprüfungen dauern in der Regel bis zu zwei Werktage bis zum Abschluss.<br>Nach Abschluss der Kreditwürdigkeitsprüfung sollte der Link **Lizenzen hinzufügen/entfernen** im Abschnitt **Benutzer** angezeigt werden. Wenn dies der Fall ist, wechseln Sie zu [Verwalten von Abonnementlizenzen](#manage-subscription-licenses). |
 |Sie haben das Abonnement mit einem Product Key aktiviert.| Wenn Ihr Abonnement erworben und unter Angabe eines 25-stelligen Product Keys aktiviert wurde, wird der Text "Prepaid" angezeigt.  |Siehe dazu auch [Hinzufügen von Lizenzen für ein Abonnement, das unter Angabe eines Product Keys bezahlt wurde](add-licenses-using-product-key.md). |
 |Sie haben Ihr Abonnement über einen Partner erworben. | Wenn Ihr Abonnement über einen Partner erworben wurde, wird der Link "Microsoft Volume Licensing Service Center (VLSC)" angezeigt. | Sieh dazu auch [Hinzufügen von Lizenzen zu einem Abonnement, das über das Volume Licensing Service Center erworben wurde](add-licenses-bought-through-vlsc.md). |
 |Sie haben Ihr Abonnement über einen Händler erworben.|| Wenn das Abonnement über einen CSP-Partner (Cloud Solution Provider) erworben wurde, müssen Sie sich zum Kaufen weiterer Lizenzen an den CSP-Partner wenden.        |
 |Sie haben ein Testabonnement. |Bei einer Testversion von Office 365 lautet die Anzeige "Test". | Sie müssen zunächst Ihr Testabonnement kaufen und können dann weitere Lizenzen hinzufügen. Siehe [Kauf eines Abonnements von Office 365 Business aus Ihrer kostenlosen Testversion heraus](../buy-a-subscription-from-your-free-trial.md).|
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-office-365-for-business-subscription"></a>Wissenswertes zum Erwerb von Lizenzen für Ihr Office 365 Business-Abonnement
+## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Was Sie über den Erwerb von Lizenzen für Ihr Geschäfts Abonnement wissen müssen
 
 ### <a name="buying-licenses"></a>Lizenzen kaufen
 
@@ -117,10 +123,10 @@ In dieser Tabelle werden die Gründe beschrieben, warum der Link **Lizenzen hinz
 
 [Grundlegendes zu Abonnements und Lizenzen](subscriptions-and-licenses.md)
 
-[Zuweisen von Lizenzen für Benutzer](../../admin/manage/assign-licenses-to-users.md)
+[Erwerben von Lizenzen für Ihr Abonnement](buy-licenses.md)
 
 [Erwerb eines weiteren Abonnements](../buy-another-subscription.md)
 
-[Erwerben oder Bearbeiten eines Add-Ons](../buy-or-edit-an-add-on.md)
+[Zuweisen von Lizenzen für Benutzer](../../admin/manage/assign-licenses-to-users.md)
 
 [Verwalten von Yammer-Benutzerlizenzen](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)

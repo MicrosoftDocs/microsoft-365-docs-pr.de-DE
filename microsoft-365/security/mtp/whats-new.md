@@ -1,5 +1,5 @@
 ---
-title: Neuerungen in Microsoft Threat Protection
+title: Neues in Microsoft Threat Protection
 description: Listet die neuen Features und Funktionen in Microsoft Threat Protection auf.
 keywords: Neuerungen in Microsoft Threat Protection, GA, allgemein verfügbar, Funktionen, verfügbar, neu
 search.product: eADQiWindows 10XVcnh
@@ -15,24 +15,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 7292bf853cca03194ff0276f583e0d8808d3e4c2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 165225f225380caf0131205ec19f5320dab1d278
+ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254600"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409962"
 ---
-# <a name="whats-new-in-microsoft-threat-protection"></a>Neuerungen in Microsoft Threat Protection
+# <a name="whats-new-in-microsoft-threat-protection"></a>Neues in Microsoft Threat Protection
 
 Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft Threat Protection.
 
 ## <a name="february-2020"></a>Februar 2020
 - [Vorfälle](incidents-overview.md) <br> Genau wissen, wo ein Angriff gestartet wurde, und andere Details, die Ihnen helfen, den Umfang des Angriffs zu erkennen.
 - [Automatische Untersuchung und Reaktion](mtp-autoir.md) <br> Mit AIR können Ihre Sicherheitsteams die Kapazität Ihrer Organisation im Umgang mit Sicherheitswarnungen und Vorfällen erheblich verbessern.
-- [Erweiterte Jagd Verbesserungen](advanced-hunting-query-emails-devices.md) <br> Proaktive Suche nach Bedrohungen auf Ihren Windows-Geräten und Office 365 e-Mails. 
+- [Erweiterte Jagd Verbesserungen](advanced-hunting-overview.md) <br> Proaktive Suche nach Bedrohungen durch den modernen Arbeitsbereich mit Kusto-Abfragesprache und einem sicherheitsoptimierten Schema.
 
 ## <a name="march-2019"></a>März 2019
 
-- [Erweiterte Suche](hunting.md) <br> Proaktives Auffinden von Bedrohungen in Ihrer Organisation, die sich auf e-Mail und Daten, Geräte und Identitäten auswirken.
+- Erweiterte Suche <br> Zielseite mit verschiedenen Jagd Funktionen, mit denen Sie Bedrohungen proaktiv finden können, die sich auf e-Mails und Daten, Geräte und Identitäten auswirken.
 - [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) <br> Messung der Sicherheitslage einer Organisation mit einer höheren Zahl, die mehr Verbesserungs Aktionen anzeigt. Wenn Sie die Sicherheits Bewertungsempfehlungen befolgen, können Sie Ihre Organisation vor Bedrohungen schützen. 
 - [Berichte](monitoring-and-reporting.md) <br>  Verfügt über eine Reihe von Karten, die eine Vielzahl von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs verfolgen.
