@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080527"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409660"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -84,13 +84,10 @@ Wenn Sie bereits über ein vorhandenes Abonnement für Office 365 für Unternehm
 4. Auf der Seite **wie sieht das aus?** geben Sie die Anzahl der Benutzer ein, die Sie haben, und klicken Sie **dann auf weiter**. Sie müssen hier keinen Promo-Code eingeben, da er bereits in der Einladungs-URL enthalten ist.
 5. Geben Sie auf der Seite **wie soll ich bezahlen?** die Zahlungsmethode ein, und wählen Sie **Bestellung platzieren**aus.
 
-Nachdem Sie diese Schritte ausgeführt haben, können Sie [die neuen Lizenzen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) Ihren Kampagnen Mitarbeitern zuweisen. 
+Nachdem Sie diese Schritte ausgeführt haben, können Sie [die neuen Lizenzen](../admin/manage/assign-licenses-to-users.md) Ihren Kampagnen Mitarbeitern zuweisen.
 
 
 ## <a name="whats-next"></a>Nächste Schritte
 - [Richten Sie Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) ein, um die Einrichtung von Microsoft 365 für Kampagnen abzuschließen. 
 - [Hinzufügen von Benutzern](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) zu Ihrem Plan. Schließen Sie den Kandidaten für die Kampagne, alle leitenden Kampagnen Mitarbeiter und alle Personen ein, die Zugriff auf vertrauliche Kampagnen-oder Parteiinformationen haben sollen.
 - [Bump up Protection für Ihre Kampagne](m365-campaigns-security-overview.md)
-
-
-

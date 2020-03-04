@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn jemand mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084013"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409580"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -50,7 +50,7 @@ Wenn Sie im Office 365 &amp; Security Compliance Center eine DLP-Richtlinie erst
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Hinzufügen von Benutzer Benachrichtigungen zu einer DLP-Richtlinie
 
-Wenn Sie eine DLP-Richtlinie erstellen, sind sowohl e-Mail-Benachrichtigungen als auch Richtlinien Tipps Teil des Abschnitts **Benutzer Benachrichtigungen** . 
+Wenn Sie eine DLP-Richtlinie erstellen, können Sie **Benutzer Benachrichtigungen**aktivieren. Wenn diese Option aktiviert ist, sendet Microsoft 365 sowohl e-Mail-Benachrichtigungen als auch Richtlinien Tipps. Sie können anpassen, an wen die Benachrichtigungs-e-Mails gesendet werden, den Text für e-Mail und richtlinientipp.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     

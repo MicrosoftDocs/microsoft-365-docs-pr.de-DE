@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Verwenden Sie das Security & Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Office 365 Advanced eDiscovery vorbereiten.
-ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22547a69b78e8ca8497dd2e2a6ae5d77f913a08f
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075055"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409740"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Verwalten von eDiscovery-Fällen im Security & Compliance Center
 
@@ -77,9 +77,6 @@ Der erste Schritt besteht darin, Personen die entsprechenden eDiscovery-bezogene
     - Zugriffs Fall Daten in Advanced eDiscovery für jeden Fall in der Organisation.
     
     Überlegungen dazu, warum Sie ggf. einen eDiscovery-Administrator in Ihrer Organisation benötigen, finden Sie im Abschnitt [More information](#more-information). 
-    
-> [!IMPORTANT]
-> Wenn eine Person nicht Mitglied einer dieser eDiscovery-bezogenen Rollengruppen ist oder kein Mitglied einer Rollengruppe ist, der die Rolle "Prüfer" zugewiesen ist, können Sie Sie nicht als Mitglied eines eDiscovery-Falls hinzufügen. 
 
 Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
   
@@ -117,32 +114,31 @@ Der nächste Schritt besteht darin, einen eDiscovery-Fall zu erstellen. Sie müs
     
     > [!TIP]
     > Nachdem Sie einen neuen Fall erstellt haben, können Sie ihn jederzeit umbenennen. Klicken Sie auf der **eDiscovery** -Seite einfach auf den Namen des Falls. Ändern Sie auf der Seite **diesen Fall Flyout verwalten** den Namen, der in dem Feld unter **Name**angezeigt wird, und speichern Sie die Änderung. 
-  
 ## <a name="step-3-add-members-to-a-case"></a>Schritt 3: Hinzufügen von Mitgliedern zu einer Anfrage
 
-Nachdem Sie einen Fall erstellt haben, besteht der nächste Schritt darin, der Anfrage Mitglieder hinzuzufügen. Wie zuvor erläutert, können nur Benutzer, die Mitglieder der Rollengruppen Prüfer oder eDiscovery-Manager sind, als Mitglieder der Anfrage hinzugefügt werden. Der eDiscovery-Manager, der den Fall erstellt hat, wird automatisch als Mitglied hinzugefügt.
+Nachdem Sie einen Fall erstellt haben, besteht der nächste Schritt darin, der Anfrage Mitglieder hinzuzufügen. Der eDiscovery-Manager, der den Fall erstellt hat, wird automatisch als Mitglied hinzugefügt. Wie bereits erläutert, müssen die Mitglieder die entsprechenden eDiscovery-Berechtigungen zuweisen, damit Sie nach dem Hinzufügen auf den Fall zugreifen können.
   
 1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
-    
+
 2. Klicken Sie auf den Namen des Falls, dem Sie Mitglieder hinzufügen möchten.
-    
+
     Die Dropdown Seite **diesen Fall verwalten** wird angezeigt. 
-    
+
     ![Verwalten einer Fall Flyout-Seite](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
 3. Klicken Sie ![unter **Mitglieder verwalten**auf Symbol](../media/ITPro-EAC-AddIcon.gif) **hinzu** fügen, um der Anfrage Mitglieder hinzuzufügen. 
-    
+
     Sie können auch eine Rollengruppe zur Anfrage hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf ![Symbol](../media/ITPro-EAC-AddIcon.gif) **hinzu**fügen.
-    
+
     > [!NOTE]
     > Rollengruppen steuern, wer einem eDiscovery-Fall Mitglieder zuweisen kann. Das bedeutet, dass Sie den Rollengruppen, denen Sie angehören, nur eine Anfrage zuweisen können.
-    
+
 4. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder der Anfrage hinzugefügt werden können, auf das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
-    
+
     > [!TIP]
     > Wenn Sie eine große Liste von Personen haben, die als Mitglieder hinzugefügt werden können, verwenden Sie das **Suchfeld** , um nach einer bestimmten Person in der Liste zu suchen. 
   
-5. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder der Gruppe hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
+5. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die Sie als Mitglieder der Gruppe hinzufügen möchten, klicken Sie auf **Hinzufügen**.
     
     Klicken Sie in **diesem Fall verwalten**auf **Speichern** , um die neue Liste der Fall Mitglieder zu speichern. 
     
@@ -154,7 +150,7 @@ Sie können einen eDiscovery-Fall zum Erstellen von Haltebereichen verwenden, um
 
 > [!NOTE]
 > Nachdem Sie die Aufbewahrungsdauer eines Inhalts gespeichert haben, dauert es bis zu 24 Stunden, bis der Haltestatus wirksam wird. 
->   
+
 Wenn Sie einen Haltebereich erstellen, haben Sie die folgenden Optionen, um den Inhalt zu belegen, der an den angegebenen Inhaltsspeicherorten gehalten wird:
   
 - Sie erstellen einen unbegrenzten Haltebereich, in dem der gesamte Inhalt aufbewahrt wird. Alternativ können Sie einen abfragebasierten Speicher erstellen, in dem nur Inhalte, die einer Suchabfrage entsprechen, in die Warteschleife gestellt werden.

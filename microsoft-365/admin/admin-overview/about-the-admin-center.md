@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Über das Admin Center können Sie Ihre Organisation in der Cloud einrichten sowie Benutzer und Abonnements verwalten. Beginnen Sie, indem Sie sich bei einem Konto mit Administratorberechtigungen anmelden.
-ms.openlocfilehash: 2e84e1d0631403a1f5a40f80886bdae46ada166b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: cee2be9f4d1a0029e48f7c83619bafd00c42c044
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353086"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409470"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informationen zum Microsoft 365 Admin Center
 
@@ -78,19 +78,19 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 |**Users** <br/> |Hier können Sie Benutzer in Ihrer Organisation, beispielsweise Mitarbeiter oder Schüler, erstellen und verwalten. Sie können auch deren Berechtigungsstufe festlegen oder die Kennwörter zurücksetzen.  <br/> |
 |**Gruppen** <br/> |Erstellen und verwalten Sie Gruppen in Ihrer Organisation, z. B. eine Office 365-Gruppe, Verteilergruppe, Sicherheitsgruppe oder ein freigegebenes Postfach. Weitere Informationen zum [Erstellen](../create-groups/create-groups.md) und [Verwalten](../create-groups/manage-groups.md) von Gruppen.  <br/> |
 |**Ressourcen** <br/> |Erstellen und verwalten Sie Ressourcen wie eine SharePoint-Websitesammlung. Weitere Informationen zum [Erstellen von Websitesammlungen](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx).  <br/> |
-|**Abrechnung** <br/> |Sie können Abonnements für Ihre Organisation anzeigen, kaufen oder kündigen. Zeigen Sie ältere Abrechnungen oder die Anzahl der Lizenzen an, die einzelnen Benutzern zugewiesen wurden. Erfahren Sie, wie Sie [Abrechnungen verwalten](../../commerce/subscriptions-and-billing.md).  <br/> |
+|**Abrechnung** <br/> |Sie können Abonnements für Ihre Organisation anzeigen, kaufen oder kündigen. Zeigen Sie ältere Abrechnungen oder die Anzahl der Lizenzen an, die einzelnen Benutzern zugewiesen wurden. Erfahren Sie, wie Sie [Abrechnungen verwalten](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | Sie können vorhandene Serviceanfragen anzeigen oder neue erstellen. Weitere Informationen finden Sie unter [Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Hilfe für Administratoren](../contact-support-for-business-products.md). |
 |**Einstellungen** <br/> |Verwalten Sie globale Einstellungen für Apps wie E-Mail, Websites und die Office-Suite. Ändern Sie Ihre Kennwortrichtlinie und das Ablaufdatum. Fügen Sie Domänennamen wie "contoso.com" hinzu, und aktualisieren Sie diese. Ändern Sie Ihr Organisationsprofil und die Veröffentlichungseinstellungen. Und wählen Sie aus, ob Partner auf Ihr Admin Center zugreifen können.  <br/> |
 |**Setup** <br/> |Verwalten Sie vorhandene Domänen, aktivieren und verwalten Sie die mehrstufige Authentifizierung, verwalten Sie den Administratorzugriff, migrieren Sie Benutzerpostfächer zu Office 365, verwalten Sie Featureupdates, und helfen Sie den Benutzern beim Installieren ihrer Office-Apps. |
 |**Berichte** <br/> |Sehen Sie auf einen Blick, wie Ihre Organisation Office 365 verwendet, dank detaillierter Berichte zur E-Mail-Verwendung, zu Office-Aktivierungen und mehr. Weitere Informationen zur Verwendung der neuen [Aktivitätsberichte](../activity-reports/activity-reports.md).  <br/> |
 |**Integrität** <br/> |Zeigen Sie den Dienststatus auf einen Blick an. Sie können weitere Einzelheiten und den Dienststatusverlauf anzeigen. Schauen Sie sich [Überprüfen des Dienststatus](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0) an.  <br/> Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Details finden Sie unter [Nachrichtencenter in Office 365](../manage/message-center.md).  <br/> |
-|**Admin Center** <br/> |Öffnen Sie separate Admin Center für Exchange, Skype for Business, SharePoint, Yammer und Azure AD. Jedes Admin Center umfasst alle verfügbaren Einstellungen für den jeweiligen Dienst,  <br/> Im Exchange Admin Center werden beispielsweise E-Mail, Kalender, Verteilergruppen usw. eingerichtet und verwaltet. Im SharePoint Admin Center werden Websitesammlungen, Einstellungen der Teamwebsite und OneDrive for Business erstellt und verwaltet. Im Skype for Business Admin Center werden Chatbenachrichtigungen, Dial-In-Konferenzen und Onlineanwesenheit eingerichtet.  <br/> Weitere Informationen zum [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?LinkID=271807) und zum [SharePoint Admin Center](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a.aspx).<br/> **Hinweis:** Die verfügbaren Admin Center sind von Ihrem Plan und Ihrer Region abhängig.           |
+|**Admin Center** <br/> |Öffnen Sie separate Admin Center für Exchange, Skype for Business, SharePoint, Yammer und Azure AD. Jedes Admin Center umfasst alle verfügbaren Einstellungen für den jeweiligen Dienst,  <br/> Im Exchange Admin Center werden beispielsweise E-Mail, Kalender, Verteilergruppen usw. eingerichtet und verwaltet. Im SharePoint Admin Center werden Websitesammlungen, Einstellungen der Teamwebsite und OneDrive for Business erstellt und verwaltet. Im Skype for Business Admin Center werden Chatbenachrichtigungen, Dial-In-Konferenzen und Onlineanwesenheit eingerichtet.  <br/> Weitere Informationen zum [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?LinkID=271807) und zum [SharePoint Admin Center](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Hinweis:** Die verfügbaren Admin Center sind von Ihrem Plan und Ihrer Region abhängig.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Allgemeine Aufgaben im Admin Center
 
 - Verwalten von Benutzern: [Hinzufügen von einzelnen Benutzern](../add-users/add-users.md), [Löschen oder Wiederherstellen von Benutzern](../add-users/delete-a-user.md) oder [Zurücksetzen eines Benutzerkennworts](../add-users/reset-passwords.md).
 
-- Erhalten von Hilfe für die Abrechnung: [Abrechnung](../../commerce/subscriptions-and-billing.md)
+- Erhalten von Hilfe für die Abrechnung: [Abrechnung](../../commerce/index.yml)
 
 - Anzeigen von Aktivitätsberichten: [Aktivitätsberichte](../activity-reports/activity-reports.md)
 

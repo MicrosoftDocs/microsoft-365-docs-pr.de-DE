@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zur Ihrer Rechnung
+title: Informationen zu Ihrer Rechnung
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: bf6f26b2f3bbeb3ac22273eca98b223383b88924
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594696"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409710"
 ---
-# <a name="understand-your-invoice"></a>Grundlegendes zur Ihrer Rechnung
+# <a name="understand-your-invoice"></a>Informationen zu Ihrer Rechnung
 
 Die Rechnung enthält eine Zusammenfassung ihrer Gebühren und Anweisungen zur Zahlung. Sie können [Ihre Online Rechnung](#view-your-online-invoice) im Microsoft 365 Admin Center anzeigen. Sie können es auch im Portable Document Format (. pdf) herunterladen, um es per e-Mail zu senden.
 
-Wenn Sie nur ein Office 365-Abonnement haben, finden Sie unter [Anzeigen der Rechnung für Office 365 für Unternehmen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Wenn Sie nur ein Office 365-Abonnement haben, finden Sie unter [Anzeigen der Rechnung für Office 365 für Unternehmen](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Grundlegendes zum Rechnungskopf
 
@@ -102,7 +102,7 @@ Rechnungen sind online verfügbar. Ein Link zu Ihrer Online Rechnung steht in Ih
 
 ### <a name="to-view-your-online-invoice"></a>So zeigen Sie Ihre Online Rechnung an
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills #a0 Zahlungen</a> .
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
 
 2. Zum Herunterladen der PDF-Version Ihrer Rechnung wählen Sie **Download Rechnung PDF** in der Zeile für die Rechnung aus, die Sie anzeigen möchten.
 
@@ -112,4 +112,4 @@ Rechnungen sind online verfügbar. Ein Link zu Ihrer Online Rechnung steht in Ih
 
 Wenn Sie Fragen haben oder Hilfe zu ihren Azure-Gutschriften benötigen, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Erstellen Sie eine Supportanfrage mit Azure-Unterstützung</a>.
 
-Wenn Sie Fragen haben oder Hilfe zu Ihrer Rechnung im Microsoft 365 Admin Center benötigen, [wenden Sie sich an den Support für Business-Produkte](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Wenn Sie Fragen haben oder Hilfe zu Ihrer Rechnung im Microsoft 365 Admin Center benötigen, [wenden Sie sich an den Support für Business-Produkte](../../admin/contact-support-for-business-products.md).

@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 51f62b9d3828636c0d78e12a9c7bf0d7bed65ce8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 416961ff3b7bbb72636fd7ee0058d86953357195
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41587905"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400992"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>ISO 27001-Aktionsplan für Microsoft 365: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und danach
 
@@ -26,7 +26,7 @@ Die International Organization for Standardization (ISO) ist ein unabhängiger n
 
 Die ISO/IEC 27001 ist die internationale Norm für die Implementierung eines Informationssicherheit-Managementsystems (ISMS). Ein ISMS beschreibt die erforderlichen Umsetzungsmethoden und Nachweise im Zusammenhang mit den Anforderungen, die für ein zuverlässiges Management der Informationssicherheit in jedem Unternehmen essenziell sind.  
 
-In diesem Artikel finden Sie einen nach Priorität aufgeschlüsselten Aktionsplan, den Sie abarbeiten können, um die Anforderungen der ISO/IEC 27001 zu erfüllen. Dieser Aktionsplan wurde in Zusammenarbeit mit Protiviti entwickelt, einem auf gesetzliche Compliance spezialisierten Microsoft-Partner. Weitere Informationen zur Nutzung dieses Aktionsplans erhalten Sie auf Microsoft Ignite in der Session [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), präsentiert von Maithili Dandige (Microsoft) und Antonio Maio (Protiviti).
+In diesem Artikel finden Sie einen nach Priorität aufgeschlüsselten Aktionsplan, den Sie abarbeiten können, um die Anforderungen der ISO/IEC 27001 zu erfüllen. Dieser Aktionsplan wurde in Zusammenarbeit mit Protiviti entwickelt, einem auf gesetzliche Compliance spezialisierten Microsoft-Partner. Weitere Informationen zur Nutzung dieses Aktionsplans erhalten Sie auf Microsoft Ignite in der Session [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/videos/65720), präsentiert von Maithili Dandige (Microsoft) und Antonio Maio (Protiviti).
 
 ## <a name="action-plan-outcomes"></a>Ergebnisse des Aktionsplans
 

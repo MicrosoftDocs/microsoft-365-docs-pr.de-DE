@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business auf Microsoft 365 E3 migrieren.
-ms.openlocfilehash: cd6b9b14e9bc1ed03635be12873fb90592efe527
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9e9cfcf2212faa69f600267e4f9bfd2391e3f4e5
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065320"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409670"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrieren von Microsoft 365 Business zu Microsoft 365 E3
 
@@ -36,7 +36,7 @@ Beispielsweise ist Ihr Unternehmen gewachsen und benötigt mehr als 300 Lizenzen
 
 Oder Ihr Unternehmen benötigt Enterprise-Features wie Office 365 ProPlus, Windows 10 Enterprise E3 oder Enterprise-Client Zugriffs Lizenzen (CALs).
 
-Das Upgrade ist ganz einfach: Sie können das Upgrade [über das Admin Center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)starten. Alle Ihre Daten und Konfigurationen in Ihrem aktuellen Abonnement werden beibehalten. Es gibt nichts, was Sie tun müssen, um die Migration vorzubereiten und danach nichts zu tun, außer nutzen Sie die neuen Features. 
+Das Upgrade ist ganz einfach: Sie können das Upgrade [über das Admin Center](../commerce/subscriptions/upgrade-to-different-plan.md)starten. Alle Ihre Daten und Konfigurationen in Ihrem aktuellen Abonnement werden beibehalten. Es gibt nichts, was Sie tun müssen, um die Migration vorzubereiten und danach nichts zu tun, außer nutzen Sie die neuen Features.
 
 >[!Note]
 >Sie können auch ein Microsoft 365 Business-Abonnement für bis zu 300-Sitze verwenden und ein Microsoft 365 E3-Abonnement für mehr als 300 Sitze erhalten. Office 365 ATP ist jedoch nicht in Microsoft 365 E3 enthalten. Für fortgesetzten Bedrohungsschutz sollten Sie zusätzliche Office 365 ATP-Lizenzen hinzufügen, damit alle Benutzer im Umfang Ihrer Office 365 ATP Policies lizenziert sind.
@@ -46,42 +46,42 @@ Das Upgrade ist ganz einfach: Sie können das Upgrade [über das Admin Center](h
 
 In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Microsoft 365 E3 dargestellt.
 
-| Feature   | Unterstützung in Microsoft 365 Business | Unterstützung in Microsoft 365 E3 | 
+| Feature    | Unterstützung in Microsoft 365 Business    | Unterstützung in Microsoft 365 E3 | 
 |:-------|:-----|:-----|
-| **Lokal**       | | | 
-| Windows 10    | Windows 10 Business  |    Windows 10 Enterprise E3| 
-| Office-Apps *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
-| **Apps für die Cloud-Produktivität**       | | | 
-| Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| OneDrive for Business | 1 TB Speichergrenzwert pro Benutzer   | Unbegrenzt | 
-| Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Outlook-Kunden Manager, MileIQ  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | | 
-| **Bedrohungsschutz**     | | | 
-| Funktionen zur Verringerung der Angriffsfläche | [Siehe diese Liste](#threat-protection) | Unternehmensverwaltung der hardwarebasierten Isolierung für Microsoft Edge | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png) | Nicht enthalten, kann aber hinzugefügt werden | 
-| **Identitätsverwaltung**       | | | 
-| Self-Service Password Reset für hybride Azure Active Directory (Azure AD)-Konten, Azure Multi-Factor Authentication (MFA), bedingter Zugriff, Kenn Wort Rückschreiben für lokale Identitäten|    ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Cloud-App-Ermittlung, Azure AD Connect-Integrität  |   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| **Lokal**        | | | 
+| Windows 10    | Windows 10 Business  |     Windows 10 Enterprise E3| 
+| Office-Apps *    | [Office 365 Business](#office-365-business)    | Office 365 ProPlus | 
+| **Apps für die Cloud-Produktivität**        | | | 
+| Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
+| Teams    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| OneDrive for Business    | 1 TB Speichergrenzwert pro Benutzer    | Unbegrenzt | 
+| Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Outlook-Kunden Manager, MileIQ    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | | 
+| **Bedrohungsschutz**        | | | 
+| Funktionen zur Verringerung der Angriffsfläche    | [Siehe diese Liste](#threat-protection) | Unternehmensverwaltung der hardwarebasierten Isolierung für Microsoft Edge | 
+| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | Nicht enthalten, kann aber hinzugefügt werden | 
+| **Identitätsverwaltung**        | | | 
+| Self-Service Password Reset für hybride Azure Active Directory (Azure AD)-Konten, Azure Multi-Factor Authentication (MFA), bedingter Zugriff, Kenn Wort Rückschreiben für lokale Identitäten|     ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Cloud-App-Ermittlung, Azure AD Connect-Integrität    |     | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | Einmaliges Anmelden für Azure AD Office 365 Apps (SSO): 10 apps pro Benutzer (Galerie Saas-apps wie Salesforce) * | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: No Limit (lokale Apps über Azure AD Anwendungs Proxy und nicht-Gallery-Apps mithilfe von Self-Service-APP-Integrations Vorlagen)  |   | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| **Geräte-und App-Verwaltung**     | | | 
-| Microsoft InTune, Windows Autopilot|  ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-|Virtueller Desktop Zugriff (VDA)   |  |    ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-|Virtueller Windows-Desktop (Oktober)  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png) |    ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-|Freigegebene Computer Aktivierung (SCA)   | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png) |    ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO: No Limit (lokale Apps über Azure AD Anwendungs Proxy und nicht-Gallery-Apps mithilfe von Self-Service-APP-Integrations Vorlagen)    |     | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| **Geräte-und App-Verwaltung**        | | | 
+| Microsoft InTune, Windows Autopilot|     ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+|Virtueller Desktop Zugriff (VDA)    |  |     ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+|Virtueller Windows-Desktop (Oktober)    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png) |     ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+|Freigegebene Computer Aktivierung (SCA)    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png) |     ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | Microsoft-Desktop Optimierungspaket    | |     ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | **Schutz von Daten**        | | | 
-| Office 365 Verhinderung von Datenverlust, Azure Information Protection-Plan 1  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Schutz von Fenster Informationen für Endpunkt-DLP    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| **Client Zugriffslizenz (CAL-Rechte)**    | | |   
-| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |       ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Office 365 Verhinderung von Datenverlust, Azure Information Protection-Plan 1    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Schutz von Fenster Informationen für Endpunkt-DLP    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| **Client Zugriffslizenz (CAL-Rechte)**    | | |     
+| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | **Compliance**        | | | 
-| Unbegrenzte e-Mail-Archivierung | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Kompatibilitätsbewertung/Compliance-Manager   | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| eDiscovery    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Compliance-Aufbewahrungs-und Beweissicherungsverfahren | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Aufbewahrungstags und Aufbewahrungsrichtlinien für die Messaging-Datensatzverwaltung  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Unbegrenzte e-Mail-Archivierung    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Kompatibilitätsbewertung/Compliance-Manager    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| eDiscovery    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Compliance-Aufbewahrungs-und Beweissicherungsverfahren    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Aufbewahrungstags und Aufbewahrungsrichtlinien für die Messaging-Datensatzverwaltung    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 ||||
 
 \*Benutzer, denen Zugriff auf Saas-apps zugewiesen wurde, können SSO-Zugriff auf bis zu 10 apps erhalten. Administratoren können SSO konfigurieren und den Benutzer Zugriff auf verschiedene Saas-apps ändern, aber SSO-Zugriff ist nur für 10 apps pro Benutzer gleichzeitig zulässig. Alle Office 365 apps werden als einzelne APP gezählt.

@@ -1,5 +1,5 @@
 ---
-title: Entfernen der Zuweisung von Benutzerlizenzen
+title: Aufheben der Zuweisung von Lizenzen von Benutzern
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Hier erfahren Sie, wie Sie Lizenzen aus Benutzerkonten entfernen.
-ms.openlocfilehash: bd14b7c62672d08e608b476e9c5982ac4b5ce070
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252762"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400932"
 ---
-# <a name="unassign-licenses-from-users"></a>Entfernen der Zuweisung von Benutzerlizenzen
+# <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Lizenzen von Benutzern
 
 ::: moniker range="o365-worldwide"
 Sie können Lizenzen von Benutzern entweder auf der Seite " **aktive Benutzer** " oder auf der Seite " **Lizenzen** " entfernen oder aufheben. Welche Methode Sie verwenden, hängt davon ab, ob Sie Produktlizenzen von bestimmten Benutzern aufheben oder die Zuweisung von Benutzerlizenzen von bestimmten Produkten aufheben möchten.
@@ -148,9 +148,11 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 - Sie können auch [Benutzerkonten löschen](../add-users/delete-a-user.md), denen eine Lizenz zugewiesen wurde, um diese Lizenz anderen Benutzern zuzuweisen. Wenn Sie ein Benutzerkonto löschen, wird dessen Lizenz sofort verfügbar und kann einer anderen Person zugewiesen werden.
 
-- Wenn eine Lizenz von einem Benutzer entfernt wird, werden Daten, die diesem Konto zugeordnet sind, 30 Tage lang aufbewahrt. Nach Ablauf der 30-tägigen Kulanzzeit werden die Daten gelöscht und können nicht wiederhergestellt werden. Dateien, die in OneDrive oder SharePoint Online gespeichert werden, werden nicht gelöscht. Weitere Informationen finden Sie unter [OneDrive-Aufbewahrung und-Löschung](https://docs.microsoft.com/onedrive/retention-and-deletion)
+- Wenn eine Lizenz von einem Benutzer entfernt wird, werden Daten, die diesem Konto zugeordnet sind, 30 Tage lang aufbewahrt. Nach Ablauf der 30-tägigen Kulanzzeit werden die Daten gelöscht und können nicht wiederhergestellt werden.
 
-   Außerdem kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie der Inhaltssuche oder der erweiterten eDiscovery durchsucht werden, wenn die Lizenz entfernt wird. Weitere Informationen finden Sie im Abschnitt "Durchsuchen getrennter oder nicht lizenzierter Postfächer" in der [Inhaltssuche in Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Beachten Sie, dass in OneDrive für Unternehmen gespeicherte Dateien nicht gelöscht werden, es sei denn, der Benutzer wird aus dem Microsoft 365 Admin Center gelöscht oder durch Active Directory Synchronisierung entfernt. Weitere Informationen finden Sie unter [OneDrive Retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
+
+- Außerdem kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie der Inhaltssuche oder der erweiterten eDiscovery durchsucht werden, wenn die Lizenz entfernt wird. Weitere Informationen finden Sie im Abschnitt "Durchsuchen getrennter oder nicht lizenzierter Postfächer" in der [Inhaltssuche in Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Wenn Sie über ein Enterprise-Abonnement wie Office 365 Enterprise E3 verfügen, können Sie mit Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe [inaktiver Postfächer](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)beibehalten. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 

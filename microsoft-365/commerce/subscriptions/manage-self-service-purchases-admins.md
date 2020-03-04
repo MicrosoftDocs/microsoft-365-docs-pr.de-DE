@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Administratoren können sich mit der Verwaltung von Self-Service-Käufen von Benutzern in Ihrer Organisation vertraut machen.
-ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080332"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409630"
 ---
-# <a name="manage-self-service-purchases-admin"></a>Verwalten von Self-Service purchases (Administrator)
+# <a name="manage-self-service-purchases-admin"></a>Self-Service-Einkäufe (Administrator) verwalten
 
 Als Administrator können Sie Self-Service-Käufe anzeigen, die von Personen in Ihrer Organisation getätigt wurden. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Kaufpreis und die zugewiesenen Benutzer für jeden Self-Service-Einkauf sehen. Wenn es für Ihre Organisation erforderlich ist, können Sie Self-Service-Einkauf pro Produkt über PowerShell deaktivieren. Sie haben die gleichen Datenverwaltungsdienste und Zugriffsrichtlinien für Produkte, die über Self-Service Purchase oder zentral erworben wurden.
 
@@ -76,7 +76,7 @@ Sie können vorhandene Lizenzen zuweisen oder zusätzliche Abonnements über vor
 
 5. Befolgen Sie die Schritte unter [anzeigen, wer über Lizenzen für ein Self-Service-Abonnement verfügt](#view-who-has-licenses-for-a-self-service-purchase-subscription) , um eine Liste der in Schritt 6 zu referenzierenden Benutzer zu exportieren.
 
-6. Zuweisen von Lizenzen zu allen Personen, die eine Lizenz im anderen Abonnement haben. Vollständige Schritte finden Sie unter [Zuweisen von Lizenzen zu Benutzern](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+6. Zuweisen von Lizenzen zu allen Personen, die eine Lizenz im anderen Abonnement haben. Vollständige Schritte finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../../admin/manage/assign-licenses-to-users.md).
 
 7. Wenden Sie sich an die Person, die das Self-Service-Abonnement erworben hat, und bitten Sie Sie, diese zu stornieren.
 
@@ -84,4 +84,4 @@ Sie können vorhandene Lizenzen zuweisen oder zusätzliche Abonnements über vor
 
 Häufige Fragen zum Self-Service-Einkauf finden Sie unter [Self-Service Purchases FAQ](self-service-purchase-faq.md).
 
-Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, [wenden Sie sich an den Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, [wenden Sie sich an den Support](../../admin/contact-support-for-business-products.md).

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Hier erfahren Sie, wie Sie Ihre Rechnungsadressen für Office 365 für Unternehmen aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
 ms.custom: okr_SMB
-ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354755"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409640"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Ändern der Rechnungsadressen für Office 365 Business
 
@@ -195,5 +195,4 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 
 [Bezahlen für yoursubscription](pay-for-your-subscription.md)
 
-[Abonnements und Abrechnung – Administratorhilfe](../subscriptions-and-billing.md)
-
+[Abonnements und Abrechnung – Administratorhilfe](../index.yml)

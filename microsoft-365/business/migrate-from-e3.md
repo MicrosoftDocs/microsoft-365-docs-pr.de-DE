@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informationen zum Migrieren Ihres Unternehmens zu Microsoft 365 Business von Office 365 E3.
-ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065579"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409680"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business 
 
@@ -38,27 +38,27 @@ Die Migration ist einfach: zuerst wechseln Sie die Lizenzen, und alle Ihre Daten
 
 In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Office 365 E3 aufgeführt.
 
-| Feature   | Unterstützung in Microsoft 365 Business | Unterstützung in Office 365 E3 | 
+| Feature    | Unterstützung in Microsoft 365 Business    | Unterstützung in Office 365 E3 | 
 |:-------|:-----|:-----|
-| **Lokal**       | | | 
-| Office-Apps<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
-| **Apps für die Cloud-Produktivität**       | | | 
-| Exchange Online und Outlook   | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung   | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Teams | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
-| OneDrive for Business | 1 TB Speichergrenzwert pro Benutzer   | Unbegrenzt | 
-| Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
-| StaffHub  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
-| Outlook-Kunden Manager, MileIQ  | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)  | | 
-| **Bedrohungsschutz**     | | | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png) | Nicht enthalten, kann aber hinzugefügt werden | 
-| **Identitätsverwaltung**       | | | 
-| Self-Service Password Reset für hybride Azure Active Directory (Azure AD)-Konten, Azure Multi-Factor Authentication (MFA), bedingter Zugriff, Kenn Wort Rückschreiben für lokale Identitäten|    ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    |  | 
-| **Geräte-und App-Verwaltung**     | | |
-| Microsoft InTune, Windows Autopilot|  ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    |  |
-| Aktivierung gemeinsam genutzter Computer|   ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png)| 
+| **Lokal**        | | | 
+| Office-Apps<sup>1</sup>    | Office 365 Business    | Office 365 ProPlus | 
+| **Apps für die Cloud-Produktivität**        | | | 
+| Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
+| Teams    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
+| OneDrive for Business    | 1 TB Speichergrenzwert pro Benutzer    | Unbegrenzt | 
+| Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
+| StaffHub    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
+| Outlook-Kunden Manager, MileIQ    | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | | 
+| **Bedrohungsschutz**        | | | 
+| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | Nicht enthalten, kann aber hinzugefügt werden | 
+| **Identitätsverwaltung**        | | | 
+| Self-Service Password Reset für hybride Azure Active Directory (Azure AD)-Konten, Azure Multi-Factor Authentication (MFA), bedingter Zugriff, Kenn Wort Rückschreiben für lokale Identitäten|     ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    |  | 
+| **Geräte-und App-Verwaltung**        | | |
+| Microsoft InTune, Windows Autopilot|     ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    |  |
+| Aktivierung gemeinsam genutzter Computer|     ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png)| 
 | Aktualisieren von Rechten auf Windows 10 pro von Win 7/8.1 pro-Lizenzen|     ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)    || 
 | **Schutz von Daten**        | | |
-|Verhinderung von Datenverlust in Office 365|   ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)|![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png)|
+|Verhinderung von Datenverlust in Office 365|    ![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)|![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png)|
 |Azure Information Protection Plan 1, BitLocker-Erzwingung|![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)||
 |Azure Information Protection-Plan 1, Sensitivitäts Bezeichnungen|![Im Lieferumfang von Microsoft 365 Business enthalten](../media/check-mark.png)||
 |**Client Zugriffslizenz (CAL-Rechte)**|||
@@ -68,7 +68,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business und Offi
 
 ## <a name="migration"></a>Migration
 
-Informationen zum Migrieren Ihres Abonnements finden Sie unter [Wechseln zu einem anderen Plan manuell](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) , um Anweisungen zu erhalten, wenn Sie nur einige wenige Personen zu Microsoft 365 Business verschieben möchten. Sie können auch [alle automatisch aktualisieren](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)oder mit Partner zusammenarbeiten, um Ihr E3-Abonnement und ihre Lizenzen in ein Microsoft 365 Business-Abonnement zu migrieren.
+Informationen zum Migrieren Ihres Abonnements finden Sie unter [Ändern von Plänen manuell](../commerce/subscriptions/change-plans-manually.md) für Anweisungen, wenn Sie nur einige wenige Personen zu Microsoft 365 Business verschieben möchten. Sie können auch [alle automatisch aktualisieren](../commerce/subscriptions/upgrade-to-different-plan.md)oder mit einem Partner zusammenarbeiten, um Ihr E3-Abonnement und ihre Lizenzen in ein Microsoft 365 Business-Abonnement zu migrieren.
 In den folgenden Abschnitten werden die Änderungen beschrieben, die Sie vornehmen müssen, falls vorhanden, und was Sie nach der Migration tun können.
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3-Abonnementkonfiguration und-Daten
