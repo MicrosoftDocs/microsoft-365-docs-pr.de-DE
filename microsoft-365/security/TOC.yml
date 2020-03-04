@@ -85,8 +85,6 @@
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Erweiterte Suche
               items:
-                - name: Suche in Microsoft 365
-                  href: mtp/hunting.md
                 - name: Übersicht über die erweiterte Suche
                   href: mtp/advanced-hunting-overview.md
                 - name: Lernen der Abfragesprache
