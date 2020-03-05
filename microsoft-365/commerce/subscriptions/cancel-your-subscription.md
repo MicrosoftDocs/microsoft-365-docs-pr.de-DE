@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Erfahren Sie, wie Sie Ihr Testabonnement oder Ihr bezahltes Abonnement von Office 365 Business oder Microsoft 365 kündigen können.
-ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354596"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415650"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -88,6 +88,19 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 ::: moniker-end
 
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Was geschieht, wenn Sie ein Abonnement kündigen
+
+Wenn Sie ein Abonnement vor dem Ende ihrer Laufzeit kündigen, wird das Abonnement direkt in den Status "deaktiviert" verschoben. Für die meisten Abonnements dauert der Status "deaktiviert" in den meisten Ländern und Regionen 90 Tage. Administratoren können weiterhin auf Daten für Ihre Organisation zugreifen und diese sichern, während das Abonnement den Status "deaktiviert" aufweist, es wird jedoch empfohlen, dass Administratoren [Ihre Daten](back-up-data-before-switching-plans.md) vor dem kündigen eines Abonnements sichern, insbesondere dann, wenn es sich um Ihr einziges Abonnement handelt. Alle Daten, die Sie hinterlassen, können nach 90 Tagen gelöscht werden und werden spätestens 180 Tage nach der Kündigung gelöscht.
+
+### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
+  
+- **Administratorzugriff** Administratoren können sich weiterhin anmelden und auf das Admin Center zugreifen und bei Bedarf andere Abonnements kaufen. Als globaler oder abrechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement](reactivate-your-subscription.md) mit allen Daten intakt zu reaktivieren. 
+    
+- **Benutzer Zugriff** Ihre Benutzer können Dienste wie OneDrive für Unternehmen nicht verwenden oder auf Kundendaten wie e-Mail oder Dokumente auf Teamwebsites zugreifen. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
+    
+ **Wichtig** Wenn Sie Ihre Abonnementdaten vor Ablauf des typischen Zeitraums "Deaktiviert" löschen möchten, können Sie mithilfe des beschleunigten Aufhebens der Bereitstellung eine Kündigung anfordern. Wenn Sie das beschleunigte Aufheben der Bereitstellung anfordern, werden Ihre Abonnementdaten innerhalb von 3 Tagen nach der Kündigung gelöscht. Um die beschleunigte deprovisionierung zu verwenden, rufen Sie den [Support](../../admin/contact-support-for-business-products.md)an.
+  
+Weitere Informationen finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Abonnement endet?](what-if-my-subscription-expires.md)
 
 ## <a name="other-steps-you-might-have-to-take"></a>Weitere Schritte, die Sie möglicherweise ausführen müssen
 
@@ -132,5 +145,3 @@ Wenn Sie Ihr Abonnement gekündigt und die Benutzer nicht in ein anderes Abonnem
 [Verlängern Ihres Abonnements](renew-your-subscription.md)
 
 [Verlängern oder Reaktivieren Ihres Abonnements](reactivate-your-subscription.md)
-
-[Wechseln zu einem anderen Plan oder Abonnement](switch-to-a-different-plan.md)

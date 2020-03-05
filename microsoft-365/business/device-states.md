@@ -18,18 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Erfahren Sie mehr über Gerätestatus in Microsoft 365 Business.
-ms.openlocfilehash: 26b218cb7b6a14f17e33d34a2e712b06ac814c0c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie mehr über die verschiedenen Gerätezustände in der Liste Geräteaktionen in admin Home in Microsoft 365 Business.
+ms.openlocfilehash: cb1e5172a6e2d0bfc5748fe982024ead26e8cd62
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065762"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417314"
 ---
 # <a name="device-states"></a>Gerätezustände
 
