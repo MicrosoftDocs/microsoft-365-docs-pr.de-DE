@@ -36,10 +36,8 @@
           href: subscriptions/manage-self-service-purchases-admins.md
     - name: Verwalten von Lizenzen
       items:
-        - name: Kaufen von Lizenzen
+        - name: Verwalten von Abonnementlizenzen
           href: licenses/buy-licenses.md
-        - name: Entfernen von Lizenzen aus Ihrem Abonnement
-          href: licenses/remove-licenses-from-subscription.md
         - name: Benutzern Lizenzen zuweisen
           href: ../admin/manage/assign-licenses-to-users.md
         - name: 'Entfernen von Lizenzen, die Benutzern zugewiesen wurden'
