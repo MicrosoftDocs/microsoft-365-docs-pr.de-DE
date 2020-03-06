@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370484"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551823"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
 Die [einheitliche Überwachungsfunktionen](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 bieten Organisationen Einblick in viele Arten von überwachten Aktivitäten über viele verschiedene Dienste in Microsoft 365 hinweg. In diesem Release fügen wir der erweiterten Überwachung in Microsoft 365 nun neue Überwachungsfunktionen hinzu, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen können.
 
 > [!NOTE]
-> Die erweiterte Überwachung ist für Organisationen mit einem Office 365- oder Microsoft 365 Enterprise E5-Abonnement verfügbar. Darüber hinaus kann Benutzern ein Microsoft 365 E5 Compliance-Add-On-Abonnement zugewiesen werden, wenn für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugriff zu wichtigen Ereignissen für Untersuchungen der Fall ist.
+> Die erweiterte Überwachung ist für Organisationen mit einem Office 365 E5- oder Microsoft 365 Enterprise E5-Abonnement verfügbar. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance-Add-On-Lizenz zugewiesen werden, wenn für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugriff zu wichtigen Ereignissen für Untersuchungen der Fall ist.
 
 In diesem Artikel finden Sie eine Übersicht über diese erweiterten Überwachungsfunktionen.
 
