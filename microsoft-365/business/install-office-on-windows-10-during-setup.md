@@ -18,18 +18,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Hier erfahren Sie, wie Sie Office während des Setups automatisch auf Windows 10-Geräten bereitstellen.
-ms.openlocfilehash: 8ba69f73b455cb78e7141d57b2f690f49bb36f2e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie Sie mit Microsoft 365 Business automatisch sicherstellen können, dass die Benutzer über die neueste Version von Office auf allen Windows 10-Geräten verfügen.
+ms.openlocfilehash: cc98c0f4d14dbf0b2cb8eeefa86cd7ac3b8f4712
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065693"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547717"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installieren von Office auf Windows 10 während der Einrichtung
 

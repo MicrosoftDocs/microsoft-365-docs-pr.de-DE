@@ -17,18 +17,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: In diesem Artikel erfahren Sie, wie Sie Windows Autopilot zum Einrichten neuer Windows 10-Geräte für Ihr Unternehmen verwenden.
-ms.openlocfilehash: e5774b1e2079a5249e0f6e9e7142de19268253b5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: In diesem Artikel erfahren Sie, wie Sie Windows Autopilot zum Einrichten neuer Windows 10-Geräte für Ihr Unternehmen verwenden, damit Sie für die Verwendung durch den Mitarbeiter verfügbar sind.
+ms.openlocfilehash: 8449d5a3672a20b0cd1ba61bbda863073138c04c
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068531"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550385"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
@@ -48,7 +49,7 @@ Geräte müssen diese Anforderungen erfüllen:
 
 Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, ist die beste Möglichkeit, mit der ersten Schritte zu beginnen, die schrittweise Anleitung. Sie können auch [Geräte hinzufügen](create-and-edit-autopilot-devices.md) und Ihnen [profile zuweisen](create-and-edit-autopilot-profiles.md) , ohne die Anleitung zu verwenden. 
   
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
 2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Autopilot**aus.
 

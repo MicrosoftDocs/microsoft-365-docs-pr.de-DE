@@ -20,16 +20,19 @@ search.appverid:
 - MOE150
 - BEA160
 description: Hier erfahren Sie, wie Sie sich für ein Test Office 365 für Unternehmen Abonnement anmelden.
-ms.openlocfilehash: 422957bc29c7f5b047665c9e9698e0d9ef47050a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d9944d01676573e08d52279d47cc61527e7d4862
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254387"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549792"
 ---
 # <a name="sign-up-for-an-office-365-trial-subscription"></a>Registrieren für ein Office 365-Testabonnement
 
 Sie können sich kostenlos für ein Test Office 365 Business-Abonnement registrieren. Sie können es 30 Tage lang ausprobieren.
+
+> [!NOTE]
+> Sie benötigen eine Kreditkarte, wenn Sie sich für eine Testversion registrieren, wenn sich Ihr Unternehmen derzeit in den Vereinigten Staaten, Japan, Kanada und Australien befindet. Am Ende Ihres kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement umgewandelt. Ihre Kreditkarte wird erst am Ende des Testzeitraums in Rechnung gestellt.
 
 ## <a name="sign-up-for-an-office-365-business-premium-trial-subscription"></a>Registrieren für ein Office 365 Business Premium-Testabonnement
 
@@ -42,6 +45,10 @@ Sie können sich kostenlos für ein Test Office 365 Business-Abonnement registri
 4. Der Anmeldevorgang kann einige Minuten dauern. Sobald der Vorgang abgeschlossen ist, erfahren Sie mehr über die Verwendung Ihres Abonnements.
 
 Weitere Informationen zum Einrichten Ihres Kontos finden Sie unter [Einrichten von Office 365 für Unternehmen](../admin/setup/setup.md).
+
+## <a name="cancel-my-trial-subscription"></a>Mein Testabonnement kündigen
+
+Wenn Sie Ihre Testversion vor Ablauf des kostenlosen Testzeitraums abbrechen möchten, wechseln Sie zum Microsoft Admin Center, und deaktivieren Sie die Option für die automatische Verlängerung im Bereich Zahlung und Abrechnung. Die Testversion läuft automatisch ab, wenn Ihr Monat abgeschlossen ist und Ihre Kreditkarte wird nicht belastet.
 
 ## <a name="see-also"></a>Siehe auch
 

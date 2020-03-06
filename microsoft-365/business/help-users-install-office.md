@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Unterstützen Sie Ihre Benutzer bei der Installation von Office-Apps.
-ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Unterstützen Sie Ihre Benutzer bei der Installation von Office-Apps auf Windows 10-Geräten, und installieren Sie Office auf Windows 10-PCs ganz einfach über das Microsoft 365 Business Admin Center.
+ms.openlocfilehash: 5df9a1a8236942a34031daf06e38acbe923339e4
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065714"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550372"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Unterstützen der Benutzer bei der Installation von Office auf Windows 10-Geräten
 
@@ -61,6 +62,6 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="Wählen Sie Benutzer zum Senden von e-Mails mit Office-Download Link aus.":::
 
-## <a name="see-also"></a>Siehe auch
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business
 
 [Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

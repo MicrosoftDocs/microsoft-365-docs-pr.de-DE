@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Erwerben Sie ein Office 365 für Unternehmen-Abonnement. Sie können den gleichen Typ von Abonnement erwerben, den Sie versucht haben, oder einen anderen Plan.
-ms.openlocfilehash: fcd38783082f9b86c4e1b99b1eec06d948e8e4b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242398"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549802"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>So aktivieren Sie Microsoft Office 365 Business
 
@@ -41,14 +41,14 @@ ms.locfileid: "42242398"
 - [Kaufen des gleichen Plans wie den Ihrer Testversion](#buy-the-same-plan-as-your-trial)
 - [Kaufen eines anderen Plans als den Ihrer Testversion](#buy-a-different-plan-than-your-trial)
 
+> [!NOTE]
+> Am Ende Ihres kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement umgewandelt. Das kostenpflichtige Abonnement wird standardmäßig für den Plan verwendet, für den Sie derzeit angemeldet sind. Sie können weiterhin einen anderen Plan kaufen, indem Sie die Schritte im Abschnitt [kaufen eines anderen Plans als der Testversion](#buy-a-different-plan-than-your-trial) unten ausführen.
+
 ## <a name="buy-the-same-plan-as-your-trial"></a>Kaufen des gleichen Plans wie den Ihrer Testversion
 
 Es ist ganz einfach, und wenn Sie den gleichen Abonnementtyp wie den Ihrer Testversion kaufen, müssen Sie sich keine Gedanken über verlorene Daten, Konten und die Konfiguration machen.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
@@ -94,7 +94,7 @@ Es ist ganz einfach, und wenn Sie den gleichen Abonnementtyp wie den Ihrer Testv
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>Kaufen eines anderen Plans als den Ihrer Testversion
 
-Wenn Sie einen anderen Abonnementtyp als den Ihrer Testversion kaufen, müssen Sie die Benutzerlizenzen aus dem Testplan in dem neuen Plan erneut zuweisen (vor dem Ende der 90-tägigen Nachfrist nach Ablauf Ihres Testplans), um Ihre Daten, Konten und die Konfiguration beizubehalten.
+Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Sie Ihre Benutzerlizenzen aus dem Testplan Ihrem neuen Plan neu zuweisen (bevor Ihre 90-tägige Nachfrist nach Ablauf des Test Plans endet), um Ihre Daten, Konten und Konfiguration.
 
 ::: moniker range="o365-worldwide"
 

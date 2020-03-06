@@ -1,5 +1,7 @@
 ---
 title: Erhöhter Bedrohungsschutz für Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -14,16 +16,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Richten Sie Office 365 Advanced Threat Protection ein, und schützen Sie vertrauliche Daten.
-ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+description: Richten Sie Office 365 Advanced Threat Protection ein, und schützen Sie vertrauliche Daten vor Phishing, Schadsoftware und anderen Bedrohungen.
+ms.openlocfilehash: 9d7bae60091c87fa0246a697f2a49e1cbc6e2f06
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704073"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550355"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -76,7 +79,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 6. Klicken Sie auf **Speichern**.
     
-|**Setting**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
+|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/>  |
 |Wenden Sie diese Regel an, wenn. . .  <br/> |Jede Anlage. . . Dateierweiterung entspricht. . .  <br/> |
@@ -108,7 +111,7 @@ Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video
     
 6. Klicken Sie auf **Speichern**.
     
-|**Setting**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
+|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
 |:-----|:-----|
 |Name  <br/> |Verhindern der automatischen Weiterleitung von e-Mails an externe Domänen  <br/> |
 |Diese Regel anwenden, wenn...  <br/> |Absender. . . ist extern/intern. . . Innerhalb der Organisation  <br/> |

@@ -18,17 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 zum Schutz von lokalen Active Directory an Windows 10-Geräte schützen können.
-ms.openlocfilehash: 170703c7367f9c0e9cb4c10edbd81cb214aa1d3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 in wenigen Schritten zum Schutz von lokalen Active Directory-verbundenen Windows 10-Geräten aktivieren.
+ms.openlocfilehash: 8d7caefa1ddcadf684fdb5b712601b1bdd4fb5bd
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593799"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550245"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 

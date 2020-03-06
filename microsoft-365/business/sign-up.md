@@ -20,16 +20,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Hier erfahren Sie, wie Sie Microsoft 365 Business erwerben und registrieren.
-ms.openlocfilehash: 63bff3d34df017d1c7cc437ef050d53623e76aa9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Erfahren Sie, was Microsoft 365 Business umfasst, und erhalten Sie Schritt-für-Schritt-Anleitungen bei der Registrierung für Microsoft 365 Business.
+ms.openlocfilehash: 003bf332a9183a5e062a294297a30c9b7d19fdb9
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547829"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrieren für Microsoft 365 Business
 
@@ -52,11 +53,11 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Anmeldev
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Führen Sie die folgenden Schritte aus, um sich anzumelden und Microsoft 365 für Ihr Unternehmen zu erwerben:
 
-1. Wählen Sie auf der [Seite Microsoft 365 for Business](https://go.microsoft.com/fwlink/?linkid=2109654)die Option **Planes #a0 Pricing**aus. 
+1. Wählen Sie auf der [Seite Microsoft 365 for Business](https://go.microsoft.com/fwlink/?linkid=2109654)die Option **Planes & Pricing**aus. 
 2. Ermitteln Sie auf der nächsten Seite die monatlichen Kosten, und Scrollen Sie dann auf der Seite nach unten, um mehr über das in Microsoft 365 Business enthaltene zu erfahren. Wählen Sie unter Microsoft 365 Business die Option **Jetzt kaufen**aus.
 3. Geben Sie auf der Seite **Danke für die Auswahl von Microsoft 365 Business** die Informationen für die ersten Schritte ein.
 4. Geben Sie in **Schritt 1**eine e-Mail-Adresse ein, die Sie bereits verwenden. Hierbei kann es sich um Ihre aktuelle geschäftliche e-Mail-Adresse oder eine beliebige Adresse handeln, die Microsoft für die Kommunikation mit Ihnen während des Setups verwenden soll. Es ist auch die Adresse, an die wir Ihnen Informationen über Ihre Rechnung und Erneuerungen senden. Wählen Sie dann **Konto**einrichten aus.

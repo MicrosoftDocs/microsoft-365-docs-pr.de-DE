@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Hier erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business-Benutzer einrichten. '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: In diesem Artikel erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business-Benutzer einrichten, sodass zentralisierte Verwaltungs-und Sicherheitssteuerelemente aktiviert werden können.
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090674"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550015"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Einrichten von Windows-Geräten für Benutzer von Microsoft 365 Business
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Voraussetzungen für das Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer
 
 Bevor Sie die Windows-Geräte für Microsoft 365 Business-Benutzer einrichten können, stellen Sie sicher, dass auf allen Windows-Geräten Windows 10 Pro, Version 1703 (Creators Update)) ausgeführt wird. Windows 10 Pro ist Voraussetzung für die Bereitstellung von Windows 10 Business. Windows 10 Business besteht aus einer Reihe von Clouddiensten und Funktionen zur Geräteverwaltung, die Windows 10 Pro ergänzen und die zentrale Verwaltung und Sicherheitskontrollen von Microsoft 365 Business ermöglichen.
   
@@ -125,6 +126,6 @@ Stellen Sie sicher, dass Ihre mit Azure AD verbundenen Windows 10-Geräte im Rah
 
 Informationen zum Einrichten von mobilen Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md). Informationen zum Festlegen von Richtlinien zum Schutz von Geräten oder Apps finden Sie unter [Verwalten von Microsoft 365 Business](manage.md).
   
-## <a name="see-also"></a>Siehe auch
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business
 
 [Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

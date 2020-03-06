@@ -1,5 +1,7 @@
 ---
 title: Voraussetzungen für den Schutz von Daten auf Geräten mit Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -13,23 +15,24 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: Kennen Sie die Voraussetzungen für die Einrichtung Ihrer Organisation mit Microsoft 365 Business.
-ms.openlocfilehash: 874a85859e315ef17e10fdd8094860e1e6bf2560
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+description: Erfahren Sie mehr über die Anforderungen für das Einrichten Ihrer Organisation mit Microsoft 365 Business und den Schutz von Arbeitsdaten auf den Geräten Ihrer Benutzer.
+ms.openlocfilehash: 9e35e3b1cd4f0df1c5852b0fec407a99c9bcf4f4
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640539"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550185"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Voraussetzungen für den Schutz von Daten auf Geräten mit Microsoft 365 Business
 
 Der erste Schritt beim Einrichten Ihrer Organisation mit Microsoft 365 Business besteht darin, sicherzustellen, dass Sie die Voraussetzungen erfüllen können.
   
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-business"></a>Voraussetzungen für die Einrichtung Ihrer Organisation mit Microsoft 365 Business
 
 - Auf Windows-Geräten muss Windows 7 Professional, Windows 8 pro oder Windows 8.1 pro installiert sein.
     

@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business geliefert werden.
-ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: In diesem Artikel erfahren Sie mehr über die Sicherheitsfunktionen von Microsoft 365 Business, mit denen Sie Ihre Daten auf PCs, Telefonen und Tablets schützen können.
+ms.openlocfilehash: eb92131cc937875615342b2b0d39c78d51a8a99f
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064798"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550035"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 

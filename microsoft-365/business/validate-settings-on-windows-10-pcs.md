@@ -19,17 +19,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Erfahren Sie, wie Sie Microsoft 365 Business App Protection-Einstellungen auf Windows 10-Geräten überprüfen.
-ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie Sie überprüfen können, ob die Microsoft 365 Business App Protection-Einstellungen auf den Windows 10-Geräten Ihrer Benutzer wirksam wurden.
+ms.openlocfilehash: 1b661b41a8042e81f653463cbd32fc6bf6428b53
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056657"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549955"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Überprüfen von Geräteschutzeinstellungen auf Windows 10-PCs
 

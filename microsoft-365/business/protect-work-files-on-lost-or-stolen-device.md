@@ -18,18 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Erfahren Sie mehr über die verfügbaren Einstellungen zum Schutz der Arbeitsdateien, wenn das Gerät eines Benutzers verloren geht oder gestohlen wird.
-ms.openlocfilehash: 5f137354b51a0151e57e5e109b1ebbb043c68f60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Hier finden Sie Informationen zu den in Microsoft 365 Business verfügbaren Einstellungen zum Schutz von Arbeitsdateien, wenn das Gerät eines Benutzers verloren geht oder gestohlen wird.
+ms.openlocfilehash: 244e4773f1efa9548dd2126e03a007aefb840b40
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593554"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550165"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Arbeitsdateien schützen, wenn ein mobiles Gerät verloren gehen oder gestohlen wird
 

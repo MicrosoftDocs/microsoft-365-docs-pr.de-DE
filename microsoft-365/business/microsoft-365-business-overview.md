@@ -22,23 +22,24 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Erfahren Sie mehr über Microsoft 365 Business.
-ms.openlocfilehash: bfda6801bee526084ad11ead819fcd04787d17ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: In diesem Artikel erfahren Sie mehr über Microsoft 365 Business, einen Abonnementdienst mit Office 365 plus erweitertem Schutz für Ihr Unternehmen vor Cyber-Bedrohungen.
+ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065647"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547849"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Übersicht über Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Was ist Microsoft 365 Business?
 
-Microsoft 365 Business ist ein Abonnementdienst, der Office 365 Produktivitätstools sowie erweiterte Funktionen zum Schutz Ihres Unternehmens gegen Bedrohungen, zum Schutz Ihrer Daten und zur Verwaltung von Geräten umfasst.
+Microsoft 365 Business ist ein Abonnementdienst, der Office 365 Produktivitätstools sowie erweiterte Funktionen zum Schutz Ihres Unternehmens vor Cyber-Bedrohungen, zum Schutz Ihrer Daten und zur Verwaltung von Geräten umfasst.
 
 Sehen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 365 Business zu haben.<br><br>
 
