@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Benutzer mit Sensitivitäts Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 759c944bc72c39d1fd118dcb1b3515b5ede79687
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225503"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42548190"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -66,7 +66,7 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 |[Hilfe Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Vorschau: in [Office Insider](https://office.com/insider)            | Vorschau: in [Office Insider](https://office.com/insider)        | Unter Review   | Unter Review         | Unter Review                                                        |
+|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Vorschau: im [monatlichen Kanal (gezielt)](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | Vorschau: in [Office Insider](https://office.com/insider)        | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Vorschau: in [Office Insider](https://office.com/insider)                                  | Unter Review | Unter Review | Unter Review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |

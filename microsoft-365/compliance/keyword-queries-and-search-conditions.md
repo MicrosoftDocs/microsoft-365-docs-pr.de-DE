@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security & Compliance Center durchsuchen können.  '
 ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543426"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -97,7 +97,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer freigegeben wurden und auf der Seite für **mich freigegeben** auf der OneDrive für Unternehmen Website des Benutzers angezeigt werden. Dabei handelt es sich um Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Beim Exportieren von Dokumenten, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument gemeinsam mit dem angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Suchen nach Websiteinhalten, die in Ihrer Organisation freigegeben](#searching-for-site-content-shared-within-your-organization)sind.|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|In beiden Beispielen werden alle internen Dokumente zurückgegeben, die explizit für Garth fort freigegeben wurden und auf der Seite für **mich freigegeben** in Garth fort in OneDrive für Unternehmen Konto angezeigt werden.|
 |Website|Die URL einer Website oder Gruppen von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente aus den OneDrive für Unternehmen Websites für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Das erste Beispiel gibt Elemente zurück, die größer als 1 Byte sind. Das zweite Beispiel gibt Elemente von 1 bis 10.000 Bytes an Größe zurück.|
-|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
+|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
 |||||
    
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -126,7 +126,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |OfficeLocation|Der Wert in der **Office** -oder **Office-Standort** Eigenschaft.|
 |OtherAddress|Der Wert für die **andere** Address-Eigenschaft.|
 |Nachname|Der Name in der **Last** Name-Eigenschaft.|
-|Position|Der Titel in der **Position Title** -Eigenschaft.|
+|Title|Der Titel in der **Position Title** -Eigenschaft.|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
@@ -221,7 +221,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
 |**Bedingung**|**Beschreibung**|
 |:-----|:-----|
 |Ursprung|Das Feld Autor aus Office-Dokumenten, das bleibt, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und die e-Mails an eine andere Person weitergeben, die es dann in SharePoint hoch lädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
+|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dies ist die gleiche Eigenschaft wie die FileExtension-Website Eigenschaft.|

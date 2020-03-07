@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für die neue Daten Untersuchung (Preview) im Security & Compliance Center einen Vorfall mit Datenüberlauf verwalten.
 ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072027"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543366"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Ereignisses zur Verschütten von Daten in Microsoft 365
 

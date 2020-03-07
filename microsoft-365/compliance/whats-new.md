@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106808"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42552039"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -31,6 +31,36 @@ Wir fügen dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center
 > [!TIP]
 > Möchten Sie wissen, was in anderen Admin Center passiert? Lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Neuerungen im SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 Und besuchen Sie den [Microsoft 365-Fahrplan](https://www.microsoft.com/en-us/microsoft-365/roadmap) , um mehr über die Features von Microsoft 365 zu erfahren, die gestartet wurden, sich ausrollen, sich in der Entwicklung befinden, abgesagt oder bereits veröffentlicht wurden.
+
+## <a name="february-2020"></a>Februar 2020
+
+### <a name="insider-risk-management-is-officially-released"></a>Insider Risk Management wird offiziell veröffentlicht
+
+Drum Roll, bitte... Das Insider Risikomanagement steht nun Organisationen mit den folgenden Abonnements zur Verfügung:
+
+- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (bezahlt oder Testversion)
+- Microsoft 365 Enterprise E3-Abonnement mit dem [Microsoft E5-Compliance-Add-on](https://go.microsoft.com/fwlink/?linkid=2120432)
+
+Heads up, dass wir einige Verbesserungen seit der Vorschauversion vorgenommen haben, einschließlich [neuer Rollengruppen](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) und [Lösungs weiten Einstellungen](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings).
+
+Bitte hinterlassen Sie wie immer Feedback, wenn Sie die Lösung verwenden, damit wir weiterhin Verbesserungen vornehmen können.
+
+### <a name="records-management"></a>Datensatzverwaltung
+
+Diese neue Lösung bringt alle Funktionen für die Datensatzverwaltung unter einem Dach. Zu den Highlights gehören die Einführung der Versionsverwaltung für SharePoint und OneDrive sowie ein Nachweis der Verfügung für Datensätze.
+
+![Seite "Datensatzverwaltung" im Microsoft 365 Compliance Center](../media/mcc-records-management-page.png)
+
+[Weitere Informationen zur Datensatzverwaltung](records-management.md)
+
+### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Lösungs Spotlight: Data Connectors for Facebook and Twitter
+
+Daten-Konnektoren, die im [letzten Monat veröffentlicht](#just-launched) wurden, und wir suchen nach ihrer Hilfe beim Testen der folgenden Konnektoren, um ihre Funktion wie erwartet zu validieren.
+
+- [Facebook-Geschäfts Seiten](archive-facebook-data-with-sample-connector.md). Importiert und archiviert Daten von Facebook-Geschäfts Seiten nach Microsoft 365. Vorteilhaft für Compliance-Lösungen wie Datensatzverwaltung und eDiscovery.
+- [Twitter](archive-twitter-data-with-sample-connector.md). Importiert und archiviert Daten von Twitter nach Microsoft 365. Vorteilhaft für Compliance-Lösungen wie Datensatzverwaltung und eDiscovery.
+
+Wenn Sie diese Konnektoren einrichten und validieren, hinterlassen Sie uns bitte Feedback darüber, was gut gelaufen ist, was nicht, und was wir tun können, um die Benutzerfreundlichkeit zu verbessern.
 
 ## <a name="january-2020"></a>Januar 2020
 
@@ -140,13 +170,13 @@ Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliance-Anford
 |Verhinderung von Datenverlust|Verhinderung von Datenverlust <br/> https://protection.office.com/datalossprevention |Verhinderung von Datenverlust <br/> https://compliance.microsoft.com/datalossprevention |[Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)|
 |Datensubjektanforderungen |Datenschutz > Datensubjekt Anforderungen <br/> https://protection.office.com/dsrcases |Datensubjektanforderungen <br/> https://compliance.microsoft.com/datasubjectrequest |[Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Kern <br/> https://compliance.microsoft.com/classicediscovery |[Verwalten von eDiscovery-Fällen](ediscovery-cases.md) |
-|Veranstaltungen|> Ereignisse für die Datensatzverwaltung <br/> https://protection.office.com/events |Registerkarte "Datensatzverwaltung > Ereignisse" <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md)|
+|Ereignisse|> Ereignisse für die Datensatzverwaltung <br/> https://protection.office.com/events |Registerkarte "Datensatzverwaltung > Ereignisse" <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md)|
 |Dateiplan|Datensatzverwaltung > Dateiplan <br/> https://protection.office.com/fileplan |Registerkarte "Datensatzverwaltung > Dateiplan" <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Übersicht über den Dateiplan-Manager](file-plan-manager.md)|
 |Importieren von PST-Dateien|Information Governance > Importieren von PST-Dateien <br/> https://protection.office.com/importV2 |Registerkarte "Informationssteuerung" > "Importieren" <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Übersicht über das Importieren der PST-Dateien Ihrer Organisation](importing-pst-files-to-office-365.md)|
 |Bezeichnungs Aktivitäts-Explorer|Information Governance > Bezeichnungs Aktivitäts-Explorer <br/> https://protection.office.com/labelexplorer |Registerkarte "Datenklassifizierung > Aktivitäts-Explorer" <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten mit beschrifteten Inhalten (Vorschau)](data-classification-activity-explorer.md)|
 |Aufbewahrungs Bezeichnungen und Bezeichnungsrichtlinien |Klassifizierung > Aufbewahrungs Bezeichnungen > Registerkarten Bezeichnungen und Bezeichnungsrichtlinien <br/> https://protection.office.com/retentionlabels |Registerkarten für die Informationssteuerung > Bezeichnungen und Bezeichnungsrichtlinien <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](labels.md)|
 |Aufbewahrungsrichtlinien|Informationssteuerung > Aufbewahrung <br/> https://protection.office.com/retention |Registerkarte "Informationssteuerung > Aufbewahrung" <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)|
-|Typen vertraulicher Informationen|Klassifizierungs > vertrauliche Informationstypen <br/> https://protection.office.com/sensitivetypes |Registerkarte "Datenklassifizierung > vertraulichen Informationstypen" <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)|
+|Typen vertraulicher Informationen|Klassifizierungs > vertrauliche Informationstypen <br/> https://protection.office.com/sensitivetypes |Registerkarte "Datenklassifizierung > vertraulichen Informationstypen" <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)|
 |Vertraulichkeits Bezeichnungen und Bezeichnungsrichtlinien|Klassifikations > Sensitivitäts Bezeichnungen > Registerkarten Bezeichnungen und Bezeichnungsrichtlinien <br/> https://protection.office.com/sensitivity |Registerkarten für Informationsschutz > Bezeichnungen und Bezeichnungsrichtlinien <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Weitere Informationen Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
 |Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zu diesem Zeitpunkt kann nur auf Dienst Assurance-Ressourcen im Office 365 Security & Compliance Center zugegriffen werden. |[Dienst Assurance im Security & Compliance Center](service-assurance.md)|
 |Aufsicht|Aufsicht <br/> https://protection.office.com/supervisoryreviewv2 |Kommunikationscompliance <br/> https://compliance.microsoft.com/supervisoryreview |[Kommunikations Kompatibilität in Microsoft 365 (Vorschau)](communication-compliance.md) |

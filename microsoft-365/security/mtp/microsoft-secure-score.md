@@ -18,11 +18,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544434"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
