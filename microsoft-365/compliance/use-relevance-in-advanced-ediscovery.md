@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Office 365 Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.  '
-ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080712"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557633"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Verwenden des Moduls "Relevanz" in Office 365 Advanced eDiscovery
+# <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Verwenden des Moduls "Relevanz" in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -133,7 +133,7 @@ Es ist möglich, erweiterte eDiscovery-Verarbeitungsoptionen für den nächsten 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4ed49de0254fb834f84816236c2925791076f423
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3d30b2187199b223086d53a144d711537fd7e59d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073342"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557995"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Intune im Rahmen der DSGVO und des CCPA
 
@@ -127,4 +127,4 @@ Wenn beim Exportieren oder Löschen von Daten aus dem Azure-Portal Probleme auft
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

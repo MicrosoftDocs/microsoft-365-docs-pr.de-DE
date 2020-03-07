@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41003a7137b864b52f823debcd72c72ca55045d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085038"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557553"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
@@ -72,7 +72,7 @@ Sie müssen die Daten in den CSV-Dateien in einer einzigen Datei zusammenfassen,
 Die CSV-Datei muss sich in einem bestimmten Format für die Registrierung befinden. Wenn Sie die Daten in den vorherigen Schritten selbst gesammelt haben, sollte die Datei bereits im richtigen Format vorhanden sein. Wenn Sie die Datei von einem Lieferanten beziehen, müssen Sie das Format möglicherweise anpassen.
 
 >[!NOTE]
->Zur Vereinfachung können Sie eine [CSV-Beispieldatei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)herunterladen.
+>Zur Vereinfachung können Sie eine [CSV-Beispieldatei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv)herunterladen.
 
 Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Hersteller, Modell usw.) enthalten, aber ihre eigenen Daten für die anderen Zeilen. Wenn Sie die Vorlage verwenden, öffnen Sie Sie in einem Textbearbeitungstool wie Notepad, und lassen Sie alle Daten in Zeile 1 allein, und geben Sie nur Daten in Zeilen 2 und darunter ein. 
     

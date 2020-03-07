@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 81dfd4b0c0724e2ab40113c1d134e0932c215c8f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225508"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557985"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
@@ -217,7 +217,7 @@ Von Zeit zu Zeit bitten wir Kunden um Feedback zu diesen Produkten per SurveyMon
 ## <a name="learn-more"></a>Weitere Informationen
 
 - [DSGVO-Zusagen von Microsoft an Kunden unserer allgemein verfügbaren Enterprise Software-Produkte](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust Portal (STP)](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft-Datenschutzdashboard](https://account.microsoft.com/privacy)
 - [Microsoft Privacy Response Center](https://aka.ms/userprivacysite)

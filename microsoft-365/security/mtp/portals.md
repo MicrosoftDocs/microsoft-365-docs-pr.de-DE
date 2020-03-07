@@ -1,7 +1,7 @@
 ---
 title: Microsoft-Sicherheits Portale und Admin Center
 description: Finden Sie das richtige Microsoft Admin Center oder Portal für die Verwaltung verschiedener Dienste im Zusammenhang mit der Sicherheit von Microsoft 365
-keywords: Sicherheit, Portale, Microsoft 365, M365, Sicherheitscenter, Admin Center, URL, Link, MTP, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, InTune, MDM, MEM, ASC, OATP, aatp
+keywords: Sicherheit, Portale, Microsoft 365, M365, Sicherheitscenter, Admin Center, URL, Link, MTP, Microsoft Defender ATP, Microsoft Defender Security Center, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, InTune, MDM, MEM, ASC, OATP, AATP, Cloud-App-Sicherheit, Azure AD, Security & Compliance Center
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24bfd07b4b7baf9082ef99691fb1048e1f0b655e
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42336914"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558236"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft-Sicherheits Portale und Admin Center
-Während [Microsoft 365 Security Center](overview-security-center.md) die neue Heimat für die Überwachung und Verwaltung der Sicherheit in ihren Identitäten, Daten, Geräten, Apps ist, müssen Sie für bestimmte spezielle Aufgaben auf verschiedene Portale zugreifen.
+Während das [Microsoft 365 Security Center](overview-security-center.md) die neue Heimat für die Überwachung und Verwaltung der Sicherheit in ihren Identitäten, Daten, Geräten und Apps ist, müssen Sie für bestimmte spezielle Aufgaben auf verschiedene Portale zugreifen.
 
 > [!TIP] 
 > Um auf verschiedene relevante Portale aus dem Microsoft 365 Security Center zuzugreifen, wählen Sie **Weitere Ressourcen** im Navigationsbereich aus.

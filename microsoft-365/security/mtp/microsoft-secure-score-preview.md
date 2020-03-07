@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d4c71b2f3c575f21ee2693c3d371c263813c2324
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087572"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558246"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
@@ -92,11 +92,11 @@ Für den Zugriff auf die Graph-API benötigen Sie zusätzlich zu einer Rolle ein
 
 Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Verbesserungs Aktionen in Gruppen gegliedert:
 
-* Identität (Azure Ad Konten & Rollen, wobei Azure ATP in Kürze verfügbar ist)
+* Identität (Azure Ad Konten & Rollen)
 * Data (Microsoft Information Protection)
-* Gerät (Microsoft Defender ATP-Geräte)
+* Gerät (keine Verbesserungs Aktionen für jetzt)
 * App (e-Mail-und Cloud-apps, einschließlich Office 365 und Microsoft Cloud-App-Sicherheit)
-* Infrastruktur (Azure-Ressourcen)
+* Infrastruktur (keine Verbesserungs Aktionen für jetzt)
 
 Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können.
 

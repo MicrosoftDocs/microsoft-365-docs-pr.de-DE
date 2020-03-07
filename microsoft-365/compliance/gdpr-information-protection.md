@@ -17,12 +17,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0bd09751ae3da311b753906b9c341a52a93b14f6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2b8bfa67a8af8686627e239b06c1025c3e8f3137
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596382"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557945"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 
@@ -62,4 +62,5 @@ Der Bedrohungsschutz ist in Microsoft 365-Diensten integriert. Nachfolgend finde
 - [Windows-Bedrohungsschutz](https://docs.microsoft.com/windows/security/threat-protection/). Weitere Informationen zu Windows Defender Advanced Threat Protection und anderen Funktionen in Windows 10.
 
 ## <a name="learn-more"></a>Weitere Informationen
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

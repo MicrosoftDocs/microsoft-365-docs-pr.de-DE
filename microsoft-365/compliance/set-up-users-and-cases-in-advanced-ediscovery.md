@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informationen zum Konfigurieren von Benutzerrollen, Erstellen von Fällen und Zuweisen von Benutzern zu Fällen in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 754cc7d73fc3325c2525e3101d1378d55afea4de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d5e6ab503cc053e31811cc06ac12545a9eeb7e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601452"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557749"
 ---
-# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Einrichten von Benutzern und Fällen in Office 365 Advanced eDiscovery
+# <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Einrichten von Benutzern und Fällen in Advanced eDiscovery (klassisch)
 
-In diesem Thema wird beschrieben, wie Sie Benutzer und Fälle für Office 365 Advanced eDiscovery einrichten.
+In diesem Thema wird beschrieben, wie Sie Benutzer und Fälle für Advanced eDiscovery (Classic) einrichten.
   
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v 1.0*) an. Wenn Sie noch Advanced eDiscovery v 1.0 verwenden, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365*bezeichnet). Advanced eDiscovery 2,0 enthält ähnliche Funktionen wie in Advanced eDiscovery v 1.0, bietet aber auch viele neue Features wie Depotverwaltung, Kommunikationsverwaltung und Überprüfungs Sätze. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery *(klassisch)* oder Advanced eDiscovery *v 1.0*an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -61,7 +61,7 @@ Nachdem Sie einen eDiscovery-Fall erstellt und Mitglieder hinzugefügt haben, k�
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Vorbereiten der Daten](prepare-data-for-advanced-ediscovery.md)
  

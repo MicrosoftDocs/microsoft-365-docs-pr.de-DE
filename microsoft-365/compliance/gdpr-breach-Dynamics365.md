@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 474f66b51fc5d6b1c13479c5f01b7807589e8934
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a24c7542468e27835e058ff29585782774e96ed4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073872"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558115"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -106,4 +106,4 @@ Das Microsoft Dynamics 365-Team kann auch entscheiden, zusätzliches Microsoft-P
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

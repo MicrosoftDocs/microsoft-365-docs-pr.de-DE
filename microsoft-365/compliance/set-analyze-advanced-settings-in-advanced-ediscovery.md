@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'In diesem Artikel erfahren Sie, wie Sie erweiterte Einstellungen, einschließlich nahe Duplikate, e-Mail-Threads und Designs, für den Analyseprozess in Office 365 Advanced eDiscovery konfigurieren. '
-ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081267"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557795"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Festlegen von erweiterten Einstellungen für die Analyse in Office 365 Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Advanced eDiscovery bietet standardmäßig erweiterte Parameter für Analysemodu
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
   

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Lesen Sie, wie der Ähnlichkeitswert von Dokumenten, die minimale Ähnlichkeit zweier Dateien, die als nahe Duplikate betrachtet werden müssen, in Office 365 Advanced eDiscovery funktioniert. '
-ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080770"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557665"
 ---
-# <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Grundlegendes zur Ähnlichkeit von Dokumenten in Office 365 Advanced eDiscovery
+# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Grundlegendes zur Ähnlichkeit von Dokumenten in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -57,7 +57,7 @@ Nachdem Mengen zusammengeführt wurden, kann sich das Pivot-Dokument ändern, we
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Festlegen von Analyseoptionen](set-analyze-options-in-advanced-ediscovery.md)
   

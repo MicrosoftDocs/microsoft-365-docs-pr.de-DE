@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Office 365 Advanced eDiscovery, einschließlich nahe Dubletten, e-Mail-Threads und Designs.  '
-ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081156"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557785"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Festlegen von Analyseoptionen in Office 365 Advanced eDiscovery
+# <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Festlegen von Analyseoptionen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -78,7 +78,7 @@ Nachdem Sie diese Optionen festgelegt haben, klicken Sie auf **Analyse** ausfüh
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
   

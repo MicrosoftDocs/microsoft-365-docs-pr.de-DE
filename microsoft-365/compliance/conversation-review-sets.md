@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078127"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556773"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Überprüfen von Unterhaltungen in Advanced eDiscovery 
 
@@ -79,8 +79,6 @@ Wenn Sie Daten aus Unterhaltungen zu einem Überprüfungs Sätze hinzufügen, k�
   
 3. Nachdem die Elemente zum Überprüfungs Sätze hinzugefügt wurden, können Sie alle einzelnen Nachrichten von *CRC1*überprüfen. 
 
-
-
 So aktivieren Sie den Unterhaltungs Abruf:
   
 1. Wählen Sie auf der Registerkarte **Suchen** im Fall Advanced eDiscovery eine Suche aus, und klicken Sie dann auf der Flyout-Seite auf **zu Überarbeitungs Gruppe hinzufügen** .
@@ -91,7 +89,7 @@ So aktivieren Sie den Unterhaltungs Abruf:
   
 4. Nachdem der Auftrag **zum Überprüfen hinzufügen** auf der Registerkarte **Aufträge** abgeschlossen ist, können Sie mit der Überprüfung der Unterhaltungen beginnen.
 
-## <a name="step-4-review-conversations-in-the-review-set"></a>Schritt 4: Überprüfen der Unterhaltungen in der Überprüfungsgruppe
+## <a name="step-4-review-and-export-conversations-in-a-review-set"></a>Schritt 4: überprüfen und Exportieren von Unterhaltungen in einem Überprüfungs Satzes
 
 Nachdem der Inhalt verarbeitet und dem Überprüfungs hinzugefügt wurde, können Sie mit der Überprüfung der Daten im Überprüfungs-Datensatz beginnen. Die Überprüfungsfunktionen unterscheiden sich in Abhängigkeit davon, ob der Inhalt einem Standard Überprüfungs oder einer Konversations Überprüfungsgruppe hinzugefügt wurde. 
 
@@ -129,7 +127,6 @@ In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen v
 
 - Unter **Haltungs Konvertierung erneut ausführen:** Wenn Nachrichten zu einer Konversations Überprüfungsgruppe hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Zusammenfassung mit Threads zu erstellen und Ansichten zu kommentieren. Wenn der Auftrag für die Wiederherstellung der Unterhaltung fehlschlägt, können Sie diesen Auftrag erneut ausführen, indem Sie auf **Aktion > Erstellen von Unterhaltungs PDFs** in der Überprüfungsgruppe klicken.
 
-
 #### <a name="exporting-conversations"></a>Exportieren von Unterhaltungen
 
 In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen zum Exportieren von Unterhaltungen festlegen:
@@ -161,7 +158,7 @@ c. Weitere Optionen
 
 Weitere Informationen zum Überprüfen von Falldaten in Advanced eDiscovery finden Sie in den folgenden Artikeln:
 
-- [Anzeigen von Daten in Großbuchstaben](view-documents-in-review-set.md) 
+- [Anzeigen von Daten in Großbuchstaben](view-documents-in-review-set.md)
 
 - [Analysieren von Falldaten](analyzing-data-in-review-set.md)
 

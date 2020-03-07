@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Erfahren Sie, wie Sie mit dem &amp; Office 365 Security Compliance Center auf Office 365 Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.  '
-ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081522"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557825"
 ---
-# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ausführen des Prozess Moduls und Laden von Daten in "Advanced eDiscovery" (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -83,7 +83,7 @@ Wenn Sie den Fall hinzufügen, können Sie den Vorgang erneut ausführen.
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Anzeigen der Ergebnisse des Prozess Moduls](view-process-module-results-in-advanced-ediscovery.md)
 

@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Erfahren Sie, wie Office 365 Advanced eDiscovery Ihnen dabei helfen kann, Daten in Office 365 zu analysieren, Dokumentüberprüfungen zu rationalisieren und Entscheidungen für effiziente eDiscovery zu treffen.
-ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e84ada8c6ca004c0f3c50a79fa6908148770955
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597892"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557875"
 ---
-# <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
+# <a name="advanced-ediscovery-classic"></a>Advanced eDiscovery (klassisch)
 
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v 1.0*) an. Wenn Sie noch Advanced eDiscovery v 1.0 verwenden, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365*bezeichnet). Advanced eDiscovery 2,0 enthält ähnliche Funktionen wie in Advanced eDiscovery v 1.0, bietet aber auch viele neue Features wie Depotverwaltung, Kommunikationsverwaltung und Überprüfungs Sätze. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery *(klassisch)* oder Advanced eDiscovery *v 1.0*an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
 Mit Advanced eDiscovery können Sie Ihre Office 365 Daten besser verstehen und ihre eDiscovery-Kosten reduzieren. Mit Advanced eDiscovery können Sie unstrukturierte Daten in Office 365 analysieren, eine effizientere Dokumentüberprüfung durchführen und Entscheidungen treffen, um die Daten für eDiscovery zu reduzieren. Sie können mit Daten arbeiten, die in Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Office 365 Gruppen und Microsoft Teams gespeichert sind. Sie können eine eDiscovery-Suche im Security and Compliance Center durchführen, um nach Inhalten in Gruppen, einzelnen Postfächern und Websites zu suchen und dann die Suchergebnisse mit Advanced eDiscovery zu analysieren. Wenn Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten, ermöglicht die optische Zeichenerkennung das Extrahieren von Text aus Bildern. Mit dieser Funktion können die leistungsstarken Textanalyse Funktionen von Advanced eDiscovery auf Bilddateien angewendet werden.
   
@@ -38,11 +38,11 @@ Advanced eDiscovery rationalisiert und beschleunigt den Dokument Überprüfungsp
   
 ## <a name="get-started"></a>Erste Schritte
 
-Am schnellsten können Sie mit Advanced eDiscovery beginnen, indem Sie einen Fall erstellen und Suchergebnisse im Security #a0 Compliance Center vorbereiten, diese Ergebnisse in Advanced eDiscovery laden und dann die Express Analyse ausführen, um die Falldaten zu analysieren und dann die Ergebnisse für die externe Überprüfung zu exportieren.
+Am schnellsten können Sie mit Advanced eDiscovery beginnen, indem Sie einen Fall erstellen und Suchergebnisse im Security & Compliance Center vorbereiten, diese Ergebnisse in Advanced eDiscovery laden und dann die Express Analyse ausführen, um die Falldaten zu analysieren und dann die Ergebnisse für die externe Überprüfung zu exportieren.
   
 - [Erhalten Sie einen schnellen Überblick](quick-setup-for-advanced-ediscovery.md) über den erweiterten eDiscovery-Workflow 
     
-- [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md) für Advanced eDiscovery durch Erstellen einer Anfrage, Zuweisen von eDiscovery-Berechtigungen und Hinzufügen von Fall Mitgliedern mithilfe des Security #a0 Compliance Centers 
+- [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md) für Advanced eDiscovery durch Erstellen einer Anfrage, Zuweisen von eDiscovery-Berechtigungen und Hinzufügen von Fall Mitgliedern mithilfe des Security & Compliance Centers 
     
 - [Vorbereiten und Laden von Such Daten](prepare-data-for-advanced-ediscovery.md) in den Fall in Advanced eDiscovery 
     

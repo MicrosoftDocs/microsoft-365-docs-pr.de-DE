@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Beschreibt alle Felder, die in den Export Berichten für Advanced eDiscovery enthalten sind.
-ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594616"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558206"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportieren von Berichtsfeldern in Office 365 Advanced eDiscovery
+# <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Exportieren von Berichtsfeldern in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -35,19 +35,19 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
   
 |**Feld Name exportieren**|**Group**|**Beschreibung**|**Verfügbar in Standard Vorlage**|**In allen Vorlagen verfügbar**|
 |:-----|:-----|:-----|:-----|:-----|
-|Row_number  <br/> |Allgemeines  <br/> |Zeilennummer.  <br/> |Ja  <br/> |Ja  <br/> |
-|File_ID  <br/> |Allgemeines  <br/> |Datei-ID.  <br/> |Ja  <br/> |Ja  <br/> |
+|Row_number  <br/> |Allgemein  <br/> |Zeilennummer.  <br/> |Ja  <br/> |Ja  <br/> |
+|File_ID  <br/> |Allgemein  <br/> |Datei-ID.  <br/> |Ja  <br/> |Ja  <br/> |
 |File_class  <br/> |Verarbeitung  <br/> |Datei Klasse.  <br/> |Ja  <br/> |Ja  <br/> |
 |Family_ID  <br/> |Verarbeitung  <br/> |Numerischer Bezeichner, der zum Gruppieren von Dateien verwendet wird (in der Regel e-Mail-Instanz und ihre Anlagen).  <br/> |Ja  <br/> |Ja  <br/> |
 |For_review  <br/> |Verarbeitung  <br/> |Kennzeichen, um anzugeben, dass das Feld in den Export zur Überarbeitung eingeschlossen wird.  <br/> |Ja  <br/> |Ja  <br/> |
 |Native_file_name  <br/> |Verarbeitung  <br/> |Systemeigener Dateiname ohne Verweis auf Ordner und Erweiterung.  <br/> |Ja  <br/> |Ja  <br/> |
-|Hüter  <br/> |Allgemeines  <br/> |Verwalter der Datei.  <br/> |Ja  <br/> |Ja  <br/> |
+|Hüter  <br/> |Allgemein  <br/> |Verwalter der Datei.  <br/> |Ja  <br/> |Ja  <br/> |
 |Set_ID  <br/> |Analysieren  <br/> |"ND-Gruppe" oder "e-Mail-Gruppe"-ID.  <br/> |Ja  <br/> |Ja  <br/> |
 |Inclusive_type  <br/> |E-Mail  <br/> |Gibt an, ob die Datei inklusive ist, gemäß den folgenden Werten: 0-nicht inklusive, 1-inklusiv, 2-inclusive minus, 3-inklusiv-Kopie.  <br/> |Ja  <br/> |Ja  <br/> |
 |Marked_as_pivot  <br/> |Nahe Duplikate  <br/> |Gibt an, ob es sich bei der Datei um einen Pivot handelt.  <br/> |Ja  <br/> |Ja  <br/> |
 |Similarity_percent  <br/> |Nahe Duplikate  <br/> |Prozentsatz der Ähnlichkeit relativ zum Pivot.  <br/> |Ja  <br/> |Ja  <br/> |
 |Duplicate_subset  <br/> |Nahe Duplikate  <br/> |Eindeutiger Bezeichner der doppelten Teilmenge. Gibt an, ob die Datei exakte Text Duplikate enthält.  <br/> |Ja  <br/> |Ja  <br/> |
-|Datum  <br/> |Allgemeines  <br/> |Datum der Datei (abhängig vom Dateityp-e-Mail: gesendet am-Datum; Dokument: Datum geändert).  <br/> |Ja  <br/> |Ja  <br/> |
+|Datum  <br/> |Allgemein  <br/> |Datum der Datei (abhängig vom Dateityp-e-Mail: gesendet am-Datum; Dokument: Datum geändert).  <br/> |Ja  <br/> |Ja  <br/> |
 |Dominant_theme  <br/> |Analysieren  <br/> |Primäres Design der Datei.  <br/> |Ja  <br/> |Ja  <br/> |
 |Themes_list  <br/> |Designs  <br/> |Liste der Designnamen.  <br/> |Ja  <br/> |Ja  <br/> |
 |ND_set  <br/> |EquiSet  <br/> |Eindeutiger numerischer Bezeichner eines Nearduplicate-Satzes.  <br/> |Ja  <br/> |Ja  <br/> |
@@ -75,7 +75,7 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
 |Marked_as_seed  <br/> |Relevanz  <br/> |Tagging der Datei, wenn Sie als Seed-Datei in Relevanz pro Problem/Kategorie festgelegt wurde.  <br/> |Ja  <br/> |Ja  <br/> |
 |Marked_as_pre-Tagged  <br/> |Relevanz  <br/> |Tagging der Datei, wenn Sie in Relevanz pro Problem/Kategorie als Pre-Tagged festgelegt wurde.  <br/> |Ja  <br/> |Ja  <br/> |
 |Relevance_status_description  <br/> |Relevanz  <br/> |Beschreibung des Status der Relevanz.  <br/> |Ja  <br/> |Ja  <br/> |
-|Kommentar  <br/> |Allgemeines  <br/> |Vom Benutzer eingegebener Kommentar.  <br/> |Ja  <br/> |Ja  <br/> |
+|Kommentar  <br/> |Allgemein  <br/> |Vom Benutzer eingegebener Kommentar.  <br/> |Ja  <br/> |Ja  <br/> |
 |Export_input_path  <br/> |Verarbeitung  <br/> |Eingabepfad exportieren.  <br/> |Ja  <br/> |Ja  <br/> |
 |Pivot_ID  <br/> |Nahe Duplikate  <br/> |Pivot-ID der Datei.  <br/> |Ja  <br/> |Ja  <br/> |
 |Family_size  <br/> |Verarbeitung  <br/> |Die Anzahl der Dateien in einer Familie.  <br/> |Ja  <br/> |Ja  <br/> |
@@ -94,10 +94,10 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
 |Input_date_modified  <br/> |Verarbeitung  <br/> |Datum Eingabedatei wurde zuletzt geändert.  <br/> |Ja  <br/> |Ja  <br/> |
 |ND_ET_sort_excl_attach  <br/> |Analysieren  <br/> |Verkettung von e-Mail-Sätzen und ND-Sätzen zur Überprüfung. 'D ' wird als Präfix zu ND-Sätzen hinzugefügt, und "e" wird e-Mail-ssets hinzugefügt.  <br/> |Ja  <br/> |Ja  <br/> |
 |ND_ET_sort_incl_attach  <br/> |Analysieren  <br/> |Die Verkettung von e-Mail-Set und ND-Set zur Überprüfung 'd ' wird als Präfix zu ND-Sätzen hinzugefügt, und "e" wird e-Mail-Sätzen hinzugefügt. Darüber hinaus folgt für jede e-Mail innerhalb eines Email_set die entsprechenden Anlagen.  <br/> |Ja  <br/> |Ja  <br/> |
-|Deduped_custodians  <br/> |Allgemeines  <br/> |Verwalter von Dateien mit Deduplizierung  <br/> |Ja  <br/> |Ja  <br/> |
-|Deduped_file_IDs  <br/> |Allgemeines  <br/> |IDs von Dateien mit Deduplizierung  <br/> |Ja  <br/> |Ja  <br/> |
-|Deduped_paths  <br/> |Allgemeines  <br/> |Pfade von Dateien mit Deduplizierung  <br/> |Ja  <br/> |Ja  <br/> |
-|File_key  <br/> |Allgemeines  <br/> |Interner Bezeichner für die zukünftige Verwendung.  <br/> |Ja  <br/> |Ja  <br/> |
+|Deduped_custodians  <br/> |Allgemein  <br/> |Verwalter von Dateien mit Deduplizierung  <br/> |Ja  <br/> |Ja  <br/> |
+|Deduped_file_IDs  <br/> |Allgemein  <br/> |IDs von Dateien mit Deduplizierung  <br/> |Ja  <br/> |Ja  <br/> |
+|Deduped_paths  <br/> |Allgemein  <br/> |Pfade von Dateien mit Deduplizierung  <br/> |Ja  <br/> |Ja  <br/> |
+|File_key  <br/> |Allgemein  <br/> |Interner Bezeichner für die zukünftige Verwendung.  <br/> |Ja  <br/> |Ja  <br/> |
 |Export_native_path  <br/> |Verarbeitung  <br/> |Pfad der systemeigenen Datei im Exportpaket.  <br/> |Ja  <br/> |Ja  <br/> |
 |Extracted_text_path  <br/> |Verarbeitung  <br/> |Pfad der extrahierten Datei.  <br/> |Ja  <br/> |Ja  <br/> |
 |Process_batch  <br/> |Verarbeitung  <br/> |Batch-ID für Import Batch.  <br/> |Ja  <br/> |Ja  <br/> |
@@ -137,7 +137,7 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
    
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Exportieren von Case-Daten mit Advanced eDiscovery](export-case-data-in-advanced-ediscovery.md)
   

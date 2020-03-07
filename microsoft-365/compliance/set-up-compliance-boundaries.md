@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Office 365 Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069737"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557744"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
+
+Die Anleitungen in diesem Artikel können angewendet werden, wenn Sie entweder die Kern-eDiscovery oder die erweiterte eDiscovery zum Verwalten von Untersuchungen verwenden.
 
 Compliance-Grenzen erstellen logische Grenzen in einer Office 365 Organisation, die die Benutzerinhalts Speicherorte (wie Postfächer, SharePoint-Websites und OneDrive-Konten) steuert, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Grenzen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der rechtlichen, personellen oder sonstigen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Grenzen ist häufig für multinationale Unternehmen erforderlich, die geografische und behördliche Bestimmungen respektieren müssen, und für Regierungen, die häufig in verschiedene Agenturen aufgeteilt sind. In Office 365 helfen Compliance-Grenzen bei der Durchführung von Inhalts suchen und der Verwaltung von Untersuchungen mit eDiscovery-Fällen bei der Erfüllung dieser Anforderungen.
   
@@ -157,29 +159,29 @@ Der letzte Schritt besteht darin, einen eDiscovery-Fall im Security & Compliance
 - Wenn ein Mitglied der Rollengruppe, das einem Fall zugewiesen ist, eine mit dem Fall verknüpfte Suche ausführt, können die inhaltsspeicherorte in Ihrer Agentur nur durchsucht werden (Dies ist durch den Such Berechtigungsfilter definiert, den Sie in Schritt 4 erstellt haben).
 
 So erstellen Sie eine Anfrage und weisen Mitglieder zu:
-    
-1. Wechseln Sie zur Seite **eDiscovery** im Security & Compliance Center, und erstellen Sie einen Fall. 
-    
+
+1. Wechseln Sie zur **eDiscovery-oder** **Advanced eDiscovery** -Seite im Security & Compliance Center, und erstellen Sie einen Fall. 
+
 2. Klicken Sie in der Liste der eDiscovery-Fälle auf den Namen des von Ihnen erstellten Falls.
-    
+
 3. Klicken Sie auf der Seite **diesen Fall Flyout verwalten** unter **Rollengruppen verwalten**auf ![Symbol](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **hinzu**fügen.
-    
+
     ![Hinzufügen einer Rollengruppe als Mitglied eines eDiscovery-Falls](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. Wählen Sie in der Liste der Rollengruppen eine der Rollengruppen aus, die Sie in Schritt 3 erstellt haben, und klicken Sie auf **Hinzufügen**.
-    
+
 5. Klicken Sie im Flyout **dieses Fall verwalten** auf **Speichern** , um die Änderung zu speichern. 
 
 ## <a name="compliance-boundary-limitations"></a>Einschränkungen bei der Konformitäts Begrenzung
 
 Beachten Sie beim Verwalten von eDiscovery-Fällen und Untersuchungen zur Verwendung von Compliance-Grenzen die folgenden Einschränkungen.
   
-- Beim Erstellen und Durchführen einer Inhaltssuche können Sie inhaltsspeicherorte auswählen, die sich außerhalb Ihrer Agentur befinden. Aufgrund des Such Berechtigungs Filters sind jedoch Inhalte dieser Speicherorte nicht in den Suchergebnissen enthalten.
-    
+- Beim Erstellen und Durchführen einer Suche können Sie inhaltsspeicherorte auswählen, die sich außerhalb Ihrer Agentur befinden. Aufgrund des Such Berechtigungs Filters sind jedoch Inhalte dieser Speicherorte nicht in den Suchergebnissen enthalten.
+
 - Compliance-Grenzen gelten nicht für Aufbewahrungen in eDiscovery-Fällen. Das bedeutet, dass ein eDiscovery-Manager in einer Agentur einen Benutzer in einer anderen Agentur in der Warteschleife platzieren kann. Die Konformitäts Grenze wird jedoch erzwungen, wenn der eDiscovery-Manager die inhaltsspeicherorte des Benutzers durchsucht, der in der Warteschleife gespeichert wurde. Das bedeutet, dass der eDiscovery-Manager nicht in der Lage ist, die inhaltsspeicherorte des Benutzers zu durchsuchen, obwohl er den Benutzer in der Warteschleife platzieren konnte.
-    
+
     Darüber hinaus gelten die Aufbewahrungs Statistiken nur für inhaltsspeicherorte in der Agentur.
-    
+
 - Such Berechtigungsfilter werden nicht auf öffentliche Exchange-Ordner angewendet.
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen

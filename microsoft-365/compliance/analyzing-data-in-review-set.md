@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fbc2ad99433e2bf296e2891b6f3e85e22b6af6df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079932"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556783"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 
@@ -57,12 +57,18 @@ So zeigen Sie einen Analysebericht für eine Überprüfungsgruppe an:
 
 3. Klicken Sie auf **Bericht anzeigen**.
 
-Der Bericht enthält vier Komponenten aus der Analyse:
+Der Bericht enthält sieben Komponenten aus der Analyse:
 
-- **Aufschlüsselung** – wie viele e-Mail-Nachrichten, Anlagen und lose Dokumente wurden im Überprüfungs Satz gefunden.
+- **Zielpopulation:** Die Anzahl von e-Mail-Nachrichten, Anlagen und losen Dokumenten, die im Überprüfungs Satz gefunden wurden.
 
-- **Dokumente (ohne Anlagen)** – wie viele Lose Dokumente waren Pivots, eindeutig in der Nähe von Duplikaten eines Pivots oder ein exaktes Duplikat eines anderen Dokuments.
+- **Dokumente (ohne Anlagen):** Die Anzahl von losen Dokumenten, die Pivots sind, eindeutig nahe Duplikate eines Pivot-Elements oder ein exaktes Duplikat eines anderen Dokuments.
 
-- **E-Mails** -wie viele e-Mail-Nachrichten inklusive, einschließlich Kopien, einschließlich minus oder keines der oben genannten waren.
+- **E-Mails:** Die Anzahl der e-Mail-Nachrichten, die inklusive, einschließlich Kopien, einschließlich minus oder keine der oben genannten sind.
 
-- **Attachments** -wie viele e-Mail-Anlagen wurden eindeutig oder Duplikate einer anderen e-Mail-Anlage in der Überprüfungsgruppe.
+- **Anlagen:** Die Anzahl der eindeutigen e-Mail-Anlagen oder Duplikate einer anderen e-Mail-Anlage in der Überprüfungsgruppe.
+
+- **Anzahl der Dateien nach Typ:** Die Anzahl der Dateien, die durch die Dateierweiterung identifiziert werden.
+
+- **Dokumente nach Quelle:** Eine Zusammenfassung des Inhalts anhand der ursprünglichen Datenquelle.
+
+- **Nach Prozess aggregierte Dokumente:** Eine Zusammenfassung der Inhalte durch Review-Prozess festlegen. 

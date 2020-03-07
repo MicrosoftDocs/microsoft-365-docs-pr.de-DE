@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Hier erfahren Sie, wo Sie die Ergebnisse des Analyseprozesses in Office 365 Advanced eDiscovery anzeigen können, einschließlich der Definitionen der angezeigten Aufgabenoptionen.  '
-ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069182"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557623"
 ---
-# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Anzeigen von Analyseergebnissen in Office 365 Advanced eDiscovery
+# <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Anzeigen von Analyseergebnissen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -77,7 +77,7 @@ In den **Anlagen** Ergebnissen wird die Anzahl der Anlagen angezeigt, die dem Ty
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
   

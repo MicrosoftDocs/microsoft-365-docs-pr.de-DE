@@ -5,6 +5,8 @@ keywords: DSGVO-Verantwortlichkeiten, Prüflisten zu den Verantwortlichkeiten, M
 localization_priority: Priority
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 49933990388688ad5f683b13c68447be4d6ce50f
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 26c7e15eab3d66f3daee180f213bf5d66cad15ff
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558082"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558146"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Prüfliste zu den Verantwortlichkeiten für die DSGVO für Microsoft Office 365
 
@@ -153,5 +155,5 @@ Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Vertrauensstellungsportal (STP)](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)

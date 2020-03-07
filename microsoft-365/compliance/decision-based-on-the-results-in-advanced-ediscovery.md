@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Erfahren Sie, wie die Registerkarte entscheiden in Office 365 Advanced eDiscovery Daten bereitstellt, mit denen Sie die richtige Größe des Überprüfungs Satzes von Fall Dateien ermitteln können. '
-ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6d515305b01b0273bb2acffaad19c497fc5c82d2
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076246"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557543"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Entscheidung basierend auf den Ergebnissen in Office 365 Advanced eDiscovery
+# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Entscheidung basierend auf den Ergebnissen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -55,7 +55,7 @@ Im erweiterten Detailbereich werden zusätzliche Details angezeigt. Dateien in S
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069567"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557715"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Tagging und Relevanz Training in Office 365 Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Tagging und Relevanz Training in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -100,7 +100,7 @@ In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   

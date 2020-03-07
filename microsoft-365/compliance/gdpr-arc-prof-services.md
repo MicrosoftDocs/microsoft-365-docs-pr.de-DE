@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e9efb9117acba88b4baa8d91d8b3af2a1dc82049
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05bf6a14e27e716e4e30b6ad3715f3cdd4f49eec
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594475"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558136"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Prüfliste für Microsoft-Support und Dienstleistungen zu den Verantwortlichkeiten für die DSGVO
 
@@ -146,4 +146,4 @@ Diese Kontrollstruktur wird auch verwendet, um die Präsentation der internen Ko
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

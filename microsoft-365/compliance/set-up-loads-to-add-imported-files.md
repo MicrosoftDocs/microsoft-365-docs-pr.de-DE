@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie eine Relevanz-Schulung in Office 365 Advanced eDiscovery durchführen.  '
-ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081096"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557765"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Einrichten von Lasten zum Hinzufügen importierter Dateien in Office 365 Advanced eDiscovery
+# <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Einrichten von Lasten zum Hinzufügen importierter Dateien in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -138,7 +138,7 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Definieren von Problemen und Zuweisen von Benutzern](define-issues-and-assign-users.md)
   

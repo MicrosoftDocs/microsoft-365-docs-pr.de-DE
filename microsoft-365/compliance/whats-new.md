@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552039"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557598"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -36,7 +36,7 @@ Und besuchen Sie den [Microsoft 365-Fahrplan](https://www.microsoft.com/en-us/mi
 
 ### <a name="insider-risk-management-is-officially-released"></a>Insider Risk Management wird offiziell veröffentlicht
 
-Drum Roll, bitte... Das Insider Risikomanagement steht nun Organisationen mit den folgenden Abonnements zur Verfügung:
+Drum Roll, bitte...<br>Das Insider Risikomanagement steht nun Organisationen mit den folgenden Abonnements zur Verfügung:
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (bezahlt oder Testversion)
 - Microsoft 365 Enterprise E3-Abonnement mit dem [Microsoft E5-Compliance-Add-on](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -47,7 +47,7 @@ Bitte hinterlassen Sie wie immer Feedback, wenn Sie die Lösung verwenden, damit
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-Diese neue Lösung bringt alle Funktionen für die Datensatzverwaltung unter einem Dach. Zu den Highlights gehören die Einführung der Versionsverwaltung für SharePoint und OneDrive sowie ein Nachweis der Verfügung für Datensätze.
+Diese neue Lösung bringt alle Funktionen für die Datensatzverwaltung unter einem einzigen Dach. Zu den Highlights gehören die Einführung der Versionsverwaltung für SharePoint und OneDrive sowie ein Nachweis der Verfügung für Datensätze.
 
 ![Seite "Datensatzverwaltung" im Microsoft 365 Compliance Center](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ Diese neue Lösung bringt alle Funktionen für die Datensatzverwaltung unter ein
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Lösungs Spotlight: Data Connectors for Facebook and Twitter
 
-Daten-Konnektoren, die im [letzten Monat veröffentlicht](#just-launched) wurden, und wir suchen nach ihrer Hilfe beim Testen der folgenden Konnektoren, um ihre Funktion wie erwartet zu validieren.
+Daten-Konnektoren, die im [letzten Monat veröffentlicht](#just-launched) wurden, und wir suchen Ihre Hilfe beim Testen der folgenden Connectors.
 
 - [Facebook-Geschäfts Seiten](archive-facebook-data-with-sample-connector.md). Importiert und archiviert Daten von Facebook-Geschäfts Seiten nach Microsoft 365. Vorteilhaft für Compliance-Lösungen wie Datensatzverwaltung und eDiscovery.
 - [Twitter](archive-twitter-data-with-sample-connector.md). Importiert und archiviert Daten von Twitter nach Microsoft 365. Vorteilhaft für Compliance-Lösungen wie Datensatzverwaltung und eDiscovery.

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: 'Erfahren Sie mehr über die Dienstprogramme in Office 365 Advanced eDiscovery, einschließlich Fallprotokoll, klare Daten, Prozessfehler, Änderung der Relevanz und Transparenz Analyse.  '
-ms.openlocfilehash: 3952d1ec58b3f55f997079cec16f16ddb301ed89
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601332"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557655"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Verwenden von Office 365 erweiterten eDiscovery-Dienstprogrammen
+# <a name="use-advanced-ediscovery-classic-utilities"></a>Verwenden von erweiterten eDiscovery (Classic)-Dienstprogrammen
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -109,7 +109,7 @@ In einem Szenario mit mehreren Problemfällen kann für jedes Problem ein Berich
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
   
 [Definieren von Fall-und Mandanten Einstellungen](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 
