@@ -17,38 +17,38 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Erfahren Sie, wie Sie mit Microsoft 365 Business Unternehmensdaten entfernen, die Ihre Benutzer auf Ihren Geräten oder Windows-PCs haben.
-ms.openlocfilehash: 81b6e16f3824863fcc87003cf9d07ad33e5f2873
-ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
+ms.openlocfilehash: 1cfcf836f71cb81015d28a848611678252731b9c
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417354"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561318"
 ---
-# <a name="remove-company-data-from-devices"></a><span data-ttu-id="c4bf7-103">Entfernen von Unternehmensdaten von Geräten</span><span class="sxs-lookup"><span data-stu-id="c4bf7-103">Remove company data from devices</span></span>
+# <a name="remove-company-data-from-devices"></a><span data-ttu-id="97ae9-103">Entfernen von Unternehmensdaten von Geräten</span><span class="sxs-lookup"><span data-stu-id="97ae9-103">Remove company data from devices</span></span>
 
-<span data-ttu-id="c4bf7-104">[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="c4bf7-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
+<span data-ttu-id="97ae9-104">[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="97ae9-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
 
-## <a name="remove-company-data"></a><span data-ttu-id="c4bf7-105">Entfernen von Unternehmensdaten</span><span class="sxs-lookup"><span data-stu-id="c4bf7-105">Remove company data</span></span>
+## <a name="remove-company-data"></a><span data-ttu-id="97ae9-105">Entfernen von Unternehmensdaten</span><span class="sxs-lookup"><span data-stu-id="97ae9-105">Remove company data</span></span>
 
-<span data-ttu-id="c4bf7-p101">Sie können mit Microsoft 365 Business Unternehmensdaten entfernen, die Ihre Benutzer auf ihren mit Microsoft 365 geschützten [Geräten](app-protection-settings-for-android-and-ios.md) oder [Windows-PCs](protection-settings-for-windows-10-devices.md) gespeichert haben. **Wenn Sie Unternehmensdaten von einem Gerät entfernen, können Sie sie später nicht wiederherstellen**.</span><span class="sxs-lookup"><span data-stu-id="c4bf7-p101">You can use Microsoft 365 Business to remove company data that your users have on their [devices](app-protection-settings-for-android-and-ios.md) or [Windows PCs](protection-settings-for-windows-10-devices.md) that are protected by Microsoft 365. **If you remove company data from a device, you cannot restore it later**.</span></span> 
+<span data-ttu-id="97ae9-p101">Sie können mit Microsoft 365 Business Unternehmensdaten entfernen, die Ihre Benutzer auf ihren mit Microsoft 365 geschützten [Geräten](app-protection-settings-for-android-and-ios.md) oder [Windows-PCs](protection-settings-for-windows-10-devices.md) gespeichert haben. **Wenn Sie Unternehmensdaten von einem Gerät entfernen, können Sie sie später nicht wiederherstellen**.</span><span class="sxs-lookup"><span data-stu-id="97ae9-p101">You can use Microsoft 365 Business to remove company data that your users have on their [devices](app-protection-settings-for-android-and-ios.md) or [Windows PCs](protection-settings-for-windows-10-devices.md) that are protected by Microsoft 365. **If you remove company data from a device, you cannot restore it later**.</span></span> 
   
-1. <span data-ttu-id="c4bf7-108">Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="c4bf7-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
+1. <span data-ttu-id="97ae9-108">Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="97ae9-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
     
-2. <span data-ttu-id="c4bf7-109">Wählen Sie im linken Navigationsbereich **Geräte** \> **Verwalten**aus.  </span><span class="sxs-lookup"><span data-stu-id="c4bf7-109">On the left nav, choose **Devices**  \> **Manage**.</span></span>
+2. <span data-ttu-id="97ae9-109">Wählen Sie im linken Navigationsbereich **Geräte** \> **Verwalten**aus.  </span><span class="sxs-lookup"><span data-stu-id="97ae9-109">On the left nav, choose **Devices**  \> **Manage**.</span></span>
   
-3. <span data-ttu-id="c4bf7-110">Wählen Sie auf der Seite **Verwalten** die Option aus, oder suchen Sie nach einem Benutzer, der die zu entfernenden Daten hat, und wählen Sie den Namen aus.</span><span class="sxs-lookup"><span data-stu-id="c4bf7-110">On the **Manage** page, choose or search for a user who's data you want to remove, and choose the name.</span></span> 
+3. <span data-ttu-id="97ae9-110">Wählen Sie auf der Seite **Verwalten** die Option aus, oder suchen Sie nach einem Benutzer, der die zu entfernenden Daten hat, und wählen Sie den Namen aus.</span><span class="sxs-lookup"><span data-stu-id="97ae9-110">On the **Manage** page, choose or search for a user who's data you want to remove, and choose the name.</span></span> 
     
-4. <span data-ttu-id="c4bf7-111">Wählen Sie im nächsten Bereich das Gerät oder die Geräte aus der Liste **Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="c4bf7-111">On the next pane, select the device or devices from the **Devices** list.</span></span> <span data-ttu-id="c4bf7-112">Im daraufhin geöffneten Gerätebereich können Sie je nach Gerätetyp festlegen, ob das Gerät auf die Werkseinstellungen zurückgesetzt oder die Unternehmensdaten entfernt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="c4bf7-112">On the device pane that opens, you can choose to reset the device to factory settings or remove company data, depending on the device type.</span></span> 
+4. <span data-ttu-id="97ae9-111">Wählen Sie im nächsten Bereich das Gerät oder die Geräte aus der Liste **Geräte** aus.</span><span class="sxs-lookup"><span data-stu-id="97ae9-111">On the next pane, select the device or devices from the **Devices** list.</span></span> <span data-ttu-id="97ae9-112">Im daraufhin geöffneten Gerätebereich können Sie je nach Gerätetyp festlegen, ob das Gerät auf die Werkseinstellungen zurückgesetzt oder die Unternehmensdaten entfernt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="97ae9-112">On the device pane that opens, you can choose to reset the device to factory settings or remove company data, depending on the device type.</span></span> 
     
     ![Wählen Sie im Bereich Unternehmensdaten entfernen das Gerät aus, aus dem Sie die Daten entfernen möchten.](../media/resetorremove.png)
   
-5. <span data-ttu-id="c4bf7-114">Klicken Sie im Bestätigungsbereich auf **Schließen** **bestätigen** \> .</span><span class="sxs-lookup"><span data-stu-id="c4bf7-114">On the confirmation pane, choose **Confirm** \> **Close**.</span></span>
+5. <span data-ttu-id="97ae9-114">Klicken Sie im Bestätigungsbereich auf **Schließen** **bestätigen** \> .</span><span class="sxs-lookup"><span data-stu-id="97ae9-114">On the confirmation pane, choose **Confirm** \> **Close**.</span></span>
     
 
 
