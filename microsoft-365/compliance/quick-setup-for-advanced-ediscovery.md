@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Informationen zum Zugriff auf Office 365 Advanced eDiscovery im Office 365 Security &amp; Compliance Center und Erläuterung des üblichen Workflows für die Verwendung von Advanced eDiscovery.  '
-ms.openlocfilehash: e1af09caf57509bf472a766c9d9124ea969acc4e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1f434fe87fd93ebee03c4300c67214011f646134
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070297"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557845"
 ---
-# <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Schnelleinrichtung für Office 365 Advanced eDiscovery
+# <a name="quick-setup-advanced-ediscovery-classic"></a>Schnelle Einrichtung von Advanced eDiscovery (Classic)
 
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir die Deaktivierung von Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery v1.0*). Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir die Deaktivierung von Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery (Classic)* oder *Advanced eDiscovery V1.0*) an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
 
 In diesem Setup-Abschnitt werden einem Microsoft 365 Security &amp; Compliance Center eDiscovery-Manager die ersten Schritte mit Advanced eDiscovery gezeigt. Es wird davon ausgegangen, dass in beiden Bereichen Grundkenntnisse vorhanden sind.
   
@@ -73,7 +73,7 @@ Dieser Setup-Abschnitt beschreibt die ersten vier Schritte im Workflow. Eine Bes
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md)
   

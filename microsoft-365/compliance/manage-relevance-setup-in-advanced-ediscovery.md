@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lesen Sie die Empfehlungen zum Einrichten des Relevanztrainings in Office 365 Advanced eDiscovery, um Dateien nach ihrer Relevanz zu beurteilen und Analyseergebnisse zu generieren.
-ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600502"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557885"
 ---
-# <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Verwalten der Einrichtung von Relevanz in Office 365 Advanced eDiscovery
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Verwalten der Einrichtung von Relevanz in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -73,7 +73,7 @@ Nachdem die Parameter festgelegt wurden, kann der Prüfer/Experte mit dem Traini
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Definieren von Problemen und Zuweisen von Benutzern](define-issues-and-assign-users.md)
   
