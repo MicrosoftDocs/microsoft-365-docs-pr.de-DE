@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: b351524f1bcaa54360d9f7422c0955c5c4a35254
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557909"
+ms.locfileid: "42561665"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -94,7 +94,7 @@ Weitere Informationen zu eDiscovery-Berechtigungen und eine Beschreibung der ein
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Schritt 3: Konfigurieren globaler Einstellungen für Advanced eDiscovery
 
-Der letzte Schritt, der abgeschlossen werden muss, bevor Personen in Ihrer Organisation mit dem Erstellen und Verwenden von Fällen beginnen, besteht darin, globale Einstellungen zu konfigurieren, die für alle Fälle in Ihrer Organisation gelten. Zu diesem Zeitpunkt ist die einzige globale Einstellung, die zur Verfügung steht, die *Rechtsanwalts-Client-Berechtigungs Erkennung* (weitere globale Einstellungen sind in der Zukunft verfügbar). Mit dieser Einstellung kann das Anwalts-Client-Berechtigungsmodell ausgeführt werden, wenn Sie Daten in einem Überprüfungs Satzes analysieren. Das Modell verwendet Maschinelles Lernen, um die Wahrscheinlichkeit zu ermitteln, dass ein Dokumentinhalte enthält, die Natur rechtlich zulässig sind. Außerdem werden die Teilnehmer von Dokumenten mit einer anwaltsliste verglichen (die Sie beim Einrichten des Modells übermitteln), um festzustellen, ob ein Dokument mindestens einen Teilnehmer besitzt, der ein Anwalt ist.
+Der letzte Schritt, der abgeschlossen werden muss, bevor Personen in Ihrer Organisation mit dem Erstellen und Verwenden von Fällen beginnen, besteht darin, globale Einstellungen zu konfigurieren, die für alle Fälle in Ihrer Organisation gelten. Zu diesem Zeitpunkt ist die einzige globale Einstellung die *Berechtigung "Anwalts Clienterkennung* " (weitere globale Einstellungen werden in der Zukunft verfügbar sein). Mit dieser Einstellung kann das Anwalts-Client-Berechtigungsmodell ausgeführt werden, wenn Sie Daten in einem Überprüfungs Satzes analysieren. Das Modell verwendet Maschinelles Lernen, um die Wahrscheinlichkeit zu ermitteln, dass ein Dokumentinhalte enthält, die Natur rechtlich zulässig sind. Außerdem werden die Teilnehmer von Dokumenten mit einer anwaltsliste verglichen (die Sie beim Einrichten des Modells übermitteln), um festzustellen, ob ein Dokument mindestens einen Teilnehmer besitzt, der ein Anwalt ist.
 
 Weitere Informationen zum Einrichten und Verwenden des Erkennungs Modells für das Anwalts Client-Recht finden Sie unter [Einrichten der Anwalts-Client-Berechtigungs Erkennung in Advanced eDiscovery](attorney-privilege-detection.md).
 

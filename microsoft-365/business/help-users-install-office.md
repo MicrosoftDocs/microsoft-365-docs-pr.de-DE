@@ -20,18 +20,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Unterstützen Sie Ihre Benutzer bei der Installation von Office-Apps auf Windows 10-Geräten, und installieren Sie Office auf Windows 10-PCs ganz einfach über das Microsoft 365 Business Admin Center.
-ms.openlocfilehash: 5df9a1a8236942a34031daf06e38acbe923339e4
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: a33121f5c5b3532ea376a2bf7a6d7f51d4291a47
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550372"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561625"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Unterstützen der Benutzer bei der Installation von Office auf Windows 10-Geräten
 

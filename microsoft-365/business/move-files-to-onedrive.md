@@ -17,18 +17,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Erfahren Sie, wie Sie Ihre persönlichen Arbeitsdateien und vertrauliche Unternehmensdateien in wenigen einfachen Schritten in OneDrive für Unternehmen verlagern können.
-ms.openlocfilehash: 837ec8bb01ed78e7a13ee802afaf845c80544f5d
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 7c36eb272983f86ee42361478ff63dfca252f0ce
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550265"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561678"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business
 
