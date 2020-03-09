@@ -24,7 +24,7 @@ description: Informationen zur Verwendung der Sicherheitsstandardeinstellungen z
 monikerRange: o365-worldwide
 ms.openlocfilehash: 4dc52c25c3a9351be1a9f4d094d664bc4ed527f9
 ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/02/2020
 ms.locfileid: "42361046"
@@ -72,7 +72,7 @@ Wenn Sie zuvor die mehrstufige Authentifizierung mit Basisrichtlinien eingericht
 5. Wechseln Sie zur Seite [Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 6. Wählen Sie am unteren Rand der Seite **Sicherheitsstandards verwalten** aus, und legen Sie im Bereich **Sicherheitsstandards aktivieren** für die Option **Sicherheitsstandards aktivieren** **Ja** fest. 
 
-## <a name="enable-modern-authentication-for-your-organization"></a>Aktivieren der modernen Authentifizierung für Ihre Organisation
+## <a name="enable-modern-authentication-for-your-organization"></a>Aktivieren von moderner Authentifizierung für Ihre Organisation
 
 Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Active Directory-Authentifizierungsbibliothek (Active Directory Authentication Library, ADAL). Dies bedeutet, dass App-Kennwörter für Office 2016-Clients nicht erforderlich sind. Sie müssen jedoch sicherstellen, dass Ihr Office 365-Abonnement für ADAL oder die moderne Authentifizierung aktiviert ist.
 
@@ -84,15 +84,15 @@ Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Activ
     
 ## <a name="enable-multi-factor-authentication-for-your-organization"></a>Aktivieren der mehrstufigen Authentifizierung für Ihre Organisation
     
-1. Wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822)die Option **Users** und **Active Users**aus.
+1. Wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822), die Option **Benutzer** und dann **Aktive Benutzer**.
 
-2. Klicken Sie im Abschnitt **aktive Benutzer** auf mehrstufige **Authentifizierung**.
+2. Klicken Sie im Abschnitt **Aktive Benutzer** auf **Mehrstufige Authentifizierung**.
 
-3. Wählen Sie auf der Seite mehrstufige **Authentifizierung** die Option **Benutzer** aus, wenn Sie dies für einen Benutzer aktivieren, oder wählen Sie **Massenaktualisierung** aus, um mehrere Benutzer zu aktivieren.
+3. Wählen Sie auf der Seite **Mehrstufige Authentifizierung** die Option **Benutzer** aus, wenn Sie die Aktivierung für einen Benutzer vornehmen, oder **Massenaktualisierung**, um mehrere Benutzer zu aktivieren.
 
-4. Klicken Sie unter **Quick Steps**auf **aktivieren** .
+4. Klicken Sie unter **QuickSteps** auf **Aktivieren**.
 
-5. Klicken Sie im Popupfenster auf **Aktivieren der mehr**stufigen Authentifizierung.
+5. Klicken Sie im Popupfenster auf **Mehrstufige Authentifizierung aktivieren**.
 
 Nachdem Sie die mehrstufige Authentifizierung für Ihre Organisation eingerichtet haben, müssen die Benutzer auf ihren Geräten die Prüfung in zwei Schritten einrichten. Weitere Informationen finden Sie unter [Einrichten der Prüfung in zwei Schritten für Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     

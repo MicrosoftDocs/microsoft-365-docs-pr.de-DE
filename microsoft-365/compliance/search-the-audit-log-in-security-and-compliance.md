@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 2c69cc6f7e5b332819061e3bf92b9ab02a1dc8db
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551814"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562067"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -340,7 +340,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |(keine)|FileModifiedExtended|Dies bezieht sich auf die Aktivität "Datei geändert" (FileModified). Wenn dieselbe Person während eines längeren Zeitraums (bis zu 3 Stunden) eine Datei ständig ändert, wird ein FileModifiedExtended-Ereignis protokolliert. <br/><br/> Die Protokollierung von FileModifiedExtended-Ereignissen dient dazu, die Anzahl von FileModified-Ereignissen zu verringern, die bei ständiger Änderung einer Datei protokolliert werden. Auf diese Weise lässt sich der Stördatenverkehr von mehreren FileModified-Einträgen besser reduzieren, bei denen die Benutzeraktivität im Wesentlichen identisch ist, sodass Sie sich auf das ursprüngliche (und wichtigere) FileModified-Ereignis konzentrieren können.|
 |Datei verschoben|FileMoved|Der Benutzer verschiebt ein Dokument von seinem aktuellen Speicherort auf einer Website an einen neuen Speicherort.|
 |(keine)|FilePreviewed|Ein Benutzer zeigt eine Vorschau einer Datei auf einer SharePoint- oder OneDrive for Business-Website an. Diese Ereignisse treten in der Regel in großem Umfang basierend auf einer einzelnen Aktivität auf, z. B. der Anzeige einer Bildergalerie.|
-|Suchabfrage durchgeführt|SearchQueryPerformed|Der Benutzer oder das Systemkonto nimmt eine Suche auf einer SharePoint- oder OneDrive for Business-Website vor. Einige häufige Szenarios, in denen ein Dienstkonto eine Suchabfrage ausführt, umfassen das Anwenden einer eDiscovery-Sperre oder einer Aufbewahrungsrichtlinie auf Websites und OneDrive-Konten, und wenn Aufbewahrungs- oder Vertraulichkeitsbezeichnungen automatisch auf Websiteinhalte angewendet werden. In vielen Fällen ist der Name des Dienstkontos, das im Feld „Benutzer“ des Überwachungsdatensatzes protokolliert wird, **app\@sharePoint**. </br></br> **Tipp:** die Felder „ApplicationDisplayName“ und „EventData“ im Überwachungsdatensatz für die Aktivität der durchgeführten Suchabfrage helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, mit dem dieses Ereignis ausgelöst wurde.|
+|Suchabfrage durchgeführt|SearchQueryPerformed|Der Benutzer oder das Systemkonto nimmt eine Suche auf einer SharePoint- oder OneDrive for Business-Website vor. Einige häufige Szenarien, in denen ein Dienstkonto eine Suchabfrage ausführt, umfassen das Anwenden einer eDiscovery-Sperre und einer Aufbewahrungsrichtlinie auf Websites und OneDrive-Konten, und das automatische Anwenden von Aufbewahrungs- oder Vertraulichkeitsbezeichnungen auf Websiteinhalte.|
 |Alle Nebenversionen einer Datei in den Papierkorb verschoben|FileVersionsAllMinorsRecycled|Benutzer löscht alle Nebenversionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.|
 |Alle Versionen der Datei in den Papierkorb|FileVersionsAllRecycled|Benutzer löscht alle Versionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.|
 |Dateiversion in den Papierkorb|FileVersionRecycled|Benutzer löscht eine Version aus dem Versionsverlauf einer Datei. Die gelöschte Version wird in den Papierkorb der Website verschoben.|
@@ -353,10 +353,25 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |(keine)|PagePrefetched|Der Client eines Benutzers (beispielsweise eine Website oder eine Mobile App) hat die angegebene Seite angefordert, um die Leistung zu verbessern, wenn der Benutzer zu ihr navigiert. Dieses Ereignis wird protokolliert, um anzugeben, dass der Seiteninhalt für den Client des Benutzers bereitgestellt wurden. Dieses Ereignis ist kein definitiver Hinweis darauf, dass der Benutzer zu der Seite navigiert ist. <br/><br/> Wenn der Seiteninhalt vom Client (gemäß der Anforderung des Benutzers) gerendert wird, sollte ein ClientViewSignaled-Ereignis generiert werden. Nicht alle Clients unterstützen Prefetches, und daher werden einige möglicherweise stattdessen als PageViewed-Ereignisse protokolliert.|
 ||||
 
+#### <a name="the-appsharepoint-user-in-audit-records"></a>Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen
+
+Ihnen ist möglicherweise aufgefallen, dass in Überwachungsdatensätzen für einige Dateiaktivitäten (und andere SharePoint-bezogene Aktivitäten) der Benutzer, der die Aktivität ausgeführt hat (in den Feldern "Benutzer" und "Benutzer-ID" aufgeführt), als "app@sharepoint" angegeben ist. Dies weist darauf hin, dass es sich bei dem "Benutzer", der die Aktivität ausgeführt hat, um eine Anwendung handelt. In diesem Fall hatte die Anwendung in SharePoint die Berechtigung erhalten, organisationsweite Aktionen (z. B. das Durchsuchen einer SharePoint-Website oder eines OneDrive-Kontos) im Auftrag eines Benutzers, Administrators oder Dienstes auszuführen. Dieser Vorgang zur Erteilung von Berechtigungen für eine Anwendung heißt "*Nur SharePoint-App*-Zugriff". Dies weist darauf hin, dass die Authentifizierung, die SharePoint zum Ausführen einer Aktion präsentiert wurde, von einer Anwendung anstelle eines Benutzers vorgenommen wurde. Dies ist der Grund, warum in manchen Überwachungsdatensätzen der "app@sharepoint"-Benutzer angegeben wird. Weitere Informationen finden Sie unter [Gewähren des "Nur SharePoint-App"-Zugriffs](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+
+"app@sharepoint" wird beispielsweise häufig als Benutzer bei Ereignissen wie ausgeführte Suchabfragen und Dateizugriffe angegeben. Der Grund dafür ist, dass eine Anwendung mit "Nur SharePoint-App"-Zugriff in Ihrer Organisation Suchabfragen ausführt und auf Dateien zugreift, wenn Aufbewahrungsrichtlinien auf Websites und OneDrive-Konten angewendet werden.
+
+Nachstehend sind einige weitere Szenarien aufgeführt, in denen "app@sharepoint" als Benutzer, der eine Aktivität ausgeführt hat, in einem Überwachungsprotokoll angegeben werden kann:
+
+- Office 365-Gruppen. Wenn ein Benutzer oder Administrator eine neue Gruppe erstellt, werden Überwachungsdatensätze für die Erstellung einer Websitesammlung, das Aktualisieren von Listen und das Hinzufügen von Mitgliedern zu einer SharePoint-Gruppe generiert. Diese Aufgaben werden von einer Anwendung im Namen des Benutzers ausgeführt, der die Gruppe erstellt hat.
+
+- Microsoft Teams. Bei der Erstellung eines Teams werden ähnlich wie bei Office 365-Gruppen Überwachungsdatensätze für die Erstellung einer Websitesammlung, das Aktualisieren von Listen und das Hinzufügen von Mitgliedern zu einer SharePoint-Gruppe generiert.
+
+- Compliance-Features. Wenn ein Administrator Compliance-Features implementiert, z. B. Aufbewahrungsrichtlinien, eDiscovery-Aufbewahrungsvorgaben und automatisch angewendete Vertraulichkeitsbezeichnungen.
+
+In diesen und weiteren Szenarios werden Sie außerdem feststellen, dass mehrere Überwachungsdatensätze mit "app@sharepoint" als angegebenen Benutzer innerhalb eines sehr kurzen Zeitrahmens erstellt wurden, häufig sogar innerhalb weniger Sekunden. Dies bedeutet ebenfalls, dass sie wahrscheinlich von demselben vom benutzerinitiierten Vorgang ausgelöst wurden. Die Felder "ApplicationDisplayName" und "EventData" im Überwachungsdatensatz helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, durch das/den dieses Ereignis ausgelöst wurde.
 
 ### <a name="folder-activities"></a>Ordneraktivitäten
 
-In der folgenden Tabelle sind die Ordneraktivitäten in SharePoint Online und OneDrive for Business beschrieben.
+In der folgenden Tabelle sind die Ordneraktivitäten in SharePoint Online und OneDrive for Business beschrieben. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -373,7 +388,7 @@ In der folgenden Tabelle sind die Ordneraktivitäten in SharePoint Online und On
 
 ### <a name="sharepoint-list-activities"></a>SharePoint-Listen Aktivitäten
 
-In der folgenden Tabelle sind die Aktivitäten im Zusammenhang mit der Interaktion zwischen Benutzern und Listenelementen in SharePoint Online beschrieben.
+In der folgenden Tabelle sind die Aktivitäten im Zusammenhang mit der Interaktion zwischen Benutzern und Listenelementen in SharePoint Online beschrieben. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -451,7 +466,7 @@ In der folgenden Tabelle sind die Dateisychronisierungsaktivitäten in SharePoin
 
 ### <a name="site-permissions-activities"></a>Websiteberechtigungsaktivitäten
 
-In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen von Berechtigungen in SharePoint und der Verwendung von Gruppen zum Gewähren (und Widerrufen) des Zugriffs auf Websites aufgelistet.
+In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen von Berechtigungen in SharePoint und der Verwendung von Gruppen zum Gewähren (und Widerrufen) des Zugriffs auf Websites aufgelistet. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -475,7 +490,7 @@ In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen vo
 
 ### <a name="site-administration-activities"></a>Websiteverwaltungsaktivitäten
 
-Die folgende Tabelle enthält die Ereignisse, die aus Websiteverwaltungsaufgaben in SharePoint Online resultieren.
+Die folgende Tabelle enthält die Ereignisse, die aus Websiteverwaltungsaufgaben in SharePoint Online resultieren. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|

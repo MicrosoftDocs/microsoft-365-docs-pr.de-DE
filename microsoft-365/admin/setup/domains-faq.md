@@ -23,11 +23,11 @@ ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen in Office 365, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
 ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543804"
 ---
 # <a name="domains-faq"></a>Häufig gestellte Fragen (FAQ) zu Domänen
 

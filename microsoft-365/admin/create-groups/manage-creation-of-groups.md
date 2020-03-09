@@ -24,7 +24,7 @@ ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Office 365-Gruppen erstellen können.
 ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
 ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/02/2020
 ms.locfileid: "42352636"
