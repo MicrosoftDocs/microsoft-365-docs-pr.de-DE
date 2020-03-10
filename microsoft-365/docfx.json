@@ -6,7 +6,6 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "office365",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
