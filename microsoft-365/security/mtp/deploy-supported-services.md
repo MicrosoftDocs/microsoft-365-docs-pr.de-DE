@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19907517f94cc8b6dbf041cccf56f1d8e232f2f
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374205"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569044"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 
@@ -36,7 +36,7 @@ ms.locfileid: "42374205"
 [Microsoft Threat Protection](microsoft-threat-protection.md) integriert verschiedene Microsoft-Sicherheitsdienste, um zentralisierte Erkennungs-, Präventions-und Ermittlungsfunktionen Gegenanspruchs volle Angriffe bereitzustellen. In diesem Artikel werden die unterstützten Dienste, ihre Lizenzierungsanforderungen, die Vorteile und Einschränkungen im Zusammenhang mit der Bereitstellungeines oder mehrerer Dienste sowie Links dazu beschrieben, wie Sie diese vollständig einzeln bereitstellen können.
 
 ## <a name="supported-services"></a>Unterstützte Dienste
-Ein [Microsoft 365 E5, E5 Security, A5 oder A5 oder eine gültige Kombination von Lizenzen](prerequisites.md#licensing-requirements) bietet Zugriff auf die folgenden unterstützten Dienste und berechtigt Sie zur Verwendung von Microsoft Threat Protection im Microsoft 365 Security Center.
+Eine [Microsoft 365 E5, E5-oder A5-Lizenz oder eine gültige Kombination von Lizenzen](prerequisites.md#licensing-requirements) bietet Zugriff auf die folgenden unterstützten Dienste und berechtigt Sie zur Verwendung von Microsoft Threat Protection im Microsoft 365 Security Center.
 
 | Unterstützter Dienst | Beschreibung |
 | ------ | ------ |

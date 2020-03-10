@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 3e18759387525ec600c24f74c96d6cddf206fc82
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372053"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569043"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Voraussetzungen für Microsoft Threat Protection
 
@@ -40,8 +40,6 @@ Für die Verwendung von Microsoft Threat Protection benötigen Sie eine der folg
 - Microsoft 365 E5 Security
 - Office 365 E5 und "Enterprise Mobility + Security E5 (EMS E5)" und Windows E5
 - Microsoft 365 A5
-- Microsoft 365 A5 Security
-- Office 365 a5 und "Enterprise Mobility + Security A5 (EMS a5)" und Windows a5
 
 Weitere Informationen finden Sie unter [Microsoft 365 Enterprise-Dienstpläne](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 

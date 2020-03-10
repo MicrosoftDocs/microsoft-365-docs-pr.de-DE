@@ -1,7 +1,7 @@
 ---
 title: Erlernen der Abfragesprache für die erweiterte Suche in Microsoft Threat Protection
 description: Erstellen Sie Ihre erste Suchabfrage für Bedrohungen, und erfahren Sie mehr über die allgemeinen Operatoren und andere Aspekte der Abfragesprache für die erweiterte Suche.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Sprache, lernen, erste Abfrage, Telemetrie, Ereignisse, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Operatoren, Datentypen
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Sprache, lernen, erste Abfrage, Telemetrie, Ereignisse, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Operatoren, Datentypen, PowerShell Download, Abfragebeispiel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,83 +17,96 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eda9b893057afd54a644f0091bf4e1b421bd5439
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234694"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42567029"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-
-
 Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/). Sie können die Kusto-Syntax und -Operatoren verwenden, um Abfragen zu erstellen, die Informationen im [Schema](advanced-hunting-schema-tables.md) suchen, die speziell für die erweiterte Suche strukturiert sind. Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.
 
 ## <a name="try-your-first-query"></a>Testen Ihrer ersten Abfrage
 
-Wechseln Sie im Microsoft 365 Security Center zu **Hunting**, um Ihre erste Abfrage auszuführen. Verwenden Sie das folgende Beispiel:
+Wechseln Sie im Microsoft 365 Security Center zu **Hunting** , um die erste Abfrage auszuführen. Verwenden Sie das folgende Beispiel:
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents 
+// Finds PowerShell execution events that could involve a download
+union DeviceProcessEvents, DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 So sieht es in der erweiterten Suche aus.
 
-![Abbildung einer erweiterten Suchabfrage in Microsoft Defender ATP](../../media/advanced-hunting-query-example.png)
+![Bild der erweiterten Jagd Abfrage von Microsoft Threat Protection](../../media/advanced-hunting-query-example.png)
 
-Die Abfrage beginnt mit einem kurzen Kommentar, der beschreibt, wofür die Abfrage dient. Dies ist hilfreich, wenn Sie sich später entscheiden, Ihre Abfrage zu speichern und sie für andere Personen in Ihrer Organisation freizugeben.
+Ein kurzer Kommentar zum Anfang der Abfrage wurde hinzugefügt, um zu beschreiben, wofür er verwendet wird. Dies hilft, wenn Sie später entscheiden, die Abfrage zu speichern und für andere Personen in Ihrer Organisation freizugeben. 
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents
+// Finds PowerShell execution events that could involve a download
 ```
 
-Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen. In diesem Beispiel beginnen wir, indem wir den Tabellennamen `DeviceProcessEvents` und bei Bedarf weitere Pipe-Elemente hinzufügen.
+Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen. In diesem Beispiel beginnen wir mit dem Erstellen einer Vereinigung von zwei Tabellen `DeviceProcessEvents` und `DeviceNetworkEvents`fügen bei Bedarf weitergeleitete Elemente hinzu.
 
-Das erste Pipe-Element ist ein Zeitfilter, der in der letzten sieben Tagen festgelegt wurde. Wenn Sie den Zeitabschnitt so eng wie möglich lassen, wird sichergestellt, dass Abfragen gut ausgeführt werden, überschaubare Ergebnisse zurückgeben und keine Zeitüberschreitungen auftreten.
+```kusto
+union DeviceProcessEvents, DeviceNetworkEvents
+```
+Das erste piped-Element ist ein Zeitfilter, der auf die vorherigen sieben Tage beschränkt ist. Wenn Sie den Zeitabschnitt so eng wie möglich lassen, wird sichergestellt, dass Abfragen gut ausgeführt werden, überschaubare Ergebnisse zurückgeben und keine Zeitüberschreitungen auftreten.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-Auf den Zeitabschnitt folgt sofort eine Suche nach Dateien, die die PowerShell-Anwendung darstellen.
+Auf den Zeitbereich folgt unmittelbar eine Suche nach Prozess Dateinamen, die die PowerShell-Anwendung darstellen.
 
-```kusto
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+```
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
-Anschließend sucht die Abfrage nach Befehlszeilen, die in der Regeln mit PowerShell verwendet werden, um Dateien herunterzuladen.
+Anschließend sucht die Abfrage nach Zeichenfolgen in Befehlszeilen, die in der Regel zum Herunterladen von Dateien mithilfe von PowerShell verwendet werden.
 
 ```kusto
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
 ```
-
-Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen. `project` gibt bestimmte Spalten zurück, und `top` schränkt die Anzahl der Ergebnisse ein, sodass die Ergebnisse sinnvoll formatiert sind, eine angemessene Größe aufweisen und einfach zu verarbeiten sind.
+Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen. `project`gibt bestimmte Spalten zurück `top` und schränkt die Anzahl der Ergebnisse ein, wodurch sichergestellt ist, dass die Ergebnisse gut formatiert und relativ umfangreich und einfach zu verarbeiten sind.
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen. Sie können die Bildschirmansicht erweitern, damit Sie sich auf Ihre Suchabfrage und die Ergebnisse konzentrieren können.
+Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen. Wählen Sie das Erweiterungssymbol oben rechts im Abfrage-Editor aus, um sich auf Ihre Jagd Abfrage und die Ergebnisse zu konzentrieren.
+
+![Bild des Expand-Steuerelements im Editor für erweiterte Jagd Abfragen](../../media/advanced-hunting-expand.png)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>Erlernen häufig verwendeter Operatoren für die erweiterte Suche
 
