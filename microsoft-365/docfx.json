@@ -32,7 +32,6 @@
           "**/*.xls",
           "**/*.xlsx"
         ],
-        "group": "office365",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
