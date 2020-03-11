@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Fügen Sie die Ergebnisse einer Suche hinzu, die einem erweiterten eDiscovery-Fall zugeordnet ist. Elemente werden von Ihrem ursprünglichen Speicherort kopiert und in einen von Microsoft bereitgestellten Azure-Speicher Speicherort kopiert. Außerdem werden Elemente erneut indiziert, und Advanced eDiscovery führt die optische Zeichenerkennung für Bilddateien durch und lädt den Bild Text zur Überprüfung und Analyse hoch.
 ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552066"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42588818"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
 

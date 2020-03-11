@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: In diesem Artikel erfahren Sie, wie Sie Postfachinhalte für frühere Mitarbeiter beibehalten, indem Sie das Postfach in ein inaktives Postfach umwandeln. Sie können dies tun, indem Sie das Postfach in einem Beweissicherungsverfahren platzieren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach anwenden und dann das entsprechende Office 365 Konto entfernen.
-ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 958572fc922f3bef140773369124b1c45147ad16
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072902"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583042"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Übersicht über inaktive Postfächer in Office 365
 
@@ -70,13 +70,21 @@ Sie können auch eine Office 365-Aufbewahrungsrichtlinie speziell für inaktive 
 Wenn ein Haltestatus, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, in einem Postfach gespeichert wird und das Postfach oder das Office 365 Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Die Verwendung von eDiscovery-Fallspeichern zum Festlegen eines Postfachs als inaktiv wird jedoch nicht empfohlen. Grund hierfür ist, dass eDiscovery-Fälle für bestimmte zeitgebundene Fälle im Zusammenhang mit einem rechtlichen Problem vorgesehen sind. An einem bestimmten Punkt wird ein Rechtsfall wahrscheinlich enden, die dem Fall zugeordneten Speicherverfahren werden entfernt, und der eDiscovery-Fall wird geschlossen. Wenn ein für ein inaktives Postfach festgelegtes Speicherverfahren einem eDiscovery-Fall zugeordnet ist und das Speicherverfahren anschließend aufgehoben oder der eDiscovery-Fall geschlossen (oder gelöscht) wird, wird das inaktive Postfach endgültig gelöscht. Außerdem können Sie keinen zeitbasierten eDiscovery-Haltebereich erstellen. Das bedeutet, dass Inhalte in einem inaktiven Postfach für immer aufbewahrt werden oder bis das Archiv entfernt wird und das inaktive Postfach gelöscht wird. Daher empfehlen wir die Verwendung eines Beweissicherungsverfahrens oder einer Office 365-Aufbewahrungsrichtlinie für inaktive Postfächer.
   
 Weitere Informationen zu eDiscovery-Fällen und-Haltestatus finden Sie unter [eDiscovery Cases](ediscovery-cases.md).
-  
+
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>Inaktive Postfächer und Office 365-Bezeichnungen
 
 Bezeichnungen in Office 365 unterstützen Sie beim Klassifizieren von E-Mail-Daten in Ihrer Organisation für Governance und beim Erzwingen von Aufbewahrungsregeln auf Basis dieser Klassifikation. Eine Bezeichnung kann entweder manuell von Benutzern oder automatisch von Administratoren auf ein E-Mail-Element angewendet werden, und einem E-Mail-Element kann nur eine Bezeichnung zugewiesen werden. Wenn einem einzelnen e-Mail-Element im Postfach eines Benutzers eine Bezeichnung zugewiesen ist (und es so konfiguriert ist, dass das Element beibehalten oder beibehalten und dann gelöscht wird), und das Postfach oder das Office 365 Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Ähnlich wie bei eDiscovery-Fallspeichern wird auch die Verwendung von Bezeichnungen nicht empfohlen, um ein Postfach als inaktiv festzulegen. Stattdessen wird empfohlen, ein Beweissicherungsverfahren oder eine Office 365-Aufbewahrungsrichtlinie zu verwenden. Im Fall von Beschriftungen erkennen Sie möglicherweise nicht, dass eine Bezeichnung auf ein e-Mail-Element angewendet wurde und dann versehentlich ein inaktives Postfach erstellen, wenn Sie das Konto des Benutzers löschen. 
   
 Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Bezeichnungen](labels.md).
   
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Inaktive Postfächer und automatisch expandierende Archive
+
+Ein inaktives Postfach, das mit einem automatisch expandierenden Archiv konfiguriert ist, kann nicht wiederhergestellt oder wiederhergestellt werden. In Situationen, in denen die Wiederherstellung von Daten aus einem inaktiven Postfach mit einem automatisch wachsenden Archiv erforderlich ist, wird empfohlen, dass Sie das Inhalts Such Tool verwenden, um die Daten aus dem Postfach zu exportieren und dann in ein anderes Postfach zu importieren. Eine Schritt-für-Schritt-Anleitung zum Durchsuchen eines inaktiven Postfachs und zum Exportieren der Suchergebnisse finden Sie unter:
+
+- [Inhaltssuche in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [Exportieren von Inhalts Suchergebnissen](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Inaktive Postfächer und Exchange MRM-Aufbewahrungsrichtlinien
 
 Wenn eine Exchange-Aufbewahrungsrichtlinie (die Messaging-Datensatzverwaltung oder MRM-Funktion in Exchange Online) auf das Postfach angewendet wurde, als diese inaktiv wurde, werden alle Löschrichtlinien (die mit einer **Lösch** Aufbewahrungsaktion konfigurierte Aufbewahrungstags) für das inaktive Postfach weiterverarbeitet werden. Mit einer Löschrichtlinie markierte Elemente werden demnach in den Ordner „Wiederherstellbare Elemente" verschoben, wenn der Aufbewahrungszeitraum abläuft. Diese Elemente werden aus dem inaktiven Postfach gelöscht, wenn die Aufbewahrungsdauer abläuft. Wenn keine Aufbewahrungsdauer für das inaktive Postfach angegeben wurde, werden Elemente im Ordner „Wiederherstellbare Elemente" unbegrenzt aufbewahrt. 

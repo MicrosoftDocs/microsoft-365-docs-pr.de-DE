@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085834"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583172"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Managed Desktop-Produktlebenszyklus
 
@@ -31,7 +31,7 @@ In diesem Thema wird der Lebenszyklus von Geräten erläutert, die dem genehmigt
 - [Produkt Ruhestand](#product-retirement)
 
 
-Die gesamte Sequenz wird in dieser Abbildung dargestellt:
+Diese Abbildung zeigt die gesamte Sequenz:
 
 ![Lifecycle Timeline: beginnend mit der allgemeinen Verfügbarkeit des Produkts dauert die "primäre Verfügbarkeit" zwei Jahre. Während dieser Zeit endet das Zertifizierungs Fenster und an einem bestimmten Punkt ist das Gerät an Bord. Am Ende der primären Verfügbarkeit wird das Produkt archiviert, und die "Kulanzzeit" von drei Jahren beginnt. Ab dem Zeitpunkt, an dem das Gerät an Bord ist, hat es eine Nutzungsdauer von drei Jahren, bis es aus der Verwaltung entfernt wurde. Am Ende der Kulanzzeit entfernen wir das Produkt aus dem Katalog.](../../media/non-dark1-edits.PNG)
 
@@ -40,7 +40,7 @@ Die Produkte verbleiben bis zu 24 Monate im Katalog, die <em>Geräte</em> bleibe
 In dieser Tabelle sind die Beispieldaten für ein theoretisches Produkt aufgeführt:
 
 
-|Produkt  |Genehmigtes Datum  |Ende der primären Verfügbarkeit  |Ende eligiblity  |
+|Produkt  |Genehmigtes Datum  |Ende der primären Verfügbarkeit  |Ende der Berechtigung  |
 |---------|---------|---------|---------|
 |Fabrikam-Laptop    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 |Adatum-Laptop   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
@@ -88,7 +88,7 @@ Wenn Sie vor der Anmeldung mit Microsoft Managed Desktop vor kurzem eine Reihe v
 
 Das Beispiel für ein Fabrikam-Laptop aus der vorherigen Tabelle veranschaulicht diese Situation: 
 
-|Produkt  |Genehmigtes Datum  |Ende der primären Verfügbarkeit  |Ende eligiblity  |
+|Produkt  |Genehmigtes Datum  |Ende der primären Verfügbarkeit  |Ende der Berechtigung  |
 |---------|---------|---------|---------|
 |Fabrikam-Laptop    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
@@ -105,21 +105,10 @@ Der Produkt Ruhestand ist die letzte Phase des Lebenszyklus. In dieser Phase kö
 
 Ein Gerät ist nicht mehr konform, wenn das zulässige Fenster für die Microsoft Managed Desktop-Verwaltung abgelaufen ist. Dies ist der Fall, wenn das Gerät drei Jahre lang verwaltet wurde oder wenn dieser Produkttyp aus dem Gerätekatalog entfernt wurde, je nachdem, was zuerst eintritt. Sie sollten ihre Beschaffungszyklen immer so ausrichten, dass neue Geräte bereitgestellt werden, bevor aktuelle Geräte nicht mehr eingehaltenwerden.
 
-Das Microsoft Managed Desktop-Team weiß, dass die Beschaffungszyklen lang sind und um lang andauernde Budgets herum geplant sind. Um sicherzustellen, dass Sie stets über den Status der Geräte Auffüllung informiert sind, stellen wir eine [Website](https://aka.ms/mmdportal) bereit, in der jedes Gerät unter Verwaltung, das zukünftige Renten Datum und ein Status aufgeführt ist, der seine Einhaltung angibt. Dies bedeutet, dass Sie immer über die neuesten Informationen zum Geräte Alter verfügen und den Bericht in einem beliebigen Auftrags Planungszyklus nutzen können. 
+Das Microsoft Managed Desktop-Team weiß, dass die Beschaffungszyklen lang sind und um lang andauernde Budgets herum geplant sind. Um sicherzustellen, dass Sie immer über den Status der Geräte Auffüllung informiert sind, stellen wir eine [Website](https://aka.ms/mmdportal) bereit, die alle Geräte unter Verwaltung, Ihr Alter und einen Status auflistet, der die Kompatibilität angibt. Dies bedeutet, dass Sie immer über die neuesten Informationen zum Geräte Alter verfügen und den Bericht in einem beliebigen Planungszyklus für die Beschaffung verwenden können. 
 
 
-Außerdem führen wir die folgenden automatisierten Aktionen aus, um sicherzustellen, dass neue Geräte rechtzeitig bereitgestellt werden:
 
-
-|Zeitachse  |Aktion  |
-|---------|---------|
-|T-90     | Dieses Gerät wird in Kürze mit einer gelben Markierung auf der Website für den Gerätebestand als **Ablaufdatum**gekennzeichnet.  |
-|T-60     | Wir kennzeichnen dieses Gerät als **Ablauf** mit einem roten Marker auf der Website für den Gerätebestand.       |
-|T-30     | Wir werden eine Nachricht an das Admin-Portal senden, die besagt, dass Geräte die Compliance unmittelbar beenden.       |
-|0     |  Wir passen das Admin-Portal so an, dass die Geräte jetzt abgelaufen sind. Umleiten von Administratoren an Land in der Geräteliste zuerst.       |
-|T + 30     |  Wir reduzieren die Funktionalität des Verwaltungsportals, bis neue Geräte bereitgestellt werden.       |
-|T + 60     |  Wir reduzieren die Funktionalität des Verwaltungsportals, bis neue Geräte bereitgestellt werden.       |
-|T + 90     |  Wir entfernen das Gerät aus der Verwaltung. An diesem Punkt ist das Gerät allein Ihre eigene Verantwortung, und Sie sollten es nicht länger als sicher und auf dem neuesten Stand halten. Außerdem befindet sich das Gerät in einem unbekannten Zustand, da jeder Konfigurationsdienst Anbieter seine eigenen Einstellungen steuert.|
 
 
 

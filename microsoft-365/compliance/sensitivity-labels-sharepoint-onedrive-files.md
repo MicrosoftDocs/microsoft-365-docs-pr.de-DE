@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410032"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583142"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)
 
 Vor dieser Vorschau haben Sie bei der Anwendung von Sensitivitäts Bezeichnungen, die die Verschlüsselung in Office-Dateien in SharePoint und OneDrive gespeichert haben, den Inhalt dieser Dateien nicht verarbeiten können. Die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, Suche, vertiefen und anderen kollaborativen Features funktionierte unter diesen Umständen nicht. Diese Vorschau aktiviert diese Features für neue und geänderte Dateien, für die eine Vertraulichkeits Bezeichnung angewendet wurde, die die Verschlüsselung mit einem cloudbasierten Schlüssel umfasst:
 
-- SharePoint erkennt Vertraulichkeits Bezeichnungen, die auf Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive angewendet werden: während die Datei in SharePoint gespeichert wird, wird die Verschlüsselung von Azure Information Protection entfernt, sodass der Dateiinhalt verarbeitet werden kann und Anschließend werden die Verschlüsselungseinstellungen von der Bezeichnung erneut angewendet, wenn die Datei heruntergeladen wird. Informationen zum Schutz von Dokumenten vor dem Herunterladen finden Sie unter [Datenverschlüsselung in OneDrive für Unternehmen und SharePoint Online](data-encryption-in-odb-and-spo.md).
- 
-- Damit SharePoint die Datei beim Hochladen entschlüsseln kann, muss der Benutzer, der die beschriftete und verschlüsselte Datei hochlädt, über Nutzungsrechte verfügen, um die Datei mindestens anzuzeigen. SharePoint entschlüsselt keine Dateien, die der Benutzer außerhalb von SharePoint nicht öffnen kann.
+- SharePoint erkennt Vertraulichkeits Bezeichnungen, die auf Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive angewendet werden: während die Datei in SharePoint gespeichert wird, wird die Verschlüsselung von Azure Information Protection entfernt, sodass der Dateiinhalt verarbeitet werden kann. Informationen dazu, wie Dokumente geschützt werden, während Sie in SharePoint gespeichert werden, finden Sie unter [Datenverschlüsselung in OneDrive für Unternehmen und SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- Wenn Sie die Datei aus SharePoint oder OneDrive herunterladen oder darauf zugreifen, werden die Vertraulichkeits Bezeichnung und alle Verschlüsselungseinstellungen erneut mit der Datei angewendet, und diese Einstellungen bleiben überall dort bestehen, wo die Datei gespeichert wird.
+- Wenn Sie diese Datei aus SharePoint oder OneDrive herunterladen oder darauf zugreifen, werden die Vertraulichkeits Bezeichnung und alle Verschlüsselungseinstellungen aus der Bezeichnung erneut mit der Datei angewendet, und diese Einstellungen bleiben überall dort bestehen, wo die Datei gespeichert wird. Durch dieses Verhalten müssen Sie sicherstellen, dass Sie Benutzer Anweisungen zur Verwendung von Beschriftungen ausschließlich zum Schutz von Dokumenten bereitstellen. Weitere Informationen finden Sie unter [Optionen für die Verwaltung von Informationsrechten (RIM) und Sensitivitäts Bezeichnungen](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+
+- Damit SharePoint die Verschlüsselung aus der Datei beim Hochladen entfernen kann, muss der Benutzer, der die beschriftete und verschlüsselte Datei hochlädt, über Nutzungsrechte verfügen, um die Datei mindestens anzuzeigen. In SharePoint wird die Verschlüsselung von Dateien nicht entfernt, wenn der Benutzer Sie nicht außerhalb von SharePoint öffnen kann.
 
 - Verwenden Sie Office im Internet (Word, Excel, PowerPoint) zum Öffnen und Bearbeiten von Office-Dateien mit Vertraulichkeits Bezeichnungen, die Verschlüsselung anwenden. Die Berechtigungen, die der Verschlüsselung zugewiesen wurden, werden erzwungen. Mit Word im Internet können Sie auch die automatische Kennzeichnung verwenden, wenn Sie diese Dokumente bearbeiten.
 
@@ -89,6 +89,8 @@ Verwenden Sie für diese Vorschau die OneDrive-Synchronisierungs-App-Version 19.
 - Office-Desktop-Apps und Mobile Apps unterstützen nicht die gemeinsame Dokumenterstellung. Stattdessen öffnen diese apps weiterhin Dateien im exklusiven Bearbeitungsmodus.
 
 - Wenn ein beschriftetes Dokument in SharePoint hochgeladen wird und die Bezeichnung angewandte Verschlüsselung mithilfe eines Kontos aus einem Dienstprinzipalnamen verwendet wird, kann das Dokument nicht in Office im Internet geöffnet werden. Zu den Beispielszenarien zählen Microsoft Cloud-App-Sicherheit und eine Datei, die per e-Mail an Teams gesendet wird.
+
+- Benutzer können Speicherprobleme nach dem Wechseln in den Standbymodus oder in einen Ruhemodus haben, wenn anstelle von Office für das Internet der Desktop und der Mobile Apps für Word, Excel oder PowerPoint verwendet werden. Wenn diese Benutzer Ihre Office-App-Sitzung fortsetzen und versuchen, Änderungen zu speichern, wird eine Fehlermeldung zum hochladen angezeigt, in der Sie eine Kopie speichern können, anstatt die Originaldatei zu speichern. 
 
 - Dokumente, die auf folgende Weise verschlüsselt wurden, können nicht in Office im Internet geöffnet werden:
     - Verschlüsselung, die einen lokalen Schlüssel verwendet ("eigenen Schlüssel halten" oder Hyok)

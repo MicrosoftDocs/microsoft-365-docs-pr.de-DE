@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Artikel erfahren Sie, wie Benutzer mit Sensitivitäts Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 759c944bc72c39d1fd118dcb1b3515b5ede79687
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
+ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42548190"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583152"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -118,6 +118,34 @@ Informationen darüber, welche Features von den Azure Information Protection-Cli
 Vom Administrator definierte [Schutz Vorlagen](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), wie Sie für Office 365 Nachrichtenverschlüsselung definiert sind, werden in Office-Apps nicht angezeigt, wenn Sie die integrierte Beschriftung verwenden. Diese vereinfachte Darstellung zeigt, dass keine Schutz Vorlage ausgewählt werden muss, da die gleichen Einstellungen in Vertraulichkeits Bezeichnungen mit aktivierter Verschlüsselung enthalten sind.
 
 Wenn Sie vorhandene Schutz Vorlagen in Bezeichnungen konvertieren müssen, verwenden Sie das Azure-Portal und die folgenden Anweisungen: [So konvertieren Sie Vorlagen in Bezeichnungen](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
+
+## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>IRM-Optionen (Information Rights Management) und Sensitivitäts Bezeichnungen
+
+Vertraulichkeits Bezeichnungen, die Sie für die Verschlüsselung konfigurieren, entfernen die Komplexität von Benutzern, um Ihre eigenen Verschlüsselungseinstellungen anzugeben. In vielen Office-Apps können diese einzelnen Verschlüsselungseinstellungen weiterhin von Benutzern mithilfe von IRM-Optionen (Information Rights Management, Verwaltung von Informationsrechten) manuell konfiguriert werden. Beispielsweise für Windows-apps:
+
+- Für ein Dokument: **Datei** > **Informationen** > **schützen** > des**Zugriffs auf Dokumente einschränken**
+- für eine e-Mail: auf der Registerkarte " **Optionen** " > **verschlüsseln** 
+  
+Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Beispiel:
+
+- Ein Benutzer wendet die **vertrauliche Bezeichnung alle Mitarbeiter** auf ein Dokument an, und diese Bezeichnung ist so konfiguriert, dass Verschlüsselungseinstellungen für alle Benutzer in der Organisation angewendet werden. Dieser Benutzer konfiguriert dann die IRM-Einstellungen manuell, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation einzuschränken. Das Endergebnis ist ein Dokument mit dem Namen " **vertraulich" alle Mitarbeiter** und verschlüsselt, aber Benutzer in Ihrer Organisation können Sie nicht wie erwartet öffnen.
+
+- Ein Benutzer wendet die **vertrauliche Bezeichnung "nur Empfänger** " auf eine e-Mail an, und diese e-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung " **nicht weiterleiten**" angewendet wird. Dieser Benutzer konfiguriert dann die IRM-Einstellungen manuell so, dass die e-Mail-Adresse uneingeschränkt ist. Das Endergebnis ist, dass die e-Mail-Adresse von Empfängern weitergeleitet werden kann, obwohl die **vertrauliche Bezeichnung "nur Empfänger** " angegeben ist.
+
+- Ein Benutzer wendet die **Allgemeine** Bezeichnung auf ein Dokument an, und diese Bezeichnung ist nicht für die Anwendung der Verschlüsselung konfiguriert. Dieser Benutzer konfiguriert dann die IRM-Einstellungen manuell, um den Zugriff auf das Dokument einzuschränken. Das Endergebnis ist ein Dokument mit der Bezeichnung " **Allgemein** ", das aber auch Verschlüsselung anwendet, sodass einige Benutzer es nicht erwartungsgemäß öffnen können.
+
+Wenn das Dokument oder die e-Mail-Adresse bereits beschriftet ist, kann ein Benutzer eine dieser Aktionen ausführen, wenn der Inhalt noch nicht verschlüsselt ist, oder wenn er den [Verwendungsrechten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder den Vollzugriff besitzt. 
+
+Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die ausschließlich Bezeichnungen anwenden. Beispiel:
+
+- Für Ausnahmefälle, in denen Benutzer eigene Berechtigungen zuweisen müssen, geben Sie Bezeichnungen an, mit denen [Benutzer ihre eigenen Berechtigungen zuweisen können](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+
+- Anstelle von Benutzern, die die Verschlüsselung manuell entfernen, nachdem Sie eine Bezeichnung ausgewählt haben, die die Verschlüsselung anwendet, stellen Sie eine Alternative unter Bezeichnung bereit, wenn Benutzer eine Bezeichnung mit derselben Klassifizierung, aber keine Verschlüsselung benötigen. Wie:
+    - **Vertraulich \ alle Mitarbeiter**
+    - **Vertraulich \ anyone (keine Verschlüsselung)**
+
+> [!NOTE]
+> Wenn Benutzer die Verschlüsselung manuell aus einem beschrifteten Dokument entfernen, das in SharePoint oder OneDrive gespeichert ist, und Sie die [Vertraulichkeits Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md)haben, wird die Bezeichnungs Verschlüsselung beim nächsten Zugriff oder Herunterladen des Dokuments automatisch wiederhergestellt. 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Anwenden von Sensitivitäts Bezeichnungen auf Dateien, e-Mails und Anlagen
 
