@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Strategie für die Datensatzverwaltung in Ihrer Office 365- oder Microsoft-Organisation implementieren möchten, verwenden Sie Aufbewahrungsbezeichnungen, um Inhalte als Datensatz zu kennzeichnen. Veröffentlichen oder wenden Sie dann die Aufbewahrungsbezeichnungen für den Datensatz automatisch an.
-ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081674"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586726"
 ---
 # <a name="overview-of-records"></a>Übersicht über die Datensätze
 
@@ -70,7 +70,7 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
 ## <a name="using-retention-labels-to-declare-records"></a>Verwenden von Aufbewahrungsbezeichnungen zum Kennzeichnen von Datensätzen
 
-Wenn Sie eine Aufbewahrungsbezeichnung erstellen, haben Sie die Möglichkeit, die Aufbewahrungsbezeichnung zum Kennzeichnen des Inhalts als Datensatz zu verwenden. Wenn Sie Inhalte als Datensatz kennzeichnen möchten, müssen Sie die folgenden Schritte ausführen:
+Wenn Sie eine Aufbewahrungsbezeichnung erstellen, haben Sie die Möglichkeit, die Aufbewahrungsbezeichnung zum Kennzeichnen des Inhalts als Datensatz zu verwenden. Führen Sie die folgenden Schritte aus, um Inhalt als Datensatz zu deklarieren:
 
 1. Erstellen einer Aufbewahrungsbezeichnung. Wechseln Sie im Microsoft 365 Compliance Center zu **Records Management-** \> **Dateiplan**. Klicken Sie auf der Seite **Dateiplan** auf **Eine Bezeichnung erstellen**.
 
@@ -115,7 +115,7 @@ Die Datensatzversionsverwaltung steht für alle Dokumente mit einer Aufbewahrung
 
 ### <a name="locking-and-unlocking-a-record"></a>Sperren und Entsperren eines Datensatzes
 
-Nachdem einem Dokument eine Datensatzbezeichnung zugeordnet wurde, kann jeder Benutzer in der Standardgruppe „Mitglieder“ (Berechtigungsstufe „Mitwirken“) einen Datensatz entsperren oder einen entsperrten Datensatz sperren.
+Nachdem einem Dokument eine Datensatzbezeichnung zugeordnet wurde, kann jeder Benutzer in der Berechtigung "Mitwirken" oder einer engeren Berechtigungsstufe einen Datensatz entsperren oder einen entsperrten Datensatz sperren.
 <br/><br/>
 
 ![Der Datensatzstatus zeigt, dass das Datensatzdokument entsperrt ist](../media/recordversioning9.png)
