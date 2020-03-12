@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: b3f998ec7f52403c4b3676fb08976aacdc1f7d0f
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543149"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583132"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -154,6 +154,23 @@ Mit diesem Cmdlet können Sie [erweiterte Einstellungen](https://docs.microsoft.
 
 Sie können dieses Cmdlet auch zum Hinzufügen von Bezeichnungen zu und Entfernen von Bezeichnungen aus einer Bezeichnungsrichtlinie verwenden.
 
+## <a name="removing-and-deleting-labels"></a>Entfernen und Löschen von Bezeichnungen
+
+In einer Produktionsumgebung ist es unwahrscheinlich, dass Sie Vertraulichkeitsbezeichnungen aus einer Bezeichnungsrichtlinie entfernen oder diese löschen müssen. Es ist wahrscheinlicher, dass Sie möglicherweise eine oder beide Aktionen während einer anfänglichen Testphase ausführen müssen. Sie sollten genau darüber Bescheid wissen, was geschieht, wenn Sie eine dieser Aktionen ausführen.
+
+Das Entfernen einer Bezeichnung aus einer Bezeichnungsrichtlinie ist weniger riskant als das Löschen, und Sie können sie bei Bedarf später jederzeit wieder zu einer Bezeichnungsrichtlinie hinzufügen:
+
+- Wenn Sie eine Bezeichnung aus einer Bezeichnungsrichtlinie entfernen, sodass die Bezeichnung nicht mehr für die ursprünglich angegebenen Benutzer veröffentlicht wird, wird diesen Benutzern nach dem nächsten Aktualisieren der Bezeichnungsrichtlinie in ihrer Office-App nicht mehr die Option zum Auswählen dieser Bezeichnung angezeigt. Wenn die Bezeichnung jedoch auf Dokumente oder E-Mails angewendet wurde, wird sie nicht von diesen Inhalten entfernt. Jede Verschlüsselung, die von der Bezeichnung angewendet wurde, bleibt erhalten, und die zugrundeliegende Schutzvorlage bleibt veröffentlicht. 
+
+- Im Falle von Bezeichnungen, die entfernt wurden, aber zuvor auf Inhalte angewendet wurden, wird der angewendete Bezeichnungsname weiterhin in der Statusleiste von Benutzern angezeigt, die die integrierte Bezeichnungsfunktion für Word, Excel und PowerPoint verwenden. In ähnlicher Weise wird der Name von Bezeichnungen, die auf SharePoint-Websites angewendet wurden, weiterhin in der Spalte **Vertraulichkeit** angezeigt.
+
+Anders verhält es sich beim Löschen einer Bezeichnung:
+
+- Wenn die Bezeichnung Verschlüsselung angewendet hat, wird die zugrundeliegende Schutzvorlage archiviert, sodass zuvor geschützte Inhalte weiterhin geöffnet werden können. Aufgrund dieser Archivierung von Schutzvorlagen können Sie keine neue Bezeichnung mit dem gleichen Namen erstellen. Obwohl es möglich ist, eine Schutzvorlage mithilfe von [PowerShell-](https://docs.microsoft.com/powershell/module/aipservice/remove-aipservicetemplate) zu löschen, tun Sie dies nur, wenn Sie sicher sind, dass Sie keine mit der archivierten Vorlage verschlüsselten Inhalte öffnen müssen.
+
+- Bei Desktop-Apps: Die Bezeichnungsinformationen in den Metadaten bleiben erhalten, aber da eine Bezeichnungs-ID- und -Namenszuordnung nicht mehr möglich ist, wird der angewendete Bezeichnungsname nicht angezeigt (z. B. in der Statusleiste), sodass Benutzer davon ausgehen werden, dass der Inhalt nicht gekennzeichnet ist. Wenn die Bezeichnung Verschlüsselung angewendet hat, bleibt die Verschlüsselung aufrecht, und beim Öffnen des Inhalts werden weiterhin der Name und die Beschreibung der nun archivierten Schutzvorlage angezeigt.
+
+- Für Office im Web: Der Bezeichnungsnamen wird nicht in der Statusleiste oder in der Spalte **Vertraulichkeit** angezeigt. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und Onedrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
