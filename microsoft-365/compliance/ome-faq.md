@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597812"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605325"
 ---
 # <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
 
@@ -115,7 +115,8 @@ Ja! Sie können die Verschlüsselung für PDF-Anlagen für Ihre Office 365 Organ
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Nachrichten erben den Schutz der Datenverlust Verhinderung (DLP)-Richtlinie oder der e-Mail-Fluss Regel in Exchange Online. Wenn ein Outlook-oder Outlook im-Webbenutzer einer geschützten Nachricht eine ungeschützte PDF-Anlage anfügt, erbt die Nachricht den Schutz der Nachricht. Benutzer können die verschlüsselten Anlagen nur in Anwendungen öffnen, die geschützte PDFs unterstützen (beispielsweise das OM-Portal und der Azure Information Protection-Viewer).
+Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Für alle Outlook-Clients erben Nachrichten und ungeschützte PDF-Anlagen den OM-Schutz der Datenverlust Verhinderung (DLP)-Richtlinie oder der Nachrichtenfluss Regel in Exchange Online. Wenn ein Outlook im Internet-Benutzer ein ungeschütztes PDF-Dokument anhängt und den Schutz für die Nachricht anwendet, erbt die Nachricht auch den Schutz der Nachricht. Benutzer können die verschlüsselten Anlagen nur in Anwendungen öffnen, die geschützte PDFs unterstützen (beispielsweise das OM-Portal und der Azure Information Protection-Viewer).
+
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Werden OneDrive für Unternehmen Anlagen unterstützt?
 
@@ -143,7 +144,7 @@ Ja! Informationen zum Anpassen von e-Mail-Nachrichten und zum OM-Portal finden S
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Gibt es Berichtsfunktionen oder Einblicke in verschlüsselte e-Mails?
 
-Es gibt einen Verschlüsselungs Bericht im Security and Compliance Center. Weitere Informationen finden Sie unter [Anzeigen von e-Mail-Sicherheitsberichten im Security #a0 Compliance Center](../security/office-365-security/view-email-security-reports.md).
+Es gibt einen Verschlüsselungs Bericht im Security and Compliance Center. Weitere Informationen finden Sie unter [Anzeigen von e-Mail-Sicherheitsberichten im Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Kann ich Nachrichtenverschlüsselung mit Compliance-Features wie eDiscovery verwenden?
 
@@ -161,7 +162,7 @@ Diese Funktion kann gegenwärtig nicht verwendet werden.
 
 Ja! Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt.
 
-- Benutzer können geschützte e-Mail-Nachrichten in einem freigegebenen mMailbox öffnen, in dem das freigegebene Postfach eine geschützte e-Mail als Teil einer Verteilergruppe erhalten hat.
+- Benutzer können geschützte e-Mail-Nachrichten in einem freigegebenen Postfach öffnen, in dem das freigegebene Postfach eine geschützte e-Mail als Teil einer Verteilergruppe erhalten hat.
 
 - Benutzer können Anlagen anzeigen, die den Schutz von e-Mails erben, wenn Sie Outlook für Windows, Outlook für Mac und Outlook im Internet verwenden.
 

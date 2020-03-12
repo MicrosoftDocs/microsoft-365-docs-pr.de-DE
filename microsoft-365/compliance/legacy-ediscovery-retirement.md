@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543203"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605287"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -278,6 +278,13 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </td>
 </tr>
 <tr class="odd">
+<td>Löschen von Massen-e-Mails aus einem Postfach</td>
+<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer</span></a></p>
+<p></p></td>
+<td><p>Administratoren können eine Archivierungs-und Löschrichtlinie erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt und Elemente automatisch aus dem Postfach löscht.</p>
+</td>
+</tr>
+<tr class="even">
 <td>Kopieren von Suchergebnissen in ein Ermittlungspostfach</td>
 <td> </td>
 <td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. In den FAQs im Abschnitt <strong>*-MailboxSearch-Cmdlets</strong> finden Sie alternative Lösungen. </td>

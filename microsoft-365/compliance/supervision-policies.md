@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081072"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604082"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -51,7 +51,6 @@ Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden und den Überga
 - Die Überwachungslösung in Office 365 wird vollständig durch die Kommunikations kompatibilitätslösung in Microsoft 365 ersetzt. Für Organisationen, die von Aufsichtsrichtlinien auf die Konformität mit der Kommunikation umstellen, wird empfohlen, neue Richtlinien in der Kommunikations Kompatibilität zu erstellen, die dieselben *Bedingungen* wie die vorhandenen Aufsichtsrichtlinien haben, um neue Untersuchungen und Korrektur Verbesserungen zu ermöglichen. Beim Übergang zur Kommunikations Kompatibilität in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Beaufsichtigung in Office 365 zu exportieren, wenn Sie über interne Compliance-Aufbewahrungsrichtlinien Anforderungen verfügen.
 - In der Zwischenzeit können Organisationen beide Lösungen nebeneinander verwenden, bis Sie vollständig migriert wurden, aber Richtlinien, die in jeder Lösung verwendet werden, müssen *eindeutige Richtliniennamen*aufweisen. Gruppen und benutzerdefinierte Schlüsselwörter Wörterbücher können während der Übergangsphase Zwischenlösungen freigegeben werden.
 - Nachrichten, die in Office 365 Richtlinien Übereinstimmungen gespeichert wurden, können nicht in der Kommunikations Kompatibilität in Microsoft 365 verschoben oder freigegeben werden.
-
 
 Informationen zur Beaufsichtigung in Office 365 finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap) für Vorsorge Informationen.
 
@@ -82,7 +81,7 @@ Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien defin
 Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Office 365 Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
 
 >[!IMPORTANT]
->Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Prüfer
 
@@ -178,7 +177,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 | **Anlage ist größer als** <br><br> **Die Anlage ist nicht größer als** | Um Nachrichten anhand der Größe Ihrer Anlagen zu überprüfen, geben Sie die maximale oder minimale Größe an, die eine Anlage sein kann, bevor die Nachricht und ihre Anlagen überprüft werden können. Wenn Sie beispielsweise **Attachment größer als** \> **2,0 MB**angeben, werden alle Nachrichten mit Anlagen von 2,01 MB und mehr überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
-<a name="Matchwords"></a> Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Insiderhandel). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
+<a name="Matchwords"> </a> Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Insiderhandel). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 Um sowohl e-Mail-Nachrichten als auch Anlagen für dieselben Stichwörter zu überprüfen, erstellen Sie eine [Richtlinie zur Verhinderung von Datenverlust](create-test-tune-dlp-policy.md) mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) für die zu überwachenden Ausdrücke. Diese Richtlinienkonfiguration identifiziert definierte Schlüsselwörter, die entweder in der e-Mail-Nachricht **oder** in der e-Mail-Anlage angezeigt werden. Unter Verwendung der standardmäßigen bedingten Richtlinieneinstellungen (*Nachricht enthält* eines dieser Wörter und *Anlage enthält*eines dieser Wörter) zum Identifizieren von Ausdrücken in Nachrichten und in Anlagen erfordert die Begriffe sind **sowohl** in der Nachricht als auch in der Anlage vorhanden.
   

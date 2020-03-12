@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche Protect in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
-ms.openlocfilehash: 102d57681e049bf803b377fea97cc0fdb11affb2
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42562002"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605299"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
@@ -195,16 +195,16 @@ Sie können benutzerdefinierte Branding-Vorlagen verwenden, um zu erzwingen, das
 
    - `template name`ist der Name, den Sie beispielsweise `OME Configuration`der benutzerdefinierten Branding-Vorlage gegeben haben.
 
-   So verschlüsseln Sie alle externen e-Mails mit der Vorlage "1 Woche Sale" und wenden die Option "nur verschlüsseln" an:
+   So verschlüsseln Sie alle externen e-Mails mit der Vorlage "OM-Konfiguration" und wenden die Option "nur verschlüsseln" an:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
    ```
 
    So verschlüsseln Sie alle externen e-Mails mit der Vorlage "OM-Konfiguration" und wenden die Option "nicht weiterleiten" an:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
    ```
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Anpassen der Darstellung von e-Mail-Nachrichten und des OM-Portals

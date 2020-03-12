@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: 818a0db46d0c2a763c1c90b585a6d7a0fd403b94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077287"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604182"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -38,22 +38,22 @@ Manchmal wird DLP von Kunden nicht verwendet, weil sie der Ansicht sind, nicht �
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Wie vertrauliche Informationen durch DLP erkannt werden
 
-Vertrauliche Informationen werden durch Regex-Musterabgleich (Regular Expression) in Kombination mit anderen Indikatoren wie z. B. der Nähe bestimmter Stichwörter zu den übereinstimmenden Mustern ermittelt. Ein Beispiel hierfür sind Kreditkartennummern. Eine Visa-Kreditkartennummer besteht aus 16 Ziffern. Allerdings können diese Ziffern auf unterschiedliche Weise geschrieben werden, z. B. 1111-1111-1111-1111, 1111 1111 1111 1111 oder 1111111111111111.
+Vertrauliche Informationen werden durch reguläre Ausdrücke (Regular Expressions, Regex) in Kombination mit anderen Indikatoren wie der Nähe bestimmter Schlüsselwörter zu den übereinstimmenden Mustern identifiziert. Ein Beispiel hierfür sind Kreditkartennummern. Eine Visa-Kreditkartennummer besteht aus 16 Ziffern. Allerdings können diese Ziffern auf unterschiedliche Weise geschrieben werden, z. B. 1111-1111-1111-1111, 1111 1111 1111 1111 oder 1111111111111111.
 
 Nicht jede 16-stellige Zeichenfolge ist eine Kreditkartennummer; es kann sich dabei auch um eine Ticketnummer aus einem Helpdesk-System oder um eine fortlaufende Nummer einer Hardwarekomponente handeln. Um eine Kreditkartennummer von einer harmlosen 16-stelligen Zeichenfolge zu unterscheiden wird eine Berechnung (Prüfsumme) durchgeführt, um zu überprüfen, ob die Zahlen dem bekannten Muster eines der verschiedenen Kreditkartenanbieter entsprechen.
 
-Außerdem wird die Nähe von Stichwörtern wie "Visa" oder "Amex" sowie von Datumsangaben wie z. B. das Ablaufdatum der Kreditkarte für die Entscheidung herangezogen, ob es sich bei den Daten um eine Kreditkartennummer handelt.
+Darüber hinaus wird die Nähe von Stichwörtern wie "Visa" oder "Amex" sowie die Nähe zu Datumswerten, die das Ablaufdatum der Kreditkarte sein könnten, auch als Entscheidung darüber betrachtet, ob es sich bei den Daten um eine Kreditkartennummer handelt oder nicht.
 
 Mit anderen Worten: DLP ist normalerweise intelligent genug, um den Unterschied zwischen diesen beiden Texten in einer E-Mail zu erkennen:
 
-- "Bestellen Sie mir bitte einen neuen Laptop. Verwenden Sie meine Visa-Nummer 1111-1111-1111-1111, Ablaufdatum 11/22, und teilen Sie mir das voraussichtliche Lieferdatum mit, sobald es bekannt ist."
-- "Meine Laptop-Seriennummer lautet 2222-2222-2222-2222, und das Gerät wurde am 11/2010 gekauft. Übrigens: Wurden die Visa für die geplante Reise schon genehmigt?"
+- "Können Sie mir einen neuen Laptop bestellen. Verwenden Sie meine Visa Nummer 1111-1111-1111-1111, Verfall 11/22, und senden Sie mir das geschätzte Zustellungsdatum, wenn Sie es haben. "
+- "Meine Laptop-Seriennummer ist 2222-2222-2222-2222 und wurde am 11/2010 erworben. Übrigens: ist mein Reisevisum noch freigegeben? "
 
 Eine gute Informationsquelle diesbezüglich ist dieser [Beitrag zu vertraulichen Informationstypen](what-the-sensitive-information-types-look-for.md), in dem erläutert wird, wie die einzelnen Informationstypen erkannt werden.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Erste Schritte mit DLP (Verhinderung von Datenverlust)
 
-Wenn die Risiken von Datenverlust nicht ganz offensichtlich sind, ist es schwierig, herauszufinden, wo genau Sie mit der Implementierung von DLP beginnen sollten. DLP-Richtlinien können glücklicherweise im Testmodus ausgeführt werden, sodass Sie deren Effektivität und Genauigkeit überprüfen können, bevor Sie sie aktivieren.
+Wenn die Risiken von Datenverlust nicht ganz offensichtlich sind, ist es schwierig, herauszufinden, wo genau Sie mit der Implementierung von DLP beginnen sollten. Glücklicherweise können DLP-Richtlinien im Testmodus ausgeführt werden, sodass Sie ihre Effektivität und Genauigkeit messen können, bevor Sie Sie aktivieren.
 
 DLP-Richtlinien für Exchange Online können über das Exchange Admin Center verwaltet werden. Sie können DLP-Richtlinien für alle Arbeitsvorgänge aber auch über das Security & Compliance Center konfigurieren, weshalb ich dies für Demonstrationen in diesem Artikel verwenden werde. Im Security & Compliance Center finden Sie die DLP-Richtlinien unter **Verhinderung von Datenverlust** > **Richtlinien**. Klicken Sie auf **Richtlinie erstellen**, um zu beginnen.
 
@@ -99,11 +99,11 @@ Die DLP-Richtlinie, die ich für diesen Artikel erstellt habe, wird beispielswei
 
 ![Dokumentation zu australischen Steuernummern](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-Als eher einfaches Beispiel für die TFN-Erkennung: Eine E-Mail-Nachricht mit dem Wort "Steuernummer" und einer Zeichenfolge aus neun Ziffern in dessen unmittelbarer Nähe wird ohne Probleme durchgelassen. Der Grund dafür, dass die DLP-Richtlinie nicht ausgelöst wird, besteht darin, dass die 9-stellige Zeichenfolge die Prüfsumme übergeben muss, die angibt, dass es sich um eine gültige TFN und nicht nur um eine harmlose Zahlenfolge handelt.
+Um die TFN-Erkennung auf eine ziemlich unverblümte Weise zu demonstrieren, wird eine e-Mail mit den Worten "Steuerdatei Nummer" und einer 9-stelligen Zeichenfolge in unmittelbarer Nähe ohne Probleme durchfahren. Der Grund dafür, dass die DLP-Richtlinie nicht ausgelöst wird, besteht darin, dass die 9-stellige Zeichenfolge die Prüfsumme übergeben muss, die angibt, dass es sich um eine gültige TFN und nicht nur um eine harmlose Zahlenfolge handelt.
 
 ![Australische Steuernummer, die die Prüfsumme nicht zurückgibt](../media/DLP-create-test-tune-email-test1.png)
 
-Dagegen wird eine E-Mail mit dem Wort "Steuernummer" und einer gültigen TFN, welche die Prüfsumme zurückgibt, die Richtlinie auslösen. Die TFN, die ich hier verwende, wurde übrigens über eine Website erstellt, die gültige, aber nicht echte TFNs generiert. Solche Websites sind sehr hilfreich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie darin besteht, eine gefälschte Zahl zu verwenden, die ungültig ist und deshalb die Prüfsumme nicht zurückgibt (weshalb die Richtlinie auch nicht ausgelöst wird).
+Im Vergleich dazu löst eine e-Mail mit den Worten "Steuerdatei Nummer" und einer gültigen TFN, die die Prüfsumme übergibt, die Richtlinie aus. Die TFN, die ich hier verwende, wurde übrigens über eine Website erstellt, die gültige, aber nicht echte TFNs generiert. Solche Websites sind sehr hilfreich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie darin besteht, eine gefälschte Zahl zu verwenden, die ungültig ist und deshalb die Prüfsumme nicht zurückgibt (weshalb die Richtlinie auch nicht ausgelöst wird).
 
 ![Australische Steuernummer, die die Prüfsumme zurückgibt](../media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,7 @@ Der Benutzer kann die falsch positiven Informationen melden, und der Administrat
 
 ![Vorfallsbericht mit falsch positiven Informationen](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
-Dieser Führerscheinfall ist ein gutes Beispiel, das wir uns näher anschauen sollten. Der Grund für diese falsch positive Meldung ist, dass der Typ "australischer Führerschein" von einer beliebigen 9-stelligen Zeichenfolge (also auch einer, die Teil einer 10-stelligen Zeichenfolge ist) ausgelöst wird, die innerhalb 300 Zeichen Entfernung zu den Schlüsselwörtern "Sydney NSW" (schreibungsunabhängig) vorkommt. Hier wird sie also durch die Telefonnummer und die E-Mail-Signatur ausgelöst, nur weil der Benutzer zufällig in Sydney ist.
+Dieser Führerscheinfall ist ein gutes Beispiel, das wir uns näher anschauen sollten. Der Grund, warum dieses falsch positive Ergebnis aufgetreten ist, ist, dass der Typ "australischer Führerschein" durch eine beliebige 9-stellige Zeichenfolge (sogar eine, die Teil einer 10-stelligen Zeichenfolge ist) ausgelöst wird, innerhalb von 300 Zeichen Nähe zu den Schlüsselwörtern "Sydney NSW" (Groß-/Kleinschreibung nicht beachtet). Hier wird sie also durch die Telefonnummer und die E-Mail-Signatur ausgelöst, nur weil der Benutzer zufällig in Sydney ist.
 
 
 Eine besteht darin, den Informationstyp "australischer Führerschein" aus der Richtlinie zu entfernen. Sie ist darin enthalten, weil sie Teil der DLP-Richtlinienvorlage ist, wir sind jedoch nicht gezwungen, sie zu verwenden. Wenn Sie nur an Steuernummern und nicht an Führerscheinnummern interessiert sind, können Sie diesen Informationstyp einfach entfernen. So können Sie ihn beispielsweise aus der Regel zu geringen Mengen in der Richtlinie entfernen, ihn in der Regel zu großen Mengen hingegen belassen, sodass Listen mehrerer Führerscheinnummern weiterhin erkannt werden.

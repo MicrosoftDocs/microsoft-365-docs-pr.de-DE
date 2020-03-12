@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 733abf925c80f90527b67660b84aea3e0482e906
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078762"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543754"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -65,14 +65,14 @@ Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überpr
 
 Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob Nachrichten in einer oder mehreren der folgenden Kommunikationsplattformen als Gruppe oder als eigenständige Quellen überprüft werden sollen. Auf diesen Plattformen erfasste Kommunikationen werden für jede Richtlinie standardmäßig sieben Jahre lang aufbewahrt, selbst wenn Benutzer Ihre Organisation verlassen und ihre Postfächer gelöscht werden.
 
-- **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelne Chats können gescannt werden. Microsoft Teams-Chats, die den Bedingungen für die Kommunikationsrichtlinien Richtlinie entsprechen, werden einmal alle 24 Stunden verarbeitet und stehen dann in Kommunikations Kompatibilitätsberichten zur Verfügung. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
+- **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelne Chats können gescannt werden. Microsoft Teams-Chats und-Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
     - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
     - **Für Teams-Kanal Kommunikation:** Weisen Sie jedem Microsoft Team-Kanal oder Office 365 Gruppe, die Sie überprüfen möchten, die einen bestimmten Benutzer enthält, die Kommunikations Konformitätsrichtlinie zu. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Office 365 Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
 
-- **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. E-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort in Kommunikations Kompatibilitätsberichten verfügbar. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. Exchange-e-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-- **Skype for Business Online**: Chat Kommunikation und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Richtlinien für die Kommunikationsrichtlinien Übereinstimmung erfüllen, werden einmal alle 24 Stunden verarbeitet und stehen dann in Kommunikations Kompatibilitätsberichten zur Verfügung. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
+- **Skype for Business Online**: Chat Kommunikation und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
 
     - **Für Skype for Business Online Chat Kommunikation**: zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
 
@@ -286,16 +286,16 @@ Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelem
 
 Sie können auch Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) anzeigen.
 
-Im folgenden Beispiel werden die Aktivitäten für alle Aufsichts Überprüfungsaktivitäten (Richtlinien und Regeln) zurückgegeben, und es werden detaillierte Informationen zu den einzelnen Vorgängen aufgelistet:
+Im folgenden Beispiel werden die Aktivitäten für alle Aufsichts Überprüfungsaktivitäten (Richtlinien und Regeln) zurückgegeben:
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag
 ```
 
 In diesem Beispiel werden die Updateaktivitäten für Ihre Richtlinien für die Kommunikations Konformität zurückgegeben:
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?

@@ -21,20 +21,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Hier erfahren Sie, wie Sie Websites und Dateien für Personen außerhalb der Organisation freigeben. '
-ms.openlocfilehash: cb6faf14806f950f4b9a355e9f0fcdb660ec1d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252723"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603992"
 ---
 # <a name="share-sites-and-files-externally"></a>Externe Freigabe von Websites und Dateien
 
 Für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation können Sie ganze Websites oder bestimmte Dateien extern freigeben. Wenn Sie die Freigabe direkt einrichten möchten, wählen Sie das Szenario aus, das Sie aktivieren möchten:
 
 - [Zusammenarbeit mit Gästen an einem Dokument](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [Zusammenarbeit mit Gästen in einer Website](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Zusammenarbeit mit Gästen in einem Team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Zusammenarbeit mit Gästen in einer Website](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [Zusammenarbeit mit Gästen in einem Team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
   
 ## <a name="deciding-how-to-share-your-content"></a>Entscheiden, wie Inhalte freigegeben werden sollen
 

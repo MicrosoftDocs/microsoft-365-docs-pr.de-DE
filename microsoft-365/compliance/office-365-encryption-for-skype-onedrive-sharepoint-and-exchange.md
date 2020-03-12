@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Zusammenfassung: eine Beschreibung der Verschlüsselung für Skype, OneDrive, SharePoint und Exchange Online.'
-ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601842"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604162"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365 Verschlüsselung für Skype for Business, OneDrive für Unternehmen, SharePoint Online und Exchange Online
 
@@ -76,7 +76,7 @@ Listenelemente sind kleinere Segmente von Kundendaten, die Ad-hoc erstellt werde
 
 In OneDrive for Business und SharePoint Online gibt es zwei Szenarien, in denen Daten in Rechenzentren ein- und ausgehen.
 
-- **Die Client Kommunikation mit der Server** Kommunikation für OneDrive für Unternehmen über das Internet verwendet SSL/TLS-Verbindungen. Alle SSL-Verbindungen werden mit 2048-Bit-Schlüsseln hergestellt.
+- Die **Client Kommunikation mit der Server Kommunikation mit** SharePoint Online und OneDrive für Unternehmen über das Internet verwendet TLS-Verbindungen.
 - **Datenverlagerung zwischen Rechenzentren** – der Hauptgrund für das Verschieben von Daten zwischen Rechenzentren ist die geografische Replikation zur Aktivierung der Notfallwiederherstellung. Beispielsweise werden SQL Server-Transaktionsprotokolle und BLOB-Speicher-Deltas entlang dieser Pipe übertragen. Während diese Daten bereits über ein privates Netzwerk übertragen werden, werden sie zusätzlich durch branchenbeste Verschlüsselung geschützt.
 
 ## <a name="exchange-online"></a>Exchange Online
