@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
-ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088796"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612615"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -72,13 +72,13 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
     
 4. Auf dem **neuen Gruppen** Blatt:
     
-  - Wählen Sie unter **Gruppentyp** die Option **Sicherheit** aus.
-    
-  - Geben Sie den Gruppennamen unter **Name** ein.
-    
-  - Geben Sie unter **Gruppenbeschreibung** eine Beschreibung der Gruppe ein.
-    
-  - Wählen Sie **Zugewiesen** unter **Mitgliedschaftstyp** aus.
+    - Wählen Sie unter **Gruppentyp** die Option **Sicherheit** aus.
+
+    - Geben Sie den Gruppennamen unter **Name** ein.
+
+    - Geben Sie unter **Gruppenbeschreibung** eine Beschreibung der Gruppe ein.
+
+    - Wählen Sie **Zugewiesen** unter **Mitgliedschaftstyp** aus.
     
 5. Klicken Sie auf **Erstellen**, und schließen Sie dann das Blatt **Gruppe**.
     
@@ -155,59 +155,63 @@ Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen mit
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Phase 2: Erstellen und Konfigurieren der isolierten Teamwebsite
 
-In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfigurieren die Berechtigungen für die SharePoint Online-Standardberechtigungsstufen zur Verwendung der neuen Azure AD-basierten Zugriffsgruppen.
+In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfigurieren die Berechtigungen für die SharePoint Online-Standardberechtigungsstufen zur Verwendung der neuen Azure AD-basierten Zugriffsgruppen. Standardmäßig umfassen neue Teamwebsites eine Office 365 Gruppe und andere zugehörige Ressourcen, in diesem Fall erstellen wir jedoch eine Teamwebsite ohne eine Office 365 Gruppe. Auf diese Weise können Berechtigungen vollständig über SharePoint verwaltet werden.
   
 Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsite.
   
-1. Melden Sie sich beim Admin Center mit einem Konto an, das auch zum Verwalten der SharePoint Online-Teamwebsite verwendet wird (SharePoint Online-Administrator). Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, das auch für die Verwaltung der SharePoint Online Teamwebsite (SharePoint Online Administrator) verwendet wird. Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+2. Klicken Sie im Microsoft 365 Admin Center unter **Admin**Centers auf **SharePoint**.
+
+3. Erweitern Sie im SharePoint Admin Center den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
+
+4. Klicken Sie auf **Erstellen**, und wählen Sie dann **andere Optionen**aus.
+
+5. Wählen Sie in der Liste **Vorlage auswählen** die Option **Team Website**aus.
+   
+6. Geben Sie unter **Websitename** einen Namen für die Teamwebsite ein. 
     
-2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
-    
-3. Klicken Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
-    
-4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
-    
-5. Geben Sie unter **Websitename** einen Namen für die Teamwebsite ein. 
-    
-6. Geben Sie unter **Beschreibung der Teamwebsite** eine optionale Beschreibung des Zwecks der Website ein.
-    
-7. Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
-    
-8. Klicken Sie im Bereich **Wer soll hinzugefügt werden?** auf **Fertig stellen**.
+7. Geben Sie in **Primärer Administrator**das Konto ein, mit dem Sie angemeldet sind.
+ 
+8. Klicken Sie auf **Fertig stellen**.
     
 Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die gewünschten Berechtigungen.
   
 1. Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen“ und anschließend auf **Websiteberechtigungen**.
+
+2. Klicken Sie unter **Website Freigabe**auf **ändern, wie Mitglieder freigegeben werden können**.
+
+3. Wählen Sie die **einzigen Websitebesitzer können Dateien, Ordner und die Website freigeben**.
+
+4. Festlegen von **Zugriffsanforderungen** auf **aus**zulassen.
+
+5. Klicken Sie auf **Speichern**.
     
-2. Klicken Sie im Bereich **Websiteberechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
+6. Klicken Sie im Bereich **Berechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
     
-3. Klicken Sie auf der neuen Registerkarte **Berechtigungen** in Ihrem Browser auf **Einstellungen für Zugriffsrechteanforderungen**.
+7. Klicken Sie auf der Registerkarte **Berechtigungen** in Ihrem Browser auf  **\<Mitglieder von <Websitename>** in der Liste.
     
-4. Deaktivieren Sie im Dialogfeld **Einstellungen für Zugriffsrechteanforderungen** die Optionen **Mitgliedern das Freigeben der Website sowie einzelner Dateien und Ordner erlauben** und **Zugriffsanforderungen zulassen** (sodass alle drei Kontrollkästchen deaktiviert sind), und klicken Sie dann auf **OK**.
+8. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-5. Klicken Sie auf der Registerkarte **Berechtigungen** in Ihrem Browser auf  **\<Mitglieder von <Websitename>** in der Liste.
+9. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websitemitglieder ein, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
     
-6. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
+10. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-7. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websitemitglieder ein, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
+11. Klicken Sie auf **\<Besitzer von <Websitename>** in der Liste.
     
-8. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
+12. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-9. Klicken Sie auf **\<Besitzer von <Websitename>** in der Liste.
+13. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websiteadministratoren ein, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
     
-10. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
+14. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-11. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websiteadministratoren ein, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
+15. Klicken Sie auf **\<Besucher von <Websitename>** in der Liste.
     
-12. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
+16. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-13. Klicken Sie auf **\<Besucher von <Websitename>** in der Liste.
+17. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websitebetrachter ein, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
     
-14. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
-    
-15. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websitebetrachter ein, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
-    
-16. Schließen Sie die Registerkarte **Berechtigungen** Ihres Browsers.
+18. Schließen Sie die Registerkarte **Berechtigungen** Ihres Browsers.
     
 Die Ergebnisse dieser Berechtigungseinstellungen sehen folgendermaßen aus:
   

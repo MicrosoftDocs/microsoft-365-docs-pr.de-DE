@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Sie können Gruppen verwenden, um die Verwaltung bestimmter administrativer Aufgaben zu automatisieren.
 ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067272"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544044"
 ---
 # <a name="step-5-use-groups-for-management"></a>Schritt 5: Verwenden von Gruppen zur Verwaltung
 

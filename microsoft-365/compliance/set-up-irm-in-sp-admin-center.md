@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: In diesem Artikel erfahren Sie, wie Sie SharePoint Online IRM über Microsoft Azure Active Directory Rights Management Services (RMS) zum Schutz von SharePoint-Listen und-Dokumentbibliotheken verwenden.
-ms.openlocfilehash: f5aae2ba78997a8277989dcc3b5e68e00f0bfcb4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069607"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610622"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -68,7 +68,10 @@ SharePoint Online unterstützt die Verschlüsselung der folgenden Dateitypen:
 - Die Office Open XML Formate für die folgenden Microsoft Office-Programme: Word, Excel und PowerPoint
     
 - Das XML Paper Specification (XPS)-Format
-    
+ 
+> [!NOTE]
+> Der IRM-Schutz kann nicht auf geschützte Dokumente (wie Digital signierte PDF-Dateien) angewendet werden, da SharePoint das Dokument beim Hochladen öffnen muss. 
+
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="__toc220831191"> </a>
 
@@ -77,4 +80,3 @@ Nachdem Sie IRM für SharePoint Online aktiviert haben, können Sie mit der Anwe
 Der neue OneDrive-synchronisierungsclient für Windows unterstützt jetzt das Synchronisieren von IRM-geschützten SharePoint-Dokumentbibliotheken und OneDrive-Speicherorten (solange die IRM-Einstellung für die Bibliothek nicht auf Ablauf von Dokumentzugriffs rechten festgelegt ist). Weitere Informationen oder erste Schritte zum Bereitstellen des neuen Synchronisierungs Clients finden Sie unter [deploy the New OneDrive Sync Client for Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
 [Seitenanfang](#introduction)  
-

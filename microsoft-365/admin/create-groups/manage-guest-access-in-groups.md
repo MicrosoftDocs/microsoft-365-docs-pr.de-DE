@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Hier erfahren Sie, wie Sie einer Office 365-Gruppe Gäste hinzufügen, Gastbenutzer anzeigen und PowerShell zum Steuern des Gastzugriffs verwenden.
-ms.openlocfilehash: e4d71919fa5ebfb97a6bab8013fc6bc54ac071a4
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604002"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610612"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Verwalten des Gastzugriffs in Office 365-Gruppen
 
@@ -43,8 +43,8 @@ Nach der Genehmigung wird der Gastbenutzer dem Verzeichnis und der Gruppe hinzug
 
 Der Gastzugriff in Gruppen wird häufig als Teil eines breiter gefächerten Szenarios verwendet, das SharePoint oder Teams umfasst. Diese Dienste besitzen ihre eigenen Einstellungen für die Gastfreigabe. Umfassende Anweisungen zum Einrichten der gemeinsamen Nutzung über Gruppen, SharePoint und Teams hinweg finden Sie unter:
 
-- [Zusammenarbeit mit Gästen in einer Website](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [Zusammenarbeit mit Gästen in einem Team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [Zusammenarbeit mit Gästen in einer Website](../../solutions/collaborate-in-site.md)
+- [Zusammenarbeit mit Gästen in einem Team](../../solutions/collaborate-as-team.md)
 
 ## <a name="manage-groups-guest-access"></a>Verwalten des Gastzugriffs von Gruppen
 

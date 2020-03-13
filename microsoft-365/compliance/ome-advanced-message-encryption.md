@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Die erweiterte Nachrichtenverschlüsselung in Office 365 unterstützt Organisationen bei der Erfüllung Ihrer Compliance-Verpflichtungen, indem Administratoren die Möglichkeit erhalten, noch mehr mit geschützten Nachrichten zu tun.
-ms.openlocfilehash: 580803d7b15608ebb0852896cdbd9a43ee5a2ff4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601802"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610603"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Erweiterte Office 365-Nachrichtenverschlüsselung
 
@@ -45,4 +45,4 @@ Mit der erweiterten Nachrichtenverschlüsselung sind Sie nicht auf eine einzelne
 
 [Durch Office 365 erweiterte Nachrichtenverschlüsselung verschlüsselte e-Mails widerrufen](revoke-ome-encrypted-mail.md). Steuern Sie vertrauliche e-Mails, die außerhalb der Organisation freigegeben wurden, und erhöhen Sie den Schutz, indem Sie den Zugriff über ein sicheres Webportal auf verschlüsselte e-Mails widerrufen.  
 
-Wenn Sie Office 365 erweiterte Nachrichtenverschlüsselung verwenden, wendet Office 365 einen Wrapper immer dann auf e-Mails an, die der e-Mail-Fluss Regel entsprechen, auf die die Vorlage angewendet wird, wenn Sie eine benutzerdefinierte Branding-Vorlage anwenden. Sie können nur Nachrichten widerrufen und Ablaufdaten auf Nachrichten anwenden, die Benutzer über das Portal erhalten. Mit anderen Worten: e-Mail, auf die eine benutzerdefinierte Branding-Vorlage angewendet wurde. Weitere Informationen und ein Beispiel finden Sie im Leitfaden unter [sicherstellen, dass alle externen Empfänger das OM-Portal zum Lesen verschlüsselter e-Mails verwenden – Office 365 nur erweiterte Nachrichtenverschlüsselung](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).
+Wenn Sie Office 365 erweiterte Nachrichtenverschlüsselung verwenden, wendet Office 365 einen Wrapper immer dann auf e-Mails an, die der e-Mail-Fluss Regel entsprechen, auf die die Vorlage angewendet wird, wenn Sie eine benutzerdefinierte Branding-Vorlage anwenden. Sie können nur Nachrichten widerrufen und Ablaufdaten auf Nachrichten anwenden, die Benutzer über das Portal erhalten. Mit anderen Worten: e-Mail, auf die eine benutzerdefinierte Branding-Vorlage angewendet wurde. Weitere Informationen und ein Beispiel finden Sie im Leitfaden unter [sicherstellen, dass alle externen Empfänger das OM-Portal zum Lesen verschlüsselter e-Mails verwenden](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).
