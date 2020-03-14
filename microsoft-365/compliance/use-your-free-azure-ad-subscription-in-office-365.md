@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informationen zum Zugriff auf Azure Active Directory, das in dem kostenpflichtigen Abonnement für Office 365 Ihrer Organisation enthalten ist.
-ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 40ed5808f6e921a3649af408ee078dba64167bb3
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069217"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610592"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Verwenden Ihres kostenlosen Azure Active Directory-Abonnements in Office 365
 
@@ -29,7 +29,11 @@ Wenn Ihre Organisation über ein kostenpflichtiges Abonnement für Office 365, M
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Verwenden Sie eine private Browsersitzung (keine gewöhnliche Sitzung), um auf das Azure-Portal (in Schritt 1 unten) zuzugreifen, da dadurch verhindert wird, dass die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, an Azure weitergegeben werden. Um eine InPrivate-Browsersitzung in Internet Explorer oder eine private Browsersitzung in Mozilla FireFox zu öffnen, drücken Sie einfach STRG+UMSCHALT+P. Um eine private Browsersitzung in Google Chrome (als Inkognitofenster bezeichnet) zu öffnen, drücken Sie STRG-UMSCHALT+N.
+Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Azure-Portal (siehe nachstehenden Schritt 1), da dadurch verhindert wird, dass die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, an Azure übergeben werden. So öffnen Sie eine private Browsersitzung:
+
+- Drücken Sie in Microsoft Edge (Legacy-Version), Internet Explorer oder Mozilla Firefox `CTRL+SHIFT+P`.
+
+- Drücken Sie in Microsoft Edge (neueste Version) oder Google Chrome `CTRL+SHIFT+N`.
 
 ## <a name="access-azure-active-directory"></a>Zugreifen auf Azure Active Directory
 

@@ -1,5 +1,5 @@
 ---
-title: Angriffs Simulator in Office 365 ATP
+title: Angriffssimulator in Office 365 ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie den Angriffs Simulator, um simulierte Phishing-und Kennwortangriffe in Ihrer Office 365 E5-oder ATP-Plan 2-Organisation auszuführen, die Sie bei der Identifizierung von gefährdeten Benutzern unterstützenkann, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612635"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637338"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Angriffs Simulator in Office 365 ATP
+# <a name="attack-simulator-in-office-365-atp"></a>Angriffssimulator in Office 365 ATP
 
 Angriffs Simulator in Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) können Sie realistische, aber simulierte Kampagnen für Phishing und Kennwortangriffe in Ihrer Organisation ausführen. Sie können die Ergebnisse von Kampagnen verwenden, um gefährdete Benutzer zu identifizieren und zu Schulen.
 
@@ -186,7 +186,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Alle URLs sind absichtlich HTTP und nicht HTTPS.</li><li>Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.</li><li>Sie müssen eine URL auswählen. Bei Kampagnen mit **Spear-Phishing (Attachment)** können Sie den Link aus dem Textkörper der Nachricht im nächsten Schritt entfernen (andernfalls enthält die Nachricht sowohl einen Link als **auch** eine Anlage).</li></ul>
+     > <ul><li>Alle URLs sind absichtlich HTTP und nicht HTTPS.</li><li>Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.</li><li>Sie müssen eine URL auswählen. Bei Kampagnen mit <b>Spear-Phishing (Attachment)</b> können Sie den Link aus dem Textkörper der Nachricht im nächsten Schritt entfernen (andernfalls enthält die Nachricht sowohl einen Link als <b>auch</b> eine Anlage).</li></ul>
 
    - **Anlagentyp**: Diese Einstellung ist nur in Kampagnen für **Spear-Phishing (Attachment)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie aus **. DOCX** oder **. PDF** aus der Liste.
 
@@ -220,7 +220,7 @@ Ein *Kennwortangriff* versucht, Kennwörter für Benutzerkonten in einer Organis
 
 In Attack Simulator stehen zwei verschiedene Arten von Kenn Wort Angriffs Kampagnen zur Verfügung, um die Komplexität der Kennwörter Ihrer Benutzer zu testen:
 
-- **Brute-Force-Kennwort (Wörterbuchangriff)**: bei einem *Brute-Force**-oder *Wörterbuch* Angriff wird eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto verwendet, wobei die Hoffnung besteht, dass einer von Ihnen funktioniert (viele Kennwörter für ein Konto). Falsche Kenn Wort Sperren helfen, Brute-Force-Kennwortangriffe zu verhindern.
+- **Brute-Force-Kennwort (Wörterbuchangriff)**: bei einem *Brute-Force* -oder *Wörterbuch* Angriff wird eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto verwendet, wobei die Hoffnung besteht, dass einer von Ihnen funktioniert (viele Kennwörter für ein Konto). Falsche Kenn Wort Sperren helfen, Brute-Force-Kennwortangriffe zu verhindern.
 
   Für den Wörterbuchangriff können Sie ein oder mehrere Kennwörter angeben, die Sie ausprobieren möchten (manuell eingegeben oder in eine hochgeladene Datei), und Sie können einen oder mehrere Benutzer angeben.
 

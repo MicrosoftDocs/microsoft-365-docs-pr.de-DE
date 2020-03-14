@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Verwenden Sie das Security & Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit der Anfrage verknüpfte Inhalts Suchvorgänge ausführen und die Suchergebnisse exportieren. Sie können auch die Falldaten für eine weitere Analyse in Office 365 Advanced eDiscovery vorbereiten.
 ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557739"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634953"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Verwalten von eDiscovery-Fällen im Security & Compliance Center
 
@@ -227,7 +227,7 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
     
 - Die Anzahl der zu speichernden Elemente umfasst auch nicht indizierte Elemente, die an den Inhaltsspeicherorten gefunden wurden. Wenn Sie einen abfragebasierten Haltebereich erstellen, werden alle nicht indizierten Elemente in den Inhaltsspeicherorten in die Warteschleife gesetzt. Dies umfasst nicht indizierte Elemente, die nicht mit den Suchkriterien eines abfragebasierten haltebereichs und nicht indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Dies unterscheidet sich von dem, was passiert, wenn Sie eine Inhaltssuche ausführen, in der nicht indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen oder von einer Datumsbereichs Bedingung ausgeschlossen werden, nicht in den Suchergebnissen enthalten sind. Weitere Informationen zu nicht indizierten Elementen finden Sie unter [teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md).
     
-- Sie können die neuesten Aufbewahrungs Statistiken abrufen, indem Sie auf **Statistik aktualisieren** klicken, um eine Such Schätzung erneut auszuführen, mit der die aktuelle Anzahl der zu speichernden Elemente berechnet wird. Klicken Sie gegebenenfalls in ****![der Symbolleiste](../media/O365-MDM-Policy-RefreshIcon.gif) auf Aktualisierungssymbol aktualisieren, um die Aufbewahrungs Statistiken im Detailbereich zu aktualisieren. 
+- Sie können die neuesten Aufbewahrungs Statistiken abrufen, indem Sie auf **Statistik aktualisieren** klicken, um eine Such Schätzung erneut auszuführen, mit der die aktuelle Anzahl der zu speichernden Elemente berechnet wird. Klicken Sie gegebenenfalls in **Refresh**![der Symbolleiste](../media/O365-MDM-Policy-RefreshIcon.gif) auf Aktualisierungssymbol aktualisieren, um die Aufbewahrungs Statistiken im Detailbereich zu aktualisieren. 
     
 - Es ist normal, dass die Anzahl der zu speichernden Elemente im Laufe der Zeit steigt, da Benutzer, deren Postfach oder Standort in der Warteschleife ist, normalerweise neue e-Mail-Nachrichten senden oder empfangen und neue SharePoint-und OneDrive für Unternehmen-Dokumente erstellen.
     
@@ -246,7 +246,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     ![Registerkarte "Suche"](../media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. Klicken Sie **** ![auf der Seite Suche auf Symbol](../media/ITPro-EAC-AddIcon.gif) **neue Suche**hinzufügen. 
+4. Klicken Sie **Search** ![auf der Seite Suche auf Symbol](../media/ITPro-EAC-AddIcon.gif) **neue Suche**hinzufügen. 
     
 5. Auf der Seite **Neue Suche** können Sie Schlüsselwörter und Bedingungen zum Erstellen der Suchabfrage hinzufügen. 
     
@@ -300,7 +300,7 @@ Nachdem ein eDiscovery-Fall erstellt wurde und alle depotverwalter im Zusammenha
     
     Die Suche beginnt. Nach einer Weile wird im Detailbereich eine Schätzung der Suchergebnisse angezeigt. Die Schätzung enthält die Gesamtgröße und die Anzahl der Elemente, die den Suchkriterien entsprechen. Die Such Schätzung enthält auch die Anzahl der nicht indizierten Elemente an den durchsuchten Inhaltsspeicherorten. Die Anzahl nicht indizierter Elemente, die den Suchkriterien nicht entsprechen, werden in die Suchstatistiken einbezogen, die im Detailbereich angezeigt werden. Wenn ein nicht indiziertes Element mit der Suchabfrage übereinstimmt (da andere Nachrichten-oder Dokumenteigenschaften die Suchkriterien erfüllen), wird es nicht in die geschätzte Anzahl nicht indexierter Elemente aufgenommen. Wenn ein nicht indiziertes Element durch die Suchkriterien ausgeschlossen wird, wird es auch nicht in die Schätzung nicht indexierter Elemente einbezogen.
     
-  Wenn die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzeigen. Klicken Sie bei Bedarf ****![auf Aktualisierungssymbol](../media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren, um die Informationen im Detailbereich zu aktualisieren. 
+  Wenn die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzeigen. Klicken Sie bei Bedarf **Refresh**![auf Aktualisierungssymbol](../media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren, um die Informationen im Detailbereich zu aktualisieren. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Schritt 6: Exportieren der Ergebnisse einer Inhaltssuche, die einer Anfrage zugeordnet ist
 
@@ -489,7 +489,7 @@ So schließen Sie einen Fall:
     
 5. Schließen Sie die Seite **diesen Fall verwalten** . 
     
-6. Klicken Sie **** ![auf der Seite eDiscovery auf Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des geschlossenen Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Abschlussprozess abgeschlossen ist. 
+6. Klicken Sie **eDiscovery** ![auf der Seite eDiscovery auf Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des geschlossenen Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Abschlussprozess abgeschlossen ist. 
     
     Wenn der Prozess abgeschlossen ist, wird der Status der Groß-/Kleinschreibung auf der **eDiscovery** -Seite in **geschlossen** geändert. Klicken Sie erneut auf den Namen der Anfrage, um die Flyout-Seite " **diesen Fall verwalten** " anzuzeigen, die Informationen dazu enthält, wann der Fall geschlossen wurde und wer ihn geschlossen hat. 
      
@@ -513,7 +513,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle Haltestatus, die beim Schließen
     
 5. Schließen Sie die Seite **diesen Fall verwalten** . 
     
-6. Klicken Sie **** ![auf der Seite eDiscovery auf Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des erneut geöffneten Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Vorgang zum erneuten Öffnen abgeschlossen ist. 
+6. Klicken Sie **eDiscovery** ![auf der Seite eDiscovery auf Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisierung** aktualisieren, um den Status des erneut geöffneten Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Vorgang zum erneuten Öffnen abgeschlossen ist. 
     
     Wenn der Prozess abgeschlossen ist, wird der Status des Falles in **Active** auf der **eDiscovery** -Seite geändert. 
   

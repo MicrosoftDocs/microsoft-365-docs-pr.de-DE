@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 350f4f9007bf6f09836080af65802a9757532dcc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083542"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637328"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Kampagnenansichten in Office 365 ATP
 
@@ -62,7 +62,7 @@ Sie können auch die Ansicht Kampagnen Aufrufen von:
 
 - **Threat Management** \> **Explorer** \> – **Kampagnen** **anzeigen** \>
 
-- **Threat Management** \> **Explorer** \> **** \> **alle e-Mail-** \> **Kampagnen** anzeigen
+- **Threat Management** \> **Explorer** \> **View** \> **alle e-Mail-** \> **Kampagnen** anzeigen
 
 > [!TIP]
 > Wenn keine Kampagnendaten angezeigt werden, versuchen Sie, den Zeitraum zu ändern.
@@ -125,24 +125,24 @@ Das Diagramm enthält die folgenden Informationen:
 
 - **Absenderdomänen**
 
-- **Filterbewertungen**: Die hier aufgeführten Werte beziehen sich auf die verfügbaren Anti-Phishing- und Anti-Spam-Filterbewertungen, die in [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) beschrieben sind. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
+- **Filter Urteile**: die hier aufgeführten Werte beziehen sich auf die verfügbaren Phishing-und Spamfilter Urteile, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
 
   |Wert|Spam Filter Urteil|Beschreibung|
   |:-----|:-----|:-----|
-  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch den Spamfilter (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
-  |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde als Spam markiert, bevor Sie vom Spamfilter ausgewertet wurde (beispielsweisedurch eine Nachrichtenfluss Regel).|
-  |**Erkannt**|`SFV:SPM`|Die Nachricht wurde vom Spamfilter als Spam gekennzeichnet.|
-  |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde vom Spamfilter als kein Spam gekennzeichnet.|
+  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
+  |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde vor der Auswertung durch Spamfilterung (beispielsweisedurch eine Nachrichtenfluss Regel) als Spam markiert.|
+  |**Erkannt**|`SFV:SPM`|Die Nachricht wurde durch Spamfilterung als Spam gekennzeichnet.|
+  |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde durch Spamfilterung als nicht Spam gekennzeichnet.|
   |**Veröffentlicht**|`SFV:SKQ`|Die Nachricht hat die Spamfilterung übersprungen, da Sie aus der Quarantäne freigegeben wurde.|
-  |**Mandanten zulässig**<sup>\*</sup>|`SFV:SKA`|Die Nachricht hat die Spamfilterung aufgrund der Konfiguration der Spamfilter Richtlinie übersprungen (beispielsweise war der Absender oder die Domäne in der Liste der **zugelassenen Absender** ).|
-  |**Mandanten Block**<sup>\*\*</sup>|`SFV:SKA`|Die Nachricht wurde durch die Spamfilterung aufgrund der Konfiguration der Spamfilter Richtlinie blockiert (beispielsweise war der Absender oder die Domäne in der Liste **Absender blockiert** ).|
+  |**Mandanten zulässig**<sup>\*</sup>|`SFV:SKA`|Die Nachricht hat die Spamfilterung aufgrund von Anti-Spam-Richtlinieneinstellungen übersprungen (beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassener Domänen).|
+  |**Mandanten Block**<sup>\*\*</sup>|`SFV:SKA`|Die Nachricht wurde durch die Spamfilterung aufgrund von Anti-Spam-Richtlinieneinstellungen blockiert (beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassener Domänen).|
   |**Benutzer zulassen**<sup>\*</sup>|`SFV:SFE`|Die Nachricht hat die Spamfilterung übersprungen, da sich der Absender in Outlook in der Liste sicherer Absender eines Benutzers befand.|
   |**Benutzer Block**<sup>\*\*</sup>|`SFV:BLK`|Die Nachricht wurde durch die Spamfilterung blockiert, da sich der Absender in Outlook in der Liste Blockierte Absender eines Benutzers befand.|
-  |**ZAP**|n/v|[Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md) hat gemäß der Konfiguration Ihrer Spamfilter Richtlinie Aktionen für die zugestellte Nachricht durchgeführt (in den Junk-e-Mail-Ordner verschoben oder isoliert).|
+  |**ZAP**|n/v|[Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md) hat in der zugestellten Nachricht entsprechend den Einstellungen Ihrer Antispampolitik (in den Junk-e-Mail-Ordner verschoben oder isoliert) Aktionen durchgeführt.|
 
-  <sup>\*</sup>Überprüfen Sie die Konfigurationseinstellungen für die Spamfilter Richtlinie, da die zulässige Nachricht wahrscheinlich vom Dienst blockiert wurde.
+  <sup>\*</sup>Überprüfen Sie Ihre Anti-Spam-Richtlinien, da die zulässige Nachricht wahrscheinlich vom Dienst blockiert wurde.
 
-  <sup>\*\*</sup>Überprüfen Sie die Konfigurationseinstellungen für die Spamfilter Richtlinie, da diese Nachrichten isoliert und nicht zugestellt werden sollen.
+  <sup>\*\*</sup>Überprüfen Sie Ihre Anti-Spam-Richtlinien, da diese Nachrichten isoliert und nicht zugestellt werden sollen.
 
 - **Übermittlungsorte**: Sie möchten wahrscheinlich Nachrichten überprüfen, die an Empfänger übermittelt wurden (entweder im Posteingang oder Junk-E-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
 

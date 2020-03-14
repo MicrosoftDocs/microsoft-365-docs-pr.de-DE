@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365 Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: 04cfd2f2417b0c2e084a88f9ee156521339b18c4
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932371"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640017"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Office 365
 
@@ -74,11 +74,7 @@ Nachdem Sie den vorherigen Schritt ausgeführt haben, um die Ransomware-Nutzlast
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Schritt 5: Wiederherstellen der Dateien im OneDrive für Unternehmen
 
-In OneDrive für Unternehmen können Sie alle darin gespeicherten Dateien wiederherstellen. Sie haben zwei Möglichkeiten:
-
-- Verwenden Sie die [OneDrive-Website](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893).
-
-- Wenn eine große Anzahl von Dateien betroffen war, können Sie eine Supportanforderung für eine "Websitesammlungswiederherstellung" erstellen. Diese Anforderung kann Dateien von bis zu 14 Tagen in der Vergangenheit wiederherstellen.
+Durch die Wiederherstellung von Dateien in OneDrive für Unternehmen können Sie die gesamte OneDrive innerhalb der letzten 30 Tage auf einen vorherigen Zeitpunkt zurücksetzen. Weitere Informationen finden Sie unter [Wiederherstellen der OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Schritt 6: Wiederherstellen gelöschter e-Mails
 

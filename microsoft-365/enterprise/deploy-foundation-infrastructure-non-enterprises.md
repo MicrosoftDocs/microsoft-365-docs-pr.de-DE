@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die vereinfachten Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise für Nicht-Unternehmen.
-ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068130"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612645"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise Foundation-Infrastruktur für Nicht-Unternehmen
 
@@ -73,7 +73,7 @@ Wenn Ihre Organisation hohe Sicherheitsanforderungen hat und Sie über Microsoft
 
 Wenn Sie über eine lokale AD DS-Domäne verfügen, verwenden Sie diese Gruppen in Microsoft 365 Enterprise weiterhin als Gruppen in Azure AD.
 
-Wenn Sie keine lokale AD DS-Domäne haben, erstellen Sie Sicherheitsgruppen in Azure AD mit diesen Sicherheitsebenen.
+Wenn Sie keine lokale AD DS-Domäne haben, erstellen Sie mithilfe dieser Sicherheitsstufen Sicherheitsgruppen in Azure AD.
 
 | Sicherheitsstufe | Beschreibung | Beispiele |
 |:-------|:-----|:-----|
@@ -113,7 +113,7 @@ Hier ist die Liste der Richtlinien für den bedingten Zugriff von Azure AD, die 
 | Azure AD-Richtlinie für den bedingten Zugriff | Gruppen, auf die Sie angewendet wird |
 |:------|:-----|
 | Basisplan-Richtlinie: MFA für Administratoren erforderlich | Diese Richtlinie gilt für Administratorrollen, daher müssen keine Gruppen angegeben werden. Diese Richtlinie muss nur aktiviert werden. Alle nachfolgenden Richtlinien müssen erstellt und aktiviert werden. |
-| Sperrt Clients, die moderne Authentifizierung nicht unterstützen | Wählen Sie in den Richtlinieneinstellungen "alle Benutzer" aus. |
+| Sperrt Clients, die moderne Authentifizierung nicht unterstützen | Wählen Sie in den Richtlinieneinstellungen „Alle Benutzer“ aus. |
 | MFA anfordern, wenn das Anmelderisiko mittel oder hoch ist (erfordert Microsoft 365 E5). | BASISPLAN |
 | MFA anfordern, wenn das Anmelde-Risiko niedrig, mittel oder hoch ist (erfordert Microsoft 365 E5). | VERTRAULICH |
 | Eine MFA ist immer erforderlich | STRENG GEREGELT |
@@ -126,7 +126,7 @@ Hier ist die Azure AD Identity Protection-Richtlinie zum Benutzerrisiko (erforde
 
 | Azure AD Identity Protection-Richtlinie zum Benutzerrisiko | Gruppen, auf die Sie angewendet wird |
 |:------|:-----|
-| Benutzer mit hohem Risiko müssen die Kennwörter ändern | Wählen Sie in den Richtlinieneinstellungen "alle Benutzer" aus. |
+| Benutzer mit hohem Risiko müssen die Kennwörter ändern | Wählen Sie in den Richtlinieneinstellungen „Alle Benutzer“ aus. |
 |||
 
 Siehe [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md) für die Anweisungen.
@@ -292,7 +292,7 @@ Der erste Schritt zu einer Informationsschutzstrategie ist die Festlegung der Si
 
   Beispiele sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte oder Dienste.
 
-- Hochgradig reguliert
+- Streng geregelt
 
   Beispiele sind personenbezogene Daten von Kunden und Partnern sowie strategische Pläne oder das geistige Eigentum Ihrer Organisation.
 
@@ -371,7 +371,7 @@ Der bestehende Mitarbeiter sollte bereits zu den entsprechenden Arbeitsgruppen, 
 
 Sie können ein Benutzerkonto zu mehreren Azure Ad-Gruppen im Microsoft 365 Admin Center hinzufügen. Klicken Sie in den Eigenschaften des Benutzerkontos auf **Gruppen verwalten > Mitgliedschaften hinzufügen**.
 
-Wenn Sie PowerShell verwenden möchten, schauen Sie sich diese [herunterladbare Excel-Arbeitsmappe](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx) an, die die PowerShell-Befehle basierend auf einem angegebenen Benutzerkonto und ausgewählten Gruppennamen generiert.
+Wenn Sie PowerShell verwenden möchten, schauen Sie sich diese [herunterladbare Excel-Arbeitsmappe](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx) an, die die PowerShell-Befehle basierend auf einem angegebenen Benutzerkonto und ausgewählten Gruppennamen generiert.
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>Neuer Mitarbeiter mit einem reinen Cloudbenutzerkonto
 

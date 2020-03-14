@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall.
 ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071607"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634703"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall
 

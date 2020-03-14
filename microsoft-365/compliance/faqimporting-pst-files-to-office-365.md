@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Häufig gestellte Fragen an Administratoren zur Verwendung des Office 365-Import Diensts zum Importieren der PST-Dateien Ihrer Organisation in Office 365 Postfächer. '
 ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170485"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634433"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>FAQ zum Importieren von PST-Dateien in Office 365
 
@@ -53,7 +53,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
 Netzwerk Upload ist derzeit in diesen Regionen verfügbar: USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea und Australien. Network upload will be available in more regions soon.
 
 > [!NOTE]
-> Zu diesem Zeitpunkt ist der Netzwerk Upload von PST-Dateien in Deutschland und in der Schweiz nicht verfügbar. Diese FAQ werden aktualisiert, wenn Netzwerk Uploads in diesen Ländern verfügbar sind.
+> Zurzeit ist der Netzwerkupload von PST-Dateien in Deutschland und der Schweiz nicht verfügbar. Diese Häufig gestellten Fragen werden aktualisiert, sobald der Netzwerkupload in diesen Ländern verfügbar ist.
   
  **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   
@@ -127,7 +127,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
 Der Laufwerkversand ist derzeit in den USA, Kanada, Brasilien, Vereinigtem Königreich, Europa, Indien, Ostasien, Südostasien, Japan, Republik Korea und Australien verfügbar. Der Laufwerkversand wird in Kürze in weiteren Regionen zur Verfügung gestellt.
 
 > [!NOTE]
-> Zu diesem Zeitpunkt ist der Laufwerk Versand zu Import-PST-Dateien in Deutschland und der Schweiz nicht verfügbar. Diese FAQ werden aktualisiert, wenn der Laufwerk Versand in diesen Ländern verfügbar ist.
+> Zurzeit ist der Laufwerkversand um PST-Dateien zu importieren in Deutschland und der Schweiz nicht verfügbar. Diese Häufig gestellten Fragen werden aktualisiert, sobald der Laufwerkversand in diesen Ländern verfügbar ist.
   
  **Welche kommerziellen Lizenzvereinbarungen unterstützen den Laufwerksversand?**
   

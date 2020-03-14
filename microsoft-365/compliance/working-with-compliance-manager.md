@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Compliance-Manager ermöglicht das Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
 ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083871"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634133"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -458,7 +458,7 @@ Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enth
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
-    Beispiel:
+    Zum Beispiel:
 
     ```Markdown
     Product::Office 365;;Certification::NIST CSF
@@ -492,7 +492,7 @@ Vorlagen und Bewertungen unterstützen die Verwendung von Abschriften Sprache f�
 - Hyperlinks
 - Fettdruck
 
-Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Beispiel:
+Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Zum Beispiel:
 
 ```Markdown
 * Item A
@@ -500,7 +500,7 @@ Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählun
 * Item C
 ```
 
-Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Beispiel:
+Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Zum Beispiel:
    1. Element A
    2. Element B
       1. Unterelement A
@@ -511,7 +511,7 @@ Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei L
       2. Unterelement B
    5. Element E
 
-Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Beispiel:
+Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Zum Beispiel:
 
 ```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
@@ -520,7 +520,7 @@ Dieser Text wird wie folgt gerendert: Klicken Sie [hier](https://www.microsoft.c
 
 Wie im obigen Beispiel dargestellt, rendert Compliance Manager keine URLs mit Unterstreichung.
 
-Fett formatierter Text ist zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Beispiel:
+Fett formatierter Text ist zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Zum Beispiel:
 
 ```Markdown
 **This text will render in bold**

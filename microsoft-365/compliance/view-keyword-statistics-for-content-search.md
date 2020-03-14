@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Verwenden Sie das Feature Suchstatistik, um Statistiken für mehrere Inhalts suchen im Security & Compliance Center anzuzeigen und zu vergleichen. Sie können die Keyword-Liste auch konfigurieren, wenn Sie eine Suchabfrage erstellen oder bearbeiten, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern oder Schlüsselwörtern entsprechen.
 ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068950"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634123"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
 
@@ -37,7 +37,7 @@ So zeigen Sie Statistiken für die Inhaltssuche an:
   
 1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**.
     
-2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, ****![und klicken Sie dann auf](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen.
+2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, **Search statistics**![und klicken Sie dann auf](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen.
     
     ![Wählen Sie mehrere Suchvorgänge aus, und klicken Sie dann auf Suchstatistik](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
@@ -109,7 +109,7 @@ So erstellen Sie eine Stichwortliste und zeigen Schlüsselwort Statistiken für 
   
 1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**.
     
-2. Klicken Sie in der Liste der Inhalts suchen auf und eine Suche, und klicken **** ![Sie dann auf](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Bearbeitungssymbol bearbeiten.
+2. Klicken Sie in der Liste der Inhalts suchen auf und eine Suche, und klicken **Edit** ![Sie dann auf](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Bearbeitungssymbol bearbeiten.
     
 3. Klicken Sie auf **Abfrage** , und führen Sie dann die folgenden Schritte aus: 
     
@@ -121,7 +121,7 @@ So erstellen Sie eine Stichwortliste und zeigen Schlüsselwort Statistiken für 
     
 4. Nachdem Sie die Schlüsselwörter hinzugefügt haben, für die Sie die Suche ausführen und Statistiken erhalten möchten, klicken Sie auf **Suchen** , um die überarbeitete Suche auszuführen. 
     
-5. Wenn die Suche abgeschlossen ist, wählen Sie Sie in der Liste der Suchvorgänge aus, **** ![und klicken Sie dann auf](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen. Sie können auch Keyword-Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
+5. Wenn die Suche abgeschlossen ist, wählen Sie Sie in der Liste der Suchvorgänge aus, **Search statistics** ![und klicken Sie dann auf](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Suchen. Sie können auch Keyword-Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
     
 6. Klicken Sie auf der Seite **Suchstatistik** auf **Abfrage** , um die schlüsselwortstatistik für die ausgewählten Suchvorgänge anzuzeigen. 
     

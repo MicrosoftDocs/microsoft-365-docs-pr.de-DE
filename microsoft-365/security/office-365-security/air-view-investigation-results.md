@@ -16,11 +16,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Während und nach einer automatisierten Untersuchung in Office 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
 ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179256"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633843"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Office 365
 
@@ -96,7 +96,7 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 |Bereinigt | Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
 |Teilweise behoben | Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
 |Vom Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
-|Failed | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
+|Fehlgeschlagen | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
 |Durch Drosselung in der Warteschlange | Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
 |Durch Drosselung beendet | Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
 

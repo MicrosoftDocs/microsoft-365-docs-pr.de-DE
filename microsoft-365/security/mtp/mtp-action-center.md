@@ -19,13 +19,13 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262022"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633983"
 ---
-# <a name="the-action-center"></a>Das Wartungscenter
+# <a name="the-action-center"></a>Das Info-Center
 
 **Gilt für:**
 - Microsoft Threat Protection

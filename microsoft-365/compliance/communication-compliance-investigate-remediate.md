@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078729"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632856"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Kommunikations Konformitätswarnungen
 
@@ -33,7 +33,7 @@ Nachdem Sie die Richtlinien für die Kommunikations Konformität konfiguriert ha
 
 Der erste Schritt zum Untersuchen von in ihren Richtlinien festgestellten Problemen besteht darin, generierte Warnungen im Microsoft 365 Compliance Center zu überprüfen. Im Compliance Center gibt es verschiedene Bereiche, die Ihnen helfen, Warnungen schnell zu untersuchen, je nachdem, wie Sie die Warnungs Gruppierung anzeigen möchten:
 
-- **Homepage zur Kommunikation-Compliance**: Wenn Sie sich [https://compliance.microsoft.com](https://compliance.microsoft.com) bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation anmelden, wählen Sie****  > Übersicht über die Kommunikations Kompatibilität aus, um die Startseite für die Kommunikations Kompatibilität anzuzeigen. **** Hier sehen Sie Folgendes:
+- **Homepage zur Kommunikation-Compliance**: Wenn Sie sich [https://compliance.microsoft.com](https://compliance.microsoft.com) bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation anmelden, wählen Sie**Overview**  > Übersicht über die Kommunikations Kompatibilität aus, um die Startseite für die Kommunikations Kompatibilität anzuzeigen. **Communication compliance** Hier sehen Sie Folgendes:
     - Warnungen, die eine Überprüfung benötigen, die von hoher bis niedriger Dringlichkeit aufgeführt ist. Wählen Sie eine Warnung aus, um die Seite mit den Warnungsdetails zu starten und Korrekturaktionen zu starten.
     - Aktuelle Richtlinien Übereinstimmungen werden nach Richtliniennamen aufgeführt.
     - Aufgelöste Elemente werden nach Richtliniennamen aufgelistet.
@@ -115,7 +115,7 @@ Unabhängig davon, wo Sie mit der Überprüfung von Warnungen oder der von Ihnen
     - **Falsch positiv**: Sie können eine Nachricht jederzeit während des Workflows zur Nachrichtenüberprüfung als falsch positiv auflösen. Die Nachricht kann nicht erneut geöffnet werden, und alle falsch positiven Nachrichten werden auf der Registerkarte **aufgelöst** angezeigt.
     - **Tag as**: kennzeichnen der Nachricht als *konform*, *nicht konform*oder als *fragwürdig* , da Sie sich auf die Richtlinien und Standards für Ihre Organisation bezieht. Durch das Hinzufügen von Tags und Markierungs Kommentaren können Sie Richtlinienwarnungen für Eskalationen oder als Teil anderer interner Überprüfungsprozesse mikrofiltern. Nachdem die Markierung abgeschlossen ist, können Sie die Nachricht auch auflösen, um Sie aus der Warteschlange für ausstehende Überprüfungen zu entfernen.
     - **Notify**: Sie können das **Notify** -Steuerelement verwenden, um der Warnung eine benutzerdefinierte Notizvorlage zuzuweisen und eine Warnmeldung an den Benutzer zu senden. Wählen Sie die entsprechende Notizvorlage aus, und wählen Sie senden aus, um eine Erinnerung an den Mitarbeiter, der die Nachricht gesendet hat, per e-Mail zu **senden** und das Problem zu beheben.
-    - **Eskalieren**: mithilfe des **Eskalations** Steuerelements können Sie auswählen, welche Person in Ihrer Organisation die Nachricht überprüfen soll. Wählen Sie aus einer Liste konfigurierter Bearbeiter aus, um eine e-Mail-Benachrichtigung zu senden und eine zusätzliche Überprüfung der Nachrichten Benachrichtigung anzufordern. Der ausgewählte Bearbeiter kann einen Link in der e-Mail-Benachrichtigung verwenden, um direkt zu den Elementen zu gelangen, die zur Überarbeitung eskaliert wurden.
+    - **Eskalieren**: mithilfe des **Eskalations** Steuerelements können Sie auswählen, welche Person in Ihrer Organisation die Nachricht überprüfen soll. Wählen Sie aus einer Liste der Bearbeiter aus, die in der Kommunikations Konformitätsrichtlinie konfiguriert sind, um eine e-Mail-Benachrichtigung zu senden und eine zusätzliche Überprüfung der Nachrichten Benachrichtigung anzufordern Der ausgewählte Bearbeiter kann einen Link in der e-Mail-Benachrichtigung verwenden, um direkt zu den Elementen zu gelangen, die zur Überarbeitung eskaliert wurden.
     - **Erstellen eines Falles**: mit dem **Create a Case** -Steuerelement können Sie einen neuen [erweiterten eDiscovery-Fall](overview-ediscovery-20.md) für einzelne oder mehrere Nachrichten erstellen. Sie geben einen Namen und Notizen für den neuen Fall an, und Benutzer, der die Nachricht gesendet hat, die der Richtlinie entspricht, werden automatisch als Fall Verwalter zugewiesen. Sie benötigen keine zusätzlichen Berechtigungen, um den Fall zu verwalten. Durch das Erstellen einer Groß-/Kleinschreibung wird kein neues Tag für die Nachricht aufgelöst oder erstellt.
 
 4. **Ermitteln, ob Nachrichtendetails außerhalb der Kommunikations Kompatibilität archiviert werden sollen**: Nachrichtendetails können exportiert oder heruntergeladen werden, wenn Sie die Nachrichten in einer separaten Speicherlösung archivieren müssen. Durch die Auswahl des **Download** -Steuerelements werden ausgewählte Nachrichten automatisch zu a hinzugefügt. ZIP-Datei, die im Speicher außerhalb von Microsoft 365 gespeichert werden kann.

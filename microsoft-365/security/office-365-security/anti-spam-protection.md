@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Hier finden Sie Informationen zu den Antispameinstellungen und-Filtern, mit denen Sie Spam in Exchange Online und Office 365 verhindern können. Sie werden zu viel Spam in Office 365 einholen? Sie können Ihre Spamfilter und Anti-Spam-Richtlinieneinstellungen anpassen.
 ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599862"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633833"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365-Antispamschutz für E-Mails
 

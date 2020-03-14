@@ -13,11 +13,11 @@ f1.keywords:
 - NOCSH
 ms.author: greglin
 ms.openlocfilehash: 5407370933c2a99781adf4ca58d3fa905328ed04
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085574"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633003"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Schritt 5: Bereitstellen von Windows 10 Enterprise-Sicherheitsfeatures
 

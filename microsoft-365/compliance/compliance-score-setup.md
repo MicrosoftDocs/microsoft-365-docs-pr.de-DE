@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und das Dashboard für Microsoft Compliance Score verstehen, das die Vereinfachung und Automatisierung von Risikobewertungen erleichtert.
 ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078612"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635123"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
@@ -51,9 +51,9 @@ In der folgenden Tabelle wird gezeigt, wie die einzelnen Rollen des Compliance-C
 | :------------- | :-------------: | :------------: |
 | **Lesen, aber nicht bearbeiten von Daten**| Azure AD globaler Leser  | Azure AD globaler Leser | 
 | **Lesen, aber nicht bearbeiten von Daten**| Benutzer mit Leseberechtigung für Sicherheitsfunktionen | Compliance-Manager-Leser  | 
-| **Bearbeiten von Daten**| Compliance-Administrator | Compliance-Manager-Mitwirkender | 
-| **Bearbeiten von Testergebnissen**| Compliance-Administrator | Auditor für Compliance-Manager | 
-| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Compliance-Administrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
+| **Bearbeiten von Daten**| Complianceadministrator | Compliance-Manager-Mitwirkender | 
+| **Bearbeiten von Testergebnissen**| Complianceadministrator | Auditor für Compliance-Manager | 
+| **Verwalten von Bewertungen und Vorlagen-und Mandantendaten**| Complianceadministrator<br>Compliancedatenadministrator<br>Sicherheitsadministrator | Compliance-Manager-Administrator | 
 | **Zuweisen von Benutzern**| Globaler Administrator | Portal Administrator | 
 
 > [!NOTE]

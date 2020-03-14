@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Hier erfahren Sie, wie Sie das Standarddesign von Office 365 ändern und an Ihr Firmen Logo oder Ihre Farbe anpassen können. '
-ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360636"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640027"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Anpassen des Office 365-Designs für Ihre Organisation
 
@@ -40,31 +40,35 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
 
 3. Ändern Sie im Panel **Zoll Designs** die Designelemente, die Sie für Ihre Organisation verwenden möchten:
     
-  - **Verwenden eines benutzerdefinierten Logo Bilds**: Wählen Sie aus, ob ein Bild aus einer URL verwendet oder ein Bild hochgeladen werden soll. Wenn Sie eine URL verwenden, stellen Sie sicher, dass die URL HTTPS verwendet und 200 x 30 Pixel eines beliebigen Formats beliebiger Größe ist. Sie können ein Logo unter 10 KB hochladen, das 200 x 30 Pixel im Format JPG, PNG, GIF oder SVG ist.
+    - **Verwenden eines benutzerdefinierten Logo Bilds**: Wählen Sie aus, ob ein Bild aus einer URL verwendet oder ein Bild hochgeladen werden soll. Wenn Sie eine URL verwenden, stellen Sie sicher, dass die URL HTTPS verwendet und 200 x 30 Pixel eines beliebigen Formats beliebiger Größe ist. Sie können ein Logo unter 10 KB hochladen, das 200 x 30 Pixel im Format JPG, PNG, GIF oder SVG ist.
 
-    > [!NOTE]
-    > Damit das Logo in der SharePoint-Mobile App angezeigt wird, verwenden Sie nur SVG-Bilder. In einem anderen Format hochgeladene Bilder werden in der APP nicht angezeigt. Logos können in der mobilen SharePoint-APP nicht anklickbar sein.
-    
-  - **Logo klickbar machen**: Sie können Ihr Logo in der Navigationsleiste als Link zu einer beliebigen Unternehmensressource verwenden. Sie können hier die URL für das Logo eingeben, beginnend mit http://oder https://. Dieser Schritt ist optional.
-    
-  - **Hintergrundbild auswählen**: Wählen Sie das Bild aus, und laden Sie Ihre eigene JPG-, PNG-oder GIF-Datei mit einer Auflösung von 1366 x 50 Pixel, die nicht größer als 15 KB ist, hoch. Das Hintergrundbild wird auf jeder Seite in der oberen Navigationsleiste angezeigt.
-    
-    > [!NOTE]
-    > Bilder, die Text enthalten, werden möglicherweise nicht wie erwartet angezeigt. Integrierte Elemente, die rechts und links von der Navigationsleiste angezeigt werden, können in Diensten variieren, und Ihr Text wird möglicherweise durch diese Elemente  verdeckt. Aufgrund der dynamischen Natur der Navigationsleiste können wir zu diesem Zeitpunkt keine Anleitung für Bildtextabstand bereitstellen, die zu einer konsistenten Erfahrung führen würde. 
-    
-  - **Navigationsleisten Farbe**: Wählen Sie eine Farbe aus, die für den Hintergrund der Navigationsleiste verwendet werden soll. Sie wird oben auf jeder Seite angezeigt.
-    
-  - **Text und Symbole**: Wählen Sie eine Farbe für den Text und die Symbole auf der oberen Navigationsleiste aus.
-    
-  - **Akzentfarbe**: Wählen Sie eine Farbe aus, die für die Navigationsleisten Schaltfläche verwendet werden soll. Hover Farbe und Seiten Akzente wie Schaltflächen und Text in bestimmten Anwendungen.
+      > [!NOTE]
+      > Damit das Logo in der SharePoint-Mobile App angezeigt wird, verwenden Sie nur SVG-Bilder. In einem anderen Format hochgeladene Bilder werden in der APP nicht angezeigt. Logos können in der mobilen SharePoint-APP nicht anklickbar sein.
 
-   - **Verhindern, dass Benutzer Theme außer**Kraft setzen: kippen Sie diese Umschaltfläche, um zu verhindern, dass Benutzer ihr eigenes Design aus unserer Designauswahl auswählen. Dadurch wird verhindert, dass Benutzer kein Design mit hohem Kontrast festlegen können.
-      
-  - **Anzeigen des Benutzernamens**: Wählen Sie aus, ob der vollständige Name eines Benutzers an der Einstiegsstelle für den Konto-Manager oben rechts auf der Seite angezeigt werden soll, wenn der Benutzer angemeldet ist. Standardmäßig werden Benutzern Ihr Foto oder Ihre Initialen angezeigt, wenn kein Foto hochgeladen wurde.
+    - **Logo klickbar machen**: Sie können Ihr Logo in der Navigationsleiste als Link zu einer beliebigen Unternehmensressource verwenden. Sie können hier die URL für das Logo eingeben, beginnend mit http://oder https://. Dieser Schritt ist optional.
+
+    - **Hintergrundbild auswählen**: Wählen Sie das Bild aus, und laden Sie Ihre eigene JPG-, PNG-oder GIF-Datei mit einer Auflösung von 1366 x 50 Pixel, die nicht größer als 15 KB ist, hoch. Das Hintergrundbild wird auf jeder Seite in der oberen Navigationsleiste angezeigt.
+
+      > [!NOTE]
+      > Bilder, die Text enthalten, werden möglicherweise nicht wie erwartet angezeigt. Integrierte Elemente, die rechts und links von der Navigationsleiste angezeigt werden, können in Diensten variieren, und Ihr Text wird möglicherweise durch diese Elemente  verdeckt. Aufgrund der dynamischen Natur der Navigationsleiste können wir zu diesem Zeitpunkt keine Anleitung für Bildtextabstand bereitstellen, die zu einer konsistenten Erfahrung führen würde. 
+
+    - **Navigationsleisten Farbe**: Wählen Sie eine Farbe aus, die für den Hintergrund der Navigationsleiste verwendet werden soll. Sie wird oben auf jeder Seite angezeigt.
+
+    - **Text und Symbole**: Wählen Sie eine Farbe für den Text und die Symbole auf der oberen Navigationsleiste aus.
+
+    - **Akzentfarbe**: Wählen Sie eine Farbe aus, die für die Navigationsleisten Schaltfläche verwendet werden soll. Hover Farbe und Seiten Akzente wie Schaltflächen und Text in bestimmten Anwendungen.
+
+     - **Verhindern, dass Benutzer Theme außer**Kraft setzen: kippen Sie diese Umschaltfläche, um zu verhindern, dass Benutzer ihr eigenes Design aus unserer Designauswahl auswählen. Dadurch wird verhindert, dass Benutzer kein Design mit hohem Kontrast festlegen können.
+
+    - **Anzeigen des Benutzernamens**: Wählen Sie aus, ob der vollständige Name eines Benutzers an der Einstiegsstelle für den Konto-Manager oben rechts auf der Seite angezeigt werden soll, wenn der Benutzer angemeldet ist. Standardmäßig werden Benutzern Ihr Foto oder Ihre Initialen angezeigt, wenn kein Foto hochgeladen wurde.
     
 4. Wählen Sie **Änderungen speichern** aus.
     
-Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Office 365, einschließlich Outlook und SharePoint-Seiten. Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben jederzeit entfernen. Kehren Sie einfach zur Design Seite zurück, und wählen Sie **benutzerdefinierte Designs entfernen**aus.
+Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Office 365, einschließlich Seiten in Outlook, SharePoint und SharePoint Mobile Apps für IOS und Android. In der folgenden Abbildung werden die Designelemente hervorgehoben, die Sie für SharePoint Mobile Apps anpassen können.
+
+![Standard Office 365 Design und benutzerdefiniertes Office 365 Design für SharePoint Mobile Apps]()
+
+Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben jederzeit entfernen. Kehren Sie einfach zur Design Seite zurück, und wählen Sie **benutzerdefinierte Designs entfernen**aus.
   
 ## <a name="best-practices"></a>Bewährte Methoden
 

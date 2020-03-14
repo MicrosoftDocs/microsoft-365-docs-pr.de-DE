@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Sie können die Benutzeranmeldungen auf Windows-Geräten und auf Microsoft 365 sicherer machen.
 ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544014"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633513"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Schritt 3: Absichern und Verwalten von Benutzeranmeldungen
 

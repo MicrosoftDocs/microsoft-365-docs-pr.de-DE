@@ -25,11 +25,11 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242437"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633713"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Bezahlen Ihres Office 365 Business-Abonnements
 

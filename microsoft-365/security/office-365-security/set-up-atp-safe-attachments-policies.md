@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails.
-ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957180"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637318"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
@@ -45,11 +45,13 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
 - Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren (oder zu bearbeiten), müssen Sie entweder eine Exchange Online Organisations Verwaltungsrolle zugewiesen sein (Office 365 globaler Administrator ist standardmäßig dieser Rolle zugewiesen) oder sowohl Exchange Online Hygiene Management-als auch Sicherheits Administrator Rollen. Weitere Informationen finden Sie in der folgenden Tabelle:
 
-  |Rolle|Wo/wie zugewiesen|
-  |---------|---------|
+  |||
+  |---|---|
+  |**Rolle**|**Wo/wie zugewiesen**|
   |Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online Organisationsverwaltung, Exchange Online Hygiene Management |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |
 
   Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -87,15 +89,17 @@ Sie sollten mehrere ATP-Richtlinien für sichere Anlagen für Ihre Organisation 
 
 Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter vielen Optionen aus, darunter Monitor, blockieren, ersetzen, dynamische Zustellung usw. Wenn Sie sich Fragen, was diese Optionen angeht, fasst die folgende Tabelle die einzelnen Effekte zusammen.
 
+||||
+|---|---|---|
 |**Option**|**Effect**|**Verwenden Sie Folgendes, wenn Sie möchten:**|
-|:-----|:-----|:-----|
-|**Off**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren der Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur bekannte, gute Anlagen senden werden  <br/> Verhindern unnötiger Verzögerungen beim Weiterleiten interner e-Mail  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Damit können Sie für eine kleine Gruppe von internen Absendern das abscansen sicherer Anhänge durch ATP deaktivieren.**|
+|**Off**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren der Überprüfung bei Scannern, Faxnachrichten oder intelligenten Hosts, die nur bekannte, gute Anlagen senden werden  <br/> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails.  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung der ATP-Sicherheit von Anlagen für eine kleine Gruppe vertrauenswürdiger Absender zu deaktivieren.**|
 |**Monitor**|Sendet Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht.|Ermitteln, wo erkannte Schadsoftware in Ihrer Organisation eingeht|
 |**Block**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen fortgesetzt werden  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen|Schützen Ihrer Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen|
 |**Replace**|Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.|Erhöhen der Sichtbarkeit für Empfänger, die Anlagen aufgrund erkannter Schadsoftware entfernt haben|
 |**Dynamische Zustellung**|Sendet sofort Nachrichten  <br/> Ersetzt Anlagen durch eine Platzhalterdatei, bis die Überprüfung abgeschlossen ist, und fügt dann die Anlagen erneut an, wenn keine Schadsoftware erkannt wird.  <br/> Enthält Funktionen zur Vorschau der Anlage für die meisten PDFs und Office-Dateien während der Überprüfung  <br/> Sendet Nachrichten mit erkannter Schadsoftware in Quarantäne, in denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> [Informationen zur dynamischen Zustellung und Vorschau mit ATP-sicheren Anlagen](dynamic-delivery-and-previewing.md) <br/> |Vermeiden von Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien  <br/> Aktivieren von Empfängern zum Anzeigen einer Vorschau von Anlagen im abgesicherten Modus, während der Scan stattfindet|
 |**Umleitung aktivieren**|Gilt, wenn die Option Monitor, Block oder ersetzen ausgewählt ist.  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, die von Sicherheitsadministratoren oder Analysten untersucht werden kann.|Aktivieren von Sicherheitsadministratoren und Analysten zum Recherchieren verdächtiger Anlagen|
 |**Anwenden der obigen Auswahl, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt**|Wendet die für unasfe-Anlagen konfigurierte Aktion auf die Anlagen an, die nicht gescannt werden können (aufgrund eines Timeouts oder Fehlers)|
+|
 
 ## <a name="next-steps"></a>Nächste Schritte
 

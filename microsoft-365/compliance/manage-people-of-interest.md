@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582884"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634713"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Verwalten von Personen mit Interesse an Daten Ermittlungen (Vorschau)
 
@@ -56,7 +56,7 @@ So fügen Sie einer Untersuchung interessante Personen hinzu:
         > Wenn Sie auf Benutzer, Gruppen oder Teams auswählen, um Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen.
      
      - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann auf **Websites erneut auswählen** , um zusätzliche SharePoint-und OneDrive für Unternehmen-Websites anzugeben, die Sie einer Person hinzufügen wwant. Sie können auch die URL für die SharePoint-Website für eine Office 365 Gruppe oder ein Microsoft-Team hinzufügen. Geben Sie die URL für jede Website ein, die Sie zuweisen möchten. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
-     - **Microsoft Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann auf **Teams erneut auswählen** , um eine Liste der Microsoft-Team Gruppen anzuzeigen, in denen die Person heute Mitglied ist. Wählen Sie die Teams aus, die Sie der Person hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch #a0 wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+     - **Microsoft Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann auf **Teams erneut auswählen** , um eine Liste der Microsoft-Team Gruppen anzuzeigen, in denen die Person heute Mitglied ist. Wählen Sie die Teams aus, die Sie der Person hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
         
       > [!NOTE]
       > Wenn Sie weitere Microsoft Teams hinzufügen möchten, müssen Sie das Postfach und die SharePoint-Website wie oben gezeigt separat hinzufügen.

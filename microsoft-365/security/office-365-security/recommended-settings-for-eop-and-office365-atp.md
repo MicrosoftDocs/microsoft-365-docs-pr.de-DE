@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
 ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42587306"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632943"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -65,7 +65,7 @@ In der Anti-Spam-Richtlinie "Advanced Spamfilter (ASF)" gibt es mehrere weitere 
 
 Es wird empfohlen, dass Sie diese **Einstellungen sowohl** für Standard mäßige als auch für Strict-Stufen deaktivieren:
 
-|Name des Sicherheitsfeatures|Kommentare|
+|Name des Sicherheitsfeatures|Anmerkungen|
 |---------|---------|
 |IncreaseScoreWithImageLinks||
 |IncreaseScoreWithNumericIps||
