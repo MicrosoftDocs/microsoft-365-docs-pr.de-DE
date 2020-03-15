@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Aufbewahrungsbezeichnungen, um Daten organisationsweit für Governance zu klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchzusetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um eine Lösung zur Datensatzverwaltung für Microsoft 365 zu implementieren.
-ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277442"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634303"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -58,9 +58,6 @@ Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
     
    - Benutzer müssen nicht mehr über Governance-Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
 
-  > [!NOTE]
-  > Die Möglichkeit, Bezeichnungen automatisch anzuwenden, erfordert mindestens eine Office 365 Enterprise E5-Lizenz für jeden Benutzer, der über die Berechtigungen zum Bearbeiten von Inhalten auf einer Website oder in ihrem Postfach verfügt, die automatisch mit Bezeichnungen versehen wurden. Benutzer, die lediglich schreibgeschützten Zugriff auf Inhalte haben oder auf bezeichnete E-Mail-Nachrichten antworten, benötigen diese Lizenz nicht.
-      
 - **Implementieren Sie die Datensatzverwaltung im gesamten Office 365**, darunter E-Mails und Dokumente. Sie können eine Aufbewahrungsbezeichnung verwenden, um Inhalt als Datensatz zu klassifizieren. In diesem Fall kann die Bezeichnung nicht geändert oder entfernt werden, und der Inhalt kann nicht bearbeitet oder gelöscht werden. 
 
 - **Wenden Sie eine Standardaufbewahrungsbezeichnung auf eine Dokumentbibliothek, einen Ordner oder eine Dokumentenmappe** in SharePoint an, sodass alle Dokumente, die an diesem Speicherort eintreffen, mit der Standardaufbewahrungsbezeichnung versehen werden.  
@@ -268,8 +265,6 @@ Sie können Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, wenn di
     
 ![Seite "Bedingung auswählen" für automatisch angewendete Bezeichnungen](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-Für die automatische Anwendung von Aufbewahrungsbezeichnungen, die für die ersten beiden Optionen konfiguriert sind, ist ein Office 365 Enterprise E5-Abonnement erforderlich. Wenn Sie die Option für trainierbare Klassifizierungen verwenden, gelten [zusätzliche Lizenzierungsanforderungen](classifier-getting-started-with.md#licensing-requirements).
-
 Es kann bis zu sieben Tage dauern, bis die automatisch angewendeten Aufbewahrungsbezeichnungen für alle Inhalte, die den von Ihnen konfigurierten Bedingungen entsprechen, wirksam werden.
   
 > [!TIP]
@@ -318,7 +313,9 @@ Beispiele für Abfragen:
 
 ### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mithilfe von trainierbare Klassifizierungen
 
-Wenn Sie die Option für eine trainierbare Klassifizierung auswählen, können Sie eine der integrierten Klassifizierungen oder eine benutzerdefinierte Klassifizierung auswählen. Zu den integrierten Klassifizierungen gehören **Anstößige Sprache**, **Lebensläufe**, **Quellcode**, **Belästigung**, **Unerwünschter Ausdruck** und **Drohung**.
+Wenn Sie die Option für eine trainierbare Klassifizierung auswählen, können Sie eine der integrierten Klassifizierungen oder eine benutzerdefinierte Klassifizierung auswählen. Zu den integrierten Klassifizierungen gehören **Anstößige Sprache**, **Lebensläufe**, **Quellcode**, **Gezielte Belästigung**, **Vulgäre Ausdrücke** und **Drohung**:
+
+![Trainierbaren Klassifizierer auswählen](../media/retention-label-classifers.png)
 
 Wenn Sie eine Bezeichnung mithilfe dieser Option automatisch anwenden möchten, müssen SharePoint Online-Websites und -Postfächer mindestens 10 MB Daten umfassen.
 
@@ -328,7 +325,7 @@ Eine Beispielkonfiguration finden Sie unter [Vorbereiten und Verwenden einer ein
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Anwenden einer Standardaufbewahrungsbezeichnung auf alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einer Dokumentenmappe
 
-Sie können es Personen nicht nur ermöglichen, eine Aufbewahrungsbezeichnung auf einzelne Dokumente anzuwenden, sondern Sie können eine Standardaufbewahrungsbezeichnung auf eine SharePoint-Bibliothek, einen Ordner oder eine Dokumentenmappe anwenden, sodass alle Dokumente in diesem Speicherort diese Standardaufbewahrungsbezeichnung erhalten (Standardbezeichnungen sind ein E5-Feature).
+Sie können es Personen nicht nur ermöglichen, eine Aufbewahrungsbezeichnung auf einzelne Dokumente anzuwenden, sondern Sie können eine Standardaufbewahrungsbezeichnung auf eine SharePoint-Bibliothek, einen Ordner oder eine Dokumentenmappe anwenden, sodass alle Dokumente in diesem Speicherort diese Standardaufbewahrungsbezeichnung erhalten.
   
 Bei einer Dokumentbibliothek geschieht das auf der Seite **Bibliothekseinstellungen**. Wenn Sie die standardmäßige Aufbewahrungsbezeichnung auswählen, können Sie auch auswählen, dass sie auf vorhandene Elemente in der Bibliothek angewendet werden soll. 
   
