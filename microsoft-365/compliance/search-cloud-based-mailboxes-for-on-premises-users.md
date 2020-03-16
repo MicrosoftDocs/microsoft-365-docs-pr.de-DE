@@ -10,124 +10,124 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MOE150
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center zum Suchen und Exportieren von verläuft-Chat Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung.
-ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: MT
+description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von MicrosoftTeams (so genannte 1xN-Chats) für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
+ms.openlocfilehash: ba3504289306543916667066738a25cf168d13e5
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070012"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604152"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
 
-Wenn Ihre Organisation über eine Exchange-hybridbereitstellung verfügt und Microsoft Teams aktiviert hat, können Benutzer die Chat Anwendung "Teams" für Chatnachrichten verwenden. Für den cloudbasierten Benutzer werden die Teamchat Daten (auch als 1xN- *Chats*bezeichnet) in Ihrem primären cloudbasierten Postfach gespeichert. Wenn ein lokaler Benutzer die Team Chat Anwendung verwendet, befindet sich das primäre Postfach lokal. Um diese Einschränkung zu umgehen, hat Microsoft ein neues Feature veröffentlicht, in dem ein Cloud-basierter Speicherbereich (als Cloud-basiertes Postfach für lokale Benutzer bezeichnet) zum Speichern von teamchatdaten für lokale Benutzer erstellt wurde. Auf diese Weise können Sie das Inhalts Such Tool im Security & Compliance Center verwenden, um Microsoft Teams-Chat Daten für lokale Benutzer zu suchen und zu exportieren. 
+Wenn Ihre Organisation über eine Exchange-Hybridbereitstellung verfügt (oder Ihre Organisation eine lokale Exchange-Organisation mit Office 365 synchronisiert) und Microsoft Teams aktiviert hat, können Benutzer die Teams-Chatanwendung für Chatnachrichten verwenden. Bei cloudbasierten Benutzern werden die Chatdaten der Teams (ebenfalls *1xN-Chats* genannt) in ihrem primären cloudbasierten Postfach gespeichert. Wenn ein lokaler Benutzer die Teams-Chatanwendung verwendet, ist das primäre Postfach lokal untergebracht. Um diese Einschränkung zu umgehen, hat Microsoft ein neues Feature veröffentlicht, bei dem ein cloudbasierter Speicherbereich (bezeichnet als cloudbasiertes Postfach für lokale Benutzer) zum Speichern von Teams-Chatdaten für lokale Benutzer erstellt wird. Auf diese Weise können Sie das Tool für die Inhaltssuche im Security & Compliance Center verwenden, um Teams-Chatdaten für lokale Benutzer zu suchen und zu exportieren. 
   
-Im folgenden sind die Anforderungen und Einschränkungen für die Einrichtung von Cloud-basierten Postfächern für lokale Benutzer aufgelistet:
+Hier sind die Anforderungen und Einschränkungen für das Einrichten von cloudbasierten Postfächern für lokale Benutzer:
   
-- Die Benutzerkonten in Ihrem lokalen Verzeichnisdienst (beispielsweise Active Directory) müssen mit Azure Active Directory, dem Verzeichnisdienst in Office 365, synchronisiert werden. Dies bedeutet, dass ein e-Mail-Benutzerkonto in Office 365 erstellt wird und einem Benutzer zugeordnet ist, dessen primäres Postfach sich in der lokalen Organisation befindet.
+- Die Benutzerkonten in Ihrem lokalen Verzeichnisdienst (z. b. Active Directory) müssen mit Azure Active Directory, dem Verzeichnisdienst in Office 365, synchronisiert werden. Dies bedeutet, dass in Office 365 ein e-Mail-Benutzerkonto erstellt wird, das einem Benutzer zugeordnet ist, dessen primäres Postfach sich in der lokalen Organisation befindet.
 
-- Dem Benutzer, dessen primäres Postfach sich in der lokalen Organisation befindet, muss eine Microsoft Teams-Lizenz und mindestens eine Exchange Online Plan 1-Lizenz zugewiesen sein.
+- Der Benutzer, dessen primäres Postfach in der lokalen Organisation gespeichert ist, muss eine Microsoft Teams-Lizenz und mindestens eine Exchange Online Plan 1-Lizenz zugewiesen haben.
 
-- Das Cloud-basierte Postfach für lokale Benutzer wird nur zum Speichern von Team-Chat Daten verwendet. Ein lokaler Benutzer kann sich in keiner Weise beim cloudbasierten Postfach oder Zugriff anmelden. Es kann nicht zum Senden oder empfangen von e-Mail-Nachrichten verwendet werden. 
+- In den cloudbasierten Postfächer für lokale Benutzer werden nur Teams-Chatdaten gespeichert. Ein lokaler Benutzer kann sich nicht bei dem cloudbasierten Postfach anmelden oder auf irgendeine Weise darauf zugreifen. Es kann nicht dazu verwendet werden, e-Mail-Nachrichten zu senden oder zu empfangen. 
 
-- Sie müssen eine Anforderung an den Microsoft-Support übermitteln, damit Ihre Organisation in den Cloud-basierten Postfächern für lokale Benutzer nach teamchatdaten suchen kann. Weitere Informationen finden Sie unter [Einreichung einer Anforderung mit dem Microsoft-Support, um dieses Feature](#filing-a-request-with-microsoft-support-to-enable-this-feature) in diesem Artikel zu aktivieren. 
+- Sie müssen eine Anfrage an den Microsoft-Support senden, damit Ihre Organisation in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chatdaten suchen kann. Informationen hierzu finden Sie in diesem Artikel unter [Einreichen einer Anforderung an den Microsoft-Support, dieses Feature zu aktivieren](#filing-a-request-with-microsoft-support-to-enable-this-feature). 
 
 > [!NOTE]
-> Microsoft Teams-Kanal Unterhaltungen werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, dass Sie die Inhaltssuche zum Durchsuchen von Kanal Unterhaltungen verwenden können, ohne eine Supportanfrage einreichen zu müssen. Weitere Informationen zum Durchsuchen von Teams-Kanal Unterhaltungen finden Sie unter durch [Suchen von Microsoft Teams und Office 365 Gruppen](content-search.md#searching-microsoft-teams-and-office-365-groups).
+> Unterhaltungen eines Teams-Kanals werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, dass Sie die Inhaltssuche zum Durchsuchen von Kanal-Unterhaltungen verwenden können, ohne dass Sie eine Supportanfrage einreichen müssen. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Office 365-Gruppen](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
 ## <a name="how-it-works"></a>Funktionsweise
 
-Wenn ein Microsoft Teams-aktivierter Benutzer über ein lokales Postfach verfügt und sein Benutzerkonto/seine Identität mit der Cloud synchronisiert wurde, erstellt Microsoft ein Cloud-basiertes Postfach zum Speichern von 1xN-Chat Daten. Nachdem die Microsoft Teams-Chat Daten im cloudbasierten Postfach gespeichert wurden, wird Sie für die Suche indiziert. Auf diese Weise können Sie die Inhaltssuche (und Suchvorgänge im Zusammenhang mit eDiscovery-Fällen) zum Suchen, anzeigen und Exportieren von teamchatdaten für lokale Benutzer verwenden. Sie können auch ** \*ComplianceSearch** -Cmdlets im Security & Compliance Center PowerShell verwenden, um nach teamchatdaten für lokale Benutzer zu suchen. 
+Wenn ein aktivierter Microsoft Teams-Benutzer über ein lokales Postfach verfügt und dessen Benutzerkonto/Identität in der Cloud synchronisiert wurde, erstellt Microsoft ein cloudbasiertes Postfach zum Sichern der 1xN-Teams-Chatdaten. Nach dem Speichern der Chatdaten von Teams im cloudbasierten Postfach wird dieses für die Suche indiziert. Auf diese Weise können Sie die Inhaltssuche (und mit eDiscovery-Fällen verknüpfte Suchvorgänge) verwenden, um Chatdaten von Teams für lokale Benutzer zu durchsuchen, in der Vorschau anzuzeigen und zu exportieren. Sie können auch **\*ComplianceSearch**-Cmdlets in der Security & Compliance Center PowerShell verwenden, um für lokale Benutzer nach Team-Chatdaten zu suchen. 
   
-Die folgende Grafik zeigt den Workflow, wie Microsoft Teams-Chat Daten für lokale Benutzer für die Suche, Vorschau und den Export zur Verfügung stehen.
+Die folgende Abbildung zeigt den Workflow, wie Teams-Chatdaten für lokale Benutzer für die Suche, Vorschau und den Export verfügbar sind.
   
-![Cloud-basierter Speicher für lokale Benutzer in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Cloudbasierte Speicherung für lokale Benutzer in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
-Zusätzlich zu dieser neuen Funktion können Sie weiterhin die Inhaltssuche zum Durchsuchen, anzeigen und Exportieren von Microsoft Teams-Inhalten in der cloudbasierten SharePoint-Website und zum Exchange-Postfach verwenden, das den einzelnen Microsoft Teams-und 1xN-Team Chat Daten im Exchange Online Postfach für Cloud-basierte Benutzer.
+Zusätzlich zu dieser neuen Funktion können Sie die Inhaltssuche weiterhin dazu verwenden, um für lokale Benutzer Teams-Inhalte in der cloudbasierten SharePoint-Website und dem Exchange-Postfach, die mit jedem Microsoft Team und den 1xN-Chatdaten von Teams im Exchange Online-Postfach für cloudbasierte Benutzer verknüpft sind, zu suchen, in der Vorschau anzuzeigen und zu exportieren.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Einreichen einer Anforderung mit dem Microsoft-Support, um diese Funktion zu aktivieren
+## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Einreichen einer Anforderung an den Microsoft-Support, dieses Feature zu aktivieren
 
-Sie müssen eine Anforderung mit dem Microsoft-Support einreichen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center zum Suchen von teamchatdaten in den cloudbasierten Postfächern für lokale Benutzer verwenden kann. Dieses Feature steht in Security & Compliance Center PowerShell zur Verfügung. Sie müssen keine Supportanfrage übermitteln, um PowerShell zum Suchen von teamchatdaten für lokale Benutzer zu verwenden. 
+Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chatdaten zu suchen. Dieses Feature ist in der Security & Compliance Center PowerShell verfügbar. Sie müssen keine Supportanforderung für die Verwendung von PowerShell zum Suchen nach Teams-Chatdaten für lokale Benutzer einreichen.
   
-Schließen Sie die folgenden Informationen ein, wenn Sie die Anforderung an den Microsoft-Support übermitteln:
+Geben Sie die folgenden Informationen an, wenn Sie die Anforderung an den Microsoft-Support senden:
   
-- Der Standarddomänenname Ihrer Office 365 Organisation.
-    
-- Der Mandantenname und die Mandanten-ID Ihrer Office 365 Organisation. Sie finden diese im Azure Active Directory-Portal (unter Eigenschaften **Verwalten** \> ****). Weitere Informationen finden Sie unter [Suchen Ihrer Office 365 Mandanten-ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
-    
-- Der folgende Titel oder die Beschreibung des Zwecks der Supportanforderung: "Aktivieren der Anwendungsinhalts Suche für lokale Benutzer". Dadurch wird die Anforderung an das Office 365 eDiscovery-Entwicklungsteam weitergeleitet, das die Anforderung implementiert. 
-    
-Nachdem die technische Änderung vorgenommen wurde, wird Ihnen der Microsoft-Support ein geschätztes Bereitstellungsdatum senden. Der Bereitstellungsprozess dauert normalerweise 2 bis 3 Wochen, nachdem Sie die Supportanfrage gesendet haben. 
-  
-### <a name="what-happens-after-this-feature-is-enabled"></a>Was geschieht, nachdem dieses Feature aktiviert wurde?
+- Der Standarddomänenname Ihrer Office 365-Organisation.
 
-Nachdem dieses Feature in Ihrer Office 365 Organisation bereitgestellt wurde, werden die folgenden Änderungen an der Inhaltssuche und in Suchvorgängen im Zusammenhang mit einem eDiscovery-Fall im Security & Compliance Center vorgenommen:
-  
-- Das Kontrollkästchen **Office-App-Inhalt für lokale Benutzer hinzufügen** wird unter **der Suche nach Inhalten** hinzugefügt. 
-    
-    ![Das Kontrollkästchen "Office-App-Inhalt für lokale Benutzer hinzufügen" wird der Benutzeroberfläche für die Inhaltssuche hinzugefügt.](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
-  
-- Lokale Benutzer werden in der Auswahl für inhaltsspeicherorte angezeigt, die Sie zum Auswählen von zu durchsuchenden Benutzerpostfächern verwenden. 
+- Der Mandantenname und die Mandanten-ID Ihrer Office 365-Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von ** \> **Eigenschaften**). Siehe [Suchen Ihrer Office 365 Mandanten-ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
 
-## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>Suchen nach teamchats-Inhalten in cloudbasierten Postfächern für lokale Benutzer
+- Der folgende Titel oder eine Beschreibung des Zwecks der Supportanforderung: "Anwendungs-Inhaltssuche für lokale Benutzer aktivieren". Auf diese Weise kann die Anforderung an das Office 365 eDiscovery Engineering-Team geleitet werden, das die Anforderung umsetzt.
 
-Nachdem das Feature aktiviert wurde, können Sie die Inhaltssuche im Security & Compliance Center verwenden, um nach teamchatdaten in den Cloud-basierten Postfächern für lokale Benutzer zu suchen. 
+Wenn die technischen Änderungen vorgenommen wurden, erhalten Sie vom Microsoft-Support ein voraussichtliches Bereitstellungsdatum. Der Bereitstellungsvorgang dauert in der Regel 2 bis 3 Wochen, nachdem Sie die Supportanfrage abgeschickt haben.
   
-1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**
-    
-2. Klicken Sie **** ![auf der Seite Suche auf Symbol](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen.
-    
-    Wie bereits erläutert, wird das Kontrollkästchen **Office-App-Inhalt für lokale Benutzer hinzufügen** unter **Standorte**angezeigt. Sie ist standardmäßig ausgewählt.
-    
-3. Erstellen Sie die Stichwortabfrage, und fügen Sie bei Bedarf der Suchabfrage Bedingungen hinzu. Um nur nach Team Chats-Daten zu suchen, können Sie die folgende Abfrage im Feld **Schlüsselwörter** hinzufügen: 
+### <a name="what-happens-after-this-feature-is-enabled"></a>Was geschieht nach der Aktivierung dieses Features?
+
+Nachdem dieses Feature in Ihrer Office 365-Organisation bereitgestellt wurde, werden die folgenden Änderungen in der Inhaltssuche und in Suchvorgängen, die mit einem eDiscovery-Fall im Security & Compliance Center verknüpft sind, vorgenommen:
+  
+- Das Kontrollkästchen **Inhalte der Office-App für lokale Benutzer hinzufügen** wird unter **Speicherorte** in der Inhaltssuche hinzugefügt.
+
+    ![Das Kontrollkästchen "Inhalte der Office-App für lokale Benutzer hinzufügen" wird der Benutzeroberfläche der Inhaltssuche hinzugefügt.](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+  
+- Lokale Benutzer werden in der Auswahl der Inhaltsspeicherorte angezeigt, in der Sie die zu durchsuchenden Benutzerpostfächer auswählen.
+
+## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>Suchen nach Chatinhalten von Teams in cloudbasierten Postfächern für lokale Benutzer
+
+Nachdem das Feature aktiviert wurde, können Sie die Inhaltssuche im Security & Compliance Center verwenden, um in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chatdaten zu suchen.
+  
+1. Gehen Sie im Security & Compliance Center auf **Suche** \> **Inhaltssuche**
+
+2. Klicken Sie auf der Seite **Suchen** auf das Symbol ![Hinzufügen](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Neue Suche**.
+
+    Wie bereits erläutert wird das Kontrollkästchen **Inhalte der Office-App für lokale Benutzer hinzufügen** unter **Speicherorte** angezeigt. Es ist standardmäßig aktiviert.
+
+3. Erstellen Sie die Schlüsselwortabfrage und fügen Sie der Suchabfrage Bedingungen hinzu, falls notwendig. Wenn Sie nur nach Team-Chatdaten suchen möchten, können Sie die folgende Abfrage im Feld **Schlüsselwort** hinzufügen:
 
     ```text
     kind:im
     ```
 
-4. An dieser Stelle können Sie eine der folgenden Optionen unter **Standorte**auswählen:
+4. An diesem Punkt können Sie unter **Speicherorte**eine der folgenden Optionen auswählen:
 
-    - **Alle Standorte:** Wählen Sie diese Option aus, um die Postfächer aller Benutzer in Ihrer Organisation zu durchsuchen. Wenn das Kontrollkästchen aktiviert ist, werden auch alle Cloud-basierten Postfächer für lokale Benutzer durchsucht. 
+    - **Alle Speicherorte:** Wählen Sie diese Option, um die Postfächer aller Benutzer in Ihrer Organisation zu durchsuchen. Wenn das Kontrollkästchen aktiviert ist, werden auch alle cloudbasierten Postfächer für lokale Benutzer durchsucht.
 
-    - **Bestimmte Standorte:** Wählen Sie diese Option aus, und klicken Sie dann auf Benutzer, Gruppen oder Teams zum Durchsuchen bestimmter Postfächer **ändern** \> . Wie bereits erläutert, können Sie mit der Speicherorts Auswahl nach lokalen Benutzern suchen. 
-    
-5. Speichern Sie die Suche, und führen Sie Sie aus. Alle Suchergebnisse aus den cloudbasierten Postfächern für lokale Benutzer können wie andere Suchergebnisse in der Vorschau angezeigt werden. Sie können auch die Suchergebnisse (einschließlich aller teamchats-Daten) in eine PST-Datei exportieren. Weitere Informationen finden Sie unter: 
+    - **Bestimmte Speicherorte:** Wählen Sie diese Option aus und klicken Sie dann auf **Modifizieren** \> Wählen Sie Benutzer, Gruppen oder Teams aus, um bestimmte Postfächer zu durchsuchen. Wie zuvor erläutert können Sie mit der Auswahl "Speicherorte" nach lokalen Benutzern suchen.
 
-    - [Create a search](content-search.md#create-a-search)
+5. Speichern Sie die Suche und führen Sie sie aus. Alle Suchergebnisse aus den cloudbasierten Postfächern für lokale Benutzer können wie alle anderen Suchergebnisse in der Vorschau angezeigt werden. Sie können die Suchergebnisse (einschließlich aller Chatdaten von Teams) auch in eine PST-Datei exportieren. Weitere Informationen finden Sie unter: 
 
-    - [Preview search results](content-search.md#preview-search-results)
+    - [Erstellen einer Suche](content-search.md#create-a-search)
+
+    - [Anzeigen von Suchergebnissen in der Vorschau](content-search.md#preview-search-results)
 
     - [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
 
-## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>Verwenden von PowerShell zum Suchen von teamchatdaten in Cloud-basierten Postfächern für lokale Benutzer
+## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>PowerShell für die Suche nach Chatdaten von Teams in cloudbasierten Postfächern für lokale Benutzer benutzen
 
-Sie können die Cmdlets **New-ComplianceSearch** und **ComplianceSearch** in der PowerShell Security & Compliance Center verwenden, um das Cloud-basierte Postfach für lokale Benutzer zu durchsuchen. Wie bereits erläutert, müssen Sie keine Supportanfrage übermitteln, um PowerShell zum Suchen von teamchatdaten für lokale Benutzer zu verwenden. 
+Sie können die Cmdlets **New-ComplianceSearch** und **Set-ComplianceSearch** in der PowerShell des Security & Compliance Centers verwenden, um cloudbasierte Postfächer für lokale Benutzer zu durchsuchen. Wie zuvor erläutert müssen Sie keine Supportanforderung für die Verwendung von PowerShell zum Suchen nach Teams-Chatdaten für lokale Benutzer einreichen. 
   
-1. [Stellen Sie eine Verbindung mit Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Führen Sie den folgenden PowerShell-Befehl aus, um eine Inhaltssuche zu erstellen, die die cloudbasierten Postfächer von lokalen Benutzern durchsucht.
+2. Führen Sie den folgenden PowerShell-Befehl aus, um eine Inhaltssuche zu erstellen, die die cloudbasierten Postfächer für lokale Benutzer durchsucht.
 
     ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-    Der Parameter *IncludeUserAppContent* wird verwendet, um das cloudbasierten Postfach für den Benutzer oder die Benutzer anzugeben, die durch den *ExchangeLocation* -Parameter angegeben werden. Das *AllowNotFoundExchangeLocationsEnabled* ermöglicht Cloud-basierte Postfächer für lokale Benutzer. Wenn Sie den `$true` Wert für diesen Parameter verwenden, versucht die Suche nicht, das vorhanden sein des Postfachs zu überprüfen, bevor es ausgeführt wird. Dies ist erforderlich, um die Cloud-basierten Postfächer für lokale Benutzer zu durchsuchen, da diese Typen von Postfächern nicht als reguläre Postfächer aufgelöst werden. 
+    Der Parameter *IncludeUserAppContent* wird verwendet, um das cloudbasierte Postfach des Benutzers oder der Benutzer festzulegen, die durch den Parameter *ExchangeLocation* angegeben wurden. *AllowNotFoundExchangeLocationsEnabled* ermöglicht cloudbasierte Postfächer für lokale Benutzer. Wenn Sie den Wert `$true` für diesen Parameter verwenden, versucht die Suche nicht, das Vorhandensein des Postfachs vor dem Fortfahren zu überprüfen. Dies ist erforderlich, um die cloudbasierten Postfächer nach lokalen Benutzern zu durchsuchen, da diese Typen von Postfächern nicht als reguläre Postfächer aufgelöst werden.
 
-    Im folgenden Beispiel wird nach Microsoft Teams-Chats (Sofortnachrichten) gesucht, die das Schlüsselwort "Redstone" im cloudbasierten Postfach von Sara Davis, einem lokalen Benutzer in der Contoso-Organisation, enthalten.
+    Im folgenden Beispiel wird im cloudbasierten Postfach von Sara Davis, die ein lokaler Benutzer der Organisation Contoso ist, nach Teams-Chats (Chatnachrichten) gesucht, die das Stichwort "Redstone" enthalten.
   
     ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   Nachdem Sie eine Suche erstellt haben, müssen Sie das Cmdlet **Start-ComplianceSearch** verwenden, um die Suche auszuführen. 
+   Verwenden Sie nach dem Erstellen einer Suche unbedingt das Cmdlet **Start-ComplianceSearch**, um die Suche auszuführen. 
   
-Weitere Informationen zur Verwendung dieser Cmdlets finden Sie unter:
+Weitere Informationen über diese Cmdlets finden Sie unter:
   
 - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
 
@@ -137,31 +137,30 @@ Weitere Informationen zur Verwendung dieser Cmdlets finden Sie unter:
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Derzeit können Sie Inhalte in cloudbasierten Postfächern für lokale Benutzer suchen, in der Vorschau anzeigen und exportieren. Sie können auch ein Cloud-basiertes Postfach für einen lokalen Benutzer in einem einem eDiscovery-Fall zugeordneten Haltebereich platzieren und eine Aufbewahrungsrichtlinie für Microsoft Teams-Chats oder Kanal Nachrichten an cloudbasierten Postfächer für lokale Benutzer anwenden. Allerdings können Sie zu diesem Zeitpunkt keine Aufbewahrungsrichtlinie für andere inhaltsspeicherorte (wie Exchange-Postfächer und SharePoint-Websites) auf cloudbasierten Postfächer für lokale Benutzer anwenden. 
-
+- Derzeit können Sie Inhalte in cloudbasierten Postfächern für lokale Benutzer durchsuchen, in der Vorschau anzeigen und exportieren. Außerdem können Sie ein cloudbasiertes Postfach für einen lokalen Benutzer in einem Archiv platzieren, das einem eDiscovery-Fall zugeordnet ist, und eine Aufbewahrungsrichtlinie für Teams-Chats oder Kanalmeldungen an cloudbasierte Postfächer für lokale Benutzer anwenden. Derzeit können Sie jedoch keine Aufbewahrungsrichtlinie für andere Inhaltsspeicherorte (z. B. Exchange-Postfächer und SharePoint-Websites) auf cloudbasierte Postfächer für lokale Benutzer anwenden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
- **Wo befinden sich Cloud-basierte Postfächer für lokale Benutzer?**
+ **Wo befinden sich die cloudbasierten Postfächer für lokale Benutzer?**
   
-Cloudbasierten Postfächer werden in demselben Rechenzentrum wie Ihre Office 365 Organisation erstellt und gespeichert. 
+Cloudbasierte Postfächer werden in demselben Rechenzentrum wie Ihre Office 365-Organisation erstellt und gespeichert.
   
- **Gibt es andere Anforderungen als das Einreichen einer Supportanfrage?**
+ **Gibt es andere Voraussetzungen als die Einreichung einer Supportanfrage?**
   
- Wie bereits erläutert, müssen die Identitäten von Benutzern mit on-Prem-Postfächern mit ihrer cloudbasierten Organisation synchronisiert werden, damit für jedes lokale Benutzerkonto in Office 365 ein entsprechendes e-Mail-Benutzerkonto erstellt wird. Ihre Organisation muss außerdem über ein Office 365 Enterprise-Abonnement verfügen, beispielsweise ein Office 365 Enterprise E1-, E3-oder E5-Abonnement. 
+ Wie zuvor erläutert müssen die Identitäten von Benutzern mit lokalen Postfächern mit Ihrer cloudbasierten Organisation synchronisiert werden, damit für jedes lokale Benutzerkonto in Office 365 ein entsprechendes E-Mail-Benutzerkonto angelegt wird. Außerdem muss Ihre Organisation ein Office 365 Enterprise-Abonnement haben, wie z. B. ein Office 365 Enterprise E1-, E3- oder E5-Abonnement.
   
- **Besteht das Risiko, dass die Chat Daten des Teams verloren gehen, wenn das lokale Postfach des Benutzers in die Cloud migriert wird?**
+ **Besteht das Risiko, dass die Chatdaten der Teams verloren gehen, wenn das lokale Postfach des Benutzers in die Cloud migriert wird?**
   
-Nein. Wenn Sie das primäre Postfach eines lokalen Benutzers in die Cloud migrieren, werden die Chat Daten des Teams für diesen Benutzer zu Ihrem neuen cloudbasierten primären Postfach migriert.
+Nein. Wenn Sie das primäre Postfach eines lokalen Benutzers in die Cloud migrieren, werden die Chatdaten des Teams für diesen Benutzer zum neuen cloudbasierten primären Postfach migriert.
   
- **Kann ich eine eDiscovery Hold-oder Office 365-Aufbewahrungsrichtlinie auf lokale Benutzer anwenden?**
+ **Kann ich ein eDiscovery-Archiv oder Office 365-Aufbewahrungsrichtlinien auf lokale Benutzer anwenden?**
   
-Ja. Sie können eDiscovery-oder Aufbewahrungsrichtlinien für teamchats und Kanal Nachrichten auf Cloud-basierte Postfächer für lokale Benutzer anwenden.
+Ja. Sie können eDiscovery-Archive oder Aufbewahrungsrichtlinien für Teams-Chats und Kanalnachrichten auf cloudbasierte Postfächer für lokale Benutzer anwenden.
   
- **Kann die Inhaltssuche ältere Microsoft Teams-Chats für lokale Benutzer suchen, bevor meine Organisation die Anforderung zur Aktivierung dieser Funktion übermittelt hat?**
+ **Kann die Inhaltssuche Teams-Chats für lokale Benutzer aus der Zeit finden, bevor meine Organisation die Anforderung zur Aktivierung dieses Features eingereicht hat?**
   
-Microsoft hat am 31. Januar 2018 begonnen, die Chatdaten der Teams für lokale Benutzer zu speichern. Wenn also die Identität eines lokalen Teams-Benutzers zwischen Active Directory und Azure Active Directory seit diesem Datum synchronisiert wurde, werden Ihre Teams-Chat Daten in einem cloudbasierten Postfach gespeichert und können mithilfe der Inhaltssuche durchsucht werden. Microsoft arbeitet außerdem an der Speicherung von teamchatdaten vor dem 31. Januar 2018 in den Cloud-basierten Postfächern für lokale Benutzer. Weitere Informationen dazu sind in Kürze verfügbar.
+Microsoft hat am 31. Januar 2018 mit der Speicherung der Teams-Chatdaten für lokale Benutzer begonnen. Wenn also die Identität eines Benutzers für lokale Teams seit diesem Datum zwischen Active Directory und Azure Active Directory synchronisiert wurde, werden die Chatdaten ihrer Teams in einem cloudbasierten Postfach gespeichert und können mithilfe der Inhaltssuche durchsucht werden. Außerdem arbeitet Microsoft daran, auch Teams-Chatdaten von vor dem 31. Januar 2018 in den cloudbasierten Postfächern für lokale Benutzer zu speichern. Weitere Informationen hierzu werden bald verfügbar sein.
 
- **Benötigen lokale Benutzer eine Lizenz zum Speichern von Microsoft Teams-Chat Daten in einem cloudbasierten Postfach?**
+ **Benötigen lokale Benutzer eine Lizenz, um Teams-Chatdaten in einem cloudbasierten Postfach zu speichern?**
   
-Ja. Zum Speichern von teamchatdaten für einen lokalen Benutzer in einem cloudbasierten Postfach muss dem Benutzer eine Microsoft Teams-Lizenz und eine Exchange Online Plan Lizenz in Office 365 (oder Microsoft 365) zugewiesen sein.
+Ja. Wenn die Chatdaten von Teams für einen lokalen Benutzer in einem cloudbasierten Postfach gespeichert werden sollen, muss dem Benutzer eine Lizenz für Microsoft Teams und eine für Exchange Online Plan in Office 365 (oder Microsoft 365) zugewiesen werden.

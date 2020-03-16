@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungs Satz in einem Fall in Advanced eDiscovery in Microsoft 365 definiert.
-ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
+ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074922"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "42651839"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
 
 In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überprüfungsgruppe in einem Fall in Advanced eDiscovery aufgeführt. Die Tabelle enthält die folgenden Informationen:
 
-- **Feldname und** **Anzeige Feldname:** der Name des Metadatenfelds und der Name des Felds, das angezeigt wird, wenn Sie die Datei Metadaten eines ausgewählten Dokuments in einem Überprüfungs Satzes anzeigen. Beachten Sie, dass einige Metadatenfelder nicht enthalten sind, wenn Sie die Datei Metadaten eines Dokuments anzeigen. Diese Felder sind mit einem Sternchen (*) markiert.
+- **Feldname und** **Anzeige Feldname:** der Name des Metadatenfelds und der Name des Felds, das angezeigt wird, wenn Sie die Datei Metadaten eines ausgewählten Dokuments in einem Überprüfungs Satzes anzeigen. Einige Metadatenfelder werden beim Anzeigen der Datei Metadaten eines Dokuments nicht berücksichtigt. Diese Felder sind mit einem Sternchen (*) markiert.
 
 - **Durchsuchbarer Feldname:** Der Name der Eigenschaft, nach der Sie suchen können, wenn Sie eine [Überprüfungs Sätze-Abfrage](review-set-search.md)durchführen. Eine leere Zelle bedeutet, dass Sie nicht nach dem Feld in einer Abfrage mit Überprüfungs Sätzen suchen können.
 
--  **Name des exportierten Felds:** Der Name des Metadatenfelds, das beim Exportieren von Dokumenten enthalten ist.  Eine leere Zelle bedeutet, dass das Feld nicht in den exportierten Metadaten enthalten ist.
+- **Name des exportierten Felds:** Der Name des Metadatenfelds, das beim Exportieren von Dokumenten enthalten ist.  Eine leere Zelle bedeutet, dass das Feld nicht in den exportierten Metadaten enthalten ist.
 
 - **Beschreibung:** Eine Beschreibung des Metadatenfelds.
 
@@ -77,7 +77,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |E-Mail-Sicherheit|EmailSecurity|Email_security|Sicherheitseinstellung der Nachricht: **0** -None; **1** – signiert; **2** – verschlüsselt; **3** -verschlüsselt und signiert.|
 |E-Mail-Empfindlichkeit|EmailSensitivity|email_sensitivity|Empfindlichkeitseinstellung der Nachricht: **0** -None; **1** persönlich; **2** – privat; **3** -CompanyConfidential.|
 |E-Mail-Gruppe|E-Mail-Set|Email_set|Gruppen-ID für alle Nachrichten in derselben e-Mail-Gruppe.|
-|EmailThread*||Email_thread|Position der Nachricht innerhalb des e-Mail-Satzes; besteht aus Knoten-IDs vom Stamm bis zur aktuellen Nachricht. , period getrennt.|
+|EmailThread*||Email_thread|Position der Nachricht innerhalb des e-Mail-Satzes; besteht aus Knoten-IDs vom Stamm bis zur aktuellen Nachricht und werden durch Punkte (.) getrennt.|
 |Extrahierter Inhaltstyp||Extracted_content_type|Extrahierter Inhaltstyp in Form von MIME-Typ; Beispiel: **Image/JPEG**|
 |ExtractedTextLength*||Extracted_text_length|Anzahl der Zeichen im extrahierten Text.|
 |Familien Relevanz-Score-Fall Ausgabe 1 *||Family_relevance_score_case_issue_1|Familien Relevanz-Ergebnis Fall Ausgabe 1 aus Relevanz.|
@@ -93,14 +93,14 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Weist eine Anlage auf|HasAttachment|Email_has_attachment|Gibt an, ob die Nachricht Anlagen enthält.|
 |Hat Anwalt|HasAttorney||**True** , wenn mindestens einer der Teilnehmer in der anwaltsliste gefunden wird; Andernfalls ist der Wert **false**.|
 |HasText||Has_text|Gibt an, ob das Element über Text verfügt oder nicht. mögliche Werte sind **true** und **false**.|
-|Unveränderliche ID|Unveränderlich|Immutable_ID|Unveränderliche ID wie in Office 365 gespeichert.|
+|Unveränderliche ID||Immutable_ID|Diese ID wird verwendet, um ein Dokument innerhalb eines Überprüfungs Satzes eindeutig zu identifizieren. Dieses Feld kann nicht in einer Überprüfung festgelegten Suche verwendet werden, und die ID kann nicht für den Zugriff auf ein Dokument an seinem systemeigenen Speicherort verwendet werden.|
 |Inklusiv-Typ|Inklusivtype|Inclusive_type|Integrativer Typ, berechnet für Analyse: **0** -nicht inklusive; **1** – inklusive; **2** – inklusive minus; **3** -inclusive-Kopie.|
 |In Antwort an ID||In_reply_to_ID|In Antwort an ID aus der Nachricht.|
 |Ist repräsentativ|Isrepresentative|Is_representative|Ein Dokument in jeder Gruppe exakter Duplikate wird als repräsentativ gekennzeichnet.|
 |Elementklasse|ItemClass|Item_class|Von Exchange Server bereitgestellte Item-Klasse; Beispiel: **IPM. Hinweis:**|
 |Datum der letzten Änderung|LastModifiedDate|Doc_date_modified|Datum der letzten Änderung aus Dokumentmetadaten.|
 |Laden-ID|Lade-Nr|Load_ID|Die ID des Lade Satzes, in dem das Element einem Überprüfungs Satzes hinzugefügt wurde.|
-|Ort|Ort|Ort|Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** -Exchange-Postfächer<br />**SharePoint** -SharePoint-Websites<br />**OneDrive** -OneDrive-Konten|
+|Standort|Standort|Standort|Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** -Exchange-Postfächer<br />**SharePoint** -SharePoint-Websites<br />**OneDrive** -OneDrive-Konten|
 |Speicherort Name|LocationName|Location_name|Zeichenfolge, die die Quelle des Elements angibt. Für Exchange ist dies die SMTP-Adresse des Postfachs. für SharePoint und OneDrive die URL für die Websitesammlung.|
 |Als repräsentativ gekennzeichnet|MarkAsRepresentative||Ein Dokument aus den einzelnen Sätzen exakter Duplikate wird als Repräsentanten markiert.|
 |Als Pre-Tagged-Case-Problem 1 * markiert||Marked_as_pre_tagged_Case_issue_1|Als vorab markiertes Fall Problem 1 von Relevanz gekennzeichnet.|
@@ -111,8 +111,8 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Systemeigene Erweiterung|NativeExtension|Native_extension|Systemeigene Erweiterung des Elements.|
 |Name der systemeigenen Datei|NativeFileName|Native_file_name|Name des systemeigenen Datei namens des Elements.|
 |NativeMD5||Native_MD5|MD5-Hash des Dateidatenstroms.|
-|ND/et Sort: Ausschließen von Anlagen|NdEtSortExclAttach|ND_ET_sort_excl_attach|Verkettung von e-Mail-Sätzen und ND-Sätzen zur effizienten Sortierung zur Überprüfungszeit; **D** wird als Präfix zu ND-Sätzen hinzugefügt, und **e wird e** -Mail-Sätzen hinzugefügt.|
-|ND/et Sort: einschließen von Anlagen|NdEtSortInclAttach|ND_ET_sort_incl_attach|Verkettung von e-Mail-Sätzen und ND-Sätzen zur effizienten Sortierung zur Überprüfungszeit; **D** wird als Präfix zu ND-Sätzen hinzugefügt, und **e wird e** -Mail-Sätzen hinzugefügt. Auf jede e-Mail innerhalb einer e-Mail-Gruppe folgen die entsprechenden Anlagen.|
+|ND/et Sort: Ausschließen von Anlagen|NdEtSortExclAttach|ND_ET_sort_excl_attach|Verkettung von e-Mail-Thread (et) und Near-Duplicate (ND) festgelegt. Dieses Feld wird zur effizienten Sortierung zur Überprüfungszeit verwendet. A **D** wird auf ND gesetzt, und **E** wird auf et-Sätzen fixiert.|
+|ND/et Sort: einschließen von Anlagen|NdEtSortInclAttach|ND_ET_sort_incl_attach|Verkettung eines e-Mail-Threads (et) und eines near-Duplicate (ND)-Satzes. Dieses Feld wird zur effizienten Sortierung zur Überprüfungszeit verwendet. A **D** wird auf ND gesetzt, und **E** wird auf et-Sätzen fixiert. Auf jedes e-Mail-Element in einem et-Satz folgen die entsprechenden Anlagen.|
 |Normales Relevanz-Ergebnis bei Ausgabe 1||Normalized_relevance_score_case_issue_1|Normalisierte Relevanz-Bewertung bei Ausgabe 1 von Relevanz.|
 |O365-Autoren||O365_authors|Autor aus SharePoint.|
 |O365 erstellt von||O365_created_by|Erstellt von aus SharePoint.|
