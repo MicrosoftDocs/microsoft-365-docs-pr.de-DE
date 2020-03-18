@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
-ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600592"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692662"
 ---
 # <a name="troubleshooting-information-barriers"></a>Problembehandlung bei Informationsbarrieren
 
@@ -27,7 +27,7 @@ ms.locfileid: "41600592"
 Für den Fall, dass Personen aufgrund von Informationsbarrieren unerwartete Probleme haben, können Sie einige Schritte zur Lösung dieser Probleme durchführen. Verwenden Sie diesen Artikel als Leitfaden.
 
 > [!IMPORTANT]
-> Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security #a0 Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problem: Benutzer werden unerwartet für die Kommunikation mit anderen Personen in Microsoft Teams blockiert. 
 
@@ -171,11 +171,46 @@ Stellen Sie sicher, dass in Ihrer Organisation keine [Exchange-adressbuchrichtli
 
 3. [Anzeigen des Status von Benutzerkonten, Segmenten, Richtlinien oder Richtlinienanwendung](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>Problem: Richtlinie zu Informationsbarrieren wird nicht auf alle benannten Benutzer angewendet
+
+Nachdem Sie Segmente definiert, Richtlinien für Informationsbarrieren definiert und versucht haben, diese Richtlinien anzuwenden, stellen Sie möglicherweise fest, dass die Richtlinie auf einige Empfänger angewendet wird, jedoch nicht auf andere.
+Wenn Sie das `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet ausführen, suchen Sie die Ausgabe nach Text wie diesem.
+
+> Identität`<application guid>`
+>
+> Empfänger insgesamt: 81527
+>
+> Fehlerhafte Empfänger: 2
+>
+> Fehlerkategorie: None
+>
+> Status: Complete
+
+### <a name="what-to-do"></a>Nächste Schritte
+
+1. Suchen im Überwachungsprotokoll für `<application guid>`. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. Überprüfen Sie die detaillierte Ausgabe des Überwachungsprotokolls auf die Werte der `"UserId"` Felder `"ErrorDetails"` und. Dadurch erhalten Sie den Grund für den Fehler. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ Beispiel:
+
+> "UserID": user1
+> 
+>"ErrorDetails": "Status: IBPolicyConflict. Fehler: das IB-Segment "Segment id1" und das IB-Segment "Segment id2" hat einen Konflikt und kann dem Empfänger nicht zugewiesen werden. 
+
+3. Normalerweise werden Sie feststellen, dass ein Benutzer in mehr als einem Segment enthalten ist. Sie können dieses Problem beheben, indem `-UserGroupFilter` Sie den `OrganizationSegments`Wert in aktualisieren.
+
+4. Wenden Sie Richtlinien zu Informationsbarrieren erneut an, indem Sie [diese Verfahren verwenden](information-barriers-policies.md#part-3-apply-information-barrier-policies).
+
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
 
 [Informationsbarrieren](information-barriers.md)
-
-
-

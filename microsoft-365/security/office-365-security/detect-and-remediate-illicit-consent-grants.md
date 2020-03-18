@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363051"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710524"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
 
@@ -29,7 +29,12 @@ ms.locfileid: "42363051"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Was ist der rechtswidrige Genehmigungs Zuschuss Angriff in Office 365?
 
-Bei einem Angriff mit unerlaubter Zustimmung erstellt der Angreifer eine Azure-registrierte Anwendung, die den Zugriff auf Daten wie Kontaktinformationen, e-Mail oder Dokumente anfordert. Der Angreifer täuscht dann einen Endbenutzer vor, dass er der Anwendung zustimmt, dass er über einen Phishing-Angriff auf seine Daten zugreift oder unerlaubten Code in eine vertrauenswürdige Website einfügt. Nachdem der illegalen Anwendung eine Zustimmung erteilt wurde, verfügt sie über einen Zugriff auf Kontoebene auf Daten, ohne dass ein organisationskonto erforderlich ist. Normale korrekturschritte wie das Zurücksetzen von Kennwörtern für Benutzerkonten, die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Konten erfordern, sind für diese Art von Angriff nicht wirksam, da es sich um Drittanbieteranwendungen handelt, die sich außerhalb der Organisation befinden. Diese Angriffe nutzen ein Interaktionsmodell, das davon ausgeht, dass die Entität, die die Informationen anfordert, Automatisierung und kein Mensch ist.
+Bei einem Angriff mit unerlaubter Zustimmung erstellt der Angreifer eine Azure-registrierte Anwendung, die den Zugriff auf Daten wie Kontaktinformationen, e-Mail oder Dokumente anfordert. Der Angreifer täuscht dann einen Endbenutzer vor, dass er der Anwendung zustimmt, dass er über einen Phishing-Angriff auf seine Daten zugreift oder unerlaubten Code in eine vertrauenswürdige Website einfügt. Nachdem der illegalen Anwendung eine Zustimmung erteilt wurde, verfügt sie über einen Zugriff auf Kontoebene auf Daten, ohne dass ein organisationskonto erforderlich ist. Normale korrekturschritte wie das Zurücksetzen von Kennwörtern für Benutzerkonten, die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Konten erfordern, sind für diese Art von Angriff nicht wirksam, da es sich um Drittanbieteranwendungen handelt, die sich außerhalb der Organisation befinden. 
+
+Diese Angriffe nutzen ein Interaktionsmodell, das davon ausgeht, dass die Entität, die die Informationen anfordert, Automatisierung und kein Mensch ist.
+
+> [!IMPORTANT]
+> Vermuten Sie, dass Sie Probleme mit der unerlaubten Zustimmung haben – Zuschüsse von einer APP, gerade jetzt? Microsoft Cloud App Security (MCAS) verfügt über Tools zum erkennen, untersuchen und korrigieren ihrer OAuth-apps. Dieser MCAS-Artikel enthält ein Lernprogramm, in dem beschrieben wird, wie Sie [riskante OAuth-apps untersuchen](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). Sie können auch [OAuth-App-Richtlinien](https://docs.microsoft.com/cloud-app-security/app-permission-policy) festlegen, um die von der APP angeforderten Berechtigungen zu untersuchen, welche Benutzer diese apps autorisieren, und diese Berechtigungsanforderungen weitgehend genehmigen oder verbieten.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Wie sieht ein Angriff der illegalen Zustimmungs Erteilung in Office 365 aus?
 
@@ -48,7 +53,7 @@ Sie müssen das Office 365 **Überwachungsprotokoll** durchsuchen, um nach Zeich
 5. Klicken Sie auf das Ergebnis, um die Details der Aktivität anzuzeigen. Klicken Sie auf **Weitere Informationen** , um Details zur Aktivität abzurufen. Überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
 
 > [!NOTE]
-> • Es kann bis zu 30 Minuten oder bis zu 24 Stunden dauern, bis ein Ereignis eintritt, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. <br/><br/> • Der Zeitraum, in dem ein Überwachungsdatensatz aufbewahrt und im Überwachungsprotokoll durchsucht werden kann, hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat. <br/><br/> Der Zeitraum, in dem ein Überwachungsdatensatz aufbewahrt und im Überwachungsprotokoll durchsucht werden kann, hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Wenn dieser Wert auf true festgelegt ist, weist dies darauf hin, dass ein Benutzer mit globalem Administrator Zugriff möglicherweise umfassenden Zugriff auf Daten erhalten hat. Wenn dies unerwartet ist, nehmen Sie die erforderlichen Schritte zum [bestätigen eines Angriffs](#how-to-confirm-an-attack)vor.
 
 ## <a name="how-to-confirm-an-attack"></a>Vorgehensweise zum Bestätigen eines Angriffs
@@ -98,7 +103,7 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimm
 - Lokaler Administrator auf dem Computer, von dem die Skripts ausgeführt werden.
 
 > [!IMPORTANT]
-> Es wird dringend empfohlen, dass Sie mehrstufige Authentifizierung für Ihr Administratorkonto benötigen. Dieses Skript unterstützt die MFA-Authentifizierung.
+> Es wird ***dringend empfohlen*** , dass Sie mehrstufige Authentifizierung für Ihr Administratorkonto benötigen. Dieses Skript unterstützt die MFA-Authentifizierung.
 
 1. Melden Sie sich mit lokalen Administratorrechten bei dem Computer an, auf dem das Skript ausgeführt wird.
 

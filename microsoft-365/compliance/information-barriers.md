@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Informationsbarrieren
+title: Erfahren Sie mehr über Informationsbarrieren
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
-ms.openlocfilehash: 95d3268830fe506000416e2281a49325fb95efec
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600662"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692652"
 ---
-# <a name="information-barriers"></a>Informationsbarrieren
+# <a name="learn-about-information-barriers"></a>Erfahren Sie mehr über Informationsbarrieren
 
 ## <a name="overview"></a>Übersicht
 
@@ -36,7 +36,7 @@ Informationsbarrieren werden jetzt, beginnend mit Microsoft Teams, ausgerollt. U
 Für alle diese Beispielszenarien (und mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation in Microsoft Teams zu verhindern oder zuzulassen. Mithilfe solcher Richtlinien kann verhindert werden, dass Personen Anrufe oder Chats mit Personen durchlaufen, die Sie nicht haben sollten, oder dass Personen nur mit bestimmten Gruppen in Microsoft Teams kommunizieren können. Wenn die Richtlinien für Informationsbarrieren wirksam sind und Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen Personen in Microsoft Teams zu kommunizieren, werden Überprüfungen durchgeführt, um die Kommunikation zu verhindern (oder zulassen) (gemäß den Richtlinien für Informationsbarrieren). Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Information Barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Derzeit gelten Informationsbarrieren nicht für e-Mail-Kommunikationen oder für die Dateifreigabe über SharePoint Online oder OneDrive. Darüber hinaus sind Informationsbarrieren unabhängig von [Compliance-Grenzen](tagging-and-assessment-in-advanced-ediscovery.md).<p>Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, müssen Sie sicherstellen, dass in Ihrer Organisation keine [Exchange-adressbuchrichtlinien](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) wirksam sind. (Informationsbarrieren basieren auf adressbuchrichtlinien.) 
+> Derzeit gelten Informationsbarrieren nicht für e-Mail-Kommunikationen oder für die Dateifreigabe über SharePoint Online oder OneDrive. Darüber hinaus sind Informationsbarrieren unabhängig von [Compliance-Grenzen](set-up-compliance-boundaries.md).<p>Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, müssen Sie sicherstellen, dass in Ihrer Organisation keine [Exchange-adressbuchrichtlinien](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) wirksam sind. (Informationsbarrieren basieren auf adressbuchrichtlinien.) 
 
 ## <a name="what-happens-with-information-barriers"></a>Was geschieht mit Informationsbarrieren?
 
@@ -73,7 +73,7 @@ Um [Richtlinien für Informationsbarrieren zu definieren oder zu bearbeiten](inf
 - Complianceadministrator
 - IB-Konformitätsverwaltung (Dies ist eine neue Rolle!)
 
-(Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security #a0 Compliance Center](../security/office-365-security/protect-against-threats.md).)
+(Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md).)
 
 Sie müssen mit PowerShell-Cmdlets vertraut sein, um Richtlinien für Informationsbarrieren zu definieren, zu validieren oder zu bearbeiten. Obwohl wir einige Beispiele für PowerShell-Cmdlets im [How-to-Artikel](information-barriers-policies.md)bereitstellen, müssen Sie zusätzliche Details wie Parameter für Ihre Organisation kennen.
 

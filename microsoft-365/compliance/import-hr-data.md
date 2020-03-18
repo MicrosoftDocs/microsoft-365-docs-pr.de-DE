@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073019"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710544"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von HR-Daten
 
@@ -35,7 +35,7 @@ Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten,
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Schritt 1: Erstellen einer APP in Azure Active Directory
 
-Der erste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu erstellen und zu registrieren. Die APP entspricht dem HR-Konnektor, den Sie in Schritt 3 erstellen.  Durch das Erstellen dieser APP kann Aad den HR-Konnektor bei der Ausführung authentifizieren und versucht, auf Ihre Organisation zuzugreifen. Diese APP wird auch verwendet, um das Skript zu authentifizieren, das Sie in Schritt 4 ausführen, um Ihre HR-Daten in die Microsoft-Cloud hochzuladen. Achten Sie beim Erstellen dieser Aad-App darauf, die folgenden Informationen zu speichern. Diese Werte werden in späteren Schritten in diesem Prozess verwendet.
+Der erste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu erstellen und zu registrieren. Die APP entspricht dem HR-Konnektor, den Sie in Schritt 3 erstellen. Durch das Erstellen dieser APP kann Aad den HR-Konnektor bei der Ausführung authentifizieren und versucht, auf Ihre Organisation zuzugreifen. Diese APP wird auch verwendet, um das Skript zu authentifizieren, das Sie in Schritt 4 ausführen, um Ihre HR-Daten in die Microsoft-Cloud hochzuladen. Achten Sie beim Erstellen dieser Aad-App darauf, die folgenden Informationen zu speichern. Diese Werte werden in späteren Schritten verwendet.
 
 - Aad-Anwendungs-ID (auch als *App-ID* oder *Client-ID*bezeichnet)
 
@@ -43,7 +43,7 @@ Der erste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) z
 
 - Mandanten-ID (auch als *Verzeichnis-ID*bezeichnet)
 
-Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Aad finden Sie unter [Erstellen einer Aad-Anwendung](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app) .
+Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Aad finden Sie unter [Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Schritt 2: Vorbereiten einer CSV-Datei mit ihren HR-Daten
 
@@ -159,7 +159,7 @@ Nachdem Sie den HR-Connector erstellt und das Skript zum Hochladen Ihrer HR-Date
 
    ![Protokolldatei des HR-Konnektors zeigt Nummern Zeilen aus der CSV-Datei an, die hochgeladen wurden](../media/HRConnectorLogFile.png)
 
-   Das Feld **RecordsSaved** gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise 4 Zeilen enthält, lautet der Wert der **RecordsSaved** -Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
+   Das Feld **RecordsSaved** gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise vier Zeilen enthält, lautet der Wert der **RecordsSaved** -Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
 
 Wenn Sie das Skript nicht in Schritt 4 ausgeführt haben, wird unter **Letzter Import**ein Link zum Herunterladen des Skripts angezeigt. Sie können das Skript herunterladen und dann die Schritte in Schritt 4 ausführen, um es auszuführen.
 
