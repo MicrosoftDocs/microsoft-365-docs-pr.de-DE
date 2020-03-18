@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center in Office 365 die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634163"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710514"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Suchen nach und Löschen von E-Mail-Nachrichten in der Office 365-Organisation
+# <a name="search-for-and-delete-email-messages"></a>Suchen nach und Löschen von E-Mail-Nachrichten
 
 **Dieser Artikel richtet sich an Administratoren. Versuchen Sie, in Ihrem Postfach Elemente zu finden, die Sie löschen möchten? Dann lesen Sie [Suchen einer Nachricht oder eines Elements mit der Sofortsuche](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|.
    
 Mit der Inhaltssuche in Office 365 können Sie alle Postfächer Ihrer Organisation nach E-Mails durchsuchen und diese löschen. Die Funktion ist hilfreich beim Suchen und Entfernen potenziell schädlicher oder riskanter E-Mails, beispielsweise:
   
 - Nachrichten, die gefährliche Anhänge oder Viren enthalten.
-    
+
 - Phishing-Nachrichten
-    
+
 - Nachrichten, die vertrauliche Daten enthalten.
-    
+
 > [!CAUTION]
-> Die Such- und Löschfunktion ist ein leistungsfähiges Feature. Sie ermöglicht es jedem mit den erforderlichen Berechtigungen, E-Mail-Nachrichten aus den Postfächern Ihrer Organisation zu löschen. 
+> Die Such- und Löschfunktion ist ein leistungsfähiges Feature. Sie ermöglicht es jedem mit den erforderlichen Berechtigungen, E-Mail-Nachrichten aus den Postfächern Ihrer Organisation zu löschen.
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
