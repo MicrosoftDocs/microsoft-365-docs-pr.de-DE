@@ -1,5 +1,5 @@
 ---
-title: Microsoft-Sicherheitsbewertung
+title: Microsoft Secure Score
 description: Beschreibt Microsoft-Sicherheitsbewertung im Microsoft 365 Security Center, erläutert die Berechnung von Details und was Sicherheitsadministratoren erwarten dürfen.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
 ms.prod: microsoft-365-enterprise
@@ -19,48 +19,48 @@ search.appverid:
 - MET150
 ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
 ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "42633993"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft Secure Score
+# <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
-Microsoft Secure Score ist ein Maß für die Sicherheitslage einer Organisation mit einer höheren Zahl, die mehr Verbesserungs Aktionen anzeigt. Wenn Sie die Sicherheits Bewertungsempfehlungen befolgen, können Sie Ihre Organisation vor Bedrohungen schützen. Von einem zentralisierten Dashboard im Microsoft 365 Security Center aus können Organisationen die Sicherheit Ihrer Microsoft 365-Identitäten, Daten, apps, Geräte und Infrastruktur überwachen und daran arbeiten.
+Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. Über ein zentrales Dashboard im Microsoft 365 Security Center können Organisationen die Sicherheit ihrer Microsoft 365-Identitäten, Daten, Apps, Geräte und Infrastruktur überwachen und daran arbeiten.
 
-Secure Score hilft Organisationen:
+Secure Score hilft Organisationen auf diese Arten:
 
-* Bericht über den aktuellen Status der Sicherheitsposition der Organisation.
-* Verbessern Sie Ihre Sicherheitsposition durch Bereitstellen von Auffindbarkeit, Sichtbarkeit, Anleitung und Steuerung.  
-* Vergleichen Sie mit Benchmarks, und legen Sie Key Performance Indicators (KPIs) fest.
+* Berichtet über den aktuellen Sicherheitsstatus der Organisation.
+* Verbessert den Sicherheitsstatus durch Auffindbarkeit, Transparenz, Anleitung und Kontrolle.  
+* Ermöglicht Vergleiche mit Benchmarks und erstellt KPIs (Key Performance Indicators).
 
-Organisationen erhalten Zugriff auf robuste Visualisierungen von Metriken und Trends, die Integration in andere Microsoft-Produkte, den Vergleich mit ähnlichen Organisationen und vieles mehr. Die Bewertung kann auch reflektieren, wenn von Drittanbieterlösungen Empfohlene Aktionen behandelt wurden.
+Organisationen erhalten Zugriff auf zuverlässige Visualisierungen von Metriken und Trends, die Integration in andere Microsoft-Produkte, einen Vergleich mit ähnlichen Organisationen und vieles mehr. Die Bewertung zeigt auch, wenn Lösungen von Drittanbietern empfohlene Maßnahmen behandelt haben.
 
-Darüber hinaus können Sie über die [Microsoft Graph-API](https://www.microsoft.com/security/partnerships/graph-security-api)auf Ihre Empfehlungen und Gäste zugreifen. Erfahren Sie mehr über den [Ressourcentyp Secure Score](https://go.microsoft.com/fwlink/?linkid=2092996).
+Darüber hinaus können Sie über die [Microsoft Graph-API](https://www.microsoft.com/security/partnerships/graph-security-api)auf Ihre Empfehlungen und Bewertungen zugreifen. Erfahren Sie mehr über den [Ressourcentyp Secure Score](https://go.microsoft.com/fwlink/?linkid=2092996).
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (beispielsweise zum Anzeigen von Berichten) oder zur Adressierung der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters. Einige Verbesserungs Aktionen geben nur dann Punkte, wenn Sie vollständig abgeschlossen sind, und einige geben partielle Punkte an, wenn Sie für einige Geräte oder Benutzer abgeschlossen werden.
+Sie erhalten Punkte für die Konfiguration empfohlener Sicherheitsfunktionen, die Ausführung sicherheitsrelevanter Aufgaben (z. B. das Anzeigen von Berichten) oder die Behandlung von Verbesserungsmaßnahmen mit einer Drittanbieteranwendung oder -software. Einige Verbesserungsmaßnahmen geben nur Punkte, wenn sie vollständig abgeschlossen sind, und einige geben schon Punkte, auch wenn sie nur für einige Geräte oder Benutzer abgeschlossen sind.
 
-Wir zeigen Ihnen den vollständigen Überblick über mögliche Verbesserungen, unabhängig von der Lizenz, sodass Sie bewährte Methoden für die Sicherheit verstehen und Ihre Punktzahl verbessern können. Ihre absolute Sicherheitsposition wird durch Secure Score dargestellt, was unabhängig von den Produktlizenzen, die Ihre Organisation besitzt, gleich bleibt. Beachten Sie, dass die Sicherheit mit der Benutzerfreundlichkeit ausgeglichen werden sollte, und nicht jede Empfehlung kann für Ihre Umgebung funktionieren.
+Wir zeigen Ihnen die vollständige Palette möglicher Verbesserungen – unabhängig von der Lizenz –, damit Sie bewährte Methoden für die Sicherheit verstehen und Ihre Punktzahl verbessern können. Secure Score stellt Ihren absoluten Sicherheitsstatus dar, der unverändert bleibt, unabhängig von den Lizenzen Ihrer Organisation. Bitte bedenken Sie: Sicherheit sollte mit Benutzerfreundlichkeit in Einklang gebracht werden, und nicht jede Empfehlung funktioniert für Ihre Umgebung.
 
-Ihre Punktzahl wird in Echtzeit aktualisiert, um die Informationen widerzuspiegeln, die auf den Seiten Visualisierungen und Verbesserungs Aktionen angezeigt werden. Secure Score synchronisiert auch täglich, um Systemdaten zu ihren erreichten Punkten für jede Aktion zu erhalten.
+Ihre Bewertung wird in Echtzeit aktualisiert, um die Informationen auf den Seiten Visualisierung und Verbesserungsmaßnahmen darzustellen. Secure Score wird auch täglich synchronisiert, um Systemdaten zu Ihren erreichten Punkten für jede Aktion zu erhalten.
 
-### <a name="how-improvement-actions-are-scored"></a>So werden Verbesserungs Aktionen bewertet
+### <a name="how-improvement-actions-are-scored"></a>Wie Verbesserungsmaßnahmen bewertet werden
 
-Die meisten werden auf binäre Weise bewertet – Wenn Sie die Verbesserungs Aktion implementieren, wie Sie eine neue Richtlinie erstellen oder eine bestimmte Einstellung aktivieren, erhalten Sie 100% der Punkte. Bei anderen Verbesserungs Aktionen werden Punkte als Prozentsatz der Gesamtkonfiguration angegeben. Wenn die Verbesserungs Aktion beispielsweise besagt, dass Sie 30 Punkte erhalten, indem Sie alle Ihre Benutzer mit mehrstufiger Authentifizierung schützen und nur 5 von 100 gesamt Benutzern geschützt sind, erhalten Sie einen Teil der Punktzahl von etwa 2 Punkten (5 Protected/100 Total * 30 MAX pts = 2 PTS Partial Score).
+Die meisten werden auf binäre Art bewertet – wenn Sie die Verbesserungsmaßnahme umsetzen, wie z. B. eine neue Richtlinie erstellen oder eine bestimmte Einstellung aktivieren –, erhalten Sie die volle Punktzahl. Bei anderen Verbesserungsmaßnahmen werden Punkte als Prozentsatz der Gesamtkonfiguration gegeben. Wenn Sie beispielsweise für die Verbesserungsmaßnahme 30 Punkte erhalten, wenn Sie alle Ihre Benutzer mit einer mehrstufigen Authentifizierung schützen, aber nur 5 von insgesamt 100 Benutzern geschützt sind, dann erhalten Sie eine Teilpunktzahl von ca. 2 Punkten (5 geschützt/100 insgesamt * 30 Maximalpunktzahl = 2 Punkte Teilpunktzahl).
 
-### <a name="products-included-in-secure-score"></a>Produkte im Lieferumfang von Secure Score
+### <a name="products-included-in-secure-score"></a>Produkte in Secure Score
 
-Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte wie Azure ATP und Microsoft Defender ATP werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können auch die Verbesserungs Aktionen als von einem Drittanbieter abgedeckt markieren.
+Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection und mehr), Azure AD und Cloud App Security. Empfehlungen zu anderen Sicherheitsprodukten wie Azure ATP und Microsoft Defender ATP werden demnächst verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
-Um über die Berechtigung zum Zugriff auf Microsoft Secure Score verfügen zu können, muss in Azure Active Directory eine der folgenden Rollen zugewiesen sein.
+Um die Zugriffsberechtigung auf die Microsoft-Sicherheitsbewertung zu erhalten, müssen Sie eine der folgenden Rollen in Azure Active Directory besitzen.
 
-### <a name="read-and-write-roles"></a>Lesen und Schreiben von Rollen
+### <a name="read-and-write-roles"></a>Rollen "Lesen und Schreiben"
 
-Mit Lese-und Schreibzugriff können Sie Änderungen vornehmen und direkt mit Secure Score interagieren. Sie können auch anderen Benutzern schreibgeschützten Zugriff zuweisen.
+Mit Lese- und Schreibzugriff können Sie Änderungen vornehmen und mit Secure Score direkt interagieren. Sie können anderen Benutzern auch schreibgeschützten Zugriff zuweisen.
 
 * Globaler Administrator
 * Sicherheitsadministrator
@@ -69,7 +69,7 @@ Mit Lese-und Schreibzugriff können Sie Änderungen vornehmen und direkt mit Sec
 
 ### <a name="read-only-roles"></a>Schreibgeschützte Rollen
 
-Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für eine Verbesserungs Aktion nicht bearbeiten, Bewertungs Zonen bearbeiten oder benutzerdefinierte Vergleiche bearbeiten.
+Bei schreibgeschütztem Zugriff können Sie den Status oder die Notizen für eine Verbesserungsmaßnahme nicht bearbeiten, sowie keine Ergebniszonen oder benutzerdefinierte Vergleiche bearbeiten.
 
 * Helpdesk-Administrator
 * Benutzeradministrator
@@ -80,143 +80,143 @@ Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für ein
 
 ### <a name="graph-api"></a>Graph-API
 
-Für den Zugriff auf die Graph-API benötigen Sie zusätzlich zu einer Rolle einen der folgenden Bereiche:
+Für den Zugriff auf die Graph-API benötigen Sie, zusätzlich zu einer Rolle, einen der folgenden Bereiche:
 
-* Bereich securityevents. Read. all (für schreibgeschützte Rolle)
-* Bereich securityevents. ReadWrite. all (für Lese-und Schreibrolle)
+* SecurityEvents.Read.All (für die schreibgeschützte Rolle)
+* SecurityEvents.ReadWrite.All (für die Rolle "Lesen und Schreiben")
 
-## <a name="gain-visibility-into-your-security-posture"></a>Verschaffen Sie sich eine Sichtbarkeit in ihrer Sicherheitsposition
+## <a name="gain-visibility-into-your-security-posture"></a>Erhalten Sie Einblicke in Ihren Sicherheitsstatus
 
-Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Verbesserungs Aktionen in Gruppen gegliedert:
+Damit Sie die benötigten Informationen schneller finden können, sind die Microsoft Verbesserungsmaßnahmen in Gruppen aufgeteilt:
 
-* Identität (Azure Ad Konten & Rollen)
-* Data (Microsoft Information Protection)
-* Gerät (keine Verbesserungs Aktionen für jetzt)
-* App (e-Mail-und Cloud-apps, einschließlich Office 365 und Microsoft Cloud-App-Sicherheit)
-* Infrastruktur (keine Verbesserungs Aktionen für jetzt)
+* Identität (Azure AD-Konten & -Rollen)
+* Daten (Microsoft Information Protection)
+* Geräte (bisher keine Verbesserungsmaßnahmen)
+* App (E-Mail-und Cloud-Apps, einschließlich Office 365 und Microsoft Cloud App Security)
+* Infrastruktur (bisher keine Verbesserungsmaßnahmen)
 
-Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können.
+Auf der Übersicht der Microsoft-Sicherheitsbewertung können Sie sehen, wie die Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite können Sie auch einen Überblick über die Gesamtpunktzahl, den historischen Trend Ihres Secure Score mit Benchmark-Vergleichen sowie priorisierte Verbesserungsmaßnahmen zur Verbesserung ihrer Punktzahl erhalten.
 
-![Secure Score Homepage](../../media/secure-score/homepage-original.png)
-*Abbildung 1: Übersicht über die Microsoft Secure Scores-Seite*
+![Secure Score-Startseite](../../media/secure-score/homepage-original.png)
+*Abbildung 1: Übersichtsseite Microsoft-Sicherheitsbewertung*
 
-## <a name="take-action-to-improve-your-score"></a>Durchführen von Aktionen zur Verbesserung der Punktzahl
+## <a name="take-action-to-improve-your-score"></a>Ergreifen Sie Maßnahmen, um Ihre Punktzahl zu verbessern
 
-Auf der Registerkarte Verbesserungs Aktionen werden die Sicherheitsempfehlungen für mögliche Angriffs Oberflächen sowie deren Status (abgeschlossen, nicht abgeschlossen, durch Drittanbieter aufgelöst und ignoriert) aufgeführt. Sie können alle Verbesserungs Aktionen durchsuchen, Filtern und gruppieren.
+Auf der Registerkarte "Verbesserungsmaßnahmen" werden die Sicherheitsempfehlungen, die mögliche Angriffsflächen behandeln, zusammen mit deren Status ("erledigt", "nicht abgeschlossen", "über Drittanbieter behoben" und "ignoriert") aufgelistet. Sie können alle Verbesserungsmaßnahmen durchsuchen, filtern und gruppieren.
 
-### <a name="ranking"></a>Ranking
+### <a name="ranking"></a>Rangfolge
 
-Die Rangfolge basiert auf der Anzahl der verbleibenden Punkte, die zum Erreichen der Implementierungs Schwierigkeit, der Benutzer Auswirkungen und der Komplexität übrig bleiben. Die am höchsten bewerteten Verbesserungs Aktionen weisen eine große Anzahl von Punkten auf, die mit geringer Schwierigkeit, Benutzer Auswirkungen und Komplexität verbleiben.
+Die Bewertung basiert auf der Anzahl der noch zu erreichenden Punkte, der Implementierungsschwierigkeit, der Auswirkungen auf die Benutzer und der Komplexität. Die am höchsten bewerteten Verbesserungen bieten viele Punkte mit geringem Schwierigkeitsgrad, Auswirkungen auf Benutzer, sowie Komplexität.
 
-### <a name="actions"></a>Aktionen
+### <a name="actions"></a>Maßnahmen
 
-Aktionen mit der Bezeichnung [nicht erzielt] werden von Microsoft Secure Score nicht nachverfolgt. Sie können dennoch Aktionen durchführen, aber Sie haben keinen Einfluss auf Ihre Punktzahl. Wenn eine Aktion in Zukunft von Microsoft Secure Score verfolgt wird und Sie Sie bereits abgeschlossen haben, wird die Änderung automatisch von ihrer sicheren Punktzahl reflektiert.
+Maßnahmen, die mit [Nicht bewertet] gekennzeichnet sind, werden nicht von der Microsoft-Sicherheitsbewertung nachverfolgt. Sie können zwar diese Maßnahmen ergreifen, aber deren Vervollständigung wirkt sich nicht auf die Bewertung aus. Wenn eine Aktion zukünftig von der Microsoft-Sicherheitsbewertung  nachverfolgt wird und Sie sie bereits abgeschlossen haben, wird Ihr Secure Score automatisch angepasst.
 
-Wenn Sie eine bestimmte Verbesserungs Aktion auswählen, wird ein verfliegt angezeigt. Um die Aktion abzuschließen, haben Sie einige Optionen:
+Wenn Sie eine bestimmte Verbesserungsmaßnahme auswählen, wird ein Fly-out angezeigt. Zum Ausführen der Maßnahme stehen Ihnen verschiedene Optionen zur Verfügung:
 
-1. Wählen Sie **Ansichtseinstellungen** aus, um den Konfigurationsbildschirm zu wechseln und die Änderung vorzunehmen. Sie erhalten dann die Punkte, die die Aktion Wert ist, am oberen Rand des ausfliegens sichtbar. Es kann bis zu 24 Stunden dauern, bis Punkte aktualisiert werden.
+1. Wählen Sie **Einstellungen anzeigen** aus, um in den Konfigurationsbildschirm zu wechseln und die Änderung vorzunehmen. Dann erhalten Sie die Punkte, die die Maßnahme wert ist und wie sie am oberen Rand des Fly-outs angezeigt werden. Es kann bis zu 24 Stunden dauern, bis Punkte aktualisiert werden.
 
-2. Wählen Sie **durch Drittanbieter auflösen** aus, da die Verbesserungs Aktion bereits von einer Drittanbieteranwendung oder-Software behoben wurde. Sie erhalten die Punkte, die die Aktion Wert ist, sodass Ihre sichere Punktzahl Ihre gesamte Sicherheitsposition besser widerspiegelt. Wenn ein Drittanbieter das Steuerelement nicht mehr abdeckt, können Sie die Verbesserungs Aktion als nicht abgeschlossen markieren. Beachten Sie, dass Microsoft keine Sichtbarkeit hat, ob die Bewertungsanforderungen erfüllt sind, wenn die Verbesserungs Aktion als durch Drittanbieter aufgelöst gekennzeichnet ist.
+2. Wählen Sie **Über Drittanbieter beheben** aus, weil die Verbesserungsmaßnahme bereits von einer Drittanbieteranwendung oder -Software vorgenommen wurde. Sie erhalten die Punkte, die die Maßnahme wert ist, damit Ihr Secure Score Ihren Sicherheitsstatus im Ganzen besser widerspiegelt. Wenn ein Drittanbieter das diese Maßnahme nicht mehr abdeckt, können Sie die Verbesserungsmaßnahme als "nicht erledigt" markieren. Bedenken Sie, dass Microsoft nicht einsehen kann, ob die Bewertungsanforderungen erfüllt wurden, wenn die Verbesserungsmaßnahme als "Über Drittanbieter behoben“ gekennzeichnet ist.
 
-3. Wählen Sie **ignorieren** aus, da Sie sich entschieden haben, das Risiko zu akzeptieren und die Verbesserungs Aktion nicht zu verabschieden. Nachdem Sie eine Verbesserungs Aktion ignoriert haben, wird die Gesamtzahl der sicheren Punkte reduziert, die Sie erzielen können. Sie können diese Aktion im Verlauf anzeigen oder jederzeit wieder rückgängig machen.
+3. Wählen Sie **Ignorieren** aus, weil Sie sich entschieden haben, das Risiko zu übernehmen und die Verbesserungsmaßnahme nicht auszuführen. Wenn Sie eine Verbesserungsmaßnahme ignorieren, wird die Gesamtanzahl der Punkte, die Sie erzielen können, reduziert. Sie können diese Aktion jederzeit im Verlauf anzeigen oder rückgängig machen.
 
-4. Wählen Sie **überprüfen** aus, da für die Verbesserungs Aktion regelmäßig ein Teil Ihrer Umgebung überprüft werden muss, um Punkte zu erhalten und zu erhalten. Beispielsweise sollten Post Fach Weiterleitungsregeln wöchentlich überprüft werden, um sicherzustellen, dass die Daten nicht von Ihrem Netzwerk extrahiert werden. Sie müssen keine Änderungen vornehmen, es muss jedoch eine Aktion ausgeführt werden. Wenn Sie die Regeln regelmäßig überprüfen, werden Sie die Punkte erhalten. Wenn dies nicht der Fall ist, wird das Ergebnis reduziert.
+4. Wählen Sie **Überprüfen** aus, weil die Verbesserungsmaßnahme es erforderlich macht, einen Bereich Ihrer Umgebung regelmäßig zu überprüfen, um Punkte zu bekommen und zu behalten. Beispielsweise sollten Weiterleitungsregeln für Postfächer wöchentlich überprüft werden, um sicherzustellen, dass die Daten aus Ihrem Netzwerk extrahiert werden. Sie müssen keine Änderungen vornehmen, aber eine Aktion muss ausgeführt werden. Wenn Sie die Regeln regelmäßig überprüfen, erhalten Sie die Punkte. Wenn nicht, verschlechtert sich die Bewertung.
 
-![Beispiel für sichere Ergebnis Verbesserungs Aktion](../../media/secure-score/secure-score1x450.png) ![Beispiel zur Verbesserung der Sicherheit Score-Überarbeitungs Aktion](../../media/secure-score/secure-score2x450.png)
+![Beispiel für Verbesserungsmaßnahmen Secure Score](../../media/secure-score/secure-score1x450.png) ![Beispiel für Verbesserungsmaßnahmen Secure Score – Überprüfung](../../media/secure-score/secure-score2x450.png)
 
-*Abbildungen 2 & 3: Flyouts zur Verbesserungs Aktion*
+*Abbildungen 2 & 3: Verbesserungsmaßnahmen Fly-outs*
 
-## <a name="monitor-improvements-over-time"></a>Überwachen von Verbesserungen
+## <a name="monitor-improvements-over-time"></a>Überwachen von Verbesserungen im Laufe der Zeit
 
-Auf der Registerkarte **Verlauf** können Sie ein Diagramm der Bewertung Ihrer Organisation über einen Zeitraum anzeigen. unter dem Graphen befindet sich eine Liste aller Aktionen, die im ausgewählten Zeitbereich und deren Attributen durchgeführt werden, beispielsweise Ergebnis Punkte und Kategorie. Sie können einen Datumsbereich anpassen und nach Kategorie filtern.
+Auf der Registerkarte **Verlauf** können Sie einen Graph der Bewertung Ihrer Organisation anzeigen. Unterhalb des Diagramms finden Sie eine Liste aller Maßnahmen, die im ausgewählten Zeitraum ausgeführt wurden, und deren Attributen, wie etwa die Kategorie und die resultierenden Punkte. Sie können einen Datumsbereich anpassen und nach Kategorie filtern.
 
 ## <a name="risk-awareness"></a>Risikobewusstsein
 
-Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposition basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist keine absolute Maßeinheit dafür, wie wahrscheinlich ein System oder Daten verletzt werden. Sie stellt vielmehr das Ausmaß dar, in dem Sie Sicherheitssteuerelemente in Ihrer Microsoft-Umgebung übernommen haben, wodurch das Risiko eines Sicherheits übertretungs ausgeglichen werden kann. Kein Onlinedienst ist vollständig gegen Sicherheitsverletzungen geschützt, und die sichere Bewertung sollte nicht als Garantie gegen Sicherheitsverletzungen in irgendeiner Weise interpretiert werden.
+Die Microsoft-Sicherheitsbewertung ist eine numerische Zusammenfassung Ihres Sicherheitsstatus, die auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsrelevanten Maßstäben basiert. Hierbei handelt es sich nicht um eine absolute Messung, wie wahrscheinlich eine Sicherheitsverletzung Ihres System oder Ihrer Daten ist. Vielmehr stellt Sie das Ausmaß dar, in dem Sie Sicherheitskontrollen in Ihrer Microsoft-Umgebung eingeführt haben, die das Risiko einer Sicherheitsverletzung ausgleichen können. Kein Onlinedienst ist vollkommen immun gegen Sicherheitsverstöße, und Secure Score sollte in keiner Weise als Garantie gegen Sicherheitsverstöße interpretiert werden.
 
-## <a name="whats-new"></a>Was ist neu?
+## <a name="whats-new"></a>Was sind die Neuerungen?
 
-Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen, haben wir einige Änderungen vorgenommen.
+Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen.
 
-Informationen zu geplanten Änderungen finden Sie unter [What es Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>Verbesserungs Aktionen "nicht bewertet" entfernt
+### <a name="removed-not-scored-improvement-actions"></a>"Nicht bewertet"-Verbesserungsmaßnahmen entfernt
 
-Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Microsoft Secure Score ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Einfluss auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar.  
+Einer der Grundsätze von Secure Score ist, dass die Bewertung standardisiert und einfach nachvollziehbar sein sollte. Verbesserungsmaßnahmen, die nicht messbar sind oder nicht durchgeführt werden können, führen zu Verwirrung. Die Microsoft-Sicherheitsbewertung ist nur sinnvoll, wenn jede Empfehlung einen eindeutigen Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungsmaßnahmen sind nicht messbar.  
 
-Aus diesen Gründen wurden alle nicht erzielten Verbesserungs Aktionen entfernt. Ihrerseits ist keine Aktion erforderlich.
+Aus diesen Gründen wurden alle nicht bewerteten Verbesserungsmaßnahmen entfernt. Es ist keine Aktion Ihrerseits erforderlich.
 
-### <a name="removed-device-improvement-actions"></a>Entfernte Geräte Verbesserungs Aktionen
+### <a name="removed-device-improvement-actions"></a>Verbesserungsmaßnahmen für Geräte entfernte
 
-Nach einer Evaluierung der Microsoft Secure Score-Gerätekategorie für Verbesserungs Aktionen wurde festgestellt, dass diese Aktionen derzeit den Richtlinienstatus und nicht den Konfigurationsstatus von Geräten bewerten. Da die Konfiguration direkt mit der Sicherheitsposition verbunden ist, wurden die vorhandenen Geräteaktionen bestimmt, um die organisatorische Haltung nicht vollständig darzustellen.  Wir werden die aktuellen Aktionen in der Gerätekategorie entfernen, wenn wir eine Reihe von Empfehlungen zur Verfügung stellen, mit denen Diagnosedaten direkt verwendet werden, um die Position der Gerätesicherheit in vollem Umfang darzustellen.
+Nach einer Auswertung der Kategorie Microsoft-Sicherheitsbewertung  – "Verbessungsmaßnahmen für Geräte" wurde beschlossen, dass diese Maßnahmen zurzeit den Richtlinienstatus und nicht den Konfigurationsstatus von Geräten bewerten. Da die Konfiguration direkt an den Sicherheitsstatus gebunden ist, wurde bei den vorhandenen Gerätemaßnahmen festgestellt, dass sie den Organisationsstatus nicht vollständig wiedergeben.  Wir werden die aktuellen Maßnahmen in der Kategorie "Gerät" entfernen, während wir an einer Reihe von Empfehlungen arbeiten, die die diagnostischen Daten direkt verwenden, um den Sicherheitsstatus der Geräte in vollem Umfang darzustellen.
 
-Die folgenden Verbesserungs Aktionen wurden entfernt:
+Die folgenden Verbesserungsmaßnahmen wurden entfernt:
 
-- Aktivieren der Verwaltung von mobilen Geräten in Microsoft InTune
-- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für Android
-- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für Android for Work
-- Erstellen einer Microsoft InTune-App-Schutzrichtlinie für Android
-- Erstellen einer Microsoft InTune-App-Schutzrichtlinie für IOS
-- Geräte markieren, für die keine Microsoft InTune-Konformitätsrichtlinie als nicht kompatibel zugewiesen ist
-- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für IOS
-- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für macOS
-- Erstellen einer Microsoft InTune-Konformitätsrichtlinie für Windows
-- Erstellen eines Microsoft InTune-Konfigurationsprofils für Android
-- Erstellen eines Microsoft InTune-Konfigurationsprofils für Android for Work
-- Erstellen eines Microsoft InTune-Konfigurationsprofils für macOS
-- Erstellen eines Microsoft InTune-Konfigurationsprofils für IOS
-- Erstellen eines Microsoft InTune-Konfigurationsprofils für Windows
-- Aktivieren der verbesserten Jailbreak-Erkennung in Microsoft InTune
-- Erfordern, dass alle Geräte gepatcht werden, Virenschutz und Firewalls aktiviert sind
-- Aktivieren der Integration von Windows Defender ATP in Microsoft InTune
-- Erstellen einer Microsoft InTune-Windows-Informationsschutz Richtlinie
-- Erfordern von erweiterten Sicherheitskonfigurationen für alle Geräte
-- Bericht überprüfen blockierter Geräte wöchentlich
+- Microsoft Intune Mobile Device Management (Verwaltung mobiler Geräte mit Intune) aktivieren
+- Erstellen einer Microsoft Intune Compliance-Richtlinie für Android
+- Erstellen einer Microsoft Intune Compliance-Richtlinie für Android for Work
+- Erstellen einer Microsoft Intune App-Schutzrichtlinie für Android
+- Erstellen einer Microsoft Intune App-Schutzrichtlinie für iOS
+- Markieren von Geräten ohne Microsoft Intune Compliance-Richtlinie als "nicht kompatibel"
+- Erstellen einer Microsoft Intune Compliance-Richtlinie für iOS
+- Erstellen einer Microsoft Intune Compliance-Richtlinie für macOS
+- Erstellen einer Microsoft Intune Compliance-Richtlinie für Windows
+- Erstellen eines Microsoft Intune-Konfigurationsprofils für Android
+- Erstellen eines Microsoft Intune-Konfigurationsprofils für Android for Work
+- Erstellen eines Microsoft Intune-Konfigurationsprofils für macOS
+- Erstellen eines Microsoft Intune-Konfigurationsprofils für iOS
+- Erstellen eines Microsoft Intune-Konfigurationsprofils für Windows
+- Erweiterte Jailbreak-Erkennung in Microsoft Intune aktivieren
+- Erfordern, dass alle Geräte gepatcht sind und dass Antivirensoftware und Firewalls aktiviert sind
+- Aktivieren der Windows Defender ATP-Integration in Microsoft Intune
+- Erstellen einer Microsoft Intune Windows Information Protection-Richtlinie
+- Erfordern, dass alle Geräte Erweiterte Sicherheitskonfigurationen haben
+- Wöchentliches Überprüfung von blockierten Geräten
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen
+### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Verbesserungsmaßnahmen, die die Erwartungen für zuverlässige Messungen nicht erfüllen, wurden entfernt
 
-Um sicherzustellen, dass die Microsoft Secure Score sinnvoll ist und dass jede Verbesserungs Aktion messbar und zuverlässig ist, haben wir die folgenden Verbesserungs Aktionen entfernt:
+Um sicherzustellen, dass die Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen:
 
 - Aktivieren der Aufzeichnung von Überwachungsdaten
-- Ermitteln riskanter und nicht kompatibler Shadow-IT-Anwendungen
-- Überprüfen von Berechtigungen & blockieren riskanter OAuth-Anwendungen, die mit Ihrer Umgebung verbunden sind
+- Entdeckung riskanter und nicht konformer Shadow IT-Anwendungen
+- Überprüfen von Berechtigungen und Blockieren riskanter OAuth-Anwendungen
 - Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
 
-### <a name="mfa-improvement-action-updates"></a>Aktualisierung der MFA-Verbesserungs Aktionen
+### <a name="mfa-improvement-action-updates"></a>Aktualisierungen von MFA-Verbesserungsmaßnahmen
 
-Um den Anforderungen an Unternehmen Rechnung zu tragen, beim Anwenden von Richtlinien, die mit Ihrem Unternehmen zusammenarbeiten, die höchste Sicherheit zu gewährleisten, hat Microsoft Secure Score drei Verbesserungs Aktionen im Bereich der mehrstufigen Authentifizierung entfernt und zwei hinzugefügt.
+Um den Bedürfnissen von Unternehmen zu entsprechen, Sicherheit zu gewährleisten und gleichzeitig Richtlinien anzuwenden, die mit den Geschäftsabläufen harmonieren, hat die Microsoft-Sicherheitsbewertung drei Verbesserungsmaßnahmen zur mehrstufigen Authentifizierung entfernt und zwei hinzugefügt.
 
-Verbesserungs Aktionen wurden entfernt:
+Entfernte Verbesserungsmaßnahmen:
 
-- Registrieren aller Benutzer für mehrstufige Authentifizierung
-- MFA für alle Benutzer erforderlich
-- MFA für Azure AD privilegierten Rollen erforderlich
+- Registrieren von allen Benutzern für die Multi-Faktor-Authentifizierung
+- Anfordern der MFA für alle Benutzer
+- MFA für privilegierte Azure AD-Rollen anfordern
 
-Verbesserungs Aktionen wurden hinzugefügt:
+Hinzugefügte Verbesserungsmaßnahmen:
 
 - Sicherstellen, dass alle Benutzer die mehrstufige Authentifizierung für sicheren Zugriff durchführen können
 - MFA für Administratorrollen erzwingen
 
- Diese neuen Verbesserungs Aktionen erfordern das Registrieren Ihrer Benutzer oder Administratoren für mehrstufige Authentifizierung (MFA) in Ihrem Verzeichnis und das Festlegen der richtigen Richtlinien, die Ihren organisatorischen Anforderungen entsprechen. Das Hauptziel besteht in der Flexibilität bei gleichzeitiger Sicherstellung, dass alle Benutzer und Administratoren sich mit mehreren Faktoren oder mit risikobasierten Identitäts Überprüfungs Ansagen authentifizieren können. Dies kann die Form haben, dass mehrere Richtlinien mit bereichsbezogenen Entscheidungen angewendet werden oder Sicherheitsstandards (am 16. März) festgelegt werden, mit denen Microsoft entscheiden kann, wann die Benutzer für MFA herausgefordert werden sollen.
+ Bei diesen neuen Verbesserungsmaßnahmen müssen die Benutzer oder Administratoren für die Multi-Faktor-Authentifizierung (MFA) in Ihrem Verzeichnis registriert werden, um die korrekten Richtlinien für Ihre organisatorischen Anforderungen zu etablieren. Das Hauptziel ist, flexibel zu sein und gleichzeitig sicherzustellen, dass alle Ihre Benutzer und Administratoren mit mehreren Faktoren oder mit risikobasierten Aufforderungen zur Identitätsüberprüfung authentifiziert werden können. Dies kann in der Art und Weise erfolgen, dass mehrere Richtlinien angewendet werden, die bereichsbezogene Entscheidungen treffen, oder dass Sicherheitsstandardwerte (ab 16. März) festgelegt werden, anhand derer Microsoft entscheiden kann, wann Benutzer für MFA herausgefordert werden.
 
-### <a name="removed-review-improvement-actions"></a>Verbesserungs Aktionen "überprüfen" entfernt
+### <a name="removed-review-improvement-actions"></a>"Überprüfen"-Verbesserungsmaßnahmen entfernt
 
-Eines der Prinzipien von Secure Score ist, dass die Bewertung standardisiert und leicht zu beziehen ist. Durch Verbesserungs Aktionen, die nicht messbar oder handlungsbereit sind, wurde eine Verwechslung verursacht. Ein sicheres Ergebnis von Microsoft ist nur dann sinnvoll, wenn jede Empfehlung einen klaren Effekt auf die Bewertung haben kann. Überarbeitungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.  
+Einer der Grundsätze von Secure Score ist, dass die Bewertung standardisiert und einfach nachvollziehbar sein sollte. Verbesserungsmaßnahmen, die nicht messbar sind oder nicht durchgeführt werden können, führen zu Verwirrung. Eine Microsoft-Sicherheitsbewertung ist nur sinnvoll, wenn jede Empfehlung einen eindeutigen Effekt auf die Bewertung haben kann. An "Überprüfen"-Verbesserungsmaßnahmen wird nicht der gleiche Standard wie an andere Verbesserungsmaßnahmen gelegt.  
 
-Aus diesen Gründen wurden alle Verbesserungs Aktionen, die eine Überarbeitungs Kadenz erforderten, vorübergehend entfernt. Ihrerseits ist keine Aktion erforderlich.
+Aus diesen Gründen wurden alle Verbesserungsmaßnahmen, bei denen ein Überprüfungsrhythmus erforderlich war, vorübergehend entfernt. Es ist keine Aktion Ihrerseits erforderlich.
 
 ### <a name="preview-features"></a>Vorschaufeatures
 
-Die folgenden Features werden in der [Vorschauversion](microsoft-secure-score-preview.md)enthalten sein:
+In der [Vorschauversion](microsoft-secure-score-preview.md) werden die folgenden Features enthalten sein:
 
-* Alle neuen Metriken und Trends-Ansichten für ciso-und Lead-Level-Diskussionen
-* Neue Möglichkeiten zum Nachverfolgen und benchmarken Ihrer Partitur
-* Bessere Nachverfolgung und Überwachung für Ergebnis Regressionen
-* Filtern, markieren, suchen und Gruppieren von Verbesserungs Aktionen
-* Verwalten Ihrer zukünftigen Ziele mithilfe von Bewertungs Projektionen und geplanten Aktionen
+* Völlig neue Metriken und Trend-Ansichten für CISO und Lead Level-Diskussionen
+* Neue Möglichkeiten zum Nachverfolgen und Benchmarken Ihrer Bewertung
+* Bessere Nachverfolgung und Überwachung von Score-Regressionen
+* Filtern, Taggen, Suchen und Gruppieren von Verbesserungsmaßnahmen
+* Verwalten Sie Ihre zukünftigen Ziele mithilfe von Score-Projektionen und geplanten Maßnahmen
 * Vereinfachung des Punktesystems
-* Und vieles mehr!
+* Und mehr!
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Sicherheits-, Datenschutz-& Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.
+Wenn Sie Probleme haben, informieren Sie uns mit einem Beitrag in der Community für [Sicherheit, Datenschutz und Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy). Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
