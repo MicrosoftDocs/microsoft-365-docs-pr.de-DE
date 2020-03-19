@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Erfahren Sie, wie Sie Administrator werden und Office 365 Abonnement für Ihre Organisation erhalten. '
-ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361550"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857415"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Administrator werden und Office 365 für Ihre Organisation kaufen
 
@@ -87,7 +87,7 @@ Nun, da Sie der Administrator sind, können Sie die folgenden Aktionen ausführe
 |Lizenzen hinzufügen oder entfernen  <br/> |Sie können [Weitere Lizenzen für Benutzer hinzufügen](../../commerce/licenses/buy-licenses.md) , die noch nicht Office 365 verwenden, oder [Lizenzen von Benutzern entfernen](../manage/remove-licenses-from-users.md) , die nicht mit dem Office 365 Abonnement Ihrer Organisation verwendet werden sollen.  <br/> |
 |Andere Benutzer kontaktieren, die sich bereits registriert haben  <br/> |Wenden Sie sich an die anderen Benutzer, und teilen Sie ihnen mit, dass Sie ihr Office 365-Abonnement verwalten. Informieren Sie sie zudem darüber, dass ein Upgrade durchgeführt wurde. [Gehen Sie folgendermaßen vor](../add-users/add-users.md), um eine Liste **aktiver Benutzer** und ihrer E-Mail-Adressen anzuzeigen.  <br/> |
 |Einstieg in die Verwendung von Office 365  <br/> |Besuchen Sie das [Office 365-Schulungscenter](https://support.office.com/learn/office365-for-business), und erfahren Sie, wie Sie sich anmelden, E-Mails überprüfen, Dokumente freigeben und mehr. Sie und Ihre Benutzer können diese Website für die ersten Schritte mit Office 365 nutzen.  <br/> |
-|Verwalten Ihres Office 365-Abonnements  <br/> |Besuchen Sie [Office 365 admin-Hilfecenter](../admin-home.md) , und erfahren Sie mehr über häufige administrative Aufgaben wie das Hinzufügen und Entfernen von Benutzern, das Zurücksetzen von Kennwörtern und das Einrichten von mobilen Geräten.  <br/> |
+|Verwalten Ihres Office 365-Abonnements  <br/> |Besuchen Sie [Office 365 admin-Hilfecenter](../admin-home.yml) , und erfahren Sie mehr über häufige administrative Aufgaben wie das Hinzufügen und Entfernen von Benutzern, das Zurücksetzen von Kennwörtern und das Einrichten von mobilen Geräten.  <br/> |
 
 ## <a name="still-need-help"></a>Benötigen Sie weitere Hilfe?
 

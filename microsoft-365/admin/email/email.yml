@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: E-Mail-Dokumentation
+summary: Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
+metadata:
+  title: E-Mail-Dokumentation
+  description: Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 11/03/2020
+  ms.openlocfilehash: e4ec9d99fdba8e577feb07628d8d617afbf8c9f7
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857585"
+landingContent:
+- title: Einrichten von E-Mail
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Einrichten von Outlook für e-Mail
+      url: https://support.office.microsoft.com/article/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f
+    - text: E-Mail importieren und umleiten
+      url: https://support.office.microsoft.com/article/6a3771d4-4c1d-4a25-92a6-0b8e476335de
+  - linkListType: tutorial
+    links:
+    - text: Outlook-Schulung
+      url: https://support.office.microsoft.com/article/8a5b816d-9052-4190-a5eb-494512343cca
+  - linkListType: how-to-guide
+    links:
+    - text: Migrieren Sie E-Mails und Kontakte
+      url: https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e
+    - text: Erstellen von freigegebenen Postfächern
+      url: https://docs.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox
+    - text: Hinzufügen zusätzlicher E-Mail-Adressen für einen Benutzer
+      url: https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user
+    - text: Benutzern das Synchronisieren von E-Mail-Kontakten mit ihrem iPhone oder iPad ermöglichen
+      url: https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync
+    - text: Einrichten eines Multifunktionsgeräts zum Senden von E-Mails
+      url: https://support.office.com/article/69f58e99-c550-4274-ad18-c805d654b4c4
+    - text: Ein weiteres Konto zu Outlook hinzufügen
+      url: https://support.office.com/article/c5224df4-5885-4e79-91ba-523aa743f0ba
+- title: Schützen Sie Ihre E-Mails
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe
+      url: https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group
+    - text: Spamabwehrschutz für E-Mails
+      url: https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection
+    - text: Antispam- und Antischadsoftwareschutz
+      url: https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection
+    - text: Verhindern, dass E-Mails als Spam gekennzeichnet werden
+      url: https://docs.microsoft.com/office365/securitycompliance/prevent-email-from-being-marked-as-spam
+- title: Beheben von Problemen mit der E-Mail-Verbindung und -Übermittlung
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Beheben von Outlook-Verbindungsproblemen in Office 365 und Exchange Online
+      url: https://diagnostics.outlook.com/#/
+    - text: Wiederherstellen gelöschter Elemente im Postfach eines Benutzers
+      url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
+    - text: Suchen und Beheben von Problemen mit der E-Mail-Zustellung
+      url: https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6
+    - text: Suchen und Beheben von Problemen (einschließlich Problemen mit E-Mail), nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues
+    - text: Nachschlagen von NDR-Fehlercodes in Unzustellbarkeitsberichten zu E-Mails
+      url: https://support.office.com/article/51daa6b9-2e35-49c4-a0c9-df85bf8533c3
+    - text: Behandeln von Problemen bei Outlook
+      url: https://go.microsoft.com/fwlink/?LinkID=618675
+- title: Ressourcen für Unternehmen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 'Nachrichtenfluss: Bewährte Methoden Exchange Online und Office 365'
+      url: https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices
+    - text: Exchange Online
+      url: https://docs.microsoft.com/exchange/exchange-online
+    - text: Exchange Online
+      url: https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview
+  - linkListType: deploy
+    links:
+    - text: Inhalte zur Exchange-Hybridbereitstellung
+      url: https://docs.microsoft.com/exchange/exchange-hybrid
+  - linkListType: how-to-guide
+    links:
+    - text: Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365
+      url: https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration

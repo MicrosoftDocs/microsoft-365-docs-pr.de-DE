@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Erfahren Sie, wie Sie einen Domänennamen in Office 365 kaufen.
 ms.custom: okr_smb
-ms.openlocfilehash: 8b2b23e2e699723d54ecb7ca2807296641178664
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252975"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857439"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>Erwerben eines Domänennamens in Office 365
 
- *Zum Hinzufügen, ändern oder Entfernen von Domänen **müssen** Sie ein **globaler Administrator** eines [Geschäfts-oder Unternehmensplans](https://products.office.com/business/office)sein. Diese Änderungen wirken sich auf den gesamten Mandanten aus, *benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
+ *Um Domänen hinzuzufügen, zu ändern oder zu entfernen, **müssen** Sie ein **globaler Administrator** eines [Geschäfts- oder Unternehmensplans](https://products.office.com/business/office) sein. Diese Änderungen betreffen den gesamten Mandanten. *Benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -121,4 +121,4 @@ Nachdem Sie Ihre Domäne bei einer Domänenregistrierungsstelle registriert habe
 
 [Häufig gestellte Fragen zu Domänen](../setup/domains-faq.md)
 
-[Abrufen von Hilfe zu Office 365 Domänen](get-help-with-domains.md)
+[Hilfe zu Office 365-Domänen erhalten](get-help-with-domains.yml)
