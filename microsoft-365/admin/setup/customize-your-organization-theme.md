@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Hier erfahren Sie, wie Sie das Standarddesign von Office 365 ändern und an Ihr Firmen Logo oder Ihre Farbe anpassen können. '
-ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826327"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Anpassen des Office 365-Designs für Ihre Organisation
 
@@ -64,9 +64,9 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
     
 4. Wählen Sie **Änderungen speichern** aus.
     
-Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Office 365, einschließlich Seiten in Outlook, SharePoint und SharePoint Mobile Apps für IOS und Android. In der folgenden Abbildung werden die Designelemente hervorgehoben, die Sie für SharePoint Mobile Apps anpassen können.
+Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Office 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). In der folgenden Grafik finden Sie ein Beispiel für die Anpassung von Designänderungen im Admin Center.
 
-![Standard Office 365 Design und benutzerdefiniertes Office 365 Design für SharePoint Mobile Apps]()
+![m365-admin-Mandanten-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
 Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben jederzeit entfernen. Kehren Sie einfach zur Design Seite zurück, und wählen Sie **benutzerdefinierte Designs entfernen**aus.
   

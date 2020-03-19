@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
+ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086930"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42836880"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Verwalten von Tickets über ServiceNow
 
@@ -141,6 +141,10 @@ Wenn Ihr Unternehmen einmaliges Anmelden aktiviert hat und Sie eine Fehlermeldun
 
 1. Erstellen Sie einen Benutzer mit Sicherheitsadministrator rechten in Azure Active Directory. Der Benutzer benötigt denselben Namen und dieselbe e-Mail-Adresse wie der Integrationsbenutzer, den Sie aus der Installationsprüfliste erstellt haben. Sie können die Sicherheitsadministrator Rolle nach Abschluss der Anmeldung und der Verbindung entfernen.
 2. Melden Sie sich beim Microsoft 365 Security Center als dieser Benutzer an, und befolgen Sie die Installationsschritte.
+
+### <a name="ip-filtering"></a>IP-Filterung
+
+Wenn Sie die IP-Filterung aktiviert haben, müssen Sie möglicherweise explizit IP-Adressen zulassen. Informationen zum Zulassen von IP-Bereichen in ServiceNow finden Sie unter [IP Address Access Control](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) . Eine Liste der zulässigen IP-Adressen finden Sie unter [Azure IP Ranges and Service Tags-Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519) .
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>Die Installation ist abgeschlossen, es werden jedoch keine Tickets angezeigt und können nicht freigegeben werden
 

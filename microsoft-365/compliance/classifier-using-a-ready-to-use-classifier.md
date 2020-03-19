@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 enthält eine Reihe integrierter Klassifizierungen, die Sie zum Identifizieren und Beschriften von Inhalten in Ihrer Organisation verwenden können. In diesem Thema wird gezeigt, wie Sie die Verwendung dieser Klassifizierungen vorbereiten.
-ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634463"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826246"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>Verwenden einer integrierten Klassifizierung (Vorschau)
 
@@ -27,7 +27,16 @@ Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispielda
 
 - **Anstößige Sprache**: erkennt Textelemente, die Profanität, Beleidigungen, verspottungen und verschleierte Ausdrücke enthalten (bei denen es sich um Ausdrücke handelt, die die gleiche Bedeutung wie ein beleidigender Ausdruck haben).
 - **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
-- **Sourcecode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in weit verbreiteten Programmiersprachen für Computer geschrieben wurden.
+- **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
+
+|Name der Sprache|||||
+|---------|---------|---------|---------|---------|
+|ActionScript|C        |C#       |C++     |Clojure  |
+|CoffeeScript|CSS     |OK       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|Perl     |PHP      |Python   |R        |Ruby     |
+|Scala    |Shell    |SWIFT    |Tex      |Vim-Skript|
+
 - **Belästigung**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit anstößigem Verhalten, das auf eine oder mehrere Personen basierend auf den folgenden Merkmalen ausgerichtet ist: Rasse, Ethnizität, Religion, nationale Herkunft, Geschlecht, sexuelle Orientierung, Alter, Behinderung.
 - **Profanity**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen.
 - **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden;

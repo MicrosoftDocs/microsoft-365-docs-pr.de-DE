@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Erhalten Sie einen Überblick darüber, wie Ihre Organisation Microsoft 365-Dienste zur Kommunikation und Zusammenarbeit einnimmt.
-ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826381"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
 ---
-Microsoft 365 Usage Analytics steht auch für Microsoft 365 US Government Community zur Verfügung.
+Microsoft 365-Verwendungsanalyse ist noch nicht für Microsoft 365 US Government Community verfügbar.
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Übersicht über die Microsoft 365-Nutzungsanalyse
 

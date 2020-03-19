@@ -3,10 +3,8 @@ title: So erhalten Sie Hilfe im Microsoft 365 Admin Center
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +18,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über die Möglichkeiten, wie Sie mithilfe des Microsoft 365 Admin Center Hilfe erhalten können.
-ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5fa5a664b41f6e6e35a0443b5e909a5d930a146d
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352976"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857119"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -33,68 +31,6 @@ ms.locfileid: "42352976"
 
 Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microsoft.com) Ihr "Go-to-Place" zum Verwalten und Nutzen Ihres Microsoft 365-Abonnements. Manchmal finden Sie möglicherweise nicht die richtige Aufgabe, benötigen mehr Kontext, bevor Sie einen Aufgabenfluss beginnen, oder Sie können sich einfach nicht sicher sein, welchen Umfang und welche Auswirkungen ihre Aktionen als Administrator haben. Um diese Situationen zu decken, bieten wir auf diese Weise moderne Hilfe und intelligente Unterstützung im gesamten Microsoft 365 Admin Center:
  
-
-
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#integrated-help">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Integrierte Hilfe</h3>
-                            <p>Hilfe im Admin Center</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Intelligente Unterstützung</h3>
-                            <p>Selbsthilfe powered by AI</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Leitfäden und Artikel</h3>
-                            <p>Umfassende Inhalte im Internet</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-
 ## <a name="integrated-help"></a>Integrierte Hilfe
 Die Hilfe ist im gesamten Admin Center integriert, daher ist Sie genau dort, wo Sie Sie benötigen. Oben auf vielen Seiten finden Sie einen Inline Hilfetext, der eine Informationsübersicht über die Aufgabe bietet, sowie Links zu Artikeln, in denen Sie schnell die offizielle Dokumentation für ein vertieftes lernen finden können.
 

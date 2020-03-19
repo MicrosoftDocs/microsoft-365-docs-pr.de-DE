@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Abrechnungskonten
+title: Abrechnungskonten verwalten
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,14 +15,14 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
-ms.openlocfilehash: 1470549bf77a6f58fb2c023ef7b85bd41ac10ee9
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280246"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826267"
 ---
-# <a name="manage-billing-accounts"></a>Verwalten von Abrechnungskonten
+# <a name="manage-billing-accounts"></a>Abrechnungskonten verwalten
 
 Wenn Sie sich für das Testen oder kaufen von Microsoft-Produkten registrieren, wird ein Abrechnungskonto erstellt. Sie verwenden Ihr Abrechnungskonto, um Ihre Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Käufe zu verwalten. Sie können Zugriff auf mehrere Abrechnungskonten haben. Beispielsweise haben Sie sich für Microsoft 365 direkt angemeldet oder Sie haben Zugriff auf die Enterprise-Vereinbarung des Unternehmens, die Microsoft Product & Services-Vereinbarung oder den Microsoft-Kundenvertrag. Für jedes dieser Szenarien wäre ein separates Abrechnungskonto vorhanden.
 
@@ -42,14 +42,14 @@ In der folgenden Tabelle sind die wichtigen Begriffe aufgeführt, die auf der De
 
 | Feldname | Beschreibung |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verkaufte Adresse | Die für die Zahlung verantwortliche und auf der Rechnung angegebene juristische Person. Die hier angegebene Adresse wird verwendet, um ihren Steuersatz zu ermitteln, es sei denn, Sie möchten während des Kaufs eine Alternative Versandadresse angeben. Weitere Informationen finden Sie unter [Steuerinformationen](#tax-information). |
+| Verkaufte Adresse | Die für die Zahlung verantwortliche und auf der Rechnung angegebene juristische Person. Die hier angegebene Adresse wird verwendet, um ihren Steuersatz zu ermitteln, es sei denn, Sie möchten während des Kaufs eine Alternative Versandadresse angeben. Weitere Informationen finden Sie unter [Steuerinformationen](billing-and-payments/tax-information.md). |
 | Segment | Ein schreibgeschütztes Feld, das das Geschäftssegment Ihrer Organisation (kommerziell, Bildung, Verwaltung oder gemeinnützig) identifiziert. |
 | Kontostatus | Ein schreibgeschütztes Feld, das den Status Ihres kommerziellen Kontos bei Microsoft angibt. |
-| Steuer-ID | Wenn Sie sich außerhalb der USA befinden, müssen Sie eine Mehrwertsteuer oder eine lokale Entsprechung angeben. Weitere Informationen finden Sie unter [Steuerinformationen](#tax-information). |
+| Steuer-ID | Wenn Sie sich außerhalb der USA befinden, müssen Sie eine Mehrwertsteuer oder eine lokale Entsprechung angeben. Weitere Informationen finden Sie unter [Steuerinformationen](billing-and-payments/tax-information.md). |
 | Vertrag | Wenn ein Abrechnungskonto entweder über eine Direktbestellung oder eine Volumenlizenzvereinbarung erstellt wird, akzeptiert ein Unterzeichner für die Organisation eine Vereinbarung, die die Bedingungen & Bedingungen des Kontos umreißt. Wenn zutreffend, wird in dieser Ansicht eine Vereinbarungs Historie aufgeführt. Wenn Sie aktualisierte Bedingungen akzeptieren müssen, wird ein Link zur **Genehmigungs Vereinbarung** angezeigt. |
 | Abrechnungsprofile | Ein Abrechnungsprofil definiert die Eigenschaften Ihrer Rechnung, zum Beispiel wer die Rechnung erhält, wie die Rechnung zugestellt wird, Zahlungsbedingungen und eine Bestellnummer. Um die Abrechnung in Ihrer Organisation zu verteilen, können Sie mehrere Abrechnungsprofile erstellen und das entsprechende Abrechnungsprofil zum Zeitpunkt des Erwerbs ermitteln. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Verwalten von Abrechnungs Profilen](billing-and-payments/manage-billing-profiles.md). |
 
-> [!NOTE] 
+> [!NOTE]
 > Wenn Sie den **verkauften** Namen oder die Adresse ändern möchten, jedoch keinen **Bearbeitungs** Link sehen, müssen Sie sich an den [Support wenden](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) , um ihn zu ändern. Für Anforderungen für eine Änderung **an einem verkauften** Namen ist eine Bonitätsprüfung erforderlich. Wenn Sie sich an den Support wenden, müssen Sie eines der folgenden Dokumente vorbereiten:
 >
 > - Externes Ankündigungs Dokument, das eine Änderung des Firmennamens oder der Unternehmensstruktur angibt
@@ -73,88 +73,8 @@ Sie können anderen Benutzern den Zugriff auf das Abrechnungskonto im Microsoft 
 > [!Note]
 > Abrechnungskonto Rollen gelten nur für Abrechnungskonten und gelten nicht für andere Microsoft 365 Admin Center-Szenarien.
 
-## <a name="tax-information"></a>Steuerinformationen
+## <a name="related-articles"></a>Verwandte Artikel
 
-Steuern für Microsoft 365 Admin Center-Käufe, die Sie über Microsoft durchführen, werden durch Ihre Geschäftsadresse oder, wenn es sich um eine andere handelt, durch Ihre Versandadresse bestimmt. Wenn Sie sich in den Vereinigten Staaten befinden, müssen Sie eine Federal Employer Identification Number (fein) angeben.
+[Steuerinformationen](billing-and-payments/tax-information.md)
 
-Unternehmen in diesen Ländern können Ihre Umsatzsteuernummer angeben:
-
-:::row:::
-    :::column:::
-- Österreich
-- Belgien
-- Bulgarien
-- Kroatien
-- Zypern
-- Tschechien
-- Dänemark
-- Estland
-- Finnland
-- Frankreich
-- Deutschland
-- Griechenland
-- Ungarn
-- Irland
-- Italien
-- Lettland
-    :::column-end:::
-    :::column:::
-- Liechtenstein
-- Litauen
-- Luxemburg
-- Malta
-- Monaco
-- Niederlande
-- Norwegen
-- Polen
-- Portugal
-- Rumänien
-- Slowakei
-- Südafrika
-- Spanien
-- Schweden
-- Schweiz
-- Vereinigtes Königreich
-    :::column-end:::
-:::row-end:::
-
-Diese Länder können Ihre MwSt-Nummer oder eine lokale Entsprechung auf Ihren Abrechnungskontoinformationen angeben.
-
-|Markt| Steuerkennzeichen |
-|------|----------------|
-| Australien | ABN (optional) |
-| Brasilien | CNPJ (erforderlich) |
-| Indien | GSTIN (optional), Pan-ID (erforderlich) |
-| Insel Man | USt-ID (optional) |
-| Neuseeland | GST-Registrierungsnummer (optional) |
-| Monaco | USt-ID (optional) |
-| Taiwan | USt-ID (optional) |
-
-> [!Note]
-> Wenn Sie sich an den Support wenden müssen, müssen Sie Ihre fein, ihre Umsatzsteuernummer oder Ihr lokales Äquivalent an den Support-Mitarbeiter übergeben.
-
-## <a name="tax-exempt-status"></a>Steuerbefreiungsstatus
-
-Wenn Sie sich für den steuerfreien Status in Ihrem Markt qualifizieren, [Starten Sie eine Serviceanfrage](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) , um den Steuerbefreiungsstatus für Ihre Organisation festzulegen.
-
-Halten Sie die folgende Dokumentation für Sie parat:
-
-|Land oder Gebietsschema | Dokumentation |
-|------------------|----------------|
-| Vereinigte Staaten | Mehrwertsteuer-Befreiungs Zertifikat |
-| Kanada | Befreiungs Zertifikat (oder gleichwertiges Genehmigungsschreiben) |
-| Irland | 13B/56A Tax Exemption Certificate|
-| Internationale Organisationen, die von der Mehrwertsteuer freigestellt werden können | Zertifizierung/Brief Bestätigung von lokalen Steuerbehörden |
-| Puerto Rico | Certificado de compras Exentas |
-
-## <a name="calculate-taxes"></a>Steuern berechnen
-
-Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
-
-Beispiel:
-
->*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
-
-- oder -
-
->($1,29 X 0,095) X 100 = $12,25
+[Verwalten von Abrechnungsprofilen](billing-and-payments/manage-billing-profiles.md)

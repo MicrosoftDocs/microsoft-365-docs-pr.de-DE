@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 761378f848c358f2234576ac87507b91c55f4ccf
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634833"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857368"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -49,6 +49,8 @@ Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 3
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
+   
+   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
 
 - [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), bei dem es sich um die erste Version von Advanced eDiscovery handelt, auf die über einen eDiscovery-Fall im Office 365 Security & Compliance Center zugegriffen wird.
 

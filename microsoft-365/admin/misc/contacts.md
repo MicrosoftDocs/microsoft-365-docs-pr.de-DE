@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Hier erfahren Sie, wie Sie Kontakte im Admin Center erstellen und ihre globale Adressliste verwalten.
-ms.openlocfilehash: e1bb5c71a15c8e278b087339e469dcba50003795
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244114"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857391"
 ---
 # <a name="quick-help-contacts"></a>Schnelle Hilfe: Kontakte
 
@@ -61,4 +61,4 @@ Verwenden Sie Windows PowerShell und eine CSV-Datei (durch Trennzeichen getrennt
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>Was ist, wenn meine Frage trotzdem nicht beantwortet wurde?
 
-Besuchen Sie den Rest unserer [Hilfe für Administratoren](../admin-home.md), oder teilen Sie uns unten Ihr Feedback mit.
+Besuchen Sie den Rest unserer [Hilfe für Administratoren](../admin-home.yml), oder teilen Sie uns unten Ihr Feedback mit.

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599372"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857345"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 
@@ -48,9 +48,9 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |Spam-und nicht-Spam-Übermittlungen über Outlook im Internet-Junk-e-Mail-Berichterstellung|Sie können Spam-und nicht-Spamnachrichten über Outlook im Internet über die Junk-e-Mail-Berichterstellung an Microsoft übermitteln. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> Dieses Feature steht derzeit für Outlook im webkunden zur Verfügung, deren Exchange Server 2013 SP1-oder höher-Postfächer von EoP gefiltert werden. Exchange Online Outlook im Internet-Kunden wird diese Funktion auch in naher Zukunft haben.|
 |Spamquarantänebenachrichtigungen für Endbenutzer|Endbenutzer können ihre eigenen Nachrichten in Spamquarantäne freigeben und diese über Spambenachrichtigungen für Endbenutzer als Nicht-Junk-E-Mails melden. Diese Benachrichtigungs-e-Mails müssen von einem Administrator konfiguriert und aktiviert werden, wie unter [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) oder [configure End-User Spam Notifications in EoP](configure-end-user-spam-notifications-in-eop.md)beschrieben.|
 |Rhythmus von Spamquarantänebenachrichtigungen für Endbenutzer|Der Standardwert beträgt 3 Tage und kann auf einen Wert zwischen 1 und 15 Tage festgelegt werden.|
-|Konfiguration der Sprache von Spambenachrichtigungen für Endbenutzer durch Administratoren|Diese Funktion richtet sich an Endbenutzer und Administratoren. Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Administrator](find-and-release-quarantined-messages-as-an-administrator.md) oder [Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer](find-and-release-quarantined-messages-as-a-user.md).|
-|Zugriff auf und Verwaltung von Nachrichten in Quarantäne über eine Webseite|Diese Funktion richtet sich an Endbenutzer und Administratoren. Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Administrator](find-and-release-quarantined-messages-as-an-administrator.md) oder [Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer](find-and-release-quarantined-messages-as-a-user.md).|
-|Durchsuchen der Quarantäne|Sowohl Administratoren als auch Endbenutzer haben die Möglichkeit, das Quarantäneverzeichnis auf bestimmte Spamnachrichten zu durchsuchen. Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Administrator](find-and-release-quarantined-messages-as-an-administrator.md) oder [Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer](find-and-release-quarantined-messages-as-a-user.md).|
+|Konfiguration der Sprache von Spambenachrichtigungen für Endbenutzer durch Administratoren|Diese Funktion richtet sich an Endbenutzer und Administratoren. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md) oder [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md).|
+|Zugriff auf und Verwaltung von Nachrichten in Quarantäne über eine Webseite|Diese Funktion richtet sich an Endbenutzer und Administratoren. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md) oder [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md).|
+|Durchsuchen der Quarantäne|Sowohl Administratoren als auch Endbenutzer haben die Möglichkeit, das Quarantäneverzeichnis auf bestimmte Spamnachrichten zu durchsuchen. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md) oder [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md).|
 |Anzeigen der Kopfzeilen von Nachrichten in Spamquarantäne über das Exchange Admin Center|Nachdem Sie die Nachrichtenkopfzeile im Quarantäneverzeichnis angezeigt haben, können Sie den Text der Nachrichtenkopfzeile auch kopieren und in den [Message Header Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) einfügen, der Informationen darüber liefert, was mit der Nachricht geschehen ist.|
 |**Schutz vor Schadsoftware**||
 |Schadsoftwareschutz durch Einsatz mehrerer Module|Durch mehrere Antischadsoftwaremodule sind unsere Kunden jederzeit automatisch geschützt.|

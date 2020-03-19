@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air
-ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826403"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
@@ -30,7 +30,7 @@ Dieser Artikel bietet eine Übersicht über Air. Wenn Sie mit der Verwendung von
 
 ## <a name="at-a-high-level"></a>Auf einer hohen Ebene
 
-Wenn Warnungen ausgelöst werden, treten Sicherheits-Textbuch in Kraft. Je nach Situation kann ein [automatischer Ermittlungsprozess](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) beginnen. Während und nach einer automatischen Untersuchung werden [Korrekturaktionen](air-remediation-actions.md) empfohlen. In Office 365 Advanced Threat Protection werden keine Aktionen automatisch durchgeführt. Ihr Security Operations-Team überprüft, und [genehmigt oder lehnt dann jede Korrekturaktion](air-remediation-actions.md#approve-or-reject-pending-actions)ab, und wenn dies geschieht, wird jede Untersuchung abgeschlossen. Alle diese Aktivitäten werden nachverfolgt und im Office 365 Security & Compliance Center angezeigt (siehe [Details einer Untersuchung anzeigen](air-view-investigation-results.md#view-details-of-an-investigation)).
+Wenn Warnungen ausgelöst werden, treten Sicherheits-Textbuch in Kraft. Je nach Situation kann ein [automatischer Ermittlungsprozess](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) beginnen. Während und nach einer automatischen Untersuchung werden [Korrekturaktionen](air-remediation-actions.md) empfohlen. In Office 365 Advanced Threat Protection werden keine Aktionen automatisch durchgeführt. Ihr Security Operations-Team überprüft, und [genehmigt oder lehnt dann jede Korrekturaktion](air-review-approve-pending-completed-actions.md)ab, und wenn dies geschieht, wird jede Untersuchung abgeschlossen. Alle diese Aktivitäten werden nachverfolgt und im Office 365 Security & Compliance Center angezeigt (siehe [Details einer Untersuchung anzeigen](air-view-investigation-results.md#view-details-of-an-investigation)).
 
 Die folgenden Abschnitte enthalten weitere Informationen zu Warnungen, Sicherheits handschreibungen und Beispiele für Luft in Aktion.
 

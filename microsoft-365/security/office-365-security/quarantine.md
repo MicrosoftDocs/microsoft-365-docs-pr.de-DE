@@ -16,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die gehostete Quarantäne für Exchange Online und Exchange Online Schutz.
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598652"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856881"
 ---
 # <a name="quarantine"></a>Quarantine
 
@@ -29,7 +29,7 @@ Die folgenden Themen bieten Informationen zur gehosteten Quarantäne für Admini
 
 - [Häufig gestellte Fragen (FAQ) zur Quarantäne](quarantine-faq.md) - Allgemeine Fragen und Antworten zur Quarantäne für Administratoren und Endbenutzer.
 
-- [Suchen und Freigeben von isolierten Nachrichten als Administrator](find-and-release-quarantined-messages-as-an-administrator.md): Beschreibt, wie Administratoren alle Nachrichten, die sich in der Quarantäne befinden, in der Exchange-Verwaltungskonsole (EAC) finden und freigeben können, und diese optional als falsch positive (keine Junk-) Nachricht an Microsoft melden.
+- [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md): Beschreibt, wie Administratoren alle Nachrichten, die sich in der Quarantäne befinden, in der Exchange-Verwaltungskonsole (EAC) finden und freigeben können, und Sie optional als falsch positive Nachricht (keine Junk-e-Mail) an Microsoft melden.
 
 - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md): Beschreibt, wie Endbenutzer ihre eigenen Nachrichten in Spamquarantäne in der Spamquarantäne-Benutzeroberfläche finden und freigeben können, und Sie als nicht-Junk an Microsoft melden.
 

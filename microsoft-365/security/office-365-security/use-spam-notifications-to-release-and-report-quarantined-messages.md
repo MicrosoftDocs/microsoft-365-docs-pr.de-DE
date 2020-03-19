@@ -1,11 +1,11 @@
 ---
-title: Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und Melden von isolierten Nachrichten in Office 365
+title: Spambenachrichtigungen für Endbenutzer in Office 36
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: Wenn Ihr Administrator die Benachrichtigungen für Benutzer aktiviert, erhalten Sie eine Benachrichtigungsmeldung, in der Nachrichten aufgelistet werden, die an Ihr Postfach gesendet wurden, die als Spam-, Massen-oder Phishing-Nachrichten identifiziert wurden. Nach der Benachrichtigung können Sie Nachrichten freigeben oder melden.
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: Wenn ein Administrator Spambenachrichtigungen für Endbenutzer in Anti-Spam-Richtlinien aktiviert, erhalten die Nachrichtenempfänger regelmäßig Benachrichtigungen über Ihre isolierten Nachrichten.
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722036"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857145"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und Melden von isolierten Nachrichten in Office 365
+# <a name="end-user-spam-notifications-in-office-365"></a>Spambenachrichtigungen für Endbenutzer in Office 365
 
-Wenn Ihr Administrator Spambenachrichtigungen für Benutzer aktiviert, erhalten Sie eine Benachrichtigungsmeldung, in der die an Ihr Postfach adressierten Nachrichten aufgelistet werden, die als Spam, Massen oder Phishing identifiziert und stattdessen isoliert wurden.
+In Quarantäne werden potenziell gefährliche oder unerwünschte Nachrichten in Office 365 Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern gespeichert. Weitere Informationen finden Sie unter [Quarantine in Office 365](quarantine-email-messages.md).
 
-> [!TIP]
-> Wenn Sie Administrator sind und dieses Feature aktivieren möchten, können Sie die Option auswählen, wenn Sie [eine standardmäßige Anti-Spam-Richtlinie ändern](configure-your-spam-filter-policies.md).
+Standardmäßig sind Spambenachrichtigungen für Endbenutzer in Anti-Spam-Richtlinien deaktiviert. Wenn ein Administrator [Spambenachrichtigungen für Endbenutzer aktiviert](configure-your-spam-filter-policies.md), erhalten die Nachrichtenempfänger regelmäßig Benachrichtigungen über Ihre Nachrichten, die als Spam, Massen-e-Mails oder (ab April 2020) als Phishing isoliert wurden.
 
-Die empfangene Nachricht enthält die Anzahl der Spam isolierten Nachrichten, die Sie haben, und das Datum und die Uhrzeit (in Universal Coordinated Time oder UTC) der letzten Nachricht in der Liste. Die Liste enthält für jede Nachricht Folgendes:
+> [!NOTE]
+> Im Oktober 2019 wurde die Möglichkeit, isolierte Nachrichten direkt von Endbenutzer-Spambenachrichtigungen freizugeben, entfernt. Stattdessen können Benutzer nun zum Office 365 Security & Compliance Center wechseln, um Ihre isolierten Nachrichten freizugeben (entweder direkt oder durch Klicken auf **überprüfen** in der Benachrichtigung). Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md). <br/><br/> Nachrichten, die als vertrauenswürdiges Phishing, Schadsoftware oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) unter Quarantäne gestellt wurden, stehen nur Administratoren zur Verfügung. Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Administrator in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
 
-- **Absender** Der Absender Name und die e-Mail-Adresse der isolierten Nachricht.
+Eine spambenachrichtigung für Endbenutzer enthält für jede isolierte Nachricht die folgenden Informationen:
 
-- **Betreff** Der Betreffzeilentext der in Quarantäne verschobenen Nachricht.
+- **Sender**: der Absender Name und die e-Mail-Adresse der isolierten Nachricht.
 
-- **Datum** Datum und Uhrzeit (UTC-Angabe) der Verschiebung der Nachricht in Quarantäne.
+- **Betreff**: der Text der Betreffzeile der isolierten Nachricht.
 
-Dies sind die Aktionen, die Sie mit einer isolierten Nachricht durchführen können:
+- **Date**: das Datum und die Uhrzeit (in UTC), in denen die Nachricht isoliert wurde.
 
-- **Absender blockieren** , wenn Office 365 den Absender zu Ihrer Liste blockierter Absender hinzufügen möchten.
+- **Absender blockieren**: Klicken Sie auf diesen Link, um den Absender der Liste blockierter Absender hinzuzufügen.
 
-- **Release** wenn es sich bei der Nachricht nicht um Spam handelt und Sie möchten, dass Office 365 die Nachricht an Ihr Postfach sendet.
+- **Review**: Klicken Sie auf diesen Link, um die Quarantäne im Security & Compliance Center zu wechseln, in der Sie Ihre isolierten Nachrichten freigeben, löschen oder melden können.
 
-- **Überprüfen** Sie, um zum Quarantäne Portal innerhalb des Security and Compliance Centers zu navigieren, wenn Sie andere Aktionen wie Preview oder Release durchführen möchten.
-
-Beachten Sie Folgendes:
-
-- Schadsoftware und Phishing-Nachrichten mit hoher Zuverlässigkeit und Nachrichten, die isoliert werden, da Sie einer Nachrichtenfluss Regel entsprechen, werden in Spambenachrichtigungen für Benutzer nicht berücksichtigt. 
-
-- Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden.
+![Beispiel-spambenachrichtigung für Endbenutzer](../../media/end-user-spam-notification.png)

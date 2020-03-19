@@ -17,31 +17,30 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: Sie können eine Quarantäne für eingehende e-Mail-Nachrichten in Office 365 einrichten, in der eingehende e-Mail-Nachrichten, die als Spam gefiltert wurden, Massen, Phishing-e-Mails und Schadsoftware, für eine spätere Überprüfung aufbewahrt werden können.
-ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+description: Quarantäne in Office 365 hält potenziell gefährliche oder unerwünschte Nachrichten. Administratoren und Endbenutzer können auf die Quarantäne zugreifen.
+ms.openlocfilehash: 9c82ba9821c42fe6c3dd78dbcecf63327d176e93
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957430"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857309"
 ---
-# <a name="quarantine-email-messages-in-office-365"></a>In Quarantäne stellen von E-Mail-Nachrichten in Office 365
+# <a name="quarantine-in-office-365"></a>Quarantäne in Office 365
 
-Sie können die Quarantäne für eingehende e-Mail-Nachrichten in Office 365 einrichten, in dem Nachrichten, die als Spam, Massen-e-Mails, Phishing-e-Mails, e-Mails mit Schadsoftware und mit einer bestimmten e-Mail-Fluss Regel (auch bekannt als Trasport-Regel) gefiltert wurden, für eine spätere Aufbewahrung aufbewahrt werden können. Bewertung.
-  
-Standardmäßig werden Nachrichten, die nach Phishing-, Malware-und Nachrichtenfluss Regeln gefiltert wurden, an die Quarantäne gesendet, während Nachrichten, die als Spam gefiltert wurden, und Massen-e-Mails an den Junk-e-Mail-Ordner des Empfängers gesendet werden. Als Administrator können Sie Spamfilter Richtlinien (auch als Inhaltsfilter Richtlinien bezeichnet) einrichten, um Spam-und Massen-e-Mail-Nachrichten stattdessen an die Quarantäne zu senden. Weitere Informationen finden Sie unter [Konfigurieren Ihrer Richtlinien für Spamfilter](configure-your-spam-filter-policies.md).
-  
-Sowohl Benutzer als auch Administratoren können mit unter Quarantäne gestellten Nachrichten arbeiten. Benutzer können nur mit ihren eigenen gefilterten Nachrichten in Quarantäne arbeiten. Administratoren können Nachrichten in Quarantäne für alle Benutzer suchen und verwalten.
+Wenn Sie ein Office 365 Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, ist die Quarantäne verfügbar, um potenziell gefährliche oder unerwünschte Nachrichten zu speichern.
 
-> [!NOTE]
-> Schadsoftware, Phishing-Nachrichten mit hoher Zuverlässigkeit und Nachrichten, die in Nachrichtenfluss Regelaktionen unter Quarantäne gestellt werden, sind nur in der Administrator Quarantäne verfügbar. Benutzer können auf Ihre eigenen Phishing-, Spam-und Massen-e-Mail-Nachrichten zugreifen. 
-  
-Erfahren Sie mehr über das Arbeiten mit isolierten Nachrichten:
-  
-- [Verwalten von Nachrichten in Quarantäne als Administrator](manage-quarantined-messages-and-files.md)
+Anti-Malware-Richtlinien isolieren eine Nachricht automatisch *, wenn eine* Anlage Schadsoftware enthält. Weitere Informationen finden Sie unter [configure Anti-Malware Policies in Office 365](configure-anti-malware-policies.md).
 
-- [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md)
+Standardmäßig werden Phishing-Nachrichten von Anti-Spam Policies isoliert und Spam-und Massen-e-Mails an den Junk-e-Mail-Ordner des Benutzers übermittelt. Sie können jedoch auch Anti-Spam-Richtlinien erstellen und anpassen, um Spam und Massen-e-Mails zu isolieren. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
-- [Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und melden von Nachrichten in Spamquarantäne](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Sowohl Benutzer als auch Administratoren können mit unter Quarantäne gestellten Nachrichten arbeiten:
 
-- [Häufig gestellte Fragen (FAQ) zur Quarantäne](quarantine-faq.md)
+- Administratoren können mit allen Typen von isolierten Nachrichten für alle Benutzer arbeiten. Nur Administratoren können mit Nachrichten arbeiten, die als Schadsoftware, als hochgradig vertrauenswürdiges Phishing oder als Ergebnis von Nachrichtenfluss Regeln (auch bekannt als Transportregeln) isoliert wurden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md).
+
+- Benutzer können mit isolierten Nachrichten arbeiten, bei denen es sich um einen Empfänger handelt, wenn die Nachricht als Spam, Massen-e-Mails oder (ab April 2020) als Phishing isoliert wurde. Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md).
+
+  Um zu verhindern, dass Benutzer ihre eigenen isolierten Phishing-Nachrichten verwalten, können Administratoren eine andere Aktion für das **Phishing-e-Mail-** Filter Urteil in Anti-Spam-Richtlinien konfigurieren. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
+
+- Administratoren und Benutzer können falsch positive Ergebnisse an Microsoft in der Quarantäne melden.
+
+Weitere Informationen zur Quarantäne finden Sie unter [Quarantine FAQ](quarantine-faq.md).

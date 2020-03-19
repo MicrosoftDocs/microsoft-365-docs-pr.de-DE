@@ -24,29 +24,29 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: 'Hier finden Sie Antworten auf ihre häufigsten Fragen zur Abrechnung für Office 365 für Unternehmen Abonnement. '
-ms.openlocfilehash: 5f889c9f402d059dc068e987eb4384a58d0e4fe2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Hier finden Sie Antworten auf ihre häufigsten Fragen zur Abrechnung Ihres Geschäfts Abonnements.
+ms.openlocfilehash: 661339518f43531f656ee9960d7f005fd1398023
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242430"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826301"
 ---
-# <a name="top-billing-questions-for-office-365-for-business"></a>Wichtige Fragen zur Abrechnung für Office 365 für Unternehmen
+# <a name="top-billing-questions-for-business-subscriptions"></a>Wichtige Fragen zur Abrechnung von Geschäfts Abonnements
 
 Haben Sie Fragen zu ihrer Abrechnungs Anweisung? Hier finden Sie die Antworten auf die häufigsten Fragen zur Abrechnung.
   
-Wenn Sie keine Antwort auf Ihre Frage finden oder ein Problem mit Ihrer Rechnung haben, wenden Sie sich an den [Support](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten. 
+Wenn Sie keine Antwort auf Ihre Frage finden oder ein Problem mit Ihrer Rechnung haben, wenden Sie sich an den [Support](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten.
   
 ::: moniker range="o365-worldwide"
 
-Wenn Sie Hilfe bei der Interpretation der auf Ihrer Rechnung angezeigten Gebühren oder eine Erläuterung der verwendeten Begriffe benötigen, lesen Sie [Grundlegendes zu Ihrer Rechnung für Office 365 Business](understand-your-invoice2.md).
+Wenn Sie Hilfe bei der Interpretation der Gebühren benötigen, die auf Ihrer Rechnung angezeigt werden, oder wenn Sie die verwendeten Begriffe verstehen, lesen Sie die Informationen zu [Ihrer Rechnung](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Wenn Sie Hilfe bei der Interpretation der auf Ihrer Rechnung angezeigten Gebühren oder eine Erläuterung der verwendeten Begriffe benötigen, lesen Sie [Grundlegendes zu Ihrer Rechnung für Office 365 Business](understand-your-invoice2.md).
+Wenn Sie Hilfe bei der Interpretation der Gebühren benötigen, die auf Ihrer Rechnung angezeigt werden, oder wenn Sie die verwendeten Begriffe verstehen, lesen Sie die Informationen zu [Ihrer Rechnung](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -57,13 +57,13 @@ Wenn Sie Hilfe bei der Interpretation der auf Ihrer Rechnung angezeigten Gebühr
 Abrechnungssupport wird in Englisch von Montag bis Freitag von 6:00 bis 17:00 Uhr pazifische Zeit (UTC-8) und in Australien von 5:00 bis 21:00 Uhr pazifische Zeit (UTC+8) geboten.
   
 - Rufnummer in den USA: 1 (800) 865-9408
-    
+
 - Rufnummer in Australien: 1 (800) 197-503
-    
+
 - Rufnummer in Kanada: 1 (800) 865-9408
-    
+
 - Rufnummer in Großbritannien: 0 (800) 032-6417
-    
+
 Weitere Telefonnummern nach Land oder Region finden Sie unter [kontaktieren des Supports für Business-Produkte](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
@@ -73,7 +73,7 @@ Weitere Telefonnummern nach Land oder Region finden Sie unter [kontaktieren des 
 Der Abrechnungssupport wird in Deutsch und Englisch von Montag bis Freitag von 9.00 bis 17.00 Uhr Berlin (UTC + 1) bereitgestellt.
   
 - Rufen Sie in Deutschland 0800 589 2330.
-    
+
 Wenden Sie sich für weitere Telefonnummern nach Land oder Region [an den Support für Business-Produkte](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
@@ -87,31 +87,31 @@ Bei Fragen zu Office 365, die von 21Vianet betrieben werden, [wenden Sie sich an
 ::: moniker range="o365-worldwide"
 ## <a name="how-do-i-update-my-credit-card-or-bank-account-information"></a>Wie aktualisiere ich meine Kreditkarten-oder Bankkontoinformationen?
 
-Lesen Sie [Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos in Office 365 Business](add-update-or-remove-credit-card-or-bank-account.md).
+Weitere Informationen finden Sie unter [Manage Payment Methods](manage-payment-methods.md).
   
 > [!NOTE]
-> Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar. 
+> Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="how-do-i-update-my-credit-card-or-bank-account-information"></a>Wie aktualisiere ich meine Kreditkarten-oder Bankkontoinformationen?
 
-Lesen Sie [Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos in Office 365 Business](add-update-or-remove-credit-card-or-bank-account.md).
+Weitere Informationen finden Sie unter [Manage Payment Methods](manage-payment-methods.md).
   
 > [!NOTE]
-> Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar. 
+> Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar.
   
 ::: moniker-end
 
 ## <a name="can-i-change-the-method-i-use-to-pay-for-my-subscription"></a>Kann ich die verwendete Zahlungsmethode für mein Abonnement ändern?
 
-Ja. Weitere Informationen finden Sie unter [Ändern der Zahlungsmethode für Office 365 für Unternehmen] Change-Payment-Method.MD).
+Ja. Weitere Informationen finden Sie unter [Ändern der Zahlungsmethode](change-payment-method.md).
   
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-change-how-frequently-i-pay-for-my-subscription"></a>Kann ich die Häufigkeit der Zahlung für mein Abonnement ändern?
 
-Ja, aber Sie müssen den [Support anrufen](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten. 
+Ja, aber Sie müssen den [Support anrufen](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten.
 
 ::: moniker-end
 
@@ -121,11 +121,11 @@ Ja, aber Sie müssen den [Support anrufen](../../admin/contact-support-for-busin
 Ja. Führen Sie die folgenden Schritte aus, um Ihre Abrechnungs Anweisung als e-Mail-Anlage zu erhalten:
   
 1. Wechseln Sie im Microsoft 365 Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungs Benachrichtigungen</a> , oder wählen Sie **Fakturierungs** \> **Benachrichtigungen**aus.
-    
-2. Schalten Sie unter **Abrechnungs Anweisung als e-Mail-Anhang empfangen?** die Umschaltfläche **auf ein**.
-    
+
+2. Setzen Sie unter **Möchten Sie die Rechnung als E-Mail-Anlage erhalten?** die Umschaltfläche auf **Ein**.
+
     Sie können den Empfang von Rechnungs-E-Mails jederzeit beenden, indem Sie die Umschaltfläche auf **Aus** setzen.
-    
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -133,12 +133,12 @@ Ja. Führen Sie die folgenden Schritte aus, um Ihre Abrechnungs Anweisung als e-
 
 Ja. Führen Sie die folgenden Schritte aus, um Ihre Abrechnungs Anweisung als e-Mail-Anlage zu erhalten:
   
-1. Wechseln Sie im Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing Notifications</a> .
-    
-2. Schalten Sie unter **Abrechnungs Anweisung als e-Mail-Anhang empfangen?** die Umschaltfläche **auf ein**.
-    
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungsbenachrichtigungen</a>.
+
+2. Setzen Sie unter **Möchten Sie die Rechnung als E-Mail-Anlage erhalten?** die Umschaltfläche auf **Ein**.
+
     Sie können den Empfang von Rechnungs-E-Mails jederzeit beenden, indem Sie die Umschaltfläche auf **Aus** setzen.
-    
+
 ::: moniker-end
 
 ## <a name="how-do-i-cancel-a-subscription"></a>Wie kündige ich ein Abonnement?
@@ -151,13 +151,13 @@ Die auf der Seite Rechnungen angezeigte Summe ist der Rechnungssaldo - der Gesam
   
 ::: moniker range="o365-worldwide"
 
-Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung für Office 365 Business](view-your-bill-or-invoice.md).
+Siehe [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung für Office 365 Business](view-your-bill-or-invoice.md).
+Siehe [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -167,32 +167,31 @@ Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung oder erhalten vo
 
 ::: moniker-end
 
-  
 ::: moniker range="o365-worldwide"
 ## <a name="what-taxes-will-i-be-charged"></a>Welche Steuern werden mir in Rechnung gestellt?
 
-Unter [Welche Steuern werden mir für Office 365 in Rechnung gestellt?](what-tax-will-i-be-charged.md) finden Sie Informationen zu den Steuern, die Ihnen je nach Land oder Region in Rechnung gestellt werden. 
+Siehe [welche Steuern werden mir in Rechnung gestellt?](tax-information.md#what-tax-will-i-be-charged) um herauszufinden, welche Steuern Sie zahlen, je nach Land oder Region.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="what-taxes-will-i-be-charged"></a>Welche Steuern werden mir in Rechnung gestellt?
 
-Unter [Welche Steuern werden mir für Office 365 in Rechnung gestellt?](what-tax-will-i-be-charged.md) finden Sie Informationen zu den Steuern, die Ihnen je nach Land oder Region in Rechnung gestellt werden. 
+Siehe [welche Steuern werden mir in Rechnung gestellt?](tax-information.md#what-tax-will-i-be-charged) um herauszufinden, welche Steuern Sie zahlen, je nach Land oder Region.
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## <a name="how-do-i-apply-for-tax-exempt-status"></a>Wie kann ich eine Steuerbefreiung beantragen?
 
-Sie können einen [Antrag auf Befreiung von der Umsatzsteuer für Office 365 Business stellen](apply-for-tax-exempt-status.md), indem Sie eine entsprechende Anfrage mit Dokumenten zum Beleg Ihres Antrags an den Support senden. 
+Sie können den [Status der Steuerbefreiung beantragen](tax-information.md#apply-for-tax-exempt-status) , indem Sie die entsprechende Dokumentation zur Unterstützung bereitstellen.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="how-do-i-apply-for-tax-exempt-status"></a>Wie kann ich eine Steuerbefreiung beantragen?
 
-Sie können einen [Antrag auf Befreiung von der Umsatzsteuer für Office 365 Business stellen](apply-for-tax-exempt-status.md), indem Sie eine entsprechende Anfrage mit Dokumenten zum Beleg Ihres Antrags an den Support senden. 
+Sie können den [Status der Steuerbefreiung beantragen](tax-information.md#apply-for-tax-exempt-status) , indem Sie die entsprechende Dokumentation zur Unterstützung bereitstellen.
   
 ::: moniker-end
 
@@ -204,7 +203,7 @@ Sie können einen [Antrag auf Befreiung von der Umsatzsteuer für Office 365 Bus
   
 2. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **Download Rechnung PDF**aus, und Drucken Sie die PDF-Datei.
 
-Weitere Informationen hierzu finden Sie unter [Anzeigen Ihrer Rechnung für Office 365 Business](view-your-bill-or-invoice.md).
+Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -214,7 +213,7 @@ Weitere Informationen hierzu finden Sie unter [Anzeigen Ihrer Rechnung für Offi
   
 2. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **Download Rechnung PDF**aus, und Drucken Sie die PDF-Datei.
 
-Weitere Informationen hierzu finden Sie unter [Anzeigen Ihrer Rechnung für Office 365 Business](view-your-bill-or-invoice.md).
+Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -230,4 +229,4 @@ Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung oder erhalten vo
 
 ## <a name="why-dont-i-see-any-bills"></a>Warum werden keine Rechnungen angezeigt?
 
-Wenn Sie nur über Testabonnements verfügen oder einen im Voraus bezahlten Product Key verwendet haben, den Sie im Einzelhandel oder von einem Office 365-Partner erworben haben, liegen keine Rechnungen vor.
+Wenn Sie nur Testabonnements haben oder einen Prepaid-Product Key verwendet haben, den Sie in einem Einzelhandelsgeschäft oder einem Partner gekauft haben, haben Sie keine Rechnungen.

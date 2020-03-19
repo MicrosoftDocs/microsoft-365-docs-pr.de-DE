@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Erfahren Sie, wie viel Steuern für Ihr Office 365 für Unternehmen Abonnement in verschiedenen Regionen erhoben werden. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 88997eb69cbbee1b7ec4520773c167609434e0a4
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710558"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826313"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
@@ -90,7 +90,7 @@ Diese Länder können Ihre MwSt-Nummer oder eine lokale Entsprechung auf Ihren A
 
 ## <a name="what-tax-will-i-be-charged"></a>Welche Steuern werden mir in Rechnung gestellt?
 
-[] Finden Sie heraus, welchen Steuern Sie in den folgenden Regionen unterliegen. Sie können auch einen [Antrag auf Steuerbefreiung stellen](apply-for-tax-exempt-status.md), indem Sie entsprechende Dokumente zum Beleg Ihres Antrags beibringen.
+[] Finden Sie heraus, welchen Steuern Sie in den folgenden Regionen unterliegen. Sie können auch einen [Antrag auf Steuerbefreiung stellen](tax-information.md#apply-for-tax-exempt-status), indem Sie entsprechende Dokumente zum Beleg Ihres Antrags beibringen.
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Nahost und Afrika (EMEA)
 
@@ -160,7 +160,7 @@ Wenn Ihre Abrechnung über Microsoft Corporation erfolgt ([das können Sie auf d
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Beispiel:
+Zum Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 
