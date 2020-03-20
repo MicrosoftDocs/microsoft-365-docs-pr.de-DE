@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635093"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826290"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -179,6 +179,8 @@ So sieht ein Richtlinientipp in einem OneDrive for Business-Konto aus.
 Bei einer Übereinstimmung mit einer Regel können Sie einen Schadensbericht mit Details zum Ereignis an Ihren Compliance Officer (oder eine beliebige andere Person) senden. Dieser Bericht enthält Informationen zum Element, für das eine Übereinstimmung gefunden wurde, zum Inhalt, der mit der Regel übereinstimmte, und zum Namen der Person, die den Inhalt zuletzt geändert hat. Bei E-Mail-Nachrichten wird dem Bericht außerdem die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht, als Anlage beigefügt.
   
 ![Seite zum Konfigurieren von Vorfallberichten](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene Elemente sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung einen Schadensbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP überprüft oder vergleicht ***nicht*** zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
   
 ## <a name="grouping-and-logical-operators"></a>Gruppieren und logische Operatoren
 

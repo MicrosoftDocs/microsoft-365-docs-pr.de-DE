@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086274"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857357"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
 Zu den Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen. Die Einstellungen für die Spamfilterrichtlinie werden nur auf eingehende Nachrichten angewendet. Es gibt zwei Optionen:
@@ -83,7 +83,7 @@ Wenn Sie mehr benutzerdefinierte Einstellungen aktivieren oder benutzerdefiniert
    - **Nachricht in Quarantäne verschieben:** Verschiebt die Nachricht in Quarantäne, anstatt sie an die vorgesehenen Empfänger zu senden. Hierbei handelt es sich um die Standardaktion bei Phishing-Nachrichten. Geben Sie bei Auswahl dieser Option im Eingabefeld **Spamnachrichten aufbewahren für (Tage)** die Anzahl der Tage an, für die die Nachricht in Quarantäne bleiben soll. (Nach Ablauf des angegebenen Zeitraums wird die Nachricht automatisch gelöscht. Der Standardwert beträgt 30 Tage (dies ist der Maximalwert). Der Mindestwert ist 1 Tag.
 
      > [!TIP]
-     > Informationen dazu, wie Administratoren E-Mails in der Exchange-Verwaltungskonsole in Quarantäne verwalten können, finden Sie unter [Quarantäne](quarantine.md) und [Finden und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md). <br/><br/> Informationen zur Konfiguration von Spambenachrichtigungen für Benutzer finden Sie unter [Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP](configure-end-user-spam-notifications-in-eop.md) oder [Konfigurieren von Spambenachrichtigungen für Endbenutzer in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+     > Informationen dazu, wie Administratoren E-Mails in Quarantäne verwalten können, finden Sie unter [Quarantäne](quarantine.md) und [Verwalten von Nachrichten und Dateien in Quarantäne als Administrator in Office 365](manage-quarantined-messages-and-files.md). <br/><br/> Informationen zur Konfiguration von Spambenachrichtigungen für Benutzer finden Sie unter [Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP](configure-end-user-spam-notifications-in-eop.md) oder [Konfigurieren von Spambenachrichtigungen für Endbenutzer in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
 
    - Konfigurieren Sie **Schwellenwert auswählen** um festzulegen, wie mit Massen-E-Mails auf der Grundlage des BCL-Werts (Bulk Complaint Level) der Nachricht umgegangen werden soll. Sie können eine Schwellenwerteinstellung zwischen 1–9 auswählen, wobei 1 die meisten Massensendungen als Spam markiert und 9 die meisten Massensendungen als übermittelbar zulässt. Der Dienst führt dann die konfigurierte Aktion aus, z. B. das Verschieben der Nachricht in den Junk-E-Mail-Ordner des Empfängers. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level)](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk-E-Mails und Massen-E-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 

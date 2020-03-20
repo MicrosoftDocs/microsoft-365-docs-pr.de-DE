@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634913"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826236"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -59,7 +59,7 @@ Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Admin
 - **Entfernen**: Entfernt die Verschlüsselung, wenn das Dokument oder die E-Mail verschlüsselt ist.
 
 > [!NOTE]
-> Die Option **Entfernen** wird nur vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Wenn Sie die integrierte Bezeichnung verwenden, wird in Office-Apps eine Bezeichnung mit dieser Option angezeigt, und wenn diese Option ausgewählt ist, ist das Verschlüsselungsverhalten identisch mit **Keine**.
+> Die Option **Entfernen** wird nur vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Wenn Sie die integrierte Bezeichnung verwenden, wird in Office-Apps und Diensten eine Bezeichnung mit dieser Option angezeigt, und wenn diese Option ausgewählt wurde, ist das Verschlüsselungsverhalten identisch mit **Keine**.
 
 Konfigurieren der Verschlüsselungsoptionen:
 
