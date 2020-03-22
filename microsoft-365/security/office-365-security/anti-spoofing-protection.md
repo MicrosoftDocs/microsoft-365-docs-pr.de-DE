@@ -2,8 +2,8 @@
 title: Antispoofingschutz in Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9e1a4cf31c2565eeb6be53b5c43bda0154f9ea6f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087099"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894138"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -89,10 +89,9 @@ Eine allgemeine Ankündigung von Microsoft finden Sie unter [A Sea of Phish Part
 
 Obwohl SPF, DKIM und DMARC an sich hilfreich sind, wird hier der Authentifizierungsstatus nicht ausreichend kommuniziert, wenn eine Nachricht keine expliziten Authentifizierungsdatensätze enthält. Daher hat Microsoft einen Algorithmus entwickelt, der mehrere Signale in einem einzelnen Wert kombiniert, auch als Composite Authentication (zusammengesetzte Authentifizierung) oder Compauth bezeichnet. Office 365-Kunden verfügen über Compauth-Werte im *Authentication-Results*-Header in den Nachrichtenköpfen.
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**CompAuth-Ergebnis**|**Beschreibung**|
@@ -259,7 +258,7 @@ Es gibt viele verschiedene Typen von Spoofing (siehe [Unterscheidung zwischen ve
 
 ### <a name="changing-your-anti-spoofing-settings"></a>Ändern der Antispoofing-Einstellungen
 
-Um die Antispoofing-Einstellungen zu erstellen oder zu ändern, navigieren Sie im Security &amp; Compliance Center unter der Registerkarte „Bedrohungsmanagement“ \> „Richtlinie“ zu „Antiphishing“ \> „Antispoofing-Einstellungen“. Wenn Sie noch keine Antiphishing-Einstellungen erstellt haben, müssen Sie sie erstellen:
+Um die (domänenübergreifenden) Antispoofing-Einstellungen zu erstellen oder zu aktualisieren, navigieren Sie im Security & Compliance Center unter der Registerkarte "Bedrohungsmanagement \> "Richtlinie" zu "Antiphishing" \> "Antispoofing-Einstellungen". Wenn Sie noch keine Antiphishing-Einstellungen erstellt haben, müssen Sie sie erstellen:
 
 ![Antiphishing – Erstellen einer neuen Richtlinie](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
@@ -380,19 +379,19 @@ Obwohl es am Anfang möglicherweise schwierig wird, sendende Domänen zur Authen
 
 ### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Anzeigen von Berichten über Anzahl von Nachrichten, die als Spoofing eingestuft wurden
 
-Sobald Ihre Antispoofingrichtlinie aktiviert ist, können Sie die Funktionen der Bedrohungsuntersuchung und der Reaktion verwenden, um die Anzahl der Nachrichten anzurufen, die als Phishing eingestuft wurden. Wechseln Sie zu diesem Zweck zum Security &amp; Compliance Center (SCC) unter „Bedrohungsmanagement“ \> „Explorer“, legen Sie für Ansicht „Phishing“ fest, und gruppieren Sie nach Absenderdomäne oder Schutzstatus:
+Sobald Ihre Antispoofingrichtlinie aktiviert ist, können Sie die Funktionen der Bedrohungsuntersuchung und der Reaktion verwenden, um die Anzahl der Nachrichten anzurufen, die als Phishing eingestuft wurden. Wechseln Sie zu diesem Zweck zum Security & Compliance Center (SCC) unter "Bedrohungsmanagement" \> "Explorer", legen Sie für Ansicht "Phishing" fest, und gruppieren Sie nach Absenderdomäne oder Schutzstatus:
 
 ![Anzeigen der Anzahl von Nachrichten, die als Phishing eingestuft wurden](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 Sie können die verschiedenen Berichte verwenden, um zu sehen, wie viele Nachrichten als Phishing eingestuft wurden, einschließlich Nachrichten, die als „SPOOF“ gekennzeichnet wurden. Weitere Informationen finden Sie unter [Erste Schritte mit der Office 365-Bedrohungsuntersuchung und -reaktion](office-365-ti.md).
 
-Sie können derzeit jedoch nicht anzeigen, welche Nachrichten aufgrund von Spoofing im Gegensatz zu anderen Typen von Phishing (Allgemeines Phishing, Domänen- und Benutzeridentitätswechsel usw.) als solche gekennzeichnet wurden. Später können Sie dies jedoch über das Security &amp; Compliance Center anzeigen. Sobald Sie dies tun, können Sie diesen Bericht als Ausgangspunkt verwenden, um sendende Domänen zu identifizieren, die möglicherweise seriös sind und aufgrund von fehlgeschlagener Authentifizierung als Spoofing gekennzeichnet wurden.
+Sie können derzeit jedoch nicht anzeigen, welche Nachrichten aufgrund von Spoofing im Gegensatz zu anderen Typen von Phishing (Allgemeines Phishing, Domänen- und Benutzeridentitätswechsel usw.) als solche gekennzeichnet wurden. Später können Sie dies jedoch über das Security & Compliance Center anzeigen. Sobald Sie dies tun, können Sie diesen Bericht als Ausgangspunkt verwenden, um sendende Domänen zu identifizieren, die möglicherweise seriös sind und aufgrund von fehlgeschlagener Authentifizierung als Spoofing gekennzeichnet wurden.
 
 Im folgenden Screenshot finden Sie ein Beispiel dafür, wie diese Daten aussehen können:
 
 ![Anzeigen von Phishingberichten nach Erkennungstyp](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
-Für Nicht-ATP- und E5-Kunden sind diese Berichte später unter Threat Protection-Statusberichten (TPS) verfügbar, die jedoch mindestens um 24 Stunden verzögert sind. Diese Seite wird aktualisiert, da diese im Security &amp; Compliance Center integriert werden.
+Für Nicht-ATP- und E5-Kunden sind diese Berichte später unter Threat Protection-Statusberichten (TPS) verfügbar, die jedoch mindestens um 24 Stunden verzögert sind. Diese Seite wird aktualisiert, da diese im Security & Compliance Center integriert werden.
 
 ### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>Vorhersagen zur Anzahl der Nachrichten, die als Spoofing gekennzeichnet werden
 
@@ -503,7 +502,7 @@ New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ```
 
-Antispoofing kann nur mit dem Cmdlet deaktiviert werden (später ist dies auch über das Security &amp; Compliance Center möglich). Wenn Sie keinen Zugriff auf PowerShell haben, erstellen Sie ein Supportticket.
+Antispoofing kann nur mit dem Cmdlet deaktiviert werden (später ist dies auch über das Security & Compliance Center möglich). Wenn Sie keinen Zugriff auf PowerShell haben, erstellen Sie ein Supportticket.
 
 Beachten Sie, dass dies nur für Domänen mit indirektem Routing beim Senden an Office 365 angewendet werden sollte. Sie sollten es vermeiden, Antispoofing zu deaktivieren, um einige falsch positive Ergebnisse zu vermeiden, da es langfristig gesehen besser ist, diese durchzuarbeiten.
 
@@ -650,9 +649,11 @@ Leider nicht, denn Phisher werden sich darauf einstellen und andere Verfahren wi
 
 Fast alle großen E-Mail-Empfänger implementieren die herkömmlichen Standards wie SPF, DKIM und DMARC. Einige Empfänger verfügen über andere Prüfungen, die strenger als diese Standards sind, nur wenige gehen jedoch soweit wie Office 365, dass nicht authentifizierte E-Mails blockiert und wie Spoofing-E-Mails gehandhabt werden. Allerdings wird der Großteil der Branche bei dieser speziellen Art von E-Mails zunehmend strenger, insbesondere aufgrund des Problems mit Phishingangriffen.
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Muss die Option „Erweiterte Spamfilterung“ für „SPF Hard Fail“ weiterhin aktiviert sein, wenn der Antispoofingschutz aktiviert ist?
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich die erweiterte Einstellung für den Spamfilter (ASF) "SPF-Eintrag: Schwerer Fehler" (_MarkAsSpamSpfRecordHardFail_) auch dann aktivieren, wenn ich das Antispoofing aktiviere?
 
-Nein, diese Option ist nicht mehr erforderlich, da der Antispoofingschutz nicht nur „SPF Hard Fails“ berücksichtigt, sondern viel umfassendere Kriterien. Wenn der Antispoofingschutz und die Option „SPF Hard Fail“ aktiviert sind, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse. Es wird empfohlen, diese Funktion zu deaktivieren, da sie fast keinen zusätzlichen Schutz vor Spam oder Phishing bietet und meistens falsch positive Ergebnisse generiert.
+Nein, diese Option ist nicht mehr erforderlich, da der Antispoofingschutz nicht nur „SPF Hard Fails“ berücksichtigt, sondern viel umfassendere Kriterien. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
+
+Es wird empfohlen, diese Funktion zu deaktivieren, da sie fast keinen zusätzlichen Schutz vor Spam oder Phishing bietet und meistens falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Erweiterte Einstellungen für den Spamfilter (ASF) in Office 365](advanced-spam-filtering-asf-options.md).
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>Hilft Sender Rewriting Scheme (SRS) beim Beheben von Problemen mit weitergeleiteten E-Mails?
 
