@@ -1,8 +1,7 @@
 ---
 title: Auswählen der beim Erstellen von Office 365-Gruppen zu verwendenden Domäne
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'Hier erfahren Sie, wie Sie beim Erstellen von Office 365 Gruppen die Domäne auswählen können, indem Sie e-Mail-Adress Richtlinien mithilfe von PowerShell konfigurieren. '
-ms.openlocfilehash: 55fc99cd201e66166e7da164777cfba2f763609c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241407"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894645"
 ---
 # <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Auswählen der beim Erstellen von Office 365-Gruppen zu verwendenden Domäne
 
@@ -113,7 +112,7 @@ Es gibt ein paar weitere Punkte, die Sie wissen müssen:
     
 - Administratoren und Benutzer können Domänen beim Erstellen von Gruppen auch ändern.
     
-- Die Gruppe der Benutzer wird mithilfe der bereits verfügbaren Standardabfragen (Benutzereigenschaften) bestimmt. Informationen zu unterstützten filterbaren Eigenschaften finden Sie unter [Filterbare Eigenschaften für den Parameter "-RecipientFilter"](https://go.microsoft.com/fwlink/p/?LinkId=785918). 
+- Die Gruppe der Benutzer wird mithilfe der bereits verfügbaren Standardabfragen (Benutzereigenschaften) bestimmt. Überprüfen Sie [die filterbaren Eigenschaften für den Parameter "-RecipientFilter"](https://go.microsoft.com/fwlink/p/?LinkId=785918) für unterstützte Filterbare Eigenschaften. 
     
 - Wenn Sie keine EAPs für Gruppen konfigurieren, wird die akzeptierte Standarddomäne für die Gruppenerstellung ausgewählt.
     

@@ -1,7 +1,6 @@
 ---
 title: Verwalten von Personen, die Office 365-Gruppen erstellen können
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -22,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Office 365-Gruppen erstellen können.
-ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
-ms.translationtype: HT
+ms.openlocfilehash: 0da8aded4b7a55975a9327cc4f29ff8679b3ccf2
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352636"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894551"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Verwalten von Personen, die Office 365-Gruppen erstellen können
 
   
 Weil es für Benutzer so einfach ist, Office 365-Gruppen selbst zu erstellen, werden Sie vermutlich nicht mit Bitten überflutet, diese Gruppen im Auftrag anderer Personen zu erstellen. Je nach Ihrem Unternehmen möchten Sie jedoch steuern, welche Personen die Möglichkeit zum Erstellen von Gruppen haben sollen.
   
-In diesem Artikel wird erläutert, wie Sie die Möglichkeit zum Erstellen von Gruppen **in allen Office 365-Diensten, die Gruppen verwenden,** deaktivieren können: 
+In diesem Artikel wird erklärt, wie Sie die Möglichkeit zum Erstellen von Gruppen in allen Office 365 Diensten deaktivieren können, die Gruppen verwenden, einschließlich:
   
 - Outlook
     
@@ -92,7 +91,7 @@ Zum Steuern des Personenkreises, der Gruppen erstellen kann, kann in Ihrer Organ
 Administratoren mit den oben aufgeführten Rollen müssen nicht Mitglieder dieser Gruppe sein: Sie behalten ihre Fähigkeit, Gruppen zu erstellen.
 
 > [!IMPORTANT]
-> Achten Sie darauf, mithilfe einer **Sicherheitsgruppe** einzuschränken, wer Gruppen erstellen kann. Dann können Mitglieder nämlich keine Gruppe auf SharePoint erstellen, weil dort auf eine Sicherheitsgruppe überprüft wird. 
+> Achten Sie darauf, mithilfe einer **Sicherheitsgruppe** einzuschränken, wer Gruppen erstellen kann. Wenn Sie versuchen, eine Office 365 Gruppe zu verwenden, können Mitglieder keine Gruppe aus SharePoint erstellen, da Sie nach einer Sicherheitsgruppe sucht. 
     
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
 
@@ -100,62 +99,21 @@ Administratoren mit den oben aufgeführten Rollen müssen nicht Mitglieder diese
 
 3. Wählen Sie als Gruppentyp die Option **Sicherheit** aus. Vergessen Sie nicht den Namen der Gruppe! Sie benötigen ihn später noch.
   
-4. Schließen Sie die Einrichtung der Sicherheitsgruppe ab, indem Sie Personen oder andere Sicherheitsgruppen hinzufügen, denen Sie in Ihrer Organisation das Erstellen von Gruppen erlauben möchten.
+4. Schließen Sie die Einrichtung der Sicherheitsgruppe ab, und fügen Sie Personen oder andere Sicherheitsgruppen hinzu, die in Ihrer Organisation Gruppen erstellen können sollen.
     
 Ausführliche Anleitungen finden Sie unter [Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center](../email/create-edit-or-delete-a-security-group.md).
-  
-## <a name="step-2-install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>Schritt 2: Installieren der Vorschauversion von Azure Active Directory PowerShell für Graph
+ 
+## <a name="step-2-run-powershell-commands"></a>Schritt 2: Ausführen von PowerShell-Befehlen
 
-Diese Verfahren erfordern die Vorschauversion von Azure Active Directory PowerShell für Graph. Die GA-Version funktioniert dann nicht.
+Sie müssen die Vorschau-Version von [Azure Active Directory PowerShell für Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) verwenden (Modulname **AzureADPreview**), um die Einstellung für den Gastzugriff auf Gruppenebene zu ändern:
+
+- Wenn Sie zuvor noch keine Version des Azure AD PowerShell-Moduls installiert haben, lesen Sie [Installieren des Azure AD-Moduls](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module), und folgen Sie den Anweisungen zum Installieren der öffentlichen Vorschauversion.
+
+- Wenn Sie die allgemein verfügbare Version 2.0 des Azure AD PowerShell-Moduls (AzureAD) installiert haben, müssen Sie sie deinstallieren, indem Sie `Uninstall-Module AzureAD` in ihrer PowerShell-Sitzung ausführen, und dann mit `Install-Module AzureADPreview` die Vorschauversion installieren.
+
+- Wenn Sie die Vorschauversion bereits installiert haben, führen Sie `Install-Module AzureADPreview` aus, um sicherzustellen, dass es sich um die neueste Version dieses Moduls handelt.
 
 
-> [!IMPORTANT]
-> Sie können die Preview- und die GA-Version nicht gleichzeitig auf demselben Computer installieren. Sie können das Modul unter Windows 10, Windows Server 2016 installieren.
-
-  
-Als bewährte Methode empfehlen wir, *immer* die neueste Version zu verwenden: Deinstallieren Sie die alte AzureADPreview- bzw. AzureAD-Version, und holen Sie sich die aktuellste Version. 
-  
-1. Geben Sie in der Suchleiste "Windows PowerShell" ein.
-    
-2. Klicken Sie mit der rechten Maustaste auf **Windows PowerShell**, und klicken Sie dann auf **Als Administrator ausführen**.
-    
-    ![Öffnen Sie PowerShell mit „Als Administrator ausführen“.](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. Setzen Sie die Richtlinie mithilfe der [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)auf RemoteSigned.
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. Überprüfen Sie das installierte Modul:
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
-
-5. Führen Sie zum Deinstallieren einer früheren Version von AzureADPreview oder AzureAD diesen Befehl aus:
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    oder
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. Führen Sie zum Installieren der aktuellsten Version von AzureADPreview diesen Befehl aus:
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    Geben Sie in der Nachricht über ein nicht vertrauenswürdiges Repository **J** ein. Die Installation des neuen Moduls dauert etwa eine Minute.
-
-Lassen Sie das PowerShell-Fenster für Schritt 3 (nachstehend) geöffnet.
-  
-## <a name="step-3-run-powershell-commands"></a>Schritt 3: Ausführen von PowerShell-Befehlen
 
 Kopieren Sie das folgende Skript in einen Text-Editor wie Editor oder [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 

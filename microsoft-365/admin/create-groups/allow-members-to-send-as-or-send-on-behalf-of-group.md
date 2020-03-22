@@ -1,8 +1,7 @@
 ---
 title: Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Hier erfahren Sie, wie Sie Mitgliedern das Senden von e-Mails als Office 365 Gruppe oder das Senden von e-Mails im Namen einer Office 365 Gruppe gestatten können.
-ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 41e8bd34ed7ba28cdaa736bf8f4c88433f56a47e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633783"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894657"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 
-[] Ein Mitglied einer Office 365-Gruppe dem die Berechtigung zum **Senden als** oder **Senden im Auftrag von** erteilt wurde, kann nun E-Mails als Gruppe oder im Auftrag der Gruppe senden. In diesem Thema wird erläutert, wie ein Administrator diese Berechtigungen festlegen kann.
+Ein Mitglied einer Office 365 Gruppe, denen die Berechtigung " **Senden als** " oder " **Senden im Auftrag** von" erteilt wurde, kann e-Mails als Gruppe oder im Namen der Gruppe senden. In diesem Thema wird erläutert, wie ein Administrator diese Berechtigungen festlegen kann.
   
 Wenn Megan Bowen beispielsweise Teil der Gruppe " **Schulungs** Office 365" ist und über die Berechtigung " **Senden als** " für die Gruppe verfügt, wenn Sie eine e-Mail als Gruppe sendet, sieht Sie aus wie die Gruppe " **Training** ", die die e-Mail gesendet hat. 
   
@@ -39,7 +38,7 @@ Mit der Berechtigung " **Senden im Auftrag** von" kann ein Benutzer e-Mails im A
 > Sie können " **Senden als** " oder " **Senden im Auftrag** von" für einen bestimmten Benutzer konfigurieren, jedoch nicht für beide. Wenn Sie beides konfigurieren, ist es standardmäßig **Senden als**.
 
 > [!TIP]
-> Lesen Sie die Schritte unter [Senden von e-Mails aus oder im Namen einer Office 365 Gruppe](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) , um zu erfahren, wie Sie mit Outlook und Outlook im Internet e-Mails von einer Gruppe senden.
+> Informationen zum Verwenden von Outlook und Outlook im Internet zum Senden von e-Mails aus einer Gruppe finden Sie unter [Senden von e-Mails aus oder im Namen einer Office 365 Gruppe](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) .
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Zulassen, dass Mitglieder e-Mails als Gruppe senden
 

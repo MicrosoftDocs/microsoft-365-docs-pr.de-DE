@@ -15,30 +15,29 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Informationen zu BCL-Werten (Bulk Complaint Level) in Office 365.
-ms.openlocfilehash: b0eb922323421834eae77b8c5430f1bd8f48c8ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informationen zu BCL-Werten (Bulk bomplain Level) in Office 365.
+ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599722"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895393"
 ---
-# <a name="bulk-complaint-level-values"></a>BCL-Werte (Bulk Complaint Level)
+# <a name="bulk-complaint-level-bcl-in-office-365"></a>Massen Reklamations Ebene (BCL) in Office 365
 
-Versender von Massen-E-Mails arbeiten mit verschiedenen Sendemustern, Inhalterstellungsverfahren und Listenbeschaffungsarten. Einige von ihnen sind gute Absender, die erwünschte Nachrichten mit relevantem Inhalt an Ihre Abonnenten senden. Diese Nachrichten führen zu wenigen Beschwerden von Empfängern. Andere Absender verwenden unerwünschte Nachrichten, die den Kriterien für Spam sehr nahekommen und zu vielen Beschwerden von Empfängern führen.
+Massenversender unterscheiden sich in ihren Sende Mustern, der Inhaltserstellung und den Empfänger Akquisitions Methoden. Einige sind gute Massen-e-Mails, die gewünschte Nachrichten mit relevanten Inhalten an Ihre Abonnenten senden. Diese Nachrichten führen zu wenigen Beschwerden von Empfängern. Andere Absender verwenden unerwünschte Nachrichten, die den Kriterien für Spam sehr nahekommen und zu vielen Beschwerden von Empfängern führen. Nachrichten von einem Massen-Mailer werden als Massen-oder grau-e-Mail bezeichnet.
 
-Um zwischen diesen Typen von Massen-E-Mail-Absendern zu unterscheiden, werden ihren Nachrichten BCL-Bewertungen (Bulk Complaint Level) zugewiesen. BCL-Bewertungen können zwischen 1 und 9 liegen - je nachdem, wie wahrscheinlich es ist, dass die Massen-E-Mail zu Beschwerden führen. Ein Absender mit dem BCL-Wert 9 wird wahrscheinlich mehr Beschwerden von Empfängern erhalten, was mit einem BCL-Wert von 3 wahrscheinlich nicht der Fall ist. Microsoft arbeitet sowohl mit internen Quellen als auch mit Quellen von Drittanbietern, um die Absender von Massen-E-Mails zu identifizieren und den passenden BCL-Wert zu bestimmen. Weitere Informationen zu dieser Nachrichtenkopfzeile finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
+Um Nachrichten von verschiedenen Typen von Massen-e-Mails zu unterscheiden, wird eingehende e-Mail von Massen-e-Mails an Office 365 (Exchange Online oder eigenständiger Exchange Online Schutz (EoP) ohne Exchange Online Postfächer) eine Massen Reklamations Ebene (BCL) zugewiesen, die zu hinzugefügt wird die Nachricht in einer X-Kopfzeile. Die BCL ähnelt der [SCL-Bewertung (Spam Confidence Level)](spam-confidence-levels.md) , die verwendet wird, um Nachrichten als Spam zu identifizieren. Eine höhere BCL gibt an, dass eine Massen Nachricht häufiger Beschwerden generiert (und daher eher Spam ist). Microsoft verwendet sowohl interne als auch Drittanbieterquellen, um Massen-e-Mails zu identifizieren und den entsprechenden BCL zu ermitteln.
 
-Da eine Massenwerbung mit einer Bewertung von 9 wahrscheinlich zu Reklamationen führen wird, ist die Standard-BCL 7. Dies bedeutet, dass Massen-e-Mails erst dann akzeptiert werden, wenn die Reklamations Stufe 7 und die e-Mail danach nicht mehr akzeptiert werden. Je niedriger die Bewertung, desto weniger Massen-e-Mails werden akzeptiert. Wenn Ihre Benutzer sind und ihre Arbeit für Massen-e-Mails vertraulich ist und ihre BCL auf 4 festgelegt ist, werden keine Massen-e-Mails mit einer höheren BCL als 4 akzeptiert.
+ Bei der Spam Filterung werden Nachrichten als **Massen-e-Mails** auf der Grundlage des BCL-Schwellenwerts (der Standardwert oder ein von Ihnen festgelegter Wert) markiert und die angegebene Aktion für die Nachricht verwendet (die Standardaktion lautet "Nachricht an den Junk-e-Mail-Ordner des Empfängers senden" Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md) und [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-Sie können BCL-Werte verwenden, um die für Ihre Organisation gewünschte Massenfilterungsebene festzulegen, indem Sie die Schritte unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) befolgen.
-
-In der folgenden Tabelle werden die derzeit verwendeten BCL-Werte beschrieben.
+Die BCL-Schwellenwerte werden in der folgenden Tabelle beschrieben.
 
 |||
-|:-----|:-----|
-|**BCL-Wert**|**Beschreibung**|
+|:---:|---|
+|**BCL**|**Beschreibung**|
 |0|Die Nachricht stammt nicht von einem Massen-E-Mail-Absender.|
 |1, 2, 3|Die Nachricht stammt von einem Massen-E-Mail-Absender, aber führt zu wenigen Beschwerden.|
 |4, 5, 6, 7|Die Nachricht stammt von einem Massen-E-Mail-Absender und führt zu einer gemischten Anzahl von Beschwerden.|
 |8, 9|Die Nachricht stammt von einem Massen Absender, der eine hohe Anzahl von Beschwerden generiert.|
+|

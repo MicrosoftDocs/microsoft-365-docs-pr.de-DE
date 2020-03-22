@@ -10,14 +10,23 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365 für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
-ms.openlocfilehash: eb6bbdc4dd0520f240edbdebde6851ec917cd0d9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604602"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894953"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
+
+Die Funktionen zur externen Freigabe in Microsoft 365 bieten Personen in Ihrer Organisation die Möglichkeit, mit Partnern, Lieferanten, Kunden und anderen Personen zusammenzuarbeiten, die kein Konto in Ihrem Verzeichnis haben. Sie können ganze Teams oder Standorte für Personen außerhalb Ihrer Organisation oder nur für einzelne Dateien freigeben.
+
+Die Zusammenarbeit mit Personen außerhalb Ihrer Organisation besteht aus zwei Hauptkomponenten:
+
+- **Freigabe aktivieren** – konfigurieren Sie die Freigabe Steuerelemente in Azure Active Directory, Teams, Office 365 Gruppen und SharePoint, um die für Ihre Organisation gewünschte Freigabeebene zuzulassen.
+- **Aktivieren zusätzlicher Sicherheit** : während die grundlegenden Freigabefunktionen so konfiguriert werden können, dass Personen außerhalb Ihrer Organisation authentifiziert werden müssen, bietet Microsoft 365 zahlreiche zusätzliche Sicherheits-und Compliance-Funktionen, die Ihnen dabei helfen, Ihre Daten zu schützen und ihre Steuerungsrichtlinien beizubehalten, während Sie extern freigeben.
+
+## <a name="enable-sharing"></a>Freigabe aktivieren
 
 Standardmäßig ist in Microsoft 365 die Freigabe für Personen außerhalb Ihrer Organisation für SharePoint und OneDrive aktiviert, aber für Teams deaktiviert. Viele SharePoint-und OneDrive-Szenarien für externe Freigaben funktionieren ohne weitere Konfiguration. Wählen Sie eine der folgenden Optionen aus, um die Einstellungen für ein von Ihnen verwendetes Szenario zu bestätigen oder ein neues zu aktivieren:
 
@@ -27,7 +36,7 @@ Standardmäßig ist in Microsoft 365 die Freigabe für Personen außerhalb Ihrer
 
 Eine umfassende Übersicht über die in Microsoft 365 verfügbaren Gäste Freigabeeinstellungen finden Sie unter [Microsoft 365 Guest Sharing Settings Reference](microsoft-365-guest-settings.md).
 
-## <a name="secure-your-environment"></a>Schützen Ihrer Umgebung
+## <a name="enable-additional-security"></a>Aktivieren zusätzlicher Sicherheit
 
 Nachdem Sie das Szenario, das Sie für die Freigabe für Personen außerhalb Ihrer Organisation verwenden möchten, aktiviert haben, sollten Sie zusätzliche Schutzvorkehrungen zum Schutz Ihrer Inhalte vor versehentlicher oder vorsätzlicher ungeeigneter Freigaben ergreifen.
 

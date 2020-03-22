@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 61c6d0b4fb21762eaeee96d8923eda7702fc70bb
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341575"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894841"
 ---
 # <a name="manage-payment-methods"></a>Zahlungsmethoden verwalten
 
@@ -35,6 +35,15 @@ Wenn Sie Geschäftsprodukte oder-Dienste von Microsoft kaufen, können Sie eine 
 > Die Option zur Zahlung mit einem Bankkonto steht in einigen Ländern oder Regionen nicht zur Verfügung.
 >
 > Sie müssen eine Zahlungsmethode verwenden, die aus demselben Land wie Ihr Mandant ausgestellt wurde.
+
+## <a name="add-a-payment-method"></a>Hinzufügen einer Zahlungsmethode
+
+Durch das Hinzufügen einer Zahlungsmethode werden keine Abonnements zugeordnet. Informationen zum Zuweisen eines einzelnen Abonnements zur Zahlungsmethode finden Sie unter [Ändern einer Zahlungsmethode für ein einzelnes Abonnement](#change-a-payment-method-for-a-single-subscription). Informationen zum Ersetzen aller Abonnements, die eine andere Zahlungsmethode mit der neuen Zahlung verwenden, finden Sie unter [Replace a Payment Method](#replace-a-payment-method).
+
+1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
+2. Wählen Sie **Zahlungsmethode hinzufügen** aus.
+3. Wählen Sie auf der Seite **Zahlungsmethoden** im Dropdownmenü eine Zahlungsmethode aus.
+4. Geben Sie die Informationen für das neue Kreditkarten-oder Bank Konto ein, und wählen Sie dann **Hinzufügen**aus.
 
 ## <a name="update-payment-method-details"></a>Details zur Zahlungsmethode aktualisieren
 
@@ -97,7 +106,7 @@ Wenn eine Zahlungsmethode an alle Abonnements oder Abrechnungsprofile angehängt
 5. Um eine neue Zahlungsmethode hinzuzufügen, wählen Sie **Zahlungsmethode hinzufügen**aus.
 6. Wählen Sie den Typ der Zahlungsmethode aus, den Sie hinzufügen möchten, geben Sie die Kontoinformationen ein, und wählen Sie dann **Speichern**aus.
 7. Die neue Zahlungsmethode ist in der Dropdownliste bereits ausgewählt. Wählen Sie **Weiter** aus.
-8. Wählen Sie **Löschen**aus.
+8. Wählen Sie **Löschen** aus.
 
 ## <a name="troubleshoot-payment-methods"></a>Problembehandlung bei Zahlungsmethoden
 

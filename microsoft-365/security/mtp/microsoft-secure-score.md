@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633993"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895429"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -140,13 +140,41 @@ Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für 
 
 Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>"Nicht bewertet"-Verbesserungsmaßnahmen entfernt
+### <a name="march-2020"></a>März 2020
+
+#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Sicherheitsstandards für Azure AD-Verbesserungsmaßnahmen unterstützen
+
+Microsoft-Sicherheitsbewertung aktualisiert Verbesserungsmaßnahmen zur Unterstützung von [Sicherheitsstandards in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), die es einfacher machen, Ihre Organisation mit vorkonfigurierten Sicherheitseinstellungen für häufige Angriffe zu schützen.
+
+Dies betrifft die folgenden Verbesserungsmaßnahmen:
+
+- Sicherstellen, dass alle Benutzer die mehrstufige Authentifizierung für sicheren Zugriff durchführen können
+- MFA für Administratorrollen erzwingen
+- Richtlinie zum Blockieren veralteter Authentifizierung aktivieren
+
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen oder keine sinnvolle Darstellung der Sicherheitsposition bieten
+
+Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen.
+
+- Benutzerdokumente in OneDrive for Business speichern
+- Office 365 ATP-Richtlinien für sichere Anlagen einrichten
+- Sichere Links zum Überprüfen von URLs in Office 365 einrichten
+- Postfachdelegierung nicht zulassen
+- Anonyme Gastfreigabelinks für Websites und Dokumente zulassen
+- Cloud App Security-Konsole aktivieren
+- Ablaufzeit für externe Freigabelinks konfigurieren
+- Aktivieren der Aufzeichnung von Überwachungsdaten
+- Entdeckung riskanter und nicht konformer Shadow IT-Anwendungen
+- Überprüfen von Berechtigungen und Blockieren riskanter OAuth-Anwendungen
+- Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
+
+#### <a name="removed-not-scored-improvement-actions"></a>"Nicht bewertet"-Verbesserungsmaßnahmen entfernt
 
 Einer der Grundsätze von Secure Score ist, dass die Bewertung standardisiert und einfach nachvollziehbar sein sollte. Verbesserungsmaßnahmen, die nicht messbar sind oder nicht durchgeführt werden können, führen zu Verwirrung. Die Microsoft-Sicherheitsbewertung ist nur sinnvoll, wenn jede Empfehlung einen eindeutigen Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungsmaßnahmen sind nicht messbar.  
 
 Aus diesen Gründen wurden alle nicht bewerteten Verbesserungsmaßnahmen entfernt. Es ist keine Aktion Ihrerseits erforderlich.
 
-### <a name="removed-device-improvement-actions"></a>Verbesserungsmaßnahmen für Geräte entfernte
+#### <a name="removed-device-improvement-actions"></a>Verbesserungsmaßnahmen für Geräte entfernte
 
 Nach einer Auswertung der Kategorie Microsoft-Sicherheitsbewertung  – "Verbessungsmaßnahmen für Geräte" wurde beschlossen, dass diese Maßnahmen zurzeit den Richtlinienstatus und nicht den Konfigurationsstatus von Geräten bewerten. Da die Konfiguration direkt an den Sicherheitsstatus gebunden ist, wurde bei den vorhandenen Gerätemaßnahmen festgestellt, dass sie den Organisationsstatus nicht vollständig wiedergeben.  Wir werden die aktuellen Maßnahmen in der Kategorie "Gerät" entfernen, während wir an einer Reihe von Empfehlungen arbeiten, die die diagnostischen Daten direkt verwenden, um den Sicherheitsstatus der Geräte in vollem Umfang darzustellen.
 
@@ -173,16 +201,7 @@ Die folgenden Verbesserungsmaßnahmen wurden entfernt:
 - Erfordern, dass alle Geräte Erweiterte Sicherheitskonfigurationen haben
 - Wöchentliches Überprüfung von blockierten Geräten
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Verbesserungsmaßnahmen, die die Erwartungen für zuverlässige Messungen nicht erfüllen, wurden entfernt
-
-Um sicherzustellen, dass die Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen:
-
-- Aktivieren der Aufzeichnung von Überwachungsdaten
-- Entdeckung riskanter und nicht konformer Shadow IT-Anwendungen
-- Überprüfen von Berechtigungen und Blockieren riskanter OAuth-Anwendungen
-- Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
-
-### <a name="mfa-improvement-action-updates"></a>Aktualisierungen von MFA-Verbesserungsmaßnahmen
+#### <a name="mfa-improvement-action-updates"></a>Aktualisierungen von MFA-Verbesserungsmaßnahmen
 
 Um den Bedürfnissen von Unternehmen zu entsprechen, Sicherheit zu gewährleisten und gleichzeitig Richtlinien anzuwenden, die mit den Geschäftsabläufen harmonieren, hat die Microsoft-Sicherheitsbewertung drei Verbesserungsmaßnahmen zur mehrstufigen Authentifizierung entfernt und zwei hinzugefügt.
 
@@ -199,7 +218,7 @@ Hinzugefügte Verbesserungsmaßnahmen:
 
  Bei diesen neuen Verbesserungsmaßnahmen müssen die Benutzer oder Administratoren für die Multi-Faktor-Authentifizierung (MFA) in Ihrem Verzeichnis registriert werden, um die korrekten Richtlinien für Ihre organisatorischen Anforderungen zu etablieren. Das Hauptziel ist, flexibel zu sein und gleichzeitig sicherzustellen, dass alle Ihre Benutzer und Administratoren mit mehreren Faktoren oder mit risikobasierten Aufforderungen zur Identitätsüberprüfung authentifiziert werden können. Dies kann in der Art und Weise erfolgen, dass mehrere Richtlinien angewendet werden, die bereichsbezogene Entscheidungen treffen, oder dass Sicherheitsstandardwerte (ab 16. März) festgelegt werden, anhand derer Microsoft entscheiden kann, wann Benutzer für MFA herausgefordert werden.
 
-### <a name="removed-review-improvement-actions"></a>"Überprüfen"-Verbesserungsmaßnahmen entfernt
+#### <a name="removed-review-improvement-actions"></a>"Überprüfen"-Verbesserungsmaßnahmen entfernt
 
 Einer der Grundsätze von Secure Score ist, dass die Bewertung standardisiert und einfach nachvollziehbar sein sollte. Verbesserungsmaßnahmen, die nicht messbar sind oder nicht durchgeführt werden können, führen zu Verwirrung. Eine Microsoft-Sicherheitsbewertung ist nur sinnvoll, wenn jede Empfehlung einen eindeutigen Effekt auf die Bewertung haben kann. An "Überprüfen"-Verbesserungsmaßnahmen wird nicht der gleiche Standard wie an andere Verbesserungsmaßnahmen gelegt.  
 

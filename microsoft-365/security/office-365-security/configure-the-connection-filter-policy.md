@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren der Verbindungsfilter Richtlinie, Zulassungsliste, Sperrliste
+title: Konfigurieren der standardmäßigen Verbindungsfilter Richtlinie, der IP-Zulassungsliste, der IP-Sperrliste, der Option "sichere Liste aktivieren" oder "deaktivieren"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/27/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,150 +15,179 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: Um sicherzustellen, dass e-Mails, die von vertrauenswürdigen Personen gesendet werden, nicht blockiert werden, können Sie die Verbindungsfilter Richtlinie verwenden, um eine Zulassungsliste (auch als Liste sicherer Absender bezeichnet) von IP-Adressen zu erstellen, denen Sie vertrauen. Sie können auch eine Liste blockierter Absender erstellen.
-ms.openlocfilehash: db0d7acc6189f29b247c1dc4004311d2843d139b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Um sicherzustellen, dass e-Mails, die von vertrauenswürdigen Personen gesendet werden, nicht blockiert werden, können Sie die Verbindungsfilter Richtlinie verwenden, um eine Zulassungsliste mit vertrauenswürdigen IP-Adressen zu erstellen. Sie können auch eine IP-Sperrliste blockierter Absender erstellen.
+ms.openlocfilehash: bc0f99102daa422cefe5a7c9cb3e0e5476237f63
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086284"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893998"
 ---
-# <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
+# <a name="configure-connection-filtering-in-office-365"></a>Konfigurieren der Verbindungsfilterung in Office 365
 
-Die meisten von uns haben Freunde und Geschäftspartnern, denen wir vertrauen. Es kann ärgerlich sein, E-Mail dieser Absender in Ihrem Junk-E-Mail-Ordner zu finden oder festzustellen, dass sie vom Spamfilter gänzlich blockiert wurden. Wenn Sie sicherstellen möchten, dass von diesen vertrauenswürdigen Absendern gesendete E-Mail nicht blockiert wird, können Sie die Verbindungsfilterrichtlinie zum Erstellen einer Zulassungsliste (bzw. „Liste sicherer Absender") mit vertrauenswürdigen IP-Adressen nutzen. Sie können auch eine Liste blockierter Absender mit IP-Adressen (zumeist von Spammern) erstellen, von denen Sie nie wieder E-Mail-Nachrichten empfangen möchten.
+Wenn Sie ein Office 365 Kunde mit Postfächern in Exchange Online oder einem Kunden mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer sind, verwenden Sie die Verbindungsfilterung in EoP (insbesondere die standardmäßige Verbindungsfilter Richtlinie), um zu ermitteln gute oder falsche Quell-e-Mail-Server durch Ihre IP-Adressen. Die Hauptkomponenten der standardmäßigen Verbindungsfilter Richtlinie sind:
 
-- Beachten Sie beim Nachdenken über *[Zulassungslisten](create-safe-sender-lists-in-office-365.md)*, dass sich Verbindungsfilter Richtlinien mit den vom Filter *zugelassenen vertrauenswürdigen Konten* befassen. Dies geschieht im Interesse einer genaueren Filterung weniger vertrauenswürdiger oder nicht vertrauenswürdiger e-Mail-Nachrichten, während Sie Ihre Anforderungen beibehalten. In einer Liste der zugelassenen Verbindungsfilter Richtlinie geht es um das Filtern nach den wenigen vertrauenswürdigen IPS aus einem weitaus größeren Konto-und IPS-Pool und um sicherzustellen, dass Ihre vertrauenswürdigen e-Mail-Adressen leichter zugänglich sind
+- **IP-Zulassungsliste**: Überspringen der Spamfilterung für alle eingehenden Nachrichten von den Quell-e-Mail-Servern, die Sie über die IP-Adresse oder den IP-Adressbereich angeben. In Szenarien, in denen die Spamfilterung bei Nachrichten aus diesen Quellen möglicherweise weiterhin auftritt, lesen Sie die Szenarien, in [denen Nachrichten von Quellen in der Liste der zugelassenen IP-Adressen](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) weiter unten in diesem Thema gefiltert werden. Weitere Informationen dazu, wie die IP-Zulassungsliste in Ihre allgemeine Strategie für sichere Absender passt, finden Sie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-- Eine Verbindungsfilter Richtlinie zum Erstellen einer Sperrliste kann stattdessen als Abfangen von less-oder nicht vertrauenswürdigen Konten im Filter betrachtet werden.
+- **IP-Sperrliste**: blockieren Sie alle eingehenden Nachrichten von den Quell-e-Mail-Servern, die Sie über die IP-Adresse oder den IP-Adressbereich angeben. Die eingehenden Nachrichten werden abgelehnt, nicht als Spam gekennzeichnet, und es erfolgt keine zusätzliche Filterung. Weitere Informationen dazu, wie die IP-Sperrliste in Ihre gesamte blockierte Absender Strategie passt, finden Sie unter [Create Block Sender Lists in Office 365](create-block-sender-lists-in-office-365.md).
 
- Weitere Spameinstellungen, die für die gesamte Organisation gelten, sehen Sie sich an, [wie Sie verhindern können, dass gute e-Mail-Nachrichten in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md) , oder [wie Spam-e-Mails in Office 365 reduziert](reduce-spam-email.md)werden. Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
+- Liste **sicherer**Adressen: die Liste *sicherer* Adressen ist eine dynamische Zulassungsliste im Microsoft-Rechenzentrum, für die keine Kundenkonfiguration erforderlich ist. Microsoft identifiziert diese vertrauenswürdigen e-Mail-Quellen von Abonnements für verschiedene Drittanbieter Listen. Sie können die Verwendung der Liste sicherer Adressen aktivieren oder deaktivieren. Sie können die Quell-e-Mail-Server nicht in der Liste sicherer Adressen konfigurieren. Die Spam Filterung wird bei eingehenden Nachrichten von den e-Mail-Servern in der Liste sicherer Adressen übersprungen.
 
-> [!TIP]
-> Möglicherweise möchten Sie das Erstellen von [Listen für zugelassene (oder sichere Absender)](create-safe-sender-lists-in-office-365.md) und [Blockieren von Listen](create-block-sender-lists-in-office-365.md)anhalten und lesen.
+In diesem Thema wird beschrieben, wie Sie die standardmäßige Verbindungsfilter Richtlinie im Office 365 Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Office 365 Kunden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden). Weitere Informationen darüber, wie die Verbindungsfilterung in EoP verwendet wird, sind Teil der allgemeinen Antispam-Einstellungen in Ihrer Organisation, siehe [Anti-Spam Protection in Office 365](anti-spam-protection.md).
 
-Im folgenden Video wird die Vorgehensweise zur Konfiguration der Verbindungsfilterrichtlinie gezeigt:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
+> [!NOTE]
+> Die IP-Zulassungsliste, die Liste sicherer Adressen und die IP-Sperrliste sind ein Teil ihrer allgemeinen Strategie zum Zulassen oder Blockieren von e-Mails in Ihrer Organisation. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md) und [Erstellen von Listen blockierter Absender in Office 365](create-block-sender-lists-in-office-365.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Geschätzte Zeit bis zum Abschließen des Vorgangs: 15 Minuten
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Antispameinstellungen** wechseln möchten, verwenden <https://protection.office.com/antispam>Sie.
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Anti-Spam" im Thema [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) .
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit einer eigenständigen Exchange Online Schutz-PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Um die IP-Adresse des Absenders zu ermitteln, dessen Nachrichten Sie zulassen oder blockieren möchten, können Sie die Internetkopfzeile der Nachricht prüfen. Suchen Sie, wie in [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) beschrieben, nach der CIP-Kopfzeile. Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen e-Mail-Clients finden Sie unter [View Internet Message Headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
+- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein, um die standardmäßige Verbindungsfilter Richtlinie zu ändern. Für den schreibgeschützten Zugriff auf die standardmäßige Verbindungsfilter Richtlinie müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- E-Mails, die von einer IP-Adresse aus der IP-Sperrliste gesendet werden, werden abgelehnt, nicht als Spam gekennzeichnet, und es werden keine weiteren Filter angewendet.
+- Um die Quell-IP-Adressen der e-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Kopfzeilenfeld Connecting IP (**CIP**) im Nachrichtenkopf überprüfen. Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen e-Mail-Clients finden Sie unter [View Internet Message Headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
-- Das folgende Verbindungsfilterverfahren kann auch über Remote-PowerShell erfolgen. Mit dem Cmdlet [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) können Sie Ihre Einstellungen überprüfen und mit dem Cmdlet [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) Ihre Einstellungen für die Verbindungsfilterrichtlinie bearbeiten. Wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online Protection herstellen, können Sie unter [Verbinden mit Exchange Online Protection mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) nachlesen. Wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online herstellen, können Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) nachlesen.
+- Die IP-Zulassungsliste hat Vorrang vor der IP-Sperrliste (eine Adresse in beiden Listen wird nicht blockiert).
 
-## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole
+- Die IP-Zulassungsliste und die IP-Sperrliste unterstützen jeweils maximal 1273 Einträge, wobei es sich bei einem Eintrag um eine einzelne IP-Adresse, einen IP-Adressbereich oder eine CIDR-IP (classly InterDomain Routing) handelt.
 
-Durch Bearbeiten der Verbindungsfilterrichtlinie in der Exchange-Verwaltungskonsole können Sie eine IP-Zulassungs- bzw. -Sperrliste erstellen. Die Einstellungen für die Verbindungsfilterrichtlinie werden nur auf eingehende Nachrichten angewendet.
+## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Verwenden des Security & Compliance Center zum Ändern der standardmäßigen Verbindungsfilter Richtlinie
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Schutz** \> **Verbindungsfilter**, und doppelklicken Sie dann auf die Standardrichtlinie.
+1. Im Security & Compliance Center und wechseln Sie zu **Threat Management** \> **Policy** \> **Anti-Spam**.
 
-2. Klicken Sie auf die Menüoption **Verbindungsfilterung**, und erstellen Sie dann die gewünschten Listen: eine IP-Zulassungsliste, eine IP-Sperrliste oder beides.
+2. Erweitern Sie auf der Seite **Anti-Spam-Einstellungen** die Option **Verbindungsfilter Richtlinie** ,](../../media/scc-expand-icon.png)indem Sie auf Symbol ![erweitern klicken und dann auf **Richtlinie bearbeiten**klicken.
 
-   Klicken Sie zum Erstellen dieser Listen auf ![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif). Geben Sie im folgenden Dialogfeld die IP-Adressen oder den IP-Adressbereich an, und klicken Sie dann auf **OK**. Wiederholen Sie diesen Vorgang, um weitere Adressen hinzuzufügen. (Sie können IP-Adressen auch bearbeiten oder entfernen, nachdem sie hinzugefügt wurden.)
+3. Konfigurieren Sie im **Standard** Flyout, das angezeigt wird, eine der folgenden Einstellungen:
 
-   Geben Sie IPv4-IP-Adressen im Format nnn. nnn. nnn. nnn an, wobei nnn eine Zahl zwischen 0 und 255 ist. Sie können auch CIDR-Bereiche (Classless Inter-Domain Routing) im Format nnn.nnn.nnn.nnn/rr angeben, wobei rr eine Zahl von 24 bis 32 ist. Um Bereiche außerhalb des Bereichs von 24 bis 32 anzugeben, lesen Sie den nächsten Abschnitt, [Weitere Überlegungen beim Konfigurieren von IP-Zulassungslisten](#additional-considerations-when-configuring-ip-allow-lists).
+   - **Beschreibung**: Geben Sie optionalen beschreibenden Text ein.
 
-   > [!NOTE]
-   > Wenn Sie beide Listen eine IP-Adresse hinzufügen, werden von dieser IP-Adresse gesendete e-Mails zugelassen. <br/><br/> Sie können maximal 1273 Einträge angeben, wobei ein Eintrag einer einzelnen IP-Adresse oder einem CIDR-Bereich von IP-Adressen von /24 bis /32 entspricht.<br/><br/> Wenn Sie TLS-verschlüsselte Nachrichten senden, werden IPv6-Adressen und-Adressbereiche nicht unterstützt.
+   - **IP-Zulassungsliste**: Klicken Sie auf **Bearbeiten**. Geben Sie im Flyout **IP-Zulassungsliste** , das angezeigt wird, eine IPv4-Adresse in das Feld **Adresse oder Adressbereich** ein, indem Sie die folgende Syntax verwenden:
 
-3. Aktivieren Sie optional das Kontrollkästchen **Liste sicherer Adressen aktivieren**, um zu verhindern, dass Sie E-Mail von bestimmten bekannten Absendern verpassen. Wie? Microsoft hat verschiedene Quellen von Drittanbietern mit vertrauenswürdigen Absendern abonniert. Mithilfe dieser sicheren Liste sorgen Sie dafür, dass diese vertrauenswürdigen Absender nicht versehentlich als Spammer gekennzeichnet werden. Es wird empfohlen, diese Option auszuwählen, da Sie die Anzahl falsch positiver e-Mail-Nachrichten (gute e-Mails, die als Spam klassifiziert werden) reduzieren sollte.
+     - Einzelne IP-Adresse: zum Beispiel 192.168.1.1.
 
-4. Klicken Sie auf **Speichern**. Im Bereich auf der rechten Seite wird eine Zusammenfassung der Standardrichtlinieneinstellungen angezeigt.
+     - IP-Bereich: beispielsweise 192.168.0.1-192.168.0.254.
 
-## <a name="additional-considerations-when-configuring-ip-allow-lists"></a>Weitere Überlegungen zum Konfigurieren von Listen zugelassener IP-Adressen
+     - CIDR-IP: beispielsweise 192.168.0.1/25. Gültige Netzwerkmasken Werte sind/24 bis/32. Wenn Sie die Spamfilterung für CIDR-IP-Masken Werte/1 bis/23 überspringen möchten, lesen Sie den Abschnitt [Spamfilterung für eine CIDR-IP außerhalb des verfügbaren Bereichs](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) weiter unten in diesem Thema.
 
-Folgende Überlegungen sollten Sie anstellen, wenn Sie eine Liste zugelassener IP-Adressen konfigurieren möchten.
+     Klicken Sie zum Hinzufügen der IP-Adresse oder des Adressbereichs](../../media/ITPro-EAC-AddIcon.png)auf Add-Symbol **Hinzufügen** ![. Um einen Eintrag zu entfernen, wählen Sie den Eintrag in **zulässiger IP-Adresse** aus](../../media/scc-remove-icon.png), **und klicken Sie dann auf** ![entfernen. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Angeben eines CIDR-Bereichs, der außerhalb des empfohlenen Bereichs liegt
+   - **IP-Sperrliste**: Klicken Sie auf **Bearbeiten**. Geben Sie im Flyout **IP-Sperrliste** , das angezeigt wird, eine einzelne IP-Adresse, einen IP-Bereich oder eine CIDR-IP in das Feld **Adresse oder Adressbereich** ein, wie zuvor in der Einstellung **IP-Zulassungsliste** beschrieben.
 
-Um einen CIDR-IP-Adressbereich von/1 bis/23 anzugeben, müssen Sie eine e-Mail-Fluss Regel erstellen, die auf dem IP-Adressbereich arbeitet, der die SCL-Bewertung (Spam Confidence Level) zur **Umgehung der Spamfilterung** festlegt (d. h., alle Nachrichten, die in diesem IP-Adressbereich empfangen werden, werden auf "nicht Spam" festgelegt Wenn jedoch eine dieser IP-Adressen in einer der proprietären Sperrlisten von Microsoft oder in einem unserer Sperrlisten von Drittanbietern angezeigt wird, werden diese Nachrichten weiterhin blockiert. Es wird daher dringend empfohlen, den IP-Adressbereich/24 to/32 zu verwenden.
+     Klicken Sie zum Hinzufügen der IP-Adresse oder des Adressbereichs](../../media/ITPro-EAC-AddIcon.png)auf Add-Symbol **Hinzufügen** ![. Um einen Eintrag zu entfernen, wählen Sie den Eintrag unter **blockierte IP-Adresse** aus,](../../media/scc-remove-icon.png) **und klicken Sie** ![dann auf entfernen. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-Führen Sie die folgenden Schritte aus, um diese e-Mail-Fluss Regel zu erstellen.
+   - Aktivieren Sie die Option **sichere Liste**: Aktivieren oder deaktivieren Sie die Verwendung der Liste sicherer Adressen, um bekannte, gute Absender zu identifizieren, die die Spamfilterung überspringen sollen.
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
+4. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-2. Klicken Sie auf ![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif) und wählen Sie dann **Neue Regel erstellen** aus.
+## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Verwenden Sie das Security & Compliance Center, um die standardmäßige Verbindungsfilter Richtlinie anzuzeigen.
 
-3. Benennen Sie die Regel, und klicken Sie dann auf **Weitere Optionen**.
+1. Im Security & Compliance Center und wechseln Sie zu **Threat Management** \> **Policy** \> **Anti-Spam**.
 
-4. Wählen Sie unter **Diese Regel wird ausgeführt, wenn** die Option **Absender**, und wählen Sie dann **IP-Adresse ist in keinem dieser Bereiche oder stimmt mit keinem Bereich völlig überein**.
+2. Klicken Sie auf der Seite **Anti-Spam-Einstellungen** auf die Dropdownliste neben der Standardrichtlinie **Verbindungsfilter Richtlinie**.
 
-5. Geben Sie in die IP- **Adressen angeben**den IP-Adressbereich ein, klicken](../../media/ITPro-EAC-AddIcon.gif)Sie auf Add-Symbol **Hinzufügen** ![, und klicken Sie dann auf **OK**.
+3. Die Richtlinieneinstellungen werden in der Dropdownliste angezeigt, die geöffnet wird.
 
-6. Legen Sie unter **Gehen Sie folgendermaßen vor:** die Aktion fest, indem Sie erst **Nachrichteneigenschaften ändern** wählen und dann die **SCL-Bewertung (Spam Confidence Level) festlegen**. Wählen Sie im Feld **SCL angeben** die Option **Spamfilter umgehen**, und klicken Sie auf **OK**.
+## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-modify-the-default-connection-filter-policy"></a>Verwenden Sie Exchange Online PowerShell oder eigenständiger Exchange Online Protection PowerShell, um die standardmäßige Verbindungsfilter Richtlinie zu ändern.
 
-7. Auf Wunsch können Sie unter anderem auch Einstellungen zur Überwachung der Regel, zum Testen der Regel und zum Aktivieren der Regel in einem bestimmten Zeitraum vornehmen. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. [Verfahren für Nachrichtenfluss Regeln in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) enthält weitere Informationen zu diesen Auswahlmöglichkeiten.
+Verwenden Sie die folgende Syntax:
 
-8. Klicken Sie auf **Speichern** , um die Regel zu speichern. Die Regel wird in der Liste der Regeln angezeigt.
+```powershell
+Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
+```
 
-Nachdem Sie die Regel erstellt und erzwungen haben, wird die Spamfilterung für den angegebenen IP-Adressbereich von dem Dienst umgangen.
+**Hinweise**:
 
-### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Bereichsfestlegung für Ausnahmen von einer Liste der zugelassenen IP-Adressen einer bestimmten Domäne
+- Gültige IP-Adress-oder Adressbereichs Werte sind:
 
-Sie sollten die IP-Adresse (oder IP-Adressbereiche) für alle Ihre Domänen, die Sie als sicher einschätzen, der Liste der zugelassenen IP-Adressen hinzufügen. Wenn Ihr IP-Zulassungslisten Eintrag jedoch nicht auf alle Ihre Domänen angewendet werden soll, können Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, die bestimmte Domänen außer Kraft tritt.
+  - Einzelne IP-Adresse: zum Beispiel 192.168.1.1.
 
-Angenommen, Sie verfügen über drei Domänen: ContosoA.com, ContosoB.com und ContosoC.com, und Sie möchten die IP-Adresse hinzufügen (aus Gründen der Einfachheit, Let es Use 1.2.3.4) und die Filterung nur für Domänen ContosoB.com überspringen. Sie würden eine IP-Zulassungsliste für 1.2.3.4 erstellen, mit der die SCL-Bewertung (Spam Confidence Level) auf-1 (d. h., dass Sie als nicht-Spam klassifiziert ist) für alle Domänen festgelegt wird. Anschließend können Sie eine e-Mail-Fluss Regel erstellen, mit der die SCL-Bewertung für alle Domänen außer ContosoB.com auf 0 festgelegt wird. Dies führt dazu, dass die Nachricht für alle der IP-Adresse zugeordneten Domänen mit Ausnahme von ContosoB.com, die als Ausnahme in der Regel aufgeführt sind, erneut gescannt wird. ContosoB.com hat weiterhin den SCL-Wert von-1, was bedeutet, dass die Filterung übersprungen werden kann, wohingegen ContosoA.com und ContosoC.com über SCLs von 0 verfügen, was bedeutet, dass Sie vom Inhaltsfilter erneut überprüft werden.
+  - IP-Bereich: beispielsweise 192.168.0.1-192.168.0.254.
 
-Führen Sie dazu die folgenden Schritte aus:
+  - CIDR-IP: beispielsweise 192.168.0.1/25. Gültige Netzwerkmasken Werte sind/24 bis/32.
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
+- Verwenden *overwrite* Sie die folgende Syntax, um vorhandene Einträge mit den angegebenen Werten zu überschreiben `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN`:.
 
-2. Klicken Sie auf ![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif) und wählen Sie dann **Neue Regel erstellen** aus.
+- Verwenden Sie die folgende Syntax, um IP-Adressen oder Adressbereiche *hinzuzufügen oder zu entfernen* , ohne andere `@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}`vorhandene Einträge zu beeinträchtigen:.
 
-3. Benennen Sie die Regel, und klicken Sie dann auf **Weitere Optionen**.
+- Verwenden Sie den Wert `$null`, um die IP-Zulassungsliste oder IP-Sperrliste zu leeren.
 
-4. Wählen Sie unter **Diese Regel wird ausgeführt, wenn** die Option **Absender**, und wählen Sie dann **IP-Adresse ist in keinem dieser Bereiche oder stimmt mit keinem Bereich völlig überein**.
+In diesem Beispiel werden die IP-Zulassungsliste und die IP-Sperrliste mit den angegebenen IP-Adressen und Adressbereichen konfiguriert.
 
-5. Geben Sie im Feld **IP-Adressen angeben** die IP-Adresse oder den IP-Adressbereich an, den Sie in die IP-Zulassungs](../../media/ITPro-EAC-AddIcon.gif)Liste eingegeben haben, klicken Sie auf Add-Symbol **Hinzufügen** ![, und klicken Sie dann auf **OK**.
+```powershell
+Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192.168.1.23 -IPBlockList 10.10.10.0/25,172.17.17.0/24
+```
 
-6. Legen **Sie untergehen Sie folgen**dermaßen vor fest, indem Sie die Aktion **Nachrichteneigenschaften ändern** auswählen und dann **die SCL-Bewertung (Spam Confidence Level) festlegen**. Wählen Sie im Feld **SCL angeben** die Option **0**aus, und klicken Sie auf **OK**.
+In diesem Beispiel werden die angegebenen IP-Adressen und Adressbereiche aus der IP-Zulassungsliste hinzugefügt und entfernt.
 
-7. Klicken Sie auf **Ausnahme hinzufügen**, und wählen Sie unter **außer wenn**, **den Absender** aus, und wählen Sie **Domäne ist**.
+```powershell
+Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
+```
 
-8. Geben Sie in das Feld **Domäne angeben** die Domäne ein, für die Sie die Spamfilterung umgehen möchten, beispielsweise **contosob.com**. Klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, um es in die Liste der Ausdrücke zu versetzen. Wiederholen Sie diesen Schritt, falls Sie zusätzliche Domänen als Ausnahmen hinzufügen möchten, und klicken Sie abschließend auf **OK**.
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy).
 
-9. Auf Wunsch können Sie unter anderem auch Einstellungen zur Überwachung der Regel, zum Testen der Regel und zum Aktivieren der Regel in einem bestimmten Zeitraum vornehmen. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. [Verfahren für Nachrichtenfluss Regeln in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) enthält weitere Informationen zu diesen Auswahlmöglichkeiten.
+## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
-10. Klicken Sie auf **Speichern** , um die Regel zu speichern. Die Regel wird in der Liste der Regeln angezeigt.
+Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die standardmäßige Verbindungsfilter Richtlinie erfolgreich geändert haben:
 
-Nach Erstellen und Erzwingen der Regel wird der Spamfilter für die von Ihnen angegebene IP-Adresse bzw. IP-Adressbereich nur für die von Ihnen eingegebene Domänenausnahme umgangen.
+- Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam** \> klicken Sie neben **Verbindungsfilter Richtlinie (immer ein**) auf die Dropdownliste, und überprüfen Sie die Einstellungen.
 
-### <a name="scenarios-where-allowed-ip-addresses-are-still-filtered"></a>Szenarien, in denen zulässige IP-Adressen noch gefiltert werden
+- Führen Sie den folgenden Befehl in Exchange Online PowerShell oder eigenständigen Exchange Online Protection PowerShell aus, und überprüfen Sie die Einstellungen:
 
-Nachrichten von zulässigen IP-Adressen, die Sie in Verbindungsfilter Richtlinien konfiguriert haben, unterliegenweiterhin Spamfilterung in den folgenden Szenarien:
+  ```powershell
+  Get-HostedConnectionFilterPolicy -Identity Default
+  ```
 
-- Die Quell-IP-Adresse in ihrer Verbindungsfilter Richtlinie wird auch in einem lokalen, IP-basierten eingehenden Connector in *einem beliebigen* Mandanten (nennen wir diesen Mandanten a) **und** dem Mandanten a und dem Exchange Online Schutz Server, der zuerst die Nachricht in Office 365 findet, in der gleichen Active Directory Gesamtstruktur in den Microsoft-Datencentern aufgeführt ist, konfiguriert. In diesem Szenario wird **IPV: Cal** zu den [Antispam-Nachrichtenkopf Zeilen](anti-spam-message-headers.md) der Nachricht hinzugefügt (womit die Nachricht umgangen wird Spamfilterung), aber die Nachricht ist weiterhin Gegenstand der Spamfilterung.
+- Senden Sie eine Testnachricht aus einem Eintrag in der Liste der zugelassenen IP-Adressen.
 
-- Ihr Mandant (in dem Sie die Verbindungsfilter Richtlinie konfiguriert haben) und der Exchange Online Schutz Server, der die Nachricht zuerst in Office 365 trifft, in denen sich beide in unterschiedlichen Active Directory Gesamtstrukturen in den Microsoft-Rechenzentren befinden. In diesem Szenario wird **IPV: Cal** nicht den Nachrichtenkopfzeilen hinzugefügt, sodass die Nachricht weiterhin der Spamfilterung unterliegt.
+## <a name="additional-considerations-for-the-ip-allow-list"></a>Weitere Überlegungen zur IP-Zulassungsliste
 
-Wenn Sie auf eines dieser Szenarien stoßen, können Sie eine Nachrichtenfluss Regel in der Exchange-Verwaltungskonsole mit (mindestens) den folgenden Einstellungen erstellen, um sicherzustellen, dass Nachrichten von der IP-Adresse oder Adressen die Spamfilterung umgehen:
+In den folgenden Abschnitten werden zusätzliche Elemente aufgeführt, die Sie kennen müssen, wenn Sie die IP-Zulassungsliste konfigurieren.
+
+### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>Überspringen der Spamfilterung für eine CIDR-IP außerhalb des verfügbaren Bereichs
+
+Wie weiter oben in diesem Thema beschrieben, können Sie nur eine CIDR-IP mit der Netzwerkmaske/24 to/32 in der Liste der zugelassenen IP-Adressen verwenden. Um die Spamfilterung bei Nachrichten von Quell-e-Mail-Servern im Bereich/1 bis/23 zu überspringen, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden. Es wird jedoch empfohlen, dass Sie dies nicht tun, wenn dies möglich ist, da die Nachrichten blockiert werden, wenn eine IP-Adresse im/1 to/23 CIDR-IP-Bereich in einem der proprietären oder von Drittanbieter-Sperrlisten von Microsoft angezeigt wird.
+
+Da Sie sich nun vollständig mit den potenziellen Problemen vertraut machen, können Sie eine e-Mail-Fluss Regel mit den folgenden Einstellungen (mindestens) erstellen, um sicherzustellen, dass Nachrichten von diesen IP-Adressen die Spamfilterung überspringen:
+
+- Regelbedingung: **diese Regel anwenden, wenn** \> sich die IP-Adresse **des Absenders** \> **in einem dieser Bereiche befindet oder genau übereinstimmt** \> (geben Sie Ihre CIDR-IP mit der Netzwerkmaske a/1 bis/23 ein).
+
+- Regelaktion: **Ändern der Nachrichteneigenschaften** \> **legen Sie die Spam Confidence Level (SCL) Bypass-** \> **Spamfilterung**fest.
+
+Sie können die Regel überwachen, die Regel testen, die Regel während eines bestimmten Zeitraums und andere Auswahlen aktivieren. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. Weitere Informationen finden Sie unter [Verwalten von Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+
+### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>Überspringen der Spamfilterung für selektive e-Mail-Domänen aus derselben Quelle
+
+Das Hinzufügen einer IP-Adresse oder eines Adressbereichs zur IP-Zulassungsliste bedeutet normalerweise, dass Sie allen eingehenden Nachrichten von dieser e-Mail-Quelle vertrauen. Was geschieht, wenn diese Quelle e-Mails aus mehreren Domänen sendet und Sie die Spamfilterung für einige dieser Domänen überspringen möchten, aber nicht für andere? Sie können nicht allein die IP-Zulassungsliste verwenden, aber Sie können die IP-Zulassungsliste in Kombination mit einer e-Mail-Fluss Regel verwenden.
+
+Beispielsweise sendet der Quell-e-Mail-Server 192.168.1.25 e-Mails von den Domänen contoso.com, fabrikam.com und tailspintoys.com, aber Sie möchten die Spamfilterung für Nachrichten von Absendern in fabrikam.com nur überspringen. Führen Sie dazu die folgenden Schritte aus:
+
+1. Fügen Sie 192.168.1.25 zur Liste der zugelassenen IP-Adressen hinzu.
+
+2. Konfigurieren Sie eine e-Mail-Fluss Regel mit den folgenden Einstellungen (mindestens):
+
+   - Regelbedingung: **diese Regel anwenden, wenn** \> sich die IP-Adresse **des Absenders** \> **in einem dieser Bereiche befindet oder genau mit 192.168.1.25 übereinstimmt** \> (die gleiche IP-Adresse oder der gleiche Adressbereich, die Sie der Liste der zugelassenen IP-Adressen im vorherigen Schritt hinzugefügt haben).
+
+   - Regelaktion: **Ändern der Nachrichteneigenschaften** \> **legen Sie die SCL-Bewertung (Spam Confidence Level)** \> **0**fest.
+
+   - Regel Ausnahme: **die Absender** \> **Domäne ist** \> fabrikam.com (nur die Domäne oder Domänen, deren Spamfilterung übersprungen werden soll).
+
+### <a name="scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered"></a>Szenarien, in denen Nachrichten von Quellen in der IP-Zulassungsliste weiterhin gefiltert werden
+
+Nachrichten von einem e-Mail-Server in Ihrer IP-Zulassungsliste unterliegenweiterhin Spamfilterung in den folgenden Szenarien:
+
+- Eine IP-Adresse in Ihrer IP-Zulassungsliste wird auch in einem lokalen, IP-basierten eingehenden Connector in *einem beliebigen* Mandanten in Office 365 (nennen wir diesen Mandanten a) **und** dem Mandanten a und dem EoP-Server, der zuerst die Nachricht Office 365 in der *gleichen* Active Directory Gesamtstruktur in den Microsoft-Rechenzentren findet, konfiguriert. In diesem Szenario wird **IPV: Cal** *is* zu den [Antispam-Nachrichtenkopf Zeilen](anti-spam-message-headers.md) der Nachricht hinzugefügt (womit die Nachricht umgangen wird Spamfilterung), aber die Nachricht ist weiterhin Gegenstand der Spamfilterung.
+
+- Ihr Mandant, der die Liste der zugelassenen IP-Adressen enthält, und der EoP-Server, der die Nachricht zuerst in Office 365 trifft, in denen sich beide in *unterschiedlichen* Active Directory Gesamtstrukturen in den Microsoft-Rechenzentren befinden. In diesem Szenario wird **IPV: Cal** *nicht* den Nachrichtenkopfzeilen hinzugefügt, sodass die Nachricht weiterhin der Spamfilterung unterliegt.
+
+Wenn beide Szenarien auftreten, können Sie eine e-Mail-Fluss Regel mit den folgenden Einstellungen (mindestens) erstellen, um sicherzustellen, dass Nachrichten von den problematischen IP-Adressen die Spamfilterung überspringen:
 
 - Regelbedingung: **diese Regel anwenden, wenn** \> sich die IP-Adresse **des Absenders** \> **in einem dieser Bereiche befindet oder genau übereinstimmt** \> (Ihre IP-Adresse oder Adressen).
 
 - Regelaktion: **Ändern der Nachrichteneigenschaften** \> **legen Sie die Spam Confidence Level (SCL) Bypass-** \> **Spamfilterung**fest.
 
-Dies ist im Wesentlichen die gleiche Regel Erstellungs Prozedur aus dem vorherigen [Scoping einer IP-Zulassungslisten Ausnahme für einen bestimmten Domänen](#scoping-an-ip-allow-list-exception-for-a-specific-domain) Abschnitt.
-
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 
 ||
 |:-----|
-|![Das Kurzsymbol für LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Neu bei Office 365?** Entdecken Sie die kostenlosen Videokurse für **Office 365 admins and IT pros**, präsentiert von LinkedIn Learning.|
-
-## <a name="for-more-information"></a>Weitere Informationen
-
-[Listen sicherer und blockierter Absender in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
-
-[Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md)
-
-[Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
-
-[Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md)
-
-[Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)
+|![Das Kurzsymbol für LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Neu bei Office 365?** Entdecken Sie die kostenlosen Videokurse für **Office 365-Administratoren und IT-Experten**, präsentiert von LinkedIn Learning.|

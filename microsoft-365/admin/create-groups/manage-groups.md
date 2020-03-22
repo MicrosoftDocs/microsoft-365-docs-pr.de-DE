@@ -1,8 +1,7 @@
 ---
 title: Verwalten von Office 365 Gruppe im Admin Center
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,154 +19,90 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Hier erfahren Sie, wie Sie Office 365 Gruppen verwalten, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: ed965cab10899624d85763b3f91f20b2df508c0e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 189a41c5049110100b548ca6f906b1324aeb1431
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241346"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894527"
 ---
 # <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Office 365 Gruppe im Microsoft 365 Admin Center
 
 Nachdem Sie [eine Office 365 Gruppe erstellt](create-groups.md) und Gruppenmitglieder hinzugefügt haben, können Sie Ihre Gruppe konfigurieren. Sie können den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder verwalten und angeben, ob externe Absender die Gruppe per e-Mail senden können und ob Kopien von Gruppenunterhaltungen an Mitglieder gesendet werden sollen. 
 
-## <a name="edit-a-group-name"></a>Bearbeiten eines Gruppennamens
+## <a name="edit-the-group-name-or-description"></a>Bearbeiten des Gruppennamens oder der Beschreibung
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen,</a> und aktivieren Sie das Kontrollkästchen für die Gruppe, die Sie ändern möchten.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie **Namen bearbeiten**aus.
+2. Wählen Sie die Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf **Name und Beschreibung bearbeiten**.
 
-3. Geben Sie im Bereich **Details bearbeiten** einen neuen Namen für die Gruppe ein, und wählen Sie dann **Speichern**aus.
+3. Aktualisieren Sie den Namen und die Beschreibung, und wählen Sie dann **Speichern**aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, die Sie ändern möchten.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie neben **Name**die Option **Bearbeiten**aus.
+2. Wählen Sie die Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf **Name und Beschreibung bearbeiten**.
 
-3. Geben Sie im Bereich **Details bearbeiten** einen neuen Namen für die Gruppe ein, und wählen Sie dann **Speichern**aus.
+3. Aktualisieren Sie den Namen und die Beschreibung, und wählen Sie dann **Speichern**aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, die Sie ändern möchten.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie neben **Name**die Option **Bearbeiten**aus.
+2. Wählen Sie die Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf **Name und Beschreibung bearbeiten**.
 
-3. Geben Sie im Bereich **Details bearbeiten** einen neuen Namen für die Gruppe ein, und wählen Sie dann **Speichern**aus.
+3. Aktualisieren Sie den Namen und die Beschreibung, und wählen Sie dann **Speichern**aus.
 
 ::: moniker-end
 
-
-## <a name="edit-a-group-description"></a>Bearbeiten einer Gruppenbeschreibung
+## <a name="manage-group-owners-and-members"></a>Verwalten von Gruppenbesitzern und-Mitgliedern
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen,</a> und aktivieren Sie das Kontrollkästchen für die Gruppe, deren Beschreibung Sie ändern möchten.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie **Beschreibung bearbeiten**aus.
+2. Klicken Sie auf den Namen der Gruppe, die Sie verwalten möchten, um den Bereich Einstellungen zu öffnen.
 
-3. Geben Sie im Bereich **Details bearbeiten** eine neue Beschreibung für die Gruppe ein, und wählen Sie dann **Speichern**aus.
+3. Wählen Sie auf der Registerkarte **Mitglieder** aus, ob Sie Besitzer oder Mitglieder verwalten möchten.
+
+4. Klicken Sie auf **Hinzufügen** , um jemanden hinzuzufügen oder auf **X** , um jemanden zu entfernen.
+
+5. Klicken Sie auf **Schließen**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, deren Beschreibung Sie ändern möchten.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie neben **Beschreibung**die Option **Bearbeiten**aus.
+2. Klicken Sie auf den Namen der Gruppe, die Sie verwalten möchten, um den Bereich Einstellungen zu öffnen.
 
-3. Geben Sie im Bereich **Details bearbeiten** eine neue Beschreibung für die Gruppe ein, und wählen Sie dann **Speichern**aus.
+3. Wählen Sie auf der Registerkarte **Mitglieder** aus, ob Sie Besitzer oder Mitglieder verwalten möchten.
 
-::: moniker-end
+4. Klicken Sie auf **Hinzufügen** , um jemanden hinzuzufügen oder auf **X** , um jemanden zu entfernen.
 
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, deren Beschreibung Sie ändern möchten.
-
-2. Wählen Sie neben **Beschreibung**die Option **Bearbeiten**aus.
-
-3. Geben Sie im Bereich **Details bearbeiten** eine neue Beschreibung für die Gruppe ein, und wählen Sie dann **Speichern**aus.
-
-::: moniker-end
-
-
-## <a name="manage-group-owners"></a>Verwalten von Gruppenbesitzern
-
-::: moniker range="o365-worldwide"
-
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
-
-2. Wählen Sie den Namen der Gruppe aus, die Sie verwalten möchten, um den Bereich Einstellungen zu öffnen.
-
-3. Wählen Sie auf der Registerkarte **Mitglieder** unter **Besitzer**die Option **Alle anzeigen und Besitzer verwalten**aus, und führen Sie einen der folgenden Schritte aus:
-
-    - Klicken Sie zum Hinzufügen eines Besitzers auf **Besitzer hinzufügen** und suchen oder Auswählen eines Besitzers, und wählen Sie dann **Speichern**aus. 
-    - Um einen Besitzer zu entfernen, suchen oder wählen Sie einen Gruppenbesitzer aus, wählen Sie das **X** neben dem Namen der Person aus, und wählen Sie dann **Speichern**aus. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, deren Besitzer (n) Sie ändern möchten.
-
-2. Wählen Sie neben **Besitzer**die Option **Bearbeiten**aus, und führen Sie einen der folgenden Schritte aus:
-
-    - Klicken Sie zum Hinzufügen eines Besitzers auf **Besitzer hinzufügen** und suchen oder Auswählen eines Besitzers, und wählen Sie dann **Speichern**aus. 
-    - Um einen Besitzer zu entfernen, suchen oder wählen Sie einen Gruppenbesitzer aus, wählen Sie das **X** neben dem Namen der Person aus, und wählen Sie dann **Speichern**aus. 
+5. Klicken Sie auf **Schließen**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, deren Besitzer (n) Sie ändern möchten.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie neben **Besitzer**die Option **Bearbeiten**aus, und führen Sie einen der folgenden Schritte aus:
+2. Klicken Sie auf den Namen der Gruppe, die Sie verwalten möchten, um den Bereich Einstellungen zu öffnen.
 
-    - Klicken Sie zum Hinzufügen eines Besitzers auf **Besitzer hinzufügen** und suchen oder Auswählen eines Besitzers, und wählen Sie dann **Speichern**aus. 
-    - Um einen Besitzer zu entfernen, suchen oder wählen Sie einen Gruppenbesitzer aus, wählen Sie das **X** neben dem Namen der Person aus, und wählen Sie dann **Speichern**aus. 
+3. Wählen Sie auf der Registerkarte **Mitglieder** aus, ob Sie Besitzer oder Mitglieder verwalten möchten.
 
-::: moniker-end
+4. Klicken Sie auf **Hinzufügen** , um jemanden hinzuzufügen oder auf **X** , um jemanden zu entfernen.
 
-## <a name="manage-group-members"></a>Verwalten von Gruppenmitgliedern
-
-::: moniker range="o365-worldwide"
-
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
-
-2. Wählen Sie den Namen der Gruppe aus, für die Sie Mitglieder verwalten möchten, um den Bereich "Einstellungen" zu öffnen.
-
-3. Wählen Sie auf der Registerkarte **Mitglieder** unter **Mitglieder**die Option **Alle anzeigen und Mitglieder verwalten**aus, und führen Sie einen der folgenden Schritte aus:
-
-    - Um ein Mitglied hinzuzufügen, wählen Sie **Mitglieder hinzufügen**, suchen oder Auswählen eines Mitglieds aus, und wählen Sie dann **Speichern**aus. 
-    - Um ein Mitglied zu entfernen, suchen oder wählen Sie ein Gruppenmitglied aus, wählen Sie das **X** neben dem Namen der Person aus, und wählen Sie dann **Speichern**aus. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, deren Mitglieder Sie ändern möchten.
-
-2. Wählen Sie neben **Mitglieder**die Option **Bearbeiten**aus, und führen Sie eine der folgenden Aktionen aus:
-
-    - Um ein Mitglied hinzuzufügen, wählen Sie **Mitglieder hinzufügen**, suchen oder Auswählen eines Mitglieds aus, und wählen Sie dann **Speichern**aus. 
-    - Um ein Mitglied zu entfernen, suchen oder wählen Sie ein Gruppenmitglied aus, wählen Sie das **X** neben dem Namen der Person aus, und wählen Sie dann **Speichern**aus. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie den Namen der Gruppe aus, deren Mitglieder Sie ändern möchten.
-
-2. Wählen Sie neben **Mitglieder**die Option **Bearbeiten**aus, und führen Sie eine der folgenden Aktionen aus:
-
-    - Um ein Mitglied hinzuzufügen, wählen Sie **Mitglieder hinzufügen**, suchen oder Auswählen eines Mitglieds aus, und wählen Sie dann **Speichern**aus. 
-    - Um ein Mitglied zu entfernen, suchen oder wählen Sie ein Gruppenmitglied aus, wählen Sie das **X** neben dem Namen der Person aus, und wählen Sie dann **Speichern**aus.  
+5. Klicken Sie auf **Schließen**.
 
 ::: moniker-end
 
@@ -181,11 +116,13 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen,</a> und wählen Sie dann den Namen der Gruppe aus, die Sie ändern möchten. 
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Kopien von Gruppenunterhaltungen und Ereignissen an Gruppenmitglieder senden** aus, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten.
+2. Klicken Sie auf den Namen der Gruppe, die Sie verwalten möchten, um den Bereich Einstellungen zu öffnen.
 
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Kopien von Gruppenunterhaltungen und Ereignissen an Gruppenmitglieder senden** aus, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten.
+
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -195,7 +132,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 2. Wählen Sie neben **Name**die Option **Bearbeiten**aus.
 
-3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. ****
+3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
 4. Klicken Sie auf **Speichern**.
 
@@ -207,7 +144,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 2. Wählen Sie neben **Name**die Option **Bearbeiten**aus.
 
-3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. ****
+3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
 4. Klicken Sie auf **Speichern**.
 
@@ -219,9 +156,11 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
  
 ::: moniker range="o365-worldwide"
 
-1. Aktualisieren Sie Ihre Admin Center-Seite, damit Ihre neue Gruppe angezeigt wird.
+1. Erweitern Sie im Admin Center den Knoten **Gruppen**, und klicken Sie dann auf **Gruppen**.
 
-2. Wählen Sie in der Liste Admin Center-Gruppen den Namen der Gruppe aus, die Sie ändern möchten, und wählen Sie dann auf der Registerkarte **Einstellungen** die Option **externe Absender können diese Gruppe per e-Mail zulassen**aus.
+2. Klicken Sie auf den Namen der Gruppe, die Sie verwalten möchten, um den Bereich Einstellungen zu öffnen.
+
+3. Wählen Sie in der Liste Admin Center-Gruppen den Namen der Gruppe aus, die Sie ändern möchten, und wählen Sie dann auf der Registerkarte **Einstellungen** die Option **externe Absender können diese Gruppe per e-Mail zulassen**aus.
     
 4. Klicken Sie auf **Speichern**.
 

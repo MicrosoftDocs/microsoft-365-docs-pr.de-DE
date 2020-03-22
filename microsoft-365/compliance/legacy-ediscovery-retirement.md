@@ -10,14 +10,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 761378f848c358f2234576ac87507b91c55f4ccf
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857368"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894852"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -46,11 +45,13 @@ Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 3
 
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
+   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+   
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
    
-   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+
 
 - [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), bei dem es sich um die erste Version von Advanced eDiscovery handelt, auf die über einen eDiscovery-Fall im Office 365 Security & Compliance Center zugegriffen wird.
 
@@ -294,9 +295,9 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </tbody>
 </table>
 
-## <a name="getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api"></a>GetSearchableMailboxes-, SetHoldOnMailboxes-und GetHoldOnMailboxes-Vorgänge in der EWS-API
+## <a name="exchange-web-services-api-operations"></a>Exchange Webdienste-API-Vorgänge
 
-Diese drei Exchange Webdienste-APIs werden von der in-Place-eDiscovery-&-Funktion in der Exchange-Verwaltungskonsole und den entsprechenden ** \*-MailboxSearch-** Cmdlets in Exchange Online PowerShell verwendet. Sie werden auch im Rahmen des Ausscheidens der anderen vorversions-eDiscovery-Tools in den Ruhestand gehen.
+Diese Vorgänge in der Exchange Webdienste-API werden von der Funktion in-Place-eDiscovery-& in der Exchange-Verwaltungskonsole und den entsprechenden ** \*-MailboxSearch-** Cmdlets in Exchange Online PowerShell verwendet. Sie werden auch im Rahmen des Ausscheidens der anderen vorversions-eDiscovery-Tools in den Ruhestand gehen.
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
 
@@ -310,7 +311,7 @@ Diese drei Exchange Webdienste-APIs werden von der in-Place-eDiscovery-&-Funktio
 
 ### <a name="timeline"></a>Zeitachse
 
-- 1. April 2020: die GetSearchableMailboxes-, SetHoldOnMailboxes-und GetHoldOnMailboxes-Vorgänge sind nicht mehr verfügbar, und der Microsoft-Support bietet keine Unterstützung mehr.
+- 1. April 2020: die GetSearchableMailboxes-, SearchMailboxes-, SetHoldOnMailboxes-und GetHoldOnMailboxes-Vorgänge sind nicht mehr verfügbar, und der Microsoft-Support bietet keine Unterstützung mehr.
 
 ## <a name="advanced-ediscovery-v10"></a>Erweiterte eDiscovery v 1.0
 

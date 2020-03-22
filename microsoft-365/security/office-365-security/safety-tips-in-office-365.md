@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die durch den Spamfilter von EoP und Office 365 gefiltert werden.
-ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082334"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895191"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sicherheitstipps in E-Mail-Nachrichten in Office 365
 
@@ -58,11 +58,6 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
 
 ## <a name="working-with-safety-tips"></a>Arbeiten mit Sicherheitstipps
 
-Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jede Nachricht eine erhalten wird. Office 365 Administratoren können Sicherheitstipps für andere e-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md).
+Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jede Nachricht eine erhalten wird. Office 365 Administratoren können Sicherheitstipps für andere e-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
 Wenn Sie nicht einverstanden sind, wie Office 365 und EOP eine Nachricht kategorisiert haben (das heißt, es handelt sich nicht um Spam oder es ist nicht legitim), können Sie die Nachrichten zur Analyse übermitteln, um ihre Benutzerfreundlichkeit zu verbessern. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden und uns dabei zu verbessern.
-
-## <a name="see-also"></a>Siehe auch
-
-[Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md)
-

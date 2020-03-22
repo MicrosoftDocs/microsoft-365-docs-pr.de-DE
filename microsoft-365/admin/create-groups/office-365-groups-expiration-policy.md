@@ -1,8 +1,7 @@
 ---
 title: Ablaufrichtlinie für Office 365-Gruppen
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -19,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Office 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352586"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894515"
 ---
-# <a name="office-365-group-expiration-policy"></a>Ablaufrichtlinie für Office 365-Gruppen
+# <a name="office-365-group-expiration-policy"></a>Ablaufrichtlinie für Office 365 Gruppe
 
 Durch die zunehmende Nutzung von Office 365 Gruppen benötigen Administratoren und Benutzer eine Möglichkeit, nicht verwendete Gruppen zu bereinigen. Mithilfe von Ablaufrichtlinien können inaktive Gruppen aus dem System entfernt und die Dinge sauberer gemacht werden.
 
-Wenn eine Gruppe abläuft, werden auch alle zugehörigen Dienste (Postfach, Planer, SharePoint-Website usw.) gelöscht.
+Wenn eine Gruppe abläuft, werden auch alle zugehörigen Dienste (Postfach, Planer, SharePoint-Website, Team usw.) gelöscht.
 
 Wenn eine Gruppe abläuft, wird Sie "vorläufig gelöscht", was bedeutet, dass Sie noch bis zu 30 Tage wiederhergestellt werden kann.
 
@@ -44,7 +43,7 @@ Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Durch eine der
 > [!IMPORTANT]
 > Wenn Sie die Ablaufrichtlinie ändern, berechnet der Dienst das Ablaufdatum für jede Gruppe neu. Er beginnt immer ab dem Datum, an dem die Gruppe erstellt wurde, und wendet dann die neue Ablaufrichtlinie an.
 
-Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Administratoren müssen Sie für Ihren Mandanten aktivieren, wenn Sie Sie verwenden möchten.
+Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Administratoren müssen Sie für Ihre Organisation aktivieren, wenn Sie Sie verwenden möchten.
 
 > [!NOTE]
 > Für das Konfigurieren und Verwenden der Ablaufrichtlinie für Office 365 Gruppen müssen Sie Azure AD Premium-Lizenzen für die Mitglieder aller Gruppen, auf die die Ablaufrichtlinie angewendet wird, besitzen, jedoch nicht unbedingt zuweisen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
@@ -54,7 +53,7 @@ Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Admin
 |Rolle|Was Sie tun können|
 |---------|---------|
 |Office 365 globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder Löschen der Ablaufrichtlinien Einstellungen für Office 365 Gruppen.|
-|User|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Office 365 Gruppe|
+|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Office 365 Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 

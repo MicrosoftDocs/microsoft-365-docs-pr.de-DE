@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 7b53f74be78bc1203189815c6a7adf3337decd21
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856869"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893646"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 
@@ -36,7 +36,7 @@ Administratoren können e-Mails, URLs und Anlagen zur Überarbeitung an Microsof
 
 Wenn Sie eine Nachricht erhalten, die die Spamfilter durchlaufen hat und als Junk-oder Phishing-Betrüger klassifiziert werden sollte, können Sie die Meldung "falsch negativ" nach Bedarf an die Microsoft-Spam Analyse-und Microsoft-Phishing-Analyseteams senden. Die Analysten überprüfen die Nachricht und fügen Sie den Dienst weiten Filtern hinzu, wenn Sie die Klassifizierungskriterien erfüllen.
 
-Informationen zu weiteren Spameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](reduce-spam-email.md). Dieser Artikel enthält Tipps, mit denen Sie verhindern können, dass falsch negative Ergebnisse aufweisen.
+Weitere Spameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Anti-Spam Protection in Office 365](anti-spam-protection.md). Dieser Artikel enthält Tipps, mit denen Sie verhindern können, dass falsch negative Ergebnisse aufweisen.
 
 Sie können Junk-E-Mails wie folgt weiterleiten:
 
@@ -59,16 +59,16 @@ So leiten Sie Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingver
 3. Kopieren Sie die Junk-oder Phishing-Scam-Nachricht in die neue Nachricht als Anlage, und fügen Sie Sie ein.
 
    > [!NOTE]
-   > • Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Scam-Nachrichten oder Junk-e-Mail-Nachrichten. <br/><br/>• Lassen Sie den Text der neuen Nachricht leer. <br/><br/>• Verwenden Sie entweder. msg (standardmäßiges Outlook-Format) oder. eml (standardmäßige Outlook im Internetformat) Formate für die angefügten Nachrichten.
+   > * Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Scam-Nachrichten oder Junk-e-Mail-Nachrichten. <br/><br/>* Lassen Sie den Text der neuen Nachricht leer. <br/><br/>* Verwenden Sie entweder. msg (standardmäßiges Outlook-Format) oder. eml (standardmäßige Outlook im Internetformat) Formate für die angefügten Nachrichten.
 
 4. Klicken Sie auf **Senden**.
 
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Weiterleiten von Nachrichten, die als Junk markiert wurden, aber durchgelassen werden sollten
 
 Wenn eine Nachricht fälschlicherweise als Junk identifiziert wurde, können Sie die Meldung "falsch positiv" an das Microsoft-Spam Analyse Team übermitteln. Die Analysten werden die Nachricht bewerten und analysieren. Abhängig vom Ergebnis der Analyse werden die Filterregeln für Spaminhalte des Diensts angepasst, damit die Nachricht zugestellt werden kann.
-  
-Administratoren können weitere Informationen zur Spam Einstellung überprüfen, die für eine ganze Organisation gelten. Hier erfahren Sie [, wie Sie sicherstellen können, dass eine Nachricht nicht als Spam gekennzeichnet ist](prevent-email-from-being-marked-as-spam.md). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
-  
+
+Administratoren können weitere Informationen zur Spam Einstellung überprüfen, die für eine ganze Organisation gelten. Weitere Informationen finden Sie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
+
 Leiten Sie Nichtspamnachrichten wie folgt weiter:
 
 - Wenn Sie die Aktion **Nachricht in Junk-e-Mail-Ordner senden** verwenden, wenn Sie Ihre Inhaltsfilter konfigurieren (Dies ist die Standardaktion), können Benutzer falsch positive Nachrichten in Ihrem Junk-e-Mail-Ordner "Outlook" oder "Outlook im Internet" (früher als "Outlook Web App" bezeichnet) freigeben.
@@ -113,15 +113,4 @@ Nachdem Sie diese Informationen überprüft haben, kann das Spam-Team möglicher
 
 [Video zu Microsoft Exchange Spam-Team](https://youtu.be/-TpX_-GMC7o?hd=1)
 
-Die Spambewertung ist ein kontinuierlicher Prozess, der unabhängig von der ursprünglichen Sprache oder dem ursprünglichen Zeichensatz angewendet wird. Da eine Spamnachricht vage sein oder keinen Text im Betreff oder Nachrichtentext enthalten kann, nutzt das Spamteam sehr oft andere Nachrichtenmerkmale zum Filtern. Dies bedeutet, dass – nachdem das Spamteam eine bestimmte Nachricht als Spam markiert und die erforderlichen Änderungen an der Regelbasis vorgenommen hat – diese Nachricht zukünftig so lange gesperrt wird, bis ihre Merkmale ausreichend geändert wurden, dass sie unsere Filter passiert. Neue Spamregeln werden laufend bereitgestellt. Der Zeitrahmen für Regeln für einzelne Übermittlungen variiert je nach Menge und Qualität der Übermittlungen. Da neue Spamregeln global für alle Kunden festgelegt werden, führt nicht jede einzelne übermittelte Spamnachricht zu einer neuen Spamregel.
-
-## <a name="for-more-information"></a>Weitere Informationen
-
-[Schutz vor Spam und Schadsoftware](anti-spam-and-anti-malware-protection.md)
-  
-[So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](prevent-email-from-being-marked-as-spam.md)
-  
-[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
-  
-
-[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
+Die Spambewertung ist ein kontinuierlicher Prozess, der unabhängig von der ursprünglichen Sprache oder dem ursprünglichen Zeichensatz angewendet wird. Da eine Spamnachricht vage sein oder keinen Text im Betreff oder Nachrichtentext enthalten kann, nutzt das Spamteam sehr oft andere Nachrichtenmerkmale zum Filtern. Dies bedeutet, dass - nachdem das Spamteam eine bestimmte Nachricht als Spam markiert und die erforderlichen Änderungen an der Regelbasis vorgenommen hat - diese Nachricht zukünftig so lange gesperrt wird, bis ihre Merkmale ausreichend geändert wurden, dass sie unsere Filter passiert. Neue Spamregeln werden laufend bereitgestellt. Der Zeitrahmen für Regeln für einzelne Übermittlungen variiert je nach Menge und Qualität der Übermittlungen. Da neue Spamregeln global für alle Kunden festgelegt werden, führt nicht jede einzelne übermittelte Spamnachricht zu einer neuen Spamregel.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist in Office 365 standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 6a1c435ca3be16ef2f4926cce56afe180c576f15
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634963"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894920"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -107,9 +107,9 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**AddFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions** -Aktion enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
 |**ApplyRecord**|Ein Element wird als Datensatz gekennzeichnet.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Kopieren**|Eine Nachricht wurde in einen anderen Ordner kopiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Create**|Ein Element wurde im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt (beispielsweise wird eine neue Besprechungsanfrage erstellt). Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Auch das Erstellen eines Postfachordners wird nicht überwacht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Create**|Ein Element wurde im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt (beispielsweise wird eine neue Besprechungsanfrage erstellt). Beachten Sie, dass das Erstellen, Senden oder Empfangen einer Nachricht nicht überwacht wird. Auch das Erstellen eines Postfachordners wird nicht überwacht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Standard**||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb eines Zeitraums von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Auf e-Mail-Daten wird über e-Mail-Protokolle und-Clients zugegriffen. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [Access to wichtige Events for Investigations](advanced-audit.md#access-to-crucial-events-for-investigations).|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|Der Benutzer hat sich bei seinem Postfach angemeldet. |||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -141,7 +141,7 @@ Denken Sie daran, dass ein Administrator mit der Berechtigung "Vollzugriff" für
 
 |**Post Fach Aktion**|**Beschreibung**|**Administrator**|**Stellvertretung**|**Besitzer**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Create**|Erstellen eines Kalenderelements. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**Create**|Erstellen eines Kalenderelements. Beachten Sie, dass das Erstellen, Senden oder Empfangen einer Nachricht nicht überwacht wird.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Eine Nachricht wurde unter Verwendung der SendAs-Berechtigung gesendet.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 Der Wert `Admin, Delegate, Owner` gibt an:
 
-- Die standardmäßigen Postfachaktionen für alle drei Anmeldetypen werden überwacht. Beachten Sie, dass dies der einzige Wert ist, den Sie für Office 365 Gruppen Postfächer sehen.
+- Die standardmäßigen Postfachaktionen für alle drei Anmeldetypen werden überwacht. Dies ist der einzige Wert, den Sie für Office 365 Gruppen Postfächer sehen.
 
 - Ein Administrator *hat* die überwachten Postfachaktionen für keinen Anmeldetyp in einem Benutzerpostfach oder einem freigegebenen Postfach geändert. Hinweis Dies ist der Standardzustand, wenn die postfachüberwachung für standardmäßig anfänglich in Ihrer Organisation aktiviert ist.
 
@@ -301,7 +301,7 @@ Das Deaktivieren der postfachüberwachung für standardmäßig hat die folgenden
 
 - Alle Post Fach Überwachungs Umgehungs Zuordnungseinstellungen (mit dem Cmdlet " **MailboxAuditBypassAssociation** " konfiguriert) werden ignoriert.
 
-- Vorhandene Post Fach Überwachungseinträge werden beibehalten, bis die Verfallszeit des Überwachungsprotokolls für den Datensatz abläuft.
+- Vorhandene Post Fach Überwachungseinträge werden beibehalten, bis die Verfallszeit für das Überwachungsprotokoll für den Datensatz abläuft.
 
 ### <a name="turn-on-mailbox-auditing-on-by-default"></a>Aktivieren der postfachüberwachung standardmäßig
 
@@ -343,8 +343,11 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
 
   Zum Abrufen von postfachüberwachungsprotokoll Einträgen für Benutzer ohne E5-Lizenzen haben Sie folgende Möglichkeiten:
 
-  - Verwenden Sie Überwachungsprotokoll suchen im Security & Compliance Center oder über die Office 365-Verwaltungs Aktivitäts-API, **nachdem** Sie die postfachüberwachung für die einzelnen Postfächer manuell aktiviert haben.
-
+  - Aktivieren Sie die postfachüberwachung für einzelne Postfächer manuell ( `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`führen Sie den Befehl aus). Anschließend können Sie Überwachungsprotokoll suchen im Security & Compliance Center oder über die API für die Office 365-Verwaltungsaktivität verwenden.
+  
+    > [!NOTE]
+    > Wenn die postfachüberwachung für das Postfach bereits aktiviert ist, Ihre Suche jedoch keine Ergebnisse zurückgibt, ändern Sie den Wert des Parameters _AuditEnabled_ in `$false` und `$true`dann zurück zu.
+  
   - Verwenden Sie die folgenden Cmdlets in Exchange Online PowerShell:
 
     - [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen.
@@ -361,7 +364,7 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
 
   Wenn Sie die Verfallszeit verlängern, müssen Sie das Cmdlet [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell verwenden, um das postfachüberwachungsprotokoll des Benutzers nach Datensätzen zu durchsuchen, die älter als 90 Tage sind.
 
-- Wenn Sie die *AuditLogAgeLimit* -Eigenschaft für ein Postfach vor dem Aktivieren der postfachüberwachung für die Organisation standardmäßig geändert haben, wird die Verfallszeit des Postfachs des vorhandenen Überwachungsprotokolls nicht geändert. Das bedeutet, dass die postfachüberwachung standardmäßig nicht die aktuelle Altersgrenze für Post Fach Überwachungseinträge beeinflusst.
+- Wenn Sie die *AuditLogAgeLimit* -Eigenschaft für ein Postfach vor dem Aktivieren der postfachüberwachung für die Organisation standardmäßig geändert haben, wird die Verfallszeit des Postfachs des vorhandenen Überwachungsprotokolls nicht geändert. Das bedeutet, dass die postfachüberwachung standardmäßig keine Auswirkung auf die aktuelle Altersgrenze für Post Fach Überwachungseinträge hat.
 
 - Um den *AuditLogAgeLimit* -Wert für ein Office 365 Gruppenpostfach zu ändern, müssen Sie den `-GroupMailbox` Switch in den Befehl " **Postfach festlegen** " einschließen.
 
@@ -387,3 +390,5 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
     - Sie können nicht direkt auf einen Überwachungsprotokolleintrag im Ordner "refundable Items" zugreifen; Verwenden Sie stattdessen das Cmdlet **Search-Mailbox auditlog** , oder Durchsuchen Sie das Office 365 Überwachungsprotokoll, um nach Post Fach Überwachungseinträgen zu suchen und anzuzeigen.
 
 - Wenn ein Postfach im Compliance Center aufbewahrt oder einer Aufbewahrungsrichtlinie zugewiesen wird, werden Überwachungsprotokolldatensätze weiterhin für die Dauer beibehalten, die von der *AuditLogAgeLimit* -Eigenschaft des Postfachs definiert ist (standardmäßig 90 Tage). Um Überwachungsprotokolldatensätze für Postfächer, die in der Warteschleife aufbewahrt werden, länger aufzubewahren, müssen Sie den *AuditLogAgeLimit* -Wert des Postfachs erweitern.
+
+- In einer Multi-Geo-Umgebung wird die übergreifende geografische postfachüberwachung nicht unterstützt. Wenn ein Benutzer beispielsweise Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen geografischen Standort erhält, werden Postfachaktionen, die von diesem Benutzer ausgeführt werden, nicht im postfachüberwachungsprotokoll des freigegebenen Postfachs protokolliert.

@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857608"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895463"
 ---
-# <a name="machine-profile-page"></a>Computer Profilseite
+# <a name="machine-profile-page"></a>Seite „Computerprofil“
 
 Das Microsoft 365-Sicherheitsportal stellt Ihnen Computer Profilseiten zur Verfügung, damit Sie die Integrität und den Status von Geräten in Ihrem Netzwerk bewerten können. Jede Computer Profilseite enthält eine Vielzahl von Informationen über das Gerät.
 
@@ -29,9 +29,7 @@ Sie können auch das Computer Profil verwenden, um allgemeine sicherheitsbezogen
 
 ## <a name="navigating-the-machine-profile-page"></a>Navigieren auf der Seite "Computer Profil"
 
-Auf die Computer Profilseite kann zugegriffen werden, indem Sie einen Gerätenamen direkt in der Liste Computer auswählen oder auf der Seite "Computer **Öffnen"** im Flyout "Computerliste" auswählen.
-
-Nachdem Sie die Seite geöffnet haben, werden Sie feststellen, dass Sie in drei Abschnitte aufgeteilt wird.
+Die Computer Profilseite ist in drei Abschnitte unterteilt.
 
 ![Bild der Computer Profilseite mit (1) Registerkartenbereich (2) Sidebar und (3) Aktionen in rot hervorgehoben](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

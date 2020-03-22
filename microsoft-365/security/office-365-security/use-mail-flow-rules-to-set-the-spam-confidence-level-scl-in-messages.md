@@ -1,11 +1,11 @@
 ---
-title: Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
+title: Verwenden von Nachrichtenfluss Regeln für die SCL-Bewertung in Nachrichten
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,56 +16,55 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die SCL-Bewertung von Nachrichten in Exchange Online Schutz festlegen.
-ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081978"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895095"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
 
-Sie können eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, mit der die SCL-Bewertung (Spam Confidence Level) einer e-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Beispielsweise können Sie die Spam Inhaltsfilterung für Nachrichten umgehen, die von Personen innerhalb Ihrer Organisation gesendet werden, da Sie darauf vertrauen, dass eine intern von einem Kollegen gesendete Nachricht kein Spam ist. Durch die Verwendung von Nachrichtenfluss Regeln zum Festlegen des SCL-Werts einer Nachricht erhalten Sie eine erhöhte Kontrolle bei der Verarbeitung von Spam.
+Wenn Sie ein Office 365er Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwendet EoP Antispam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) zum Überprüfen eingehende Nachrichten für Spam. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
- **Was sollten Sie wissen, bevor Sie beginnen?**
+Wenn Sie bestimmte Nachrichten als Spam kennzeichnen möchten, bevor Sie sogar durch Spamfilterung gescannt werden, oder um Nachrichten zu markieren, damit Sie die Spamfilterung überspringen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um die Nachrichten zu identifizieren und die SCL-Bewertung (Spam Confidence Level) festzulegen. Weitere Informationen zur SCL-Bewertung finden Sie unter [Spam Confidence Level (SCL) in Office 365](spam-confidence-levels.md).
 
-- Geschätzte Zeit bis zum Abschließen dieses Verfahrens: 10 Minuten.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" in [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) oder [Feature Permissions in EoP](feature-permissions-in-eop.md).
+- Sie müssen Berechtigungen in Exchange Online zugewiesen werden, bevor Sie diese Verfahren ausführen können. Insbesondere müssen Sie die Rolle " **Transport Rules** " erhalten, die standardmäßig der Rollen " **Organisationsverwaltung**", " **Richtlinientreue Verwaltung**" und " **Datensatzverwaltung** " zugewiesen ist. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>So erstellen Sie eine Nachrichtenfluss Regel, die den SCL-Wert einer Nachricht festlegt
+- Weitere Informationen zu Nachrichtenfluss Regeln in Exchange Online finden Sie unter [Mail Flow Rules (Transport Rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole (EAC) zu **Nachrichtenfluss** \> **Regeln**.
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer e-Mail-Fluss Regel, die den SCL-Wert einer Nachricht festlegt
 
-2. Klicken Sie auf **Neu**![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif), und wählen Sie dann **Eine neue Regel erstellen** aus.
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
 
-3. Geben Sie einen Namen für die Regel ein.
+2. Klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.png) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
 
-4. Klicken Sie auf **Weitere Optionen**, und geben Sie anschließend unter **Diese Regel anwenden, wenn** eine Bedingung an, durch die die Aktion ausgelöst wird, die Sie für diese Regel festlegen (in diesem Falle die Festlegung des SCL-Werts).
+3. Konfigurieren Sie auf der daraufhin geöffneten Seite **Neue Regel** die folgenden Einstellungen:
 
-   Sie können z. B. festlegen **Der Absender** \> **ist intern/extern** und anschließend im Dialogfeld **Absenderposition auswählen** auf die Option **Innerhalb meiner Organisation** und auf **OK** klicken.<br/>
-   ![Absenderstandort auswählen](../../media/EOP-ETR-SetSCL-1.jpg)
+   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für die Regel ein.
 
-5. Wählen Sie unter **Gehen Sie folgendermaßen vor...** die Option **Nachrichteneigenschaften ändern** \> **SCL-Bewertung (Spam Confidence Level) festlegen** aus.
+   - Klicken Sie auf **Weitere Optionen**.
 
-6. Wählen Sie im Feld **SCL angeben** einen der folgenden Werte aus, und klicken Sie auf **OK**:
+   - **Diese Regel anwenden, wenn**: Wählen Sie eine oder mehrere Bedingungen aus, um Nachrichten zu identifizieren. Weitere Informationen finden Sie unter [Nachrichtenfluss Regelbedingungen und Ausnahmen (Prädikate) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-   - **Spamfilterung umgehen**: Hiermit wird der SCL-Wert auf-1 festgelegt, was bedeutet, dass keine Inhaltsfilterung durchgeführt wird.
+   - **Gehen Sie folgen**dermaßen vor: Wählen Sie **ändern die Nachrichteneigenschaften** \> **Festlegen der SCL-Bewertung (Spam Confidence Level)**. Konfigurieren Sie im angezeigten **SCL** -Dialogfeld einen der folgenden Werte:
 
-   - **0-4**: die Nachricht wird zur weiteren Verarbeitung an den Inhaltsfilter übergeben.
+   - **Spamfilterung umgehen**: Hiermit wird der SCL-Wert auf-1 festgelegt, was bedeutet, dass die Nachrichten die Spamfilterung überspringen.
 
-   - **5-6**: die Aktion, die für **Spam** in den entsprechenden Inhaltsfilter Richtlinien angegeben wird, wird angewendet. Die Standardaktion ist das Senden der Nachricht an den Junk-E-Mail-Ordner des Empfängers.
+     > [!CAUTION]
+     > Achten Sie darauf, dass Nachrichten Spamfilterung überspringen. Angreifer können diese Sicherheitsanfälligkeit verwenden, um Phishing-und andere schädliche Nachrichten an Ihre Organisation zu senden. Die Nachrichtenfluss Regeln erfordern mehr als nur die e-Mail-Adresse oder Domäne des Absenders. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in Office 365](create-safe-sender-lists-in-office-365.md).
 
-   - **7-9**: die Aktion, die für **Spam mit hoher Zuverlässigkeit** in den entsprechenden Inhaltsfilter Richtlinien angegeben wird, wird angewendet. Die Standardaktion ist das Senden der Nachricht an den Junk-E-Mail-Ordner des Empfängers.
+   - **0 bis 4**: die Nachricht wird über Spamfilterung zur zusätzlichen Verarbeitung gesendet.
 
-   Weitere Informationen zum Konfigurieren Ihrer Inhaltsfilterrichtlinien finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Weitere Informationen zu SCL-Werten in diesem Dienst finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).
+   - **5 oder 6**: die Nachricht wird als **Spam**gekennzeichnet. Die Aktion, die Sie für **Spam** Filter Urteile in ihren Anti-Spam-Richtlinien konfiguriert haben, wird auf die Nachricht angewendet (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"**).
 
-7. Geben Sie zusätzliche Eigenschaften für die Regel an, und wählen Sie **Speichern**.
+   - **7 bis 9**: die Nachricht wird als **Spam mit hoher Vertrauens**Würdigkeit gekennzeichnet. Die Aktion, die Sie für Spam Filterungs Urteile mit **hoher Zuverlässigkeit** in ihren Anti-Spam-Richtlinien konfiguriert haben, wird auf die Nachricht angewendet (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"**).
 
-   > [!TIP]
-   > Weitere Informationen zu den zusätzlichen Eigenschaften, die Sie für diese Regel auswählen oder angeben können, finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen von Nachrichtenfluss Regeln](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules).
+4. Geben Sie alle zusätzlichen Eigenschaften an, die für die Regel gewünscht werden. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
 ## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 

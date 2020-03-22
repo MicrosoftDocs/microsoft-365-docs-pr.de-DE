@@ -1,11 +1,11 @@
 ---
-title: Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
+title: Zero-Hour Auto Purge (zap) – rückwirkender Schutz vor Spam, Schadsoftware und Phishing.
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/21/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,117 +18,96 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab.
-ms.openlocfilehash: 6616281a98487c7edd7ca7721ade9a8510f6a21f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion in Office 365, die Spam, Schadsoftware oder Phishing-Nachrichten erkennt, die bereits an Exchange Online übermittelt wurden. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab.
+ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597957"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895011"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
+# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Zero-Hour Auto Purge (zap) – Schutz vor Spam und Schadsoftware in Office 365
 
 ## <a name="overview"></a>Übersicht
 
-Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Phishing, Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab. E-Mails können aufgrund von e-Mail-Inhalten, URLs oder Anlagen gezappt werden.
+Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion in Office 365, die bösartige Phishing-, Spam-oder Schadsoftware-Nachrichten, die bereits an Exchange Online-Postfächer gesendet wurden, rückwirkend erkennt und neutralisiert.
 
-ZAP ist mit dem Standard Exchange Online Schutz verfügbar, der in jedem Office 365-Abonnement enthalten ist, das Exchange Online Postfächer enthält.
+ZAP ist mit dem standardmäßigen Exchange Online Schutz (EoP) verfügbar, der in einem beliebigen Office 365-Abonnement enthalten ist, das Exchange Online Postfächer enthält. Zap funktioniert nicht in eigenständigen EoP-Umgebungen, die lokale Exchange-Postfächer schützen.
 
 ## <a name="how-zap-works"></a>Funktionsweise von zap
 
-Office 365 aktualisiert das Anti-Spam-Modul und die Malware Signaturen in Echtzeit auf täglicher Basis. Allerdings erhalten Ihre Benutzer möglicherweise weiterhin Schadsoftware-Nachrichten, die aus einer Vielzahl von Gründen an ihre Posteingänge gesendet werden, einschließlich, wenn der Inhalt nach der Zustellung an die Benutzer Waffen basiert. Zap behebt dies, indem Updates für die Office 365 Spam-und Malware Signaturen kontinuierlich überwacht werden. Zap kann zuvor zugestellte Nachrichten, die sich bereits in den Posteingängen von Benutzern befinden, suchen und entfernen.
+Office 365 aktualisiert Spam-und Malware Signaturen täglich in Echtzeit. Allerdings können Benutzer nach wie vor Schadsoftware aus einer Vielzahl von Gründen erhalten, einschließlich, wenn der Inhalt nach der Zustellung an die Benutzer Waffen basiert. Zap behebt dieses Problem, indem Aktualisierungen für die Office 365 Spam-und Malware Signaturen kontinuierlich überwacht werden. Zap kann Nachrichten suchen und entfernen, die sich bereits im Postfach eines Benutzers befinden.
 
-Die ZAP-Aktion ist nahtlos für den Postfachbenutzer; Sie werden nicht benachrichtigt, wenn eine e-Mail-Nachricht verschoben wird. 
+Die ZAP-Aktion ist für den Benutzer nahtlos; Sie werden nicht benachrichtigt, wenn eine Nachricht erkannt und verschoben wird.
 
-Zulassungslisten, [Nachrichtenfluss Regeln](use-transport-rules-to-configure-bulk-email-filtering.md) (auch bekannt als Transportregeln) und Endbenutzer Regeln oder zusätzliche Filter haben Vorrang vor zap.
+[Listen sicherer Absender](create-safe-sender-lists-in-office-365.md), Nachrichtenfluss Regeln (auch bekannt als Transportregeln), Posteingangsregeln oder zusätzliche Filter haben Vorrang vor zap.
 
 ### <a name="malware-zap"></a>Malware zap
 
-Für neu erkannte Schadsoftware verschiebt zap die gesamte Nachricht, einschließlich der Anlage, in die Quarantäne für Schadsoftware. Nachrichten werden unabhängig vom Lesestatus der e-Mail verschoben. Wenn wir ein Schadsoftware-Signal für eine Nachricht im Prozess der dynamischen Übermittlungs Überprüfung erhalten, wird zap in der Nachricht zu einer Junk-Aktion übergehen. Anschließend wird die dynamische Zustellung so abgeschlossen, dass die Zeit der Übermittlung überprüft wird, und Sie können die entsprechende Aktion durchführen.
+Bei **Lese-oder ungelesenen Nachrichten** , die nach der Zustellung Schadsoftware enthalten, wird die Nachricht, die die Schadsoftware enthält, in zap unter Quarantäne gestellt. Nur Administratoren können Schadsoftware-Nachrichten aus der Quarantäne anzeigen und verwalten.
 
-Malware zap ist in der Schadsoftware-Richtlinie standardmäßig aktiviert. Sie können Malware zap mithilfe des Parameters *ZapEnabled* im Cmdlet " [MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) " in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren. Malware zap kann auch durch Bearbeiten der Schadsoftware-Richtlinie im Security and Compliance Center aktiviert oder deaktiviert werden.
+Malware zap ist in Anti-Malware-Richtlinien standardmäßig aktiviert. Weitere Informationen finden Sie unter [configure Anti-Malware Policies in Office 365](configure-anti-malware-policies.md).
 
 ### <a name="phish-zap"></a>Phishing-zap
 
-Bei e-Mails, die nach der Zustellung als "Phishing" identifiziert werden, nimmt zap eine Aktion gemäß der Spam Richtlinie vor, die einen bestimmten Benutzer abdeckt, unabhängig vom Lesestatus der e-Mail. Wenn die Richtlinie Phishing-Aktion so festgelegt ist, dass *keine* Aktion ausgeführt wird (X-Header hinzufügen, Betreff ändern, keine Aktion), wird zap keine Aktion für die e-Mail durchführen. Wenn die Phishing-Aktion auf "Junk verschieben" festgelegt ist, verschiebt zap die Nachricht in den Ordner "Junk-e-Mail" des Posteingangs des Benutzers. **Bei jeder anderen Phishing-Aktion (Redirect, DELETE, Quarantine) verschiebt zap die Nachricht in die Phishing-Quarantäne**. Lesen Sie weiter unten für Konfigurationsanforderungen und-Ausschlüsse. Weitere Informationen zum [Konfigurieren ihrer Spamfilter Richtlinien](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) finden Sie hier.
+Für **Lese-oder ungelesene Nachrichten** , die nach der Zustellung als Phishing identifiziert werden, hängt das zap-Ergebnis von der Aktion ab, die für ein **Phishing-e-Mail-** Filter Urteil in der entsprechenden Antispampolitik konfiguriert ist. Die verfügbaren Filter Urteils Aktionen für Phishing und ihre möglichen zap-Ergebnisse werden in der folgenden Liste beschrieben:
 
-Phishing-zap ist in der Spam Richtlinie standardmäßig aktiviert. Phishing-zap kann mithilfe des *PhishZapEnabled* -Parameters von [sethostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy), einem EoP-Cmdlet, deaktiviert werden.
+- **X-Header hinzufügen**, **Betreffzeile mit Text**voranstellen: Zap nimmt keine Aktion für die Nachricht vor.
+
+- **Nachricht in Junk-e-Mail verschieben**: Zap verschiebt die Nachricht in den Junk-e-Mail-Ordner, solange die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+
+- **Nachricht an e-Mail-Adresse umleiten**, **Nachricht löschen**, **Nachricht isolieren**: Zap isoliert die Nachricht. Nur Administratoren können Phishing-unter Quarantäne gestellte Nachrichten anzeigen und verwalten.
+
+Standardmäßig ist Phishing zap in Anti-Spam-Richtlinien aktiviert, und die Standardaktion für das **Phishing-e-Mail-** Filter Urteil lautet **Quarantäne Nachricht**, was bedeutet, dass die Nachricht von Phishing zap standardmäßig isoliert wird.
+
+Weitere Informationen zum Konfigurieren von Spamfilter Urteilen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
 ### <a name="spam-zap"></a>Spam zap
 
-Bei e-Mail-Nachrichten, die nach der Zustellung als Spam identifiziert werden, erfolgt die Aktion gemäß der Spam Richtlinie, die den jeweiligen Benutzer abdeckt, nur, wenn die Nachricht ungelesen ist.  Wenn die Spam Aktion der Richtlinie so festgelegt ist, dass keine Aktion ausgeführt wird (X-Header hinzufügen, Betreff ändern, keine Aktion), wird zap keine Aktion für die e-Mail durchführen. Wenn die Spam Aktion auf "Junk" verschoben wird, verschiebt zap die Nachricht in den Ordner "Junk-e-Mail" des Posteingangs des Benutzers. **Bei anderen Spam Aktionen (Redirect, DELETE, Quarantine) verschiebt zap die Nachricht in die Quarantäne für Spam**. Lesen Sie weiter unten für Konfigurationsanforderungen und-Ausschlüsse. Weitere Informationen zum [Konfigurieren ihrer Spamfilter Richtlinien](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) finden Sie hier.
+Für **Ungelesene Nachrichten** , die nach der Zustellung als Spam identifiziert werden, hängt das zap-Ergebnis von der Aktion ab, die für das **Spam** Filter Urteil in der entsprechenden Antispampolitik konfiguriert ist. Die verfügbaren Filter Urteils Aktionen für Spam und ihre möglichen zap-Ergebnisse werden in der folgenden Liste beschrieben:
 
-Spam zap ist in der Spam Richtlinie standardmäßig aktiviert. Sie können Spam zap mithilfe des *SpamZapEnabled* -Parameters von [sethostedcontentfilterpolicy dient zum-](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) Cmdlet in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktivieren.
+- **X-Header hinzufügen**, **Betreffzeile mit Text**voranstellen: Zap nimmt keine Aktion für die Nachricht vor.
 
-### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Phishing-und Spam zap-Anforderungen, Ausschlüsse und Benachrichtigungen
+- **Nachricht in Junk-e-Mail verschieben**: Zap verschiebt die Nachricht in den Junk-e-Mail-Ordner, solange die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-> [!IMPORTANT]
-> der vorherige *ZapEnabled* -Cmdlet-Parameter, der sowohl Phishing als auch Spam zap gesteuert **hat, wird am 1. Februar 2020 veraltet**. Wenn Sie Skripts geschrieben haben, die den ZapEnabled-Parameter verwenden, wird empfohlen, diese für die Verwendung von SpamZapEnabled und PhishZapEnabled zu aktualisieren. In der Übergangsphase werden alle drei Parameter (ZapEnabled, PhishZapEnabled und SpamZapEnabled) über das Cmdlet zur Verfügung gestellt. Bis zur expliziten Festlegung über UI oder PowerShell wird PhishZapEnabled und SpamZapEnabled einen geerbten Wert aus dem ZapEnabled-Parameter anzeigen. Nachdem die neuen Parameter festgelegt wurden, werden Sie nicht mehr vom ZapEnabled-Parameter geerbt. Nachdem die Einstellung veraltet ist, hat ZapEnabled keine Auswirkung auf die Eigenschaften PhishZapEnabled oder SpamZapEnabled, und ZapEnabled wird aus der Liste der Parameter in Cmdlets entfernt.
+- **Nachricht an e-Mail-Adresse umleiten**, **Nachricht löschen**, **Nachricht isolieren**: Zap isoliert die Nachricht. Endbenutzer können Ihre eigenen Spam isolierten Nachrichten anzeigen und verwalten.
 
-Zap verschiebt keine Nachrichten in den Quarantänebereich, die sich im Prozess der dynamischen Übermittlungs Überprüfung befinden oder die bereits über ein Schadsoftware-Urteil mit einer ersetzten Anlage verfügt. Wenn ein Phishing-oder Spam Signal für diese Arten von Nachrichten empfangen wird und die Spam-Richtlinie/Phishing-Aktion so eingestellt ist, dass eine Aktion ausgeführt wird (in Junk-e-Mails verschieben, umleiten, löschen, isolieren), wird zap standardmäßig auf die Aktion "in Junk-e-Mail verschieben" gesetzt. Damit zap eine Aktion "zu Junk" in einer Nachricht durchführen kann, muss der Junk-e-Mail-Schutz für den Benutzer mit den Standardeinstellungen für Junk-e-Mail aktiviert sein. (Weitere Informationen zu Benutzeroptionen in Outlook finden Sie unter [Ändern der Schutzebene im Junk-e-Mail-Filter](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b) .)
+Standardmäßig ist Spam zap in Anti-Spam-Richtlinien aktiviert, und die Standardaktion für das **Spam** Filterungs Urteil wird Nachrichten in den **Junk-e-Mail-Ordner verschoben**, was bedeutet, dass Spam zap standardmäßig **Ungelesene** Nachrichten in den Junk-e-Mail-Ordner verschiebt.
+
+Weitere Informationen zum Konfigurieren von Spamfilter Urteilen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
+
+### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Zap-Überlegungen für Office 365 Advanced Threat Protection (ATP)
+
+Zap unter Quarantäne keine Nachrichten, die sich im Prozess der Überprüfung der [dynamischen Zustellung](dynamic-delivery-and-previewing.md) befinden, oder bei denen die Malware Filterung die Anlage bereits durch die Datei " **Malware Alert Text. txt** " ersetzt hat. Wenn ein Phishing-oder Spam Signal für diese Arten von Nachrichten empfangen wird und das Filter Urteil in der Antispampolitik so eingestellt ist, dass eine Aktion in der Nachricht ausgeführt wird (in Junk-e-Mails verschieben, umleiten, löschen, isolieren), wird zap standardmäßig auf die Aktion "in Junk-e-Mail verschieben" angewendet.
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Wie Sie sehen, ob zap Ihre Nachricht verschoben hat
 
-Um festzustellen, ob zap Ihre Nachricht verschoben hat, können Sie entweder den [Threat Protection-Status Bericht](view-email-security-reports.md#threat-protection-status-report) oder den [Threat-Explorer (und Echt Zeit Erkennungen)](threat-explorer.md)verwenden. Beachten Sie, dass zap als Systemaktion nicht in Exchange-postfachüberwachungsprotokollen protokolliert wird. 
- 
-## <a name="disable-zap"></a>Zap deaktivieren
+Um festzustellen, ob zap Ihre Nachricht verschoben hat, können Sie entweder den [Threat Protection-Status Bericht](view-email-security-reports.md#threat-protection-status-report) oder den [Threat-Explorer (und Echt Zeit Erkennungen)](threat-explorer.md)verwenden. Beachten Sie, dass zap als Systemaktion nicht in den Exchange-postfachüberwachungsprotokollen protokolliert wird.
 
-Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit Exchange Online Protection PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+## <a name="zap-faq"></a>Zap-FAQ
 
-### <a name="disable-malware-zap"></a>Deaktivieren von Malware zap * *
+### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>F.: Was passiert, wenn eine legitime Nachricht in den Junk-e-Mail-Ordner verschoben wird?
 
-"Malware Zap" kann über den Parameter " *ZapEnabled* " im Cmdlet " [MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) " in Exchange Online PowerShell oder Exchange Online Protection PowerShell deaktiviert werden. Malware zap kann auch durch Bearbeiten der Schadsoftware-Richtlinie im Security and Compliance Center aktiviert oder deaktiviert werden.
+A.: Sie sollten den normalen Berichterstellungsprozess für [falsch positive Ergebnisse](report-junk-email-messages-to-microsoft.md)ausführen. Der einzige Grund, warum die Nachricht aus dem Posteingang in den Junk-e-Mail-Ordner verschoben würde, liegt daran, dass der Dienst festgestellt hat, dass die Nachricht Spam oder bösartig ist.
 
-In diesem Beispiel wird zap in der Malware Filterrichtlinie mit dem Namen "Test" deaktiviert.
+### <a name="q-what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>F.: Was ist, wenn ich anstelle des Junk-e-Mail-Ordners die Office 365 Quarantäne verwende?
 
-```Powershell
-Set-MalwareFilterPolicy -Identity Test -ZapEnabled $false
-```
+A.: Zap wird eine Aktion für eine Nachricht basierend auf der Konfiguration Ihrer Antispam-Richtlinien wie weiter oben in diesem Thema beschrieben durchführen.
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy).
+### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>F.: Was geschieht, wenn e-Mail-Flussregeln oder zugelassene/blockierte Absenderlisten verwendet werden?
 
-### <a name="disable-phish-zap-and-spam-zap"></a>Deaktivieren von Phishing Zap und Spam zap
+A: Nachrichtenfluss Regeln oder blockieren und Organisationseinstellungen zulassen haben Vorrang. Diese Nachrichten werden von zap ausgeschlossen.
 
-Um Phishing und Spam zap für Ihren O365-Mandanten oder eine Gruppe von Benutzern zu deaktivieren, verwenden Sie die Parameter *PhishZapEnabled* und *SpamZapEnabled* von [sethostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy), ein EoP-Cmdlet.
+### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>F.: Was geschieht, wenn eine Nachricht in einen anderen Ordner verschoben wird (z.b. Posteingangsregeln)?
 
-Im folgenden Beispiel sind Phishing und Spam zap für eine Inhaltsfilter Richtlinie mit dem Namen "Test" deaktiviert.
+A: Zap funktioniert weiterhin, solange die Nachricht nicht gelöscht oder in den Junk-e-Mail-Ordner verschoben wurde.
 
-```Powershell
-Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEnabled $false
-```
+### <a name="q-does-zap-change-the-message-header"></a>F.: ändert zap die Nachrichtenkopfzeile?
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy).
+A: bei einer ZAP-Aktion werden keine Änderungen am Nachrichtenkopf vorgenommen.
 
-## <a name="faq"></a>Häufig gestellte Fragen
+### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>F.: wie wirkt sich Zap auf Postfächer in der Warteschleife aus?
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>Was passiert, wenn eine legitime Nachricht in den Junk-e-Mail-Ordner verschoben wird?
+A: Zap kann keine Nachrichten von Postfächern in der Warteschleife isolieren. Zap kann Nachrichten in den Junk-e-Mail-Ordner basierend auf der Aktion, die für ein Spam-oder Phishing-Urteil in Anti-Spam-Richtlinien konfiguriert ist.
 
-Sie sollten den normalen Berichtsprozess für [falsch positive](prevent-email-from-being-marked-as-spam.md)Vorgänge ausführen. Der einzige Grund, warum die Nachricht aus dem Posteingang in den Junk-e-Mail-Ordner verschoben würde, liegt daran, dass der Dienst festgestellt hat, dass die Nachricht als Spam oder böswillig eingestuft wurde.
-
-### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>Was kann ich tun, wenn ich die Office 365 Quarantäne anstelle des Junk-e-Mail-Ordners verwende?
-
-Zap wird entsprechend der Konfiguration der Einstellungen für Phishing und Spam Aktionen in ihrer Anti-Spam-Richtlinie Maßnahmen ergreifen. Siehe oben für weitere Details zu Schadsoftware, Phishing und Spam zap.
-
-### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>Was geschieht, wenn ich über eine benutzerdefinierte Nachrichtenfluss Regel (Block/Zulassungsregel) verfüge?
-
-Von Administratoren erstellte Regeln (Nachrichtenfluss Regeln) oder Block-und Zulassungsregeln haben Vorrang. Solche Nachrichten werden von den Funktionskriterien ausgeschlossen, sodass die Nachrichtenübermittlung der Regelaktion (Block/Zulassungsregel) folgt.
-
-### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>Was passiert, wenn eine Nachricht in einen anderen Ordner verschoben wird (z.b. Posteingangsregel)?
-
-Zap funktioniert in diesem Fall weiterhin, es sei denn, die Nachricht wurde gelöscht oder ist in Junk.
-
-### <a name="does-zap-change-the-email-header"></a>Ändert zap die e-Mail-Kopfzeile?
-
-Bei einer ZAP-Aktion werden keine Änderungen an einer e-Mail-Kopfzeile vorgenommen.
-
-### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Wie wirkt sich Zap auf Postfächer in der Warteschleife aus?
-
-Zap entfernt keine Nachrichten von Postfächern, die in der Warteschleife gespeichert sind, und nimmt daher keine Schritte zur Quarantäneaktion für Nachrichten vor. Nachrichten werden weiterhin in den Ordner Junk verschoben, wenn Sie in der Richtlinie angegeben sind. 
-
-[Klicken Sie hier, um weitere Informationen zu Postfachspeichern zu erhalten.](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
-
-## <a name="related-topics"></a>Verwandte Themen
-
-[Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
-
-[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
+Weitere Informationen zu Haltebereichen in Exchange Online finden Sie unter [in-situ-Speicher und Beweissicherungsverfahren in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).

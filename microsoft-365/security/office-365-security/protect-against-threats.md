@@ -17,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie diesen Artikel als Leitfaden zum Konfigurieren der Features für den Bedrohungsschutz jetzt.
-ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: da920083b521e905633473efbabc5930ad7a6770
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598682"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895311"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
@@ -41,15 +41,15 @@ Die Features für den Bedrohungsschutz sind in allen Office 365 Abonnements enth
 |---------|---------|
 |Schutz vor Schadsoftware|[Exchange Online Schutz](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EoP)|
 |Schutz vor bösartigen URLs und Dateien in e-Mail-und Office-Dokumenten|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
-|Antiphishingschutz|[EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
+|Antiphishingschutz|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Erweiterter Schutz gegen Phishing|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Antispamschutz|[EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
-|Automatische Bereinigung ohne Stunden (für e-Mail)|[EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
+|Antispamschutz|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
+|Automatische Bereinigung ohne Stunden (für e-Mail)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Überwachungsprotokollierung (wird für Berichtszwecke verwendet)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rollen und Berechtigungen
 
-Sie müssen eine geeignete Rolle zum Konfigurieren von Richtlinien im [Security #a0 Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)zugewiesen sein. Die folgende Tabelle enthält einige Beispiele:
+Sie müssen eine geeignete Rolle zum Konfigurieren von Richtlinien im [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)zugewiesen sein. Die folgende Tabelle enthält einige Beispiele:
 
 |Rolle oder Rollengruppe|Weitere Informationen|
 |---------|---------|
@@ -63,7 +63,7 @@ Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Secu
 
 Der [Schutz vor Schadsoftware](anti-malware-protection.md) ist in Abonnements, die [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)enthalten, verfügbar.
 
-1. Wählen Sie im [Security #a0 Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **Anti-Malware**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **Anti-Malware**" aus.
 
 2. Doppelklicken Sie auf die **Standard** Richtlinie, und wählen Sie dann **Einstellungen**aus.
 
@@ -85,7 +85,7 @@ Time-of-Click-Schutz vor bösartigen URLs und Dateien ist in Abonnements verfüg
 
 Um ATP- [sichere Anlagen](atp-safe-attachments.md)einzurichten, müssen Sie mindestens eine Richtlinie für ATP-sichere Anlagen definieren.
 
-1. Wählen Sie im [Security #a0 Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **ATP Safe Attachments**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **ATP Safe Attachments**" aus.
 
 2. Aktivieren Sie die Option **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**.
 
@@ -111,7 +111,7 @@ Weitere Informationen finden Sie unter [Einrichten Office 365 ATP-Richtlinien f�
 
 Um ATP- [sichere Links](atp-safe-links.md)einzurichten, überprüfen und bearbeiten Sie die Standardrichtlinie, und fügen Sie eine Richtlinie für bestimmte Benutzer hinzu.
 
-1. Wählen Sie im [Security #a0 Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **ATP Safe Links**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **ATP Safe Links**" aus.
 
 2. Doppelklicken Sie auf die **Standard** Richtlinie.
 
@@ -143,7 +143,7 @@ Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für 
 
 [Anti-Phishing-Schutz](anti-phishing-protection.md) ist in Abonnements verfügbar, die [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)enthalten. Advanced Anti-Phishing Protection ist in [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)verfügbar. Im folgenden Verfahren wird beschrieben, wie Sie eine ATP-Richtlinie zum Schutz vor Phishing konfigurieren. Die Schritte ähneln dem Konfigurieren einer Anti-Phishing-Richtlinie (ohne ATP).
 
-1. Wählen Sie im [Security #a0 Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **ATP Anti-Phishing**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **ATP Anti-Phishing**" aus.
 
 2. Klicken Sie auf **Standardrichtlinie**.
 
@@ -177,7 +177,7 @@ Weitere Informationen zu den Optionen für Anti-Phishing-Richtlinien finden Sie 
 
 [Anti-Spam Protection](anti-spam-protection.md) ist in Abonnements mit [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)verfügbar.
 
-1. Wählen Sie im [Security #a0 Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **Anti-Spam**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** > **Policy** > **Anti-Spam**" aus.
 
 2. Aktivieren Sie auf der Registerkarte **Benutzerdefiniert** **benutzerdefinierte Einstellungen** .
 
@@ -189,7 +189,7 @@ Weitere Informationen zu den Optionen für Anti-Phishing-Richtlinien finden Sie 
 
 4. Klicken Sie auf **Speichern**.
 
-Weitere Informationen zu den Antispam-Richtlinienoptionen finden Sie unter [configure the Anti-Spam Policies](configure-the-anti-spam-policies.md).
+Weitere Informationen zu den Antispam-Richtlinienoptionen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Part 5-zusätzliche Einstellungen für configure
 

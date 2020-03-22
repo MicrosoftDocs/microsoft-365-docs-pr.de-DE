@@ -16,14 +16,14 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: Kunden manchmal askwhat ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mail-Nachrichten? In diesem Thema werden die Unterschiede erläutert und Informationen zu den verschiedenen Optionen bereitgestellt, die sowohl in Exchange Online als auch in Exchange Online Protection verfügbar sind (EoP).
-ms.openlocfilehash: a427fd7a37ec4a5b9828a0f78a32d6e5fd54d69b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597982"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895035"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?
+# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?
 
 Kunden fragen mitunter, worin der Unterschied zwischen Junk-E-Mail und Massen-E-Mail bestehe. Zweck dieses Themas ist die Erläuterung des Unterschieds und Bereitstellung von Informationen zu den verschiedenen Optionen, die sowohl in Exchange Online als auch Exchange Online Protection (EOP) zur Verfügung stehen.
   
@@ -32,7 +32,7 @@ Kunden fragen mitunter, worin der Unterschied zwischen Junk-E-Mail und Massen-E-
 Junk-E-Mail-Nachrichten sind Spamnachrichten, d. h. unerwünschte E-Mail-Nachrichten, die vom Dienst herausgefiltert werden. Standardmäßig weist der Dienst Spamnachrichten basierend auf der Zuverlässigkeit der IP-Adresse des Absenders zurück. Doch wenn eine Nachricht die IP-Adressüberprüfung besteht, aber von den Inhaltsfiltern als Spam eingestuft wird, dann wird die Nachricht in den Junk-E-Mail-Ordner der vorgesehenen Empfänger gesendet. 
   
 > [!NOTE]
-> Die Aktion, die auf Nachrichten angewendet wird, die die Inhaltsfilterung durchlaufen haben, kann mithilfe von Inhaltsfilterrichtlinien im Exchange Admin Center (EAC) konfiguriert werden (siehe [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md)). Wenn Sie mit der Spameinstufung nicht einverstanden sind, können Sie Nachrichten, die Sie für Spam bzw. nicht für Spam halten, Microsoft auf mehrere Weisen melden (siehe [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)). 
+> Die für Inhalts gefilterte Nachrichten ausgeführte Aktion kann über Inhaltsfilter Richtlinien in der Exchange-Verwaltungskonsole (EAC) konfiguriert werden, wie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md)beschrieben. Wenn Sie mit der Spam Klassifizierung nicht einverstanden sind, können Sie Nachrichten, die Sie als Spam oder nicht-Spam bezeichnen, auf verschiedene Weise an Microsoft melden, wie unter [Submit Spam, Non-Spam und Phishing Scam messages to Microsoft for Analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)beschrieben. 
   
  **Was ist Massen-E-Mail?**
   
@@ -44,6 +44,6 @@ Der Umgang mit Massen-E-Mails ist nicht ganz einfach, denn wenn alle Massen-E-Ma
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Aktivieren der erweiterten Option zur Filterung von Spam-Massensendungen
 
-Je nach Richtlinie Ihres Unternehmens für Massen-e-Mail-Nachrichten können Administratoren einen Schwellenwert auswählen, um die Massen-e-Mail zuzuweisen. Die Einstellung kann über Inhaltsfilter Richtlinien in der Exchange-Verwaltungskonsole konfiguriert werden. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md) for the steps. Sie können eine Schwellenwerteinstellung von 1-9 auswählen, wobei 1 die meisten Massen-e-Mails als Spam markiert, und 9 ermöglicht die Zustellung der meisten Massen-e-Mails. Der Dienst führt dann die konfigurierte Aktion aus, z. B. das Verschieben der Nachricht in den Junk-E-Mail-Ordner des Empfängers. 
+Je nach Richtlinie Ihres Unternehmens für Massen-e-Mail-Nachrichten können Administratoren einen Schwellenwert auswählen, um die Massen-e-Mail zuzuweisen. Die Einstellung kann über Inhaltsfilter Richtlinien in der Exchange-Verwaltungskonsole konfiguriert werden. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md) for the steps. Sie können eine Schwellenwerteinstellung von 1-9 auswählen, wobei 1 die meisten Massen-e-Mails als Spam markiert, und 9 ermöglicht die Zustellung der meisten Massen-e-Mails. Der Dienst führt dann die konfigurierte Aktion aus, z. B. das Verschieben der Nachricht in den Junk-E-Mail-Ordner des Empfängers. 
   
 

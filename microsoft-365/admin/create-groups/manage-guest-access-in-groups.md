@@ -1,12 +1,10 @@
 ---
 title: Verwalten des Gastzugriffs in Office 365-Gruppen
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Hier erfahren Sie, wie Sie einer Office 365-Gruppe Gäste hinzufügen, Gastbenutzer anzeigen und PowerShell zum Steuern des Gastzugriffs verwenden.
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610612"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894503"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Verwalten des Gastzugriffs in Office 365-Gruppen
 
@@ -35,7 +33,7 @@ Wenn diese Option aktiviert ist, können Gruppenmitglieder über Outlook im Web 
 
 > [!Note]
 > Yammer Enterprise-Netzwerke, die sich im nativen Modus oder im [EU-Gebiet](https://go.microsoft.com/fwlink/?linkid=2107357) befinden, unterstützen keine Netzwerkgäste.
-> Mit Office 365 verbundene Yammer-Gruppen unterstützen derzeit keinen Gastzugriff. Sie können aber in Ihrem Yammer-Netzwerk nicht verbundene, externe Gruppen erstellen. Entsprechende Anleitungen finden Sie unter [Erstellen und Verwalten von externen Gruppen in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx).
+> Office 365 verbundene jammern von Gruppen unterstützen derzeit keinen Gastzugriff, aber Sie können nicht verbundene externe Gruppen in Ihrem Jammer Netzwerk erstellen. Entsprechende Anleitungen finden Sie unter [Erstellen und Verwalten von externen Gruppen in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx).
 
 ### <a name="edit-guest-information"></a>Bearbeiten von Gastinformationen
 
@@ -50,11 +48,9 @@ Der Gastzugriff in Gruppen wird häufig als Teil eines breiter gefächerten Szen
 
 Wenn Sie den Gastzugriff in Gruppen aktivieren oder deaktivieren möchten, können Sie dies im Microsoft 365 Admin Center tun.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Dienste und Add-Ins</a>.
-
-2. Wählen Sie **Office 365-Gruppen** aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungs** \> **Einstellungen** , und wählen Sie **Office 365 Gruppen**aus.
   
-3. Wählen Sie auf der Seite **Office 365-Gruppen** aus, ob Sie Personen außerhalb Ihrer Organisation Zugriff auf Gruppenressourcen gewähren oder zulassen möchten, dass Gruppenbesitzer Personen außerhalb Ihrer Organisation zu Gruppen hinzufügen.
+2. Wählen Sie auf der Seite **Office 365-Gruppen** aus, ob Sie Personen außerhalb Ihrer Organisation Zugriff auf Gruppenressourcen gewähren oder zulassen möchten, dass Gruppenbesitzer Personen außerhalb Ihrer Organisation zu Gruppen hinzufügen.
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>Hinzufügen von Gästen zu einer Office 365-Gruppe über das Admin Center
 
@@ -62,7 +58,7 @@ Wenn der Gast bereits in Ihrem Verzeichnis vorhanden ist, können Sie ihn über 
   
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** > **Gruppen**.
   
-2. Wählen Sie die Gruppe aus, der Sie den Gast hinzufügen möchten, und wählen Sie auf der Registerkarte **Mitglieder** **Alle anzeigen und Mitglieder verwalten** aus. 
+2. Klicken Sie auf die Gruppe, der Sie den Gast hinzufügen möchten, und wählen Sie auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Mitglieder verwalten** aus. 
   
 4. Wählen Sie **Mitglieder hinzufügen** und dann den Namen der Person, die Sie hinzufügen möchten.
     
@@ -76,7 +72,7 @@ Wenn Sie die Informationen eines Gastes bearbeiten möchten, können Sie die [Pr
 
 Wenn Sie den Gastzugriff auf die meisten, aber nicht alle Gruppen zulassen möchten, können Sie den Gastzugriff für einzelne Gruppen mithilfe von Microsoft PowerShell sperren.
 
-Sie müssen die Vorschau-Version von [Azure Active Directory PowerShell für Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) verwenden (Modulname **AzureADPreview**), um die Einstellung für den Gastzugriff auf Gruppenebene zu ändern:
+Sie müssen die Vorschauversion von [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) verwenden, um die Einstellung Gastzugriff auf Gruppenebene zu ändern:
 
 - Wenn Sie zuvor noch keine Version des Azure AD PowerShell-Moduls installiert haben, lesen Sie [Installieren des Azure AD-Moduls](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module), und folgen Sie den Anweisungen zum Installieren der öffentlichen Vorschauversion.
 

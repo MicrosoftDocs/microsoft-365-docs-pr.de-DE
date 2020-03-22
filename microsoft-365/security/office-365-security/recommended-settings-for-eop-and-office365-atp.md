@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632943"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895227"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -30,7 +30,7 @@ ms.locfileid: "42632943"
 Obwohl wir Sicherheitsadministratoren die Möglichkeit geben, Ihre Sicherheitseinstellungen anzupassen, gibt es zwei Sicherheitsstufen in EoP und Office 365 ATP, die wir empfehlen: **Standard** und **Strict**. Die Umgebung und die Anforderungen jedes Kunden unterscheiden sich, aber wir glauben, dass diese Ebenen der e-Mail-Filterkonfigurationen dazu beitragen können, dass unerwünschte e-Mails in den meisten Fällen den Posteingang Ihrer Mitarbeiter erreichen.
 
 > [!IMPORTANT]
-> Die Junk-e-Mail-Konfiguration muss für das Postfach aktiviert sein, damit die Filterung ordnungsgemäß funktioniert. Diese Option ist standardmäßig aktiviert, sollte jedoch überprüft werden, wenn die Filterung nicht zu funktionieren scheint. Lesen Sie [MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) , um weitere Informationen zu erhalten. 
+> Die Junk-e-Mail-Regel muss für ein Postfach aktiviert sein, damit die Filterung ordnungsgemäß funktioniert. Sie ist standardmäßig aktiviert, Sie sollten Sie jedoch überprüfen, wenn die Filterung nicht zu funktionieren scheint. Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 In diesem Thema werden diese von Microsoft empfohlenen Einstellungen beschrieben, die zum Schutz Ihrer Office 365 Benutzer beitragen.
 
@@ -43,64 +43,80 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 
 ### <a name="eop-anti-spam-policy-settings"></a>EoP-Anti-Spam-Richtlinieneinstellungen
 
-|Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|Spam erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Spam erkennungsaktion mit hoher Vertrauenswürdigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
-|Phishing-e-Mail-erkennungsaktion|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
-|Phishing-e-Mail-erkennungsaktion mit hoher Zuverlässigkeit|Nachricht in Quarantäne verschieben|Nachricht in Quarantäne verschieben||
-|Massen-e-Mail-erkennungsaktion|Nachricht in Junk-E-Mail-Ordner verschieben|Nachricht in Quarantäne verschieben||
-|Schwellenwert für Massen-e-Mail festlegen|6 |4 |Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level Values](bulk-complaint-level-values.md).|
-|Aufbewahrungszeitraum für Quarantäne|30 Tage|30 Tage||
-|Sicherheitstipps|Ein|Ein||
-|Zugelassene Absender|Keine|Keine||
-|Zulässige Absenderdomänen|Keine|Keine|Das Hinzufügen von Domänen, die Sie besitzen (auch als _akzeptierte Domänen_bezeichnet), ist in der Liste der zulässigen Absender nicht erforderlich. Tatsächlich wird es als hohes Risiko betrachtet, da es Möglichkeiten für ungültige Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden. Verwenden Sie [Spoof Intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite **Anti-Spam-Einstellungen** , um alle Absender zu überprüfen, die entweder Spoofing von Domänen sind, die Teil Ihrer Organisation sind, oder Spoofing externer Domänen.|
-|Blockierte Absender|Keine|Keine||
-|Blockierte Absenderdomänen|Keine|Keine||
-|Spam Benachrichtigungshäufigkeit für Endbenutzer|Aktiviert|Aktiviert|3 Tage|
-|Automatische Bereinigung ohne Stunde|Ein|Ein|Für Spam und Phishing zap|
-|MarkAsSpamBulkMail|Ein|Ein|Diese Einstellung ist nur in PowerShell verfügbar.|
+Informationen zum Erstellen und Konfigurieren von Anti-Spam-Richtlinien finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
-In der Anti-Spam-Richtlinie "Advanced Spamfilter (ASF)" gibt es mehrere weitere Parameter, die derzeit veraltet sind. Weitere Informationen zu den Zeitrahmen für die Abschreibung dieser Features werden außerhalb dieses Themas mitgeteilt.
+|||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|**Spam** erkennungsaktion <br/><br/> _Folgenden_|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
+|Spam erkennungsaktion mit **hoher Vertrauens** Würdigkeit <br/><br/> _: Highconfidencespamaction_|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
+|**Phishing-e-Mail-** erkennungsaktion <br/><br/> _PhishSpamAction_|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
+|**Phishing-e-Mail-** erkennungsaktion mit hoher Vertrauenswürdigkeit <br/><br/> _HighConfidencePhishAction_|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
+|**Massen-e-Mail-** erkennungsaktion <br/><br/> _BulkSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
+|Massen-e-Mail-Schwellenwert <br/><br/> _BulkThreshold_|6 |4 |Der Standardwert ist derzeit 7, aber es wird empfohlen, dass Sie ihn in 6 ändern. Ausführliche Informationen finden Sie unter [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Aufbewahrungszeitraum für Quarantäne <br/><br/> _QuarantineRetentionPeriod_|30 Tage|30 Tage||
+|**Sicherheitstipps** <br/><br/> _InlineSafetyTipsEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|Zugelassene Absender <br/><br/> _AllowedSenders_|Keine|Keine||
+|Zulässige Absenderdomänen <br/><br/> _AllowedSenderDomains_|Keine|Keine|Das Hinzufügen von Domänen, die Sie besitzen (auch als _akzeptierte Domänen_bezeichnet), ist in der Liste der zulässigen Absender nicht erforderlich. Tatsächlich wird es als hohes Risiko betrachtet, da es Möglichkeiten für ungültige Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden. Verwenden Sie [Spoof Intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite **Anti-Spam-Einstellungen** , um alle Absender zu überprüfen, die entweder Spoofing von Domänen sind, die Teil Ihrer Organisation sind, oder Spoofing externer Domänen.|
+|Blockierte Absender <br/><br/> _BlockedSenders_|Keine|Keine||
+|Blockierte Absenderdomänen <br/><br/> _BlockedSenderDomains_|Keine|Keine||
+|**Spambenachrichtigungen für Endbenutzer aktivieren** <br/><br/> _EnableEndUserSpamNotifications_|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
+|**Spambenachrichtigungen an Endbenutzer senden alle ... Tage** <br/><br/> _EndUserSpamNotificationFrequency_|3 Tage|3 Tage||
+|**Spam zap** <br/><br/> _SpamZapEnabled_|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
+|**Phishing-zap** <br/><br/> _PhishZapEnabled_|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|Ein|Ein|Diese Einstellung ist nur in PowerShell verfügbar.|
+|
 
-Es wird empfohlen, dass Sie diese **Einstellungen sowohl** für Standard mäßige als auch für Strict-Stufen deaktivieren:
+Es gibt verschiedene andere Einstellungen für den erweiterten Spam Filter (ASF) in Anti-Spam-Richtlinien, die gerade veraltet sind. Weitere Informationen zu den Zeitrahmen für die Abschreibung dieser Features werden außerhalb dieses Themas mitgeteilt.
 
-|Name des Sicherheitsfeatures|Anmerkungen|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+Es wird empfohlen, dass Sie diese ASF-Einstellungen für **Standard** -und **Strict** -Stufen **Deaktivieren** . Weitere Informationen zu ASF-Einstellungen finden Sie unter [Advanced Spam Filter (ASF) Settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-#### <a name="eop-outbound-spam-filter-policy-settings"></a>EoP-Einstellungen für ausgehende Spamfilter Richtlinien
+|||
+|----|---|
+|**Name des Sicherheitsfeatures**|**Comments**|
+|**Bild Links zu Remotestandorten** (_IncreaseScoreWithImageLinks_)||
+|**Numerische IP-Adresse in URL** (_IncreaseScoreWithNumericIps_)||
+|**UL-Umleitung zu anderem Port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL zu. biz oder. info Websites** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Leere Nachrichten** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript oder VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Frame-oder IFRAME-Tags in HTML** (_MarkAsSpamFramesInHtml_)||
+|**Object-Tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Einbetten von Tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Formulartags in HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Webfehler im HTML-Format** (_MarkAsSpamWebBugsInHtml_)||
+|**Anwenden einer vertraulichen Wörterliste** (_MarkAsSpamSensitiveWordList_)||
+|**SPF-Eintrag: Hard Fail** (_MarkAsSpamSpfRecordHardFail_)||
+|**Bedingte Sender ID-Filterung: schwerer Fehler** (_MarkAsSpamFromAddressAuthFail_)||
+|**NDR** -Rückläufer (_MarkAsSpamNdrBackscatter_)||
+|
 
-|Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – externer Stunden Grenzwert|500|400||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – interne stündliche Begrenzung|1000|800||
-|Empfänger Grenzwerte für ausgehende Spam Richtlinien – tägliche Begrenzung|1000|800||
-|Aktion, wenn ein Benutzer die Grenzwerte überschreitet|Einschränken des Sendens von e-Mails durch den Benutzer|Einschränken des Sendens von e-Mails durch den Benutzer||
+#### <a name="eop-outbound-spam-policy-settings"></a>EoP-Einstellungen für ausgehende Spam Richtlinien
+
+Informationen zum Erstellen und Konfigurieren von ausgehenden Spam Richtlinien finden Sie unter [Configure outbound Spam Filtering in Office 365](configure-the-outbound-spam-policy.md).
+
+||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|**Maximale Anzahl von Empfängern pro Benutzer: externer stündlicher Grenzwert** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**Maximale Anzahl von Empfängern pro Benutzer: interne stündliche Begrenzung** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**Maximale Anzahl von Empfängern pro Benutzer: Tagesgrenzwert** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**Aktion, wenn ein Benutzer die Grenzwerte überschreitet** <br/><br/> _ActionWhenThresholdReached_|**Einschränken des Sendens von e-Mails durch den Benutzer** <br/><br/> `BlockUser`|**Einschränken des Sendens von e-Mails durch den Benutzer** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>EoP-Anti-Malware-Richtlinieneinstellungen
 
-|Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|Reaktion auf die Malware Erkennung|Nein|Nein|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
-|"Filter für allgemeine Anlagentypen" zum Blockieren verdächtiger Dateitypen|Ein|Ein||
-|Malware Zero-Hour Auto Purge|Ein|Ein||
-|Interne Absender der nicht zugestellten Nachricht Benachrichtigen|Deaktiviert|Deaktiviert||
-|Benachrichtigen externer Absender der nicht zugestellten Nachricht|Deaktiviert|Deaktiviert||
+Informationen zum Erstellen und Konfigurieren von Anti-Malware-Richtlinien finden Sie unter [configure Anti-Malware Policies in Office 365](configure-anti-malware-policies.md).
+
+|||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Aktion_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
+|**Filter "allgemeine Anlagentypen"** <br/><br/> _EnableFileFilter_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Diese Einstellung isoliert Nachrichten, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlage Inhalt.|
+|**Malware Zero-Hour Auto Purge** <br/><br/> _ZapEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Interne Absender** der nicht zugestellten Nachricht Benachrichtigen <br/><br/> _EnableInternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
+|**Benachrichtigen externer Absender** der nicht zugestellten Nachricht <br/><br/> _EnableExternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
+|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EoP-Einstellungen für Anti-Phishing-Richtlinien
 
