@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Als Office 365-Benutzer können Sie Ihre isolierten Nachrichten anzeigen, freigeben und löschen (Nachrichten, bei denen Sie ein Empfänger sind und der Spam-Filter die Nachricht als Spam oder Massen-E-Mail unter Quarantäne gestellt hat). Sie können Ihre isolierten Nachrichten im Security & Compliance Center anzeigen und verwalten.
-ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857333"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893670"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365
 
@@ -38,9 +38,9 @@ Sie können Ihre isolierten Nachrichten im Security & Compliance Center anzeigen
 
 - Administratoren können konfigurieren, wie lange Nachrichten isoliert werden, bevor sie endgültig gelöscht werden (Anti-Spam-Richtlinien). Nachrichten, die aus der Quarantäne abgelaufen sind, können nicht wiederhergestellt werden. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
-- Administratoren können auch [Spam-Benachrichtigungen für Endbenutzer](configure-your-spam-filter-policies.md) in Anti-Spam-Richtlinien aktivieren. Ab Oktober 2019 können Sie ihre isolierten Nachrichten nicht mehr direkt über diese Benachrichtigungen freigeben. Sie können in der Benachrichtigung auf **Überprüfen** klicken, was Sie zur Quarantäne im Security & Compliance Center führt. Weitere Informationen finden Sie unter [Spam-Benachrichtigungen für Endbenutzer in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Administratoren können auch [Spam-Benachrichtigungen für Endbenutzer](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in Anti-Spam-Richtlinien aktivieren. Ab Oktober 2019 können Sie ihre isolierten Nachrichten nicht mehr direkt über diese Benachrichtigungen freigeben. Sie können in der Benachrichtigung auf **Überprüfen** klicken, was Sie zur Quarantäne im Security & Compliance Center führt. Weitere Informationen zu Benachrichtigungen finden Sie unter [Spambenachrichtigungen für Endbenutzer in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Nachrichten, die wegen hoher Phishingwahrscheinlichkeit, Schadsoftware oder durch Nachrichtenflussregeln (auch als Transportregeln bekannt) unter Quarantäne gestellt wurden, sind nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Administrator in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
+- Nachrichten, die wegen hoher Phishingwahrscheinlichkeit, Schadsoftware oder durch Nachrichtenflussregeln (auch als Transportregeln bekannt) unter Quarantäne gestellt wurden, sind nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md).
 
 - Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden.
 
