@@ -1,8 +1,7 @@
 ---
 title: Vergleichen von Gruppen in Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Hier erfahren Sie, welche Arten von Gruppen Sie in Office 365 verwenden können.
-ms.openlocfilehash: 5b8a3a7859a510a07b579f3b1da255e555d6ae1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241406"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894599"
 ---
 # <a name="compare-groups"></a>Vergleichen von Gruppen
 
@@ -33,15 +32,15 @@ Im Microsoft 365 Admin Center können Sie im Bereich **Gruppen** die folgenden G
 
 - **Office 365-Gruppen** werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet.
 - **Verteilergruppen** werden verwendet, um Benachrichtigungen an eine Gruppe von Personen zu senden.
-- **Sicherheitsgruppen** werden verwendet, um den Zugriff auf SharePoint-Ressourcen zu gewähren.
-- **E-Mail-aktivierte Sicherheitsgruppen** werden verwendet, um den Zugriff auf SharePoint-Ressourcen zu gewähren und Benachrichtigungen an diese Benutzer zu senden.
+- **Sicherheitsgruppen** werden verwendet, um Zugriff auf Ressourcen wie z. B. SharePoint-Sites zu gewähren.
+- **E-Mail-aktivierte Sicherheitsgruppen** werden verwendet, um Zugriff auf Ressourcen wie z. B. Microsoft Office SharePoint Online zu gewähren und Benachrichtigungen per E-Mail an diese Benutzer zu senden.
 - **Freigegebene Postfächer** werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support.
 
 ## <a name="office-365-groups"></a>Office 365-Gruppen
 
 Office 365-Gruppen werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet. Bei jeder Office 365-Gruppe erhalten Mitglieder eine Gruppen-E-Mail und einen freigegebenen Arbeitsbereich für Unterhaltungen, Dateien und Kalenderereignisse sowie einen Planner.
 
-Sie können einer Gruppe Benutzer von außerhalb Ihres Unternehmens hinzufügen, sofern dieses Feature [vom Administrator aktiviert wurde](manage-guest-access-in-groups.md). Sie können externen Absendern das Senden von E-Mails an die Gruppen-E-Mail-Adresse gestatten.
+Sie können einer Gruppe Personen von außerhalb Ihres Unternehmens hinzufügen, sofern dieses Feature [vom Administrator aktiviert wurde](manage-guest-access-in-groups.md). Sie können externen Absendern das Senden von E-Mails an die Gruppen-E-Mail-Adresse gestatten.
 
 Office 365-Gruppen können [für die dynamische Mitgliedschaft in Azure Active Directory-konfiguriert](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type) werden, sodass Gruppenmitglieder basierend auf Benutzerattributen wie Abteilung, Standort, Position usw. automatisch hinzugefügt oder entfernt werden können.
 
@@ -77,7 +76,7 @@ Freigegebene Postfächer können externe E-Mails empfangen, wenn der Administrat
 
 Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe- und Support-Postfächer, da Benutzer E-Mails von "Contoso-Support" oder der "Rezeption von Gebäude A" senden können.
 
-Aktuell ist es nicht möglich, ein freigegebenes Postfach zu einer Office 365-Gruppe zu migrieren. Möchten Sie dies tun? Erzählen Sie uns davon. **[Stimmen Sie hier ab](https://go.microsoft.com/fwlink/?linkid=871518)**
+Aktuell ist es nicht möglich, ein freigegebenes Postfach zu einer Office 365-Gruppe zu migrieren. Möchten Sie dies tun? Erzählen Sie uns davon. **[Stimmen Sie hier ab](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
