@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: bec44dea9059c779a567a3ff222cc41360de9321
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: d16167f33be1858733173026b09f268d9cf67d62
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175799"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929417"
 ---
 # <a name="know-your-data---data-classification-overview-preview"></a>Kenne Deine Daten – Überblick über die Datenklassifizierung (Vorschau)
 

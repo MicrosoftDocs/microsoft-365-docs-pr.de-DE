@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857191"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929550"
 ---
 # <a name="about-admin-roles"></a>Informationen zu Administratorrollen
 
@@ -119,6 +119,7 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Power BI-Administrator    |   Hat Vollzugriff auf Power BI-Verwaltungsaufgaben, verwaltet Serviceanfragen und überwacht den Dienststatus.   |
 |Power Plattform-Administrator     |    Hat Vollzugriff auf Microsoft Dynamics 365, PowerApps, Richtlinien zur Verhinderung von Datenverlust und auf Microsoft Flow.     |
 |Administrator für privilegierte Rollen     |    Verwaltet Rollenzuweisungen und alle Zugriffssteuerungsfunktionen von Privileged Identity Management.     |
+|Privilegierter Authentifizierungsadministrator     |    Setzt Kennwörter zurück, aktualisiert Anmeldeinformationen ohne Kennwörter, erzwingt das Abmelden, überwacht den Dienststatus und verwaltet Serviceanfragen.     |
 |Berichtleseberechtigter     |   Hat Einblick in Verwendungsberichtsdaten aus dem Berichtedashboard, dem Inhaltspaket für die Power BI-Einführung, aus Anmeldeberichten und der Microsoft Graph-Berichterstellungs-API.      |
 |Suchadministrator     |    Hat Vollzugriff auf Microsoft Search, weist die Rollen "Suchadministrator" und "Such-Editor" zu, verwaltet Inhalte, überwacht den Dienststatus und erstellt Serviceanfragen.     |
 |Such-Editor     |    Kann nur Inhalte für Microsoft Search erstellen, bearbeiten und löschen, wie Lesezeichen, F&A und Speicherorte.     |
