@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a859aa201b43813d6c66a797cbfee160051d5103
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235064"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929504"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
@@ -95,8 +95,9 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 ## <a name="related-topics"></a>Verwandte Themen
-- [Vorbeugende Suche nach Bedrohungen](advanced-hunting-overview.md)
+- [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Die Abfragesprache erlernen](advanced-hunting-query-language.md)
-- [Verwendung von freigegebenen Abfragen](advanced-hunting-shared-queries.md)
+- [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
+- [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
 - [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)

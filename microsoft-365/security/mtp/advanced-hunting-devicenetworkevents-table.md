@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2e7999fef43adb372947d9edf92b84ac67f347fe
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235004"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929040"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -46,7 +46,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `RemoteUrl` | string | URL oder vollqualifizierter Domänenname (FQDN), mit der bzw. dem eine Verbindung hergestellt wurde |
 | `LocalIP` | string | IP-Adresse, die dem lokalen Computer zugewiesen ist, der während der Kommunikation verwendet wird |
 | `LocalPort` | int | TCP-Port auf dem lokalen Computer, der während der Kommunikation verwendet wird |
-| `Protocol` | string | Verwendetes IP-Protokoll, ob TCP oder UDP |
+| `Protocol` | string | Während der Kommunikation verwendete Protokolle |
 | `LocalIPType` | string | Typ der IP-Adresse, beispielsweise Public, private, reservierte, Loopback, Teredo, FourToSixMapping und Broadcast |
 | `RemoteIPType` | string | Typ der IP-Adresse, beispielsweise Public, private, reservierte, Loopback, Teredo, FourToSixMapping und Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Image-Datei), der das Ereignis initiiert hat |

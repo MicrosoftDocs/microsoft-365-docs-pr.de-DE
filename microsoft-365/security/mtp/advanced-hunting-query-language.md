@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "42567029"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928996"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -153,7 +153,8 @@ Der Abschnitt **Erste Schritte** bietet einige einfache Abfragen mit häufig ver
 Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren finden Sie unter [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/).
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Vorbeugende Suche nach Bedrohungen](advanced-hunting-overview.md)
+- [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
+- [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
 - [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
