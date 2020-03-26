@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894396"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955684"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -311,8 +311,8 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Yammer-Aktivitäten](#yammer-activities)|
 |[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
-|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|
-|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)||
+|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Quarantäneaktivitäten](#quarantine-activities)|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)
+|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
@@ -811,7 +811,20 @@ Die folgende Tabelle enthält die Aktivitäten im Inhaltsexplorer, die im Office
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Element, auf das zugegriffen wird|AccessedItem|Ein Administrator (oder ein Benutzer, der Mitglied der Rollengruppe "Inhaltsexplorer-Content Viewer" ist) verwendet den Inhaltsexplorer, um eine E-Mail-Nachricht oder ein SharePoint/OneDrive-Dokument anzuzeigen.|
+|Element, auf das zugegriffen wird|LabelContentExplorerAccessedItem|Ein Administrator (oder ein Benutzer, der Mitglied der Rollengruppe "Inhaltsexplorer-Content Viewer" ist) verwendet den Inhaltsexplorer, um eine E-Mail-Nachricht oder ein SharePoint/OneDrive-Dokument anzuzeigen.|
+||||
+
+### <a name="quarantine-activities"></a>Quarantäneaktivitäten
+
+In der nachstehenden Tabelle sind die Quarantäneaktivitäten aufgeführt, nach denen Sie im Überwachungsprotokoll suchen können. Weitere Informationen zur Quarantäne finden Sie unter [In Quarantäne stellen von E-Mail-Nachrichten in Office 365](../security/office-365-security/quarantine-email-messages.md).
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Gelöschte Quarantänenachricht|QuarantineDelete|Ein Benutzer hat eine E-Mail-Nachricht gelöscht, die als schädlich eingestuft wurde.|
+|Exportierte Quarantänenachricht|QuarantineExport|Ein Benutzer hat eine E-Mail-Nachricht exportiert, die als schädlich eingestuft wurde.|
+|In der Vorschau angezeigte Quarantänenachricht|QuarantinePreview|Ein Benutzer hat eine Vorschau einer E-Mail-Nachricht angezeigt, die als schädlich eingestuft wurde.|
+|Veröffentlichte Quarantänenachricht|QuarantineRelease|Ein Benutzer hat eine E-Mail-Nachricht, die als schädlich eingestuft wurde, aus der Quarantäne veröffentlicht.|
+|Angezeigte Kopfzeile einer Nachricht in der Quarantäne|QuarantineViewHeader|Ein Benutzer hat die Kopfzeile einer E-Mail-Nachricht angezeigt, die als schädlich eingestuft wurde.|
 ||||
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms-Aktivitäten
