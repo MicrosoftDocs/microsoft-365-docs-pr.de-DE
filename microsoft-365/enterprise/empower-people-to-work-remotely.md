@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Konfigurieren Sie Infrastruktur und Sicherheit, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: b86071b7e5a6101c328b43177e965856f74995d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cfbabfbe0c239ca837356b585171778d40daaa93
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067727"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952054"
 ---
 # <a name="empower-remote-workers"></a>Fördern von Remotemitarbeitern
 
@@ -76,7 +76,7 @@ In den folgenden Phasen werden Sie schrittweise durch die Bereitstellung des Mic
 
 [![Poster "Fördern von Remotemitarbeitern"](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Phase 1: Bereitstellen von Microsoft 365-Features und -Funktionen für Remotemitarbeiter

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826403"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955572"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
 
@@ -92,7 +92,7 @@ Jeder allgemeine Schritt enthält eine Reihe von unterschritten, die ausgeführt
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Beispiel: eine von einem Benutzer gemeldete Phishing-Nachricht startet eine Untersuchung des Manuskripts
 
-Wenn ein Benutzer in Ihrer Organisation eine e-Mail-Nachricht übermittelt und an Microsoft mithilfe des [Berichtsnachrichten-Add-Ins für Outlook oder Outlook Web App](enable-the-report-message-add-in.md)meldet, wird der Bericht auch an Ihr System gesendet und im Explorer in der vom Benutzer gemeldeten Ansicht angezeigt. Diese vom Benutzer gemeldete Nachricht löst jetzt eine System basierte Informationswarnung aus, die das unter suchbuch automatisch startet.
+Angenommen, ein Benutzer in Ihrer Organisation erhält eine e-Mail, die er für einen Phishing-Versuch halte. Der Benutzer, der zum Melden solcher Nachrichten ausgebildet wurde, verwendet das [Berichtsnachrichten-Add-in für Outlook oder Outlook Web App](enable-the-report-message-add-in.md) , um es zur Analyse an Microsoft zu senden. Die Übermittlung wird auch an Ihr System gesendet und im Explorer in der Ansicht " **Einsendungen** " (zuvor als vom **Benutzer gemeldete** Ansicht bezeichnet) angezeigt. Darüber hinaus wird von der vom Benutzer gemeldeten Nachricht nun eine System basierte Informationswarnung ausgelöst, die das unter suchbuch automatisch startet.
 
 Während der Stamm Untersuchungsphase werden verschiedene Aspekte der e-Mail bewertet. Zu diesen zählen:
 - Eine Bestimmung darüber, welche Art von Bedrohung es sein könnte;
@@ -121,13 +121,13 @@ Die Korrektur ist die letzte Phase des Textbuch. In dieser Phase werden korrektu
 
 Zusätzlich zu den automatischen Untersuchungen, die durch eine Warnung ausgelöst werden, kann das Sicherheits Betriebsteam Ihrer Organisation eine automatische Untersuchung aus einer Ansicht in [Threat Explorer](threat-explorer.md)auslösen.
 
-Nehmen wir beispielsweise an, dass Sie Daten im Explorer zu vom Benutzer gemeldeten Nachrichten anzeigen. Sie können ein Element in der Ergebnisliste auswählen und dann im Menü Aktion auf **Recherchieren** (vorausgesetzt, Sie verfügen über entsprechende Korrektur Berechtigungen).
+Nehmen wir beispielsweise an, dass Sie die **Malware** Ansicht im Threat Explorer verwenden. Mithilfe der Registerkarten unter dem Diagramm Wählen Sie die Registerkarte **e-Mail** aus. Wenn Sie ein oder mehrere Elemente in der Liste auswählen, wird die Schaltfläche **+ Aktionen** aktiviert. 
 
-![Vom Benutzer gemeldete Nachrichten im Explorer mit Schaltfläche "Recherchieren"](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorer mit ausgewählten Nachrichten":::
 
-Nehmen Sie als weiteres Beispiel an, dass Sie Daten zu e-Mail-Nachrichten anzeigen, die als Schadsoftware erkannt wurden, und dass mehrere e-Mail-Nachrichten als Schadsoftware erkannt werden. Sie können die Registerkarte **e-Mail** auswählen, eine oder mehrere e-Mail-Nachrichten auswählen und dann im Menü **Aktionen** die Option **untersuchen**auswählen. 
+Über das Menü **Aktionen** können Sie **Untersuchung auslösen**auswählen.
 
-![Starten einer Untersuchung für Schadsoftware im Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menü "Aktionen" für ausgewählte Nachrichten":::
 
 Ähnlich wie Textbuch, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die aus einer Ansicht im Explorer ausgelöst werden, eine Stamm Ermittlung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie Empfohlene Aktionen zur Minderung dieser Bedrohungen.
 

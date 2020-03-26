@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung Ihrer Identitätsinfrastruktur für Microsoft 365 Enterprise.
-ms.openlocfilehash: f32df9a35e09b438b5034ad963523879a639a3fc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067326"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952030"
 ---
 # <a name="phase-2-identity"></a>Phase 2: Identität
 
@@ -44,7 +44,7 @@ Informationen zu den Identitätsfeatures jedes Microsoft 365 Enterprise-Plans, z
 
 Dieses zweiseitige Poster ist eine schnelle Möglichkeit, sich mit den Identitätskonzepten und -konfigurationen für Microsoft 365 Enterprise vertraut zu machen.
 
-Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/identity-infrastructure/M365E-ID-Infra.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Planen und Bereitstellen Ihrer Microsoft 365 Enterprise-Identitätsinfrastruktur 
 

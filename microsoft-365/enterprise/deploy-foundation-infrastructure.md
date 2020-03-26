@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633613"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951958"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise Foundation-Infrastruktur
 
@@ -73,7 +73,7 @@ Das [Poster "Microsoft 365 Enterprise Foundation-Infrastruktur"](../media/deploy
 
 [![Abbildung des Posters zur Microsoft 365 Enterprise Foundation-Infrastruktur](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
-Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Konfiguration der Infrastruktur vs. Benutzer-Rollout

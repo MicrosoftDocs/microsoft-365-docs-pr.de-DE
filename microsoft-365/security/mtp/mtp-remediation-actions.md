@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266051"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955591"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Behebungsaktionen nach automatisierten Untersuchungen im Microsoft Threat Protection
 
@@ -43,16 +43,16 @@ In der folgenden Tabelle werden Korrekturaktionen zusammengefasst, die derzeit i
 
 Behebungsaktionen können im [Wartungs Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)angezeigt werden, unabhängig davon, ob Sie genehmigt wurden oder bereits abgeschlossen sind.
 
-## <a name="verdicts-and-outcomes-following-automated-investigations"></a>Urteile und Ergebnisse nach automatisierten Untersuchungen
+## <a name="remediation-actions-follow-automated-investigations"></a>Behebungsaktionen führen zu automatisierten Untersuchungen
 
 Wenn eine automatische Untersuchung abgeschlossen ist, wird für alle beteiligten Beweise eine Erkenntnis ermittelt, und es werden Korrekturaktionen identifiziert. In einigen Fällen werden Korrekturaktionen automatisch ausgeführt. In anderen Fällen müssen Korrekturaktionen genehmigt werden. In der folgenden Tabelle sind mögliche Urteile und Ergebnisse aufgelistet:
 
-|Erkenntnis    |Bereich   |Ergebnisse|
+|Erkenntnis    |Bereich    |Ergebnisse|
 |------|------|------|
-|Bösartig  |Geräte (Endpunkte)    |Korrekturaktionen werden automatisch ausgeführt.|
-|Bösartig  |E-Mail-Inhalt (URLs oder Anlagen) | Empfohlene Korrekturaktionen müssen genehmigt werden.|
-|Verdächtig |Geräte oder E-Mail-Inhalte |Empfohlene Korrekturaktionen müssen genehmigt werden.|
-|Bereinigen  |Geräte oder E-Mail-Inhalte   |Es sind keine Korrekturaktionen erforderlich.|
+|Bösartig    |Geräte (Endpunkte)    |Korrekturaktionen werden automatisch ausgeführt.|
+|Bösartig    |E-Mail-Inhalt (URLs oder Anlagen) | Empfohlene Korrekturaktionen müssen genehmigt werden.|
+|Verdächtig    |Geräte oder E-Mail-Inhalte |Empfohlene Korrekturaktionen müssen genehmigt werden.|
+|Keine Bedrohungen gefunden    |Geräte oder E-Mail-Inhalte    |Es sind keine Korrekturaktionen erforderlich.|
 
 [Überprüfen einer ausstehenden Aktion im Info-Center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 

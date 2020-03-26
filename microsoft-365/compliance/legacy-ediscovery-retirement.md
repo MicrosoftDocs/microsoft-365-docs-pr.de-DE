@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894852"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955544"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -135,7 +135,13 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <p>
 <p>Alternativ können Sie die Suchergebnisse in PST-Dateien exportieren und dann den Microsoft 365-Import Dienst verwenden, um das PST in ein Discovery-Postfach zu importieren. Eine Schritt-für-Schritt-Anleitung finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien in Office 365</a>.
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf die früheren Mitarbeiter erteilen. Postfach. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  
+  </tr>
+<tr class="odd">
 <td>Wiederherstellen von Elementen aus dem Ordner "Wiederherstellbare Elemente"</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>Sie können endgültig gelöschte Elemente (auch als <i>vorläufig gelöschte</i> Elemente bezeichnet) in Postfächern wiederherstellen, solange der Aufbewahrungszeitraum für gelöschte Elemente für ein Element nicht abgelaufen ist. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Ordner "refundable Items" in Exchange Online</a>.</td>
@@ -216,6 +222,13 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <td>Keine</td>
 <td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. Unter den folgenden häufig gestellten Fragen finden Sie alternative Lösungen.</td>
 </tr>
+  <tr class=even>
+  <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf die früheren Mitarbeiter erteilen. Postfach. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

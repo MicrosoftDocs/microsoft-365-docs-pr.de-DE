@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Office 365 für Unternehmen Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: 717beff94255fe669f9ce9bc733300679ffc3d53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254492"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955673"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?
 
@@ -44,7 +44,7 @@ In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezah
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Für alle zugängliche Daten*                                               | *Für alle zugängliche Daten*                                                     | *Nur für Administratoren zugängliche Daten*                                             | **Gelöschte<br/>Daten Azure Active Directory wird entfernt, wenn Sie nicht von anderen Diensten verwendet werden** |
 | Benutzer haben normalen Zugriff auf Office 365-, Daten-und Office-Anwendungen  | Benutzer haben normalen Zugriff auf Office 365, Dateien und Anwendungen              | Benutzer können nicht auf Office 365, Dateien oder Anwendungen zugreifen                        | Benutzer können nicht auf Office 365, Dateien oder Anwendungen zugreifen                                     |
-| Administratoren haben normalen Zugriff auf Office 365-, Daten-und Office-Anwendungen | Administratoren können auf das Admin Center zugreifen                                           | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu erwerben und zu verwalten.             |
+| Administratoren haben normalen Zugriff auf Office 365-, Daten-und Office-Anwendungen | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen   | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu erwerben und zu verwalten.             |
 |                                                                        | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. |                                                                                           |
 
 * Für die meisten Angebote in den meisten Ländern und Regionen.
@@ -66,7 +66,7 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
 
   - Wenn Sie Office 365 Geschäft mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
 
-  - Wenn Sie ein offener Volumenlizenzkunde mit einem Prepaid-Abonnement mit einem Jahr sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Suchen nach einem neuen Partner oder dem Partner, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen nach Ihrem Office 365-Partner oder -Händler](../../admin/manage/find-your-partner-or-reseller.md).
+  - Wenn Sie ein offener Volumenlizenzkunde mit einem Prepaid-Abonnement mit einem Jahr sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Auffinden eines neuen Partners oder des Partners, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen Ihres Partners oder Händlers](../../admin/manage/find-your-partner-or-reseller.md).
 
   - Wenn Sie Office 365 Geschäft haben, finden Sie weitere Informationen unter [Manage wiederkehrende Abrechnung für Ihr Abonnement](renew-your-subscription.md).
 
@@ -90,9 +90,9 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
 
   - Wenn Sie Office 365 Geschäft mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
 
-  - Wenn Sie ein offener Volumenlizenzkunde mit einem Prepaid-Abonnement mit einem Jahr sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Suchen nach einem neuen Partner oder dem Partner, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen nach Ihrem Office 365-Partner oder -Händler](../../admin/manage/find-your-partner-or-reseller.md).
+  - Wenn Sie ein offener Volumenlizenzkunde mit einem Prepaid-Abonnement mit einem Jahr sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Auffinden eines neuen Partners oder des Partners, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen Ihres Partners oder Händlers](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - Wenn Sie über Office 365 Business verfügen, lesen Sie [Verlängern Ihres Office 365 Business-Abonnements](renew-your-subscription.md).
+  - Wenn Sie Office 365 Geschäft haben, lesen Sie [Erneuern Ihres Abonnements](renew-your-subscription.md).
 
 - **Lassen Sie das Abonnement ablaufen.**
 
@@ -143,7 +143,7 @@ Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erw
 
 In diesem Zustand haben Benutzer normalen Zugriff auf das Office 365 Portal, Office-Anwendungen und Dienste wie e-Mail und SharePoint Online.
   
-Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge – globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und weiterhin Office 365 verwenden. Wenn Sie es nicht reaktivieren, denken Sie unbedingt daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
+Als Administrator haben Sie weiterhin Zugriff auf das Admin Center, können Benutzern jedoch keine Lizenzen zuweisen. Globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Office 365 weiterhin verwenden. Wenn Sie es nicht reaktivieren, denken Sie unbedingt daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Status: deaktiviert
   
@@ -213,14 +213,14 @@ Wenn Sie Ihr Abonnement vor dem Ende des Termins kündigen, überspringt das Abo
   
 Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
   
-- **Administratorzugriff** Administratoren können sich weiterhin anmelden und auf das Admin Center zugreifen und bei Bedarf andere Abonnements kaufen. Als globaler oder abrechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement](reactivate-your-subscription.md) mit allen Daten intakt zu reaktivieren.
+- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
 - **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 
 Informationen zum Abbrechen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie eine beschleunigte Aufhebung der Provision anfordern. Wenn Sie das beschleunigte Aufheben der Bereitstellung anfordern, werden Ihre Abonnementdaten innerhalb von 3 Tagen nach der Kündigung gelöscht. Um die beschleunigte deprovisionierung zu verwenden, rufen Sie den [Support](../../admin/contact-support-for-business-products.md)an.
+> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie eine beschleunigte Aufhebung der Provision anfordern. Wenn Sie das beschleunigte Aufheben der Bereitstellung anfordern, werden Ihre Abonnementdaten innerhalb von 3 Tagen nach der Kündigung gelöscht. [Wenden Sie sich an den Support](../../admin/contact-support-for-business-products.md), wenn Sie das beschleunigte Aufheben verwenden möchten.
 
 > [!NOTE]
 > Die Informationen auf dieser Seite unterliegen der [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651) (Microsoft-Richtlinie für Haftungsausschluss und Änderungsmitteilung). Kehren Sie regelmäßig zu dieser Website zurück, um Änderungen zu überprüfen.

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067412"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959228"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -47,12 +47,12 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, empfehlen wir, die Basisr
 |        |[Sperrt Clients, die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication)|Clients, die keine moderne Authentifizierung verwenden, können Regeln für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|
 |        |[Benutzer mit hohem Risiko müssen das Kennwort ändern](#high-risk-users-must-change-password)|Zwingt Benutzer, Ihr Kennwort zu ändern, wenn Sie sich anmelden, wenn risikoreiche Aktivitäten für Ihr Konto erkannt werden|
 |        |[Definieren von App-Schutzrichtlinien](#define-app-protection-policies)|Eine Richtlinie pro Plattform (Ios, Android, Windows).|
-|        |[Genehmigte apps erfordern](#require-approved-apps)|Erzwingt Mobile App Schutz für Telefone und Tablets|
+|        |[Erfordern von apps, die Intune-App-Schutzrichtlinien unterstützen](#require-apps-that-support-intune-app-protection-policies)|Erzwingt Mobile App Schutz für Telefone und Tablets|
 |        |[Definieren von Geräte Konformitätsrichtlinien](#define-device-compliance-policies)|Eine Richtlinie für jede Plattform|
 |        |[Kompatible PCs erforderlich](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs.|
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](#require-mfa-based-on-sign-in-risk)| |
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](#require-compliant-pcs-and-mobile-devices)|Erzwingt die Intune-Verwaltung für PCs und Telefon/Tablets.|
-|**Hochgradig reguliert**|[*Immer* MFA erforderlich](#require-mfa-based-on-sign-in-risk)|
+|**Streng geregelt**|[*Immer* MFA erforderlich](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Zuweisen von Richtlinien zu Benutzern
@@ -106,7 +106,7 @@ Wenden Sie die Einstellungen basierend auf der Schutzebene an, auf die Sie Ziele
 |:---|:---------|:-----|:----|
 |Risikostufe|Basisplan|Hoch, Mmittel|Aktivieren Sie beide|
 | |Vertraulich|Hoch, Mittel, niedrig|Alle drei aktivieren|
-| |Hochgradig reguliert| |Alle Optionen deaktiviert lassen, um MFA immer zu erzwingen|
+| |Streng geregelt| |Alle Optionen deaktiviert lassen, um MFA immer zu erzwingen|
 
 **Zugriffssteuerung**
 
@@ -179,7 +179,7 @@ Melden Sie sich im [Microsoft Azure-Portal (https://portal.azure.com)](https://p
 | Typ | Eigenschaften | Werte                  | Hinweise |
 |:-----|:-----------|:------------------------|:------|
 |      | Access     | Zugriff zulassen            | Wahr  |
-|      | Access     | Kennwortänderung erforderlich | True  |
+|      | Zugriff     | Kennwortänderung erforderlich | True  |
 
 **Überprüfung:** nicht zutreffend
 
@@ -187,87 +187,41 @@ Melden Sie sich im [Microsoft Azure-Portal (https://portal.azure.com)](https://p
 > Stellen Sie sicher, dass Sie diese Richtlinie aktivieren, indem Sie **auf**auswählen. Sie sollten auch das [What-if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) -Tool zum Testen der Richtlinie verwenden.
 
 ## <a name="define-app-protection-policies"></a>Definieren von App-Schutzrichtlinien
-App-Schutzrichtlinien definieren, welche apps zulässig sind und welche Aktionen Sie mit den Daten Ihrer Organisation durchführen können. Erstellen Sie InTune-App-Schutzrichtlinien im Azure-Portal. 
+App-Schutzrichtlinien (app) definieren, welche apps zulässig sind und welche Aktionen Sie mit den Daten Ihrer Organisation durchführen können. Mit den in App verfügbaren Auswahlmöglichkeiten können Organisationen den Schutz ihren spezifischen Anforderungen anpassen. Für einige ist es möglicherweise nicht offensichtlich, welche Richtlinieneinstellungen erforderlich sind, um ein vollständiges Szenario zu implementieren. Um Organisationen die Priorisierung mobiler Clientendpunkte zu erleichtern, hat Microsoft die Taxonomie für das App-Datenschutz Framework für IOS-und Android-Mobile App Verwaltung eingeführt. 
 
-Erstellen Sie eine Richtlinie für jede Plattform:
-- iOS
-- Android
-- Windows 10
+Das App Data Protection-Framework ist in drei unterschiedliche Konfigurationsebenen unterteilt, wobei jede Ebene die vorherige Ebene abbaut: 
 
-Um eine neue APP-Schutzrichtlinie zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure-Portal an, und navigieren Sie dann zu **Client apps** > -**App-Schutzrichtlinien**. Wählen Sie **Richtlinie erstellen**aus.
+- Enterprise Basic Data Protection stellt sicher, dass apps mit einer PIN geschützt und verschlüsselt und selektive Löschvorgänge ausgeführt werden. Für Android-Geräte überprüft diese Stufe die Beglaubigung von Android-Geräten. Hierbei handelt es sich um eine Einstiegskonfiguration, die eine ähnliche Datenschutz Steuerung in Exchange Online Postfachrichtlinien bereitstellt und die Benutzerpopulation in die APP einführt. 
+- Mit Enterprise Enhanced Data Protection werden Präventionsmechanismen für App-Datenlecks und Mindestanforderungen für BS eingeführt. Dies ist die Konfiguration, die für die meisten mobilen Benutzer gilt, die auf Arbeits-oder Schuldaten zugreifen. 
+- Mit Enterprise High Data Protection werden erweiterte Datenschutzmechanismen, eine erweiterte Pin-Konfiguration und eine Mobile App-Bedrohungsabwehr eingeführt. Diese Konfiguration ist für Benutzer, die auf Daten mit hohem Risiko zugreifen, wünschenswert. 
 
-Es gibt jedoch geringfügige Unterschiede in den Richtlinienoptionen für App-Schutz zwischen iOS und Android. Die folgende Richtlinie gilt speziell für Android. Verwenden Sie dies als Leitfaden für Ihre anderen Richtlinien.
+Informationen zu den spezifischen Empfehlungen für jede Konfigurationsebene und zu den minimalen apps, die geschützt werden müssen, finden Sie unter [Data Protection Framework mithilfe von App-Schutzrichtlinien](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
 
-Die empfohlene Liste von apps umfasst Folgendes:
-- PowerPoint
-- Excel
-- Word
-- Microsoft Teams
-- Microsoft SharePoint
-- Microsoft Visio Viewer
-- OneDrive
-- OneNote
-- Outlook
+Anhand der in den Konfigurationen für den [Identitäts-und Geräte Zugriff](microsoft-365-policies-configurations.md)beschriebenen Prinzipien werden die grundlegenden und sensiblen Schutzebenen eng mit den Einstellungen der Stufe 2 Enterprise Enhanced Data Protection zugeordnet. Die hochregulierte Schutzebene ordnet sich eng mit den Einstellungen der Stufe 3 Enterprise High Data Protection an.
 
-In den folgenden Tabellen werden die empfohlenen Einstellungen beschrieben:
+|Schutzebene |App-Schutzrichtlinie  |Weitere Informationen  |
+|---------|---------|---------|
+|Basisplan     | [Stufe 2 erweiterter Datenschutz](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Die Richtlinieneinstellungen in Ebene 2 enthalten alle Richtlinieneinstellungen, die für Stufe 1 empfohlen werden, und die folgenden Richtlinieneinstellungen werden nur hinzugefügt oder aktualisiert, um weitere Steuerelemente und eine anspruchsvollere Konfiguration als Ebene 1 zu implementieren.         |
+|Vertraulich     | [Stufe 2 erweiterter Datenschutz](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Die Richtlinieneinstellungen in Ebene 2 enthalten alle Richtlinieneinstellungen, die für Stufe 1 empfohlen werden, und die folgenden Richtlinieneinstellungen werden nur hinzugefügt oder aktualisiert, um weitere Steuerelemente und eine anspruchsvollere Konfiguration als Ebene 1 zu implementieren.        |
+|Stark reguliert     | [Stufe 3 Enterprise High Data Protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | Die Richtlinieneinstellungen in Stufe 3 umfassen alle Richtlinieneinstellungen, die für Stufe 1 und 2 empfohlen werden, und nur die unten aufgeführten Richtlinieneinstellungen hinzugefügt oder aktualisiert, um weitere Steuerelemente und eine anspruchsvollere Konfiguration als Ebene 2 zu implementieren.        |
 
-|Typ|Eigenschaften|Werte|Hinweise|
-|:---|:---------|:-----|:----|
-|Datenverschiebung|Android-Sicherungen verhindern|Ja|Auf iOS wird dies insbesondere iTunes und iCloud aufrufen.|
-||App Übertragung von Daten an andere Apps erlauben|Richtlinienverwaltete Apps||
-||Zulassen, dass die App Daten von anderen Apps empfängt|Richtlinienverwaltete Apps||
-||"Speichern unter" verhindern|Ja||
-||Speicherdienste zum Speichern von Unternehmensdaten auswählen|OneDrive für Unternehmen, SharePoint||
-||Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|Verwaltete Richtlinien-apps mit Paste in||
-||Anzeige von Webinhalten auf den Managed Browser beschränken|Nein||
-||App-Daten verschlüsseln|Ja|Wählen Sie bei iOS diese Option aus: Wenn das Gerät gesperrt ist.|
-||App-Verschlüsselung deaktivieren, wenn das Gerät aktiviert ist|Ja|Deaktivieren Sie diese Einstellung, um eine Doppel Verschlüsselung zu vermeiden|
-||Kontaktsynchronisierung deaktivieren|Nein||
-||Drucken deaktivieren|Nein||
-|Zugriff|PIN für Zugriff anfordern|Ja||
-||Typ auswählen|Numeric||
-||Einfache PIN zulassen|Nein||
-||PIN-Länge|6 ||
-||Fingerabdruck anstelle von PIN zulassen|Ja||
-||App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird|Ja||
-||Anfordern von Unternehmensanmeldeinformationen für den Zugriff|Nein||
-||Erneutes Überprüfen der Zugriffsanforderung nach (Minuten)|30||
-||Bildschirmaufnahme und Android-Assistenten blockieren|Nein|Bei iOS ist diese Option nicht verfügbar.|
-|Anmelde Sicherheitsanforderungen|Max. Pin-Versuche|5 |PIN zurücksetzen|
-||Offline-Toleranzperiode|720|Zugriff blockieren|
-||Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden|90|Daten löschen|
-||Jailbroken/verwurzelte Geräte| |Daten löschen|
+Um eine neue APP-Schutzrichtlinie für jede Plattform (IOS und Android) in Microsoft Endpoint Manager mithilfe der Data Protection Framework-Einstellungen zu erstellen, können Administratoren Folgendes tun:
+1. Erstellen Sie die Richtlinien manuell, indem Sie die Schritte unter [Vorgehensweise erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft InTune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)ausführen.
+2. Importieren Sie die JSON-Vorlagen für das Beispiel [InTune-App-Schutzrichtlinien-Konfigurations Framework](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) mit [InTune-PowerShell-Skripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
-Wenn Sie fertig sind, wählen Sie "erstellen" aus. Wiederholen Sie die obigen Schritte, und ersetzen Sie die ausgewählte Plattform (Dropdown) durch IOS. Dadurch werden zwei App-Richtlinien erstellt, sodass nach dem Erstellen der Richtlinie Gruppen zur Richtlinie zugewiesen und bereitgestellt werden.
+## <a name="require-apps-that-support-intune-app-protection-policies"></a>Erfordern von apps, die Intune-App-Schutzrichtlinien unterstützen
+Mit bedingtem Zugriff können Organisationen den Zugriff auf zugelassene (moderne Authentifizierungs fähige) IOS-und Android-Client-apps mit auf Sie angewendeten InTune-App-Schutzrichtlinien einschränken. Es sind mehrere Richtlinien für den bedingten Zugriff erforderlich, wobei jede Richtlinie auf alle potenziellen Benutzer abzielt. Details zum Erstellen dieser Richtlinien finden Sie unter [erfordern von App-Schutzrichtlinien für Cloud-App-Zugriff mit bedingtem Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-Informationen zum Bearbeiten der Richtlinien und Zuweisen dieser Richtlinien zu Benutzern finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](https://docs.microsoft.com/intune/app-protection-policies). 
+1. Befolgtes "Schritt 1: Konfigurieren einer Azure AD Richtlinie für den bedingten Zugriff für Office 365" in [Szenario 1: Office 365 apps erfordern genehmigte apps mit App-Schutzrichtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), was Outlook für IOS und Android ermöglicht, aber verhindert, dass OAuth fähige Exchange ActiveSync-Clients eine Verbindung mit Exchange Online herstellen.
 
-## <a name="require-approved-apps"></a>Genehmigte apps erfordern
-So erfordern Sie genehmigte apps:
+   > [!NOTE]
+   > Diese Richtlinie stellt sicher, dass Mobile Benutzer mithilfe der entsprechenden apps auf alle Office-Endpunkte zugreifen können.
 
-1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren Anmeldeinformationen an. Nachdem Sie sich erfolgreich angemeldet haben, wird das Azure-Dashboard angezeigt.
+2. Wenn Sie den mobilen Zugriff auf Exchange Online aktivieren, implementieren Sie [Blockieren von ActiveSync-Clients] (Secure-Email-Recommended-Policies. MD # Block-ActiveSync-Clients), wodurch verhindert wird, dass Exchange ActiveSync-Clients die Standardauthentifizierung für die Verbindung mit Exchange Online nutzen.
 
-2. Wählen Sie im linken Menü **Azure Active Directory** aus.
+   Die oben genannten Richtlinien nutzen die Grant-Steuerelemente [erfordern eine genehmigte Client-App](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) und [erfordern eine APP-Schutzrichtlinie](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-3. Klicken Sie im Bereich **Sicherheit** auf **Bedingter Zugriff**.
-
-4. Wählen Sie **Neue Richtlinie** aus.
-
-5. Geben Sie einen Richtliniennamen ein, und wählen Sie dann die **Benutzer und Gruppen** aus, auf die Sie die Richtlinie anwenden möchten.
-
-6. Klicken Sie auf **Cloud-Apps**.
-
-7. Wählen **Sie apps auswählen**aus, und wählen Sie in der Liste **Cloud apps** die gewünschten Apps aus. Wählen Sie beispielsweise Office 365 Exchange Online aus. Wählen **Sie auswählen** und **Fertig**aus.
-
-8. Wählen Sie **Bedingungen**aus, wählen Sie **Geräteplattformen**und dann **Konfigurieren** aus.
-
-9. Wählen Sie unter **einschließen**die **Option Geräteplattformen auswählen**, **Android** und **IOS**aus. Klicken Sie erneut auf **Fertig** und **Fertig** .
-
-10. Wählen Sie im Abschnitt **Zugriffssteuerung** die Option **Erteilen** aus.
-
-11. Wählen Sie **Zugriff gewähren**aus, wählen Sie **genehmigte Client-App anfordern**aus. Wählen Sie für mehrere Steuerelemente **die Option ausgewählte Steuerelemente erfordern**aus, und wählen Sie dann **auswählen**aus. 
-
-12. Klicken Sie auf **Erstellen**.
+3. Deaktivieren Sie die Legacy Authentifizierung für andere Client-apps auf IOS-und Android-Geräten. Weitere Informationen finden Sie unter [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication).
 
 ## <a name="define-device-compliance-policies"></a>Definieren von Geräte Kompatibilitätsrichtlinien
 
@@ -278,7 +232,7 @@ Erstellen Sie eine Richtlinie für jede Plattform:
 - Android Enterprise
 - iOS
 - macOS
-- Diese Einstellung ist auf den folgenden Gerätetypen verfügbar:
+- Windows Phone 8.1
 - Windows 8.1 und höher
 - Windows 10 und höher
 
@@ -307,7 +261,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Password|Anfordern eines Kennworts zum Entsperren mobiler Geräte|Erforderlich||
+|Kennwort|Anfordern eines Kennworts zum Entsperren mobiler Geräte|Erforderlich||
 ||Einfache Kennwörter|Block||
 ||Kennwort-Typ|Geräte Standard||
 ||Minimale Kennwortlänge|6 ||

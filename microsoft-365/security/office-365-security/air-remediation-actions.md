@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 2efe0124304a9f9dcfdc92b548c850882ad507a0
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: 1dff52fe1bdab364e03bc42afc84c9b54696ccf5
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836858"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955533"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Behebungsaktionen nach einer automatisierten Untersuchung in Office 365
 
@@ -45,3 +45,9 @@ In der folgenden Tabelle sind die derzeit in Office 365 ATP verfügbaren Korrekt
 - [Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Office 365](air-review-approve-pending-completed-actions.md)
 
 - [Details und Ergebnisse einer automatisierten Untersuchung in Office 365](air-view-investigation-results.md)
+
+## <a name="related-articles"></a>Verwandte Artikel
+
+- [Automatisierte Untersuchung in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)

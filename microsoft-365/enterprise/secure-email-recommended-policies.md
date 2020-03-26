@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084309"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959182"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -43,40 +43,18 @@ Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen h
 |**Basisplan**|[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
 |        |[Sperrt Clients, die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
 |        |[Definieren von App-Schutzrichtlinien](identity-access-policies.md#high-risk-users-must-change-password)|Stellen Sie sicher, dass Outlook in der Liste der Apps enthalten ist. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
-|        |[Genehmigte apps erfordern](identity-access-policies.md#require-approved-apps)|Einschließen von Exchange Online in die Liste der Cloud-apps|
+|        |[Erfordern von apps, die Intune-App-Schutzrichtlinien unterstützen](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Einschließen von Exchange Online in die Liste der Cloud-apps|
 |        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einschließen von Exchange Online in die Liste der Cloud-apps|
 |        |[Blockieren von ActiveSync-Clients](#block-activesync-clients)|Diese neue Richtlinie hinzufügen| 
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Einschließen von Exchange Online in die Liste der Cloud-apps|
-|**Hochgradig reguliert**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
+|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
 
 ## <a name="block-activesync-clients"></a>Blockieren von ActiveSync-Clients
 
-Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere bedingte Zugriffsregeln umgehen. Die Regelkonfiguration gilt nur für ActiveSync-Clients. Wenn Sie die Option **genehmigte Client-App anfordern**auswählen, blockiert diese Richtlinie ActiveSync-Clients. So konfigurieren Sie diese Richtlinie:
+Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere bedingte Zugriffsregeln umgehen. Die Regelkonfiguration gilt nur für ActiveSync-Clients. Wenn Sie die Option **[App-Schutzrichtlinie anfordern](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** auswählen, blockiert diese Richtlinie ActiveSync-Clients. Details zum Erstellen dieser Richtlinie finden Sie unter [erfordern von App-Schutzrichtlinien für Cloud-App-Zugriff mit bedingtem Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren Anmeldeinformationen an. Nachdem Sie sich erfolgreich angemeldet haben, wird das Azure-Dashboard angezeigt.
-
-2. Wählen Sie im linken Menü **Azure Active Directory** aus.
-
-3. Klicken Sie im Bereich **Sicherheit** auf **Bedingter Zugriff**.
-
-4. Wählen Sie **Neue Richtlinie** aus.
-
-5. Geben Sie einen Richtliniennamen ein, und wählen Sie dann die **Benutzer und Gruppen** aus, auf die Sie die Richtlinie anwenden möchten.
-
-6. Klicken Sie auf **Cloud-Apps**.
-
-7. Wählen Sie **apps auswählen**aus, wählen Sie **Office 365 Exchange Online**aus. Wählen **Sie auswählen** und **Fertig**aus.
-
-8. Wählen Sie **Bedingungen**aus, und wählen Sie dann **Client-apps**aus.
-
-9. Wählen Sie für **configure**die Option **Ja**aus. Überprüfen Sie nur Folgendes: **Mobile Apps und Desktop Clients** und **Exchange ActiveSync-Clients**. Klicken Sie auf **Fertig**.
-
-10. Wählen Sie im Abschnitt **Zugriffssteuerung** die Option **Erteilen** aus.
-
-11. Wählen Sie **Zugriff gewähren**aus, wählen Sie **genehmigte Client-App anfordern**aus.  Wählen Sie für mehrere Steuerelemente **die Option ausgewählte Steuerelemente erfordern**aus, und wählen Sie dann **auswählen**aus.
-
-12. Klicken Sie auf **Erstellen**.
+1. Befolgtes "Schritt 2: Konfigurieren einer Azure AD Richtlinie für den bedingten Zugriff für Exchange Online mit ActiveSync (EAS)" in [Szenario 1: Office 365 apps erfordern genehmigte apps mit App-Schutzrichtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), wodurch verhindert wird, dass Exchange ActiveSync-Clients die Standardauthentifizierung für die Verbindung mit Exchange Online nutzen.
 
 ## <a name="setup-office-365-message-encryption"></a>Einrichten Office 365 Nachrichtenverschlüsselung
 

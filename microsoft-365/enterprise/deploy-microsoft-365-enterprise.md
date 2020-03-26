@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067957"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951934"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -95,7 +95,7 @@ Einen besseren Überblick darüber, wie Sie Ihre gesamte Organisation auf die Pr
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
-Sie können [das Poster zur Überführung auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [das Poster zur Überführung auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="how-did-others-do-it"></a>Wie haben andere Personen es gemacht?
 

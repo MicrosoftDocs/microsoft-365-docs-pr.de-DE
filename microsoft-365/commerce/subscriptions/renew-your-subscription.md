@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Erfahren Sie, wie Sie Ihr Office 365 für Unternehmen Abonnement mit einem Product Key erneuern und die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633703"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959216"
 ---
 # <a name="renew-office-365-for-business"></a>Verlängern Ihres Office 365 Business-Abonnements
 
 [] Dieser Artikel bezieht sich auf die meisten kostenpflichtigen Office 365 Business-Abonnements.
   
-Informationen zum erneuern mithilfe eines Product Keys, den Sie in einem Einzelhandelsgeschäft oder Office 365 Partner erworben haben, finden Sie unter [EFind und geben Sie Ihren Product Key](../enter-your-product-key.md)ein.
+Informationen zum erneuern mithilfe eines Product Keys, den Sie in einem Einzelhandelsgeschäft oder Office 365 Partner erworben haben, finden Sie unter [Suchen und Eingeben Ihres Product Keys](../enter-your-product-key.md).
 
 > [!NOTE]
 > Die Zahlung per Bankkonto ist in einigen Ländern oder Regionen nicht möglich.
@@ -120,7 +120,7 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
   
 [Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[Was geschieht mit meinen Daten und dem Zugriff, wenn mein Abonnement endet?](what-if-my-subscription-expires.md)
+[Was geschieht beim Ablauf meines Abonnements mit meinen Daten? Kann ich darauf noch zugreifen?](what-if-my-subscription-expires.md)
 
 [Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

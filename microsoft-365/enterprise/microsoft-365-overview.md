@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 für Unternehmen.
-ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633303"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951994"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -69,7 +69,7 @@ Das [Poster Microsoft 365 for Enterprise](../media/m365-poster/Microsoft365Enter
 
 [![Abbildung des Posters "Microsoft 365 Enterprise"](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
-Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
+Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Umstellung Ihrer gesamten Organisation
@@ -80,7 +80,7 @@ Um ein besseres Bild davon zu erhalten, wie Sie Ihre gesamte Organisation auf di
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
-Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Vermeiden des Endes der Unterstützung für Windows 7-und Office 2010-Clients und-Server
 
@@ -100,7 +100,7 @@ Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und den Wech
 
 Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Windows 7 und Office 2010 Client-und Serverprodukte das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Unterstützung in Microsoft 365 for Enterprise hervorgehoben sind.
 
-Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="deploy"></a>Bereitstellen
 
@@ -150,6 +150,6 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 Wenn Sie die Bereitstellung selbst ausführen, starten Sie die [Bereitstellungs Reise von Microsoft 365 für Enterprise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365 für Enterprise-Produktseite](https://www.microsoft.com/microsoft-365/enterprise)

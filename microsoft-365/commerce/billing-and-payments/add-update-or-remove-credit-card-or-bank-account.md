@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409700"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952006"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden
 
@@ -107,7 +107,7 @@ Wenn Ihre Zahlungsmethode mit Abonnements verknüpft ist und Sie keine alternati
 6. Wählen Sie in der Dropdownliste die neue Zahlungsmethode aus, und wählen Sie dann **ändern**aus.
     > [!WARNING]
     > Dadurch werden alle Abonnements für die neue Zahlungsmethode verlagert.
-7. Wählen Sie **Löschen**aus.
+7. Wählen Sie **Löschen** aus.
 
 ### <a name="change-the-payment-method-used-to-pay-for-subscriptions"></a>Ändern der Zahlungsmethode, die zum bezahlen von Abonnements verwendet wird
 
@@ -120,7 +120,7 @@ Wenn Ihre Zahlungsmethode mit Abonnements verknüpft ist und Sie über mindesten
 5. Wählen Sie in der Dropdownliste eine alternative Zahlungsmethode aus, und wählen Sie dann **ändern**aus.
     > [!WARNING]
     > Dadurch werden alle Abonnements zur alternativen Zahlungsmethode gewechselt.
-6. Wählen Sie **Löschen**aus.
+6. Wählen Sie **Löschen** aus.
 
 ### <a name="change-the-payment-method-for-a-billing-profile"></a>Ändern der Zahlungsmethode für ein Abrechnungsprofil
 
@@ -158,9 +158,7 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 [] Sie müssen ein globaler Administrator oder ein Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Aufgaben auszuführen.
   
  **Sie sind kein Administrator?** Wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. [Wer verfügt über Administratorberechtigungen in meinem Unternehmen?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- Informationen **zum Office 365 privat oder persönlich**finden Sie unter [Ändern der Zahlungsmethode oder Kreditkarte, die mit Ihrem Microsoft-Konto verknüpft](https://support.microsoft.com/help/4026594)ist.
-  
+
 > [!NOTE]
 > Die Option zur Zahlung mit einem Bankkonto steht in einigen Ländern oder Regionen nicht zur Verfügung.
 >
@@ -181,7 +179,7 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 4. Geben Sie die Informationen für die neue Kreditkarte oder das Konto ein, und wählen Sie dann **Absenden**aus.
 
     > [!NOTE]
-    > Die neue Kreditkarte oder das Konto wird nur für das Office 365 Abonnement verwendet, das Sie in Schritt 2 gewählt haben. Wenn Sie weitere Abonnements besitzen, für die Sie die neue Kreditkarte oder das Bankkonto verwenden möchten, führen Sie die in diesem Artikel beschriebenen Schritte aus, um die Kreditkarte oder das Bankkonto zu ändern, die/das zum Bezahlen der einzelnen Abonnements verwendet wird.
+    > Die neue Kreditkarte oder das Konto wird nur für das Abonnement verwendet, das Sie in Schritt 2 gewählt haben. Wenn Sie weitere Abonnements besitzen, für die Sie die neue Kreditkarte oder das Bankkonto verwenden möchten, führen Sie die in diesem Artikel beschriebenen Schritte aus, um die Kreditkarte oder das Bankkonto zu ändern, die/das zum Bezahlen der einzelnen Abonnements verwendet wird.
 
 ::: moniker-end
 
@@ -191,8 +189,6 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 [] Sie müssen ein globaler Administrator oder ein Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Aufgaben auszuführen.
   
  **Sie sind kein Administrator?** Wenden Sie sich an Ihren Administrator, um Hilfe zu erhalten. [Wer hat in meinem Unternehmen Administratorberechtigungen?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- Informationen **zum Office 365 privat oder persönlich**finden Sie unter [Ändern der Zahlungsmethode oder Kreditkarte, die mit Ihrem Microsoft-Konto verknüpft](https://support.microsoft.com/help/4026594)ist.
   
 > [!NOTE]
 > Die Option zur Zahlung mit einem Bankkonto steht in einigen Ländern oder Regionen nicht zur Verfügung.
@@ -212,7 +208,7 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
 4. Geben Sie die Informationen für die neue Kreditkarte oder das Konto ein, und wählen Sie dann **Absenden**aus.
 
     > [!NOTE]
-    > Die neue Kreditkarte oder das Konto wird nur für das Office 365 Abonnement verwendet, das Sie in Schritt 2 gewählt haben. Wenn Sie weitere Abonnements besitzen, für die Sie die neue Kreditkarte oder das Bankkonto verwenden möchten, führen Sie die in diesem Artikel beschriebenen Schritte aus, um die Kreditkarte oder das Bankkonto zu ändern, die/das zum Bezahlen der einzelnen Abonnements verwendet wird.
+    > Die neue Kreditkarte oder das Konto wird nur für das Abonnement verwendet, das Sie in Schritt 2 gewählt haben. Wenn Sie weitere Abonnements besitzen, für die Sie die neue Kreditkarte oder das Bankkonto verwenden möchten, führen Sie die in diesem Artikel beschriebenen Schritte aus, um die Kreditkarte oder das Bankkonto zu ändern, die/das zum Bezahlen der einzelnen Abonnements verwendet wird.
 
 ::: moniker-end
 

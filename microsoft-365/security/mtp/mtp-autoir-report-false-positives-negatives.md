@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262002"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955661"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Behandeln von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -58,7 +58,7 @@ Verwenden Sie diesen Artikel als Leitfaden.
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Rückgängigmachen einer auf einem Gerät ausgeführten Korrekturaktion
 
-Wenn eine Korrekturaktion auf einem Gerät (beispielsweise einem Windows 10-Gerät) ausgeführt wurde und das Element tatsächlich sauber ist, kann Ihr Sicherheits Betriebsteam die Korrekturaktion im [Wartungscenter](mtp-action-center.md)rückgängig machen.
+Wenn eine Korrekturaktion auf einem Gerät (beispielsweise einem Windows 10-Gerät) ausgeführt wurde und das Element tatsächlich keine Bedrohung darstellt, kann Ihr Sicherheits Betriebsteam die Korrekturaktion im [Aktionscenter](mtp-action-center.md)rückgängig machen.
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie über die [erforderlichen Berechtigungen](mtp-action-center.md#required-permissions-for-action-center-tasks) verfügen, bevor Sie versuchen, die folgende Aufgabe auszuführen.
