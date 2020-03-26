@@ -201,13 +201,13 @@
     - name: Grundlegendes zur Datenklassifizierung (Vorschau)
       href: data-classification-overview.md
       items:
-        - name: Anzeigen von beschriftetem Inhalt (Vorschau)
+        - name: Erste Schritte mit dem Inhalts-Explorer (Vorschau)
           href: data-classification-content-explorer.md
-        - name: Beschriftungs-Aktivität anzeigen (Vorschau)
+        - name: Erste Schritte mit dem Aktivitäten-Explorer (Vorschau)
           href: data-classification-activity-explorer.md
         - name: Versionshinweise für die öffentliche Vorschau der Datenklassifizierung (Vorschau)
           href: data-classification-pub-preview-relnotes.md
-        - name: Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
+        - name: Erste Schritte mit Schulungs Klassifizierern (Vorschau)
           href: classifier-getting-started-with.md
         - name: Verwenden einer integrierten Klassifizierung (Vorschau)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -243,6 +243,8 @@
           href: archive-linkedin-data.md
         - name: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
           href: archive-instant-bloomberg-data.md
+        - name: Einrichten eines Connectors zum Archivieren von Ice-Chat Daten (Vorschau)
+          href: archive-icechat-data.md
         - name: Einrichten eines Connectors zum Importieren von HR-Daten
           href: import-hr-data.md
         - name: Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten
@@ -816,6 +818,10 @@
           href: gdpr-for-office-online-server.md
         - name: "DSGVO für lokale Windows\_Server-Dateifreigaben"
           href: gdpr-for-on-premises-file-shares.md
+    - name: Branchenspezifische Anleitungen
+      items:
+        - name: Sicherheit und Compliance von Finanzdienstleistungen
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: Aktionspläne für die Einhaltung gesetzlicher Vorschriften
   items:
     - name: ISO – Empfohlener Aktionsplan
@@ -1190,5 +1196,5 @@
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: Office 365 Business
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Microsoft 365-Sicherheit
+- name: Microsoft 365 Security Center
   href: 'https://docs.microsoft.com/microsoft-365/security/'
