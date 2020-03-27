@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Funktionsreferenz für die Kommunikations Konformität
           href: communication-compliance-feature-reference.md
+        - name: 'Fallstudie: contoso konfiguriert eine Offensive Sprachrichtlinie schnell'
+          href: communication-compliance-case-study.md
         - name: Aufsichtsrichtlinien in Office 365
           href: supervision-policies.md
         - name: Konfigurieren von Aufsichtsrichtlinien für Office 365
@@ -638,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Ausführen von Berichten
               href: run-reports-in-advanced-ediscovery.md
+    - name: Ruhestand von vorversions-eDiscovery-Tools
+      href: legacy-ediscovery-retirement.md
 - name: Verwalten von Datenuntersuchungen
   items:
     - name: Übersicht über Daten Untersuchungen
