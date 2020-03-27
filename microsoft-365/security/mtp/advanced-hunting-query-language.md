@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928996"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982010"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -57,8 +57,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 So sieht es in der erweiterten Suche aus.
 
-![Bild der erweiterten Jagd Abfrage von Microsoft Threat Protection](../../media/advanced-hunting-query-example.png)
+![Bild der erweiterten Jagd Abfrage von Microsoft Threat Protection](../../media/advanced-hunting-query-example-2.png)
 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Beschreiben der Abfrage und angeben der zu durchsuchenden Tabellen
 Ein kurzer Kommentar zum Anfang der Abfrage wurde hinzugefügt, um zu beschreiben, wofür er verwendet wird. Dies hilft, wenn Sie später entscheiden, die Abfrage zu speichern und für andere Personen in Ihrer Organisation freizugeben. 
 
 ```kusto
@@ -70,12 +71,14 @@ Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von eine
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+### <a name="set-the-time-range"></a>Festlegen des Zeitbereichs
 Das erste piped-Element ist ein Zeitfilter, der auf die vorherigen sieben Tage beschränkt ist. Wenn Sie den Zeitabschnitt so eng wie möglich lassen, wird sichergestellt, dass Abfragen gut ausgeführt werden, überschaubare Ergebnisse zurückgeben und keine Zeitüberschreitungen auftreten.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
+### <a name="check-specific-processes"></a>Überprüfen bestimmter Prozesse
 Auf den Zeitbereich folgt unmittelbar eine Suche nach Prozess Dateinamen, die die PowerShell-Anwendung darstellen.
 
 ```
@@ -83,20 +86,23 @@ Auf den Zeitbereich folgt unmittelbar eine Suche nach Prozess Dateinamen, die di
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
+### <a name="search-for-specific-command-strings"></a>Suchen nach bestimmten Befehlszeichenfolgen
 Anschließend sucht die Abfrage nach Zeichenfolgen in Befehlszeilen, die in der Regel zum Herunterladen von Dateien mithilfe von PowerShell verwendet werden.
 
 ```kusto
 // Suspicious commands
 | where ProcessCommandLine has_any("WebClient",
- "DownloadFile",
- "DownloadData",
- "DownloadString",
-"WebRequest",
-"Shellcode",
-"http",
-"https")
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
 ```
-Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen. `project`gibt bestimmte Spalten zurück `top` und schränkt die Anzahl der Ergebnisse ein, wodurch sichergestellt ist, dass die Ergebnisse gut formatiert und relativ umfangreich und einfach zu verarbeiten sind.
+
+### <a name="customize-result-columns-and-length"></a>Anpassen von Ergebnisspalten und-Länge 
+Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen. `project`gibt bestimmte Spalten zurück und `top` schränkt die Anzahl der Ergebnisse ein. Diese Operatoren tragen dazu bei, dass die Ergebnisse gut formatiert und relativ umfangreich und einfach zu verarbeiten sind.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -104,9 +110,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen. Wählen Sie das Erweiterungssymbol oben rechts im Abfrage-Editor aus, um sich auf Ihre Jagd Abfrage und die Ergebnisse zu konzentrieren.
+Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen. Wählen Sie das Erweiterungssymbol oben rechts im Abfrage-Editor aus, um sich auf Ihre Jagd Abfrage und die Ergebnisse zu konzentrieren. 
 
 ![Bild des Expand-Steuerelements im Editor für erweiterte Jagd Abfragen](../../media/advanced-hunting-expand.png)
+
+>[!TIP]
+>Sie können Abfrageergebnisse als Diagramme anzeigen und Filter schnell anpassen. [Informationen zum Arbeiten mit Abfrageergebnissen finden Sie](advanced-hunting-query-results.md) unter Anleitung.
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>Erlernen häufig verwendeter Operatoren für die erweiterte Suche
 

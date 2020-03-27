@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179236"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982048"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -53,7 +53,7 @@ Kommunikations Konformitätsrichtlinien können beim Überprüfen von Nachrichte
 
 - **Einhaltung von Vorschriften**
 
-    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für eine Anforderung für Organisationen, Aufsichtsverfahren für die Überprüfung der Mitarbeiterkommunikation und der Unternehmenstypen zu haben, in denen Sie tätig ist. Ein weiteres Beispiel ist möglicherweise die Notwendigkeit, die Broker Händler Kommunikation in Ihrer Organisation zu überprüfen, um gegen mögliche Geld Wäschereien, Insidergeschäfte, Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen.
+    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für eine Anforderung für Organisationen, Aufsichtsverfahren für die Überprüfung der Mitarbeiterkommunikation und der Unternehmenstypen zu haben, in denen Sie tätig ist. Ein weiteres Beispiel ist möglicherweise die Notwendigkeit, die Broker Händler Kommunikation in Ihrer Organisation zu überprüfen, um gegen mögliche Geld Wäschereien, Insidergeschäfte, Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen. Weitere Informationen zum Support für Finanzorganisationen finden Sie unter [wichtige Compliance-und Sicherheitsüberlegungen für US-Banken und Kapitalmärkte](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="new-enhancements"></a>Neue Verbesserungen
 
@@ -155,4 +155,4 @@ Das Nachverfolgen und Verwalten von Compliance-Problemen, die durch Kommunikatio
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for Microsoft 365](communication-compliance-configure.md).
+Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for Microsoft 365](communication-compliance-configure.md) oder in der [Fallstudie für Contoso](communication-compliance-case-study.md) und dazu, wie Sie eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams und Exchange Online Kommunikation schnell konfiguriert haben.
