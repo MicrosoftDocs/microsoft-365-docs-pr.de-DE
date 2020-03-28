@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084203"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035123"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinien Empfehlungen für das Sichern von SharePoint-Websites und-Dateien
 
@@ -47,13 +47,13 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder übe
 |:---------------|:-------|:----------------|
 |**Basisplan**|[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
 |        |[Sperrt Clients, die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
-|        |[Definieren von App-Schutzrichtlinien](identity-access-policies.md#define-app-protection-policies)|Stellen Sie sicher, dass alle empfohlenen apps in der Liste der Apps enthalten sind. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
+|        |[Anwenden von App-Datenschutzrichtlinien](identity-access-policies.md#apply-app-data-protection-policies)|Stellen Sie sicher, dass alle empfohlenen apps in der Liste der Apps enthalten sind. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
 |        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einschließen von SharePoint Online in die Liste der Cloud-apps|
 |        |[Verwenden von App-erzwungenen Einschränkungen in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Fügen Sie diese neue Richtlinie hinzu. Dies weist Azure AD an, die in SharePoint Online angegebenen Einstellungen zu verwenden. Diese Regel gilt für alle Benutzer, wirkt sich jedoch nur auf den Zugriff auf Websites aus, die in SharePoint Online-Zugriffsrichtlinien enthalten sind.|
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisungen von Cloud-apps|
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Einschließen von SharePoint Online in die Liste der Cloud-apps|
 ||[SharePoint Online Richtlinie für die Zugriffssteuerung](#sharepoint-online-access-control-policies): zulassen des reinen Browser Zugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten|Dadurch wird verhindert, dass Dateien bearbeitet und heruntergeladen werden. Verwenden von PowerShell zum Angeben von Websites|
-|**Hochgradig reguliert**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
+|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint Online in die Zuweisung von Cloud-apps|
 ||[SharePoint Online Richtlinie für die Zugriffssteuerung](#use-app-enforced-restrictions-in-sharepoint-online): Blockieren des Zugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten|Verwenden von PowerShell zum Angeben von Websites|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Verwenden von App-erzwungenen Einschränkungen in SharePoint Online
