@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365 Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640017"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032876"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Office 365
 
@@ -122,7 +122,7 @@ Wenn Ihr Land nicht aufgeführt ist, wenden Sie sich an Ihre lokalen oder Bundes
 
 ### <a name="submit-email-messages-to-microsoft"></a>Senden von e-Mail-Nachrichten an Microsoft
 
-Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie den Anweisungen unter [Submit Spam, Non-Spam, and Phishing Scam messages to Microsoft for Analysis](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)folgen.
+Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Siehe auch
 

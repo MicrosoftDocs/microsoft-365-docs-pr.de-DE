@@ -18,7 +18,7 @@
       href: plan-for-security-and-compliance.md
 - name: Verwalten von Insider Risiken
   items:
-    - name: Insider Risikomanagement
+    - name: Insider-Risikomanagement
       items:
         - name: Informationen zum Insider-Risikomanagement
           href: insider-risk-management.md
@@ -245,8 +245,6 @@
           href: archive-linkedin-data.md
         - name: Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
           href: archive-instant-bloomberg-data.md
-        - name: Einrichten eines Connectors zum Archivieren von Ice-Chat Daten (Vorschau)
-          href: archive-icechat-data.md
         - name: Einrichten eines Connectors zum Importieren von HR-Daten
           href: import-hr-data.md
         - name: Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten

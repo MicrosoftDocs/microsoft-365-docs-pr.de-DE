@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978266"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022921"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -225,18 +225,22 @@ Mit bedingtem Zugriff können Organisationen den Zugriff auf zugelassene (modern
 
 ## <a name="define-device-compliance-policies"></a>Definieren von Geräte Kompatibilitätsrichtlinien
 
-Geräte Konformitätsrichtlinien definieren die Anforderungen, die Geräte erfüllen müssen, um als konform gekennzeichnet zu sein. Erstellen von InTune-Geräte Konformitätsrichtlinien im Azure-Portal. 
+Geräte Konformitätsrichtlinien definieren die Anforderungen, die Geräte erfüllen müssen, um als konform gekennzeichnet zu sein. Erstellen Sie in Microsoft Endpoint Manager Admin Center InTune-Geräte Konformitätsrichtlinien.
 
 Erstellen Sie eine Richtlinie für jede Plattform:
-- Android
+- Android-Geräteadministrator
 - Android Enterprise
-- iOS
+- IOS/iPads
 - macOS
 - Windows Phone 8.1
 - Windows 8.1 und höher
 - Windows 10 und höher
 
-Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim Microsoft Azure Portal an, und navigieren Sie dann zu **InTune > Device Compliance**. Wählen Sie **Richtlinie erstellen** aus.
+Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie dann zu**Richt**Linien für**Konformitätsrichtlinien** > für **Geräte** > . Wählen Sie **Richtlinie erstellen**aus.
+
+Damit Geräte Konformitätsrichtlinien bereitgestellt werden, müssen Sie Benutzergruppen zugewiesen werden. Sie weisen eine Richtlinie zu, nachdem Sie Sie erstellt und gespeichert haben. Wählen Sie im Admin Center die Richtlinie aus, und wählen Sie dann **Zuweisungen**aus. Nachdem Sie die Gruppen ausgewählt haben, für die Sie die Richtlinie erhalten möchten, wählen Sie **Speichern** aus, um diese Gruppenzuweisung zu speichern und die Richtlinie bereitzustellen.
+
+Eine Schritt-für-Schritt-Anleitung zum Erstellen von Konformitätsrichtlinien in InTune finden Sie unter [Create a Compliance Policy in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in der InTune-Dokumentation.
 
 Die folgenden Einstellungen werden für Windows 10 empfohlen.
 
@@ -255,8 +259,6 @@ Die folgenden Einstellungen werden für Windows 10 empfohlen.
 |:---|:---------|:-----|:----|
 |Betriebssystemversion|Alle|Nicht konfiguriert||
 
-Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, müssen sie für bestimmte Benutzergruppen gelten. Sie können dies tun, indem Sie die Richtlinie (beim Speichern) oder höher erstellen, indem Sie die Option " **Bereitstellung verwalten** " im Abschnitt " **Policy** " auswählen (gleiche Ebene wie "hinzufügen").
-
 **Systemsicherheit**
 
 |Typ|Eigenschaften|Werte|Hinweise|
@@ -273,9 +275,9 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 |Gerätesicherheit|Firewall|Erforderlich||
 ||Antivirus|Erforderlich||
 ||AntiSpyware|Erforderlich|Für diese Einstellung ist eine mit dem Windows Security Center registrierte Anti-Spyware-Lösung erforderlich.|
-|Defender|Windows Defender Antimalware|Erforderlich||
-||Minimale Version von Windows Defender-Antischadsoftware||Wird nur für Windows 10-Desktop unterstützt. Microsoft empfiehlt Versionen von nicht mehr als fünf hinter der neuesten Version|
-||Windows Defender-Antischadsoftware-Signatur auf dem neuesten Stand|Erforderlich||
+|Defender|Antischadsoftware für Microsoft Defender|Erforderlich||
+||Mindestversion von Microsoft Defender Antischadsoftware||Wird nur für Windows 10-Desktop unterstützt. Microsoft empfiehlt Versionen von nicht mehr als fünf hinter der neuesten Version|
+||Microsoft Defender-Antischadsoftware-Signatur auf dem neuesten Stand|Erforderlich||
 ||Echtzeitschutz|Erforderlich|Wird nur für Windows 10-Desktop unterstützt|
 
 **Microsoft Defender ATP**
@@ -283,6 +285,7 @@ Damit die oben aufgeführten Richtlinien als bereitgestellt betrachtet werden, m
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
 |Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Medium||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets)
 Bevor Sie eine Richtlinie hinzufügen, die kompatible PCs erfordert, müssen Sie die Geräte für die Verwaltung in InTune registrieren. Die Verwendung der mehrstufigen Authentifizierung wird empfohlen, bevor Geräte in InTune registriert werden, um sicher zu sein, dass das Gerät im Besitz des beabsichtigten Benutzers ist. 

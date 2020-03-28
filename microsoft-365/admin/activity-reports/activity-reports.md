@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Office 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353966"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029860"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitätsberichte im Microsoft 365 Admin Center
 
@@ -74,7 +74,11 @@ Personen, die über die folgenden Berechtigungen verfügen:
 
 - Globaler Leser
     
-- Berichts-Leser
+- Berichtleseberechtigter
+
+- Teams-Dienstadministrator
+
+- Teams-Kommunikationsadministrator
     
 Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md) und [Zuweisen von Administratorrollen](../add-users/assign-admin-roles.md).
   

@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe für die durchgeführten Phishing-Nachrichten zu identifizieren und zu verhindern, dass mehr Phishing-Nachrichten in der Zukunft vermieden werden.
-ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082024"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033650"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Optimieren des Schutzes gegen Phishing in Office 365
 
@@ -33,17 +33,13 @@ Wenn Ihr Abonnement Advanced Threat Protection (ATP) enthält, können Sie [Offi
 
 - [Sichere Anlagen in ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Anti-Phishing-Richtlinien für ATP](set-up-anti-phishing-policies.md). Beachten Sie, dass Sie die **erweiterten Phishing-Schwellenwerte** in der Richtlinie vorübergehend **von Standard** zu aggressiv **,** aggressiver oder **** aggressiver vergrössern können. ****
+- [Anti-Phishing-Richtlinien für ATP](set-up-anti-phishing-policies.md). Beachten Sie, dass Sie die **erweiterten Phishing-Schwellenwerte** in der Richtlinie vorübergehend **von Standard** zu aggressiv **,** aggressiver oder **Most aggressive**aggressiver vergrössern können. **Aggressive**
 
 Stellen Sie sicher, dass diese ATP-Funktionen aktiviert sind.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Melden der Phishing-Nachricht an Microsoft
 
-Das Melden von Phishing-Nachrichten ist hilfreich beim Optimieren der Filter, die zum Schutz aller Kunden in Office 365 verwendet werden.
-
-Senden Sie die Phishing-Nachricht _als Anlage_ in einer neuen, ansonsten leeren Nachricht an **Phish@office365.Microsoft.com**. Leiten Sie die ursprüngliche Nachricht nicht einfach weiter. Andernfalls können die ursprünglichen Nachrichtenkopfzeilen nicht untersucht werden. Sie können auch das Add-in " [Berichtsnachricht](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in) " in Outlook oder Outlook im Internet verwenden (früher bekannt als Outlook Web App).
-
-Weitere Informationen finden Sie unter [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Das Melden von Phishing-Nachrichten ist hilfreich beim Optimieren der Filter, die zum Schutz aller Kunden in Office 365 verwendet werden. Anweisungen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="inspect-the-message-headers"></a>Überprüfen der Nachrichtenkopfzeilen
 

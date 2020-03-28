@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten.
-ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887302"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033434"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Bewährte Methoden für die Konfiguration von EoP und Office 365 ATP
 
@@ -61,11 +61,9 @@ Diese Einstellungen umfassen eine Reihe von Features, die sich außerhalb von Si
 
 Behandeln allgemeiner Probleme und Trends mithilfe der Berichte im Admin Center. Mithilfe des Nachrichtenablaufverfolgungs-Tools können Sie nach einzelnen quellenspezifischen Daten zu einer Nachricht suchen. Weitere Informationen zu Berichten finden Sie unter [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Weitere Informationen zum Nachrichtenablauf verfolgungstool finden Sie unter [Message Trace im Security & Compliance Center](message-trace-scc.md).
 
-## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>Melden von falsch positiven und falschen negativen Ergebnissen an Microsoft
+## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Falsch positive und falsch negative Ergebnisse an Microsoft melden
 
-Administratoren sollten falsch negative (Spam) und falsch positive Ergebnisse (nicht-Spam) über unser admin-Übermittlungen-Portal an Microsoft übermitteln. E-Mails, Dateien und URLs können an Administratoren übermittelt werden, um zu ermitteln, warum Nachrichten an Endbenutzer übermittelt oder nicht bereitgestellt wurden. Ausführliche Informationen finden Sie unter [Vorgehensweise übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft für Office 365](admin-submission.md)-Überprüfung.
-
-Endbenutzer können falsch negative (Spam) und falsch positive Ergebnisse (nicht-Spam) auch direkt an Microsoft zur Analyse melden, wenn Sie mit den gegebenen Urteilen nicht einverstanden sind. Ausführliche Informationen finden Sie unter [Submit Spam, Non-Spam, and Phishing Scam messages to Microsoft for Analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Um die Spamfilterung im Dienst für alle zu verbessern, sollten Sie falsch positive Ergebnisse (gute e-Mail-Nachrichten als ungültig markiert) und falsch negative (ungültige e-Mail-Nachrichten) zur Analyse an Microsoft melden. Weitere Informationen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Erstellen von Nachrichtenflussregeln
 

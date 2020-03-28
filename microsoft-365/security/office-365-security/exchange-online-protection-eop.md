@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Hier sind einige Dinge, die Sie beachten sollten, bevor Sie mit der Arbeit mit EoP beginnen.
-ms.openlocfilehash: 9c027d6c1ded10becd7c73dc3468270ff50edb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599342"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032864"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,12 +63,8 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
 
 Der Hilfeinhalt zur Unterstützung der EOP-Endbenutzer beim Umgang mit Spam umfasst die folgenden Themen:
 
-- [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md): Beschreibt, wie Endbenutzer ihre eigenen Nachrichten in Spamquarantäne in der Spamquarantäne-Benutzeroberfläche suchen und freigeben und diese optional als nicht-Junk an Microsoft melden können.
+- [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md)
 
-- [Senden von Spam-, nicht-Spam-und Phishing-Nachrichten an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Beschreibt die verschiedenen Möglichkeiten, wie Endbenutzer Spam-und nicht-Spam-Nachrichten (nicht Junk) an Microsoft übermitteln können. Dieses Thema enthält Links zu den in Microsoft Outlook und Outlook im Internet verfügbaren Berichterstattungstools (früher bekannt als Outlook Web App).
-
-- [Übermitteln von Schadsoftware und nicht-Schadsoftware an Microsoft zur Analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Beschreibt, wie Endbenutzer Schadsoftware übermitteln können, die Sie an den Filtern vorbei gemacht hat, oder eine Datei übermitteln, die fälschlicherweise als Schadsoftware identifiziert wurde.
-
-- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder einer Liste blockierter Absender hinzufügen, indem Sie Ihre Junk-e-Mail-Einstellungen in Outlook oder Outlook im Internet konfigurieren. Beachten Sie, dass Nachrichten, die von blockierten Absendern gesendet werden, als Spam gekennzeichnet und nicht abgelehnt werden, was bedeutet, dass Sie aus dem Junk-e-Mail-Ordner oder aus der Quarantäne abgerufen werden können (je nachdem, wo der Administrator den Dienst zum Senden von Spam konfiguriert hat). Weitere Informationen finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Endbenutzer können Absender zu ihrer eigenen Liste sicherer Absender hinzufügen oder die Liste Absender in Outlook oder Outlook im Internet blockieren. Administratoren können diese Listen auch in Benutzerpostfächern ändern. Weitere Informationen finden Sie unter [Informationen zu Junk-e-Mail-Einstellungen in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support.

@@ -1,5 +1,5 @@
 ---
-title: Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
+title: Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,101 +16,138 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893646"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032804"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 
-Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-Nachrichten (Spam) oder Phishing-Scam-Nachrichten in Ihrem Posteingang empfangen oder wenn Sie keine legitime e-Mail-Nachricht erhalten, weil Sie als Junk gekennzeichnet ist. Wir optimieren unsere Spamfilter ständig, um genauere Angaben zu machen. Sie und Ihre Benutzer können diesen Prozess unterstützen, indem Sie falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft senden. Eine "falsche Negative" ist eine Spamnachricht, die zwar hätte, aber nicht als Spam identifiziert worden sein sollte. Ein falsch positives Ergebnis ist eine legitime e-Mail-Nachricht, die fälschlicherweise als Spam identifiziert wurde.
+> [!NOTE]
+> Wenn Sie ein Administrator in einer Office 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Office 365 Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
+
+Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-Nachrichten (Spam) oder Phishing-Nachrichten in Ihrem Posteingang empfangen oder wenn Sie keine legitime e-Mail-Nachricht erhalten, weil Sie als Junk gekennzeichnet ist. Wir optimieren unsere Spamfilter ständig, um genauere Angaben zu machen.
+
+Sie und Ihre Benutzer können diesen Prozess unterstützen, indem Sie falsch positive Ergebnisse (gute e-Mail-Nachrichten als ungültig markiert), falsche Negative Zeichen (ungültige e-Mail-Nachricht) und Phishing-Nachrichten zur Analyse an Microsoft senden.
 
 > [!NOTE]
 > Aufgrund der hohen Anzahl von Übermittlungen, die wir erhalten, können wir möglicherweise nicht alle Anfragen zur Analyse beantworten.
 
-Administratoren können e-Mails, URLs und Anlagen zur Überarbeitung an Microsoft senden. Siehe [Admin Übermittlungen in Office 365 ATP](admin-submission.md).
+## <a name="submit-false-negatives-to-microsoft"></a>Senden von falschen negativen an Microsoft
 
-## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Weiterleiten von Junk-E-Mails und Phishingnachrichten, die den Spamfilter passiert haben
+> [!TIP]
+> Anstatt die folgenden Verfahren zum Melden von falsch negativen Daten zu verwenden, können Benutzer in Outlook und Outlook im Internet (früher als Outlook Web App bezeichnet) das Add-in "Berichtsnachricht" für Microsoft Outlook verwenden. Informationen zum Installieren und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](enable-the-report-message-add-in.md).
 
-Wenn Sie eine Nachricht erhalten, die die Spamfilter durchlaufen hat und als Junk-oder Phishing-Betrüger klassifiziert werden sollte, können Sie die Meldung "falsch negativ" nach Bedarf an die Microsoft-Spam Analyse-und Microsoft-Phishing-Analyseteams senden. Die Analysten überprüfen die Nachricht und fügen Sie den Dienst weiten Filtern hinzu, wenn Sie die Klassifizierungskriterien erfüllen.
+Wenn Sie eine Nachricht erhalten, die durch die Spamfilterung geleitet wurde, die als Spam oder Phishing identifiziert werden sollte, können Sie die Nachricht nach Bedarf an die Microsoft-Spam Analyse-und Microsoft-Phishing-Analyseteams senden. Die Analysten überprüfen die Nachricht und fügen Sie den Dienst weiten Filtern hinzu, wenn Sie die Klassifizierungskriterien erfüllen.
 
-Weitere Spameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Anti-Spam Protection in Office 365](anti-spam-protection.md). Dieser Artikel enthält Tipps, mit denen Sie verhindern können, dass falsch negative Ergebnisse aufweisen.
+1. Erstellen Sie eine neue, leere e-Mail-Nachricht mit einem der folgenden Empfänger:
 
-Sie können Junk-E-Mails wie folgt weiterleiten:
+   - **Junk**:`junk@office365.microsoft.com`
 
-- Verwenden Sie für Outlook-und Outlook im-Webbenutzern das Add-in "Berichtsnachricht" für Microsoft Outlook. Informationen zum Installieren und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](enable-the-report-message-add-in.md).
+   - **Phishing**:`phish@office365.microsoft.com`
 
-- Sie können auch e-Mails verwenden, um Nachrichten an Microsoft zu übermitteln, die als Junk-oder Phishing-Scams klassifiziert werden sollen, wie im folgenden Verfahren beschrieben.
-
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Weiterleiten von Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingversuch gelten, per E-Mail an Microsoft 
-
-So leiten Sie Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingversuch gelten, per E-Mail an Microsoft
-
-1. Erstellen Sie eine leere e-Mail-Nachricht.
-
-2. Adressieren Sie die Nachricht an das Microsoft-Team, das Nachrichten wie folgt überprüft:
-
-   - Für Junk-e-Mails: Junk@office365.Microsoft.com
-
-   - Für Phishing-Nachrichten: Phish@office365.Microsoft.com
-
-3. Kopieren Sie die Junk-oder Phishing-Scam-Nachricht in die neue Nachricht als Anlage, und fügen Sie Sie ein.
+2. Ziehen Sie die Junk-oder Phishing-Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die Junk-oder Phishing-Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 
    > [!NOTE]
-   > * Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Scam-Nachrichten oder Junk-e-Mail-Nachrichten. <br/><br/>* Lassen Sie den Text der neuen Nachricht leer. <br/><br/>* Verwenden Sie entweder. msg (standardmäßiges Outlook-Format) oder. eml (standardmäßige Outlook im Internetformat) Formate für die angefügten Nachrichten.
+   > <ul><li>Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Scam-Nachrichten oder Junk-e-Mail-Nachrichten.</li><li>Lassen Sie den Nachrichtentext leer.<li></li>Verwenden Sie entweder msg (Outlook-Standardformat) oder eml (standardmäßige Outlook im Internetformat) für die angefügten Nachrichten.</li></ul>
 
-4. Klicken Sie auf **Senden**.
+3. Wenn Sie fertig sind, klicken Sie auf **senden**.
 
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Weiterleiten von Nachrichten, die als Junk markiert wurden, aber durchgelassen werden sollten
+> [!TIP]
+> Administratoren haben verschiedene Möglichkeiten, bestimmte Nachrichten, die fälschlicherweise als Spam identifiziert werden, zu blockieren. Ausführliche Informationen finden Sie unter [Create blocked Sender Lists in Office 365](create-block-sender-lists-in-office-365.md).
 
-Wenn eine Nachricht fälschlicherweise als Junk identifiziert wurde, können Sie die Meldung "falsch positiv" an das Microsoft-Spam Analyse Team übermitteln. Die Analysten werden die Nachricht bewerten und analysieren. Abhängig vom Ergebnis der Analyse werden die Filterregeln für Spaminhalte des Diensts angepasst, damit die Nachricht zugestellt werden kann.
+## <a name="submit-false-positives-to-microsoft"></a>Senden von falsch positiven Ergebnissen an Microsoft
 
-Administratoren können weitere Informationen zur Spam Einstellung überprüfen, die für eine ganze Organisation gelten. Weitere Informationen finden Sie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
+> [!TIP]
+> Anstatt die folgenden Verfahren zum Melden von falsch positiven Ergebnissen zu verwenden, können Benutzer in Outlook und Outlook im Internet das Add-in "Berichtsnachricht" für Microsoft Outlook verwenden. Informationen zum Installieren und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](enable-the-report-message-add-in.md).
 
-Leiten Sie Nichtspamnachrichten wie folgt weiter:
+Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie die Nachricht an das Microsoft-Spam Analyse Team übermitteln. Die Analysten bewerten die Nachricht, und (abhängig von den Ergebnissen der Analyse) können die Dienst weiten Filter so angepasst werden, dass die Nachricht durchlassen wird.
 
-- Wenn Sie die Aktion **Nachricht in Junk-e-Mail-Ordner senden** verwenden, wenn Sie Ihre Inhaltsfilter konfigurieren (Dies ist die Standardaktion), können Benutzer falsch positive Nachrichten in Ihrem Junk-e-Mail-Ordner "Outlook" oder "Outlook im Internet" (früher als "Outlook Web App" bezeichnet) freigeben.
+1. Erstellen Sie eine neue, leere e- `not_junk@office365.microsoft.com` Mail-Nachricht mit als Empfänger:
 
-  - Outlook-Benutzer können falsch positive Nachrichten mit der Rechtsklickmenü Option **nicht Junk** freigeben. Sie müssen die Nachricht jedoch über e-Mail an Microsoft übermitteln, wie im Verfahren in diesem Artikel dargestellt.
+2. Ziehen Sie die nicht identifizierte Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die nicht identifizierte Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 
-  - Benutzer von Outlook im Internet können falsch positive Nachrichten freigeben und Sie zur Analyse mithilfe der Aktion **Markierung als nicht-Junk-e-Mail** an Microsoft übermitteln. Weitere Informationen zur Vorgehensweise finden Sie unter [melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+   > [!NOTE]
+   > <ul><li>Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Scam-Nachrichten oder Junk-e-Mail-Nachrichten.</li><li>Lassen Sie den Nachrichtentext leer.<li></li>Verwenden Sie entweder msg (Outlook-Standardformat) oder eml (standardmäßige Outlook im Internetformat) für die angefügten Nachrichten.</li></ul>
 
-- Wenn Sie die Aktion **Quarantäne Nachricht** anstelle der Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** beim Konfigurieren der Inhaltsfilter verwenden:
+3. Wenn Sie fertig sind, klicken Sie auf **senden**.
 
-  - Administratoren können Spamnachrichten in Quaratäne freigeben und diese als falsch positive Nachrichten vom Exchange-Admin Center übermitteln. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md).
+> [!TIP]
+> Administratoren haben verschiedene Möglichkeiten, um zu ermöglichen, dass bestimmte Nachrichten die Spamfilterung überspringen. Ausführliche Informationen finden Sie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-  - Benutzer können Ihre eigenen Nachrichten in Spamquarantäne freigeben und Sie über die folgenden Kanäle als falsch positive Ergebnisse melden:
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Erstellen einer e-Mail-Fluss Regel zum Empfangen von Kopien von Nachrichten, die an Microsoft gemeldet werden
 
-  - Auf der Benutzeroberfläche von Exchange Admin Center (EAC). Weitere Informationen finden Sie unter [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
+Sie können eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, die nach e-Mail-Nachrichten sucht, die an Microsoft mithilfe der in diesem Thema beschriebenen Methoden gemeldet werden, und Sie können Bcc-Empfänger so konfigurieren, dass Kopien dieser gemeldeten Nachrichten empfangen werden.
 
-  - Über Nachrichten zur Spambenachrichtigung für Endbenutzer (falls vom Administrator aktiviert).
+Sie können die Nachrichtenfluss Regel in der Exchange-Verwaltungskonsole (EAC) und in PowerShell (Exchange Online PowerShell für Office 365 Kunden erstellen; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
 
-- Sie können Nachrichten, die nicht als Spam klassifiziert werden sollen, auch per E-Mail an Microsoft weiterleiten. Wenn Sie dies tun, stellen Sie sicher, dass Sie die Schritte im folgenden Verfahren verwenden.
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-### <a name="use-email-to-submit-false-positive-messages"></a>Übermitteln falsch positiver Nachrichten per E-Mail
+- Sie müssen Berechtigungen in Exchange Online zugewiesen werden, bevor Sie diese Verfahren ausführen können. Insbesondere müssen Sie die Rolle " **Transport Rules** " erhalten, die standardmäßig der Rollen " **Organisationsverwaltung**", " **Richtlinientreue Verwaltung**" und " **Datensatzverwaltung** " zugewiesen ist. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-Verwenden Sie dasselbe Verfahren wie im Abschnitt [Verwenden von e-Mails zum Übermitteln von Junk-e-Mails oder Phishing-Nachrichten an Microsoft](#use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft) , senden Sie die Nachricht jedoch an not_junk@office365.Microsoft.com.
+- Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-## <a name="spam-evaluation-and-rules-deployment"></a>Spam Auswertung und Regel Bereitstellung
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-Das Spam Analyseteam untersucht Nachrichten, die Sie übermitteln, und passt die Spamfilter an, um künftige Junk-e-Mails zu verhindern. Das Ergebnis ist, dass Office 365 Spamfilter areconstantly verfeinert wurden. Alle übermittelten Elemente werden auf Netzwerkebene bewertet. Falsch positive Übermittlungen werden überprüft und für eine mögliche Regelanpassung bewertet, um zukünftige Nachrichten über die Spamfilter zuzulassen. Daher ist es für Sie und alle Kunden, die das globale Netzwerk verwenden, vorteilhaft, den Dienst über falsch positive Meldungen und auch falsche Negative (ungefilterte Spam) zu informieren. Das Spam-Team untersucht Indikatoren innerhalb jeder übermittelten Nachricht, wie etwa die folgenden:
+- Weitere Informationen zu Nachrichtenfluss Regeln in Exchange Online und eigenständigen EoP finden Sie in den folgenden Themen:
 
-- Von Adresse
+  - [Nachrichtenflussregeln (Transportregeln) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-- Sendende IP-Adresse
+  - [Nachrichtenflussregel-Bedingungen und -Ausnahmen (Prädikate) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-- Schlüsselwörter
+  - [Aktionen für Nachrichtenflussregeln in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- Ausdrücke
+### <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Erstellen einer e-Mail-Fluss Regel zum Empfangen von Kopien gemeldeter Nachrichten mithilfe der Exchange-Verwaltungskonsole
 
-- Häufigkeit der Übertragung
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
 
-- Andere Trends und Muster
+2. Klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.png) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
 
-Nachdem Sie diese Informationen überprüft haben, kann das Spam-Team möglicherweise Änderungen an den Spamfilter Ebenen des Diensts vornehmen. Weitere Informationen zum Spam-Team finden Sie im folgenden englischsprachigen Video:
+3. Konfigurieren Sie auf der daraufhin geöffneten Seite **Neue Regel** die folgenden Einstellungen:
 
-[Video zu Microsoft Exchange Spam-Team](https://youtu.be/-TpX_-GMC7o?hd=1)
+   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für die Regel ein. Beispielsweise Bcc-Nachrichten, die an Microsoft gemeldet wurden.
 
-Die Spambewertung ist ein kontinuierlicher Prozess, der unabhängig von der ursprünglichen Sprache oder dem ursprünglichen Zeichensatz angewendet wird. Da eine Spamnachricht vage sein oder keinen Text im Betreff oder Nachrichtentext enthalten kann, nutzt das Spamteam sehr oft andere Nachrichtenmerkmale zum Filtern. Dies bedeutet, dass - nachdem das Spamteam eine bestimmte Nachricht als Spam markiert und die erforderlichen Änderungen an der Regelbasis vorgenommen hat - diese Nachricht zukünftig so lange gesperrt wird, bis ihre Merkmale ausreichend geändert wurden, dass sie unsere Filter passiert. Neue Spamregeln werden laufend bereitgestellt. Der Zeitrahmen für Regeln für einzelne Übermittlungen variiert je nach Menge und Qualität der Übermittlungen. Da neue Spamregeln global für alle Kunden festgelegt werden, führt nicht jede einzelne übermittelte Spamnachricht zu einer neuen Spamregel.
+   - Klicken Sie auf **Weitere Optionen**.
+
+   - **Diese Regel anwenden, wenn**: Wählen Sie **die Empfänger** \> **Adresse enthält eines dieser Wörter**aus: Geben Sie im angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der folgenden Werte ein, klicken Sie auf](../../media/ITPro-EAC-AddIcon.png)Add-Symbol **Hinzufügen** ![, und wiederholen Sie diese Schritte, bis Sie alle Werte eingegeben haben.
+
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
+
+     Um einen Eintrag zu bearbeiten, wählen Sie ihn **Edit** ![aus, und](../../media/ITPro-EAC-EditIcon.png)klicken Sie auf Bearbeitungssymbol bearbeiten. Um einen Eintrag zu entfernen, wählen Sie ihn **Remove** ![aus, und](../../media/ITPro-EAC-DeleteIcon.png)klicken Sie auf entfernen-Symbol entfernen.
+
+     Klicken Sie nach Abschluss des Vorgangs auf **OK**.
+
+   - **Gehen Sie wie folgt**vor: Wählen Sie Empfänger \> **zum Feld Bcc** **Hinzufügen** aus. Suchen Sie im angezeigten Dialogfeld die Empfänger, die Sie hinzufügen möchten, und wählen Sie Sie aus. Klicken Sie nach Abschluss des Vorgangs auf **OK**.
+
+4. Sie können eine weitere Auswahl treffen, um die Regel zu überwachen, die Regel zu testen, die Regel während eines bestimmten Zeitraums zu aktivieren und andere Einstellungen. Es wird empfohlen, die Regel zu testen, bevor Sie Sie erzwingen.
+
+5. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
+
+### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Verwenden von PowerShell zum Erstellen einer e-Mail-Fluss Regel zum Empfangen von Kopien gemeldeter Nachrichten
+
+In diesem Beispiel wird eine neue e-Mail-Fluss Regel namens Bcc-Nachrichten an Microsoft erstellt, die nach e-Mail-Nachrichten sucht, die mithilfe der in diesem Thema beschriebenen Methoden an Microsoft gemeldet werden, und fügt die Benutzer Laura@contoso.com und Julia@contoso.com als Bcc-Empfänger hinzu.
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+
+### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
+
+Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Nachrichtenfluss Regel für den Empfang von Kopien gemeldeter Nachrichten konfiguriert haben:
+
+- Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** \> \> wählen Sie die Regel](../../media/ITPro-EAC-EditIcon.png)klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und überprüfen Sie die Einstellungen.
+
+- Führen Sie in PowerShell den folgenden Befehl aus, um die Einstellungen zu überprüfen:
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- Senden Sie eine Testnachricht an eine der Berichts-e-Mail-Adressen, und überprüfen Sie die Ergebnisse.

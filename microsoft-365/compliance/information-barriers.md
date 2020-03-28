@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692652"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029839"
 ---
 # <a name="learn-about-information-barriers"></a>Erfahren Sie mehr über Informationsbarrieren
 
@@ -28,10 +28,13 @@ Microsoft Cloud Services umfassen leistungsstarke Funktionen für Kommunikation 
 
 Informationsbarrieren werden jetzt, beginnend mit Microsoft Teams, ausgerollt. Unter der Voraussetzung, dass Ihr [Abonnement](#required-licenses-and-permissions) Informationsbarrieren enthält, kann ein Compliance-Administrator oder ein Administrator für Informationsbarrieren Richtlinien definieren, um die Kommunikation zwischen Benutzergruppen in Microsoft Teams zu ermöglichen oder zu verhindern. Richtlinien für Informationsbarrieren können für Situationen wie diese verwendet werden:
 
-- Ein Day Trader kann keine Person im Marketing Team anrufen
-- Finanz Personal, das an vertraulichen Unternehmensinformationen arbeitet, kann keine Anrufe von bestimmten Gruppen innerhalb Ihrer Organisation empfangen.
-- Ein internes Team mit Geschäfts geheimem Material kann nicht online mit Personen in bestimmten Gruppen innerhalb Ihrer Organisation anrufen oder chatten.
-- Ein Forschungsteam kann nur online mit einem Produktentwicklungsteam anrufen oder chatten
+- Benutzer in der Day Trader-Gruppe sollten nicht mit dem Marketing Team kommunizieren
+- Finanz Personal, das an vertraulichen Unternehmensinformationen arbeitet, sollte nicht mit bestimmten Gruppen innerhalb Ihrer Organisation kommunizieren.
+- Ein internes Team mit Geschäfts geheimem Material sollte nicht online mit Personen in bestimmten Gruppen innerhalb Ihrer Organisation anrufen oder chatten.
+- Ein Forschungsteam sollte nur online mit einem Produktentwicklungsteam anrufen oder chatten
+
+> [!IMPORTANT]
+> Informationsbarrieren ***unterstützen nur*** zwei-Wege-Einschränkungen. Unidirektionale Einschränkungen wie Marketing können mit Day Traders kommunizieren, aber Day Trader können nicht mit Marketing kommunizieren ***wird nicht unterstützt***.
 
 Für alle diese Beispielszenarien (und mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation in Microsoft Teams zu verhindern oder zuzulassen. Mithilfe solcher Richtlinien kann verhindert werden, dass Personen Anrufe oder Chats mit Personen durchlaufen, die Sie nicht haben sollten, oder dass Personen nur mit bestimmten Gruppen in Microsoft Teams kommunizieren können. Wenn die Richtlinien für Informationsbarrieren wirksam sind und Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen Personen in Microsoft Teams zu kommunizieren, werden Überprüfungen durchgeführt, um die Kommunikation zu verhindern (oder zulassen) (gemäß den Richtlinien für Informationsbarrieren). Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Information Barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

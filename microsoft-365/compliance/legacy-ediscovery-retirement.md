@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978165"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024355"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
 > [!IMPORTANT]
-> Microsoft hat die öffentliche Gesundheitssituation bewertet, und wir verstehen, welche Auswirkungen dies auf unsere Kunden hat. Wir möchten starke Partner und verantwortungsvolle globale Bürger sein. Um eine der zahlreichen Belastungen zu lindern, die Ihnen gegenüber stehen, werden wir den geplanten Ruhestand für die unten aufgeführten Legacy-eDiscovery-Tools um drei Monate verzögern. **Die aktualisierten Pensions Termine werden nachfolgend wiedergegeben.**
+> Microsoft hat die öffentliche Gesundheitssituation bewertet, und wir verstehen, welche Auswirkungen dies auf unsere Kunden hat. Wir möchten starke Partner und verantwortungsvolle globale Bürger sein. Um eine der zahlreichen Belastungen zu erleichtern, werden wir den geplanten Ruhestand für die in diesem Artikel beschriebenen vorversions-eDiscovery-Tools um drei Monate hinauszögern. **Die aktualisierten Pensions Termine werden nachfolgend wiedergegeben.**
 
 Im Laufe der Jahre hat Microsoft eDiscovery-Tools bereitgestellt, mit denen Sie e-Mail-Inhalte aus Exchange Online durchsuchen, in einer Vorschau anzeigen und exportieren können. Diese Tools bieten jedoch nicht mehr die Möglichkeit, nach nicht-Exchange-Inhalten in anderen Office 365 Diensten wie SharePoint Online und Office 365 Gruppen zu suchen. Um dies zu beheben, bietet Microsoft weitere eDiscovery-Tools, die Sie bei der Suche nach einer Vielzahl von Office 365 Inhalten unterstützen. Und wir arbeiten hart daran, die aktuellsten und leistungsfähigsten eDiscovery-Funktionen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu integrieren. Auf diese Weise können Organisationen auf rechtliche, interne und andere Dokumentanforderungen für Inhalte in vielen Office 365 Diensten, einschließlich Exchange Online, reagieren.
 

@@ -13,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+- remotework
 ms.custom: ''
 description: Hier erfahren Sie, wie sich die Planung und Implementierung von Geschäftskontinuität ändert, wenn Clouddienste Bestandteil Ihres IT-Angebots sind.
-ms.openlocfilehash: 2236304647275f5e2b7ddde3af1804ba749254b0
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588718"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030106"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Enterprise Business Continuity-Verwaltung (EBCM) mit Clouddiensten
 

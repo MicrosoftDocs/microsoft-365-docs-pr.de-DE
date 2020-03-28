@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894058"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033494"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Anti-Spam Protection in Office 365 FAQ
 
@@ -36,13 +36,15 @@ Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter [Anti-Malware
 A: **Für eingehende Nachrichten:** Die Mehrzahl der Spam Daten werden über die Verbindungsfilterung gelöscht, die auf der IP-Adresse des Quell-e-Mail-Servers basiert. Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) überprüfen und Klassifizieren von Nachrichten als Spam, Massen-oder Phishing. Standardmäßig werden Nachrichten, die als Spam oder Massen klassifiziert werden, an den Junk-e-Mail-Ordner des Empfängers übermittelt, während Nachrichten, die als Phishing klassifiziert wurden, isoliert werden. Sie können die standardmäßige Anti-Spam-Richtlinie ändern (gilt für alle Empfänger), oder Sie können benutzerdefinierte Anti-Spam-Richtlinien mit strengeren Einstellungen für bestimmte Benutzergruppen erstellen (beispielsweise können Sie Spam in Quarantäne verlagern, die an Führungskräfte gesendet werden). Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md) und [Recommended Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
-> In hybridbereitstellungen, bei denen EoP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EoP-Spamfilter Kopfzeilen zu ermitteln, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> In hybridbereitstellungen, bei denen EoP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EoP-Spamfilter Kopfzeilen zu ermitteln, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder über den risikoreichen [Zustellungs Pool](high-risk-delivery-pool-for-outbound-messages.md) weitergeleitet oder an den Absender in einem Unzustellbarkeitsbericht (auch als NDR-oder Bounce-Nachricht bezeichnet) zurückgegeben. Weitere Informationen zum Schutz vor ausgehenden Spamnachrichten finden Sie unter [Outbound Spam Controls in Office 365](outbound-spam-controls.md).
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>F: Was ist eine Zero-Day-Spam Variante und wie wird Sie von dem Dienst verarbeitet?
 
-A: Bei einer Zero-Day-Spam-Variante handelt es sich um eine erste Generation, bisher unbekannte Spam-Variante, die nie erfasst oder analysiert wurde, sodass unsere Anti-Spam-Filter noch keine Informationen zur Erkennung verfügbar haben. Wenn ein Zero-Day-Spam Beispiel erfasst und von unseren Spam Analysten analysiert wird, wenn es die Kriterien für die Spam Klassifizierung erfüllt, werden unsere Anti-Spam-Filter aktualisiert, um Sie zu erkennen, und Sie werden nicht mehr als "Zero-Day" betrachtet. (**Hinweis:** Wenn Sie eine Nachricht erhalten, die möglicherweise eine NULL tägige Spam Variante ist, um den Dienst zu verbessern, senden Sie die Nachricht bitte mithilfe einer der unter [Submit Spam, Non-Spam und Phishing Scam-Nachrichten an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)beschriebenen Methoden an Microsoft.)
+A: Bei einer Zero-Day-Spam-Variante handelt es sich um eine erste Generation, bisher unbekannte Spam-Variante, die nie erfasst oder analysiert wurde, sodass unsere Anti-Spam-Filter noch keine Informationen zur Erkennung verfügbar haben. Wenn ein Zero-Day-Spam Beispiel erfasst und von unseren Spam Analysten analysiert wird, wenn es die Kriterien für die Spam Klassifizierung erfüllt, werden unsere Anti-Spam-Filter aktualisiert, um Sie zu erkennen, und Sie werden nicht mehr als "Zero-Day" betrachtet.
+
+**Hinweis:** Wenn Sie eine Nachricht erhalten, die möglicherweise eine NULL tägige Spam Variante ist, um den Dienst zu verbessern, senden Sie die Nachricht mit einer der unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md)beschriebenen Methoden an Microsoft.
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>F: Muss ich den Dienst für Antispamschutz konfigurieren?
 
@@ -54,7 +56,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
 [Konfigurieren von Anti-Policy](configure-the-connection-filter-policy.md)
 
-[Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md)
+[Konfigurieren von Antispamrichtlinien in Office 365](configure-your-spam-filter-policies.md)
 
 [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
 
@@ -72,7 +74,7 @@ A: Ja, der Dienst verfügt über einen URL-Filter, der nach Nachrichten nach URL
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>F: Wie können Kunden den Dienst verwenden, um falsch negative Ergebnisse (Spam) und falsch positive Ergebnisse (kein Spam) an Microsoft zu senden?
 
-A. Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kein Spam sind, zur Analyse an Microsoft zu übermitteln. Weitere Informationen finden Sie unter [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+A: Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kein Spam sind, zur Analyse an Microsoft zu übermitteln. Weitere Informationen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>F: Kann ich Spamberichte abrufen?
 

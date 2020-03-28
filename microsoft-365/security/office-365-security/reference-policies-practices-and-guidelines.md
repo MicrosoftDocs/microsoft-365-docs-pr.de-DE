@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Industrie eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598612"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033746"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
 
@@ -89,7 +89,7 @@ Microsoft arbeitet aktiv mit Branchenvertretern und Dienstanbietern zusammen, um
 
 ## <a name="abuse-and-spam-reporting"></a>Missbrauchs- und Spamberichte
 
-Melden Sie [Junk-e-Mails und Phishing-Scams in Outlook im Internet](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), um unrechtmäßige, missbräuchliche, unerwünschte oder böswillige e-Mails zu melden. Das Senden dieser Kommunikationstypen ist eine Verletzung der Microsoft-Richtlinie, und entsprechende Maßnahmen werden bei bestätigten Berichten ergriffen.
+Informationen zum Melden von unrechtmäßigen, missbräuchlichen, unerwünschten oder böswilligen e-Mails finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). Das Senden dieser Kommunikationstypen stellt einen Verstoß gegen die Microsoft-Richtlinie dar, und es werden entsprechende Aktionen für bestätigte Berichte ausgeführt.
 
 ## <a name="law-enforcement"></a>Strafverfolgung
 

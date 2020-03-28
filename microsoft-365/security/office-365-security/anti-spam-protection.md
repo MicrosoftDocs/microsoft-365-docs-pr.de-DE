@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Hier finden Sie Informationen zu den Antispameinstellungen und-Filtern, mit denen Sie Spam in Exchange Online und Office 365 verhindern können. Sie werden zu viel Spam in Office 365 einholen? Sie können Ihre Spamfilter und Anti-Spam-Einstellungen anpassen.
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894070"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033470"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Anti-Spam-Schutz in Office 365
 
@@ -49,7 +49,7 @@ Die Anti-Spam-Einstellungen in EoP bestehen aus den folgenden Technologien:
 - **Spamfilterung (Inhaltsfilterung)**: EoP verwendet die Spamfilter Urteile **Spam**, Spam mit **hoher Zuverlässigkeit**, **Massen-e**-Mails, **Phishing-e** -Mails und **Phishing-e-Mails mit hoher Vertrauens** Würdigkeit, um Nachrichten zu klassifizieren. Sie können die zu ergreifenden Aktionen basierend auf diesen Urteilen konfigurieren, und Sie können die Benachrichtigungsoptionen für Endbenutzer für Nachrichten konfigurieren, die nicht übermittelt, sondern isoliert wurden. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > Standardmäßig ist die Spamfilterung so konfiguriert, dass als Spam gekennzeichnete Nachrichten an den Junk-e-Mail-Ordner des Empfängers gesendet werden. In Hybrid Umgebungen, in denen EoP lokale Exchange-Postfächer schützt, müssen Sie in Ihrer lokalen Exchange-Organisation zwei Nachrichtenfluss Regeln (auch bekannt als Transportregeln) konfigurieren, um die EoP-Spam Kopfzeilen zu erkennen, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > Standardmäßig ist die Spamfilterung so konfiguriert, dass als Spam gekennzeichnete Nachrichten an den Junk-e-Mail-Ordner des Empfängers gesendet werden. In Hybrid Umgebungen, in denen EoP lokale Exchange-Postfächer schützt, müssen Sie in Ihrer lokalen Exchange-Organisation zwei Nachrichtenfluss Regeln (auch bekannt als Transportregeln) konfigurieren, um die EoP-Spam Kopfzeilen zu erkennen, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 - **Spamfilterung für ausgehende**e-Mails: EoP prüft außerdem, ob Ihre Benutzer keine Spamnachrichten senden, weder in ausgehenden Nachrichteninhalten noch durch Überschreitung von Grenzwerten für ausgehende Nachrichten. Weitere Informationen finden Sie unter [Konfigurieren der ausgehenden Spamfilterung in Office 365](configure-the-outbound-spam-policy.md).
 
@@ -61,7 +61,7 @@ Es ist möglich, dass gute Nachrichten als Spam identifiziert werden können (au
 
 Im folgenden finden Sie einige bewährte Methoden, die für beide Szenarien gelten:
 
-- Senden Sie immer falsch klassifizierte Nachrichten an Microsoft. Administratoren können über [mittlungen-Explorer](admin-submission.md)verwenden, oder Benutzer können Nachrichten mithilfe des [Add-ins Berichtsnachricht verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)melden.
+- Senden Sie immer falsch klassifizierte Nachrichten an Microsoft. Weitere Informationen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Über **prüfen Sie die Antispam-Nachrichtenkopfzeilen: anhand**dieser Werte erfahren Sie, warum eine Nachricht als Spam markiert wurde oder warum Sie die Spamfilterung übersprungen hat. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
@@ -83,13 +83,13 @@ Im folgenden finden Sie einige bewährte Methoden, die für beide Szenarien gelt
 
 - **Überprüfen Sie Ihre Organisationseinstellungen**: Achten Sie auf Einstellungen, mit denen Nachrichten Spamfilterung überspringen können (beispielsweise, wenn Sie Ihre eigene Domäne der Liste zugelassene Domänen in den Antispam-Richtlinien hinzufügen). Die empfohlenen Einstellungen finden Sie unter [recommended settings for EoP and Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) und [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-- **Überprüfen, ob die Junk-e-Mail-Regel im Postfach des Benutzers aktiviert ist**: Sie ist standardmäßig aktiviert, wenn es sich jedoch nicht um Nachrichten handelt, die als Junk gekennzeichnet sind, können Sie nicht in den Ordner Junk-e-Mail verschoben werden Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Überprüfen, ob die Junk-e-Mail-Regel im Postfach des Benutzers aktiviert ist**: Sie ist standardmäßig aktiviert, wenn es sich jedoch nicht um Nachrichten handelt, die als Junk gekennzeichnet sind, können Sie nicht in den Ordner Junk-e-Mail verschoben werden Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Verwenden der Listen verfügbarer blockierter Absender**: Weitere Informationen finden Sie unter [Create blocked Sender Lists in Office 365](create-block-sender-lists-in-office-365.md).
 
 - **Abbestellen von Massen-e-Mails** Wenn sich der Benutzer für die Nachricht (Newsletter, Produktankündigungen usw.) angemeldet hat und einen Unsubscribe-Link von einer seriösen Quelle enthält, sollten Sie ihn bitten, sich einfach abzumelden.
 
-- **Eigenständige EoP: Erstellen von Nachrichtenfluss Regeln im lokalen Exchange für EoP-Spamfilter Urteile**: in eigenständigen EoP-Umgebungen, in denen EoP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in lokalem Exchange konfigurieren, um das EoP Spamfilter Urteil zu übersetzen, damit die Junk-e-Mail-Regel die Nachricht in den Junk- Ausführliche Informationen finden Sie unter [Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- **Eigenständige EoP: Erstellen von Nachrichtenfluss Regeln im lokalen Exchange für EoP-Spamfilter Urteile**: in eigenständigen EoP-Umgebungen, in denen EoP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in lokalem Exchange konfigurieren, um das EoP Spamfilter Urteil zu übersetzen, damit die Junk-e-Mail-Regel die Nachricht in den Junk- Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Verhindern, dass gute e-Mail-Nachrichten als Spam identifiziert werden
 

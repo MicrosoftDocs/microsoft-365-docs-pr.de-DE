@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die durch den Spamfilter von EoP und Office 365 gefiltert werden.
-ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895191"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032816"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sicherheitstipps in E-Mail-Nachrichten in Office 365
 
@@ -60,4 +60,4 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
 
 Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jede Nachricht eine erhalten wird. Office 365 Administratoren können Sicherheitstipps für andere e-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
-Wenn Sie nicht einverstanden sind, wie Office 365 und EOP eine Nachricht kategorisiert haben (das heißt, es handelt sich nicht um Spam oder es ist nicht legitim), können Sie die Nachrichten zur Analyse übermitteln, um ihre Benutzerfreundlichkeit zu verbessern. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden und uns dabei zu verbessern.
+Wenn Sie mit der Kategorisierung einer Nachricht durch EoP nicht einverstanden sind (das heißt, die Nachricht ist kein Spam oder Sie sollte als Spam gekennzeichnet worden sein), können Sie die Nachrichten zur Analyse an Microsoft übermitteln, um eine bessere Benutzerfreundlichkeit zu ermöglichen. Anweisungen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden und uns dabei zu verbessern.
