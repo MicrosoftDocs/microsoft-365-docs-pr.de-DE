@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 2/14/2018
 audience: Admin
 ms.topic: hub-page
@@ -17,12 +17,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Informieren Sie sich über Warnungen, die Sie bei der Sicherheit in Office 365 unterstützen können.
-ms.openlocfilehash: 24b00eab79c9dbc67e913ea05a7d8b34b54293c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 57bb6659b374c1ac029b690e738620c2f2857eb9
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599942"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030125"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Benachrichtigungen im Office 365 Security &amp; Compliance Center
 
