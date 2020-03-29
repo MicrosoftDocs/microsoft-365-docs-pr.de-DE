@@ -3,6 +3,8 @@
   items:
     - name: Erste Schritte
       items:
+        - name: Die wichtigsten Aufgaben zur Unterstützung der Arbeit von zu Hause aus
+          href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security für geschäftliche Entscheidungsträger
           href: Microsoft-365-security-for-bdm.md
         - name: Chief Information Security Officer (CISO) – Workshop-Schulung
@@ -212,8 +214,6 @@
                       href: ./office-365-security/anti-malware-protection-faq-eop.md
                     - name: Konfigurieren von Richtlinien für Antischadsoftware
                       href: ./office-365-security/configure-anti-malware-policies.md
-                    - name: Schadsoftware und Nicht-Schadsoftware zur Analyse an Microsoft einreichen
-                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                     - name: Wiederherstellen nach einem Ransomware-Angriff
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: Virenerkennung in SharePoint Online
@@ -235,16 +235,14 @@
                       href: ./office-365-security/spam-confidence-levels.md
                     - name: BCL-Werte (Bulk Complaint Level)
                       href: ./office-365-security/bulk-complaint-level-values.md
-                    - name: Konfigurieren der Junk-e-Mail-Einstellungen für Exchange Online-Postfächer
+                    - name: Worin besteht der Unterschied zwischen Junk- und Massen-E-Mails?
+                      href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+                    - name: Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
                       href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
-                    - name: Spambenachrichtigungen für Endbenutzer
-                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
                     - name: Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
                       href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                     - name: Erweiterte Einstellungen für Spam Filter (ASF)
                       href: ./office-365-security/advanced-spam-filtering-asf-options.md
-                    - name: Konfigurieren eigenständiger EOP zum Übermitteln von Spam im Junk-e-Mail-Ordner.
-                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
                 - name: Ausgehender Spamschutz
                   href: ./office-365-security/outbound-spam-controls.md
                   items:
@@ -254,6 +252,19 @@
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Entfernen von blockierten Benutzern aus dem Portal „eingeschränkte Benutzer“
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: Melden von Nachrichten und Dateien an Microsoft
+                  href: ./office-365-security/report-junk-email-messages-to-microsoft.md
+                  items:
+                    - name: 'Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln'
+                      href: ./office-365-security/admin-submission.md
+                    - name: Aktivieren des Add-Ins „Nachrichten melden“
+                      href: ./office-365-security/enable-the-report-message-add-in.md
+                    - name: Installieren und Verwenden des Add-Ins „Melden von Junk-E-Mails“
+                      href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: Manuelles Übermitteln von Nachrichten an Microsoft
+                      href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+                    - name: Übermitteln von Schadsoftware und Nicht-Schadsoftware an Microsoft
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Antispam-Nachrichtenkopfzeilen
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Kombination von Richtlinien und Schutzmaßnahmen
@@ -262,12 +273,6 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: Sicherheitstipps in E-Mail-Nachrichten
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Melden von Junk-E-Mails an Microsoft
-                  href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                - name: 'Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse'
-                  href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-                - name: Administratorübermittlungen in Office 365
-                  href: ./office-365-security/admin-submission.md
                 - name: 'Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen'
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: Antiphishingschutz in Office 365
@@ -290,23 +295,6 @@
                   href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
                 - name: Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web
                   href: ./office-365-security/unverified-sender-feature.md
-            - name: Was ist EOP?
-              href: ./office-365-security/what-is-eop.md
-              items:
-                - name: Unterstützung für anonym eingehende E-Mail-Nachrichten über IPv6
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
-                - name: Blockieren von Spam-E-Mails in EOP als eigenständige Lösung
-                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Melden von Junk-E-Mails und Phishing-Versuchen in Outlook im Web
-                  href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-                - name: Schützen lokaler Postfächer mit Exchange Online Protection
-                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: Installation des Add-Ins „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook
-                  href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
-                - name: Deaktivieren der Junk-E-Mail-Berichterstattung in Outlook im Web
-                  href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
-                - name: Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?
-                  href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
             - name: Quarantäne
               href: ./office-365-security/quarantine-email-messages.md
               items:
@@ -316,6 +304,8 @@
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+                - name: Spambenachrichtigungen für Endbenutzer
+                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: E-Mail-Überprüfung und Authentifizierung
               items:
                 - name: Verwenden des SPF durch Office 365 zum Verhindern von Spoofing
@@ -350,6 +340,17 @@
                       href: ./office-365-security/download-existing-reports.md
                 - name: Anzeigen von Informationen über schädliche Dateien
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Was ist EOP?
+              href: ./office-365-security/what-is-eop.md
+              items:
+                - name: Unterstützung für anonym eingehende E-Mail-Nachrichten über IPv6
+                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+                - name: Blockieren von Spam-E-Mails in EOP als eigenständige Lösung
+                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
+                - name: Schützen lokaler Postfächer mit Exchange Online Protection
+                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+                - name: Konfigurieren eigenständiger EOP zum Weiterleiten Übermitteln von Spamnachrichten in den Junk-E-Mail-Ordner
+                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
@@ -440,8 +441,6 @@
               href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: Nachrichtenübermittlung
           items:
-            - name: Aktivieren des Berichtsnachrichts-Add-Ins
-              href: ./office-365-security/enable-the-report-message-add-in.md
             - name: Nachrichtenablaufverfolgung im Security & Compliance Center
               href: ./office-365-security/message-trace-scc.md
             - name: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
@@ -547,16 +546,13 @@
                       href: ./office-365-security/mail-flow-rules-transport-rules-0.md
                     - name: Konfigurieren von Nachrichtenflussregeln zum Konfigurieren der Massen-E-Mail-Filterung
                       href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
-                    - name: 'Verwenden von Nachrichtenflussregeln, um anzuzeigen, was Ihre Benutzer an Microsoft melden'
-                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Reduzieren von Schadsoftwarebedrohungen durch das Blockieren von Dateianlagen
                       href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
                     - name: Berichterstellung und Nachrichtenablaufverfolgung
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Intelligenter Nachrichtenfluss in Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Problembehandlung und Supportinformationen
-                  href: ./office-365-security/troubleshooting-and-support-information.md
+                - name: Problembehandlung und Support für EOP
                   items:
                     - name: 'Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden'
                       href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
