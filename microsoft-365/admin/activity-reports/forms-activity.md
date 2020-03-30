@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Informationen zum Abrufen eines Microsoft Forms-Aktivitätsberichts mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center.
-ms.openlocfilehash: 601e110719e4d69a647cfd55ecd4ae6db2568947
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42402316"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046939"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-Berichte in der Admin Center-Formular Aktivität
 
@@ -32,7 +32,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 Sie können beispielsweise die Aktivität jedes Benutzers verstehen, der für die Verwendung von Microsoft Forms autorisiert ist, indem Sie sich Ihre Interaktion mit Formularen ansehen. Außerdem können Sie die Ebene der Zusammenarbeit verstehen, indem Sie die Anzahl der erstellten Formulare und Formulare betrachten, auf die der Benutzer geantwortet hat.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
 
 ## <a name="how-to-get-to-the-forms-activity-report"></a>So gelangen Sie zum Formular Aktivitätsbericht
 

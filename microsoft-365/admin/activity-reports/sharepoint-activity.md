@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Rufen Sie den SharePoint-Aktivitäts Verwendungsbericht ab, um die Aktivität aller SharePoint-Benutzer, die Anzahl der freigegebenen Dateien und die Speicherauslastung zu kennen.
-ms.openlocfilehash: df025d41a2c570761fd59e228eebb277c922e06e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353426"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047047"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365-Berichte im Admin Center – SharePoint-Aktivität
 
@@ -39,7 +39,7 @@ Sie können z. B. die Aktivität jedes Benutzers verstehen, der für die Verwend
 Wenn Sie den Umfang der Aktivität für die einzelnen SharePoint-Websites und die Speichernutzung erfahren möchten , können Sie den [Bericht zur Verwendung der SharePoint-Website](sharepoint-site-usage.md) anzeigen.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
  
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>Wie gelange ich zum SharePoint-Aktivitätsbericht?
 

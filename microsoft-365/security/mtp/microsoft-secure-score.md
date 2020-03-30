@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
 ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/21/2020
 ms.locfileid: "42895429"
@@ -152,7 +152,7 @@ Dies betrifft die folgenden Verbesserungsmaßnahmen:
 - MFA für Administratorrollen erzwingen
 - Richtlinie zum Blockieren veralteter Authentifizierung aktivieren
 
-#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Entfernen von Verbesserungs Aktionen, die die Erwartungen für eine zuverlässige Messung nicht erfüllen oder keine sinnvolle Darstellung der Sicherheitsposition bieten
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Verbesserungsmaßnahmen, die die Erwartungen an zuverlässige Messungen nicht erfüllen oder keine nützlichen Darstellung des Sicherheitsstatus bieten, wurden entfernt.
 
 Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen.
 

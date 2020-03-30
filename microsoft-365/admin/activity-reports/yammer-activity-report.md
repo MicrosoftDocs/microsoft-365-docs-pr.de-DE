@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Rufen Sie den Yammer-Aktivitätsbericht ab. Dieser stellt Ihnen Informationen über die Anzahl der Benutzer bereit, die Yammer verwenden, um eine Nachricht zu posten, mit "Gefällt mir" zu kennzeichnen oder zu lesen.
-ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353516"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047023"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365-Berichte im Admin Center – Yammer-Aktivitätsbericht
 
 Das Dashboard **Berichte** zeigt Ihnen als Microsoft 365-Administrator Ihre Daten im Hinblick auf die Nutzung der Produkte innerhalb Ihrer Organisation an. Schauen Sie sich [Aktivitätsberichte im Admin Center](activity-reports.md) an. Mit dem **Yammer-Aktivitätsbericht** können Sie den Grad des Engagements Ihrer Organisation mit Yammer erkennen. Dazu schauen Sie sich die Anzahl eindeutiger Benutzer, die über Yammer eine Nachricht posten, lesen oder mit "Gefällt mir" bewerten, und den Umfang der Aktivitäten an, die organisationsweit generiert wurden. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>Aufrufen des Yammer-Aktivitätsberichts
 

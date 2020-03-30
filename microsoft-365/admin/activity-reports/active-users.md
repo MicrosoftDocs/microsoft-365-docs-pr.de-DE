@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Erfahren Sie, wie Sie einen Bericht über aktive Benutzer mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten und erfahren, wie viele Produktlizenzen verwendet werden.
-ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353956"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046843"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365-Berichte im Admin Center – aktive Benutzer
 
@@ -32,7 +32,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 Sie können beispielsweise den Bericht **Aktive Benutzer** verwenden, um herauszufinden, wie viele Produktlizenzen von einzelnen Personen in Ihrem Unternehmen verwendet werden, und einen Drilldown zu Informationen darüber ausführen, welche Produkte von den jeweiligen Benutzern verwendet werden. Dieser Bericht kann Administratoren beim Ermitteln von unzureichend genutzten Produkten oder nicht ausgelasteten Benutzern helfen, die möglicherweise zusätzliche Schulungen oder Informationen benötigen. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Informationen zum Abrufen des Berichts für aktive Benutzer
 

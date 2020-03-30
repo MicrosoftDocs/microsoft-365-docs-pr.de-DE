@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Nutzen Sie den Bericht zur Yammer-Gruppenaktivität, um sich über die Anzahl der Yammer-Gruppen, die in Ihrer Organisation erstellt und verwendet werden, sowie über deren Aktivitäten zu informieren.
-ms.openlocfilehash: 69b9be1b6f632f0e6fa212e5be6209097ccb6669
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 117217f8dd275432342afd0381b39e93de23b92f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353326"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047071"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Office 365-Berichte im Admin Center – der Bericht „Yammer-Gruppenaktivität“
 
 Im Office 365 **Berichte**-Dashboard finden Sie eine Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Über den Yammer-Gruppenaktivitätsbericht erhalten Sie Einblicke in die Aktivitäten der Yammer-Gruppen innerhalb Ihrer Organisation und erfahren, wie viele Yammer-Gruppen erstellt und verwendet wurden.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
 
 ## <a name="how-to-get-to-the-yammer-groups-activity-report"></a>So gelangen Sie zum Bericht "Yammer-Gruppenaktivität"
 

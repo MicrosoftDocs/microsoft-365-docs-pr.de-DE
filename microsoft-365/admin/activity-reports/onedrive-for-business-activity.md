@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Rufen Sie den OneDrive-Verwendungsbericht für Ihre Organisation ab, und kennen Sie die Aktivitäten aller OneDrive-Benutzer, die Anzahl der freigegebenen Dateien und die Speicherauslastung.
-ms.openlocfilehash: b51071fe8c91b0064d6680b628b58df1f370c73d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353586"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047085"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365-Berichte im Admin Center – OneDrive für Unternehmen Aktivität
 
@@ -40,7 +40,7 @@ Sie können z. B. die Aktivität jedes Benutzers verstehen, der für die Verwend
 Wenn Sie den Umfang der Aktivität für die einzelnen OneDrive-Konten und die Speichernutzung erfahren möchten , können Sie den [Bericht zur OneDrive-Verwendung](onedrive-for-business-usage.md) anzeigen.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>Wie erhalte ich den OneDrive-Aktivitätsbericht?
 

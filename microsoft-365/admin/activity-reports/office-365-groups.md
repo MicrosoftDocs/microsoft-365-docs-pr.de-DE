@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Informieren Sie sich über die Gruppen und ihre Aktivitäten über einen Microsoft 365-Gruppenbericht.
-ms.openlocfilehash: b76bd83dfbd215a6645bd73b2f9b2fb4be0c493b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 23b72d960a693ddeb8b05d261bd90f180b7c731d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353666"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047131"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen
 
 Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die Produkte in Ihrer Organisation angezeigt. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Im Microsoft 365 Groups-Bericht erhalten Sie Einblicke in die Aktivitäten von Gruppen in Ihrer Organisation und sehen, wie viele Gruppen erstellt und verwendet werden.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
   
 ## <a name="how-to-get-to-the-groups-report"></a>So gelangen Sie zum Gruppenbericht
 

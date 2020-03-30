@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Erfahren Sie, wie Sie den Bericht über die Postfachnutzung über die Aktivitäten der Benutzer mit einem Benutzerpostfach informieren.
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241305"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046927"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-Berichte im Admin Center-Postfachnutzung
 
 Der **Bericht zur Postfachnutzung** enthält Informationen zu Benutzern mit einem Benutzerpostfach und der Aktivitätsebene, die jeweils auf der Grundlage der Aktivitäten "e-Mail senden", "lesen", "Termin erstellen", "Besprechung senden", "Besprechung annehmen" und "Besprechung ablehnen" basiert. Er enthält außerdem Informationen zu dem belegten Speicher jedes Benutzerpostfachs und der Anzahl der Postfächer, die sich ihren Speicherkontingenten nähern. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>So gelangen Sie zum Bericht zur Postfachnutzung
 
