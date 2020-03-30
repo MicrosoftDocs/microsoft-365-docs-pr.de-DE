@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036384"
+ms.locfileid: "43037476"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -116,7 +116,7 @@ Sie müssen mit Ihrem Exchange Online Administrator und SharePoint Online Admini
 Nachdem Sie nun Office 365 ATP und Azure ATP konfiguriert haben, können Sie die kombinierten Signale aus diesen Funktionen in einem Dashboard anzeigen. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) vereint Warnungen, Vorfälle, automatische Untersuchung und Reaktion sowie erweitertes jagen über Arbeitslasten hinweg (Azure ATP, Office 365 ATP, Microsoft Defender ATP und Microsoft Cloud App Security) in einem einzelnen Bereich unter [Security.Microsoft.com](https://security.microsoft.com). 
 <br>
 
-![MTP-Dashboard-Illustration](../media/top-10-security-remote-work-mtp-dashboard.png)
+![MTP-Dashboard-Illustration](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 Nachdem Sie einen oder mehrere ihrer Advanced Threat Protection-Dienste konfiguriert haben, aktivieren Sie MTP. Neue Features werden kontinuierlich zu MTP hinzugefügt; Sie können sich für das erhalten von Vorschau Features entscheiden.
 
@@ -128,7 +128,7 @@ Nachdem Sie einen oder mehrere ihrer Advanced Threat Protection-Dienste konfigur
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: Konfigurieren von InTune-Mobile App Schutz für Telefone und Tablets
 
 Mit der mobilen Anwendungsverwaltung von Microsoft InTune (MAM) können Sie die Daten Ihrer Organisation auf Telefonen und Tablets verwalten und schützen, ohne diese Geräte zu verwalten. So funktioniert es:
-- Sie erstellen eine APP-Schutzrichtlinie (app), die bestimmt, welche apps auf einem Gerät verwaltet werden und welche Verhaltensweisen zulässig sind (beispielsweise das verhindern, dass Daten aus einer verwalteten app in eine nicht verwaltete App kopiert werden). Sie erstellen eine Richtlinie für jede Plattform (Ios, Android).
+- Sie erstellen eine APP-Schutzrichtlinie (app), die bestimmt, welche apps auf einem Gerät verwaltet werden und welche Verhaltensweisen zulässig sind (beispielsweise verhindern, dass Daten aus einer verwalteten app in eine nicht verwaltete App kopiert werden). Sie erstellen eine Richtlinie für jede Plattform (Ios, Android).
 - Nach dem Erstellen der APP-Schutzrichtlinien erzwingen Sie diese, indem Sie eine Regel für bedingten Zugriff in Azure AD erstellen, um genehmigte apps und App-Datenschutz zu erfordern.
 
 App Protection-Richtlinien umfassen viele Einstellungen. Glücklicherweise müssen Sie nicht mehr über jede Einstellung erfahren und die Optionen abwägen. Microsoft erleichtert das Anwenden einer Konfiguration von Einstellungen durch Empfehlung von Startpunkten. Das [Datenschutz Framework, das App-Schutzrichtlinien verwendet](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) , umfasst drei Ebenen, aus denen Sie auswählen können. 
@@ -181,7 +181,7 @@ Einige der Schutzmechanismen, die traditionell vom Routing Datenverkehr über ei
 
 Weitere Informationen finden Sie in den folgenden Ressourcen zu Dokumenten:
 - [Übersicht: Optimieren der Office 365 Konnektivität für Remotebenutzer mithilfe von VPN-Split-Tunneling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementieren von VPN-Split-Tunneling für Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implementierung des geteilten VPN-Tunnels für Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Aktuelle Blog Artikel zu diesem Thema:
 - [Gewusst wie schnelles optimieren Office 365 Datenverkehrs für Remotemitarbeiter & verringern der Auslastung Ihrer Infrastruktur](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
