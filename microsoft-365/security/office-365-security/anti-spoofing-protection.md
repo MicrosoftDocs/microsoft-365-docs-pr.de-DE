@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: 9e1a4cf31c2565eeb6be53b5c43bda0154f9ea6f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: a81c22d83e0a476657aa89823e52d3eb6afc4514
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894138"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033482"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -631,7 +631,7 @@ Die Antispoofingtechnologie von Microsoft wurde ursprünglich für die Organisat
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
 
-Sie können entweder das [Add-In „Nachricht melden“ für Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) verwenden oder, falls es nicht installiert ist, [Spamnachrichten, Nachrichten, die kein Spam sind, und Phishingnachrichten zur Analyse an Microsoft übermitteln](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Siehe [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Ich bin ein Domänenadministrator, der nicht alle Absender kennt.
 
