@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Umgebungs Anleitung, um zusätzliche Microsoft 365-Sicherheitseinstellungen für Ihre Microsoft 365 Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067262"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058881"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Erhöhte Sicherheit von Microsoft 365 für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -56,7 +56,7 @@ Für apps, die keine moderne Authentifizierung unterstützen, können keine [Ide
   - Wenn Sie die simulierte Enterprise Microsoft 365-Testumgebung verwenden, verwenden Sie das [Azure-Portal](https://portal.azure.com) , um eine Verbindung mit dem virtuellen Computer Client1 herzustellen, und melden Sie sich dann von CLIENT1 aus an.
  
 2. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** unter **Admin Center** im linken Navigationsbereich auf **SharePoint**.
-3. Klicken Sie auf der neuen **SharePoint Admin Center** -Registerkarte auf **Zugriffssteuerung**.
+3. Klicken Sie auf der neuen Registerkarte **SharePoint Admin Center** auf **Richtlinien > Zugriffssteuerung**.
 4. Klicken Sie auf **apps, die die moderne Authentifizierung nicht unterstützen**, wählen Sie **Zugriff blockieren**aus, und klicken Sie dann auf **Speichern**.
 
 

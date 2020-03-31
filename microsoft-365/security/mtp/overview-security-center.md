@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372043"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058905"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
@@ -45,7 +45,7 @@ Das Microsoft 365 Security Center umfasst Folgendes:
 
 * **Startseite** – erhalten Sie einen Überblick über den allgemeinen Sicherheitsstatus ihrer Organisation.
 * **Vorfälle** – sehen Sie sich die breitere Geschichte eines Angriffs an, indem Sie die Punkte, die bei einzelnen Benachrichtigungen auf Entitäten angezeigt werden, verbinden. Sie wissen genau, wo ein Angriff gestartet wurde, welche Geräte betroffen sind, wer betroffen ist und wohin die Bedrohung verlaufen ist.
-* **Alerts** – verfügen über eine größere Sichtbarkeit aller Warnungen in Ihrer Microsoft 356-Umgebung, einschließlich Warnungen von Microsoft Cloud App Security, Office 365 ATP, Azure AD, Azure ATP und Microsoft Defender ATP. Verfügbar für E3-und E5-Kunden.  
+* **Alerts** – verfügen über eine größere Sichtbarkeit aller Warnungen in Ihrer Microsoft 365-Umgebung, einschließlich Warnungen von Microsoft Cloud App Security, Office 365 ATP, Azure AD, Azure ATP und Microsoft Defender ATP. Verfügbar für E3-und E5-Kunden.  
 * **Action Center** – reduzieren Sie die Anzahl von Warnungen, die ihr Sicherheitsteam manuell adressieren muss, sodass sich Ihr Sicherheitseinsatz Team auf komplexere Bedrohungen und andere hochwertige Initiativen konzentrieren kann.
 * **Berichte** – holen Sie sich die Details und Informationen, die Sie benötigen, um Ihre Benutzer, Geräte, Apps und vieles mehr besser zu schützen.
 * **Sicherheitsbewertung** – Verbessern Sie Ihren allgemeinen Sicherheitsstatus mit der Microsoft-Sicherheitsbewertung. Diese Seite enthält eine Übersicht über die verschiedenen Sicherheitsfeatures und Funktionen, die Sie aktiviert haben, und enthält Empfehlungen für Verbesserungen für Bereiche.

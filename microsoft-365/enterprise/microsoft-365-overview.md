@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 für Unternehmen.
-ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951994"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053095"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -76,7 +76,7 @@ Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/
 
 Um ein besseres Bild davon zu erhalten, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste in Microsoft 365 for Enterprise umstellen können, laden Sie das [Transition-Poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)herunter.
 
-[![Bild des Posters zur Umstellung auf Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Abbildung des Posters zur Umstellung auf Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
@@ -84,11 +84,11 @@ Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/micro
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Vermeiden des Endes der Unterstützung für Windows 7-und Office 2010-Clients und-Server
 
-Die folgenden Produkte erreichen das Ende der Unterstützung am **14. Januar 2020**:
+Die folgenden Produkte erreichten das Ende der Unterstützung am **14. Januar 2020**:
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-Die folgenden Produkte erreichen das Ende der Unterstützung am **13. Oktober 2020**:
+Die folgenden Produkte werden am Ende der Unterstützung am **13. Oktober 2020**erreichen:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
@@ -150,6 +150,6 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 Wenn Sie die Bereitstellung selbst ausführen, starten Sie die [Bereitstellungs Reise von Microsoft 365 für Enterprise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft 365 für Enterprise-Produktseite](https://www.microsoft.com/microsoft-365/enterprise)
