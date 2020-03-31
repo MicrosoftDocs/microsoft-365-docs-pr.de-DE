@@ -1,9 +1,9 @@
 ---
-title: Aktivieren des Berichtsnachrichts-Add-Ins
+title: Aktivieren des Add-Ins „Nachrichten melden“
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,185 +16,143 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
+ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893754"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061737"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="374db-103">Aktivieren des Berichtsnachrichts-Add-Ins</span><span class="sxs-lookup"><span data-stu-id="374db-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-add-in-in-office-365"></a><span data-ttu-id="3778d-103">Aktivieren des Add-Ins "Berichtsnachricht" in Office 365</span><span class="sxs-lookup"><span data-stu-id="3778d-103">Enable the Report Message add-in in Office 365</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="374db-104">Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet ist nicht genau dasselbe wie der [Outlook-Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), obwohl beide dazu verwendet werden können, e-Mails als Junk-e-Mail, nicht als Junk-oder als Phishing-Versuch zu kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="374db-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="374db-105">Der Unterschied besteht darin, dass das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet Microsoft über falsch klassifizierte e-Mails benachrichtigt, während der Outlook-Junk-e-Mail-Filter zum Organisieren von e-Mail-Nachrichten im Postfach eines Benutzers verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="374db-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
+> <span data-ttu-id="3778d-104">Wenn Sie ein Administrator in einer Office 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Office 365 Security & Compliance Center zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="3778d-104">If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center.</span></span> <span data-ttu-id="3778d-105">Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).</span><span class="sxs-lookup"><span data-stu-id="3778d-105">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
 
-## <a name="overview"></a><span data-ttu-id="374db-106">Übersicht</span><span class="sxs-lookup"><span data-stu-id="374db-106">Overview</span></span>
+<span data-ttu-id="3778d-106">Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet (früher bekannt als Outlook Web App) ermöglicht Benutzern das einfache Melden von falsch positiven Ergebnissen (gute e-Mail-Nachrichten als "schlecht" gekennzeichnet) oder von falschen negativen (ungültige e-Mail-Nachrichten) an Microsoft und seine Partner zur Analyse.</span><span class="sxs-lookup"><span data-stu-id="3778d-106">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="3778d-107">Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="3778d-107">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span>
 
-<span data-ttu-id="374db-107">Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet (ehemals Outlook Web App genannt) ermöglicht Benutzern das einfache Melden von vertraulichen oder böswilligen e-Mail-Nachrichten an Microsoft und seine Partner zur Analyse.</span><span class="sxs-lookup"><span data-stu-id="374db-107">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="374db-108">Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="374db-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="374db-109">Wenn Ihre Organisation [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) oder [Plan 2](office-365-ti.md)verwendet, bietet das Add-in "Berichtsnachricht" außerdem nützliche Informationen zum Überprüfen und Aktualisieren von Sicherheitsrichtlinien, die dem Sicherheitsteam Ihrer Organisation zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="374db-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
+<span data-ttu-id="3778d-108">Nehmen wir beispielsweise an, dass Personen viele Nachrichten als Phishing melden.</span><span class="sxs-lookup"><span data-stu-id="3778d-108">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="3778d-109">Diese Informationen werden im [Sicherheits Dashboard](security-dashboard.md) und in anderen Berichten unter Oberflächen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3778d-109">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="3778d-110">Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Anhaltspunkt dafür verwenden, dass Anti-Phishing-Richtlinien möglicherweise aktualisiert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="3778d-110">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="3778d-111">Oder wenn Personen viele Nachrichten melden, die als Junk-e-Mail als nicht-Junk mithilfe des Berichtsnachrichten-Add-ins gekennzeichnet wurden, muss das Sicherheitsteam Ihrer Organisation möglicherweise [Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md)anpassen.</span><span class="sxs-lookup"><span data-stu-id="3778d-111">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="374db-110">Nehmen wir beispielsweise an, dass Personen viele Nachrichten als Phishing melden.</span><span class="sxs-lookup"><span data-stu-id="374db-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="374db-111">Diese Informationen werden im [Sicherheits Dashboard](security-dashboard.md) und in anderen Berichten unter Oberflächen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="374db-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="374db-112">Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Anhaltspunkt dafür verwenden, dass Anti-Phishing-Richtlinien möglicherweise aktualisiert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="374db-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="374db-113">Oder wenn Personen viele Nachrichten melden, die als Junk-e-Mail als nicht-Junk mithilfe des Berichtsnachrichten-Add-ins gekennzeichnet wurden, muss das Sicherheitsteam Ihrer Organisation möglicherweise [Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md)anpassen.</span><span class="sxs-lookup"><span data-stu-id="374db-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="3778d-112">Wenn Ihre Organisation [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) oder [Plan 2](office-365-ti.md)verwendet, bietet das Add-in "Berichtsnachricht" außerdem nützliche Informationen zum Überprüfen und Aktualisieren von Sicherheitsrichtlinien, die dem Sicherheitsteam Ihrer Organisation zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="3778d-112">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
 
-<span data-ttu-id="374db-114">Das Add-in "Berichtsnachricht" funktioniert mit den meisten Office 365-Abonnements und den folgenden Produkten:</span><span class="sxs-lookup"><span data-stu-id="374db-114">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
+<span data-ttu-id="3778d-113">Administratoren können das Add-in "Berichtsnachricht" für die Organisation aktivieren, und einzelne Benutzer können es für sich selbst installieren.</span><span class="sxs-lookup"><span data-stu-id="3778d-113">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span>
 
-- <span data-ttu-id="374db-115">Outlook im Web</span><span class="sxs-lookup"><span data-stu-id="374db-115">Outlook on the web</span></span>
-- <span data-ttu-id="374db-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="374db-116">Outlook 2013 SP1</span></span>
-- <span data-ttu-id="374db-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="374db-117">Outlook 2016</span></span>
-- <span data-ttu-id="374db-118">Outlook 2016 für Mac</span><span class="sxs-lookup"><span data-stu-id="374db-118">Outlook 2016 for Mac</span></span>
-- <span data-ttu-id="374db-119">Outlook im Lieferumfang von Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="374db-119">Outlook included with Office 365 ProPlus</span></span>
+<span data-ttu-id="3778d-114">Wenn Sie ein einzelner Benutzer sind, können Sie [das Add-in "Berichtsnachricht" für sich selbst aktivieren](#get-the-report-message-add-in-for-yourself).</span><span class="sxs-lookup"><span data-stu-id="3778d-114">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
 
-<span data-ttu-id="374db-120">Das Add-in "Berichtsnachricht" steht derzeit nicht zur Verfügung für:</span><span class="sxs-lookup"><span data-stu-id="374db-120">The Report Message add-in is currently not available for:</span></span>
+<span data-ttu-id="3778d-115">Wenn Sie ein Office 365 globaler Administrator oder ein Exchange Online Administrator sind und Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert ist, können Sie [das Add-in "Berichtsnachricht" für Ihre Organisation aktivieren](#get-and-enable-the-report-message-add-in-for-your-organization).</span><span class="sxs-lookup"><span data-stu-id="3778d-115">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="3778d-116">Das Add-in "Berichtsnachricht" ist jetzt über eine [zentralisierte Bereitstellung](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)verfügbar.</span><span class="sxs-lookup"><span data-stu-id="3778d-116">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-- <span data-ttu-id="374db-121">Postfächer in lokalen Exchange-Organisationen</span><span class="sxs-lookup"><span data-stu-id="374db-121">Mailboxes in on-premises Exchange organizations</span></span>
-- <span data-ttu-id="374db-122">Gcc-, gcc-High-oder DoD-Abonnements</span><span class="sxs-lookup"><span data-stu-id="374db-122">GCC, GCC HIGH, or DoD subscriptions</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="3778d-117">Was sollten Sie wissen, bevor Sie beginnen?</span><span class="sxs-lookup"><span data-stu-id="3778d-117">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="374db-123">Ihr vorhandener Webbrowser sollte ausreichen, damit das Add-in "Berichtsnachricht" funktioniert. Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, versuchen Sie es mit einem anderen Browser.</span><span class="sxs-lookup"><span data-stu-id="374db-123">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+- <span data-ttu-id="3778d-118">Das Add-in "Berichtsnachricht" funktioniert mit den meisten Office 365-Abonnements und den folgenden Produkten:</span><span class="sxs-lookup"><span data-stu-id="3778d-118">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
 
-<span data-ttu-id="374db-124">Wenn Sie ein einzelner Benutzer sind, können Sie [das Add-in "Berichtsnachricht" für sich selbst aktivieren](#get-the-report-message-add-in-for-yourself).</span><span class="sxs-lookup"><span data-stu-id="374db-124">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+  - <span data-ttu-id="3778d-119">Outlook im Web</span><span class="sxs-lookup"><span data-stu-id="3778d-119">Outlook on the web</span></span>
+  - <span data-ttu-id="3778d-120">Outlook 2013 SP1 oder höher</span><span class="sxs-lookup"><span data-stu-id="3778d-120">Outlook 2013 SP1 or later</span></span>
+  - <span data-ttu-id="3778d-121">Outlook 2016 für Mac</span><span class="sxs-lookup"><span data-stu-id="3778d-121">Outlook 2016 for Mac</span></span>
+  - <span data-ttu-id="3778d-122">Outlook im Lieferumfang von Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="3778d-122">Outlook included with Office 365 ProPlus</span></span>
 
-<span data-ttu-id="374db-125">Wenn Sie ein Office 365 globaler Administrator oder ein Exchange Online Administrator sind und Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert ist, können Sie [das Add-in "Berichtsnachricht" für Ihre Organisation aktivieren](#get-and-enable-the-report-message-add-in-for-your-organization).</span><span class="sxs-lookup"><span data-stu-id="374db-125">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="374db-126">Das Add-in "Berichtsnachricht" ist jetzt über eine [zentralisierte Bereitstellung](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)verfügbar.</span><span class="sxs-lookup"><span data-stu-id="374db-126">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
+- <span data-ttu-id="3778d-123">Das Add-in "Berichtsnachricht" steht derzeit nicht zur Verfügung für:</span><span class="sxs-lookup"><span data-stu-id="3778d-123">The Report Message add-in is currently not available for:</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="374db-127">Abrufen des Berichtsnachrichten-Add-Ins für sich selbst</span><span class="sxs-lookup"><span data-stu-id="374db-127">Get the Report Message add-in for yourself</span></span>
+  - <span data-ttu-id="3778d-124">Postfächer in lokalen Exchange-Organisationen</span><span class="sxs-lookup"><span data-stu-id="3778d-124">Mailboxes in on-premises Exchange organizations</span></span>
+  - <span data-ttu-id="3778d-125">Gcc-, gcc-High-oder DoD-Abonnements</span><span class="sxs-lookup"><span data-stu-id="3778d-125">GCC, GCC HIGH, or DoD subscriptions</span></span>
 
-1. <span data-ttu-id="374db-128">Suchen Sie in [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps)nach dem [Add-in "Berichtsnachricht](https://appsource.microsoft.com/product/office/wa104381180)".</span><span class="sxs-lookup"><span data-stu-id="374db-128">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
+- <span data-ttu-id="3778d-126">Ihr vorhandener Webbrowser sollte mit dem Add-in "Berichtsnachricht" funktionieren.</span><span class="sxs-lookup"><span data-stu-id="3778d-126">Your existing web browser should work with the Report Message add-in.</span></span> <span data-ttu-id="3778d-127">Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, versuchen Sie es mit einem anderen Browser.</span><span class="sxs-lookup"><span data-stu-id="3778d-127">But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-2. <span data-ttu-id="374db-129">Wählen Sie **get it now**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-129">Choose **GET IT NOW**.</span></span>
+- <span data-ttu-id="3778d-128">Für organisatorische Installationen muss die Organisation für die Verwendung der OAuth-Authentifizierung konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="3778d-128">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="3778d-129">Weitere Informationen finden Sie unter [bestimmen, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](../../admin/manage/centralized-deployment-of-add-ins.md).</span><span class="sxs-lookup"><span data-stu-id="3778d-129">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
+
+- <span data-ttu-id="3778d-130">Administratoren müssen Mitglied der Rollengruppe "globale Administratoren" sein.</span><span class="sxs-lookup"><span data-stu-id="3778d-130">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="3778d-131">Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="3778d-131">For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+
+## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="3778d-132">Abrufen des Berichtsnachrichten-Add-Ins für sich selbst</span><span class="sxs-lookup"><span data-stu-id="3778d-132">Get the Report Message add-in for yourself</span></span>
+
+1. <span data-ttu-id="3778d-133">Wechseln Sie zum Microsoft-AppSource <https://appsource.microsoft.com/marketplace/apps> , und suchen Sie nach dem Add-in "Berichtsnachricht".</span><span class="sxs-lookup"><span data-stu-id="3778d-133">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="3778d-134">Wechseln Sie zu, um direkt zum Add-in "Berichtsnachricht <https://appsource.microsoft.com/product/office/wa104381180>" zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="3778d-134">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
+
+2. <span data-ttu-id="3778d-135">Klicken Sie auf **Jetzt abrufen**.</span><span class="sxs-lookup"><span data-stu-id="3778d-135">Click **GET IT NOW**.</span></span>
 
    ![Berichtsnachricht – jetzt abrufen](../../media/ReportMessageGETITNOW.png)
 
-3. <span data-ttu-id="374db-131">Lesen Sie die Nutzungsbedingungen und Datenschutzrichtlinien.</span><span class="sxs-lookup"><span data-stu-id="374db-131">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="374db-132">Wählen Sie dann **Continue** aus.</span><span class="sxs-lookup"><span data-stu-id="374db-132">Then choose **Continue**.</span></span>
+3. <span data-ttu-id="3778d-137">Lesen Sie im daraufhin angezeigten Dialogfeld Nutzungsbedingungen und Datenschutzrichtlinie, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="3778d-137">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
 
-4. <span data-ttu-id="374db-133">Melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto (für geschäftliche Zwecke) oder Ihrem Microsoft-Konto (zur persönlichen Verwendung) an.</span><span class="sxs-lookup"><span data-stu-id="374db-133">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+4. <span data-ttu-id="3778d-138">Melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto (für geschäftliche Zwecke) oder Ihrem Microsoft-Konto (zur persönlichen Verwendung) an.</span><span class="sxs-lookup"><span data-stu-id="3778d-138">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-<span data-ttu-id="374db-134">Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole angezeigt:</span><span class="sxs-lookup"><span data-stu-id="374db-134">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+<span data-ttu-id="3778d-139">Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole angezeigt:</span><span class="sxs-lookup"><span data-stu-id="3778d-139">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-- <span data-ttu-id="374db-135">In Outlook sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="374db-135">In Outlook, the icon looks like this:</span></span>
-
-  ![Add-in-Symbol für Berichtsnachricht für Outlook](../../media/OutlookReportMessageIcon.png)
-
-- <span data-ttu-id="374db-137">In Outlook im Internet (früher bekannt als Outlook Web App) sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="374db-137">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
-
-  ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
-
-> [!TIP]
-> <span data-ttu-id="374db-139">Im nächsten Schritt erfahren Sie, wie Sie [das Add-in "Berichtsnachricht" verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="374db-139">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="374db-140">Abrufen und Aktivieren des Berichtsnachrichten-Add-Ins für Ihre Organisation</span><span class="sxs-lookup"><span data-stu-id="374db-140">Get and enable the Report Message add-in for your organization</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="374db-141">Sie müssen ein Office 365 globaler Administrator oder ein Exchange Online Administrator sein, um diese Aufgabe ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="374db-141">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="374db-142">Darüber hinaus muss Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert sein, um weitere Informationen zu erhalten, siehe [Exchange-Anforderungen (zentralisierte Bereitstellung von Add-Ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span><span class="sxs-lookup"><span data-stu-id="374db-142">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
-
-1. <span data-ttu-id="374db-143">Wechseln Sie zur [Seite Dienste &-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) im Microsoft 365 Admin Center.</span><span class="sxs-lookup"><span data-stu-id="374db-143">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
-
-   ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
-
-2. <span data-ttu-id="374db-145">Wählen Sie **+ Deploy Add-in aus**.</span><span class="sxs-lookup"><span data-stu-id="374db-145">Choose **+ Deploy Add-in**.</span></span>
-
-   ![Auswählen von "Add-in bereitstellen"](../../media/ServicesAddIns-ChooseDeployAddIn.png)
-
-3. <span data-ttu-id="374db-147">Überprüfen Sie im **neuen Add-in-** Bildschirm die Informationen, und wählen Sie dann **weiter**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-147">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
-
-   ![Neue Add-in-Details](../../media/NewAddInScreen1.png)
-
-4. <span data-ttu-id="374db-149">Wählen Sie **Ich möchte ein Add-in aus dem Office Store hinzufügen aus**, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="374db-149">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
-
-   ![Ich möchte ein neues Add-in hinzufügen](../../media/NewAddInScreen2.png)
-
-5. <span data-ttu-id="374db-151">Suchen Sie nach **Berichtsnachricht**, und wählen Sie in der Ergebnisliste neben dem **Add-in "Berichtsnachricht**" die Option **Hinzufügen**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-151">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
-
-   ![Suchen Sie nach Berichtsnachricht, und wählen Sie dann hinzufügen](../../media/NewAddInScreen3.png)
-
-6. <span data-ttu-id="374db-153">Überprüfen Sie auf dem Bildschirm **Bericht Meldung** die Informationen, und wählen Sie dann **weiter**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-153">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
-
-   ![Berichtsnachrichten Details](../../media/ReportMessageAdd-InNewScreen4.png)
-
-7. <span data-ttu-id="374db-155">Geben Sie die Standardeinstellungen des Benutzers für Outlook an, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="374db-155">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
-
-   ![Berichtsnachrichten Standardeinstellungen für Outlook](../../media/ReportMessageOptionsScreen5.png)
-
-8. <span data-ttu-id="374db-157">Geben Sie an, wer das Add-in "Berichtsnachricht" abruft, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-157">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
-
-   ![Wer ruft das Add-in "Berichtsnachricht" ab](../../media/ReportMessageOptionsScreen6.png)
-
-> [!TIP]
-> <span data-ttu-id="374db-159">Es [wird empfohlen, eine Regel einzurichten, um eine Kopie der von Ihren Benutzern gemeldeten e-Mail-Nachrichten zu erhalten](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span><span class="sxs-lookup"><span data-stu-id="374db-159">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
-
-<span data-ttu-id="374db-160">Je nachdem, was Sie beim Einrichten des Add-Ins (Schritte 7-8 oben) ausgewählt haben, ist das [Add-in "Berichtsnachricht](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) " für Personen in Ihrer Organisation verfügbar.</span><span class="sxs-lookup"><span data-stu-id="374db-160">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="374db-161">Personen in Ihrer Organisation werden die folgenden Symbole angezeigt:</span><span class="sxs-lookup"><span data-stu-id="374db-161">People in your organization will see the following icons:</span></span>
-
-- <span data-ttu-id="374db-162">In Outlook sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="374db-162">In Outlook, the icon looks like this:</span></span>
+- <span data-ttu-id="3778d-140">In Outlook sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="3778d-140">In Outlook, the icon looks like this:</span></span>
 
   ![Add-in-Symbol für Berichtsnachricht für Outlook](../../media/OutlookReportMessageIcon.png)
 
-- <span data-ttu-id="374db-164">In Outlook im Internet sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="374db-164">In Outlook on the web, the icon looks like this:</span></span>
+- <span data-ttu-id="3778d-142">In Outlook im Internet sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="3778d-142">In Outlook on the web, the icon looks like this:</span></span>
 
   ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-> [!TIP]
-> <span data-ttu-id="374db-166">Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie einen Link zur [Verwendung des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)hinzu.</span><span class="sxs-lookup"><span data-stu-id="374db-166">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+<span data-ttu-id="3778d-144">Informationen zur Verwendung des Add-Ins finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="3778d-144">To learn how to use the add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="374db-167">Einrichten einer Regel zum Abrufen einer Kopie von von Ihren Benutzern gemeldeten e-Mail-Nachrichten</span><span class="sxs-lookup"><span data-stu-id="374db-167">Set up a rule to get a copy of email messages reported by your users</span></span>
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="3778d-145">Abrufen und Aktivieren des Berichtsnachrichten-Add-Ins für Ihre Organisation</span><span class="sxs-lookup"><span data-stu-id="3778d-145">Get and enable the Report Message add-in for your organization</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="374db-168">Sie müssen ein Exchange Online Administrator sein, um diese Aufgabe ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="374db-168">You must be an Exchange Online Administrator to perform this task.</span></span>
+> [!NOTE]
+> <span data-ttu-id="3778d-146">Es kann bis zu 12 Stunden dauern, bis das Add-in in Ihrer Organisation angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="3778d-146">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
 
-<span data-ttu-id="374db-169">Sie können eine Regel einrichten, um eine Kopie der von Benutzern in Ihrer Organisation gemeldeten e-Mail-Nachrichten zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="374db-169">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="374db-170">Dies tun Sie, nachdem Sie das Add-in "Berichtsnachricht" für Ihre Organisation heruntergeladen und aktiviert haben.</span><span class="sxs-lookup"><span data-stu-id="374db-170">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
+1. <span data-ttu-id="3778d-147">Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, und klicken Sie dann auf **Add-in bereitstellen**.</span><span class="sxs-lookup"><span data-stu-id="3778d-147">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.</span></span>
 
-1. <span data-ttu-id="374db-171">Wählen Sie in der Exchange-Verwaltungskonsole **Nachrichtenfluss** \> **Regeln**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-171">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
+   ![Seite "Dienste und Add-Ins" im Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="374db-172">Wählen **+** \> Sie **neue Regel erstellen**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-172">Choose **+** \> **Create a new rule**.</span></span>
+2. <span data-ttu-id="3778d-149">Überprüfen Sie im angezeigten **neuen Add-in-** Flyout, das angezeigt wird, die Informationen, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="3778d-149">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
 
-3. <span data-ttu-id="374db-173">Geben Sie im Feld **Name** einen Namen ein, beispielsweise Übermittlungen.</span><span class="sxs-lookup"><span data-stu-id="374db-173">In the **Name** box, type a name, such as Submissions.</span></span>
+3. <span data-ttu-id="3778d-150">Klicken Sie auf der nächsten Seite im **Store auf auswählen**.</span><span class="sxs-lookup"><span data-stu-id="3778d-150">On the next page, click **Choose from the Store**.</span></span>
 
-4. <span data-ttu-id="374db-174">Wählen Sie in der Liste **diese Regel anwenden, wenn** **die Option Empfängeradresse enthält...** aus.</span><span class="sxs-lookup"><span data-stu-id="374db-174">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
+   ![Bereitstelleneiner neuen Add-in-Seite](../../media/NewAddInScreen2.png)
 
-5. <span data-ttu-id="374db-175">Klicken Sie im Bildschirm **Wörter oder Ausdrücke angeben** auf Hinzufügen `junk@office365.microsoft.com` , und `phish@office365.microsoft.com`wählen Sie dann **OK**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-175">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
+4. <span data-ttu-id="3778d-152">Klicken Sie auf der Seite **Add-in auswählen** , die angezeigt wird, auf das **Suchfeld** , geben Sie **Berichtsnachricht**ein, und klicken](../../media/search-icon.png)Sie dann auf Suchsymbol **Suchen** ![.</span><span class="sxs-lookup"><span data-stu-id="3778d-152">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="3778d-153">Suchen Sie in der Ergebnisliste nach **Berichtnachricht** , und klicken Sie dann auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="3778d-153">In the list of results, find **Report Message** and then click **Add**.</span></span>
 
-   ![Angeben der Junk-und Phishing-e-Mail-Adressen für die Regel](../../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+   ![Auswählen von Add-in-Suchergebnissen](../../media/NewAddInScreen3.png)
 
-6. <span data-ttu-id="374db-177">Wählen Sie in der Liste **ausführen die folgende...** die Option **Bcc die Nachricht an...** aus.</span><span class="sxs-lookup"><span data-stu-id="374db-177">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
+5. <span data-ttu-id="3778d-155">Überprüfen Sie im angezeigten Dialogfeld die Informationen zu Lizenzierung und Datenschutz, und klicken Sie dann auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="3778d-155">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
 
-7. <span data-ttu-id="374db-178">Fügen Sie einen globalen Administrator, Sicherheitsadministrator und/oder Sicherheits Leser hinzu, der eine Kopie jeder e-Mail-Nachricht erhalten soll, die Personen an Microsoft melden, und wählen Sie dann **OK**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-178">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
+6. <span data-ttu-id="3778d-156">Konfigurieren Sie auf der Seite **Add-in konfigurieren** , die angezeigt wird, die folgenden Einstellungen:</span><span class="sxs-lookup"><span data-stu-id="3778d-156">In the **Configure add-in** page that appears, configure the following settings:</span></span>
 
-   ![Hinzufügen eines globalen oder Sicherheitsadministrators zum Empfangen einer Kopie jeder gemeldeten Nachricht](../../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+   - <span data-ttu-id="3778d-157">**Zugewiesene Benutzer**: Wählen Sie einen der folgenden Werte aus:</span><span class="sxs-lookup"><span data-stu-id="3778d-157">**Assigned users**: Select one of the following values:</span></span>
 
-8. <span data-ttu-id="374db-180">Wählen Sie **diese Regel mit Schweregrad überwachen**aus, und wählen Sie **Medium**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-180">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
+     - <span data-ttu-id="3778d-158">**Jeder** (Standard)</span><span class="sxs-lookup"><span data-stu-id="3778d-158">**Everyone** (default)</span></span>
+     - <span data-ttu-id="3778d-159">**Bestimmte Benutzer/Gruppen**</span><span class="sxs-lookup"><span data-stu-id="3778d-159">**Specific users / groups**</span></span>
+     - <span data-ttu-id="3778d-160">**Nur ich**</span><span class="sxs-lookup"><span data-stu-id="3778d-160">**Just me**</span></span>
 
-9. <span data-ttu-id="374db-181">Wählen Sie unter **Modus für diese Regel auswählen die**Option **erzwingen**aus.</span><span class="sxs-lookup"><span data-stu-id="374db-181">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
+   - <span data-ttu-id="3778d-161">**Bereitstellungsmethode**: Wählen Sie einen der folgenden Werte aus:</span><span class="sxs-lookup"><span data-stu-id="3778d-161">**Deployment method**: Select one of the following values:</span></span>
 
-   ![Einrichten einer Regel zum Abrufen einer Kopie jeder gemeldeten Nachricht](../../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+     - <span data-ttu-id="3778d-162">**Fixed (Standard)**: das Add-in wird automatisch für die angegebenen Benutzer bereitgestellt und kann nicht entfernt werden.</span><span class="sxs-lookup"><span data-stu-id="3778d-162">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
+     - <span data-ttu-id="3778d-163">**Verfügbar**: Benutzer können das Add-in zu **Hause** \> installieren **Get Add-ins** \> **Administrator verwaltet**.</span><span class="sxs-lookup"><span data-stu-id="3778d-163">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
+     - <span data-ttu-id="3778d-164">**Optional**: das Add-in wird automatisch für die angegebenen Benutzer bereitgestellt, aber es kann ausgewählt werden, es zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="3778d-164">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
 
-10. <span data-ttu-id="374db-183">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="374db-183">Choose **Save**.</span></span>
+   ![Konfigurieren der Add-in-Seite](../../media/configure-add-in.png)
 
-<span data-ttu-id="374db-184">Wenn diese Regel erfüllt ist, erhält Ihr globaler Administrator, Sicherheitsadministrator und/oder Sicherheits Leser eine Kopie dieser Nachricht, wenn jemand in Ihrer Organisation eine e-Mail-Nachricht mithilfe des Berichtsnachrichten-Add-ins meldet.</span><span class="sxs-lookup"><span data-stu-id="374db-184">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="374db-185">Diese Informationen können Ihnen das Einrichten oder Anpassen von Richtlinien ermöglichen, beispielsweise Office 365 Richtlinien für [ATP-sichere Links](atp-safe-links.md) oder Ihre [Anti-Spam-](anti-spam-protection.md) Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="374db-185">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
+   <span data-ttu-id="3778d-166">Wenn Sie fertig sind, klicken Sie auf **Bereitstellen**.</span><span class="sxs-lookup"><span data-stu-id="3778d-166">When you're finished, click **Deploy**.</span></span>
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="374db-186">Informationen zur Verwendung des Berichtsnachrichten-Add-ins</span><span class="sxs-lookup"><span data-stu-id="374db-186">Learn how to use the Report Message add-in</span></span>
+7. <span data-ttu-id="3778d-167">Auf der angezeigten Seite **Berichtnachricht bereitstellen** sehen Sie einen Fortschrittsbericht, gefolgt von einer Bestätigung, dass das Add-in bereitgestellt wurde.</span><span class="sxs-lookup"><span data-stu-id="3778d-167">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="3778d-168">Nachdem Sie die Informationen gelesen haben, klicken Sie auf **weiter**.</span><span class="sxs-lookup"><span data-stu-id="3778d-168">After you read the information, click **Next**.</span></span>
 
-<span data-ttu-id="374db-187">Siehe [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="374db-187">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+   ![Seite "Berichtsnachricht bereitstellen"](../../media/deploy-report-message-page.png)
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="374db-188">Überprüfen oder Bearbeiten der Einstellungen für das Add-in "Berichtsnachricht"</span><span class="sxs-lookup"><span data-stu-id="374db-188">Review or edit settings for the Report Message add-in</span></span>
+8. <span data-ttu-id="3778d-170">Überprüfen Sie auf der Seite **Add-in kündigen** , die angezeigt wird, die Informationen, und klicken Sie dann auf **Schließen**.</span><span class="sxs-lookup"><span data-stu-id="3778d-170">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
 
-<span data-ttu-id="374db-189">Sie können die Standardeinstellungen für das Add-in "Berichtsnachricht" auf der [Seite Dienste &-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)überprüfen und bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="374db-189">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+   ![Add-in-Seite ankündigen](../../media/announce-add-in-page.png)
 
-> [!IMPORTANT]
-> <span data-ttu-id="374db-190">Sie müssen ein Office 365 globaler Administrator oder ein Exchange Online Administrator sein, um diese Aufgabe ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="374db-190">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+### <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="3778d-172">Informationen zur Verwendung des Berichtsnachrichten-Add-ins</span><span class="sxs-lookup"><span data-stu-id="3778d-172">Learn how to use the Report Message add-in</span></span>
 
-1. <span data-ttu-id="374db-191">Wechseln Sie zur [Seite Dienste &-Add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) im Microsoft 365 Admin Center.</span><span class="sxs-lookup"><span data-stu-id="374db-191">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="3778d-173">Personen, denen das Add-in zugewiesen ist, werden die folgenden Symbole angezeigt:</span><span class="sxs-lookup"><span data-stu-id="3778d-173">People who have the add-in assigned to them will see the following icons:</span></span>
+
+- <span data-ttu-id="3778d-174">In Outlook sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="3778d-174">In Outlook, the icon looks like this:</span></span>
+
+  ![Add-in-Symbol für Berichtsnachricht für Outlook](../../media/OutlookReportMessageIcon.png)
+
+- <span data-ttu-id="3778d-176">In Outlook im Internet sieht das Symbol wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="3778d-176">In Outlook on the web, the icon looks like this:</span></span>
+
+  ![Outlook im Add-in-Symbol für den Webbericht-Nachrichtendienst](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+
+<span data-ttu-id="3778d-178">Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie einen Link zur [Verwendung des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)hinzu.</span><span class="sxs-lookup"><span data-stu-id="3778d-178">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+
+### <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="3778d-179">Überprüfen oder Bearbeiten der Einstellungen für das Add-in "Berichtsnachricht"</span><span class="sxs-lookup"><span data-stu-id="3778d-179">Review or edit settings for the Report Message add-in</span></span>
+
+1. <span data-ttu-id="3778d-180">Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.</span><span class="sxs-lookup"><span data-stu-id="3778d-180">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.</span></span>
 
    ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="374db-193">Suchen Sie das Add-in Berichtsnachricht, und wählen Sie es aus.</span><span class="sxs-lookup"><span data-stu-id="374db-193">Find and select the Report Message add-in.</span></span>
+2. <span data-ttu-id="3778d-182">Suchen Sie das Add-in **Berichtsnachricht** , und wählen Sie es aus.</span><span class="sxs-lookup"><span data-stu-id="3778d-182">Find and select the **Report Message** add-in.</span></span>
 
-   ![Suchen und auswählen des Add-Ins "Berichtsnachricht"](../../media/FindReportMessageAddIn.png)
-
-3. <span data-ttu-id="374db-195">Überprüfen und bearbeiten Sie auf dem Bildschirm Bericht Meldung die Einstellungen entsprechend Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="374db-195">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+3. <span data-ttu-id="3778d-183">Überprüfen und bearbeiten Sie in der angezeigten Dropdown- **Meldung zum Bearbeiten des Berichtsnachrichten** die Einstellungen entsprechend Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="3778d-183">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="3778d-184">Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="3778d-184">When you're finished, click **Save**.</span></span>
 
    ![Einstellungen für das Add-in "Berichtsnachricht"](../../media/EditReportMessageAddIn.png)
-
-## <a name="related-topics"></a><span data-ttu-id="374db-197">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="374db-197">Related topics</span></span>
-
-[<span data-ttu-id="374db-198">Verwenden des Add-Ins "Berichtsnachricht"</span><span class="sxs-lookup"><span data-stu-id="374db-198">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-[<span data-ttu-id="374db-199">Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center</span><span class="sxs-lookup"><span data-stu-id="374db-199">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
-
-[<span data-ttu-id="374db-200">Anzeigen von Berichten für Office 365 Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="374db-200">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
-
-[<span data-ttu-id="374db-201">Verwenden des Explorers im Security &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="374db-201">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
