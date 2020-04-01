@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Erfahren Sie mehr über die Ressourcen, die Microsoft 365-Administratoren zur Verfügung stehen.
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: e38c15d0e68e908bada941443b019e9f243c7f11
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046915"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075596"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin-Hilfecenter
 
@@ -41,11 +41,11 @@ Erfahren Sie mehr über die Ressourcen, die Administratoren zur Verfügung stehe
                         <h3>Aus Office 365 wird Microsoft 365</h3>
                         <p>Wir ändern einige unserer Abonnementnamen für Office 365 und Microsoft 365. Sie brauchen nichts zu tun. Ihre Dienste, Apps und Funktionen bleiben gleich, ebenso wie der Preis Ihres Abonnements. Ihr Abonnementname wird automatisch im Microsoft 365 Admin Center aktualisiert, und Ihre Rechnungsangaben werden am oder nach dem 21. April 2020 aktualisiert.</p>
                         <ul>
-                            <li><p>Office 365 Business Essentials heißt jetzt Microsoft 365 Business Basic</p></li>
-                            <li><p>Office 365 Business Premium heißt jetzt Microsoft 365 Business Standard</p></li>
-                            <li><p>Microsoft 365 Business heißt jetzt Microsoft 365 Business Premium</p></li>
-                            <li><p>Office 365 Business heißt jetzt Microsoft 365 Apps for Business</p></li>
-                            <li><p>Office 365 ProPlus heißt jetzt Microsoft 365 Apps for Enterprise</p></li>
+                            <li><p><b>Office 365 Business Essentials</b> heißt jetzt <b>Microsoft 365 Business Basic</b>.</p></li>
+                            <li><p><b>Office 365 Business Premium</b> heißt jetzt <b>Microsoft 365 Business Standard</b>.</p></li>
+                            <li><p><b>Microsoft 365 Business</b> heißt jetzt <b>Microsoft 365 Business Premium</b>.</p></li>
+                            <li><p><b>Office 365 Business</b> heißt jetzt <b>Microsoft 365 Apps for Business</b>.</p></li>
+                            <li><p><b>Office 365 ProPlus</b> heißt jetzt <b>Microsoft 365 Apps for Enterprise</b>.</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">Weitere Informationen</a></p>
                     </div>
