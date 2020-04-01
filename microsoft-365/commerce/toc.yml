@@ -1,78 +1,78 @@
 - name: Business-Abonnements verwalten
   href: index.yml
-  expanded: true
+- name: Microsoft 365 Admin-Hilfecenter
+  href: ../admin/admin-home.md
+- name: Testen oder kaufen
   items:
-    - name: Testen oder kaufen
-      items:
-        - name: Registrieren für Office 365 – Testversion
-          href: sign-up-for-office-365-trial.md
-        - name: Testen oder Kaufen von Microsoft 365
-          href: try-or-buy-microsoft-365.md
-        - name: Verlängern Ihrer Testversion
-          href: extend-your-trial.md
-        - name: Ein weiteres Abonnement kaufen
-          href: buy-another-subscription.md
-        - name: Erwerben oder Bearbeiten eines Add-Ons
-          href: buy-or-edit-an-add-on.md
-        - name: Hinzufügen von Speicherplatz
-          href: add-storage-space.md
-    - name: Abonnements verwalten
-      items:
-        - name: Abonnements upgraden
-          href: subscriptions/upgrade-to-different-plan.md
-        - name: Verlängern Ihres Abonnements
-          href: subscriptions/renew-your-subscription.md
-        - name: Reaktivieren Ihres Abonnements
-          href: subscriptions/reactivate-your-subscription.md
-        - name: Kündigen Ihres Abonnements
-          href: subscriptions/cancel-your-subscription.md
-        - name: 'Was geschieht, wenn mein Abonnement abläuft?'
-          href: subscriptions/what-if-my-subscription-expires.md
-        - name: Apps von Drittanbietern verwalten
-          href: manage-saas-apps.md
-        - name: Self-Service-Einkäufe (Benutzer) verwalten
-          href: subscriptions/manage-self-service-purchases-users.md
-        - name: Self-Service-Einkäufe (Administrator) verwalten
-          href: subscriptions/manage-self-service-purchases-admins.md
-    - name: Verwalten von Lizenzen
-      items:
-        - name: Verwalten von Abonnementlizenzen
-          href: licenses/buy-licenses.md
-        - name: Benutzern Lizenzen zuweisen
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: 'Entfernen von Lizenzen, die Benutzern zugewiesen wurden'
-          href: ../admin/manage/remove-licenses-from-users.md
-        - name: Grundlegendes zu Abonnements und Lizenzen
-          href: licenses/subscriptions-and-licenses.md
-    - name: Abrechnungen und Zahlungen
-      items:
-        - name: Rechnung anzeigen
-          href: billing-and-payments/view-your-bill-or-invoice.md
-        - name: Informationen zu Ihrer Rechnung
-          href: billing-and-payments/understand-your-invoice.md
-        - name: Zahlungsmethoden verwalten
-          href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-        - name: Bezahlen für Ihr Abonnement
-          href: billing-and-payments/pay-for-your-subscription.md
-        - name: Zahlungsweise ändern
-          href: billing-and-payments/change-payment-method.md
-        - name: Ändern der Zahlungshäufigkeit
-          href: billing-and-payments/change-payment-frequency.md
-        - name: Verwalten von Abrechnungsprofilen
-          href: billing-and-payments/manage-billing-profiles.md
-        - name: Ändern der Rechnungsadressen
-          href: billing-and-payments/change-your-billing-addresses.md
-        - name: Zahlungsdienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
-          href: billing-and-payments/psd2.md
-    - name: Abrechnungskonten
-      items:
-        - name: Abrechnungskonten verwalten
-          href: manage-billing-accounts.md
-        - name: Zuordnen eines Mandanten zu meinem Abrechnungskonto
-          href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-    - name: Verwalten von Beziehungen mit meinen Partnern
-      href: manage-partners.md
-    - name: Schließen Ihres Kontos
-      href: close-your-account.md
-    - name: Support kontaktieren
-      href: ../admin/contact-support-for-business-products.md
+    - name: Registrieren für Office 365 – Testversion
+      href: sign-up-for-office-365-trial.md
+    - name: Testen oder Kaufen von Microsoft 365
+      href: try-or-buy-microsoft-365.md
+    - name: Verlängern Ihrer Testversion
+      href: extend-your-trial.md
+    - name: Ein weiteres Abonnement kaufen
+      href: buy-another-subscription.md
+    - name: Erwerben oder Bearbeiten eines Add-Ons
+      href: buy-or-edit-an-add-on.md
+    - name: Hinzufügen von Speicherplatz
+      href: add-storage-space.md
+- name: Abonnements verwalten
+  items:
+    - name: Abonnements upgraden
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: Verlängern Ihres Abonnements
+      href: subscriptions/renew-your-subscription.md
+    - name: Reaktivieren Ihres Abonnements
+      href: subscriptions/reactivate-your-subscription.md
+    - name: Kündigen Ihres Abonnements
+      href: subscriptions/cancel-your-subscription.md
+    - name: 'Was geschieht, wenn mein Abonnement abläuft?'
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: Apps von Drittanbietern verwalten
+      href: manage-saas-apps.md
+    - name: Self-Service-Einkäufe (Benutzer) verwalten
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: Self-Service-Einkäufe (Administrator) verwalten
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: Verwalten von Lizenzen
+  items:
+    - name: Verwalten von Abonnementlizenzen
+      href: licenses/buy-licenses.md
+    - name: Benutzern Lizenzen zuweisen
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: 'Entfernen von Lizenzen, die Benutzern zugewiesen wurden'
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: Grundlegendes zu Abonnements und Lizenzen
+      href: licenses/subscriptions-and-licenses.md
+- name: Abrechnungen und Zahlungen
+  items:
+    - name: Rechnung anzeigen
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: Informationen zu Ihrer Rechnung
+      href: billing-and-payments/understand-your-invoice.md
+    - name: Zahlungsmethoden verwalten
+      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - name: Bezahlen für Ihr Abonnement
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: Zahlungsweise ändern
+      href: billing-and-payments/change-payment-method.md
+    - name: Ändern der Zahlungshäufigkeit
+      href: billing-and-payments/change-payment-frequency.md
+    - name: Verwalten von Abrechnungsprofilen
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: Ändern der Rechnungsadressen
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: Zahlungsdienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
+      href: billing-and-payments/psd2.md
+- name: Abrechnungskonten
+  items:
+    - name: Abrechnungskonten verwalten
+      href: manage-billing-accounts.md
+    - name: Zuordnen eines Mandanten zu meinem Abrechnungskonto
+      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+- name: Verwalten von Beziehungen mit meinen Partnern
+  href: manage-partners.md
+- name: Schließen Ihres Kontos
+  href: close-your-account.md
+- name: Support kontaktieren
+  href: ../admin/contact-support-for-business-products.md

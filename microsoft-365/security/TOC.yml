@@ -255,12 +255,14 @@
                 - name: Melden von Nachrichten und Dateien an Microsoft
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                   items:
-                    - name: 'Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln'
+                    - name: Verwenden der Übermittlung durch den Administrator
                       href: ./office-365-security/admin-submission.md
                     - name: Aktivieren des Add-Ins „Nachrichten melden“
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Installieren und Verwenden des Add-Ins „Melden von Junk-E-Mails“
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: Melden von Junk-E-Mails und Phishing in Outlook im Web
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: Manuelles Übermitteln von Nachrichten an Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Übermitteln von Schadsoftware und Nicht-Schadsoftware an Microsoft
@@ -343,8 +345,6 @@
             - name: Was ist EOP?
               href: ./office-365-security/what-is-eop.md
               items:
-                - name: Unterstützung für anonym eingehende E-Mail-Nachrichten über IPv6
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Blockieren von Spam-E-Mails in EOP als eigenständige Lösung
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: Schützen lokaler Postfächer mit Exchange Online Protection
@@ -443,6 +443,8 @@
           items:
             - name: Nachrichtenablaufverfolgung im Security & Compliance Center
               href: ./office-365-security/message-trace-scc.md
+            - name: Hinzufügen von Unterstützung für anonym eingehende E-Mails über IPv6
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
             - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
