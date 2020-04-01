@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie Spoof Intelligence im Security &amp; Compliance Center auf der Seite Anti-Spam-Einstellungen, um alle Absender zu überprüfen, die entweder Spoofing von Domänen sind, die Teil Ihrer Organisation sind, oder Spoofing externer Domänen. Spoof Intelligence steht als Teil von Office 365 Enterprise E5 oder separat im Rahmen von Advanced Threat Protection und Exchange Online Protection zur Verfügung.
-ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082961"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081460"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Wissenswertes zur Spoofintelligenz
 
@@ -101,7 +101,7 @@ Sie können die Absender, die Ihre Domäne Spoofing durchführen, oder externe D
 
 6. Klicken Sie auf **Speichern** , um alle Änderungen zu speichern.
 
-Wenn Sie ein Office 365 Enterprise E5-Abonnement haben oder Advanced Threat Protection als Add-on separat erworben haben, können Sie auch Absender verwalten, die Ihre Domäne durch Spoof [Intelligence Insight](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight)manipulieren.
+Wenn Sie ein Office 365 Enterprise E5-Abonnement haben oder Advanced Threat Protection als Add-on separat erworben haben, können Sie auch Absender verwalten, die Ihre Domäne durch Spoof [Intelligence Insight](walkthrough-spoof-intelligence-insight.md)manipulieren.
 
 ## <a name="configuring-the-anti-spoofing-policy"></a>Konfigurieren der Richtlinie zum Schutz vor Spoofing
 <a name="Managespooflist"> </a>

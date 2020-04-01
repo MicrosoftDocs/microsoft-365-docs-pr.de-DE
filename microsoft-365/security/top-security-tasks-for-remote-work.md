@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037476"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081304"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -165,8 +166,8 @@ Sie können auch die Vorteile dieser Lernprogramme nutzen:
 - [Verwenden Sie Apples Features für die unternehmensweite Geräteregistrierung in Apple Business Manager (ABM), um IOS/iPads-Geräte in InTune zu registrieren.](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 Verwenden Sie nach dem Registrieren von Geräten die Anleitungen unter [Allgemeine Identitäts-und Gerätezugriffs Richtlinien](../enterprise/identity-access-policies.md) , um diese Richtlinien zu erstellen:
-- [Definieren von Geräte Kompatibilitätsrichtlinien](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [Kompatible PCs erfordern](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) (Regel für bedingten Zugriff)
+- [Definieren von Richtlinien für Geräte Konformität](../enterprise/identity-access-policies.md#define-device-compliance-policies) – die empfohlenen Einstellungen für Windows 10 umfassen den Schutz vor Viren. Wenn Sie über Microsoft 365 E5 verfügen, verwenden Sie Microsoft Defender Advanced Threat Protection, um die Integrität von mitarbeitergeräten zu überwachen. Achten Sie darauf, dass Compliance-Richtlinien für andere Betriebssysteme Antivirenschutz und End-Punkt-Schutz Software umfassen. 
+- [Kompatible PCs erfordern](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – Dies ist die Regel für bedingten Zugriff in Azure AD, die die Geräte Konformitätsrichtlinien erzwingt.
 
 Nur eine Organisation kann ein Gerät verwalten, daher müssen Sie die Gastkonten aus der Regel für bedingten Zugriff in Azure AD ausschließen. Wenn Sie Gast-und externe Benutzer nicht von Richtlinien ausschließen, die die Gerätekompatibilität erfordern, werden diese Benutzer durch diese Richtlinien blockiert. Weitere Informationen finden Sie unter [Aktualisieren der allgemeinen Richtlinien zum zulassen und schützen von Gast und externem Zugriff](../enterprise/identity-access-policies-guest-access.md).
 
@@ -174,7 +175,7 @@ Nur eine Organisation kann ein Gerät verwalten, daher müssen Sie die Gastkonte
 
 Wenn Sie schnell den Großteil ihrer Mitarbeiter von zu Hause aus arbeiten lassen, kann dieser plötzliche Wechsel von Verbindungs Mustern erhebliche Auswirkungen auf die Unternehmensnetzwerk Infrastruktur haben. Viele Netzwerke wurden skaliert und entworfen, bevor Cloud-Dienste angenommen wurden. In vielen Fällen sind Netzwerke für Remote Arbeitsthreads tolerant, aber nicht für die gleichzeitige Verwendung von Remote-Benutzern ausgelegt.
 
-Netzwerkelemente wie VPN-Konzentratoren, zentrale Ausstiegs Geräte (beispielsweise Proxies und Verhinderung von Datenverlust), zentrale Internet Bandbreite, Backhaul MPLS-Schaltungen, NAT-Funktionen und so weiter werden aufgrund der Last von das gesamte Unternehmen, das diese verwendet. Das Endergebnis ist eine schlechte Leistung und Produktivität gepaart mit einer schlechten Benutzerfreundlichkeit für Benutzer, die sich an die Arbeit von zu Hause anpassen.
+Netzwerkelemente wie VPN-Konzentratoren, zentrale Ausstiegs Geräte (beispielsweise Proxies und Verhinderung von Datenverlust), zentrale Internet Bandbreite, Backhaul MPLS-Schaltungen, NAT-Funktionen und so weiter werden aufgrund der Auslastung des gesamten Unternehmens mit ihnen plötzlich unter enorme Belastung gesetzt. Das Endergebnis ist eine schlechte Leistung und Produktivität gepaart mit einer schlechten Benutzerfreundlichkeit für Benutzer, die sich an die Arbeit von zu Hause anpassen.
 
 Einige der Schutzmechanismen, die traditionell vom Routing Datenverkehr über ein Unternehmensnetzwerk bereitgestellt wurden, werden von den Cloud-apps bereitgestellt, auf die Ihre Benutzer zugreifen. Wenn Sie diesen Schritt in diesem Artikel erreicht haben, haben Sie eine Reihe von ausgefeilten Cloud-Sicherheitssteuerelementen für Microsoft 365-Dienste und-Daten implementiert. Wenn diese Steuerelemente vorhanden sind, können Sie den Datenverkehr von Remotebenutzern direkt an Office 365 weiterleiten. Wenn Sie weiterhin einen VPN-Link für den Zugriff auf andere Anwendungen benötigen, können Sie Ihre Leistung und Benutzerfreundlichkeit erheblich verbessern, indem Sie den geteilten Tunneling implementieren. Wenn Sie eine Einigung in Ihrem einer Organisation erzielen, kann dies innerhalb eines Tages durch ein gut koordiniertes Netzwerkteam erfolgen.
 

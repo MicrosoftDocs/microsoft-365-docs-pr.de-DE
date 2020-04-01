@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: In diesem Artikel wird beschrieben, wie Office 365 vor Phishingangriffen schützt, die gefälschte Absenderdomänen verwenden, d. h.Spoofdomänen. Dies wird erzielt, indem Nachrichten analysiert werden und diejenigen blockiert werden, die weder mithilfe von standardmäßigen E-Mail-Authentifizierungsmethoden noch anderen Absenderzuverlässigkeitsmethoden authentifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl der Phishingangriffe zu reduzieren, denen Organisationen in Office 365 ausgesetzt sind.
-ms.openlocfilehash: a81c22d83e0a476657aa89823e52d3eb6afc4514
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 5d4b9f0c94a68d457aa59b768444746627dffb9d
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033482"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081364"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -61,7 +61,7 @@ Zweitens sorgen gefälschte Nachrichten für Unsicherheit bei Benutzern, die sic
 
 Die obige Nachricht wurde von Microsoft gesendet. Gleichzeitig sind Benutzer es Benutzer jedoch gewohnt, Phishingnachrichten zu erhalten, die Sie dazu bringen sollen, auf einen Link zu klicken und ihre Anmeldeinformationen anzugeben, Malware herunterzuladen oder auf eine Nachricht mit vertraulichen Inhalten zu antworten. Da es schwierig ist, zwischen einer echten Kennwortzurücksetzung und einer gefälschten zu unterscheiden, ignorieren viele Benutzer diese Nachrichten, melden sie als Spam oder senden diese Nachrichten als nicht erkannte Phishing-Versuche an Microsoft zurück.
 
-Um Spoofing zu stoppen, wurden von der E-Mail-Filterungsbranche E-Mail-Authentifizierungsprotokolle wie [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) und [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) entwickelt. DMARC verhindert, dass Spoofing den Absender einer Nachricht überprüft. Dies ist der Absender, den die Benutzer in Ihrem E-Mail-Client sehen (in den obigen Beispielen sind das service.outlook.com, outlook.com und accountprotection.microsoft.com). Darüber hinaus können die Benutzer auch sehen, dass die Domäne SPF oder DKIM überschritten hat. Dies bedeutet, dass die Domäne authentifiziert wurde und daher kein Spoofing erfolgt. Detaillierte Informationen dazu finden Sie im späteren Verlauf dieses Artikels im Abschnitt „*Warum E-Mail-Authentifizierung nicht immer ausreicht, um Spoofing zu stoppen“* 
+Um Spoofing zu stoppen, wurden von der E-Mail-Filterungsbranche E-Mail-Authentifizierungsprotokolle wie [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) und [DMARC](use-dmarc-to-validate-email.md) entwickelt. DMARC verhindert, dass Spoofing den Absender einer Nachricht überprüft. Dies ist der Absender, den die Benutzer in Ihrem E-Mail-Client sehen (in den obigen Beispielen sind das service.outlook.com, outlook.com und accountprotection.microsoft.com). Darüber hinaus können die Benutzer auch sehen, dass die Domäne SPF oder DKIM überschritten hat. Dies bedeutet, dass die Domäne authentifiziert wurde und daher kein Spoofing erfolgt. Detaillierte Informationen dazu finden Sie im späteren Verlauf dieses Artikels im Abschnitt „*Warum E-Mail-Authentifizierung nicht immer ausreicht, um Spoofing zu stoppen“* 
 
 Das Problem ist jedoch, dass die E-Mail-Authentifizierungsdatensätze optional sind, nicht erforderlich. Während Domänen mit Richtlinien für sichere Authentifizierung wie microsoft.com und skype.com vor Spoofing geschützt sind, werden Domänen mit schwächeren oder ohne Authentifizierungsrichtlinien zum Ziel für Spoofing. Im März 2018 verfügen nur 9 % der Domänen der Fortune 500-Unternehmen über Richtlinien für sichere E-Mail-Authentifizierung. Die verbleibenden 91 % können von einem Phisher gefälscht werden und werden, wenn sie nicht von einem E-Mail-Filter anhand einer anderen Richtlinie als solche erkannt werden, an den Endbenutzer übermittelt und können diesen täuschen:
 

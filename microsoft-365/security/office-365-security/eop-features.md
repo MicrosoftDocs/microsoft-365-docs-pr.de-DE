@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032888"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081448"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 
@@ -91,4 +91,4 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |**Sonstige Funktionen**||
 |Georedundantes globales Servernetzwerk|EOP wird in einem weltweiten Rechenzentrennetzwerk ausgeführt, das für eine optimale Verfügbarkeit entworfen wurde. Weitere Informationen finden Sie im Abschnitt "EOP-Rechenzentrum" unter [Exchange Online Protection im Überblick](exchange-online-protection-overview.md).  |
 |Nachrichtenwarteschlangen, wenn lokaler Server keine E-Mails akzeptieren kann|Nachrichten in Stundung verbleiben einen Tag lang in unseren Warteschlangen. Wiederholungsversuche hängen davon ab, welcher Fehler vom E-Mail-System des Empfängers zurückgegeben wird. Das Wiederholungsintervall für die Übertragung von Nachrichten beträgt im Durchschnitt 5 Minuten. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten](eop-queued-deferred-and-bounced-messages-faq.md).|
-|Office 365-Nachrichtenverschlüsselung als Add-On-Dienst erhältlich|Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
+|Office 365-Nachrichtenverschlüsselung als Add-On-Dienst erhältlich|Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](../../compliance/encryption.md).|

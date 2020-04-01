@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenübermittlung und Einblicke im Security & Compliance Center
+title: Nachrichtenfluss-Einblicke im Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über das Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082929"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081436"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenübermittlung und Einblicke im Security & Compliance Center
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
 Administratoren können das Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Trends, Einblicke zu ermitteln und Aktionen zum Beheben von Problemen im Zusammenhang mit dem Nachrichtenfluss in Ihrer Office 365 Organisation durchführen.
 
@@ -64,7 +64,7 @@ Das Nachrichtenfluss-Dashboard steht für Folgendes zur Verfügung:
 
 Weitere Informationen zur Rolle Office 365 globalen Administrators finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Informationen zum Zuweisen von Sicherheits & Compliance Center-Rollen für Benutzer finden Sie unter [Gewähren von Benutzern Zugriff auf das Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+Informationen zum Zuweisen von Sicherheits & Compliance Center-Rollen für Benutzer finden Sie unter [Gewähren von Benutzern Zugriff auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>So finden Sie das Nachrichtenfluss-Dashboard
 

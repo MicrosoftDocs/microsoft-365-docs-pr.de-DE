@@ -16,22 +16,22 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Die Filterung ausgehender Spamnachrichten ist immer aktiviert, wenn Sie den Dienst für das Senden ausgehender E-Mails verwenden und dadurch Organisationen, die den Dienst nutzen, und ihre jeweiligen Empfänger schützen.
-ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3800134855d42870992105e66313100ee0d77cd5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893908"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081472"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>Konfigurieren der ausgehenden Spamfilterung in Office 365
 
-Wenn Sie ein Office 365er Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, werden ausgehende e-Mail-Nachrichten, die über EoP gesendet werden, automatisch auf Spam und ungewöhnlich überprüft. sendende Aktivität.
+Wenn Sie ein Office 365 Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, werden ausgehende e-Mail-Nachrichten, die über EoP gesendet werden, automatisch auf Spam und ungewöhnliche Sendeaktivitäten überprüft.
 
 Ausgehende Spamnachrichten von einem Benutzer in Ihrer Organisation weisen in der Regel auf ein kompromittiertes Konto hin. Verdächtige ausgehende Nachrichten werden als Spam gekennzeichnet (unabhängig von der Spam Konfidenz Stufe oder der SCL-Bewertung) und werden über den [risikoreichen Zustellungs Pool](high-risk-delivery-pool-for-outbound-messages.md) weitergeleitet, um die Reputation des Diensts zu schützen (also Office 365 Quell-e-Mail-Server von IP-Sperrlisten fernzuhalten). Administratoren werden automatisch über verdächtige ausgehende e-Mail-Aktivitäten und blockierte Benutzer über [Warnungsrichtlinien](../../compliance/alert-policies.md)benachrichtigt.
 
-EoP verwendet ausgehende Spam Richtlinien als Teil der gesamten Abwehr von Spam in Ihrer Organisation. Weitere Informationen finden Sie unter [Anti-Spam Protection in Office 365](anti-spam-protection.md).
+EoP verwendet ausgehende Spam Richtlinien als Teil der gesamten Abwehr von Spam in Ihrer Organisation. Weitere Informationen finden Sie unter [Antispamschutz in Office 365](anti-spam-protection.md).
 
-Administratoren können die standardmäßige ausgehende Spam Richtlinie anzeigen, bearbeiten und konfigurieren (jedoch nicht löschen). Um eine höhere Granularität zu erzielen, können Sie auch benutzerdefinierte ausgehende Spam Richtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie, aber Sie können die Priorität (Ausführungsreihenfolge) Ihrer benutzerdefinierten Richtlinien ändern.
+Administratoren können die standardmäßige ausgehende Spam Richtlinie anzeigen, bearbeiten und konfigurieren (jedoch nicht löschen). Um eine höhere Granularität zu erzielen, können Sie auch benutzerdefinierte ausgehende Spam Richtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
 Sie können ausgehende Spam Richtlinien im Office 365 Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Office 365 Kunden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
 
@@ -65,19 +65,19 @@ Jede Organisation verfügt über eine integrierte ausgehende Spam Richtlinie mit
 
 - Die Richtlinie für ausgehende Spamfilter mit dem Namen Default wird auf alle Empfänger in der Organisation angewendet, obwohl der Richtlinie keine ausgehende Spamfilter Regel (Empfängerfilter) zugeordnet ist.
 
-- Die Richtlinie mit dem Namen Default hat den benutzerdefinierten Prioritätswert **niedrigste** , den Sie nicht ändern können (die Richtlinie wird immer zuletzt angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer eine höhere Priorität als die Richtlinie "Default".
+- Die Richtlinie namens „Standard“ weist den benutzerdefinierten Prioritätswert **Niedrigster** auf, der nicht geändert werden kann (die Richtlinie wird immer als letztes angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer Vorrang vor der Richtlinie „Standard“.
 
-- Die Richtlinie mit dem Namen Default ist die Standardrichtlinie (die **IsDefault** - `True`Eigenschaft hat den Wert), und die Standardrichtlinie kann nicht gelöscht werden.
+- Die Richtlinie namens „Standard“ ist die Standardrichtlinie (die **IsDefault**-Eigenschaft hat den Wert `True`), und die Standardrichtlinie kann nicht gelöscht werden.
 
 Um die Effektivität der ausgehenden Spamfilterung zu verbessern, können Sie benutzerdefinierte ausgehende Spam Richtlinien mit strengeren Einstellungen erstellen, die auf bestimmte Benutzer oder Benutzergruppen angewendet werden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Antispameinstellungen** wechseln möchten, verwenden <https://protection.office.com/antispam>Sie.
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit einer eigenständigen Exchange Online Schutz-PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Zum Hinzufügen, ändern und Löschen von ausgehenden Spam Richtlinien müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Für den schreibgeschützten Zugriff auf ausgehende Spam Richtlinien müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Zum Hinzufügen, ändern und Löschen von ausgehenden Spam Richtlinien müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Für den schreibgeschützten Zugriff auf ausgehende Spam Richtlinien müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Unsere empfohlenen Einstellungen für ausgehende Spam Richtlinien finden Sie unter [EoP Outbound Spamfilter Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -87,13 +87,13 @@ Um die Effektivität der ausgehenden Spamfilterung zu verbessern, können Sie be
 
 Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Security & Compliance Center werden die Spamfilter Regel und die zugehörige Spamfilter Richtlinie gleichzeitig mit dem gleichen Namen für beide erstellt.
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam**.
+1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
 2. Klicken Sie auf der Seite **Anti-Spam-Einstellungen** auf **ausgehende Richtlinie erstellen**.
 
 3. Konfigurieren Sie in der geöffneten **ausgehenden Spamfilter Richtlinie** , die geöffnet wird, die folgenden Einstellungen:
 
-   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für die Richtlinie ein.
+   - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
 
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
@@ -105,9 +105,9 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
      b. Klicken Sie auf **Personen hinzufügen**. Im Flyout **Empfänger hinzufügen oder entfernen** :
 
-     c. Geben Sie die e-Mail-Adresse des Absenders ein. Sie können mehrere e-Mail-Adressen durch Semikolons getrennt angeben (;) oder ein Empfänger pro Reihe.
+     c. Geben Sie die E-Mail-Adresse des Absenders ein. Sie können mehrere e-Mail-Adressen durch Semikolons getrennt angeben (;) oder ein Empfänger pro Reihe.
 
-     d. Klicken Sie auf ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) zum Hinzufügen der Empfänger.
+     d. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) zum Hinzufügen der Empfänger.
 
         Wiederholen Sie diese Schritte so oft wie nötig.
 
@@ -128,9 +128,9 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
      b. Klicken Sie auf **Personen hinzufügen**. Im Flyout **Empfänger hinzufügen oder entfernen** :
 
-     c. Geben Sie die e-Mail-Adresse des Absenders ein. Sie können mehrere e-Mail-Adressen durch Semikolons getrennt angeben (;) oder ein Empfänger pro Reihe.
+     c. Geben Sie die E-Mail-Adresse des Absenders ein. Sie können mehrere e-Mail-Adressen durch Semikolons getrennt angeben (;) oder ein Empfänger pro Reihe.
 
-     d. Klicken Sie auf ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) zum Hinzufügen der Empfänger.
+     d. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) zum Hinzufügen der Empfänger.
 
         Wiederholen Sie diese Schritte so oft wie nötig.
 
@@ -167,23 +167,23 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
 6. Erforderlich Erweitern Sie den Abschnitt **angewendet für** , um die internen Absender zu identifizieren, auf die die Richtlinie angewendet wird.
 
-    Sie können nur einmal eine Bedingung oder Ausnahme verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Mehrere Werte der gleichen Bedingung oder Ausnahme Verwendung oder Logik (beispielsweise _ \<sender1\> _ oder _ \<sender2\>_). Unterschiedliche Bedingungen oder Ausnahmen: Verwendung und Logik (Beispiels _ \<Weise\> sender1_ und _ \<Mitglied von Gruppe\>1_).
+    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Mehrere Werte der gleichen Bedingung oder Ausnahme Verwendung oder Logik (beispielsweise _ \<sender1\> _ oder _ \<sender2\>_). Unterschiedliche Bedingungen oder Ausnahmen: Verwendung und Logik (Beispiels _ \<Weise\> sender1_ und _ \<Mitglied von Gruppe\>1_).
 
-    Am einfachsten ist es, dreimal auf **Bedingung hinzufügen** zu klicken, um alle verfügbaren Bedingungen anzuzeigen. Sie können auf ![Schaltfläche](../../media/scc-remove-icon.png) entfernen klicken, um Bedingungen zu entfernen, die Sie nicht konfigurieren möchten.
+    Um alle verfügbaren Bedingungen anzuzeigen, ist es am einfachsten, wenn Sie auf **Bedingung hinzufügen** klicken. Sie können auf ![Schaltfläche „Entfernen“](../../media/scc-remove-icon.png) klicken, um Bedingungen zu entfernen, die Sie nicht konfigurieren möchten.
 
-    - **Die Absenderdomäne lautet**: gibt Absender in einer oder mehreren konfigurierten akzeptierten Domänen in Office 365 an. Klicken Sie in das Feld **Add a Tag** , um eine Domäne anzuzeigen und auszuwählen. Klicken Sie erneut auf das Feld **Tag hinzufügen** , um zusätzliche Domänen auszuwählen, wenn mehr als eine Domäne verfügbar ist.
+    - **Die Absenderdomäne lautet**: gibt Absender in einer oder mehreren konfigurierten akzeptierten Domänen in Office 365 an. Klicken Sie in das Feld **Tag hinzufügen**, um eine Domäne anzuzeigen und auszuwählen. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Domänen auszuwählen, falls mehrere Domänen verfügbar sind.
 
-    - **Absender lautet**: gibt einen oder mehrere Benutzer in Ihrer Organisation an. Klicken Sie in das **Add a-Tag** , und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen** , um weitere Absender auszuwählen.
+    - **Absender lautet**: gibt einen oder mehrere Benutzer in Ihrer Organisation an. Klicken Sie auf **Tag hinzufügen**, und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen** , um weitere Absender auszuwählen.
 
-    - **Der Absender ist Mitglied von**: gibt eine oder mehrere Gruppen in Ihrer Organisation an. Klicken Sie in das **Add a-Tag** , und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen** , um weitere Absender auszuwählen.
+    - **Der Absender ist Mitglied von**: gibt eine oder mehrere Gruppen in Ihrer Organisation an. Klicken Sie auf **Tag hinzufügen**, und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen** , um weitere Absender auszuwählen.
 
-    - **Außer if**: Klicken Sie zum Hinzufügen von Ausnahmen für die Regel dreimal auf **Bedingung hinzufügen** , um alle verfügbaren Ausnahmen anzuzeigen. Die Einstellungen und das Verhalten sind genau wie die Bedingungen.
+    - **Außer wenn**: Klicken Sie zum Angeben von Ausnahmen für die Regel dreimal auf **Bedingung hinzufügen**, um alle verfügbaren Ausnahmen anzuzeigen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
 
 7. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Verwenden des Security & Compliance Center zum Anzeigen von ausgehenden Spam Richtlinien
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam**.
+1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
 2. Klicken Sie ![auf der Seite **Anti-Spam-Einstellungen** auf](../../media/scc-expand-icon.png) Symbol erweitern, um eine ausgehende Spam Richtlinie zu erweitern:
 
@@ -195,7 +195,7 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
 ## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a>Verwenden des Security & Compliance Center zum Ändern von Richtlinien für ausgehende Spamnachrichten
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam**.
+1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
 2. Klicken Sie ![auf der Seite **Anti-Spam-Einstellungen** auf](../../media/scc-expand-icon.png) Symbol erweitern, um eine ausgehende Spam Richtlinie zu erweitern:
 
@@ -209,33 +209,33 @@ Bei benutzerdefinierten ausgehenden Spam Richtlinien sind die verfügbaren Einst
 
 Für die standardmäßige ausgehende Spam Richtlinie mit dem Namen " **ausgehende Spamfilter Richtlinie**" ist der Abschnitt " **angewendet für** " nicht verfügbar (die Richtlinie gilt für alle), und Sie können die Richtlinie nicht umbenennen.
 
-Um eine Richtlinie zu aktivieren oder zu deaktivieren, legen Sie die Prioritätsreihenfolge der Richtlinie fest oder konfigurieren Sie die Endbenutzer-Quarantänebenachrichtigungen in den folgenden Abschnitten.
+Informationen zum Aktivieren oder Deaktivieren einer Richtlinie, zum Festlegen der Prioritätsreihenfolge der Richtlinien oder zum Konfigurieren der Quarantänebenachrichtigungen für Endbenutzer finden Sie in den folgenden Abschnitten.
 
 ### <a name="enable-or-disable-outbound-spam-policies"></a>Aktivieren oder Deaktivieren von ausgehenden Spam Richtlinien
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam**.
+1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
 2. Klicken Sie ![auf der Seite **Anti-Spam-Einstellungen** auf](../../media/scc-expand-icon.png) Symbol erweitern, um eine benutzerdefinierte Richtlinie zu erweitern, die Sie erstellt haben (der Wert in der Spalte **Typ** ist eine **benutzerdefinierte ausgehende Spam Richtlinie**).
 
-3. Beachten Sie in den erweiterten Richtliniendetails, die angezeigt werden, den Wert in der Spalte " **ein** ".
+3. Achten Sie in den angezeigten erweiterten Richtliniendetails auf den Wert in der Spalte **Ein**.
 
-   Bewegen Sie die Umschaltfläche nach links, um die Richtlinie zu deaktivieren: ![Abschalten](../../media/scc-toggle-off.png)
+   Schieben Sie die Umschaltfläche nach links, um die Richtlinie zu deaktivieren: ![Umschaltfläche aus](../../media/scc-toggle-off.png)
 
-   Bewegen Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Einschalten](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Umschaltfläche ein](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
 
 Sie können die standardmäßige ausgehende Spam Richtlinie nicht deaktivieren.
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>Festlegen der Priorität von benutzerdefinierten ausgehenden Spam Richtlinien
 
-Standardmäßig erhalten ausgehende Spam Richtlinien eine Priorität, die auf der Reihenfolge basiert, in der Sie erstellt wurden (neuere Policen haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in Prioritätsreihenfolge verarbeitet (Richtlinien mit höherer Priorität werden vor Richtlinien mit niedrigerer Priorität verarbeitet). Zwei Richtlinien können nicht dieselbe Priorität haben.
+Standardmäßig erhalten ausgehende Spam Richtlinien eine Priorität, die auf der Reihenfolge basiert, in der Sie erstellt wurden (neuere Policen haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Zwei Richtlinien können nicht dieselbe Priorität haben.
 
 Benutzerdefinierte ausgehende Spam Richtlinien werden in der Reihenfolge angezeigt, in der Sie verarbeitet werden (die erste Richtlinie hat den **Prioritäts** Wert 0). Bei der standardmäßigen ausgehenden Spam Richtlinie mit dem Namen " **ausgehende Spamfilter Richtlinie** " ist der Prioritätswert **niedrig**und kann nicht geändert werden.
 
-Um die Priorität einer Richtlinie zu ändern, müssen Sie die Richtlinie in der Liste nach oben oder unten verschoben (Sie können die **Prioritäts** Nummer im Security & Compliance Center nicht direkt ändern).
+Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität**-Wert im Security & Compliance Center nicht direkt ändern).
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam**.
+1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
-2. Suchen Sie auf der Seite **Antispameinstellungen** nach den Richtlinien, bei denen es sich bei dem Wert in der Spalte **Typ** um eine **benutzerdefinierte ausgehende Spam Richtlinie**handelt. Beachten Sie die Werte in der Spalte **Priority** :
+2. Suchen Sie auf der Seite **Antispameinstellungen** nach den Richtlinien, bei denen es sich bei dem Wert in der Spalte **Typ** um eine **benutzerdefinierte ausgehende Spam Richtlinie**handelt. Beachten Sie die Werte in der Spalte **Priorität**:
 
    - Die benutzerdefinierte Richtlinie für ausgehende Spam mit der höchsten ![Priorität hat den](../../media/ITPro-EAC-DownArrowIcon.png) Abwärtspfeil-Symbolwert **0**.
 
@@ -243,19 +243,19 @@ Um die Priorität einer Richtlinie zu ändern, müssen Sie die Richtlinie in der
 
    - Wenn Sie drei oder mehr benutzerdefinierte ausgehende Spam Richtlinien haben, haben die Richtlinien zwischen der höchsten und ![der niedrigsten Priorität](../../media/ITPro-EAC-UpArrowIcon.png)![Werte nach oben](../../media/ITPro-EAC-DownArrowIcon.png) Pfeilsymbol nach unten Pfeil ![Symbol **n** (](../../media/ITPro-EAC-UpArrowIcon.png)![beispielsweise nach](../../media/ITPro-EAC-DownArrowIcon.png) oben Pfeilsymbol nach unten Pfeilsymbol **2**).
 
-3. Click ![Aufwärtspfeil (Symbol)](../../media/ITPro-EAC-UpArrowIcon.png) oder ![Abwärtspfeil (Symbol)](../../media/ITPro-EAC-DownArrowIcon.png) um die benutzerdefinierte Richtlinie für ausgehende Spam in der Liste Priorität nach oben oder nach unten zu verlagern.
+3. Klicken Sie auf ![Pfeil-nach-oben-Symbol](../../media/ITPro-EAC-UpArrowIcon.png) oder ![Pfeil-nach-unten-Symbol,](../../media/ITPro-EAC-DownArrowIcon.png) um die benutzerdefinierte Richtlinie für ausgehende Spam in der Liste Priorität nach oben oder nach unten zu verlagern.
 
 ## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>Verwenden des Security & Compliance Center zum Entfernen von ausgehenden Spam Richtlinien
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam**.
+1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
 2. Klicken Sie ![auf der Seite **Anti-Spam-Einstellungen** auf](../../media/scc-expand-icon.png) Symbol erweitern, um die benutzerdefinierte Richtlinie zu erweitern, die Sie löschen möchten (die Spalte **Typ** ist eine **benutzerdefinierte ausgehende Spam Richtlinie**).
 
 3. Klicken Sie in den angezeigten erweiterten Richtliniendetails auf **Richtlinie löschen**.
 
-4. Klicken Sie im angezeigten Warndialogfeld auf **Ja** .
+4. Klicken Sie im angezeigten Dialogfeld mit der Warnung auf **Ja**.
 
-Sie können die Standardrichtlinie nicht entfernen.
+Die Standardrichtlinie kann nicht entfernt werden.
 
 ## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a>Verwenden von Exchange Online PowerShell oder Exchange Online Protection PowerShell zum Konfigurieren von ausgehenden Spam Richtlinien
 
@@ -311,7 +311,7 @@ In diesem Beispiel wird eine neue ausgehende Spamfilter Regel namens "Contoso Ex
 
 - Die Richtlinie für ausgehende Spamfilter mit dem Namen "Contoso Executives" ist der Regel zugeordnet.
 
-- Die Regel gilt für Mitglieder der Gruppe "Contoso Executives Group".
+- Die Regel gilt für Mitglieder der Gruppe mit dem Namen „Contoso Executive Group“.
 
 ```PowerShell
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
@@ -355,7 +355,7 @@ Führen Sie den folgenden Befehl aus, um eine Zusammenfassungsliste aller ausgeh
 Get-HostedOutboundSpamFilterRule
 ```
 
-Führen Sie die folgenden Befehle aus, um die Liste durch aktivierte oder deaktivierte Regeln zu filtern:
+Führen Sie die folgenden Befehle aus, um die Liste nach aktivierten oder deaktivierten Regeln zu filtern:
 
 ```PowerShell
 Get-HostedOutboundSpamFilterRule -State Disabled
@@ -433,7 +433,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [enable-Ho
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Festlegen der Priorität von ausgehenden spamfilterregeln
 
-Der höchste Prioritätswert, den Sie für eine Regel festlegen können, ist 0. Der niedrigste Wert, den Sie festlegen können, hängt von der Anzahl von Regeln ab. Wenn Sie z. B. fünf Regeln haben, können Sie die Prioritätswerte 0 bis 4 verwenden. Das Ändern der Priorität einer vorhandenen Regel kann sich entsprechend auf andere Regeln auswirken. Wenn Sie beispielsweise fünf benutzerdefinierte Regeln (Prioritäten 0 bis 4) haben und die Priorität einer Regel auf 2 ändern, wird die vorhandene Regel mit Priorität 2 in Priorität 3 geändert, und die Regel mit der Priorität 3 wird in Priorität 4 geändert.
+Der höchste Prioritätswert, den Sie für eine Regel festlegen können, ist 0. Der niedrigste Wert, den Sie festlegen können, hängt von der Anzahl von Regeln ab. Wenn Sie z. B. fünf Regeln haben, können Sie die Prioritätswerte 0 bis 4 verwenden. Das Ändern der Priorität einer vorhandenen Regel kann sich entsprechend auf andere Regeln auswirken. Wenn Sie z. B. fünf benutzerdefinierte Regeln haben (Priorität 0 bis 4) und die Priorität einer Regel in 2 ändern, erhält die vorhandene Regel mit Priorität 2 die Priorität 3, und die Regel mit Priorität 3 erhält Priorität 4.
 
 Verwenden Sie die folgende Syntax, um die Priorität einer ausgehenden Spamfilter Regel in PowerShell festzulegen:
 
@@ -489,10 +489,9 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).
 
-
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränktem Zugriff nach dem Senden von Spam-E-Mails](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[Entfernen von blockierten Benutzern aus dem Portal "Eingeschränkte Benutzer" in Office 365](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Pool für besonders riskante Zustellungen für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md)
 

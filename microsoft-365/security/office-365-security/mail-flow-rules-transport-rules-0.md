@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Office 365 Organisation fließen.
-ms.openlocfilehash: 42b55893a9884b547a0d2d36e901169153d290d7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599022"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081424"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
@@ -126,6 +126,6 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 
 [Verwenden von Nachrichtenfluss Regeln zum Überprüfen von Nachrichtenanlagen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[E-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
+[E-Mail-Verschlüsselung in Office 365](../../compliance/email-encryption.md)
 
 [Journal-, Transport- und Posteingangsregelgrenzen](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

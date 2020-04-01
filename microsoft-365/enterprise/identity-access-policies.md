@@ -15,12 +15,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 803edd6fdf3d711a67b2ba4ff2e35f15c683c414
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+- remotework
+ms.openlocfilehash: 8b5cb7d8d8b16fea1c1bef44e477dfd43a79a3d8
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036349"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081322"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -360,6 +361,6 @@ So erfordern Sie die Kompatibilität für alle Geräte:
 Wählen Sie beim Erstellen dieser Richtlinie keine Plattformen aus. Dadurch werden konforme Geräte erzwungen.
 
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 [Weitere Informationen zu Richtlinienempfehlungen zum Schutz von E-Mails](secure-email-recommended-policies.md)

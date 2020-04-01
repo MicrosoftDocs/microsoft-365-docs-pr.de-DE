@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe für die durchgeführten Phishing-Nachrichten zu identifizieren und zu verhindern, dass mehr Phishing-Nachrichten in der Zukunft vermieden werden.
-ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033650"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081208"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Optimieren des Schutzes gegen Phishing in Office 365
 
@@ -45,7 +45,7 @@ Das Melden von Phishing-Nachrichten ist hilfreich beim Optimieren der Filter, di
 
 Sie können die Kopfzeilen der Phishing-Nachricht überprüfen, um festzustellen, ob Sie selbst etwas tun können, um zu verhindern, dass mehr Phishing-Nachrichten durchkommen. Das bedeutet, dass die Überprüfung der Nachrichtenkopfzeilen Ihnen helfen kann, alle Einstellungen in Ihrer Organisation zu identifizieren, die für das Zulassen von Phishing-Nachrichten in zuständig waren.
 
-Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in den Nachrichtenkopfzeilen für Hinweise auf übersprungene Spam-oder Phishing-Filterung im Wert Spamfilter Urteil (SFV) überprüfen. Nachrichten, die die Filterung überspringen, `SCL:-1`haben einen Eintrag von, was bedeutet, dass eine Ihrer Einstellungen diese Nachricht durch durch außer Kraft setzen der Spam-oder Phishing-Urteile erlaubt, die vom Dienst bestimmt wurden. Weitere Informationen zum Abrufen von Nachrichtenkopfzeilen und der vollständigen Liste aller verfügbaren Anti-Spam-und Anti-Phishing-Nachrichtenkopfzeilen finden Sie unter [Antispam-Nachrichtenkopfzeilen](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers).
+Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in den Nachrichtenkopfzeilen für Hinweise auf übersprungene Spam-oder Phishing-Filterung im Wert Spamfilter Urteil (SFV) überprüfen. Nachrichten, die die Filterung überspringen, `SCL:-1`haben einen Eintrag von, was bedeutet, dass eine Ihrer Einstellungen diese Nachricht durch durch außer Kraft setzen der Spam-oder Phishing-Urteile erlaubt, die vom Dienst bestimmt wurden. Weitere Informationen zum Abrufen von Nachrichtenkopfzeilen und der vollständigen Liste aller verfügbaren Anti-Spam-und Anti-Phishing-Nachrichtenkopfzeilen finden Sie unter [Antispam-Nachrichtenkopfzeilen in Office 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Bewährte Methoden, um geschützt zu bleiben
 
@@ -61,7 +61,7 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
 
   - Stellen Sie sicher, dass Ihr SPF-Eintrag _alle_ e-Mail-Quellen für Absender in Ihrer Domäne identifiziert (Drittanbieterdienste nicht vergessen!).
 
-  - Verwenden Sie "harter Fehler" (\-), um sicherzustellen, dass nicht autorisierte Absender von e-Mail-Systemen abgelehnt werden, die dafür konfiguriert sind. Sie können [Spoof Intelligence](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence) verwenden, um die Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Drittanbieter-Absender in ihren SPF-Eintrag aufnehmen können.
+  - Verwenden Sie "harter Fehler" (\-), um sicherzustellen, dass nicht autorisierte Absender von e-Mail-Systemen abgelehnt werden, die dafür konfiguriert sind. Sie können [Spoof Intelligence](learn-about-spoof-intelligence.md) verwenden, um die Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Drittanbieter-Absender in ihren SPF-Eintrag aufnehmen können.
 
   Konfigurationsanweisungen finden Sie unter:
   
@@ -71,8 +71,8 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
 
   - [Verwenden von DMARC zum Validieren von E-Mails in Office 365](use-dmarc-to-validate-email.md)
 
-- Wann immer möglich, wird empfohlen, e-Mails für Ihre Domäne direkt an Office 365 zu übertragen. Mit anderen Worten, richten Sie den MX-Eintrag Ihrer Office 365 Domäne auf Office 365. Exchange Online Protection (EoP) ist in der Lage, den besten Schutz für Ihre Cloud-Benutzer bereitzustellen, wenn Ihre e-Mails direkt an Office 365 übermittelt werden. Wenn Sie vor EoP ein e-Mail-Hygienesystem eines Drittanbieters verwenden müssen, stellen Sie sicher, dass Sie die Anleitung [hier](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)befolgt haben.
+- Wann immer möglich, wird empfohlen, e-Mails für Ihre Domäne direkt an Office 365 zu übertragen. Mit anderen Worten, richten Sie den MX-Eintrag Ihrer Office 365 Domäne auf Office 365. Exchange Online Protection (EoP) ist in der Lage, den besten Schutz für Ihre Cloud-Benutzer bereitzustellen, wenn Ihre e-Mails direkt an Office 365 übermittelt werden. Wenn Sie ein e-Mail-Hygienesystem eines Drittanbieters vor EoP verwenden müssen, verwenden Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Mehrstufige Authentifizierung (MFA) ist eine wirklich gute Möglichkeit, um kompromittierte Konten zu verhindern. Sie sollten die Aktivierung von MFA für alle Ihre Benutzer unbedingt in Betracht gezogen. Für einen phasenweisen Ansatz beginnen Sie damit, dass Sie MFA für Ihre sensibelsten Benutzer (Administratoren, Führungskräfte usw.) aktivieren, bevor Sie MFA für alle aktivieren. Anweisungen finden Sie unter [Einrichten der mehr](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)stufigen Authentifizierung.
+- Mehrstufige Authentifizierung (MFA) ist eine wirklich gute Möglichkeit, um kompromittierte Konten zu verhindern. Sie sollten die Aktivierung von MFA für alle Ihre Benutzer unbedingt in Betracht gezogen. Für einen phasenweisen Ansatz beginnen Sie damit, dass Sie MFA für Ihre sensibelsten Benutzer (Administratoren, Führungskräfte usw.) aktivieren, bevor Sie MFA für alle aktivieren. Anweisungen finden Sie unter [Einrichten der mehr](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)stufigen Authentifizierung.
 
 - Weiterleitungsregeln an externe Empfänger werden häufig von Angreifern zum Extrahieren von Daten verwendet. Verwenden Sie die Informationen zur **Überarbeitung von Post Fach Weiterleitungsregeln** in [Microsoft Secure Score](../mtp/microsoft-secure-score.md) , um Weiterleitungsregeln an externe Empfänger zu finden und sogar zu verhindern. Weitere Informationen finden Sie unter [mildernde Client-externe Weiterleitungsregeln mit Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

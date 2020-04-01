@@ -15,12 +15,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dd35bf0d7439a19d7b1562e7a0d0681679b34c36
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+- remotework
+ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035111"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081292"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -62,6 +63,6 @@ Mit den neuen Funktionen für die Office 365 Nachrichtenverschlüsselung (OM), d
 
 Weitere Informationen finden Sie unter [Einrichten neuer Office 365 Nachrichten Verschlüsselungsfunktionen](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 [Weitere Informationen zu Richtlinienempfehlungen zum Schutz von SharePoint-Websites und -Dokumenten](sharepoint-file-access-policies.md)
