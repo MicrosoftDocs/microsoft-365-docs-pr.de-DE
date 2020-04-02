@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Office 365 im Microsoft 365-Verwaltungszentrum hinzu, indem Sie einen DNS-Eintrag bei Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: 86ca8f986624ad37f780961cb58923ea0a1b2308
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: a6ef611ec210bbfb2299b6d41edb7d6410d50073
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857379"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116014"
 ---
 # <a name="add-a-domain-to-office-365"></a>Hinzufügen einer Domäne zu Office 365
 
@@ -67,7 +67,7 @@ ms.locfileid: "42857379"
 
 ::: moniker-end
     
-2. Wechseln Sie zur Seite **Einstellungen** > **Domänen**. 
+2. Wechseln Sie zur Seite **Setup** > **Domänen** . 
 
 3. Wählen Sie **Domäne hinzufügen** aus.
     
@@ -112,4 +112,4 @@ ms.locfileid: "42857379"
 
 [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Hilfe zu Office 365-Domänen erhalten](../get-help-with-domains/get-help-with-domains.yml)
+[Hilfe zu Office 365-Domänen erhalten](../get-help-with-domains/get-help-with-domains.md)
