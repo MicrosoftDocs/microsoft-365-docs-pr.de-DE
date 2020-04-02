@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Office 365-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Office 365-Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: aa73feecbfaa830b2297a5c64f653c4da4d4b325
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079437"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106037"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
+
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Office 365-Aufbewahrungsbezeichnungen verwalten können, und zwar durch automatisches Anwenden von Bezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung. Die Funktion für die automatische Anwendung verwendet die Dokumentklassifizierung mithilfe von SharePoint-Metadaten. Das in diesem Artikel beschriebene Szenario basiert auf produktbezogenen Dokumenten, für andere Szenarios können jedoch dieselben Konzepte verwendet werden. In der Öl- und Gasindustrie können Sie beispielsweise den Lebenszyklus von Dokumenten verwalten, die sich auf physische Vermögenswerte wie Ölplattformen, Bohrlochprotokolle oder Produktionslizenzen beziehen. In der Finanzdienstleistungsbranche können Sie Dokumente verwalten, die sich auf Bankkonten, Hypotheken oder Versicherungsverträge beziehen. Im öffentlichen Sektor können Sie Dokumente zu Baugenehmigungen oder Steuerformularen verwalten.
 

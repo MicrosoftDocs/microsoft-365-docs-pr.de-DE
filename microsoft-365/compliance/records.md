@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Strategie für die Datensatzverwaltung in Ihrer Office 365- oder Microsoft-Organisation implementieren möchten, verwenden Sie Aufbewahrungsbezeichnungen, um Inhalte als Datensatz zu kennzeichnen. Veröffentlichen oder wenden Sie dann die Aufbewahrungsbezeichnungen für den Datensatz automatisch an.
-ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586726"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106143"
 ---
 # <a name="overview-of-records"></a>Übersicht über die Datensätze
+
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Die Verwaltung von Datensätzen in Microsoft 365 hilft einer Organisation bei der Einhaltung Ihrer Unternehmensrichtlinien, gesetzlicher und regulatorischer Verpflichtungen bei gleichzeitiger Verringerung der Risiken und der gesetzlichen Haftung.
 
@@ -79,10 +81,6 @@ Wenn Sie eine Aufbewahrungsbezeichnung erstellen, haben Sie die Möglichkeit, di
    ![Aktivieren Sie das Kontrollkästchen „Bezeichnung zum Klassifizieren von Inhalt als „Datensatz“ verwenden“](../media/recordversioning6.png)
 
 3. [Veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) Sie oder [wenden Sie](labels.md#applying-a-retention-label-automatically-based-on-conditions) die Aufbewahrungsbezeichnung auf SharePoint-Websites und/ oder OneDrive-Konten automatisch an.
-
-> [!NOTE]
-> Das Deklarieren eines Elements als Datensatz mithilfe von [Aufbewahrungsbezeichnungen](labels.md) erfordert eine Office 365 Enterprise E5-Lizenz oder ähnlich für jeden Benutzer, der über die Berechtigung zum Bearbeiten von Inhalten an diesem Speicherort verfügt. Benutzer, die schreibgeschützten Zugriff haben, benötigen keine Lizenz.
-
 
 ### <a name="applying-a-retention-label-to-content"></a>Anwenden einer Aufbewahrungsbezeichnung auf Inhalte
 
