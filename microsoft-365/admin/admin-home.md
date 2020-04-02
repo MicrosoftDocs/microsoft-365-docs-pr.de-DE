@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Erfahren Sie mehr über die Ressourcen, die Microsoft 365-Administratoren zur Verfügung stehen.
 ms.custom: okr_smb
-ms.openlocfilehash: e38c15d0e68e908bada941443b019e9f243c7f11
-ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
+ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43075596"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105693"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin-Hilfecenter
 
@@ -149,7 +149,7 @@ Erfahren Sie mehr über die Ressourcen, die Administratoren zur Verfügung stehe
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/microsoft-365/#pivot=home&panel=home-all">
+        <a href="https://docs.microsoft.com/microsoft-365">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land/Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln oder einen Microsoft Store besuchen.
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352946"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106060"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe
 
@@ -95,7 +95,7 @@ Das technische Supportteam von 21Vianet für Office 365 behebt nur Probleme im Z
 
 ### <a name="community-and-self-service-support-options"></a>Community- und Self-Service-Support
 
-Self-Service-Support ist für alle Benutzer von Office 365 betrieben von 21Vianet. Er umfasst Fehlerbehandlungstools und Videos, Hilfeartikel und Videos sowie Foren und Wikis in der [Office 365-Community](https://go.microsoft.com/fwlink/p/?linkid=842838). Weitere Informationen zu Self-Service-Ressourcen finden Sie unter[Erfahren Sie mehr über Office 365, betrieben von 21Vianet](/services-in-china/services-in-china.md).
+Self-Service-Support ist für alle Benutzer von Office 365 betrieben von 21Vianet. Er umfasst Fehlerbehandlungstools und Videos, Hilfeartikel und Videos sowie Foren und Wikis in der [Office 365-Community](https://go.microsoft.com/fwlink/p/?linkid=842838). Weitere Informationen zu Self-Service-Ressourcen finden Sie unter[Erfahren Sie mehr über Office 365, betrieben von 21Vianet](services-in-china/services-in-china.md).
 
 ### <a name="pre-sales-support"></a>Support für den Bereich Presales
 

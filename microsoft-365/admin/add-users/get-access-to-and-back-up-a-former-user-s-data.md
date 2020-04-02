@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Hier erfahren Sie, wie Sie die Dateien und e-Mails eines Mitarbeiters beibehalten, wenn die Person Ihre Organisation verlässt.
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353196"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105759"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Zugreifen auf die und Sichern der Daten eines ehemaligen Mitarbeiters
 
@@ -102,11 +102,15 @@ Als globaler Administrator können Sie sich selbst Zugriff auf die Inhalte in de
 
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a> als globaler Administrator oder SharePoint-Administrator an. 
 
+    Wenn Sie eine Nachricht erhalten, dass Sie keine Berechtigung für den Zugriff auf das Admin Center haben, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> als globaler Administrator oder SharePoint-Administrator an.
+
+    Wenn Sie eine Nachricht erhalten, dass Sie keine Berechtigung für den Zugriff auf das Admin Center haben, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
 
 ::: moniker-end
 
@@ -114,9 +118,9 @@ Als globaler Administrator können Sie sich selbst Zugriff auf die Inhalte in de
 
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> als globaler Administrator oder SharePoint-Administrator an.
 
-::: moniker-end
+    Wenn Sie eine Nachricht erhalten, dass Sie keine Berechtigung für den Zugriff auf das Admin Center haben, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
 
-   Wenn Sie eine Nachricht erhalten, dass Sie keine Berechtigung für den Zugriff auf das Admin Center haben, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
+::: moniker-end
 
 2. Wählen Sie im linken Bereich **Admin Center** \> **SharePoint**aus. (Möglicherweise müssen Sie **Alle anzeigen** auswählen, um die Liste der Admin Center anzuzeigen.)
 
@@ -181,6 +185,10 @@ Outlook beginnt den Exportvorgang sofort, es sei denn, es wird eine neue Outlook
     
 Weitere Informationen finden Sie unter [exportieren oder Sichern von e-Mails, Kontakten und Kalendern in eine Outlook. PST-Datei](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) in Outlook 2010. 
   
+  
+  > [!NOTE]
+  > Standardmäßig ist Ihre e-Mail für einen Zeitraum von 12 Monaten offline verfügbar. Weitere Informationen finden Sie unter Vorgehensweise zum [verbessern der offline verfügbaren Daten](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>Gewähren eines anderen Benutzers auf die e-Mail-Adresse eines ehemaligen Benutzers 
 
 Um den Zugriff auf e-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemaligen Mitarbeiters an einen anderen Mitarbeiter zu ermöglichen, importieren Sie die Informationen in den Outlook-Posteingang eines anderen Mitarbeiters.
@@ -210,6 +218,9 @@ Um den Zugriff auf e-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehema
 8. Legen Sie die Optionen für den Import von Elementen fest. Im Normalfall müssen die Standardeinstellungen nicht geändert werden.
     
 9. Wählen Sie **Fertig stellen** aus.
+
+> [!NOTE]
+> Die Schritte bleiben für den Zugriff auf OneDrive-und e-Mail-Daten eines vorhandenen Benutzers unverändert.
     
 > [!TIP]
 > Wenn Sie nur einige Elemente aus einer Outlook-Datendatei (PST) importieren oder wiederherstellen möchten, können Sie die Outlook-Datendatei öffnen. Ziehen Sie dann im Navigationsbereich die Elemente aus den Outlook-Datendatei Ordnern in Ihre vorhandenen Outlook-Ordner. 
@@ -224,4 +235,3 @@ Um den Zugriff auf e-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehema
   
 [OneDrive-Aufbewahrung und-Löschung](/onedrive/retention-and-deletion)
   
-

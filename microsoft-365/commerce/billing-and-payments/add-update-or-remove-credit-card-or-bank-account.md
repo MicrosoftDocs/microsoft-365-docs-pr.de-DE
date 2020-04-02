@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden
+title: Zahlungsmethoden hinzufügen, aktualisieren oder entfernen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,14 +24,14 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952006"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106048"
 ---
-# <a name="add-update-or-remove-your-payment-methods"></a>Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden
+# <a name="add-update-or-remove-your-payment-methods"></a>Zahlungsmethoden hinzufügen, aktualisieren oder entfernen
 
 ::: moniker range="o365-worldwide"
 Sie können Produkte und Dienste von Microsoft mit einer Kreditkarte oder einer Debitkarte oder einem Bankkonto erwerben. Sie können Ihre Zahlungsinformationen auf der Seite **Zahlungsmethoden** eingeben oder wenn Sie einen Einkauf tätigen.
@@ -234,7 +234,7 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
   
 4. Aktualisieren Sie Ihre Kreditkarten-oder Bankkontoinformationen (Name auf der Kreditkarte oder Bankverbindung, Rechnungsadresse. Telefonnummer oder Ablaufdatum) bei Bedarf, und wählen Sie dann über **Mitteln**.
 
-5. Eine Bestätigungsaufforderung wird angezeigt. Falls das nicht der Fall ist, lesen Sie [Behandeln von Problemen mit Kreditkarten und Bankkonten](#troubleshooting-credit-cards-and-bank-accounts).
+5. Eine Bestätigungsaufforderung wird angezeigt. Wenn dies nicht der Fall ist, lesen Sie "Problembehandlung bei Kreditkarten und Bankkonten" weiter unten in diesem Artikel.
 
     ![Die Bestätigungsmeldung: "Ihre Zahlungsmethode wurde erfolgreich aktualisiert."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ Wenn Ihre Zahlungsmethode einem Abrechnungsprofil zugeordnet ist und auch zum di
   
 4. Aktualisieren Sie Ihre Kreditkarten-oder Bankkontoinformationen (Name auf der Kreditkarte oder Bankverbindung, Rechnungsadresse. Telefonnummer oder Ablaufdatum) bei Bedarf, und wählen Sie dann über **Mitteln**.
 
-5. Eine Bestätigungsaufforderung wird angezeigt. Falls das nicht der Fall ist, lesen Sie [Behandeln von Problemen mit Kreditkarten und Bankkonten](#troubleshooting-credit-cards-and-bank-accounts).
+5. Eine Bestätigungsaufforderung wird angezeigt. Wenn dies nicht der Fall ist, lesen Sie "Problembehandlung bei Kreditkarten und Bankkonten" weiter unten in diesem Artikel.
 
     ![Die Bestätigungsmeldung: "Ihre Zahlungsmethode wurde erfolgreich aktualisiert."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 

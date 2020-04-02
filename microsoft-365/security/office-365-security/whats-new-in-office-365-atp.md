@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
-ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42230068"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106184"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -36,6 +35,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 ## <a name="januaryfebruary-2020"></a>Januar/Februar 2020
 
+- [Allgemeine Verfügbarkeit von Kampagnen Ansichten in Office 365 ATP](campaigns.md)
 - Verbesserungen an [Threat Explorer](threat-explorer.md) , um zu ermöglichen, dass Security Operations Teams bei der Untersuchung von [e-Mails](investigate-malicious-email-that-was-delivered.md)nach mehreren Feldern suchen und Filtern können:
     - Zustellungs Speicherort und spezielle Aktionen
     - Direktionalität (eingehend, ausgehendes oder Intra-org)
@@ -82,7 +82,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
