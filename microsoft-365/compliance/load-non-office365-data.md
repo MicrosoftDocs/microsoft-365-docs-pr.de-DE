@@ -16,27 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7d2f4fe685e17690b76124517468e0eceec8b414
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072163"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097218"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Laden nicht Office 365er Daten in Beweise
 
 Nicht alle Dokumente, die Sie möglicherweise in einer Datenuntersuchung analysieren müssen, befinden sich in Office 365. Mit der nicht Office 365en Funktion zum Importieren von Inhalten können Sie Dokumente, die nicht in Office 365 Leben, in Beweise hochladen, damit Sie in einer Datenuntersuchung analysiert werden können.
 
->[!Note]
->Für die Untersuchung von Daten ist ein Office 365 E3 mit dem Advanced Compliance-Add-on oder einem E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
-
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrieben verwenden, benötigen Sie Folgendes:
 
-- Ein Office 365 E3 mit Advanced Compliance-Add-on oder E5-Abonnement.
+- Ein Microsoft 365-oder Office 365 E5-Abonnement.
 
-- Alle Verwalter, deren nicht Office 365 Inhalt hochgeladen wird, müssen über E3 mit Advanced Compliance Add-on oder E5-Lizenzen verfügen.
+- Alle interessierten Personen, deren nicht Office 365 Inhalt hochgeladen wird, müssen über die entsprechende E5-oder E5-Add-on-Lizenz verfügen.
 
 - Ein vorhandener eDiscovery-Fall.
 
@@ -48,7 +45,7 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
 
 ## <a name="upload-non-office-365-content-in-to-a-data-investigation"></a>Hochladen nicht Office 365er Inhalte in eine Datenuntersuchung
 
-1. Open * * * * Data Investigations * *, dann die Untersuchung, in die die nicht Office 365 Daten hochgeladen werden.  Klicken Sie auf die Registerkarte **Beweise** , und wählen Sie dann den Beweissatz aus, in den Sie die nicht Office 365 Daten laden möchten.  Wenn Sie noch keinen Beweis Sätze erstellt haben, können Sie dies jetzt tun.  Klicken Sie schließlich auf **Beweise verwalten** , und zeigen Sie dann **Uploads** im Abschnitt nicht Office 365 Daten an.
+1. Öffnen Sie **Daten Untersuchungen** , und gehen Sie zu der Untersuchung, in die die nicht Office 365 Daten hochgeladen werden.  Klicken Sie auf die Registerkarte **Beweise** , und wählen Sie dann den Beweissatz aus, in den Sie die nicht Office 365 Daten laden möchten.  Wenn Sie noch keinen Beweis Sätze erstellt haben, können Sie dies jetzt tun.  Klicken Sie schließlich auf **Beweise verwalten** , und zeigen Sie dann **Uploads** im Abschnitt nicht Office 365 Daten an.
 
 2. Klicken Sie auf die Schaltfläche **Dateien hochladen** , um den nicht Office 365 Datenimport-Assistenten zu starten.
 

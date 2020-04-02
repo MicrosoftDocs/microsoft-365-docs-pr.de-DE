@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029891"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100878"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Konfigurieren der Kommunikations Kompatibilität in Microsoft 365
 
@@ -34,11 +34,23 @@ Verwenden Sie Kommunikationsrichtlinien zur Erfassung von Mitarbeiter Kommunikat
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Bevor Sie mit der Kommunikation Compliance beginnen, sollten Sie Ihr Microsoft 365-Abonnement bestätigen. Benutzer, die in Kommunikations Konformitätsrichtlinien enthalten sind, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein oder in einem Microsoft 365 E5-Abonnement.
+Bevor Sie mit der Kommunikation Compliance beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung der Kommunikations Konformität muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
+
+- Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion)
+- Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Compliance-Add-on
+- Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on
+- Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion)
+- Microsoft 365 a3-Abonnement + das Microsoft 365 A5-Konformitäts-Add-on
+- Microsoft 365 a3-Abonnement + Microsoft 365 A5 Insider Risk Management-Add-on
+- Office 365 Enterprise E5-Abonnement (kostenpflichtige oder Testversion)
+- Office 365 Enterprise E3-Abonnement + das Add-on für Office 365 Advanced Compliance
+
+Benutzern, die in Kommunikationsrichtlinien Richtlinien enthalten sind, muss eine der oben genannten Lizenzen zugewiesen sein.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn die aktuellen Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements übergehen, die die gleichen oder zusätzliche Compliance-Features enthalten.
 
 Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management ausprobieren möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Office 365-Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
-  
-Führen Sie die folgenden Schritte aus, um die Kommunikations Konformität in Ihrer Microsoft 365-Organisation einzurichten und zu verwenden:
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für die Kommunikations Kompatibilität
 

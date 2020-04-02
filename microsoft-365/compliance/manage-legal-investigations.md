@@ -1,5 +1,5 @@
 ---
-title: Verwalten von rechtlichen Untersuchungen in Office 365
+title: Verwalten von rechtlichen Untersuchungen in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: 'Verwenden Sie eDiscovery-Fälle im Security #a0 Compliance Center in Office 365, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten weiter analysieren, indem Sie die Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery verwenden.'
-ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Verwenden Sie eDiscovery-Fälle im Microsoft 365 Compliance Center, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten weiter analysieren, indem Sie die Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery verwenden.
+ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600532"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097194"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Untersuchungen in Office 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen in Microsoft 365
 
 Organisationen haben viele Gründe, auf einen Rechtsstreit mit bestimmten Führungskräften oder anderen Mitarbeitern in Ihrer Organisation zu reagieren. Dies kann dazu führen, dass weitere Ermittlungs spezifische Informationen in e-Mails, Dokumenten, Chats und anderen Inhaltsspeicherorten, die von Personen in ihren täglichen Arbeitsaufgaben verwendet werden, schnell gefunden und aufbewahrt werden. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery Case-Tools im Security and Compliance Center ausführen.
   
@@ -42,7 +42,7 @@ mit eDiscovery-Fällen können Sie steuern, wer eDiscovery-Fälle in Ihrer Organ
     
 ### <a name="use-scripts-for-advanced-scenarios"></a>Verwenden von Skripts für erweiterte Szenarien
 
-Wie im vorherigen Abschnitt, in dem Skripts für Inhalts Suchszenarien aufgeführt sind, haben wir auch einige PowerShell-Skripts für Sicherheits #a0 Compliance Center erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
+Wie im vorherigen Abschnitt, in dem Skripts für Inhalts Suchszenarien aufgeführt sind, haben wir auch einige PowerShell-Skripts für Sicherheits & Compliance Center erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
   
 - [Erstellen eines eDiscovery Hold-Berichts](create-a-report-on-holds-in-ediscovery-cases.md) mit Informationen zu allen mit eDiscovery-Fällen in Ihrer Organisation verknüpften Haltestatus 
     
@@ -52,9 +52,9 @@ Wie im vorherigen Abschnitt, in dem Skripts für Inhalts Suchszenarien aufgefüh
 
 Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365 auf. Diese neue Lösung, die als *Erweiterte eDiscovery*bezeichnet wird, bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können Legal Teams den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren.
 
-Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Office 365-oder Microsoft 365-Organisation. Alternativ benötigen Benutzer mit einer E3-Lizenz das Add-on-Abonnement für erweiterte Kompatibilität, damit Sie Sie als Verwalter in einem erweiterten eDiscovery-Fall verwalten können.
+Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Microsoft 365-oder Office 365-Organisation. Weitere Informationen zur Lizenzierung finden Sie unter [Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
+Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Explore the Advanced eDiscovery Workflow](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow).
 
 - [Erstellen einer Anfrage](create-new-ediscovery-case.md) für erste Schritte
 

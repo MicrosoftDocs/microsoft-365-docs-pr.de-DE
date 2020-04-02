@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security & Compliance Centers.
-ms.openlocfilehash: 32dc7e9a01211fcd0d1441c2434385ecd611d585
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556813"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097208"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center
 
@@ -30,9 +30,9 @@ Wenn Sie möchten, dass Benutzer eines der eDiscovery-bezogenen Tools im Securit
   
 Die primäre eDiscovery-bezogene Rollengruppe in Security & Compliance Center wird als **eDiscovery-Manager**bezeichnet. In dieser Rollengruppe gibt es zwei Untergruppen. 
   
-- **eDiscovery** -Manager: ein eDiscovery-Manager kann das Inhalts Such Tool im Security & Compliance Center zum Durchsuchen von Inhaltsspeicherorten in der Organisation und zum Ausführen verschiedener Such bezogener Aktionen wie Vorschau-und Export Suchergebnisse verwenden. Mitglieder können auch eDiscovery-Fälle und erweiterte eDiscovery-Fälle erstellen und verwalten, Mitglieder zu einem Fall hinzufügen und daraus entfernen, die Case-Aufbewahrungen erstellen, Suchvorgänge mit einem Fall durchführen und Daten zu Access-Fällen ausführen. eDiscovery-Manager können nur auf die von Ihnen erstellten Fälle zugreifen und diese verwalten. Sie können nicht auf Fälle zugreifen oder diese verwalten, die von anderen eDiscovery-Managern erstellt wurden. 
+- **eDiscovery** -Manager: ein eDiscovery-Manager kann das Inhalts Such Tool im Security & Compliance Center zum Durchsuchen von Inhaltsspeicherorten in der Organisation und zum Ausführen verschiedener Such bezogener Aktionen wie Vorschau-und Export Suchergebnisse verwenden. Mitglieder können auch eDiscovery-Fälle und erweiterte eDiscovery-Fälle erstellen und verwalten, Mitglieder zu einem Fall hinzufügen und daraus entfernen, die Case-Aufbewahrungen erstellen, Suchvorgänge mit einem Fall durchführen und Daten zu Access-Fällen ausführen. eDiscovery-Manager können nur auf die von Ihnen erstellten Fälle zugreifen und diese verwalten. Sie können nicht auf Fälle zugreifen oder diese verwalten, die von anderen eDiscovery-Managern erstellt wurden.
     
-- **eDiscovery-Administratoren** : ein eDiscovery-Administrator ist Mitglied der Rollengruppe "eDiscovery-Manager" und kann dieselben Aufgaben im Zusammenhang mit der Inhaltssuche und der Fallverwaltung ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen: 
+- **eDiscovery-Administratoren** : ein eDiscovery-Administrator ist Mitglied der Rollengruppe "eDiscovery-Manager" und kann dieselben Aufgaben im Zusammenhang mit der Inhaltssuche und der Fallverwaltung ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
     
   - Greifen Sie auf alle Fälle zu, die auf der **eDiscovery-und der** **Advanced eDiscovery** -Seite im Security & Compliance Center aufgeführt sind. 
 
@@ -40,10 +40,10 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security & Compliance Center wi
     
   - Verwalten Sie alle eDiscovery-Fälle, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.
   
-  Im Abschnitt [Weitere Informationen](#more-information) finden Sie Gründe, warum Sie eDiscovery-Administratoren in Ihrer Organisation benötigen. 
+  Im Abschnitt [Weitere Informationen](#more-information) finden Sie Gründe, warum Sie eDiscovery-Administratoren in Ihrer Organisation benötigen.
 
 > [!NOTE]
-> Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365-oder Microsoft E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine Advanced Compliance Add-on-Lizenz zugewiesen werden. Benutzern mit einer Microsoft 365 E1-oder E3-Lizenz kann eine E5-Konformitäts-Add-on-Lizenz zugewiesen werden. Administratoren und Compliance Officer, die Fällen zugeordnet sind, und Verwenden von Advanced eDiscovery zum Analysieren von Daten benötigen keine E5-Lizenz.  
+> Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-oder Microsoft E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer E1-oder E3-Lizenz eine E5-Add-on-Lizenz zugewiesen werden. Administratoren, Compliance Officer oder juristische Personen, die den Fällen als Mitglieder zugewiesen sind, und Verwenden von Advanced eDiscovery zum erfassen, anzeigen und Analysieren von Daten benötigen keine E5-Lizenz. Weitere Informationen zur Lizenzierung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://aka.ms/complianceSD).
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 

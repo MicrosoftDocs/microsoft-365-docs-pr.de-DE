@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634973"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105662"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
+
+>*[Microsoft 365-Lizenzierungs Leit Faden für die Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
 
 Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere Gründe, warum Sie diesen Inhalt möglicherweise überprüfen möchten, um zu entscheiden, ob er sicher gelöscht werden kann ("verworfen"). Beispielsweise müssen Sie Folgendes tun:
   
@@ -51,9 +53,6 @@ Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im M
     
 - Bearbeiter können entweder ausstehende oder abgeschlossene Dispositionen anzeigen und diese Liste als CSV-Datei exportieren.
 
-> [!NOTE]
-> Für Dispositions Überprüfungen ist ein Office 365 Enterprise E5-Abonnement erforderlich.
-  
 Eine Dispositions Überprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Office 365 Gruppen enthalten. Inhalte, die auf eine Dispositions Überprüfung an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
   
 ![Seite "Dispositions" im Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)

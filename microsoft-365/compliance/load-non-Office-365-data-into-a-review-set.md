@@ -16,25 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importieren Sie nicht Office 365 Daten in einen Überprüfungs in einem erweiterten eDiscovery-Fall.
-ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 816519fcaa8dc5172dbb5c369a3ec191585d3647
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072207"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097228"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Laden von Nicht-Office 365-Daten in einen Prüfdateisatz
 
 Nicht alle Dokumente, die Sie in Advanced eDiscovery analysieren müssen, befinden sich in Office 365. Mit der nicht Office 365 datenimportfunktion in Advanced eDiscovery können Sie Dokumente, die sich nicht in Office 365 befinden, in einen Überprüfungs-Datensatz hochladen. In diesem Artikel erfahren Sie, wie Sie Ihre nicht-Office 365-Dokumente zur Analyse in Advanced eDiscovery integrieren.
 
->[!Note]
->Advanced eDiscovery erfordert ein Microsoft 365-oder Office 365 E5-Abonnement für Ihre Organisation oder ein E3-Abonnement mit dem Add-on-Abonnement für erweiterte Kompatibilität. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
-
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bei Verwendung der in diesem Artikel beschriebenen Funktion "nicht Office 365 hochladen" müssen Sie über Folgendes verfügen:
 
-- Allen Betreuern, denen nicht Office 365 Inhalte zugeordnet werden sollen, muss eine E5-Lizenz oder eine E3-Lizenz mit einer Advanced Compliance-Add-on-Lizenz zugewiesen sein.
+- Allen Betreuern, denen nicht Office 365 Inhalte zugeordnet werden sollen, muss die entsprechende Lizenz zugewiesen sein. Weitere Informationen finden Sie unter [Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
 - Ein vorhandener erweiterter eDiscovery-Fall.
 
@@ -61,7 +58,7 @@ Bei Verwendung der in diesem Artikel beschriebenen Funktion "nicht Office 365 ho
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Hochladen nicht Office 365er Inhalte in die erweiterte eDiscovery
 
-1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator Advanced eDiscovery, dann werden die nicht Office 365-Daten hochgeladen.  
+1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator Advanced eDiscovery, und wechseln Sie zu dem Fall, in den die nicht Office 365 Daten hochgeladen werden.  
 
 2. Klicken Sie auf **Überprüfungs Sätze**, und wählen Sie dann den Überprüfungs Satz aus, an den die nicht Office 365 Daten hochgeladen werden sollen.  Wenn Sie keinen Überprüfungs Sätze haben, können Sie einen erstellen. 
  

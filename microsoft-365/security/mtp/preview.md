@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288606"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100899"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -43,12 +43,16 @@ Sie haben Zugriff auf kommende Features, über die Sie Feedback geben können, u
 
 Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den ersten zu gehören, die bevorstehende Features ausprobieren.
 
-1. Wählen Sie im Navigationsbereich **Einstellungen** > **Vorschau-Features**aus.
+1. Wählen Sie im Navigationsbereich die Option **Einstellungen**aus.
 
-2. Wählen Sie **Vorschau-Features aktivieren**aus. 
+2. Wählen Sie **Microsoft Threat Protection**aus.
+
+
+3. **Vorschau-Features** > aktivieren aktivieren Sie die**Vorschaufunktionen**. 
 
 3. Klicken Sie auf **Speichern**.
 
 
 ## <a name="preview-features"></a>Vorschaufeatures
 Dieser Abschnitt enthält Updates mit einer Liste von Features, die in der Vorschau angezeigt werden, sobald Sie zum Testen verfügbar sind. 
+
