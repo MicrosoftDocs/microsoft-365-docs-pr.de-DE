@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: Überprüfen von Falldaten
           items:
+            - name: Verwenden des Dashboards für Überprüfungs Sätze (Vorschau)
+              href: advanced-ediscovery-dashboard.md
             - name: Anzeigen von Dokumenten in einem Prüfdateisatz
               href: view-documents-in-review-set.md
             - name: Abfragen der Daten in einem Prüfdateisatz
               href: review-set-search.md
             - name: Markieren von Dokumenten in einem Prüfdateisatz
               href: tagging-documents.md
-            - name: Verwenden des Dashboards für Überprüfungs Sätze (Vorschau)
-              href: advanced-ediscovery-dashboard.md
         - name: Analysieren von Falldaten
           href: analyzing-data-in-review-set.md
           items:
