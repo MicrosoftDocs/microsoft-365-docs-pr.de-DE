@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatisierte Upgrades von Windows 7 auf Windows 10 für große Organisationen
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085622"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113481"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>In-Place-Upgrades von Windows 7 auf Windows 10 für große Organisationen
 
-Ab dem 14. Januar 2020 werden Sicherheitsupdates oder Support für PCs unter Windows 7 nicht mehr bereitgestellt. Es bleiben nur wenige Monate Zeit, um von Windows 7 auf Windows 10 zu wechseln, gleichzeitig gilt es, mehrere Optionen bereitzustellen. Deshalb lautet eine häufige Frage in der IT-Community: "Was ist der schnellste Weg, um von Windows 7 auf Windows 10 zu wechseln?" Die kurze Antwort lautet, In-Place-Upgrades für bestehende PCs durchzuführen, wodurch der Fokus hinsichtlich verschiedener Aspekte des Desktopbereitstellungsprozesses reduziert werden kann.
+Seit dem 14. Januar 2020 werden Sicherheitsupdates oder Support für PCs unter Windows 7 nicht mehr bereitgestellt. Im Zusammenhang mit dem Umstieg von Windows 7 auf Windows 10 und der Bereitstellung mehrerer Optionen, lautet eine häufige Frage in der IT-Community: "Was ist der schnellste Weg, um von Windows 7 zu Windows 10 zu wechseln?" Die kurze Antwort lautet, In-Place-Upgrades für bestehende PCs durchzuführen, wodurch der Fokus hinsichtlich verschiedener Aspekte des Desktopbereitstellungsprozesses reduziert werden kann.
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ Die grau dargestellten Vorgänge in der Bereitstellungsprozess-Grafik sind keine
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>Zuverlässigkeit, Sicherheit und Skalierung von In-Place-Upgrades
 
-In-Place-Upgrades auf Windows 10 sind ein zuverlässiger Ansatz zum Aktualisieren eines bestehenden Geräts unter Windows 7 oder höher auf Windows 10, ohne dass Dateimigrationen oder die Neuinstallation von Anwendungen erforderlich sind. Nach einem In-Place-Upgrade entsprechen die Dateien, Einstellungen und verfügbaren Apps des Benutzers jenen der vorherigen Windows 7-Installation. Vielleicht möchten Sie diese Gelegenheit nutzen, um bestehende Apps oder Einstellungen zu bereinigen, da es bis zum Ende des Supports für Windows 7 im Januar 2020 nicht mehr weit ist, sollte die knappe Zeit genutzt werden, um andere Optionen zu verfolgen. Upgrades funktionieren auch bei einem Wechsel von Like-to-Like-Architekturen (von 32-Bit zu 32-Bit oder von 64-Bit zu 64-Bit) und Like-to-Like-Editionen von Windows (von Professional zu Professional oder von Enterprise zu Enterprise).
+In-Place-Upgrades auf Windows 10 sind ein zuverlässiger Ansatz zum Aktualisieren eines bestehenden Geräts unter Windows 7 oder höher auf Windows 10, ohne dass Dateimigrationen oder die Neuinstallation von Anwendungen erforderlich sind. Nach einem In-Place-Upgrade entsprechen die Dateien, Einstellungen und verfügbaren Apps des Benutzers jenen der vorherigen Windows 7-Installation. Upgrades funktionieren auch bei einem Wechsel von Like-to-Like-Architekturen (von 32-Bit zu 32-Bit oder von 64-Bit zu 64-Bit) und Like-to-Like-Editionen von Windows (von Professional zu Professional oder von Enterprise zu Enterprise).
 
 Der Upgradeprozess sichert Ihre vorherige Windows-Installation standardmäßig als Teil des Upgrades, damit bei einem Upgradefehler oder falls ein Gerät oder eine Anwendung nach dem Upgrade nicht ordnungsgemäß funktionieren sollte, ein Rollback auf Windows 7 möglich ist. Bei aktualisierten PCs haben Sie standardmäßig 10 Tage Zeit, um bei Bedarf manuell einen Rollback auf Windows 7 einleiten zu können.
 
@@ -106,4 +106,4 @@ Die Ergebnisse der Protokolle selbst lauten folgendermaßen:
 
 Nachdem Sie vorabzwischengespeicherte Sequenzen mit Kompatibilitätsüberprüfungen für eine große Anzahl von PCs in einer Sammlung bereitgestellt haben, können Sie mit der Analyse der Protokolldateien für die Gerätebereitschaft beginnen. Hinsichtlich der oben aufgeführten Ausgaben kann auf \#1 (0xC1900210) mit "bereit für die Bereitstellung" und \#4 (0xC190020E) durch das Freigeben von Speicherplatz reagiert werden. Diesbezüglich sollten Sie beim Löschen vorsichtig sein. Windows Update Cleanup, Papierkorb und temporäre Dateien sind jedoch gute Ausgangspunkte, und in vielen Fällen wird hier genügend Speicherplatz für das erfolgreiche Upgrade frei. Sie können die Kompatibilitätsprüfung so oft ausführen, bis der PC als für das In-Place-Upgrade bereit eingestuft wird. Weitere Informationen zu den Windows Setup-Befehlszeilenoptionen finden Sie unter <https://aka.ms/setupswitches>.
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[Bereitstellungscenter für Desktop](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[Bereitstellungscenter für Desktop](https://aka.ms/howtoshift)

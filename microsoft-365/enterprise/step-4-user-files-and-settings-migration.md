@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Dateien und Einstellungen von Benutzern migrieren.
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085288"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113541"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Schritt 4: Migration von Benutzerdateien und -einstellungen
 
@@ -49,7 +49,7 @@ Wenn es darum geht zu entscheiden, welche Daten beim Wechsel zu einem neuen PC o
 
 Ob dies eine Option für Ihrer Organisation darstellt, hängt vom Umfang der Migration ab, die Sie planen. Sie ist ganz klar durch die Zeit und die physischen Gegebenheiten begrenzt, wie zum Beispiel durch die direkte Arbeit mit den Benutzern, das Ermitteln ihrer Anforderungen und das Kopieren der Dateien auf den neuen oder aktualisierten PC.
 
-Wenn Sie sich für eine manuelle Migration entscheiden, müssen Sie möglicherweise beurteilen, ob Sie die Aufgabe bis Januar 2020 bewältigen können, wenn die für Windows 7 endet. Wenn dies zweifelhaft ist, sehen Sie sich die unten aufgeführten automatisierten Optionen an, oder fordern Sie weitere Mitarbeiter an, die Sie unterstützen können.
+Wenn Sie sich für eine manuelle Migration entscheiden, schauen Sie sich die folgenden automatischen Optionen an, oder fordern Sie weitere Personen zur Unterstützung an.
 
 ## <a name="automated-migration-using-usmt"></a>Automatisierte Migration mit USMT 
 
@@ -89,8 +89,8 @@ Windows 10 umfasst in der Standardinstallation viele nützliche integrierte Apps
 
 ## <a name="next-step"></a>Nächster Schritt
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Schritt 5: Überlegungen zu Sicherheit und Compliance](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Schritt 5: Überlegungen zu Sicherheit und Compliance](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>Vorheriger Schritt
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[Schritt 3: Liefern von Office- und Branchen-Apps](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[Schritt 3: Liefern von Office- und Branchen-Apps](https://aka.ms/mdd3)
