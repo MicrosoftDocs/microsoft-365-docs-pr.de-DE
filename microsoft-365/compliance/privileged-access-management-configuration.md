@@ -17,19 +17,36 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über die Konfiguration der privilegierten Zugriffsverwaltung.
-ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322526"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115991"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Erste Schritte mit privilegierter Zugriffsverwaltung
 
->[!IMPORTANT]
->In diesem Thema werden Bereitstellungs-und Konfigurationsanleitungen für Features behandelt, die derzeit in Office 365 E5 und Advanced Compliance SKUs verfügbar sind.
+Dieses Thema führt Sie durch das Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung in Ihrer Office 365 Organisation. Sie können entweder das Microsoft 365 Admin Center oder die Exchange-Verwaltungskonsole verwenden, um privilegierten Zugriff zu verwalten und zu verwenden.
 
-Dieses Thema führt Sie durch das Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung in Ihrer Office 365 Organisation. Sie können entweder das Microsoft 365 Admin Center oder die Exchange-Verwaltungskonsole verwenden, um privilegierten Zugriff zu verwalten und zu verwenden. 
+## <a name="before-you-begin"></a>Bevor Sie beginnen
+
+Bevor Sie mit der privilegierten Zugriffsverwaltung beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung der privilegierten Zugriffsverwaltung muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
+
+- Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion)
+- Microsoft 365 E3-Abonnement (oder Office 365 E3-Abonnement + Enterprise Mobility and Security E3-Abonnement) + das Microsoft 365 E5-Compliance-Add-on
+- Alle Microsoft 365-, Office 365-, Exchange-, SharePoint-oder OneDrive für Unternehmen-Abonnements und das Microsoft 365 E5 Insider Risk Management-Add-on  
+- Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion)
+- Microsoft 365 a3-Abonnement (oder Office 365 a3-Abonnement + Enterprise Mobility and Security a3-Abonnement) + das Microsoft A5-Konformitäts-Add-on
+- Alle Microsoft 365-, Office 365-, Exchange-, SharePoint-oder OneDrive for Education-Abonnements + das Microsoft 365 A5 Insider Risk Management-Add-on
+- Office 365 Enterprise E5-Abonnement (kostenpflichtige oder Testversion)
+- Office 365 Enterprise E3-Abonnement + das Office 365 Advanced Compliance-Add-on (nicht mehr für neue Abonnements verfügbar, siehe Hinweis)
+
+Benutzern, die Zugriffs Verwaltungsanforderungen übermitteln und diese Antworten, muss eine der oben aufgeführten Lizenzen zugewiesen werden.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn die aktuellen Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements übergehen, die die gleichen oder zusätzliche Compliance-Features enthalten.
+
+Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und die privilegierte Zugriffsverwaltung testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Office 365-Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung
 
@@ -103,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 >[!NOTE]
->Das Feature "System Konten" wird bereitgestellt, um sicherzustellen, dass bestimmte Automatisierungen in ihren Organisationen ohne Abhängigkeit von privilegiertem Zugriff funktionieren können, es wird jedoch empfohlen, dass diese Ausnahmen außergewöhnlich sind und diese genehmigt und überwacht werden dürfen. regelmäßig.
+>Die Funktion System Konten wird bereitgestellt, um sicherzustellen, dass bestimmte Automatisierungen in ihren Organisationen ohne Abhängigkeit von privilegiertem Zugriff funktionieren können, es wird jedoch empfohlen, dass diese Ausnahmen außergewöhnlich sind und die zulässigen regelmäßig genehmigt und überwacht werden.
 
 <a name="step3"> </a>
 

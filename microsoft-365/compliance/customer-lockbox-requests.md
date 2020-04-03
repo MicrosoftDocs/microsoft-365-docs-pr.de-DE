@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076841"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113562"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 
-In diesem Artikel werden Bereitstellungs-und Konfigurationsanleitungen für ein Feature bereitgestellt, das derzeit nur für Organisationen mit Microsoft 365 E5, Office 365 E5, Information Protection and Compliance oder Advanced Compliance Add-on-Abonnement zur Verfügung steht. Kunden-Lockbox unterstützt Anforderungen für den Zugriff auf Daten in Exchange Online, SharePoint Online und OneDrive für Unternehmen. Um die Unterstützung für andere Office 365 Dienste zu empfehlen, senden Sie eine Anforderung an [Office 365 UserVoice](https://office365.uservoice.com/).
+Dieser Artikel enthält Anleitungen zur Bereitstellung und Konfiguration für Kunden-Lockbox. Kunden-Lockbox unterstützt Anforderungen für den Zugriff auf Daten in Exchange Online, SharePoint Online und OneDrive für Unternehmen. Um die Unterstützung für andere Office 365 Dienste zu empfehlen, senden Sie eine Anforderung an [Office 365 UserVoice](https://office365.uservoice.com/).
+
+Informationen zu den Optionen für die Lizenzierung von Benutzern, die von den Microsoft 365-Kompatibilitäts Angeboten profitieren, einschließlich dieses, ab dem 1. April 2020, finden Sie in der [Microsoft 365-Lizenzierungs Anleitung zur Sicherheit & Compliance](https://aka.ms/ComplianceSD).
 
 Kunden-Lockbox stellt sicher, dass Microsoft nicht auf Ihre Inhalte zugreifen kann, um einen Dienstvorgang ohne Ihre ausdrückliche Genehmigung auszuführen. Kunden-Lockbox bringt Sie in den Genehmigungsworkflow für Anforderungen für den Zugriff auf Ihre Inhalte.
 
