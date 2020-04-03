@@ -15,12 +15,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
 description: QuickLinks für die häufigsten Administratoraufgaben in Office 365.
-ms.openlocfilehash: 06d745bc4b3487ca05888e390b7100596bced6c9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897043"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125999"
 ---
 # <a name="manage"></a>Verwalten
 
@@ -152,7 +152,6 @@ QuickLinks für die häufigsten Administratoraufgaben in Office 365.
                         <h3>E-Mail</h3>
                             <p><a href="../add-users/add-users.md">Hinzufügen eines neues Mitarbeiters</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">Hilfe erhalten, wenn E-Mail-Nachrichten nicht gesendet werden</a></p>
-                            <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Behandeln von E-Mail-Problemen</a></p>
                             <p><b>Weitere Aufgaben:</b> <a href="../email/email.md">E-Mail in Office 365 Business</a></p>
                     </div>
                 </div>
@@ -170,7 +169,7 @@ QuickLinks für die häufigsten Administratoraufgaben in Office 365.
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">Verwalten der Freigabe in OneDrive und SharePoint</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">Festlegen des Standardspeicherplatzes für OneDrive-Benutzer</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">Beheben von OneDrive-Synchronisierungsproblemen</a></p>
-                            <p><b>Weitere Aufgaben:</b> <a href="https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb">OneDrive in Office 365</a></p>
+                            <p><b>Weitere Aufgaben:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive in Office 365</a></p>
                     </div>
                 </div>
             </div>
