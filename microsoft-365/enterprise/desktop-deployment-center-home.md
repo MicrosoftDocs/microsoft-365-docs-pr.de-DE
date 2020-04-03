@@ -16,17 +16,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Übersicht über das Bereitstellungscenter für den Desktop.
-ms.openlocfilehash: 8e5c76595bb5f2f00e5a167be5a88bfbbd70d740
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 540f0d50ef8adc292fc1fbd4ef13bb12556d596c
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067895"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113529"
 ---
 # <a name="desktop-deployment-center"></a>Bereitstellungscenter für modernen Desktop
 
 <strong>Upgrade von Windows 7 zu Windows 10 </strong>
-<p>Der erweiterte Support für Windows 7 endet am 14. Januar 2020. Ein direktes Upgrade von Windows 7 zu Windows 10 ist die schnellste Methode der Bereitstellung. Sie können <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mit Microsoft Endpoint Configuration Manager ein Upgrade auf einem einzelnen PC</a> oder <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Tausenden von PCs durchführen</a>. Sie müssen sich bei direkten Upgrades nicht auf die App-Bereitstellung, Dateimigration, benutzerdefinierte Imageerstellung oder Aktivierung von Cloud-basierten Diensten konzentrieren. Sie können Tools verwenden, die Sie bereits für das Upgraden vorhandener PCs besitzen, und sich auf die folgenden Bereitstellungsschritte für Upgrades konzentrieren: </p>
+<p>Der erweiterte Support für Windows 7 endete am 14. Januar 2020. Ein direktes Upgrade von Windows 7 zu Windows 10 ist die schnellste Methode der Bereitstellung. Sie können <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mit Microsoft Endpoint Configuration Manager ein Upgrade auf einem einzelnen PC</a> oder <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Tausenden von PCs durchführen</a>. Sie müssen sich bei direkten Upgrades nicht auf die App-Bereitstellung, Dateimigration, benutzerdefinierte Imageerstellung oder Aktivierung von Cloud-basierten Diensten konzentrieren. Sie können Tools verwenden, die Sie bereits für das Upgraden vorhandener PCs besitzen, und sich auf die folgenden Bereitstellungsschritte für Upgrades konzentrieren: </p>
 
 <p>
 </p>
