@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Hier erfahren Sie, wie Sie Gebühren, Abrechnung und Zahlungsinformationen auf Ihrer Office 365 für Unternehmen Rechnung interpretieren und wie Sie die Bestellnummer ändern.
-ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354686"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142299"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Office 365 Business
 
@@ -104,8 +104,6 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 ::: moniker range="o365-worldwide"
 
-### <a name="use-the-new-admin-center-to-change-your-purchase-order-number"></a>Ändern der Bestellnummer mithilfe des neuen admin Centers
-
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
 2. Wenn Sie sich in der **Tabellen** Ansicht befinden, wählen Sie **Karten** aus, um Ansichten zu wechseln.
@@ -115,16 +113,6 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 4. Wählen Sie im Abschnitt **Abrechnung** neben **Rechnung**die Option **Bearbeiten**aus.
 
 5. Geben Sie unten im Bereich **Zahlungsdetails bearbeiten** Ihre Bestellnummer ein, und wählen Sie dann **Speichern**aus.
-
-### <a name="use-the-old-admin-center-to-change-your-purchase-order-number"></a>Verwenden des alten admin Centers zum Ändern Ihrer Bestellnummer
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, und wählen Sie im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails aktualisieren**aus.
-
-3. Wählen Sie im Bereich **Zahlungsdetails aktualisieren** die Option **Nein Dank**aus.
-
-4. Geben Sie unten im Bereich **Zahlungsdetails aktualisieren** Ihre Bestellnummer ein, wählen Sie **Absenden**und dann **Schließen**aus.
 
 ::: moniker-end
 

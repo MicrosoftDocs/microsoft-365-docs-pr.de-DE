@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/19/2019
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,18 +17,19 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Hier wird eine vollständige Liste der Stammzertifikate und Zertifizierungsstellen (CAS) in Office 365 angezeigt.
-ms.openlocfilehash: 7b3aeb4012f510b8ccd3d7e608a9aa9be04b01ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593196"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131508"
 ---
 # <a name="office-365-encryption-chains"></a>Office 365 Verschlüsselungs Ketten
 
 Office 365 nutzt eine Reihe unterschiedlicher Zertifikatanbieter. Im folgenden wird die vollständige Liste der bekannten Office 365 Stammzertifikate beschrieben, auf die Kunden beim Zugriff auf Office 365 stoßen können. Informationen zu den Zertifikaten, die Sie möglicherweise in ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Planen von Drittanbieter-SSL-Zertifikaten für Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). Die folgenden Zertifikatinformationen gelten für alle globalen und nationalen Cloud-Instanzen von Office 365.
 
-**ITAR-Kunden (Defense #a0 gcc High):** wenden Sie sich an Ihr Cloud Tam oder SDM, um das richtige P7B-Paket zu erhalten.
+>[!NOTE]
+>Informationen zu Zertifikaten, die für **DoD-und gcc-High** -Kunden gelten, finden Sie unter [Office 365 Encryption Chains-DoD und gcc High](encryption-office-365-certificate-chains-itar.md).
 
 | **Zertifikattyp** | **P7B herunterladen** | **CRL-Endpunkte** | **OCSP-Endpunkte** | **AIA-Endpunkte** |
 | --- | --- | --- | --- | --- |

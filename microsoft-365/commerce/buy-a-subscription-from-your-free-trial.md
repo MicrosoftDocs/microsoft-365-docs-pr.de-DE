@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Erwerben Sie ein Office 365 für Unternehmen-Abonnement. Sie können den gleichen Typ von Abonnement erwerben, den Sie versucht haben, oder einen anderen Plan.
-ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549802"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142287"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>So aktivieren Sie Microsoft Office 365 Business
 
@@ -94,12 +94,9 @@ Es ist ganz einfach, und wenn Sie den gleichen Abonnementtyp wie den Ihrer Testv
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>Kaufen eines anderen Plans als den Ihrer Testversion
 
-Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Sie Ihre Benutzerlizenzen aus dem Testplan Ihrem neuen Plan neu zuweisen (bevor Ihre 90-tägige Nachfrist nach Ablauf des Test Plans endet), um Ihre Daten, Konten und Konfiguration.
+Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Sie Ihre Benutzerlizenzen aus dem Testplan Ihrem neuen Plan (vor Ablauf der 90-tägigen Kulanzzeit nach Ablauf des Test Plans) zuweisen, damit Ihre Daten, Konten und die Konfiguration beibehalten werden.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
@@ -139,7 +136,6 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 
 ::: moniker range="o365-21vianet"
 
-
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Wählen Sie auf der Seite **Abonnement** die Option **Abonnements hinzufügen**aus.
@@ -159,7 +155,6 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 8. Wählen Sie auf der Seite Bestätigung die Option **zu admin Home wechseln**aus.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie Lizenzen zu Ihrem Abonnement hinzufügen.
-ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: aa924c3c485f33fa831d140413ebfd2d872f30ff
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951946"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142239"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Hinzufügen von Lizenzen zu oder verlängern eines Abonnements, das für die Verwendung eines Product Keys bezahlt wurde
 
@@ -41,9 +41,6 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 ## <a name="add-licenses-to-your-subscription"></a>Hinzufügen von Lizenzen zu Ihrem Abonnement
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
@@ -101,9 +98,6 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 ## <a name="extend-the-expiration-date-of-your-subscription"></a>Verlängern des Ablaufdatums Ihres Abonnements
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 

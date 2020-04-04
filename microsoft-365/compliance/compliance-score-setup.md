@@ -13,24 +13,26 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Artikel erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und das Dashboard für Microsoft Compliance Score verstehen, das die Vereinfachung und Automatisierung von Risikobewertungen erleichtert.
-ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: In diesem Artikel erfahren Sie, wie Sie die Microsoft-Kompatibilitätsbewertung einrichten und verwenden, um Risikobewertungen zu vereinfachen und zu automatisieren.
+ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635123"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141520"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Der globale Administrator von Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf das Kompatibilitäts Ergebnis zugreift. Wenn Sie das Kompatibilitäts Ergebnis zum ersten Mal besuchen, empfehlen wir die globale Administratoranmeldung, und legen Sie die Benutzerberechtigungen fest, wie unten beschrieben.
+Der globale Administrator von Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf das Kompatibilitäts Ergebnis zugreift. Wir empfehlen die globale Administratoranmeldung und legen Benutzerberechtigungen wie unten beschrieben fest, wenn Sie das Kompatibilitäts Ergebnis zum ersten Mal besuchen.
 
 ## <a name="sign-in"></a>Anmelden
 
 1. Wechseln Sie zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) , und **melden** Sie sich mit ihrem globalen Microsoft 365-Administratorkonto an.
 2. Wählen Sie **Kompatibilitätsbewertung** im linken Navigationsbereich aus. Das [Dashboard für die Konformitätsbewertung sollte dann mit ihrer Bewertung](#understand-the-compliance-score-dashboard)angezeigt werden.
+
+Der direkte Link zum Zugriff auf die Konformitäts [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore)Bewertung lautet wie folgt:.
 
 ## <a name="set-user-permissions-and-assign-roles"></a>Festlegen von Benutzerberechtigungen und Zuweisen von Rollen
 
@@ -38,9 +40,9 @@ Bei der Kompatibilitätsbewertung wird ein RBAC-Berechtigungsmodell (Role-Based 
 
 ### <a name="where-to-set-permissions"></a>Festlegen von Berechtigungen
 
-Der globale Administrator für Ihre Organisation kann Benutzerberechtigungen im Microsoft 365 Compliance Center oder in Azure Active Directory (Azure AD) festlegen. Sobald die Rollen an beiden Speicherorten festgelegt wurden, können Benutzer auf die Konformitätsbewertung (ebenso wie auf den Compliance-Manager) zugreifen.
+Der globale Administrator für Ihre Organisation kann Benutzerberechtigungen im Microsoft 365 Compliance Center oder in Azure Active Directory (Azure AD) festlegen. Sobald die Rollen an beiden Speicherorten festgelegt wurden, können Benutzer auf die Konformitätsbewertung und den Compliance-Manager zugreifen.
 
-Beachten Sie, dass vorhandene Compliance Manger-Rollen **nicht** auf die Konformitätsbewertung übertragen werden.  Wenn Sie zuvor eine Rolle im Compliance-Manager zugewiesen haben, gewährt diese Rolle Ihnen daher keinen Zugriff auf die Konformitätsbewertung. Ihr globaler Administrator muss im Microsoft 365 Compliance Center oder Azure AD Berechtigungen und eine Rolle für Sie festlegen, damit Sie auf das Kompatibilitäts Ergebnis zugreifen können.
+Beachten Sie, dass vorhandene Compliance Manger-Rollen **nicht** auf die Konformitätsbewertung übertragen werden. Wenn Sie über eine Rolle im Compliance-Manager verfügen und der Kompatibilitätsbewertung neu ist, gewährt Ihnen die Compliance-Manager-Rolle keinen Zugriff auf die Konformitätsbewertung. Ihr globaler Administrator muss im Microsoft 365 Compliance Center oder Azure AD Berechtigungen und eine Rolle für Sie festlegen, damit Sie auf das Kompatibilitäts Ergebnis zugreifen können.
 
 ### <a name="role-types"></a>Rollentypen
 
@@ -68,7 +70,7 @@ So legen Sie Berechtigungen im Microsoft 365 Compliance Center fest:
 
 ## <a name="configure-automatic-secure-score-updates"></a>Konfigurieren automatischer Updates für sichere Bewertungen
 
-Standardmäßig haben alle neuen Mandanten die Option Automatische Updates für [sichere Bewertungen](../security/mtp/microsoft-secure-score.md) aktiviert. Dies bedeutet, dass alle Aktionen, die von Secure Score überwacht werden, den Status für dieselbe Aktion automatisch in der Kompatibilitätsbewertung aktualisieren.
+Standardmäßig haben alle neuen Mandanten die Option Automatische Updates für [sichere Bewertungen](../security/mtp/microsoft-secure-score.md) aktiviert. Alle Aktionen, die von Secure Score überwacht werden, aktualisieren den Status für dieselbe Aktion automatisch in der Kompatibilitätsbewertung.
 
 Ihr globaler Administrator kann diese Einstellung verwalten, um automatische Updates für alle Aktionen zu deaktivieren oder Aktualisierungen für Aktionen einzeln festzulegen.
 
@@ -84,7 +86,7 @@ Führen Sie die folgenden Schritte aus, um automatische Bewertungen für sichere
 
 Wenn Sie die Option **pro Aktion festlegen auswählen,** führen Sie die folgenden zusätzlichen Schritte aus, um für einzelne Aktionen sichere Bewertungs Aktualisierungen zu aktivieren:
 
-4. Wählen Sie im oberen Menü den Eintrag **Compliance-Manager** aus (Hinweis: Wählen Sie nicht "Compliance-Manager (klassisch)") aus.
+4. Wählen Sie im oberen Menü den Eintrag **Compliance-Manager** aus (Wählen Sie nicht "Compliance-Manager (klassisch)" aus, bei dem es sich um ein Vorgängerprodukt handelt).
 
 5. Wählen Sie in der oberen rechten Ecke des Bildschirms **Mandantenverwaltung** aus.
 
@@ -106,7 +108,7 @@ Das Compliance Score-Dashboard bietet Ihnen einen Überblick über Ihre aktuelle
 
 ### <a name="overall-compliance-score"></a>Gesamtergebnis der Konformität
 
-Ihr Konformitäts Bewertungspunkt, der oben im Vordergrund steht, zeigt einen Prozentsatz basierend auf Punkten, die für die Durchführung von Verbesserungs Aktionen zur Behandlung wichtiger Datenschutzstandards und-Vorschriften erreichbar sind.
+Ihr Konformitäts Bewertungspunkt wird oben im Vordergrund vorgestellt. Es zeigt einen Prozentsatz auf der Grundlage von Punkten, die für die Durchführung von Verbesserungs Aktionen zur Behandlung wichtiger Datenschutzstandards und-Vorschriften erreichbar sind.
 
 Wenn Sie zum ersten Mal auf die Konformitätsbewertung stoßen, basiert Ihr anfängliches Ergebnis auf der integrierten Microsoft 365-Datenschutz Basislinie – einer Reihe von Steuerelementen, die allgemeine Branchenvorschriften und-Standards umfassen. Da durch das Kompatibilitäts Ergebnis Ihr System vorhandener Microsoft 365-Lösungen überprüft wird, erhalten Sie eine erste Bewertung Ihrer Compliance-Haltung basierend auf den derzeit von Ihrer Organisation aktivierten Datenschutz-und Sicherheitseinstellungen.
 
@@ -114,11 +116,11 @@ Wenn Sie für Ihre Organisation relevante Bewertungen hinzufügen, wird Ihre Pun
 
 ### <a name="key-improvement-actions"></a>Wichtige Verbesserungs Aktionen
 
-In diesem Abschnitt werden die wichtigsten Verbesserungs Aktionen aufgelistet, die Sie im Moment durchführen können, um den größten positiven Einfluss auf Ihre gesamte Konformitätsbewertung zu nehmen. Es werden Aktionen aufgelistet, die nicht abgeschlossen sind oder mit der Bewertung mit hohen Risiken fehlgeschlagen sind.
+In diesem Abschnitt werden die wichtigsten Verbesserungs Aktionen aufgelistet, die Sie im Moment durchführen können, um den größten positiven Einfluss auf Ihre gesamte Konformitätsbewertung zu nehmen.
 
 ### <a name="solutions-that-affect-your-score"></a>Lösungen, die Ihre Punktzahl beeinflussen
 
-In diesem Abschnitt wird gezeigt, welche Lösungen Aktionen enthalten, mit denen die beste Möglichkeit besteht, Ihre Punktzahl positiv zu beeinflussen, und wie viele hervorragende Verbesserungs Aktionen in den einzelnen Lösungen vorhanden sind.
+In diesem Abschnitt werden Lösungen mit Aktionen gezeigt, die die beste Möglichkeit haben, Ihre Punktzahl positiv zu beeinflussen, sowie die Anzahl der ausstehenden Verbesserungs Aktionen in jeder Lösung.
 
 ### <a name="compliance-score-breakdown"></a>Aufschlüsselung der Konformitätsbewertung
 
@@ -134,9 +136,9 @@ Sie können die Dashboardansicht filtern, um nur die Elemente anzuzeigen, die si
 So wenden Sie Filter an:
 
 1. Wählen Sie in der oberen rechten Ecke des Dashboards den **Filter** aus.
-2. Wählen Sie **im Bereich flyoutfilter die Filterkriterien** aus, und klicken Sie dann auf über **nehmen**.
+2. Wählen Sie Ihre Filterkriterien im Flyout- **Filter** Bereich aus, und wählen Sie dann **Apply**aus.
 
-Nachdem ein Filter angewendet wurde, wird das Ergebnis in Echtzeit angepasst. Der Prozentsatz der Konformitätsbewertung und die Aufschlüsselung sowie die Verbesserungs Aktionen und-Lösungen beziehen sich jetzt nur auf Daten, die von Ihren Filterkriterien abgedeckt werden. Wenn Sie sich bei der Konformitätsbewertung abmelden, bleibt die gefilterte Ansicht erhalten, wenn Sie sich wieder anmelden.
+Nachdem Sie einen Filter angewendet haben, wird das Ergebnis in Echtzeit angepasst. Der Prozentsatz der Konformitätsbewertung und die Aufschlüsselung sowie die Verbesserungs Aktionen und-Lösungen beziehen sich jetzt nur auf Daten, die von Ihren Filterkriterien abgedeckt werden. Wenn Sie sich bei der Konformitätsbewertung abmelden, bleibt die gefilterte Ansicht erhalten, wenn Sie sich wieder anmelden.
 
 So entfernen Sie Filter:
 

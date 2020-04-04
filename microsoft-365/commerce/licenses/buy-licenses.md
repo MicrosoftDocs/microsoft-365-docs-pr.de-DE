@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Hier erfahren Sie, wie Sie Lizenzen für Ihr Office 365 für Unternehmen Abonnement hinzufügen und entfernen.
-ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410042"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142175"
 ---
 # <a name="manage-subscription-licenses"></a>Verwalten von Abonnementlizenzen
 
@@ -39,9 +39,6 @@ Mit den folgenden Schritten können Sie Lizenzen aus ihren Abonnements hinzufüg
 [] Sie können eine Lizenz nicht aus einem Abonnement entfernen, wenn sie einem Benutzer zugewiesen ist. Wenn Sie eine Lizenz entfernen möchten, die derzeit einer Person zugewiesen ist, müssen Sie [Lizenzen von Benutzern entfernen](../../admin/manage/remove-licenses-from-users.md) , bevor Sie die Lizenz aus dem Abonnement entfernen können.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Was Sie über den Erwerb von Lizenzen für Ihr Geschäfts Abonnement wissen müssen
 
@@ -87,7 +84,7 @@ Nachdem Sie neue Lizenzen erworben haben, stellen Sie sicher, dass Sie die [Lize
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Was geschieht, wenn der Link zum Hinzufügen/Entfernen von Lizenzen nicht angezeigt wird?
 
-In dieser Tabelle werden die Gründe beschrieben, warum der Link **Lizenzen hinzufügen/entfernen** möglicherweise nicht verfügbar ist und was Sie dann unternehmen können. 
+In dieser Tabelle werden die Gründe beschrieben, warum der Link **Lizenzen hinzufügen/entfernen** möglicherweise nicht verfügbar ist und was Sie dann unternehmen können.
 
 |Grund  |Beschreibung  |Lösung  |
 |---------|---------|---------|

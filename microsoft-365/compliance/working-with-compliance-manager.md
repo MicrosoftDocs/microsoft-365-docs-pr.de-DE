@@ -13,36 +13,33 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Compliance-Manager ermöglicht das Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
-ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool. Verwenden Sie es zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
+ms.openlocfilehash: aaae5f1123872367ad98466833f9e06210bfb652
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634133"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142660"
 ---
-# <a name="work-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
+# <a name="working-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
 > [!IMPORTANT]
-> Microsoft Compliance Manager ist ein Dashboard und Verwaltungstool, das eine Zusammenfassung Ihrer Datenschutz-und Compliance-Größe sowie Empfehlungen zur Verbesserung des Datenschutzes und der Compliance bietet. Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen; Es liegt in Ihrer Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Im Compliance-Manager gefundene Empfehlungen sollten nicht als Garantie für die Compliance interpretiert werden.
+> Microsoft Compliance Manager ist ein Dashboard und Verwaltungstool, das eine Zusammenfassung Ihrer Datenschutz-und Compliance-Größe sowie Empfehlungen zur Verbesserung des Datenschutzes und der Compliance bietet. Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen. Es liegt in Ihrer Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Im Compliance-Manager gefundene Empfehlungen sollten nicht als Garantie für die Compliance interpretiert werden.
 
 ## <a name="access-compliance-manager"></a>Zugriff auf Compliance-Manager
 
-Sie können über das Service Trust Portal auf den Compliance-Manager zugreifen. Alle Personen mit einem Microsoft-Konto oder mit einem Azure Active Directory-Organisationskonto können auf den Compliance-Manager zugreifen.
-  
-1. Wechseln Sie zu [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
+Auf den Compliance-Manager kann über das Microsoft-Dienst Vertrauensstellungs Portal zugegriffen werden. Jeder Benutzer mit einem Microsoft-Konto oder einem Azure Active Directory-organisationskonto kann auf den Compliance-Manager zugreifen.
+
+1. Wechseln Sie zu [https://servicetrust.microsoft.com/ComplianceManager/V3](https://servicetrust.microsoft.com/ComplianceManager/V3).
 
 2. Melden Sie sich mit Ihrem Microsoft-Dienstkonto an, bei dem es sich um das Benutzerkonto Office 365, Microsoft 365 oder Azure Active Directory (Azure AD) handelt.
 
-3. Im Dienst Vertrauensstellungs Portal wird empfohlen, den **Compliance-Manager**auszuwählen, bei dem es sich um die Vorschauversion mit den neuesten Features handelt. **Compliance-Manager (klassisch)** führt Sie zur vorherigen Version von Compliance-Manager.
-
-4. Wenn die Geheimhaltungsvereinbarung angezeigt wird, lesen Sie Sie und wählen Sie **agree**, die dann Ihr Compliance-Manager-Dashboard anzeigt.
-
-Um Ihnen den Einstieg zu erleichtern, wird eine ISO/IEC 27001:2103-Bewertung für Office 365 standardmäßig für Ihre Organisation angezeigt.
+> [!NOTE]
+> Wählen Sie im Dienst Vertrauensstellungs Portal **Compliance-Manager**aus, bei dem es sich um die Vorschauversion mit den neuesten Features handelt. Wählen Sie **Compliance-Manager (klassisch)** nicht aus, der Legacyfeatures enthält, die in dieser Dokumentation nicht behandelt werden.
 
 ## <a name="administration"></a>Verwaltung
 
-Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Der globale Administrator kann Benutzerberechtigungen zuweisen und automatisch sichere Bewertungs Aktualisierungen für alle Aktionen aktivieren.
+Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Der globale Administrator kann Benutzerberechtigungen zuweisen und automatische Bewertungen für sicheres Ergebnis aktivieren.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Zuweisen von Compliance-Manager-Rollen zu Benutzern
 
@@ -110,17 +107,21 @@ Sie können Bewertungen auf eine Weise gruppieren, die für Sie logisch ist, bei
   - Office 365 + ISO 27018:2014
 
 > [!NOTE]
-> Es wird empfohlen, eine Gruppierungs Strategie für Ihre Organisation zu ermitteln, *bevor* Sie neue Bewertungen hinzufügen. Standardmäßig steht für Ihre anfänglichen Bewertungen eine Gruppe mit dem Namen "Default Group" zur Verfügung.
+> Es wird empfohlen, eine Gruppierungs Strategie für Ihre Organisation zu ermitteln, *bevor* Sie neue Bewertungen hinzufügen.
+
+Um Ihnen den Einstieg zu erleichtern, ist eine **Standard** Gruppe eingerichtet, die die Datenschutz Basislinie enthält. Dieser Basisplan ist eine Gruppe von Steuerelementen, die allgemeine Branchenvorschriften und-Standards enthält ([Weitere Informationen](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
 ### <a name="how-to-create-a-group"></a>Vorgehensweise Erstellen einer Gruppe
 
-Gruppen können nicht als eigenständige Entitäten erstellt werden. Eine Gruppe muss immer mindestens eine Bewertung enthalten, um eine Gruppe zu erstellen, müssen Sie zunächst eine Bewertung erstellen, die in der Gruppe platziert werden soll. Führen Sie die folgenden Schritte aus, um eine Gruppe zu erstellen:
+Gruppen können nicht als eigenständige Entitäten erstellt werden. Eine Gruppe muss immer mindestens eine Bewertung enthalten, um eine Gruppe zu erstellen, müssen Sie zunächst eine Bewertung erstellen, die in der Gruppe platziert werden soll.
+
+Führen Sie die folgenden Schritte aus, um eine Gruppe zu erstellen:
 
 1. Erstellen Sie eine neue Bewertung, indem Sie am oberen Rand des Dashboards **+ Assessment hinzufügen** auswählen.
 2. Geben Sie im Bereich " **Bewertungs** Flyout" einen Titel für Ihre Bewertung ein, und wählen Sie im Dropdownmenü eine Vorlage aus.
 3. Wenn Sie **eine Gruppe auswählen oder eine neue Gruppe hinzufügen**möchten, wählen Sie **neue Gruppe hinzufügen** aus, und geben Sie Ihren Gruppennamen in das Feld unten ein.
 4. Wenn Sie Informationen aus einer vorhandenen Gruppe kopieren möchten, aktivieren Sie die Option **möchten Sie die Daten aus einer vorhandenen Gruppe kopieren?** **.** Wählen Sie im Dropdownmenü darunter die Gruppe aus, die Sie kopieren möchten, und aktivieren Sie die Kontrollkästchen aller Felder, die Sie in die neue Bewertung in ihrer neuen Gruppe übertragen möchten.
-5. Klicken Sie auf **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und die neue Gruppe wird automatisch in Ihrem Dashboard angezeigt.
+5. Klicken Sie auf **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und ihre neue Gruppe wird auf dem Dashboard angezeigt.
 
 Was Sie beim Arbeiten mit Gruppen wissen sollten:
   
@@ -132,27 +133,25 @@ Was Sie beim Arbeiten mit Gruppen wissen sollten:
 - Gruppen können Bewertungen für dieselbe Zertifizierung oder Regel enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produkt-Zertifizierungs Paar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und das NIST-GfK enthalten. Eine Gruppe kann mehrere Bewertungen für dasselbe Produkt nur dann enthalten, wenn die entsprechende Zertifizierung oder Regulierung für jede andere unterschiedlich ist.
 - Durch das Ausblenden einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen. Weitere Aktualisierungen anderer verwandter Bewertungen werden nicht mehr in der ausgeblendeten Bewertung wiedergegeben. ([Hier erfahren Sie, wie Sie Bewertungen ausblenden.](#hide-a-template-or-an-assessment))
 - Gruppen können nicht gelöscht werden.
+- Wenn eine Änderung an einem Aktionselement vorgenommen wird, das in mehreren Gruppen angezeigt wird, wird diese Änderung in allen Instanzen dieses Aktionselements wiedergegeben.
 
-## <a name="tenant-management"></a>Mandantenverwaltung
+## <a name="tenant-management-of-dimensions-owners--customer-actions"></a>Mandantenverwaltung von Dimensionen, Besitzern, & Kundenaktionen
 
-Compliance-Manager (Preview) enthält eine neue Schnittstelle zum Verwalten neuer Datenelemente, die als **Mandantenverwaltung**bezeichnet werden. Mit dieser Schnittstelle können Sie Mandantenweite Einstellungen verwalten:
+Mit der **Mandanten Verwaltungs** Schnittstelle können Sie diese organisationsweiten Einstellungen verwalten:
 
 - **Dimensionen:** Zeigen Sie Metadaten für Vorlagen, BEWERTUNGEN und Aktionselemente an, mit denen Sie benutzerdefinierte Pivots für Filter erstellen können.
-- **Besitzer:** Geben Sie einen Besitzer für jedes Aktionselement an.
+- **Besitzer:** Füllen Sie eine Liste der verantwortlichen Parteien auf, die Aktionen zugeordnet werden können.
 - **Aktionen für Kunden:** Verwalten Sie die vollständige Liste der Aktionen, die in Compliance-Manager (Preview) enthalten sind, und aktivieren/deaktivieren Sie die Secure Score-Überwachung für Aktionen, die mit Secure Score integriert sind.
 
-Wählen Sie **Mandantenverwaltung** aus, um die Verwaltungsschnittstelle zu öffnen, und führen Sie die folgenden Schritte aus, um **Dimensionen**, **Besitzer**und **Kundenaktionen**zu verwalten.
+Wählen Sie in der oberen rechten Ecke des Bildschirms die Option **Mandantenverwaltung** aus, um die Verwaltungsoberfläche zu öffnen, und führen Sie die folgenden Schritte aus, um **Dimensionen**, **Besitzer**und **Kundenaktionen**zu verwalten.
 
 ### <a name="dimensions"></a>Maße
 
-Dimensionen sind Satz von Metadaten, die Informationen zu einer Vorlage, einer Bewertung oder einem Aktionselement bereitstellen. Dimensionen verwenden das Konzept von Schlüsseln und Werten, wobei der Dimensionsschlüssel eine Eigenschaft darstellt, und Dimensionswert gültige Werte für die Eigenschaft darstellt. Beispielsweise gibt es im Compliance-Manager drei Arten von Aktionen. Sie werden durch einen Dimensionsschlüssel des **Aktionstyps** und der Dimensionswerte der Dokumentation, der **Betriebs**-und der **technischen** **Beschreibung**definiert. Sie können vorhandene Dimensionen bearbeiten oder löschen.
-
-> [!IMPORTANT]
-> Sie können neue Dimensionen hinzufügen und Sie Vorlagen zuweisen, die Sie bereits importiert haben. Sie können auch neue Bemaßungen zu allen neuen Vorlagen hinzufügen, die Sie erstellen.
+Dimensionen sind Satz von Metadaten, die Informationen zu einer Vorlage, einer Bewertung oder einem Aktionselement bereitstellen. Dimensionen verwenden das Konzept von Schlüsseln und Werten, wobei der Dimensionsschlüssel eine Eigenschaft darstellt, und Dimensionswert gültige Werte für die Eigenschaft darstellt. Beispielsweise gibt es im Compliance-Manager drei Arten von Aktionen. Sie werden durch einen Dimensionsschlüssel von **Aktions Zweck** und Dimensionswerten von **vorbeugenden**, **detektivischen**und **korrigier**enden definiert.
 
 ### <a name="owners"></a>Besitzer
 
-Besitzer werden verwendet, um die zuständige Partei für jedes Steuerelement zu identifizieren. Alle integrierten Steuerelemente befinden sich im Besitz von Microsoft, von Kunden oder von beiden. Sie können benutzerdefinierte Werte für Besitzer erstellen, die verwendet werden können, um mehr granulare Zuständigkeiten innerhalb Ihrer Organisation anzugeben. Sie können beispielsweise Besitzer erstellen, die bestimmte Gruppen, Teams oder Unternehmenseinheiten in Ihrer Organisation darstellen.
+Besitzer werden verwendet, um die Person zu identifizieren, die für jedes Steuerelement zuständig ist. Alle integrierten Steuerelemente befinden sich im Besitz von Microsoft, von Kunden oder von beiden. Sie können benutzerdefinierte Werte für Besitzer erstellen, die verwendet werden können, um mehr granulare Zuständigkeiten innerhalb Ihrer Organisation anzugeben. Sie können beispielsweise Besitzer erstellen, die bestimmte Gruppen, Teams oder Unternehmenseinheiten in Ihrer Organisation darstellen.
 
 #### <a name="add-an-owner"></a>Hinzufügen eines Besitzers
 
@@ -192,24 +191,57 @@ Wenn Organisationen zunächst Microsoft 365 oder Office 365 bereitstellen, dauer
 
 Alle Aktionen, die nicht von der Integration von Secure Score unterstützt werden, können manuell implementiert werden. Durch eine manuelle Implementierung wird die Bewertung für die Gruppe dieser Aktion berücksichtigt.
 
-#### <a name="add-a-customer-action"></a>Hinzufügen einer Kunden Aktion
-
-1. Wählen Sie **+ Kunden Aktion hinzufügen**aus.
-2. Geben Sie einen eindeutigen Titel für die Aktion im Feld **Title** an.
-3. Geben Sie im Feld **Maximale Konformitätsbewertung** eine Konformitätsbewertung für die Aktion an (Dies kann eine beliebige Zahl von 1-99 sein).
-4. Geben Sie mithilfe der Dropdownliste **Aktionstyp** den Typ der Aktion an, die Sie hinzufügen möchten. Wenn der Aktionstyp nicht vorhanden ist, können Sie ihn hinzufügen, indem Sie den Wert dem Dimensionsschlüssel Aktion hinzufügen.
-5. Verwenden Sie das Dropdown-Menü **Dimensionen** , um Dimensionsschlüssel und Werte für die Aktion anzugeben oder hinzuzufügen.
-6. Verwenden Sie die Dropdownliste **Besitzer** , um den Besitzer für Aktion anzugeben.
-7. Wählen **+** Sie diese Option aus, um eine Beschreibung und einen Beschreibungstitel für die Aktion hinzuzufügen.
-8. Wählen Sie das **X** aus, um das Blatt Beschreibung zu schließen.
-9. Wählen Sie **Speichern** aus, um die Aktion Kunden zu speichern.
-
-#### <a name="delete-a-customer-action"></a>Löschen einer Kunden Aktion
-
-1. Wählen Sie die Auslassungspunkte (...) für die Aktion aus, die Sie ändern möchten, und wählen Sie **Löschen**aus.
-2. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **Löschen**aus.
-
 ## <a name="assessments"></a>Bewertungen
+
+In diesem Abschnitt wird erläutert, wie Sie Ihre Bewertungen anzeigen und arbeiten, einschließlich der Vorgehensweise zum Hinzufügen neuer, exportieren, Kopieren von Informationen aus vorhandenen Bewertungen und aufrecht erhalten der Aktualisierung durch die Versionsverwaltung.
+
+### <a name="view-an-assessment-and-action-details"></a>Anzeigen von Bewertungs-und Aktionsdetails
+  
+Wählen Sie im Dashboard **Assessments** den Bewertungs Namen aus, um ihn zu öffnen, und zeigen Sie die Informationen zu Aktionselementen und Steuerelementen an.
+
+Hier ist ein Beispiel für die Bewertung für Office 365 und ISO 27001. Die erste Ansicht zeigt die neue Ansicht "Aktionselemente" im Compliance-Manager (Preview).
+
+![Ansicht "Compliance-Manager-Aktionselemente"](../media/compliance-manager-action-items.png)
+
+Die Aktionen werden in alphabetischer Reihenfolge aufgeführt, und jeder Aktion wird ein Ergebnis und ein Besitzer zugewiesen. Klicken Sie auf den Link **Read More** , um die Details der einzelnen Aktionen zu lesen.
+
+![Ansicht "Compliance-Manager-Aktionselemente"](../media/compliance-manager-actions-read-more.png)
+
+Wählen Sie den Link **überprüfen** aus, um die Aktion zu verwalten, zuzuweisen, zu implementieren und zu testen. Unten sehen Sie eine Beispielaktion.
+
+![Aktionsansicht für Compliance-Manager](../media/compliance-manager-action.png)
+
+Verwenden Sie die folgenden Felder, um den Aktions Workflow zu verwalten:
+
+- **Benutzer zuweisen:** Wählen Sie dieses Feld aus, um den Benutzer auszuwählen oder einzugeben, dem diese Aktion zugewiesen werden soll. Sie können in der Liste einen Bildlauf durchführen oder einen Namen eingeben, um ihn zu finden, und dann auswählen.
+- **Dokumente verwalten:** Sie können einen Nachweis über die Implementierung in Form von Office-Dokumenten, Bilddateien und Screenshots, PowerShell-Ausgaben in CSV oder txt und PDFs hochladen.
+- **Implementierungs Status:** Wird verwendet, um den aktuellen Implementierungsstatus der Aktion anzugeben. Mögliche Werte sind nicht implementiert, implementiert, alternative Implementierung, geplant und nicht im Bereich.
+- **Implementierungsdatum:** Das Datum, an dem die Aktion ausgeführt wurde.
+- **Test Ergebnis:** Wird verwendet, um die Ergebnisse der Implementierungs Überprüfung anzugeben. Mögliche Werte werden nicht bewertet, übergeben, fehlgeschlagen – niedriges Risiko, Fehler – mittleres Risiko, Fehler – hohes Risiko und nicht im Bereich.
+- **Test Datum:** Das Datum, an dem die Überprüfung stattgefunden hat.
+- **Anmerkungen zur Implementierung:** Geben Sie Implementierungsdetails für Ihre Organisation sowie alle Notizen ein, die Sie einschließen möchten.
+- **Testplan:** Geben Sie die Details des Testplans für diese Aktion sowie alle Notizen ein, die Sie einschließen möchten.
+- **Zusätzliche Informationen:** Geben Sie zusätzliche Informationen zu dieser Aktion oder deren Implementierung in Ihrer Organisation sowie alle Notizen ein, die Sie einschließen möchten.
+
+Im Dashboard für **Steuerelemente** können Sie Informationen zu Steuerelementen auf der Ebene der Bewertung und Vorlage anzeigen. Unten sehen Sie ein Beispiel für das Steuerelement-Info-Dashboard für Bewertungen.
+
+![Compliance-Manager-Steuerelement-Info-Ansicht](../media/compliance-manager-controls-info.png)
+
+Für Bewertungen zeigt das Dashboard für Steuerelemente Informationen die folgenden Informationen an:
+
+- Eine **Gruppen** -Dropdownliste zum Auswählen der anzuzeigenden Gruppe (wenn mehrere Gruppen verwendet werden).
+- Eine **Bewertungs** Dropdownliste zur Auswahl der anzuzeigenden Bewertung.
+- Metadaten zur ausgewählten Bewertung, einschließlich:
+    - Eine Statusanzeige für **bewertete Steuer** Elemente, die die Anzahl der beurteilten Steuerelemente über die Gesamtzahl der Steuerelemente angibt.
+    - Die aktuelle **Konformitäts** Bewertung für die Bewertung wird als Prozentsatz angezeigt.
+    - Details zur **Zertifizierung** und dem **Produkt** , die bei der Bewertung verwendet werden.
+    - Der aktuelle **Status** und das Datum der letzten **Änderung** für die Bewertung.
+- Eine Liste der **in-Bereichs Dienste** für die Bewertung.
+- Details zu den Steuerelementen, gruppiert nach Steuerelement Familie, mit Links zu Kundenaktionen und Details zur Microsoft-Implementierung:
+    - **Ihre Aktionen** zeigt die Kundenaktionen an, die Sie ausführen können, um einige oder alle Anforderungen des Steuerelements zu erfüllen. Vielen Steuerelementen sind mehrere Aktionen zugeordnet, und alle einem Steuerelement zugeordneten Aktionen werden hier angezeigt. Die hier aufgeführten Aktionen weisen dieselbe Benutzeroberfläche auf wie die im Dashboard Aktionen.
+    - **Microsoft-Aktionen** zeigt die Liste der Steuerelemente aus dem internen Microsoft-Framework an, die für das ausgewählte Zertifizierungs Steuerelement gelten. Wählen Sie für jedes interne Steuerelement **implementiert** aus, um die Implementierungs-und Testdetails von Microsoft sowie das Testergebnis und das Test Datum anzuzeigen, wie unten dargestellt.
+
+![Compliance-Manager-Microsoft-Aktionsansicht](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="add-an-assessment"></a>Hinzufügen eines Assessments
   
@@ -234,11 +266,11 @@ Alle Aktionen, die nicht von der Integration von Secure Score unterstützt werde
 - Die Dimensionen der Bewertung, einschließlich Zertifizierung, Umgebung und Produkt, die auf die Bewertung angewendet wurden.
 - Das Datum, an dem es erstellt wurde, und das Datum, an dem es zuletzt geändert wurde.
 - Das Bewertungsergebnis wird als Prozentsatz angezeigt. Diese Bewertung enthält automatisch Ihre Ergebnisse aus von Microsoft verwalteten Steuerelementen und aus sicherer Bewertung.
-- Fortschrittsindikatoren, die die Anzahl der beurteilten von Microsoft verwalteten und vom Kunden verwalteten Steuerelemente anzeigen.
+- Fortschrittsindikatoren, die die Anzahl der beurteilten von Microsoft verwalteten und von Kunden verwalteten Steuerelemente anzeigen.
 
 ### <a name="copying-information-from-existing-assessments"></a>Kopieren von Informationen aus vorhandenen Bewertungen
 
-Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus einer vorhandenen Gruppe zu kopieren. Auf diese Weise können Sie die in die kopierte Bewertung eingegebenen Informationen auf dieselben Steuerelemente in der neuen Bewertung anwenden. Wenn Sie beispielsweise eine Gruppe für alle FFIEC-bezogenen Bewertungen in Ihrer Organisation haben, können Sie die folgenden Informationen aus vorhandenen Bewertungen kopieren:
+Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus einer vorhandenen Gruppe zu kopieren. Durch kopieren können Sie die in die kopierte Bewertung eingegebenen Informationen auf dieselben Steuerelemente in der neuen Bewertung anwenden. Wenn Sie beispielsweise eine Gruppe für alle FFIEC-bezogenen Bewertungen in Ihrer Organisation haben, können Sie die folgenden Informationen aus vorhandenen Bewertungen kopieren:
 
 - Implementierungs Details
 - Testplan & zusätzliche Informationen
@@ -260,62 +292,21 @@ Wenn Sie eine Bewertung erstellen, haben Sie die Möglichkeit, Informationen aus
 
 3. Wählen Sie **Speichern** aus, um die Bewertung zu erstellen.
 
-### <a name="view-an-assessment"></a>Anzeigen einer Bewertung
-  
-1. Wählen Sie im Dashboard Assessments den Bewertungs Namen aus, um ihn zu öffnen, und zeigen Sie die Informationen zu Aktionselementen und Steuerelementen an.
+### <a name="versioning-alerts-for-assessment-updates"></a>Benachrichtigungen zur Versionsverwaltung für Bewertungs Aktualisierungen
 
-Hier ist ein Beispiel für die Bewertung für Office 365 und ISO 27001. Die erste Ansicht zeigt die neue Ansicht "Aktionselemente" im Compliance-Manager (Preview).
+Wenn ein Update für eine Bewertung zur Verfügung steht, werden Sie in einem Warnungssymbol darüber informiert, dass ein Update bereit ist. Wenn Sie auf dieses Symbol klicken, wird das Update in einem Popupfenster erläutert, und Sie werden aufgefordert, diese zu akzeptieren. Unten sehen Sie ein Beispiel für die Versions Verwaltungs Warnung für eine Bewertung:
 
-![Ansicht "Compliance-Manager-Aktionselemente"](../media/compliance-manager-action-items.png)
+![Kompatibilitätsbewertung – Versions Verwaltungs Warnung](../media/compliance-score-assessment-version.png "Warnung zur Versionsupdate Bewertung")
 
-Die Aktionen werden in alphabetischer Reihenfolge aufgeführt, und jeder Aktion wird ein Ergebnis und ein Besitzer zugewiesen. Klicken Sie auf den Link **Read More** , um die Details der einzelnen Aktionen zu lesen. 
+Wenn Sie das Warnsymbol auswählen, wird ein Flyout-Bereich angezeigt, in dem das Update erläutert wird, und Sie werden aufgefordert, Folgendes anzunehmen
 
-![Ansicht "Compliance-Manager-Aktionselemente"](../media/compliance-manager-actions-read-more.png)
+![Kompatibilitätsbewertung-Versions Verwaltungs Flyout](../media/compliance-score-assessment-version-accept.png "Bestätigungsbereich für die Bewertungs Aktualisierung")
 
-Wählen Sie den Link **überprüfen** aus, um die Aktion zu verwalten, zuzuweisen, zu implementieren und zu testen. Unten sehen Sie eine Beispielaktion.
-
-![Aktionsansicht für Compliance-Manager](../media/compliance-manager-action.png)
-
-In früheren Versionen von Compliance-Manager wurde der Workflow zur Implementierung von Anforderungen auf der Ebene der Steuerung ausgeführt. Ein Compliance Officer würde einem Benutzer ein Steuerelement zuweisen, um das Steuerelement zu implementieren. Es gab zwei Nachteile:
-
-- Steuerelementen wurden häufig mehrere Aktionen zugeordnet, und der Benutzer, dem ein Steuerelement zugewiesen wurde, ist möglicherweise nicht die richtige Person, um alle Aktionen abzuschließen, die zum Implementieren des Steuerelements erforderlich waren.
-- Durch die Kombination von getrennten Vorgängen in einer einzigen Aktion wurde die Sammlung der Signale und Telemetrie verhindert, die zum automatischen Aufzeichnen von Mandanten Konfigurationsänderungen im Compliance-Manager (Preview) verwendet werden.
-
-Im Compliance-Manager (Preview) wurde der Workflowprozess von der Steuerelementebene zur Aktionsebene verschoben. Wenn Sie eine Aktion überprüfen, können Sie die folgenden Felder verwenden, um den Aktions Workflow zu verwalten:
-
-- **Benutzer zuweisen:** Wählen Sie dieses Feld aus, um den Benutzer auszuwählen oder einzugeben, dem diese Aktion zugewiesen werden soll. Sie können in der Liste einen Bildlauf durchführen oder einen Namen eingeben, um ihn zu finden, und dann auswählen.
-- **Dokumente verwalten:** Sie können einen Nachweis über die Implementierung in Form von Office-Dokumenten, Bilddateien und Screenshots, PowerShell-Ausgaben in CSV oder txt und PDFs hochladen.
-- **Implementierungs Status:** Wird verwendet, um den aktuellen Implementierungsstatus der Aktion anzugeben. Mögliche Werte sind nicht implementiert, implementiert, alternative Implementierung, geplant und nicht im Bereich.
-- **Implementierungsdatum:** Das Datum, an dem die Aktion ausgeführt wurde.
-- **Test Ergebnis:** Wird verwendet, um die Ergebnisse der Implementierungs Überprüfung anzugeben. Mögliche Werte werden nicht bewertet, übergeben, fehlgeschlagen – niedriges Risiko, Fehler – mittleres Risiko, Fehler – hohes Risiko und nicht im Bereich.
-- **Test Datum:** Das Datum, an dem die Überprüfung stattgefunden hat.
-- **Anmerkungen zur Implementierung:** Geben Sie Implementierungsdetails für Ihre Organisation sowie alle Notizen ein, die Sie einschließen möchten.
-- **Testplan:** Geben Sie die Details des Testplans für diese Aktion sowie alle Notizen ein, die Sie einschließen möchten.
-- **Zusätzliche Informationen:** Geben Sie zusätzliche Informationen zu dieser Aktion oder deren Implementierung in Ihrer Organisation sowie alle Notizen ein, die Sie einschließen möchten.
-
-Compliance-Manager (Preview) enthält auch den Steuerelement basierten Pivot, der in früheren Versionen gefunden wurde. Wählen Sie das Dashboard **Steuerelemente Info** aus, um es anzuzeigen. Sie können Informationen zu Steuerelementen auf der Bewertungs-und Vorlagenebene anzeigen. Unten sehen Sie ein Beispiel für das Steuerelement-Info-Dashboard für Bewertungen.
-
-![Compliance-Manager-Steuerelement-Info-Ansicht](../media/compliance-manager-controls-info.png)
-
-Für Bewertungen wird im Dashboard Informationen für Steuerelemente angezeigt:
-
-- Eine **Gruppen** -Dropdownliste zum Auswählen der anzuzeigenden Gruppe (wenn mehrere Gruppen verwendet werden).
-- Eine **Bewertungs** Dropdownliste zur Auswahl der anzuzeigenden Bewertung.
-- Metadaten zur ausgewählten Bewertung, einschließlich:
-    - Eine Statusanzeige für **bewertete Steuer** Elemente, die die Anzahl der beurteilten Steuerelemente über die Gesamtzahl der Steuerelemente angibt.
-    - Die aktuelle **Konformitäts** Bewertung für die Bewertung wird als Prozentsatz angezeigt.
-    - Details zur **Zertifizierung** und dem **Produkt** , die bei der Bewertung verwendet werden.
-    - Der aktuelle **Status** und das Datum der letzten **Änderung** für die Bewertung.
-- Eine Liste der **in-Bereichs Dienste** für die Bewertung.
-- Details zu den Steuerelementen, gruppiert nach Steuerelement Familie, mit Links zu Kundenaktionen und Details zur Microsoft-Implementierung:
-    - **Ihre Aktionen** zeigt die Kundenaktionen an, die Sie ausführen können, um einige oder alle Anforderungen des Steuerelements zu erfüllen. Vielen Steuerelementen sind mehrere Aktionen zugeordnet, und alle einem Steuerelement zugeordneten Aktionen werden hier angezeigt. Die hier aufgeführten Aktionen weisen dieselbe Benutzeroberfläche auf wie die im Dashboard Aktionen.
-    - **Microsoft-Aktionen** zeigt die Liste der Steuerelemente aus dem internen Microsoft-Framework an, die für das ausgewählte Zertifizierungs Steuerelement gelten. Wählen Sie für jedes interne Steuerelement **implementiert** aus, um die Implementierungs-und Testdetails von Microsoft sowie das Testergebnis und das Test Datum anzuzeigen, wie unten dargestellt.
-
-![Compliance-Manager-Microsoft-Aktionsansicht](../media/compliance-manager-microsoft-action.png)
+Es wird dringend empfohlen, alle Updates zu akzeptieren, wenn Sie Update Benachrichtigungen erhalten.
 
 ### <a name="export-an-assessment"></a>Exportieren einer Bewertung
 
-Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihrer Organisation oder für externe Prüfer und Regulierer exportieren. Der Bericht ist eine Momentaufnahme der Bewertung ab dem Datum und der Uhrzeit der Erstellung des Berichts. Der Bericht enthält die Details für alle von Microsoft und vom Kunden verwalteten Steuerelemente für die Bewertung, den Status der Implementierung, das Kontrolltest Datum, Testergebnisse und stellt Links zu hochgeladenen Beweisdokumenten bereit. Sie sollten den Bewertungsbericht vor dem Archivieren einer Bewertung exportieren, da Archivierte Bewertungen keine Links zu hochgeladenen Dokumenten beibehalten.
+Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihrer Organisation oder für externe Prüfer und Regulierer exportieren. Der Bericht ist eine Momentaufnahme der Bewertung ab dem Datum und der Uhrzeit der Erstellung des Berichts. Der Bericht enthält die Details für alle von Microsoft und vom Kunden verwalteten Steuerelemente für die Bewertung, den Status der Implementierung, das Kontrolltest Datum, Testergebnisse und stellt Links zu hochgeladenen Beweisdokumenten bereit.
   
 ### <a name="export-an-assessment-report"></a>Exportieren eines Bewertungsberichts
   
@@ -332,7 +323,7 @@ Wenn Sie mit einer Vorlage oder Bewertung fertig sind und Sie nicht mehr für Co
 ![Ansicht "verdeckte Vorlagen für Compliance-Manager"](../media/compliance-manager-hidden-template.png "Verdeckte Vorlage für Compliance-Manager")
 
 > [!IMPORTANT]
-> Ausgeblendete Bewertungen behalten Ihre Links zu hochgeladenen Beweisdokumenten nicht bei. Es wird dringend empfohlen, dass Sie die Bewertung vor dem ausblenden exportieren, um Links zu den Beweisdokumenten im Bericht beizubehalten.
+> Ausgeblendete Bewertungen behalten Ihre Links zu hochgeladenen Beweisdokumenten nicht bei. Es wird dringend empfohlen, dass Sie eine Bewertung vor dem ausblenden exportieren, um Links zu Beweisdokumenten im Bericht beizubehalten.
   
 #### <a name="hiding-a-template"></a>Ausblenden einer Vorlage
 
@@ -383,7 +374,7 @@ Aktionen Elemente sind die empfohlenen Aufgaben zum Implementieren der Anforderu
   
 1. Wählen Sie im Dashboard **Aktionselemente** die **Gruppe** aus, die die Bewertung (en) enthält, deren Aktion Sie zuweisen möchten.
 2. Wählen Sie in der Dropdownliste **Bewertung** die Bewertung aus, deren Aktion Sie zuweisen möchten, oder wählen Sie im Dropdownmenü **alle** Optionen aus, um alle verfügbaren Aktionen anzuzeigen.
-3. Suchen Sie die Aktion, die Sie zuweisen möchten, und wählen Sie in der Spalte **Besitzer** den Link zur **Überprüfung**, **Implementierung** oder **Test**aus.
+3. Suchen Sie die Aktion, die Sie zuweisen möchten, und wählen Sie in der Spalte **Besitzer** den Link zur **Überprüfung**, * * implementiert oder **Test**aus.
 4. Wählen Sie das Feld **Benutzer zuweisen** aus, und eine Liste der Benutzer in Ihrer Organisation wird angezeigt. Scrollen Sie in der Liste, und wählen Sie Benutzer oder Filtern Sie die Liste aus, um einen Benutzer auszuwählen, indem Sie den Namen des Benutzers eingeben.
 5. Geben Sie im Feld Anmerkungen zur Implementierung alle Notizen ein, die Sie dem zugewiesenen Benutzer übermitteln möchten.
 6. Wählen Sie **Speichern** aus, um die Aktion zuzuweisen.
@@ -399,194 +390,190 @@ Mit dieser Funktion kann eine Organisation alle aktiven oder ausstehenden Abhän
 5. Geben Sie im Feld Anmerkungen zur Implementierung alle Notizen ein, die Sie dem Benutzer übermitteln möchten.
 6. Wählen Sie **Speichern** aus, um die Aktion neu zuzuweisen.
 
+#### <a name="common-action-items-synch-status-across-groups"></a>Synchronisierungsstatus für allgemeine Aktionselemente in Gruppen
+
+Wenn Ihre Organisation über mehrere Gruppen von Bewertungen verfügt, gibt es ein Verhalten technischer Aktionen (also Aktionen, die ihre gesamte Organisation betreffen). Doppelte Aktionen in mehreren Gruppen werden nun in einer einzigen Aktion kombiniert. Diese einzelne Aktion enthält alle hochgeladenen Notizen und Beweise aus zuvor duplizierten Versionen. Alle Änderungen, die an der Aktion in einer Gruppe oder Bewertung vorgenommen werden, werden in allen Instanzen dieser Aktion widergespiegelt. Die Felder " **Implementierungsstatus**", " **Implementierungsdatum**", " **Test Status**" und " **Test Datum** " zeigen die neuesten Aktualisierungen an.
+
 ## <a name="templates"></a>Vorlagen
 
-Eine Vorlage ist das Basisobjekt im Compliance-Manager (Preview), das einem Produkt und einer Zertifizierung (beispielsweise Standard, Regulierung, Steuerelement Framework usw.) zugeordnet ist. Vorlagen können angezeigt und aus dem Dashboard Vorlagen hinzugefügt werden.
+Eine Vorlage ist das Basisobjekt im Compliance-Manager (Preview), das einem Produkt und einer Zertifizierung (beispielsweise Standard, Regulierung, Steuerelement Framework usw.) zugeordnet ist. Vorlagen können angezeigt und aus dem Dashboard **Vorlagen** hinzugefügt werden.
 
 ![Microsoft Template-Dashboard für Compliance-Manager](../media/compliance-manager-template-dashboard.png)
  
-Das Dashboard zeigt jede Vorlage zusammen mit der Zertifizierung und dem Produkt, das der Vorlage zugeordnet ist, den Datumsangaben, an denen die Vorlage erstellt und zuletzt geändert wurde, die Anzahl der von Kunden und von Microsoft verwalteten Steuerelemente, die maximale Konformitätsbewertung für den Vorlage und den Status der Vorlage (beispielsweise genehmigt, ausstehende Genehmigung, importiert).
-
-Die integrierten Vorlagen verfügen jeweils über eine integrierte Bewertung, aber Sie können zusätzliche Bewertungen basierend auf integrierten Vorlagen erstellen, und Sie können eigene Vorlagen importieren und benutzerdefinierte Bewertungen basierend auf diesen erstellen.
+Das Dashboard zeigt jede Vorlage zusammen mit der Zertifizierung und dem Produkt, das der Vorlage zugeordnet ist, den Datumsangaben, an denen die Vorlage erstellt und zuletzt geändert wurde, die Anzahl der von Kunden und von Microsoft verwalteten Steuerelemente, die maximale Konformitätsbewertung für die Vorlage und den Status der Vorlage (beispielsweise genehmigt, ausstehende Genehmigung, importiert).
 
 ### <a name="create-a-template"></a>Erstellen einer Vorlage
 
-Sie können eine Vorlage erstellen, indem Sie eine vorhandene Vorlage kopieren oder eine benutzerdefinierte Vorlage importieren. Es gibt ein bestimmtes Format und Schema, das für Vorlagendaten verwendet werden muss, oder es wird nicht in den Compliance-Manager importiert. Eine Datei mit den richtigen Schema-und Beispieldaten kann hier heruntergeladen werden.
-Jede benutzerdefinierte Vorlage sollte sich in einer separaten Excel-Arbeitsmappe (im XLS-oder XLSX-Format) befinden, die fünf Registerkarten enthält:
+Es gibt drei Möglichkeiten zum Arbeiten mit Vorlagen zum Erstellen von Bewertungen:
 
-1. Vorlage – Bewertung
-2. ControlFamily
-3. Aktionen
-4. Besitz
-5. Maße
+1. Verwenden Sie eine der vorkonfigurierten Vorlagen, die von Microsoft bereitgestellt werden.
+2. Passen Sie eine vorkonfigurierte Vorlage mit ihren eigenen Aktionen und Steuerelementen über den Erweiterungsprozess an.
+3. Erstellen Sie Ihre eigene Vorlage, und importieren Sie Sie in Compliance-Manager.
 
-Das Schema, das innerhalb der einzelnen Registerkarten verwendet wird, ist unten aufgeführt.
+#### <a name="use-a-microsoft-pre-configured-template"></a>Verwenden einer vorab konfigurierten Microsoft-Vorlage
 
-#### <a name="template-assessment-tab"></a>Registerkarte "Vorlagen Bewertung"
+Die vorkonfigurierten Vorlagen sind in Ihrem **Vorlagen** Dashboard verfügbar. Zeigt die aktuelle [Liste der Vorlagen an](compliance-manager-overview.md#templates), die jedes Mal aktualisiert wird, wenn eine neue Vorlage verfügbar ist.
 
-Diese Registerkarte hat eine einzelne Spalte:
-
-- **inScopeServices**: durch trennzeichengetrennte Liste von Produkten oder Diensten, die im Bereich der Vorlage liegen.
-
-#### <a name="controlfamily-tab"></a>Registerkarte "ControlFamily"
-
-Diese Registerkarte enthält Spalten, die die Steuerelemente definieren, die den auf der Registerkarte Aktionen aufgeführten Aktionen zugeordnet sind, und enthält Details wie Steuerelementname, Familie, Titel und Beschreibung.  Die Spalten für diese Registerkarte, die innerhalb von Excel in der unten aufgeführten Reihenfolge sortiert werden müssen, lauten wie folgt: 
-
-- **Steuer Elementname:** Steuerelementname aus Zertifizierung/Norm/Regulierung usw.
-- **controlFamily:** Kontroll Familie aus Zertifizierung/Standard, Regulierung usw.
-- **controlTitle:** Kontroll Titel aus Zertifizierung/Norm/Regulierung usw.
-- **controlDescription:** Kontroll Beschreibung aus Zertifizierung/Norm/Regulierung usw.
-- **controlVersion:** Optionale Steuerelement Versionsinformationen.  Beispiel: für NIST 800-53 ist der aktuelle Wert Rev 4, sodass der controlVersion 4 ist.  Für CSA ccm ist es 3.0.1.
-- **isDisabled:** Verwenden Sie true oder false, um anzugeben, ob das Steuerelement deaktiviert wurde.
-- **ControlType:** Verwenden Sie cc, um anzugeben, dass es sich um vom Kunden verwaltete Steuerelemente handelt.
-- **controlComplianceScore:** Summe der Punktzahl aller Aktionen, die dem Steuerelement zugewiesen sind.
-- **controlActionTitle:** Doppelte durch Semikolons getrennte Liste aller actionTitles für dieses Steuerelement, wie auf der Registerkarte Aktionen aufgeführt. 
-
-#### <a name="actions-tab"></a>Registerkarte "Aktionen"
-
-Diese Registerkarte enthält Spalten, die einzelne Aktionen definieren, und enthält Details wie Aktionstitel, Besitz und Dimensionen. Die Spalten für diese Registerkarte, die innerhalb von Excel in der unten aufgeführten Reihenfolge sortiert werden müssen, lauten wie folgt: 
-
-- **actionTitle:** Titel der Aktion. Jeder Titel muss eindeutig sein, und wir empfehlen die Verwendung von Pascal Case.
-- **actionRelatedODVs:** Doppelte durch Semikolons getrennte Liste von actionTitles, die übergeordnete Elemente des in der actionTitle-Spalte aufgeführten untergeordneten Elements sind. In einer Parent/Child-Beziehung stellt das übergeordnete Element das hohe Wasserzeichen dar. Wenn Sie also eine übergeordnete Aktion ausführen, werden auch alle untergeordneten Aktionen ausgeführt. Wenn Sie beispielsweise über ähnliche Anforderungen, aber unterschiedliche Standardwerte verfügen, beispielsweise die Kennwortlänge, wobei eine Norm/Regel mindestens 15 Zeichen erfordert und eine andere mindestens 12 oder 10. 15 wäre in diesem Beispiel das übergeordnete Element, und wenn Sie mindestens 15 Zeichen konfigurieren, erfüllen Sie auch die Aktionen, die 12 oder 10 Zeichen in anderen Bewertungen empfehlen.
-
-    > [!NOTE]
-    > Die actionRelatedODVs-Spalte ist eine erforderliche Spalte für das Schema; Das Feature (zugehörige Aktionen) steht jedoch im Compliance-Manager (Preview) nicht zur Verfügung.  Es ist geplant, in einer späteren Version hinzugefügt zu werden.
-
-- **actionDimensionValues:** Doppelte durch Semikolons getrennte Liste der entsprechenden Dimensionen auf der Registerkarte Dimensionen mit folgendem Format:
-
-    ```Markdown
-    Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
-    ```
-    
-    Zum Beispiel:
-
-    ```Markdown
-    Product::Office 365;;Certification::NIST CSF
-    ```
-
-    Alle Dimensionen, die in einer benutzerdefinierten Vorlage verwendet werden, müssen auf der Registerkarte Dimensionen der Importdatei aufgeführt werden, auch wenn diese bereits im Dashboard Dimensionen aufgeführt sind.
-- **actionScore:** Numerischer Wert für jede Aktion, der die Bewertung für diese Aktion darstellt. Es wird empfohlen, das von den integrierten Bewertungen verwendete Bewertungsmodell zu verwenden, das auf dem Zweck und der Erzwingung der einzelnen Aktionen basiert.
-- **actionOwnership:** Doppelte durch Semikolons getrennte Liste der Besitzer. Alle aufgeführten Besitzer müssen auf der Registerkarte "Besitz" enthalten sein.
-- **actionDescription:** Text jeder Aktion, die eindeutig sein muss. Dieses Feld unterstützt die unten beschriebene Absprache.
-
-#### <a name="ownership-tab"></a>Registerkarte "Besitz"
-
-Diese Registerkarte enthält Spalten, die die Besitzer für jede Aktion definieren.  Die Spalten für diese Registerkarte, die innerhalb von Excel in der unten aufgeführten Reihenfolge sortiert werden müssen, lauten wie folgt:
-
-- **Eigentümername:** Eindeutiger Name des Besitzers/der verantwortlichen Partei.
-- **ownershipDescription:** Beschreibung des Besitzers/der verantwortlichen Partei.
-
-#### <a name="dimensions-tab"></a>Registerkarte Dimensionen
-
-Diese Registerkarte enthält Spalten, in denen die Dimensionen definiert werden, die einer Aktion zugeordnet werden können.  Die Spalten für diese Registerkarte, die innerhalb von Excel in der unten aufgeführten Reihenfolge sortiert werden müssen, lauten wie folgt:
-
-- **dimensionKey:** Liste der für Dimensionen verwendeten Schlüssel. Beispielsweise Produkt, Zertifizierung usw.
-- **dimensionvalue:** Eindeutiger Wert für jeden Dimensionsschlüssel. Beispielsweise Office 365, InTune, Azure, benutzerdefiniertes Produkt usw.
-- **allowMultiSelect:** Verwenden Sie true oder false, um anzugeben, dass mehrere Dimensionswerte für einen einzelnen Dimensionsschlüssel ausgewählt werden können.
-
-#### <a name="using-markdown-language-in-description-fields"></a>Verwenden von Abzugs Sprache in Beschreibungsfeldern
-
-Vorlagen und Bewertungen unterstützen die Verwendung von Abschriften Sprache für einige Textelemente und Formatierungen.  Es gibt drei Formatierungselemente der Abzugs Sprache, die im Compliance-Manager verwendet werden:
-
-- Aufzählungszeichen und nummerierte Listen
-- Hyperlinks
-- Fettdruck
-
-Aufzählungszeichen werden als Sternchen anstelle von Word-oder Excel-Aufzählungszeichen dargestellt. Zum Beispiel:
-
-```Markdown
-* Item A
-* Item B
-* Item C
-```
-
-Zahlen werden als Zahlen dargestellt, jedoch mit Leerzeichen für Einzug (drei Leerzeichen pro Ebene) und nur für alle Unterebenen (beispielsweise keine Buchstaben).  Zum Beispiel:
-   1. Element A
-   2. Element B
-      1. Unterelement A
-      2. Unterelement B
-   3. Element C
-   4. Element D
-      1. Unterelement A
-      2. Unterelement B
-   5. Element E
-
-Hyperlinks werden durch Platzieren von Klammern um den Hyperlinktext und den Hyperlink selbst in Klammern unmittelbar neben der schließenden Klammer erstellt.  Zum Beispiel:
-
-```Markdown
-Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
-```
-Dieser Text wird wie folgt gerendert: Klicken Sie [hier](https://www.microsoft.com) , um zur Startseite von Microsoft zu gelangen.
-
-Wie im obigen Beispiel dargestellt, rendert Compliance Manager keine URLs mit Unterstreichung.
-
-Fett formatierter Text ist zwei Sternchen auf jeder Seite des Texts, der fett formatiert werden soll.  Zum Beispiel:
-
-```Markdown
-**This text will render in bold**
-```
-**Dieser Text wird fett dargestellt**
-
-### <a name="create-a-template"></a>Erstellen einer Vorlage
-
-Sie können eine Vorlage erstellen, indem Sie eine vorhandene Vorlage kopieren oder Vorlagendaten aus Excel importieren. Beim Importieren von Daten aus Excel benötigt die Vorlage zwei verschiedene Compliance-Manager-Administratoren, um die Daten zu veröffentlichen (eine zur Veröffentlichung und eine, die genehmigt werden soll).
-
-#### <a name="create-a-template-by-copying-an-existing-template"></a>Erstellen einer Vorlage durch Kopieren einer vorhandenen Vorlage
+#### <a name="customize-a-template-through-the-extension-process"></a>Anpassen einer Vorlage über den Erweiterungsprozess
 
 1. Öffnen Sie das Dashboard **Vorlagen** , und wählen Sie **+ Vorlage hinzufügen**aus.
-2. Geben Sie im Feld **Vorlagenname eingeben** einen eindeutigen Namen für die Vorlage ein.
-3. Aktivieren Sie das Kontrollkästchen **Kopie von einer vorhandenen Vorlage** , und wählen Sie die Vorlage aus der Dropdownliste aus, die Sie kopieren möchten.
-4. Optional können Sie zusätzliche Bemaßungen hinzufügen.
-5. Wählen Sie **zum Dashboard hinzufügen**aus.
+2. Aktivieren Sie im Fenster Vorlagen-Flyout das Kontrollkästchen **Erweiterung aus globaler Vorlage erstellen** .
+3. Wählen Sie die zu erweiternde Vorlage im Dropdownmenü aus.
+4. Wenn Sie Ihre Vorlagendaten nicht bereits in Excel formatiert haben, wählen Sie den Link im Flyout-Bereich aus, um eine Excel-Datei herunterzuladen. Füllen Sie das Arbeitsblatt gemäß den folgenden Excel-Anweisungen in den [Vorlagendaten importieren](#import-template-data-with-excel) aus, und speichern Sie es auf Ihrem lokalen Laufwerk.
+5. Importieren Sie Ihre benutzerdefinierten Vorlagendaten, indem **Sie auf Durchsuchen** klicken, um Ihre Excel-Datei hochzuladen.
+6. Wählen Sie **zum Dashboard hinzufügen**aus. Daraufhin wird Ihre neue Vorlage Ihrem **Vorlagen** -Dashboard hinzugefügt.
 
-#### <a name="create-a-template-by-importing-data"></a>Erstellen einer Vorlage durch Importieren von Daten
+#### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Erstellen Sie Ihre eigene Vorlage, und importieren Sie Sie in Compliance-Manager.
 
 1. Öffnen Sie das Dashboard **Vorlagen** , und wählen Sie **+ Vorlage hinzufügen**aus.
-2. Geben Sie im Feld **Vorlagenname eingeben** einen eindeutigen Namen für die Vorlage ein.
-3. Wählen Sie mindestens eine Dimension aus der Liste verfügbar aus.
-4. Wählen Sie **Durchsuchen** aus, um zum Speicherort der Importdatei zu navigieren, wählen Sie Sie aus, und wählen Sie **Öffnen**aus.
-5. Die Importdatei wird überprüft und gibt die Anzahl der Steuerelemente und Kontroll Familien an, die erkannt wurden. Wenn Fehler vorliegen, wird eine Verknüpfung für eine geänderte Version der Importdatei bereitgestellt, die Fehlerdetails enthält. Alle Fehler müssen aufgelöst werden, bevor die Daten importiert werden.
-6. Nachdem die Daten validiert wurden, wählen Sie **zum Dashboard hinzufügen**aus.
-7. Die importierte Vorlage wird im Dashboard **Vorlagen** angezeigt und hat den Status **importiert**. Wählen Sie die Ellipsen (...) aus, und wählen Sie **veröffentlichen** aus, um die Vorlage zu veröffentlichen. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **veröffentlichen**aus. Der Vorlagenstatus wird in **Ausstehende Genehmigung**geändert.
-8. Ein anderer Benutzer mit der Rolle Compliance-Manager-Administrator muss die Vorlage im Dashboard Vorlagen genehmigen. Sie müssen die Ellipsen (...) auswählen und **genehmigen**auswählen. Wenn die Bestätigungsmeldung angezeigt wird, wählen Sie **genehmigen**aus. Die Vorlage kann nun verwendet werden.
+2. Wählen Sie im Fenster Vorlagen-Flyout die Option **neue Vorlage erstellen**aus.
+3. Importieren Sie Ihre Vorlagendaten, indem Sie auf **Durchsuchen** klicken, um Ihre Excel-Datei mit den Daten hochzuladen (siehe [Importieren von Vorlagendaten mit Excel](#import-template-data-with-excel) unten).
+4. Wählen Sie **zum Dashboard hinzufügen**aus. Daraufhin wird Ihre neue Vorlage Ihrem **Vorlagen** -Dashboard hinzugefügt.
+
+#### <a name="import-template-data-with-excel"></a>Importieren von Vorlagendaten mit Excel
+
+Um eine Vorlage zu ändern oder Ihre eigene Vorlage zu erstellen, verwenden Sie eine [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?linkid=2124865) , um die erforderlichen Daten zu erfassen und in den Compliance-Manager hochzuladen. Diese Tabellen Kalkulations Vorlage hat ein bestimmtes Format und Schema, das verwendet werden muss, oder es wird nicht in den Compliance-Manager importiert.
 
 > [!IMPORTANT]
-> Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
+> Wenn Sie zuvor oder angepasste Vorlagen im Compliance-Manager erstellt haben, **wurde dieser Prozess** im Rahmen der Version April 2020 von Compliance-Manager (Preview) aktualisiert. **Lesen Sie diesen Abschnitt sorgfältig durch.**
 
-### <a name="customize-a-template"></a>Anpassen einer Vorlage
+Das Arbeitsblatt enthält vier Registerkarten, von denen drei erforderlich sind:
 
-Vorlagen können mithilfe der zusätzlichen benutzerdefinierten Steuerelemente angepasst werden. Alle benutzerdefinierten Steuerelemente werden als vom Kunden verwaltete Steuerelemente betrachtet.
+1. Vorlage (erforderlich)
+2. ControlFamily (erforderlich)
+3. Aktionen (erforderlich)
+4. Dimensionen (optional)
 
-#### <a name="add-a-custom-control-to-a-template"></a>Hinzufügen eines benutzerdefinierten Steuerelements zu einer Vorlage
+Ihre Arbeitsmappe **muss die Registerkarten in dieser Reihenfolge enthalten**, da andernfalls Ihre Daten nicht erfolgreich in eine Vorlage importiert werden.
 
-1. Öffnen Sie die **Vorlage** , die Sie ändern möchten.
-2. Wählen Sie + benutzerdefiniertes Steuerelement **Hinzufügen** .
-3. Wählen Sie in der Dropdownliste eine **Steuerelement Familie** aus, oder geben Sie eine neue Steuerelement Familie ein, falls Sie nicht vorhanden ist.
-4. Geben Sie im Feld **Steuerelement-ID** einen eindeutigen Namen oder eine eindeutige ID für das Steuerelement an.
-5. Geben Sie im Feld **Titel** den Titel des Steuerelements an.
-6. Geben Sie im Feld **Beschreibung** die Anforderungen und andere Informationen für das Steuerelement an.
-7. Klicken Sie auf **Kunden Aktion zuweisen** .
-8. Suchen Sie die Aktion (en), die Sie dem Steuerelement zuweisen möchten:
-    - Verwenden Sie **Filter nach Dimension** , um Dimensionen zu verwenden, die den Aktionen zugewiesen sind, um Sie zu suchen und aufzulisten.
-    - Verwenden Sie den **Filter nach Besitzer** , um die der Aktion zugewiesenen Besitzer (n) zu verwenden, um Sie zu suchen und aufzulisten.
-    - Wählen Sie im Dropdownmenü einen **Aktionstyp** aus, um Aktionen nach Typ aufzulisten.
-    - Geben Sie den Titel der zu suchenden Aktion ein, und führen Sie eine Liste aus.
-9. Anhand der Kriterien in Schritt 8 wird eine Liste der **übereinstimmenden Aktion (en)** angezeigt. Wählen Sie die erste Aktion aus, die Sie dem Steuerelement zuweisen möchten.
-10. Die Details der Aktion werden angezeigt. Wählen Sie die **Beschreibung** aus, die Sie verwenden möchten, und klicken Sie auf **Fertig**.
-11. Wiederholen Sie die Schritte 9 und 10 für jede zusätzliche Aktion, die Sie zuweisen möchten.
-12. Wenn alle anwendbaren Aktionen ausgewählt wurden, wählen Sie **zuweisen**aus.
-13. Wählen Sie **Speichern** aus, um das neue Steuerelement zu speichern.
+##### <a name="template-tab"></a>Registerkarte "Vorlage"
+
+Die Registerkarte **Vorlage** ist erforderlich. Die Informationen auf dieser Registerkarte bieten Metadaten zur Vorlage. Es gibt vier erforderliche Spalten. Die Spalten müssen die Reihenfolge auf dem Excel-Blatt beibehalten, wie unten aufgeführt. Sie können **nach** den vier Spalten eine eigene Spalte hinzufügen, um eigene Dimensionen bereitzustellen. Wenn Sie dies tun, müssen Sie Sie auf der Registerkarte **Dimensionen** mithilfe der [Anweisungen unten](#dimensions-tab)hinzufügen.
+
+- **Title**: Dies ist der Titel für Ihre Vorlage, der eindeutig sein muss. Es kann keinen Namen mit einer anderen Vorlage im Compliance-Manager freigeben, unabhängig davon, ob es sich um eine bereits erstellte Vorlage oder eine vorkonfigurierte Vorlage handelt, die von Microsoft bereitgestellt wird.
+
+- **Product**: Dies ist eine erforderliche Dimension. Listet das der Vorlage zugeordnete Produkt auf.
+
+- **Zertifizierung**: Dies ist die Verordnung, die Sie für die Vorlage verwenden.
+
+- **inScopeServices**: Dies sind die Dienste innerhalb des Produkts, die diese Bewertung anwendet (wenn Sie beispielsweise Office 365 als Produkt aufgeführt haben, kann Microsoft Teams ein in-Scope-Dienst sein). Sie können mehrere Dienste auflisten, die durch zwei Semikolons getrennt sind.
 
 > [!NOTE]
-> Alle an einer Vorlage vorgenommenen Änderungen werden nicht in vorhandenen Bewertungen wiedergegeben. Vorlagen Aktualisierungen müssen zuerst vorgenommen und dann auf eine neue Bewertung angewendet werden, damit die Änderungen angezeigt werden.
+> In Bezug auf Produkt und Zertifizierung: die Daten, die Sie in die **Produkt** -und **Zertifizierungs** Zellen einfügen, können nicht bearbeitet werden, nachdem Sie das Arbeitsblatt importiert haben, um eine Vorlage zu erstellen oder anzupassen. Außerdem kann eine Gruppe nicht zwei Bewertungen enthalten, die die gleiche **Produkt/Zertifizierungs** Kombination aufweisen. Sie können mehrere Vorlagen haben, die dieselbe Produkt/Zertifizierungs Kombination aufweisen.
+
+##### <a name="controlfamily-tab"></a>Registerkarte "ControlFamily"
+
+Die Registerkarte **ControlFamily** ist erforderlich.  Die erforderlichen Spalten auf dieser Registerkarte, die der in der Beispieltabelle angegebenen Reihenfolge folgen müssen, lauten wie folgt:
+
+- **ControlName**: Dies ist der Steuerelementname aus der Zertifizierung, dem Standard oder der Verordnung, bei dem es sich normalerweise um einen Typ von ID handelt. Steuerelementnamen müssen innerhalb einer Vorlage eindeutig sein. Sie können nicht mehrere Steuerelemente mit dem gleichen Namen in der Kalkulationstabelle haben.
+
+- **controlFamily**: Geben Sie ein Wort oder eine Phrase für die controlFamily an, die eine breite Gruppierung von Steuerelementen identifiziert. Ein controlFamily muss nicht eindeutig sein; Es kann in einer Tabellenkalkulation mehrmals aufgeführt werden. Dieselbe controlFamily kann auch in mehreren Vorlagen aufgeführt werden, obwohl Sie nicht miteinander verwandt sind. Jeder controlFamily muss mindestens einem Steuerelement zugeordnet werden.
+
+- **controlTitle**: Geben Sie einen Titel für das Steuerelement an. Während es sich bei ControlName um einen Referenz Code handelt, handelt es sich bei dem Titel um ein Rich-Text-Format, das normalerweise in den Regeln angezeigt
+
+- **controlDescription**: Geben Sie eine Beschreibung des Steuerelements an.
+
+- **controlActionTitle**: Dies ist der Titel einer Aktion, die Sie mit diesem Steuerelement verknüpfen möchten. Sie können mehrere Aktionen hinzufügen, indem Sie durch zwei Semikolons ohne Leerzeichen voneinander getrennt werden. Jedes Steuerelement, das Sie auflisten, muss mindestens eine Aktion enthalten, und die Aktion muss vorhanden sein (was bedeutet, dass Sie eine Aktion auflisten können, die Sie auf der Registerkarte **Aktionen** desselben Arbeitsblatts auflisten, eine Aktion, die in einer anderen Vorlage vorhanden ist, oder eine Aktion, die von Microsoft erstellt wurde). Verschiedene Steuerelemente können auf dieselbe Aktion verweisen.
+
+##### <a name="actions-tab"></a>Registerkarte "Aktionen"
+
+Die Registerkarte **Aktionen** ist erforderlich.  Sie kennzeichnet Aktionen ihrer Organisation und nicht die Aktionen von Microsoft, die bereits im Compliance-Manager vorhanden sind. Die erforderlichen Spalten für diese Registerkarte, die der in der Beispieltabelle angegebenen Reihenfolge folgen müssen, lauten wie folgt:
+
+- **actionTitle**: Dies ist der Titel für Ihre Aktion und ist ein erforderliches Feld. Der von Ihnen bereitgestellte Titel muss eindeutig sein. **Wichtig**: Wenn Sie auf eine bereits vorhandene Aktion verweisen (beispielsweise in einer anderen Vorlage) und die zugehörigen Elemente in den nachfolgenden Spalten ändern, werden diese Änderungen an dieselbe Aktion in anderen Vorlagen weitergegeben.
+
+- **implementationtype**: führen Sie in diesem Feld einen der drei folgenden Implementierungstypen auf:
+    - **Operative** Aktionen, die von Personen und Prozessen implementiert werden, um die Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen, Ressourcen, Daten und Personal zu schützen (Beispiel: Sicherheitsbewusstsein und Schulung)
+    - **Technische** Aktionen, die durch die Verwendung von Technologien und Mechanismen in den Hardware-, Software-oder Firmware-Komponenten des Informationssystems abgeschlossen wurden, um die Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen und Daten zu schützen (Beispiel: mehrstufige Authentifizierung)
+    - **Dokumentation** – durch dokumentierte Richtlinien und Verfahren implementierte Aktionen zur Erstellung und Definition der erforderlichen Steuerelemente zum Schutz der Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen, Ressourcen, Daten und Personal (Beispiel: eine Informationssicherheitsrichtlinie)
+
+- **actionScore**: Geben Sie in diesem Pflichtfeld einen numerischen Bewertungs Wert für Ihre Aktion an. Es muss eine ganze Zahl zwischen 1 und 99 sein; Er darf nicht 0, NULL oder leer sein. Je höher die Zahl, desto größer ist ihr Wert zur Verbesserung Ihrer Compliance-Haltung. Anleitungen finden Sie unter How Microsoft Scores its Controls:
+
+![Compliance-Manager steuert Punktewerte](../media/compliance-score-controls-scoring.png "Compliance-Manager steuert Punktewerte")
+
+- **actionDescriptionTitle**: Dies ist der Titel der Beschreibung und ist erforderlich. Mit diesem Beschreibungstitel können Sie dieselbe Aktion in mehreren Vorlagen ausführen und in jeder Vorlage eine andere Beschreibung anzeigen.  Dieses Feld hilft Ihnen zu erläutern, auf welche Vorlage die Beschreibung verweist. In den meisten Fällen können Sie den Namen der Vorlage, die Sie erstellen, in dieses Feld einfügen.
+
+- **actionDescription**: Geben Sie eine Beschreibung der Aktion an. Sie können Formatierungen wie fett formatierten Text und Hyperlinks anwenden. Dieses Feld ist erforderlich.
+
+- **Dimension-Aktion Zweck**: Dies ist ein optionales Feld. Wenn Sie diesen einschließen, muss die Kopfzeile das Präfix "Dimension-" enthalten. Alle Dimensionen, die Sie hier einschließen, werden als [Filter in der Kompatibilitätsbewertung](compliance-score-setup.md#filtering-your-dashboard-view) verwendet und auf der [Detailseite der Verbesserungs Aktionen im Kompatibilitäts Bewertungsergebnis](working-with-compliance-score.md#view-your-improvement-actions)angezeigt.
+
+##### <a name="dimensions-tab"></a>Registerkarte Dimensionen
+
+Die Registerkarte **Dimensionen** ist optional. Wenn Sie jedoch anderweitig auf eine Dimension verweisen, müssen Sie Sie hier angeben, wenn Sie nicht in einer bereits erstellten oder in einer Microsoft-Vorlage vorhandenen Vorlage vorhanden ist. Die Spalten für diese Registerkarte sind unten aufgeführt:
+
+- **dimensionKey**: als "Produkt", "Zertifizierungen", "Aktions Zweck" auflisten
+- **dimensionvalue**: Beispiele: Office 365, HIPPA, vorbeugend, Detektiv
+
+Sie können Ihre vorhandenen Dimensionen anzeigen, indem Sie zur **Mandantenverwaltung** wechseln und die Registerkarte **Dimensionen** auswählen. Auch wenn Sie eine vorhandene Vorlage exportieren, verfügt die exportierte Arbeitsmappe über die Registerkarte **Dimensionen** , in der alle in der Vorlage verwendeten Dimensionen aufgelistet werden.
+
+### <a name="modify-an-existing-template"></a>Ändern einer vorhandenen Vorlage
+
+Um Änderungen an einer Vorlage vorzunehmen, die Sie mit dem oben beschriebenen Importvorgang erstellt oder angepasst haben, verwenden Sie denselben Prozess, um diese Änderungen in Ihre Vorlage zu importieren.
+
+> [!NOTE]
+> Es gibt einige wichtige Faktoren, die Sie beim Bearbeiten von Vorlagenkomponenten beachten sollten, deshalb lesen Sie diesen Abschnitt sorgfältig durch.
+
+#### <a name="general-process-for-modifying-a-template"></a>Allgemeiner Prozess zum Ändern einer Vorlage
+
+Um Änderungen an einer der vorhandenen Vorlagen Ihrer Organisation vorzunehmen, besteht der allgemeine Prozess aus folgenden Schritten:
+
+1. Wählen Sie in Ihrem **Vorlagen** -Dashboard die Vorlage aus, die Sie ändern möchten, wodurch das Dashboard für **Steuerelemente** mit der Registerkarte **Vorlage** angezeigt wird.
+2. Wählen Sie dann **exportieren**aus. Ein Excel-Blatt mit allen Vorlagendaten wird heruntergeladen.
+3. Informationen zum Bearbeiten, hinzufügen oder Entfernen einer Aktion finden Sie in den folgenden Abschnitten.
+4. Wenn Sie Änderungen an Ihrer Excel-Datei vorgenommen haben, importieren Sie die Datei wieder in die Vorlage, indem Sie die Vorlage aus dem Dashboard auswählen und **importieren**auswählen. Ihre Vorlage enthält nun die Änderungen, die Sie vorgenommen haben.
+
+#### <a name="to-edit-template-attributes"></a>So bearbeiten Sie Vorlagen Attribute
+
+Auf der Registerkarte **Vorlagen** können Sie alle Elemente in der Spalte **Title** , in der Spalte **inScopeServices** und in jeder anderen Spalte bearbeiten, die Sie möglicherweise hinzugefügt haben. Sie können jedoch nichts in den Spalten **Product** oder **Certification** bearbeiten.
+
+#### <a name="to-add-an-action-to-a-template"></a>So fügen Sie einer Vorlage eine Aktion hinzu
+
+1. Wechseln Sie zur Registerkarte **Aktionen** , und fügen Sie Ihre Informationen in die erforderlichen Felder in der ersten leeren Zeile unterhalb der vorhandenen Aktionen ein.
+2. Wechseln Sie zur Registerkarte **ControlFamily** . Suchen Sie die Zeile mit dem Steuerelement, dem Ihre Aktion zugeordnet ist. Fügen Sie die neue Aktion zur Spalte **controlActionTitle** in dieser Zeile hinzu (denken Sie daran, mehrere Aktionen in diesem Feld mit zwei Semikolons, kein Leerzeichen dazwischen) zu trennen.
+3. Speichern Sie Ihre Kalkulationstabelle auf Ihrem lokalen Computer.
+
+#### <a name="to-edit-an-actions-information"></a>So bearbeiten Sie die Informationen einer Aktion
+
+Sie können die Informationen einer Aktion *mit Ausnahme ihres Titels*ändern. Sie können jede Zelle in den Spalten B weiter bearbeiten, und wenn Sie die Datei wieder in die Vorlage importieren, enthalten die Aktionen in dieser Vorlage nun die aktualisierten Daten.
+
+Sie können das **actionTitle** (Spalte A) nicht bearbeiten, da Compliance-Manager dies als neue Aktion betrachtet. Wenn Sie den Namen einer Aktion ändern möchten, lesen Sie die Anweisungen unmittelbar unten.
+
+#### <a name="to-change-the-name-of-an-action"></a>So ändern Sie den Namen einer Aktion
+
+Wenn Sie den Namen einer Aktion ändern möchten, müssen Sie in der Kalkulationstabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Führen Sie die folgenden Schritte aus, um den Namen einer Aktion zu ändern:
+
+1. Fügen Sie auf der Registerkarte **Aktionen** Ihrer Tabelle eine neue Spalte zu der Kalkulationstabelle nach Spalte a hinzu.
+2. In dieser neuen Spalte, die jetzt Spalte B ist, legen Sie die Kopfzeile in Zeile 1: **oldActionTitle**.
+3. Kopieren Sie den Inhalt von Spalte a, und fügen Sie ihn in Spalte B ein. Dadurch werden die vorhandenen Aktionstitel, die Sie ändern möchten, in Spalte B eingefügt.
+4. Löschen Sie in Spalte A, **actionTitle**den alten Namen, und ersetzen Sie ihn durch den neuen Namen für die Aktion.
+
+#### <a name="to-remove-an-action-from-a-template"></a>So entfernen Sie eine Aktion aus einer Vorlage
+
+Durch das Löschen einer Aktion aus einer Zeile in einer Kalkulationstabelle wird die Aktion **nicht** aus der Vorlage entfernt, die Sie gerade bearbeiten. Führen Sie stattdessen den folgenden Vorgang aus, um eine Aktion zu entfernen:
+
+1. Fügen Sie auf der Registerkarte **Aktionen** eine neue Spalte als Spalte a ein, und legen Sie den **Vorgang** in die Kopfzeile ein, wobei es sich um die Nummer 1 der Zeile handelt.
+2. Legen Sie in der Zeile für die Aktion, die Sie entfernen möchten, in Spalte A für diese Zeile den **Lösch** Vorgang fest.
+3. Stellen Sie sicher, dass nicht mehr von einem Steuerelement auf diese Aktion verwiesen wird. Wechseln Sie zur Registerkarte **ControlFamily** , und suchen Sie nach dem Titel Ihrer Aktion in Spalte F, die **controlActionTitle**ist.
+4. Wenn die Aktion in der Spalte **controlActionTitle** aufgeführt wird, löschen Sie Sie.
+5. Speichern Sie Ihre Kalkulationstabelle auf Ihrem lokalen Computer.
+
+Wenn Sie Ihre Kalkulationstabelle wieder in die Vorlage importieren, wird Ihre Aktion aus der Vorlage entfernt. Durch das Entfernen einer Aktion aus einer Vorlage wird die Aktion nicht vollständig entfernt. Auf diese Aktion kann weiterhin von einer anderen Vorlage verwiesen werden.
+
+Wenn Sie die letzte Aktion Entfernen, auf die ein Steuerelement verweist, müssen Sie das Steuerelement entfernen.
+
+> [!NOTE]
+> So entfernen Sie ein Steuerelement: führen Sie denselben Vorgang aus, um eine Aktion wie oben beschrieben zu entfernen. Fügen Sie auf der Registerkarte **ControlFamily** eine **Vorgangs** Spalte hinzu, und legen Sie neben dem Steuerelement, das Sie entfernen möchten, **Delete** .
+
+### <a name="updates-to-templates"></a>Aktualisierungen von Vorlagen
+
+Jedes Mal, wenn eine Bewertung durch den Versions Verwaltungsprozess aktualisiert wird, erbt Ihre angepasste Bewertung diese Updates und behält Ihre benutzerdefinierten Steuerelemente bei. Weitere Informationen finden Sie unter [Versionsverwaltung von Warnungen für Bewertungs Aktualisierungen](#versioning-alerts-for-assessment-updates).
 
 ### <a name="export-a-template-to-json"></a>Exportieren einer Vorlage in JSON
 
-Compliance-Manager (Preview) unterstützt auch das Exportieren von Vorlagen in JavaScript Object Notation (JSON) Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
+Compliance-Manager (Preview) unterstützt das Exportieren von Vorlagen in JavaScript Object Notation (JSON) Format. Auf diese Weise können Sie Compliance-Manager-Daten mit anderen Systemen austauschen, die JSON unterstützen.
 
 ## <a name="reports"></a>Berichte
 
-Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihrer Organisation oder für externe Prüfer und Regulierer exportieren. Der Bericht ist eine Momentaufnahme der Bewertung zum Datum und zur Uhrzeit des Exports. Der Bericht enthält die Details für Microsoft und von Kunden verwaltete Steuerelemente für die Bewertung, den Status der Implementierung, das Kontrolltest Datum, Testergebnisse und Links zu hochgeladenen Beweisdokumenten. Sie sollten Bewertungen exportieren, bevor Sie Sie archivieren, da Archivierte Bewertungen keine Links zu hochgeladenen Dokumenten beibehalten.
+Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihrer Organisation oder für externe Prüfer und Regulierer exportieren. Der Bericht ist eine Momentaufnahme der Bewertung zum Datum und zur Uhrzeit des Exports. Der Bericht enthält die Details für Microsoft und von Kunden verwaltete Steuerelemente für die Bewertung, den Status der Implementierung, das Kontrolltest Datum, Testergebnisse und Links zu hochgeladenen Beweisdokumenten. Da ausgeblendete Bewertungen keine Links zu hochgeladenen Dokumenten beibehalten, sollten Sie die Bewertung exportieren, bevor Sie Sie ausblenden.
 
 ### <a name="export-an-assessment"></a>Exportieren einer Bewertung
 
@@ -594,7 +581,7 @@ Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihr
 2. Wählen Sie die Gruppe und die Bewertung in den Dropdownmenüs für die Bewertung aus, die Sie exportieren möchten.
 3. Wählen Sie exportieren aus. Der Bewertungsexport wird als Excel-Datei heruntergeladen.
 
-![Kompatibilitäts-Manager-Bewertung – Excel-Bericht](../media/compliance-manager-assessment-report.png)
+![Kompatibilitäts-Manager-Bewertung – Excel-Bericht](../media/compliance-manager-assessment-report.png "Kompatibilitäts-Manager-Bewertung – Excel-Bericht")
 
 ## <a name="permissions"></a>Berechtigungen
 

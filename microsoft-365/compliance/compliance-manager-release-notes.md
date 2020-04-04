@@ -14,35 +14,54 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635143"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141540"
 ---
-# <a name="release-notes-for-compliance-manager-preview"></a>Anmerkungen zur Version für Compliance-Manager (Vorschau)
+# <a name="microsoft-compliance-manager-preview-release-notes"></a>Anmerkungen zur Microsoft Compliance-Manager-Version (Vorschau)
 
-Die Public Preview of Compliance Manager bietet Ihnen frühzeitigen Zugriff auf bevorstehende Funktionen und Updates.
+Die Public Preview of Compliance Manager bietet Ihnen frühzeitigen Zugriff auf bevorstehende Funktionen und Updates. Diese Seite enthält Updates zu neuen Features, verbesserten Funktionen und bekannten Problemen mit der aktuellen Version.
 
-Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microsoft.com/ComplianceManager) Tool im [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com) zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services verwenden.
+Sie können das [Compliance-Manager-](https://servicetrust.microsoft.com/ComplianceManager) Tool im [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com) zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services verwenden.
 
-## <a name="whats-new-in-compliance-manager-preview"></a>Neuerungen im Compliance-Manager (Vorschau)
+## <a name="improved-template-creation-and-update-process"></a>Verbesserter Vorlagen Erstellungs-und Aktualisierungsprozess
 
-- **Rollenbasierter Zugriff auf den Compliance-Manager:** Die standardmäßige **Gastzugriffs** Rolle wurde entfernt. Damit ein Benutzer auf den Compliance-Manager zugreifen kann, muss der globale Administrator [jedem Benutzer eine Berechtigung zuweisen](compliance-manager-overview.md#permissions).
+Wir haben den Prozess zum Importieren, exportieren und Ändern von Vorlagen für Bewertungen aktualisiert. Dank der neuen, vereinfachten Benutzeroberfläche können Sie Ihre eigenen Bewertungen in Ihren Workflow einbringen und diese auf dem neuesten Stand halten.
 
-- **Aktualisierte Kompatibilitätsbewertung**: das Kompatibilitäts Ergebnis enthält jetzt Ergebnisse für von Microsoft verwaltete Aktionen. Ihre Punktzahl wird dadurch zunehmen.
+### <a name="the-old-process"></a>Der alte Prozess
 
-- **Actions-Elemente:** Aktionselemente sind jetzt einzelne Elemente, und viele umfassen die Telemetrie-Sammlung aus der Microsoft Secure Score Graph-API. Wenn möglich, werden Empfehlungen zur technischen Aktion nun Links zur entsprechenden Konfigurationsseite im Office 365-Dienst angezeigt.
+Es gab zwei Möglichkeiten, eine Vorlage im Compliance-Manager zu erstellen. Sie können eine vorhandene Vorlage kopieren oder Vorlagendaten aus einer Excel-Kalkulationstabelle in eine neue Vorlage importieren. Wählen Sie auf der Seite **Vorlagen** die Option **+ Vorlage hinzufügen** aus, um eine neue Vorlage zu erstellen, indem Sie einen Namen eingeben, Dimensionen auswählen und eine Excel-Datei mit einem bestimmten Format und Schema hochladen. Sie können auch das Feld **Kopie von einer vorhandenen Vorlage** überprüfen, eine zu kopierende Vorlage auswählen und die Dimensionen überprüfen. Entwurfs Anpassung die Vorlage erforderte einen mehrstufigen Prozess, der mit dem Auswählen von **benutzerdefiniertes Steuerelement hinzufügen** nach dem Erstellen der Vorlage begann.
 
-- **Mandantenverwaltung:** Neue Schnittstelle zum Verwalten neuer Datenelemente im Compliance-Manager (Preview):
-    - **Dimensionen:** Anzeigen, hinzufügen und Anpassen von Metadaten für Vorlagen, BEWERTUNGEN und Aktionselemente, mit denen Sie benutzerdefinierte Pivots für Filter erstellen können.
-    - **Besitzer:** Geben Sie einen Besitzer für jedes Aktionselement an.
-    - **Aktionen für Kunden:** Verwalten Sie die vollständige Liste der Aktionen, die in Compliance-Manager (Preview) enthalten sind, und aktivieren/deaktivieren Sie die Überwachung sicherer Bewertungen für Aktionselemente, die mit Secure Score integriert sind.
+### <a name="the-new-process"></a>Der neue Prozess
+
+Wir haben es Ihnen erleichtert, neue Vorlagen zu erstellen. In einem schrittweisen **Erweiterungs** Prozess können Sie einer vorhandenen Microsoft-Vorlage eine Kalkulationstabelle mit ihren Aktionen und Steuerelementen hinzufügen, um Ihre eigene angepasste Version zu erstellen. Wählen Sie auf der Seite **Vorlagen** im Compliance-Manager die Option **+ Vorlage hinzufügen**aus. Aktivieren Sie im Fenster **Vorlagen** -Flyout das Kontrollkästchen **Erweiterung aus globaler Vorlage erstellen** . Sie können Anpassungen mit einem neuen Excel-Format hinzufügen, das weniger komplex ist als das vorherige. Dieser neue Prozess ersetzt die frühere **Kopie aus einer vorhandenen Vorlage** und **Fügt benutzerdefinierte Steuerelementfunktionen hinzu** .
+
+Jedes Mal, wenn die ursprüngliche Bewertung über den unten beschriebenen Versions Verwaltungsprozess aktualisiert wird, erbt Ihre angepasste Bewertung diese Updates und behält Ihre benutzerdefinierten Steuerelemente bei.
+
+Es ist auch einfacher, eigene vorhandene Vorlagen zu ändern. Sie können Ihre Vorlage exportieren, Änderungen in derselben Arbeitsmappe vornehmen und Sie dann mit gespeicherten Bearbeitungs speichern importieren.
+
+Zeigen Sie detaillierte Anweisungen zum [Erstellen von Vorlagen](working-with-compliance-manager.md#templates) mit diesem neuen Prozess an.
+
+## <a name="versioning-notice-and-control"></a>Versions Verwaltungs Hinweis und-Steuerelement
+
+Ihre Organisation hat in der April 2020-Version von Compliance-Manager aktualisierte Bewertungen erhalten, um Sie bei der Anpassung an Zertifizierungs-und Regel Updates zu unterstützen. Wir bieten Ihnen eine klare Möglichkeit, alle zukünftigen Updates mithilfe von **Benachrichtigungen zur Versionsverwaltung**zu verstehen und zu akzeptieren.
+
+Wenn ein Update für die Vorlage eines Assessments oder eine Verbesserungs Aktion verfügbar ist, werden Sie in einem Warnungssymbol darüber informiert, dass ein Update bereit ist. Wenn Sie auf dieses Symbol klicken, wird das Update in einem Popupfenster erläutert, und Sie werden aufgefordert, diese zu akzeptieren. Wenn Sie das Warnungssymbol auswählen, wird ein Flyout-Bereich angezeigt, in dem das Update erklärt wird, und Sie werden aufgefordert, zu akzeptieren. Erfahren Sie mehr über [das akzeptieren von Updates für Bewertungen](working-with-compliance-manager.md#versioning-alerts-for-assessment-updates).
+
+## <a name="common-actions-will-synch-status-across-groups"></a>Häufige Aktionen synchronisieren den Status über Gruppen hinweg.
+
+Wenn Ihre Organisation über mehrere Bewertungsgruppen verfügt, hat sich das Verhalten von **technischen** Aktionen (also Aktionen, die sich auf Ihre gesamte Organisation auswirken) geändert. Doppelte Aktionen in mehreren Gruppen wurden zu einer einzigen Aktion zusammengefasst. Diese einzelne Aktion enthält alle hochgeladenen Notizen und Beweise aus den doppelten Versionen. Durch diese Änderung verhalten sich technische Aktionen nun so, wie Sie es in der gleichen Gruppe getan haben. Alle Änderungen, die an der Aktion in einer Gruppe oder Bewertung vorgenommen werden, werden nun in allen Instanzen wiedergegeben. Der **Implementierungsstatus**, das **Implementierungsdatum**, der **Test Status**und das **Test Datum** spiegeln die neuesten Aktualisierungen wider.
+
+## <a name="language-support"></a>Sprachunterstützung
+
+Compliance-Manager steht nun zusätzlich zu Englisch in den folgenden Sprachen zur Verfügung: Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Bekannte Probleme im Compliance-Manager (Vorschau)
 
-In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorstehenden Versionen von Compliance-Manager behoben werden sollten.
+Im folgenden Abschnitt werden bekannte Probleme in der aktuellen Version von Compliance-Manager behandelt.
 
 ### <a name="compliance-score"></a>Compliancebewertung
 
@@ -52,31 +71,11 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 
 - Sichere Ergebnis Ergebnisse sind für einige Aktionselemente in bestimmten Microsoft 365-und Office 365-Abonnements nicht verfügbar. In diesen Fällen konnte das sichere Ergebnis Ergebnis **nicht erkannt werden** .
 - Manchmal werden sichere Ergebnis Ergebnisse für die entsprechenden Richtlinien und Aktionselemente nicht abgeschlossen zurückgegeben.
-- Für neue Mandanten ist die Sicherung der Bewertungs Aktualisierungen für alle Aktionen automatisch aktiviert. Der globale Administrator kann die Option für die kontinuierliche Aktualisierung sicherer Bewertungen auf aus festlegen, wodurch Updates für alle Aktionen deaktiviert werden.
+- Für neue Mandanten werden sichere Bewertungs Aktualisierungen für alle Aktionen automatisch aktiviert. Der globale Administrator kann die Option für die kontinuierliche Aktualisierung sicherer Bewertungen auf aus festlegen, wodurch Updates für alle Aktionen deaktiviert werden.
   - **Hinweis**: Wenn Organisationen zunächst Microsoft 365 oder Office 365 bereitstellen, dauert es ungefähr sieben Tage, bis Secure Score Daten vollständig erfasst und Sie in Ihrer Partitur berücksichtigt. Während dieser Zeit wird durch das Festlegen der Option für die kontinuierliche Aktualisierung sicherer Bewertungen auf **aus** und das manuelle Festlegen einer Aktion auf **implementiert** festgesetzt, dass diese Aktion zur Partitur zählt. Nach den anfänglichen sieben Tagen wird durch das Drehen von Secure Score Continuous Update wieder eine kontinuierliche Überwachung von diesem Punkt aus aktiviert.
 - Wenn Secure Score Updates aktiviert sind, werden Aktionen aktiv durch Secure Score überwacht, obwohl das Test Datum der Aktion nicht aktualisiert wird, um die Überwachung widerzuspiegeln.
 - Wenn neue Bewertungen erstellt werden, enthalten Scores automatisch von Microsoft verwaltete Steuerpunkte und die Integration sicherer Bewertungen.
 - Alle Aktionen, die nicht von der Integration von Secure Score unterstützt werden, können manuell implementiert werden. Durch eine manuelle Implementierung wird die Bewertung für die Gruppe dieser Aktion berücksichtigt.
-
-### <a name="microsoft-managed-controls"></a>Von Microsoft verwaltete Steuerelemente
-
-- Das Testdatum für von Microsoft verwaltete Steuerelemente wird nicht in der Benutzeroberfläche angezeigt, auch wenn diese in die Bewertung einbezogen werden. Wenn Sie Informationen zum Test Datum anzeigen möchten, müssen Sie die Bewertung exportieren.
-
-### <a name="customization"></a>Anpassung
-
-- Durch das Hinzufügen von benutzerdefinierten Steuerelementen kann ein neues Steuerelement einer vorhandenen Steuerelement Familie hinzugefügt werden, es ist jedoch nicht möglich, eine neue Steuerelement Familie hinzuzufügen.
-- In dieser Version wird das Verknüpfen von Aktionselementen oder das Hinzufügen von Aktionen Elementen oder Steuerelementen zu einer Bewertung nicht unterstützt.
-- Wenn Sie eine benutzerdefinierte Aktion erstellen, können Sie Sie nicht bearbeiten oder löschen.
-
-### <a name="control-families-not-shown-in-assessments"></a>Steuern von Familien, die in Bewertungen nicht angezeigt werden
-
-- Wenn Sie eine Vorlage importieren, spiegeln alle auf dieser Vorlage basierenden Bewertungen alle Steuerelementfamilien wider, die Teil der Vorlage sind. Wenn Sie der Vorlage jedoch neue Steuerelementfamilien hinzufügen, werden die Änderungen in vorhandenen Bewertungen nicht berücksichtigt. Nur neue Bewertungen, die aus der aktualisierten Vorlage erstellt wurden, spiegeln die Änderungen wider.
-
-### <a name="templates"></a>Vorlagen
-
-- Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
-- Archivierte Vorlagen sind bearbeitbar und sollten nicht bearbeitbar sein.
-- Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 
 ### <a name="export"></a>Exportieren
 
@@ -92,7 +91,3 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorste
 ### <a name="session-timeout"></a>Sitzungstimeout
 
 - Wenn ein Timeout für eine Sitzung auftritt, wird möglicherweise der Fehler "etwas ging falsch" angezeigt. Um zu beheben, gehen Sie zu [Compliance-Manager](https://servicetrust.microsoft.com/ComplianceManager) , und melden Sie sich erneut an.
- 
-### <a name="language-support"></a>Sprachunterstützung
-
-- Alle Sprachen werden nicht für alle Webseiten unterstützt. Wenn Ihre lokale Sprache nicht unterstützt wird, zeigen Sie in US-Englisch an.

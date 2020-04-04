@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Microsoft-Konformitäts Bewertungspunkten, die Organisationen dabei helfen, Risikobewertungen zu vereinfachen und zu automatisieren.
-ms.openlocfilehash: 9a71abba7b38bcf1e39073133f82abaedfc0d270
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 942de8f8cc9eeb958cb7f8e96c9e7038447ce3f1
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078642"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141560"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft Compliance Score (Preview): häufig gestellte Fragen
 
 ## <a name="what-is-compliance-score"></a>Was ist das Kompatibilitäts Ergebnis?
 
-Microsoft Compliance Score ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern. Es bietet auch integrierte Steuerungs Zuordnung, die die Verbindung allgemeiner Steuerelemente zwischen den wichtigsten Regeln und Standards ermöglicht, sodass Sie eine Aktion ausführen können, um mehrere Anforderungen gleichzeitig zu erfüllen und Ihr Compliance-Programm besser zu skalieren.
+Microsoft Compliance Score ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern. Compliance Score bietet integrierte Steuerungs Zuordnung, die die Verbindung allgemeiner Steuerelemente zwischen den wichtigsten Regeln und Standards ermöglicht, sodass Sie eine Aktion ausführen können, um mehrere Anforderungen gleichzeitig zu erfüllen und Ihr Compliance-Programm besser zu skalieren.
 
 ## <a name="how-do-i-access-compliance-score"></a>Wie kann ich auf das Kompatibilitäts Ergebnis zugreifen?
 
@@ -37,11 +37,11 @@ Die Kompatibilitätsbewertung verwendet ein Berechtigungsmodell für die rollenb
 
 ## <a name="what-is-the-difference-between-compliance-score-and-compliance-manager"></a>Was ist der Unterschied zwischen Compliance Score und Compliance-Manager?
 
-Compliance-Score und Compliance-Manager verwenden dasselbe Back-End, aber Sie befinden sich an zwei unterschiedlichen Standorten (das Kompatibilitäts Ergebnis befindet sich im Microsoft 365 Compliance Center, und der Compliance-Manager befindet sich im Microsoft-Dienst Vertrauensstellungs Portal). Stellen Sie sich die Konformitätsbewertung als vereinfachte Version von Compliance-Manager vor, damit Sie eine umfassendere Übersicht über die aktuelle Compliance-Haltung ihrer Organisation und die Schritte zum Verbessern der Richtlinien erhalten. Während Sie viele Aktionen direkt innerhalb der Konformitätsbewertung ausführen können, befinden sich einige Funktionen im Compliance-Manager für jetzt. Lesen Sie mehr über die [Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score.md#relationship-to-compliance-manager).
+Compliance-Score und Compliance-Manager verwenden dasselbe Back-End, aber Sie befinden sich an zwei unterschiedlichen Standorten (das Kompatibilitäts Ergebnis befindet sich im Microsoft 365 Compliance Center, und der Compliance-Manager befindet sich im Microsoft-Dienst Vertrauensstellungs Portal). Stellen Sie sich die Konformitätsbewertung als vereinfachte Version von Compliance-Manager vor, damit Sie eine umfassendere Übersicht über die aktuelle Compliance-Haltung ihrer Organisation und die Schritte zum Verbessern der Richtlinien erhalten. Sie können zwar viele Aktionen direkt innerhalb der Konformitätsbewertung durchführen, doch einige Funktionen sind derzeit im Compliance-Manager vorhanden. Lesen Sie mehr über die [Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score.md#relationship-to-compliance-manager).
 
 ## <a name="who-should-use-compliance-score-and-who-should-use-compliance-manager"></a>Wer sollte den Kompatibilitäts Faktor verwenden, und wer sollte den Compliance-Manager verwenden?
 
-Das Kompatibilitäts Ergebnis ist für alle Benutzer in Ihrer Organisation hilfreich, die bei der Überwachung der Compliance und der Durchführung von Aktivitäten zur Unterstützung der Einhaltung behördlicher Standards eine Rolle spielen. Mit dem Kompatibilitäts Faktor müssen Sie sich nicht mit Vorschriften und Standards vertraut machen, um den Datenschutz in Ihrer Organisation zu verbessern. Compliance Score ist der optimale Ausgangspunkt für alle Benutzer. Von hier aus können Sie das Kompatibilitäts Ergebnis sehen, erfahren, welche empfohlenen Aktionen zur Minimierung von Risiken beitragen können, und in vielen Fällen direkt in die Lösungen einführen, um diese Aktionen auszuführen.
+Das Kompatibilitäts Ergebnis ist für alle Benutzer in Ihrer Organisation hilfreich, die bei der Überwachung der Compliance und der Durchführung von Maßnahmen zur Unterstützung der Einhaltung behördlicher Standards eine Rolle spielen. Mit dem Kompatibilitäts Faktor müssen Sie sich nicht mit Vorschriften und Standards vertraut machen, um den Datenschutz in Ihrer Organisation zu verbessern. Compliance Score ist der optimale Ausgangspunkt für alle Benutzer. Von hier aus können Sie das Kompatibilitäts Ergebnis sehen, erfahren, welche empfohlenen Aktionen zur Minimierung von Risiken beitragen können, und in vielen Fällen direkt in die Lösungen einführen, um diese Aktionen auszuführen.
 
 Vorerst ist Compliance-Manager der Ort, an dem Benutzerbewertungen verwalten und benutzerdefinierte Vorlagen erstellen können, um Bewertungen zu erstellen. Erfahren Sie mehr darüber [, welche Aktionen nur von Compliance-Manager während der öffentlichen Vorschau unterstützt werden](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) .
 
@@ -51,11 +51,11 @@ Nein. Das Kompatibilitäts Ergebnis misst Ihren Fortschritt bei der Durchführun
 
 ## <a name="what-regulations-and-standards-does-compliance-score-monitor"></a>Welche Vorschriften und Standards werden von der Kompatibilitätsbewertung überwacht?
 
-Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis, bei der es sich um eine Reihe von Steuerelementen handelt, die allgemeine Branchenvorschriften und-Standards enthält. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierung) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management). Program) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
+Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis, bei der es sich um eine Reihe von Steuerelementen handelt, die allgemeine Branchenvorschriften und-Standards enthält. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierungs) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management Programm) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
 
-Organisationen können benutzerdefinierte Bewertungen erstellen und hinzufügen, die für Ihre Organisation relevanter sind. Sie können eine der Compliance-Scores [vordefinierten Vorlagen](compliance-score.md#templates) verwenden, um Bewertungen für bestimmte Standards zu erstellen oder [eigene Vorlagen zu erstellen](working-with-compliance-manager.md#create-a-template-1).
+Organisationen können benutzerdefinierte Bewertungen erstellen und hinzufügen, die für Ihre Organisation relevanter sind. Verwenden Sie eine der [vorkonfigurierten Vorlagen](compliance-score.md#templates)der Kompatibilitätsbewertung, passen Sie eine Microsoft-Vorlage mit ihren eigenen Steuerelementen und Aktionen an, oder erstellen Sie Ihre eigene Vorlage. Lesen Sie Details zum [Arbeiten mit Vorlagen](working-with-compliance-manager.md#templates).
 
-Lesen Sie mehr darüber, [wie das Kompatibilitäts Bewertungsergebnis Ihre Bewertung berechnet](compliance-score-methodology.md).
+Erfahren Sie, wie die Ergebnisbewertung durch [das Kompatibilitäts Ergebnis berechnet](compliance-score-methodology.md)wird.
 
 ## <a name="what-is-the-difference-between-compliance-score-and-secure-score"></a>Was ist der Unterschied zwischen der Konformitätsbewertung und der sicheren Bewertung?
 
@@ -71,8 +71,16 @@ Das Kompatibilitäts Ergebnis bietet derzeit Bewertungen für Office 365 und InT
 
 Während die Kompatibilitätsbewertung eine kontinuierliche Überwachung und empfohlene Aktionen nur für Microsoft-Cloud-Dienste bietet, können Sie benutzerdefinierte Bewertungen im Compliance-Manager für Ihre lokalen Drittanbieterdienste hinzufügen. Auf diese Weise können Sie die Microsoft-Kompatibilitätsbewertung als SaaS-Compliance-Verwaltungstool verwenden, um Sie bei der Verwaltung aller Steuerelemente in Ihren digitalen Objekten zu unterstützen.
 
-Sie können eine der Compliance-Scores [vordefinierten Vorlagen](compliance-score.md#templates) verwenden, um Bewertungen für bestimmte Standards zu erstellen oder [eigene Vorlagen zu erstellen](working-with-compliance-manager.md#create-a-template-1).
+Sie können eine der [vorkonfigurierten Vorlagen](compliance-score.md#templates) der Kompatibilitätsbewertung verwenden, um Bewertungen für bestimmte Standards zu erstellen oder [eigene Vorlagen zu erstellen](working-with-compliance-manager.md#create-a-template).
 
 ## <a name="how-do-i-delete-a-template-or-assessment-i-no-longer-need"></a>Wie lösche ich eine Vorlage oder Bewertung, die ich nicht mehr brauche?
 
 Eine Bewertung oder Vorlage kann nicht gelöscht werden, Sie können Sie jedoch aus ihrer Ansicht ausblenden. Lesen Sie die [Anweisungen zum Ausblenden von Bewertungen](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
+
+## <a name="what-test-procedures-does-microsoft-follow-for-controls"></a>Welche Testverfahren werden von Microsoft für Steuerelemente befolgt?
+
+Microsoft nimmt an jährlichen Überwachungen für Steuerelemente Teil. Sie können die Überwachungsberichte von unseren Auditoren überprüfen, die im [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3)zum Download bereit stehen.
+
+## <a name="why-are-some-controls-tested-annually-and-others-tested-every-three-years"></a>Warum werden einige Steuerelemente jährlich getestet, andere werden alle drei Jahre getestet?
+
+Die FedRAMP-Bewertung ist ein Beispiel dafür, warum dies der Fall sein könnte. Es wird jedes Jahr durchgeführt und testet einen Querschnitt von Steuerelementen zwischen wichtigen Steuerelementfamilien. FedRAMP klassifiziert Steuerelemente als **Kern** , wenn Sie wichtig genug sind, um jährliche Tests zu erfordern. Steuerelemente, die als nicht-Kern bestimmt sind, werden alle drei Jahre getestet. Eine Teilmenge der Steuerelemente, die alle wichtigen Steuerelementfamilien umfassen, werden jährlich getestet. Auf diese Weise prüft jede jährliche Überwachung die Szenarien auf der ganzen Linie, um sicherzustellen, dass die Lösung robust ist. Lesen Sie mehr über den [jährlichen Bewertungsprozess für FedRAMP](https://www.fedramp.gov/annual-assessment-guidance/).

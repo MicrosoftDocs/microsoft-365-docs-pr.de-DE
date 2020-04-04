@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen in Office 365, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633183"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142503"
 ---
 # <a name="domains-faq"></a>Häufig gestellte Fragen (FAQ) zu Domänen
 
@@ -230,7 +230,7 @@ Sie müssen über mindestens eine benutzerdefinierte Domäne verfügen, die Sie 
     
 2. Wählen Sie auf der Seite **Domänen** die Domäne aus, die Sie als Standard für neue e-Mail-Adressen festlegen möchten. 
     
-3. Wählen Sie **als Standard festlegen**aus.
+3. Wählen Sie **Als Standard festlegen** aus.
     
 ::: moniker range="o365-worldwide"
 
@@ -285,9 +285,9 @@ Wenn Sie Office 365 mehrere Domänen hinzufügen, können Sie beliebige dieser D
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Warum habe ich eine Domäne des Typs "onmicrosoft.com"?
 
-Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.com*. 
+Office 365 erstellt eine Domäne für Sie wie _contoso.onmicrosoft.com_, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie _Alan\@contoso.onmicrosoft.com_. 
   
- **Wenn Sie möchten, dass Ihre e-Mails wie *Alan\@contoso.com*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+ __Wenn Sie möchten, dass Ihre e-Mails wie _Alan\@contoso.com_aussehen:__ [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn Sie beispielsweise "fourthcoffee.onmicrosoft.com" als ursprüngliche Domäne ausgewählt haben, können Sie sie nicht in "fabrikam.onmicrosoft.com" ändern. Um eine andere "onmicrosoft.com"-Domäne verwenden zu können, müssen Sie ein neues Abonnement bei Office 365 einrichten. 
     
@@ -300,11 +300,12 @@ Sie können die ursprüngliche Domäne "onmicrosoft.com" auch nach Hinzufügen I
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Warum habe ich eine "onmicrosoft.de"-Domäne?
 
-Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.de*. 
+Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie "Alan@contoso.onmicrosoft.de". 
   
- **Wenn Sie möchten, dass Ihre e-Mails wie *Alan@contoso.de*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+Wenn Sie Ihre e-Mails wie "Alan@contoso.de" aussehen lassen möchten: [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn beispielsweise die anfängliche Domäne, die Sie ausgewählt haben, fourthcoffee.onmicrosoft.de war, können Sie Sie nicht in fabrikam.onmicrosoft.de ändern. Um eine andere onmicrosoft.de-Domäne verwenden zu können, müssen Sie ein neues Abonnement mit Office 365 starten. 
     
@@ -444,7 +445,7 @@ Sie können, aber es gibt Einschränkungen:
         
     4. Testen Sie e-Mails an Personen, die sich im anderen e-Mail-System befinden. Senden Sie beispielsweise eine e-Mail an den Benutzer C. Diese e-Mail sollte an das Postfach des Benutzers C auf dem ursprünglichen e-Mail-Server übermittelt werden.
         
-    5. Überprüfen Sie von einem externen Konto oder aus dem e-Mail-Konto eines Mitarbeiters im anderen e-Mail-System, dass die Weiterleitung ordnungsgemäß auf dem anderen e-Mail-System eingerichtet ist. Senden Sie beispielsweise aus dem Gründungs-Server Konto von Benutzer C oder einem Hotmail-Konto Benutzer eine e-Mail, und vergewissern Sie sich, dass Sie im Office 365 Postfach von Benutzer a eintrifft.
+    5. Überprüfen Sie von einem externen Konto oder aus dem e-Mail-Konto eines Mitarbeiters im anderen e-Mail-System, dass die Weiterleitung ordnungsgemäß auf dem anderen e-Mail-System eingerichtet ist. Senden Sie beispielsweise aus dem ursprünglichen Server Konto von Benutzer C oder einem Hotmail-Konto Benutzer eine e-Mail, und stellen Sie sicher, dass Sie im Office 365 Postfach von Benutzer a eintrifft.
         
 9. Postfachinhalt migrieren
     

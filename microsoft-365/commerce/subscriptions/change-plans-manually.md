@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241892"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142151"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
-
-> [!NOTE]
-> Dieser Artikel bezieht sich auf das neue Admin Center. Das neue Admin Center steht für alle Microsoft 365-Administratoren zur Verfügung, und Sie können sich anmelden, indem Sie die Schaltfläche **Neues Admin Center** -Toggle oben auf der Startseite auswählen. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md). Informationen zum Artikel über das alte Admin Center finden Sie unter [Switch Office 365 für Unternehmen Plans manually](switch-plans-manually.md).
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Schritt 1: entscheiden, wie Pläne geändert werden
 
@@ -117,4 +114,5 @@ Wenn Sie alle Benutzer von einem Abonnement in das andere verschoben haben und S
 Wenn Sie nur einige Benutzer in ein anderes Abonnement verschoben haben, können Sie die [Lizenzen entfernen](../licenses/remove-licenses-from-subscription.md), die Sie nicht mehr benötigen.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Unterstützung bei der Anruf Unterstützung beim Ändern der Pläne
+
 [Anrufen des Microsoft-Supports](../../admin/contact-support-for-business-products.md)

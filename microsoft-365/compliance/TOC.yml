@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: DLP-Funktionen für vertrauliche Informationen
           href: what-the-dlp-functions-look-for.md
+    - name: Verschlüsselung in M365
+      href: encryption.md
     - name: Kundenschlüssel
       items:
         - name: Dienst Verschlüsselung mit Kundenschlüssel in Office 365
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Einrichten von IRM im SharePoint Admin Center
+      href: set-up-irm-in-sp-admin-center.md
     - name: Grundlegendes zur Datenklassifizierung (Vorschau)
       href: data-classification-overview.md
       items:
@@ -765,22 +769,22 @@
       href: get-started-with-service-trust-portal.md
     - name: Compliancebewertung und Compliance-Manager
       items:
-        - name: Compliancebewertung (Vorschau)
+        - name: Kompatibilitätsbewertung (Vorschau)
           href: compliance-score.md
-        - name: Einrichten der Compliancebewertung (Vorschau)
+        - name: Einrichten der Konformitätsbewertung (Vorschau)
           href: compliance-score-setup.md
-        - name: Arbeiten mit der Compliancebewertung (Vorschau)
+        - name: Arbeiten mit der Konformitätsbewertung (Vorschau)
           href: working-with-compliance-score.md
-        - name: Berechnung der Compliancebewertung (Vorschau)
+        - name: Berechnung der Konformitätsbewertung (Vorschau)
           href: compliance-score-methodology.md
-        - name: Versionshinweise zur Compliancebewertung (Vorschau)
+        - name: Versionshinweise zur Kompatibilitätsbewertung (Vorschau)
           href: compliance-score-release-notes.md
         - name: FAQ zur Kompatibilitätsbewertung (Vorschau)
           href: compliance-score-faq.md
         - name: Compliance-Manager (Vorschau)
           href: compliance-manager-overview.md
           items:
-            - name: Neuerungen beim Compliance-Manager (Vorschau)
+            - name: Versionshinweise für Compliance-Manager (Vorschau)
               href: compliance-manager-release-notes.md
             - name: Arbeiten mit Compliance-Manager (Vorschau)
               href: working-with-compliance-manager.md

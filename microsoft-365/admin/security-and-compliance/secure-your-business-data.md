@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361116"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142515"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>Top 10 Methoden zum Sichern von Office 365 und Microsoft 365 Business-Pläne
 
@@ -155,7 +155,8 @@ Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvide
 |Wenden Sie diese Regel an, wenn. . .  <br/> |Jede Anlage. . . Dateierweiterung entspricht. . .  <br/> |Jede Anlage. . . Dateierweiterung entspricht. . .  <br/> |
 |Angeben von Wörtern oder Ausdrücken  <br/> |Fügen Sie diese Dateitypen hinzu:  <br/> DOTM, DOCM, XLSM, sltm, XLA, xlam, XLL, PPTM, POTM, PPAM, PPSM, sldm  <br/> |Fügen Sie diese Dateitypen hinzu:  <br/> Ade, ADP, Ani, Bas, bat, CHM, cmd, com, CPL, CRT, HLP, HT, HTA, inf, ins, ISP, Job, JS, JSE, lnk, MDA, MDB, MDE, MDZ, MSC, MSI, MSP, MST, PCD, SHS, URL, VB, Visual Basic, VBS, WSC, WSF, WSH, exe, PIF  <br/> |
 |Führen Sie die folgenden Schritte aus. . .  <br/> |Empfänger durch Nachricht benachrichtigen  <br/> |Blockiert die Nachricht. . . Ablehnen der Nachricht und Einschließen einer Erklärung  <br/> |
-|Nachrichtentext bereitstellen  <br/> |Öffnen Sie diese Dateitypen nicht, es sei denn, Sie haben Sie erwartet, da die Dateien möglicherweise bösartigen Code enthalten und der Absender wissen, dass es sich nicht um eine Sicherheitsgarantie handelt.  <br/> ||
+|Nachrichtentext bereitstellen  <br/> |Öffnen Sie diese Dateitypen nicht, es sei denn, Sie haben Sie erwartet, da die Dateien möglicherweise bösartigen Code enthalten und der Absender wissen, dass es sich nicht um eine Sicherheitsgarantie handelt.  <br/>|
+|
    
 > [!TIP]
 > Sie können auch die zu sperrenden Dateien zur Liste der Antischadsoftware in [Schritt 4](#4-raise-the-level-of-protection-against-malware-in-mail)hinzufügen.
@@ -247,8 +248,16 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Sc
     
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Diese Richtlinie erstellen** oder **Speichern**(je nach Bedarf) aus.
     
-| | | Einstellung **oder**|**Empfohlene Einstellung** für die Option <br/>
-| Name  <br/> | Domäne und die wertvollsten Kampagnen Mitarbeiter  <br/> | | Beschreibung  <br/> | Stellen Sie sicher, dass die meisten wichtigen Mitarbeiter und unsere Domäne nicht angenommen werden.  <br/> | | Hinzufügen von Benutzern zum Schutz  <br/> | Wählen Sie **+ Bedingung hinzufügen, ist der Empfänger**. Geben Sie Benutzernamen ein, oder geben Sie die e-Mail-Adresse des Kandidaten, des Kampagnen Managers und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor dem Identitätswechsel schützen möchten.  <br/> | | Hinzufügen von Domänen zum Schutz  <br/> | Wählen Sie **+ Bedingung hinzufügen, die Empfängerdomäne ist**. Geben Sie die benutzerdefinierte Domäne, die Ihrem Microsoft 365-Abonnement zugeordnet ist, ein, wenn Sie eine definiert haben. Sie können mehr als eine Domäne eingeben.  <br/> | | Auswählen von Aktionen  <br/> | Wenn e-Mail von einem imitierten Benutzer gesendet wird: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten**aus, und geben Sie dann die e-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: securityadmin@contoso.com.          Wenn e-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Quarantäne Nachricht**aus.  <br/> | | Post Fach Intelligenz  <br/> | Standardmäßig wird die Post Fach Intelligenz ausgewählt, wenn Sie eine neue Richtlinie zum Schutz vor Phishing erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.  <br/> | | Hinzufügen von vertrauenswürdigen Absendern und Domänen  <br/> | Definieren Sie für dieses Beispiel keine Außerkraftsetzungen.  <br/> | | Angewendet auf  <br/> | Wählen Sie **die Empfängerdomäne**aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise contoso.com, in der Liste, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
+|**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
+| :-------| :-----|
+|Name  <br/> |Domäne und die wertvollsten Kampagnen Mitarbeiter  <br/> |
+|Beschreibung  <br/> |Stellen Sie sicher, dass die meisten wichtigen Mitarbeiter und unsere Domäne nicht angenommen werden.  <br/> |
+|Zu schützende Benutzer hinzufügen  <br/> |Wählen Sie **+ Bedingung hinzufügen, ist der Empfänger**. Geben Sie Benutzernamen ein, oder geben Sie die e-Mail-Adresse des Kandidaten, des Kampagnen Managers und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor dem Identitätswechsel schützen möchten.  <br/> |
+|Zu schützende Domänen hinzufügen  <br/> |Wählen Sie **+ Bedingung hinzufügen, die Empfängerdomäne ist**. Geben Sie die benutzerdefinierte Domäne, die Ihrem Microsoft 365-Abonnement zugeordnet ist, ein, wenn Sie eine definiert haben. Sie können mehr als eine Domäne eingeben.  <br/> |
+|Aktionen auswählen  <br/> |Wenn e-Mail von einem imitierten Benutzer gesendet wird: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten**aus, und geben Sie dann die e-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: securityadmin@contoso.com.          Wenn e-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Quarantäne Nachricht**aus.  <br/> |
+|Mailbox Intelligence  <br/> |Standardmäßig wird die Mailbox Intelligence ausgewählt, wenn Sie eine neue Anti-Phishing-Richtlinie erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.  <br/> |
+|Vertrauenswürdige Absender und Domänen hinzufügen  <br/> |Definieren Sie in diesem Beispiel keine Außerkraftsetzungen.  <br/> |
+|Angewendet auf  <br/> |Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise contoso.com, in der Liste, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -272,8 +281,15 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, sehen Sie sich ein
 6. Wenden Sie die Einstellungen in der folgenden Tabelle an. 
     
 7. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Diese Richtlinie erstellen** oder **Speichern**(je nach Bedarf) aus.
-    
-| | | Einstellung **oder**|**Empfohlene Einstellung** für die Option <br/>| | Name  <br/> | Blockiert aktuelle und zukünftige e-Mails mit erkannter Schadsoftware.  <br/> | | Beschreibung  <br/> | Blockiert aktuelle und zukünftige e-Mails und Anlagen mit erkannter Schadsoftware.  <br/> | | Anhänge speichern unbekannte Schadsoftware-Antwort  <br/> | Wählen Sie **die Option Blockieren der aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware**aus.  <br/> | | Umleitungs Anlage bei der Erkennung  <br/> | Umleitung aktivieren (aktivieren Sie dieses Kontrollkästchen) geben Sie das Administratorkonto oder ein Post Fach Setup für Quarantäne ein.          Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt (aktivieren Sie dieses Kontrollkästchen).  <br/> | | Angewendet auf  <br/> | Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
+
+|**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
+| :-------| :-----|
+|Name  <br/> |Blockiert aktuelle und zukünftige e-Mails mit erkannter Schadsoftware.  <br/> |
+|Beschreibung  <br/> |Blockiert aktuelle und zukünftige e-Mails und Anlagen mit erkannter Schadsoftware.  <br/> |
+|Anhänge speichern unbekannte Schadsoftware-Antwort  <br/> |Wählen Sie **die Option Blockieren der aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware**aus.  <br/> |
+|Umleitungs Anlage bei der Erkennung  <br/> |Umleitung aktivieren (aktivieren Sie dieses Kontrollkästchen) geben Sie das Administratorkonto oder ein Post Fach Setup für Quarantäne ein.          Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt (aktivieren Sie dieses Kontrollkästchen).  <br/> |
+|Angewendet auf  <br/> |Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
+|
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -312,6 +328,12 @@ So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne
     
 3. Klicken Sie auf **Speichern**. 
     
-| | | Einstellung **oder**|**Empfohlene Einstellung** für die Option <br/>| | Name  <br/> | Richtlinie für sichere Links für alle Empfänger in der Domäne  <br/> | | Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten  <br/> | Select **on-URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt**.  <br/> | | Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte  <br/> | Aktivieren Sie dieses Kontrollkästchen.  <br/> | | Angewendet auf  <br/> | Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
+**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
+| :-------| :-----|
+|Name  <br/> |Richtlinie für sichere Links für alle Empfänger in der Domäne  <br/> |
+|Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten  <br/> |Select **on-URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt**.  <br/> |
+|Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte  <br/> |Aktivieren Sie dieses Kontrollkästchen.  <br/> |
+|Angewendet auf  <br/> |Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
+|
    
 Weitere Informationen finden Sie unter [Office 365 ATP-sichere Links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

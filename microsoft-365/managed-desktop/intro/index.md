@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204234"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142683"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -67,13 +67,14 @@ Außerdem überwachen wir die Geräte Integrität und geben Ihnen Einblicke in d
 ## <a name="need-more-details"></a>Benötigen Sie weitere Informationen?
 Weitere Informationen zum Wert von Microsoft Managed Desktop, einschließlich Kunden Geschichten, finden Sie unter [Microsoft Managed Desktop](https://aka.ms/mmd). Zu den ersten Schritten mit weiteren Informationen zählen die [Roadmap](https://aka.ms/AA6jiam) und eine herunterladbare [Zusammenfassung mit einer Seite](https://aka.ms/AA6ob3h). Die neuesten Nachrichten finden Sie im Microsoft Managed Desktop- [Blog](https://aka.ms/AA6l2dd).
 
-Wenn Microsoft Managed Desktop für Ihre Organisation geeignet ist, können Sie sich in die zusätzliche Dokumentation einarbeiten, in der weitere Informationen zum Dienst erläutert werden, wie Sie Ihre Organisation für die Registrierung vorbereiten, wie Sie mit dem Dienst beginnen und danach fortlaufend arbeiten. darüber, wie Sie und Ihre Endbenutzer bei Bedarf ganz einfach Hilfe erhalten können. Wenn Sie bereits an Bord sind, beginnen Sie mit dem Kontakt mit Ihrem [lokalen Konto Team](https://pages.email.office.com/contactmmd/).
+Wenn Microsoft Managed Desktop für Ihre Organisation geeignet ist, können Sie sich in die zusätzliche Dokumentation einarbeiten, in der weitere Informationen zum Dienst erläutert werden, wie Sie Ihre Organisation für die Registrierung vorbereiten, wie Sie mit dem Dienst beginnen und wie Sie mit Ihren Endbenutzern bei Bedarf ganz einfach Hilfe erhalten können. Wenn Sie bereits an Bord sind, beginnen Sie mit dem Kontakt mit Ihrem [lokalen Konto Team](https://pages.email.office.com/contactmmd/).
 
 **Mehr Übersicht und Hintergrund** In erster Linie für technische und geschäftliche Entscheidungsträger sind in diesen Themen die Unterteilung von Rollen und Zuständigkeiten zwischen Ihrer Organisation und Microsoft, mehr über die in Microsoft Managed Desktop verwendeten Technologien sowie darüber, wie der Dienst in eine umfassendere Strategie im Rahmen des ITIL-Frameworks passt, detailliert.
 
 - [Rollen und Verantwortlichkeiten von Microsoft Managed Desktops](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop-Technologien](technologies.md)
 - [Microsoft Managed Desktop und ITIL](../MMD-and-ITSM.md)
+- [Compliance](compliance.md)
 - [Beschreibung des Microsoft Managed Desktop-Diensts](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Vorbereiten der Registrierung** In diesen Themen werden die Schritte beschrieben, die Sie in Ihrer Organisation zur Vorbereitung der Registrierung durchführen müssen, einschließlich der Überprüfung, ob Ihre Umgebung wichtige Voraussetzungen erfüllt, Netzwerke konfigurieren, Zertifikate einrichten und ihre apps vorbereiten muss.

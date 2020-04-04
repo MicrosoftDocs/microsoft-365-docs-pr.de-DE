@@ -14,26 +14,28 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Workflowtools in Microsoft Compliance Score die Compliance für Ihre Organisation verwalten können.
-ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fe36f0cdf5e204e0fa6150141cc348b0d0e325f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601192"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142586"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Arbeiten mit Microsoft Compliance Score (Vorschau)
 
-## <a name="managing-your-workflow-with-improvement-actions"></a>Verwalten des Workflows mit Verbesserungs Aktionen
+In diesem Artikel wird erläutert, wie Sie mit den wichtigsten Elementen der Konformitätsbewertung arbeiten. In diesem Artikel erfahren Sie, wie Sie mithilfe von **Verbesserungs Aktionen** den Compliance-Workflow verwalten. Außerdem erfahren Sie, wie Sie die Informationen auf Ihren **Lösungen** und **Bewertungs** Seiten verwenden und wie Sie Berichte erstellen.
 
-Durch die Verwendung von Verbesserungs Aktionen im Compliance Score werden Ihre Compliance-Workflows zentralisiert. Verbesserungs Aktionen schlagen Empfohlene Aktionen zur Anpassung an Datenschutzbestimmungen und-Standards vor und bieten ausführliche Anleitungen zur Implementierung. Sie können Sie Benutzern zuweisen, um die erforderlichen Implementierungs-und Testaufgaben auszuführen. Sie können auch Dokumentation und Notizen speichern und Statusaktualisierungen direkt in der Verbesserungs Aktion aufzeichnen.
+## <a name="manage-your-workflow-with-improvement-actions"></a>Verwalten des Workflows mit Verbesserungs Aktionen
+
+**Verbesserungs Aktionen** zentralisieren Sie Ihre Compliance-Aktivitäten. Jede Verbesserungs Aktion enthält detaillierte Anweisungen zur Implementierung, die Sie bei der Anpassung an Datenschutzbestimmungen und-Standards unterstützen. Aktionen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs-und Testaufgaben auszuführen. Sie können auch Dokumentation, Notizen und Datensatzstatus Aktualisierungen in der Verbesserungs Aktion speichern.
 
 ## <a name="view-your-improvement-actions"></a>Anzeigen von Verbesserungs Aktionen
 
-Das Konformitäts Bewertungs Dashboard zeigt Ihre **wichtigsten Verbesserungs Aktionen**an – diejenigen mit den verfügbaren Punkten, die die wichtigsten Probleme behandeln.
+Das Kompatibilitäts Bewertungs Dashboard zeigt Ihre **wichtigsten Verbesserungs Aktionen**an – diejenigen mit den am besten verfügbaren Punkten, die die wichtigsten Probleme behandeln.
 
-Wenn Sie alle Verbesserungs Aktionen anzeigen möchten, wählen Sie die Registerkarte **Verbesserungs Aktionen** in Ihrem Dashboard aus, oder wählen Sie unter der Liste der wichtigsten Verbesserungs Aktionen auf dem Dashboard **alle Verbesserungs Aktionen anzeigen** aus. Dadurch gelangen Sie zur Seite **Verbesserungs Aktionen** , auf der Sie alle Verbesserungs Aktionen ihrer Organisation sehen können.
+Um alle Ihre Verbesserungs Aktionen auf der Seite **Verbesserungs Aktionen** anzuzeigen, wählen Sie die Registerkarte **Verbesserungs** Aktionen in Ihrem Dashboard aus. Oder wählen Sie **alle Verbesserungs Aktionen** unterhalb der Liste der wichtigsten Verbesserungs Aktionen in Ihrem Dashboard anzeigen aus.
 
-Wenn Sie eine lange Liste von Aktionen haben, ist es möglicherweise hilfreich, Ihre Ansicht zu filtern. Wählen Sie dazu in der rechten oberen Ecke der Liste Aktionen die Option **Filter** aus. Wenn der **Filter** Flyout-Bereich angezeigt wird, wählen Sie die gewünschten Kriterien basierend auf Regeln und Standards, Lösung und Gruppe aus. Sie können die Ansicht auch anpassen, indem Sie in der oberen rechten Ecke die Option **Gruppe** auswählen und im Dropdownmenü die Option zum Anzeigen nach Gruppe, Lösung, Kategorie, Aktionstyp oder Status auswählen.
+Wenn Sie eine lange Liste von Aktionen haben, ist es möglicherweise hilfreich, Ihre Ansicht zu filtern. Wählen Sie in der Liste Aktionen in der rechten oberen Ecke den **Filter** aus. Wenn der **Filter** Flyout-Bereich angezeigt wird, wählen Sie Ihre Kriterien basierend auf Regeln und Standards, Lösung und Gruppe aus. Sie können die Ansicht auch anpassen, indem Sie in der oberen rechten Ecke die Option **Gruppe** auswählen. Wählen Sie im Dropdownmenü die Option aus, um nach Gruppe, Lösung, Kategorie, Aktionstyp oder Status anzuzeigen.
 
 In der Standardansicht für diese Seite werden keine Verbesserungs Aktionen mit dem Teststatus " **übergeben**" angezeigt. Zum Anzeigen von Aktionen, die Tests bestanden haben, aktivieren Sie das Kontrollkästchen **übergebenes** Feld im Dropdownbereich **Filter** . Nur Aktionen mit einem Teststatus der **übergebenen** Zählung zu Ihrer Partitur.
 
@@ -44,7 +46,7 @@ Auf der Seite Verbesserungs Aktionen werden die folgenden Datenpunkte für jede 
 - **Gruppe**: die Gruppe, der Sie die Aktion zugewiesen haben
 - **Lösungen**: die Lösung, mit der Sie zur Ausführung der Aktion wechseln können
 - **Assessments**: die Bewertung (die Steuerelemente zur Erfüllung eines bestimmten Compliance-Ziels organisiert), in dem sich die Aktion befindet
-- **Kategorien**: die zugehörige Datenschutzkategorie (z.b. Schutz von Informationen, Verwalten von Geräten usw.)
+- **Kategorien**: die zugehörige Datenschutzkategorie (beispielsweise zum Schutz von Informationen, Verwalten von Geräten usw.)
 - **Test Status**:
     - **None** : keine Statusaktualisierung aufgezeichnet
     - **Nicht bewertet** – Test wurde nicht gestartet
@@ -56,9 +58,9 @@ Auf der Seite Verbesserungs Aktionen werden die folgenden Datenpunkte für jede 
 
 ### <a name="improvement-actions-details"></a>Details zur Verbesserungs Aktionen
 
-Jede Verbesserungs Aktion verfügt über eine Detailseite. Diese Seite enthält detaillierte Anweisungen zur Implementierung, in denen erläutert wird, wie Sie die empfohlenen Maßnahmen ergreifen, um die entsprechenden Standards und behördlichen Anforderungen zu erfüllen, die unter der Kopfzeile **auf einen Blick** aufgeführt sind.
+Jede Verbesserungs Aktion verfügt über eine Detailseite. Auf dieser Seite finden Sie detaillierte Anweisungen zur Implementierung der empfohlenen Aktionen zur Behebung der entsprechenden Standards und behördlichen Anforderungen, die unter der Überschrift " **auf einen Blick** " aufgeführt sind.
 
-Auf der Seite Details können Sie die empfohlene Aktion starten oder die Arbeit einem anderen Benutzer zuweisen, den Status aktualisieren und Notizen und Dokumentation anfügen.
+Auf der Seite Details können Sie die empfohlene Aktion starten. Sie können die Arbeit auch einem anderen Benutzer zuweisen, den Status aktualisieren und Notizen und Dokumentation anfügen.
 
 So zeigen Sie die Detailseite einer Verbesserungs Aktion an:
 
@@ -73,7 +75,7 @@ Um mit der Implementierung an einer Verbesserungs Aktion zu beginnen, können Si
 
 - Der Besitzer einer Unternehmensrichtlinie
 - Ein IT-Implementierer
-- Ein weiterer Mitarbeiter, der für die Ausführung der Aufgabe zuständig ist 
+- Ein weiterer Mitarbeiter, der für die Ausführung der Aufgabe zuständig ist
 
 Wenn die richtige Person identifiziert wurde, stellen Sie sicher, dass Sie eine ausreichende [Rolle](compliance-score-setup.md#set-user-permissions-and-assign-roles) in Compliance Score (Compliance-Administrator, Kompatibilitätsdaten Administrator, Sicherheitsadministrator oder globaler Administrator) besitzen, um die Arbeit auszuführen, und führen Sie dann die folgenden Schritte aus: 
 
@@ -87,7 +89,7 @@ Der zugewiesene Benutzer kann dann die empfohlenen Aktionen ausführen, die in d
 
 ## <a name="perform-work-and-store-documentation"></a>Ausführen der Dokumentation zu Arbeits-und Speicheraufgaben
 
-Wenn Sie Implementierungsaufgaben ausführen, können Sie Dateien und Notizen direkt in die Verbesserungs Aktion im Abschnitt **Hinweise und Dokumentation** hochladen. Dadurch wird ein sicheres, zentralisiertes Repository bereitgestellt, mit dem Sie die Zufriedenheit von Steuerelementen zur Erfüllung von Compliance-Standards und-Vorschriften demonstrieren können. Jeder Benutzer mit schreibgeschütztem Zugriff kann Inhalt in diesem Abschnitt lesen. Die Möglichkeit zum Hochladen, herunterladen oder Löschen von Feldern oder zum eingeben oder Bearbeiten von Notizen ist auf Rollen mit Bearbeitungsrechten beschränkt.
+Wenn Sie Implementierungsaufgaben ausführen, können Sie Dateien und Notizen direkt in die Verbesserungs Aktion im Abschnitt **Hinweise und Dokumentation** hochladen.  Diese Umgebung ist ein sicheres, zentralisiertes Repository, mit dem Sie die Zufriedenheit von Steuerelementen zur Erfüllung von Compliance-Standards und-Vorschriften demonstrieren können. Jeder Benutzer mit schreibgeschütztem Zugriff kann Inhalt in diesem Abschnitt lesen. Nur Benutzer mit Bearbeitungsrechten können Dateien hochladen und herunterladen sowie Notizen eingeben oder bearbeiten.
 
 Die Felder im Abschnitt " **Notizen und Dokumentation** " umfassen Folgendes:
 
@@ -104,7 +106,7 @@ Die Felder im Abschnitt " **Notizen und Dokumentation** " umfassen Folgendes:
 
 **Implementierung, Test und zusätzliche Hinweise**
 
-- Wenn Sie in einem dieser drei Felder Notizen hinzufügen möchten, wählen Sie unter einem der thse-Felder die Option " **Implementierungshinweise bearbeiten** " aus.
+- Wenn Sie in einem dieser drei Felder Notizen hinzufügen möchten, wählen Sie unter einem dieser Felder die Option " **Implementierungshinweise bearbeiten** " aus.
 - Wenn der Flyout-Bereich geöffnet wird, geben Sie Notizen in das Textfeld ein, und klicken Sie dann auf **Speichern und schließen**.
 - Um Notizen zu bearbeiten, wählen Sie **Anmerkungen zur Implementierung bearbeiten**aus, nehmen Sie Ihre Änderungen vor, und klicken Sie dann auf **Speichern und schließen**.
 
@@ -157,7 +159,7 @@ Auf der Seite Lösungen wird der Anteil der gesammelten und potenziellen Punkte 
 
 ### <a name="filtering-your-solutions-view"></a>Filtern der Lösungs Ansicht
 
-So filtern Sie die Ansicht von Lösungen: 
+So filtern Sie die Ansicht von Lösungen:
 
 1. Wählen Sie in der oberen linken Ecke der Liste Bewertungen die Option **Filter** aus.
 2. Platzieren Sie im **Bereich** flyoutfilter eine Überprüfung neben den gewünschten Kriterien (Normen und Verordnungen, Lösung, Aktionstyp, Compliance-Manager-Gruppe, Kategorie).
@@ -167,13 +169,13 @@ Sie können Ihre Ansicht auch so ändern, dass Bewertungen nach Gruppe, Produkt 
 
 ### <a name="taking-actions-from-the-solutions-page"></a>Erstellen von Aktionen auf der Seite "Lösungen"
 
-Auf der Seite Lösungen werden die Lösungen Ihrer Organisation angezeigt, die mit Verbesserungs Aktionen verbunden sind. In der Tabelle sind die Beiträge der einzelnen Lösungen zu ihrer Gesamtpunktzahl, die erzielten Punkte Verbesserungen und mögliche Ergebnisse in dieser Lösung sowie die verbleibende Anzahl von Verbesserungs Aktionen, die in dieser Lösung gruppiert sind, aufgeführt, die Ihre Punktzahl erhöhen können. 
+Auf der Seite Lösungen werden die Lösungen Ihrer Organisation angezeigt, die mit Verbesserungs Aktionen verbunden sind. In der Tabelle sind die Beiträge der einzelnen Lösungen zu ihrer Gesamtpunktzahl, die erzielten Punkte Verbesserungen und mögliche Ergebnisse in dieser Lösung sowie die verbleibende Anzahl von Verbesserungs Aktionen, die in dieser Lösung gruppiert sind, aufgeführt, die Ihre Punktzahl erhöhen können.
 
 Es gibt zwei Möglichkeiten, auf diesem Bildschirm Maßnahmen zu ergreifen:
 
-1. Klicken oder tippen Sie in der Zeile der gewünschten Lösung unter der Spalte **verbleibende Aktionen** auf die durch Hyperlinks verlinkte Nummer. Dadurch gelangen Sie zu einer gefilterten Ansicht des Bildschirms Verbesserungs Aktionen, in dem nicht getestete Verbesserungs Aktionen für diese Lösung angezeigt werden.
+1. Wählen Sie in der Zeile der gewünschten Lösung unter der Spalte **verbleibende Aktionen** die mit Hyperlinks verlinkte Nummer aus. Auf dem Bildschirm Verbesserungs Aktionen wird eine gefilterte Ansicht angezeigt, in der nicht getestete Verbesserungs Aktionen für diese Lösung angezeigt werden.
 
-2. Wählen Sie in der Zeile der gewünschten Lösung unter der Spalte **Open Solution** die Option **Öffnen**aus. Dadurch gelangen Sie zur Lösung oder zum Standort im Sicherheits-und Compliance Center von Microsoft 365 und Office 365, in der Sie die empfohlene Aktion durchführen können.
+2. Wählen Sie in der Zeile der gewünschten Lösung unter der Spalte **Open Solution** die Option **Öffnen**aus. Sie sehen die Lösung oder den Standort im Sicherheits-und Compliance Center von Microsoft 365 und Office 365, in der Sie die empfohlene Aktion durchführen können.
 
 ## <a name="assessments-page"></a>Seite "Bewertungen"
 
@@ -185,25 +187,25 @@ Auf dieser Seite können Sie schnell wichtige Informationen zu den einzelnen Bew
 
 - **Status**: der Status bis zum Abschluss aller Verbesserungs Aktionen in der Bewertung wird entweder als aufgelistet:
     - **Nicht konform**: die Verbesserungs Aktionen in der Bewertung wurden nicht implementiert und erfolgreich getestet. die Arbeit wurde noch nicht begonnen.
-    - **In Bearbeitung**: Es sind Arbeiten zur Implementierung oder zum Testen der Verbesserungs Aktionen im Gange; Dies könnte beispielsweise bedeuten, dass eine Verbesserungs Aktion in der Bewertung für Arbeit zugewiesen wurde, wird derzeit implementiert und getestet.
+    - **In Bearbeitung**: Es sind Arbeiten zur Implementierung oder zum Testen der Verbesserungs Aktionen im Gange; beispielsweise wurde eine Verbesserungs Aktion in der Bewertung für Arbeit zugewiesen, wird derzeit implementiert und getestet.
 - **Bewertungs Fortschritt**: der Prozentsatz der Arbeit, der für die abschließende Fertigstellung der Bewertung geleistet wurde, gemessen an der Anzahl der erfolgreich getesteten Steuerelemente.
 - Von **Kunden verwaltete Aktionen**: die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung ihrer vom Kunden verwalteten Steuerelemente
 - Von **Microsoft verwaltete Aktionen**: die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung von von Microsoft verwalteten Steuerelementen
 - **Assessment Group**: Name der Gruppe, die Sie erstellt haben, in der sich die Bewertung befindet
 - **Verwandte Dienste**: zugeordneter Microsoft 365-Dienst
-- **Verwandte Bestimmungen**: der gesetzliche Standard, die Richtlinie oder das Gesetz, das die Bewertung erfüllen soll
+- **Verwandte Bestimmungen**: der gesetzliche Standard, die Richtlinie oder das Recht, das die Bewertung erfüllen soll
 
 ### <a name="default-assessments"></a>Standardbewertungen
 
-Standardmäßig wird die Microsoft 365-Datenschutz-Basisbewertung auf der Seite "Bewertungen" angezeigt. Compliance Score bietet auch mehrere Out-of-Box-Bewertungen ([vollständige Liste anzeigen](compliance-score.md#templates)). Wenn Sie weitere Bewertungen hinzufügen möchten, um zusätzliche Vorschriften und Standards abzudecken, können Sie dies im Compliance-Manager tun.
+Standardmäßig wird die Microsoft 365-Datenschutz-Basisbewertung auf der Seite "Bewertungen" angezeigt. Compliance Score bietet auch mehrere vorkonfigurierte Bewertungen ([vollständige Liste anzeigen](compliance-score.md#templates)). Sie können weitere Bewertungen hinzufügen, um zusätzliche Vorschriften und Standards im Compliance-Manager abzudecken.
 
 ### <a name="managing-assessments"></a>Verwalten von Bewertungen
 
-Während der öffentlichen Vorschau verbleiben Funktionen zum Anzeigen, erstellen, exportieren und Archivieren von Bewertungen im Compliance-Manager-Tool. 
+Während der öffentlichen Vorschau gelangen Sie zum Compliance-Manager-Tool, um Ihre Bewertungen zu verschachteln, anzupassen und zu verwalten.
 
-Wählen Sie zum Verwalten Ihrer Bewertungen **im Compliance-Manager** oben in der Liste "Bewertungen" die Option "Bewertungen verwalten" aus.
+Wählen Sie auf der Seite " **Bewertungen** " unter Konformitätsbewertung in **Compliance-Manager** die Option "Bewertungen verwalten" oben in der Liste "Bewertungen" aus. Über diesen Link gelangen Sie zu Ihrem **Assessments** -Dashboard im Compliance-Manager.
 
-Der andere Link oben in der Liste "Assessments", **Microsoft-Aktionen im Compliance-Manager**, führt Sie auf die Seite im Compliance-Manager, die Microsoft-Steuerelemente anzeigt, die zur Konformitätsbewertung beitragen.
+Der andere Link oben in der Liste "Assessments", **Microsoft-Aktionen im Compliance-Manager**, führt Sie zum **Steuerelement-Info** -Dashboard im Compliance-Manager, der Microsoft-Steuerelemente anzeigt, die zur Konformitätsbewertung beitragen.
 
 ### <a name="filtering-your-assessments-view"></a>Filtern der Ansicht "Bewertungen"
 
@@ -221,6 +223,11 @@ Wählen Sie in der Liste Bewertung in der Spalte **Kunden verwaltete Aktionen** 
 
 ## <a name="reporting"></a>Reporting
 
-Sie können einen Bericht über alle Ihre Verbesserungs Aktionen in der Kompatibilitätsbewertung exportieren. Wählen Sie auf der Seite **Verbesserungs Aktionen** in der oberen linken Ecke des Bildschirms oberhalb der Liste der Aktionen die Option **exportieren** aus. Dadurch wird ein Excel-Arbeitsblatt mit allen ihren Verbesserungs Aktionen und den Filterkategorien erstellt, die auf der Seite **Verbesserungs Aktionen** angezeigt werden, die Sie auf dem lokalen Computer anzeigen und speichern können.
+Sie können einen Bericht über alle Ihre Verbesserungs Aktionen in der Kompatibilitätsbewertung exportieren. Wählen Sie auf der Seite **Verbesserungs Aktionen** in der oberen linken Ecke des Bildschirms oberhalb der Liste der Aktionen die Option **exportieren** aus. Dadurch wird ein Excel-Arbeitsblatt mit allen ihren Verbesserungs Aktionen und den Filterkategorien erstellt, die auf der Seite **Verbesserungs Aktionen** angezeigt werden.
 
-Sie können auch einen Bericht aus dem Compliance-Manager exportieren. Navigieren Sie im Compliance-Manager zur Registerkarte **Steuerelemente** , und wählen Sie im oberen rechten Bereich des Bildschirms **exportieren** aus. Dadurch wird ein Excel-Arbeitsblatt erstellt, das Sie anzeigen und speichern können.
+Sie können einen Bericht auch aus dem Compliance-Manager exportieren, indem Sie die folgenden Schritte ausführen:
+
+1. Navigieren Sie im Compliance-Manager zu Ihrem **Steuerelement-Info** -Dashboard.
+2. Es wird eine Registerkarte " **Bewertung** " und eine Registerkarte " **Vorlage** " angezeigt.  
+3. So exportieren Sie eine Bewertung: Wählen Sie die Registerkarte **Bewertung** aus. verwenden Sie die Dropdownmenüs **Gruppieren** und **bewerten** , um die Bewertung auszuwählen, die Sie exportieren möchten. Wählen Sie in der oberen rechten Ecke des Bildschirms **exportieren** aus. Eine Excel-Datei wird heruntergeladen. Es enthält eine Liste von Aktionen, gruppiert nach Steuerelement, mit ihrer Implementierung und Testdetails.
+4. So exportieren Sie eine Vorlage: Wählen Sie die Registerkarte **Vorlage** aus, und wählen Sie im Dropdownmenü **Vorlage** die Vorlage aus, die Sie exportieren möchten. Wählen Sie in der oberen rechten Ecke des Bildschirms **exportieren** aus. Eine Excel-Datei wird heruntergeladen. Es enthält eine Liste von Aktionen, gruppiert nach Steuerelement, mit ihrer Implementierung und Testdetails.

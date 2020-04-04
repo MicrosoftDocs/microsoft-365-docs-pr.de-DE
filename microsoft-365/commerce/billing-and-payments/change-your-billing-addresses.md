@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Hier erfahren Sie, wie Sie Ihre Rechnungsadressen für Office 365 für Unternehmen aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
 ms.custom: okr_SMB
-ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409640"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142311"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Ändern der Rechnungsadressen für Office 365 Business
 
@@ -61,9 +61,6 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 ::: moniker-end
 
@@ -176,12 +173,24 @@ Standardmäßig werden die Rechnungsbenachrichtigungen für Ihre Organisation an
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändern der alternativen E-Mail-Adresse für einen anderen Administrator
 
 Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren oder Rechnungsadministratoren in Ihrer Organisation ändern.
-  
-1. Wechseln Sie im Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing Notifications</a> .
 
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite mit den <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungs Benachrichtigungen</a> .
+::: moniker range="o365-worldwide"
 
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite mit den <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Abrechnungs Benachrichtigungen</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungsbenachrichtigungen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing Notifications</a> .
+
+::: moniker-end
 
 2. Wählen Sie auf der Seite " **Abrechnungs Benachrichtigungen** " den Administrator aus, den Sie ändern möchten.
 
@@ -193,6 +202,4 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 
 [Grundlegendes zur Ihrer Rechnung](understand-your-invoice2.md)
 
-[Bezahlen für yoursubscription](pay-for-your-subscription.md)
-
-[Abonnements und Abrechnung – Administratorhilfe](../index.yml)
+[Bezahlen Ihres Abonnements](pay-for-your-subscription.md)

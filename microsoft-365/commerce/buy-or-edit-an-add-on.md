@@ -22,24 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Erfahren Sie, wie Sie ein Add-on erwerben, um Ihrem Office 365 für Unternehmen-Abonnement zusätzliche Funktionen hinzuzufügen. Sie können auch ein Add-on aktualisieren und entfernen.
 ms.custom: okr_SMB
-ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354806"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142275"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Kaufen oder Bearbeiten eines Add-Ons für Office 365 Business
 
 [] Bei mehreren der Office 365 Business-Pläne gibt es Add-Ons, die Sie für Ihr Abonnement kaufen können. Ein Add-On bietet zusätzliche Funktionen für das Abonnement, für das Sie sie kaufen.
-
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
-::: moniker-end 
 
 ## <a name="buy-an-add-on"></a>Kaufen eines Add-Ons
 
@@ -105,14 +97,13 @@ ms.locfileid: "42354806"
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>Aktualisieren eines Add-Ons
 
-Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon ab, ob es sich bei dem Add-on um ein herkömmliches Add-on oder ein eigenständiges Add-on handelt. 
+Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon ab, ob es sich bei dem Add-on um ein herkömmliches Add-on oder ein eigenständiges Add-on handelt.
 
 *Herkömmliche Add-ons* sind mit einem bestimmten Abonnement verknüpft. Wenn Sie das Abonnement kündigen, wird das zugehörige Add-on ebenfalls abgebrochen.
   
-*Eigenständige Add-ons* sind nicht mit einem bestimmten Abonnement verknüpft. Eigenständige Add-ons werden auf der Seite **Abonnements** (oder auf der Seite **Produkte & Dienste** im neuen Admin Center) als separates Abonnement angezeigt und verfügen über ein eigenes Ablaufdatum. Sie verwalten ein eigenständiges Add-on auf die gleiche Weise, wie Sie jedes andere Abonnement verwalten.
+*Eigenständige Add-ons* sind nicht mit einem bestimmten Abonnement verknüpft. Eigenständige Add-ons werden auf der Seite **Products & Services** als separates Abonnement angezeigt und verfügen über ein eigenes Ablaufdatum. Sie verwalten ein eigenständiges Add-on auf die gleiche Weise, wie Sie jedes andere Abonnement verwalten.
   
 ### <a name="update-a-traditional-add-on"></a>Aktualisieren eines herkömmlichen Add-ons
 
@@ -129,7 +120,6 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 5. Geben Sie die gewünschte Mengenänderung für das Abonnement ein, und wählen Sie dann **Änderung übermitteln**aus.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -174,7 +164,6 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
     > Sie können die Menge der Benutzerlizenzen auch mithilfe des Aufwärts- und Abwärtspfeils ändern oder die gewünschte Anzahl einfach im Feld eingeben.
   
     ![Feld "Lizenzen gesamt" und Schaltfläche "Übermitteln" im Dialogfeld "Lizenzen hinzufügen oder entfernen"](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
 
 ::: moniker-end
 
@@ -220,7 +209,6 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>Entfernen eines Add-Ons
 
 Sie können ein eigenständiges Add-on auf die gleiche Weise wie das [kündigen eines Abonnements](subscriptions/cancel-your-subscription.md)kündigen. Oder Sie können **wiederkehrende Rechnungen** für ein eigenständiges Add-on mithilfe der obigen Schritte auf Off festlegen. Sie können ein herkömmliches Add-on jedoch nicht entfernen, nachdem es gekauft wurde. Wenn Sie ein herkömmliches Add-on entfernen müssen, wenden Sie sich an den [Support, um Hilfe zu erhalten](../admin/contact-support-for-business-products.md).
@@ -231,8 +219,6 @@ In der folgenden Tabelle sind Add-ons aufgeführt, die für verschiedene Edition
   
 Informationen zu Skype for Business-Add-Ons finden Sie unter [Skype for Business- und Microsoft Teams-Add-On-Lizenzierung](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
-****
-
 |**Add-On**|**Verfügbar in den folgenden Abonnements**|
 |:-----|:-----|
 |Kunden-Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |

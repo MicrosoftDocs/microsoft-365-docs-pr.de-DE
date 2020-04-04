@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Self-Service-Käufen (Benutzer)
+title: Self-Service-Einkäufe (Benutzer) verwalten
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,19 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080322"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142139"
 ---
-# <a name="manage-self-service-purchases-users"></a>Verwalten von Self-Service-Käufen (Benutzer)
+# <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
 Als Benutzer können Sie Abonnements für bestimmte Produkte kaufen und Personen in Ihrem Teamlizenzen für diese Abonnements zuweisen. Sie sind für das bezahlen von Self-Service-Käufen verantwortlich, die Sie tätigen. Sie können Ihre Abonnements im Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin.Microsoft.com</a>verwalten.
-
-> [!NOTE]
-> Sie müssen die neue Benutzeroberfläche für das Admin Center aktivieren.
 
 Ihr Administrator hat eine schreibgeschützte Ansicht für alle Abonnements, die Sie kaufen. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Kaufpreis und die zugewiesenen Benutzer für jedes Abonnement sehen, das Sie kaufen.
 
@@ -55,7 +52,7 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 3. Wählen Sie **Lizenzen zuweisen**aus.
 
-4. Geben Sie im Bereich **Lizenzen für Benutzer zuweisen** die Eingabe eines Namens ein, und wählen Sie ihn aus den Ergebnissen aus, um ihn der Liste hinzuzufügen. Sie können bis zu 20 Benutzer gleichzeitig hinzufügen.
+4. Beginnen Sie im Bereich **Lizenzen an Benutzer zuweisen** mit der Eingabe eines Namens, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen. Sie können bis zu 20 Benutzer gleichzeitig hinzufügen.
 
     > [!NOTE]
     > Sie können nur Personen in Ihrer Organisation Lizenzen zuweisen.

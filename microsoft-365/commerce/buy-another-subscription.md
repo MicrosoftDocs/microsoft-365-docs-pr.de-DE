@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Hier erfahren Sie, wie Sie ein weiteres Office 365 für Unternehmen Abonnement für Ihre Organisation erwerben, wenn Sie bereits über ein Abonnement verfügen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354646"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142263"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Erwerben eines weiteren Office 365 Business-Abonnements
 
@@ -40,9 +40,6 @@ Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die 
 ## <a name="buy-another-subscription"></a>Ein weiteres Abonnement kaufen
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
@@ -109,7 +106,6 @@ Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die 
 8. Wählen Sie auf der Seite Bestätigung die Option **zu admin Home wechseln**aus.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

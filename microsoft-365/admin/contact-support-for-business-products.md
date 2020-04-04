@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land/Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln oder einen Microsoft Store besuchen.
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106060"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142551"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe
 
@@ -40,10 +40,7 @@ ms.locfileid: "43106060"
 
 Sparen Sie Zeit, indem Ihre Serviceanfrage online starten. Wir unterstützen Sie bei der Suche nach einer Lösung oder Verbinden Sie mit einem Experten, der Sie per e-Mail oder telefonisch kontaktiert. [Erfahren Sie mehr über die Reaktionszeiten für anfänglichen Support](https://go.microsoft.com/fwlink/p/?LinkId=518251).
 
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
-1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Wenn die Meldung, dass Sie keine Berechtigung haben, auf diese Seite zuzugreifen oder diese Aktion auszuführen, angezeigt wird, sind Sie kein Administrator. [Wer verfügt über Administratorberechtigungen in meinem Unternehmen?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Wenn die Meldung, dass Sie keine Berechtigung haben, auf diese Seite zuzugreifen oder diese Aktion auszuführen, angezeigt wird, sind Sie kein Administrator. [Wer verfügt über Administratorberechtigungen in meinem Unternehmen?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
 2. Wählen Sie die Schaltfläche **Benötigen Sie Hilfe?** aus.
 
@@ -80,8 +77,6 @@ Sie können jetzt einen Termin mit einem Answer Desk-Experten in einem Microsoft
 2. Geben Sie Ihren Standort ein, und klicken Sie auf „Suchen“, um einen Microsoft Store in Ihrer Nähe zu finden.
 
 3. Wählen Sie Ihren Store und dann **Jetzt Servicetermin vereinbaren** aus.
-
----
 
 ::: moniker-end
 

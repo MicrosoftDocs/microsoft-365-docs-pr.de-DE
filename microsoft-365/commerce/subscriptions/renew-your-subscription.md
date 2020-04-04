@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Erfahren Sie, wie Sie Ihr Office 365 für Unternehmen Abonnement mit einem Product Key erneuern und die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959216"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142115"
 ---
 # <a name="renew-office-365-for-business"></a>Verlängern Ihres Office 365 Business-Abonnements
 
@@ -47,9 +47,6 @@ Wenn Sie per Kreditkarte oder Bankkonto bezahlen, ist die **wiederkehrende Abrec
 Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr Abonnement am Ende der Abonnementlaufzeit ab. Sie können **wiederkehrende Rechnungen** aktivieren und Kreditkarten-oder Bankkontoinformationen bereitstellen, damit Ihr Abonnement jedes Jahr am Tag, an dem Sie abonniert haben, weiterhin in Rechnung gestellt wird. Sie haben auch die Möglichkeit, jeden Monat zu zahlen oder das ganze Jahr über zu bezahlen. Ihre Kreditkarte oder Ihr Bankkonto wird erst nach Ablauf Ihrer anfänglichen Abonnementlaufzeit belastet.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
@@ -117,12 +114,10 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Verlängern oder Reaktivieren Ihres Abonnements](reactivate-your-subscription.md)
-  
-[Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [Was geschieht beim Ablauf meines Abonnements mit meinen Daten? Kann ich darauf noch zugreifen?](what-if-my-subscription-expires.md)
 
-[Hinzufügen, aktualisieren oder Entfernen Ihrer Zahlungsmethoden](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[Zahlungsmethoden hinzufügen, aktualisieren oder entfernen](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [Ändern der Zahlungsmethode](../billing-and-payments/change-payment-method.md)
   
