@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Unterstützung für anonyme eingehende e-Mails über IPv6
+title: Hinzufügen von Unterstützung für anonym eingehende E-Mails über IPv6
 f1.keywords:
 - NOCSH
 author: chrisda
@@ -15,12 +15,12 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Der Administrator kann erfahren, wie die Unterstützung für anonyme eingehende e-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Schutz konfiguriert wird.
-ms.openlocfilehash: 67e839249d41381be22bbccf6b09d1616c387c66
-ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
+ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43083641"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131519"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>Hinzufügen von Unterstützung für anonyme eingehende e-Mails über IPv6 in Office 365
 
@@ -30,15 +30,7 @@ Office 365 Organisationen mit Exchange Online Postfächern und eigenständigen E
 
 - Der Absender muss entweder die SPF-Verifizierung (definiert in [RFC 7208](https://tools.ietf.org/html/rfc7208)) oder die [DKIM-Verifizierung](https://dkim.org/) (definiert in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)) bestehen.
 
-Bevor Ihre Organisation anonyme eingehende e-Mails über IPv6 erhalten kann, muss sich ein Administrator an den Microsoft-Support wenden und ihn Fragen:
-
-1. Öffnen Sie das Microsoft 365 Admin Center <https://admin.microsoft.com/adminportal/home> unter, und klicken Sie auf **Hilfe** (?).
-
-2. Geben Sie im Dialogfeld **Hilfe benötigen?** ein, das angezeigt wird, in das Suchfeld ein (beispielsweise "Anonym eingehende IPv6-e-Mail anfordern"), und drücken Sie dann die EINGABETASTE.
-
-3. Klicken Sie unten auf der Seite auf **Support kontaktieren**.
-
-4. Füllen Sie auf der angezeigten Seite **Kontakt Support** die Informationen aus, und überprüfen Sie diese (Scrollen Sie nach Bedarf), und klicken Sie dann auf **Kontakt mit mir**.
+Bevor Ihre Organisation anonyme eingehende e-Mails über IPv6 erhalten kann, muss sich ein Administrator an den Microsoft-Support wenden und ihn Fragen. Anweisungen zum Öffnen einer Supportanforderung finden Sie unter [kontaktieren des Supports für Business-Produkte – Administratorhilfe](../../admin/contact-support-for-business-products.md).
 
 Nachdem die anonyme eingehende IPv6-Nachrichten Unterstützung in Ihrer Organisation aktiviert wurde, wird die Nachricht durch die normale Nachrichtenfilterung geleitet, die vom Dienst bereitgestellt wird.
 

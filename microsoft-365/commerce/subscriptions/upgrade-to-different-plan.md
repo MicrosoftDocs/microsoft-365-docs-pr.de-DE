@@ -24,19 +24,16 @@ search.appverid:
 - GEA150
 description: Erfahren Sie, wie Sie ein Upgrade auf ein neues Abonnement durchführen.
 monikerRange: o365-worldwide
-ms.openlocfilehash: f12dcdd653c8b12bc4a254063c6eda01138325ee
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415600"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142079"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Wechseln zu einem anderen Plan 
+# <a name="upgrade-to-a-different-plan"></a>Wechseln zu einem anderen Plan
 
 Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können Sie Pläne aktualisieren. Die einfachste Möglichkeit hierfür ist die Verwendung der Registerkarte " **Upgrade** " im Admin Center. Die Verwendung der Registerkarte **Upgrade** wird jedoch nicht in allen Situationen unterstützt. In einigen Fällen können Sie Pläne möglicherweise manuell ändern.
-
-> [!NOTE]
-> Dieser Artikel bezieht sich auf das neue Admin Center. Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen. Informationen zum Artikel über das alte Admin Center finden Sie unter [Wechseln zu einem anderen Office 365 für Unternehmen Plan](switch-to-a-different-plan.md).
 
 ## <a name="use-the-upgrade-tab"></a>Verwenden der Registerkarte "Upgrade"
 
@@ -81,7 +78,7 @@ Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie [Plä
 
 Wenn auf der Registerkarte **Upgrade** keine Pläne angezeigt werden, bedeutet dies, dass Ihr Plan nicht automatisch aktualisiert werden kann. In einigen Fällen können Sie das Problem möglicherweise beheben, um Pläne anzuzeigen, die für ein Upgrade verfügbar sind, oder Sie können stattdessen möglicherweise Pläne manuell aktualisieren oder ändern.
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Warum werden keine Pläne für ein Upgrade aufgeführt?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Warum werden keine Pläne für ein Upgrade aufgeführt?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Sie können Abonnements jetzt nicht upgraden, da Sie mehr Benutzer als Lizenzen haben.
 
@@ -141,13 +138,13 @@ Um dies zu beheben, suchen Sie das Abonnement auf der Seite <a href="https://go.
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Was bewirkt das Upgrade eines Plans an meinen Dienst und die Abrechnung?
 
-Wenn Sie Pläne automatisch mithilfe der Schaltfläche " **Pläne wechseln** " (oder der Registerkarte " **Upgrade** " im neuen Admin Center) aktualisieren, sind ihre Dienste und Ihre Abrechnung betroffen.
+Wenn Sie Pläne automatisch mithilfe der Registerkarte " **Upgrade** " im Admin Center aktualisieren, sind ihre Dienste und Ihre Abrechnung betroffen.
 
 ### <a name="access-to-services"></a>Zugriff auf Dienste
 
- **Administratoren** können das Admin Center nicht verwenden, während der Plan aktualisiert wird. Dies kann bis zu einer Stunde dauern.
-  
- Für die **Benutzer** ergibt sich keine Dienstunterbrechung. Sie erhalten weiterhin den vorhandenen Dienst, bis das Upgrade vollständig abgeschlossen ist.
+**Administratoren** können das Admin Center nicht verwenden, während der Plan aktualisiert wird. Dies kann bis zu einer Stunde dauern.
+
+Für die **Benutzer** ergibt sich keine Dienstunterbrechung. Sie erhalten weiterhin den vorhandenen Dienst, bis das Upgrade vollständig abgeschlossen ist.
   
 ### <a name="users-and-licenses"></a>Benutzer und Lizenzen
 
@@ -164,9 +161,9 @@ Alle Benutzerdaten werden während des Upgrades beibehalten, einschließlich Exc
 Der Tag, an dem Ihr Plan Upgrade abgeschlossen ist, wird die Abrechnung in Ihrem alten Abonnement deaktiviert, und die Abrechnung für Ihr neues Abonnement wird aktiviert. Sie erhalten eine anteilsmäßige Gutschrift für nicht genutzte Dienste aus dem alten Abonnement. Sie erhalten eine neue Rechnung, die den Kredit für Ihr altes Abonnement innerhalb von 30 Tagen nach dem Upgrade auf das neue Abonnement enthält.
   
 > [!NOTE]
-> Wie lange es dauert, bis die Gutschrift tatsächlich auf Ihrem Zahlungskonto eingeht, hängt von der für das Abonnement verwendeten Zahlungsmethode ab. 
-  
- **Upgrade von einem Prepaid-Abonnement, bevor es abläuft?** Wenn die Gesamtkosten Ihres neuen Abonnements höher sind oder dem Restwert Ihres im Voraus bezahlten Abonnements entsprechen, verlieren Sie beim Wechsel nicht Ihre im Voraus bezahlte Zeit. Auf der Seite zum Auschecken wird eine Gutschrift für Ihre ungenutzte im Voraus bezahlte Zeit angezeigt. Wenn die Kosten Ihres neuen Abonnements jedoch niedriger als der Restwert Ihres aktuellen im Voraus bezahlten Abonnements sind, verfällt einiges der nicht genutzten Zeit. Sie werden vor der Kasse benachrichtigt, und Sie können auf ein Upgrade warten, bis es dem Ablaufdatum des Prepaid-Abonnements näher kommt.
+> Wie lange es dauert, bis die Gutschrift tatsächlich auf Ihrem Zahlungskonto eingeht, hängt von der für das Abonnement verwendeten Zahlungsmethode ab.
+
+**Upgrade von einem Prepaid-Abonnement, bevor es abläuft?** Wenn die Gesamtkosten Ihres neuen Abonnements höher sind oder dem Restwert Ihres im Voraus bezahlten Abonnements entsprechen, verlieren Sie beim Wechsel nicht Ihre im Voraus bezahlte Zeit. Auf der Seite zum Auschecken wird eine Gutschrift für Ihre ungenutzte im Voraus bezahlte Zeit angezeigt. Wenn die Kosten Ihres neuen Abonnements jedoch niedriger als der Restwert Ihres aktuellen im Voraus bezahlten Abonnements sind, verfällt einiges der nicht genutzten Zeit. Sie werden vor der Kasse benachrichtigt, und Sie können auf ein Upgrade warten, bis es dem Ablaufdatum des Prepaid-Abonnements näher kommt.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Unterstützung bei der Anruf Unterstützung für das Upgrade von Plänen
 

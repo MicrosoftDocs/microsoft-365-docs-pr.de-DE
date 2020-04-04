@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Hier erfahren Sie, wie Sie Ihr Abonnement erneut aktivieren, wenn es abläuft, oder wenn es von Microsoft deaktiviert wird, oder wenn Sie es in der Mitte abbrechen.
-ms.openlocfilehash: 6126c9ccc05a1ee0927f928b045bd1c383479893
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 0d033a60c9e738c8e58f0ea061d551ee2dd3b4d2
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952042"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142127"
 ---
 # <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
 
@@ -40,26 +40,22 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
-2. Suchen Sie auf der Seite **Produkte & Dienste** nach dem Abonnement, das Sie reaktivieren möchten. Wählen Sie im Abschnitt **Abrechnung** die Option **reactivate**aus.
+2. Suchen Sie auf der Seite **Produkte und Dienste** das Abonnement, das Sie reaktivieren möchten. Wählen Sie im Abschnitt **Abrechnung** die Option **reactivate**aus.
   
     Wenn **reaktivieren** nicht als verfügbare Aktion angezeigt wird, [rufen](../../admin/contact-support-for-business-products.md) Sie den Support an, um Ihr Abonnement zu reaktivieren.
 
 3. Bestätigen Sie Ihre Zahlungsdetails. Hier können Sie Ihre vorhandenen Zahlungsinformationen aktualisieren. Wenn Sie die Eingabe Ihrer Zahlungsmethode abgeschlossen haben, wählen Sie **reaktivieren**aus.
 
-  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
+    - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
 
     > [!NOTE]
     > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
   
-  - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
+    - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
   
@@ -73,14 +69,14 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 3. Geben Sie Ihre Zahlungsdetails ein. Hier können Sie Ihre vorhandenen Zahlungsinformationen aktualisieren.
 
-  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
+    - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
 
     > [!NOTE]
     > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
   
-  - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
+    - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
 
-  ::: moniker-end
+::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
@@ -94,11 +90,11 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 3. Geben Sie Ihre Zahlungsdetails ein. Hier können Sie Ihre vorhandenen Zahlungsinformationen aktualisieren.
 
-  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
+    - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
 
     > [!NOTE]
     > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
   
-  - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
+    - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
 
   ::: moniker-end

@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Wechseln Sie Office 365 für Unternehmen Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354707"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142103"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Manueller Wechsel von Office 365 Business-Plänen
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Dieser Artikel bezieht sich auf das alte Admin Center. Informationen zum Artikel über das neue Admin Center finden Sie unter [Ändern von Plänen manuell](change-plans-manually.md). Das neue Admin Center steht allen Microsoft 365-Administratoren zur Verfügung, und Sie können sich anmelden, indem Sie die Schaltfläche **neuen Admin Center** -Toggle oben auf der Startseite auswählen. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
+> Dieser Artikel bezieht sich auf das alte Admin Center. Informationen zum Artikel über das neue Admin Center finden Sie unter [Ändern von Plänen manuell](change-plans-manually.md). Das neue Admin Center steht allen Microsoft 365-Administratoren zur Verfügung. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Schritt 1: entscheiden, wie Pläne gewechselt werden sollen

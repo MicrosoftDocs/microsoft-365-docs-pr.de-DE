@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634063"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142708"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -31,7 +31,8 @@ Im [ &amp; Security Compliance Center](https://protection.office.com) steht eine
 ![Dashboard, in dem Sie sehen, wie Advanced Threat Protection funktioniert](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
-- [Bericht "kompromittierte Benutzer" (**neu!**)](#compromised-users-report-new)
+- [URL Threat Protection-Bericht](#url-threat-protection-report-new) (**neu!**)
+- [Bericht über kompromittierte Benutzer](#compromised-users-report)
 - [Verschlüsselungs Bericht](#encryption-report)
 - [Threat Protection-Statusbericht](#threat-protection-status-report) 
 - [Bericht über Schadsoftware-Erkennungen](#malware-detections-report) 
@@ -43,9 +44,30 @@ Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
 - [Bericht über vom Benutzer gemeldete Nachrichten](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>Bericht "kompromittierte Benutzer" (**neu!**) 
+## <a name="url-threat-protection-report-new"></a>URL Threat Protection-Bericht (**neu!**)
 
-Dieser Bericht, der für alle Personen mit Exchange Online Schutz verfügbar ist, zeigt die Anzahl der Benutzerkonten, die als verdächtige oder eingeschränkte Benutzer gekennzeichnet sind, Daten, die besonders nützlich sind, wenn Konten in einen der Zustände eingeben, die darauf hindeuten, dass das Benutzerkonto problematisch sein kann, oder sogar gefährdet. Bei häufiger Verwendung kann der kompromittierte Benutzerbericht Spitzen und sogar Trends in Konten erkennen, die in verdächtigen oder eingeschränkten Zuständen markiert sind, was Hinweise gibt, dass ein Problem mit Sicherheit und dem Wohlbefinden Ihres Mandanten auftreten kann.
+Der Bericht über den URL-Bedrohungsschutz steht für alle Benutzer zur Verfügung:
+
+- Add-on für Exchange Online Protection *und* Advanced Threat Protection (Plan 1 *oder* Plan 2) 
+- Ein Microsoft 365 E5-Abonnement
+
+Hierbei handelt es sich um einen "Click-centric"-Bericht mit zwei aggregierten Ansichten.
+ 
+1. Die erste Ansicht ist eine *URL-Klick Schutz Aktion*, die darauf ausgerichtet ist, die Anzahl der URL-Klicks von Benutzern innerhalb des Mandanten und das Ergebnis des Klick Vorgangs anzuzeigen. Ein Klick hier gibt an, dass der Benutzer auf die Seite blockieren zur böswilligen Website geklickt hat (Dies kann vom Administrator in einer Richtlinie für sichere Links deaktiviert werden).
+ 
+2. Die zweite Ansicht ist *URL-Klick von Anwendungen*, die die Anzahl von URLs anzeigt klicken Sie in verschiedenen Anwendungen, die sichere Links heute unterstützen, beispielsweise in einem e-Mail-Client oder in Microsoft Word. Daten in beiden aggregierten Ansichten werden alle vier Stunden aktualisiert.
+
+Die Tabelle "Details" des URL Threat Protection-Berichts bietet eine nahezu Echtzeitansicht aller Klicks, die innerhalb des Mandanten stattfinden, und enthält Ermittlungsinformationen wie *Benutzername*, *URL*, die *Netzwerknachrichten-ID* (wenn die URL aus einer e-Mail geklickt wurde) und andere wertvolle Informationen, die für Untersuchungen und Analysen nützlich sind.  
+
+Standardmäßig zeigt der Bericht nur die Daten von Klicks von URLs an, die durch sichere Links blockiert wurden, aber es ist auch möglich, Informationen für alle URL-Klicks anzuzeigen, indem Sie in den Filtern die Option *zugelassene URLs* markieren aktivieren.  
+
+Dieser Bericht enthält keine Daten von Klicks von Benutzern, bei denen die Richtlinie für sichere Links angewendet wird, wenn die Option *Benutzerklicks nicht nachverfolgen* aktiviert ist.
+
+![Grafik des URL Threat Protection-Berichts in Aktion.](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>Bericht über kompromittierte Benutzer 
+
+Dieser Bericht, der für alle Personen mit Exchange Online Schutz verfügbar ist, zeigt die Anzahl der Benutzerkonten, die als verdächtige oder eingeschränkte Benutzer gekennzeichnet sind, Daten, die besonders nützlich sind, wenn Konten in einen der Zustände eingeben, die darauf hindeuten, dass das Benutzerkonto problematisch sein kann oder sogar gefährdet ist. Bei häufiger Verwendung kann der kompromittierte Benutzerbericht Spitzen und sogar Trends in Konten erkennen, die in verdächtigen oder eingeschränkten Zuständen markiert sind, was Hinweise gibt, dass ein Problem mit Sicherheit und dem Wohlbefinden Ihres Mandanten auftreten kann.
 
 ![Der Bericht "kompromittierte Benutzer" wird in Office 365 angezeigt.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
@@ -205,7 +227,7 @@ Führen Sie einen der folgenden Schritte aus, um diesen Bericht im [ &amp; Secur
 ![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management \> Review User gemeldete Nachrichten aus.](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß funktioniert, **muss die Überwachungsprotokollierung** für Ihre Office 365 Umgebung aktiviert sein. Dies erfolgt in der Regel durch eine Person, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
+> Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß funktioniert, **muss die Überwachungsprotokollierung** für Ihre Office 365 Umgebung aktiviert sein. Dies erfolgt in der Regel durch eine Person, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind zum Anzeigen dieser Berichte erforderlich?
 
