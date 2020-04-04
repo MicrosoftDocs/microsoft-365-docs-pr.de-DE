@@ -1,5 +1,5 @@
 - name: Administratorstartseite
-  href: admin-home.yml
+  href: admin-home.md
   items:
     - name: Übersicht
       items:
@@ -49,7 +49,7 @@
           href: setup/customize-your-organization-theme.md
     - name: Benutzer und Rollen
       items:
-        - name: Hinzufügen von Benutzern
+        - name: Benutzer hinzufügen
           href: add-users/add-users.md
         - name: 'Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen'
           href: add-users/create-and-use-a-template-to-add-users.md
@@ -86,7 +86,7 @@
     - name: E-Mail
       items:
         - name: E-Mail in Office 365
-          href: email/email.yml
+          href: email/email.md
         - name: E-Mail-Einstellungen für Office 365-Benutzer
           href: email/office-365-user-email-settings.md
         - name: Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
@@ -154,7 +154,7 @@
     - name: Verwalten
       items:
         - name: Verwalten von Office 365
-          href: manage/manage.yml
+          href: manage/manage.md
         - name: Ändern von Kontakteinstellungen
           href: manage/change-contact-preferences.md
         - name: 'Ändern der Adresse, des Kontakt und vieles mehr'
@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Lösen von Lizenzkonflikten
           href: manage/resolve-license-conflicts.md
-        - name: Verwalten von Nachrichten im Nachrichtencenter
-          href: manage/manage-messages.md
+        - name: Ein-oder ausblenden neuer Features mit neuer Verwaltung
+          href: manage/show-hide-new-features.md
     - name: Abonnements und Abrechnung
       items:
         - name: Verwalten Ihrer Abonnements
@@ -202,7 +202,7 @@
     - name: Domänen
       items:
         - name: Domänen in Office 365
-          href: get-help-with-domains/get-help-with-domains.yml
+          href: get-help-with-domains/get-help-with-domains.md
         - name: Was ist eine Domäne?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Erwerben eines Domänennamens
@@ -273,7 +273,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection-Parität
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Abrufen neuer Features
+    - name: Neue Features erhalten
       items:
         - name: "Informationen zum neuen Admin\_Center"
           href: microsoft-365-admin-center-preview.md
