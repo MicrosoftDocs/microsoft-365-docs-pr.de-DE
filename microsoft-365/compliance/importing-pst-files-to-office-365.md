@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 2d28889f6cba782b5b9ee70b0fb17cff6ca911a2
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170545"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058938"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 
@@ -174,6 +174,10 @@ Das hängt von der Kapazität des Netzwerks ab, doch normalerweise dauert es meh
   
 Wenn verschiedene PST-Dateien in unterschiedliche Zielpostfächer importiert werden, erfolgt der Importvorgang parallel, d. h. jedes PST-Postfach-Paar wird gleichzeitig importiert. Wenn mehrere PST-Dateien in dasselbe Postfach importiert werden, werden sie ebenfalls gleichzeitig importiert.
   
+ **Wie behandelt der PST-Importprozess doppelte E-Mail-Elemente?**
+
+Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie dieselbe PST-Datei erneut importieren und einen anderen Zielordner (mithilfe der TargetRootFolder-Eigenschaft in der PST-Importzuordnungsdatei) angeben als den, den Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
+ 
  **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
 Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
@@ -271,6 +275,10 @@ Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Of
   
 Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
   
+  **Wie behandelt der PST-Importprozess doppelte E-Mail-Elemente?**
+
+Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie dieselbe PST-Datei erneut importieren und einen anderen Zielordner (mithilfe der TargetRootFolder-Eigenschaft in der PST-Importzuordnungsdatei) angeben als den, den Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
+ 
  **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Office 365-Postfach importiert werden?**
   
 Ja. Beim Importvorgang werden die Metadaten der ursprünglichen Nachricht nicht geändert.
