@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Zusammenfassung: Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite.'
-ms.openlocfilehash: 32b87ec71ef0d1cde6f790f7e571b05b759ccf2a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0a2a1e790711bf15db82068c00da5d614b498c4
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597692"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855450"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Schützen von SharePoint Online-Dateien mit Azure Information Protection
 
@@ -113,8 +113,6 @@ Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gew�
 
 ## <a name="see-also"></a>Siehe auch
 
-[Sichern von SharePoint Online-Websites und -Dateien](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
-[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
