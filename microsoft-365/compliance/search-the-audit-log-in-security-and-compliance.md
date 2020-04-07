@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955684"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151440"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -588,9 +588,9 @@ In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die p
 |:-----|:-----|:-----|
 |Benutzer hinzugefügt|Benutzer hinzufügen|Ein Office 365-Benutzerkonto wurde erstellt.|
 |Benutzerlizenz geändert|Benutzerlizenz ändern|Die einem Benutzer zugewiesene Lizenz wurde geändert. Wenn Sie feststellen möchten, welche Lizenzen geändert wurden, sehen Sie sich die entsprechende Aktivität **Benutzer aktualisiert** an.|
-|Benutzerkennwort geändert|Benutzerkennwort ändern|Der Administrator hat das Kennwort für einen Benutzer geändert.|
+|Benutzerkennwort geändert|Benutzerkennwort ändern|Ein Benutzer ändert sein Kennwort. Das Zurücksetzen von Kennwörtern durch den Benutzer muss (für alle oder ausgewählte Benutzer) in Ihrer Organisation aktiviert sein, damit Benutzer ihr Kennwort zurücksetzen können. Sie können die Aktivitäten im Zusammenhang mit dem Zurücksetzen von Kennwörtern durch den Benutzer auch in Azure Active Directory überwachen. Weitere Informationen finden Sie unter [Berichtsoptionen für die Azure AD-Kennwortverwaltung](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Benutzer gelöscht|Benutzer löschen|Ein Office 365-Benutzerkonto wurde gelöscht.|
-|Benutzerkennwort zurücksetzen|Benutzerkennwort zurücksetzen|Der Administrator hat das Kennwort eines Benutzers zurückgesetzt.|
+|Benutzerkennwort zurücksetzen|Benutzerkennwort zurücksetzen|Der Administrator setzt das Kennwort für einen Benutzer zurück.|
 |Eigenschaft festgelegt, die einen Benutzer zur Kennwortänderung zwingt|Erzwungene Änderung des Benutzerkennworts festgelegt|Der Administrator hat die Eigenschaft festgelegt, die einen Benutzer dazu zwingt, sein Kennwort bei der nächsten Anmeldung bei Office 365 zu ändern.|
 |Lizenzeigenschaften festgelegt|Lizenzeigenschaften festgelegt|Der Administrator ändert die Eigenschaften einer Lizenz, die einem Benutzer zugewiesen ist.|
 |Benutzer aktualisiert|Benutzer aktualisieren|Ein Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos. Eine Liste der Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Aktualisieren von Benutzerattributen" unter [Azure Active Directory-Überwachungsberichtsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).|

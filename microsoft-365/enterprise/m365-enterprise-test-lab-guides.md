@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 4190eb4619f4732310786b5a7dde6bb590a969c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153916"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -76,7 +76,7 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 - [Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Sperren Sie Ihre globalen Administratorkonten mit Richtlinien für bedingten Zugriff.
+   Sichern Sie Ihre globalen Administratorkonten mit Richtlinien für bedingten Zugriff ab.
 
 - [Rückschreiben des Kennworts](password-writeback-m365-ent-test-environment.md)
 

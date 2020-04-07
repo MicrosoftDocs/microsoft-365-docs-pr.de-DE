@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen, Aufbewahrungsbezeichnungsrichtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.
-ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105642"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151460"
 ---
 # <a name="overview-of-file-plan-manager"></a>Übersicht über den Dateiplan-Manager
 
@@ -37,9 +37,9 @@ Wenn Sie im Security & Compliance Center auf den Dateiplan-Manager zugreifen mö
 
 Um auf den Dateiplan-Manager zuzugreifen, müssen Sie über eine der folgenden Administratorrollen verfügen:
     
-    - Aufbewahrungs-Manager
-    
-    - Aufbewahrungs-Manager (schreibgeschützt)
+- Aufbewahrungs-Manager
+
+- Aufbewahrungs-Manager (schreibgeschützt)
 
 ## <a name="default-retention-labels-and-label-policy"></a>Standardmäßige Aufbewahrungsbezeichnung und Bezeichnungsrichtlinie
 
