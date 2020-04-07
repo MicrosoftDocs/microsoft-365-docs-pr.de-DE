@@ -1,6 +1,6 @@
 ---
 title: 'Phase 5: Verwaltung mobiler Geräte'
-description: Microsoft 365 Enterprise umfasst die Verwaltung mobiler Geräte mithilfe von Microsoft InTune. Überprüfen Sie die Anforderungen und Voraussetzungen, richten Sie InTune mithilfe ihrer Azure Active Directory-Ressource ein, registrieren Sie IOS-, macOS-, Android-und Windows-Geräte, stellen Sie apps bereit, erstellen Sie ein configure-Profil, verwenden Sie eine Konformitätsrichtlinie, und aktivieren Sie den bedingten Zugriff für Mobile Geräteverwaltung mit Microsoft 365 Enterprise.
+description: Microsoft 365 Enterprise umfasst die Verwaltung mobiler Geräte mithilfe von Microsoft InTune. Überprüfen Sie die Anforderungen und Voraussetzungen, richten Sie InTune mithilfe ihrer Azure Active Directory-Ressource ein, registrieren Sie IOS-, macOS-, Android-und Windows-Geräte, stellen Sie apps bereit, erstellen Sie ein configure-Profil, verwenden Sie eine Konformitätsrichtlinie, und aktivieren Sie den bedingten Zugriff für die Verwaltung mobiler Geräte mit Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-Dokumentation, Verwaltung mobiler Geräte, InTune
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153892"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
@@ -136,7 +136,7 @@ Denken Sie daran, beginnen Sie klein, und verwenden Sie einen mehrstufigen Ansat
 
 InTune ist ein leistungsstarker Dienst mit vielen Features. Im folgenden finden Sie einige andere Aufgaben, die Sie mit InTune ausführen können:
 
-- Verwalten von Software und Updates auf [](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)auf Windows-Geräten und [IOS](https://docs.microsoft.com/intune/software-updates-ios) -Geräten
+- Verwalten von Software und Updates auf [devices](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)auf Windows-Geräten und [IOS](https://docs.microsoft.com/intune/software-updates-ios) -Geräten
 - Aktivieren Sie [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) auf Ihren Windows 10-Geräten, und verwenden Sie Compliance und bedingten Zugriff, um den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online zu schützen.
 - Verwenden von [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)und anderen Partnern für Mobile Verteidigungs Bedrohungen
 - Hinzufügen einer [Partnerzertifizierungsstelle (Certification Authority, ca)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) zum ausgeben und erneuern von Zertifikaten

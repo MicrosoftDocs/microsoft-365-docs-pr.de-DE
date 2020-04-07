@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Office 365 Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024355"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158436"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ruhestand von vorversions-eDiscovery-Tools
 
@@ -53,10 +53,8 @@ Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 3
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), bei dem es sich um die erste Version von Advanced eDiscovery handelt, auf die über einen eDiscovery-Fall im Office 365 Security & Compliance Center zugegriffen wird.
+- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), bei dem es sich um die erste Version von Advanced eDiscovery handelt, auf die über einen zentralen eDiscovery-Fall im Office 365 Security & Compliance Center zugegriffen wird. Der Ruhestand von Advanced eDiscovery v 1.0 wirkt sich nicht auf ihre Fähigkeit zum Erstellen und Verwalten von zentralen eDiscovery-Fällen aus.
 
 > [!NOTE]
 > Die zurückgezogene eDiscovery-Funktionalität gilt nur für Cloud-basierte Versionen von Microsoft 365 und Office 365. eDiscovery-Funktionen in lokalen Versionen von Exchange und SharePoint werden bis auf weiteres weiterhin unterstützt.
@@ -141,7 +139,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <tr class=even>
   <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
-  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf die früheren Mitarbeiter erteilen. Postfach. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zuweisen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
   
   </tr>
 <tr class="odd">
@@ -228,7 +226,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
   <tr class=even>
   <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
-  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf die früheren Mitarbeiter erteilen. Postfach. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zuweisen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
   
   </tr>
 
@@ -331,14 +329,28 @@ Diese Vorgänge in der Exchange Webdienste-API werden von der Funktion in-Place-
 
 ## <a name="advanced-ediscovery-v10"></a>Erweiterte eDiscovery v 1.0
 
-Advanced eDiscovery v 1.0, bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln** , wird zurückgezogen. Die Funktionalität wurde durch die neue [Erweiterte eDiscovery-Lösung](https://aka.ms/edisco) im Microsoft 365 Compliance Center ersetzt.
+Advanced eDiscovery v 1.0, bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem zentralen eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln**, wird zurückgezogen. Die Funktionalität wurde durch die neue [Erweiterte eDiscovery-Lösung](https://aka.ms/edisco) im Microsoft 365 Compliance Center ersetzt.
+
+So ermitteln Sie, ob Ihre Organisation Advanced eDiscovery v 1.0 verwendet:
+
+1. Wechseln Sie zum [Office 365 Security & Compliance Center](https://protection.office.com).
+
+2. Klicken Sie im linken Navigationsbereich des Security & Compliance Centers auf **eDiscovery > eDiscovery**, und öffnen Sie einen zentralen eDiscovery-Fall.
+
+3. Wenn die Schaltfläche **auf Erweiterte eDiscovery wechseln** angezeigt wird, wird Sie auf die 1,0-Version von Advanced eDiscovery zurückgezogen, die in den Ruhestand geht. Die Möglichkeit zum Erstellen und Verwalten von Fällen in der zentralen eDiscovery ist nicht betroffen. Nur die Möglichkeit zum Hinzufügen und Analysieren von Falldaten in Advanced eDiscovery v 1.0 (durch Klicken **auf Wechseln zu Advanced eDiscovery**) wird zurückgezogen.
 
 Die neue erweiterte eDiscovery-Lösung in Microsoft 365 (auch bekannt als *Advanced eDiscovery v 2.0*genannt) bietet alle Funktionen der ursprünglichen Lösung, enthält jetzt jedoch einen Verwalter basierten Ansatz zum Identifizieren von Inhalten in anderen Microsoft 365-Diensten, zum Sammeln dieser Inhalte und zum Hinzufügen eines Überprüfungs Satzes, in dem Bearbeiter schnelle Suchabfragen, Tagging und Analysefunktionen nutzen können, um die relevanten Dokumente zu ermitteln. Advanced eDiscovery enthält jetzt eine verbesserte Verarbeitung und Native Viewer für Microsoft-und nicht-Microsoft-Dateitypen, eine vollständige Liste der Dateitypen ist [hier](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) und unterstützte Metadatenfelder befinden sich [hier](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Darüber hinaus bietet die neue erweiterte eDiscovery-Lösung eine leistungsstarke Depot Verwaltungsfunktion, mit der Sie in einem erweiterten eDiscovery-Fall auf Inhalte in verschiedenen Diensten eintragen, Benutzer über die Aufbewahrungspflicht Benachrichtigen und Depotbank-Antworten nachverfolgen können.
+
+So greifen Sie auf Advanced eDiscovery v 2.0 zu:
+
+1. Wechseln Sie zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
+
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > erweitert**.
 
 Zu diesem Zeitpunkt wird empfohlen, dass Sie mit dem Übergang Ihres eDiscovery-Workflows zur neuen erweiterten eDiscovery-Funktionalität beginnen. Obwohl Sie weiterhin in den vorhandenen Fällen auf Advanced eDiscovery v 1.0 zugreifen können, bietet der Microsoft-Support nach dem 1. Oktober 2020 keine Unterstützung. Weitere Informationen finden Sie in der folgenden Zeitachse.
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
-    
+
 - Office 365-und Microsoft 365-Unternehmensorganisationen
 
 - Office 365-und Microsoft 365-Bildungseinrichtungen

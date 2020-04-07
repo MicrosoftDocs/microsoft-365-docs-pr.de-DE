@@ -79,7 +79,7 @@ Sehen Sie sich ein kurzes Video zur Auswahl eines Office 365 Geschäftsplans an.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind.
   

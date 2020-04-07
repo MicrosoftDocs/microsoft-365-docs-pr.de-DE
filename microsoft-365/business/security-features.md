@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: In diesem Artikel erfahren Sie mehr über die Sicherheitsfunktionen von Microsoft 365 Business, mit denen Sie Ihre Daten auf PCs, Telefonen und Tablets schützen können.
-ms.openlocfilehash: 85f9b50225c3dbdb0c1b76c33d516aaa03bec773
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561258"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153796"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business Security and Compliance-Features
 
@@ -74,11 +74,11 @@ Erweiterte Funktionen in Microsoft 365 Business stehen Ihnen zum Schutz Ihres Un
 
 - **[Die vollständigen Funktionen von InTune im Azure-Portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Wenn Sie auf das InTune-Verwaltungskonsole im Azure-Portal zugreifen, können Sie zusätzliche Sicherheitsfeatures wie die Verwaltung von MacOS-Geräten, iPhone und Android-Geräten sowie erweiterte Geräteverwaltung für Windows einrichten, die über Microsoft nicht verfügbar sind. 365 Business Admin Center.
-- **Gleicher [bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) wie Azure AD P1-Plan**
+    Wenn Sie auf das InTune-Verwaltungscenter im Azure-Portal zugreifen, können Sie zusätzliche Sicherheitsfeatures wie die Verwaltung von MacOS-Geräten, iPhone und Android-Geräten sowie erweiterte Geräteverwaltung für Windows einrichten, die über das Microsoft 365 Business Admin Center nicht verfügbar sind.
+- **Gleicher [bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) wie Azure AD Premium P1-Plan**
 
 
-    Bedingter Zugriff kann zum Schutz Ihrer Organisation vor Anmelde Risiken, zum Zugriff auf Versuche von einem unerwarteten Netzwerk oder Gebietsschema, zum Zugreifen auf Versuche von riskanten Gerätetypen usw. beitragen. Richtlinien für bedingten Zugriff werden nach Abschluss der ersten Authentifizierung erzwungen, und es werden Signale vom ersten Authentifizierungsereignis verwendet, um zu ermitteln, ob der versuchte Zugriff genehmigt, verweigert oder wenn mehr Beweis (beispielsweise eine zweite Form der Identifizierung) ist. erforderlich.
+    Bedingter Zugriff kann zum Schutz Ihrer Organisation vor Anmelde Risiken, zum Zugriff auf Versuche von einem unerwarteten Netzwerk oder Gebietsschema, zum Zugreifen auf Versuche von riskanten Gerätetypen usw. beitragen. Richtlinien für bedingten Zugriff werden nach Abschluss der ersten Authentifizierung erzwungen, und es werden Signale aus dem ersten Authentifizierungsereignis verwendet, um zu ermitteln, ob der versuchte Zugriff genehmigt, verweigert oder wenn mehr Beweise (beispielsweise eine zweite Form der Identifikation) erforderlich sind.
 
     Zu den bedingten Zugriffsfunktionen gehören:
 

@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Informationen zum Abrufen eines Microsoft Forms-Aktivitätsberichts mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center.
-ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 28520bf931df9f909a933be19800ee45fd863cd6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046939"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151417"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-Berichte in der Admin Center-Formular Aktivität
 
@@ -41,9 +41,9 @@ Sie können beispielsweise die Aktivität jedes Benutzers verstehen, der für di
     
 2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Formular** \> **Aktivität**aus.
 
-## <a name="interpret-the-email-activity-report"></a>Interpretieren des E-Mail-Aktivitätsberichts
+## <a name="interpret-the-forms-activity-report"></a>Interpretieren des Berichts "Formular Aktivität"
 
-Sie erhalten einen Einblick in die E-Mail-Aktivitäten Ihrer Benutzer, indem Sie sich die Diagramme **Aktivität** und **Benutzer** ansehen. 
+Sie können eine Ansicht der Formular Aktivitäten Ihrer Benutzer anzeigen, indem Sie sich die Diagramme **Aktivität** und **Benutzer** ansehen. 
 
 ![Formular Aktivitätsbericht](../../media/adminformsactivity.png)
 

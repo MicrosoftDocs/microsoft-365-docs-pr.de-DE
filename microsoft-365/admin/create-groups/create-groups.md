@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Hier erfahren Sie, wie Sie Office 365-Gruppen erstellen und löschen, Gruppenmitglieder hinzufügen und entfernen sowie die Funktionsweise der Gruppe anpassen können.
-ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153544"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Erstellen einer Office 365-Gruppe im Microsoft 365 Admin Center
   
-Während Benutzer eine Office 365-Gruppe in Outlook oder anderen Apps erstellen können, müssen Sie als Administrator möglicherweise Gruppen erstellen oder löschen, Mitglieder hinzufügen oder entfernen und die jeweiligen Einstellungen anpassen. Diese Aufgaben führen Sie im Microsoft 365 Admin Center aus. 
+Während Benutzer eine Office 365-Gruppe in Outlook oder anderen Apps erstellen können, müssen Sie als Administrator möglicherweise Gruppen erstellen oder löschen, Mitglieder hinzufügen oder entfernen und die jeweiligen Einstellungen anpassen. Dies können Sie im Microsoft 365 Admin Center tun, wenn Sie ein globaler Administrator oder Gruppenadministrator sind. 
 
 > [!TIP]
 > Mit Office 365 verbundene Yammer-Gruppen müssen in Yammer erstellt werden. Sie können jedoch wie andere Office 365-Gruppen im Microsoft 365 Admin Center verwaltet werden. Weitere Informationen finden Sie unter [jammern und Office 365 Gruppen](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 

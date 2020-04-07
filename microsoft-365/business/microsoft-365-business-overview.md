@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: In diesem Artikel erfahren Sie mehr über Microsoft 365 Business, einen Abonnementdienst mit Office 365 plus erweitertem Schutz für Ihr Unternehmen vor Cyber-Bedrohungen.
-ms.openlocfilehash: 7b939a9037edbe074a5ef9aa24451fe462016ccb
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: fccd0403131d8afe41608c4a195b53db959e7e91
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561478"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153816"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Übersicht über Microsoft 365 Business
 
@@ -76,7 +76,7 @@ Microsoft 365 Business hilft bei der **Verteidigung gegen Bedrohungen** durch:
 
 - Aktivieren von Anti-Phishing-Richtlinien, bei denen Computer Lernmodelle und Identitätswechsel Erkennung verwendet werden, um Schutz vor fortgeschrittenen Angriffen zu bieten (ATP-AntiPhishing-Intelligence). 
 
-- Einrichten von erweiterten Richtlinien zum Deaktivieren des Zugriffs von nicht vertrauenswürdigen Speicherorten oder zur Umgehung der mehrstufigen Authentifizierung von vertrauenswürdigen stellen wie Ihrem Office-Netzwerk (Azure MFA einschließlich vertrauenswürdiger IPS und bedingter Zugriff). 
+- Einrichten von erweiterten Richtlinien zum Deaktivieren des Zugriffs von nicht vertrauenswürdigen Speicherorten oder zur Umgehung der mehrstufigen Authentifizierung von vertrauenswürdigen stellen wie Ihrem Office-Netzwerk (Azure Multi-Factor Authentication, einschließlich vertrauenswürdiger IPS und bedingter Zugriff). 
 
 - Erzwingen des Schadsoftware-Schutzes auf allen Windows 10-Geräten Ihrer Organisation und schützen von Dateien in wichtigen Systemordnern vor von Ransomware vorgenommenen Änderungen (Windows Defender)
 
