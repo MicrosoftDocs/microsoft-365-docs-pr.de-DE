@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Während und nach einer automatisierten Untersuchung in Office 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
-ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894228"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163910"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Office 365
 
@@ -87,18 +87,16 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 
 |Status  |Bedeutung  |
 |---------|---------|
-|Wird gestartet | Die Untersuchung wird in Kürze in die Warteschlange gestellt. |
-|Wird ausgeführt | Die Untersuchung wurde gestartet und führt die Analyse aus. |
-|Keine Bedrohungen gefunden | Die Untersuchung hat ihre Analyse abgeschlossen, und es wurden keine Bedrohungen gefunden. |
-|Beendet von System | Die Untersuchung wurde nach 7 Tagen nicht abgeschlossen und ist abgelaufen. |
-|Ausstehende Aktion | Bei der Untersuchung wurden Bedrohungen mit empfohlenen Aktionen gefunden.  Die Untersuchung wird fortgesetzt, nachdem die ersten Bedrohungen und empfohlenen Aktionen gefunden wurden, daher sollten Sie das Protokoll vor dem Genehmigen von Aktionen überprüfen, um zu sehen, ob Analyzer noch in Bearbeitung sind. |
-|Bedrohungen gefunden | Die Untersuchung hat Bedrohungen festgestellt, aber die Bedrohungen haben keine Aktionen in Air verfügbar.  Hierbei handelt es sich um Benutzeraktionen, bei denen es noch keine Richtungs Luft Aktion gibt. |
-|Bereinigt | Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
-|Teilweise behoben | Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
-|Vom Benutzer beendet | Ein Administrator hat die Untersuchung beendet |
-|Fehlgeschlagen | Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
-|Durch Drosselung in der Warteschlange | Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
-|Durch Drosselung beendet | Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
+|Wird gestartet | Die Untersuchung wurde ausgelöst und wartet darauf, mit der Ausführung zu beginnen. Dies ist der erste Schritt. |
+|Wird ausgeführt | Der Ermittlungsprozess wurde gestartet und ist im Gange. Dieser Status tritt auch ein, wenn [Ausstehende Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) genehmigt werden. |
+|Keine Bedrohungen gefunden | Die Untersuchung ist abgeschlossen, und es wurden keine Bedrohungen (Benutzerkonto, e-Mail-Nachricht, URL oder Datei) identifiziert. <br/><br/>**Tipp**: Wenn Sie vermuten, dass etwas verpasst wurde (beispielsweise ein falsches negativ), können Sie mit [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)Aktionen ausführen. |
+|Beendet von System | Die Untersuchung wurde angehalten. Dies kann aus einer Reihe von Gründen geschehen. Im folgenden werden die beiden häufigsten Gründe aufgeführt:<br/>– Die ausstehenden Aktionen der Untersuchung sind abgelaufen. Timeout für ausstehende Aktionen nach dem warten auf die Genehmigung für eine Woche. <br/>-Es gibt zu viele Aktionen. Wenn beispielsweise zu viele Benutzer auf böswillige URLs klicken, kann die Untersuchung die Möglichkeit überschreiten, alle Analyzer auszuführen, sodass die Untersuchung angehalten wird. <br/><br/>**Tipp**: Wenn eine Untersuchung angehalten wird, bevor Aktionen durchgeführt wurden, versuchen Sie, Bedrohungen mithilfe von [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) zu finden und zu adressieren.  |
+|Ausstehende Aktion | Bei der Untersuchung wurde eine Bedrohung festgestellt, beispielsweise eine böswillige e-Mail, eine bösartige URL oder eine riskante Postfacheinstellung, und eine Aktion zum Beheben dieser Bedrohung wartet auf die [Genehmigung](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Der Status Ausstehende Aktionen wird ausgelöst, wenn eine Bedrohung mit einer entsprechenden Aktion gefunden wird. Beachten Sie jedoch, dass die Untersuchung möglicherweise noch nicht vollständig abgeschlossen ist.  Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) , um festzustellen, ob andere Elemente noch ausstehen. |
+|Bereinigt | Die Untersuchung wurde abgeschlossen, und alle Aktionen wurden genehmigt (vollständig behoben).<br/><br/>**Hinweis**: genehmigte Korrekturaktionen können Fehler aufweisen, die verhindern, dass die Aktionen ausgeführt werden. Dadurch wird der Untersuchungsstatus nicht geändert. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) auf detaillierte Ergebnisse. |
+|Teilweise behoben | Die Untersuchung führte zu Korrekturaktionen, einige wurden genehmigt und abgeschlossen. Andere Aktionen sind noch [Ausstehend](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Fehlgeschlagen | Mindestens ein Ermittlungs Analyse-Analyzer hat ein Problem aufgetreten, bei dem es nicht ordnungsgemäß abgeschlossen werden konnte. <br/><br/>**Hinweis**: Wenn eine Untersuchung fehlschlägt, nachdem Korrekturaktionen genehmigt wurden, sind die Korrekturaktionen möglicherweise weiterhin erfolgreich. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) auf detaillierte Ergebnisse. |
+|Durch Drosselung in der Warteschlange | In einer Warteschlange wird eine Untersuchung durchgeführt. Wenn andere Untersuchungen abgeschlossen sind, beginnen Warteschlangen Untersuchungen. Dies hilft bei der Vermeidung schlechter Dienstleistung. <br/><br/>**Tipp**: Ausstehende Aktionen können einschränken, wie viele neue Untersuchungen ausgeführt werden können. Stellen Sie sicher, dass [Ausstehende Aktionen genehmigt (oder abgelehnt)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)werden. |
+|Durch Drosselung beendet | Wenn eine Untersuchung zu lange in der Warteschleife stattfindet, wird Sie angehalten. <br/><br/>**Tipp**: Sie können [eine Untersuchung von Threat Explorer starten](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Untersuchungsdiagramm
 

@@ -6,10 +6,10 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "35830493"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Beschreibung des Microsoft Managed Desktop-Diensts
@@ -20,7 +20,7 @@ Microsoft Managed Desktop ist ein Dienst, der Ihren Benutzern eine sichere moder
 - Konfiguration von Geräten
 - Funktionen zur Sicherung von Benutzern und Geräten, einschließlich der Windows Hello-, BitLocker-, SecureBoot-und Virtualisierungs-basierten Sicherheit gemäß den bewährten Microsoft-Methoden
 - Geräte Sicherheitsüberwachung und-Behebungs Dienste
-- APP-Kompatibilität über [Desktop-App](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) versichern
+- APP-Kompatibilität über [Desktop-App versichern](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
 - Verwaltung von Updates für Windows 10 und Office 365 ProPlus-apps
 - Analytische Daten zur Geräte-und App-Nutzung
 - IT-Support für Ihre Endbenutzer

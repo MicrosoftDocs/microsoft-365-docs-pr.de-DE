@@ -1,21 +1,29 @@
 ---
 title: Erste Schritte mit Microsoft Managed Desktop
-description: ''
+description: Schritte zum Einrichten von Geräten und zum Konfigurieren von Azure-Funktionen für die Verwendung des Diensts
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37595581"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "38020398"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Erste Schritte mit Microsoft Managed Desktop
 
-Wenn Sie bereit sind, sich beim Dienst anzumelden, enthält dieser Abschnitt die folgenden Schritte, um tatsächlich dem Dienst beizutreten, Geräte zu beziehen und einzurichten, Ihre Endbenutzer vorzubereiten und apps bereitzustellen.
+Führen Sie die folgenden Schritte aus, um die Administrator Kontakte zu bestätigen, Einstellungen für den bedingten Zugriff anzupassen, Benutzerlizenzen zuzuweisen, das Enterprise-Status-Roaming zu aktivieren, Geräte zu erhalten und einzurichten, Benutzer vorzubereiten und Apps auf Geräten bereitzustellen.
 
-- [Hinzufügen von Administrator Kontakten im Verwaltungsportal von Microsoft Managed Desktop](add-admin-contacts.md)
-- [Einrichten von Microsoft Managed Desktop-Geräten](set-up-devices.md)
-- [Bereitstellen von apps auf Microsoft Managed Desktop-Geräten](deploy-apps.md)
+> [!NOTE]
+> Dies ist die empfohlene Reihenfolge, aber Sie haben eine gewisse Flexibilität in der Reihenfolge.
+
+1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
+2. [Bedingten Zugriff anpassen](conditional-access.md)
+3. [Zuweisen von Lizenzen](assign-licenses.md)
+4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
+5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Einrichten von Geräten](set-up-devices.md)
+7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
+8. [Bereitstellen von Apps](deploy-apps.md)
