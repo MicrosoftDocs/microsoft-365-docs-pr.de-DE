@@ -11,12 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 238c4cd0c74854def600af876f93c52e6480ebb5
-  ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
+  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/18/2020
-  ms.locfileid: "41233666"
+  ms.lasthandoff: 04/07/2020
+  ms.locfileid: "43165911"
+productDirectory:
+  title: Sichere Remote Arbeit mit Microsoft 365 Business
+  items:
+  - title: Was sind die Neuerungen?
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 kommt zu Microsoft 365 Business!
+    url: https://aka.ms/aadp1smbblog
+  - title: Partner-Webinar ansehen
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Sichern Sie Ihre SMB-Kunden, während Sie mit COVID-19 umgehen.
+    url: https://aka.ms/M365v253PAL-Register
+  - title: Kaufen
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Klicken Sie auf den Link zum kaufen oder wenden Sie sich an Ihren Partner.
+    url: https://aka.ms/m365bweb
 conceptualContent:
   items:
   - title: Was ist Microsoft 365 Business?
@@ -68,7 +83,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
       itemType: how-to-guide
-      text: Hinzufügen eines Benutzers
+      text: Benutzer hinzufügen
     - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
       itemType: how-to-guide
       text: Entfernen eines Benutzers
@@ -116,7 +131,7 @@ conceptualContent:
     links:
     - url: view-policies-and-devices.md
       itemType: how-to-guide
-      text: 'PC #a0 Mobile Geräte'
+      text: PC & Mobile Geräte
     - url: remove-company-data.md
       itemType: how-to-guide
       text: Entfernen von Unternehmensdaten
