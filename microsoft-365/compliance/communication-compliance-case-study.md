@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053072"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165934"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Fallstudie: contoso konfiguriert eine Offensive Sprachrichtlinie für Microsoft Teams und Exchange Communications schnell.
 
@@ -41,7 +41,7 @@ In dieser Fallstudie werden die Grundlagen für die schnelle Konfiguration einer
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Schritt 1: Planen der Kommunikation Compliance
 
-IT-Administratoren und Compliance-Experten von Contoso haben an Online-Webinaren zu Compliance-Lösungen in Microsoft 365 teilgenommen und entschieden, dass Compliance-Richtlinien für die Kommunikation Ihnen helfen, die aktualisierten Unternehmensrichtlinien Anforderungen für die Arbeitsplatz Reduzierung zu erfüllen Belästigung. Gemeinsam haben Sie einen Plan zum Erstellen und Aktivieren einer Kommunikations Konformitätsrichtlinie entwickelt, die die beleidigende Sprache für Chats überwacht, die in Microsoft Teams in e-Mail-Nachrichten gesendet werden, die in Exchange Online gesendet werden. Ihr Plan umfasst die Ermittlung:
+IT-Administratoren und Compliance-Experten von Contoso nahmen an Online-Webinaren zu Compliance-Lösungen in Microsoft 365 Teil und entschieden, dass Compliance-Richtlinien für die Kommunikation Ihnen helfen, die aktualisierten Unternehmensrichtlinien Anforderungen für die Verringerung der Belästigung am Arbeitsplatz zu erfüllen. Gemeinsam haben Sie einen Plan zum Erstellen und Aktivieren einer Kommunikations Konformitätsrichtlinie entwickelt, die die beleidigende Sprache für Chats überwacht, die in Microsoft Teams in e-Mail-Nachrichten gesendet werden, die in Exchange Online gesendet werden. Ihr Plan umfasst die Ermittlung:
 
 - Die IT-Administratoren, die Zugriff auf die Kommunikationsrichtlinien Features benötigen.
 - Die Compliance-Experten, die Kommunikationsrichtlinien erstellen und verwalten müssen.
@@ -53,10 +53,21 @@ IT-Administratoren und Compliance-Experten von Contoso haben an Online-Webinaren
 Der erste Schritt besteht darin zu bestätigen, dass die Microsoft 365-Lizenzierung von Contoso Unterstützung für die Kommunikations kompatibilitätslösung enthält. Für den Zugriff auf und die Verwendung der Kommunikations Konformität müssen die IT-Administratoren von Contoso überprüfen, ob contoso über eine der folgenden Optionen verfügt:
 
 - Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion)
-- Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on
+- Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Compliance-Add-on
+- Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on
+- Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion)
+- Microsoft 365 a3-Abonnement + das Microsoft 365 A5-Konformitäts-Add-on
+- Microsoft 365 a3-Abonnement + Microsoft 365 A5 Insider Risk Management-Add-on
+- Microsoft 365 G5-Abonnement (kostenpflichtige oder Testversion)
+- Microsoft 365 G5-Abonnement + das Microsoft 365 G5-Compliance-Add-on
+- Microsoft 365 G5-Abonnement + das Microsoft 365 G5-Insider Risiko Management-Add-on
 - Office 365 Enterprise E5-Abonnement (kostenpflichtige oder Testversion)
+- Office 365 Enterprise E3-Abonnement + das Office 365 Advanced Compliance-Add-on (nicht mehr für neue Abonnements verfügbar, siehe Hinweis)
 
-Sie müssen außerdem sicherstellen, dass Benutzer, die in Kommunikations Konformitätsrichtlinien enthalten sind, einer der oben aufgeführten Lizenzen zugewiesen werden müssen.
+Sie müssen außerdem sicherstellen, dass den Benutzern, die in Kommunikationsrichtlinien Richtlinien enthalten sind, eine der oben genannten Lizenzen zugewiesen werden muss.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn die aktuellen Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements übergehen, die die gleichen oder zusätzliche Compliance-Features enthalten.
 
 IT-Administratoren von Contoso führen Sie die folgenden Schritte aus, um die Lizenzierungsunterstützung für contoso zu überprüfen:
 

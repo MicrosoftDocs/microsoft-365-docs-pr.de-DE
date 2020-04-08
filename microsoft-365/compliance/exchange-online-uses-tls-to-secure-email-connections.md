@@ -1,5 +1,7 @@
 ---
 title: Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie, wie Exchange Online und Office 365 TLS (Transport Layer Security) und das Weiterleitungs Geheimnis (FS) verwenden, um die e-Mail-Kommunikation zu sichern. Erhalten Sie auch Informationen über das von Microsoft ausgestellte Zertifikat für Exchange Online.
-ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: fe6f9dcb7cbad2e4b32ad386802158fc437740a6
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686081"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41590496"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert
 
@@ -63,7 +65,7 @@ Die von Exchange Online verwendeten Zertifikatinformationen werden in der folgen
 |:-----|:-----|
 |Aussteller des Stammzertifikats der Zertifizierungsstelle  <br/> |GlobalSign-Stammzertifizierungsstelle – R1 <br/> |
 |Name des Zertifikats  <br/> |mail.protection.outlook.com  <br/> |
-|Organization (Organisation)  <br/> |Microsoft Corporation  <br/> |
+|Organisation  <br/> |Microsoft Corporation  <br/> |
 |Organisationseinheit  <br/> |  <br/> |
 |Schlüsselstärke des Zertifikats  <br/> |2048  <br/> |
    
@@ -77,7 +79,7 @@ Um einen reibungslosen Übergang sicherzustellen, werden wir weiterhin die alten
 |:-----|:-----|
 |Aussteller des Stammzertifikats der Zertifizierungsstelle  <br/> |Baltimore CyberTrust Root  <br/> |
 |Name des Zertifikats  <br/> |mail.protection.outlook.com  <br/> |
-|Organization (Organisation)  <br/> |Microsoft Corporation  <br/> |
+|Organisation  <br/> |Microsoft Corporation  <br/> |
 |Organisationseinheit  <br/> |Microsoft Corporation  <br/> |
 |Schlüsselstärke des Zertifikats  <br/> |2048  <br/> |
    

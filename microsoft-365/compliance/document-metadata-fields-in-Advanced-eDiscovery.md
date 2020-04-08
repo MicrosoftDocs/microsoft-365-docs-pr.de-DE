@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungs Satz in einem Fall in Advanced eDiscovery in Microsoft 365 definiert.
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651839"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941237"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
 
@@ -34,6 +34,9 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 - **Name des exportierten Felds:** Der Name des Metadatenfelds, das beim Exportieren von Dokumenten enthalten ist.  Eine leere Zelle bedeutet, dass das Feld nicht in den exportierten Metadaten enthalten ist.
 
 - **Beschreibung:** Eine Beschreibung des Metadatenfelds.
+
+> [!NOTE]
+> Das Feld **Schlüsselwörter** in [Review Sets Search](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) verwendet Keyword Query Language (KQL). Die Felder, die in der Spalte **durchsuchbaren Feldnamen** aufgeführt sind, können im Feld **Schlüsselwörter** in einer Überprüfungs Satzes-Suche verwendet werden, um komplexe Abfragen zu bilden, ohne dass Sie den Abfrage-Generator verwenden müssen. Weitere Informationen zu KQL finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603).
 
 |Name des **Felds** und **Anzeige Feldname**|**Durchsuchbarer Feldname**|**Name des exportierten Felds**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|

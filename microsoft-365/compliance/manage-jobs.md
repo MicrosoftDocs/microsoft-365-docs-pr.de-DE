@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Aufträgen in Daten Untersuchungen
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 'Sie können den Status langwieriger Prozesse nachverfolgen, die beim Ausführen von Aufgaben im Tool zur Datenermittlung im Security #a0 Compliance Center auftreten.'
-ms.openlocfilehash: 0c93df9e7d5ec176c2150e706fe99ed239be8527
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Sie können den Status langwieriger Prozesse nachverfolgen, die beim Ausführen von Aufgaben im Tool zur Datenermittlung im Security & Compliance Center auftreten.
+ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37081596"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41582924"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Verwalten von Aufträgen in Daten Untersuchungen (Vorschau)
 
@@ -34,7 +36,7 @@ Im folgenden finden Sie eine Liste der Aufträge (in der Regel langwierige Proze
 |Vergleichen von Lastsätzen | Ein Benutzer prüft die Unterschiede zwischen verschiedenen Lastsätzen in einem Beweissatz. Bei einem Lastsatz handelt es sich um eine Instanz des Hinzufügens von Daten zu einem Beweissatz. Wenn Sie beispielsweise die Ergebnisse zweier unterschiedlicher Suchvorgänge dem gleichen Beweissatz hinzufügen, würde jeder einen Lastsatz darstellen. Weitere Informationen finden Sie unter [Manage Last Sets](manage-load-sets.md). |
 |Konvertieren von behandelten Dokumenten in PDF|Nachdem ein Benutzer ein Dokument in einem Beweissatz kommentiert und einen Teil davon verarbeitet hat, kann er das in eine PDF-Datei konvertierte Dokument auswählen. Dadurch wird sichergestellt, dass der behandelte Teil nicht sichtbar ist, wenn das Dokument zur Präsentation exportiert wird. Weitere Informationen finden Sie unter [Überprüfen von Daten in Evidence](review-data-in-evidence.md). |
 |Elemente aus ursprünglichen Speicherorten löschen | Dieser Auftrag wird ausgelöst, wenn ein Benutzer Post Fach-und Websiteelemente in einem Beweissatz auswählt und dann im Menü **Aktion** auf **Elemente aus ursprünglichen Speicherorten löschen** klickt, um Sie zu löschen. Dieser Auftrag verfolgt den Fortschritt des weichen Löschens der ausgewählten Elemente von den ursprünglichen Inhaltsspeicherorten. Weitere Informationen finden Sie unter [Löschen von Elementen aus dem ursprünglichen Speicherort](delete-items-from-original-locations.md).|
-|Schätzen von Suchergebnissen | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), durchsucht das Such Tool den Index nach Elementen, die mit der Suchabfrage übereinstimmen, und bereitet eine Schätzung vor, die die Anzahl und die Gesamtgröße aller Elemente durch die Suche sowie die Anzahl der Datenquellen enthält. Sea rched.  Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md). | 
+|Schätzen von Suchergebnissen | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), durchsucht das Such Tool den Index nach Elementen, die mit der Suchabfrage übereinstimmen, und bereitet eine Schätzung vor, die die Anzahl und die Gesamtgröße aller Elemente durch die Suche sowie die Anzahl der durchsuchten Datenquellen enthält.  Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md). | 
 |Vorbereiten von Daten für den Export | Ein Benutzer exportiert Dokumente aus einem Evidence-Datensatz. Wenn der Exportvorgang abgeschlossen ist, können Sie die exportierten Daten auf einen lokalen Computer herunterladen. Weitere Informationen finden Sie unter [Exportieren von Daten aus einer Untersuchung](export-data.md). | 
 |Vorbereiten der Fehlerbehebung |Wenn ein Benutzer eine Datei auswählt und eine Fehlerkorrektur in der Fehleransicht auf der Registerkarte **Verarbeitung** einer Untersuchung erstellt, besteht der erste Schritt im Prozess darin, die Datei mit dem Verarbeitungsfehler an einen Azure-Speicherort in der Microsoft-Cloud hochzuladen. Dieser Auftrag verfolgt den Fortschritt des Upload-Prozesses. Weitere Informationen zum Fehlerkorrektur-Workflow finden Sie unter [Fehlerbehebung bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md).| 
 |Vorbereiten der Suchvorschau | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), bereitet das Such Tool eine Beispiel Teilmenge von Elementen vor, die mit der Suchabfrage übereinstimmen, die in der Vorschau angezeigt werden kann. Die Vorschau der Suchergebnisse kann Ihnen helfen, die Effektivität der Suche zu ermitteln.  Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md). | 
@@ -54,5 +56,5 @@ In der folgenden Tabelle werden die unterschiedlichen Statuszustände für Auftr
 | In Arbeit | Der Auftrag wird ausgeführt. Sie können den Status des Auftrags auf der Registerkarte **Aufträge** überwachen. |
 | Erfolgreiche | Der Auftrag wurde erfolgreich abgeschlossen. Das Datum und die Uhrzeit, zu der der Auftrag abgeschlossen wurde, werden auf der Registerkarte **Aufträge** in der Spalte **abgeschlossen** angezeigt. |
 | Teilweise erfolgreich | Der Auftrag war teilweise erfolgreich. |
-| Failed | Der Auftrag ist fehlgeschlagen.  Sie sollten versuchen, die Aktion, die den Auftrag ausgelöst hat, erneut auszuführen. Wenn der Auftrag ein zweites Mal fehlschlägt, sollten Sie sich an den Microsoft-Support wenden und die Supportinformationen aus dem Auftrag bereitstellen. |
+| Fehlgeschlagen | Der Auftrag ist fehlgeschlagen.  Sie sollten versuchen, die Aktion, die den Auftrag ausgelöst hat, erneut auszuführen. Wenn der Auftrag ein zweites Mal fehlschlägt, sollten Sie sich an den Microsoft-Support wenden und die Supportinformationen aus dem Auftrag bereitstellen. |
 |||

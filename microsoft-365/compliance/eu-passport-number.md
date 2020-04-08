@@ -1,5 +1,7 @@
 ---
 title: EU-Passport-Nummer
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp EU-Passport-Nummern erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0032d3e50d7dab0b696d9000242e70956469052e
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805948"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41592116"
 ---
 # <a name="eu-passport-number"></a>EU-Passport-Nummer
 
@@ -39,7 +41,7 @@ Eine Kombination aus einem Buchstaben, sieben Ziffern und einem Leerzeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -78,7 +80,7 @@ Zwei Buchstaben und gefolgt von sechs Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -488,7 +490,7 @@ Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -570,7 +572,7 @@ Acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -687,7 +689,7 @@ Neun Buchstaben oder Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -902,7 +904,7 @@ Eine Kombination aus Buchstaben und Zahlen aus acht oder neun Zeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -937,7 +939,7 @@ Ausführliche Informationen finden Sie im Abschnitt "schwedische Passport-Nummer
 
 Ausführliche Informationen finden Sie im Abschnitt "U.S./U.K. Passport-Nummer "in [dem, wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
 

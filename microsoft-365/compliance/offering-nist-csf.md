@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222007"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170907"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -37,10 +37,10 @@ NIST Cyber Framework (CSF) ist ein freiwilliges Framework, das aus Standards, Ri
 
 Erfahren Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance Score und unserem Azure Security and Compliance Blueprint beschleunigen:
 
-- [Download der Azure Security and Compliance Blueprint-NIST CSF Risk Assessment Checkliste](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Download der Azure Security and Compliance Blueprint-NIST CSF Risk Assessment Checkliste](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
 - [Weitere Informationen zur Bewertung des NIST-GFK für Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 für Government](https://aka.ms/d365-compliance-list)
@@ -68,7 +68,7 @@ Cyber bleibt ein wichtiges Verwaltungsproblem in der Ära digitaler Transformati
 
 **Hat ein unabhängiger Gutachter bestätigt, dass Azure Government, Dynamics 365 und Office 365 NIST-GfK-Anforderungen unterstützen?**
 
-Ja, eine Drittanbieter-Bewertungs Organisation hat bestätigt, dass das Azure Government-clouddienst-Angebot den NIST-Cyber-Framework-Risikomanagementmethoden entspricht, wie im Framework zur Verbesserung der kritischen Infrastruktur definiert. Cyber, Version 1,0, datiert vom 12. Februar 2014. Das NIST-GFK wird dem FedRAMP moderate Controls-Framework zugeordnet, und ein unabhängiger Assessor hat Dynamics 365 gegenüber der moderaten Baseline FedRAMP bewertet. Außerdem erhielt Office 365 im Juni 2018 [das NIST CSF Letter of Certification](https://aka.ms/O365NISTCSFcertification) von HITRUST.
+Ja, eine Drittanbieter-Bewertungs Organisation hat bestätigt, dass das Azure Government-Cloud-Dienstangebot den NIST Cyber Framework (CSF)-Risikomanagementpraktiken entspricht, wie im Framework zur Verbesserung der kritischen Infrastruktur Cyber, Version 1,0, vom 12. Februar 2014. Das NIST-GFK wird dem FedRAMP moderate Controls-Framework zugeordnet, und ein unabhängiger Assessor hat Dynamics 365 gegenüber der moderaten Baseline FedRAMP bewertet. Außerdem erhielt Office 365 im Juni 2018 [das NIST CSF Letter of Certification](https://aka.ms/O365NISTCSFcertification) von HITRUST.
 
 **Wie veranschaulichen Microsoft Cloud-Dienste die Einhaltung des Frameworks?**
 
