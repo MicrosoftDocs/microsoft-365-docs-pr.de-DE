@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361950"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165923"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Verwalten der Bereitstellung von Office 365-Add-Ins im Microsoft 365 Admin Center
 
@@ -60,7 +60,7 @@ Je nach Größe der Zielgruppe möchten Sie ggf. Bereitstellungsschritte hinzuf�
 Lesen Sie zunächst [Ermitteln, ob die zentrale Bereitstellung von Add-Ins in Ihrer Office 365-Organisation funktioniert](centralized-deployment-of-add-ins.md).
 
   
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> **-Add-ins** .
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite mit den **Einstellungen** > **-Add-ins** .
     
 2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus. Wählen Sie auf der Seite Übersicht die Option **weiter**aus.
     
@@ -101,12 +101,19 @@ Die Option, die für Ihre Organisation richtig ist, hängt von Ihrer Konfigurati
   
 ### <a name="add-in-states"></a>Add-In-Statusangaben
 
-Ein Add-in kann **entweder im Status ein oder** **aus** sein.
-  
+Administratoren können die Add-Ins, die Sie für alle Benutzer aus dem Microsoft 365 Admin Center bereitstellen, aktivieren oder deaktivieren.
+
+1.    Wechseln Sie im Admin Center zur Seite **Einstellungen** > **-Add-ins** . 
+2.    Wählen Sie das bereitgestellte Add-in aus. 
+3.    Klicken Sie auf die **Status** -Umschaltfläche, um das Add-in **ein** -oder **auszuschalten.** 
+4.    Speichern Sie die Änderungen.  
+
+Einer von drei Add-in-Status steht ebenfalls zur Verfügung.
+ 
 |**Status**|**Wie der Status eintritt**|**Auswirkung**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Der Administrator hat das Add-in hochgeladen und Benutzern oder Gruppen zugewiesen.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen sehen es im jeweiligen Client.  <br/> |
-|**Deaktiviert**  <br/> |Der Administrator hat das Add-In deaktiviert.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen können nicht mehr auf das Add-In zugreifen.  <br/> Wenn der Zustand des Add-Ins in "Aktiv" geändert wird, können die Benutzer und Gruppen wieder darauf zugreifen.  <br/> |
+|**Deaktiviert**  <br/> |Der Administrator hat das Add-In deaktiviert.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen können nicht mehr auf das Add-In zugreifen.  <br/> Wenn der Add-in-Zustand in " **aktiv**" geändert wird, können die Benutzer und Gruppen erneut darauf zugreifen.  <br/> |
 |**Gelöscht**  <br/> |Der Administrator hat das Add-In gelöscht.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen können nicht mehr darauf zugreifen.  <br/> |
    
 Sie sollten ein Add-in in einem Fall löschen, wenn es von keinem mehr verwendet wird. Das Deaktivieren eines Add-Ins ist möglicherweise sinnvoll, wenn ein Add-in nur zu bestimmten Jahreszeiten verwendet wird.
@@ -172,7 +179,6 @@ Dadurch wird verhindert, dass alle Benutzer die folgenden Add-Ins aus dem Speich
     
   - Office
     
-  - IOS (nur iPad)
     
 - Übernahmen, die in **AppSource** beginnen
     
@@ -217,8 +223,7 @@ Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass ei
 |Office 2016 für Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 für Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 für Mac  <br/> |16.11.18020200  <br/> |
-|Office 2016 für IOS (nur iPad)  <br/> |2.12.18032600  <br/> |
-|Office für das Web  <br/> |Nicht zutreffend  <br/> |
+|Office für das Web  <br/> |–  <br/> |
    
  **Für Outlook**: 
   
@@ -230,7 +235,7 @@ Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass ei
 |Office 2016 für Mac  <br/> |16.0.9318.1000  <br/> |
 |Outlook Mobile für IOS  <br/> |2.75.0  <br/> |
 |Outlook Mobile für Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |Nicht zutreffend  <br/> |
+|Outlook.com  <br/> |–  <br/> |
    
  **Office 2013 Anforderungen**
   
